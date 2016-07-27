@@ -1,3 +1,5 @@
+**DISCLAIMER: This repository is a WIP for the work documented in [this issue](https://github.com/18F/web-design-standards/issues/1343) in the main repo.**
+
 # Draft U.S. Web Design Standards Documentation
 
 Website and documentation on using the Draft U.S. Web Design Standards: [https://standards.usa.gov](https://standards.usa.gov).

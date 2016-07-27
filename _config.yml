@@ -1,0 +1,48 @@
+# Site settings
+name: Draft U.S. Web Design Standards Documentation
+version: 0.10.0
+permalink: pretty
+google_analytics_ua: UA-48605964-43
+
+repos:
+- name: Draft U.S. Web Design Standards
+  description: Main repository for the Draft U.S. Web Design Standards package
+  url: https://github.com/18F/web-design-standards
+- name: Draft U.S. Web Design Standards Documentation
+  description: Documentation for the Draft U.S. Web Design Standards
+  url: https://github.com/18F/web-design-standards
+- name: Draft U.S. Web Design Standards Assets
+  description: Draft U.S. Web Design Standards visual design assets
+  url: https://github.com/18F/web-design-standards-assets
+
+sass:
+  sass_dir: assets/css
+
+collections:
+  visual:
+    output: true
+    permalink: /:path/
+  layout-system:
+    output: true
+    permalink: /:path/
+  elements:
+    output: true
+    permalink: /:path/
+  components:
+    output: true
+    permalink: /:path/
+
+# Build settings
+markdown: kramdown
+exclude:
+- ".ruby-version"
+- ".sass-cache"
+- CONTRIBUTING.md
+- Gemfile
+- Gemfile.lock
+- LICENSE.md
+- manifest.yml
+- node_modules
+- package.json
+- README.md
+- vendor

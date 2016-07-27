@@ -1,0 +1,54 @@
+{
+  "name": "uswds-docs",
+  "version": "0.1.0",
+  "description": "Website and documentation on using the Draft U.S. Web Design Standards.",
+  "scripts": {
+    "build": "bundle && gulp build && jekyll build",
+    "clean": "gulp clean-assets",
+    "lint": "gulp eslint scss-lint",
+    "start": "gulp build && jekyll serve -w",
+    "test": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/18F/web-design-standards-docs.git"
+  },
+  "author": "18F",
+  "contributors": [
+    "Erica Deahl <erica.deahl@gsa.gov>",
+    "Jeremia Kimelman <jeremia.kimelman@gsa.gov>",
+    "Julia Elman <julia.elman@gsa.gov>",
+    "Katherine Garklavs <katherine.garklavs@gsa.gov>",
+    "Marco Segreto <marco.segreto@gsa.gov>",
+    "Maya Benari <maya.ben-ari@gsa.gov>",
+    "Roger Steve Ruiz <roger.ruiz@gsa.gov>"
+  ],
+  "license": "SEE LICENSE in LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/18F/web-design-standards-docs/issues"
+  },
+  "homepage": "https://github.com/18F/web-design-standards-docs#readme",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-eslint": "^1.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-scss-lint": "^0.3.9",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1",
+    "gulp-util": "^3.0.7",
+    "jquery": "^2.2.0",
+    "merge-stream": "^1.0.0",
+    "node-notifier": "^4.6.0",
+    "normalize.css": "^3.0.3",
+    "politespace": "^0.1.4",
+    "prismjs": "^1.5.1",
+    "run-sequence": "^1.1.5",
+    "uswds": "^0.10.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

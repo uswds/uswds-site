@@ -1,14 +1,14 @@
 **DISCLAIMER: This repository is a WIP for the work documented in [this issue](https://github.com/18F/web-design-standards/issues/1343) in the main repo.**
 
-# Draft U.S. Web Design Standards Documentation
+# Draft U.S. Web Design Standards documentation
 
 Website and documentation on using the Draft U.S. Web Design Standards: [https://standards.usa.gov](https://standards.usa.gov).
 
 ## Running locally
 
-The Draft U.S. Web Design Standards documenation is built using Jekyll for the file framework, gulp for task management and the node module for the Standards.
+The Draft U.S. Web Design Standards documenation is built using Jekyll for the file framework, gulp for task management, and the node module for the Standards.
 
-You will need to make sure that you have the following installed on your machine before following the commands below.
+You will need to make sure you have the following installed on your machine before following the commands below:
 
 1. Ruby v2.2.2+, [Installation guides](https://www.ruby-lang.org/en/documentation/installation/)
 1. Node v4.2.3+, [Installation guides](https://nodejs.org/en/download/)
@@ -25,23 +25,23 @@ To start, run the following command to install project dependencies:
 npm run install
 ```
 
-Next, we'll perform a build step to copy and compile all of the necessary files that create the site:
+Next, you'll perform a build step to copy and compile all of the necessary files that create the site:
 
 ```sh
 npm run build
 ```
 
-Now that all of your dependencies are installed you can run you local server by running the following command:
+Now that all of your dependencies are installed, you can run you local server by running the following command:
 
 ```sh
 npm run start
 ```
 
-Go to `127.0.0.1:4000` in your browser and you should be viewing a local instance of [standards.usa.gov](https://standards.usa.gov).
+Go to `127.0.0.1:4000` in your browser — you should be viewing a local instance of [standards.usa.gov](https://standards.usa.gov).
 
 Here is a reference to a few other utility commands:
 
-- `npm run clean`: Cleans out copied over dependency assests.
+- `npm run clean`: Cleans out copied-over dependency assests.
 
 - `npm run lint`: Runs `eslint` and `sass-lint` against JavaScript and Sass files.
 
@@ -61,4 +61,4 @@ You are now using the latest version of the Standards via your cloned version on
 
 ## Contributing
 
-Please read through our [contributing guidelines](CONTRIBUTING.md). These guidelines are directions for opening issues, submitting pull requests and our coding and design standards we follow.
+Please read through our [contributing guidelines](CONTRIBUTING.md). These guidelines are directions for opening issues and submitting pull requests, and also detail the coding and design standards we follow.

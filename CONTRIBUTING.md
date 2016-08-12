@@ -1,6 +1,6 @@
 # Contributing to Draft U.S. Web Design Standards Documentation
 
-We're so glad you're thinking about contributing to an 18F open source project! If you're unsure about anything, just ask — or submit your issue or pull request anyway. The worst that can happen is we'll politely ask you to change something. We appreciate all friendly contributions.
+We're so glad you're thinking about contributing to an 18F open source project! If you're unsure about anything, just ask (or submit your issue or pull request anyway). The worst that can happen is we'll politely ask you to change something. We appreciate all friendly contributions.
 
 One of our goals is to ensure a welcoming environment for all contibutors to our projects. Our staff follows the [18F Code of Conduct](https://github.com/18F/code-of-conduct/blob/master/code-of-conduct.md), and all contributors should do the same.
 
@@ -26,22 +26,22 @@ Also, here are some definitions around the labels we use to help us organize our
 
 ### Work Status
 * **Abandoned:** Contributor no longer responsive in correspondence.
-* **Accepted:** Reviewed and approved by core teammate, included on product roadmap.
+* **Accepted:** Reviewed and approved by core teammate and included on product roadmap.
 * **Backlog:** A build up of work that’s been initially reviewed and correlating labels applied. It needs to be reviewed before moving to “Accepted”.
 * **Blocked:** Not able to move forward with work due to conflict.
 * **Completed:** Merged in and closed.
 * **Help wanted:** Contributors open to claiming and tackling. Description and acceptance criteria have been written.
-* **Idea:** New idea or request, team has yet to evaluate. 
+* **Idea:** New idea or request; team has yet to evaluate. 
 * **In progress:** Work that has been assigned and is currently being worked on.
-* **Need more info:** There is not enough information in order to move forward. Information is requested from the submitter or team member is assigned to research. 
-* **On Hold:** Work is currently paused, or not able to move forward due to conflict.
+* **Need more info:** There is not enough information in order to move forward. A team member may request more information from the submitter or do some research to find the necessary information. 
+* **On Hold:** Work is currently paused (or not able to move forward) due to conflict.
 * **Review needed:** Pull request review needed.
 * **Revisions needed:** Requires corrections based on team feedback.
 
 ### Priority
 * **Blocker:** Needs immediate attention. Prevents the product from working if it were released in that state. (For example: build failing, tests not passing)
-* **Critical:** A critical requirement without which it is unacceptable to stakeholders. Impacts the applications functionality. (For example: feature not working in all browsers, content not accessible to screen readers)
-* **Major:** A necessary but deferrable requirement which makes the product less usable but still functional. Does not impact the application’s functionality. (For example: typos)
+* **Critical:** A critical requirement without which it is unacceptable to stakeholders. Impacts the application's functionality. (For example: feature not working in all browsers, content not accessible to screen readers)
+* **Major:** A necessary but deferrable requirement that makes the product less usable but still functional. Does not impact the application’s functionality. (For example: typos)
 * **Minor:** A nice feature to have if there are resources, but the product functions well without it. Also known as "could be betters." (For example: feature requests, cosmetic enhancements)
 
 ### Type

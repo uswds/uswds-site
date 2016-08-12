@@ -13,7 +13,7 @@ Include any benefits, challenges, or considerations. This can be short and sweet
 1. Step one
 2. Step two
 3. Step three
-4. etc.
+4. And so on
 
 ## Additional information [optional]
 

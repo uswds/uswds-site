@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "description": "Website and documentation on using the Draft U.S. Web Design Standards.",
   "scripts": {
-    "build": "bundle && gulp build && jekyll build",
+    "build": "bundle && gulp build && bundle exec jekyll build",
     "clean": "gulp clean-assets",
     "lint": "gulp eslint scss-lint",
-    "start": "gulp build && jekyll serve -w",
+    "start": "gulp build && bundle exec jekyll serve",
     "test": "npm run lint"
   },
   "repository": {

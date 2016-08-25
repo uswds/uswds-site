@@ -13,7 +13,9 @@ gulp.task('clean-javascript', function () {
   return del([
     'assets/js/vendor/uswds.js',
     'assets/js/vendor/uswds.min.js',
-    'assets/js/vendor/uswds.min.js.map'
+    'assets/js/vendor/uswds.min.js.map',
+    'assets/js/styleguide.js',
+    'assets/js/styleguide.js.map'
   ]);
 });
 

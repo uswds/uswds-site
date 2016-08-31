@@ -9,6 +9,10 @@ gulp.task('clean-fonts', function () {
   return del('assets/fonts/');
 });
 
+gulp.task('clean-images', function () {
+  return del('assets/img/');
+});
+
 gulp.task('clean-javascript', function () {
   return del([
     'assets/js/vendor/uswds.js',
@@ -27,6 +31,7 @@ gulp.task('clean-assets', function (done) {
   runSequence(
     [
       'clean-fonts',
+      'clean-images',
       'clean-javascript',
       'clean-styles',
     ],

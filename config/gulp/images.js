@@ -4,6 +4,11 @@ var task  = /([\w\d-_]+)\.js$/.exec(__filename)[ 1 ];
 
 gulp.task(task, function (done) {
 
+  dutil.logMessage(task, 'Copying images from docs repo');
+
+  var stream = gulp.src('./img/**/*')
+    .pipe(gulp.dest('assets/img'));
+
   dutil.logMessage(task, 'Copying images from uswds');
 
   var stream = gulp.src('./node_modules/uswds/src/img/**/*')

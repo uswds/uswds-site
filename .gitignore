@@ -5,7 +5,4 @@ _site/
 node_modules/
 npm-debug.log
 .bundle/
-assets/css/vendor/uswds/
-assets/fonts/
-assets/js/vendor/uswds*
-assets/js/styleguide*
+assets/

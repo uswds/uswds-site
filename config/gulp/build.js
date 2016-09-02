@@ -21,6 +21,10 @@ gulp.task('clean-styles', function () {
   return del('assets/css/');
 });
 
+gulp.task('remove-assets-folder', function () {
+  return del('assets/');
+});
+
 gulp.task('clean-assets', function (done) {
   runSequence(
     [
@@ -28,6 +32,7 @@ gulp.task('clean-assets', function (done) {
       'clean-images',
       'clean-javascript',
       'clean-styles',
+      'remove-assets-folder',
     ],
     done
   );

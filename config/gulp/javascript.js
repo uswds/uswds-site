@@ -27,6 +27,31 @@ gulp.task('eslint', function (done) {
 
 });
 
+gulp.task('copy-jquery-javascript', function (done) {
+
+  dutil.logMessage(task, 'Copying JS from jQuery');
+
+  var stream = gulp.src('./node_modules/jquery/dist/jquery.min.*')
+    .pipe(gulp.dest('assets/js/vendor/jquery/'));
+
+  return stream;
+
+});
+
+/* TODO: Remove this build step *and* its invocation in the main task
+   once build-time syntax colouring is restored
+*/
+gulp.task('copy-prismjs-javascript', function (done) {
+
+  dutil.logMessage(task, 'Copying JS from PrismJS');
+
+  var stream = gulp.src('./node_modules/prismjs/prism.js')
+    .pipe(gulp.dest('assets/js/vendor/prismjs/'));
+
+  return stream;
+
+});
+
 gulp.task('copy-uswds-javascript', function (done) {
 
   dutil.logMessage(task, 'Copying JS from uswds');
@@ -38,7 +63,9 @@ gulp.task('copy-uswds-javascript', function (done) {
 
 });
 
-gulp.task(task, [ 'copy-uswds-javascript', 'eslint' ], function (done) {
+gulp.task(task, [ 'copy-uswds-javascript',
+                  'copy-jquery-javascript', 'copy-prismjs-javascript',
+                  'eslint' ], function (done) {
 
   dutil.logMessage(task, 'Compiling JavaScript');
 

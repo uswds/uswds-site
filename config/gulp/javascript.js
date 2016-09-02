@@ -27,6 +27,17 @@ gulp.task('eslint', function (done) {
 
 });
 
+gulp.task('copy-docs-javascript', function (done) {
+
+  dutil.logMessage(task, 'Copying JS from js/');
+
+  var stream = gulp.src('./js/**/*')
+    .pipe(gulp.dest('assets/js/'));
+
+  return stream;
+
+});
+
 gulp.task('copy-jquery-javascript', function (done) {
 
   dutil.logMessage(task, 'Copying JS from jQuery');
@@ -63,14 +74,14 @@ gulp.task('copy-uswds-javascript', function (done) {
 
 });
 
-gulp.task(task, [ 'copy-uswds-javascript',
+gulp.task(task, [ 'copy-docs-javascript', 'copy-uswds-javascript',
                   'copy-jquery-javascript', 'copy-prismjs-javascript',
                   'eslint' ], function (done) {
 
   dutil.logMessage(task, 'Compiling JavaScript');
 
   var minifiedStream = browserify({
-    entries: 'assets/js/start.js',
+    entries: 'js/start.js',
     debug: true,
   });
 

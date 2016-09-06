@@ -2,7 +2,9 @@
 
 # Draft U.S. Web Design Standards documentation
 
-Website and documentation for using the Draft U.S. Web Design Standards: [https://standards.usa.gov](https://standards.usa.gov). Previously, the documentation was part of the [same repository as the Standards](https://github.com/18F/web-design-standards). We have separated them to provide more clarity. This README includes steps to pull the latest version of the Standards into your local instance of the documentation.
+This repo includes code and documentation for the Draft U.S. Web Design Standards website. For information on the Standards (components) themselves, please visit [web-design-standards](https://github.com/18F/web-design-standards).
+
+Note that this README includes steps to pull the latest version of the Standards into your local instance of the documentation.
 
 ## Running locally
 

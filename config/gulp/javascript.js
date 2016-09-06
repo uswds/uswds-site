@@ -17,11 +17,7 @@ gulp.task('eslint', function (done) {
     return done();
   }
 
-  return gulp.src([ 
-    'assets/js/src/**/*.js', 
-    '!assets/js/vendor/**/*.js', 
-    '!assets/js/styleguide.js'
-    ])
+  return gulp.src( './js/**/*.js')
     .pipe(linter('.eslintrc'))
     .pipe(linter.format());
 
@@ -43,7 +39,7 @@ gulp.task(task, [ 'copy-uswds-javascript', 'eslint' ], function (done) {
   dutil.logMessage(task, 'Compiling JavaScript');
 
   var minifiedStream = browserify({
-    entries: 'assets/js/start.js',
+    entries: 'js/start.js',
     debug: true,
   });
 

@@ -43,7 +43,7 @@ gulp.task('copy-jquery-javascript', function (done) {
   dutil.logMessage(task, 'Copying JS from jQuery');
 
   var stream = gulp.src('./node_modules/jquery/dist/jquery.min.*')
-    .pipe(gulp.dest('assets/js/vendor/jquery/'));
+    .pipe(gulp.dest('assets/js/vendor/'));
 
   return stream;
 
@@ -57,7 +57,7 @@ gulp.task('copy-prismjs-javascript', function (done) {
   dutil.logMessage(task, 'Copying JS from PrismJS');
 
   var stream = gulp.src('./node_modules/prismjs/prism.js')
-    .pipe(gulp.dest('assets/js/vendor/prismjs/'));
+    .pipe(gulp.dest('assets/js/vendor/'));
 
   return stream;
 

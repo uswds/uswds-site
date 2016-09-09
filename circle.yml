@@ -12,7 +12,6 @@ dependencies:
     - cf -v
     - go get github.com/concourse/autopilot
     - cf install-plugin $GOPATH/bin/autopilot -f
-    - bundle install
   cache_directories:
     - debs
 
@@ -22,7 +21,7 @@ test:
     - scss-lint -v
     - jekyll -v
   override:
-    - npm run test # Run the package and test suite
+    - npm test # Run the package and test suite
     - npm run build # Build Jekyll based docs website
   post:
     - ls -agolf _site/ # Ensure that build worked

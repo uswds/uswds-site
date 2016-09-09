@@ -16,7 +16,7 @@ maturity: alpha
   </button>
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Implementation</h4>
-    <p>The examples demonstrate how to use button elements. To use a button style on an anchor link, add the <code>usa-button</code> class to your anchor link.
+    <p>The examples demonstrate how to use button elements. To use a button style on an anchor link, add the <code>usa-button</code> class to your anchor link.</p>
     <p>To use a different style button on your anchor link, add the special button class in addition to <code>usa-button</code>:</p>
     <ul>
       <li><code>usa-button-primary-alt</code></li>

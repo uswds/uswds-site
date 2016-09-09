@@ -49,3 +49,4 @@ exclude:
 - manifest.yml
 - node_modules
 - package.json
+- vendor

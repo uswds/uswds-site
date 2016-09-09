@@ -41,8 +41,12 @@ exclude:
 - Gemfile
 - Gemfile.lock
 - LICENSE.md
+- README.md
+- config
+- css
+- img
+- js
 - manifest.yml
 - node_modules
 - package.json
-- README.md
 - vendor

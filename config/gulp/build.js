@@ -52,6 +52,7 @@ gulp.task('build', function (done) {
     'images',
     'javascript',
     'sass',
+    'html',
     ],
     done
   );

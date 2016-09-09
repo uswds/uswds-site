@@ -22,13 +22,13 @@ You will need to make sure you have the following installed on your machine befo
 The documentation is built using [gulp](http://gulpjs.com/) automation. To use gulp, first make sure you have it installed on your machine (globally):
 
 ```sh
-npm run install --global gulp-cli
+npm install --global gulp-cli
 ```
 
 To start, run the following command to install project dependencies:
 
 ```sh
-npm run install
+npm install
 ```
 
 Next, you’ll perform a build step to copy and compile all of the necessary files that create the site:
@@ -40,7 +40,7 @@ npm run build
 Now that all of your dependencies are installed, you can run you local server by running the following command:
 
 ```sh
-npm run start
+npm start
 ```
 
 Go to `127.0.0.1:4000` in your browser — you should be viewing a local instance of [standards.usa.gov](https://standards.usa.gov).
@@ -51,7 +51,7 @@ Here is a reference to a few other utility commands:
 
 - `npm run lint`: Runs `eslint` and `sass-lint` against JavaScript and Sass files.
 
-- `npm run test`: Runs `npm run lint` and can also be used to run any tests.
+- `npm test`: Runs `npm run lint` and can also be used to run any tests.
 
 ### Using the latest version of the `uswds` package
 

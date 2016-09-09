@@ -33,8 +33,7 @@ gulp.task('scss-lint', function (done) {
   }
 
   return gulp.src([
-    'assets/css/**/*.scss',
-    '!assets/css/vendor/**/*.scss'
+    './css/**/*.scss'
     ])
     .pipe(linter({
       config: '.scss-lint.yml',

@@ -1,11 +1,12 @@
 // Bring in individual Gulp configurations
 //
-require( './config/gulp/flags' );
-require( './config/gulp/sass' );
-require( './config/gulp/javascript' );
-require( './config/gulp/images' );
-require( './config/gulp/fonts' );
 require( './config/gulp/build' );
+require( './config/gulp/flags' );
+require( './config/gulp/fonts' );
+require( './config/gulp/html' );
+require( './config/gulp/images' );
+require( './config/gulp/javascript' );
+require( './config/gulp/sass' );
 
 var gulp  = require( 'gulp' );
 var dutil = require( './config/gulp/doc-util' );
@@ -42,6 +43,11 @@ gulp.task( 'default', function ( done ) {
   dutil.logCommand(
     'gulp fonts',
     'This task will copy all the font files into the assets directory.'
+  );
+
+  dutil.logCommand(
+    'gulp html',
+    'This task generates the code snippets based off of uswds package html files.'
   );
 
   done();

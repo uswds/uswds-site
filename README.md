@@ -10,7 +10,7 @@ The Draft U.S. Web Design Standards documentation is built using Jekyll for the 
 
 ### Before you start
 
-You will need to make sure you have the following installed on your machine before following the commands below:
+You will need to have the following installed on your machine before following the commands below:
 
 1. Ruby v2.2.2+, [Installation guides](https://www.ruby-lang.org/en/documentation/installation/)
 1. Node v4.2.3+, [Installation guides](https://nodejs.org/en/download/)
@@ -35,7 +35,7 @@ Next, you’ll perform a build step to copy and compile all of the necessary fil
 npm run build
 ```
 
-Now that all of your dependencies are installed, you can run you local server by running the following command:
+Now that all of your dependencies are installed, you can run your local server by running the following command:
 
 ```sh
 npm start
@@ -43,7 +43,7 @@ npm start
 
 Go to `127.0.0.1:4000` in your browser — you should be viewing a local instance of [standards.usa.gov](https://standards.usa.gov).
 
-Here is a reference to a few other utility commands:
+Here are a few other utility commands you may find useful:
 
 - `npm run clean`: Cleans out copied-over dependency assets.
 
@@ -56,7 +56,7 @@ Here is a reference to a few other utility commands:
 Sometimes you will want to use the latest version of the `web-design-standards` repo. Follow these steps to do so:
 
 1. Clone the latest version of the [`web-design-standards` repo](https://github.com/18F/web-design-standards/tree/staging).
-1. Run `npm install` to install of the dependencies required for the package.
+1. Run `npm install` to install the dependencies required for the package.
 1. Run `npm build:package` to create the built version of the Standards.
 1. Run `npm link` in the _root level_ of the `web-design-standards` directory on your local machine.
 1. Run `npm link uswds` in the _root level_ of the `web-design-standards-docs` directory on your local machine.

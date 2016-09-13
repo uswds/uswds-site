@@ -1,5 +1,3 @@
-**DISCLAIMER: This repository is a WIP for the work documented in [this issue](https://github.com/18F/web-design-standards/issues/1343) in the main repo.**
-
 # Draft U.S. Web Design Standards documentation
 
 This repo includes code and documentation for the Draft U.S. Web Design Standards website. For information on the Standards (components) themselves, please visit [web-design-standards](https://github.com/18F/web-design-standards).
@@ -58,6 +56,8 @@ Here is a reference to a few other utility commands:
 Sometimes you will want to use the latest version of the `web-design-standards` repo. Follow these steps to do so:
 
 1. Clone the latest version of the [`web-design-standards` repo](https://github.com/18F/web-design-standards/tree/staging).
+1. Run `npm install` to install of the dependencies required for the package.
+1. Run `npm build:package` to create the built version of the Standards.
 1. Run `npm link` in the _root level_ of the `web-design-standards` directory on your local machine.
 1. Run `npm link uswds` in the _root level_ of the `web-design-standards-docs` directory on your local machine.
 

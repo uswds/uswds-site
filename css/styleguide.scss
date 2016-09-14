@@ -26,7 +26,6 @@ $font-monospace:       Consolas, Monaco, 'Andale Mono', monospace;
     position: absolute;
   }
 
-  .usa-disclaimer-official,
   .site-logo {
     margin-left: $site-margins-mobile;
 
@@ -35,14 +34,13 @@ $font-monospace:       Consolas, Monaco, 'Andale Mono', monospace;
     }
   }
 
-  .usa-disclaimer-stage {
-    margin-right: $site-margins-mobile;
-
-    @include media($nav-width) {
-      margin-right: $site-margins;
-    }
+  .usa-banner-inner {
+    max-width: 100%;
   }
 
+  .usa-banner-content {
+    margin-left: 0;
+  }
 
   .usa-button-list {
     float: right;
@@ -268,7 +266,7 @@ $font-monospace:       Consolas, Monaco, 'Andale Mono', monospace;
   &.is-scrolled {
     @include media($nav-width) {
       position: absolute;
-      top: 15.3rem;
+      top: 15.3rem; // TODO: needs to change when banner is open
     }
   }
 
@@ -1187,7 +1185,7 @@ $font-light: 300;
 
 // This adds styleguide-only right and left margins for our disclaimer
 // Since the layout we use is not in a grid
-.usa-disclaimer {
+.usa-banner {
   &.is-scrolled {
     @media (min-width: $medium-screen + $width-nav-sidebar) {
       display: none;

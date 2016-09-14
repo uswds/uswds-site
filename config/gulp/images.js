@@ -2,7 +2,18 @@ var gulp  = require('gulp');
 var dutil = require('./doc-util');
 var task  = /([\w\d-_]+)\.js$/.exec(__filename)[ 1 ];
 
-gulp.task(task, function (done) {
+gulp.task('copy-doc-images', function (done) {
+
+  dutil.logMessage(task, 'Copying images from img/');
+
+  var stream = gulp.src('./img/**/*')
+    .pipe(gulp.dest('assets/img'));
+
+  return stream;
+
+});
+
+gulp.task('copy-uswds-images', function (done) {
 
   dutil.logMessage(task, 'Copying images from uswds');
 
@@ -10,5 +21,11 @@ gulp.task(task, function (done) {
     .pipe(gulp.dest('assets/img'));
 
   return stream;
+
+});
+
+gulp.task(task, [ 'copy-doc-images', 'copy-uswds-images' ], function (done) {
+
+  dutil.logMessage(task, 'Copying images Sass');
 
 });

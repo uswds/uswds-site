@@ -22,8 +22,9 @@ test:
     - scss-lint -v
     - jekyll -v
   override:
-    - npm run test # Run the package and test suite
-    - npm run build # Build Jekyll based docs website
+    - gulp build # Build site files
+    - bundle exec jekyll build # Build Jekyll website
+    - npm test # Run the package and test suite
   post:
     - ls -agolf _site/ # Ensure that build worked
 
@@ -31,26 +32,17 @@ deployment:
   production:
     branch: [master]
     commands:
-      - cf login -a https://api.cloud.gov -u gsa-wds_deployer -p $CF_GSA_WDS_PASS -o gsa-wds -s wds-docs-test
-      - cf zero-downtime-push wds-docs -f manifest.yml -p _site
+      - cf login -a https://api.cloud.gov -u gsa-wds_deployer -p $CF_GSA_WDS_PASS -o gsa-wds -s wds-production
+      - cf zero-downtime-push wds-microsite -f manifest.yml -p _site
+      - cf map-route wds-microsite standards.usa.gov
   staging:
     branch: [staging]
     commands:
       - cf login -a https://api.cloud.gov -u gsa-wds_deployer -p $CF_GSA_WDS_PASS -o gsa-wds -s wds-staging
-      - cf zero-downtime-push wds-docs-staging -f manifest.yml -p _site
-
-# TODO: Once the docs repo is done, remove the testing version above and replace it with the below. -- Yoz
-#
-# deployment:
-#   production:
-#     branch: [master]
-#     commands:
-#       - cf login -a https://api.cloud.gov -u gsa-wds_deployer -p $CF_GSA_WDS_PASS -o gsa-wds -s wds-production
-#       - cf zero-downtime-push wds-microsite -f manifest.yml -p _site
-#       - cf map-route wds-microsite standards.usa.gov
-#   staging:
-#     branch: [staging]
-#     commands:
-#       - cf login -a https://api.cloud.gov -u gsa-wds_deployer -p $CF_GSA_WDS_PASS -o gsa-wds -s wds-staging
-#       - cf zero-downtime-push wds-microsite -f config/cf/manifest-staging.yml -p _site
-#       - cf map-route wds-microsite standards-staging.usa.gov
+      - cf zero-downtime-push wds-microsite -f config/cf/manifest-staging.yml -p _site
+      - cf map-route wds-microsite standards-staging.usa.gov
+  release:
+    branch: [release]
+    commands:
+      - cf login -a https://api.cloud.gov -u gsa-wds_deployer -p $CF_GSA_WDS_PASS -o gsa-wds -s wds-release
+      - cf zero-downtime-push wds-microsite -f config/cf/manifest-release.yml -p _site

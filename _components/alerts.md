@@ -7,44 +7,8 @@ lead: Alerts keep users informed of important and sometimes time-sensitive chang
 maturity: alpha
 ---
 
-<div class="preview">
-
-  <div class="usa-alert usa-alert-success">
-    <div class="usa-alert-body">
-      <h3 class="usa-alert-heading">Success Status</h3>
-      <p class="usa-alert-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-    </div>
-  </div>
-
-  <div class="usa-alert usa-alert-warning">
-    <div class="usa-alert-body">
-      <h3 class="usa-alert-heading">Warning Status</h3>
-      <p class="usa-alert-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-    </div>
-  </div>
-
-  <div class="usa-alert usa-alert-error" role="alert">
-    <div class="usa-alert-body">
-      <h3 class="usa-alert-heading">Error Status</h3>
-      <p class="usa-alert-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-    </div>
-  </div>
-
-  <div class="usa-alert usa-alert-info">
-    <div class="usa-alert-body">
-      <h3 class="usa-alert-heading">Information Status</h3>
-      <p class="usa-alert-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-    </div>
-  </div>
-
-  <div class="usa-alert usa-alert-info">
-    <div class="usa-alert-body">
-      <h3 class="usa-alert-heading">Information Status</h3>
-      <p class="usa-alert-text">Multi line. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui atione voluptatem sequi nesciunt. Neque porro quisquam est, qui doloremipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    </div>
-  </div>
-</div>
-
+{% include code/preview.html component="alerts" %}
+{% include code/accordion.html component="alerts" %}
 <div class="usa-accordion-bordered">
   <button class="usa-button-unstyled usa-accordion-button"
       aria-expanded="true" aria-controls="collapsible-0">
@@ -53,10 +17,9 @@ maturity: alpha
   <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
-      <li>Use the ARIA <code>role=<wbr>"alert"</code> to inform assistive technologies of a time-sensitive and important message that is not interactive. If the message is interactive, use the <code>alertdialog</code> role instead.
+      <li>Use the ARIA <code>role=<wbr>"alert"</code> to inform assistive technologies of a time-sensitive and important message that is not interactive. If the message is interactive, use the <code>alertdialog</code> role instead.</li>
       <li>Do not visually hide alert messages on the page and then make them visible when they are needed. Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.</li>
     </ul>
-
     <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="usa-content-list">

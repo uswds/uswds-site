@@ -9,26 +9,30 @@ gulp.task('clean-fonts', function () {
   return del('assets/fonts/');
 });
 
+gulp.task('clean-images', function () {
+  return del('assets/img/');
+});
+
 gulp.task('clean-javascript', function () {
-  return del([
-    'assets/js/vendor/uswds.js',
-    'assets/js/vendor/uswds.min.js',
-    'assets/js/vendor/uswds.min.js.map',
-    'assets/js/styleguide.js',
-    'assets/js/styleguide.js.map'
-  ]);
+  return del('assets/js/');
 });
 
 gulp.task('clean-styles', function () {
-  return del('assets/css/vendor/uswds/');
+  return del('assets/css/');
+});
+
+gulp.task('remove-assets-folder', function () {
+  return del('assets/');
 });
 
 gulp.task('clean-assets', function (done) {
   runSequence(
     [
       'clean-fonts',
+      'clean-images',
       'clean-javascript',
       'clean-styles',
+      'remove-assets-folder',
     ],
     done
   );
@@ -48,6 +52,7 @@ gulp.task('build', function (done) {
     'images',
     'javascript',
     'sass',
+    'html',
     ],
     done
   );

@@ -1,6 +1,6 @@
 # Site settings
 name: Draft U.S. Web Design Standards Documentation
-version: 0.10.0
+version: 0.12.1
 permalink: pretty
 google_analytics_ua: UA-48605964-43
 
@@ -41,8 +41,14 @@ exclude:
 - Gemfile
 - Gemfile.lock
 - LICENSE.md
+- README.md
+- config
+- css
+- img
+- js
 - manifest.yml
 - node_modules
 - package.json
-- README.md
 - vendor
+- gulpfile.js
+- circle.yml

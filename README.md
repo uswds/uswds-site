@@ -57,7 +57,7 @@ Sometimes you will want to use the latest version of the `web-design-standards` 
 
 1. Clone the latest version of the [`web-design-standards` repo](https://github.com/18F/web-design-standards/tree/staging).
 1. Run `npm install` to install the dependencies required for the package.
-1. Run `npm build:package` to create the built version of the Standards.
+1. Run `npm run build:package` to create the built version of the Standards.
 1. Run `npm link` in the _root level_ of the `web-design-standards` directory on your local machine.
 1. Run `npm link uswds` in the _root level_ of the `web-design-standards-docs` directory on your local machine.
 

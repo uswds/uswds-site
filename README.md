@@ -62,7 +62,7 @@ Sometimes you will want to use the latest version of the `web-design-standards` 
 1. Run `npm run build:package` to create the built version of the Standards in the `web-design-standards` directory.
 1. Run `npm link` in the _root level_ of the `web-design-standards` directory on your local machine.
 1. Run `npm link uswds` in the _root level_ of the `web-design-standards-docs` directory on your local machine.
-1. Run `npm run watch` in both projects to have changes automatically built and compiled on changes to any asset files (the `web-design-standards` and `web-design-standards-docs` directory).
+1. Run `npm run watch` in both project directories to have changes automatically built and compiled on changes to any asset files.
 1. In a new terminal window, run `npm start` in the `web-design-standards-docs` directory to start the Jekyll server locally.
 
 You are now using the latest version of the Standards via your cloned version on your local machine. To stop using this version, type `npm unlink uswds` from the _root level_ of the `web-design-standards-docs` directory.

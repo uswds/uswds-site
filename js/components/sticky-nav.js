@@ -1,12 +1,14 @@
 var $ = require('jquery');
 var calculateAnchorPosition = require('./calculate-anchor-position');
 var $nav = $('.js-sticky-nav');
-var bannerHeight = $('.site-header').outerHeight(true);
+var $header = $('.site-header');
+var bannerHeight = $header.outerHeight(true);
 var STICKY_CLASS_NAME = 'is-scrolled';
 
 
 module.exports = function stickyNav (event) {
 
+  bannerHeight = $header.outerHeight(true) || bannerHeight;
   var originalNavigationHeight = $nav.outerHeight(true);
   var scrollY = $(window).scrollTop();
   var scrollPositionY = scrollY + originalNavigationHeight;
@@ -14,8 +16,8 @@ module.exports = function stickyNav (event) {
 
   if (window.innerWidth > maxMobileWidth && scrollPositionY > bannerHeight) {
     $nav.addClass(STICKY_CLASS_NAME);
-    $('.site-header').addClass(STICKY_CLASS_NAME);
-    $('.usa-disclaimer').addClass(STICKY_CLASS_NAME);
+    $header.addClass(STICKY_CLASS_NAME);
+    $('.usa-banner').addClass(STICKY_CLASS_NAME);
     $('.site-header-navbar').addClass(STICKY_CLASS_NAME);
     $('.site-nav-secondary').addClass(STICKY_CLASS_NAME);
     $('.sidenav').addClass(STICKY_CLASS_NAME);
@@ -23,8 +25,8 @@ module.exports = function stickyNav (event) {
     $('body').css('paddingTop', bannerHeight);
   } else {
     $nav.removeClass(STICKY_CLASS_NAME);
-    $('.site-header').removeClass(STICKY_CLASS_NAME);
-    $('.usa-disclaimer').removeClass(STICKY_CLASS_NAME);
+    $header.removeClass(STICKY_CLASS_NAME);
+    $('.usa-banner').removeClass(STICKY_CLASS_NAME);
     $('.site-header-navbar').removeClass(STICKY_CLASS_NAME);
     $('.site-nav-secondary').removeClass(STICKY_CLASS_NAME);
     $('.sidenav').removeClass(STICKY_CLASS_NAME);

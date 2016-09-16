@@ -1,5 +1,10 @@
+general:
+  artifacts:
+    - "tmp"
+
 machine:
   environment:
+    ACCESSLINT_MASTER_BRANCH: "staging"
     GOPATH: "${HOME}/.go_workspace"
   node:
     version: 5.1.0
@@ -21,12 +26,17 @@ test:
     - gulp -v
     - scss-lint -v
     - jekyll -v
+    - gem install accesslint-ci -v 0.1.9
+    - npm install -g accesslint-cli@1.1.1
   override:
     - gulp build # Build site files
     - bundle exec jekyll build # Build Jekyll website
     - npm test # Run the package and test suite
   post:
     - ls -agolf _site/ # Ensure that build worked
+    - |
+      bundle exec jekyll serve --detach --no-watch && \
+      accesslint-ci scan http://localhost:4000
 
 deployment:
   production:

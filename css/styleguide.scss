@@ -1408,7 +1408,7 @@ $font-light: 300;
 }
 
 .layout-demo {
-  margin-bottom: 11.3rem;
+  margin-bottom: 8.6rem;
 
   @include media($medium-screen) {
     margin-bottom: 5.9rem;
@@ -1440,8 +1440,13 @@ $font-light: 300;
 }
 
 .demo-footer-title {
+  @include margin(0 null 0.7rem null);
   color: $color-white;
   display: inline-block;
+
+  @include media($medium-screen) {
+    @include margin(1em null);
+  }
 }
 
 .demo-footer-content {

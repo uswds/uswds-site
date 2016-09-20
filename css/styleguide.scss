@@ -1408,7 +1408,11 @@ $font-light: 300;
 }
 
 .layout-demo {
-  margin-bottom: 5.9rem;
+  margin-bottom: 11.3rem;
+
+  @include media($medium-screen) {
+    margin-bottom: 5.9rem;
+  }
 }
 
 // Demo fixed footer

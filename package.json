@@ -5,6 +5,11 @@
   
   "scripts": {
     "build": "bundle && gulp build && bundle exec jekyll build",
+    "build-css": "gulp sass && bundle exec jekyll build",
+    "build-js": "gulp javascript && bundle exec jekyll build",
+    "build-img": "gulp images && bundle exec jekyll build",
+    "build-fonts": "gulp fonts && bundle exec jekyll build",
+    "build-html": "gulp html && bundle exec jekyll build",
     "clean": "gulp clean-assets",
     "lint": "gulp eslint scss-lint",
     "prestart": "bundle && gulp build",
@@ -13,10 +18,14 @@
     "watch": "nswatch"
   },
   "watch": {
-    "./node_modules/uswds/src": ["build"],
-    "./css/**/*.scss": ["build"],
-    "./img": ["build"],
-    "./js/**/*.js": ["build"]
+    "./css/**/*.scss": ["build-css"],
+    "./img": ["build-img"],
+    "./js/**/*.js": ["build-js"],
+    "./node_modules/uswds/src/css": ["build-css"],
+    "./node_modules/uswds/src/fonts": ["build-fonts"],
+    "./node_modules/uswds/src/html": ["build-html"],
+    "./node_modules/uswds/src/img": ["build-img"],
+    "./node_modules/uswds/src/js": ["build-js"]
   },
   "repository": {
     "type": "git",

@@ -21,7 +21,7 @@
     "./css/**/*.scss": ["build-css"],
     "./img": ["build-img"],
     "./js/**/*.js": ["build-js"],
-    "./node_modules/uswds/src/css": ["build-css"],
+    "./node_modules/uswds/src/stylesheets": ["build-css"],
     "./node_modules/uswds/src/fonts": ["build-fonts"],
     "./node_modules/uswds/src/html": ["build-html"],
     "./node_modules/uswds/src/img": ["build-img"],

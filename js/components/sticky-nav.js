@@ -1,5 +1,6 @@
 var $ = require('jquery');
 var calculateAnchorPosition = require('./calculate-anchor-position');
+
 var $nav = $('.js-sticky-nav');
 var $header = $('.site-header');
 var bannerHeight = $header.outerHeight(true);
@@ -7,6 +8,9 @@ var STICKY_CLASS_NAME = 'is-scrolled';
 var MAX_MOBILE_WIDTH = 850;
 
 module.exports = function stickyNav (event) {
+  if ($nav.length === 0 || $header.length === 0) {
+    return;
+  }
 
   bannerHeight = $header.outerHeight(true) || bannerHeight;
   var originalNavigationHeight = $nav.outerHeight(true);

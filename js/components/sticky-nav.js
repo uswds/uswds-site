@@ -4,7 +4,7 @@ var $nav = $('.js-sticky-nav');
 var $header = $('.site-header');
 var bannerHeight = $header.outerHeight(true);
 var STICKY_CLASS_NAME = 'is-scrolled';
-
+var MAX_MOBILE_WIDTH = 850;
 
 module.exports = function stickyNav (event) {
 
@@ -12,9 +12,9 @@ module.exports = function stickyNav (event) {
   var originalNavigationHeight = $nav.outerHeight(true);
   var scrollY = $(window).scrollTop();
   var scrollPositionY = scrollY + originalNavigationHeight;
-  var maxMobileWidth = 850;
 
-  if (window.innerWidth > maxMobileWidth && scrollPositionY > bannerHeight) {
+  if (window.innerWidth > MAX_MOBILE_WIDTH
+      && scrollPositionY > bannerHeight) {
     $nav.addClass(STICKY_CLASS_NAME);
     $header.addClass(STICKY_CLASS_NAME);
     $('.usa-banner').addClass(STICKY_CLASS_NAME);

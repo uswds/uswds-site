@@ -1350,8 +1350,9 @@ $font-light: 300;
   text-align: center;
 }
 
-// Headers page -------------- //
-.page-headers {
+// Example images on headers and page templates pages -------------- //
+.page-headers,
+.page-page-templates {
   .preview {
     img {
       box-shadow: 0px 4px 10px rgba(0,0,0,0.3);

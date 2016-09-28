@@ -6,6 +6,7 @@ var $ = require('jquery');
  */
 var calculateAnchorPosition = function (hash) {
   var anchor        = $('#' + hash);
+  var topOffset     = 0;
   if (anchor.length === 0) {
     return topOffset;
   }

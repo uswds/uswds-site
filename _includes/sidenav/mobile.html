@@ -127,6 +127,13 @@
           </li>
         </ul>
       </li>
+      <li>
+        <a
+        {% if page.title == 'Page templates' %}
+          class="usa-current"
+        {% endif %}
+        href="{{ site.baseurl }}/page-templates/">Page templates</a>
+      </li>
     </ul>
     {% include download-buttons.html %}
   </div>

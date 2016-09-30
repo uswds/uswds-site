@@ -20,11 +20,11 @@ This template captures everything necessary for conducting user interviews — s
 
 ## Our research<a id="our-research"></a>
 
-### Pre-1.0 field observations
+### Pre-1.0 field observations - June 2016
 
-#### Where and when
+#### Where
 
-In June 2016, one of our team members attended the Write/Speak/Code conference in Chicago, IL. There, they observed other conference attendees interacting with the Standards for the first time.
+One of our team members attended the Write/Speak/Code conference in Chicago, IL. There, they observed other conference attendees interacting with the Standards for the first time.
 
 #### Goals
 
@@ -36,11 +36,23 @@ This group of new users revealed difficulty getting started with the Standards. 
 
 [Observations of people interacting with the Standards](https://github.com/18F/web-design-standards/wiki/Chicago-June-Observations)
 
-### Comparative analysis
+### Listening tour findings - August 2016
 
-#### When
+#### Where
 
-One of our team members completed this comparative analysis in September 2016.
+In August 2016, members of the Draft U.S. Web Design Standards team conducted a weeklong listening tour (series of user interviews) in Washington, DC.
+
+#### Goals
+
+In speaking to teams from federal agencies that are currently using the Standards, we hoped to learn more about what drew these teams to the Standards, how they’re using the components, the process-related challenges they’re facing, and their suggestions for how we can improve our product.
+
+#### Abstract
+
+In general, the teams we spoke to — especially those with limited design resources — had favorable experiences using the Standards. Most of the teams would like to see “selling points” for the Standards, and many teams noted our contribution guidelines, environment-specific setup instructions, and the upgrade process as areas to improve.
+
+[Findings from listening tour with Standards users](https://github.com/18F/web-design-standards/wiki/August-Listening-Tour-Findings)
+
+### Comparative analysis - September 2016
 
 #### Goals
 
@@ -53,19 +65,3 @@ Our analysis suggested the website and documentation could do more to support qu
 #### Link to analysis
 
 [Comparative analysis report and recommendations for the Standards](https://github.com/18F/web-design-standards/wiki/Comparative-Analysis)
-
-### Listening tour findings
-
-#### Where and when
-
-In August 2016, members of the Draft U.S. Web Design Standards team conducted a weeklong listening tour (series of user interviews) in Washington DC.
-
-#### Goals
-
-In speaking to teams from federal agencies that are currently using the Standards, we hoped to learn more about what drew these teams to the Standards, how they’re using the components, the process-related challenges they’re facing, and their suggestions for how we can improve our product.
-
-#### Abstract
-
-In general, the teams we spoke to — especially those with limited design resources — had favorable experiences using the Standards. Most of the teams would like to see “selling points” for the Standards, and many teams noted our contribution guidelines, environment-specific setup instructions, and the upgrade process as areas to improve.
-
-[Findings from listening tour with Standards users](https://github.com/18F/web-design-standards/wiki/August-Listening-Tour-Findings)

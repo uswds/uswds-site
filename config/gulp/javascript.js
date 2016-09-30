@@ -52,7 +52,7 @@ gulp.task(task, [ 'copy-uswds-javascript', 'eslint' ], function (done) {
       .pipe(rename({
         basename: 'styleguide',
       }))
-    .pipe(sourcemaps.write('.'))
+    .pipe(sourcemaps.write('.', { addComment: false }))
     .pipe(gulp.dest('assets/js'));
 
 });

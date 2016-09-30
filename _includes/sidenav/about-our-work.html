@@ -11,5 +11,18 @@
     <li>
       <a {% if page.url contains 'about-our-work/component-maturity-scale' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/about-our-work/component-maturity-scale/">Component maturity scale</a>
     </li>
+    <li>
+      <a {% if page.url contains 'about-our-work/research' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/about-our-work/research/">Research</a>
+      {% if page.url contains 'about-our-work/research' %}
+        <ul class="usa-sidenav-sub_list">
+          <li>
+            <a href="#research-plan-template">Research plan template</a>
+          </li>
+          <li>
+            <a href="#our-research">Our research</a>
+          </li>
+        </ul>
+      {% endif %}
+    </li>
   </ul>
 </nav>

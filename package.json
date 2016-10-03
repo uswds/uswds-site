@@ -4,12 +4,12 @@
   "description": "Website and documentation on using the Draft U.S. Web Design Standards.",
   
   "scripts": {
-    "build": "bundle && gulp build && bundle exec jekyll build",
-    "build-css": "gulp sass && bundle exec jekyll build",
-    "build-js": "gulp javascript && bundle exec jekyll build",
-    "build-img": "gulp images && bundle exec jekyll build",
-    "build-fonts": "gulp fonts && bundle exec jekyll build",
-    "build-html": "gulp html && bundle exec jekyll build",
+    "build": "gulp build && bundle exec jekyll build",
+    "build-css": "gulp sass",
+    "build-js": "gulp javascript",
+    "build-img": "gulp images",
+    "build-fonts": "gulp fonts",
+    "build-html": "gulp html",
     "clean": "gulp clean-assets",
     "lint": "gulp eslint scss-lint",
     "prestart": "bundle && gulp build",

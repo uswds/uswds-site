@@ -29,12 +29,6 @@ To start, run the following command to install project dependencies:
 npm install
 ```
 
-Next, you’ll perform a build step to copy and compile all of the necessary files that create the site:
-
-```sh
-npm run build
-```
-
 Now that all of your dependencies are installed, you can run your local server by running the following command:
 
 ```sh

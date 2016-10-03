@@ -17,6 +17,8 @@
         {% include sidenav/getting-started.html %}
       {% elsif page.category == 'About our work' or page.title == 'About our work' %}
         {% include sidenav/about-our-work.html %}
+      {% elsif page.category == 'Page templates' or page.title == 'Page templates' %}
+        {% include sidenav/page-templates.html %}
       {% endif %}
     </aside>
     {% include sidenav/mobile.html %}

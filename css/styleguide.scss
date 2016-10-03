@@ -1350,8 +1350,9 @@ $font-light: 300;
   text-align: center;
 }
 
-// Headers page -------------- //
-.page-headers {
+// Example images on headers and page templates pages -------------- //
+.page-headers,
+.page-page-templates {
   .preview {
     img {
       box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
@@ -1407,6 +1408,14 @@ $font-light: 300;
   }
 }
 
+.layout-demo {
+  margin-bottom: 8.6rem;
+
+  @include media($medium-screen) {
+    margin-bottom: 5.9rem;
+  }
+}
+
 // Demo fixed footer
 .demo-footer {
   background-color: $color-gray-dark;
@@ -1417,7 +1426,7 @@ $font-light: 300;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 
-  button {
+  .usa-button {
     background-image: url('../img/angle-arrow-left-inverse.png');
     background-image: url('../img/angle-arrow-left-inverse.svg');
     background-repeat: no-repeat;
@@ -1432,8 +1441,13 @@ $font-light: 300;
 }
 
 .demo-footer-title {
+  @include margin(0 null 0.7rem null);
   color: $color-white;
   display: inline-block;
+
+  @include media($medium-screen) {
+    @include margin(1em null);
+  }
 }
 
 .demo-footer-content {

@@ -25,6 +25,10 @@ gulp.task('remove-assets-folder', function () {
   return del('assets/');
 });
 
+gulp.task('remove-components-folder', function () {
+  return del('_includes/code/components');
+});
+
 gulp.task('clean-assets', function (done) {
   runSequence(
     [
@@ -33,6 +37,7 @@ gulp.task('clean-assets', function (done) {
       'clean-javascript',
       'clean-styles',
       'remove-assets-folder',
+      'remove-components-folder',
     ],
     done
   );
@@ -48,11 +53,11 @@ gulp.task('build', function (done) {
   runSequence(
     'clean-assets',
     [
-    'fonts',
-    'images',
-    'javascript',
-    'sass',
-    'html',
+      'fonts',
+      'images',
+      'javascript',
+      'sass',
+      'html',
     ],
     done
   );

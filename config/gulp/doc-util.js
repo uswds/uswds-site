@@ -83,7 +83,7 @@ module.exports = {
     message = message || 'Draft U.S. Web Design Standards Documentation';
 
     gutil.log(
-      gutil.colors.yellow('v' + pkg.version),
+      chalk.yellow('v' + pkg.version),
       message
     );
     drawFlag();
@@ -94,8 +94,8 @@ module.exports = {
 
     gutil.log(
       shellPrefix,
-      gutil.colors.cyan(name),
-      gutil.colors.magenta(message)
+      chalk.cyan(name),
+      chalk.magenta(message)
     );
 
   },
@@ -104,8 +104,8 @@ module.exports = {
 
     gutil.log(
       shellPrefix,
-      gutil.colors.cyan(name),
-      gutil.colors.yellow(message)
+      chalk.cyan(name),
+      chalk.yellow(message)
     );
 
   },
@@ -113,8 +113,8 @@ module.exports = {
   logData: function (name, message) {
 
     gutil.log(
-      gutil.colors.cyan(name),
-      gutil.colors.yellow(message)
+      chalk.cyan(name),
+      chalk.yellow(message)
     );
 
   },
@@ -122,8 +122,8 @@ module.exports = {
   logError: function (name, message) {
 
     gutil.log(
-      gutil.colors.red(name),
-      gutil.colors.yellow(message)
+      chalk.red(name),
+      chalk.yellow(message)
     );
     notify(this.dirName + ' gulp ' + name, message, true);
 
@@ -132,8 +132,8 @@ module.exports = {
   logMessage: function (name, message) {
 
     gutil.log(
-      gutil.colors.cyan(name),
-      gutil.colors.green(message)
+      chalk.cyan(name),
+      chalk.green(message)
     );
     notify(this.dirName + ' gulp ' + name, message, false);
 

@@ -20,7 +20,7 @@ This template captures everything necessary for conducting user interviews — s
 
 ## Our research<a id="our-research"></a>
 
-### Pre-1.0 field observations - June 2016
+### Field observations - June 2016
 
 #### Where
 
@@ -40,7 +40,7 @@ This group of new users revealed difficulty getting started with the Standards. 
 
 #### Where
 
-In August 2016, members of the Draft U.S. Web Design Standards team conducted a weeklong listening tour (series of user interviews) in Washington, DC.
+Members of the Draft U.S. Web Design Standards team conducted a weeklong listening tour (series of user interviews) in Washington, DC.
 
 #### Goals
 

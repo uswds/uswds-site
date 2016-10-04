@@ -8,7 +8,7 @@ gulp.task('copy-doc-styles', function (done) {
   dutil.logMessage('copy-doc-styles', 'Copying Sass files from css/');
 
   var stream = gulp.src('./css/**/*')
-  .pipe(gulp.dest('assets/css/'));
+    .pipe(gulp.dest('assets/css/'));
 
   return stream;
 
@@ -19,7 +19,7 @@ gulp.task('copy-uswds-styles', function (done) {
   dutil.logMessage('copy-uswds-styles', 'Copying Sass files from uswds');
 
   var stream = gulp.src('./node_modules/uswds/src/stylesheets/**/*')
-  .pipe(gulp.dest('assets/css/vendor/uswds'));
+    .pipe(gulp.dest('assets/css/vendor/uswds'));
 
   return stream;
 

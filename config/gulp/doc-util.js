@@ -1,5 +1,6 @@
 var pkg         = require('../../package.json');
 var gutil       = require('gulp-util');
+var chalk       = gutil.colors;
 var notifier    = require('node-notifier');
 
 var shellPrefix = '$';
@@ -9,50 +10,50 @@ function drawFlag () {
   // American Flag in ASCII
   //
   gutil.log(
-    gutil.colors.blue('xxxxxxxxxxxxxxxxxxxxxxxxxxxx'),
-    gutil.colors.red('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+    chalk.blue('xxxxxxxxxxxxxxxxxxxxxxxxxxxx'),
+    chalk.red('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
   );
   gutil.log(
-    gutil.colors.blue('xxxxxxxxxxxxxxxxxxxxxxxxxxxx'),
-    gutil.colors.white('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+    chalk.blue('xxxxxxxxxxxxxxxxxxxxxxxxxxxx'),
+    chalk.white('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
   );
   gutil.log(
-    gutil.colors.blue('xxxxxxxxxxxxxxxxxxxxxxxxxxxx'),
-    gutil.colors.red('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+    chalk.blue('xxxxxxxxxxxxxxxxxxxxxxxxxxxx'),
+    chalk.red('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
   );
   gutil.log(
-    gutil.colors.blue('xxxxxxxxxxxxxxxxxxxxxxxxxxxx'),
-    gutil.colors.white('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+    chalk.blue('xxxxxxxxxxxxxxxxxxxxxxxxxxxx'),
+    chalk.white('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
   );
   gutil.log(
-    gutil.colors.blue('xxxxxxxxxxxxxxxxxxxxxxxxxxxx'),
-    gutil.colors.red('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+    chalk.blue('xxxxxxxxxxxxxxxxxxxxxxxxxxxx'),
+    chalk.red('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
   );
   gutil.log(
-    gutil.colors.blue('xxxxxxxxxxxxxxxxxxxxxxxxxxxx'),
-    gutil.colors.white('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+    chalk.blue('xxxxxxxxxxxxxxxxxxxxxxxxxxxx'),
+    chalk.white('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
   );
   gutil.log(
-    gutil.colors.blue('xxxxxxxxxxxxxxxxxxxxxxxxxxxx'),
-    gutil.colors.red('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+    chalk.blue('xxxxxxxxxxxxxxxxxxxxxxxxxxxx'),
+    chalk.red('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
   );
   gutil.log(
-    gutil.colors.white('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+    chalk.white('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
   );
   gutil.log(
-    gutil.colors.red('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+    chalk.red('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
   );
   gutil.log(
-    gutil.colors.white('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+    chalk.white('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
   );
   gutil.log(
-    gutil.colors.red('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+    chalk.red('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
   );
   gutil.log(
-    gutil.colors.white('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+    chalk.white('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
   );
   gutil.log(
-    gutil.colors.red('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+    chalk.red('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
   );
 
 }
@@ -86,10 +87,6 @@ module.exports = {
       message
     );
     drawFlag();
-    //gutil.log(
-      //gutil.colors.yellow('v' + pkg.version),
-      //'The following gulp commands are available'
-    //);
 
   },
 

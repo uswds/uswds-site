@@ -8,7 +8,7 @@ var uglify      = require('gulp-uglify');
 var sourcemaps  = require('gulp-sourcemaps');
 var rename      = require('gulp-rename');
 var linter      = require('gulp-eslint');
-var task        = /([\w\d-_]+)\.js$/.exec(__filename)[ 1 ];
+var task        = 'javascript';
 
 gulp.task('eslint', function (done) {
 

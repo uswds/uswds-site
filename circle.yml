@@ -22,8 +22,7 @@ test:
     - scss-lint -v
     - jekyll -v
   override:
-    - gulp build # Build site files
-    - bundle exec jekyll build # Build Jekyll website
+    - npm run build # Build site files
     - npm test # Run the package and test suite
   post:
     - ls -agolf _site/ # Ensure that build worked

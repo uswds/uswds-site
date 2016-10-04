@@ -15,7 +15,7 @@ var calculateAnchorPosition = function (hash) {
   var anchorPadding = parseInt(anchor.css('padding-top'), 10);
 
   //start with the height of the header
-  var topOffset = $('.site-nav-secondary').first().outerHeight();
+  topOffset = $('.site-nav-secondary').first().outerHeight();
   //subtract the diffence in padding between nav top and anchor
   topOffset = topOffset - (anchorPadding - navPadding);
 

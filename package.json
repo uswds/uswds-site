@@ -2,7 +2,6 @@
   "name": "uswds-docs",
   "version": "0.1.0",
   "description": "Website and documentation on using the Draft U.S. Web Design Standards.",
-  
   "scripts": {
     "build": "gulp build && bundle exec jekyll build",
     "build-css": "gulp sass",

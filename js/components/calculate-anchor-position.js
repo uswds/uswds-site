@@ -7,12 +7,12 @@ var $ = require('jquery');
 var calculateAnchorPosition = function (hash) {
   var anchor        = $('#' + hash);
   var topOffset     = 0;
-  var navPadding    = parseInt($('.sidenav').css('padding-top'), 10);
-  var anchorPadding = parseInt(anchor.css('padding-top'), 10);
-
   if (anchor.length === 0) {
     return topOffset;
   }
+
+  var navPadding    = parseInt($('.sidenav').css('padding-top'), 10);
+  var anchorPadding = parseInt(anchor.css('padding-top'), 10);
 
   //start with the height of the header
   topOffset = $('.site-nav-secondary').first().outerHeight();

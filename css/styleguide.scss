@@ -26,7 +26,6 @@ $font-monospace:       Consolas, Monaco, 'Andale Mono', monospace;
     position: absolute;
   }
 
-  .usa-disclaimer-official,
   .site-logo {
     margin-left: $site-margins-mobile;
 
@@ -35,14 +34,13 @@ $font-monospace:       Consolas, Monaco, 'Andale Mono', monospace;
     }
   }
 
-  .usa-disclaimer-stage {
-    margin-right: $site-margins-mobile;
-
-    @include media($nav-width) {
-      margin-right: $site-margins;
-    }
+  .usa-banner-inner {
+    max-width: 100%;
   }
 
+  .usa-banner-content {
+    margin-left: 0;
+  }
 
   .usa-button-list {
     float: right;
@@ -268,7 +266,7 @@ $font-monospace:       Consolas, Monaco, 'Andale Mono', monospace;
   &.is-scrolled {
     @include media($nav-width) {
       position: absolute;
-      top: 15.3rem;
+      top: 15.3rem; // TODO: needs to change when banner is open
     }
   }
 
@@ -1187,7 +1185,7 @@ $font-light: 300;
 
 // This adds styleguide-only right and left margins for our disclaimer
 // Since the layout we use is not in a grid
-.usa-disclaimer {
+.usa-banner {
   &.is-scrolled {
     @media (min-width: $medium-screen + $width-nav-sidebar) {
       display: none;
@@ -1335,7 +1333,8 @@ $font-light: 300;
 .page-for-developers,
 .page-for-designers,
 .page-product-roadmap,
-.page-component-maturity-scale {
+.page-component-maturity-scale,
+.page-research {
   h2 {
     color: $color-primary-darker;
   }
@@ -1352,8 +1351,9 @@ $font-light: 300;
   text-align: center;
 }
 
-// Headers page -------------- //
-.page-headers {
+// Example images on headers and page templates pages -------------- //
+.page-headers,
+.page-page-templates {
   .preview {
     img {
       box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
@@ -1409,6 +1409,14 @@ $font-light: 300;
   }
 }
 
+.layout-demo {
+  margin-bottom: 8.6rem;
+
+  @include media($medium-screen) {
+    margin-bottom: 5.9rem;
+  }
+}
+
 // Demo fixed footer
 .demo-footer {
   background-color: $color-gray-dark;
@@ -1419,7 +1427,7 @@ $font-light: 300;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 
-  button {
+  .usa-button {
     background-image: url('../img/angle-arrow-left-inverse.png');
     background-image: url('../img/angle-arrow-left-inverse.svg');
     background-repeat: no-repeat;
@@ -1434,8 +1442,13 @@ $font-light: 300;
 }
 
 .demo-footer-title {
+  @include margin(0 null 0.7rem null);
   color: $color-white;
   display: inline-block;
+
+  @include media($medium-screen) {
+    @include margin(1em null);
+  }
 }
 
 .demo-footer-content {

@@ -25,10 +25,6 @@
 
     <div class="main-content" id="main-content">
       <div class="styleguide-content usa-content">
-        <!-- temporary alert to announce the repo split -->
-        {% if page.title == 'UI components' or page.title == 'For developers' %}
-          {% include repo-split.html %}
-        {% endif %}
         <header>
           {% if page.category != null %}
             {% unless page.path contains 'overview' %}

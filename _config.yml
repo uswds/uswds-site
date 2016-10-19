@@ -10,7 +10,7 @@ repos:
   url: https://github.com/18F/web-design-standards
 - name: Draft U.S. Web Design Standards Documentation
   description: Documentation for the Draft U.S. Web Design Standards
-  url: https://github.com/18F/web-design-standards
+  url: https://github.com/18F/web-design-standards-docs
 - name: Draft U.S. Web Design Standards Assets
   description: Draft U.S. Web Design Standards visual design assets
   url: https://github.com/18F/web-design-standards-assets

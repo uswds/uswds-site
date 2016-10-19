@@ -1458,9 +1458,3 @@ $font-light: 300;
     @include margin(null $site-margins);
   }
 }
-
-// Repo Split Alert
-.alert-repo_split {
-  margin-top: 0;
-  margin-bottom: 1.5em;
-}

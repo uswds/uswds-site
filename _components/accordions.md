@@ -48,7 +48,7 @@ maturity: alpha
     </ul>
     <a name="deprecated"></a>
     <h4 class="usa-heading">Upgrading deprecated accordions</h4>
-    <p>The accordion was changed July 2016 in order to improve it's
+    <p>The accordion was changed July 2016 in order to improve its
     implementation. Currently, both versions of the accordion work, but at some
     point in the future, the deprecated accordion will no longer function correctly.
     To upgrade your existing accordions to the new accordion:</p>

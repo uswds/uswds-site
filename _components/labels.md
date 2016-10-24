@@ -36,7 +36,7 @@ maturity: beta
       <li>Users frequently confuse labels as buttons. Always conduct usability testing to make sure your particular implementation is not causing frustration.</li>
       <li>If your labels are not interactive, be sure to disable hover, focus, and active styles.</li>
       <li>Don’t mix interactive and static labels on your site. Once you establish a pattern for how labels behave, users will expect that behavior every time.</li>
-      <li>Don’t over do it — if everything on a page is called out as important, nothing is important.</li>
+      <li>Don’t overdo it — if everything on a page is called out as important, nothing is important.</li>
     </ul>
   </div>
 </div>

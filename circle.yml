@@ -44,5 +44,5 @@ deployment:
     branch: /demo_.*/
     commands:
       - cf login -a https://api.cloud.gov -u gsa-wds_deployer -p $CF_GSA_WDS_PASS -o gsa-wds -s wds-demo
-      - cf zero-downtime-push wds-microsite -f manifest-demo.yml -p _site
-      - cf map-route wds-microsite standards-demo.usa.gov
+      - cf push "wds-microsite-$(CIRCLE_BRANCH)" -f manifest-demo.yml -p _site
+      - cf map-route "wds-microsite-$(CIRCLE_BRANCH)" "standards-demo-$(CIRCLE_BRANCH).usa.gov"

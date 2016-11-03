@@ -29,14 +29,20 @@ test:
 
 deployment:
   production:
-    branch: [master]
+    branch: master
     commands:
       - cf login -a https://api.cloud.gov -u gsa-wds_deployer -p $CF_GSA_WDS_PASS -o gsa-wds -s wds-production
       - cf zero-downtime-push wds-microsite -f manifest.yml -p _site
       - cf map-route wds-microsite standards.usa.gov
   staging:
-    branch: [staging]
+    branch: staging
     commands:
       - cf login -a https://api.cloud.gov -u gsa-wds_deployer -p $CF_GSA_WDS_PASS -o gsa-wds -s wds-staging
       - cf zero-downtime-push wds-microsite -f manifest-staging.yml -p _site
       - cf map-route wds-microsite standards-staging.usa.gov
+  demo:
+    branch: /demo_.*/
+    commands:
+      - cf login -a https://api.cloud.gov -u gsa-wds_deployer -p $CF_GSA_WDS_PASS -o gsa-wds -s wds-demo
+      - cf push "wds-microsite-$(CIRCLE_BRANCH)" -f manifest-demo.yml -p _site
+      - cf map-route "wds-microsite-$(CIRCLE_BRANCH)" "standards-demo-$(CIRCLE_BRANCH).usa.gov"

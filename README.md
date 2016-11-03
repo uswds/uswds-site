@@ -61,6 +61,18 @@ Sometimes you will want to use the latest version of the `web-design-standards` 
 
 You are now using the latest version of the Standards via your cloned version on your local machine. To stop using this version, type `npm unlink uswds` from the _root level_ of the `web-design-standards-docs` directory.
 
+### Continuously Delivered Demo Sites
+
+Submitting a PR with a branch name prefixed with `demo_` will trigger a deployment to `standards-demo-<BRANCH_NAME>.usa.gov`. Please be mindful of using these deployments sparingly. Once a branch has been deleted or abandoned, the instance in :cloud:.gov can be deleted with the following commands.
+
+```shell
+$ cf t -o gsa-wds -s wds-demo # target the proper org and space.
+$ cf apps # lists all applications in the space.
+$ cf delete -f standards-demo-<BRANCH_NAME> # to delete the application without prompting.
+```
+
+This feature is limited to pull requests not coming from forks.
+
 ## Contributing
 
 Please read through our [contributing guidelines](CONTRIBUTING.md). These guidelines are directions for opening issues and submitting pull requests, and they also detail the coding and design standards we follow.

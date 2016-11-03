@@ -14,6 +14,7 @@ You will need to have the following installed on your machine before following t
 
 1. Ruby v2.2.2+, [Installation guides](https://www.ruby-lang.org/en/documentation/installation/)
 1. Node v4.2.3+, [Installation guides](https://nodejs.org/en/download/)
+1. Bundler v1.12.3+, [Installation guides](http://bundler.io/v1.13/guides/using_bundler_in_application.html#getting-started---installing-bundler-and-bundle-init)
 
 ### Building the documentation with gulp
 

@@ -55,10 +55,6 @@ of your downloaded assets. And the un-minified version is better if you are in a
 development environment or would like to debug the CSS or JavaScript assets in
 the browser. The examples above recommend using the minified versions.
 
-This version of the Standards includes jQuery version `2.2.0` bundled within the
-JavaScript file. Please make sure that you're not including any other version
-of jQuery on your page.
-
 And that’s it — you should be set to use the Standards.
 
 ### Using npm

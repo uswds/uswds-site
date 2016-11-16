@@ -67,7 +67,7 @@
     "politespace": "^0.1.4",
     "prismjs": "^1.5.1",
     "run-sequence": "^1.1.5",
-    "uswds": "~0.13.1",
+    "uswds": "~0.13.2",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   }

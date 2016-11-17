@@ -1,0 +1,4 @@
+# Manifest file for automated deployments to our staging environment.
+---
+inherit: manifest.yml
+host: wds-microsite-demo

@@ -10,7 +10,7 @@ We communicate the robustness of each new pattern in two ways: by displaying its
 
 For more information on how a component moves from one maturity level to the next, please review our draft design [contribution guidelines](https://github.com/18F/web-design-standards/blob/staging/CONTRIBUTING.md). They define, in detail, the assessments and activities our team conducts to determine whether a component is ready to move to the next level.
 
-Our system is inspired by http://usajobs.github.io/design-system/getting-started/#maturity, who outline a maturity scale of their own in their Getting Started and who use these labels on the individual component page.
+Our system is inspired by the [USAJOBS Design System maturity scale](http://usajobs.github.io/design-system/getting-started/#maturity), which uses similar labels on its individual component pages.
 
 ## Hypothesis
 ### Definitions of done

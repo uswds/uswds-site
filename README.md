@@ -24,7 +24,7 @@ The documentation is built using [gulp](http://gulpjs.com/) automation. To use g
 npm install --global gulp-cli
 ```
 
-To start, run the following command to install project dependencies:
+To start, switch to your local copy of the repository in terminal then run the following command to install project dependencies:
 
 ```sh
 npm install

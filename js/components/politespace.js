@@ -1,6 +1,6 @@
-var jquery = require('jquery');
+var $ = require('jquery');
 
-window.jQuery = jquery;
+window.jQuery = $;
 
 // README: This is necessary because politespace doesn't properly
 // export anything in its package.json.

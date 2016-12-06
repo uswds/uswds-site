@@ -134,7 +134,7 @@ You can also email us directly at uswebdesignstandards@gsa.gov.
 
 The standards are ready to be customized to use different typography, colors and grid system. The easiest way to customize the standards is to use Sass and override the standards global variables. If it isn't possible to use Sass, theming must be done by over-riding CSS rules the standards set.
 
-To start theming through Sass, copy the `core/variables` file into your own project's Sass folder, changing applicable variable values, and importing it before the WDS.
+To start theming through Sass, copy the `core/variables` file into your own project's Sass folder, changing applicable variable values, and importing it before the WDS. Below is an example of customizing the WDS.
 
 ```scss
 // src/main.scss
@@ -164,7 +164,7 @@ $large-screen:  1120px !default;
 
 Do not every change any code in your `uswds` folder. Doing so could make it impossible to upgrade WDS in the future without undoing your changes.
 
-### Where to find customizable variables
+### Main variables that can be customized
 * Colors can be found in the `core/variables` [file, line 35](https://github.com/18F/web-design-standards/blob/staging/src/stylesheets/core/_variables.scss#L35).
 * Font families can be found in the `core/variables` [file, line 28](https://github.com/18F/web-design-standards/blob/staging/src/stylesheets/core/_variables.scss#L28).
 * Typography sizing can be found in `core/variables` [file, line 13](https://github.com/18F/web-design-standards/blob/staging/src/stylesheets/core/_variables.scss#L13).

@@ -1,7 +1,7 @@
 'use strict';
 
 var $ = require('jquery');
-var calculateAnchorPosition = require('./calculate-anchor-position');
+var calculateAnchorPosition = require('../lib/calculate-anchor-position');
 
 var $nav = $('.js-sticky-nav');
 var $header = $('.site-header');

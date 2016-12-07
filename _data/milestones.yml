@@ -4,7 +4,7 @@
       status: done
       url: https://github.com/18F/web-design-standards/milestone/18
     - title: A public maintenance plan.
-      status: in progress
+      status: done
       url: https://github.com/18F/web-design-standards/milestone/19
     - title: A bare-bones HTML starter page, with CSS and JS pre-linked and necessary tags and classes.
       status: in progress

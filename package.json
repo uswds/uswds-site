@@ -80,7 +80,7 @@
     "node-notifier": "^4.6.0",
     "normalize.css": "^3.0.3",
     "nswatch": "^0.2.0",
-    "politespace": "^0.1.20",
+    "politespace": "^0.1.4",
     "prismjs": "^1.5.1",
     "run-sequence": "^1.1.5",
     "uswds": "~0.13.3",

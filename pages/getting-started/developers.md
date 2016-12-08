@@ -132,18 +132,18 @@ You can also email us directly at uswebdesignstandards@gsa.gov.
 
 ## Customization/theming
 
-The standards are ready to be customized to use different typography, colors and grid system. The easiest way to customize the standards is to use Sass and override the standards global variables. If it isn't possible to use Sass, theming must be done by over-riding CSS rules the standards set.
+The Standards can be customized to use different typography, colors and grid systems. The easiest way to do this is to use Sass and override the Standards' global variables. If it isn't possible to use Sass, do theming by overriding the CSS rules in the Standards set.
 
-To start theming through Sass, copy the `core/variables` file into your own project's Sass folder, changing applicable variable values, and importing it before the WDS. Below is an example of customizing the WDS.
+To start theming through Sass, copy the `core/variables` file into your own project's Sass folder, changing applicable variable values, and importing it before the WDS. Below is an example of customizing the import of the Standards all.scss file.
 
 ```scss
 // src/main.scss
-@import 'src/my-custom-vars';
+@import 'path/to/my/scss/files/main/scss/my-custom-vars';
 @import 'lib/uswds/src/stylesheets/all';
 ```
 
 ```scss
-// src/_my-custom_vars.scss
+// path/to/my/scss/files/main/scss/my-custom_vars.scss
 
 // Colors
 $color-primary: #2c3e50;
@@ -162,7 +162,7 @@ $medium-screen: 620px !default;
 $large-screen:  1120px !default;
 ```
 
-Do not every change any code in your `uswds` folder. Doing so could make it impossible to upgrade WDS in the future without undoing your changes.
+NOTE: If you plan on upgrading to newer versions of the Standards in the future, or are not using your own forked version of the Standards, try to avoid making changes in the Standards folder themselves. Doing so could make it impossible to upgrade in the future without undoing your custom changes.
 
 ### Main variables that can be customized
 * Colors can be found in the `core/variables` [file, line 35](https://github.com/18F/web-design-standards/blob/staging/src/stylesheets/core/_variables.scss#L35).

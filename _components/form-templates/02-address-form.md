@@ -19,7 +19,6 @@ order: 02
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>As you customize this form template, make sure it continues to follow the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines for form templates</a> and the <a href="{{ site.baseurl }}/form-controls/">accessibility guidelines for form controls</a>.</li>
-      <li>Also make sure that the input masking on the ZIP field, which inserts a hyphen before the four-digit extension, is accessible to people using screen readers. We use <a href="https://github.com/filamentgroup/politespace">Filament Group's Politespace</a>.</li>
     </ul>
     <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
@@ -35,7 +34,7 @@ order: 02
     <ul class="usa-content-list">
       <li>Only label the optional inputs. Users can infer that all the others are required.</li>
       <li>If possible, let users type their state’s abbreviation when they reach the state drop-down menu.</li>
-      <li>Support both five- and nine-digit ZIP codes. Some addresses require a nine-digit ZIP code. The input mask should be “#####-####” so that the text is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code.</li>
+      <li>Support both five- and nine-digit ZIP codes. Some addresses require a nine-digit ZIP code.</li>
     </ul>
   </div>
 </div>

@@ -58,7 +58,7 @@ Below are a list of website and applications currently using the Draft U.S. Web 
 - Microviz
 - [MIDAAS Commerce Data Service](https://midaas.commerce.gov/)
 - [Milwaukee Police Scanner](https://mke-police.herokuapp.com/)
-- [NASA Web Style Guide](https://app.frontify.com/d/NZPXDvjOcz5x/nasa-web-style-guide)
+- [NASA Web Design Standards](https://bruffridge.github.io/web-design-standards-docs/)
 - [National Center for Biotechnology Information](https://www.ncbi.nlm.nih.gov/labs/journals/)
 - [National Institute of Health](https://www.nih.gov/)
 - [National Week of Making](https://weekofmaking.pif.gov/)

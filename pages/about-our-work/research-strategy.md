@@ -54,9 +54,9 @@ We will recruit users of your product and observe them using it using remote, on
 * Report out on USWDS pattern usability and plan for refinement
 
 ####Cost and Timeline
-Cost - $65,000 - $80,000
-Timeline - 4 - 5 Weeks
-Staff - 2 UX designers
+* Cost - $65,000 - $80,000
+* Timeline - 4 - 5 Weeks
+* Staff - 2 UX designers
 
 ###Package 2 - In-Person Usability Evaluation
 We will recruit users of your product and observe them directly on location, where it makes sense. The number of users involved will be no more than 20, depending on your user profiles and overall product needs. This evaluation is meant to be an in-depth analysis of your product, exposing both general trends and specific issues that may be impacting your users. The sessions will be open to your team for observation purposes, on location and via remote conferencing tools, and the team will report back any findings.
@@ -66,9 +66,9 @@ We will recruit users of your product and observe them directly on location, whe
 * Report out on USWDS pattern usability and plan for refinement
 
 ####Cost and Timeline
-Cost - $80,000 - $95,000 (travel costs included, additional recruitment and testing facility fees may apply)
-Timeline - 5 - 6 Weeks
-Staff - 2 UX designers
+* Cost - $80,000 - $95,000 (travel costs included, additional recruitment and testing facility fees may apply)
+* Timeline - 5 - 6 Weeks
+* Staff - 2 UX designers
 
 _Web Analytics Setup_
 
@@ -82,9 +82,9 @@ We will work with digital services teams to put the basic code needed into place
 * Integration into the DAP platform
 
 ####Cost and Timeline
-Cost - $8,000 - $16,000
-Timeline - 1 - 2 Weeks
-Staff - 1 Analysts
+* Cost - $8,000 - $16,000
+* Timeline - 1 - 2 Weeks
+* Staff - 1 Analysts
 
 ###Package 2 - Basic Reporting and Dashboards
 In addition to the services described in the above package, an analyst will work with a digital service team to set up basic reporting and dashboards that give agencies greater insight into how people use its digital products. The information gathered can help inform outreach, business and technical strategy, and user research activities the digital service team might want perform.
@@ -96,6 +96,6 @@ In addition to the services described in the above package, an analyst will work
 * Report and dashboard set up.
 
 ####Cost and Timeline
-Cost - $24,000 - $31,000
-Timeline - 3 - 4 Weeks
-Staff - 1 Analysts
+* Cost - $24,000 - $31,000
+* Timeline - 3 - 4 Weeks
+* Staff - 1 Analysts

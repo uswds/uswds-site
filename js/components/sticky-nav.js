@@ -1,13 +1,16 @@
+'use strict';
+
 var $ = require('jquery');
-var calculateAnchorPosition = require('./calculate-anchor-position');
+var calculateAnchorPosition = require('../lib/calculate-anchor-position');
 
 var $nav = $('.js-sticky-nav');
 var $header = $('.site-header');
 var bannerHeight = $header.outerHeight(true);
+
 var STICKY_CLASS_NAME = 'is-scrolled';
 var MAX_MOBILE_WIDTH = 850;
 
-module.exports = function stickyNav (event) {
+function stickyNav (event) {
   if ($nav.length === 0 || $header.length === 0) {
     return;
   }
@@ -37,5 +40,10 @@ module.exports = function stickyNav (event) {
     $('.main-content').removeClass(STICKY_CLASS_NAME);
     $('body').css('paddingTop', 0);
   }
+}
 
-};
+$(window).on('scroll', stickyNav);
+$(window).on('resize', stickyNav);
+
+// do it once on load
+$(stickyNav);

@@ -17,14 +17,30 @@
     "watch": "nswatch"
   },
   "watch": {
-    "./css/**/*.scss": ["build-css"],
-    "./img": ["build-img"],
-    "./js/**/*.js": ["build-js"],
-    "./node_modules/uswds/src/stylesheets": ["build-css"],
-    "./node_modules/uswds/src/fonts": ["build-fonts"],
-    "./node_modules/uswds/src/html": ["build-html"],
-    "./node_modules/uswds/src/img": ["build-img"],
-    "./node_modules/uswds/src/js": ["build-js"]
+    "./css/**/*.scss": [
+      "build-css"
+    ],
+    "./img": [
+      "build-img"
+    ],
+    "./js/**/*.js": [
+      "build-js"
+    ],
+    "./node_modules/uswds/src/stylesheets": [
+      "build-css"
+    ],
+    "./node_modules/uswds/src/fonts": [
+      "build-fonts"
+    ],
+    "./node_modules/uswds/src/html": [
+      "build-html"
+    ],
+    "./node_modules/uswds/src/img": [
+      "build-img"
+    ],
+    "./node_modules/uswds/src/js": [
+      "build-js"
+    ]
   },
   "repository": {
     "type": "git",

@@ -16,7 +16,7 @@ lead: Here, you’ll find our product roadmap — an up-to-date report on the w
 </ul>
 
 {% for milestone in site.data.milestones %}
-<section id="milestone-{{ milestone.id }}">
+<section id="milestone-{{ forloop.index }}">
   <h2>{{ milestone.title }}</h2>
   <ul>
   {% for task in milestone.tasks %}

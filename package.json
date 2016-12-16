@@ -17,14 +17,30 @@
     "watch": "nswatch"
   },
   "watch": {
-    "./css/**/*.scss": ["build-css"],
-    "./img": ["build-img"],
-    "./js/**/*.js": ["build-js"],
-    "./node_modules/uswds/src/stylesheets": ["build-css"],
-    "./node_modules/uswds/src/fonts": ["build-fonts"],
-    "./node_modules/uswds/src/html": ["build-html"],
-    "./node_modules/uswds/src/img": ["build-img"],
-    "./node_modules/uswds/src/js": ["build-js"]
+    "./css/**/*.scss": [
+      "build-css"
+    ],
+    "./img": [
+      "build-img"
+    ],
+    "./js/**/*.js": [
+      "build-js"
+    ],
+    "./node_modules/uswds/src/stylesheets": [
+      "build-css"
+    ],
+    "./node_modules/uswds/src/fonts": [
+      "build-fonts"
+    ],
+    "./node_modules/uswds/src/html": [
+      "build-html"
+    ],
+    "./node_modules/uswds/src/img": [
+      "build-img"
+    ],
+    "./node_modules/uswds/src/js": [
+      "build-js"
+    ]
   },
   "repository": {
     "type": "git",
@@ -67,7 +83,7 @@
     "politespace": "^0.1.4",
     "prismjs": "^1.5.1",
     "run-sequence": "^1.1.5",
-    "uswds": "~0.13.3",
+    "uswds": "~0.14.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   }

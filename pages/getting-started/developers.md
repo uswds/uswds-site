@@ -122,13 +122,54 @@ You can also email us directly at uswebdesignstandards@gsa.gov.
 * Uses a **[modified BEM](https://pages.18f.gov/frontend/css-coding-styleguide/naming/)** approach created by 18F for naming CSS selectors. Objects in CSS are separated by single dashes. Multi-word objects are separated by an underscore (For example: `.usa-button-cool_feature-active`).
 * Uses **modular CSS** for scalable, modular, and flexible code.
 * Uses **nesting** when appropriate. Nest minimally with up to two levels of nesting.
-* **Global variables** are defined in the `_defaults.scss` file. Custom theming can be done by copying the `_variables.scss` file into your own project's Sass folder, changing applicable variable values, and importing it before uswds in Sass.
-* Hard-coded magic numbers are avoided and, if necessary, defined in the `_defaults.scss` file.
+* Hard-coded magic numbers are avoided and, if necessary, defined in the `core/variables` scss file.
 * Media queries are built **mobile first**.
 * **Spacing units** are as much as possible defined as rem or em units so they scale appropriately with text size. Pixels can be used for detail work and should not exceed 5px (For example: 3px borders).
 
 **For more information, visit:
 [https://pages.18f.gov/frontend/css-coding-styleguide/](https://pages.18f.gov/frontend/css-coding-styleguide/)**
+
+
+## Customization/theming
+
+The Standards can be customized to use different typography, colors and grid systems. The easiest way to do this is to use Sass and override the Standards' global variables. If it isn't possible to use Sass, do theming by overriding the CSS rules in the Standards set.
+
+To start theming through Sass, copy the `core/variables` file into your own project's Sass folder, changing applicable variable values, and importing it before the WDS. Below is an example of customizing the import of the Standards all.scss file.
+
+```scss
+// src/main.scss
+@import 'path/to/my/scss/files/main/scss/my-custom-vars';
+@import 'lib/uswds/src/stylesheets/all';
+```
+
+```scss
+// path/to/my/scss/files/main/scss/my-custom_vars.scss
+
+// Colors
+$color-primary: #2c3e50;
+$color-secondary: #ad2020;
+$color-secondary-dark: #b0392e;
+
+// Typography
+$font-serif: 'Georgia', 'Times', serif;
+$h2-font-size: 2rem;
+$h3-font-size: 1.75rem;
+$heading-line-height: 1.4;
+
+// Grid/breakpoints
+$small-screen:  540px !default;
+$medium-screen: 620px !default;
+$large-screen:  1120px !default;
+```
+
+NOTE: If you plan on upgrading to newer versions of the Standards in the future, or are not using your own forked version of the Standards, try to avoid making changes in the Standards folder themselves. Doing so could make it impossible to upgrade in the future without undoing your custom changes.
+
+### Main variables that can be customized
+* Colors can be found in the `core/variables` [file, line 35](https://github.com/18F/web-design-standards/blob/staging/src/stylesheets/core/_variables.scss#L35).
+* Font families can be found in the `core/variables` [file, line 28](https://github.com/18F/web-design-standards/blob/staging/src/stylesheets/core/_variables.scss#L28).
+* Typography sizing can be found in `core/variables` [file, line 13](https://github.com/18F/web-design-standards/blob/staging/src/stylesheets/core/_variables.scss#L13).
+* Grid and breakpoint settings can be found in `core/variables` [file, line 87](https://github.com/18F/web-design-standards/blob/staging/src/stylesheets/core/_variables.scss#L87).
+
 
 ## Where things live<a id="where-things-live"></a>
 

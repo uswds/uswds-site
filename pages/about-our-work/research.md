@@ -1,7 +1,7 @@
 ---
-permalink: /about-our-work/research/
+permalink: /about-our-work/current-research/
 layout: styleguide
-title: Research
+title: Current research
 category: About our work
 lead: The Draft U.S. Web Design Standards are an evolving set of front-end design resources. A core part of continuing to improve them is focused design research. We’re sharing our research templates, as well as documentation of our research approach and findings so far. We hope to give insights into the design choices we have made for the Standards and where <a href="https://standards.usa.gov/about-our-work/product-roadmap/">our roadmap</a> is headed. Additionally, we hope you’ll find these resources useful as you conduct research in your own work.
 ---

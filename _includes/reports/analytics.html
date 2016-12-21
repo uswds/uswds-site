@@ -1,0 +1,29 @@
+<table>
+  <thead>
+    <tr>
+      <th scope="col" aria-sort="ascending">Quarter</th>
+      {% for column in include.columns %}
+      <th scope="col" align="right">{{ column.title }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+{% for q in site.data.analytics reversed %}
+  {% assign parts = q[0] | split: '-' %}
+  {% assign year = parts[0] %}
+  {% assign quarter = parts[1] %}
+  {% assign domains = q[1] %}
+    {% for domain in domains %}
+      {% unless domain.Hostname %}
+    <tr>
+      <th scope="row">{{ year }} / {{ quarter }}</th>
+      {% for column in include.columns %}
+      <td align="right">{{ domain[column.source] }}</td>
+      {% endfor %}
+    </tr>
+      {% endunless %}
+    {% endfor %}
+{% endfor %}
+  </tbody>
+</table>
+

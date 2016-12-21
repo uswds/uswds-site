@@ -8,22 +8,13 @@
     </tr>
   </thead>
   <tbody>
-{% for q in site.data.analytics reversed %}
-  {% assign parts = q[0] | split: '-' %}
-  {% assign year = parts[0] %}
-  {% assign quarter = parts[1] %}
-  {% assign domains = q[1] %}
-    {% for domain in domains %}
-      {% unless domain.Hostname %}
+  {% for row in site.data.google_analytics reversed %}
     <tr>
-      <th scope="row">{{ year }} / {{ quarter }}</th>
+      <th scope="row">{{ row.Year }} {{ row.Quarter }}</th>
       {% for column in include.columns %}
-      <td align="right">{{ domain[column.source] }}</td>
+      <td align="right">{{ row[column.source] }}</td>
       {% endfor %}
     </tr>
-      {% endunless %}
-    {% endfor %}
-{% endfor %}
+  {% endfor %}
   </tbody>
 </table>
-

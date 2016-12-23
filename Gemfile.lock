@@ -27,16 +27,13 @@ GEM
     mercenary (0.3.6)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
-    rake (11.2.2)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
+    redcarpet (3.3.4)
     rouge (1.9.0)
     safe_yaml (1.0.4)
     sass (3.4.22)
-    scss_lint (0.50.2)
-      rake (>= 0.9, < 12)
-      sass (~> 3.4.20)
 
 PLATFORMS
   ruby
@@ -44,8 +41,8 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   json
+  redcarpet
   rouge (= 1.9)
-  scss_lint
 
 BUNDLED WITH
-   1.12.3
+   1.13.6

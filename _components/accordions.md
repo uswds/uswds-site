@@ -56,7 +56,7 @@ maturity: alpha
       <li>Remove the top level div that contains the <code>usa-accordion</code> or
       <code>usa-accordion-bordered</code> class.</li>
       <li>Add the <code>usa-accordion</code> or <code>usa-accordion-bordered</code>
-      class to the <code>ul</code> element that's now at the top level.
+      class to the <code>ul</code> element that's now at the top level.</li>
     </ul>
   </div>
 </div>

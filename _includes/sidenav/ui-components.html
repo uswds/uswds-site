@@ -1,4 +1,4 @@
-{% assign current = page.url | downcase | split: '/' %}
+{% assign current = page.url | split: '/' %}
 
 <nav>
   <ul class="usa-sidenav-list">
@@ -39,6 +39,9 @@
           </li>
         </ul>
       {% endif %}
+    </li>
+    <li>
+      <a {% if current[1] == 'accessibility' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/accessibility/">Accessibility</a>
     </li>
     <li>
       <a {% if current[1] == 'grids' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/grids/">Grid</a>

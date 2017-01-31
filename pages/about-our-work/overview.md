@@ -21,9 +21,26 @@ few data points to approximate how many users of federal websites
 have "experienced" the Draft U.S. Web Design Standards. We will
 update these numbers quarterly.
 
-{% include reports/analytics.html columns=page.columns %}
-
-#### Sites that use the standards
+<table>
+  <thead>
+    <tr>
+      <th scope="col" aria-sort="ascending">Quarter</th>
+      {% for column in include.columns %}
+      <th scope="col" align="right">{{ column.title }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+  {% for row in site.data.google_analytics reversed %}
+    <tr>
+      <th scope="row">{{ row.Year }} {{ row.Quarter }}</th>
+      {% for column in page.columns %}
+      <td align="right">{{ row[column.source] }}</td>
+      {% endfor %}
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
 
 ### GitHub engagement
 Thanks to the community we have fostered during the development of

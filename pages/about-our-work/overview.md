@@ -25,7 +25,7 @@ update these numbers quarterly.
   <thead>
     <tr>
       <th scope="col" aria-sort="ascending">Quarter</th>
-      {% for column in include.columns %}
+      {% for column in page.columns %}
       <th scope="col" align="right">{{ column.title }}</th>
       {% endfor %}
     </tr>

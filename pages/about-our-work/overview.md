@@ -13,7 +13,7 @@ columns:
     source: Pageviews
 ---
 
-### Web analytics for [sites that use the Standards](#sites-that-use-the-standards)
+### Web analytics for sites that use the Standards
 
 By accessing the Google Analytics data gathered for
 [analytics.usa.gov](https://analytics.usa.gov), we have aggregated a

@@ -7,12 +7,17 @@ lead: User research will be a core aspect of the Draft U.S. Web Design Standards
 ---
 
 ## Analytics Reporting
-### Quarterly Report Outs
 
-Once a quarter the metrics displayed on https://standards.usa.gov/about-our-work/ will be updated to reflect the recent traffic and usage of the Draft U.S. Web Design Standards. We will use this information to identify future improvements to the design patterns. You can use these metrics to help justify the adoption and continued use of the Standards.
+### Quarterly Reports
+
+Once a quarter the metrics displayed on the [about our work]({{ site.baseurl }}/about-our-work/)
+page will be updated to reflect the recent traffic and usage of the Draft U.S.
+Web Design Standards. We will use this information to identify future
+improvements to the design patterns. You can use these metrics to help justify
+the adoption and continued use of the Standards.
 
 #### Dependencies
-* Your product team has defined the metrics and funnels you want to track and report out on
+* Your product team has defined the metrics and funnels you want to track and report
 * One of your product team members must be familiar enough with web analytics to set up the tracking and reporting
 
 #### References

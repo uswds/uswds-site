@@ -35,7 +35,7 @@ update these numbers quarterly.
     <tr>
       <th scope="row">{{ row.Year }} {{ row.Quarter }}</th>
       {% for column in page.columns %}
-      <td align="right">{{ row[column.source] }}</td>
+      <td>{{ row[column.source] }}</td>
       {% endfor %}
     </tr>
   {% endfor %}

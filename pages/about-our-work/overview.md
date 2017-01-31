@@ -41,10 +41,3 @@ update these numbers quarterly.
   {% endfor %}
   </tbody>
 </table>
-
-### GitHub engagement
-Thanks to the community we have fostered during the development of
-the Draft U.S. Web Design Standards, we have gathered the following
-data points which highlights the activity of our code base.
-
-{% include reports/github.html %}

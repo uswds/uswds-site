@@ -22,7 +22,7 @@ lead: "We designed the U.S. Web Design Standards to help you create better exper
   </div>
   <div class="usa-width-one-half">
     <h4>Showcase benefits for agency and users</h4>
-    <p>Teams around the government should easily be able to find inspiration from among their peers. This inspiration can jumpstart many teams own efforts but also lay the groundwork for making the business case for adopting the U.S. Web Design Standards. The success of both USWDS and its users will be cataloged both quantitatively and qualitatively.</p>
+    <p>Teams around the government should easily be able to find inspiration from among their peers. This inspiration can jumpstart many teams own efforts but also lay the groundwork for making the business case for adopting the U.S. Web Design Standards. We will catalog the successes of the Standards and its users both quantitively and qualitatively.</p>
   </div>
 </div>
 <div class="usa-grid-full">

@@ -1454,3 +1454,10 @@ $font-light: 300;
     @include margin(null $site-margins);
   }
 }
+
+hr {
+  background: $color-gray-lighter;
+  border: none;
+  height: 1px;
+  margin: 3em 0; 
+}

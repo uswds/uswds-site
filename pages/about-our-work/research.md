@@ -3,7 +3,7 @@ permalink: /about-our-work/current-research/
 layout: styleguide
 title: Current research
 category: About our work
-lead: The Draft U.S. Web Design Standards are an evolving set of front-end design resources. A core part of continuing to improve them is focused design research. We’re sharing our research templates, as well as documentation of our research approach and findings so far. We hope to give insights into the design choices we have made for the Standards and where <a href="https://standards.usa.gov/about-our-work/product-roadmap/">our roadmap</a> is headed. Additionally, we hope you’ll find these resources useful as you conduct research in your own work.
+lead: The U.S. Web Design Standards are an evolving set of front-end design resources. A core part of continuing to improve them is focused design research. We’re sharing our research templates, as well as documentation of our research approach and findings so far. We hope to give insights into the design choices we have made for the Standards and where <a href="https://standards.usa.gov/about-our-work/product-roadmap/">our roadmap</a> is headed. Additionally, we hope you’ll find these resources useful as you conduct research in your own work.
 ---
 
 ## Research plan template<a id="research-plan-template"></a>
@@ -16,7 +16,7 @@ We created this template so folks on our team — especially those new to resear
 
 This template captures everything necessary for conducting user interviews — space to list assumptions, hypotheses, and target audience(s); a logistics checklist; day-of-interview protocol; and a template interview script. We invite you to adapt this plan and omit any sections that aren’t applicable to your research. We also [welcome your thoughts](https://github.com/18F/web-design-standards-docs/issues) on how we can make this template better.
 
-[Draft U.S. Web Design Standards research plan template](https://github.com/18F/web-design-standards/wiki/research-plan-template)
+[U.S. Web Design Standards research plan template](https://github.com/18F/web-design-standards/wiki/research-plan-template)
 
 ## Our research<a id="our-research"></a>
 
@@ -40,7 +40,7 @@ This group of new users revealed difficulty getting started with the Standards. 
 
 #### Where
 
-Members of the Draft U.S. Web Design Standards team conducted a weeklong listening tour (series of user interviews) in Washington, DC.
+Members of the U.S. Web Design Standards team conducted a weeklong listening tour (series of user interviews) in Washington, DC.
 
 #### Goals
 

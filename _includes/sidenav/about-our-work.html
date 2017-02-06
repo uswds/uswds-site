@@ -27,5 +27,17 @@
         </ul>
       {% endif %}
     </li>
+    <li>
+      <a {% if page.url contains 'about-our-work/releases' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/about-our-work/releases/"> Release notes</a>
+      {% if page.url contains 'about-our-work/releases' %}
+        <ul class="usa-sidenav-sub_list">
+        {% for release in site.data.releases %}
+          <li>
+            <a href="#{{ release.name | slugify }}">{{ release.name }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
   </ul>
 </nav>

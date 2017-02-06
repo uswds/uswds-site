@@ -1,7 +1,7 @@
 ---
 permalink: /about-our-work/releases/
 layout: styleguide
-title: What's new
+title: Release notes
 category: About our work
 ---
 <p class="usa-font-lead">The Standards are an ever-evolving product. We've been listening to your feedback and using it as a basis for improvements and additions.</p>
@@ -12,6 +12,12 @@ category: About our work
 
 
 {% for release in site.data.releases %}
-  <h2><a href="{{ release.html_url }}">{{ release.name }}</a></h2>
+
+  <h2 id="{{ release.name | slugify }}">Version {{ release.name }}</h2>
+
+  <p class="site-subheading">{{ release.published_at | date: "%B %d, %Y" }}</p>
+  
   {{ release.body | markdownify }}
+
+  <hr />
 {% endfor %}

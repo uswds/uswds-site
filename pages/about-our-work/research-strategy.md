@@ -3,13 +3,13 @@ permalink: /about-our-work/research-strategy/
 layout: styleguide
 title: Research strategy
 category: About our work
-lead: User research will be a core aspect of the Draft U.S. Web Design Standards project as it's our main source of feedback and inspiration for future product development. We plan to use a combination of research methods, quantitative research like collecting web analytics to see in how frequently the Standards are used around the federal government, and qualitative research like remote and in-person observational studies to see whether the Standards are making government sites easier for people to use. We'll use this research to see how well the Standards are working and what needs to be improved. We can also provide user research services to teams that are using the Standards. These will be priced to allow teams around the federal government to engage with us and improve their product for their users. This benefits the Standards as well because we'll get feedback on where they need to be improved and extended.
+lead: User research will be a core aspect of the U.S. Web Design Standards project as it's our main source of feedback and inspiration for future product development. We plan to use a combination of research methods, quantitative research like collecting web analytics to see in how frequently the Standards are used around the federal government, and qualitative research like remote and in-person observational studies to see whether the Standards are making government sites easier for people to use. We'll use this research to see how well the Standards are working and what needs to be improved. We can also provide user research services to teams that are using the Standards. These will be priced to allow teams around the federal government to engage with us and improve their product for their users. This benefits the Standards as well because we'll get feedback on where they need to be improved and extended.
 ---
 
 ## Analytics Reporting
 ### Quarterly Report Outs
 
-Once a quarter the metrics displayed on https://standards.usa.gov/about-our-work/ will be updated to reflect the recent traffic and usage of the Draft U.S. Web Design Standards. We will use this information to identify future improvements to the design patterns. You can use these metrics to help justify the adoption and continued use of the Standards.
+Once a quarter the metrics displayed on https://standards.usa.gov/about-our-work/ will be updated to reflect the recent traffic and usage of the U.S. Web Design Standards. We will use this information to identify future improvements to the design patterns. You can use these metrics to help justify the adoption and continued use of the Standards.
 
 #### Dependencies
 * Your product team has defined the metrics and funnels you want to track and report out on
@@ -35,7 +35,7 @@ One of the most consistent ways we have collected feedback from our users has be
 
 ### Bi-annual Contextual Inquiries
 
-Twice a year, the team will schedule a round of in-person interviews with teams around the federal government to meet with and observe how teams have been using, or would like to be using, the Draft U.S. Web Design Standards. The information gathered during these "contextual inquires" will ensure that the product is continuously delivering what federal teams and the general public need.
+Twice a year, the team will schedule a round of in-person interviews with teams around the federal government to meet with and observe how teams have been using, or would like to be using, the U.S. Web Design Standards. The information gathered during these "contextual inquires" will ensure that the product is continuously delivering what federal teams and the general public need.
 
 ### Open House Events (with Remote Options)
 
@@ -45,7 +45,7 @@ The team will host open house events at the GSA Headquarters in Washington D.C a
 
 ### Usability Testing
 
-The best way to learn how well the Standards are working is to watch people using them. You can sign up to have researchers on the Draft U.S. Web Design Standards team conduct a usability study with your users and collect feedback on your product. This benefits us both: we get feedback on how well the Standards work in different contexts and you get direct user feedback on your product.
+The best way to learn how well the Standards are working is to watch people using them. You can sign up to have researchers on the U.S. Web Design Standards team conduct a usability study with your users and collect feedback on your product. This benefits us both: we get feedback on how well the Standards work in different contexts and you get direct user feedback on your product.
 
 #### Package 1 - Remote Usability Evaluation
 We will recruit users of your product -- usually no more than 20 -- and observe them using it via remote, online web conferencing tools. This approach is meant to highlight high level issues that your users are experiencing and provide guidance on future iterations of your product. Your team is encouraged to observe the sessions; our researchers will report back their findings.

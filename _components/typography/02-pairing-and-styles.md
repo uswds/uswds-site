@@ -194,9 +194,9 @@ order: 02
             <h6 class="usa-heading-alt">Example</h6>
             <p>
               <a class="media_link" href="/">
-                <img src="{{ site.baseurl }}/assets/img/robust_example_standardshome.png" alt="Draft U.S. Web Design Standards homepage example">
+                <img src="{{ site.baseurl }}/assets/img/robust_example_standardshome.png" alt="U.S. Web Design Standards homepage example">
               </a>
-              <a href="/">Draft U.S. Web Design Standards homepage</a>
+              <a href="/">U.S. Web Design Standards homepage</a>
             </p>
           </aside>
           <h6 class="usa-heading-alt">Web Hierarchy</h6>

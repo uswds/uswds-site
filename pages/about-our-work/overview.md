@@ -4,21 +4,39 @@ layout: styleguide
 title: About our work
 category: About our work
 lead: We’re always looking for ways to improve the Standards. Here, you'll find the latest information about recent releases, our product roadmap, and our governance model.
+columns:
+  - title: New users
+    source: New Users
+  - title: Total users
+    source: Users
+  - title: Page views
+    source: Pageviews
 ---
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
-    <h3>Estimated People Exposed to U.S Web Design Standards</h3>
-    <p>By accessing the data that is gathered via analytics.usa.gov, we have aggregated a few data points to showcase how many users of federal websites have been exposed to the U.S. Web Design Standards. These numbers will be updated quarterly.</p>
-    <h3>Quarter 3 of 2016 </h3>
-    <h3>62,437,565 Total people exposed</h3>
-    <h4>54,646,374 First time exposed</h4>
-    <h4>478,526,298 Across Page Views</h4>
-  </div>
-  <div class="usa-width-one-half">
-    <h3>Latest Community Engagement Report via Github Repo</h3>
-    <p>Thanks to the community we have fostered during the development of the U.S. Web Design Standards, we have gathered the following data points which highlights the activity of our code base. </p>
-    <h3>Quarter 3 of 2016</h3>
-    <h4>507 Code Commits</h4>
-    <h4>73 Forks</h4>
-  </div>
-</div>
+### Web analytics for sites that use the Standards
+
+By accessing the Google Analytics data gathered for
+[analytics.usa.gov](https://analytics.usa.gov), we have aggregated a
+few data points to approximate how many users of federal websites
+have "experienced" the U.S. Web Design Standards. We will
+update these numbers quarterly.
+
+<table>
+  <thead>
+    <tr>
+      <th scope="col" aria-sort="ascending">Quarter</th>
+      {% for column in page.columns %}
+      <th scope="col" align="right">{{ column.title }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+  {% for row in site.data.google_analytics reversed %}
+    <tr>
+      <th scope="row">{{ row.Year }} {{ row.Quarter }}</th>
+      {% for column in page.columns %}
+      <td>{{ row[column.source] }}</td>
+      {% endfor %}
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>

@@ -41,6 +41,7 @@ markdown: redcarpet
 redcarpet:
   extensions:
     - tables
+    - with_toc_data # automatic heading ids
 
 exclude:
 - ".ruby-version"

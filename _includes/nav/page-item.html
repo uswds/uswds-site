@@ -2,7 +2,7 @@
 {% assign _current = false %}
 {% if _page.permalink == page.permalink -%}
   {% assign _current = true %}
-{% elsif include.current == 'contains' -%}
+{% elsif include.current == 'contains' and _page.permalink != '/' -%}
   {% assign _that_parts = _page.permalink | split: '/' %}
   {% assign _this_parts = page.permalink | split: '/' %}
   {% assign _mismatch = false %}

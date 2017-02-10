@@ -1,12 +1,15 @@
 ---
 ---
 
-// Overrides
+// USWDS Overrides
 $color-grid-dark:   #727272;
 $color-grid-light:  #e3e4e5;
 $font-monospace:    Consolas, Monaco, 'Andale Mono', monospace;
 $font-path:         '{{ site.baseurl }}/assets/fonts/';
 $image-path:        '{{ site.baseurl }}/assets/img/';
+
+// Site image path, relative to /css/
+$site-image-path: '../img/';
 
 // Imports
 @import 'vendor/uswds/uswds';
@@ -130,16 +133,16 @@ $image-path:        '{{ site.baseurl }}/assets/img/';
     }
 
     &[aria-expanded=false] {
-      background-image: url('../img/plus-alt.png');
-      background-image: url('../img/plus-alt.svg');
+      background-image: url('#{$image-path}/plus-alt.png');
+      background-image: url('#{$image-path}/plus-alt.svg');
       background-repeat: no-repeat;
       background-position: right 0 center;
       background-size: 1rem;
     }
 
     &[aria-expanded=true] {
-      background-image: url('../img/minus-alt.png');
-      background-image: url('../img/minus-alt.svg');
+      background-image: url('#{$image-path}/minus-alt.png');
+      background-image: url('#{$image-path}/minus-alt.svg');
       background-repeat: no-repeat;
       background-position: right 0 center;
       background-size: 1rem;
@@ -1298,8 +1301,8 @@ $font-light: 300;
   display: table;
 
   &::before {
-    background: url('../img/icon-download.png') no-repeat 0 0;
-    background: url('../img/icon-download.svg') no-repeat 0 0;
+    background: url('#{$site-image-path}/icon-download.png') no-repeat 0 0;
+    background: url('#{$site-image-path}/icon-download.svg') no-repeat 0 0;
     background-size: 100%;
     content: '';
     display: inline-block;
@@ -1429,8 +1432,8 @@ $font-light: 300;
   -webkit-font-smoothing: antialiased;
 
   .usa-button {
-    background-image: url('../img/angle-arrow-left-inverse.png');
-    background-image: url('../img/angle-arrow-left-inverse.svg');
+    background-image: url('#{$site-image-path}/angle-arrow-left-inverse.png');
+    background-image: url('#{$site-image-path}/angle-arrow-left-inverse.svg');
     background-repeat: no-repeat;
     background-position: left 2rem center;
     background-size: 1rem;

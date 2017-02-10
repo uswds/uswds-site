@@ -5,11 +5,11 @@
 $color-grid-dark:   #727272;
 $color-grid-light:  #e3e4e5;
 $font-monospace:    Consolas, Monaco, 'Andale Mono', monospace;
-$font-path:         '{{ site.baseurl }}/assets/fonts/';
-$image-path:        '{{ site.baseurl }}/assets/img/';
+$font-path:         '{{ site.baseurl }}/assets/fonts';
+$image-path:        '{{ site.baseurl }}/assets/img';
 
 // Site image path, relative to /css/
-$site-image-path: '../img/';
+$site-image-path: '../img';
 
 // Imports
 @import 'vendor/uswds/uswds';
@@ -1302,8 +1302,8 @@ $font-light: 300;
   display: table;
 
   &::before {
-    background: url('#{$site-image-path}/icon-download.png') no-repeat 0 0;
-    background: url('#{$site-image-path}/icon-download.svg') no-repeat 0 0;
+    background: url('#{$image-path}/icon-download.png') no-repeat 0 0;
+    background: url('#{$image-path}/icon-download.svg') no-repeat 0 0;
     background-size: 100%;
     content: '';
     display: inline-block;

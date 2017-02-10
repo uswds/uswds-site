@@ -1,6 +1,7 @@
 ---
+permalink: /grids/
 layout: styleguide
-title: Grids
+title: Grid
 category: UI components
 lead: This 12-column, responsive grid provides structure for website content.
 maturity: alpha

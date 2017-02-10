@@ -1,4 +1,5 @@
 ---
+permalink: /search-bar/
 layout: styleguide
 type: component
 title: Search bar

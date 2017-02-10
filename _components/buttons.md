@@ -1,4 +1,5 @@
 ---
+permalink: /buttons/
 layout: styleguide
 type: element
 title: Buttons

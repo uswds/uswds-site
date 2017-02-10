@@ -1,40 +1,23 @@
-{% for link in include.links %}
+{% assign subnav_class = include.subnav_class | default: 'usa-sidenav-sub_list' %}
+
+{% for link in include.links -%}
   {% assign _where = 'page.permalink == "%"' | replace: '%', link.href %}
   {% assign _page = site.pages | where_exp: 'page', _where | first %}
-  {% unless _page %}
+  {% unless _page -%}
     {% assign _page = site.components | where_exp: 'page', _where | first %}
   {% endunless %}
   <li>
     {% if _page -%}
-      {% assign _link_attrs = '' %}
-      {% assign _current = false %}
-      {% if _page.permalink == page.permalink %}{% assign _current = true %}{% endif %}
-    <a href="{{ _page.url }}"{% if _current -%} class="usa-current"{% endif %}>{{ link.text | default: _page.title }}</a>
-      {% if _current %}
-        {% assign _href_key = include.href_key %}
-        {% assign _text_key = include.href_key %}
-        {% assign _subnav = _page.subnav %}
-        {% if _subnav.data %}
-          {% assign _href_key = _subnav.href %}
-          {% assign _text_key = _subnav.text %}
-          {% assign _data_key = _subnav.data %}
-          {% assign _subnav = site.data[_data_key] %}
-        {% endif %}
-        {% if _subnav %}
-    <ul class="usa-sidenav-sub_list">{% include nav/list.html links=_subnav text_key=_text_key href_key=_href_key %}</ul>
-        {% endif %}
-      {% endif %}
+      {%
+        include nav/page-item.html
+        page=_page
+        subnav_class=include.subnav_class
+      %}
     {% else -%}
-      {% assign _href_key = include.href_key | default: 'href' %}
-      {% if _href_key.size == 2 %}
-        {% assign _key = _href_key[1] %}
-        {% assign _slug = link[_key] | slugify %}
-        {% assign _href = _href_key[0] | replace: '%', _slug %}
-      {% else %}
-        {% assign _href = link[_href_key] %}
-      {% endif %}
-      {% assign _text_key = include.text_key | default: 'text' %}
-    <a href="{{ _href }}">{{ link[_text_key] }}</a>
+      {% include nav/link-item.html link=link
+        subnav_class=include.subnav_class
+        href_key=include.href_key
+      %}
     {% endif %}
   </li>
 {% endfor %}

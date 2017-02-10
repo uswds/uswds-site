@@ -1,0 +1,27 @@
+{% assign _link_attrs = '' %}
+{% assign _current = false %}
+{% if _page.permalink == page.permalink -%}
+  {% assign _current = true %}
+{% endif %}
+
+<a href="{{ _page.url | prepend: site.baseurl }}"{% if _current -%} class="usa-current"{% endif %}>{{ link.text | default: _page.title }}</a>
+
+{% if _current -%}
+  {% assign _href_key = include.href_key %}
+  {% assign _text_key = include.href_key %}
+  {% assign _subnav = _page.subnav %}
+  {% if _subnav.data -%}
+    {% assign _href_key = _subnav.href %}
+    {% assign _text_key = _subnav.text %}
+    {% assign _data_key = _subnav.data %}
+    {% assign _subnav = site.data[_data_key] %}
+  {% endif %}
+  {% if _subnav -%}
+    <ul class="usa-sidenav-sub_list">{%
+      include nav/list.html
+      links=_subnav
+      text_key=_text_key
+      href_key=_href_key
+    %}</ul>
+  {% endif %}
+{% endif %}

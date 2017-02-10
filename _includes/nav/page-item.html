@@ -1,24 +1,4 @@
-{% assign _link_attrs = '' %}
-{% assign _current = false %}
-{% if _page.permalink == page.permalink -%}
-  {% assign _current = true %}
-{% elsif include.current == 'contains' and _page.permalink != '/' -%}
-  {% assign _that_parts = _page.permalink | split: '/' %}
-  {% assign _this_parts = page.permalink | split: '/' %}
-  {% assign _mismatch = false %}
-  <!-- {{ _this_parts | jsonify }} contains {{ _that_parts | jsonify }} -->
-  {% for _part in _that_parts %}
-    {% assign _i = forloop.index0 %}
-    {% if _this_parts[_i] != _part -%}
-      <!-- {{ _this_parts[_i] }} == {{ _part }} -->
-      {% assign _mismatch = true %}
-      {% break %}
-    {% endif %}
-  {% endfor %}
-  {% unless _mismatch -%}
-    {% assign _current = true %}
-  {% endunless %}
-{% endif %}
+{% assign _current = _page.permalink | contains_url: page.permalink %}
 
 <a href="{{ _page.url | prepend: site.baseurl }}"{% if _current -%} class="usa-current"{% endif %}>{{ link.text | default: _page.title }}</a>
 

@@ -1,22 +1,43 @@
-<div class="usa-grid">
-  <div class="logo-links">
-    <a href="https://18f.gsa.gov/">
-      <img src="{{ site.baseurl }}/assets/img/logo-18f.png" alt="18F">
-    </a>
-    <a href="http://www.gsa.gov/">
-      <img src="{{ site.baseurl }}/assets/img/logo-gsa.png" alt="GSA">
-    </a>
-    <a href="https://www.usds.gov/">
-      <img class="logo-usds" src="{{ site.baseurl }}/assets/img/logo-usds.png" alt="USDS">
-    </a>
-  </div>
-  <div class="footer-text">
-    <div class="footer-text-one-half">
-      <p>Feedback? Create an issue on the <a href="{{ site.repos[0].url }}">Standards component repo</a> or email us at <a href="mailto:uswebdesignstandards@gsa.gov">uswebdesignstandards@gsa.gov</a>.</p>
-      <p>Have an idea? Read our <a href="{{ site.repos[0].url }}/blob/staging/CONTRIBUTING.md">contribution guidelines</a>.</p>
-      <p><a href="{{ site.repos[1].url }}/blob/staging/{{ page.path }}">Edit this page</a></p>      
-      <p>As a work of the United States government, this project is <a href="{{ site.repos[0].url }}/blob/master/LICENSE.md">in the public domain</a>.</p>
+<footer class="site-footer" role="contentinfo">
 
+  <div class="site-footer-nav usa-grid">
+    {% if page.url == '/' %}
+      {% include download-buttons.html %}
+    {% endif %}
+    {% if page.category != null %}
+      <h6>{{ page.category }}</h6>
+    {% endif %}
+    {% if page.category == 'UI components' or page.title == 'UI components' %}
+      {% include sidenav/ui-components.html %}
+    {% elsif page.category == 'Getting started' or page.title == 'Getting started' %}
+      {% include sidenav/getting-started.html %}
+    {% elsif page.category == 'About our work' or page.title == 'About our work' %}
+      {% include sidenav/about-our-work.html %}
+    {% endif %}
+  </div>
+
+  <div class="site-footer-info">
+    <div class="usa-grid">
+      <div class="logo-links">
+        <a href="https://18f.gsa.gov/">
+          <img src="{{ site.baseurl }}/assets/img/logo-18f.png" alt="18F">
+        </a>
+        <a href="http://www.gsa.gov/">
+          <img src="{{ site.baseurl }}/assets/img/logo-gsa.png" alt="GSA">
+        </a>
+        <a href="https://www.usds.gov/">
+          <img class="logo-usds" src="{{ site.baseurl }}/assets/img/logo-usds.png" alt="USDS">
+        </a>
+      </div>
+      <div class="footer-text">
+        <div class="footer-text-one-half">
+          <p>Feedback? Create an issue on the <a href="{{ site.repos[0].url }}">Standards component repo</a> or email us at <a href="mailto:uswebdesignstandards@gsa.gov">uswebdesignstandards@gsa.gov</a>.</p>
+          <p>Have an idea? Read our <a href="{{ site.repos[0].url }}/blob/staging/CONTRIBUTING.md">contribution guidelines</a>.</p>
+          <p><a href="{{ site.repos[1].url }}/blob/staging/{{ page.path }}">Edit this page</a></p>
+          <p>As a work of the United States government, this project is <a href="{{ site.repos[0].url }}/blob/master/LICENSE.md">in the public domain</a>.</p>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+
+</footer>

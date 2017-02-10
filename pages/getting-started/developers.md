@@ -4,6 +4,19 @@ layout: styleguide
 title: For developers
 category: Getting started
 lead: The UI components are built on a solid HTML foundation, progressively enhanced to provide core experiences across browsers. All users will have access to the same critical information and experiences regardless of what browser they use, although those experiences will render better in newer browsers. If JavaScript fails, users will still get a robust HTML foundation.
+subnav:
+- text: Installation
+  href: '#installation'
+- text: CSS architecture
+  href: '#css-architecture'
+- text: Where things live
+  href: '#where-things-live'
+- text: Customization
+  href: '#customization-and-theming'
+- text: Accessibility
+  href: '#notes-on-accessibility'
+- text: Contributions
+  href: '#contribution-guidelines'
 ---
 
 ## Installation<a id="installation"></a>

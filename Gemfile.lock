@@ -49,8 +49,8 @@ DEPENDENCIES
   hash-joiner
   jekyll
   json
-  redcarpet
   open-uri-cached
+  redcarpet
   rouge (= 1.9)
   scss_lint
 

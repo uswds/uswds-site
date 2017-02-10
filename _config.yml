@@ -56,6 +56,7 @@ exclude:
 - config
 - img
 - js
+- vendor
 - manifest.yml
 - node_modules
 - package.json

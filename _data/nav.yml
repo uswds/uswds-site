@@ -7,7 +7,7 @@ primary:
 
 UI components:
   - text: Overview
-    href: /components/
+    href: /
   - href: /typography/
   - href: /colors/
   - href: /accessibility/
@@ -25,7 +25,8 @@ UI components:
   - href: /footers/
 
 Getting started:
-  - href: /getting-started/
+  - text: Overview
+    href: /getting-started/
   - href: /getting-started/designers/
   - href: /getting-started/developers/
   - href: /download/

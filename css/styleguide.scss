@@ -1,12 +1,17 @@
 ---
 ---
 
-// Imports -------------- //
+// Overrides
+$color-grid-dark:   #727272;
+$color-grid-light:  #e3e4e5;
+$font-monospace:    Consolas, Monaco, 'Andale Mono', monospace;
+$font-path:         '{{ site.baseurl }}/assets/fonts/';
+$image-path:        '{{ site.baseurl }}/assets/img/';
 
-@import 'override_variables';
+// Imports
 @import 'vendor/uswds/uswds';
 
-//  -------------- //
+// Header -------------- //
 
 .site-header {
   @include position(fixed, 0 null null 0);

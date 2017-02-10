@@ -6,24 +6,23 @@
     {% include head.html %}
   </head>
 
-  <body class="page-{{ page.title | slugify }}">
+  <body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
 
-  	{% include navbar.html %}
+    {% include navbar.html %}
 
     <aside class="sidenav">
-      {% if page.category == 'UI components' or page.title == 'UI components' %}
-        {% include sidenav/ui-components.html %}
-      {% elsif page.category == 'Getting started' or page.title == 'Getting started' %}
-        {% include sidenav/getting-started.html %}
-      {% elsif page.category == 'About our work' or page.title == 'About our work' %}
-        {% include sidenav/about-our-work.html %}
-      {% elsif page.category == 'Page templates' or page.title == 'Page templates' %}
-        {% include sidenav/page-templates.html %}
+      {% assign sidenav = site.data.nav[page.category] %}
+      {% if sidenav %}
+      <ul class="usa-sidenav-list">
+        {% include nav/list.html links=sidenav %}
+      </ul>
       {% endif %}
     </aside>
+
     {% include sidenav/mobile.html %}
 
-    <div class="main-content" id="main-content">
+    <main class="main-content" id="main-content">
+
       <div class="styleguide-content usa-content">
         <header>
           {% if page.category != null %}
@@ -41,9 +40,9 @@
             </div>
           {% endif %}
         </header>
-        {% if page.lead != null %}
-          <p class="usa-font-lead">{{ page.lead }}</p>
-        {% endif %}
+
+        {% include atoms/lead.html text=page.lead %}
+
         {{ content }}
       </div>
 
@@ -67,7 +66,8 @@
           {% include footer.html %}
         </div>
       </footer>
-    </div>
+
+    </main>
 
     {% include ie-polyfill-scripts.html %}
     {% include analytics.html %}

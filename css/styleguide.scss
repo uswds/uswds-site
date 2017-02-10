@@ -205,7 +205,8 @@ $site-image-path: '../img/';
   a {
     @include padding (1.6rem null);
     color: $color-gray;
-    font-size: $h6-font-size;
+    font-size: $h5-font-size;
+    font-weight: bold;
     letter-spacing: 0.3px;
     line-height: $height-nav-secondary;
     text-decoration: none;

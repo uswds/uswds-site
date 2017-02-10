@@ -11,7 +11,7 @@ subnav:
   href: '#our-research'
 ---
 
-## Research plan template<a id="research-plan-template"></a>
+## Research plan template
 
 ### Why we built a template
 
@@ -23,7 +23,7 @@ This template captures everything necessary for conducting user interviews — s
 
 [Draft U.S. Web Design Standards research plan template](https://github.com/18F/web-design-standards/wiki/research-plan-template)
 
-## Our research<a id="our-research"></a>
+## Our research
 
 ### Field observations - June 2016
 

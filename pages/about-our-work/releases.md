@@ -12,16 +12,15 @@ subnav:
 
 <p class="usa-font-lead">Here you'll find our release notes — summaries of bug fixes, new features, and other updates introduced in each release.</p>
 
-<p>Have suggestions for a new feature or bug fix? Open an <a href="https://github.com/18F/web-design-standards/issues/new" title="Click here to open an issue on Github">issue</a> in our repo.</p>
-
+Have suggestions for a new feature or bug fix? [Open an issue](https://github.com/18F/web-design-standards/issues/new) in our repo.
 
 {% for release in site.data.releases %}
 
-  <h2 id="{{ release.name | slugify }}">Version {{ release.name }}</h2>
+## [Version {{ release.name }}]({{ release.html_url }})
 
-  <p class="site-subheading">{{ release.published_at | date: "%B %d, %Y" }}</p>
-  
-  {{ release.body | markdownify }}
+<p class="site-subheading">{{ release.published_at | date: "%B %d, %Y" }}</p>
 
-  <hr />
+{{ release.body | markdownify }}
+
+<hr />
 {% endfor %}

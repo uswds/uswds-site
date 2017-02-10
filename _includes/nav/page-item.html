@@ -32,12 +32,14 @@
     {% assign _data_key = _subnav.data %}
     {% assign _subnav = site.data[_data_key] %}
   {% endif %}
-  {% if _subnav -%}
+  {% unless include.flat -%}
+    {% if _subnav -%}
     <ul class="usa-sidenav-sub_list">{%
       include nav/list.html
       links=_subnav
       text_key=_text_key
       href_key=_href_key
     %}</ul>
-  {% endif %}
+    {% endif %}
+  {% endunless %}
 {% endif %}

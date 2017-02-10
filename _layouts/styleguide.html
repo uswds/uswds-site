@@ -10,7 +10,7 @@
 
   	{% include navbar.html %}
 
-    <aside class="sidenav">
+    <aside class="sidenav sticky" style="top: 5rem;">
       {% if page.category == 'UI components' or page.title == 'UI components' %}
         {% include sidenav/ui-components.html %}
       {% elsif page.category == 'Getting started' or page.title == 'Getting started' %}

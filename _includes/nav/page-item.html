@@ -1,11 +1,9 @@
-{% assign _current = _page.permalink | contains_url: page.permalink %}
-
-<a href="{{ _page.url | prepend: site.baseurl }}"{% if _current -%} class="usa-current"{% endif %}>{{ link.text | default: _page.title }}</a>
-
+{% assign _current = include.page.permalink | contains_url: page.permalink %}
+<a href="{{ include.page.url | prepend: site.baseurl }}"{% if _current -%} class="usa-current"{% endif %}>{{ link.text | default: include.page.title }}</a>
 {% if _current -%}
   {% assign _href_key = include.href_key %}
   {% assign _text_key = include.href_key %}
-  {% assign _subnav = _page.subnav %}
+  {% assign _subnav = include.page.subnav %}
   {% if _subnav.data -%}
     {% assign _href_key = _subnav.href %}
     {% assign _text_key = _subnav.text %}
@@ -14,7 +12,7 @@
   {% endif %}
   {% unless include.flat -%}
     {% if _subnav -%}
-    <ul class="usa-sidenav-sub_list">{%
+    <ul class="{{ include.subnav_class | default: 'usa-sidenav-sub_list' }}">{%
       include nav/list.html
       links=_subnav
       text_key=_text_key

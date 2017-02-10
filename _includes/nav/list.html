@@ -1,10 +1,7 @@
-{% assign subnav_class = include.subnav_class | default: 'usa-sidenav-sub_list' %}
-
 {% for link in include.links -%}
-  {% assign _where = 'page.permalink == "%"' | replace: '%', link.href %}
-  {% assign _page = site.pages | where_exp: 'page', _where | first %}
+  {% assign _page = link.href | resolve_permalink: site.pages %}
   {% unless _page -%}
-    {% assign _page = site.components | where_exp: 'page', _where | first %}
+    {% assign _page = link.href | resolve_permalink: site.components %}
   {% endunless %}
   <li>
     {% if _page -%}

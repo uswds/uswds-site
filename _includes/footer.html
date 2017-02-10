@@ -1,18 +1,22 @@
 <footer class="site-footer" role="contentinfo">
 
+  <!-- FIXME: this whole section should go away -->
   <div class="site-footer-nav usa-grid">
     {% if page.url == '/' %}
       {% include download-buttons.html %}
     {% endif %}
+
     {% if page.category != null %}
       <h6>{{ page.category }}</h6>
     {% endif %}
-    {% if page.category == 'UI components' or page.title == 'UI components' %}
-      {% include sidenav/ui-components.html %}
-    {% elsif page.category == 'Getting started' or page.title == 'Getting started' %}
-      {% include sidenav/getting-started.html %}
-    {% elsif page.category == 'About our work' or page.title == 'About our work' %}
-      {% include sidenav/about-our-work.html %}
+
+    {% assign links = site.data.nav[page.category] %}
+    {% if links %}
+    <nav>
+      <ul class="usa-sidenav-list">
+      {% include nav/list.html links=links %}
+      </ul>
+    </nav>
     {% endif %}
   </div>
 

@@ -1,4 +1,4 @@
-{% assign _current = include.page.permalink | contains_url: page.permalink %}
+{% assign _current = page | contains_page: include.page, include.rel %}
 <a href="{{ include.page.url | prepend: site.baseurl }}"{% if _current -%} class="usa-current"{% endif %}>{{ link.text | default: include.page.title }}</a>
 {% if _current -%}
   {% assign _href_key = include.href_key %}

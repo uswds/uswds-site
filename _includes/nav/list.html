@@ -1,14 +1,11 @@
 {% for link in include.links -%}
-  {% assign _page = link.href | resolve_permalink: site.pages %}
-  {% unless _page -%}
-    {% assign _page = link.href | resolve_permalink: site.components %}
-  {% endunless %}
+  {% assign _page = link.href | resolve_permalink %}
   <li>
     {% if _page -%}
       {%
         include nav/page-item.html
         page=_page
-        current=include.current
+        rel=include.rel
         flat=include.flat
         subnav_class=include.subnav_class
       %}

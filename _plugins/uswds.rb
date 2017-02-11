@@ -10,8 +10,8 @@ module USWDS
     a == b
   end
 
-  def ifelse(a, b, iff, elsee)
-    a == b ? iff : elsee
+  def ifeq(a, b, equal, notequal)
+    a == b ? equal : notequal
   end
 
   def resolve_permalink(href, source=nil)

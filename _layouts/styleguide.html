@@ -19,7 +19,17 @@
       {% endif %}
     </aside>
 
-    {% include sidenav/mobile.html %}
+    <nav role="navigation" class="usa-nav sidenav-mobile">
+      <div class="usa-nav-inner">
+        <button class="usa-nav-close">
+          <img src="{{ site.baseurl }}/assets/img/close.svg" alt="close">
+        </button>
+        <ul class="usa-sidenav-list usa-accordion">
+          {% include nav/sections.html sections=site.data.nav.mobile %}
+        </ul>
+        {% include download-buttons.html %}
+      </div>
+    </nav>
 
     <main class="main-content" id="main-content">
 
@@ -27,17 +37,17 @@
         <header>
           {% if page.category != null %}
             {% unless page.path contains 'overview' %}
-              <p class="site-subheading">{{ page.category }}</p>
+          <p class="site-subheading">{{ page.category }}</p>
             {% endunless %}
           {% endif %}
           <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
           {% if page.category == 'UI components' and page.maturity != null %}
-            <div class="tooltip">
-              <p class="tooltip-text" id="tooltip-text-{{ page.title | slugify }}">Read about the component maturity scale</p>
-              <a class="usa-label label-{{ page.maturity }}" href="{{ site.baseurl }}/about-our-work/component-maturity-scale/" aria-describedby="tooltip-text-{{ page.title | slugify }}">
-                {{ page.maturity }}
-              </a>
-            </div>
+          <div class="tooltip">
+            <p class="tooltip-text" id="tooltip-text-{{ page.title | slugify }}">Read about the component maturity scale</p>
+            <a class="usa-label label-{{ page.maturity }}" href="{{ site.baseurl }}/about-our-work/component-maturity-scale/" aria-describedby="tooltip-text-{{ page.title | slugify }}">
+              {{ page.maturity }}
+            </a>
+          </div>
           {% endif %}
         </header>
 

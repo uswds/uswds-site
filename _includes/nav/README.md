@@ -111,3 +111,72 @@ and would look something like:
   <li><a href="/page-three/">Page three</a></li>
 </ul>
 ```
+
+### Data-driven subnavigation
+
+Subnavigation lists can be driven by a data source, which is how we automate
+the listing of our versioned releases. To reference a data source, use an
+object for your `subnav` frontmatter:
+
+```markdown
+---
+subnav:
+  data: name_of_source
+  text: key_for_text
+  href: ['%-format', key_for_href]
+---
+```
+
+The allowed fields are as follows:
+
+* `data` is the name of a top-level data source. For instance, if the value is
+  `nav`, then the navigation list items will be obtained from `site.data.nav`.
+* `text` is the optional key of the link text in each item, and defaults to
+  `text`. For instance, if your data has a `title` property, you could set
+  `text: title` to have that value used as the text of each link.
+* `href` is an optional 2-item list:
+  1. the href format string, in which `%` will be replaced with the _slugified_
+     value, and
+  1. the key in which to find the value to be slugified.
+
+
+For instance, our releases page generate headings with slugified `id`
+attributes, and we link to them in the subnav this way:
+
+```markdown
+---
+subnav:
+  data: releases      # get data from site.data.releases
+  text: name          # x.y.z
+  href: ['#%', name]  # e.g. '#0-14-0'
+---
+{% for release in site.data.releases %}
+## {{ release.name }}
+{{ release.body }}
+{% endfor %}
+```
+
+
+### Accordions
+
+You can create an an accordion of navigation elements with the
+`nav/sections.html` include, which accepts the same type of `links` parameter
+as `nav/list.html`, but creates a collapsible accordion section for each link
+object with `collapsible: true`. In this case, the subnav for each of these
+pages is pulled automatically from the resolved page's category, via
+`site.data.nav[category]`. For example:
+
+```markdown
+---
+links:
+  # presents as an accordion section containing 
+  # subnav for /page-one/'s category
+- href: /page-one/
+  collapsible: true
+  # presents as a plain link
+- href: /page-two/
+---
+<ul class="usa-accordion">
+{% include nav/sections.html links=page.links %}
+</ul>
+```

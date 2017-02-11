@@ -16,7 +16,7 @@ Have suggestions for a new feature or bug fix? [Open an issue](https://github.co
 
 {% for release in site.data.releases %}
 
-## [Version {{ release.name }}]({{ release.html_url }})
+## Version {{ release.name }}
 
 <p class="site-subheading">{{ release.published_at | date: "%B %d, %Y" }}</p>
 

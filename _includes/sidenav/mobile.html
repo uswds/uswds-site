@@ -1,96 +1,10 @@
-{% assign current = page.url | downcase | split: '/' %}
-
 <nav role="navigation" class="usa-nav sidenav-mobile">
   <div class="usa-nav-inner">
     <button class="usa-nav-close">
       <img src="{{ site.baseurl }}/assets/img/close.svg" alt="close">
     </button>
     <ul class="usa-sidenav-list usa-accordion">
-      <li>
-        <button class="usa-accordion-button"
-          {% if page.category == 'UI components' %}
-            class="usa-current"
-          {% endif %}
-          {% if page.category == 'UI components' %}
-            {% unless page.path contains 'overview' %}
-              aria-expanded="true"
-            {% endunless %}
-          {% else %}
-            aria-expanded="false"
-          {% endif %}
-          aria-controls="side-nav-1">UI components</button>
-        <ul id="side-nav-1" class="usa-sidenav-sub_list">
-          {% assign sidenav = site.data.nav['UI components'] %}
-          {% include nav/list.html links=sidenav %}
-        </ul>
-      </li>
-      <li>
-        <button class="usa-accordion-button"
-          {% if page.category == 'Getting started' %}
-            class="usa-current"
-          {% endif %}
-          {% if page.category == 'Getting started' %}
-            {% unless page.path contains 'overview' %}
-              aria-expanded="true"
-            {% endunless %}
-          {% else %}
-            aria-expanded="false"
-          {% endif %}
-          aria-controls="sidenav-2">Getting started</button>
-        <ul id="sidenav-2" class="usa-sidenav-sub_list">
-          <li>
-            <a {% if page.url == '/getting-started/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/getting-started/">Overview</a>
-          </li>
-          <li>
-            <a {% if page.url contains 'getting-started/developers' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/getting-started/developers/">For developers</a>
-          </li>
-          <li>
-            <a {% if page.url contains 'getting-started/designers' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/getting-started/designers/">For designers</a>
-          </li>
-          <li>
-            <a {% if page.url == '/download/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/download">Download code and design files</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a
-        {% if page.title == 'Design principles' %}
-          class="usa-current"
-        {% endif %}
-        href="{{ site.baseurl }}/design-principles/">Design principles</a>
-      </li>
-      <li>
-        <button class="usa-accordion-button"
-          {% if page.category == 'About our work' %}
-            class="usa-current"
-          {% endif %}
-          {% if page.category == 'About our work' %}
-            {% unless page.path contains 'overview' %}
-              aria-expanded="true"
-            {% endunless %}
-          {% else %}
-            aria-expanded="false"
-          {% endif %}
-         aria-controls="sidenav-3" {% if current[1] == 'about-our-work' %}class="usa-current"{% endif %}>About our work</button>
-        <ul id="sidenav-3" class="usa-sidenav-sub_list">
-          <li>
-            <a {% if page.url == '/about-our-work/' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/about-our-work/">Overview</a>
-          </li>
-          <li>
-            <a {% if page.url contains 'about-our-work/product-roadmap' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/about-our-work/product-roadmap/">Product roadmap</a>
-          </li>
-          <li>
-            <a {% if page.url contains 'about-our-work/component-maturity-scale' %}class="usa-current"{% endif %} href="{{ site.baseurl }}/about-our-work/component-maturity-scale/">Component maturity scale</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a
-        {% if page.title == 'Page templates' %}
-          class="usa-current"
-        {% endif %}
-        href="{{ site.baseurl }}/page-templates/">Page templates</a>
-      </li>
+      {% include nav/sections.html sections=site.data.nav.mobile %}
     </ul>
     {% include download-buttons.html %}
   </div>

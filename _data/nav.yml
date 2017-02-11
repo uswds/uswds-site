@@ -5,6 +5,16 @@ primary:
   - href: /about-our-work/
   - href: /page-templates/
 
+mobile:
+  - href: /
+    collapsible: true
+  - href: /getting-started/
+    collapsible: true
+  - href: /design-principles/
+  - href: /about-our-work/
+    collapsible: true
+  - href: /page-templates/
+
 UI components:
   - text: Overview
     href: /

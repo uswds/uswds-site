@@ -6,6 +6,14 @@ module USWDS
     )
   end
 
+  def eq(a, b)
+    a == b
+  end
+
+  def ifelse(a, b, iff, elsee)
+    a == b ? iff : elsee
+  end
+
   def resolve_permalink(href, source=nil)
     if source.is_a?(Array)
       pages = source

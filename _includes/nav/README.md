@@ -141,7 +141,8 @@ The allowed fields are as follows:
 
 
 For instance, our releases page generate headings with slugified `id`
-attributes, and we link to them in the subnav this way:
+attributes generated automatically via Markdown, and we link to them in the
+subnav like so:
 
 ```markdown
 ---

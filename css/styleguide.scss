@@ -6,13 +6,17 @@
 @import 'override_variables';
 @import 'vendor/uswds/uswds';
 
+// Variables -------------- //
+
+$z-nav-secondary: 10;
+
 //  -------------- //
 
 .sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  
+
   &:before,
   &:after {
     content: '';
@@ -176,7 +180,7 @@
     display: block;
     height: $height-nav-secondary;
     padding-left: 3rem;
-    z-index: 10;
+    z-index: $z-nav-secondary;
   }
 
   ul {

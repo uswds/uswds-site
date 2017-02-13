@@ -1,0 +1,24 @@
+{% for link in include.links -%}
+  {% if link.href -%}
+    {% assign _page = link.href | resolve_permalink %}
+  {% else -%}
+    {% assign _page = nil %}
+  {% endif %}
+  <li>
+    {% if _page -%}
+      {%
+        include nav/page-item.html
+        page=_page
+        rel=include.rel
+        flat=include.flat
+        subnav_class=include.subnav_class
+      %}
+    {% else -%}
+      {% include nav/link-item.html link=link
+        subnav_class=include.subnav_class
+        href_key=include.href_key
+        text_key=include.text_key
+      %}
+    {% endif %}
+  </li>
+{% endfor %}

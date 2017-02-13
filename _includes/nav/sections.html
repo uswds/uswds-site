@@ -1,0 +1,10 @@
+{% for section in include.sections %}
+  <li>
+  {% assign _page = section.href | resolve_permalink %}
+  {% if section.collapsible %}
+    {% include nav/page-collapsible.html page=_page %}
+  {% else %}
+    {% include nav/page-item.html page=_page %}
+  {% endif %}
+  </li>
+{% endfor %}

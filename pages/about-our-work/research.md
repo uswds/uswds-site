@@ -3,10 +3,15 @@ permalink: /about-our-work/current-research/
 layout: styleguide
 title: Current research
 category: About our work
-lead: The U.S. Web Design Standards are an evolving set of front-end design resources. A core part of continuing to improve them is focused design research. We’re sharing our research templates, as well as documentation of our research approach and findings so far. We hope to give insights into the design choices we have made for the Standards and where <a href="https://standards.usa.gov/about-our-work/product-roadmap/">our roadmap</a> is headed. Additionally, we hope you’ll find these resources useful as you conduct research in your own work.
+lead: The Draft U.S. Web Design Standards are an evolving set of front-end design resources. A core part of continuing to improve them is focused design research. We’re sharing our research templates, as well as documentation of our research approach and findings so far. We hope to give insights into the design choices we have made for the Standards and where <a href="https://standards.usa.gov/about-our-work/product-roadmap/">our roadmap</a> is headed. Additionally, we hope you’ll find these resources useful as you conduct research in your own work.
+subnav:
+- text: Research plan template
+  href: '#research-plan-template'
+- text: Our research
+  href: '#our-research'
 ---
 
-## Research plan template<a id="research-plan-template"></a>
+## Research plan template
 
 ### Why we built a template
 
@@ -18,7 +23,7 @@ This template captures everything necessary for conducting user interviews — s
 
 [U.S. Web Design Standards research plan template](https://github.com/18F/web-design-standards/wiki/research-plan-template)
 
-## Our research<a id="our-research"></a>
+## Our research
 
 ### Field observations - June 2016
 

@@ -1,0 +1,3 @@
+{% if include.text != null -%}
+{{ include.text | markdownify | replace: '<p>', '<p class="usa-font-lead">' }}
+{% endif %}

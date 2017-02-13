@@ -20,7 +20,9 @@ repos:
   url: https://github.com/18F/web-design-standards-assets
 
 sass:
-  sass_dir: assets/css
+  load_paths:
+    - css
+    - assets/css
 
 collections:
   visual:
@@ -41,6 +43,10 @@ markdown: redcarpet
 redcarpet:
   extensions:
     - tables
+    - with_toc_data # automatic heading ids
+
+gems:
+  - jekyll-redirect-from
 
 exclude:
 - ".ruby-version"
@@ -51,12 +57,11 @@ exclude:
 - LICENSE.md
 - README.md
 - config
-- css
 - img
 - js
+- vendor
 - manifest.yml
 - node_modules
 - package.json
-- vendor
 - gulpfile.js
 - circle.yml

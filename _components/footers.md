@@ -1,9 +1,17 @@
 ---
+permalink: /footers/
 layout: styleguide
 type: component
 title: Footers
 category: UI components
 lead: Footers serve site visitors who arrive at the bottom of a page without finding what they want.
+subnav:
+- text: Big footer
+  href: '#big-footer'
+- text: Medium footer
+  href: '#medium-footer'
+- text: Slim footer
+  href: '#slim-footer'
 ---
 
 {% include code/preview.html component="footers" %}

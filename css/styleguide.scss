@@ -1,17 +1,8 @@
 ---
 ---
 
-// USWDS Overrides
-$color-grid-dark:   #727272;
-$color-grid-light:  #e3e4e5;
-$font-monospace:    Consolas, Monaco, 'Andale Mono', monospace;
-$font-path:         '{{ site.baseurl }}/assets/fonts';
-$image-path:        '{{ site.baseurl }}/assets/img';
-
-// Site image path, relative to /css/
-$site-image-path: '../img';
-
 // Imports
+@import 'variables';
 @import 'vendor/uswds/uswds';
 
 // Header -------------- //

@@ -44,24 +44,25 @@
     </div>
     {% include download-buttons.html %}
   </div>
-  <nav class="site-nav-secondary js-sticky-nav">
-    <ul>
-      <li>
-        <a {% if page.category == 'UI components' or page.title == 'UI components' %}class="usa-current"{% endif %} href="/">UI COMPONENTS</a>
-      </li>
-      <li>
-        <a {% if page.category == 'Getting started' or page.title == 'Getting started' %}class="usa-current"{% endif %} href="/getting-started/">GETTING STARTED</a>
-      </li>
-      <li>
-        <a {% if page.title == 'Design principles' %}class="usa-current"{% endif %} href="/design-principles/">DESIGN PRINCIPLES</a>
-      </li>
-      <li>
-        <a {% if page.category == 'About our work' or page.title == 'About our work' %}class="usa-current"{% endif %} href="/about-our-work/">ABOUT OUR WORK</a>
-      </li>
-      <li>
-        <a {% if page.category == 'Page templates' or page.title == 'Page templates' %}class="usa-current"{% endif %} href="/page-templates/">PAGE TEMPLATES</a>
-      </li>
-    </ul>
-  </nav>
-</header>
+
+</header>  
+<nav class="site-nav-secondary sticky">
+  <ul>
+    <li>
+      <a {% if page.category == 'UI components' or page.title == 'UI components' %}class="usa-current"{% endif %} href="/">UI COMPONENTS</a>
+    </li>
+    <li>
+      <a {% if page.category == 'Getting started' or page.title == 'Getting started' %}class="usa-current"{% endif %} href="/getting-started/">GETTING STARTED</a>
+    </li>
+    <li>
+      <a {% if page.title == 'Design principles' %}class="usa-current"{% endif %} href="/design-principles/">DESIGN PRINCIPLES</a>
+    </li>
+    <li>
+      <a {% if page.category == 'About our work' or page.title == 'About our work' %}class="usa-current"{% endif %} href="/about-our-work/">ABOUT OUR WORK</a>
+    </li>
+    <li>
+      <a {% if page.category == 'Page templates' or page.title == 'Page templates' %}class="usa-current"{% endif %} href="/page-templates/">PAGE TEMPLATES</a>
+    </li>
+  </ul>
+</nav>
 <div class="usa-overlay"></div>

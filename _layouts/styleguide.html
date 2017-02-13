@@ -9,8 +9,7 @@
   <body class="page-{{ page.title | slugify }}">
 
   	{% include navbar.html %}
-
-    <aside class="sidenav">
+    <aside class="sidenav sticky" style="top: 5rem; margin-bottom: 457px;">
       {% if page.category == 'UI components' or page.title == 'UI components' %}
         {% include sidenav/ui-components.html %}
       {% elsif page.category == 'Getting started' or page.title == 'Getting started' %}
@@ -46,29 +45,8 @@
         {% endif %}
         {{ content }}
       </div>
-
-      <footer class="site-footer" role="contentinfo">
-        <div class="site-footer-nav usa-grid">
-          {% if page.url == '/' %}
-            {% include download-buttons.html %}
-          {% endif %}
-          {% if page.category != null %}
-            <h6>{{ page.category }}</h6>
-          {% endif %}
-          {% if page.category == 'UI components' or page.title == 'UI components' %}
-            {% include sidenav/ui-components.html %}
-          {% elsif page.category == 'Getting started' or page.title == 'Getting started' %}
-            {% include sidenav/getting-started.html %}
-          {% elsif page.category == 'About our work' or page.title == 'About our work' %}
-            {% include sidenav/about-our-work.html %}
-          {% endif %}
-        </div>
-        <div class="site-footer-info">
-          {% include footer.html %}
-        </div>
-      </footer>
     </div>
-
+    {% include footer.html %}
     {% include ie-polyfill-scripts.html %}
     {% include analytics.html %}
     {% include docs-scripts.html %}

@@ -2,7 +2,7 @@
 
 var $ = require('jquery');
 
-var calculateAnchorPosition = require('../lib/calculate-anchor-position');
+var calculateAnchorPosition = require('./calculate-anchor-position');
 var timeout;
 
 /**

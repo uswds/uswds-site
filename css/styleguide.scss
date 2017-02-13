@@ -1,17 +1,11 @@
 ---
 ---
 
-// Imports -------------- //
-
-@import 'override_variables';
+// Imports
+@import 'variables';
 @import 'vendor/uswds/uswds';
 
-// Variables -------------- //
-
-$z-nav-secondary: 10;
-
-//  -------------- //
-
+// Header -------------- //
 .sticky {
   position: -webkit-sticky;
   position: sticky;
@@ -128,16 +122,16 @@ $z-nav-secondary: 10;
     }
 
     &[aria-expanded=false] {
-      background-image: url('../img/plus-alt.png');
-      background-image: url('../img/plus-alt.svg');
+      background-image: url('#{$image-path}/plus-alt.png');
+      background-image: url('#{$image-path}/plus-alt.svg');
       background-repeat: no-repeat;
       background-position: right 0 center;
       background-size: 1rem;
     }
 
     &[aria-expanded=true] {
-      background-image: url('../img/minus-alt.png');
-      background-image: url('../img/minus-alt.svg');
+      background-image: url('#{$image-path}/minus-alt.png');
+      background-image: url('#{$image-path}/minus-alt.svg');
       background-repeat: no-repeat;
       background-position: right 0 center;
       background-size: 1rem;
@@ -195,7 +189,8 @@ $z-nav-secondary: 10;
   a {
     @include padding (1.6rem null);
     color: $color-gray;
-    font-size: $h6-font-size;
+    font-size: $h5-font-size;
+    font-weight: bold;
     letter-spacing: 0.3px;
     line-height: $height-nav-secondary;
     text-decoration: none;
@@ -1224,8 +1219,8 @@ $font-light: 300;
   display: table;
 
   &::before {
-    background: url('../img/icon-download.png') no-repeat 0 0;
-    background: url('../img/icon-download.svg') no-repeat 0 0;
+    background: url('#{$image-path}/icon-download.png') no-repeat 0 0;
+    background: url('#{$image-path}/icon-download.svg') no-repeat 0 0;
     background-size: 100%;
     content: '';
     display: inline-block;
@@ -1355,8 +1350,8 @@ $font-light: 300;
   -webkit-font-smoothing: antialiased;
 
   .usa-button {
-    background-image: url('../img/angle-arrow-left-inverse.png');
-    background-image: url('../img/angle-arrow-left-inverse.svg');
+    background-image: url('#{$site-image-path}/angle-arrow-left-inverse.png');
+    background-image: url('#{$site-image-path}/angle-arrow-left-inverse.svg');
     background-repeat: no-repeat;
     background-position: left 2rem center;
     background-size: 1rem;

@@ -1,4 +1,5 @@
 ---
+permalink: /grids/
 layout: styleguide
 title: Grids
 category: UI components

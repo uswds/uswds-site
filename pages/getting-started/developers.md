@@ -4,13 +4,26 @@ layout: styleguide
 title: For developers
 category: Getting started
 lead: The UI components are built on a solid HTML foundation, progressively enhanced to provide core experiences across browsers. All users will have access to the same critical information and experiences regardless of what browser they use, although those experiences will render better in newer browsers. If JavaScript fails, users will still get a robust HTML foundation.
+subnav:
+- text: Installation
+  href: '#installation'
+- text: CSS architecture
+  href: '#css-architecture'
+- text: Customization
+  href: '#customization-and-theming'
+- text: Where things live
+  href: '#where-things-live'
+- text: Accessibility
+  href: '#notes-on-accessibility'
+- text: Contributions
+  href: '#contribution-guidelines'
 ---
 
-## Installation<a id="installation"></a>
+## Installation
 
 Here are a few different ways to use the Standards within your project.
 
-### Download<a id="download"></a>
+### Download
 
 To use the Draft Web Design Standards on your project, you’ll need to include the CSS and JavaScript files in each HTML page in your project.
 
@@ -40,13 +53,13 @@ into your HTML pages:
 
 Add this to your `<head>` element:
 
-```
+```html
 <link rel="stylesheet" href="/path/to/your/assets/css/lib/uswds.min.css">
 ```
 
 Add this before the closing `</body>` tag:
 
-```
+```html
 <script src="/path/to/your/assets/js/lib/uswds.min.js"></script>
 ```
 
@@ -113,7 +126,7 @@ Do you have questions or need help with setup? Did you run into any weird errors
 
 You can also email us directly at uswebdesignstandards@gsa.gov.
 
-## CSS architecture<a id="css-architecture"></a>
+## CSS architecture
 
 * The CSS foundation of this site is built with the **[Sass](https://sass-lang.com)** preprocessor language.
 * Uses **[Bourbon](http://bourbon.io/)** for its simple and lightweight Sass mixin library, and the **[Neat](http://neat.bourbon.io/)** library for the grid framework. Bourbon and Neat are open-source products from **[thoughtbot](https://thoughtbot.com/)**.
@@ -130,7 +143,7 @@ You can also email us directly at uswebdesignstandards@gsa.gov.
 [https://pages.18f.gov/frontend/css-coding-styleguide/](https://pages.18f.gov/frontend/css-coding-styleguide/)**
 
 
-## Customization/theming
+## Customization and theming
 
 The Standards can be customized to use different typography, colors and grid systems. The easiest way to do this is to use Sass and override the Standards' global variables. If it isn't possible to use Sass, do theming by overriding the CSS rules in the Standards set.
 
@@ -171,7 +184,7 @@ NOTE: If you plan on upgrading to newer versions of the Standards in the future,
 * Grid and breakpoint settings can be found in `core/variables` [file, line 87](https://github.com/18F/web-design-standards/blob/staging/src/stylesheets/core/_variables.scss#L87).
 
 
-## Where things live<a id="where-things-live"></a>
+## Where things live
 
 * **HTML** markup for the components are located in: `docs/_components` in the site root.
 * **Sass** styles are located in: `src/stylesheets/ (/core, /elements, /components)`. **Compiled CSS** is located in the [downloadable zip file]({{ site.repos[0].url }}/releases/download/v{{ site.version }}/uswds-{{ site.version }}.zip) .
@@ -179,13 +192,13 @@ NOTE: If you plan on upgrading to newer versions of the Standards in the future,
 * **Fonts** are located in: `src/fonts`.
 * **Images** and icons are located in: `src/img`.
 
-## Notes on accessibility<a id="notes-on-accessibility"></a>
+## Notes on accessibility
 
 We’ve designed the Standards to support older and newer browsers through progressive enhancement, and they officially support Internet Explorer 9 and up, along with the latest versions of Chrome, Firefox, and Safari. Internet Explorer 8 and below generally see very low usage, and most agency websites should be able to safely begin support at Internet Explorer 9.
 
 The Standards also meet the [WCAG 2.0 AA accessibility guidelines](https://www.w3.org/TR/WCAG20/) and are compliant with [Section 508 of the Rehabilitation Act](http://www.section508.gov/). We’re happy to answer questions about accessibility — email us for more information.
 
-## Contribution guidelines<a id="contribution-guidelines"></a>
+## Contribution guidelines
 
 We're so glad you're thinking about contributing to the Standards! You can find our complete [contribution guidelines](https://github.com/18F/web-design-standards/blob/staging/CONTRIBUTING.md) in our repo — please review them before submitting your contribution.
 

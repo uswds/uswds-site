@@ -1,4 +1,5 @@
 ---
+permalink: /labels/
 layout: styleguide
 type: element
 title: Labels

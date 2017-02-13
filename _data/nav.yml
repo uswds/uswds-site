@@ -1,0 +1,54 @@
+primary:
+  - href: /
+  - href: /getting-started/
+  - href: /design-principles/
+  - href: /about-our-work/
+  - href: /page-templates/
+
+mobile:
+  - href: /
+    collapsible: true
+  - href: /getting-started/
+    collapsible: true
+  - href: /design-principles/
+  - href: /about-our-work/
+    collapsible: true
+  - href: /page-templates/
+
+UI components:
+  - text: Overview
+    href: /
+  - href: /typography/
+  - href: /colors/
+  - href: /accessibility/
+  - href: /grids/
+  - href: /buttons/
+  - href: /labels/
+  - href: /tables/
+  - href: /alerts/
+  - href: /accordions/
+  - href: /form-controls/
+  - href: /form-templates/
+  - href: /search-bar/
+  - href: /sidenav/
+  - href: /headers/
+  - href: /footers/
+
+Getting started:
+  - text: Overview
+    href: /getting-started/
+  - href: /getting-started/developers/
+  - href: /getting-started/designers/
+  - href: /getting-started/download/
+
+About our work:
+  - text: Overview
+    href: /about-our-work/
+  - href: /about-our-work/product-roadmap/
+  - href: /about-our-work/component-maturity-scale/
+  - href: /about-our-work/research-strategy/
+  - href: /about-our-work/current-research/
+  - href: /about-our-work/releases/
+
+Page templates:
+  - href: /page-templates/

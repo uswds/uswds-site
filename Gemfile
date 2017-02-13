@@ -5,6 +5,7 @@ gem 'json'
 gem 'redcarpet'
 gem 'hash-joiner'
 gem 'open-uri-cached'
+gem 'jekyll-redirect-from'
 
 gem 'rouge', '1.9'
 gem 'scss_lint', require: false

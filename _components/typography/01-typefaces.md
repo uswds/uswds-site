@@ -1,7 +1,6 @@
 ---
 type: component
 title: Typefaces
-maturity: beta
 parent: typography
 order: 01
 ---

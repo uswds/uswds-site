@@ -1,7 +1,6 @@
 ---
 type: component
 title: Palette
-maturity: alpha
 parent: colors
 order: 01
 ---

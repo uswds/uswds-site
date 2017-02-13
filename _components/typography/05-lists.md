@@ -1,7 +1,6 @@
 ---
 type: component
 title: Lists
-maturity: alpha
 parent: typography
 order: 05
 ---

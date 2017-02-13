@@ -6,20 +6,28 @@
 @import 'override_variables';
 @import 'vendor/uswds/uswds';
 
+// Variables -------------- //
+
+$z-nav-secondary: 10;
+
 //  -------------- //
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+}
+
 .site-header {
-  @include position(fixed, 0 null null 0);
-  background-color: $color-primary-darkest;
 
   @include media($nav-width) {
     border-bottom: none;
-    position: relative;
-  }
-
-  // Removes fixed header on Android in landscape with an open keyboard
-  @media screen and (min-aspect-ratio: 13/9) and (max-width: ($medium-screen)) {
-    position: absolute;
   }
 
   .site-logo {
@@ -68,16 +76,11 @@
 
 .site-header-navbar {
   border-bottom: none;
+  background-color: $color-primary-darkest;
+
   @include media($nav-width) {
-    display: initial;
     height: 8rem;
     width: 100%;
-  }
-
-  &.is-scrolled {
-    @include media($nav-width) {
-      display: none;
-    }
   }
 
   // Firefox fix so that navbar buttons to align right
@@ -177,12 +180,7 @@
     display: block;
     height: $height-nav-secondary;
     padding-left: 3rem;
-  }
-
-  &.is-scrolled {
-    position: fixed;
-    top: 0;
-    width: 100%;
+    z-index: $z-nav-secondary;
   }
 
   ul {
@@ -221,16 +219,10 @@
 
   @include media($nav-width) {
     bottom: 0;
-    display: block; // starting: not scrolled
-    float: left; // starting: not scrolled
-    overflow: auto;
+    display: block;
+    float: left;
     padding: 4rem 1rem 3rem 3rem;
     width: $width-nav-sidebar;
-  }
-
-  &.is-scrolled {
-    position: fixed;
-    top: $height-nav-secondary;
   }
 
   .lt-ie9 & {
@@ -257,13 +249,6 @@
   @include media($nav-width) {
     width: calc(100% - #{$width-nav-sidebar});
     top: 0;
-  }
-
-  &.is-scrolled {
-    @include media($nav-width) {
-      position: absolute;
-      top: 15.3rem; // TODO: needs to change when banner is open
-    }
   }
 
   .lt-ie9 & {
@@ -374,74 +359,20 @@ h2 + .tooltip {
 
 // Footer --------------- //
 
-.site-footer {
-  @media (min-width: $medium-screen + $width-nav-sidebar) {
-    @include margin(null 3rem);
-  }
-}
+.usa-footer-contact-links {
 
-.site-footer-nav {
-  margin-bottom: 5.5rem;
+  text-align: left;
 
-  @media (min-width: $medium-screen + $width-nav-sidebar) {
-    display: none;
+  h4 {
+    margin-top: 1em;
   }
 
-  .usa-sidenav-sub_list {
-    display: none;
-  }
-}
-
-.site-footer-info {
-  @include padding(3rem null);
-  border-top: 1px solid $color-gray-light;
-
-  p {
-    font-size: $h5-font-size;
-
-    &:first-child {
-      margin-top: 0;
-    }
-  }
-
-  img {
-    margin-right: 1.2rem;
-    width: 3.2rem;
-
-    &.logo-usds {
-      width: 4.3rem;
-    }
-  }
-
-  > .usa-grid {
-    @media (min-width: $medium-screen + $width-nav-sidebar) {
-      margin-left: 0;
-      padding-left: 0;
-    }
-  }
-}
-
-.logo-links {
-  margin-bottom: 3rem;
-  margin-right: 1rem;
-
-  @include media($medium-screen) {
-    float: left;
+  .usa-button {
+    color: #FFFFFF;
     margin-bottom: 0;
+    margin-top: 0;
+    width: 100%;
   }
-
-  a {
-    @include media-link;
-    color: $color-gray-lighter;
-
-    &:hover {
-      color: $color-white;
-    }
-  }
-}
-
-.footer-text {
-  overflow: hidden;
 }
 
 // Pattern Preview Boxes -------- //
@@ -1453,4 +1384,11 @@ $font-light: 300;
   @include media($medium-screen) {
     @include margin(null $site-margins);
   }
+}
+
+hr {
+  background: $color-gray-lighter;
+  border: none;
+  height: 1px;
+  margin: 3em 0; 
 }

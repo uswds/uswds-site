@@ -4,7 +4,6 @@ type: element
 title: Labels
 category: UI components
 lead: Labels draw attention to new or important content.
-maturity: beta
 ---
 
 {% include code/preview.html component="labels" %}

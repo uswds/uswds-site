@@ -1,7 +1,6 @@
 ---
 title: Radio buttons
 parent: Form controls
-maturity: alpha
 order: 04
 lead: Radio buttons allow users to see all available choices at once and select exactly one option.
 ---

@@ -1,7 +1,6 @@
 ---
 type: component
 title: Pairings and styles
-maturity: beta
 parent: typography
 order: 02
 ---

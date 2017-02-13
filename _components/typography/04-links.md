@@ -1,7 +1,6 @@
 ---
 type: component
 title: Links
-maturity: alpha
 parent: typography
 order: 04
 ---

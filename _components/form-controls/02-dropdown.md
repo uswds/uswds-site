@@ -1,7 +1,6 @@
 ---
 title: Dropdown
 parent: Form controls
-maturity: alpha
 order: 02
 lead: A dropdown allows users to select one option from a list.
 ---

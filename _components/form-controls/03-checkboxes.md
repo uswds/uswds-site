@@ -1,7 +1,6 @@
 ---
 title: Checkboxes
 parent: Form controls
-maturity: alpha
 order: 03
 lead: Checkboxes allow users to select one or more options from a visible list.
 ---

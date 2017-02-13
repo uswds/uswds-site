@@ -1,7 +1,6 @@
 ---
 title: Name form
 parent: Form templates
-maturity: alpha
 order: 01
 lead: A standard template for collecting a person’s full name
 ---

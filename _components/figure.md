@@ -3,7 +3,6 @@ layout: styleguide
 title: Figure
 category: UI components
 lead: Intro text on what is included in this section and how to use it. No more than one or two sentences.
-maturity: alpha
 ---
 
 {% include code/preview.html component="figure" %}

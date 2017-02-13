@@ -1,8 +1,7 @@
 # Navigation includes
 
-This directory is a collection of Jekyll includes that can be used to
-flexibly generate lists of navigation links from data in different
-contexts.
+This directory is a set of Jekyll includes that can be used to flexibly
+generate lists of navigation links from data in different contexts.
 
 ## Usage
 

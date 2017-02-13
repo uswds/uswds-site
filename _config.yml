@@ -45,6 +45,9 @@ redcarpet:
     - tables
     - with_toc_data # automatic heading ids
 
+gems:
+  - jekyll-redirect-from
+
 exclude:
 - ".ruby-version"
 - ".sass-cache"

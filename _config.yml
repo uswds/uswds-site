@@ -25,18 +25,16 @@ sass:
     - assets/css
 
 collections:
-  visual:
-    output: true
-    permalink: /:path/
-  layout-system:
-    output: true
-    permalink: /:path/
-  elements:
-    output: true
-    permalink: /:path/
   components:
     output: true
     permalink: /:path/
+
+defaults:
+  - scope:
+      path: ''
+      type: components
+    values:
+      layout: component
 
 # Build settings
 markdown: redcarpet

@@ -1,7 +1,6 @@
 <a class="usa-skipnav" href="#main-content">Skip to main content</a>
 <header class="usa-header site-header" role="banner">
   {% include banner.html %}
-
   <div class="usa-navbar site-header-navbar">
     <button class="usa-menu-btn">Menu</button>
     <div class="usa-logo site-logo" id="logo">
@@ -12,16 +11,15 @@
     </div>
     {% include download-buttons.html %}
   </div>
-
-  <nav class="site-nav-secondary js-sticky-nav">
-    <ul>
-      {%
-        include nav/list.html
-        links=site.data.nav.primary
-        rel='contains'
-        flat=true
-      %}
-    </ul>
-  </nav>
-</header>
+</header>  
+<nav class="site-nav-secondary sticky">
+  <ul>
+    {%
+      include nav/list.html
+      links=site.data.nav.primary
+      rel='contains'
+      flat=true
+    %}
+  </ul>
+</nav>
 <div class="usa-overlay"></div>

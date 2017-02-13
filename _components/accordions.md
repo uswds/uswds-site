@@ -5,7 +5,6 @@ type: component
 title: Accordions
 category: UI components
 lead: Accordions are a list of headers that can be clicked to hide or reveal additional content.
-maturity: alpha
 ---
 
 {% include code/preview.html component="accordion" %}

@@ -10,7 +10,7 @@
 
     {% include navbar.html %}
 
-    <aside class="sidenav">
+    <aside class="sidenav sticky" style="top: 5rem; margin-bottom: 457px;">
       {% assign sidenav = site.data.nav[page.category] %}
       {% if sidenav %}
       <ul class="usa-sidenav-list">
@@ -41,14 +41,6 @@
             {% endunless %}
           {% endif %}
           <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
-          {% if page.category == 'UI components' and page.maturity != null %}
-          <div class="tooltip">
-            <p class="tooltip-text" id="tooltip-text-{{ page.title | slugify }}">Read about the component maturity scale</p>
-            <a class="usa-label label-{{ page.maturity }}" href="{{ site.baseurl }}/about-our-work/component-maturity-scale/" aria-describedby="tooltip-text-{{ page.title | slugify }}">
-              {{ page.maturity }}
-            </a>
-          </div>
-          {% endif %}
         </header>
 
         {% include lead.html text=page.lead %}
@@ -56,10 +48,9 @@
         {{ content }}
       </div>
 
-      {% include footer.html %}
-
     </main>
 
+    {% include footer.html %}
     {% include ie-polyfill-scripts.html %}
     {% include analytics.html %}
     {% include docs-scripts.html %}

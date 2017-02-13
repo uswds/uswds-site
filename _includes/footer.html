@@ -1,48 +1,47 @@
-<footer class="site-footer" role="contentinfo">
-
-  <!-- FIXME: this whole section should go away -->
-  <div class="site-footer-nav usa-grid">
-    {% if page.url == '/' %}
-      {% include download-buttons.html %}
-    {% endif %}
-
-    {% if page.category != null %}
-      <h6>{{ page.category }}</h6>
-    {% endif %}
-
-    {% assign links = site.data.nav[page.category] %}
-    {% if links %}
-    <nav>
-      <ul class="usa-sidenav-list">
-      {% include nav/list.html links=links %}
-      </ul>
-    </nav>
-    {% endif %}
+<footer class="usa-footer usa-footer-medium" role="contentinfo">
+  <div class="usa-grid usa-footer-return-to-top">
+    <a href="#">Return to top</a>
   </div>
-
-  <div class="site-footer-info">
-    <div class="usa-grid">
-      <div class="logo-links">
-        <a href="https://18f.gsa.gov/">
-          <img src="{{ site.baseurl }}/assets/img/logo-18f.png" alt="18F">
-        </a>
-        <a href="http://www.gsa.gov/">
-          <img src="{{ site.baseurl }}/assets/img/logo-gsa.png" alt="GSA">
-        </a>
-        <a href="https://www.usds.gov/">
-          <img class="logo-usds" src="{{ site.baseurl }}/assets/img/logo-usds.png" alt="USDS">
-        </a>
-      </div>
-      <div class="footer-text">
-        <div class="footer-text-one-half">
-          {% assign default_branch = 'staging' %}
-          <p>Feedback? Create an issue on the <a href="{{ site.repos[0].url }}">Standards component repo</a> or email us at <a href="mailto:uswebdesignstandards@gsa.gov">uswebdesignstandards@gsa.gov</a>.</p>
-          <p>Have an idea? Read our <a href="{{ site.repos[0].url }}/blob/{{ default_branch }}/CONTRIBUTING.md">contribution guidelines</a>.</p>
-          <p><a href="{{ site.repos[1].url }}/blob/{{ default_branch }}/{{ page.path }}">Edit this page</a></p>      
-          <p>As a work of the United States government, this project is <a href="{{ site.repos[0].url }}/blob/master/LICENSE.md">in the public domain</a>.</p>
-        </div>
-      </div>
+  <div class="usa-footer-primary-section">
+    <div class="usa-grid-full">
+      <nav class="usa-footer-nav">
+        <ul class="usa-unstyled-list">
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="{{ site.baseurl }}/">UI Components</a>
+          </li>
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="{{ site.baseurl }}/page-templates/">Page Templates</a>
+          </li>
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="{{ site.baseurl }}/getting-started/">Getting Started</a>
+          </li>
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="{{ site.baseurl }}/design-principles/">Design Principles</a>
+          </li>
+<!--        NOTE: Placeholder for when the What's New page is done.  
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="{{ site.baseurl }}/whats-new">What's New</a>
+          </li> -->
+        </ul>
+      </nav>
     </div>
   </div>
 
+  <div class="usa-footer-secondary_section">
+    <div class="usa-grid">
+      <div class="usa-width-two-thirds usa-content">
+        <h3>Become a part of the community</h3>
+        <p>The U.S. Web Design Standards has grown into a blossoming community of government engineers, content specialists, and designers supporting each other. With more than 100+ sites using the WDS, 3,000+ Github project followers, and 500+ forks, there’s a large and active community supporting, and actively using this open source project.</p>
+        <p>We’re from the government, and we’re here to help.</p>
+      </div>
+      <div class="usa-footer-contact-links usa-width-one-third">
+        <h4>Running into an issue?</h4>
+        <a href="{{ site.repos[0].url }}/issues/new" class="usa-button">Ask questions on Github</a>
+        <h4>Engage with the community</h4>
+        <a href="https://chat.18f.gov./" class="usa-button">Join Slack Channel</a>
+        <h4>Reach the team</h4>
+        <a href="mailto:uswebdesignstandards@gsa.gov" class="usa-button">Send us an email</a>          
+      </div>
+    </div>
+  </div>
 </footer>

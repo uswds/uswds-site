@@ -4,7 +4,6 @@ layout: styleguide
 title: Grids
 category: UI components
 lead: This 12-column, responsive grid provides structure for website content.
-maturity: alpha
 ---
 
 <h2 class="usa-heading">Grid</h2>

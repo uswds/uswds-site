@@ -9,8 +9,7 @@
   <body class="page-{{ page.title | slugify }}">
 
   	{% include navbar.html %}
-
-    <aside class="sidenav sticky" style="top: 5rem;">
+    <aside class="sidenav sticky" style="top: 5rem; margin-bottom: 457px;">
       {% if page.category == 'UI components' or page.title == 'UI components' %}
         {% include sidenav/ui-components.html %}
       {% elsif page.category == 'Getting started' or page.title == 'Getting started' %}
@@ -46,10 +45,8 @@
         {% endif %}
         {{ content }}
       </div>
-
-      {% include footer.html %}
     </div>
-
+    {% include footer.html %}
     {% include ie-polyfill-scripts.html %}
     {% include analytics.html %}
     {% include docs-scripts.html %}

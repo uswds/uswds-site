@@ -9,10 +9,10 @@ subnav:
   href: '#installation'
 - text: CSS architecture
   href: '#css-architecture'
-- text: Where things live
-  href: '#where-things-live'
 - text: Customization
   href: '#customization-and-theming'
+- text: Where things live
+  href: '#where-things-live'
 - text: Accessibility
   href: '#notes-on-accessibility'
 - text: Contributions
@@ -53,13 +53,13 @@ into your HTML pages:
 
 Add this to your `<head>` element:
 
-```
+```html
 <link rel="stylesheet" href="/path/to/your/assets/css/lib/uswds.min.css">
 ```
 
 Add this before the closing `</body>` tag:
 
-```
+```html
 <script src="/path/to/your/assets/js/lib/uswds.min.js"></script>
 ```
 

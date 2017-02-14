@@ -1,0 +1,5 @@
+{% capture _syntax %}
+```{{ include.language | default: 'html' }}
+{% include code/components/{{ include.component }}.{{ include.language | default: 'html' }} %}
+```
+{% endcapture %}{{ _syntax | markdownify }}

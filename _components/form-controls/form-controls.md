@@ -1,6 +1,8 @@
 ---
+permalink: /components/form-controls/
+redirect_from:
+- /form-controls/
 layout: styleguide
-permalink: /form-controls/
 type: component
 title: Form controls
 category: UI components

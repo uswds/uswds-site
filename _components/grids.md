@@ -1,5 +1,7 @@
 ---
-permalink: /grids/
+permalink: /components/grids/
+redirect_from:
+- /grids/
 layout: styleguide
 title: Grids
 category: UI components

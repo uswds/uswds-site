@@ -1,5 +1,7 @@
 ---
-permalink: /search-bar/
+permalink: /components/search-bar/
+redirect_from:
+- /search-bar/
 layout: styleguide
 type: component
 title: Search bar

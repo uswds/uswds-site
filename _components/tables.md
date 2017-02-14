@@ -1,5 +1,7 @@
 ---
-permalink: /tables/
+permalink: /components/tables/
+redirect_from:
+- /tables/
 layout: styleguide
 type: element
 title: Tables

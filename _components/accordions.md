@@ -1,5 +1,7 @@
 ---
-permalink: /accordions/
+permalink: /components/accordions/
+redirect_from:
+- /accordions/
 layout: styleguide
 type: component
 title: Accordions

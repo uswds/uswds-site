@@ -1,6 +1,8 @@
 ---
+permalink: /components/accessibility/
+redirect_from:
+- /accessibility/
 layout: styleguide
-permalink: /accessibility/
 title: Accessibility
 category: UI components
 lead: Accessibility tips to help you deliver delightful experiences to all users.

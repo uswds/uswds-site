@@ -885,13 +885,8 @@ code {
   code {
     background: none;
     font-size: 1.2rem;
+    margin-top: 0;
     padding: 0;
-  }
-
-  pre {
-    [class*="language-"] {
-      margin-top: 0;
-    }
   }
 
   .usa-unstyled-list {
@@ -903,42 +898,42 @@ code {
   }
 }
 
-// scss-lint:disable QualifyingElement
-code[class*="language-"],
-pre[class*="language-"] {
+[class*="language-"] {
   color: $color-base;
-}
-// scss-lint:enable QualifyingElement
 
-// Custom code sample colors
+  // Custom code sample colors
 
-.token.property,
-.token.tag,
-.token.boolean,
-.token.number,
-.token.constant,
-.token.symbol,
-.token.deleted {
-  color: $color-primary-alt-darkest;
-}
+  .nt,
+  .token.property,
+  .token.tag,
+  .token.boolean,
+  .token.number,
+  .token.constant,
+  .token.symbol,
+  .token.deleted {
+    color: $color-primary-alt-darkest;
+  }
 
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-  color: $color-secondary;
-}
+  .na,
+  .token.selector,
+  .token.attr-name,
+  .token.string,
+  .token.char,
+  .token.builtin,
+  .token.inserted {
+    color: $color-secondary;
+  }
 
-.token.atrule,
-.token.attr-value,
-.token.keyword {
-  color: $color-green;
-}
+  .s,
+  .token.atrule,
+  .token.attr-value,
+  .token.keyword {
+    color: $color-green;
+  }
 
-.token.punctuation {
-  color: $color-primary-alt-darkest;
+  .token.punctuation {
+    color: $color-primary-alt-darkest;
+  }
 }
 
 .alignment-example {

@@ -21,7 +21,7 @@ We created this template so folks on our team — especially those new to resear
 
 This template captures everything necessary for conducting user interviews — space to list assumptions, hypotheses, and target audience(s); a logistics checklist; day-of-interview protocol; and a template interview script. We invite you to adapt this plan and omit any sections that aren’t applicable to your research. We also [welcome your thoughts](https://github.com/18F/web-design-standards-docs/issues) on how we can make this template better.
 
-[Draft U.S. Web Design Standards research plan template](https://github.com/18F/web-design-standards/wiki/research-plan-template)
+[U.S. Web Design Standards research plan template](https://github.com/18F/web-design-standards/wiki/research-plan-template)
 
 ## Our research
 
@@ -45,7 +45,7 @@ This group of new users revealed difficulty getting started with the Standards. 
 
 #### Where
 
-Members of the Draft U.S. Web Design Standards team conducted a weeklong listening tour (series of user interviews) in Washington, DC.
+Members of the U.S. Web Design Standards team conducted a weeklong listening tour (series of user interviews) in Washington, DC.
 
 #### Goals
 

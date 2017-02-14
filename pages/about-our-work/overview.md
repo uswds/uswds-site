@@ -12,13 +12,12 @@ columns:
   - title: Page views
     source: Pageviews
 ---
-
 ### Web analytics for sites that use the Standards
 
 By accessing the Google Analytics data gathered for
 [analytics.usa.gov](https://analytics.usa.gov), we have aggregated a
 few data points to approximate how many users of federal websites
-have "experienced" the Draft U.S. Web Design Standards. We will
+have "experienced" the U.S. Web Design Standards. We will
 update these numbers quarterly.
 
 <table>

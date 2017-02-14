@@ -2,13 +2,13 @@
 permalink: /design-principles/
 layout: styleguide
 title: Design principles
-lead: "We designed the Draft U.S. Web Design Standards to help you create better experiences for the American public. Here’s how using the Standards can help you:"
+lead: "We designed the U.S. Web Design Standards to help you create better experiences for the American public. Here’s how using the Standards can help you:"
 ---
 
 <div class="usa-grid-full">
   <div class="usa-width-one-half">
     <h4>Make the best thing the easiest thing.</h4>
-    <p>The Draft U.S. Web Design Standards is the easiest path for teams around the federal government to comply with the latest federal policy for websites and digital services. The USWDS support modern web development practices, such as mobile first and responsive frameworks. By offering open-source, quick-to-download code and assets, the Standards make it easy to deliver the highest-quality government websites to the public.</p>
+    <p>The U.S. Web Design Standards is the easiest path for teams around the federal government to comply with the latest federal policy for websites and digital services. The USWDS support modern web development practices, such as mobile first and responsive frameworks. By offering open-source, quick-to-download code and assets, the Standards make it easy to deliver the highest-quality government websites to the public.</p>
   </div>
   <div class="usa-width-one-half">
     <h4>Offer accessibility out of the box.</h4>
@@ -22,7 +22,7 @@ lead: "We designed the Draft U.S. Web Design Standards to help you create better
   </div>
   <div class="usa-width-one-half">
     <h4>Showcase benefits for agency and users</h4>
-    <p>Teams around the government should easily be able to find inspiration from among their peers. This inspiration can jumpstart many teams own efforts but also lay the groundwork for making the business case for adopting the Draft U.S. Web Design Standards. The success of both USWDS and its users will be cataloged both quantitatively and qualitatively.</p>
+    <p>Teams around the government should easily be able to find inspiration from among their peers. This inspiration can jumpstart many teams own efforts but also lay the groundwork for making the business case for adopting the U.S. Web Design Standards. We will catalog the successes of the Standards and its users both quantitatively and qualitatively.</p>
   </div>
 </div>
 <div class="usa-grid-full">

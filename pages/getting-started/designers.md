@@ -12,7 +12,7 @@ As a complement to this visual style guidance, we strongly recommend you use [18
 
 ## Design resources
 
-The site contains HTML mockups of common UI components designed to follow the Draft U.S. Web Design Standards' visual style guide. To view the specs of each design live on this website (padding, margins, stroke weight, line-height, and so on), use your browser’s developer tools.
+The site contains HTML mockups of common UI components designed to follow the U.S. Web Design Standards' visual style guide. To view the specs of each design live on this website (padding, margins, stroke weight, line-height, and so on), use your browser’s developer tools.
 
 All of these designs are also available in various file formats, which are available for download:
 

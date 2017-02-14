@@ -18,21 +18,21 @@ mobile:
 UI components:
   - text: Overview
     href: /components/
-  - href: /typography/
-  - href: /colors/
-  - href: /accessibility/
-  - href: /grids/
-  - href: /buttons/
-  - href: /labels/
-  - href: /tables/
-  - href: /alerts/
-  - href: /accordions/
-  - href: /form-controls/
-  - href: /form-templates/
-  - href: /search-bar/
-  - href: /sidenav/
-  - href: /headers/
-  - href: /footers/
+  - href: /components/typography/
+  - href: /components/colors/
+  - href: /components/accessibility/
+  - href: /components/grids/
+  - href: /components/buttons/
+  - href: /components/labels/
+  - href: /components/tables/
+  - href: /components/alerts/
+  - href: /components/accordions/
+  - href: /components/form-controls/
+  - href: /components/form-templates/
+  - href: /components/search-bar/
+  - href: /components/sidenav/
+  - href: /components/headers/
+  - href: /components/footers/
 
 Getting started:
   - text: Overview

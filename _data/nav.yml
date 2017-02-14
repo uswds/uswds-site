@@ -1,9 +1,9 @@
 primary:
   - href: /components/
+  - href: /page-templates/
   - href: /getting-started/
   - href: /design-principles/
-  - href: /about-our-work/
-  - href: /page-templates/
+  - href: /whats-new/
 
 mobile:
   - href: /components/

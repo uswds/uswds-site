@@ -1,19 +1,21 @@
 primary:
   - href: /
+  - href: /page-templates/
   - href: /getting-started/
   - href: /design-principles/
-  - href: /about-our-work/
-  - href: /page-templates/
+  - href: /whats-new/
+  
 
 mobile:
   - href: /
     collapsible: true
+  - href: /page-templates/
   - href: /getting-started/
     collapsible: true
   - href: /design-principles/
-  - href: /about-our-work/
+  - href: /whats-new/
     collapsible: true
-  - href: /page-templates/
+  
 
 UI components:
   - text: Overview
@@ -40,14 +42,6 @@ Getting started:
   - href: /getting-started/video-tutorials/
   - href: /getting-started/code-guidelines/
   - href: /getting-started/product-roadmap/
-
-About our work:
-  - text: Overview
-    href: /about-our-work/
-  - href: /about-our-work/product-roadmap/
-  - href: /about-our-work/research-strategy/
-  - href: /about-our-work/current-research/
-  - href: /about-our-work/releases/
 
 Page templates:
   - href: /page-templates/

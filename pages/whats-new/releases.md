@@ -7,6 +7,8 @@ subnav:
   data: releases
   href: ['#version-%', name]
   text: name
+redirect_from:
+  - /about-our-work/releases/
 ---
 <p class="usa-font-lead">The Standards are an ever-evolving product. We've been listening to your feedback and using it as a basis for improvements and additions.</p>
 

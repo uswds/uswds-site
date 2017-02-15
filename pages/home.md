@@ -3,13 +3,13 @@ permalink: /
 layout: announce
 title: Launching 1.0!
 category: ''
-lead: "The time has come to finally launch [version 1.0 of the U.S. Web Design Standards]({{ '/releases/#1-0-0' | relative_url }})"
+lead: "The time has come to finally launch [version 1.0 of the U.S. Web Design Standards](./whats-new/releases/#1-0-0)"
 ---
 
 The team is excited to make this announcement and to show our
 commitment to our users to make the best thing for federal digital
 products the easiest to use. We're excited to see what you do with
-the Standards!.
+the Standards!
 
 ## New training and services
 

@@ -54,9 +54,3 @@ interviews with the teams from across the government who have successfully
 implemented the Standards at their agencies.
 
 <a href="https://18f.gsa.gov/tags/web-design-standards/" class="usa-button">Read the latest blog posts</a>
-
-### Current and future work
-
-See what we're working on now and in the future by viewing what is being worked on or queued up to work on in our Sprint Milestones. These are two-week increments of work that we commit to finishing, using Agile Product Development practices.
-
-<a href="https://github.com/18F/web-design-standards/milestones" class="usa-button">View our team milestones</a>

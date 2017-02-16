@@ -12,14 +12,14 @@ subnav:
   text: title
 ---
 
-<p class="usa-font-lead">We’ve categorized our work into four themes:</p>
+### Current and future work
 
-<ul class="usa-content-list usa-font-lead">
-  <li>Deciding to use the Standards</li>
-  <li>Working with the Standards</li>
-  <li>Giving back (contributing) to the Standards</li>
-  <li>Using a federal website that incorporates the Standards as a member of the public</li>
-</ul>
+See what we're working on now and in the future by viewing what is being
+worked on or queued up to work on in our sprint milestones below. These are
+two-week increments of work that we commit to finishing, using Agile Product
+Development practices.
+
+<a href="https://github.com/18F/web-design-standards/milestones" class="usa-button">View our sprint milestones</a>
 
 {% for milestone in site.data.milestones %}
 <section>

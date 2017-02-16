@@ -11,6 +11,8 @@ columns:
     source: Users
   - title: Page views
     source: Pageviews
+redirect_from:
+  - /about-our-work/
 ---
 ### Web analytics for sites that use the Standards
 

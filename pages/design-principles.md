@@ -12,7 +12,7 @@ lead: "We designed the U.S. Web Design Standards to help you create better exper
   </div>
   <div class="usa-width-one-half">
     <h4>Offer accessibility out of the box.</h4>
-    <p>Every asset we offer should meet the high accessibility standards outlined in Section 508. For teams that need to customize the USWDS to meet their agency needs, guidance will be offered to ensure any extensions and customizations that are made comply with Section 508 guideline.</p>
+    <p>Every asset we offer should meet the high accessibility standards outlined in Section 508. For teams that need to customize the USWDS to meet their agency needs, guidance will be offered to ensure any extensions and customizations that are made comply with Section 508 guidelines.</p>
   </div>
 </div>
 <div class="usa-grid-full">

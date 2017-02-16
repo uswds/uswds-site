@@ -1,5 +1,7 @@
 ---
-permalink: /alerts/
+permalink: /components/alerts/
+redirect_from:
+- /alerts/
 layout: styleguide
 type: component
 title: Alerts

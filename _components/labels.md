@@ -1,5 +1,7 @@
 ---
-permalink: /labels/
+permalink: /components/labels/
+redirect_from:
+- /labels/
 layout: styleguide
 type: element
 title: Labels

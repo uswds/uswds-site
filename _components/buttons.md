@@ -1,5 +1,7 @@
 ---
-permalink: /buttons/
+permalink: /components/buttons/
+redirect_from:
+- /buttons/
 layout: styleguide
 type: element
 title: Buttons

@@ -1,5 +1,7 @@
 ---
 permalink: /whats-new/research-strategy/
+redirect_from:
+- /about-our-work/research-strategy/
 layout: styleguide
 title: Research strategy
 category: What's new

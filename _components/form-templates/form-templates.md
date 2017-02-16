@@ -1,6 +1,8 @@
 ---
+permalink: /components/form-templates/
+redirect_from:
+- /form-templates/
 layout: styleguide
-permalink: /form-templates/
 type: component
 title: Form templates
 category: UI components

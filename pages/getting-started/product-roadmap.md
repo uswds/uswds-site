@@ -1,8 +1,8 @@
 ---
-permalink: /about-our-work/product-roadmap/
+permalink: /getting-started/product-roadmap/
 layout: styleguide
 title: Product roadmap
-category: About our work
+category: Getting started
 lead: Here, you’ll find our product roadmap — an up-to-date report on the work we’re doing.
 ---
 

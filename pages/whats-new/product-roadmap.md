@@ -1,9 +1,15 @@
 ---
-permalink: /getting-started/product-roadmap/
+permalink: /whats-new/product-roadmap/
+redirect_from:
+- /getting-started/product-roadmap/
 layout: styleguide
 title: Product roadmap
-category: Getting started
+category: What's new
 lead: Here, you’ll find our product roadmap — an up-to-date report on the work we’re doing.
+subnav:
+  data: milestones
+  href: ['#%', title]
+  text: title
 ---
 
 <p class="usa-font-lead">We’ve categorized our work into four themes:</p>

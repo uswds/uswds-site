@@ -8,7 +8,7 @@ category: What's new
 lead: Here, you’ll find our product roadmap — an up-to-date report on the work we’re doing.
 subnav:
   data: milestones
-  href: ['#%', title]
+  href: ['#%', id]
   text: title
 ---
 
@@ -22,8 +22,8 @@ subnav:
 </ul>
 
 {% for milestone in site.data.milestones %}
-<section id="milestone-{{ forloop.index }}">
-  <h2>{{ milestone.title }}</h2>
+<section>
+  <h2 id="{{ milestone.id }}">{{ milestone.title }}</h2>
   <ul>
   {% for task in milestone.tasks %}
     <li>

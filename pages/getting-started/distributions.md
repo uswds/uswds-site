@@ -35,7 +35,7 @@ If you have a new distribution to add to this list, please [open an issue] or [s
       <th>Author or maintainer</th>
       <th>Notes</th>
     </tr>
-</thead>
+  </thead>
 {% for distro in site.data.distributions %}
   <tr id="{{ distro.name | slugify }}">
     <th scope="row">

@@ -388,14 +388,20 @@ footer.site {
       margin-top: 1em;
     }
 
-    .usa-button {
+    a {
       color: #FFFFFF;
       margin-bottom: 0;
       margin-top: 0;
+      padding-left: 35px;
       width: 100%;
     }
-  }
 
+    img {
+      position: relative;
+      top: 1px;
+      width: 15px;
+    }
+  }
 }
 
 // Pattern Preview Boxes -------- //

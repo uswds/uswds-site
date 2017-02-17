@@ -3,7 +3,7 @@ permalink: /whats-new/
 layout: styleguide
 title: What's new
 category: What's new
-lead: Here you can find the latest news and information about the U.S. Web Design Standards. You can learn more about the kind of impact the Standards has been creating around the federal government, read up on our latest release notes, and learn about how we conduct our user research to continuously improve the U.S. Web Design Standards.
+lead: Here you can find the latest news and information about the U.S. Web Design Standards. Read our latest release notes, learn about the Standards’ impact in the government, and learn how we conduct user research to continuously improve our product and process.
 columns:
   - title: New users
     source: New Users
@@ -14,6 +14,7 @@ columns:
 redirect_from:
   - /about-our-work/
 ---
+
 ### Web analytics for sites that use the Standards
 
 By accessing the Google Analytics data gathered for
@@ -47,12 +48,9 @@ Interested in seeing who all is using the U.S. Web Design Standards? We have a l
 
 ### Latest Blog Posts
 
-Head on over 18F's blog to read the latest posts tat relate to the U.S. Web Design Standards. These posts cover the latest development releases as well as interviews with the teams from across the government who have successfully implemented the U.S. Web Design Standards at their agency.
+Visit the 18F blog to read the latest posts that relate to the U.S. Web Design
+Standards. These posts cover the latest development releases as well as
+interviews with the teams from across the government who have successfully
+implemented the Standards at their agencies.
 
-<a href="https://18f.gsa.gov/tags/web-design-standards/" class="usa-button">Read Latest Blog Posts</a>
-
-### Current and future work
-
-See what we're working on now and in the future by viewing what is being worked on or queued up to work on in our Sprint Milestones. These are two-week increments of work that we commit to finishing, using Agile Product Development practices.
-
-<a href="https://github.com/18F/web-design-standards/milestones" class="usa-button">View Team Milestones</a>
+<a href="https://18f.gsa.gov/tags/web-design-standards/" class="usa-button">Read the latest blog posts</a>

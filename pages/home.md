@@ -1,6 +1,6 @@
 ---
 permalink: /
-layout: announce
+layout: landing
 title: Announcing version 1.0
 ---
 

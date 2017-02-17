@@ -1,15 +1,14 @@
 ---
 permalink: /
-layout: announce
-title: Launching 1.0!
-category: ''
-lead: "The time has come to finally launch [version 1.0 of the U.S. Web Design Standards](./whats-new/releases/#1-0-0)"
+layout: landing
+title: Announcing version 1.0
+hero:
+  callout: Announcing version 1.0
+  content: After a year and a half of development and user research, we’re officially launching version 1.0 of the U.S. Web Design Standards. Please explore the site, read our research and documentation, use our code, and join the community!
+  button:
+    href: whats-new/product-roadmap/
+    text: Read more about this release
 ---
-
-The team is excited to make this announcement and to show our
-commitment to our users to make the best thing for federal digital
-products the easiest to use. We're excited to see what you do with
-the Standards!
 
 ## New training and services
 
@@ -22,8 +21,8 @@ the U.S. Web Design Standards and kick-start your design and
 development.
 {% endcapture %}
 
-{% capture consultation %}
-### Consultation
+{% capture customization %}
+### Customization
 
 The product team will partner with you to determine the appropriate
 level of help and customization to make adopting the Standards a
@@ -35,6 +34,6 @@ piece of cake.
     {{ training | markdownify }}
   </div>
   <div class="usa-width-one-half">
-    {{ consultation | markdownify }}
+    {{ customization | markdownify }}
   </div>
 </div>

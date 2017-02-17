@@ -17,8 +17,7 @@ mobile:
   
 
 UI components:
-  - text: Overview
-    href: /components/
+  - href: /components/
   - href: /components/typography/
   - href: /components/colors/
   - href: /components/accessibility/
@@ -50,5 +49,6 @@ Page templates:
 What's new:
   - text: What's new
     href: /whats-new/
+  - href: /whats-new/product-roadmap/
+  - href: /whats-new/research/
   - href: /whats-new/releases/
-  - href: /whats-new/research-strategy/

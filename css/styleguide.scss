@@ -354,22 +354,24 @@ h2 + .tooltip {
 
 // Footer --------------- //
 
+footer.site {
 
+  .usa-footer-contact-links {
 
-.usa-footer-contact-links {
+    text-align: left;
 
-  text-align: left;
+    h4 {
+      margin-top: 1em;
+    }
 
-  h4 {
-    margin-top: 1em;
+    .usa-button {
+      color: #FFFFFF;
+      margin-bottom: 0;
+      margin-top: 0;
+      width: 100%;
+    }
   }
 
-  .usa-button {
-    color: #FFFFFF;
-    margin-bottom: 0;
-    margin-top: 0;
-    width: 100%;
-  }
 }
 
 // Pattern Preview Boxes -------- //

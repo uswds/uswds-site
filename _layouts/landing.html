@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+{% include navbar.html %}
+
+<main id="main-content">
+  {% if page.hero %}
+  <section class="usa-hero">
+    <div class="usa-grid">
+      <div class="usa-hero-callout usa-section-dark">
+        {% if page.hero.callout %}
+        <h2><span class="usa-hero-callout-alt">{{ page.hero.callout }}</h2>
+        {% endif %}
+
+        {{ page.hero.content | markdownify }}
+
+        {% if page.hero.button %}
+          <a class="usa-button usa-button-big usa-button-secondary" href="{{ page.hero.button.href }}">
+            {{ page.hero.button.text }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="usa-grid usa-section">
+    {{ content }}
+  </section>
+
+</main>
+
+{% include footer.html %}

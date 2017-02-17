@@ -356,6 +356,30 @@ h2 + .tooltip {
 
 footer.site {
 
+  .logo-links {
+    margin-bottom: 3rem;
+    margin-right: 1rem;
+
+    @include media($medium-screen) {
+      float: left;
+      margin-bottom: 0;
+    }
+
+    img {
+      margin-right: 1.2rem;
+      width: 3.2rem;
+    }
+
+    a {
+      @include media-link;
+      color: $color-gray-lighter;
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+  }
+
   .usa-footer-contact-links {
 
     text-align: left;

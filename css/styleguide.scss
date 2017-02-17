@@ -354,19 +354,53 @@ h2 + .tooltip {
 
 // Footer --------------- //
 
-.usa-footer-contact-links {
+footer.site {
 
-  text-align: left;
+  .logo-links {
+    margin-bottom: 3rem;
+    margin-right: 1rem;
 
-  h4 {
-    margin-top: 1em;
+    @include media($medium-screen) {
+      float: left;
+      margin-bottom: 0;
+    }
+
+    img {
+      margin-right: 1.2rem;
+      width: 3.2rem;
+    }
+
+    a {
+      @include media-link;
+      color: $color-gray-lighter;
+
+      &:hover {
+        color: $color-white;
+      }
+    }
   }
 
-  .usa-button {
-    color: #FFFFFF;
-    margin-bottom: 0;
-    margin-top: 0;
-    width: 100%;
+  .usa-footer-contact-links {
+
+    text-align: left;
+
+    h4 {
+      margin-top: 1em;
+    }
+
+    a {
+      color: #FFFFFF;
+      margin-bottom: 0;
+      margin-top: 0;
+      padding-left: 35px;
+      width: 100%;
+    }
+
+    img {
+      position: relative;
+      top: 1px;
+      width: 15px;
+    }
   }
 }
 
@@ -1123,13 +1157,6 @@ $font-light: 300;
   @include external-link(external-link, external-link-hover);
 }
 
-.usa-styleguide-footer {
-  [href^="http:"]:not([href*="standards.com"]),
-  [href^="https:"]:not([href*="standards.com"]) {
-    @include external-link(external-link-alt, external-link-alt-hover);
-  }
-}
-
 .usa-button,
 .link-download,
 .media_link {
@@ -1153,18 +1180,6 @@ $font-light: 300;
 
 // Page styles
 .page-ui-components {
-  .site-footer-nav {
-    @include outline-inverse-button;
-
-    .usa-button-list {
-      margin-bottom: 5.5rem;
-
-      // scss-lint:disable SelectorDepth
-      li {
-        display: initial;
-      }
-    }
-  }
 
   .usa-font-lead {
     &:first-of-type {
@@ -1195,12 +1210,6 @@ $font-light: 300;
 
   img {
     max-width: 18.4rem;
-  }
-
-  .site-footer-info {
-    .usa-grid {
-      margin-left: auto;
-    }
   }
 
   .footer-text-one-half {

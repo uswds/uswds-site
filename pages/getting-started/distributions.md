@@ -1,7 +1,7 @@
 ---
 permalink: /getting-started/distributions/
 layout: styleguide
-title: Distributions
+title: Other distributions
 category: Getting started
 lead: Users of the U.S. Web Design Standards have created implementations for popular content management systems and web frameworks that may help get you started more quickly and easily. Though some implementations may not include all of the Standards, they should give your team a strong foundation to work from.
 subnav:
@@ -59,5 +59,5 @@ If you have a new distribution to add to this list, please [open an issue] or [s
 {% endfor %}
 </table>
 
-[open an issue]: https://github.com/18F/web-design-standards/issues/new
+[open an issue]: https://github.com/18F/web-design-standards-docs/issues/new
 [send us an email]: mailto:uswebdesignstandards@gsa.gov

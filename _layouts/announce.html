@@ -1,4 +1,26 @@
 ---
-layout: styleguide
+layout: default
 ---
-{{ content }}
+
+{% include navbar.html %}
+
+<main id="main-content">
+  <section class="usa-hero">
+    <div class="usa-grid">
+      <div class="usa-hero-callout usa-section-dark">
+        <h2><span class="usa-hero-callout-alt">
+        {{ page.title }}
+        </h2>
+        <p>After a year and a half of development and user research, we’re officially launching version 1.0 of the U.S. Web Design Standards. Please explore the site, read our research and documentation, use our code, and join the community!</p>
+        <a class="usa-button usa-button-big usa-button-secondary" href="{{ site.baseurl }}/whats-new/product-roadmap/">Read more about this release</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="usa-grid usa-section">
+  {{ content }}
+  </section>
+
+</main>
+
+{% include footer.html %}

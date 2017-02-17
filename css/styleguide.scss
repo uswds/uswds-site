@@ -5,6 +5,17 @@
 @import 'variables';
 @import 'vendor/uswds/uswds';
 
+
+.usa-hero {
+
+ background-image: url('#{$site-image-path}/home/fireworks.jpg');
+
+}
+
+.usa-hero-callout .usa-button {
+  margin-top: 2em;
+}
+
 // Header -------------- //
 .sticky {
   position: -webkit-sticky;

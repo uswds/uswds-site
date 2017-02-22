@@ -1,20 +1,27 @@
 ---
-permalink: /getting-started/distributions/
+permalink: /getting-started/implementations/
+redirect_from:
+- /getting-started/distributions/
 layout: styleguide
-title: Other distributions
+title: Implementations
 category: Getting started
-lead: Users of the U.S. Web Design Standards have created implementations for popular content management systems and web frameworks that may help get you started more quickly and easily. Though some implementations may not include all of the Standards, they should give your team a strong foundation to work from.
+lead: |
+  Users of the U.S. Web Design Standards have created implementations for
+  popular content management systems, web frameworks, and package managers that
+  may help get you started more quickly and easily. Though some implementations
+  may not include all of the Standards, they should give your team a strong
+  foundation to work from.
 subnav:
-  data: distributions
+  data: implementations
   href: ['#%', name]
   text: name
 ---
 
-If you have a new distribution to add to this list, please [open an issue] or [send us an email] with the following information:
+If you have a new implementation to add to this list, please [open an issue] or [send us an email] with the following information:
 
-* The distribution target language and/or framework
+* The implementation's target language and/or framework
 * The author's name (or alias) and contact URL or email address
-* The most recent [version]({{ site.baseurl }}/whats-new/releases/) of the Standards that the distribution targets
+* The most recent [version]({{ site.baseurl }}/whats-new/releases/) of the Standards that the project targets
 * Any useful caveats or other notes
 
 {% assign latest = site.data.releases | first %}
@@ -36,25 +43,25 @@ If you have a new distribution to add to this list, please [open an issue] or [s
       <th>Notes</th>
     </tr>
   </thead>
-{% for distro in site.data.distributions %}
-  <tr id="{{ distro.name | slugify }}">
+{% for impl in site.data.implementations %}
+  <tr id="{{ impl.name | slugify }}">
     <th scope="row">
-      <strong><a href="{{ distro.url }}">{{ distro.name }}</a></strong>
+      <strong><a href="{{ impl.url }}">{{ impl.name }}</a></strong>
     </th>
     <td>
-      {% if distro.version == 'latest' %}
+      {% if impl.version == 'latest' %}
       {{ latest_version }}
-      {% elsif distro.version %}
-      <a href="{{ site.baseurl }}/whats-new/releases/#version-{{ distro.version | slugify }}">{{ distro.version }}</a></td>
+      {% elsif impl.version %}
+      <a href="{{ site.baseurl }}/whats-new/releases/#version-{{ impl.version | slugify }}">{{ impl.version }}</a></td>
       {% endif %}
     <td>
-      {% if distro.author.url %}
-      <a href="{{ distro.author.url }}">{{ distro.author.name }}</a>
+      {% if impl.author.url %}
+      <a href="{{ impl.author.url }}">{{ impl.author.name }}</a>
       {% else %}
-      {{ distro.author.name }}
+      {{ impl.author.name }}
       {% endif %}
     </td>
-    <td>{{ distro.notes | markdownify | replace: '<p>', '' | replace: '</p>', '' }}</td>
+    <td>{{ impl.notes | markdownify | replace: '<p>', '' | replace: '</p>', '' }}</td>
   </tr>
 {% endfor %}
 </table>

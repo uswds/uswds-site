@@ -5,7 +5,7 @@ redirect_from:
 - /whats-new/research-strategy/
 layout: styleguide
 title: Research
-category: What's new
+category: What’s new
 lead: User research will be a core aspect of the U.S. Web Design Standards project as it's our main source of feedback and inspiration for future product development.
 ---
 We plan to use a combination of research methods, quantitative research like collecting web analytics to see in how frequently the Standards are used around the federal government, and qualitative research like remote and in-person observational studies to see whether the Standards are making government sites easier for people to use.

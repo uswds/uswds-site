@@ -4,7 +4,7 @@ redirect_from:
 - /getting-started/product-roadmap/
 layout: styleguide
 title: Product roadmap
-category: What's new
+category: What’s new
 lead: Here, you’ll find our product roadmap — an up-to-date report on the work we’re doing.
 subnav:
   data: milestones

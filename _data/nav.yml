@@ -35,8 +35,7 @@ UI components:
   - href: /components/footers/
 
 Getting started:
-  - text: Getting started
-    href: /getting-started/
+  - href: /getting-started/
   - href: /getting-started/developers/
   - href: /getting-started/designers/
   - href: /getting-started/code-guidelines/
@@ -46,9 +45,8 @@ Getting started:
 Page templates:
   - href: /page-templates/
 
-What&rsquo;s new:
-  - text: What’s new
-    href: /whats-new/
+What’s new:
+  - href: /whats-new/
   - href: /whats-new/product-roadmap/
   - href: /whats-new/research/
   - href: /whats-new/releases/

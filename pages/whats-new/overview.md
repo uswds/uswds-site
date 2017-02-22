@@ -18,10 +18,9 @@ redirect_from:
 {% capture blog %}
 ### Latest blog posts
 
-Visit the 18F blog to read the latest posts that relate to the U.S. Web Design
-Standards. These posts cover the latest development releases as well as
-interviews with the teams from across the government who have successfully
-implemented the Standards at their agencies.
+You can read more about the Standards on the 18F blog, where we cover the
+latest development releases as well as interviews with the teams from across
+government who have successfully implemented the Standards at their agencies.
 
 <a href="https://18f.gsa.gov/tags/web-design-standards/" class="usa-button">Read the latest blog posts</a>
 {% endcapture %}

@@ -31,6 +31,8 @@
 
 .site-header {
 
+  background-color: $color-primary-darkest;
+
   @include media($nav-width) {
     border-bottom: none;
   }
@@ -81,11 +83,11 @@
 
 .site-header-navbar {
   border-bottom: none;
-  background-color: $color-primary-darkest;
 
   @include media($nav-width) {
     height: 8rem;
     width: 100%;
+    display: block;
   }
 
   // Firefox fix so that navbar buttons to align right

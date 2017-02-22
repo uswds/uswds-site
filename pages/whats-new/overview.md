@@ -24,13 +24,19 @@ implemented the Standards at their agencies.
 
 <a href="https://18f.gsa.gov/tags/web-design-standards/" class="usa-button">Read the latest blog posts</a>
 
+
+### Standards in the wild
+
+Interested in seeing who else is using the U.S. Web Design Standards? We
+maintain a [list of sites in our GitHub repo](https://github.com/18F/web-design-standards/blob/staging/WHO_IS_USING_USWDS.md).
+
+
 ### Web analytics for sites that use the Standards
 
-By accessing the Google Analytics data gathered for
-[analytics.usa.gov](https://analytics.usa.gov), we have aggregated a
-few data points to approximate how many users of federal websites
-have "experienced" the U.S. Web Design Standards. We will
-update these numbers quarterly.
+By accessing the Google Analytics data gathered for [analytics.usa.gov](https://analytics.usa.gov),
+we have aggregated a few data points to approximate how many users of federal
+websites have "experienced" the U.S. Web Design Standards. We will update these
+numbers quarterly.
 
 <table>
   <thead>

@@ -15,6 +15,15 @@ redirect_from:
   - /about-our-work/
 ---
 
+### Latest blog posts
+
+Visit the 18F blog to read the latest posts that relate to the U.S. Web Design
+Standards. These posts cover the latest development releases as well as
+interviews with the teams from across the government who have successfully
+implemented the Standards at their agencies.
+
+<a href="https://18f.gsa.gov/tags/web-design-standards/" class="usa-button">Read the latest blog posts</a>
+
 ### Web analytics for sites that use the Standards
 
 By accessing the Google Analytics data gathered for
@@ -43,14 +52,3 @@ update these numbers quarterly.
   {% endfor %}
   </tbody>
 </table>
-
-Interested in seeing who all is using the U.S. Web Design Standards? We have a list that is constantly being updated over on our GitHub repo. [Sites using the Standards](https://github.com/18F/web-design-standards/blob/staging/WHO_IS_USING_USWDS.md).
-
-### Latest Blog Posts
-
-Visit the 18F blog to read the latest posts that relate to the U.S. Web Design
-Standards. These posts cover the latest development releases as well as
-interviews with the teams from across the government who have successfully
-implemented the Standards at their agencies.
-
-<a href="https://18f.gsa.gov/tags/web-design-standards/" class="usa-button">Read the latest blog posts</a>

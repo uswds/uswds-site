@@ -1,8 +1,8 @@
 ---
 permalink: /whats-new/
 layout: styleguide
-title: What&rsquo;s new
-category: What&rsquo;s new
+title: What’s new
+category: What’s new
 lead: Here you can find the latest news and information about the U.S. Web Design Standards. Read our latest release notes, learn about the Standards’ impact in the government, and learn how we conduct user research to continuously improve our product and process.
 columns:
   - title: New users

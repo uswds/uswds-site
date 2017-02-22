@@ -4,7 +4,7 @@ redirect_from:
 - /about-our-work/releases/
 layout: styleguide
 title: Release notes
-category: What's new
+category: What’s new
 subnav:
   data: releases
   href: ['#version-%', name]

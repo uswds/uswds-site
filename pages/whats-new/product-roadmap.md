@@ -14,7 +14,7 @@ subnav:
 
 ### Current work: our sprint milestones
 
-See what we're working on now and in the future by viewing what is being
+See what we’re working on now and in the future by viewing what is being
 worked on or queued up to work on in our sprint milestones below. These are
 two-week increments of work that we commit to finishing, using Agile Product
 Development practices.

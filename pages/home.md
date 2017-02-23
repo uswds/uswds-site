@@ -15,7 +15,7 @@ hero:
 {% capture training %}
 ### Training
 
-We offer a customized training program to fit your team's needs. The
+We offer a customized training program to fit your team’s needs. The
 product team will provide guidance for getting up and running with
 the U.S. Web Design Standards and kick-start your design and
 development.

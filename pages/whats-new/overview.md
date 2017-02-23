@@ -50,7 +50,7 @@ project to our list.
 
 By accessing the Google Analytics data gathered for [analytics.usa.gov](https://analytics.usa.gov),
 we have aggregated a few data points to approximate how many users of federal
-websites have "experienced" the U.S. Web Design Standards. We will update these
+websites have “experienced” the U.S. Web Design Standards. We will update these
 numbers quarterly.
 
 <table>

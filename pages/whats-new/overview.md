@@ -16,7 +16,7 @@ redirect_from:
 ---
 
 {% capture blog %}
-### Latest blog posts
+## Latest blog posts
 
 You can read more about the Standards on the 18F blog, where we cover the
 latest development releases as well as interviews with the teams from across
@@ -26,7 +26,7 @@ government who have successfully implemented the Standards at their agencies.
 {% endcapture %}
 
 {% capture in_wild %}
-### Standards in the wild
+## Standards in the wild
 
 Interested in seeing who else is using the U.S. Web Design Standards? We
 maintain a list of sites in our GitHub repo. Feel free to
@@ -46,7 +46,7 @@ project to our list.
   </div>
 </div>
 
-### Web analytics for sites that use the Standards
+## Web analytics for sites that use the Standards
 
 By accessing the Google Analytics data gathered for [analytics.usa.gov](https://analytics.usa.gov),
 we have aggregated a few data points to approximate how many users of federal

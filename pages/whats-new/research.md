@@ -6,11 +6,11 @@ redirect_from:
 layout: styleguide
 title: Research
 category: What’s new
-lead: User research will be a core aspect of the U.S. Web Design Standards project as it's our main source of feedback and inspiration for future product development.
+lead: User research will be a core aspect of the U.S. Web Design Standards project as it’s our main source of feedback and inspiration for future product development.
 ---
 We plan to use a combination of research methods, quantitative research like collecting web analytics to see in how frequently the Standards are used around the federal government, and qualitative research like remote and in-person observational studies to see whether the Standards are making government sites easier for people to use.
 
-We'll use this research to see how well the Standards are working and what needs to be improved. We can also provide user research services to teams that are using the Standards. These will be priced to allow teams around the federal government to engage with us and improve their product for their users. This benefits the Standards as well because we'll get feedback on where they need to be improved and extended.
+We’ll use this research to see how well the Standards are working and what needs to be improved. We can also provide user research services to teams that are using the Standards. These will be priced to allow teams around the federal government to engage with us and improve their product for their users. This benefits the Standards as well because we’ll get feedback on where they need to be improved and extended.
 
 ## Analytics Reporting
 
@@ -51,7 +51,7 @@ Twice a year, the team will schedule a round of in-person interviews with teams 
 
 ### Open House Events (with Remote Options)
 
-The team will host open house events at the GSA Headquarters in Washington D.C and remotely using web conferencing tools. During these events, the team will conduct training presentations and allow teams using the Standards to showcase their products and explain how they've implemented them. These events will be open to anyone in federal government.
+The team will host open house events at the GSA Headquarters in Washington D.C and remotely using web conferencing tools. During these events, the team will conduct training presentations and allow teams using the Standards to showcase their products and explain how they’ve implemented them. These events will be open to anyone in federal government.
 
 ## Research as a Service Offerings
 
@@ -84,7 +84,7 @@ We will recruit users of your product -- usually no more than 20 -- and observe 
 With the enrollment into the Data Analytics Platform (DAP) being part of the Policies for  <a href="https://www.whitehouse.gov/sites/default/files/omb/memoranda/2017/m-17-06.pdf">Federal Agency Public Websites and Digital Services</a> memo, we would like to provide a service to help digital services meet this requirement. Regardless of whether a team is using the USWDS or not, the integration into DAP should be consistent across the federal government and we have the tools and knowledge to help.
 
 #### Package 1 - DAP Integration
-We will work with digital services teams to put the basic code needed into place for passing their web analytics into the DAP platform. This is a lightweight service meant to assist teams that don't have the necessary skills on hand to meet the policies requirements.
+We will work with digital services teams to put the basic code needed into place for passing their web analytics into the DAP platform. This is a lightweight service meant to assist teams that don’t have the necessary skills on hand to meet the policies requirements.
 
 ##### Outcomes
 * DAP code included on all required sites and pages

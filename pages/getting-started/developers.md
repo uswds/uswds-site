@@ -72,10 +72,10 @@ And that’s it — you should be set to use the Standards.
 
 ### Using npm
 
-Note: Using npm to install the Standards will include jQuery version `2.2.0`. Please make sure that you're not including any other version of jQuery on your page.
+Note: Using npm to install the Standards will include jQuery version `2.2.0`. Please make sure that you’re not including any other version of jQuery on your page.
 
 If you have `node` installed on your machine, you can use npm to install the Standards. Add `uswds`
-to your project's `package.json` as a dependency:
+to your project’s `package.json` as a dependency:
 
 ```shell
 npm install --save uswds
@@ -98,7 +98,7 @@ node_modules/uswds/
     └── stylesheets/
 ```
 
-`require('uswds')` will load all of the U.S. Web Design Standard's JavaScript onto the page. The `uswds` module itself does not export anything.
+`require('uswds')` will load all of the U.S. Web Design Standard’s JavaScript onto the page. The `uswds` module itself does not export anything.
 
 The main Sass (SCSS) source file is here:
 
@@ -116,7 +116,7 @@ node_modules/uswds/dist/css/uswds.css
 
 If you’re using another framework or package manager that doesn’t support NPM, you can find the source files in this repository and use them in your project. Otherwise, we recommend that you follow the [download instructions](#download). Please note that the core team [isn’t responsible for all frameworks’ implementations](https://github.com/18F/web-design-standards/issues/877).
 
-If you’re interested in maintaining a package that helps us distribute the U.S. Web Design Standards, the project's build system can help you create distribution bundles to use in your project. Please read our [contributing guidelines](CONTRIBUTING.md#building-the-project-locally-with--gulp-) to locally build distributions for your framework or package manager.
+If you’re interested in maintaining a package that helps us distribute the U.S. Web Design Standards, the project’s build system can help you create distribution bundles to use in your project. Please read our [contributing guidelines](CONTRIBUTING.md#building-the-project-locally-with--gulp-) to locally build distributions for your framework or package manager.
 
 ### Need installation help?
 
@@ -130,7 +130,7 @@ You can also email us directly at uswebdesignstandards@gsa.gov.
 
 * The CSS foundation of this site is built with the **[Sass](https://sass-lang.com)** preprocessor language.
 * Uses **[Bourbon](http://bourbon.io/)** for its simple and lightweight Sass mixin library, and the **[Neat](http://neat.bourbon.io/)** library for the grid framework. Bourbon and Neat are open-source products from **[thoughtbot](https://thoughtbot.com/)**.
-* The CSS organization and naming conventions follow **[18F's CSS Coding Styleguide](https://pages.18f.gov/frontend/css-coding-styleguide/)**.
+* The CSS organization and naming conventions follow **[18F’s CSS Coding Styleguide](https://pages.18f.gov/frontend/css-coding-styleguide/)**.
 * CSS selectors are **prefixed** with `usa` (For example: `.usa-button`).
 * Uses a **[modified BEM](https://pages.18f.gov/frontend/css-coding-styleguide/naming/)** approach created by 18F for naming CSS selectors. Objects in CSS are separated by single dashes. Multi-word objects are separated by an underscore (For example: `.usa-button-cool_feature-active`).
 * Uses **modular CSS** for scalable, modular, and flexible code.
@@ -145,9 +145,9 @@ You can also email us directly at uswebdesignstandards@gsa.gov.
 
 ## Customization and theming
 
-The Standards can be customized to use different typography, colors and grid systems. The easiest way to do this is to use Sass and override the Standards' global variables. If it isn't possible to use Sass, do theming by overriding the CSS rules in the Standards set.
+The Standards can be customized to use different typography, colors and grid systems. The easiest way to do this is to use Sass and override the Standards’ global variables. If it isn’t possible to use Sass, do theming by overriding the CSS rules in the Standards set.
 
-To start theming through Sass, copy the `core/variables` file into your own project's Sass folder, changing applicable variable values, and importing it before the WDS. Below is an example of customizing the import of the Standards all.scss file.
+To start theming through Sass, copy the `core/variables` file into your own project’s Sass folder, changing applicable variable values, and importing it before the WDS. Below is an example of customizing the import of the Standards all.scss file.
 
 ```scss
 // src/main.scss
@@ -200,6 +200,6 @@ The Standards also meet the [WCAG 2.0 AA accessibility guidelines](https://www.w
 
 ## Contribution guidelines
 
-We're so glad you're thinking about contributing to the Standards! You can find our complete [contribution guidelines](https://github.com/18F/web-design-standards/blob/staging/CONTRIBUTING.md) in our repo — please review them before submitting your contribution.
+We’re so glad you’re thinking about contributing to the Standards! You can find our complete [contribution guidelines](https://github.com/18F/web-design-standards/blob/staging/CONTRIBUTING.md) in our repo — please review them before submitting your contribution.
 
 If you have any questions about these guidelines (or the Standards, more generally), don’t hesitate to [email us](mailto:uswebdesignstandards@gsa.gov) — we’ll get back to you within 48 hours.

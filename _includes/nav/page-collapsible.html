@@ -1,0 +1,15 @@
+{% assign _current = include.page.category | eq: page.category %}
+{% assign _id = include.page.title | slugify | prepend: 'nav-' %}
+<button class="usa-accordion-button" aria-controls="{{ _id }}"
+  {% if _current %}
+  class="usa-current"
+  aria-expanded="true"
+  {% else -%}
+  aria-expanded="false"
+  {% endif %}>
+  {{ include.title | default: include.page.title }}
+</button>
+<ul id="{{ _id }}" class="usa-sidenav-sub_list">
+  {% assign _children = site.data.nav[include.page.category] %}
+  {% include nav/list.html links=_children flat=true %}
+</ul>

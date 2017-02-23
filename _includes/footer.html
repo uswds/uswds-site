@@ -1,22 +1,63 @@
-<div class="usa-grid">
-  <div class="logo-links">
-    <a href="https://18f.gsa.gov/">
-      <img src="{{ site.baseurl }}/assets/img/logo-18f.png" alt="18F">
-    </a>
-    <a href="http://www.gsa.gov/">
-      <img src="{{ site.baseurl }}/assets/img/logo-gsa.png" alt="GSA">
-    </a>
-    <a href="https://www.usds.gov/">
-      <img class="logo-usds" src="{{ site.baseurl }}/assets/img/logo-usds.png" alt="USDS">
-    </a>
+<footer class="usa-footer usa-footer-medium site" role="contentinfo">
+  <div class="usa-grid usa-footer-return-to-top">
+    <a href="#">Return to top</a>
   </div>
-  <div class="footer-text">
-    <div class="footer-text-one-half">
-      <p>Feedback? Create an issue on the <a href="{{ site.repos[0].url }}">Standards component repo</a> or email us at <a href="mailto:uswebdesignstandards@gsa.gov">uswebdesignstandards@gsa.gov</a>.</p>
-      <p>Have an idea? Read our <a href="{{ site.repos[0].url }}/blob/staging/CONTRIBUTING.md">contribution guidelines</a>.</p>
-      <p><a href="{{ site.repos[1].url }}/blob/staging/{{ page.path }}">Edit this page</a></p>      
-      <p>As a work of the United States government, this project is <a href="{{ site.repos[0].url }}/blob/master/LICENSE.md">in the public domain</a>.</p>
-
+  <div class="usa-footer-primary-section">
+    <div class="usa-grid-full">
+      <nav class="usa-footer-nav">
+        <ul class="usa-unstyled-list">
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="{{ site.baseurl }}/components/">UI components</a>
+          </li>
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="{{ site.baseurl }}/page-templates/">Page templates</a>
+          </li>
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="{{ site.baseurl }}/getting-started/">Getting started</a>
+          </li>
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="{{ site.baseurl }}/design-principles/">Design principles</a>
+          </li>
+          <li class="usa-width-one-sixth usa-footer-primary-content">
+            <a class="usa-footer-primary-link" href="{{ site.baseurl }}/whats-new">What’s new</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </div>
-</div>
+
+  <div class="usa-footer-secondary_section">
+    <div class="usa-grid">
+      <div class="usa-width-two-thirds usa-content">
+        <h3>Become a part of the community</h3>
+        <p>The U.S. Web Design Standards has grown into a blossoming community of government engineers, content specialists, and designers. This open source project supports dozens of agencies and more than 100 sites, and is supported by an active community of contributors both in and out of government. This project is maintained by <a href="https://18f.gsa.gov/">18F</a>, an office within GSA.</p>
+        <p>We’re from the government, and we’re here to help.</p>
+        <div class="logo-links">
+          <a href="https://18f.gsa.gov/">
+            <img src="{{ site.baseurl }}/img/logo-18f.png" alt="18F">
+          </a>
+          <a href="http://www.gsa.gov/">
+            <img src="{{ site.baseurl }}/img/logo-gsa.png" alt="GSA">
+          </a>
+        </div>
+      </div>
+      <div class="usa-footer-contact-links usa-width-one-third">
+        <h5>Find an issue or have a feature request?</h5>
+        <a href="{{ site.repos[0].url }}/issues/new" class="usa-button cta">
+          <img src="{{ site.baseurl }}/img/logo-github.png" alt="GitHub logo">
+          Ask questions on GitHub
+        </a>
+        <h5>Need help troubleshooting?</h5>
+        <a href="https://chat.18f.gov/" class="usa-button cta">
+          <img src="{{ site.baseurl }}/img/logo-slack.png" alt="Slack logo">
+          Join our Slack Channel
+        </a>
+        <h5>Want to hire or contact us?</h5>
+        <a href="mailto:uswebdesignstandards@gsa.gov" class="usa-button cta">
+          <img src="{{ site.baseurl }}/img/logo-email.png" alt="Email logo">
+          Send us an email
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

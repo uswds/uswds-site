@@ -1,7 +1,7 @@
 'use strict';
 
 var $ = require('jquery');
-var calculateAnchorPosition = require('../lib/calculate-anchor-position');
+var calculateAnchorPosition = require('./calculate-anchor-position');
 
 /* Firefox needs html, others need body */
 var root = $('body, html');

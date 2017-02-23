@@ -1,6 +1,6 @@
 scss_files: 'css/**/*.scss'
 
-exclude: 'css/vendor/**'
+exclude: 'assets/css/vendor/**'
 
 # Removes front matter from Jekyll requirements for Sass files
 # See https://github.com/brigade/scss-lint#preprocessing

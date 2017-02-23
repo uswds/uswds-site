@@ -1,42 +1,54 @@
 # Site settings
-name: Draft U.S. Web Design Standards Documentation
+name:  U.S. Web Design Standards Documentation
 version: 0.14.0
 permalink: pretty
 google_analytics_ua: UA-48605964-43
 
+encoding: utf-8
+
+jekyll_get:
+  - data: releases
+    json: 'https://api.github.com/repos/18F/web-design-standards/releases'
+  - data: contributing
+    json: 'https://api.github.com/repos/18F/web-design-standards/contents/CONTRIBUTING.md'
+
 repos:
-- name: Draft U.S. Web Design Standards
-  description: Main repository for the Draft U.S. Web Design Standards package
+- name: U.S. Web Design Standards
+  description: Main repository for the U.S. Web Design Standards package
   url: https://github.com/18F/web-design-standards
-- name: Draft U.S. Web Design Standards Documentation
-  description: Documentation for the Draft U.S. Web Design Standards
+- name: U.S. Web Design Standards Documentation
+  description: Documentation for the U.S. Web Design Standards
   url: https://github.com/18F/web-design-standards-docs
-- name: Draft U.S. Web Design Standards Assets
-  description: Draft U.S. Web Design Standards visual design assets
+- name: U.S. Web Design Standards Assets
+  description: U.S. Web Design Standards visual design assets
   url: https://github.com/18F/web-design-standards-assets
 
 sass:
-  sass_dir: assets/css
+  load_paths:
+    - css
+    - assets/css
 
 collections:
-  visual:
-    output: true
-    permalink: /:path/
-  layout-system:
-    output: true
-    permalink: /:path/
-  elements:
-    output: true
-    permalink: /:path/
   components:
     output: true
     permalink: /:path/
+
+defaults:
+  - scope:
+      path: ''
+      type: components
+    values:
+      layout: component
 
 # Build settings
 markdown: redcarpet
 redcarpet:
   extensions:
     - tables
+    - with_toc_data # automatic heading ids
+
+gems:
+  - jekyll-redirect-from
 
 exclude:
 - ".ruby-version"
@@ -47,12 +59,10 @@ exclude:
 - LICENSE.md
 - README.md
 - config
-- css
-- img
 - js
+- vendor
 - manifest.yml
 - node_modules
 - package.json
-- vendor
 - gulpfile.js
 - circle.yml

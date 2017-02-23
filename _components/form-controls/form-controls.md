@@ -1,10 +1,23 @@
 ---
+permalink: /components/form-controls/
+redirect_from:
+- /form-controls/
 layout: styleguide
-permalink: /form-controls/
 type: component
 title: Form controls
 category: UI components
 lead: Form controls allow users to enter information into a page.
+subnav:
+- text: Text inputs and area
+  href: '#text-input'
+- text: Dropdown
+  href: '#dropdown'
+- text: Checkboxes
+  href: '#checkboxes'
+- text: Radio buttons
+  href: '#radio-buttons'
+- text: Date input
+  href: '#date-input'
 ---
 
 {% include accessibility.html %}

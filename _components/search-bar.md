@@ -1,10 +1,12 @@
 ---
+permalink: /components/search-bar/
+redirect_from:
+- /search-bar/
 layout: styleguide
 type: component
 title: Search bar
 category: UI components
 lead: A block that allows users to search for specific content if they know what search terms to use or can’t find desired content in the main navigation
-maturity: alpha
 ---
 
 {% include code/preview.html component="search-bar" classes="preview-search-bar" %}

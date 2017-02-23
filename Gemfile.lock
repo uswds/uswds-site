@@ -4,6 +4,8 @@ GEM
     colorator (1.1.0)
     ffi (1.9.14)
     forwardable-extended (2.6.0)
+    hash-joiner (0.0.7)
+      safe_yaml
     jekyll (3.2.1)
       colorator (~> 1.0)
       jekyll-sass-converter (~> 1.0)
@@ -14,6 +16,8 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
+    jekyll-redirect-from (0.10.0)
+      jekyll (>= 2.0)
     jekyll-sass-converter (1.4.0)
       sass (~> 3.4)
     jekyll-watch (1.5.0)
@@ -25,6 +29,7 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
     mercenary (0.3.6)
+    open-uri-cached (0.0.5)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     rake (11.2.2)
@@ -43,8 +48,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  hash-joiner
   jekyll
+  jekyll-redirect-from
   json
+  open-uri-cached
   redcarpet
   rouge (= 1.9)
   scss_lint

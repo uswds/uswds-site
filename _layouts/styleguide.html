@@ -6,69 +6,51 @@
     {% include head.html %}
   </head>
 
-  <body class="page-{{ page.title | slugify }}">
+  <body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
 
-  	{% include navbar.html %}
+    {% include navbar.html %}
 
-    <aside class="sidenav">
-      {% if page.category == 'UI components' or page.title == 'UI components' %}
-        {% include sidenav/ui-components.html %}
-      {% elsif page.category == 'Getting started' or page.title == 'Getting started' %}
-        {% include sidenav/getting-started.html %}
-      {% elsif page.category == 'About our work' or page.title == 'About our work' %}
-        {% include sidenav/about-our-work.html %}
-      {% elsif page.category == 'Page templates' or page.title == 'Page templates' %}
-        {% include sidenav/page-templates.html %}
+    <aside class="sidenav sticky" style="top: 5rem; margin-bottom: 457px;">
+      {% assign sidenav = site.data.nav[page.category] %}
+      {% if sidenav %}
+      <ul class="usa-sidenav-list">
+        {% include nav/list.html links=sidenav %}
+      </ul>
       {% endif %}
     </aside>
-    {% include sidenav/mobile.html %}
 
-    <div class="main-content" id="main-content">
+    <nav role="navigation" class="usa-nav sidenav-mobile">
+      <div class="usa-nav-inner">
+        <button class="usa-nav-close">
+          <img src="{{ site.baseurl }}/assets/img/close.svg" alt="close">
+        </button>
+        <ul class="usa-sidenav-list usa-accordion">
+          {% include nav/sections.html sections=site.data.nav.mobile %}
+        </ul>
+        {% include download-buttons.html %}
+      </div>
+    </nav>
+
+    <main class="main-content" id="main-content">
+
       <div class="styleguide-content usa-content">
         <header>
           {% if page.category != null %}
             {% unless page.path contains 'overview' %}
-              <p class="site-subheading">{{ page.category }}</p>
+          <p class="site-subheading">{{ page.category }}</p>
             {% endunless %}
           {% endif %}
           <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
-          {% if page.category == 'UI components' and page.maturity != null %}
-            <div class="tooltip">
-              <p class="tooltip-text" id="tooltip-text-{{ page.title | slugify }}">Read about the component maturity scale</p>
-              <a class="usa-label label-{{ page.maturity }}" href="{{ site.baseurl }}/about-our-work/component-maturity-scale/" aria-describedby="tooltip-text-{{ page.title | slugify }}">
-                {{ page.maturity }}
-              </a>
-            </div>
-          {% endif %}
         </header>
-        {% if page.lead != null %}
-          <p class="usa-font-lead">{{ page.lead }}</p>
-        {% endif %}
+
+        {% include lead.html text=page.lead %}
+
         {{ content }}
       </div>
 
-      <footer class="site-footer" role="contentinfo">
-        <div class="site-footer-nav usa-grid">
-          {% if page.url == '/' %}
-            {% include download-buttons.html %}
-          {% endif %}
-          {% if page.category != null %}
-            <h6>{{ page.category }}</h6>
-          {% endif %}
-          {% if page.category == 'UI components' or page.title == 'UI components' %}
-            {% include sidenav/ui-components.html %}
-          {% elsif page.category == 'Getting started' or page.title == 'Getting started' %}
-            {% include sidenav/getting-started.html %}
-          {% elsif page.category == 'About our work' or page.title == 'About our work' %}
-            {% include sidenav/about-our-work.html %}
-          {% endif %}
-        </div>
-        <div class="site-footer-info">
-          {% include footer.html %}
-        </div>
-      </footer>
-    </div>
+    </main>
 
+    {% include footer.html %}
     {% include ie-polyfill-scripts.html %}
     {% include analytics.html %}
     {% include docs-scripts.html %}

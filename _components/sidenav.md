@@ -1,10 +1,12 @@
 ---
+permalink: /components/sidenav/
+redirect_from:
+- /sidenav/
 layout: styleguide
 type: component
 title: Side navigation
 category: UI components
 lead: "Hierarchical, vertical navigation to place at the side of a page. Note: We're currently developing horizontal navigation and headers for the top of a page."
-maturity: alpha
 ---
 
 {% include code/preview.html component="sidenav" %}

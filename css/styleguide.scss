@@ -1,25 +1,40 @@
 ---
 ---
 
-// Imports -------------- //
-
-@import 'override_variables';
+// Imports
+@import 'variables';
 @import 'vendor/uswds/uswds';
 
-//  -------------- //
+
+.usa-hero {
+
+ background-image: url('#{$site-image-path}/home/fireworks.jpg');
+
+}
+
+.usa-hero-callout .usa-button {
+  margin-top: 2em;
+}
+
+// Header -------------- //
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+}
 
 .site-header {
-  @include position(fixed, 0 null null 0);
+
   background-color: $color-primary-darkest;
 
   @include media($nav-width) {
     border-bottom: none;
-    position: relative;
-  }
-
-  // Removes fixed header on Android in landscape with an open keyboard
-  @media screen and (min-aspect-ratio: 13/9) and (max-width: ($medium-screen)) {
-    position: absolute;
   }
 
   .site-logo {
@@ -68,16 +83,11 @@
 
 .site-header-navbar {
   border-bottom: none;
+
   @include media($nav-width) {
-    display: initial;
     height: 8rem;
     width: 100%;
-  }
-
-  &.is-scrolled {
-    @include media($nav-width) {
-      display: none;
-    }
+    display: block;
   }
 
   // Firefox fix so that navbar buttons to align right
@@ -125,16 +135,16 @@
     }
 
     &[aria-expanded=false] {
-      background-image: url('../img/plus-alt.png');
-      background-image: url('../img/plus-alt.svg');
+      background-image: url('#{$image-path}/plus-alt.png');
+      background-image: url('#{$image-path}/plus-alt.svg');
       background-repeat: no-repeat;
       background-position: right 0 center;
       background-size: 1rem;
     }
 
     &[aria-expanded=true] {
-      background-image: url('../img/minus-alt.png');
-      background-image: url('../img/minus-alt.svg');
+      background-image: url('#{$image-path}/minus-alt.png');
+      background-image: url('#{$image-path}/minus-alt.svg');
       background-repeat: no-repeat;
       background-position: right 0 center;
       background-size: 1rem;
@@ -177,12 +187,7 @@
     display: block;
     height: $height-nav-secondary;
     padding-left: 3rem;
-  }
-
-  &.is-scrolled {
-    position: fixed;
-    top: 0;
-    width: 100%;
+    z-index: $z-nav-secondary;
   }
 
   ul {
@@ -197,7 +202,8 @@
   a {
     @include padding (1.6rem null);
     color: $color-gray;
-    font-size: $h6-font-size;
+    font-size: $h5-font-size;
+    font-weight: bold;
     letter-spacing: 0.3px;
     line-height: $height-nav-secondary;
     text-decoration: none;
@@ -221,16 +227,10 @@
 
   @include media($nav-width) {
     bottom: 0;
-    display: block; // starting: not scrolled
-    float: left; // starting: not scrolled
-    overflow: auto;
+    display: block;
+    float: left;
     padding: 4rem 1rem 3rem 3rem;
     width: $width-nav-sidebar;
-  }
-
-  &.is-scrolled {
-    position: fixed;
-    top: $height-nav-secondary;
   }
 
   .lt-ie9 & {
@@ -257,13 +257,6 @@
   @include media($nav-width) {
     width: calc(100% - #{$width-nav-sidebar});
     top: 0;
-  }
-
-  &.is-scrolled {
-    @include media($nav-width) {
-      position: absolute;
-      top: 15.3rem; // TODO: needs to change when banner is open
-    }
   }
 
   .lt-ie9 & {
@@ -372,76 +365,58 @@ h2 + .tooltip {
   margin-top: 0;
 }
 
+a.cta {
+  img {
+    height: 1.5rem;
+    margin-right: 0.4rem;
+    position: relative;
+    top: 2px;
+    vertical-align: baseline;
+  }
+}
+
 // Footer --------------- //
 
-.site-footer {
-  @media (min-width: $medium-screen + $width-nav-sidebar) {
-    @include margin(null 3rem);
-  }
-}
+footer.site {
 
-.site-footer-nav {
-  margin-bottom: 5.5rem;
+  .logo-links {
+    margin-bottom: 3rem;
+    margin-right: 1rem;
 
-  @media (min-width: $medium-screen + $width-nav-sidebar) {
-    display: none;
-  }
+    @include media($medium-screen) {
+      float: left;
+      margin-bottom: 0;
+    }
 
-  .usa-sidenav-sub_list {
-    display: none;
-  }
-}
+    img {
+      margin-right: 1.2rem;
+      width: 3.2rem;
+    }
 
-.site-footer-info {
-  @include padding(3rem null);
-  border-top: 1px solid $color-gray-light;
+    a {
+      @include media-link;
+      color: $color-gray-lighter;
 
-  p {
-    font-size: $h5-font-size;
-
-    &:first-child {
-      margin-top: 0;
+      &:hover {
+        color: $color-white;
+      }
     }
   }
 
-  img {
-    margin-right: 1.2rem;
-    width: 3.2rem;
+  .usa-footer-contact-links {
+    text-align: left;
 
-    &.logo-usds {
-      width: 4.3rem;
+    h4 {
+      margin-top: 1em;
     }
-  }
 
-  > .usa-grid {
-    @media (min-width: $medium-screen + $width-nav-sidebar) {
-      margin-left: 0;
-      padding-left: 0;
-    }
-  }
-}
-
-.logo-links {
-  margin-bottom: 3rem;
-  margin-right: 1rem;
-
-  @include media($medium-screen) {
-    float: left;
-    margin-bottom: 0;
-  }
-
-  a {
-    @include media-link;
-    color: $color-gray-lighter;
-
-    &:hover {
+    .usa-button {
       color: $color-white;
+      margin-bottom: 0;
+      margin-top: 0;
+      width: 100%;
     }
   }
-}
-
-.footer-text {
-  overflow: hidden;
 }
 
 // Pattern Preview Boxes -------- //
@@ -959,13 +934,8 @@ code {
   code {
     background: none;
     font-size: 1.2rem;
+    margin-top: 0;
     padding: 0;
-  }
-
-  pre {
-    [class*="language-"] {
-      margin-top: 0;
-    }
   }
 
   .usa-unstyled-list {
@@ -977,42 +947,42 @@ code {
   }
 }
 
-// scss-lint:disable QualifyingElement
-code[class*="language-"],
-pre[class*="language-"] {
+[class*="language-"] {
   color: $color-base;
-}
-// scss-lint:enable QualifyingElement
 
-// Custom code sample colors
+  // Custom code sample colors
 
-.token.property,
-.token.tag,
-.token.boolean,
-.token.number,
-.token.constant,
-.token.symbol,
-.token.deleted {
-  color: $color-primary-alt-darkest;
-}
+  .nt,
+  .token.property,
+  .token.tag,
+  .token.boolean,
+  .token.number,
+  .token.constant,
+  .token.symbol,
+  .token.deleted {
+    color: $color-primary-alt-darkest;
+  }
 
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-  color: $color-secondary;
-}
+  .na,
+  .token.selector,
+  .token.attr-name,
+  .token.string,
+  .token.char,
+  .token.builtin,
+  .token.inserted {
+    color: $color-secondary;
+  }
 
-.token.atrule,
-.token.attr-value,
-.token.keyword {
-  color: $color-green;
-}
+  .s,
+  .token.atrule,
+  .token.attr-value,
+  .token.keyword {
+    color: $color-green;
+  }
 
-.token.punctuation {
-  color: $color-primary-alt-darkest;
+  .token.punctuation {
+    color: $color-primary-alt-darkest;
+  }
 }
 
 .alignment-example {
@@ -1202,13 +1172,6 @@ $font-light: 300;
   @include external-link(external-link, external-link-hover);
 }
 
-.usa-styleguide-footer {
-  [href^="http:"]:not([href*="standards.com"]),
-  [href^="https:"]:not([href*="standards.com"]) {
-    @include external-link(external-link-alt, external-link-alt-hover);
-  }
-}
-
 .usa-button,
 .link-download,
 .media_link {
@@ -1232,18 +1195,6 @@ $font-light: 300;
 
 // Page styles
 .page-ui-components {
-  .site-footer-nav {
-    @include outline-inverse-button;
-
-    .usa-button-list {
-      margin-bottom: 5.5rem;
-
-      // scss-lint:disable SelectorDepth
-      li {
-        display: initial;
-      }
-    }
-  }
 
   .usa-font-lead {
     &:first-of-type {
@@ -1276,12 +1227,6 @@ $font-light: 300;
     max-width: 18.4rem;
   }
 
-  .site-footer-info {
-    .usa-grid {
-      margin-left: auto;
-    }
-  }
-
   .footer-text-one-half {
     @include media($medium-screen) {
       @include span-columns(6);
@@ -1293,8 +1238,8 @@ $font-light: 300;
   display: table;
 
   &::before {
-    background: url('../img/icon-download.png') no-repeat 0 0;
-    background: url('../img/icon-download.svg') no-repeat 0 0;
+    background: url('#{$image-path}/icon-download.png') no-repeat 0 0;
+    background: url('#{$image-path}/icon-download.svg') no-repeat 0 0;
     background-size: 100%;
     content: '';
     display: inline-block;
@@ -1424,8 +1369,8 @@ $font-light: 300;
   -webkit-font-smoothing: antialiased;
 
   .usa-button {
-    background-image: url('../img/angle-arrow-left-inverse.png');
-    background-image: url('../img/angle-arrow-left-inverse.svg');
+    background-image: url('#{$site-image-path}/angle-arrow-left-inverse.png');
+    background-image: url('#{$site-image-path}/angle-arrow-left-inverse.svg');
     background-repeat: no-repeat;
     background-position: left 2rem center;
     background-size: 1rem;
@@ -1453,4 +1398,15 @@ $font-light: 300;
   @include media($medium-screen) {
     @include margin(null $site-margins);
   }
+}
+
+hr {
+  background: $color-gray-lighter;
+  border: none;
+  height: 1px;
+  margin: 3em 0; 
+}
+
+iframe {
+  margin-bottom: 3rem;
 }

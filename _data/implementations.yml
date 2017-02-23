@@ -1,0 +1,63 @@
+- name: Django
+  url: https://github.com/department-of-veterans-affairs/django-designstandards
+  author:
+    name: Paul Tagliamonte (USDS)
+    url: https://github.com/paultag
+  version: 0.12.0
+  notes: "This package provides access to the Standards in [Django](https://www.djangoproject.com/) applications."
+
+- name: Drupal
+  url: https://github.com/18F/web-design-standards-drupal
+  author:
+    name: 18F
+    url: https://github.com/18F
+  version: 0.8.1
+  notes: "This is a work in progress. See the [project board](https://waffle.io/18F/web-design-standards-drupal) for more info."
+
+- name: npm and node-sass
+  url: https://github.com/openbrian/18f-contrib-web-design-standards
+  author:
+    name: Brian DeRocher
+    url: https://github.com/openbrian
+  version: 0.8.0
+  notes: "This package provides seamless integration with node-sass and grunt pipelines."
+
+- name: NuGet
+  url: https://www.nuget.org/packages/web-design-standards/
+  author:
+    name: Abdul Ahad Monty
+    url: https://www.nuget.org/profiles/montyaahad
+  version: 0.8.1
+  notes: "The NuGet Package has been created to access the library easily from Visual Studio [NuGet Package Manager](https://www.nuget.org/)."
+
+- name: Rails gem
+  url: https://github.com/18F/uswds-rails-gem
+  author:
+    name: 18F
+    url: https://github.com/18F
+  version: 0.12.1
+  notes: "This [Ruby on Rails](http://rubyonrails.org/) gem is used and actively maintained by 18F."
+
+- name: Ruby gem
+  url: https://github.com/18F/us_web_design_standards_gem
+  author:
+    name: 18F
+    url: https://github.com/18F
+  version: 0.8.0
+  notes: "**This gem has been deprecated in favor of the [Rails gem](#rails-gem).** Please [let us know](https://github.com/18F/us_web_design_standards_gem/issues/new) if you'd like to adopt it."
+
+- name: WebJars
+  url: https://mvnrepository.com/artifact/org.webjars/uswds
+  author:
+    name: VJ Kapur
+    url: https://github.com/vjkapur
+  version: 0.13.1
+  notes: "For Java- and JVM-based build tools, such as Maven and Gradle."
+
+- name: WordPress
+  url: https://github.com/BBGInnovate/bbgRedesign
+  author:
+    name: Broadcasting Board of Governors (BBG)
+    url: https://github.com/BBGInnovate
+  version: 0.9.1
+  notes: "This is not a reusable WordPress theme, but an implementation of the Standards for [bbg.gov](https://www.bbg.gov/)."

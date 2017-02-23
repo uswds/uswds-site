@@ -1,10 +1,12 @@
 ---
+permalink: /components/buttons/
+redirect_from:
+- /buttons/
 layout: styleguide
 type: element
 title: Buttons
 category: UI components
 lead: Use buttons to signal actions.
-maturity: alpha
 ---
 
 {% include code/preview.html component="buttons" %}

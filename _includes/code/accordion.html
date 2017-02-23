@@ -1,9 +1,10 @@
 <div class="usa-accordion-bordered usa-code-sample">
   <ul class="usa-unstyled-list">
     <li>
-      <button class="usa-button-unstyled" aria-controls="code">Code</button>
-      <div id="code" class="usa-accordion-content">
-        <pre><code class="language-markup">{% include code/components/code-{{ include.component }}.html %}</code></pre>
+      {% assign _id = include.component | prepend: 'code-' %}
+      <button class="usa-button-unstyled" aria-controls="{{ _id }}">Code</button>
+      <div id="{{ _id }}" class="usa-accordion-content">
+        {% include code/syntax.html component=include.component %}
       </div>
     </li>
   </ul>

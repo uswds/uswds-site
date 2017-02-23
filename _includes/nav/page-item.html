@@ -1,0 +1,23 @@
+{% assign _current = page | contains_page: include.page, include.rel %}
+<a href="{{ include.page.url | prepend: site.baseurl }}"{% if _current -%} class="usa-current"{% endif %}>{{ link.text | default: include.page.title }}</a>
+{% if _current -%}
+  {% unless include.flat -%}
+    {% assign _href_key = include.href_key %}
+    {% assign _text_key = include.href_key %}
+    {% assign _links = include.page.subnav %}
+    {% if _links.data -%}
+      {% assign _href_key = _links.href %}
+      {% assign _text_key = _links.text %}
+      {% assign _data_key = _links.data %}
+      {% assign _links = site.data[_data_key] %}
+    {% endif %}
+    {% if _links -%}
+    <ul class="{{ include.subnav_class | default: 'usa-sidenav-sub_list' }}">{%
+      include nav/list.html
+      links=_links
+      text_key=_text_key
+      href_key=_href_key
+    %}</ul>
+    {% endif %}
+  {% endunless %}
+{% endif %}

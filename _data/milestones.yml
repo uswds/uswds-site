@@ -1,4 +1,5 @@
 - title: Milestone 1 - Make the best thing the easiest thing.
+  id: milestone-1
   tasks:
     - title: A public, up-to-date product road map.
       status: Done
@@ -32,6 +33,7 @@
       url: https://github.com/18F/web-design-standards/milestone/17
 
 - title: Milestone 2 - Design for flexibility. Reuse, reuse, reuse.
+  id: milestone-2
   tasks:
     - title: Form templates structured in short chunks.
       status: Done
@@ -42,28 +44,29 @@
     - title: Form patterns that allow for easy recovery of mistakes.
       status: Done
       url:
-    - title: Easy ways to customize the Standards to fit an agency’s brand and needs. 
+    - title: Easy ways to customize the Standards to fit an agency’s brand and needs.
       status: Done
       url:
-    - title: Design stencils and assets. 
+    - title: Design stencils and assets.
       status: Done
       url: https://standards.usa.gov/download/
     - title: Interaction patterns for save-as-you-go functionality
       status: In Progress
       url:
-    - title: A fork-able starter project representing a simple, static site with a few common pages. 
+    - title: A fork-able starter project representing a simple, static site with a few common pages.
       status: Done
       url:
     - title: Build out the documentation and increase the ease of the process for Windows users to start up.
       status: Done
       url: https://github.com/18F/web-design-standards/issues/1533
-    - title: Final clean up and launch 1.0 
-      status: In Progress
-      url: https://github.com/18F/web-design-standards/labels/%5BCategory%5D%201.0
+    - title: Final clean up and launch 1.0
+      status: Done
+      url: https://github.com/18F/web-design-standards/labels/%5BRelease%5D%201.0
 
 - title: Milestone 3 - Showcase benefits for agencies and users.
+  id: milestone-3
   tasks:
-    - title: Highlight and track sites using the WDS more proactively, collect and link to them on the main site to show agencies what is possible. 
+    - title: Highlight and track sites using the WDS more proactively, collect and link to them on the main site to show agencies what is possible.
       status: In Progress
       url: https://github.com/18F/web-design-standards/issues/1579
     - title: Create and publicize a public slack channel for support, questions and sharing best practices.
@@ -87,13 +90,14 @@
     - title: Continue listening tours to meet with more than a half dozen agencies per quarter to learn more about their experience, needs, and collect feedback on the Web Design Standards.
       status: In Progress
       url:
-      
+
 - title: Milestone 4 - Advanced Components & Speed, Speed, Speed.
+  id: milestone-4
   tasks:
     - title: Perform a Web Performance review and update to components to make sure they’re optimized to load as fast as possible.
       status: In Progress
       url:
-    - title: Launch the Yeoman generator to quickly build out sites with the WDS base design. 
+    - title: Launch the Yeoman generator to quickly build out sites with the WDS base design.
       status: In Progress
       url: https://github.com/18F/web-design-standards/issues/1542
     - title: Create a series of open source boilerplate language to include in government contracts to make it easier for Contracting Officers and Program Managers to define and request the use of the WDS in government contracts.

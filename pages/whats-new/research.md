@@ -38,7 +38,7 @@ One of our challenges is knowing who is interested in being part of our user res
 
 #### Potential Methods
 * Re-activate the screener to intercept users of standards.usa.gov
-* Provide a "Contact Us" feature on standards.usa.gov
+* Provide a “Contact Us” feature on standards.usa.gov
 * Perform outreach via federal listservs and other digital channels
 
 ### Digital Service Team Remote Interviews
@@ -47,7 +47,7 @@ One of the most consistent ways we have collected feedback from our users has be
 
 ### Bi-annual Contextual Inquiries
 
-Twice a year, the team will schedule a round of in-person interviews with teams around the federal government to meet with and observe how teams have been using, or would like to be using, the U.S. Web Design Standards. The information gathered during these "contextual inquires" will ensure that the product is continuously delivering what federal teams and the general public need.
+Twice a year, the team will schedule a round of in-person interviews with teams around the federal government to meet with and observe how teams have been using, or would like to be using, the U.S. Web Design Standards. The information gathered during these “contextual inquires” will ensure that the product is continuously delivering what federal teams and the general public need.
 
 ### Open House Events (with Remote Options)
 

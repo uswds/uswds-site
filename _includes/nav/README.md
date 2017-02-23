@@ -43,7 +43,7 @@ You could generate a navigation list with:
 Other allowed include parameters for `nav/list.html` include:
 
 * `current` indicates the strategy for determining whether a link is
-  highlighted as "current":
+  highlighted as “current”:
   * `'contains'` causes any page link with a permalink that "contains" the
     current `page` to be highlighted, with the one exception of `/`.
   * Otherwise, only page links for which `link.href == page.permalink` will
@@ -54,7 +54,7 @@ Other allowed include parameters for `nav/list.html` include:
 
 ### Subnavigation
 
-If a page link is identified as "current", and unless `include.flat` is
+If a page link is identified as “current”, and unless `include.flat` is
 truthy, then a subnavigation list is generated for that page, according to
 its `subnav` frontmatter. For instance, given the following link data:
 

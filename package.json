@@ -84,7 +84,7 @@
     "nswatch": "^0.2.0",
     "politespace": "^0.1.4",
     "run-sequence": "^1.1.5",
-    "uswds": "~0.14.0",
+    "uswds": "^1.0.0",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   }

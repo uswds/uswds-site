@@ -22,7 +22,7 @@ development.
 
 <a href="mailto:uswebdesignstandards@gsa.gov" class="usa-button cta">
   <img src="{{ site.baseurl }}/img/logo-email.png" alt="">
-  Email us to learn more about training
+  Email us about training
 </a>
 {% endcapture %}
 
@@ -36,7 +36,7 @@ piece of cake. You can also read about customization in our
 
 <a href="mailto:uswebdesignstandards@gsa.gov" class="usa-button cta">
   <img src="{{ site.baseurl }}/img/logo-email.png" alt="">
-  Email us to learn more about customization
+  Ask us about customization
 </a>
 {% endcapture %}
 

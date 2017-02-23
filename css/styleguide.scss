@@ -365,6 +365,16 @@ h2 + .tooltip {
   margin-top: 0;
 }
 
+a.cta {
+  img {
+    height: 1.5rem;
+    margin-right: 0.4rem;
+    position: relative;
+    top: 2px;
+    vertical-align: baseline;
+  }
+}
+
 // Footer --------------- //
 
 footer.site {
@@ -394,25 +404,17 @@ footer.site {
   }
 
   .usa-footer-contact-links {
-
     text-align: left;
 
     h4 {
       margin-top: 1em;
     }
 
-    a {
-      color: #FFFFFF;
+    .usa-button {
+      color: $color-white;
       margin-bottom: 0;
       margin-top: 0;
-      padding-left: 35px;
       width: 100%;
-    }
-
-    img {
-      position: relative;
-      top: 1px;
-      width: 15px;
     }
   }
 }

@@ -41,17 +41,4 @@ gulp.task('scss-lint', function (done) {
 
 });
 
-gulp.task('sass', function (done) {
-
-  dutil.logMessage('sass', 'Compiling Sass');
-
-  runSequence(
-    [
-      'copy-doc-styles',
-      'copy-uswds-styles',
-      'scss-lint'
-    ],
-    done
-  );
-
-});
+gulp.task('sass', ['copy-doc-styles', 'copy-uswds-styles']);

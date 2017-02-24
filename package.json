@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Website and documentation on using the U.S. Web Design Standards.",
   "scripts": {
+    "federalist": "gulp build",
     "build": "gulp build && bundle exec jekyll build",
     "build-css": "gulp sass",
     "build-js": "gulp javascript",

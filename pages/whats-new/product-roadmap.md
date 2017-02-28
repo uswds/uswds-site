@@ -2,6 +2,7 @@
 permalink: /whats-new/product-roadmap/
 redirect_from:
 - /getting-started/product-roadmap/
+- /about-our-work/product-roadmap/
 layout: styleguide
 title: Product roadmap
 category: What’s new

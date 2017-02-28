@@ -21,7 +21,7 @@ lead: "We designed the U.S. Web Design Standards to help you create better exper
     <p>Our patterns and designs are easy to adapt to support the diverse scope and needs of government digital services. The tools and components provided in the USWDS are focused on performance, both from a technical and team based point of view. To ensure this, everything should be validated for the user by the user. The USWDS wants to empower teams across to government to make the statement “good enough for government work” means something again.</p>
   </div>
   <div class="usa-width-one-half">
-    <h2>Showcase benefits for agency and users</h2>
+    <h2>Showcase benefits for agency and users.</h2>
     <p>Teams around the government should easily be able to find inspiration from among their peers. This inspiration can jumpstart many teams own efforts but also lay the groundwork for making the business case for adopting the U.S. Web Design Standards. We will catalog the successes of the Standards and its users both quantitatively and qualitatively.</p>
   </div>
 </div>

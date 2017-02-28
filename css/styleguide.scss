@@ -224,7 +224,6 @@
   display: none;
 
   @include media($nav-width) {
-    bottom: 0;
     display: block;
     float: left;
     padding: 4rem 1rem 3rem 3rem;
@@ -376,6 +375,8 @@ a.cta {
 // Footer --------------- //
 
 footer.site {
+
+  clear: both;
 
   .logo-links {
     margin-bottom: 3rem;

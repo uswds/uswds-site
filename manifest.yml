@@ -1,7 +1,0 @@
----
-memory: 64MB
-applications:
-- name: wds-docs
-  buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
-  env:
-    FORCE_HTTPS: true

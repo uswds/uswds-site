@@ -1204,7 +1204,7 @@ $font-light: 300;
 
 .page-design-principles {
   @include media($medium-screen) {
-    .usa-grid-full {
+    .main-content .usa-grid-full {
       @include margin(4rem null 3rem null);
     }
   }

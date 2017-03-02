@@ -1,10 +1,10 @@
 'use strict';
 
+require('./form-disable');
+require('./scroll-to-top-for-hash');
+require('./sidenav');
 require('./vendor/politespace');
 require('./vendor/stickyfill.min.js');
-require('./scroll-to-top-for-hash');
-require('./search');
-require('./sidenav');
 
 
 // Initialize sticky fill

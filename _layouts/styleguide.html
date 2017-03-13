@@ -1,49 +1,30 @@
-<!DOCTYPE html>
-<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+---
+layout: default
+---
+<aside class="sidenav sticky" style="top: 5rem; margin-bottom: 525px;">
+  {% assign sidenav = site.data.nav[page.category] %}
+  {% if sidenav %}
+  <ul class="usa-sidenav-list">
+    {% include nav/list.html links=sidenav %}
+  </ul>
+  {% endif %}
+</aside>
 
-  <head>
-    {% include head.html %}
-  </head>
+<main class="main-content" id="main-content">
 
-  <body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
-
-    {% include navbar.html %}
-
-    <aside class="sidenav sticky" style="top: 5rem; margin-bottom: 525px;">
-      {% assign sidenav = site.data.nav[page.category] %}
-      {% if sidenav %}
-      <ul class="usa-sidenav-list">
-        {% include nav/list.html links=sidenav %}
-      </ul>
+  <div class="styleguide-content usa-content">
+    <header>
+      {% if page.category != null %}
+        {% unless page.path contains 'overview' %}
+      <p class="site-subheading">{{ page.category }}</p>
+        {% endunless %}
       {% endif %}
-    </aside>
+      <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
+    </header>
 
-    <main class="main-content" id="main-content">
+    {% include lead.html text=page.lead %}
 
-      <div class="styleguide-content usa-content">
-        <header>
-          {% if page.category != null %}
-            {% unless page.path contains 'overview' %}
-          <p class="site-subheading">{{ page.category }}</p>
-            {% endunless %}
-          {% endif %}
-          <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
-        </header>
+    {{ content }}
+  </div>
 
-        {% include lead.html text=page.lead %}
-
-        {{ content }}
-      </div>
-
-    </main>
-
-    {% include footer.html %}
-    {% include ie-polyfill-scripts.html %}
-    {% include analytics.html %}
-    {% include docs-scripts.html %}
-    <script src="{{ site.baseurl }}/assets/js/vendor/uswds.min.js"></script>
-
-  </body>
-
-</html>
+</main>

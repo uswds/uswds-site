@@ -9,3 +9,5 @@ gem 'jekyll-redirect-from'
 
 gem 'rouge', '1.9'
 gem 'scss_lint', require: false
+
+gem 'jekyll-compose', group: [:jekyll_plugins]

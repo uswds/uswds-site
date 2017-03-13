@@ -7,4 +7,4 @@
   {% assign _href = link[_href_key] %}
 {% endif %}
 {% assign _text_key = include.text_key | default: 'text' %}
-<a href="{{ _href }}">{{ link[_text_key] }}</a>
+<a href="{{ _href }}"{% if _href == page.permalink or _href == page.url %} class="usa-current"{% endif %}>{{ link[_text_key] }}</a>

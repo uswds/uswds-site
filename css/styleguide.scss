@@ -1409,3 +1409,9 @@ hr {
 iframe {
   margin-bottom: 3rem;
 }
+
+article {
+  border-top: 1px solid $color-gray-lighter;
+  margin-bottom: $site-margins;
+  padding-top: $site-margins-mobile;
+}

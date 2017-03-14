@@ -1414,4 +1414,18 @@ article {
   border-top: 1px solid $color-gray-lighter;
   margin-bottom: $site-margins;
   padding-top: $site-margins-mobile;
+
+  .post-title a {
+    $ss: 1px;           // shadow size
+    $sc: $color-white;  // shadow color
+    text-decoration: none;
+    text-shadow:
+      +$ss $ss 0 $sc,
+      -$ss $ss 0 $sc,
+      +$ss 0 0 $sc,
+      -$ss 0 0 $sc;
+    box-shadow:
+      inset 0 -2px 0 0 $sc,
+      inset 0 -5px 0 0 currentColor;
+  }
 }

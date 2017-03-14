@@ -2,7 +2,7 @@
 <article id="{{ post.id | default: post.title | slugify }}">
   <div class="usa-grid-full">
     <div class="post-meta usa-width-one-third">
-      <h2>
+      <h2 class="post-title">
         {% if include.excerpt %}<a href="{{ post.url | relative_url }}">{% endif %}
         {{ post.title }}
         {% if include.excerpt %}</a>{% endif %}

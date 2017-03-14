@@ -72,6 +72,37 @@ Federalist also builds public previews for each branch pushed to GitHub. For ins
 https://federalist.fr.cloud.gov/preview/18f/web-design-standards-docs/staging/
 
 
+### Adding "updates"
+
+This is the workflow for adding posts to the [updates page](https://standards.usa.gov/whats-new/updates/):
+
+1. Create a new draft entry with:
+
+    ```sh
+    bundle exec jekyll draft "title of my post"
+    ```
+
+    The above command, for example, should create `_drafts/title-of-my-post.md`.
+
+1. Stop Jekyll if it's running, then restart it with the `--drafts` argument:
+
+    ```sh
+    bundle exec jekyll serve --drafts
+    ```
+
+    Once the server starts, you should see your draft listed at [`/whats-new/updates/`](http://localhost:4000/whats-new/updates/). 
+
+1. Edit or rename your draft as needed. Jekyll will regenerate the pages each time you change the file.
+
+1. When you're ready to publish, run:
+
+    ```sh
+    bundle exec jekyll publish _drafts/name-of-post.md
+    ```
+
+    where the last argument is the path of your draft. This will insert the current date into the post's file name and move it into `_posts`, where Jekyll will pick it recognized it as published without the `--drafts` argument.
+
+
 ## Contributing
 
 Please read through our [contributing guidelines](CONTRIBUTING.md). These guidelines are directions for opening issues and submitting pull requests, and they also detail the coding and design standards we follow.

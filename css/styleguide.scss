@@ -1408,12 +1408,7 @@ iframe {
 }
 
 article {
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-
-  & + article {
-    margin-top: 4rem;
-  }
+  margin-bottom: 5rem;
 
   .post-title {
     margin-top: 0;
@@ -1428,11 +1423,22 @@ article {
         text-decoration: underline;
       }
     }
+  } // .post-title
+
+  .post-date {
+    text-transform: none;
   }
 
-  &.post-excerpt .post-content p {
-    margin-bottom: 0;
-    margin-top: 0.5rem;
-  }
+  &.post-excerpt {
+    .post-title {
+      @include h2();
+    }
 
-}
+    .post-content p {
+      margin-bottom: 0;
+      margin-top: 0.5rem;
+    }
+  } // .post-excerpt
+
+
+} // article

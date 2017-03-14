@@ -5,11 +5,8 @@
 @import 'variables';
 @import 'vendor/uswds/uswds';
 
-
 .usa-hero {
-
- background-image: url('#{$site-image-path}/home/fireworks.jpg');
-
+  background-image: url('#{$site-image-path}/home/fireworks.jpg');
 }
 
 .usa-hero-callout .usa-button {
@@ -1411,7 +1408,31 @@ iframe {
 }
 
 article {
-  border-top: 1px solid $color-gray-lighter;
-  margin-bottom: $site-margins;
-  padding-top: $site-margins-mobile;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+
+  & + article {
+    margin-top: 4rem;
+  }
+
+  .post-title {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-primary;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &.post-excerpt .post-content p {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+  }
+
 }

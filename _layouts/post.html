@@ -23,6 +23,9 @@ layout: default
       {% endif %}
       <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
     </header>
+    {% if page.lead %}
+    <p class="usa-font-lead">{{ page.lead | markdownify }}</p>
+    {% endif %}
     {{ content }}
   </div>
 </main>

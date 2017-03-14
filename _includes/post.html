@@ -21,7 +21,9 @@
 
     <div class="post-content usa-width-two-thirds">
       {% if include.excerpt == true %}
-        {{ post.excerpt | replace: '<p>', '<p class="usa-font-lead">' }}
+        {% assign excerpt = post.lead | markdownify %}
+        {{ excerpt | default: post.excerpt | replace: '<p>', '<p class="usa-font-lead">' }}
+        <p><a href="{{ post.url | relative_url }}">Read more</a></p>
       {% else %}
       <div class="post-content">
         {{ post.content }}

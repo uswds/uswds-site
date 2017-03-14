@@ -28,6 +28,9 @@ sass:
     - css
     - assets/css
 
+# this is for pages that don't have a permalink (primarily posts)
+permalink: /whats-new/updates/:year/:month/:day/:title/
+
 collections:
   components:
     output: true

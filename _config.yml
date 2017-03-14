@@ -42,6 +42,11 @@ defaults:
       type: components
     values:
       layout: component
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
 
 # Build settings
 markdown: redcarpet

@@ -3,14 +3,11 @@ layout: default
 ---
 
 <aside class="sidenav sticky" style="top: 5rem; margin-bottom: 525px;">
-  {% assign overview = site.pages | where_exp: 'p', 'p.permalink == "/whats-new/updates/"' | first %}
-  {% assign posts = site.posts | unshift: overview %}
+  {% assign sidenav = site.data.nav['What’s new'] %}
   <ul class="usa-sidenav-list">
     {%
       include nav/list.html
-      links=posts
-      href_key='url'
-      text_key='title'
+      links=sidenav
     %}
   </ul>
 </aside>
@@ -24,7 +21,7 @@ layout: default
       <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
     </header>
     {% if page.lead %}
-    <p class="usa-font-lead">{{ page.lead | markdownify }}</p>
+      {% include lead.html text=page.lead %}
     {% endif %}
     {{ content }}
   </div>

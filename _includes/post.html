@@ -1,34 +1,31 @@
 {% assign post = include.post %}
-<article id="{{ post.id | default: post.title | slugify }}">
-  <div class="usa-grid-full">
-    <div class="post-meta usa-width-one-third">
-      <h2 class="post-title">
-        {% if include.excerpt %}<a href="{{ post.url | relative_url }}">{% endif %}
-        {{ post.title }}
-        {% if include.excerpt %}</a>{% endif %}
-      </h2>
+<article id="{{ post.id | default: post.title | slugify }}"{% if include.excerpt %} class="post-excerpt"{% endif %}>
+  <div class="post-meta">
+    <h2 class="post-title">
+      {% if include.excerpt %}<a href="{{ post.url | relative_url }}">{% endif %}
+      {{ post.title }}
+      {% if include.excerpt %}</a>{% endif %}
+    </h2>
 
-      <p class="post-date site-subheading">
-        {{ post.date | date: '%B %-d, %Y' }}
-      </p>
-
-      {% if post.tags -%}
-      <p class="post-tags">{% for tag in post.tags -%}
-        <span class="usa-label post-tag">{{ tag }}</span>
-      {% endfor %}</p>
+    <p class="post-date site-subheading">
+      {% if post.tags.size > 0 -%}
+        {{ post.tags | join: ', ' }} posted
       {% endif %}
-    </div>
+      {{ post.date | date: '%B %-d, %Y' }}
+    </p>
+  </div>
 
-    <div class="post-content usa-width-two-thirds">
-      {% if include.excerpt == true %}
-        {% assign excerpt = post.lead | markdownify %}
-        {{ excerpt | default: post.excerpt | replace: '<p>', '<p class="usa-font-lead">' }}
-        <p><a href="{{ post.url | relative_url }}">Read more</a></p>
-      {% else %}
-      <div class="post-content">
-        {{ post.content }}
-      </div>
-      {% endif %}
-    </div>
+  <div class="post-content">
+  {% if include.excerpt == true %}
+    {% if post.lead %}
+      {% include lead.html text=post.lead %}
+    {% else %}
+      {{ post.excerpt }}
+    {% endif %}
+
+    <p class="post-more"><a href="{{ post.url | relative_url }}">Continue reading</a></p>
+  {% else %}
+    {{ post.content }}
+  {% endif %}
   </div>
 </article>

@@ -72,7 +72,7 @@ Federalist also builds public previews for each branch pushed to GitHub. For ins
 https://federalist.fr.cloud.gov/preview/18f/web-design-standards-docs/develop/
 
 
-### Adding "updates"
+### Adding content to the "Updates" section
 
 This is the workflow for adding posts to the [updates page](https://standards.usa.gov/whats-new/updates/):
 

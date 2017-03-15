@@ -52,7 +52,7 @@ Here are a few other utility commands you may find useful:
 
 Sometimes you will want to use the latest version of the `web-design-standards` repo. Follow these steps to do so:
 
-1. Clone the latest version of the [`web-design-standards` repo](https://github.com/18F/web-design-standards/tree/staging).
+1. Clone the latest version of the [`web-design-standards` repo](https://github.com/18F/web-design-standards/tree/develop).
 1. Run `npm install` to install the dependencies required for the package in the `web-design-standards` directory.
 1. Run `npm run build:package` to create the built version of the Standards in the `web-design-standards` directory.
 1. Run `npm link` in the _root level_ of the `web-design-standards` directory on your local machine.
@@ -67,9 +67,9 @@ You are now using the latest version of the Standards via your cloned version on
 
 This site is deployed on [Federalist](https://federalist.fr.cloud.gov/), which automatically builds the site whenever commits are pushed to `master`.
 
-Federalist also builds public previews for each branch pushed to GitHub. For instance, to see the latest build of the `staging` branch, visit:
+Federalist also builds public previews for each branch pushed to GitHub. For instance, to see the latest build of the `develop` branch, visit:
 
-https://federalist.fr.cloud.gov/preview/18f/web-design-standards-docs/staging/
+https://federalist.fr.cloud.gov/preview/18f/web-design-standards-docs/develop/
 
 
 ### Adding "updates"

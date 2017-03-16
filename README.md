@@ -74,34 +74,7 @@ https://federalist.fr.cloud.gov/preview/18f/web-design-standards-docs/develop/
 
 ### Adding content to the "Updates" section
 
-This is the workflow for adding posts to the [updates page](https://standards.usa.gov/whats-new/updates/):
-
-1. Create a new draft entry with:
-
-    ```sh
-    bundle exec jekyll draft "title of my post"
-    ```
-
-    The above command, for example, should create `_drafts/title-of-my-post.md`.
-
-1. Stop Jekyll if it's running, then restart it with the `--drafts` argument:
-
-    ```sh
-    bundle exec jekyll serve --drafts
-    ```
-
-    Once the server starts, you should see your draft listed at [`/whats-new/updates/`](http://localhost:4000/whats-new/updates/). 
-
-1. Edit or rename your draft as needed. Jekyll will regenerate the pages each time you change the file.
-
-1. When you're ready to publish, run:
-
-    ```sh
-    bundle exec jekyll publish _drafts/name-of-post.md
-    ```
-
-    where the last argument is the path of your draft. This will insert the current date into the post's file name and move it into `_posts`, where Jekyll will pick it recognized it as published without the `--drafts` argument.
-
+See the [`_posts` directory](_posts/#readme) for instructions on adding updates.
 
 ## Contributing
 

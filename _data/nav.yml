@@ -14,10 +14,11 @@ mobile:
   - href: /design-principles/
   - href: /whats-new/
     collapsible: true
-  
+
 
 UI components:
-  - href: /components/
+  - text: Overview
+    href: /components/
   - href: /components/typography/
   - href: /components/colors/
   - href: /components/accessibility/
@@ -35,7 +36,8 @@ UI components:
   - href: /components/footers/
 
 Getting started:
-  - href: /getting-started/
+  - text: Overview
+    href: /getting-started/
   - href: /getting-started/developers/
   - href: /getting-started/designers/
   - href: /getting-started/code-guidelines/
@@ -46,7 +48,8 @@ Page templates:
   - href: /page-templates/
 
 What’s new:
-  - href: /whats-new/
+  - text: Overview
+    href: /whats-new/
   - href: /whats-new/product-roadmap/
   - href: /whats-new/research/
   - href: /whats-new/releases/

@@ -46,7 +46,7 @@ function launchChromeAndRunLighthouse(url, flags, config) {
 const port = 4000;
 const config = require('lighthouse/lighthouse-core/config/perf.json');
 const url = 'http://127.0.0.1:4000/';
-const flags = {output: 'html'};
+const flags = {output: 'json'};
 
 function main() {
   const server = startServer();

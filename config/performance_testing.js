@@ -6,7 +6,7 @@ const ChromeLauncher = require('lighthouse/lighthouse-cli/chrome-launcher.js').C
 const Printer = require('lighthouse/lighthouse-cli/printer');
 
 function startServer() {
-  const process = spawn('bundle', ['exec', 'jekyll', 'serve']);
+  const process = spawn('npm', ['run', 'start']);
 
   process.stdout.on('close', (data) => {
     console.log('Server stopping');

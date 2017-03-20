@@ -15,7 +15,7 @@
       url:
     - title: Contribution guidelines for both designers and developers.
       status: Done
-      url: https://github.com/18F/web-design-standards/blob/staging/CONTRIBUTING.md
+      url: https://github.com/18F/web-design-standards/blob/develop/CONTRIBUTING.md
     - title: Form patterns that include recommendations for just-in-time instructions.
       status: Done
       url:

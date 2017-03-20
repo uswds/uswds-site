@@ -178,10 +178,10 @@ $large-screen:  1120px !default;
 NOTE: If you plan on upgrading to newer versions of the Standards in the future, or are not using your own forked version of the Standards, try to avoid making changes in the Standards folder themselves. Doing so could make it impossible to upgrade in the future without undoing your custom changes.
 
 ### Main variables that can be customized
-* Colors can be found in the `core/variables` [file, line 35](https://github.com/18F/web-design-standards/blob/staging/src/stylesheets/core/_variables.scss#L35).
-* Font families can be found in the `core/variables` [file, line 28](https://github.com/18F/web-design-standards/blob/staging/src/stylesheets/core/_variables.scss#L28).
-* Typography sizing can be found in `core/variables` [file, line 13](https://github.com/18F/web-design-standards/blob/staging/src/stylesheets/core/_variables.scss#L13).
-* Grid and breakpoint settings can be found in `core/variables` [file, line 87](https://github.com/18F/web-design-standards/blob/staging/src/stylesheets/core/_variables.scss#L87).
+* Colors can be found in the `core/variables` [file, line 35](https://github.com/18F/web-design-standards/blob/develop/src/stylesheets/core/_variables.scss#L35).
+* Font families can be found in the `core/variables` [file, line 28](https://github.com/18F/web-design-standards/blob/develop/src/stylesheets/core/_variables.scss#L28).
+* Typography sizing can be found in `core/variables` [file, line 13](https://github.com/18F/web-design-standards/blob/develop/src/stylesheets/core/_variables.scss#L13).
+* Grid and breakpoint settings can be found in `core/variables` [file, line 87](https://github.com/18F/web-design-standards/blob/develop/src/stylesheets/core/_variables.scss#L87).
 
 
 ## Where things live
@@ -200,6 +200,6 @@ The Standards also meet the [WCAG 2.0 AA accessibility guidelines](https://www.w
 
 ## Contribution guidelines
 
-We’re so glad you’re thinking about contributing to the Standards! You can find our complete [contribution guidelines](https://github.com/18F/web-design-standards/blob/staging/CONTRIBUTING.md) in our repo — please review them before submitting your contribution.
+We’re so glad you’re thinking about contributing to the Standards! You can find our complete [contribution guidelines](https://github.com/18F/web-design-standards/blob/develop/CONTRIBUTING.md) in our repo — please review them before submitting your contribution.
 
 If you have any questions about these guidelines (or the Standards, more generally), don’t hesitate to [email us](mailto:uswebdesignstandards@gsa.gov) — we’ll get back to you within 48 hours.

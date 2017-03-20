@@ -1,8 +1,10 @@
 # Site settings
-name:  U.S. Web Design Standards Documentation
+title:  U.S. Web Design Standards
 version: 1.0.0
-permalink: pretty
 google_analytics_ua: UA-48605964-43
+
+# this is for pages that don't have a permalink (primarily posts)
+permalink: /whats-new/updates/:year/:month/:day/:title/
 
 encoding: utf-8
 
@@ -39,6 +41,11 @@ defaults:
       type: components
     values:
       layout: component
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
 
 # Build settings
 markdown: redcarpet

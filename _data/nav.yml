@@ -15,7 +15,6 @@ mobile:
   - href: /whats-new/
     collapsible: true
 
-
 UI components:
   - text: Overview
     href: /components/
@@ -50,6 +49,7 @@ Page templates:
 What’s new:
   - text: Overview
     href: /whats-new/
+  - href: /whats-new/releases/
+  - href: /whats-new/updates/
   - href: /whats-new/product-roadmap/
   - href: /whats-new/research/
-  - href: /whats-new/releases/

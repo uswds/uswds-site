@@ -5,6 +5,11 @@
 @import 'variables';
 @import 'vendor/uswds/uswds';
 
+html,
+body {
+  height: auto;
+}
+
 .usa-hero {
   background-image: url('#{$site-image-path}/home/fireworks.jpg');
 }
@@ -223,7 +228,12 @@
   @include media($nav-width) {
     display: block;
     float: left;
-    padding: 4rem 1rem 3rem 3rem;
+    margin-bottom: 525px;
+    margin-top: 50px;
+    padding-right: 1rem;
+    padding-left: 3rem;
+    overflow-y: auto;
+    top: 5rem;
     width: $width-nav-sidebar;
   }
 

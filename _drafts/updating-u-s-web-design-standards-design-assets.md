@@ -13,6 +13,6 @@ Based on this experience, the team took a look at how frequently these design as
 * Sketch Format - The Sketch sticker sheets have been downloaded over a 1,000 times, and while Sketch is a Mac only application, this is a signifiant level of use to justify continued support.
 * Omnigraffle - In the last year, the Omnigraffle format has only been dowloaded 335 times. Given the low number of downloads and the fact that Omnigraffle is another Mac only application, the team has decided to retire this sticker sheet.
 
-<INCLUDE IMAGE HERE>
+![Sticker Sheet Downloads]({{ site.baseurl }}/img/updates/Sticker_Sheet_Downloads.png)
 
 Going forward, the team will continue to maintain and update the design assets for both Illustrator and Sketch. If your team needs a different format, please feel free to file an issue requesting that or better think about contributing a sticker sheet of your own.

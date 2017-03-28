@@ -6,7 +6,7 @@
     </p>
 
     <h1 class="post-title">
-      {% if include.excerpt %}<a href="{{ post.url | relative_url }}">{% endif %}
+      {% if include.excerpt %}<a href="{{ site.baseurl }}{{ post.url }}">{% endif %}
       {{ post.title }}
       {% if include.excerpt %}</a>{% endif %}
     </h1>
@@ -24,7 +24,7 @@
       {{ post.excerpt }}
     {% endif %}
 
-    <p class="post-more"><a href="{{ post.url | relative_url }}">Continue reading</a></p>
+    <p class="post-more"><a href="{{ site.baseurl }}{{ post.url }}">Continue reading</a></p>
   {% else %}
     {{ post.content }}
   {% endif %}

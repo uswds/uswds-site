@@ -1,5 +1,5 @@
 ---
-title: "NASA’s journey with the U.S. Web Design Standards"
+title: "NASA’s journey with the Standards"
 authors:
 - julia
 tags:

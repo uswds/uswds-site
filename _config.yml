@@ -6,6 +6,9 @@ google_analytics_ua: UA-48605964-43
 # this is for pages that don't have a permalink (primarily posts)
 permalink: /whats-new/updates/:year/:month/:day/:title/
 
+# this ensure that posts with future dates are published
+future: true
+
 encoding: utf-8
 
 jekyll_get:

@@ -6,9 +6,13 @@
     {% include head.html %}
   </head>
 
-  <body class="page-{{ page.title | slugify }} {% if page.layout == 'demo' %}layout-{{ page.layout | slugify }}{% endif %}">
+  <body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
+
+    {% include navbar.html %}
 
     {{ content }}
+
+    {% include footer.html %}
 
     {% include ie-polyfill-scripts.html %}
     {% include analytics.html %}

@@ -5,11 +5,13 @@
 @import 'variables';
 @import 'vendor/uswds/uswds';
 
+html,
+body {
+  height: auto;
+}
 
 .usa-hero {
-
- background-image: url('#{$site-image-path}/home/fireworks.jpg');
-
+  background-image: url('#{$site-image-path}/home/fireworks.jpg');
 }
 
 .usa-hero-callout .usa-button {
@@ -226,7 +228,12 @@
   @include media($nav-width) {
     display: block;
     float: left;
-    padding: 4rem 1rem 3rem 3rem;
+    margin-bottom: 525px;
+    margin-top: 50px;
+    padding-right: 1rem;
+    padding-left: 3rem;
+    overflow-y: auto;
+    top: 5rem;
     width: $width-nav-sidebar;
   }
 
@@ -1409,3 +1416,39 @@ hr {
 iframe {
   margin-bottom: 3rem;
 }
+
+article {
+  margin-bottom: 5rem;
+
+  .post-title {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-primary;
+        text-decoration: underline;
+      }
+    }
+  } // .post-title
+
+  .post-date {
+    text-transform: none;
+  }
+
+  &.post-excerpt {
+    .post-title {
+      @include h2();
+    }
+
+    .post-content p {
+      margin-bottom: 0;
+      margin-top: 0.5rem;
+    }
+  } // .post-excerpt
+
+
+} // article

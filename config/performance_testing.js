@@ -21,7 +21,7 @@ function startServer() {
 
 function stopServer(process) {
   process.stdin.pause();
-  process.exit();
+  process.kill('SIGINT');
 }
 
 function launchChromeAndRunLighthouse(url, flags, config) {

@@ -67,6 +67,7 @@ function main() {
       launchChromeAndRunLighthouse(url, flags, config)
       .then(lighthouseResults => {
         lighthouseResults.artifacts = undefined;
+        console.log('Running performance tests');
         return Printer.write(lighthouseResults, flags.output, flags.outputPath);
       })
       .then(() => {

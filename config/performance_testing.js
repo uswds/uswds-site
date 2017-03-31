@@ -20,7 +20,8 @@ function startServer() {
 }
 
 function stopServer(process) {
-  process.kill('SIGHUP');
+  process.stdin.pause();
+  process.kill();
 }
 
 function launchChromeAndRunLighthouse(url, flags, config) {
@@ -43,10 +44,17 @@ function launchChromeAndRunLighthouse(url, flags, config) {
     });
 }
 
+const location = process.env.CIRCLE_ARTIFACTS || '.';
+const fileID = process.env.CIRCLE_BUILD_NUM || Date.now();
+const filename = `perf_results-${fileID}.json`
 const port = 4000;
 const config = require('lighthouse/lighthouse-core/config/perf.json');
-const url = 'http://127.0.0.1:4000/';
-const flags = {output: 'json'};
+const url = 'http://127.0.0.1:4000/page-templates';
+const flags = {
+  output: 'json',
+  perf: true,
+  outputPath: `${location}/${filename}`
+};
 
 function main() {
   const server = startServer();
@@ -55,13 +63,14 @@ function main() {
     const stringData = `${data}`;
     console.log(`SRV: ${stringData}`);
 
-    if (stringData.match(/Server address: http:/i)) {
+    if (stringData.match(/Server address:/i)) {
       launchChromeAndRunLighthouse(url, flags, config)
       .then(lighthouseResults => {
-        lighthouseResults.artifacts = undefined; // You can save the artifacts separately if so desired
-        return Printer.write(lighthouseResults, flags.output);
+        lighthouseResults.artifacts = undefined;
+        return Printer.write(lighthouseResults, flags.output, flags.outputPath);
       })
       .then(() => {
+        console.log('SRV: stopping server');
         stopServer(server);
       })
       .catch(err => {

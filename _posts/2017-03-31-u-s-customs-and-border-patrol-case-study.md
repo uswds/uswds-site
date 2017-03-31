@@ -5,8 +5,8 @@ tags:
 - case study
 - design
 - cbp
-excerpt: "As mentioned in our [recent Q&A with the team at NASA\(https://standards.usa.gov/whats-new/updates/2017/03/21/nasa-journey-with-us-web-design-standards/), the U.S. Web Design Standards team is sitting down with various agencies that are using the Draft Standards. In this second post in our series, we met with the team at the U.S. Customs and Border Protection and learned how they used the  Standards to train, develop, and design their various websites and applications."
 ---
+As mentioned in our [recent Q&A with the team at NASA](https://standards.usa.gov/whats-new/updates/2017/03/21/nasa-journey-with-us-web-design-standards/), the U.S. Web Design Standards team is sitting down with various agencies that are using the Draft Standards. In this second post in our series, we met with the team at the U.S. Customs and Border Protection and learned how they used the  Standards to train, develop, and design their various websites and applications.
 
 **Standards team:** Why did you decide to use the Draft U.S. Web Design Standards?
 
@@ -36,7 +36,5 @@ To assist in CBP redesign efforts, we’ve created a “Step It Up” program th
 **Standards team:** Is there anything our team could do to help you in your efforts?
 
 **U.S. CBP team:** Yes! Our team could use more guidance on mobile form factors and applications. It would be useful to have guidance UI/UX standards for mobile-first products that we could look to when developing applications for particular devices – such as Android, iOS, and Windows devices.
-
-===
 
 We’re looking to learn more from agencies that have used the Standards; if you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at uswebdesignstandards@gsa.gov. You can also chat with the team in the new public Slack channel for the Standards! 

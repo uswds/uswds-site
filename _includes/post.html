@@ -18,11 +18,9 @@
 
   <div class="post-content">
   {% if include.excerpt == true %}
-    {% if post.lead %}
-      {% include lead.html text=post.lead %}
-    {% else %}
-      {{ post.excerpt }}
-    {% endif %}
+    <p class="post-excerpt">
+      {{ post.lead | default: post.excerpt }}
+    </p>
 
     <p class="post-more"><a href="{{ site.baseurl }}{{ post.url }}">Continue reading</a></p>
   {% else %}

@@ -1,5 +1,6 @@
 
-const spawn = require('child_process').spawn;
+// const spawn = require('child_process').spawn;
+const spawn = require('better-spawn');
 
 const Lighthouse = require('lighthouse');
 const ChromeLauncher = require('lighthouse/lighthouse-cli/chrome-launcher.js').ChromeLauncher;
@@ -22,12 +23,11 @@ function startServer() {
 function stopServer(process) {
   console.log('attempting to stop server');
   process.stdin.pause();
-  process.kill();
-  process.kill('SIGINT')
-  process.kill('SIGTERM')
-  process.kill('SIGHUP')
-  console.log(process.pid)
-  process.kill(process.pid, 'SIGHUP')
+  process.close();
+  process.close('SIGTERM')
+  process.close('SIGHUP')
+  console.log('killed?', process.killed);
+  console.log('closed?', process.closed);
 }
 
 function launchChromeAndRunLighthouse(url, flags, config) {

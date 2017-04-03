@@ -67,6 +67,7 @@
   },
   "homepage": "https://github.com/18F/web-design-standards-docs#readme",
   "devDependencies": {
+    "better-spawn": "^0.3.1",
     "browserify": "^13.0.0",
     "del": "^2.2.0",
     "gulp": "^3.9.0",

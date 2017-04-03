@@ -27,7 +27,7 @@ function stopServer(process) {
   process.kill('SIGTERM')
   process.kill('SIGHUP')
   console.log(process.pid)
-  process.kill(process.pid + 1, 'SIGHUP')
+  process.kill(process.pid, 'SIGHUP')
 }
 
 function launchChromeAndRunLighthouse(url, flags, config) {

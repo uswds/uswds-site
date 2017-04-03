@@ -23,9 +23,9 @@ function stopServer(process) {
   console.log('attempting to stop server');
   process.stdin.pause();
   process.kill();
-  child.kill('SIGINT')
-  child.kill('SIGTERM')
-  child.kill('SIGHUP')
+  process.kill('SIGINT')
+  process.kill('SIGTERM')
+  process.kill('SIGHUP')
   console.log(process.pid)
   process.kill(process.pid + 1, 'SIGHUP')
 }

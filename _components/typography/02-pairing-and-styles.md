@@ -42,9 +42,8 @@ order: 02
               <a href="{{ site.baseurl }}/assets/img/epa-emanifest-screenshot.png">EPA eManifest (screenshot of non-public site)</a>
             </p>
           </aside>
-          <h6 class="usa-heading-alt">Web Hierarchy</h6>
         </div>
-
+        <h6 class="usa-heading-alt">Web Hierarchy</h6>
         <div class="usa-grid usa-typography-example-font">
           <div class="usa-width-one-half">
             <h3 class="usa-display">Display</h3>
@@ -198,9 +197,8 @@ order: 02
               <a href="{{ site.baseurl }}/">U.S. Web Design Standards homepage</a>
             </p>
           </aside>
-          <h6 class="usa-heading-alt">Web Hierarchy</h6>
         </div>
-
+        <h6 class="usa-heading-alt">Web Hierarchy</h6>
         <div class="serif-robust usa-grid usa-typography-example-font">
           <div class="usa-width-one-half">
             <h3 class="usa-display">Display 1</h3>
@@ -376,9 +374,8 @@ order: 02
               <a href="http://playbook.cio.gov">U.S. Digital Service Playbook</a>
             </p>
           </aside>
-          <h6 class="usa-heading-alt">Web Hierarchy</h6>
         </div>
-
+        <h6 class="usa-heading-alt">Web Hierarchy</h6>
         <div class="serif-robust serif-sans-minor serif-body usa-grid usa-typography-example-font">
           <div class="usa-width-one-half">
             <h3 class="usa-display">Display 1</h3>
@@ -548,9 +545,8 @@ order: 02
             <p><span class="usa-label-big">Medium</span></p>
             <p>Exceeds ideal number of fonts by two. May negatively impact page load performance.</p>
           </aside>
-          <h6 class="usa-heading-alt">Web Hierarchy</h6>
         </div>
-
+        <h6 class="usa-heading-alt">Web Hierarchy</h6>
         <div class="sans-style serif-body usa-grid usa-typography-example-font">
           <div class="usa-width-one-half">
             <h3 class="usa-display">Display 1</h3>
@@ -714,9 +710,8 @@ order: 02
               <a href="{{ site.baseurl }}/assets/img/va-appeals-screenshot.png">Department of Veterans Affairs appeals review (screenshot of non-public site)</a>
             </p>
           </aside>
-          <h6 class="usa-heading-alt">Web Hierarchy</h6>
         </div>
-
+        <h6 class="usa-heading-alt">Web Hierarchy</h6>
         <div class="sans-style usa-grid usa-typography-example-font">
           <div class="usa-width-one-half">
             <h3 class="usa-display">Display 1</h3>

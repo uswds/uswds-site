@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
+    {{ content }}
+    {% include scripts.html %}
+  </body>
+</html>

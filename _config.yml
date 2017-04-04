@@ -61,18 +61,19 @@ gems:
   - jekyll-redirect-from
 
 exclude:
-- ".ruby-version"
-- ".sass-cache"
-- CONTRIBUTING.md
-- Gemfile
-- Gemfile.lock
-- LICENSE.md
-- README.md
-- config
-- js
-- vendor
-- manifest.yml
-- node_modules
-- package.json
-- gulpfile.js
-- circle.yml
+  - ".ruby-version"
+  - ".sass-cache"
+  - CONTRIBUTING.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - config
+  - js
+  - vendor
+  - manifest.yml
+  - node_modules
+  - package.json
+  - gulpfile.js
+  - circle.yml
+

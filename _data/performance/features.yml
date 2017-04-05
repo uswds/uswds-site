@@ -1,0 +1,103 @@
+- name: Overall score
+  id: score-overall
+
+- name: Speed index
+  id: speed-index
+
+- name: First meaninful paint / 85% complete
+  id: first-meaningful-paint
+
+- name: Input latency
+  id: input-latency
+
+- name: Time to interactive
+  id: time-to-interactive
+
+- name: First paint / render
+  id: first-paint
+
+- name: First byte
+  id: first-byte
+
+- name: Backend time
+  id: backend-time
+
+- name: Frontend time
+  id: frontend-time
+
+- name: Load time
+  id: load-time
+
+- name: RUM speed index
+  id: rum-speed-index
+
+- name: First visual change
+  id: first-visual-change
+
+- name: Last visual change
+  id: last-visual-change
+
+- name: Custom timing events
+  id: custom-timing
+
+- name: Page weight
+  id: page-weight
+
+- name: Page requests
+  id: page-requests
+
+- name: Domains in requests
+  id: request-domains
+
+- name: DOM nodes
+  id: dom-node-count
+
+- name: Accessibility score
+  id: score-a11y
+
+- name: Web best practices
+  id: score-best-practices
+
+- name: HTTP/2
+  id: supports-http2
+
+- name: HTTPS
+  id: supports-https
+
+  # TODO: this might need to be more specific
+- name: Caching
+  id: caching
+
+- name: Minification
+  id: minification
+
+- name: Oversized requests
+  id: oversized-requests
+
+- name: Progressive Web App specification
+  id: pwa-specs
+
+- name: Critical rendering path
+  id: critical-rendering-path
+
+- name: Old CSS features (-webkit, etc)
+  id: old-css
+
+- name: Unused CSS
+  id: unused-css
+
+- name: Unoptimized images
+  id: unoptimized-images
+
+- name: Oversized images
+  id: oversized-images
+
+- name: Multiple browser(s)
+  id: browser-support
+
+- name: Multiple URLs
+  id: supports-multi-urls
+
+- name: Connectivity throttling
+  id: speed-throttle
+

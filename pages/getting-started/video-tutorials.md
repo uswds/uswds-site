@@ -10,6 +10,8 @@ lead: Watch these videos to familiarize yourself with key concepts from the U.S.
 
 ### {{ video.title }}
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/{{ video.id }}" frameborder="0" allowfullscreen></iframe>
+<div class="embed-container">
+  <iframe src="https://www.youtube.com/embed/{{ video.id }}" frameborder="0" allowfullscreen></iframe>
+</div>
 
 {% endfor %}

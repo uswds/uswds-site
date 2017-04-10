@@ -1,6 +1,6 @@
 machine:
   node:
-    version: 5.1.0
+    version: 6.7.0
 
 dependencies:
   pre:
@@ -14,5 +14,6 @@ test:
   override:
     - npm run build # Build site files
     - npm test # Run the package and test suite
+    - node ./config/performance_testing.js
   post:
     - ls -agolf _site/ # Ensure that build worked

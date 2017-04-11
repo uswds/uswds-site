@@ -20,7 +20,7 @@ product team will provide guidance for getting up and running with
 the U.S. Web Design Standards and kick-start your design and
 development.
 
-<a href="mailto:uswebdesignstandards@gsa.gov" class="usa-button cta" onclick="ga('send', 'event', 'Clicked Training CTA', 'Clicked training call to action');>
+<a href="mailto:uswebdesignstandards@gsa.gov" class="usa-button cta" onclick="ga('send', 'event', 'Clicked Training CTA', 'Clicked training call to action');">
   <img src="{{ site.baseurl }}/img/logo-email.png" alt="">
   Email us about training
 </a>

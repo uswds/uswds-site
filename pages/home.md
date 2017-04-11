@@ -34,7 +34,7 @@ level of help and customization to make adopting the Standards a
 piece of cake. You can also read about customization in our
 [developer guide](getting-started/developers/#customization-and-theming).
 
-<a href="mailto:uswebdesignstandards@gsa.gov" class="usa-button cta"> onclick="ga('send', 'event', 'Clicked Customization CTA', 'Clicked customization call to action');>
+<a href="mailto:uswebdesignstandards@gsa.gov" class="usa-button cta" onclick="ga('send', 'event', 'Clicked Customization CTA', 'Clicked customization call to action');">
   <img src="{{ site.baseurl }}/img/logo-email.png" alt="">
   Ask us about customization
 </a>

@@ -1,6 +1,6 @@
 ---
 title: Performance metrics &amp; features
-permalink: /performance/metrics/
+permalink: /performance/glossary/
 category: Getting started
 layout: styleguide
 ---

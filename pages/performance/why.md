@@ -1,6 +1,6 @@
 ---
-title: Performance tools
-permalink: /performance/tools/
+title: Why track performance
+permalink: /performance/why/
 category: Getting started
 layout: styleguide
 ---

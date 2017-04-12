@@ -19,21 +19,21 @@ Direct metrics are ones that measure the user’s experience of the site, most o
 
 The best direct metrics most accurately measure the user’s experience with the site, and are called primary direct metrics. The following primary direct metrics do a good job of measuring the user’s actual experience rather than a best guess at their experience. They are:
 
-- custom timing events
-- speed index
-- meaningful first paint
-- time to interactive
-- input latency
+- [custom timing events](#custom-timing-events)
+- [speed index](#speed-index)
+- [meaningful first paint](#meaningful-first-paint)
+- [time to interactive](#time-to-interactive)
+- [input latency](#input-latency)
 
 <a name="secondary-direct-metrics"></a>
 #### Secondary direct metrics
 
 Secondary direct metrics drill down into the specific pieces that make up the whole user experience. They help link the problem to the experience and with the performance in general. Secondary direct metrics to potentially use are:
 
-- render start
-- first paint
-- total backend time or time to first byte
-- onload
+- [render start](#render-start)
+- [first paint](#first-paint)
+- total backend time or time to [first byte](#first-byte)
+- [onload](#onload)
 
 <a name="indirect-metrics"></a>
 ### Indirect metrics
@@ -47,9 +47,9 @@ Changes in indirect metrics *can* have an effect on direct metrics but won't alw
 
 The primary indirect metrics are the main metrics that affect page performance. While not a perfect indicator of site speed, they tie closely to the direct metrics so a designer or dev will have an idea of the user’s perceived performance when one of the primary indirect metrics changes. The primary indirect metrics to track are:
 
-- Number of requests
-- Total size (kb, mb) of requests or page weight
-- DOM weight or total DOM nodes
+- [Number of requests](#number-of-requests)
+- [Total size (kb, mb) of requests or page weight](#total-page-weight)
+- [DOM weight or total DOM nodes](#dom-nodes)
 
 
 <a name="secondary-indirect-metrics"></a>
@@ -252,8 +252,8 @@ The Chrome plugin and CLI testing tool, lighthouse, includes first meaningful pa
 
 The first meaningful paint can be found in statistic in the chrome browser.
 
-<a name="first-interactive"></a>
-### First interactive
+<a name="#time-to-interactive"></a>
+### Time to interactive
 
 The time from where the website becomes complete enough for the user to interact with it. This metric can be calculated through the browser timings API, `domInteractive` or through speed index timings that take into account things like web fonts and the main thread freeing up. The `domInteractive` event in the browser is an inaccurate measurement, as it accounts for all DOM, blocking script and style requests to be complete, which can lead to too high of a number when the user was actually able to interact with the page sooner. Instead, more complex implementations of the metric should be used, such as what’s provided by google chrome lighthouse.
 

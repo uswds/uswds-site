@@ -69,7 +69,7 @@ Another important distinction in the various different performance metrics is di
 
 Real time monitoring is measuring performance of actual users on the site. Custom events, render start, onload, backend, number of requests, number of DOM elements and dom complete can all be monitored in real time. Speed index cannot be because it takes too much time and resources to run on a user's machine.
 
-Real time monitoring allows you to measure actual users performance while they are interacting with the site, often in real time. This can bring out specific performance issues and can give accurate information about percentiles of people's performance across the world, on different devices and on different network speeds. It requires a live site with enough traffic to yield statistically significant results. [turn into pros and cons list?].
+Real time monitoring allows you to measure actual users performance while they are interacting with the site, often in real time. This can bring out specific performance issues and can give accurate information about percentiles of people's performance across the world, on different devices and on different network speeds. It requires a live site with enough traffic to yield statistically significant results.
 
 Without significant web traffic, over 200 unique users a day, or traffic based on actual users rather than just stakeholders, real time monitoring may suggest performance numbers that are not representative of the user. This means that  real time monitoring should be utilized only when the site has the type of traffic that’s expected of when the site is live. Real time monitoring is also subject to various fluctuations and differences in performance numbers. For instance, if a part of your userbase network is slow for a day, or many of your users are using the site from mobile phones because of a news update, then the performance numbers for that day will be off. This makes it potentially harder to tie code changes and releases to performance changes. It also makes it potentially more difficult to compare your site’s performance with a competitor/similar site as your site might have factors which affect the performance that you don’t have control of such as more global users, or more mobile users. This means that the best use case for real time monitoring is to understand your user base. Real time monitoring should be used with caution when doing comparative analysis or tracking performance over time through code changes.
 
@@ -99,11 +99,11 @@ links and sub-frames have finished loading ([source](https://developer.mozilla.o
 
 #### Cons
 
-- Is not a valid metric for perceived user performance because the page might be full rendered and active before the onload event fires. [https://www.stevesouders.com/blog/2013/05/13/moving-beyond-window-onload/]
+- Is not a valid metric for perceived user performance because the page might be full rendered and active before the onload event fires. For more information see [Steve Souders, moving beyond window onload](https://www.stevesouders.com/blog/2013/05/13/moving-beyond-window-onload/)
 
 #### How to measure
 
-This can be measured in the browser. The best way is to use a performance measure [link in doc]. This works in all browsers besides IE less than 10, and Safari:
+This can be measured in the browser. The best way is to use a performance measure. This works in all browsers besides IE less than 10, and Safari:
 
 ```
   function accurateMeasurement() {
@@ -137,7 +137,7 @@ Another, less accurate way, that will work in all browsers is to use the JavaScr
 This cross-browser method is not recommended, as it has the following limitations:
 
 - The JavaScript Date object is not accurate enough at these levels of precision.
-- It won't play nice with services that use window.performance measurements, so this data will have to be captured somehow [link to how window.performance gets picked up by services]
+- It won't play nice with services that use window.performance measurements, so this data will have to be captured somehow.
 
 <a name="speed-index"></a>
 ### Speed index
@@ -206,7 +206,7 @@ The typical example of a custom metric is Twitter using a "time to first tweet m
 #### How to measure
 
 1. Pick an event to measure. The event will be more accurate if it includes an image.
-2. Include a performance mark [link to section on performance mark] right after the HTML code with the event.
+2. Include a performance mark right after the HTML code with the event.
 
 ```
 \<!-- important thing to measure -->
@@ -284,7 +284,7 @@ Time to interactive can be found in statistic in the chrome browser.
 <a name="input-latency"></a>
 ### Input latency
 
-Input latency is the amount of time it takes for the app to respond to the users as they interact with it. It’s very different than the other metrics as it doesn’t relate to the initial load and displaying of the page, it’s a metric that is constantly being tracked over time as the user interacts with the site. Due to how input latency works in this way, it’s often best served as a RUM metric, as it’s more accurate to gather information as real users are interacting with the site. That being said, it’s also possible to synthetically test for it. [https://developers.google.com/web/tools/lighthouse/audits/estimated-input-latency]
+Input latency is the amount of time it takes for the app to respond to the users as they interact with it. It’s very different than the other metrics as it doesn’t relate to the initial load and displaying of the page, it’s a metric that is constantly being tracked over time as the user interacts with the site. Due to how input latency works in this way, it’s often best served as a RUM metric, as it’s more accurate to gather information as real users are interacting with the site. That being said, it’s also possible to synthetically test for it. For more information see [Google Chrome Lighthouse's input latency document](https://developers.google.com/web/tools/lighthouse/audits/estimated-input-latency)
 
 #### Pros
 
@@ -302,9 +302,9 @@ The only known way to test input latency right now is through Google chrome ligh
 <a name="render-start"></a>
 ### Render start
 
-Render start is the time from the first byte to when the browser draws the first pixel on the screen. It is a synthetic metric, as there’s no way to get the metric from the browser itself. It is closely related to first paint, although is more accurate the first paint due to it being accurately calculated through visual cues. It is also harder to test than first paint as required screen capturing.
+Render start is the time from the first byte to when the browser draws the first pixel on the screen. It is a synthetic metric, as there’s no way to get the metric from the browser itself. It is closely related to first paint, although is more accurate the first paint due to it being accurately calculated through visual cues. It is also harder to test than first paint as required screen capturing. See [webpagetest discussion](https://www.webpagetest.org/forums/showthread.php?tid=13265) for more.
 
-Render start tells how long it takes for blocking scripts, style sheets or processes to complete before the browser can start rendering the page. It will point to problems in the request pipeline, such as not deferring or placing JavaScripts to the end of the document or having too many CSS resources requested up front. It’s generally inferior to the more complete picture metrics, such as speed index and first meaningful paint [https://www.webpagetest.org/forums/showthread.php?tid=13265].
+Render start tells how long it takes for blocking scripts, style sheets or processes to complete before the browser can start rendering the page. It will point to problems in the request pipeline, such as not deferring or placing JavaScripts to the end of the document or having too many CSS resources requested up front. It’s generally inferior to the more complete picture metrics, such as speed index and first meaningful paint.
 
 #### Pros
 
@@ -338,7 +338,8 @@ The main reason to use first paint over the more accurate render start is it’s
 
 #### How to measure
 
-First paint can be found through the Navigation timing API for browsers that support it, such as newest versions of Chrome, Firefox, Internet Explorer. In IE, can be found under `performance.timing` as `msFirstPaint` [https://msdn.microsoft.com/en-us/library/ff974719(v=vs.85).aspx]. In chome it can be found in `window.chrome.loadTimes()` under `firstPaintTime` [https://gist.github.com/acdha/a1fd7e91f8cd5c1f6916]. It’s also available in most testing tools.
+First paint can be found through the Navigation timing API for browsers that support it, such as newest versions of Chrome, Firefox, Internet Explorer. In IE, can be found under `performance.timing` as `msFirstPaint`, [more info from Microsoft](https://msdn.microsoft.com/en-us/library/ff974719(v=vs.85).aspx). In chome it can be found in `window.chrome.loadTimes()` under `firstPaintTime` [more info from Chrome](https://gist.github.com/acdha/a1fd7e91f8cd5c1f6916). It’s also available in most testing tools.
+
 <a name="first-byte"></a>
 ### First byte
 

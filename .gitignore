@@ -7,4 +7,3 @@ node_modules/
 npm-debug.log
 .bundle/
 assets/
-_includes/code/components/*

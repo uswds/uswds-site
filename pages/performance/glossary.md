@@ -356,7 +356,7 @@ This metric, also called total requests, is a accrual of all the site's resource
 
 #### How to measure
 
-Total resource weight can be calculated with the Resource timing API [https://developer.mozilla.org/en-US/docs/Web/API/Resource_Timing_API/Using_the_Resource_Timing_API]. It would require getting all resources with `performance.getEntriesByType("resource");`, and aggregating the `encodedBodySize` for each. It’s also available in most testing tools.
+Total resource weight can be calculated with the [Resource timing API](https://developer.mozilla.org/en-US/docs/Web/API/Resource_Timing_API/Using_the_Resource_Timing_API). It would require getting all resources with `performance.getEntriesByType("resource");`, and aggregating the `encodedBodySize` for each. It’s also available in most testing tools.
 
 ### Number of requests
 
@@ -373,7 +373,7 @@ The total number of requests the page makes while loading resources such as CSS,
 
 #### How to measure
 
-Total resource weight can be calculated with the Resource timing API [https://developer.mozilla.org/en-US/docs/Web/API/Resource_Timing_API/Using_the_Resource_Timing_API]. It would require getting all resources with `performance.getEntriesByType("resource");`, and aggregating them.
+Total resource weight can be calculated with the [Resource timing API](https://developer.mozilla.org/en-US/docs/Web/API/Resource_Timing_API/Using_the_Resource_Timing_API). It would require getting all resources with `performance.getEntriesByType("resource");`, and aggregating them.
 
 ### DOM Nodes
 

@@ -3,6 +3,7 @@ title: Web performance glossary
 permalink: /performance/glossary/
 category: Getting started
 layout: styleguide
+lead: Detailed information about performance methods and metrics.
 ---
 
 ## Types of metrics

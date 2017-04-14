@@ -8,6 +8,23 @@ hero:
   button:
     href: whats-new/releases/#version-1-0-0
     text: Read more about this release
+graphic-list:
+    list-item:
+      title: Getting Started
+      description: Learn how to get started using the U.S. Web Design Standards for your project, regardless of your technical stack.
+      image:
+    list-item:
+      title: What's New
+      description: Keep up to date with the current news and product development updates for the U.S. Web Design Standards.
+      image:
+    list-item:
+      title: UI Components
+      description: Discover all the different components that the Standards provide as both design and development assets.
+      image:
+    list-item:
+      title: Page Templates
+      description: Explore the different page templates that have been created to jump start your product development.
+      image:
 ---
 
 ## New training and services

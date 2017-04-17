@@ -1,5 +1,5 @@
 {% include nav/current.html page=include.page %}
-<a href="{{ include.page.url | prepend: site.baseurl }}"{% if _current -%} class="usa-current"{% endif %}>{{ link.text | default: include.page.title }}</a>
+<a href="{{ include.page.url | prepend: site.baseurl }}"{% if _current -%} class="usa-current"{% endif %}>{{ link.text | default: include.page.title | smartify }}</a>
 {% if _current %}
   {% unless include.flat -%}
     {% assign _href_key = include.href_key %}

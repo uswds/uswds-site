@@ -3,28 +3,33 @@ permalink: /
 layout: landing
 title: Announcing version 1.0
 hero:
-  callout: Announcing version 1.0
-  content: After a year and a half of development and user research, we’re officially launching version 1.0 of the U.S. Web Design Standards. Please explore the site, read our research and documentation, use our code, and join the community!
-  button:
-    href: whats-new/releases/#version-1-0-0
-    text: Read more about this release
+  callout: U.S. Web Design Standards
+  content: The Standards are a design system that allows federal agencies to quickly prototype and deploy digital products using a baseline of design patterns.
 graphic-list:
     list-item:
       title: Getting Started
       description: Learn how to get started using the U.S. Web Design Standards for your project, regardless of your technical stack.
       image:
+        src:
+        alt:
     list-item:
       title: What's New
       description: Keep up to date with the current news and product development updates for the U.S. Web Design Standards.
       image:
+        src:
+        alt:
     list-item:
       title: UI Components
       description: Discover all the different components that the Standards provide as both design and development assets.
       image:
+        src:
+        alt:
     list-item:
       title: Page Templates
       description: Explore the different page templates that have been created to jump start your product development.
       image:
+        src:
+        alt:
 ---
 
 ## New training and services

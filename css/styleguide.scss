@@ -202,9 +202,9 @@ body {
   }
 
   a {
-    color: $color-gray;
+    color: $color-gray-dark;
     font-size: $h5-font-size;
-    font-weight: bold;
+    font-weight: normal;
     letter-spacing: 0.3px;
     line-height: $height-nav-secondary;
     text-decoration: none;
@@ -1410,7 +1410,7 @@ hr {
   background: $color-gray-lighter;
   border: none;
   height: 1px;
-  margin: 3em 0; 
+  margin: 3em 0;
 }
 
 iframe {

@@ -4,18 +4,23 @@ permalink: /performance/glossary/
 category: Getting started
 layout: styleguide
 lead: Detailed information about performance methods and metrics.
+subnav:
+  - text: Types of metrics
+    href: '#types-of-metrics'
+  - text: Types of monitoring
+    href: '#types-of-monitoring-methods'
+  - text: Metrics and implementations
+    href: '#metrics-and-implementations'
 ---
 
 ## Types of metrics
 
 Discussion of web metrics requires splitting up metrics into different classifications. These are split into levels of direct metrics and indirect metrics. Direct metrics are more directly related to the user’s perception of performance, while indirect metrics affect the direct metrics.
 
-<a name="direct-metrics"></a>
 ### Direct metrics
 
 Direct metrics are ones that measure the user’s experience of the site, most often through timed measurements of this experience (except for Speed Index which is a number related to time). Direct metrics can be: tracked on a live site, help diagnose problems, and indicate how users are experiencing the site.
 
-<a name="primary-direct-metrics"></a>
 #### Primary direct metrics
 
 The best direct metrics most accurately measure the user’s experience with the site, and are called primary direct metrics. The following primary direct metrics do a good job of measuring the user’s actual experience rather than a best guess at their experience. They are:
@@ -26,7 +31,6 @@ The best direct metrics most accurately measure the user’s experience with the
 - [time to interactive](#time-to-interactive)
 - [input latency](#input-latency)
 
-<a name="secondary-direct-metrics"></a>
 #### Secondary direct metrics
 
 Secondary direct metrics drill down into the specific pieces that make up the whole user experience. They help link the problem to the experience and with the performance in general. Secondary direct metrics to potentially use are:
@@ -36,14 +40,12 @@ Secondary direct metrics drill down into the specific pieces that make up the wh
 - total backend time or time to [first byte](#first-byte)
 - [onload](#onload)
 
-<a name="indirect-metrics"></a>
 ### Indirect metrics
 
 Indirect metrics explain the specific technical reasons for performance problems on a site. They’re not measured in time but rather measurements that affect time. Indirect metrics can be passed to a dev or design team as guidance when building a mockup or feature. They allow the team to build a UI with an indication of how it will perform.
 
 Changes in indirect metrics *can* have an effect on direct metrics but won't always. For instance, there are performance improvements, such as critical CSS, that can improve direct metrics but will have no effect (or even negative effects) on indirect metrics. It's important to use indirect metrics only as an explanation for what's seen with direct metrics.
 
-<a name="primary-indirect-metrics"></a>
 #### Primary indirect metrics
 
 The primary indirect metrics are the main metrics that affect page performance. While not a perfect indicator of site speed, they tie closely to the direct metrics so a designer or dev will have an idea of the user’s perceived performance when one of the primary indirect metrics changes. The primary indirect metrics to track are:
@@ -53,19 +55,16 @@ The primary indirect metrics are the main metrics that affect page performance. 
 - [DOM weight or total DOM nodes](#dom-nodes)
 
 
-<a name="secondary-indirect-metrics"></a>
 #### Secondary indirect metrics
 
 Secondary indirect metrics are used more for diagnosing performance problems or checking that the website doesn’t have any obvious performance anti-patterns. Some of them, such as DNS requests, can be used more as a checklist to ensure the site doesn’t go over a normal amount. Others, such as number of DOM elements, can help identify a hard-to-find performance problem. The secondary indirect metrics are:
 
 DNS requests: use if the website architecture requires more than 3 different domains to be in use.
 
-<a name="types-of-monitoring-methods"></a>
 ## Types of monitoring methods
 
 Another important distinction in the various different performance metrics is different ways in which they can be monitored. The type of monitoring changes how and where certain metrics can be used, so will play into the decisions of choosing metrics.
 
-<a name="real-time-monitoring"></a>
 ### Real time monitoring
 
 Real time monitoring is measuring performance of actual users on the site. Custom events, render start, onload, backend, number of requests, number of DOM elements and dom complete can all be monitored in real time. Speed index cannot be because it takes too much time and resources to run on a user's machine.
@@ -74,7 +73,6 @@ Real time monitoring allows you to measure actual users performance while they a
 
 Without significant web traffic, over 200 unique users a day, or traffic based on actual users rather than just stakeholders, real time monitoring may suggest performance numbers that are not representative of the user. This means that  real time monitoring should be utilized only when the site has the type of traffic that’s expected of when the site is live. Real time monitoring is also subject to various fluctuations and differences in performance numbers. For instance, if a part of your userbase network is slow for a day, or many of your users are using the site from mobile phones because of a news update, then the performance numbers for that day will be off. This makes it potentially harder to tie code changes and releases to performance changes. It also makes it potentially more difficult to compare your site’s performance with a competitor/similar site as your site might have factors which affect the performance that you don’t have control of such as more global users, or more mobile users. This means that the best use case for real time monitoring is to understand your user base. Real time monitoring should be used with caution when doing comparative analysis or tracking performance over time through code changes.
 
-<a name="synthetic-monitoring"></a>
 ### Synthetic monitoring
 
 Synthetic monitoring is testing a site’s performance in a simulated, fake, and consistent environment. This would be running a performance tool as part of the build, or using a tool to run automated webpagetest.org tests against a site. Speed index is the classic synthetic monitoring tool, perhaps because speed index can only be used in a simulated environment. While speed index cannot be used in a real time environment, any of the real time monitoring metrics can also be used in a synthetic environment. This means using custom events, render start, number of requests can all be used in a synthetic environment.
@@ -85,7 +83,6 @@ While synthetic monitoring is the best way to receive consistent performance mon
 
 ## Metrics and implementations
 
-<a name="onload"></a>
 ### onload
 
 The load event fires at the end of the document loading process. At this point,
@@ -140,7 +137,6 @@ This cross-browser method is not recommended, as it has the following limitation
 - The JavaScript Date object is not accurate enough at these levels of precision.
 - It won't play nice with services that use window.performance measurements, so this data will have to be captured somehow.
 
-<a name="speed-index"></a>
 ### Speed index
 
 Speed Index is a score for the visual completeness of the page, above the fold (what’s visible to the user), over time. It uses video capture to calculate this score. Created by webpagetest.org, it's a score from 0 to infinity that somewhat maps to milliseconds of time for the page to be visible to the user. A lower score is better.
@@ -187,7 +183,6 @@ Sign up for a paid https://speedcurve.com/ account
 npm install sitespeed.io
 ```
 
-<a name="custom-timing-events"></a>
 ### Custom timing events
 
 Custom metrics are millisecond or second timings of how long a specific feature takes to be visible to the user. It's a metric that you determine based on the UI of the project, rather than a metric that applies to any kind of  project. This metric is sometimes called Hero Image timing as companies often use the hero image on their site as the custom event to test with.
@@ -227,7 +222,6 @@ The typical example of a custom metric is Twitter using a "time to first tweet m
 </div>
 ```
 
-<a name="first-meaningful-paint"></a>
 ### First meaningful paint
 
 First meaningful paint is a browser supplied metric that specifies how long it takes for the most meaningful content to be fully rendered on the site. The metric watches all layout events as the page loads, filters by layout events for new layout objects and are above the page fold and then accounts for web font loading. By using these heuristics, the metric is a relatively accurate measure of how long it takes the most important content on the site to full render. This was confirmed by having first meaningful pain tested against speed index for a large number of sites. This metric is closely related with speed index, as both are accurate measurements of a user’s perceived performance.
@@ -253,7 +247,6 @@ The Chrome plugin and CLI testing tool, lighthouse, includes first meaningful pa
 
 The first meaningful paint can be found in statistic in the chrome browser.
 
-<a name="#time-to-interactive"></a>
 ### Time to interactive
 
 The time from where the website becomes complete enough for the user to interact with it. This metric can be calculated through the browser timings API, `domInteractive` or through speed index timings that take into account things like web fonts and the main thread freeing up. The `domInteractive` event in the browser is an inaccurate measurement, as it accounts for all DOM, blocking script and style requests to be complete, which can lead to too high of a number when the user was actually able to interact with the page sooner. Instead, more complex implementations of the metric should be used, such as what’s provided by google chrome lighthouse.
@@ -282,7 +275,6 @@ The chrome plugin and CLI testing tool, lighthouse, includes first interactive a
 
 Time to interactive can be found in statistic in the chrome browser.
 
-<a name="input-latency"></a>
 ### Input latency
 
 Input latency is the amount of time it takes for the app to respond to the users as they interact with it. It’s very different than the other metrics as it doesn’t relate to the initial load and displaying of the page, it’s a metric that is constantly being tracked over time as the user interacts with the site. Due to how input latency works in this way, it’s often best served as a RUM metric, as it’s more accurate to gather information as real users are interacting with the site. That being said, it’s also possible to synthetically test for it. For more information see [Google Chrome Lighthouse's input latency document](https://developers.google.com/web/tools/lighthouse/audits/estimated-input-latency)
@@ -300,7 +292,6 @@ Input latency is the amount of time it takes for the app to respond to the users
 
 The only known way to test input latency right now is through Google chrome lighthouse. This tool is able to keep a watch on the browser thread to know when it’s free after a user clicks on or interacts with the site.
 
-<a name="render-start"></a>
 ### Render start
 
 Render start is the time from the first byte to when the browser draws the first pixel on the screen. It is a synthetic metric, as there’s no way to get the metric from the browser itself. It is closely related to first paint, although is more accurate the first paint due to it being accurately calculated through visual cues. It is also harder to test than first paint as required screen capturing. See [webpagetest discussion](https://www.webpagetest.org/forums/showthread.php?tid=13265) for more.
@@ -320,7 +311,6 @@ Render start tells how long it takes for blocking scripts, style sheets or proce
 
 Render start can be measured along with speed index through web page test or similar tools. For more information, see the speed index how to.
 
-<a name="first-paint"></a>
 ### First paint
 
 First byte is a browser-based metric, supplied through the user timing API and specifies the amount of time from first byte to the first pixel rendered. It is unfortunately inaccurate in different browser implementations and sometimes reports the event too early, before anything has been rendered to the screen. Due to these limitations, it should be used with care.
@@ -341,7 +331,6 @@ The main reason to use first paint over the more accurate render start is it’s
 
 First paint can be found through the Navigation timing API for browsers that support it, such as newest versions of Chrome, Firefox, Internet Explorer. In IE, can be found under `performance.timing` as `msFirstPaint`, [more info from Microsoft](https://msdn.microsoft.com/en-us/library/ff974719(v=vs.85).aspx). In chome it can be found in `window.chrome.loadTimes()` under `firstPaintTime` [more info from Chrome](https://gist.github.com/acdha/a1fd7e91f8cd5c1f6916). It’s also available in most testing tools.
 
-<a name="first-byte"></a>
 ### First byte
 
 First byte is from the time the request for the site went out from the browser to the server to when the first byte from the server comes in. It's measuring the time it takes the browser to respond, so is sometimes called "backend time".
@@ -360,7 +349,6 @@ First byte is from the time the request for the site went out from the browser t
 
 First byte is available in the standardized Navigation timing API for any browsers that support it. It’s under the `responseStart` event. It’s also available in most testing tools.
 
-<a name="total-page-weight"></a>
 ### Total page weight
 
 This metric, also called total requests, is a accrual of all the site's resources weight, in kb or mb of the page, including the HTMl of the page itself. It's useful for setting weight budgets on a site, which are easy to pass to developers and even designers. It doesn't always tell the whole story of performance, as it depends how you load a the requests to determine if it affects performance.
@@ -379,7 +367,6 @@ This metric, also called total requests, is a accrual of all the site's resource
 
 Total resource weight can be calculated with the [Resource timing API](https://developer.mozilla.org/en-US/docs/Web/API/Resource_Timing_API/Using_the_Resource_Timing_API). It would require getting all resources with `performance.getEntriesByType("resource");`, and aggregating the `encodedBodySize` for each. It’s also available in most testing tools.
 
-<a name="number-of-requests"></a>
 ### Number of requests
 
 The total number of requests the page makes while loading resources such as CSS, JS, fonts, images, etc. Gives a sense of how many resources the browser has to download, meaning different requests it has to make. This metric is much less important when the site is served under HTTP/2 due to the new HTTP/2 spec not having limits to how many resources can be downloaded at once. If the site uses multiple domains to serve resources, it's important to consider this when measuring total number of requests, as different domains changes how the browser can process these requests.
@@ -397,7 +384,6 @@ The total number of requests the page makes while loading resources such as CSS,
 
 Total resource weight can be calculated with the [Resource timing API](https://developer.mozilla.org/en-US/docs/Web/API/Resource_Timing_API/Using_the_Resource_Timing_API). It would require getting all resources with `performance.getEntriesByType("resource");`, and aggregating them.
 
-<a name="dom-nodes"></a>
 ### DOM Nodes
 
 The DOM Nodes is the amount of HTML content is on the page. It refers to how many elements or tags (h1, p, span, etc) the page has. While DOM nodes doesn’t affect network performance, it affects the actual browsers performance. A browser will take a long time to parse, process and render a page if it has more nodes.

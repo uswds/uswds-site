@@ -142,7 +142,7 @@ The first step in setting budgets and potentially, goals, is to have an idea of 
 The best way to do comparisons is to run your preferred tool(s) against each chosen comparison site. To do the comparison, your team should choose three to six  comparison sites to run testing against. The tool should be run against one to three pages from each comparison site, based on how different each page is from one another.
 
 - To do this in [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse/), visit one to three pages for each comparison site, run the Lighthouse extension, and export the results. Lighthouse also has a secondary tool, [lighthouse-batch](https://www.npmjs.com/package/lighthouse-batch), to run against multiple URLs to make this process faster.
-- A similar process can be used for Sitespeed.io by running the CLI command for each page of each comparison site. Sitespeed.io also has an option to run against multiple URLs, similar to lighthouse-batch, built into the actual tool.
+- A similar process can be used for [Sitespeed.io](https://www.sitespeed.io/) by running the CLI command for each page of each comparison site. Sitespeed.io also has an option to run against multiple URLs, similar to lighthouse-batch, built into the actual tool.
 
 Once all the data is collected for each page, of each site, you’ll want to compare the data and get an idea of the max and min values for each of your chosen metrics for each site. It’s up to you how you want to do this. One way is to make a Google spreadsheet comparing each metric to each site page.
 

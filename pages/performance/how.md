@@ -74,11 +74,11 @@ Different performance metrics reveal different things about the experience a use
 In the cloud.gov dashboard, we have chosen the following metrics:
 
 - [Speed index](/performance/glossary#speed-index): It’s a great way to compare sites and a good default.
-- Time to interactive:  The dashboard is a very interactive site, so we want information on how easy it is for the user to interact with the site.
-- Input latency:  The dashboard is an SPA, so the time it takes to move between various pages and show various UI is very important.
-- Custom timing events: Viewing app stats is a very important part of the experience.
+- [Time to interactive](/performance/glossary#time-to-interactive):  The dashboard is a very interactive site, so we want information on how easy it is for the user to interact with the site.
+- [Input latency](/performance/glossary#input-latency):  The dashboard is an SPA, so the time it takes to move between various pages and show various UI is very important.
+- [Custom timing events](/performance/glossary#custom-timing-events): Viewing app stats is a very important part of the experience.
 - Frontend / backend time: It’s helpful to see where the bulk of the site’s rendering time goes.
-- Page weight:  The dashboard is an SPA, so page weight can quickly get out of hand if new JavaScript libraries are added.
+- [Page weight](/performance/glossary#page-weight):  The dashboard is an SPA, so page weight can quickly get out of hand if new JavaScript libraries are added.
 - DOM nodes: As a React app, there could be many DOM notes created that we don’t realize, as React is in charge of actual DOM rendering.
 {% endcapture %}
 {% include perf_example.html
@@ -119,10 +119,10 @@ Not all sites require an extensive process to choose performance metrics. Many s
 ##### Default metric recommendations:
 
 - [Speed index](/performance/glossary#speed-index): a direct metric to track how fast a site appears to a user
-Custom Timing Events: a direct metric to track a specific experience on your site
-- Page Weight: an indirect metric to track the total resources size to download for your site
+- [Custom timing events](/performance/glossary#custom-timing-events): a direct metric to track a specific experience on your site
+- [Page weight](/performance/glossary#page-weight): an indirect metric to track the total resources size to download for your site
 
-Focusing on these two metrics provides a good overview of how well your site is performing and allows you to compare your site’s performance to other sites.
+Focusing on these three metrics provides a good overview of how well your site is performing and allows you to compare your site’s performance to other sites.
 
 Based on these metrics, we’ve also recommended tools that are able to track these three metrics.
 ##### Default tool recommendation:
@@ -168,7 +168,7 @@ A good idea for selecting budgets is selecting the fastest performing site for e
 
 This value can also be compared to the recommended values from your tool. Lighthouse provides a target value for each metric. If the budget is far off the target, it might be a good idea to bring it closer to that target. You can also round the numbers up or down to make them easier for the team to remember.
 
-Not all metrics require setting a budget. Any metrics that can’t be compared, such as Custom Timing Events, should not have a budget. Other budgets are simply a yes or no value, such as whether the site is mobile friendly, which doesn’t require a budget. Additionally, it’s up to your team to analyze the data and set budgets for what makes sense.
+Not all metrics require setting a budget. Any metrics that can’t be compared, such as [Custom timing events](/performance/glossary#custom-timing-events), should not have a budget. Other budgets are simply a yes or no value, such as whether the site is mobile friendly, which doesn’t require a budget. Additionally, it’s up to your team to analyze the data and set budgets for what makes sense.
 
 #### Selecting budgets and goals for an existing site
 
@@ -186,20 +186,20 @@ In the cloud.gov dashboard, we set the following budgets and goals:
 - [Speed index](/performance/glossary#speed-index)
   - Budget: 9000ms
   - Goal: 3000ms
-- Input Latency
+- [Input latency](/performance/glossary#input-latency)
   - Budget: 20ms
   - Goal: 20ms
-- Time to Interactive
+- [Time to interactive](/performance/glossary#time-to-interactive)
   - Budget: 9500ms
   - Goal: 4000ms
-- Page Weight
+- [Page weight](/performance/glossary#page-weight)
   - Budget: 2000 KB
   - Goal: 1000 KB
 - DOM Nodes
   - Budget: 1500
   - Goal: 1000
 
-For [Speed index](/performance/glossary#speed-index), Time to Interactive, and Page Weight, our current site’s performance was worse than the minimum 20% value, so these metrics required a budget that was closer to where the current site was- and a future goal of where we wanted it to be. Input latency and DOM nodes were lower than the minimum 20% value, so we allowed ourselves some room to grow here. We also bumped the numbers to round them.
+For [Speed index](/performance/glossary#speed-index), [Time to interactive](/performance/glossary#time-to-interactive), and [Page weight](/performance/glossary#page-weight), our current site’s performance was worse than the minimum 20% value, so these metrics required a budget that was closer to where the current site was- and a future goal of where we wanted it to be. [Input latency](/performance/glossary#input-latency) and DOM nodes were lower than the minimum 20% value, so we allowed ourselves some room to grow here. We also bumped the numbers to round them.
 
   <img src="{{ site.baseurl }}/img/performance/example-budgets_goals.png" alt="cloud.gov example budgets and goals document">
 {% endcapture %}
@@ -257,7 +257,7 @@ Real-time user monitoring (RUM) is the only performance tracking method that all
 
 ##### Cons
 
-- Not possible to measure important metrics, such as [Speed index](/performance/glossary#speed-index), meaningful first paint, input latency
+- Not possible to measure important metrics, such as [Speed index](/performance/glossary#speed-index), meaningful first paint, [input latency](/performance/glossary#input-latency)
 - Requires many users to see useful data, more than 500 uniques per day
 - Requires a backend service running, so is the most expensive option
 

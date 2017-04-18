@@ -79,7 +79,7 @@ In the cloud.gov dashboard, we have chosen the following metrics:
 - [Custom timing events](/performance/glossary#custom-timing-events): Viewing app stats is a very important part of the experience.
 - Frontend / backend time: It’s helpful to see where the bulk of the site’s rendering time goes.
 - [Page weight](/performance/glossary#page-weight):  The dashboard is an SPA, so page weight can quickly get out of hand if new JavaScript libraries are added.
-- DOM nodes: As a React app, there could be many DOM notes created that we don’t realize, as React is in charge of actual DOM rendering.
+- [DOM nodes](/performance/glossary#dom-nodes): As a React app, there could be many DOM notes created that we don’t realize, as React is in charge of actual DOM rendering.
 {% endcapture %}
 {% include perf_example.html
   text=example_metrics
@@ -195,11 +195,11 @@ In the cloud.gov dashboard, we set the following budgets and goals:
 - [Page weight](/performance/glossary#page-weight)
   - Budget: 2000 KB
   - Goal: 1000 KB
-- DOM Nodes
+- [DOM nodes](/performance/glossary#dom-nodes)
   - Budget: 1500
   - Goal: 1000
 
-For [Speed index](/performance/glossary#speed-index), [Time to interactive](/performance/glossary#time-to-interactive), and [Page weight](/performance/glossary#page-weight), our current site’s performance was worse than the minimum 20% value, so these metrics required a budget that was closer to where the current site was- and a future goal of where we wanted it to be. [Input latency](/performance/glossary#input-latency) and DOM nodes were lower than the minimum 20% value, so we allowed ourselves some room to grow here. We also bumped the numbers to round them.
+For [Speed index](/performance/glossary#speed-index), [Time to interactive](/performance/glossary#time-to-interactive), and [Page weight](/performance/glossary#page-weight), our current site’s performance was worse than the minimum 20% value, so these metrics required a budget that was closer to where the current site was- and a future goal of where we wanted it to be. [Input latency](/performance/glossary#input-latency) and [DOM nodes](/performance/glossary#dom-nodes) were lower than the minimum 20% value, so we allowed ourselves some room to grow here. We also bumped the numbers to round them.
 
   <img src="{{ site.baseurl }}/img/performance/example-budgets_goals.png" alt="cloud.gov example budgets and goals document">
 {% endcapture %}

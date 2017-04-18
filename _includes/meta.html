@@ -4,10 +4,16 @@
 {% endif %}
 <title>{{ title }}</title>
 <meta property="og:title" content="{{ title | xml_escape }}">
-{% assign desc = page.description | default: site.description %}
+{% assign desc = page.description
+  | default: page.excerpt
+  | default: site.description
+  | strip_html
+  | strip
+  | xml_escape
+%}
 {% if desc -%}
-<meta name="description" content="{{ desc | xml_escape }}">
-<meta property="og:description" content="{{ desc | xml_escape }}">
+<meta name="description" content="{{ desc }}">
+<meta property="og:description" content="{{ desc }}">
 {% endif %}
 {% assign metas = '' | split: '' %}
 {% for meta in site.meta %}{% assign metas = metas | push: meta[0] %}{% endfor %}

@@ -2,7 +2,9 @@
 title: Introducing Fractal and Federalist
 layout: post
 tags:
-- engineering
+- devops
+- deployment
+- testing
 excerpt: >
   We're adding two powerful, new tools to our development toolbox.
 meta:

@@ -22,7 +22,7 @@ and it generates a web site.
 
 Check out the Standards in Fractal:
 
-[![View the Standards in Fractal]({{ page.meta['og:image'] | relative_url }})][Fractal preview]
+[![View the Standards in Fractal]({{ site.baseurl }}/img/updates/fractal_v1.0.0.png)][Fractal preview]
 
 
 ### Why Fractal?

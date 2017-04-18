@@ -3,6 +3,7 @@ title: How to track performance
 permalink: /performance/how/
 category: Getting started
 layout: styleguide
+lead: A step by step guide on how to pick metrics, tools and track performance on your site.
 ---
 
 ## Introduction

@@ -73,7 +73,7 @@ Different performance metrics reveal different things about the experience a use
 {% capture example_metrics %}
 In the cloud.gov dashboard, we have chosen the following metrics:
 
-- Speed index: It’s a great way to compare sites and a good default.
+- [Speed index](/performance/glossary#speed-index): It’s a great way to compare sites and a good default.
 - Time to interactive:  The dashboard is a very interactive site, so we want information on how easy it is for the user to interact with the site.
 - Input latency:  The dashboard is an SPA, so the time it takes to move between various pages and show various UI is very important.
 - Custom timing events: Viewing app stats is a very important part of the experience.
@@ -92,7 +92,7 @@ Once you’ve decided which metrics your team wants to track, you’re ready to 
 #### Checking chosen metrics
 The first step in choosing a tool is to make sure   the metrics you chose before are reported by the tool. To simplify the researching process, here’s a small helper to determine which tools track which metrics. To use it, select the metrics you plan on using from the drop down lists and view the chart below to see whether it’s available in each tool.
 
-Depending on the metrics you’ve chosen, it might be difficult to find a tool that tracks all of them. If you’re finding that it would take more than three tools to track all your metrics, it might be time to go back to your chosen metrics and take some out that are harder to track. When doing this, it’s usually wise to leave in the **primary direct metrics**, such as **Speed Index**, but take out some of the **secondary direct metrics**, such as **load time** or **first byte**.
+Depending on the metrics you’ve chosen, it might be difficult to find a tool that tracks all of them. If you’re finding that it would take more than three tools to track all your metrics, it might be time to go back to your chosen metrics and take some out that are harder to track. When doing this, it’s usually wise to leave in the **primary direct metrics**, such as [Speed index](/performance/glossary#speed-index), but take out some of the **secondary direct metrics**, such as **load time** or **first byte**.
 
 It is possible to use two different tools to track all your metrics, but not recommended. Using more than one tool will require your team to merge the data from the two separate tools in a way that is parsable and makes sense, which could increase complications down the road.
 
@@ -118,7 +118,7 @@ Not all sites require an extensive process to choose performance metrics. Many s
 
 ##### Default metric recommendations:
 
-- Speed Index: a direct metric to track how fast a site appears to a user
+- [Speed index](/performance/glossary#speed-index): a direct metric to track how fast a site appears to a user
 Custom Timing Events: a direct metric to track a specific experience on your site
 - Page Weight: an indirect metric to track the total resources size to download for your site
 
@@ -127,7 +127,7 @@ Focusing on these two metrics provides a good overview of how well your site is 
 Based on these metrics, we’ve also recommended tools that are able to track these three metrics.
 ##### Default tool recommendation:
 
-[Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse/): a Google Chrome library that can be run in the CLI or as a browser extension. Google Chrome Lighthouse can be run in a CLI, or developer environment. It’s relatively easy to setup, and use, and includes harder to track metrics, like Speed Index. Its only downside is that it requires both the Chrome browser and the ability to install Chrome extensions. If your team is unable to install Chrome or Chrome extensions  then [webpagetest](https://www.webpagetest.org/) can be run in any browser and is a good option.
+[Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse/): a Google Chrome library that can be run in the CLI or as a browser extension. Google Chrome Lighthouse can be run in a CLI, or developer environment. It’s relatively easy to setup, and use, and includes harder to track metrics, like [Speed index](/performance/glossary#speed-index). Its only downside is that it requires both the Chrome browser and the ability to install Chrome extensions. If your team is unable to install Chrome or Chrome extensions  then [webpagetest](https://www.webpagetest.org/) can be run in any browser and is a good option.
 
 Once you have chosen metrics and a tool to track the metrics, the next step is to define your performance goals and potential budgets, or limits, for the project.
 
@@ -162,9 +162,9 @@ Once your team has data on each metric, for each comparison site, and metrics on
 
 A good idea for selecting budgets is selecting the fastest performing site for each metric and taking 20% off the value. We use 20% because a 20% time difference is what’s often required for a user to see a difference in performance. This means we’re looking for our budget to be noticeably better than the best comparable site. For example:
 
-- The Speed Index for our four test sites were: 10993, 5517, 19114, 4085.
+- The [Speed index](/performance/glossary#speed-index) for our four test sites were: 10993, 5517, 19114, 4085.
 - The lowest value, or minimum, is **4085**.
-- We’ll take 20% off that value for a Speed Index budget of **3268**.
+- We’ll take 20% off that value for a [Speed index](/performance/glossary#speed-index) budget of **3268**.
 
 This value can also be compared to the recommended values from your tool. Lighthouse provides a target value for each metric. If the budget is far off the target, it might be a good idea to bring it closer to that target. You can also round the numbers up or down to make them easier for the team to remember.
 
@@ -183,7 +183,7 @@ Again, not all metrics require a budget, it’s up to your team to analyze the d
 {% capture example_comparison %}
 In the cloud.gov dashboard, we set the following budgets and goals:
 
-- Speed Index
+- [Speed index](/performance/glossary#speed-index)
   - Budget: 9000ms
   - Goal: 3000ms
 - Input Latency
@@ -199,7 +199,7 @@ In the cloud.gov dashboard, we set the following budgets and goals:
   - Budget: 1500
   - Goal: 1000
 
-For Speed Index, Time to Interactive, and Page Weight, our current site’s performance was worse than the minimum 20% value, so these metrics required a budget that was closer to where the current site was- and a future goal of where we wanted it to be. Input latency and DOM nodes were lower than the minimum 20% value, so we allowed ourselves some room to grow here. We also bumped the numbers to round them.
+For [Speed index](/performance/glossary#speed-index), Time to Interactive, and Page Weight, our current site’s performance was worse than the minimum 20% value, so these metrics required a budget that was closer to where the current site was- and a future goal of where we wanted it to be. Input latency and DOM nodes were lower than the minimum 20% value, so we allowed ourselves some room to grow here. We also bumped the numbers to round them.
 
   <img src="{{ site.baseurl }}/img/performance/example-budgets_goals.png" alt="cloud.gov example budgets and goals document">
 {% endcapture %}
@@ -257,7 +257,7 @@ Real-time user monitoring (RUM) is the only performance tracking method that all
 
 ##### Cons
 
-- Not possible to measure important metrics, such as Speed Index, meaningful first paint, input latency
+- Not possible to measure important metrics, such as [Speed index](/performance/glossary#speed-index), meaningful first paint, input latency
 - Requires many users to see useful data, more than 500 uniques per day
 - Requires a backend service running, so is the most expensive option
 

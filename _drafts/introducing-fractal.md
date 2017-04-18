@@ -42,7 +42,7 @@ Check out the Standards in Fractal:
 
 1. It supports many of the technologies that we either use already or intend
    to use in the future, such as [Node.js][] (the JavaScript environment in
-   which we write, build, and publish our code) and [Nunjucks] templates--which
+   which we write, build, and publish our code) and [Nunjucks] templates---which
    are in turn compatible with a number other template languages, including
    [Jinja2] for Python and [Twig], the PHP templating engine
    [used by Drupal][Drupal twig].
@@ -77,7 +77,7 @@ CSS and JavaScript.
 [Federalist] is like [GitHub Pages] for government: a platform that
 automatically publishes static sites whenever we push commits to our [GitHub
 repository]. Unlike GitHub Pages, though, Federalist isn't limited to a handful
-of [Jekyll] themes--in fact, we can run the same [Node.js] tools that we use to
+of [Jekyll] themes---in fact, we can run the same [Node.js] tools that we use to
 develop and publish our code on Federalist, including Fractal.
 
 [open source]: https://opensource.org/

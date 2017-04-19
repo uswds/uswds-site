@@ -4,17 +4,25 @@ permalink: /performance/how/
 category: Getting started
 layout: styleguide
 lead: A step by step guide on how to pick metrics, tools and track performance on your site.
+subnav:
+  - text: Introduction
+    href: '#introduction'
+  - text: Choosing metrics & tools
+    href: '#choosing-metrics-and-tools'
+  - text: Setting budgets & goals
+    href: '#setting-budgets-and-goals'
+  - text: Adding site tracking
+    href: '#adding-site-tracking'
 ---
 
+<a name="introduction"></a>
 ## Introduction
 
 Tracking a website’s speed allows a development team to launch and interate on a fast site and makes it easier to incorporate performance into the design and development process. This guide will take you through the steps in tracking performance. It can be used on an existing site or a new site. In this guide, we’ll go over:
 
-1. Picking web performance metrics
-2. Picking tools to track performance
-3. Picking performance budgets and goals
-4. Adding performance tracking to your process
-5. Fixing obvious performance problems
+1. [Picking web performance metrics and tools](#choosing-metrics-and-tools)
+2. [Picking performance budgets and goals](#setting-budgets-and-goals)
+3. [Adding performance tracking to your process](#adding-site-tracking)
 
 To make the guide easier to follow, we’ll be taking an actual site, [dashboard.cloud.gov](https://dashboard.fr.cloud.gov), through the entire process. The dashboard is a user interface for the [cloud.gov platform](https://cloud.gov). The cloud.gov platform allows government agencies to launch servers and sites with ease in the same vein as private products. The examples  will be in a blue box.
 
@@ -65,7 +73,8 @@ What are some **comparable sites** or services to the current product?
 
 Once this information has been defined and written down, the team is ready to start choosing tools and metrics.
 
-## 1. Choosing metrics & tools
+<a name="choosing-metrics-and-tools"></a>
+## Choosing metrics & tools
 
 Deciding which metrics to track is one of the most important parts of performance tracking. Performance metrics are various indicators for how fast the site is performing for your users. This section of the guide will go through the process of choosing the best metrics for your site. Your team can also use our [suggested default metrics and tools](#some-defaults), which work for the majority of sites, if you’d prefer to not go through this process. This information can be found at the end of this section.
 
@@ -134,6 +143,7 @@ Based on these metrics, we’ve also recommended tools that are able to track th
 
 Once you have chosen metrics and a tool to track the metrics, the next step is to define your performance goals and potential budgets, or limits, for the project.
 
+<a name="setting-budgets-and-goals"></a>
 ## Setting budgets & goals
 
 Tracking performance can become a useless endeavor if nothing is ever done with the data. Setting performance budgets and goals ensures the team has a constant view of the site’s performance. **Budgets** are limits you place on the team for performance. A budget can be set for each, or every metric, and will tell the team that the metric can’t go above or below a certain amount. Teams often incorporate their budgets into their build process so if a certain code change goes over budget, then the tests will fail and the code change has to be re-thought. **Goals** are more long-term idealized budgets. Goals are only required for existing sites where the current speed is far below the desired speed. Goals can also be set for each metric, and serve as a prod for the team to keep improving performance.
@@ -212,6 +222,7 @@ For [Speed index](/performance/glossary#speed-index), [Time to interactive](/per
 
 If your metrics have a large gap between the budget and goal, it might be wise to narrow that gap a little in the short term so progress is more easily measured. Having a goal also means the team should be made aware of it and how to get to the goal. We suggest discussing the goal in sprint reviews and retros, or providing “Performance days,” or sprints, where the team can all work together to improve performance.
 
+<a name="adding-site-tracking"></a>
 ## Adding site tracking
 
 Once you’ve determined the metrics to track, the tools to use, and what your performance budgets and goals are, it’s time to setup the systems to do the actual tracking of your metrics. How and when to track is up to your team and workflow. It’s a good idea to have a discussion with the team about the how, when, and what of performance.

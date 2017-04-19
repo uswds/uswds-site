@@ -10,14 +10,17 @@ lead: A step by step guide on how to pick metrics, tools and track performance o
 
 Tracking a website’s speed allows a development team to launch and interate on a fast site and makes it easier to incorporate performance into the design and development process. This guide will take you through the steps in tracking performance. It can be used on an existing site or a new site. In this guide, we’ll go over:
 
+1. Picking web performance metrics
+2. Picking tools to track performance
+3. Picking performance budgets and goals
+4. Adding performance tracking to your process
+5. Fixing obvious performance problems
 
-1. picking web performance metrics,
-2. picking tools to track performance,
-3. picking performance budgets and goals,
-4. adding performance tracking to your process, and
-5. fixing obvious performance problems.
+To make the guide easier to follow, we’ll be taking an actual site, [dashboard.cloud.gov](https://dashboard.fr.cloud.gov), through the entire process. The dashboard is a user interface for the [cloud.gov platform](https://cloud.gov). The cloud.gov platform allows government agencies to launch servers and sites with ease in the same vein as private products. The examples  will be in a blue box.
 
-To make the guide easier to follow, we’ll be taking an actual site, [dashboard.cloud.gov](https://dashboard.fr.cloud.gov), through the entire process. The dashboard.cloud.gov site is a user interface for the [cloud.gov platform](https://cloud.gov). The cloud.gov platform allows government agencies to launch servers and sites with ease in the same vein as private products. The examples  will be in a gray box.
+{% include perf_example.html
+  text='Examples will be displayed in a box like this.'
+%}
 
 ### What you’ll need
 

@@ -3,7 +3,7 @@ permalink: /whats-new/showcase/all/
 layout: styleguide
 title: Standards Powered Sites
 category: What’s new
-lead: Here you can find the latest news and information about the U.S. Web Design Standards. Read our latest release notes, learn about the Standards’ impact in the government, and learn how we conduct user research to continuously improve our product and process.
+lead: Below are a list of website and applications currently using the U.S. Web Design Standards. If your project is currently using the Standards and you do not see it on this list, please feel free to submit a pull request or email the core team at [uswebdesignstandards@gsa.gov](mailto:uswebdesignstandards@gsa.gov).
 ---
-
-{{ site.data.standards-sites.decoded }}
+##Sites using the U.S. Web Design Standards
+{{ site.data.standards-sites.decoded | newline_to_br | split: '<br />' | where_exp: 'line', 'line contains "- ["' | join: '<br />' }}

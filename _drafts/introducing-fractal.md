@@ -6,13 +6,13 @@ tags:
 - deployment
 - testing
 excerpt: >
-  We're adding two powerful, new tools to our development toolbox.
+  We're adding two powerful, new tools to our development workflow.
 meta:
   og:image: /img/updates/fractal_v1.0.0.png
 preview_baseurl: https://federalist.fr.cloud.gov/preview/18f/web-design-standards
 ---
 
-Recently we've added two powerful tools to our development toolbox that allow
+Recently we've added two powerful tools to our development workflow that allow
 us to preview, test, and publish the Standards code more quickly and easily.
 Read more below, or peruse our [GitHub repository] for more info.
 
@@ -45,7 +45,7 @@ and it generates a web site.
 1. **It uses or supports many of the technologies that we use already** (or
    intend to use in the future), such as [Node.js][] (the JavaScript
    environment in which we write, build, and publish our code) and [Nunjucks]
-   templates --- which are in turn compatible with a number other template
+   templates --- which, in turn, are compatible with a number other template
    languages, including [Jinja2] for Python and [Twig], the PHP templating
    engine [used by Drupal][Drupal twig].
 
@@ -80,10 +80,10 @@ Federalist comes in...
 
 ## Federalist
 
-[Federalist] is like [GitHub Pages] for government: a platform that
+[Federalist] is kind of like [GitHub Pages] for government: a platform that
 automatically publishes static sites whenever we push commits to our [GitHub
 repository]. Unlike GitHub Pages, though, Federalist isn't limited to a handful
-of [Jekyll] themes --- in fact, we can run the same [Node.js] tools that we use
+of [Jekyll] themes; In fact, we can run the same [Node.js] tools that we use
 to develop and publish our code on Federalist, including Fractal.
 
 The other killer feature of Federalist is its ability to publish "branch
@@ -96,8 +96,17 @@ pre-release](https://github.com/18F/web-design-standards/releases/tag/v1.1.0-pre
 a spin on the [`release-1.1.0-pre` branch
 preview]({{ page.preview_baseurl }}/release-1.1.0-pre/).
 
-Armed with these predictable URLs, we can add preview links to each of our
-GitHub pull requests, and more quickly collect feedback on proposed changes.
+Equipped with Fractal and the ability to publish each branch to predictable
+URLs, we can add preview links to each of our GitHub pull requests, and more
+quickly collect feedback on [proposed changes][example PR]:
+
+[![A GitHub pull request with Fractal preview link]({{ site.baseurl }}/img/updates/federalist-preview-link.png)][example PR]
+
+
+And, if necessary, we can link directly to [individual]({{ page.preview_baseurl
+}}/release-1.1.0/components/detail/header--basic.html) [components]({{ page.preview_baseurl
+}}/release-1.1.0/components/detail/header--extended.html), or
+even their standalone [previews]().
 
 
 [Drupal twig]: https://www.drupal.org/docs/8/theming/twig
@@ -115,6 +124,7 @@ GitHub pull requests, and more quickly collect feedback on proposed changes.
 [accessibility testing]: https://www.w3.org/wiki/Accessibility_testing
 [cross-browser]: https://www.smashingmagazine.com/2016/02/high-impact-minimal-effort-cross-browser-testing/
 [customizable theme engine]: http://fractal.build/guide/customisation/web-themes
+[example PR]: https://github.com/18F/web-design-standards/pull/1836
 [interface inventory]: http://bradfrost.com/blog/post/conducting-an-interface-inventory/
 [open source]: https://opensource.org/
 [visual regression]: https://visualregressiontesting.com/

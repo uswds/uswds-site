@@ -17,7 +17,7 @@ subnav:
 
 ## Introduction
 
-Tracking a website’s speed allows a development team to launch and interate on a fast site and makes it easier to incorporate performance into the design and development process. This guide will take you through the steps in tracking performance. It can be used on an existing site or a new site. In this guide, we’ll go over:
+Tracking your site's performance is the first step to incorporating performance into your design and development process. This guide will take you through the steps in tracking performance. It can be used on an existing site or a new site. In this guide, we’ll go over:
 
 {% for subnav in page.subnav %}{% unless subnav.text contains 'Introduction' %}
 1. [{{ subnav.text }}]({{ subnav.href }})

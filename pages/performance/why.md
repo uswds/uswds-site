@@ -8,10 +8,10 @@ lead: Performance is an important part of user experience that shouldn’t go un
 
 Through the Web Design Standards’ team’s research around performance, we found government teams that were purposefully deciding not to track performance, as it wasn’t  a priority for them. This section of our Website Performance Guide goes over why tracking performance is always a good idea, for a new or old site. The Guide covers:
 
-- how performance affects conversion rate,
-- why different factors such as network and computer speed must be considered when tracking performance,
-- how users perceive differences in the speed of an interface, and
-- why the measurement of performance over time is important.
+- How performance affects conversion rate
+- Why different factors such as network and computer speed must be considered when tracking performance
+- How users perceive differences in the speed of an interface
+- Why the measurement of performance over time is important
 
 ## Conversion rate
 
@@ -29,9 +29,9 @@ How fast a site loads is often the first indication of what a web experience wil
 
 A common excuse by a team  for not tracking web performance, is that the site appears fast enough for them to use. This ignores a couple of important factors, including what a user might be experiencing in  performance. A site’s performance depends on factors like:
 
-current network speed,
-physical distance between client and server,
-computing capacity of the current device
+- Current network speed
+- Physical distance between client and server
+- Computing capacity of the current device
 
 At 18F, currently, most people working on the sites being built are working on fast laptops, on wired or relatively fast connections within the United States. These factors are all conducive to good performance. user on the site could instead be on a mobile device and mobile network, or on a computer outside of the United States, or on a network that is congested or just plain slow. Being on a network outside the U.S., alone, could mean an extra 150 milliseconds in round trip time to the server due to the longer distance the signal has to travel, meaning seconds more time in loading a page. While wired and wifi networks provide relatively consistent performance, mobile networks can rapidly change from: fast 4G connections, to slow 3G connections, to periods of being unconnected. Smaller devices, such as mobile phones, and older devices don't have as much CPU power to quickly download and process multiple resources. By limiting the measurement of the performance of a site to just a user on a fast connection and device, a huge amount of the site’s user base could be left with a site that’s very difficult to use and interact with, due to poor performance.
 

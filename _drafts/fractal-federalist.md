@@ -107,14 +107,13 @@ publishing just static files and [Jekyll] sites: We can use the same [Node.js]
 tools that we use to develop the Standards to publish our Fractal component
 library as a static site on Federalist.
 
-One of Federalist's other killer features is its ability to publish public
-"branch previews": Whenever we push commits to a branch on GitHub, Federalist
-builds a new version of the site and publishes it at a predictable URL. For
-instance, you can see the current state of our [`develop` branch preview]({{
-page.preview_baseurl }}/develop/), or you can kick the tires fn our
+One of Federalist's other notable features is its ability to publish "branch
+previews": Whenever we push commits to a branch on GitHub, Federalist builds a
+new version of the site and publishes it at a predictable URL. For instance,
+you can see the current state of our [`develop` branch preview]({{
+page.preview_baseurl }}/develop/), or you can kick the tires of our
 [forthcoming version 1.1.0 release][1.1.0 pre-release] on the
-[`release-1.1.0-pre` branch preview]({{ page.preview_baseurl
-}}/release-1.1.0-pre/).
+[`release-1.1.0-pre` branch]({{ page.preview_baseurl }}/release-1.1.0-pre/).
 
 Equipped with Fractal and Federalist's automatically published URLs, we can add
 preview links to each of our GitHub pull requests, and more quickly collect
@@ -166,9 +165,9 @@ cases with "live-coding" tools such as [JSFiddle](https://jsfiddle.net) and
 [CodePen](https://codepen.io). We used JSFiddle to create a [live test
 case](https://jsfiddle.net/47Lpu62z/9/) for [this accordion
 bug](https://github.com/18F/web-design-standards/issues/1762) that references
-the JavaScript from a corresponding bug fix branch in order to demonstrate the
-proposed fix. In this case, the reporter of the issue was able to download that
-same script and confirm the fix on their project!
+the JavaScript from a branch to demonstrate the proposed fix. In this case, the
+reporter of the issue was able to download that same script and confirm the fix
+on their project!
 
 ## What's next
 

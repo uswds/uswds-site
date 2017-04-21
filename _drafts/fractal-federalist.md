@@ -102,10 +102,11 @@ cloud?_ That's where Federalist comes in.
 In a nutshell, [Federalist] is [GitHub Pages] for government: a platform that
 automatically builds and publishes static sites whenever we push commits to our
 [GitHub repository]. Unlike GitHub Pages, though, Federalist isn't limited to
-static files and [Jekyll]: We can use the same [Node.js] tools that we use to
-develop the Standards to publish our Fractal component library on Federalist.
+publishing just static files and [Jekyll] sites: We can use the same [Node.js]
+tools that we use to develop the Standards to publish our Fractal component
+library as a static site on Federalist.
 
-One of Federalist's most important features is its ability to publish public
+One of Federalist's other killer features is its ability to publish public
 "branch previews": Whenever we push commits to a branch on GitHub, Federalist
 builds a new version of the site and publishes it at a predictable URL. For
 instance, you can see the current state of our [`develop` branch preview]({{

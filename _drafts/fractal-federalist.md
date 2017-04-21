@@ -142,9 +142,9 @@ provide more targeted feedback and more quickly address any issues that arise.
 
 Another technique we're exploring is making versioned assets (the Standards
 CSS, JavaScript, images, and fonts) more readily accessible for testing on
-other sites. We're actually doing this already with Federalist, which includes
-the git branch in its preview URLs. This means that you can link directly to
-the [JavaScript]({{ page.preview_baseurl
+other sites. In fact we're already doing this with Federalist, which
+includes the git branch in its preview URLs. This means that you can link
+directly to the [JavaScript]({{ page.preview_baseurl
 }}/release-1.1.0-pre/dist/js/uswds.min.js) or [CSS]({{ page.preview_baseurl
 }}/release-1.1.0-pre/dist/css/uswds.min.css) from our [version 1.1.0
 pre-release][1.1.0 pre-release], assuming that you know the URL format:

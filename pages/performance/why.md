@@ -8,10 +8,10 @@ lead: Performance is an important part of user experience that shouldn’t go un
 
 Through the Web Design Standards’ team’s research around performance, we found government teams that were purposefully deciding not to track performance, as it wasn’t  a priority for them. This section of our Website Performance Guide goes over why tracking performance is always a good idea, for a new or old site. The Guide covers:
 
-how performance affects conversion rate,
-why different factors such as network and computer speed must be considered when tracking performance,
-how users perceive differences in the speed of an interface, and
-why the measurement of performance over time is important.
+- how performance affects conversion rate,
+- why different factors such as network and computer speed must be considered when tracking performance,
+- how users perceive differences in the speed of an interface, and
+- why the measurement of performance over time is important.
 
 ## Conversion rate
 

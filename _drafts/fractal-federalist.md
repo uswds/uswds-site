@@ -15,12 +15,13 @@ github_baseurl: https://github.com/18F/web-design-standards
 ---
 
 <p class="usa-font-lead">
-  Recently we've added two powerful tools to our development workflow that
-  allow us to preview, test, and publish the Standards code more quickly and
-  easily.
+  We've recently added two powerful tools to our development workflow that
+  allow us to preview, test, and publish the Standards code more quickly
+  and easily.
 </p>
 
 ## Fractal
+
 [Fractal] is a powerful and flexible framework for building interactive
 component libraries. It's similar to [Jekyll][] (which we use to publish this
 site) in one key respect: It operates primarily on simple file naming
@@ -31,7 +32,7 @@ formats that it understands, and it will generate a web site automatically.
 
 [![View the Standards in Fractal]({{ site.baseurl }}/img/updates/fractal_v1.0.0.png)]({{ page.preview_baseurl }}/develop/)
 
-So, why Fractal?
+Why Fractal?
 
 * **It's [open source]**, so we didn't have to pay for it (which can be
   time-consuming and difficult to authorize in government), and we can easily

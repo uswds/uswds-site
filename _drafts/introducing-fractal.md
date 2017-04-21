@@ -1,113 +1,179 @@
 ---
 title: Introducing Fractal and Federalist
+author: Shawn Allen
 layout: post
 tags:
 - devops
 - deployment
 - testing
 excerpt: >
-  We're adding two powerful, new tools to our development workflow.
+  We've added two powerful, new tools to our development workflow.
 meta:
   og:image: /img/updates/fractal_v1.0.0.png
 preview_baseurl: https://federalist.fr.cloud.gov/preview/18f/web-design-standards
 ---
 
-Recently we've added two powerful tools to our development workflow that allow
-us to preview, test, and publish the Standards code more quickly and easily.
-Read more below, or peruse our [GitHub repository] for more info.
+<p class="usa-font-lead">
+  Recently we've added two powerful tools to our development workflow that
+  allow us to preview, test, and publish the Standards code more quickly and
+  easily.
+</p>
 
 ## Fractal
 [Fractal] is a powerful and flexible framework for building interactive
-component libraries. At its core, Fractal is very similar to [Jekyll][] (which
-we use on this site) in that it operates on simple file naming conventions:
-organize your files in a specific way, using the formats that it understands,
-and it generates a web site.
+component libraries. It's similar to [Jekyll][] (which we use to publish this
+site) in one key respect: It operates primarily on simple file naming
+conventions. Organize your files in a specific way, using the content and data
+formats that it understands, and it will generate a web site automatically.
 
 **Check out the Standards in Fractal:**
 
 [![View the Standards in Fractal]({{ site.baseurl }}/img/updates/fractal_v1.0.0.png)]({{ page.preview_baseurl }}/develop/)
 
+So, why Fractal?
 
-### Why Fractal?
+* **It's [open source]**, so we didn't have to pay for it (which can be
+  time-consuming and difficult to authorize in government), and we can easily
+  modify it to suit our needs.
 
-1. **It's [open source]**, so we were able to try it for free (paying for
-   services in government can be difficult), and we can modify it to suit our
-   needs.
+* **It's easy to use.** Fractal supports some of the same, user-friendly file
+  formats as Jekyll, such as [Markdown] and [YAML]; and it comes with a handy
+  development server that reloads the site automatically whenever you change a
+  file.
 
-1. **It's easy to use.** Fractal supports some of the same, user-friendly file
-   formats as Jekyll (including [Markdown] and [YAML]), and operates on similar
-   naming conventions.
+* It generates **standalone HTML previews of each component**, which we can use
+  for [accessibility][accessibility testing], [cross-browser], [performance]({{
+  site.baseurl }}/performance/), and [visual regression] testing.
 
-1. It generates **standalone HTML previews of each component**, which we can
-   use for [accessibility][accessibility testing], [cross-browser], and [visual
-   regression] testing.
+* **It uses or supports many of the technologies that we use already** (or
+  intend to use in the future), such as [Node.js][] (the JavaScript environment
+  in which we write, build, and publish our code) and [Nunjucks] templates ---
+  which are compatible with a number other template languages, including
+  [Jinja2] for Python and [Twig], the PHP templating engine [used by
+  Drupal][Drupal twig].
 
-1. **It uses or supports many of the technologies that we use already** (or
-   intend to use in the future), such as [Node.js][] (the JavaScript
-   environment in which we write, build, and publish our code) and [Nunjucks]
-   templates --- which, in turn, are compatible with a number other template
-   languages, including [Jinja2] for Python and [Twig], the PHP templating
-   engine [used by Drupal][Drupal twig].
-
-1. Fractal offers a [customizable theme engine], so we can make it look and
-   feel like the Standards eventually.
-
+* Fractal offers a [customizable theme engine], so we can make it look and feel
+  like the Standards.
 
 ### Thinking in components
 
-Fractal's component-oriented architecture forced us to consider how [our own
-components]({{ site.baseurl }}/components/) really work: What are the moving
-parts of each one, and how do the "variants" of one component (for instance,
-our [basic]({{ site.baseurl }}/components/headers/#basic) and [extended]({{
-site.baseurl }}/components/headers/#extended) headers) differ? The process of
-adapting our components to Fractal produced a basic [interface inventory],
-which tells us where we are right now and gives us the confidence to make
-bigger changes in the future because we can see their impacts on various
-aspects of the Standards.
+Fractal's component-oriented architecture nudged us to consider how each of
+[our own components]({{ site.baseurl }}/components/) really _work_: What are
+its moving parts, and how do its "variants" (for instance, our [basic]({{
+site.baseurl }}/components/headers/#basic) and [extended]({{ site.baseurl
+}}/components/headers/#extended) headers) differ from one another? The process
+of adapting our components to Fractal produced a basic [interface inventory],
+which shows us exactly where we are right now, and the interactive previews
+give us the confidence to make bigger changes because we can immediately see
+their impacts on various aspects of the Standards.
 
-Before Fractal, the only place to test our components was on this site, which
-made working on the Standards difficult: each person needed to clone both of
-our git repositories, `npm link` them together, then manually restart the
-Jekyll server for the site to see changes to the Standards CSS and JavaScript.
-Now we've got a single, predictable URL where we can test each of our
-components and page templates in the code repository, and without any of the
-customizations that we've made here. Finally, each component's suggested markup
-has a _source of truth_.
+### Painless development
 
-But where does these components "live", if not on the site? That's where
-Federalist comes in...
+Fractal has also made it much simpler to work on the Standards' CSS,
+JavaScript, and HTML component templates. Previously, the only "place" that we
+could test our components interactively was on this site, which was tricky to
+set up: Each person needed to clone both of our repositories, `npm link` them
+together, then manually restart the Jekyll server so that it would detect
+changes to the code. Contrast that with the four commands necessary to get up
+and running now (assuming you have [Node.js] version 6 or greater installed):
+
+```sh
+git clone https://github.com/18F/web-design-standards.git
+cd web-design-standards
+npm install
+npm start
+```
+
+Now each of us has a powerful development, testing, and documentation tool at
+our fingertips, which we can use to test every aspect of the Standards code
+without any of the customizations that we've made on this site. Fractal even
+comes with a handy resizable preview window that we can use to test the
+responsiveness of each component or page template without having to resize our
+entire browser window.
+
+**But wait, there's more!** Fractal is an invaluable tool for each of us
+developing the Standards on our own computers, but what if we put it... _on the
+cloud?_ That's where Federalist comes in.
 
 
 ## Federalist
 
-[Federalist] is kind of like [GitHub Pages] for government: a platform that
-automatically publishes static sites whenever we push commits to our [GitHub
-repository]. Unlike GitHub Pages, though, Federalist isn't limited to a handful
-of [Jekyll] themes; In fact, we can run the same [Node.js] tools that we use
-to develop and publish our code on Federalist, including Fractal.
+In a nutshell, [Federalist] is [GitHub Pages] for government: a platform that
+automatically builds and publishes static sites whenever we push commits to our
+[GitHub repository]. Unlike GitHub Pages, though, Federalist isn't limited to
+static files and [Jekyll]: We can use the same [Node.js] tools that we use to
+develop the Standards to publish our Fractal component library on Federalist.
 
-The other killer feature of Federalist is its ability to publish "branch
-previews": whenever we push commits to a branch on GitHub, Federalist builds a
-new version of the site and publishes it at a predictable URL. For instance,
-you can see the current state of the art on our [`develop` branch
-preview]({{ page.preview_baseurl }}/develop/),
-or you can give our [version 1.1.0
-pre-release](https://github.com/18F/web-design-standards/releases/tag/v1.1.0-pre)
-a spin on the [`release-1.1.0-pre` branch
-preview]({{ page.preview_baseurl }}/release-1.1.0-pre/).
+One of Federalist's most important features is its ability to publish public
+"branch previews": Whenever we push commits to a branch on GitHub, Federalist
+builds a new version of the site and publishes it at a predictable URL. For
+instance, you can see the current state of our [`develop` branch preview]({{
+page.preview_baseurl }}/develop/), or you can kick the tires fn our
+[forthcoming version 1.1.0 release][1.1.0 pre-release] on the
+[`release-1.1.0-pre` branch preview]({{ page.preview_baseurl
+}}/release-1.1.0-pre/).
 
-Equipped with Fractal and the ability to publish each branch to predictable
-URLs, we can add preview links to each of our GitHub pull requests, and more
-quickly collect feedback on [proposed changes][example PR]:
+Equipped with Fractal and Federalist's automatically published URLs, we can add
+preview links to each of our GitHub pull requests, and more quickly collect
+feedback on proposed changes. Whenever we create a new pull request, we can
+paste the following template at the top and replace `{BRANCH}` with the pull
+request branch name:
+
+```md
+### [:eyes: Preview on Federalist]({{ page.preview_baseurl }}/{BRANCH}/)
+```
+
+The resulting [pull request][example PR] description looks like this:
 
 [![A GitHub pull request with Fractal preview link]({{ site.baseurl }}/img/updates/federalist-preview-link.png)][example PR]
 
+We can even link directly to [individual]({{ page.preview_baseurl
+}}/release-1.1.0/components/detail/header--basic.html) [components]({{
+page.preview_baseurl }}/release-1.1.0/components/detail/header--extended.html),
+and their [standalone]({{ page.preview_baseurl
+}}/release-1.1.0/components/preview/header--basic.html) [previews]({{
+page.preview_baseurl
+}}/release-1.1.0/components/preview/header--extended.html). These links help us
+provide more targeted feedback and more quickly address any issues that arise.
 
-And, if necessary, we can link directly to [individual]({{ page.preview_baseurl
-}}/release-1.1.0/components/detail/header--basic.html) [components]({{ page.preview_baseurl
-}}/release-1.1.0/components/detail/header--extended.html), or
-even their standalone [previews]().
+### Versioned assets and documentation
 
+Another technique we're exploring is making versioned assets (the Standards
+CSS, JavaScript, images, and fonts) more readily accessible for testing on
+other sites. We're actually doing this already with Federalist, which includes
+the git branch in its preview URLs. This means that you can link directly to
+the [JavaScript]({{ page.preview_baseurl
+}}/release-1.1.0-pre/dist/js/uswds.min.js) or [CSS]({{ page.preview_baseurl
+}}/release-1.1.0-pre/dist/css/uswds.min.css) from our [version 1.1.0
+pre-release][1.1.0 pre-release], assuming that you know the URL format:
+
+```
+{{ page.preview_baseurl }}/release-{VERSION}/dist/{FILENAME}
+```
+
+These URLs will only work for version 1.1.0 and above. You can get the assets
+from previous published releases with [unpkg] using URLs in this format:
+
+```
+https://unpkg.com/uswds@{VERSION}/dist/{FILENAME}
+```
+
+Having these public, predictable URLs makes it easier for us to create test
+cases with "live-coding" tools such as [JSFiddle](https://jsfiddle.net) and
+[CodePen](https://codepen.io). We used JSFiddle to create a [live test
+case](https://jsfiddle.net/47Lpu62z/9/) for [this accordion
+bug](https://github.com/18F/web-design-standards/issues/1762) that references
+the JavaScript from a corresponding bug fix branch in order to demonstrate the
+proposed fix. In this case, the reporter of the issue was able to download that
+same script and confirm the fix on their project!
+
+## What's next
+
+We're working on a reorganization of this site that will incorporate Fractal's
+standalone component previews and code samples so that we don't have to
+maintain them in two different places. We're also looking into augmenting
+Fractal with the capability to modify the templates and data in the browser,
+which will give
 
 [Drupal twig]: https://www.drupal.org/docs/8/theming/twig
 [Federalist]: https://federalist.18f.gov
@@ -128,3 +194,6 @@ even their standalone [previews]().
 [interface inventory]: http://bradfrost.com/blog/post/conducting-an-interface-inventory/
 [open source]: https://opensource.org/
 [visual regression]: https://visualregressiontesting.com/
+[phase 3]: https://github.com/18F/web-design-standards/issues/1862
+[1.1.0 pre-release]: https://github.com/18F/web-design-standards/releases/tag/v1.1.0-pre
+[unpkg]: https://unpkg.com/

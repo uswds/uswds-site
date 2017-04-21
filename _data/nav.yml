@@ -39,7 +39,7 @@ Getting started:
     href: /getting-started/
   - href: /getting-started/developers/
   - href: /getting-started/designers/
-  - href: /performance/
+    # - href: /performance/
     # XXX the Performance subnav is defined in the
     # pages/performance/overview.md front matter
   - href: /getting-started/code-guidelines/

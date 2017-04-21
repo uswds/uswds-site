@@ -19,9 +19,9 @@ subnav:
 
 Tracking a website’s speed allows a development team to launch and interate on a fast site and makes it easier to incorporate performance into the design and development process. This guide will take you through the steps in tracking performance. It can be used on an existing site or a new site. In this guide, we’ll go over:
 
-{% for subnav in page.subnav %}
+{% for subnav in page.subnav %}{% unless subnav.text contains 'Introduction' %}
 1. [{{ subnav.text }}]({{ subnav.href }})
-{% endfor %}
+{% endunless %}{% endfor %}
 
 To make the guide easier to follow, we’ll be taking an actual site, [dashboard.cloud.gov](https://dashboard.fr.cloud.gov), through the entire process. The dashboard is a user interface for the [cloud.gov platform](https://cloud.gov). The cloud.gov platform allows government agencies to launch servers and sites with ease in the same vein as private products. The examples  will be in a blue box.
 

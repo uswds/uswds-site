@@ -168,7 +168,7 @@ order: 02
     <li>
       <button class="usa-button-unstyled"
           aria-expanded="false" aria-controls="collapsible-0">
-        <h5>Merriweather headings, Source Sans Pro Body (robust)</h5>
+        <h5>Merriweather headings, Source Sans Pro body (robust)</h5>
       </button>
       <div id="collapsible-0" class="usa-accordion-content">
 

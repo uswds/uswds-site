@@ -106,13 +106,14 @@ publishing just static files and [Jekyll] sites: We can use the same [Node.js]
 tools that we use to develop the Standards to publish our Fractal component
 library as a static site on Federalist.
 
-One of Federalist's other notable features is its ability to publish "branch
-previews": Whenever we push commits to a branch on GitHub, Federalist builds a
-new version of the site and publishes it at a predictable URL. For instance,
-you can see the current state of our [`develop` branch preview]({{
-page.preview_baseurl }}/develop/), or you can kick the tires of our
-[forthcoming version 1.1.0 release][1.1.0 pre-release] on the
-[`release-1.1.0-pre` branch]({{ page.preview_baseurl }}/release-1.1.0-pre/).
+One of Federalist's most useful features is its ability to publish "branch
+previews": Whenever we push commits to a branch on GitHub, Federalist
+builds a new version of the site and publishes it at a predictable URL. For
+instance, you can see the current state of our [`develop` branch
+preview]({{ page.preview_baseurl }}/develop/), or you can kick the tires of
+our [forthcoming version 1.1.0 release][1.1.0 pre-release] on the
+[`release-1.1.0-pre` branch]({{ page.preview_baseurl
+}}/release-1.1.0-pre/).
 
 Equipped with Fractal and Federalist's automatically published URLs, we can add
 preview links to each of our GitHub pull requests, and more quickly collect

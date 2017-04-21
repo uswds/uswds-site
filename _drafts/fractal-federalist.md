@@ -185,6 +185,7 @@ free to [file an issue on GitHub]({{ page.github_baseurl }}/issues/new),
 [public Slack channel](https://chat.18f.gov/).
 
 
+[1.1.0 pre-release]: {{ page.github_baseurl }}/releases/tag/v1.1.0-pre
 [Drupal twig]: https://www.drupal.org/docs/8/theming/twig
 [Federalist]: https://federalist.18f.gov
 [Fractal]: http://fractal.build
@@ -203,7 +204,6 @@ free to [file an issue on GitHub]({{ page.github_baseurl }}/issues/new),
 [example PR]: {{ page.github_baseurl }}/pull/1836
 [interface inventory]: http://bradfrost.com/blog/post/conducting-an-interface-inventory/
 [open source]: https://opensource.org/
-[visual regression]: https://visualregressiontesting.com/
 [phase 3]: {{ page.github_baseurl }}/issues/1862
-[1.1.0 pre-release]: {{ page.github_baseurl }}/releases/tag/v1.1.0-pre
 [unpkg]: https://unpkg.com/
+[visual regression]: https://visualregressiontesting.com/

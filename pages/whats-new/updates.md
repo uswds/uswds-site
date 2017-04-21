@@ -3,6 +3,8 @@ title: News and updates
 layout: post
 permalink: /whats-new/updates/
 category: What’s new
+subnav:
+  type: posts
 ---
 {% capture lead %}
 From time to time we post product updates, guidance, and interviews

@@ -23,7 +23,7 @@ Tracking a website’s speed allows a development team to launch and interate on
 1. [{{ subnav.text }}]({{ subnav.href }})
 {% endunless %}{% endfor %}
 
-To make the guide easier to follow, we’ll be taking an actual site, [dashboard.cloud.gov](https://dashboard.fr.cloud.gov), through the entire process. The dashboard is a user interface for the [cloud.gov platform](https://cloud.gov). The cloud.gov platform allows government agencies to launch servers and sites with ease in the same vein as private products. The examples  will be in a blue box.
+To make the guide easier to follow, we’ll be taking an actual site, [dashboard.cloud.gov](https://dashboard.fr.cloud.gov), through the entire process. The dashboard is a user interface for the [cloud.gov platform](https://cloud.gov), which allows government agencies to launch servers and sites with ease in the same vein as private products. Throughout this guide, we'll use callouts like the one below to highlight specific examples:
 
 {% include perf_example.html
   text='Examples will be displayed in a box like this.'

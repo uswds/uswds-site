@@ -3,8 +3,7 @@ title: Introducing Fractal and Federalist
 author: Shawn Allen
 layout: post
 tags:
-- devops
-- deployment
+- engineering
 - testing
 excerpt: >
   We've added two powerful, new tools to our development workflow.

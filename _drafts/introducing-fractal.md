@@ -11,6 +11,7 @@ excerpt: >
 meta:
   og:image: /img/updates/fractal_v1.0.0.png
 preview_baseurl: https://federalist.fr.cloud.gov/preview/18f/web-design-standards
+github_baseurl: https://github.com/18F/web-design-standards
 ---
 
 <p class="usa-font-lead">
@@ -171,15 +172,24 @@ same script and confirm the fix on their project!
 
 We're working on a reorganization of this site that will incorporate Fractal's
 standalone component previews and code samples so that we don't have to
-maintain them in two different places. We're also looking into augmenting
-Fractal with the capability to modify the templates and data in the browser,
-which will give
+maintain them in two different places. We're also exploring the possibility of
+enabling live editing capabilities in Fractal so that we can more quickly
+create and share test cases for each of our components. We've also got more
+work to do on fully porting our old component templates over to Fractal and
+better organizing our components, variants, page templates, and related
+documentation.
+
+If you have a suggestion, see something amiss, or just want to say hi, feel
+free to [file an issue on GitHub]({{ page.github_baseurl }}/issues/new),
+[email our mailing list](mailto:uswebdesignstandards@gsa.gov), or join our
+[public Slack channel](https://chat.18f.gov/).
+
 
 [Drupal twig]: https://www.drupal.org/docs/8/theming/twig
 [Federalist]: https://federalist.18f.gov
 [Fractal]: http://fractal.build
 [GitHub Pages]: https://pages.github.com/
-[GitHub repository]: https://github.com/18F/web-design-standards
+[GitHub repository]: {{ page.github_baseurl }}
 [Jekyll]: https://jekyllrb.com/
 [Jinja2]: http://jinja.pocoo.org/
 [Markdown]: https://en.wikipedia.org/wiki/Markdown
@@ -190,10 +200,10 @@ which will give
 [accessibility testing]: https://www.w3.org/wiki/Accessibility_testing
 [cross-browser]: https://www.smashingmagazine.com/2016/02/high-impact-minimal-effort-cross-browser-testing/
 [customizable theme engine]: http://fractal.build/guide/customisation/web-themes
-[example PR]: https://github.com/18F/web-design-standards/pull/1836
+[example PR]: {{ page.github_baseurl }}/pull/1836
 [interface inventory]: http://bradfrost.com/blog/post/conducting-an-interface-inventory/
 [open source]: https://opensource.org/
 [visual regression]: https://visualregressiontesting.com/
-[phase 3]: https://github.com/18F/web-design-standards/issues/1862
-[1.1.0 pre-release]: https://github.com/18F/web-design-standards/releases/tag/v1.1.0-pre
+[phase 3]: {{ page.github_baseurl }}/issues/1862
+[1.1.0 pre-release]: {{ page.github_baseurl }}/releases/tag/v1.1.0-pre
 [unpkg]: https://unpkg.com/

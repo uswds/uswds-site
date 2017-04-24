@@ -146,7 +146,7 @@ includes the git branch in its preview URLs. This means you can link directly
 to the [JavaScript]({{ page.preview_baseurl
 }}/release-1.1.0-pre/dist/js/uswds.min.js) or [CSS]({{ page.preview_baseurl
 }}/release-1.1.0-pre/dist/css/uswds.min.css) from our [version 1.1.0
-pre-release][1.1.0 pre-release], assuming that you know the URL format:
+pre-release][1.1.0 pre-release] once you know the URL format:
 
 ```
 {{ page.preview_baseurl }}/release-{VERSION}/dist/{FILENAME}

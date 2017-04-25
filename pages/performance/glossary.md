@@ -387,9 +387,9 @@ Total resource weight can be calculated with the ([Resource timing API](https://
 
 ### DOM Nodes
 
-The DOM Nodes is the amount of HTML content on the page. It refers to how many elements or tags (h1, p, span, etc.) the page has. While DOM nodes doesn’t affect network performance, it affects the actual browser's performance. A browser will take a long time to parse, process, and render a page if it has more nodes.
+The number of DOM nodes is a rough measure of the amount of HTML content on the page. It refers to how many elements or tags (`<h1>`, `<p>`, `<span>`, etc.) the page contains. While the number of DOM nodes doesn’t affect network performance, it does affect browser performance. A browser will take a longer time to parse, process, and render a page if it has more nodes.
 
-When relating DOM nodes to performance, it’s usually more important for a high upper limit on nodes rather than continually try to improve the amount of nodes. This is because DOM nodes only become a problem for performance when there are a lot of them, upwards of 1,500. Removing a small number of DOM nodes from your site if there are already less than 1,500 won't have a noticeable affect on performance. DOM nodes also relates to input latency—if the browser has too many DOM nodes, it will not be able to keep up with the user’s interactions.
+When relating DOM node count to performance, it’s usually more important to maintain a high upper limit rather than continually trying to reduce the count. This is because DOM nodes only become a problem for performance when there are a lot of them --- specifically, upwards of 1,500. Removing a small number of DOM nodes from your site if there are already fewer than 1,500 won't have a noticeable affect on performance. DOM node count also relates to input latency: If the browser has too many DOM nodes to manage, it will not be able to keep up with the user’s interactions as quickly.
 
 #### Pros
 

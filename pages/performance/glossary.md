@@ -19,11 +19,11 @@ Discussion of web metrics requires splitting up metrics into different classific
 
 ### Direct metrics
 
-Direct metrics are ones that measure the user’s experience of the site, most often through timed measurements of this experience (except for speed index which is a number related to time). You can use direct metrics to: track a live site, help diagnose problems, and indicate how users are experiencing the site.
+Direct metrics are ones that measure the user’s experience of the site, most often through timed measurements of this experience (except for speed index, which is a number related to time). You can use direct metrics to: track a live site, help diagnose problems, and indicate how users are experiencing the site.
 
 #### Primary direct metrics
 
-The best direct metrics most accurately measure the user’s experience with the site, and are called primary direct metrics. The following primary direct metrics do a good job of measuring the user’s actual experience rather than a best guess at their experience. They are:
+The best direct metrics most accurately measure the user’s experience with the site, and are called primary direct metrics. The following primary direct metrics do a good job of measuring the user’s actual experience rather than a best guess at their experience:
 
 - [Custom timing events](#custom-timing-events)
 - [Speed index](#speed-index)
@@ -33,7 +33,7 @@ The best direct metrics most accurately measure the user’s experience with the
 
 #### Secondary direct metrics
 
-Secondary direct metrics drill down into the specific pieces that make up the whole user experience. They help link the problem to the experience and with the performance in general. Secondary direct metrics to potentially use are:
+Secondary direct metrics measure the specific pieces that make up the whole user experience. They help link the problem to the experience and with the performance in general. Some useful secondary direct metrics are:
 
 - [Render start](#render-start)
 - [First paint](#first-paint)
@@ -44,11 +44,11 @@ Secondary direct metrics drill down into the specific pieces that make up the wh
 
 Indirect metrics explain the specific technical reasons for performance problems on a site. They’re not measured in time, but rather measurements that affect time. Indirect metrics can be passed to a development or design team as guidance when building a mockup or feature. They allow the team to build a UI with an indication of how it will perform.
 
-Changes in indirect metrics *can* have an effect on direct metrics but won't always. For instance, there are performance improvements, such as critical CSS, that can improve direct metrics but will have no effect (or even negative effects) on indirect metrics. It's important to use indirect metrics only as an explanation for what's seen with direct metrics.
+Changes to indirect metrics *can* have an effect on direct metrics, but won't always. For instance, there are performance improvements, such as [critical CSS], that can improve direct metrics but will have no effect (even negative) on indirect metrics. It's important to use indirect metrics only as an explanation for what's seen with direct metrics.
 
 #### Primary indirect metrics
 
-The primary indirect metrics are the main metrics that affect page performance. While not a perfect indicator of site speed, they tie closely to the direct metrics so a designer or developer will have an idea of the user’s perceived performance when one of the primary indirect metrics changes. The primary indirect metrics to track are:
+The primary indirect metrics are the key metrics that affect page performance. While not a perfect indicator of site speed, they tie closely to direct metrics, so a designer or developer will have an idea of the user’s perceived performance when one of the primary indirect metrics changes. The primary indirect metrics to track are:
 
 - [Number of requests](#number-of-requests)
 - [Total size (kb, mb) of requests or page weight](#total-page-weight)
@@ -57,7 +57,7 @@ The primary indirect metrics are the main metrics that affect page performance. 
 
 #### Secondary indirect metrics
 
-Secondary indirect metrics are used for diagnosing performance problems or checking that the website doesn’t have any obvious performance anti-patterns. Some of them, such as DNS requests, can be used as a checklist to ensure the site doesn’t go over a normal amount. Others, such as number of DOM elements, can help identify a hard-to-find performance problem. Secondary indirect metrics are DNS requests, which can be used if the website architecture requires more than three different domains to be in use.
+Secondary indirect metrics are used for diagnosing performance problems or checking that the website doesn’t have any obvious performance anti-patterns. Some of them, such as DNS requests, can be used as a checklist to ensure the site doesn’t go over a normal amount. Others, such as number of [DOM nodes](#dom-nodes), can help identify a hard-to-find performance problem. Secondary indirect metrics are DNS requests, which can be used if the website architecture requires more than three different domains to be in use.
 
 ## Types of monitoring methods
 
@@ -403,3 +403,4 @@ When relating DOM node count to performance, it’s usually more important to ma
 
 Getting the number of DOM nodes is very easy, and can be done using the standards DOM JS API in all browsers: `document.getElementsByTagName('*').length`.
 
+[critical CSS]: https://www.smashingmagazine.com/2015/08/understanding-critical-css/

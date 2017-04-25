@@ -11,23 +11,11 @@
 
 <!-- Title and meta description
 ================================================== -->
-{% if page.title %}
-  <title>{{ site.title }} | {{ page.title }}</title>
-  <meta property="og:title" content="{{ site.title | xml_escape }} | {{ page.title | xml_escape }}" />
-{% else %}
-  <title>{{ site.title }}</title>
-  <meta property="og:title" content="{{ site.title | xml_escape }} | {{ site.title | xml_escape }}" />
-{% endif %}
+  {% include meta.html %}
 
-{% if page.description %}
-  <meta name="description" content="{{ page.description | xml_escape }}">
-  <meta property="og:description" content="{{ page.description | xml_escape }}" />
-{% else %}
-  <meta name="description" content="{{ site.description | xml_escape }}">
-  <meta property="og:description" content="{{ site.description | xml_escape }}" />
-{% endif %}
-
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  {% if site.url %}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  {% endif %}
 
 <!--[if lt IE 9]>
   <script src="{{ site.baseurl }}/assets/js/vendor/html5shiv.js"></script>
@@ -36,13 +24,13 @@
 <!-- Favicons
 ================================================== -->
   <!-- 128x128 -->
-  <link rel="shortcut icon" type="image/ico" href="{{ site.baseurl }}/assets/img/favicons/favicon.ico" />
-  <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicons/favicon.png" />
+  <link rel="shortcut icon" type="image/ico" href="{{ site.baseurl }}/assets/img/favicons/favicon.ico">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/img/favicons/favicon.png">
 
   <!-- 192x192, as recommended for Android
   http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
   -->
-  <link rel="icon" type="image/png" sizes="192x192" href="{{ site.baseurl }}/assets/img/favicons/favicon-192.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ site.baseurl }}/assets/img/favicons/favicon-192.png">
 
   <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
   <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/assets/img/favicons/favicon-57.png">

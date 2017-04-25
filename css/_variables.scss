@@ -6,6 +6,8 @@ $font-monospace:    Consolas, Monaco, 'Andale Mono', monospace;
 $font-path:         '../assets/fonts';
 $image-path:        '../assets/img';
 
+$external-href:     '[href^="http"]:not([href*=".gov"])';
+
 $z-nav-secondary: 10;
 
 // Site image path, relative to /css/

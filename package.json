@@ -9,12 +9,11 @@
     "build-js": "gulp javascript",
     "build-img": "gulp images",
     "build-fonts": "gulp fonts",
-    "build-html": "gulp html",
     "clean": "gulp clean-assets",
     "lint": "gulp eslint scss-lint",
     "postinstall": "bundle",
     "prestart": "gulp build",
-    "start": "bundle exec jekyll serve",
+    "start": "bundle exec jekyll serve --drafts --future",
     "test": "npm run lint",
     "watch": "nswatch"
   },
@@ -33,9 +32,6 @@
     ],
     "./node_modules/uswds/src/fonts": [
       "build-fonts"
-    ],
-    "./node_modules/uswds/src/html": [
-      "build-html"
     ],
     "./node_modules/uswds/src/img": [
       "build-img"

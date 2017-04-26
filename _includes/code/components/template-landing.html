@@ -1,9 +1,4 @@
----
-permalink: /page-templates/landing/
-parent_permalink: /page-templates/#landing-page
-title: Marketing template
-layout: demo-page
----
+
   <!doctype html>
   <html lang="en">
     <head>
@@ -11,7 +6,7 @@ layout: demo-page
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Page title</title>
       <!-- Update the link path to where your stylesheet file is located. For example: /path/to/your/assets/css/lib/uswds.min.css -->
-      <link rel="stylesheet" href="{{ "/css/styleguide.css" | prepend: site.baseurl }}">
+      <link rel="stylesheet" href="{{ "/assets/css/styleguide.css" | prepend: site.baseurl }}">
     </head>
     <body class="layout-demo">
     <a class="usa-skipnav" href="#main-content">Skip to main content</a>
@@ -54,7 +49,7 @@ layout: demo-page
         <button class="usa-menu-btn">Menu</button>
         <div class="usa-logo" id="logo">
           <em class="usa-logo-text">
-            <a href="#" title="Home" aria-label="Home">Federal Agency Name</a>
+            <a href="#" accesskey="1" title="Home" aria-label="Home">Federal Agency Name</a>
           </em>
         </div>
       </div>
@@ -145,7 +140,7 @@ layout: demo-page
       </nav>
     </header>
     <div class="usa-overlay"></div>
-    <main id="main-content" tabindex="-1">
+    <main id="main-content">
       <section class="usa-hero">
         <div class="usa-grid">
           <div class="usa-hero-callout usa-section-dark">

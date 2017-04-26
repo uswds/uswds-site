@@ -1,9 +1,4 @@
----
-permalink: /page-templates/landing/
-parent_permalink: /page-templates/#landing-page
-title: Marketing template
-layout: demo-page
----
+
   <!doctype html>
   <html lang="en">
     <head>
@@ -11,11 +6,11 @@ layout: demo-page
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Page title</title>
       <!-- Update the link path to where your stylesheet file is located. For example: /path/to/your/assets/css/lib/uswds.min.css -->
-      <link rel="stylesheet" href="{{ "/css/styleguide.css" | prepend: site.baseurl }}">
+      <link rel="stylesheet" href="{{ "/assets/css/styleguide.css" | prepend: site.baseurl }}">
     </head>
     <body class="layout-demo">
     <a class="usa-skipnav" href="#main-content">Skip to main content</a>
-    <header class="usa-header usa-header-extended" role="banner">
+    <header class="usa-header usa-header-basic" role="banner">
       <!-- Gov banner BEGIN -->
       <div class="usa-banner">
         <div class="usa-accordion">
@@ -50,16 +45,16 @@ layout: demo-page
         </div>
       </div>
       <!-- Gov banner END -->
-      <div class="usa-navbar">
-        <button class="usa-menu-btn">Menu</button>
-        <div class="usa-logo" id="logo">
-          <em class="usa-logo-text">
-            <a href="#" title="Home" aria-label="Home">Federal Agency Name</a>
-          </em>
+      <div class="usa-nav-container">
+        <div class="usa-navbar">
+          <button class="usa-menu-btn">Menu</button>
+          <div class="usa-logo" id="logo">
+            <em class="usa-logo-text">
+              <a href="#" accesskey="1" title="Home" aria-label="Home">Federal <br>Agency Name</a>
+            </em>
+          </div>
         </div>
-      </div>
-      <nav role="navigation" class="usa-nav">
-        <div class="usa-nav-inner">
+        <nav role="navigation" class="usa-nav">
           <button class="usa-nav-close">
             <img src="{{ site.baseurl }}/assets/img/close.svg" alt="close">
           </button>
@@ -102,109 +97,57 @@ layout: demo-page
                 <span>Distinct from each other</span>
               </a>
             </li>
-            <li>
-              <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-3">
-                <span>More details in sub-menus</span>
-              </button>
-              <ul id="sidenav-3" class="usa-nav-submenu">
-                <li>
-                  <a href="#">Page title</a>
-                </li>
-                <li>
-                  <a href="#">Page title</a>
-                </li>
-                <li>
-                  <a href="#">Page title</a>
-                </li>
-              </ul>
-            </li>
           </ul>
-          <div class="usa-nav-secondary">
-            <form class="usa-search usa-search-small js-search-form">
-              <div role="search">
-                <label class="usa-sr-only" for="search-field-small">Search small</label>
-                <input id="search-field-small" type="search" name="search">
-                <button type="submit">
-                  <span class="usa-sr-only">Search</span>
-                </button>
-              </div>
-            </form>
-            <ul class="usa-unstyled-list usa-nav-secondary-links">
-              <li class="js-search-button-container">
-                <button class="usa-header-search-button js-search-button">Search</button>
-              </li>
-              <li>
-                <a href="#">Secondary priority link</a>
-              </li>
-              <li>
-                <a href="#">Easy to comprehend</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+          <form class="usa-search usa-search-small">
+            <div role="search">
+              <label class="usa-sr-only" for="search-field-small">Search small</label>
+              <input id="search-field-small" type="search" name="search">
+              <button type="submit">
+                <span class="usa-sr-only">Search</span>
+              </button>
+            </div>
+          </form>
+        </nav>
+      </div>
     </header>
     <div class="usa-overlay"></div>
-    <main id="main-content" tabindex="-1">
-      <section class="usa-hero">
-        <div class="usa-grid">
-          <div class="usa-hero-callout usa-section-dark">
-            <h2><span class="usa-hero-callout-alt">Hero callout:</span> Call attention to a current priority</h2>
-            <a class="usa-hero-link" href="#">Link to more about that priority</a>
-            <a class="usa-button usa-button-big usa-button-secondary" href="#">Learn about what we do</a>
-          </div>
-        </div>
-      </section>
-      <section class="usa-grid usa-section">
-        <div class="usa-width-one-third">
-          <h2>A tagline highlights your approach.</h2>
-        </div>
-        <div class="usa-width-two-thirds">
-          <p>The tagline should inspire confidence and interest, focusing on the value that your overall approach offers to your audience. Use a heading typeface and keep your tagline to just a few words, and don’t confuse or mystify.</p>
-          <p>Use the right side of the grid to explain the tagline a bit more. What are your goals? How do you do your work? Write in the present tense, and stay brief here. People who are interested can find details on internal pages.</p>
-        </div>
-      </section>
-      <section class="usa-section usa-section-dark usa-graphic_list">
-        <div class="usa-grid usa-graphic_list-row">
-          <div class="usa-width-one-half usa-media_block">
-            <img class="usa-media_block-img"  src="{{ site.baseurl }}/assets/img/circle-124.png" alt="Alt text">
-            <div class="usa-media_block-body">
-              <h3>Graphic headings can vary.</h3>
-              <p>Graphic headings can be used a few different ways, depending on what your landing page is for. Highlight your values, specific program areas, or results.</p>
-            </div>
-          </div>
-          <div class="usa-width-one-half usa-media_block">
-            <img class="usa-media_block-img"  src="{{ site.baseurl }}/assets/img/circle-124.png" alt="Alt text">
-            <div class="usa-media_block-body">
-              <h3>Stick to 6 or fewer words.</h3>
-              <p>Keep body text to about 30. They can be shorter, but try to be somewhat balanced across all four. It creates a clean appearance with good spacing.</p>
-            </div>
-          </div>
-        </div>
-        <div class="usa-grid usa-graphic_list-row">
-          <div class="usa-width-one-half usa-media_block">
-            <img class="usa-media_block-img"  src="{{ site.baseurl }}/assets/img/circle-124.png" alt="Alt text">
-            <div class="usa-media_block-body">
-              <h3>Never highlight anything without a goal.</h3>
-              <p>For anything you want to highlight here, understand what your users know now, and what activity or impression you want from them after they see it.</p>
-            </div>
-          </div>
-          <div class="usa-width-one-half usa-media_block">
-            <img class="usa-media_block-img"  src="{{ site.baseurl }}/assets/img/circle-124.png" alt="Alt text">
-            <div class="usa-media_block-body">
-              <h3>Could also have 2 or 6.</h3>
-              <p>In addition to your goal, find out your users’ goals. What do they want to know or do that supports your mission? Use these headings to show those.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="usa-section">
-        <div class="usa-grid">
-          <h2>Section heading</h2>
-          <p class="usa-font-lead">Everything up to this point should help people understand your agency or project: who you are, your goal or mission, and how you approach it. Use this section to encourage them to act. Describe why they should get in touch here, and use an active verb on the button below. “Get in touch,” “Learn more,” and so on.</p>
-          <a class="usa-button usa-button-big" href="#">Call to action</a>
-        </div>
-      </section>
+    <main class="usa-grid usa-section usa-content usa-layout-docs" id="main-content">
+      <aside class="usa-width-one-fourth usa-layout-docs-sidenav">
+        <ul class="usa-sidenav-list">
+          <li>
+            <a href="javascript:void(0);">Page title</a>
+          </li>
+          <li>
+            <a class="usa-current" href="javascript:void(0);">Page heading (h1)</a>
+            <ul class="usa-sidenav-sub_list">
+              <li>
+                <a href="#section-heading-h2">Section heading (h2)</a>
+              </li>
+              <li>
+                <a href="#section-heading-h3">Subsection heading (h3)</a>
+              </li>
+              <li>
+                <a href="#section-heading-h4">Subsection heading (h4)</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0);">Page title</a>
+          </li>
+        </ul>
+      </aside>
+      <div class="usa-width-three-fourths usa-layout-docs-main_content">
+        <h1>Page heading (h1)</h1>
+        <p class="usa-font-lead">The page heading communicates the main focus of the page. Make your page heading descriptive and keep it succinct.</p>
+        <h2 id="section-heading-h2">Section heading (h2)</h2>
+        <p>These headings introduce, respectively, sections and subsections within your body copy. As you create these headings, follow the same guidelines that you use when writing section headings: Be succinct, descriptive, and precise.</p>
+        <h3 id="section-heading-h3">Subsection heading (h3)</h3>
+        <p>The particulars of your body copy will be determined by the topic of your page. Regardless of topic, it’s a good practice to follow the inverted pyramid structure when writing copy: Begin with the information that’s most important to your users and then present information of less importance.</p>
+        <p>Keep each section and subsection focused — a good approach is to include one theme (topic) per section.</p>
+        <h4 id="section-heading-h4">Subsection heading (h4)</h4>
+        <p>Use the side navigation menu to help your users quickly skip to different sections of your page. The menu is best suited to displaying a hierarchy with one to three levels and, as we mentioned, to display the sub-navigation of a given page.</p>
+        <p>Read the full documentation on our side navigation on the <a href="{{ site.baseurl }}/sidenav/">component page</a>.</p>
+      </div>
     </main>
     <footer class="usa-footer usa-footer-medium" role="contentinfo">
       <div class="usa-grid usa-footer-return-to-top">
@@ -234,7 +177,7 @@ layout: demo-page
       <div class="usa-footer-secondary_section">
         <div class="usa-grid">
           <div class="usa-footer-logo usa-width-one-half">
-            <img class="usa-footer-circle-124" src="{{ site.baseurl }}/assets/img/logo-img.png" alt="Logo image">
+            <img class="usa-footer-logo-img" src="{{ site.baseurl }}/assets/img/logo-img.png" alt="Logo image">
             <h3 class="usa-footer-logo-heading">Name of Agency</h3>
           </div>
           <div class="usa-footer-contact-links usa-width-one-half">

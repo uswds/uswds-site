@@ -212,28 +212,26 @@ The typical example of a custom metric is Twitter using a "time to first tweet."
 
 ### First meaningful paint
 
-First meaningful paint is a browser-supplied metric that specifies how long it takes for the most meaningful content to be fully rendered on the site. The metric watches all layout events as the page loads, filters by layout events for new layout objects above the page fold, and then accounts for web font loading. By using these heuristics, the metric is a relatively accurate measure of how long it takes the most important content on the site to fully render. This was confirmed by having first meaningful paint tested against speed index for a large number of sites. This metric is closely related to speed index, as both are accurate measurements of a user’s perceived performance.
+[First meaningful paint](https://developers.google.com/web/tools/lighthouse/audits/first-meaningful-paint) is a browser-supplied metric that measures how long it takes for the most meaningful content to be fully rendered on the site. Measurement involves watching all layout events as the page loads, filtering by events for new objects above the page fold, and then accounting for web font loading. By using these heuristics, the metric is a relatively accurate measure of how long it takes for the most important content on the site to be fully rendered. This was confirmed by having first meaningful paint tested against speed index for a large number of sites. This metric is closely related to speed index, as both are accurate measurements of a user’s perceived performance.
 
 #### Pros
-
-- Similarly to speed index, it is a very accurate measurement of how the user perceives the performance of a site
+- Similar to speed index, it is a very accurate measurement of how the user perceives the performance of a site.
 - Does not require a complex testing setup or live URL
 
 #### Cons
-
-- Requires the Chrome browser to test
+- Only available in Google Chrome
 
 #### How to measure
 
 First meaningful paint can be measured in one of two ways:
 
-##### Chrome lighthouse tool
+##### Lighthouse
 
-The Chrome plugin and CLI testing tool, Lighthouse, includes first meaningful paint as one of the metrics it tests. To test, run either the plugin on your site or run the CLI with correct options.
+[Lighthouse](https://developers.google.com/web/tools/lighthouse/), the Chrome plugin and command line testing tool, includes first meaningful paint as one of the metrics it tests. To test, run either the plugin on your site or the [CLI tool](https://developers.google.com/web/tools/lighthouse/#cli) with the appropriate options.
 
-##### Chrome web browser metric
+##### Chrome web browser
 
-The first meaningful paint can be found in statistics in the Chrome browser.
+You can measure first meaningful paint timing for any page in the [Chrome DevTools Timeline](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/timeline-tool).
 
 ### Time to interactive
 

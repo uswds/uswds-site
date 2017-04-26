@@ -83,149 +83,136 @@ While synthetic monitoring is the best way to receive consistent performance mon
 
 ## Metrics and implementations
 
-<a name="Onload"></a>
 ### Onload
 
-The load event fires at the end of the document loading process. At this point,
-all of the objects in the document are in the DOM, and all the images, scripts,
-links and sub-frames have finished loading ([source](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onload)).
-
+[The `load` event](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onload) fires at the end of the document loading process. At this point, all of the objects in the document are in the DOM, and all the images, scripts, links, and sub-frames have finished loading.
 
 #### Pros
-
 - Easy to calculate for most pages
-- Can calculate in any environment, and on almost any browser
+- Can be calculated in any environment, on almost any browser
 
 #### Cons
-
-- Is not a valid metric for perceived user performance because the page might be full rendered and active before the onload event fires. For more information see ([Steve Souders, moving beyond window onload](https://www.stevesouders.com/blog/2013/05/13/moving-beyond-window-onload/)).
+- It's not a valid metric for perceived user performance because the page may be fully rendered and active before the `load` event fires. For more information see: [Steve Souders, moving beyond window onload](https://www.stevesouders.com/blog/2013/05/13/moving-beyond-window-onload/).
 
 #### How to measure
-
-Onload can be measured in the browser. The best way is to use a performance measure. This works in all browsers besides IE less than 10, and Safari
+Onload can be measured in the browser with the [performance API](https://developer.mozilla.org/en-US/docs/Web/API/Performance), which is available in all browsers except Internet Explorer 9 or earlier and Safari:
 
 ```
   function accurateMeasurement() {
     setTimeout(function() {
-      win.performance.measure('navigationStart', 'loadEventEnd');
+      window.performance.measure('navigationStart', 'loadEventEnd');
       var measure = window.performance.getEntriesByName('navigationStart');
       console.log('onload', measure[0]);
     }, 0);
   }
   window.addEventListener('load', accurateMeasurement);
 ```
-Another, less accurate way, that will work in all browsers is to use the JavaScriptDate object.
+
+Another, less accurate method that works in all browsers is to use the JavaScript Date object:
 
 ```
-\<script type="text/javascript">
-  var onLoadStart = new Date().getTime();
-  function crossBrowserMeasurement() {
-    setTimeout(function() {
-      var onLoadNow = new Date().getTime();
-      var latency = onLoadNow - onLoadStart;
-      console.log("onload " + latency);
-    }, 0);
-  }
-  window.addEventListener('load', crossBrowserMeasurement);
-
-</script>
+<head>
+  <script type="text/javascript">
+    var onLoadStart = new Date().getTime();
+    function crossBrowserMeasurement() {
+      setTimeout(function() {
+        var onLoadNow = new Date().getTime();
+        var latency = onLoadNow - onLoadStart;
+        console.log("onload " + latency);
+      }, 0);
+    }
+    window.addEventListener('load', crossBrowserMeasurement);
+  </script>
 </head>
-<body>
 ```
 
-This cross-browser method is not recommended, as it has the following limitations:
+**This method is not recommended**, as it has the following limitations:
 
-- The JavaScript Date object is not accurate enough at these levels of precision.
-- It won't play nice with services that use window.performance measurements, so this data will have to be captured somehow.
+- The JavaScript Date object is not accurate enough to measure sub-second performance.
+- It won't work with services that use performance API measurements, so this data will have to be captured separately.
 
 ### Speed index
 
-Speed index is a score for the visual completeness of the page—above the fold (what’s visible to the user)—over time. It uses video capture to calculate this score. Created by webpagetest.org, it's a score from 0 to infinity that somewhat maps to milliseconds of time for the page to be visible to the user. A lower score is better.
+Speed index is a score for the visual completeness of the page — above the fold (what’s visible to the user) — over time. It uses video capture to calculate this score. Created by [WebPagetest], it's a score from 0 to infinity that maps approximately to milliseconds of time before the page is completely visible to the user. A lower score is better.
 
 #### Pros
-
-- Accurately measures user’s perceived performance.
+- Accurately measures user’s perceived performance
 
 #### Cons
-
-- Requires a live URL to test or
-- Requires a webpagetest.org instance or service
+- Requires a live URL to test, or
+- Requires a [WebPagetest] instance or service
 
 #### How to measure
 
-##### Through webpagetest.org
+##### With [WebPagetest]
 
-1. Go to http://www.webpagetest.org/
-2. Enter the live URL of the website to test
-3. Click on the “Advanced options” dropdown
-4. Set the “Number of tests” to be run to at least three. This can be modified based on difference in test results
-5. Click “Start test”
+1. Go to [webpagetest.org][WebPagetest]
+2. Enter the live URL of the website to test.
+3. Click on the “Advanced options” dropdown.
+4. Set the “Number of tests” to be run to at least three. This can be modified based on difference in test results.
+5. Click “Start test”.
 
-##### Through speedcurve.com
+##### With [SpeedCurve]
 
-Sign up for a paid ([Speed Curve account] (https://speedcurve.com/))
+Sign up for a paid [SpeedCurve account](https://speedcurve.com/pricing/).
 
-##### Through setting up a custom webpagetest.org instance
+##### With a custom WebPagetest instance
 
-1. Set up a webpagetest ([AWS instance] (https://www.peterhedenskog.com/blog/2015/07/private-wpt-instance/))
+1. Set up a WebPagetest [AWS instance](https://www.peterhedenskog.com/blog/2015/07/private-wpt-instance/).
+2. Create a `wpt.json` file with the following contents:
 
-2. Create a wpt.json file with the following
+    ```json
+    {
+      "timeout": 200,
+      "location": "ec2-us-west-1:Chrome"
+    }
+    ```
 
-```
-{
-  "timeout": 200,
-  "location": "ec2-us-west-1:Chrome"
-}
-```
+3. Install the [sitespeed.io](https://www.sitespeed.io/) npm module:
 
-3. Install the sitespeed.io npm module
-
-```
-npm install sitespeed.io
-```
+    ```
+    npm install sitespeed.io
+    ```
 
 ### Custom timing events
 
-Custom metrics are millisecond or second timings of how long a specific feature takes to be visible to the user. It's a metric that you determine based on the UI of the project, rather than a metric that applies to any kind of  project. This metric is sometimes called 'hero image timing,' as companies often use the hero image, or large banner, on their site as the custom event to test.
+Custom metrics are millisecond or second timings of how long a specific feature takes to be visible to the user. This metric is sometimes called "hero image timing," as companies often use the hero image, or large banner, on their site as the custom event to test.
 
 The typical example of a custom metric is Twitter using a "time to first tweet." In this case, Twitter measures the time in milliseconds for the first tweet to appear to the user.
 
 #### Pros
-
-- Is very closely related to the organization's goals for the site
-- Is good at testing user perceived performance, such as speed index, but does not require a live URL or complex testing setup
+- Very closely related to the organization's goals for the site
+- Good at testing user perceived performance, such as speed index, but does not require a live URL or complex testing setup
 
 #### Cons
-
 - Challenging to manage on a site where the object being timed changes often, such as a blog
-- Hard to manage on sites with many different page templates.
+- Hard to manage on sites with many different page templates
 
 #### How to measure
-
 1. Pick an event to measure. The event will be more accurate if it includes an image.
 2. Include a performance mark right after the HTML code with the event.
 
-```
-\<!-- important thing to measure -->
-\<div>
+```html
+<!-- important thing to measure -->
+<div>
   <img>
 </div>
-\<script>
-  window.performance.mark(‘important after’)
+<script>
+  window.performance.mark('important after')
 </script>
 ```
 
 3. Also mark the same performance mark on image load to ensure whatever happens latest is the actual measure
 
-```
-\<div>
-  <img onload=”window.performance.mark(‘important image’);”/>
+```html
+<div>
+  <img onload="window.performance.mark('important image');">
 </div>
 ```
 
 ### First meaningful paint
 
-First meaningful paint is a browser-supplied metric that specifies how long it takes for the most meaningful content to be fully rendered on the site. The metric watches all layout events as the page loads, filters by layout events for new layout objects, are above the page fold, and then accounts for web font loading. By using these heuristics, the metric is a relatively accurate measure of how long it takes the most important content on the site to fully render. This was confirmed by having first meaningful paint tested against speed index for a large number of sites. This metric is closely related to speed index, as both are accurate measurements of a user’s perceived performance.
+First meaningful paint is a browser-supplied metric that specifies how long it takes for the most meaningful content to be fully rendered on the site. The metric watches all layout events as the page loads, filters by layout events for new layout objects above the page fold, and then accounts for web font loading. By using these heuristics, the metric is a relatively accurate measure of how long it takes the most important content on the site to fully render. This was confirmed by having first meaningful paint tested against speed index for a large number of sites. This metric is closely related to speed index, as both are accurate measurements of a user’s perceived performance.
 
 #### Pros
 
@@ -404,3 +391,5 @@ When relating DOM node count to performance, it’s usually more important to ma
 Getting the number of DOM nodes is very easy, and can be done using the standards DOM JS API in all browsers: `document.getElementsByTagName('*').length`.
 
 [critical CSS]: https://www.smashingmagazine.com/2015/08/understanding-critical-css/
+[WebPagetest]: https://www.webpagetest.org/
+[SpeedCurve]: https://speedcurve.com/

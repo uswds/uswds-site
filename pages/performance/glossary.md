@@ -61,17 +61,17 @@ Secondary indirect metrics are used for diagnosing performance problems or check
 
 ## Types of monitoring methods
 
-Another important distinction in the various performance metrics is the different ways they can be monitored. The type of monitoring changes how and where certain metrics can be used, so will play into the decisions of choosing metrics.
+Another important distinction among performance metrics is the way in which they can be monitored. The monitoring method changes how and where certain metrics can be used, and will play into the decisions of choosing metrics.
 
 ### Real time monitoring
 
-Real time monitoring is measuring performance of actual users on the site. Custom events, render start, onload, backend, number of requests, number of DOM elements and DOM complete can all be monitored in real time. Speed index cannot because it takes too much time and resources to run on a user's machine.
+Real time monitoring measures the performance of actual users on the site. Custom events, render start, onload, backend, number of requests, the number of DOM elements, and DOM complete events can all be monitored in real time. Speed index cannot because it's too resource-intensive to run on a user's machine.
 
 Real time monitoring allows you to measure actual users' performance while they are interacting with the site, often in real time. This can illustrate specific performance issues and can give accurate information about people's performance across the world, on different devices, and on different network speeds. It requires a live site with enough traffic to yield statistically significant results.
 
-Unless there's significant web traffic, over 200 unique users a day—or traffic based on actual users rather than just stakeholders—real time monitoring may suggest performance numbers that are not representative of the user. This means that  real time monitoring should be used only when the site has the type of traffic that’s expected when the site is live.
+Unless a site gets significant web traffic — over 200 unique users a day, or traffic based on actual users rather than just stakeholders — real time monitoring may suggest performance figures that are not representative of real-world users. This means that you should only use real time monitoring when a site is either live or receiving enough traffic to be representative of its production environment.
 
-Real time monitoring is also subject to various fluctuations and differences in performance numbers. For instance, if a part of your userbase's network is slow for a day, or many of your users are using the site on mobile phones because of a news update, then the performance numbers for that day will be off. This makes it potentially harder to tie code changes and releases to performance changes. It also makes it potentially more difficult to compare your site’s performance with a competitor/similar site as your site might have factors which affect performance that you don’t have control of, such as more global users or more mobile users. This means that the best use case for real time monitoring is to understand your user base. Real time monitoring should be used with caution when doing comparative analysis or tracking performance over time through code changes.
+Real time monitoring is also subject to various fluctuations and differences in performance figures. For instance, if a part of your audience's network is slow for a day, or many of your users are using the site on mobile phones because of a news update, then the performance numbers for that day will be off. This makes it potentially harder to associate code changes and releases with performance changes. It also makes it potentially more difficult to compare your site’s performance with a similar site, as yours might have factors which affect performance and that are out of your control, such as more global or mobile users. This means that the best use case for real time monitoring is to understand your audience. Real time monitoring should be used with caution when doing comparative analysis or tracking performance over time through code changes.
 
 ### Synthetic monitoring
 

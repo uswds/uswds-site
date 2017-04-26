@@ -235,29 +235,31 @@ You can measure first meaningful paint timing for any page in the [Chrome DevToo
 
 ### Time to interactive
 
-The time from when the website becomes complete enough for the user to interact with it. This metric can be calculated through the browser timings API, `domInteractive`, or through speed index timings that take into account things like web fonts and the main thread freeing up. The `domInteractive` event in the browser is an inaccurate measurement, as it accounts for all DOM, blocking script, and style requests to be complete, which can lead to a very large number, when the user was actually able to interact with the page faster. Instead, more complex implementations of the metric should be used, such as what’s provided by Google Chrome Lighthouse.
+Time to interactive measures how long it takes for a site to be available for user interactions. Google defines it as:
 
-First interactive can be nicely paired with speed index or first meaningful paint, as both test when the page is visually complete, while first interactive tests when the page can be modified by the user. The purpose and the content of the site will determine which metric is more important, or could determine if first interactive is needed at all. For example, if the site is a content heavy site, such as a blog, then first interactive may not be necessary, as the user’s only interaction with the site is to read it.
+> [...] the point at which layout has stabilized, key webfonts are visible, and the main thread is available enough to handle user input.
+
+This metric can be calculated through the browser timings API, [the `PerformanceTiming.domInteractive` property](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceTiming/domInteractive), or through speed index timings that take into account asset and script loading and execution that block the main thread. `PerformanceTiming.domInteractive` is an inaccurate measurement because it accounts for all DOM, blocking script, and style requests to be complete. This can lead to very large numbers, even when the user was actually able to interact with the page before all of those tasks completed. For more accurate measurements you should use other implementations of the metric, such as what’s provided by [Lighthouse](https://developers.google.com/web/tools/lighthouse/).
+
+Time to interactive can be nicely paired with speed index or first meaningful paint, as both test when the page is visually complete, while time to interactive tests when the page can be interacted with by the user. The purpose and the content of the site will determine which metric is more important, and may determine whether time to first interactive is even necessary to measure. For example, if the site is heavy on content (such as a blog), then first interactive may not be necessary because the user’s only "interaction" with the site is to read it.
 
 #### Pros
-
-- For some sites, interaction may be more important than everything visually appearing, meaning this is a very important metric
-- Relatively easy to test through Lighthouse
+- For some sites, interaction may be more important than everything visually appearing, meaning this is a very important metric.
+- Relatively easy to test with [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
 
 #### Cons
-
-- Might not help content heavy sites that don’t have interactive elements
-- May not be possible to test in different browsers
+- May not provide useful data for content-heavy sites without interactive elements
+- May not be possible to test in browsers other than Chrome
 
 #### How to measure
 
-Time to first interactive can be measure in one of two ways:
+Time to interactive can be measure in one of two ways:
 
-##### Chrome lighthouse tool
+##### Lighthouse
 
-The Chrome plugin and CLI testing tool, Lighthouse, includes first interactive as one of the metrics it tests. To test, run either the plugin on your site or run the CLI with correct options.
+[Lighthouse](https://developers.google.com/web/tools/lighthouse/), the Chrome plugin and command line testing tool, includes time to interactive as one of the metrics it tests. To test, run either the plugin on your site or the [CLI tool](https://developers.google.com/web/tools/lighthouse/#cli) with the appropriate options.
 
-##### Chrome web browser metric
+##### Chrome web browser
 
 Time to interactive can be found in statistics in the Chrome browser.
 

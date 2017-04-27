@@ -114,6 +114,8 @@ our [forthcoming version 1.1.0 release][1.1.0 pre-release] on the
 [`release-1.1.0-pre` branch]({{ page.preview_baseurl
 }}/release-1.1.0-pre/).
 
+Federalist hosts other websites across government and is open for business. If you are intersted in using it to host and preview your own federal static sites, please [get in touch with that team!](https://docs.google.com/forms/d/1iB8aW7c9r1QH3s8XElQCrnXRGjAiPUYpWG1CMeEqGIo/viewform)
+
 Equipped with Fractal and Federalist's automatically published URLs, we can add
 preview links to each of our GitHub pull requests, and more quickly collect
 feedback on proposed changes. Whenever we create a new pull request, we can
@@ -186,7 +188,7 @@ free to [file an issue on GitHub]({{ page.github_baseurl }}/issues/new),
 
 [1.1.0 pre-release]: {{ page.github_baseurl }}/releases/tag/v1.1.0-pre
 [Drupal twig]: https://www.drupal.org/docs/8/theming/twig
-[Federalist]: https://federalist.18f.gov
+[Federalist]: https://federalist.fr.cloud.gov
 [Fractal]: http://fractal.build
 [GitHub Pages]: https://pages.github.com/
 [GitHub repository]: {{ page.github_baseurl }}

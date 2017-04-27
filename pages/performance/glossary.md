@@ -227,7 +227,7 @@ First meaningful paint can be measured in one of two ways:
 
 ##### Lighthouse
 
-[Lighthouse](https://developers.google.com/web/tools/lighthouse/), the Chrome plugin and command line testing tool, includes first meaningful paint as one of the metrics it tests. To test, run either the plugin on your site or the [CLI tool](https://developers.google.com/web/tools/lighthouse/#cli) with the appropriate options.
+[Lighthouse], the Chrome plugin and command line testing tool, includes first meaningful paint as one of the metrics it tests. To test, run either the plugin on your site or the [CLI tool](https://developers.google.com/web/tools/lighthouse/#cli) with the appropriate options.
 
 ##### Chrome web browser
 
@@ -239,13 +239,13 @@ Time to interactive measures how long it takes for a site to be available for us
 
 > [...] the point at which layout has stabilized, key webfonts are visible, and the main thread is available enough to handle user input.
 
-This metric can be calculated through the browser timings API, [the `PerformanceTiming.domInteractive` property](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceTiming/domInteractive), or through speed index timings that take into account asset and script loading and execution that block the main thread. `PerformanceTiming.domInteractive` is an inaccurate measurement because it accounts for all DOM, blocking script, and style requests to be complete. This can lead to very large numbers, even when the user was actually able to interact with the page before all of those tasks completed. For more accurate measurements you should use other implementations of the metric, such as what’s provided by [Lighthouse](https://developers.google.com/web/tools/lighthouse/).
+This metric can be calculated through the browser timings API, [the `PerformanceTiming.domInteractive` property](https://developer.mozilla.org/en-US/docs/Web/API/PerformanceTiming/domInteractive), or through speed index timings that take into account asset and script loading and execution that block the main thread. `PerformanceTiming.domInteractive` is an inaccurate measurement because it accounts for all DOM, blocking script, and style requests to be complete. This can lead to very large numbers, even when the user was actually able to interact with the page before all of those tasks completed. For more accurate measurements you should use other implementations of the metric, such as what’s provided by [Lighthouse].
 
 Time to interactive can be nicely paired with speed index or first meaningful paint, as both test when the page is visually complete, while time to interactive tests when the page can be interacted with by the user. The purpose and the content of the site will determine which metric is more important, and may determine whether time to first interactive is even necessary to measure. For example, if the site is heavy on content (such as a blog), then first interactive may not be necessary because the user’s only "interaction" with the site is to read it.
 
 #### Pros
 - For some sites, interaction may be more important than everything visually appearing, meaning this is a very important metric.
-- Relatively easy to test with [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
+- Relatively easy to test with [Lighthouse]
 
 #### Cons
 - May not provide useful data for content-heavy sites without interactive elements
@@ -257,7 +257,7 @@ Time to interactive can be measure in one of two ways:
 
 ##### Lighthouse
 
-[Lighthouse](https://developers.google.com/web/tools/lighthouse/), the Chrome plugin and command line testing tool, includes time to interactive as one of the metrics it tests. To test, run either the plugin on your site or the [CLI tool](https://developers.google.com/web/tools/lighthouse/#cli) with the appropriate options.
+[Lighthouse], the Chrome plugin and command line testing tool, includes time to interactive as one of the metrics it tests. To test, run either the plugin on your site or the [CLI tool](https://developers.google.com/web/tools/lighthouse/#cli) with the appropriate options.
 
 ##### Chrome web browser
 
@@ -265,39 +265,39 @@ Time to interactive can be found in statistics in the Chrome browser.
 
 ### Input latency
 
-Input latency is the amount of time it takes for the app to respond to the users as they interact with it. It’s very different than the other metrics, as it doesn’t relate to the initial load and displaying of the page; it’s a metric that is constantly being tracked over time, as the user interacts with the site. Due to how input latency works, it’s often best served as a RUM metric, as it’s more accurate to gather information as real users are interacting with the site. That being said, it’s also possible to synthetically test for it. For more information see ([Google Chrome Lighthouse's input latency document](https://developers.google.com/web/tools/lighthouse/audits/estimated-input-latency)).
+Input latency is the amount of time it takes for the app to respond to the users as they interact with it. It’s very different than the other metrics, as it doesn’t relate to the initial load and displaying of the page; it’s a metric that is constantly being tracked over time, as the user interacts with the site. Due to how input latency works, it’s often best served as a [RUM metric](#real-time-monitoring), as it’s more accurate to gather information as real users are interacting with the site. It’s also possible to test [synthetically](#synthetic-monitoring). For more information, see [Lighthouse's input latency documentation](https://developers.google.com/web/tools/lighthouse/audits/estimated-input-latency).
 
 #### Pros
 
-- Only metric that tests how the site responds over time as the user interacts
+- It's the only metric that tests how the site responds over time as the user interacts with it.
 
 #### Cons
 
-- Harder to quantify with the rest of metrics
-- Hard to get an accurate measurement
+- Harder to quantify with other metrics
+- Hard to measure accurately
 
 #### How to measure
 
-The only known way to test input latency right now is through Google Chrome Lighthouse. This tool is able to keep a watch on the browser thread to know when it’s free after a user clicks on or interacts with the site.
+The only known way to test input latency right now is with [Lighthouse]. This tool is able to keep a watch on the browser thread to know when it’s free after a user clicks on or interacts with the site.
 
 ### Render start
 
-Render start is the time from the first byte to when the browser draws the first pixel on the screen. It is a synthetic metric, as there’s no way to get the metric from the browser itself. It is closely related to first paint, although it's more accurate than first paint as it's accurately calculated through visual cues. It's also harder to test than first paint as it requires screen capturing. See ([webpagetest discussion](https://www.webpagetest.org/forums/showthread.php?tid=13265)) for more.
+Render start is the time from the [first byte](#first-byte) to when the browser draws the first pixel on the screen. It is a [synthetic](#synthetic-monitoring) metric, as there’s no way to get the metric from the browser itself. It is closely related to [first paint](#first-paint), but it's more accurate because it's calculated via visual cues. It's also harder to test than first paint because it requires screen capturing. See [this WebPagetest discussion](https://www.webpagetest.org/forums/showthread.php?tid=13265) for more information.
 
-Render start tells how long it takes for blocking scripts, style sheets, or processes to complete before the browser can start rendering the page. It will point to problems in the request pipeline, such as not deferring or placing JavaScripts to the end of the document, or having too many CSS resources requested up front. It’s generally inferior to the more complete picture metrics, such as speed index and first meaningful paint.
+Render start measures how long it takes for blocking scripts, style sheets, and other processes to complete before the browser can start rendering the page. It will point to problems in the request pipeline, such as not deferring or placing scripts at the end of the document, or requiring too many blocking CSS resources. It’s generally less useful than more complete visual metrics, such as [speed index](#speed-index) and [first paint](#first-paint).
 
 #### Pros
 
-- Is very accurate
+- It's very accurate.
 
 #### Cons
 
-- Requires complex testing setups such as webpagetest
-- Doesn’t include larger picture, such as speed index and meaningful first paint
+- Requires complex testing setups such as [WebPagetest]
+- Isn't as thorough as speed index and meaningful first paint
 
 #### How to measure
 
-Render start can be measured along with speed index through web page test or similar tools. For more information, see the speed index how to.
+Render start can be measured along with speed index with [WebPagetest] or similar tools. For more information, see the [speed index](#speed-index) instructions.
 
 ### First paint
 
@@ -393,3 +393,4 @@ Getting the number of DOM nodes is very easy, and can be done using the standard
 [critical CSS]: https://www.smashingmagazine.com/2015/08/understanding-critical-css/
 [WebPagetest]: https://www.webpagetest.org/
 [SpeedCurve]: https://speedcurve.com/
+[Lighthouse]: https://developers.google.com/web/tools/lighthouse/

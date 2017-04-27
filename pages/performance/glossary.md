@@ -372,7 +372,7 @@ When relating DOM node count to performance, it’s usually more important to ma
 
 #### Cons
 
-- Reducing the number of DOM nodes doesn’t usually have a large impact on performance
+- Reducing the number of DOM nodes doesn’t usually have a large impact on performance.
 
 #### How to measure
 

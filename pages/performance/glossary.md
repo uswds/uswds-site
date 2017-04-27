@@ -22,7 +22,6 @@ Discussion of web metrics requires splitting up metrics into different classific
 Direct metrics are ones that measure the user’s experience of the site, most often through timed measurements of this experience (except for speed index, which is a number related to time). You can use direct metrics to: track a live site, help diagnose problems, and indicate how users are experiencing the site.
 
 #### Primary direct metrics
-
 The best direct metrics most accurately measure the user’s experience with the site, and are called primary direct metrics. The following primary direct metrics do a good job of measuring the user’s actual experience rather than a best guess at their experience:
 
 - [Custom timing events](#custom-timing-events)
@@ -32,7 +31,6 @@ The best direct metrics most accurately measure the user’s experience with the
 - [Input latency](#input-latency)
 
 #### Secondary direct metrics
-
 Secondary direct metrics measure the specific pieces that make up the whole user experience. They help link the problem to the experience and with the performance in general. Some useful secondary direct metrics are:
 
 - [Render start](#render-start)
@@ -47,16 +45,13 @@ Indirect metrics explain the specific technical reasons for performance problems
 Changes to indirect metrics *can* have an effect on direct metrics, but won't always. For instance, there are performance improvements, such as [critical CSS], that can improve direct metrics but will have no effect (even negative) on indirect metrics. It's important to use indirect metrics only as an explanation for what's seen with direct metrics.
 
 #### Primary indirect metrics
-
 The primary indirect metrics are the key metrics that affect page performance. While not a perfect indicator of site speed, they tie closely to direct metrics, so a designer or developer will have an idea of the user’s perceived performance when one of the primary indirect metrics changes. The primary indirect metrics to track are:
 
 - [Number of requests](#number-of-requests)
 - [Total size (kb, mb) of requests or page weight](#total-page-weight)
 - [DOM weight or total DOM nodes](#dom-nodes)
 
-
 #### Secondary indirect metrics
-
 Secondary indirect metrics are used for diagnosing performance problems or checking that the website doesn’t have any obvious performance anti-patterns. Some of them, such as DNS requests, can be used as a checklist to ensure the site doesn’t go over a normal amount. Others, such as number of [DOM nodes](#dom-nodes), can help identify a hard-to-find performance problem. Secondary indirect metrics are DNS requests, which can be used if the website architecture requires more than three different domains to be in use.
 
 ## Types of monitoring methods
@@ -222,15 +217,12 @@ The typical example of a custom metric is Twitter using a "time to first tweet."
 - Only available in Google Chrome
 
 #### How to measure
-
 First meaningful paint can be measured in one of two ways:
 
 ##### Lighthouse
-
 [Lighthouse], the Chrome plugin and command line testing tool, includes first meaningful paint as one of the metrics it tests. To test, run either the plugin on your site or the [CLI tool](https://developers.google.com/web/tools/lighthouse/#cli) with the appropriate options.
 
 ##### Chrome web browser
-
 You can measure first meaningful paint timing for any page in the [Chrome DevTools Timeline](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/timeline-tool).
 
 ### Time to interactive
@@ -252,7 +244,6 @@ Time to interactive can be nicely paired with speed index or first meaningful pa
 - May not be possible to test in browsers other than Chrome
 
 #### How to measure
-
 Time to interactive can be measure in one of two ways:
 
 ##### Lighthouse
@@ -268,16 +259,13 @@ Time to interactive can be found in statistics in the Chrome browser.
 Input latency is the amount of time it takes for the app to respond to the users as they interact with it. It’s very different than the other metrics, as it doesn’t relate to the initial load and displaying of the page; it’s a metric that is constantly being tracked over time, as the user interacts with the site. Due to how input latency works, it’s often best served as a [RUM metric](#real-time-monitoring), as it’s more accurate to gather information as real users are interacting with the site. It’s also possible to test [synthetically](#synthetic-monitoring). For more information, see [Lighthouse's input latency documentation](https://developers.google.com/web/tools/lighthouse/audits/estimated-input-latency).
 
 #### Pros
-
 - It's the only metric that tests how the site responds over time as the user interacts with it.
 
 #### Cons
-
 - Harder to quantify with other metrics
 - Hard to measure accurately
 
 #### How to measure
-
 The only known way to test input latency right now is with [Lighthouse]. This tool is able to keep a watch on the browser thread to know when it’s free after a user clicks on or interacts with the site.
 
 ### Render start
@@ -287,90 +275,90 @@ Render start is the time from the [first byte](#first-byte) to when the browser 
 Render start measures how long it takes for blocking scripts, style sheets, and other processes to complete before the browser can start rendering the page. It will point to problems in the request pipeline, such as not deferring or placing scripts at the end of the document, or requiring too many blocking CSS resources. It’s generally less useful than more complete visual metrics, such as [speed index](#speed-index) and [first paint](#first-paint).
 
 #### Pros
-
 - It's very accurate.
 
 #### Cons
-
 - Requires complex testing setups such as [WebPagetest]
 - Isn't as thorough as speed index and meaningful first paint
 
 #### How to measure
-
 Render start can be measured along with speed index with [WebPagetest] or similar tools. For more information, see the [speed index](#speed-index) instructions.
 
 ### First paint
 
-First paint is a browser-based metric, supplied through the user timing API and specifies the amount of time from first byte to the first pixel rendered. It is unfortunately inaccurate in different browser implementations and sometimes reports the event too early, before anything has been rendered to the screen. Due to these limitations, it should be used with care.
+First paint is a browser-based metric supplied that indicates the amount of time from [first byte](#first-byte) to the first pixel rendered. Unfortunately, this metric is inaccurate in some browser implementations, and some report the event too early, before anything has been rendered to the screen. Due to these limitations, it should be used with care.
 
-The main reason to use first paint over the more accurate render start, is its ability to easily be used in Realtime User Monitoring (RUM), as it’s available in most browsers.
+The main reason to use first paint over the more accurate [render start](#render-start) is its ease of use in [realtime user monitoring](#real-time-monitoring), as it’s available in most browsers.
 
 #### Pros
-
-- Can be used in RUM measuring
+- Can be accessed via realtime user monitoring
 - Very easy to test
 
 #### Cons
-
-- Not accurate cross browser
-- Randomly not accurate at all
+- Not accurate in some browsers
+- Sometimes not accurate at all
 
 #### How to measure
 
-First paint can be found through the Navigation timing API for browsers that support it, such as the newest versions of Chrome, Firefox, Internet Explorer (IE). In IE, it can be found under `performance.timing` as `msFirstPaint`, ([more info from Microsoft](https://msdn.microsoft.com/en-us/library/ff974719(v=vs.85).aspx)). In Chrome it can be found in `window.chrome.loadTimes()` under `firstPaintTime` ([more info from Chrome](https://gist.github.com/acdha/a1fd7e91f8cd5c1f6916)). It’s also available in most testing tools.
+First paint can be accessed via the [performance timing API] in supported browsers, such as recent versions of Chrome, Firefox, and Internet Explorer. In Internet Explorer it can be accessed via `performance.timing.msFirstPaint` ([more info from Microsoft](https://msdn.microsoft.com/en-us/library/ff974719(v=vs.85).aspx)). In Chrome it can be accessed via `window.chrome.loadTimes().firstPaintTime` ([more info from Chrome](https://gist.github.com/acdha/a1fd7e91f8cd5c1f6916)). It’s also available in most testing tools.
 
 ### First byte
 
-First byte is from the time the first request went out from the browser to the server, to when the first byte from the server comes back in. It's measuring the time it takes the browser to respond, so it's sometimes called "backend time."
+First byte is time from which the first request went out from the browser to the server, to when the first byte from the server comes back to the browser. It measures the time it takes the browser to respond, so it's sometimes called "backend time".
 
 #### Pros
-
-- Good way to find problems with backend system when related to performance
-- Pretty easy to test, has availability in most testing tools
+- Good way to find problems with backend systems related to performance
+- Easy to test, and available in most testing tools
 
 #### Cons
-
 - Doesn't tell the big picture, like speed index or meaningful first paint
 - Doesn't get into details of backend response, so might be better served by more backend-related tools rather than browsers
 
 #### How to measure
-
 First byte is available in the standardized Navigation Timing API for any browsers that support it. It’s under the `responseStart` event. It’s also available in most testing tools.
 
 ### Total page weight
 
-This metric, also called total requests, is an accrual of all the site's resources weight, in kb or mb of the page, including the HTMl of the page itself. It's useful for setting weight budgets on a site, which are easy to pass to developers and even designers. It doesn't always tell the whole story of performance, as it depends how you load the requests.
+This metric, also called "total requests", is an accrual of all a site's resource weights, measured in kilobytes or megabytes, including the HTML of the page itself. It's useful for setting weight budgets on a site, which are easy to pass to developers and designers. It doesn't always tell the whole story of performance, as performance often depends on how a page loads those requests.
 
 #### Pros
-
-- Easy metric to understand at all points in the process, from design to development
+- Easy understand at all points in the process, from design to development
 - Easy to test
-- Can be tested with RUM
+- Can be tested with [RUM](#real-time-monitoring)
 
 #### Cons
-
 - Doesn't tell the whole story of site performance, as it also matters how the resources are loaded
 
 #### How to measure
+Total resource weight can be calculated with the [resource timing API](https://developer.mozilla.org/en-US/docs/Web/API/Resource_Timing_API/Using_the_Resource_Timing_API):
 
-Total resource weight can be calculated with the ([Resource timing API](https://developer.mozilla.org/en-US/docs/Web/API/Resource_Timing_API/Using_the_Resource_Timing_API)). It would require getting all resources with `performance.getEntriesByType("resource");`, and aggregating the `encodedBodySize` for each. It’s also available in most testing tools.
+```js
+var pageWeightInBytes = performance.getEntriesByType('resource')
+  .reduce(function(weight, entry) {
+    return weight + entry.encodedBodySize;
+  }, 0);
+```
+
+It’s also available in most testing tools.
 
 ### Number of requests
 
-Number of requests is the total number the page makes while loading resources such as CSS, JS, fonts, images, etc. It gives a sense of how many resources the browser has to download, or the different requests it has to make. This metric is much less important when the site is served under HTTP/2 due to the new HTTP/2 spec not having limits to how many resources can be downloaded at once. If the site uses multiple domains to serve resources, it's important to consider this when measuring total number of requests, as different domains change how the browser can process these requests.
+The number of requests is the total number of requests that the page makes while loading resources such as CSS, JS, fonts, and images. This metric is much less important when the site is served over [HTTP/2] because that protocol does not limit the number of concurrent requests. (Each file is requested individually over HTTP 1.x, and browsers limit the number of concurrent requests from each domain.) It's important to know whether the site requests resources from multiple domains when measuring total number of requests, as the number of domains can impact how the browser can processes these requests in parallel.
 
 #### Pros
-
 - Very easy to test
 
 #### Cons
-
 - Will become obsolete for any site served over HTTP/2
-- Doesn't account for resources being served over multiple domains, so doesn't always tie to performance directly
+- Doesn't account for resources being served over multiple domains, so doesn't always impact performance directly
 
 #### How to measure
 
-Total resource weight can be calculated with the ([Resource timing API](https://developer.mozilla.org/en-US/docs/Web/API/Resource_Timing_API/Using_the_Resource_Timing_API)). It would require getting all resources with `performance.getEntriesByType("resource");`, and aggregating them.
+The number of requests can be obtained with the [resource timing API](https://developer.mozilla.org/en-US/docs/Web/API/Resource_Timing_API/Using_the_Resource_Timing_API):
+
+```js
+var numberOfRequests = performance.getEntriesByType('resource').length;
+```
 
 ### DOM Nodes
 
@@ -379,18 +367,24 @@ The number of DOM nodes is a rough measure of the amount of HTML content on the 
 When relating DOM node count to performance, it’s usually more important to maintain a high upper limit rather than continually trying to reduce the count. This is because DOM nodes only become a problem for performance when there are a lot of them --- specifically, upwards of 1,500. Removing a small number of DOM nodes from your site if there are already fewer than 1,500 won't have a noticeable affect on performance. DOM node count also relates to input latency: If the browser has too many DOM nodes to manage, it will not be able to keep up with the user’s interactions as quickly.
 
 #### Pros
-
-- Can be tested with RUM
+- Easy to test
+- Can be tested with [RUM](#real-time-monitoring)
 
 #### Cons
 
-- Reducing DOM nodes usually doesn’t have a large affect on performance
+- Reducing the number of DOM nodes doesn’t usually have a large impact on performance
 
 #### How to measure
 
-Getting the number of DOM nodes is very easy, and can be done using the standards DOM JS API in all browsers: `document.getElementsByTagName('*').length`.
+You can access the number of DOM nodes on any page via the DOM API in all browsers:
+
+```js
+var numberOfElements = document.getElementsByTagName('*').length;
+```
 
 [critical CSS]: https://www.smashingmagazine.com/2015/08/understanding-critical-css/
 [WebPagetest]: https://www.webpagetest.org/
 [SpeedCurve]: https://speedcurve.com/
 [Lighthouse]: https://developers.google.com/web/tools/lighthouse/
+[performance timing API]: https://developer.mozilla.org/en-US/docs/Web/API/PerformanceTiming
+[HTTP/2]: https://en.wikipedia.org/wiki/HTTP/2

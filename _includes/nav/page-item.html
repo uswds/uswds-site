@@ -10,6 +10,8 @@
       {% assign _text_key = _links.text %}
       {% assign _data_key = _links.data %}
       {% assign _links = site.data[_data_key] %}
+    {% elsif _links.type %}
+      {% assign _links = nil %}
     {% endif %}
     {% if _links -%}
     <ul class="{{ include.subnav_class | default: 'usa-sidenav-sub_list' }}">{%

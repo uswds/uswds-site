@@ -313,11 +313,8 @@ body {
     color: $color-gray-dark;
   }
 
-  &[href^="http:"]:not([href*="standards.com"]),
-  &[href^="https:"]:not([href*="standards.com"]) {
-    &::after {
-      display: none;
-    }
+  &#{$external-href}::after {
+    display: none;
   }
 }
 
@@ -1173,26 +1170,21 @@ $font-light: 300;
 
 // External link styles
 
-[href^="http:"]:not([href*="standards.com"]),
-[href^="https:"]:not([href*="standards.com"]) {
+#{$external-href} {
   @include external-link(external-link, external-link-hover);
 }
 
 .usa-button,
 .link-download,
 .media_link {
-  &[href^="http:"]:not([href*="standards.com"]),
-  &[href^="https:"]:not([href*="standards.com"]) {
-    &::after {
-      display: none;
-    }
+  &#{$external-href}::after {
+    display: none;
   }
 }
 
 .logo-links,
 .usa-disclaimer-stage {
-  [href^="http:"]:not([href*="standards.com"]),
-  [href^="https:"]:not([href*="standards.com"]) {
+  #{$external-href} {
     &::after {
       display: none;
     }

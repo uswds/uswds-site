@@ -81,7 +81,7 @@ We will recruit users of your product -- usually no more than 20 -- and observe 
 
 ### Web Analytics Setup
 
-With the enrollment into the Data Analytics Platform (DAP) being part of the Policies for  <a href="https://www.whitehouse.gov/sites/default/files/omb/memoranda/2017/m-17-06.pdf">Federal Agency Public Websites and Digital Services</a> memo, we would like to provide a service to help digital services meet this requirement. Regardless of whether a team is using the USWDS or not, the integration into DAP should be consistent across the federal government and we have the tools and knowledge to help.
+With the enrollment into the Data Analytics Platform (DAP) being part of the Policies for  <a href="https://www.whitehouse.gov/sites/default/files/omb/memoranda/2017/m-17-06.pdf">Federal Agency Public Websites and Digital Services</a> memo, we would like to provide a service to help digital services meet this requirement. Regardless of whether a team is using the Standards or not, the integration into DAP should be consistent across the federal government and we have the tools and knowledge to help.
 
 #### Package 1 - DAP Integration
 We will work with digital services teams to put the basic code needed into place for passing their web analytics into the DAP platform. This is a lightweight service meant to assist teams that don’t have the necessary skills on hand to meet the policies requirements.

@@ -22,7 +22,8 @@ Have suggestions for a new feature or bug fix? [Open an issue](https://github.co
 
 <p class="site-subheading">{{ release.published_at | date: "%B %d, %Y" }}</p>
 
-{{ release.body | markdownify }}
+{% assign id_replace = 'id="v%-' | replace: '%', release.name %}
+{{ release.body | markdownify | replace: 'id="', id_replace }}
 
-<hr />
+<hr>
 {% endfor %}

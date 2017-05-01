@@ -5,6 +5,6 @@ category: Getting started
 layout: styleguide
 ---
 
-Web Performance is the speed at which a website loads and appears in your browser when you type in the URL. A site’s performance can be good or bad. Good performance means your users can interact with your site easily, while bad performance can cause your site to not open or your users to leave without taking any action.
+Web performance generally refers to how quickly a URL loads and appears in a web browser. Sites are considered to have good performance if they load quickly and allow users to easily interact with them. Sites with poor performance typically have slow, or halting, page loads and interaction delays, which may prevent users from accessing your content or using your web applications.
 
-Web performance is affected by many factors, such as: the speed of the network the site’s computer- or your computer- is on; the physical distance between your computer and the site’s server; how modern your computer/laptop/smart phone is. People who build and manage websites track web performance to see if they can improve the number of users completing actions on their site.
+Many factors affect web performance, such as: network speeds, physical distances between server and client, relative speeds of the server and client computers, and — as we've chosen to focus on in this guide — specific technical aspects of the site itself.

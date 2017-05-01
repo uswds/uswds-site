@@ -1,5 +1,6 @@
 // Bring in individual Gulp configurations
 //
+require( './config/gulp/a11y' );
 require( './config/gulp/build' );
 require( './config/gulp/flags' );
 require( './config/gulp/fonts' );

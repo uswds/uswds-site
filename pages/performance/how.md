@@ -31,7 +31,7 @@ To make the guide easier to follow, we’ll be taking an actual site, [dashboard
 
 ### What you’ll need
 
-Before starting this guide, it’s important to define some basic information, which will make it easier to choose metrics and tools. If the site is in an early discovery mode, and the code architecture is still unknown, it might be too early to use this guide to track web performance. Tracking performance requires that the technology and architecture for the site is defined. Attempt to define, as best as possible, the following information:
+Before starting this guide, it’s important to define some basic information, which will make it easier to choose metrics and tools. If the site is in an early discovery mode, and your team is unable to answer the majority of the questions below because various aspects of the site architecture and content haven't been decided yet, it may be too early for this guide. Attempt to define, as best as possible, the following information:
 
 Is there an aspect of your site’s experience that’s **more important** than the rest? An example is, “How fast does a tweet show up on Twitter?”
 

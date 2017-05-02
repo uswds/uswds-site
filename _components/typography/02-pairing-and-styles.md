@@ -12,10 +12,10 @@ order: 02
   <ul class="usa-unstyled-list">
     <li>
       <button class="usa-button-unstyled"
-          aria-expanded="false" aria-controls="collapsible-0">
+          aria-expanded="false" aria-controls="font-pairing1-docs">
         <h5>Default: Merriweather headings, Source Sans Pro body (lite)</h5>
       </button>
-      <div id="collapsible-0" class="usa-accordion-content">
+      <div id="font-pairing1-docs" class="usa-accordion-content">
 
         <div class="usa-grid-full">
           <div class="usa-width-two-thirds">
@@ -167,10 +167,10 @@ order: 02
   <ul class="usa-unstyled-list">
     <li>
       <button class="usa-button-unstyled"
-          aria-expanded="false" aria-controls="collapsible-0">
+          aria-expanded="false" aria-controls="font-pairing2-docs">
         <h5>Merriweather headings, Source Sans Pro body (robust)</h5>
       </button>
-      <div id="collapsible-0" class="usa-accordion-content">
+      <div id="font-pairing2-docs" class="usa-accordion-content">
 
         <div class="usa-grid-full">
           <div class="usa-width-two-thirds">
@@ -344,10 +344,10 @@ order: 02
   <ul class="usa-unstyled-list">
     <li>
       <button class="usa-button-unstyled"
-          aria-expanded="false" aria-controls="collapsible-0">
+          aria-expanded="false" aria-controls="font-pairing3-docs">
         <h5>Merriweather headings and body</h5>
       </button>
-      <div id="collapsible-0" class="usa-accordion-content">
+      <div id="font-pairing3-docs" class="usa-accordion-content">
 
         <div class="usa-grid-full">
           <div class="usa-width-two-thirds">
@@ -521,10 +521,10 @@ order: 02
   <ul class="usa-unstyled-list">
     <li>
       <button class="usa-button-unstyled"
-          aria-expanded="false" aria-controls="collapsible-0">
+          aria-expanded="false" aria-controls="font-pairing4-docs">
         <h5>Source Sans Pro headings, Merriweather body</h5>
       </button>
-      <div id="collapsible-0" class="usa-accordion-content">
+      <div id="font-pairing4-docs" class="usa-accordion-content">
 
         <div class="usa-grid-full">
           <div class="usa-width-two-thirds">
@@ -681,10 +681,10 @@ order: 02
   <ul class="usa-unstyled-list">
     <li>
       <button class="usa-button-unstyled"
-          aria-expanded="false" aria-controls="collapsible-0">
+          aria-expanded="false" aria-controls="font-pairing5-docs">
         <h5>Source Sans Pro headings and body</h5>
       </button>
-      <div id="collapsible-0" class="usa-accordion-content">
+      <div id="font-pairing5-docs" class="usa-accordion-content">
 
         <div class="usa-grid-full">
           <div class="usa-width-two-thirds">

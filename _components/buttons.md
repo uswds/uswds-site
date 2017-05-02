@@ -13,10 +13,10 @@ lead: Use buttons to signal actions.
 {% include code/accordion.html component="buttons" %}
 <div class="usa-accordion-bordered">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
+      aria-expanded="true" aria-controls="accordion-bordered-docs">
     Documentation
   </button>
-  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+  <div id="accordion-bordered-docs" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Implementation</h4>
     <p>The examples demonstrate how to use button elements. To use a button style on an anchor link, add the <code>usa-button</code> class to your anchor link.</p>
     <p>To use a different style button on your anchor link, add the special button class in addition to <code>usa-button</code>:</p>

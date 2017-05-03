@@ -1,6 +1,6 @@
 # Site settings
 title:  U.S. Web Design Standards
-version: 1.0.0
+version: 1.1.0
 google_analytics_ua: UA-48605964-43
 
 # this is for pages that don't have a permalink (primarily posts)

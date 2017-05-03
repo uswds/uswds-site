@@ -98,7 +98,7 @@ cloud?_ That's where Federalist comes in.
 
 ## Federalist
 
-In a nutshell, [Federalist] is [GitHub Pages] for government: a platform that
+In a nutshell, [Federalist] is an open source [GitHub Pages] for government: a platform that
 automatically builds and publishes static sites whenever we push commits to our
 [GitHub repository]. Unlike GitHub Pages, though, Federalist isn't limited to
 publishing just static files and [Jekyll] sites: We can use the same [Node.js]

@@ -13,10 +13,10 @@ order: 03
 {% include code/accordion.html component="typesetting" %}
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
+      aria-expanded="true" aria-controls="typesetting-docs">
     Documentation
   </button>
-  <div id="collapsible-0" class="usa-accordion-content">
+  <div id="typesetting-docs" class="usa-accordion-content">
     <h4 class="usa-heading">Implementation</h4>
     <p>To get the max-width on body text, add the class <code>usa-content</code> to your document. Use at the specificity that best suits your project's needs.</p>
     <p>Lists must use <code>usa-content-list</code> for the above.</p>

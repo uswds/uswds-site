@@ -13,10 +13,10 @@ lead: "Hierarchical, vertical navigation to place at the side of a page. Note: W
 {% include code/accordion.html component="sidenav" %}
 <div class="usa-accordion-bordered">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
+      aria-expanded="true" aria-controls="sidenav-docs">
     Documentation
   </button>
-  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+  <div id="sidenav-docs" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>Ensure the side navigational system is keyboard accessible. Users should be able to tab through each link.</li>

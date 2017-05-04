@@ -13,10 +13,10 @@ lead: Tables show tabular data in columns and rows.
 {% include code/accordion.html component="tables" %}
 <div class="usa-accordion-bordered">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
+      aria-expanded="true" aria-controls="table-docs">
     Documentation
   </button>
-  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+  <div id="table-docs" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>Simple tables can have two levels of headers. Each header cell should have <code>scope=<wbr>"col"</code> or <code>scope=<wbr>"row"</code>.</li>

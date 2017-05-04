@@ -98,7 +98,7 @@ cloud?_ That's where Federalist comes in.
 
 ## Federalist
 
-In a nutshell, [Federalist] is [GitHub Pages] for government: a platform that
+In a nutshell, [Federalist] is an open source [GitHub Pages] for government: a platform that
 automatically builds and publishes static sites whenever we push commits to our
 [GitHub repository]. Unlike GitHub Pages, though, Federalist isn't limited to
 publishing just static files and [Jekyll] sites: We can use the same [Node.js]
@@ -114,7 +114,7 @@ our [forthcoming version 1.1.0 release][1.1.0 pre-release] on the
 [`release-1.1.0-pre` branch]({{ page.preview_baseurl
 }}/release-1.1.0-pre/).
 
-Federalist hosts other websites across government and is open for business. If you are intersted in using it to host and preview your own federal static sites, please [get in touch with that team!](https://docs.google.com/forms/d/1iB8aW7c9r1QH3s8XElQCrnXRGjAiPUYpWG1CMeEqGIo/viewform)
+Federalist hosts other websites across government and is open for business. If you're interested in using it to host and preview your own federal static sites, please [get in touch with that team!](https://docs.google.com/forms/d/1iB8aW7c9r1QH3s8XElQCrnXRGjAiPUYpWG1CMeEqGIo/viewform)
 
 Equipped with Fractal and Federalist's automatically published URLs, we can add
 preview links to each of our GitHub pull requests, and more quickly collect

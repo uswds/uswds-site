@@ -9,10 +9,10 @@ lead: A standard template for collecting a person’s full name
 {% include code/accordion.html component="name-form" %}
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
+      aria-expanded="true" aria-controls="name-form-docs">
     Documentation
   </button>
-  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+  <div id="name-form-docs" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>As you customize this form template, ensure it continues to follow the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines for form templates</a> and the <a href="{{ site.baseurl }}/form-controls/">accessibility guidelines for form controls</a>.</li>

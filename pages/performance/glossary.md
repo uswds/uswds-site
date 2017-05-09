@@ -345,6 +345,8 @@ It’s also available in most testing tools.
 
 The number of requests is the total number of requests that the page makes while loading resources such as CSS, JS, fonts, and images. This metric is much less important when the site is served over [HTTP/2] because that protocol does not limit the number of concurrent requests. (Each file is requested individually over HTTP 1.x, and browsers limit the number of concurrent requests from each domain.) It's important to know whether the site requests resources from multiple domains when measuring total number of requests, as the number of domains can impact how the browser can processes these requests in parallel.
 
+Note: The number of requests matters much less if your site is being served over HTTP/2. For more information on HTTP/2 and it's implications on site speed, [see our guide](/performance/http2).
+
 #### Pros
 - Very easy to test
 

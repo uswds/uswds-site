@@ -1,13 +1,13 @@
 ---
 permalink: /
 layout: landing
-title: Announcing version 1.0
+title: Announcing version 1.1
 hero:
-  callout: Announcing version 1.0
-  content: After a year and a half of development and user research, we’re officially launching version 1.0 of the U.S. Web Design Standards. Please explore the site, read our research and documentation, use our code, and join the community!
+  callout: About the Standards
+  content: The Web Design Standards are a library of design guidelines and code to help government developers and designers quickly create trustworthy, accessible, and consistent digital government services.
   button:
-    href: whats-new/releases/#version-1-0-0
-    text: Read more about this release
+    href: whats-new/updates/2017/04/26/fractal-federalist/
+    text: Read about the latest release
 ---
 
 ## New training and services

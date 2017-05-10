@@ -5,7 +5,7 @@ category: Getting started
 layout: styleguide
 ---
 
-> ## TLDR:
+> ## TL;DR:
 > 
 > If possible, enable HTTP/2 support on your server for dramatic performance gains. When using HTTP/2:
 > 
@@ -22,7 +22,7 @@ HTTP/2’s biggest difference is its transmission of data. Rather than sending d
 
 Multiplexing is HTTP/2’s ability to send data back and forth in parallel over one existing open connection. In HTTP 1.1 each resource (with a unique URL) requires a separate connection, and most clients limit the number of simultaneous connections to each domain. Additionally, if the server isn’t configured to keep connections open after each request, each resource must go through a multi-step handshake process before transmission, further increasing its download time. HTTP/2 changes this by allowing multiple resources to be downloaded in parallel over a single connection.
 
-Another prominent feature of HTTP/2 is that, at least in practice, it strengthens security because browsers have only implemented HTTP/2 support for sites that are served over HTTPS. While the HTTPS handshake can add some loading time, that extra time can be reduced through HTTPS configuration (more later) and regardless is not significant enough to warrant not using HTTP/2, considering the other performance gains.
+Another prominent feature of HTTP/2 is that, at least in practice, it strengthens security because browsers have only implemented HTTP/2 support for sites that are served over HTTPS. While the HTTPS handshake can add some loading time, you can reduce some of that by [configuring HTTPS](#how-to-speed-up-https). Regardless, the dramatic performance gains from using HTTP/2 will likely outweigh any additional HTTPS overhead.
 
 For more information on HTTP/2, see [Google's developer reference](https://developers.google.com/web/fundamentals/performance/http2/).
 

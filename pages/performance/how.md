@@ -78,7 +78,7 @@ Deciding which metrics to track is one of the most important parts of performanc
 
 ### Choosing metrics
 
-Different performance metrics reveal different things about the experience a user has on a site. In order to make the process of choosing metrics easier, we’ve compiled a [large list of performance metrics](/performance/glossary/) and detailed each metric’s pros and cons.  It’s important to choose at least one primary direct metric and at least one primary indirect metric. Attempt to track at least three metrics. There’s no limit to the total metrics you track. It depends on your team and what metrics help the most in determining performance. It's also important to consider HTTP/2 when deciding metrics. To learn more about HTTP/2 and it's impact on performance, [see our HTTP/2 performance guide](/performance/http2).
+Different performance metrics reveal different things about the experience a user has on a site. In order to make the process of choosing metrics easier, we’ve compiled a [large list of performance metrics](/performance/glossary/) and detailed each metric’s pros and cons.  It’s important to choose at least one primary direct metric and at least one primary indirect metric. Attempt to track at least three metrics. There is no limit to the total number of metrics you can track. It depends on your team and what metrics help the most in determining performance. It's also important to consider HTTP/2 when deciding metrics. See [our HTTP/2 guide](/performance/http2) to learn more about its impact on performance.
 
 {% capture example_metrics %}
 In the cloud.gov dashboard, we have chosen the following metrics:

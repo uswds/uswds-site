@@ -18,6 +18,11 @@ All of these designs are also available in various file formats, which are avail
 
 {% include download-buttons-design.html %}
 
+### Retired design files
+The following design files are no longer being maintained by the U.S. Web Design Standards team as of version 1.0.0. The most recent versions remain available for download at the links below. While the Standards team is no longer maintaining these files, we'd love to hear from any teams that are using these files and adding new components when new versions of the Standards are released. [Send us an email](mailto:@uswebdesignstandards@gsa.gov).
+
+{% include download-buttons-design-retired.html %}
+
 ## Notes on accessibility
 
 All of our designs meet the [WCAG 2.0 AA accessibility guidelines](https://www.w3.org/TR/WCAG20/) and are compliant with [Section 508 of the Rehabilitation Act](http://www.section508.gov/). If you choose to customize these designs, please make sure they continue to meet the requirements listed in the “Accessibility” section of each design.

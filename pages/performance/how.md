@@ -78,18 +78,18 @@ Deciding which metrics to track is one of the most important parts of performanc
 
 ### Choosing metrics
 
-Different performance metrics reveal different things about the experience a user has on a site. In order to make the process of choosing metrics easier, we’ve compiled a [large list of performance metrics](/performance/glossary/) and detailed each metric’s pros and cons.  It’s important to choose at least one primary direct metric and at least one primary indirect metric. Attempt to track at least three metrics. There is no limit to the total number of metrics you can track. It depends on your team and what metrics help the most in determining performance. It's also important to consider HTTP/2 when deciding metrics. See [our HTTP/2 guide](/performance/http2) to learn more about its impact on performance.
+Different performance metrics reveal different things about the experience a user has on a site. In order to make the process of choosing metrics easier, we’ve compiled a [large list of performance metrics](../glossary/) and detailed each metric’s pros and cons.  It’s important to choose at least one primary direct metric and at least one primary indirect metric. Attempt to track at least three metrics. There is no limit to the total number of metrics you can track. It depends on your team and what metrics help the most in determining performance. It's also important to consider HTTP/2 when deciding metrics. See [our HTTP/2 guide](../http2) to learn more about its impact on performance.
 
 {% capture example_metrics %}
 In the cloud.gov dashboard, we have chosen the following metrics:
 
-- [Speed index](/performance/glossary#speed-index): It’s a great way to compare sites and a good default.
-- [Time to interactive](/performance/glossary#time-to-interactive):  The dashboard is a very interactive site, so we want information on how easy it is for the user to interact with the site.
-- [Input latency](/performance/glossary#input-latency):  The dashboard is an SPA, so the time it takes to move between various pages and show various UI is very important.
-- [Custom timing events](/performance/glossary#custom-timing-events): Viewing app stats is a very important part of the experience.
+- [Speed index](../glossary/#speed-index): It’s a great way to compare sites and a good default.
+- [Time to interactive](../glossary/#time-to-interactive):  The dashboard is a very interactive site, so we want information on how easy it is for the user to interact with the site.
+- [Input latency](../glossary/#input-latency):  The dashboard is an SPA, so the time it takes to move between various pages and show various UI is very important.
+- [Custom timing events](../glossary/#custom-timing-events): Viewing app stats is a very important part of the experience.
 - Frontend / backend time: It’s helpful to see where the bulk of the site’s rendering time goes.
-- [Page weight](/performance/glossary#page-weight):  The dashboard is an SPA, so page weight can quickly get out of hand if new JavaScript libraries are added.
-- [DOM nodes](/performance/glossary#dom-nodes): As a React app, there could be many DOM notes created that we don’t realize, as React is in charge of actual DOM rendering.
+- [Page weight](../glossary/#page-weight):  The dashboard is an SPA, so page weight can quickly get out of hand if new JavaScript libraries are added.
+- [DOM nodes](../glossary/#dom-nodes): As a React app, there could be many DOM notes created that we don’t realize, as React is in charge of actual DOM rendering.
 {% endcapture %}
 {% include perf_example.html
   text=example_metrics
@@ -102,7 +102,7 @@ Once you’ve decided which metrics your team wants to track, you’re ready to 
 #### Checking chosen metrics
 The first step in choosing a tool is to make sure   the metrics you chose before are reported by the tool. To simplify the researching process, here’s a small helper to determine which tools track which metrics. To use it, select the metrics you plan on using from the drop down lists and view the chart below to see whether it’s available in each tool.
 
-Depending on the metrics you’ve chosen, it might be difficult to find a tool that tracks all of them. If you’re finding that it would take more than three tools to track all your metrics, it might be time to go back to your chosen metrics and take some out that are harder to track. When doing this, it’s usually wise to leave in the **primary direct metrics**, such as [Speed index](/performance/glossary#speed-index), but take out some of the **secondary direct metrics**, such as [load time](/performance/glossary#load-time) or [first byte](/performance/glossary#first-byte).
+Depending on the metrics you’ve chosen, it might be difficult to find a tool that tracks all of them. If you’re finding that it would take more than three tools to track all your metrics, it might be time to go back to your chosen metrics and take some out that are harder to track. When doing this, it’s usually wise to leave in the **primary direct metrics**, such as [Speed index](../glossary/#speed-index), but take out some of the **secondary direct metrics**, such as [load time](../glossary/#load-time) or [first byte](../glossary/#first-byte).
 
 It is possible to use two different tools to track all your metrics, but not recommended. Using more than one tool will require your team to merge the data from the two separate tools in a way that is parsable and makes sense, which could increase complications down the road.
 
@@ -127,16 +127,16 @@ Not all sites require an extensive process to choose performance metrics. Many s
 
 ##### Default metric recommendations:
 
-- [Speed index](/performance/glossary#speed-index): a direct metric to track how fast a site appears to a user
-- [Custom timing events](/performance/glossary#custom-timing-events): a direct metric to track a specific experience on your site
-- [Page weight](/performance/glossary#page-weight): an indirect metric to track the total resources size to download for your site
+- [Speed index](../glossary/#speed-index): a direct metric to track how fast a site appears to a user
+- [Custom timing events](../glossary/#custom-timing-events): a direct metric to track a specific experience on your site
+- [Page weight](../glossary/#page-weight): an indirect metric to track the total resources size to download for your site
 
 Focusing on these three metrics provides a good overview of how well your site is performing and allows you to compare your site’s performance to other sites.
 
 Based on these metrics, we’ve also recommended tools that are able to track these three metrics.
 ##### Default tool recommendation:
 
-[Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse/): a Google Chrome library that can be run in the CLI or as a browser extension. Google Chrome Lighthouse can be run in a CLI, or developer environment. It’s relatively easy to setup, and use, and includes harder to track metrics, like [Speed index](/performance/glossary#speed-index). Its only downside is that it requires both the Chrome browser and the ability to install Chrome extensions. If your team is unable to install Chrome or Chrome extensions  then [webpagetest](https://www.webpagetest.org/) can be run in any browser and is a good option.
+[Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse/): a Google Chrome library that can be run in the CLI or as a browser extension. Google Chrome Lighthouse can be run in a CLI, or developer environment. It’s relatively easy to setup, and use, and includes harder to track metrics, like [Speed index](../glossary/#speed-index). Its only downside is that it requires both the Chrome browser and the ability to install Chrome extensions. If your team is unable to install Chrome or Chrome extensions  then [webpagetest](https://www.webpagetest.org/) can be run in any browser and is a good option.
 
 Once you have chosen metrics and a tool to track the metrics, the next step is to define your performance goals and potential budgets, or limits, for the project.
 
@@ -171,13 +171,13 @@ Once your team has data on each metric, for each comparison site, and metrics on
 
 A good idea for selecting budgets is selecting the fastest performing site for each metric and taking 20% off the value. We use 20% because a 20% time difference is what’s often required for a user to see a difference in performance. This means we’re looking for our budget to be noticeably better than the best comparable site. For example:
 
-- The [Speed index](/performance/glossary#speed-index) for our four test sites were: 10993, 5517, 19114, 4085.
+- The [Speed index](../glossary/#speed-index) for our four test sites were: 10993, 5517, 19114, 4085.
 - The lowest value, or minimum, is **4085**.
-- We’ll take 20% off that value for a [Speed index](/performance/glossary#speed-index) budget of **3268**.
+- We’ll take 20% off that value for a [Speed index](../glossary/#speed-index) budget of **3268**.
 
 This value can also be compared to the recommended values from your tool. [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse/) provides a target value for each metric. If the budget is far off the target, it might be a good idea to bring it closer to that target. You can also round the numbers up or down to make them easier for the team to remember.
 
-Not all metrics require setting a budget. Any metrics that can’t be compared, such as [Custom timing events](/performance/glossary#custom-timing-events), should not have a budget. Other budgets are simply a yes or no value, such as whether the site is mobile friendly, which doesn’t require a budget. Additionally, it’s up to your team to analyze the data and set budgets for what makes sense.
+Not all metrics require setting a budget. Any metrics that can’t be compared, such as [Custom timing events](../glossary/#custom-timing-events), should not have a budget. Other budgets are simply a yes or no value, such as whether the site is mobile friendly, which doesn’t require a budget. Additionally, it’s up to your team to analyze the data and set budgets for what makes sense.
 
 #### Selecting budgets and goals for an existing site
 
@@ -192,23 +192,23 @@ Again, not all metrics require a budget, it’s up to your team to analyze the d
 {% capture example_comparison %}
 In the cloud.gov dashboard, we set the following budgets and goals:
 
-- [Speed index](/performance/glossary#speed-index)
+- [Speed index](../glossary/#speed-index)
   - Budget: 9000ms
   - Goal: 3000ms
-- [Input latency](/performance/glossary#input-latency)
+- [Input latency](../glossary/#input-latency)
   - Budget: 20ms
   - Goal: 20ms
-- [Time to interactive](/performance/glossary#time-to-interactive)
+- [Time to interactive](../glossary/#time-to-interactive)
   - Budget: 9500ms
   - Goal: 4000ms
-- [Page weight](/performance/glossary#page-weight)
+- [Page weight](../glossary/#page-weight)
   - Budget: 2000 KB
   - Goal: 1000 KB
-- [DOM nodes](/performance/glossary#dom-nodes)
+- [DOM nodes](../glossary/#dom-nodes)
   - Budget: 1500
   - Goal: 1000
 
-For [Speed index](/performance/glossary#speed-index), [Time to interactive](/performance/glossary#time-to-interactive), and [Page weight](/performance/glossary#page-weight), our current site’s performance was worse than the minimum 20% value, so these metrics required a budget that was closer to where the current site was- and a future goal of where we wanted it to be. [Input latency](/performance/glossary#input-latency) and [DOM nodes](/performance/glossary#dom-nodes) were lower than the minimum 20% value, so we allowed ourselves some room to grow here. We also bumped the numbers to round them.
+For [Speed index](../glossary/#speed-index), [Time to interactive](../glossary/#time-to-interactive), and [Page weight](../glossary/#page-weight), our current site’s performance was worse than the minimum 20% value, so these metrics required a budget that was closer to where the current site was- and a future goal of where we wanted it to be. [Input latency](../glossary/#input-latency) and [DOM nodes](../glossary/#dom-nodes) were lower than the minimum 20% value, so we allowed ourselves some room to grow here. We also bumped the numbers to round them.
 
   <img src="{{ site.baseurl }}/img/performance/example-budgets_goals.png" alt="cloud.gov example budgets and goals document">
 {% endcapture %}
@@ -227,7 +227,7 @@ Once you’ve determined the metrics to track, the tools to use, and what your p
 - When in the development and design process do people want to be notified, or interact, with performance?
 - What performance information do people need to feel they can influence but still get their job done?
 
-In this section, we’ll discuss a few of the many ways to track web performance on a team. It’s up to your team to figure out which of these methods, or other methods, work best to track performance. When choosing, it’s important to remember the goal of tracking, as defined in the [why track performance section](/performance/why), is to ensure all team members are aware of performance degradations and to motivate people to continually improve a site’s performance. For more information on different types of performance tracking, see the Types of monitoring methods in the glossary.
+In this section, we’ll discuss a few of the many ways to track web performance on a team. It’s up to your team to figure out which of these methods, or other methods, work best to track performance. When choosing, it’s important to remember the goal of tracking, as defined in the [why track performance section](../why), is to ensure all team members are aware of performance degradations and to motivate people to continually improve a site’s performance. For more information on different types of performance tracking, see the Types of monitoring methods in the glossary.
 
 ### Methods of tracking
 #### Continuous Integration
@@ -266,7 +266,7 @@ Real-time user monitoring (RUM) is the only performance tracking method that all
 
 ##### Cons
 
-- Not possible to measure important metrics, such as [Speed index](/performance/glossary#speed-index), meaningful first paint, [input latency](/performance/glossary#input-latency)
+- Not possible to measure important metrics, such as [Speed index](../glossary/#speed-index), meaningful first paint, [input latency](../glossary/#input-latency)
 - Requires many users to see useful data, more than 500 uniques per day
 - Requires a backend service running, so is the most expensive option
 

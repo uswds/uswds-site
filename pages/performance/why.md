@@ -3,7 +3,7 @@ title: Why track performance
 permalink: /performance/why/
 category: Getting started
 layout: styleguide
-lead: Performance is an important part of user experience that shouldn’t go unnoticed [need better intro].
+lead: Performance is an important part of user experience that shouldn’t go unnoticed
 ---
 
 Through the Web Design Standards’ team’s research around performance, we found government teams that were purposefully deciding not to track performance, as it wasn’t  a priority for them. This section of our Website Performance Guide goes over why tracking performance is always a good idea, for a new or old site. The Guide covers:

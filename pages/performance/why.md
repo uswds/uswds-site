@@ -29,11 +29,12 @@ How fast a site loads is often the first indication of what a web experience wil
 
 A common excuse by a team  for not tracking web performance, is that the site appears fast enough for them to use. This ignores a couple of important factors, including what a user might be experiencing in  performance. A site’s performance depends on factors like:
 
-- Current network speed
-- Physical distance between client and server
+- Different network speeds, such as mobile networks
 - Computing capacity of the current device
 
-At 18F, currently, most people working on the sites being built are working on fast laptops, on wired or relatively fast connections within the United States. These factors are all conducive to good performance. user on the site could instead be on a mobile device and mobile network, or on a computer outside of the United States, or on a network that is congested or just plain slow. Being on a network outside the U.S., alone, could mean an extra 150 milliseconds in round trip time to the server due to the longer distance the signal has to travel, meaning seconds more time in loading a page. While wired and wifi networks provide relatively consistent performance, mobile networks can rapidly change from: fast 4G connections, to slow 3G connections, to periods of being unconnected. Smaller devices, such as mobile phones, and older devices don't have as much CPU power to quickly download and process multiple resources. By limiting the measurement of the performance of a site to just a user on a fast connection and device, a huge amount of the site’s user base could be left with a site that’s very difficult to use and interact with, due to poor performance.
+At 18F, currently, most people working on the sites being built are working on fast laptops, on wired or relatively fast connections within the United States. These factors are all conducive to good performance. user on the site could instead be on a mobile device and mobile network, or on a computer outside of the United States, or on a network that is congested or just plain slow. Being on a network outside the U.S., alone, could mean an extra 150 milliseconds in round trip time to the server due to the longer distance the signal has to travel, meaning seconds more time in loading a page. Different types of networks, such as satelite networks, have much higher round trip times, which again leads to longer times when loading a page. When considering how fast a site loads, it's important to consider that the network the site's users are on could perform much differently then what the site's team's network is doing.
+
+The prevelance of mobile usage of websites also signifigantly contributes to a site's speed for a customer. According to the [Digital analytics program](https://analytics.usa.gov/), roughly 37% of traffic to government sites is on mobile devices. While wired and wifi networks provide relatively consistent performance, mobile networks can rapidly change from: fast 4G connections, to slow 3G connections, to periods of being unconnected. Smaller devices, such as mobile phones, and older devices don't have as much CPU power to quickly download and process multiple resources. By limiting the measurement of the performance of a site to just a user on a fast connection and device, a huge amount of the site’s user base could be left with a site that’s very difficult to use and interact with, due to poor performance.
 
 ## Perception of performance
 
@@ -49,3 +50,6 @@ Measuring performance ensures the team:
 - Understands what the user of the site’s true experience is, not just the ideal experience on a fast device and network
 - Has a sense of the features they can build while designing, to stay within performance budgets, ensuring performance problems don’t even come up during the site’s development
 
+## Conclusion
+
+As technology becomes more prevelant in the Unites States, it's more common that the primary way American's interact with the government is through the web. Ensuring government sites perform quickly for all ensures that all Americans have a good user experience and aren't blocked from the web services they require. Tracking and improving a site's performance is a first step in ensuring a site can reach as wide of an audience as possible.

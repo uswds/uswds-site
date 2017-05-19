@@ -78,6 +78,8 @@ While synthetic monitoring is the best way to receive consistent performance mon
 
 ## Metrics and implementations
 
+The following gives a brief overview of a handful of metrics. If you're looking for guidance on what metrics are best for your team to start with, view the [how to guide on performance](../how#choosing-metrics-amp-tools).
+
 ### Onload
 
 [The `load` event](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onload) fires at the end of the document loading process. At this point, all of the objects in the document are in the DOM, and all the images, scripts, links, and sub-frames have finished loading.

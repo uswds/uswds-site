@@ -5,12 +5,12 @@ category: Getting started
 layout: styleguide
 ---
 
-> ## TL;DR:
-> 
-> If possible, enable HTTP/2 support on your server for dramatic performance gains. When using HTTP/2:
-> 
-> * Do not use the [domain splitting](#domain-splitting) technique.
-> * Prefer small, modular files rather than [concatenating](#concatenation) them to reduce connection overhead.
+## TL;DR:
+
+If possible, enable HTTP/2 support on your server for dramatic performance gains. When using HTTP/2:
+
+* Do not use the [domain splitting](#domain-splitting) technique.
+* Prefer small, modular files rather than [concatenating](#concatenation) them to reduce connection overhead.
 
 ## What is HTTP/2?
 

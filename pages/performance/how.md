@@ -258,7 +258,7 @@ Real-time user monitoring (RUM) is the only performance tracking method that all
 ##### What you’ll need:
 
 - Ability to add a JS script to your site to track performance
-- A paid backend service provider or manual backend service to collect performance data. An example service is [SpeedCurve](https://speedcurve.com/)
+- A paid backend service provider or manual backend service to collect performance data. An example service is [SpeedCurve](https://speedcurve.com/).
 
 ##### Pros
 

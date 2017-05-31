@@ -78,7 +78,7 @@ While synthetic monitoring is the best way to receive consistent performance mon
 
 ## Metrics and implementations
 
-The following gives a brief overview of a handful of metrics. If you're looking for guidance on what metrics are best for your team to start with, view the [how to guide on performance](../how#choosing-metrics-amp-tools).
+The following gives a brief overview of a handful of metrics. If you're looking for guidance on which metrics are best for your team to start with, view the [how to guide on performance](../how#choosing-metrics-amp-tools).
 
 ### Onload
 

@@ -61,3 +61,11 @@
     url: https://github.com/BBGInnovate
   version: 0.9.1
   notes: "This is not a reusable WordPress theme, but an implementation of the Standards for [bbg.gov](https://www.bbg.gov/)."
+
+- name: WordPress
+  url: https://github.com/kyle-jennings/Benjamin
+  author:
+    name: Kyle Jennings
+    url: https://github.com/kyle-jennings
+  version: 1.1.0
+  notes: "A WordPress theme built with Automattic's _s, 18F's U.S. Web Design Standards, and the needs of the people. For additional components and shortcodes, check out the [Franklin](https://github.com/kyle-jennings/Franklin) plugin."

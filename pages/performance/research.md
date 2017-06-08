@@ -82,11 +82,11 @@ Our research was designed to cover a representative sample of government agencie
 
 ### 1. Pain points
 
-- **It’s challenging for government teams to prioritize web performance projects and obtain resources for doing the work**. Oftentimes the teams are fully booked as it, so finding extra time to work on fixing performance issues is a difficult task. Also, some teams have a long list of performance issues to fix so being able to prioritize the items can be a strenuous task.
+- **It’s challenging for government teams to prioritize web performance projects and obtain resources for doing the work**. Oftentimes the teams are fully booked as is, so finding extra time to work on fixing performance issues is a difficult task. Also, some teams have a long list of performance issues to fix so being able to prioritize the items can be a strenuous task.
 
 - **Federal agencies lack clarity regarding which tools have been approved for government use**. Following the ATO requirements and the government TOS for tools is a challenging process and the teams don’t have a clear path to getting the tools approved. 
 
-- **Government teams struggle with communicating the importance of web performance to leadership to advocate for spending time on improving their site’s performance**. There is no clear value proposition to improving web performance because it’s difficult for team’s to tie improved performance to a specific impact. Many government teams anticipate pushback when advocating for spending time on web performance without the evidence for why it’s important.
+- **Government teams struggle with communicating the importance of web performance to leadership to advocate for spending time on improving their site’s performance**. There is no clear value proposition to improving web performance because it’s difficult for teams to tie improved performance to a specific impact. Many government teams anticipate pushback when advocating for spending time on web performance without the evidence for why it’s important.
 
 - **Since there is no standard or requirement for web performance, federal agencies lack a target goal for their site**. Without having an incentive, government mandate or a target to aim for, teams have difficulty moving their agency in the direction of working on web performance improvements. 
 

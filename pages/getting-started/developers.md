@@ -124,7 +124,7 @@ Do you have questions or need help with setup? Did you run into any weird errors
 
 [https://github.com/18F/web-design-standards/issues](https://github.com/18F/web-design-standards/issues).
 
-You can also email us directly at uswebdesignstandards@gsa.gov.
+You can also email us directly at <a href="mailto:uswebdesignstandards@gsa.gov">uswebdesignstandards@gsa.gov</a>.
 
 ## CSS architecture
 

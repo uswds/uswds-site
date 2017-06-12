@@ -6,7 +6,7 @@ layout: styleguide
 lead: Performance is an important part of user experience that shouldn’t go unnoticed
 ---
 
-Through the Web Design Standards’ team’s research around performance, we found government teams that were purposefully deciding not to track performance, as it wasn’t  a priority for them. This section of our Website Performance Guide goes over why tracking performance is always a good idea, for a new or old site. The Guide covers:
+Through the Web Design Standards’ team’s research around performance, we found government teams that were purposefully deciding not to track performance, as it wasn’t a priority for them. This section of our Website Performance Guide goes over why tracking performance is always a good idea, for a new or old site. The Guide covers:
 
 - How performance affects conversion rate
 - Why different factors such as network and computer speed must be considered when tracking performance
@@ -15,7 +15,7 @@ Through the Web Design Standards’ team’s research around performance, we fou
 
 ## Conversion rate
 
-Conversion is the rate at which customers of a website product take a desired action. The desired action depends on the website 's goals and purpose. The conversion action for an e-commerce site is often a user completing a purchase, but public sector sites that don't sell anything can also use the idea of conversion. For example, the IRS site's conversion action could be when somebody successfully submits their tax returns; or the Federal Election Commission's conversion action could be when somebody successfully finds data they were looking for.
+Conversion is the rate at which customers of a website product take a desired action. The desired action depends on the website's goals and purpose. The conversion action for an e-commerce site is often a user completing a purchase, but public sector sites that don't sell anything can also use the idea of conversion. For example, the IRS site's conversion action could be when somebody successfully submits their tax returns; or the Federal Election Commission's conversion action could be when somebody successfully finds data they were looking for.
 
 Performance has been known to be an influencing factor when it comes to the conversion rate for a site. Regardless of the user interface and its purpose, multiple studies have shown that improving performance consistently improves conversion rates over a wide range of applications. According to [surveys done by Akamai](https://www.akamai.com/us/en/about/news/press/2009-press/akamai-reveals-2-seconds-as-the-new-threshold-of-acceptability-for-ecommerce-web-page-response-times.jsp), nearly half of web users expect a site to load in two seconds or less, and they tend to abandon a site that isn’t loaded within three seconds. This means that even a relatively fast site may be losing conversion due to speed. There are real-world examples of how performance can affect conversion, such as:
 

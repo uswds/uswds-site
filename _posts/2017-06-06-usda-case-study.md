@@ -14,7 +14,7 @@ The U.S. Web Design Standards team continues to sit down with various agencies w
 
 **Standards team:** What other frameworks did you consider?
 
-**USDA Team:** We didn’t spend a lot of time looking at other frameworks because we already liked the colors, fonts and other components of the Standards. We did spend some time looking at industry sites, as well as, evaluating other sites using the Standards to see how they were implemented.
+**USDA Team:** We didn’t spend a lot of time looking at other frameworks because we already liked the colors, fonts, and other components of the Standards. We did spend some time looking at industry sites, as well as, evaluating other sites using the Standards to see how they were implemented.
 
 **Standards team:** Did you encounter any resistance in your adoption of the Standards?
 
@@ -38,4 +38,4 @@ The U.S. Web Design Standards team continues to sit down with various agencies w
 
 ---
 
-We’re looking to learn more [from agencies that have used the Standards](https://github.com/18F/web-design-standards/blob/staging/WHO_IS_USING_USWDS.md); if you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at [uswebdesignstandards@gsa.gov](mailto:uswebdesignstandards@gsa.gov). You can also chat with the team in the new [public Slack channel for the Standards](https://chat.18f.gov/)!
+We’re looking to learn more [from agencies that have used the Standards](/getting-started/showcase/); if you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at [uswebdesignstandards@gsa.gov](mailto:uswebdesignstandards@gsa.gov). You can also chat with the team in the new [public Slack channel for the Standards](https://chat.18f.gov/)!

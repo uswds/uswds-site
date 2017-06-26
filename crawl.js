@@ -28,7 +28,7 @@ const listener = app.listen(() => {
     cb(null, doFetch);
   });
 
-  crawler.maxDepth = 3;
+  crawler.maxDepth = 99;
   crawler.interval = 1;
   crawler.on("discoverycomplete", (item, resources) => {
     resources.forEach(url => {

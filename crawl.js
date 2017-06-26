@@ -11,6 +11,13 @@ const listener = app.listen(() => {
   const referrers = {};
   let errors = 0;
 
+  crawler.addFetchCondition((item, referrerItem, cb) => {
+    // If a URL's path contains a literal `&quot;` in it, then it's
+    // almost guaranteed to be a false-positive that's actually
+    // in an example snippet of HTML in the docs, so ignore it.
+    cb(null, !item.path.match(/&quot;/));
+  });
+
   crawler.maxDepth = 3;
   crawler.interval = 1;
   crawler.on("discoverycomplete", (item, resources) => {

@@ -11,7 +11,7 @@ const listener = app.listen(() => {
   const referrers = {};
   let errors = 0;
 
-  crawler.maxDepth = 2;
+  crawler.maxDepth = 3;
   crawler.interval = 1;
   crawler.on("discoverycomplete", (item, resources) => {
     resources.forEach(url => {

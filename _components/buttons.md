@@ -30,7 +30,7 @@ lead: Use buttons to signal actions.
       <li><code>usa-button-big</code></li>
     </ul>
     <p>For example, a secondary button style would use the following code:
-    <code>&lt;a class="usa-button usa-button-secondary" href="/my-link"&gt;My button&lt;/a&gt;</code></p>
+    <code>&lt;a class="usa-button usa-button-secondary" href=&quot;/my-link"&gt;My button&lt;/a&gt;</code></p>
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>Buttons should display a visible focus state when users tab to them.</li>

@@ -1,0 +1,26 @@
+{% assign title = site.title %}
+{% if page.title and page.title != title -%}
+  {% assign title = page.title | append: ' | ' | append: title %}
+{% endif %}
+<title>{{ title }}</title>
+<meta property="og:title" content="{{ title | xml_escape }}">
+{% assign desc = page.description
+  | default: page.excerpt
+  | default: site.description
+  | strip_html
+  | strip
+  | xml_escape
+%}
+{% if desc -%}
+<meta name="description" content="{{ desc }}">
+<meta property="og:description" content="{{ desc }}">
+{% endif %}
+{% assign metas = '' | split: '' %}
+{% for meta in site.meta %}{% assign metas = metas | push: meta[0] %}{% endfor %}
+{% for meta in page.meta %}{% assign metas = metas | push: meta[0] %}{% endfor %}
+{% assign metas = metas | unique %}
+{% for meta in metas -%}
+  {% assign val = page.meta[meta] | default: site.meta[meta] %}
+  {% if meta contains 'image' %}{% assign val = val | absolute_url %}{% endif %}
+  <meta property="{{ meta }}" content="{{ val | xml_escape }}">
+{% endfor %}

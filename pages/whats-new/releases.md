@@ -1,7 +1,7 @@
 ---
 permalink: /whats-new/releases/
 redirect_from:
-- /about-our-work/releases/
+  - /about-our-work/releases/
 layout: styleguide
 title: Release notes
 category: What’s new
@@ -9,8 +9,6 @@ subnav:
   data: releases
   href: ['#version-%', name]
   text: name
-redirect_from:
-  - /about-our-work/releases/
 ---
 <p class="usa-font-lead">The Standards are an ever-evolving product. We’ve been listening to your feedback and using it as a basis for improvements and additions.</p>
 
@@ -24,7 +22,8 @@ Have suggestions for a new feature or bug fix? [Open an issue](https://github.co
 
 <p class="site-subheading">{{ release.published_at | date: "%B %d, %Y" }}</p>
 
-{{ release.body | markdownify }}
+{% assign id_replace = 'id="v%-' | replace: '%', release.name %}
+{{ release.body | markdownify | replace: 'id="', id_replace }}
 
-<hr />
+<hr>
 {% endfor %}

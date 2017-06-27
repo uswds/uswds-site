@@ -1,28 +1,5 @@
 module USWDS
 
-  # determine whether one page object (a Hash) "contains" another, according to
-  # the logic in contains_url(). The URL for each page is either its
-  # 'permalink' or its 'url' key.
-  def contains_page(top, page, rel=nil)
-    def get_url(page)
-      page['permalink'] || page['url']
-    end
-    contains_url(get_url(top), get_url(page), rel)
-  end
-
-  # return true if one high-level URL (specifically, a URI) "contains" another:
-  #
-  # {{ '/foo/' | contains_url: '/foo/bar' %} => true
-  # {{ '/foo/bar/' | contains_url: '/foo/' %} => false
-  # {{ '/' | contains_url: '/foo/bar' %} => false
-  def contains_url(top, url, rel=nil)
-    url === top || (
-      rel == 'contains' and
-        url != '/' and
-        top.start_with?(url)
-    )
-  end
-
   # Return true if a == b, false otherwise:
   #
   # {% assign x = a | eq: b %}

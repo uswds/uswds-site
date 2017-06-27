@@ -127,10 +127,10 @@ lead: This 12-column, responsive grid provides structure for website content.
 
 <div class="usa-accordion-bordered">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
+      aria-expanded="true" aria-controls="grid-docs">
     Documentation
   </button>
-  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+  <div id="grid-docs" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Implementation</h4>
     <p>To use the grid, wrap each grid row in a <code>&lt;div&gt;</code> with the <code>usa-grid</code> class. To use a grid without padding on the right and left, use the <code>usa-grid-full</code> class instead.</p>
     <p>Each grid item is written semantically by its width. For example: <code>usa-width-one-half</code> = 1/2 grid item, <code>usa-width-two-thirds</code> = 2/3 grid item.</p>

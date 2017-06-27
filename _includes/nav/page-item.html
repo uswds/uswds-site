@@ -1,15 +1,20 @@
-{% assign _current = page | contains_page: include.page, include.rel %}
-<a href="{{ include.page.url | prepend: site.baseurl }}"{% if _current -%} class="usa-current"{% endif %}>{{ link.text | default: include.page.title }}</a>
+{% include nav/current.html page=include.page %}
+<a href="{{ include.page.url | relative_url }}"{%
+  if _current -%} class="usa-current"{% endif %}>{{
+    include.page.title | smartify
+  }}</a>
 {% if _current -%}
   {% unless include.flat -%}
     {% assign _href_key = include.href_key %}
     {% assign _text_key = include.href_key %}
-    {% assign _links = include.page.subnav %}
+    {% assign _links = include.links | default: include.page.subnav %}
     {% if _links.data -%}
       {% assign _href_key = _links.href %}
       {% assign _text_key = _links.text %}
       {% assign _data_key = _links.data %}
       {% assign _links = site.data[_data_key] %}
+    {% elsif _links.type %}
+      {% assign _links = nil %}
     {% endif %}
     {% if _links -%}
     <ul class="{{ include.subnav_class | default: 'usa-sidenav-sub_list' }}">{%

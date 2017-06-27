@@ -9,10 +9,10 @@ lead: A standard template for resetting a password
 {% include code/accordion.html component="password-reset" %}
 <div class="usa-accordion-bordered">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
+      aria-expanded="true" aria-controls="password-reset-docs">
     Documentation
   </button>
-  <div id="collapsible-0" aria-hidden="false" class="usa-accordion-content">
+  <div id="password-reset-docs" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>As you customize this form template, make sure it continues to follow the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines for form templates</a> and the <a href="{{ site.baseurl }}/form-controls/">accessibility guidelines for form controls</a>.</li>

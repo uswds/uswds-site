@@ -7,12 +7,12 @@
   notes: "This package provides access to the Standards in [Django](https://www.djangoproject.com/) applications."
 
 - name: Drupal
-  url: https://github.com/18F/web-design-standards-drupal
+  url: https://www.drupal.org/project/uswds
   author:
-    name: 18F
-    url: https://github.com/18F
-  version: 0.8.1
-  notes: "This is a work in progress. See the [project board](https://waffle.io/18F/web-design-standards-drupal) for more info."
+    name: Brock Fanning
+    url: https://www.drupal.org/u/brockfanning
+  version: 1.x
+  notes: "This base theme focuses on tweaking Drupal's markup so that it will work with the USWDS library. Some CSS is added to deal with unavoidable Drupal quirks, but only as a last resort."
 
 - name: npm and node-sass
   url: https://github.com/openbrian/18f-contrib-web-design-standards
@@ -61,3 +61,11 @@
     url: https://github.com/BBGInnovate
   version: 0.9.1
   notes: "This is not a reusable WordPress theme, but an implementation of the Standards for [bbg.gov](https://www.bbg.gov/)."
+
+- name: WordPress
+  url: https://github.com/kyle-jennings/Benjamin
+  author:
+    name: Kyle Jennings
+    url: https://github.com/kyle-jennings
+  version: 1.1.0
+  notes: "A WordPress theme built with Automattic's _s, 18F's U.S. Web Design Standards, and the needs of the people. For additional components and shortcodes, check out the [Franklin](https://github.com/kyle-jennings/Franklin) plugin."

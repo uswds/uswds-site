@@ -13,12 +13,12 @@ order: 05
 {% include code/accordion.html component="lists" %}
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
+      aria-expanded="true" aria-controls="list-docs">
     Documentation
   </button>
-  <div id="collapsible-0" class="usa-accordion-content">
-  <h4 class="usa-heading">Implementation</h4>
-  <p>Lists are styled by default. For unstyled lists, use either the <code>usa-unstyled-list</code> class or unstyled list mixin: <code>@include unstyled-list;</code>. Both are located in <code>assets/_scss/core/<wbr>utilities.scss</code>.</p>
+  <div id="list-docs" class="usa-accordion-content">
+    <h4 class="usa-heading">Implementation</h4>
+    <p>Lists are styled by default. For unstyled lists, use either the <code>usa-unstyled-list</code> class or unstyled list mixin: <code>@include unstyled-list;</code>. Both are located in <code>assets/_scss/core/<wbr>utilities.scss</code>.</p>
     <h4 class="usa-heading">Usability</h4>
     <h5>When to use</h5>
     <ul class="usa-content-list">

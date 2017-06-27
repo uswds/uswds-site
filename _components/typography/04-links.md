@@ -14,10 +14,10 @@ order: 04
 {% include code/accordion.html component="links" %}
 <div class="usa-accordion-bordered usa-accordion-docs">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="collapsible-0">
+      aria-expanded="true" aria-controls="link-docs">
     Documentation
   </button>
-  <div id="collapsible-0" class="usa-accordion-content">
+  <div id="link-docs" class="usa-accordion-content">
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>Users should be able to tab to navigate between links.</li>

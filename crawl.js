@@ -9,7 +9,7 @@ const listener = app.listen(() => {
   const port = listener.address().port;
   const crawler = new Crawler(`http://127.0.0.1:${port}/`);
   const referrers = {};
-  let errors = 0;
+  const notFound = [];
 
   crawler.addFetchCondition((item, referrerItem, cb) => {
     let doFetch = true;
@@ -39,15 +39,20 @@ const listener = app.listen(() => {
     });
   });
   crawler.on("fetch404", (item, res) => {
-    const refs = referrers[item.url];
-    console.log(`404 for ${item.path}!`);
-    console.log(`  ${refs.length} referrer(s) including at least:`,
-                refs.slice(0, 5));
-    errors++;
+    notFound.push(item);
   });
   crawler.on("complete", () => {
     listener.close(() => {
+      const errors = notFound.length;
       const success = errors === 0;
+
+      notFound.forEach(item => {
+        const refs = referrers[item.url];
+        console.log(`404 for ${item.path}!`);
+        console.log(`  ${refs.length} referrer(s) including at least:`,
+                    refs.slice(0, 5));
+      });
+
       console.log(`${errors} error(s) found.`);
       if (success) {
         console.log(`Hooray!`);

@@ -10,6 +10,14 @@ body {
   height: auto;
 }
 
+.usa-footer-secondary_section {
+  background-color: $color-primary-alt-lightest;
+}
+
+.usa-graphic_list .usa-media_block-img {
+  max-width: 7rem;
+}
+
 .usa-hero {
   background-image: url('#{$site-image-path}/home/wds-home-new-2x.png');
   padding-bottom: 7.2rem;
@@ -32,6 +40,24 @@ body {
 
 .usa-hero-callout-alt {
   font-size: 2.7rem;
+}
+
+.usa-media_block-body {
+  & > *:first-child {
+    font-size: $media-block-header-font-size;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  & > p {
+    margin: 0.5rem 0;
+    font-size: $media-block-body-font-size;
+  }
+}
+
+.usa-media_block-img {
+  float: none;
+  margin-bottom: 1rem;
 }
 
 .usa-section-dark p {

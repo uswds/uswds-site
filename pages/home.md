@@ -10,22 +10,22 @@ graphic_list:
     - topic: Getting Started
       description: Learn how to get started using the U.S. Web Design Standards for your project, regardless of your technical stack.
       image:
-        src:
-        alt:
-    - topic: What's New
-      description: Keep up to date with the current news and product development updates for the U.S. Web Design Standards.
-      image:
-        src:
+        src: img/home/get-started.svg
         alt:
     - topic: UI Components
       description: Discover all the different components that the Standards provide as both design and development assets.
       image:
-        src:
+        src: img/home/ui-component.svg
+        alt:
+    - topic: What's New
+      description: Keep up to date with the current news and product development updates for the U.S. Web Design Standards.
+      image:
+        src: img/home/new.svg
         alt:
     - topic: Page Templates
       description: Explore the different page templates that have been created to jump start your product development.
       image:
-        src:
+        src: img/home/page-templates.svg
         alt:
 ---
 

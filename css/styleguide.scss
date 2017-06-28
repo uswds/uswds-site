@@ -42,6 +42,10 @@ body {
   font-size: 2.7rem;
 }
 
+.usa-media_block {
+  margin-bottom: 1rem;
+}
+
 .usa-media_block-body {
   & > *:first-child {
     font-size: $media-block-header-font-size;

@@ -74,7 +74,7 @@ const listener = app.listen(() => {
         const isWarning = refs.every(path => WARNING_PAGES.includes(path));
         const label = isWarning ? WARNING : ERROR;
 
-        console.log(`${label}: 404 for ${item.path}!`);
+        console.log(`${label}: 404 for ${item.path}`);
         console.log(`  ${refs.length} referrer(s) including at least:`,
                     refs.slice(0, 5));
         if (isWarning) {

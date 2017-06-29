@@ -116,7 +116,7 @@ node_modules/uswds/dist/css/uswds.css
 
 If you’re using another framework or package manager that doesn’t support NPM, you can find the source files in this repository and use them in your project. Otherwise, we recommend that you follow the [download instructions](#download). Please note that the core team [isn’t responsible for all frameworks’ implementations](https://github.com/18F/web-design-standards/issues/877).
 
-If you’re interested in maintaining a package that helps us distribute the U.S. Web Design Standards, the project’s build system can help you create distribution bundles to use in your project. Please read our [contributing guidelines](CONTRIBUTING.md#building-the-project-locally-with--gulp-) to locally build distributions for your framework or package manager.
+If you’re interested in maintaining a package that helps us distribute the U.S. Web Design Standards, the project’s build system can help you create distribution bundles to use in your project. Please read our [contribution guidelines][] to locally build distributions for your framework or package manager.
 
 ### Need installation help?
 
@@ -200,6 +200,8 @@ The Standards also meet the [WCAG 2.0 AA accessibility guidelines](https://www.w
 
 ## Contribution guidelines
 
-We’re so glad you’re thinking about contributing to the Standards! You can find our complete [contribution guidelines](https://github.com/18F/web-design-standards/blob/develop/CONTRIBUTING.md) in our repo — please review them before submitting your contribution.
+We’re so glad you’re thinking about contributing to the Standards! You can find our complete [contribution guidelines][] in our repo — please review them before submitting your contribution.
 
 If you have any questions about these guidelines (or the Standards, more generally), don’t hesitate to [email us](mailto:uswebdesignstandards@gsa.gov) — we’ll get back to you within 48 hours.
+
+[contribution guidelines]: https://github.com/18F/web-design-standards/blob/develop/CONTRIBUTING.md

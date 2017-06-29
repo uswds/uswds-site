@@ -3,7 +3,7 @@ const Crawler = require("simplecrawler");
 
 const app = express();
 
-app.use(express.static(`${__dirname}/_site`));
+app.use(express.static(`${__dirname}/../_site`));
 
 // These pages incorporate content from other files in other repos, so
 // they should be considered "second class" by the link checker, and

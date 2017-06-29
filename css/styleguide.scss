@@ -10,6 +10,8 @@ body {
   height: auto;
 }
 
+// USWDS Overrides
+
 .usa-footer-secondary_section {
   background-color: $color-primary-alt-lightest;
 }
@@ -30,7 +32,7 @@ body {
 
 .usa-hero-callout {
   border-radius: 0.3rem;
-  min-width: 46rem;
+  max-width: 46rem;
   padding: 3.6rem 3rem;
 
   & > *:first-child {
@@ -40,13 +42,6 @@ body {
 
 .usa-hero-callout-alt {
   font-size: 2.7rem;
-}
-
-// Override for 4x1 media grid when it collapses to 2x2
-@media screen and (max-width: 1200px) and (min-width: 600px) {
-  .usa-graphic_list .usa-graphic_list-row .usa-media_block:nth-child(-n+2) {
-    margin-bottom: 6rem;
-  }
 }
 
 .usa-media_block-body {
@@ -70,6 +65,13 @@ body {
 .usa-section-dark p {
   margin-top: 0.8rem;
   font-weight: $font-light;
+}
+
+// Override for 4x1 media grid when it collapses to 2x2
+@media screen and (max-width: 1200px) and (min-width: 600px) {
+  .usa-graphic_list .usa-graphic_list-row .usa-media_block:nth-child(-n+2) {
+    margin-bottom: 6rem;
+  }
 }
 
 // Fancy Horizontal Rule //

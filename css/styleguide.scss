@@ -43,8 +43,8 @@ body {
 }
 
 // Override for 4x1 media grid when it collapses to 2x2
-@media screen and (min-width: 600px) {
-  .usa-graphic_list .usa-graphic_list-row:last-child .usa-media_block {
+@media screen and (max-width: 1200px) and (min-width: 600px) {
+  .usa-graphic_list .usa-graphic_list-row .usa-media_block:nth-child(-n+2) {
     margin-bottom: 6rem;
   }
 }
@@ -70,6 +70,31 @@ body {
 .usa-section-dark p {
   margin-top: 0.8rem;
   font-weight: $font-light;
+}
+
+// Fancy Horizontal Rule //
+
+.homepage-rule {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  position: relative;
+
+  &.center-diamond {
+    background: $color-primary;
+    text-align: center;
+
+    &:before {
+      content: "◆";
+      display: inline-block;
+      position: relative;
+      top: -0.7em;
+      font-size: 1.5em;
+      padding: 0 0.25em;
+      color: $color-secondary;
+      background: $color-white;
+    }
+  }
 }
 
 // Header -------------- //

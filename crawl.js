@@ -5,6 +5,21 @@ const app = express();
 
 app.use(express.static(`${__dirname}/_site`));
 
+function shouldFetch(item, referrerItem) {
+  if (item.path.match(/&quot;/)) {
+    // If a URL's path contains a literal `&quot;` in it, then it's
+    // almost guaranteed to be a false-positive that's actually
+    // in an example snippet of HTML in the docs, so ignore it.
+    return false;
+  } else if (referrerItem.path.match(/\.js$/)) {
+    // Just ignore anything gleaned from JS files for now, it's too likely
+    // that it's a false positive.
+    return false;
+  }
+
+  return true;
+}
+
 const listener = app.listen(() => {
   const port = listener.address().port;
   const crawler = new Crawler(`http://127.0.0.1:${port}/`);
@@ -12,20 +27,7 @@ const listener = app.listen(() => {
   const notFound = [];
 
   crawler.addFetchCondition((item, referrerItem, cb) => {
-    let doFetch = true;
-
-    if (item.path.match(/&quot;/)) {
-      // If a URL's path contains a literal `&quot;` in it, then it's
-      // almost guaranteed to be a false-positive that's actually
-      // in an example snippet of HTML in the docs, so ignore it.
-      doFetch = false;
-    } else if (referrerItem.path.match(/\.js$/)) {
-      // Just ignore anything gleaned from JS files for now, it's too likely
-      // that it's a false positive.
-      doFetch = false;
-    }
-
-    cb(null, doFetch);
+    cb(null, shouldFetch(item, referrerItem));
   });
 
   crawler.maxDepth = 99;

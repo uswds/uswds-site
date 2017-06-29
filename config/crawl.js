@@ -1,5 +1,6 @@
 const express = require('express');
 const Crawler = require("simplecrawler");
+const chalk = require('chalk');
 
 const app = express();
 
@@ -13,6 +14,8 @@ const WARNING_PAGES = [
     '/whats-new/releases/',
     '/getting-started/showcase/all/',
 ];
+const WARNING = chalk.yellow('Warning');
+const ERROR = chalk.red('Error');
 
 function shouldFetch(item, referrerItem) {
   if (item.path.match(/&quot;/)) {
@@ -61,7 +64,7 @@ const listener = app.listen(() => {
       notFound.forEach(item => {
         const refs = referrers[item.url];
         const isWarning = refs.every(path => WARNING_PAGES.includes(path));
-        const label = isWarning ? 'Warning' : 'Error';
+        const label = isWarning ? WARNING : ERROR;
 
         console.log(`${label}: 404 for ${item.path}!`);
         console.log(`  ${refs.length} referrer(s) including at least:`,
@@ -75,7 +78,7 @@ const listener = app.listen(() => {
 
       WARNING_PAGES.forEach(path => {
         if (!(`${baseURL}${path}` in referrers)) {
-          console.log(`Error: ${path} was not visited!`);
+          console.log(`${ERROR}: ${path} was not visited!`);
           console.log(`  If this is not an error, please remove the path ` +
                       `from WARNING_PAGES.`);
           errors++;
@@ -86,9 +89,9 @@ const listener = app.listen(() => {
 
       console.log(`${errors} error(s) and ${warnings} warning(s) found.`);
       if (success) {
-        console.log(`Hooray!`);
+        console.log(chalk.green(`Hooray!`));
       } else {
-        console.log(`Alas.`);
+        console.log(chalk.red(`Alas.`));
       }
       process.exit(success ? 0 : 1);
     });

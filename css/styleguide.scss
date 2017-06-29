@@ -42,8 +42,11 @@ body {
   font-size: 2.7rem;
 }
 
-.usa-media_block {
-  margin-bottom: 1rem;
+// Override for 4x1 media grid when it collapses to 2x2
+@media screen and (min-width: 600px) {
+  .usa-graphic_list .usa-graphic_list-row:last-child .usa-media_block {
+    margin-bottom: 6rem;
+  }
 }
 
 .usa-media_block-body {

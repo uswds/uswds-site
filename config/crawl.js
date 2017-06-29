@@ -1,10 +1,10 @@
+const path = require('path');
+const fs = require('fs');
 const express = require('express');
 const Crawler = require("simplecrawler");
 const chalk = require('chalk');
 
 const app = express();
-
-app.use(express.static(`${__dirname}/../_site`));
 
 // These pages incorporate content from other files in other repos, so
 // they should be considered "second class" by the link checker, and
@@ -16,6 +16,7 @@ const WARNING_PAGES = [
 ];
 const WARNING = chalk.yellow('Warning');
 const ERROR = chalk.red('Error');
+const SITE_PATH = path.normalize(`${__dirname}/../_site`);
 
 function shouldFetch(item, referrerItem) {
   if (item.path.match(/&quot;/)) {
@@ -30,6 +31,13 @@ function shouldFetch(item, referrerItem) {
   }
 
   return true;
+}
+
+if (fs.existsSync(SITE_PATH)) {
+  app.use(express.static(SITE_PATH));
+} else {
+  console.log(`Please build the site before running me.`);
+  process.exit(1);
 }
 
 const listener = app.listen(() => {

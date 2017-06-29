@@ -5,6 +5,15 @@ const app = express();
 
 app.use(express.static(`${__dirname}/_site`));
 
+// These pages incorporate content from other files in other repos, so
+// they should be considered "second class" by the link checker, and
+// only emit warnings on 404s rather than errors.
+const WARNING_PAGES = [
+    '/getting-started/code-guidelines/',
+    '/whats-new/releases/',
+    '/getting-started/showcase/all/',
+];
+
 function shouldFetch(item, referrerItem) {
   if (item.path.match(/&quot;/)) {
     // If a URL's path contains a literal `&quot;` in it, then it's
@@ -22,7 +31,8 @@ function shouldFetch(item, referrerItem) {
 
 const listener = app.listen(() => {
   const port = listener.address().port;
-  const crawler = new Crawler(`http://127.0.0.1:${port}/`);
+  const baseURL = `http://127.0.0.1:${port}`;
+  const crawler = new Crawler(`${baseURL}/`);
   const referrers = {};
   const notFound = [];
 
@@ -45,17 +55,36 @@ const listener = app.listen(() => {
   });
   crawler.on("complete", () => {
     listener.close(() => {
-      const errors = notFound.length;
-      const success = errors === 0;
+      let errors = 0;
+      let warnings = 0;
 
       notFound.forEach(item => {
         const refs = referrers[item.url];
-        console.log(`404 for ${item.path}!`);
+        const isWarning = refs.every(path => WARNING_PAGES.includes(path));
+        const label = isWarning ? 'Warning' : 'Error';
+
+        console.log(`${label}: 404 for ${item.path}!`);
         console.log(`  ${refs.length} referrer(s) including at least:`,
                     refs.slice(0, 5));
+        if (isWarning) {
+          warnings++;
+        } else {
+          errors++;
+        }
       });
 
-      console.log(`${errors} error(s) found.`);
+      WARNING_PAGES.forEach(path => {
+        if (!(`${baseURL}${path}` in referrers)) {
+          console.log(`Error: ${path} was not visited!`);
+          console.log(`  If this is not an error, please remove the path ` +
+                      `from WARNING_PAGES.`);
+          errors++;
+        }
+      });
+
+      const success = errors === 0;
+
+      console.log(`${errors} error(s) and ${warnings} warning(s) found.`);
       if (success) {
         console.log(`Hooray!`);
       } else {

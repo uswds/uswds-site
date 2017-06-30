@@ -68,7 +68,7 @@ body {
 }
 
 // Override for 4x1 media grid when it collapses to 2x2
-@media screen and (max-width: 1200px) and (min-width: 600px) {
+@media screen and (max-width: $large-screen) and (min-width: $medium-screen) {
   .usa-graphic_list .usa-graphic_list-row .usa-media_block:nth-child(-n+2) {
     margin-bottom: 6rem;
   }

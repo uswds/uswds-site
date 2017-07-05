@@ -25,6 +25,8 @@ lead: A standard template for resetting a password
     <h5>Guidance</h5>
     <ul class="usa-content-list">
       <li>If users need a password to access your site, they will forget that password and need a way to reset it.</li>
+      <li>For guidance on the technical details of validation, see the
+        <a href="/components/form-controls/#validation">validation documentation</a>.</li>
       <li>State any password requirements (for example, “Must include one capital letter”) up front. Don’t leave users guessing about password requirements, only to hit them with an error message later.</li>
       <li>The requirements shown above are just provided as an example and should not be taken as recommendations.</li>
     </ul>

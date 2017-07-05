@@ -18,6 +18,8 @@ subnav:
   href: '#radio-buttons'
 - text: Date input
   href: '#date-input'
+- text: Validation
+  href: '#validation'
 ---
 
 {% include accessibility.html %}

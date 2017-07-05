@@ -84,6 +84,15 @@ may want to
 [create an access token](https://github.com/blog/1509-personal-api-tokens)
 and assign it to your `GITHUB_ACCESS_TOKEN` environment variable.
 
+The dynamic content is stored in the `.jekyll_get_cache` directory and
+won't be re-fetched once it's cached there. However, this means that your
+data can get stale over time, so if you want to ensure that your site
+is using the very latest data, you'll want to clear the cache by running:
+
+```
+rm -rf .jekyll_get_cache
+```
+
 ## Contributing
 
 Please read through our [contributing guidelines](CONTRIBUTING.md). These guidelines are directions for opening issues and submitting pull requests, and they also detail the coding and design standards we follow.

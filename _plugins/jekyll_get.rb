@@ -1,5 +1,4 @@
 require 'json'
-require 'hash-joiner'
 require 'open-uri'
 require 'base64'
 
@@ -28,6 +27,25 @@ module Jekyll_Get
       url
     end
 
+    def load_json(site, d)
+      name = d['data']
+      url = d['json']
+      data_source = '.jekyll_get_cache'
+      path = "#{data_source}/#{name}.json"
+      if not File.exists?(path)
+        FileUtils.mkpath File.dirname(path)
+        print "Caching #{url} in #{path}...\n"
+        data = JSON.load(open(get_final_url(url)))
+        open(path, 'wb') do |file|
+          file << JSON.pretty_generate(data)
+        end
+      end
+      site.data[name] = JSON.load(open(path))
+      if d['decode_content']
+        decode_content site.data[name]
+      end
+    end
+
     def generate(site)
       config = site.config['jekyll_get']
       if !config
@@ -37,26 +55,9 @@ module Jekyll_Get
         config = [config]
       end
       config.each do |d|
-        name_of_target = d['data']
         url = d['json']
         begin
-          target = site.data[name_of_target]
-          source = JSON.load(open(get_final_url(url)))
-          if target
-            HashJoiner.deep_merge target, source
-          else
-            site.data[name_of_target] = source
-          end
-          if d['decode_content']
-            decode_content site.data[name_of_target]
-          end
-          if d['cache']
-            data_source = (site.config['data_source'] || '_data')
-            path = "#{data_source}/#{name_of_target}.json"
-            open(path, 'wb') do |file|
-              file << JSON.generate(site.data[name_of_target])
-            end
-          end
+          load_json(site, d)
         rescue => e
           print "jekyll_get: error fetching #{url}: #{e}\n"
           next

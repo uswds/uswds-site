@@ -11,6 +11,13 @@ future: true
 
 encoding: utf-8
 
+incremental_regeneration_fixer:
+  interdependent_files:
+    - "_components/colors/*"
+    - "_components/form-controls/*"
+    - "_components/form-templates/*"
+    - "_components/typography/*"
+
 jekyll_get:
   - data: releases
     json: 'https://api.github.com/repos/18F/web-design-standards/releases'

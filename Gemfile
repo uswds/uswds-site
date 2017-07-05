@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 gem 'jekyll'
 gem 'json'
 gem 'redcarpet'
-gem 'hash-joiner'
 gem 'open-uri-cached'
 gem 'jekyll-redirect-from'
 

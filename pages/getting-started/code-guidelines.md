@@ -6,4 +6,4 @@ category: Getting started
 lead: 
 ---
 
-{{ site.data.contributing.decoded }}
+{{ site.data.contributing.decoded | markdownify | absolutify_links: site.data.contributing.html_url }}

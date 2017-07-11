@@ -54,9 +54,22 @@ Promise.all([runServer(), getChrome()]).then(([server, chrome]) => {
   }, client => {
     console.log('Created CDP.');
 
-    const {Page, Runtime} = client;
+    const {Page, Network, Runtime} = client;
 
-    Page.enable().then(() => {
+    Promise.all([
+      Page.enable(),
+      Network.enable(),
+    ]).then(() => {
+      Network.responseReceived(({response}) => {
+        if (response.status < 400) return;
+        console.log(`${response.url} returned HTTP ${response.status}!`);
+        process.exit(1);
+      });
+      Network.loadingFailed(details => {
+        console.log("A network request failed to load.");
+        console.log(details);
+        process.exit(1);
+      });
       Page.loadEventFired(() => {
         // TODO: Ensure we're not just on a "network error" type page.
         console.log('Page loaded, running aXe.');

@@ -71,7 +71,6 @@ Promise.all([runServer(), getChrome()]).then(([server, chrome]) => {
         process.exit(1);
       });
       Page.loadEventFired(() => {
-        // TODO: Ensure we're not just on a "network error" type page.
         console.log('Page loaded, running aXe.');
         Runtime.evaluate({
           expression: AXE_JS + ';(' + runAxe.toString() + ')()',

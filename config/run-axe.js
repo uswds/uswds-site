@@ -55,6 +55,23 @@ Promise.all([runServer(), getChrome()]).then(([server, chrome]) => {
     console.log('Created CDP.');
 
     const {Page, Network, Runtime} = client;
+    const terminate = exitCode => {
+      client.close().then(() => {
+        chrome.kill().then(() => {
+          // Note that we're not killing the server; this is because
+          // the remote chrome instance (if we're using one) may be
+          // keeping some network connections to the server alive, which
+          // makes it harder to kill, so it's easier to just terminate.
+          console.log(`Terminating with exit code ${exitCode}.`);
+          process.exit(exitCode);
+        });
+      });
+    };
+
+    process.on('unhandledRejection', (reason, p) => {
+      console.log('Unhandled Rejection at:', p, 'reason:', reason);
+      terminate(1);
+    });
 
     Promise.all([
       Page.enable(),
@@ -63,12 +80,12 @@ Promise.all([runServer(), getChrome()]).then(([server, chrome]) => {
       Network.responseReceived(({response}) => {
         if (response.status < 400) return;
         console.log(`${response.url} returned HTTP ${response.status}!`);
-        process.exit(1);
+        terminate(1);
       });
       Network.loadingFailed(details => {
         console.log("A network request failed to load.");
         console.log(details);
-        process.exit(1);
+        terminate(1);
       });
       Page.loadEventFired(() => {
         console.log('Page loaded, running aXe.');
@@ -91,16 +108,7 @@ Promise.all([runServer(), getChrome()]).then(([server, chrome]) => {
             console.log(details.result);
             exitCode = 1;
           }
-          client.close().then(() => {
-            chrome.kill().then(() => {
-              // Note that we're not killing the server; this is because
-              // the remote chrome instance (if we're using one) may be
-              // keeping some network connections to the server alive, which
-              // makes it harder to kill, so it's easier to just terminate.
-              console.log(`Terminating with exit code ${exitCode}.`);
-              process.exit(exitCode);
-            });
-          });
+          terminate(exitCode);
         });
       });
 
@@ -108,9 +116,4 @@ Promise.all([runServer(), getChrome()]).then(([server, chrome]) => {
       Page.navigate({url: server.url});
     });
   });
-});
-
-process.on('unhandledRejection', (reason, p) => {
-  console.log('Unhandled Rejection at:', p, 'reason:', reason);
-  process.exit(1);
 });

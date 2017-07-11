@@ -4,6 +4,7 @@ const fs = require('fs');
 const urlParse = require('url').parse;
 const chromeLauncher = require('chrome-launcher');
 const CDP = require('chrome-remote-interface');
+const chalk = require('chalk');
 const runServer = require('./static-server');
 
 const REMOTE_CHROME_URL = process.env['REMOTE_CHROME_URL'];
@@ -55,6 +56,7 @@ Promise.all([runServer(), getChrome()]).then(([server, chrome]) => {
   const chromeHost = chrome.host || 'localhost';
   console.log(`Static file server is listening at ${server.url}.`);
   console.log(`Chrome is debuggable on http://${chromeHost}:${chrome.port}.`);
+  console.log(`Running aXe on:`);
 
   CDP({
     host: chrome.host,
@@ -69,7 +71,7 @@ Promise.all([runServer(), getChrome()]).then(([server, chrome]) => {
       } else {
         const page = pagesLeft.pop();
         const url = `${server.url}${page}`;
-        console.log(`Navigating to ${page}.`);
+        process.stdout.write(`  ${page} `);
         Page.navigate({url});
       }
     };
@@ -80,7 +82,8 @@ Promise.all([runServer(), getChrome()]).then(([server, chrome]) => {
           // the remote chrome instance (if we're using one) may be
           // keeping some network connections to the server alive, which
           // makes it harder to kill, so it's easier to just terminate.
-          console.log(`Terminating with exit code ${exitCode}.`);
+          const color = exitCode === 0 ? chalk.green : chalk.red;
+          console.log(color(`Terminating with exit code ${exitCode}.`));
           process.exit(exitCode);
         });
       });
@@ -112,10 +115,16 @@ Promise.all([runServer(), getChrome()]).then(([server, chrome]) => {
         }).then(details => {
           let errorFound = false;
           if (details.result.type === 'string') {
-            const violations = JSON.parse(details.result.value);
-            if (violations.length > 0) {
-              console.log(`Found ${violations.length} aXe violations. Alas.`);
-              console.log(violations);
+            const viols = JSON.parse(details.result.value);
+            if (viols.length === 0) {
+              console.log(chalk.green('OK'));
+            } else {
+              console.log(chalk.red(`Found ${viols.length} aXe violations.`));
+              console.log(viols);
+              console.log(chalk.cyan(
+                `\nTo debug these violations, install aXe at:\n\n` +
+                `  https://www.deque.com/products/axe/\n`
+              ));
               errorFound = true;
             }
           } else {

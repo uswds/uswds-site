@@ -1,4 +1,5 @@
 const fs = require('fs');
+const os = require('os');
 const path = require('path');
 const express = require('express');
 
@@ -16,7 +17,14 @@ if (fs.existsSync(SITE_PATH)) {
 module.exports = () => {
   return new Promise((resolve, reject) => {
     const server = app.listen(() => {
-      resolve(server);
+      const hostname = os.hostname();
+      const port = server.address().port;
+      resolve({
+        hostname,
+        port,
+        url: `http://${hostname}:${port}`,
+        httpServer: server,
+      });
     });
   });
 };

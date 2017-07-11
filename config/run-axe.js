@@ -1,17 +1,32 @@
 const fs = require('fs');
+const urlParse = require('url').parse;
 const chromeLauncher = require('chrome-launcher');
 const CDP = require('chrome-remote-interface');
 const runServer = require('./static-server');
 
+const REMOTE_CHROME_URL = process.env['REMOTE_CHROME_URL'];
 const AXE_JS = fs.readFileSync(__dirname + '/../node_modules/axe-core/axe.js');
 
-function launchChrome(headless=true) {
+function launchChromeLocally(headless=true) {
   return chromeLauncher.launch({
     chromeFlags: [
       '--window-size=412,732',
       '--disable-gpu',
       headless ? '--headless' : ''
     ]
+  });
+}
+
+function getRemoteChrome() {
+  const info = urlParse(REMOTE_CHROME_URL);
+  if (info.protocol !== 'http:')
+    throw new Error(`Unsupported protocol: ${info.protocol}`);
+  return new Promise(resolve => {
+    resolve({
+      host: info.hostname,
+      port: info.port,
+      kill() { return Promise.resolve(); }
+    });
   });
 }
 
@@ -27,19 +42,21 @@ function runAxe() {
   });
 }
 
-Promise.all([runServer(), launchChrome()]).then(([server, chrome]) => {
-  const port = server.address().port;
-  console.log(`Chrome is debuggable on ${chrome.port}.`);
+let getChrome = REMOTE_CHROME_URL ? getRemoteChrome : launchChromeLocally;
+
+Promise.all([runServer(), getChrome()]).then(([server, chrome]) => {
+  const chromeHost = chrome.host || 'localhost';
+  console.log(`Chrome is debuggable on http://${chromeHost}:${chrome.port}.`);
+
   CDP({
+    host: chrome.host,
     port: chrome.port,
   }, client => {
     console.log('Created CDP.');
 
     const {Page, Runtime} = client;
 
-    Promise.all([
-      Page.enable()
-    ]).then(() => {
+    Page.enable().then(() => {
       Page.loadEventFired(() => {
         // TODO: Ensure we're not just on a "network error" type page.
         console.log('Page loaded, running aXe.');
@@ -63,17 +80,25 @@ Promise.all([runServer(), launchChrome()]).then(([server, chrome]) => {
             exitCode = 1;
           }
           client.close().then(() => {
-            chrome.kill();
-            server.close();
-            console.log(`Terminating with exit code ${exitCode}.`);
-            process.exit(exitCode);
+            chrome.kill().then(() => {
+              // Note that we're not killing the server; this is because
+              // the remote chrome instance (if we're using one) may be
+              // keeping some network connections to the server alive, which
+              // makes it harder to kill, so it's easier to just terminate.
+              console.log(`Terminating with exit code ${exitCode}.`);
+              process.exit(exitCode);
+            });
           });
         });
       });
 
-      const url = `http://localhost:${port}`;
-      console.log(`Navigating to ${url}.`);
-      Page.navigate({url: url});
+      console.log(`Navigating to ${server.url}.`);
+      Page.navigate({url: server.url});
     });
   });
+});
+
+process.on('unhandledRejection', (reason, p) => {
+  console.log('Unhandled Rejection at:', p, 'reason:', reason);
+  process.exit(1);
 });

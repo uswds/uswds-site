@@ -1,3 +1,5 @@
+'use strict';
+
 const fs = require('fs');
 const urlParse = require('url').parse;
 const chromeLauncher = require('chrome-launcher');

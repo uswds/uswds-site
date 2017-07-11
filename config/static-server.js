@@ -17,7 +17,7 @@ if (fs.existsSync(SITE_PATH)) {
 module.exports = () => {
   return new Promise((resolve, reject) => {
     const server = app.listen(() => {
-      const hostname = os.hostname();
+      const hostname = os.hostname().toLowerCase();
       const port = server.address().port;
       resolve({
         hostname,

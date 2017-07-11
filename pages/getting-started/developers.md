@@ -72,8 +72,6 @@ And that’s it — you should be set to use the Standards.
 
 ### Using npm
 
-Note: Using npm to install the Standards will include jQuery version `2.2.0`. Please make sure that you’re not including any other version of jQuery on your page.
-
 If you have `node` installed on your machine, you can use npm to install the Standards. Add `uswds`
 to your project’s `package.json` as a dependency:
 
@@ -142,6 +140,7 @@ You can also email us directly at [uswebdesignstandards@gsa.gov](mailto:uswebdes
 **For more information, visit:
 [https://pages.18f.gov/frontend/css-coding-styleguide/](https://pages.18f.gov/frontend/css-coding-styleguide/)**
 
+## JavaScript 
 
 ## Customization and theming
 

@@ -148,6 +148,16 @@ The JavaScript for the standards is separated into components in the same manner
 window.uswds = require('./components');
 ```
 
+Each component has a standardized interface that can be used to extend it further. The primary methods each component has are as follows:
+
+- `on`: Initialize a component's JavaScript behavior by passing the root element, such as `window.document`.
+- `off`: The opposite of `on`, de-initializes a component, removing any JavaScript event handlers on the component.
+- `hide`: Hide the whole component.
+- `show`: Shows a whole, hidden component.
+- `toggle`: Toggles the visibility of a component on and off based on the previous state.
+
+Some components have additional methods for manipulating specific aspects of them based on what they are and what they do. These can be found in the component's JS file.
+
 ## Customization and theming
 
 The Standards can be customized to use different typography, colors and grid systems. The easiest way to do this is to use Sass and override the Standards’ global variables. If it isn’t possible to use Sass, do theming by overriding the CSS rules in the Standards set.

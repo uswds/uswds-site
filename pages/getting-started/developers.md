@@ -140,8 +140,6 @@ You can also email us directly at [uswebdesignstandards@gsa.gov](mailto:uswebdes
 **For more information, visit:
 [https://pages.18f.gov/frontend/css-coding-styleguide/](https://pages.18f.gov/frontend/css-coding-styleguide/)**
 
-## JavaScript 
-
 ## Customization and theming
 
 The Standards can be customized to use different typography, colors and grid systems. The easiest way to do this is to use Sass and override the Standards’ global variables. If it isn’t possible to use Sass, do theming by overriding the CSS rules in the Standards set.

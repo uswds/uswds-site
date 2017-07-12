@@ -1,0 +1,138 @@
+---
+title: Performance metrics
+permalink: /performance/metrics/
+layout: styleguide
+recommended_features:
+  - score-overall
+  - speed-index
+  - page-weight
+  - page-requests
+---
+
+{% assign tools = site.data.performance.tools %}
+{% assign features = site.data.performance.features %}
+<form id="feature-selector">
+  <p>Select between one and four performance metrics or features
+    below, and we'll tell you which tool(s) best suit your needs.</p>
+
+  <div class="usa-grid-full">
+
+    <div class="usa-width-one-half">
+      {% for rec in page.recommended_features %}
+      <div class="feature">
+        <select name="feature-{{ forloop.index }}">
+          <option value="">(none)</option>
+          {% for feature in features %}
+          <option value="{{ feature.id }}">
+            {{ feature.name }}
+          </option>
+          {% endfor %}
+        </select>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="usa-width-one-half">
+      <p data-tool="none" hidden>
+        No tools support all of the features you've selected.
+      </p>
+      <ul class="tools">
+        {% for tool in tools %}
+        <li data-tool="{{ tool.id }}"
+          data-features='{{ tool.features | jsonify }}'>
+          <a href="{{ tool.href }}">{{ tool.name }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      <p>
+        <button type="reset" class="usa-button">Reset</button>
+      </p>
+    </div>
+
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Feature</th>
+        {% for tool in tools %}
+        <th scope="col">
+          <a href="{{ tool.href }}">{{ tool.name }}</a>
+        </th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for feature in features %}
+      <tr data-feature="{{ feature.id }}">
+        <th scope="row">{{ feature.name }}</th>
+        {% for tool in tools %}
+          {% assign support = tool.features[feature.id] %}
+        <td data-tool="{{ tool.id }}"
+            data-support="{{ support }}">
+          {% if support == true %}Yes
+          {% elsif support == false %}No
+          {% else %}{{ support }}{% endif %}
+        </td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <style scoped>
+    td[data-support="true"] {   background: #e7f4e4; }
+    td[data-support="false"] {  background: #f9dede; }
+    td[data-support="?"] {      background: #fff1d2; }
+  </style>
+</form>
+
+<script>
+(function() {
+
+  var root = document.querySelector('#feature-selector');
+  var selectors = Array.from(root.querySelectorAll('.feature select'));
+  var rows = Array.from(root.querySelectorAll('tr[data-feature]'));
+  var tools = Array.from(root.querySelectorAll('.tools [data-tool]'));
+  var note = root.querySelector('[data-tool="none"]');
+  var reset = root.querySelector('[type=reset]');
+
+  var toolFeatures = tools.reduce(function(map, el) {
+    var tool = el.dataset.tool;
+    map[tool] = JSON.parse(el.dataset.features);
+    return map;
+  }, {});
+  console.warn('tool features:', toolFeatures);
+
+  var update = function() {
+    var features = selectors
+      .map(function(el) { return el.value; })
+      .filter(function(value) { return value; });
+    console.warn('features:', features);
+
+    rows.forEach(function(row) {
+      var feature = row.dataset.feature;
+      row.hidden = features.length && features.indexOf(feature) === -1;
+    });
+
+    tools.forEach(function(el) {
+      var tool = el.dataset.tool;
+      el.hidden = features.length && features.some(function(feature) {
+        return toolFeatures[tool][feature] !== true;
+      });
+    });
+
+    note.hidden = tools.some(function(el) {
+      return !el.hidden;
+    });
+  };
+
+  update();
+
+  root.addEventListener('change', update);
+  root.addEventListener('reset', function() {
+    setTimeout(update, 0);
+  });
+
+})();
+</script>

@@ -4,7 +4,7 @@ const express = require('express');
 const Crawler = require("simplecrawler");
 const chalk = require('chalk');
 
-const app = express();
+const runServer = require('./static-server');
 
 // These pages incorporate content from other files in other repos, so
 // they should be considered "second class" by the link checker, and
@@ -33,17 +33,8 @@ function shouldFetch(item, referrerItem) {
   return true;
 }
 
-if (fs.existsSync(SITE_PATH)) {
-  app.use(express.static(SITE_PATH));
-} else {
-  console.log(`Please build the site before running me.`);
-  process.exit(1);
-}
-
-const listener = app.listen(() => {
-  const port = listener.address().port;
-  const baseURL = `http://127.0.0.1:${port}`;
-  const crawler = new Crawler(`${baseURL}/`);
+runServer().then(server => {
+  const crawler = new Crawler(`${server.url}/`);
   const referrers = {};
   const notFound = [];
 
@@ -65,7 +56,7 @@ const listener = app.listen(() => {
     notFound.push(item);
   });
   crawler.on("complete", () => {
-    listener.close(() => {
+    server.httpServer.close(() => {
       let errors = 0;
       let warnings = 0;
 
@@ -85,7 +76,7 @@ const listener = app.listen(() => {
       });
 
       WARNING_PAGES.forEach(path => {
-        if (!(`${baseURL}${path}` in referrers)) {
+        if (!(`${server.url}${path}` in referrers)) {
           console.log(`${ERROR}: ${path} was not visited!`);
           console.log(`  If this is not an error, please remove the path ` +
                       `from WARNING_PAGES.`);

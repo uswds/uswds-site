@@ -41,14 +41,14 @@ function getRemoteChrome() {
 // This function is only here so it can be easily .toString()'d
 // and run in the context of a web page by Chrome. It will not
 // be run in the node context.
-function runAxe() {
+const RUN_AXE_FUNC_JS = function runAxe() {
   return new Promise((resolve, reject) => {
     window.axe.run((err, results) => {
       if (err) return reject(err);
       resolve(JSON.stringify(results.violations));
     });
   });
-}
+}.toString();
 
 let getChrome = REMOTE_CHROME_URL ? getRemoteChrome : launchChromeLocally;
 
@@ -59,7 +59,7 @@ Promise.all([runServer(), getChrome()]).then(([server, chrome]) => {
   console.log(`Running aXe on:`);
 
   CDP({
-    host: chrome.host,
+    host: chromeHost,
     port: chrome.port,
   }, client => {
     const {Page, Network, Runtime} = client;
@@ -110,7 +110,7 @@ Promise.all([runServer(), getChrome()]).then(([server, chrome]) => {
       });
       Page.loadEventFired(() => {
         Runtime.evaluate({
-          expression: AXE_JS + ';(' + runAxe.toString() + ')()',
+          expression: `${AXE_JS};(${RUN_AXE_FUNC_JS})()`,
           awaitPromise: true,
         }).then(details => {
           let errorFound = false;
@@ -128,7 +128,7 @@ Promise.all([runServer(), getChrome()]).then(([server, chrome]) => {
               errorFound = true;
             }
           } else {
-            console.log('Unexpected result from CDP!');
+            console.log('Unexpected result from aXe JS evaluation!');
             console.log(details.result);
             errorFound = true;
           }
@@ -149,4 +149,8 @@ Promise.all([runServer(), getChrome()]).then(([server, chrome]) => {
       loadNextPage();
     });
   });
+}).catch(e => {
+  console.log(chalk.red("An error occurred during initialization."));
+  console.log(e);
+  process.exit(1);
 });

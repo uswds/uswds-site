@@ -29,13 +29,13 @@ To use the Web Design Standards on your project, you’ll need to include the CS
 
 First, download the Web Design Standards assets:
 
-<a class="link-download" href="https://github.com/18F/web-design-standards/releases/download/v{{ site.version }}/uswds-{{ site.version }}.zip">Download code</a>
-<span class="link-download-subtext">Version {{ site.version }}</span>
+<a class="link-download" href="https://github.com/18F/web-design-standards/releases/download/v{{ site.data.uswds_version }}/uswds-{{ site.data.uswds_version }}.zip">Download code</a>
+<span class="link-download-subtext">Version {{ site.data.uswds_version }}</span>
 
 Then, add the following folders into a relevant place in your code base — likely a directory where you keep third-party libraries:
 
 ```
-uswds-{{ site.version }}/
+uswds-{{ site.data.uswds_version }}/
 ├── js/
 │   ├── uswds.min.js.map
 │   ├── uswds.min.js
@@ -184,7 +184,7 @@ NOTE: If you plan on upgrading to newer versions of the Standards in the future,
 ## Where things live
 
 * **HTML** markup for the components is located in: `src/html` in the site root.
-* **Sass** styles are located in: `src/stylesheets/ (/core, /elements, /components)`. **Compiled CSS** is located in the [downloadable zip file]({{ site.repos[0].url }}/releases/download/v{{ site.version }}/uswds-{{ site.version }}.zip) .
+* **Sass** styles are located in: `src/stylesheets/ (/core, /elements, /components)`. **Compiled CSS** is located in the [downloadable zip file]({{ site.repos[0].url }}/releases/download/v{{ site.data.uswds_version }}/uswds-{{ site.data.uswds_version }}.zip) .
 * **JS** is located in: `src/js/components (accordion.js, toggle-field-mark.js, toggle-form-input.js, validator.js)`.
 * **Fonts** are located in: `src/fonts`.
 * **Images** and icons are located in: `src/img`.

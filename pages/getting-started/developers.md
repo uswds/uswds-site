@@ -140,6 +140,26 @@ You can also email us directly at [uswebdesignstandards@gsa.gov](mailto:uswebdes
 **For more information, visit:
 [https://pages.18f.gov/frontend/css-coding-styleguide/](https://pages.18f.gov/frontend/css-coding-styleguide/)**
 
+## JS customization
+
+**Unfortunately, customizing the JavaScript for the standards currently requires NodeJS and a module bundler like Browserify or Webpack. We apologize for this inconvenience, and are working to resolve it in a future release of the Standards.**
+
+The JavaScript for the standards is separated into components in the same manner as the visual interface which is all initialized with event handlers when the DOM is ready. These components are accessible as CommonJS modules that can be required in other JavaScript files which then must be built for the browser. The components are currently not accessible in the global browser scope, but can be extended to be included by requiring `components` and setting it to a global scope:
+
+```js
+window.uswds = require('./components');
+```
+
+Each component has a standardized interface that can be used to extend it further. The components store a HTML class name (e.g. `.usa-accordion-button[aria-controls]`) that's used to link HTML elements with the JS component, so when a component is initialized, it will search through the current HTML DOM finding all elements that match its class and inialize the component JavaScript for those elements. The primary methods each component has are as follows:
+
+- `on`: Initialize a component's JavaScript behavior by passing the root element, such as `window.document`.
+- `off`: The opposite of `on`, de-initializes a component, removing any JavaScript event handlers on the component.
+- `hide`: Hide the whole component.
+- `show`: Shows a whole, hidden component.
+- `toggle`: Toggles the visibility of a component on and off based on the previous state.
+
+Some components have additional methods for manipulating specific aspects of them based on what they are and what they do. These can be found in the component's JS file.
+
 ## Customization and theming
 
 The Standards can be customized to use different typography, colors and grid systems. The easiest way to do this is to use Sass and override the Standards’ global variables. If it isn’t possible to use Sass, do theming by overriding the CSS rules in the Standards set.

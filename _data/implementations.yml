@@ -6,6 +6,15 @@
   version: 0.12.0
   notes: "This package provides access to the Standards in [Django](https://www.djangoproject.com/) applications."
 
+- name: Django
+  url: http://django-uswds-forms.readthedocs.io/en/latest/
+  author:
+    name: 18F
+    url: https://github.com/18F
+  version: 0.0.3
+  notes: |
+    This package provides Django Forms integration with the Standards.
+
 - name: Drupal
   url: https://www.drupal.org/project/uswds
   author:

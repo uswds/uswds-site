@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs');
+const cheerio = require('cheerio');
 const express = require('express');
 const Crawler = require("simplecrawler");
 const chalk = require('chalk');
@@ -33,10 +34,43 @@ function shouldFetch(item, referrerItem) {
   return true;
 }
 
+function findDuplicateIds($) {
+  const duplicates = [];
+  const idCounts = {};
+  const ids = $("[id]").each(function() {
+    const id = $(this).attr('id');
+
+    if (!(id in idCounts)) {
+      idCounts[id] = 0;
+    }
+    idCounts[id]++;
+
+    if (idCounts[id] === 2) {
+      duplicates.push(id);
+    }
+  });
+
+  return duplicates;
+}
+
 runServer().then(server => {
   const crawler = new Crawler(`${server.url}/`);
+  const origDiscoverResources = crawler.discoverResources;
   const referrers = {};
   const notFound = [];
+  const duplicateIds = [];
+
+  crawler.discoverResources = function(buffer, item) {
+    if (/^text\/html/.test(item.stateData.contentType)) {
+      const $ = cheerio.load(buffer.toString("utf8"));
+      const ids = findDuplicateIds($);
+
+      if (ids.length) {
+        duplicateIds.push({ item, ids });
+      }
+    }
+    return origDiscoverResources.apply(this, arguments);
+  };
 
   crawler.addFetchCondition((item, referrerItem, cb) => {
     cb(null, shouldFetch(item, referrerItem));
@@ -59,20 +93,32 @@ runServer().then(server => {
     server.httpServer.close(() => {
       let errors = 0;
       let warnings = 0;
-
-      notFound.forEach(item => {
-        const refs = referrers[item.url];
-        const isWarning = refs.every(path => WARNING_PAGES.includes(path));
+      const makeLabelForPaths = paths => {
+        const isWarning = paths.every(path => WARNING_PAGES.includes(path));
         const label = isWarning ? WARNING : ERROR;
 
-        console.log(`${label}: 404 for ${item.path}`);
-        console.log(`  ${refs.length} referrer(s) including at least:`,
-                    refs.slice(0, 5));
         if (isWarning) {
           warnings++;
         } else {
           errors++;
         }
+
+        return label;
+      };
+
+      duplicateIds.forEach(({ item, ids }) => {
+        const label = makeLabelForPaths([ item.path ]);
+        console.log(`${label}: duplicate id attrs found at ${item.path}:`);
+        console.log(`  ${ids.join(', ')}`);
+      });
+
+      notFound.forEach(item => {
+        const refs = referrers[item.url];
+        const label = makeLabelForPaths(refs);
+
+        console.log(`${label}: 404 for ${item.path}`);
+        console.log(`  ${refs.length} referrer(s) including at least:`,
+                    refs.slice(0, 5));
       });
 
       WARNING_PAGES.forEach(path => {

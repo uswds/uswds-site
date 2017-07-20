@@ -13,11 +13,11 @@ dependencies:
 
 test:
   pre:
-    - cd node_modules/uswds && npm run federalist
     - gulp -v
     - scss-lint -v
     - jekyll -v
   override:
+    - npm run build-uswds
     - npm run build # Build site files
     - npm test # Run the package and test suite
   post:

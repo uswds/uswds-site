@@ -3,7 +3,8 @@
   "version": "1.3.0",
   "description": "Website and documentation on using the U.S. Web Design Standards.",
   "scripts": {
-    "federalist": "gulp build",
+    "federalist": "npm run build-uswds && gulp build",
+    "build-uswds": "cd node_modules/uswds && npm run federalist",
     "build": "gulp build && bundle exec jekyll build",
     "build-css": "gulp sass",
     "build-js": "gulp javascript",

@@ -30,10 +30,10 @@ module Jekyll
       if not cache.key? @name
         if @base_url
           puts "Loading fractal component #{@name} from #{@base_url}."
-          cache[@name] = get_from_server
+          html = get_from_server
         elsif File.exist?(@fs_path)
           puts "Loading fractal component #{@name} from #{@fs_path}."
-          cache[@name] = open(@fs_path).read
+          html = open(@fs_path).read
         else
           raise (
             "Unable to find the fractal component #{@name}! " +
@@ -41,6 +41,8 @@ module Jekyll
             "'fractal build' in the uswds directory."
           )
         end
+        html.gsub! "../../dist/", "#{site.baseurl}/assets/"
+        cache[@name] = html
       end
       cache[@name]
     end

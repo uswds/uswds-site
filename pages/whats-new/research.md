@@ -62,20 +62,20 @@ The best way to learn how well the Standards are working is to watch people usin
 #### Package 1 - Remote Usability Evaluation
 We will recruit users of your product -- usually no more than 20 -- and observe them using it via remote, online web conferencing tools. This approach is meant to highlight high level issues that your users are experiencing and provide guidance on future iterations of your product. Your team is encouraged to observe the sessions; our researchers will report back their findings.
 
-##### Outcomes
+<h5>Outcomes</h5>
 * Report with high level findings and recommendations for the partner agency
 
-##### Cost and Timeline
+<h5>Cost and Timeline</h5>
 * Cost: $65,000 to $80,000
 * Timeline: 4 to 5 weeks
 
 #### Package 2 - In-Person Usability Evaluation
 We will recruit users of your product -- usually no more than 20 -- and observe them using it in person at a location to be determined. This evaluation is meant to be an in-depth analysis of your product, exposing both general trends and specific issues that affect your users. Your team is encouraged to observe the sessions, on location and via remote conferencing tools, and our researchers will report back their findings.
 
-##### Outcomes
+<h5>Outcomes</h5>
 * Report with high level findings and recommendations for the partner agency
 
-##### Cost and Timeline
+<h5>Cost and Timeline</h5>
 * Cost: $80,000 to $95,000 (includes travel costs; additional recruitment and testing facility fees may apply)
 * Timeline: 5 to 6 Weeks
 
@@ -86,23 +86,23 @@ With the enrollment into the Data Analytics Platform (DAP) being part of the Pol
 #### Package 1 - DAP Integration
 We will work with digital services teams to put the basic code needed into place for passing their web analytics into the DAP platform. This is a lightweight service meant to assist teams that don’t have the necessary skills on hand to meet the policies requirements.
 
-##### Outcomes
+<h5>Outcomes</h5>
 * DAP code included on all required sites and pages
 * Integration into the DAP platform
 
-##### Cost and Timeline
+<h5>Cost and Timeline</h5>
 * Cost: $8,000 to $16,000
 * Timeline: 1 to 2 Weeks
 
 #### Package 2 - Basic Reporting and Dashboards
 In addition to the services described in the above package, an analyst will work with a digital service team to set up basic reporting and dashboards that give agencies greater insight into how people use its digital products. The information gathered can help inform outreach, business and technical strategy, and user research activities the digital service team might want perform.
 
-##### Outcomes
+<h5>Outcomes</h5>
 * DAP code included on all required sites and pages
 * Integration into the DAP platform
 * Requirements gathering of desired reports and dashboards
 * Report and dashboard set up
 
-##### Cost and Timeline
+<h5>Cost and Timeline</h5>
 * Cost: $24,000 to $31,000
 * Timeline: 3 to 4 Weeks

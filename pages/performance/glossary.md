@@ -84,14 +84,14 @@ The following gives a brief overview of a handful of metrics. If you're looking 
 
 [The `load` event](https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onload) fires at the end of the document loading process. At this point, all of the objects in the document are in the DOM, and all the images, scripts, links, and sub-frames have finished loading.
 
-#### Pros
+<h4>Pros</h4>
 - Easy to calculate for most pages
 - Can be calculated in any environment, on almost any browser
 
-#### Cons
+<h4>Cons</h4>
 - It's not a valid metric for perceived user performance because the page may be fully rendered and active before the `load` event fires. For more information see: [Steve Souders, moving beyond window onload](https://www.stevesouders.com/blog/2013/05/13/moving-beyond-window-onload/).
 
-#### How to measure
+<h4>How to measure</h4>
 Onload can be measured in the browser with the [performance API](https://developer.mozilla.org/en-US/docs/Web/API/Performance), which is available in all browsers except Internet Explorer 9 or earlier and Safari:
 
 ```
@@ -132,14 +132,14 @@ Another, less accurate method that works in all browsers is to use the JavaScrip
 
 Speed index is a score for the visual completeness of the page — above the fold (what’s visible to the user) — over time. It uses video capture to calculate this score. Created by [WebPagetest], it's a score from 0 to infinity that maps approximately to milliseconds of time before the page is completely visible to the user. A lower score is better.
 
-#### Pros
+<h4>Pros</h4>
 - Accurately measures user’s perceived performance
 
-#### Cons
+<h4>Cons</h4>
 - Requires a live URL to test, or
 - Requires a [WebPagetest] instance or service
 
-#### How to measure
+<h4>How to measure</h4>
 
 ##### With [WebPagetest]
 
@@ -177,15 +177,15 @@ Custom metrics are millisecond or second timings of how long a specific feature 
 
 The typical example of a custom metric is Twitter using a "time to first tweet." In this case, Twitter measures the time in milliseconds for the first tweet to appear to the user.
 
-#### Pros
+<h4>Pros</h4>
 - Very closely related to the organization's goals for the site
 - Good at testing user perceived performance, such as speed index, but does not require a live URL or complex testing setup
 
-#### Cons
+<h4>Cons</h4>
 - Challenging to manage on a site where the object being timed changes often, such as a blog
 - Hard to manage on sites with many different page templates
 
-#### How to measure
+<h4>How to measure</h4>
 1. Pick an event to measure. The event will be more accurate if it includes an image.
 2. Include a performance mark right after the HTML code with the event.
 
@@ -211,20 +211,20 @@ The typical example of a custom metric is Twitter using a "time to first tweet."
 
 [First meaningful paint](https://developers.google.com/web/tools/lighthouse/audits/first-meaningful-paint) is a browser-supplied metric that measures how long it takes for the most meaningful content to be fully rendered on the site. Measurement involves watching all layout events as the page loads, filtering by events for new objects above the page fold, and then accounting for web font loading. By using these heuristics, the metric is a relatively accurate measure of how long it takes for the most important content on the site to be fully rendered. This was confirmed by having first meaningful paint tested against speed index for a large number of sites. This metric is closely related to speed index, as both are accurate measurements of a user’s perceived performance.
 
-#### Pros
+<h4>Pros</h4>
 - Similar to speed index, it is a very accurate measurement of how the user perceives the performance of a site.
 - Does not require a complex testing setup or live URL
 
-#### Cons
+<h4>Cons</h4>
 - Only available in Google Chrome
 
-#### How to measure
+<h4>How to measure</h4>
 First meaningful paint can be measured in one of two ways:
 
-##### Lighthouse
+<h5>Lighthouse</h5>
 [Lighthouse], the Chrome plugin and command line testing tool, includes first meaningful paint as one of the metrics it tests. To test, run either the plugin on your site or the [CLI tool](https://developers.google.com/web/tools/lighthouse/#cli) with the appropriate options.
 
-##### Chrome web browser
+<h5>Chrome web browser</h5>
 You can measure first meaningful paint timing for any page in the [Chrome DevTools Timeline](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/timeline-tool).
 
 ### Time to interactive
@@ -237,22 +237,22 @@ This metric can be calculated through the browser timings API, [the `Performance
 
 Time to interactive can be nicely paired with speed index or first meaningful paint, as both test when the page is visually complete, while time to interactive tests when the page can be interacted with by the user. The purpose and the content of the site will determine which metric is more important, and may determine whether time to first interactive is even necessary to measure. For example, if the site is heavy on content (such as a blog), then first interactive may not be necessary because the user’s only "interaction" with the site is to read it.
 
-#### Pros
+<h4>Pros</h4>
 - For some sites, interaction may be more important than everything visually appearing, meaning this is a very important metric.
 - Relatively easy to test with [Lighthouse]
 
-#### Cons
+<h4>Cons</h4>
 - May not provide useful data for content-heavy sites without interactive elements
 - May not be possible to test in browsers other than Chrome
 
-#### How to measure
+<h4>How to measure</h4>
 Time to interactive can be measure in one of two ways:
 
-##### Lighthouse
+<h5>Lighthouse</h5>
 
 [Lighthouse], the Chrome plugin and command line testing tool, includes time to interactive as one of the metrics it tests. To test, run either the plugin on your site or the [CLI tool](https://developers.google.com/web/tools/lighthouse/#cli) with the appropriate options.
 
-##### Chrome web browser
+<h5>Chrome web browser</h5>
 
 Time to interactive can be found in statistics in the Chrome browser.
 
@@ -260,14 +260,14 @@ Time to interactive can be found in statistics in the Chrome browser.
 
 Input latency is the amount of time it takes for the app to respond to the users as they interact with it. It’s very different than the other metrics, as it doesn’t relate to the initial load and displaying of the page; it’s a metric that is constantly being tracked over time, as the user interacts with the site. Due to how input latency works, it’s often best served as a [RUM metric](#real-time-monitoring), as it’s more accurate to gather information as real users are interacting with the site. It’s also possible to test [synthetically](#synthetic-monitoring). For more information, see [Lighthouse's input latency documentation](https://developers.google.com/web/tools/lighthouse/audits/estimated-input-latency).
 
-#### Pros
+<h4>Pros</h4>
 - It's the only metric that tests how the site responds over time as the user interacts with it.
 
-#### Cons
+<h4>Cons</h4>
 - Harder to quantify with other metrics
 - Hard to measure accurately
 
-#### How to measure
+<h4>How to measure</h4>
 The only known way to test input latency right now is with [Lighthouse]. This tool is able to keep a watch on the browser thread to know when it’s free after a user clicks on or interacts with the site.
 
 ### Render start
@@ -276,14 +276,14 @@ Render start is the time from the [first byte](#first-byte) to when the browser 
 
 Render start measures how long it takes for blocking scripts, style sheets, and other processes to complete before the browser can start rendering the page. It will point to problems in the request pipeline, such as not deferring or placing scripts at the end of the document, or requiring too many blocking CSS resources. It’s generally less useful than more complete visual metrics, such as [speed index](#speed-index) and [first paint](#first-paint).
 
-#### Pros
+<h4>Pros</h4>
 - It's very accurate.
 
-#### Cons
+<h4>Cons</h4>
 - Requires complex testing setups such as [WebPagetest]
 - Isn't as thorough as speed index and meaningful first paint
 
-#### How to measure
+<h4>How to measure</h4>
 Render start can be measured along with speed index with [WebPagetest] or similar tools. For more information, see the [speed index](#speed-index) instructions.
 
 ### First paint
@@ -292,15 +292,15 @@ First paint is a browser-based metric supplied that indicates the amount of time
 
 The main reason to use first paint over the more accurate [render start](#render-start) is its ease of use in [realtime user monitoring](#real-time-monitoring), as it’s available in most browsers.
 
-#### Pros
+<h4>Pros</h4>
 - Can be accessed via realtime user monitoring
 - Very easy to test
 
-#### Cons
+<h4>Cons</h4>
 - Not accurate in some browsers
 - Sometimes not accurate at all
 
-#### How to measure
+<h4>How to measure</h4>
 
 First paint can be accessed via the [performance timing API] in supported browsers, such as recent versions of Chrome, Firefox, and Internet Explorer. In Internet Explorer it can be accessed via `performance.timing.msFirstPaint` ([more info from Microsoft](https://msdn.microsoft.com/en-us/library/ff974719(v=vs.85).aspx)). In Chrome it can be accessed via `window.chrome.loadTimes().firstPaintTime` ([more info from Chrome](https://gist.github.com/acdha/a1fd7e91f8cd5c1f6916)). It’s also available in most testing tools.
 
@@ -308,30 +308,30 @@ First paint can be accessed via the [performance timing API] in supported browse
 
 First byte is time from which the first request went out from the browser to the server, to when the first byte from the server comes back to the browser. It measures the time it takes the browser to respond, so it's sometimes called "backend time".
 
-#### Pros
+<h4>Pros</h4>
 - Good way to find problems with backend systems related to performance
 - Easy to test, and available in most testing tools
 
-#### Cons
+<h4>Cons</h4>
 - Doesn't tell the big picture, like speed index or meaningful first paint
 - Doesn't get into details of backend response, so might be better served by more backend-related tools rather than browsers
 
-#### How to measure
+<h4>How to measure</h4>
 First byte is available in the standardized Navigation Timing API for any browsers that support it. It’s under the `responseStart` event. It’s also available in most testing tools.
 
 ### Total page weight
 
 This metric, also called "total requests", is an accrual of all a site's resource weights, measured in kilobytes or megabytes, including the HTML of the page itself. It's useful for setting weight budgets on a site, which are easy to pass to developers and designers. It doesn't always tell the whole story of performance, as performance often depends on how a page loads those requests.
 
-#### Pros
+<h4>Pros</h4>
 - Easy understand at all points in the process, from design to development
 - Easy to test
 - Can be tested with [RUM](#real-time-monitoring)
 
-#### Cons
+<h4>Cons</h4>
 - Doesn't tell the whole story of site performance, as it also matters how the resources are loaded
 
-#### How to measure
+<h4>How to measure</h4>
 Total resource weight can be calculated with the [resource timing API](https://developer.mozilla.org/en-US/docs/Web/API/Resource_Timing_API/Using_the_Resource_Timing_API):
 
 ```js
@@ -349,14 +349,14 @@ The number of requests is the total number of requests that the page makes while
 
 Note: The number of requests matters much less if your site is being served over HTTP/2. For more information on HTTP/2 and it's implications on site speed, [see our guide](/performance/http2).
 
-#### Pros
+<h4>Pros</h4>
 - Very easy to test
 
-#### Cons
+<h4>Cons</h4>
 - Will become obsolete for any site served over HTTP/2
 - Doesn't account for resources being served over multiple domains, so doesn't always impact performance directly
 
-#### How to measure
+<h4>How to measure</h4>
 
 The number of requests can be obtained with the [resource timing API](https://developer.mozilla.org/en-US/docs/Web/API/Resource_Timing_API/Using_the_Resource_Timing_API):
 
@@ -370,15 +370,15 @@ The number of DOM nodes is a rough measure of the amount of HTML content on the 
 
 When relating DOM node count to performance, it’s usually more important to maintain a high upper limit rather than continually trying to reduce the count. This is because DOM nodes only become a problem for performance when there are a lot of them --- specifically, upwards of 1,500. Removing a small number of DOM nodes from your site if there are already fewer than 1,500 won't have a noticeable affect on performance. DOM node count also relates to input latency: If the browser has too many DOM nodes to manage, it will not be able to keep up with the user’s interactions as quickly.
 
-#### Pros
+<h4>Pros</h4>
 - Easy to test
 - Can be tested with [RUM](#real-time-monitoring)
 
-#### Cons
+<h4>Cons</h4>
 
 - Reducing the number of DOM nodes doesn’t usually have a large impact on performance.
 
-#### How to measure
+<h4>How to measure</h4>
 
 You can access the number of DOM nodes on any page via the DOM API in all browsers:
 

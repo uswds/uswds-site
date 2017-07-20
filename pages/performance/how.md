@@ -234,19 +234,19 @@ In this section, we’ll discuss a few of the many ways to track web performance
 
 Tracking performance through a new, or existing, Continuous Integration (CI) service can often be the cheapest and most robust tracking method. Usually tracking on a CI is more geared to the developer team, but all team members can access the information on the CI and incorporate it into their workflow.
 
-##### What you’ll need:
+<h5>What you'll need:</h5>
 
 - A continuous integration server or service, which is able to run your site’s build at certain points during code changes. Some example free services include [CircleCI](https://circleci.com/) or [Travis CI](https://travis-ci.org/).
 - A build process that can run your website in a local, real or test environment, so that it can be visited at a localhost or staging URL
 - The ability to add new tools to be run during your continuous integration build
 
-##### Pros
+<h5>Pros</h5>
 
 - See speed changes at a very early part in the code release process, before it makes it to the live site
 - Can block code from going to production that would cause large speed slowdowns
 - Can run in multiple environments, like dev or staging
 
-##### Cons
+<h5>Cons</h5>
 
 - Harder to involve the full team in site performance tracking
 - Don’t know if simulated environment in build is close to what real users are experiencing
@@ -255,16 +255,16 @@ Tracking performance through a new, or existing, Continuous Integration (CI) ser
 
 Real-time user monitoring (RUM) is the only performance tracking method that allows you to see true performance measurements from users, getting your team to a closer understanding of how they experience the site. There’s plenty of information about RUM monitoring in the glossary. There are also costs and benefits to this solution.
 
-##### What you’ll need:
+<h5>What you'll need:</h5>
 
 - Ability to add a JS script to your site to track performance
 - A paid backend service provider or manual backend service to collect performance data. An example service is [SpeedCurve](https://speedcurve.com/).
 
-##### Pros
+<h5>Pros</h5>
 
 - The most accurate measurement of what users are experiencing
 
-##### Cons
+<h5>Cons</h5>
 
 - Not possible to measure important metrics, such as [Speed index](../glossary/#speed-index), meaningful first paint, [input latency](../glossary/#input-latency)
 - Requires many users to see useful data, more than 500 uniques per day
@@ -274,14 +274,14 @@ Real-time user monitoring (RUM) is the only performance tracking method that all
 
 A Content Management Solution (CMS) tracker should only be used if your site has a CMS, and your research has shown that the majority of performance issues relate to content being updated in the CMS. This solution will track and report on performance during the CMS content editing process.
 
-##### What you’ll need:
+<h5>What you'll need:</h5>
 
-##### Pros
+<h5>Pros</h5>
 
 - Can alert users that may not be as familiar with performance when they’re writing CMS content that has performance implications
 - Only reports performance when things in the system could change
 
-##### Cons
+<h5>Cons</h5>
 
 - Lack of tools in CMS performance tracking, so relatively hard to configure
 

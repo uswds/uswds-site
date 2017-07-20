@@ -44,7 +44,7 @@ If you have a new implementation to add to this list, please [open an issue] or 
     </tr>
   </thead>
 {% for impl in site.data.implementations %}
-  <tr id="{{ impl.name | slugify }}">
+  <tr id="{% if impl.id %}{{ impl.id }}{% else %}{{ impl.name | slugify }}{% endif %}">
     <th scope="row">
       <strong><a href="{{ impl.url }}">{{ impl.name }}</a></strong>
     </th>

@@ -13,6 +13,7 @@ dependencies:
 
 test:
   pre:
+    - cd node_modules/uswds && npm run federalist
     - gulp -v
     - scss-lint -v
     - jekyll -v

@@ -17,7 +17,7 @@ You will need to have the following installed on your machine before following t
 1. Ruby v2.2.2+, [Installation guides](https://www.ruby-lang.org/en/documentation/installation/)
 1. Node v4.2.3+, [Installation guides](https://nodejs.org/en/download/)
 1. Bundler v1.12.3+, [Installation guides](http://bundler.io/v1.13/guides/using_bundler_in_application.html#getting-started---installing-bundler-and-bundle-init)
-
+1. Chrome v59 or higher (v60 if on Windows)
 
 ### Building the documentation with gulp
 
@@ -43,7 +43,7 @@ Here are a few other utility commands you may find useful:
 
 - `npm run lint`: Runs `eslint` and `sass-lint` against JavaScript and Sass files.
 
-- `npm test`: Runs `npm run lint` and can also be used to run any tests.
+- `npm test`: Runs all tests and linters.
 
 - `npm run watch`: Runs a series of commands that watches for any changes in both the Standards node module and the root level asset folders in this repo.
 
@@ -75,6 +75,23 @@ https://federalist.fr.cloud.gov/preview/18f/web-design-standards-docs/develop/
 ### Adding content to the "Updates" section
 
 See the [`_posts` directory](_posts/#readme) for instructions on adding updates.
+
+### Dynamic content
+
+Some of the content on the documentation site is dynamically fetched from
+GitHub. If you want to ensure that its API won't rate-limit you, you
+may want to
+[create an access token](https://github.com/blog/1509-personal-api-tokens)
+and assign it to your `GITHUB_ACCESS_TOKEN` environment variable.
+
+The dynamic content is stored in the `.jekyll_get_cache` directory and
+won't be re-fetched once it's cached there. However, this means that your
+data can get stale over time, so if you want to ensure that your site
+is using the very latest data, you'll want to clear the cache by running:
+
+```
+rm -rf .jekyll_get_cache
+```
 
 ## Contributing
 

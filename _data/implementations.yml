@@ -6,6 +6,15 @@
   version: 0.12.0
   notes: "This package provides access to the Standards in [Django](https://www.djangoproject.com/) applications."
 
+- name: Django
+  url: http://django-uswds-forms.readthedocs.io/en/latest/
+  author:
+    name: 18F
+    url: https://github.com/18F
+  version: 0.0.3
+  notes: |
+    This package provides Django Forms integration with the Standards.
+
 - name: Drupal
   url: https://www.drupal.org/project/uswds
   author:
@@ -13,6 +22,14 @@
     url: https://www.drupal.org/u/brockfanning
   version: 1.x
   notes: "This base theme focuses on tweaking Drupal's markup so that it will work with the USWDS library. Some CSS is added to deal with unavoidable Drupal quirks, but only as a last resort."
+
+- name: Jekyll
+  url: https://github.com/18f/uswds-jekyll
+  author:
+    name: 18F
+    url: https://github.com/18F
+  version: 1.1.1
+  notes: "A [Jekyll](https://jekyllrb.com/) theme for the Standards."
 
 - name: npm and node-sass
   url: https://github.com/openbrian/18f-contrib-web-design-standards

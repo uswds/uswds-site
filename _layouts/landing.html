@@ -23,6 +23,26 @@ layout: default
   </section>
   {% endif %}
 
+  {% if page.graphic_list %}
+  <section class="usa-section usa-graphic_list">
+    <div class="usa-grid usa-graphic_list-row">
+      {% for list_item in page.graphic_list.list_item %}
+        <div class="usa-width-one-fourth usa-media_block">
+          <img class="usa-media_block-img"  src="{{ list_item.image.src | relative_url }}" alt="{{ list_item.image.alt }}">
+          <div class="usa-media_block-body">
+            {% if list_item.topic %}<h3>{{ list_item.topic }}</h3>{% endif %}
+            {{ list_item.description | markdownify }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <div class="usa-grid">
+    <hr class="homepage-rule center-diamond">
+  </div>
+
   <section class="usa-grid usa-section">
     {{ content }}
   </section>

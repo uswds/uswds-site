@@ -1,3 +1,5 @@
+require 'uri'
+
 module USWDS
 
   # Return true if a == b, false otherwise:
@@ -36,6 +38,16 @@ module USWDS
       .first
   end
 
+  def remove_relative_links(content)
+    content.gsub(/\<a href="(?!https?:)([^"]+)"\>(.+?)\<\/a\>/, '\2')
+  end
+
+  def absolutify_links(content, base_url)
+    content.gsub(/href="(?!https?:)([^"]+)"/){
+      absolute = URI.join(base_url, $1)
+      "href=\"#{absolute}\""
+    }
+  end
 end
 
 Liquid::Template.register_filter(USWDS)

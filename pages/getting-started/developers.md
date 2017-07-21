@@ -29,13 +29,13 @@ To use the Web Design Standards on your project, you’ll need to include the CS
 
 First, download the Web Design Standards assets:
 
-<a class="link-download" href="https://github.com/18F/web-design-standards/releases/download/v{{ site.version }}/uswds-{{ site.version }}.zip">Download code</a>
-<span class="link-download-subtext">Version {{ site.version }}</span>
+<a class="link-download" href="https://github.com/18F/web-design-standards/releases/download/v{{ site.data.uswds_version }}/uswds-{{ site.data.uswds_version }}.zip">Download code</a>
+<span class="link-download-subtext">Version {{ site.data.uswds_version }}</span>
 
 Then, add the following folders into a relevant place in your code base — likely a directory where you keep third-party libraries:
 
 ```
-uswds-{{ site.version }}/
+uswds-{{ site.data.uswds_version }}/
 ├── js/
 │   ├── uswds.min.js.map
 │   ├── uswds.min.js
@@ -71,8 +71,6 @@ the browser. The examples above recommend using the minified versions.
 And that’s it — you should be set to use the Standards.
 
 ### Using npm
-
-Note: Using npm to install the Standards will include jQuery version `2.2.0`. Please make sure that you’re not including any other version of jQuery on your page.
 
 If you have `node` installed on your machine, you can use npm to install the Standards. Add `uswds`
 to your project’s `package.json` as a dependency:
@@ -116,7 +114,7 @@ node_modules/uswds/dist/css/uswds.css
 
 If you’re using another framework or package manager that doesn’t support NPM, you can find the source files in this repository and use them in your project. Otherwise, we recommend that you follow the [download instructions](#download). Please note that the core team [isn’t responsible for all frameworks’ implementations](https://github.com/18F/web-design-standards/issues/877).
 
-If you’re interested in maintaining a package that helps us distribute the U.S. Web Design Standards, the project’s build system can help you create distribution bundles to use in your project. Please read our [contributing guidelines](CONTRIBUTING.md#building-the-project-locally-with--gulp-) to locally build distributions for your framework or package manager.
+If you’re interested in maintaining a package that helps us distribute the U.S. Web Design Standards, the project’s build system can help you create distribution bundles to use in your project. Please read our [contribution guidelines][] to locally build distributions for your framework or package manager.
 
 ### Need installation help?
 
@@ -142,6 +140,25 @@ You can also email us directly at [uswebdesignstandards@gsa.gov](mailto:uswebdes
 **For more information, visit:
 [https://pages.18f.gov/frontend/css-coding-styleguide/](https://pages.18f.gov/frontend/css-coding-styleguide/)**
 
+## JS customization
+
+**Unfortunately, customizing the JavaScript for the standards currently requires NodeJS and a module bundler like Browserify or Webpack. We apologize for this inconvenience, and are working to resolve it in a future release of the Standards.**
+
+The JavaScript for the standards is separated into components in the same manner as the visual interface which is all initialized with event handlers when the DOM is ready. These components are accessible as CommonJS modules that can be required in other JavaScript files which then must be built for the browser. The components are currently not accessible in the global browser scope, but can be extended to be included by requiring `components` and setting it to a global scope:
+
+```js
+window.uswds = require('./components');
+```
+
+Each component has a standardized interface that can be used to extend it further. The components store a HTML class name (e.g. `.usa-accordion-button[aria-controls]`) that's used to link HTML elements with the JS component, so when a component is initialized, it will search through the current HTML DOM finding all elements that match its class and inialize the component JavaScript for those elements. The primary methods each component has are as follows:
+
+- `on`: Initialize a component's JavaScript behavior by passing the root element, such as `window.document`.
+- `off`: The opposite of `on`, de-initializes a component, removing any JavaScript event handlers on the component.
+- `hide`: Hide the whole component.
+- `show`: Shows a whole, hidden component.
+- `toggle`: Toggles the visibility of a component on and off based on the previous state.
+
+Some components have additional methods for manipulating specific aspects of them based on what they are and what they do. These can be found in the component's JS file.
 
 ## Customization and theming
 
@@ -187,7 +204,7 @@ NOTE: If you plan on upgrading to newer versions of the Standards in the future,
 ## Where things live
 
 * **HTML** markup for the components is located in: `src/html` in the site root.
-* **Sass** styles are located in: `src/stylesheets/ (/core, /elements, /components)`. **Compiled CSS** is located in the [downloadable zip file]({{ site.repos[0].url }}/releases/download/v{{ site.version }}/uswds-{{ site.version }}.zip) .
+* **Sass** styles are located in: `src/stylesheets/ (/core, /elements, /components)`. **Compiled CSS** is located in the [downloadable zip file]({{ site.repos[0].url }}/releases/download/v{{ site.data.uswds_version }}/uswds-{{ site.data.uswds_version }}.zip) .
 * **JS** is located in: `src/js/components (accordion.js, toggle-field-mark.js, toggle-form-input.js, validator.js)`.
 * **Fonts** are located in: `src/fonts`.
 * **Images** and icons are located in: `src/img`.
@@ -200,6 +217,8 @@ The Standards also meet the [WCAG 2.0 AA accessibility guidelines](https://www.w
 
 ## Contribution guidelines
 
-We’re so glad you’re thinking about contributing to the Standards! You can find our complete [contribution guidelines](https://github.com/18F/web-design-standards/blob/develop/CONTRIBUTING.md) in our repo — please review them before submitting your contribution.
+We’re so glad you’re thinking about contributing to the Standards! You can find our complete [contribution guidelines][] in our repo — please review them before submitting your contribution.
 
 If you have any questions about these guidelines (or the Standards, more generally), don’t hesitate to [email us](mailto:uswebdesignstandards@gsa.gov) — we’ll get back to you within 48 hours.
+
+[contribution guidelines]: https://github.com/18F/web-design-standards/blob/develop/CONTRIBUTING.md

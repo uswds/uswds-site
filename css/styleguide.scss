@@ -10,12 +10,93 @@ body {
   height: auto;
 }
 
+// USWDS Overrides
+
+.usa-footer-secondary_section {
+  background-color: $color-primary-alt-lightest;
+}
+
+.usa-graphic_list .usa-media_block-img {
+  max-width: 7rem;
+}
+
 .usa-hero {
-  background-image: url('#{$site-image-path}/home/fireworks.jpg');
+  background-image: url('#{$site-image-path}/home/wds-home-new-2x.png');
+  padding-bottom: 7.2rem;
+  padding-top: 3.5rem;
 }
 
 .usa-hero-callout .usa-button {
   margin-top: 2em;
+}
+
+.usa-hero-callout {
+  border-radius: 0.3rem;
+  max-width: 46rem;
+  padding: 3.6rem 3rem;
+
+  & > *:first-child {
+    margin-bottom: 0;
+  }
+}
+
+.usa-hero-callout-alt {
+  font-size: 2.7rem;
+}
+
+.usa-media_block-body {
+  & > *:first-child {
+    font-size: $media-block-header-font-size;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  & > p {
+    margin: 0.5rem 0;
+    font-size: $media-block-body-font-size;
+  }
+}
+
+.usa-media_block-img {
+  float: none;
+  margin-bottom: 1rem;
+}
+
+.usa-section-dark p {
+  margin-top: 0.8rem;
+  font-weight: $font-light;
+}
+
+// Override for 4x1 media grid when it collapses to 2x2
+@media screen and (max-width: $large-screen) and (min-width: $medium-screen) {
+  .usa-graphic_list .usa-graphic_list-row .usa-media_block:nth-child(-n+2) {
+    margin-bottom: 6rem;
+  }
+}
+
+// Fancy Horizontal Rule //
+
+.homepage-rule {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  position: relative;
+
+  &.center-diamond {
+    background: $color-primary;
+    text-align: center;
+
+    &:before {
+      content: "◆";
+      display: inline-block;
+      position: relative;
+      top: -0.7em;
+      font-size: 1.5em;
+      padding: 0 0.25em;
+      color: $color-secondary;
+      background: $color-white;
+    }
+  }
 }
 
 // Header -------------- //
@@ -202,9 +283,9 @@ body {
   }
 
   a {
-    color: $color-gray;
-    font-size: $h5-font-size;
-    font-weight: bold;
+    color: $color-gray-dark;
+    font-size: $site-nav-font-size;
+    font-weight: normal;
     letter-spacing: 0.3px;
     line-height: $height-nav-secondary;
     text-decoration: none;
@@ -1032,8 +1113,6 @@ code {
 }
 
 // Alt font styles
-
-$font-light: 300;
 
 @mixin font-lead-alt {
   font-size: $base-font-size;

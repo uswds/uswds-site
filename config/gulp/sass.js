@@ -37,7 +37,8 @@ gulp.task('scss-lint', function (done) {
     ])
     .pipe(linter({
       config: '.scss-lint.yml',
-    }));
+    }))
+    .pipe(linter.failReporter('E'));
 
 });
 

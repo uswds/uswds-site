@@ -61,7 +61,7 @@ defaults:
       layout: post
 
 # Build settings
-markdown: redcarpet
+markdown: RedcarpetExtender
 redcarpet:
   extensions:
     - smart

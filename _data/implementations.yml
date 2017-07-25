@@ -7,6 +7,7 @@
   notes: "This package provides access to the Standards in [Django](https://www.djangoproject.com/) applications."
 
 - name: Django
+  id: django-uswds-forms
   url: http://django-uswds-forms.readthedocs.io/en/latest/
   author:
     name: 18F
@@ -80,6 +81,7 @@
   notes: "This is not a reusable WordPress theme, but an implementation of the Standards for [bbg.gov](https://www.bbg.gov/)."
 
 - name: WordPress
+  id: wordpress-benjamin
   url: https://github.com/kyle-jennings/Benjamin
   author:
     name: Kyle Jennings

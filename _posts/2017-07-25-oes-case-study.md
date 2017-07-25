@@ -22,19 +22,19 @@ When we talk with other offices within government who want to redesign their sit
 
 **Standards team:** How did you integrate your work with the Standards?
 
-**Maureen Earley:** We worked with one of 18F’s developers who was doing the various coding elements for us. She redid the back-end of our site to be compliant with the Standards.
+**Maureen Earley:** We worked with one of 18F’s developers who was doing the various coding elements for us. She redid the back-end of our site to be compliant with the [USWDS Jekyll theme](https://github.com/18f/uswds-jekyll).
 
 **Standards team:** What were the benefits you gained by using the Standards?
 
-**Maureen Earley:** There were several benefits: a) it’s good design, and b) it’s great that we’re contributing to a cohesive branding approach across all of government. Ideally, we will get to a reality that, when you visit a government website, you know you’re on a government site due to the design consistency.
+**Maureen Earley:** There were several benefits: (a) it’s good design, and (b) it’s great that we’re contributing to a cohesive branding approach across all of government. Ideally, we will get to a reality that, when you visit a government website, you know you’re on a government site due to the design consistency.
 
-**Standards team:** Is there anything the Standards  team could do to help you in your  efforts?
+**Standards team:** Is there anything the Standards team could do to help you in your efforts?
 
-**Maureen Earley:** I was unaware of the Public Slack channel, but I want to join because of my personal interest in design.  Creating buy-in for the Standards within the government community is really important.
+**Maureen Earley:** I was unaware of the public Slack channel, but I want to join because of my personal interest in design.  Creating buy-in for the Standards within the government community is really important.
 
 **Standards team:** Advice for other agencies?
 
-**Maureen Earley:** The U.S. Web Design Standards really make life easier for all of us working in government, which in turn can save taxpayer dollars. Web developers (or even teams without web developers!) have a starting ground to work from, you don’t have to come up with your own branding, and it's a proven toolkit of design features that make government services and information online more accessible to the public. for a better government experience.
+**Maureen Earley:** The U.S. Web Design Standards really make life easier for all of us working in government, which in turn can save taxpayer dollars. Web developers (or even teams without web developers!) have a starting ground to work from, you don’t have to come up with your own branding, and it's a proven toolkit of design features that make government services and information online more accessible to the public for a better government experience.
 
 ---
 

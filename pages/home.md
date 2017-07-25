@@ -1,7 +1,7 @@
 ---
 permalink: /
 layout: landing
-title: Announcing version 1.1
+title: A design system for government digital services
 hero:
   callout: U.S. Web Design Standards
   content: The Standards are a design system that allows federal agencies to quickly prototype and deploy digital products using a baseline of design patterns.

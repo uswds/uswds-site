@@ -18,7 +18,7 @@ The U.S. Web Design Standards team continues to sit down with various agencies w
 
 **Standards team:** How did you integrate the Standards into your work?
 
-**Olivier Kamanda:** The site is built is nodejs and angular2, which allowed us to use many of the components. We’ve used the tables, headings and menus. For our page layout, we use Bootstrap in conjunction with the Standards.
+**Olivier Kamanda:** The site is built is Node.js and Angular 2, which allowed us to use many of the components. We’ve used the tables, headings and menus. For our page layout, we use Bootstrap in conjunction with the Standards.
 
 **Standards team:** What were the benefits you gained by using the Standards?
 

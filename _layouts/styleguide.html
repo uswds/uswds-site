@@ -20,6 +20,9 @@ layout: default
         {% endunless %}
       {% endif %}
       <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
+      <span class="components-library-link">
+        <a href="{{ page.component_url }}">View in Component Library</a>
+      </span>
     </header>
 
     {% include lead.html text=page.lead %}

@@ -366,6 +366,16 @@ body {
       display: inline-block;
       margin-top: 0;
     }
+
+    .components-library-link {
+      float: right;
+      padding-top: 20px;
+
+      a {
+        @include external-link(external-link, external-link-hover);
+        text-decoration: none;
+      }
+    }
   }
 
   section {

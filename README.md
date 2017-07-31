@@ -63,6 +63,9 @@ Sometimes you will want to use the latest version of the `web-design-standards` 
 
 You are now using the latest version of the Standards via your cloned version on your local machine. To stop using this version, type `npm unlink uswds` from the _root level_ of the `web-design-standards-docs` directory.
 
+### Fractal components
+
+The Web Design Standards uses the [fractal design system builder](http://fractal.build/) to organize and document the components. This documentation site pulls the components from fractal to showcase them on the site. This is done with a custom `fractal_component` Jekyll tag, which takes the full name of the fractal component as a parameter.
 
 ### Deployment and previews
 

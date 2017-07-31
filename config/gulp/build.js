@@ -60,7 +60,10 @@ gulp.task('build-uswds-if-needed', function () {
           [ 'run', 'federalist' ],
           { stdio: 'inherit', cwd: uswdsDir }
         )
-        .on('error', reject)
+        .on('error', err => {
+          console.log(err);
+          reject(new Error(err));
+        })
         .on('exit', code => {
           if (code === 0) {
             resolve();

@@ -14,8 +14,17 @@ module IncrementalRegenerationFixer
     interdependent_files = []
 
     config = site.config['incremental_regeneration_fixer']
+    if not config
+      raise ("You probably want to specify incremental_regeneration_fixer " +
+             "config if you want to use this plugin")
+    end
 
-    for glob in config['interdependent_files']
+    globs = config['interdependent_files']
+    if not globs
+      return
+    end
+
+    for glob in globs
       group = Dir["#{site.source}/#{glob}"]
       if group.length == 0
         raise ("The path '#{glob}' contains no files! Please fix " +

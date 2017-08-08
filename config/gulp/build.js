@@ -43,6 +43,7 @@ gulp.task('clean-assets', function (done) {
 
 function spawnP(cmd, args, opts) {
   return new Promise((resolve, reject) => {
+    console.log(`running ${cmd} ${args}`);
     child_process.spawn(
         cmd,
         args,
@@ -78,7 +79,9 @@ gulp.task('build-uswds-if-needed', function () {
     //  "federalist": "npm install --dev && gulp build && fractal build",
     const sharedOpts = { stdio: 'inherit', cwd: uswdsDir };
     return Promise.all([
-      spawnP('npm', [ 'install', '--only=dev', '--ignore-scripts' ], sharedOpts)
+      spawnP('npm', [ 'install', '--only=dev', '--ignore-scripts' ], sharedOpts),
+      spawnP('gulp', ['build', `--cwd ${uswdsDir}` ], sharedOpts),
+      spawnP('./node_modules/.bin/fractal', [ 'build' ], sharedOpts)
     ]);
   }
 });

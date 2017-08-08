@@ -85,13 +85,8 @@ gulp.task('build-uswds-if-needed', function () {
       ));
     }
 
-    //  "federalist": "npm install --dev && gulp build && fractal build",
     const sharedOpts = { stdio: 'inherit', cwd: uswdsDir };
-    return spawnP('npm', [ 'install', '--only=dev', '--ignore-scripts' ],
-                  sharedOpts)
-      .then(() => spawnP('gulp', [ 'build' ], sharedOpts))
-      .then(() => spawnP('./node_modules/.bin/fractal', [ 'build' ],
-                         sharedOpts));
+    return spawnP('npm', [ 'run', 'federalist' ], sharedOpts);
   }
 });
 

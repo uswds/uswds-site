@@ -69,6 +69,7 @@ gulp.task('build-uswds-if-needed', function () {
   const rootDir = path.normalize(path.join(__dirname, '..', '..'));
   const uswdsDir = path.join(rootDir, 'node_modules', 'uswds');
   const fractalIndex = path.join(uswdsDir, 'build', 'index.html');
+  const gulpfile = path.join(uswdsDir, 'gulpfile.js');
 
   if (fs.existsSync(fractalIndex)) {
     dutil.logMessage('build-uswds-if-needed', 'USWDS is already built.');
@@ -76,13 +77,21 @@ gulp.task('build-uswds-if-needed', function () {
   } else {
     dutil.logMessage('build-uswds-if-needed', 'Building USWDS...');
 
+    if (!fs.existsSync(gulpfile)) {
+      return Promise.reject(new Error(
+        `${gulpfile} does not exist! You need a newer version of USWDS; ` +
+        `specifically, one that includes the following PR: ` +
+        `https://github.com/18F/web-design-standards/pull/2050`
+      ));
+    }
+
     //  "federalist": "npm install --dev && gulp build && fractal build",
     const sharedOpts = { stdio: 'inherit', cwd: uswdsDir };
-    return Promise.all([
-      spawnP('npm', [ 'install', '--only=dev', '--ignore-scripts' ], sharedOpts),
-      spawnP('gulp', ['build', `--cwd ${uswdsDir}` ], sharedOpts),
-      spawnP('./node_modules/.bin/fractal', [ 'build' ], sharedOpts)
-    ]);
+    return spawnP('npm', [ 'install', '--only=dev', '--ignore-scripts' ],
+                  sharedOpts)
+      .then(() => spawnP('gulp', [ 'build' ], sharedOpts))
+      .then(() => spawnP('./node_modules/.bin/fractal', [ 'build' ],
+                         sharedOpts));
   }
 });
 

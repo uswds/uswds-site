@@ -41,6 +41,26 @@ gulp.task('clean-assets', function (done) {
   );
 });
 
+function spawnP(cmd, args, opts) {
+  return new Promise((resolve, reject) => {
+    child_process.spawn(
+        cmd,
+        args,
+        opts
+      )
+      .on('error', err => {
+        reject(new Error(err));
+      })
+      .on('exit', code => {
+        if (code === 0) {
+          resolve();
+        } else {
+          reject(new Error("Building USWDS failed!"));
+        }
+      });
+  });
+}
+
 // We might be using USWDS from a git repository instead of npm, in
 // which case it might not have the pre-built assets we need. If that's
 // the case, we'll want to build those assets.
@@ -54,24 +74,12 @@ gulp.task('build-uswds-if-needed', function () {
     return Promise.resolve();
   } else {
     dutil.logMessage('build-uswds-if-needed', 'Building USWDS...');
-    return new Promise((resolve, reject) => {
-      child_process.spawn(
-          'npm',
-          [ 'run', 'federalist' ],
-          { stdio: 'inherit', cwd: uswdsDir }
-        )
-        .on('error', err => {
-          console.log(err);
-          reject(new Error(err));
-        })
-        .on('exit', code => {
-          if (code === 0) {
-            resolve();
-          } else {
-            reject(new Error("Building USWDS failed!"));
-          }
-        });
-    });
+
+    //  "federalist": "npm install --dev && gulp build && fractal build",
+    const sharedOpts = { stdio: 'inherit', cwd: uswdsDir };
+    return Promise.all([
+      spawnP('npm', [ 'install', '--only=dev', '--ignore-scripts' ], sharedOpts)
+    ]);
   }
 });
 

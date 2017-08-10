@@ -86,8 +86,7 @@ gulp.task('build-uswds-if-needed', function () {
     }
 
     const sharedOpts = { stdio: 'inherit', cwd: uswdsDir };
-    return spawnP('npm', [ '--version' ], sharedOpts)
-      .then(() => spawnP('npm', [ 'run', 'federalist' ], sharedOpts));
+    return spawnP('npm', [ 'run', 'federalist' ], sharedOpts);
   }
 });
 

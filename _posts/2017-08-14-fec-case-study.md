@@ -57,7 +57,7 @@ if this looks good and works.
 **Standards team:** Is there anything the Standards team could do to help
 you in your efforts?
 
-**Thibault:** The FEC site has really detailed financial tables and we’d would
+**Thibault:** The FEC site has really detailed financial tables and we would
 love to see recommendations for data-heavy sites. It would also help to gave
 best practices for how to handle long-form content. The FEC, like other
 agencies, has a lot of compliance guidance, which can result in very long

@@ -185,13 +185,6 @@ order: 02
           <h6 class="usa-heading-alt">Page Performance</h6>
           <p><span class="usa-label-big">Fast</span></p>
           <p>Ideal number of fonts. Will allow for optimal page load performance.</p>
-          <h6 class="usa-heading-alt">Example</h6>
-          <p>
-            <a class="media_link" href="http://playbook.cio.gov">
-              <img src="{{ site.baseurl }}/assets/img/merriweatheronly_example_playbook.png" alt="U.S. Digital Service Playbook example">
-            </a>
-            <a href="http://playbook.cio.gov">U.S. Digital Service Playbook</a>
-          </p>
         </aside>
       </div>
       <h6 class="usa-heading-alt">Web Hierarchy</h6>

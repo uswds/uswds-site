@@ -15,9 +15,9 @@ of the Standards on [fec.gov][].
 **Standards team:** How did you find out about the U.S. Web Design Standards?
 
 **Jennifer Thibault:** We knew of the USWDS project early on since it was
-kicked off by a team inside 18F. But, we needed to get out a basic set of
-pages and content models on fec.gov [before][] the Standards team released
-their first version.
+kicked off by a team inside 18F. But, we needed to get out a
+[basic set of pages and content models][612] on fec.gov the Standards team
+released their first version.
 
 In 2015, we started with a visual identity audit to show our team what the
 audience was seeing: “Here’s the 12 different ways you’re using your logo and
@@ -75,7 +75,7 @@ the resources and the team behind the Standards, because you’ve already been
 asking questions.
 
 [fec.gov]: https://fec.gov/
-[before]: https://github.com/18F/fec-style/issues/612
+[612]: https://github.com/18F/fec-style/issues/612
 
 ---
 

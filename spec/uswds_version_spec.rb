@@ -8,6 +8,11 @@ RSpec.describe USWDSVersion do
       expect(make_version_nice('blarg')).to eq('blarg')
     end
 
+    it 'supports the github: protocol' do
+      expect(make_version_nice('github:18f/web-design-standards#foo')).to \
+        eq('foo')
+    end
+
     it 'gets the commit-ish if based on official repo' do
       expect(make_version_nice('18F/web-design-standards#foo')).to eq('foo')
     end

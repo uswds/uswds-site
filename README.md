@@ -75,6 +75,30 @@ Federalist also builds public previews for each branch pushed to GitHub. For ins
 
 https://federalist.fr.cloud.gov/preview/18f/web-design-standards-docs/develop/
 
+### Updating the USWDS version
+
+To update the version of USWDS being used, change the version that
+`package.json` specifies in its `dependencies` section.
+
+We currently pull USWDS via git rather than npm, as it allows us to
+use any tag or commit during development. To install a specific commit,
+you can use e.g.:
+
+```
+npm install --save 18F/web-design-standards#fb49e4f
+```
+
+Alternatively, to use a specific version tag, use e.g.:
+
+```
+npm install --save 18F/web-design-standards#v1.3.1
+```
+
+This version number or commit hash is automatically parsed when the site
+is built and used for display on the site (see `_plugins/uswds_version.rb`
+for details). Therefore, be sure to use an actual version tag on all
+`master` branch commits--otherwise a commit hash will show up as the
+version on the production site, which would be confusing.
 
 ### Adding content to the "Updates" section
 

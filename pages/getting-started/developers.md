@@ -211,7 +211,12 @@ NOTE: If you plan on upgrading to newer versions of the Standards in the future,
 
 ## Notes on accessibility
 
-We’ve designed the Standards to support older and newer browsers through progressive enhancement, and they officially support Internet Explorer 9 and up, along with the latest versions of Chrome, Firefox, and Safari. Internet Explorer 8 and below generally see very low usage, and most agency websites should be able to safely begin support at Internet Explorer 9.
+- Originally the Standards were desiged to support Internet Explorer 9 and up
+- Now we're going to support any browser above 2% usage as defined on analytics.gov
+- This currently means we support only Internet Explorer 11 and up.
+- There will be no breaking changes in older browsers until a major release, ie 2.0.
+
+We’ve designed the Standards to support older and newer browsers through progressive enhancement. The Standards will officially support any browser **above 2% usage** as defined on [analytics.usa.gov](https://analytics.usa.gov/). This currently means the Standards supports the newest versions of Chrome, Firefox, Safari and Internet Explorer 11 and up. Due to the Standards originally browser support, the Standards will support Internet Explorer 9 and up until the next major release, `2.0`.
 
 The Standards also meet the [WCAG 2.0 AA accessibility guidelines](https://www.w3.org/TR/WCAG20/) and are compliant with [Section 508 of the Rehabilitation Act](http://www.section508.gov/). We’re happy to answer questions about accessibility — email us for more information.
 

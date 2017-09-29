@@ -1,6 +1,7 @@
 # Site settings
 title:  U.S. Web Design Standards
 google_analytics_ua: UA-48605964-43
+components_url: 'https://components.standards.usa.gov'
 
 # this is for pages that don't have a permalink (primarily posts)
 permalink: /whats-new/updates/:year/:month/:day/:title/
@@ -61,7 +62,7 @@ defaults:
       layout: post
 
 # Build settings
-markdown: redcarpet
+markdown: RedcarpetExtender
 redcarpet:
   extensions:
     - smart

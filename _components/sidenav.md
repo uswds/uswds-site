@@ -6,7 +6,7 @@ layout: styleguide
 type: component
 title: Side navigation
 category: UI components
-lead: "Hierarchical, vertical navigation to place at the side of a page. Note: We're currently developing horizontal navigation and headers for the top of a page."
+lead: "Hierarchical, vertical navigation to place at the side of a page."
 ---
 
 {% include code/preview.html component="sidenav" %}

@@ -54,10 +54,10 @@ Sometimes you will want to use the latest version of the `web-design-standards` 
 
 1. Clone the latest version of the [`web-design-standards` repo](https://github.com/18F/web-design-standards/tree/develop).
 1. Run `npm install` to install the dependencies required for the package in the `web-design-standards` directory.
-1. Run `npm run build:package` to create the built version of the Standards in the `web-design-standards` directory.
+1. Run `npm run build` to create the built version of the Standards in the `web-design-standards` directory.
 1. Run `npm link` in the _root level_ of the `web-design-standards` directory on your local machine.
 1. Run `npm link uswds` in the _root level_ of the `web-design-standards-docs` directory on your local machine.
-1. Set the `FRACTAL_BASE_URL` env var to the running fractal instance for `web-design-standards`, for example: `export FRACTAL_BASE_URL="127.0.0.1:3000`.
+1. Set the `FRACTAL_BASE_URL` env var to the running fractal instance for `web-design-standards`. In your terminal window in the `web-design-standards-docs` directory, enter `export FRACTAL_BASE_URL="http://127.0.0.1:3000"`.
 1. Run `npm run watch` in both project directories to have changes automatically built and compiled on changes to any asset files.
 1. In a new terminal window, run `npm start` in the `web-design-standards-docs` directory to start the Jekyll server locally.
 

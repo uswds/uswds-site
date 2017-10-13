@@ -19,6 +19,7 @@ body {
 .page-home {
   .usa-graphic_list .usa-media_block-img {
     max-width: 7rem;
+    margin-right: 2rem;
   }
 
   .usa-hero {
@@ -59,13 +60,15 @@ body {
   }
 
   .usa-media_block-img {
-    float: none;
     margin-bottom: 1rem;
+
+    @include media($large-screen) {
+      float: none;
+    }
   }
 
   .usa-section-dark p {
     margin-top: 0.8rem;
-    font-weight: $font-light;
   }
 
   // Override for 4x1 media grid when it collapses to 2x2

@@ -26,6 +26,7 @@ body {
     background-image: url('#{$site-image-path}/home/wds-home-new-2x.png');
     padding-bottom: 7.2rem;
     padding-top: 3.5rem;
+    -webkit-font-smoothing: antialiased;
   }
 
   .usa-hero-callout .usa-button {
@@ -474,8 +475,11 @@ a.cta {
 // Footer --------------- //
 
 footer.site {
-
   clear: both;
+
+  .usa-button {
+    font-weight: $font-bold;
+  }
 
   .logo-links {
     margin-bottom: 3rem;

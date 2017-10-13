@@ -332,16 +332,14 @@ body {
 // Main Content --------- //
 
 .main-content {
-  @include position(absolute, 4rem 0 0 null);
+  @include position(absolute, null 0 0 null);
   display: inline-block; // starting: not scrolled
   margin-top: 4rem; // starting: not scrolled
   position: relative;
   width: 100%;
-  top: 6.3rem; // height of disclaimer + navbar on mobile
 
   @include media($nav-width) {
     width: calc(100% - #{$width-nav-sidebar});
-    top: 0;
   }
 
   .lt-ie9 & {
@@ -363,7 +361,6 @@ body {
 
   header {
     > h1 {
-      display: inline-block;
       margin-top: 0;
     }
 
@@ -379,10 +376,6 @@ body {
   }
 
   section {
-    > h2 {
-      display: inline-block;
-    }
-
     > .tooltip {
       margin-top: 56px;
     }

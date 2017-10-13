@@ -49,7 +49,6 @@ Here are a few other utility commands you may find useful:
 
 - `npm start -- --incremental`: Runs your local server with incremental regeneration enabled to greatly improve build time. Use instead of `npm start`.
 
-
 ### Using the latest version of the `uswds` package
 
 Sometimes you will want to use the latest version of the `web-design-standards` repo. Follow these steps to do so:

@@ -26,7 +26,7 @@ lead: A standard template for resetting a password
     <ul class="usa-content-list">
       <li>If users need a password to access your site, they will forget that password and need a way to reset it.</li>
       <li>State any password requirements (for example, “Must include one capital letter”) up front. Don’t leave users guessing about password requirements, only to hit them with an error message later.</li>
-      <li>For more guidance, see NIST's <a href="https://github.com/usnistgov/800-63-3/blob/nist-pages/sp800-63b/appA_memorized.md">Appendix A—Strength of Memorized Secrets</a></li>
+      <li>For more guidance, see NIST's <a href="https://github.com/usnistgov/800-63-3/blob/nist-pages/sp800-63b/appA_memorized.md">Appendix A—Strength of Memorized Secrets</a>.</li>
     </ul>
   </div>
 </div>

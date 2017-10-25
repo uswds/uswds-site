@@ -1,7 +1,7 @@
 {% assign _href_key = include.href_key | default: 'href' %}
 {% if _href_key.size == 2 %}
   {% assign _key = _href_key[1] %}
-  {% assign _slug = link[_key] | slugify %}
+  {% assign _slug = link[_key] | replace: '.', '' | slugify %}
   {% assign _href = _href_key[0] | replace: '%', _slug %}
 {% else %}
   {% assign _href = link[_href_key] %}

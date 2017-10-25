@@ -19,8 +19,8 @@ component_url: 'https://components.standards.usa.gov/components/detail/buttons.h
   </button>
   <div id="accordion-bordered-docs" aria-hidden="false" class="usa-accordion-content">
     <h4 class="usa-heading">Implementation</h4>
-    <p>The examples demonstrate how to use button elements. To use a button style on an anchor link, add the <code>usa-button</code> class to your anchor link.</p>
-    <p>To use a different style button on your anchor link, add the special button class in addition to <code>usa-button</code>:</p>
+    <p>The examples demonstrate how to use button elements. To use a button style on a link, add the <code>usa-button</code> class to your link.</p>
+    <p>To use a different style button on your link, add the special button class in addition to <code>usa-button</code>:</p>
     <ul>
       <li><code>usa-button-primary-alt</code></li>
       <li><code>usa-button-secondary</code></li>

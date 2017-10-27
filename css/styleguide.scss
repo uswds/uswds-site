@@ -562,6 +562,18 @@ footer.site {
 
 // Custom styles to illustrate invisible grid for web design standards
 
+.page-grids {
+  .preview {
+    @include margin(0 null 2em);
+    border: 0;
+    padding: 0;
+
+    > *:first-child {
+      margin-top: 1.5em;
+    }
+  }
+}
+
 .grid-example {
   .usa-grid {
     background: $color-grid-light;

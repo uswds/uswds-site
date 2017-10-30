@@ -30,11 +30,11 @@ every few months with the status of our progress, as well as add new
 high-level future requests and ideas.
 
 {% for milestone in site.data.milestones %}
-<section>
+<section id="{{ milestone.id }}-section">
   <h2 id="{{ milestone.id }}">{{ milestone.title }}</h2>
   <ul>
   {% for task in milestone.tasks %}
-    <li>
+    <li id="tooltip-text-{{ task.title | slugify }}">
       {{ task.title }}
       {% if task.status %}
           <a class="usa-label label-{{ task.status | slugify }}" href="{{ task.url }}" aria-describedby="tooltip-text-{{ task.title | slugify }}">

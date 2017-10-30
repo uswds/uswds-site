@@ -30,7 +30,7 @@ every few months with the status of our progress, as well as add new
 high-level future requests and ideas.
 
 {% for milestone in site.data.milestones %}
-<section id="{{ milestone.id }}-section">
+<section>
   <h2 id="{{ milestone.id }}">{{ milestone.title }}</h2>
   <ul>
   {% for task in milestone.tasks %}

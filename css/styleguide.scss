@@ -269,7 +269,7 @@ body {
 
   @include media($nav-width) {
     background-color: $color-white;
-    border-bottom: 1px solid $color-gray-light;
+    border-bottom: 1px solid $color-gray-lighter;
     clear: both;
     display: block;
     height: $height-nav-secondary;

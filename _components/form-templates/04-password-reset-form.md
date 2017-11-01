@@ -28,8 +28,7 @@ lead: A standard template for resetting a password
       <li>For guidance on the technical details of validation, see the
         <a href="/components/form-controls/#validation">validation documentation</a>.</li>
       <li>State any password requirements (for example, “Must include one capital letter”) up front. Don’t leave users guessing about password requirements, only to hit them with an error message later.</li>
-      <li>The requirements shown above are just provided as an example and should not be taken as recommendations.</li>
+      <li>For more guidance on password requirements, see NIST's <a href="https://github.com/usnistgov/800-63-3/blob/nist-pages/sp800-63b/appA_memorized.md">Appendix A—Strength of Memorized Secrets</a>.</li>
     </ul>
   </div>
 </div>
-

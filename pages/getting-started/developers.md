@@ -129,7 +129,7 @@ You can also email us directly at [uswebdesignstandards@gsa.gov](mailto:uswebdes
 * The CSS foundation of this site is built with the **[Sass](https://sass-lang.com)** preprocessor language.
 * Uses **[Bourbon](http://bourbon.io/)** for its simple and lightweight Sass mixin library, and the **[Neat](http://neat.bourbon.io/)** library for the grid framework. Bourbon and Neat are open-source products from **[thoughtbot](https://thoughtbot.com/)**.
 * The CSS organization and naming conventions follow **[18F’s CSS Coding Styleguide](https://pages.18f.gov/frontend/css-coding-styleguide/)**.
-* CSS selectors are **prefixed** with `usa` (For example: `.usa-button`).
+* CSS selectors are **prefixed** with `usa` (For example: `.usa-button`). This identifier helps the design system avoid conflicts with other styles on a site which are not part of the U.S. Web Design Standards.
 * Uses a **[modified BEM](https://pages.18f.gov/frontend/css-coding-styleguide/naming/)** approach created by 18F for naming CSS selectors. Objects in CSS are separated by single dashes. Multi-word objects are separated by an underscore (For example: `.usa-button-cool_feature-active`).
 * Uses **modular CSS** for scalable, modular, and flexible code.
 * Uses **nesting** when appropriate. Nest minimally with up to two levels of nesting.
@@ -211,7 +211,7 @@ NOTE: If you plan on upgrading to newer versions of the Standards in the future,
 
 ## Browser support
 
-We’ve designed the Standards to support older and newer browsers through progressive enhancement. The Standards will officially support any browser **above 2% usage** as defined on [analytics.usa.gov](https://analytics.usa.gov/). This currently means the Standards supports the newest versions of Chrome, Firefox, Safari and Internet Explorer 11 and up. Due to the Standards originally browser support, the Standards will continue to support Internet Explorer 9 and up until the next major release, `2.0`.
+We’ve designed the Standards to support older and newer browsers through progressive enhancement. The Standards will officially support any browser **above 2% usage** as defined on [analytics.usa.gov](https://analytics.usa.gov/). This currently means the Standards supports the newest versions of Chrome, Firefox, Safari and Internet Explorer 11 and up. Due to what browsers the Standards originally supported, the Standards will continue to support Internet Explorer 9 and up until the next major release, `2.0`.
 
 ## Accessibility
 

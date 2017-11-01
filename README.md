@@ -47,6 +47,7 @@ Here are a few other utility commands you may find useful:
 
 - `npm run watch`: Runs a series of commands that watches for any changes in both the Standards node module and the root level asset folders in this repo.
 
+- `npm start -- --incremental`: Runs your local server with incremental regeneration enabled to greatly improve build time. Use instead of `npm start`.
 
 ### Using the latest version of the `uswds` package
 

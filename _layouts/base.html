@@ -4,7 +4,7 @@
   <head>
     {% include head.html %}
   </head>
-  <body class="page-{{ page.title | slugify }} layout-{{ page.layout }}">
+  <body class="page-{{ page.title | slugify }} layout-{{ page.layout }} {% if page.class %}page-{{ page.class | slugify }}{% endif %}">
     {{ content }}
     {% include scripts.html %}
   </body>

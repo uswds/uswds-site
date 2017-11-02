@@ -61,7 +61,6 @@
     "John Donmoyer <john.donmoyer@gsa.gov>",
     "Ryan Thurwell <ryan.thurwell@gsa.gov>",
     "Atul Varma <atul.varma@gsa.gov>"
-
   ],
   "license": "SEE LICENSE in LICENSE.md",
   "bugs": {
@@ -94,7 +93,7 @@
     "politespace": "^0.1.4",
     "run-sequence": "^1.1.5",
     "simplecrawler": "^1.1.3",
-    "uswds": "1.4.1",
+    "uswds": "^1.4.2",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   }

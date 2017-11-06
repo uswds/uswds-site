@@ -8,26 +8,38 @@ hero:
   content: The Standards are a design system that allows federal agencies to quickly prototype and deploy digital products using a baseline of design patterns.
 graphic_list:
   list_item:
-    - topic: Getting Started
+    - topic: Getting started
       description: Learn how to get started using the U.S. Web Design Standards for your project, regardless of your technical stack.
       image:
         src: img/home/get-started.svg
         alt:
-    - topic: UI Components
+      link:
+        text: Take the first step
+        url: getting-started
+    - topic: UI components
       description: Discover all the different components that the Standards provide as both design and development assets.
       image:
         src: img/home/ui-component.svg
         alt:
-    - topic: What's New
+      link:
+        text: Browse the components
+        url: components
+    - topic: What’s new
       description: Keep up to date with the current news and product development updates for the U.S. Web Design Standards.
       image:
         src: img/home/new.svg
         alt:
-    - topic: Page Templates
+      link:
+        text: See what’s new
+        url: whats-new
+    - topic: Page templates
       description: Explore the different page templates that have been created to jump start your product development.
       image:
         src: img/home/page-templates.svg
         alt:
+      link:
+        text: Start from a template
+        url: page-templates
 ---
 
 ## New training and services

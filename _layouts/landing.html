@@ -32,6 +32,7 @@ layout: default
           <div class="usa-media_block-body">
             {% if list_item.topic %}<h3>{{ list_item.topic }}</h3>{% endif %}
             {{ list_item.description | markdownify }}
+            <p><a href="{{ site.baseurl }}/{{ list_item.link.url }}/">{{ list_item.link.text }}</a></p>
           </div>
         </div>
       {% endfor %}

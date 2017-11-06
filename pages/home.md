@@ -14,7 +14,7 @@ graphic_list:
         src: img/home/get-started.svg
         alt:
       link:
-        text: See getting started
+        text: Take the first step
         url: getting-started
     - topic: UI components
       description: Discover all the different components that the Standards provide as both design and development assets.
@@ -22,7 +22,7 @@ graphic_list:
         src: img/home/ui-component.svg
         alt:
       link:
-        text: See UI components
+        text: Browse the components
         url: components
     - topic: What’s new
       description: Keep up to date with the current news and product development updates for the U.S. Web Design Standards.
@@ -38,7 +38,7 @@ graphic_list:
         src: img/home/page-templates.svg
         alt:
       link:
-        text: See page templates
+        text: Start from a template
         url: page-templates
 ---
 

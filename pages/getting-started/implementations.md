@@ -38,7 +38,6 @@ If you have a new implementation to add to this list, please [open an issue] or 
   <thead>
     <tr>
       <th>Distribution</th>
-      <th>Version</th>
       <th>Author or maintainer</th>
       <th>Notes</th>
     </tr>
@@ -48,12 +47,6 @@ If you have a new implementation to add to this list, please [open an issue] or 
     <th scope="row">
       <strong><a href="{{ impl.url }}">{{ impl.name }}</a></strong>
     </th>
-    <td>
-      {% if impl.version == 'latest' %}
-      {{ latest_version }}
-      {% elsif impl.version %}
-      <a href="{{ site.baseurl }}/whats-new/releases/#version-{{ impl.version | slugify }}">{{ impl.version }}</a></td>
-      {% endif %}
     <td>
       {% if impl.author.url %}
       <a href="{{ impl.author.url }}">{{ impl.author.name }}</a>

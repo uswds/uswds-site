@@ -269,11 +269,11 @@ body {
 
   @include media($nav-width) {
     background-color: $color-white;
-    border-bottom: 1px solid $color-gray-light;
+    border-bottom: 1px solid $color-gray-lighter;
     clear: both;
     display: block;
     height: $height-nav-secondary;
-    padding-left: 3rem;
+    padding-left: 1.5rem;
     z-index: $z-nav-secondary;
   }
 
@@ -282,25 +282,30 @@ body {
 
     li {
       display: inline;
-      padding-right: 3rem;
     }
   }
 
   a {
-    color: $color-gray-dark;
-    font-size: $site-nav-font-size;
-    font-weight: normal;
-    letter-spacing: 0.3px;
+    color: $color-gray;
+    font-size: $h5-font-size;
+    font-weight: $font-bold;
     line-height: $height-nav-secondary;
+    padding: 1.5rem;
     text-decoration: none;
+    -webkit-font-smoothing: antialiased;
 
     &:hover {
-      color: $color-primary;
-      text-decoration: underline;
+      span {
+        @include nav-border-thick;
+        color: $color-primary;
+      }
     }
+  }
 
-    &.usa-current {
-      color: $color-primary;
+  .usa-current {
+    span {
+      @include nav-border-thick;
+      color: $color-base;
     }
   }
 }

@@ -58,9 +58,9 @@ Here are a few guidelines to follow when submitting a pull request:
 1. Create a GitHub account or sign in to your existing account.
 1. Fork this repo into your GitHub account (or just clone it if you’re an 18F team member). Read more about forking a repo here on GitHub:
 [https://help.github.com/articles/fork-a-repo/](https://help.github.com/articles/fork-a-repo/)
-1. Create a branch from `develop` that lightly defines what you’re working on (for example, add-styles).
+1. Create a branch from `master` that lightly defines what you’re working on (for example, add-styles).
 1. Once you’re ready to submit a pull request, fill out the `PULL REQUEST TEMPLATE` provided.
-1. Submit your pull request against the `develop` branch.
+1. Submit your pull request against the `master` branch.
 
 Have questions or need help with setup? Open an issue here [https://github.com/18F/web-design-standards-docs/issues](https://github.com/18F/web-design-standards-docs/issues).
 

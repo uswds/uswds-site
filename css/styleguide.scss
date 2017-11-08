@@ -12,10 +12,6 @@ body {
 
 // USWDS Overrides
 
-.usa-footer-secondary_section {
-  background-color: $color-primary-alt-lightest;
-}
-
 .page-home {
   .usa-graphic_list .usa-media_block-img {
     max-width: 7rem;
@@ -469,13 +465,9 @@ a.cta {
 footer.site {
   clear: both;
 
-  .usa-button {
-    font-weight: $font-bold;
-  }
-
   .logo-links {
-    margin-bottom: 3rem;
-    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
 
     @include media($medium-screen) {
       float: left;
@@ -483,33 +475,36 @@ footer.site {
     }
 
     img {
-      margin-right: 1.2rem;
       width: 3.2rem;
     }
 
     a {
       @include media-link;
-      color: $color-gray-lighter;
-
-      &:hover {
-        color: $color-white;
-      }
     }
   }
+}
 
-  .usa-footer-contact-links {
-    text-align: left;
+.usa-footer-secondary_section {
+  @include padding(3rem null 4rem null);
+  background-color: $color-primary-alt-lightest;
+}
 
-    h4 {
-      margin-top: 1em;
-    }
+.footer-content {
+  margin-bottom: 3rem;
+}
 
-    .usa-button {
-      color: $color-white;
-      margin-bottom: 0;
-      margin-top: 0;
-      width: 100%;
-    }
+.footer-section-bottom {
+  @include padding(1.8rem null);
+  background-color: $color-primary-darkest;
+
+  p {
+    color: $color-white;
+    font-size: $small-font-size;
+    margin-top: 0;
+  }
+
+  a {
+    color: $color-white;
   }
 }
 

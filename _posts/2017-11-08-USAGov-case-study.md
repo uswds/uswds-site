@@ -6,7 +6,7 @@ tags:
 - case study
 - design
 ---
-The U.S. Web Design Standards are currently being used on hundreds of government sites, with an audience of more than 59 million monthly users. In this XX post in our series, we met with the team at USA.gov to talk about their use of the Standards. [USA.gov](USA.gov), and its Spanish counterpart [GobiernoUSA.gov](GobiernoUSA.gov), are the official guides for government information.
+The U.S. Web Design Standards are currently being used on hundreds of government sites, with an audience of more than 59 million monthly users. In this ninth post in our series, we met with the team at USA.gov to talk about their use of the Standards. [USA.gov](USA.gov), and its Spanish counterpart [GobiernoUSA.gov](GobiernoUSA.gov), are the official guides for government information.
 
 We talked with Maria Marrero, user experience designer and team lead, Russell O’Neil, director of delivery and channel operations, and David Stenger, senior innovation specialist.
 

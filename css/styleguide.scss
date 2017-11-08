@@ -42,24 +42,26 @@ body {
     font-size: 2.7rem;
   }
 
-  .usa-media_block-body {
-    & > *:first-child {
-      font-size: $media-block-header-font-size;
-      margin-top: 0;
-      margin-bottom: 0;
+  .usa-graphic_list {
+    .usa-media_block-body {
+      & > *:first-child {
+        font-size: $media-block-header-font-size;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      & > p {
+        margin: 0.5rem 0;
+        font-size: $media-block-body-font-size;
+      }
     }
 
-    & > p {
-      margin: 0.5rem 0;
-      font-size: $media-block-body-font-size;
-    }
-  }
+    .usa-media_block-img {
+      margin-bottom: 1rem;
 
-  .usa-media_block-img {
-    margin-bottom: 1rem;
-
-    @include media($large-screen) {
-      float: none;
+      @include media($large-screen) {
+        float: none;
+      }
     }
   }
 
@@ -491,6 +493,37 @@ footer.site {
 
 .footer-content {
   margin-bottom: 3rem;
+}
+
+.footer-contact-links {
+  h4, a {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-family: $font-sans;
+    font-weight: $font-normal;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  a {
+    color: $color-primary;
+    text-decoration: underline;
+  }
+
+  img {
+    width: 4rem;
+  }
+
+  .usa-media_block {
+    clear: both;
+    margin-top: 2rem;
+
+    @include media($medium-screen) {
+      margin-top: 0;
+    }
+  }
 }
 
 .footer-section-bottom {

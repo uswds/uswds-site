@@ -507,6 +507,12 @@ footer.site {
   }
 }
 
+.footer-content {
+  p {
+    max-width: 75ch;
+  }
+}
+
 .footer-contact-links {
   margin-top: 3rem;
 
@@ -518,7 +524,7 @@ footer.site {
     font-family: $font-sans;
     font-weight: $font-normal;
     margin-bottom: 0;
-    margin-top: 0;
+    margin-top: 3px;
   }
 
   a {
@@ -532,6 +538,7 @@ footer.site {
 
   .usa-media_block {
     clear: both;
+    line-height: $heading-line-height;
     margin-top: 2rem;
 
     @include media($medium-screen) {

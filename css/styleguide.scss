@@ -467,6 +467,10 @@ a.cta {
 footer.site {
   clear: both;
 
+  h3 {
+    margin-top: 0;
+  }
+
   .logo-links {
     margin-bottom: 1rem;
     margin-right: 2rem;
@@ -484,18 +488,28 @@ footer.site {
       @include media-link;
     }
   }
+
+  .usa-footer-secondary_section {
+    background-color: $color-primary-alt-lightest;
+
+    @include media($medium-screen) {
+      @include padding(3rem null 4rem null);
+    }
+  }
 }
 
-.usa-footer-secondary_section {
-  @include padding(3rem null 4rem null);
-  background-color: $color-primary-alt-lightest;
-}
+.footer-main-img {
+  display: none;
+  max-width: 18.1rem;
 
-.footer-content {
-  margin-bottom: 3rem;
+  @include media($large-screen) {
+    display: block;
+  }
 }
 
 .footer-contact-links {
+  margin-top: 3rem;
+
   h4, a {
     font-size: 1.3rem;
   }

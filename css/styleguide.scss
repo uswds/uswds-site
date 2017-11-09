@@ -541,7 +541,7 @@ footer.site {
 }
 
 .footer-section-bottom {
-  @include padding(1.8rem null 1.4rem null);
+  @include padding(1.6rem null 1.3rem null);
   background-color: $color-primary-darkest;
 
   p {

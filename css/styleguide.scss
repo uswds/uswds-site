@@ -556,6 +556,12 @@ footer.site {
     font-size: $small-font-size;
     margin-top: 0;
     overflow: hidden;
+
+    &:first-of-type {
+      @include media($medium-screen) {
+        margin-bottom: 0;
+      }
+    }
   }
 
   a {

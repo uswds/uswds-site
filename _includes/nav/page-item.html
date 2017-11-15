@@ -1,8 +1,10 @@
 {% include nav/current.html page=include.page %}
 <a href="{{ include.page.url | relative_url }}"{%
-  if _current -%} class="usa-current"{% endif %}>{{
-    include.page.title | smartify
-  }}</a>
+  if _current -%} class="usa-current"{% endif %}>
+  {% unless sidenav %}<span>{% endunless %}
+    {{ include.page.title | smartify }}
+  {% unless sidenav %}</span>{% endunless %}
+</a>
 {% if _current -%}
   {% unless include.flat -%}
     {% assign _href_key = include.href_key %}

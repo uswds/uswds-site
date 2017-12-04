@@ -13,12 +13,6 @@ jobs:
           name: Install node dependencies
           command: npm install
       - run:
-          name: Display versions
-          command: |
-            echo ($gulp --version)
-            echo ($scss-lint --version)
-            echo ($jekyll --version)
-      - run:
           name: Build site files
           command: npm run build
       - run:

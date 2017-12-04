@@ -3,11 +3,13 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:6-browsers
+      - image: circleci/ruby:2.3-node-browsers
     steps:
       - checkout
+      - run: Install ruby dependencies
+          name: bundle install
       - run:
-          name: Install dependencies
+          name: Install node dependencies
           command: npm install
       - run:
           name: Display versions

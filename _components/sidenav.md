@@ -17,6 +17,10 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
     Documentation
   </button>
   <div id="sidenav-docs" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Implementation</h4>
+    <ul class="usa-content-list">
+      <li>The width of the current menu item’s highlight border is set with the <code>$sidenav-current-border-width</code> variable.</li>
+    </ul>    
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>Ensure the side navigational system is keyboard accessible. Users should be able to tab through each link.</li>
@@ -38,7 +42,6 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
       <li>Indicate where a user is within the navigational hierarchy. Use the “active” state to show users which page they have navigated to.</li>
       <li>Keep the navigation links short. They can be shorter derivatives of page titles themselves.</li>
       <li>If the navigation hierarchy is too long, users may miss items at the bottom. If it’s too deep, users may miss items that require too many clicks. Usability test to find the right balance between breadth and depth.</li>
-      <li>The width of the current menu item’s highlight border is set with the <code>$sidenav-current-border-width</code> variable.</li>
     </ul>
   </div>
 </div>

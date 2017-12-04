@@ -6,8 +6,9 @@ jobs:
       - image: circleci/ruby:2.3-node-browsers
     steps:
       - checkout
-      - run: Install ruby dependencies
-          name: bundle install
+      - run:
+          name: Install ruby dependencies
+          command: bundle install
       - run:
           name: Install node dependencies
           command: npm install

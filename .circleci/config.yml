@@ -7,9 +7,6 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install jekyll
-          command: bundle install
-      - run:
           name: Install dependencies
           command: npm install
       - run:

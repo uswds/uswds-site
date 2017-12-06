@@ -211,7 +211,7 @@ NOTE: If you plan on upgrading to newer versions of the Standards in the future,
 
 ## Browser support
 
-We’ve designed the Standards to support older and newer browsers through progressive enhancement. The Standards will officially support any browser **above 2% usage** as defined on [analytics.usa.gov](https://analytics.usa.gov/). This currently means the Standards supports the newest versions of Chrome, Firefox, Safari and Internet Explorer 11 and up. Due to what browsers the Standards originally supported, the Standards will continue to support Internet Explorer 9 and up until the next major release, `2.0`.
+We’ve designed the Standards to support older and newer browsers through [progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement). The current major version of the Standards (1.0) is designed to support the newest versions of Chrome, Firefox, Safari, and Internet Explorer 9 and up. The next major release (2.0) will follow the [2% rule](https://gds.blog.gov.uk/2012/01/25/support-for-browsers/): we will officially support any browser above 2% usage as observed by [analytics.usa.gov](https://analytics.usa.gov/). Currently, this means that the Standards version 2.0 will support the newest versions of Chrome, Firefox, Safari, and Internet Explorer 11 and up.
 
 ## Accessibility
 

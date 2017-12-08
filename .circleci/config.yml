@@ -1,0 +1,23 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.3-node-browsers
+    steps:
+      - checkout
+      - run:
+          name: Install ruby dependencies
+          command: bundle install
+      - run:
+          name: Install node dependencies
+          command: npm install
+      - run:
+          name: Build site files
+          command: npm run build
+      - run:
+          name: Run test
+          command: npm test
+      - run:
+          name: Checking build
+          command: ls -agolf _site/

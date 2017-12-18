@@ -17,6 +17,10 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
     Documentation
   </button>
   <div id="sidenav-docs" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Implementation</h4>
+    <ul class="usa-content-list">
+      <li>The width of the current menu item’s highlight border is set with the <code>$sidenav-current-border-width</code> variable.</li>
+    </ul>    
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>Ensure the side navigational system is keyboard accessible. Users should be able to tab through each link.</li>

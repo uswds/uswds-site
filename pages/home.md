@@ -42,29 +42,58 @@ graphic_list:
         url: page-templates
 ---
 
-## New training and services
+## Services
 
-{% capture training %}
-### Training
+{% capture assessment %}
+### Assessment
 
-We offer a customized training program to fit your team’s needs. The
-product team will provide guidance for getting up and running with
-the U.S. Web Design Standards and kick-start your design and
-development.
+We work with you to assess your current system and determine the most cost-efficient and effective path forward.
 
-<a href="mailto:uswebdesignstandards+training@gsa.gov?cc=inquiries18F@gsa.gov" class="usa-button cta" onclick="ga('send', 'event', 'Clicked Training CTA', 'Clicked training call to action');">
+<ul class="usa-accordion">
+  <li>
+    <button class="usa-accordion-button"
+      aria-expanded="false"
+      aria-controls="assessment-content">
+      Why should you work with us?
+    </button>
+    <div id="assessment-content" class="usa-accordion-content">
+      <ul>
+        <li>We’ll ensure your Standards implementation is in compliance with the official web policy guidance from OMB and your agency.</li>
+        <li>We’ll determine any gaps in skill sets, equipment, design, and code quality needed for successful implementation of the Standards.</li>
+        <li>Your team will leave better prepared to adopt private-sector best practices and continue to create successful digital services.</li>
+      </ul> 
+    </div>
+  </li>
+</ul>
+
+<a href="mailto:uswebdesignstandards+assessment@gsa.gov?cc=inquiries18F@gsa.gov" class="usa-button cta" onclick="ga('send', 'event', 'Clicked Assessment CTA', 'Clicked assessment call to action');">
   <img src="{{ site.baseurl }}/img/logo-email.png" alt="">
-  Email us about training
+  Email us about assessment
 </a>
 {% endcapture %}
 
 {% capture customization %}
 ### Customization
 
-The product team will partner with you to determine the appropriate
-level of help and customization to make adopting the Standards a
-piece of cake. You can also read about customization in our
-[developer guide](getting-started/developers/#customization-and-theming).
+Develop and implement a custom look and feel for your site or application-specific needs.
+
+<ul class="usa-accordion">
+  <li>
+    <button class="usa-accordion-button"
+      aria-expanded="false"
+      aria-controls="customization-content">
+      Why should you work with us?
+    </button>
+    <div id="customization-content" class="usa-accordion-content">
+      <ul>
+        <li>We’ll get you up and running with a version of the Standards that’s tailored to meet your needs.</li>
+        <li>Your digital services will stay in compliance with the official web policy guidance from OMB.</li>
+        <li>Fully implementing the Standards brings a range of best practices to your digital services.</li>
+        <li>This investment will reduce the cost and time to design and develop future compliant digital services.</li>
+      </ul> 
+    </div>
+  </li>
+</ul>
 
 <a href="mailto:uswebdesignstandards+customization@gsa.gov?cc=inquiries18F@gsa.gov" class="usa-button cta" onclick="ga('send', 'event', 'Clicked Customization CTA', 'Clicked customization call to action');">
   <img src="{{ site.baseurl }}/img/logo-email.png" alt="">
@@ -74,7 +103,7 @@ piece of cake. You can also read about customization in our
 
 <div class="usa-grid-full">
   <div class="usa-width-one-half">
-    {{ training | markdownify }}
+    {{ assessment | markdownify }}
   </div>
   <div class="usa-width-one-half">
     {{ customization | markdownify }}

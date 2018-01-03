@@ -86,21 +86,31 @@ body {
 
 .homepage-rule {
   border: 0;
-  height: 1px;
+  height: 1.5rem;
   width: 100%;
   position: relative;
 
   &.center-diamond {
-    background: $color-primary;
+    background: none;
     text-align: center;
 
     &:before {
+      content: "\00a0";
+      display: inline-block;
+      background: $color-primary;
+      height: 1px;
+      position: relative;
+      top: 0.6rem;
+      width: 100%;
+    }
+
+    &:after {
       content: "◆";
       display: inline-block;
       position: relative;
-      top: -0.7em;
-      font-size: 1.5em;
-      padding: 0 0.25em;
+      top: -2.9rem;
+      font-size: 1.8rem;
+      padding: 0 1rem;
       color: $color-secondary;
       background: $color-white;
     }

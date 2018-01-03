@@ -27,4 +27,7 @@
   {% if meta contains 'image' %}{% assign val = val | absolute_url %}{% endif %}
   <meta property="{{ meta }}" content="{{ val | xml_escape }}">
 {% endfor %}
-<meta property="og:url" content="{{ page.url }}">
+{% if site.url %}
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+{% endif %}

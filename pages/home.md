@@ -5,7 +5,7 @@ title: A design system for government digital services
 class: home
 hero:
   callout: A design system for the federal government
-  content: The Standards provides research-backed design patterns for building accessible, responsive, and consistent digital products for the federal government.
+  content: The Standards provide research-backed design patterns for building accessible, responsive, and consistent digital products for the federal government.
 graphic_list:
   list_item:
     - topic: Getting started

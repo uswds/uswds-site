@@ -1,3 +1,9 @@
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+
+<!-- Creator -->
+<meta name="twitter:creator" content="@uswds">
+
 {% assign title = site.title %}
 {% if page.title and page.title != title -%}
   {% assign title = page.title | append: ' | ' | append: title %}
@@ -24,3 +30,6 @@
   {% if meta contains 'image' %}{% assign val = val | absolute_url %}{% endif %}
   <meta property="{{ meta }}" content="{{ val | xml_escape }}">
 {% endfor %}
+
+<!-- Twitter Site -->
+<meta name="twitter:site" content="@uswds">

@@ -15,6 +15,9 @@
 <meta name="description" content="{{ desc }}">
 <meta property="og:description" content="{{ desc }}">
 {% endif %}
+<meta name="twitter:card" value="summary">
+<meta name="twitter:site" content="@uswds">
+<meta property="og:type" content="article">
 {% assign metas = '' | split: '' %}
 {% for meta in site.meta %}{% assign metas = metas | push: meta[0] %}{% endfor %}
 {% for meta in page.meta %}{% assign metas = metas | push: meta[0] %}{% endfor %}
@@ -24,3 +27,4 @@
   {% if meta contains 'image' %}{% assign val = val | absolute_url %}{% endif %}
   <meta property="{{ meta }}" content="{{ val | xml_escape }}">
 {% endfor %}
+<meta property="og:url" content="{{ page.url }}">

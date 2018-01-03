@@ -21,7 +21,7 @@ body {
   .usa-hero {
     background-image: url('#{$site-image-path}/home/wds-home-new-2x.png');
     padding-bottom: 7.2rem;
-    padding-top: 3.5rem;
+    padding-top: 3.2rem;
 
     @include media($large-screen) {
       padding-bottom: 10.6rem;

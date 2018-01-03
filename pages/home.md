@@ -4,8 +4,8 @@ layout: landing
 title: A design system for government digital services
 class: home
 hero:
-  callout: U.S. Web Design Standards
-  content: The Standards are a design system that allows federal agencies to quickly prototype and deploy digital products using a baseline of design patterns.
+  callout: A design system for the federal government
+  content: The Standards provide research-backed design patterns for building accessible, responsive, and consistent digital products for the federal government.
 graphic_list:
   list_item:
     - topic: Getting started

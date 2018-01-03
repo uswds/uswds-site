@@ -21,7 +21,11 @@ body {
   .usa-hero {
     background-image: url('#{$site-image-path}/home/wds-home-new-2x.png');
     padding-bottom: 7.2rem;
-    padding-top: 3.5rem;
+    padding-top: 3.2rem;
+
+    @include media($large-screen) {
+      padding-bottom: 10.6rem;
+    }
   }
 
   .usa-hero-callout .usa-button {
@@ -31,9 +35,10 @@ body {
   .usa-hero-callout {
     border-radius: 0.3rem;
     max-width: 46rem;
-    padding: 3.6rem 3rem;
+    padding: 3.2rem;
 
-    & > *:first-child {
+    & > :first-child,
+    & > :last-child {
       margin-bottom: 0;
     }
   }

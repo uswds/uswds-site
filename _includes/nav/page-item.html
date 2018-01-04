@@ -2,7 +2,7 @@
 <a href="{{ include.page.url | relative_url }}"{%
   if _current -%} class="usa-current"{% endif %}>
   {% unless sidenav %}<span>{% endunless %}
-    {{ include.page.title | smartify }}
+    {{ include.text | default: include.page.title | smartify }}
   {% unless sidenav %}</span>{% endunless %}
 </a>
 {% if _current -%}

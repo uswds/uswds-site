@@ -101,10 +101,12 @@ Promise.all([runServer(), getChrome()]).then(([server, chrome]) => {
       Network.responseReceived(({response}) => {
         if (response.status < 400) return;
         console.log(`${response.url} returned HTTP ${response.status}!`);
+        terminate(1);
       });
       Network.loadingFailed(details => {
         console.log("A network request failed to load.");
         console.log(details);
+        terminate(1);
       });
       Page.loadEventFired(() => {
         Runtime.evaluate({

@@ -1,11 +1,16 @@
 {% assign title = site.title %}
-{% if page.title and page.title != title -%}
+{% if page.class == "home" -%}
+  {% assign title = page.title %}
+{% else %}
   {% assign title = page.title | append: ' | ' | append: title %}
 {% endif %}
 <title>{{ title }}</title>
 <meta property="og:title" content="{{ title | xml_escape }}">
+{% for post in site.posts %}
+  {% assign desc = page.excerpt %}
+{% endfor %}
 {% assign desc = page.description
-  | default: page.excerpt
+  | default: page.lead
   | default: site.description
   | strip_html
   | strip

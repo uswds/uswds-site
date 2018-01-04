@@ -1,7 +1,7 @@
 ---
 permalink: /
 layout: landing
-title: A design system for government digital services
+title: "U.S. Web Design Standards: A design system for the federal government"
 class: home
 hero:
   callout: A design system for the federal government

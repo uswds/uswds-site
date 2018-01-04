@@ -1,5 +1,6 @@
 # Site settings
 title:  U.S. Web Design Standards
+description: The Standards provide research-backed design patterns for building accessible, responsive, and consistent digital products for the federal government.
 google_analytics_ua: UA-48605964-43
 components_url: 'https://components.standards.usa.gov'
 

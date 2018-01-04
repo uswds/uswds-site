@@ -6,8 +6,11 @@
 {% endif %}
 <title>{{ title }}</title>
 <meta property="og:title" content="{{ title | xml_escape }}">
+{% for post in site.posts %}
+  {% assign desc = page.excerpt %}
+{% endfor %}
 {% assign desc = page.description
-  | default: page.excerpt
+  | default: page.lead
   | default: site.description
   | strip_html
   | strip

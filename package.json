@@ -86,7 +86,6 @@
     "gulp-uglify": "^1.5.1",
     "gulp-util": "^3.0.7",
     "jquery": "^2.2.0",
-    "marked": "^0.3.9",
     "merge-stream": "^1.0.0",
     "node-notifier": "^4.6.0",
     "normalize.css": "^3.0.3",

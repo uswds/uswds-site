@@ -404,6 +404,10 @@ body {
   }
 }
 
+.product-roadmap-list {
+  max-width: 100% !important;
+}
+
 // Label links
 
 %label-maturity {
@@ -433,12 +437,13 @@ body {
   }
 }
 
-.label-alpha {
+.label-alpha,
+.label-in-progress {
   @include label-link($color-gold-lightest, $color-gold-lighter);
 }
 
 .label-beta,
-.label-in-progress {
+.label-to-do {
   @include label-link($color-primary-alt-lightest, $color-primary-alt-light);
 }
 

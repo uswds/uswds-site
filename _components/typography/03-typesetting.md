@@ -18,9 +18,8 @@ order: 03
   </button>
   <div id="typesetting-docs" class="usa-accordion-content">
     <h4 class="usa-heading">Implementation</h4>
-    <p>To get the max-width on body text, add the class <code>usa-content</code> to your document. Use at the specificity that best suits your project's needs.</p>
-    <p>Lists must use <code>usa-content-list</code> for the above.</p>
-    <p>You can change the max-width value <code>$text-max-width</code> in <code>src/stylesheets/core/<wbr>_variables.scss</code>.</p>
+    <p>To add a max-width to text, add the class <code>usa-content</code> to your document. Use at the specificity that best suits your project's needs.</p>
+    <p>You can change the max-width value <code>$text-max-width</code> in <code>dist/scss/core/_variables.scss</code>. The max-width defaults to 66 characters per line using character units (`66ch`).</p>
     <h4 class="usa-heading">Usability</h4>
     <ul class="usa-content-list">
       <li>Alignment: Type set flush left provides the eye a constant starting point for each line, making text easier to read.</li>

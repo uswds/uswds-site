@@ -24,11 +24,13 @@ high-level future requests and ideas. You can also <a href="https://github.com/1
   <ul class="product-roadmap-list">
   {% for task in milestone.tasks %}
     <li id="tooltip-text-{{ task.title | slugify }}">
-      {{ task.title }}
+      <a href="{{ task.url }}" aria-describedby="tooltip-text-{{ task.title | slugify }}">
+        {{ task.title }}
+      </a>
       {% if task.status %}
-          <a class="usa-label label-{{ task.status | slugify }}" href="{{ task.url }}" aria-describedby="tooltip-text-{{ task.title | slugify }}">
-            {{ task.status }}
-          </a>
+        <span class="usa-label label-{{ task.status | slugify }}">
+          {{ task.status }}
+        </span>
       {% endif %}
     </li>
   {% endfor %}

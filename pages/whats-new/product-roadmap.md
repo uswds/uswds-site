@@ -23,8 +23,8 @@ high-level future requests and ideas. You can also <a href="https://github.com/1
   <h2 id="{{ milestone.id }}">{{ milestone.title }}</h2>
   <ul class="product-roadmap-list">
   {% for task in milestone.tasks %}
-    <li id="tooltip-text-{{ task.title | slugify }}">
-      <a href="{{ task.url }}" aria-describedby="tooltip-text-{{ task.title | slugify }}">
+    <li>
+      <a href="{{ task.url }}">
         {{ task.title }}
       </a>
       {% if task.status %}

@@ -3,7 +3,7 @@ permalink: /getting-started/
 layout: styleguide
 title: Getting started
 category: Getting started
-lead: The U.S. Web Design Standards provide design guidelines and code to help you quickly create trustworthy, accessible, and consistent digital government services.
+lead: The U.S. Web Design System provides design guidelines and code to help you quickly create trustworthy, accessible, and consistent digital government services.
 ---
 
 ## Role-based guides

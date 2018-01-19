@@ -14,7 +14,7 @@ subnav:
 ---
 
 Below is our product roadmap: a long-term plan of the goals, features,
-and long-term direction of the U.S. Web Design Standards. We update this
+and long-term direction of the U.S. Web Design System. We update this
 every few months with the status of our progress, as well as add new
 high-level future requests and ideas. You can also <a href="https://github.com/18F/web-design-standards/milestone/52" class="">view our product roadmap goals on GitHub</a>.
 

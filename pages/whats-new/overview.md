@@ -3,7 +3,7 @@ permalink: /whats-new/
 layout: styleguide
 title: What’s new
 category: What’s new
-lead: Here you can find the latest news and information about the U.S. Web Design Standards. Read our latest release notes, learn about the Standards’ impact in the government, and learn how we conduct user research to continuously improve our product and process.
+lead: Here you can find the latest news and information about the U.S. Web Design System. Read our latest release notes, learn about the Design System’s impact in the government, and learn how we conduct user research to continuously improve our product and process.
 columns:
   - title: New users
     source: New Users
@@ -18,17 +18,17 @@ redirect_from:
 {% capture blog %}
 ## Latest blog posts
 
-You can read more about the Standards on the 18F blog, where we cover the
+You can read more about the Design System on the 18F blog, where we cover the
 latest development releases as well as interviews with the teams from across
-government who have successfully implemented the Standards at their agencies.
+government who have successfully implemented the Design System at their agencies.
 
 <a href="https://18f.gsa.gov/tags/web-design-standards/" class="usa-button">Read the latest blog posts</a>
 {% endcapture %}
 
 {% capture in_wild %}
-## Standards in the wild
+## Design System in the wild
 
-Interested in seeing who else is using the U.S. Web Design Standards? We
+Interested in seeing who else is using the U.S. Web Design System? We
 maintain a list of sites in our GitHub repo. Feel free to
 [open an issue](https://github.com/18F/web-design-standards-assets/issues/new)
 or [email us](mailto:uswebdesignstandards@gsa.gov) if you’d like to add your
@@ -46,11 +46,11 @@ project to our list.
   </div>
 </div>
 
-## Web analytics for sites that use the Standards
+## Web analytics for sites that use the Design System
 
 By accessing the Google Analytics data gathered for [analytics.usa.gov](https://analytics.usa.gov),
 we have aggregated a few data points to approximate how many users of federal
-websites have “experienced” the U.S. Web Design Standards. We will update these
+websites have “experienced” the U.S. Web Design System. We will update these
 numbers quarterly.
 
 <table>

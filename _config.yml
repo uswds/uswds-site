@@ -1,6 +1,6 @@
 # Site settings
-title:  U.S. Web Design Standards
-description: The Standards provide research-backed design patterns for building accessible, responsive, and consistent digital products for the federal government.
+title:  U.S. Web Design System
+description: The Design System provides research-backed design patterns for building accessible, responsive, and consistent digital products for the federal government.
 google_analytics_ua: UA-48605964-43
 components_url: 'https://components.standards.usa.gov'
 
@@ -30,14 +30,14 @@ jekyll_get:
     decode_content: true
 
 repos:
-- name: U.S. Web Design Standards
-  description: Main repository for the U.S. Web Design Standards package
+- name: U.S. Web Design System
+  description: Main repository for the U.S. Web Design System package
   url: https://github.com/18F/web-design-standards
-- name: U.S. Web Design Standards Documentation
-  description: Documentation for the U.S. Web Design Standards
+- name: U.S. Web Design System Documentation
+  description: Documentation for the U.S. Web Design System
   url: https://github.com/18F/web-design-standards-docs
-- name: U.S. Web Design Standards Assets
-  description: U.S. Web Design Standards visual design assets
+- name: U.S. Web Design System Assets
+  description: U.S. Web Design System visual design assets
   url: https://github.com/18F/web-design-standards-assets
 
 sass:

@@ -37,8 +37,8 @@ the adoption and continued use of the Design System.
 One of our challenges is knowing who is interested in being part of our user research. To resolve this, we will implement several channels for federal designers and developers to signal their interest and provide their contact information to us. This will allow us to conduct research in a timely fashion.
 
 #### Potential Methods
-* Re-activate the screener to intercept users of standards.usa.gov
-* Provide a “Contact Us” feature on standards.usa.gov
+* Re-activate the screener to intercept users of designsystem.digital.gov
+* Provide a “Contact Us” feature on designsystem.digital.gov
 * Perform outreach via federal listservs and other digital channels
 
 ### Digital Service Team Remote Interviews

@@ -35,7 +35,7 @@ Now that all of your dependencies are installed, you can run your local server b
 npm start
 ```
 
-Go to `127.0.0.1:4000` in your browser — you should be viewing a local instance of [standards.usa.gov](https://standards.usa.gov).
+Go to `127.0.0.1:4000` in your browser — you should be viewing a local instance of [designsystem.digital.gov](https://designsystem.digital.gov).
 
 Here are a few other utility commands you may find useful:
 

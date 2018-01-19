@@ -7,7 +7,7 @@ type: element
 title: Buttons
 category: UI components
 lead: Use buttons to signal actions.
-component_url: 'https://components.standards.usa.gov/components/detail/buttons.html'
+component_url: 'https://components.designsystem.digital.gov/components/detail/buttons.html'
 ---
 
 {% include code/preview.html component="buttons" %}

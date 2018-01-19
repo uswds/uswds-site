@@ -2,7 +2,7 @@
 title:  U.S. Web Design System
 description: The Design System provides research-backed design patterns for building accessible, responsive, and consistent digital products for the federal government.
 google_analytics_ua: UA-48605964-43
-components_url: 'https://components.standards.usa.gov'
+components_url: 'https://components.designsystem.digital.gov'
 
 # this is for pages that don't have a permalink (primarily posts)
 permalink: /whats-new/updates/:year/:month/:day/:title/

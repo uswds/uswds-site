@@ -99,4 +99,4 @@ In general, the following conventions should be followed in your posts:
 [excerpt]: https://jekyllrb.com/docs/posts/#post-excerpts
 [front matter]: https://jekyllrb.com/docs/frontmatter/
 [jekyll-compose]: https://github.com/jekyll/jekyll-compose#readme
-[news and updates]: https://standards.usa.gov/whats-new/updates/
+[news and updates]: https://designsystem.digital.gov/whats-new/updates/

@@ -81,7 +81,7 @@ gulp.task('build-uswds-if-needed', function () {
       return Promise.reject(new Error(
         `${gulpfile} does not exist! You need a newer version of USWDS; ` +
         `specifically, one that includes the following PR: ` +
-        `https://github.com/18F/web-design-standards/pull/2050`
+        `https://github.com/uswds/uswds/pull/2050`
       ));
     }
 

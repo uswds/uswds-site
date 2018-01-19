@@ -30,11 +30,11 @@ government who have successfully implemented the Design System at their agencies
 
 Interested in seeing who else is using the U.S. Web Design System? We
 maintain a list of sites in our GitHub repo. Feel free to
-[open an issue](https://github.com/18F/web-design-standards-assets/issues/new)
+[open an issue](https://github.com/uswds/uswds-assets/issues/new)
 or [email us](mailto:uswds@gsa.gov) if you’d like to add your
 project to our list.
 
-<a href="https://github.com/18F/web-design-standards/blob/develop/WHO_IS_USING_USWDS.md" class="usa-button">View our list on GitHub</a>
+<a href="https://github.com/uswds/uswds/blob/develop/WHO_IS_USING_USWDS.md" class="usa-button">View our list on GitHub</a>
 {% endcapture %}
 
 <div class="usa-grid-full">

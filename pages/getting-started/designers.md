@@ -19,7 +19,7 @@ All of these designs are also available in various file formats, which are avail
 {% include download-buttons-design.html %}
 
 ### Retired design files
-The following design files are no longer being maintained by the U.S. Web Design System team as of version 1.0.0. The most recent versions remain available for download at the links below. While the Design System team is no longer maintaining these files, we'd love to hear from any teams that are using these files and adding new components when new versions of the Design System is released. [Send us an email](mailto:@uswebdesignstandards@gsa.gov).
+The following design files are no longer being maintained by the U.S. Web Design System team as of version 1.0.0. The most recent versions remain available for download at the links below. While the Design System team is no longer maintaining these files, we'd love to hear from any teams that are using these files and adding new components when new versions of the Design System is released. [Send us an email](mailto:@uswds@gsa.gov).
 
 {% include download-buttons-design-retired.html %}
 
@@ -33,4 +33,4 @@ We’re glad you’re considering contributing to the Design System — their su
 
 Please visit our [wiki](https://github.com/18F/web-design-standards/wiki/Contribution-Guidelines:-Design) to read our full contribution guidelines. Also, please note that every submission we receive goes through a full design review. (Changes that only affect underlying code are reviewed by our developers.)
 
-Questions or comments? [Email us](mailto:uswebdesignstandards@gsa.gov) and we’ll get back to you as quickly as we can.
+Questions or comments? [Email us](mailto:uswds@gsa.gov) and we’ll get back to you as quickly as we can.

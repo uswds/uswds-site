@@ -43,6 +43,6 @@ order: 02
       <li>Add the required Politespace files with your other 3rd party assets.</li>
       <li>Follow <a href="https://github.com/filamentgroup/politespace#using-politespace">the Politespace documentation</a> on how to implement with your form fields.</li>
     </ul>
-    <p>For any questions or support, please feel free to reach out to the team at <a href="mailto:uswebdesignstandards@gsa.gov.">uswebdesignstandards@gsa.gov.</a></p>
+    <p>For any questions or support, please feel free to reach out to the team at <a href="mailto:uswds@gsa.gov.">uswds@gsa.gov.</a></p>
   </div>
 </div>

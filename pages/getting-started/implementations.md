@@ -60,4 +60,4 @@ If you have a new implementation to add to this list, please [open an issue] or 
 </table>
 
 [open an issue]: https://github.com/18F/web-design-standards-docs/issues/new
-[send us an email]: mailto:uswebdesignstandards@gsa.gov
+[send us an email]: mailto:uswds@gsa.gov

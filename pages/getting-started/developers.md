@@ -122,7 +122,7 @@ Do you have questions or need help with setup? Did you run into any weird errors
 
 [https://github.com/18F/web-design-standards/issues](https://github.com/18F/web-design-standards/issues).
 
-You can also email us directly at [uswebdesignstandards@gsa.gov](mailto:uswebdesignstandards@gsa.gov).
+You can also email us directly at [uswds@gsa.gov](mailto:uswds@gsa.gov).
 
 ## CSS architecture
 
@@ -221,6 +221,6 @@ The Design System also meets the [WCAG 2.0 AA accessibility guidelines](https://
 
 We’re so glad you’re thinking about contributing to the Design System! You can find our complete [contribution guidelines][] in our repo — please review them before submitting your contribution.
 
-If you have any questions about these guidelines (or the Design System, more generally), don’t hesitate to [email us](mailto:uswebdesignstandards@gsa.gov) — we’ll get back to you within 48 hours.
+If you have any questions about these guidelines (or the Design System, more generally), don’t hesitate to [email us](mailto:uswds@gsa.gov) — we’ll get back to you within 48 hours.
 
 [contribution guidelines]: https://github.com/18F/web-design-standards/blob/develop/CONTRIBUTING.md

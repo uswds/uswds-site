@@ -4,7 +4,7 @@ We’re so glad you’re thinking about contributing to an 18F open source proje
 
 One of our goals is to ensure a welcoming environment for all contributors to our projects. Our staff follows the [18F Code of Conduct](https://18f.gsa.gov/code-of-conduct/), and all contributors should do the same.
 
-We encourage you to read this project’s CONTRIBUTING policy (you are here), its [LICENSE](LICENSE.md), [README](README.md) and its [Workflow](https://github.com/18F/web-design-standards/wiki/Workflow) process.
+We encourage you to read this project’s CONTRIBUTING policy (you are here), its [LICENSE](LICENSE.md), [README](README.md) and its [Workflow](https://github.com/uswds/uswds/wiki/Workflow) process.
 
 If you have any questions or want to read more, check out the [18F Open Source Policy GitHub repository]( https://github.com/18f/open-source-policy), or just [shoot us an email](mailto:18f@gsa.gov).
 
@@ -62,7 +62,7 @@ Here are a few guidelines to follow when submitting a pull request:
 1. Once you’re ready to submit a pull request, fill out the `PULL REQUEST TEMPLATE` provided.
 1. Submit your pull request against the `master` branch.
 
-Have questions or need help with setup? Open an issue here [https://github.com/18F/web-design-standards-docs/issues](https://github.com/18F/web-design-standards-docs/issues).
+Have questions or need help with setup? Open an issue here [https://github.com/uswds/uswds-docs/issues](https://github.com/uswds/uswds-docs/issues).
 
 ## Coding guidelines
 

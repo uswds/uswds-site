@@ -3,31 +3,31 @@
   tasks:
     - title: Change our name to more accurately describe what we are and what we do
       status: In progress
-      url: https://github.com/18F/web-design-standards/issues/2300
+      url: https://github.com/uswds/uswds/issues/2300
     - title: Develop an easier way to prototype and build consistently and incrementally
       status: In progress
-      url: https://github.com/18F/web-design-standards/issues/2292
+      url: https://github.com/uswds/uswds/issues/2292
     - title: A more flexible, consistent color system
       status: In progress
-      url: https://github.com/18F/web-design-standards/issues/2296
+      url: https://github.com/uswds/uswds/issues/2296
     - title: Clearer, more specific design and implementation guidance
       status: To-do
-      url: https://github.com/18F/web-design-standards/issues/2293
+      url: https://github.com/uswds/uswds/issues/2293
     - title: Better support and guidance for Federalist and Jekyll
       status: To-do
-      url: https://github.com/18F/web-design-standards/issues/2294
+      url: https://github.com/uswds/uswds/issues/2294
     - title: Better typographic flexibility and resilience, with or without webfonts
       status: To-do
-      url: https://github.com/18F/web-design-standards/issues/2295
+      url: https://github.com/uswds/uswds/issues/2295
     - title: A clearer connection between user research and patterns and components
       status: To-do
-      url: https://github.com/18F/web-design-standards/issues/2297
+      url: https://github.com/uswds/uswds/issues/2297
     - title: A clear, reliable way to stay up-to-date and track component changes and status
       status: To-do
-      url: https://github.com/18F/web-design-standards/issues/2298
+      url: https://github.com/uswds/uswds/issues/2298
     - title: A path to contribute components and research back to the system
       status: To-do
-      url: https://github.com/18F/web-design-standards/issues/2299
+      url: https://github.com/uswds/uswds/issues/2299
     - title: Grow our core government communities and our larger open source community
       status: To-do
-      url: https://github.com/18F/web-design-standards/issues/2301
+      url: https://github.com/uswds/uswds/issues/2301

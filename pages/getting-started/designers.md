@@ -31,6 +31,6 @@ All of our designs meet the [WCAG 2.0 AA accessibility guidelines](https://www.w
 
 We’re glad you’re considering contributing to the Standards — their success relies on contributions from designers like you.
 
-Please visit our [wiki](https://github.com/18F/web-design-standards/wiki/Contribution-Guidelines:-Design) to read our full contribution guidelines. Also, please note that every submission we receive goes through a full design review. (Changes that only affect underlying code are reviewed by our developers.)
+Please visit our [wiki](https://github.com/uswds/uswds/wiki/Contribution-Guidelines:-Design) to read our full contribution guidelines. Also, please note that every submission we receive goes through a full design review. (Changes that only affect underlying code are reviewed by our developers.)
 
 Questions or comments? [Email us](mailto:uswebdesignstandards@gsa.gov) and we’ll get back to you as quickly as we can.

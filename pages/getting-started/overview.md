@@ -30,4 +30,4 @@ repository for which is the project wiki. Here you can find detailed
 information about our design and development process, and the findings we’ve
 collected from performing user research.
 
-<a href="https://github.com/18F/web-design-standards/wiki" class="usa-button">View the project wiki on GitHub</a>
+<a href="https://github.com/uswds/uswds/wiki" class="usa-button">View the project wiki on GitHub</a>

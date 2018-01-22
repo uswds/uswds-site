@@ -32,13 +32,13 @@ jekyll_get:
 repos:
 - name: U.S. Web Design Standards
   description: Main repository for the U.S. Web Design Standards package
-  url: https://github.com/18F/web-design-standards
+  url: https://github.com/uswds/uswds
 - name: U.S. Web Design Standards Documentation
   description: Documentation for the U.S. Web Design Standards
-  url: https://github.com/18F/web-design-standards-docs
+  url: https://github.com/uswds/uswds-docs
 - name: U.S. Web Design Standards Assets
   description: U.S. Web Design Standards visual design assets
-  url: https://github.com/18F/web-design-standards-assets
+  url: https://github.com/uswds/uswds-assets
 
 sass:
   load_paths:

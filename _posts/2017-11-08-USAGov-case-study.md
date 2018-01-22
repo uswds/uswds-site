@@ -40,7 +40,7 @@ From an accessibility standpoint, we created an issue log and gave it to the Sta
 
 **Standards team**: That’s helpful feedback. Did you also report that feedback in the repos (repositories)?
 
-**MM**: Yes. We did report it in the [GitHub repos](https://github.com/18F/web-design-standards/). As we adopted components, we provided additional testing information we have from using the Standards. For example, usage of the official tagline that appears at the very top of the pages. It was also helpful to see comments from other users/agencies on their experience or suggestions with the Standards. When using the Standards and encountering issues, we had to move forward whether they were addressed or not. We had deadlines for launching sections of our sites.
+**MM**: Yes. We did report it in the [GitHub repos](https://github.com/uswds/uswds/). As we adopted components, we provided additional testing information we have from using the Standards. For example, usage of the official tagline that appears at the very top of the pages. It was also helpful to see comments from other users/agencies on their experience or suggestions with the Standards. When using the Standards and encountering issues, we had to move forward whether they were addressed or not. We had deadlines for launching sections of our sites.
 
 
 **Standards team**: Anything else the Standards team should know about multilingual sites?

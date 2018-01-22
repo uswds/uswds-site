@@ -44,7 +44,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/18F/web-design-standards-docs.git"
+    "url": "git+https://github.com/uswds/uswds-docs.git"
   },
   "author": "18F",
   "contributors": [
@@ -64,9 +64,9 @@
   ],
   "license": "SEE LICENSE in LICENSE.md",
   "bugs": {
-    "url": "https://github.com/18F/web-design-standards-docs/issues"
+    "url": "https://github.com/uswds/uswds-docs/issues"
   },
-  "homepage": "https://github.com/18F/web-design-standards-docs#readme",
+  "homepage": "https://github.com/uswds/uswds-docs#readme",
   "dependencies": {
     "axe-core": "^2.6.1",
     "browserify": "^13.0.0",

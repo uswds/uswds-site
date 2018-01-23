@@ -1,5 +1,5 @@
 {
-  "name": "uswds-docs",
+  "name": "uswds-site",
   "version": "1.3.0",
   "description": "Website and documentation on using the U.S. Web Design System.",
   "scripts": {
@@ -44,7 +44,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uswds/uswds-docs.git"
+    "url": "git+https://github.com/uswds/uswds-site.git"
   },
   "author": "18F",
   "contributors": [
@@ -64,9 +64,9 @@
   ],
   "license": "SEE LICENSE in LICENSE.md",
   "bugs": {
-    "url": "https://github.com/uswds/uswds-docs/issues"
+    "url": "https://github.com/uswds/uswds-site/issues"
   },
-  "homepage": "https://github.com/uswds/uswds-docs#readme",
+  "homepage": "https://github.com/uswds/uswds-site#readme",
   "dependencies": {
     "axe-core": "^2.6.1",
     "browserify": "^13.0.0",

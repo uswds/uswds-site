@@ -35,7 +35,7 @@ repos:
   url: https://github.com/uswds/uswds
 - name: U.S. Web Design System Documentation
   description: Documentation for the U.S. Web Design System
-  url: https://github.com/uswds/uswds-docs
+  url: https://github.com/uswds/uswds-site
 - name: U.S. Web Design System Assets
   description: U.S. Web Design System visual design assets
   url: https://github.com/uswds/uswds-assets

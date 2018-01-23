@@ -62,7 +62,7 @@ Here are a few guidelines to follow when submitting a pull request:
 1. Once you’re ready to submit a pull request, fill out the `PULL REQUEST TEMPLATE` provided.
 1. Submit your pull request against the `master` branch.
 
-Have questions or need help with setup? Open an issue here [https://github.com/uswds/uswds-docs/issues](https://github.com/uswds/uswds-docs/issues).
+Have questions or need help with setup? Open an issue here [https://github.com/uswds/uswds-site/issues](https://github.com/uswds/uswds-site/issues).
 
 ## Coding guidelines
 

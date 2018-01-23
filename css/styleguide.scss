@@ -418,38 +418,27 @@ body {
   position: absolute;
   text-decoration: none;
 
-  &:hover,
-  &:visited {
-    color: $color-gray-dark;
-  }
-
   &#{$external-href}::after {
     display: none;
   }
 }
 
-@mixin label-link($color-background, $color-background-hover) {
-  @extend %label-maturity;
-  background-color: $color-background;
-
-  &:hover {
-    background-color: $color-background-hover;
-  }
-}
-
 .label-alpha,
 .label-in-progress {
-  @include label-link($color-gold-lightest, $color-gold-lighter);
+  @extend %label-maturity;
+  background-color: $color-gold-lightest;
 }
 
 .label-beta,
 .label-to-do {
-  @include label-link($color-primary-alt-lightest, $color-primary-alt-light);
+  @extend %label-maturity;
+  background-color: $color-primary-alt-lightest;
 }
 
 .label-recommended,
 .label-done {
-  @include label-link($color-green-lightest, $color-green-lighter);
+  @extend %label-maturity;
+  background-color: $color-green-lightest;
 }
 
 h1 + .tooltip {

@@ -5,7 +5,7 @@ title: "U.S. Web Design System: A design system for the federal government"
 class: home
 hero:
   callout: A design system for the federal government
-  content: The Design System provides research-backed design patterns for building accessible, responsive, and consistent digital products for the federal government.
+  content: Design and build fast, accessible, mobile-friendly government websites backed by user research.
 graphic_list:
   list_item:
     - topic: Getting started

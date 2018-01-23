@@ -59,5 +59,5 @@ If you have a new implementation to add to this list, please [open an issue] or 
 {% endfor %}
 </table>
 
-[open an issue]: https://github.com/uswds/uswds-docs/issues/new
+[open an issue]: https://github.com/uswds/uswds-site/issues/new
 [send us an email]: mailto:uswebdesignstandards@gsa.gov

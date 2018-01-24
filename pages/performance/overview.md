@@ -13,6 +13,6 @@ subnav:
   - href: /performance/research/
 ---
 
-The Standards team embarked on a 3-month research effort to better understand
+The Design System team embarked on a 3-month research effort to better understand
 what performance means to U.S. government web teams of all shapes and sizes,
 and we're excited to share the results with you.

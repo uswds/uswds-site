@@ -4,7 +4,7 @@
     name: Paul Tagliamonte (USDS)
     url: https://github.com/paultag
   version: 0.12.0
-  notes: "This package provides access to the Standards in [Django](https://www.djangoproject.com/) applications."
+  notes: "This package provides access to the Design System in [Django](https://www.djangoproject.com/) applications."
 
 - name: Django
   id: django-uswds-forms
@@ -14,7 +14,7 @@
     url: https://github.com/18F
   version: 0.0.3
   notes: |
-    This package provides Django Forms integration with the Standards.
+    This package provides Django Forms integration with the Design System.
 
 - name: Drupal
   url: https://www.drupal.org/project/uswds
@@ -30,7 +30,7 @@
     name: 18F
     url: https://github.com/18F
   version: 1.3.1
-  notes: "A [Jekyll](https://jekyllrb.com/) theme for the Standards."
+  notes: "A [Jekyll](https://jekyllrb.com/) theme for the Design System."
 
 - name: npm and gulp
   url: https://github.com/18F/uswds-simple-sass
@@ -40,7 +40,7 @@
   version: 1.3.0
   notes: |
     This is a simple Node JS-based "starter project" that uses gulp and gulp-sass to
-    power a development workflow for a one-page site that leverages the Standards'
+    power a development workflow for a one-page site that leverages the Design System'
     SASS. Note that this is a starter project and *not* a reusable package.
 
 - name: npm and node-sass
@@ -89,7 +89,7 @@
     name: Broadcasting Board of Governors (BBG)
     url: https://github.com/BBGInnovate
   version: 0.9.1
-  notes: "This is not a reusable WordPress theme, but an implementation of the Standards for [bbg.gov](https://www.bbg.gov/)."
+  notes: "This is not a reusable WordPress theme, but an implementation of the Design System for [bbg.gov](https://www.bbg.gov/)."
 
 - name: WordPress
   id: wordpress-benjamin
@@ -98,7 +98,7 @@
     name: Kyle Jennings
     url: https://github.com/kyle-jennings
   version: 1.1.0
-  notes: "A WordPress theme built with Automattic's _s, 18F's U.S. Web Design Standards, and the needs of the people. For additional components and shortcodes, check out the [Franklin](https://github.com/kyle-jennings/Franklin) plugin."
+  notes: "A WordPress theme built with Automattic's _s, the U.S. Web Design System, and the needs of the people. For additional components and shortcodes, check out the [Franklin](https://github.com/kyle-jennings/Franklin) plugin."
 
 - name: WordPress
   id: the-standards
@@ -106,5 +106,5 @@
   author:
     name: Kyle Laverty
     url: https://github.com/lavekyl
-  version: 
-  notes: "The Standards is a WordPress theme that is based on the U.S. Web Design Standards."
+  version:
+  notes: "The Standards is a WordPress theme that is based on the U.S. Web Design System."

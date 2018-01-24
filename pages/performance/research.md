@@ -3,7 +3,7 @@ title: Performance research
 permalink: /performance/research/
 category: Getting started
 layout: styleguide
-lead: Report on research the Web Design Standards team did on performance.
+lead: Report on research the Design System team did on performance.
 subnav:
 - text: Introduction
   href: '#introduction'
@@ -76,7 +76,7 @@ Once the data was categorized and broken down into meaningful groupings, we tria
 
 #### Limitations
 
-Our research was designed to cover a representative sample of government agencies, but we were limited by both time on this project as well as our contacts. Although we spoke to several engineers and designers, we only interviewed one person in a leadership-level role. All of the participants are familiar with 18F and the U.S. Web Design Standards; we didn’t speak to anyone who was unfamiliar with our work. 
+Our research was designed to cover a representative sample of government agencies, but we were limited by both time on this project as well as our contacts. Although we spoke to several engineers and designers, we only interviewed one person in a leadership-level role. All of the participants are familiar with 18F and the U.S. Web Design System; we didn’t speak to anyone who was unfamiliar with our work. 
 
 ## Findings
 

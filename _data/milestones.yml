@@ -2,7 +2,7 @@
   id: 2018-roadmap
   tasks:
     - title: Change our name to more accurately describe what we are and what we do
-      status: In progress
+      status: Done
       url: https://github.com/uswds/uswds/issues/2300
     - title: Develop an easier way to prototype and build consistently and incrementally
       status: In progress

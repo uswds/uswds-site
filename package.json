@@ -82,7 +82,7 @@
     "gulp-eslint": "^1.1.1",
     "gulp-rename": "^1.2.2",
     "gulp-scss-lint": "^0.3.9",
-    "gulp-sourcemaps": "^1.6.0",
+    "gulp-sourcemaps": "^1.12.1",
     "gulp-uglify": "^1.5.1",
     "gulp-util": "^3.0.7",
     "jquery": "^3.3.1",
@@ -93,7 +93,7 @@
     "politespace": "^0.1.4",
     "run-sequence": "^1.1.5",
     "simplecrawler": "^1.1.6",
-    "uswds": "1.4.4",
+    "uswds": "1.4.5",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^1.1.2"
   }

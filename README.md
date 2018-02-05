@@ -86,13 +86,13 @@ use any tag or commit during development. To install a specific commit,
 you can use e.g.:
 
 ```
-npm install --save uswds/uswds#fb49e4f
+npm install --save "uswds/uswds#fb49e4f"
 ```
 
 Alternatively, to use a specific version tag, use e.g.:
 
 ```
-npm install --save uswds/uswds#v1.3.1
+npm install --save "uswds/uswds#v1.3.1"
 ```
 
 This version number or commit hash is automatically parsed when the site

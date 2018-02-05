@@ -4,7 +4,7 @@ Use the title line as the title of your pull request, then delete these lines.
 
 ## Title line template: [Title]: Brief description
 
-UI components: For pull requests that impact the look, feel, or functionality of the Standards themselves, please open a pull request on the web-design-standards repo (https://github.com/18F/web-design-standards-docs). 
+UI components: For pull requests that impact the look, feel, or functionality of the Design System itself, please open a pull request on the web-design-standards repo (https://github.com/uswds/uswds-site). 
 
 -->
 

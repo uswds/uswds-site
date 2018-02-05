@@ -6,7 +6,7 @@ layout: styleguide
 type: component
 title: Side navigation
 category: UI components
-lead: "Hierarchical, vertical navigation to place at the side of a page. Note: We're currently developing horizontal navigation and headers for the top of a page."
+lead: "Hierarchical, vertical navigation to place at the side of a page."
 ---
 
 {% include code/preview.html component="sidenav" %}
@@ -17,6 +17,10 @@ lead: "Hierarchical, vertical navigation to place at the side of a page. Note: W
     Documentation
   </button>
   <div id="sidenav-docs" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Implementation</h4>
+    <ul class="usa-content-list">
+      <li>The width of the current menu item’s highlight border is set with the <code>$sidenav-current-border-width</code> variable.</li>
+    </ul>    
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>Ensure the side navigational system is keyboard accessible. Users should be able to tab through each link.</li>

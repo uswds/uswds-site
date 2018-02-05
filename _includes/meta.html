@@ -1,11 +1,16 @@
 {% assign title = site.title %}
-{% if page.title and page.title != title -%}
+{% if page.class == "home" -%}
+  {% assign title = page.title %}
+{% else %}
   {% assign title = page.title | append: ' | ' | append: title %}
 {% endif %}
 <title>{{ title }}</title>
 <meta property="og:title" content="{{ title | xml_escape }}">
+{% for post in site.posts %}
+  {% assign desc = page.excerpt %}
+{% endfor %}
 {% assign desc = page.description
-  | default: page.excerpt
+  | default: page.lead
   | default: site.description
   | strip_html
   | strip
@@ -15,6 +20,9 @@
 <meta name="description" content="{{ desc }}">
 <meta property="og:description" content="{{ desc }}">
 {% endif %}
+<meta name="twitter:card" value="summary">
+<meta name="twitter:site" content="@USWDS">
+<meta property="og:type" content="article">
 {% assign metas = '' | split: '' %}
 {% for meta in site.meta %}{% assign metas = metas | push: meta[0] %}{% endfor %}
 {% for meta in page.meta %}{% assign metas = metas | push: meta[0] %}{% endfor %}
@@ -24,3 +32,7 @@
   {% if meta contains 'image' %}{% assign val = val | absolute_url %}{% endif %}
   <meta property="{{ meta }}" content="{{ val | xml_escape }}">
 {% endfor %}
+{% if site.url %}
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+{% endif %}

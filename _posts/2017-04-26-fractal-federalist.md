@@ -10,7 +10,7 @@ excerpt: >
 meta:
   og:image: /img/updates/fractal_v1.0.0.png
 preview_baseurl: https://federalist.fr.cloud.gov/preview/18f/web-design-standards
-github_baseurl: https://github.com/18F/web-design-standards
+github_baseurl: https://github.com/uswds/uswds
 ---
 
 <p class="usa-font-lead">
@@ -78,7 +78,7 @@ code. Contrast that with the four commands necessary to get up and running now
 (assuming you have [Node.js] version 6 or greater installed):
 
 ```sh
-git clone https://github.com/18F/web-design-standards.git
+git clone https://github.com/uswds/uswds.git
 cd web-design-standards
 npm install
 npm start
@@ -165,7 +165,7 @@ Having these public, predictable URLs make it easier for us to create test
 cases with "live-coding" tools such as [JSFiddle](https://jsfiddle.net) and
 [CodePen](https://codepen.io). We used JSFiddle to create a [live test
 case](https://jsfiddle.net/47Lpu62z/9/) for [this accordion
-bug](https://github.com/18F/web-design-standards/issues/1762) that references
+bug](https://github.com/uswds/uswds/issues/1762) that references
 the JavaScript from a branch to demonstrate the proposed fix. In this case, the
 reporter of the issue was able to download that same script and confirm the fix
 on their project!

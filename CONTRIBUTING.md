@@ -1,10 +1,10 @@
-# Contributing to U.S. Web Design Standards Documentation
+# Contributing to U.S. Web Design System Documentation
 
 We’re so glad you’re thinking about contributing to an 18F open source project! If you’re unsure about anything, just ask (or submit your issue or pull request anyway). The worst that can happen is we’ll politely ask you to change something. We appreciate all friendly contributions.
 
 One of our goals is to ensure a welcoming environment for all contributors to our projects. Our staff follows the [18F Code of Conduct](https://18f.gsa.gov/code-of-conduct/), and all contributors should do the same.
 
-We encourage you to read this project’s CONTRIBUTING policy (you are here), its [LICENSE](LICENSE.md), [README](README.md) and its [Workflow](https://github.com/18F/web-design-standards/wiki/Workflow) process.
+We encourage you to read this project’s CONTRIBUTING policy (you are here), its [LICENSE](LICENSE.md), [README](README.md) and its [Workflow](https://github.com/uswds/uswds/wiki/Workflow) process.
 
 If you have any questions or want to read more, check out the [18F Open Source Policy GitHub repository]( https://github.com/18f/open-source-policy), or just [shoot us an email](mailto:18f@gsa.gov).
 
@@ -58,11 +58,11 @@ Here are a few guidelines to follow when submitting a pull request:
 1. Create a GitHub account or sign in to your existing account.
 1. Fork this repo into your GitHub account (or just clone it if you’re an 18F team member). Read more about forking a repo here on GitHub:
 [https://help.github.com/articles/fork-a-repo/](https://help.github.com/articles/fork-a-repo/)
-1. Create a branch from `develop` that lightly defines what you’re working on (for example, add-styles).
+1. Create a branch from `master` that lightly defines what you’re working on (for example, add-styles).
 1. Once you’re ready to submit a pull request, fill out the `PULL REQUEST TEMPLATE` provided.
-1. Submit your pull request against the `develop` branch.
+1. Submit your pull request against the `master` branch.
 
-Have questions or need help with setup? Open an issue here [https://github.com/18F/web-design-standards-docs/issues](https://github.com/18F/web-design-standards-docs/issues).
+Have questions or need help with setup? Open an issue here [https://github.com/uswds/uswds-site/issues](https://github.com/uswds/uswds-site/issues).
 
 ## Coding guidelines
 

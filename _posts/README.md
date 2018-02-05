@@ -95,8 +95,8 @@ In general, the following conventions should be followed in your posts:
     ```
 
 [Jekyll posts]: https://jekyllrb.com/docs/posts/
-[add a new file]: https://github.com/18F/web-design-standards-docs/new/develop/_posts?filename=YYYY-MM-DD-post-title.md
+[add a new file]: https://github.com/uswds/uswds-site/new/develop/_posts?filename=YYYY-MM-DD-post-title.md
 [excerpt]: https://jekyllrb.com/docs/posts/#post-excerpts
 [front matter]: https://jekyllrb.com/docs/frontmatter/
 [jekyll-compose]: https://github.com/jekyll/jekyll-compose#readme
-[news and updates]: https://standards.usa.gov/whats-new/updates/
+[news and updates]: https://designsystem.digital.gov/whats-new/updates/

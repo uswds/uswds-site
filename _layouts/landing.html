@@ -8,7 +8,7 @@ layout: default
     <div class="usa-grid">
       <div class="usa-hero-callout usa-section-dark">
         {% if page.hero.callout %}
-        <h2><span class="usa-hero-callout-alt">{{ page.hero.callout }}</h2>
+        <h2><span class="usa-hero-callout-alt">{{ page.hero.callout }}</span></h2>
         {% endif %}
 
         {{ page.hero.content | markdownify }}
@@ -32,6 +32,7 @@ layout: default
           <div class="usa-media_block-body">
             {% if list_item.topic %}<h3>{{ list_item.topic }}</h3>{% endif %}
             {{ list_item.description | markdownify }}
+            <p><a href="{{ site.baseurl }}/{{ list_item.link.url }}/">{{ list_item.link.text }}</a></p>
           </div>
         </div>
       {% endfor %}

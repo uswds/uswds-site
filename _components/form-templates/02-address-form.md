@@ -37,12 +37,12 @@ order: 02
       <li>Support both five- and nine-digit ZIP codes. Some addresses require a nine-digit ZIP code. If you would like to use an input mask, it should be “#####-####” so that the text is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code.</li>
     </ul>
     <h4 class="usa-heading">Upgrading address forms (pre version 0.14.0)</h4>
-    <p>The Standards previously leveraged <a href="https://www.filamentgroup.com/lab/politespace.html">Politespace</a> as a way to implement input masking as part of this particular form template, specifically zip code inputs. Our guidance for upgrading is outlined in the following steps:</p>
+    <p>The Design System previously leveraged <a href="https://www.filamentgroup.com/lab/politespace.html">Politespace</a> as a way to implement input masking as part of this particular form template, specifically zip code inputs. Our guidance for upgrading is outlined in the following steps:</p>
     <ul>
       <li>Be sure to include <a href="https://jquery.com/">jQuery</a> with your assets and include it onto your page.</li>
       <li>Add the required Politespace files with your other 3rd party assets.</li>
       <li>Follow <a href="https://github.com/filamentgroup/politespace#using-politespace">the Politespace documentation</a> on how to implement with your form fields.</li>
     </ul>
-    <p>For any questions or support, please feel free to reach out to the team at <a href="mailto:uswebdesignstandards@gsa.gov.">uswebdesignstandards@gsa.gov.</a></p>
+    <p>For any questions or support, please feel free to reach out to the team at <a href="mailto:uswds@gsa.gov.">uswds@gsa.gov.</a></p>
   </div>
 </div>

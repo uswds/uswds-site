@@ -10,11 +10,11 @@ subnav:
   href: ['#version-%', name]
   text: name
 ---
-<p class="usa-font-lead">The Standards are an ever-evolving product. We’ve been listening to your feedback and using it as a basis for improvements and additions.</p>
+<p class="usa-font-lead">The Design System is an ever-evolving product. We’ve been listening to your feedback and using it as a basis for improvements and additions.</p>
 
 <p class="usa-font-lead">Here you’ll find our release notes — summaries of bug fixes, new features, and other updates introduced in each release.</p>
 
-Have suggestions for a new feature or bug fix? [Open an issue](https://github.com/18F/web-design-standards/issues/new) in our repo.
+Have suggestions for a new feature or bug fix? [Open an issue](https://github.com/uswds/uswds/issues/new) in our repo.
 
 {% for release in site.data.releases %}
 

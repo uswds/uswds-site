@@ -22,7 +22,7 @@ You can read more about the Design System on the 18F blog, where we cover the
 latest development releases as well as interviews with the teams from across
 government who have successfully implemented the Design System at their agencies.
 
-<a href="https://18f.gsa.gov/tags/web-design-standards/" class="usa-button">Read the latest blog posts</a>
+<a href="https://18f.gsa.gov/tags/web-design-system/" class="usa-button">Read the latest blog posts</a>
 {% endcapture %}
 
 {% capture in_wild %}

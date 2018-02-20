@@ -1,5 +1,5 @@
 ---
-title: "WordPress Theme ‘Benjamin’ Created Using the System"
+title: "WordPress Theme ‘Benjamin’ created using the Design System"
 tags:
 - web design system
 - design

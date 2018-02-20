@@ -45,7 +45,7 @@ This interview is motivating me to go back and add features!
  
 **System team:** What’s the foundation for this theme?
 
-**Kyle Jennings:** It’s built using the great underscores theme as a foundation, but 90% of the functionality is built from scratch.
+**Kyle Jennings:** It’s built using the great [Underscores theme](https://underscores.me/) as a foundation, but 90% of the functionality is built from scratch.
 
 **System team:** Is there anything the System team could do to help you in your efforts?
 

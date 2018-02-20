@@ -1,7 +1,7 @@
 ---
 title: "WordPress Theme ‘Benjamin’ Created Using the System"
 tags:
-- web design standards
+- web design system
 - design
 - case study
 - design

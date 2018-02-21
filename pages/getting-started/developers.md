@@ -192,7 +192,7 @@ $medium-screen: 620px !default;
 $large-screen:  1120px !default;
 ```
 
-### Set the asset path (fonts and images)
+### Set the base asset path (fonts and images)
 If you include the USWDS dist file in a folder on your site or your fonts and images are in the same folder, set the location of the directory with `$uswds-path: path/to/my/assets/`. The default is set to `$uswds-path: ../`. This will be appended to the font and image path variables so you only need to set this variable. You can also set the font and image paths individually:
 
 ```

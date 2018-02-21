@@ -24,6 +24,8 @@ subnav:
     Documentation
   </button>
   <div id="footer-docs" aria-hidden="false" class="usa-accordion-content">
+    <h4 class="usa-heading">Implementation</h4>
+    <p>The social media icons used in the footer are from Font Awesome. To use additional icons, visit <a href="https://fontawesome.com/">Font Awesome</a>.</p>
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>Code the navigation so that pressing the tab key moves focus from link to link in the navigation, even when the navigation has collapsed into an accordion.</li>

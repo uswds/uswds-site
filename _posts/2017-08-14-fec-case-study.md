@@ -1,9 +1,8 @@
 ---
 title: How the FEC.gov team uses the Web Design Standards
 tags:
-- web design standards
-- design
 - case study
+- web design standards
 - design
 ---
 The U.S. Web Design Standards are currently being used on hundreds of government

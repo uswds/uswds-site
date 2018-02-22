@@ -1,6 +1,6 @@
 ---
 title: "2017: Where we’ve been and where we’re going"
-tags:
+tags: updates
 excerpt: "2017 was a big year for the U.S. Web Design Standards. Here’s a look at where we’re headed in 2018."
 ---
 

@@ -1,9 +1,8 @@
 ---
 title: How the Code.gov team uses the U.S. Web Design Standards
 tags:
-- web design standards
-- design
 - case study
+- web design standards
 - design
 ---
 The U.S. Web Design Standards team continues to sit down with various agencies who are using the Standards. In this sixth post in our series, we talked to Olivier Kamanda, project manager for [code.gov](https://code.gov) to learn how that team adopted the Standards. [Code.gov](https://code.gov) is a new platform designed to be the home for federal source code--a platform for improving the quality of government software. It launched in November 2016.

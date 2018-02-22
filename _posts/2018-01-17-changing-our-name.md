@@ -1,6 +1,6 @@
 ---
 title: "Changing our name to the U.S. Web Design System"
-tags:
+tags: updates
 excerpt: "After listening to a lot of thoughtful feedback and discussion from a wide range of voices in the government web community, we’ve decided to change our name to the U.S. Web Design System."
 ---
 

@@ -1,9 +1,8 @@
 ---
 title: "WordPress Theme ‘Benjamin’ created using the Design System"
 tags:
-- web design system
-- design
 - case study
+- web design system
 - design
 excerpt:
 ---

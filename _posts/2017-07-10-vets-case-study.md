@@ -1,9 +1,8 @@
 ---
 title: How the Vets.gov team uses the U.S. Web Design Standards
 tags:
-- web design standards
-- design
 - case study
+- web design standards
 - design
 ---
 The U.S. Web Design Standards are currently being used on hundreds of government sites, with an audience of more than 59 million monthly users. In this fifth post in our series, we met with the team at [Vets.gov](https://vets.gov) to talk about their use of the Standards.

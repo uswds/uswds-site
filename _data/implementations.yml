@@ -65,7 +65,7 @@
     name: 18F
     url: https://github.com/18F
   version: 0.12.1
-  notes: "This [Ruby on Rails](http://rubyonrails.org/) gem is used and actively maintained by 18F."
+  notes: "This [Ruby on Rails](http://rubyonrails.org/) gem is not currently maintained."
 
 - name: Ruby gem
   url: https://github.com/18F/us_web_design_standards_gem

@@ -1,9 +1,8 @@
 ---
 title: How the USA.gov team forks the Standards
 tags:
-- web design standards
-- design
 - case study
+- web design standards
 - design
 ---
 The U.S. Web Design Standards are currently being used on hundreds of government sites, with an audience of more than 59 million monthly users. In this ninth post in our series, we met with the team at USA.gov to talk about their use of the Standards. [USA.gov](https://USA.gov), and its Spanish counterpart [GobiernoUSA.gov](https://GobiernoUSA.gov), are the official guides for government information.

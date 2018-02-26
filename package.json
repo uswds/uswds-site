@@ -95,7 +95,7 @@
     "politespace": "^0.1.4",
     "run-sequence": "^1.1.5",
     "simplecrawler": "^1.1.6",
-    "uswds": "1.4.6",
+    "uswds": "github:uswds/uswds#v1.5.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^1.1.2"
   }

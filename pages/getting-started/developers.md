@@ -13,8 +13,10 @@ subnav:
   href: '#customization-and-theming'
 - text: Where things live
   href: '#where-things-live'
+- text: Browser Support
+  href: '#browser-support'
 - text: Accessibility
-  href: '#notes-on-accessibility'
+  href: '#accessibility'
 - text: Contributions
   href: '#contribution-guidelines'
 ---

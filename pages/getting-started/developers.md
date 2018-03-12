@@ -194,6 +194,14 @@ $medium-screen: 620px !default;
 $large-screen:  1120px !default;
 ```
 
+### Set the base asset path (fonts and images)
+If you copy the USWDS `dist` directory to a folder on your project or your fonts and images are in the same folder, set the location of the directory with `$asset-path: path/to/my/assets/`. The default is set to `$asset-path: ../`. This will be appended to the font and image path variables so you only need to set this variable. You can also set the font and image paths individually:
+
+```
+$font-path: path/to/my/fonts;
+$image-path: path/to/my/images;
+```
+
 NOTE: If you plan on upgrading to newer versions of the Design System in the future, or are not using your own forked version of the Design System, try to avoid making changes in the Design System folder itself. Doing so could make it impossible to upgrade in the future without undoing your custom changes.
 
 ### Main variables that can be customized

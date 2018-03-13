@@ -21,12 +21,12 @@ incremental_regeneration_fixer:
 
 jekyll_get:
   - data: releases
-    json: 'https://api.github.com/repos/18F/web-design-standards/releases'
+    json: 'https://api.github.com/repos/uswds/uswds/releases'
   - data: contributing
-    json: 'https://api.github.com/repos/18F/web-design-standards/contents/CONTRIBUTING.md'
+    json: 'https://api.github.com/repos/uswds/uswds/contents/CONTRIBUTING.md'
     decode_content: true
   - data: standards-sites
-    json: 'https://api.github.com/repos/18F/web-design-standards/contents/WHO_IS_USING_USWDS.md'
+    json: 'https://api.github.com/repos/uswds/uswds/contents/docs/WHO_IS_USING_USWDS.md'
     decode_content: true
 
 repos:

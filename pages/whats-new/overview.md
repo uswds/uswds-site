@@ -34,7 +34,7 @@ maintain a list of sites in our GitHub repo. Feel free to
 or [email us](mailto:uswds@gsa.gov) if you’d like to add your
 project to our list.
 
-<a href="https://github.com/uswds/uswds/blob/develop/WHO_IS_USING_USWDS.md" class="usa-button">View our list on GitHub</a>
+<a href="https://github.com/uswds/uswds/blob/develop/docs/WHO_IS_USING_USWDS.md" class="usa-button">View our list on GitHub</a>
 {% endcapture %}
 
 <div class="usa-grid-full">

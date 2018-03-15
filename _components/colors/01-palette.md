@@ -241,8 +241,7 @@ order: 01
 <h3 class="usa-heading">Themes</h3>
 <p>Take a look at a few themes.</p>
 <h4>1. Modern and bright</h4>
-
-<p>About this palette...</p>
+<p>An introduction about this theme.</p>
 <h4 class="usa-heading">Primary colors</h4>
 <div class="usa-grid-full usa-color-row usa-primary-color-section">
   <div class="usa-color-square usa-color-primary">
@@ -303,7 +302,13 @@ order: 01
       <p class="usa-color-name">$color-primary-alt-lightest</p>
   </div>
 </div>
-
+<h5>When to use</h5>
+<p>Use this theme for modern applications, web apps, and data-based sites.</p>
+<h5>Implementation</h5>
+<p>Use this palette by setting <code>$theme: $modern-and-bright;</code> in <code>theme.scss</code></p>
+<h5>View and customize</h5>
+<p>View this theme and sample pages on <a href="#0">CodePen</a>.</p>
+---
 <h4>2. Clean and classic</h4>
 <h4>3. Inspiring and empowering</h4>
 

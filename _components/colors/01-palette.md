@@ -238,9 +238,9 @@ order: 01
   </div>
 </div>
 
-<h3 class="usa-heading">Themes</h3>
+<h2 class="usa-heading">Themes</h2>
 <p>Take a look at a few themes.</p>
-<h4>1. Modern and bright</h4>
+<h3>1. Modern and bright</h3>
 <p>An introduction about this theme.</p>
 <h4 class="usa-heading">Primary colors</h4>
 <div class="usa-grid-full usa-color-row usa-primary-color-section">
@@ -309,12 +309,12 @@ order: 01
 <h5>View and customize</h5>
 <p>View this theme and sample pages on <a href="#0">CodePen</a>.</p>
 ---
-<h4>2. Clean and classic</h4>
-<h4>3. Inspiring and empowering</h4>
+<h3>2. Clean and classic</h3>
+<h3>3. Inspiring and empowering</h3>
 
-<h3 class="usa-heading">Full pallete</h3>
+<h2 class="usa-heading">Full pallete</h2>
 
 <p>Want to choose a different style? Take a look at our full palette range.</p>
 
-<h5>Note on accessibility</h5>
+<h3>Note on accessibility</h3>
 <p>Use a step of 50 to maintain color contrast between colors. For example...</p>

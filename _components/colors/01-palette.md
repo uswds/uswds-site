@@ -302,6 +302,7 @@ order: 01
       <p class="usa-color-name">$color-primary-alt-lightest</p>
   </div>
 </div>
+<p><i>[Images of theme on sample pages]</i></p>
 <h5>When to use</h5>
 <p>Use this theme for modern applications, web apps, and data-based sites.</p>
 <h5>Implementation</h5>

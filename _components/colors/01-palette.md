@@ -237,3 +237,79 @@ order: 01
     <p class="usa-color-name">$color-visited</p>
   </div>
 </div>
+
+<h3 class="usa-heading">Themes</h3>
+<p>Take a look at a few themes.</p>
+<h4>1. Modern and bright</h4>
+
+<p>About this palette...</p>
+<h4 class="usa-heading">Primary colors</h4>
+<div class="usa-grid-full usa-color-row usa-primary-color-section">
+  <div class="usa-color-square usa-color-primary">
+    <div class="usa-color-inner-content">
+      <p class="usa-color-hex">#0071bc</p>
+      <p class="usa-color-name">$color-primary</p>
+    </div>
+  </div>
+  <div class="usa-color-square usa-color-primary-darker usa-mobile-end-row">
+    <div class="usa-color-inner-content">
+      <p class="usa-color-hex">#205493</p>
+      <p class="usa-color-name">$color-primary-darker</p>
+    </div>
+  </div>
+  <div class="usa-color-square usa-color-primary-darkest">
+    <div class="usa-color-inner-content">
+      <p class="usa-color-hex">#112e51</p>
+      <p class="usa-color-name">$color-primary-darkest</p>
+    </div>
+  </div>
+  <div class="usa-color-square usa-color-cool-blue-lightest usa-mobile-end-row">
+    <div class="usa-color-inner-content">
+      <p class="usa-color-hex">#dce4ef</p>
+      <p class="usa-color-name">$color-primary-lightest</p>
+    </div>
+  </div>
+</div>
+<h4 class="usa-heading">Secondary colors</h4>
+<div class="usa-grid-full usa-color-row">
+  <div class="color-big">
+    <div class="usa-color-short usa-color-primary-alt">
+    </div>
+      <p class="usa-color-hex">#02bfe7</p>
+      <p class="usa-color-name">$color-primary-alt</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-primary-alt-darkest">
+    </div>
+      <p class="usa-color-hex">#046b99</p>
+      <p class="usa-color-name">$color-primary-alt-darkest</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-primary-alt-dark">
+    </div>
+      <p class="usa-color-hex">#00a6d2</p>
+      <p class="usa-color-name">$color-primary-alt-dark</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-primary-alt-light">
+    </div>
+      <p class="usa-color-hex">#9bdaf1</p>
+      <p class="usa-color-name">$color-primary-alt-light</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-primary-alt-lightest">
+    </div>
+      <p class="usa-color-hex">#e1f3f8</p>
+      <p class="usa-color-name">$color-primary-alt-lightest</p>
+  </div>
+</div>
+
+<h4>2. Clean and classic</h4>
+<h4>3. Inspiring and empowering</h4>
+
+<h3 class="usa-heading">Full pallete</h3>
+
+<p>Want to choose a different style? Take a look at our full palette range.</p>
+
+<h5>Note on accessibility</h5>
+<p>Use a step of 50 to maintain color contrast between colors. For example...</p>

@@ -87,38 +87,6 @@ order: 01
   </div>
 </div>
 
-<div class="usa-grid-full usa-color-row">
-  <div class="color-big">
-    <div class="usa-color-short usa-color-secondary">
-    </div>
-      <p class="usa-color-hex">#e31c3d</p>
-      <p class="usa-color-name">$color-secondary</p>
-  </div>
-  <div class="color-small">
-    <div class="usa-color-short usa-color-secondary-darkest">
-    </div>
-      <p class="usa-color-hex">#981b1e</p>
-      <p class="usa-color-name">$color-secondary-darkest</p>
-  </div>
-  <div class="color-small">
-    <div class="usa-color-short usa-color-secondary-dark">
-    </div>
-      <p class="usa-color-hex">#cd2026</p>
-      <p class="usa-color-name">$color-secondary-dark</p>
-  </div>
-  <div class="color-small">
-    <div class="usa-color-short usa-color-secondary-light">
-    </div>
-      <p class="usa-color-hex">#e59393</p>
-      <p class="usa-color-name">$color-secondary-light</p>
-  </div>
-  <div class="color-small">
-    <div class="usa-color-short usa-color-secondary-lightest">
-    </div>
-      <p class="usa-color-hex">#f9dede</p>
-      <p class="usa-color-name">$color-secondary-lightest</p>
-  </div>
-</div>
 
 <h4 class="usa-heading">Background colors</h4>
 
@@ -157,9 +125,53 @@ order: 01
   </div>
 </div>
 
-<h4 class="usa-heading">Tertiary colors</h4>
+<div class="usa-grid-full usa-color-row">
+  <div class="color-big">
+    <div class="usa-color-short usa-color-primary-darkest">
+    </div>
+      <p class="usa-color-hex">#112e51</p>
+      <p class="usa-color-name">$color-primary-darkest</p>
+  </div>
+  <div class="color-small usa-end-row">
+    <div class="usa-color-short usa-color-gray-cool-light">
+    </div>
+      <p class="usa-color-hex">#dce4ef</p>
+      <p class="usa-color-name">$color-gray-cool-light</p>
+  </div>
+</div>
+
+<h4 class="usa-heading">State colors</h4>
 
 <p>These colors are used primarily for content-specific needs, such as alerts and illustrations. They should never overpower the primary colors.</p>
+
+
+<div class="usa-grid-full usa-color-row">
+  <div class="color-big">
+    <div class="usa-color-short usa-color-secondary-dark">
+    </div>
+      <p class="usa-color-hex">#cd2026</p>
+      <p class="usa-color-name">$color-secondary-dark</p>
+  </div>
+
+  <div class="color-small">
+    <div class="usa-color-short usa-color-secondary">
+    </div>
+      <p class="usa-color-hex">#e31c3d</p>
+      <p class="usa-color-name">$color-secondary</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-secondary-light">
+    </div>
+      <p class="usa-color-hex">#e59393</p>
+      <p class="usa-color-name">$color-secondary-light</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-secondary-lightest">
+    </div>
+      <p class="usa-color-hex">#f9dede</p>
+      <p class="usa-color-name">$color-secondary-lightest</p>
+  </div>
+</div>
 
 <div class="usa-grid-full usa-color-row">
   <div class="color-big">

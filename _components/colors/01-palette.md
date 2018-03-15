@@ -306,7 +306,7 @@ order: 01
 <h5>When to use</h5>
 <p>Use this theme for modern applications, web apps, and data-based sites.</p>
 <h5>Implementation</h5>
-<p>Use this palette by setting <code>$theme: $modern-and-bright;</code> in <code>theme.scss</code></p>
+<p>Use this palette by setting <code>$color-palette: $modern-and-bright;</code> in <code>theme.scss</code></p>
 <h5>View and customize</h5>
 <p>View this theme and sample pages on <a href="#0">CodePen</a>.</p>
 ---

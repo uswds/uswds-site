@@ -140,7 +140,7 @@ order: 01
   </div>
 </div>
 
-<h4 class="usa-heading">State colors</h4>
+<h4 class="usa-heading">Status colors</h4>
 
 <p>These colors are used primarily for content-specific needs, such as alerts and illustrations. They should never overpower the primary colors.</p>
 

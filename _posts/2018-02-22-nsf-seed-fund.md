@@ -1,5 +1,5 @@
 ---
-title: How NSF started its Seed Fund site with the Design System
+title: How the National Science Foundation started its Seed Fund site with the Design System
 tags:
 - case study
 - web design system

@@ -6,7 +6,7 @@ tags:
 excerpt: In this 12th post in our series, we sat down with Jason Garber, front-end web developer at the U.S. Digital Service’s Defense Digital Service, to talk about his work creating a Ruby gem that integrates the Design System into a Ruby on Rails application.
 ---
 
-The U.S. Web Design System (USWDS) is a library of design and code guidelines to help agencies create trustworthy, accessible, and consistent digital services. The Design System is being used on over one hundred government sites, with an audience of nearly 60 million users. In this 12th post in our series, we sat down with Jason Garber, front-end web developer at the U.S. Digital Service (USDS)’s Defense Digital Service, to talk about his work creating a [Ruby gem](https://en.wikipedia.org/wiki/RubyGems) for the new [Move.mil](https://www.move.mil/) that integrates the Design System into a Ruby on Rails application.
+The U.S. Web Design System (USWDS) is a library of design and code guidelines to help agencies create trustworthy, accessible, and consistent digital services. The Design System is being used on over one hundred government sites, with an audience of 120 million users. In this 12th post in our series, we sat down with Jason Garber, front-end web developer at the U.S. Digital Service (USDS)’s Defense Digital Service, to talk about his work creating a [Ruby gem](https://en.wikipedia.org/wiki/RubyGems) for the new [Move.mil](https://www.move.mil/) that integrates the Design System into a Ruby on Rails application.
 
 
 **USWDS team:** How did you hear about the U.S. Web Design System?

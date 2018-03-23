@@ -6,12 +6,28 @@ jobs:
       - image: circleci/ruby:2.3-node-browsers
     steps:
       - checkout
+      - restore_cache:
+          keys:
+            - v1-gem-cache-{{ checksum "Gemfile.lock" }}
+            - v1-gem-cache
       - run:
           name: Install ruby dependencies
-          command: bundle install
+          command: bundle install --jobs=4 --retry=3 --path vendor/bundle
+      - save_cache:
+          key: v1-gem-cache-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+      - restore_cache:
+          keys:
+            - v1-node-cache-{{ checksum "package-lock.json" }}
+            - v1-node-cache
       - run:
           name: Install node dependencies
-          command: npm install
+          command: npm install --ignore-scripts --verbose
+      - save_cache:
+          key: v1-node-cache-{{ checksum "package-lock.json" }}
+          paths:
+            - node_modules
       - run:
           name: Build site files
           command: npm run build

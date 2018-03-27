@@ -26,9 +26,11 @@ subnav:
 There are a few different ways to use the Design System within your project. Which one you choose depends on the needs of your project and how you are most comfortable working. Here are a few notes on what to consider when deciding which installation method to use:
 
 *Download the Design System if:*
+
 - You are not familiar with `npm` and package management.
 
 *Use the Design System `npm` package if:*
+
 - You are familiar with using `npm` and package management.
 
 ### Download

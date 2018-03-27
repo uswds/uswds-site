@@ -72,45 +72,80 @@ the browser. The examples above recommend using the minified versions.
 
 And that’s it — you should be set to use the Design System.
 
-### Using npm
+### Install using npm
 
-If you have `node` installed on your machine, you can use npm to install the Design System. Add `uswds`
-to your project’s `package.json` as a dependency:
+`npm` is a package manager for Node based projects. The U.S. Web Design System maintains a [`uswds` package](https://www.npmjs.com/package/uswds) for you to utilize both the pre-compiled and compiled files on your project.
 
-```shell
-npm install --save uswds
-```
+1. Install `Node/npm`. Below is a link to find the install method that coincides with your operating system:
 
-The package will be installed in `node_modules/uswds`. You can use the un-compiled files
-found in the `src/` or the compiled files in the `dist/` directory.
+  - Node v4.2.3+, [Installation guides](https://nodejs.org/en/download/)
+
+  **Note for Windows users:** If you are using Windows and are unfamiliar with `Node` or `npm`, we recommend following [Team Treehouse's tutorial](http://blog.teamtreehouse.com/install-node-js-npm-windows) for more information.
+
+2. Make sure you have installed it correctly:
+
+  ```shell
+  npm -v
+  3.10.8 # This line may vary depending on what version of Node you've installed.
+  ```
+
+3. Create a `package.json` file. You can do this manually, but an easier method is to use the `npm init` command. This command will prompt you with a few questions to create your `package.json` file.
+
+4. Add `uswds` to your project’s `package.json`:
+
+  ```shell
+  npm install --save uswds
+  ```
+
+The `uswds` module is now installed as a dependency. You can use the un-compiled files found in the `src/` or the compiled files in the `dist/` directory.
 
 ```
 node_modules/uswds/
 ├── dist/
-│   ├── css/
-│   ├── fonts/
-│   ├── img/
-│   ├── js/
+│   ├── css/
+│   ├── fonts/
+│   ├── html/
+│   ├── img/
+│   ├── js/
 └── src/
-    ├── fonts/
-    ├── img/
-    ├── js/
-    └── stylesheets/
+    ├── fonts/
+    ├── img/
+    ├── js/
+    ├── stylesheets/
+    └── templates/
 ```
 
-`require('uswds')` will load all of the U.S. Web Design Standard’s JavaScript onto the page. The `uswds` module itself does not export anything.
+#### Importing assets
 
-The main Sass (SCSS) source file is here:
+Since you are already using `npm`, the U.S. Web Design System team recommends leveraging the ability to write custom scripts. Here are some links to how we do this with our docs website using `npm` + [`gulp`](http://gulpjs.com/):
+
+[Link to `npm` scripts example in `uswds-site`](https://github.com/uswds/uswds-site/blob/develop/package.json#L4)
+
+[Link to gulpfile.js example in `uswds-site`](https://github.com/uswds/uswds-site/blob/develop/gulpfile.js)
+
+#### Sass
+
+The Design System is easily customizable using the power of [Sass (Syntactically Awesome Style Sheets)](http://sass-lang.com/). The main Sass (SCSS) source file is located here:
 
 ```
-node_modules/uswds/src/stylesheets/all.scss
+node_modules/uswds/src/stylesheets/uswds.scss
 ```
 
-The non-minified CSS that’s been precompiled is here:
+Global variables are defined in the `node_modules/uswds/src/stylesheets/core/_variables.scss` file. Custom theming can be done by copying the `_variables.scss` file into your own project’s Sass folder, changing applicable variable values, and importing it before `uswds.scss`.
+
+Below is an example of how you might setup your main Sass file to achieve this:
+
+```scss
+@import 'variables.scss'; # Custom Sass variables file
+@import 'node_modules/uswds/src/stylesheets/uswds.scss';
 
 ```
-node_modules/uswds/dist/css/uswds.css
-```
+
+You can now use your copied version of `_variables.scss` to override any styles to create a more custom look and feel to your application.
+
+#### JavaScript
+
+`require('uswds')` will load all of the U.S. Web Design System’s JavaScript onto the page. Add this line to whatever initializer you use to load JavaScript into your application.
 
 ### Using another framework or package manager
 

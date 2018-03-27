@@ -1,6 +1,4 @@
 {
-  "name": "uswds-site",
-  "description": "Website and documentation on using the U.S. Web Design System.",
   "scripts": {
     "federalist": "gulp build",
     "build": "gulp build && bundle exec jekyll build",

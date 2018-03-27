@@ -114,24 +114,24 @@ And that’s it — you should now be able to copy our code samples into your si
 
 1. Install `Node/npm`. Below is a link to find the install method that coincides with your operating system:
 
-  - Node v4.2.3+, [Installation guides](https://nodejs.org/en/download/)
+- Node v4.2.3+, [Installation guides](https://nodejs.org/en/download/)
 
-  **Note for Windows users:** If you are using Windows and are unfamiliar with `Node` or `npm`, we recommend following [Team Treehouse's tutorial](http://blog.teamtreehouse.com/install-node-js-npm-windows) for more information.
+**Note for Windows users:** If you are using Windows and are unfamiliar with `Node` or `npm`, we recommend following [Team Treehouse's tutorial](http://blog.teamtreehouse.com/install-node-js-npm-windows) for more information.
 
 2. Make sure you have installed it correctly:
 
-  ```shell
-  npm -v
-  3.10.8 # This line may vary depending on what version of Node you've installed.
-  ```
+```shell
+npm -v
+3.10.8 # This line may vary depending on what version of Node you've installed.
+```
 
 3. Create a `package.json` file. You can do this manually, but an easier method is to use the `npm init` command. This command will prompt you with a few questions to create your `package.json` file.
 
 4. Add `uswds` to your project’s `package.json`:
 
-  ```shell
-  npm install --save uswds
-  ```
+```shell
+npm install --save uswds
+```
 
 The `uswds` module is now installed as a dependency. You can use the un-compiled files found in the `src/` or the compiled files in the `dist/` directory.
 

@@ -1,6 +1,5 @@
 {
   "name": "uswds-site",
-  "version": "1.3.0",
   "description": "Website and documentation on using the U.S. Web Design System.",
   "scripts": {
     "federalist": "gulp build",

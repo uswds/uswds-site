@@ -62,7 +62,7 @@ To use the Design System on your project, you’ll need to include the CSS and J
     ```
     example-project/
     ├── assets/
-    │   ├── uswds-1.0.0/
+    │   ├── uswds-{{ site.data.uswds_version }}/
     │   ├── stylesheets/
     │   ├── images/
     │   └── javascript/
@@ -92,14 +92,20 @@ into your HTML pages:
     <!DOCTYPE html>
     <html>
     <head>
+      <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>My Example Project</title>
-      <link rel="stylesheet" href="assets/uswds-1.0.0/css/uswds.min.css">
+
+      <!-- U.S. Web Design System CSS -->
+      <link rel="stylesheet" href="assets/uswds-{{ site.data.uswds_version }}/css/uswds.min.css">
+
+      <title>My example project</title>
     </head>
     <body>
-
-      <script src="assets/uswds-1.0.0/js/uswds.min.js"></script>
+      <h1>Hello, world!</h1>
+      
+      <!-- U.S. Web Design System JavaScript -->
+      <script src="assets/uswds-{{ site.data.uswds_version }}/js/uswds.min.js"></script>
     </body>
     </html>
     ```

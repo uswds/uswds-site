@@ -106,6 +106,8 @@ Here is an example of how to reference these assets in your `index.html` file:
 
 We offer both files, the CSS and the JavaScript, in two versions — a minified version, and an un-minified one. (In the examples above, we are using the minified files.) Use the minified files in a production environment or to reduce the file size of your downloaded assets. And the un-minified files are better if you are in a development environment or would like to debug the CSS or JavaScript assets in the browser.
 
+Note: We also provide Sass (SCSS) files in the zip file which you can compile to CSS. See [Sass](#sass) and [Customization and theming](#customization-and-theming).
+
 And that’s it — you should now be able to copy our code samples into your site's HTML and start using the Design System.
 
 ### Install using npm

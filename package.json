@@ -7,19 +7,19 @@
   "license": "SEE LICENSE IN LICENSE.md",
   "author": "18F",
   "contributors": [
+    "Atul Varma <atul.varma@gsa.gov>",
     "Erica Deahl <erica.deahl@gsa.gov>",
     "Jeremia Kimelman <jeremia.kimelman@gsa.gov>",
+    "John Donmoyer <john.donmoyer@gsa.gov>",
     "Julia Elman <julia.elman@gsa.gov>",
     "Katherine Garklavs <katherine.garklavs@gsa.gov>",
     "Marco Segreto <marco.segreto@gsa.gov>",
     "Maya Benari <maya.ben-ari@gsa.gov>",
     "Roger Steve Ruiz <roger.ruiz@gsa.gov>",
+    "Ryan Thurwell <ryan.thurwell@gsa.gov>",
     "Shawn Allen <shawn.allen@gsa.gov>",
     "Will Sullivan <william.sullivan@gsa.gov>",
-    "Yoz Grahame <jeremy.grahame@gsa.gov>",
-    "John Donmoyer <john.donmoyer@gsa.gov>",
-    "Ryan Thurwell <ryan.thurwell@gsa.gov>",
-    "Atul Varma <atul.varma@gsa.gov>"
+    "Yoz Grahame <jeremy.grahame@gsa.gov>"
   ],
   "repository": {
     "type": "git",

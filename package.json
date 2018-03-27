@@ -1,72 +1,47 @@
 {
-  "name": "uswds-site",
-  "version": "1.3.0",
-  "description": "Website and documentation on using the U.S. Web Design System.",
-  "scripts": {
-    "federalist": "gulp build",
-    "build": "gulp build && bundle exec jekyll build",
-    "build-css": "gulp sass",
-    "build-js": "gulp javascript",
-    "build-img": "gulp images",
-    "build-fonts": "gulp fonts",
-    "clean": "gulp clean-assets",
-    "lint": "gulp eslint scss-lint",
-    "postinstall": "bundle",
-    "prestart": "gulp build",
-    "start": "bundle exec jekyll serve --drafts --future",
-    "test": "npm run axe && npm run lint && npm run crawl && bundle exec rspec",
-    "axe": "node config/run-axe.js",
-    "crawl": "node config/crawl.js",
-    "watch": "nswatch"
+  "private": true,
+  "homepage": "https://github.com/uswds/uswds-site#readme",
+  "bugs": {
+    "url": "https://github.com/uswds/uswds-site/issues"
   },
-  "watch": {
-    "./css/**/*.scss": [
-      "build-css"
-    ],
-    "./img": [
-      "build-img"
-    ],
-    "./js/**/*.js": [
-      "build-js"
-    ],
-    "./node_modules/uswds/src/stylesheets": [
-      "build-css"
-    ],
-    "./node_modules/uswds/src/fonts": [
-      "build-fonts"
-    ],
-    "./node_modules/uswds/src/img": [
-      "build-img"
-    ],
-    "./node_modules/uswds/src/js": [
-      "build-js"
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/uswds/uswds-site.git"
-  },
+  "license": "SEE LICENSE IN LICENSE.md",
   "author": "18F",
   "contributors": [
+    "Atul Varma <atul.varma@gsa.gov>",
     "Erica Deahl <erica.deahl@gsa.gov>",
     "Jeremia Kimelman <jeremia.kimelman@gsa.gov>",
+    "John Donmoyer <john.donmoyer@gsa.gov>",
     "Julia Elman <julia.elman@gsa.gov>",
     "Katherine Garklavs <katherine.garklavs@gsa.gov>",
     "Marco Segreto <marco.segreto@gsa.gov>",
     "Maya Benari <maya.ben-ari@gsa.gov>",
     "Roger Steve Ruiz <roger.ruiz@gsa.gov>",
+    "Ryan Thurwell <ryan.thurwell@gsa.gov>",
     "Shawn Allen <shawn.allen@gsa.gov>",
     "Will Sullivan <william.sullivan@gsa.gov>",
-    "Yoz Grahame <jeremy.grahame@gsa.gov>",
-    "John Donmoyer <john.donmoyer@gsa.gov>",
-    "Ryan Thurwell <ryan.thurwell@gsa.gov>",
-    "Atul Varma <atul.varma@gsa.gov>"
+    "Yoz Grahame <jeremy.grahame@gsa.gov>"
   ],
-  "license": "SEE LICENSE in LICENSE.md",
-  "bugs": {
-    "url": "https://github.com/uswds/uswds-site/issues"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uswds/uswds-site.git"
   },
-  "homepage": "https://github.com/uswds/uswds-site#readme",
+  "scripts": {
+    "axe": "node config/run-axe.js",
+    "build": "gulp build && bundle exec jekyll build",
+    "build-css": "gulp sass",
+    "build-fonts": "gulp fonts",
+    "build-img": "gulp images",
+    "build-js": "gulp javascript",
+    "clean": "gulp clean-assets",
+    "crawl": "node config/crawl.js",
+    "federalist": "gulp build",
+    "postinstall": "bundle",
+    "lint": "gulp eslint scss-lint",
+    "prestart": "gulp build",
+    "start": "bundle exec jekyll serve --drafts --future",
+    "test": "npm run axe && npm run lint && npm run crawl && bundle exec rspec",
+    "watch": "nswatch"
+  },
   "dependencies": {
     "axe-core": "^2.6.1",
     "babel-preset-es2015": "^6.24.1",
@@ -98,5 +73,28 @@
     "uswds": "1.6.1",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^1.1.2"
+  },
+  "watch": {
+    "./css/**/*.scss": [
+      "build-css"
+    ],
+    "./img": [
+      "build-img"
+    ],
+    "./js/**/*.js": [
+      "build-js"
+    ],
+    "./node_modules/uswds/src/stylesheets": [
+      "build-css"
+    ],
+    "./node_modules/uswds/src/fonts": [
+      "build-fonts"
+    ],
+    "./node_modules/uswds/src/img": [
+      "build-img"
+    ],
+    "./node_modules/uswds/src/js": [
+      "build-js"
+    ]
   }
 }

@@ -23,34 +23,55 @@ subnav:
 
 ## Installation
 
-Here are a few different ways to use the Design System within your project.
+There are a few different ways to use the Design System within your project. Which one you choose depends on the needs of your project and how you are most comfortable working. Here are a few notes on what to consider when deciding which installation method to use:
+
+*Download the Design System if:*
+- You are not familiar with `npm` and package management.
+
+*Use the Design System `npm` package if:*
+- You are familiar with using `npm` and package management.
 
 ### Download
 
 To use the Design System on your project, you’ll need to include the CSS and JavaScript files in each HTML page in your project.
 
-First, download the Design System assets:
+1. First, download the Design System assets:
 
 <a class="link-download" href="https://github.com/uswds/uswds/releases/download/v{{ site.data.uswds_version }}/uswds-{{ site.data.uswds_version }}.zip">Download code</a>
 <span class="link-download-subtext">Version {{ site.data.uswds_version }}</span>
 
-Then, add the following folders into a relevant place in your code base — likely a directory where you keep third-party libraries:
+After extracting the zip file you should see the following file and folder structure:
 
 ```
 uswds-{{ site.data.uswds_version }}/
-├── js/
-│   ├── uswds.min.js.map
-│   ├── uswds.min.js
-│   └── uswds.js
 ├── css/
 │   ├── uswds.min.css.map
 │   ├── uswds.min.css
 │   └── uswds.css
+├── fonts/
 ├── img/
-└── fonts/
+├── js/
+│   ├── uswds.min.js.map
+│   ├── uswds.min.js
+│   └── uswds.js
+└── scss/
 ```
 
-Refer to these files by adding the following `<link>` and `<script>` elements
+2. Copy these files and folders into a relevant place in your project's code base. Here is an example structure for how this might look:
+
+```
+example-project/
+├── assets/
+│   ├── uswds-1.0.0/
+│   ├── stylesheets/
+│   ├── images/
+│   └── javascript/
+└── index.html
+```
+
+You'll notice in our example above that we also outline a `stylesheets`, `images` and `javascript` folder in your `assets` folder. These folders are to help organize any assets that are unique to your project.
+
+3. To use the Design System on your project, you’ll need to reference the [CSS (Cascading Style Sheets)](https://developer.mozilla.org/en-US/docs/Web/CSS) and JavaScript files in each HTML page or dynamic templates in your project. Refer to these files by adding the following `<link>` and `<script>` elements
 into your HTML pages:
 
 Add this to your `<head>` element:
@@ -65,12 +86,27 @@ Add this before the closing `</body>` tag:
 <script src="/path/to/your/assets/js/uswds.min.js"></script>
 ```
 
-We offer two versions — a minified version, and an un-minified one. Use the minified version in a production environment or to reduce the file size
-of your downloaded assets. And the un-minified version is better if you are in a
-development environment or would like to debug the CSS or JavaScript assets in
-the browser. The examples above recommend using the minified versions.
+Here is an example of how to reference these assets in your `index.html` file:
 
-And that’s it — you should be set to use the Design System.
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My Example Project</title>
+  <link rel="stylesheet" href="assets/uswds-1.0.0/css/uswds.min.css">
+</head>
+<body>
+
+  <script src="assets/uswds-1.0.0/js/uswds.min.js"></script>
+</body>
+</html>
+```
+
+We offer both files, the CSS and the JavaScript, in two versions — a minified version, and an un-minified one. (In the examples above, we are using the minified files.) Use the minified files in a production environment or to reduce the file size of your downloaded assets. And the un-minified files are better if you are in a development environment or would like to debug the CSS or JavaScript assets in the browser.
+
+And that’s it — you should now be able to copy our code samples into your site's HTML and start using the Design System.
 
 ### Install using npm
 

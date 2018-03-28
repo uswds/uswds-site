@@ -73,22 +73,21 @@ To use the Design System on your project, you’ll need to include the CSS and J
 
     You'll notice in our example above that we also outline a `stylesheets`, `images` and `javascript` folder in your `assets` folder. These folders are to help organize any assets that are unique to your project.
 
-3. To use the Design System on your project, you’ll need to reference the [CSS (Cascading Style Sheets)](https://developer.mozilla.org/en-US/docs/Web/CSS) and JavaScript files in each HTML page or dynamic templates in your project. Refer to these files by adding the following `<link>` and `<script>` elements
-into your HTML pages:
+3. To use the Design System on your project, you’ll need to reference the [CSS (Cascading Style Sheets)](https://developer.mozilla.org/en-US/docs/Web/CSS) and JavaScript files in each HTML page or dynamic templates in your project.
 
-    Add this to your `<head>` element:
+    Add the stylesheet `<link>` into your `<head>` to load the CSS:
 
     ```html
     <link rel="stylesheet" href="/path/to/your/assets/css/uswds.min.css">
     ```
 
-    Add this before the closing `</body>` tag:
+    Add this `<script>` near the end of your page, right before the closing `</body>` tag:
 
     ```html
     <script src="/path/to/your/assets/js/uswds.min.js"></script>
     ```
 
-    Here is an example of how to reference these assets in your `index.html` file:
+    Here's an example of how to reference these assets in your `index.html` file:
 
     ```html
     <!DOCTYPE html>
@@ -185,7 +184,7 @@ Global variables are defined in the `node_modules/uswds/src/stylesheets/core/_va
 Below is an example of how you might setup your main Sass file to achieve this:
 
 ```scss
-@import 'variables.scss'; # Custom Sass variables file
+@import 'variables.scss'; # Custom Sass variables file;
 @import 'node_modules/uswds/src/stylesheets/uswds.scss';
 
 ```

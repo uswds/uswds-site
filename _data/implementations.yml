@@ -116,4 +116,4 @@
     name: Brandon Ruffridge
     url: https://github.com/bruffridge
   version:
-  notes: "NASAPress: A WordPress theme designed for NASA, built on the [Sage starter theme](https://roots.io/sage/), styled using the US Web Design System. While it currently uses the NASA fork of the U.S. Web Design System, this could be swapped out by changing the dependency in package.json from nasawds to uswds."
+  notes: "NASAPress: A WordPress theme designed for NASA, built on the [Sage starter theme](https://roots.io/sage/), styled using the U.S. Web Design System. While it currently uses the NASA fork of the U.S. Web Design System, this could be swapped out by changing the dependency in package.json from nasawds to uswds."

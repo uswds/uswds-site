@@ -1,4 +1,5 @@
-- name: Django
+- name: django-designstandards
+  distribution: Django
   url: https://github.com/department-of-veterans-affairs/django-designstandards
   author:
     name: Paul Tagliamonte (USDS)
@@ -6,7 +7,8 @@
   version: 0.12.0
   notes: "This package provides access to the Design System in [Django](https://www.djangoproject.com/) applications."
 
-- name: Django
+- name: django-uswds-forms
+  distribution: Django
   id: django-uswds-forms
   url: http://django-uswds-forms.readthedocs.io/en/latest/
   author:
@@ -16,7 +18,8 @@
   notes: |
     This package provides Django Forms integration with the Design System.
 
-- name: Drupal
+- name: U.S. Web Design System (USWDS)
+  distribution: Drupal
   url: https://www.drupal.org/project/uswds
   author:
     name: Brock Fanning
@@ -24,7 +27,8 @@
   version: 1.x
   notes: "This base theme focuses on tweaking Drupal's markup so that it will work with the USWDS library. Some CSS is added to deal with unavoidable Drupal quirks, but only as a last resort."
 
-- name: Jekyll
+- name: uswds-jekyll
+  distribution: Jekyll
   url: https://github.com/18f/uswds-jekyll
   author:
     name: 18F
@@ -32,7 +36,8 @@
   version: 1.3.1
   notes: "A [Jekyll](https://jekyllrb.com/) theme for the Design System."
 
-- name: npm and gulp
+- name: uswds-simple-sass
+  distribution: npm and gulp
   url: https://github.com/18F/uswds-simple-sass
   author:
     name: 18F
@@ -43,15 +48,17 @@
     power a development workflow for a one-page site that leverages the Design System'
     SASS. Note that this is a starter project and *not* a reusable package.
 
-- name: npm and node-sass
+- name: 18f-contrib-web-design-standards
+  distribution: npm and node-sass
   url: https://github.com/openbrian/18f-contrib-web-design-standards
   author:
     name: Brian DeRocher
     url: https://github.com/openbrian
   version: 0.8.0
-  notes: "This package provides seamless integration with node-sass and grunt pipelines."
+  notes: "A node-sass based wrapper of the U.S. Web Design System library."
 
-- name: NuGet
+- name: NuGet web-design-standards
+  distribution: NuGet
   url: https://www.nuget.org/packages/web-design-standards/
   author:
     name: Abdul Ahad Monty
@@ -59,7 +66,8 @@
   version: 0.8.1
   notes: "The NuGet Package has been created to access the library easily from Visual Studio [NuGet Package Manager](https://www.nuget.org/)."
 
-- name: Rails gem
+- name: uswds-rails
+  distribution: Rails gem
   url: https://github.com/18F/uswds-rails-gem
   author:
     name: 18F
@@ -67,7 +75,8 @@
   version: 0.12.1
   notes: "This [Ruby on Rails](http://rubyonrails.org/) gem is not currently maintained."
 
-- name: Ruby gem
+- name: U.S. Web Design Standards style assets gem
+  distribution: Ruby gem
   url: https://github.com/18F/us_web_design_standards_gem
   author:
     name: 18F
@@ -75,7 +84,8 @@
   version: 0.8.0
   notes: "**This gem has been deprecated in favor of the [Rails gem](#rails-gem).** Please [let us know](https://github.com/18F/us_web_design_standards_gem/issues/new) if you'd like to adopt it."
 
-- name: WebJars
+- name: WebJars U.S. Web Design Standards
+  distribution: WebJars
   url: https://mvnrepository.com/artifact/org.webjars/uswds
   author:
     name: VJ Kapur
@@ -83,7 +93,8 @@
   version: 0.13.1
   notes: "For Java- and JVM-based build tools, such as Maven and Gradle."
 
-- name: WordPress
+- name: Broadcasting Board of Governors WordPress theme
+  distribution: WordPress
   url: https://github.com/BBGInnovate/bbgRedesign
   author:
     name: Broadcasting Board of Governors (BBG)
@@ -91,7 +102,8 @@
   version: 0.9.1
   notes: "This is not a reusable WordPress theme, but an implementation of the Design System for [bbg.gov](https://www.bbg.gov/)."
 
-- name: WordPress
+- name: Benjamin
+  distribution: WordPress
   id: wordpress-benjamin
   url: https://github.com/kyle-jennings/Benjamin
   author:
@@ -100,7 +112,8 @@
   version: 1.1.0
   notes: "A WordPress theme built with Automattic's _s, the U.S. Web Design System, and the needs of the people. For additional components and shortcodes, check out the [Franklin](https://github.com/kyle-jennings/Franklin) plugin."
 
-- name: WordPress
+- name: The Standards
+  distribution: WordPress
   id: the-standards
   url: https://github.com/LavertyCreative/The-Standards
   author:

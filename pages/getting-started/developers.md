@@ -23,94 +23,176 @@ subnav:
 
 ## Installation
 
-Here are a few different ways to use the Design System within your project.
+There are a few different ways to use the Design System within your project. Which one you choose depends on the needs of your project and how you are most comfortable working. Here are a few notes on what to consider when deciding which installation method to use:
+
+*Download the Design System if:*
+
+- You are not familiar with `npm` and package management.
+
+*Use the Design System `npm` package if:*
+
+- You are familiar with using `npm` and package management.
 
 ### Download
 
 To use the Design System on your project, you’ll need to include the CSS and JavaScript files in each HTML page in your project.
 
-First, download the Design System assets:
+1. First, download the Design System assets:
 
-<a class="link-download" href="https://github.com/uswds/uswds/releases/download/v{{ site.data.uswds_version }}/uswds-{{ site.data.uswds_version }}.zip">Download code</a>
-<span class="link-download-subtext">Version {{ site.data.uswds_version }}</span>
+    <a class="link-download" href="https://github.com/uswds/uswds/releases/download/v{{ site.data.uswds_version }}/uswds-{{ site.data.uswds_version }}.zip">Download code</a>
+    <span class="link-download-subtext">Version {{ site.data.uswds_version }}</span>
 
-Then, add the following folders into a relevant place in your code base — likely a directory where you keep third-party libraries:
+    After extracting the zip file you should see the following file and folder structure:
+
+    ```
+    uswds-{{ site.data.uswds_version }}/
+    ├── css/
+    │   ├── uswds.min.css.map
+    │   ├── uswds.min.css
+    │   └── uswds.css
+    ├── fonts/
+    ├── img/
+    ├── js/
+    │   ├── uswds.min.js.map
+    │   ├── uswds.min.js
+    │   └── uswds.js
+    └── scss/
+    ```
+
+2. Copy these files and folders into a relevant place in your project's code base. Here is an example structure for how this might look:
+
+    ```
+    example-project/
+    ├── assets/
+    │   ├── uswds-{{ site.data.uswds_version }}/
+    │   ├── stylesheets/
+    │   ├── images/
+    │   └── javascript/
+    └── index.html
+    ```
+
+    You'll notice in our example above that we also outline a `stylesheets`, `images` and `javascript` folder in your `assets` folder. These folders are to help organize any assets that are unique to your project.
+
+3. To use the Design System on your project, you’ll need to reference the [CSS (Cascading Style Sheets)](https://developer.mozilla.org/en-US/docs/Web/CSS) and JavaScript files in each HTML page or dynamic templates in your project.
+
+    Add the stylesheet `<link>` into your `<head>` to load the CSS:
+
+    ```html
+    <link rel="stylesheet" href="/path/to/your/assets/css/uswds.min.css">
+    ```
+
+    Add this `<script>` near the end of your page, right before the closing `</body>` tag:
+
+    ```html
+    <script src="/path/to/your/assets/js/uswds.min.js"></script>
+    ```
+
+    Here's an example of how to reference these assets in your `index.html` file:
+
+    ```html
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- U.S. Web Design System CSS -->
+      <link rel="stylesheet" href="assets/uswds-{{ site.data.uswds_version }}/css/uswds.min.css">
+
+      <title>My example project</title>
+    </head>
+    <body>
+      <h1>Hello, world!</h1>
+      
+      <!-- U.S. Web Design System JavaScript -->
+      <script src="assets/uswds-{{ site.data.uswds_version }}/js/uswds.min.js"></script>
+    </body>
+    </html>
+    ```
+
+    And that’s it — you should now be able to copy our code samples into your site's HTML and start using the Design System.
+
+    Note: We offer the CSS and the JavaScript in two versions — a minified version and an un-minified one. (In the examples above, we are using the minified files.) Use the minified files in a production environment or to reduce the file size of your downloaded assets. And the un-minified files are better if you are in a development environment or would like to debug the CSS or JavaScript assets in the browser.
+    
+    Note: We also provide Sass (SCSS) files in the zip file which you can compile to CSS. See [Sass](#sass) and [Customization and theming](#customization-and-theming).
+
+
+
+### Install using npm
+
+`npm` is a package manager for Node based projects. The U.S. Web Design System maintains a [`uswds` package](https://www.npmjs.com/package/uswds) for you to utilize both the pre-compiled and compiled files on your project.
+
+1. Install `Node/npm`. Below is a link to find the install method that coincides with your operating system:
+
+    Node v4.2.3+, [Installation guides](https://nodejs.org/en/download/)
+
+    **Note for Windows users:** If you are using Windows and are unfamiliar with `Node` or `npm`, we recommend following [Team Treehouse's tutorial](http://blog.teamtreehouse.com/install-node-js-npm-windows) for more information.
+
+2. Make sure you have installed it correctly:
+
+    ```shell
+    npm -v
+    3.10.8 # This line may vary depending on what version of Node you've installed.
+    ```
+
+3. Create a `package.json` file. You can do this manually, but an easier method is to use the `npm init` command. This command will prompt you with a few questions to create your `package.json` file.
+
+4. Add `uswds` to your project’s `package.json`:
+
+    ```shell
+    npm install --save uswds
+    ```
+
+    The `uswds` module is now installed as a dependency. You can use the un-compiled files found in the `src/` or the compiled files in the `dist/` directory.
+
+    ```
+    node_modules/uswds/
+    ├── dist/
+    │   ├── css/
+    │   ├── fonts/
+    │   ├── html/
+    │   ├── img/
+    │   ├── js/
+    └── src/
+        ├── fonts/
+        ├── img/
+        ├── js/
+        ├── stylesheets/
+        └── templates/
+    ```
+
+#### Importing assets
+
+Since you are already using `npm`, the U.S. Web Design System team recommends leveraging the ability to write custom scripts. Here are some links to how we do this with our docs website using `npm` + [`gulp`](http://gulpjs.com/):
+
+[Link to `npm` scripts example in `uswds-site`](https://github.com/uswds/uswds-site/blob/develop/package.json#L4)
+
+[Link to gulpfile.js example in `uswds-site`](https://github.com/uswds/uswds-site/blob/develop/gulpfile.js)
+
+#### Sass
+
+The Design System is easily customizable using the power of [Sass (Syntactically Awesome Style Sheets)](http://sass-lang.com/). The main Sass (SCSS) source file is located here:
 
 ```
-uswds-{{ site.data.uswds_version }}/
-├── js/
-│   ├── uswds.min.js.map
-│   ├── uswds.min.js
-│   └── uswds.js
-├── css/
-│   ├── uswds.min.css.map
-│   ├── uswds.min.css
-│   └── uswds.css
-├── img/
-└── fonts/
+node_modules/uswds/src/stylesheets/uswds.scss
 ```
 
-Refer to these files by adding the following `<link>` and `<script>` elements
-into your HTML pages:
+Global variables are defined in the `node_modules/uswds/src/stylesheets/core/_variables.scss` file. Custom theming can be done by copying the `_variables.scss` file into your own project’s Sass folder, changing applicable variable values, and importing it before `uswds.scss`.
 
-Add this to your `<head>` element:
+Below is an example of how you might setup your main Sass file to achieve this:
 
-```html
-<link rel="stylesheet" href="/path/to/your/assets/css/uswds.min.css">
+```scss
+@import 'variables.scss'; # Custom Sass variables file
+@import 'node_modules/uswds/src/stylesheets/uswds.scss';
 ```
 
-Add this before the closing `</body>` tag:
+You can now use your copied version of `_variables.scss` to override any styles to create a more custom look and feel to your application.
 
-```html
-<script src="/path/to/your/assets/js/uswds.min.js"></script>
-```
+#### JavaScript
 
-We offer two versions — a minified version, and an un-minified one. Use the minified version in a production environment or to reduce the file size
-of your downloaded assets. And the un-minified version is better if you are in a
-development environment or would like to debug the CSS or JavaScript assets in
-the browser. The examples above recommend using the minified versions.
-
-And that’s it — you should be set to use the Design System.
-
-### Using npm
-
-If you have `node` installed on your machine, you can use npm to install the Design System. Add `uswds`
-to your project’s `package.json` as a dependency:
-
-```shell
-npm install --save uswds
-```
-
-The package will be installed in `node_modules/uswds`. You can use the un-compiled files
-found in the `src/` or the compiled files in the `dist/` directory.
-
-```
-node_modules/uswds/
-├── dist/
-│   ├── css/
-│   ├── fonts/
-│   ├── img/
-│   ├── js/
-└── src/
-    ├── fonts/
-    ├── img/
-    ├── js/
-    └── stylesheets/
-```
-
-`require('uswds')` will load all of the U.S. Web Design Standard’s JavaScript onto the page. The `uswds` module itself does not export anything.
-
-The main Sass (SCSS) source file is here:
-
-```
-node_modules/uswds/src/stylesheets/all.scss
-```
-
-The non-minified CSS that’s been precompiled is here:
-
-```
-node_modules/uswds/dist/css/uswds.css
-```
+`require('uswds')` will load all of the U.S. Web Design System’s JavaScript onto the page. Add this line to whatever initializer you use to load JavaScript into your application.
 
 ### Using another framework or package manager
 

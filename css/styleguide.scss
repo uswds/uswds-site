@@ -1175,6 +1175,10 @@ code {
   .token.punctuation {
     color: $color-primary-alt-darkest;
   }
+
+  .c {
+    color: $color-gray;
+  }
 }
 
 .alignment-example {
@@ -1466,6 +1470,16 @@ code {
   }
 }
 
+// Override max-width to ensure code blocks are wide enough
+.page-for-developers {
+  ol {
+    max-width: 100% !important;
+
+    p {
+      max-width: $text-max-width;
+    }
+  }
+}
 .page-product-roadmap {
   .usa-label {
     display: inline-block;

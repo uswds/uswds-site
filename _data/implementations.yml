@@ -8,7 +8,6 @@
 
 - name: django-uswds-forms
   distribution: Django
-  id: django-uswds-forms
   url: http://django-uswds-forms.readthedocs.io/en/latest/
   author:
     name: 18F
@@ -67,7 +66,7 @@
     url: https://github.com/18F
   notes: "This [Ruby on Rails](http://rubyonrails.org/) gem is not currently maintained."
 
-- name: U.S. Web Design Standards style assets gem
+- name: us_web_design_standards gem
   distribution: Ruby gem
   url: https://github.com/18F/us_web_design_standards_gem
   author:
@@ -75,7 +74,7 @@
     url: https://github.com/18F
   notes: "**This gem has been deprecated in favor of the [Rails gem](#rails-gem).** Please [let us know](https://github.com/18F/us_web_design_standards_gem/issues/new) if you'd like to adopt it."
 
-- name: WebJars U.S. Web Design Standards
+- name: USWDS WebJar
   distribution: WebJars
   url: https://mvnrepository.com/artifact/org.webjars/uswds
   author:
@@ -93,7 +92,6 @@
 
 - name: Benjamin
   distribution: WordPress
-  id: wordpress-benjamin
   url: https://github.com/kyle-jennings/Benjamin
   author:
     name: Kyle Jennings
@@ -102,7 +100,6 @@
 
 - name: The Standards
   distribution: WordPress
-  id: the-standards
   url: https://github.com/LavertyCreative/The-Standards
   author:
     name: Kyle Laverty

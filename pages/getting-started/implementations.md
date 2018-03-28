@@ -37,6 +37,7 @@ If you have a new implementation to add to this list, please [open an issue] or 
 <table>
   <thead>
     <tr>
+      <th>Name</th>
       <th>Distribution</th>
       <th>Author or maintainer</th>
       <th>Notes</th>
@@ -47,6 +48,7 @@ If you have a new implementation to add to this list, please [open an issue] or 
     <th scope="row">
       <strong><a href="{{ impl.url }}">{{ impl.name }}</a></strong>
     </th>
+    <td>{{ impl.distribution }}</td>
     <td>
       {% if impl.author.url %}
       <a href="{{ impl.author.url }}">{{ impl.author.name }}</a>

@@ -106,3 +106,13 @@
     url: https://github.com/lavekyl
   version:
   notes: "The Standards is a WordPress theme that is based on the U.S. Web Design System."
+
+- name: NASAPress
+  distribution: WordPress
+  id: nasapress
+  url: https://github.com/nasa/nasapress
+  author:
+    name: Brandon Ruffridge
+    url: https://github.com/bruffridge
+  version:
+  notes: "A WordPress theme designed for NASA, built on the [Sage starter theme](https://roots.io/sage/), styled using the U.S. Web Design System. While it currently uses the NASA fork of the U.S. Web Design System, this could be swapped out by changing the dependency in package.json from nasawds to uswds."

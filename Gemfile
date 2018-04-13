@@ -8,7 +8,5 @@ gem 'octopress-autoprefixer'
 
 gem 'scss_lint', require: false
 
-gem 'jekyll-compose', group: [:jekyll_plugins]
-
 gem 'rspec-core'
 gem 'rspec-expectations'

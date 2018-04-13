@@ -105,7 +105,7 @@ To use the Design System on your project, you’ll need to include the CSS and J
     </head>
     <body>
       <h1>Hello, world!</h1>
-      
+
       <!-- U.S. Web Design System JavaScript -->
       <script src="assets/uswds-{{ site.data.uswds_version }}/js/uswds.min.js"></script>
     </body>
@@ -115,7 +115,7 @@ To use the Design System on your project, you’ll need to include the CSS and J
     And that’s it — you should now be able to copy our code samples into your site's HTML and start using the Design System.
 
     Note: We offer the CSS and the JavaScript in two versions — a minified version and an un-minified one. (In the examples above, we are using the minified files.) Use the minified files in a production environment or to reduce the file size of your downloaded assets. And the un-minified files are better if you are in a development environment or would like to debug the CSS or JavaScript assets in the browser.
-    
+
     Note: We also provide Sass (SCSS) files in the zip file which you can compile to CSS. See [Sass](#sass) and [Customization and theming](#customization-and-theming).
 
 
@@ -189,6 +189,8 @@ Below is an example of how you might setup your main Sass file to achieve this:
 ```
 
 You can now use your copied version of `_variables.scss` to override any styles to create a more custom look and feel to your application.
+
+The Design System uses [gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer) to automatically add vendor prefixes to the precompiled stylesheets (`css/uswds.min.css` and `css/uswds.css`) however prefixes will not be applied when using the Sass source files directly. If your project requires the use of Sass and vendor prefixes we recommend incorportaing a plugin such as [Autoprefixer](https://github.com/postcss/autoprefixer) into your build process.
 
 #### JavaScript
 

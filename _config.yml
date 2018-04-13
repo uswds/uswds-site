@@ -64,6 +64,7 @@ defaults:
 
 gems:
   - jekyll-redirect-from
+  - octopress-autoprefixer
 
 exclude:
   - ".ruby-version"

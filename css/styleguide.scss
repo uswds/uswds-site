@@ -1114,9 +1114,7 @@ code {
 }
 
 .highlight {
-  pre {
-    max-width: $lead-max-width;
-  }
+  max-width: $lead-max-width;
 }
 
 // Code snippet boxes

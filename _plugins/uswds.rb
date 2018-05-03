@@ -43,7 +43,7 @@ module USWDS
   end
 
   def absolutify_links(content, base_url)
-    content.gsub(/href="(?!https?:)([^"]+)"/){
+    content.gsub(/href="(?!\#|https?:)([^"]+)"/){
       absolute = URI.join(base_url, $1)
       "href=\"#{absolute}\""
     }

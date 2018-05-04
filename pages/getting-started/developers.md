@@ -7,6 +7,18 @@ lead: The UI components are built on a solid HTML foundation, progressively enha
 subnav:
 - text: Installation
   href: '#installation'
+- text: CSS architecture
+  href: '#css-architecture'
+- text: JS customization
+  href: '#js-customization'
+- text: Customization and theming
+  href: '#customization-and-theming'
+- text: Where things live
+  href: '#where-things-live'
+- text: Browser support
+  href: '#browser-support'
+- text: Accessibility
+  href: '#accessibility'
 - text: Fractal
   href: '#fractal'
 - text: Need installation help?

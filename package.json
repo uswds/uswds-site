@@ -67,7 +67,6 @@
     "node-notifier": "^5.2.1",
     "normalize.css": "^8.0.0",
     "nswatch": "^0.2.0",
-    "politespace": "^1.0.2",
     "run-sequence": "^2.2.1",
     "simplecrawler": "^1.1.6",
     "uswds": "1.6.2",

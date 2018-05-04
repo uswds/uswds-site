@@ -3,7 +3,6 @@
 require('./form-disable');
 require('./scroll-to-top-for-hash');
 require('./sidenav');
-require('./vendor/politespace');
 require('./vendor/stickyfill.min.js');
 
 

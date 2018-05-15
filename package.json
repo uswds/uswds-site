@@ -69,12 +69,11 @@
     "node-notifier": "^5.2.1",
     "normalize.css": "^8.0.0",
     "nswatch": "^0.2.0",
-    "run-sequence": "^2.2.1",
     "simplecrawler": "^1.1.6",
+    "snyk": "^1.80.1",
     "uswds": "1.6.3",
     "vinyl-buffer": "^1.0.1",
-    "vinyl-source-stream": "^2.0.0",
-    "snyk": "^1.80.1"
+    "vinyl-source-stream": "^2.0.0"
   },
   "watch": {
     "./css/**/*.scss": [

@@ -1,7 +1,6 @@
 var gulp      = require('gulp');
 var dutil     = require('./doc-util');
 var linter    = require('gulp-scss-lint');
-var runSequence   = require('run-sequence');
 
 gulp.task('copy-doc-styles', function (done) {
 
@@ -42,4 +41,9 @@ gulp.task('scss-lint', function (done) {
 
 });
 
-gulp.task('sass', ['copy-doc-styles', 'copy-uswds-styles']);
+gulp.task('sass',
+  gulp.parallel(
+    'copy-doc-styles',
+    'copy-uswds-styles'
+  )
+);

@@ -36,25 +36,31 @@ gulp.task('copy-uswds-javascript', function (done) {
 
 });
 
-gulp.task(task, [ 'copy-uswds-javascript', 'eslint' ], function (done) {
+gulp.task(task,
+  gulp.series(
+    gulp.parallel(
+      'copy-uswds-javascript',
+      'eslint'
+    ),
+    function(done) {
+      dutil.logMessage(task, 'Compiling JavaScript');
 
-  dutil.logMessage(task, 'Compiling JavaScript');
+      var minifiedStream = browserify({
+        entries: 'js/start.js',
+        debug: true,
+      });
 
-  var minifiedStream = browserify({
-    entries: 'js/start.js',
-    debug: true,
-  });
-
-  return minifiedStream.bundle()
-    .pipe(source('start.js'))
-    .pipe(buffer())
-    .pipe(sourcemaps.init({ loadMaps: true }))
-      .pipe(uglify())
-      .on('error', gutil.log)
-      .pipe(rename({
-        basename: 'styleguide',
-      }))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('assets/js'));
-
-});
+      return minifiedStream.bundle()
+        .pipe(source('start.js'))
+        .pipe(buffer())
+        .pipe(sourcemaps.init({ loadMaps: true }))
+          .pipe(uglify())
+          .on('error', gutil.log)
+          .pipe(rename({
+            basename: 'styleguide',
+          }))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('assets/js'));
+    }
+  )
+);

@@ -40,7 +40,9 @@
     "prestart": "gulp build",
     "start": "bundle exec jekyll serve --drafts --future",
     "test": "npm run axe && npm run lint && npm run crawl && bundle exec rspec",
-    "watch": "nswatch"
+    "watch": "nswatch",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "axe-core": "^2.6.1",
@@ -53,7 +55,7 @@
     "chrome-remote-interface": "^0.25.5",
     "del": "^3.0.0",
     "express": "^4.16.2",
-    "gulp": "^3.9.0",
+    "gulp": "^4.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.0",
     "gulp-eslint": "^4.0.2",
@@ -71,7 +73,8 @@
     "simplecrawler": "^1.1.6",
     "uswds": "1.6.3",
     "vinyl-buffer": "^1.0.1",
-    "vinyl-source-stream": "^2.0.0"
+    "vinyl-source-stream": "^2.0.0",
+    "snyk": "^1.80.1"
   },
   "watch": {
     "./css/**/*.scss": [
@@ -95,5 +98,6 @@
     "./node_modules/uswds/src/js": [
       "build-js"
     ]
-  }
+  },
+  "snyk": true
 }

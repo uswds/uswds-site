@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 gem 'jekyll'
 gem 'json'
-gem 'open-uri-cached'
 gem 'jekyll-redirect-from'
 gem 'octopress-autoprefixer'
 

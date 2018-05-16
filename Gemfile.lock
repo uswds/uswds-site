@@ -37,7 +37,6 @@ GEM
     octopress-autoprefixer (2.0.1)
       autoprefixer-rails
       jekyll (~> 3.0)
-    open-uri-cached (0.0.5)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
@@ -66,7 +65,6 @@ DEPENDENCIES
   jekyll-redirect-from
   json
   octopress-autoprefixer
-  open-uri-cached
   rspec-core
   rspec-expectations
   scss_lint

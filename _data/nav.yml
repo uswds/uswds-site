@@ -1,5 +1,6 @@
 primary:
   - href: /components/
+  - href: /utilities/
   - href: /page-templates/
   - href: /getting-started/
   - href: /design-principles/
@@ -9,6 +10,7 @@ mobile:
   - href: /components/
     collapsible: true
   - href: /page-templates/
+  - href: /utilities/
   - href: /getting-started/
     collapsible: true
   - href: /design-principles/
@@ -44,6 +46,9 @@ Getting started:
   - href: /getting-started/video-tutorials/
   - href: /getting-started/implementations/
   - href: /getting-started/showcase/
+
+Utilities:
+  - href: /utilities/
 
 Page templates:
   - href: /page-templates/

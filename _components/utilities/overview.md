@@ -24,15 +24,11 @@ The utility values are drawn from your project theme's settings tokens, but can 
 
 ### Examples
 
-**SCSS selector** | `@include u-background-color(primary, darker);`
-**USWDS utility** | `u-background-color-primary-darker`
-**SCSS selector** | `@include u-background-color(red, 50, vivid);`
-**USWDS utility** | `u-background-color-red-50v`
-**SCSS selector** | `@include u-text-decoration(underline);`
-**USWDS utility** | `u-text-decoration-underline`
-**SCSS selector** | `@include u-margin-x(auto);`
-**USWDS utility** | `u-margin-x-auto`
-**SCSS selector** | `@include u-padding-bottom(1);`
-**USWDS utility** | `padding-bottom-1`
+USWDS utility | CSS
+--- | ---
+`.background-color-primary-darker` | `{ background-color: $color-primary-darker; }`
+`.background-color-red-50v` | `{ background-color: $color-red-50v }`
+`.text-decoration-underline` | `{ text-decoration: underline; }`
+`.margin-x-auto` | `{ margin-left: auto; margin-right: auto; }`
+`.padding-bottom-1` | `{ padding-bottom: 8px }`
 {: .usa-table-borderless}
-

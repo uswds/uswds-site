@@ -9,16 +9,16 @@ lead: Set a solid border of a specific thickness and color
 
 The border utility class sets the `border-color` and `border-size`, with support for the following sizes: `0`, `1px`, `2px`, `05` (4px), `1` (8px), `2` (16px), `3` (24px).
 
-Format: `border-[MODIFIER]-[SIZE]`
+**Format:** `border-[LOCATION]-[SIZE]`
 
-Format (full): `border-[top|right|bottom|left|x|y]-[0|1px|2px|05|1|2|3]`
+**Format (full):** `border-[top|right|bottom|left|x|y]-[0|1px|2px|05|1|2|3]`
 
 <div class="usa-accordion-bordered">
   <button class="usa-button-unstyled usa-accordion-button"
-      aria-expanded="true" aria-controls="table-docs">
+      aria-expanded="true" aria-controls="border-docs">
     Documentation
   </button>
-  <div id="table-docs" aria-hidden="false" class="usa-accordion-content">
+  <div id="border-docs" aria-hidden="false" class="usa-accordion-content">
     <p><b>output</b> | responsive scope | state scope</p>
     <table class="usa-table-borderless">
       <caption></caption>
@@ -38,8 +38,8 @@ Format (full): `border-[top|right|bottom|left|x|y]-[0|1px|2px|05|1|2|3]`
         <tr>
           <th scope="row"><b>example</b></th>
           <td>
-            u-border-x-2px<br>
-            u-border
+            border-x-2px<br>
+            border
           </td>
         </tr>
         <tr>
@@ -121,3 +121,20 @@ Format (full): `border-[top|right|bottom|left|x|y]-[0|1px|2px|05|1|2|3]`
     <p><code>u-border</code> → <code>border: spacing(1px) solid;</code></p> -->
   </div>
 </div>
+
+## Border color
+{: .usa-heading}
+
+**Format:** `border-[COLOR NAME]`
+
+
+<div class="usa-accordion-bordered">
+  <button class="usa-button-unstyled usa-accordion-button"
+      aria-expanded="true" aria-controls="border-color-docs">
+    Documentation
+  </button>
+  <div id="border-color-docs" aria-hidden="false" class="usa-accordion-content">
+  </div>
+</div>
+
+

@@ -1,7 +1,7 @@
 ---
 permalink: /utilities/border/
 layout: styleguide
-type: element
+type: utility
 title: Border
 category: Utilities
 lead: Set a solid border of a specific thickness

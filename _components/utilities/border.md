@@ -4,8 +4,14 @@ layout: styleguide
 type: utility
 title: Border
 category: Utilities
-lead: Set a solid border of a specific thickness
+lead: Set a solid border of a specific thickness and color
 ---
+
+The border utility class sets the `border-color` and `border-size`, with support for the following sizes: `0`, `1px`, `2px`, `05` (4px), `1` (8px), `2` (16px), `3` (24px).
+
+Format: `border-[MODIFIER]-[SIZE]`
+
+Format (full): `border-[top|right|bottom|left|x|y]-[0|1px|2px|05|1|2|3]`
 
 <div class="usa-accordion-bordered">
   <button class="usa-button-unstyled usa-accordion-button"
@@ -57,38 +63,61 @@ lead: Set a solid border of a specific thickness
             top and bottom
           </td>
         </tr>
-        <tr>
+<!--         <tr>
           <th scope="row"><b>values</b></th>
           <td>
-            <b>default values</b><br>
             [null]<br>
             0<br>
             1px<br>
             2px<br>
-            p5<br>
+            05<br>
             1<br>
-            1p5<br>
-            base<br>
+            105<br>
+            2<br>
             3
           </td>
           <td>
-            <b>sass equivalent</b><br>
             1px<br>
-            u-border[-modifier](0)<br>
-            u-border[-modifier](1px)<br>
-            u-border[-modifier](2px)<br>
-            u-border[-modifier](p5)<br>
-            u-border[-modifier](1)<br>
-            u-border[-modifier](1p5)<br>
-            u-border[-modifier](base)<br>
-            u-border[-modifier](3)
+            border[-modifier](0)<br>
+            border[-modifier](1px)<br>
+            border[-modifier](2px)<br>
+            border[-modifier](0.5)<br>
+            border[-modifier](1)<br>
+            border[-modifier](1.5)<br>
+            border[-modifier](2)<br>
+            border[-modifier](3)
           </td>
-        </tr>
+        </tr> -->
+        <tr>
+          <th scope="row"><b>examples</b></th>
+          <td>
+            .border<br>
+            .border-0<br>
+            .border-1px<br>
+            .border-2px<br>
+            .border-05<br>
+            .border-1<br>
+            .border-105<br>
+            .border-2<br>
+            .border-3
+          </td>
+          <td>
+            1px solid<br>
+            0<br>
+            1px solid<br>
+            2px solid<br>
+            4px solid<br>
+            8px solid<br>
+            12px solid<br>
+            16px solid<br>
+            24px solid
+           </td>
+          </tr> 
       </tbody>
     </table>
-    <h4>Examples</h4>
+<!--     <h4>Examples</h4>
     <p><code>u-border-top-0</code> → <code>border-top: 0;</code></p>
     <p><code>u-border-x-2px</code> → <code>border: spacing(2px) solid;</code></p>
-    <p><code>u-border</code> → <code>border: spacing(1px) solid;</code></p>
+    <p><code>u-border</code> → <code>border: spacing(1px) solid;</code></p> -->
   </div>
 </div>

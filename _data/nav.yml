@@ -48,7 +48,9 @@ Getting started:
   - href: /getting-started/showcase/
 
 Utilities:
-  - href: /utilities/
+  - text: Overview
+    href: /utilities/
+  - href: /utilities/border/
 
 Page templates:
   - href: /page-templates/

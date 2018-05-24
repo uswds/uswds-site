@@ -1,10 +1,10 @@
 ---
-permalink: /utilities/border/
+permalink: /utilities/border-and-outline/
 layout: styleguide
 type: utility
-title: Border
+title: Border and outline
 category: Utilities
-lead: Set a solid border of a specific thickness and color
+lead: Set a solid border and its thickness and color
 ---
 
 The border utility class sets the `border-color` and `border-size`, with support for the following sizes: `0`, `1px`, `2px`, `05` (4px), `1` (8px), `2` (16px), `3` (24px).

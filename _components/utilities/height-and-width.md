@@ -5,6 +5,11 @@ type: utility
 title: Height and width 
 category: Utilities
 lead: Set the height and width of an element.
+subnav:
+- text: Height
+  href: '#height'
+- text: Width
+  href: '#width'
 ---
 
 Spacing is based on an 8px spacing unit model. See spacing units examples here. 

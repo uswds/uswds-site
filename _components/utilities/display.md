@@ -6,8 +6,6 @@ title: Display
 category: Utilities
 lead: Set the display property
 subnav:
-- text: Display
-  href: '#display'
 - text: Position
   href: '#position'
 - text: Overflow
@@ -17,8 +15,6 @@ subnav:
 - text: Opacity
   href: '#opacity'
 ---
-
-## Display
 
 ## Position
 

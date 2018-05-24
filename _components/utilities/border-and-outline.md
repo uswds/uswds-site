@@ -123,7 +123,6 @@ The border utility class sets the `border-color` and `border-size`, with support
 </div>
 
 ## Border color
-{: .usa-heading}
 
 **Format:** `border-[COLOR NAME]`
 

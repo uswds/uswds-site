@@ -397,6 +397,10 @@ body {
     }
   }
 
+  > h2 {
+    color: $color-primary-darker;
+  }
+
   section {
     > .tooltip {
       margin-top: 56px;

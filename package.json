@@ -8,6 +8,7 @@
   "author": "18F",
   "contributors": [
     "Atul Varma <atul.varma@gsa.gov>",
+    "Brian Hurst <brian.hurst@gsa.gov>",
     "Erica Deahl <erica.deahl@gsa.gov>",
     "Jeremia Kimelman <jeremia.kimelman@gsa.gov>",
     "John Donmoyer <john.donmoyer@gsa.gov>",
@@ -39,7 +40,7 @@
     "lint": "gulp eslint scss-lint",
     "prestart": "gulp build",
     "start": "bundle exec jekyll serve --drafts --future",
-    "test": "npm run axe && npm run lint && npm run crawl && bundle exec rspec",
+    "test": "npm run axe && npm run crawl && bundle exec rspec",
     "watch": "nswatch",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
@@ -60,8 +61,10 @@
     "gulp-concat": "^2.6.0",
     "gulp-eslint": "^4.0.2",
     "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
     "gulp-scss-lint": "^0.6.1",
     "gulp-sourcemaps": "^2.6.4",
+    "gulp-strip-css-comments": "^2.0.0",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.7",
     "jquery": "^3.3.1",
@@ -71,7 +74,7 @@
     "nswatch": "^0.2.0",
     "simplecrawler": "^1.1.6",
     "snyk": "^1.80.1",
-    "uswds": "1.6.3",
+    "uswds": "uswds/uswds#release-2.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },

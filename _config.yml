@@ -43,11 +43,6 @@ repos:
   description: U.S. Web Design System visual design assets
   url: https://github.com/uswds/uswds-assets
 
-sass:
-  load_paths:
-    - css
-    - assets/css
-
 collections:
   components:
     output: true
@@ -65,9 +60,8 @@ defaults:
     values:
       layout: post
 
-gems:
+plugins:
   - jekyll-redirect-from
-  - octopress-autoprefixer
 
 exclude:
   - ".ruby-version"
@@ -85,3 +79,4 @@ exclude:
   - package.json
   - gulpfile.js
   - circle.yml
+  - css

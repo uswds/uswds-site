@@ -12,7 +12,7 @@ layout: default
 
 <main id="main-content" class="main-content">
 
-  <div class="styleguide-content usa-content">
+  <div class="styleguide-content {% unless page.category == 'Utilities' %} usa-content {% endunless %}">
     <header>
       {% if page.category != null %}
         {% unless page.path contains 'overview' %}

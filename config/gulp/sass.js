@@ -1,26 +1,19 @@
 var gulp      = require('gulp');
 var dutil     = require('./doc-util');
+var sass      = require('gulp-sass');
 var linter    = require('gulp-scss-lint');
+var strip     = require('gulp-strip-css-comments');
+var task      = 'sass';
 
-gulp.task('copy-doc-styles', function (done) {
+gulp.task('build-sass', function () {
 
-  dutil.logMessage('copy-doc-styles', 'Copying Sass files from css/');
-
-  var stream = gulp.src('./css/**/*')
-    .pipe(gulp.dest('assets/css/'));
-
-  return stream;
-
-});
-
-gulp.task('copy-uswds-styles', function (done) {
-
-  dutil.logMessage('copy-uswds-styles', 'Copying Sass files from uswds');
-
-  var stream = gulp.src('./node_modules/uswds/src/stylesheets/**/*')
-    .pipe(gulp.dest('assets/css/vendor/uswds'));
-
-  return stream;
+  return gulp.src('./css/**/*.scss')
+    .pipe(sass({
+      includePaths: [ './node_modules' ],
+      outputStyle: 'compressed',
+    }).on('error', sass.logError))
+    .pipe(strip())
+    .pipe(gulp.dest('assets/css'));
 
 });
 
@@ -41,9 +34,8 @@ gulp.task('scss-lint', function (done) {
 
 });
 
-gulp.task('sass',
-  gulp.parallel(
-    'copy-doc-styles',
-    'copy-uswds-styles'
+gulp.task(task,
+  gulp.series(
+    'build-sass'
   )
 );

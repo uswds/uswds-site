@@ -4,7 +4,7 @@ layout: styleguide
 type: utility
 title: Spacing
 category: Utilities
-lead: Set the margin and padding around an element. Spacing is based on an 8px spacing unit model.
+lead: Change the spacing around an item and inside an item.
 subnav:
 - text: Margin
   href: '#margin'
@@ -14,8 +14,6 @@ subnav:
 
 <div class="size-sans-4 weight-300">
 
-  <h1 class="size-sans-14 text-300 margin-y-0 line-height-sans-2">Spacing</h1>
-  <p class="size-sans-10 border-bottom-1px border-text margin-top-105 text-light padding-bottom-3 margin-bottom-2 text-text line-height-sans-2">Change the spacing around an item and inside an item.</p>
   <h3 class="grid-col size-sans-micro text-normal text-medium text-uppercase text-ls-1 margin-y-0 margin-left-2px">CSS properties</h3>
   <div class="margin-top-1">
     <span class="token display-inline-block text-no-uppercase text-ls-auto padding-05 margin-top-05">margin</span>

@@ -551,7 +551,9 @@ $align-items-manual-values: ();
 
 // .background-color
 
-$background-color-plugins: ();
+$background-color-plugins: (
+  'plugin-color-all'
+);
 $background-color-manual-values: ();
 
 // .border

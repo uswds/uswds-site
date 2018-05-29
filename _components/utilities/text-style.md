@@ -1,8 +1,8 @@
 ---
-permalink: /utilities/text-styling/
+permalink: /utilities/text-style/
 layout: styleguide
 type: utility
-title: Text styling
+title: Text style
 category: Utilities
 lead: Change the appearance of text.
 subnav:

@@ -1644,3 +1644,274 @@ article {
 
 
 } // article
+
+// Utilities CSS
+
+/*
+========================================
+CUSTOM PROJECT SASS
+----------------------------------------
+Custom project SASS goes here.
+
+i.e.
+@include padding-right(2px);
+----------------------------------------
+*/
+
+html {
+  font-size: $theme-root-font-size;
+}
+
+*:focus {
+  @include u-outline(.5, $highlight);
+}
+
+.is-inverse {
+  @include add-font-smoothing;
+}
+
+.page-content {
+  h3 {
+    @include u-size('sans', 10);
+    @include u-text('thin');
+    @include u-line-height('heading', 3);
+    @include at-media('tablet-lg') {
+      @include u-size('sans', 15);
+    }
+  }
+}
+
+*:active:focus {
+  @include u-outline(.5, $indigo-warm-50v);
+}
+
+.usa-accordion-content{
+  &[aria-hidden=true] {
+    @include u-display('none');
+  }
+}
+
+.usa-banner-button-text--open {
+  @include u-display('none');
+}
+
+[aria-expanded=true] {
+  > .usa-banner-button-text {
+    @include u-display('none');
+  }
+  > .usa-banner-button-text--open {
+    @include u-display('inline');
+  }
+}
+
+@mixin txt-normalize-headings {
+  @include u-line-height('heading', 2);
+  @include u-margin-y(0);
+  @include u-weight('normal');
+}
+
+.txt-h1,
+.txt-h2,
+.txt-h3 {
+  @include txt-normalize-headings;
+}
+
+.txt-h2 {
+  @include u-margin-top(2);
+  @include u-padding-top(2);
+  @include u-size('sans', 9);
+  @include u-weight('bold');
+
+  @include at-media('tablet-lg'){
+    @include u-margin-top(3);
+    @include u-size('sans', 11);
+  }
+}
+
+.txt-h3 {
+  @include u-margin-top(2);
+  @include u-padding-top(1);
+  @include u-size('sans', 6);
+  @include u-weight('bold');
+  @include at-media('tablet-lg'){
+    @include u-margin-top(2);
+    @include u-padding-top(2);
+    @include u-size('sans', 8);
+  }
+  & + .txt-p {
+    @include u-margin-top(1);
+  }
+}
+
+.txt-p {
+  @include u-line-height('body', 4);
+  @include u-margin-bottom(0);
+  @include u-margin-top(1em);
+  @include u-measure(4);
+  @include at-media('tablet-lg'){
+    @include u-line-height('body', 5);
+    @include u-size('body', 8);
+  }
+}
+
+.txt-li {
+  @include u-border-top(1px, $gray-20);
+  @include u-padding-y(1);
+  @include at-media('tablet-lg'){
+    @include u-padding-y(1);
+  }
+}
+
+.txt-code {
+  @include u-bg($gray-warm-5);
+  @include u-family('mono');
+  @include u-padding-x('05');
+  @include u-padding-y(2px);
+  @include u-radius('sm');
+  @include u-size('mono', 4);
+  @include u-text(400);
+}
+
+.txt-a {
+  @include u-text($gray-90);
+  @include u-underline($gray-30);
+  &:hover{
+    @include u-underline($gray-90);
+  }
+}
+
+.txt-ul {
+  @include add-list-reset;
+}
+
+.usa-body-content, .usa-prose {
+  h1,
+  h2,
+  h3 {
+    @include txt-normalize-headings;
+  }
+  h2 { @extend .txt-h2; }
+  h3 {
+    @extend .txt-h3;
+    & + p {
+      @include u-margin-top(1);
+    }
+  }
+  p { @extend .txt-p; }
+  ul { @extend .txt-ul; }
+  li { @extend .txt-li; }
+  p a {
+    @extend .txt-a;
+    &.usa-lede-link {
+      @include u-text($gray-90);
+      @include u-underline($gray-20);
+      &:hover{
+        @include u-underline($gray-80);
+      }
+    }
+  }
+  code { @extend .txt-code; }
+  aside {
+    code {
+      @include u-bg($gray-warm-10);
+    }
+  }
+}
+
+/* * * * * * ========================= */
+
+.docs-text {
+  @include u-family('sans');
+  @include u-margin-bottom(1);
+  @include u-margin-top(4);
+  @include u-size('sans', 6);
+  @include u-text('normal');
+}
+
+strong {
+  @include u-text('bold');
+}
+
+.docs-inline-code {
+  @include u-bg($gray-warm-4);
+  @include u-family('mono');
+  @include u-padding-x('05');
+  @include u-padding-y(2px);
+  @include u-radius('sm');
+  @include u-size('mono', 4);
+}
+
+.token {
+  $font: 'mono';
+  @include u-border(1px);
+  @include u-color($red-warm-50v)
+  @include u-family($font);
+  @include u-line-height($font, 1);
+  @include u-padding-x('05');
+  @include u-padding-y(2px);
+  @include u-radius('sm');
+  @include u-size($font, 1);
+  @include u-text('normal', 'no-wrap', 'no-underline', 'uppercase', 'no-italic', 'ls-2');
+}
+
+.prose-graf-intro {
+  $font: 'sans';
+  @include u-family($font);
+  @include u-size($font, 2);
+  @include u-text('semibold', 'uppercase', 'ls-2');
+  @include at-media('desktop-lg'){
+    @include u-size($font, 3);
+  }
+}
+
+.text-color .example {
+  @include u-border-bottom(1px, $base-lighter);
+  @include u-margin-y(.5);
+  @include u-padding-y(.5);
+}
+
+
+.output-list {
+  @include grid-row;
+  @include u-margin-top(0);
+  @include u-width(full);
+  .output-utility, .output-css, .output-variable {
+    @include u-border-bottom(1px);
+    @include u-border-bottom($gray-20);
+    @include u-margin(0);
+    @include u-padding-y(.5);
+  }
+  .output-utility {
+    @include grid-col(4);
+  }
+  .output-css {
+    @include grid-col(6);
+    @include u-family(mono);
+    @include u-size(mono, 4);
+  }
+  .output-variable {
+    @include grid-col(2);
+    @include u-family(mono);
+    @include u-size(mono, 4);
+    @include u-text(light);
+  }
+}
+
+.output-token {
+  @include u-bg(white);
+  @include u-border(1px, $gray-10);
+  @include u-family('mono');
+  @include u-padding-x(1);
+  @include u-padding-y(2px);
+  @include u-radius('sm');
+  @include u-size('mono', 4);
+  @include u-text(400);
+}
+
+.output-rule {
+  @include u-display(block);
+  & + .output-rule {
+    @include u-margin-top(.5);
+  }
+}
+

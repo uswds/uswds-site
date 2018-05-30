@@ -1043,91 +1043,91 @@ subnav:
           <h4 class="border-bottom-1px border-gray-5 padding-bottom-1 margin-bottom-2">Padding on all sides</h4>
           <div class="grid-row">
             <div class="grid-col-3 text-center display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <div class="minw-card minh-card border-1px bg-primary-lighter margin-0 display-inline-block padding-0">
+              <div class="square-card border-1px bg-primary-lighter margin-0 display-inline-block padding-0">
                 <div class="bg-white add-aspect-1x1"></div>
               </div>
               <p class="text-center margin-top-05 margin-bottom-05">.padding-0</p>
             </div>
             <div class="grid-col-3 text-center display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <div class="minw-card minh-card border-1px bg-primary-lighter margin-0 display-inline-block padding-1px">
+              <div class="square-card border-1px bg-primary-lighter margin-0 display-inline-block padding-1px">
                 <div class="bg-white add-aspect-1x1"></div>
               </div>
               <p class="text-center margin-top-05 margin-bottom-05">.padding-1px</p>
             </div>
             <div class="grid-col-3 text-center display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <div class="minw-card minh-card border-1px bg-primary-lighter margin-0 display-inline-block padding-2px">
+              <div class="square-card border-1px bg-primary-lighter margin-0 display-inline-block padding-2px">
                 <div class="bg-white add-aspect-1x1"></div>
               </div>
               <p class="text-center margin-top-05 margin-bottom-05">.padding-2px</p>
             </div>
             <div class="grid-col-3 text-center display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <div class="minw-card minh-card border-1px bg-primary-lighter margin-0 display-inline-block padding-05">
+              <div class="square-card border-1px bg-primary-lighter margin-0 display-inline-block padding-05">
                 <div class="bg-white add-aspect-1x1"></div>
               </div>
               <p class="text-center margin-top-05 margin-bottom-05">.padding-05</p>
             </div>
             <div class="grid-col-3 text-center display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <div class="minw-card minh-card border-1px bg-primary-lighter margin-0 display-inline-block padding-1">
+              <div class="square-card border-1px bg-primary-lighter margin-0 display-inline-block padding-1">
                 <div class="bg-white add-aspect-1x1"></div>
               </div>
               <p class="text-center margin-top-05 margin-bottom-05">.padding-1</p>
             </div>
             <div class="grid-col-3 text-center display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <div class="minw-card minh-card border-1px bg-primary-lighter margin-0 display-inline-block padding-105">
+              <div class="square-card border-1px bg-primary-lighter margin-0 display-inline-block padding-105">
                 <div class="bg-white add-aspect-1x1"></div>
               </div>
               <p class="text-center margin-top-05 margin-bottom-05">.padding-105</p>
             </div>
             <div class="grid-col-3 text-center display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <div class="minw-card minh-card border-1px bg-primary-lighter margin-0 display-inline-block padding-2">
+              <div class="square-card border-1px bg-primary-lighter margin-0 display-inline-block padding-2">
                 <div class="bg-white add-aspect-1x1"></div>
               </div>
               <p class="text-center margin-top-05 margin-bottom-05">.padding-2</p>
             </div>
             <div class="grid-col-3 text-center display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <div class="minw-card minh-card border-1px bg-primary-lighter margin-0 display-inline-block padding-205">
+              <div class="square-card border-1px bg-primary-lighter margin-0 display-inline-block padding-205">
                 <div class="bg-white add-aspect-1x1"></div>
               </div>
               <p class="text-center margin-top-05 margin-bottom-05">.padding-205</p>
             </div>
             <div class="grid-col-3 text-center display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <div class="minw-card minh-card border-1px bg-primary-lighter margin-0 display-inline-block padding-3">
+              <div class="square-card border-1px bg-primary-lighter margin-0 display-inline-block padding-3">
                 <div class="bg-white add-aspect-1x1"></div>
               </div>
               <p class="text-center margin-top-05 margin-bottom-05">.padding-3</p>
             </div>
             <div class="grid-col-3 text-center display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <div class="minw-card minh-card border-1px bg-primary-lighter margin-0 display-inline-block padding-4">
+              <div class="square-card border-1px bg-primary-lighter margin-0 display-inline-block padding-4">
                 <div class="bg-white add-aspect-1x1"></div>
               </div>
               <p class="text-center margin-top-05 margin-bottom-05">.padding-4</p>
             </div>
             <div class="grid-col-3 text-center display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <div class="minw-card minh-card border-1px bg-primary-lighter margin-0 display-inline-block padding-5">
+              <div class="square-card border-1px bg-primary-lighter margin-0 display-inline-block padding-5">
                 <div class="bg-white add-aspect-1x1"></div>
               </div>
               <p class="text-center margin-top-05 margin-bottom-05">.padding-5</p>
             </div>
             <div class="grid-col-3 text-center display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <div class="minw-card minh-card border-1px bg-primary-lighter margin-0 display-inline-block padding-6">
+              <div class="square-card border-1px bg-primary-lighter margin-0 display-inline-block padding-6">
                 <div class="bg-white add-aspect-1x1"></div>
               </div>
               <p class="text-center margin-top-05 margin-bottom-05">.padding-6</p>
             </div>
             <div class="grid-col-3 text-center display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <div class="minw-card minh-card border-1px bg-primary-lighter margin-0 display-inline-block padding-7">
+              <div class="square-card border-1px bg-primary-lighter margin-0 display-inline-block padding-7">
                 <div class="bg-white add-aspect-1x1"></div>
               </div>
               <p class="text-center margin-top-05 margin-bottom-05">.padding-7</p>
             </div>
             <div class="grid-col-3 text-center display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <div class="minw-card minh-card border-1px bg-primary-lighter margin-0 display-inline-block padding-8">
+              <div class="square-card border-1px bg-primary-lighter margin-0 display-inline-block padding-8">
                 <div class="bg-white add-aspect-1x1"></div>
               </div>
               <p class="text-center margin-top-05 margin-bottom-05">.padding-8</p>
             </div>
             <div class="grid-col-3 text-center display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <div class="minw-card minh-card border-1px bg-primary-lighter margin-0 display-inline-block padding-9">
+              <div class="square-card border-1px bg-primary-lighter margin-0 display-inline-block padding-9">
                 <div class="bg-white add-aspect-1x1"></div>
               </div>
               <p class="text-center margin-top-05 margin-bottom-05">.padding-9</p>

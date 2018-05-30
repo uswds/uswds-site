@@ -1916,3 +1916,7 @@ strong {
   }
 }
 
+// Ensure that inline lists do not have a bottom margin
+li.display-inline-block {
+  margin-bottom: 0;
+}

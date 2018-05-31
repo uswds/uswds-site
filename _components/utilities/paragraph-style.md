@@ -37,7 +37,7 @@ subnav:
       <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
         <section class="margin-x-neg-2 margin-bottom-2 padding-x-2 padding-bottom-105 border-bottom-1px border-gray-10">
           <div class="grid-row">
-            <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105" id="align">Line height</h3>
+            <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105">Line height</h3>
 
             <ul class="grid-col-fill add-list-reset text-right display-inline">
               <li class="display-inline"><a href="#0" class="display-inline-block padding-y-05 padding-x-105 bg-blue-50v text-no-underline hover:bg-gray-80 text-white radius-md margin-right-05 is-inverse">responsive</a></li>
@@ -204,7 +204,7 @@ subnav:
       <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
         <section class="margin-x-neg-2 margin-bottom-2 padding-x-2 padding-bottom-105 border-bottom-1px border-gray-10">
           <div class="grid-row">
-            <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105" id="align">Maximum width (measure)</h3>
+            <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105">Maximum width (measure)</h3>
 
             <ul class="grid-col-fill add-list-reset text-right display-inline">
               <li class="display-inline"><a href="#0" class="display-inline-block padding-y-05 padding-x-105 bg-blue-50v text-no-underline hover:bg-gray-80 text-white radius-md margin-right-05 is-inverse">responsive</a></li>
@@ -282,7 +282,7 @@ subnav:
       <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
         <section class="margin-x-neg-2 margin-bottom-2 padding-x-2 padding-bottom-105 border-bottom-1px border-gray-10">
           <div class="grid-row">
-            <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105" id="align">Text alignment</h3>
+            <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105">Text alignment</h3>
 
             <ul class="grid-col-fill add-list-reset text-right display-inline">
               <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">responsive</li>
@@ -316,7 +316,7 @@ subnav:
       <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
         <section class="margin-x-neg-2 margin-bottom-2 padding-x-2 padding-bottom-105 border-bottom-1px border-gray-10">
           <div class="grid-row">
-            <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105" id="align">Text indent</h3>
+            <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105">Text indent</h3>
 
             <ul class="grid-col-fill add-list-reset text-right display-inline">
               <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">responsive</li>

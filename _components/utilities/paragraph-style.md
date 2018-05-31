@@ -8,7 +8,7 @@ lead: Change the appearance of a block of text.
 subnav:
 - text: Line height
   href: '#line-height'
-- text: Measure
+- text: Measure (max-width)
   href: '#max-width'
 - text: Text alignment
   href: '#text-align'
@@ -204,7 +204,7 @@ subnav:
       <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
         <section class="margin-x-neg-2 margin-bottom-2 padding-x-2 padding-bottom-105 border-bottom-1px border-gray-10">
           <div class="grid-row">
-            <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105">Maximum width (measure)</h3>
+            <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105">Measure (max-width)</h3>
 
             <ul class="grid-col-fill add-list-reset text-right display-inline">
               <li class="display-inline"><a href="#0" class="display-inline-block padding-y-05 padding-x-105 bg-blue-50v text-no-underline hover:bg-gray-80 text-white radius-md margin-right-05 is-inverse">responsive</a></li>

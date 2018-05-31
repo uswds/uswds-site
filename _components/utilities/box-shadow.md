@@ -39,7 +39,7 @@ lead: Set the box shadow
         <div class="grid-row">
           <div class="grid-col-3 text-center display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
             <div class="bg-secondary-light display-inline-block">
-              <div class="square-9 border-1px bg-white shadow-none"></div>
+              <div class="square-9 bg-white shadow-none"></div>
             </div>
             <p class="text-center margin-top-105 margin-bottom-05">.shadow-none</p>
           </div>

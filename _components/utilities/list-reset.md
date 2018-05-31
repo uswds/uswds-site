@@ -32,22 +32,18 @@ lead: Reset default list styling
           </ul>
         </div>
       </section>
-      <h6 class="usa-heading-alt">Unordered list</h6>
-
+<!--       <h6 class="usa-heading-alt">Unordered list</h6>
       <ul>
         <li>Unordered list item</li>
         <li>Unordered list item</li>
         <li>Unordered list item</li>
-      </ul>
-
-      <h6 class="usa-heading-alt">.list-reset</h6>
-
-      <ul class="list-reset">
+      </ul> -->
+      <h6 class="usa-heading-alt">.add-list-reset</h6>
+      <ul class="add-list-reset">
         <li>Unordered list item</li>
         <li>Unordered list item</li>
         <li>Unordered list item</li>
       </ul>
-
     </section>
   </section>
 
@@ -67,7 +63,7 @@ lead: Reset default list styling
       <div class="grid-col-2">Default variable value</div>
     </div>
     <dl class="output-list">
-      <dt class="output-utility">.list-reset</dt>
+      <dt class="output-utility">.add-list-reset</dt>
       <dd class="output-css">
         list-style: none;<br>
         margin-bottom: 0;<br>

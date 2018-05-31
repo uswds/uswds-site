@@ -4,5 +4,62 @@ layout: styleguide
 type: utility
 title: List reset 
 category: Utilities
-lead: Add a list reset
+lead: Reset default list styling
 ---
+
+<div class="size-sans-4 weight-300">
+
+  <h3 class="grid-col size-sans-micro text-normal text-medium text-uppercase text-ls-1 margin-y-0 margin-left-2px">CSS properties</h3>
+  <div class="margin-top-1">
+    <span class="token display-inline-block text-no-uppercase text-ls-auto padding-05 margin-top-05">list-style</span>
+  </div>
+
+  <section class="border-top-1px padding-top-1 margin-top-4">
+    <h2 class="margin-0 text-light size-sans-8">Examples and usage</h2>
+    <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
+
+      <h6 class="usa-heading-alt">Unordered list</h6>
+
+      <ul>
+        <li>Unordered list item</li>
+        <li>Unordered list item</li>
+        <li>Unordered list item</li>
+      </ul>
+
+      <h6 class="usa-heading-alt">.list-reset</h6>
+
+      <ul class="list-reset">
+        <li>Unordered list item</li>
+        <li>Unordered list item</li>
+        <li>Unordered list item</li>
+      </ul>
+
+    </section>
+  </section>
+
+  <section class="border-top-1px padding-top-1 margin-top-4">
+    <h2 class="margin-0 text-light size-sans-8">Responsive variants</h2>
+  </section>
+
+  <section class="border-top-1px padding-top-1 margin-top-4">
+    <h2 class="margin-0 text-light size-sans-8"><span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">hover</span>, <span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">active</span>, <span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">focus</span>, and <span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">visited</span> variants</h2>
+  </section>
+
+  <section class="border-top-1px padding-top-1 margin-top-4">
+    <h2 class="margin-0 text-light size-sans-8">Default output</h2>
+    <div class="grid-row size-sans-1 text-bold border-bottom-1px padding-bottom-05 margin-top-2 border-gray-20">
+      <div class="grid-col-4">Utility</div>
+      <div class="grid-col-6">Output SCSS</div>
+      <div class="grid-col-2">Default variable value</div>
+    </div>
+    <dl class="output-list">
+      <dt class="output-utility">.text-tabular</dt>
+      <dd class="output-css">font-feature-settings: "tnum" 1, "kern" 1;</dd>
+      <dd class="output-variable">—</dd>
+    </dl>
+  </section>
+  
+  <section class="border-top-1px padding-top-1 margin-top-4">
+    <h2 class="margin-0 text-light size-sans-8">Advanced settings</h2>
+  </section>
+</div>

@@ -19,12 +19,12 @@ lead: Set the box shadow
       <h2 class="grid-col-auto margin-0 text-light size-sans-8">Examples and usage</h2>
       <p class="grid-col-fill text-right size-sans-1 text-normal margin-y-0 margin-left-2px text-gray-60">Utilities, values, and variants may be activated and deactivated in <a href="#0" class="text-text text-no-wrap">advanced settings</a>.</p>
     </div>
-    
+
     <section class="text-color">
       <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
         <section class="margin-x-neg-2 margin-bottom-2 padding-x-2 padding-bottom-105 border-bottom-1px border-gray-10">
           <div class="grid-row">
-          <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105">Float</h3>
+          <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105">Box shadow</h3>
 
             <ul class="grid-col-fill text-right add-list-reset display-inline">
               <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">responsive</li>
@@ -94,8 +94,23 @@ lead: Set the box shadow
       <div class="grid-col-2">Default variable value</div>
     </div>
     <dl class="output-list">
-      <dt class="output-utility">.text-tabular</dt>
-      <dd class="output-css">font-feature-settings: "tnum" 1, "kern" 1;</dd>
+      <dt class="output-utility">.shadow-none</dt>
+      <dd class="output-css">box-shadow: none</dd>
+      <dd class="output-variable">—</dd>
+      <dt class="output-utility">.shadow-1</dt>
+      <dd class="output-css">box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1)</dd>
+      <dd class="output-variable">—</dd>
+      <dt class="output-utility">.shadow-2</dt>
+      <dd class="output-css">box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1)</dd>
+      <dd class="output-variable">—</dd>
+      <dt class="output-utility">.shadow-3</dt>
+      <dd class="output-css">box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1)</dd>
+      <dd class="output-variable">—</dd>
+      <dt class="output-utility">.shadow-4</dt>
+      <dd class="output-css">box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1)</dd>
+      <dd class="output-variable">—</dd>
+      <dt class="output-utility">.shadow-5</dt>
+      <dd class="output-css">box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1)</dd>
       <dd class="output-variable">—</dd>
     </dl>
   </section>

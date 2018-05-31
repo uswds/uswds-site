@@ -67,8 +67,13 @@ lead: Reset default list styling
       <div class="grid-col-2">Default variable value</div>
     </div>
     <dl class="output-list">
-      <dt class="output-utility">.text-tabular</dt>
-      <dd class="output-css">font-feature-settings: "tnum" 1, "kern" 1;</dd>
+      <dt class="output-utility">.list-reset</dt>
+      <dd class="output-css">
+        list-style: none;<br>
+        margin-bottom: 0;<br>
+        margin-top: 0;<br>
+        padding-left: 0;
+      </dd>
       <dd class="output-variable">—</dd>
     </dl>
   </section>

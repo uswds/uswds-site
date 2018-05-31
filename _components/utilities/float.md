@@ -60,8 +60,14 @@ lead: Set a float
       <div class="grid-col-2">Default variable value</div>
     </div>
     <dl class="output-list">
-      <dt class="output-utility">.text-tabular</dt>
-      <dd class="output-css">font-feature-settings: "tnum" 1, "kern" 1;</dd>
+      <dt class="output-utility">.float-none</dt>
+      <dd class="output-css">float: none</dd>
+      <dd class="output-variable">—</dd>
+      <dt class="output-utility">.float-left</dt>
+      <dd class="output-css">float: left</dd>
+      <dd class="output-variable">—</dd>
+      <dt class="output-utility">.float-right</dt>
+      <dd class="output-css">float: right</dd>
       <dd class="output-variable">—</dd>
     </dl>
   </section>

@@ -35,39 +35,39 @@ lead: Set the box shadow
         <div class="grid-row">
           <div class="grid-col-3 text-center display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
             <div class="bg-secondary-light display-inline-block">
-              <div class="square-4 border-1px bg-white shadow-none"></div>
+              <div class="square-9 border-1px bg-white shadow-none"></div>
             </div>
-            <p class="text-center margin-top-05 margin-bottom-05">.shadow-none</p>
+            <p class="text-center margin-top-105 margin-bottom-05">.shadow-none</p>
           </div>
           <div class="grid-col-3 text-center display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
             <div class="bg-secondary-light display-inline-block">
-              <div class="square-4 bg-white shadow-1"></div>
+              <div class="square-9 bg-white shadow-1"></div>
             </div>
-            <p class="text-center margin-top-05 margin-bottom-05">.shadow-1</p>
+            <p class="text-center margin-top-105 margin-bottom-05">.shadow-1</p>
           </div>
           <div class="grid-col-3 text-center display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
             <div class="bg-secondary-light display-inline-block">
-              <div class="square-4 bg-white shadow-2"></div>
+              <div class="square-9 bg-white shadow-2"></div>
             </div>
-            <p class="text-center margin-top-05 margin-bottom-05">.shadow-2</p>
+            <p class="text-center margin-top-105 margin-bottom-05">.shadow-2</p>
           </div>
           <div class="grid-col-3 text-center display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
             <div class="bg-secondary-light display-inline-block">
-              <div class="square-4 bg-white shadow-3"></div>
+              <div class="square-9 bg-white shadow-3"></div>
             </div>
-            <p class="text-center margin-top-05 margin-bottom-05">.shadow-3</p>
+            <p class="text-center margin-top-105 margin-bottom-05">.shadow-3</p>
           </div>
           <div class="grid-col-3 text-center display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
             <div class="bg-secondary-light display-inline-block">
-              <div class="square-4 bg-white shadow-4"></div>
+              <div class="square-9 bg-white shadow-4"></div>
             </div>
-            <p class="text-center margin-top-05 margin-bottom-05">.shadow-4</p>
+            <p class="text-center margin-top-105 margin-bottom-05">.shadow-4</p>
           </div>
           <div class="grid-col-3 text-center display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
             <div class="bg-secondary-light display-inline-block">
-              <div class="square-4 bg-white shadow-5"></div>
+              <div class="square-9 bg-white shadow-5"></div>
             </div>
-            <p class="text-center margin-top-05 margin-bottom-05">.shadow-5</p>
+            <p class="text-center margin-top-105 margin-bottom-05">.shadow-5</p>
           </div>
         </div>
       </section>

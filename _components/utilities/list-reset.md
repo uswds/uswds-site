@@ -32,18 +32,14 @@ lead: Reset default list styling
           </ul>
         </div>
       </section>
-<!--       <h6 class="usa-heading-alt">Unordered list</h6>
-      <ul>
-        <li>Unordered list item</li>
-        <li>Unordered list item</li>
-        <li>Unordered list item</li>
-      </ul> -->
-      <h6 class="usa-heading-alt1 margin-bottom-1">ul.add-list-reset</h6>
       <ul class="add-list-reset">
         <li>Unordered list item</li>
         <li>Unordered list item</li>
         <li>Unordered list item</li>
       </ul>
+      <p class="margin-top-1">
+        <span class="text-base-dark">ul</span><span class="text-red">.add-list-reset</span>
+      </p>
     </section>
   </section>
 

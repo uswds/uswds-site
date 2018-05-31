@@ -48,7 +48,7 @@
   "dependencies": {
     "jquery": "^3.3.1",
     "normalize.css": "^8.0.0",
-    "uswds": "uswds/uswds#release-2.0"
+    "uswds": "github:uswds/uswds#release-2.0"
   },
   "devDependencies": {
     "axe-core": "^2.6.1",

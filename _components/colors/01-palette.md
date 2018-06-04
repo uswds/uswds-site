@@ -32,33 +32,22 @@ order: 01
       <p class="usa-color-name">$color-primary-darkest</p>
     </div>
   </div>
-  <div class="usa-color-square usa-color-base usa-end-row">
+  <div class="usa-color-square usa-color-base usa-mobile-end-row">
     <div class="usa-color-inner-content">
       <p class="usa-color-hex">#212121</p>
       <p class="usa-color-name">$color-base</p>
     </div>
   </div>
-</div>
-
-<div class="usa-grid-full usa-color-row usa-primary-color-section">
-  <div class="usa-color-square usa-color-gray-dark">
-    <div class="usa-color-inner-content">
-      <p class="usa-color-hex">#323a45</p>
-      <p class="usa-color-name">$color-gray-dark</p>
-    </div>
-  </div>
-  <div class="usa-color-square usa-color-gray-light usa-mobile-end-row">
-    <div class="usa-color-inner-content">
-      <p class="usa-color-hex">#aeb0b5</p>
-      <p class="usa-color-name">$color-gray-light</p>
-    </div>
-  </div>
-  <div class="usa-color-square usa-color-white">
+  <div class="usa-color-square usa-color-white usa-end-row">
     <div class="usa-color-inner-content">
       <p class="usa-color-hex">#ffffff</p>
       <p class="usa-color-name">$color-white</p>
     </div>
   </div>
+</div>
+
+<div class="usa-grid-full usa-color-row usa-primary-color-section">
+
 </div>
 
 <h4 class="usa-heading">Secondary colors</h4>
@@ -98,38 +87,6 @@ order: 01
   </div>
 </div>
 
-<div class="usa-grid-full usa-color-row">
-  <div class="color-big">
-    <div class="usa-color-short usa-color-secondary">
-    </div>
-      <p class="usa-color-hex">#e31c3d</p>
-      <p class="usa-color-name">$color-secondary</p>
-  </div>
-  <div class="color-small">
-    <div class="usa-color-short usa-color-secondary-darkest">
-    </div>
-      <p class="usa-color-hex">#981b1e</p>
-      <p class="usa-color-name">$color-secondary-darkest</p>
-  </div>
-  <div class="color-small">
-    <div class="usa-color-short usa-color-secondary-dark">
-    </div>
-      <p class="usa-color-hex">#cd2026</p>
-      <p class="usa-color-name">$color-secondary-dark</p>
-  </div>
-  <div class="color-small">
-    <div class="usa-color-short usa-color-secondary-light">
-    </div>
-      <p class="usa-color-hex">#e59393</p>
-      <p class="usa-color-name">$color-secondary-light</p>
-  </div>
-  <div class="color-small">
-    <div class="usa-color-short usa-color-secondary-lightest">
-    </div>
-      <p class="usa-color-hex">#f9dede</p>
-      <p class="usa-color-name">$color-secondary-lightest</p>
-  </div>
-</div>
 
 <h4 class="usa-heading">Background colors</h4>
 
@@ -170,21 +127,6 @@ order: 01
 
 <div class="usa-grid-full usa-color-row">
   <div class="color-big">
-    <div class="usa-color-short usa-color-gray-warm-dark">
-    </div>
-      <p class="usa-color-hex">#494440</p>
-      <p class="usa-color-name">$color-gray-warm-dark</p>
-  </div>
-  <div class="color-small usa-end-row">
-    <div class="usa-color-short usa-color-gray-warm-light">
-    </div>
-      <p class="usa-color-hex">#e4e2e0</p>
-      <p class="usa-color-name">$color-gray-warm-light</p>
-  </div>
-</div>
-
-<div class="usa-grid-full usa-color-row">
-  <div class="color-big">
     <div class="usa-color-short usa-color-primary-darkest">
     </div>
       <p class="usa-color-hex">#112e51</p>
@@ -198,9 +140,38 @@ order: 01
   </div>
 </div>
 
-<h4 class="usa-heading">Tertiary colors</h4>
+<h4 class="usa-heading">Status colors</h4>
 
 <p>These colors are used primarily for content-specific needs, such as alerts and illustrations. They should never overpower the primary colors.</p>
+
+
+<div class="usa-grid-full usa-color-row">
+  <div class="color-big">
+    <div class="usa-color-short usa-color-secondary-dark">
+    </div>
+      <p class="usa-color-hex">#cd2026</p>
+      <p class="usa-color-name">$color-secondary-dark</p>
+  </div>
+
+  <div class="color-small">
+    <div class="usa-color-short usa-color-secondary">
+    </div>
+      <p class="usa-color-hex">#e31c3d</p>
+      <p class="usa-color-name">$color-secondary</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-secondary-light">
+    </div>
+      <p class="usa-color-hex">#e59393</p>
+      <p class="usa-color-name">$color-secondary-light</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-secondary-lightest">
+    </div>
+      <p class="usa-color-hex">#f9dede</p>
+      <p class="usa-color-name">$color-secondary-lightest</p>
+  </div>
+</div>
 
 <div class="usa-grid-full usa-color-row">
   <div class="color-big">
@@ -256,43 +227,7 @@ order: 01
   </div>
 </div>
 
-<div class="usa-grid-full usa-color-row">
-  <div class="color-big">
-    <div class="usa-color-short usa-color-cool-blue">
-    </div>
-      <p class="usa-color-hex">#205493</p>
-      <p class="usa-color-name">$color-cool-blue</p>
-  </div>
-  <div class="color-small">
-    <div class="usa-color-short usa-color-cool-blue-light">
-    </div>
-      <p class="usa-color-hex">#4773aa</p>
-      <p class="usa-color-name">$color-cool-blue-light</p>
-  </div>
-  <div class="color-small">
-    <div class="usa-color-short usa-color-cool-blue-lighter">
-    </div>
-      <p class="usa-color-hex">#8ba6ca</p>
-      <p class="usa-color-name">$color-cool-blue-lighter</p>
-  </div>
-  <div class="color-small">
-    <div class="usa-color-short usa-color-cool-blue-lightest">
-    </div>
-      <p class="usa-color-hex">#dce4ef</p>
-      <p class="usa-color-name">$color-cool-blue-lightest</p>
-  </div>
-</div>
-
 <h4 class="usa-heading">Special state colors</h4>
-
-<div class="usa-grid-full usa-color-row">
-  <div class="color-big">
-    <div class="usa-color-short usa-color-focus">
-    </div>
-    <p class="usa-color-hex">#3e94cf</p>
-    <p class="usa-color-name">$color-focus</p>
-  </div>
-</div>
 
 <div class="usa-grid-full usa-color-row">
   <div class="color-big">
@@ -302,3 +237,85 @@ order: 01
     <p class="usa-color-name">$color-visited</p>
   </div>
 </div>
+
+<h2 class="usa-heading">Themes</h2>
+<p>Take a look at a few themes.</p>
+<h3>1. Modern and bright</h3>
+<p>An introduction about this theme.</p>
+<h4 class="usa-heading">Primary colors</h4>
+<div class="usa-grid-full usa-color-row usa-primary-color-section">
+  <div class="usa-color-square usa-color-primary">
+    <div class="usa-color-inner-content">
+      <p class="usa-color-hex">#0071bc</p>
+      <p class="usa-color-name">$color-primary</p>
+    </div>
+  </div>
+  <div class="usa-color-square usa-color-primary-darker usa-mobile-end-row">
+    <div class="usa-color-inner-content">
+      <p class="usa-color-hex">#205493</p>
+      <p class="usa-color-name">$color-primary-darker</p>
+    </div>
+  </div>
+  <div class="usa-color-square usa-color-primary-darkest">
+    <div class="usa-color-inner-content">
+      <p class="usa-color-hex">#112e51</p>
+      <p class="usa-color-name">$color-primary-darkest</p>
+    </div>
+  </div>
+  <div class="usa-color-square usa-color-cool-blue-lightest usa-mobile-end-row">
+    <div class="usa-color-inner-content">
+      <p class="usa-color-hex">#dce4ef</p>
+      <p class="usa-color-name">$color-primary-lightest</p>
+    </div>
+  </div>
+</div>
+<h4 class="usa-heading">Secondary colors</h4>
+<div class="usa-grid-full usa-color-row">
+  <div class="color-big">
+    <div class="usa-color-short usa-color-primary-alt">
+    </div>
+      <p class="usa-color-hex">#02bfe7</p>
+      <p class="usa-color-name">$color-primary-alt</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-primary-alt-darkest">
+    </div>
+      <p class="usa-color-hex">#046b99</p>
+      <p class="usa-color-name">$color-primary-alt-darkest</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-primary-alt-dark">
+    </div>
+      <p class="usa-color-hex">#00a6d2</p>
+      <p class="usa-color-name">$color-primary-alt-dark</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-primary-alt-light">
+    </div>
+      <p class="usa-color-hex">#9bdaf1</p>
+      <p class="usa-color-name">$color-primary-alt-light</p>
+  </div>
+  <div class="color-small">
+    <div class="usa-color-short usa-color-primary-alt-lightest">
+    </div>
+      <p class="usa-color-hex">#e1f3f8</p>
+      <p class="usa-color-name">$color-primary-alt-lightest</p>
+  </div>
+</div>
+<p><i>[Images of theme on sample pages]</i></p>
+<h5>When to use</h5>
+<p>Use this theme for modern applications, web apps, and data-based sites.</p>
+<h5>Implementation</h5>
+<p>Use this palette by setting <code>$color-palette: $modern-and-bright;</code> in <code>theme.scss</code></p>
+<h5>View and customize</h5>
+<p>View this theme and sample pages on <a href="#0">CodePen</a>.</p>
+---
+<h3>2. Clean and classic</h3>
+<h3>3. Inspiring and empowering</h3>
+
+<h2 class="usa-heading">Full pallete</h2>
+
+<p>Want to choose a different style? Take a look at our full palette range.</p>
+
+<h3>Note on accessibility</h3>
+<p>Use a step of 50 to maintain color contrast between colors. For example...</p>

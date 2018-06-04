@@ -779,7 +779,8 @@ h3 + .button_wrapper {
     @include media($medium-screen) {
       @include span-columns(3);
       margin-bottom: 0;
-      padding-bottom: 19%;
+      width: 18%;
+      padding-bottom: 18%;
     }
   }
 

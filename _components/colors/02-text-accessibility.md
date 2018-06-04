@@ -23,9 +23,6 @@ order: 02
     <div class="usa-color-text usa-color-text-primary">
       primary on white
     </div>
-    <div class="usa-color-text usa-color-text-cool-blue-light">
-      cool-blue-light on white
-    </div>
     <div class="usa-color-text usa-color-text-primary-alt-darkest">
       primary-alt-darkest on white
     </div>
@@ -68,9 +65,6 @@ order: 02
     <div class="usa-color-text usa-color-base usa-color-text-white">
       white on base
     </div>
-    <div class="usa-color-text usa-color-gray-warm-dark usa-color-text-white">
-      white on gray-warm-dark
-    </div>
     <div class="usa-color-text usa-color-gray-dark usa-color-text-white">
       white on gray-dark
     </div>
@@ -85,9 +79,6 @@ order: 02
     </div>
     <div class="usa-color-text usa-color-primary usa-color-text-white">
       white on primary
-    </div>
-    <div class="usa-color-text usa-color-cool-blue-light usa-color-text-white">
-      white on cool-blue-light
     </div>
     <div class="usa-color-text usa-color-primary-alt-darkest usa-color-text-white">
       white on primary-alt-darkest
@@ -129,12 +120,6 @@ order: 02
     </div>
     <div class="usa-color-text usa-color-gray-warm-light">
       base on gray-warm-light
-    </div>
-    <div class="usa-color-text usa-color-cool-blue-lighter">
-      base on cool-blue-lighter
-    </div>
-    <div class="usa-color-text usa-color-cool-blue-lightest">
-      base on cool-blue-lightest
     </div>
     <div class="usa-color-text usa-color-primary-alt-lightest">
       base on primary-alt-lightest

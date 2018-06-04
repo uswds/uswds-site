@@ -1673,11 +1673,11 @@ html {
 
 .page-content {
   h3 {
-    @include u-size('sans', 10);
+    @include u-font-size('sans', 10);
     @include u-text('thin');
     @include u-line-height('heading', 3);
     @include at-media('tablet-lg') {
-      @include u-size('sans', 15);
+      @include u-font-size('sans', 15);
     }
   }
 }
@@ -1718,26 +1718,26 @@ html {
 }
 
 .txt-h2 {
+  @include u-font-size('sans', 9);
   @include u-margin-top(2);
   @include u-padding-top(2);
-  @include u-size('sans', 9);
   @include u-weight('bold');
 
   @include at-media('tablet-lg'){
+    @include u-font-size('sans', 11);
     @include u-margin-top(3);
-    @include u-size('sans', 11);
   }
 }
 
 .txt-h3 {
+  @include u-font-size('sans', 6);
   @include u-margin-top(2);
   @include u-padding-top(1);
-  @include u-size('sans', 6);
   @include u-weight('bold');
   @include at-media('tablet-lg'){
+    @include u-font-size('sans', 8);
     @include u-margin-top(2);
     @include u-padding-top(2);
-    @include u-size('sans', 8);
   }
   & + .txt-p {
     @include u-margin-top(1);
@@ -1750,8 +1750,8 @@ html {
   @include u-margin-top(1em);
   @include u-measure(4);
   @include at-media('tablet-lg'){
+    @include u-font-size('body', 8);
     @include u-line-height('body', 5);
-    @include u-size('body', 8);
   }
 }
 
@@ -1765,11 +1765,10 @@ html {
 
 .txt-code {
   @include u-bg($gray-warm-5);
-  @include u-family('mono');
+  @include u-font('mono', 4);
   @include u-padding-x('05');
   @include u-padding-y(2px);
   @include u-radius('sm');
-  @include u-size('mono', 4);
   @include u-text(400);
 }
 
@@ -1822,10 +1821,9 @@ html {
 /* * * * * * ========================= */
 
 .docs-text {
-  @include u-family('sans');
+  @include u-font('sans', 6);
   @include u-margin-bottom(1);
   @include u-margin-top(4);
-  @include u-size('sans', 6);
   @include u-text('normal');
 }
 
@@ -1835,33 +1833,30 @@ strong {
 
 .docs-inline-code {
   @include u-bg($gray-warm-4);
-  @include u-family('mono');
+  @include u-font('mono', 4);
   @include u-padding-x('05');
   @include u-padding-y(2px);
   @include u-radius('sm');
-  @include u-size('mono', 4);
 }
 
 .token {
   $font: 'mono';
   @include u-border(1px);
   @include u-color($red-warm-50v)
-  @include u-family($font);
+  @include u-font($font, 1);
   @include u-line-height($font, 1);
   @include u-padding-x('05');
   @include u-padding-y(2px);
   @include u-radius('sm');
-  @include u-size($font, 1);
   @include u-text('normal', 'no-wrap', 'no-underline', 'uppercase', 'no-italic', 'ls-2');
 }
 
 .prose-graf-intro {
   $font: 'sans';
-  @include u-family($font);
-  @include u-size($font, 2);
+  @include u-font($font, 2);
   @include u-text('semibold', 'uppercase', 'ls-2');
   @include at-media('desktop-lg'){
-    @include u-size($font, 3);
+    @include u-font-size($font, 3);
   }
 }
 
@@ -1887,13 +1882,11 @@ strong {
   }
   .output-css {
     @include grid-col(6);
-    @include u-family(mono);
-    @include u-size(mono, 4);
+    @include u-font(mono, 4);
   }
   .output-variable {
     @include grid-col(2);
-    @include u-family(mono);
-    @include u-size(mono, 4);
+    @include u-font(mono, 4);
     @include u-text(light);
   }
 }
@@ -1901,11 +1894,10 @@ strong {
 .output-token {
   @include u-bg(white);
   @include u-border(1px, $gray-10);
-  @include u-family('mono');
+  @include u-font('mono', 4);
   @include u-padding-x(1);
   @include u-padding-y(2px);
   @include u-radius('sm');
-  @include u-size('mono', 4);
   @include u-text(400);
 }
 
@@ -1919,4 +1911,126 @@ strong {
 // Ensure that inline lists do not have a bottom margin
 li.display-inline-block {
   margin-bottom: 0;
+}
+
+/* * * * * * ========================== */
+/* Utility docs                         */
+
+.utilities-property-title {
+  @include u-font(sans, micro);
+  @include u-margin-left(2px);
+  @include u-margin-y(0);
+  @include u-text(normal, uppercase, ls-1);
+}
+
+.utilities-property {
+  @include u-display(inline-block);
+  @include u-margin-top(.5);
+  @include u-padding(.5);
+  @include u-text(no-uppercase, ls-auto);
+}
+
+.utilities-section {
+  @include u-border-top(1px);
+  @include u-margin-top(4);
+  @include u-padding-top(1);
+}
+
+.utilities-section-title-bar {
+  @include u-flex(align-center);
+  @include u-margin-bottom(2);
+}
+
+.utilities-section-title {
+  @include u-font(sans, 8);
+  @include u-margin(0);
+  @include u-text(light);
+}
+
+.utilities-section-helper {
+  @include u-font(sans, 1)
+  @include u-margin-left(2px);
+  @include u-margin-y(0);
+  @include u-text(right, normal, $gray-60);
+}
+
+.utility {
+  @include u-bg($gray-1);
+  @include u-border(1px, $gray-10);
+  @include u-margin-y(2);
+  @include u-padding-bottom(1);
+  @include u-padding-top(2);
+  @include u-radius(md);
+}
+
+.utility-title-bar {
+  @include u-border-bottom(1px, $gray-10);
+  @include u-margin-bottom(2);
+  @include u-padding-x(2);
+  @include u-padding-bottom(1.5);
+}
+
+.utility-title {
+  @include u-font(sans, 6);
+  @include u-margin-bottom(1.5);
+  @include u-margin-top(0);
+}
+
+.utility-scope {
+  @include add-list-reset
+  @include u-display(inline);
+  @include u-margin(0);
+  @include u-text(right);
+}
+
+.utility-scope-button {
+  @include u-display(inline-block);
+  @include u-margin-right(.5);
+  @include u-padding-y(.5);
+  @include u-padding-x(1.5);
+  @include u-radius(md);
+}
+
+.utility-scope-button-disabled {
+  @extend .utility-scope-button;
+  @include u-border(1px, $gray-20);
+  @include u-text($gray-20, strike);
+}
+
+.utility-scope-button-active {
+  @extend .utility-scope-button;
+  @include add-font-smoothing;
+  @include u-bg($blue-50v);
+  @include u-text(white, no-underline);
+  &:hover {
+    @include u-bg($gray-80);
+    @include u-text(white);
+  }
+}
+
+.utilities-section-title code {
+  @include u-border(1px);
+  @include u-display(inline-block);
+  @include u-font(mono, 6);
+  @include u-margin-right(2px);
+  @include u-padding-x(.5);
+  @include u-padding-y(2px);
+  @include u-radius(md);
+}
+
+
+.utility-class {
+  @include u-bg($base-lighter);
+  @include u-display(inline-block);
+  @include u-font(mono, 2xs);
+  @include u-margin(0);
+  @include u-padding-y(2px);
+  @include u-padding-x(.5);
+  @include u-radius(sm);
+}
+
+.utility-value {
+  @extend .utility-class;
+  @include u-bg($primary-lighter);
+  @include u-margin-top(2px);
 }

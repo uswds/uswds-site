@@ -48,7 +48,7 @@
   "dependencies": {
     "jquery": "^3.3.1",
     "normalize.css": "^8.0.0",
-    "uswds": "uswds/uswds#release-2.0"
+    "uswds": "github:uswds/uswds#release-2.0"
   },
   "devDependencies": {
     "axe-core": "^2.6.1",
@@ -76,7 +76,7 @@
     "node-notifier": "^5.2.1",
     "nswatch": "^0.2.0",
     "simplecrawler": "^1.1.6",
-    "snyk": "^1.80.1",
+    "snyk": "^1.82.1",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },

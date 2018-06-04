@@ -29,11 +29,11 @@ jobs:
           paths:
             - node_modules
       - run:
-          name: Rebuild node-sass
-          command: npm rebuild node-sass
-      - run:
           name: Build site files
           command: npm run build
+      - run:
+          name: Install scss_lint
+          command: gem install scss_lint
       - run:
           name: Run test
           command: npm test

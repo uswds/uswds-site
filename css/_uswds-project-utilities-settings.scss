@@ -119,6 +119,15 @@ $border-style-settings: (
   visited:      false
 );
 
+$border-width-settings: (
+  output:       true,
+  responsive:   true,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+);
+
 $bottom-settings: (
   output:       true,
   responsive:   false,

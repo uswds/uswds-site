@@ -1,5 +1,5 @@
 ---
-permalink: /utilities/font-font-and-family/
+permalink: /utilities/font-size-and-family/
 layout: styleguide
 type: utility
 title: Font size and family

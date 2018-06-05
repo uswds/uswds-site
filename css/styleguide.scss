@@ -1927,7 +1927,7 @@ li.display-inline-block {
 .utilities-property {
   @include u-bg(white);
   @include u-display(inline-block);
-  @include u-margin-top(.5);
+  @include u-margin-top(0);
   @include u-padding(.5);
   @include u-text(no-uppercase, ls-auto);
 }
@@ -1947,6 +1947,11 @@ li.display-inline-block {
   @include u-font(serif, 8);
   @include u-margin(0);
   @include u-text(normal);
+
+  code {
+    @include u-bg(white);
+    @include u-text(light);
+  }
 }
 
 .utilities-section-helper {
@@ -1973,9 +1978,20 @@ li.display-inline-block {
 }
 
 .utility-title {
-  @include u-font(sans, 6);
-  @include u-margin-bottom(1.5);
+  @include u-font(sans, md);
+  @include u-margin-bottom(.5);
   @include u-margin-top(0);
+}
+
+.utility-property {
+  @include u-font(sans, 3xs);
+  @include u-margin(0);
+  @include u-text(uppercase, ls-1);
+}
+
+.utility-property-code {
+  @include u-font(mono, 2xs);
+  @include u-text(light, no-uppercase, ls-auto, $red-warm-50v);
 }
 
 .utility-scope {
@@ -1987,6 +2003,7 @@ li.display-inline-block {
 
 .utility-scope-button {
   @include u-display(inline-block);
+  @include u-margin-bottom(0);
   @include u-margin-right(.5);
   @include u-padding-y(.5);
   @include u-padding-x(1.5);

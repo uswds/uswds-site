@@ -38,9 +38,12 @@ subnav:
       <section class="utility">
         <section class="utility-title-bar">
           <div class="grid-row flex-align-center">
-            <h3 class="grid-col-auto utility-title">Line height</h3>
+            <div class="grid-col-fill">
+              <h3 class="grid-col-auto utility-title">Line height</h3>
+              <p class="utility-property">CSS property: <span class="utility-property-code">line-height</span></p>
+            </div>
 
-            <ul class="utility-scope grid-col-fill">
+            <ul class="utility-scope grid-col-auto">
               <li class="display-inline"><a href="#0" class="utility-scope-button-active">responsive</a></li>
               <li class="utility-scope-button-disabled">active</li>
               <li class="utility-scope-button-disabled">hover</li>
@@ -225,7 +228,10 @@ subnav:
       <section class="utility">
         <section class="utility-title-bar">
           <div class="grid-row flex-align-center">
-            <h3 class="grid-col-fill utility-title">Measure (max-width)</h3>
+            <div class="grid-col-fill">
+              <h3 class="grid-col-auto utility-title">Measure</h3>
+              <p class="utility-property">CSS property: <span class="utility-property-code">max-width</span></p>
+            </div>
 
             <ul class="grid-col-auto utility-scope">
               <li class="display-inline"><a href="#0" class="utility-scope-button-active">responsive</a></li>
@@ -310,7 +316,10 @@ subnav:
       <section class="utility">
         <section class="utility-title-bar">
           <div class="grid-row flex-align-center">
-            <h3 class="grid-col-fill utility-title">Text alignment</h3>
+            <div class="grid-col-fill">
+              <h3 class="grid-col-auto utility-title">Text alignment</h3>
+              <p class="utility-property">CSS property: <span class="utility-property-code">text-align</span></p>
+            </div>
 
             <ul class="grid-col-auto utility-scope">
               <li class="utility-scope-button-disabled">responsive</li>
@@ -353,7 +362,10 @@ subnav:
       <section class="utility">
         <section class="utility-title-bar">
           <div class="grid-row flex-align-center">
-            <h3 class="grid-col-fill utility-title">Text indent</h3>
+            <div class="grid-col-fill">
+              <h3 class="grid-col-auto utility-title">Text indent</h3>
+              <p class="utility-property">CSS property: <span class="utility-property-code">text-indent</span></p>
+            </div>
 
             <ul class="grid-col-auto utility-scope">
               <li class="utility-scope-button-disabled">responsive</li>

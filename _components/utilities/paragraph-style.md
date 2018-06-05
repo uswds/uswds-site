@@ -17,13 +17,14 @@ subnav:
 ---
 
 <div class="font-sans-4 weight-300">
-
-  <h3 class="utilities-property-title">CSS properties</h3>
-  <div class="margin-top-1">
-    <span class="token utilities-property">line-height</span>
-    <span class="token utilities-property">max-width</span>
-    <span class="token utilities-property">text-align</span>
-    <span class="token utilities-property">text-indent</span>
+  <div class="bg-gray-1 border-1px border-gray-10 padding-2 radius-md">
+    <h3 class="utilities-property-title">CSS properties</h3>
+    <div class="margin-top-1">
+      <span class="token utilities-property">line-height</span>
+      <span class="token utilities-property">max-width</span>
+      <span class="token utilities-property">text-align</span>
+      <span class="token utilities-property">text-indent</span>
+    </div>
   </div>
 
   <section class="utilities-section">
@@ -56,121 +57,136 @@ subnav:
             <div class="grid-col-4 margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1 font-mono-2xs text-secondary-vivid">mono</div>
           </div>
           <div class="grid-row grid-gap-lg">
-            <div class="grid-col-4 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-3">
-              <p class="font-sans-md line-height-sans-1 margin-top-0 text-bold">The Celebrated Jumping Frog of Calaveras County</p>
+            <div class="utility-example-container grid-col-4 display-flex flex-column flex-justify">
+              <p class="font-sans-md line-height-sans-1 margin-top-0 text-bold border-y-1px border-secondary-light">Mark Twain</p>
               <div class="display-flex flex-column flex-align-start">
                 <p class="utility-class">.line-height-sans-1</p>
                 <p class="utility-value">~1</p>
+                <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> buttons, navigation, and text not meant to break over a line</p>
               </div>
             </div>
-            <div class="grid-col-4 grid-gap display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-3">
-              <p class="font-serif-md line-height-serif-1 margin-top-0 text-bold">The Celebrated Jumping Frog of Calaveras County</p>
+            <div class="utility-example-container grid-col-4 grid-gap display-flex flex-column flex-justify">
+              <p class="font-serif-md line-height-serif-1 margin-top-0 text-bold border-y-1px border-secondary-light">Mark Twain</p>
               <div class="display-flex flex-column flex-align-start">
                 <p class="utility-class">.line-height-serif-1</p>
                 <p class="utility-value">~1</p>
+                <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> buttons, navigation, and text not meant to break over a line</p>
               </div>
             </div>
-            <div class="grid-col-4 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-3">
-              <p class="font-mono-md line-height-mono-1 margin-top-0 text-bold">The Celebrated Jumping Frog of Calaveras County</p>
+            <div class="grid-col-4 grid-gap-lg display-flex flex-column flex-justify utility-example-container">
+              <p class="font-mono-md line-height-mono-1 margin-top-0 text-bold border-y-1px border-secondary-light">Mark Twain</p>
               <div class="display-flex flex-column flex-align-start">
                 <p class="utility-class">.line-height-mono-1</p>
                 <p class="utility-value">~1</p>
+                <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> buttons, navigation, and text not meant to break over a line</p>
               </div>
             </div>
           </div>
 
           <div class="grid-row grid-gap-lg">
-            <div class="grid-col-4 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-3">
+            <div class="grid-col-4 display-flex flex-column flex-justify flex-align-start utility-example-container">
               <p class="font-sans-sm line-height-sans-2 margin-top-0 text-bold">The Celebrated Jumping Frog of Calaveras County</p>
               <div class="display-flex flex-column flex-align-start">
                 <p class="utility-class">.line-height-sans-2</p>
                 <p class="utility-value">~1.15</p>
+                <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> introductory (dek) text, no more than 1-2 sentences</p>
               </div>
             </div>
-            <div class="grid-col-4 grid-gap display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-3">
+            <div class="grid-col-4 grid-gap display-flex flex-column flex-justify flex-align-start utility-example-container">
               <p class="font-serif-sm line-height-serif-2 margin-top-0 text-bold">The Celebrated Jumping Frog of Calaveras County</p>
               <div class="display-flex flex-column flex-align-start">
                 <p class="utility-class">.line-height-serif-2</p>
                 <p class="utility-value">~1.15</p>
-              </div>
+                <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> introductory (dek) text, no more than 1-2 sentences</p>
             </div>
-            <div class="grid-col-4 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-3">
+            </div>
+            <div class="grid-col-4 grid-gap-lg display-flex flex-column flex-justify flex-align-start utility-example-container">
               <p class="font-mono-sm line-height-mono-2 margin-top-0 text-bold">The Celebrated Jumping Frog of Calaveras County</p>
               <div class="display-flex flex-column flex-align-start">
                 <p class="utility-class">.line-height-mono-2</p>
                 <p class="utility-value">~1.15</p>
-              </div>
+                <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> introductory (dek) text, no more than 1-2 sentences</p>
+            </div>
             </div>
           </div>
 
           <div class="grid-row grid-gap-lg">
-            <div class="grid-col-4 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-3">
+            <div class="grid-col-4 display-flex flex-column flex-justify flex-align-start utility-example-container">
               <p class="font-sans-2xs line-height-sans-3 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
               <div class="display-flex flex-column flex-align-start">
                 <p class="utility-class">.line-height-sans-3</p>
                 <p class="utility-value">~1.35</p>
+                <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> short text (under 1 paragraph), captions, text with a very short or very long measure</p>
               </div>
             </div>
-            <div class="grid-col-4 grid-gap display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-3">
+            <div class="grid-col-4 grid-gap display-flex flex-column flex-justify flex-align-start utility-example-container">
               <p class="font-serif-2xs line-height-serif-3 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
               <div class="display-flex flex-column flex-align-start">
                 <p class="utility-class">.line-height-serif-3</p>
                 <p class="utility-value">~1.35</p>
+                <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> short text (under 1 paragraph), captions, text with a very short or very long measure</p>
               </div>
             </div>
-            <div class="grid-col-4 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-3">
+            <div class="grid-col-4 grid-gap-lg display-flex flex-column flex-justify flex-align-start utility-example-container">
               <p class="font-mono-2xs line-height-mono-3 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
               <div class="display-flex flex-column flex-align-start">
                 <p class="utility-class">.line-height-mono-3</p>
                 <p class="utility-value">~1.35</p>
+                <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> short text (under 1 paragraph), captions, text with a very short or very long measure</p>
               </div>
             </div>
           </div>
 
           <div class="grid-row grid-gap-lg">
-            <div class="grid-col-4 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-3">
+            <div class="grid-col-4 display-flex flex-column flex-justify flex-align-start utility-example-container">
               <p class="font-sans-2xs line-height-sans-4 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
               <div class="display-flex flex-column flex-align-start">
                 <p class="utility-class">.line-height-sans-4</p>
                 <p class="utility-value">~1.5</p>
+                <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> short (1-2 paragraphs) of running text, especially with a short measure</p>
               </div>
             </div>
-            <div class="grid-col-4 grid-gap display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-3">
+            <div class="grid-col-4 grid-gap display-flex flex-column flex-justify flex-align-start utility-example-container">
               <p class="font-serif-2xs line-height-serif-4 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
               <div class="display-flex flex-column flex-align-start">
                 <p class="utility-class">.line-height-serif-4</p>
                 <p class="utility-value">~1.5</p>
+                <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> short (1-2 paragraphs) of running text, especially with a short measure</p>
               </div>
             </div>
-            <div class="grid-col-4 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-3">
+            <div class="grid-col-4 grid-gap-lg display-flex flex-column flex-justify flex-align-start utility-example-container">
               <p class="font-mono-2xs line-height-mono-4 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
               <div class="display-flex flex-column flex-align-start">
                 <p class="utility-class">.line-height-mono-4</p>
                 <p class="utility-value">~1.5</p>
+                <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> short (1-2 paragraphs) of running text, especially with a short measure</p>
               </div>
             </div>
           </div>
 
           <div class="grid-row grid-gap-lg">
-            <div class="grid-col-4 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-3">
+            <div class="grid-col-4 display-flex flex-column flex-justify flex-align-start utility-example-container">
               <p class="font-sans-2xs line-height-sans-5 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
               <div class="display-flex flex-column flex-align-start">
                 <p class="utility-class">.line-height-sans-5</p>
-                <p class="utility-value">~1.63</p>
+                <p class="utility-value">~1.62</p>
+                <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> a good choice for most reading text, especially text meant for extended reading</p>
               </div>
             </div>
-            <div class="grid-col-4 grid-gap display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-3">
+            <div class="grid-col-4 grid-gap display-flex flex-column flex-justify flex-align-start utility-example-container">
               <p class="font-serif-2xs line-height-serif-5 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
               <div class="display-flex flex-column flex-align-start">
                 <p class="utility-class">.line-height-serif-5</p>
-                <p class="utility-value">~1.63</p>
+                <p class="utility-value">~1.62</p>
+                <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> a good choice for most reading text, especially text meant for extended reading</p>
               </div>
             </div>
-            <div class="grid-col-4 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-3">
+            <div class="grid-col-4 grid-gap-lg display-flex flex-column flex-justify flex-align-start utility-example-container">
               <p class="font-mono-2xs line-height-mono-5 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
               <div class="display-flex flex-column flex-align-start">
                 <p class="utility-class">.line-height-mono-5</p>
-                <p class="utility-value">~1.63</p>
+                <p class="utility-value">~1.62</p>
+                <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> a good choice for most reading text, especially text meant for extended reading</p>
               </div>
             </div>
           </div>
@@ -181,6 +197,7 @@ subnav:
               <div class="display-flex flex-column flex-align-start">
                 <p class="utility-class">.line-height-sans-6</p>
                 <p class="utility-value">~1.75</p>
+                <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> shorter text (1-2 paragraphs) meant to be distinguished from other page text, pullquotes</p>
               </div>
             </div>
             <div class="grid-col-4 grid-gap display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-gray-5 padding-bottom-1">
@@ -188,6 +205,7 @@ subnav:
               <div class="display-flex flex-column flex-align-start">
                 <p class="utility-class">.line-height-serif-6</p>
                 <p class="utility-value">~1.75</p>
+                <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> shorter text (1-2 paragraphs) meant to be distinguished from other page text, pullquotes</p>
               </div>
             </div>
             <div class="grid-col-4 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 padding-bottom-1">
@@ -195,6 +213,7 @@ subnav:
               <div class="display-flex flex-column flex-align-start">
                 <p class="utility-class">.line-height-mono-6</p>
                 <p class="utility-value">~1.75</p>
+                <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> shorter text (1-2 paragraphs) meant to be distinguished from other page text, pullquotes</p>
               </div>
             </div>
           </div>
@@ -220,61 +239,66 @@ subnav:
 
         <section class="padding-x-3">
           <div class="grid-row grid-gap-lg">
-            <div class="grid-col-12 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-md line-height-serif-4 margin-top-0 measure-1 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-              <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs text-gray-50">40ch</span></p>
-              <div>
-                <p class="margin-0">.measure-1</p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-md line-height-serif-4 margin-top-0 measure-1 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.measure-1</p>
+                <p class="utility-value">40ch</p>
+                <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> shorter text (1-2 paragraphs) meant to be distinguished from other page text, pullquotes</p>
               </div>
             </div>
           </div>
 
           <div class="grid-row grid-gap-lg">
-            <div class="grid-col-12 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-md line-height-serif-4 margin-top-0 measure-2 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-              <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs text-gray-50">60ch</span></p>
-              <div>
-                <p class="margin-0">.measure-2</p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-md line-height-serif-4 margin-top-0 measure-2 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.measure-2</p>
+                <p class="utility-value">60ch</p>
+                <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> a snappy reading line for quick-reading text</p>
               </div>
             </div>
           </div>
 
           <div class="grid-row grid-gap-lg">
-            <div class="grid-col-12 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-md line-height-serif-4 margin-top-0 measure-3 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-              <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs text-gray-50">66ch</span></p>
-              <div>
-                <p class="margin-0">.measure-3</p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-md line-height-serif-4 margin-top-0 measure-3 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.measure-3</p>
+                <p class="utility-value">66ch</p>
+                <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> an all-purpose reading line for most longform text</p>
               </div>
             </div>
           </div>
 
           <div class="grid-row grid-gap-lg">
-            <div class="grid-col-12 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-md line-height-serif-4 margin-top-0 measure-4 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-              <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs text-gray-50">72ch</span></p>
-              <div>
-                <p class="margin-0">.measure-4</p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-md line-height-serif-4 margin-top-0 measure-4 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.measure-4</p>
+                <p class="utility-value">72ch</p>
+                <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> a longer line for longform text, particularly in larger sizes</p>
               </div>
             </div>
           </div>
 
           <div class="grid-row grid-gap-lg">
-            <div class="grid-col-12 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-md line-height-serif-4 margin-top-0 measure-5 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-              <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs text-gray-50">77ch</span></p>
-              <div>
-                <p class="margin-0">.measure-5</p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-md line-height-serif-4 margin-top-0 measure-5 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.measure-5</p>
+                <p class="utility-value">77ch</p>
+                <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> an extra-long line sometimes useful for short text (less than 1 paragaph) or captions</p>
               </div>
             </div>
           </div>
 
           <div class="grid-row grid-gap-lg">
-            <div class="grid-col-12 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-md line-height-serif-4 margin-top-0 measure-none border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-              <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs text-gray-50">No maximum width</span></p>
-              <div>
-                <p class="margin-0">.measure-none</p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start border-0 margin-bottom-0">
+              <p class="font-serif-md line-height-serif-4 margin-top-0 measure-none border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.measure-none</p>
+                <p class="utility-value">no maximum width</p>
               </div>
             </div>
           </div>
@@ -300,18 +324,25 @@ subnav:
 
         <section class="margin-x-3">
           <div class="grid-row grid-gap-lg">
-            <div class="grid-col-3 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-2xs line-height-serif-4 margin-top-0 text-left">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-2xs text-red">.text-left</span></p>
+            <div class="grid-col-3 grid-gap-lg display-flex flex-column flex-justify flex-align-start padding-bottom-1">
+              <p class="font-serif-2xs line-height-serif-4 margin-top-0 text-left">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <p class="utility-class">.text-left</p>
             </div>
-            <div class="grid-col-3 grid-gap display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-2xs line-height-serif-4 margin-top-0 text-center">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-2xs text-red">.text-center</span></p>
+            <div class="grid-col-3 grid-gap-lg display-flex flex-column flex-justify flex-align-start padding-bottom-1">
+              <p class="font-serif-2xs line-height-serif-4 margin-top-0 text-center">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <p class="utility-class">.text-center</p>
+
             </div>
-            <div class="grid-col-3 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-2xs line-height-serif-4 margin-top-0 text-right">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-2xs text-red">.text-right</span></p>
+            <div class="grid-col-3 grid-gap-lg display-flex flex-column flex-justify flex-align-start padding-bottom-1">
+              <p class="font-serif-2xs line-height-serif-4 margin-top-0 text-right">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <p class="utility-class text-right">.text-right</p>
+
             </div>
 
-            <div class="grid-col-3 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-2xs line-height-serif-4 margin-top-0 text-justify">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-2xs text-red">.text-justify</span></p>
+            <div class="grid-col-3 grid-gap-lg display-flex flex-column flex-justify flex-align-start padding-bottom-1">
+              <p class="font-serif-2xs line-height-serif-4 margin-top-0 text-justify">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <p class="utility-class">.text-justify</p>
+
             </div>
           </div>
         </section>
@@ -336,80 +367,180 @@ subnav:
 
         <section class="padding-x-3">
           <div class="grid-row grid-gap-lg">
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-9">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-9</span></span></p>
+            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start utility-example-container">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-9">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre">  </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-neg-9</p>
+                <p class="utility-value">-72px</p>
+              </div>
             </div>
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-8">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-8</span></span></p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-8">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-neg-8</p>
+                <p class="utility-value">-64px</p>
+              </div>
             </div>
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-7">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-7</span></span></p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-7">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-neg-7</p>
+                <p class="utility-value">-56px</p>
+              </div>
             </div>
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-6">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-6</span></span></p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-6">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-neg-6</p>
+                <p class="utility-value">-48px</p>
+              </div>
             </div>
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-5">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-5</span></span></p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-5">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-neg-5</p>
+                <p class="utility-value">-40px</p>
+              </div>
             </div>
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-4">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-4</span></span></p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-4">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-neg-4</p>
+                <p class="utility-value">-32px</p>
+              </div>
             </div>
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-3">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-3</span></span></p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-3">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-neg-3</p>
+                <p class="utility-value">-24px</p>
+              </div>
             </div>
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-205">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-205</span></span></p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-205">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-neg-205</p>
+                <p class="utility-value">-20px</p>
+              </div>
             </div>
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-2</span></span></p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-neg-2</p>
+                <p class="utility-value">-16px</p>
+              </div>
             </div>
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-105">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-105</span></span></p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-105">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-neg-105</p>
+                <p class="utility-value">-12px</p>
+              </div>
             </div>
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-1">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-1</span></span></p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-1">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-neg-1</p>
+                <p class="utility-value">-8px</p>
+              </div>
             </div>
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-05</span></span></p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-neg-05</p>
+                <p class="utility-value">-4px</p>
+              </div>
             </div>
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-0</span></span></p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-0</p>
+                <p class="utility-value">0</p>
+              </div>
             </div>
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-05</span></span></p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-05</p>
+                <p class="utility-value">4px</p>
+              </div>
             </div>
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-1">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-1</span></span></p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-1">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-1</p>
+                <p class="utility-value">8px</p>
+              </div>
             </div>
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-105">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-105</span></span></p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-105">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-105</p>
+                <p class="utility-value">12px</p>
+              </div>
             </div>
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-2</span></span></p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-2</p>
+                <p class="utility-value">16px</p>
+              </div>
             </div>
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-205">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-205</span></span></p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-205">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-205</p>
+                <p class="utility-value">20px</p>
+              </div>
             </div>
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-3">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-3</span></span></p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-3">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-3</p>
+                <p class="utility-value">24px</p>
+              </div>
             </div>
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-4">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-4</span></span></p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-4">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-4</p>
+                <p class="utility-value">32px</p>
+              </div>
             </div>
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-5">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-5</span></span></p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-5">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-5</p>
+                <p class="utility-value">40px</p>
+              </div>
             </div>
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-6">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-6</span></span></p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-6">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-6</p>
+                <p class="utility-value">48px</p>
+              </div>
             </div>
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-7">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-7</span></span></p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-7">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-7</p>
+                <p class="utility-value">56px</p>
+              </div>
             </div>
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-8">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-8</span></span></p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-8">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-8</p>
+                <p class="utility-value">64px</p>
+              </div>
             </div>
-            <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-9">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-9</span></span></p>
+            <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-0 border-0">
+              <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-9">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
+              <div class="display-flex flex-column flex-align-start">
+                <p class="utility-class">.text-indent-9</p>
+                <p class="utility-value">72px</p>
+              </div>
             </div>
           </div>
         </section>

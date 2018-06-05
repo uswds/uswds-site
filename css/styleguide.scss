@@ -1,6 +1,7 @@
 // Imports
 @import 'variables';
 @import 'uswds-project-utilities-settings';
+@import 'uswds-project-settings';
 @import 'uswds/src/stylesheets/uswds';
 
 html,
@@ -1924,6 +1925,7 @@ li.display-inline-block {
 }
 
 .utilities-property {
+  @include u-bg(white);
   @include u-display(inline-block);
   @include u-margin-top(.5);
   @include u-padding(.5);
@@ -1942,9 +1944,9 @@ li.display-inline-block {
 }
 
 .utilities-section-title {
-  @include u-font(sans, 8);
+  @include u-font(serif, 8);
   @include u-margin(0);
-  @include u-text(light);
+  @include u-text(normal);
 }
 
 .utilities-section-helper {
@@ -2031,6 +2033,19 @@ li.display-inline-block {
 
 .utility-value {
   @extend .utility-class;
-  @include u-bg($primary-lighter);
+  @include u-bg($secondary-lighter);
   @include u-margin-top(2px);
+}
+
+.utility-example-container {
+  @include u-border-bottom(1px, $gray-10);
+  @include u-margin-bottom(2);
+  @include u-padding-bottom(3);
+}
+
+/* * * * * * ========================== */
+
+.usa-sidenav-list,
+.usa-sidenav-list > li {
+  border-color: $gray-10;
 }

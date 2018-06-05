@@ -17,7 +17,7 @@ subnav:
 ---
 
 <div class="font-sans-4 weight-300">
-  <div class="bg-gray-1 border-1px border-gray-10 padding-2 radius-md">
+  <div class="utilities-properties">
     <h3 class="utilities-property-title">CSS properties</h3>
     <div class="margin-top-1">
       <span class="token utilities-property">line-height</span>

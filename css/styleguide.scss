@@ -1924,6 +1924,13 @@ li.display-inline-block {
   @include u-text(normal, uppercase, ls-1);
 }
 
+.utilities-properties {
+  @include u-bg(white);
+  @include u-border(1px, $gray-10);
+  @include u-padding(2);
+  @include u-radius(md);
+}
+
 .utilities-property {
   @include u-bg(white);
   @include u-display(inline-block);
@@ -1962,7 +1969,7 @@ li.display-inline-block {
 }
 
 .utility {
-  @include u-bg($gray-1);
+  @include u-bg(white);
   @include u-border(1px, $gray-10);
   @include u-margin-y(2);
   @include u-padding-bottom(1);
@@ -2074,4 +2081,12 @@ li.display-inline-block {
 .usa-sidenav-list,
 .usa-sidenav-list > li {
   border-color: $gray-10;
+}
+
+body {
+  @include u-bg($gray-1);
+}
+
+.foo {
+  @include u-bg(white);
 }

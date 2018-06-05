@@ -7,7 +7,7 @@ category: Utilities
 lead: USWDS uses a 12-column layout grid. See layout grid example here.
 ---
 
-<div class="size-mono-4 weight-300">
+<div class="font-mono-4 weight-300">
 
   <p class="docs-text"><strong>Note:</strong> <code class="docs-inline-code">.grid-container</code>, <code class="docs-inline-code">.grid-gap</code>, and <code class="docs-inline-code">.grid-col</code> all have mobile-first responsive variants. Only the first example shows them.</p>
   <p class="docs-text"><code class="docs-inline-code">.grid-col</code> and <code class="docs-inline-code">.grid-col-fill</code> items flex to fit</p>
@@ -69,7 +69,7 @@ lead: USWDS uses a 12-column layout grid. See layout grid example here.
 
   <p class="docs-text"><code class="docs-inline-code">.grid-col-[1-12]</code> set a fixed width of [n] grid-columns in a 12-column grid</p>
 
-  <div class="grid-row margin-top-1 size-sans-2">
+  <div class="grid-row margin-top-1 font-sans-2">
     <div class="grid-col-1 border-x-2px border-black-cool-90">
       <div class="text-center padding-x-2">1</div>
     </div>
@@ -140,7 +140,7 @@ lead: USWDS uses a 12-column layout grid. See layout grid example here.
 
   <p class="docs-text"><code class="docs-inline-code">.grid-offset-[1-12]</code> offsets the grid-column by [n] grid-columns</p>
 
-  <div class="grid-row margin-top-1 size-sans-2">
+  <div class="grid-row margin-top-1 font-sans-2">
     <div class="grid-col-1 border-x-2px border-black-cool-90">
       <div class="text-center padding-x-2">1</div>
     </div>
@@ -187,7 +187,7 @@ lead: USWDS uses a 12-column layout grid. See layout grid example here.
 
   <p class="docs-text">Rows wrap when grid-columns add up to more than 12</p>
 
-  <div class="grid-row margin-top-1 size-sans-2">
+  <div class="grid-row margin-top-1 font-sans-2">
     <div class="grid-col-1 border-x-2px border-black-cool-90">
       <div class="text-center padding-x-2">1</div>
     </div>
@@ -240,7 +240,7 @@ lead: USWDS uses a 12-column layout grid. See layout grid example here.
 
   <p class="docs-text"><code class="docs-inline-code">.grid-gap</code> adds a grid-gap between grid-columns in the grid-row, to a value set as <code class="docs-inline-code">$theme-column-gap</code> in settings</p>
 
-  <div class="grid-row margin-top-1 size-sans-2">
+  <div class="grid-row margin-top-1 font-sans-2">
     <div class="grid-col-1 border-x-2px border-black-cool-90">
       <div class="text-center padding-x-2">1</div>
     </div>
@@ -293,7 +293,7 @@ lead: USWDS uses a 12-column layout grid. See layout grid example here.
 
   <p class="docs-text"><code class="docs-inline-code">.grid-gap-lg</code> adds a grid-gap between grid-columns in the grid-row, to a value set as <code class="docs-inline-code">$theme-column-gap-large</code> in settings</p>
 
-  <div class="grid-row margin-top-1 size-sans-2">
+  <div class="grid-row margin-top-1 font-sans-2">
     <div class="grid-col-1 border-x-2px border-black-cool-90">
       <div class="text-center padding-x-2">1</div>
     </div>

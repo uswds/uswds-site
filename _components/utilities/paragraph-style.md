@@ -309,7 +309,7 @@ subnav:
     <section class="text-align" id="text-align">
       <section class="utility">
         <section class="utility-title-bar">
-          <div class="grid-row">
+          <div class="grid-row flex-align-center">
             <h3 class="grid-col-fill utility-title">Text alignment</h3>
 
             <ul class="grid-col-auto utility-scope">
@@ -352,7 +352,7 @@ subnav:
     <section class="text-indent" id="text-indent">
       <section class="utility">
         <section class="utility-title-bar">
-          <div class="grid-row">
+          <div class="grid-row flex-align-center">
             <h3 class="grid-col-fill utility-title">Text indent</h3>
 
             <ul class="grid-col-auto utility-scope">
@@ -559,7 +559,7 @@ subnav:
 
   <section class="utilities-section">
     <h2 class="utilities-section-title">Default output</h2>
-    <div class="grid-row font-sans-1 text-bold border-bottom-1px padding-bottom-05 margin-top-2 border-gray-20">
+    <div class="grid-row utilities-output-heading">
       <div class="grid-col-4">Utility</div>
       <div class="grid-col-6">Output SCSS</div>
       <div class="grid-col-2">Default variable value</div>

@@ -2010,6 +2010,7 @@ li.display-inline-block {
 
 .utility-scope-button {
   @include u-display(inline-block);
+  @include u-font-size(sans, xs);
   @include u-margin-bottom(0);
   @include u-margin-right(.5);
   @include u-padding-y(.5);
@@ -2045,6 +2046,9 @@ li.display-inline-block {
   @include u-radius(md);
 }
 
+.utility-examples {
+  @include u-margin-x(2);
+}
 
 .utility-class {
   @include u-bg($base-lighter);

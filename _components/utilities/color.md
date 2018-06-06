@@ -21,6 +21,13 @@ subnav:
   </div>
 </div>
 
+<section class="utilities-section">
+
+<div class="grid-row utilities-section-title-bar">
+  <h2 class="grid-col-auto utilities-section-title">Examples and usage</h2>
+  <p class="grid-col-fill utilities-section-helper">Utilities, values, and variants may be activated and deactivated in <a href="#0" class="text-text text-no-wrap">advanced settings</a>.</p>
+</div>
+
 <section class="text-color" id="text-color">
   <section class="utility">
     <section class="utility-title-bar">
@@ -100,6 +107,18 @@ subnav:
         <div class="utility-example-container grid-col-12 font-sans-xs margin-bottom-1 padding-bottom-1">
           <span class="radius-md padding-05 text-secondary-dark">.text-secondary-dark</span>
         </div>
+        <div class="utility-example-container grid-col-12 font-sans-xs margin-bottom-1 padding-bottom-1">
+          <span class="radius-md padding-05 text-accent-warm">.text-accent-warm</span>
+        </div>
+        <div class="utility-example-container grid-col-12 font-sans-xs margin-bottom-1 padding-bottom-1">
+          <span class="radius-md padding-05 text-accent-warm-dark">.text-accent-warm-dark</span>
+        </div>
+        <div class="utility-example-container grid-col-12 font-sans-xs margin-bottom-1 padding-bottom-1">
+          <span class="radius-md padding-05 text-accent-cool">.text-accent-cool</span>
+        </div>
+        <div class="utility-example-container grid-col-12 font-sans-xs margin-bottom-1 padding-bottom-1">
+          <span class="radius-md padding-05 text-accent-warm-cool">.text-accent-cool-dark</span>
+        </div>
       </div>
 
       <h3 class="font-sans-6 margin-top-4 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Grayscale palette <a class="text-normal text-text font-sans-2 margin-left-1" href="#0">Read more about the USWDS grayscale palette</a></h3>
@@ -171,215 +190,467 @@ subnav:
           <span class="radius-md padding-05 text-magenta">.text-magenta</span>
         </div>
       </div>
-
     </section>
   </section>
 </section>
 
-
-<h2 class="usa-heading" id="background-color">Background color</h2>
-
-<section class="border-top-1px padding-top-1 margin-top-4">
-
-  <div class="grid-row flex-align-center margin-bottom-2">
-    <h2 class="grid-col-auto margin-0 text-light font-sans-8">Examples and usage</h2>
-    <p class="grid-col-fill text-right font-sans-1 text-normal margin-y-0 margin-left-2px text-gray-60">Utilities, values, and variants may be activated and deactivated in <a href="#0" class="text-text text-no-wrap">advanced settings</a>.</p>
-  </div>
-
-  <section class="text-color">
-    <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
-      <section class="margin-x-neg-2 margin-bottom-2 padding-x-2 padding-bottom-105 border-bottom-1px border-gray-10">
-        <div class="grid-row">
-          <h3 class="grid-col-auto font-sans-6 margin-top-0 margin-bottom-105">Background color</h3>
-
-          <ul class="grid-col-fill text-right add-list-reset display-inline">
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">responsive</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">active</li>
-            <li class="display-inline"><a href="#0" class="display-inline-block padding-y-05 padding-x-105 bg-blue-50v text-no-underline hover:bg-gray-80 text-white radius-md margin-right-05 is-inverse">hover</a></li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">focus</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">visited</li>
-          </ul>
+<section class="background-color" id="background-color">
+  <section class="utility">
+    <section class="utility-title-bar">
+      <div class="grid-row flex-align-center">
+        <div class="grid-col-fill">
+          <h3 class="grid-col-auto utility-title">Background color</h3>
+          <p class="utility-property">CSS property: <span class="utility-property-code">background-color</span></p>
         </div>
-      </section>
-      <h4 class="border-bottom-1px border-gray-5 padding-bottom-1 margin-bottom-0">Project theme palette</h4>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-base-lightest"></span>
-        .bg-base-lightest
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-base-lighter"></span>
-        .bg-base-lighter
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-base-light"></span>
-        .bg-base-light
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-base"></span>
-        .bg-base
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-base-dark"></span>
-        .bg-base-dark
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-base-darker"></span>
-        .bg-base-darker
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-base-darkest"></span>
-        .bg-base-darkest
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-primary-lighter"></span>
-        .bg-primary-lighter
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-primary-light"></span>
-        .bg-primary-light
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-primary"></span>
-        .bg-primary
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-primary-vivid"></span>
-        .bg-primary-vivid
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-primary-dark"></span>
-        .bg-primary-dark
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-primary-darker"></span>
-        .bg-primary-darker
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-secondary-light"></span>
-        .bg-secondary-light
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-secondary"></span>
-        .bg-secondary
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-secondary-vivid"></span>
-        .bg-secondary-vivid
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-secondary-dark"></span>
-        .bg-secondary-dark
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-accent-warm"></span>
-        .bg-accent-warm
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-accent-warm-dark"></span>
-        .bg-accent-warm-dark
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-accent-cool"></span>
-        .bg-accent-cool
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-accent-cool-dark"></span>
-        .bg-accent-cool-dark
-      </p>
 
-      <h4 class="border-bottom-1px border-gray-5 padding-bottom-1 margin-bottom-0 margin-top-4">Grayscale palette</h4>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-white"></span>
-        .bg-white
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-gray-5"></span>
-        .bg-gray-5
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-gray-10"></span>
-        .bg-gray-10
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-gray-30"></span>
-        .bg-gray-30
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-gray-50"></span>
-        .bg-gray-50
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-gray-70"></span>
-        .bg-gray-70
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-gray-90"></span>
-        .bg-gray-90
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-black"></span>
-        .bg-black
-      </p>
+        <ul class="grid-col-auto utility-scope">
+          <li class="utility-scope-button-disabled">responsive</li>
+          <li class="utility-scope-button-disabled">active</li>
+          <li class="display-inline"><a href="#0" class="utility-scope-button-active">hover</a></li>
+          <li class="utility-scope-button-disabled">focus</li>
+          <li class="utility-scope-button-disabled">visited</li>
+        </ul>
+      </div>
+    </section>
 
-      <h4 class="border-bottom-1px border-gray-5 padding-bottom-1 margin-bottom-0 margin-top-4">Basic palette</h4>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-red"></span>
-        .bg-red
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-orange"></span>
-        .bg-orange
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-gold"></span>
-        .bg-gold
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-yellow"></span>
-        .bg-yellow
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-green"></span>
-        .bg-green
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-mint"></span>
-        .bg-mint
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-cyan"></span>
-        .bg-cyan
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-blue"></span>
-        .bg-blue
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-indigo"></span>
-        .bg-indigo
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-violet"></span>
-        .bg-violet
-      </p>
-      <p class="example">
-        <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-magenta"></span>
-        .bg-magenta
-      </p>
+    <section class="utility-examples">
+      <h3 class="font-sans-4 margin-top-0 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Project theme colors <a class="text-normal text-text font-sans-2 margin-left-1" href="#0">Read more about project theme colors</a></h3>
+
+      <div class="grid-row">
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-base-lightest"></span>
+            <span class="utility-class">.bg-base-lightest</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-base-lightest"></span>
+            #fcfcfc
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-base-lighter"></span>
+            <span class="utility-class">.bg-base-lighter</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-base-lighter"></span>
+            #f0f0f0
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-base-light"></span>
+            <span class="utility-class">.bg-base-light</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-base-light"></span>
+            #e6e6e6
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-base"></span>
+            <span class="utility-class">.bg-base</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-base"></span>
+            #adadad
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-base-dark"></span>
+            <span class="utility-class">.bg-base-dark</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-base-dark"></span>
+            #757575
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-base-darker"></span>
+            <span class="utility-class">.bg-base-darker</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-base-darker"></span>
+            #454545
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-base-darkest"></span>
+            <span class="utility-class">.bg-base-darkest</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-base-darkest"></span>
+            #171717
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-ink"></span>
+            <span class="utility-class">.bg-ink</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-ink"></span>
+            #171717
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-primary-lighter"></span>
+            <span class="utility-class">.bg-primary-lighter</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-primary-lighter"></span>
+            #DAE9F6
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-primary-light"></span>
+            <span class="utility-class">.bg-primary-light</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-primary-light"></span>
+            #7CBDF0
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-primary"></span>
+            <span class="utility-class">.bg-primary</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-primary"></span>
+            #0F6BB2
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-primary-vivid"></span>
+            <span class="utility-class">.bg-primary-vivid</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-primary-vivid"></span>
+            #0E57DA
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-primary-dark"></span>
+            <span class="utility-class">.bg-primary-dark</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-primary-dark"></span>
+            #215192
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-primary-darker"></span>
+            <span class="utility-class">.bg-primary-darker</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-primary-darker"></span>
+            #122B4C
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-secondary-light"></span>
+            <span class="utility-class">.bg-secondary-light</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-secondary-light"></span>
+            #122B4C
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-secondary"></span>
+            <span class="utility-class">.bg-secondary</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-secondary"></span>
+            #122B4C
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-secondary-vivid"></span>
+            <span class="utility-class">.bg-secondary-vivid</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-secondary-vivid"></span>
+            #E6251B
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-secondary-dark"></span>
+            <span class="utility-class">.bg-secondary-dark</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-secondary-dark"></span>
+            #3B2523
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-accent-warm"></span>
+            <span class="utility-class">.bg-accent-warm</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-accent-warm"></span>
+            #FD974C
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-accent-warm-dark"></span>
+            <span class="utility-class">.bg-accent-warm-dark</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-accent-warm-dark"></span>
+            #FD7B28
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-accent-cool"></span>
+            <span class="utility-class">.bg-accent-cool</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-accent-cool"></span>
+            #FD7B28
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-accent-cool-dark"></span>
+            <span class="utility-class">.bg-accent-cool-dark</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-accent-cool-dark"></span>
+            #1BABCF
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <section class="utility-examples">
+      <h3 class="font-sans-4 margin-top-4 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Grayscale palette <a class="text-normal text-text font-sans-2 margin-left-1" href="#0">Read more about the USWDS grayscale palette</a></h3>
+
+      <div class="grid-row">
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-white"></span>
+            <span class="utility-class">.bg-white</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-white"></span>
+            #ffffff
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-gray-5"></span>
+            <span class="utility-class">.bg-gray-5</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-gray-5"></span>
+            #f0f0f0
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-gray-10"></span>
+            <span class="utility-class">.bg-gray-10</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-gray-10"></span>
+            #e6e6e6
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-gray-30"></span>
+            <span class="utility-class">.bg-gray-30</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-gray-30"></span>
+            #adadad
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-gray-50"></span>
+            <span class="utility-class">.bg-gray-50</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-gray-50"></span>
+            #757575
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-gray-70"></span>
+            <span class="utility-class">.bg-gray-70</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-gray-70"></span>
+            #454545
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-gray-90"></span>
+            <span class="utility-class">.bg-gray-90</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-gray-90"></span>
+            #171717
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-black"></span>
+            <span class="utility-class">.bg-black</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-black"></span>
+            #000000
+          </span>
+        </p>
+      </div>
+    </section>
+    <section class="utility-examples">
+      <h3 class="font-sans-4 margin-top-4 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Basic palette <a class="text-normal text-text font-sans-2 margin-left-1" href="#0">Read more about the USWDS basic palette</a></h3>
+
+      <div class="grid-row">
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-red"></span>
+            <span class="utility-class">.bg-red</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-red"></span>
+            #E6251B
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-orange"></span>
+            <span class="utility-class">.bg-orange</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-orange"></span>
+            #FD7B28
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-gold"></span>
+            <span class="utility-class">.bg-gold</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-gold"></span>
+            #F8AE29
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-yellow"></span>
+            <span class="utility-class">.bg-yellow</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-yellow"></span>
+            #FCD344
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-green"></span>
+            <span class="utility-class">.bg-green</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-green"></span>
+            #548114
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-mint"></span>
+            <span class="utility-class">.bg-mint</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-mint"></span>
+            #20C688
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-cyan"></span>
+            <span class="utility-class">.bg-cyan</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-cyan"></span>
+            #1BABCF
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-blue"></span>
+            <span class="utility-class">.bg-blue</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-blue"></span>
+            #137CDB
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-indigo"></span>
+            <span class="utility-class">.bg-indigo</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-indigo"></span>
+            #6970C7
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-violet"></span>
+            <span class="utility-class">.bg-violet</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-violet"></span>
+            #836BB3
+          </span>
+        </p>
+        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <span class="flex-fill">
+            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-magenta"></span>
+            <span class="utility-class">.bg-magenta</span>
+          </span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-magenta"></span>
+            #DF2D7A
+          </span>
+        </p>
+      </div>
     </section>
   </section>
 </section>
 
-<section class="border-top-1px padding-top-1 margin-top-4">
-  <h2 class="margin-0 text-light font-sans-8">Responsive variants</h2>
+<section class="utilities-section">
+  <h2 class="utilities-section-title">Responsive variants</h2>
 </section>
 
-<section class="border-top-1px padding-top-1 margin-top-4">
-  <h2 class="margin-0 text-light font-sans-8"><span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">hover</span>, <span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">active</span>, <span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">focus</span>, and <span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">visited</span> variants</h2>
-</section>
-
-<section class="border-top-1px padding-top-1 margin-top-4">
-  <h2 class="margin-0 text-light font-sans-8">Default output</h2>
+<section class="utilities-section">
+  <h2 class="utilities-section-title">Default output</h2>
   <div class="grid-row font-sans-1 text-bold border-bottom-1px padding-bottom-05 margin-top-2 border-gray-20">
     <div class="grid-col-4">Utility</div>
     <div class="grid-col-6">Output SCSS</div>

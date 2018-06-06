@@ -2066,11 +2066,34 @@ li.display-inline-block {
   @include u-margin-top(2px);
 }
 
+.utility-value-color {
+  @extend .utility-class;
+  @include u-bg(white);
+  @include u-border(1px, $gray-10);
+  @include u-margin-top(0);
+  @include u-text(light, no-wrap);
+}
+
+.utility-value-color-chip {
+  @include u-circle(1.5);
+  @include u-display(inline-block);
+  @include u-margin-right(.5);
+  @include u-text(middle);
+}
+
 .utility-example-container {
   @include u-border-bottom(1px, $gray-10);
   @include u-margin-bottom(2);
+  @include u-margin-top(0);
   @include u-padding-bottom(3);
 }
+
+.utility-example-container-condensed {
+    @extend .utility-example-container;
+    @include u-margin-bottom(1);
+    @include u-padding-bottom(1);
+}
+
 
 .utilities-output-heading {
   @include u-border-bottom(1px, $gray-10);

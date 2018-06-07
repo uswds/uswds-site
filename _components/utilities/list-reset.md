@@ -14,21 +14,21 @@ lead: Reset default list styling
     <span class="token display-inline-block text-no-uppercase text-ls-auto padding-05 margin-top-05">list-style</span>
   </div>
 
-  <section class="border-top-1px padding-top-1 margin-top-4">
+  <section class="utilities-section">
     <div class="grid-row flex-align-center margin-bottom-2">
-      <h2 class="grid-col-auto margin-0 text-light font-sans-8">Examples and usage</h2>
-      <p class="grid-col-fill text-right font-sans-1 text-normal margin-y-0 margin-left-2px text-gray-60">Utilities, values, and variants may be activated and deactivated in <a href="#0" class="text-text text-no-wrap">advanced settings</a>.</p>
+      <h2 class="grid-col-auto utilities-section-title">Examples and usage</h2>
+      <p class="grid-col-fill utilities-section-helper">Utilities, values, and variants may be activated and deactivated in <a href="#0" class="text-ink text-no-wrap">advanced settings</a>.</p>
     </div>
-    <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
-      <section class="margin-x-neg-2 margin-bottom-2 padding-x-2 padding-bottom-105 border-bottom-1px border-gray-10">
+    <section class="utility">
+      <section class="utility-title-bar">
         <div class="grid-row">
-          <h3 class="grid-col-auto font-sans-6 margin-top-0 margin-bottom-105">List reset</h3>
-          <ul class="grid-col-fill text-right add-list-reset display-inline">
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">responsive</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">active</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">hover</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">focus</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">visited</li>
+          <h3 class="grid-col-auto utility-title">List reset</h3>
+          <ul class="grid-col-auto utility-scope">
+            <li class="utility-scope-button-disabled">responsive</li>
+            <li class="utility-scope-button-disabled">active</li>
+            <li class="utility-scope-button-disabled">hover</li>
+            <li class="utility-scope-button-disabled">focus</li>
+            <li class="utility-scope-button-disabled">visited</li>
           </ul>
         </div>
       </section>
@@ -43,16 +43,16 @@ lead: Reset default list styling
     </section>
   </section>
 
-  <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light font-sans-8">Responsive variants</h2>
+  <section class="utilities-section">
+    <h2 class="utilities-section-title">Responsive variants</h2>
   </section>
 
-  <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light font-sans-8"><span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">hover</span>, <span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">active</span>, <span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">focus</span>, and <span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">visited</span> variants</h2>
+  <section class="utilities-section">
+    <h2 class="utilities-section-title"><code>hover</code>, <code>active</code>, <code>focus</code>, and <code>visited</code> variants</h2>
   </section>
 
-  <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light font-sans-8">Default output</h2>
+  <section class="utilities-section">
+    <h2 class="utilities-section-title">Default output</h2>
     <div class="grid-row font-sans-1 text-bold border-bottom-1px padding-bottom-05 margin-top-2 border-gray-20">
       <div class="grid-col-4">Utility</div>
       <div class="grid-col-6">Output SCSS</div>
@@ -70,7 +70,7 @@ lead: Reset default list styling
     </dl>
   </section>
   
-  <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light font-sans-8">Advanced settings</h2>
+  <section class="utilities-section">
+    <h2 class="utilities-section-title">Advanced settings</h2>
   </section>
 </div>

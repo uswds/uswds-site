@@ -2026,6 +2026,10 @@ li.display-inline-block {
 }
 
 .utility-scope-button-active {
+    @include u-display(inline);
+}
+
+.utility-scope-button-active a {
   @extend .utility-scope-button;
   @include add-font-smoothing;
   @include u-bg($blue-50v);
@@ -2048,6 +2052,20 @@ li.display-inline-block {
 
 .utility-examples {
   @include u-margin-x(2);
+}
+
+.utility-examples-title {
+  @include u-border-bottom(1px, $gray-10);
+  @include u-font(sans, 4);
+  @include u-margin-bottom(1);
+  @include u-margin-top(4);
+  @include u-padding-bottom(1);
+}
+
+.utility-examples-helper {
+  @include u-font(sans, 2);
+  @include u-margin-left(1);
+  @include u-text(normal, $ink);
 }
 
 .utility-class {

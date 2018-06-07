@@ -30,7 +30,7 @@ subnav:
 
   <div class="grid-row utilities-section-title-bar">
     <h2 class="grid-col-auto utilities-section-title">Examples and usage</h2>
-    <p class="grid-col-fill utilities-section-helper">Utilities, values, and variants may be activated and deactivated in <a href="#0" class="text-text text-no-wrap">advanced settings</a>.</p>
+    <p class="grid-col-fill utilities-section-helper">Utilities, values, and variants may be activated and deactivated in <a href="#0" class="text-ink text-no-wrap">advanced settings</a>.</p>
   </div>
 
   <section class="line-height" id="line-height">
@@ -43,7 +43,7 @@ subnav:
           </div>
 
           <ul class="utility-scope grid-col-auto">
-            <li class="display-inline"><a href="#0" class="utility-scope-button-active">responsive</a></li>
+            <li class="utility-scope-button-active"><a href="#0">responsive</a></li>
             <li class="utility-scope-button-disabled">active</li>
             <li class="utility-scope-button-disabled">hover</li>
             <li class="utility-scope-button-disabled">focus</li>
@@ -233,7 +233,7 @@ subnav:
           </div>
 
           <ul class="grid-col-auto utility-scope">
-            <li class="display-inline"><a href="#0" class="utility-scope-button-active">responsive</a></li>
+            <li class="utility-scope-button-active"><a href="#0">responsive</a></li>
             <li class="utility-scope-button-disabled">active</li>
             <li class="utility-scope-button-disabled">hover</li>
             <li class="utility-scope-button-disabled">focus</li>

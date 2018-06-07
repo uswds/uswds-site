@@ -289,7 +289,7 @@ order: 01
   <div class="color-big">
     <div class="usa-color-short usa-color-focus">
     </div>
-    <p class="usa-color-hex">#3e94cf</p>
+    <p class="usa-color-hex">#aeb0b5</p>
     <p class="usa-color-name">$color-focus</p>
   </div>
 </div>

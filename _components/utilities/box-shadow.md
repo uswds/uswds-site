@@ -9,9 +9,9 @@ lead: Set the box shadow
 
 <div class="font-sans-4 weight-300">
 
-  <h3 class="grid-col font-sans-micro text-normal text-medium text-uppercase text-ls-1 margin-y-0 margin-left-2px">CSS properties</h3>
+  <h3 class="utilities-property-title">CSS properties</h3>
   <div class="margin-top-1">
-    <span class="token display-inline-block text-no-uppercase text-ls-auto padding-05 margin-top-05">box-shadow</span>
+    <span class="token utilities-property">box-shadow</span>
   </div>
 
   <section class="utilities-section">

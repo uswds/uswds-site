@@ -101,7 +101,7 @@ subnav:
           </span>
         </div>
         <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-ink">.text-ink (an alias for text-base-darkest)</span>
+          <span class="radius-md padding-05 text-ink">.text-ink (alias for <span class="utility-class">text-base-darkest</span>)</span>
           <span class="flex-auto utility-value-color">
             <span class="utility-value-color-chip bg-ink"></span>
             #171717

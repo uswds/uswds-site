@@ -2071,7 +2071,7 @@ li.display-inline-block {
   @include u-bg(white);
   @include u-border(1px, $gray-10);
   @include u-margin-top(0);
-  @include u-text(light, no-wrap);
+  @include u-text(light, no-wrap, lowercase);
 }
 
 .utility-value-color-chip {

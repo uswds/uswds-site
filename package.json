@@ -52,7 +52,7 @@
     "chalk": "^2.4.1",
     "cheerio": "^1.0.0-rc.2",
     "chrome-launcher": "^0.10.2",
-    "chrome-remote-interface": "^0.25.5",
+    "chrome-remote-interface": "^0.25.6",
     "del": "^3.0.0",
     "express": "^4.16.2",
     "gulp": "^4.0.0",

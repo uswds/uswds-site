@@ -1,8 +1,8 @@
 ---
-permalink: /utilities/paragraph-style/
+permalink: /utilities/paragraph-styles/
 layout: styleguide
 type: utility
-title: Paragraph style
+title: Paragraph styles
 category: Utilities
 lead: Change the appearance of a block of text.
 subnav:

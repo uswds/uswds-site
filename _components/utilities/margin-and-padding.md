@@ -1,8 +1,8 @@
 ---
-permalink: /utilities/spacing/
+permalink: /utilities/margin-and-padding/
 layout: styleguide
 type: utility
-title: Spacing
+title: Margin and padding
 category: Utilities
 lead: Change the spacing around an item and inside an item.
 subnav:

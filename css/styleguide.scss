@@ -2011,9 +2011,10 @@ li.display-inline-block {
 .utility-scope-button {
   @include u-display(inline-block);
   @include u-font-size(sans, xs);
+  @include u-line-height(sans, 4);
   @include u-margin-bottom(0);
   @include u-margin-right(.5);
-  @include u-padding-y(.5);
+  @include u-padding-y(1);
   @include u-padding-x(1.5);
   @include u-radius(md);
 }

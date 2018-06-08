@@ -1,5 +1,5 @@
 ---
-permalink: /utilities/text-style/
+permalink: /utilities/text-styles/
 layout: styleguide
 type: utility
 title: Text styles

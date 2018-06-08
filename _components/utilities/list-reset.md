@@ -2,27 +2,25 @@
 permalink: /utilities/list-reset/
 layout: styleguide
 type: utility
-title: List reset 
+title: List reset
 category: Utilities
 lead: Reset default list styling
 ---
 
 <div class="font-sans-4 weight-300">
 
-  <h3 class="utilities-property-title">CSS properties</h3>
-  <div class="margin-top-1">
-    <span class="token utilities-property">list-style</span>
-  </div>
-
   <section class="utilities-section">
     <div class="grid-row flex-align-center margin-bottom-2">
       <h2 class="grid-col-auto utilities-section-title">Examples and usage</h2>
       <p class="grid-col-fill utilities-section-helper">Utilities, values, and variants may be activated and deactivated in <a href="#0" class="text-ink text-no-wrap">advanced settings</a>.</p>
     </div>
-    <section class="utility">
+
+    <section class="utility" id="list-reset">
       <section class="utility-title-bar">
         <div class="grid-row">
-          <h3 class="grid-col-auto utility-title">List reset</h3>
+          <div class="grid-col-fill">
+            <h3 class="grid-col-auto utility-title">List reset</h3>
+          </div>
           <ul class="grid-col-auto utility-scope">
             <li class="utility-scope-button-disabled">responsive</li>
             <li class="utility-scope-button-disabled">active</li>
@@ -32,14 +30,37 @@ lead: Reset default list styling
           </ul>
         </div>
       </section>
-      <ul class="add-list-reset">
-        <li>Unordered list item</li>
-        <li>Unordered list item</li>
-        <li>Unordered list item</li>
-      </ul>
-      <p class="margin-top-1">
-        <span class="text-base-dark">ul</span><span class="text-red">.add-list-reset</span>
-      </p>
+      <section class="utility-examples">
+        <div class="grid-row">
+          <div class="utility-example-container-condensed grid-col display-flex flex-column flex-justify flex-align-start border-0">
+            <div class="bg-secondary-light">
+              <ul class="bg-white">
+                <li>Red apples</li>
+                <li>Yellow bananas</li>
+                <li>Purple eggplants</li>
+              </ul>
+            </div>
+            <div class="display-flex flex-column flex-align-start">
+              <p class="utility-class margin-top-2">default ul</p>
+              <p class="utility-value">margin-y: 1em</p>
+              <p class="utility-value">padding-left: 1.94em</p>
+            </div>
+          </div>
+          <div class="utility-example-container-condensed grid-col display-flex flex-column flex-justify flex-align-start border-0">
+            <ul class="add-list-reset">
+              <li>Red apples</li>
+              <li>Yellow bananas</li>
+              <li>Purple eggplants</li>
+            </ul>
+            <div class="display-flex flex-column flex-align-start">
+              <p class="utility-class margin-top-2">ul.add-list-reset</p>
+              <p class="utility-value">margin-y: 0</p>
+              <p class="utility-value">padding-left: 0</p>
+              <p class="utility-value">list-style: none</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
   </section>
 
@@ -69,7 +90,7 @@ lead: Reset default list styling
       <dd class="output-variable">—</dd>
     </dl>
   </section>
-  
+
   <section class="utilities-section">
     <h2 class="utilities-section-title">Advanced settings</h2>
   </section>

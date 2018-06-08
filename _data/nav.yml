@@ -52,18 +52,18 @@ Utilities:
     href: /utilities/
   - href: /utilities/layout-grid/
   - href: /utilities/color/
-  - href: /utilities/spacing/
+  - href: /utilities/height-and-width/
+  - href: /utilities/margin-and-padding/
   - href: /utilities/border-and-outline/
   - href: /utilities/font-size-and-family/
-  - href: /utilities/text-style/
-  - href: /utilities/paragraph-style/
-  - href: /utilities/box-shadow/
-  - href: /utilities/clearfix/
-  - href: /utilities/float/
-  - href: /utilities/list-reset/
+  - href: /utilities/text-styles/
+  - href: /utilities/paragraph-styles/
   - href: /utilities/display/
   - href: /utilities/flex/
-  - href: /utilities/height-and-width/
+  - href: /utilities/shadow/
+  - href: /utilities/float/
+  - href: /utilities/clearfix/
+  - href: /utilities/list-reset/
 
 Page templates:
   - href: /page-templates/

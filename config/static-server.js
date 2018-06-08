@@ -18,7 +18,7 @@ module.exports = () => {
   return new Promise((resolve, reject) => {
     const server = app.listen(() => {
       const REMOTE_CHROME_URL = process.env[ 'REMOTE_CHROME_URL' ];
-      const HOSTNAME = REMOTE_CHROME_URL ? os.hostname().toLowerCase()
+      const hostname = REMOTE_CHROME_URL ? os.hostname().toLowerCase()
                                          : 'localhost';
       const port = server.address().port;
       resolve({

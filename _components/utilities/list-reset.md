@@ -15,7 +15,7 @@ lead: Reset default list styling
       <p class="grid-col-fill utilities-section-helper">Utilities, values, and variants may be activated and deactivated in <a href="#0" class="text-ink text-no-wrap">advanced settings</a>.</p>
     </div>
 
-    <section class="utility" id="list-reset">
+    <section class="utility">
       <section class="utility-title-bar">
         <div class="grid-row">
           <div class="grid-col-fill">

@@ -183,7 +183,7 @@ subnav:
           </ul>
         </div>
       </section>
-<h3>Static</h3>
+<h4>Static</h4>
 <div class="position-relative bg-base-light padding-2 measure-3">
   <div class="position-static height-card bg-base padding-2 text-black">
     <p class="margin-0">Static parent</p>
@@ -193,7 +193,7 @@ subnav:
   </div>
 </div>
 
-<h3>Relative</h3>
+<h4>Relative</h4>
 <div class="position-relative bg-base-light padding-2 measure-3">
   <div class="position-relative height-card bg-base padding-2 text-black">
     <p class="margin-0">Static parent</p>
@@ -231,7 +231,7 @@ subnav:
   </div>
 </div>
 
-<h3>Fixed</h3>
+<h4>Fixed</h4>
 <div class="radius-bottom-md overflow-hidden measure-5 margin-top-2 margin-bottom-2">
   <div class="radius-top-md border-1px border-bottom-0 border-base-light bg-base-lighter display-flex padding-x-2 padding-y-1">
     <div class="margin-right-3">
@@ -259,7 +259,7 @@ subnav:
   </div>
 </div>
 
-<h3>Sticky</h3>
+<h4>Sticky</h4>
 <div class="height-card-lg overflow-scroll measure-4 bg-base-lightest">
   <div>
     <div class="position-sticky top-0 bg-base-light padding-x-2 padding-y-1 text-bold text-base-darker">Sticky Heading 1</div>
@@ -287,7 +287,7 @@ subnav:
   </div>
 </div>
 
-<h3>Pinning edges</h3>
+<h4>Pinning edges</h4>
 <div class="grid-row margin-bottom-8">
   <div class="grid-col">
     <div class="position-relative square-9 bg-base-light">

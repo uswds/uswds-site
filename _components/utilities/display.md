@@ -63,9 +63,9 @@ subnav:
           <div class="display-table-cell border-1px padding-2 bg-base-lightest border-base-light">.display-table-cell</div>
         </div>
       </div>
-      <section class="border-top-1px padding-top-1 margin-top-4 margin-bottom-2">
-        <h3 class="margin-0 text-light font-sans-6">Markup</h3>
-      </section>
+      <div class="usa-accordion-bordered usa-code-sample margin-top-4">
+        <button class="usa-accordion-button" aria-controls="code-display" aria-expanded="true">Code</button>
+        <div id="code-display" class="usa-accordion-content">
 <div markdown="1">
 ```html
 <div class="display-block">.display-block</div>
@@ -82,6 +82,8 @@ subnav:
 </div>
 ```
 </div>
+        </div>
+      </div>
     </section>
 
     <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
@@ -108,12 +110,10 @@ subnav:
       <div class="opacity-80 bg-base padding-2 margin-bottom-05">.opacity-80</div>
       <div class="opacity-90 bg-base padding-2 margin-bottom-05">.opacity-90</div>
       <div class="opacity-100 bg-base padding-2 margin-bottom-05">.opacity-100</div>
-      <section class="border-top-1px padding-top-1 margin-top-4 margin-bottom-2">
-        <h3 class="margin-0 text-light font-sans-6">Markup</h3>
-      </section>
-<div class="usa-accordion-bordered usa-code-sample">
-  <button class="usa-accordion-button" aria-controls="code-opacity" aria-expanded="true">Code</button>
-  <div id="code-opacity" class="usa-accordion-content">
+
+      <div class="usa-accordion-bordered usa-code-sample margin-top-4">
+        <button class="usa-accordion-button" aria-controls="code-opacity" aria-expanded="true">Code</button>
+        <div id="code-opacity" class="usa-accordion-content">
 <div markdown="1">
 ```html
 <div class="opacity-0">.opacity-0</div>
@@ -129,8 +129,8 @@ subnav:
 <div class="opacity-100">.opacity-100</div>
 ```
 </div>
-  </div>
-</div>
+        </div>
+      </div>
 
     </section>
 
@@ -155,10 +155,10 @@ subnav:
       <div class="overflow-scroll height-8 border-1px padding-2 margin-bottom-4 measure-4">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
       .overflow-auto
       <div class="overflow-auto height-8 border-1px padding-2 margin-bottom-4 measure-4">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
-      <section class="border-top-1px padding-top-1 margin-top-4 margin-bottom-2">
-        <h3 class="margin-0 text-light font-sans-6">Markup</h3>
-      </section>
-<div class="markdown-test" markdown="1">
+      <div class="usa-accordion-bordered usa-code-sample margin-top-4">
+        <button class="usa-accordion-button" aria-controls="code-overflow" aria-expanded="true">Code</button>
+        <div id="code-overflow" class="usa-accordion-content">
+<div markdown="1">
 ```html
 <div class="overflow-visible">Yosemite National Park is set within California’s...</div>
 <div class="overflow-hidden">Yosemite National Park is set within California’s...</div>
@@ -166,6 +166,8 @@ subnav:
 <div class="overflow-auto">Yosemite National Park is set within California’s...</div>
 ```
 </div>
+        </div>
+      </div>
     </section>
 
     <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
@@ -180,6 +182,7 @@ subnav:
             <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">visited</li>
           </ul>
         </div>
+      </section>
 <h3>Static</h3>
 <div class="position-relative bg-base-light padding-2 measure-3">
   <div class="position-static height-card bg-base padding-2 text-black">
@@ -345,11 +348,6 @@ subnav:
   <div class="position-relative square-9 opacity-0"></div>
   <div class="grid-col"></div>
 </div>
-      </section>
-      <section class="border-top-1px padding-top-1 margin-top-4 margin-bottom-2">
-        <h3 class="margin-0 text-light font-sans-6">Markup</h3>
-      </section>
-<pre class="margin-0 text-pre-wrap"><code></code></pre>
     </section>
 
     <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
@@ -375,9 +373,9 @@ subnav:
         <div class="z-0 position-absolute margin-left-6 margin-top-6 bg-gray-90 square-9 padding-2">.z-0</div>
         <div class="z-bottom position-absolute margin-left-7 margin-top-7 bg-black square-9 padding-2">.z-bottom</div>
       </div>
-      <section class="border-top-1px padding-top-1 margin-top-4 margin-bottom-2">
-        <h3 class="margin-0 text-light font-sans-6">Markup</h3>
-      </section>
+      <div class="usa-accordion-bordered usa-code-sample margin-top-4">
+        <button class="usa-accordion-button" aria-controls="code-zindex" aria-expanded="true">Code</button>
+        <div id="code-zindex" class="usa-accordion-content">
 <div markdown="1">
 ```html
 <div class="z-top">.z-top</div>
@@ -390,6 +388,8 @@ subnav:
 <div class="z-bottom">.z-bottom</div>
 ```
 </div>
+        </div>
+      </div>
     </section>
   </section>
 

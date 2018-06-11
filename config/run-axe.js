@@ -109,9 +109,11 @@ Promise.all([runServer(), getChrome()]).then(([server, chrome]) => {
         requestURLs.set(params.requestId, params.request.url);
       });
       Network.loadingFailed(details => {
-        const url = chalk.red(requestURLs.get(details.requestId));
-        console.log(`A network request to ${url} failed to load.`);
-        console.log(details);
+        let url = requestURLs.get(details.requestId);
+        if (url.indexOf(server.url) === 0) {
+          url = url.substring(server.url.length);
+        }
+        console.log(`ERROR: ${chalk.red(url)} failed to load.`);
         terminate(1);
       });
       Page.loadEventFired(() => {

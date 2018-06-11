@@ -291,27 +291,27 @@ subnav:
 <div class="grid-row margin-bottom-8">
   <div class="grid-col">
     <div class="position-relative square-9 bg-base-light">
-      <div class="position-absolute left-0 right-0 top-0 height-4 bg-base-darker"></div>
+      <div class="position-absolute add-pin-top height-4 bg-base-darker"></div>
     </div>
-    <p class="margin-top-05 margin-bottom-05">.left-0.right-0.top-0</p>
+    <p class="margin-top-05 margin-bottom-05">.add-pin-top</p>
   </div>
   <div class="grid-col">
     <div class="position-relative square-9 bg-base-light">
-      <div class="position-absolute top-0 bottom-0 right-0 width-4 bg-base-darker"></div>
+      <div class="position-absolute add-pin-right width-4 bg-base-darker"></div>
     </div>
-    <p class="margin-top-05 margin-bottom-05">.top-0.bottom-0.right-0</p>
+    <p class="margin-top-05 margin-bottom-05">.add-pin-right</p>
   </div>
   <div class="grid-col">
     <div class="position-relative square-9 bg-base-light">
-      <div class="position-absolute left-0 right-0 bottom-0 height-4 bg-base-darker"></div>
+      <div class="position-absolute add-pin-bottom height-4 bg-base-darker"></div>
     </div>
-    <p class="margin-top-05 margin-bottom-05">.left-0.right-0.bottom-0</p>
+    <p class="margin-top-05 margin-bottom-05">.add-pin-bottom</p>
   </div>
   <div class="grid-col">
     <div class="position-relative square-9 bg-base-light">
-      <div class="position-absolute top-0 bottom-0 left-0 width-4 bg-base-darker"></div>
+      <div class="position-absolute add-pin-left width-4 bg-base-darker"></div>
     </div>
-    <p class="margin-top-05 margin-bottom-05">.top-0.bottom-0.left-0</p>
+    <p class="margin-top-05 margin-bottom-05">.add-pin-left</p>
   </div>
   <div class="grid-col">
     <div class="position-relative square-9 bg-base-light">

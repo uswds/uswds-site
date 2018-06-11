@@ -203,7 +203,7 @@ subnav:
   </div>
 </div>
 
-<h3>Absolute</h3>
+<h4>Absolute</h4>
 <p class="text-base-dark margin-bottom-1">With static positioning</p>
 <div class="relative bg-base-light padding-x-2 padding-top-2 padding-bottom-2 margin-bottom-2 measure-5">
   <p class="margin-bottom-2 margin-top-0 text-base-darker">Relative parent</p>

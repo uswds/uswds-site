@@ -18,9 +18,9 @@ subnav:
   href: '#z-index'
 ---
 
-<div class="size-sans-4 weight-300">
+<div class="font-sans-4 weight-300">
 
-  <h3 class="grid-col size-sans-micro text-normal text-medium text-uppercase text-ls-1 margin-y-0 margin-left-2px">CSS properties</h3>
+  <h3 class="grid-col font-sans-micro text-normal text-medium text-uppercase text-ls-1 margin-y-0 margin-left-2px">CSS properties</h3>
   <div class="margin-top-1">
     <span class="token display-inline-block text-no-uppercase text-ls-auto padding-05 margin-top-05">display</span>
     <span class="token display-inline-block text-no-uppercase text-ls-auto padding-05 margin-top-05">opacity</span>
@@ -35,13 +35,13 @@ subnav:
 
   <section class="border-top-1px padding-top-1 margin-top-4">
     <div class="grid-row flex-align-center margin-bottom-2">
-      <h2 class="grid-col-auto margin-0 text-light size-sans-8">Examples and usage</h2>
-      <p class="grid-col-fill text-right size-sans-1 text-normal margin-y-0 margin-left-2px text-gray-60">Utilities, values, and variants may be activated and deactivated in <a href="#0" class="text-text text-no-wrap">advanced settings</a>.</p>
+      <h2 class="grid-col-auto margin-0 text-light font-sans-8">Examples and usage</h2>
+      <p class="grid-col-fill text-right font-sans-1 text-normal margin-y-0 margin-left-2px text-gray-60">Utilities, values, and variants may be activated and deactivated in <a href="#0" class="text-text text-no-wrap">advanced settings</a>.</p>
     </div>
     <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
       <section class="margin-x-neg-2 margin-bottom-2 padding-x-2 padding-bottom-105 border-bottom-1px border-gray-10">
         <div class="grid-row">
-          <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105" id="display-utilities">Display</h3>
+          <h3 class="grid-col-auto font-sans-6 margin-top-0 margin-bottom-105" id="display-utilities">Display</h3>
           <ul class="grid-col-fill text-right add-list-reset display-inline">
             <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">responsive</li>
             <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">active</li>
@@ -64,7 +64,7 @@ subnav:
         </div>
       </div>
       <section class="border-top-1px padding-top-1 margin-top-4 margin-bottom-2">
-        <h3 class="margin-0 text-light size-sans-6">Markup</h3>
+        <h3 class="margin-0 text-light font-sans-6">Markup</h3>
       </section>
 <div markdown="1">
 ```html
@@ -87,7 +87,7 @@ subnav:
     <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
       <section class="margin-x-neg-2 margin-bottom-2 padding-x-2 padding-bottom-105 border-bottom-1px border-gray-10">
         <div class="grid-row">
-          <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105" id="opacity">Opacity</h3>
+          <h3 class="grid-col-auto font-sans-6 margin-top-0 margin-bottom-105" id="opacity">Opacity</h3>
           <ul class="grid-col-fill text-right add-list-reset display-inline">
             <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">responsive</li>
             <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">active</li>
@@ -109,7 +109,7 @@ subnav:
       <div class="opacity-90 bg-base padding-2 margin-bottom-05">.opacity-90</div>
       <div class="opacity-100 bg-base padding-2 margin-bottom-05">.opacity-100</div>
       <section class="border-top-1px padding-top-1 margin-top-4 margin-bottom-2">
-        <h3 class="margin-0 text-light size-sans-6">Markup</h3>
+        <h3 class="margin-0 text-light font-sans-6">Markup</h3>
       </section>
 <div class="usa-accordion-bordered usa-code-sample">
   <button class="usa-accordion-button" aria-controls="code-opacity" aria-expanded="true">Code</button>
@@ -137,7 +137,7 @@ subnav:
     <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
       <section class="margin-x-neg-2 margin-bottom-2 padding-x-2 padding-bottom-105 border-bottom-1px border-gray-10">
         <div class="grid-row">
-          <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105" id="overflow">Overflow</h3>
+          <h3 class="grid-col-auto font-sans-6 margin-top-0 margin-bottom-105" id="overflow">Overflow</h3>
           <ul class="grid-col-fill text-right add-list-reset display-inline">
             <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">responsive</li>
             <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">active</li>
@@ -156,7 +156,7 @@ subnav:
       .overflow-auto
       <div class="overflow-auto height-8 border-1px padding-2 margin-bottom-4 measure-4">Yosemite National Park is set within California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoias, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</div>
       <section class="border-top-1px padding-top-1 margin-top-4 margin-bottom-2">
-        <h3 class="margin-0 text-light size-sans-6">Markup</h3>
+        <h3 class="margin-0 text-light font-sans-6">Markup</h3>
       </section>
 <div class="markdown-test" markdown="1">
 ```html
@@ -171,7 +171,7 @@ subnav:
     <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
       <section class="margin-x-neg-2 margin-bottom-2 padding-x-2 padding-bottom-105 border-bottom-1px border-gray-10">
         <div class="grid-row">
-          <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105" id="position">Position</h3>
+          <h3 class="grid-col-auto font-sans-6 margin-top-0 margin-bottom-105" id="position">Position</h3>
           <ul class="grid-col-fill text-right add-list-reset display-inline">
             <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">responsive</li>
             <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">active</li>
@@ -347,7 +347,7 @@ subnav:
 </div>
       </section>
       <section class="border-top-1px padding-top-1 margin-top-4 margin-bottom-2">
-        <h3 class="margin-0 text-light size-sans-6">Markup</h3>
+        <h3 class="margin-0 text-light font-sans-6">Markup</h3>
       </section>
 <pre class="margin-0 text-pre-wrap"><code></code></pre>
     </section>
@@ -355,7 +355,7 @@ subnav:
     <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
       <section class="margin-x-neg-2 margin-bottom-2 padding-x-2 padding-bottom-105 border-bottom-1px border-gray-10">
         <div class="grid-row">
-          <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105" id="z-index">Z-index</h3>
+          <h3 class="grid-col-auto font-sans-6 margin-top-0 margin-bottom-105" id="z-index">Z-index</h3>
           <ul class="grid-col-fill text-right add-list-reset display-inline">
             <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">responsive</li>
             <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">active</li>
@@ -376,7 +376,7 @@ subnav:
         <div class="z-bottom position-absolute margin-left-7 margin-top-7 bg-black square-9 padding-2">.z-bottom</div>
       </div>
       <section class="border-top-1px padding-top-1 margin-top-4 margin-bottom-2">
-        <h3 class="margin-0 text-light size-sans-6">Markup</h3>
+        <h3 class="margin-0 text-light font-sans-6">Markup</h3>
       </section>
 <div markdown="1">
 ```html
@@ -394,16 +394,16 @@ subnav:
   </section>
 
   <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light size-sans-8">Responsive variants</h2>
+    <h2 class="margin-0 text-light font-sans-8">Responsive variants</h2>
   </section>
 
   <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light size-sans-8"><span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">hover</span>, <span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">active</span>, <span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">focus</span>, and <span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">visited</span> variants</h2>
+    <h2 class="margin-0 text-light font-sans-8"><span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">hover</span>, <span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">active</span>, <span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">focus</span>, and <span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">visited</span> variants</h2>
   </section>
 
   <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light size-sans-8">Default output</h2>
-    <div class="grid-row size-sans-1 text-bold border-bottom-1px padding-bottom-05 margin-top-2 border-gray-20">
+    <h2 class="margin-0 text-light font-sans-8">Default output</h2>
+    <div class="grid-row font-sans-1 text-bold border-bottom-1px padding-bottom-05 margin-top-2 border-gray-20">
       <div class="grid-col-4">Utility</div>
       <div class="grid-col-6">Output SCSS</div>
       <div class="grid-col-2">Default variable value</div>
@@ -418,6 +418,6 @@ subnav:
   </section>
 
   <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light size-sans-8">Advanced settings</h2>
+    <h2 class="margin-0 text-light font-sans-8">Advanced settings</h2>
   </section>
 </div>

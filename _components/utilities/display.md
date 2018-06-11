@@ -4,7 +4,7 @@ layout: styleguide
 type: utility
 title: Display
 category: Utilities
-lead: Set the display property
+lead: Control the position and display characteristics of an item
 subnav:
 - text: Display
   href: '#display-utilities'
@@ -18,180 +18,406 @@ subnav:
   href: '#z-index'
 ---
 
-<div class="size-sans-4 weight-300">
-
-  <h3 class="grid-col size-sans-micro text-normal text-medium text-uppercase text-ls-1 margin-y-0 margin-left-2px">CSS properties</h3>
+<div class="utilities-properties">
+  <h3 class="utilities-property-title">CSS properties</h3>
   <div class="margin-top-1">
-    <span class="token display-inline-block text-no-uppercase text-ls-auto padding-05 margin-top-05">bottom</span>
-    <span class="token display-inline-block text-no-uppercase text-ls-auto padding-05 margin-top-05">display</span>
-    <span class="token display-inline-block text-no-uppercase text-ls-auto padding-05 margin-top-05">left</span>
-    <span class="token display-inline-block text-no-uppercase text-ls-auto padding-05 margin-top-05">opacity</span>
-    <span class="token display-inline-block text-no-uppercase text-ls-auto padding-05 margin-top-05">overflow</span>
-    <span class="token display-inline-block text-no-uppercase text-ls-auto padding-05 margin-top-05">position</span>
-    <span class="token display-inline-block text-no-uppercase text-ls-auto padding-05 margin-top-05">right</span>
-    <span class="token display-inline-block text-no-uppercase text-ls-auto padding-05 margin-top-05">top</span>
-    <span class="token display-inline-block text-no-uppercase text-ls-auto padding-05 margin-top-05">z-index</span>
+    <span class="token utilities-property">bottom</span>
+    <span class="token utilities-property">display</span>
+    <span class="token utilities-property">left</span>
+    <span class="token utilities-property">opacity</span>
+    <span class="token utilities-property">overflow</span>
+    <span class="token utilities-property">position</span>
+    <span class="token utilities-property">right</span>
+    <span class="token utilities-property">top</span>
+    <span class="token utilities-property">z-index</span>
+  </div>
+</div>
+
+<section class="utilities-section">
+  <div class="grid-row utilities-section-title-bar">
+    <h2 class="grid-col-auto utilities-section-title">Examples and usage</h2>
+    <p class="grid-col-fill utilities-section-helper">Utilities, values, and variants may be activated and deactivated in <a href="#0" class="text-ink text-no-wrap">advanced settings</a>.</p>
   </div>
 
-  <section class="border-top-1px padding-top-1 margin-top-4">
-    <div class="grid-row flex-align-center margin-bottom-2">
-      <h2 class="grid-col-auto margin-0 text-light size-sans-8">Examples and usage</h2>
-      <p class="grid-col-fill text-right size-sans-1 text-normal margin-y-0 margin-left-2px text-gray-60">Utilities, values, and variants may be activated and deactivated in <a href="#0" class="text-text text-no-wrap">advanced settings</a>.</p>
-    </div>
-    <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
-      <section class="margin-x-neg-2 margin-bottom-2 padding-x-2 padding-bottom-105 border-bottom-1px border-gray-10">
-        <div class="grid-row">
-          <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105" id="display-utilities">Display</h3>
-          <ul class="grid-col-fill text-right add-list-reset display-inline">
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">responsive</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">active</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">hover</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">focus</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">visited</li>
-          </ul>
+  <section class="utility" id="display">
+    <section class="utility-title-bar">
+      <div class="grid-row">
+        <div class="grid-col-fill">
+          <h3 class="grid-col-auto utility-title">Display</h3>
+          <p class="utility-property">CSS property: <span class="utility-property-code">display</span></p>
         </div>
-      </section>
-      <div class="display-block border-1px padding-2 margin-bottom-05">.display-block</div>
-      <div class="display-flex border-1px padding-2 margin-bottom-05">.display-flex</div>
-      <div class="display-inline border-1px padding-2 margin-bottom-05">.display-inline</div>
-      <div class="display-inline-block border-1px padding-2 margin-bottom-05">.display-inline-block</div>
-      <div class="display-inline-flex border-1px padding-2 margin-bottom-05">.display-inline-flex</div>
-      <div class="display-none border-1px padding-2 margin-bottom-05">.display-inline</div>
+
+        <ul class="grid-col-auto utility-scope">
+          <li class="utility-scope-button-disabled">responsive</li>
+          <li class="utility-scope-button-disabled">active</li>
+          <li class="utility-scope-button-disabled">hover</li>
+          <li class="utility-scope-button-disabled">focus</li>
+          <li class="utility-scope-button-disabled">visited</li>
+        </ul>
+      </div>
+    </section>
+    <section class="utility-examples">
+      <div class="display-block border-1px padding-2 margin-bottom-05"><span class="utility-class">.display-block</span></div>
+      <div class="display-flex border-1px padding-2 margin-bottom-05"><span class="utility-class">.display-flex</span></div>
+      <div class="display-inline border-1px padding-2 margin-bottom-05"><span class="utility-class">.display-inline</span></div>
+      <div class="display-inline-block border-1px padding-2 margin-bottom-05"><span class="utility-class">.display-inline-block</span></div>
+      <div class="display-inline-flex border-1px padding-2 margin-bottom-05"><span class="utility-class">.display-inline-flex</span></div>
+      <div class="display-none border-1px padding-2 margin-bottom-05"><span class="utility-class">.display-inline</span></div>
       <div class="display-table">
         <div class="display-table-row">
-          <div class="display-table-cell border-1px padding-2">.display-table-cell</div>
-          <div class="display-table-cell border-1px padding-2">.display-table-cell</div>
+          <div class="display-table-cell border-1px padding-2"><span class="utility-class">.display-table-cell</span></div>
+          <div class="display-table-cell border-1px padding-2"><span class="utility-class">.display-table-cell</span></div>
         </div>
       </div>
-      <section class="border-top-1px padding-top-1 margin-top-4 margin-bottom-2">
-        <h3 class="margin-0 text-light size-sans-6">Markup</h3>
-      </section>
-<pre class="margin-0 text-pre-wrap"><code>&lt;div class="display-block border-1px ..."&gt;.display-block&lt;/div&gt;
+
+      <h3 class="utility-examples-title">Markup</h3>
+
+<pre class="utility-code-sample"><code>&lt;div class="display-block border-1px ..."&gt;.display-block&lt;/div&gt;
 &lt;div class="display-flex border-1px ..."&gt;.display-flex&lt;/div&gt;
 &lt;div class="display-inline border-1px ..."&gt;.display-inline&lt;/div&gt;
 &lt;div class="display-inline-block border-1px ..."&gt;.display-inline-block&lt;/div&gt;
 &lt;div class="display-inline-flex border-1px ..."&gt;.display-inline-flex&lt;/div&gt;
 &lt;div class="display-none border-1px ..."&gt;.display-inline&lt;/div&gt;
 &lt;div class="display-table"&gt;
-  &lt;div class="display-table-row"&gt;
-    &lt;div class="display-table-cell border-1px ..."&gt;.display-table-cell&lt;/div&gt;
-    &lt;div class="display-table-cell border-1px ..."&gt;.display-table-cell&lt;/div&gt;
-  &lt;/div&gt;
+&lt;div class="display-table-row"&gt;
+  &lt;div class="display-table-cell border-1px ..."&gt;.display-table-cell&lt;/div&gt;
+  &lt;div class="display-table-cell border-1px ..."&gt;.display-table-cell&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;</code></pre>
-    </section>
 
-    <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
-      <section class="margin-x-neg-2 margin-bottom-2 padding-x-2 padding-bottom-105 border-bottom-1px border-gray-10">
-        <div class="grid-row">
-          <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105" id="opacity">Opacity</h3>
-          <ul class="grid-col-fill text-right add-list-reset display-inline">
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">responsive</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">active</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">hover</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">focus</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">visited</li>
-          </ul>
-        </div>
-      </section>
-      <div class="opacity-0 bg-base-lighter padding-2 margin-bottom-05">.opacity-0</div>
-      <div class="opacity-lightest bg-base-lighter padding-2 margin-bottom-05">.opacity-lightest</div>
-      <div class="opacity-lighter bg-base-lighter padding-2 margin-bottom-05">.opacity-lighter</div>
-      <div class="opacity-light bg-base-lighter padding-2 margin-bottom-05">.opacity-light</div>
-      <div class="opacity-dark bg-base-lighter padding-2 margin-bottom-05">.opacity-dark</div>
-      <div class="opacity-darker bg-base-lighter padding-2 margin-bottom-05">.opacity-darker</div>
-      <div class="opacity-darkest bg-base-lighter padding-2 margin-bottom-05">.opacity-darkest</div>
-      <div class="opacity-full bg-base-lighter padding-2 margin-bottom-05">.opacity-full</div>
-      <div class="opacity-1 bg-base-lighter padding-2 margin-bottom-05">.opacity-1</div>
-      <section class="border-top-1px padding-top-1 margin-top-4 margin-bottom-2">
-        <h3 class="margin-0 text-light size-sans-6">Markup</h3>
-      </section>
-<pre class="margin-0 text-pre-wrap"><code>&lt;div class="opacity-0 bg-base-lighter ..."&gt;.opacity-0&lt;/div&gt;
-&lt;div class="opacity-lightest bg-base-lighter ..."&gt;.opacity-lightest&lt;/div&gt;
-&lt;div class="opacity-lighter bg-base-lighter ..."&gt;.opacity-lighter&lt;/div&gt;
-&lt;div class="opacity-light bg-base-lighter ..."&gt;.opacity-light&lt;/div&gt;
-&lt;div class="opacity-dark bg-base-lighter ..."&gt;.opacity-dark&lt;/div&gt;
-&lt;div class="opacity-darker bg-base-lighter ..."&gt;.opacity-darker&lt;/div&gt;
-&lt;div class="opacity-darkest bg-base-lighter ..."&gt;.opacity-darkest&lt;/div&gt;
-&lt;div class="opacity-full bg-base-lighter ..."&gt;.opacity-full&lt;/div&gt;
-&lt;div class="opacity-1 bg-base-lighter ..."&gt;.opacity-1&lt;/div&gt;</code></pre>
-    </section>
+    </section><!-- utility-examples -->
+  </section><!-- utility -->
 
-    <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
-      <section class="margin-x-neg-2 margin-bottom-2 padding-x-2 padding-bottom-105 border-bottom-1px border-gray-10">
-        <div class="grid-row">
-          <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105" id="overflow">Overflow</h3>
-          <ul class="grid-col-fill text-right add-list-reset display-inline">
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">responsive</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">active</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">hover</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">focus</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">visited</li>
-          </ul>
+  <section class="utility" id="opacity">
+    <section class="utility-title-bar">
+      <div class="grid-row">
+        <div class="grid-col-fill">
+          <h3 class="grid-col-auto utility-title">Opacity</h3>
+          <p class="utility-property">CSS property: <span class="utility-property-code">opacity</span></p>
         </div>
-      </section>
-      .overflow-visible
-      <div class="overflow-visible height-8 border-1px padding-2 margin-bottom-4">The U.S. Web Design System has grown into a blossoming, open source community of government engineers, content specialists, and designers. We currently support dozens of agencies and more than 100 sites, which is fueled through an active community of contributors both in and out of government.</div>
-      .overflow-hidden
-      <div class="overflow-hidden height-8 border-1px padding-2 margin-bottom-4">The U.S. Web Design System has grown into a blossoming, open source community of government engineers, content specialists, and designers. We currently support dozens of agencies and more than 100 sites, which is fueled through an active community of contributors both in and out of government.</div>
-      .overflow-scroll
-      <div class="overflow-scroll height-8 border-1px padding-2 margin-bottom-4">The U.S. Web Design System has grown into a blossoming, open source community of government engineers, content specialists, and designers. We currently support dozens of agencies and more than 100 sites, which is fueled through an active community of contributors both in and out of government.</div>
-      .overflow-auto
-      <div class="overflow-auto height-8 border-1px padding-2 margin-bottom-4">The U.S. Web Design System has grown into a blossoming, open source community of government engineers, content specialists, and designers. We currently support dozens of agencies and more than 100 sites, which is fueled through an active community of contributors both in and out of government.</div>
-      <section class="border-top-1px padding-top-1 margin-top-4 margin-bottom-2">
-        <h3 class="margin-0 text-light size-sans-6">Markup</h3>
-      </section>
-<pre class="margin-0 text-pre-wrap"><code>&lt;div class="overflow-visible height-8 ..."&gt;The U.S. Web Design System has grown into a ...&lt;/div&gt;
-&lt;div class="overflow-hidden height-8 ..."&gt;The U.S. Web Design System has grown into a ...&lt;/div&gt;
-&lt;div class="overflow-scroll height-8 ..."&gt;The U.S. Web Design System has grown into a ...&lt;/div&gt;
-&lt;div class="overflow-auto height-8 ..."&gt;The U.S. Web Design System has grown into a ...&lt;/div&gt;</code></pre>
-    </section>
-
-    <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
-      <section class="margin-x-neg-2 margin-bottom-2 padding-x-2 padding-bottom-105 border-bottom-1px border-gray-10">
-        <div class="grid-row">
-          <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105" id="position">Position</h3>
-          <ul class="grid-col-fill text-right add-list-reset display-inline">
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">responsive</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">active</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">hover</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">focus</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">visited</li>
-          </ul>
-        </div>
-      </section>
-      <section class="border-top-1px padding-top-1 margin-top-4 margin-bottom-2">
-        <h3 class="margin-0 text-light size-sans-6">Markup</h3>
-      </section>
-<pre class="margin-0 text-pre-wrap"><code></code></pre>
-    </section>
-
-    <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
-      <section class="margin-x-neg-2 margin-bottom-2 padding-x-2 padding-bottom-105 border-bottom-1px border-gray-10">
-        <div class="grid-row">
-          <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105" id="z-index">Z-index</h3>
-          <ul class="grid-col-fill text-right add-list-reset display-inline">
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">responsive</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">active</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">hover</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">focus</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">visited</li>
-          </ul>
-        </div>
-      </section>
-      <div class="position-relative" style="height:120px">
-        <div class="z-top position-absolute margin-left-0 margin-top-0 bg-gray-30 height-9 width-9 padding-2">.z-top</div>
-        <div class="z-500 position-absolute margin-left-1 margin-top-1 bg-gray-40 height-9 width-9 padding-2">.z-500</div>
-        <div class="z-400 position-absolute margin-left-2 margin-top-2 bg-gray-50 height-9 width-9 padding-2">.z-400</div>
-        <div class="z-300 position-absolute margin-left-3 margin-top-3 bg-gray-60 height-9 width-9 padding-2">.z-300</div>
-        <div class="z-200 position-absolute margin-left-4 margin-top-4 bg-gray-70 height-9 width-9 padding-2">.z-200</div>
-        <div class="z-100 position-absolute margin-left-5 margin-top-5 bg-gray-80 height-9 width-9 padding-2">.z-100</div>
-        <div class="z-0 position-absolute margin-left-6 margin-top-6 bg-gray-90 height-9 width-9 padding-2">.z-0</div>
-        <div class="z-bottom position-absolute margin-left-7 margin-top-7 bg-black height-9 width-9 padding-2">.z-bottom</div>
+        <ul class="grid-col-auto utility-scope">
+          <li class="utility-scope-button-disabled">responsive</li>
+          <li class="utility-scope-button-disabled">active</li>
+          <li class="utility-scope-button-disabled">hover</li>
+          <li class="utility-scope-button-disabled">focus</li>
+          <li class="utility-scope-button-disabled">visited</li>
+        </ul>
       </div>
-      <section class="border-top-1px padding-top-1 margin-top-4 margin-bottom-2">
-        <h3 class="margin-0 text-light size-sans-6">Markup</h3>
-      </section>
-<pre class="margin-0 text-pre-wrap"><code>&lt;div class="z-top position-absolute ..."&gt;.z-top&lt;/div&gt;
+    </section>
+
+    <section class="utility-examples">
+      <div class="bg-primary padding-3 radius-md margin-bottom-2">
+        <div class="grid-row flex-align-center margin-bottom-05">
+          <div class="grid-col-3">
+            <span class="utility-class">.opacity-0</span>
+            <span class="utility-value margin-0">0</span>
+          </div>
+          <div class="grid-col opacity-0 bg-white height-4"></div>
+          <div class="grid-col opacity-0 bg-black height-4"></div>
+        </div>
+        <div class="grid-row flex-align-center margin-bottom-05">
+          <div class="grid-col-3">
+            <span class="utility-class">.opacity-10</span>
+            <span class="utility-value margin-0">0.1</span>
+          </div>
+          <div class="grid-col opacity-10 bg-white height-4"></div>
+          <div class="grid-col opacity-10 bg-black height-4"></div>
+        </div>
+        <div class="grid-row flex-align-center margin-bottom-05">
+          <div class="grid-col-3">
+            <span class="utility-class">.opacity-20</span>
+            <span class="utility-value margin-0">0.2</span>
+          </div>
+          <div class="grid-col opacity-20 bg-white height-4"></div>
+          <div class="grid-col opacity-20 bg-black height-4"></div>
+        </div>
+        <div class="grid-row flex-align-center margin-bottom-05">
+          <div class="grid-col-3">
+            <span class="utility-class">.opacity-30</span>
+            <span class="utility-value margin-0">0.3</span>
+          </div>
+          <div class="grid-col opacity-30 bg-white height-4"></div>
+          <div class="grid-col opacity-30 bg-black height-4"></div>
+        </div>
+        <div class="grid-row flex-align-center margin-bottom-05">
+          <div class="grid-col-3">
+            <span class="utility-class">.opacity-40</span>
+            <span class="utility-value margin-0">0.4</span>
+          </div>
+          <div class="grid-col opacity-40 bg-white height-4"></div>
+          <div class="grid-col opacity-40 bg-black height-4"></div>
+        </div>
+        <div class="grid-row flex-align-center margin-bottom-05">
+          <div class="grid-col-3">
+            <span class="utility-class">.opacity-50</span>
+            <span class="utility-value margin-0">0.5</span>
+          </div>
+          <div class="grid-col opacity-50 bg-white height-4"></div>
+          <div class="grid-col opacity-50 bg-black height-4"></div>
+        </div>
+        <div class="grid-row flex-align-center margin-bottom-05">
+          <div class="grid-col-3">
+            <span class="utility-class">.opacity-60</span>
+            <span class="utility-value margin-0">0.6</span>
+          </div>
+          <div class="grid-col opacity-60 bg-white height-4"></div>
+          <div class="grid-col opacity-60 bg-black height-4"></div>
+        </div>
+        <div class="grid-row flex-align-center margin-bottom-05">
+          <div class="grid-col-3">
+            <span class="utility-class">.opacity-70</span>
+            <span class="utility-value margin-0">0.7</span>
+          </div>
+          <div class="grid-col opacity-70 bg-white height-4"></div>
+          <div class="grid-col opacity-70 bg-black height-4"></div>
+        </div>
+        <div class="grid-row flex-align-center margin-bottom-05">
+          <div class="grid-col-3">
+            <span class="utility-class">.opacity-80</span>
+            <span class="utility-value margin-0">0.8</span>
+          </div>
+          <div class="grid-col opacity-80 bg-white height-4"></div>
+          <div class="grid-col opacity-80 bg-black height-4"></div>
+        </div>
+        <div class="grid-row flex-align-center margin-bottom-05">
+          <div class="grid-col-3">
+            <span class="utility-class">.opacity-90</span>
+            <span class="utility-value margin-0">0.9</span>
+          </div>
+          <div class="grid-col opacity-90 bg-white height-4"></div>
+          <div class="grid-col opacity-90 bg-black height-4"></div>
+        </div>
+        <div class="grid-row flex-align-center margin-bottom-05">
+          <div class="grid-col-3">
+            <span class="utility-class">.opacity-100</span>
+            <span class="utility-value margin-0">1</span>
+          </div>
+          <div class="grid-col opacity-100 bg-white height-4"></div>
+          <div class="grid-col opacity-100 bg-black height-4"></div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="utility" id="overflow">
+    <section class="utility-title-bar">
+      <div class="grid-row">
+        <div class="grid-col-fill">
+          <h3 class="grid-col-auto utility-title">Overflow</h3>
+          <p class="utility-property">CSS property: <span class="utility-property-code">overflow</span></p>
+        </div>
+        <ul class="grid-col-auto utility-scope">
+          <li class="utility-scope-button-disabled">responsive</li>
+          <li class="utility-scope-button-disabled">active</li>
+          <li class="utility-scope-button-disabled">hover</li>
+          <li class="utility-scope-button-disabled">focus</li>
+          <li class="utility-scope-button-disabled">visited</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="utility-examples">
+
+      <p class="font-sans-2xs line-height-sans-5 measure-none margin-bottom-5 padding-bottom-2 border-bottom-1px border-base-lighter"><strong>Note:</strong> <a href="http://www.w3.org/TR/css3-box/#overflow-x">Per the W3C overflow spec:</a> The computed values of ‘overflow-x’ and ‘overflow-y’ are the same as their specified values, except that some combinations with ‘visible’ are not possible: if one is specified as ‘visible’ and the other is ‘scroll’ or ‘auto’, then ‘visible’ is set to ‘auto’. The computed value of ‘overflow’ is equal to the computed value of ‘overflow-x’ if ‘overflow-y’ is the same; otherwise it is the pair of computed values of ‘overflow-x’ and ‘overflow-y’.</p>
+
+      <div class="grid-row">
+        <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">
+          <span class="utility-class">.overflow-visible</span>
+          <div class="overflow-visible square-card border-1px border-secondary-light padding-2 margin-y-1">
+            <div class="square-card bg-primary-lighter"></div>
+          </div>
+        </div>
+        <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">
+          <span class="utility-class">.overflow-x-visible</span>
+          <div class="overflow-x-visible square-card border-1px border-secondary-light padding-2 margin-y-1">
+            <div class="square-card bg-primary-lighter"></div>
+          </div>
+        </div>
+        <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">
+          <span class="utility-class">.overflow-y-visible</span>
+          <div class="overflow-y-visible square-card border-1px border-secondary-light padding-2 margin-y-1">
+            <div class="square-card bg-primary-lighter"></div>
+          </div>
+        </div>
+
+        <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">
+          <span class="utility-class">.overflow-hidden</span>
+          <div class="overflow-hidden square-card border-1px border-secondary-light padding-2 margin-y-1">
+            <div class="square-card bg-primary-lighter"></div>
+          </div>
+        </div>
+        <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">
+          <span class="utility-class">.overflow-x-hidden</span>
+          <div class="overflow-x-hidden square-card border-1px border-secondary-light padding-2 margin-y-1">
+            <div class="square-card bg-primary-lighter"></div>
+          </div>
+        </div>
+        <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">
+          <span class="utility-class">.overflow-y-hidden</span>
+          <div class="overflow-y-hidden square-card border-1px border-secondary-light padding-2 margin-y-1">
+            <div class="square-card bg-primary-lighter"></div>
+          </div>
+        </div>
+
+        <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">
+          <span class="utility-class">.overflow-scroll</span>
+          <div class="overflow-scroll square-card border-1px border-secondary-light padding-2 margin-y-1">
+            <div class="square-card bg-primary-lighter"></div>
+          </div>
+        </div>
+        <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">
+          <span class="utility-class">.overflow-x-scroll</span>
+          <div class="overflow-x-scroll square-card border-1px border-secondary-light padding-2 margin-y-1">
+            <div class="square-card bg-primary-lighter"></div>
+          </div>
+        </div>
+        <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">
+          <span class="utility-class">.overflow-y-scroll</span>
+          <div class="overflow-y-scroll square-card border-1px border-secondary-light padding-2 margin-y-1">
+            <div class="square-card bg-primary-lighter"></div>
+          </div>
+        </div>
+
+        <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">
+          <span class="utility-class">.overflow-auto</span>
+          <div class="overflow-auto square-card border-1px border-secondary-light padding-2 margin-y-1">
+            <div class="square-card bg-primary-lighter"></div>
+          </div>
+        </div>
+        <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">
+          <span class="utility-class">.overflow-x-auto</span>
+          <div class="overflow-x-auto square-card border-1px border-secondary-light padding-2 margin-y-1">
+            <div class="square-card bg-primary-lighter"></div>
+          </div>
+        </div>
+        <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">
+          <span class="utility-class">.overflow-y-auto</span>
+          <div class="overflow-y-auto square-card border-1px border-secondary-light padding-2 margin-y-1">
+            <div class="square-card bg-primary-lighter"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="utility" id="position">
+    <section class="utility-title-bar">
+      <div class="grid-row">
+        <div class="grid-col-fill">
+          <h3 class="grid-col-auto utility-title">Position and pinning</h3>
+          <p class="utility-property">CSS properties: <span class="utility-property-code">position, top, bottom, left, right</span></p>
+        </div>
+        <ul class="grid-col-auto utility-scope">
+          <li class="utility-scope-button-disabled">responsive</li>
+          <li class="utility-scope-button-disabled">active</li>
+          <li class="utility-scope-button-disabled">hover</li>
+          <li class="utility-scope-button-disabled">focus</li>
+          <li class="utility-scope-button-disabled">visited</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="utility-examples">
+      <h3 class="utility-examples-title">Position</h3>
+      <div class="grid-row grid-gap">
+        <div class="grid-col-6">
+          <div class="position-relative border-1px border-secondary-light padding-2 margin-bottom-2">
+            <div class="position-static height-card border-1px border-secondary-light padding-2 text-ink"><p class="margin-0 font-sans-2xs text-ink"><span class="utility-class text-ink">.position-static</span> parent</p>
+              <div class="position-absolute bottom-0 left-0 bg-secondary-light padding-2 text-ink is-inverse">
+                <p class="margin-0 font-sans-2xs"><span class="utility-class">.position-absolute</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-col-6">
+          <div class="position-relative border-1px border-secondary-light padding-2 margin-bottom-2">
+            <div class="position-relative height-card border-1px border-secondary-light padding-2 text-ink"><p class="margin-0 font-sans-2xs text-ink"><span class="utility-class text-ink">.position-relative</span> parent</p>
+              <div class="position-absolute bottom-0 left-0 bg-secondary-light padding-2 text-ink is-inverse">
+                <p class="margin-0 font-sans-2xs"><span class="utility-class">.position-absolute</span> child</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="utility-examples-title">Pinning</h3>
+      <div class="grid-row grid-gap">
+
+        <div class="grid-col-6">
+          <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
+            <div class="add-pin-top bg-secondary-light padding-2 text-ink is-inverse">
+              <div class="margin-0 font-sans-2xs"><span class="utility-class">.add-pin-top</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-col-6">
+          <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
+            <div class="add-pin-bottom bg-secondary-light padding-2 text-ink is-inverse">
+              <div class="margin-0 font-sans-2xs"><span class="utility-class">.add-pin-bottom</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-col-6">
+          <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
+            <div class="add-pin-left bg-secondary-light padding-2 text-ink is-inverse">
+              <div class="margin-0 font-sans-2xs"><span class="utility-class">.add-pin-left</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-col-6">
+          <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
+            <div class="add-pin-right bg-secondary-light padding-2 text-ink is-inverse">
+              <div class="margin-0 font-sans-2xs"><span class="utility-class">.add-pin-right</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-col-6">
+          <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
+            <div class="add-pin-all bg-secondary-light padding-2 text-ink is-inverse">
+              <div class="margin-0 font-sans-2xs"><span class="utility-class">.add-pin-all</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-col-6">
+          <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
+            <div class="add-pin-none bg-secondary-light padding-2 text-ink is-inverse">
+              <div class="margin-0 font-sans-2xs"><span class="utility-class">.add-pin-none</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </section>
+
+  <section class="utility">
+    <section class="utility-title-bar">
+      <div class="grid-row">
+        <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105" id="z-index">Z-index</h3>
+        <ul class="grid-col-auto utility-scope">
+          <li class="utility-scope-button-disabled">responsive</li>
+          <li class="utility-scope-button-disabled">active</li>
+          <li class="utility-scope-button-disabled">hover</li>
+          <li class="utility-scope-button-disabled">focus</li>
+          <li class="utility-scope-button-disabled">visited</li>
+        </ul>
+      </div>
+    </section>
+    <div class="position-relative" style="height:120px">
+      <div class="z-top position-absolute margin-left-0 margin-top-0 bg-gray-30 height-9 width-9 padding-2">.z-top</div>
+      <div class="z-500 position-absolute margin-left-1 margin-top-1 bg-gray-40 height-9 width-9 padding-2">.z-500</div>
+      <div class="z-400 position-absolute margin-left-2 margin-top-2 bg-gray-50 height-9 width-9 padding-2">.z-400</div>
+      <div class="z-300 position-absolute margin-left-3 margin-top-3 bg-gray-60 height-9 width-9 padding-2">.z-300</div>
+      <div class="z-200 position-absolute margin-left-4 margin-top-4 bg-gray-70 height-9 width-9 padding-2">.z-200</div>
+      <div class="z-100 position-absolute margin-left-5 margin-top-5 bg-gray-80 height-9 width-9 padding-2">.z-100</div>
+      <div class="z-0 position-absolute margin-left-6 margin-top-6 bg-gray-90 height-9 width-9 padding-2">.z-0</div>
+      <div class="z-bottom position-absolute margin-left-7 margin-top-7 bg-black height-9 width-9 padding-2">.z-bottom</div>
+    </div>
+    <section class="border-top-1px padding-top-1 margin-top-4 margin-bottom-2">
+      <h3 class="utility-examples-title">Markup</h3>
+    </section>
+<pre class="utility-code-sample"><code>&lt;div class="z-top position-absolute ..."&gt;.z-top&lt;/div&gt;
 &lt;div class="z-500 position-absolute ..."&gt;.z-500&lt;/div&gt;
 &lt;div class="z-400 position-absolute ..."&gt;.z-400&lt;/div&gt;
 &lt;div class="z-300 position-absolute ..."&gt;.z-300&lt;/div&gt;
@@ -199,34 +425,33 @@ subnav:
 &lt;div class="z-100 position-absolute ..."&gt;.z-100&lt;/div&gt;
 &lt;div class="z-0 position-absolute ..."&gt;.z-0&lt;/div&gt;
 &lt;div class="z-bottom position-absolute ..."&gt;.z-bottom&lt;/div&gt;</code></pre>
-    </section>
   </section>
+</section>
 
-  <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light size-sans-8">Responsive variants</h2>
-  </section>
+<section class="border-top-1px padding-top-1 margin-top-4">
+  <h2 class="margin-0 text-light size-sans-8">Responsive variants</h2>
+</section>
 
-  <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light size-sans-8"><span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">hover</span>, <span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">active</span>, <span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">focus</span>, and <span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">visited</span> variants</h2>
-  </section>
+<section class="border-top-1px padding-top-1 margin-top-4">
+  <h2 class="margin-0 text-light size-sans-8"><span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">hover</span>, <span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">active</span>, <span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">focus</span>, and <span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">visited</span> variants</h2>
+</section>
 
-  <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light size-sans-8">Default output</h2>
-    <div class="grid-row size-sans-1 text-bold border-bottom-1px padding-bottom-05 margin-top-2 border-gray-20">
-      <div class="grid-col-4">Utility</div>
-      <div class="grid-col-6">Output SCSS</div>
-      <div class="grid-col-2">Default variable value</div>
-    </div>
-    <dl class="output-list">
-      {% for utility in site.data.utilities.display %}
-        <dt class="output-utility">{{ utility.class }}</dt>
-        <dd class="output-css">{{ utility.value }}</dd>
-        <dd class="output-variable">—</dd>
-      {% endfor %}
-    </dl>
-  </section>
+<section class="border-top-1px padding-top-1 margin-top-4">
+  <h2 class="margin-0 text-light size-sans-8">Default output</h2>
+  <div class="grid-row size-sans-1 text-bold border-bottom-1px padding-bottom-05 margin-top-2 border-gray-20">
+    <div class="grid-col-4">Utility</div>
+    <div class="grid-col-6">Output SCSS</div>
+    <div class="grid-col-2">Default variable value</div>
+  </div>
+  <dl class="output-list">
+    {% for utility in site.data.utilities.display %}
+      <dt class="output-utility">{{ utility.class }}</dt>
+      <dd class="output-css">{{ utility.value }}</dd>
+      <dd class="output-variable">—</dd>
+    {% endfor %}
+  </dl>
+</section>
 
-  <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light size-sans-8">Advanced settings</h2>
-  </section>
-</div>
+<section class="border-top-1px padding-top-1 margin-top-4">
+  <h2 class="margin-0 text-light size-sans-8">Advanced settings</h2>
+</section>

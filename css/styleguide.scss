@@ -2122,6 +2122,15 @@ li.display-inline-block {
   @include u-text(bold);
 }
 
+.utility-code-sample {
+  @include u-bg($base-lighter);
+  @include u-line-height(mono, 3);
+  @include u-margin-x(0);
+  @include u-margin-y(1);
+  @include u-radius(md);
+  @include u-text(pre-wrap);
+}
+
 /* * * * * * ========================== */
 
 .usa-sidenav-list,

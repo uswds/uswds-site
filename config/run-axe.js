@@ -113,7 +113,7 @@ Promise.all([runServer(), getChrome()]).then(([server, chrome]) => {
         if (url.indexOf(server.url) === 0) {
           url = url.substring(server.url.length);
         }
-        console.log(`ERROR: ${chalk.red(url)} failed to load.`);
+        console.log(`ERROR: ${chalk.red(url)} failed to load`);
         terminate(1);
       });
       Page.loadEventFired(() => {

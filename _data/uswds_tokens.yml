@@ -1,0 +1,194 @@
+special:
+  auto_auto:
+    - token: auto
+      value: auto
+  zero_zero:
+    - token: 0
+      value: 0
+  none_zero:
+    - token: none
+      value: 0
+  none_none:
+    - token: none
+      value: none
+  full:
+    - token: full
+      value: 100%
+  screen_horizontal:
+    - token: screen
+      value: 100vw
+  screen_vertical:
+    - token: screen
+      value: 100vh
+
+spacing:
+  positive:
+    smaller:
+      - token: 1px
+        value: 1px
+      - token: 2px
+        value: 2px
+    small:
+      - token: '05'
+        value: 4px
+      - token: 1
+        value: 8px
+      - token: 105
+        value: 12px
+      - token: 2
+        value: 16px
+      - token: 205
+        value: 20px
+      - token: 3
+        value: 24px
+    medium:
+      - token: 4
+        value: 32px
+      - token: 5
+        value: 40px
+      - token: 6
+        value: 48px
+      - token: 7
+        value: 56px
+      - token: 8
+        value: 64px
+      - token: 9
+        value: 72px
+    large:
+      - token: card
+        value: 160px
+      - token: card-lg
+        value: 240px
+      - token: mobile
+        value: 320px
+    larger:
+      - token: mobile-lg
+        value: 480px
+      - token: tablet
+        value: 640px
+      - token: tablet-lg
+        value: 880px
+    largest:
+      - token: desktop
+        value: 1024px
+      - token: desktop-lg
+        value: 1200px
+      - token: widescreen
+        value: 1400px
+  negative:
+    smaller:
+      - token: neg-1px
+        value: -1px
+      - token: neg-2px
+        value: -2px
+    small:
+      - token: neg-05
+        value: -4px
+      - token: neg-1
+        value: -8px
+      - token: neg-105
+        value: -12px
+      - token: neg-2
+        value: -16px
+      - token: neg-205
+        value: -20px
+      - token: neg-3
+        value: -24px
+
+colors:
+  project_theme:
+    - token: base-lightest
+      value: '#fcfcfc'
+      reverse: true
+    - token: base-lighter
+      value: '#f0f0f0'
+      reverse: true
+    - token: base-light
+      value: '#e6e6e6'
+      reverse: true
+    - token: base
+      value: '#adadad'
+      reverse: true
+    - token: base-dark
+      value: '#757575'
+    - token: base-darker
+      value: '#454545'
+    - token: base-darkest
+      value: '#171717'
+    - token: ink
+      value: '#171717'
+    - token: primary-lighter
+      value: '#dae9f6'
+      reverse: true
+    - token: primary-light
+      value: '#7cbdf0'
+      reverse: true
+    - token: primary
+      value: '#0f6bb2'
+    - token: primary-vivid
+      value: '#0e57da'
+    - token: primary-dark
+      value: '#215192'
+    - token: primary-darker
+      value: '#122b4c'
+    - token: secondary-light
+      value: '#F08F8A'
+      reverse: true
+    - token: secondary
+      value: '#A93B3D'
+    - token: secondary-vivid
+      value: '#e6251b'
+    - token: secondary-dark
+      value: '#3b2523'
+    - token: accent-cool
+      value: '#fd7b28'
+    - token: accent-cool-dark
+      value: '#1babcf'
+    - token: accent-warm
+      value: '#fd974c'
+    - token: accent-warm-dark
+      value: '#fd7b28'
+  grayscale:
+    - token: white
+      value: '#ffffff'
+      reverse: true
+    - token: gray-5
+      value: '#f0f0f0'
+      reverse: true
+    - token: gray-10
+      value: '#e6e6e6'
+      reverse: true
+    - token: gray-30
+      value: '#adadad'
+      reverse: true
+    - token: gray-50
+      value: '#757575'
+    - token: gray-70
+      value: '#454545'
+    - token: gray-90
+      value: '#171717'
+    - token: black
+      value: '#000000'
+  basic:
+    - token: red
+      value: '#e6251b'
+    - token: orange
+      value: '#fd7b28'
+    - token: gold
+      value: '#f8ae29'
+    - token: yellow
+      value: '#fcd344'
+    - token: green
+      value: '#548114'
+    - token: mint
+      value: '#20c688'
+    - token: cyan
+      value: '#1babcf'
+    - token: blue
+      value: '#137cdb'
+    - token: indigo
+      value: '#6970c7'
+    - token: violet
+      value: '#836bb3'
+    - token: magenta
+      value: '#df2d7a'

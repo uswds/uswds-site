@@ -12,6 +12,10 @@ subnav:
   href: '#background-color'
 ---
 
+{% assign theme_colors = site.data.uswds_tokens.colors.project_theme %}
+{% assign grayscale_colors = site.data.uswds_tokens.colors.grayscale %}
+{% assign basic_colors = site.data.uswds_tokens.colors.basic %}
+
 <div class="utilities-properties">
   <h3 class="utilities-property-title">CSS properties</h3>
   <div class="margin-top-1">
@@ -49,305 +53,43 @@ subnav:
       <h3 class="utility-examples-title">Project theme colors <a class="utility-examples-helper" href="#0">Read more about project theme colors</a></h3>
 
       <div class="grid-row">
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="bg-gray-90 radius-md padding-05 is-inverse text-base-lightest">.text-base-lightest</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-base-lightest"></span>
-            #fcfcfc
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="bg-gray-90 radius-md padding-05 is-inverse text-base-lighter">.text-base-lighter</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-base-lighter"></span>
-            #f0f0f0
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="bg-gray-90 radius-md padding-05 is-inverse text-base-light">.text-base-light</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-base-light"></span>
-            #e6e6e6
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="bg-gray-90 radius-md padding-05 is-inverse text-base">.text-base</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-base"></span>
-            #adadad
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-base-dark">.text-base-dark</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-base-dark"></span>
-            #757575
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-base-darker">.text-base-darker</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-base-darker"></span>
-            #454545
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-base-darkest">.text-base-darkest</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-base-darkest"></span>
-            #171717
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-ink">.text-ink (alias for <span class="utility-class">text-base-darkest</span>)</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-ink"></span>
-            #171717
-          </span>
-        </div>
-
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="bg-gray-90 radius-md padding-05 is-inverse text-primary-lighter">.text-primary-lighter</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-primary-lighter"></span>
-            #DAE9F6
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="bg-gray-90 radius-md padding-05 is-inverse text-primary-light">.text-primary-light</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-primary-light"></span>
-            #7CBDF0
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-primary">.text-primary</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-primary"></span>
-            #0F6BB2
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-primary-vivid">.text-primary-vivid</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-primary-vivid"></span>
-            #0E57DA
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-primary-dark">.text-primary-dark</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-primary-dark"></span>
-            #215192
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-primary-darker">.text-primary-darker</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-primary-darker"></span>
-            #122B4C
-          </span>
-        </div>
-
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="bg-gray-90 radius-md padding-05 is-inverse text-secondary-light">.text-secondary-light</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-secondary-light"></span>
-            #122B4C
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-secondary">.text-secondary</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-secondary"></span>
-            #122B4C
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-secondary-vivid">.text-secondary-vivid</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-secondary-vivid"></span>
-            #E6251B
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-secondary-dark">.text-secondary-dark</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-secondary-dark"></span>
-            #3B2523
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-accent-warm">.text-accent-warm</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-accent-warm"></span>
-            #FD974C
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-accent-warm-dark">.text-accent-warm-dark</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-accent-warm-dark"></span>
-            #FD7B28
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-accent-cool">.text-accent-cool</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-accent-cool"></span>
-            #FD7B28
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-accent-cool-dark">.text-accent-cool-dark</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-accent-cool-dark"></span>
-            #1BABCF
-          </span>
-        </div>
+        {% for color in theme_colors %}
+          <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
+            <span class="radius-md padding-05 text-{{ color.token }}{% if color.reverse %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
+            <span class="flex-auto utility-value-color">
+              <span class="utility-value-color-chip bg-{{ color.token }}"></span>
+              {{ color.value }}
+            </span>
+          </div>
+        {% endfor %}
       </div>
 
       <h3 class="font-sans-6 margin-top-4 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Grayscale palette <a class="utility-examples-helper" href="#0">Read more about the USWDS grayscale palette</a></h3>
 
       <div class="grid-row">
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="bg-ink is-inverse radius-md padding-05 text-white">.text-white</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-white"></span>
-            #ffffff
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="bg-ink is-inverse radius-md padding-05 text-gray-5">.text-gray-5</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-gray-5"></span>
-            #f0f0f0
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="bg-ink is-inverse radius-md padding-05 text-gray-10">.text-gray-10</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-gray-10"></span>
-            #e6e6e6
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="bg-ink is-inverse radius-md padding-05 text-gray-30">.text-gray-30</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-gray-30"></span>
-            #adadad
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-gray-50">.text-gray-50</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-gray-50"></span>
-            #757575
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-gray-70">.text-gray-70</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-gray-70"></span>
-            #454545
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-gray-90">.text-gray-90</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-gray-90"></span>
-            #171717
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-black">.text-black</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-black"></span>
-            #000000
-          </span>
-        </div>
+        {% for color in grayscale_colors %}
+          <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
+            <span class="radius-md padding-05 text-{{ color.token }}{% if color.reverse %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
+            <span class="flex-auto utility-value-color">
+              <span class="utility-value-color-chip bg-{{ color.token }}"></span>
+              {{ color.value }}
+            </span>
+          </div>
+        {% endfor %}
       </div>
 
       <h3 class="font-sans-6 margin-top-4 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Basic palette <a class="utility-examples-helper" href="#0">Read more about the USWDS basic palette</a></h3>
 
       <div class="grid-row">
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-red">.text-red</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-red"></span>
-            #E6251B
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-orange">.text-orange</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-orange"></span>
-            #FD7B28
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-gold">.text-gold</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-gold"></span>
-            #F8AE29
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-yellow">.text-yellow</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-yellow"></span>
-            #FCD344
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-green">.text-green</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-green"></span>
-            #548114
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-mint">.text-mint</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-mint"></span>
-            #20C688
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-cyan">.text-cyan</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-cyan"></span>
-            #1BABCF
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-blue">.text-blue</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-blue"></span>
-            #137CDB
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-indigo">.text-indigo</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-indigo"></span>
-            #6970C7
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-violet">.text-violet</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-violet"></span>
-            #836BB3
-          </span>
-        </div>
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-          <span class="radius-md padding-05 text-magenta">.text-magenta</span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-magenta"></span>
-            #DF2D7A
-          </span>
-        </div>
+        {% for color in basic_colors %}
+          <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
+            <span class="radius-md padding-05 text-{{ color.token }}{% if color.reverse %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
+            <span class="flex-auto utility-value-color">
+              <span class="utility-value-color-chip bg-{{ color.token }}"></span>
+              {{ color.value }}
+            </span>
+          </div>
+        {% endfor %}
       </div>
     </section>
   </section>
@@ -372,431 +114,55 @@ subnav:
 
     <section class="utility-examples">
       <h3 class="font-sans-4 margin-top-0 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Project theme colors <a class="utility-examples-helper" href="#0">Read more about project theme colors</a></h3>
-
       <div class="grid-row">
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-base-lightest"></span>
-            <span class="utility-class">.bg-base-lightest</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-base-lightest"></span>
-            #fcfcfc
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-base-lighter"></span>
-            <span class="utility-class">.bg-base-lighter</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-base-lighter"></span>
-            #f0f0f0
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-base-light"></span>
-            <span class="utility-class">.bg-base-light</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-base-light"></span>
-            #e6e6e6
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-base"></span>
-            <span class="utility-class">.bg-base</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-base"></span>
-            #adadad
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-base-dark"></span>
-            <span class="utility-class">.bg-base-dark</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-base-dark"></span>
-            #757575
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-base-darker"></span>
-            <span class="utility-class">.bg-base-darker</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-base-darker"></span>
-            #454545
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-base-darkest"></span>
-            <span class="utility-class">.bg-base-darkest</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-base-darkest"></span>
-            #171717
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-ink"></span>
-            <span class="utility-class">.bg-ink</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-ink"></span>
-            #171717
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-primary-lighter"></span>
-            <span class="utility-class">.bg-primary-lighter</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-primary-lighter"></span>
-            #DAE9F6
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-primary-light"></span>
-            <span class="utility-class">.bg-primary-light</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-primary-light"></span>
-            #7CBDF0
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-primary"></span>
-            <span class="utility-class">.bg-primary</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-primary"></span>
-            #0F6BB2
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-primary-vivid"></span>
-            <span class="utility-class">.bg-primary-vivid</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-primary-vivid"></span>
-            #0E57DA
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-primary-dark"></span>
-            <span class="utility-class">.bg-primary-dark</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-primary-dark"></span>
-            #215192
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-primary-darker"></span>
-            <span class="utility-class">.bg-primary-darker</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-primary-darker"></span>
-            #122B4C
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-secondary-light"></span>
-            <span class="utility-class">.bg-secondary-light</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-secondary-light"></span>
-            #122B4C
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-secondary"></span>
-            <span class="utility-class">.bg-secondary</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-secondary"></span>
-            #122B4C
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-secondary-vivid"></span>
-            <span class="utility-class">.bg-secondary-vivid</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-secondary-vivid"></span>
-            #E6251B
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-secondary-dark"></span>
-            <span class="utility-class">.bg-secondary-dark</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-secondary-dark"></span>
-            #3B2523
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-accent-warm"></span>
-            <span class="utility-class">.bg-accent-warm</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-accent-warm"></span>
-            #FD974C
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-accent-warm-dark"></span>
-            <span class="utility-class">.bg-accent-warm-dark</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-accent-warm-dark"></span>
-            #FD7B28
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-accent-cool"></span>
-            <span class="utility-class">.bg-accent-cool</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-accent-cool"></span>
-            #FD7B28
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-accent-cool-dark"></span>
-            <span class="utility-class">.bg-accent-cool-dark</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-accent-cool-dark"></span>
-            #1BABCF
-          </span>
-        </p>
+        {% for color in theme_colors %}
+          <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+            <span class="flex-fill">
+              <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
+              <span class="utility-class">.bg-{{ color.token }}</span>
+            </span>
+            <span class="flex-auto utility-value-color">
+              <span class="utility-value-color-chip bg-{{ color.token }}"></span>
+              {{ color.value }}
+            </span>
+          </p>
+        {% endfor %}
       </div>
     </section>
 
     <section class="utility-examples">
       <h3 class="font-sans-4 margin-top-4 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Grayscale palette <a class="utility-examples-helper" href="#0">Read more about the USWDS grayscale palette</a></h3>
-
       <div class="grid-row">
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-white"></span>
-            <span class="utility-class">.bg-white</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-white"></span>
-            #ffffff
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-gray-5"></span>
-            <span class="utility-class">.bg-gray-5</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-gray-5"></span>
-            #f0f0f0
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-gray-10"></span>
-            <span class="utility-class">.bg-gray-10</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-gray-10"></span>
-            #e6e6e6
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-gray-30"></span>
-            <span class="utility-class">.bg-gray-30</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-gray-30"></span>
-            #adadad
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-gray-50"></span>
-            <span class="utility-class">.bg-gray-50</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-gray-50"></span>
-            #757575
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-gray-70"></span>
-            <span class="utility-class">.bg-gray-70</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-gray-70"></span>
-            #454545
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-gray-90"></span>
-            <span class="utility-class">.bg-gray-90</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-gray-90"></span>
-            #171717
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-black"></span>
-            <span class="utility-class">.bg-black</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-black"></span>
-            #000000
-          </span>
-        </p>
+        {% for color in grayscale_colors %}
+          <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+            <span class="flex-fill">
+              <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
+              <span class="utility-class">.bg-{{ color.token }}</span>
+            </span>
+            <span class="flex-auto utility-value-color">
+              <span class="utility-value-color-chip bg-{{ color.token }}"></span>
+              {{ color.value }}
+            </span>
+          </p>
+        {% endfor %}
       </div>
     </section>
+
     <section class="utility-examples">
       <h3 class="font-sans-4 margin-top-4 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Basic palette <a class="utility-examples-helper" href="#0">Read more about the USWDS basic palette</a></h3>
-
       <div class="grid-row">
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-red"></span>
-            <span class="utility-class">.bg-red</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-red"></span>
-            #E6251B
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-orange"></span>
-            <span class="utility-class">.bg-orange</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-orange"></span>
-            #FD7B28
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-gold"></span>
-            <span class="utility-class">.bg-gold</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-gold"></span>
-            #F8AE29
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-yellow"></span>
-            <span class="utility-class">.bg-yellow</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-yellow"></span>
-            #FCD344
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-green"></span>
-            <span class="utility-class">.bg-green</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-green"></span>
-            #548114
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-mint"></span>
-            <span class="utility-class">.bg-mint</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-mint"></span>
-            #20C688
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-cyan"></span>
-            <span class="utility-class">.bg-cyan</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-cyan"></span>
-            #1BABCF
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-blue"></span>
-            <span class="utility-class">.bg-blue</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-blue"></span>
-            #137CDB
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-indigo"></span>
-            <span class="utility-class">.bg-indigo</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-indigo"></span>
-            #6970C7
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-violet"></span>
-            <span class="utility-class">.bg-violet</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-violet"></span>
-            #836BB3
-          </span>
-        </p>
-        <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-          <span class="flex-fill">
-            <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-magenta"></span>
-            <span class="utility-class">.bg-magenta</span>
-          </span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-magenta"></span>
-            #DF2D7A
-          </span>
-        </p>
+        {% for color in basic_colors %}
+          <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+            <span class="flex-fill">
+              <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
+              <span class="utility-class">.bg-{{ color.token }}</span>
+            </span>
+            <span class="flex-auto utility-value-color">
+              <span class="utility-value-color-chip bg-{{ color.token }}"></span>
+              {{ color.value }}
+            </span>
+          </p>
+        {% endfor %}
       </div>
     </section>
   </section>

@@ -7,7 +7,7 @@ category: Utilities
 lead: Control the position and display characteristics of an item
 subnav:
 - text: Display
-  href: '#display-utilities'
+  href: '#utility-display'
 - text: Opacity
   href: '#opacity'
 - text: Overflow
@@ -16,6 +16,7 @@ subnav:
   href: '#position'
 - text: Z-index
   href: '#z-index'
+
 ---
 
 <div class="utilities-properties">
@@ -39,7 +40,7 @@ subnav:
     <p class="grid-col-fill utilities-section-helper">Utilities, values, and variants may be activated and deactivated in <a href="#0" class="text-ink text-no-wrap">advanced settings</a>.</p>
   </div>
 
-  <section class="utility" id="display">
+  <section class="utility" id="utility-display">
     <section class="utility-title-bar">
       <div class="grid-row">
         <div class="grid-col-fill">
@@ -320,24 +321,116 @@ subnav:
     <section class="utility-examples">
       <h3 class="utility-examples-title">Position</h3>
       <div class="grid-row grid-gap">
+
+        <div class="grid-col-12">
+          <div class="utility-example-container-condensed">
+            <p class="margin-0 font-sans-2xs"><span class="utility-class">.position-absolute</span></p>
+          </div>
+        </div>
+        <div class="grid-col-12">
+          <div class="utility-example-container-condensed">
+            <p class="margin-0 font-sans-2xs"><span class="utility-class">.position-fixed</span></p>
+          </div>
+        </div>
+        <div class="grid-col-12">
+          <div class="utility-example-container-condensed">
+            <p class="margin-0 font-sans-2xs"><span class="utility-class">.position-relative</span></p>
+          </div>
+        </div>
+        <div class="grid-col-12">
+          <div class="utility-example-container-condensed">
+            <p class="margin-0 font-sans-2xs"><span class="utility-class">.position-static</span></p>
+          </div>
+        </div>
+        <div class="grid-col-12">
+          <div class="utility-example-container-condensed">
+            <p class="margin-0 font-sans-2xs"><span class="utility-class">.position-sticky</span></p>
+          </div>
+        </div>
+
         <div class="grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 margin-bottom-2">
-            <div class="position-static height-card border-1px border-secondary-light padding-2 text-ink"><p class="margin-0 font-sans-2xs text-ink"><span class="utility-class text-ink">.position-static</span> parent</p>
+            <div class="position-static height-card border-1px border-secondary-light padding-2 text-ink"><p class="margin-0 font-sans-2xs text-ink"> parent: <span class="utility-class text-ink">.position-static</span></p>
               <div class="position-absolute bottom-0 left-0 bg-secondary-light padding-2 text-ink is-inverse">
-                <p class="margin-0 font-sans-2xs"><span class="utility-class">.position-absolute</span></p>
+                <p class="margin-0 font-sans-2xs"> child: <span class="utility-class">.position-absolute</span></p>
               </div>
             </div>
           </div>
         </div>
         <div class="grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 margin-bottom-2">
-            <div class="position-relative height-card border-1px border-secondary-light padding-2 text-ink"><p class="margin-0 font-sans-2xs text-ink"><span class="utility-class text-ink">.position-relative</span> parent</p>
+            <div class="position-relative height-card border-1px border-secondary-light padding-2 text-ink"><p class="margin-0 font-sans-2xs text-ink">parent: <span class="utility-class text-ink">.position-relative</span></p>
               <div class="position-absolute bottom-0 left-0 bg-secondary-light padding-2 text-ink is-inverse">
-                <p class="margin-0 font-sans-2xs"><span class="utility-class">.position-absolute</span> child</p>
+                <p class="margin-0 font-sans-2xs">child: <span class="utility-class">.position-absolute</span></p>
               </div>
             </div>
           </div>
         </div>
+      </div>
+
+      <h3 class="utility-examples-title">Relative positioning</h3>
+      {% assign spacing_tokens = site.data.uswds_tokens.spacing %}
+      {% assign neg_reversed = spacing_tokens.negative.smaller
+        | concat: spacing_tokens.negative.small
+        | reverse %}
+      {% assign rp_spacing =
+        site.data.uswds_tokens.special.auto_auto
+        | concat: neg_reversed
+        | concat: site.data.uswds_tokens.special.zero_zero
+        | concat: spacing_tokens.positive.smaller
+        | concat: spacing_tokens.positive.small %}
+      <div class="grid-row grid-gap">
+        <div class="grid-col-3">
+          {% for item in rp_spacing %}
+            <p class="utility-example-container-condensed font-sans-2xs"><span class="utility-class">.bottom-{{ item.token }}</span><span class="utility-value margin-left-05">{{ item.value }}</span></p>
+          {% endfor %}
+        </div>
+        <div class="grid-col-3">
+          {% for item in rp_spacing %}
+            <p class="utility-example-container-condensed font-sans-2xs"><span class="utility-class">.bottom-{{ item.token }}</span><span class="utility-value margin-left-05">{{ item.value }}</span></p>
+          {% endfor %}
+        </div>
+        <div class="grid-col-3">
+          {% for item in rp_spacing %}
+            <p class="utility-example-container-condensed font-sans-2xs"><span class="utility-class">.bottom-{{ item.token }}</span><span class="utility-value margin-left-05">{{ item.value }}</span></p>
+          {% endfor %}
+        </div>
+        <div class="grid-col-3">
+          {% for item in rp_spacing %}
+            <p class="utility-example-container-condensed font-sans-2xs"><span class="utility-class">.bottom-{{ item.token }}</span><span class="utility-value margin-left-05">{{ item.value }}</span></p>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="grid-row grid-gap">
+        <div class="grid-col-3">
+          <div class="position-relative border-1px border-secondary-light maxw-square-lg add-aspect-1x1 margin-bottom-2">
+            <div class="bg-secondary-light padding-2 text-ink is-inverse position-absolute top-0">
+              <div class="margin-0 font-sans-2xs"><span class="utility-class">.top-0.left-0</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-col-3">
+          <div class="position-relative border-1px border-secondary-light maxw-square-lg add-aspect-1x1 margin-bottom-2">
+            <div class="bg-secondary-light padding-2 text-ink is-inverse position-absolute top-0 right-0">
+              <div class="margin-0 font-sans-2xs"><span class="utility-class">.top-0.right-0</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-col-3">
+          <div class="position-relative border-1px border-secondary-light maxw-square-lg add-aspect-1x1 margin-bottom-2">
+            <div class="bg-secondary-light padding-2 text-ink is-inverse position-absolute bottom-0 right-0">
+              <div class="margin-0 font-sans-2xs"><span class="utility-class">.bottom-0.right-0</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-col-3">
+          <div class="position-relative border-1px border-secondary-light maxw-square-lg add-aspect-1x1 margin-bottom-2">
+            <div class="bg-secondary-light padding-2 text-ink is-inverse position-absolute bottom-0 left-0">
+              <div class="margin-0 font-sans-2xs"><span class="utility-class">.bottom-0.left-0</span></div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <h3 class="utility-examples-title">Pinning</h3>
@@ -391,10 +484,10 @@ subnav:
 
   </section>
 
-  <section class="utility">
+  <section class="utility" id="z-index">
     <section class="utility-title-bar">
       <div class="grid-row">
-        <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105" id="z-index">Z-index</h3>
+        <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105">Z-index</h3>
         <ul class="grid-col-auto utility-scope">
           <li class="utility-scope-button-disabled">responsive</li>
           <li class="utility-scope-button-disabled">active</li>

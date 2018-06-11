@@ -172,23 +172,34 @@ colors:
   basic:
     - token: red
       value: '#e6251b'
+      var: red-50v
     - token: orange
       value: '#fd7b28'
+      var: orange-40v
     - token: gold
       value: '#f8ae29'
+      var: gold-30v
     - token: yellow
       value: '#fcd344'
+      var: yellow-20v
     - token: green
       value: '#548114'
+      var: green-40v
     - token: mint
       value: '#20c688'
+      var: mint-40v
     - token: cyan
       value: '#1babcf'
+      var: cyan-30v
     - token: blue
       value: '#137cdb'
+      var: blue-50
     - token: indigo
       value: '#6970c7'
+      var: indigo-40
     - token: violet
       value: '#836bb3'
+      var: violet-40v
     - token: magenta
       value: '#df2d7a'
+      var: magenta-50

@@ -72,7 +72,7 @@ subnav:
       %}
       <div class="grid-row grid gap">
         {% for item in height_values %}
-          <div class="grid-col-{% if forloop.last %}fill{% else %}2{% endif %} utility-example-container-condensed display-flex flex-column flex-justify-end">
+          <div class="grid-col-{% if forloop.last %}fill{% else %}2{% endif %} utility-example-container display-flex flex-column flex-justify-end">
               <div class="width-4 bg-secondary-light height-{{ item.token }}"></div>
               <div class="display-flex flex-column flex-align-start padding-top-2">
                 <span class="utility-class">.height-{{ item.token }}</span>
@@ -334,7 +334,7 @@ subnav:
         %}
         {% for item in circle_values %}
           {% if forloop.index > 1 %}
-            <div class="utility-example-container-condensed display-flex flex-column flex-justify{% if forloop.index > 13 and forloop.last == false %} grid-col-6{% elsif forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
+            <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.index > 13 and forloop.last == false %} grid-col-6{% elsif forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
               <div class="circle-{{ item.token }} bg-secondary-light"></div>
               <div class="display-flex flex-column flex-align-start margin-top-2">
                 <span class="utility-class">.circle-{{ item.token }}</span>
@@ -371,7 +371,7 @@ subnav:
         %}
         {% for item in square_values %}
           {% if forloop.index > 1 %}
-            <div class="utility-example-container-condensed display-flex flex-column flex-justify{% if forloop.index > 13 and forloop.last == false %} grid-col-6{% elsif forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
+            <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.index > 13 and forloop.last == false %} grid-col-6{% elsif forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
               <div class="square-{{ item.token }} bg-secondary-light"></div>
               <div class="display-flex flex-column flex-align-start margin-top-2">
                 <span class="utility-class">.square-{{ item.token }}</span>

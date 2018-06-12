@@ -4,7 +4,7 @@ layout: styleguide
 type: utility
 title: Height and width
 category: Utilities
-lead: Set the height and width of an item.
+lead: Set the dimensions of an item.
 subnav:
 - text: Height
   href: '#height'
@@ -347,7 +347,7 @@ subnav:
     </section><!-- .utility-examples -->
   </section><!-- .utility#circle -->
 
-  <section class="utility" id="circle">
+  <section class="utility" id="square">
     <section class="utility-title-bar">
       <div class="grid-row">
         <div class="grid-col-fill">

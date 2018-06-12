@@ -55,6 +55,10 @@ spacing:
       - token: 9
         value: 72px
     large:
+      - token: 10
+        value: 80px
+      - token: 15
+        value: 120px
       - token: card
         value: 160px
       - token: card-lg

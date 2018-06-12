@@ -16,9 +16,9 @@ subnav:
   href: '#text-indent'
 ---
 
-<div class="size-sans-4 weight-300">
+<div class="font-sans-4 weight-300">
 
-  <h3 class="grid-col size-sans-micro text-normal text-medium text-uppercase text-ls-1 margin-y-0 margin-left-2px">CSS properties</h3>
+  <h3 class="grid-col font-sans-micro text-normal text-medium text-uppercase text-ls-1 margin-y-0 margin-left-2px">CSS properties</h3>
   <div class="margin-top-1">
     <span class="token display-inline-block text-no-uppercase text-ls-auto padding-05 margin-top-05">line-height</span>
     <span class="token display-inline-block text-no-uppercase text-ls-auto padding-05 margin-top-05">max-width</span>
@@ -29,15 +29,15 @@ subnav:
   <section class="border-top-1px padding-top-1 margin-top-4">
 
     <div class="grid-row flex-align-center margin-bottom-2">
-      <h2 class="grid-col-auto margin-0 text-light size-sans-8">Examples and usage</h2>
-      <p class="grid-col-fill text-right size-sans-1 text-normal margin-y-0 margin-left-2px text-gray-60">Utilities, values, and variants may be activated and deactivated in <a href="#0" class="text-text text-no-wrap">advanced settings</a>.</p>
+      <h2 class="grid-col-auto margin-0 text-light font-sans-8">Examples and usage</h2>
+      <p class="grid-col-fill text-right font-sans-1 text-normal margin-y-0 margin-left-2px text-gray-60">Utilities, values, and variants may be activated and deactivated in <a href="#0" class="text-text text-no-wrap">advanced settings</a>.</p>
     </div>
 
     <section class="line-height" id="line-height">
       <section class="bg-white radius-md margin-y-2 padding-y-3 border-1px border-gray-10">
         <section class="margin-bottom-2 padding-x-3 padding-bottom-105 border-bottom-1px border-gray-10">
           <div class="grid-row">
-            <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105">Line height</h3>
+            <h3 class="grid-col-auto font-sans-6 margin-top-0 margin-bottom-105">Line height</h3>
 
             <ul class="grid-col-fill add-list-reset text-right display-inline">
               <li class="display-inline"><a href="#0" class="display-inline-block padding-y-05 padding-x-105 bg-blue-50v text-no-underline hover:bg-gray-80 text-white radius-md margin-right-05 is-inverse">responsive</a></li>
@@ -51,150 +51,150 @@ subnav:
 
         <section class="padding-x-3">
           <div class="grid-row grid-gap margin-top-4">
-            <div class="grid-col-4 margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1 text-bold size-sans-2xs text-secondary-vivid">sans</div>
-            <div class="grid-col-4 margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1 text-bold size-sans-2xs text-secondary-vivid">serif</div>
-            <div class="grid-col-4 margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1 text-bold size-sans-2xs text-secondary-vivid">mono</div>
+            <div class="grid-col-4 margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1 text-bold font-sans-2xs text-secondary-vivid">sans</div>
+            <div class="grid-col-4 margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1 text-bold font-sans-2xs text-secondary-vivid">serif</div>
+            <div class="grid-col-4 margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1 text-bold font-sans-2xs text-secondary-vivid">mono</div>
           </div>
           <div class="grid-row grid-gap-lg">
             <div class="grid-col-4 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-sans-md line-height-sans-1 margin-top-0 text-bold">The Celebrated Jumping Frog of Calaveras County</p>
+              <p class="font-sans-md line-height-sans-1 margin-top-0 text-bold">The Celebrated Jumping Frog of Calaveras County</p>
               <div>
                 <p class="margin-top-2px margin-top-05 margin-bottom-0">.line-height-sans-1</p>
-                <p class="margin-top-0 margin-bottom-05"><span class="size-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1</span></p>
+                <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1</span></p>
               </div>
             </div>
             <div class="grid-col-4 grid-gap display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-md line-height-serif-1 margin-top-0 text-bold">The Celebrated Jumping Frog of Calaveras County</p>
+              <p class="font-serif-md line-height-serif-1 margin-top-0 text-bold">The Celebrated Jumping Frog of Calaveras County</p>
               <div>
                 <p class="margin-top-2px margin-top-05 margin-bottom-0">.line-height-serif-1</p>
-                <p class="margin-top-0 margin-bottom-05"><span class="size-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1</span></p>
+                <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1</span></p>
               </div>
             </div>
             <div class="grid-col-4 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-mono-md line-height-mono-1 margin-top-0 text-bold">The Celebrated Jumping Frog of Calaveras County</p>
+              <p class="font-mono-md line-height-mono-1 margin-top-0 text-bold">The Celebrated Jumping Frog of Calaveras County</p>
               <div>
                 <p class="margin-top-2px margin-top-05 margin-bottom-0">.line-height-mono-1</p>
-                <p class="margin-top-0 margin-bottom-05"><span class="size-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1</span></p>
+                <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1</span></p>
               </div>
             </div>
           </div>
 
           <div class="grid-row grid-gap-lg">
             <div class="grid-col-4 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-sans-sm line-height-sans-2 margin-top-0 text-bold">The Celebrated Jumping Frog of Calaveras County</p>
+              <p class="font-sans-sm line-height-sans-2 margin-top-0 text-bold">The Celebrated Jumping Frog of Calaveras County</p>
               <div>
                 <p class="margin-top-2px margin-top-05 margin-bottom-0">.line-height-sans-2</p>
-                <p class="margin-top-0 margin-bottom-05"><span class="size-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.15</span></p>
+                <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.15</span></p>
               </div>
             </div>
             <div class="grid-col-4 grid-gap display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-2 margin-top-0 text-bold">The Celebrated Jumping Frog of Calaveras County</p>
+              <p class="font-serif-sm line-height-serif-2 margin-top-0 text-bold">The Celebrated Jumping Frog of Calaveras County</p>
               <div>
                 <p class="margin-top-2px margin-top-05 margin-bottom-0">.line-height-serif-2</p>
-                <p class="margin-top-0 margin-bottom-05"><span class="size-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.15</span></p>
+                <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.15</span></p>
               </div>
             </div>
             <div class="grid-col-4 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-mono-sm line-height-mono-2 margin-top-0 text-bold">The Celebrated Jumping Frog of Calaveras County</p>
+              <p class="font-mono-sm line-height-mono-2 margin-top-0 text-bold">The Celebrated Jumping Frog of Calaveras County</p>
               <div>
                 <p class="margin-top-2px margin-top-05 margin-bottom-0">.line-height-mono-2</p>
-                <p class="margin-top-0 margin-bottom-05"><span class="size-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.15</span></p>
+                <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.15</span></p>
               </div>
             </div>
           </div>
 
           <div class="grid-row grid-gap-lg">
             <div class="grid-col-4 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-sans-2xs line-height-sans-3 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <p class="font-sans-2xs line-height-sans-3 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
               <div>
                 <p class="margin-top-2px margin-top-05 margin-bottom-0">.line-height-sans-3</p>
-                <p class="margin-top-0 margin-bottom-05"><span class="size-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.35</span></p>
+                <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.35</span></p>
               </div>
             </div>
             <div class="grid-col-4 grid-gap display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-2xs line-height-serif-3 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <p class="font-serif-2xs line-height-serif-3 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
               <div>
                 <p class="margin-top-2px margin-top-05 margin-bottom-0">.line-height-serif-3</p>
-                <p class="margin-top-0 margin-bottom-05"><span class="size-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.35</span></p>
+                <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.35</span></p>
               </div>
             </div>
             <div class="grid-col-4 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-mono-2xs line-height-mono-3 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <p class="font-mono-2xs line-height-mono-3 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
               <div>
                 <p class="margin-top-2px margin-top-05 margin-bottom-0">.line-height-mono-3</p>
-                <p class="margin-top-0 margin-bottom-05"><span class="size-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.35</span></p>
+                <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.35</span></p>
               </div>
             </div>
           </div>
 
           <div class="grid-row grid-gap-lg">
             <div class="grid-col-4 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-sans-2xs line-height-sans-4 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <p class="font-sans-2xs line-height-sans-4 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
               <div>
                 <p class="margin-top-2px margin-top-05 margin-bottom-0">.line-height-sans-4</p>
-                <p class="margin-top-0 margin-bottom-05"><span class="size-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.5</span></p>
+                <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.5</span></p>
               </div>
             </div>
             <div class="grid-col-4 grid-gap display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-2xs line-height-serif-4 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <p class="font-serif-2xs line-height-serif-4 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
               <div>
                 <p class="margin-top-2px margin-top-05 margin-bottom-0">.line-height-serif-4</p>
-                <p class="margin-top-0 margin-bottom-05"><span class="size-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.5</span></p>
+                <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.5</span></p>
               </div>
             </div>
             <div class="grid-col-4 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-mono-2xs line-height-mono-4 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <p class="font-mono-2xs line-height-mono-4 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
               <div>
                 <p class="margin-top-2px margin-top-05 margin-bottom-0">.line-height-mono-4</p>
-                <p class="margin-top-0 margin-bottom-05"><span class="size-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.5</span></p>
+                <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.5</span></p>
               </div>
             </div>
           </div>
 
           <div class="grid-row grid-gap-lg">
             <div class="grid-col-4 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-sans-2xs line-height-sans-5 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <p class="font-sans-2xs line-height-sans-5 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
               <div>
                 <p class="margin-top-2px margin-top-05 margin-bottom-0">.line-height-sans-5</p>
-                <p class="margin-top-0 margin-bottom-05"><span class="size-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.63</span></p>
+                <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.63</span></p>
               </div>
             </div>
             <div class="grid-col-4 grid-gap display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-2xs line-height-serif-5 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <p class="font-serif-2xs line-height-serif-5 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
               <div>
                 <p class="margin-top-2px margin-top-05 margin-bottom-0">.line-height-serif-5</p>
-                <p class="margin-top-0 margin-bottom-05"><span class="size-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.63</span></p>
+                <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.63</span></p>
               </div>
             </div>
             <div class="grid-col-4 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-mono-2xs line-height-mono-5 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <p class="font-mono-2xs line-height-mono-5 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
               <div>
                 <p class="margin-top-2px margin-top-05 margin-bottom-0">.line-height-mono-5</p>
-                <p class="margin-top-0 margin-bottom-05"><span class="size-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.63</span></p>
+                <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.63</span></p>
               </div>
             </div>
           </div>
 
           <div class="grid-row grid-gap-lg">
             <div class="grid-col-4 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-sans-2xs line-height-sans-6 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <p class="font-sans-2xs line-height-sans-6 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
               <div>
                 <p class="margin-top-2px margin-top-05 margin-bottom-0">.line-height-sans-6</p>
-                <p class="margin-top-0 margin-bottom-05"><span class="size-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.75</span></p>
+                <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.75</span></p>
               </div>
             </div>
             <div class="grid-col-4 grid-gap display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-2xs line-height-serif-6 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <p class="font-serif-2xs line-height-serif-6 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
               <div>
                 <p class="margin-top-2px margin-top-05 margin-bottom-0">.line-height-serif-6</p>
-                <p class="margin-top-0 margin-bottom-05"><span class="size-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.75</span></p>
+                <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.75</span></p>
               </div>
             </div>
             <div class="grid-col-4 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-mono-2xs line-height-mono-6 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <p class="font-mono-2xs line-height-mono-6 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
               <div>
                 <p class="margin-top-2px margin-top-05 margin-bottom-0">.line-height-mono-6</p>
-                <p class="margin-top-0 margin-bottom-05"><span class="size-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.75</span></p>
+                <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs bg-base-lighter padding-y-2px padding-x-05 radius-sm">~1.75</span></p>
               </div>
             </div>
           </div>
@@ -206,7 +206,7 @@ subnav:
       <section class="bg-white radius-md margin-y-2 padding-y-3 border-1px border-gray-10">
         <section class="margin-x-3 margin-bottom-2 padding-bottom-105 border-bottom-1px border-gray-10">
           <div class="grid-row">
-            <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105">Measure (max-width)</h3>
+            <h3 class="grid-col-auto font-sans-6 margin-top-0 margin-bottom-105">Measure (max-width)</h3>
 
             <ul class="grid-col-fill add-list-reset text-right display-inline">
               <li class="display-inline"><a href="#0" class="display-inline-block padding-y-05 padding-x-105 bg-blue-50v text-no-underline hover:bg-gray-80 text-white radius-md margin-right-05 is-inverse">responsive</a></li>
@@ -221,8 +221,8 @@ subnav:
         <section class="padding-x-3">
           <div class="grid-row grid-gap-lg">
             <div class="grid-col-12 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-md line-height-serif-4 margin-top-0 measure-1 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-              <p class="margin-top-0 margin-bottom-05"><span class="size-mono-2xs text-gray-50">40ch</span></p>
+              <p class="font-serif-md line-height-serif-4 margin-top-0 measure-1 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs text-gray-50">40ch</span></p>
               <div>
                 <p class="margin-0">.measure-1</p>
               </div>
@@ -231,8 +231,8 @@ subnav:
 
           <div class="grid-row grid-gap-lg">
             <div class="grid-col-12 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-md line-height-serif-4 margin-top-0 measure-2 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-              <p class="margin-top-0 margin-bottom-05"><span class="size-mono-2xs text-gray-50">60ch</span></p>
+              <p class="font-serif-md line-height-serif-4 margin-top-0 measure-2 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs text-gray-50">60ch</span></p>
               <div>
                 <p class="margin-0">.measure-2</p>
               </div>
@@ -241,8 +241,8 @@ subnav:
 
           <div class="grid-row grid-gap-lg">
             <div class="grid-col-12 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-md line-height-serif-4 margin-top-0 measure-3 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-              <p class="margin-top-0 margin-bottom-05"><span class="size-mono-2xs text-gray-50">66ch</span></p>
+              <p class="font-serif-md line-height-serif-4 margin-top-0 measure-3 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs text-gray-50">66ch</span></p>
               <div>
                 <p class="margin-0">.measure-3</p>
               </div>
@@ -251,8 +251,8 @@ subnav:
 
           <div class="grid-row grid-gap-lg">
             <div class="grid-col-12 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-md line-height-serif-4 margin-top-0 measure-4 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-              <p class="margin-top-0 margin-bottom-05"><span class="size-mono-2xs text-gray-50">72ch</span></p>
+              <p class="font-serif-md line-height-serif-4 margin-top-0 measure-4 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs text-gray-50">72ch</span></p>
               <div>
                 <p class="margin-0">.measure-4</p>
               </div>
@@ -261,8 +261,8 @@ subnav:
 
           <div class="grid-row grid-gap-lg">
             <div class="grid-col-12 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-md line-height-serif-4 margin-top-0 measure-5 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-              <p class="margin-top-0 margin-bottom-05"><span class="size-mono-2xs text-gray-50">77ch</span></p>
+              <p class="font-serif-md line-height-serif-4 margin-top-0 measure-5 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs text-gray-50">77ch</span></p>
               <div>
                 <p class="margin-0">.measure-5</p>
               </div>
@@ -271,8 +271,8 @@ subnav:
 
           <div class="grid-row grid-gap-lg">
             <div class="grid-col-12 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-md line-height-serif-4 margin-top-0 measure-none border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-              <p class="margin-top-0 margin-bottom-05"><span class="size-mono-2xs text-gray-50">No maximum width</span></p>
+              <p class="font-serif-md line-height-serif-4 margin-top-0 measure-none border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <p class="margin-top-0 margin-bottom-05"><span class="font-mono-2xs text-gray-50">No maximum width</span></p>
               <div>
                 <p class="margin-0">.measure-none</p>
               </div>
@@ -286,7 +286,7 @@ subnav:
       <section class="bg-white radius-md margin-y-2 padding-y-3 border-1px border-gray-10">
         <section class="margin-x-3 margin-bottom-2 padding-bottom-105 border-bottom-1px border-gray-10">
           <div class="grid-row">
-            <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105">Text alignment</h3>
+            <h3 class="grid-col-auto font-sans-6 margin-top-0 margin-bottom-105">Text alignment</h3>
 
             <ul class="grid-col-fill add-list-reset text-right display-inline">
               <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">responsive</li>
@@ -301,17 +301,17 @@ subnav:
         <section class="margin-x-3">
           <div class="grid-row grid-gap-lg">
             <div class="grid-col-3 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-2xs line-height-serif-4 margin-top-0 text-left">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-2xs text-red">.text-left</span></p>
+              <p class="font-serif-2xs line-height-serif-4 margin-top-0 text-left">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-2xs text-red">.text-left</span></p>
             </div>
             <div class="grid-col-3 grid-gap display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-2xs line-height-serif-4 margin-top-0 text-center">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-2xs text-red">.text-center</span></p>
+              <p class="font-serif-2xs line-height-serif-4 margin-top-0 text-center">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-2xs text-red">.text-center</span></p>
             </div>
             <div class="grid-col-3 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-2xs line-height-serif-4 margin-top-0 text-right">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-2xs text-red">.text-right</span></p>
+              <p class="font-serif-2xs line-height-serif-4 margin-top-0 text-right">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-2xs text-red">.text-right</span></p>
             </div>
 
             <div class="grid-col-3 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-2xs line-height-serif-4 margin-top-0 text-justify">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-2xs text-red">.text-justify</span></p>
+              <p class="font-serif-2xs line-height-serif-4 margin-top-0 text-justify">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-2xs text-red">.text-justify</span></p>
             </div>
           </div>
         </section>
@@ -322,7 +322,7 @@ subnav:
       <section class="bg-white radius-md margin-y-2 padding-y-3 border-1px border-gray-10">
         <section class="margin-x-3 margin-bottom-2 padding-bottom-105 border-bottom-1px border-gray-10">
           <div class="grid-row">
-            <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105">Text indent</h3>
+            <h3 class="grid-col-auto font-sans-6 margin-top-0 margin-bottom-105">Text indent</h3>
 
             <ul class="grid-col-fill add-list-reset text-right display-inline">
               <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">responsive</li>
@@ -337,79 +337,79 @@ subnav:
         <section class="padding-x-3">
           <div class="grid-row grid-gap-lg">
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-9">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-9</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-9">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-9</span></span></p>
             </div>
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-8">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-8</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-8">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-8</span></span></p>
             </div>
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-7">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-7</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-7">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-7</span></span></p>
             </div>
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-6">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-6</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-6">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-6</span></span></p>
             </div>
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-5">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-5</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-5">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-5</span></span></p>
             </div>
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-4">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-4</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-4">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-4</span></span></p>
             </div>
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-3">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-3</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-3">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-3</span></span></p>
             </div>
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-205">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-205</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-205">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-205</span></span></p>
             </div>
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-2</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-2</span></span></p>
             </div>
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-105">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-105</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-105">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-105</span></span></p>
             </div>
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-1">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-1</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-1">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-1</span></span></p>
             </div>
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-05</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-neg-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-neg-05</span></span></p>
             </div>
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-0</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-0</span></span></p>
             </div>
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-05</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-05</span></span></p>
             </div>
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-1">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-1</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-1">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-1</span></span></p>
             </div>
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-105">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-105</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-105">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-105</span></span></p>
             </div>
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-2</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-2</span></span></p>
             </div>
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-205">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-205</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-205">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-205</span></span></p>
             </div>
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-3">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-3</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-3">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-3</span></span></p>
             </div>
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-4">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-4</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-4">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-4</span></span></p>
             </div>
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-5">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-5</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-5">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-5</span></span></p>
             </div>
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-6">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-6</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-6">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-6</span></span></p>
             </div>
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-7">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-7</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-7">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-7</span></span></p>
             </div>
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-8">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-8</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-8">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-8</span></span></p>
             </div>
             <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1">
-              <p class="size-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-9">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="size-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-9</span></span></p>
+              <p class="font-serif-sm line-height-serif-4 margin-y-0 text-left measure-4 padding-left-9 text-indent-9">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1">.text-indent-9</span></span></p>
             </div>
           </div>
         </section>
@@ -419,16 +419,16 @@ subnav:
   </section>
 
   <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light size-sans-8">Responsive variants</h2>
+    <h2 class="margin-0 text-light font-sans-8">Responsive variants</h2>
   </section>
 
   <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light size-sans-8"><span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">hover</span>, <span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">active</span>, <span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">focus</span>, and <span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">visited</span> variants</h2>
+    <h2 class="margin-0 text-light font-sans-8"><span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">hover</span>, <span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">active</span>, <span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">focus</span>, and <span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">visited</span> variants</h2>
   </section>
 
   <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light size-sans-8">Default output</h2>
-    <div class="grid-row size-sans-1 text-bold border-bottom-1px padding-bottom-05 margin-top-2 border-gray-20">
+    <h2 class="margin-0 text-light font-sans-8">Default output</h2>
+    <div class="grid-row font-sans-1 text-bold border-bottom-1px padding-bottom-05 margin-top-2 border-gray-20">
       <div class="grid-col-4">Utility</div>
       <div class="grid-col-6">Output SCSS</div>
       <div class="grid-col-2">Default variable value</div>
@@ -755,7 +755,7 @@ subnav:
     </dl>
   </section>
   <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light size-sans-8">Advanced settings</h2>
+    <h2 class="margin-0 text-light font-sans-8">Advanced settings</h2>
   </section>
 
 </div>

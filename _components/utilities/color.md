@@ -12,9 +12,9 @@ subnav:
   href: '#background-color'
 ---
 
-<div class="size-sans-4 weight-300">
+<div class="font-sans-4 weight-300">
 
-  <h3 class="grid-col size-sans-micro text-normal text-medium text-uppercase text-ls-1 margin-y-0 margin-left-2px">CSS properties</h3>
+  <h3 class="grid-col font-sans-micro text-normal text-medium text-uppercase text-ls-1 margin-y-0 margin-left-2px">CSS properties</h3>
   <div class="margin-top-1">
     <span class="token display-inline-block text-no-uppercase text-ls-auto padding-05 margin-top-05">color</span>
     <span class="token display-inline-block text-no-uppercase text-ls-auto padding-05 margin-top-05">background-color</span>
@@ -23,8 +23,8 @@ subnav:
   <h2 class="usa-heading" id="text-color">Text color</h2>
   <section class="padding-bottom-1">
     <div class="grid-row flex-align-center margin-bottom-2">
-      <h3 class="grid-col size-sans-micro text-normal text-medium text-uppercase text-ls-1 margin-y-0 margin-left-2px">Default variants</h3>
-      <p class="grid-col text-right size-sans-1 text-normal margin-y-0 margin-left-2px text-gray-60">Variants may be activated and deactivated in <a href="#0" class="text-text">advanced settings</a>.</p>
+      <h3 class="grid-col font-sans-micro text-normal text-medium text-uppercase text-ls-1 margin-y-0 margin-left-2px">Default variants</h3>
+      <p class="grid-col text-right font-sans-1 text-normal margin-y-0 margin-left-2px text-gray-60">Variants may be activated and deactivated in <a href="#0" class="text-text">advanced settings</a>.</p>
     </div>
     <ul class="add-list-reset display-inline">
       <li class="display-inline"><a href="#0" class="display-inline-block padding-y-05 padding-x-105 bg-blue-50v text-no-underline hover:bg-gray-80 text-white radius-pill margin-right-1 is-inverse">Includes <strong>responsive variants</strong></a></li>
@@ -34,10 +34,10 @@ subnav:
     </ul>
   </section>
   <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light size-sans-8">Utility examples and usage</h2>
+    <h2 class="margin-0 text-light font-sans-8">Utility examples and usage</h2>
     <section class="text-color">
       <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
-        <h3 class="size-sans-6 margin-top-0">Project theme colors <a class="text-normal text-text size-sans-2 margin-left-1" href="#0">Read more about project theme colors</a></h3>
+        <h3 class="font-sans-6 margin-top-0">Project theme colors <a class="text-normal text-text font-sans-2 margin-left-1" href="#0">Read more about project theme colors</a></h3>
         <p class="example text-base-lightest"><span class="bg-gray-90 radius-md padding-05 is-inverse">.text-base-lightest</span></p>
         <p class="example text-base-lighter"><span class="bg-gray-90 radius-md padding-05 is-inverse">.text-base-lighter</span></p>
         <p class="example text-base-light"><span class="bg-gray-90 radius-md padding-05 is-inverse">.text-base-light</span></p>
@@ -61,7 +61,7 @@ subnav:
         <p class="example text-accent-cool-dark">.text-accent-cool-dark</p>
       </section>
       <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
-        <h3 class="size-sans-6 margin-top-0">Grayscale palette</h3>
+        <h3 class="font-sans-6 margin-top-0">Grayscale palette</h3>
         <p class="example text-white"><span class="bg-gray-90 radius-md padding-05 is-inverse">.text-white</span></p>
         <p class="example text-gray-5"><span class="bg-gray-90 radius-md padding-05 is-inverse">.text-gray-5</span></p>
         <p class="example text-gray-10"><span class="bg-gray-90 radius-md padding-05 is-inverse">.text-gray-10</span></p>
@@ -72,7 +72,7 @@ subnav:
         <p class="example text-black">.text-black</p>
       </section>
       <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
-        <h3 class="size-sans-6 margin-top-0">Basic palette</h3>
+        <h3 class="font-sans-6 margin-top-0">Basic palette</h3>
         <p class="example text-red">.text-red</p>
         <p class="example text-orange">.text-orange</p>
         <p class="example text-gold">.text-gold</p>
@@ -88,14 +88,14 @@ subnav:
     </section>
   </section>
   <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light size-sans-8">Responsive variants</h2>
+    <h2 class="margin-0 text-light font-sans-8">Responsive variants</h2>
   </section>
   <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light size-sans-8"><span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">hover</span>, <span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">active</span>, <span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">focus</span>, and <span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">visited</span> variants</h2>
+    <h2 class="margin-0 text-light font-sans-8"><span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">hover</span>, <span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">active</span>, <span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">focus</span>, and <span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">visited</span> variants</h2>
   </section>
   <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light size-sans-8">Default output</h2>
-    <div class="grid-row size-sans-1 text-bold border-bottom-1px padding-bottom-05 margin-top-2 border-gray-20">
+    <h2 class="margin-0 text-light font-sans-8">Default output</h2>
+    <div class="grid-row font-sans-1 text-bold border-bottom-1px padding-bottom-05 margin-top-2 border-gray-20">
       <div class="grid-col-4">Utility</div>
       <div class="grid-col-6">Output SCSS</div>
       <div class="grid-col-2">Default variable value</div>
@@ -349,27 +349,27 @@ subnav:
     </dl>
   </section>
   <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light size-sans-8">Advanced settings</h2>
+    <h2 class="margin-0 text-light font-sans-8">Advanced settings</h2>
   </section>
 
 </div><!-- div -->
 
-<div class="size-sans-4 weight-300">
+<div class="font-sans-4 weight-300">
 
   <h2 class="usa-heading" id="background-color">Background color</h2>
 
   <section class="border-top-1px padding-top-1 margin-top-4">
 
     <div class="grid-row flex-align-center margin-bottom-2">
-      <h2 class="grid-col-auto margin-0 text-light size-sans-8">Examples and usage</h2>
-      <p class="grid-col-fill text-right size-sans-1 text-normal margin-y-0 margin-left-2px text-gray-60">Utilities, values, and variants may be activated and deactivated in <a href="#0" class="text-text text-no-wrap">advanced settings</a>.</p>
+      <h2 class="grid-col-auto margin-0 text-light font-sans-8">Examples and usage</h2>
+      <p class="grid-col-fill text-right font-sans-1 text-normal margin-y-0 margin-left-2px text-gray-60">Utilities, values, and variants may be activated and deactivated in <a href="#0" class="text-text text-no-wrap">advanced settings</a>.</p>
     </div>
 
     <section class="text-color">
       <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
         <section class="margin-x-neg-2 margin-bottom-2 padding-x-2 padding-bottom-105 border-bottom-1px border-gray-10">
           <div class="grid-row">
-            <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105">Background color</h3>
+            <h3 class="grid-col-auto font-sans-6 margin-top-0 margin-bottom-105">Background color</h3>
 
             <ul class="grid-col-fill text-right add-list-reset display-inline">
               <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">responsive</li>
@@ -550,16 +550,16 @@ subnav:
   </section>
 
   <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light size-sans-8">Responsive variants</h2>
+    <h2 class="margin-0 text-light font-sans-8">Responsive variants</h2>
   </section>
 
   <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light size-sans-8"><span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">hover</span>, <span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">active</span>, <span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">focus</span>, and <span class="size-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">visited</span> variants</h2>
+    <h2 class="margin-0 text-light font-sans-8"><span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">hover</span>, <span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">active</span>, <span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">focus</span>, and <span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">visited</span> variants</h2>
   </section>
 
   <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light size-sans-8">Default output</h2>
-    <div class="grid-row size-sans-1 text-bold border-bottom-1px padding-bottom-05 margin-top-2 border-gray-20">
+    <h2 class="margin-0 text-light font-sans-8">Default output</h2>
+    <div class="grid-row font-sans-1 text-bold border-bottom-1px padding-bottom-05 margin-top-2 border-gray-20">
       <div class="grid-col-4">Utility</div>
       <div class="grid-col-6">Output SCSS</div>
       <div class="grid-col-2">Default variable value</div>
@@ -813,7 +813,7 @@ subnav:
     </dl>
   </section>
   <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light size-sans-8">Advanced settings</h2>
+    <h2 class="margin-0 text-light font-sans-8">Advanced settings</h2>
   </section>
 
 </div><!-- div -->

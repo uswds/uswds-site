@@ -186,48 +186,101 @@ subnav:
 <h4>Static</h4>
 <div class="position-relative bg-base-light padding-2 measure-3">
   <div class="position-static height-card bg-base padding-2 text-black">
-    <p class="margin-0">Static parent</p>
+    Static parent
     <div class="position-absolute bottom-0 left-0 bg-base-darkest padding-2 text-base-light">
-      <p class="margin-0">Absolute child</p>
+      Absolute child
     </div>
+  </div>
+</div>
+<div class="usa-accordion-bordered usa-code-sample margin-top-4">
+  <button class="usa-accordion-button" aria-controls="code-static" aria-expanded="true">Code</button>
+  <div id="code-static" class="usa-accordion-content">
+<div markdown="1">
+```html
+<div class="position-static bg-base-dark">
+  Static parent
+  <div class="position-absolute bottom-0 left-0 bg-base-darkest">
+    Absolute child
+  </div>
+</div>
+```
+</div>
   </div>
 </div>
 
 <h4>Relative</h4>
 <div class="position-relative bg-base-light padding-2 measure-3">
   <div class="position-relative height-card bg-base padding-2 text-black">
-    <p class="margin-0">Static parent</p>
+    Static parent
     <div class="position-absolute bottom-0 left-0 bg-base-darkest padding-2 text-base-light">
-      <p class="margin-0">Absolute child</p>
+      Absolute child
     </div>
+  </div>
+</div>
+<div class="usa-accordion-bordered usa-code-sample margin-top-4">
+  <button class="usa-accordion-button" aria-controls="code-relative" aria-expanded="true">Code</button>
+  <div id="code-relative" class="usa-accordion-content">
+<div markdown="1">
+```html
+<div class="position-relative bg-base">
+  Relative parent
+  <div class="position-absolute bottom-0 left-0 bg-base-darkest">
+    Absolute child
+  </div>
+</div>
+```
+</div>
   </div>
 </div>
 
 <h4>Absolute</h4>
 <p class="text-base-dark margin-bottom-1">With static positioning</p>
 <div class="relative bg-base-light padding-x-2 padding-top-2 padding-bottom-2 margin-bottom-2 measure-5">
-  <p class="margin-bottom-2 margin-top-0 text-base-darker">Relative parent</p>
-  <div class="postition-static bg-base padding-2 text-base-darker">
-    <p class="margin-bottom-2 margin-top-0">Static parent</p>
-    <div class="static bottom-0 left-0 bg-base-darkest padding-2 text-base-light display-inline-block">
-      <p class="margin-y-0">Static child</p>
+  Relative parent
+  <div class="postition-static bg-base padding-2 text-base-darker margin-top-2 ">
+    Static parent
+    <br>
+    <div class="static bottom-0 left-0 bg-base-darkest padding-2 margin-top-2 text-base-light display-inline-block">
+      Static child
     </div>
     <div class="bg-base-light padding-2 text-base-darker display-inline-block">
-      <p class="margin-y-0">Static sibling</p>
+      Static sibling
     </div>
   </div>
 </div>
 <p class="text-base-dark margin-bottom-1">With absolute positioning</p>
 <div class="position-relative bg-base-light padding-x-2 padding-top-2 padding-bottom-2 measure-5">
-  <p class="margin-bottom-2 margin-top-0 text-base-darker">Relative parent</p>
-  <div class="position-static bg-base padding-2 text-base-darker">
-    <p class="margin-bottom-2 margin-top-0">Static parent</p>
+  Relative parent
+  <div class="position-static bg-base padding-2 margin-top-2">
+    Static parent
+    <br>
     <div class="position-absolute top-0 right-0 bg-base-darkest padding-2 text-base-light display-inline-block">
-      <p class="margin-y-0">Absolute child</p>
+      Absolute child
     </div>
-    <div class="bg-base-light padding-2 text-base-darker display-inline-block">
-      <p class="margin-y-0">Static sibling</p>
+    <div class="bg-base-light padding-2 display-inline-block margin-top-2">
+      Static sibling
     </div>
+  </div>
+</div>
+<div class="usa-accordion-bordered usa-code-sample margin-top-4">
+  <button class="usa-accordion-button" aria-controls="code-absolute" aria-expanded="true">Code</button>
+  <div id="code-absolute" class="usa-accordion-content">
+<div markdown="1">
+```html
+<div class="position-relative bg-base-light">
+  Relative parent
+  <div class="position-static bg-base">
+    Static parent
+    <div class="position-absolute top-0 right-0 bg-base-darkest">
+      Absolute child
+    </div>
+    <div class="bg-base-light padding-2">
+      Static sibling
+    </div>
+  </div>
+</div>
+```
+</div>
   </div>
 </div>
 
@@ -258,6 +311,27 @@ subnav:
     </div>
   </div>
 </div>
+<div class="usa-accordion-bordered usa-code-sample margin-top-4">
+  <button class="usa-accordion-button" aria-controls="code-fixed" aria-expanded="true">Code</button>
+  <div id="code-fixed" class="usa-accordion-content">
+<div markdown="1">
+```html
+<div class="bg-base-light padding-top-9">
+  <div class="position-fixed bg-base-dark">
+    Fixed child
+    <div class="position-absolute top-0 right-0 bg-grey-darkest">
+      Absolute child
+    </div>
+  </div>
+
+  Scroll me!
+
+  Lorem ipsum...
+</div>
+```
+</div>
+  </div>
+</div>
 
 <h4>Sticky</h4>
 <div class="height-card-lg overflow-scroll measure-4 bg-base-lightest">
@@ -284,6 +358,28 @@ subnav:
   <div>
     <div class="position-sticky top-0 bg-base-light padding-x-2 padding-y-1 text-bold text-base-darker">Sticky Heading 6</div>
     <p class="padding-x-2">Great Smoky Mountains National Park straddles the border of North Carolina and Tennessee. The sprawling landscape encompasses lush forests and an abundance of wildflowers that bloom year-round. Streams, rivers and waterfalls appear along hiking routes that include a segment of the Appalachian Trail.</p>
+  </div>
+</div>
+<div class="usa-accordion-bordered usa-code-sample margin-top-4">
+  <button class="usa-accordion-button" aria-controls="code-sticky" aria-expanded="true">Code</button>
+  <div id="code-sticky" class="usa-accordion-content">
+<div markdown="1">
+```html
+<div>
+  <div class="position-sticky top-0 ...">Sticky Heading 1</div>
+  <p>Quisque cursus...</p>
+</div>
+<div>
+  <div class="position-sticky top-0 ...">Sticky Heading 2</div>
+  <p>Integer lacinia...</p>
+</div>
+<div>
+  <div class="position-sticky top-0 ...">Sticky Heading 3</div>
+  <p>Nullam mauris...</p>
+</div>
+<!-- etc. -->
+```
+</div>
   </div>
 </div>
 
@@ -347,6 +443,59 @@ subnav:
   </div>
   <div class="position-relative square-9 opacity-0"></div>
   <div class="grid-col"></div>
+</div>
+<div class="usa-accordion-bordered usa-code-sample margin-top-4">
+  <button class="usa-accordion-button" aria-controls="code-pin" aria-expanded="true">Code</button>
+  <div id="code-pin" class="usa-accordion-content">
+<div markdown="1">
+```html
+<!-- Span top edge -->
+<div class="position-relative square-9 bg-base-light">
+  <div class="position-absolute add-pin-right bg-base-darker"></div>
+</div>
+
+<!-- Span right edge -->
+<div class="position-relative square-9 bg-base-light">
+  <div class="position-absolute add-pin-right bg-base-darker"></div>
+</div>
+
+<!-- Span bottom edge -->
+<div class="position-relative square-9 bg-base-light">
+  <div class="position-absolute add-pin-bottom bg-base-darker"></div>
+</div>
+
+<!-- Span left edge -->
+<div class="position-relative square-9 bg-base-light">
+  <div class="position-absolute add-pin-left bg-base-darker"></div>
+</div>
+
+<!-- Fill entire parent -->
+<div class="position-relative square-9 bg-base-light">
+  <div class="position-absolute add-pin-all bg-base-darker"></div>
+</div>
+
+<!-- Pin to top left corner -->
+<div class="position-relative square-9 bg-base-light">
+  <div class="position-absolute left-0 top-0 square-4 bg-base-darker"></div>
+</div>
+
+<!-- Pin to top right corner -->
+<div class="position-relative square-9 bg-base-light">
+  <div class="position-absolute top-0 right-0 square-4 bg-base-darker"></div>
+</div>
+
+<!-- Pin to bottom right corner -->
+<div class="position-relative square-9 bg-base-light">
+  <div class="position-absolute right-0 .bottom-0 square-4 bg-base-darker"></div>
+</div>
+
+<!-- Pin to bottom left corner -->
+<div class="position-relative square-9 bg-base-light">
+  <div class="position-absolute bottom-0 left-0 square-4 bg-base-darker"></div>
+</div>
+```
+</div>
+  </div>
 </div>
     </section>
 

@@ -149,45 +149,44 @@ lead: USWDS uses a 12-column layout grid. See layout grid example here.
     </div><!-- l.grid-row -->
 
     <p class="docs-text"><code class="docs-inline-code">.grid-offset-[1-12]</code> offsets the grid-column by [n] grid-columns</p>
-
-    <div class="grid-row margin-top-1 font-sans-2">
-      <div class="grid-col-1 border-x-2px border-gray-cool-90">
-        <div class="text-center padding-x-2">1</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">2</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">3</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">4</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">5</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">6</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">7</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">8</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">9</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">10</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">11</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">12</div>
-      </div>
-    </div><!-- l.grid-row -->
+  <div class="grid-row margin-top-1 font-sans-2">
+    <div class="grid-col-1 border-x-2px border-black-cool-90">
+      <div class="text-center padding-x-2">1</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">2</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">3</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">4</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">5</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">6</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">7</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">8</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">9</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">10</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">11</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">12</div>
+    </div>
+  </div><!-- l.grid-row -->
 
     <div class="grid-row margin-top-1">
       <div class="grid-col-8 grid-offset-4 border-1px border-gray-cool-10">
@@ -196,45 +195,44 @@ lead: USWDS uses a 12-column layout grid. See layout grid example here.
     </div><!-- l.grid-row -->
 
     <p class="docs-text">Rows wrap when grid-columns add up to more than 12</p>
-
-    <div class="grid-row margin-top-1 font-sans-2">
-      <div class="grid-col-1 border-x-2px border-gray-cool-90">
-        <div class="text-center padding-x-2">1</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">2</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">3</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">4</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">5</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">6</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">7</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">8</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">9</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">10</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">11</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">12</div>
-      </div>
-    </div><!-- l.grid-row -->
+  <div class="grid-row margin-top-1 font-sans-2">
+    <div class="grid-col-1 border-x-2px border-black-cool-90">
+      <div class="text-center padding-x-2">1</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">2</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">3</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">4</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">5</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">6</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">7</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">8</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">9</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">10</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">11</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">12</div>
+    </div>
+  </div><!-- l.grid-row -->
 
     <div class="grid-row margin-top-1">
       <div class="grid-col-8 border-1px border-gray-cool-10">
@@ -249,45 +247,44 @@ lead: USWDS uses a 12-column layout grid. See layout grid example here.
     </div><!-- l.grid-row -->
 
     <p class="docs-text"><code class="docs-inline-code">.grid-gap</code> adds a grid-gap between grid-columns in the grid-row, to a value set as <code class="docs-inline-code">$theme-column-gap</code> in settings</p>
-
-    <div class="grid-row margin-top-1 font-sans-2">
-      <div class="grid-col-1 border-x-2px border-gray-cool-90">
-        <div class="text-center padding-x-2">1</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">2</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">3</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">4</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">5</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">6</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">7</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">8</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">9</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">10</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">11</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">12</div>
-      </div>
-    </div><!-- l.grid-row -->
+  <div class="grid-row margin-top-1 font-sans-2">
+    <div class="grid-col-1 border-x-2px border-black-cool-90">
+      <div class="text-center padding-x-2">1</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">2</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">3</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">4</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">5</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">6</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">7</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">8</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">9</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">10</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">11</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">12</div>
+    </div>
+  </div><!-- l.grid-row -->
 
     <div class="grid-row grid-gap margin-top-1">
       <div class="grid-col-4">
@@ -302,45 +299,44 @@ lead: USWDS uses a 12-column layout grid. See layout grid example here.
     </div><!-- l.grid-row -->
 
     <p class="docs-text"><code class="docs-inline-code">.grid-gap-lg</code> adds a grid-gap between grid-columns in the grid-row, to a value set as <code class="docs-inline-code">$theme-column-gap-large</code> in settings</p>
-
-    <div class="grid-row margin-top-1 font-sans-2">
-      <div class="grid-col-1 border-x-2px border-gray-cool-90">
-        <div class="text-center padding-x-2">1</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">2</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">3</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">4</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">5</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">6</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">7</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">8</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">9</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">10</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">11</div>
-      </div>
-      <div class="grid-col-1 border-x-2px border-left-0 border-gray-cool-90">
-        <div class="text-center padding-x-2">12</div>
-      </div>
-    </div><!-- l.grid-row -->
+  <div class="grid-row margin-top-1 font-sans-2">
+    <div class="grid-col-1 border-x-2px border-black-cool-90">
+      <div class="text-center padding-x-2">1</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">2</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">3</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">4</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">5</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">6</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">7</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">8</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">9</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">10</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">11</div>
+    </div>
+    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+      <div class="text-center padding-x-2">12</div>
+    </div>
+  </div><!-- l.grid-row -->
 
     <div class="grid-row grid-gap-lg margin-top-1">
       <div class="grid-col-4">

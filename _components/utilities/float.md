@@ -54,6 +54,16 @@ lead: Set a float
 
   <section class="utilities-section">
     <h2 class="utilities-section-title">Default output</h2>
+  <section class="border-top-1px padding-top-1 margin-top-4">
+    <h2 class="margin-0 text-light font-sans-8">Responsive variants</h2>
+  </section>
+
+  <section class="border-top-1px padding-top-1 margin-top-4">
+    <h2 class="margin-0 text-light font-sans-8"><span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">hover</span>, <span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">active</span>, <span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">focus</span>, and <span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">visited</span> variants</h2>
+  </section>
+
+  <section class="border-top-1px padding-top-1 margin-top-4">
+    <h2 class="margin-0 text-light font-sans-8">Default output</h2>
     <div class="grid-row font-sans-1 text-bold border-bottom-1px padding-bottom-05 margin-top-2 border-gray-20">
       <div class="grid-col-4">Utility</div>
       <div class="grid-col-6">Output SCSS</div>

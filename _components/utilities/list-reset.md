@@ -64,13 +64,9 @@ lead: Reset default list styling
     </section>
   </section>
 
-  <section class="utilities-section">
-    <h2 class="utilities-section-title">Responsive variants</h2>
-  </section>
+  {% include utilities/responsive-variants.html %}
 
-  <section class="utilities-section">
-    <h2 class="utilities-section-title"><code>hover</code>, <code>active</code>, <code>focus</code>, and <code>visited</code> variants</h2>
-  </section>
+  {% include utilities/state-variants.html %}
 
   <section class="utilities-section">
     <h2 class="utilities-section-title">Default output</h2>
@@ -91,7 +87,4 @@ lead: Reset default list styling
     </dl>
   </section>
 
-  <section class="utilities-section">
-    <h2 class="utilities-section-title">Advanced settings</h2>
-  </section>
-</div>
+  {% include utilities/advanced-settings.html %}

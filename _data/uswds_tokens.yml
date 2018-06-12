@@ -11,14 +11,14 @@ special:
   none_none:
     - token: none
       value: none
-  full:
+  full_percent:
     - token: full
       value: 100%
-  screen_horizontal:
-    - token: screen
+  full_viewport_height:
+    - token: viewport
       value: 100vw
-  screen_vertical:
-    - token: screen
+  full_viewport_width:
+    - token: viewport
       value: 100vh
 
 spacing:

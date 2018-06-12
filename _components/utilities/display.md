@@ -185,7 +185,7 @@ subnav:
       </section>
 <h4>Static</h4>
 <div class="position-relative bg-base-light padding-2 measure-3">
-  <div class="position-static height-card bg-base padding-2 text-black">
+  <div class="position-static height-card bg-base padding-2">
     Static parent
     <div class="position-absolute bottom-0 left-0 bg-base-darkest padding-2 text-base-light">
       Absolute child
@@ -210,7 +210,7 @@ subnav:
 
 <h4>Relative</h4>
 <div class="position-relative bg-base-light padding-2 measure-3">
-  <div class="position-relative height-card bg-base padding-2 text-black">
+  <div class="position-relative height-card bg-base padding-2">
     Static parent
     <div class="position-absolute bottom-0 left-0 bg-base-darkest padding-2 text-base-light">
       Absolute child
@@ -234,10 +234,10 @@ subnav:
 </div>
 
 <h4>Absolute</h4>
-<p class="text-base-dark margin-bottom-1">With static positioning</p>
+<p class="margin-bottom-1">With static positioning</p>
 <div class="relative bg-base-light padding-x-2 padding-top-2 padding-bottom-2 margin-bottom-2 measure-5">
   Relative parent
-  <div class="postition-static bg-base padding-2 text-base-darker margin-top-2 ">
+  <div class="postition-static bg-base padding-2 margin-top-2 ">
     Static parent
     <br>
     <div class="static bottom-0 left-0 bg-base-darkest padding-2 margin-top-2 text-base-light display-inline-block">
@@ -248,7 +248,7 @@ subnav:
     </div>
   </div>
 </div>
-<p class="text-base-dark margin-bottom-1">With absolute positioning</p>
+<p class="margin-bottom-1">With absolute positioning</p>
 <div class="position-relative bg-base-light padding-x-2 padding-top-2 padding-bottom-2 measure-5">
   Relative parent
   <div class="position-static bg-base padding-2 margin-top-2">

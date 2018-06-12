@@ -54,9 +54,9 @@ The border utility class sets the `border-color` and `border-size`, with support
       </section>
 <div class="border-1px width-mobile bg-base-lighter padding-2 margin-bottom-2">.border-1px</div>
 <div class="border-top-1px width-mobile bg-base-lighter padding-2 margin-bottom-2">.border-top-1px</div>
-<div class="border-top-1px width-mobile bg-base-lighter padding-2 margin-bottom-2">.border-right-1px</div>
-<div class="border-top-1px width-mobile bg-base-lighter padding-2 margin-bottom-2">.border-bottom-1px</div>
-<div class="border-top-1px width-mobile bg-base-lighter padding-2 margin-bottom-2">.border-left-1px</div>
+<div class="border-right-1px width-mobile bg-base-lighter padding-2 margin-bottom-2">.border-right-1px</div>
+<div class="border-bottom-1px width-mobile bg-base-lighter padding-2 margin-bottom-2">.border-bottom-1px</div>
+<div class="border-left-1px width-mobile bg-base-lighter padding-2 margin-bottom-2">.border-left-1px</div>
 <div class="border-0 width-mobile bg-base-lighter padding-2 margin-bottom-2">.border-0</div>
     </section>
   </section>

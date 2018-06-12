@@ -19,6 +19,7 @@ subnav:
 ---
 
 The border utility class sets the `border-color` and `border-size`, with support for the following sizes: `0`, `1px`, `2px`, `05` (4px), `1` (8px), `2` (16px), `3` (24px).
+{: .measure-3}
 
 **Format:** `border-[LOCATION]-[SIZE]`
 

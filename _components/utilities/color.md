@@ -170,39 +170,37 @@ subnav:
       </div>
     </section>
   </section>
-
-  <section class="utilities-section">
-    <h2 class="utilities-section-title">Responsive variants</h2>
-  </section>
-
-  <section class="utilities-section">
-    <h2 class="utilities-section-title">Default output</h2>
-    <div class="grid-row font-sans-1 text-bold border-bottom-1px padding-bottom-05 margin-top-2 border-gray-20">
-      <div class="grid-col-4">Utility</div>
-      <div class="grid-col-6">Output SCSS</div>
-      <div class="grid-col-2">Default variable value</div>
-    </div>
-    <dl class="output-list">
-      {% for color in all_colors %}
-        <dt class="output-utility">.text-{{ color.token }}</dt>
-        <dd class="output-css">color: <span class="output-token">${% if color.var %}{{ color.token }}{% else %}{{ color.token }}{% endif %}</span></dd>
-        <dd class="output-variable">
-          <span class="display-inline-block bg-{{ color.token }} circle-105 text-baseline margin-right-05"></span>
-          {{ color.value }}
-        </dd>
-      {% endfor %}
-      {% for color in all_colors %}
-        <dt class="output-utility">.bg-{{ color.token }}</dt>
-        <dd class="output-css">background-color: <span class="output-token">${% if color.var %}{{ color.var }}{% else %}{{ color.token }}{% endif %}</span></dd>
-        <dd class="output-variable">
-          <span class="display-inline-block bg-{{ color.token }} circle-105 text-baseline margin-right-05"></span>
-          {{ color.value }}
-        </dd>
-      {% endfor %}
-    </dl>
-  </section>
-
-  <section class="utilities-section">
-    <h2 class="utilities-section-title">Advanced settings</h2>
-  </section>
 </section>
+
+{% include utilities/responsive-variants.html %}
+
+{% include utilities/state-variants.html %}
+
+<section class="utilities-section">
+  <h2 class="utilities-section-title">Default output</h2>
+  <div class="grid-row font-sans-1 text-bold border-bottom-1px padding-bottom-05 margin-top-2 border-gray-20">
+    <div class="grid-col-4">Utility</div>
+    <div class="grid-col-6">Output SCSS</div>
+    <div class="grid-col-2">Default variable value</div>
+  </div>
+  <dl class="output-list">
+    {% for color in all_colors %}
+      <dt class="output-utility">.text-{{ color.token }}</dt>
+      <dd class="output-css">color: <span class="output-token">${% if color.var %}{{ color.token }}{% else %}{{ color.token }}{% endif %}</span></dd>
+      <dd class="output-variable">
+        <span class="display-inline-block bg-{{ color.token }} circle-105 text-baseline margin-right-05"></span>
+        {{ color.value }}
+      </dd>
+    {% endfor %}
+    {% for color in all_colors %}
+      <dt class="output-utility">.bg-{{ color.token }}</dt>
+      <dd class="output-css">background-color: <span class="output-token">${% if color.var %}{{ color.var }}{% else %}{{ color.token }}{% endif %}</span></dd>
+      <dd class="output-variable">
+        <span class="display-inline-block bg-{{ color.token }} circle-105 text-baseline margin-right-05"></span>
+        {{ color.value }}
+      </dd>
+    {% endfor %}
+  </dl>
+</section>
+
+{% include utilities/advanced-settings.html %}

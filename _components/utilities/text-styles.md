@@ -135,263 +135,260 @@ colors:
     <p class="grid-col-fill utilities-section-helper">Utilities, values, and variants may be activated and deactivated in <a href="#0" class="text-ink text-no-wrap">advanced settings</a>.</p>
   </div>
 
-    <section class="utility" id="font-style">
-      <section class="utility-title-bar">
-        <div class="grid-row">
-          <div class="grid-col-fill">
-            <h3 class="grid-col-auto utility-title">Font style</h3>
-            <p class="utility-property">CSS property: <span class="utility-property-code">font-style</span></p>
-          </div>
-
-          <ul class="grid-col-auto utility-scope">
-            <!--<li class="utility-scope-button-active"><a href="#0">responsive</a></li>-->
-            <li class="utility-scope-button-disabled">responsive</li>
-            <li class="utility-scope-button-disabled">active</li>
-            <li class="utility-scope-button-disabled">hover</li>
-            <li class="utility-scope-button-disabled">focus</li>
-            <li class="utility-scope-button-disabled">visited</li>
-          </ul>
+  <section class="utility" id="font-style">
+    <section class="utility-title-bar">
+      <div class="grid-row">
+        <div class="grid-col-fill">
+          <h3 class="grid-col-auto utility-title">Font style</h3>
+          <p class="utility-property">CSS property: <span class="utility-property-code">font-style</span></p>
         </div>
-      </section>
-      <section class="utility-examples">
-        <p class="utility-example-container-condensed text-italic">.text-italic</p>
-        <p class="utility-example-container-condensed text-no-italic border-0">.text-no-italic</p>
-      </section>
+
+        <ul class="grid-col-auto utility-scope">
+          <!--<li class="utility-scope-button-active"><a href="#0">responsive</a></li>-->
+          <li class="utility-scope-button-disabled">responsive</li>
+          <li class="utility-scope-button-disabled">active</li>
+          <li class="utility-scope-button-disabled">hover</li>
+          <li class="utility-scope-button-disabled">focus</li>
+          <li class="utility-scope-button-disabled">visited</li>
+        </ul>
+      </div>
     </section>
-
-    <section class="utility" id="font-weight">
-      <section class="utility-title-bar">
-        <div class="grid-row">
-          <div class="grid-col-fill">
-            <h3 class="grid-col-auto utility-title">Font weight</h3>
-            <p class="utility-property">CSS property: <span class="utility-property-code">font-weight</span></p>
-          </div>
-
-          <ul class="grid-col-auto utility-scope">
-            <li class="utility-scope-button-active"><a href="#0">responsive</a></li>
-            <li class="utility-scope-button-disabled">active</li>
-            <li class="utility-scope-button-disabled">hover</li>
-            <li class="utility-scope-button-disabled">focus</li>
-            <li class="utility-scope-button-disabled">visited</li>
-          </ul>
-        </div>
-      </section>
-      <section class="utility-examples">
-        <p class="utility-example-container-condensed text-thin">.text-thin</p>
-        <p class="utility-example-container-condensed text-light">.text-light</p>
-        <p class="utility-example-container-condensed text-normal">.text-normal</p>
-        <p class="utility-example-container-condensed text-medium">.text-medium</p>
-        <p class="utility-example-container-condensed text-semibold">.text-semibold</p>
-        <p class="utility-example-container-condensed text-bold">.text-bold</p>
-        <p class="utility-example-container-condensed text-heavy border-0">.text-heavy</p>
-      </section>
-    </section>
-
-    <section class="utility" id="letterspacing">
-      <section class="utility-title-bar">
-        <div class="grid-row">
-          <div class="grid-col-fill">
-            <h3 class="grid-col-auto utility-title">Letterspacing</h3>
-            <p class="utility-property">CSS property: <span class="utility-property-code">letter-spacing</span></p>
-          </div>
-
-          <ul class="grid-col-auto utility-scope">
-            <li class="utility-scope-button-disabled">responsive</li>
-            <li class="utility-scope-button-disabled">active</li>
-            <li class="utility-scope-button-disabled">hover</li>
-            <li class="utility-scope-button-disabled">focus</li>
-            <li class="utility-scope-button-disabled">visited</li>
-          </ul>
-        </div>
-      </section>
-      <section class="utility-examples">
-        <p class="utility-example-container-condensed text-ls-neg-3">.text-ls-neg-3</p>
-        <p class="utility-example-container-condensed text-ls-neg-2">.text-ls-neg-2</p>
-        <p class="utility-example-container-condensed text-ls-neg-1">.text-ls-neg-1</p>
-        <p class="utility-example-container-condensed text-ls-auto">.text-ls-auto</p>
-        <p class="utility-example-container-condensed text-ls-1">.text-ls-1</p>
-        <p class="utility-example-container-condensed text-ls-2">.text-ls-2</p>
-        <p class="utility-example-container-condensed text-ls-3 border-0">.text-ls-3</p>
-      </section>
-    </section>
-
-    <section class="utility" id="font-feature-settings">
-      <section class="utility-title-bar">
-        <div class="grid-row flex-align-center">
-          <div class="grid-col-fill">
-            <h3 class="grid-col-auto utility-title">Tabular numerals</h3>
-            <p class="utility-property">CSS property: <span class="utility-property-code">font-feature-settings</span></p>
-          </div>
-
-          <ul class="grid-col-auto utility-scope">
-            <li class="utility-scope-button-disabled">responsive</li>
-            <li class="utility-scope-button-disabled">active</li>
-            <li class="utility-scope-button-disabled">hover</li>
-            <li class="utility-scope-button-disabled">focus</li>
-            <li class="utility-scope-button-disabled">visited</li>
-          </ul>
-        </div>
-      </section>
-      <section class="utility-examples">
-        <div class="utility-example-container-condensed">
-          <p class="font-sans-8 text-tabular margin-0">123,456,789</p>
-          <p class="font-sans-8 text-tabular margin-0">825,489,012</p>
-          <p class="font-sans-8 text-tabular margin-0">112,051,928</p>
-          <p class="utility-class margin-top-2">.text-tabular</p>
-        </div>
-        <div class="utility-example-container-condensed border-0">
-          <p class="font-sans-8 text-no-tabular margin-0">123,456,789</p>
-          <p class="font-sans-8 text-no-tabular margin-0">825,489,012</p>
-          <p class="font-sans-8 text-no-tabular margin-0">112,051,928</p>
-          <p class="utility-class margin-top-2">.text-no-tabular</p>
-        </div>
-      </section>
-    </section>
-
-    <section class="utility" id="text-decoration">
-      <section class="utility-title-bar">
-        <div class="grid-row">
-          <div class="grid-col-fill">
-            <h3 class="grid-col-auto utility-title">Text decoration</h3>
-            <p class="utility-property">CSS property: <span class="utility-property-code">text-decoration</span></p>
-          </div>
-
-          <ul class="grid-col-auto utility-scope">
-            <li class="utility-scope-button-disabled">responsive</li>
-            <li class="utility-scope-button-disabled">active</li>
-            <li class="utility-scope-button-active"><a href="#0">hover</a></li>
-            <li class="utility-scope-button-disabled">focus</li>
-            <li class="utility-scope-button-disabled">visited</li>
-          </ul>
-        </div>
-      </section>
-      <section class="utility-examples">
-        <p class="utility-example-container-condensed text-underline">.text-underline</p>
-        <p class="utility-example-container-condensed text-strike">.text-strike</p>
-        <p class="utility-example-container-condensed text-no-strike">.text-no-strike</p>
-        <p class="utility-example-container-condensed text-no-underline border-0">.text-no-underline</p>
-      </section>
-    </section>
-
-    <section class="utility" id="text-decoration-color">
-      <section class="utility-title-bar">
-        <div class="grid-row">
-          <div class="grid-col-fill">
-            <h3 class="grid-col-auto utility-title">Text decoration color</h3>
-            <p class="utility-property">CSS property: <span class="utility-property-code">text-decoration-color</span></p>
-          </div>
-
-          <ul class="grid-col-auto utility-scope">
-            <li class="utility-scope-button-disabled">responsive</li>
-            <li class="utility-scope-button-disabled">active</li>
-            <li class="utility-scope-button-active"><a href="#0">hover</a></li>
-            <li class="utility-scope-button-disabled">focus</li>
-            <li class="utility-scope-button-disabled">visited</li>
-          </ul>
-        </div>
-      </section>
-      <section class="utility-examples">
-
-        {% for item in page.colors.theme %}
-          <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify{% if forloop.last %} border-0{% endif %}">
-            <span class="text-underline underline-{{ item.token }}">.underline-{{ item.token }}<span class="text-thin text-gray-50">.text-underline</span></span>
-            <span class="flex-auto utility-value-color">
-              <span class="utility-value-color-chip bg-{{ item.token }}"></span>
-              {{ item.value }}
-            </span>
-          </div>
-        {% endfor %}
-      </section>
-    </section>
-
-    <section class="utility" id="text-transform">
-      <section class="utility-title-bar">
-        <div class="grid-row">
-          <div class="grid-col-fill">
-            <h3 class="grid-col-auto utility-title">Uppercase and lowercase</h3>
-            <p class="utility-property">CSS property: <span class="utility-property-code">text-transform</span></p>
-          </div>
-
-          <ul class="grid-col-auto utility-scope">
-            <li class="utility-scope-button-disabled">responsive</li>
-            <li class="utility-scope-button-disabled">active</li>
-            <li class="utility-scope-button-active"><a href="#0">hover</a></li>
-            <li class="utility-scope-button-disabled">focus</li>
-            <li class="utility-scope-button-disabled">visited</li>
-          </ul>
-        </div>
-      </section>
-      <section class="utility-examples">
-        <p class="utility-example-container-condensed text-uppercase">.text-uppercase</p>
-        <p class="utility-example-container-condensed text-lowercase">.text-lowercase</p>
-        <p class="utility-example-container-condensed text-no-uppercase">.text-no-uppercase</p>
-        <p class="utility-example-container-condensed text-no-lowercase border-0">.text-no-lowercase</p>
-      </section>
-    </section>
-
-    <section class="utility" id="vertical-align">
-      <section class="utility-title-bar">
-        <div class="grid-row">
-          <div class="grid-col-fill">
-            <h3 class="grid-col-auto utility-title">Vertical alignment</h3>
-            <p class="utility-property">CSS property: <span class="utility-property-code">vertical-align</span></p>
-          </div>
-
-          <ul class="grid-col-auto utility-scope">
-            <li class="utility-scope-button-disabled">responsive</li>
-            <li class="utility-scope-button-disabled">active</li>
-            <li class="utility-scope-button-disabled">hover</li>
-            <li class="utility-scope-button-disabled">focus</li>
-            <li class="utility-scope-button-disabled">visited</li>
-          </ul>
-        </div>
-      </section>
-      <section class="utility-examples">
-        <p class="utility-example-container-condensed">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-baseline"></span> <span class="text-baseline text-red">.text-baseline</span></p>
-        <p class="utility-example-container-condensed">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-bottom"></span> <span class="text-bottom text-red">.text-bottom</span></p>
-        <p class="utility-example-container-condensed">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-middle"></span> <span class="text-middle text-red">.text-middle</span></p>
-        <p class="utility-example-container-condensed">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-sub"></span> <span class="text-sub text-red">.text-sub</span></p>
-        <p class="utility-example-container-condensed">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-super"></span> <span class="text-super text-red">.text-super</span></p>
-        <p class="utility-example-container-condensed">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-tbottom"></span> <span class="text-tbottom text-red">.text-tbottom</span></p>
-        <p class="utility-example-container-condensed">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-ttop"></span> <span class="text-ttop text-red">.text-ttop</span></p>
-        <p class="utility-example-container-condensed border-0">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-top"></span> <span class="text-top text-red">.text-top</span></p>
-      </section>
-    </section>
-
-    <section class="utility" id="whitespace">
-      <section class="utility-title-bar">
-        <div class="grid-row">
-          <div class="grid-col-fill">
-            <h3 class="grid-col-auto utility-title">Whitespace formatting</h3>
-            <p class="utility-property">CSS property: <span class="utility-property-code">white-space</span></p>
-          </div>
-
-          <ul class="grid-col-auto utility-scope">
-            <li class="utility-scope-button-disabled">responsive</li>
-            <li class="utility-scope-button-disabled">active</li>
-            <li class="utility-scope-button-disabled">hover</li>
-            <li class="utility-scope-button-disabled">focus</li>
-            <li class="utility-scope-button-disabled">visited</li>
-          </ul>
-        </div>
-      </section>
-      <section class="utility-examples">
-        <p class="utility-example-container-condensed"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-pre"><span class="text-red">.text-pre</span> formatted line   with     multiple       spaces</span></span></p>
-        <p class="utility-example-container-condensed"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-pre-line"><span class="text-red">.text-pre-line</span> formatted line   with     multiple       spaces</span></span></p>
-        <p class="utility-example-container-condensed"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-pre-wrap"><span class="text-red">.text-pre-wrap</span> formatted line   with     multiple       spaces</span></span></p>
-        <p class="utility-example-container-condensed"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-wrap"><span class="text-red">.text-wrap</span> formatted line   with     multiple       spaces</span></span></p>
-        <p class="utility-example-container-condensed border-0"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-no-wrap"><span class="text-red">.text-no-wrap</span> formatted line   with     multiple       spaces</span></span></p>
-      </section>
+    <section class="utility-examples">
+      <p class="utility-example-container-condensed text-italic">.text-italic</p>
+      <p class="utility-example-container-condensed text-no-italic border-0">.text-no-italic</p>
     </section>
   </section>
 
-<section class="utilities-section">
-  <h2 class="utilities-section-title">Responsive variants</h2>
-</section>
+  <section class="utility" id="font-weight">
+    <section class="utility-title-bar">
+      <div class="grid-row">
+        <div class="grid-col-fill">
+          <h3 class="grid-col-auto utility-title">Font weight</h3>
+          <p class="utility-property">CSS property: <span class="utility-property-code">font-weight</span></p>
+        </div>
 
-<section class="utilities-section">
-  <h2 class="utilities-section-title"><code>hover</code>, <code>active</code>, <code>focus</code>, and <code>visited</code> variants</h2>
-</section>
+        <ul class="grid-col-auto utility-scope">
+          <li class="utility-scope-button-active"><a href="#0">responsive</a></li>
+          <li class="utility-scope-button-disabled">active</li>
+          <li class="utility-scope-button-disabled">hover</li>
+          <li class="utility-scope-button-disabled">focus</li>
+          <li class="utility-scope-button-disabled">visited</li>
+        </ul>
+      </div>
+    </section>
+    <section class="utility-examples">
+      <p class="utility-example-container-condensed text-thin">.text-thin</p>
+      <p class="utility-example-container-condensed text-light">.text-light</p>
+      <p class="utility-example-container-condensed text-normal">.text-normal</p>
+      <p class="utility-example-container-condensed text-medium">.text-medium</p>
+      <p class="utility-example-container-condensed text-semibold">.text-semibold</p>
+      <p class="utility-example-container-condensed text-bold">.text-bold</p>
+      <p class="utility-example-container-condensed text-heavy border-0">.text-heavy</p>
+    </section>
+  </section>
+
+  <section class="utility" id="letterspacing">
+    <section class="utility-title-bar">
+      <div class="grid-row">
+        <div class="grid-col-fill">
+          <h3 class="grid-col-auto utility-title">Letterspacing</h3>
+          <p class="utility-property">CSS property: <span class="utility-property-code">letter-spacing</span></p>
+        </div>
+
+        <ul class="grid-col-auto utility-scope">
+          <li class="utility-scope-button-disabled">responsive</li>
+          <li class="utility-scope-button-disabled">active</li>
+          <li class="utility-scope-button-disabled">hover</li>
+          <li class="utility-scope-button-disabled">focus</li>
+          <li class="utility-scope-button-disabled">visited</li>
+        </ul>
+      </div>
+    </section>
+    <section class="utility-examples">
+      <p class="utility-example-container-condensed text-ls-neg-3">.text-ls-neg-3</p>
+      <p class="utility-example-container-condensed text-ls-neg-2">.text-ls-neg-2</p>
+      <p class="utility-example-container-condensed text-ls-neg-1">.text-ls-neg-1</p>
+      <p class="utility-example-container-condensed text-ls-auto">.text-ls-auto</p>
+      <p class="utility-example-container-condensed text-ls-1">.text-ls-1</p>
+      <p class="utility-example-container-condensed text-ls-2">.text-ls-2</p>
+      <p class="utility-example-container-condensed text-ls-3 border-0">.text-ls-3</p>
+    </section>
+  </section>
+
+  <section class="utility" id="font-feature-settings">
+    <section class="utility-title-bar">
+      <div class="grid-row flex-align-center">
+        <div class="grid-col-fill">
+          <h3 class="grid-col-auto utility-title">Tabular numerals</h3>
+          <p class="utility-property">CSS property: <span class="utility-property-code">font-feature-settings</span></p>
+        </div>
+
+        <ul class="grid-col-auto utility-scope">
+          <li class="utility-scope-button-disabled">responsive</li>
+          <li class="utility-scope-button-disabled">active</li>
+          <li class="utility-scope-button-disabled">hover</li>
+          <li class="utility-scope-button-disabled">focus</li>
+          <li class="utility-scope-button-disabled">visited</li>
+        </ul>
+      </div>
+    </section>
+    <section class="utility-examples">
+      <div class="utility-example-container-condensed">
+        <p class="font-sans-8 text-tabular margin-0">123,456,789</p>
+        <p class="font-sans-8 text-tabular margin-0">825,489,012</p>
+        <p class="font-sans-8 text-tabular margin-0">112,051,928</p>
+        <p class="utility-class margin-top-2">.text-tabular</p>
+      </div>
+      <div class="utility-example-container-condensed border-0">
+        <p class="font-sans-8 text-no-tabular margin-0">123,456,789</p>
+        <p class="font-sans-8 text-no-tabular margin-0">825,489,012</p>
+        <p class="font-sans-8 text-no-tabular margin-0">112,051,928</p>
+        <p class="utility-class margin-top-2">.text-no-tabular</p>
+      </div>
+    </section>
+  </section>
+
+  <section class="utility" id="text-decoration">
+    <section class="utility-title-bar">
+      <div class="grid-row">
+        <div class="grid-col-fill">
+          <h3 class="grid-col-auto utility-title">Text decoration</h3>
+          <p class="utility-property">CSS property: <span class="utility-property-code">text-decoration</span></p>
+        </div>
+
+        <ul class="grid-col-auto utility-scope">
+          <li class="utility-scope-button-disabled">responsive</li>
+          <li class="utility-scope-button-disabled">active</li>
+          <li class="utility-scope-button-active"><a href="#0">hover</a></li>
+          <li class="utility-scope-button-disabled">focus</li>
+          <li class="utility-scope-button-disabled">visited</li>
+        </ul>
+      </div>
+    </section>
+    <section class="utility-examples">
+      <p class="utility-example-container-condensed text-underline">.text-underline</p>
+      <p class="utility-example-container-condensed text-strike">.text-strike</p>
+      <p class="utility-example-container-condensed text-no-strike">.text-no-strike</p>
+      <p class="utility-example-container-condensed text-no-underline border-0">.text-no-underline</p>
+    </section>
+  </section>
+
+  <section class="utility" id="text-decoration-color">
+    <section class="utility-title-bar">
+      <div class="grid-row">
+        <div class="grid-col-fill">
+          <h3 class="grid-col-auto utility-title">Text decoration color</h3>
+          <p class="utility-property">CSS property: <span class="utility-property-code">text-decoration-color</span></p>
+        </div>
+
+        <ul class="grid-col-auto utility-scope">
+          <li class="utility-scope-button-disabled">responsive</li>
+          <li class="utility-scope-button-disabled">active</li>
+          <li class="utility-scope-button-active"><a href="#0">hover</a></li>
+          <li class="utility-scope-button-disabled">focus</li>
+          <li class="utility-scope-button-disabled">visited</li>
+        </ul>
+      </div>
+    </section>
+    <section class="utility-examples">
+
+      {% for item in page.colors.theme %}
+        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify{% if forloop.last %} border-0{% endif %}">
+          <span class="text-underline underline-{{ item.token }}">.underline-{{ item.token }}<span class="text-thin text-gray-50">.text-underline</span></span>
+          <span class="flex-auto utility-value-color">
+            <span class="utility-value-color-chip bg-{{ item.token }}"></span>
+            {{ item.value }}
+          </span>
+        </div>
+      {% endfor %}
+    </section>
+  </section>
+
+  <section class="utility" id="text-transform">
+    <section class="utility-title-bar">
+      <div class="grid-row">
+        <div class="grid-col-fill">
+          <h3 class="grid-col-auto utility-title">Uppercase and lowercase</h3>
+          <p class="utility-property">CSS property: <span class="utility-property-code">text-transform</span></p>
+        </div>
+
+        <ul class="grid-col-auto utility-scope">
+          <li class="utility-scope-button-disabled">responsive</li>
+          <li class="utility-scope-button-disabled">active</li>
+          <li class="utility-scope-button-active"><a href="#0">hover</a></li>
+          <li class="utility-scope-button-disabled">focus</li>
+          <li class="utility-scope-button-disabled">visited</li>
+        </ul>
+      </div>
+    </section>
+    <section class="utility-examples">
+      <p class="utility-example-container-condensed text-uppercase">.text-uppercase</p>
+      <p class="utility-example-container-condensed text-lowercase">.text-lowercase</p>
+      <p class="utility-example-container-condensed text-no-uppercase">.text-no-uppercase</p>
+      <p class="utility-example-container-condensed text-no-lowercase border-0">.text-no-lowercase</p>
+    </section>
+  </section>
+
+  <section class="utility" id="vertical-align">
+    <section class="utility-title-bar">
+      <div class="grid-row">
+        <div class="grid-col-fill">
+          <h3 class="grid-col-auto utility-title">Vertical alignment</h3>
+          <p class="utility-property">CSS property: <span class="utility-property-code">vertical-align</span></p>
+        </div>
+
+        <ul class="grid-col-auto utility-scope">
+          <li class="utility-scope-button-disabled">responsive</li>
+          <li class="utility-scope-button-disabled">active</li>
+          <li class="utility-scope-button-disabled">hover</li>
+          <li class="utility-scope-button-disabled">focus</li>
+          <li class="utility-scope-button-disabled">visited</li>
+        </ul>
+      </div>
+    </section>
+    <section class="utility-examples">
+      <p class="utility-example-container-condensed">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-baseline"></span> <span class="text-baseline text-red">.text-baseline</span></p>
+      <p class="utility-example-container-condensed">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-bottom"></span> <span class="text-bottom text-red">.text-bottom</span></p>
+      <p class="utility-example-container-condensed">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-middle"></span> <span class="text-middle text-red">.text-middle</span></p>
+      <p class="utility-example-container-condensed">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-sub"></span> <span class="text-sub text-red">.text-sub</span></p>
+      <p class="utility-example-container-condensed">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-super"></span> <span class="text-super text-red">.text-super</span></p>
+      <p class="utility-example-container-condensed">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-tbottom"></span> <span class="text-tbottom text-red">.text-tbottom</span></p>
+      <p class="utility-example-container-condensed">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-ttop"></span> <span class="text-ttop text-red">.text-ttop</span></p>
+      <p class="utility-example-container-condensed border-0">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-top"></span> <span class="text-top text-red">.text-top</span></p>
+    </section>
+  </section>
+
+  <section class="utility" id="whitespace">
+    <section class="utility-title-bar">
+      <div class="grid-row">
+        <div class="grid-col-fill">
+          <h3 class="grid-col-auto utility-title">Whitespace formatting</h3>
+          <p class="utility-property">CSS property: <span class="utility-property-code">white-space</span></p>
+        </div>
+
+        <ul class="grid-col-auto utility-scope">
+          <li class="utility-scope-button-disabled">responsive</li>
+          <li class="utility-scope-button-disabled">active</li>
+          <li class="utility-scope-button-disabled">hover</li>
+          <li class="utility-scope-button-disabled">focus</li>
+          <li class="utility-scope-button-disabled">visited</li>
+        </ul>
+      </div>
+    </section>
+    <section class="utility-examples">
+      <p class="utility-example-container-condensed"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-pre"><span class="text-red">.text-pre</span> formatted line   with     multiple       spaces</span></span></p>
+      <p class="utility-example-container-condensed"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-pre-line"><span class="text-red">.text-pre-line</span> formatted line   with     multiple       spaces</span></span></p>
+      <p class="utility-example-container-condensed"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-pre-wrap"><span class="text-red">.text-pre-wrap</span> formatted line   with     multiple       spaces</span></span></p>
+      <p class="utility-example-container-condensed"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-wrap"><span class="text-red">.text-wrap</span> formatted line   with     multiple       spaces</span></span></p>
+      <p class="utility-example-container-condensed border-0"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-no-wrap"><span class="text-red">.text-no-wrap</span> formatted line   with     multiple       spaces</span></span></p>
+    </section><!-- examples -->
+  </section><!-- utility -->
+</section><!-- utilities -->
+
+
+{% include utilities/responsive-variants.html %}
+
+{% include utilities/state-variants.html %}
 
 <section class="utilities-section">
   <h2 class="utilities-section-title">Default output</h2>
@@ -684,6 +681,5 @@ colors:
 
   </dl>
 </section>
-<section class="utilities-section">
-  <h2 class="utilities-section-title">Advanced settings</h2>
-</section>
+
+{% include utilities/advanced-settings.html %}

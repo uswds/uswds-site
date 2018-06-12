@@ -120,27 +120,27 @@ The border utility class sets the `border-color` and `border-size`, with support
 
 <!-- Border left -->
 <h4>Border left widths</h4>
-<div class="border-left-0 width-mobile bg-base-lighter margin-bottom-4 padding-left-1 padding-y-1">.border-left-0</div>
-<div class="border-left-1px width-mobile bg-base-lighter margin-bottom-4 padding-left-1 padding-y-1">.border-left-1px</div>
-<div class="border-left-2px width-mobile bg-base-lighter margin-bottom-4 padding-left-1 padding-y-1">.border-left-2px</div>
-<div class="border-left-05 width-mobile bg-base-lighter margin-bottom-4 padding-left-1 padding-y-1">.border-left-05</div>
-<div class="border-left-1 width-mobile bg-base-lighter margin-bottom-4 padding-left-1 padding-y-1">.border-left-1</div>
-<div class="border-left-105 width-mobile bg-base-lighter margin-bottom-4 padding-left-1 padding-y-1">.border-left-105</div>
-<div class="border-left-2 width-mobile bg-base-lighter margin-bottom-4 padding-left-1 padding-y-1">.border-left-2</div>
-<div class="border-left-205 width-mobile bg-base-lighter margin-bottom-4 padding-left-1 padding-y-1">.border-left-205</div>
-<div class="border-left-3 width-mobile bg-base-lighter margin-bottom-4 padding-left-1 padding-y-1">.border-left-3</div>
+<div class="border-left-0 width-mobile bg-base-lighter margin-bottom-2 padding-2">.border-left-0</div>
+<div class="border-left-1px width-mobile bg-base-lighter margin-bottom-2 padding-2">.border-left-1px</div>
+<div class="border-left-2px width-mobile bg-base-lighter margin-bottom-2 padding-2">.border-left-2px</div>
+<div class="border-left-05 width-mobile bg-base-lighter margin-bottom-2 padding-2">.border-left-05</div>
+<div class="border-left-1 width-mobile bg-base-lighter margin-bottom-2 padding-2">.border-left-1</div>
+<div class="border-left-105 width-mobile bg-base-lighter margin-bottom-2 padding-2">.border-left-105</div>
+<div class="border-left-2 width-mobile bg-base-lighter margin-bottom-2 padding-2">.border-left-2</div>
+<div class="border-left-205 width-mobile bg-base-lighter margin-bottom-2 padding-2">.border-left-205</div>
+<div class="border-left-3 width-mobile bg-base-lighter margin-bottom-2 padding-2">.border-left-3</div>
 
 <!-- Border right -->
 <h4>Border right widths</h4>
-<div class="border-right-0 width-mobile bg-base-lighter margin-bottom-4 padding-left-1 padding-y-1">.border-right-0</div>
-<div class="border-right-1px width-mobile bg-base-lighter margin-bottom-4 padding-left-1 padding-y-1">.border-right-1px</div>
-<div class="border-right-2px width-mobile bg-base-lighter margin-bottom-4 padding-left-1 padding-y-1">.border-right-2px</div>
-<div class="border-right-05 width-mobile bg-base-lighter margin-bottom-4 padding-left-1 padding-y-1">.border-right-05</div>
-<div class="border-right-1 width-mobile bg-base-lighter margin-bottom-4 padding-left-1 padding-y-1">.border-right-1</div>
-<div class="border-right-105 width-mobile bg-base-lighter margin-bottom-4 padding-left-1 padding-y-1">.border-right-105</div>
-<div class="border-right-2 width-mobile bg-base-lighter margin-bottom-4 padding-left-1 padding-y-1">.border-right-2</div>
-<div class="border-right-205 width-mobile bg-base-lighter margin-bottom-4 padding-left-1 padding-y-1">.border-right-205</div>
-<div class="border-right-3 width-mobile bg-base-lighter margin-bottom-4 padding-left-1 padding-y-1">.border-right-3</div>
+<div class="border-right-0 width-mobile bg-base-lighter margin-bottom-2 padding-2">.border-right-0</div>
+<div class="border-right-1px width-mobile bg-base-lighter margin-bottom-2 padding-2">.border-right-1px</div>
+<div class="border-right-2px width-mobile bg-base-lighter margin-bottom-2 padding-2">.border-right-2px</div>
+<div class="border-right-05 width-mobile bg-base-lighter margin-bottom-2 padding-2">.border-right-05</div>
+<div class="border-right-1 width-mobile bg-base-lighter margin-bottom-2 padding-2">.border-right-1</div>
+<div class="border-right-105 width-mobile bg-base-lighter margin-bottom-2 padding-2">.border-right-105</div>
+<div class="border-right-2 width-mobile bg-base-lighter margin-bottom-2 padding-2">.border-right-2</div>
+<div class="border-right-205 width-mobile bg-base-lighter margin-bottom-2 padding-2">.border-right-205</div>
+<div class="border-right-3 width-mobile bg-base-lighter margin-bottom-2 padding-2">.border-right-3</div>
   </section>
 
 {% capture border_color %}

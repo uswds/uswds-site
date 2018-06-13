@@ -71,7 +71,7 @@
     "nswatch": "^0.2.0",
     "simplecrawler": "^1.1.6",
     "snyk": "^1.80.1",
-    "uswds": "1.6.4",
+    "uswds": "1.6.6",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },

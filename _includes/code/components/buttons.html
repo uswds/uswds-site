@@ -1,19 +1,21 @@
 <h6>Primary buttons</h6>
-<div class="button_wrapper">
+{% capture primary_buttons %}
   {% fractal_component buttons--primary %}
-</div>
+{% endcapture %}{{ primary_buttons | strip }}
 
 <h6>Secondary buttons</h6>
-<div class="button_wrapper">
-{% fractal_component buttons--secondary %}
-</div>
+{% capture secondary_buttons %}
+  {% fractal_component buttons--secondary %}
+{% endcapture %}{{ secondary_buttons | strip }}
 
 <h6>Buttons on a dark background</h6>
 <div class="button_wrapper">
-{% fractal_component buttons--secondary-inverse %}
+{% capture secondary_inverse_buttons %}
+  {% fractal_component buttons--secondary-inverse %}
+{% endcapture %}{{ secondary_inverse_buttons | strip }}
 </div>
 
 <h6>Big button</h6>
-<div class="button_wrapper">
-{% fractal_component buttons--big %}
-</div>
+{% capture big_buttons %}
+  {% fractal_component buttons--big %}
+{% endcapture %}{{ big_buttons | strip }}

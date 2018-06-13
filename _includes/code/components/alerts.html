@@ -1,9 +1,19 @@
-{% fractal_component alerts--info %}
+{% capture alerts--info %}
+  {% fractal_component alerts--info %}
+{% endcapture %}{{ alerts--info | strip }}
 
-{% fractal_component alerts--warning %}
+{% capture alerts--warning %}
+  {% fractal_component alerts--warning %}
+{% endcapture %}{{ alerts--warning | strip }}
 
-{% fractal_component alerts--error %}
+{% capture alerts--warning %}
+  {% fractal_component alerts--error %}
+{% endcapture %}{{ alerts--warning | strip }}
 
-{% fractal_component alerts--default %}
+{% capture alerts--warning %}
+  {% fractal_component alerts--default %}
+{% endcapture %}{{ alerts--warning | strip }}
 
-{% fractal_component alerts--paragraph %}
+{% capture alerts--warning %}
+  {% fractal_component alerts--paragraph %}
+{% endcapture %}{{ alerts--warning | strip }}

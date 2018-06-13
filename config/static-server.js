@@ -17,7 +17,9 @@ if (fs.existsSync(SITE_PATH)) {
 module.exports = () => {
   return new Promise((resolve, reject) => {
     const server = app.listen(() => {
-      const hostname = os.hostname().toLowerCase();
+      const REMOTE_CHROME_URL = process.env[ 'REMOTE_CHROME_URL' ];
+      const hostname = REMOTE_CHROME_URL ? os.hostname().toLowerCase()
+                                         : 'localhost';
       const port = server.address().port;
       resolve({
         hostname,

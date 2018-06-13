@@ -1,1 +1,3 @@
-{% fractal_component sign-in-form %}
+{% capture sign-in-form %}
+  {% fractal_component sign-in-form %}
+{% endcapture %}{{ sign-in-form | strip }}

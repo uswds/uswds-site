@@ -1,1 +1,3 @@
-{% fractal_component search %}
+{% capture search %}
+  {% fractal_component search %}
+{% endcapture %}{{ search | strip }}

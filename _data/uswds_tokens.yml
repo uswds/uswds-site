@@ -1,4 +1,6 @@
 special:
+  noValue:
+    - token: noValue
   auto_auto:
     - token: auto
       value: auto
@@ -31,54 +33,77 @@ spacing:
     small:
       - token: '05'
         value: 4px
+        scss: spacing(.5)
       - token: 1
         value: 8px
+        scss: spacing(1)
       - token: 105
         value: 12px
+        scss: spacing(1.5)
       - token: 2
         value: 16px
+        scss: spacing(2)
       - token: 205
         value: 20px
+        scss: spacing(2.5)
       - token: 3
         value: 24px
+        scss: spacing(3)
     medium:
       - token: 4
         value: 32px
+        scss: spacing(4)
       - token: 5
         value: 40px
+        scss: spacing(5)
       - token: 6
         value: 48px
+        scss: spacing(6)
       - token: 7
         value: 56px
+        scss: spacing(7)
       - token: 8
         value: 64px
+        scss: spacing(8)
       - token: 9
         value: 72px
-    large:
+        scss: spacing(9)
       - token: 10
         value: 80px
+        scss: spacing(10)
       - token: 15
         value: 120px
+        scss: spacing(15)
+    large:
       - token: card
         value: 160px
+        scss: spacing(card)
       - token: card-lg
         value: 240px
+        scss: spacing(card-lg)
       - token: mobile
         value: 320px
+        scss: spacing(mobile)
     larger:
       - token: mobile-lg
         value: 480px
+        scss: spacing(mobile-lg)
       - token: tablet
         value: 640px
+        scss: spacing(tablet)
       - token: tablet-lg
         value: 880px
+        scss: spacing(tablet-lg)
     largest:
       - token: desktop
         value: 1024px
+        scss: spacing(desktop)
       - token: desktop-lg
         value: 1200px
+        scss: spacing(desktop-lg)
       - token: widescreen
         value: 1400px
+        scss: spacing(widescreen)
   negative:
     smaller:
       - token: neg-1px
@@ -88,16 +113,22 @@ spacing:
     small:
       - token: neg-05
         value: -4px
+        scss: spacing(-.5)
       - token: neg-1
         value: -8px
+        scss: spacing(-1)
       - token: neg-105
         value: -12px
+        scss: spacing(-1.5)
       - token: neg-2
         value: -16px
+        scss: spacing(-2)
       - token: neg-205
         value: -20px
+        scss: spacing(-2.5)
       - token: neg-3
         value: -24px
+        scss: spacing(-3)
 
 colors:
   transparent:
@@ -107,54 +138,76 @@ colors:
     - token: base-lightest
       value: '#fcfcfc'
       reverse: true
+      var: $base-lightest
     - token: base-lighter
       value: '#f0f0f0'
       reverse: true
+      var: $base-lighter
     - token: base-light
       value: '#e6e6e6'
       reverse: true
+      var: $base-light
     - token: base
       value: '#adadad'
       reverse: true
+      var: $base
     - token: base-dark
       value: '#757575'
+      var: $base-dark
     - token: base-darker
       value: '#454545'
+      var: $base-darker
     - token: base-darkest
       value: '#171717'
+      var: $base-darkest
     - token: ink
       value: '#171717'
+      var: $ink
     - token: primary-lighter
       value: '#dae9f6'
       reverse: true
+      var: $primary-lighter
     - token: primary-light
       value: '#7cbdf0'
       reverse: true
+      var: $primary-light
     - token: primary
       value: '#0f6bb2'
+      var: $primary
     - token: primary-vivid
       value: '#0e57da'
+      var: $primary-vivid
     - token: primary-dark
       value: '#215192'
+      var: $primary-dark
     - token: primary-darker
       value: '#122b4c'
+      var: $primary-darker
     - token: secondary-light
       value: '#F08F8A'
       reverse: true
+      var: $secondary-light
     - token: secondary
       value: '#A93B3D'
+      var: $secondary
     - token: secondary-vivid
       value: '#e6251b'
+      var: $secondary-vivid
     - token: secondary-dark
       value: '#3b2523'
+      var: $secondary-dark
     - token: accent-cool
       value: '#fd7b28'
+      var: $accent-cool
     - token: accent-cool-dark
       value: '#1babcf'
+      var: $accent-cool-dark
     - token: accent-warm
       value: '#fd974c'
+      var: $accent-warm
     - token: accent-warm-dark
       value: '#fd7b28'
+      var: $accent-warm-dark
   grayscale:
     - token: white
       value: '#ffffff'
@@ -162,51 +215,57 @@ colors:
     - token: gray-5
       value: '#f0f0f0'
       reverse: true
+      var: $gray-5
     - token: gray-10
       value: '#e6e6e6'
       reverse: true
+      var: $gray-10
     - token: gray-30
       value: '#adadad'
       reverse: true
+      var: $gray-30
     - token: gray-50
       value: '#757575'
+      var: $gray-50
     - token: gray-70
       value: '#454545'
+      var: $gray-70
     - token: gray-90
       value: '#171717'
+      var: $gray-90
     - token: black
       value: '#000000'
   basic:
     - token: red
       value: '#e6251b'
-      var: red-50v
+      var: $red-50v
     - token: orange
       value: '#fd7b28'
-      var: orange-40v
+      var: $orange-40v
     - token: gold
       value: '#f8ae29'
-      var: gold-30v
+      var: $gold-30v
     - token: yellow
       value: '#fcd344'
-      var: yellow-20v
+      var: $yellow-20v
     - token: green
       value: '#548114'
-      var: green-40v
+      var: $green-40v
     - token: mint
       value: '#20c688'
-      var: mint-40v
+      var: $mint-40v
     - token: cyan
       value: '#1babcf'
-      var: cyan-30v
+      var: $cyan-30v
     - token: blue
       value: '#137cdb'
-      var: blue-50
+      var: $blue-50
     - token: indigo
       value: '#6970c7'
-      var: indigo-40
+      var: $indigo-40
     - token: violet
       value: '#836bb3'
-      var: violet-40v
+      var: $violet-40v
     - token: magenta
       value: '#df2d7a'
-      var: magenta-50
+      var: $magenta-50

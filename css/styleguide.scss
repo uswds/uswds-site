@@ -1876,18 +1876,31 @@ strong {
     @include u-border-bottom(1px);
     @include u-border-bottom($gray-20);
     @include u-margin(0);
+    @include u-minh(4);
     @include u-padding-y(.5);
   }
   .output-utility {
     @include grid-col(4);
+    @include u-display(flex);
+    @include u-flex(align-center);
+    @include u-font(sans, 2xs);
+    @include u-padding-right(2);
   }
   .output-css {
     @include grid-col(6);
-    @include u-font(mono, 4);
+    @include u-font(mono, 2xs);
+    @include u-padding-right(2);
+
+    .output-token {
+      @include u-display(inline-block);
+      @include u-font(mono, 2xs);
+    }
   }
   .output-variable {
     @include grid-col(2);
-    @include u-font(mono, 4);
+    @include u-display(flex);
+    @include u-flex(align-center);
+    @include u-font(mono, 2xs);
     @include u-text(light);
   }
 }
@@ -2129,6 +2142,15 @@ li.display-inline-block {
   @include u-margin-y(1);
   @include u-radius(md);
   @include u-text(pre-wrap);
+}
+
+.utility-note {
+  @include u-font(sans, xs);
+  @include u-line-height(sans, 5);
+  @include u-margin-bottom(5);
+  @include u-measure(none);
+  @include u-padding-bottom(2);
+  @include u-border-bottom(1px, $base-lighter);
 }
 
 /* * * * * * ========================== */

@@ -219,7 +219,7 @@ subnav:
 
     <section class="utility-examples">
 
-      <p class="font-sans-2xs line-height-sans-5 measure-none margin-bottom-5 padding-bottom-2 border-bottom-1px border-base-lighter"><strong>Note:</strong> <a href="http://www.w3.org/TR/css3-box/#overflow-x">Per the W3C overflow spec:</a> The computed values of ‘overflow-x’ and ‘overflow-y’ are the same as their specified values, except that some combinations with ‘visible’ are not possible: if one is specified as ‘visible’ and the other is ‘scroll’ or ‘auto’, then ‘visible’ is set to ‘auto’. The computed value of ‘overflow’ is equal to the computed value of ‘overflow-x’ if ‘overflow-y’ is the same; otherwise it is the pair of computed values of ‘overflow-x’ and ‘overflow-y’.</p>
+      <p class="utility-note"><strong>Note:</strong> <a href="http://www.w3.org/TR/css3-box/#overflow-x">Per the W3C overflow spec:</a> The computed values of ‘overflow-x’ and ‘overflow-y’ are the same as their specified values, except that some combinations with ‘visible’ are not possible: if one is specified as ‘visible’ and the other is ‘scroll’ or ‘auto’, then ‘visible’ is set to ‘auto’. The computed value of ‘overflow’ is equal to the computed value of ‘overflow-x’ if ‘overflow-y’ is the same; otherwise it is the pair of computed values of ‘overflow-x’ and ‘overflow-y’.</p>
 
       <div class="grid-row">
         <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">

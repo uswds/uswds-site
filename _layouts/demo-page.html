@@ -2,5 +2,15 @@
 # the page layout has no surrounding HTML because the
 # component's content is the entire page.
 ---
-{{ content }}
-{% include demo-footer.html %}
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="page-{{ page.title | slugify }} layout-{{ page.layout }} {% if page.class %}page-{{ page.class | slugify }}{% endif %}">
+    {{ content }}
+    {% include demo-footer.html %}
+    {% include scripts.html %}
+  </body>
+</html>

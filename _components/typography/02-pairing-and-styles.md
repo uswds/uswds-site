@@ -440,7 +440,7 @@ order: 02
         <div class="usa-width-one-half usa-end-row">
           <p class="usa-monospace">
             font-family: ‘Source Sans Pro’<br>
-            font-weight: 400<br>
+            font-weight: 300<br>
             font-size: 22px<br>
             line-height: 1.5em/33px
           </p>

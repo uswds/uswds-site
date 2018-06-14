@@ -54,7 +54,7 @@ subnav:
     </section>
 
     <section class="utility-examples">
-      <h3 class="utility-examples-title">Project theme colors <a class="utility-examples-helper" href="#0">Read more about project theme colors</a></h3>
+      <h4 class="utility-examples-title">Project theme colors <a class="utility-examples-helper" href="#0">Read more about project theme colors</a></h4>
 
       <div class="grid-row">
         {% for color in theme_colors %}

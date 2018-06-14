@@ -91,7 +91,7 @@ subnav:
         {% endfor %}
       </div>
 
-      <h3 class="utility-examples-title margin-bottom-2">Border on all sides</h3>
+      <h4 class="utility-examples-title margin-bottom-2">Border on all sides</h4>
       <div class="grid-row">
         {% for border in border_widths %}
           <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
@@ -113,7 +113,7 @@ subnav:
       </div>
 
       <!-- Border top -->
-      <h3 class="utility-examples-title margin-bottom-2">Border on the top</h3>
+      <h4 class="utility-examples-title margin-bottom-2">Border on the top</h4>
       <div class="grid-row">
         {% for border in border_widths %}
           <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
@@ -135,7 +135,7 @@ subnav:
       </div>
 
       <!-- Border bottom -->
-      <h3 class="utility-examples-title margin-bottom-2">Border on the bottom</h3>
+      <h4 class="utility-examples-title margin-bottom-2">Border on the bottom</h4>
       <div class="grid-row">
         {% for border in border_widths %}
           <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
@@ -157,7 +157,7 @@ subnav:
       </div>
 
       <!-- Border left -->
-      <h3 class="utility-examples-title margin-bottom-2">Border on the left</h3>
+      <h4 class="utility-examples-title margin-bottom-2">Border on the left</h4>
       <div class="grid-row">
         {% for border in border_widths %}
           <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
@@ -179,7 +179,7 @@ subnav:
       </div>
 
       <!-- Border right -->
-      <h3 class="utility-examples-title margin-bottom-2">Border on the right</h3>
+      <h4 class="utility-examples-title margin-bottom-2">Border on the right</h4>
       <div class="grid-row">
         {% for border in border_widths %}
           <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
@@ -201,7 +201,7 @@ subnav:
       </div>
 
       <!-- Border x -->
-      <h3 class="utility-examples-title margin-bottom-2">Border on the left and right</h3>
+      <h4 class="utility-examples-title margin-bottom-2">Border on the left and right</h4>
       <div class="grid-row">
         {% for border in border_widths %}
           <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
@@ -223,7 +223,7 @@ subnav:
       </div>
 
       <!-- Border y -->
-      <h3 class="utility-examples-title margin-bottom-2">Border on the top and bottom</h3>
+      <h4 class="utility-examples-title margin-bottom-2">Border on the top and bottom</h4>
       <div class="grid-row">
         {% for border in border_widths %}
           <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">

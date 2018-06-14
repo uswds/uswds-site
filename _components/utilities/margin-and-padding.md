@@ -102,7 +102,7 @@ vals_negative:
     </section><!-- utility-title-bar -->
 
     <section class="utility-examples">
-      <h3 class="utility-examples-title margin-bottom-3">Margin on all sides</h3>
+      <h4 class="utility-examples-title margin-bottom-3">Margin on all sides</h4>
       <div class="grid-row">
         {% for item in page.vals_positive %}
           {% if forloop.last %}
@@ -122,7 +122,7 @@ vals_negative:
       </div>
 
 
-      <h3 class="utility-examples-title margin-bottom-3">Margin bottom</h3>
+      <h4 class="utility-examples-title margin-bottom-3">Margin bottom</h4>
 
       <div class="grid-row">
         {% for item in page.vals_negative reversed %}
@@ -153,7 +153,7 @@ vals_negative:
         {% endfor %}
       </div>
 
-      <h3 class="utility-examples-title margin-bottom-3">Margin top</h3>
+      <h4 class="utility-examples-title margin-bottom-3">Margin top</h4>
       <div class="grid-row">
         {% for item in page.vals_negative reversed %}
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
@@ -183,7 +183,7 @@ vals_negative:
         {% endfor %}
       </div>
 
-      <h3 class="utility-examples-title margin-bottom-3">Margin left</h3>
+      <h4 class="utility-examples-title margin-bottom-3">Margin left</h4>
       <div class="grid-row">
         {% for item in page.vals_negative reversed %}
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
@@ -222,7 +222,7 @@ vals_negative:
         </div>
       </div>
 
-      <h3 class="utility-examples-title margin-bottom-3">Margin right</h3>
+      <h4 class="utility-examples-title margin-bottom-3">Margin right</h4>
       <div class="grid-row">
         {% for item in page.vals_negative reversed %}
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
@@ -261,7 +261,7 @@ vals_negative:
         </div>
       </div>
 
-      <h3 class="utility-examples-title margin-bottom-3">Margin left and right</h3>
+      <h4 class="utility-examples-title margin-bottom-3">Margin left and right</h4>
       <div class="grid-row">
         {% for item in page.vals_negative reversed %}
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
@@ -301,7 +301,7 @@ vals_negative:
         </div>
       </div>
 
-      <h3 class="utility-examples-title margin-bottom-3">Margin bottom and top</h3>
+      <h4 class="utility-examples-title margin-bottom-3">Margin bottom and top</h4>
       <div class="grid-row">
         {% for item in page.vals_negative reversed %}
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
@@ -353,7 +353,7 @@ vals_negative:
     </section>
 
     <section class="utility-examples">
-      <h3 class="utility-examples-title margin-bottom-3">Padding on all sides</h3>
+      <h4 class="utility-examples-title margin-bottom-3">Padding on all sides</h4>
       <div class="grid-row">
         {% for item in page.vals_positive %}
           {% if forloop.last %}
@@ -372,7 +372,7 @@ vals_negative:
         {% endfor %}
       </div>
 
-      <h3 class="utility-examples-title margin-bottom-3">Padding bottom</h3>
+      <h4 class="utility-examples-title margin-bottom-3">Padding bottom</h4>
       <div class="grid-row">
         {% for item in page.vals_positive %}
           {% if forloop.last %}
@@ -393,7 +393,7 @@ vals_negative:
         {% endfor %}
       </div>
 
-      <h3 class="utility-examples-title margin-bottom-3">Padding top</h3>
+      <h4 class="utility-examples-title margin-bottom-3">Padding top</h4>
       <div class="grid-row">
         {% for item in page.vals_positive %}
           {% if forloop.last %}
@@ -414,7 +414,7 @@ vals_negative:
         {% endfor %}
       </div>
 
-      <h3 class="utility-examples-title margin-bottom-3">Padding left</h3>
+      <h4 class="utility-examples-title margin-bottom-3">Padding left</h4>
       <div class="grid-row">
         {% for item in page.vals_positive %}
           {% if forloop.last %}
@@ -435,7 +435,7 @@ vals_negative:
         {% endfor %}
       </div>
 
-      <h3 class="utility-examples-title margin-bottom-3">Padding right</h3>
+      <h4 class="utility-examples-title margin-bottom-3">Padding right</h4>
       <div class="grid-row">
         {% for item in page.vals_positive %}
           {% if forloop.last %}
@@ -456,7 +456,7 @@ vals_negative:
         {% endfor %}
       </div>
 
-      <h3 class="utility-examples-title margin-bottom-3">Padding left and right</h3>
+      <h4 class="utility-examples-title margin-bottom-3">Padding left and right</h4>
       <div class="grid-row">
         {% for item in page.vals_positive %}
           {% if forloop.last %}
@@ -476,7 +476,7 @@ vals_negative:
         {% endfor %}
       </div>
 
-      <h3 class="utility-examples-title margin-bottom-3">Padding bottom and top</h3>
+      <h4 class="utility-examples-title margin-bottom-3">Padding bottom and top</h4>
       <div class="grid-row">
         {% for item in page.vals_positive %}
           {% if forloop.last %}

@@ -14,10 +14,25 @@ subnav:
   href: '#overflow'
 - text: Position
   href: '#position'
+- text: Relative position
+  href: '#relative-position'
+- text: Pinning
+  href: '#pinning'
 - text: Z-index
   href: '#z-index'
-
 ---
+
+{% assign spacing_tokens = site.data.uswds_tokens.spacing %}
+{% assign neg_reversed = spacing_tokens.negative.smaller
+  | concat: spacing_tokens.negative.small
+  | reverse %}
+{% assign rp_spacing =
+  site.data.uswds_tokens.special.auto_auto
+  | concat: neg_reversed
+  | concat: site.data.uswds_tokens.special.zero_zero
+  | concat: spacing_tokens.positive.smaller
+  | concat: spacing_tokens.positive.small
+  | concat: site.data.uswds_tokens.special.full_percent %}
 
 <div class="utilities-properties">
   <h3 class="utilities-property-title">CSS properties</h3>
@@ -71,21 +86,26 @@ subnav:
         </div>
       </div>
 
-      <h3 class="utility-examples-title">Markup</h3>
-
-<pre class="utility-code-sample"><code>&lt;div class="display-block border-1px ..."&gt;.display-block&lt;/div&gt;
-&lt;div class="display-flex border-1px ..."&gt;.display-flex&lt;/div&gt;
-&lt;div class="display-inline border-1px ..."&gt;.display-inline&lt;/div&gt;
-&lt;div class="display-inline-block border-1px ..."&gt;.display-inline-block&lt;/div&gt;
-&lt;div class="display-inline-flex border-1px ..."&gt;.display-inline-flex&lt;/div&gt;
-&lt;div class="display-none border-1px ..."&gt;.display-inline&lt;/div&gt;
-&lt;div class="display-table"&gt;
-&lt;div class="display-table-row"&gt;
-  &lt;div class="display-table-cell border-1px ..."&gt;.display-table-cell&lt;/div&gt;
-  &lt;div class="display-table-cell border-1px ..."&gt;.display-table-cell&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-
+      <div class="usa-accordion-bordered usa-code-sample margin-top-4 margin-bottom-1">
+        <button class="usa-accordion-button" aria-controls="code-relative" aria-expanded="true">Code</button>
+        <div id="code-relative" class="usa-accordion-content">
+<div markdown="1" class="font-mono-xs">
+```html
+<div class="display-block border-1px ...">.display-block</div>
+<div class="display-flex border-1px ...">.display-flex</div>
+<div class="display-inline border-1px ...">.display-inline</div>
+<div class="display-inline-block border-1px ...">.display-inline-block</div>
+<div class="display-inline-flex border-1px ...">.display-inline-flex</div>
+<div class="display-none border-1px ...">.display-inline</div>
+<div class="display-table">
+<div class="display-table-row">
+  <div class="display-table-cell border-1px ...">.display-table-cell</div>
+  <div class="display-table-cell border-1px ...">.display-table-cell</div>
+</div>
+```
+</div>
+        </div>
+      </div>
     </section><!-- utility-examples -->
   </section><!-- utility -->
 
@@ -298,15 +318,15 @@ subnav:
           </div>
         </div>
       </div>
-    </section>
-  </section>
+    </section><!-- utility-examples -->
+  </section><!-- utility -->
 
   <section class="utility" id="position">
     <section class="utility-title-bar">
       <div class="grid-row">
         <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Position and pinning</h3>
-          <p class="utility-property">CSS properties: <span class="utility-property-code">position, top, bottom, left, right</span></p>
+          <h3 class="grid-col-auto utility-title">Position</h3>
+          <p class="utility-property">CSS properties: <span class="utility-property-code">position</span></p>
         </div>
         <ul class="grid-col-auto utility-scope">
           <li class="utility-scope-button-disabled">responsive</li>
@@ -319,7 +339,6 @@ subnav:
     </section>
 
     <section class="utility-examples">
-      <h3 class="utility-examples-title">Position</h3>
       <div class="grid-row grid-gap">
 
         <div class="grid-col-12">
@@ -347,61 +366,185 @@ subnav:
             <p class="margin-0 font-sans-2xs"><span class="utility-class">.position-sticky</span></p>
           </div>
         </div>
+      </div>
 
+      <h4 class="utility-examples-title">Example: Relative, static, and absolute positioning</h4>
+      <div class="grid-row grid-gap margin-top-2">
         <div class="grid-col-6">
-          <div class="position-relative border-1px border-secondary-light padding-2 margin-bottom-2">
-            <div class="position-static height-card border-1px border-secondary-light padding-2 text-ink"><p class="margin-0 font-sans-2xs text-ink"> parent: <span class="utility-class text-ink">.position-static</span></p>
+          <div class="position-relative border-1px border-secondary-light padding-2 margin-bottom-2 radius-md overflow-hidden">
+            <div class="position-static height-card border-1px border-secondary-light padding-2 text-ink"><p class="margin-0 font-sans-2xs text-ink"><span class="utility-class text-ink">.position-static</span></p>
               <div class="position-absolute bottom-0 left-0 bg-secondary-light padding-2 text-ink is-inverse">
-                <p class="margin-0 font-sans-2xs"> child: <span class="utility-class">.position-absolute</span></p>
+                <p class="margin-0 font-sans-2xs"><span class="utility-class">.position-absolute</span></p>
               </div>
             </div>
           </div>
         </div>
         <div class="grid-col-6">
-          <div class="position-relative border-1px border-secondary-light padding-2 margin-bottom-2">
-            <div class="position-relative height-card border-1px border-secondary-light padding-2 text-ink"><p class="margin-0 font-sans-2xs text-ink">parent: <span class="utility-class text-ink">.position-relative</span></p>
+          <div class="position-relative border-1px border-secondary-light padding-2 margin-bottom-2 radius-md overflow-hidden">
+            <div class="position-relative height-card border-1px border-secondary-light padding-2 text-ink"><p class="margin-0 font-sans-2xs text-ink"><span class="utility-class text-ink">.position-relative</span></p>
               <div class="position-absolute bottom-0 left-0 bg-secondary-light padding-2 text-ink is-inverse">
-                <p class="margin-0 font-sans-2xs">child: <span class="utility-class">.position-absolute</span></p>
+                <p class="margin-0 font-sans-2xs"><span class="utility-class">.position-absolute</span></p>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="usa-accordion-bordered usa-code-sample margin-top-0">
+        <button class="usa-accordion-button" aria-controls="code-static-relative" aria-expanded="true">Code</button>
+        <div id="code-static-relative" class="usa-accordion-content">
+<div markdown="1">
+```html
+<div class="position-relative">
+  <div class="position-static">
+    <div class="position-absolute bottom-0 left-0">
+      .position-absolute
+    </div>
+  </div>
+</div>
 
-      <h3 class="utility-examples-title">Relative positioning</h3>
-      {% assign spacing_tokens = site.data.uswds_tokens.spacing %}
-      {% assign neg_reversed = spacing_tokens.negative.smaller
-        | concat: spacing_tokens.negative.small
-        | reverse %}
-      {% assign rp_spacing =
-        site.data.uswds_tokens.special.auto_auto
-        | concat: neg_reversed
-        | concat: site.data.uswds_tokens.special.zero_zero
-        | concat: spacing_tokens.positive.smaller
-        | concat: spacing_tokens.positive.small %}
+<div class="position-relative">
+  <div class="position-relative">
+    <div class="position-absolute bottom-0 left-0">
+      .position-absolute
+    </div>
+  </div>
+</div>
+```
+</div>
+        </div><!-- accordion-content -->
+      </div><!-- code-sample -->
+
+
+      <h4 class="utility-examples-title">Example: Fixed positioning</h4>
+      <div class="radius-md overflow-hidden margin-y-2 border-1px border-secondary-light">
+        <div class="position-relative height-mobile">
+          <div class="position-absolute add-pin-top bg-secondary-light z-100 padding-2">
+            <span class="utility-class">.position-fixed</span>
+          </div>
+          <div class="position-absolute add-pin-all overflow-auto padding-top-7 padding-x-3 text-ink">
+            <div class="measure-6">
+              <p class="text-ink"><span class="display-inline-block bg-ink text-white is-inverse padding-x-1 font-sans-2xs text-bold">Scroll me!</span></p>
+              <p class="line-height-sans-6">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              <p class="line-height-sans-6">I found Simon Wheeler dozing comfortably by the bar-room stove of the old, dilapidated tavern in the ancient mining camp of Angel's, and I noticed that he was fat and bald-headed, and had an expression of winning gentleness and simplicity upon his tranquil countenance. He roused up and gave me good-day. I told him a friend of mine had commissioned me to make some inquiries about a cherished companion of his boyhood named Leonidas W. Smiley Rev. Leonidas W. Smiley a young minister of the Gospel, who he had heard was at one time a resident of Angel's Camp. I added that, if Mr. Wheeler could tell me any thing about this Rev. Leonidas W. Smiley, I would feel under many obligations to him.</p>
+              <p class="line-height-sans-6">Simon Wheeler backed me into a corner and blockaded me there with his chair, and then sat me down and reeled off the monotonous narrative which follows this paragraph. He never smiled, he never frowned, he never changed his voice from the gentle-flowing key to which he tuned the initial sentence, he never betrayed the slightest suspicion of enthusiasm; but all through the interminable narrative there ran a vein of impressive earnestness and sincerity, which showed me plainly that, so far from his imagining that there was any thing ridiculous or funny about his story, he regarded it as a really important matter, and admired its two heroes as men of transcendent genius in finesse. To me, the spectacle of a man drifting serenely along through such a queer yarn without ever smiling, was exquisitely absurd. As I said before, I asked him to tell me what he knew of Rev. Leonidas W. Smiley, and he replied as follows. I let him go on in his own way, and never interrupted him once:</p>
+              <p class="line-height-sans-6">There was a feller here once by the name of Jim Smiley, in the winter of '49 or may be it was the spring of '50 I don't recollect exactly, somehow, though what makes me think it was one or the other is because I remember the big flume wasn't finished when he first came to the camp; but any way, he was the curiosest man about always betting on any thing that turned up you ever see, if he could get any body to bet on the other side; and if he couldn't, he'd change sides. Any way that suited the other man would suit him any way just so's he got a bet, he was satisfied. But still he was lucky, uncommon lucky; he most always come out winner. He was always ready and laying for a chance; there couldn't be no solittry thing mentioned but that feller'd offer to bet on it, and -take any side you please, as I was just telling you. If there was a horse-race, you'd find him flush, or you'd find him busted at the end of it; if there was a dog-fight, he'd bet on it; if there was a cat-fight, he'd bet on it; if there was a chicken-fight, he'd bet on it; why, if there was two birds setting on a fence, he would bet you which one would fly first; or if there was a camp-meeting, he would be there reg'lar, to bet on Parson Walker, which he judged to be the best exhorter about here, and so he was, too, and a good man. If he even seen a straddle-bug start to go anywheres, he would bet you how long it would take him to get wherever he was going to, and if you took him up, he would foller that straddle-bug to Mexico but what he would find out where he was bound for and how long he was on the road. Lots of the boys here has seen that Smiley, and can tell you about him. Why, it never made no difference to him he would bet on any thing the dangdest feller. Parson Walker's wife laid very sick once, for a good while, and it seemed as if they warn's going to save her; but one morning he come in, and Smiley asked how she was, and he said she was considerable better thank the Lord for his inftnit mercy and coming on so smart that, with the blessing of Providence, she'd get well yet; and Smiley, before he thought, says, "Well, I'll risk two- and-a-half that she don't, any way."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="usa-accordion-bordered usa-code-sample margin-top-2">
+        <button class="usa-accordion-button" aria-controls="code-fixed" aria-expanded="true">Code</button>
+        <div id="code-fixed" class="usa-accordion-content">
+<div markdown="1">
+```html
+<div class="position-relative">
+  <div class="position-fixed add-pin-top bg-secondary-light">
+    .position-fixed
+  </div>
+</div>
+```
+</div>
+        </div><!-- accordion-content -->
+      </div><!-- code-sample -->
+
+      <h4 class="utility-examples-title">Example: Sticky positioning</h4>
+      <div class="height-mobile position-relative overflow-hidden border border-secondary-light radius-md">
+        <div class="add-pin-all overflow-scroll padding-x-2">
+          <div>
+            <div class="position-sticky top-0 bg-secondary-light padding-x-2 padding-y-1 text-bold text-ink display-flex flex-justify">Sticky Heading 1 <span class="utility-class text-normal">.position-sticky</span></div>
+            <p class="text-ink padding-x-2"><span class="display-inline-block bg-ink text-white is-inverse padding-x-1 font-sans-2xs text-bold">Scroll me!</span></p>
+            <p class="line-height-sans-6 padding-x-2">Thish-yer Smiley had a mare the boys called her the fifteen- minute nag, but that was only in fun, you know, because, of course, she was faster than that and he used to win money on that horse, for all she was so slow and always had the asthma, or the distemper, or the consumption, or something of that kind. They used to give her two or three hundred yards start, and then pass her under way; but always at the fag-end of the race she'd get excited and desperate- like, and come cavorting and straddling up, and scattering her legs around limber, sometimes in the air, and sometimes out to one side amongst the fences, and kicking up m-o-r-e dust, and raising m-o-r-e racket with her coughing and sneezing and blowing her nose and always fetch up at the stand just about a neck ahead, as near as you could cipher it down.</p>
+          </div>
+          <div>
+            <div class="position-sticky top-0 bg-gold padding-x-2 padding-y-1 text-bold text-ink display-flex flex-justify">Sticky Heading 2 <span class="utility-class text-normal">.position-sticky</span></div>
+            <p class="line-height-sans-6 padding-x-2">And he had a little small bull pup, that to look at him you'd think he wan's worth a cent, but to set around and look ornery, and lay for a chance to steal something. But as soon as money was up on him, he was a different dog; his underjaw'd begin to stick out like the fo'castle of a steamboat, and his teeth would uncover, and shine savage like the furnaces. And a dog might tackle him, and bully- rag him, and bite him, and throw him over his shoulder two or three times, and Andrew Jackson which was the name of the pup Andrew Jackson would never let on but what he was satisfied, and hadn't expected nothing else and the bets being doubled and doubled on the other side all the time, till the money was all up; and then all of a sudden he would grab that other dog jest by the j'int of his hind leg and freeze on it not chew, you understand, but only jest grip and hang on till they thronged up the sponge, if it was a year. Smiley always come out winner on that pup, till he harnessed a dog once that didn't have no hind legs, because they'd been sawed off by a circular saw, and when the thing had gone along far enough, and the money was all up, and he come to make a snatch for his pet bolt, he saw in a minute how he'd been imposed on, and how the other dog had him in the door, so to speak, and he 'peered sur- prised, and then he looked sorter discouraged-like, and didn't try no more to win the fight, and so he got shucked out bad. He give Smiley a look, as much as to say his heart was broke, and it was his fault, for putting up a dog that hadn't no hind legs for him to take bolt of, which was his main dependence in a fight, and then he limped off a piece and laid down and died. It was a good pup, was that Andrew Jackson, and would have made a name for hisself if he'd lived, for the stuff was in him, and he had genius I know it, because he hadn't had no opportunities to speak of, and it don't stand to reason that a dog could make such a fight as he could under them circumstances, if he hadn't no talent. It always makes me feel sorry when I think of that last fight of his'n, and the way it turned out.</p>
+          </div>
+          <div>
+            <div class="position-sticky top-0 bg-yellow padding-x-2 padding-y-1 text-bold text-ink display-flex flex-justify">Sticky Heading 3 <span class="utility-class text-normal">.position-sticky</span></div>
+            <p class="line-height-sans-6 padding-x-2">Well, thish-yer Smiley had rat-tarriers, and chicken cocks, and tom- cats, and all of them kind of things, till you couldn't rest, and you couldn't fetch nothing for him to bet on but he'd match you. He ketched a frog one day, and took him home, and said he cal'klated to edercate him; and so he never done nothing for three months but set in his back yard and learn that frog to jump. And you bet you he did learn him, too. He'd give him a little punch behind, and the next minute you'd see that frog whirling in the air like a doughnut see him turn one summerset, or may be a couple, if he got a good start, and come down flat-footed and all right, like a cat. He got him up so in the matter of catching flies, and kept him in practice so constant, that he'd nail a fly every time as far as he could see him. Smiley said all a frog wanted was education, and he could do most any thing and I believe him. Why, I've seen him set Dan'l Webster down here on this floor Dan'l Webster was the name of the frog and sing out, "Flies, Dan'l, flies!" and quicker'n you could wink, he'd spring straight up, and snake a fly off'n the counter there, and flop down on the floor again as solid as a gob of mud, and fall to scratching the side of his head with his hind foot as indifferent as if he hadn't no idea he'd been doin' any more'n any frog might do. You never see a frog so modest and straightforward as he was, for all he was so gifted. And when it come to fair and square jumping on a dead level, he could get over more ground at one straddle than any animal of his breed you ever see. Jumping on a dead level was his strong suit, you understand; and when it come to that, Smiley would ante up money on him as long as he had a red. Smiley was monstrous proud of his frog, and well he might be, for fellers that had traveled and been everywheres, all said he laid over any frog that ever they see.</p>
+          </div>
+          <div>
+            <div class="position-sticky top-0 bg-orange padding-x-2 padding-y-1 text-bold text-ink display-flex flex-justify">Sticky Heading 4 <span class="utility-class text-normal">.position-sticky</span></div>
+            <p class="line-height-sans-6 padding-x-2">Well, Smiley kept the beast in a little lattice box, and he used to fetch him down town sometimes and lay for a bet. One day a feller a stranger in the camp, he was come across him with his box, and says:</p>
+            <p class="line-height-sans-6 padding-x-2">"What might it be that you've got in the box?"</p>
+            <p class="line-height-sans-6 padding-x-2">And Smiley says, sorter indifferent like, "It might be a parrot, or it might be a canary, may be, but it an't it's only just a frog."</p>
+            <p class="line-height-sans-6 padding-x-2">And the feller took it, and looked at it careful, and turned it round this way and that, and says, "H'm so 'tis. Well, what's he good for?"</p>
+            <p class="line-height-sans-6 padding-x-2">"Well," Smiley says, easy and careless, "He's good enough for one thing, I should judge he can outjump any frog in Calaveras county."</p>
+            <p class="line-height-sans-6 padding-x-2">The feller took the box again, and took another long, particular look, and give it back to Smiley, and says, very deliberate, "Well, I don't see no p'ints about that frog that's any better'n any other frog."</p>
+          </div>
+        </div>
+      </div>
+      <div class="usa-accordion-bordered usa-code-sample margin-top-2 margin-bottom-1">
+        <button class="usa-accordion-button" aria-controls="code-sticky" aria-expanded="true">Code</button>
+        <div id="code-sticky" class="usa-accordion-content">
+<div markdown="1">
+```html
+<div class="position-relative overflow-scroll">
+  <div>
+    <div class="position-sticky bg-secondary-light">Sticky Heading 1</div>
+    <p>...</p>
+  </div>
+  <div>
+    <div class="position-sticky bg-gold">Sticky Heading 2</div>
+    <p>...</p>
+  </div>
+  <div>
+    <div class="position-sticky bg-yellow">Sticky Heading 3</div>
+    <p>...</p>
+  </div>
+  <div>
+    <div class="position-sticky bg-orange">Sticky Heading 4</div>
+    <p>...</p>
+  </div>
+</div>
+```
+</div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="utility" id="relative-position">
+    <section class="utility-title-bar">
+      <div class="grid-row">
+        <div class="grid-col-fill">
+          <h3 class="grid-col-auto utility-title">Relative position</h3>
+          <p class="utility-property">CSS properties: <span class="utility-property-code">top, bottom, left, right</span></p>
+        </div>
+        <ul class="grid-col-auto utility-scope">
+          <li class="utility-scope-button-disabled">responsive</li>
+          <li class="utility-scope-button-disabled">active</li>
+          <li class="utility-scope-button-disabled">hover</li>
+          <li class="utility-scope-button-disabled">focus</li>
+          <li class="utility-scope-button-disabled">visited</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="utility-examples">
       <div class="grid-row grid-gap">
         <div class="grid-col-3">
           {% for item in rp_spacing %}
-            <p class="utility-example-container-condensed font-sans-2xs"><span class="utility-class">.bottom-{{ item.token }}</span><span class="utility-value margin-left-05">{{ item.value }}</span></p>
+            <p class="utility-example-container-condensed font-sans-2xs display-flex flex-justify"><span class="utility-class">.top-{{ item.token }}</span><span class="utility-value margin-left-05">{{ item.value }}</span></p>
           {% endfor %}
         </div>
         <div class="grid-col-3">
           {% for item in rp_spacing %}
-            <p class="utility-example-container-condensed font-sans-2xs"><span class="utility-class">.bottom-{{ item.token }}</span><span class="utility-value margin-left-05">{{ item.value }}</span></p>
+            <p class="utility-example-container-condensed font-sans-2xs display-flex flex-justify"><span class="utility-class">.bottom-{{ item.token }}</span><span class="utility-value margin-left-05">{{ item.value }}</span></p>
           {% endfor %}
         </div>
         <div class="grid-col-3">
           {% for item in rp_spacing %}
-            <p class="utility-example-container-condensed font-sans-2xs"><span class="utility-class">.bottom-{{ item.token }}</span><span class="utility-value margin-left-05">{{ item.value }}</span></p>
+            <p class="utility-example-container-condensed font-sans-2xs display-flex flex-justify"><span class="utility-class">.left-{{ item.token }}</span><span class="utility-value margin-left-05">{{ item.value }}</span></p>
           {% endfor %}
         </div>
         <div class="grid-col-3">
           {% for item in rp_spacing %}
-            <p class="utility-example-container-condensed font-sans-2xs"><span class="utility-class">.bottom-{{ item.token }}</span><span class="utility-value margin-left-05">{{ item.value }}</span></p>
+            <p class="utility-example-container-condensed font-sans-2xs display-flex flex-justify"><span class="utility-class">.right-{{ item.token }}</span><span class="utility-value margin-left-05">{{ item.value }}</span></p>
           {% endfor %}
         </div>
       </div>
-      <div class="grid-row grid-gap">
+      <div class="grid-row grid-gap margin-top-2">
         <div class="grid-col-3">
           <div class="position-relative border-1px border-secondary-light maxw-square-lg add-aspect-1x1 margin-bottom-2">
             <div class="bg-secondary-light padding-2 text-ink is-inverse position-absolute top-0">
@@ -430,12 +573,29 @@ subnav:
             </div>
           </div>
         </div>
-
       </div>
+    </section>
+  </section>
 
-      <h3 class="utility-examples-title">Pinning</h3>
+  <section class="utility" id="pinning">
+    <section class="utility-title-bar">
+      <div class="grid-row">
+        <div class="grid-col-fill">
+          <h3 class="grid-col-auto utility-title">Pinning</h3>
+        </div>
+        <ul class="grid-col-auto utility-scope">
+          <li class="utility-scope-button-disabled">responsive</li>
+          <li class="utility-scope-button-disabled">active</li>
+          <li class="utility-scope-button-disabled">hover</li>
+          <li class="utility-scope-button-disabled">focus</li>
+          <li class="utility-scope-button-disabled">visited</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="utility-examples">
+      <p class="utility-note margin-bottom-3">The <code>add-pin</code> utilities position an item absolutely along the entirety of the specified side.</p>
       <div class="grid-row grid-gap">
-
         <div class="grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
             <div class="add-pin-top bg-secondary-light padding-2 text-ink is-inverse">
@@ -478,16 +638,18 @@ subnav:
             </div>
           </div>
         </div>
-
       </div>
     </section>
-
   </section>
 
   <section class="utility" id="z-index">
     <section class="utility-title-bar">
       <div class="grid-row">
-        <h3 class="grid-col-auto size-sans-6 margin-top-0 margin-bottom-105">Z-index</h3>
+        <div class="grid-col-fill">
+          <h3 class="grid-col-auto utility-title">Z-index</h3>
+          <p class="utility-property">CSS property: <span class="utility-property-code">z-index</span></p>
+        </div>
+
         <ul class="grid-col-auto utility-scope">
           <li class="utility-scope-button-disabled">responsive</li>
           <li class="utility-scope-button-disabled">active</li>
@@ -497,27 +659,44 @@ subnav:
         </ul>
       </div>
     </section>
-    <div class="position-relative" style="height:120px">
-      <div class="z-top position-absolute margin-left-0 margin-top-0 bg-gray-30 height-9 width-9 padding-2">.z-top</div>
-      <div class="z-500 position-absolute margin-left-1 margin-top-1 bg-gray-40 height-9 width-9 padding-2">.z-500</div>
-      <div class="z-400 position-absolute margin-left-2 margin-top-2 bg-gray-50 height-9 width-9 padding-2">.z-400</div>
-      <div class="z-300 position-absolute margin-left-3 margin-top-3 bg-gray-60 height-9 width-9 padding-2">.z-300</div>
-      <div class="z-200 position-absolute margin-left-4 margin-top-4 bg-gray-70 height-9 width-9 padding-2">.z-200</div>
-      <div class="z-100 position-absolute margin-left-5 margin-top-5 bg-gray-80 height-9 width-9 padding-2">.z-100</div>
-      <div class="z-0 position-absolute margin-left-6 margin-top-6 bg-gray-90 height-9 width-9 padding-2">.z-0</div>
-      <div class="z-bottom position-absolute margin-left-7 margin-top-7 bg-black height-9 width-9 padding-2">.z-bottom</div>
-    </div>
-    <section class="border-top-1px padding-top-1 margin-top-4 margin-bottom-2">
-      <h3 class="utility-examples-title">Markup</h3>
+    <section class="utility-examples">
+      <div class="bg-white border border-ink radius-lg width-card-lg padding-2 minh-10 margin-left-0 display-flex flex-justify flex-align-start">
+        <span class="utility-class">.z-auto</span>
+        <span class="utility-value">auto</span>
+      </div>
+      <div class="bg-white border border-ink radius-lg width-card-lg padding-2 minh-10 margin-left-0 display-flex flex-justify flex-align-start margin-top-2 ">
+        <span class="utility-class">.z-bottom</span>
+        <span class="utility-value">-100</span>
+      </div>
+      <div class="bg-white border border-ink radius-lg width-card-lg padding-2 minh-10 margin-top-neg-3 display-flex flex-justify flex-align-start">
+        <span class="utility-class">.z-0</span>
+        <span class="utility-value">0</span>
+      </div>
+      <div class="bg-white border border-ink radius-lg width-card-lg padding-2 minh-10 margin-top-neg-3 display-flex flex-justify flex-align-start">
+        <span class="utility-class">.z-100</span>
+        <span class="utility-value">100</span>
+      </div>
+      <div class="bg-white border border-ink radius-lg width-card-lg padding-2 minh-10 margin-top-neg-3 display-flex flex-justify flex-align-start">
+        <span class="utility-class">.z-200</span>
+        <span class="utility-value">200</span>
+      </div>
+      <div class="bg-white border border-ink radius-lg width-card-lg padding-2 minh-10 margin-top-neg-3 display-flex flex-justify flex-align-start">
+        <span class="utility-class">.z-300</span>
+        <span class="utility-value">300</span>
+      </div>
+      <div class="bg-white border border-ink radius-lg width-card-lg padding-2 minh-10 margin-top-neg-3 display-flex flex-justify flex-align-start">
+        <span class="utility-class">.z-400</span>
+        <span class="utility-value">400</span>
+      </div>
+      <div class="bg-white border border-ink radius-lg width-card-lg padding-2 minh-10 margin-top-neg-3 display-flex flex-justify flex-align-start">
+        <span class="utility-class">.z-500</span>
+        <span class="utility-value">500</span>
+      </div>
+      <div class="bg-white border border-ink radius-lg width-card-lg padding-2 minh-10 margin-top-neg-3 display-flex flex-justify flex-align-start margin-bottom-2">
+        <span class="utility-class">.z-top</span>
+        <span class="utility-value">99999</span>
+      </div>
     </section>
-<pre class="utility-code-sample"><code>&lt;div class="z-top position-absolute ..."&gt;.z-top&lt;/div&gt;
-&lt;div class="z-500 position-absolute ..."&gt;.z-500&lt;/div&gt;
-&lt;div class="z-400 position-absolute ..."&gt;.z-400&lt;/div&gt;
-&lt;div class="z-300 position-absolute ..."&gt;.z-300&lt;/div&gt;
-&lt;div class="z-200 position-absolute ..."&gt;.z-200&lt;/div&gt;
-&lt;div class="z-100 position-absolute ..."&gt;.z-100&lt;/div&gt;
-&lt;div class="z-0 position-absolute ..."&gt;.z-0&lt;/div&gt;
-&lt;div class="z-bottom position-absolute ..."&gt;.z-bottom&lt;/div&gt;</code></pre>
   </section>
 </section>
 
@@ -533,11 +712,108 @@ subnav:
     <div class="grid-col-2">Default variable value</div>
   </div>
   <dl class="output-list">
-    {% for utility in site.data.utilities.display %}
-      <dt class="output-utility">{{ utility.class }}</dt>
-      <dd class="output-css">{{ utility.value }}</dd>
+    {% assign display_values = "block, flex, inline, inline-block, infline-flex, table, table-cell"
+      | split: ', ' %}
+    {% for value in display_values %}
+      <dt class="output-utility">.display-{{ value }}</dt>
+      <dd class="output-css"><span>display: {{ value }}</span></dd>
       <dd class="output-variable">—</dd>
     {% endfor %}
+
+    {% for item in site.data.uswds_tokens.opacity %}
+      <dt class="output-utility">.opacity-{{ item.token }}</dt>
+      <dd class="output-css"><span>opacity: {{ item.value }}</span></dd>
+      <dd class="output-variable">—</dd>
+    {% endfor %}
+
+    {% assign overflow_modifiers = ", -x, -y"
+      | split: ', ' %}
+    {% assign overflow_values = "visible, hidden, scroll, auto"
+      | split: ', ' %}
+    {% for modifier in overflow_modifiers %}
+      {% for value in overflow_values %}
+        <dt class="output-utility">.overflow{{ modifier }}-{{ value }}</dt>
+        <dd class="output-css"><span>overflow{{ modifier }}: {{ value }}</span></dd>
+        <dd class="output-variable">—</dd>
+      {% endfor %}
+    {% endfor %}
+
+    {% assign position_values = "absolute, fixed, relative, static, sticky"
+      | split: ', ' %}
+    {% for value in position_values %}
+      <dt class="output-utility">.position-{{ value }}</dt>
+      <dd class="output-css"><span>position: {{ value }}</span></dd>
+      <dd class="output-variable">—</dd>
+    {% endfor %}
+
+    {% assign rp_modifiers = "bottom, left, right, top"
+      | split: ', ' %}
+    {% for modifier in rp_modifiers %}
+      {% for value in rp_spacing %}
+        <dt class="output-utility">.{{ modifier }}-{{ value.token }}</dt>
+        {% if value.scss %}
+          <dd class="output-css">
+            <span>{{ modifier }}: <span class="output-token">{{ value.scss }}</span>
+            </span>
+          </dd>
+          <dd class="output-variable">{{ value.value }}</dd>
+        {% else %}
+          <dd class="output-css"><span>{{ modifier }}: {{ value.value }}</span></dd>
+          <dd class="output-variable">—</dd>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+
+    <dt class="output-utility">.add-pin-bottom</dt>
+    <dd class="output-css">
+      <span class="">
+        <span class="output-rule">bottom: 0</span>
+        <span class="output-rule">left: 0</span>
+        <span class="output-rule">right: 0</span>
+        <span class="output-rule">position: absolute</span>
+      </span>
+    </dd>
+    <dd class="output-variable">—</dd>
+
+    <dt class="output-utility">.add-pin-left</dt>
+    <dd class="output-css">
+      <span class="">
+        <span class="output-rule">bottom: 0</span>
+        <span class="output-rule">left: 0</span>
+        <span class="output-rule">top: 0</span>
+        <span class="output-rule">position: absolute</span>
+      </span>
+    </dd>
+    <dd class="output-variable">—</dd>
+
+    <dt class="output-utility">.add-pin-right</dt>
+    <dd class="output-css">
+      <span class="">
+        <span class="output-rule">bottom: 0</span>
+        <span class="output-rule">right: 0</span>
+        <span class="output-rule">top: 0</span>
+        <span class="output-rule">position: absolute</span>
+      </span>
+    </dd>
+    <dd class="output-variable">—</dd>
+
+    <dt class="output-utility">.add-pin-top</dt>
+    <dd class="output-css">
+      <span class="">
+        <span class="output-rule">left: 0</span>
+        <span class="output-rule">right: 0</span>
+        <span class="output-rule">top: 0</span>
+        <span class="output-rule">position: absolute</span>
+      </span>
+    </dd>
+    <dd class="output-variable">—</dd>
+
+    {% for value in site.data.uswds_tokens.z_index %}
+      <dt class="output-utility">.z-{{ value.token }}</dt>
+      <dd class="output-css"><span>z-index: {{ value.value }}</span></dd>
+      <dd class="output-variable">—</dd>
+    {% endfor %}
+
   </dl>
 </section>
 

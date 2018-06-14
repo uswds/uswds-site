@@ -1127,6 +1127,7 @@ code {
   code {
     background: none;
     font-size: 1.2rem;
+    margin-bottom: 0;
     margin-top: 0;
     padding: 0;
   }
@@ -1875,14 +1876,14 @@ strong {
   .output-utility, .output-css, .output-variable {
     @include u-border-bottom(1px);
     @include u-border-bottom($gray-20);
+    @include u-display(flex);
+    @include u-flex(align-center);
     @include u-margin(0);
     @include u-minh(4);
     @include u-padding-y(.5);
   }
   .output-utility {
     @include grid-col(4);
-    @include u-display(flex);
-    @include u-flex(align-center);
     @include u-font(sans, 2xs);
     @include u-padding-right(2);
   }
@@ -1898,8 +1899,6 @@ strong {
   }
   .output-variable {
     @include grid-col(2);
-    @include u-display(flex);
-    @include u-flex(align-center);
     @include u-font(mono, 2xs);
     @include u-text(light);
   }
@@ -2166,4 +2165,30 @@ body {
 
 .foo {
   @include u-bg(white);
+}
+
+.markdown-test {
+  code,
+  pre {
+    background-color: $base-lightest;
+  }
+
+  pre {
+    border: 1px solid $base-lighter;
+  }
+}
+
+code,
+pre {
+  @include u-font-family(mono);
+}
+
+.usa-code-sample pre,
+.usa-code-sample code {
+  @include u-font-size(mono, 2xs);
+  @include u-line-height(mono, 4);
+}
+
+.site-nav-secondary.sticky {
+  @include u-z(200);
 }

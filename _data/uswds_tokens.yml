@@ -22,6 +22,10 @@ special:
   full_viewport_width:
     - token: viewport
       value: 100vh
+  spacing_05:
+    - token: '05'
+      value: 4px
+      scss: spacing(.5)
 
 spacing:
   positive:
@@ -131,6 +135,17 @@ spacing:
         scss: spacing(-3)
 
 colors:
+  required:
+    - token: transparent
+      value: transparent
+    - token: black
+      value: '#000000'
+    - token: white
+      value: '#ffffff'
+    - token: highlight
+      value: '#E6A100'
+      var: $gold-30v
+
   transparent:
     - token: transparent
       value: transparent

@@ -1,8 +1,8 @@
 ---
-permalink: /utilities/border-and-outline/
+permalink: /utilities/border/
 layout: styleguide
 type: utility
-title: Border and outline
+title: Border
 category: Utilities
 lead: Set width, color, style, and radius of an item’s borders
 subnav:

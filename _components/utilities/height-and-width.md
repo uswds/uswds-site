@@ -26,6 +26,71 @@ subnav:
   href: '#square'
 ---
 
+{% assign height_values = site.data.uswds_tokens.special.auto_auto
+  | concat: site.data.uswds_tokens.special.zero_zero
+  | concat: site.data.uswds_tokens.spacing.positive.smaller
+  | concat: site.data.uswds_tokens.spacing.positive.small
+  | concat: site.data.uswds_tokens.spacing.positive.medium
+  | concat: site.data.uswds_tokens.spacing.positive.large
+  | concat: site.data.uswds_tokens.special.full_percent
+  | concat: site.data.uswds_tokens.special.full_viewport_height
+%}
+
+{% assign width_values = site.data.uswds_tokens.special.auto_auto
+  | concat: site.data.uswds_tokens.special.zero_zero
+  | concat: site.data.uswds_tokens.spacing.positive.smaller
+  | concat: site.data.uswds_tokens.spacing.positive.small
+  | concat: site.data.uswds_tokens.spacing.positive.medium
+  | concat: site.data.uswds_tokens.spacing.positive.large
+  | concat: site.data.uswds_tokens.spacing.positive.larger
+  | concat: site.data.uswds_tokens.spacing.positive.largest
+  | concat: site.data.uswds_tokens.special.full_percent
+%}
+
+{% assign maxh_values = site.data.uswds_tokens.special.none_none
+  | concat: site.data.uswds_tokens.spacing.positive.small
+  | concat: site.data.uswds_tokens.spacing.positive.medium
+  | concat: site.data.uswds_tokens.spacing.positive.large
+  | concat: site.data.uswds_tokens.spacing.positive.larger
+  | concat: site.data.uswds_tokens.special.full_viewport_height
+%}
+
+{% assign maxw_values = site.data.uswds_tokens.special.none_none
+  | concat: site.data.uswds_tokens.spacing.positive.small
+  | concat: site.data.uswds_tokens.spacing.positive.medium
+  | concat: site.data.uswds_tokens.spacing.positive.large
+  | concat: site.data.uswds_tokens.spacing.positive.larger
+  | concat: site.data.uswds_tokens.spacing.positive.largest
+  | concat: site.data.uswds_tokens.special.full_percent
+%}
+
+{% assign minh_values = site.data.uswds_tokens.special.none_none
+  | concat: site.data.uswds_tokens.special.zero_zero
+  | concat: site.data.uswds_tokens.spacing.positive.small
+  | concat: site.data.uswds_tokens.spacing.positive.medium
+  | concat: site.data.uswds_tokens.spacing.positive.large
+  | concat: site.data.uswds_tokens.spacing.positive.larger
+  | concat: site.data.uswds_tokens.special.full_percent
+  | concat: site.data.uswds_tokens.special.full_viewport_height
+%}
+
+{% assign minw_values = site.data.uswds_tokens.special.none_none
+  | concat: site.data.uswds_tokens.spacing.positive.small
+  | concat: site.data.uswds_tokens.spacing.positive.medium
+%}
+
+{% assign circle_values = site.data.uswds_tokens.spacing.positive.smaller
+  | concat: site.data.uswds_tokens.spacing.positive.small
+  | concat: site.data.uswds_tokens.spacing.positive.medium
+  | concat: site.data.uswds_tokens.spacing.positive.large
+%}
+
+{% assign square_values = site.data.uswds_tokens.spacing.positive.smaller
+  | concat: site.data.uswds_tokens.spacing.positive.small
+  | concat: site.data.uswds_tokens.spacing.positive.medium
+  | concat: site.data.uswds_tokens.spacing.positive.large
+%}
+
 <div class="utilities-properties">
   <h3 class="utilities-property-title">CSS properties</h3>
   <div class="margin-top-1">
@@ -61,15 +126,6 @@ subnav:
       </div>
     </section><!-- .utility-title-bar -->
     <section class="utility-examples">
-      {% assign height_values = site.data.uswds_tokens.special.auto_auto
-        | concat: site.data.uswds_tokens.special.zero_zero
-        | concat: site.data.uswds_tokens.spacing.positive.smaller
-        | concat: site.data.uswds_tokens.spacing.positive.small
-        | concat: site.data.uswds_tokens.spacing.positive.medium
-        | concat: site.data.uswds_tokens.spacing.positive.large
-        | concat: site.data.uswds_tokens.special.full_percent
-        | concat: site.data.uswds_tokens.special.full_viewport_height
-      %}
       <div class="grid-row grid gap">
         {% for item in height_values %}
           <div class="grid-col-{% if forloop.last %}fill{% else %}2{% endif %} utility-example-container display-flex flex-column flex-justify-end">
@@ -101,16 +157,6 @@ subnav:
       </div>
     </section><!-- .utility-title-bar -->
     <section class="utility-examples">
-      {% assign width_values = site.data.uswds_tokens.special.auto_auto
-        | concat: site.data.uswds_tokens.special.zero_zero
-        | concat: site.data.uswds_tokens.spacing.positive.smaller
-        | concat: site.data.uswds_tokens.spacing.positive.small
-        | concat: site.data.uswds_tokens.spacing.positive.medium
-        | concat: site.data.uswds_tokens.spacing.positive.large
-        | concat: site.data.uswds_tokens.spacing.positive.larger
-        | concat: site.data.uswds_tokens.spacing.positive.largest
-        | concat: site.data.uswds_tokens.special.full_percent
-      %}
       <div class="grid-row grid gap">
         {% for item in width_values %}
           <div class="grid-col-12 utility-example-container-condensed grid-row flex-align-center {% if forloop.last %} border-0{% endif %}">
@@ -144,13 +190,6 @@ subnav:
       </div>
     </section><!-- .utility-title-bar -->
     <section class="utility-examples">
-      {% assign maxh_values = site.data.uswds_tokens.special.none_none
-        | concat: site.data.uswds_tokens.spacing.positive.small
-        | concat: site.data.uswds_tokens.spacing.positive.medium
-        | concat: site.data.uswds_tokens.spacing.positive.large
-        | concat: site.data.uswds_tokens.spacing.positive.larger
-        | concat: site.data.uswds_tokens.special.full_viewport_height
-      %}
       {% for item in maxh_values %}
         <p class="utility-example-container-condensed {% if forloop.last %}border-0{% endif %}">
           <span class="utility-class">.maxh-{{ item.token }}</span>
@@ -177,14 +216,6 @@ subnav:
       </div>
     </section><!-- .utility-title-bar -->
     <section class="utility-examples">
-      {% assign maxw_values = site.data.uswds_tokens.special.none_none
-        | concat: site.data.uswds_tokens.spacing.positive.small
-        | concat: site.data.uswds_tokens.spacing.positive.medium
-        | concat: site.data.uswds_tokens.spacing.positive.large
-        | concat: site.data.uswds_tokens.spacing.positive.larger
-        | concat: site.data.uswds_tokens.spacing.positive.largest
-        | concat: site.data.uswds_tokens.special.full_percent
-      %}
       {% for item in maxw_values %}
         <p class="utility-example-container-condensed {% if forloop.last %}border-0{% endif %}">
           <span class="utility-class">.maxw-{{ item.token }}</span>
@@ -211,15 +242,6 @@ subnav:
       </div>
     </section><!-- .utility-title-bar -->
     <section class="utility-examples">
-      {% assign minh_values = site.data.uswds_tokens.special.none_none
-        | concat: site.data.uswds_tokens.special.zero_zero
-        | concat: site.data.uswds_tokens.spacing.positive.small
-        | concat: site.data.uswds_tokens.spacing.positive.medium
-        | concat: site.data.uswds_tokens.spacing.positive.large
-        | concat: site.data.uswds_tokens.spacing.positive.larger
-        | concat: site.data.uswds_tokens.special.full_percent
-        | concat: site.data.uswds_tokens.special.full_viewport_height
-      %}
       {% for item in minh_values %}
         <p class="utility-example-container-condensed {% if forloop.last %}border-0{% endif %}">
           <span class="utility-class">.minh-{{ item.token }}</span>
@@ -246,10 +268,6 @@ subnav:
       </div>
     </section><!-- .utility-title-bar -->
     <section class="utility-examples">
-      {% assign minw_values = site.data.uswds_tokens.special.none_none
-        | concat: site.data.uswds_tokens.spacing.positive.small
-        | concat: site.data.uswds_tokens.spacing.positive.medium
-      %}
       {% for item in minw_values %}
         <p class="utility-example-container-condensed {% if forloop.last %}border-0{% endif %}">
           <span class="utility-class">.minw-{{ item.token }}</span>
@@ -327,11 +345,6 @@ subnav:
     </section><!-- .utility-title-bar -->
     <section class="utility-examples">
       <div class="grid-row grid-gap">
-        {% assign circle_values = site.data.uswds_tokens.spacing.positive.smaller
-          | concat: site.data.uswds_tokens.spacing.positive.small
-          | concat: site.data.uswds_tokens.spacing.positive.medium
-          | concat: site.data.uswds_tokens.spacing.positive.large
-        %}
         {% for item in circle_values %}
           {% if forloop.index > 1 %}
             <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.index > 13 and forloop.last == false %} grid-col-6{% elsif forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
@@ -364,11 +377,6 @@ subnav:
     </section><!-- .utility-title-bar -->
     <section class="utility-examples">
       <div class="grid-row grid-gap">
-        {% assign square_values = site.data.uswds_tokens.spacing.positive.smaller
-          | concat: site.data.uswds_tokens.spacing.positive.small
-          | concat: site.data.uswds_tokens.spacing.positive.medium
-          | concat: site.data.uswds_tokens.spacing.positive.large
-        %}
         {% for item in square_values %}
           {% if forloop.index > 1 %}
             <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.index > 13 and forloop.last == false %} grid-col-6{% elsif forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
@@ -396,22 +404,172 @@ subnav:
       <div class="grid-col-2">Default variable value</div>
     </div>
     <dl class="output-list">
-      {% for color in all_colors %}
-        <dt class="output-utility">.text-{{ color.token }}</dt>
-        <dd class="output-css">color: <span class="output-token">${% if color.var %}{{ color.token }}{% else %}{{ color.token }}{% endif %}</span></dd>
-        <dd class="output-variable">
-          <span class="display-inline-block bg-{{ color.token }} circle-105 text-baseline margin-right-05"></span>
-          {{ color.value }}
-        </dd>
+      {% assign this_utility = 'height' %}
+      {% assign this_property = 'height' %}
+      {% for value in height_values %}
+        <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
+        {% if value.scss %}
+          <dd class="output-css">
+            <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
+            </span>
+          </dd>
+          <dd class="output-variable">{{ value.value }}</dd>
+        {% else %}
+          <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
+          <dd class="output-variable">—</dd>
+        {% endif %}
       {% endfor %}
-      {% for color in all_colors %}
-        <dt class="output-utility">.bg-{{ color.token }}</dt>
-        <dd class="output-css">background-color: <span class="output-token">${% if color.var %}{{ color.var }}{% else %}{{ color.token }}{% endif %}</span></dd>
-        <dd class="output-variable">
-          <span class="display-inline-block bg-{{ color.token }} circle-105 text-baseline margin-right-05"></span>
-          {{ color.value }}
-        </dd>
+
+      {% assign this_utility = 'width' %}
+      {% assign this_property = 'width' %}
+      {% for value in width_values %}
+        <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
+        {% if value.scss %}
+          <dd class="output-css">
+            <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
+            </span>
+          </dd>
+          <dd class="output-variable">{{ value.value }}</dd>
+        {% else %}
+          <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
+          <dd class="output-variable">—</dd>
+        {% endif %}
       {% endfor %}
+
+      {% assign this_utility = 'maxh' %}
+      {% assign this_property = 'max-height' %}
+      {% for value in maxh_values %}
+        <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
+        {% if value.scss %}
+          <dd class="output-css">
+            <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
+            </span>
+          </dd>
+          <dd class="output-variable">{{ value.value }}</dd>
+        {% else %}
+          <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
+          <dd class="output-variable">—</dd>
+        {% endif %}
+      {% endfor %}
+
+      {% assign this_utility = 'maxw' %}
+      {% assign this_property = 'max-width' %}
+      {% for value in maxw_values %}
+        <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
+        {% if value.scss %}
+          <dd class="output-css">
+            <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
+            </span>
+          </dd>
+          <dd class="output-variable">{{ value.value }}</dd>
+        {% else %}
+          <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
+          <dd class="output-variable">—</dd>
+        {% endif %}
+      {% endfor %}
+
+      {% assign this_utility = 'minh' %}
+      {% assign this_property = 'min-height' %}
+      {% for value in minh_values %}
+        <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
+        {% if value.scss %}
+          <dd class="output-css">
+            <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
+            </span>
+          </dd>
+          <dd class="output-variable">{{ value.value }}</dd>
+        {% else %}
+          <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
+          <dd class="output-variable">—</dd>
+        {% endif %}
+      {% endfor %}
+
+      {% assign this_utility = 'circle' %}
+      {% assign this_property = 'height, width'
+        | split: ', '
+      %}
+      {% assign this_rule = 'border-radius: 50%'
+        | split: ', '
+      %}
+      {% for value in minw_values %}
+        <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
+        {% if value.scss %}
+          <dd class="output-css">
+            <span>
+              {% if this_property %}
+                {% for property in this_property %}
+                <span class="output-rule">{{ property }}: <span class="output-token">{{ value.scss }}</span></span>
+                {% endfor %}
+              {% endif %}
+              {% if this_rule %}
+                {% for rule in this_rule %}
+                <span class="output-rule">{{ rule }}</span>
+                {% endfor %}
+              {% endif %}
+            </span>
+          </dd>
+          <dd class="output-variable">{{ value.value }}</dd>
+        {% else %}
+          <dd class="output-css">
+            <span>
+              {% if this_property %}
+                {% for property in this_property %}
+                <span class="output-rule">{{ property }}: {{ value.value }}</span>
+                {% endfor %}
+              {% endif %}
+              {% if this_rule %}
+                {% for rule in this_rule %}
+                <span class="output-rule">{{ rule }}</span>
+                {% endfor %}
+              {% endif %}
+            </span>
+          </dd>
+          <dd class="output-variable">—</dd>
+        {% endif %}
+      {% endfor %}
+
+      {% assign this_utility = 'square' %}
+      {% assign this_property = 'height, width'
+        | split: ', '
+      %}
+      {% assign this_rule = false %}
+      {% for value in minw_values %}
+        <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
+        {% if value.scss %}
+          <dd class="output-css">
+            <span>
+              {% if this_property %}
+                {% for property in this_property %}
+                <span class="output-rule">{{ property }}: <span class="output-token">{{ value.scss }}</span></span>
+                {% endfor %}
+              {% endif %}
+              {% if this_rule %}
+                {% for rule in this_rule %}
+                <span class="output-rule">{{ rule }}</span>
+                {% endfor %}
+              {% endif %}
+            </span>
+          </dd>
+          <dd class="output-variable">{{ value.value }}</dd>
+        {% else %}
+          <dd class="output-css">
+            <span>
+              {% if this_property %}
+                {% for property in this_property %}
+                <span class="output-rule">{{ property }}: {{ value.value }}</span>
+                {% endfor %}
+              {% endif %}
+              {% if this_rule %}
+                {% for rule in this_rule %}
+                <span class="output-rule">{{ rule }}</span>
+                {% endfor %}
+              {% endif %}
+            </span>
+          </dd>
+          <dd class="output-variable">—</dd>
+        {% endif %}
+      {% endfor %}
+
     </dl>
   </section>
 

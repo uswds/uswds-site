@@ -4,7 +4,7 @@ layout: styleguide
 type: utility
 title: Layout grid
 category: Utilities
-lead: USWDS uses a 12-column layout grid. See layout grid example here.
+lead: Control the layout of items with a 12-column grid.
 ---
 
 <div class="font-mono-4">

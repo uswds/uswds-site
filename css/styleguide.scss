@@ -1875,7 +1875,7 @@ strong {
   @include u-width(full);
   .output-utility, .output-css, .output-variable {
     @include u-border-bottom(1px);
-    @include u-border-bottom($gray-20);
+    @include u-border-bottom($base-light);
     @include u-display(flex);
     @include u-flex(align-center);
     @include u-margin(0);
@@ -1908,7 +1908,7 @@ strong {
   @include u-bg(white);
   @include u-border(1px, $gray-10);
   @include u-font('mono', 4);
-  @include u-padding-x(1);
+  @include u-padding-x(0.5);
   @include u-padding-y(2px);
   @include u-radius('sm');
   @include u-text(400);
@@ -1966,11 +1966,6 @@ li.display-inline-block {
   @include u-font(serif, 8);
   @include u-margin(0);
   @include u-text(normal);
-
-  code {
-    @include u-bg(white);
-    @include u-text(light);
-  }
 }
 
 .utilities-section-helper {
@@ -2054,13 +2049,15 @@ li.display-inline-block {
 }
 
 .utilities-section-title code {
+  @include u-bg(white);
   @include u-border(1px);
   @include u-display(inline-block);
   @include u-font(mono, 6);
   @include u-margin-right(2px);
-  @include u-padding-x(.5);
+  @include u-padding-x(0);
   @include u-padding-y(2px);
   @include u-radius(md);
+  @include u-text(light);
 }
 
 .utility-examples {

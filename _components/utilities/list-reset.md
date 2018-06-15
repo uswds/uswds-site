@@ -78,10 +78,12 @@ lead: Reset default list styling
     <dl class="output-list">
       <dt class="output-utility">.add-list-reset</dt>
       <dd class="output-css">
-        list-style: none;<br>
-        margin-bottom: 0;<br>
-        margin-top: 0;<br>
-        padding-left: 0;
+        <span>
+          <span class="output-rule">list-style: none</span>
+          <span class="output-rule">margin-bottom: 0</span>
+          <span class="output-rule">margin-top: 0</span>
+          <span class="output-rule">padding-left: 0</span>
+        </span>
       </dd>
       <dd class="output-variable">—</dd>
     </dl>

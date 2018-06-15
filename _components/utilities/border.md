@@ -507,13 +507,17 @@ subnav:
             <dt class="output-utility">.border{{ modifier }}</dt>
             <dd class="output-css">
               {% if modifier == '-x' %}
-              <span class="output-rule">border-left: {{ noValue_value }} solid;</span>
-              <span class="output-rule">border-right: {{ noValue_value }} solid;</span>
+              <span>
+                <span class="output-rule">border-left: {{ noValue_value }} solid</span>
+                <span class="output-rule">border-right: {{ noValue_value }} solid</span>
+              </span>
               {% elsif modifier == '-y' %}
-              <span class="output-rule">border-bottom: {{ noValue_value }} solid;</span>
-              <span class="output-rule">border-top: {{ noValue_value }} solid;</span>
+              <span>
+                <span class="output-rule">border-bottom: {{ noValue_value }} solid</span>
+                <span class="output-rule">border-top: {{ noValue_value }} solid</span>
+              </span>
               {% else %}
-              <span class="output-rule">border{{ modifier }}: {{ noValue_value }}  solid;</span>
+              <span class="output-rule">border{{ modifier }}: {{ noValue_value }}  solid</span>
               {% endif %}
             </dd>
             <dd class="output-variable">{% if item.scss %}{{ item.value }}{% else %}—{% endif %}</dd>
@@ -521,13 +525,17 @@ subnav:
             <dt class="output-utility">.border{{ modifier }}-{{ item.token }}</dt>
             <dd class="output-css">
               {% if modifier == '-x' %}
-              <span class="output-rule">border-left: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %} solid;</span>
-              <span class="output-rule">border-right: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %} solid;</span>
+              <span>
+                <span class="output-rule">border-left: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %} solid</span>
+                <span class="output-rule">border-right: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %} solid</span>
+              </span>
               {% elsif modifier == '-y' %}
-              <span class="output-rule">border-bottom: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %} solid;</span>
-              <span class="output-rule">border-top: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %} solid;</span>
+              <span>
+                <span class="output-rule">border-bottom: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %} solid</span>
+                <span class="output-rule">border-top: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %} solid</span>
+              </span>
               {% else %}
-              <span class="output-rule">border{{ modifier }}: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %} solid;</span>
+              <span class="output-rule">border{{ modifier }}: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %} solid</span>
               {% endif %}
             </dd>
             <dd class="output-variable">{% if item.scss %}{{ item.value }}{% else %}—{% endif %}</dd>
@@ -535,15 +543,15 @@ subnav:
         {% endfor %}
       {% endfor %}
       <dt class="output-utility">.border-dashed</dt>
-      <dd class="output-css">border-style: dashed;</dd>
+      <dd class="output-css">border-style: dashed</dd>
       <dd class="output-variable">—</dd>
 
       <dt class="output-utility">.border-dotted</dt>
-      <dd class="output-css">border-style: dotted;</dd>
+      <dd class="output-css">border-style: dotted</dd>
       <dd class="output-variable">—</dd>
 
       <dt class="output-utility">.border-solid</dt>
-      <dd class="output-css">border-style: solid;</dd>
+      <dd class="output-css">border-style: solid</dd>
       <dd class="output-variable">—</dd>
       {% for modifier in border_modifiers %}
         {% for item in border_widths %}
@@ -551,13 +559,17 @@ subnav:
             <dt class="output-utility">.border{{ modifier }}-width-{{ item.token }}</dt>
             <dd class="output-css">
               {% if modifier == '-x' %}
-              <span class="output-rule">border-left-width: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %};</span>
-              <span class="output-rule">border-right-width: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %};</span>
+              <span>
+                <span class="output-rule">border-left-width: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %}</span>
+                <span class="output-rule">border-right-width: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %}</span>
+              </span>
               {% elsif modifier == '-y' %}
-              <span class="output-rule">border-bottom-width: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %};</span>
-              <span class="output-rule">border-top-width: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %};</span>
+              <span>
+                <span class="output-rule">border-bottom-width: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %}</span>
+                <span class="output-rule">border-top-width: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %}</span>
+              </span>
               {% else %}
-              <span class="output-rule">border{{ modifier }}-width: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %};</span>
+              <span class="output-rule">border{{ modifier }}-width: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %}</span>
               {% endif %}
             </dd>
             <dd class="output-variable">{% if item.scss %}{{ item.value }}{% else %}—{% endif %}</dd>
@@ -567,7 +579,7 @@ subnav:
       {% for color in all_colors %}
         <dt class="output-utility">.border-{{ color.token }}</dt>
         <dd class="output-css">
-          <span class="output-rule">border-color: {% if color.var %}<span class="output-token">{{ color.var }}</span>{% else %}{{ color.token }}{% endif %};</span>
+          <span class="output-rule">border-color: {% if color.var %}<span class="output-token">{{ color.var }}</span>{% else %}{{ color.token }}{% endif %}</span>
         </dd>
         <dd class="output-variable">
           {% if color.var %}
@@ -580,103 +592,103 @@ subnav:
       {% endfor %}
 
       <dt class="output-utility">.radius-0</dt>
-      <dd class="output-css">border-radius: 0;</dd>
+      <dd class="output-css">border-radius: 0</dd>
       <dd class="output-variable">—</dd>
 
       <dt class="output-utility">.radius-sm</dt>
-      <dd class="output-css">border-radius: <span class="output-token">spacing($theme-border-radius-sm)</span>;</dd>
+      <dd class="output-css"><span>border-radius: <span class="output-token">spacing($theme-border-radius-sm)</span></span></dd>
       <dd class="output-variable">2px</dd>
 
       <dt class="output-utility">.radius-md</dt>
-      <dd class="output-css">border-radius: <span class="output-token">spacing($theme-border-radius-md)</span>;</dd>
+      <dd class="output-css"><span>border-radius: <span class="output-token">spacing($theme-border-radius-md)</span></span></dd>
       <dd class="output-variable">4px</dd>
 
       <dt class="output-utility">.radius-lg</dt>
-      <dd class="output-css">border-radius: <span class="output-token">spacing($theme-border-radius-lg)</span>;</dd>
+      <dd class="output-css"><span>border-radius: <span class="output-token">spacing($theme-border-radius-lg)</span></span></dd>
       <dd class="output-variable">8px</dd>
 
       <dt class="output-utility">.radius-pill</dt>
-      <dd class="output-css">border-radius: <span class="output-token">spacing(pill)</span>;</dd>
+      <dd class="output-css"><span>border-radius: <span class="output-token">spacing(pill)</span></span></dd>
       <dd class="output-variable">9999em</dd>
 
       <dt class="output-utility">.radius-top-0</dt>
-      <dd class="output-css">border-top-radius: 0;</dd>
+      <dd class="output-css">border-top-radius: 0</dd>
       <dd class="output-variable">—</dd>
 
       <dt class="output-utility">.radius-top-sm</dt>
-      <dd class="output-css">border-top-radius: <span class="output-token">spacing($theme-border-radius-sm)</span>;</dd>
+      <dd class="output-css"><span>border-top-radius: <span class="output-token">spacing($theme-border-radius-sm)</span></span></dd>
       <dd class="output-variable">2px</dd>
 
       <dt class="output-utility">.radius-top-md</dt>
-      <dd class="output-css">border-top-radius: <span class="output-token">spacing($theme-border-radius-md)</span>;</dd>
+      <dd class="output-css"><span>border-top-radius: <span class="output-token">spacing($theme-border-radius-md)</span></span></dd>
       <dd class="output-variable">4px</dd>
 
       <dt class="output-utility">.radius-top-lg</dt>
-      <dd class="output-css">border-top-radius: <span class="output-token">spacing($theme-border-radius-lg)</span>;</dd>
+      <dd class="output-css"><span>border-top-radius: <span class="output-token">spacing($theme-border-radius-lg)</span></span></dd>
       <dd class="output-variable">8px</dd>
 
       <dt class="output-utility">.radius-top-pill</dt>
-      <dd class="output-css">border-top-radius: <span class="output-token">spacing(pill)</span>;</dd>
+      <dd class="output-css"><span>border-top-radius: <span class="output-token">spacing(pill)</span></span></dd>
       <dd class="output-variable">9999em</dd>
 
       <dt class="output-utility">.radius-bottom-0</dt>
-      <dd class="output-css">border-bottom-radius: 0;</dd>
+      <dd class="output-css">border-bottom-radius: 0</dd>
       <dd class="output-variable">—</dd>
 
       <dt class="output-utility">.radius-bottom-sm</dt>
-      <dd class="output-css">border-bottom-radius: <span class="output-token">spacing($theme-border-radius-sm)</span>;</dd>
+      <dd class="output-css"><span>border-bottom-radius: <span class="output-token">spacing($theme-border-radius-sm)</span></span></dd>
       <dd class="output-variable">2px</dd>
 
       <dt class="output-utility">.radius-bottom-md</dt>
-      <dd class="output-css">border-bottom-radius: <span class="output-token">spacing($theme-border-radius-md)</span>;</dd>
+      <dd class="output-css"><span>border-bottom-radius: <span class="output-token">spacing($theme-border-radius-md)</span></span></dd>
       <dd class="output-variable">4px</dd>
 
       <dt class="output-utility">.radius-bottom-lg</dt>
-      <dd class="output-css">border-bottom-radius: <span class="output-token">spacing($theme-border-radius-lg)</span>;</dd>
+      <dd class="output-css"><span>border-bottom-radius: <span class="output-token">spacing($theme-border-radius-lg)</span></span></dd>
       <dd class="output-variable">8px</dd>
 
       <dt class="output-utility">.radius-bottom-pill</dt>
-      <dd class="output-css">border-bottom-radius: <span class="output-token">spacing(pill)</span>;</dd>
+      <dd class="output-css"><span>border-bottom-radius: <span class="output-token">spacing(pill)</span></span></dd>
       <dd class="output-variable">9999em</dd>
 
       <dt class="output-utility">.radius-left-0</dt>
-      <dd class="output-css">border-left-radius: 0;</dd>
+      <dd class="output-css">border-left-radius: 0</dd>
       <dd class="output-variable">—</dd>
 
       <dt class="output-utility">.radius-left-sm</dt>
-      <dd class="output-css">border-left-radius: <span class="output-token">spacing($theme-border-radius-sm)</span>;</dd>
+      <dd class="output-css"><span>border-left-radius: <span class="output-token">spacing($theme-border-radius-sm)</span></span></dd>
       <dd class="output-variable">2px</dd>
 
       <dt class="output-utility">.radius-left-md</dt>
-      <dd class="output-css">border-left-radius: <span class="output-token">spacing($theme-border-radius-md)</span>;</dd>
+      <dd class="output-css"><span>border-left-radius: <span class="output-token">spacing($theme-border-radius-md)</span></span></dd>
       <dd class="output-variable">4px</dd>
 
       <dt class="output-utility">.radius-left-lg</dt>
-      <dd class="output-css">border-left-radius: <span class="output-token">spacing($theme-border-radius-lg)</span>;</dd>
+      <dd class="output-css"><span>border-left-radius: <span class="output-token">spacing($theme-border-radius-lg)</span></span></dd>
       <dd class="output-variable">8px</dd>
 
       <dt class="output-utility">.radius-left-pill</dt>
-      <dd class="output-css">border-left-radius: <span class="output-token">spacing(pill)</span>;</dd>
+      <dd class="output-css"><span>border-left-radius: <span class="output-token">spacing(pill)</span></span></dd>
       <dd class="output-variable">9999em</dd>
 
       <dt class="output-utility">.radius-right-0</dt>
-      <dd class="output-css">border-right-radius: 0;</dd>
+      <dd class="output-css">border-right-radius: 0</dd>
       <dd class="output-variable">—</dd>
 
       <dt class="output-utility">.radius-right-sm</dt>
-      <dd class="output-css">border-right-radius: <span class="output-token">spacing($theme-border-radius-sm)</span>;</dd>
+      <dd class="output-css"><span>border-right-radius: <span class="output-token">spacing($theme-border-radius-sm)</span></span></dd>
       <dd class="output-variable">2px</dd>
 
       <dt class="output-utility">.radius-right-md</dt>
-      <dd class="output-css">border-right-radius: <span class="output-token">spacing($theme-border-radius-md)</span>;</dd>
+      <dd class="output-css"><span>border-right-radius: <span class="output-token">spacing($theme-border-radius-md)</span></span></dd>
       <dd class="output-variable">4px</dd>
 
       <dt class="output-utility">.radius-right-lg</dt>
-      <dd class="output-css">border-right-radius: <span class="output-token">spacing($theme-border-radius-lg)</span>;</dd>
+      <dd class="output-css"><span>border-right-radius: <span class="output-token">spacing($theme-border-radius-lg)</span></span></dd>
       <dd class="output-variable">8px</dd>
 
       <dt class="output-utility">.radius-right-pill</dt>
-      <dd class="output-css">border-right-radius: <span class="output-token">spacing(pill)</span>;</dd>
+      <dd class="output-css"><span>border-right-radius: <span class="output-token">spacing(pill)</span></span></dd>
       <dd class="output-variable">9999em</dd>
 
     </dl>

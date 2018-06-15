@@ -36,7 +36,7 @@ lead: Clear any floated elements
       </div>
       <div class="usa-accordion-bordered usa-code-sample margin-top-4">
         <button class="usa-accordion-button" aria-controls="code-clearfix" aria-expanded="true">Code</button>
-        <div id="code-clearfix" class="usa-accordion-content margin-bottom-1 padding-bottom-05">
+        <div id="code-clearfix" class="usa-accordion-content margin-bottom-1">
 <div markdown="1">
 ```html
 <div class="clearfix">

@@ -573,319 +573,319 @@ subnav:
   <dl class="output-list">
     <dt class="output-utility">.line-height-sans-1</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(sans, 1)</span>;</span>
+      <span class="output-rule">line-height: <span class="output-token">lh(sans, 1)</span></span>
     </dd>
     <dd class="output-variable">0.94</dd>
 
     <dt class="output-utility">.line-height-serif-1</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(serif, 1)</span>;</span>
+      <span class="output-rule">line-height: <span class="output-token">lh(serif, 1)</span></span>
     </dd>
     <dd class="output-variable">1.06</dd>
 
     <dt class="output-utility">.line-height-mono-1</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(mono, 1)</span>;</span>
+      <span class="output-rule">line-height: <span class="output-token">lh(mono, 1)</span></span>
     </dd>
     <dd class="output-variable">1.05</dd>
 
     <dt class="output-utility">.line-height-sans-2</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(sans, 2)</span>;</span>
+      <span class="output-rule">line-height: <span class="output-token">lh(sans, 2)</span></span>
     </dd>
     <dd class="output-variable">1.08</dd>
 
     <dt class="output-utility">.line-height-serif-2</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(serif, 2)</span>;</span>
+      <span class="output-rule">line-height: <span class="output-token">lh(serif, 2)</span></span>
     </dd>
     <dd class="output-variable">1.22</dd>
 
     <dt class="output-utility">.line-height-mono-2</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(mono, 2)</span>;</span>
+      <span class="output-rule">line-height: <span class="output-token">lh(mono, 2)</span></span>
     </dd>
     <dd class="output-variable">1.21</dd>
 
     <dt class="output-utility">.line-height-sans-3</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(sans, 3)</span>;</span>
+      <span class="output-rule">line-height: <span class="output-token">lh(sans, 3)</span></span>
     </dd>
     <dd class="output-variable">1.27</dd>
 
     <dt class="output-utility">.line-height-serif-3</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(serif, 3)</span>;</span>
+      <span class="output-rule">line-height: <span class="output-token">lh(serif, 3)</span></span>
     </dd>
     <dd class="output-variable">1.44</dd>
 
     <dt class="output-utility">.line-height-mono-3</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(mono, 3)</span>;</span>
+      <span class="output-rule">line-height: <span class="output-token">lh(mono, 3)</span></span>
     </dd>
     <dd class="output-variable">1.42</dd>
 
     <dt class="output-utility">.line-height-sans-4</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(sans, 4)</span>;</span>
+      <span class="output-rule">line-height: <span class="output-token">lh(sans, 4)</span></span>
     </dd>
     <dd class="output-variable">1.41</dd>
 
     <dt class="output-utility">.line-height-serif-4</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(serif, 4)</span>;</span>
+      <span class="output-rule">line-height: <span class="output-token">lh(serif, 4)</span></span>
     </dd>
     <dd class="output-variable">1.60</dd>
 
     <dt class="output-utility">.line-height-mono-4</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(mono, 4)</span>;</span>
+      <span class="output-rule">line-height: <span class="output-token">lh(mono, 4)</span></span>
     </dd>
     <dd class="output-variable">1.57</dd>
 
     <dt class="output-utility">.line-height-sans-5</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(sans, 5)</span>;</span>
+      <span class="output-rule">line-height: <span class="output-token">lh(sans, 5)</span></span>
     </dd>
     <dd class="output-variable">1.52</dd>
 
     <dt class="output-utility">.line-height-serif-5</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(serif, 5)</span>;</span>
+      <span class="output-rule">line-height: <span class="output-token">lh(serif, 5)</span></span>
     </dd>
     <dd class="output-variable">1.72</dd>
 
     <dt class="output-utility">.line-height-mono-5</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(mono, 5)</span>;</span>
+      <span class="output-rule">line-height: <span class="output-token">lh(mono, 5)</span></span>
     </dd>
     <dd class="output-variable">1.70</dd>
 
     <dt class="output-utility">.line-height-sans-6</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(sans, 6)</span>;</span>
+      <span class="output-rule">line-height: <span class="output-token">lh(sans, 6)</span></span>
     </dd>
     <dd class="output-variable">1.64</dd>
 
     <dt class="output-utility">.line-height-serif-6</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(serif, 6)</span>;</span>
+      <span class="output-rule">line-height: <span class="output-token">lh(serif, 6)</span></span>
     </dd>
     <dd class="output-variable">1.86</dd>
 
     <dt class="output-utility">.line-height-mono-6</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(mono, 6)</span>;</span>
+      <span class="output-rule">line-height: <span class="output-token">lh(mono, 6)</span></span>
     </dd>
     <dd class="output-variable">1.84</dd>
 
     <dt class="output-utility">.measure-1</dt>
     <dd class="output-css">
-      <span class="output-rule">max-width: 40ch;</span>
+      <span class="output-rule">max-width: 40ch</span>
     </dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.measure-2</dt>
     <dd class="output-css">
-      <span class="output-rule">max-width: 60ch;</span>
+      <span class="output-rule">max-width: 60ch</span>
     </dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.measure-3</dt>
     <dd class="output-css">
-      <span class="output-rule">max-width: 66ch;</span>
+      <span class="output-rule">max-width: 66ch</span>
     </dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.measure-4</dt>
     <dd class="output-css">
-      <span class="output-rule">max-width: 72ch;</span>
+      <span class="output-rule">max-width: 72ch</span>
     </dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.measure-5</dt>
     <dd class="output-css">
-      <span class="output-rule">max-width: 77ch;</span>
+      <span class="output-rule">max-width: 77ch</span>
     </dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.measure-none</dt>
     <dd class="output-css">
-      <span class="output-rule">max-width: none;</span>
+      <span class="output-rule">max-width: none</span>
     </dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-left</dt>
     <dd class="output-css">
-      <span class="output-rule">text-align: left;</span>
+      <span class="output-rule">text-align: left</span>
     </dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-center</dt>
     <dd class="output-css">
-      <span class="output-rule">text-align: center;</span>
+      <span class="output-rule">text-align: center</span>
     </dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-right</dt>
     <dd class="output-css">
-      <span class="output-rule">text-align: right;</span>
+      <span class="output-rule">text-align: right</span>
     </dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-justify</dt>
     <dd class="output-css">
-      <span class="output-rule">text-align: justify;</span>
+      <span class="output-rule">text-align: justify</span>
     </dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-indent-neg-9</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">spacing(-9)</span>;</span>
+      <span class="output-rule">text-indent: <span class="output-token">spacing(-9)</span></span>
     </dd>
     <dd class="output-variable">-72px</dd>
 
     <dt class="output-utility">.text-indent-neg-8</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">spacing(-8)</span>;</span>
+      <span class="output-rule">text-indent: <span class="output-token">spacing(-8)</span></span>
     </dd>
     <dd class="output-variable">-64px</dd>
 
     <dt class="output-utility">.text-indent-neg-7</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">spacing(-7)</span>;</span>
+      <span class="output-rule">text-indent: <span class="output-token">spacing(-7)</span></span>
     </dd>
     <dd class="output-variable">-56px</dd>
 
     <dt class="output-utility">.text-indent-neg-6</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">spacing(-6)</span>;</span>
+      <span class="output-rule">text-indent: <span class="output-token">spacing(-6)</span></span>
     </dd>
     <dd class="output-variable">-48px</dd>
 
     <dt class="output-utility">.text-indent-neg-5</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">spacing(-5)</span>;</span>
+      <span class="output-rule">text-indent: <span class="output-token">spacing(-5)</span></span>
     </dd>
     <dd class="output-variable">-40px</dd>
 
     <dt class="output-utility">.text-indent-neg-4</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">spacing(-4)</span>;</span>
+      <span class="output-rule">text-indent: <span class="output-token">spacing(-4)</span></span>
     </dd>
     <dd class="output-variable">-32px</dd>
 
     <dt class="output-utility">.text-indent-neg-3</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">spacing(-3)</span>;</span>
+      <span class="output-rule">text-indent: <span class="output-token">spacing(-3)</span></span>
     </dd>
     <dd class="output-variable">-24px</dd>
 
     <dt class="output-utility">.text-indent-neg-205</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">spacing(-2.5)</span>;</span>
+      <span class="output-rule">text-indent: <span class="output-token">spacing(-2.5)</span></span>
     </dd>
     <dd class="output-variable">-20px</dd>
 
     <dt class="output-utility">.text-indent-neg-2</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">spacing(-2)</span>;</span>
+      <span class="output-rule">text-indent: <span class="output-token">spacing(-2)</span></span>
     </dd>
     <dd class="output-variable">-16px</dd>
 
     <dt class="output-utility">.text-indent-neg-105</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">spacing(-1.5)</span>;</span>
+      <span class="output-rule">text-indent: <span class="output-token">spacing(-1.5)</span></span>
     </dd>
     <dd class="output-variable">-12px</dd>
 
     <dt class="output-utility">.text-indent-neg-1</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">spacing(-1)</span>;</span>
+      <span class="output-rule">text-indent: <span class="output-token">spacing(-1)</span></span>
     </dd>
     <dd class="output-variable">-8px</dd>
 
     <dt class="output-utility">.text-indent-neg-05</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">spacing(-.5)</span>;</span>
+      <span class="output-rule">text-indent: <span class="output-token">spacing(-.5)</span></span>
     </dd>
     <dd class="output-variable">-4px</dd>
 
     <dt class="output-utility">.text-indent-0</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: 0;</span>
+      <span class="output-rule">text-indent: 0</span>
     </dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-indent-05</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">spacing(.5)</span>;</span>
+      <span class="output-rule">text-indent: <span class="output-token">spacing(.5)</span></span>
     </dd>
     <dd class="output-variable">4px</dd>
 
     <dt class="output-utility">.text-indent-1</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">spacing(1)</span>;</span>
+      <span class="output-rule">text-indent: <span class="output-token">spacing(1)</span></span>
     </dd>
     <dd class="output-variable">8px</dd>
 
     <dt class="output-utility">.text-indent-105</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">spacing(1.5)</span>;</span>
+      <span class="output-rule">text-indent: <span class="output-token">spacing(1.5)</span></span>
     </dd>
     <dd class="output-variable">12px</dd>
 
     <dt class="output-utility">.text-indent-2</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">spacing(2)</span>;</span>
+      <span class="output-rule">text-indent: <span class="output-token">spacing(2)</span></span>
     </dd>
     <dd class="output-variable">16px</dd>
 
     <dt class="output-utility">.text-indent-205</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">spacing(2.5)</span>;</span>
+      <span class="output-rule">text-indent: <span class="output-token">spacing(2.5)</span></span>
     </dd>
     <dd class="output-variable">20px</dd>
 
     <dt class="output-utility">.text-indent-3</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">spacing(3)</span>;</span>
+      <span class="output-rule">text-indent: <span class="output-token">spacing(3)</span></span>
     </dd>
     <dd class="output-variable">24px</dd>
 
     <dt class="output-utility">.text-indent-4</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">spacing(4)</span>;</span>
+      <span class="output-rule">text-indent: <span class="output-token">spacing(4)</span></span>
     </dd>
     <dd class="output-variable">32px</dd>
 
     <dt class="output-utility">.text-indent-5</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">spacing(5)</span>;</span>
+      <span class="output-rule">text-indent: <span class="output-token">spacing(5)</span></span>
     </dd>
     <dd class="output-variable">40px</dd>
 
     <dt class="output-utility">.text-indent-6</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">spacing(6)</span>;</span>
+      <span class="output-rule">text-indent: <span class="output-token">spacing(6)</span></span>
     </dd>
     <dd class="output-variable">48px</dd>
 
     <dt class="output-utility">.text-indent-7</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">spacing(7)</span>;</span>
+      <span class="output-rule">text-indent: <span class="output-token">spacing(7)</span></span>
     </dd>
     <dd class="output-variable">56px</dd>
 
     <dt class="output-utility">.text-indent-8</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">spacing(8)</span>;</span>
+      <span class="output-rule">text-indent: <span class="output-token">spacing(8)</span></span>
     </dd>
     <dd class="output-variable">64px</dd>
 
     <dt class="output-utility">.text-indent-9</dt>
     <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">spacing(9)</span>;</span>
+      <span class="output-rule">text-indent: <span class="output-token">spacing(9)</span></span>
     </dd>
     <dd class="output-variable">72px</dd>
 

@@ -124,7 +124,7 @@ subnav:
       {% for item in outline_widths %}
         <dt class="output-utility">.outline-{{ item.token }}</dt>
         <dd class="output-css">
-          <span class="output-rule">outline: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %} solid;</span>
+          <span class="output-rule">outline: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %} solid</span>
         </dd>
         <dd class="output-variable">{% if item.scss %}{{ item.value }}{% else %}—{% endif %}</dd>
       {% endfor %}
@@ -132,7 +132,7 @@ subnav:
       {% for color in outline_colors %}
         <dt class="output-utility">.outline-{{ color.token }}</dt>
         <dd class="output-css">
-          <span class="output-rule">outline-color: {% if color.var %}<span class="output-token">{{ color.var }}</span>{% else %}{{ color.token }}{% endif %};</span>
+          <span class="output-rule">outline-color: {% if color.var %}<span class="output-token">{{ color.var }}</span>{% else %}{{ color.token }}{% endif %}</span>
         </dd>
         <dd class="output-variable">
           {% if color.var %}

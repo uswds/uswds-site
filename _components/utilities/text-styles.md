@@ -399,91 +399,91 @@ colors:
   </div>
   <dl class="output-list">
     <dt class="output-utility">.text-tabular</dt>
-    <dd class="output-css">font-feature-settings: "tnum" 1, "kern" 1;</dd>
+    <dd class="output-css">font-feature-settings: "tnum" 1, "kern" 1</dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-no-tabular</dt>
-    <dd class="output-css">font-feature-settings: "kern" 1;</dd>
+    <dd class="output-css">font-feature-settings: "kern" 1</dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-italic</dt>
-    <dd class="output-css">font-style: italic;</dd>
+    <dd class="output-css">font-style: italic</dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-no-italic</dt>
-    <dd class="output-css">font-style: normal;</dd>
+    <dd class="output-css">font-style: normal</dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-thin</dt>
-    <dd class="output-css">font-weight: <span class="output-token">$theme-font-weight-thin</span>;</dd>
+    <dd class="output-css">font-weight: <span class="output-token">$theme-font-weight-thin</span></dd>
     <dd class="output-variable">200</dd>
 
     <dt class="output-utility">.text-light</dt>
-    <dd class="output-css">font-weight: <span class="output-token">$theme-font-weight-light</span>;</dd>
+    <dd class="output-css">font-weight: <span class="output-token">$theme-font-weight-light</span></dd>
     <dd class="output-variable">300</dd>
 
     <dt class="output-utility">.text-normal</dt>
-    <dd class="output-css">font-weight: normal;</dd>
+    <dd class="output-css">font-weight: normal</dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-medium</dt>
-    <dd class="output-css">font-weight: <span class="output-token">$theme-font-weight-medium</span>;</dd>
+    <dd class="output-css">font-weight: <span class="output-token">$theme-font-weight-medium</span></dd>
     <dd class="output-variable">500</dd>
 
     <dt class="output-utility">.text-semibold</dt>
-    <dd class="output-css">font-weight: <span class="output-token">$theme-font-weight-semibold</span>;</dd>
+    <dd class="output-css">font-weight: <span class="output-token">$theme-font-weight-semibold</span></dd>
     <dd class="output-variable">600</dd>
 
     <dt class="output-utility">.text-bold</dt>
-    <dd class="output-css">font-weight: bold;</dd>
+    <dd class="output-css">font-weight: bold</dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-heavy</dt>
-    <dd class="output-css">font-weight: <span class="output-token">$theme-font-weight-heavy</span>;</dd>
+    <dd class="output-css">font-weight: <span class="output-token">$theme-font-weight-heavy</span></dd>
     <dd class="output-variable">900</dd>
 
     <dt class="output-utility">.text-ls-neg-3</dt>
-    <dd class="output-css">letter-spacing: <span class="output-token">ls(-3)</span>;</dd>
+    <dd class="output-css">letter-spacing: <span class="output-token">ls(-3)</span></dd>
     <dd class="output-variable">-.03em</dd>
 
     <dt class="output-utility">.text-ls-neg-2</dt>
-    <dd class="output-css">letter-spacing: <span class="output-token">ls(-2)</span>;</dd>
+    <dd class="output-css">letter-spacing: <span class="output-token">ls(-2)</span></dd>
     <dd class="output-variable">-.02em</dd>
 
     <dt class="output-utility">.text-ls-neg-1</dt>
-    <dd class="output-css">letter-spacing: <span class="output-token">ls(-1)</span>;</dd>
+    <dd class="output-css">letter-spacing: <span class="output-token">ls(-1)</span></dd>
     <dd class="output-variable">-.01em</dd>
 
     <dt class="output-utility">.text-ls-auto</dt>
-    <dd class="output-css">letter-spacing: initial;</dd>
+    <dd class="output-css">letter-spacing: initial</dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-ls-1</dt>
-    <dd class="output-css">letter-spacing: <span class="output-token">ls(1)</span>;</dd>
+    <dd class="output-css">letter-spacing: <span class="output-token">ls(1)</span></dd>
     <dd class="output-variable">.05em</dd>
 
     <dt class="output-utility">.text-ls-2</dt>
-    <dd class="output-css">letter-spacing: <span class="output-token">ls(2)</span>;</dd>
+    <dd class="output-css">letter-spacing: <span class="output-token">ls(2)</span></dd>
     <dd class="output-variable">.1em</dd>
 
     <dt class="output-utility">.text-ls-3</dt>
-    <dd class="output-css">letter-spacing: <span class="output-token">ls(3)</span>;</dd>
+    <dd class="output-css">letter-spacing: <span class="output-token">ls(3)</span></dd>
     <dd class="output-variable">.15em</dd>
 
     <dt class="output-utility">.text-underline</dt>
-    <dd class="output-css">text-decoration: underline;</dd>
+    <dd class="output-css">text-decoration: underline</dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-strike</dt>
-    <dd class="output-css">text-decoration: line-through;</dd>
+    <dd class="output-css">text-decoration: line-through</dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-no-underline</dt>
-    <dd class="output-css">text-decoration: none;</dd>
+    <dd class="output-css">text-decoration: none</dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-no-strike</dt>
-    <dd class="output-css">text-decoration: none;</dd>
+    <dd class="output-css">text-decoration: none</dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.underline-lightest</dt>
@@ -628,55 +628,55 @@ colors:
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-baseline</dt>
-    <dd class="output-css">vertical-align: baseline;</dd>
+    <dd class="output-css">vertical-align: baseline</dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-bottom</dt>
-    <dd class="output-css">vertical-align: bottom;</dd>
+    <dd class="output-css">vertical-align: bottom</dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-middle</dt>
-    <dd class="output-css">vertical-align: middle;</dd>
+    <dd class="output-css">vertical-align: middle</dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-sub</dt>
-    <dd class="output-css">vertical-align: sub;</dd>
+    <dd class="output-css">vertical-align: sub</dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-super</dt>
-    <dd class="output-css">vertical-align: super;</dd>
+    <dd class="output-css">vertical-align: super</dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-tbottom</dt>
-    <dd class="output-css">vertical-align: text-bottom;</dd>
+    <dd class="output-css">vertical-align: text-bottom</dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-ttop</dt>
-    <dd class="output-css">vertical-align: text-top;</dd>
+    <dd class="output-css">vertical-align: text-top</dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-top</dt>
-    <dd class="output-css">vertical-align: top;</dd>
+    <dd class="output-css">vertical-align: top</dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-pre</dt>
-    <dd class="output-css">white-space: pre;</dd>
+    <dd class="output-css">white-space: pre</dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-pre-line</dt>
-    <dd class="output-css">white-space: pre-line;</dd>
+    <dd class="output-css">white-space: pre-line</dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-pre-wrap</dt>
-    <dd class="output-css">white-space: pre-wrap;</dd>
+    <dd class="output-css">white-space: pre-wrap</dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-wrap</dt>
-    <dd class="output-css">white-space: wrap;</dd>
+    <dd class="output-css">white-space: wrap</dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-no-wrap</dt>
-    <dd class="output-css">white-space: nowrap;</dd>
+    <dd class="output-css">white-space: nowrap</dd>
     <dd class="output-variable">—</dd>
 
   </dl>

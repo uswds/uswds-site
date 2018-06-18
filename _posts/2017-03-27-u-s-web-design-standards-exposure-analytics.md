@@ -8,9 +8,9 @@ excerpt: "Every quarter the team takes a look at how many users have been expose
 ---
 Thanks to the data that's collected through the Data Analytics Platform, the U.S. Web Design Standards is able to pull out the web analytics for the known sites that are using the Standards. We use this information to keep track of how the general exposure of the Standards has trended from quarter to quarter. In the future, the team hopes to use the source of data to learn more about the trends of users as they continue to use sites that are using the U.S Web Design Standards.
 
-##Latest Analytics January - March 2017
+## Latest Analytics January - March 2017
 
-###Total Users Exposed - 68,868,781
+### Total Users Exposed - 68,868,781
 
 Total New Users Exposed - 59,951,812
 

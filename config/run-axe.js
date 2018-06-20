@@ -64,6 +64,7 @@ Promise.all([runServer(), getChrome()]).then(([server, chrome]) => {
   }, client => {
     const {Page, Network, Runtime} = client;
     const pagesLeft = PAGES.slice();
+    const requestURLs = new Map();
     const loadNextPage = () => {
       if (pagesLeft.length === 0) {
         console.log(`Finished visiting ${PAGES.length} pages with no errors.`);
@@ -72,6 +73,7 @@ Promise.all([runServer(), getChrome()]).then(([server, chrome]) => {
         const page = pagesLeft.pop();
         const url = `${server.url}${page}`;
         process.stdout.write(`  ${page} `);
+        requestURLs.clear();
         Page.navigate({url});
       }
     };
@@ -103,9 +105,15 @@ Promise.all([runServer(), getChrome()]).then(([server, chrome]) => {
         console.log(`${response.url} returned HTTP ${response.status}!`);
         terminate(1);
       });
+      Network.requestWillBeSent(params => {
+        requestURLs.set(params.requestId, params.request.url);
+      });
       Network.loadingFailed(details => {
-        console.log("A network request failed to load.");
-        console.log(details);
+        let url = requestURLs.get(details.requestId);
+        if (url.indexOf(server.url) === 0) {
+          url = url.substring(server.url.length);
+        }
+        console.log(`ERROR: ${chalk.red(url)} failed to load`);
         terminate(1);
       });
       Page.loadEventFired(() => {

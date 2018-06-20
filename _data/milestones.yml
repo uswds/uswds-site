@@ -10,15 +10,15 @@
     - title: A more flexible, consistent color system
       status: In progress
       url: https://github.com/uswds/uswds/issues/2296
+    - title: Better typographic flexibility and resilience, with or without webfonts
+      status: In progress
+      url: https://github.com/uswds/uswds/issues/2295
     - title: Clearer, more specific design and implementation guidance
-      status: To-do
+      status: In progress
       url: https://github.com/uswds/uswds/issues/2293
     - title: Better support and guidance for Federalist and Jekyll
       status: To-do
       url: https://github.com/uswds/uswds/issues/2294
-    - title: Better typographic flexibility and resilience, with or without webfonts
-      status: To-do
-      url: https://github.com/uswds/uswds/issues/2295
     - title: A clearer connection between user research and patterns and components
       status: To-do
       url: https://github.com/uswds/uswds/issues/2297

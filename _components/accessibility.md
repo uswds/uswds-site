@@ -27,4 +27,4 @@ Visual<br>browsers | Screen<br>readers | Solution
 
 [hidden]: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden
 [remove-attr]: https://developer.mozilla.org/en-US/docs/Web/API/Element/removeAttribute
-[aria-hidden]: https://www.w3.org/TR/wai-aria/states_and_properties#aria-hidden
+[aria-hidden]: https://www.w3.org/WAI/PF/aria-1.1/states_and_properties#aria-hidden

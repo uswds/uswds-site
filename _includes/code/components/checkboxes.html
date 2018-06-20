@@ -1,1 +1,3 @@
-{% fractal_component checkboxes %}
+{% capture checkboxes %}
+  {% fractal_component checkboxes %}
+{% endcapture %}{{ checkboxes | strip }}

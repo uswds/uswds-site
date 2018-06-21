@@ -326,3 +326,144 @@ z_index:
     value: 500
   - token: top
     value: 99999
+
+typescale:
+  system:
+    font-size-micro:
+      token: micro
+      value: 10px
+    font-size-1:
+      token: 1
+      value: 12px
+    font-size-2:
+      token: 2
+      value: 13px
+    font-size-3:
+      token: 3
+      value: 14px
+    font-size-4:
+      token: 4
+      value: 15px
+    font-size-5:
+      token: 5
+      value: 16px
+    font-size-6:
+      token: 6
+      value: 17px
+    font-size-7:
+      token: 7
+      value: 18px
+    font-size-8:
+      token: 8
+      value: 20px
+    font-size-9:
+      token: 9
+      value: 22px
+    font-size-10:
+      token: 10
+      value: 24px
+    font-size-11:
+      token: 11
+      value: 28px
+    font-size-12:
+      token: 12
+      value: 32px
+    font-size-13:
+      token: 13
+      value: 36px
+    font-size-14:
+      token: 14
+      value: 40px
+    font-size-15:
+      token: 15
+      value: 48px
+    font-size-16:
+      token: 16
+      value: 56px
+    font-size-17:
+      token: 17
+      value: 64px
+    font-size-18:
+      token: 18
+      value: 80px
+    font-size-19:
+      token: 19
+      value: 120px
+    font-size-20:
+      token: 20
+      value: 140px
+  theme:
+    font-size-3xs:
+      token: 3xs
+      value: 1
+    font-size-2xs:
+      token: 2xs
+      value: 3
+    font-size-xs:
+      token: xs
+      value: 5
+    font-size-sm:
+      token: sm
+      value: 6
+    font-size-md:
+      token: md
+      value: 7
+    font-size-lg:
+      token: lg
+      value: 10
+    font-size-xl:
+      token: xl
+      value: 12
+    font-size-2xl:
+      token: 2xl
+      value: 14
+    font-size-3xl:
+      token: 3xl
+      value: 16
+
+fonts:
+  meta:
+    normal: 362
+  faces:
+  - name: System
+    normal: 362
+    style: sans
+    role: heading
+    default: false
+  - name: Helvetica
+    normal: 357
+    style: sans
+    role: heading
+    default: false
+  - name: Source Sans Pro
+    normal: 340
+    style: sans
+    role:
+      - alt
+    default: true
+  - name: United Sans
+    normal: 362
+    style: sans
+    role:
+      - heading
+      - alt
+    default: false
+  - name: Georgia
+    normal: 346
+    style: serif
+    default: false
+    role:
+      - body
+  - name: Merriweather
+    normal: 385
+    style: serif
+    default: true
+    role:
+      - body
+      - heading
+  - name: Roboto Mono
+    normal: 380
+    style: mono
+    default: true
+    role:
+      - code

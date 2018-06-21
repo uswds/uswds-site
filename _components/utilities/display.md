@@ -660,7 +660,7 @@ subnav:
       </div>
     </section>
     <section class="utility-examples position-relative padding-bottom-1">
-      <div class="bg-white border border-ink radius-lg width-card-lg padding-2  minh-10 margin-left-0 display-flex flex-justify flex-align-start">
+      <div class="bg-white border border-ink radius-lg width-card-lg padding-2  minh-10 margin-left-0 display-flex flex-justify flex-align-start z-auto">
         <span class="utility-class">.z-auto</span>
         <span class="utility-value">auto</span>
       </div>

@@ -193,7 +193,7 @@ Breaking it down, here's how it works:
   <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
     <div class="text-center padding-x-2">12</div>
   </div>
-</div><!-- l.grid-row -->
+</div>
 {% endcapture %}
 {{ grid-markers }}
 
@@ -205,13 +205,13 @@ Breaking it down, here's how it works:
   <div class="grid-col-3">.grid-col-3</div>
   <div class="grid-col-4">.grid-col-4</div>
   <div class="grid-col-2">.grid-col-2</div>
-</div><!-- l.grid-row -->
+</div>
 
 <div class="grid-row">
   <div class="grid-col-8">.grid-col-8</div>
   <div class="grid-col-2">.grid-col-2</div>
   <div class="grid-col-2">.grid-col-2</div>
-</div><!-- l.grid-row -->
+</div>
 {% endcapture %}
 {{ grid-responsive }}
 </div>
@@ -302,7 +302,7 @@ Breaking it down, here's how it works:
 {% capture grid-offsets %}
 <div class="grid-row">
   <div class="grid-col-8 grid-offset-4">.grid-col-8.grid-offset-4</div>
-</div><!-- l.grid-row -->
+</div>
 {% endcapture %}
 {{ grid-offsets }}
 </div>
@@ -328,7 +328,7 @@ Breaking it down, here's how it works:
   <div class="grid-col-8">.grid-col-8</div>
   <div class="grid-col-3">.grid-col-3</div>
   <div class="grid-col-5">.grid-col-5</div>
-</div><!-- l.grid-row -->
+</div>
 {% endcapture %}
 {{ grid-wrapping }}
 </div>

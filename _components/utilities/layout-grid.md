@@ -194,7 +194,7 @@ Breaking it down, here's how it works:
     <div class="text-center padding-x-2">12</div>
   </div>
 </div><!-- l.grid-row -->
-{% end capture %}
+{% endcapture %}
 {{ grid-markers }}
 
 <div class="docs-grid-example">

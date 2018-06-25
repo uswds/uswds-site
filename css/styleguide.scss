@@ -1946,6 +1946,8 @@ li.display-inline-block {
   [class*="grid-gap"] {
     [class*="grid-col"] > * {
       background-color: $color-white;
+      border: 1px solid;
+      padding: 16px;
     }
   }
 }

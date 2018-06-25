@@ -464,13 +464,13 @@ Breaking it down, here's how it works:
 {% capture grid-gutters %}
 <div class="grid-row grid-gap">
   <div class="grid-col-4">
-    <div class="text-center border-1px border-black-cool-10 padding-2">.grid-col-4</div>
+    <div>.grid-col-4</div>
   </div>
   <div class="grid-col-4">
-    <div class="text-center border-1px border-black-cool-10 padding-2">.grid-col-4</div>
+    <div>.grid-col-4</div>
   </div>
   <div class="grid-col-4">
-    <div class="text-center border-1px border-black-cool-10 padding-2">.grid-col-4</div>
+    <div>.grid-col-4</div>
   </div>
 </div>
 {% endcapture %}
@@ -534,13 +534,13 @@ Breaking it down, here's how it works:
 {% capture grid-gutters-lg %}
 <div class="grid-row grid-gap-lg">
   <div class="grid-col-4">
-    <div class="text-center border-1px border-black-cool-10 padding-2">.grid-col-4</div>
+    <div>.grid-col-4</div>
   </div>
   <div class="grid-col-4">
-    <div class="text-center border-1px border-black-cool-10 padding-2">.grid-col-4</div>
+    <div>.grid-col-4</div>
   </div>
   <div class="grid-col-4">
-    <div class="text-center border-1px border-black-cool-10 padding-2">.grid-col-4</div>
+    <div>.grid-col-4</div>
   </div>
 </div>
 {% endcapture %}

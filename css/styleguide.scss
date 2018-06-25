@@ -1933,8 +1933,20 @@ li.display-inline-block {
 
   [class*="grid-col"] {
     background-color: $primary-lighter;
-    border: 1px solid;
-    padding: 16px;
+    text-align: center;
+  }
+
+  .grid-row:not([class*="grid-gap"]) {
+    [class*="grid-col"] {
+      border: 1px solid;
+      padding: 16px;
+    }
+  }
+
+  [class*="grid-gap"] {
+    [class*="grid-col"] > * {
+      background-color: $color-white;
+    }
   }
 }
 

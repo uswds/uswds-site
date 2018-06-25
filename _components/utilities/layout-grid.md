@@ -14,8 +14,8 @@ subnav:
   href: '#auto-layout-columns'
 - text: Responsive classes
   href: '#responsive-classes'
-- text: Grid offsets
-  href: '#grid-offsets'
+- text: Offsetting columns
+  href: '#offsetting-columns'
 - text: Column wrapping
   href: '#column-wrapping'
 - text: Gutters
@@ -25,7 +25,7 @@ subnav:
 ---
 
 <div class="font-mono-4 weight-300">
-  <h2 id="how-it-works">How it works</h2>
+<h2 id="how-it-works">How it works</h2>
 <!--   <p class="font-sans-6 measure-3"><strong>Note:</strong> <code class="docs-inline-code">.grid-container</code>, <code class="docs-inline-code">.grid-gap</code>, and <code class="docs-inline-code">.grid-col</code> all have mobile-first responsive variants. Only the first example shows them.</p>
   <p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-col</code> and <code class="docs-inline-code">.grid-col-fill</code> items flex to fit</p> -->
 
@@ -41,16 +41,16 @@ subnav:
     <div class="grid-col-12 tablet:grid-col-6">grid-col-12 tablet:grid-col-6</div>
   </div> -->
 <div class="docs-grid-example">
-  {% capture grid-1 %}
-  <div class="grid-container">
-    <div class="grid-row">
-      <div class="tablet:grid-col">tablet:grid-col</div>
-      <div class="tablet:grid-col">tablet:grid-col</div>
-      <div class="tablet:grid-col">tablet:grid-col</div>
-    </div>
+{% capture grid-1 %}
+<div class="grid-container">
+  <div class="grid-row">
+    <div class="tablet:grid-col">tablet:grid-col</div>
+    <div class="tablet:grid-col">tablet:grid-col</div>
+    <div class="tablet:grid-col">tablet:grid-col</div>
   </div>
-  {% endcapture %}
-  {{ grid-1 }}
+</div>
+{% endcapture %}
+{{ grid-1 }}
 </div>
 
 <div class="usa-accordion-bordered usa-code-sample margin-top-4">
@@ -58,7 +58,7 @@ subnav:
   <div id="code-sticky" class="usa-accordion-content">
 <div markdown="1">
 ```html
-{{ grid-1 }}
+{{ grid-1 | strip }}
 ```
 </div>
   </div>
@@ -69,7 +69,7 @@ The above example creates three equal-width columns on tablet, desktop, and wide
 
 Breaking it down, here's how it works:
 
-- **Containers** `.grid-container` centers the container and gives it a maximum width of 1024px.
+- **Containers** `.grid-container` centers the container and gives it a maximum width of 1024px. If you would like the grid to span the full width of the page, do not use `.grid-container`.
 - **Rows** `.grid-row` wrap around columns.
 - **Columns** `.grid-col-[1-12]` indicate the number of columns you’d like to use out of the possible 12 per row. So, if you want three equal-width columns across, you can use `.grid-col-4`.
 - With flexbox, grid columns without a specified width will automatically lay out as equal width columns. For example, four instances of `.grid-col` will each automatically be across all sizes. See the [auto-layout columns](#auto-layout-columns) section for more examples.
@@ -125,20 +125,30 @@ Breaking it down, here's how it works:
 <h3>Variable width content</h3>
   <p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-col-auto</code> items fit the natural width of their content.</p>
 
-  <div class="grid-row margin-top-1">
-    <div class="grid-col-auto border-1px border-black-cool-10">
-      <div class="text-center padding-2">.grid-col-auto</div>
-    </div>
-    <div class="grid-col-fill border-1px border-left-0 border-black-cool-10">
-      <div class="text-center padding-2">.grid-col</div>
-    </div>
-    <div class="grid-col-fill border-1px border-left-0 border-black-cool-10">
-      <div class="text-center padding-2">.grid-col</div>
-    </div>
-    <div class="grid-col-auto border-1px border-left-0 border-black-cool-10">
-      <div class="text-center padding-2">.grid-col-auto</div>
-    </div>
-  </div><!-- l.grid-row -->
+<div class="docs-grid-example">
+{% capture grid-auto %}
+<div class="grid-container">
+  <div class="grid-row">
+    <div class="grid-col-auto">.grid-col-auto</div>
+    <div class="grid-col-fill">.grid-col</div>
+    <div class="grid-col-fill">.grid-col</div>
+    <div class="grid-col-auto">.grid-col-auto</div>
+  </div>
+</div>
+{% endcapture %}
+{{ grid-auto }}
+</div>
+
+<div class="usa-accordion-bordered usa-code-sample margin-top-4">
+  <button class="usa-accordion-button" aria-controls="code-auto" aria-expanded="true">Code</button>
+  <div id="code-auto" class="usa-accordion-content">
+<div markdown="1">
+```html
+{{ grid-auto | strip }}
+```
+</div>
+  </div>
+</div>
 
 <h2 id="responsive-classes">Responsive classes</h2>
 <h3>All breakpoints</h3>
@@ -184,53 +194,53 @@ Breaking it down, here's how it works:
     </div>
   </div><!-- l.grid-row -->
 
-  <div class="grid-row margin-top-1">
-    <div class="grid-col-1 border-1px border-black-cool-10">
-      <div class="text-center padding-2">.grid-col-1</div>
-    </div>
-    <div class="grid-col-2 border-1px border-left-0 border-black-cool-10">
-      <div class="text-center padding-2">.grid-col-2</div>
-    </div>
-    <div class="grid-col-3 border-1px border-left-0 border-black-cool-10">
-      <div class="text-center padding-2">.grid-col-3</div>
-    </div>
-    <div class="grid-col-4 border-1px border-left-0 border-black-cool-10">
-      <div class="text-center padding-2">.grid-col-4</div>
-    </div>
-    <div class="grid-col-2 border-1px border-left-0 border-black-cool-10">
-      <div class="text-center padding-2">.grid-col-2</div>
-    </div>
-  </div><!-- l.grid-row -->
+<div class="docs-grid-example">
+{% capture grid-responsive %}
+<div class="grid-row">
+  <div class="grid-col-1">.grid-col-1</div>
+  <div class="grid-col-2">.grid-col-2</div>
+  <div class="grid-col-3">.grid-col-3</div>
+  <div class="grid-col-4">.grid-col-4</div>
+  <div class="grid-col-2">.grid-col-2</div>
+</div><!-- l.grid-row -->
 
-  <div class="grid-row margin-top-1">
-    <div class="grid-col-8 border-1px border-black-cool-10">
-      <div class="text-center padding-2">.grid-col-8</div>
-    </div>
-    <div class="grid-col-2 border-1px border-left-0 border-black-cool-10">
-      <div class="text-center padding-2">.grid-col-2</div>
-    </div>
-    <div class="grid-col-2 border-1px border-left-0 border-black-cool-10">
-      <div class="text-center padding-2">.grid-col-2</div>
-    </div>
-  </div><!-- l.grid-row -->
+<div class="grid-row">
+  <div class="grid-col-8">.grid-col-8</div>
+  <div class="grid-col-2">.grid-col-2</div>
+  <div class="grid-col-2">.grid-col-2</div>
+</div><!-- l.grid-row -->
+{% endcapture %}
+{{ grid-responsive }}
+</div>
+
+<div class="usa-accordion-bordered usa-code-sample margin-top-4">
+  <button class="usa-accordion-button" aria-controls="code-responsive" aria-expanded="true">Code</button>
+  <div id="code-responsive" class="usa-accordion-content">
+<div markdown="1">
+```html
+{{ grid-responsive | strip }}
+```
+</div>
+  </div>
+</div>
 
 <h3>Stacked to horizontal</h3>
 <p class="font-sans-6 measure-3">Declare full-width columns at mobile width and larger with <code class="docs-inline-code">grid-col-12</code> and tablet and larger with <code class="docs-inline-code">tablet:grid-col-4</code> to create a basic grid system that starts out stacked before becoming horizontal with at the tablet breakpoint (<code class="docs-inline-code">tablet:</code>).</p>
 
 <div class="docs-grid-example">
-  {% capture grid-stacked %}
-  <div class="grid-row">
-    <div class="grid-col-12 tablet:grid-col">.grid-col-12 .tablet:grid-col</div>
-    <div class="grid-col-12 tablet:grid-col">.grid-col-12 .tablet:grid-col</div>
-    <div class="grid-col-12 tablet:grid-col">.grid-col-12 .tablet:grid-col</div>
-  </div>
+{% capture grid-stacked %}
+<div class="grid-row">
+  <div class="grid-col-12 tablet:grid-col">.grid-col-12 .tablet:grid-col</div>
+  <div class="grid-col-12 tablet:grid-col">.grid-col-12 .tablet:grid-col</div>
+  <div class="grid-col-12 tablet:grid-col">.grid-col-12 .tablet:grid-col</div>
+</div>
 
-  <div class="grid-row">
-    <div class="grid-col-12 tablet:grid-col-4">.grid-col-12 .tablet:grid-col-4</div>
-    <div class="grid-col-12 tablet:grid-col-8">.grid-col-12 .tablet:grid-col-8</div>
-  </div>
-  {% endcapture %}
-  {{ grid-stacked }}
+<div class="grid-row">
+  <div class="grid-col-12 tablet:grid-col-4">.grid-col-12 .tablet:grid-col-4</div>
+  <div class="grid-col-12 tablet:grid-col-8">.grid-col-12 .tablet:grid-col-8</div>
+</div>
+{% endcapture %}
+{{ grid-stacked }}
 </div>
 
 <div class="usa-accordion-bordered usa-code-sample margin-top-4">
@@ -238,7 +248,7 @@ Breaking it down, here's how it works:
   <div id="code-stacked" class="usa-accordion-content">
 <div markdown="1">
 ```html
-{{ grid-stacked }}
+{{ grid-stacked | strip }}
 ```
 </div>
   </div>
@@ -247,27 +257,27 @@ Breaking it down, here's how it works:
 <h3>Mix and match</h3>
 <p class="font-sans-6 measure-3">Don’t want your columns to simply stack in some grid tiers? Use a combination of different classes for each tier as needed. See the example below for a better idea of how it all works.</p>
 <div class="docs-grid-example">
-  {% capture grid-mix %}
-  <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-  <div class="grid-row">
-    <div class="grid-col-12 tablet:grid-col-8">.col-12 .tablet:grid-col-8</div>
-    <div class="grid-col-6 tablet:grid-col-4">.col-6 .tablet:grid-col-4</div>
-  </div>
+{% capture grid-mix %}
+<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<div class="grid-row">
+  <div class="grid-col-12 tablet:grid-col-8">.col-12 .tablet:grid-col-8</div>
+  <div class="grid-col-6 tablet:grid-col-4">.col-6 .tablet:grid-col-4</div>
+</div>
 
-  <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-  <div class="grid-row">
-    <div class="grid-col-6 tablet:grid-col-4">.col-6 .tablet:grid-col-4</div>
-    <div class="grid-col-6 tablet:grid-col-4">.col-6 .tablet:grid-col-4</div>
-    <div class="grid-col-6 tablet:grid-col-4">.col-6 .tablet:grid-col-4</div>
-  </div>
+<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+<div class="grid-row">
+  <div class="grid-col-6 tablet:grid-col-4">.col-6 .tablet:grid-col-4</div>
+  <div class="grid-col-6 tablet:grid-col-4">.col-6 .tablet:grid-col-4</div>
+  <div class="grid-col-6 tablet:grid-col-4">.col-6 .tablet:grid-col-4</div>
+</div>
 
-  <!-- Columns are always 50% wide, on mobile and desktop -->
-  <div class="grid-row">
-    <div class="grid-col-6">.col-6</div>
-    <div class="grid-col-6">.col-6</div>
-  </div>
-  {% endcapture %}
-  {{ grid-mix }}
+<!-- Columns are always 50% wide, on mobile and desktop -->
+<div class="grid-row">
+  <div class="grid-col-6">.col-6</div>
+  <div class="grid-col-6">.col-6</div>
+</div>
+{% endcapture %}
+{{ grid-mix }}
 </div>
 
 <div class="usa-accordion-bordered usa-code-sample margin-top-4">
@@ -275,222 +285,278 @@ Breaking it down, here's how it works:
   <div id="code-mix" class="usa-accordion-content">
 <div markdown="1">
 ```html
-{{ grid-mix }}
+{{ grid-mix | strip }}
 ```
 </div>
   </div>
 </div>
 
-<h2 id="grid-offsets">Grid offsets</h2>
-  <p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-offset-[1-12]</code> offsets the grid-column by [n] grid-columns</p>
+<h2 id="offsetting-columns">Offsetting columns</h2>
+<p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-offset-[1-12]</code> offsets the grid-column by [n] grid-columns</p>
 
-  <div class="grid-row margin-top-1 font-sans-2">
-    <div class="grid-col-1 border-x-2px border-black-cool-90">
-      <div class="text-center padding-x-2">1</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">2</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">3</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">4</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">5</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">6</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">7</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">8</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">9</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">10</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">11</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">12</div>
-    </div>
-  </div><!-- l.grid-row -->
+<div class="grid-row margin-top-1 font-sans-2">
+  <div class="grid-col-1 border-x-2px border-black-cool-90">
+    <div class="text-center padding-x-2">1</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">2</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">3</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">4</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">5</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">6</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">7</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">8</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">9</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">10</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">11</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">12</div>
+  </div>
+</div><!-- l.grid-row -->
 
-  <div class="grid-row margin-top-1">
-    <div class="grid-col-8 grid-offset-4 border-1px border-black-cool-10">
-      <div class="text-center padding-2">.grid-col-8.grid-offset-4</div>
-    </div>
-  </div><!-- l.grid-row -->
+<div class="docs-grid-example">
+{% capture grid-offsets %}
+<div class="grid-row">
+  <div class="grid-col-8 grid-offset-4">.grid-col-8.grid-offset-4</div>
+</div><!-- l.grid-row -->
+{% endcapture %}
+{{ grid-offsets }}
+</div>
+
+<div class="usa-accordion-bordered usa-code-sample margin-top-4">
+  <button class="usa-accordion-button" aria-controls="code-offsets" aria-expanded="true">Code</button>
+  <div id="code-offsets" class="usa-accordion-content">
+<div markdown="1">
+```html
+{{ grid-offsets | strip }}
+```
+</div>
+  </div>
+</div>
 
 <h2 id="column-wrapping">Column wrapping</h2>
-  <p class="font-sans-6 measure-3">Rows wrap when grid-columns add up to more than 12</p>
+<p class="font-sans-6 measure-3">Rows wrap when grid-columns add up to more than 12</p>
 
-  <div class="grid-row margin-top-1 font-sans-2">
-    <div class="grid-col-1 border-x-2px border-black-cool-90">
-      <div class="text-center padding-x-2">1</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">2</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">3</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">4</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">5</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">6</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">7</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">8</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">9</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">10</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">11</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">12</div>
-    </div>
-  </div><!-- l.grid-row -->
+<div class="grid-row margin-top-1 font-sans-2">
+  <div class="grid-col-1 border-x-2px border-black-cool-90">
+    <div class="text-center padding-x-2">1</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">2</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">3</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">4</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">5</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">6</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">7</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">8</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">9</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">10</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">11</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">12</div>
+  </div>
+</div><!-- l.grid-row -->
 
-  <div class="grid-row margin-top-1">
-    <div class="grid-col-8 border-1px border-black-cool-10">
-      <div class="text-center padding-2">.grid-col-8</div>
-    </div>
-    <div class="grid-col-3 border-1px border-left-0 border-black-cool-10">
-      <div class="text-center padding-2">.grid-col-3</div>
-    </div>
-    <div class="grid-col-5 border-1px border-top-0 border-black-cool-10">
-      <div class="text-center padding-2">.grid-col-5</div>
-    </div>
-  </div><!-- l.grid-row -->
+<div class="docs-grid-example">
+{% capture grid-wrapping %}
+<div class="grid-row">
+  <div class="grid-col-8">.grid-col-8</div>
+  <div class="grid-col-3">.grid-col-3</div>
+  <div class="grid-col-5">.grid-col-5</div>
+</div><!-- l.grid-row -->
+{% endcapture %}
+{{ grid-wrapping }}
+</div>
+
+<div class="usa-accordion-bordered usa-code-sample margin-top-4">
+  <button class="usa-accordion-button" aria-controls="code-wrapping" aria-expanded="true">Code</button>
+  <div id="code-wrapping" class="usa-accordion-content">
+<div markdown="1">
+```html
+{{ grid-wrapping | strip }}
+```
+</div>
+  </div>
+</div>
 
 <h2 id="gutters">Gutters</h2>
 
 <h3>Default gutter</h3>
-  <p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-gap</code> adds a grid-gap between grid-columns in the grid-row, to a value set as <code class="docs-inline-code">$theme-column-gap</code> in settings (16px default).</p>
-  <div class="grid-row margin-top-1 font-sans-2">
-    <div class="grid-col-1 border-x-2px border-black-cool-90">
-      <div class="text-center padding-x-2">1</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">2</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">3</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">4</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">5</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">6</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">7</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">8</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">9</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">10</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">11</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">12</div>
-    </div>
-  </div><!-- l.grid-row -->
+<p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-gap</code> adds a grid-gap between grid-columns in the grid-row, to a value set as <code class="docs-inline-code">$theme-column-gap</code> in settings (16px default).</p>
+<div class="grid-row margin-top-1 font-sans-2">
+  <div class="grid-col-1 border-x-2px border-black-cool-90">
+    <div class="text-center padding-x-2">1</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">2</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">3</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">4</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">5</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">6</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">7</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">8</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">9</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">10</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">11</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">12</div>
+  </div>
+</div><!-- l.grid-row -->
 
-  <div class="grid-row grid-gap margin-top-1">
-    <div class="grid-col-4">
-      <div class="text-center border-1px border-black-cool-10 padding-2">.grid-col-4</div>
-    </div>
-    <div class="grid-col-4">
-      <div class="text-center border-1px border-black-cool-10 padding-2">.grid-col-4</div>
-    </div>
-    <div class="grid-col-4">
-      <div class="text-center border-1px border-black-cool-10 padding-2">.grid-col-4</div>
-    </div>
-  </div><!-- l.grid-row -->
+<div class="docs-grid-example">
+{% capture grid-gutters %}
+<div class="grid-row grid-gap">
+  <div class="grid-col-4">
+    <div class="text-center border-1px border-black-cool-10 padding-2">.grid-col-4</div>
+  </div>
+  <div class="grid-col-4">
+    <div class="text-center border-1px border-black-cool-10 padding-2">.grid-col-4</div>
+  </div>
+  <div class="grid-col-4">
+    <div class="text-center border-1px border-black-cool-10 padding-2">.grid-col-4</div>
+  </div>
+</div>
+{% endcapture %}
+{{ grid-gutters }}
+</div>
+
+<div class="usa-accordion-bordered usa-code-sample margin-top-4">
+  <button class="usa-accordion-button" aria-controls="code-gutters" aria-expanded="true">Code</button>
+  <div id="code-gutters" class="usa-accordion-content">
+<div markdown="1">
+```html
+{{ grid-gutters | strip }}
+```
+</div>
+  </div>
+</div>
 
 <h3>Large gutter</h3>
-  <p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-gap-lg</code> adds a grid-gap between grid-columns in the grid-row, to a value set as <code class="docs-inline-code">$theme-column-gap-large</code> in settings (32px default).</p>
+<p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-gap-lg</code> adds a grid-gap between grid-columns in the grid-row, to a value set as <code class="docs-inline-code">$theme-column-gap-large</code> in settings (32px default).</p>
 
-  <div class="grid-row margin-top-1 font-sans-2">
-    <div class="grid-col-1 border-x-2px border-black-cool-90">
-      <div class="text-center padding-x-2">1</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">2</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">3</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">4</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">5</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">6</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">7</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">8</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">9</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">10</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">11</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">12</div>
-    </div>
-  </div><!-- l.grid-row -->
+<div class="grid-row margin-top-1 font-sans-2">
+  <div class="grid-col-1 border-x-2px border-black-cool-90">
+    <div class="text-center padding-x-2">1</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">2</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">3</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">4</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">5</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">6</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">7</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">8</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">9</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">10</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">11</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">12</div>
+  </div>
+</div><!-- l.grid-row -->
 
-  <div class="grid-row grid-gap-lg margin-top-1">
-    <div class="grid-col-4">
-      <div class="text-center border-1px border-black-cool-10 padding-2">.grid-col-4</div>
-    </div>
-    <div class="grid-col-4">
-      <div class="text-center border-1px border-black-cool-10 padding-2">.grid-col-4</div>
-    </div>
-    <div class="grid-col-4">
-      <div class="text-center border-1px border-black-cool-10 padding-2">.grid-col-4</div>
-    </div>
-  </div><!-- l.grid-row -->
+<div class="docs-grid-example">
+{% capture grid-gutters-lg %}
+<div class="grid-row grid-gap-lg">
+  <div class="grid-col-4">
+    <div class="text-center border-1px border-black-cool-10 padding-2">.grid-col-4</div>
+  </div>
+  <div class="grid-col-4">
+    <div class="text-center border-1px border-black-cool-10 padding-2">.grid-col-4</div>
+  </div>
+  <div class="grid-col-4">
+    <div class="text-center border-1px border-black-cool-10 padding-2">.grid-col-4</div>
+  </div>
+</div>
+{% endcapture %}
+{{ grid-gutters-lg }}
+</div>
+
+<div class="usa-accordion-bordered usa-code-sample margin-top-4">
+  <button class="usa-accordion-button" aria-controls="code-gutters-lg" aria-expanded="true">Code</button>
+  <div id="code-gutters-lg" class="usa-accordion-content">
+<div markdown="1">
+```html
+{{ grid-gutters-lg | strip }}
+```
+</div>
+  </div>
+</div>
 
 <div markdown="1" class="font-sans-6 measure-3">
 <h2 id="sass-mixins">Sass mixins</h2>

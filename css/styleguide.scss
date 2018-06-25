@@ -1825,6 +1825,7 @@ html {
   @include u-font('sans', 6);
   @include u-margin-bottom(1);
   @include u-margin-top(4);
+  @include u-measure(4);
   @include u-text('normal');
 }
 
@@ -1924,3 +1925,47 @@ li.display-inline-block {
     border: 1px solid $base-lighter;
   }
 }
+
+.docs-grid-example {
+  .grid-row {
+    margin-top: 8px;
+  }
+
+  [class*="grid-col"] {
+    background-color: $primary-lighter;
+    border: 1px solid;
+    padding: 16px;
+  }
+}
+
+// Sass syntax highlighting
+
+// .k {
+//   color: $blue-60v;
+// }
+
+// .m {
+//   color: $orange-warm-40v;
+// }
+
+// .nc {
+//   color: $mint-50;
+// }
+
+// .nd {
+//   color: $violet-50v;
+// }
+
+// .nf {
+//   color: $violet-50v;
+// }
+
+// .nl {
+//   color: $violet-50v;
+// }
+
+// .s1 {
+//   color: $color-red;
+// }
+
+

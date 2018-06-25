@@ -153,46 +153,49 @@ Breaking it down, here's how it works:
 <h2 id="responsive-classes">Responsive classes</h2>
 <h3>All breakpoints</h3>
 <p class="font-sans-6 measure-3">For grids that are the same from the smallest of devices to the largest, use the <code class="docs-inline-code">.grid-col</code> and <code class="docs-inline-code">.grid-col-*</code> classes. Specify a numbered class when you need a particularly sized column; otherwise, feel free to use <code class="docs-inline-code">.grid-col</code>.</p>
-  <p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-col-[1-12]</code> set a fixed width of [n] grid-columns in a 12-column grid</p>
+<p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-col-[1-12]</code> set a fixed width of [n] grid-columns in a 12-column grid</p>
 
-  <div class="grid-row margin-top-1 font-sans-2">
-    <div class="grid-col-1 border-x-2px border-black-cool-90">
-      <div class="text-center padding-x-2">1</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">2</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">3</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">4</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">5</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">6</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">7</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">8</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">9</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">10</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">11</div>
-    </div>
-    <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-      <div class="text-center padding-x-2">12</div>
-    </div>
-  </div><!-- l.grid-row -->
+{% capture grid-markers %}
+<div class="grid-row margin-top-1 font-sans-2">
+  <div class="grid-col-1 border-x-2px border-black-cool-90">
+    <div class="text-center padding-x-2">1</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">2</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">3</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">4</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">5</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">6</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">7</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">8</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">9</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">10</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">11</div>
+  </div>
+  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
+    <div class="text-center padding-x-2">12</div>
+  </div>
+</div><!-- l.grid-row -->
+{% end capture %}
+{{ grid-markers }}
 
 <div class="docs-grid-example">
 {% capture grid-responsive %}
@@ -293,45 +296,7 @@ Breaking it down, here's how it works:
 
 <h2 id="offsetting-columns">Offsetting columns</h2>
 <p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-offset-[1-12]</code> offsets the grid-column by [n] grid-columns</p>
-
-<div class="grid-row margin-top-1 font-sans-2">
-  <div class="grid-col-1 border-x-2px border-black-cool-90">
-    <div class="text-center padding-x-2">1</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">2</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">3</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">4</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">5</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">6</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">7</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">8</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">9</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">10</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">11</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">12</div>
-  </div>
-</div><!-- l.grid-row -->
+{{ grid-markers }}
 
 <div class="docs-grid-example">
 {% capture grid-offsets %}
@@ -355,45 +320,7 @@ Breaking it down, here's how it works:
 
 <h2 id="column-wrapping">Column wrapping</h2>
 <p class="font-sans-6 measure-3">Rows wrap when grid-columns add up to more than 12</p>
-
-<div class="grid-row margin-top-1 font-sans-2">
-  <div class="grid-col-1 border-x-2px border-black-cool-90">
-    <div class="text-center padding-x-2">1</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">2</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">3</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">4</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">5</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">6</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">7</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">8</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">9</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">10</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">11</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">12</div>
-  </div>
-</div><!-- l.grid-row -->
+{{ grid-markers }}
 
 <div class="docs-grid-example">
 {% capture grid-wrapping %}
@@ -421,44 +348,7 @@ Breaking it down, here's how it works:
 
 <h3>Default gutter</h3>
 <p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-gap</code> adds a grid-gap between grid-columns in the grid-row, to a value set as <code class="docs-inline-code">$theme-column-gap</code> in settings (16px default).</p>
-<div class="grid-row margin-top-1 font-sans-2">
-  <div class="grid-col-1 border-x-2px border-black-cool-90">
-    <div class="text-center padding-x-2">1</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">2</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">3</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">4</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">5</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">6</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">7</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">8</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">9</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">10</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">11</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">12</div>
-  </div>
-</div><!-- l.grid-row -->
+{{ grid-markers }}
 
 <div class="docs-grid-example">
 {% capture grid-gutters %}
@@ -490,45 +380,7 @@ Breaking it down, here's how it works:
 
 <h3>Large gutter</h3>
 <p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-gap-lg</code> adds a grid-gap between grid-columns in the grid-row, to a value set as <code class="docs-inline-code">$theme-column-gap-large</code> in settings (32px default).</p>
-
-<div class="grid-row margin-top-1 font-sans-2">
-  <div class="grid-col-1 border-x-2px border-black-cool-90">
-    <div class="text-center padding-x-2">1</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">2</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">3</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">4</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">5</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">6</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">7</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">8</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">9</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">10</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">11</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">12</div>
-  </div>
-</div><!-- l.grid-row -->
+{{ grid-markers }}
 
 <div class="docs-grid-example">
 {% capture grid-gutters-lg %}

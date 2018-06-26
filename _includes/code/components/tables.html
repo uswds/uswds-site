@@ -1,1 +1,3 @@
-{% fractal_component tables %}
+{% capture tables %}
+  {% fractal_component tables %}
+{% endcapture %}{{ tables | strip }}

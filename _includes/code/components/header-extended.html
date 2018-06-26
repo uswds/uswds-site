@@ -1,4 +1,6 @@
 <a class="usa-skipnav" href="#main-content">Skip to main content</a>
-{% fractal_component banner %}
-{% fractal_component header--extended %}
+{% capture header %}
+  {% fractal_component banner %}
+  {% fractal_component header--extended %}
+{% endcapture %}{{ header | strip }}
 <main id="main-content"></main>

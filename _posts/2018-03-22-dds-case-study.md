@@ -33,7 +33,7 @@ As we were looking to see how we could most easily integrate the Design System, 
 
 **USWDS team:** Is there anything the Design System team could do to help you in your efforts?
 
-**Garber:** Nothing springs to mind: the documentation is great, Fractal is coming along, and being in the [#uswds-public Slack channel](https://chat.18f.gov./) is fantastic. I don’t participate a ton in there, but it’s nice to see the conversation. If I do have a quick question, it’s a great alternative to filing a GitHub issue and I appreciate it.
+**Garber:** Nothing springs to mind: the documentation is great, Fractal is coming along, and being in the [#uswds-public Slack channel](https://chat.18f.gov/) is fantastic. I don’t participate a ton in there, but it’s nice to see the conversation. If I do have a quick question, it’s a great alternative to filing a GitHub issue and I appreciate it.
 
 I’m pretty happy with the level of engagement from the Design System team. They have been pretty responsive answering questions. The conversation so far has been very welcoming and helpful. It’s great seeing so many people who are actually involved in building the Design System, also responding to questions.
 
@@ -44,4 +44,4 @@ I’m pretty happy with the level of engagement from the Design System team. The
 
 ---
 
-We’re looking to learn more [from agencies that have used the Design System](https://github.com/uswds/uswds/blob/develop/WHO_IS_USING_USWDS.md). If you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at [uswds@gsa.gov](mailto:uswds@gsa.gov). You can also chat with the team in the [public Slack channel for the Design System](https://chat.18f.gov./).
+We’re looking to learn more [from agencies that have used the Design System](https://github.com/uswds/uswds/blob/develop/docs/WHO_IS_USING_USWDS.md). If you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at [uswds@gsa.gov](mailto:uswds@gsa.gov). You can also chat with the team in the [public Slack channel for the Design System](https://chat.18f.gov/).

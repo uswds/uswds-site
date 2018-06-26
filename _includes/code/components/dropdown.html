@@ -1,1 +1,3 @@
-{% fractal_component dropdown %}
+{% capture dropdown %}
+  {% fractal_component dropdown %}
+{% endcapture %}{{ dropdown | strip }}

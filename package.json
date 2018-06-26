@@ -78,7 +78,7 @@
     "node-notifier": "^5.2.1",
     "nswatch": "^0.2.0",
     "simplecrawler": "^1.1.6",
-    "snyk": "^1.83.0",
+    "snyk": "^1.85.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },

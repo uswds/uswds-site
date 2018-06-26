@@ -430,17 +430,20 @@ fonts:
     style: sans
     role: heading
     default: false
+    stack: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
   - name: Helvetica
     normal: 357
     style: sans
     role: heading
     default: false
+    stack: '"Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif'
   - name: Source Sans Pro
     normal: 340
     style: sans
     role:
       - alt
     default: true
+    stack: '"Source Sans Pro Web", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif'
   - name: United Sans
     normal: 362
     style: sans
@@ -448,12 +451,14 @@ fonts:
       - heading
       - alt
     default: false
+    stack: '"United Sans Web", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
   - name: Georgia
     normal: 346
     style: serif
     default: false
     role:
       - body
+    stack: '"Georgia", "Cambria", "Times New Roman", "Times", serif'
   - name: Merriweather
     normal: 385
     style: serif
@@ -461,9 +466,11 @@ fonts:
     role:
       - body
       - heading
+    stack: '"Merriweather Web", "Georgia", "Cambria", "Times New Roman", "Times", serif'
   - name: Roboto Mono
     normal: 380
     style: mono
     default: true
     role:
       - code
+    stack: '"Roboto Mono Web", "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace'

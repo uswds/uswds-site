@@ -7,6 +7,7 @@
     {% endif %}
     <dt class="output-utility">.{{ utility_base }}{% if modifier == 'none'%}{% else %}{{ modifier }}{% endif %}-{{ value.token }}</dt>
     {% if value.scss %}
+
       <dd class="output-css">
         <span>
           {% if utility_properties %}

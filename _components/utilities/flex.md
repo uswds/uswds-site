@@ -463,12 +463,12 @@ values:
     </section><!-- examples -->
   </section><!-- utility -->
 
-  <section class="utility" id="utility-flex-justify">
+  <section class="utility" id="utility-order">
     <section class="utility-title-bar">
       <div class="grid-row">
         <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Flex justify</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">justify-content</span></p>
+          <h3 class="grid-col-auto utility-title">Order</h3>
+          <p class="utility-property">CSS property: <span class="utility-property-code">order</span></p>
         </div>
 
         <ul class="grid-col-auto utility-scope">

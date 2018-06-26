@@ -5,6 +5,11 @@ type: utility
 title: Font size and family
 category: Utilities
 lead: Set the font size and the font family together.
+subnav:
+- text: Font size and family
+  href: '#utility-font'
+- text: Font family
+  href: '#utility-font-family'
 ---
 
 {% assign our_faces = site.data.uswds_tokens.fonts.faces %}
@@ -27,7 +32,7 @@ lead: Set the font size and the font family together.
     <p class="grid-col-fill utilities-section-helper">Utilities, values, and variants may be activated and deactivated in <a href="#0" class="text-ink text-no-wrap">advanced settings</a>.</p>
   </div>
 
-  <section class="utility" id="utility-float">
+  <section class="utility" id="utility-font">
     <section class="utility-title-bar">
       <div class="grid-row flex-align-center">
         <div class="grid-col-fill">
@@ -184,6 +189,49 @@ lead: Set the font size and the font family together.
 
     </section><!-- examples -->
   </section><!-- utility -->
+
+  <section class="utility" id="utility-font-family">
+    <section class="utility-title-bar">
+      <div class="grid-row flex-align-center">
+        <div class="grid-col-fill">
+          <h3 class="grid-col-auto utility-title">Font family</h3>
+          <p class="utility-property">CSS property: <span class="utility-property-code">font-family</span></p>
+        </div>
+
+        <ul class="grid-col-auto utility-scope">
+          <li class="utility-scope-button-disabled">responsive</li>
+          <li class="utility-scope-button-disabled">active</li>
+          <li class="utility-scope-button-disabled">hover</li>
+          <li class="utility-scope-button-disabled">focus</li>
+          <li class="utility-scope-button-disabled">visited</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="utility-examples">
+
+      <h4 class="utility-examples-title margin-bottom-2">Style-based</h4>
+      {% for face in our_faces %}
+        {% if face.default %}
+          <div class="utility-example-container-condensed">
+            <div class="utility-class">.font-family-{{ face.style }}</div>
+          </div>
+        {% endif %}
+      {% endfor %}
+
+      <h4 class="utility-examples-title margin-bottom-2">Role-based</h4>
+      {% for face in our_faces %}
+        {% if face.default %}
+          {% for role in face.role %}
+            <div class="utility-example-container-condensed">
+              <div class="utility-class">.font-family-{{ role }}</div>
+            </div>
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+
+    </section><!-- examples -->
+  </section><!-- utility -->
 </section><!-- utilities -->
 
 {% include utilities/responsive-variants.html %}
@@ -192,19 +240,103 @@ lead: Set the font size and the font family together.
 
 <section class="utilities-section">
   <h2 class="utilities-section-title">Default output</h2>
-  <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
-    <div class="grid-col-4">Utility</div>
-    <div class="grid-col-6">Output SCSS</div>
-    <div class="grid-col-2">Default variable value</div>
+
+  <p class="utility-note font-sans-2xs margin-bottom-0 border-0"><strong>Note:</strong> The <code>font</code> utilities control both font size and font family, but, technically, the utility only outputs the font size as part of its utility rule. The font family is controlled by a separate, related rule in the format <code>[class*='font-{ family }'] { font-family: { family stack } }</code> as shown in the following code:</p>
+
+  <div markdown="1">
+  ```css
+  [class*='font-mono-'] { font-family: "Roboto Mono Web" ... monospace; }
+  [class*='font-sans-'] { font-family: "Source Sans Pro Web" ... sans-serif; }
+  [class*='font-serif-'] { font-family: "Merriweather Web" ... serif; }
+  [class*='font-alt-'] { font-family: "Source Sans Pro Web" ... sans-serif; }
+  [class*='font-heading-'] { font-family: "Merriweather Web" ... serif; }
+  [class*='font-body-'] { font-family: "Merriweather Web" ... serif; }
+  [class*='font-code-'] { font-family: "Roboto Mono Web" ... monospace; }
+  ```
+  </div>
+
+  <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-3 border-base-light">
+    <div class="grid-col-3">Utility</div>
+    <div class="grid-col-5">Output SCSS</div>
+    <div class="grid-col-4">Default variable value</div>
   </div>
   <dl class="output-list">
 
-    {% assign utility_base = 'flex' %}
-    {% assign utility_modifiers = 'none' | split: ' ,' %}
-    {% assign utility_values = page.values.flex %}
-    {% assign utility_properties = 'flex' | split: ', ' %}
-    {% assign utility_additional_rules = 'none' | split: ', ' %}
-    {% include utilities/output-utilities-loop.html %}
+    {% for size in our_theme_scale %}
+      {% assign font_size = 'font-size-' | append: size %}
+      {% for face in our_faces %}
+        {% if face.default %}
+
+          <dt class="output-utility grid-col-3">.font-{{ face.style }}-{{ size[1].token }}</dt>
+
+          <dd class="output-css grid-col-5">
+            <span>
+                <span class="output-rule">font-size: <span class="output-token">type-scale({{ face.style }}, {{ size[1].token }})</span></span>
+            </span>
+          </dd>
+
+          {% for scale in our_system_scale %}
+            {% if scale[1].token == size[1].value %}
+              {% assign normal_size = scale[1].value %}
+              {% assign this_normal = font_normal | times: 1000 | divided_by: face.normal | times: 0.001 | times: normal_size %}
+              <dd class="output-variable grid-col-4">{{ this_normal }}px</dd>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+
+    {% for size in our_theme_scale %}
+      {% assign font_size = 'font-size-' | append: size %}
+      {% for face in our_faces %}
+        {% if face.default %}
+          {% for role in face.role %}
+
+            <dt class="output-utility grid-col-3">.font-{{ role }}-{{ size[1].token }}</dt>
+
+            <dd class="output-css grid-col-5">
+              <span>
+                  <span class="output-rule">font-size: <span class="output-token">type-scale({{ role }}, {{ size[1].token }})</span></span>
+              </span>
+            </dd>
+
+            {% for scale in our_system_scale %}
+              {% if scale[1].token == size[1].value %}
+                {% assign normal_size = scale[1].value %}
+                {% assign this_normal = font_normal | times: 1000 | divided_by: face.normal | times: 0.001 | times: normal_size %}
+                <dd class="output-variable grid-col-4">{{ this_normal }}px</dd>
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+
+    {% for face in our_faces %}
+      {% if face.default %}
+        <dt class="output-utility grid-col-3">.font-family-{{ face.style }}</dt>
+        <dd class="output-css grid-col-5">
+          <span>
+              <span class="output-rule">font-family: <span class="output-token">$font-stack-{{ face.style }}</span></span>
+          </span>
+        </dd>
+        <dd class="output-variable grid-col-4">{{ face.stack }}</dd>
+      {% endif %}
+    {% endfor %}
+
+    {% for face in our_faces %}
+      {% if face.default %}
+        {% for role in face.role %}
+        <dt class="output-utility grid-col-3">.font-family-{{ role }}</dt>
+        <dd class="output-css grid-col-5">
+          <span>
+            <span class="output-rule">font-family: <span class="output-token">$font-stack-{{ role }}</span></span>
+          </span>
+        </dd>
+        <dd class="output-variable grid-col-4">{{ face.stack }}</dd>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
 
   </dl>
 </section>

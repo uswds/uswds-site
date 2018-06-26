@@ -581,7 +581,7 @@ subnav:
     <section class="utility-title-bar">
       <div class="grid-row">
         <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Pinning</h3>
+          <h3 class="grid-col-auto utility-title">Pin</h3>
         </div>
         <ul class="grid-col-auto utility-scope">
           <li class="utility-scope-button-disabled">responsive</li>
@@ -594,47 +594,89 @@ subnav:
     </section>
 
     <section class="utility-examples">
-      <p class="utility-note margin-bottom-3">The <code>add-pin</code> utilities position an item absolutely along the entirety of the specified side.</p>
+      <p class="utility-note margin-bottom-3">The <code>pin</code> utilities position an item absolutely to the specified side.</p>
       <div class="grid-row grid-gap">
         <div class="grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
-            <div class="add-pin-top bg-secondary-light padding-2 text-ink is-inverse">
-              <div class="margin-0 font-sans-2xs"><span class="utility-class">.add-pin-top</span></div>
+            <div class="pin-top bg-secondary-light padding-2 text-ink is-inverse">
+              <div class="margin-0 font-sans-2xs"><span class="utility-class">.pin-top</span></div>
             </div>
           </div>
         </div>
         <div class="grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
-            <div class="add-pin-bottom bg-secondary-light padding-2 text-ink is-inverse">
-              <div class="margin-0 font-sans-2xs"><span class="utility-class">.add-pin-bottom</span></div>
+            <div class="pin-bottom bg-secondary-light padding-2 text-ink is-inverse">
+              <div class="margin-0 font-sans-2xs"><span class="utility-class">.pin-bottom</span></div>
             </div>
           </div>
         </div>
         <div class="grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
-            <div class="add-pin-left bg-secondary-light padding-2 text-ink is-inverse">
-              <div class="margin-0 font-sans-2xs"><span class="utility-class">.add-pin-left</span></div>
+            <div class="pin-left bg-secondary-light padding-2 text-ink is-inverse">
+              <div class="margin-0 font-sans-2xs"><span class="utility-class">.pin-left</span></div>
             </div>
           </div>
         </div>
         <div class="grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
-            <div class="add-pin-right bg-secondary-light padding-2 text-ink is-inverse">
-              <div class="margin-0 font-sans-2xs"><span class="utility-class">.add-pin-right</span></div>
+            <div class="pin-right bg-secondary-light padding-2 text-ink is-inverse">
+              <div class="margin-0 font-sans-2xs"><span class="utility-class">.pin-right</span></div>
             </div>
           </div>
         </div>
         <div class="grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
-            <div class="add-pin-all bg-secondary-light padding-2 text-ink is-inverse">
-              <div class="margin-0 font-sans-2xs"><span class="utility-class">.add-pin-all</span></div>
+            <div class="pin-x bg-secondary-light padding-2 text-ink is-inverse">
+              <div class="margin-0 font-sans-2xs"><span class="utility-class">.pin-x</span></div>
             </div>
           </div>
         </div>
         <div class="grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
-            <div class="add-pin-none bg-secondary-light padding-2 text-ink is-inverse">
-              <div class="margin-0 font-sans-2xs"><span class="utility-class">.add-pin-none</span></div>
+            <div class="pin-y bg-secondary-light padding-2 text-ink is-inverse">
+              <div class="margin-0 font-sans-2xs"><span class="utility-class">.pin-y</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-col-6">
+          <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
+            <div class="pin-all bg-secondary-light padding-2 text-ink is-inverse">
+              <div class="margin-0 font-sans-2xs"><span class="utility-class">.pin-all</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-col-6">
+          <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
+            <div class="pin-none bg-secondary-light padding-2 text-ink is-inverse">
+              <div class="margin-0 font-sans-2xs"><span class="utility-class">.pin-none</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-col-6">
+          <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
+            <div class="pin-top pin-x bg-secondary-light padding-2 text-ink is-inverse">
+              <div class="margin-0 font-sans-2xs"><span class="utility-class">.pin-top.pin-x</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-col-6">
+          <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
+            <div class="pin-bottom pin-x bg-secondary-light padding-2 text-ink is-inverse">
+              <div class="margin-0 font-sans-2xs"><span class="utility-class">.pin-bottom.pin-x</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-col-6">
+          <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
+            <div class="pin-left pin-y bg-secondary-light padding-2 text-ink is-inverse">
+              <div class="margin-0 font-sans-2xs"><span class="utility-class">.pin-left.pin-y</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-col-6">
+          <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
+            <div class="pin-right pin-y bg-secondary-light padding-2 text-ink is-inverse">
+              <div class="margin-0 font-sans-2xs"><span class="utility-class">.pin-right.pin-y</span></div>
             </div>
           </div>
         </div>
@@ -764,10 +806,45 @@ subnav:
       {% endfor %}
     {% endfor %}
 
-    <dt class="output-utility">.add-pin-bottom</dt>
+    <dt class="output-utility">.pin-bottom</dt>
     <dd class="output-css">
       <span class="">
         <span class="output-rule">bottom: 0</span>
+        <span class="output-rule">position: absolute</span>
+      </span>
+    </dd>
+    <dd class="output-variable">—</dd>
+
+    <dt class="output-utility">.pin-left</dt>
+    <dd class="output-css">
+      <span class="">
+        <span class="output-rule">left: 0</span>
+        <span class="output-rule">position: absolute</span>
+      </span>
+    </dd>
+    <dd class="output-variable">—</dd>
+
+    <dt class="output-utility">.pin-right</dt>
+    <dd class="output-css">
+      <span class="">
+        <span class="output-rule">right: 0</span>
+        <span class="output-rule">position: absolute</span>
+      </span>
+    </dd>
+    <dd class="output-variable">—</dd>
+
+    <dt class="output-utility">.pin-top</dt>
+    <dd class="output-css">
+      <span class="">
+        <span class="output-rule">top: 0</span>
+        <span class="output-rule">position: absolute</span>
+      </span>
+    </dd>
+    <dd class="output-variable">—</dd>
+
+    <dt class="output-utility">.pin-x</dt>
+    <dd class="output-css">
+      <span class="">
         <span class="output-rule">left: 0</span>
         <span class="output-rule">right: 0</span>
         <span class="output-rule">position: absolute</span>
@@ -775,21 +852,21 @@ subnav:
     </dd>
     <dd class="output-variable">—</dd>
 
-    <dt class="output-utility">.add-pin-left</dt>
+    <dt class="output-utility">.pin-y</dt>
     <dd class="output-css">
       <span class="">
         <span class="output-rule">bottom: 0</span>
-        <span class="output-rule">left: 0</span>
         <span class="output-rule">top: 0</span>
         <span class="output-rule">position: absolute</span>
       </span>
     </dd>
     <dd class="output-variable">—</dd>
 
-    <dt class="output-utility">.add-pin-right</dt>
+    <dt class="output-utility">.pin-all</dt>
     <dd class="output-css">
       <span class="">
         <span class="output-rule">bottom: 0</span>
+        <span class="output-rule">left: 0</span>
         <span class="output-rule">right: 0</span>
         <span class="output-rule">top: 0</span>
         <span class="output-rule">position: absolute</span>
@@ -797,13 +874,14 @@ subnav:
     </dd>
     <dd class="output-variable">—</dd>
 
-    <dt class="output-utility">.add-pin-top</dt>
+    <dt class="output-utility">.pin-none</dt>
     <dd class="output-css">
       <span class="">
-        <span class="output-rule">left: 0</span>
-        <span class="output-rule">right: 0</span>
-        <span class="output-rule">top: 0</span>
-        <span class="output-rule">position: absolute</span>
+        <span class="output-rule">bottom: auto</span>
+        <span class="output-rule">left: auto</span>
+        <span class="output-rule">right: auto</span>
+        <span class="output-rule">top: auto</span>
+        <span class="output-rule">position: static</span>
       </span>
     </dd>
     <dd class="output-variable">—</dd>

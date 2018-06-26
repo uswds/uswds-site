@@ -418,8 +418,8 @@ When using the source Sass files, you have the option of using Sass variables an
 Variables and maps determine the number of columns, the gutter width, and the media query point at which to begin floating columns. We use these to generate the predefined grid classes documented above, as well as for the custom mixins listed below.
 
 ```scss
-$theme-column-gap:        16px;
-$theme-column-gap-lg:     32px;
+$theme-column-gap:     16px;
+$theme-column-gap-lg:  32px;
 
 // Change the default sizes of breakpoints
 $uswds-spacing:(

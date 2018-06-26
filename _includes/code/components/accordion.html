@@ -1,7 +1,11 @@
 <h6>Borderless</h6>
 
-{% fractal_component accordion--default %}
+{% capture borderless %}
+  {% fractal_component accordion--default %}
+{% endcapture %}{{ borderless | strip }}
 
 <h6>Bordered</h6>
 
-{% fractal_component accordion--bordered %}
+{% capture bordered %}
+  {% fractal_component accordion--bordered %}
+{% endcapture %}{{ bordered | strip }}

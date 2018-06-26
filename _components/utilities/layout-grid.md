@@ -26,20 +26,10 @@ subnav:
 
 <div class="font-mono-4 weight-300">
 <h2 id="how-it-works">How it works</h2>
-<!--   <p class="font-sans-6 measure-3"><strong>Note:</strong> <code class="docs-inline-code">.grid-container</code>, <code class="docs-inline-code">.grid-gap</code>, and <code class="docs-inline-code">.grid-col</code> all have mobile-first responsive variants. Only the first example shows them.</p>
-  <p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-col</code> and <code class="docs-inline-code">.grid-col-fill</code> items flex to fit</p> -->
+<!-- <p class="font-sans-6 measure-3"><strong>Note:</strong> <code class="docs-inline-code">.grid-container</code>, <code class="docs-inline-code">.grid-gap</code>, and <code class="docs-inline-code">.grid-col</code> all have mobile-first responsive variants. Only the first example shows them.</p> -->
 
 <p class="font-sans-6 measure-3">The grid system uses a series of containers, rows, and columns to lay out and align content. Below is an example and an in-depth look at how the grid comes together.</p>
 
-<!--   <div class="grid-row">
-    <div class="grid-col-6">grid-col-6</div>
-    <div class="grid-col-6">grid-col-6</div>
-  </div>
-
-  <div class="grid-row">
-    <div class="grid-col-12 tablet:grid-col-6">grid-col-12 tablet:grid-col-6</div>
-    <div class="grid-col-12 tablet:grid-col-6">grid-col-12 tablet:grid-col-6</div>
-  </div> -->
 <div class="docs-grid-example">
 {% capture grid-1 %}
 <div class="grid-container">
@@ -75,7 +65,7 @@ Breaking it down, here's how it works:
 - With flexbox, grid columns without a specified width will automatically lay out as equal width columns. For example, four instances of `.grid-col` will each automatically be across all sizes. See the [auto-layout columns](#auto-layout-columns) section for more examples.
 - Rows and columns don't have any gutters by default, but they can be added with `grid-gap` or `grid-gap-lg`. See [gutters](#gutters) for more info.
 - Grid breakpoints are based on minimum width media queries, meaning they apply to that one breakpoint and all those above it (e.g., `tablet:col-4` applies to tablet, desktop, and widescreen devices, but not the mobile or smaller breakpoints). See [responsive variants](#responsive-variants) for full list.
-- You can use predefined grid classes (like `.grid-col-4`) for presentational markup or [Sass mixins](#) for more semantic markup.
+- You can use predefined grid classes (like `.grid-col-4`) for presentational markup or [Sass mixins](#sass-mixins) for more semantic markup.
 
 </div>
 
@@ -123,7 +113,9 @@ Breaking it down, here's how it works:
 
 <h2 id="auto-layout-columns">Auto layout columns</h2>
 <h3>Variable width content</h3>
-  <p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-col-auto</code> items fit the natural width of their content.</p>
+<p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-col-auto</code> items fit the natural width of their content.</p>
+<p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-col</code> and <code class="docs-inline-code">.grid-col-fill</code> items flex to fit</p>
+
 
 <div class="docs-grid-example">
 {% capture grid-auto %}
@@ -228,7 +220,7 @@ Breaking it down, here's how it works:
 </div>
 
 <h3>Stacked to horizontal</h3>
-<p class="font-sans-6 measure-3">Declare full-width columns at mobile width and larger with <code class="docs-inline-code">grid-col-12</code> and tablet and larger with <code class="docs-inline-code">tablet:grid-col-4</code> to create a basic grid system that starts out stacked before becoming horizontal with at the tablet breakpoint (<code class="docs-inline-code">tablet:</code>).</p>
+<p class="font-sans-6 measure-3">Using a single set of <code class="docs-inline-code">tablet:grid-col-*</code> classes, you can create a basic grid system that starts out stacked before becoming horizontal at the tablet breakpoint (<code class="docs-inline-code">tablet:</code>). The column starts out at 100% or full width at the smallest size before transforming to the width at the declared breakpoint.</p>
 
 <div class="docs-grid-example">
 {% capture grid-stacked %}

@@ -128,7 +128,7 @@ vals_negative:
         {% for item in page.vals_negative reversed %}
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
             <div class="position-relative square-4 border-1px bg-white">
-              <div class="bg-secondary-light add-pin-bottom height-{{ item.equiv }}"></div>
+              <div class="bg-secondary-light pin-bottom height-{{ item.equiv }}"></div>
             </div>
             <div class="display-flex flex-column flex-align-start">
               <p class="utility-class margin-top-2">.margin-bottom-{{ item.token }}</p>
@@ -158,7 +158,7 @@ vals_negative:
         {% for item in page.vals_negative reversed %}
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
             <div class="position-relative square-4 border-1px bg-white">
-              <div class="bg-secondary-light add-pin-top height-{{ item.equiv }}"></div>
+              <div class="bg-secondary-light pin-top height-{{ item.equiv }}"></div>
             </div>
             <div class="display-flex flex-column flex-align-start">
               <p class="utility-class margin-top-2">.margin-top-{{ item.token }}</p>
@@ -188,7 +188,7 @@ vals_negative:
         {% for item in page.vals_negative reversed %}
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
             <div class="position-relative square-4 border-1px bg-white">
-              <div class="bg-secondary-light add-pin-left width-{{ item.equiv }}"></div>
+              <div class="bg-secondary-light pin-left width-{{ item.equiv }}"></div>
             </div>
             <div class="display-flex flex-column flex-align-start">
               <p class="utility-class margin-top-2">.margin-left-{{ item.token }}</p>
@@ -227,7 +227,7 @@ vals_negative:
         {% for item in page.vals_negative reversed %}
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
             <div class="position-relative square-4 border-1px bg-white">
-              <div class="bg-secondary-light add-pin-right width-{{ item.equiv }}"></div>
+              <div class="bg-secondary-light pin-right width-{{ item.equiv }}"></div>
             </div>
             <div class="display-flex flex-column flex-align-start">
               <p class="utility-class margin-top-2">.margin-right-{{ item.token }}</p>
@@ -266,8 +266,8 @@ vals_negative:
         {% for item in page.vals_negative reversed %}
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
             <div class="position-relative height-4 width-9 border-1px bg-white">
-              <div class="bg-secondary-light add-pin-right width-{{ item.equiv }}"></div>
-              <div class="bg-secondary-light add-pin-left width-{{ item.equiv }}"></div>
+              <div class="bg-secondary-light pin-right width-{{ item.equiv }}"></div>
+              <div class="bg-secondary-light pin-left width-{{ item.equiv }}"></div>
             </div>
             <div class="display-flex flex-column flex-align-start">
               <p class="utility-class margin-top-2">.margin-x-{{ item.token }}</p>
@@ -306,8 +306,8 @@ vals_negative:
         {% for item in page.vals_negative reversed %}
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
             <div class="position-relative width-4 height-9 border-1px bg-white">
-              <div class="bg-secondary-light add-pin-bottom height-{{ item.equiv }}"></div>
-              <div class="bg-secondary-light add-pin-top height-{{ item.equiv }}"></div>
+              <div class="bg-secondary-light pin-bottom height-{{ item.equiv }}"></div>
+              <div class="bg-secondary-light pin-top height-{{ item.equiv }}"></div>
             </div>
             <div class="display-flex flex-column flex-align-start">
               <p class="utility-class margin-top-2">.margin-y-{{ item.token }}</p>
@@ -382,7 +382,7 @@ vals_negative:
           {% else %}
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
             <div class="position-relative square-9 border-1px margin-0 bg-white">
-              <div class="bg-primary-lighter add-pin-bottom height-{{ item.token }}"></div>
+              <div class="bg-primary-lighter pin-bottom height-{{ item.token }}"></div>
             </div>
           {% endif %}
             <div class="display-flex flex-column flex-align-start">
@@ -403,7 +403,7 @@ vals_negative:
           {% else %}
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
             <div class="position-relative square-9 border-1px margin-0 bg-white">
-              <div class="bg-primary-lighter add-pin-top height-{{ item.token }}"></div>
+              <div class="bg-primary-lighter pin-top height-{{ item.token }}"></div>
             </div>
           {% endif %}
             <div class="display-flex flex-column flex-align-start">
@@ -424,7 +424,7 @@ vals_negative:
           {% else %}
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
             <div class="position-relative square-9 border-1px margin-0 bg-white">
-              <div class="bg-primary-lighter add-pin-left width-{{ item.token }}"></div>
+              <div class="bg-primary-lighter pin-left width-{{ item.token }}"></div>
             </div>
           {% endif %}
             <div class="display-flex flex-column flex-align-start">
@@ -445,7 +445,7 @@ vals_negative:
           {% else %}
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
             <div class="position-relative square-9 border-1px margin-0 bg-white">
-              <div class="bg-primary-lighter add-pin-right width-{{ item.token }}"></div>
+              <div class="bg-primary-lighter pin-right width-{{ item.token }}"></div>
             </div>
           {% endif %}
             <div class="display-flex flex-column flex-align-start">
@@ -465,8 +465,8 @@ vals_negative:
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
           {% endif %}
             <div class="position-relative height-9 width-card border-1px bg-white margin-0 display-inline-block padding-top-0">
-              <div class="bg-primary-lighter add-pin-right width-{{ item.token }}"></div>
-              <div class="bg-primary-lighter add-pin-left width-{{ item.token }}"></div>
+              <div class="bg-primary-lighter pin-right width-{{ item.token }}"></div>
+              <div class="bg-primary-lighter pin-left width-{{ item.token }}"></div>
             </div>
             <div class="display-flex flex-column flex-align-start">
               <p class="utility-class margin-top-2">.padding-x-{{ item.token }}</p>
@@ -485,8 +485,8 @@ vals_negative:
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
           {% endif %}
             <div class="position-relative height-card width-9 border-1px bg-white margin-0 display-inline-block padding-top-0">
-              <div class="bg-primary-lighter add-pin-top height-{{ item.token }}"></div>
-              <div class="bg-primary-lighter add-pin-bottom height-{{ item.token }}"></div>
+              <div class="bg-primary-lighter pin-top height-{{ item.token }}"></div>
+              <div class="bg-primary-lighter pin-bottom height-{{ item.token }}"></div>
             </div>
             <div class="display-flex flex-column flex-align-start">
               <p class="utility-class margin-top-2">.padding-x-{{ item.token }}</p>

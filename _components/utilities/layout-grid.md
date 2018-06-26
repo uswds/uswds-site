@@ -418,24 +418,36 @@ When using the source Sass files, you have the option of using Sass variables an
 Variables and maps determine the number of columns, the gutter width, and the media query point at which to begin floating columns. We use these to generate the predefined grid classes documented above, as well as for the custom mixins listed below.
 
 ```scss
-$theme-column-gap:       16px;
-$theme-column-gap-large: 32px;
+$theme-column-gap:        16px;
+$theme-column-gap-lg:     32px;
 
-$uswds-spacing: (
+$theme-output-breakpoints: (
+  'card':              false,   // 160px
+  'card-lg':           false,   // 240px
+  'mobile':            false,   // 320px
+  'mobile-lg':         true,    // 480px
+  'tablet':            true,    // 640px
+  'tablet-lg':         false,   // 800px
+  'desktop':           true,    // 1040px
+  'desktop-lg':        false,   // 1200px
+  'widescreen':        false,   // 1400px
+);
+
+$uswds-spacing:(
   large: (
-    'card':      grid-units(20),  // 160px
-    'card-lg':   grid-units(30),  // 240px
-    'mobile':    grid-units(40),  // 320px
+    'card':            grid-units(20),  // 160px
+    'card-lg':         grid-units(30),  // 240px
+    'mobile':          grid-units(40),  // 320px
   ),
   larger: (
-    'mobile-lg': grid-units(60),  // 480px
-    'tablet':    grid-units(80),  // 640px
-    'tablet-lg': grid-units(110), // 880px
+    'mobile-lg':       grid-units(60),  // 480px
+    'tablet':          grid-units(80),  // 640px
+    'tablet-lg':       grid-units(110), // 880px
   ),
   largest: (
-    'desktop':   grid-units(128), // 1024px
-    'desktop-lg':grid-units(150), // 1200px
-    'widescreen':grid-units(175), // 1400px
+    'desktop':         grid-units(128), // 1024px
+    'desktop-lg':      grid-units(150), // 1200px
+    'widescreen':      grid-units(175), // 1400px
   ),
 );
 
@@ -447,14 +459,14 @@ Mixins are used in conjunction with the grid variables to generate semantic CSS 
 
 ```scss
 // Creates a wrapper for a series of columns
-@include make-row();
+@include grid-container;
 
 // Make the element grid-ready (applying everything but the width)
-@include make-col-ready();
-@include make-col($size, $columns: $grid-columns);
+@include u-width(full);
+@include grid-col($width-key);
 
 // Get fancy by offsetting, or changing the sort order
-@include make-col-offset($size, $columns: $grid-columns);
+@include grid-offset($width-key);
 ```
 
 ### Example usage
@@ -462,33 +474,39 @@ You can modify the variables to your own custom values, or just use the mixins w
 
 ```scss
 .example-container {
-  width: 800px;
-  @include make-container();
+  @include grid-container;
 }
 
 .example-row {
-  @include make-row();
+  @include grid-row;
+
+  // Add column gaps
+  &.grid-gap {
+    @include grid-gap;
+  }
 }
 
 .example-content-main {
-  @include make-col-ready();
+  @include u-width(full);
 
-  @include media-breakpoint-up(mobile) {
-    @include make-col(6);
+  @include media-breakpoint-up(tablet) {
+    @include grid-col(6);
   }
+
   @include media-breakpoint-up(desktop) {
-    @include make-col(8);
+    @include grid-col(8);
   }
 }
 
 .example-content-secondary {
-  @include make-col-ready();
+  @include u-width(full);
 
-  @include media-breakpoint-up(mobile) {
-    @include make-col(6);
+  @include media-breakpoint-up(tablet) {
+    @include grid-col(6);
   }
+
   @include media-breakpoint-up(desktop) {
-    @include make-col(4);
+    @include grid-col(4);
   }
 }
 ```

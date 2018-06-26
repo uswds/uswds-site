@@ -421,18 +421,7 @@ Variables and maps determine the number of columns, the gutter width, and the me
 $theme-column-gap:        16px;
 $theme-column-gap-lg:     32px;
 
-$theme-output-breakpoints: (
-  'card':              false,   // 160px
-  'card-lg':           false,   // 240px
-  'mobile':            false,   // 320px
-  'mobile-lg':         true,    // 480px
-  'tablet':            true,    // 640px
-  'tablet-lg':         false,   // 800px
-  'desktop':           true,    // 1040px
-  'desktop-lg':        false,   // 1200px
-  'widescreen':        false,   // 1400px
-);
-
+// Change the default sizes of breakpoints
 $uswds-spacing:(
   large: (
     'card':            grid-units(20),  // 160px
@@ -449,6 +438,19 @@ $uswds-spacing:(
     'desktop-lg':      grid-units(150), // 1200px
     'widescreen':      grid-units(175), // 1400px
   ),
+);
+
+// Turn on or off breakpoints
+$theme-output-breakpoints: (
+  'card':              false,   // 160px
+  'card-lg':           false,   // 240px
+  'mobile':            false,   // 320px
+  'mobile-lg':         true,    // 480px
+  'tablet':            true,    // 640px
+  'tablet-lg':         false,   // 800px
+  'desktop':           true,    // 1040px
+  'desktop-lg':        false,   // 1200px
+  'widescreen':        false,   // 1400px
 );
 
 $container-max-widths: $desktop;

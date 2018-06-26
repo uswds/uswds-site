@@ -233,14 +233,14 @@ Breaking it down, here's how it works:
 <div class="docs-grid-example">
 {% capture grid-stacked %}
 <div class="grid-row">
-  <div class="grid-col-12 tablet:grid-col">.grid-col-12 .tablet:grid-col</div>
-  <div class="grid-col-12 tablet:grid-col">.grid-col-12 .tablet:grid-col</div>
-  <div class="grid-col-12 tablet:grid-col">.grid-col-12 .tablet:grid-col</div>
+  <div class="tablet:grid-col">.tablet:grid-col</div>
+  <div class="tablet:grid-col">.tablet:grid-col</div>
+  <div class="tablet:grid-col">.tablet:grid-col</div>
 </div>
 
 <div class="grid-row">
-  <div class="grid-col-12 tablet:grid-col-4">.grid-col-12 .tablet:grid-col-4</div>
-  <div class="grid-col-12 tablet:grid-col-8">.grid-col-12 .tablet:grid-col-8</div>
+  <div class="tablet:grid-col-4">.tablet:grid-col-4</div>
+  <div class="tablet:grid-col-8">.tablet:grid-col-8</div>
 </div>
 {% endcapture %}
 {{ grid-stacked }}

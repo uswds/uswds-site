@@ -142,7 +142,7 @@ Breaking it down, here's how it works:
 </div>
 
 <h2 id="responsive-classes">Responsive classes</h2>
-<h3>All breakpoints</h3>
+<h3>Same at all breakpoints</h3>
 <p class="font-sans-6 measure-3">For columns that should maintain the same proportion at any viewport width, use the <code class="docs-inline-code">.grid-col</code> and <code class="docs-inline-code">.grid-col-*</code> classes. Specify a numbered class when you need a column of a specific width; otherwise, use <code class="docs-inline-code">.grid-col</code>.</p>
 <p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-col-[1-12]</code> set a fixed width of [n] grid-columns in a 12-column grid</p>
 

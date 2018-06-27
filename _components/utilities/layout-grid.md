@@ -338,7 +338,7 @@ Breaking it down, here's how it works:
 <h2 id="gutters">Gutters</h2>
 
 <h3>Default gutter</h3>
-<p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-gap</code> adds a grid-gap between grid-columns in the grid-row, to a value set as <code class="docs-inline-code">$theme-column-gap</code> in settings (16px default).</p>
+<p class="font-sans-6 measure-3">Add <code class="docs-inline-code">.grid-gap</code> to a grid row to add a gap (or gutter) between each column in the row. The default gap width is 16px (2 spacing units). Customize the width of the gap by adjusting the value of <code class="docs-inline-code">$theme-column-gap</code> in project settings.</p>
 {{ grid-markers }}
 
 <div class="docs-grid-example">

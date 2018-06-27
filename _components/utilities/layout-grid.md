@@ -450,6 +450,7 @@ Mixins are used in conjunction with the grid variables to generate semantic CSS 
 
 // Get fancy by offsetting, or changing the sort order
 @include grid-offset($width-key);
+@include u-order(last);
 ```
 
 ### Example usage

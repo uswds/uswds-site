@@ -113,7 +113,7 @@ Breaking it down, here's how it works:
 <h2 id="auto-layout-columns">Auto layout columns</h2>
 <h3>Variable width content</h3>
 <p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-col-auto</code> items fit the natural width of their content.</p>
-<p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-col</code> and <code class="docs-inline-code">.grid-col-fill</code> items flex to fill the available space</p>
+<p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-col</code> and <code class="docs-inline-code">.grid-col-fill</code> items flex to fill the available space.</p>
 
 
 <div class="docs-grid-example">
@@ -144,7 +144,7 @@ Breaking it down, here's how it works:
 <h2 id="responsive-classes">Responsive classes</h2>
 <h3>Same at all breakpoints</h3>
 <p class="font-sans-6 measure-3">For columns that should maintain the same proportion at any viewport width, use the <code class="docs-inline-code">.grid-col</code> and <code class="docs-inline-code">.grid-col-*</code> classes. Specify a numbered class when you need a column of a specific width; otherwise, use <code class="docs-inline-code">.grid-col</code>.</p>
-<p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-col-[1-12]</code> set a fixed width of [n] grid-columns in a 12-column grid</p>
+<p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-col-[1-12]</code> set a fixed width of [n] grid-columns in a 12-column grid.</p>
 
 {% capture grid-markers %}
 <div class="grid-row margin-top-1 font-sans-2">
@@ -286,7 +286,7 @@ Breaking it down, here's how it works:
 </div>
 
 <h2 id="offsetting-columns">Offsetting columns</h2>
-<p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-offset-[1-12]</code> offsets the item by the specified number of grid columns</p>
+<p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-offset-[1-12]</code> offsets the item by the specified number of grid columns.</p>
 {{ grid-markers }}
 
 <div class="docs-grid-example">

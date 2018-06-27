@@ -2,58 +2,75 @@
 permalink: /utilities/list-reset/
 layout: styleguide
 type: utility
-title: List reset 
+title: List reset
 category: Utilities
 lead: Reset default list styling
 ---
 
 <div class="font-sans-4 weight-300">
 
-  <h3 class="grid-col font-sans-micro text-normal text-medium text-uppercase text-ls-1 margin-y-0 margin-left-2px">CSS properties</h3>
-  <div class="margin-top-1">
-    <span class="token display-inline-block text-no-uppercase text-ls-auto padding-05 margin-top-05">list-style</span>
-  </div>
-
-  <section class="border-top-1px padding-top-1 margin-top-4">
+  <section class="utilities-section">
     <div class="grid-row flex-align-center margin-bottom-2">
-      <h2 class="grid-col-auto margin-0 text-light font-sans-8">Examples and usage</h2>
-      <p class="grid-col-fill text-right font-sans-1 text-normal margin-y-0 margin-left-2px text-gray-60">Utilities, values, and variants may be activated and deactivated in <a href="#0" class="text-text text-no-wrap">advanced settings</a>.</p>
+      <h2 class="grid-col-auto utilities-section-title">Examples and usage</h2>
+      <p class="grid-col-fill utilities-section-helper">Utilities, values, and variants may be activated and deactivated in <a href="#0" class="text-ink text-no-wrap">advanced settings</a>.</p>
     </div>
-    <section class="bg-white padding-2 radius-md margin-y-2 border-1px border-gray-10">
-      <section class="margin-x-neg-2 margin-bottom-2 padding-x-2 padding-bottom-105 border-bottom-1px border-gray-10">
+
+    <section class="utility">
+      <section class="utility-title-bar">
         <div class="grid-row">
-          <h3 class="grid-col-auto font-sans-6 margin-top-0 margin-bottom-105">List reset</h3>
-          <ul class="grid-col-fill text-right add-list-reset display-inline">
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">responsive</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">active</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">hover</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">focus</li>
-            <li class="display-inline-block padding-y-05 padding-x-105 border-1px text-gray-20 radius-md margin-right-05 is-inverse text-strike">visited</li>
+          <div class="grid-col-fill">
+            <h3 class="grid-col-auto utility-title">List reset</h3>
+          </div>
+          <ul class="grid-col-auto utility-scope">
+            <li class="utility-scope-button-disabled">responsive</li>
+            <li class="utility-scope-button-disabled">active</li>
+            <li class="utility-scope-button-disabled">hover</li>
+            <li class="utility-scope-button-disabled">focus</li>
+            <li class="utility-scope-button-disabled">visited</li>
           </ul>
         </div>
       </section>
-      <ul class="add-list-reset">
-        <li>Unordered list item</li>
-        <li>Unordered list item</li>
-        <li>Unordered list item</li>
-      </ul>
-      <p class="margin-top-1">
-        <span class="text-base-dark">ul</span><span class="text-red">.add-list-reset</span>
-      </p>
+      <section class="utility-examples">
+        <div class="grid-row">
+          <div class="utility-example-container-condensed grid-col display-flex flex-column flex-justify flex-align-start border-0">
+            <div class="bg-secondary-light">
+              <ul class="bg-white">
+                <li>Red apples</li>
+                <li>Yellow bananas</li>
+                <li>Purple eggplants</li>
+              </ul>
+            </div>
+            <div class="display-flex flex-column flex-align-start">
+              <p class="utility-class margin-top-2">default ul</p>
+              <p class="utility-value">margin-y: 1em</p>
+              <p class="utility-value">padding-left: 1.94em</p>
+            </div>
+          </div>
+          <div class="utility-example-container-condensed grid-col display-flex flex-column flex-justify flex-align-start border-0">
+            <ul class="add-list-reset">
+              <li>Red apples</li>
+              <li>Yellow bananas</li>
+              <li>Purple eggplants</li>
+            </ul>
+            <div class="display-flex flex-column flex-align-start">
+              <p class="utility-class margin-top-2">ul.add-list-reset</p>
+              <p class="utility-value">margin-y: 0</p>
+              <p class="utility-value">padding-left: 0</p>
+              <p class="utility-value">list-style: none</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
   </section>
 
-  <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light font-sans-8">Responsive variants</h2>
-  </section>
+  {% include utilities/responsive-variants.html %}
 
-  <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light font-sans-8"><span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">hover</span>, <span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">active</span>, <span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">focus</span>, and <span class="font-mono-6 padding-x-05 padding-y-2px border-1px display-inline-block radius-md margin-right-2px">visited</span> variants</h2>
-  </section>
+  {% include utilities/state-variants.html %}
 
-  <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light font-sans-8">Default output</h2>
-    <div class="grid-row font-sans-1 text-bold border-bottom-1px padding-bottom-05 margin-top-2 border-gray-20">
+  <section class="utilities-section">
+    <h2 class="utilities-section-title">Default output</h2>
+    <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
       <div class="grid-col-4">Utility</div>
       <div class="grid-col-6">Output SCSS</div>
       <div class="grid-col-2">Default variable value</div>
@@ -61,16 +78,15 @@ lead: Reset default list styling
     <dl class="output-list">
       <dt class="output-utility">.add-list-reset</dt>
       <dd class="output-css">
-        list-style: none;<br>
-        margin-bottom: 0;<br>
-        margin-top: 0;<br>
-        padding-left: 0;
+        <span>
+          <span class="output-rule">list-style: none</span>
+          <span class="output-rule">margin-bottom: 0</span>
+          <span class="output-rule">margin-top: 0</span>
+          <span class="output-rule">padding-left: 0</span>
+        </span>
       </dd>
       <dd class="output-variable">—</dd>
     </dl>
   </section>
-  
-  <section class="border-top-1px padding-top-1 margin-top-4">
-    <h2 class="margin-0 text-light font-sans-8">Advanced settings</h2>
-  </section>
-</div>
+
+  {% include utilities/advanced-settings.html %}

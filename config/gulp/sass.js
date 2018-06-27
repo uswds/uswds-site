@@ -1,5 +1,6 @@
 var gulp      = require('gulp');
 var dutil     = require('./doc-util');
+var combineMq = require('gulp-combine-mq');
 var sass      = require('gulp-sass');
 var linter    = require('gulp-scss-lint');
 var strip     = require('gulp-strip-css-comments');
@@ -13,8 +14,12 @@ gulp.task('build-sass', function () {
       outputStyle: 'compressed',
     }).on('error', sass.logError))
     .pipe(strip())
+    .pipe(
+      combineMq({
+        beautify: true,
+      })
+    )
     .pipe(gulp.dest('assets/css'));
-
 });
 
 gulp.task('scss-lint', function (done) {

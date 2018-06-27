@@ -370,7 +370,7 @@ Breaking it down, here's how it works:
 </div>
 
 <h3>Large gutter</h3>
-<p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-gap-lg</code> adds a grid-gap between grid-columns in the grid-row, to a value set as <code class="docs-inline-code">$theme-column-gap-large</code> in settings (32px default).</p>
+<p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-gap-lg</code> adds a larger gap (or gutter) between each column in a row. The default large gap width is 32px (4 spacing units). Customize the width of the large gap by adjusting the value of <code class="docs-inline-code">$theme-column-gap-large</code> in project settings.</p>
 {{ grid-markers }}
 
 <div class="docs-grid-example">

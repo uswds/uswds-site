@@ -88,7 +88,7 @@ lead: Set the box shadow
 
   <section class="border-top-1px padding-top-1 margin-top-4">
     <h2 class="margin-0 text-light font-sans-8">Default output</h2>
-    <div class="grid-row font-sans-1 text-bold border-bottom-1px padding-bottom-05 margin-top-2 border-gray-20">
+    <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
       <div class="grid-col-4">Utility</div>
       <div class="grid-col-6">Output SCSS</div>
       <div class="grid-col-2">Default variable value</div>

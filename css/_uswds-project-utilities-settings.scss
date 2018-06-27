@@ -56,7 +56,7 @@ $add-list-reset-settings: (
   visited:      false
 );
 
-$add-pin-settings: (
+$pin-settings: (
   output:       true,
   responsive:   false,
   active:       false,
@@ -113,6 +113,15 @@ $border-radius-settings: (
 $border-style-settings: (
   output:       true,
   responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        false,
+  visited:      false
+);
+
+$border-width-settings: (
+  output:       true,
+  responsive:   true,
   active:       false,
   focus:        false,
   hover:        false,

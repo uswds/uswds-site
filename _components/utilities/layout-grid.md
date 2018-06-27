@@ -310,7 +310,7 @@ Breaking it down, here's how it works:
 </div>
 
 <h2 id="column-wrapping">Column wrapping</h2>
-<p class="font-sans-6 measure-3">Rows wrap when grid-columns add up to more than 12</p>
+<p class="font-sans-6 measure-3">Items wrap when the sum of the grid columns is more than 12.</p>
 {{ grid-markers }}
 
 <div class="docs-grid-example">

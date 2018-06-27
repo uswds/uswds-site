@@ -465,7 +465,7 @@ You can modify the variables to your own custom values, or just use the mixins w
   @include grid-row;
 
   // Add column gaps
-  &.grid-gap {
+  &.content-row {
     @include grid-gap;
   }
 }

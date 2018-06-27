@@ -421,25 +421,6 @@ Variables and maps determine the number of columns, the gutter width, and the me
 $theme-column-gap:     16px;
 $theme-column-gap-lg:  32px;
 
-// Change the default sizes of breakpoints
-$uswds-spacing:(
-  large: (
-    'card':            grid-units(20),  // 160px
-    'card-lg':         grid-units(30),  // 240px
-    'mobile':          grid-units(40),  // 320px
-  ),
-  larger: (
-    'mobile-lg':       grid-units(60),  // 480px
-    'tablet':          grid-units(80),  // 640px
-    'tablet-lg':       grid-units(110), // 880px
-  ),
-  largest: (
-    'desktop':         grid-units(128), // 1024px
-    'desktop-lg':      grid-units(150), // 1200px
-    'widescreen':      grid-units(175), // 1400px
-  ),
-);
-
 // Turn on or off breakpoints
 $theme-output-breakpoints: (
   'card':              false,   // 160px

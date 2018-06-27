@@ -254,7 +254,7 @@ Breaking it down, here's how it works:
 {% capture grid-mix %}
 <!-- Stack the columns on mobile by making one full-width and the other half-width -->
 <div class="grid-row">
-  <div class="grid-col-12 tablet:grid-col-8">.col-12 .tablet:grid-col-8</div>
+  <div class="tablet:grid-col-8">.tablet:grid-col-8</div>
   <div class="grid-col-6 tablet:grid-col-4">.col-6 .tablet:grid-col-4</div>
 </div>
 

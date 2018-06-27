@@ -143,7 +143,7 @@ colors:
     - token: white
       value: '#ffffff'
     - token: highlight
-      value: '#E6A100'
+      value: '#e6a100'
       var: $gold-30v
 
   transparent:
@@ -179,50 +179,81 @@ colors:
       value: '#171717'
       var: $ink
     - token: primary-lighter
-      value: '#dae9f6'
+      value: '#dae9f7'
       reverse: true
       var: $primary-lighter
     - token: primary-light
-      value: '#7cbdf0'
+      value: '#79bcf2'
       reverse: true
       var: $primary-light
     - token: primary
-      value: '#0f6bb2'
+      value: '#0069b4'
       var: $primary
     - token: primary-vivid
-      value: '#0e57da'
+      value: '#0052de'
       var: $primary-vivid
     - token: primary-dark
-      value: '#215192'
+      value: '#1e4f94'
       var: $primary-dark
     - token: primary-darker
-      value: '#122b4c'
+      value: '#112a4d'
       var: $primary-darker
+    - token: secondary-lighter
+      value: '#f7ddda'
+      reverse: true
+      var: $secondary-lighter
     - token: secondary-light
-      value: '#F08F8A'
+      value: '#f28f88'
       reverse: true
       var: $secondary-light
     - token: secondary
-      value: '#A93B3D'
+      value: '#d83731'
       var: $secondary
     - token: secondary-vivid
-      value: '#e6251b'
+      value: '#e82207'
       var: $secondary-vivid
     - token: secondary-dark
-      value: '#3b2523'
+      value: '#c31f0a'
       var: $secondary-dark
+    - token: secondary-darker
+      value: '#9c1503'
+      var: $secondary-darker
+    - token: accent-cool-lighter
+      value: '#e8f7fa'
+      var: $accent-cool-lighter
+      reverse: true
+    - token: accent-cool-light
+      value: '#9ddceb'
+      var: $accent-cool-light
+      reverse: true
     - token: accent-cool
-      value: '#fd7b28'
+      value: '#02c2e8'
       var: $accent-cool
+      reverse: true
     - token: accent-cool-dark
-      value: '#1babcf'
+      value: '#00abd1'
       var: $accent-cool-dark
+    - token: accent-cool-darker
+      value: '#2f6794'
+      var: $accent-cool-darker
+    - token: accent-warm-lighter
+      value: '#fce2c5'
+      var: $accent-warm-lighter
+      reverse: true
+    - token: accent-warm-light
+      value: '#ffba75'
+      var: $accent-warm-light
+      reverse: true
     - token: accent-warm
-      value: '#fd974c'
+      value: '#ff9742'
       var: $accent-warm
+      reverse: true
     - token: accent-warm-dark
-      value: '#fd7b28'
+      value: '#c25700'
       var: $accent-warm-dark
+    - token: accent-warm-darker
+      value: '#73563e'
+      var: $accent-warm-darker
   grayscale:
     - token: white
       value: '#ffffff'
@@ -252,37 +283,37 @@ colors:
       value: '#000000'
   basic:
     - token: red
-      value: '#e6251b'
+      value: '#e82207'
       var: $red-50v
     - token: orange
-      value: '#fd7b28'
+      value: '#ff7b0f'
       var: $orange-40v
     - token: gold
-      value: '#f8ae29'
+      value: '#e6a100'
       var: $gold-30v
     - token: yellow
-      value: '#fcd344'
+      value: '#edc730'
       var: $yellow-20v
     - token: green
-      value: '#548114'
+      value: '#73a22b'
       var: $green-40v
     - token: mint
-      value: '#20c688'
-      var: $mint-40v
+      value: '#04c786'
+      var: $mint-30v
     - token: cyan
-      value: '#1babcf'
+      value: '#02c2e8'
       var: $cyan-30v
     - token: blue
-      value: '#137cdb'
+      value: '#367bb4'
       var: $blue-50
     - token: indigo
-      value: '#6970c7'
+      value: '#8889db'
       var: $indigo-40
     - token: violet
-      value: '#836bb3'
+      value: '#b07bed'
       var: $violet-40v
     - token: magenta
-      value: '#df2d7a'
+      value: '#c84180'
       var: $magenta-50
 
 opacity:

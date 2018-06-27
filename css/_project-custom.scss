@@ -2145,9 +2145,11 @@ li.display-inline-block {
 
 /* * * * * * ========================== */
 
-.usa-sidenav-list,
-.usa-sidenav-list > li {
-  border-color: $gray-10;
+.sidenav {
+  .usa-sidenav-list,
+  .usa-sidenav-list > li {
+    border-color: $gray-10;
+  }
 }
 
 body {

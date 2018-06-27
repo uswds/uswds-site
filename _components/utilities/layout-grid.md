@@ -249,7 +249,7 @@ Breaking it down, here's how it works:
 </div>
 
 <h3>Mix and match</h3>
-<p class="font-sans-6 measure-3">Don’t want your columns to simply stack in some grid tiers? Use a combination of different classes for each tier as needed. See the example below for a better idea of how it all works.</p>
+<p class="font-sans-6 measure-3">Don’t want your columns to simply stack in some breakpoints? Use a combination of different classes for each breakpoints as needed. See the example below for a better idea of how it all works.</p>
 <div class="docs-grid-example">
 {% capture grid-mix %}
 <!-- Stack the columns on mobile by making one full-width and the other half-width -->

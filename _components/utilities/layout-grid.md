@@ -434,7 +434,7 @@ $theme-output-breakpoints: (
   'widescreen':        false,   // 1400px
 );
 
-$container-max-widths: $desktop;
+$theme-grid-container-max-width: desktop;
 ```
 
 ### Mixins

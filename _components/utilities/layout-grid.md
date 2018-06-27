@@ -438,7 +438,7 @@ $container-max-widths: $desktop;
 ```
 
 ### Mixins
-Mixins are used in conjunction with the grid variables to generate semantic CSS for individual grid columns.
+Mixins can be used in conjunction with the grid variables to add grid functionality to semantic component Sass.
 
 ```scss
 // Creates a wrapper for a series of columns

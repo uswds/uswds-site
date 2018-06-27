@@ -113,7 +113,7 @@ Breaking it down, here's how it works:
 <h2 id="auto-layout-columns">Auto layout columns</h2>
 <h3>Variable width content</h3>
 <p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-col-auto</code> items fit the natural width of their content.</p>
-<p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-col</code> and <code class="docs-inline-code">.grid-col-fill</code> items flex to fit</p>
+<p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-col</code> and <code class="docs-inline-code">.grid-col-fill</code> items flex to fill the available space</p>
 
 
 <div class="docs-grid-example">

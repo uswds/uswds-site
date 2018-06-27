@@ -473,11 +473,11 @@ You can modify the variables to your own custom values, or just use the mixins w
 .example-content-main {
   @include u-width(full);
 
-  @include media-breakpoint-up(tablet) {
+  @include at-media(tablet) {
     @include grid-col(6);
   }
 
-  @include media-breakpoint-up(desktop) {
+  @include at-media(desktop) {
     @include grid-col(8);
   }
 }
@@ -485,11 +485,11 @@ You can modify the variables to your own custom values, or just use the mixins w
 .example-content-secondary {
   @include u-width(full);
 
-  @include media-breakpoint-up(tablet) {
+  @include at-media(tablet) {
     @include grid-col(6);
   }
 
-  @include media-breakpoint-up(desktop) {
+  @include at-media(desktop) {
     @include grid-col(4);
   }
 }

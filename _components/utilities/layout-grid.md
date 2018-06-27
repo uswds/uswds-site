@@ -54,7 +54,7 @@ subnav:
 </div>
 
 <div markdown="1" class="font-sans-6 measure-3">
-The above example creates three equal-width columns on tablet, desktop, and widescreen devices using our predefined grid classes. Those columns are centered in the page with the parent `usa-grid` container.
+The above example creates three equal-width columns on tablet, desktop, and widescreen devices using our predefined grid classes. Those columns are centered in the page with the parent `.grid-container` container.
 
 Breaking it down, here's how it works:
 

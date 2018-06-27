@@ -286,7 +286,7 @@ Breaking it down, here's how it works:
 </div>
 
 <h2 id="offsetting-columns">Offsetting columns</h2>
-<p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-offset-[1-12]</code> offsets the grid-column by [n] grid-columns</p>
+<p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-offset-[1-12]</code> offsets the item by the specified number of grid columns</p>
 {{ grid-markers }}
 
 <div class="docs-grid-example">

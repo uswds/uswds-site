@@ -441,18 +441,33 @@ $container-max-widths: $desktop;
 Mixins can be used in conjunction with the grid variables to add grid functionality to semantic component Sass.
 
 ```scss
-// Creates a wrapper for a series of columns
+// Creates a wrapper for a series of rows
+// $container-size can be mobile, mobile-lg, tablet, tablet-lg, desktop, desktop-lg, or widescreen
 @include grid-container;
+@include grid-container($container-size);
 
-// Add a full-width element
+// Creates a wrapper for a series of columns
+@include grid-row;
+
+// Specify the width between columns
+// $gap-size can be sm, md, lg, 2px, 05, 1, 3, 4, 6
+@include grid-gap;
+@include grid-gap($gap-size);
+
+// Make the element full-width
 @include u-width(full);
 
-// Set a grid width
-@include grid-col($width-key);
+// Specify the number of columns the element should span
+// $columns can be auto, fill, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+@include grid-col;
+@include grid-col($columns);
 
-// Get fancy by offsetting, or changing the sort order
-@include grid-offset($width-key);
-@include u-order(last);
+// Get fancy by offsetting or changing the display order
+// $offset can be none, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+@include grid-offset($offset);
+
+// $order can be first, last, initial, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
+@include u-order($order);
 ```
 
 ### Example usage

@@ -61,7 +61,7 @@ Breaking it down, here's how it works:
 - **Containers** `.grid-container` centers the container and gives it a maximum width of 1024px. If you would like the grid to span the full width of the page, do not use `.grid-container`. `grid-container` can also accept any breakpoint width like `grid-container-tablet-lg` or `grid-container-widescreen`. 
 - **Rows** `.grid-row` wrap around columns.
 - **Columns** `.grid-col-[1-12]` indicates the number of columns the item spans out of a possible 12 per row. So, if you want three equal-width columns across, use `.grid-col-4` for each item.
-- With flexbox, grid columns without a specified width will automatically lay out as equal width columns. For example, four instances of `.grid-col` will each automatically be across all sizes. See the [auto-layout columns](#auto-layout-columns) section for more examples.
+- With flexbox, grid columns without a specified width will display as equal-width columns. For example, four instances of `.grid-col` will display as one-quarter-width columns across all sizes. See the [auto-layout columns](#auto-layout-columns) section for more examples.
 - Rows and columns don't have any gutters by default, but they can be added with `grid-gap` or `grid-gap-lg`. See [gutters](#gutters) for more info.
 - Grid breakpoints are based on minimum width media queries, meaning they apply to that one breakpoint and all those above it (e.g., `tablet:col-4` applies to tablet, desktop, and widescreen devices, but not the mobile or smaller breakpoints). See [responsive variants](#responsive-variants) for full list.
 - You can use predefined grid classes (like `.grid-col-4`) for presentational markup or [Sass mixins](#sass-mixins) for more semantic markup.

@@ -58,7 +58,7 @@ The above example creates three equal-width columns on tablet, desktop, and wide
 
 Breaking it down, here's how it works:
 
-- **Containers** `.grid-container` centers the container and gives it a maximum width of 1024px. If you would like the grid to span the full width of the page, do not use `.grid-container`.
+- **Containers** `.grid-container` centers the container and gives it a maximum width of 1024px. If you would like the grid to span the full width of the page, do not use `.grid-container`. `grid-container` can also accept any breakpoint width like `grid-container-tablet-lg` or `grid-container-widescreen`. 
 - **Rows** `.grid-row` wrap around columns.
 - **Columns** `.grid-col-[1-12]` indicate the number of columns you’d like to use out of the possible 12 per row. So, if you want three equal-width columns across, you can use `.grid-col-4`.
 - With flexbox, grid columns without a specified width will automatically lay out as equal width columns. For example, four instances of `.grid-col` will each automatically be across all sizes. See the [auto-layout columns](#auto-layout-columns) section for more examples.

@@ -444,8 +444,10 @@ Mixins can be used in conjunction with the grid variables to add grid functional
 // Creates a wrapper for a series of columns
 @include grid-container;
 
-// Make the element grid-ready (applying everything but the width)
+// Add a full-width element
 @include u-width(full);
+
+// Set a grid width
 @include grid-col($width-key);
 
 // Get fancy by offsetting, or changing the sort order

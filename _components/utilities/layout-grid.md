@@ -219,7 +219,7 @@ Breaking it down, here's how it works:
 </div>
 
 <h3>Stacked columns at narrow widths</h3>
-<p class="font-sans-6 measure-3">Columns are full-width until the narrowest breakpoint specified in a grid-col class. For instance, using a single set of <code class="docs-inline-code">tablet:grid-col-*</code> classes, you can create a basic grid system that starts out stacked before displaying as columns at the tablet breakpoint (<code class="docs-inline-code">tablet:</code>).</p>
+<p class="font-sans-6 measure-3">Columns are full-width until the narrowest breakpoint specified in a <code class="docs-inline-code">grid-col</code> class. For instance, using a single set of <code class="docs-inline-code">tablet:grid-col-*</code> classes, you can create a basic grid system that starts out stacked before displaying as columns at the tablet breakpoint (<code class="docs-inline-code">tablet:</code>).</p>
 
 <div class="docs-grid-example">
 {% capture grid-stacked %}

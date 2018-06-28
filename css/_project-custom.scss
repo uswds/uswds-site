@@ -1820,6 +1820,7 @@ html {
   @include u-font('sans', 6);
   @include u-margin-bottom(1);
   @include u-margin-top(4);
+  @include u-measure(4);
   @include u-text('normal');
 }
 
@@ -2184,4 +2185,30 @@ pre {
 
 .site-nav-secondary.sticky {
   @include u-z(200);
+}
+
+.docs-grid-example {
+  .grid-row {
+    margin-top: 8px;
+  }
+
+  [class*="grid-col"] {
+    background-color: $primary-lighter;
+    text-align: center;
+  }
+
+  .grid-row:not([class*="grid-gap"]) {
+    [class*="grid-col"] {
+      border: 1px solid;
+      padding: 16px;
+    }
+  }
+
+  [class*="grid-gap"] {
+    [class*="grid-col"] > * {
+      background-color: $color-white;
+      border: 1px solid;
+      padding: 16px;
+    }
+  }
 }

@@ -203,4 +203,54 @@ subnav:
   </dl>
 </section>
 
-{% include utilities/advanced-settings.html %}
+<section class="utilities-section">
+  <h2 class="utilities-section-title">Advanced settings</h2>
+  <p class="utility-note">Each utility category has user-editable settings in <code>_uswds-project-utilities-settings.scss</code>. Project settings are discussed in more detail <a href="#0">here</a>. The following advanced options control how utilities are output and what values are available.</p>
+
+  <h3>Global</h3>
+  <p class="utility-note">Values added to <code>$global-color-plugins</code> will be automatically added to the <code>bg</code>, <code>border</code>, <code>text</code>, and <code>underline</code> utilities.</p>
+
+  <dl>
+    <dt>Settings variable</dt>
+    <dd>Settings variable</dd>
+  </dl>
+
+  <div class="grid-container padding-2 overflow-x-hidden bg-yellow margin-y-2">
+    <div class="grid-row grid-gap">
+      <div class="grid-col">
+        <div class="padding-1 bg-white border text-center font-mono-2xs radius-md">oh</div>
+      </div>
+      <div class="grid-col">
+        <div class="padding-1 bg-white border text-center font-mono-2xs radius-md">hai</div>
+      </div>
+      <div class="grid-col">
+        <div class="padding-1 bg-white border text-center font-mono-2xs radius-md">it</div>
+      </div>
+      <div class="grid-col">
+        <div class="padding-1 bg-white border text-center font-mono-2xs radius-md">me</div>
+      </div>
+    </div>
+  </div>
+
+  $global-color-plugins: (
+    'plugin-color-palette-theme',
+    'plugin-color-palette-basic',
+    'plugin-color-palette-grayscale'
+  );
+
+  <h3>Text Color</h3>
+  <dl>
+    <dt>Settings variable</dt>
+    <dd>Settings variable</dd>
+  </dl>
+
+</section>
+
+$color-settings: (
+  output:       true,
+  responsive:   false,
+  active:       false,
+  focus:        false,
+  hover:        true,
+  visited:      false
+) !default;

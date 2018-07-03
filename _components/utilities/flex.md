@@ -7,14 +7,14 @@ category: Utilities
 lead: Set an item’s flexbox properties.
 subnav:
 - text: Flex
-  href: '#text-color'
+  href: '#utility-flex'
 - text: Flex direction
   href: '#utility-flex-direction'
 - text: Flex wrap
   href: '#utility-flex-wrap'
-- text: Align
+- text: Flex align
   href: '#utility-flex-align'
-- text: Justify
+- text: Flex justify
   href: '#utility-flex-justify'
 - text: Order
   href: '#utility-order'
@@ -463,6 +463,71 @@ values:
     </section><!-- examples -->
   </section><!-- utility -->
 
+  <section class="utility" id="utility-flex-justify">
+    <section class="utility-title-bar">
+      <div class="grid-row">
+        <div class="grid-col-fill">
+          <h3 class="grid-col-auto utility-title">Flex justify</h3>
+          <p class="utility-property">CSS property: <span class="utility-property-code">justify-content</span></p>
+        </div>
+
+        <ul class="grid-col-auto utility-scope">
+          <li class="utility-scope-button-disabled">responsive</li>
+          <li class="utility-scope-button-disabled">active</li>
+          <li class="utility-scope-button-disabled">hover</li>
+          <li class="utility-scope-button-disabled">focus</li>
+          <li class="utility-scope-button-disabled">visited</li>
+        </ul>
+      </div>
+    </section>
+    <section class="utility-examples">
+
+      <div class="border padding-1 radius-md margin-bottom-2">
+        <div class="padding-bottom-4 border-bottom margin-bottom-2">
+          <span class="utility-class">.flex-row</span>
+        </div>
+        {% for justify in page.values.flex_justify %}
+          <span class="utility-class">.flex-{{ justify.token }}</span>
+            <div class="grid-row flex-{{ direction.token }} flex-{{ justify.token }} margin-top-2 border-bottom border-base-light padding-bottom-2 margin-bottom-2">
+              <div class="grid-auto padding-1px">
+                <div class="height-full minh-7 minw-7 width-full display-flex flex-align-center bg-secondary-light flex-justify-center">
+                </div>
+              </div>
+              <div class="grid-auto padding-1px">
+                <div class="height-full minh-8 minw-8 width-full display-flex flex-align-center bg-secondary-light flex-justify-center">
+                </div>
+              </div>
+              <div class="grid-auto padding-1px">
+                <div class="height-full minh-9 minw-9 width-full display-flex flex-align-center bg-secondary-light flex-justify-center">
+                </div>
+              </div>
+              <div class="grid-auto padding-1px">
+                <div class="height-full minh-10 minw-10 width-full display-flex flex-align-center bg-secondary-light flex-justify-center">
+                </div>
+              </div>
+            </div>
+        {% endfor %}
+        </div>
+
+    <div class="usa-accordion-bordered usa-code-sample margin-top-4 margin-bottom-1">
+      <button class="usa-accordion-button" aria-controls="code-flex-justify" aria-expanded="true">Code</button>
+      <div id="code-flex-justify" class="usa-accordion-content">
+<div markdown="1" class="font-mono-xs">
+```html
+<div class="display-flex flex-row">
+  <div class="flex-align-start"></div>
+  <div class="flex-align-center"></div>
+  <div class="flex-align-end"></div>
+  <div class="flex-align-stretch"></div>
+</div>
+```
+</div><!-- markdown -->
+        </div><!-- code-content -->
+      </div><!-- code-sample -->
+
+    </section><!-- examples -->
+  </section><!-- utility -->
+
   <section class="utility" id="utility-order">
     <section class="utility-title-bar">
       <div class="grid-row">
@@ -494,8 +559,8 @@ values:
     </div>
 
     <div class="usa-accordion-bordered usa-code-sample margin-top-4 margin-bottom-1">
-      <button class="usa-accordion-button" aria-controls="code-flex-justify" aria-expanded="true">Code</button>
-      <div id="code-flex-justify" class="usa-accordion-content">
+      <button class="usa-accordion-button" aria-controls="code-order" aria-expanded="true">Code</button>
+      <div id="code-order" class="usa-accordion-content">
 <div markdown="1" class="font-mono-xs">
 ```html
 <div class="grid-row">

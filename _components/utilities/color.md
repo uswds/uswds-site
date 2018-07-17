@@ -10,6 +10,13 @@ subnav:
   href: '#text-color'
 - text: Background color
   href: '#background-color'
+utilities:
+- base: text
+  var: color
+  responsive: false
+- base: bg
+  var: background-color
+  responsive: false
 ---
 
 {% assign theme_colors = site.data.uswds_tokens.colors.project_theme %}

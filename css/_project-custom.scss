@@ -2143,6 +2143,18 @@ li.display-inline-block {
   @include u-border-bottom(1px, $base-lighter);
 }
 
+.utility-text {
+  @include u-font(sans, xs);
+  @include u-line-height(sans, 5);
+  @include u-margin(0);
+  @include u-measure(none);
+  @include u-padding(0);
+
+  & + .utility-text {
+    @include u-margin-top(1);    
+  }
+}
+
 /* * * * * * ========================== */
 
 .sidenav {

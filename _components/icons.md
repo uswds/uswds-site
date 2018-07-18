@@ -22,7 +22,7 @@ The Design System uses a subset of [Font Awesome](https://fontawesome.com/) icon
       <li>CSS background images</li>
     </ul>
     <h4 class="usa-heading">Accessibility</h4>
-    <p>Provide descriptive text when the icons are meaningful or have an action associated with it. Do not provide additional text when the icon is decorative.</p>
+    <p>Provide descriptive text when an icon is meaningful or has an action associated with it. Do not provide additional text when the icon is decorative.</p>
     <p>See <a href="https://accessibility.digital.gov/front-end/images/">Images - Accessibility for Teams</a> and <a href="https://fontawesome.com/how-to-use/on-the-web/other-topics/accessibility">Accessibility - Font Awesome</a>.</p>
     <h4 class="usa-heading">Usability</h4>
     <p>See <a href="https://www.nngroup.com/articles/icon-usability/">Icon Usability - Nielsen Norman Group</a>.</p>

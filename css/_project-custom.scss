@@ -2146,9 +2146,7 @@ li.display-inline-block {
 .utility-text {
   @include u-font(sans, xs);
   @include u-line-height(sans, 5);
-  @include u-margin(0);
-  @include u-measure(5);
-  @include u-padding(0);
+  @include u-measure(6);
 
   & + .utility-text {
     @include u-margin-top(1);
@@ -2201,7 +2199,6 @@ pre {
 a code {
   @include u-border(1px, $blue-50v);
   @include u-bg(transparent);
-  @include u-text(no-underline);
 
   &:hover {
     @include u-bg($blue-50v);

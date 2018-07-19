@@ -177,13 +177,13 @@ colors:
       </div>
     </section>
     <section class="utility-examples">
-      <p class="utility-example-container-condensed text-thin">.text-thin</p>
+      <p class="utility-example-container-condensed text-thin">.text-thin <span class="text-base-dark">(<b>Note:</b> not included in default set)</span></p>
       <p class="utility-example-container-condensed text-light">.text-light</p>
       <p class="utility-example-container-condensed text-normal">.text-normal</p>
-      <p class="utility-example-container-condensed text-medium">.text-medium</p>
-      <p class="utility-example-container-condensed text-semibold">.text-semibold</p>
+      <p class="utility-example-container-condensed text-medium">.text-medium <span class="text-base-dark">(<b>Note:</b>  not included in default set)</span></p>
+      <p class="utility-example-container-condensed text-semibold">.text-semibold <span class="text-base-dark">(<b>Note:</b>  not included in default set)</span></p>
       <p class="utility-example-container-condensed text-bold">.text-bold</p>
-      <p class="utility-example-container-condensed text-heavy border-0">.text-heavy</p>
+      <p class="utility-example-container-condensed text-heavy border-0">.text-heavy <span class="text-base-dark">(<b>Note:</b>  not included in default set)</span></p>
     </section>
   </section>
 
@@ -238,6 +238,7 @@ colors:
         <p class="font-sans-8 text-tabular margin-0">825,489,012</p>
         <p class="font-sans-8 text-tabular margin-0">112,051,928</p>
         <p class="utility-class margin-top-2">.text-tabular</p>
+        <p class="margin-bottom-05"><b>Note:</b> not included in default set</p>
       </div>
       <div class="utility-example-container-condensed border-0">
         <p class="font-sans-8 text-no-tabular margin-0">123,456,789</p>

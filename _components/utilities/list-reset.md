@@ -89,4 +89,8 @@ lead: Reset default list styling
     </dl>
   </section>
 
-  {% include utilities/advanced-settings.html %}
+  {% include utilities/output-control.html %}
+
+  <section class="utilities-section margin-top-6">
+    {% include utilities/values-intro.html %}
+  </section>

@@ -11,7 +11,7 @@
   {% for utility in page.utilities %}
     <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
       <div class="grid-col-9">${{ utility.var }}-settings.output</div>
-      <div class="grid-col-3">{% if utility.output %}true{% else %}false{% endif %}</div>
+      <div class="grid-col-3">{% if utility.output %}<span class="output-true">true</span>{% else %}false{% endif %}</div>
     </div>
   {% endfor %}
 

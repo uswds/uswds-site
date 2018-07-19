@@ -16,6 +16,48 @@ subnav:
   href: '#utility-border-color'
 - text: Border radius
   href: '#utility-radius'
+
+utilities:
+- base:         border
+  var:          border
+  output:       true
+  responsive:   true
+  active:       false
+  focus:        false
+  hover:        true
+  visited:      false
+- base:         border
+  var:          border-style
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         border
+  var:          border-width
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         border
+  var:          border-color
+  output:       true
+  responsive:   true
+  active:       false
+  focus:        false
+  hover:        true
+  visited:      false
+- base:         radius
+  var:          border-radius
+  output:       true
+  responsive:   true
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
 ---
 
 {% assign border_modifiers = ", -top, -bottom, -left, -right, -x, -y" | split: ", " %}
@@ -694,4 +736,8 @@ subnav:
     </dl>
   </section>
 
-  {% include utilities/advanced-settings.html %}
+  {% include utilities/output-control.html %}
+
+  <section class="utilities-section margin-top-6">
+    {% include utilities/values-intro.html %}
+  </section>

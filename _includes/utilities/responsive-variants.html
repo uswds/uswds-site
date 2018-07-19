@@ -38,12 +38,12 @@
   <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
     <div class="grid-col-6">mobile-lg</div>
     <div class="grid-col-3">480px</div>
-    <div class="grid-col-3">true</div>
+    <div class="grid-col-3"><span class="output-true">true</span></div>
   </div>
   <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
     <div class="grid-col-6">tablet</div>
     <div class="grid-col-3">640px</div>
-    <div class="grid-col-3">true</div>
+    <div class="grid-col-3"><span class="output-true">true</span></div>
   </div>
   <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
     <div class="grid-col-6">tablet-lg</div>
@@ -53,7 +53,7 @@
   <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
     <div class="grid-col-6">desktop</div>
     <div class="grid-col-3">1024px</div>
-    <div class="grid-col-3">true</div>
+    <div class="grid-col-3 flex-justify-start"><span class="output-true">true</span></div>
   </div>
   <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
     <div class="grid-col-6">desktop-lg</div>
@@ -76,7 +76,7 @@
   {% for utility in page.utilities %}
     <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
       <div class="grid-col-9">${{ utility.var }}-settings.responsive</div>
-      <div class="grid-col-3">{% if utility.responsive %}true{% else %}false{% endif %}</div>
+      <div class="grid-col-3">{% if utility.responsive %}<span class="output-true">true</span>{% else %}false{% endif %}</div>
     </div>
   {% endfor %}
 

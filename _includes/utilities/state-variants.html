@@ -23,10 +23,10 @@
   {% for utility in page.utilities %}
     <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
       <div class="grid-col">${{ utility.var }}-settings</div>
-      <div class="grid-col-auto width-15">{% if utility.active %}true{% else %}false{% endif %}</div>
-      <div class="grid-col-auto width-15">{% if utility.focus %}true{% else %}false{% endif %}</div>
-      <div class="grid-col-auto width-15">{% if utility.hover %}true{% else %}false{% endif %}</div>
-      <div class="grid-col-auto width-15">{% if utility.visited %}true{% else %}false{% endif %}</div>
+      <div class="grid-col-auto width-15">{% if utility.active %}<span class="output-true">true</span>{% else %}false{% endif %}</div>
+      <div class="grid-col-auto width-15">{% if utility.focus %}<span class="output-true">true</span>{% else %}false{% endif %}</div>
+      <div class="grid-col-auto width-15">{% if utility.hover %}<span class="output-true">true</span>{% else %}false{% endif %}</div>
+      <div class="grid-col-auto width-15">{% if utility.visited %}<span class="output-true">true</span>{% else %}false{% endif %}</div>
     </div>
   {% endfor %}
 

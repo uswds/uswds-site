@@ -2232,3 +2232,13 @@ a code {
     }
   }
 }
+
+.output-true {
+  @include add-font-smoothing;
+  @include u-bg($blue-50v);
+  @include u-display(inline-block);
+  @include u-padding-y(0);
+  @include u-padding-x(.5);
+  @include u-radius(sm);
+  @include u-text(white);
+}

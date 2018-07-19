@@ -220,54 +220,45 @@ utilities:
   </dl>
 </section>
 
+{% include utilities/output-control.html %}
+
 <section class="utilities-section">
-  <h2 class="utilities-section-title">Advanced settings</h2>
-  <p class="utility-note">Each utility category has user-editable settings in <code>_uswds-project-utilities-settings.scss</code>. Project settings are discussed in more detail <a href="#0">here</a>. The following advanced options control how utilities are output and what values are available.</p>
+  {% include utilities/values-intro.html %}
 
-  <h3>Global</h3>
-  <p class="utility-note">Values added to <code>$global-color-plugins</code> will be automatically added to the <code>bg</code>, <code>border</code>, <code>text</code>, and <code>underline</code> utilities.</p>
+  <aside class="example border-left-05 border-secondary-light padding-left-105">
+    <h3 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h3>
+<pre class="font-mono-xs margin-0 padding-0 bg-transparent">
+$background-color-palette-values: (
+  $palette-red-medium,
+  $palette-red-medium-vivid // note: no trailing comma
+);
+</pre>
+  <h3 class="font-sans-2xs margin-top-2 margin-bottom-05">Output</h3>
+<pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
+  .bg-red-40 { background-color: #ed6b61; }
+  .bg-red-50 { background-color: #d83731; }
+  .bg-red-60 { background-color: #ab3a3a; }
+  .bg-red-40v { background-color: #ff5c48; }
+  .bg-red-50v { background-color: #e82207; }
+  .bg-red-60v { background-color: #c31f0a; }
+</pre>
+  </aside>
 
-  <dl>
-    <dt>Settings variable</dt>
-    <dd>Settings variable</dd>
-  </dl>
+  <h3 class="font-sans-2xs margin-top-4 margin-bottom-0">Global color palettes</h3>
+  <p class="utility-text margin-top-05">Any palette added to the <code>$global-color-palettes</code> list in <code>_project-utilities-settings.scss</code> will output in the background color, text color, border color, and text decoration color utilities.</p>
 
-  <div class="grid-container padding-2 overflow-x-hidden bg-yellow margin-y-2">
-    <div class="grid-row grid-gap">
-      <div class="grid-col">
-        <div class="padding-1 bg-white border text-center font-mono-2xs radius-md">oh</div>
-      </div>
-      <div class="grid-col">
-        <div class="padding-1 bg-white border text-center font-mono-2xs radius-md">hai</div>
-      </div>
-      <div class="grid-col">
-        <div class="padding-1 bg-white border text-center font-mono-2xs radius-md">it</div>
-      </div>
-      <div class="grid-col">
-        <div class="padding-1 bg-white border text-center font-mono-2xs radius-md">me</div>
-      </div>
-    </div>
+  <h3 class="font-sans-2xs margin-top-4 margin-bottom-1">Background color</h3>
+  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
+    <div class="grid-col-4">Palette name</div>
+    <div class="grid-col-8">Palette includes</div>
   </div>
+  {% include utilities/output-color-palettes.html %}
 
-  $global-color-plugins: (
-    'plugin-color-palette-theme',
-    'plugin-color-palette-basic',
-    'plugin-color-palette-grayscale'
-  );
-
-  <h3>Text Color</h3>
-  <dl>
-    <dt>Settings variable</dt>
-    <dd>Settings variable</dd>
-  </dl>
+  <h3 class="font-sans-2xs margin-top-4 margin-bottom-1">Text color</h3>
+  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
+    <div class="grid-col-4">Palette name</div>
+    <div class="grid-col-8">Palette includes</div>
+  </div>
+  {% include utilities/output-color-palettes.html %}
 
 </section>
-
-$color-settings: (
-  output:       true,
-  responsive:   false,
-  active:       false,
-  focus:        false,
-  hover:        true,
-  visited:      false
-) !default;

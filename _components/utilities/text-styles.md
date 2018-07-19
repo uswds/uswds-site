@@ -111,6 +111,80 @@ colors:
     value: '#836BB3'
   - token: magenta
     value: '#DF2D7A'
+
+utilities:
+- base:         text
+  var:          font-style
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         text
+  var:          font-weight
+  output:       true
+  responsive:   true
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         text
+  var:          letter-spacing
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         text
+  var:          font-feature-settings
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         text
+  var:          text-decoration
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        true
+  visited:      false
+- base:         underline
+  var:          text-decoration-color
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        true
+  visited:      false
+- base:         text
+  var:          text-transform
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         text
+  var:          vertical-align
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         text
+  var:          whitespace
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
 ---
 
 <div class="utilities-properties">

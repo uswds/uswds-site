@@ -2147,7 +2147,7 @@ li.display-inline-block {
 .utility-text {
   @include u-font(sans, xs);
   @include u-line-height(sans, 5);
-  @include u-measure(6);
+  @include u-measure(none);
 
   & + .utility-text {
     @include u-margin-top(1);

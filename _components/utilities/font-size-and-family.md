@@ -10,6 +10,24 @@ subnav:
   href: '#utility-font'
 - text: Font family
   href: '#utility-font-family'
+
+utilities:
+- base:         font
+  var:          font
+  output:       true
+  responsive:   true
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         font-family
+  var:          font-family
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
 ---
 
 {% assign our_faces = site.data.uswds_tokens.fonts.faces %}

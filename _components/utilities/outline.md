@@ -10,6 +10,23 @@ subnav:
   href: '#utility-outline'
 - text: Outline color
   href: '#utility-outline-color'
+utilities:
+- base:         outline
+  var:          outline
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         outline
+  var:          outline-color
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
 ---
 
 {% assign outline_widths =

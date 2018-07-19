@@ -66,6 +66,24 @@ vals_negative:
   - token: neg-3
     value: -24px
     equiv: 3
+
+utilities:
+  - base:         margin
+    var:          margin
+    output:       true
+    responsive:   true
+    active:       false
+    focus:        false
+    hover:        false
+    visited:      false
+  - base:         padding
+    var:          padding
+    output:       true
+    responsive:   true
+    active:       false
+    focus:        false
+    hover:        false
+    visited:      false
 ---
 
 <div class="utilities-properties">

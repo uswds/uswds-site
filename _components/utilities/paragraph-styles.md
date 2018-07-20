@@ -14,6 +14,40 @@ subnav:
   href: '#text-align'
 - text: Text indent
   href: '#text-indent'
+
+utilities:
+- base:         line-height
+  var:          line-height
+  output:       true
+  responsive:   true
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         measure
+  var:          measure
+  output:       true
+  responsive:   true
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         text
+  var:          text-align
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         text-indent
+  var:          text-indent
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
 ---
 
 <div class="utilities-properties">

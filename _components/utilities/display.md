@@ -824,10 +824,6 @@ utilities:
   </section>
 </section>
 
-{% include utilities/responsive-variants.html %}
-
-{% include utilities/state-variants.html %}
-
 <section class="utilities-section">
   <h2 class="utilities-section-title">Default output</h2>
   <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
@@ -977,8 +973,35 @@ utilities:
   </dl>
 </section>
 
-{% include utilities/output-control.html %}
+<section id="advanced-settings" class="padding-top-4">
+  <h2 class="margin-y-0">Advanced settings</h2>
 
-<section class="utilities-section margin-top-6">
-  {% include utilities/values-intro.html %}
+  {% include utilities/responsive-variants.html %}
+  {% include utilities/state-variants.html %}
+  {% include utilities/output-control.html %}
+
+  <section class="utilities-section margin-top-6">
+    {% include utilities/values-intro.html %}
+
+    <aside class="example border-left-05 border-secondary-light padding-left-105">
+      <h4 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h4>
+<pre class="font-mono-xs margin-0 padding-0 bg-transparent">
+$top-palettes: (
+  $palette-spacing-uswds-smaller,
+  $palette-spacing-uswds-smaller-negative, // note: no trailing comma
+);
+</pre>
+    <h4 class="font-sans-2xs margin-top-2 margin-bottom-05">Output</h4>
+<pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
+.top-1px     { margin: 1px; }
+.top-2px     { margin: 2px; }
+.top-neg-1px { margin: -1px; }
+.top-neg-2px { margin: -2px; }
+</pre>
+    </aside>
+
+    {% include utilities/standard-palettes.html %}
+    {% include utilities/spacing-palettes.html %}
+
+  </section>
 </section>

@@ -467,10 +467,6 @@ utilities:
   </section><!-- .utility#square -->
 </section>
 
-{% include utilities/responsive-variants.html %}
-
-{% include utilities/state-variants.html %}
-
 <section class="utilities-section">
   <h2 class="utilities-section-title">Default output</h2>
   <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
@@ -648,27 +644,35 @@ utilities:
   </dl>
 </section>
 
-{% include utilities/output-control.html %}
+<section id="advanced-settings" class="padding-top-4">
+  <h2 class="margin-y-0">Advanced settings</h2>
 
-<section class="utilities-section margin-top-6">
-  {% include utilities/values-intro.html %}
+  {% include utilities/responsive-variants.html %}
 
-  <aside class="example border-left-05 border-secondary-light padding-left-105">
-    <h4 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h4>
+  {% include utilities/state-variants.html %}
+
+  {% include utilities/output-control.html %}
+
+  <section class="utilities-section margin-top-6">
+    {% include utilities/values-intro.html %}
+
+    <aside class="example border-left-05 border-secondary-light padding-left-105">
+      <h4 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h4>
 <pre class="font-mono-xs margin-0 padding-0 bg-transparent">
 $width-palettes: (
   $palette-spacing-uswds-large // note: no trailing comma
 );
 </pre>
-  <h4 class="font-sans-2xs margin-top-2 margin-bottom-05">Output</h4>
+    <h4 class="font-sans-2xs margin-top-2 margin-bottom-05">Output</h4>
 <pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
 .width-card { width: 10rem; }
 .width-card-lg { width: 15rem; }
 .width-mobile { width: 20rem; }
 </pre>
-  </aside>
+    </aside>
 
-  {% include utilities/standard-palettes.html %}
-  {% include utilities/spacing-palettes.html %}
+    {% include utilities/standard-palettes.html %}
+    {% include utilities/spacing-palettes.html %}
 
+  </section>
 </section>

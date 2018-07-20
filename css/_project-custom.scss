@@ -1659,10 +1659,6 @@ html {
   font-size: $theme-root-font-size;
 }
 
-*:focus {
-  @include u-outline(.5, $highlight);
-}
-
 .is-inverse {
   @include add-font-smoothing;
 }

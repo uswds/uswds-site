@@ -5,6 +5,16 @@ type: utility
 title: Clearfix
 category: Utilities
 lead: Clear any floated elements
+
+utilities:
+- base:         clearfix
+  var:          clearfix
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
 ---
 
 <section class="utilities-section">

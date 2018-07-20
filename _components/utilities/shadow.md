@@ -5,6 +5,16 @@ type: utility
 title: Shadow
 category: Utilities
 lead: Set size of an item’s drop shadow
+
+utilities:
+- base:         shadow
+  var:          box-shadow
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        true
+  visited:      false
 ---
 
 <div class="utilities-properties">

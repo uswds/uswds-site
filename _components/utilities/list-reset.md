@@ -5,6 +5,16 @@ type: utility
 title: List reset
 category: Utilities
 lead: Reset default list styling
+
+utilities:
+- base:         add-list-reset
+  var:          add-list-reset
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
 ---
 
 <div class="font-sans-4 weight-300">

@@ -5,6 +5,16 @@ type: utility
 title: Float
 category: Utilities
 lead: Float an item within a layout flow.
+
+utilities:
+- base:         float
+  var:          float
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
 ---
 
 <div class="utilities-properties">

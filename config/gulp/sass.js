@@ -2,17 +2,6 @@ var gulp      = require('gulp');
 var dutil     = require('./doc-util');
 var linter    = require('gulp-scss-lint');
 
-gulp.task('copy-doc-styles', function (done) {
-
-  dutil.logMessage('copy-doc-styles', 'Copying Sass files from css/');
-
-  var stream = gulp.src('./css/**/*')
-    .pipe(gulp.dest('assets/css/'));
-
-  return stream;
-
-});
-
 gulp.task('copy-uswds-styles', function (done) {
 
   dutil.logMessage('copy-uswds-styles', 'Copying Sass files from uswds');
@@ -43,7 +32,6 @@ gulp.task('scss-lint', function (done) {
 
 gulp.task('sass',
   gulp.parallel(
-    'copy-doc-styles',
     'copy-uswds-styles'
   )
 );

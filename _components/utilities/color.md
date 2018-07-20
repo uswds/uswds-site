@@ -250,19 +250,7 @@ $background-color-palettes: (
     <h4 class="font-sans-2xs margin-top-4 margin-bottom-0">Global color palettes</h4>
     <p class="utility-text margin-top-05">Any palette added to the <code>$global-color-palettes</code> list in <code>_project-utilities-settings.scss</code> will output in the background color, text color, border color, and text decoration color utilities.</p>
 
-    <h4 class="font-sans-2xs margin-top-4 margin-bottom-1">Background color</h4>
-    <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
-      <div class="grid-col-4">Available palettes</div>
-      <div class="grid-col-8">Palette includes</div>
-    </div>
-    {% include utilities/output-color-palettes.html %}
-
-    <h4 class="font-sans-2xs margin-top-4 margin-bottom-1">Text color</h4>
-    <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
-      <div class="grid-col-4">Available palettes</div>
-      <div class="grid-col-8">Palette includes</div>
-    </div>
-    {% include utilities/output-color-palettes.html %}
+    {% include utilities/color-palettes.html %}
 
   </section>
 </section>

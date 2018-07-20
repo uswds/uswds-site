@@ -1,0 +1,12 @@
+<h4 class="font-sans-2xs margin-top-4 margin-bottom-1">Defaults</h4>
+<div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
+  <div class="grid-col-5">Palette name</div>
+  <div class="grid-col-7">Palette contents</div>
+</div>
+
+{% for utility in page.utilities %}
+  <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+    <div class="grid-col-5">$palette-standard-{{ utility.var }}</div>
+    <div class="grid-col-7">{{ utility.var}} standard defaults</div>
+  </div>
+{% endfor %}

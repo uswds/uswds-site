@@ -652,4 +652,23 @@ utilities:
 
 <section class="utilities-section margin-top-6">
   {% include utilities/values-intro.html %}
+
+  <aside class="example border-left-05 border-secondary-light padding-left-105">
+    <h4 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h4>
+<pre class="font-mono-xs margin-0 padding-0 bg-transparent">
+$width-palettes: (
+  $palette-spacing-uswds-large // note: no trailing comma
+);
+</pre>
+  <h4 class="font-sans-2xs margin-top-2 margin-bottom-05">Output</h4>
+<pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
+.width-card { width: 10rem; }
+.width-card-lg { width: 15rem; }
+.width-mobile { width: 20rem; }
+</pre>
+  </aside>
+
+  {% include utilities/standard-palettes.html %}
+  {% include utilities/spacing-palettes.html %}
+
 </section>

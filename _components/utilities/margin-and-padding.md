@@ -110,7 +110,7 @@ utilities:
         </div>
 
         <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-active"><a href="#0">responsive</a></li>
+          <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
           <li class="utility-scope-button-disabled">active</li>
           <li class="utility-scope-button-disabled">hover</li>
           <li class="utility-scope-button-disabled">focus</li>
@@ -361,7 +361,7 @@ utilities:
         </div>
 
         <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-active"><a href="#0">responsive</a></li>
+          <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
           <li class="utility-scope-button-disabled">active</li>
           <li class="utility-scope-button-disabled">hover</li>
           <li class="utility-scope-button-disabled">focus</li>

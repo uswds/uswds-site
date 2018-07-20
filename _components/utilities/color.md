@@ -61,9 +61,9 @@ utilities:
         </div>
 
         <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-active"><a href="#0">responsive</a></li>
+          <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
           <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-active"><a href="#0">hover</a></li>
+          <li class="utility-scope-button-active"><a href="#state-variants">hover</a></li>
           <li class="utility-scope-button-disabled">focus</li>
           <li class="utility-scope-button-disabled">visited</li>
         </ul>
@@ -126,7 +126,7 @@ utilities:
         <ul class="grid-col-auto utility-scope">
           <li class="utility-scope-button-disabled">responsive</li>
           <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-active"><a href="#0">hover</a></li>
+          <li class="utility-scope-button-active"><a href="#state-variants">hover</a></li>
           <li class="utility-scope-button-disabled">focus</li>
           <li class="utility-scope-button-disabled">visited</li>
         </ul>
@@ -189,37 +189,39 @@ utilities:
   </section>
 </section>
 
+<section class="utilities-section margin-top-6">
+  <h2 class="utilities-section-title">Default output</h2>
+  <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
+    <div class="grid-col-4">Utility</div>
+    <div class="grid-col-6">Output SCSS</div>
+    <div class="grid-col-2">Default variable value</div>
+  </div>
+  <dl class="output-list">
+    {% for color in all_colors %}
+      <dt class="output-utility">.text-{{ color.token }}</dt>
+      <dd class="output-css">color: <span class="output-token">{% if color.var %}{{ color.var }}{% else %}{{ color.token }}{% endif %}</span></dd>
+      <dd class="output-variable">
+        <span class="display-inline-block bg-{{ color.token }} circle-105 text-baseline margin-right-05"></span>
+        {{ color.value }}
+      </dd>
+    {% endfor %}
+    {% for color in all_colors %}
+      <dt class="output-utility">.bg-{{ color.token }}</dt>
+      <dd class="output-css">background-color: <span class="output-token">{% if color.var %}{{ color.var }}{% else %}{{ color.token }}{% endif %}</span></dd>
+      <dd class="output-variable">
+        <span class="display-inline-block bg-{{ color.token }} circle-105 text-baseline margin-right-05"></span>
+        {{ color.value }}
+      </dd>
+    {% endfor %}
+  </dl>
+</section>
+
 <section id="advanced-settings" class="padding-top-4">
+<h2 class="margin-y-0">Advanced settings</h2>
+
   {% include utilities/responsive-variants.html %}
 
   {% include utilities/state-variants.html %}
-
-  <section class="utilities-section margin-top-6">
-    <h2 class="utilities-section-title">Default output</h2>
-    <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
-      <div class="grid-col-4">Utility</div>
-      <div class="grid-col-6">Output SCSS</div>
-      <div class="grid-col-2">Default variable value</div>
-    </div>
-    <dl class="output-list">
-      {% for color in all_colors %}
-        <dt class="output-utility">.text-{{ color.token }}</dt>
-        <dd class="output-css">color: <span class="output-token">{% if color.var %}{{ color.var }}{% else %}{{ color.token }}{% endif %}</span></dd>
-        <dd class="output-variable">
-          <span class="display-inline-block bg-{{ color.token }} circle-105 text-baseline margin-right-05"></span>
-          {{ color.value }}
-        </dd>
-      {% endfor %}
-      {% for color in all_colors %}
-        <dt class="output-utility">.bg-{{ color.token }}</dt>
-        <dd class="output-css">background-color: <span class="output-token">{% if color.var %}{{ color.var }}{% else %}{{ color.token }}{% endif %}</span></dd>
-        <dd class="output-variable">
-          <span class="display-inline-block bg-{{ color.token }} circle-105 text-baseline margin-right-05"></span>
-          {{ color.value }}
-        </dd>
-      {% endfor %}
-    </dl>
-  </section>
 
   {% include utilities/output-control.html %}
 
@@ -227,14 +229,14 @@ utilities:
     {% include utilities/values-intro.html %}
 
     <aside class="example border-left-05 border-secondary-light padding-left-105">
-      <h3 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h3>
+      <h4 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h4>
 <pre class="font-mono-xs margin-0 padding-0 bg-transparent">
 $background-color-palettes: (
   $palette-red-medium,
   $palette-red-medium-vivid // note: no trailing comma
 );
 </pre>
-    <h3 class="font-sans-2xs margin-top-2 margin-bottom-05">Output</h3>
+    <h4 class="font-sans-2xs margin-top-2 margin-bottom-05">Output</h4>
 <pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
 .bg-red-40 { background-color: #ed6b61; }
 .bg-red-50 { background-color: #d83731; }
@@ -245,17 +247,17 @@ $background-color-palettes: (
 </pre>
     </aside>
 
-    <h3 class="font-sans-2xs margin-top-4 margin-bottom-0">Global color palettes</h3>
+    <h4 class="font-sans-2xs margin-top-4 margin-bottom-0">Global color palettes</h4>
     <p class="utility-text margin-top-05">Any palette added to the <code>$global-color-palettes</code> list in <code>_project-utilities-settings.scss</code> will output in the background color, text color, border color, and text decoration color utilities.</p>
 
-    <h3 class="font-sans-2xs margin-top-4 margin-bottom-1">Background color</h3>
+    <h4 class="font-sans-2xs margin-top-4 margin-bottom-1">Background color</h4>
     <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
       <div class="grid-col-4">Available palettes</div>
       <div class="grid-col-8">Palette includes</div>
     </div>
     {% include utilities/output-color-palettes.html %}
 
-    <h3 class="font-sans-2xs margin-top-4 margin-bottom-1">Text color</h3>
+    <h4 class="font-sans-2xs margin-top-4 margin-bottom-1">Text color</h4>
     <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
       <div class="grid-col-4">Available palettes</div>
       <div class="grid-col-8">Palette includes</div>

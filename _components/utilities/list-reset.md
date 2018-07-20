@@ -78,7 +78,7 @@ utilities:
 
   {% include utilities/state-variants.html %}
 
-  <section class="utilities-section">
+  <section class="utilities-section margin-top-6">
     <h2 class="utilities-section-title">Default output</h2>
     <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
       <div class="grid-col-4">Utility</div>
@@ -101,6 +101,4 @@ utilities:
 
   {% include utilities/output-control.html %}
 
-  <section class="utilities-section margin-top-6">
-    {% include utilities/values-intro.html %}
-  </section>
+  {% include utilities/values-no-custom-values.html %}

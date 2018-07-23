@@ -1,7 +1,7 @@
 ---
 layout: styleguide
 title: Figure
-category: UI components
+category: Components
 lead: Intro text on what is included in this section and how to use it. No more than one or two sentences.
 ---
 

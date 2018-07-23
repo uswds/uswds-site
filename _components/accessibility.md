@@ -4,7 +4,7 @@ redirect_from:
 - /accessibility/
 layout: styleguide
 title: Accessibility
-category: UI components
+category: Components
 lead: Accessibility tips to help you deliver delightful experiences to all users.
 order: 25
 ---

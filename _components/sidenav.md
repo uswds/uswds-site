@@ -5,7 +5,7 @@ redirect_from:
 layout: styleguide
 type: component
 title: Side navigation
-category: UI components
+category: Components
 lead: "Hierarchical, vertical navigation to place at the side of a page."
 ---
 

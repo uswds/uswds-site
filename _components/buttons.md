@@ -5,7 +5,7 @@ redirect_from:
 layout: styleguide
 type: element
 title: Buttons
-category: UI components
+category: Components
 lead: Use buttons to signal actions.
 component_url: 'https://components.designsystem.digital.gov/components/detail/buttons.html'
 ---

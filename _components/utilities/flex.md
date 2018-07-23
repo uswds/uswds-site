@@ -703,4 +703,5 @@ utilities:
 
 <section class="utilities-section margin-top-6">
   {% include utilities/values-intro.html %}
+  {% include utilities/values-no-palettes.html %}
 </section>

@@ -9,7 +9,7 @@ type: docs
 
 ## The benefits of global style palettes
 
-<p>Our global palettes of <a href="{{ site.baseurl }}/style/type-scale/">type scale</a>, <a href="{{ site.baseurl }}/style/spacing-units/">spacing units</a>, and <a href="{{ site.baseurl }}/style/color/">color</a> are the visual building blocks any component. When we use these palettes consistently, not only do individual components fit better within the design of the larger website, but USWDS websites have better coherence across the entire federal government. This coherence provides a more familiar, reliable user experience.</p>
+Our global palettes of [type scale]({{ site.baseurl }}/style/type-scale/), [spacing units]({{ site.baseurl }}/style/spacing-units/), and [color]({{ site.baseurl }}/style/color/) are the visual building blocks any component. When we use these palettes consistently, not only do individual components fit better within the design of the larger website, but USWDS websites have better coherence across the entire federal government. This coherence provides a more familiar, reliable user experience.
 
 We recommend building exclusively with elements of the global palettes. Not only does this provide the improvements to cross-government user experience mentioned above, it allows individual projects to contribute their unique components and solutions back in to the System.
 

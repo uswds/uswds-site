@@ -5,7 +5,7 @@ redirect_from:
 layout: styleguide
 type: component
 title: Form templates
-category: UI components
+category: Components
 lead: Patterns for some of the most commonly used forms on government websites
 subnav:
 - text: Name form

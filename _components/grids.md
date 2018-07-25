@@ -4,7 +4,7 @@ redirect_from:
 - /grids/
 layout: styleguide
 title: Grids
-category: UI components
+category: Components
 lead: This 12-column, responsive grid provides structure for website content.
 ---
 

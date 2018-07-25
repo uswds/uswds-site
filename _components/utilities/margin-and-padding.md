@@ -66,6 +66,24 @@ vals_negative:
   - token: neg-3
     value: -24px
     equiv: 3
+
+utilities:
+  - base:         margin
+    var:          margin
+    output:       true
+    responsive:   true
+    active:       false
+    focus:        false
+    hover:        false
+    visited:      false
+  - base:         padding
+    var:          padding
+    output:       true
+    responsive:   true
+    active:       false
+    focus:        false
+    hover:        false
+    visited:      false
 ---
 
 <div class="utilities-properties">
@@ -92,7 +110,7 @@ vals_negative:
         </div>
 
         <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-active"><a href="#0">responsive</a></li>
+          <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
           <li class="utility-scope-button-disabled">active</li>
           <li class="utility-scope-button-disabled">hover</li>
           <li class="utility-scope-button-disabled">focus</li>
@@ -343,7 +361,7 @@ vals_negative:
         </div>
 
         <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-active"><a href="#0">responsive</a></li>
+          <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
           <li class="utility-scope-button-disabled">active</li>
           <li class="utility-scope-button-disabled">hover</li>
           <li class="utility-scope-button-disabled">focus</li>
@@ -498,10 +516,6 @@ vals_negative:
     </section><!-- utility-examples -->
   </section><!-- #padding -->
 </section><!-- utilities -->
-
-{% include utilities/responsive-variants.html %}
-
-{% include utilities/state-variants.html %}
 
 <section class="utilities-section">
   <h2 class="utilities-section-title">Default output</h2>
@@ -2323,4 +2337,35 @@ vals_negative:
   </dl>
 </section>
 
-{% include utilities/advanced-settings.html %}
+<section id="advanced-settings" class="padding-top-4">
+  <h2 class="margin-y-0">Advanced settings</h2>
+
+  {% include utilities/responsive-variants.html %}
+  {% include utilities/state-variants.html %}
+  {% include utilities/output-control.html %}
+
+  <section class="utilities-section margin-top-6">
+    {% include utilities/values-intro.html %}
+
+    <aside class="example border-left-05 border-secondary-light padding-left-105">
+      <h4 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h4>
+<pre class="font-mono-xs margin-0 padding-0 bg-transparent">
+$margin-palettes: (
+  $palette-spacing-uswds-smaller,
+  $palette-spacing-uswds-smaller-negative, // note: no trailing comma
+);
+</pre>
+    <h4 class="font-sans-2xs margin-top-2 margin-bottom-05">Output</h4>
+<pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
+.margin-1px { margin: 1px; }
+.margin-2px { margin: 2px; }
+.margin-neg-1px { margin: -1px; }
+.margin-neg-2px { margin: -2px; }
+</pre>
+    </aside>
+
+    {% include utilities/standard-palettes.html %}
+    {% include utilities/spacing-palettes.html %}
+
+  </section>
+</section>

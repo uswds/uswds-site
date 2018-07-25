@@ -14,6 +14,40 @@ subnav:
   href: '#text-align'
 - text: Text indent
   href: '#text-indent'
+
+utilities:
+- base:         line-height
+  var:          line-height
+  output:       true
+  responsive:   true
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         measure
+  var:          measure
+  output:       true
+  responsive:   true
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         text
+  var:          text-align
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         text-indent
+  var:          text-indent
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
 ---
 
 <div class="utilities-properties">
@@ -43,7 +77,7 @@ subnav:
           </div>
 
           <ul class="utility-scope grid-col-auto">
-            <li class="utility-scope-button-active"><a href="#0">responsive</a></li>
+            <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
             <li class="utility-scope-button-disabled">active</li>
             <li class="utility-scope-button-disabled">hover</li>
             <li class="utility-scope-button-disabled">focus</li>
@@ -233,7 +267,7 @@ subnav:
           </div>
 
           <ul class="grid-col-auto utility-scope">
-            <li class="utility-scope-button-active"><a href="#0">responsive</a></li>
+            <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
             <li class="utility-scope-button-disabled">active</li>
             <li class="utility-scope-button-disabled">hover</li>
             <li class="utility-scope-button-disabled">focus</li>
@@ -558,10 +592,6 @@ subnav:
     </section>
   </section>
 </section>
-
-{% include utilities/responsive-variants.html %}
-
-{% include utilities/state-variants.html %}
 
 <section class="utilities-section">
   <h2 class="utilities-section-title">Default output</h2>
@@ -892,4 +922,33 @@ subnav:
   </dl>
 </section>
 
-{% include utilities/advanced-settings.html %}
+<section id="advanced-settings" class="padding-top-4">
+  <h2 class="margin-y-0">Advanced settings</h2>
+
+  {% include utilities/responsive-variants.html %}
+  {% include utilities/state-variants.html %}
+  {% include utilities/output-control.html %}
+
+  <section class="utilities-section margin-top-6">
+    {% include utilities/values-intro.html %}
+
+    <aside class="example border-left-05 border-secondary-light padding-left-105">
+      <h4 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h4>
+<pre class="font-mono-xs margin-0 padding-0 bg-transparent">
+$text-indent-palettes: (
+  $palette-spacing-uswds-small-negative // note: no trailing comma
+);
+</pre>
+    <h4 class="font-sans-2xs margin-top-2 margin-bottom-05">Output</h4>
+<pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
+.text-indent-neg-05  { text-indent: -.25rem; }
+.text-indent-neg-1   { text-indent: -.5rem; }
+.text-indent-neg-105 { text-indent: -.75rem; }
+.text-indent-neg-2   { text-indent: -1rem; }
+.text-indent-neg-205 { text-indent: -1.25rem; }
+.text-indent-neg-3   { text-indent: -1.5rem; }
+</pre>
+    </aside>
+    {% include utilities/spacing-palettes.html %}
+  </section>
+</section>

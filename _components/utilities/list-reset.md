@@ -5,6 +5,16 @@ type: utility
 title: List reset
 category: Utilities
 lead: Reset default list styling
+
+utilities:
+- base:         add-list-reset
+  var:          add-list-reset
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
 ---
 
 <div class="font-sans-4 weight-300">
@@ -68,7 +78,7 @@ lead: Reset default list styling
 
   {% include utilities/state-variants.html %}
 
-  <section class="utilities-section">
+  <section class="utilities-section margin-top-6">
     <h2 class="utilities-section-title">Default output</h2>
     <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
       <div class="grid-col-4">Utility</div>
@@ -89,4 +99,6 @@ lead: Reset default list styling
     </dl>
   </section>
 
-  {% include utilities/advanced-settings.html %}
+  {% include utilities/output-control.html %}
+
+  {% include utilities/values-no-custom-values.html %}

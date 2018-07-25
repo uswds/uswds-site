@@ -24,6 +24,80 @@ subnav:
   href: '#circle'
 - text: Square
   href: '#square'
+
+utilities:
+- base:         height
+  var:          height
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         width
+  var:          width
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         maxh
+  var:          max-height
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         maxw
+  var:          max-width
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         minh
+  var:          min-height
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         minw
+  var:          min-width
+  output:       true,
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         add-aspect
+  var:          add-aspect
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         circle
+  var:          circle
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         square
+  var:          square
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
 ---
 
 {% assign height_values = site.data.uswds_tokens.special.auto_auto
@@ -391,190 +465,214 @@ subnav:
       </div>
     </section><!-- .utility-examples -->
   </section><!-- .utility#square -->
+</section>
 
-  <section class="utilities-section">
-    <h2 class="utilities-section-title">Responsive variants</h2>
+<section class="utilities-section">
+  <h2 class="utilities-section-title">Default output</h2>
+  <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
+    <div class="grid-col-4">Utility</div>
+    <div class="grid-col-6">Output SCSS</div>
+    <div class="grid-col-2">Default variable value</div>
+  </div>
+  <dl class="output-list">
+    {% assign this_utility = 'height' %}
+    {% assign this_property = 'height' %}
+    {% for value in height_values %}
+      <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
+      {% if value.scss %}
+        <dd class="output-css">
+          <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
+          </span>
+        </dd>
+        <dd class="output-variable">{{ value.value }}</dd>
+      {% else %}
+        <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
+        <dd class="output-variable">—</dd>
+      {% endif %}
+    {% endfor %}
+
+    {% assign this_utility = 'width' %}
+    {% assign this_property = 'width' %}
+    {% for value in width_values %}
+      <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
+      {% if value.scss %}
+        <dd class="output-css">
+          <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
+          </span>
+        </dd>
+        <dd class="output-variable">{{ value.value }}</dd>
+      {% else %}
+        <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
+        <dd class="output-variable">—</dd>
+      {% endif %}
+    {% endfor %}
+
+    {% assign this_utility = 'maxh' %}
+    {% assign this_property = 'max-height' %}
+    {% for value in maxh_values %}
+      <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
+      {% if value.scss %}
+        <dd class="output-css">
+          <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
+          </span>
+        </dd>
+        <dd class="output-variable">{{ value.value }}</dd>
+      {% else %}
+        <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
+        <dd class="output-variable">—</dd>
+      {% endif %}
+    {% endfor %}
+
+    {% assign this_utility = 'maxw' %}
+    {% assign this_property = 'max-width' %}
+    {% for value in maxw_values %}
+      <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
+      {% if value.scss %}
+        <dd class="output-css">
+          <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
+          </span>
+        </dd>
+        <dd class="output-variable">{{ value.value }}</dd>
+      {% else %}
+        <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
+        <dd class="output-variable">—</dd>
+      {% endif %}
+    {% endfor %}
+
+    {% assign this_utility = 'minh' %}
+    {% assign this_property = 'min-height' %}
+    {% for value in minh_values %}
+      <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
+      {% if value.scss %}
+        <dd class="output-css">
+          <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
+          </span>
+        </dd>
+        <dd class="output-variable">{{ value.value }}</dd>
+      {% else %}
+        <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
+        <dd class="output-variable">—</dd>
+      {% endif %}
+    {% endfor %}
+
+    {% assign this_utility = 'circle' %}
+    {% assign this_property = 'height, width'
+      | split: ', '
+    %}
+    {% assign this_rule = 'border-radius: 50%'
+      | split: ', '
+    %}
+    {% for value in minw_values %}
+      <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
+      {% if value.scss %}
+        <dd class="output-css">
+          <span>
+            {% if this_property %}
+              {% for property in this_property %}
+              <span class="output-rule">{{ property }}: <span class="output-token">{{ value.scss }}</span></span>
+              {% endfor %}
+            {% endif %}
+            {% if this_rule %}
+              {% for rule in this_rule %}
+              <span class="output-rule">{{ rule }}</span>
+              {% endfor %}
+            {% endif %}
+          </span>
+        </dd>
+        <dd class="output-variable">{{ value.value }}</dd>
+      {% else %}
+        <dd class="output-css">
+          <span>
+            {% if this_property %}
+              {% for property in this_property %}
+              <span class="output-rule">{{ property }}: {{ value.value }}</span>
+              {% endfor %}
+            {% endif %}
+            {% if this_rule %}
+              {% for rule in this_rule %}
+              <span class="output-rule">{{ rule }}</span>
+              {% endfor %}
+            {% endif %}
+          </span>
+        </dd>
+        <dd class="output-variable">—</dd>
+      {% endif %}
+    {% endfor %}
+
+    {% assign this_utility = 'square' %}
+    {% assign this_property = 'height, width'
+      | split: ', '
+    %}
+    {% assign this_rule = false %}
+    {% for value in minw_values %}
+      <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
+      {% if value.scss %}
+        <dd class="output-css">
+          <span>
+            {% if this_property %}
+              {% for property in this_property %}
+              <span class="output-rule">{{ property }}: <span class="output-token">{{ value.scss }}</span></span>
+              {% endfor %}
+            {% endif %}
+            {% if this_rule %}
+              {% for rule in this_rule %}
+              <span class="output-rule">{{ rule }}</span>
+              {% endfor %}
+            {% endif %}
+          </span>
+        </dd>
+        <dd class="output-variable">{{ value.value }}</dd>
+      {% else %}
+        <dd class="output-css">
+          <span>
+            {% if this_property %}
+              {% for property in this_property %}
+              <span class="output-rule">{{ property }}: {{ value.value }}</span>
+              {% endfor %}
+            {% endif %}
+            {% if this_rule %}
+              {% for rule in this_rule %}
+              <span class="output-rule">{{ rule }}</span>
+              {% endfor %}
+            {% endif %}
+          </span>
+        </dd>
+        <dd class="output-variable">—</dd>
+      {% endif %}
+    {% endfor %}
+
+  </dl>
+</section>
+
+<section id="advanced-settings" class="padding-top-4">
+  <h2 class="margin-y-0">Advanced settings</h2>
+
+  {% include utilities/responsive-variants.html %}
+
+  {% include utilities/state-variants.html %}
+
+  {% include utilities/output-control.html %}
+
+  <section class="utilities-section margin-top-6">
+    {% include utilities/values-intro.html %}
+
+    <aside class="example border-left-05 border-secondary-light padding-left-105">
+      <h4 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h4>
+<pre class="font-mono-xs margin-0 padding-0 bg-transparent">
+$width-palettes: (
+  $palette-spacing-uswds-large // note: no trailing comma
+);
+</pre>
+    <h4 class="font-sans-2xs margin-top-2 margin-bottom-05">Output</h4>
+<pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
+.width-card { width: 10rem; }
+.width-card-lg { width: 15rem; }
+.width-mobile { width: 20rem; }
+</pre>
+    </aside>
+
+    {% include utilities/standard-palettes.html %}
+    {% include utilities/spacing-palettes.html %}
+
   </section>
-
-  <section class="utilities-section">
-    <h2 class="utilities-section-title">Default output</h2>
-    <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
-      <div class="grid-col-4">Utility</div>
-      <div class="grid-col-6">Output SCSS</div>
-      <div class="grid-col-2">Default variable value</div>
-    </div>
-    <dl class="output-list">
-      {% assign this_utility = 'height' %}
-      {% assign this_property = 'height' %}
-      {% for value in height_values %}
-        <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
-        {% if value.scss %}
-          <dd class="output-css">
-            <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
-            </span>
-          </dd>
-          <dd class="output-variable">{{ value.value }}</dd>
-        {% else %}
-          <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
-          <dd class="output-variable">—</dd>
-        {% endif %}
-      {% endfor %}
-
-      {% assign this_utility = 'width' %}
-      {% assign this_property = 'width' %}
-      {% for value in width_values %}
-        <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
-        {% if value.scss %}
-          <dd class="output-css">
-            <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
-            </span>
-          </dd>
-          <dd class="output-variable">{{ value.value }}</dd>
-        {% else %}
-          <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
-          <dd class="output-variable">—</dd>
-        {% endif %}
-      {% endfor %}
-
-      {% assign this_utility = 'maxh' %}
-      {% assign this_property = 'max-height' %}
-      {% for value in maxh_values %}
-        <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
-        {% if value.scss %}
-          <dd class="output-css">
-            <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
-            </span>
-          </dd>
-          <dd class="output-variable">{{ value.value }}</dd>
-        {% else %}
-          <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
-          <dd class="output-variable">—</dd>
-        {% endif %}
-      {% endfor %}
-
-      {% assign this_utility = 'maxw' %}
-      {% assign this_property = 'max-width' %}
-      {% for value in maxw_values %}
-        <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
-        {% if value.scss %}
-          <dd class="output-css">
-            <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
-            </span>
-          </dd>
-          <dd class="output-variable">{{ value.value }}</dd>
-        {% else %}
-          <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
-          <dd class="output-variable">—</dd>
-        {% endif %}
-      {% endfor %}
-
-      {% assign this_utility = 'minh' %}
-      {% assign this_property = 'min-height' %}
-      {% for value in minh_values %}
-        <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
-        {% if value.scss %}
-          <dd class="output-css">
-            <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
-            </span>
-          </dd>
-          <dd class="output-variable">{{ value.value }}</dd>
-        {% else %}
-          <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
-          <dd class="output-variable">—</dd>
-        {% endif %}
-      {% endfor %}
-
-      {% assign this_utility = 'circle' %}
-      {% assign this_property = 'height, width'
-        | split: ', '
-      %}
-      {% assign this_rule = 'border-radius: 50%'
-        | split: ', '
-      %}
-      {% for value in minw_values %}
-        <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
-        {% if value.scss %}
-          <dd class="output-css">
-            <span>
-              {% if this_property %}
-                {% for property in this_property %}
-                <span class="output-rule">{{ property }}: <span class="output-token">{{ value.scss }}</span></span>
-                {% endfor %}
-              {% endif %}
-              {% if this_rule %}
-                {% for rule in this_rule %}
-                <span class="output-rule">{{ rule }}</span>
-                {% endfor %}
-              {% endif %}
-            </span>
-          </dd>
-          <dd class="output-variable">{{ value.value }}</dd>
-        {% else %}
-          <dd class="output-css">
-            <span>
-              {% if this_property %}
-                {% for property in this_property %}
-                <span class="output-rule">{{ property }}: {{ value.value }}</span>
-                {% endfor %}
-              {% endif %}
-              {% if this_rule %}
-                {% for rule in this_rule %}
-                <span class="output-rule">{{ rule }}</span>
-                {% endfor %}
-              {% endif %}
-            </span>
-          </dd>
-          <dd class="output-variable">—</dd>
-        {% endif %}
-      {% endfor %}
-
-      {% assign this_utility = 'square' %}
-      {% assign this_property = 'height, width'
-        | split: ', '
-      %}
-      {% assign this_rule = false %}
-      {% for value in minw_values %}
-        <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
-        {% if value.scss %}
-          <dd class="output-css">
-            <span>
-              {% if this_property %}
-                {% for property in this_property %}
-                <span class="output-rule">{{ property }}: <span class="output-token">{{ value.scss }}</span></span>
-                {% endfor %}
-              {% endif %}
-              {% if this_rule %}
-                {% for rule in this_rule %}
-                <span class="output-rule">{{ rule }}</span>
-                {% endfor %}
-              {% endif %}
-            </span>
-          </dd>
-          <dd class="output-variable">{{ value.value }}</dd>
-        {% else %}
-          <dd class="output-css">
-            <span>
-              {% if this_property %}
-                {% for property in this_property %}
-                <span class="output-rule">{{ property }}: {{ value.value }}</span>
-                {% endfor %}
-              {% endif %}
-              {% if this_rule %}
-                {% for rule in this_rule %}
-                <span class="output-rule">{{ rule }}</span>
-                {% endfor %}
-              {% endif %}
-            </span>
-          </dd>
-          <dd class="output-variable">—</dd>
-        {% endif %}
-      {% endfor %}
-
-    </dl>
-  </section>
-
-  <section class="utilities-section">
-    <h2 class="utilities-section-title">Advanced settings</h2>
-  </section>
-
-</section><!-- .utilities-section -->
+</section>

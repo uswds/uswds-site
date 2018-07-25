@@ -5,7 +5,7 @@ redirect_from:
 layout: styleguide
 type: component
 title: Alerts
-category: UI components
+category: Components
 lead: Alerts keep users informed of important and sometimes time-sensitive changes.
 ---
 

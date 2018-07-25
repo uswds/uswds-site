@@ -1,6 +1,7 @@
 primary:
   - href: /components/
   - href: /utilities/
+  - href: /style/
   - href: /page-templates/
   - href: /getting-started/
   - href: /design-principles/
@@ -17,7 +18,7 @@ mobile:
   - href: /whats-new/
     collapsible: true
 
-UI components:
+Components:
   - text: Overview
     href: /components/
   - href: /components/typography/
@@ -65,6 +66,10 @@ Utilities:
   - href: /utilities/float/
   - href: /utilities/clearfix/
   - href: /utilities/list-reset/
+
+Style:
+  - text: Overview
+    href: /style/
 
 Page templates:
   - href: /page-templates/

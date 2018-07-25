@@ -1,3 +1,83 @@
-<section class="utilities-section">
-  <h2 class="utilities-section-title">Responsive variants</h2>
+<section class="utilities-section" id="responsive-variants">
+  <h3 class="utilities-section-title">Responsive variants</h3>
+  <p class="utility-text">Add a responsive breakpoint prefix separated with a  <code>:</code> to target a utility at a responsive breakpoint and higher, following a mobile-first methodology.</p>
+  <aside class="example border-left-05 border-secondary-light padding-left-105">
+    <h4 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h4>
+    <p class="font-mono-xs margin-top-0"><span class="text-red-warm-50v">.tablet:</span>padding-y-2</p>
+    <h4 class="font-sans-2xs margin-top-2 margin-bottom-05">Output</h4>
+<pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
+@media screen and (min-width: 640px) {
+  .tablet\:padding-y-2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+</pre>
+  </aside>
+  <p class="utility-text margin-top-4">Set which breakpoints are available to USWDS utilities with the <code>$theme_output_breakpoints</code> variable found in <code>_project-utilities-settings.scss</code>.</p>
+  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
+    <div class="grid-col-6">Breakpoint name</div>
+    <div class="grid-col-3">Width</div>
+    <div class="grid-col-3">Default value</div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+    <div class="grid-col-6">card</div>
+    <div class="grid-col-3">160px</div>
+    <div class="grid-col-3">false</div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+    <div class="grid-col-6">card-lg</div>
+    <div class="grid-col-3">240px</div>
+    <div class="grid-col-3">false</div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+    <div class="grid-col-6">mobile</div>
+    <div class="grid-col-3">320px</div>
+    <div class="grid-col-3">false</div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+    <div class="grid-col-6">mobile-lg</div>
+    <div class="grid-col-3">480px</div>
+    <div class="grid-col-3"><span class="output-true">true</span></div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+    <div class="grid-col-6">tablet</div>
+    <div class="grid-col-3">640px</div>
+    <div class="grid-col-3"><span class="output-true">true</span></div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+    <div class="grid-col-6">tablet-lg</div>
+    <div class="grid-col-3">880px</div>
+    <div class="grid-col-3">false</div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+    <div class="grid-col-6">desktop</div>
+    <div class="grid-col-3">1024px</div>
+    <div class="grid-col-3 flex-justify-start"><span class="output-true">true</span></div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+    <div class="grid-col-6">desktop-lg</div>
+    <div class="grid-col-3">1200px</div>
+    <div class="grid-col-3">false</div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+    <div class="grid-col-6">widescreen</div>
+    <div class="grid-col-3">1400px</div>
+    <div class="grid-col-3">false</div>
+  </div>
+
+  <p class="utility-text margin-top-4">Set whether a utility family outputs with responsive variants by setting the value of  <code>$[utility_family]-settings.responsive</code> in <code>_project-utilities-settings.scss</code>.</p>
+
+  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
+    <div class="grid-col-9">Utility variable</div>
+    <div class="grid-col-3">Default value</div>
+  </div>
+
+  {% for utility in page.utilities %}
+    <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+      <div class="grid-col-9">${{ utility.var }}-settings.responsive</div>
+      <div class="grid-col-3">{% if utility.responsive %}<span class="output-true">true</span>{% else %}false{% endif %}</div>
+    </div>
+  {% endfor %}
+
 </section>

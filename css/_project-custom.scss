@@ -2140,6 +2140,16 @@ li.display-inline-block {
   @include u-border-bottom(1px, $base-lighter);
 }
 
+.utility-text {
+  @include u-font(sans, xs);
+  @include u-line-height(sans, 5);
+  @include u-measure(none);
+
+  & + .utility-text {
+    @include u-margin-top(1);
+  }
+}
+
 /* * * * * * ========================== */
 
 .sidenav {
@@ -2183,6 +2193,16 @@ pre {
   @include u-z(200);
 }
 
+a code {
+  @include u-border(1px, $blue-50v);
+  @include u-bg(transparent);
+
+  &:hover {
+    @include u-bg($blue-50v);
+    @include u-text(white);
+  }
+}
+
 .docs-grid-example {
   .grid-row {
     margin-top: 8px;
@@ -2207,4 +2227,14 @@ pre {
       padding: 16px;
     }
   }
+}
+
+.output-true {
+  @include add-font-smoothing;
+  @include u-bg($blue-50v);
+  @include u-display(inline-block);
+  @include u-padding-y(0);
+  @include u-padding-x(.5);
+  @include u-radius(sm);
+  @include u-text(white);
 }

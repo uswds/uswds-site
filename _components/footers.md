@@ -5,7 +5,7 @@ redirect_from:
 layout: styleguide
 type: component
 title: Footers
-category: UI components
+category: Components
 lead: Footers serve site visitors who arrive at the bottom of a page without finding what they want.
 subnav:
 - text: Big footer

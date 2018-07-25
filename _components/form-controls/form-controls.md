@@ -5,7 +5,7 @@ redirect_from:
 layout: styleguide
 type: component
 title: Form controls
-category: UI components
+category: Components
 lead: Form controls allow users to enter information into a page.
 subnav:
 - text: Text inputs and area

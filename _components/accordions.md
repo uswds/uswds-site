@@ -5,7 +5,7 @@ redirect_from:
 layout: styleguide
 type: component
 title: Accordions
-category: UI components
+category: Components
 lead: Accordions are a list of headers that can be clicked to hide or reveal additional content.
 ---
 

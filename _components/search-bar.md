@@ -5,7 +5,7 @@ redirect_from:
 layout: styleguide
 type: component
 title: Search bar
-category: UI components
+category: Components
 lead: A box that allows users to search for specific content if they know what search terms to use or can’t find desired content in the main navigation
 ---
 

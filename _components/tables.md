@@ -5,7 +5,7 @@ redirect_from:
 layout: styleguide
 type: element
 title: Tables
-category: UI components
+category: Components
 lead: Tables show tabular data in columns and rows.
 ---
 

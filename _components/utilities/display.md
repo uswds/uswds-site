@@ -20,6 +20,88 @@ subnav:
   href: '#pinning'
 - text: Z-index
   href: '#z-index'
+
+utilities:
+- base:         display
+  var:          display
+  output:       true
+  responsive:   true
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         opacity
+  var:          opacity
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         overflow
+  var:          overflow
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         position
+  var:          position
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         bottom
+  var:          bottom
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         left
+  var:          left
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         right
+  var:          right
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         top
+  var:          top
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         pin
+  var:          pin
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         z
+  var:          z-index
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
 ---
 
 {% assign spacing_tokens = site.data.uswds_tokens.spacing %}
@@ -742,10 +824,6 @@ subnav:
   </section>
 </section>
 
-{% include utilities/responsive-variants.html %}
-
-{% include utilities/state-variants.html %}
-
 <section class="utilities-section">
   <h2 class="utilities-section-title">Default output</h2>
   <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
@@ -895,4 +973,35 @@ subnav:
   </dl>
 </section>
 
-{% include utilities/advanced-settings.html %}
+<section id="advanced-settings" class="padding-top-4">
+  <h2 class="margin-y-0">Advanced settings</h2>
+
+  {% include utilities/responsive-variants.html %}
+  {% include utilities/state-variants.html %}
+  {% include utilities/output-control.html %}
+
+  <section class="utilities-section margin-top-6">
+    {% include utilities/values-intro.html %}
+
+    <aside class="example border-left-05 border-secondary-light padding-left-105">
+      <h4 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h4>
+<pre class="font-mono-xs margin-0 padding-0 bg-transparent">
+$top-palettes: (
+  $palette-spacing-uswds-smaller,
+  $palette-spacing-uswds-smaller-negative, // note: no trailing comma
+);
+</pre>
+    <h4 class="font-sans-2xs margin-top-2 margin-bottom-05">Output</h4>
+<pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
+.top-1px     { margin: 1px; }
+.top-2px     { margin: 2px; }
+.top-neg-1px { margin: -1px; }
+.top-neg-2px { margin: -2px; }
+</pre>
+    </aside>
+
+    {% include utilities/standard-palettes.html %}
+    {% include utilities/spacing-palettes.html %}
+
+  </section>
+</section>

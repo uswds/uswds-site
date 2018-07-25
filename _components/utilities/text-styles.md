@@ -111,6 +111,80 @@ colors:
     value: '#836BB3'
   - token: magenta
     value: '#DF2D7A'
+
+utilities:
+- base:         text
+  var:          font-style
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         text
+  var:          font-weight
+  output:       true
+  responsive:   true
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         text
+  var:          letter-spacing
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         text
+  var:          font-feature-settings
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         text
+  var:          text-decoration
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        true
+  visited:      false
+- base:         underline
+  var:          text-decoration-color
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        true
+  visited:      false
+- base:         text
+  var:          text-transform
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         text
+  var:          vertical-align
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         text
+  var:          whitespace
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
 ---
 
 <div class="utilities-properties">
@@ -144,7 +218,7 @@ colors:
         </div>
 
         <ul class="grid-col-auto utility-scope">
-          <!--<li class="utility-scope-button-active"><a href="#0">responsive</a></li>-->
+          <!--<li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>-->
           <li class="utility-scope-button-disabled">responsive</li>
           <li class="utility-scope-button-disabled">active</li>
           <li class="utility-scope-button-disabled">hover</li>
@@ -168,7 +242,7 @@ colors:
         </div>
 
         <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-active"><a href="#0">responsive</a></li>
+          <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
           <li class="utility-scope-button-disabled">active</li>
           <li class="utility-scope-button-disabled">hover</li>
           <li class="utility-scope-button-disabled">focus</li>
@@ -260,7 +334,7 @@ colors:
         <ul class="grid-col-auto utility-scope">
           <li class="utility-scope-button-disabled">responsive</li>
           <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-active"><a href="#0">hover</a></li>
+          <li class="utility-scope-button-active"><a href="#state-variants">hover</a></li>
           <li class="utility-scope-button-disabled">focus</li>
           <li class="utility-scope-button-disabled">visited</li>
         </ul>
@@ -285,7 +359,7 @@ colors:
         <ul class="grid-col-auto utility-scope">
           <li class="utility-scope-button-disabled">responsive</li>
           <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-active"><a href="#0">hover</a></li>
+          <li class="utility-scope-button-active"><a href="#state-variants">hover</a></li>
           <li class="utility-scope-button-disabled">focus</li>
           <li class="utility-scope-button-disabled">visited</li>
         </ul>
@@ -316,7 +390,7 @@ colors:
         <ul class="grid-col-auto utility-scope">
           <li class="utility-scope-button-disabled">responsive</li>
           <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-active"><a href="#0">hover</a></li>
+          <li class="utility-scope-button-active"><a href="#state-variants">hover</a></li>
           <li class="utility-scope-button-disabled">focus</li>
           <li class="utility-scope-button-disabled">visited</li>
         </ul>
@@ -683,4 +757,9 @@ colors:
   </dl>
 </section>
 
-{% include utilities/advanced-settings.html %}
+{% include utilities/output-control.html %}
+
+<section class="utilities-section margin-top-6">
+  {% include utilities/values-intro.html %}
+  {% include utilities/values-no-palettes.html %}
+</section>

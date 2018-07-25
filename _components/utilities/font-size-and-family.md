@@ -10,6 +10,24 @@ subnav:
   href: '#utility-font'
 - text: Font family
   href: '#utility-font-family'
+
+utilities:
+- base:         font
+  var:          font
+  output:       true
+  responsive:   true
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         font-family
+  var:          font-family
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
 ---
 
 {% assign our_faces = site.data.uswds_tokens.fonts.faces %}
@@ -41,7 +59,7 @@ subnav:
         </div>
 
         <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-active"><a href="#0">responsive</a></li>
+          <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
           <li class="utility-scope-button-disabled">active</li>
           <li class="utility-scope-button-disabled">hover</li>
           <li class="utility-scope-button-disabled">focus</li>
@@ -234,10 +252,6 @@ subnav:
   </section><!-- utility -->
 </section><!-- utilities -->
 
-{% include utilities/responsive-variants.html %}
-
-{% include utilities/state-variants.html %}
-
 <section class="utilities-section">
   <h2 class="utilities-section-title">Default output</h2>
 
@@ -341,4 +355,33 @@ subnav:
   </dl>
 </section>
 
-{% include utilities/advanced-settings.html %}
+<section id="advanced-settings" class="padding-top-4">
+  <h2 class="margin-y-0">Advanced settings</h2>
+
+  {% include utilities/responsive-variants.html %}
+  {% include utilities/state-variants.html %}
+  {% include utilities/output-control.html %}
+
+  <section class="utilities-section margin-top-6">
+    {% include utilities/values-intro.html %}
+
+    <aside class="example border-left-05 border-secondary-light padding-left-105">
+      <h4 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h4>
+<pre class="font-mono-xs margin-0 padding-0 bg-transparent">
+$border-color-palettes: (
+  $palette-blue-warm-medium-vivid // note: no trailing comma
+);
+</pre>
+    <h4 class="font-sans-2xs margin-top-2 margin-bottom-05">Output</h4>
+<pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
+.border-blue-warm-40v { border-color: #5E99FF; }
+.border-blue-warm-50v { border-color: #2673DF; }
+.border-blue-warm-60v { border-color: #0052DE; }
+</pre>
+    </aside>
+
+    {% include utilities/standard-palettes.html %}
+    {% include utilities/typescale-palettes.html %}
+
+  </section>
+</section>

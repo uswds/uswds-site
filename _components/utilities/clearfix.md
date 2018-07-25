@@ -5,6 +5,16 @@ type: utility
 title: Clearfix
 category: Utilities
 lead: Clear any floated elements
+
+utilities:
+- base:         clearfix
+  var:          clearfix
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
 ---
 
 <section class="utilities-section">
@@ -55,7 +65,7 @@ lead: Clear any floated elements
 
 {% include utilities/state-variants.html %}
 
-<section class="utilities-section">
+<section class="utilities-section margin-top-6">
   <h2 class="utilities-section-title">Default output</h2>
   <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
     <div class="grid-col-4">Utility</div>
@@ -75,4 +85,6 @@ lead: Clear any floated elements
   </dl>
 </section>
 
-{% include utilities/advanced-settings.html %}
+{% include utilities/output-control.html %}
+
+{% include utilities/values-no-custom-values.html %}

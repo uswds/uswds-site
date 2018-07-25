@@ -10,6 +10,23 @@ subnav:
   href: '#text-color'
 - text: Background color
   href: '#background-color'
+utilities:
+- base:         bg
+  var:          background-color
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        true
+  visited:      false
+- base:         text
+  var:          color
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        true
+  visited:      false
 ---
 
 {% assign theme_colors = site.data.uswds_tokens.colors.project_theme %}
@@ -32,7 +49,7 @@ subnav:
 
   <div class="grid-row utilities-section-title-bar">
     <h2 class="grid-col-auto utilities-section-title">Examples and usage</h2>
-    <p class="grid-col-fill utilities-section-helper">Utilities, values, and variants may be activated and deactivated in <a href="#0" class="text-ink text-no-wrap">advanced settings</a>.</p>
+    <p class="grid-col-fill utilities-section-helper">Utilities, values, and variants may be activated and deactivated in <a href="#advanced-settings" class="text-ink text-no-wrap">advanced settings</a>.</p>
   </div>
 
   <section class="utility" id="text-color">
@@ -44,9 +61,9 @@ subnav:
         </div>
 
         <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-active"><a href="#0">responsive</a></li>
+          <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
           <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-active"><a href="#0">hover</a></li>
+          <li class="utility-scope-button-active"><a href="#state-variants">hover</a></li>
           <li class="utility-scope-button-disabled">focus</li>
           <li class="utility-scope-button-disabled">visited</li>
         </ul>
@@ -109,7 +126,7 @@ subnav:
         <ul class="grid-col-auto utility-scope">
           <li class="utility-scope-button-disabled">responsive</li>
           <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-active"><a href="#0">hover</a></li>
+          <li class="utility-scope-button-active"><a href="#state-variants">hover</a></li>
           <li class="utility-scope-button-disabled">focus</li>
           <li class="utility-scope-button-disabled">visited</li>
         </ul>
@@ -172,11 +189,7 @@ subnav:
   </section>
 </section>
 
-{% include utilities/responsive-variants.html %}
-
-{% include utilities/state-variants.html %}
-
-<section class="utilities-section">
+<section class="utilities-section margin-top-6">
   <h2 class="utilities-section-title">Default output</h2>
   <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
     <div class="grid-col-4">Utility</div>
@@ -203,4 +216,41 @@ subnav:
   </dl>
 </section>
 
-{% include utilities/advanced-settings.html %}
+<section id="advanced-settings" class="padding-top-4">
+<h2 class="margin-y-0">Advanced settings</h2>
+
+  {% include utilities/responsive-variants.html %}
+
+  {% include utilities/state-variants.html %}
+
+  {% include utilities/output-control.html %}
+
+  <section class="utilities-section margin-top-6">
+    {% include utilities/values-intro.html %}
+
+    <aside class="example border-left-05 border-secondary-light padding-left-105">
+      <h4 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h4>
+<pre class="font-mono-xs margin-0 padding-0 bg-transparent">
+$background-color-palettes: (
+  $palette-red-medium,
+  $palette-red-medium-vivid // note: no trailing comma
+);
+</pre>
+    <h4 class="font-sans-2xs margin-top-2 margin-bottom-05">Output</h4>
+<pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
+.bg-red-40 { background-color: #ed6b61; }
+.bg-red-50 { background-color: #d83731; }
+.bg-red-60 { background-color: #ab3a3a; }
+.bg-red-40v { background-color: #ff5c48; }
+.bg-red-50v { background-color: #e82207; }
+.bg-red-60v { background-color: #c31f0a; }
+</pre>
+    </aside>
+
+    <h4 class="font-sans-2xs margin-top-4 margin-bottom-0">Global color palettes</h4>
+    <p class="utility-text margin-top-05">Any palette added to the <code>$global-color-palettes</code> list in <code>_project-utilities-settings.scss</code> will output in the background color, text color, border color, and text decoration color utilities.</p>
+
+    {% include utilities/color-palettes.html %}
+
+  </section>
+</section>

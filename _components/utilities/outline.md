@@ -10,6 +10,23 @@ subnav:
   href: '#utility-outline'
 - text: Outline color
   href: '#utility-outline-color'
+utilities:
+- base:         outline
+  var:          outline
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         outline
+  var:          outline-color
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
 ---
 
 {% assign outline_widths =
@@ -108,42 +125,70 @@ subnav:
       </div>
     </section>
   </section>
+</section>
+
+<section class="utilities-section">
+  <h2 class="utilities-section-title">Default output</h2>
+  <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
+    <div class="grid-col-4">Utility</div>
+    <div class="grid-col-6">Output SCSS</div>
+    <div class="grid-col-2">Default variable value</div>
+  </div>
+  <dl class="output-list">
+    {% for item in outline_widths %}
+      <dt class="output-utility">.outline-{{ item.token }}</dt>
+      <dd class="output-css">
+        <span class="output-rule">outline: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %} solid</span>
+      </dd>
+      <dd class="output-variable">{% if item.scss %}{{ item.value }}{% else %}—{% endif %}</dd>
+    {% endfor %}
+
+    {% for color in outline_colors %}
+      <dt class="output-utility">.outline-{{ color.token }}</dt>
+      <dd class="output-css">
+        <span class="output-rule">outline-color: {% if color.var %}<span class="output-token">{{ color.var }}</span>{% else %}{{ color.token }}{% endif %}</span>
+      </dd>
+      <dd class="output-variable">
+        {% if color.var %}
+          <span class="display-inline-block bg-{{ color.token }} circle-105 text-baseline margin-right-05"></span>
+          {{ color.value }}
+        {% else %}
+          —
+        {% endif %}
+      </dd>
+    {% endfor %}
+  </dl>
+</section>
+
+<section id="advanced-settings" class="padding-top-4">
+  <h2 class="margin-y-0">Advanced settings</h2>
 
   {% include utilities/responsive-variants.html %}
-
   {% include utilities/state-variants.html %}
+  {% include utilities/output-control.html %}
 
-  <section class="utilities-section">
-    <h2 class="utilities-section-title">Default output</h2>
-    <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
-      <div class="grid-col-4">Utility</div>
-      <div class="grid-col-6">Output SCSS</div>
-      <div class="grid-col-2">Default variable value</div>
-    </div>
-    <dl class="output-list">
-      {% for item in outline_widths %}
-        <dt class="output-utility">.outline-{{ item.token }}</dt>
-        <dd class="output-css">
-          <span class="output-rule">outline: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %} solid</span>
-        </dd>
-        <dd class="output-variable">{% if item.scss %}{{ item.value }}{% else %}—{% endif %}</dd>
-      {% endfor %}
+  <section class="utilities-section margin-top-6">
+    {% include utilities/values-intro.html %}
 
-      {% for color in outline_colors %}
-        <dt class="output-utility">.outline-{{ color.token }}</dt>
-        <dd class="output-css">
-          <span class="output-rule">outline-color: {% if color.var %}<span class="output-token">{{ color.var }}</span>{% else %}{{ color.token }}{% endif %}</span>
-        </dd>
-        <dd class="output-variable">
-          {% if color.var %}
-            <span class="display-inline-block bg-{{ color.token }} circle-105 text-baseline margin-right-05"></span>
-            {{ color.value }}
-          {% else %}
-            —
-          {% endif %}
-        </dd>
-      {% endfor %}
-    </dl>
+    <aside class="example border-left-05 border-secondary-light padding-left-105">
+      <h4 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h4>
+<pre class="font-mono-xs margin-0 padding-0 bg-transparent">
+$outline-color-palettes: (
+  $palette-red-medium,
+  $palette-red-medium-vivid // note: no trailing comma
+);
+</pre>
+    <h4 class="font-sans-2xs margin-top-2 margin-bottom-05">Output</h4>
+<pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
+.outline-red-40 { outline-color: #ed6b61; }
+.outline-red-50 { outline-color: #d83731; }
+.outline-red-60 { outline-color: #ab3a3a; }
+.outline-red-40v { outline-color: #ff5c48; }
+.outline-red-50v { outline-color: #e82207; }
+.outline-red-60v { outline-color: #c31f0a; }
+</pre>
+    </aside>
+    {% include utilities/color-palettes.html %}
+    {% include utilities/spacing-palettes.html %}
   </section>
-
-  {% include utilities/advanced-settings.html %}
+</section>

@@ -113,6 +113,57 @@ values:
     value: '10'
   - token: 11
     value: '11'
+
+utilities:
+- base:         flex
+  var:          flex
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         flex
+  var:          flex-direction
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         flex
+  var:          flex-wrap
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         flex-align
+  var:          align-items
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         flex-justify
+  var:          justify-content
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+- base:         order
+  var:          order
+  output:       true
+  responsive:   true
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
+
 ---
 
 <div class="utilities-properties">
@@ -648,4 +699,9 @@ values:
   </dl>
 </section>
 
-{% include utilities/advanced-settings.html %}
+{% include utilities/output-control.html %}
+
+<section class="utilities-section margin-top-6">
+  {% include utilities/values-intro.html %}
+  {% include utilities/values-no-palettes.html %}
+</section>

@@ -5,7 +5,7 @@ redirect_from:
 layout: styleguide
 type: element
 title: Labels
-category: UI components
+category: Components
 lead: Labels draw attention to new or important content.
 ---
 

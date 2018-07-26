@@ -70,6 +70,12 @@ Utilities:
 Style:
   - text: Overview
     href: /style/
+  - text: Color
+    href: /style/color/
+  - text: Spacing units
+    href: /style/spacing-units/
+  - text: Type scale
+    href: /style/type-scale/
 
 Page templates:
   - href: /page-templates/

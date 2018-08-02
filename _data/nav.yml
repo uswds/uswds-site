@@ -21,7 +21,6 @@ UI components:
   - href: /components/typography/
   - href: /components/colors/
   - href: /components/icons/
-  - href: /components/accessibility/
   - href: /components/grids/
   - href: /components/buttons/
   - href: /components/labels/
@@ -40,6 +39,7 @@ Documentation:
     href: /documentation/
   - href: /documentation/developers/
   - href: /documentation/designers/
+  - href: /documentation/accessibility/
   - href: /performance/
   - href: /documentation/code-guidelines/
   - href: /documentation/video-tutorials/

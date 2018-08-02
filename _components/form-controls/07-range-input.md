@@ -7,8 +7,8 @@ lead: The range slider allows users to choose an approximate number from a range
 ---
 
 {% comment %}
-{% include code/preview.html component="range" %}
-{% include code/accordion.html component="range" %}
+{% include code/preview.html component="range-input" %}
+{% include code/accordion.html component="range-input" %}
 {% endcomment %}
 <div class="usa-accordion-bordered component-docs">
   <button class="usa-button-unstyled usa-accordion-button"

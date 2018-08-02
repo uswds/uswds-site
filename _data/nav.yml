@@ -1,17 +1,17 @@
 primary:
   - href: /components/
   - href: /page-templates/
-  - href: /getting-started/
-  - href: /design-principles/
-  - href: /whats-new/
+  - href: /documentation/
+  - href: /about/
 
 mobile:
   - href: /components/
     collapsible: true
   - href: /page-templates/
-  - href: /getting-started/
+  - href: /documentation/
     collapsible: true
-  - href: /design-principles/
+  - href: /about/
+    collapsible: true
   - href: /whats-new/
     collapsible: true
 
@@ -35,16 +35,16 @@ UI components:
   - href: /components/headers/
   - href: /components/footers/
 
-Getting started:
+Documentation:
   - text: Overview
-    href: /getting-started/
-  - href: /getting-started/developers/
-  - href: /getting-started/designers/
+    href: /documentation/
+  - href: /documentation/developers/
+  - href: /documentation/designers/
   - href: /performance/
-  - href: /getting-started/code-guidelines/
-  - href: /getting-started/video-tutorials/
-  - href: /getting-started/implementations/
-  - href: /getting-started/showcase/
+  - href: /documentation/code-guidelines/
+  - href: /documentation/video-tutorials/
+  - href: /documentation/implementations/
+  - href: /documentation/showcase/
 
 Page templates:
   - href: /page-templates/
@@ -56,3 +56,14 @@ What’s new:
   - href: /whats-new/updates/
   - href: /whats-new/product-roadmap/
   - href: /whats-new/research/
+
+About USWDS:
+  - text: Overview
+    href: /about/
+  - href: /about/history/
+  - href: /about/design-principles/
+  - href: /about/research/
+  - href: /about/whats-new/
+  - href: /about/releases/
+  - href: /about/updates/
+  - href: /about/product-roadmap/

@@ -1,10 +1,10 @@
 ---
-permalink: /whats-new/releases/
+permalink: /about/releases/
 redirect_from:
   - /about-our-work/releases/
 layout: styleguide
 title: Release notes
-category: What’s new
+category: About USWDS
 subnav:
   data: releases
   href: ['#version-%', name]

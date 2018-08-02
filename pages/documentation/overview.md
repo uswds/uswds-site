@@ -1,8 +1,8 @@
 ---
-permalink: /getting-started/
+permalink: /documentation/
 layout: styleguide
-title: Getting started
-category: Getting started
+title: Documentation
+category: Documentation
 lead: The U.S. Web Design System provides design guidelines and code to help you quickly create trustworthy, accessible, and consistent digital government services.
 ---
 

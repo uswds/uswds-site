@@ -1,11 +1,11 @@
 ---
-permalink: /whats-new/research/
+permalink: /about/research/
 redirect_from:
 - /about-our-work/research-strategy/
-- /whats-new/research-strategy/
+- /about/research-strategy/
 layout: styleguide
 title: Research
-category: What’s new
+category: About USWDS
 lead: User research is a core aspect of the U.S. Web Design System as it’s our main source of feedback and inspiration for future product development.
 ---
 

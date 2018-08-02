@@ -1397,27 +1397,8 @@ code {
     }
   }
 
-  // full-width styles. TODO: look into making a template instead.
-  .main-content {
-    width: 100%;
-  }
-
-  .styleguide-content {
-    @include margin(null auto);
-  }
-
-  .sidenav {
-    display: none;
-  }
-
   img {
     max-width: 18.4rem;
-  }
-
-  .footer-text-one-half {
-    @include media($medium-screen) {
-      @include span-columns(6);
-    }
   }
 }
 

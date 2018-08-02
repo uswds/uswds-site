@@ -1,8 +1,8 @@
 ---
 title: News and updates
 layout: post
-permalink: /whats-new/updates/
-category: What’s new
+permalink: /about/updates/
+category: About USWDS
 subnav:
   type: posts
 ---

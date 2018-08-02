@@ -5,6 +5,8 @@ permalink: /about/updates/
 category: About USWDS
 subnav:
   type: posts
+redirect_from:
+  - /whats-new/updates/
 ---
 {% capture lead %}
 From time to time we post product updates, guidance, and interviews

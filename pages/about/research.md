@@ -7,6 +7,8 @@ layout: styleguide
 title: Research
 category: About USWDS
 lead: User research is a core aspect of the U.S. Web Design System as it’s our main source of feedback and inspiration for future product development.
+redirect_from:
+  - /whats-new/research/
 ---
 
 We plan to use a combination of research methods, quantitative research like collecting web analytics to see how frequently the Design System is used around the federal government, and qualitative research like remote observational studies to see whether the Design System is making government sites easier for people to use. We’ll use this research to see how well the Design System is working and what needs to be improved. 

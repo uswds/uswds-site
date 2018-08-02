@@ -13,6 +13,7 @@ columns:
     source: Pageviews
 redirect_from:
   - /about-our-work/
+  - /whats-new/
 ---
 
 {% capture blog %}

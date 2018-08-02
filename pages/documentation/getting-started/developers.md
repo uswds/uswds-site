@@ -25,6 +25,8 @@ subnav:
   href: '#need-installation-help'
 - text: Contributing
   href: '#contributing-to-the-code-base'
+redirect_from:
+  - /getting-started/developers/
 ---
 
 {% assign content = site.data.install-readme.decoded | markdownify | absolutify_links: 'https://github.com/uswds/uswds/blob/develop/' | split: '<h2 id="using-the-design-system">Using the Design System</h2>' | last | split: '<h2 id="reuse-of-open-source-style-guides">' | first %}

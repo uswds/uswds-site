@@ -11,6 +11,8 @@ subnav:
   data: milestones
   href: ['#%', id]
   text: title
+redirect_from:
+  - /whats-new/product-roadmap/
 ---
 
 Below is our product roadmap: a long-term plan of the goals, features,

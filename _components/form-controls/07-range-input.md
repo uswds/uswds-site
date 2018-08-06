@@ -1,5 +1,5 @@
 ---
-title: Range slider
+title: Range input
 parent: Form controls
 maturity: alpha
 order: 07

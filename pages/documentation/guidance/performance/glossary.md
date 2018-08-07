@@ -1,7 +1,7 @@
 ---
 title: Web performance glossary
 permalink: /performance/glossary/
-category: Getting started
+category: Documentation
 layout: styleguide
 lead: Detailed information about performance methods and metrics.
 subnav:

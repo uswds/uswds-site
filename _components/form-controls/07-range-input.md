@@ -24,7 +24,7 @@ lead: The range slider allows users to choose an approximate number from a range
 - When the exact number a user enters isn’t important, but you want to give them an opportunity to pick from a range.
 
 ##### When to consider something else 
-Use a regular text input if a user needs only to enter a precise number or only needs to enter a number once.
+Use a regular text input if a user needs to enter a precise number.
 
 ##### Guidance
 - When a user clicks the slider control to change their input, the slider control should change color to indicate it is active.

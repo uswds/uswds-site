@@ -1,16 +1,16 @@
 ---
 title: How to track performance
 permalink: /performance/how/
-category: Getting started
+category: Documentation
 layout: styleguide
 lead: A step-by-step guide to picking metrics and tools for tracking performance on your site.
 subnav:
   - text: Introduction
     href: '#introduction'
   - text: Choosing metrics & tools
-    href: '#choosing-metrics-amp-tools'
+    href: '#choosing-metrics--tools'
   - text: Setting budgets & goals
-    href: '#setting-budgets-amp-goals'
+    href: '#setting-budgets--goals'
   - text: Adding site tracking
     href: '#adding-site-tracking'
 ---

@@ -1,7 +1,7 @@
 ---
 title: What is web performance
 permalink: /performance/what/
-category: Getting started
+category: Documentation
 layout: styleguide
 ---
 

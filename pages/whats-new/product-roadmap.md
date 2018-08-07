@@ -1,16 +1,18 @@
 ---
-permalink: /whats-new/product-roadmap/
+permalink: /about/product-roadmap/
 redirect_from:
 - /getting-started/product-roadmap/
 - /about-our-work/product-roadmap/
 layout: styleguide
 title: Product roadmap
-category: What’s new
+category: About USWDS
 lead: Here, you’ll find our product roadmap — an up-to-date report on the work we’re doing.
 subnav:
   data: milestones
   href: ['#%', id]
   text: title
+redirect_from:
+  - /whats-new/product-roadmap/
 ---
 
 Below is our product roadmap: a long-term plan of the goals, features,

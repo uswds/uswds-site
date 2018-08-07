@@ -1,8 +1,8 @@
 ---
-permalink: /whats-new/
+permalink: /about/whats-new/
 layout: styleguide
 title: What’s new
-category: What’s new
+category: About USWDS
 lead: Here you can find the latest news and information about the U.S. Web Design System. Read our latest release notes, learn about the Design System’s impact in the government, and learn how we conduct user research to continuously improve our product and process.
 columns:
   - title: New users
@@ -13,6 +13,7 @@ columns:
     source: Pageviews
 redirect_from:
   - /about-our-work/
+  - /whats-new/
 ---
 
 {% capture blog %}

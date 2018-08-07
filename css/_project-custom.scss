@@ -138,14 +138,6 @@ body {
     }
   }
 
-  .usa-banner-inner {
-    max-width: 100%;
-  }
-
-  .usa-banner-content {
-    margin-left: 0;
-  }
-
   .usa-button-list {
     float: right;
     display: none;
@@ -171,6 +163,16 @@ body {
     .usa-button {
       @include margin(0 null);
     }
+  }
+}
+
+.site-banner {
+  .usa-banner-inner {
+    max-width: 100%;
+  }
+
+  .usa-banner-content {
+    margin-left: 0;
   }
 }
 
@@ -1395,27 +1397,8 @@ code {
     }
   }
 
-  // full-width styles. TODO: look into making a template instead.
-  .main-content {
-    width: 100%;
-  }
-
-  .styleguide-content {
-    @include margin(null auto);
-  }
-
-  .sidenav {
-    display: none;
-  }
-
   img {
     max-width: 18.4rem;
-  }
-
-  .footer-text-one-half {
-    @include media($medium-screen) {
-      @include span-columns(6);
-    }
   }
 }
 
@@ -1638,8 +1621,6 @@ article {
       margin-top: 0.5rem;
     }
   } // .post-excerpt
-
-
 } // article
 
 // Utilities CSS

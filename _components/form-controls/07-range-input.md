@@ -20,8 +20,8 @@ lead: The range input allows users to choose an approximate number from a range.
 
 #### Usability
 ##### When to use
-- When you expect a user will move the slider back and forth to experiment with different inputs.
-- When the exact number a user enters isn’t important, but you want to give them an opportunity to pick from a range.
+- When the selection range is more important than the exact value the user selects.
+- When a relative value is more important than an exact value.
 
 ##### When to consider something else 
 Use a regular text input if a user needs to enter a precise number.

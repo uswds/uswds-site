@@ -31,7 +31,7 @@ Use a regular text input if a user needs to enter a precise number.
 - Users should be able to drag the slider control or select somewhere along the slider itself to change the value.
 - When appropriate, label the ends of the slider with the limits of the range (for example: "0/100", "small/large" or "less expensive/more expensive").
 - Set the `min` and `max` attribute of the `input` element to match whatever instructions or labels accompany the slider.
-- Set the `step` attribute so the slider is not too granular. Sliders should let users input approximate values. By setting the step to “10” or “20,” you keep users from inadvertently selecting values that are more precise than they intended.
+- In a range slider, the relative value is more important than the specific value, so set the `step` attribute so it's not too granular. By setting the step to a value of 10-20% of the total range (For example: `step="10"`) you prevent unnecessary precision and cognitive strain in your users.
 
 #### References
 - [Slider Design: Rules of Thumb](https://www.nngroup.com/articles/gui-slider-controls/)

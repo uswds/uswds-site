@@ -34,7 +34,7 @@ Use a regular text input if a user needs to enter a precise number.
 - In a range slider, the relative value is more important than the specific value, so set the `step` attribute so it's not too granular. By setting the step to a value of 10-20% of the total range (For example: `step="10"`) you prevent unnecessary precision and cognitive strain in your users.
 
 #### References
-- [Slider Design: Rules of Thumb](https://www.nngroup.com/articles/gui-slider-controls/)
+- [Slider Design: Rules of Thumb - Nielsen Norman Group](https://www.nngroup.com/articles/gui-slider-controls/)
 - [Four Dangerous Navigation Approaches that Can Increase Cognitive Strain - Nielsen Norman Group](http://www.nngroup.com/articles/navigation-cognitive-strain/)
 </div>
 </div>

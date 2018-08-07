@@ -29,7 +29,7 @@ Use a regular text input if a user needs to enter a precise number.
 ##### Guidance
 - The slider control should change color to indicate it is active when a user selects it.
 - Users should be able to drag the slider control or select somewhere along the slider itself to change the value.
-- Whenever appropriate, label each end of the slider with what it represents (whether a number range, “large” or “small,” “high” or “low”).
+- When appropriate, label the ends of the slider with the limits of the range (for example: "0/100", "small/large" or "less expensive/more expensive").
 - Set the `min` and `max` attribute of the `input` element to match whatever instructions or labels accompany the slider.
 - Set the `step` attribute so the slider is not too granular. Sliders should let users input approximate values. By setting the step to “10” or “20,” you keep users from inadvertently selecting values that are more precise than they intended.
 

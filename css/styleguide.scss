@@ -145,14 +145,6 @@ body {
     }
   }
 
-  .usa-banner-inner {
-    max-width: 100%;
-  }
-
-  .usa-banner-content {
-    margin-left: 0;
-  }
-
   .usa-button-list {
     float: right;
     display: none;
@@ -178,6 +170,16 @@ body {
     .usa-button {
       @include margin(0 null);
     }
+  }
+}
+
+.site-banner {
+  .usa-banner-inner {
+    max-width: 100%;
+  }
+
+  .usa-banner-content {
+    margin-left: 0;
   }
 }
 

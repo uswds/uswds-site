@@ -8,9 +8,9 @@ subnav:
   - text: Introduction
     href: '#introduction'
   - text: Choosing metrics & tools
-    href: '#choosing-metrics-amp-tools'
+    href: '#choosing-metrics--tools'
   - text: Setting budgets & goals
-    href: '#setting-budgets-amp-goals'
+    href: '#setting-budgets--goals'
   - text: Adding site tracking
     href: '#adding-site-tracking'
 ---

@@ -1,10 +1,10 @@
 ---
-permalink: /getting-started/implementations/
+permalink: /documentation/implementations/
 redirect_from:
-- /getting-started/distributions/
+- /documentation/distributions/
 layout: styleguide
 title: Implementations
-category: Getting started
+category: Documentation
 lead: |
   Users of the U.S. Web Design System have created implementations for
   popular content management systems, web frameworks, and package managers that

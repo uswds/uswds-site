@@ -1,8 +1,8 @@
 ---
-permalink: /getting-started/developers/
+permalink: /documentation/developers/
 layout: styleguide
 title: For developers
-category: Getting started
+category: Documentation
 lead: The UI components are built on a solid HTML foundation, progressively enhanced to provide core experiences across browsers. All users will have access to the same critical information and experiences regardless of what browser they use, although those experiences will render better in newer browsers. If JavaScript fails, users will still get a robust HTML foundation.
 subnav:
 - text: Installation
@@ -25,6 +25,8 @@ subnav:
   href: '#need-installation-help'
 - text: Contributing
   href: '#contributing-to-the-code-base'
+redirect_from:
+  - /getting-started/developers/
 ---
 
 {% assign content = site.data.install-readme.decoded | markdownify | absolutify_links: 'https://github.com/uswds/uswds/blob/develop/' | split: '<h2 id="using-the-design-system">Using the Design System</h2>' | last | split: '<h2 id="reuse-of-open-source-style-guides">' | first %}

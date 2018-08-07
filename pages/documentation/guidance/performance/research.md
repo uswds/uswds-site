@@ -1,7 +1,7 @@
 ---
 title: Performance research
 permalink: /performance/research/
-category: Getting started
+category: Documentation
 layout: styleguide
 lead: Report on research the Design System team did on performance.
 subnav:

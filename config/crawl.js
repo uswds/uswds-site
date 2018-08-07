@@ -11,7 +11,7 @@ const runServer = require('./static-server');
 // they should be considered "second class" by the link checker, and
 // only emit warnings on 404s rather than errors.
 const WARNING_PAGES = [
-    '/getting-started/code-guidelines/',
+    '/documentation/code-guidelines/',
     '/whats-new/releases/',
     '/getting-started/showcase/all/',
 ];

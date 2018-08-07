@@ -3,27 +3,24 @@ primary:
   - href: /utilities/
   - href: /style/
   - href: /page-templates/
-  - href: /getting-started/
-  - href: /design-principles/
-  - href: /whats-new/
+  - href: /documentation/
+  - href: /about/
 
 mobile:
   - href: /components/
     collapsible: true
-  - href: /page-templates/
   - href: /utilities/
-  - href: /getting-started/
+  - href: /page-templates/
+  - href: /documentation/
     collapsible: true
-  - href: /design-principles/
-  - href: /whats-new/
-    collapsible: true
+  - href: /about/
 
 Components:
   - text: Overview
     href: /components/
   - href: /components/typography/
   - href: /components/colors/
-  - href: /components/accessibility/
+  - href: /components/icons/
   - href: /components/grids/
   - href: /components/buttons/
   - href: /components/labels/
@@ -37,16 +34,17 @@ Components:
   - href: /components/headers/
   - href: /components/footers/
 
-Getting started:
+Documentation:
   - text: Overview
-    href: /getting-started/
-  - href: /getting-started/developers/
-  - href: /getting-started/designers/
+    href: /documentation/
+  - href: /documentation/developers/
+  - href: /documentation/designers/
+  - href: /documentation/accessibility/
   - href: /performance/
-  - href: /getting-started/code-guidelines/
-  - href: /getting-started/video-tutorials/
-  - href: /getting-started/implementations/
-  - href: /getting-started/showcase/
+  - href: /documentation/code-guidelines/
+  - href: /documentation/video-tutorials/
+  - href: /documentation/implementations/
+  - href: /documentation/showcase/
 
 Utilities:
   - text: Overview
@@ -74,10 +72,13 @@ Style:
 Page templates:
   - href: /page-templates/
 
-What’s new:
+About USWDS:
   - text: Overview
-    href: /whats-new/
-  - href: /whats-new/releases/
-  - href: /whats-new/updates/
-  - href: /whats-new/product-roadmap/
-  - href: /whats-new/research/
+    href: /about/
+  - href: /about/history/
+  - href: /about/design-principles/
+  - href: /about/whats-new/
+  - href: /about/releases/
+  - href: /about/updates/
+  - href: /about/product-roadmap/
+  - href: /about/research/

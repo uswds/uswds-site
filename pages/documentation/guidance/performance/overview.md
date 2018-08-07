@@ -2,7 +2,7 @@
 title: Performance guidelines
 permalink: /performance/
 layout: styleguide
-category: Getting started
+category: Documentation
 lead: We want to help you design and build fast and responsive experiences.
 subnav:
   - href: /performance/what/

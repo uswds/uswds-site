@@ -1,8 +1,8 @@
 ---
-permalink: /getting-started/code-guidelines/
+permalink: /documentation/code-guidelines/
 layout: styleguide
 title: Code guidelines
-category: Getting started
+category: Documentation
 lead: 
 ---
 

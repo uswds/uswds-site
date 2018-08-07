@@ -27,7 +27,7 @@ lead: The range slider allows users to choose an approximate number from a range
 Use a regular text input if a user needs to enter a precise number.
 
 ##### Guidance
-- When a user clicks the slider control to change their input, the slider control should change color to indicate it is active.
+- The slider control should change color to indicate it is active when a user selects it.
 - Users should be able to either click somewhere along the slider or drag the circular control to the left or right to change the  value. 
 - Whenever appropriate, label each end of the slider with what it represents (whether a number range, “large” or “small,” “high” or “low”).
 - Set the `min` and `max` attribute of the `input` element to match whatever instructions or labels accompany the slider.

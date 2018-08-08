@@ -1,9 +1,10 @@
 ---
-title: Range input
+title: Range slider
 parent: Form controls
 maturity: alpha
 order: 07
-lead: The range input allows users to choose an approximate number from a range.
+id_custom: range
+lead: The range slider allows users to choose an approximate number from a range.
 ---
 
 {% include code/preview.html component="range-input" %}

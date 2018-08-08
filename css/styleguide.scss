@@ -632,6 +632,16 @@ footer.site {
   }
 }
 
+.component-docs {
+  h4 {
+    color: $color-primary-darker;
+  }
+}
+
+.usa-heading {
+  color: $color-primary-darker;
+}
+
 // Custom styles to illustrate invisible grid for web design standards
 
 .page-grids {
@@ -711,10 +721,6 @@ h3 + .button_wrapper {
 
 .button_wrapper-dark {
   background: $color-gray-dark;
-}
-
-.usa-heading {
-  color: $color-primary-darker;
 }
 
 // Colors -------------- //

@@ -2163,10 +2163,6 @@ body {
   @include u-bg($gray-1);
 }
 
-.foo {
-  @include u-bg(white);
-}
-
 .markdown-test {
   code,
   pre {

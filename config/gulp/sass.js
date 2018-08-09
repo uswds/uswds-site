@@ -16,7 +16,7 @@ gulp.task('build-sass', function () {
     .pipe(strip())
     .pipe(
       combineMq({
-        beautify: true,
+        beautify: false,
       })
     )
     .pipe(gulp.dest('assets/css'));

@@ -15,7 +15,7 @@ graphic_list:
         alt:
       link:
         text: Take the first step
-        url: getting-started
+        url: documentation
     - topic: UI components
       description: Discover all the different components that the Design System provides as both design and development assets.
       image:

@@ -1,10 +1,12 @@
 ---
 title: News and updates
 layout: post
-permalink: /whats-new/updates/
-category: What’s new
+permalink: /about/updates/
+category: About USWDS
 subnav:
   type: posts
+redirect_from:
+  - /whats-new/updates/
 ---
 {% capture lead %}
 From time to time we post product updates, guidance, and interviews

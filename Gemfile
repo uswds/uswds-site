@@ -1,10 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
+gem 'jekyll', '>= 3.4.3'
 gem 'json'
-gem 'jekyll-redirect-from'
-
-gem 'scss_lint', require: false
+gem 'jekyll-redirect-from', '>= 0.12.1'
 
 gem 'rspec-core'
 gem 'rspec-expectations'

@@ -1,8 +1,8 @@
 ---
-permalink: /getting-started/video-tutorials/
+permalink: /documentation/video-tutorials/
 layout: styleguide
 title: Video tutorials
-category: Getting started
+category: Documentation
 lead: Watch these videos to familiarize yourself with key concepts from the U.S. Web Design System and open source development.
 ---
 

@@ -1,10 +1,11 @@
 ---
-permalink: /components/accessibility/
+permalink: /documentation/accessibility/
 redirect_from:
 - /accessibility/
+- /components/accessibility/
 layout: styleguide
 title: Accessibility
-category: Components
+category: Documentation
 lead: Accessibility tips to help you deliver delightful experiences to all users.
 order: 25
 ---

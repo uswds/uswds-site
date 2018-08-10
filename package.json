@@ -40,7 +40,7 @@
     "lint": "gulp eslint scss-lint",
     "prestart": "gulp build",
     "serve": "bundle exec jekyll serve --drafts --future --incremental --livereload",
-    "start": "bundle exec jekyll serve --drafts --future",
+    "start": "bundle exec jekyll serve --drafts --future --watch",
     "test": "npm run axe && npm run crawl && bundle exec rspec",
     "watch": "nswatch",
     "snyk-protect": "snyk protect",

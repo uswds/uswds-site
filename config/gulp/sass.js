@@ -19,7 +19,8 @@ gulp.task('build-sass', function () {
         beautify: true,
       })
     )
-    .pipe(gulp.dest('assets/css'));
+    .pipe(gulp.dest('assets/css'))
+    .pipe(gulp.dest('_site/assets/css'));
 });
 
 gulp.task('scss-lint', function (done) {

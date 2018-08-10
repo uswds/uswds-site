@@ -79,4 +79,4 @@ exclude:
   - package.json
   - gulpfile.js
   - circle.yml
-  # - css
+  - css

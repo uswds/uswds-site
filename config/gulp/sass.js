@@ -16,7 +16,7 @@ gulp.task('build-sass', function () {
     .pipe(strip())
     .pipe(
       combineMq({
-        beautify: true,
+        beautify: false,
       })
     )
     .pipe(gulp.dest('assets/css'))
@@ -30,9 +30,7 @@ gulp.task('scss-lint', function (done) {
     return done();
   }
 
-  return gulp.src([
-    './css/**/*.scss'
-    ])
+  return gulp.src('./css/**/*.scss')
     .pipe(linter({
       config: '.scss-lint.yml',
     }))

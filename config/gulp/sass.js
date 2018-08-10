@@ -20,7 +20,7 @@ gulp.task('build-sass', function () {
       })
     )
     .pipe(gulp.dest('assets/css'))
-    .pipe(gulp.dest('_site/assets/css'));;
+    .pipe(gulp.dest('_site/assets/css'));
 });
 
 gulp.task('scss-lint', function (done) {

@@ -4,6 +4,7 @@ layout: styleguide
 type: utility
 title: Layout grid
 category: Utilities
+type: docs
 lead: Use our flexible grid system to structure website content. The grid is mobile-first, powered by flexbox, and based on a twelve-column system.
 subnav:
 - text: How it works
@@ -24,11 +25,9 @@ subnav:
   href: '#sass-mixins'
 ---
 
-<div class="font-mono-4 weight-300">
 <h2 id="how-it-works">How it works</h2>
-<!-- <p class="font-sans-6 measure-3"><strong>Note:</strong> <code class="docs-inline-code">.grid-container</code>, <code class="docs-inline-code">.grid-gap</code>, and <code class="docs-inline-code">.grid-col</code> all have mobile-first responsive variants. Only the first example shows them.</p> -->
 
-<p class="font-sans-6 measure-3">The grid system uses a series of containers, rows, and columns to lay out and align content. Below is an example and an in-depth look at how the grid comes together.</p>
+<p>The grid system uses a series of containers, rows, and columns to lay out and align content. Below is an example and an in-depth look at how the grid comes together.</p>
 <div class="docs-grid-example">
 {% capture grid-1 %}
 <div class="grid-container">
@@ -53,7 +52,7 @@ subnav:
   </div>
 </div>
 
-<div markdown="1" class="font-sans-6 measure-3">
+<div markdown="1">
 The above example creates three equal-width columns on tablet, desktop, and widescreen devices using our predefined grid classes. Those columns are centered in the page with the parent `.grid-container` container.
 
 Breaking it down, here's how it works:
@@ -69,7 +68,7 @@ Breaking it down, here's how it works:
 </div>
 
 <h2 id="responsive-variants">Responsive variants</h2>
-<table class="font-sans-6">
+<table class="usa-table">
   <caption>Default responsive sizes</caption>
   <thead>
     <tr>
@@ -112,8 +111,8 @@ Breaking it down, here's how it works:
 
 <h2 id="auto-layout-columns">Auto layout columns</h2>
 <h3>Variable width content</h3>
-<p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-col-auto</code> items fit the natural width of their content.</p>
-<p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-col</code> and <code class="docs-inline-code">.grid-col-fill</code> items flex to fill the available space.</p>
+<p><code class="docs-inline-code">.grid-col-auto</code> items fit the natural width of their content.</p>
+<p><code class="docs-inline-code">.grid-col</code> and <code class="docs-inline-code">.grid-col-fill</code> items flex to fill the available space.</p>
 
 
 <div class="docs-grid-example">
@@ -143,8 +142,8 @@ Breaking it down, here's how it works:
 
 <h2 id="responsive-classes">Responsive classes</h2>
 <h3>Same at all breakpoints</h3>
-<p class="font-sans-6 measure-3">For columns that should maintain the same proportion at any viewport width, use the <code class="docs-inline-code">.grid-col</code> and <code class="docs-inline-code">.grid-col-*</code> classes. Specify a numbered class when you need a column of a specific width; otherwise, use <code class="docs-inline-code">.grid-col</code>.</p>
-<p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-col-[1-12]</code> set a fixed width of [n] grid-columns in a 12-column grid.</p>
+<p>For columns that should maintain the same proportion at any viewport width, use the <code class="docs-inline-code">.grid-col</code> and <code class="docs-inline-code">.grid-col-*</code> classes. Specify a numbered class when you need a column of a specific width; otherwise, use <code class="docs-inline-code">.grid-col</code>.</p>
+<p><code class="docs-inline-code">.grid-col-[1-12]</code> set a fixed width of [n] grid-columns in a 12-column grid.</p>
 
 {% capture grid-markers %}
 <div class="grid-row margin-top-1 font-sans-2">
@@ -219,7 +218,7 @@ Breaking it down, here's how it works:
 </div>
 
 <h3>Stacked columns at narrow widths</h3>
-<p class="font-sans-6 measure-3">Columns are full-width until the narrowest breakpoint specified in a <code class="docs-inline-code">.grid-col</code> class. For instance, using a single set of <code class="docs-inline-code">tablet:grid-col-*</code> classes, you can create a basic grid system that starts out stacked before displaying as columns at the tablet breakpoint (<code class="docs-inline-code">tablet:</code>).</p>
+<p>Columns are full-width until the narrowest breakpoint specified in a <code class="docs-inline-code">.grid-col</code> class. For instance, using a single set of <code class="docs-inline-code">tablet:grid-col-*</code> classes, you can create a basic grid system that starts out stacked before displaying as columns at the tablet breakpoint (<code class="docs-inline-code">tablet:</code>).</p>
 
 <div class="docs-grid-example">
 {% capture grid-stacked %}
@@ -249,7 +248,7 @@ Breaking it down, here's how it works:
 </div>
 
 <h3>Mix and match</h3>
-<p class="font-sans-6 measure-3">Don’t want your columns to simply stack in some breakpoints? Use a combination of different classes for each breakpoints as needed. See the example below for a better idea of how it all works.</p>
+<p>Don’t want your columns to simply stack in some breakpoints? Use a combination of different classes for each breakpoints as needed. See the example below for a better idea of how it all works.</p>
 <div class="docs-grid-example">
 {% capture grid-mix %}
 <!-- Stack the columns on mobile by making one full-width and the other half-width -->
@@ -286,7 +285,7 @@ Breaking it down, here's how it works:
 </div>
 
 <h2 id="offsetting-columns">Offsetting columns</h2>
-<p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-offset-[1-12]</code> offsets the item by the specified number of grid columns.</p>
+<p><code class="docs-inline-code">.grid-offset-[1-12]</code> offsets the item by the specified number of grid columns.</p>
 {{ grid-markers }}
 
 <div class="docs-grid-example">
@@ -310,7 +309,7 @@ Breaking it down, here's how it works:
 </div>
 
 <h2 id="column-wrapping">Column wrapping</h2>
-<p class="font-sans-6 measure-3">Items wrap when the sum of the grid columns is more than 12.</p>
+<p>Items wrap when the sum of the grid columns is more than 12.</p>
 {{ grid-markers }}
 
 <div class="docs-grid-example">
@@ -338,7 +337,7 @@ Breaking it down, here's how it works:
 <h2 id="gutters">Gutters</h2>
 
 <h3>Default gutter</h3>
-<p class="font-sans-6 measure-3">Add <code class="docs-inline-code">.grid-gap</code> to a grid row to add a gap (or gutter) between each column in the row. The default gap width is 16px (2 spacing units). Customize the width of the gap by adjusting the value of <code class="docs-inline-code">$theme-column-gap</code> in project settings.</p>
+<p>Add <code class="docs-inline-code">.grid-gap</code> to a grid row to add a gap (or gutter) between each column in the row. The default gap width is 16px (2 spacing units). Customize the width of the gap by adjusting the value of <code class="docs-inline-code">$theme-column-gap</code> in project settings.</p>
 {{ grid-markers }}
 
 <div class="docs-grid-example">
@@ -370,7 +369,7 @@ Breaking it down, here's how it works:
 </div>
 
 <h3>Large gutter</h3>
-<p class="font-sans-6 measure-3"><code class="docs-inline-code">.grid-gap-lg</code> adds a larger gap (or gutter) between each column in a row. The default large gap width is 32px (4 spacing units). Customize the width of the large gap by adjusting the value of <code class="docs-inline-code">$theme-column-gap-large</code> in project settings. There is also a <code class="docs-inline-code">.grid-gap-sm</code> (2px) set with <code class="docs-inline-code">$theme-column-gap-small</code>. Also, you can add the following discrete values to <code class="docs-inline-code">.grid-gap</code>:</p>
+<p><code class="docs-inline-code">.grid-gap-lg</code> adds a larger gap (or gutter) between each column in a row. The default large gap width is 32px (4 spacing units). Customize the width of the large gap by adjusting the value of <code class="docs-inline-code">$theme-column-gap-large</code> in project settings. There is also a <code class="docs-inline-code">.grid-gap-sm</code> (2px) set with <code class="docs-inline-code">$theme-column-gap-small</code>. Also, you can add the following discrete values to <code class="docs-inline-code">.grid-gap</code>:</p>
 <div markdown="1">
 - `.grid-gap-2px`
 - `.grid-gap-05`
@@ -410,7 +409,7 @@ Breaking it down, here's how it works:
   </div>
 </div>
 
-<div markdown="1" class="font-sans-6 measure-3">
+<div markdown="1">
 <h2 id="sass-mixins">Sass mixins</h2>
 When generating your CSS from USWDS source files, you have the option of customizing many system defaults by modifying project theme variables. USWDS also provides grid mixins for adding grid functionality to custom semantic component CSS.
 
@@ -512,4 +511,3 @@ You can modify the variables to your own custom values, or just use the mixins w
 }
 ```
 </div>
-</div><!-- div -->

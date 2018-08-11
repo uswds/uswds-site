@@ -1712,6 +1712,7 @@ html {
     @include u-margin-top(2);
     @include u-padding-top(2);
   }
+
   & + .txt-p {
     @include u-margin-top(1);
   }
@@ -1748,6 +1749,7 @@ html {
 .txt-a {
   @include u-text($gray-90);
   @include u-underline($gray-30);
+
   &:hover{
     @include u-underline($gray-90);
   }
@@ -1757,39 +1759,39 @@ html {
   @include add-list-reset;
 }
 
-.usa-body-content, .usa-prose {
-  h1,
-  h2,
-  h3 {
-    @include txt-normalize-headings;
-  }
-  h2 { @extend .txt-h2; }
-  h3 {
-    @extend .txt-h3;
-    & + p {
-      @include u-margin-top(1);
-    }
-  }
-  p { @extend .txt-p; }
-  ul { @extend .txt-ul; }
-  li { @extend .txt-li; }
-  p a {
-    @extend .txt-a;
-    &.usa-lede-link {
-      @include u-text($gray-90);
-      @include u-underline($gray-20);
-      &:hover{
-        @include u-underline($gray-80);
-      }
-    }
-  }
-  code { @extend .txt-code; }
-  aside {
-    code {
-      @include u-bg($gray-warm-10);
-    }
-  }
-}
+// .usa-body-content, .usa-prose {
+//   h1,
+//   h2,
+//   h3 {
+//     @include txt-normalize-headings;
+//   }
+//   h2 { @extend .txt-h2; }
+//   h3 {
+//     @extend .txt-h3;
+//     & + p {
+//       @include u-margin-top(1);
+//     }
+//   }
+//   p { @extend .txt-p; }
+//   ul { @extend .txt-ul; }
+//   li { @extend .txt-li; }
+//   p a {
+//     @extend .txt-a;
+//     &.usa-lede-link {
+//       @include u-text($gray-90);
+//       @include u-underline($gray-20);
+//       &:hover{
+//         @include u-underline($gray-80);
+//       }
+//     }
+//   }
+//   code { @extend .txt-code; }
+//   aside {
+//     code {
+//       @include u-bg($gray-warm-10);
+//     }
+//   }
+// }
 
 /* * * * * * ========================= */
 
@@ -1845,7 +1847,10 @@ strong {
   @include grid-row;
   @include u-margin-top(0);
   @include u-width(full);
-  .output-utility, .output-css, .output-variable {
+
+  .output-utility,
+  .output-css,
+  .output-variable {
     @include u-border-bottom(1px);
     @include u-border-bottom($base-light);
     @include u-display(flex);
@@ -1854,11 +1859,13 @@ strong {
     @include u-minh(4);
     @include u-padding-y(.5);
   }
+
   .output-utility {
     @include grid-col(4);
     @include u-font(sans, 2xs);
     @include u-padding-right(2);
   }
+
   .output-css {
     @include grid-col(6);
     @include u-font(mono, 2xs);
@@ -1869,6 +1876,7 @@ strong {
       @include u-font(mono, 2xs);
     }
   }
+
   .output-variable {
     @include grid-col(2);
     @include u-font(mono, 2xs);
@@ -1888,6 +1896,7 @@ strong {
 
 .output-rule {
   @include u-display(block);
+
   & + .output-rule {
     @include u-margin-top(.5);
   }
@@ -2014,6 +2023,7 @@ li.display-inline-block {
   @include add-font-smoothing;
   @include u-bg($blue-50v);
   @include u-text(white, no-underline);
+
   &:hover {
     @include u-bg($gray-80);
     @include u-text(white);
@@ -2089,9 +2099,9 @@ li.display-inline-block {
 }
 
 .utility-example-container-condensed {
-    @extend .utility-example-container;
-    @include u-margin-bottom(1);
-    @include u-padding-bottom(1);
+  @extend .utility-example-container;
+  @include u-margin-bottom(1);
+  @include u-padding-bottom(1);
 }
 
 
@@ -2144,10 +2154,6 @@ body {
   @include u-bg($gray-1);
 }
 
-.foo {
-  @include u-bg(white);
-}
-
 .markdown-test {
   code,
   pre {
@@ -2185,6 +2191,8 @@ a code {
 }
 
 .docs-grid-example {
+  @include u-font('mono', 4);
+
   .grid-row {
     margin-top: 8px;
   }

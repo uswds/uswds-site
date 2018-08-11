@@ -1,5 +1,5 @@
 ---
-permalink: style/type-scale/
+permalink: /style/type-scale/
 layout: styleguide
 title: Type scale
 category: Style

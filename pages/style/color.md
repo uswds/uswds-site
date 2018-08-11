@@ -1,5 +1,5 @@
 ---
-permalink: style/color/
+permalink: /style/color/
 layout: styleguide
 title: Color
 category: Style

@@ -1461,9 +1461,11 @@ code {
 }
 
 .page-product-roadmap {
-  .usa-tag {
-    display: inline-block;
-    position: relative;
+  .main-content {
+    .usa-tag {
+      display: inline-block;
+      position: relative;
+    }
   }
 }
 

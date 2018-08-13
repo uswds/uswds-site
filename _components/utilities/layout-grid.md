@@ -409,8 +409,8 @@ Breaking it down, here's how it works:
   </div>
 </div>
 
-<div markdown="1">
 <h2 id="sass-mixins">Sass mixins</h2>
+<div markdown="1">
 When generating your CSS from USWDS source files, you have the option of customizing many system defaults by modifying project theme variables. USWDS also provides grid mixins for adding grid functionality to custom semantic component CSS.
 
 ### Variables

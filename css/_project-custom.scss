@@ -1,116 +1,44 @@
+/*
+========================================
+CUSTOM PROJECT SASS
+----------------------------------------
+Custom project SASS goes here.
+
+Contents
+1. Generic
+2. Site layout
+3. Custom page styles
+----------------------------------------
+*/
+
+
+// =====================================
+// 1. Generic
+// -------------------------------------
+
+html {
+  font-size: $theme-root-font-size;
+}
+
+body {
+  @include u-bg($gray-1);
+}
+
 html,
 body {
   height: auto;
 }
 
-// USWDS Overrides
-
-.page-home {
-  .usa-graphic_list .usa-media_block-img {
-    max-width: 7rem;
-    margin-right: 2rem;
-  }
-
-  .usa-hero {
-    background-image: url('#{$site-image-path}/home/wds-home-new-2x.png');
-    padding-bottom: 7.2rem;
-    padding-top: 3.2rem;
-
-    @include media($large-screen) {
-      padding-bottom: 10.6rem;
-    }
-  }
-
-  .usa-hero-callout .usa-button {
-    margin-top: 2em;
-  }
-
-  .usa-hero-callout {
-    border-radius: 0.3rem;
-    max-width: 46rem;
-    padding: 3.2rem;
-
-    & > :first-child,
-    & > :last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  .usa-hero-callout-alt {
-    font-size: 2.7rem;
-  }
-
-  .usa-graphic_list {
-    .usa-media_block-body {
-      & > *:first-child {
-        font-size: $media-block-header-font-size;
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-
-      & > p {
-        margin: 0.5rem 0;
-        font-size: $media-block-body-font-size;
-      }
-    }
-
-    .usa-media_block-img {
-      margin-bottom: 1rem;
-
-      @include media($large-screen) {
-        float: none;
-      }
-    }
-  }
-
-  .usa-section-dark p {
-    margin-top: 0.8rem;
-  }
-
-  // Override for 4x1 media grid when it collapses to 2x2
-  @media screen and (max-width: $large-screen) and (min-width: $medium-screen) {
-    .usa-graphic_list .usa-graphic_list-row .usa-media_block:nth-child(-n+2) {
-      margin-bottom: 6rem;
-    }
-  }
+.usa-center {
+  text-align: center;
 }
 
-// Fancy Horizontal Rule //
+// =====================================
+// 2. Site layout
+// -------------------------------------
 
-.homepage-rule {
-  border: 0;
-  height: 1.5rem;
-  width: 100%;
-  position: relative;
+// Header --------------------------- //
 
-  &.center-diamond {
-    background: none;
-    text-align: center;
-
-    &:before {
-      content: "\00a0";
-      display: inline-block;
-      background: $color-primary;
-      height: 1px;
-      position: relative;
-      top: 0.6rem;
-      width: 100%;
-    }
-
-    &:after {
-      content: "◆";
-      display: inline-block;
-      position: relative;
-      top: -2.9rem;
-      font-size: 1.8rem;
-      padding: 0 1rem;
-      color: $color-secondary;
-      background: $color-white;
-    }
-  }
-}
-
-// Header -------------- //
 .sticky {
   position: -webkit-sticky;
   position: sticky;
@@ -285,6 +213,10 @@ body {
     z-index: $z-nav-secondary;
   }
 
+  &.sticky {
+    @include u-z(200);
+  }
+
   ul {
     @include unstyled-list;
 
@@ -343,6 +275,11 @@ body {
     &[aria-hidden="false"] {
       display: block;
     }
+  }
+
+  .usa-sidenav-list,
+  .usa-sidenav-list > li {
+    border-color: $gray-10;
   }
 }
 
@@ -619,14 +556,6 @@ footer.site {
 
 .preview-dropdown {
   padding-top: 0;
-}
-
-// Search bar grid --------- //
-
-.preview-search-bar {
-  .usa-grid {
-    padding: 0;
-  }
 }
 
 // Custom styles to illustrate invisible grid for web design standards
@@ -1082,10 +1011,12 @@ h6.usa-heading-alt {
   font-family: $font-monospace;
 }
 
+// Code samples ---------------------- //
+
 code,
 pre {
+  @include u-font-family(mono);
   background-color: $color-gray-lightest;
-  font-family: $font-monospace;
   font-size: 1.3rem;
 }
 
@@ -1116,11 +1047,25 @@ code {
   max-width: $lead-max-width;
 }
 
-// Code snippet boxes
+a {
+  code {
+    @include u-border(1px, $blue-50v);
+    @include u-bg(transparent);
+
+    &:hover {
+      @include u-bg($blue-50v);
+      @include u-text(white);
+    }
+  }
+}
+
+// Code snippet boxes ----------------- //
 
 .usa-code-sample {
   pre,
   code {
+    @include u-font-size(mono, 2xs);
+    @include u-line-height(mono, 4);
     background: none;
     font-size: 1.2rem;
     margin-bottom: 0;
@@ -1141,7 +1086,6 @@ code {
   color: $color-base;
 
   // Custom code sample colors
-
   .nt,
   .token.property,
   .token.tag,
@@ -1380,9 +1324,118 @@ code {
   }
 }
 
-// Page styles
-.page-ui-components {
+// =====================================
+// 3. Custom page styles
+// -------------------------------------
 
+// Homepage styles ------------------ //
+
+.page-home {
+  .usa-graphic_list .usa-media_block-img {
+    max-width: 7rem;
+    margin-right: 2rem;
+  }
+
+  .usa-hero {
+    background-image: url('#{$site-image-path}/home/wds-home-new-2x.png');
+    padding-bottom: 7.2rem;
+    padding-top: 3.2rem;
+
+    @include media($large-screen) {
+      padding-bottom: 10.6rem;
+    }
+  }
+
+  .usa-hero-callout .usa-button {
+    margin-top: 2em;
+  }
+
+  .usa-hero-callout {
+    border-radius: 0.3rem;
+    max-width: 46rem;
+    padding: 3.2rem;
+
+    & > :first-child,
+    & > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .usa-hero-callout-alt {
+    font-size: 2.7rem;
+  }
+
+  .usa-graphic_list {
+    .usa-media_block-body {
+      & > *:first-child {
+        font-size: $media-block-header-font-size;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      & > p {
+        margin: 0.5rem 0;
+        font-size: $media-block-body-font-size;
+      }
+    }
+
+    .usa-media_block-img {
+      margin-bottom: 1rem;
+
+      @include media($large-screen) {
+        float: none;
+      }
+    }
+  }
+
+  .usa-section-dark p {
+    margin-top: 0.8rem;
+  }
+
+  // Override for 4x1 media grid when it collapses to 2x2
+  @media screen and (max-width: $large-screen) and (min-width: $medium-screen) {
+    .usa-graphic_list .usa-graphic_list-row .usa-media_block:nth-child(-n+2) {
+      margin-bottom: 6rem;
+    }
+  }
+}
+
+// Fancy Horizontal Rule
+
+.homepage-rule {
+  border: 0;
+  height: 1.5rem;
+  width: 100%;
+  position: relative;
+
+  &.center-diamond {
+    background: none;
+    text-align: center;
+
+    &:before {
+      content: "\00a0";
+      display: inline-block;
+      background: $color-primary;
+      height: 1px;
+      position: relative;
+      top: 0.6rem;
+      width: 100%;
+    }
+
+    &:after {
+      content: "◆";
+      display: inline-block;
+      position: relative;
+      top: -2.9rem;
+      font-size: 1.8rem;
+      padding: 0 1rem;
+      color: $color-secondary;
+      background: $color-white;
+    }
+  }
+}
+
+.page-ui-components {
   .usa-font-lead {
     &:first-of-type {
       margin-top: 3.2rem;
@@ -1469,8 +1522,34 @@ code {
   }
 }
 
-.usa-center {
-  text-align: center;
+
+// Layout grid page
+.docs-grid-example {
+  @include u-font('mono', 4);
+
+  .grid-row {
+    margin-top: 8px;
+  }
+
+  [class*="grid-col"] {
+    background-color: $primary-lighter;
+    text-align: center;
+  }
+
+  .grid-row:not([class*="grid-gap"]) {
+    [class*="grid-col"] {
+      border: 1px solid;
+      padding: 16px;
+    }
+  }
+
+  [class*="grid-gap"] {
+    [class*="grid-col"] > * {
+      background-color: $color-white;
+      border: 1px solid;
+      padding: 16px;
+    }
+  }
 }
 
 // Example images on headers and page templates pages -------------- //
@@ -1592,7 +1671,7 @@ iframe {
   margin-bottom: 3rem;
 }
 
-article {
+.post-excerpt {
   margin-bottom: 5rem;
 
   .post-title {
@@ -1626,22 +1705,7 @@ article {
   } // .post-excerpt
 } // article
 
-// Utilities CSS
-
-/*
-========================================
-CUSTOM PROJECT SASS
-----------------------------------------
-Custom project SASS goes here.
-
-i.e.
-@include padding-right(2px);
-----------------------------------------
-*/
-
-html {
-  font-size: $theme-root-font-size;
-}
+// Utilities CSS --------------------- //
 
 .is-inverse {
   @include add-font-smoothing;
@@ -1662,7 +1726,7 @@ html {
   @include u-outline(.5, $indigo-warm-50v);
 }
 
-.usa-accordion-content{
+.usa-accordion-content {
   &[aria-hidden=true] {
     @include u-display('none');
   }
@@ -1706,7 +1770,7 @@ strong {
 .token {
   $font: 'mono';
   @include u-border(1px);
-  @include u-color($red-warm-50v)
+  @include u-color($red-warm-50v);
   @include u-font($font, 1);
   @include u-line-height($font, 1);
   @include u-padding-x('05');
@@ -1729,7 +1793,6 @@ strong {
   @include u-margin-y(.5);
   @include u-padding-y(.5);
 }
-
 
 .output-list {
   @include grid-row;
@@ -1790,6 +1853,16 @@ strong {
   }
 }
 
+.output-true {
+  @include add-font-smoothing;
+  @include u-bg($blue-50v);
+  @include u-display(inline-block);
+  @include u-padding-y(0);
+  @include u-padding-x(.5);
+  @include u-radius(sm);
+  @include u-text(white);
+}
+
 // Ensure that inline lists do not have a bottom margin
 li.display-inline-block {
   margin-bottom: 0;
@@ -1838,7 +1911,7 @@ li.display-inline-block {
 }
 
 .utilities-section-helper {
-  @include u-font(sans, 1)
+  @include u-font(sans, 1);
   @include u-margin-left(2px);
   @include u-margin-y(0);
   @include u-text(right, normal, $gray-60);
@@ -1878,7 +1951,7 @@ li.display-inline-block {
 }
 
 .utility-scope {
-  @include add-list-reset
+  @include add-list-reset;
   @include u-display(inline);
   @include u-margin(0);
   @include u-text(right);
@@ -1992,7 +2065,6 @@ li.display-inline-block {
   @include u-padding-bottom(1);
 }
 
-
 .utilities-output-heading {
   @include u-border-bottom(1px, $gray-10);
   @include u-font(sans, 1);
@@ -2027,91 +2099,4 @@ li.display-inline-block {
   & + .utility-text {
     @include u-margin-top(1);
   }
-}
-
-/* * * * * * ========================== */
-
-.sidenav {
-  .usa-sidenav-list,
-  .usa-sidenav-list > li {
-    border-color: $gray-10;
-  }
-}
-
-body {
-  @include u-bg($gray-1);
-}
-
-.markdown-test {
-  code,
-  pre {
-    background-color: $base-lightest;
-  }
-
-  pre {
-    border: 1px solid $base-lighter;
-  }
-}
-
-code,
-pre {
-  @include u-font-family(mono);
-}
-
-.usa-code-sample pre,
-.usa-code-sample code {
-  @include u-font-size(mono, 2xs);
-  @include u-line-height(mono, 4);
-}
-
-.site-nav-secondary.sticky {
-  @include u-z(200);
-}
-
-a code {
-  @include u-border(1px, $blue-50v);
-  @include u-bg(transparent);
-
-  &:hover {
-    @include u-bg($blue-50v);
-    @include u-text(white);
-  }
-}
-
-.docs-grid-example {
-  @include u-font('mono', 4);
-
-  .grid-row {
-    margin-top: 8px;
-  }
-
-  [class*="grid-col"] {
-    background-color: $primary-lighter;
-    text-align: center;
-  }
-
-  .grid-row:not([class*="grid-gap"]) {
-    [class*="grid-col"] {
-      border: 1px solid;
-      padding: 16px;
-    }
-  }
-
-  [class*="grid-gap"] {
-    [class*="grid-col"] > * {
-      background-color: $color-white;
-      border: 1px solid;
-      padding: 16px;
-    }
-  }
-}
-
-.output-true {
-  @include add-font-smoothing;
-  @include u-bg($blue-50v);
-  @include u-display(inline-block);
-  @include u-padding-y(0);
-  @include u-padding-x(.5);
-  @include u-radius(sm);
-  @include u-text(white);
 }

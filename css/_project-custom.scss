@@ -1762,40 +1762,6 @@ html {
   @include add-list-reset;
 }
 
-// .usa-body-content, .usa-prose {
-//   h1,
-//   h2,
-//   h3 {
-//     @include txt-normalize-headings;
-//   }
-//   h2 { @extend .txt-h2; }
-//   h3 {
-//     @extend .txt-h3;
-//     & + p {
-//       @include u-margin-top(1);
-//     }
-//   }
-//   p { @extend .txt-p; }
-//   ul { @extend .txt-ul; }
-//   li { @extend .txt-li; }
-//   p a {
-//     @extend .txt-a;
-//     &.usa-lede-link {
-//       @include u-text($gray-90);
-//       @include u-underline($gray-20);
-//       &:hover{
-//         @include u-underline($gray-80);
-//       }
-//     }
-//   }
-//   code { @extend .txt-code; }
-//   aside {
-//     code {
-//       @include u-bg($gray-warm-10);
-//     }
-//   }
-// }
-
 /* * * * * * ========================= */
 
 .docs-text {

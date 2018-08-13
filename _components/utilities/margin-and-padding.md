@@ -400,7 +400,7 @@ utilities:
           {% else %}
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
             <div class="position-relative square-9 border-1px margin-0 bg-white">
-              <div class="bg-primary-lighter pin-bottom height-{{ item.token }}"></div>
+              <div class="bg-primary-lighter pin-bottom pin-x height-{{ item.token }}"></div>
             </div>
           {% endif %}
             <div class="display-flex flex-column flex-align-start">
@@ -421,7 +421,7 @@ utilities:
           {% else %}
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
             <div class="position-relative square-9 border-1px margin-0 bg-white">
-              <div class="bg-primary-lighter pin-top height-{{ item.token }}"></div>
+              <div class="bg-primary-lighter pin-top pin-x height-{{ item.token }}"></div>
             </div>
           {% endif %}
             <div class="display-flex flex-column flex-align-start">
@@ -442,7 +442,7 @@ utilities:
           {% else %}
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
             <div class="position-relative square-9 border-1px margin-0 bg-white">
-              <div class="bg-primary-lighter pin-left width-{{ item.token }}"></div>
+              <div class="bg-primary-lighter pin-left pin-y width-{{ item.token }}"></div>
             </div>
           {% endif %}
             <div class="display-flex flex-column flex-align-start">
@@ -463,7 +463,7 @@ utilities:
           {% else %}
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
             <div class="position-relative square-9 border-1px margin-0 bg-white">
-              <div class="bg-primary-lighter pin-right width-{{ item.token }}"></div>
+              <div class="bg-primary-lighter pin-right pin-y width-{{ item.token }}"></div>
             </div>
           {% endif %}
             <div class="display-flex flex-column flex-align-start">
@@ -483,8 +483,8 @@ utilities:
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
           {% endif %}
             <div class="position-relative height-9 width-card border-1px bg-white margin-0 display-inline-block padding-top-0">
-              <div class="bg-primary-lighter pin-right width-{{ item.token }}"></div>
-              <div class="bg-primary-lighter pin-left width-{{ item.token }}"></div>
+              <div class="bg-primary-lighter pin-right pin-y width-{{ item.token }}"></div>
+              <div class="bg-primary-lighter pin-left pin-y width-{{ item.token }}"></div>
             </div>
             <div class="display-flex flex-column flex-align-start">
               <p class="utility-class margin-top-2">.padding-x-{{ item.token }}</p>
@@ -503,11 +503,11 @@ utilities:
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
           {% endif %}
             <div class="position-relative height-card width-9 border-1px bg-white margin-0 display-inline-block padding-top-0">
-              <div class="bg-primary-lighter pin-top height-{{ item.token }}"></div>
-              <div class="bg-primary-lighter pin-bottom height-{{ item.token }}"></div>
+              <div class="bg-primary-lighter pin-top pin-x height-{{ item.token }}"></div>
+              <div class="bg-primary-lighter pin-bottom pin-x height-{{ item.token }}"></div>
             </div>
             <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">.padding-x-{{ item.token }}</p>
+              <p class="utility-class margin-top-2">.padding-y-{{ item.token }}</p>
               <p class="utility-value">{{ item.value }}</p>
             </div>
           </div>

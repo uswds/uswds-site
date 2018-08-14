@@ -11,7 +11,7 @@ USWDS UTILITIES SETTINGS
 ----------------------------------------
 */
 
-$utilities-use-important:     false;
+$utilities-use-important:     true;
 $output-all-utilities:        true;
 
 /*
@@ -61,7 +61,7 @@ $align-items-settings: (
   responsive:   false,
   active:       false,
   focus:        false,
-  hover:        false,
+  hover:        true,
   visited:      false
 );
 
@@ -112,7 +112,7 @@ $border-style-settings: (
 
 $border-width-settings: (
   output:       true,
-  responsive:   false,
+  responsive:   true,
   active:       false,
   focus:        false,
   hover:        false,

@@ -1,20 +1,17 @@
-/*
-========================================
-CUSTOM PROJECT SASS
-----------------------------------------
-Custom project SASS goes here.
-
-Contents
-1. Generic
-2. Site layout
-3. Custom page styles
-----------------------------------------
-*/
-
-
-// =====================================
+// ========================================
+// CUSTOM PROJECT SASS
+// ----------------------------------------
+// Custom project SASS goes here.
+//
+// Contents
 // 1. Generic
-// -------------------------------------
+// 2. Site layout
+// 3. Custom page styles
+// ----------------------------------------
+
+// ========================================
+// 1. Generic
+// ----------------------------------------
 
 html {
   font-size: $theme-root-font-size;
@@ -33,19 +30,18 @@ body {
   text-align: center;
 }
 
-// =====================================
+// ========================================
 // 2. Site layout
-// -------------------------------------
+// ----------------------------------------
 
-// Header --------------------------- //
+// Header ------------------------------ //
 
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     content: '';
     display: table;
   }
@@ -317,16 +313,6 @@ body {
     > h1 {
       margin-top: 0;
     }
-
-    .components-library-link {
-      float: right;
-      padding-top: 20px;
-
-      a {
-        @include external-link(external-link, external-link-hover);
-        text-decoration: none;
-      }
-    }
   }
 
   > h2 {
@@ -340,8 +326,20 @@ body {
   }
 }
 
+.components-library-link {
+  float: right;
+  padding-top: 20px;
+
+  a {
+    @include external-link(external-link, external-link-hover);
+    text-decoration: none;
+  }
+}
+
 .product-roadmap-list {
-  max-width: 100% !important;
+  &.product-roadmap-list {
+    max-width: 100%;
+  }
 }
 
 // Label links
@@ -402,19 +400,21 @@ h2 + .tooltip {
   margin-top: 0;
 }
 
-a.cta {
-  img {
-    height: 1.5rem;
-    margin-right: 0.4rem;
-    position: relative;
-    top: 2px;
-    vertical-align: baseline;
+a {
+  &.cta {
+    img {
+      height: 1.5rem;
+      margin-right: 0.4rem;
+      position: relative;
+      top: 2px;
+      vertical-align: baseline;
+    }
   }
 }
 
 // Footer --------------- //
 
-footer.site {
+.site-footer {
   clear: both;
 
   h3 {
@@ -466,7 +466,8 @@ footer.site {
 .footer-contact-links {
   margin-top: 3rem;
 
-  h4, a {
+  h4,
+  a {
     font-size: 1.3rem;
   }
 
@@ -960,11 +961,11 @@ h3 + .button_wrapper {
   padding-bottom: .8rem;
 }
 
-// scss-lint:disable QualifyingElement
-h6.usa-heading-alt {
-  margin-top: 4rem;
+h6 {
+  &.usa-heading-alt {
+    margin-top: 4rem;
+  }
 }
-// scss-lint:enable QualifyingElement
 
 .usa-typography-example-font {
   padding-top: 1rem;
@@ -981,15 +982,15 @@ h6.usa-heading-alt {
 
   // Add padding to first few  CSS details so they line up with different size
   // headings on their left side.
-  & .usa-width-one-half:nth-child(2) {
+  .usa-width-one-half:nth-child(2) {
     padding-top: 1.2rem;
   }
 
-  & .usa-width-one-half:nth-child(4) {
+  .usa-width-one-half:nth-child(4) {
     padding-top: 0.9rem;
   }
 
-  & .usa-width-one-half:nth-child(6) {
+  .usa-width-one-half:nth-child(6) {
     padding-top: 0.6rem;
   }
 }
@@ -1324,16 +1325,36 @@ a {
   }
 }
 
-// =====================================
+// ========================================
 // 3. Custom page styles
-// -------------------------------------
+// ----------------------------------------
 
-// Homepage styles ------------------ //
+// Homepage styles --------------------- //
 
 .page-home {
-  .usa-graphic_list .usa-media_block-img {
-    max-width: 7rem;
-    margin-right: 2rem;
+  .usa-graphic_list {
+    .usa-media_block-body {
+      > *:first-child {
+        font-size: $media-block-header-font-size;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      > p {
+        margin: 0.5rem 0;
+        font-size: $media-block-body-font-size;
+      }
+    }
+
+    .usa-media_block-img {
+      margin-bottom: 1rem;
+      margin-right: 2rem;
+      max-width: 7rem;
+
+      @include media($large-screen) {
+        float: none;
+      }
+    }
   }
 
   .usa-hero {
@@ -1346,46 +1367,23 @@ a {
     }
   }
 
-  .usa-hero-callout .usa-button {
-    margin-top: 2em;
-  }
-
   .usa-hero-callout {
     border-radius: 0.3rem;
     max-width: 46rem;
     padding: 3.2rem;
 
-    & > :first-child,
-    & > :last-child {
+    > :first-child,
+    > :last-child {
       margin-bottom: 0;
+    }
+
+    .usa-button {
+      margin-top: 2em;
     }
   }
 
   .usa-hero-callout-alt {
     font-size: 2.7rem;
-  }
-
-  .usa-graphic_list {
-    .usa-media_block-body {
-      & > *:first-child {
-        font-size: $media-block-header-font-size;
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-
-      & > p {
-        margin: 0.5rem 0;
-        font-size: $media-block-body-font-size;
-      }
-    }
-
-    .usa-media_block-img {
-      margin-bottom: 1rem;
-
-      @include media($large-screen) {
-        float: none;
-      }
-    }
   }
 
   .usa-section-dark p {
@@ -1412,8 +1410,8 @@ a {
     background: none;
     text-align: center;
 
-    &:before {
-      content: "\00a0";
+    &::before {
+      content: '\00a0';
       display: inline-block;
       background: $color-primary;
       height: 1px;
@@ -1422,8 +1420,8 @@ a {
       width: 100%;
     }
 
-    &:after {
-      content: "◆";
+    &::after {
+      content: '◆';
       display: inline-block;
       position: relative;
       top: -2.9rem;
@@ -1557,7 +1555,7 @@ a {
 .page-page-templates {
   .preview {
     img {
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
   }
 }
@@ -1621,7 +1619,7 @@ a {
 // Demo fixed footer
 .demo-footer {
   background-color: $color-gray-dark;
-  box-shadow: 0 -2px 4px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.5);
   bottom: 0;
   position: fixed;
   width: 100%;
@@ -1740,12 +1738,13 @@ iframe {
   > .usa-banner-button-text {
     @include u-display('none');
   }
+
   > .usa-banner-button-text--open {
     @include u-display('inline');
   }
 }
 
-/* * * * * * ========================= */
+// * * * * * * ========================= *
 
 .docs-text {
   @include u-font('sans', 6);
@@ -1783,7 +1782,7 @@ strong {
   $font: 'sans';
   @include u-font($font, 2);
   @include u-text('semibold', 'uppercase', 'ls-2');
-  @include at-media('desktop-lg'){
+  @include at-media('desktop-lg') {
     @include u-font-size($font, 3);
   }
 }
@@ -1848,7 +1847,7 @@ strong {
 .output-rule {
   @include u-display(block);
 
-  & + .output-rule {
+  + .output-rule {
     @include u-margin-top(.5);
   }
 }
@@ -1864,12 +1863,14 @@ strong {
 }
 
 // Ensure that inline lists do not have a bottom margin
-li.display-inline-block {
-  margin-bottom: 0;
+li {
+  &.display-inline-block {
+    margin-bottom: 0;
+  }
 }
 
-/* * * * * * ========================== */
-/* Utility docs                         */
+// * * * * * * ==========================
+// Utility docs
 
 .utilities-property-title {
   @include u-font(sans, micro);
@@ -1976,31 +1977,33 @@ li.display-inline-block {
 }
 
 .utility-scope-button-active {
-    @include u-display(inline);
-}
+  @include u-display(inline);
 
-.utility-scope-button-active a {
-  @extend .utility-scope-button;
-  @include add-font-smoothing;
-  @include u-bg($blue-50v);
-  @include u-text(white, no-underline);
+  a {
+    @extend .utility-scope-button;
+    @include add-font-smoothing;
+    @include u-bg($blue-50v);
+    @include u-text(white, no-underline);
 
-  &:hover {
-    @include u-bg($gray-80);
-    @include u-text(white);
+    &:hover {
+      @include u-bg($gray-80);
+      @include u-text(white);
+    }
   }
 }
 
-.utilities-section-title code {
-  @include u-bg(white);
-  @include u-border(1px);
-  @include u-display(inline-block);
-  @include u-font(mono, 6);
-  @include u-margin-right(2px);
-  @include u-padding-x(0);
-  @include u-padding-y(2px);
-  @include u-radius(md);
-  @include u-text(light);
+.utilities-section-title {
+  code {
+    @include u-bg(white);
+    @include u-border(1px);
+    @include u-display(inline-block);
+    @include u-font(mono, 6);
+    @include u-margin-right(2px);
+    @include u-padding-x(0);
+    @include u-padding-y(2px);
+    @include u-radius(md);
+    @include u-text(light);
+  }
 }
 
 .utility-examples {
@@ -2096,7 +2099,7 @@ li.display-inline-block {
   @include u-line-height(sans, 5);
   @include u-measure(none);
 
-  & + .utility-text {
+  + .utility-text {
     @include u-margin-top(1);
   }
 }

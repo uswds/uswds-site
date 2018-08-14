@@ -400,15 +400,13 @@ h2 + .tooltip {
   margin-top: 0;
 }
 
-a {
-  &.cta {
-    img {
-      height: 1.5rem;
-      margin-right: 0.4rem;
-      position: relative;
-      top: 2px;
-      vertical-align: baseline;
-    }
+.cta {
+  img {
+    height: 1.5rem;
+    margin-right: 0.4rem;
+    position: relative;
+    top: 2px;
+    vertical-align: baseline;
   }
 }
 
@@ -1042,14 +1040,8 @@ code {
     letter-spacing: -0.2em;
     content: '\00a0';
   }
-}
 
-.highlight {
-  max-width: $lead-max-width;
-}
-
-a {
-  code {
+  a & {
     @include u-border(1px, $blue-50v);
     @include u-bg(transparent);
 
@@ -1058,6 +1050,10 @@ a {
       @include u-text(white);
     }
   }
+}
+
+.highlight {
+  max-width: $lead-max-width;
 }
 
 // Code snippet boxes ----------------- //

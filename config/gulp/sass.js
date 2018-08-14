@@ -14,7 +14,10 @@ gulp.task('build-sass', function () {
     }))
     .on('error', function(error) {
       sass.logError.bind(this)(error);
-      process.exit(1);
+
+      if (process.env.NODE_ENV !== 'development') {
+        process.exit(1);
+      }
     })
     .pipe(strip())
     .pipe(

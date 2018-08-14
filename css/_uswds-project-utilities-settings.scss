@@ -560,7 +560,9 @@ $align-items-manual-values: ();
 
 // .background-color
 
-$background-color-palettes: ();
+$background-color-palettes: (
+  'palette-colors-uswds-all'
+);
 $background-color-manual-values: ();
 
 // .border

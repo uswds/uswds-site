@@ -1050,7 +1050,7 @@ code {
 
     &:hover {
       @include u-bg($blue-50v);
-      @include u-text(white);
+      @include u-text('white');
     }
   }
 }
@@ -1838,7 +1838,7 @@ strong {
 }
 
 .output-token {
-  @include u-bg(white);
+  @include u-bg('white');
   @include u-border(1px, $gray-10);
   @include u-font('mono', 4);
   @include u-padding-x(0.5);
@@ -1862,7 +1862,7 @@ strong {
   @include u-padding-y(0);
   @include u-padding-x(.5);
   @include u-radius(sm);
-  @include u-text(white);
+  @include u-text('white');
 }
 
 // Ensure that inline lists do not have a bottom margin
@@ -1883,14 +1883,14 @@ li {
 }
 
 .utilities-properties {
-  @include u-bg(white);
+  @include u-bg('white');
   @include u-border(1px, $gray-10);
   @include u-padding(2);
   @include u-radius(md);
 }
 
 .utilities-property {
-  @include u-bg(white);
+  @include u-bg('white');
   @include u-display(inline-block);
   @include u-margin-top(0);
   @include u-padding(.5);
@@ -1914,7 +1914,7 @@ li {
   @include u-text(normal);
 
   code {
-    @include u-bg(white);
+    @include u-bg('white');
     @include u-border(1px);
     @include u-display(inline-block);
     @include u-font(mono, 6);
@@ -1934,7 +1934,7 @@ li {
 }
 
 .utility {
-  @include u-bg(white);
+  @include u-bg('white');
   @include u-border(1px, $gray-10);
   @include u-margin-y(2);
   @include u-padding-bottom(1);
@@ -1986,7 +1986,7 @@ li {
 
 .utility-scope-button-disabled {
   @extend .utility-scope-button;
-  @include u-bg(white);
+  @include u-bg('white');
   @include u-border(1px, $gray-20);
   @include u-text($gray-20, strike);
 }
@@ -1998,11 +1998,11 @@ li {
     @extend .utility-scope-button;
     @include add-font-smoothing;
     @include u-bg($blue-50v);
-    @include u-text(white, no-underline);
+    @include u-text('white', no-underline);
 
     &:hover {
       @include u-bg($gray-80);
-      @include u-text(white);
+      @include u-text('white');
     }
   }
 }
@@ -2043,7 +2043,7 @@ li {
 
 .utility-value-color {
   @extend .utility-class;
-  @include u-bg(white);
+  @include u-bg('white');
   @include u-border(1px, $gray-10);
   @include u-margin-top(0);
   @include u-text(light, no-wrap, lowercase);

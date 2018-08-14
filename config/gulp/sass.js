@@ -7,12 +7,15 @@ var strip     = require('gulp-strip-css-comments');
 var task      = 'sass';
 
 gulp.task('build-sass', function () {
-
   return gulp.src('./css/**/*.scss')
     .pipe(sass({
       includePaths: [ './node_modules' ],
       outputStyle: 'compressed',
-    }).on('error', sass.logError))
+    }))
+    .on('error', function(error) {
+      sass.logError.bind(this)(error);
+      process.exit(1);
+    })
     .pipe(strip())
     .pipe(
       combineMq({

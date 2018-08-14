@@ -20,6 +20,8 @@ subnav:
   href: '#date-input'
 - text: Validation
   href: '#validation'
+- text: Range slider
+  href: '#range'
 ---
 
 {% include accessibility.html %}

@@ -3,14 +3,13 @@ layout: default
 category: What’s new
 ---
 
-<aside class="sidenav sticky" style="top: 5rem; margin-bottom: 525px;">
-  {% assign sidenav = site.data.nav[layout.category] %}
+<aside class="sidenav sticky">
+  {% assign sidenav = site.data.nav[page.category] %}
+  {% if sidenav %}
   <ul class="usa-sidenav-list">
-    {%
-      include nav/list.html
-      links=sidenav
-    %}
+    {% include nav/list.html links=sidenav %}
   </ul>
+  {% endif %}
 </aside>
 
 <main id="main-content" class="main-content">

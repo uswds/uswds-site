@@ -146,7 +146,10 @@ body {
   li > button {
     @include button-unstyled;
     font-weight: $font-normal;
-    padding: 1.4rem 1.5rem 1rem 1.8rem;
+    padding-bottom: 1rem;
+    padding-left: 1.8rem;
+    padding-right: 1.5rem;
+    padding-top: 1.4rem;
 
     &:hover {
       background-color: $color-gray-lightest;
@@ -1330,6 +1333,7 @@ code {
 .page-home {
   .usa-graphic_list {
     .usa-media_block-body {
+      // scss-lint:disable SelectorDepth
       > *:first-child {
         font-size: $media-block-header-font-size;
         margin-top: 0;
@@ -1388,6 +1392,7 @@ code {
 
   // Override for 4x1 media grid when it collapses to 2x2
   @media screen and (max-width: $large-screen) and (min-width: $medium-screen) {
+    // scss-lint:disable SelectorDepth
     .usa-graphic_list .usa-graphic_list-row .usa-media_block:nth-child(-n+2) {
       margin-bottom: 6rem;
     }
@@ -1499,7 +1504,7 @@ code {
 // Override max-width to ensure code blocks are wide enough
 .page-for-developers {
   ol {
-    max-width: 100% !important;
+    max-width: 100% !important; // scss-lint:disable ImportantRule
 
     p {
       max-width: $text-max-width;
@@ -1537,6 +1542,7 @@ code {
     }
   }
 
+  // scss-lint:disable SelectorDepth
   [class*="grid-gap"] {
     [class*="grid-col"] > * {
       background-color: $color-white;
@@ -1558,6 +1564,7 @@ code {
 
 // Custom tooltip styles -------------- //
 
+// TODO: Do we nee this? Not using tooltips
 // Tooltip container
 .tooltip {
   display: inline-block;
@@ -1594,7 +1601,7 @@ code {
     &::after {
       border-width: 5px;
       border-style: solid;
-      border-color: $color-base transparent transparent transparent;
+      border-color: $color-base transparent transparent transparent; // scss-lint:disable Shorthand
       content: ' ';
       left: 10%;
       margin-left: -12px;

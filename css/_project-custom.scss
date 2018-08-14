@@ -321,12 +321,6 @@ body {
   > h2 {
     color: $color-primary-darker;
   }
-
-  section {
-    > .tooltip {
-      margin-top: 56px;
-    }
-  }
 }
 
 .components-library-link {
@@ -376,18 +370,6 @@ body {
 .label-done {
   @extend %label-maturity;
   background-color: $color-green-lightest;
-}
-
-h1 + .tooltip {
-  a {
-    margin-top: 1.7rem;
-  }
-}
-
-h2 + .tooltip {
-  a {
-    margin-top: 1.3rem;
-  }
 }
 
 .heading-margin-alt {
@@ -1558,55 +1540,6 @@ code {
   .preview {
     img {
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); // scss-lint:disable ColorVariable
-    }
-  }
-}
-
-// Custom tooltip styles -------------- //
-
-// TODO: Do we nee this? Not using tooltips
-// Tooltip container
-.tooltip {
-  display: inline-block;
-  position: absolute;
-
-  // Show the tooltip text when you mouse over the tooltip container
-  &:hover {
-    .tooltip-text {
-      opacity: 1;
-    }
-  }
-}
-
-.tooltip-text {
-  display: none;
-
-  @include media($medium-screen) {
-    @include margin(0 null 0 20px);
-    background-color: $color-gray-dark;
-    border-radius: $border-radius;
-    bottom: 100%;
-    color: $color-white;
-    display: block;
-    font-size: 14px;
-    left: 50%;
-    padding: 7px 10px;
-    width: 267px;
-    opacity: 0;
-    position: absolute; // Position the tooltip text
-    transition: all 0.1s ease-in-out;
-    transition-delay: 0.1s;
-    z-index: 1;
-
-    &::after {
-      border-width: 5px;
-      border-style: solid;
-      border-color: $color-base transparent transparent transparent; // scss-lint:disable Shorthand
-      content: ' ';
-      left: 10%;
-      margin-left: -12px;
-      position: absolute;
-      top: 100%; // At the bottom of the tooltip
     }
   }
 }

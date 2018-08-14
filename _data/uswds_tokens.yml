@@ -25,7 +25,7 @@ special:
   spacing_05:
     - token: '05'
       value: 4px
-      scss: spacing(.5)
+      scss: units(0.5)
 
 spacing:
   positive:
@@ -37,77 +37,77 @@ spacing:
     small:
       - token: '05'
         value: 4px
-        scss: spacing(.5)
+        scss: 'units(0.5)'
       - token: 1
         value: 8px
-        scss: spacing(1)
+        scss: units(1)
       - token: 105
         value: 12px
-        scss: spacing(1.5)
+        scss: units(1.5)
       - token: 2
         value: 16px
-        scss: spacing(2)
+        scss: units(2)
       - token: 205
         value: 20px
-        scss: spacing(2.5)
+        scss: units(2.5)
       - token: 3
         value: 24px
-        scss: spacing(3)
+        scss: units(3)
     medium:
       - token: 4
         value: 32px
-        scss: spacing(4)
+        scss: units(4)
       - token: 5
         value: 40px
-        scss: spacing(5)
+        scss: units(5)
       - token: 6
         value: 48px
-        scss: spacing(6)
+        scss: units(6)
       - token: 7
         value: 56px
-        scss: spacing(7)
+        scss: units(7)
       - token: 8
         value: 64px
-        scss: spacing(8)
+        scss: units(8)
       - token: 9
         value: 72px
-        scss: spacing(9)
+        scss: units(9)
       - token: 10
         value: 80px
-        scss: spacing(10)
+        scss: units(10)
       - token: 15
         value: 120px
-        scss: spacing(15)
+        scss: units(15)
     large:
       - token: card
         value: 160px
-        scss: spacing(card)
+        scss: units(card)
       - token: card-lg
         value: 240px
-        scss: spacing(card-lg)
+        scss: units(card-lg)
       - token: mobile
         value: 320px
-        scss: spacing(mobile)
+        scss: units(mobile)
     larger:
       - token: mobile-lg
         value: 480px
-        scss: spacing(mobile-lg)
+        scss: units(mobile-lg)
       - token: tablet
         value: 640px
-        scss: spacing(tablet)
+        scss: units(tablet)
       - token: tablet-lg
         value: 880px
-        scss: spacing(tablet-lg)
+        scss: units(tablet-lg)
     largest:
       - token: desktop
         value: 1024px
-        scss: spacing(desktop)
+        scss: units(desktop)
       - token: desktop-lg
         value: 1200px
-        scss: spacing(desktop-lg)
+        scss: units(desktop-lg)
       - token: widescreen
         value: 1400px
-        scss: spacing(widescreen)
+        scss: units(widescreen)
   negative:
     smaller:
       - token: neg-1px
@@ -117,22 +117,22 @@ spacing:
     small:
       - token: neg-05
         value: -4px
-        scss: spacing(-.5)
+        scss: units(-0.5)
       - token: neg-1
         value: -8px
-        scss: spacing(-1)
+        scss: units(-1)
       - token: neg-105
         value: -12px
-        scss: spacing(-1.5)
+        scss: units(-1.5)
       - token: neg-2
         value: -16px
-        scss: spacing(-2)
+        scss: units(-2)
       - token: neg-205
         value: -20px
-        scss: spacing(-2.5)
+        scss: units(-2.5)
       - token: neg-3
         value: -24px
-        scss: spacing(-3)
+        scss: units(-3)
 
 colors:
   required:

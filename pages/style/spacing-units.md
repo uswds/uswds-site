@@ -318,7 +318,9 @@ You'll access USWDS spacing units using a few different techniques, depending on
 #### Settings
 
 {:.margin-top-05}
-Use the spacing unit token when assigning a spacing unit to a settings variable. Tokens `'05'`, `'105'`, and `'205'` and any `neg-` token may also also use its unquoted numeric equivalent: `0.5`, `1.5`, `2.5`, `-0.5`, `-1`, etc. _You cannot use variables, functions, or mixins in theme settings._
+Use the spacing unit token when assigning a spacing unit to a settings variable.
+
+Tokens `'05'`, `'105'`, and `'205'` and any `neg-` token may also also use its unquoted numeric equivalent: `0.5`, `1.5`, `2.5`, `-0.5`, `-1`, etc. _You cannot use variables, functions, or mixins in theme settings._
 
 {:.maxw-mobile-lg}
 ```
@@ -361,7 +363,9 @@ padding-top: $units-05;
 #### Functions
 
 {:.margin-top-05}
-Use the `units()` function with spacing unit tokens. Tokens `'05'`, `'105'`, and `'205'` and any `neg-` token may also also use its unquoted numeric equivalent: `0.5`, `1.5`, `2.5`, `-0.5`, `-1`, etc.
+Use the `units()` function with spacing unit tokens.
+
+Tokens `'05'`, `'105'`, and `'205'` and any `neg-` token may also also use its unquoted numeric equivalent: `0.5`, `1.5`, `2.5`, `-0.5`, `-1`, etc.
 
 {:.maxw-mobile-lg}
 ```
@@ -376,7 +380,9 @@ max-width: units('tablet');
 #### Utility mixins
 
 {:.margin-top-05}
-Utility mixins accept spacing unit tokens. Tokens `'05'`, `'105'`, and `'205'` and any `neg-` token may also also use their numeric equivalents: `0.5`, `1.5`, `2.5`, `-0.5`, `-1`, etc.
+Utility mixins accept spacing unit tokens.
+
+Tokens `'05'`, `'105'`, and `'205'` and any `neg-` token may also also use their numeric equivalents: `0.5`, `1.5`, `2.5`, `-0.5`, `-1`, etc.
 
 {:.maxw-mobile-lg}
 ```

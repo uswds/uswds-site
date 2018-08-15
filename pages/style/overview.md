@@ -58,7 +58,7 @@ The complete global spacing units palette is available to any USWDS project by d
   <div class="grid-col-2 font-sans-2xs">Half grid unit</div>
   <div class="grid-col-3">.5</div>
   <div class="grid-col-3">$units-05</div>
-  <div class="grid-col-4">units(.5)<br/><span class="display-inline-block padding-top-05">units('05')</span></div>
+  <div class="grid-col-4">units(0.5)<br/><span class="display-inline-block padding-top-05">units('05')</span></div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
   <div class="grid-col-2 font-sans-2xs">2 grid units</div>

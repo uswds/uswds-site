@@ -30,7 +30,7 @@ high-level future requests and ideas. You can also <a href="https://github.com/u
         {{ task.title }}
       </a>
       {% if task.status %}
-        <span class="usa-label label-{{ task.status | slugify }}">
+        <span class="usa-tag label-{{ task.status | slugify }}">
           {{ task.status }}
         </span>
       {% endif %}

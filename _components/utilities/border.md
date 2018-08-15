@@ -635,19 +635,19 @@ utilities:
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.radius-sm</dt>
-    <dd class="output-css"><span>border-radius: <span class="output-token">spacing($theme-border-radius-sm)</span></span></dd>
+    <dd class="output-css"><span>border-radius: <span class="output-token">units($theme-border-radius-sm)</span></span></dd>
     <dd class="output-variable">2px</dd>
 
     <dt class="output-utility">.radius-md</dt>
-    <dd class="output-css"><span>border-radius: <span class="output-token">spacing($theme-border-radius-md)</span></span></dd>
+    <dd class="output-css"><span>border-radius: <span class="output-token">units($theme-border-radius-md)</span></span></dd>
     <dd class="output-variable">4px</dd>
 
     <dt class="output-utility">.radius-lg</dt>
-    <dd class="output-css"><span>border-radius: <span class="output-token">spacing($theme-border-radius-lg)</span></span></dd>
+    <dd class="output-css"><span>border-radius: <span class="output-token">units($theme-border-radius-lg)</span></span></dd>
     <dd class="output-variable">8px</dd>
 
     <dt class="output-utility">.radius-pill</dt>
-    <dd class="output-css"><span>border-radius: <span class="output-token">spacing(pill)</span></span></dd>
+    <dd class="output-css"><span>border-radius: <span class="output-token">units(pill)</span></span></dd>
     <dd class="output-variable">9999em</dd>
 
     <dt class="output-utility">.radius-top-0</dt>
@@ -655,19 +655,19 @@ utilities:
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.radius-top-sm</dt>
-    <dd class="output-css"><span>border-top-radius: <span class="output-token">spacing($theme-border-radius-sm)</span></span></dd>
+    <dd class="output-css"><span>border-top-radius: <span class="output-token">units($theme-border-radius-sm)</span></span></dd>
     <dd class="output-variable">2px</dd>
 
     <dt class="output-utility">.radius-top-md</dt>
-    <dd class="output-css"><span>border-top-radius: <span class="output-token">spacing($theme-border-radius-md)</span></span></dd>
+    <dd class="output-css"><span>border-top-radius: <span class="output-token">units($theme-border-radius-md)</span></span></dd>
     <dd class="output-variable">4px</dd>
 
     <dt class="output-utility">.radius-top-lg</dt>
-    <dd class="output-css"><span>border-top-radius: <span class="output-token">spacing($theme-border-radius-lg)</span></span></dd>
+    <dd class="output-css"><span>border-top-radius: <span class="output-token">units($theme-border-radius-lg)</span></span></dd>
     <dd class="output-variable">8px</dd>
 
     <dt class="output-utility">.radius-top-pill</dt>
-    <dd class="output-css"><span>border-top-radius: <span class="output-token">spacing(pill)</span></span></dd>
+    <dd class="output-css"><span>border-top-radius: <span class="output-token">units(pill)</span></span></dd>
     <dd class="output-variable">9999em</dd>
 
     <dt class="output-utility">.radius-bottom-0</dt>
@@ -675,19 +675,19 @@ utilities:
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.radius-bottom-sm</dt>
-    <dd class="output-css"><span>border-bottom-radius: <span class="output-token">spacing($theme-border-radius-sm)</span></span></dd>
+    <dd class="output-css"><span>border-bottom-radius: <span class="output-token">units($theme-border-radius-sm)</span></span></dd>
     <dd class="output-variable">2px</dd>
 
     <dt class="output-utility">.radius-bottom-md</dt>
-    <dd class="output-css"><span>border-bottom-radius: <span class="output-token">spacing($theme-border-radius-md)</span></span></dd>
+    <dd class="output-css"><span>border-bottom-radius: <span class="output-token">units($theme-border-radius-md)</span></span></dd>
     <dd class="output-variable">4px</dd>
 
     <dt class="output-utility">.radius-bottom-lg</dt>
-    <dd class="output-css"><span>border-bottom-radius: <span class="output-token">spacing($theme-border-radius-lg)</span></span></dd>
+    <dd class="output-css"><span>border-bottom-radius: <span class="output-token">units($theme-border-radius-lg)</span></span></dd>
     <dd class="output-variable">8px</dd>
 
     <dt class="output-utility">.radius-bottom-pill</dt>
-    <dd class="output-css"><span>border-bottom-radius: <span class="output-token">spacing(pill)</span></span></dd>
+    <dd class="output-css"><span>border-bottom-radius: <span class="output-token">units(pill)</span></span></dd>
     <dd class="output-variable">9999em</dd>
 
     <dt class="output-utility">.radius-left-0</dt>
@@ -695,19 +695,19 @@ utilities:
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.radius-left-sm</dt>
-    <dd class="output-css"><span>border-left-radius: <span class="output-token">spacing($theme-border-radius-sm)</span></span></dd>
+    <dd class="output-css"><span>border-left-radius: <span class="output-token">units($theme-border-radius-sm)</span></span></dd>
     <dd class="output-variable">2px</dd>
 
     <dt class="output-utility">.radius-left-md</dt>
-    <dd class="output-css"><span>border-left-radius: <span class="output-token">spacing($theme-border-radius-md)</span></span></dd>
+    <dd class="output-css"><span>border-left-radius: <span class="output-token">units($theme-border-radius-md)</span></span></dd>
     <dd class="output-variable">4px</dd>
 
     <dt class="output-utility">.radius-left-lg</dt>
-    <dd class="output-css"><span>border-left-radius: <span class="output-token">spacing($theme-border-radius-lg)</span></span></dd>
+    <dd class="output-css"><span>border-left-radius: <span class="output-token">units($theme-border-radius-lg)</span></span></dd>
     <dd class="output-variable">8px</dd>
 
     <dt class="output-utility">.radius-left-pill</dt>
-    <dd class="output-css"><span>border-left-radius: <span class="output-token">spacing(pill)</span></span></dd>
+    <dd class="output-css"><span>border-left-radius: <span class="output-token">units(pill)</span></span></dd>
     <dd class="output-variable">9999em</dd>
 
     <dt class="output-utility">.radius-right-0</dt>
@@ -715,19 +715,19 @@ utilities:
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.radius-right-sm</dt>
-    <dd class="output-css"><span>border-right-radius: <span class="output-token">spacing($theme-border-radius-sm)</span></span></dd>
+    <dd class="output-css"><span>border-right-radius: <span class="output-token">units($theme-border-radius-sm)</span></span></dd>
     <dd class="output-variable">2px</dd>
 
     <dt class="output-utility">.radius-right-md</dt>
-    <dd class="output-css"><span>border-right-radius: <span class="output-token">spacing($theme-border-radius-md)</span></span></dd>
+    <dd class="output-css"><span>border-right-radius: <span class="output-token">units($theme-border-radius-md)</span></span></dd>
     <dd class="output-variable">4px</dd>
 
     <dt class="output-utility">.radius-right-lg</dt>
-    <dd class="output-css"><span>border-right-radius: <span class="output-token">spacing($theme-border-radius-lg)</span></span></dd>
+    <dd class="output-css"><span>border-right-radius: <span class="output-token">units($theme-border-radius-lg)</span></span></dd>
     <dd class="output-variable">8px</dd>
 
     <dt class="output-utility">.radius-right-pill</dt>
-    <dd class="output-css"><span>border-right-radius: <span class="output-token">spacing(pill)</span></span></dd>
+    <dd class="output-css"><span>border-right-radius: <span class="output-token">units(pill)</span></span></dd>
     <dd class="output-variable">9999em</dd>
 
   </dl>

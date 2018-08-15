@@ -36,7 +36,7 @@ Values above `2px` are output as the eqivaluent value in rem. For instance, a va
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
   <div class="grid-col-2 text-300 font-sans-3">—</div>
   <div class="grid-col-1 text-300 font-sans-3">1px</div>
-  <div class="grid-col-2 text-300 font-mono-3"><code class="text-300">'1px'</code></div>
+  <div class="grid-col-2 text-300 font-mono-3"><code class="text-300">1px</code></div>
   <div class="grid-col-fill">
     <span class="display-block width-full height-1px bg-blue-60v"></span>
   </div>

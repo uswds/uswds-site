@@ -351,13 +351,14 @@ _The `font` utilities set both the font size and family._
 #### Variables
 
 {:.margin-top-05}
-Add the unquoted spacing unit token as a suffix to the `$units-` variable.
+The `$scale` variable requires both an unquoted size token and an unquoted family token in the form `$scale-[family]-[size]`. Type-based family tokens include `sans`, `serif`, and `mono`. Role-based family tokens include `heading`, `body`, `code`, and `alt`.
+
+_The `$scale` variable is only for font-size._
 
 {:.maxw-mobile-lg}
 ```
-margin-left: $units-neg-1;
-max-width: $units-tablet;
-padding-top: $units-05;
+font-size: $scale-sans-sm;
+font-size: $scale-code-micro;
 ```
 
 {:.margin-bottom-0.margin-top-4}
@@ -366,15 +367,14 @@ padding-top: $units-05;
 {:.margin-top-05}
 Use the `units()` function with spacing unit tokens.
 
-Tokens `'05'`, `'105'`, and `'205'` and any `neg-` token may also use their unquoted numeric equivalent: `0.5`, `1.5`, `2.5`, `-0.5`, `-1`, etc.
+Use the `scale()` function to set the font size. The function requires both a quoted size token and an quoted family token in the form `scale(family, size)`. Type-based family tokens include `sans`, `serif`, and `mono`. Role-based family tokens include `heading`, `body`, `code`, and `alt`.
+
+_The `scale()` function is only for font-size._
 
 {:.maxw-mobile-lg}
 ```
-margin-left: units('neg-1');
-margin-left: units(-1);
-padding-top: units('05');
-padding-top: units(0.5);
-max-width: units('tablet');
+font-size: scale('mono', 'sm');
+font-size: scale('body', 8);
 ```
 
 {:.margin-bottom-0.margin-top-4}

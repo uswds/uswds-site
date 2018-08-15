@@ -39,7 +39,7 @@ The nine-step theme typescale should be sufficient for most project needs. First
 </div>
 
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 font-sans-3"><code>3xs</code></div>
+  <div class="grid-col-2 text-300 font-sans-3"><code>'3xs'</code></div>
   <div class="grid-col-2 text-300 font-sans-3">1</div>
   <div class="grid-col-1 text-300 font-sans-3">12px</div>
   <div class="grid-col-fill">
@@ -49,7 +49,7 @@ The nine-step theme typescale should be sufficient for most project needs. First
 </div>
 
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 font-sans-3"><code>2xs</code></div>
+  <div class="grid-col-2 text-300 font-sans-3"><code>'2xs'</code></div>
   <div class="grid-col-2 text-300 font-sans-3">3</div>
   <div class="grid-col-1 text-300 font-sans-3">14px</div>
   <div class="grid-col-fill">
@@ -59,7 +59,7 @@ The nine-step theme typescale should be sufficient for most project needs. First
 </div>
 
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 font-sans-3"><code>xs</code></div>
+  <div class="grid-col-2 text-300 font-sans-3"><code>'xs'</code></div>
   <div class="grid-col-2 text-300 font-sans-3">5</div>
   <div class="grid-col-1 text-300 font-sans-3">16px</div>
   <div class="grid-col-fill">
@@ -69,7 +69,7 @@ The nine-step theme typescale should be sufficient for most project needs. First
 </div>
 
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 font-sans-3"><code>sm</code></div>
+  <div class="grid-col-2 text-300 font-sans-3"><code>'sm'</code></div>
   <div class="grid-col-2 text-300 font-sans-3">6</div>
   <div class="grid-col-1 text-300 font-sans-3">17px</div>
   <div class="grid-col-fill">
@@ -79,7 +79,7 @@ The nine-step theme typescale should be sufficient for most project needs. First
 </div>
 
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 font-sans-3"><code>md</code></div>
+  <div class="grid-col-2 text-300 font-sans-3"><code>'md'</code></div>
   <div class="grid-col-2 text-300 font-sans-3">7</div>
   <div class="grid-col-1 text-300 font-sans-3">18px</div>
   <div class="grid-col-fill">
@@ -89,7 +89,7 @@ The nine-step theme typescale should be sufficient for most project needs. First
 </div>
 
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 font-sans-3"><code>lg</code></div>
+  <div class="grid-col-2 text-300 font-sans-3"><code>'lg'</code></div>
   <div class="grid-col-2 text-300 font-sans-3">10</div>
   <div class="grid-col-1 text-300 font-sans-3">24px</div>
   <div class="grid-col-fill">
@@ -99,7 +99,7 @@ The nine-step theme typescale should be sufficient for most project needs. First
 </div>
 
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 font-sans-3"><code>xl</code></div>
+  <div class="grid-col-2 text-300 font-sans-3"><code>'xl'</code></div>
   <div class="grid-col-2 text-300 font-sans-3">12</div>
   <div class="grid-col-1 text-300 font-sans-3">32px</div>
   <div class="grid-col-fill">
@@ -109,7 +109,7 @@ The nine-step theme typescale should be sufficient for most project needs. First
 </div>
 
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 font-sans-3"><code>2xl</code></div>
+  <div class="grid-col-2 text-300 font-sans-3"><code>'2xl'</code></div>
   <div class="grid-col-2 text-300 font-sans-3">14</div>
   <div class="grid-col-1 text-300 font-sans-3">40px</div>
   <div class="grid-col-fill">
@@ -119,7 +119,7 @@ The nine-step theme typescale should be sufficient for most project needs. First
 </div>
 
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 font-sans-3"><code>3xl</code></div>
+  <div class="grid-col-2 text-300 font-sans-3"><code>'3xl'</code></div>
   <div class="grid-col-2 text-300 font-sans-3">16</div>
   <div class="grid-col-1 text-300 font-sans-3">56px</div>
   <div class="grid-col-fill">
@@ -137,7 +137,7 @@ The nine-step theme typescale should be sufficient for most project needs. First
   <div class="grid-col-fill text-700 font-sans-1">example</div>
 </div>
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 font-sans-3"><code>micro</code></div>
+  <div class="grid-col-2 text-300 font-sans-3"><code>'micro'</code></div>
   <div class="grid-col-1 text-300 font-sans-3">10px</div>
   <div class="grid-col-fill">
     <span class="font-sans-micro">Tallahassee</span>
@@ -328,20 +328,23 @@ $theme-type-scale-large:         10;
 $theme-type-scale-larger:        12;
 $theme-type-scale-largest:       14;
 $theme-type-scale-mega:          16;
+$theme-h1-font-size:             '2xl';
 ```
 
 {:.margin-bottom-0.margin-top-4}
 #### Utilities
 
 {:.margin-top-05}
-Use the unquoted spacing unit token as a suffix in utilities.
+The `font` utility requires both an unquoted size token and an unquoted family token in the form `font-[family]-[size]`. Type-based family tokens include `sans`, `serif`, and `mono`. Role-based family tokens include `heading`, `body`, `code`, and `alt`.
+
+_The `font` utilities set both the font size and family._
 
 {:.maxw-mobile-lg}
 ```
-.margin-x-neg-1
-.maxw-tablet
-.padding-top-2px
-.padding-y-05
+.font-sans-3sx
+.font-body-md
+.font-sans-micro
+.font-mono-sm
 ```
 
 {:.margin-bottom-0.margin-top-4}

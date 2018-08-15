@@ -34,33 +34,33 @@ display:
   - class: .bottom-2px
     value: 2px
   - class: .bottom-05
-    value: spacing(0.5)
+    value: units(0.5)
   - class: .bottom-1
-    value: spacing(1)
+    value: units(1)
   - class: .bottom-105
-    value: spacing(1.5)
+    value: units(1.5)
   - class: .bottom-2
-    value: spacing(2)
+    value: units(2)
   - class: .bottom-205
-    value: spacing(2.5)
+    value: units(2.5)
   - class: .bottom-3
-    value: spacing(3)
+    value: units(3)
   - class: .bottom-neg-1px
     value: -1px
   - class: .bottom-neg-2px
     value: -2px
   - class: .bottom-neg-05
-    value: spacing(-0.5)
+    value: units(-0.5)
   - class: .bottom-neg-1
-    value: spacing(-1)
+    value: units(-1)
   - class: .bottom-neg-105
-    value: spacing(-1.5)
+    value: units(-1.5)
   - class: .bottom-neg-2
-    value: spacing(-2)
+    value: units(-2)
   - class: .bottom-neg-205
-    value: spacing(-2.5)
+    value: units(-2.5)
   - class: .bottom-neg-3
-    value: spacing(-3)
+    value: units(-3)
   - class: .bottom-auto
     value: auto
   - class: .bottom-full
@@ -72,33 +72,33 @@ display:
   - class: .left-2px
     value: 2px
   - class: .left-05
-    value: spacing(0.5)
+    value: units(0.5)
   - class: .left-1
-    value: spacing(1)
+    value: units(1)
   - class: .left-105
-    value: spacing(1.5)
+    value: units(1.5)
   - class: .left-2
-    value: spacing(2)
+    value: units(2)
   - class: .left-205
-    value: spacing(2.5)
+    value: units(2.5)
   - class: .left-3
-    value: spacing(3)
+    value: units(3)
   - class: .left-neg-1px
     value: -1px
   - class: .left-2px
     value: -2px
   - class: .left-neg-05
-    value: spacing(-0.5)
+    value: units(-0.5)
   - class: .left-neg-1
-    value: spacing(-1)
+    value: units(-1)
   - class: .left-neg-105
-    value: spacing(-1.5)
+    value: units(-1.5)
   - class: .left-neg-2
-    value: spacing(-2)
+    value: units(-2)
   - class: .left-neg-205
-    value: spacing(-2.5)
+    value: units(-2.5)
   - class: .left-neg-3
-    value: spacing(-3)
+    value: units(-3)
   - class: .left-auto
     value: auto
   - class: .left-full
@@ -110,33 +110,33 @@ display:
   - class: .right-2px
     value: 2px
   - class: .right-05
-    value: spacing(0.5)
+    value: units(0.5)
   - class: .right-1
-    value: spacing(1)
+    value: units(1)
   - class: .right-105
-    value: spacing(1.5)
+    value: units(1.5)
   - class: .right-2
-    value: spacing(2)
+    value: units(2)
   - class: .right-205
-    value: spacing(2.5)
+    value: units(2.5)
   - class: .right-3
-    value: spacing(3)
+    value: units(3)
   - class: .right-neg-1px
     value: -1px
   - class: .right-neg-2px
     value: -2px
   - class: .right-neg-05
-    value: spacing(-0.5)
+    value: units(-0.5)
   - class: .right-neg-1
-    value: spacing(-1)
+    value: units(-1)
   - class: .right-neg-105
-    value: spacing(-1.5)
+    value: units(-1.5)
   - class: .right-neg-2
-    value: spacing(-2)
+    value: units(-2)
   - class: .right-neg-205
-    value: spacing(-2.5)
+    value: units(-2.5)
   - class: .right-neg-3
-    value: spacing(-3)
+    value: units(-3)
   - class: .right-auto
     value: auto
   - class: .right-full
@@ -148,33 +148,33 @@ display:
   - class: .top-2px
     value: 2px
   - class: .top-05
-    value: spacing(0.5)
+    value: units(0.5)
   - class: .top-1
-    value: spacing(1)
+    value: units(1)
   - class: .top-105
-    value: spacing(1.5)
+    value: units(1.5)
   - class: .top-2
-    value: spacing(2)
+    value: units(2)
   - class: .top-205
-    value: spacing(2.5)
+    value: units(2.5)
   - class: .top-3
-    value: spacing(3)
+    value: units(3)
   - class: .top-neg-1px
     value: -1px
   - class: .top-neg-2px
     value: -2px
   - class: .top-neg-05
-    value: spacing(-0.5)
+    value: units(-0.5)
   - class: .top-neg-1
-    value: spacing(-1)
+    value: units(-1)
   - class: .top-neg-105
-    value: spacing(-1.5)
+    value: units(-1.5)
   - class: .top-neg-2
-    value: spacing(-2)
+    value: units(-2)
   - class: .top-neg-205
-    value: spacing(-2.5)
+    value: units(-2.5)
   - class: .top-neg-3
-    value: spacing(-3)
+    value: units(-3)
   - class: .top-auto
     value: auto
   - class: .top-full

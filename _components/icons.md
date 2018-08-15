@@ -3,7 +3,7 @@ permalink: /components/icons/
 layout: styleguide
 type: component
 title: Icons
-category: UI components
+category: Components
 lead: Icons communicate meaning in a graphical user interface.
 ---
 

@@ -400,7 +400,7 @@ utilities:
           {% else %}
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
             <div class="position-relative square-9 border-1px margin-0 bg-white">
-              <div class="bg-primary-lighter pin-bottom height-{{ item.token }}"></div>
+              <div class="bg-primary-lighter pin-bottom pin-x height-{{ item.token }}"></div>
             </div>
           {% endif %}
             <div class="display-flex flex-column flex-align-start">
@@ -421,7 +421,7 @@ utilities:
           {% else %}
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
             <div class="position-relative square-9 border-1px margin-0 bg-white">
-              <div class="bg-primary-lighter pin-top height-{{ item.token }}"></div>
+              <div class="bg-primary-lighter pin-top pin-x height-{{ item.token }}"></div>
             </div>
           {% endif %}
             <div class="display-flex flex-column flex-align-start">
@@ -442,7 +442,7 @@ utilities:
           {% else %}
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
             <div class="position-relative square-9 border-1px margin-0 bg-white">
-              <div class="bg-primary-lighter pin-left width-{{ item.token }}"></div>
+              <div class="bg-primary-lighter pin-left pin-y width-{{ item.token }}"></div>
             </div>
           {% endif %}
             <div class="display-flex flex-column flex-align-start">
@@ -463,7 +463,7 @@ utilities:
           {% else %}
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
             <div class="position-relative square-9 border-1px margin-0 bg-white">
-              <div class="bg-primary-lighter pin-right width-{{ item.token }}"></div>
+              <div class="bg-primary-lighter pin-right pin-y width-{{ item.token }}"></div>
             </div>
           {% endif %}
             <div class="display-flex flex-column flex-align-start">
@@ -483,8 +483,8 @@ utilities:
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
           {% endif %}
             <div class="position-relative height-9 width-card border-1px bg-white margin-0 display-inline-block padding-top-0">
-              <div class="bg-primary-lighter pin-right width-{{ item.token }}"></div>
-              <div class="bg-primary-lighter pin-left width-{{ item.token }}"></div>
+              <div class="bg-primary-lighter pin-right pin-y width-{{ item.token }}"></div>
+              <div class="bg-primary-lighter pin-left pin-y width-{{ item.token }}"></div>
             </div>
             <div class="display-flex flex-column flex-align-start">
               <p class="utility-class margin-top-2">.padding-x-{{ item.token }}</p>
@@ -503,11 +503,11 @@ utilities:
           <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
           {% endif %}
             <div class="position-relative height-card width-9 border-1px bg-white margin-0 display-inline-block padding-top-0">
-              <div class="bg-primary-lighter pin-top height-{{ item.token }}"></div>
-              <div class="bg-primary-lighter pin-bottom height-{{ item.token }}"></div>
+              <div class="bg-primary-lighter pin-top pin-x height-{{ item.token }}"></div>
+              <div class="bg-primary-lighter pin-bottom pin-x height-{{ item.token }}"></div>
             </div>
             <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">.padding-x-{{ item.token }}</p>
+              <p class="utility-class margin-top-2">.padding-y-{{ item.token }}</p>
               <p class="utility-value">{{ item.value }}</p>
             </div>
           </div>
@@ -545,109 +545,109 @@ utilities:
 
     <dt class="output-utility">.margin-05</dt>
     <dd class="output-css">
-      <span class="output-rule">margin: <span class="output-token">spacing(.5)</span></span>
+      <span class="output-rule">margin: <span class="output-token">units(0.5)</span></span>
     </dd>
     <dd class="output-variable">4px</dd>
 
     <dt class="output-utility">.margin-1</dt>
     <dd class="output-css">
-      <span class="output-rule">margin: <span class="output-token">spacing(1)</span></span>
+      <span class="output-rule">margin: <span class="output-token">units(1)</span></span>
     </dd>
     <dd class="output-variable">8px</dd>
 
     <dt class="output-utility">.margin-105</dt>
     <dd class="output-css">
-      <span class="output-rule">margin: <span class="output-token">spacing(1.5)</span></span>
+      <span class="output-rule">margin: <span class="output-token">units(1.5)</span></span>
     </dd>
     <dd class="output-variable">12px</dd>
 
     <dt class="output-utility">.margin-2</dt>
     <dd class="output-css">
-      <span class="output-rule">margin: <span class="output-token">spacing(2)</span></span>
+      <span class="output-rule">margin: <span class="output-token">units(2)</span></span>
     </dd>
     <dd class="output-variable">16px</dd>
 
     <dt class="output-utility">.margin-205</dt>
     <dd class="output-css">
-      <span class="output-rule">margin: <span class="output-token">spacing(2.5)</span></span>
+      <span class="output-rule">margin: <span class="output-token">units(2.5)</span></span>
     </dd>
     <dd class="output-variable">20px</dd>
 
     <dt class="output-utility">.margin-3</dt>
     <dd class="output-css">
-      <span class="output-rule">margin: <span class="output-token">spacing(3)</span></span>
+      <span class="output-rule">margin: <span class="output-token">units(3)</span></span>
     </dd>
     <dd class="output-variable">24px</dd>
 
     <dt class="output-utility">.margin-4</dt>
     <dd class="output-css">
-      <span class="output-rule">margin: <span class="output-token">spacing(4)</span></span>
+      <span class="output-rule">margin: <span class="output-token">units(4)</span></span>
     </dd>
     <dd class="output-variable">32px</dd>
 
     <dt class="output-utility">.margin-5</dt>
     <dd class="output-css">
-      <span class="output-rule">margin: <span class="output-token">spacing(5)</span></span>
+      <span class="output-rule">margin: <span class="output-token">units(5)</span></span>
     </dd>
     <dd class="output-variable">40px</dd>
 
     <dt class="output-utility">.margin-6</dt>
     <dd class="output-css">
-      <span class="output-rule">margin: <span class="output-token">spacing(6)</span></span>
+      <span class="output-rule">margin: <span class="output-token">units(6)</span></span>
     </dd>
     <dd class="output-variable">48px</dd>
 
     <dt class="output-utility">.margin-7</dt>
     <dd class="output-css">
-      <span class="output-rule">margin: <span class="output-token">spacing(7)</span></span>
+      <span class="output-rule">margin: <span class="output-token">units(7)</span></span>
     </dd>
     <dd class="output-variable">56px</dd>
 
     <dt class="output-utility">.margin-8</dt>
     <dd class="output-css">
-      <span class="output-rule">margin: <span class="output-token">spacing(8)</span></span>
+      <span class="output-rule">margin: <span class="output-token">units(8)</span></span>
     </dd>
     <dd class="output-variable">64px</dd>
 
     <dt class="output-utility">.margin-9</dt>
     <dd class="output-css">
-      <span class="output-rule">margin: <span class="output-token">spacing(9)</span></span>
+      <span class="output-rule">margin: <span class="output-token">units(9)</span></span>
     </dd>
     <dd class="output-variable">72px</dd>
 
     <dt class="output-utility">.margin-bottom-neg-3</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-bottom: <span class="output-token">spacing(-3)</span></span>
+      <span class="output-rule">margin-bottom: <span class="output-token">units(-3)</span></span>
     </dd>
     <dd class="output-variable">-24px</dd>
 
     <dt class="output-utility">.margin-bottom-neg-205</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-bottom: <span class="output-token">spacing(-2)</span></span>
+      <span class="output-rule">margin-bottom: <span class="output-token">units(-2)</span></span>
     </dd>
     <dd class="output-variable">-20px</dd>
 
     <dt class="output-utility">.margin-bottom-neg-2</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-bottom: <span class="output-token">spacing(-2)</span></span>
+      <span class="output-rule">margin-bottom: <span class="output-token">units(-2)</span></span>
     </dd>
     <dd class="output-variable">-16px</dd>
 
     <dt class="output-utility">.margin-bottom-neg-105</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-bottom: <span class="output-token">spacing(-1.5)</span></span>
+      <span class="output-rule">margin-bottom: <span class="output-token">units(-1.5)</span></span>
     </dd>
     <dd class="output-variable">-12px</dd>
 
     <dt class="output-utility">.margin-bottom-neg-1</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-bottom: <span class="output-token">spacing(-1)</span></span>
+      <span class="output-rule">margin-bottom: <span class="output-token">units(-1)</span></span>
     </dd>
     <dd class="output-variable">-8px</dd>
 
     <dt class="output-utility">.margin-bottom-neg-05</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-bottom: <span class="output-token">spacing(-.5)</span></span>
+      <span class="output-rule">margin-bottom: <span class="output-token">units(-0.5)</span></span>
     </dd>
     <dd class="output-variable">-4px</dd>
 
@@ -683,109 +683,109 @@ utilities:
 
     <dt class="output-utility">.margin-bottom-05</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-bottom: <span class="output-token">spacing(.5)</span></span>
+      <span class="output-rule">margin-bottom: <span class="output-token">units(0.5)</span></span>
     </dd>
     <dd class="output-variable">4px</dd>
 
     <dt class="output-utility">.margin-bottom-1</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-bottom: <span class="output-token">spacing(1)</span></span>
+      <span class="output-rule">margin-bottom: <span class="output-token">units(1)</span></span>
     </dd>
     <dd class="output-variable">8px</dd>
 
     <dt class="output-utility">.margin-bottom-105</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-bottom: <span class="output-token">spacing(1.5)</span></span>
+      <span class="output-rule">margin-bottom: <span class="output-token">units(1.5)</span></span>
     </dd>
     <dd class="output-variable">12px</dd>
 
     <dt class="output-utility">.margin-bottom-2</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-bottom: <span class="output-token">spacing(2)</span></span>
+      <span class="output-rule">margin-bottom: <span class="output-token">units(2)</span></span>
     </dd>
     <dd class="output-variable">16px</dd>
 
     <dt class="output-utility">.margin-bottom-205</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-bottom: <span class="output-token">spacing(2.5)</span></span>
+      <span class="output-rule">margin-bottom: <span class="output-token">units(2.5)</span></span>
     </dd>
     <dd class="output-variable">20px</dd>
 
     <dt class="output-utility">.margin-bottom-3</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-bottom: <span class="output-token">spacing(3)</span></span>
+      <span class="output-rule">margin-bottom: <span class="output-token">units(3)</span></span>
     </dd>
     <dd class="output-variable">24px</dd>
 
     <dt class="output-utility">.margin-bottom-4</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-bottom: <span class="output-token">spacing(4)</span></span>
+      <span class="output-rule">margin-bottom: <span class="output-token">units(4)</span></span>
     </dd>
     <dd class="output-variable">32px</dd>
 
     <dt class="output-utility">.margin-bottom-5</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-bottom: <span class="output-token">spacing(5)</span></span>
+      <span class="output-rule">margin-bottom: <span class="output-token">units(5)</span></span>
     </dd>
     <dd class="output-variable">40px</dd>
 
     <dt class="output-utility">.margin-bottom-6</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-bottom: <span class="output-token">spacing(6)</span></span>
+      <span class="output-rule">margin-bottom: <span class="output-token">units(6)</span></span>
     </dd>
     <dd class="output-variable">48px</dd>
 
     <dt class="output-utility">.margin-bottom-7</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-bottom: <span class="output-token">spacing(7)</span></span>
+      <span class="output-rule">margin-bottom: <span class="output-token">units(7)</span></span>
     </dd>
     <dd class="output-variable">56px</dd>
 
     <dt class="output-utility">.margin-bottom-8</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-bottom: <span class="output-token">spacing(8)</span></span>
+      <span class="output-rule">margin-bottom: <span class="output-token">units(8)</span></span>
     </dd>
     <dd class="output-variable">64px</dd>
 
     <dt class="output-utility">.margin-bottom-9</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-bottom: <span class="output-token">spacing(9)</span></span>
+      <span class="output-rule">margin-bottom: <span class="output-token">units(9)</span></span>
     </dd>
     <dd class="output-variable">72px</dd>
 
     <dt class="output-utility">.margin-top-neg-3</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-top: <span class="output-token">spacing(-3)</span></span>
+      <span class="output-rule">margin-top: <span class="output-token">units(-3)</span></span>
     </dd>
     <dd class="output-variable">-24px</dd>
 
     <dt class="output-utility">.margin-top-neg-205</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-top: <span class="output-token">spacing(-2)</span></span>
+      <span class="output-rule">margin-top: <span class="output-token">units(-2)</span></span>
     </dd>
     <dd class="output-variable">-20px</dd>
 
     <dt class="output-utility">.margin-top-neg-2</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-top: <span class="output-token">spacing(-2)</span></span>
+      <span class="output-rule">margin-top: <span class="output-token">units(-2)</span></span>
     </dd>
     <dd class="output-variable">-16px</dd>
 
     <dt class="output-utility">.margin-top-neg-105</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-top: <span class="output-token">spacing(-1.5)</span></span>
+      <span class="output-rule">margin-top: <span class="output-token">units(-1.5)</span></span>
     </dd>
     <dd class="output-variable">-12px</dd>
 
     <dt class="output-utility">.margin-top-neg-1</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-top: <span class="output-token">spacing(-1)</span></span>
+      <span class="output-rule">margin-top: <span class="output-token">units(-1)</span></span>
     </dd>
     <dd class="output-variable">-8px</dd>
 
     <dt class="output-utility">.margin-top-neg-05</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-top: <span class="output-token">spacing(-.5)</span></span>
+      <span class="output-rule">margin-top: <span class="output-token">units(-0.5)</span></span>
     </dd>
     <dd class="output-variable">-4px</dd>
 
@@ -821,109 +821,109 @@ utilities:
 
     <dt class="output-utility">.margin-top-05</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-top: <span class="output-token">spacing(.5)</span></span>
+      <span class="output-rule">margin-top: <span class="output-token">units(0.5)</span></span>
     </dd>
     <dd class="output-variable">4px</dd>
 
     <dt class="output-utility">.margin-top-1</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-top: <span class="output-token">spacing(1)</span></span>
+      <span class="output-rule">margin-top: <span class="output-token">units(1)</span></span>
     </dd>
     <dd class="output-variable">8px</dd>
 
     <dt class="output-utility">.margin-top-105</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-top: <span class="output-token">spacing(1.5)</span></span>
+      <span class="output-rule">margin-top: <span class="output-token">units(1.5)</span></span>
     </dd>
     <dd class="output-variable">12px</dd>
 
     <dt class="output-utility">.margin-top-2</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-top: <span class="output-token">spacing(2)</span></span>
+      <span class="output-rule">margin-top: <span class="output-token">units(2)</span></span>
     </dd>
     <dd class="output-variable">16px</dd>
 
     <dt class="output-utility">.margin-top-205</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-top: <span class="output-token">spacing(2.5)</span></span>
+      <span class="output-rule">margin-top: <span class="output-token">units(2.5)</span></span>
     </dd>
     <dd class="output-variable">20px</dd>
 
     <dt class="output-utility">.margin-top-3</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-top: <span class="output-token">spacing(3)</span></span>
+      <span class="output-rule">margin-top: <span class="output-token">units(3)</span></span>
     </dd>
     <dd class="output-variable">24px</dd>
 
     <dt class="output-utility">.margin-top-4</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-top: <span class="output-token">spacing(4)</span></span>
+      <span class="output-rule">margin-top: <span class="output-token">units(4)</span></span>
     </dd>
     <dd class="output-variable">32px</dd>
 
     <dt class="output-utility">.margin-top-5</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-top: <span class="output-token">spacing(5)</span></span>
+      <span class="output-rule">margin-top: <span class="output-token">units(5)</span></span>
     </dd>
     <dd class="output-variable">40px</dd>
 
     <dt class="output-utility">.margin-top-6</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-top: <span class="output-token">spacing(6)</span></span>
+      <span class="output-rule">margin-top: <span class="output-token">units(6)</span></span>
     </dd>
     <dd class="output-variable">48px</dd>
 
     <dt class="output-utility">.margin-top-7</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-top: <span class="output-token">spacing(7)</span></span>
+      <span class="output-rule">margin-top: <span class="output-token">units(7)</span></span>
     </dd>
     <dd class="output-variable">56px</dd>
 
     <dt class="output-utility">.margin-top-8</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-top: <span class="output-token">spacing(8)</span></span>
+      <span class="output-rule">margin-top: <span class="output-token">units(8)</span></span>
     </dd>
     <dd class="output-variable">64px</dd>
 
     <dt class="output-utility">.margin-top-9</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-top: <span class="output-token">spacing(9)</span></span>
+      <span class="output-rule">margin-top: <span class="output-token">units(9)</span></span>
     </dd>
     <dd class="output-variable">72px</dd>
 
     <dt class="output-utility">.margin-left-neg-3</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-left: <span class="output-token">spacing(-3)</span></span>
+      <span class="output-rule">margin-left: <span class="output-token">units(-3)</span></span>
     </dd>
     <dd class="output-variable">-24px</dd>
 
     <dt class="output-utility">.margin-left-neg-205</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-left: <span class="output-token">spacing(-2)</span></span>
+      <span class="output-rule">margin-left: <span class="output-token">units(-2)</span></span>
     </dd>
     <dd class="output-variable">-20px</dd>
 
     <dt class="output-utility">.margin-left-neg-2</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-left: <span class="output-token">spacing(-2)</span></span>
+      <span class="output-rule">margin-left: <span class="output-token">units(-2)</span></span>
     </dd>
     <dd class="output-variable">-16px</dd>
 
     <dt class="output-utility">.margin-left-neg-105</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-left: <span class="output-token">spacing(-1.5)</span></span>
+      <span class="output-rule">margin-left: <span class="output-token">units(-1.5)</span></span>
     </dd>
     <dd class="output-variable">-12px</dd>
 
     <dt class="output-utility">.margin-left-neg-1</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-left: <span class="output-token">spacing(-1)</span></span>
+      <span class="output-rule">margin-left: <span class="output-token">units(-1)</span></span>
     </dd>
     <dd class="output-variable">-8px</dd>
 
     <dt class="output-utility">.margin-left-neg-05</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-left: <span class="output-token">spacing(-.5)</span></span>
+      <span class="output-rule">margin-left: <span class="output-token">units(-0.5)</span></span>
     </dd>
     <dd class="output-variable">-4px</dd>
 
@@ -959,73 +959,73 @@ utilities:
 
     <dt class="output-utility">.margin-left-05</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-left: <span class="output-token">spacing(.5)</span></span>
+      <span class="output-rule">margin-left: <span class="output-token">units(0.5)</span></span>
     </dd>
     <dd class="output-variable">4px</dd>
 
     <dt class="output-utility">.margin-left-1</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-left: <span class="output-token">spacing(1)</span></span>
+      <span class="output-rule">margin-left: <span class="output-token">units(1)</span></span>
     </dd>
     <dd class="output-variable">8px</dd>
 
     <dt class="output-utility">.margin-left-105</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-left: <span class="output-token">spacing(1.5)</span></span>
+      <span class="output-rule">margin-left: <span class="output-token">units(1.5)</span></span>
     </dd>
     <dd class="output-variable">12px</dd>
 
     <dt class="output-utility">.margin-left-2</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-left: <span class="output-token">spacing(2)</span></span>
+      <span class="output-rule">margin-left: <span class="output-token">units(2)</span></span>
     </dd>
     <dd class="output-variable">16px</dd>
 
     <dt class="output-utility">.margin-left-205</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-left: <span class="output-token">spacing(2.5)</span></span>
+      <span class="output-rule">margin-left: <span class="output-token">units(2.5)</span></span>
     </dd>
     <dd class="output-variable">20px</dd>
 
     <dt class="output-utility">.margin-left-3</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-left: <span class="output-token">spacing(3)</span></span>
+      <span class="output-rule">margin-left: <span class="output-token">units(3)</span></span>
     </dd>
     <dd class="output-variable">24px</dd>
 
     <dt class="output-utility">.margin-left-4</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-left: <span class="output-token">spacing(4)</span></span>
+      <span class="output-rule">margin-left: <span class="output-token">units(4)</span></span>
     </dd>
     <dd class="output-variable">32px</dd>
 
     <dt class="output-utility">.margin-left-5</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-left: <span class="output-token">spacing(5)</span></span>
+      <span class="output-rule">margin-left: <span class="output-token">units(5)</span></span>
     </dd>
     <dd class="output-variable">40px</dd>
 
     <dt class="output-utility">.margin-left-6</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-left: <span class="output-token">spacing(6)</span></span>
+      <span class="output-rule">margin-left: <span class="output-token">units(6)</span></span>
     </dd>
     <dd class="output-variable">48px</dd>
 
     <dt class="output-utility">.margin-left-7</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-left: <span class="output-token">spacing(7)</span></span>
+      <span class="output-rule">margin-left: <span class="output-token">units(7)</span></span>
     </dd>
     <dd class="output-variable">56px</dd>
 
     <dt class="output-utility">.margin-left-8</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-left: <span class="output-token">spacing(8)</span></span>
+      <span class="output-rule">margin-left: <span class="output-token">units(8)</span></span>
     </dd>
     <dd class="output-variable">64px</dd>
 
     <dt class="output-utility">.margin-left-9</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-left: <span class="output-token">spacing(9)</span></span>
+      <span class="output-rule">margin-left: <span class="output-token">units(9)</span></span>
     </dd>
     <dd class="output-variable">72px</dd>
 
@@ -1037,37 +1037,37 @@ utilities:
 
     <dt class="output-utility">.margin-right-neg-3</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-right: <span class="output-token">spacing(-3)</span></span>
+      <span class="output-rule">margin-right: <span class="output-token">units(-3)</span></span>
     </dd>
     <dd class="output-variable">-24px</dd>
 
     <dt class="output-utility">.margin-right-neg-205</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-right: <span class="output-token">spacing(-2)</span></span>
+      <span class="output-rule">margin-right: <span class="output-token">units(-2)</span></span>
     </dd>
     <dd class="output-variable">-20px</dd>
 
     <dt class="output-utility">.margin-right-neg-2</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-right: <span class="output-token">spacing(-2)</span></span>
+      <span class="output-rule">margin-right: <span class="output-token">units(-2)</span></span>
     </dd>
     <dd class="output-variable">-16px</dd>
 
     <dt class="output-utility">.margin-right-neg-105</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-right: <span class="output-token">spacing(-1.5)</span></span>
+      <span class="output-rule">margin-right: <span class="output-token">units(-1.5)</span></span>
     </dd>
     <dd class="output-variable">-12px</dd>
 
     <dt class="output-utility">.margin-right-neg-1</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-right: <span class="output-token">spacing(-1)</span></span>
+      <span class="output-rule">margin-right: <span class="output-token">units(-1)</span></span>
     </dd>
     <dd class="output-variable">-8px</dd>
 
     <dt class="output-utility">.margin-right-neg-05</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-right: <span class="output-token">spacing(-.5)</span></span>
+      <span class="output-rule">margin-right: <span class="output-token">units(-0.5)</span></span>
     </dd>
     <dd class="output-variable">-4px</dd>
 
@@ -1103,73 +1103,73 @@ utilities:
 
     <dt class="output-utility">.margin-right-05</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-right: <span class="output-token">spacing(.5)</span></span>
+      <span class="output-rule">margin-right: <span class="output-token">units(0.5)</span></span>
     </dd>
     <dd class="output-variable">4px</dd>
 
     <dt class="output-utility">.margin-right-1</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-right: <span class="output-token">spacing(1)</span></span>
+      <span class="output-rule">margin-right: <span class="output-token">units(1)</span></span>
     </dd>
     <dd class="output-variable">8px</dd>
 
     <dt class="output-utility">.margin-right-105</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-right: <span class="output-token">spacing(1.5)</span></span>
+      <span class="output-rule">margin-right: <span class="output-token">units(1.5)</span></span>
     </dd>
     <dd class="output-variable">12px</dd>
 
     <dt class="output-utility">.margin-right-2</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-right: <span class="output-token">spacing(2)</span></span>
+      <span class="output-rule">margin-right: <span class="output-token">units(2)</span></span>
     </dd>
     <dd class="output-variable">16px</dd>
 
     <dt class="output-utility">.margin-right-205</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-right: <span class="output-token">spacing(2.5)</span></span>
+      <span class="output-rule">margin-right: <span class="output-token">units(2.5)</span></span>
     </dd>
     <dd class="output-variable">20px</dd>
 
     <dt class="output-utility">.margin-right-3</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-right: <span class="output-token">spacing(3)</span></span>
+      <span class="output-rule">margin-right: <span class="output-token">units(3)</span></span>
     </dd>
     <dd class="output-variable">24px</dd>
 
     <dt class="output-utility">.margin-right-4</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-right: <span class="output-token">spacing(4)</span></span>
+      <span class="output-rule">margin-right: <span class="output-token">units(4)</span></span>
     </dd>
     <dd class="output-variable">32px</dd>
 
     <dt class="output-utility">.margin-right-5</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-right: <span class="output-token">spacing(5)</span></span>
+      <span class="output-rule">margin-right: <span class="output-token">units(5)</span></span>
     </dd>
     <dd class="output-variable">40px</dd>
 
     <dt class="output-utility">.margin-right-6</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-right: <span class="output-token">spacing(6)</span></span>
+      <span class="output-rule">margin-right: <span class="output-token">units(6)</span></span>
     </dd>
     <dd class="output-variable">48px</dd>
 
     <dt class="output-utility">.margin-right-7</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-right: <span class="output-token">spacing(7)</span></span>
+      <span class="output-rule">margin-right: <span class="output-token">units(7)</span></span>
     </dd>
     <dd class="output-variable">56px</dd>
 
     <dt class="output-utility">.margin-right-8</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-right: <span class="output-token">spacing(8)</span></span>
+      <span class="output-rule">margin-right: <span class="output-token">units(8)</span></span>
     </dd>
     <dd class="output-variable">64px</dd>
 
     <dt class="output-utility">.margin-right-9</dt>
     <dd class="output-css">
-      <span class="output-rule">margin-right: <span class="output-token">spacing(9)</span></span>
+      <span class="output-rule">margin-right: <span class="output-token">units(9)</span></span>
     </dd>
     <dd class="output-variable">72px</dd>
 
@@ -1182,8 +1182,8 @@ utilities:
     <dt class="output-utility">.margin-x-neg-3</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-left: <span class="output-token">spacing(-3)</span></span>
-        <span class="output-rule">margin-right: <span class="output-token">spacing(-3)</span></span>
+        <span class="output-rule">margin-left: <span class="output-token">units(-3)</span></span>
+        <span class="output-rule">margin-right: <span class="output-token">units(-3)</span></span>
       </span>
     </dd>
     <dd class="output-variable">-24px</dd>
@@ -1191,8 +1191,8 @@ utilities:
     <dt class="output-utility">.margin-x-neg-205</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-left: <span class="output-token">spacing(-2)</span></span>
-        <span class="output-rule">margin-right: <span class="output-token">spacing(-2)</span></span>
+        <span class="output-rule">margin-left: <span class="output-token">units(-2)</span></span>
+        <span class="output-rule">margin-right: <span class="output-token">units(-2)</span></span>
       </span>
     </dd>
     <dd class="output-variable">-20px</dd>
@@ -1200,8 +1200,8 @@ utilities:
     <dt class="output-utility">.margin-x-neg-2</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-left: <span class="output-token">spacing(-2)</span></span>
-        <span class="output-rule">margin-right: <span class="output-token">spacing(-2)</span></span>
+        <span class="output-rule">margin-left: <span class="output-token">units(-2)</span></span>
+        <span class="output-rule">margin-right: <span class="output-token">units(-2)</span></span>
       </span>
     </dd>
     <dd class="output-variable">-16px</dd>
@@ -1209,8 +1209,8 @@ utilities:
     <dt class="output-utility">.margin-x-neg-105</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-left: <span class="output-token">spacing(-1.5)</span></span>
-        <span class="output-rule">margin-right: <span class="output-token">spacing(-1.5)</span></span>
+        <span class="output-rule">margin-left: <span class="output-token">units(-1.5)</span></span>
+        <span class="output-rule">margin-right: <span class="output-token">units(-1.5)</span></span>
       </span>
     </dd>
     <dd class="output-variable">-12px</dd>
@@ -1218,8 +1218,8 @@ utilities:
     <dt class="output-utility">.margin-x-neg-1</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-left: <span class="output-token">spacing(-1)</span></span>
-        <span class="output-rule">margin-right: <span class="output-token">spacing(-1)</span></span>
+        <span class="output-rule">margin-left: <span class="output-token">units(-1)</span></span>
+        <span class="output-rule">margin-right: <span class="output-token">units(-1)</span></span>
       </span>
     </dd>
     <dd class="output-variable">-8px</dd>
@@ -1227,8 +1227,8 @@ utilities:
     <dt class="output-utility">.margin-x-neg-05</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-left: <span class="output-token">spacing(-.5)</span></span>
-        <span class="output-rule">margin-right: <span class="output-token">spacing(-.5)</span></span>
+        <span class="output-rule">margin-left: <span class="output-token">units(-0.5)</span></span>
+        <span class="output-rule">margin-right: <span class="output-token">units(-0.5)</span></span>
       </span>
     </dd>
     <dd class="output-variable">-4px</dd>
@@ -1281,8 +1281,8 @@ utilities:
     <dt class="output-utility">.margin-x-05</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-left: <span class="output-token">spacing(.5)</span></span>
-        <span class="output-rule">margin-right: <span class="output-token">spacing(.5)</span></span>
+        <span class="output-rule">margin-left: <span class="output-token">units(0.5)</span></span>
+        <span class="output-rule">margin-right: <span class="output-token">units(0.5)</span></span>
       </span>
     </dd>
     <dd class="output-variable">4px</dd>
@@ -1290,8 +1290,8 @@ utilities:
     <dt class="output-utility">.margin-x-1</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-left: <span class="output-token">spacing(1)</span></span>
-        <span class="output-rule">margin-right: <span class="output-token">spacing(1)</span></span>
+        <span class="output-rule">margin-left: <span class="output-token">units(1)</span></span>
+        <span class="output-rule">margin-right: <span class="output-token">units(1)</span></span>
       </span>
     </dd>
     <dd class="output-variable">8px</dd>
@@ -1299,8 +1299,8 @@ utilities:
     <dt class="output-utility">.margin-x-105</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-left: <span class="output-token">spacing(1.5)</span></span>
-        <span class="output-rule">margin-right: <span class="output-token">spacing(1.5)</span></span>
+        <span class="output-rule">margin-left: <span class="output-token">units(1.5)</span></span>
+        <span class="output-rule">margin-right: <span class="output-token">units(1.5)</span></span>
       </span>
     </dd>
     <dd class="output-variable">12px</dd>
@@ -1308,8 +1308,8 @@ utilities:
     <dt class="output-utility">.margin-x-2</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-left: <span class="output-token">spacing(2)</span></span>
-        <span class="output-rule">margin-right: <span class="output-token">spacing(2)</span></span>
+        <span class="output-rule">margin-left: <span class="output-token">units(2)</span></span>
+        <span class="output-rule">margin-right: <span class="output-token">units(2)</span></span>
       </span>
     </dd>
     <dd class="output-variable">16px</dd>
@@ -1317,8 +1317,8 @@ utilities:
     <dt class="output-utility">.margin-x-205</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-left: <span class="output-token">spacing(2.5)</span></span>
-        <span class="output-rule">margin-right: <span class="output-token">spacing(2.5)</span></span>
+        <span class="output-rule">margin-left: <span class="output-token">units(2.5)</span></span>
+        <span class="output-rule">margin-right: <span class="output-token">units(2.5)</span></span>
       </span>
     </dd>
     <dd class="output-variable">20px</dd>
@@ -1326,8 +1326,8 @@ utilities:
     <dt class="output-utility">.margin-x-3</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-left: <span class="output-token">spacing(3)</span></span>
-        <span class="output-rule">margin-right: <span class="output-token">spacing(3)</span></span>
+        <span class="output-rule">margin-left: <span class="output-token">units(3)</span></span>
+        <span class="output-rule">margin-right: <span class="output-token">units(3)</span></span>
       </span>
     </dd>
     <dd class="output-variable">24px</dd>
@@ -1335,8 +1335,8 @@ utilities:
     <dt class="output-utility">.margin-x-4</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-left: <span class="output-token">spacing(4)</span></span>
-        <span class="output-rule">margin-right: <span class="output-token">spacing(4)</span></span>
+        <span class="output-rule">margin-left: <span class="output-token">units(4)</span></span>
+        <span class="output-rule">margin-right: <span class="output-token">units(4)</span></span>
       </span>
     </dd>
     <dd class="output-variable">32px</dd>
@@ -1344,8 +1344,8 @@ utilities:
     <dt class="output-utility">.margin-x-5</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-left: <span class="output-token">spacing(5)</span></span>
-        <span class="output-rule">margin-right: <span class="output-token">spacing(5)</span></span>
+        <span class="output-rule">margin-left: <span class="output-token">units(5)</span></span>
+        <span class="output-rule">margin-right: <span class="output-token">units(5)</span></span>
       </span>
     </dd>
     <dd class="output-variable">40px</dd>
@@ -1353,8 +1353,8 @@ utilities:
     <dt class="output-utility">.margin-x-6</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-left: <span class="output-token">spacing(6)</span></span>
-        <span class="output-rule">margin-right: <span class="output-token">spacing(6)</span></span>
+        <span class="output-rule">margin-left: <span class="output-token">units(6)</span></span>
+        <span class="output-rule">margin-right: <span class="output-token">units(6)</span></span>
       </span>
     </dd>
     <dd class="output-variable">48px</dd>
@@ -1362,8 +1362,8 @@ utilities:
     <dt class="output-utility">.margin-x-7</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-left: <span class="output-token">spacing(7)</span></span>
-        <span class="output-rule">margin-right: <span class="output-token">spacing(7)</span></span>
+        <span class="output-rule">margin-left: <span class="output-token">units(7)</span></span>
+        <span class="output-rule">margin-right: <span class="output-token">units(7)</span></span>
       </span>
     </dd>
     <dd class="output-variable">56px</dd>
@@ -1371,8 +1371,8 @@ utilities:
     <dt class="output-utility">.margin-x-8</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-left: <span class="output-token">spacing(8)</span></span>
-        <span class="output-rule">margin-right: <span class="output-token">spacing(8)</span></span>
+        <span class="output-rule">margin-left: <span class="output-token">units(8)</span></span>
+        <span class="output-rule">margin-right: <span class="output-token">units(8)</span></span>
       </span>
     </dd>
     <dd class="output-variable">64px</dd>
@@ -1380,8 +1380,8 @@ utilities:
     <dt class="output-utility">.margin-x-9</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-left: <span class="output-token">spacing(9)</span></span>
-        <span class="output-rule">margin-right: <span class="output-token">spacing(9)</span></span>
+        <span class="output-rule">margin-left: <span class="output-token">units(9)</span></span>
+        <span class="output-rule">margin-right: <span class="output-token">units(9)</span></span>
       </span>
     </dd>
     <dd class="output-variable">72px</dd>
@@ -1398,8 +1398,8 @@ utilities:
     <dt class="output-utility">.margin-y-neg-3</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-bottom: <span class="output-token">spacing(-3)</span></span>
-        <span class="output-rule">margin-top: <span class="output-token">spacing(-3)</span></span>
+        <span class="output-rule">margin-bottom: <span class="output-token">units(-3)</span></span>
+        <span class="output-rule">margin-top: <span class="output-token">units(-3)</span></span>
       </span>
     </dd>
     <dd class="output-variable">-24px</dd>
@@ -1407,8 +1407,8 @@ utilities:
     <dt class="output-utility">.margin-y-neg-205</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-bottom: <span class="output-token">spacing(-2)</span></span>
-        <span class="output-rule">margin-top: <span class="output-token">spacing(-2)</span></span>
+        <span class="output-rule">margin-bottom: <span class="output-token">units(-2)</span></span>
+        <span class="output-rule">margin-top: <span class="output-token">units(-2)</span></span>
       </span>
     </dd>
     <dd class="output-variable">-20px</dd>
@@ -1416,8 +1416,8 @@ utilities:
     <dt class="output-utility">.margin-y-neg-2</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-bottom: <span class="output-token">spacing(-2)</span></span>
-        <span class="output-rule">margin-top: <span class="output-token">spacing(-2)</span></span>
+        <span class="output-rule">margin-bottom: <span class="output-token">units(-2)</span></span>
+        <span class="output-rule">margin-top: <span class="output-token">units(-2)</span></span>
       </span>
     </dd>
     <dd class="output-variable">-16px</dd>
@@ -1425,8 +1425,8 @@ utilities:
     <dt class="output-utility">.margin-y-neg-105</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-bottom: <span class="output-token">spacing(-1.5)</span></span>
-        <span class="output-rule">margin-top: <span class="output-token">spacing(-1.5)</span></span>
+        <span class="output-rule">margin-bottom: <span class="output-token">units(-1.5)</span></span>
+        <span class="output-rule">margin-top: <span class="output-token">units(-1.5)</span></span>
       </span>
     </dd>
     <dd class="output-variable">-12px</dd>
@@ -1434,8 +1434,8 @@ utilities:
     <dt class="output-utility">.margin-y-neg-1</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-bottom: <span class="output-token">spacing(-1)</span></span>
-        <span class="output-rule">margin-top: <span class="output-token">spacing(-1)</span></span>
+        <span class="output-rule">margin-bottom: <span class="output-token">units(-1)</span></span>
+        <span class="output-rule">margin-top: <span class="output-token">units(-1)</span></span>
       </span>
     </dd>
     <dd class="output-variable">-8px</dd>
@@ -1443,8 +1443,8 @@ utilities:
     <dt class="output-utility">.margin-y-neg-05</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-bottom: <span class="output-token">spacing(-.5)</span></span>
-        <span class="output-rule">margin-top: <span class="output-token">spacing(-.5)</span></span>
+        <span class="output-rule">margin-bottom: <span class="output-token">units(-0.5)</span></span>
+        <span class="output-rule">margin-top: <span class="output-token">units(-0.5)</span></span>
       </span>
     </dd>
     <dd class="output-variable">-4px</dd>
@@ -1497,8 +1497,8 @@ utilities:
     <dt class="output-utility">.margin-y-05</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-bottom: <span class="output-token">spacing(.5)</span></span>
-        <span class="output-rule">margin-top: <span class="output-token">spacing(.5)</span></span>
+        <span class="output-rule">margin-bottom: <span class="output-token">units(0.5)</span></span>
+        <span class="output-rule">margin-top: <span class="output-token">units(0.5)</span></span>
       </span>
     </dd>
     <dd class="output-variable">4px</dd>
@@ -1506,8 +1506,8 @@ utilities:
     <dt class="output-utility">.margin-y-1</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-bottom: <span class="output-token">spacing(1)</span></span>
-        <span class="output-rule">margin-top: <span class="output-token">spacing(1)</span></span>
+        <span class="output-rule">margin-bottom: <span class="output-token">units(1)</span></span>
+        <span class="output-rule">margin-top: <span class="output-token">units(1)</span></span>
       </span>
     </dd>
     <dd class="output-variable">8px</dd>
@@ -1515,8 +1515,8 @@ utilities:
     <dt class="output-utility">.margin-y-105</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-bottom: <span class="output-token">spacing(1.5)</span></span>
-        <span class="output-rule">margin-top: <span class="output-token">spacing(1.5)</span></span>
+        <span class="output-rule">margin-bottom: <span class="output-token">units(1.5)</span></span>
+        <span class="output-rule">margin-top: <span class="output-token">units(1.5)</span></span>
       </span>
     </dd>
     <dd class="output-variable">12px</dd>
@@ -1524,8 +1524,8 @@ utilities:
     <dt class="output-utility">.margin-y-2</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-bottom: <span class="output-token">spacing(2)</span></span>
-        <span class="output-rule">margin-top: <span class="output-token">spacing(2)</span></span>
+        <span class="output-rule">margin-bottom: <span class="output-token">units(2)</span></span>
+        <span class="output-rule">margin-top: <span class="output-token">units(2)</span></span>
       </span>
     </dd>
     <dd class="output-variable">16px</dd>
@@ -1533,8 +1533,8 @@ utilities:
     <dt class="output-utility">.margin-y-205</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-bottom: <span class="output-token">spacing(2.5)</span></span>
-        <span class="output-rule">margin-top: <span class="output-token">spacing(2.5)</span></span>
+        <span class="output-rule">margin-bottom: <span class="output-token">units(2.5)</span></span>
+        <span class="output-rule">margin-top: <span class="output-token">units(2.5)</span></span>
       </span>
     </dd>
     <dd class="output-variable">20px</dd>
@@ -1542,8 +1542,8 @@ utilities:
     <dt class="output-utility">.margin-y-3</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-bottom: <span class="output-token">spacing(3)</span></span>
-        <span class="output-rule">margin-top: <span class="output-token">spacing(3)</span></span>
+        <span class="output-rule">margin-bottom: <span class="output-token">units(3)</span></span>
+        <span class="output-rule">margin-top: <span class="output-token">units(3)</span></span>
       </span>
     </dd>
     <dd class="output-variable">24px</dd>
@@ -1551,8 +1551,8 @@ utilities:
     <dt class="output-utility">.margin-y-4</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-bottom: <span class="output-token">spacing(4)</span></span>
-        <span class="output-rule">margin-top: <span class="output-token">spacing(4)</span></span>
+        <span class="output-rule">margin-bottom: <span class="output-token">units(4)</span></span>
+        <span class="output-rule">margin-top: <span class="output-token">units(4)</span></span>
       </span>
     </dd>
     <dd class="output-variable">32px</dd>
@@ -1560,8 +1560,8 @@ utilities:
     <dt class="output-utility">.margin-y-5</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-bottom: <span class="output-token">spacing(5)</span></span>
-        <span class="output-rule">margin-top: <span class="output-token">spacing(5)</span></span>
+        <span class="output-rule">margin-bottom: <span class="output-token">units(5)</span></span>
+        <span class="output-rule">margin-top: <span class="output-token">units(5)</span></span>
       </span>
     </dd>
     <dd class="output-variable">40px</dd>
@@ -1569,8 +1569,8 @@ utilities:
     <dt class="output-utility">.margin-y-6</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-bottom: <span class="output-token">spacing(6)</span></span>
-        <span class="output-rule">margin-top: <span class="output-token">spacing(6)</span></span>
+        <span class="output-rule">margin-bottom: <span class="output-token">units(6)</span></span>
+        <span class="output-rule">margin-top: <span class="output-token">units(6)</span></span>
       </span>
     </dd>
     <dd class="output-variable">48px</dd>
@@ -1578,8 +1578,8 @@ utilities:
     <dt class="output-utility">.margin-y-7</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-bottom: <span class="output-token">spacing(7)</span></span>
-        <span class="output-rule">margin-top: <span class="output-token">spacing(7)</span></span>
+        <span class="output-rule">margin-bottom: <span class="output-token">units(7)</span></span>
+        <span class="output-rule">margin-top: <span class="output-token">units(7)</span></span>
       </span>
     </dd>
     <dd class="output-variable">56px</dd>
@@ -1587,8 +1587,8 @@ utilities:
     <dt class="output-utility">.margin-y-8</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-bottom: <span class="output-token">spacing(8)</span></span>
-        <span class="output-rule">margin-top: <span class="output-token">spacing(8)</span></span>
+        <span class="output-rule">margin-bottom: <span class="output-token">units(8)</span></span>
+        <span class="output-rule">margin-top: <span class="output-token">units(8)</span></span>
       </span>
     </dd>
     <dd class="output-variable">64px</dd>
@@ -1596,8 +1596,8 @@ utilities:
     <dt class="output-utility">.margin-y-9</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">margin-bottom: <span class="output-token">spacing(9)</span></span>
-        <span class="output-rule">margin-top: <span class="output-token">spacing(9)</span></span>
+        <span class="output-rule">margin-bottom: <span class="output-token">units(9)</span></span>
+        <span class="output-rule">margin-top: <span class="output-token">units(9)</span></span>
       </span>
     </dd>
     <dd class="output-variable">72px</dd>
@@ -1622,73 +1622,73 @@ utilities:
 
     <dt class="output-utility">.padding-05</dt>
     <dd class="output-css">
-      <span class="output-rule">padding: <span class="output-token">spacing(.5)</span></span>
+      <span class="output-rule">padding: <span class="output-token">units(0.5)</span></span>
     </dd>
     <dd class="output-variable">4px</dd>
 
     <dt class="output-utility">.padding-1</dt>
     <dd class="output-css">
-      <span class="output-rule">padding: <span class="output-token">spacing(1)</span></span>
+      <span class="output-rule">padding: <span class="output-token">units(1)</span></span>
     </dd>
     <dd class="output-variable">8px</dd>
 
     <dt class="output-utility">.padding-105</dt>
     <dd class="output-css">
-      <span class="output-rule">padding: <span class="output-token">spacing(1.5)</span></span>
+      <span class="output-rule">padding: <span class="output-token">units(1.5)</span></span>
     </dd>
     <dd class="output-variable">12px</dd>
 
     <dt class="output-utility">.padding-2</dt>
     <dd class="output-css">
-      <span class="output-rule">padding: <span class="output-token">spacing(2)</span></span>
+      <span class="output-rule">padding: <span class="output-token">units(2)</span></span>
     </dd>
     <dd class="output-variable">16px</dd>
 
     <dt class="output-utility">.padding-205</dt>
     <dd class="output-css">
-      <span class="output-rule">padding: <span class="output-token">spacing(2.5)</span></span>
+      <span class="output-rule">padding: <span class="output-token">units(2.5)</span></span>
     </dd>
     <dd class="output-variable">20px</dd>
 
     <dt class="output-utility">.padding-3</dt>
     <dd class="output-css">
-      <span class="output-rule">padding: <span class="output-token">spacing(3)</span></span>
+      <span class="output-rule">padding: <span class="output-token">units(3)</span></span>
     </dd>
     <dd class="output-variable">24px</dd>
 
     <dt class="output-utility">.padding-4</dt>
     <dd class="output-css">
-      <span class="output-rule">padding: <span class="output-token">spacing(4)</span></span>
+      <span class="output-rule">padding: <span class="output-token">units(4)</span></span>
     </dd>
     <dd class="output-variable">32px</dd>
 
     <dt class="output-utility">.padding-5</dt>
     <dd class="output-css">
-      <span class="output-rule">padding: <span class="output-token">spacing(5)</span></span>
+      <span class="output-rule">padding: <span class="output-token">units(5)</span></span>
     </dd>
     <dd class="output-variable">40px</dd>
 
     <dt class="output-utility">.padding-6</dt>
     <dd class="output-css">
-      <span class="output-rule">padding: <span class="output-token">spacing(6)</span></span>
+      <span class="output-rule">padding: <span class="output-token">units(6)</span></span>
     </dd>
     <dd class="output-variable">48px</dd>
 
     <dt class="output-utility">.padding-7</dt>
     <dd class="output-css">
-      <span class="output-rule">padding: <span class="output-token">spacing(7)</span></span>
+      <span class="output-rule">padding: <span class="output-token">units(7)</span></span>
     </dd>
     <dd class="output-variable">56px</dd>
 
     <dt class="output-utility">.padding-8</dt>
     <dd class="output-css">
-      <span class="output-rule">padding: <span class="output-token">spacing(8)</span></span>
+      <span class="output-rule">padding: <span class="output-token">units(8)</span></span>
     </dd>
     <dd class="output-variable">64px</dd>
 
     <dt class="output-utility">.padding-9</dt>
     <dd class="output-css">
-      <span class="output-rule">padding: <span class="output-token">spacing(9)</span></span>
+      <span class="output-rule">padding: <span class="output-token">units(9)</span></span>
     </dd>
     <dd class="output-variable">72px</dd>
 
@@ -1712,73 +1712,73 @@ utilities:
 
     <dt class="output-utility">.padding-bottom-05</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-bottom: <span class="output-token">spacing(.5)</span></span>
+      <span class="output-rule">padding-bottom: <span class="output-token">units(0.5)</span></span>
     </dd>
     <dd class="output-variable">4px</dd>
 
     <dt class="output-utility">.padding-bottom-1</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-bottom: <span class="output-token">spacing(1)</span></span>
+      <span class="output-rule">padding-bottom: <span class="output-token">units(1)</span></span>
     </dd>
     <dd class="output-variable">8px</dd>
 
     <dt class="output-utility">.padding-bottom-105</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-bottom: <span class="output-token">spacing(1.5)</span></span>
+      <span class="output-rule">padding-bottom: <span class="output-token">units(1.5)</span></span>
     </dd>
     <dd class="output-variable">12px</dd>
 
     <dt class="output-utility">.padding-bottom-2</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-bottom: <span class="output-token">spacing(2)</span></span>
+      <span class="output-rule">padding-bottom: <span class="output-token">units(2)</span></span>
     </dd>
     <dd class="output-variable">16px</dd>
 
     <dt class="output-utility">.padding-bottom-205</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-bottom: <span class="output-token">spacing(2.5)</span></span>
+      <span class="output-rule">padding-bottom: <span class="output-token">units(2.5)</span></span>
     </dd>
     <dd class="output-variable">20px</dd>
 
     <dt class="output-utility">.padding-bottom-3</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-bottom: <span class="output-token">spacing(3)</span></span>
+      <span class="output-rule">padding-bottom: <span class="output-token">units(3)</span></span>
     </dd>
     <dd class="output-variable">24px</dd>
 
     <dt class="output-utility">.padding-bottom-4</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-bottom: <span class="output-token">spacing(4)</span></span>
+      <span class="output-rule">padding-bottom: <span class="output-token">units(4)</span></span>
     </dd>
     <dd class="output-variable">32px</dd>
 
     <dt class="output-utility">.padding-bottom-5</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-bottom: <span class="output-token">spacing(5)</span></span>
+      <span class="output-rule">padding-bottom: <span class="output-token">units(5)</span></span>
     </dd>
     <dd class="output-variable">40px</dd>
 
     <dt class="output-utility">.padding-bottom-6</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-bottom: <span class="output-token">spacing(6)</span></span>
+      <span class="output-rule">padding-bottom: <span class="output-token">units(6)</span></span>
     </dd>
     <dd class="output-variable">48px</dd>
 
     <dt class="output-utility">.padding-bottom-7</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-bottom: <span class="output-token">spacing(7)</span></span>
+      <span class="output-rule">padding-bottom: <span class="output-token">units(7)</span></span>
     </dd>
     <dd class="output-variable">56px</dd>
 
     <dt class="output-utility">.padding-bottom-8</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-bottom: <span class="output-token">spacing(8)</span></span>
+      <span class="output-rule">padding-bottom: <span class="output-token">units(8)</span></span>
     </dd>
     <dd class="output-variable">64px</dd>
 
     <dt class="output-utility">.padding-bottom-9</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-bottom: <span class="output-token">spacing(9)</span></span>
+      <span class="output-rule">padding-bottom: <span class="output-token">units(9)</span></span>
     </dd>
     <dd class="output-variable">72px</dd>
 
@@ -1802,73 +1802,73 @@ utilities:
 
     <dt class="output-utility">.padding-top-05</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-top: <span class="output-token">spacing(.5)</span></span>
+      <span class="output-rule">padding-top: <span class="output-token">units(0.5)</span></span>
     </dd>
     <dd class="output-variable">4px</dd>
 
     <dt class="output-utility">.padding-top-1</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-top: <span class="output-token">spacing(1)</span></span>
+      <span class="output-rule">padding-top: <span class="output-token">units(1)</span></span>
     </dd>
     <dd class="output-variable">8px</dd>
 
     <dt class="output-utility">.padding-top-105</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-top: <span class="output-token">spacing(1.5)</span></span>
+      <span class="output-rule">padding-top: <span class="output-token">units(1.5)</span></span>
     </dd>
     <dd class="output-variable">12px</dd>
 
     <dt class="output-utility">.padding-top-2</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-top: <span class="output-token">spacing(2)</span></span>
+      <span class="output-rule">padding-top: <span class="output-token">units(2)</span></span>
     </dd>
     <dd class="output-variable">16px</dd>
 
     <dt class="output-utility">.padding-top-205</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-top: <span class="output-token">spacing(2.5)</span></span>
+      <span class="output-rule">padding-top: <span class="output-token">units(2.5)</span></span>
     </dd>
     <dd class="output-variable">20px</dd>
 
     <dt class="output-utility">.padding-top-3</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-top: <span class="output-token">spacing(3)</span></span>
+      <span class="output-rule">padding-top: <span class="output-token">units(3)</span></span>
     </dd>
     <dd class="output-variable">24px</dd>
 
     <dt class="output-utility">.padding-top-4</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-top: <span class="output-token">spacing(4)</span></span>
+      <span class="output-rule">padding-top: <span class="output-token">units(4)</span></span>
     </dd>
     <dd class="output-variable">32px</dd>
 
     <dt class="output-utility">.padding-top-5</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-top: <span class="output-token">spacing(5)</span></span>
+      <span class="output-rule">padding-top: <span class="output-token">units(5)</span></span>
     </dd>
     <dd class="output-variable">40px</dd>
 
     <dt class="output-utility">.padding-top-6</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-top: <span class="output-token">spacing(6)</span></span>
+      <span class="output-rule">padding-top: <span class="output-token">units(6)</span></span>
     </dd>
     <dd class="output-variable">48px</dd>
 
     <dt class="output-utility">.padding-top-7</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-top: <span class="output-token">spacing(7)</span></span>
+      <span class="output-rule">padding-top: <span class="output-token">units(7)</span></span>
     </dd>
     <dd class="output-variable">56px</dd>
 
     <dt class="output-utility">.padding-top-8</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-top: <span class="output-token">spacing(8)</span></span>
+      <span class="output-rule">padding-top: <span class="output-token">units(8)</span></span>
     </dd>
     <dd class="output-variable">64px</dd>
 
     <dt class="output-utility">.padding-top-9</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-top: <span class="output-token">spacing(9)</span></span>
+      <span class="output-rule">padding-top: <span class="output-token">units(9)</span></span>
     </dd>
     <dd class="output-variable">72px</dd>
 
@@ -1892,73 +1892,73 @@ utilities:
 
     <dt class="output-utility">.padding-left-05</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-left: <span class="output-token">spacing(.5)</span></span>
+      <span class="output-rule">padding-left: <span class="output-token">units(0.5)</span></span>
     </dd>
     <dd class="output-variable">4px</dd>
 
     <dt class="output-utility">.padding-left-1</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-left: <span class="output-token">spacing(1)</span></span>
+      <span class="output-rule">padding-left: <span class="output-token">units(1)</span></span>
     </dd>
     <dd class="output-variable">8px</dd>
 
     <dt class="output-utility">.padding-left-105</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-left: <span class="output-token">spacing(1.5)</span></span>
+      <span class="output-rule">padding-left: <span class="output-token">units(1.5)</span></span>
     </dd>
     <dd class="output-variable">12px</dd>
 
     <dt class="output-utility">.padding-left-2</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-left: <span class="output-token">spacing(2)</span></span>
+      <span class="output-rule">padding-left: <span class="output-token">units(2)</span></span>
     </dd>
     <dd class="output-variable">16px</dd>
 
     <dt class="output-utility">.padding-left-205</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-left: <span class="output-token">spacing(2.5)</span></span>
+      <span class="output-rule">padding-left: <span class="output-token">units(2.5)</span></span>
     </dd>
     <dd class="output-variable">20px</dd>
 
     <dt class="output-utility">.padding-left-3</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-left: <span class="output-token">spacing(3)</span></span>
+      <span class="output-rule">padding-left: <span class="output-token">units(3)</span></span>
     </dd>
     <dd class="output-variable">24px</dd>
 
     <dt class="output-utility">.padding-left-4</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-left: <span class="output-token">spacing(4)</span></span>
+      <span class="output-rule">padding-left: <span class="output-token">units(4)</span></span>
     </dd>
     <dd class="output-variable">32px</dd>
 
     <dt class="output-utility">.padding-left-5</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-left: <span class="output-token">spacing(5)</span></span>
+      <span class="output-rule">padding-left: <span class="output-token">units(5)</span></span>
     </dd>
     <dd class="output-variable">40px</dd>
 
     <dt class="output-utility">.padding-left-6</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-left: <span class="output-token">spacing(6)</span></span>
+      <span class="output-rule">padding-left: <span class="output-token">units(6)</span></span>
     </dd>
     <dd class="output-variable">48px</dd>
 
     <dt class="output-utility">.padding-left-7</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-left: <span class="output-token">spacing(7)</span></span>
+      <span class="output-rule">padding-left: <span class="output-token">units(7)</span></span>
     </dd>
     <dd class="output-variable">56px</dd>
 
     <dt class="output-utility">.padding-left-8</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-left: <span class="output-token">spacing(8)</span></span>
+      <span class="output-rule">padding-left: <span class="output-token">units(8)</span></span>
     </dd>
     <dd class="output-variable">64px</dd>
 
     <dt class="output-utility">.padding-left-9</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-left: <span class="output-token">spacing(9)</span></span>
+      <span class="output-rule">padding-left: <span class="output-token">units(9)</span></span>
     </dd>
     <dd class="output-variable">72px</dd>
 
@@ -1988,73 +1988,73 @@ utilities:
 
     <dt class="output-utility">.padding-right-05</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-right: <span class="output-token">spacing(.5)</span></span>
+      <span class="output-rule">padding-right: <span class="output-token">units(0.5)</span></span>
     </dd>
     <dd class="output-variable">4px</dd>
 
     <dt class="output-utility">.padding-right-1</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-right: <span class="output-token">spacing(1)</span></span>
+      <span class="output-rule">padding-right: <span class="output-token">units(1)</span></span>
     </dd>
     <dd class="output-variable">8px</dd>
 
     <dt class="output-utility">.padding-right-105</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-right: <span class="output-token">spacing(1.5)</span></span>
+      <span class="output-rule">padding-right: <span class="output-token">units(1.5)</span></span>
     </dd>
     <dd class="output-variable">12px</dd>
 
     <dt class="output-utility">.padding-right-2</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-right: <span class="output-token">spacing(2)</span></span>
+      <span class="output-rule">padding-right: <span class="output-token">units(2)</span></span>
     </dd>
     <dd class="output-variable">16px</dd>
 
     <dt class="output-utility">.padding-right-205</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-right: <span class="output-token">spacing(2.5)</span></span>
+      <span class="output-rule">padding-right: <span class="output-token">units(2.5)</span></span>
     </dd>
     <dd class="output-variable">20px</dd>
 
     <dt class="output-utility">.padding-right-3</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-right: <span class="output-token">spacing(3)</span></span>
+      <span class="output-rule">padding-right: <span class="output-token">units(3)</span></span>
     </dd>
     <dd class="output-variable">24px</dd>
 
     <dt class="output-utility">.padding-right-4</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-right: <span class="output-token">spacing(4)</span></span>
+      <span class="output-rule">padding-right: <span class="output-token">units(4)</span></span>
     </dd>
     <dd class="output-variable">32px</dd>
 
     <dt class="output-utility">.padding-right-5</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-right: <span class="output-token">spacing(5)</span></span>
+      <span class="output-rule">padding-right: <span class="output-token">units(5)</span></span>
     </dd>
     <dd class="output-variable">40px</dd>
 
     <dt class="output-utility">.padding-right-6</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-right: <span class="output-token">spacing(6)</span></span>
+      <span class="output-rule">padding-right: <span class="output-token">units(6)</span></span>
     </dd>
     <dd class="output-variable">48px</dd>
 
     <dt class="output-utility">.padding-right-7</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-right: <span class="output-token">spacing(7)</span></span>
+      <span class="output-rule">padding-right: <span class="output-token">units(7)</span></span>
     </dd>
     <dd class="output-variable">56px</dd>
 
     <dt class="output-utility">.padding-right-8</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-right: <span class="output-token">spacing(8)</span></span>
+      <span class="output-rule">padding-right: <span class="output-token">units(8)</span></span>
     </dd>
     <dd class="output-variable">64px</dd>
 
     <dt class="output-utility">.padding-right-9</dt>
     <dd class="output-css">
-      <span class="output-rule">padding-right: <span class="output-token">spacing(9)</span></span>
+      <span class="output-rule">padding-right: <span class="output-token">units(9)</span></span>
     </dd>
     <dd class="output-variable">72px</dd>
 
@@ -2094,8 +2094,8 @@ utilities:
     <dt class="output-utility">.padding-x-05</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">padding-left: <span class="output-token">spacing(.5)</span></span>
-        <span class="output-rule">padding-right: <span class="output-token">spacing(.5)</span></span>
+        <span class="output-rule">padding-left: <span class="output-token">units(0.5)</span></span>
+        <span class="output-rule">padding-right: <span class="output-token">units(0.5)</span></span>
       </span>
     </dd>
     <dd class="output-variable">4px</dd>
@@ -2103,8 +2103,8 @@ utilities:
     <dt class="output-utility">.padding-x-1</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">padding-left: <span class="output-token">spacing(1)</span></span>
-        <span class="output-rule">padding-right: <span class="output-token">spacing(1)</span></span>
+        <span class="output-rule">padding-left: <span class="output-token">units(1)</span></span>
+        <span class="output-rule">padding-right: <span class="output-token">units(1)</span></span>
       </span>
     </dd>
     <dd class="output-variable">8px</dd>
@@ -2112,8 +2112,8 @@ utilities:
     <dt class="output-utility">.padding-x-105</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">padding-left: <span class="output-token">spacing(1.5)</span></span>
-        <span class="output-rule">padding-right: <span class="output-token">spacing(1.5)</span></span>
+        <span class="output-rule">padding-left: <span class="output-token">units(1.5)</span></span>
+        <span class="output-rule">padding-right: <span class="output-token">units(1.5)</span></span>
       </span>
     </dd>
     <dd class="output-variable">12px</dd>
@@ -2121,8 +2121,8 @@ utilities:
     <dt class="output-utility">.padding-x-2</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">padding-left: <span class="output-token">spacing(2)</span></span>
-        <span class="output-rule">padding-right: <span class="output-token">spacing(2)</span></span>
+        <span class="output-rule">padding-left: <span class="output-token">units(2)</span></span>
+        <span class="output-rule">padding-right: <span class="output-token">units(2)</span></span>
       </span>
     </dd>
     <dd class="output-variable">16px</dd>
@@ -2130,8 +2130,8 @@ utilities:
     <dt class="output-utility">.padding-x-205</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">padding-left: <span class="output-token">spacing(2.5)</span></span>
-        <span class="output-rule">padding-right: <span class="output-token">spacing(2.5)</span></span>
+        <span class="output-rule">padding-left: <span class="output-token">units(2.5)</span></span>
+        <span class="output-rule">padding-right: <span class="output-token">units(2.5)</span></span>
       </span>
     </dd>
     <dd class="output-variable">20px</dd>
@@ -2139,8 +2139,8 @@ utilities:
     <dt class="output-utility">.padding-x-3</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">padding-left: <span class="output-token">spacing(3)</span></span>
-        <span class="output-rule">padding-right: <span class="output-token">spacing(3)</span></span>
+        <span class="output-rule">padding-left: <span class="output-token">units(3)</span></span>
+        <span class="output-rule">padding-right: <span class="output-token">units(3)</span></span>
       </span>
     </dd>
     <dd class="output-variable">24px</dd>
@@ -2148,8 +2148,8 @@ utilities:
     <dt class="output-utility">.padding-x-4</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">padding-left: <span class="output-token">spacing(4)</span></span>
-        <span class="output-rule">padding-right: <span class="output-token">spacing(4)</span></span>
+        <span class="output-rule">padding-left: <span class="output-token">units(4)</span></span>
+        <span class="output-rule">padding-right: <span class="output-token">units(4)</span></span>
       </span>
     </dd>
     <dd class="output-variable">32px</dd>
@@ -2157,8 +2157,8 @@ utilities:
     <dt class="output-utility">.padding-x-5</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">padding-left: <span class="output-token">spacing(5)</span></span>
-        <span class="output-rule">padding-right: <span class="output-token">spacing(5)</span></span>
+        <span class="output-rule">padding-left: <span class="output-token">units(5)</span></span>
+        <span class="output-rule">padding-right: <span class="output-token">units(5)</span></span>
       </span>
     </dd>
     <dd class="output-variable">40px</dd>
@@ -2166,8 +2166,8 @@ utilities:
     <dt class="output-utility">.padding-x-6</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">padding-left: <span class="output-token">spacing(6)</span></span>
-        <span class="output-rule">padding-right: <span class="output-token">spacing(6)</span></span>
+        <span class="output-rule">padding-left: <span class="output-token">units(6)</span></span>
+        <span class="output-rule">padding-right: <span class="output-token">units(6)</span></span>
       </span>
     </dd>
     <dd class="output-variable">48px</dd>
@@ -2175,8 +2175,8 @@ utilities:
     <dt class="output-utility">.padding-x-7</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">padding-left: <span class="output-token">spacing(7)</span></span>
-        <span class="output-rule">padding-right: <span class="output-token">spacing(7)</span></span>
+        <span class="output-rule">padding-left: <span class="output-token">units(7)</span></span>
+        <span class="output-rule">padding-right: <span class="output-token">units(7)</span></span>
       </span>
     </dd>
     <dd class="output-variable">56px</dd>
@@ -2184,8 +2184,8 @@ utilities:
     <dt class="output-utility">.padding-x-8</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">padding-left: <span class="output-token">spacing(8)</span></span>
-        <span class="output-rule">padding-right: <span class="output-token">spacing(8)</span></span>
+        <span class="output-rule">padding-left: <span class="output-token">units(8)</span></span>
+        <span class="output-rule">padding-right: <span class="output-token">units(8)</span></span>
       </span>
     </dd>
     <dd class="output-variable">64px</dd>
@@ -2193,8 +2193,8 @@ utilities:
     <dt class="output-utility">.padding-x-9</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">padding-left: <span class="output-token">spacing(9)</span></span>
-        <span class="output-rule">padding-right: <span class="output-token">spacing(9)</span></span>
+        <span class="output-rule">padding-left: <span class="output-token">units(9)</span></span>
+        <span class="output-rule">padding-right: <span class="output-token">units(9)</span></span>
       </span>
     </dd>
     <dd class="output-variable">72px</dd>
@@ -2229,8 +2229,8 @@ utilities:
     <dt class="output-utility">.padding-y-05</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">padding-bottom: <span class="output-token">spacing(.5)</span></span>
-        <span class="output-rule">padding-top: <span class="output-token">spacing(.5)</span></span>
+        <span class="output-rule">padding-bottom: <span class="output-token">units(0.5)</span></span>
+        <span class="output-rule">padding-top: <span class="output-token">units(0.5)</span></span>
       </span>
     </dd>
     <dd class="output-variable">4px</dd>
@@ -2238,8 +2238,8 @@ utilities:
     <dt class="output-utility">.padding-y-1</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">padding-bottom: <span class="output-token">spacing(1)</span></span>
-        <span class="output-rule">padding-top: <span class="output-token">spacing(1)</span></span>
+        <span class="output-rule">padding-bottom: <span class="output-token">units(1)</span></span>
+        <span class="output-rule">padding-top: <span class="output-token">units(1)</span></span>
       </span>
     </dd>
     <dd class="output-variable">8px</dd>
@@ -2247,8 +2247,8 @@ utilities:
     <dt class="output-utility">.padding-y-105</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">padding-bottom: <span class="output-token">spacing(1.5)</span></span>
-        <span class="output-rule">padding-top: <span class="output-token">spacing(1.5)</span></span>
+        <span class="output-rule">padding-bottom: <span class="output-token">units(1.5)</span></span>
+        <span class="output-rule">padding-top: <span class="output-token">units(1.5)</span></span>
       </span>
     </dd>
     <dd class="output-variable">12px</dd>
@@ -2256,8 +2256,8 @@ utilities:
     <dt class="output-utility">.padding-y-2</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">padding-bottom: <span class="output-token">spacing(2)</span></span>
-        <span class="output-rule">padding-top: <span class="output-token">spacing(2)</span></span>
+        <span class="output-rule">padding-bottom: <span class="output-token">units(2)</span></span>
+        <span class="output-rule">padding-top: <span class="output-token">units(2)</span></span>
       </span>
     </dd>
     <dd class="output-variable">16px</dd>
@@ -2265,8 +2265,8 @@ utilities:
     <dt class="output-utility">.padding-y-205</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">padding-bottom: <span class="output-token">spacing(2.5)</span></span>
-        <span class="output-rule">padding-top: <span class="output-token">spacing(2.5)</span></span>
+        <span class="output-rule">padding-bottom: <span class="output-token">units(2.5)</span></span>
+        <span class="output-rule">padding-top: <span class="output-token">units(2.5)</span></span>
       </span>
     </dd>
     <dd class="output-variable">20px</dd>
@@ -2274,8 +2274,8 @@ utilities:
     <dt class="output-utility">.padding-y-3</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">padding-bottom: <span class="output-token">spacing(3)</span></span>
-        <span class="output-rule">padding-top: <span class="output-token">spacing(3)</span></span>
+        <span class="output-rule">padding-bottom: <span class="output-token">units(3)</span></span>
+        <span class="output-rule">padding-top: <span class="output-token">units(3)</span></span>
       </span>
     </dd>
     <dd class="output-variable">24px</dd>
@@ -2283,8 +2283,8 @@ utilities:
     <dt class="output-utility">.padding-y-4</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">padding-bottom: <span class="output-token">spacing(4)</span></span>
-        <span class="output-rule">padding-top: <span class="output-token">spacing(4)</span></span>
+        <span class="output-rule">padding-bottom: <span class="output-token">units(4)</span></span>
+        <span class="output-rule">padding-top: <span class="output-token">units(4)</span></span>
       </span>
     </dd>
     <dd class="output-variable">32px</dd>
@@ -2292,8 +2292,8 @@ utilities:
     <dt class="output-utility">.padding-y-5</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">padding-bottom: <span class="output-token">spacing(5)</span></span>
-        <span class="output-rule">padding-top: <span class="output-token">spacing(5)</span></span>
+        <span class="output-rule">padding-bottom: <span class="output-token">units(5)</span></span>
+        <span class="output-rule">padding-top: <span class="output-token">units(5)</span></span>
       </span>
     </dd>
     <dd class="output-variable">40px</dd>
@@ -2301,8 +2301,8 @@ utilities:
     <dt class="output-utility">.padding-y-6</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">padding-bottom: <span class="output-token">spacing(6)</span></span>
-        <span class="output-rule">padding-top: <span class="output-token">spacing(6)</span></span>
+        <span class="output-rule">padding-bottom: <span class="output-token">units(6)</span></span>
+        <span class="output-rule">padding-top: <span class="output-token">units(6)</span></span>
       </span>
     </dd>
     <dd class="output-variable">48px</dd>
@@ -2310,8 +2310,8 @@ utilities:
     <dt class="output-utility">.padding-y-7</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">padding-bottom: <span class="output-token">spacing(7)</span></span>
-        <span class="output-rule">padding-top: <span class="output-token">spacing(7)</span></span>
+        <span class="output-rule">padding-bottom: <span class="output-token">units(7)</span></span>
+        <span class="output-rule">padding-top: <span class="output-token">units(7)</span></span>
       </span>
     </dd>
     <dd class="output-variable">56px</dd>
@@ -2319,8 +2319,8 @@ utilities:
     <dt class="output-utility">.padding-y-8</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">padding-bottom: <span class="output-token">spacing(8)</span></span>
-        <span class="output-rule">padding-top: <span class="output-token">spacing(8)</span></span>
+        <span class="output-rule">padding-bottom: <span class="output-token">units(8)</span></span>
+        <span class="output-rule">padding-top: <span class="output-token">units(8)</span></span>
       </span>
     </dd>
     <dd class="output-variable">64px</dd>
@@ -2328,8 +2328,8 @@ utilities:
     <dt class="output-utility">.padding-y-9</dt>
     <dd class="output-css">
       <span>
-        <span class="output-rule">padding-bottom: <span class="output-token">spacing(9)</span></span>
-        <span class="output-rule">padding-top: <span class="output-token">spacing(9)</span></span>
+        <span class="output-rule">padding-bottom: <span class="output-token">units(9)</span></span>
+        <span class="output-rule">padding-top: <span class="output-token">units(9)</span></span>
       </span>
     </dd>
     <dd class="output-variable">72px</dd>

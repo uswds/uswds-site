@@ -1,454 +1,394 @@
 ---
-permalink: /style/type-scale/
+permalink: /style/typescale/
 layout: styleguide
-title: Type scale
+title: Typescale
 category: Style
-lead: tk
+lead: USWDS typescale consists of nine regularized theme settings drawn from a 21-step common scale
 type: docs
+subnav:
+- text: Using type scale
+  href: '#using-spacing-units-in-utilities-settings-and-component-sass'
+- text: Settings
+  href: '#settings'
+- text: Utilities
+  href: '#utilities'
+- text: Variables
+  href: '#variables'
+- text: Functions
+  href: '#functions'
+- text: Utility mixins
+  href: '#utility-mixins'
 ---
 
-The 21-step numeric scale (`font-sans-1`{:.txt-code.margin-x-05}) is the scale common to any USWDS project.
+The USWDS type scale is designed to display type at a consistent size regardless of the typeface. Project themes use a nine-step palette drawn from a 21-step common palette. These type scale values are the only values we use to build official components. Any components we accept back into the system need to be built with this type scale.
 
-The 9-step relative scale (`font-sans-3xs`{:.txt-code.bg-white.border-1px}) is project-specific — set in your project’s project settings — chosen from steps in the common scale.
+Font size is output in `rem`. If you have `$theme-respect-user-font-size` set to `true` in your theme settings, the root font size is set to `100%` and is calculated based on `16px`. If `$theme-respect-user-font-size` set to `false`, the root font size is calculated based on the value of `theme-root-font-size`.
 
-This type scale is designed to accommodate any project typeface, regardless of its optical size, with minimal impact to component layout. To achieve this, the scale is regularized — each typeface has a different value at each step in the scale. The final pixel/rem sizes are different between faces so each step in the scale appears the same size to the end user, regardless of typeface.
+To make different typefaces appear the same size at each step of the scale, the absolute size of each step in the typescale varies from typeface to typeface. Each supported typeface is regularized to a target value set by the the size of common system fonts — specifically Apple's typeface San Francisco and  Google's typeface Roboto. Optically smaller faces like Source Sans Pro will have a relatively larger rem value at each step in the scale, and optically larger faces like Merriweather will have a relatively smaller rem value. The USWDS typeface Public Sans is developed to be optically similar to system fonts.
 
-<p class="line-height-sans-4 text-300 margin-bottom-6">Since each typeface has different type scale values, use <code class="txt-code">font-[type]-[value]</code> instead of <code class="txt-code">font-[value]</code>.</p>
-<div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px">
-  <div class="grid-col-4 text-700 font-sans-1">family-sans (United Sans)</div>
-  <div class="grid-col-4 text-700 font-sans-1">family-serif (Georgia)</div>
-  <div class="grid-col-4 text-700 font-sans-1">family-mono (Roboto Mono)</div>
+Since both the `rem` and absolute `px` values change depending on the theme settings and the typeface, the following table displays only the `px` value of the target.
+
+### Theme typescale
+The nine-step theme typescale should be sufficient for most project needs. First, try to use the theme typescale. If your projects needs require more than nine steps of typescale, use steps from the common typescale as nedded.
+
+<div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-4 text-bold">
+  <div class="grid-col-2 text-700 font-sans-1">token</div>
+  <div class="grid-col-2 text-700 font-sans-1">common scale</div>
+  <div class="grid-col-1 text-700 font-sans-1">px</div>
+  <div class="grid-col-fill text-700 font-sans-1">example</div>
 </div>
 
-<div class="grid-row grid-gap flex-align-center text-400 padding-bottom-2 margin-bottom-2 border-bottom-1px border-gray-20">
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-sans-micro line-height-sans-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-sans-micro</code></div>
-    <div class="padding-top-105 font-mono-1 text-700">10px</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>3xs</code></div>
+  <div class="grid-col-2 text-300 font-sans-3">1</div>
+  <div class="grid-col-1 text-300 font-sans-3">12px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-3xs">Tallahassee</span>
   </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-serif-micro line-height-serif-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-serif-micro</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">10.46px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-mono-micro line-height-mono-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-mono-micro</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">9.53px</div>
-  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-3xs</code></div>
 </div>
 
-<div class="grid-row grid-gap flex-align-center text-400 padding-bottom-2 margin-bottom-2 border-bottom-1px border-gray-20">
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-sans-1 line-height-sans-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-sans-1</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-sans-3xs</code></div>
-    <div class="padding-top-105 font-mono-1 text-700">12px</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>2xs</code></div>
+  <div class="grid-col-2 text-300 font-sans-3">3</div>
+  <div class="grid-col-1 text-300 font-sans-3">14px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-2xs">Tallahassee</span>
   </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-serif-1 line-height-serif-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-serif-1</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px text-gray-90">font-serif-3xs</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">12.56px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-mono-1 line-height-mono-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-mono-1</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px text-gray-90">font-mono-3xs</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">11.43px</div>
-  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-2xs</code></div>
 </div>
 
-<div class="grid-row grid-gap flex-align-center text-400 padding-bottom-2 margin-bottom-2 border-bottom-1px border-gray-20">
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-sans-2 line-height-sans-1">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-sans-2</code></div>
-    <div class="padding-top-105 font-mono-1 text-700">13px</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>xs</code></div>
+  <div class="grid-col-2 text-300 font-sans-3">5</div>
+  <div class="grid-col-1 text-300 font-sans-3">16px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-xs">Tallahassee</span>
   </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-serif-2 line-height-serif-1">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-serif-2</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">13.60px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-mono-2 line-height-mono-1">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-mono-2</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">12.38px</div>
-  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-xs</code></div>
 </div>
 
-<div class="grid-row grid-gap flex-align-center text-400 padding-bottom-2 margin-bottom-2 border-bottom-1px border-gray-20">
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-sans-3 line-height-sans-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-sans-3</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-sans-2xs</code></div>
-    <div class="padding-top-105 font-mono-1 text-700">14px</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>sm</code></div>
+  <div class="grid-col-2 text-300 font-sans-3">6</div>
+  <div class="grid-col-1 text-300 font-sans-3">17px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-sm">Tallahassee</span>
   </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-serif-3 line-height-serif-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-serif-3</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-serif-2xs</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">14.65px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-mono-3 line-height-mono-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-mono-3</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-mono-2xs</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">13.33px</div>
-  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-sm</code></div>
 </div>
 
-<div class="grid-row grid-gap flex-align-center text-400 padding-bottom-2 margin-bottom-2 border-bottom-1px border-gray-20">
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-sans-4 line-height-sans-1">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-sans-4</code></div>
-    <div class="padding-top-105 font-mono-1 text-700">15px</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>md</code></div>
+  <div class="grid-col-2 text-300 font-sans-3">7</div>
+  <div class="grid-col-1 text-300 font-sans-3">18px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-md">Tallahassee</span>
   </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-serif-4 line-height-serif-1">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-serif-4</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">15.67px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-mono-4 line-height-mono-1">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-mono-4</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">14.28px</div>
-  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-md</code></div>
 </div>
 
-<div class="grid-row grid-gap flex-align-center text-400 padding-bottom-2 margin-bottom-2 border-bottom-1px border-gray-20">
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-sans-5 line-height-sans-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-sans-5</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-sans-xs</code></div>
-    <div class="padding-top-105 font-mono-1 text-700">16px</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>lg</code></div>
+  <div class="grid-col-2 text-300 font-sans-3">10</div>
+  <div class="grid-col-1 text-300 font-sans-3">24px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-lg">Tallahassee</span>
   </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-serif-5 line-height-serif-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-serif-5</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-serif-xs</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">16.74px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-mono-5 line-height-mono-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-mono-5</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-mono-xs</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">15.25px</div>
-  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-lg</code></div>
 </div>
 
-<div class="grid-row grid-gap flex-align-center text-400 padding-bottom-2 margin-bottom-2 border-bottom-1px border-gray-20">
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-sans-6 line-height-sans-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-sans-6</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-sans-sm</code></div>
-    <div class="padding-top-105 font-mono-1 text-700">17px</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>xl</code></div>
+  <div class="grid-col-2 text-300 font-sans-3">12</div>
+  <div class="grid-col-1 text-300 font-sans-3">32px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-xl">Tallahassee</span>
   </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-serif-6 line-height-serif-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-serif-6</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-serif-sm</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">17.78px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-mono-6 line-height-mono-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-mono-6</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-mono-sm</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">16.20px</div>
-  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-xl</code></div>
 </div>
 
-<div class="grid-row grid-gap flex-align-center text-400 padding-bottom-2 margin-bottom-2 border-bottom-1px border-gray-20">
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-sans-7 line-height-sans-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-sans-7</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-sans-md</code></div>
-    <div class="padding-top-105 font-mono-1 text-700">18px</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>2xl</code></div>
+  <div class="grid-col-2 text-300 font-sans-3">14</div>
+  <div class="grid-col-1 text-300 font-sans-3">40px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-2xl">Tallahassee</span>
   </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-serif-7 line-height-serif-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-serif-7</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-serif-md</code></div>
-  <div class="padding-top-105 font-mono-1 text-300">18.83px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-mono-7 line-height-mono-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-mono-7</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-mono-md</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">17.15px</div>
-  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-2xl</code></div>
 </div>
 
-<div class="grid-row grid-gap flex-align-center text-400 padding-bottom-2 margin-bottom-2 border-bottom-1px border-gray-20">
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-sans-8 line-height-sans-1">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-sans-8</code></div>
-    <div class="padding-top-105 font-mono-1 text-700">20px</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>3xl</code></div>
+  <div class="grid-col-2 text-300 font-sans-3">16</div>
+  <div class="grid-col-1 text-300 font-sans-3">56px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-3xl">Utica</span>
   </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-serif-8 line-height-serif-1">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-serif-8</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">20.92px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-mono-8 line-height-mono-1">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-mono-8</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">19.05px</div>
-  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-3xl</code></div>
 </div>
 
-<div class="grid-row grid-gap flex-align-center text-400 padding-bottom-2 margin-bottom-2 border-bottom-1px border-gray-20">
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-sans-9 line-height-sans-1">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-sans-9</code></div>
-    <div class="padding-top-105 font-mono-1 text-700">22px</div>
+{:.margin-top-6}
+### Common typescale
+
+<div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-1 text-bold">
+  <div class="grid-col-2 text-700 font-sans-1">token</div>
+  <div class="grid-col-1 text-700 font-sans-1">px</div>
+  <div class="grid-col-fill text-700 font-sans-1">example</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>micro</code></div>
+  <div class="grid-col-1 text-300 font-sans-3">10px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-micro">Tallahassee</span>
   </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-serif-9 line-height-serif-1">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-serif-9</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">23.02px</div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-micro</code></div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>1</code></div>
+  <div class="grid-col-1 text-300 font-sans-3">12px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-1">Tallahassee</span>
   </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-mono-9 line-height-mono-1">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-mono-9</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">20.95px</div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-1</code></div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>2</code></div>
+  <div class="grid-col-1 text-300 font-sans-3">13px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-2">Tallahassee</span>
   </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-2</code></div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>3</code></div>
+  <div class="grid-col-1 text-300 font-sans-3">14px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-3">Tallahassee</span>
+  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-3</code></div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>4</code></div>
+  <div class="grid-col-1 text-300 font-sans-3">15px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-4">Tallahassee</span>
+  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-4</code></div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>5</code></div>
+  <div class="grid-col-1 text-300 font-sans-3">16px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-5">Tallahassee</span>
+  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-5</code></div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>6</code></div>
+  <div class="grid-col-1 text-300 font-sans-3">17px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-6">Tallahassee</span>
+  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-6</code></div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>7</code></div>
+  <div class="grid-col-1 text-300 font-sans-3">18px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-7">Tallahassee</span>
+  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-7</code></div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>8</code></div>
+  <div class="grid-col-1 text-300 font-sans-3">20px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-8">Tallahassee</span>
+  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-8</code></div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>9</code></div>
+  <div class="grid-col-1 text-300 font-sans-3">22px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-9">Tallahassee</span>
+  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-9</code></div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>10</code></div>
+  <div class="grid-col-1 text-300 font-sans-3">24px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-10">Tallahassee</span>
+  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-10</code></div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>11</code></div>
+  <div class="grid-col-1 text-300 font-sans-3">28px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-11">Tallahassee</span>
+  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-11</code></div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>12</code></div>
+  <div class="grid-col-1 text-300 font-sans-3">32px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-12">Tallahassee</span>
+  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-12</code></div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>13</code></div>
+  <div class="grid-col-1 text-300 font-sans-3">36px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-13">Tallahassee</span>
+  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-13</code></div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>14</code></div>
+  <div class="grid-col-1 text-300 font-sans-3">40px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-14">Tallahassee</span>
+  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-14</code></div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>15</code></div>
+  <div class="grid-col-1 text-300 font-sans-3">48px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-15">Tallahassee</span>
+  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-15</code></div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>16</code></div>
+  <div class="grid-col-1 text-300 font-sans-3">56px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-16">Tallahassee</span>
+  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-16</code></div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>17</code></div>
+  <div class="grid-col-1 text-300 font-sans-3">64px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-17">Tallahassee</span>
+  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-17</code></div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>18</code></div>
+  <div class="grid-col-1 text-300 font-sans-3">80px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-18">Utica</span>
+  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-18</code></div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>19</code></div>
+  <div class="grid-col-1 text-300 font-sans-3">120px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-19">Utica</span>
+  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-19</code></div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>20</code></div>
+  <div class="grid-col-1 text-300 font-sans-3">140px</div>
+  <div class="grid-col-fill">
+    <span class="font-sans-20">Utica</span>
+  </div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-20</code></div>
 </div>
 
-<div class="grid-row grid-gap flex-align-center text-400 padding-bottom-2 margin-bottom-2 border-bottom-1px border-gray-20">
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-sans-10 line-height-sans-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-sans-10</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-sans-lg</code></div>
-  <div class="padding-top-105 font-mono-1 text-700">24px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-serif-10 line-height-serif-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-serif-10</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-serif-lg</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">25.10px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-mono-10 line-height-mono-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-mono-10</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-mono-lg</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">22.87px</div>
-  </div>
-</div>
 
-<div class="grid-row grid-gap flex-align-center text-400 padding-bottom-2 margin-bottom-2 border-bottom-1px border-gray-20">
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-sans-11 line-height-sans-1">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-sans-11</code></div>
-    <div class="padding-top-105 font-mono-1 text-700">28px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-serif-11 line-height-serif-1">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-serif-11</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">29.29px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-mono-11 line-height-mono-1">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-mono-11</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">26.67px</div>
-  </div>
-</div>
 
-<div class="grid-row grid-gap flex-align-center text-400 padding-bottom-2 margin-bottom-2 border-bottom-1px border-gray-20">
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-sans-12 line-height-sans-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-sans-12</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-sans-xl</code></div>
-    <div class="padding-top-105 font-mono-1 text-700">32px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-serif-12 line-height-serif-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-serif-12</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-serif-xl</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">33.48px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-mono-12 line-height-mono-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-mono-12</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-mono-xl</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">30.48px</div>
-  </div>
-</div>
+{:.margin-top-6}
+### Using spacing units in utilities, settings, and component Sass
+You'll access USWDS typecale units using a few different techniques, depending on your situation and coding style.
 
-<div class="grid-row grid-gap flex-align-center text-400 padding-bottom-2 margin-bottom-2 border-bottom-1px border-gray-20">
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-sans-13 line-height-sans-1">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-sans-13</code></div>
-    <div class="padding-top-105 font-mono-1 text-700">36px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-serif-13 line-height-serif-1">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-serif-13</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">37.66px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-mono-13 line-height-mono-1">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-mono-13</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">34.3px</div>
-  </div>
-</div>
+{:.margin-bottom-0}
+#### Settings
 
-<div class="grid-row grid-gap flex-align-center text-400 padding-bottom-2 margin-bottom-2 border-bottom-1px border-gray-20">
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-sans-14 line-height-sans-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-sans-14</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-sans-2xl</code></div>
-  <div class="padding-top-105 font-mono-1 text-700">40px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-serif-14 line-height-serif-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-serif-14</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-serif-2xl</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">41.85px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-mono-14 line-height-mono-1 text-gray-90">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-mono-14</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-mono-2xl</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">38.10px</div>
-  </div>
-</div>
+{:.margin-top-05}
+Use the spacing unit token when assigning a spacing unit to a settings variable.
 
-<div class="grid-row grid-gap flex-align-center text-400 padding-bottom-2 margin-bottom-2 border-bottom-1px border-gray-20">
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-sans-15 line-height-sans-1">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-sans-15</code></div>
-    <div class="padding-top-105 font-mono-1 text-700">48px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-serif-15 line-height-serif-1">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-serif-15</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">50.22px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-mono-15 line-height-mono-1">Tuscaloosa</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-mono-15</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">45.73px</div>
-  </div>
-</div>
+{:.maxw-mobile-lg}
+```
+$theme-type-scale-micro:         1;
+$theme-type-scale-smallest:      3;
+$theme-type-scale-smaller:       5;
+$theme-type-scale-small:         6;
+$theme-type-scale-base:          7;
+$theme-type-scale-large:         10;
+$theme-type-scale-larger:        12;
+$theme-type-scale-largest:       14;
+$theme-type-scale-mega:          16;
+```
 
-<div class="grid-row grid-gap flex-align-center text-400 padding-bottom-2 margin-bottom-2 border-bottom-1px border-gray-20">
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-sans-16 line-height-sans-1">Utica</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-sans-16</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-sans-3xl</code></div>
-    <div class="padding-top-105 font-mono-1 text-700">56px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-serif-16 line-height-serif-1">Utica</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-serif-16</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-serif-3xl</code></div>
-  <div class="padding-top-105 font-mono-1 text-300">58.59px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-mono-16 line-height-mono-1">Utica</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-mono-16</code></div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2 bg-white border-1px">font-mono-3xl</code></div>
-  <div class="padding-top-105 font-mono-1 text-300">53.35px</div>
-  </div>
-</div>
+{:.margin-bottom-0.margin-top-4}
+#### Utilities
 
-<div class="grid-row grid-gap flex-align-center text-400 padding-bottom-2 margin-bottom-2 border-bottom-1px border-gray-20">
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-sans-17 line-height-sans-1">Utica</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-sans-17</code></div>
-    <div class="padding-top-105 font-mono-1 text-700">64px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-serif-17 line-height-serif-1">Utica</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-serif-17</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">66.96px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-mono-17 line-height-mono-1">Utica</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-mono-17</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">60.97px</div>
-  </div>
-</div>
+{:.margin-top-05}
+Use the unquoted spacing unit token as a suffix in utilities.
 
-<div class="grid-row grid-gap flex-align-center text-400 padding-bottom-2 margin-bottom-2 border-bottom-1px border-gray-20">
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-sans-18 line-height-sans-1">Utica</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-sans-18</code></div>
-    <div class="padding-top-105 font-mono-1 text-700">80px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-serif-18 line-height-serif-1">Utica</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-serif-18</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">83.67px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-mono-18 line-height-mono-1">Utica</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-mono-18</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">76.22px</div>
-  </div>
-</div>
+{:.maxw-mobile-lg}
+```
+.margin-x-neg-1
+.maxw-tablet
+.padding-top-2px
+.padding-y-05
+```
 
-<div class="grid-row grid-gap text-400 padding-bottom-2 margin-bottom-2 border-bottom-1px border-gray-20">
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-sans-19 line-height-sans-1">LA</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-sans-19</code></div>
-    <div class="padding-top-105 font-mono-1 text-700">120px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-serif-19 line-height-serif-1">LA</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-serif-19</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">125.55px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-mono-19 line-height-mono-1">LA</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-mono-19</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">114.32px</div>
-  </div>
-</div>
+{:.margin-bottom-0.margin-top-4}
+#### Variables
 
-<div class="grid-row grid-gap text-400 padding-bottom-2 margin-bottom-2 border-bottom-1px border-gray-20">
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-sans-20 line-height-sans-1">LA</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-sans-20</code></div>
-    <div class="padding-top-105 font-mono-1 text-700">140px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-serif-20 line-height-serif-1">LA</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-serif-20</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">146.47px</div>
-  </div>
-  <div class="grid-col-4 display-flex flex-column flex-justify-end">
-    <div class="font-mono-20 line-height-mono-1">LA</div>
-    <div class="font-mono-1 padding-top-2"><code class="txt-code font-mono-2">font-mono-20</code></div>
-    <div class="padding-top-105 font-mono-1 text-300">133.37px</div>
-  </div>
-</div>
+{:.margin-top-05}
+Add the unquoted spacing unit token as a suffix to the `$units-` variable.
 
-<div class="grid-row grid-gap-lg margin-top-4">
-  <div class="grid-col-6 font-sans-6 line-height-sans-5 text-300">
-    In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. I have a lurking suspicion that Leonidas W. Smiley is a myth; that my friend never knew such a personage; and that he only conjectured that, if I asked old Wheeler about him, it would remind him of his infamous Jim Smiley, and he would go to work and bore me nearly to death with some infernal reminiscence of him as long and tedious as it should be useless to me. If that was the design, it certainly succeeded.
-  </div>
-  <div class="grid-col-6 font-serif-6 line-height-serif-5">
-    In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. I have a lurking suspicion that Leonidas W. Smiley is a myth; that my friend never knew such a personage; and that he only conjectured that, if I asked old Wheeler about him, it would remind him of his infamous Jim Smiley, and he would go to work and bore me nearly to death with some infernal reminiscence of him as long and tedious as it should be useless to me. If that was the design, it certainly succeeded.
-  </div>
-</div>
-<div class="grid-row grid-gap-lg margin-top-2">
-  <div class="grid-col-6 font-sans-6 line-height-sans-5 text-400">
-    I found Simon Wheeler dozing comfortably by the bar-room stove of the old, dilapidated tavern in the ancient mining camp of Angel's, and I noticed that he was fat and bald-headed, and had an expression of winning gentleness and simplicity upon his tranquil countenance. He roused up and gave me good-day. I told him a friend of mine had commissioned me to make some inquiries about a cherished companion of his boyhood named Leonidas W. Smiley Rev. Leonidas W. Smiley a young minister of the Gospel, who he had heard was at one time a resident of Angel's Camp. I added that, if Mr. Wheeler could tell me any thing about this Rev. Leonidas W. Smiley, I would feel under many obligations to him.
-  </div>
-  <div class="grid-col-6 font-serif-6 line-height-serif-5">
-    I found Simon Wheeler dozing comfortably by the bar-room stove of the old, dilapidated tavern in the ancient mining camp of Angel's, and I noticed that he was fat and bald-headed, and had an expression of winning gentleness and simplicity upon his tranquil countenance. He roused up and gave me good-day. I told him a friend of mine had commissioned me to make some inquiries about a cherished companion of his boyhood named Leonidas W. Smiley Rev. Leonidas W. Smiley a young minister of the Gospel, who he had heard was at one time a resident of Angel's Camp. I added that, if Mr. Wheeler could tell me any thing about this Rev. Leonidas W. Smiley, I would feel under many obligations to him.
-  </div>
-</div>
-<div class="grid-row grid-gap-lg margin-top-4 padding-top-4 border-top">
-  <div class="grid-col-4 font-sans-3 line-height-sans-5 text-400">
-    <span class="prose-graf-intro">I found Simon Wheeler</span> dozing comfortably by the bar-room stove of the old, dilapidated tavern in the ancient mining camp of Angel's, and I noticed that he was fat and bald-headed, and had an expression of winning gentleness and simplicity upon his <span class="text-bold text-underline font-sans-3">tranquil countenance</span>. He roused up and gave me good-day. I told him a friend of mine had commissioned me to make some inquiries about a cherished companion of his boyhood named Leonidas W. Smiley Rev. Leonidas W. Smiley a young minister of the Gospel, who he had heard was at one time a resident of Angel's Camp. I added that, if Mr. Wheeler could tell me any thing about this Rev. Leonidas W. Smiley, <span class="text-italic">I would feel under many obligations to him.</span> <span class="token">EOF</span>
-  </div>
-  <div class="grid-col-4 font-serif-3 line-height-serif-5">
-    <span class="prose-graf-intro">I found Simon Wheeler</span> dozing comfortably by the bar-room stove of the old, dilapidated tavern in the ancient mining camp of Angel's, and I noticed that he was fat and bald-headed, and had an expression of winning gentleness and simplicity upon his <span class="text-bold text-underline font-sans-3 cursor-pointer hover:text-red-warm-50v">tranquil countenance</span>. He roused up and gave me good-day. I told him a friend of mine had commissioned me to make some inquiries about a cherished companion of his boyhood named Leonidas W. Smiley Rev. Leonidas W. Smiley a young minister of the Gospel, who he had heard was at one time a resident of Angel's Camp. I added that, if Mr. Wheeler could tell me any thing about this Rev. Leonidas W. Smiley, <span class="text-italic">I would feel under many obligations to him.</span> <span class="token">EOF</span>
-  </div>
-  <div class="grid-col-4 font-mono-3 line-height-mono-5">
-    <span class="prose-graf-intro">I found Simon Wheeler</span> dozing comfortably by the bar-room stove of the old, dilapidated tavern in the ancient mining camp of Angel's, and I noticed that he was fat and bald-headed, and had an expression of winning gentleness and simplicity upon his <span class="text-bold text-underline font-sans-3">tranquil countenance</span>. He roused up and gave me good-day. I told him a friend of mine had commissioned me to make some inquiries about a cherished companion of his boyhood named Leonidas W. Smiley Rev. Leonidas W. Smiley a young minister of the Gospel, who he had heard was at one time a resident of Angel's Camp. I added that, if Mr. Wheeler could tell me any thing about this Rev. Leonidas W. Smiley, <span class="text-italic">I would feel under many obligations to him.</span> <span class="token">EOF</span>
-  </div>
-</div>
+{:.maxw-mobile-lg}
+```
+margin-left: $units-neg-1;
+max-width: $units-tablet;
+padding-top: $units-05;
+```
+
+{:.margin-bottom-0.margin-top-4}
+#### Functions
+
+{:.margin-top-05}
+Use the `units()` function with spacing unit tokens.
+
+Tokens `'05'`, `'105'`, and `'205'` and any `neg-` token may also use their unquoted numeric equivalent: `0.5`, `1.5`, `2.5`, `-0.5`, `-1`, etc.
+
+{:.maxw-mobile-lg}
+```
+margin-left: units('neg-1');
+margin-left: units(-1);
+padding-top: units('05');
+padding-top: units(0.5);
+max-width: units('tablet');
+```
+
+{:.margin-bottom-0.margin-top-4}
+#### Utility mixins
+
+{:.margin-top-05}
+Utility mixins accept spacing unit tokens.
+
+Tokens `'05'`, `'105'`, and `'205'` and any `neg-` token may also use their numeric equivalents: `0.5`, `1.5`, `2.5`, `-0.5`, `-1`, etc.
+
+{:.maxw-mobile-lg}
+```
+@include u-border-top('05', $primary-darker);
+@include u-margin-x('neg-1');
+@include u-margin-x(-1);
+@include u-maxw('tablet');
+@include u-padding-top('05');
+@include u-padding-top(0.5);
+@include u-padding-y(2);
+```

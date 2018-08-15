@@ -146,7 +146,10 @@ body {
   li > button {
     @include button-unstyled;
     font-weight: $font-normal;
-    padding: 1.4rem 1.5rem 1rem 1.8rem;
+    padding-bottom: 1rem;
+    padding-left: 1.8rem;
+    padding-right: 1.5rem;
+    padding-top: 1.4rem;
 
     &:hover {
       background-color: $color-gray-lightest;
@@ -318,12 +321,6 @@ body {
   > h2 {
     color: $color-primary-darker;
   }
-
-  section {
-    > .tooltip {
-      margin-top: 56px;
-    }
-  }
 }
 
 .components-library-link {
@@ -375,18 +372,6 @@ body {
   background-color: $color-green-lightest;
 }
 
-h1 + .tooltip {
-  a {
-    margin-top: 1.7rem;
-  }
-}
-
-h2 + .tooltip {
-  a {
-    margin-top: 1.3rem;
-  }
-}
-
 .heading-margin-alt {
   margin-top: 6rem;
 }
@@ -400,15 +385,13 @@ h2 + .tooltip {
   margin-top: 0;
 }
 
-a {
-  &.cta {
-    img {
-      height: 1.5rem;
-      margin-right: 0.4rem;
-      position: relative;
-      top: 2px;
-      vertical-align: baseline;
-    }
+.cta {
+  img {
+    height: 1.5rem;
+    margin-right: 0.4rem;
+    position: relative;
+    top: 2px;
+    vertical-align: baseline;
   }
 }
 
@@ -1042,22 +1025,20 @@ code {
     letter-spacing: -0.2em;
     content: '\00a0';
   }
-}
 
-.highlight {
-  max-width: $lead-max-width;
-}
-
-a {
-  code {
+  a & {
     @include u-border(1px, $blue-50v);
     @include u-bg(transparent);
 
     &:hover {
       @include u-bg($blue-50v);
-      @include u-text(white);
+      @include u-text('white');
     }
   }
+}
+
+.highlight {
+  max-width: $lead-max-width;
 }
 
 // Code snippet boxes ----------------- //
@@ -1334,6 +1315,7 @@ a {
 .page-home {
   .usa-graphic_list {
     .usa-media_block-body {
+      // scss-lint:disable SelectorDepth
       > *:first-child {
         font-size: $media-block-header-font-size;
         margin-top: 0;
@@ -1392,6 +1374,7 @@ a {
 
   // Override for 4x1 media grid when it collapses to 2x2
   @media screen and (max-width: $large-screen) and (min-width: $medium-screen) {
+    // scss-lint:disable SelectorDepth
     .usa-graphic_list .usa-graphic_list-row .usa-media_block:nth-child(-n+2) {
       margin-bottom: 6rem;
     }
@@ -1503,7 +1486,7 @@ a {
 // Override max-width to ensure code blocks are wide enough
 .page-for-developers {
   ol {
-    max-width: 100% !important;
+    max-width: 100% !important; // scss-lint:disable ImportantRule
 
     p {
       max-width: $text-max-width;
@@ -1541,6 +1524,7 @@ a {
     }
   }
 
+  // scss-lint:disable SelectorDepth
   [class*="grid-gap"] {
     [class*="grid-col"] > * {
       background-color: $color-white;
@@ -1555,55 +1539,7 @@ a {
 .page-page-templates {
   .preview {
     img {
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    }
-  }
-}
-
-// Custom tooltip styles -------------- //
-
-// Tooltip container
-.tooltip {
-  display: inline-block;
-  position: absolute;
-
-  // Show the tooltip text when you mouse over the tooltip container
-  &:hover {
-    .tooltip-text {
-      opacity: 1;
-    }
-  }
-}
-
-.tooltip-text {
-  display: none;
-
-  @include media($medium-screen) {
-    @include margin(0 null 0 20px);
-    background-color: $color-gray-dark;
-    border-radius: $border-radius;
-    bottom: 100%;
-    color: $color-white;
-    display: block;
-    font-size: 14px;
-    left: 50%;
-    padding: 7px 10px;
-    width: 267px;
-    opacity: 0;
-    position: absolute; // Position the tooltip text
-    transition: all 0.1s ease-in-out;
-    transition-delay: 0.1s;
-    z-index: 1;
-
-    &::after {
-      border-width: 5px;
-      border-style: solid;
-      border-color: $color-base transparent transparent transparent;
-      content: ' ';
-      left: 10%;
-      margin-left: -12px;
-      position: absolute;
-      top: 100%; // At the bottom of the tooltip
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); // scss-lint:disable ColorVariable
     }
   }
 }
@@ -1619,7 +1555,7 @@ a {
 // Demo fixed footer
 .demo-footer {
   background-color: $color-gray-dark;
-  box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.5); // scss-lint:disable ColorVariable
   bottom: 0;
   position: fixed;
   width: 100%;
@@ -1835,7 +1771,7 @@ strong {
 }
 
 .output-token {
-  @include u-bg(white);
+  @include u-bg('white');
   @include u-border(1px, $gray-10);
   @include u-font('mono', 4);
   @include u-padding-x(0.5);
@@ -1859,7 +1795,7 @@ strong {
   @include u-padding-y(0);
   @include u-padding-x(.5);
   @include u-radius(sm);
-  @include u-text(white);
+  @include u-text('white');
 }
 
 // Ensure that inline lists do not have a bottom margin
@@ -1880,14 +1816,14 @@ li {
 }
 
 .utilities-properties {
-  @include u-bg(white);
+  @include u-bg('white');
   @include u-border(1px, $gray-10);
   @include u-padding(2);
   @include u-radius(md);
 }
 
 .utilities-property {
-  @include u-bg(white);
+  @include u-bg('white');
   @include u-display(inline-block);
   @include u-margin-top(0);
   @include u-padding(.5);
@@ -1909,6 +1845,18 @@ li {
   @include u-font(serif, 8);
   @include u-margin(0);
   @include u-text(normal);
+
+  code {
+    @include u-bg('white');
+    @include u-border(1px);
+    @include u-display(inline-block);
+    @include u-font(mono, 6);
+    @include u-margin-right(2px);
+    @include u-padding-x(0);
+    @include u-padding-y(2px);
+    @include u-radius(md);
+    @include u-text(light);
+  }
 }
 
 .utilities-section-helper {
@@ -1919,7 +1867,7 @@ li {
 }
 
 .utility {
-  @include u-bg(white);
+  @include u-bg('white');
   @include u-border(1px, $gray-10);
   @include u-margin-y(2);
   @include u-padding-bottom(1);
@@ -1971,7 +1919,7 @@ li {
 
 .utility-scope-button-disabled {
   @extend .utility-scope-button;
-  @include u-bg(white);
+  @include u-bg('white');
   @include u-border(1px, $gray-20);
   @include u-text($gray-20, strike);
 }
@@ -1983,26 +1931,12 @@ li {
     @extend .utility-scope-button;
     @include add-font-smoothing;
     @include u-bg($blue-50v);
-    @include u-text(white, no-underline);
+    @include u-text('white', no-underline);
 
     &:hover {
       @include u-bg($gray-80);
-      @include u-text(white);
+      @include u-text('white');
     }
-  }
-}
-
-.utilities-section-title {
-  code {
-    @include u-bg(white);
-    @include u-border(1px);
-    @include u-display(inline-block);
-    @include u-font(mono, 6);
-    @include u-margin-right(2px);
-    @include u-padding-x(0);
-    @include u-padding-y(2px);
-    @include u-radius(md);
-    @include u-text(light);
   }
 }
 
@@ -2042,7 +1976,7 @@ li {
 
 .utility-value-color {
   @extend .utility-class;
-  @include u-bg(white);
+  @include u-bg('white');
   @include u-border(1px, $gray-10);
   @include u-margin-top(0);
   @include u-text(light, no-wrap, lowercase);

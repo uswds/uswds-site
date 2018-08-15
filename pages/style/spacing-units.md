@@ -3,142 +3,388 @@ permalink: /style/spacing-units/
 layout: styleguide
 title: Spacing units
 category: Style
-lead: Oh hai
+lead: USWDS spacing units are based on multiples of 8px, with additional spacing units at small sizes
 type: docs
+subnav:
+- text: Using spacing units
+  href: '#using-spacing-units-in-utilities-settings-and-component-sass'
+- text: Settings
+  href: '#settings'
+- text: Utilities
+  href: '#utilities'
+- text: Variables
+  href: '#variables'
+- text: Functions
+  href: '#functions'
+- text: Utility mixins
+  href: '#utility-mixins'
 ---
 
-<p class="line-height-sans-4 text-300 margin-bottom-2">Any utility that accepts a spacing value uses the following USWDS spacing units. These values are common to all USWDS projects and are based on multiples of 8px. They are the only values we use to build official components. Any components <a class="text-gray-90 underline-gray-30" href="#0">we accept back into the system</a> need to be built with these common spacing units.</p>
-<p class="line-height-sans-4 text-300 margin-bottom-6">You can output negative values with a <code class="txt-code">neg-</code> prefix, like <code class="txt-code">margin-x-neg-2</code>.</p>
-<div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px">
-  <div class="grid-col-2 text-700 size-sans-1">utility suffix</div>
-  <div class="grid-col-2 text-700 size-sans-1">spacing units</div>
-  <div class="grid-col-1 text-700 size-sans-1">pixels</div>
-  <div class="grid-col-fill text-700 size-sans-1">example line</div>
-  <div class="grid-col-3 text-700 size-sans-1">example utility</div>
+Any spacing value in utilities or component CSS should use the following USWDS spacing units. These values are common to all USWDS projects and are based on multiples of 8px. They are the only values we use to build official components. Any components we accept back into the system need to be built with these common spacing units.
+
+Values above `2px` are output as the eqivaluent value in rem. For instance, a value of 2 units would be output as `1.6rem` with `$theme-base-font-size` set to `10px` and would be output as `1rem` with `$theme-base-font-size` set to `16px` or with `$theme-respect-user-font-size` set to `true`.
+
+<div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-6 text-bold">
+  <div class="grid-col-2 text-700 font-sans-1">spacing units</div>
+  <div class="grid-col-1 text-700 font-sans-1">px</div>
+  <div class="grid-col-2 text-700 font-sans-1">token</div>
+  <div class="grid-col-fill text-700 font-sans-1">example</div>
 </div>
+
+
+
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 size-mono-3"><span class="txt-code text-300">1px</span></div>
-  <div class="grid-col-2 text-300 size-sans-3">—</div>
-  <div class="grid-col-1 text-300 size-sans-3">1px</div>
+  <div class="grid-col-2 text-300 font-sans-3">—</div>
+  <div class="grid-col-1 text-300 font-sans-3">1px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'1px'</span></div>
   <div class="grid-col-fill">
     <span class="display-block width-full height-1px bg-blue-60v"></span>
   </div>
-  <div class="grid-col-3 text-300 size-mono-3">bottom-1px</div>
 </div>
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 size-mono-3"><span class="txt-code text-300">2px</span></div>
-  <div class="grid-col-2 text-300 size-sans-3">—</div>
-  <div class="grid-col-1 text-300 size-sans-3">2px</div>
+  <div class="grid-col-2 text-300 font-sans-3">—</div>
+  <div class="grid-col-1 text-300 font-sans-3">2px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">2px</span></div>
   <div class="grid-col-fill">
     <span class="display-block width-full height-2px bg-blue-60v"></span>
   </div>
-  <div class="grid-col-3 text-300 size-mono-3">border-top-2px</div>
 </div>
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 size-mono-3"><span class="txt-code text-300">05</span></div>
-  <div class="grid-col-2 text-300 size-sans-3">0.5 spacing units</div>
-  <div class="grid-col-1 text-300 size-sans-3">4px</div>
+  <div class="grid-col-2 text-300 font-sans-3">0.5</div>
+  <div class="grid-col-1 text-300 font-sans-3">4px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'05'</span></div>
   <div class="grid-col-fill">
     <span class="display-block width-full height-05 bg-blue-60v"></span>
   </div>
-  <div class="grid-col-3 text-300 size-mono-3">padding-y-05</div>
 </div>
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 size-mono-3"><span class="txt-code text-300">1</span></div>
-  <div class="grid-col-2 text-300 size-sans-3">1 spacing unit</div>
-  <div class="grid-col-1 text-300 size-sans-3">8px</div>
+  <div class="grid-col-2 text-300 font-sans-3">1</div>
+  <div class="grid-col-1 text-300 font-sans-3">8px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">1</span></div>
   <div class="grid-col-fill">
     <span class="display-block width-full height-1 bg-blue-60v"></span>
   </div>
-  <div class="grid-col-3 text-300 size-mono-3">padding-x-1</div>
 </div>
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 size-mono-3"><span class="txt-code text-300">105</span></div>
-  <div class="grid-col-2 text-300 size-sans-3">1.5 spacing units</div>
-  <div class="grid-col-1 text-300 size-sans-3">12px</div>
+  <div class="grid-col-2 text-300 font-sans-3">1.5</div>
+  <div class="grid-col-1 text-300 font-sans-3">12px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'105'</span></div>
   <div class="grid-col-fill">
     <span class="display-block width-full height-105 bg-blue-60v"></span>
   </div>
-  <div class="grid-col-3 text-300 size-mono-3">margin-top-105</div>
 </div>
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 size-mono-3"><span class="txt-code text-300">2</span></div>
-  <div class="grid-col-2 text-300 size-sans-3">2 spacing units</div>
-  <div class="grid-col-1 text-300 size-sans-3">16px</div>
+  <div class="grid-col-2 text-300 font-sans-3">2</div>
+  <div class="grid-col-1 text-300 font-sans-3">16px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">2</span></div>
   <div class="grid-col-fill">
     <span class="display-block width-full height-2 bg-blue-60v"></span>
   </div>
-  <div class="grid-col-3 text-300 size-mono-3">square-2</div>
 </div>
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 size-mono-3"><span class="txt-code text-300">205</span></div>
-  <div class="grid-col-2 text-300 size-sans-3">2.5 spacing units</div>
-  <div class="grid-col-1 text-300 size-sans-3">20px</div>
+  <div class="grid-col-2 text-300 font-sans-3">2.5</div>
+  <div class="grid-col-1 text-300 font-sans-3">20px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'205'</span></div>
   <div class="grid-col-fill">
     <span class="display-block width-full height-205 bg-blue-60v"></span>
   </div>
-  <div class="grid-col-3 text-300 size-mono-3">square-2</div>
 </div>
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 size-mono-3"><span class="txt-code text-300">3</span></div>
-  <div class="grid-col-2 text-300 size-sans-3">3 spacing units</div>
-  <div class="grid-col-1 text-300 size-sans-3">24px</div>
+  <div class="grid-col-2 text-300 font-sans-3">3</div>
+  <div class="grid-col-1 text-300 font-sans-3">24px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">3</span></div>
   <div class="grid-col-fill">
     <span class="display-block width-full height-3 bg-blue-60v"></span>
   </div>
-  <div class="grid-col-3 text-300 size-mono-3">margin-left-neg-3</div>
 </div>
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 size-mono-3"><span class="txt-code text-300">4</span></div>
-  <div class="grid-col-2 text-300 size-sans-3">4 spacing units</div>
-  <div class="grid-col-1 text-300 size-sans-3">32px</div>
+  <div class="grid-col-2 text-300 font-sans-3">4</div>
+  <div class="grid-col-1 text-300 font-sans-3">32px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">4</span></div>
   <div class="grid-col-fill">
     <span class="display-block width-full height-4 bg-blue-60v"></span>
   </div>
-  <div class="grid-col-3 text-300 size-mono-3">u-minh-4</div>
 </div>
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 size-mono-3"><span class="txt-code text-300">5</span></div>
-  <div class="grid-col-2 text-300 size-sans-3">5 spacing units</div>
-  <div class="grid-col-1 text-300 size-sans-3">40px</div>
+  <div class="grid-col-2 text-300 font-sans-3">5</div>
+  <div class="grid-col-1 text-300 font-sans-3">40px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">5</span></div>
   <div class="grid-col-fill">
     <span class="display-block width-full height-5 bg-blue-60v"></span>
   </div>
-  <div class="grid-col-3 text-300 size-mono-3">tablet:margin-top-4</div>
 </div>
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 size-mono-3"><span class="txt-code text-300">6</span></div>
-  <div class="grid-col-2 text-300 size-sans-3">6 spacing units</div>
-  <div class="grid-col-1 text-300 size-sans-3">48px</div>
+  <div class="grid-col-2 text-300 font-sans-3">6</div>
+  <div class="grid-col-1 text-300 font-sans-3">48px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">6</span></div>
   <div class="grid-col-fill">
     <span class="display-block width-full height-6 bg-blue-60v"></span>
   </div>
-  <div class="grid-col-3 text-300 size-mono-3">text-indent-6</div>
 </div>
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 size-mono-3"><span class="txt-code text-300">7</span></div>
-  <div class="grid-col-2 text-300 size-sans-3">7 spacing units</div>
-  <div class="grid-col-1 text-300 size-sans-3">56px</div>
+  <div class="grid-col-2 text-300 font-sans-3">7</div>
+  <div class="grid-col-1 text-300 font-sans-3">56px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">7</span></div>
   <div class="grid-col-fill">
     <span class="display-block width-full height-7 bg-blue-60v"></span>
   </div>
-  <div class="grid-col-3 text-300 size-mono-3">bottom-neg-7</div>
 </div>
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 size-mono-3"><span class="txt-code text-300">8</span></div>
-  <div class="grid-col-2 text-300 size-sans-3">8 spacing units</div>
-  <div class="grid-col-1 text-300 size-sans-3">64px</div>
+  <div class="grid-col-2 text-300 font-sans-3">8</div>
+  <div class="grid-col-1 text-300 font-sans-3">64px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">8</span></div>
   <div class="grid-col-fill">
     <span class="display-block width-full height-8 bg-blue-60v"></span>
   </div>
-  <div class="grid-col-3 text-300 size-mono-3">min-width-8</div>
 </div>
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 size-mono-3"><span class="txt-code text-300">9</span></div>
-  <div class="grid-col-2 text-300 size-sans-3">9 spacing units</div>
-  <div class="grid-col-1 text-300 size-sans-3">72px</div>
+  <div class="grid-col-2 text-300 font-sans-3">9</div>
+  <div class="grid-col-1 text-300 font-sans-3">72px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">9</span></div>
   <div class="grid-col-fill">
     <span class="display-block width-full height-9 bg-blue-60v"></span>
   </div>
-  <div class="grid-col-3 text-300 size-mono-3">tablet:circle-9</div>
 </div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">10</div>
+  <div class="grid-col-1 text-300 font-sans-3">80px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">10</span></div>
+  <div class="grid-col-fill">
+    <span class="display-block width-full height-10 bg-blue-60v"></span>
+  </div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">15</div>
+  <div class="grid-col-1 text-300 font-sans-3">120px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">15</span></div>
+  <div class="grid-col-fill">
+    <span class="display-block width-full height-15 bg-blue-60v"></span>
+  </div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">20</div>
+  <div class="grid-col-1 text-300 font-sans-3">160px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'card'</span></div>
+  <div class="grid-col-fill">—</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">30</div>
+  <div class="grid-col-1 text-300 font-sans-3">240px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'card-lg'</span></div>
+  <div class="grid-col-fill">—</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">40</div>
+  <div class="grid-col-1 text-300 font-sans-3">320px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'mobile'</span></div>
+  <div class="grid-col-fill">—</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">60</div>
+  <div class="grid-col-1 text-300 font-sans-3">480px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'mobile-lg'</span></div>
+  <div class="grid-col-fill">—</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">80</div>
+  <div class="grid-col-1 text-300 font-sans-3">640px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'tablet'</span></div>
+  <div class="grid-col-fill">—</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">110</div>
+  <div class="grid-col-1 text-300 font-sans-3">880px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'tablet-lg'</span></div>
+  <div class="grid-col-fill">—</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">128</div>
+  <div class="grid-col-1 text-300 font-sans-3">1024px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'desktop'</span></div>
+  <div class="grid-col-fill">—</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">150</div>
+  <div class="grid-col-1 text-300 font-sans-3">1200px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'desktop-lg'</span></div>
+  <div class="grid-col-fill">—</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">175</div>
+  <div class="grid-col-1 text-300 font-sans-3">1400px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'widescreen'</span></div>
+  <div class="grid-col-fill">—</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">—</div>
+  <div class="grid-col-1 text-300 font-sans-3">-1px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'neg-1px'</span></div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">—</div>
+  <div class="grid-col-1 text-300 font-sans-3">-2px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'neg-2px'</span></div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">-0.5</div>
+  <div class="grid-col-1 text-300 font-sans-3">-4px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'neg-05'</span></div>
+  <div class="grid-col-fill">—</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">-1</div>
+  <div class="grid-col-1 text-300 font-sans-3">-8px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'neg-1'</span></div>
+  <div class="grid-col-fill">—</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">-1.5</div>
+  <div class="grid-col-1 text-300 font-sans-3">-12px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'neg-105'</span></div>
+  <div class="grid-col-fill">—</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">-2</div>
+  <div class="grid-col-1 text-300 font-sans-3">-16px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'neg-2'</span></div>
+  <div class="grid-col-fill">—</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">-2.5</div>
+  <div class="grid-col-1 text-300 font-sans-3">-20px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'neg-205'</span></div>
+  <div class="grid-col-fill">—</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">-3</div>
+  <div class="grid-col-1 text-300 font-sans-3">-24px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'neg-3'</span></div>
+  <div class="grid-col-fill">—</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">-4</div>
+  <div class="grid-col-1 text-300 font-sans-3">-32px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'neg-4'</span></div>
+  <div class="grid-col-fill">—</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">-5</div>
+  <div class="grid-col-1 text-300 font-sans-3">-40px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'neg-5'</span></div>
+  <div class="grid-col-fill">—</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">-6</div>
+  <div class="grid-col-1 text-300 font-sans-3">-48px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'neg-6'</span></div>
+  <div class="grid-col-fill">—</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">-7</div>
+  <div class="grid-col-1 text-300 font-sans-3">-56px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'neg-7'</span></div>
+  <div class="grid-col-fill">—</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">-8</div>
+  <div class="grid-col-1 text-300 font-sans-3">-64px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'neg-8'</span></div>
+  <div class="grid-col-fill">—</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">-9</div>
+  <div class="grid-col-1 text-300 font-sans-3">-72px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'neg-9'</span></div>
+  <div class="grid-col-fill">—</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">-10</div>
+  <div class="grid-col-1 text-300 font-sans-3">-80px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'neg-10'</span></div>
+  <div class="grid-col-fill">—</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3">-15</div>
+  <div class="grid-col-1 text-300 font-sans-3">-120px</div>
+  <div class="grid-col-2 text-300 font-mono-3"><span class="txt-code text-300">'neg-15'</span></div>
+  <div class="grid-col-fill">—</div>
+</div>
+
+{:.margin-top-6}
+### Using spacing units in utilities, settings, and component Sass
+You'll access USWDS spacing units using a few different techniques, depending on your situation and coding style.
+
+{:.margin-bottom-0}
+#### Settings
+
+{:.margin-top-05}
+Use the spacing unit token when assigning a spacing unit to a settings variable. Tokens `'05'`, `'105'`, and `'205'` and any `neg-` token may also also use its unquoted numeric equivalent: `0.5`, `1.5`, `2.5`, `-0.5`, `-1`, etc. _You cannot use variables, functions, or mixins in theme settings._
+
+{:.maxw-mobile-lg}
+```
+$theme-nav-width:        'desktop';
+$theme-site-margins:     4;
+$theme-column-gap-small: 2px;
+$theme-column-gap-small: '05';
+$theme-column-gap-small: 0.5;
+$theme-column-gap:       2;
+```
+
+{:.margin-bottom-0.margin-top-4}
+#### Utilities
+
+{:.margin-top-05}
+Use the unquoted spacing unit token as a suffix in utilities.
+
+{:.maxw-mobile-lg}
+```
+.margin-x-neg-1
+.maxw-tablet
+.padding-top-2px
+.padding-y-05
+```
+
+{:.margin-bottom-0.margin-top-4}
+#### Variables
+
+{:.margin-top-05}
+Add the unquoted spacing unit token as a suffix to the `$units-` variable.
+
+{:.maxw-mobile-lg}
+```
+margin-left: $units-neg-1;
+max-width: $units-tablet;
+padding-top: $units-05;
+```
+
+{:.margin-bottom-0.margin-top-4}
+#### Functions
+
+{:.margin-top-05}
+Use the `units()` function with spacing unit tokens. Tokens `'05'`, `'105'`, and `'205'` and any `neg-` token may also also use its unquoted numeric equivalent: `0.5`, `1.5`, `2.5`, `-0.5`, `-1`, etc.
+
+{:.maxw-mobile-lg}
+```
+margin-left: units('neg-1');
+margin-left: units(-1);
+padding-top: units('05');
+padding-top: units(0.5);
+max-width: units('tablet');
+```
+
+{:.margin-bottom-0.margin-top-4}
+#### Utility mixins
+
+{:.margin-top-05}
+Utility mixins accept spacing unit tokens. Tokens `'05'`, `'105'`, and `'205'` and any `neg-` token may also also use their numeric equivalents: `0.5`, `1.5`, `2.5`, `-0.5`, `-1`, etc.
+
+{:.maxw-mobile-lg}
+```
+@include u-border-top('05', $primary-darker);
+@include u-margin-x('neg-1');
+@include u-margin-x(-1);
+@include u-maxw('tablet');
+@include u-padding-top('05');
+@include u-padding-top(0.5);
+@include u-padding-y(2);
+```

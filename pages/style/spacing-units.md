@@ -31,8 +31,6 @@ Values above `2px` are output as the eqivalent value in rem. For instance, a val
   <div class="grid-col-fill text-700 font-sans-1">example</div>
 </div>
 
-
-
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
   <div class="grid-col-1 text-300 font-sans-3">—</div>
   <div class="grid-col-1 text-300 font-sans-3">1px</div>
@@ -311,11 +309,11 @@ Values above `2px` are output as the eqivalent value in rem. For instance, a val
 </div>
 
 {:.margin-top-6}
-### Using spacing units in utilities, settings, and component Sass
+## Using spacing units in utilities, settings, and component Sass
 You'll access USWDS spacing units using a few different techniques, depending on your situation and coding style.
 
 {:.margin-bottom-0}
-#### Settings
+### Settings
 
 {:.margin-top-05}
 Use the spacing unit token when assigning a spacing unit to a settings variable.
@@ -333,7 +331,7 @@ $theme-column-gap:       2;
 ```
 
 {:.margin-bottom-0.margin-top-4}
-#### Utilities
+### Utilities
 
 {:.margin-top-05}
 Use the unquoted spacing unit token as a suffix in utilities.
@@ -347,7 +345,7 @@ Use the unquoted spacing unit token as a suffix in utilities.
 ```
 
 {:.margin-bottom-0.margin-top-4}
-#### Variables
+### Variables
 
 {:.margin-top-05}
 Add the unquoted spacing unit token as a suffix to the `$units-` variable.
@@ -360,7 +358,7 @@ padding-top: $units-05;
 ```
 
 {:.margin-bottom-0.margin-top-4}
-#### Functions
+### Functions
 
 {:.margin-top-05}
 Use the `units()` function with spacing unit tokens.
@@ -377,7 +375,7 @@ max-width: units('tablet');
 ```
 
 {:.margin-bottom-0.margin-top-4}
-#### Utility mixins
+### Utility mixins
 
 {:.margin-top-05}
 Utility mixins accept spacing unit tokens.

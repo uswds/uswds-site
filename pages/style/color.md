@@ -98,13 +98,14 @@ Base is a project's neutral color, typically some tint of gray, and usually used
 
 Primary, secondary, and accent colors can be thought of as falling into a proportional 60/30/10 relationship: about 60% of your site’s color would be the primary color family, about 30% would be the secondary color family, and about 10% would be the accent color families (`accent-warm` and `accent-cool`). Note that these proportions are for non-base colors. In many cases, the neutral base text color will be the predominant tone on your site.
 
-Each color family has seven possible lightness levels, from `lightest` to `darkest`, though not every family needs to include a color at each level. Some levels may be set to `false` in your project's theme settings. The default USWDS theme palette does not use every level for every family. The `primary` and `secndary` families also have a `vivid` variant available.
+Each color family has seven possible lightness grades, from `lightest` to `darkest`, though not every family needs to include a color at each grade. Some grades may be set to `false` in your project's theme settings. The default USWDS theme palette does not use every grade for every family. The `primary` and `secondary` families also have a `vivid` grade available.
 
 <div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-4 text-bold font-sans-1">
   <div class="grid-col-1">color</div>
-  <div class="grid-col-3">token</div>
+  <div class="grid-col-2">family token</div>
+  <div class="grid-col-2">grade token</div>
   <div class="grid-col-4">theme settings variable</div>
-  <div class="grid-col-3">common equivalent</div>
+  <div class="grid-col-2">common equivalent</div>
   <div class="grid-col-1 text-right">hex</div>
 </div>
 
@@ -115,13 +116,20 @@ Each color family has seven possible lightness levels, from `lightest` to `darke
   <span class="grid-col-1">
     <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
   </span>
-  <span class="grid-col-3">
-    <span class="utility-class">'{{ color.token }}'</span>
+  <span class="grid-col-2">
+    <span class="utility-class">'{{ color.family_token }}'</span>
+  </span>
+  <span class="grid-col-2">
+    {% if color.grade_token %}
+    <span class="utility-class">'{{ color.grade_token }}'</span>
+    {% else %}
+    <span>—</span>
+    {% endif %}
   </span>
   <span class="grid-col-4 font-mono-3">
     <span>{{ color.theme_var }}</span>
   </span>
-  <span class="grid-col-3 font-mono-3">
+  <span class="grid-col-2 font-mono-3">
     <span>{{ color.common }}</span>
   </span>
   <span class="grid-col-1 text-right font-mono-3">

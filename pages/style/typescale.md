@@ -32,7 +32,7 @@ subnav:
 
 The USWDS type scale is designed to display type at a consistent size regardless of the typeface. Project themes use a nine-step palette drawn from a 21-step common palette. These type scale values are the only values we use to build official components. Any components we accept back into the system need to be built with this type scale.
 
-Font size is output in `rem`. If you have `$theme-respect-user-font-size` set to `true` in your theme settings, the root font size is set to `100%` and is calculated based on `16px`. If `$theme-respect-user-font-size` set to `false`, the root font size is calculated based on the value of `theme-root-font-size`.
+Font size is output in `rem`. If you have `$theme-respect-user-font-size` set to `true` in your theme settings, the root font size is set to `100%` and typescale is calculated based on `16px`. If `$theme-respect-user-font-size` set to `false`, the root font size is set to the value of `$theme-root-font-size` and typescale is calculated based on that root.
 
 To make different typefaces appear the same size at each step of the scale, the absolute size of each step in the typescale varies from typeface to typeface. Each supported typeface is regularized to a target value set by the the size of common system fonts — specifically Apple's typeface San Francisco and  Google's typeface Roboto. Optically smaller faces like Source Sans Pro will have a relatively larger rem value at each step in the scale, and optically larger faces like Merriweather will have a relatively smaller rem value. The USWDS typeface Public Sans is developed to be optically similar to system fonts.
 

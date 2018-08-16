@@ -424,7 +424,7 @@ Next, set role-based tokens with the type-based theme variables.
 </div>
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
   <div class="grid-col-2 text-300 font-sans-3"><code>'alt'</code></div>
-  <div class="grid-col-4 text-300 font-sans-3">alternate pr0ject typeface</div>
+  <div class="grid-col-4 text-300 font-sans-3">alternate project typeface</div>
   <div class="grid-col-fill text-300 font-mono-3">$theme-font-alt</div>
 </div>
 

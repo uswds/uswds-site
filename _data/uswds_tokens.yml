@@ -155,33 +155,40 @@ colors:
       reverse: true
       var: $base-lightest
       common: gray-2
+      theme_var: $theme-color-base-lightest
     - token: base-lighter
       value: '#f0f0f0'
       reverse: true
       var: $base-lighter
       common: gray-5
+      theme_var: $theme-color-base-lighter
     - token: base-light
       value: '#e6e6e6'
       reverse: true
       var: $base-light
       common: gray-10
+      theme_var: $theme-color-base-light
     - token: base
       value: '#adadad'
       reverse: true
       var: $base
       common: gray-30
+      theme_var: $theme-color-base
     - token: base-dark
       value: '#757575'
       var: $base-dark
       common: gray-50
+      theme_var: $theme-color-base-dark
     - token: base-darker
       value: '#454545'
       var: $base-darker
       common: gray-70
+      theme_var: $theme-color-base-darker
     - token: base-darkest
       value: '#171717'
       var: $base-darkest
       common: gray-90
+      theme_var: $theme-color-base-darkest
     - token: ink
       value: '#171717'
       var: $ink
@@ -192,99 +199,121 @@ colors:
       reverse: true
       var: $primary-lighter
       common: blue-10
+      theme_var: $theme-color-primary-lighter
     - token: primary-light
       value: '#79bcf2'
       reverse: true
       var: $primary-light
       common: blue-30
+      theme_var: $theme-color-primary-light
     - token: primary
       value: '#0069b4'
       var: $primary
       common: blue-60v
+      theme_var: $theme-color-primary
     - token: primary-vivid
       value: '#0052de'
       var: $primary-vivid
       common: blue-warm-60v
+      theme_var: $theme-color-primary-vivid
     - token: primary-dark
       value: '#1e4f94'
       var: $primary-dark
       common: blue-warm-70v
+      theme_var: $theme-color-primary-dark
     - token: primary-darker
       value: '#112a4d'
       var: $primary-darker
       common: blue-warm-80v
+      theme_var: $theme-color-primary-darker
     - token: secondary-lighter
       value: '#f7ddda'
       reverse: true
       var: $secondary-lighter
       common: red-10
+      theme_var: $theme-color-secondary-lighter
     - token: secondary-light
       value: '#f28f88'
       reverse: true
       var: $secondary-light
       common: red-30
+      theme_var: $theme-color-secondary-light
     - token: secondary
       value: '#d83731'
       var: $secondary
       common: red-50
+      theme_var: $theme-color-secondary
     - token: secondary-vivid
       value: '#e82207'
       var: $secondary-vivid
       common: red-50v
+      theme_var: $theme-color-secondary-vivid
     - token: secondary-dark
       value: '#c31f0a'
       var: $secondary-dark
       common: red-60v
+      theme_var: $theme-color-secondary-dark
     - token: secondary-darker
       value: '#9c1503'
       var: $secondary-darker
       common: red-70v
+      theme_var: $theme-color-secondary-darker
     - token: accent-cool-lighter
       value: '#e8f7fa'
       var: $accent-cool-lighter
       reverse: true
       common: cyan-5
+      theme_var: $theme-accent-cool-lighter
     - token: accent-cool-light
       value: '#9ddceb'
       var: $accent-cool-light
       reverse: true
       common: cyan-20
+      theme_var: $theme-accent-cool-light
     - token: accent-cool
       value: '#02c2e8'
       var: $accent-cool
       reverse: true
       common: cyan-30v
+      theme_var: $theme-accent-cool
     - token: accent-cool-dark
       value: '#00abd1'
       var: $accent-cool-dark
       common: cyan-40v
+      theme_var: $theme-accent-cool-dark
     - token: accent-cool-darker
       value: '#2f6794'
       var: $accent-cool-darker
       common: blue-60
+      theme_var: $theme-accent-cool-darker
     - token: accent-warm-lighter
       value: '#fce2c5'
       var: $accent-warm-lighter
       reverse: true
       common: orange-10
+      theme_var: $theme-accent-cool-lighter
     - token: accent-warm-light
       value: '#ffba75'
       var: $accent-warm-light
       reverse: true
       common: orange-20v
+      theme_var: $theme-accent-warm-light
     - token: accent-warm
       value: '#ff9742'
       var: $accent-warm
       reverse: true
       common: orange-30v
+      theme_var: $theme-accent-warm
     - token: accent-warm-dark
       value: '#c25700'
       var: $accent-warm-dark
       common: orange-50v
+      theme_var: $theme-accent-warm-dark
     - token: accent-warm-darker
       value: '#73563e'
       var: $accent-warm-darker
       common: orange-60
+      theme_var: $theme-accent-warm-darker
   grayscale:
     - token: white
       value: '#ffffff'

@@ -6,6 +6,16 @@ category: Style
 lead: USWDS typescale consists of nine regularized theme settings drawn from a 21-step common scale
 type: docs
 subnav:
+- text: Theme typescale
+  href: '#theme-typescale'
+- text: Common typescale
+  href: '#common-typescale'
+- text: Setting theme typefaces
+  href: '#setting-theme-typeface-families'
+- text: Type-based family tokens
+  href: '#type-based family-tokens'
+- text: Role-based family tokens
+  href: '#role-based family-tokens'
 - text: Using type scale
   href: '#using-spacing-units-in-utilities-settings-and-component-sass'
 - text: Settings
@@ -28,7 +38,7 @@ To make different typefaces appear the same size at each step of the scale, the 
 
 Since both the `rem` and absolute `px` values change depending on the theme settings and the typeface, the following table displays only the `px` value of the target.
 
-### Theme typescale
+## Theme typescale
 The nine-step theme typescale should be sufficient for most project needs. First, try to use the theme typescale. If your projects needs require more than nine steps of typescale, use steps from the common typescale as nedded.
 
 <div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-4 text-bold">
@@ -129,7 +139,7 @@ The nine-step theme typescale should be sufficient for most project needs. First
 </div>
 
 {:.margin-top-6}
-### Common typescale
+## Common typescale
 
 <div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-1 text-bold">
   <div class="grid-col-2 text-700 font-sans-1">token</div>
@@ -308,14 +318,130 @@ The nine-step theme typescale should be sufficient for most project needs. First
 
 
 {:.margin-top-6}
-### Using spacing units in utilities, settings, and component Sass
+## Setting theme typeface families
+Since typescale is tied to the specific typeface, any technique that directly outputs a specific size must use both a typescale token and a type family token. Type family tokens are set with variables in your project's theme settings.
+
+The following typefaces have been regularized and are available in settings to the type-based settings variables:
+
+<div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-2 text-bold">
+  <div class="grid-col-3 text-700 font-sans-1">token</div>
+  <div class="grid-col-fill text-700 font-sans-1">font stack</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10 margin-top-2">
+  <div class="grid-col-3 text-300 font-sans-3"><code>'system'</code></div>
+  <div class="grid-col-fill text-300 font-mono-3">-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10 margin-top-2">
+  <div class="grid-col-3 text-300 font-sans-3"><code>'public-sans'</code></div>
+  <div class="grid-col-fill text-300 font-mono-3">'Public Sans Web', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10 margin-top-2">
+  <div class="grid-col-3 text-300 font-sans-3"><code>'source-sans-pro'</code></div>
+  <div class="grid-col-fill text-300 font-mono-3">'Source Sans Pro','Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10 margin-top-2">
+  <div class="grid-col-3 text-300 font-sans-3"><code>'helvetica'</code></div>
+  <div class="grid-col-fill text-300 font-mono-3">'Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10 margin-top-2">
+  <div class="grid-col-3 text-300 font-sans-3"><code>'georgia'</code></div>
+  <div class="grid-col-fill text-300 font-mono-3">'Georgia', 'Cambria', 'Times New Roman', 'Times', serif</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10 margin-top-2">
+  <div class="grid-col-3 text-300 font-sans-3"><code>'merriweather'</code></div>
+  <div class="grid-col-fill text-300 font-mono-3">'Merriweather Web', 'Georgia', 'Cambria', 'Times New Roman', 'Times', serif</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10 margin-top-2">
+  <div class="grid-col-3 text-300 font-sans-3"><code>'roboto-mono'</code></div>
+  <div class="grid-col-fill text-300 font-mono-3">'Roboto Mono Web', 'Bitstream Vera Sans Mono', 'Consolas', 'Courier', monospace</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10 margin-top-2">
+  <div class="grid-col-3 text-300 font-sans-3"><code>'tahoma'</code></div>
+  <div class="grid-col-fill text-300 font-mono-3">'Tahoma', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'</div>
+</div>
+
+### Type-based family tokens
+Each project can choose a family from the available typefaces for monospaced, sans-serif, serif, and condensed families. The value of any of these families can be set to `false` if that family isn't used in your project.
+
+<div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-2 text-bold">
+  <div class="grid-col-2 text-700 font-sans-1">token</div>
+  <div class="grid-col-4 text-700 font-sans-1">description</div>
+  <div class="grid-col-fill text-700 font-sans-1">settings variable</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>'mono'</code></div>
+  <div class="grid-col-4 text-300 font-sans-3">project monospace typeface</div>
+  <div class="grid-col-fill text-300 font-mono-3">$theme-font-mono</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>'sans'</code></div>
+  <div class="grid-col-4 text-300 font-sans-3">project sans-serif typeface</div>
+  <div class="grid-col-fill text-300 font-mono-3">$theme-font-sans</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>'serif'</code></div>
+  <div class="grid-col-4 text-300 font-sans-3">project serif typeface</div>
+  <div class="grid-col-fill text-300 font-mono-3">$theme-font-serif</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>'mono'</code></div>
+  <div class="grid-col-4 text-300 font-sans-3">project condensed typeface</div>
+  <div class="grid-col-fill text-300 font-mono-3">$theme-font-cond</div>
+</div>
+
+{:.maxw-mobile-lg}
+```
+$theme-font-mono:   'roboto-mono';
+$theme-font-sans:   'source-sans-pro';
+$theme-font-serif:  'merriweather';
+$theme-font-cond:   false;
+```
+
+### Role-based family tokens
+Next, set role-based tokens with the type-based theme variables.
+
+<div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-2 text-bold">
+  <div class="grid-col-2 text-700 font-sans-1">token</div>
+  <div class="grid-col-4 text-700 font-sans-1">description</div>
+  <div class="grid-col-fill text-700 font-sans-1">settings variable</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>'heading'</code></div>
+  <div class="grid-col-4 text-300 font-sans-3">project heading typeface</div>
+  <div class="grid-col-fill text-300 font-mono-3">$theme-font-heading</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>'body'</code></div>
+  <div class="grid-col-4 text-300 font-sans-3">project body typeface</div>
+  <div class="grid-col-fill text-300 font-mono-3">$theme-font-body</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>'code'</code></div>
+  <div class="grid-col-4 text-300 font-sans-3">project code typeface</div>
+  <div class="grid-col-fill text-300 font-mono-3">$theme-font-code</div>
+</div>
+<div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>'alt'</code></div>
+  <div class="grid-col-4 text-300 font-sans-3">alternate pr0ject typeface</div>
+  <div class="grid-col-fill text-300 font-mono-3">$theme-font-alt</div>
+</div>
+
+{:.maxw-mobile-lg}
+```
+$theme-font-heading:  $theme-font-serif;
+$theme-font-body:     $theme-font-sans;
+$theme-font-code:     $theme-font-mono;
+$theme-font-alt:      $theme-font-sans;
+```
+
+## Using typescale in utilities, settings, and component Sass
 You'll access USWDS typecale units using a few different techniques, depending on your situation and coding style.
 
 {:.margin-bottom-0}
-#### Settings
+### Settings
 
 {:.margin-top-05}
-Use the spacing unit token when assigning a spacing unit to a settings variable.
+Use the scale token when assigning a typescale unit to a settings variable.
 
 {:.maxw-mobile-lg}
 ```
@@ -332,28 +458,28 @@ $theme-h1-font-size:             '2xl';
 ```
 
 {:.margin-bottom-0.margin-top-4}
-#### Utilities
+### Utilities
 
 {:.margin-top-05}
-The `font` utility requires both an unquoted size token and an unquoted family token in the form `font-[family]-[size]`. Type-based family tokens include `sans`, `serif`, and `mono`. Role-based family tokens include `heading`, `body`, `code`, and `alt`.
+The `font` utility requires both an unquoted family token and an unquoted scale token in the form `font-[family]-[size]`.
 
 _The `font` utilities set both the font size and family._
 
 {:.maxw-mobile-lg}
 ```
-.font-sans-3sx
+.font-sans-3xs
 .font-body-md
 .font-sans-micro
 .font-mono-sm
 ```
 
 {:.margin-bottom-0.margin-top-4}
-#### Variables
+### Variables
 
 {:.margin-top-05}
-The `$scale` variable requires both an unquoted size token and an unquoted family token in the form `$scale-[family]-[size]`. Type-based family tokens include `sans`, `serif`, and `mono`. Role-based family tokens include `heading`, `body`, `code`, and `alt`.
+The `$scale` variable requires both an unquoted family token and an unquoted scale token in the form `$scale-[family]-[scale]`.
 
-_The `$scale` variable is only for font-size._
+_The `$scale` variable is only used for for `font-size`._
 
 {:.maxw-mobile-lg}
 ```
@@ -365,9 +491,7 @@ font-size: $scale-code-micro;
 #### Functions
 
 {:.margin-top-05}
-Use the `units()` function with spacing unit tokens.
-
-Use the `scale()` function to set the font size. The function requires both a quoted size token and an quoted family token in the form `scale(family, size)`. Type-based family tokens include `sans`, `serif`, and `mono`. Role-based family tokens include `heading`, `body`, `code`, and `alt`.
+Use the `scale()` function to set the font size. The function requires both a  family token and a scale token in the form `scale(family, scale)`.
 
 _The `scale()` function is only for font-size._
 
@@ -378,20 +502,21 @@ font-size: scale('body', 8);
 ```
 
 {:.margin-bottom-0.margin-top-4}
-#### Utility mixins
+### Utility mixins
 
 {:.margin-top-05}
-Utility mixins accept spacing unit tokens.
+Use the `u-font-size()` mixin to set the font size. The mixin requires both a  family token and a scale token in the form `@include u-font-size(family, scale)`.
 
-Tokens `'05'`, `'105'`, and `'205'` and any `neg-` token may also use their numeric equivalents: `0.5`, `1.5`, `2.5`, `-0.5`, `-1`, etc.
+Use the `u-font-family()` mixin to set the font family. The mixin requires a  family token in the form `@include u-font-family(family)`.
+
+_The value of `family` should be the same for both `u-font-family()` and `u-font-size()` for any component._
+
 
 {:.maxw-mobile-lg}
 ```
-@include u-border-top('05', $primary-darker);
-@include u-margin-x('neg-1');
-@include u-margin-x(-1);
-@include u-maxw('tablet');
-@include u-padding-top('05');
-@include u-padding-top(0.5);
-@include u-padding-y(2);
+@include u-font-family('sans')
+@include u-font-size('sans', 12)
+
+@include u-font-family('body')
+@include u-font-size('body', 'sm')
 ```

@@ -3,7 +3,7 @@ permalink: /style/typescale/
 layout: styleguide
 title: Typescale
 category: Style
-lead: USWDS typescale is a nine-step regularized theme scale drawn from a 21-step common scale
+lead: USWDS typescale includes a nine-step regularized theme scale drawn from a 21-step common scale
 type: docs
 subnav:
 - text: Theme typescale

@@ -490,7 +490,7 @@ font-size: $scale-code-micro;
 ```
 
 {:.margin-bottom-0.margin-top-4}
-#### Functions
+### Functions
 
 {:.margin-top-05}
 Use the `scale()` function to set the font size. The function requires both a  family token and a scale token in the form `scale([family], [scale])`.

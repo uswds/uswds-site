@@ -3,7 +3,7 @@ permalink: /style/typescale/
 layout: styleguide
 title: Typescale
 category: Style
-lead: USWDS typescale consists of nine regularized theme settings drawn from a 21-step common scale
+lead: USWDS typescale is a nine-step regularized theme scale drawn from a 21-step common scale
 type: docs
 subnav:
 - text: Theme typescale
@@ -30,22 +30,23 @@ subnav:
   href: '#utility-mixins'
 ---
 
-The USWDS type scale is designed to display type at a consistent size regardless of the typeface. Project themes use a nine-step palette drawn from a 21-step common palette. These type scale values are the only values we use to build official components. Any components we accept back into the system need to be built with this type scale.
+The USWDS typescale is designed to display type at a consistent size regardless of the typeface. Project themes use a nine-step scale drawn from a 21-step common scale. These typescale values are the only values we use to build official components. Any components we accept back into the system need to be built with this typescale.
 
 Font size is output in `rem`. If you have `$theme-respect-user-font-size` set to `true` in your theme settings, the root font size is set to `100%` and typescale is calculated based on `16px`. If `$theme-respect-user-font-size` set to `false`, the root font size is set to the value of `$theme-root-font-size` and typescale is calculated based on that root.
 
-To make different typefaces appear the same size at each step of the scale, the absolute size of each step in the typescale varies from typeface to typeface. Each supported typeface is regularized to a target value set by the the size of common system fonts — specifically Apple's typeface San Francisco and  Google's typeface Roboto. Optically smaller faces like Source Sans Pro will have a relatively larger rem value at each step in the scale, and optically larger faces like Merriweather will have a relatively smaller rem value. The USWDS typeface Public Sans is developed to be optically similar to system fonts.
+To make different typefaces appear the same size at each step of the scale, the absolute size of each step in the typescale varies from typeface to typeface. Each [supported typeface](#setting-theme-typeface-families) is regularized to a target value set by the the size of common system fonts — specifically Apple's typeface San Francisco and  Google's typeface Roboto. Optically smaller faces like Source Sans Pro will have a relatively larger rem value at each step in the scale, and optically larger faces like Merriweather will have a relatively smaller rem value. The USWDS typeface Public Sans is developed to be optically similar to system fonts.
 
 Since both the `rem` and absolute `px` values change depending on the theme settings and the typeface, the following table displays only the `px` value of the target.
 
 ## Theme typescale
-The nine-step theme typescale should be sufficient for most project needs. First, try to use the theme typescale. If your projects needs require more than nine steps of typescale, use steps from the common typescale as nedded.
+The nine-step theme scale should be sufficient for most project needs. First, try to use the theme scale. If your projects needs require more than nine sizes, use steps from the common scale as needed.
 
 <div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-4 text-bold">
   <div class="grid-col-2 text-700 font-sans-1">token</div>
   <div class="grid-col-2 text-700 font-sans-1">common scale</div>
   <div class="grid-col-1 text-700 font-sans-1">px</div>
   <div class="grid-col-fill text-700 font-sans-1">example</div>
+  <div class="grid-col-3 text-300 font-sans-1 text-right">example utility</div>
 </div>
 
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
@@ -145,6 +146,7 @@ The nine-step theme typescale should be sufficient for most project needs. First
   <div class="grid-col-2 text-700 font-sans-1">token</div>
   <div class="grid-col-1 text-700 font-sans-1">px</div>
   <div class="grid-col-fill text-700 font-sans-1">example</div>
+  <div class="grid-col-3 text-300 font-sans-1 text-right">example utility</div>
 </div>
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
   <div class="grid-col-2 text-300 font-sans-3"><code>'micro'</code></div>
@@ -384,7 +386,7 @@ Each project can choose a family from the available typefaces for monospaced, sa
   <div class="grid-col-fill text-300 font-mono-3">$theme-font-serif</div>
 </div>
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 font-sans-3"><code>'mono'</code></div>
+  <div class="grid-col-2 text-300 font-sans-3"><code>'cond'</code></div>
   <div class="grid-col-4 text-300 font-sans-3">project condensed typeface</div>
   <div class="grid-col-fill text-300 font-mono-3">$theme-font-cond</div>
 </div>
@@ -445,16 +447,16 @@ Use the scale token when assigning a typescale unit to a settings variable.
 
 {:.maxw-mobile-lg}
 ```
-$theme-type-scale-micro:         1;
-$theme-type-scale-smallest:      3;
-$theme-type-scale-smaller:       5;
-$theme-type-scale-small:         6;
-$theme-type-scale-base:          7;
-$theme-type-scale-large:         10;
-$theme-type-scale-larger:        12;
-$theme-type-scale-largest:       14;
-$theme-type-scale-mega:          16;
-$theme-h1-font-size:             '2xl';
+$theme-type-scale-3xs:      1;
+$theme-type-scale-2xs:      3;
+$theme-type-scale-xs:       5;
+$theme-type-scale-sm:       6;
+$theme-type-scale-md:       7;
+$theme-type-scale-lg:       10;
+$theme-type-scale-xl:       12;
+$theme-type-scale-2xl:      14;
+$theme-type-scale-3xl:      16;
+$theme-h1-font-size:        '2xl';
 ```
 
 {:.margin-bottom-0.margin-top-4}
@@ -491,7 +493,7 @@ font-size: $scale-code-micro;
 #### Functions
 
 {:.margin-top-05}
-Use the `scale()` function to set the font size. The function requires both a  family token and a scale token in the form `scale(family, scale)`.
+Use the `scale()` function to set the font size. The function requires both a  family token and a scale token in the form `scale([family], [scale])`.
 
 _The `scale()` function is only for font-size._
 
@@ -505,15 +507,19 @@ font-size: scale('body', 8);
 ### Utility mixins
 
 {:.margin-top-05}
-Use the `u-font-size()` mixin to set the font size. The mixin requires both a  family token and a scale token in the form `@include u-font-size(family, scale)`.
+Use the `u-font()` mixin to set both the font size and the font family. The mixin requires both a family token and a scale token in the form `@include u-font([family], [scale])`.
 
-Use the `u-font-family()` mixin to set the font family. The mixin requires a  family token in the form `@include u-font-family(family)`.
+Use the `u-font-size()` mixin to set the font size only. The mixin requires both a  family token and a scale token in the form `@include u-font-size([family], [scale])`.
 
-_The value of `family` should be the same for both `u-font-family()` and `u-font-size()` for any component._
+Use the `u-font-family()` mixin to set the font family only. The mixin requires a  family token in the form `@include u-font-family([family])`.
+
+_Use `u-font()` instead of using both `u-font-family()` and `u-font-size()` on a single selector, but avoid using it unneccessarily to avoid duplicate code._
 
 
 {:.maxw-mobile-lg}
 ```
+@include u-font('heading', 'xl')
+
 @include u-font-family('sans')
 @include u-font-size('sans', 12)
 

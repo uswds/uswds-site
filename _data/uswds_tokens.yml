@@ -156,7 +156,7 @@ colors:
       value: '#fcfcfc'
       reverse: true
       var: $base-lightest
-      common: gray-2
+      system: gray-2
       theme_var: $theme-color-base-lightest
     - token: base-lighter
       family_token: 'base'
@@ -164,7 +164,7 @@ colors:
       value: '#f0f0f0'
       reverse: true
       var: $base-lighter
-      common: gray-5
+      system: gray-5
       theme_var: $theme-color-base-lighter
     - token: base-light
       family_token: 'base'
@@ -172,7 +172,7 @@ colors:
       value: '#e6e6e6'
       reverse: true
       var: $base-light
-      common: gray-10
+      system: gray-10
       theme_var: $theme-color-base-light
     - token: base
       family_token: 'base'
@@ -180,33 +180,33 @@ colors:
       value: '#adadad'
       reverse: true
       var: $base
-      common: gray-30
+      system: gray-30
       theme_var: $theme-color-base
     - token: base-dark
       family_token: 'base'
       grade_token: 'dark'
       value: '#757575'
       var: $base-dark
-      common: gray-50
+      system: gray-50
       theme_var: $theme-color-base-dark
     - token: base-darker
       family_token: 'base'
       grade_token: 'darker'
       value: '#454545'
       var: $base-darker
-      common: gray-70
+      system: gray-70
       theme_var: $theme-color-base-darker
     - token: base-darkest
       family_token: 'base'
       grade_token: 'darkest'
       value: '#171717'
       var: $base-darkest
-      common: gray-90
+      system: gray-90
       theme_var: $theme-color-base-darkest
     - token: ink
       value: '#171717'
       var: $ink
-      common: gray-90
+      system: gray-90
       hide_from_palette: true
     - token: primary-lighter
       family_token: 'primary'
@@ -214,7 +214,7 @@ colors:
       value: '#dae9f7'
       reverse: true
       var: $primary-lighter
-      common: blue-10
+      system: blue-10
       theme_var: $theme-color-primary-lighter
     - token: primary-light
       family_token: 'primary'
@@ -222,35 +222,35 @@ colors:
       value: '#79bcf2'
       reverse: true
       var: $primary-light
-      common: blue-30
+      system: blue-30
       theme_var: $theme-color-primary-light
     - token: primary
       family_token: 'primary'
       grade_token: false
       value: '#0069b4'
       var: $primary
-      common: blue-60v
+      system: blue-60v
       theme_var: $theme-color-primary
     - token: primary-vivid
       family_token: 'primary'
       grade_token: 'vivid'
       value: '#0052de'
       var: $primary-vivid
-      common: blue-warm-60v
+      system: blue-warm-60v
       theme_var: $theme-color-primary-vivid
     - token: primary-dark
       family_token: 'primary'
       grade_token: 'dark'
       value: '#1e4f94'
       var: $primary-dark
-      common: blue-warm-70v
+      system: blue-warm-70v
       theme_var: $theme-color-primary-dark
     - token: primary-darker
       family_token: 'primary'
       grade_token: 'darker'
       value: '#112a4d'
       var: $primary-darker
-      common: blue-warm-80v
+      system: blue-warm-80v
       theme_var: $theme-color-primary-darker
     - token: secondary-lighter
       family_token: 'secondary'
@@ -258,7 +258,7 @@ colors:
       value: '#f7ddda'
       reverse: true
       var: $secondary-lighter
-      common: red-10
+      system: red-10
       theme_var: $theme-color-secondary-lighter
     - token: secondary-light
       family_token: 'secondary'
@@ -266,35 +266,35 @@ colors:
       value: '#f28f88'
       reverse: true
       var: $secondary-light
-      common: red-30
+      system: red-30
       theme_var: $theme-color-secondary-light
     - token: secondary
       family_token: 'secondary'
       grade_token: false
       value: '#d83731'
       var: $secondary
-      common: red-50
+      system: red-50
       theme_var: $theme-color-secondary
     - token: secondary-vivid
       family_token: 'secondary'
       grade_token: 'vivid'
       value: '#e82207'
       var: $secondary-vivid
-      common: red-50v
+      system: red-50v
       theme_var: $theme-color-secondary-vivid
     - token: secondary-dark
       family_token: 'secondary'
       grade_token: 'dark'
       value: '#c31f0a'
       var: $secondary-dark
-      common: red-60v
+      system: red-60v
       theme_var: $theme-color-secondary-dark
     - token: secondary-darker
       family_token: 'secondary'
       grade_token: 'darker'
       value: '#9c1503'
       var: $secondary-darker
-      common: red-70v
+      system: red-70v
       theme_var: $theme-color-secondary-darker
     - token: accent-cool-lighter
       family_token: 'accent-cool'
@@ -302,7 +302,7 @@ colors:
       value: '#e8f7fa'
       var: $accent-cool-lighter
       reverse: true
-      common: cyan-5
+      system: cyan-5
       theme_var: $theme-accent-cool-lighter
     - token: accent-cool-light
       family_token: 'accent-cool'
@@ -310,7 +310,7 @@ colors:
       value: '#9ddceb'
       var: $accent-cool-light
       reverse: true
-      common: cyan-20
+      system: cyan-20
       theme_var: $theme-accent-cool-light
     - token: accent-cool
       family_token: 'accent-cool'
@@ -318,21 +318,21 @@ colors:
       value: '#02c2e8'
       var: $accent-cool
       reverse: true
-      common: cyan-30v
+      system: cyan-30v
       theme_var: $theme-accent-cool
     - token: accent-cool-dark
       family_token: 'accent-cool'
       grade_token: 'dark'
       value: '#00abd1'
       var: $accent-cool-dark
-      common: cyan-40v
+      system: cyan-40v
       theme_var: $theme-accent-cool-dark
     - token: accent-cool-darker
       family_token: 'accent-cool'
       grade_token: 'darker'
       value: '#2f6794'
       var: $accent-cool-darker
-      common: blue-60
+      system: blue-60
       theme_var: $theme-accent-cool-darker
     - token: accent-warm-lighter
       family_token: 'accent-warm'
@@ -340,7 +340,7 @@ colors:
       value: '#fce2c5'
       var: $accent-warm-lighter
       reverse: true
-      common: orange-10
+      system: orange-10
       theme_var: $theme-accent-cool-lighter
     - token: accent-warm-light
       family_token: 'accent-warm'
@@ -348,7 +348,7 @@ colors:
       value: '#ffba75'
       var: $accent-warm-light
       reverse: true
-      common: orange-20v
+      system: orange-20v
       theme_var: $theme-accent-warm-light
     - token: accent-warm
       family_token: 'accent-warm'
@@ -356,118 +356,118 @@ colors:
       value: '#ff9742'
       var: $accent-warm
       reverse: true
-      common: orange-30v
+      system: orange-30v
       theme_var: $theme-accent-warm
     - token: accent-warm-dark
       family_token: 'accent-warm'
       grade_token: 'dark'
       value: '#c25700'
       var: $accent-warm-dark
-      common: orange-50v
+      system: orange-50v
       theme_var: $theme-accent-warm-dark
     - token: accent-warm-darker
       family_token: 'accent-warm'
       grade_token: 'darker'
       value: '#73563e'
       var: $accent-warm-darker
-      common: orange-60
+      system: orange-60
       theme_var: $theme-accent-warm-darker
   project_state:
     - token: error-lighter
       family_token: 'error'
       grade_token: 'lighter'
       value: '#ff806c'
-      common: red-30v
+      system: red-30v
       theme_var: $theme-color-error-lighter
     - token: error-light
       family_token: 'error'
       grade_token: 'light'
       value: '#ff5c48'
-      common: red-40v
+      system: red-40v
       theme_var: $theme-color-error-light
     - token: error
       family_token: 'error'
       grade_token: false
       value: '#e82207'
-      common: red-50v
+      system: red-50v
       theme_var: $theme-color-error
     - token: error-dark
       family_token: 'error'
       grade_token: 'dark'
       value: '#ab3a3a'
-      common: red-60
+      system: red-60
       theme_var: $theme-color-error-dark
     - token: error-darker
       family_token: 'error'
       grade_token: 'darker'
       value: '#6e312f'
-      common: red-70
+      system: red-70
       theme_var: $theme-color-error-darker
     - token: warn-lighter
       family_token: 'warn'
       grade_token: 'lighter'
       value: '#fce2c5'
-      common: orange-10
+      system: orange-10
       theme_var: $theme-color-warn-lighter
     - token: warn-light
       family_token: 'warn'
       grade_token: 'light'
       value: '#ffba75'
-      common: orange-20v
+      system: orange-20v
       theme_var: $theme-color-warn-light
     - token: warn
       family_token: 'warn'
       grade_token: false
       value: '#ff9742'
-      common: orange-30v
+      system: orange-30v
       theme_var: $theme-color-warn
     - token: warn-dark
       family_token: 'warn'
       grade_token: 'dark'
       value: '#eb8028'
-      common: orange-40
+      system: orange-40
       theme_var: $theme-color-warn-dark
     - token: warn-darker
       family_token: 'warn'
       grade_token: 'darker'
       value: '#a56931'
-      common: orange-50
+      system: orange-50
       theme_var: $theme-color-warn-darker
     - token: success-lighter
       family_token: 'success'
       grade_token: 'lighter'
       value: '#61cf59'
-      common: green-cool-20v
+      system: green-cool-20v
       theme_var: $theme-color-success-lighter
     - token: success-light
       family_token: 'success'
       grade_token: 'light'
       value: '#16c20a'
-      common: green-cool-30v
+      system: green-cool-30v
       theme_var: $theme-color-success-light
     - token: success
       family_token: 'success'
       grade_token: false
       value: '#0caf00'
-      common: green-cool-40v
+      system: green-cool-40v
       theme_var: $theme-color-success
     - token: success-dark
       family_token: 'success'
       grade_token: 'dark'
       value: '#3d841f'
-      common: green-cool-50
+      system: green-cool-50
       theme_var: $theme-color-success-dark
     - token: success-darker
       family_token: 'success'
       grade_token: 'darker'
       value: '#384d2a'
-      common: green-cool-70
+      system: green-cool-70
       theme_var: $theme-color-success-darker
     - token: disabled
       family_token: 'disabled'
       grade_token: false
       value: '#adadad'
-      common: gray-30
+      system: gray-30
       theme_var: $theme-color-disabled
   grayscale:
     - token: white

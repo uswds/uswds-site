@@ -3,7 +3,7 @@ permalink: /style/
 layout: styleguide
 title: Style
 category: Style
-lead: We build USWDS components from consistent system palettes of type scale, spacing units, and color. Your project’s custom theme settings provide a subset of the system palettes tailored to your project’s needs.
+lead: We build USWDS components from consistent palettes of type scale, spacing units, and color. Your project’s custom theme settings provide a subset of the system palettes tailored to your project’s needs.
 type: docs
 ---
 

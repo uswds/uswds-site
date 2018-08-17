@@ -269,7 +269,7 @@ $theme-color-disabled:             $theme-color-disabled-family, 30;
 ```
 
 ## Using colors in utilities, settings, and component Sass
-You'll access USWDS typecale units using a few different techniques, depending on your situation and coding style.
+You'll access USWDS colors using a few different techniques, depending on your situation and coding style.
 
 {:.margin-bottom-0}
 ### Settings

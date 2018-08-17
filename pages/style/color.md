@@ -275,7 +275,7 @@ You'll access USWDS colors using a few different techniques, depending on your s
 ### Settings
 
 {:.margin-top-05}
-Use tokens in the form `[family], [grade], [variant]` (The variant is optional).
+Use family, grade, and an optional variant token (for vivid variants of common colors) in the form `[family], [grade], [variant]`.
 
 {:.maxw-mobile-lg}
 ```

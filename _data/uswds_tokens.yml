@@ -2643,73 +2643,73 @@ colors:
         variant_token: false
         value: '#nnnnnn'
     gray:
-      - utility: black-1
-        family_token: 'black'
+      - utility: gray-1
+        family_token: 'gray'
         grade_token: '1'
         variant_token: false
         value: '#nnnnnn'
-      - utility: black-2
-        family_token: 'black'
+      - utility: gray-2
+        family_token: 'gray'
         grade_token: '2'
         variant_token: false
         value: '#nnnnnn'
-      - utility: black-3
-        family_token: 'black'
+      - utility: gray-3
+        family_token: 'gray'
         grade_token: '3'
         variant_token: false
         value: '#nnnnnn'
-      - utility: black-4
-        family_token: 'black'
+      - utility: gray-4
+        family_token: 'gray'
         grade_token: '4'
         variant_token: false
         value: '#nnnnnn'
-      - utility: black-5
-        family_token: 'black'
+      - utility: gray-5
+        family_token: 'gray'
         grade_token: '5'
         variant_token: false
         value: '#nnnnnn'
-      - utility: black-10
-        family_token: 'black'
+      - utility: gray-10
+        family_token: 'gray'
         grade_token: '10'
         variant_token: false
         value: '#nnnnnn'
-      - utility: black-20
-        family_token: 'black'
+      - utility: gray-20
+        family_token: 'gray'
         grade_token: '20'
         variant_token: false
         value: '#nnnnnn'
-      - utility: black-30
-        family_token: 'black'
+      - utility: gray-30
+        family_token: 'gray'
         grade_token: '30'
         variant_token: false
         value: '#nnnnnn'
-      - utility: black-40
-        family_token: 'black'
+      - utility: gray-40
+        family_token: 'gray'
         grade_token: '40'
         variant_token: false
         value: '#nnnnnn'
-      - utility: black-50
-        family_token: 'black'
+      - utility: gray-50
+        family_token: 'gray'
         grade_token: '50'
         variant_token: false
         value: '#nnnnnn'
-      - utility: black-60
-        family_token: 'black'
+      - utility: gray-60
+        family_token: 'gray'
         grade_token: '60'
         variant_token: false
         value: '#nnnnnn'
-      - utility: black-70
-        family_token: 'black'
+      - utility: gray-70
+        family_token: 'gray'
         grade_token: '70'
         variant_token: false
         value: '#nnnnnn'
-      - utility: black-80
-        family_token: 'black'
+      - utility: gray-80
+        family_token: 'gray'
         grade_token: '80'
         variant_token: false
         value: '#nnnnnn'
-      - utility: black-90
-        family_token: 'black'
+      - utility: gray-90
+        family_token: 'gray'
         grade_token: '90'
         variant_token: false
         value: '#nnnnnn'

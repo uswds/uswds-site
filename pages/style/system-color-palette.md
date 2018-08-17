@@ -105,21 +105,21 @@ families:
     {% if last == 'vivid' %}
       {% capture this_title %}{{ family | replace: '_', ' ' | replace: ' vivid', '' | capitalize }}<span class="text-normal"> vivid</span>{% endcapture %}
     {% endif%}
-    <h2 class="font-sans-10 margin-top-0 margin-bottom-1 text-ink" id="{{ family | replace: '_', '-' }}">{{ this_title }}</h2>
+    <div class="bg-white padding-y-2 padding-x-3 radius-md border border-base-light margin-bottom-2">
+      <h2 class="font-sans-10 margin-top-0 margin-bottom-1 text-ink" id="{{ family | replace: '_', '-' }}">{{ this_title }}</h2>
 
-    <div class="grid-row grid-gap flex-align-center margin-bottom-1 padding-bottom-1 border-bottom-2px margin-top-2 text-bold font-sans-1">
-      <div class="grid-col-3">color</div>
-      <div class="grid-col-2">family</div>
-      <div class="grid-col-1">grade</div>
-      <div class="grid-col-2">variant</div>
-      <div class="grid-col-3">variable</div>
-      <div class="grid-col-fill text-right">hex</div>
-    </div>
+      <div class="grid-row grid-gap flex-align-center margin-bottom-1 padding-bottom-1 border-bottom-2px margin-top-2 text-bold font-sans-1">
+        <div class="grid-col-2">color</div>
+        <div class="grid-col-2">family</div>
+        <div class="grid-col-1">grade</div>
+        <div class="grid-col-2">variant</div>
+        <div class="grid-col-3">variable</div>
+        <div class="grid-col-fill text-right">hex</div>
+      </div>
 
-    <div class="margin-bottom-4">
       {% for color in system_colors[family] %}
         {% include style/swatch-condensed.html %}
       {% endfor %}
     </div>
-  {% endfor %}
+    {% endfor %}
 </div>

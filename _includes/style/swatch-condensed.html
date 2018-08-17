@@ -20,9 +20,17 @@
     {% endif %}
   </span>
   <span class="grid-col-3">
+    {% if color.value %}
     <span class="utility-class bg-transparent border border-base-light">${{ color.utility }}</span>
+    {% else %}
+    <span>—</span>
+    {% endif %}
   </span>
   <span class="grid-col-fill text-right font-mono-3">
-    {{ color.value }}
+    {% if color.value %}
+    <span>{{ color.value }}</span>
+    {% else %}
+    <span>—</span>
+    {% endif %}
   </span>
 </div>

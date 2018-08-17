@@ -7,50 +7,51 @@ lead: The USWDS system color palette is the complete set of colors from which an
 type: docs
 subnav:
 - text: Red
-href: '#red'
+  href: '#red'
 - text: Orange warm
-href: '#orange-warm'
+  href: '#orange-warm'
 - text: Orange
-href: '#orange'
+  href: '#orange'
 - text: Gold
-href: '#gold'
+  href: '#gold'
 - text: Yellow
-href: '#yellow'
+  href: '#yellow'
 - text: Green warm
-href: '#green-warm'
+  href: '#green-warm'
 - text: Green
-href: '#green'
+  href: '#green'
 - text: Green cool
-href: '#green-cool'
+  href: '#green-cool'
 - text: Mint
-href: '#mint'
+  href: '#mint'
 - text: Mint cool
-href: '#mint-cool'
+  href: '#mint-cool'
 - text: Cyan
-href: '#cyan'
+  href: '#cyan'
 - text: Blue
-href: '#blue'
+  href: '#blue'
 - text: Blue warm
-href: '#blue-warm'
+  href: '#blue-warm'
 - text: Indigo cool
-href: '#indigo-cool'
+  href: '#indigo-cool'
 - text: Indigo
-href: '#indigo'
+  href: '#indigo'
 - text: Indigo warm
-href: '#indigo-warm'
+  href: '#indigo-warm'
 - text: Violet
-href: '#violet'
+  href: '#violet'
 - text: Violet warm
-href: '#violet-warm'
+  href: '#violet-warm'
 - text: Magenta
-href: '#magenta'
+  href: '#magenta'
 - text: Gray warm
-href: '#gray-warm'
+  href: '#gray-warm'
 - text: Gray
-href: '#gray'
+  href: '#gray'
 - text: Gray cool
-href: '#gray-cool'
+  href: '#gray-cool'
 ---
+
 <div class="grid-row padding-top-3 text-normal">
 <div class="grid-col-fill content">
 <div class="utility-example-container-condensed grid-row grid-gap flex-align-center">

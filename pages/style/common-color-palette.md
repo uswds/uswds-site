@@ -1,33 +1,13 @@
 ---
-permalink: /style/color/
+permalink: /style/color/common-color-palette
 layout: styleguide
-title: Color
+title: Common color palette
 category: Style
-lead: USWDS theme colors provide flexible, accessible, customizable color choices
+lead: The USWDS common color palette is the complete set of colors from which any project can build a theme palette
 type: docs
 subnav:
 - text: Accessibility and magic number
   href: '#accessibility-and-magic-number'
-- text: Magic number
-  href: '#magic-number'
-- text: Theme color palette
-  href: '#theme-color-palette'
-- text: State color palette
-  href: '#state-color-palette'
-- text: Setting theme and state colors
-  href: '#setting-theme-and-state-colors'
-- text: Using colors
-  href: '#using-colors-in-utilities-settings-and-component-sass'
-- text: Settings
-  href: '#settings'
-- text: Utilities
-  href: '#utilities'
-- text: Variables
-  href: '#variables'
-- text: Functions
-  href: '#functions'
-- text: Utility mixins
-  href: '#utility-mixins'
 ---
 
 {% assign theme_colors = site.data.uswds_tokens.colors.project_theme %}

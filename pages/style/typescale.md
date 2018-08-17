@@ -3,13 +3,13 @@ permalink: /style/typescale/
 layout: styleguide
 title: Typescale
 category: Style
-lead: USWDS typescale includes a nine-step regularized theme scale drawn from a 21-step common scale
+lead: USWDS typescale includes a nine-step regularized theme scale drawn from a 21-step system scale
 type: docs
 subnav:
 - text: Theme typescale
   href: '#theme-typescale'
-- text: Common typescale
-  href: '#common-typescale'
+- text: System typescale
+  href: '#system-typescale'
 - text: Setting theme typefaces
   href: '#setting-theme-typeface-families'
 - text: Type-based family tokens
@@ -30,7 +30,7 @@ subnav:
   href: '#utility-mixins'
 ---
 
-The USWDS typescale is designed to display type at a consistent size regardless of the typeface. Project themes use a nine-step scale drawn from a 21-step common scale. These typescale values are the only values we use to build official components. Any components we accept back into the system need to be built with this typescale.
+The USWDS typescale is designed to display type at a consistent size regardless of the typeface. Project themes use a nine-step scale drawn from a 21-step system scale. These typescale values are the only values we use to build official components. Any components we accept back into the system need to be built with this typescale.
 
 Font size is output in `rem`. If you have `$theme-respect-user-font-size` set to `true` in your theme settings, the root font size is set to `100%` and typescale is calculated based on `16px`. If `$theme-respect-user-font-size` set to `false`, the root font size is set to the value of `$theme-root-font-size` and typescale is calculated based on that root.
 
@@ -39,11 +39,11 @@ To make different typefaces appear the same size at each step of the scale, the 
 Since both the `rem` and absolute `px` values change depending on the theme settings and the typeface, the following table displays only the `px` value of the target.
 
 ## Theme typescale
-The nine-step theme scale should be sufficient for most project needs. First, try to use the theme scale. If your projects needs require more than nine sizes, use steps from the common scale as needed.
+The nine-step theme scale should be sufficient for most project needs. First, try to use the theme scale. If your projects needs require more than nine sizes, use steps from the system scale as needed.
 
 <div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-4 text-bold">
   <div class="grid-col-2 text-700 font-sans-1">token</div>
-  <div class="grid-col-2 text-700 font-sans-1">common scale</div>
+  <div class="grid-col-2 text-700 font-sans-1">system scale</div>
   <div class="grid-col-1 text-700 font-sans-1">px</div>
   <div class="grid-col-fill text-700 font-sans-1">example</div>
   <div class="grid-col-3 text-300 font-sans-1 text-right">example utility</div>
@@ -140,7 +140,7 @@ The nine-step theme scale should be sufficient for most project needs. First, tr
 </div>
 
 {:.margin-top-6}
-## Common typescale
+## System typescale
 
 <div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-1 text-bold">
   <div class="grid-col-2 text-700 font-sans-1">token</div>

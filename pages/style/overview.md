@@ -3,19 +3,19 @@ permalink: /style/
 layout: styleguide
 title: Style
 category: Style
-lead: We build USWDS components from consistent common palettes of type scale, spacing units, and color. Your project’s custom theme settings provide a subset of the common palettes tailored to your project’s needs.
+lead: We build USWDS components from consistent system palettes of type scale, spacing units, and color. Your project’s custom theme settings provide a subset of the system palettes tailored to your project’s needs.
 type: docs
 ---
 
 ## The benefits of global style palettes
 
-Our common palettes of [typescale]({{ site.baseurl }}/style/typescale/), [spacing units]({{ site.baseurl }}/style/spacing-units/), and [color]({{ site.baseurl }}/style/color/) are the visual building blocks any component. When we use these palettes consistently, not only do individual components fit better within the design of the larger website, but USWDS websites have better coherence across the entire federal government. This coherence provides a more familiar, reliable user experience.
+Our system palettes of [typescale]({{ site.baseurl }}/style/typescale/), [spacing units]({{ site.baseurl }}/style/spacing-units/), and [color]({{ site.baseurl }}/style/color/) are the visual building blocks any component. When we use these palettes consistently, not only do individual components fit better within the design of the larger website, but USWDS websites have better coherence across the entire federal government. This coherence provides a more familiar, reliable user experience.
 
-We recommend building exclusively with elements of the common palettes. Not only does this provide the improvements to cross-government user experience mentioned above, it allows individual projects to contribute their unique components and solutions back in to the System.
+We recommend building exclusively with elements of the system palettes. Not only does this provide the improvements to cross-government user experience mentioned above, it allows individual projects to contribute their unique components and solutions back in to the System.
 
-## Using common palettes and project theme palettes
+## Using system palettes and project theme palettes
 
-The complete common spacing units palette is available to any USWDS project by default. The common color palette and the common type scale palette can be subsetted into a smaller theme palette using the project theme settings in `_uswds-project-settings.scss`. Whether you use items from the common palettes or the project theme palettes, you can access these values in your Sass using palette-specific variables and functions. The following is an overview of the functions and variables available — see the individual style sections for more detail.
+The complete system spacing units palette is available to any USWDS project by default. The system color palette and the system type scale palette can be subsetted into a smaller theme palette using the project theme settings in `_uswds-project-settings.scss`. Whether you use items from the system palettes or the project theme palettes, you can access these values in your Sass using palette-specific variables and functions. The following is an overview of the functions and variables available — see the individual style sections for more detail.
 
 <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
   <div class="grid-col-2">Palette item</div>

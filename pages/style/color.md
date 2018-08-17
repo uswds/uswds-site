@@ -33,14 +33,14 @@ subnav:
 {% assign theme_colors = site.data.uswds_tokens.colors.project_theme %}
 {% assign state_colors = site.data.uswds_tokens.colors.project_state %}
 
-The USWDS theme color palette is designed to be useful and effective for small and large projects. Each color in a USWDS theme palette is drawn from a [larger common palette](common-color-palette/) that designers can use for further customization. Colors from the common palette are the only ones we use to build official components. Any components we accept back into the system need to be built with colors drawn from the common palette.
+The USWDS theme color palette is designed to be useful and effective for small and large projects. Each color in a USWDS theme palette is drawn from a [larger system palette](system-color-palette/) that designers can use for further customization. Colors from the system palette are the only ones we use to build official components. Any components we accept back into the system need to be built with colors drawn from the system palette.
 
 ## Accessibility and magic number
 Section 508 sets a legal standard for the contrast level necessary between text and its background. The baseline AA contrast standard is 4.5:1 for most text and 3.1:1 for large text (19px+ bold or 24px+ normal text).
 
-USWDS helps teams choose accessible colors with a color grade system. Each color in the theme palette is drawn from a common palette color that's been graded from 0-100. (Grade can be considered an indicator of lightness, where grade `0` is pure white and grade `100` is pure black.) For example, the theme color `'base-darker'` has been assigned the common color `'gray-70'`, whose grade is `70`.
+USWDS helps teams choose accessible colors with a color grade system. Each color in the theme palette is drawn from a system palette color that's been graded from 0-100. (Grade can be considered an indicator of lightness, where grade `0` is pure white and grade `100` is pure black.) For example, the theme color `'base-darker'` has been assigned the system color `'gray-70'`, whose grade is `70`.
 
-Here's an example of grades in the `gray` common color family:
+Here's an example of grades in the `gray` system color family:
 <div class="padding-y-2">
   <div class="grid-row font-mono-2 text-400">
     <div class="grid-col-fill">
@@ -108,7 +108,7 @@ Each color family has seven possible lightness grades, from `lightest` to `darke
   <div class="grid-col-2">family token</div>
   <div class="grid-col-2">grade token</div>
   <div class="grid-col-4">theme settings variable</div>
-  <div class="grid-col-2">common equivalent</div>
+  <div class="grid-col-2">system equivalent</div>
   <div class="grid-col-1 text-right">hex</div>
 </div>
 
@@ -133,7 +133,7 @@ Each color family has seven possible lightness grades, from `lightest` to `darke
     <span>{{ color.theme_var }}</span>
   </span>
   <span class="grid-col-2 font-mono-3">
-    <span>{{ color.common }}</span>
+    <span>{{ color.system }}</span>
   </span>
   <span class="grid-col-1 text-right font-mono-3">
     {{ color.value }}
@@ -152,7 +152,7 @@ Each color family except `disabled` has five possible lightness grades, from `li
   <div class="grid-col-2">family token</div>
   <div class="grid-col-2">grade token</div>
   <div class="grid-col-4">theme settings variable</div>
-  <div class="grid-col-2">common equivalent</div>
+  <div class="grid-col-2">system equivalent</div>
   <div class="grid-col-1 text-right">hex</div>
 </div>
 
@@ -177,7 +177,7 @@ Each color family except `disabled` has five possible lightness grades, from `li
     <span>{{ color.theme_var }}</span>
   </span>
   <span class="grid-col-2 font-mono-3">
-    <span>{{ color.common }}</span>
+    <span>{{ color.system }}</span>
   </span>
   <span class="grid-col-1 text-right font-mono-3">
     {{ color.value }}
@@ -187,9 +187,9 @@ Each color family except `disabled` has five possible lightness grades, from `li
 {% endfor %}
 
 ## Setting theme and state colors
-Set theme and state colors in your project's theme settings with tokens from the [common color palette](common-color-palette/) in the form `[family], [grade], [variant]` (The variant is optional).
+Set theme and state colors in your project's theme settings with tokens from the [system color palette](system-color-palette/) in the form `[family], [grade], [variant]` (The variant is optional).
 
-Theme and state families tend to include colors from the same common family, but this is not a hard-and-fast rule. For instance, the USWDS default theme palette uses colors from both the `blue-warm` and `blue` common color families for colors in the `primary` theme family.
+Theme and state families tend to include colors from the same system family, but this is not a hard-and-fast rule. For instance, the USWDS default theme palette uses colors from both the `blue-warm` and `blue` system color families for colors in the `primary` theme family.
 
 Set any unused theme or state color to `false`.
 
@@ -275,7 +275,7 @@ You'll access USWDS colors using a few different techniques, depending on your s
 ### Settings
 
 {:.margin-top-05}
-Use family, grade, and an optional variant token (for vivid variants of common colors) in the form `[family], [grade], [variant]`.
+Use family, grade, and an optional variant token (for vivid variants of system colors) in the form `[family], [grade], [variant]`.
 
 {:.maxw-mobile-lg}
 ```
@@ -287,7 +287,7 @@ $theme-color-accent-cool-dark:     'mint', 50;
 ### Utilities
 
 {:.margin-top-05}
-Color utilities require an unquoted family token, an optional unquoted scale token, and an optional `v` suffix for vivid variants of common colors in the form `[utility]-[family]-[grade][v]`.
+Color utilities require an unquoted family token, an optional unquoted scale token, and an optional `v` suffix for vivid variants of system colors in the form `[utility]-[family]-[grade][v]`.
 
 _Note: In USWDS utilities, only the theme palette is activated by default. See the [color utilities section](#0) for more details about how to activate additional palettes for your utilities._
 
@@ -304,7 +304,7 @@ _Note: In USWDS utilities, only the theme palette is activated by default. See t
 ### Variables
 
 {:.margin-top-05}
-Color variable require an unquoted family token, an optional unquoted scale token, and an optional `v` suffix for vivid variants of common colors in the form `$[family]-[grade][v]`.
+Color variable require an unquoted family token, an optional unquoted scale token, and an optional `v` suffix for vivid variants of system colors in the form `$[family]-[grade][v]`.
 
 {:.maxw-mobile-lg}
 ```
@@ -317,7 +317,7 @@ background-color: $disabled;
 ### Functions
 
 {:.margin-top-05}
-The `color()` function accepts a family token, an optional scale token, and an optional variant token for vivid variants of common colors in the form `color([family], [grade], [variant])`.
+The `color()` function accepts a family token, an optional scale token, and an optional variant token for vivid variants of system colors in the form `color([family], [grade], [variant])`.
 
 {:.maxw-mobile-lg}
 ```

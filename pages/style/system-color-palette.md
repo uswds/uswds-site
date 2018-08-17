@@ -1,9 +1,9 @@
 ---
-permalink: /style/color/common-color-palette/
+permalink: /style/color/system-color-palette/
 layout: styleguide
-title: Common color palette
+title: System color palette
 category: Style
-lead: The USWDS common color palette is the complete set of colors from which any project can build a theme palette
+lead: The USWDS system color palette is the complete set of colors from which any project can build a theme palette
 type: docs
 subnav:
 - text: Red

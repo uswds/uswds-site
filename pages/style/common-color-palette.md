@@ -13,308 +13,5140 @@ subnav:
 {% assign theme_colors = site.data.uswds_tokens.colors.project_theme %}
 {% assign state_colors = site.data.uswds_tokens.colors.project_state %}
 
-The USWDS theme color palette is designed to be useful and effective for small and large projects. Each color in a USWDS theme palette is drawn from a [larger common palette](common-color-palette.html) that designers can use for further customization. Colors from the common palette are the only ones we use to build official components. Any components we accept back into the system need to be built with colors drawn from the common palette.
 
-## Accessibility and magic number
-Section 508 sets a legal standard for the contrast level necessary between text and its background. The baseline AA contrast standard is 4.5:1 for most text and 3.1:1 for large text (19px+ bold or 24px+ normal text).
+<div class="grid-row padding-top-3 text-normal">
+  <div class="grid-col-fill content">
 
-USWDS helps teams choose accessible colors with a color grade system. Each color in the theme palette is drawn from a common palette color that's been graded from 0-100. (Grade can be considered an indicator of lightness, where grade `0` is pure white and grade `100` is pure black.) For example, the theme color `'base-darker'` has been assigned the common color `'gray-70'`, whose grade is `70`.
+    <!-- ###################################################### -->
 
-Here's an example of grades in the `gray` common color family:
-<div class="padding-y-2">
-  <div class="grid-row font-mono-2 text-400">
-    <div class="grid-col-fill">
-      <div class="bg-gray-5 height-4"></div>
-      <div class="text-center margin-top-2px">5</div>
-    </div><!-- swwatch -->
-    <div class="grid-col-fill">
-      <div class="bg-gray-10 height-4"></div>
-      <div class="text-center margin-top-2px">10</div>
-    </div><!-- swwatch -->
-    <div class="grid-col-fill">
-      <div class="bg-gray-20 height-4"></div>
-      <div class="text-center margin-top-2px">20</div>
-    </div><!-- swwatch -->
-    <div class="grid-col-fill">
-      <div class="bg-gray-30 height-4"></div>
-      <div class="text-center margin-top-2px">30</div>
-    </div><!-- swwatch -->
-    <div class="grid-col-fill">
-      <div class="bg-gray-40 height-4"></div>
-      <div class="text-center margin-top-2px">40</div>
-    </div><!-- swwatch -->
-    <div class="grid-col-fill">
-      <div class="bg-gray-50 height-4"></div>
-      <div class="text-center margin-top-2px">50</div>
-    </div><!-- swwatch -->
-    <div class="grid-col-fill">
-      <div class="bg-gray-60 height-4"></div>
-      <div class="text-center margin-top-2px">60</div>
-    </div><!-- swwatch -->
-    <div class="grid-col-fill">
-      <div class="bg-gray-70 height-4"></div>
-      <div class="text-center margin-top-2px">70</div>
-    </div><!-- swwatch -->
-    <div class="grid-col-fill">
-      <div class="bg-gray-80 height-4"></div>
-      <div class="text-center margin-top-2px">80</div>
-    </div><!-- swwatch -->
-    <div class="grid-col-fill">
-      <div class="bg-gray-90 height-4"></div>
-      <div class="text-center margin-top-2px">90</div>
-    </div><!-- swwatch -->
-  </div>
-</div>
+    <h2 class="font-sans-10 margin-top-0 margin-bottom-4">Red</h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-5"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red 5</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-5</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red', 5)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-10"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red 10</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-10</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red', 10)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-20"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red 20</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-20</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red', 20)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-30"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red 30</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-30</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red', 30)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-40"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red 40</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-40</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red', 40)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-50"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red 50</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-50</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red', 50)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-60"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red 60</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-60</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red', 60)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-70"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red 70</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-70</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red', 70)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-80"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red 80</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-80</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red', 80)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-90"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red 90</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-90</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red', 90)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- swatches -->
 
-### Magic number
-We call the difference in grade between any two colors the _magic number_. Magic number has important contrast implications:
-- A magic number of `40` or higher achieves Section 508 AA Large contrast.
-- A magic number of `50` or higher achieves Section 508 AA contrast.
-- Colors of grade `50` achieve Section 508 AA contrast against both pure white (grade `0`) and pure black (grade `100`).
+    <!-- ------------------------------------------------------ -->
 
-Use USWDS magic numbers to choose accessible color combinations from any palette.
+    <h2 class="font-sans-10 margin-bottom-4">Red <span class="text-normal">vivid</span></h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-5v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red 5v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-5v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red', 5, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-10v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red 10v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-10v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red', 10, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-20v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red 20v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-20v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red', 20, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-30v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red 30v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-30v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red', 30, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-40v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red 40v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-40v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red', 40, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-50v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red 50v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-50v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red', 50, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-60v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red 60v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-60v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red', 60, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-70v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red 70v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-70v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red', 70, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-80v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red 80v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-80v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red', 80, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-90v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red 90v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-90v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red', 90, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- family swatches -->
 
-## Theme color palette
-The theme color palettes is divided into five high-level role-based color families: `base`, `primary`, `secondary`, `accent-warm`, and `accent-cool`.
+    <!-- ###################################################### -->
 
-Base is a project's neutral color, typically some tint of gray, and usually used as the text color throughout.
+    <h2 class="font-sans-10 margin-bottom-4">Red warm</h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-warm-5"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red warm 5</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-warm-5</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red-warm', 5)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-warm-10"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red warm 10</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-warm-10</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red-warm', 10)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-warm-20"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red warm 20</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-warm-20</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red-warm', 20)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-warm-30"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red warm 30</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-warm-30</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red-warm', 30)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-warm-40"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red warm 40</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-warm-40</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red-warm', 40)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-warm-50"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red warm 50</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-warm-50</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red-warm', 50)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-warm-60"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red warm 60</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-warm-60</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red-warm', 60)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-warm-70"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red warm 70</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-warm-70</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red-warm', 70)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-warm-80"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red warm 80</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-warm-80</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red-warm', 80)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-warm-90"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red warm 90</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-warm-90</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red-warm', 90)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- swatches -->
 
-Primary, secondary, and accent colors can be thought of as falling into a proportional 60/30/10 relationship: about 60% of your site’s color would be the primary color family, about 30% would be the secondary color family, and about 10% would be the accent color families (`accent-warm` and `accent-cool`). Note that these proportions are for non-base colors. In many cases, the neutral base text color will be the predominant tone on your site.
+    <!-- ------------------------------------------------------ -->
 
-Each color family has seven possible lightness grades, from `lightest` to `darkest`, though not every family needs to include a color at each grade. Some grades may be set to `false` in your project's theme settings. The default USWDS theme palette does not use every grade for every family. The `primary` and `secondary` families also have a `vivid` grade available.
+    <h2 class="font-sans-10 margin-bottom-4">Red warm <span class="text-normal">vivid</span></h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-warm-5v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red warm 5v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-warm-5v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red-warm', 5, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-warm-10v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red warm 10v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-warm-10v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red-warm', 10, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-warm-20v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red warm 20v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-warm-20v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red-warm', 20, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-warm-30v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red warm 30v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-warm-30v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red-warm', 30, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-warm-40v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red warm 40v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-warm-40v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red-warm', 40, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-warm-50v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red warm 50v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-warm-50v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red-warm', 50, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-warm-60v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red warm 60v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-warm-60v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red-warm', 60, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-warm-70v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red warm 70v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-warm-70v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red-warm', 70, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-warm-80v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red warm 80v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-warm-80v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red-warm', 80, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-red-warm-90v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Red warm 90v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-red-warm-90v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('red-warm', 90, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- family swatches -->
 
-<div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-4 text-bold font-sans-1">
-  <div class="grid-col-1">color</div>
-  <div class="grid-col-2">family token</div>
-  <div class="grid-col-2">grade token</div>
-  <div class="grid-col-4">theme settings variable</div>
-  <div class="grid-col-2">common equivalent</div>
-  <div class="grid-col-1 text-right">hex</div>
-</div>
+    <!-- ###################################################### -->
 
-{% for color in theme_colors %}
-  {% if color.hide_from_palette == true %}
-  {% else %}
-<div class="utility-example-container-condensed grid-row grid-gap flex-align-center">
-  <span class="grid-col-1">
-    <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
-  </span>
-  <span class="grid-col-2">
-    <span class="utility-class">'{{ color.family_token }}'</span>
-  </span>
-  <span class="grid-col-2">
-    {% if color.grade_token %}
-    <span class="utility-class">'{{ color.grade_token }}'</span>
-    {% else %}
-    <span>—</span>
-    {% endif %}
-  </span>
-  <span class="grid-col-4 font-mono-3">
-    <span>{{ color.theme_var }}</span>
-  </span>
-  <span class="grid-col-2 font-mono-3">
-    <span>{{ color.common }}</span>
-  </span>
-  <span class="grid-col-1 text-right font-mono-3">
-    {{ color.value }}
-  </span>
-</div>
-  {% endif %}
-{% endfor %}
+    <h2 class="font-sans-10 margin-bottom-4">Orange warm</h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-warm-5"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange warm 5</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-warm-5</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange-warm', 5)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-warm-10"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange warm 10</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-warm-10</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange-warm', 10)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-warm-20"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange warm 20</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-warm-20</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange-warm', 20)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-warm-30"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange warm 30</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-warm-30</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange-warm', 30)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-warm-40"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange warm 40</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-warm-40</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange-warm', 40)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-warm-50"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange warm 50</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-warm-50</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange-warm', 50)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-warm-60"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange warm 60</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-warm-60</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange-warm', 60)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-warm-70"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange warm 70</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-warm-70</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange-warm', 70)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-warm-80"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange warm 80</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-warm-80</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange-warm', 80)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-warm-90"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange warm 90</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-warm-90</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange-warm', 90)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- swatches -->
 
-## State color palette
-The state color palette is divided into four high-level role-based color families: `error`, `warn`, `success`, and `disabled`.
+    <!-- ------------------------------------------------------ -->
 
-Each color family except `disabled` has five possible lightness grades, from `lighter` to `darker`, though not every family needs to include a color at each grade. Some grades may be set to `false` in your project's theme settings.
+    <h2 class="font-sans-10 margin-bottom-4">Orange warm <span class="text-normal">vivid</span></h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-warm-5v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange warm 5v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-warm-5v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange-warm', 5, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-warm-10v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange warm 10v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-warm-10v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange-warm', 10, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-warm-20v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange warm 20v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-warm-20v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange-warm', 20, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-warm-30v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange warm 30v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-warm-30v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange-warm', 30, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-warm-40v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange warm 40v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-warm-40v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange-warm', 40, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-warm-50v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange warm 50v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-warm-50v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange-warm', 50, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-warm-60v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange warm 60v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-warm-60v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange-warm', 60, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-warm-70v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange warm 70v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-warm-70v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange-warm', 70, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-warm-80v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange warm 80v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-warm-80v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange-warm', 80, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-warm-90v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange warm 90v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-warm-90v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange-warm', 90, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- family swatches -->
 
-<div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-4 text-bold font-sans-1">
-  <div class="grid-col-1">color</div>
-  <div class="grid-col-2">family token</div>
-  <div class="grid-col-2">grade token</div>
-  <div class="grid-col-4">theme settings variable</div>
-  <div class="grid-col-2">common equivalent</div>
-  <div class="grid-col-1 text-right">hex</div>
-</div>
+    <!-- ###################################################### -->
 
-{% for color in state_colors %}
-  {% if color.hide_from_palette == true %}
-  {% else %}
-<div class="utility-example-container-condensed grid-row grid-gap flex-align-center">
-  <span class="grid-col-1">
-    <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
-  </span>
-  <span class="grid-col-2">
-    <span class="utility-class">'{{ color.family_token }}'</span>
-  </span>
-  <span class="grid-col-2">
-    {% if color.grade_token %}
-    <span class="utility-class">'{{ color.grade_token }}'</span>
-    {% else %}
-    <span>—</span>
-    {% endif %}
-  </span>
-  <span class="grid-col-4 font-mono-3">
-    <span>{{ color.theme_var }}</span>
-  </span>
-  <span class="grid-col-2 font-mono-3">
-    <span>{{ color.common }}</span>
-  </span>
-  <span class="grid-col-1 text-right font-mono-3">
-    {{ color.value }}
-  </span>
-</div>
-  {% endif %}
-{% endfor %}
+    <h2 class="font-sans-10 margin-bottom-4">Orange</h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-5"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange 5</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-5</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange', 5)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-10"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange 10</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-10</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange', 10)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-20"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange 20</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-20</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange', 20)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-30"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange 30</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-30</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange', 30)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-40"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange 40</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-40</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange', 40)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-50"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange 50</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-50</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange', 50)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-60"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange 60</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-60</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange', 60)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-70"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange 70</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-70</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange', 70)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-80"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange 80</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-80</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange', 80)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-90"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange 90</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-90</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange', 90)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- swatches -->
 
-## Setting theme and state colors
-Set theme and state colors in your project's theme settings with tokens from the [common color palette](#0) in the form `[family], [grade], [variant]` (The variant is optional).
+    <!-- ------------------------------------------------------ -->
 
-Theme and state families tend to include colors from the same common family, but this is not a hard-and-fast rule. For instance, the USWDS default theme palette uses colors from both the `blue-warm` and `blue` common color families for colors in the `primary` theme family.
+    <h2 class="font-sans-10 margin-bottom-4">Orange <span class="text-normal">vivid</span></h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-5v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange 5v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-5v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange', 5, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-10v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange 10v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-10v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange', 10, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-20v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange 20v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-20v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange', 20, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-30v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange 30v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-30v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange', 30, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-40v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange 40v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-40v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange', 40, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-50v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange 50v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-50v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange', 50, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-60v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange 60v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-60v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange', 60, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-70v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange 70v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-70v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange', 70, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-80v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange 80v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-80v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange', 80, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-orange-90v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Orange 90v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-orange-90v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('orange', 90, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- family swatches -->
 
-Set any unused theme or state color to `false`.
+    <!-- ###################################################### -->
 
-```
-$theme-color-base-family:          'gray';
-$theme-color-base-lightest:        $theme-color-base-family, 2;
-$theme-color-base-lighter:         $theme-color-base-family, 5;
-$theme-color-base-light:           $theme-color-base-family, 10;
-$theme-color-base:                 $theme-color-base-family, 30;
-$theme-color-base-dark:            $theme-color-base-family, 50;
-$theme-color-base-darker:          $theme-color-base-family, 70;
-$theme-color-base-darkest:         $theme-color-base-family, 90;
-$theme-color-ink:                  $theme-color-base-darkest;
+    <h2 class="font-sans-10 margin-bottom-4">Gold</h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gold-5"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gold 5</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gold-5</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gold', 5)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gold-10"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gold 10</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gold-10</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gold', 10)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gold-20"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gold 20</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gold-20</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gold', 20)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gold-30"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gold 30</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gold-30</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gold', 30)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gold-40"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gold 40</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gold-40</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gold', 40)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gold-50"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gold 50</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gold-50</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gold', 50)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gold-60"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gold 60</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gold-60</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gold', 60)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gold-70"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gold 70</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gold-70</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gold', 70)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gold-80"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gold 80</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gold-80</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gold', 80)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gold-90"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gold 90</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gold-90</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gold', 90)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- swatches -->
 
-$theme-color-primary-family:       'blue';
-$theme-color-primary-lightest:     false;
-$theme-color-primary-lighter:      $theme-color-primary-family, 10;
-$theme-color-primary-light:        $theme-color-primary-family, 30;
-$theme-color-primary:              $theme-color-primary-family, 60, 'vivid';
-$theme-color-primary-vivid:        'blue-warm', 60, 'vivid';
-$theme-color-primary-dark:         'blue-warm', 70, 'vivid';
-$theme-color-primary-darker:       'blue-warm', 80, 'vivid';
-$theme-color-primary-darkest:      false;
+    <!-- ------------------------------------------------------ -->
 
-$theme-color-secondary-family:     'red';
-$theme-color-secondary-lightest:   false;
-$theme-color-secondary-lighter:    $theme-color-secondary-family, 10;
-$theme-color-secondary-light:      $theme-color-secondary-family, 30;
-$theme-color-secondary:            $theme-color-secondary-family, 50;
-$theme-color-secondary-vivid:      $theme-color-secondary-family, 50, 'vivid';
-$theme-color-secondary-dark:       $theme-color-secondary-family, 60, 'vivid';
-$theme-color-secondary-darker:     $theme-color-secondary-family, 70, 'vivid';
-$theme-color-secondary-darkest:    false;
+    <h2 class="font-sans-10 margin-bottom-4">Gold <span class="text-normal">vivid</span></h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gold-5v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gold 5v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gold-5v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gold', 5, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gold-10v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gold 10v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gold-10v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gold', 10, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gold-20v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gold 20v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gold-20v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gold', 20, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gold-30v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gold 30v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gold-30v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gold', 30, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gold-40v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gold 40v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gold-40v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gold', 40, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gold-50v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gold 50v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gold-50v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gold', 50, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gold-60v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gold 60v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gold-60v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gold', 60, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gold-70v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gold 70v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gold-70v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gold', 70, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gold-80v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gold 80v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gold-80v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gold', 80, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gold-90v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gold 90v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gold-90v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gold', 90, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- family swatches -->
 
-$theme-color-accent-warm-family:   'orange';
-$theme-color-accent-warm-lightest: false;
-$theme-color-accent-warm-lighter:  $theme-color-accent-warm-family, 10;
-$theme-color-accent-warm-light:    $theme-color-accent-warm-family, 20, 'vivid';
-$theme-color-accent-warm:          $theme-color-accent-warm-family, 30, 'vivid';
-$theme-color-accent-warm-dark:     $theme-color-accent-warm-family, 50, 'vivid';
-$theme-color-accent-warm-darker:   $theme-color-accent-warm-family, 60;
-$theme-color-accent-warm-darkest:  false;
+    <!-- ###################################################### -->
 
-$theme-color-accent-cool-family:   'cyan';
-$theme-color-accent-cool-lightest: false;
-$theme-color-accent-cool-lighter:  $theme-color-accent-cool-family, 5;
-$theme-color-accent-cool-light:    $theme-color-accent-cool-family, 20;
-$theme-color-accent-cool:          $theme-color-accent-cool-family, 30, 'vivid';
-$theme-color-accent-cool-dark:     $theme-color-accent-cool-family, 40, 'vivid';
-$theme-color-accent-cool-darker:   'blue', 60;
-$theme-color-accent-cool-darkest:  false;
+    <h2 class="font-sans-10 margin-bottom-4">Yellow</h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-yellow-5"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Yellow 5</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-yellow-5</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('yellow', 5)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-yellow-10"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Yellow 10</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-yellow-10</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('yellow', 10)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-yellow-20"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Yellow 20</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-yellow-20</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('yellow', 20)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-yellow-30"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Yellow 30</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-yellow-30</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('yellow', 30)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-yellow-40"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Yellow 40</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-yellow-40</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('yellow', 40)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-yellow-50"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Yellow 50</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-yellow-50</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('yellow', 50)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-yellow-60"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Yellow 60</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-yellow-60</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('yellow', 60)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-yellow-70"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Yellow 70</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-yellow-70</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('yellow', 70)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-yellow-80"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Yellow 80</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-yellow-80</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('yellow', 80)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-yellow-90"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Yellow 90</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-yellow-90</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('yellow', 90)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- swatches -->
 
-$theme-color-error-family:         'red';
-$theme-color-error-lighter:        $theme-color-error-family, 30, 'vivid';
-$theme-color-error-light:          $theme-color-error-family, 40, 'vivid';
-$theme-color-error:                $theme-color-error-family, 50, 'vivid';
-$theme-color-error-dark:           $theme-color-error-family, 60;
-$theme-color-error-darker:         $theme-color-error-family, 70;
+    <!-- ------------------------------------------------------ -->
 
-$theme-color-warn-family:          'orange';
-$theme-color-warn-lighter:         $theme-color-warn-family, 10;
-$theme-color-warn-light:           $theme-color-warn-family, 20, 'vivid';
-$theme-color-warn:                 $theme-color-warn-family, 30, 'vivid';
-$theme-color-warn-dark:            $theme-color-warn-family, 40;
-$theme-color-warn-darker:          $theme-color-warn-family, 50;
+    <h2 class="font-sans-10 margin-bottom-4">Yellow <span class="text-normal">vivid</span></h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-yellow-5v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Yellow 5v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-yellow-5v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('yellow', 5, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-yellow-10v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Yellow 10v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-yellow-10v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('yellow', 10, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-yellow-20v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Yellow 20v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-yellow-20v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('yellow', 20, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-yellow-30v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Yellow 30v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-yellow-30v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('yellow', 30, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-yellow-40v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Yellow 40v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-yellow-40v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('yellow', 40, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-yellow-50v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Yellow 50v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-yellow-50v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('yellow', 50, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-yellow-60v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Yellow 60v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-yellow-60v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('yellow', 60, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-yellow-70v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Yellow 70v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-yellow-70v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('yellow', 70, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-yellow-80v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Yellow 80v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-yellow-80v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('yellow', 80, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-yellow-90v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Yellow 90v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-yellow-90v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('yellow', 90, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- family swatches -->
 
-$theme-color-success-family:       'green-cool';
-$theme-color-success-lighter:      $theme-color-success-family, 20, 'vivid';
-$theme-color-success-light:        $theme-color-success-family, 30, 'vivid';
-$theme-color-success:              $theme-color-success-family, 40, 'vivid';
-$theme-color-success-dark:         $theme-color-success-family, 50;
-$theme-color-success-darker:       $theme-color-success-family, 70;
+    <!-- ###################################################### -->
 
-$theme-color-disabled-family:      $theme-color-base-family;
-$theme-color-disabled:             $theme-color-disabled-family, 30;
+    <h2 class="font-sans-10 margin-bottom-4">Green warm</h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-warm-5"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green warm 5</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-warm-5</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-warm', 5)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-warm-10"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green warm 10</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-warm-10</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-warm', 10)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-warm-20"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green warm 20</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-warm-20</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-warm', 20)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-warm-30"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green warm 30</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-warm-30</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-warm', 30)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-warm-40"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green warm 40</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-warm-40</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-warm', 40)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-warm-50"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green warm 50</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-warm-50</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-warm', 50)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-warm-60"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green warm 60</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-warm-60</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-warm', 60)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-warm-70"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green warm 70</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-warm-70</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-warm', 70)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-warm-80"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green warm 80</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-warm-80</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-warm', 80)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-warm-90"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green warm 90</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-warm-90</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-warm', 90)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- swatches -->
 
-```
+    <!-- ------------------------------------------------------ -->
 
-## Using colors in utilities, settings, and component Sass
-You'll access USWDS colors using a few different techniques, depending on your situation and coding style.
+    <h2 class="font-sans-10 margin-bottom-4">Green warm <span class="text-normal">vivid</span></h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-warm-5v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green warm 5v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-warm-5v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-warm', 5, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-warm-10v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green warm 10v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-warm-10v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-warm', 10, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-warm-20v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green warm 20v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-warm-20v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-warm', 20, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-warm-30v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green warm 30v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-warm-30v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-warm', 30, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-warm-40v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green warm 40v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-warm-40v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-warm', 40, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-warm-50v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green warm 50v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-warm-50v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-warm', 50, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-warm-60v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green warm 60v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-warm-60v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-warm', 60, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-warm-70v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green warm 70v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-warm-70v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-warm', 70, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-warm-80v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green warm 80v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-warm-80v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-warm', 80, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-warm-90v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green warm 90v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-warm-90v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-warm', 90, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- family swatches -->
 
-{:.margin-bottom-0}
-### Settings
+    <!-- ###################################################### -->
 
-{:.margin-top-05}
-Use family, grade, and an optional variant token (for vivid variants of common colors) in the form `[family], [grade], [variant]`.
+    <h2 class="font-sans-10 margin-bottom-4">Green</h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-5"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green 5</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-5</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green', 5)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-10"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green 10</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-10</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green', 10)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-20"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green 20</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-20</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green', 20)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-30"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green 30</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-30</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green', 30)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-40"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green 40</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-40</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green', 40)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-50"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green 50</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-50</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green', 50)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-60"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green 60</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-60</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green', 60)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-70"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green 70</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-70</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green', 70)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-80"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green 80</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-80</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green', 80)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-90"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green 90</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-90</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green', 90)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- swatches -->
 
-{:.maxw-mobile-lg}
-```
-$theme-color-accent-cool:          'mint', 30, 'vivid';
-$theme-color-accent-cool-dark:     'mint', 50;
-```
+    <!-- ------------------------------------------------------ -->
 
-{:.margin-bottom-0.margin-top-4}
-### Utilities
+    <h2 class="font-sans-10 margin-bottom-4">Green <span class="text-normal">vivid</span></h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-5v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green 5v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-5v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green', 5, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-10v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green 10v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-10v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green', 10, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-20v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green 20v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-20v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green', 20, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-30v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green 30v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-30v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green', 30, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-40v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green 40v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-40v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green', 40, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-50v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green 50v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-50v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green', 50, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-60v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green 60v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-60v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green', 60, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-70v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green 70v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-70v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green', 70, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-80v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green 80v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-80v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green', 80, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-90v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green 90v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-90v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green', 90, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- family swatches -->
 
-{:.margin-top-05}
-Color utilities require an unquoted family token, an optional unquoted scale token, and an optional `v` suffix for vivid variants of common colors in the form `[utility]-[family]-[grade][v]`.
+    <!-- ###################################################### -->
 
-_Note: In USWDS utilities, only the theme palette is activated by default. See the [color utilities section](#0) for more details about how to activate additional palettes for your utilities._
+    <h2 class="font-sans-10 margin-bottom-4">Green cool</h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-cool-5"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green cool 5</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-cool-5</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-cool', 5)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-cool-10"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green cool 10</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-cool-10</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-cool', 10)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-cool-20"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green cool 20</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-cool-20</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-cool', 20)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-cool-30"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green cool 30</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-cool-30</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-cool', 30)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-cool-40"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green cool 40</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-cool-40</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-cool', 40)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-cool-50"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green cool 50</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-cool-50</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-cool', 50)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-cool-60"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green cool 60</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-cool-60</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-cool', 60)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-cool-70"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green cool 70</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-cool-70</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-cool', 70)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-cool-80"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green cool 80</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-cool-80</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-cool', 80)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-cool-90"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green cool 90</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-cool-90</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-cool', 90)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- swatches -->
 
-{:.maxw-mobile-lg}
-```
-.bg-secondary
-.bg-primary-darker
-.text-primary-vivid
-.color-red-warm-50v
-.underline-accent-warm
-```
+    <!-- ------------------------------------------------------ -->
 
-{:.margin-bottom-0.margin-top-4}
-### Variables
+    <h2 class="font-sans-10 margin-bottom-4">Green cool <span class="text-normal">vivid</span></h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-cool-5v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green cool 5v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-cool-5v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-cool', 5, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-cool-10v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green cool 10v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-cool-10v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-cool', 10, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-cool-20v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green cool 20v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-cool-20v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-cool', 20, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-cool-30v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green cool 30v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-cool-30v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-cool', 30, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-cool-40v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green cool 40v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-cool-40v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-cool', 40, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-cool-50v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green cool 50v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-cool-50v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-cool', 50, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-cool-60v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green cool 60v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-cool-60v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-cool', 60, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-cool-70v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green cool 70v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-cool-70v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-cool', 70, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-cool-80v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green cool 80v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-cool-80v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-cool', 80, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-green-cool-90v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Green cool 90v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-green-cool-90v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('green-cool', 90, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- family swatches -->
 
-{:.margin-top-05}
-Color variable require an unquoted family token, an optional unquoted scale token, and an optional `v` suffix for vivid variants of common colors in the form `$[family]-[grade][v]`.
+    <!-- ###################################################### -->
 
-{:.maxw-mobile-lg}
-```
-border-color: $primary-vivid;
-border-color: $blue-warm-50v;
-background-color: $disabled;
-```
+    <h2 class="font-sans-10 margin-bottom-4">Mint</h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-5"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint 5</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-5</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint', 5)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-10"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint 10</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-10</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint', 10)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-20"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint 20</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-20</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint', 20)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-30"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint 30</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-30</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint', 30)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-40"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint 40</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-40</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint', 40)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-50"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint 50</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-50</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint', 50)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-60"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint 60</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-60</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint', 60)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-70"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint 70</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-70</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint', 70)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-80"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint 80</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-80</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint', 80)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-90"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint 90</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-90</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint', 90)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- swatches -->
 
-{:.margin-bottom-0.margin-top-4}
-### Functions
+    <!-- ------------------------------------------------------ -->
 
-{:.margin-top-05}
-The `color()` function accepts a family token, an optional scale token, and an optional variant token for vivid variants of common colors in the form `color([family], [grade], [variant])`.
+    <h2 class="font-sans-10 margin-bottom-4">Mint <span class="text-normal">vivid</span></h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-5v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint 5v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-5v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint', 5, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-10v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint 10v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-10v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint', 10, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-20v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint 20v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-20v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint', 20, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-30v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint 30v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-30v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint', 30, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-40v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint 40v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-40v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint', 40, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-50v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint 50v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-50v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint', 50, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-60v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint 60v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-60v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint', 60, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-70v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint 70v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-70v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint', 70, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-80v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint 80v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-80v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint', 80, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-90v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint 90v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-90v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint', 90, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- family swatches -->
 
-{:.maxw-mobile-lg}
-```
-border-color: color('primary', 'vivid');
-border-color: color('blue-warm', 50, 'vivid');
-background-color: color('disabled');
-```
+    <!-- ###################################################### -->
 
-{:.margin-bottom-0.margin-top-4}
-### Utility mixins
+    <h2 class="font-sans-10 margin-bottom-4">Mint cool</h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-cool-5"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint cool 5</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-cool-5</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint-cool', 5)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-cool-10"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint cool 10</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-cool-10</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint-cool', 10)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-cool-20"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint cool 20</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-cool-20</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint-cool', 20)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-cool-30"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint cool 30</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-cool-30</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint-cool', 30)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-cool-40"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint cool 40</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-cool-40</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint-cool', 40)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-cool-50"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint cool 50</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-cool-50</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint-cool', 50)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-cool-60"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint cool 60</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-cool-60</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint-cool', 60)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-cool-70"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint cool 70</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-cool-70</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint-cool', 70)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-cool-80"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint cool 80</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-cool-80</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint-cool', 80)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-cool-90"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint cool 90</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-cool-90</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint-cool', 90)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- swatches -->
 
-{:.margin-top-05}
-Utility mixins accept color variables in the form outlined above.
+    <!-- ------------------------------------------------------ -->
 
-{:.maxw-mobile-lg}
-```
-@include u-text($primary, 'bold')
-@include u-bg($red-warm-50v)
-@include u-border-bottom('05', $base-lightest)
-```
+    <h2 class="font-sans-10 margin-bottom-4">Mint cool <span class="text-normal">vivid</span></h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-cool-5v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint cool 5v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-cool-5v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint-cool', 5, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-cool-10v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint cool 10v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-cool-10v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint-cool', 10, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-cool-20v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint cool 20v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-cool-20v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint-cool', 20, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-cool-30v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint cool 30v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-cool-30v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint-cool', 30, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-cool-40v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint cool 40v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-cool-40v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint-cool', 40, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-cool-50v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint cool 50v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-cool-50v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint-cool', 50, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-cool-60v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint cool 60v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-cool-60v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint-cool', 60, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-cool-70v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint cool 70v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-cool-70v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint-cool', 70, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-cool-80v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint cool 80v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-cool-80v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint-cool', 80, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-mint-cool-90v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Mint cool 90v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-mint-cool-90v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('mint-cool', 90, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- family swatches -->
+
+    <!-- ###################################################### -->
+
+    <h2 class="font-sans-10 margin-bottom-4">Cyan</h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-cyan-5"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Cyan 5</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-cyan-5</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('cyan', 5)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-cyan-10"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Cyan 10</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-cyan-10</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('cyan', 10)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-cyan-20"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Cyan 20</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-cyan-20</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('cyan', 20)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-cyan-30"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Cyan 30</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-cyan-30</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('cyan', 30)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-cyan-40"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Cyan 40</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-cyan-40</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('cyan', 40)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-cyan-50"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Cyan 50</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-cyan-50</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('cyan', 50)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-cyan-60"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Cyan 60</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-cyan-60</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('cyan', 60)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-cyan-70"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Cyan 70</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-cyan-70</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('cyan', 70)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-cyan-80"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Cyan 80</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-cyan-80</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('cyan', 80)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-cyan-90"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Cyan 90</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-cyan-90</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('cyan', 90)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- swatches -->
+
+    <!-- ------------------------------------------------------ -->
+
+    <h2 class="font-sans-10 margin-bottom-4">Cyan <span class="text-normal">vivid</span></h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-cyan-5v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Cyan 5v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-cyan-5v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('cyan', 5, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-cyan-10v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Cyan 10v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-cyan-10v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('cyan', 10, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-cyan-20v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Cyan 20v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-cyan-20v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('cyan', 20, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-cyan-30v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Cyan 30v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-cyan-30v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('cyan', 30, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-cyan-40v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Cyan 40v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-cyan-40v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('cyan', 40, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-cyan-50v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Cyan 50v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-cyan-50v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('cyan', 50, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-cyan-60v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Cyan 60v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-cyan-60v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('cyan', 60, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-cyan-70v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Cyan 70v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-cyan-70v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('cyan', 70, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-cyan-80v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Cyan 80v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-cyan-80v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('cyan', 80, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-cyan-90v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Cyan 90v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-cyan-90v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('cyan', 90, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- family swatches -->
+
+    <!-- ###################################################### -->
+
+    <h2 class="font-sans-10 margin-bottom-4">Blue</h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-5"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue 5</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-5</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue', 5)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-10"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue 10</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-10</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue', 10)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-20"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue 20</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-20</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue', 20)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-30"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue 30</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-30</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue', 30)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-40"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue 40</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-40</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue', 40)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-50"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue 50</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-50</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue', 50)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-60"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue 60</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-60</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue', 60)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-70"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue 70</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-70</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue', 70)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-80"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue 80</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-80</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue', 80)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-90"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue 90</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-90</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue', 90)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- swatches -->
+
+    <!-- ------------------------------------------------------ -->
+
+    <h2 class="font-sans-10 margin-bottom-4">Blue <span class="text-normal">vivid</span></h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-5v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue 5v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-5v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue', 5, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-10v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue 10v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-10v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue', 10, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-20v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue 20v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-20v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue', 20, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-30v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue 30v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-30v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue', 30, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-40v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue 40v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-40v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue', 40, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-50v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue 50v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-50v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue', 50, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-60v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue 60v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-60v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue', 60, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-70v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue 70v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-70v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue', 70, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-80v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue 80v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-80v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue', 80, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-90v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue 90v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-90v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue', 90, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- family swatches -->
+
+    <!-- ###################################################### -->
+
+    <h2 class="font-sans-10 margin-bottom-4">Blue warm</h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-warm-5"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue warm 5</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-warm-5</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue-warm', 5)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-warm-10"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue warm 10</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-warm-10</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue-warm', 10)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-warm-20"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue warm 20</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-warm-20</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue-warm', 20)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-warm-30"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue warm 30</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-warm-30</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue-warm', 30)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-warm-40"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue warm 40</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-warm-40</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue-warm', 40)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-warm-50"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue warm 50</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-warm-50</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue-warm', 50)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-warm-60"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue warm 60</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-warm-60</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue-warm', 60)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-warm-70"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue warm 70</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-warm-70</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue-warm', 70)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-warm-80"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue warm 80</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-warm-80</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue-warm', 80)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-warm-90"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue warm 90</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-warm-90</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue-warm', 90)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- swatches -->
+
+    <!-- ------------------------------------------------------ -->
+
+    <h2 class="font-sans-10 margin-bottom-4">Blue warm <span class="text-normal">vivid</span></h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-warm-5v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue warm 5v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-warm-5v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue-warm', 5, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-warm-10v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue warm 10v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-warm-10v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue-warm', 10, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-warm-20v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue warm 20v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-warm-20v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue-warm', 20, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-warm-30v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue warm 30v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-warm-30v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue-warm', 30, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-warm-40v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue warm 40v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-warm-40v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue-warm', 40, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-warm-50v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue warm 50v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-warm-50v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue-warm', 50, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-warm-60v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue warm 60v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-warm-60v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue-warm', 60, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-warm-70v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue warm 70v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-warm-70v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue-warm', 70, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-warm-80v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue warm 80v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-warm-80v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue-warm', 80, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-blue-warm-90v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Blue warm 90v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-blue-warm-90v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('blue-warm', 90, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- family swatches -->
+
+    <!-- ###################################################### -->
+
+    <h2 class="font-sans-10 margin-bottom-4">Indigo cool</h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-cool-5"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo cool 5</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-cool-5</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-cool', 5)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-cool-10"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo cool 10</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-cool-10</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-cool', 10)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-cool-20"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo cool 20</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-cool-20</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-cool', 20)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-cool-30"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo cool 30</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-cool-30</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-cool', 30)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-cool-40"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo cool 40</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-cool-40</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-cool', 40)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-cool-50"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo cool 50</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-cool-50</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-cool', 50)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-cool-60"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo cool 60</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-cool-60</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-cool', 60)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-cool-70"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo cool 70</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-cool-70</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-cool', 70)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-cool-80"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo cool 80</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-cool-80</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-cool', 80)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-cool-90"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo cool 90</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-cool-90</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-cool', 90)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- swatches -->
+
+    <!-- ------------------------------------------------------ -->
+
+    <h2 class="font-sans-10 margin-bottom-4">Indigo cool <span class="text-normal">vivid</span></h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-cool-5v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo cool 5v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-cool-5v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-cool', 5, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-cool-10v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo cool 10v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-cool-10v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-cool', 10, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-cool-20v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo cool 20v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-cool-20v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-cool', 20, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-cool-30v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo cool 30v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-cool-30v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-cool', 30, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-cool-40v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo cool 40v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-cool-40v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-cool', 40, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-cool-50v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo cool 50v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-cool-50v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-cool', 50, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-cool-60v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo cool 60v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-cool-60v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-cool', 60, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-cool-70v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo cool 70v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-cool-70v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-cool', 70, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-cool-80v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo cool 80v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-cool-80v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-cool', 80, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-cool-90v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo cool 90v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-cool-90v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-cool', 90, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- family swatches -->
+
+    <!-- ###################################################### -->
+
+    <h2 class="font-sans-10 margin-bottom-4">Indigo</h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-5"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo 5</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-5</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo', 5)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-10"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo 10</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-10</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo', 10)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-20"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo 20</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-20</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo', 20)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-30"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo 30</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-30</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo', 30)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-40"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo 40</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-40</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo', 40)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-50"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo 50</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-50</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo', 50)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-60"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo 60</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-60</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo', 60)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-70"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo 70</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-70</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo', 70)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-80"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo 80</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-80</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo', 80)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-90"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo 90</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-90</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo', 90)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- swatches -->
+
+    <!-- ------------------------------------------------------ -->
+
+    <h2 class="font-sans-10 margin-bottom-4">Indigo <span class="text-normal">vivid</span></h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-5v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo 5v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-5v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo', 5, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-10v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo 10v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-10v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo', 10, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-20v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo 20v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-20v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo', 20, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-30v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo 30v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-30v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo', 30, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-40v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo 40v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-40v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo', 40, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-50v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo 50v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-50v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo', 50, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-60v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo 60v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-60v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo', 60, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-70v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo 70v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-70v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo', 70, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-80v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo 80v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-80v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo', 80, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-90v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo 90v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-90v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo', 90, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- family swatches -->
+
+    <!-- ###################################################### -->
+
+    <h2 class="font-sans-10 margin-bottom-4">Indigo warm</h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-warm-5"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo warm 5</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-warm-5</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-warm', 5)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-warm-10"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo warm 10</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-warm-10</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-warm', 10)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-warm-20"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo warm 20</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-warm-20</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-warm', 20)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-warm-30"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo warm 30</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-warm-30</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-warm', 30)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-warm-40"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo warm 40</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-warm-40</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-warm', 40)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-warm-50"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo warm 50</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-warm-50</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-warm', 50)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-warm-60"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo warm 60</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-warm-60</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-warm', 60)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-warm-70"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo warm 70</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-warm-70</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-warm', 70)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-warm-80"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo warm 80</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-warm-80</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-warm', 80)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-warm-90"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo warm 90</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-warm-90</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-warm', 90)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- swatches -->
+
+    <!-- ------------------------------------------------------ -->
+
+    <h2 class="font-sans-10 margin-bottom-4">Indigo warm <span class="text-normal">vivid</span></h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-warm-5v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo warm 5v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-warm-5v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-warm', 5, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-warm-10v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo warm 10v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-warm-10v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-warm', 10, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-warm-20v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo warm 20v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-warm-20v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-warm', 20, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-warm-30v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo warm 30v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-warm-30v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-warm', 30, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-warm-40v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo warm 40v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-warm-40v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-warm', 40, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-warm-50v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo warm 50v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-warm-50v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-warm', 50, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-warm-60v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo warm 60v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-warm-60v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-warm', 60, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-warm-70v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo warm 70v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-warm-70v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-warm', 70, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-warm-80v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo warm 80v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-warm-80v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-warm', 80, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-indigo-warm-90v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Indigo warm 90v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-indigo-warm-90v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('indigo-warm', 90, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- family swatches -->
+
+    <!-- ###################################################### -->
+
+    <h2 class="font-sans-10 margin-bottom-4">Violet</h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-5"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet 5</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-5</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet', 5)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-10"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet 10</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-10</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet', 10)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-20"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet 20</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-20</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet', 20)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-30"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet 30</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-30</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet', 30)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-40"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet 40</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-40</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet', 40)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-50"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet 50</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-50</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet', 50)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-60"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet 60</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-60</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet', 60)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-70"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet 70</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-70</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet', 70)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-80"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet 80</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-80</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet', 80)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-90"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet 90</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-90</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet', 90)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- swatches -->
+
+    <!-- ------------------------------------------------------ -->
+
+    <h2 class="font-sans-10 margin-bottom-4">Violet <span class="text-normal">vivid</span></h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-5v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet 5v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-5v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet', 5, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-10v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet 10v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-10v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet', 10, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-20v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet 20v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-20v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet', 20, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-30v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet 30v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-30v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet', 30, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-40v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet 40v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-40v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet', 40, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-50v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet 50v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-50v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet', 50, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-60v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet 60v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-60v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet', 60, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-70v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet 70v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-70v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet', 70, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-80v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet 80v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-80v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet', 80, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-90v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet 90v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-90v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet', 90, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- family swatches -->
+
+    <!-- ###################################################### -->
+
+    <h2 class="font-sans-10 margin-bottom-4">Violet warm</h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-warm-5"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet warm 5</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-warm-5</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet-warm', 5)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-warm-10"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet warm 10</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-warm-10</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet-warm', 10)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-warm-20"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet warm 20</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-warm-20</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet-warm', 20)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-warm-30"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet warm 30</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-warm-30</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet-warm', 30)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-warm-40"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet warm 40</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-warm-40</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet-warm', 40)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-warm-50"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet warm 50</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-warm-50</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet-warm', 50)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-warm-60"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet warm 60</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-warm-60</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet-warm', 60)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-warm-70"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet warm 70</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-warm-70</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet-warm', 70)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-warm-80"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet warm 80</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-warm-80</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet-warm', 80)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-warm-90"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet warm 90</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-warm-90</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet-warm', 90)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- swatches -->
+
+    <!-- ------------------------------------------------------ -->
+
+    <h2 class="font-sans-10 margin-bottom-4">Violet warm <span class="text-normal">vivid</span></h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-warm-5v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet warm 5v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-warm-5v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet-warm', 5, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-warm-10v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet warm 10v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-warm-10v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet-warm', 10, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-warm-20v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet warm 20v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-warm-20v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet-warm', 20, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-warm-30v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet warm 30v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-warm-30v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet-warm', 30, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-warm-40v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet warm 40v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-warm-40v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet-warm', 40, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-warm-50v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet warm 50v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-warm-50v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet-warm', 50, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-warm-60v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet warm 60v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-warm-60v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet-warm', 60, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-warm-70v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet warm 70v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-warm-70v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet-warm', 70, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-warm-80v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet warm 80v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-warm-80v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet-warm', 80, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-violet-warm-90v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Violet warm 90v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-violet-warm-90v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('violet-warm', 90, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- family swatches -->
+
+    <!-- ###################################################### -->
+
+    <h2 class="font-sans-10 margin-bottom-4">Magenta</h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-magenta-5"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Magenta 5</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-magenta-5</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('magenta', 5)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-magenta-10"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Magenta 10</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-magenta-10</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('magenta', 10)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-magenta-20"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Magenta 20</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-magenta-20</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('magenta', 20)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-magenta-30"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Magenta 30</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-magenta-30</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('magenta', 30)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-magenta-40"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Magenta 40</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-magenta-40</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('magenta', 40)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-magenta-50"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Magenta 50</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-magenta-50</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('magenta', 50)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-magenta-60"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Magenta 60</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-magenta-60</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('magenta', 60)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-magenta-70"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Magenta 70</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-magenta-70</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('magenta', 70)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-magenta-80"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Magenta 80</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-magenta-80</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('magenta', 80)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-magenta-90"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Magenta 90</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-magenta-90</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('magenta', 90)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- swatches -->
+
+    <!-- ------------------------------------------------------ -->
+
+    <h2 class="font-sans-10 margin-bottom-4">Magenta <span class="text-normal">vivid</span></h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-magenta-5v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Magenta 5v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-magenta-5v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('magenta', 5, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-magenta-10v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Magenta 10v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-magenta-10v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('magenta', 10, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-magenta-20v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Magenta 20v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-magenta-20v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('magenta', 20, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-magenta-30v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Magenta 30v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-magenta-30v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('magenta', 30, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-magenta-40v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Magenta 40v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-magenta-40v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('magenta', 40, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-magenta-50v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Magenta 50v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-magenta-50v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('magenta', 50, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-magenta-60v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Magenta 60v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-magenta-60v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('magenta', 60, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-magenta-70v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Magenta 70v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-magenta-70v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('magenta', 70, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-magenta-80v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Magenta 80v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-magenta-80v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('magenta', 80, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-magenta-90v"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Magenta 90v</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-magenta-90v</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('magenta', 90, 'vivid')</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- family swatches -->
+
+    <!-- ###################################################### -->
+
+    <h2 class="font-sans-10 margin-bottom-4">Black warm</h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-warm-1"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 1</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-1</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-warm', 1)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-warm-2"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 2</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-2</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-warm', 2)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-warm-3"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 3</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-3</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-warm', 3)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-warm-4"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 4</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-4</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-warm', 4)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-warm-5"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 5</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-5</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-warm', 5)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-warm-10"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 10</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-10</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-warm', 10)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-warm-20"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 20</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-20</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-warm', 20)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-warm-30"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 30</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-30</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-warm', 30)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-warm-40"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 40</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-40</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-warm', 40)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-warm-50"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 50</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-50</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-warm', 50)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-warm-60"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 60</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-60</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-warm', 60)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-warm-70"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 70</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-70</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-warm', 70)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-warm-80"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 80</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-80</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-warm', 80)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-warm-90"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 90</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-90</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-warm', 90)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- swatches -->
+
+    <!-- ###################################################### -->
+
+    <h2 class="font-sans-10 margin-bottom-4">Black</h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-1"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black 1</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-1</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('black', 1)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-2"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black 2</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-2</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('black', 2)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-3"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black 3</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-3</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('black', 3)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-4"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black 4</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-4</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('black', 4)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-5"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black 5</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-5</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('black', 5)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-10"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black 10</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-10</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('black', 10)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-20"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black 20</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-20</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('black', 20)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-30"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black 30</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-30</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('black', 30)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-40"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black 40</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-40</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('black', 40)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-50"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black 50</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-50</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('black', 50)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-60"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black 60</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-60</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('black', 60)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-70"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black 70</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-70</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('black', 70)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-80"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black 80</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-80</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('black', 80)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-90"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black 90</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-90</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('black', 90)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-black"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-black</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color(black)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+    </div><!-- swatches -->
+
+    <!-- ###################################################### -->
+
+    <h2 class="font-sans-10 margin-bottom-4">Black cool</h2>
+    <div class="grid-row gap swatches">
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-cool-1"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 1</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-1</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-cool', 1)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-cool-2"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 2</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-2</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-cool', 2)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-cool-3"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 3</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-3</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-cool', 3)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-cool-4"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 4</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-4</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-cool', 4)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-cool-5"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 5</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-5</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-cool', 5)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-cool-10"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 10</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-10</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-cool', 10)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-cool-20"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 20</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-20</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-cool', 20)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-cool-30"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 30</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-30</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-cool', 30)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-cool-40"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 40</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-40</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-cool', 40)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-cool-50"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 50</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-50</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-cool', 50)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-cool-60"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 60</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-60</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-cool', 60)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-cool-70"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 70</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-70</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-cool', 70)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-cool-80"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 80</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-80</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-cool', 80)</code></li>
+            <li>#284490</li>
+          </ul>
+        </div>
+      </div><!-- swatch-container -->
+      <div class="grid-col-4 swatch-container">
+        <div class="swatch margin-bottom-4">
+          <div class="height-9 bg-gray-cool-90"></div>
+          <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 90</li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-90</code></li>
+            <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">SASS:</span> <code>color('gray-cool', 90)</code></li>
+            <li>#284490</li>
+              </ul>
+            </div>
+          </div><!-- swatch-container -->
+        </div><!-- swatches -->
+
+      </div>
+    </div>

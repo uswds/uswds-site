@@ -6,6 +6,8 @@ category: Style
 lead: The USWDS system color palette is the complete set of colors from which any project can build a theme palette
 type: docs
 subnav:
+  - text: Red warm
+    href: '#red-warm'
   - text: Red
     href: '#red'
   - text: Orange warm
@@ -98,10 +100,25 @@ families:
 
 <div class="padding-top-3 text-normal maxw-tablet-lg">
   {% for family in page.families %}
-    <h2 class="font-sans-10 margin-top-0 margin-bottom-4 text-ink" id="{{ family | replace: '_', '-' }}">{{ family | replace: '_', ' ' | capitalize }}</h2>
-    <div class="grid-row gap swatches">
+    {% capture last %}{{ family | split: '_' | last }}{% endcapture %}
+    {% capture this_title %}{{ family | replace: '_', ' ' | capitalize }}{% endcapture %}
+    {% if last == 'vivid' %}
+      {% capture this_title %}{{ family | replace: '_', ' ' | replace: ' vivid', '' | capitalize }}<span class="text-normal"> vivid</span>{% endcapture %}
+    {% endif%}
+    <h2 class="font-sans-10 margin-top-0 margin-bottom-1 text-ink" id="{{ family | replace: '_', '-' }}">{{ this_title }}</h2>
+
+    <div class="grid-row grid-gap flex-align-center margin-bottom-1 padding-bottom-1 border-bottom-2px margin-top-2 text-bold font-sans-1">
+      <div class="grid-col-3">color</div>
+      <div class="grid-col-2">family</div>
+      <div class="grid-col-1">grade</div>
+      <div class="grid-col-2">variant</div>
+      <div class="grid-col-3">variable</div>
+      <div class="grid-col-fill text-right">hex</div>
+    </div>
+
+    <div class="margin-bottom-4">
       {% for color in system_colors[family] %}
-        {% include style/swatch.html %}
+        {% include style/swatch-condensed.html %}
       {% endfor %}
     </div>
   {% endfor %}

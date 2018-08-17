@@ -408,31 +408,31 @@ colors:
       grade_token: 'lighter'
       value: '#nnnnnn'
       common: orange-10
-      theme_var: $theme-color-warning-lighter
+      theme_var: $theme-color-warn-lighter
     - token: warn-light
       family_token: 'warn'
       grade_token: 'light'
       value: '#nnnnnn'
       common: orange-20v
-      theme_var: $theme-color-warning-light
+      theme_var: $theme-color-warn-light
     - token: warn
       family_token: 'warn'
       grade_token: false
       value: '#nnnnnn'
       common: orange-30v
-      theme_var: $theme-color-warning
+      theme_var: $theme-color-warn
     - token: warn-dark
       family_token: 'warn'
       grade_token: 'dark'
       value: '#nnnnnn'
       common: orange-40
-      theme_var: $theme-color-warning-dark
+      theme_var: $theme-color-warn-dark
     - token: warn-darker
       family_token: 'warn'
       grade_token: 'darker'
       value: '#nnnnnn'
       common: orange-50
-      theme_var: $theme-color-warning-darker
+      theme_var: $theme-color-warn-darker
     - token: success-lighter
       family_token: 'success'
       grade_token: 'lighter'

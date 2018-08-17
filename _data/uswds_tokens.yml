@@ -372,6 +372,103 @@ colors:
       var: $accent-warm-darker
       common: orange-60
       theme_var: $theme-accent-warm-darker
+  project_state:
+    - token: error-lighter
+      family_token: 'error'
+      grade_token: 'lighter'
+      value: '#FD8170'
+      common: red-30v
+      theme_var: $theme-color-error-lighter
+    - token: error-light
+      family_token: 'error'
+      grade_token: 'light'
+      value: '#nnnnnn'
+      common: red-40v
+      theme_var: $theme-color-error-light
+    - token: error
+      family_token: 'error'
+      grade_token: false
+      value: '#nnnnnn'
+      common: red-50v
+      theme_var: $theme-color-error
+    - token: error-dark
+      family_token: 'error'
+      grade_token: 'dark'
+      value: '#nnnnnn'
+      common: red-60
+      theme_var: $theme-color-error-dark
+    - token: error-darker
+      family_token: 'error'
+      grade_token: 'darker'
+      value: '#nnnnnn'
+      common: red-70
+      theme_var: $theme-color-error-darker
+    - token: warn-lighter
+      family_token: 'warn'
+      grade_token: 'lighter'
+      value: '#nnnnnn'
+      common: orange-10
+      theme_var: $theme-color-warning-lighter
+    - token: warn-light
+      family_token: 'warn'
+      grade_token: 'light'
+      value: '#nnnnnn'
+      common: orange-20v
+      theme_var: $theme-color-warning-light
+    - token: warn
+      family_token: 'warn'
+      grade_token: false
+      value: '#nnnnnn'
+      common: orange-30v
+      theme_var: $theme-color-warning
+    - token: warn-dark
+      family_token: 'warn'
+      grade_token: 'dark'
+      value: '#nnnnnn'
+      common: orange-40
+      theme_var: $theme-color-warning-dark
+    - token: warn-darker
+      family_token: 'warn'
+      grade_token: 'darker'
+      value: '#nnnnnn'
+      common: orange-50
+      theme_var: $theme-color-warning-darker
+    - token: success-lighter
+      family_token: 'success'
+      grade_token: 'lighter'
+      value: '#nnnnnn'
+      common: green-cool-20v
+      theme_var: $theme-color-success-lighter
+    - token: success-light
+      family_token: 'success'
+      grade_token: 'light'
+      value: '#nnnnnn'
+      common: green-cool-30v
+      theme_var: $theme-color-success-light
+    - token: success
+      family_token: 'success'
+      grade_token: false
+      value: '#nnnnnn'
+      common: green-cool-40v
+      theme_var: $theme-color-success
+    - token: success-dark
+      family_token: 'success'
+      grade_token: 'dark'
+      value: '#nnnnnn'
+      common: green-cool-50
+      theme_var: $theme-color-success-dark
+    - token: success-darker
+      family_token: 'success'
+      grade_token: 'darker'
+      value: '#nnnnnn'
+      common: green-cool-70
+      theme_var: $theme-color-success-darker
+    - token: disabled
+      family_token: 'disabled'
+      grade_token: false
+      value: '#nnnnnn'
+      common: gray-30
+      theme_var: $theme-color-disabled
   grayscale:
     - token: white
       value: '#ffffff'

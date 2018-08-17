@@ -289,10 +289,12 @@ $theme-color-accent-cool-dark:     'mint', 50;
 {:.margin-top-05}
 Color utilities require an unquoted family token, an optional unquoted scale token, and an optional `v` suffix for vivid variants of common colors in the form `[utility]-[family]-[grade][v]`.
 
+_Note: In USWDS utilities, only the theme palette is activated by default. See the [color utilities section](#0) for more details about how to activate additional palettes for your utilities._
+
 {:.maxw-mobile-lg}
 ```
 .bg-secondary
-.bg-primary-darkest
+.bg-primary-darker
 .text-primary-vivid
 .color-red-warm-50v
 .underline-accent-warm

@@ -70,6 +70,8 @@ Style:
     href: /style/
   - text: Color
     href: /style/color/
+  - text: Common color palette
+    href: /style/color/common-color-palette/
   - text: Spacing units
     href: /style/spacing-units/
   - text: Typescale

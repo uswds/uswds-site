@@ -1,13 +1,55 @@
 ---
-permalink: /style/color/common-color-palette
+permalink: /style/color/common-color-palette/
 layout: styleguide
 title: Common color palette
 category: Style
 lead: The USWDS common color palette is the complete set of colors from which any project can build a theme palette
 type: docs
 subnav:
-- text: Accessibility and magic number
-  href: '#accessibility-and-magic-number'
+- text: Red
+  href: '#red'
+- text: Orange warm
+  href: '#orange-warm'
+- text: Orange
+  href: '#orange'
+- text: Gold
+  href: '#gold'
+- text: Yellow
+  href: '#yellow'
+- text: Green warm
+  href: '#green-warm'
+- text: Green
+  href: '#green'
+- text: Green cool
+  href: '#green-cool'
+- text: Mint
+  href: '#mint'
+- text: Mint cool
+  href: '#mint-cool'
+- text: Cyan
+  href: '#cyan'
+- text: Blue
+  href: '#blue'
+- text: Blue warm
+  href: '#blue-warm'
+- text: Indigo cool
+  href: '#indigo-cool'
+- text: Indigo
+  href: '#indigo'
+- text: Indigo warm
+  href: '#indigo-warm'
+- text: Violet
+  href: '#violet'
+- text: Violet warm
+  href: '#violet-warm'
+- text: Magenta
+  href: '#magenta'
+- text: Gray warm
+  href: '#gray-warm'
+- text: Gray
+  href: '#gray'
+- text: Gray cool
+  href: '#gray-cool'
 ---
 
 {% assign theme_colors = site.data.uswds_tokens.colors.project_theme %}
@@ -19,7 +61,7 @@ subnav:
 
     <!-- ###################################################### -->
 
-    <h2 class="font-sans-10 margin-top-0 margin-bottom-4">Red</h2>
+    <h2 class="font-sans-10 margin-top-0 margin-bottom-4" id="red">Red</h2>
     <div class="grid-row gap swatches">
       <div class="grid-col-4 swatch-container">
         <div class="swatch margin-bottom-4">
@@ -483,7 +525,7 @@ subnav:
 
     <!-- ###################################################### -->
 
-    <h2 class="font-sans-10 margin-bottom-4">Orange warm</h2>
+    <h2 class="font-sans-10 margin-bottom-4" id="orange-warm">Orange warm</h2>
     <div class="grid-row gap swatches">
       <div class="grid-col-4 swatch-container">
         <div class="swatch margin-bottom-4">
@@ -715,7 +757,7 @@ subnav:
 
     <!-- ###################################################### -->
 
-    <h2 class="font-sans-10 margin-bottom-4">Orange</h2>
+    <h2 class="font-sans-10 margin-bottom-4" id="orange">Orange</h2>
     <div class="grid-row gap swatches">
       <div class="grid-col-4 swatch-container">
         <div class="swatch margin-bottom-4">
@@ -947,7 +989,7 @@ subnav:
 
     <!-- ###################################################### -->
 
-    <h2 class="font-sans-10 margin-bottom-4">Gold</h2>
+    <h2 class="font-sans-10 margin-bottom-4" id="gold">Gold</h2>
     <div class="grid-row gap swatches">
       <div class="grid-col-4 swatch-container">
         <div class="swatch margin-bottom-4">
@@ -1179,7 +1221,7 @@ subnav:
 
     <!-- ###################################################### -->
 
-    <h2 class="font-sans-10 margin-bottom-4">Yellow</h2>
+    <h2 class="font-sans-10 margin-bottom-4" id="yellow">Yellow</h2>
     <div class="grid-row gap swatches">
       <div class="grid-col-4 swatch-container">
         <div class="swatch margin-bottom-4">
@@ -1411,7 +1453,7 @@ subnav:
 
     <!-- ###################################################### -->
 
-    <h2 class="font-sans-10 margin-bottom-4">Green warm</h2>
+    <h2 class="font-sans-10 margin-bottom-4" id="green-warm">Green warm</h2>
     <div class="grid-row gap swatches">
       <div class="grid-col-4 swatch-container">
         <div class="swatch margin-bottom-4">
@@ -1643,7 +1685,7 @@ subnav:
 
     <!-- ###################################################### -->
 
-    <h2 class="font-sans-10 margin-bottom-4">Green</h2>
+    <h2 class="font-sans-10 margin-bottom-4" id="green">Green</h2>
     <div class="grid-row gap swatches">
       <div class="grid-col-4 swatch-container">
         <div class="swatch margin-bottom-4">
@@ -1875,7 +1917,7 @@ subnav:
 
     <!-- ###################################################### -->
 
-    <h2 class="font-sans-10 margin-bottom-4">Green cool</h2>
+    <h2 class="font-sans-10 margin-bottom-4" id="green-cool">Green cool</h2>
     <div class="grid-row gap swatches">
       <div class="grid-col-4 swatch-container">
         <div class="swatch margin-bottom-4">
@@ -2107,7 +2149,7 @@ subnav:
 
     <!-- ###################################################### -->
 
-    <h2 class="font-sans-10 margin-bottom-4">Mint</h2>
+    <h2 class="font-sans-10 margin-bottom-4" id="mint">Mint</h2>
     <div class="grid-row gap swatches">
       <div class="grid-col-4 swatch-container">
         <div class="swatch margin-bottom-4">
@@ -2339,7 +2381,7 @@ subnav:
 
     <!-- ###################################################### -->
 
-    <h2 class="font-sans-10 margin-bottom-4">Mint cool</h2>
+    <h2 class="font-sans-10 margin-bottom-4" id="mint-cool">Mint cool</h2>
     <div class="grid-row gap swatches">
       <div class="grid-col-4 swatch-container">
         <div class="swatch margin-bottom-4">
@@ -2571,7 +2613,7 @@ subnav:
 
     <!-- ###################################################### -->
 
-    <h2 class="font-sans-10 margin-bottom-4">Cyan</h2>
+    <h2 class="font-sans-10 margin-bottom-4" id="cyan">Cyan</h2>
     <div class="grid-row gap swatches">
       <div class="grid-col-4 swatch-container">
         <div class="swatch margin-bottom-4">
@@ -2803,7 +2845,7 @@ subnav:
 
     <!-- ###################################################### -->
 
-    <h2 class="font-sans-10 margin-bottom-4">Blue</h2>
+    <h2 class="font-sans-10 margin-bottom-4" id="blue">Blue</h2>
     <div class="grid-row gap swatches">
       <div class="grid-col-4 swatch-container">
         <div class="swatch margin-bottom-4">
@@ -3035,7 +3077,7 @@ subnav:
 
     <!-- ###################################################### -->
 
-    <h2 class="font-sans-10 margin-bottom-4">Blue warm</h2>
+    <h2 class="font-sans-10 margin-bottom-4" id="blue-warm">Blue warm</h2>
     <div class="grid-row gap swatches">
       <div class="grid-col-4 swatch-container">
         <div class="swatch margin-bottom-4">
@@ -3267,7 +3309,7 @@ subnav:
 
     <!-- ###################################################### -->
 
-    <h2 class="font-sans-10 margin-bottom-4">Indigo cool</h2>
+    <h2 class="font-sans-10 margin-bottom-4" id="indigo-cool">Indigo cool</h2>
     <div class="grid-row gap swatches">
       <div class="grid-col-4 swatch-container">
         <div class="swatch margin-bottom-4">
@@ -3499,7 +3541,7 @@ subnav:
 
     <!-- ###################################################### -->
 
-    <h2 class="font-sans-10 margin-bottom-4">Indigo</h2>
+    <h2 class="font-sans-10 margin-bottom-4" id="indigo">Indigo</h2>
     <div class="grid-row gap swatches">
       <div class="grid-col-4 swatch-container">
         <div class="swatch margin-bottom-4">
@@ -3731,7 +3773,7 @@ subnav:
 
     <!-- ###################################################### -->
 
-    <h2 class="font-sans-10 margin-bottom-4">Indigo warm</h2>
+    <h2 class="font-sans-10 margin-bottom-4" id="indigo-warm">Indigo warm</h2>
     <div class="grid-row gap swatches">
       <div class="grid-col-4 swatch-container">
         <div class="swatch margin-bottom-4">
@@ -3963,7 +4005,7 @@ subnav:
 
     <!-- ###################################################### -->
 
-    <h2 class="font-sans-10 margin-bottom-4">Violet</h2>
+    <h2 class="font-sans-10 margin-bottom-4" id="violet">Violet</h2>
     <div class="grid-row gap swatches">
       <div class="grid-col-4 swatch-container">
         <div class="swatch margin-bottom-4">
@@ -4195,7 +4237,7 @@ subnav:
 
     <!-- ###################################################### -->
 
-    <h2 class="font-sans-10 margin-bottom-4">Violet warm</h2>
+    <h2 class="font-sans-10 margin-bottom-4" id="violet-warm">Violet warm</h2>
     <div class="grid-row gap swatches">
       <div class="grid-col-4 swatch-container">
         <div class="swatch margin-bottom-4">
@@ -4427,7 +4469,7 @@ subnav:
 
     <!-- ###################################################### -->
 
-    <h2 class="font-sans-10 margin-bottom-4">Magenta</h2>
+    <h2 class="font-sans-10 margin-bottom-4" id="magenta">Magenta</h2>
     <div class="grid-row gap swatches">
       <div class="grid-col-4 swatch-container">
         <div class="swatch margin-bottom-4">
@@ -4659,13 +4701,13 @@ subnav:
 
     <!-- ###################################################### -->
 
-    <h2 class="font-sans-10 margin-bottom-4">Black warm</h2>
+    <h2 class="font-sans-10 margin-bottom-4" id="gray-warm">Gray warm</h2>
     <div class="grid-row gap swatches">
       <div class="grid-col-4 swatch-container">
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-warm-1"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 1</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray warm 1</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-1</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-warm', 1)</code></li>
             <li>#284490</li>
@@ -4676,7 +4718,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-warm-2"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 2</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray warm 2</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-2</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-warm', 2)</code></li>
             <li>#284490</li>
@@ -4687,7 +4729,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-warm-3"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 3</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray warm 3</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-3</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-warm', 3)</code></li>
             <li>#284490</li>
@@ -4698,7 +4740,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-warm-4"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 4</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray warm 4</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-4</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-warm', 4)</code></li>
             <li>#284490</li>
@@ -4709,7 +4751,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-warm-5"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 5</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray warm 5</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-5</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-warm', 5)</code></li>
             <li>#284490</li>
@@ -4720,7 +4762,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-warm-10"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 10</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray warm 10</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-10</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-warm', 10)</code></li>
             <li>#284490</li>
@@ -4731,7 +4773,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-warm-20"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 20</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray warm 20</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-20</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-warm', 20)</code></li>
             <li>#284490</li>
@@ -4742,7 +4784,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-warm-30"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 30</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray warm 30</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-30</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-warm', 30)</code></li>
             <li>#284490</li>
@@ -4753,7 +4795,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-warm-40"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 40</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray warm 40</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-40</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-warm', 40)</code></li>
             <li>#284490</li>
@@ -4764,7 +4806,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-warm-50"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 50</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray warm 50</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-50</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-warm', 50)</code></li>
             <li>#284490</li>
@@ -4775,7 +4817,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-warm-60"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 60</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray warm 60</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-60</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-warm', 60)</code></li>
             <li>#284490</li>
@@ -4786,7 +4828,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-warm-70"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 70</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray warm 70</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-70</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-warm', 70)</code></li>
             <li>#284490</li>
@@ -4797,7 +4839,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-warm-80"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 80</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray warm 80</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-80</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-warm', 80)</code></li>
             <li>#284490</li>
@@ -4808,7 +4850,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-warm-90"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black warm 90</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray warm 90</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-warm-90</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-warm', 90)</code></li>
             <li>#284490</li>
@@ -4819,13 +4861,13 @@ subnav:
 
     <!-- ###################################################### -->
 
-    <h2 class="font-sans-10 margin-bottom-4">Black</h2>
+    <h2 class="font-sans-10 margin-bottom-4" id="gray">Gray</h2>
     <div class="grid-row gap swatches">
       <div class="grid-col-4 swatch-container">
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-1"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black 1</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray 1</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-1</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('black', 1)</code></li>
             <li>#284490</li>
@@ -4836,7 +4878,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-2"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black 2</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray 2</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-2</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('black', 2)</code></li>
             <li>#284490</li>
@@ -4847,7 +4889,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-3"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black 3</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray 3</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-3</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('black', 3)</code></li>
             <li>#284490</li>
@@ -4858,7 +4900,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-4"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black 4</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray 4</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-4</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('black', 4)</code></li>
             <li>#284490</li>
@@ -4869,7 +4911,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-5"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black 5</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray 5</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-5</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('black', 5)</code></li>
             <li>#284490</li>
@@ -4880,7 +4922,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-10"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black 10</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray 10</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-10</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('black', 10)</code></li>
             <li>#284490</li>
@@ -4891,7 +4933,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-20"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black 20</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray 20</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-20</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('black', 20)</code></li>
             <li>#284490</li>
@@ -4902,7 +4944,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-30"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black 30</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray 30</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-30</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('black', 30)</code></li>
             <li>#284490</li>
@@ -4913,7 +4955,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-40"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black 40</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray 40</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-40</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('black', 40)</code></li>
             <li>#284490</li>
@@ -4924,7 +4966,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-50"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black 50</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray 50</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-50</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('black', 50)</code></li>
             <li>#284490</li>
@@ -4935,7 +4977,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-60"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black 60</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray 60</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-60</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('black', 60)</code></li>
             <li>#284490</li>
@@ -4946,7 +4988,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-70"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black 70</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray 70</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-70</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('black', 70)</code></li>
             <li>#284490</li>
@@ -4957,7 +4999,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-80"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black 80</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray 80</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-80</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('black', 80)</code></li>
             <li>#284490</li>
@@ -4968,7 +5010,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-90"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black 90</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray 90</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-90</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('black', 90)</code></li>
             <li>#284490</li>
@@ -4990,13 +5032,13 @@ subnav:
 
     <!-- ###################################################### -->
 
-    <h2 class="font-sans-10 margin-bottom-4">Black cool</h2>
+    <h2 class="font-sans-10 margin-bottom-4" id="gray-cool">Gray cool</h2>
     <div class="grid-row gap swatches">
       <div class="grid-col-4 swatch-container">
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-cool-1"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 1</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray cool 1</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-1</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-cool', 1)</code></li>
             <li>#284490</li>
@@ -5007,7 +5049,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-cool-2"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 2</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray cool 2</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-2</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-cool', 2)</code></li>
             <li>#284490</li>
@@ -5018,7 +5060,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-cool-3"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 3</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray cool 3</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-3</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-cool', 3)</code></li>
             <li>#284490</li>
@@ -5029,7 +5071,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-cool-4"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 4</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray cool 4</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-4</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-cool', 4)</code></li>
             <li>#284490</li>
@@ -5040,7 +5082,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-cool-5"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 5</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray cool 5</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-5</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-cool', 5)</code></li>
             <li>#284490</li>
@@ -5051,7 +5093,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-cool-10"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 10</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray cool 10</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-10</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-cool', 10)</code></li>
             <li>#284490</li>
@@ -5062,7 +5104,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-cool-20"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 20</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray cool 20</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-20</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-cool', 20)</code></li>
             <li>#284490</li>
@@ -5073,7 +5115,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-cool-30"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 30</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray cool 30</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-30</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-cool', 30)</code></li>
             <li>#284490</li>
@@ -5084,7 +5126,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-cool-40"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 40</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray cool 40</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-40</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-cool', 40)</code></li>
             <li>#284490</li>
@@ -5095,7 +5137,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-cool-50"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 50</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray cool 50</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-50</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-cool', 50)</code></li>
             <li>#284490</li>
@@ -5106,7 +5148,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-cool-60"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 60</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray cool 60</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-60</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-cool', 60)</code></li>
             <li>#284490</li>
@@ -5117,7 +5159,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-cool-70"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 70</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray cool 70</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-70</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-cool', 70)</code></li>
             <li>#284490</li>
@@ -5128,7 +5170,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-cool-80"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 80</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray cool 80</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-80</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-cool', 80)</code></li>
             <li>#284490</li>
@@ -5139,7 +5181,7 @@ subnav:
         <div class="swatch margin-bottom-4">
           <div class="height-9 bg-gray-cool-90"></div>
           <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
-            <li class="margin-bottom-05 font-sans-3 text-bold">Black cool 90</li>
+            <li class="margin-bottom-05 font-sans-3 text-bold">Gray cool 90</li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-gray-cool-90</code></li>
             <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('gray-cool', 90)</code></li>
             <li>#284490</li>

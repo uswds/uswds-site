@@ -33,7 +33,7 @@ subnav:
 {% assign theme_colors = site.data.uswds_tokens.colors.project_theme %}
 {% assign state_colors = site.data.uswds_tokens.colors.project_state %}
 
-The USWDS theme color palette is designed to be useful and effective for small and large projects. Each color in a USWDS theme palette is drawn from a [larger common palette](common-color-palette.html) that designers can use for further customization. Colors from the common palette are the only ones we use to build official components. Any components we accept back into the system need to be built with colors drawn from the common palette.
+The USWDS theme color palette is designed to be useful and effective for small and large projects. Each color in a USWDS theme palette is drawn from a [larger common palette](common-color-palette/) that designers can use for further customization. Colors from the common palette are the only ones we use to build official components. Any components we accept back into the system need to be built with colors drawn from the common palette.
 
 ## Accessibility and magic number
 Section 508 sets a legal standard for the contrast level necessary between text and its background. The baseline AA contrast standard is 4.5:1 for most text and 3.1:1 for large text (19px+ bold or 24px+ normal text).
@@ -187,7 +187,7 @@ Each color family except `disabled` has five possible lightness grades, from `li
 {% endfor %}
 
 ## Setting theme and state colors
-Set theme and state colors in your project's theme settings with tokens from the [common color palette](#0) in the form `[family], [grade], [variant]` (The variant is optional).
+Set theme and state colors in your project's theme settings with tokens from the [common color palette](common-color-palette/) in the form `[family], [grade], [variant]` (The variant is optional).
 
 Theme and state families tend to include colors from the same common family, but this is not a hard-and-fast rule. For instance, the USWDS default theme palette uses colors from both the `blue-warm` and `blue` common color families for colors in the `primary` theme family.
 

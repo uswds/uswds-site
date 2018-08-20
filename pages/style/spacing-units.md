@@ -20,7 +20,7 @@ subnav:
   href: '#utility-mixins'
 ---
 
-Any spacing value in utilities or component CSS should use the following USWDS spacing units. These values are common to all USWDS projects and are based on multiples of 8px. They are the only values we use to build official components. Any components we accept back into the system need to be built with these common spacing units.
+Any spacing value in utilities or component CSS should use the following USWDS spacing units. These values are common to all USWDS projects and are based on multiples of 8px. They are the only values we use to build official components. Any components we accept back into the system need to be built with these system spacing units.
 
 Values above `2px` are output as the eqivalent value in rem. For instance, a value of 2 units would be output as `1.6rem` with `$theme-base-font-size` set to `10px` and would be output as `1rem` with `$theme-base-font-size` set to `16px` or with `$theme-respect-user-font-size` set to `true`.
 

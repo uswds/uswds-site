@@ -91,6 +91,8 @@ families:
   - violet_vivid
   - violet_warm
   - violet_warm_vivid
+  - magenta
+  - magenta_vivid
   - gray_cool
   - gray
   - gray_warm

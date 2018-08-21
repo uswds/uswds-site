@@ -11,5 +11,5 @@
 </button>
 <ul id="{{ _id }}" class="usa-sidenav-sub_list">
   {% assign _children = site.data.nav[include.page.category] %}
-  {% include nav/list.html links=_children flat=true %}
+  {% include nav/list.html links=_children flat=false %}
 </ul>

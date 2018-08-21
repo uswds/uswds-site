@@ -1,7 +1,7 @@
 ---
-permalink: /style/color/system-color-palette/
+permalink: /style/color/system-palette/
 layout: styleguide
-title: System color palette
+title: System palette
 category: Style
 lead: The USWDS system color palette is the complete set of colors from which any project can build a theme palette
 type: docs

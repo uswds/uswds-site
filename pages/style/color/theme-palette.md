@@ -29,7 +29,7 @@ subnav:
 {% assign theme_colors = site.data.uswds_tokens.colors.project_theme %}
 {% assign state_colors = site.data.uswds_tokens.colors.project_state %}
 
-The USWDS theme color palette is designed to be useful and effective for small and large projects. Each color in a USWDS theme palette is drawn from a [larger system palette](system-color-palette/) that designers can use for further customization. Colors from the system palette are the only ones we use to build official components. Any components we accept back into the system need to be built with colors drawn from the system palette.
+The USWDS theme color palette is designed to be useful and effective for small and large projects. Each color in a USWDS theme palette is drawn from a [larger system palette]({{ site.baseurl }}/style/color/system-palette/) that designers can use for further customization. Colors from the system palette are the only ones we use to build official components. Any components we accept back into the system need to be built with colors drawn from the system palette.
 
 ## Theme color palette
 The theme color palettes is divided into five high-level role-based color families: `base`, `primary`, `secondary`, `accent-warm`, and `accent-cool`.
@@ -124,7 +124,7 @@ Each color family except `disabled` has five possible lightness grades, from `li
 {% endfor %}
 
 ## Setting theme and state colors
-Set theme and state colors in your project's theme settings with tokens from the [system color palette](system-color-palette/) in the form `[family], [grade], [variant]` (The variant is optional).
+Set theme and state colors in your project's theme settings with tokens from the [system color palette]({{ site.baseurl }}/style/color/system-palette/) in the form `[family], [grade], [variant]` (The variant is optional).
 
 Theme and state families tend to include colors from the same system family, but this is not a hard-and-fast rule. For instance, the USWDS default theme palette uses colors from both the `blue-warm` and `blue` system color families for colors in the `primary` theme family.
 

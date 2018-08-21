@@ -15,7 +15,7 @@ layout: default
   <div class="styleguide-content{% unless page.category == 'Utilities' and page.type != 'docs' %} usa-content{% endunless %}">
     <header>
       {% if page.category != null %}
-        {% unless page.path contains 'overview' %}
+        {% unless page.path contains 'overview' and page.permalink != '/style/color/overview/' %}
           <p class="site-subheading">{{ page.category }}</p>
         {% endunless %}
       {% endif %}

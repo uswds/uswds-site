@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  @include u-bg($gray-1);
+  @include u-bg('gray-1');
 }
 
 html,
@@ -48,7 +48,7 @@ body {
 }
 
 .site-header {
-  background-color: $color-primary-darkest;
+  background-color: color('primary-darker');
 
   @include media($nav-width) {
     border-bottom: none;
@@ -120,12 +120,12 @@ body {
 @mixin outline-inverse-button {
   // TODO: Fix this with button mixin
   .usa-button.usa-button-outline-inverse {
-    box-shadow: inset 0 0 0 2px $color-primary;
-    color: $color-primary;
+    box-shadow: inset 0 0 0 2px color('primary');
+    color: color('primary');
 
     &:hover {
-      box-shadow: inset 0 0 0 2px $color-primary-darker;
-      color: $color-primary-darker;
+      box-shadow: inset 0 0 0 2px color('primary-dark');
+      color: color('primary-dark');
     }
   }
 }
@@ -158,8 +158,8 @@ body {
     font-weight: $font-normal;
 
     &:hover {
-      background-color: $color-gray-lightest;
-      color: $color-primary;
+      background-color: color('gray-cool-5');
+      color: color('primary');
     }
 
     &[aria-expanded=false] {
@@ -190,7 +190,7 @@ body {
   }
 
   a {
-    color: $color-white;
+    color: color('white');
   }
 
   em {
@@ -209,8 +209,8 @@ body {
   display: none;
 
   @include media($nav-width) {
-    background-color: $color-white;
-    border-bottom: 1px solid $color-gray-lighter;
+    background-color: color('white');
+    border-bottom: 1px solid color('gray-cool-10');
     clear: both;
     display: block;
     height: $height-nav-secondary;
@@ -231,7 +231,7 @@ body {
   }
 
   a {
-    color: $color-gray;
+    color: color('gray-cool-60');
     font-size: $h5-font-size;
     font-weight: $font-bold;
     line-height: $height-nav-secondary;
@@ -242,7 +242,7 @@ body {
     &:hover {
       span {
         @include nav-border-thick;
-        color: $color-primary;
+        color: color('primary');
       }
     }
   }
@@ -250,7 +250,7 @@ body {
   .usa-current {
     span {
       @include nav-border-thick;
-      color: $color-base;
+      color: color('base-darkest');
     }
   }
 }
@@ -284,7 +284,7 @@ body {
 
   .usa-sidenav-list,
   .usa-sidenav-list > li {
-    border-color: $gray-10;
+    border-color: color('gray-10');
   }
 }
 
@@ -325,7 +325,7 @@ body {
   }
 
   > h2 {
-    color: $color-primary-darker;
+    color: color('primary-dark');
   }
 }
 
@@ -348,7 +348,7 @@ body {
 // Label links
 
 %label-maturity {
-  color: $color-gray-dark;
+  color: color('gray-cool-80');
   font-size: 1.4rem;
   font-weight: $font-bold;
   margin-left: 1.2rem;
@@ -363,19 +363,19 @@ body {
 .label-alpha,
 .label-in-progress {
   @extend %label-maturity;
-  background-color: $color-gold-lightest;
+  background-color: color('gold-5v');
 }
 
 .label-beta,
 .label-to-do {
   @extend %label-maturity;
-  background-color: $color-primary-alt-lightest;
+  background-color: color('accent-cool-lighter');
 }
 
 .label-recommended,
 .label-done {
   @extend %label-maturity;
-  background-color: $color-green-lightest;
+  background-color: color('green-cool-5');
 }
 
 .heading-margin-alt {
@@ -384,7 +384,7 @@ body {
 
 .site-subheading {
   @include h6;
-  color: $color-gray;
+  color: color('gray-cool-60');
   display: block;
   letter-spacing: 0.5px;
   margin-bottom: 0.6rem;
@@ -429,7 +429,7 @@ body {
   }
 
   .usa-footer-secondary_section {
-    background-color: $color-primary-alt-lightest;
+    background-color: color('accent-cool-lighter');
 
     @include media($medium-screen) {
       @include padding(3rem null 4rem null);
@@ -468,7 +468,7 @@ body {
   }
 
   a {
-    color: $color-primary-darker;
+    color: color('primary-dark');
     text-decoration: underline;
   }
 
@@ -489,10 +489,10 @@ body {
 
 .footer-section-bottom {
   @include padding(1.6rem null 1.3rem null);
-  background-color: $color-primary-darkest;
+  background-color: color('primary-darker');
 
   p {
-    color: $color-white;
+    color: color('white');
     font-size: $small-font-size;
     margin-top: 0;
     overflow: hidden;
@@ -505,7 +505,7 @@ body {
   }
 
   a {
-    color: $color-white;
+    color: color('white');
   }
 }
 
@@ -514,7 +514,7 @@ body {
 .preview {
   @include clearfix;
   @include margin(2em null);
-  background-color: $color-white;
+  background-color: color('white');
   padding: $site-margins;
   border: 1px solid #eeeeee; // scss-lint:disable ColorVariable
 
@@ -568,7 +568,7 @@ body {
 
     > * {
       @include margin(.5em null);
-      color: $color-white;
+      color: color('white');
       padding: 1em;
       background: $color-grid-dark;
     }
@@ -593,7 +593,7 @@ body {
 
     > * {
       background: $color-grid-light;
-      color: $color-black;
+      color: color('black');
     }
 
     h3 {
@@ -626,11 +626,11 @@ h3 + .button_wrapper {
 }
 
 .button_wrapper-dark {
-  background: $color-gray-dark;
+  background: color('gray-cool-80');
 }
 
 .usa-heading {
-  color: $color-primary-darker;
+  color: color('primary-dark');
 }
 
 // Colors -------------- //
@@ -732,151 +732,151 @@ h3 + .button_wrapper {
 
 .usa-color-outline {
   .usa-color-text {
-    box-shadow: inset 0 0 0 1px $color-gray;
+    box-shadow: inset 0 0 0 1px color('gray-cool-60');
   }
 }
 
 // Color background helpers
 
 .usa-color-primary {
-  background-color: $color-primary;
+  background-color: color('primary');
 }
 
 .usa-color-primary-darker {
-  background-color: $color-primary-darker;
+  background-color: color('primary-dark');
 }
 
 .usa-color-primary-darkest {
-  background-color: $color-primary-darkest;
+  background-color: color('primary-darker');
 }
 
 .usa-color-base {
-  background-color: $color-base;
+  background-color: color('base-darkest');
 }
 
 .usa-color-gray-dark {
-  background-color: $color-gray-dark;
+  background-color: color('gray-cool-80');
 }
 
 .usa-color-gray-light {
-  background-color: $color-gray-light;
+  background-color: color('gray-30');
 }
 
 .usa-color-white {
-  background-color: $color-white;
-  box-shadow: inset 0 0 0 1px $color-gray;
+  background-color: color('white');
+  box-shadow: inset 0 0 0 1px color('gray-cool-60');
 }
 
 .usa-color-primary-alt {
-  background-color: $color-primary-alt;
+  background-color: color('accent-cool');
 }
 
 .usa-color-primary-alt-dark {
-  background-color: $color-primary-alt-dark;
+  background-color: color('accent-cool-dark');
 }
 
 .usa-color-primary-alt-darkest {
-  background-color: $color-primary-alt-darkest;
+  background-color: color('accent-cool-darker');
 }
 
 .usa-color-primary-alt-light {
-  background-color: $color-primary-alt-light;
+  background-color: color('accent-cool-light');
 }
 
 .usa-color-primary-alt-lightest {
-  background-color: $color-primary-alt-lightest;
+  background-color: color('accent-cool-lighter');
 }
 
 .usa-color-secondary {
-  background-color: $color-secondary;
+  background-color: color('secondary');
 }
 
 .usa-color-secondary-dark {
-  background-color: $color-secondary-dark;
+  background-color: color('secondary-dark');
 }
 
 .usa-color-secondary-darkest {
-  background-color: $color-secondary-darkest;
+  background-color: color('secondary-darker');
 }
 
 .usa-color-secondary-light {
-  background-color: $color-secondary-light;
+  background-color: color('secondary-light');
 }
 
 .usa-color-secondary-lightest {
-  background-color: $color-secondary-lightest;
+  background-color: color('secondary-lighter');
 }
 
 .usa-color-gray {
-  background-color: $color-gray;
+  background-color: color('gray-cool-60');
 }
 
 .usa-color-gray-lighter {
-  background-color: $color-gray-lighter;
+  background-color: color('gray-cool-10');
 }
 
 .usa-color-gray-lightest {
-  background-color: $color-gray-lightest;
+  background-color: color('gray-cool-5');
 }
 
 .usa-color-gray-warm-dark {
-  background-color: $color-gray-warm-dark;
+  background-color: color('gray-warm-70');
 }
 
 .usa-color-gray-warm-light {
-  background-color: $color-gray-warm-light;
+  background-color: color('gray-warm-10');
 }
 
 .usa-color-gray-cool-light {
-  background-color: $color-gray-cool-light;
+  background-color: color('blue-warm-5');
 }
 
 .usa-color-gold {
-  background-color: $color-gold;
+  background-color: color('gold-20v');
 }
 
 .usa-color-gold-light {
-  background-color: $color-gold-light;
+  background-color: color('gold-10v');
 }
 
 .usa-color-gold-lighter {
-  background-color: $color-gold-lighter;
+  background-color: color('yellow-10');
 }
 
 .usa-color-gold-lightest {
-  background-color: $color-gold-lightest;
+  background-color: color('gold-5v');
 }
 
 .usa-color-green {
-  background-color: $color-green;
+  background-color: color('green-cool-50');
 }
 
 .usa-color-green-light {
-  background-color: $color-green-light;
+  background-color: color('green-cool-40');
 }
 
 .usa-color-green-lighter {
-  background-color: $color-green-lighter;
+  background-color: color('green-cool-20');
 }
 
 .usa-color-green-lightest {
-  background-color: $color-green-lightest;
+  background-color: color('green-cool-5');
 }
 
 .usa-color-cool-blue {
-  background-color: $color-cool-blue;
+  background-color: color('blue-70v');
 }
 
 .usa-color-cool-blue-light {
-  background-color: $color-cool-blue-light;
+  background-color: color('blue-warm-50');
 }
 
 .usa-color-cool-blue-lighter {
-  background-color: $color-cool-blue-lighter;
+  background-color: color('blue-warm-30');
 }
 
 .usa-color-cool-blue-lightest {
-  background-color: $color-cool-blue-lightest;
+  background-color: color('blue-warm-10');
 }
 
 .usa-color-focus {
@@ -890,27 +890,27 @@ h3 + .button_wrapper {
 // Color text helpers
 
 .usa-color-text-primary-darkest {
-  color: $color-primary-darkest;
+  color: color('primary-darker');
 }
 
 .usa-color-text-primary-darker {
-  color: $color-primary-darker;
+  color: color('primary-dark');
 }
 
 .usa-color-text-primary {
-  color: $color-primary;
+  color: color('primary');
 }
 
 .usa-color-text-cool-blue-light {
-  color: $color-cool-blue-light;
+  color: color('blue-warm-50');
 }
 
 .usa-color-text-primary-alt-darkest {
-  color: $color-primary-alt-darkest;
+  color: color('accent-cool-darker');
 }
 
 .usa-color-text-green {
-  color: $color-green;
+  color: color('green-cool-50');
 }
 
 .usa-color-text-visited {
@@ -918,35 +918,35 @@ h3 + .button_wrapper {
 }
 
 .usa-color-text-gray-dark {
-  color: $color-gray-dark;
+  color: color('gray-cool-80');
 }
 
 .usa-color-text-gray {
-  color: $color-gray;
+  color: color('gray-cool-60');
 }
 
 .usa-color-text-gray-warm-dark {
-  color: $color-gray-warm-dark;
+  color: color('gray-warm-70');
 }
 
 .usa-color-text-secondary-darkest {
-  color: $color-secondary-darkest;
+  color: color('secondary-darker');
 }
 
 .usa-color-text-secondary-dark {
-  color: $color-secondary-dark;
+  color: color('secondary-dark');
 }
 
 .usa-color-text-secondary {
-  color: $color-secondary;
+  color: color('secondary');
 }
 
 .usa-color-text-white {
-  color: $color-white;
+  color: color('white');
 }
 
 .usa-heading-alt {
-  border-bottom: 1px solid $color-gray;
+  border-bottom: 1px solid color('gray-cool-60');
   padding-bottom: .8rem;
 }
 
@@ -1006,7 +1006,7 @@ h6 {
 code,
 pre {
   @include u-font-family(mono);
-  background-color: $color-gray-lightest;
+  background-color: color('gray-cool-5');
   font-size: 1.3rem;
 }
 
@@ -1033,11 +1033,11 @@ code {
   }
 
   a & {
-    @include u-border(1px, $blue-50v);
-    @include u-bg(transparent);
+    @include u-border(1px, 'blue-50v');
+    @include u-bg('transparent');
 
     &:hover {
-      @include u-bg($blue-50v);
+      @include u-bg('blue-50v');
       @include u-text('white');
     }
   }
@@ -1071,7 +1071,7 @@ code {
 }
 
 [class*="language-"] {
-  color: $color-base;
+  color: color('base-darkest');
 
   // Custom code sample colors
   .nt,
@@ -1082,7 +1082,7 @@ code {
   .token.constant,
   .token.symbol,
   .token.deleted {
-    color: $color-primary-alt-darkest;
+    color: color('accent-cool-darker');
   }
 
   .na,
@@ -1092,33 +1092,33 @@ code {
   .token.char,
   .token.builtin,
   .token.inserted {
-    color: $color-secondary;
+    color: color('secondary');
   }
 
   .s,
   .token.atrule,
   .token.attr-value,
   .token.keyword {
-    color: $color-green;
+    color: color('green-cool-50');
   }
 
   .token.punctuation {
-    color: $color-primary-alt-darkest;
+    color: color('accent-cool-darker');
   }
 
   .c {
-    color: $color-gray;
+    color: color('gray-cool-60');
   }
 }
 
 .alignment-example {
-  border-left: 2px solid $color-primary-darker;
+  border-left: 2px solid color('primary-dark');
   padding-left: 1rem;
 }
 
 .help-text {
-  border-top: 2px solid $color-primary-darker;
-  color: $color-primary-darker;
+  border-top: 2px solid color('primary-dark');
+  color: color('primary-dark');
   font-size: $em-base;
   padding-top: 1rem;
   text-align: center;
@@ -1402,7 +1402,7 @@ code {
     &::before {
       content: '\00a0';
       display: inline-block;
-      background: $color-primary;
+      background: color('primary');
       height: 1px;
       position: relative;
       top: 0.6rem;
@@ -1416,8 +1416,8 @@ code {
       top: -2.9rem;
       font-size: 1.8rem;
       padding: 0 1rem;
-      color: $color-secondary;
-      background: $color-white;
+      color: color('secondary');
+      background: color('white');
     }
   }
 }
@@ -1485,7 +1485,7 @@ code {
 .page-component-maturity-scale,
 .page-research {
   h2 {
-    color: $color-primary-darker;
+    color: color('primary-dark');
   }
 }
 
@@ -1519,7 +1519,7 @@ code {
   }
 
   [class*="grid-col"] {
-    background-color: $primary-lighter;
+    background-color: color('primary-lighter');
     text-align: center;
   }
 
@@ -1533,7 +1533,7 @@ code {
   // scss-lint:disable SelectorDepth
   [class*="grid-gap"] {
     [class*="grid-col"] > * {
-      background-color: $color-white;
+      background-color: color('white');
       border: 1px solid;
       padding: 16px;
     }
@@ -1560,7 +1560,7 @@ code {
 
 // Demo fixed footer
 .demo-footer {
-  background-color: $color-gray-dark;
+  background-color: color('gray-cool-80');
   box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.5); // scss-lint:disable ColorVariable
   bottom: 0;
   position: fixed;
@@ -1584,7 +1584,7 @@ code {
 
 .demo-footer-title {
   @include margin(0 null 0.7rem null);
-  color: $color-white;
+  color: color('white');
   display: inline-block;
 
   @include media($medium-screen) {
@@ -1601,7 +1601,7 @@ code {
 }
 
 hr {
-  background: $color-gray-lighter;
+  background: color('gray-cool-10');
   border: none;
   height: 1px;
   margin: 3em 0;
@@ -1623,7 +1623,7 @@ iframe {
       text-decoration: none;
 
       &:hover {
-        color: $color-primary;
+        color: color('primary');
         text-decoration: underline;
       }
     }
@@ -1663,7 +1663,7 @@ iframe {
 }
 
 *:active:focus {
-  @include u-outline(.5, $indigo-warm-50v);
+  @include u-outline(.5, 'indigo-warm-50v');
 }
 
 .usa-accordion-content {
@@ -1701,7 +1701,7 @@ strong {
 }
 
 .docs-inline-code {
-  @include u-bg($gray-warm-4);
+  @include u-bg('gray-warm-4');
   @include u-font('mono', 4);
   @include u-padding-x('05');
   @include u-padding-y(2px);
@@ -1711,7 +1711,7 @@ strong {
 .token {
   $font: 'mono';
   @include u-border(1px);
-  @include u-color($red-warm-50v);
+  @include u-color('red-warm-50v');
   @include u-font($font, 1);
   @include u-line-height($font, 1);
   @include u-padding-x('05');
@@ -1730,7 +1730,7 @@ strong {
 }
 
 .text-color .example {
-  @include u-border-bottom(1px, $base-lighter);
+  @include u-border-bottom(1px, 'base-lighter');
   @include u-margin-y(.5);
   @include u-padding-y(.5);
 }
@@ -1738,15 +1738,15 @@ strong {
 .output-list {
   @include grid-row;
   @include u-margin-top(0);
-  @include u-width(full);
+  @include u-width('full');
 
   .output-utility,
   .output-css,
   .output-variable {
     @include u-border-bottom(1px);
-    @include u-border-bottom($base-light);
+    @include u-border-bottom('base-light');
     @include u-display(flex);
-    @include u-flex(align-center);
+    @include u-flex('align-center');
     @include u-margin(0);
     @include u-minh(4);
     @include u-padding-y(.5);
@@ -1754,31 +1754,31 @@ strong {
 
   .output-utility {
     @include grid-col(4);
-    @include u-font(sans, 2xs);
+    @include u-font('sans', '2xs');
     @include u-padding-right(2);
   }
 
   .output-css {
     @include grid-col(6);
-    @include u-font(mono, 2xs);
+    @include u-font('mono', '2xs');
     @include u-padding-right(2);
 
     .output-token {
       @include u-display(inline-block);
-      @include u-font(mono, 2xs);
+      @include u-font('mono', '2xs');
     }
   }
 
   .output-variable {
     @include grid-col(2);
-    @include u-font(mono, 2xs);
-    @include u-text(light);
+    @include u-font('mono', '2xs');
+    @include u-text('light');
   }
 }
 
 .output-token {
   @include u-bg('white');
-  @include u-border(1px, $gray-10);
+  @include u-border(1px, 'gray-10');
   @include u-font('mono', 4);
   @include u-padding-x(0.5);
   @include u-padding-y(2px);
@@ -1796,11 +1796,11 @@ strong {
 
 .output-true {
   @include add-font-smoothing;
-  @include u-bg($blue-50v);
-  @include u-display(inline-block);
+  @include u-bg('blue-50v');
+  @include u-display('inline-block');
   @include u-padding-y(0);
   @include u-padding-x(.5);
-  @include u-radius(sm);
+  @include u-radius('sm');
   @include u-text('white');
 }
 
@@ -1815,25 +1815,25 @@ li {
 // Utility docs
 
 .utilities-property-title {
-  @include u-font(sans, micro);
+  @include u-font('sans', 'micro');
   @include u-margin-left(2px);
   @include u-margin-y(0);
-  @include u-text(normal, uppercase, ls-1);
+  @include u-text('normal', 'uppercase', 'ls-1');
 }
 
 .utilities-properties {
   @include u-bg('white');
-  @include u-border(1px, $gray-10);
+  @include u-border(1px, 'gray-10');
   @include u-padding(2);
-  @include u-radius(md);
+  @include u-radius('md');
 }
 
 .utilities-property {
   @include u-bg('white');
-  @include u-display(inline-block);
+  @include u-display('inline-block');
   @include u-margin-top(0);
   @include u-padding(.5);
-  @include u-text(no-uppercase, ls-auto);
+  @include u-text('no-uppercase', 'ls-auto');
 }
 
 .utilities-section {
@@ -1843,7 +1843,7 @@ li {
 }
 
 .utilities-section-title-bar {
-  @include u-flex(align-center);
+  @include u-flex('align-center');
   @include u-margin-bottom(2);
 }
 
@@ -1855,79 +1855,79 @@ li {
   code {
     @include u-bg('white');
     @include u-border(1px);
-    @include u-display(inline-block);
-    @include u-font(mono, 6);
+    @include u-display('inline-block');
+    @include u-font('mono', 6);
     @include u-margin-right(2px);
     @include u-padding-x(0);
     @include u-padding-y(2px);
-    @include u-radius(md);
-    @include u-text(light);
+    @include u-radius('md');
+    @include u-text('light');
   }
 }
 
 .utilities-section-helper {
-  @include u-font(sans, 1);
+  @include u-font('sans', 1);
   @include u-margin-left(2px);
   @include u-margin-y(0);
-  @include u-text(right, normal, $gray-60);
+  @include u-text(right, normal, 'gray-60');
 }
 
 .utility {
   @include u-bg('white');
-  @include u-border(1px, $gray-10);
+  @include u-border(1px, 'gray-10');
   @include u-margin-y(2);
   @include u-padding-bottom(1);
   @include u-padding-top(2);
-  @include u-radius(md);
+  @include u-radius('md');
 }
 
 .utility-title-bar {
-  @include u-border-bottom(1px, $gray-10);
+  @include u-border-bottom(1px, 'gray-10');
   @include u-margin-bottom(2);
   @include u-padding-x(2);
   @include u-padding-bottom(1.5);
 }
 
 .utility-title {
-  @include u-font(sans, md);
+  @include u-font('sans', 'md');
   @include u-margin-bottom(.5);
   @include u-margin-top(0);
 }
 
 .utility-property {
-  @include u-font(sans, 3xs);
+  @include u-font('sans', '3xs');
   @include u-margin(0);
-  @include u-text(uppercase, ls-1);
+  @include u-text('uppercase', 'ls-1');
 }
 
 .utility-property-code {
-  @include u-font(mono, 2xs);
-  @include u-text(light, no-uppercase, ls-auto, $red-warm-50v);
+  @include u-font('mono', '2xs');
+  @include u-text('light', 'no-uppercase', 'ls-auto', 'red-warm-50v');
 }
 
 .utility-scope {
   @include add-list-reset;
-  @include u-display(inline);
+  @include u-display('inline');
   @include u-margin(0);
-  @include u-text(right);
+  @include u-text('right');
 }
 
 .utility-scope-button {
-  @include u-display(inline-block);
-  @include u-font-size(sans, xs);
-  @include u-line-height(sans, 4);
+  @include u-display('inline-block');
+  @include u-font-size('sans', 'xs');
+  @include u-line-height('sans', 4);
   @include u-margin-bottom(0);
   @include u-margin-right(.5);
   @include u-padding-y(1);
   @include u-padding-x(1.5);
-  @include u-radius(md);
+  @include u-radius('md');
 }
 
 .utility-scope-button-disabled {
   @extend .utility-scope-button;
   @include u-bg('white');
-  @include u-border(1px, $gray-20);
-  @include u-text($gray-20, strike);
+  @include u-border(1px, 'gray-20');
+  @include u-text('gray-20', strike);
 }
 
 .utility-scope-button-active {
@@ -1936,11 +1936,11 @@ li {
   a {
     @extend .utility-scope-button;
     @include add-font-smoothing;
-    @include u-bg($blue-50v);
-    @include u-text('white', no-underline);
+    @include u-bg('blue-50v');
+    @include u-text('white', 'no-underline');
 
     &:hover {
-      @include u-bg($gray-80);
+      @include u-bg('gray-80');
       @include u-text('white');
     }
   }
@@ -1951,52 +1951,52 @@ li {
 }
 
 .utility-examples-title {
-  @include u-border-bottom(1px, $gray-10);
-  @include u-font(sans, 4);
+  @include u-border-bottom(1px, 'gray-10');
+  @include u-font('sans', 4);
   @include u-margin-bottom(1);
   @include u-margin-top(4);
   @include u-padding-bottom(1);
 }
 
 .utility-examples-helper {
-  @include u-font(sans, 2);
+  @include u-font('sans', 2);
   @include u-margin-left(1);
-  @include u-text(normal, $ink);
+  @include u-text('normal', 'ink');
 }
 
 .utility-class {
-  @include u-bg($base-lighter);
-  @include u-display(inline-block);
-  @include u-font(mono, 2xs);
+  @include u-bg('base-lighter');
+  @include u-display('inline-block');
+  @include u-font('mono', '2xs');
   @include u-margin(0);
   @include u-padding-y(2px);
   @include u-padding-x(.5);
-  @include u-radius(sm);
+  @include u-radius('sm');
 }
 
 .utility-value {
   @extend .utility-class;
-  @include u-bg($secondary-lighter);
+  @include u-bg('secondary-lighter');
   @include u-margin-top(2px);
 }
 
 .utility-value-color {
   @extend .utility-class;
   @include u-bg('white');
-  @include u-border(1px, $gray-10);
+  @include u-border(1px, 'gray-10');
   @include u-margin-top(0);
-  @include u-text(light, no-wrap, lowercase);
+  @include u-text('light', 'no-wrap', 'lowercase');
 }
 
 .utility-value-color-chip {
   @include u-circle(1.5);
-  @include u-display(inline-block);
+  @include u-display('inline-block');
   @include u-margin-right(.5);
-  @include u-text(middle);
+  @include u-text('middle');
 }
 
 .utility-example-container {
-  @include u-border-bottom(1px, $gray-10);
+  @include u-border-bottom(1px, 'gray-10');
   @include u-margin-bottom(2);
   @include u-margin-top(0);
   @include u-padding-bottom(3);
@@ -2009,34 +2009,34 @@ li {
 }
 
 .utilities-output-heading {
-  @include u-border-bottom(1px, $gray-10);
-  @include u-font(sans, 1);
+  @include u-border-bottom(1px, 'gray-10');
+  @include u-font('sans', 1);
   @include u-margin-top(2);
   @include u-padding-bottom(.5);
-  @include u-text(bold);
+  @include u-text('bold');
 }
 
 .utility-code-sample {
-  @include u-bg($base-lighter);
-  @include u-line-height(mono, 3);
+  @include u-bg('base-lighter');
+  @include u-line-height('mono', 3);
   @include u-margin-x(0);
   @include u-margin-y(1);
-  @include u-radius(md);
-  @include u-text(pre-wrap);
+  @include u-radius('md');
+  @include u-text('pre-wrap');
 }
 
 .utility-note {
-  @include u-font(sans, xs);
-  @include u-line-height(sans, 5);
+  @include u-font('sans', 'xs');
+  @include u-line-height('sans', 5);
   @include u-margin-bottom(5);
   @include u-measure(none);
   @include u-padding-bottom(2);
-  @include u-border-bottom(1px, $base-lighter);
+  @include u-border-bottom(1px, 'base-lighter');
 }
 
 .utility-text {
-  @include u-font(sans, xs);
-  @include u-line-height(sans, 5);
+  @include u-font('sans', 'xs');
+  @include u-line-height('sans', 5);
   @include u-measure(none);
 
   + .utility-text {

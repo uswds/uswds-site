@@ -8,6 +8,8 @@ lead: Reset default list styling
 subnav:
 - text: Utility mixins
   href: '#utility-mixins'
+- text: Advanced settings
+  href: '#advanced-settings'
 
 utilities:
 - base:         add-list-reset
@@ -75,33 +77,56 @@ utilities:
         </div>
       </section>
     </section>
+
+    <section class="utilities-section margin-top-6">
+      <h2 class="utilities-section-title">Default output</h2>
+      <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
+        <div class="grid-col-4">Utility</div>
+        <div class="grid-col-6">Output SCSS</div>
+        <div class="grid-col-2">Default variable value</div>
+      </div>
+      <dl class="output-list">
+        <dt class="output-utility">.add-list-reset</dt>
+        <dd class="output-css">
+          <span>
+            <span class="output-rule">list-style: none</span>
+            <span class="output-rule">margin-bottom: 0</span>
+            <span class="output-rule">margin-top: 0</span>
+            <span class="output-rule">padding-left: 0</span>
+          </span>
+        </dd>
+        <dd class="output-variable">—</dd>
+      </dl>
+    </section>
   </section>
+
+  <section id="utility-mixins" class="padding-top-4">
+    <h2 class="margin-y-0">Utility mixins</h2>
+    {% include utilities/utility-mixin-intro.html %}
+
+    <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-3">
+      <div class="grid-col-4">Utility</div>
+      <div class="grid-col-4">Mixin</div>
+      <div class="grid-col-4">Example</div>
+    </div>
+    <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+      <div class="grid-col-4">.add-list-reset</div>
+      <div class="grid-col-4">add-list-reset</div>
+      <div class="grid-col-4">
+        <span class="display-block">add-list-reset</span>
+      </div>
+    </div>
+    {% include utilities/utility-mixin-using.html %}
+  </section>
+
+<section id="advanced-settings" class="padding-top-4">
+  <h2 class="margin-y-0">Advanced settings</h2>
 
   {% include utilities/responsive-variants.html %}
 
   {% include utilities/state-variants.html %}
 
-  <section class="utilities-section margin-top-6">
-    <h2 class="utilities-section-title">Default output</h2>
-    <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
-      <div class="grid-col-4">Utility</div>
-      <div class="grid-col-6">Output SCSS</div>
-      <div class="grid-col-2">Default variable value</div>
-    </div>
-    <dl class="output-list">
-      <dt class="output-utility">.add-list-reset</dt>
-      <dd class="output-css">
-        <span>
-          <span class="output-rule">list-style: none</span>
-          <span class="output-rule">margin-bottom: 0</span>
-          <span class="output-rule">margin-top: 0</span>
-          <span class="output-rule">padding-left: 0</span>
-        </span>
-      </dd>
-      <dd class="output-variable">—</dd>
-    </dl>
-  </section>
-
   {% include utilities/output-control.html %}
 
   {% include utilities/values-no-custom-values.html %}
+</section>

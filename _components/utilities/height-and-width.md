@@ -648,6 +648,80 @@ utilities:
   </dl>
 </section>
 
+<section id="utility-mixins" class="padding-top-4">
+  <h2 class="margin-y-0">Utility mixins</h2>
+  {% include utilities/utility-mixin-intro.html %}
+
+  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-3">
+    <div class="grid-col-4">Utility</div>
+    <div class="grid-col-4">Mixin</div>
+    <div class="grid-col-4">Example</div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.height-<code>unit</code></div>
+    <div class="grid-col-4">u-height(<code>value</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-height('card')</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.width-<code>unit</code></div>
+    <div class="grid-col-4">u-width(<code>value</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-width('auto')</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.maxh-<code>unit</code></div>
+    <div class="grid-col-4">u-maxh(<code>value</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-maxh('screen')</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.maxw-<code>unit</code></div>
+    <div class="grid-col-4">u-maxw(<code>value</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-maxw('card-lg')</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.minh-<code>unit</code></div>
+    <div class="grid-col-4">u-minh(<code>value</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-minh('screen')</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.minw-<code>unit</code></div>
+    <div class="grid-col-4">u-minw(<code>value</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-minw('auto')</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.add-aspect-<code>value</code></div>
+    <div class="grid-col-4">add-aspect(<code>value</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">add-aspect('16x9')</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.circle-<code>unit</code></div>
+    <div class="grid-col-4">u-circle(<code>value</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-circle('05')</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.square-<code>unit</code></div>
+    <div class="grid-col-4">u-square(<code>value</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-square(2)</span>
+    </div>
+  </div>
+</section>
+
 <section id="advanced-settings" class="padding-top-4">
   <h2 class="margin-y-0">Advanced settings</h2>
 

@@ -977,6 +977,105 @@ utilities:
   </dl>
 </section>
 
+<section id="utility-mixins" class="padding-top-4">
+  <h2 class="margin-y-0">Utility mixins</h2>
+  {% include utilities/utility-mixin-intro.html %}
+
+  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-3">
+    <div class="grid-col-4">Utility</div>
+    <div class="grid-col-4">Mixin</div>
+    <div class="grid-col-4">Example</div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.display-<code>value</code></div>
+    <div class="grid-col-4">u-display(<code>value</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-display('block')</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.opacity-<code>number</code></div>
+    <div class="grid-col-4">u-opacity(<code>number</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-opacity(0)</span>
+      <span class="display-block margin-top-1">u-opacity(0.3)</span>
+      <span class="display-block margin-top-1">u-opacity(1)</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.overflow-<code>modifier</code>-<code>value</code></div>
+    <div class="grid-col-4">u-overflow-<code>modifier</code>(<code>value</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-overflow('hidden')</span>
+      <span class="display-block margin-top-1">u-overflow-x('hidden')</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.position-<code>value</code></div>
+    <div class="grid-col-4">u-position(<code>value</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-position('relative')</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.bottom-<code>units</code></div>
+    <div class="grid-col-4">u-bottom-(<code>units</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-bottom('auto')</span>
+      <span class="display-block margin-top-1">u-bottom('neg-1px')</span>
+      <span class="display-block margin-top-1">u-bottom(-1px)</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.left-<code>units</code></div>
+    <div class="grid-col-4">u-left-(<code>units</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-left('auto')</span>
+      <span class="display-block margin-top-1">u-left('neg-1px')</span>
+      <span class="display-block margin-top-1">u-left(-1px)</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.right-<code>units</code></div>
+    <div class="grid-col-4">u-right-(<code>units</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-right('auto')</span>
+      <span class="display-block margin-top-1">u-right('neg-1px')</span>
+      <span class="display-block margin-top-1">u-right(-1px)</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.top-<code>units</code></div>
+    <div class="grid-col-4">u-top-(<code>units</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-top('auto')</span>
+      <span class="display-block margin-top-1">u-top('neg-1px')</span>
+      <span class="display-block margin-top-1">u-top(-1px)</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.pin-<code>value</code></div>
+    <div class="grid-col-4">u-pin-(<code>value</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-pin('all')</span>
+      <span class="display-block margin-top-1">u-pin('top')</span>
+      <span class="display-block margin-top-1">u-pin('x')</span>
+      <span class="display-block margin-top-1">u-pin('none')</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.z-<code>value</code></div>
+    <div class="grid-col-4">u-pin-(<code>value</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-z('bottom')</span>
+      <span class="display-block margin-top-1">u-z('top')</span>
+      <span class="display-block margin-top-1">u-z(0)</span>
+      <span class="display-block margin-top-1">u-z(400)</span>
+    </div>
+  </div>
+  {% include utilities/utility-mixin-using.html %}
+</section>
+
 <section id="advanced-settings" class="padding-top-4">
   <h2 class="margin-y-0">Advanced settings</h2>
 

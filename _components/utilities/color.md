@@ -231,14 +231,14 @@ utilities:
   </div>
   <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
     <div class="grid-col-4">.text-<code>color</code></div>
-    <div class="grid-col-4">u-text(<code>value</code>)</div>
+    <div class="grid-col-4">u-text(<code>color</code>)</div>
     <div class="grid-col-4">
       <span class="display-block">u-text('primary-light')</span>
     </div>
   </div>
   <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
     <div class="grid-col-4">.bg-<code>color</code></div>
-    <div class="grid-col-4">u-bg(<code>value</code>)</div>
+    <div class="grid-col-4">u-bg(<code>color</code>)</div>
     <div class="grid-col-4">
       <span class="display-block">u-bg('red-50v')</span>
       <span class="display-block margin-top-1">u-bg('red', 50, 'vivid')</span>

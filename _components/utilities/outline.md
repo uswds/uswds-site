@@ -164,6 +164,33 @@ utilities:
   </dl>
 </section>
 
+<section id="utility-mixins" class="padding-top-4">
+  <h2 class="margin-y-0">Utility mixins</h2>
+  {% include utilities/utility-mixin-intro.html %}
+
+  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-3">
+    <div class="grid-col-4">Utility</div>
+    <div class="grid-col-4">Mixin</div>
+    <div class="grid-col-4">Example</div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.outline-<code>color</code></div>
+    <div class="grid-col-4">u-outline(<code>color</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-outline('primary-light')</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.outline-<code>width</code></div>
+    <div class="grid-col-4">u-outline(<code>width</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-outline(2px)</span>
+    </div>
+  </div>
+
+  {% include utilities/utility-mixin-using.html %}
+</section>
+
 <section id="advanced-settings" class="padding-top-4">
   <h2 class="margin-y-0">Advanced settings</h2>
 

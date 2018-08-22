@@ -10,6 +10,10 @@ subnav:
   href: '#text-color'
 - text: Background color
   href: '#background-color'
+- text: Utility mixins
+  href: '#utility-mixins'
+- text: Advanced settings
+  href: '#advanced-settings'
 utilities:
 - base:         bg
   var:          background-color
@@ -214,6 +218,31 @@ utilities:
       </dd>
     {% endfor %}
   </dl>
+</section>
+
+<section id="utility-mixins" class="padding-top-4">
+<h2 class="margin-y-0">Utility mixins</h2>
+<div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-3">
+  <div class="grid-col-3">Utility</div>
+  <div class="grid-col-3">Mixin</div>
+  <div class="grid-col-6">Example Sass</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+  <div class="grid-col-3">.text-<code>color</code></div>
+  <div class="grid-col-3">u-text('<code>color</code>')</div>
+  <div class="grid-col-6">
+    <span class="display-block">@include u-text('primary-light');</span>
+  </div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+  <div class="grid-col-3">.bg-<code>color</code></div>
+  <div class="grid-col-3">u-bg('<code>color</code>')</div>
+  <div class="grid-col-6">
+    <span class="display-block">@include u-bg('red-50v');</span>
+    <span class="display-block margin-top-05">@include u-bg('red', 50, 'vivid');</span>
+  </div>
+</div>
+
 </section>
 
 <section id="advanced-settings" class="padding-top-4">

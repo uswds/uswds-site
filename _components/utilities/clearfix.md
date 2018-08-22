@@ -5,6 +5,9 @@ type: utility
 title: Clearfix
 category: Utilities
 lead: Clear any floated elements
+subnav:
+- text: Utility mixins
+  href: '#utility-mixins'
 
 utilities:
 - base:         clearfix

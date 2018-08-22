@@ -20,6 +20,10 @@ subnav:
   href: '#pinning'
 - text: Z-index
   href: '#z-index'
+- text: Utility mixins
+  href: '#utility-mixins'
+- text: Advanced settings
+  href: '#advanced-settings'
 
 utilities:
 - base:         display

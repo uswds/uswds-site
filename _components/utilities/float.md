@@ -5,6 +5,9 @@ type: utility
 title: Float
 category: Utilities
 lead: Float an item within a layout flow.
+subnav:
+- text: Utility mixins
+  href: '#utility-mixins'
 
 utilities:
 - base:         float

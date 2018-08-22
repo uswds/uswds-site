@@ -18,6 +18,10 @@ subnav:
   href: '#utility-flex-justify'
 - text: Order
   href: '#utility-order'
+- text: Utility mixins
+  href: '#utility-mixins'
+- text: Advanced settings
+  href: '#advanced-settings'
 
 values:
   flex:

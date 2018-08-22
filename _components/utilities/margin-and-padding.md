@@ -10,6 +10,10 @@ subnav:
   href: '#margin'
 - text: Padding
   href: '#padding'
+- text: Utility mixins
+  href: '#utility-mixins'
+- text: Advanced settings
+  href: '#advanced-settings'
 vals_positive:
   - token: 0
     value: 0

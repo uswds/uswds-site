@@ -5,6 +5,9 @@ type: utility
 title: Shadow
 category: Utilities
 lead: Set size of an item’s drop shadow
+subnav:
+- text: Utility mixins
+  href: '#utility-mixins'
 
 utilities:
 - base:         shadow

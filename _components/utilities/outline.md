@@ -10,6 +10,10 @@ subnav:
   href: '#utility-outline'
 - text: Outline color
   href: '#utility-outline-color'
+- text: Utility mixins
+  href: '#utility-mixins'
+- text: Advanced settings
+  href: '#advanced-settings'
 utilities:
 - base:         outline
   var:          outline

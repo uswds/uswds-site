@@ -5,6 +5,9 @@ type: utility
 title: List reset
 category: Utilities
 lead: Reset default list styling
+subnav:
+- text: Utility mixins
+  href: '#utility-mixins'
 
 utilities:
 - base:         add-list-reset

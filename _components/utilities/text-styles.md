@@ -24,6 +24,10 @@ subnav:
   href: '#vertical-align'
 - text: Whitespace
   href: '#whitespace'
+- text: Utility mixins
+  href: '#utility-mixins'
+- text: Advanced settings
+  href: '#advanced-settings'
 
 colors:
   theme:

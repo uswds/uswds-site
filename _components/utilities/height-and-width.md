@@ -24,6 +24,10 @@ subnav:
   href: '#circle'
 - text: Square
   href: '#square'
+- text: Utility mixins
+  href: '#utility-mixins'
+- text: Advanced settings
+  href: '#advanced-settings'
 
 utilities:
 - base:         height

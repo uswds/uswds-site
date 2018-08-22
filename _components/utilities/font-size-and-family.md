@@ -10,6 +10,10 @@ subnav:
   href: '#utility-font'
 - text: Font family
   href: '#utility-font-family'
+- text: Utility mixins
+  href: '#utility-mixins'
+- text: Advanced settings
+  href: '#advanced-settings'
 
 utilities:
 - base:         font

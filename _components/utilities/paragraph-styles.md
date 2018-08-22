@@ -14,6 +14,10 @@ subnav:
   href: '#text-align'
 - text: Text indent
   href: '#text-indent'
+- text: Utility mixins
+  href: '#utility-mixins'
+- text: Advanced settings
+  href: '#advanced-settings'
 
 utilities:
 - base:         line-height

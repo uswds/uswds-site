@@ -2341,6 +2341,45 @@ utilities:
   </dl>
 </section>
 
+<section id="utility-mixins" class="padding-top-4">
+  <h2 class="margin-y-0">Utility mixins</h2>
+  {% include utilities/utility-mixin-intro.html %}
+
+  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-3">
+    <div class="grid-col-4">Utility</div>
+    <div class="grid-col-4">Mixin</div>
+    <div class="grid-col-4">Example</div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.margin-<code>modifier</code>-<code>units</code></div>
+    <div class="grid-col-4">u-margin-<code>modifier</code>(<code>value</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-margin(1)</span>
+      <span class="display-block margin-top-1">u-margin-y(1)</span>
+      <span class="display-block margin-top-1">u-margin-x('neg-1')</span>
+      <span class="display-block margin-top-1">u-margin-x(-1)</span>
+      <span class="display-block margin-top-1">u-margin-top('105')</span>
+      <span class="display-block margin-top-1">u-margin-top(1.5)</span>
+      <span class="display-block margin-top-1">u-margin-x('auto')</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.padding-<code>modifier</code>-<code>units</code></div>
+    <div class="grid-col-4">u-padding-<code>modifier</code>(<code>value</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-margin(1)</span>
+      <span class="display-block margin-top-1">u-padding(1)</span>
+      <span class="display-block margin-top-1">u-padding-x('05')</span>
+      <span class="display-block margin-top-1">u-padding-x(0.5)</span>
+      <span class="display-block margin-top-1">u-padding-x(-1)</span>
+      <span class="display-block margin-top-1">u-padding-top('105')</span>
+      <span class="display-block margin-top-1">u-padding-top(0)</span>
+    </div>
+  </div>
+
+  {% include utilities/utility-mixin-using.html %}
+</section>
+
 <section id="advanced-settings" class="padding-top-4">
   <h2 class="margin-y-0">Advanced settings</h2>
 

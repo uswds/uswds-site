@@ -700,7 +700,7 @@ utilities:
     </div>
   </div>
   <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.add-aspect-<code>value</code></div>
+    <div class="grid-col-4">.add-aspect-<code>ratio</code></div>
     <div class="grid-col-4">add-aspect(<code>value</code>)</div>
     <div class="grid-col-4">
       <span class="display-block">add-aspect('16x9')</span>
@@ -720,6 +720,8 @@ utilities:
       <span class="display-block">u-square(2)</span>
     </div>
   </div>
+
+  {% include utilities/utility-mixin-using.html %}
 </section>
 
 <section id="advanced-settings" class="padding-top-4">

@@ -221,30 +221,31 @@ utilities:
 </section>
 
 <section id="utility-mixins" class="padding-top-4">
-<h2 class="margin-y-0">Utility mixins</h2>
-{% include utilities/utility-mixin-intro.html %}
+  <h2 class="margin-y-0">Utility mixins</h2>
+  {% include utilities/utility-mixin-intro.html %}
 
-<div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-3">
-  <div class="grid-col-4">Utility</div>
-  <div class="grid-col-4">Mixin</div>
-  <div class="grid-col-4">Example</div>
-</div>
-<div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-  <div class="grid-col-4">.text-<code>color</code></div>
-  <div class="grid-col-4">u-text(<code>value</code>)</div>
-  <div class="grid-col-4">
-    <span class="display-block">u-text('primary-light')</span>
+  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-3">
+    <div class="grid-col-4">Utility</div>
+    <div class="grid-col-4">Mixin</div>
+    <div class="grid-col-4">Example</div>
   </div>
-</div>
-<div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-  <div class="grid-col-4">.bg-<code>color</code></div>
-  <div class="grid-col-4">u-bg(<code>value</code>)</div>
-  <div class="grid-col-4">
-    <span class="display-block">u-bg('red-50v')</span>
-    <span class="display-block margin-top-1">u-bg('red', 50, 'vivid')</span>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.text-<code>color</code></div>
+    <div class="grid-col-4">u-text(<code>value</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-text('primary-light')</span>
+    </div>
   </div>
-</div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.bg-<code>color</code></div>
+    <div class="grid-col-4">u-bg(<code>value</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-bg('red-50v')</span>
+      <span class="display-block margin-top-1">u-bg('red', 50, 'vivid')</span>
+    </div>
+  </div>
 
+  {% include utilities/utility-mixin-using.html %}
 </section>
 
 <section id="advanced-settings" class="padding-top-4">

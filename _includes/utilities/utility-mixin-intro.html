@@ -1,5 +1,1 @@
 <p>Utilities may be used in component Sass with utility mixins.</p>
-
-<p>Use single-quoted strings in utility mixins. Do not quote numbers or px values, with the exception of half (<code>05</code>) values like <code>'05'</code>, <code>'105'</code>, and <code>'205'</code> which should be treated as strings. Half values may also be written with their unquoted number equivalent: <code>0.5</code>, <code>1.5</code>, or <code>2.5</code></p>
-<p>If multiple utilities share the same utility mixin (like the <code>.text-</code> utilities share <code>u-text()</code>), the utility can accept multiple comma-separated values: <code>u-text('primary-darkest', 'no-underline', 'bold')</code>.</p>
-<p>Multiple-value mixins that accept colors only accept the utility shortcode version of the color, like <code>'primary-dark'</code> or <code>'red-warm-50v'</code>. Color-only mixins can also accept colors in the form <code>[family], [grade], [vivid]</code>: <code>u-bg('red-warm', 50, 'vivid')</code>.</p>

@@ -16,6 +16,10 @@ subnav:
   href: '#utility-border-color'
 - text: Border radius
   href: '#utility-radius'
+- text: Utility mixins
+  href: '#utility-mixins'
+- text: Advanced settings
+  href: '#advanced-settings'
 
 utilities:
 - base:         border
@@ -732,6 +736,31 @@ utilities:
 
   </dl>
 </section>
+
+<section id="utility-mixins" class="padding-top-4">
+<h2 class="margin-y-0">Utility mixins</h2>
+{% include utilities/utility-mixin-intro.html %}
+
+<div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-3">
+  <div class="grid-col-4">Utility</div>
+  <div class="grid-col-4">Mixin</div>
+  <div class="grid-col-4">Example</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+  <div class="grid-col-4">
+    <span class="display-block">.border-<code>modifier</code>-<code>color</code></span>
+    <span class="display-block margin-top-1">.border-<code>modifier</code>-<code>units</code></span>
+  </div>
+  <div class="grid-col-4">u-border-<code>modifier</code>-(<code>value</code>)</div>
+  <div class="grid-col-4">
+    <span class="display-block">u-border('05')</span>
+    <span class="display-block margin-top-1">u-border-left(0.5)</span>
+    <span class="display-block margin-top-1">u-border-y(2)</span>
+    <span class="display-block margin-top-1">u-border-top(2px)</span>
+    <span class="display-block margin-top-1">u-border-top('primary-light')</span>
+    <span class="display-block margin-top-1">u-border-top('primary-light', 2px)</span>
+  </div>
+</div>
 
 <section id="advanced-settings" class="padding-top-4">
   <h2 class="margin-y-0">Advanced settings</h2>

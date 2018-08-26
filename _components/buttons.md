@@ -52,7 +52,7 @@ component_url: 'https://components.designsystem.digital.gov/components/detail/bu
     <ul class="usa-content-list">
       <li>Generally, use primary buttons for actions that go to the next step and use secondary buttons for actions that happen on the current page.</li>
       <li>Style the button most users should click in a way that distinguishes from other buttons on the page. Try using the  “large button” or the most visually distinct fill color.</li>
-      <li>Make sure buttons should look clickable—use color variations to distinguish static, hover and active states.</li>
+      <li>Make sure buttons look clickable—use color variations to distinguish static, hover and active states.</li>
       <li>Avoid using too many buttons on a page.</li>
       <li>Use sentence case for button labels. </li>
       <li>Button labels should be as short as possible with “trigger words” that your users will recognize to clearly explain what will happen when the button is clicked (for example, “download,” “view” or “sign up”).</li>

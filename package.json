@@ -52,6 +52,7 @@
     "uswds": "github:uswds/uswds#release-2.0"
   },
   "devDependencies": {
+    "autoprefixer": "^9.1.3",
     "axe-core": "^2.6.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
@@ -60,6 +61,8 @@
     "cheerio": "^1.0.0-rc.2",
     "chrome-launcher": "^0.10.2",
     "chrome-remote-interface": "^0.25.6",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.0",
     "del": "^3.0.0",
     "express": "^4.16.2",
     "gulp": "^4.0.0",
@@ -67,6 +70,7 @@
     "gulp-combine-mq": "^0.4.0",
     "gulp-concat": "^2.6.0",
     "gulp-eslint": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.3.0",
     "gulp-sass": "^4.0.1",
     "gulp-scss-lint": "^0.6.1",

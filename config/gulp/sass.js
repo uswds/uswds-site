@@ -1,8 +1,13 @@
-var gulp      = require('gulp');
-var dutil     = require('./doc-util');
+var autoprefixer  = require('autoprefixer');
 var combineMq = require('gulp-combine-mq');
-var sass      = require('gulp-sass');
+var cssnano       = require('cssnano');
+var dutil     = require('./doc-util');
+var gulp      = require('gulp');
 var linter    = require('gulp-scss-lint');
+var packCSS       = require('css-mqpacker');
+var postcss       = require('gulp-postcss');
+var sass      = require('gulp-sass');
+var sourcemaps    = require('gulp-sourcemaps');
 var strip     = require('gulp-strip-css-comments');
 var task      = 'sass';
 
@@ -13,7 +18,7 @@ gulp.task('build-sass', function () {
     cssnano({ autoprefixer: { browsers: '> 1%, Last 2 versions, IE 11' }})
   ];
   return gulp.src('./css/**/*.scss')
-    .pipe(sourcemaps.init({ loadMaps: true }))
+    .pipe(sourcemaps.init({largeFile: true}))
     .pipe(
       sass({
         includePaths: [ './node_modules' ],
@@ -27,16 +32,10 @@ gulp.task('build-sass', function () {
           }
         })
     )
-    .pipe(strip())
     .pipe(postcss(plugins))
-    .pipe(replace(
-      /\buswds @version\b/g,
-      'uswds v' + pkg.version
-    ))
-    .pipe(gulp.dest('assets/css'))
     .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('assets/css'))
     .pipe(gulp.dest('_site/assets/css'))
-    .pipe(sourcemaps.write('.'));
 });
 
 gulp.task('scss-lint', function (done) {

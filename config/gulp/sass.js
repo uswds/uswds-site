@@ -7,26 +7,36 @@ var strip     = require('gulp-strip-css-comments');
 var task      = 'sass';
 
 gulp.task('build-sass', function () {
+  var plugins = [
+    autoprefixer({ browsers: ['> 1%','Last 2 versions','IE 11'], cascade: false, }),
+    packCSS({ sort: true }),
+    cssnano({ autoprefixer: { browsers: '> 1%, Last 2 versions, IE 11' }})
+  ];
   return gulp.src('./css/**/*.scss')
-    .pipe(sass({
-      includePaths: [ './node_modules' ],
-      outputStyle: 'compressed',
-    }))
-    .on('error', function(error) {
-      sass.logError.bind(this)(error);
-
-      if (process.env.NODE_ENV !== 'development') {
-        process.exit(1);
-      }
-    })
-    .pipe(strip())
+    .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(
-      combineMq({
-        beautify: true,
+      sass({
+        includePaths: [ './node_modules' ],
+        outputStyle: 'expanded',
       })
+        .on('error', function(error) {
+          sass.logError.bind(this)(error);
+
+          if (process.env.NODE_ENV !== 'development') {
+            process.exit(1);
+          }
+        })
     )
+    .pipe(strip())
+    .pipe(postcss(plugins))
+    .pipe(replace(
+      /\buswds @version\b/g,
+      'uswds v' + pkg.version
+    ))
     .pipe(gulp.dest('assets/css'))
-    .pipe(gulp.dest('_site/assets/css'));
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('_site/assets/css'))
+    .pipe(sourcemaps.write('.'));
 });
 
 gulp.task('scss-lint', function (done) {

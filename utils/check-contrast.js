@@ -22,8 +22,16 @@ const systemColors = uswdsTokens.colors.system;
 
 class Color {
   constructor({ grade, value }) {
-    this.grade = grade;
+    this._grade = grade;
     this.value = value;
+  }
+
+  get grade() {
+    return Number(this._grade);
+  }
+
+  set grade(grade) {
+    this._grade = grade;
   }
 }
 
@@ -31,6 +39,10 @@ class ColorFamily {
   constructor({ name, colors = [] }) {
     this.name = name;
     this.colors = colors;
+  }
+
+  findByGrade(grade) {
+    return this.colors.find((color) => color.grade === String(grade));
   }
 }
 
@@ -64,7 +76,7 @@ const COLORS = Object.keys(systemColors)
 
 const WHITE = '#ffffff';
 const BLACK = '#000000';
-const MIN_CONTRAST_AA = 4;
+const MIN_CONTRAST_AA = 4.5;
 const MIN_CONTRAST_AA_LARGE = 3;
 
 const formatColorName = (family, grade) => `${family}-${grade}`;
@@ -167,6 +179,12 @@ const checkContrast = () => {
   return output;
 };
 
+/**
+ * Get luminance values for a list of Color objects
+ * @param {Array} colors
+ * @returns Array of luminance values for the color values
+ *          for each grade in a given color family
+ */
 const luminanceForFamily = (colors) => {
   return colors.map((color) => {
     return chroma(color.value).luminance();
@@ -180,7 +198,9 @@ const contrastForFamily = (colorFamily) => {
   for (let i = 0; i < colors.length; i++) {
     const color = colors[i];
     const { grade, value } = color;
-    let adjustedGrade = Number(grade);
+    let adjustedGrade = grade;
+    let ratio;
+    let contrast;
 
     if (grade < 40) {
       continue;
@@ -190,53 +210,70 @@ const contrastForFamily = (colorFamily) => {
 
     while (adjustedGrade >= 0) {
       if (adjustedGrade === 0) {
-        output.push(new ContrastResult({
-          ratio: chroma.contrast(color.value, WHITE),
-          base: formatColorName(name, grade),
-          contrast: 'white'
-        }));
+        console.log(`Comparing color grade ${formatColorName(name, grade)} with white.`);
+        ratio = contrastBetween(color.value, WHITE);
+        contrast = 'white';
       } else {
-        const nextColor = colors.find((color) => color.grade === String(adjustedGrade));
+        const nextColor = colors.find((color) => color.grade === adjustedGrade);
 
         if (!nextColor) {
           break;
         }
-
-        output.push(new ContrastResult({
-          ratio: contrastBetween(color.value, nextColor.value),
-          base: formatColorName(name, grade),
-          contrast: formatColorName(name, adjustedGrade),
-        }));
+        
+        console.log(`Comparing color grade ${formatColorName(name, grade)} with ${formatColorName(name, adjustedGrade)}`);
+        ratio = contrastBetween(color.value, nextColor.value);
+        contrast = formatColorName(name, adjustedGrade);
       }
 
+      const contrastResult = new ContrastResult({
+        ratio,
+        base: formatColorName(name, grade),
+        contrast,
+      });
+
+      if (grade - adjustedGrade >= 50) {
+        if (!isAACompliant(contrastResult)) {
+          output.push(contrastResult);
+        }
+      } else if (!isAALargeCompliant(contrastResult)) {
+        output.push(contrastResult);
+      }
 
       adjustedGrade -= 10;
     }
-    
-    while(adjustedGrade <= 100) {
-      const nextColor = colors.find((color) => color.grade === String(adjustedGrade));
 
-      if (!nextColor) {
-        // we have hit the end of our colors?
-        break;
+    adjustedGrade = grade + 40;
+
+
+    while (adjustedGrade <= 100) {
+      if (adjustedGrade === 100) {
+        console.log(`Comparing color grade ${formatColorName(name, grade)} with black.`);
+        ratio = contrastBetween(color.value, 'black');
+        contrast = 'black';
+      } else {
+        const nextColor = colors.find((color) => color.grade === adjustedGrade);
+  
+        if (!nextColor) {
+          break;
+        }
+        
+        console.log(`Comparing color grade ${formatColorName(name, grade)} with ${formatColorName(name, adjustedGrade)}`);
+        ratio = contrastBetween(color.value, nextColor.value);
+        contrast = formatColorName(name, nextColor.grade);
       }
 
-      if (adjustedGrade === 100) {
-        output.push(
-          new ContrastResult({
-            ratio: contrastBetween(color.value, 'black'),
-            base: formatColorName(name, color.grade),
-            contrast: 'black',
-          })
-        );
-      } else {
-        output.push(
-          new ContrastResult({
-            ratio: contrastBetween(color.value, nextColor.value),
-            base: formatColorName(name, color.grade),
-            contrast: formatColorName(name, nextColor.grade),
-          })
-        );
+      const contrastResult = new ContrastResult({
+        ratio,
+        base: formatColorName(name, color.grade),
+        contrast,
+      });
+
+      if (grade - adjustedGrade >= 50) {
+        if (!isAACompliant(contrastResult)) {
+          output.push(contrastResult);
+        }
+      } else if (!isAALargeCompliant(contrastResult)) {
+        output.push(contrastResult);
       }
 
       adjustedGrade += 10;
@@ -269,7 +306,14 @@ if (args[SWITCHES.LUMINANCE]) {
 
     fs.writeFileSync('contrast-report.json', jsonFormat(errorReport));
   } else {
-    console.log(jsonFormat(contrastForFamily(family)));
+    const contrastErrors = contrastForFamily(family);
+
+    if (contrastErrors.length) {
+      console.log(`\n\nErrors found in color family ${family.name}!\n`);
+      console.log(jsonFormat(contrastErrors));
+    } else {
+      console.log(`\n\nNo contrast errors found for color family ${family.name}!`);
+    }
   }
 
   process.exit();

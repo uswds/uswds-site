@@ -78,6 +78,7 @@
     "gulp-util": "^3.0.7",
     "json-format": "^1.0.1",
     "merge-stream": "^1.0.0",
+    "minimist": "^1.2.0",
     "node-notifier": "^5.2.1",
     "nswatch": "^0.2.0",
     "simplecrawler": "^1.1.6",

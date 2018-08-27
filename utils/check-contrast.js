@@ -3,6 +3,14 @@ const yaml = require('yamljs');
 const fs = require('fs');
 const path = require('path');
 const jsonFormat = require('json-format');
+const minimist = require('minimist');
+const args = minimist(process.argv.slice(2));
+
+const SWITCHES = {
+  LUMINANCE: 'l',
+  CONTRAST: 'c',
+  FAMILY: 'f',
+};
 
 const uswdsTokens = yaml.load(path.join(
   __dirname,
@@ -160,10 +168,30 @@ const checkContrast = () => {
   return output;
 };
 
-const allContrasts = checkContrast();
-let errorReport = {
-  notAALarge: allContrasts.filter(obj => obj.ratio < MIN_CONTRAST_AA_LARGE),
-  notAA: allContrasts.filter(obj => obj.ratio < MIN_CONTRAST_AA), 
+const luminanceForFamily = (colors) => {
+  return colors.map((color) => {
+    return chroma(color.value).luminance();
+  });
 };
+console.log(args);
+if (args[SWITCHES.LUMINANCE]) {
+  const family = COLORS[args[SWITCHES.FAMILY]];
 
-fs.writeFileSync('contrast-report.json', jsonFormat(errorReport));
+  if (!family) {
+    console.log('Luminance command requires a valid color family name!');
+    process.exit(1);
+  }
+
+  console.log(luminanceForFamily(family.colors));
+  process.exit();
+} else if (args[SWITCHES.CONTRAST]) {
+  const allContrasts = checkContrast();
+  let errorReport = {
+    notAALarge: allContrasts.filter(obj => obj.ratio < MIN_CONTRAST_AA_LARGE),
+    notAA: allContrasts.filter(obj => obj.ratio < MIN_CONTRAST_AA), 
+  };
+
+  fs.writeFileSync('contrast-report.json', jsonFormat(errorReport));
+
+  process.exit();
+}

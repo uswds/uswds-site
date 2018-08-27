@@ -67,10 +67,9 @@ const BLACK = '#000000';
 const MIN_CONTRAST_AA = 4;
 const MIN_CONTRAST_AA_LARGE = 3;
 
-
 const formatColorName = (family, grade) => `${family}-${grade}`;
 
-const checkFamilyContrast = (colors, familyName) => {
+const colorFamilyContrast = (colors, familyName) => {
   const colorFamily = colors[familyName];
   const grades = Object.keys(colorFamily);
   const colorValues = Object.values(colorFamily);
@@ -173,7 +172,80 @@ const luminanceForFamily = (colors) => {
     return chroma(color.value).luminance();
   });
 };
-console.log(args);
+
+const contrastForFamily = (colorFamily) => {
+  const { colors, name } = colorFamily
+  const output = [];
+
+  for (let i = 0; i < colors.length; i++) {
+    const color = colors[i];
+    const { grade, value } = color;
+    let adjustedGrade = Number(grade);
+
+    if (grade < 40) {
+      continue;
+    }
+    
+    adjustedGrade -= 40;
+
+    while (adjustedGrade >= 0) {
+      if (adjustedGrade === 0) {
+        output.push(new ContrastResult({
+          ratio: chroma.contrast(color.value, WHITE),
+          base: formatColorName(name, grade),
+          contrast: 'white'
+        }));
+      } else {
+        const nextColor = colors.find((color) => color.grade === String(adjustedGrade));
+
+        if (!nextColor) {
+          break;
+        }
+
+        output.push(new ContrastResult({
+          ratio: contrastBetween(color.value, nextColor.value),
+          base: formatColorName(name, grade),
+          contrast: formatColorName(name, adjustedGrade),
+        }));
+      }
+
+
+      adjustedGrade -= 10;
+    }
+    
+    while(adjustedGrade <= 100) {
+      const nextColor = colors.find((color) => color.grade === String(adjustedGrade));
+
+      if (!nextColor) {
+        // we have hit the end of our colors?
+        break;
+      }
+
+      if (adjustedGrade === 100) {
+        output.push(
+          new ContrastResult({
+            ratio: contrastBetween(color.value, 'black'),
+            base: formatColorName(name, color.grade),
+            contrast: 'black',
+          })
+        );
+      } else {
+        output.push(
+          new ContrastResult({
+            ratio: contrastBetween(color.value, nextColor.value),
+            base: formatColorName(name, color.grade),
+            contrast: formatColorName(name, nextColor.grade),
+          })
+        );
+      }
+
+      adjustedGrade += 10;
+    }
+  }
+
+  return output;
+}
+
 if (args[SWITCHES.LUMINANCE]) {
   const family = COLORS[args[SWITCHES.FAMILY]];
 
@@ -185,13 +257,20 @@ if (args[SWITCHES.LUMINANCE]) {
   console.log(luminanceForFamily(family.colors));
   process.exit();
 } else if (args[SWITCHES.CONTRAST]) {
-  const allContrasts = checkContrast();
-  let errorReport = {
-    notAALarge: allContrasts.filter(obj => obj.ratio < MIN_CONTRAST_AA_LARGE),
-    notAA: allContrasts.filter(obj => obj.ratio < MIN_CONTRAST_AA), 
-  };
+  const family = COLORS[args[SWITCHES.FAMILY]];
 
-  fs.writeFileSync('contrast-report.json', jsonFormat(errorReport));
+  if (!family) {
+    // do a dump of all the constrasts and report errors
+    const allContrasts = checkContrast();
+    let errorReport = {
+      notAALarge: allContrasts.filter(obj => obj.ratio < MIN_CONTRAST_AA_LARGE),
+      notAA: allContrasts.filter(obj => obj.ratio < MIN_CONTRAST_AA), 
+    };
+
+    fs.writeFileSync('contrast-report.json', jsonFormat(errorReport));
+  } else {
+    console.log(jsonFormat(contrastForFamily(family)));
+  }
 
   process.exit();
 }

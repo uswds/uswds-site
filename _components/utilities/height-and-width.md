@@ -652,7 +652,7 @@ utilities:
   <h2 class="margin-y-0">Utility mixins</h2>
   {% include utilities/utility-mixin-intro.html %}
 
-  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-3">
+  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2 margin-top-3">
     <div class="grid-col-4">Utility</div>
     <div class="grid-col-4">Mixin</div>
     <div class="grid-col-4">Example</div>
@@ -736,7 +736,7 @@ utilities:
   <section class="utilities-section margin-top-6">
     {% include utilities/values-intro.html %}
 
-    <aside class="example border-left-05 border-secondary-light padding-left-105">
+    <aside class="example border-left-05 border-secondary-light padding-left-105 margin-top-2">
       <h4 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h4>
 <pre class="font-mono-xs margin-0 padding-0 bg-transparent">
 $width-palettes: (

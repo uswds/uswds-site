@@ -10,10 +10,6 @@ subnav:
   href: '#utility-font'
 - text: Font family
   href: '#utility-font-family'
-- text: Utility mixins
-  href: '#utility-mixins'
-- text: Advanced settings
-  href: '#advanced-settings'
 
 utilities:
 - base:         font
@@ -289,7 +285,7 @@ utilities:
 
           <dd class="output-css grid-col-5">
             <span>
-                <span class="output-rule">font-size: <span class="output-token">scale('{{ face.style }}', '{{ size[1].token }}')</span></span>
+                <span class="output-rule">font-size: <span class="output-token">type-scale({{ face.style }}, {{ size[1].token }})</span></span>
             </span>
           </dd>
 
@@ -314,7 +310,7 @@ utilities:
 
             <dd class="output-css grid-col-5">
               <span>
-                  <span class="output-rule">font-size: <span class="output-token">scale('{{ role }}', '{{ size[1].token }}')</span></span>
+                  <span class="output-rule">font-size: <span class="output-token">type-scale({{ role }}, {{ size[1].token }})</span></span>
               </span>
             </dd>
 
@@ -359,45 +355,6 @@ utilities:
   </dl>
 </section>
 
-<section id="utility-mixins" class="padding-top-4">
-  <h2 class="margin-y-0">Utility mixins</h2>
-  {% include utilities/utility-mixin-intro.html %}
-
-  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-3">
-    <div class="grid-col-4">Utility</div>
-    <div class="grid-col-4">Mixin</div>
-    <div class="grid-col-4">Example</div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.font-<code>value</code></div>
-    <div class="grid-col-4">u-font(<code>family</code>, <code>scale</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-font('sans', 'sm')</span>
-      <span class="display-block margin-top-1">u-font('sans', 2)</span>
-      <span class="display-block margin-top-1">u-font('heading', xl)</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.font-family-<code>value</code></div>
-    <div class="grid-col-4">u-font-family(<code>family</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-font-family('sans')</span>
-      <span class="display-block margin-top-1">u-font-family('heading')</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.font-size-<code>value</code></div>
-    <div class="grid-col-4">u-font-size(<code>family</code>, <code>scale</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-font-size('sans', 'sm')</span>
-      <span class="display-block margin-top-1">u-font-size('sans', 2)</span>
-      <span class="display-block margin-top-1">u-font-size('heading', 'xl')</span>
-    </div>
-  </div>
-
-  {% include utilities/utility-mixin-using.html %}
-</section>
-
 <section id="advanced-settings" class="padding-top-4">
   <h2 class="margin-y-0">Advanced settings</h2>
 
@@ -408,7 +365,7 @@ utilities:
   <section class="utilities-section margin-top-6">
     {% include utilities/values-intro.html %}
 
-    <aside class="example border-left-05 border-secondary-light padding-left-105">
+    <aside class="example border-left-05 border-secondary-light padding-left-105 margin-top-2">
       <h4 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h4>
 <pre class="font-mono-xs margin-0 padding-0 bg-transparent">
 $border-color-palettes: (

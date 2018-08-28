@@ -3,8 +3,7 @@ const yaml = require('yamljs');
 const fs = require('fs');
 const path = require('path');
 const jsonFormat = require('json-format');
-const minimist = require('minimist');
-const args = minimist(process.argv.slice(2));
+const args = require('minimist')(process.argv.slice(2));
 const colors = require('colors');
 
 const debug = (enabled) => {
@@ -48,6 +47,11 @@ class Color {
   set grade(grade) {
     this._grade = grade;
   }
+
+  contrastBetween(color) {
+    console.log(this.value, color.value)
+    return chroma.contrast(this.value, color.value);
+  }
 }
 
 class ColorFamily {
@@ -62,14 +66,34 @@ class ColorFamily {
 }
 
 class ContrastResult {
-  constructor({ ratio, base, contrast }) {
+  constructor({ ratio, base, contrast, name }) {
     this.ratio = ratio,
     this.base = base;
     this.contrast = contrast;
+    this.name = name;
   }
 
-  toString() {
-    // format me in an aethetically appealing way
+  toJSON() {
+    return {
+      ratio: this.ratio,
+      name: this.name,
+      base: this.base,
+      contrast: this.contrast,
+    };
+  }
+
+  isCompliant() {
+    let result = true;
+
+    if (this.base - this.contrast >= 50) {
+      if (!isAACompliant(this)) {
+        result = false;
+      }
+    } else if (!isAALargeCompliant(this)) {
+      result = false;
+    }
+
+    return result;
   }
 }
 
@@ -93,112 +117,27 @@ const COLORS = Object.keys(systemColors)
     };
   }, {});
 
-const WHITE = '#ffffff';
-const BLACK = '#000000';
+const WHITE = new Color({ grade: 0, value: '#ffffff' });
+const BLACK = new Color({ grade: 100, value: '#000000' });
 const MIN_CONTRAST_AA = 4.5;
 const MIN_CONTRAST_AA_LARGE = 3;
+
 // const AA_CONTRAST_DISTANCE = 50;
 // const COLOR_GRADE_INCREMENT = 10;
 
 const formatColorName = (family, grade) => `${family}-${grade}`;
 
-const colorFamilyContrast = (colors, familyName) => {
-  const colorFamily = colors[familyName];
-  const grades = Object.keys(colorFamily);
-  const colorValues = Object.values(colorFamily);
-  const length = grades.length;
-  const output = [];
-
-  for (let i = 0; i < length; i++) {
-    for (let j = i + 1; j < length; j++) {
-      const compare = colorValues[i];
-      const comparedTo = colorValues[j];
-      const compareGrade = grades[i];
-      const comparedToGrade = grades[j];
-      const ratio = chroma.contrast(compare, comparedTo);
-
-      output.push([ `${familyName}-${compareGrade}`, `${familyName}-${comparedToGrade}`, ratio ]);
-    }
-  }
-
-  return output;
-}
-
+/**
+ * Given two hex values, return the WCAG contrast ratio between them
+ * @param {String} colorA hex value of a color
+ * @param {String} colorB hex value of a color
+ */
 const contrastBetween = (colorA, colorB) => {
   return chroma.contrast(colorA, colorB);
 };
 
-/**
- * Contrast color grades (filtered by predicate function) against a single color
- * 
- * @param {String} familyName the name of the color family, e.g., 'red'
- * @param {String} contrastingColor hex code of the color you want to constrast with
- * @param {Function} predicate filter for grades we want to constrast
- * 
- * @returns Array of color names and their ratios with the constrating color
- */
-const familyContrastWithColor = (familyName, contrastingColor, predicate) => {
-  const family = COLORS[familyName];
-  const grades = Object.keys(family);
-  const gradesToCompare = grades.reduce((memo, grade) => {
-    if (predicate(grade)) {
-      memo.push(grade);
-    }
-
-    return memo;
-  }, []);
-
-  return gradesToCompare.map(function (grade) {
-    return [
-      formatColorName(familyName, grade),
-      chroma.contrast(family[grade], contrastingColor),
-    ];
-  })
-};
-
 const isAALargeCompliant = (contrastObj) => contrastObj.ratio >= MIN_CONTRAST_AA_LARGE;
 const isAACompliant = (contrastObj) => contrastObj.ratio >= MIN_CONTRAST_AA;
-
-//console.log(COLORS);
-//console.log(familyContrastWithColor('blue_vivid', WHITE, (grade) => grade < 50));
-
-
-const checkContrast = () => {
-  const families = Object.values(COLORS);
-  const output = [];
-
-  for (let b = 0; b < families.length; b++) {
-    for (let c = b + 1; c < families.length; c++) {
-      const { colors: baseFamily, name: baseName } = families[b];
-      const { colors: contrastFamiliy, name: contrastName } = families[c];
-      const shortestLen = Math.min(baseFamily.length, contrastFamiliy.length);
-
-      for (let i = 0; i < shortestLen; i++) {
-        for (let j = i + 1; j < shortestLen; j++) {
-          const base = baseFamily[i];
-          const contrast = contrastFamiliy[j];
-          const gradeDiff = Math.abs(base.grade - contrast.grade);
-
-          // there is no expectation that two colors with a grade
-          // difference of 30 or less will have a compliant contrast
-          if (gradeDiff < 40) {
-            continue;
-          }
-
-          const ratio = chroma.contrast(base.value, contrast.value);
-
-          output.push(new ContrastResult({
-            ratio,
-            base: formatColorName(baseName, base.grade),
-            contrast: formatColorName(contrastName, contrast.grade),
-          }));
-        }
-      }
-    }
-  }
-
-  return output;
-};
 
 /**
  * Get luminance values for a list of Color objects
@@ -240,18 +179,37 @@ const applyLuminance = (colorFamily) => {
   },[]);
 };
 
+/**
+ * Given two color objects, get the contrast between them and return
+ * a contrast result
+ *
+ * @private
+ * @param {Color} baseColor 
+ * @param {Color} contrastColor 
+ * @param {String} name the name of the color family
+ * @returns new ContrastResult
+ */
+const contrastResultFactory = (baseColor, contrastColor, name) =>
+  new ContrastResult({
+    ratio: baseColor.contrastBetween(contrastColor),
+    base: baseColor.grade,
+    contrast: contrastColor.grade,
+    name,
+  });
+
 const contrastForFamily = (colorFamily) => {
-  const { colors, name } = colorFamily
+  const { name } = colorFamily
   const output = [];
   
   console.log(`\nChecking contrast for color family ${name}.`);
   
-  for (let i = 0; i < colors.length; i++) {
-    const color = colors[i];
+  for (let i = 0; i < colorFamily.colors.length; i++) {
+    const color = colorFamily.colors[i];
     const { grade, value } = color;
     let adjustedGrade = grade;
     let ratio;
     let contrast;
+    let contrastResult;
 
     if (grade < 40) {
       continue;
@@ -262,31 +220,19 @@ const contrastForFamily = (colorFamily) => {
     while (adjustedGrade >= 0) {
       if (adjustedGrade === 0) {
         logger(`Comparing color grade ${formatColorName(name, grade)} with white.`);
-        ratio = contrastBetween(color.value, WHITE);
-        contrast = 'white';
+        contrastResult = contrastResultFactory(color, WHITE, name);
       } else {
-        const nextColor = colors.find((color) => color.grade === adjustedGrade);
+        const nextColor = colorFamily.findByGrade(adjustedGrade);
 
         if (!nextColor) {
           break;
         }
         
         logger(`Comparing color grade ${formatColorName(name, grade)} with ${formatColorName(name, adjustedGrade)}`);
-        ratio = contrastBetween(color.value, nextColor.value);
-        contrast = formatColorName(name, adjustedGrade);
+        contrastResult = contrastResultFactory(color, nextColor, name);
       }
 
-      const contrastResult = new ContrastResult({
-        ratio,
-        base: formatColorName(name, grade),
-        contrast,
-      });
-
-      if (grade - adjustedGrade >= 50) {
-        if (!isAACompliant(contrastResult)) {
-          output.push(contrastResult);
-        }
-      } else if (!isAALargeCompliant(contrastResult)) {
+      if (!contrastResult.isCompliant()) {
         output.push(contrastResult);
       }
 
@@ -295,35 +241,22 @@ const contrastForFamily = (colorFamily) => {
 
     adjustedGrade = grade + 40;
 
-
     while (adjustedGrade <= 100) {
       if (adjustedGrade === 100) {
         logger(`Comparing color grade ${formatColorName(name, grade)} with black.`);
-        ratio = contrastBetween(color.value, BLACK);
-        contrast = 'black';
+        contrastResult = contrastResultFactory(color, BLACK, name);
       } else {
-        const nextColor = colors.find((color) => color.grade === adjustedGrade);
-  
+        const nextColor = colorFamily.findByGrade(adjustedGrade);
+        
         if (!nextColor) {
           break;
         }
         
-        logger(`Comparing color grade ${formatColorName(name, grade)} with ${formatColorName(name, adjustedGrade)}`);
-        ratio = contrastBetween(color.value, nextColor.value);
-        contrast = formatColorName(name, nextColor.grade);
+        logger(`Comparing color grade ${formatColorName(name, grade)} with ${formatColorName(name, adjustedGrade)}`);        
+        contrastResult = contrastResultFactory(color, nextColor, name);
       }
 
-      const contrastResult = new ContrastResult({
-        ratio,
-        base: formatColorName(name, color.grade),
-        contrast,
-      });
-
-      if (grade - adjustedGrade >= 50) {
-        if (!isAACompliant(contrastResult)) {
-          output.push(contrastResult);
-        }
-      } else if (!isAALargeCompliant(contrastResult)) {
+      if (!contrastResult.isCompliant()) {
         output.push(contrastResult);
       }
 
@@ -386,8 +319,6 @@ if (args[SWITCHES.APPLY_LUM]) {
 }
 
 process.exit();
-
-
 
 /**
  *     // do a dump of all the constrasts and report errors

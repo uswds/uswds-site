@@ -256,7 +256,7 @@ const contrastForFamily = (colorFamily) => {
           break;
         }
         
-        logger(`Comparing color grade ${color.toString()} with ${nextColor.toString()}`);        
+        logger(`Comparing color grade ${color.toString()} with ${nextColor.toString()}`); 
         contrastResult = contrastResultFactory(color, nextColor, name);
       }
 
@@ -298,7 +298,7 @@ if (args[SWITCHES.APPLY_LUM]) {
     process.exit();
   }
 
-  console.log(applyLuminence(family));
+  console.log(applyLuminance(family));
 } else if (args[SWITCHES.LUMINANCE]) {
   const family = COLORS[args[SWITCHES.FAMILY]];
 

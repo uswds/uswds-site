@@ -2,6 +2,11 @@
   <span class="grid-col-2">
     <span class="height-4 width-full radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.utility }}"></span>
   </span>
+  {% if color.value_2 %}
+  <span class="grid-col-2">
+    <span style="background-color: {{ color.value_2 }}" class="height-4 width-full radius-sm display-inline-block text-middle margin-right-1"></span>
+  </span>
+  {% endif %}
   <span class="grid-col-2">
     <span class="utility-class">'{{ color.family_token }}'</span>
   </span>

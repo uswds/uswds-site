@@ -1251,51 +1251,61 @@ colors:
         grade_token: '5'
         variant_token: false
         value: '#f7fcf0'
+        value_2: '#edf2e6'
       - utility: green-10
         family_token: 'green'
         grade_token: '10'
         variant_token: false
         value: '#e0ebce'
+        value_2: '#dfeacd'
       - utility: green-20
         family_token: 'green'
         grade_token: '20'
         variant_token: false
         value: '#bcd696'
+        value_2: '#b8d293'
       - utility: green-30
         family_token: 'green'
         grade_token: '30'
         variant_token: false
         value: '#a2bf77'
+        value_2: '#9bb672'
       - utility: green-40
         family_token: 'green'
         grade_token: '40'
         variant_token: false
         value: '#83a352'
+        value_2: '#7d9b4e'
       - utility: green-50
         family_token: 'green'
         grade_token: '50'
         variant_token: false
         value: '#607f35'
+        value_2: '#607f35'
       - utility: green-60
         family_token: 'green'
         grade_token: '60'
         variant_token: false
         value: '#526b27'
+        value_2: '#4c6424'
       - utility: green-70
         family_token: 'green'
         grade_token: '70'
         variant_token: false
         value: '#3c4a29'
+        value_2: '#3c4a29'
       - utility: green-80
         family_token: 'green'
         grade_token: '80'
         variant_token: false
         value: '#293021'
+        value_2: '#293021'
       - utility: green-90
         family_token: 'green'
         grade_token: '90'
         variant_token: false
         value: '#1a1c18'
+        value_2: '#161814'
     green_vivid:
       - utility: green-5v
         family_token: 'green'

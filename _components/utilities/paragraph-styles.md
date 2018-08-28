@@ -14,6 +14,10 @@ subnav:
   href: '#text-align'
 - text: Text indent
   href: '#text-indent'
+- text: Utility mixins
+  href: '#utility-mixins'
+- text: Advanced settings
+  href: '#advanced-settings'
 
 utilities:
 - base:         line-height
@@ -920,6 +924,50 @@ utilities:
     <dd class="output-variable">72px</dd>
 
   </dl>
+</section>
+
+<section id="utility-mixins" class="padding-top-4">
+  <h2 class="margin-y-0">Utility mixins</h2>
+  {% include utilities/utility-mixin-intro.html %}
+
+  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2 margin-top-3">
+    <div class="grid-col-4">Utility</div>
+    <div class="grid-col-4">Mixin</div>
+    <div class="grid-col-4">Example</div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.line-height-<code>family</code>-<code>height</code></div>
+    <div class="grid-col-4">u-line-height(<code>family</code>, <code>height</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-line-height('heading', 1)</span>
+      <span class="display-block margin-top-1">u-line-height('sans', 4)</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.measure-<code>units</code></div>
+    <div class="grid-col-4">u-measure(<code>units</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-measure(5)</span>
+      <span class="display-block margin-top-1">u-measure('none')</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.text-<code>alignment</code></div>
+    <div class="grid-col-4">u-text(<code>alignment</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-text('right')</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.text-indent-<code>units</code></div>
+    <div class="grid-col-4">u-text-indent(<code>units</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-text-indent(-2)</span>
+      <span class="display-block margin-top-1">u-text-indent('neg-2')</span>
+    </div>
+  </div>
+
+  {% include utilities/utility-mixin-using.html %}
 </section>
 
 <section id="advanced-settings" class="padding-top-4">

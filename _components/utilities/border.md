@@ -16,6 +16,10 @@ subnav:
   href: '#utility-border-color'
 - text: Border radius
   href: '#utility-radius'
+- text: Utility mixins
+  href: '#utility-mixins'
+- text: Advanced settings
+  href: '#advanced-settings'
 
 utilities:
 - base:         border

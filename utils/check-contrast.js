@@ -5,11 +5,25 @@ const path = require('path');
 const jsonFormat = require('json-format');
 const minimist = require('minimist');
 const args = minimist(process.argv.slice(2));
+const colors = require('colors');
+
+const debug = (enabled) => {
+  if (enabled) {
+    return (message) => {
+      console.log(message);
+    };
+  }
+
+  return function () {};
+};
+
+let logger;
 
 const SWITCHES = {
   LUMINANCE: 'l',
   CONTRAST: 'c',
   FAMILY: 'f',
+  DEBUG: 'd',
 };
 
 const uswdsTokens = yaml.load(path.join(
@@ -52,6 +66,10 @@ class ContrastResult {
     this.base = base;
     this.contrast = contrast;
   }
+
+  toString() {
+    // format me in an aethetically appealing way
+  }
 }
 
 const COLORS = Object.keys(systemColors)
@@ -78,6 +96,8 @@ const WHITE = '#ffffff';
 const BLACK = '#000000';
 const MIN_CONTRAST_AA = 4.5;
 const MIN_CONTRAST_AA_LARGE = 3;
+// const AA_CONTRAST_DISTANCE = 50;
+// const COLOR_GRADE_INCREMENT = 10;
 
 const formatColorName = (family, grade) => `${family}-${grade}`;
 
@@ -194,7 +214,9 @@ const luminanceForFamily = (colors) => {
 const contrastForFamily = (colorFamily) => {
   const { colors, name } = colorFamily
   const output = [];
-
+  
+  console.log(`\nChecking contrast for color family ${name}.`);
+  
   for (let i = 0; i < colors.length; i++) {
     const color = colors[i];
     const { grade, value } = color;
@@ -210,7 +232,7 @@ const contrastForFamily = (colorFamily) => {
 
     while (adjustedGrade >= 0) {
       if (adjustedGrade === 0) {
-        console.log(`Comparing color grade ${formatColorName(name, grade)} with white.`);
+        logger(`Comparing color grade ${formatColorName(name, grade)} with white.`);
         ratio = contrastBetween(color.value, WHITE);
         contrast = 'white';
       } else {
@@ -220,7 +242,7 @@ const contrastForFamily = (colorFamily) => {
           break;
         }
         
-        console.log(`Comparing color grade ${formatColorName(name, grade)} with ${formatColorName(name, adjustedGrade)}`);
+        logger(`Comparing color grade ${formatColorName(name, grade)} with ${formatColorName(name, adjustedGrade)}`);
         ratio = contrastBetween(color.value, nextColor.value);
         contrast = formatColorName(name, adjustedGrade);
       }
@@ -247,8 +269,8 @@ const contrastForFamily = (colorFamily) => {
 
     while (adjustedGrade <= 100) {
       if (adjustedGrade === 100) {
-        console.log(`Comparing color grade ${formatColorName(name, grade)} with black.`);
-        ratio = contrastBetween(color.value, 'black');
+        logger(`Comparing color grade ${formatColorName(name, grade)} with black.`);
+        ratio = contrastBetween(color.value, BLACK);
         contrast = 'black';
       } else {
         const nextColor = colors.find((color) => color.grade === adjustedGrade);
@@ -257,7 +279,7 @@ const contrastForFamily = (colorFamily) => {
           break;
         }
         
-        console.log(`Comparing color grade ${formatColorName(name, grade)} with ${formatColorName(name, adjustedGrade)}`);
+        logger(`Comparing color grade ${formatColorName(name, grade)} with ${formatColorName(name, adjustedGrade)}`);
         ratio = contrastBetween(color.value, nextColor.value);
         contrast = formatColorName(name, nextColor.grade);
       }
@@ -283,6 +305,25 @@ const contrastForFamily = (colorFamily) => {
   return output;
 }
 
+/**
+ * Helper function that takes a color family, validates contrasts,
+ * and reports any errors
+ * @private
+ * @param {ColorFamily} colorFamily 
+ */
+const reportContrastErrors = (colorFamily) => {
+  const contrastErrors = contrastForFamily(colorFamily);
+
+  if (contrastErrors.length) {
+    console.error(`Errors found in color family ${colorFamily.name}!\n`.red);
+    console.error(jsonFormat(contrastErrors));
+  } else {
+    console.log(`No contrast errors found for color family ${colorFamily.name}!\n`.green);
+  }
+}
+
+logger = debug(args[SWITCHES.DEBUG]);
+
 if (args[SWITCHES.LUMINANCE]) {
   const family = COLORS[args[SWITCHES.FAMILY]];
 
@@ -297,7 +338,20 @@ if (args[SWITCHES.LUMINANCE]) {
   const family = COLORS[args[SWITCHES.FAMILY]];
 
   if (!family) {
-    // do a dump of all the constrasts and report errors
+    Object.keys(COLORS).forEach((familyName) => {
+      const colorFamily = COLORS[familyName];
+
+      reportContrastErrors(colorFamily);
+    });
+  } else {
+    reportContrastErrors(family);
+  }
+
+  process.exit();
+}
+
+/**
+ *     // do a dump of all the constrasts and report errors
     const allContrasts = checkContrast();
     let errorReport = {
       notAALarge: allContrasts.filter(obj => obj.ratio < MIN_CONTRAST_AA_LARGE),
@@ -305,16 +359,4 @@ if (args[SWITCHES.LUMINANCE]) {
     };
 
     fs.writeFileSync('contrast-report.json', jsonFormat(errorReport));
-  } else {
-    const contrastErrors = contrastForFamily(family);
-
-    if (contrastErrors.length) {
-      console.log(`\n\nErrors found in color family ${family.name}!\n`);
-      console.log(jsonFormat(contrastErrors));
-    } else {
-      console.log(`\n\nNo contrast errors found for color family ${family.name}!`);
-    }
-  }
-
-  process.exit();
-}
+ */

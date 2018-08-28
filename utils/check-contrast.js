@@ -35,9 +35,10 @@ const uswdsTokens = yaml.load(path.join(
 const systemColors = uswdsTokens.colors.system;
 
 class Color {
-  constructor({ grade, value }) {
+  constructor({ grade, value, name = null }) {
     this._grade = grade;
     this.value = value;
+    this.name = name;
   }
 
   get grade() {
@@ -49,8 +50,11 @@ class Color {
   }
 
   contrastBetween(color) {
-    console.log(this.value, color.value)
     return chroma.contrast(this.value, color.value);
+  }
+
+  toString() {
+    return formatColorName(this.name, this.grade);
   }
 }
 
@@ -104,8 +108,8 @@ const COLORS = Object.keys(systemColors)
       .filter(color => color.value)
       .reduce((memo, { utility, value }) => {
         const colorMagicNumber = /(\d+)/.exec(utility)[0];
-        
-        return [...memo, new Color({ grade: colorMagicNumber, value })];
+
+        return [...memo, new Color({ grade: colorMagicNumber, value, name: colorName })];
       }, []);
 
     return {
@@ -117,8 +121,8 @@ const COLORS = Object.keys(systemColors)
     };
   }, {});
 
-const WHITE = new Color({ grade: 0, value: '#ffffff' });
-const BLACK = new Color({ grade: 100, value: '#000000' });
+const WHITE = new Color({ grade: 0, value: '#ffffff', name: 'white' });
+const BLACK = new Color({ grade: 100, value: '#000000', name: 'black' });
 const MIN_CONTRAST_AA = 4.5;
 const MIN_CONTRAST_AA_LARGE = 3;
 
@@ -158,7 +162,7 @@ const luminanceForFamily = (family) => {
  * Apply luminence values for gray grades to each matching grade
  * in the supplied color family
  * @param {ColorFamily} family
- *  
+ *
  */
 const applyLuminance = (colorFamily) => {
   const gray = COLORS.gray;
@@ -184,8 +188,8 @@ const applyLuminance = (colorFamily) => {
  * a contrast result
  *
  * @private
- * @param {Color} baseColor 
- * @param {Color} contrastColor 
+ * @param {Color} baseColor
+ * @param {Color} contrastColor
  * @param {String} name the name of the color family
  * @returns new ContrastResult
  */
@@ -200,12 +204,12 @@ const contrastResultFactory = (baseColor, contrastColor, name) =>
 const contrastForFamily = (colorFamily) => {
   const { name } = colorFamily
   const output = [];
-  
+
   console.log(`\nChecking contrast for color family ${name}.`);
-  
+
   for (let i = 0; i < colorFamily.colors.length; i++) {
     const color = colorFamily.colors[i];
-    const { grade, value } = color;
+    const { grade } = color;
     let adjustedGrade = grade;
     let ratio;
     let contrast;
@@ -214,7 +218,7 @@ const contrastForFamily = (colorFamily) => {
     if (grade < 40) {
       continue;
     }
-    
+
     adjustedGrade -= 40;
 
     while (adjustedGrade >= 0) {
@@ -227,8 +231,8 @@ const contrastForFamily = (colorFamily) => {
         if (!nextColor) {
           break;
         }
-        
-        logger(`Comparing color grade ${formatColorName(name, grade)} with ${formatColorName(name, adjustedGrade)}`);
+
+        logger(`Comparing color grade ${color.toString()} with ${nextColor.toString()}`);
         contrastResult = contrastResultFactory(color, nextColor, name);
       }
 
@@ -243,16 +247,16 @@ const contrastForFamily = (colorFamily) => {
 
     while (adjustedGrade <= 100) {
       if (adjustedGrade === 100) {
-        logger(`Comparing color grade ${formatColorName(name, grade)} with black.`);
+        logger(`Comparing color grade ${color.toString()} with black.`);
         contrastResult = contrastResultFactory(color, BLACK, name);
       } else {
         const nextColor = colorFamily.findByGrade(adjustedGrade);
-        
+
         if (!nextColor) {
           break;
         }
-        
-        logger(`Comparing color grade ${formatColorName(name, grade)} with ${formatColorName(name, adjustedGrade)}`);        
+
+        logger(`Comparing color grade ${color.toString()} with ${nextColor.toString()}`);
         contrastResult = contrastResultFactory(color, nextColor, name);
       }
 
@@ -265,13 +269,13 @@ const contrastForFamily = (colorFamily) => {
   }
 
   return output;
-}
+};
 
 /**
  * Helper function that takes a color family, validates contrasts,
  * and reports any errors
  * @private
- * @param {ColorFamily} colorFamily 
+ * @param {ColorFamily} colorFamily
  */
 const reportContrastErrors = (colorFamily) => {
   const contrastErrors = contrastForFamily(colorFamily);
@@ -294,7 +298,7 @@ if (args[SWITCHES.APPLY_LUM]) {
     process.exit();
   }
 
-  console.log(applyLuminence(family));
+  console.log(applyLuminance(family));
 } else if (args[SWITCHES.LUMINANCE]) {
   const family = COLORS[args[SWITCHES.FAMILY]];
 
@@ -325,7 +329,7 @@ process.exit();
     const allContrasts = checkContrast();
     let errorReport = {
       notAALarge: allContrasts.filter(obj => obj.ratio < MIN_CONTRAST_AA_LARGE),
-      notAA: allContrasts.filter(obj => obj.ratio < MIN_CONTRAST_AA), 
+      notAA: allContrasts.filter(obj => obj.ratio < MIN_CONTRAST_AA),
     };
 
     fs.writeFileSync('contrast-report.json', jsonFormat(errorReport));

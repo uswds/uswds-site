@@ -10,6 +10,11 @@ subnav:
   href: '#text-color'
 - text: Background color
   href: '#background-color'
+- text: Utility mixins
+  href: '#utility-mixins'
+- text: Advanced settings
+  href: '#advanced-settings'
+
 utilities:
 - base:         bg
   var:          background-color
@@ -214,6 +219,35 @@ utilities:
       </dd>
     {% endfor %}
   </dl>
+</section>
+
+<section id="utility-mixins" class="padding-top-4">
+  <h2 class="margin-y-0">Utility mixins</h2>
+  {% include utilities/utility-mixin-intro.html %}
+
+  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2 margin-top-3">
+    <div class="grid-col-4">Utility</div>
+    <div class="grid-col-4">Mixin</div>
+    <div class="grid-col-4">Example</div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.text-<code>color</code></div>
+    <div class="grid-col-4">u-text(<code>color</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-text('red-50')</span>
+      <span class="display-block margin-top-1">u-text('secondary-darker')</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.bg-<code>color</code></div>
+    <div class="grid-col-4">u-bg(<code>color</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-bg('indigo-warm-50v')</span>
+      <span class="display-block margin-top-1">u-bg('base-darker')</span>
+    </div>
+  </div>
+
+  {% include utilities/utility-mixin-using.html %}
 </section>
 
 <section id="advanced-settings" class="padding-top-4">

@@ -21,6 +21,7 @@ let logger;
 
 const SWITCHES = {
   LUMINANCE: 'l',
+  APPLY_LUM: 'al',
   CONTRAST: 'c',
   FAMILY: 'f',
   DEBUG: 'd',
@@ -56,7 +57,7 @@ class ColorFamily {
   }
 
   findByGrade(grade) {
-    return this.colors.find((color) => color.grade === String(grade));
+    return this.colors.find((color) => color.grade === grade);
   }
 }
 
@@ -205,10 +206,38 @@ const checkContrast = () => {
  * @returns Array of luminance values for the color values
  *          for each grade in a given color family
  */
-const luminanceForFamily = (colors) => {
-  return colors.map((color) => {
-    return chroma(color.value).luminance();
+const luminanceForFamily = (family) => {
+  return family.colors.map((color) => {
+    return {
+      colorName: formatColorName(family.name, color.grade),
+      relativeLum: chroma(color.value).luminance(),
+    }
   });
+};
+
+/**
+ * Apply luminence values for gray grades to each matching grade
+ * in the supplied color family
+ * @param {ColorFamily} family
+ *  
+ */
+const applyLuminence = (colorFamily) => {
+  const gray = COLORS.gray;
+
+  return gray.colors.reduce((memo, color) => {
+    const targetColor = colorFamily.findByGrade(color.grade);
+
+    if (targetColor) {
+      const nextHex = chroma(targetColor.value)
+        .luminance(chroma(color.value)
+        .luminance())
+        .hex();
+
+      memo = [...memo, { grade: targetColor.grade, value: nextHex }];
+    }
+
+    return memo;
+  },[]);
 };
 
 const contrastForFamily = (colorFamily) => {
@@ -324,16 +353,24 @@ const reportContrastErrors = (colorFamily) => {
 
 logger = debug(args[SWITCHES.DEBUG]);
 
-if (args[SWITCHES.LUMINANCE]) {
+if (args[SWITCHES.APPLY_LUM]) {
   const family = COLORS[args[SWITCHES.FAMILY]];
 
   if (!family) {
-    console.log('Luminance command requires a valid color family name!');
-    process.exit(1);
+    console.log('Command requires a valid color family name to apply luminance to!'.red);
+    process.exit();
   }
 
-  console.log(luminanceForFamily(family.colors));
-  process.exit();
+  console.log(applyLuminence(family));
+} else if (args[SWITCHES.LUMINANCE]) {
+  const family = COLORS[args[SWITCHES.FAMILY]];
+
+  if (!family) {
+    console.log('Luminance command requires a valid color family name!'.red);
+    process.exit();
+  }
+
+  console.log(luminanceForFamily(family));
 } else if (args[SWITCHES.CONTRAST]) {
   const family = COLORS[args[SWITCHES.FAMILY]];
 
@@ -346,9 +383,11 @@ if (args[SWITCHES.LUMINANCE]) {
   } else {
     reportContrastErrors(family);
   }
-
-  process.exit();
 }
+
+process.exit();
+
+
 
 /**
  *     // do a dump of all the constrasts and report errors

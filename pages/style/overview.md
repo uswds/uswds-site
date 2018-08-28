@@ -17,7 +17,7 @@ We recommend building exclusively with elements of the system palettes. Not only
 
 The complete system spacing units palette is available to any USWDS project by default. The system color palette and the system type scale palette can be subsetted into a smaller theme palette using the project theme settings in `_uswds-project-settings.scss`. Whether you use items from the system palettes or the project theme palettes, you can access these values in your Sass using palette-specific variables and functions. The following is an overview of the functions and variables available — see the individual style sections for more detail.
 
-<div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
+<div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2">
   <div class="grid-col-2">Palette item</div>
   <div class="grid-col-3">Setting</div>
   <div class="grid-col-3">Variable</div>

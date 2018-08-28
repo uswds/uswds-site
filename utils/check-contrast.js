@@ -221,7 +221,7 @@ const luminanceForFamily = (family) => {
  * @param {ColorFamily} family
  *  
  */
-const applyLuminence = (colorFamily) => {
+const applyLuminance = (colorFamily) => {
   const gray = COLORS.gray;
 
   return gray.colors.reduce((memo, color) => {

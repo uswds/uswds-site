@@ -536,52 +536,62 @@ colors:
         family_token: 'red'
         grade_token: '5'
         variant_token: false
-        value: '#fcf5f5'
+        value:      '#f5efef'
+        value_orig: '#fcf5f5'
       - utility: red-10
         family_token: 'red'
         grade_token: '10'
         variant_token: false
-        value: '#f7ddda'
+        value:      '#f8e1de'
+        value_orig: '#f7ddda'
       - utility: red-20
         family_token: 'red'
         grade_token: '20'
         variant_token: false
-        value: '#f7b7ad'
+        value:      '#f7bbb1'
+        value_orig: '#f7b7ad'
       - utility: red-30
         family_token: 'red'
         grade_token: '30'
         variant_token: false
-        value: '#f28f88'
+        value:      '#f2938c'
+        value_orig: '#f28f88'
       - utility: red-40
         family_token: 'red'
         grade_token: '40'
         variant_token: false
-        value: '#ed6b61'
+        value:      '#e9695f'
+        value_orig: '#ed6b61'
       - utility: red-50
         family_token: 'red'
         grade_token: '50'
         variant_token: false
-        value: '#d83731'
+        value:      '#d83933'
+        value_orig: '#d83731'
       - utility: red-60
         family_token: 'red'
         grade_token: '60'
         variant_token: false
-        value: '#ab3a3a'
+        value:      '#a23737'
+        value_orig: '#ab3a3a'
       - utility: red-70
         family_token: 'red'
         grade_token: '70'
         variant_token: false
-        value: '#6e312f'
+        value:      '#6f3331'
+        value_orig: '#6e312f'
       - utility: red-80
         family_token: 'red'
         grade_token: '80'
         variant_token: false
-        value: '#3b2523'
+        value:      '#3e2927'
+        value_orig: '#3b2523'
       - utility: red-90
         family_token: 'red'
         grade_token: '90'
         variant_token: false
-        value: '#211b1b'
+        value:      '#1b1616'
+        value_orig: '#211b1b'
     red_vivid:
       - utility: red-5v
         family_token: 'red'
@@ -592,50 +602,50 @@ colors:
         family_token: 'red'
         grade_token: '10'
         variant_token: 'vivid'
-        value: '#fccec7'
-        value_2: '#fde0db'
+        value:      '#fde0db'
+        value_orig: '#fccec7'
       - utility: red-20v
         family_token: 'red'
         grade_token: '20'
         variant_token: 'vivid'
-        value: '#fda99c'
-        value_2: '#fdb8ae'
+        value:      '#fdb8ae'
+        value_orig: '#fda99c'
       - utility: red-30v
         family_token: 'red'
         grade_token: '30'
         variant_token: 'vivid'
-        value: '#ff806c'
-        value_2: '#ff8d7b'
+        value:      '#ff8d7b'
+        value_orig: '#ff806c'
       - utility: red-40v
         family_token: 'red'
         grade_token: '40'
         variant_token: 'vivid'
-        value: '#ff5c48'
-        value_2: '#fb5a47'
+        value:      '#fb5a47'
+        value_orig: '#ff5c48'
       - utility: red-50v
         family_token: 'red'
         grade_token: '50'
         variant_token: 'vivid'
-        value: '#e82207'
-        value_2: '#e52207'
+        value:      '#e52207'
+        value_orig: '#e82207'
       - utility: red-60v
         family_token: 'red'
         grade_token: '60'
         variant_token: 'vivid'
-        value: '#c31f0a'
-        value_2: '#b51d09'
+        value:      '#b51d09'
+        value_orig: '#c31f0a'
       - utility: red-70v
         family_token: 'red'
         grade_token: '70'
         variant_token: 'vivid'
-        value: '#9c1503'
-        value_2: '#8b1303'
+        value:      '#8b1303'
+        value_orig: '#9c1503'
       - utility: red-80v
         family_token: 'red'
         grade_token: '80'
         variant_token: 'vivid'
-        value: '#631212'
-        value_2: '#5c1111'
+        value:      '#5c1111'
+        value_orig: '#631212'
       - utility: red-90v
         family_token: 'red'
         grade_token: '90'
@@ -646,52 +656,62 @@ colors:
         family_token: 'red-warm'
         grade_token: '5'
         variant_token: false
-        value: '#faf7f5'
+        value:      '#f2f0ee'
+        value_orig: '#faf7f5'
       - utility: red-warm-10
         family_token: 'red-warm'
         grade_token: '10'
         variant_token: false
-        value: '#f2ded5'
+        value:      '#f4e3db'
+        value_orig: '#f2ded5'
       - utility: red-warm-20
         family_token: 'red-warm'
         grade_token: '20'
         variant_token: false
-        value: '#ebbda2'
+        value:      '#ecc0a7'
+        value_orig: '#ebbda2'
       - utility: red-warm-30
         family_token: 'red-warm'
         grade_token: '30'
         variant_token: false
-        value: '#db9e7f'
+        value:      '#dca081'
+        value_orig: '#db9e7f'
       - utility: red-warm-40
         family_token: 'red-warm'
         grade_token: '40'
         variant_token: false
-        value: '#d67c58'
+        value:      '#d27a56'
+        value_orig: '#d67c58'
       - utility: red-warm-50
         family_token: 'red-warm'
         grade_token: '50'
         variant_token: false
-        value: '#c3502a'
+        value:      '#c3512c'
+        value_orig: '#c3502a'
       - utility: red-warm-60
         family_token: 'red-warm'
         grade_token: '60'
         variant_token: false
-        value: '#805039'
+        value:      '#805039'
+        value_orig: '#805039'
       - utility: red-warm-70
         family_token: 'red-warm'
         grade_token: '70'
         variant_token: false
-        value: '#4f3f33'
+        value:      '#524236'
+        value_orig: '#4f3f33'
       - utility: red-warm-80
         family_token: 'red-warm'
         grade_token: '80'
         variant_token: false
-        value: '#302a26'
+        value:      '#332d29'
+        value_orig: '#302a26'
       - utility: red-warm-90
         family_token: 'red-warm'
         grade_token: '90'
         variant_token: false
-        value: '#1f1c18'
+        value:      '#1f1c18'
+        value_orig: '#191713'
     red_warm_vivid:
       - utility: red-warm-5v
         family_token: 'red-warm'
@@ -707,22 +727,26 @@ colors:
         family_token: 'red-warm'
         grade_token: '20'
         variant_token: 'vivid'
-        value: '#eaa076'
+        value:      '#f1bfa2'
+        value_orig: '#eaa076'
       - utility: red-warm-30v
         family_token: 'red-warm'
         grade_token: '30'
         variant_token: 'vivid'
-        value: '#e67549'
+        value:      '#ec9878'
+        value_orig: '#e67549'
       - utility: red-warm-40v
         family_token: 'red-warm'
         grade_token: '40'
         variant_token: 'vivid'
-        value: '#ee601d'
+        value:      '#ef6828'
+        value_orig: '#ee601d'
       - utility: red-warm-50v
         family_token: 'red-warm'
         grade_token: '50'
         variant_token: 'vivid'
-        value: '#d93f04'
+        value:      '#d63e04'
+        value_orig: '#d93f04'
       - utility: red-warm-60v
         family_token: 'red-warm'
         grade_token: '60'
@@ -748,52 +772,62 @@ colors:
         family_token: 'orange-warm'
         grade_token: '5'
         variant_token: false
-        value: '#fcf6f2'
+        value:      '#f5efeb'
+        value_orig: '#fcf6f2'
       - utility: orange-warm-10
         family_token: 'orange-warm'
         grade_token: '10'
         variant_token: false
-        value: '#f7e1d5'
+        value:      '#f7e2d6'
+        value_orig: '#f7e1d5'
       - utility: orange-warm-20
         family_token: 'orange-warm'
         grade_token: '20'
         variant_token: false
-        value: '#f7b99e'
+        value:      '#f7bca2'
+        value_orig: '#f7b99e'
       - utility: orange-warm-30
         family_token: 'orange-warm'
         grade_token: '30'
         variant_token: false
-        value: '#f5976e'
+        value:      '#f3966d'
+        value_orig: '#f5976e'
       - utility: orange-warm-40
         family_token: 'orange-warm'
         grade_token: '40'
         variant_token: false
-        value: '#e87543'
+        value:      '#e17141'
+        value_orig: '#e87543'
       - utility: orange-warm-50
         family_token: 'orange-warm'
         grade_token: '50'
         variant_token: false
-        value: '#be5727'
+        value:      '#bd5727'
+        value_orig: '#be5727'
       - utility: orange-warm-60
         family_token: 'orange-warm'
         grade_token: '60'
         variant_token: false
-        value: '#944835'
+        value:      '#914734'
+        value_orig: '#944835'
       - utility: orange-warm-70
         family_token: 'orange-warm'
         grade_token: '70'
         variant_token: false
-        value: '#61382f'
+        value:      '#633a32'
+        value_orig: '#61382f'
       - utility: orange-warm-80
         family_token: 'orange-warm'
         grade_token: '80'
         variant_token: false
-        value: '#3b2723'
+        value:      '#3d2925'
+        value_orig: '#3b2723'
       - utility: orange-warm-90
         family_token: 'orange-warm'
         grade_token: '90'
         variant_token: false
-        value: '#211a19'
+        value:      '#1c1615'
+        value_orig: '#211a19'
     orange_warm_vivid:
       - utility: orange-warm-5v
         family_token: 'orange-warm'
@@ -809,22 +843,26 @@ colors:
         family_token: 'orange-warm'
         grade_token: '20'
         variant_token: 'vivid'
-        value: '#faad96'
+        value:      '#fbbaa7'
+        value_orig: '#faad96'
       - utility: orange-warm-30v
         family_token: 'orange-warm'
         grade_token: '30'
         variant_token: 'vivid'
-        value: '#fc835c'
+        value:      '#fc906d'
+        value_orig: '#fc835c'
       - utility: orange-warm-40v
         family_token: 'orange-warm'
         grade_token: '40'
         variant_token: 'vivid'
-        value: '#ff5201'
+        value:      '#ff580a'
+        value_orig: '#ff5201'
       - utility: orange-warm-50v
         family_token: 'orange-warm'
         grade_token: '50'
         variant_token: 'vivid'
-        value: '#d24200'
+        value:      '#d24302'
+        value_orig: '#d24200'
       - utility: orange-warm-60v
         family_token: 'orange-warm'
         grade_token: '60'
@@ -850,58 +888,69 @@ colors:
         family_token: 'orange'
         grade_token: '5'
         variant_token: false
-        value: '#fffbf7'
+        value:      '#f3efec'
+        value_orig: '#fffbf7'
       - utility: orange-10
         family_token: 'orange'
         grade_token: '10'
         variant_token: false
-        value: '#fce2c5'
+        value:      '#fce2c5'
+        value_orig: '#fce2c5'
       - utility: orange-20
         family_token: 'orange'
         grade_token: '20'
         variant_token: false
-        value: '#fabd87'
+        value:      '#fabd87'
+        value_orig: '#fabd87'
       - utility: orange-30
         family_token: 'orange'
         grade_token: '30'
         variant_token: false
-        value: '#ed9c5a'
+        value:      '#eb9b59'
+        value_orig: '#ed9c5a'
       - utility: orange-40
         family_token: 'orange'
         grade_token: '40'
         variant_token: false
-        value: '#eb8028'
+        value:      '#db7725'
+        value_orig: '#eb8028'
       - utility: orange-50
         family_token: 'orange'
         grade_token: '50'
         variant_token: false
-        value: '#a56931'
+        value:      '#a36830'
+        value_orig: '#a56931'
       - utility: orange-60
         family_token: 'orange'
         grade_token: '60'
         variant_token: false
-        value: '#73563e'
+        value:      '#73563e'
+        value_orig: '#73563e'
       - utility: orange-70
         family_token: 'orange'
         grade_token: '70'
         variant_token: false
-        value: '#4f3f33'
+        value:      '#524236'
+        value_orig: '#4f3f33'
       - utility: orange-80
         family_token: 'orange'
         grade_token: '80'
         variant_token: false
-        value: '#302a24'
+        value:      '#332d27'
+        value_orig: '#302a24'
       - utility: orange-90
         family_token: 'orange'
         grade_token: '90'
         variant_token: false
-        value: '#211b18'
+        value:      '#1b1614'
+        value_orig: '#211b18'
     orange_vivid:
       - utility: orange-5v
         family_token: 'orange'
         grade_token: '5'
         variant_token: 'vivid'
-        value: '#ffebd5'
+        value:      '#ffedda'
+        value_orig: '#ffebd5'
       - utility: orange-10v
         family_token: 'orange'
         grade_token: '10'
@@ -911,22 +960,26 @@ colors:
         family_token: 'orange'
         grade_token: '20'
         variant_token: 'vivid'
-        value: '#ffba75'
+        value:      '#ffbc78'
+        value_orig: '#ffba75'
       - utility: orange-30v
         family_token: 'orange'
         grade_token: '30'
         variant_token: 'vivid'
-        value: '#ff9742'
+        value:      '#fa9441'
+        value_orig: '#ff9742'
       - utility: orange-40v
         family_token: 'orange'
         grade_token: '40'
         variant_token: 'vivid'
-        value: '#ff7b0f'
+        value:      '#e66f0e'
+        value_orig: '#ff7b0f'
       - utility: orange-50v
         family_token: 'orange'
         grade_token: '50'
         variant_token: 'vivid'
-        value: '#c25700'
+        value:      '#c05600'
+        value_orig: '#c25700'
       - utility: orange-60v
         family_token: 'orange'
         grade_token: '60'
@@ -952,83 +1005,99 @@ colors:
         family_token: 'gold'
         grade_token: '5'
         variant_token: false
-        value: '#faf5eb'
+        value:      '#f5f0e6'
+        value_orig: '#faf5eb'
       - utility: gold-10
         family_token: 'gold'
         grade_token: '10'
         variant_token: false
-        value: '#f2e6ce'
+        value:      '#f1e5cd'
+        value_orig: '#f2e6ce'
       - utility: gold-20
         family_token: 'gold'
         grade_token: '20'
         variant_token: false
-        value: '#dec699'
+        value:      '#dec69a'
+        value_orig: '#dec699'
       - utility: gold-30
         family_token: 'gold'
         grade_token: '30'
         variant_token: false
-        value: '#c7a97b'
+        value:      '#c7a97b'
+        value_orig: '#c7a97b'
       - utility: gold-40
         family_token: 'gold'
         grade_token: '40'
         variant_token: false
-        value: '#ad8b65'
+        value:      '#ad8b65'
+        value_orig: '#ad8b65'
       - utility: gold-50
         family_token: 'gold'
         grade_token: '50'
         variant_token: false
-        value: '#8d6f4e'
+        value:      '#8e704f'
+        value_orig: '#8d6f4e'
       - utility: gold-60
         family_token: 'gold'
         grade_token: '60'
         variant_token: false
-        value: '#6b5947'
+        value:      '#6b5947'
+        value_orig: '#6b5947'
       - utility: gold-70
         family_token: 'gold'
         grade_token: '70'
         variant_token: false
-        value: '#4a4034'
+        value:      '#4d4438'
+        value_orig: '#4a4034'
       - utility: gold-80
         family_token: 'gold'
         grade_token: '80'
         variant_token: false
-        value: '#302b24'
+        value:      '#322d26'
+        value_orig: '#302b24'
       - utility: gold-90
         family_token: 'gold'
         grade_token: '90'
         variant_token: false
-        value: '#1f1c19'
+        value:      '#191714'
+        value_orig: '#1f1c19'
     gold_vivid:
       - utility: gold-5v
         family_token: 'gold'
         grade_token: '5'
         variant_token: 'vivid'
-        value: '#fff4d4'
+        value:      '#fbf0d0'
+        value_orig: '#fff4d4'
       - utility: gold-10v
         family_token: 'gold'
         grade_token: '10'
         variant_token: 'vivid'
-        value: '#ffcb52'
+        value:      '#ffe3a3'
+        value_orig: '#ffcb52'
       - utility: gold-20v
         family_token: 'gold'
         grade_token: '20'
         variant_token: 'vivid'
-        value: '#faaf00'
+        value:      '#fbc036'
+        value_orig: '#faaf00'
       - utility: gold-30v
         family_token: 'gold'
         grade_token: '30'
         variant_token: 'vivid'
-        value: '#e6a100'
+        value:      '#e5a000'
+        value_orig: '#e6a100'
       - utility: gold-40v
         family_token: 'gold'
         grade_token: '40'
         variant_token: 'vivid'
-        value: '#c98a0c'
+        value:      '#c2850c'
+        value_orig: '#c98a0c'
       - utility: gold-50v
         family_token: 'gold'
         grade_token: '50'
         variant_token: 'vivid'
-        value: '#946f38'
+        value:      '#936f38'
+        value_orig: '#946f38'
       - utility: gold-60v
         family_token: 'gold'
         grade_token: '60'
@@ -1054,52 +1123,62 @@ colors:
         family_token: 'yellow'
         grade_token: '5'
         variant_token: false
-        value: '#faf7ed'
+        value:      '#f3f0e6'
+        value_orig: '#faf7ed'
       - utility: yellow-10
         family_token: 'yellow'
         grade_token: '10'
         variant_token: false
-        value: '#f7e8b0'
+        value:      '#f5e6af'
+        value_orig: '#f7e8b0'
       - utility: yellow-20
         family_token: 'yellow'
         grade_token: '20'
         variant_token: false
-        value: '#f0d04f'
+        value:      '#e6c74c'
+        value_orig: '#f0d04f'
       - utility: yellow-30
         family_token: 'yellow'
         grade_token: '30'
         variant_token: false
-        value: '#cfb04a'
+        value:      '#c9ab48'
+        value_orig: '#cfb04a'
       - utility: yellow-40
         family_token: 'yellow'
         grade_token: '40'
         variant_token: false
-        value: '#ab9149'
+        value:      '#a88f48'
+        value_orig: '#ab9149'
       - utility: yellow-50
         family_token: 'yellow'
         grade_token: '50'
         variant_token: false
-        value: '#8a7237'
+        value:      '#8a7237'
+        value_orig: '#8a7237'
       - utility: yellow-60
         family_token: 'yellow'
         grade_token: '60'
         variant_token: false
-        value: '#6b5a39'
+        value:      '#6b5a39'
+        value_orig: '#6b5a39'
       - utility: yellow-70
         family_token: 'yellow'
         grade_token: '70'
         variant_token: false
-        value: '#4d402f'
+        value:      '#504332'
+        value_orig: '#4d402f'
       - utility: yellow-80
         family_token: 'yellow'
         grade_token: '80'
         variant_token: false
-        value: '#302a24'
+        value:      '#332d27'
+        value_orig: '#302a24'
       - utility: yellow-90
         family_token: 'yellow'
         grade_token: '90'
         variant_token: false
-        value: '#1f1b18'
+        value:      '#1a1614'
+        value_orig: '#1f1b18'
     yellow_vivid:
       - utility: yellow-5v
         family_token: 'yellow'
@@ -1110,12 +1189,14 @@ colors:
         family_token: 'yellow'
         grade_token: '10'
         variant_token: 'vivid'
-        value: '#fdd430'
+        value:      '#fee685'
+        value_orig: '#fdd430'
       - utility: yellow-20v
         family_token: 'yellow'
         grade_token: '20'
         variant_token: 'vivid'
-        value: '#edc730'
+        value:      '#ecc630'
+        value_orig: '#edc730'
       - utility: yellow-30v
         family_token: 'yellow'
         grade_token: '30'
@@ -1156,83 +1237,99 @@ colors:
         family_token: 'green-warm'
         grade_token: '5'
         variant_token: false
-        value: '#f9faed'
+        value:      '#f0f1e5'
+        value_orig: '#f9faed'
       - utility: green-warm-10
         family_token: 'green-warm'
         grade_token: '10'
         variant_token: false
-        value: '#eaedb9'
+        value:      '#e7eab7'
+        value_orig: '#eaedb9'
       - utility: green-warm-20
         family_token: 'green-warm'
         grade_token: '20'
         variant_token: false
-        value: '#ced47f'
+        value:      '#c9cf7c'
+        value_orig: '#ced47f'
       - utility: green-warm-30
         family_token: 'green-warm'
         grade_token: '30'
         variant_token: false
-        value: '#aebd5b'
+        value:      '#a6b557'
+        value_orig: '#aebd5b'
       - utility: green-warm-40
         family_token: 'green-warm'
         grade_token: '40'
         variant_token: false
-        value: '#93a150'
+        value:      '#8a984b'
+        value_orig: '#93a150'
       - utility: green-warm-50
         family_token: 'green-warm'
         grade_token: '50'
         variant_token: false
-        value: '#717c42'
+        value:      '#6f7a41'
+        value_orig: '#717c42'
       - utility: green-warm-60
         family_token: 'green-warm'
         grade_token: '60'
         variant_token: false
-        value: '#5e633a'
+        value:      '#5a5f38'
+        value_orig: '#5e633a'
       - utility: green-warm-70
         family_token: 'green-warm'
         grade_token: '70'
         variant_token: false
-        value: '#43452d'
+        value:      '#45472f'
+        value_orig: '#43452d'
       - utility: green-warm-80
         family_token: 'green-warm'
         grade_token: '80'
         variant_token: false
-        value: '#2c2e20'
+        value:      '#2d2f21'
+        value_orig: '#2c2e20'
       - utility: green-warm-90
         family_token: 'green-warm'
         grade_token: '90'
         variant_token: false
-        value: '#1c1c16'
+        value:      '#171712'
+        value_orig: '#1c1c16'
     green_warm_vivid:
       - utility: green-warm-5v
         family_token: 'green-warm'
         grade_token: '5'
         variant_token: 'vivid'
-        value: '#f3f8a7'
+        value:      '#f1f6a5'
+        value_orig: '#f3f8a7'
       - utility: green-warm-10v
         family_token: 'green-warm'
         grade_token: '10'
         variant_token: 'vivid'
-        value: '#e6f50f'
+        value:      '#e2f10f'
+        value_orig: '#e6f50f'
       - utility: green-warm-20v
         family_token: 'green-warm'
         grade_token: '20'
         variant_token: 'vivid'
-        value: '#cedc0a'
+        value:      '#c5d30a'
+        value_orig: '#cedc0a'
       - utility: green-warm-30v
         family_token: 'green-warm'
         grade_token: '30'
         variant_token: 'vivid'
-        value: '#a9bd2d'
+        value:      '#a3b72c'
+        value_orig: '#a9bd2d'
       - utility: green-warm-40v
         family_token: 'green-warm'
         grade_token: '40'
         variant_token: 'vivid'
-        value: '#7f9e1d'
+        value:      '#7e9c1d'
+        value_orig: '#7f9e1d'
       - utility: green-warm-50v
         family_token: 'green-warm'
         grade_token: '50'
         variant_token: 'vivid'
-        value: '#6b7e00'
+        value:      '#6a7d00'
+        value_orig: '#6b7e00'
       - utility: green-warm-60v
         family_token: 'green-warm'
         grade_token: '60'
@@ -1258,93 +1355,109 @@ colors:
         family_token: 'green'
         grade_token: '5'
         variant_token: false
-        value: '#f7fcf0'
+        value:      '#edf2e6'
+        value_orig: '#f7fcf0'
         value_2: '#edf2e6'
       - utility: green-10
         family_token: 'green'
         grade_token: '10'
         variant_token: false
-        value: '#e0ebce'
+        value:      '#dfeacd'
+        value_orig: '#e0ebce'
         value_2: '#dfeacd'
       - utility: green-20
         family_token: 'green'
         grade_token: '20'
         variant_token: false
-        value: '#bcd696'
+        value:      '#b8d293'
+        value_orig: '#bcd696'
         value_2: '#b8d293'
       - utility: green-30
         family_token: 'green'
         grade_token: '30'
         variant_token: false
-        value: '#a2bf77'
+        value:      '#9bb672'
+        value_orig: '#a2bf77'
         value_2: '#9bb672'
       - utility: green-40
         family_token: 'green'
         grade_token: '40'
         variant_token: false
-        value: '#83a352'
+        value:      '#7d9b4e'
+        value_orig: '#83a352'
         value_2: '#7d9b4e'
       - utility: green-50
         family_token: 'green'
         grade_token: '50'
         variant_token: false
-        value: '#607f35'
+        value:      '#607f35'
+        value_orig: '#607f35'
         value_2: '#607f35'
       - utility: green-60
         family_token: 'green'
         grade_token: '60'
         variant_token: false
-        value: '#526b27'
+        value:      '#4c6424'
+        value_orig: '#526b27'
         value_2: '#4c6424'
       - utility: green-70
         family_token: 'green'
         grade_token: '70'
         variant_token: false
-        value: '#3c4a29'
+        value:      '#3c4a29'
+        value_orig: '#3c4a29'
         value_2: '#3c4a29'
       - utility: green-80
         family_token: 'green'
         grade_token: '80'
         variant_token: false
-        value: '#293021'
+        value:      '#293021'
+        value_orig: '#293021'
         value_2: '#293021'
       - utility: green-90
         family_token: 'green'
         grade_token: '90'
         variant_token: false
-        value: '#1a1c18'
+        value:      '#161814'
+        value_orig: '#1a1c18'
         value_2: '#161814'
     green_vivid:
       - utility: green-5v
         family_token: 'green'
         grade_token: '5'
         variant_token: 'vivid'
-        value: '#d7f4bd'
+        value:      '#e2f7cf'
+        value_orig: '#d7f4bd'
       - utility: green-10v
         family_token: 'green'
         grade_token: '10'
         variant_token: 'vivid'
-        value: '#b4e876'
+        value:      '#d0f1aa'
+        value_orig: '#b4e876'
       - utility: green-20v
         family_token: 'green'
         grade_token: '20'
         variant_token: 'vivid'
-        value: '#93cc2e'
+        value:      '#acd85d'
+        value_orig: '#93cc2e'
       - utility: green-30v
         family_token: 'green'
         grade_token: '30'
         variant_token: 'vivid'
-        value: '#81b532'
+        value:      '#8cbc44'
+        value_orig: '#81b532'
       - utility: green-40v
         family_token: 'green'
         grade_token: '40'
         variant_token: 'vivid'
-        value: '#73a22b'
+        value:      '#719f2a'
+        value_orig: '#73a22b'
       - utility: green-50v
         family_token: 'green'
         grade_token: '50'
         variant_token: 'vivid'
-        value: '#538200'
+        value:      '#538200'
+        value_orig: '#538200'
       - utility: green-60v
         family_token: 'green'
         grade_token: '60'
@@ -1370,83 +1483,99 @@ colors:
         family_token: 'green-cool'
         grade_token: '5'
         variant_token: false
-        value: '#e8fae6'
+        value:      '#e3f5e1'
+        value_orig: '#e8fae6'
       - utility: green-cool-10
         family_token: 'green-cool'
         grade_token: '10'
         variant_token: false
-        value: '#d0f7cd'
+        value:      '#caf0c7'
+        value_orig: '#d0f7cd'
       - utility: green-cool-20
         family_token: 'green-cool'
         grade_token: '20'
         variant_token: false
-        value: '#a4e3a1'
+        value:      '#9cd899'
+        value_orig: '#a4e3a1'
       - utility: green-cool-30
         family_token: 'green-cool'
         grade_token: '30'
         variant_token: false
-        value: '#80cc7e'
+        value:      '#77bd75'
+        value_orig: '#80cc7e'
       - utility: green-cool-40
         family_token: 'green-cool'
         grade_token: '40'
         variant_token: false
-        value: '#5db85c'
+        value:      '#52a251'
+        value_orig: '#5db85c'
       - utility: green-cool-50
         family_token: 'green-cool'
         grade_token: '50'
         variant_token: false
-        value: '#3d841f'
+        value:      '#3e8520'
+        value_orig: '#3d841f'
       - utility: green-cool-60
         family_token: 'green-cool'
         grade_token: '60'
         variant_token: false
-        value: '#4d6e37'
+        value:      '#466432'
+        value_orig: '#4d6e37'
       - utility: green-cool-70
         family_token: 'green-cool'
         grade_token: '70'
         variant_token: false
-        value: '#384d2a'
+        value:      '#364b29'
+        value_orig: '#384d2a'
       - utility: green-cool-80
         family_token: 'green-cool'
         grade_token: '80'
         variant_token: false
-        value: '#272e22'
+        value:      '#293024'
+        value_orig: '#272e22'
       - utility: green-cool-90
         family_token: 'green-cool'
         grade_token: '90'
         variant_token: false
-        value: '#1a1f1a'
+        value:      '#141814'
+        value_orig: '#1a1f1a'
     green_cool_vivid:
       - utility: green-cool-5v
         family_token: 'green-cool'
         grade_token: '5'
         variant_token: 'vivid'
-        value: '#caf4c7'
+        value:      '#dcf8da'
+        value_orig: '#caf4c7'
       - utility: green-cool-10v
         family_token: 'green-cool'
         grade_token: '10'
         variant_token: 'vivid'
-        value: '#91e48b'
+        value:      '#c7f1c4'
+        value_orig: '#91e48b'
       - utility: green-cool-20v
         family_token: 'green-cool'
         grade_token: '20'
         variant_token: 'vivid'
-        value: '#61cf59'
+        value:      '#8cdc86'
+        value_orig: '#61cf59'
       - utility: green-cool-30v
         family_token: 'green-cool'
         grade_token: '30'
         variant_token: 'vivid'
-        value: '#16c20a'
+        value:      '#2cc821'
+        value_orig: '#16c20a'
       - utility: green-cool-40v
         family_token: 'green-cool'
         grade_token: '40'
         variant_token: 'vivid'
-        value: '#0caf00'
+        value:      '#0ca900'
+        value_orig: '#0caf00'
       - utility: green-cool-50v
         family_token: 'green-cool'
         grade_token: '50'
         variant_token: 'vivid'
-        value: '#178800'
+        value:      '#178800'
+        value_orig: '#178800'
       - utility: green-cool-60v
         family_token: 'green-cool'
         grade_token: '60'
@@ -1472,73 +1601,87 @@ colors:
         family_token: 'mint'
         grade_token: '5'
         variant_token: false
-        value: '#cafcec'
+        value:      '#c9fbeb'
+        value_orig: '#cafcec'
       - utility: mint-10
         family_token: 'mint'
         grade_token: '10'
         variant_token: false
-        value: '#79f7cd'
+        value:      '#97f9d8'
+        value_orig: '#79f7cd'
       - utility: mint-20
         family_token: 'mint'
         grade_token: '20'
         variant_token: false
-        value: '#49e3b0'
+        value:      '#48e1af'
+        value_orig: '#49e3b0'
       - utility: mint-30
         family_token: 'mint'
         grade_token: '30'
         variant_token: false
-        value: '#4ac79d'
+        value:      '#48c198'
+        value_orig: '#4ac79d'
       - utility: mint-40
         family_token: 'mint'
         grade_token: '40'
         variant_token: false
-        value: '#36a882'
+        value:      '#34a37e'
+        value_orig: '#36a882'
       - utility: mint-50
         family_token: 'mint'
         grade_token: '50'
         variant_token: false
-        value: '#1e8461'
+        value:      '#1f8462'
+        value_orig: '#1e8461'
       - utility: mint-60
         family_token: 'mint'
         grade_token: '60'
         variant_token: false
-        value: '#266644'
+        value:      '#286846'
+        value_orig: '#266644'
       - utility: mint-70
         family_token: 'mint'
         grade_token: '70'
         variant_token: false
-        value: '#225237'
+        value:      '#204e34'
+        value_orig: '#225237'
       - utility: mint-80
         family_token: 'mint'
         grade_token: '80'
         variant_token: false
-        value: '#1d3b29'
+        value:      '#193324'
+        value_orig: '#1d3b29'
       - utility: mint-90
         family_token: 'mint'
         grade_token: '90'
         variant_token: false
-        value: '#1d3b29'
+        value:      '#0d1a12'
+        value_orig: '#1d3b29'
     mint_vivid:
       - utility: mint-5v
         family_token: 'mint'
         grade_token: '5'
         variant_token: 'vivid'
-        value: '#befde9'
+        value:      '#befde9'
+        value_orig: '#befde9'
       - utility: mint-10v
         family_token: 'mint'
         grade_token: '10'
         variant_token: 'vivid'
-        value: '#30f8b5'
+        value:      '#89fbd5'
+        value_orig: '#30f8b5'
       - utility: mint-20v
         family_token: 'mint'
         grade_token: '20'
         variant_token: 'vivid'
-        value: '#06ec9f'
+        value:      '#06e59a'
+        value_orig: '#06ec9f'
       - utility: mint-30v
         family_token: 'mint'
         grade_token: '30'
         variant_token: 'vivid'
-        value: '#04c786'
+        value:      '#04c585'
+        value_orig: '#04c786'
       - utility: mint-40v
         family_token: 'mint'
         grade_token: '40'
@@ -1553,7 +1696,8 @@ colors:
         family_token: 'mint'
         grade_token: '60'
         variant_token: 'vivid'
-        value: '#16754f'
+        value:      '#146947'
+        value_orig: '#16754f'
       - utility: mint-70v
         family_token: 'mint'
         grade_token: '70'
@@ -1574,78 +1718,93 @@ colors:
         family_token: 'mint-cool'
         grade_token: '5'
         variant_token: false
-        value: '#f2fffe'
+        value:      '#e6f3f2'
+        value_orig: '#f2fffe'
       - utility: mint-cool-10
         family_token: 'mint-cool'
         grade_token: '10'
         variant_token: false
-        value: '#c7f2ef'
+        value:      '#c4eeeb'
+        value_orig: '#c7f2ef'
       - utility: mint-cool-20
         family_token: 'mint-cool'
         grade_token: '20'
         variant_token: false
-        value: '#a2ded9'
+        value:      '#9bd4cf'
+        value_orig: '#a2ded9'
       - utility: mint-cool-30
         family_token: 'mint-cool'
         grade_token: '30'
         variant_token: false
-        value: '#77c7c0'
+        value:      '#6fbab3'
+        value_orig: '#77c7c0'
       - utility: mint-cool-40
         family_token: 'mint-cool'
         grade_token: '40'
         variant_token: false
-        value: '#57ada8'
+        value:      '#4f9e99'
+        value_orig: '#57ada8'
       - utility: mint-cool-50
         family_token: 'mint-cool'
         grade_token: '50'
         variant_token: false
-        value: '#21827f'
+        value:      '#21827f'
+        value_orig: '#21827f'
       - utility: mint-cool-60
         family_token: 'mint-cool'
         grade_token: '60'
         variant_token: false
-        value: '#3b6b69'
+        value:      '#376462'
+        value_orig: '#3b6b69'
       - utility: mint-cool-70
         family_token: 'mint-cool'
         grade_token: '70'
         variant_token: false
-        value: '#2b4d47'
+        value:      '#2a4b45'
+        value_orig: '#2b4d47'
       - utility: mint-cool-80
         family_token: 'mint-cool'
         grade_token: '80'
         variant_token: false
-        value: '#1f3030'
+        value:      '#203131'
+        value_orig: '#1f3030'
       - utility: mint-cool-90
         family_token: 'mint-cool'
         grade_token: '90'
         variant_token: false
-        value: '#151f1f'
+        value:      '#111818'
+        value_orig: '#151f1f'
     mint_cool_vivid:
       - utility: mint-cool-5v
         family_token: 'mint-cool'
         grade_token: '5'
         variant_token: 'vivid'
-        value: '#dbfff8'
+        value:      '#d4f7f1'
+        value_orig: '#dbfff8'
       - utility: mint-cool-10v
         family_token: 'mint-cool'
         grade_token: '10'
         variant_token: 'vivid'
-        value: '#7efce1'
+        value:      '#7efbe1'
+        value_orig: '#7efce1'
       - utility: mint-cool-20v
         family_token: 'mint-cool'
         grade_token: '20'
         variant_token: 'vivid'
-        value: '#02dbc2'
+        value:      '#29e1cb'
+        value_orig: '#02dbc2'
       - utility: mint-cool-30v
         family_token: 'mint-cool'
         grade_token: '30'
         variant_token: 'vivid'
-        value: '#00baa4'
+        value:      '#1dc2ae'
+        value_orig: '#00baa4'
       - utility: mint-cool-40v
         family_token: 'mint-cool'
         grade_token: '40'
         variant_token: 'vivid'
-        value: '#00b5a9'
+        value:      '#00a398'
+        value_orig: '#00b5a9'
       - utility: mint-cool-50v
         family_token: 'mint-cool'
         grade_token: '50'
@@ -1676,52 +1835,62 @@ colors:
         family_token: 'cyan'
         grade_token: '5'
         variant_token: false
-        value: '#e8f7fa'
+        value:      '#e4f3f6'
+        value_orig: '#e8f7fa'
       - utility: cyan-10
         family_token: 'cyan'
         grade_token: '10'
         variant_token: false
-        value: '#d0f1f7'
+        value:      '#ccecf2'
+        value_orig: '#d0f1f7'
       - utility: cyan-20
         family_token: 'cyan'
         grade_token: '20'
         variant_token: false
-        value: '#9ddceb'
+        value:      '#96d3e1'
+        value_orig: '#9ddceb'
       - utility: cyan-30
         family_token: 'cyan'
         grade_token: '30'
         variant_token: false
-        value: '#6ecbdb'
+        value:      '#64b9c8'
+        value_orig: '#6ecbdb'
       - utility: cyan-40
         family_token: 'cyan'
         grade_token: '40'
         variant_token: false
-        value: '#4bacbd'
+        value:      '#449dac'
+        value_orig: '#4bacbd'
       - utility: cyan-50
         family_token: 'cyan'
         grade_token: '50'
         variant_token: false
-        value: '#158092'
+        value:      '#168092'
+        value_orig: '#158092'
       - utility: cyan-60
         family_token: 'cyan'
         grade_token: '60'
         variant_token: false
-        value: '#2f707a'
+        value:      '#2a646d'
+        value_orig: '#2f707a'
       - utility: cyan-70
         family_token: 'cyan'
         grade_token: '70'
         variant_token: false
-        value: '#2d4b4f'
+        value:      '#2c4a4e'
+        value_orig: '#2d4b4f'
       - utility: cyan-80
         family_token: 'cyan'
         grade_token: '80'
         variant_token: false
-        value: '#203133'
+        value:      '#203133'
+        value_orig: '#203133'
       - utility: cyan-90
         family_token: 'cyan'
         grade_token: '90'
         variant_token: false
-        value: '#151e1f'
+        value:      '#111819'
+        value_orig: '#151e1f'
     cyan_vivid:
       - utility: cyan-5v
         family_token: 'cyan'
@@ -1732,22 +1901,26 @@ colors:
         family_token: 'cyan'
         grade_token: '10'
         variant_token: 'vivid'
-        value: '#a8f2ff'
+        value:      '#a8f2ff'
+        value_orig: '#a8f2ff'
       - utility: cyan-20v
         family_token: 'cyan'
         grade_token: '20'
         variant_token: 'vivid'
-        value: '#55e1fa'
+        value:      '#52daf2'
+        value_orig: '#55e1fa'
       - utility: cyan-30v
         family_token: 'cyan'
         grade_token: '30'
         variant_token: 'vivid'
-        value: '#02c2e8'
+        value:      '#02bde2'
+        value_orig: '#02c2e8'
       - utility: cyan-40v
         family_token: 'cyan'
         grade_token: '40'
         variant_token: 'vivid'
-        value: '#00abd1'
+        value:      '#009ec1'
+        value_orig: '#00abd1'
       - utility: cyan-50v
         family_token: 'cyan'
         grade_token: '50'
@@ -1778,61 +1951,71 @@ colors:
         family_token: 'blue'
         grade_token: '5'
         variant_token: false
-        value: '#f5fbff'
+        value:      '#ebf1f5'
+        value_orig: '#f5fbff'
         value_2: '#ebf1f5'
       - utility: blue-10
         family_token: 'blue'
         grade_token: '10'
         variant_token: false
-        value: '#dae9f7'
+        value:      '#d9e8f6'
+        value_orig: '#dae9f7'
         value_2: '#d9e8f6'
       - utility: blue-20
         family_token: 'blue'
         grade_token: '20'
         variant_token: false
-        value: '#add1f0'
+        value:      '#aacdec'
+        value_orig: '#add1f0'
         value_2: '#aacdec'
       - utility: blue-30
         family_token: 'blue'
         grade_token: '30'
         variant_token: false
-        value: '#79bcf2'
+        value:      '#73b3e7'
+        value_orig: '#79bcf2'
         value_2: '#73b3e7'
       - utility: blue-40
         family_token: 'blue'
         grade_token: '40'
         variant_token: false
-        value: '#56a4e3'
+        value:      '#4f97d1'
+        value_orig: '#56a4e3'
         value_2: '#4f97d1'
       - utility: blue-50
         family_token: 'blue'
         grade_token: '50'
         variant_token: false
-        value: '#367bb4'
+        value:      '#357ab2'
+        value_orig: '#367bb4'
         value_2: '#357ab2'
       - utility: blue-60
         family_token: 'blue'
         grade_token: '60'
         variant_token: false
-        value: '#2f6794'
+        value:      '#2c608a'
+        value_orig: '#2f6794'
         value_2: '#2c608a'
       - utility: blue-70
         family_token: 'blue'
         grade_token: '70'
         variant_token: false
-        value: '#294c69'
+        value:      '#274863'
+        value_orig: '#294c69'
         value_2: '#274863'
       - utility: blue-80
         family_token: 'blue'
         grade_token: '80'
         variant_token: false
-        value: '#1e2f3d'
+        value:      '#1f303e'
+        value_orig: '#1e2f3d'
         value_2: '#1f303e'
       - utility: blue-90
         family_token: 'blue'
         grade_token: '90'
         variant_token: false
-        value: '#161e24'
+        value:      '#11181d'
+        value_orig: '#161e24'
         value_2: '#11181d'
     blue_vivid:
       - utility: blue-5v
@@ -1854,32 +2037,38 @@ colors:
         family_token: 'blue'
         grade_token: '30'
         variant_token: 'vivid'
-        value: '#57b3ff'
+        value:      '#58b4ff'
+        value_orig: '#57b3ff'
       - utility: blue-40v
         family_token: 'blue'
         grade_token: '40'
         variant_token: 'vivid'
-        value: '#009afa'
+        value:      '#0096f4'
+        value_orig: '#009afa'
       - utility: blue-50v
         family_token: 'blue'
         grade_token: '50'
         variant_token: 'vivid'
-        value: '#0077d8'
+        value:      '#0076d6'
+        value_orig: '#0077d8'
       - utility: blue-60v
         family_token: 'blue'
         grade_token: '60'
         variant_token: 'vivid'
-        value: '#0069b4'
+        value:      '#005ea2'
+        value_orig: '#0069b4'
       - utility: blue-70v
         family_token: 'blue'
         grade_token: '70'
         variant_token: 'vivid'
-        value: '#0c4d82'
+        value:      '#0b4778'
+        value_orig: '#0c4d82'
       - utility: blue-80v
         family_token: 'blue'
         grade_token: '80'
         variant_token: 'vivid'
-        value: '#11304f'
+        value:      '#112f4e'
+        value_orig: '#11304f'
       - utility: blue-90v
         family_token: 'blue'
         grade_token: '90'
@@ -1890,52 +2079,62 @@ colors:
         family_token: 'blue-warm'
         grade_token: '5'
         variant_token: false
-        value: '#f0f5fc'
+        value:      '#ecf1f7'
+        value_orig: '#f0f5fc'
       - utility: blue-warm-10
         family_token: 'blue-warm'
         grade_token: '10'
         variant_token: false
-        value: '#dfe7f5'
+        value:      '#dfe7f5'
+        value_orig: '#dfe7f5'
       - utility: blue-warm-20
         family_token: 'blue-warm'
         grade_token: '20'
         variant_token: false
-        value: '#bccae6'
+        value:      '#bccae6'
+        value_orig: '#bccae6'
       - utility: blue-warm-30
         family_token: 'blue-warm'
         grade_token: '30'
         variant_token: false
-        value: '#91add9'
+        value:      '#93afda'
+        value_orig: '#91add9'
       - utility: blue-warm-40
         family_token: 'blue-warm'
         grade_token: '40'
         variant_token: false
-        value: '#7397d1'
+        value:      '#6f92ca'
+        value_orig: '#7397d1'
       - utility: blue-warm-50
         family_token: 'blue-warm'
         grade_token: '50'
         variant_token: false
-        value: '#3d75c2'
+        value:      '#3e76c2'
+        value_orig: '#3d75c2'
       - utility: blue-warm-60
         family_token: 'blue-warm'
         grade_token: '60'
         variant_token: false
-        value: '#37629e'
+        value:      '#345d96'
+        value_orig: '#37629e'
       - utility: blue-warm-70
         family_token: 'blue-warm'
         grade_token: '70'
         variant_token: false
-        value: '#31486b'
+        value:      '#2f4668'
+        value_orig: '#31486b'
       - utility: blue-warm-80
         family_token: 'blue-warm'
         grade_token: '80'
         variant_token: false
-        value: '#232d3d'
+        value:      '#252f3e'
+        value_orig: '#232d3d'
       - utility: blue-warm-90
         family_token: 'blue-warm'
         grade_token: '90'
         variant_token: false
-        value: '#161b24'
+        value:      '#13171f'
+        value_orig: '#161b24'
     blue_warm_vivid:
       - utility: blue-warm-5v
         family_token: 'blue-warm'
@@ -1951,37 +2150,44 @@ colors:
         family_token: 'blue-warm'
         grade_token: '20'
         variant_token: 'vivid'
-        value: '#b8cbf2'
+        value:      '#b7caf0'
+        value_orig: '#b8cbf2'
       - utility: blue-warm-30v
         family_token: 'blue-warm'
         grade_token: '30'
         variant_token: 'vivid'
-        value: '#81aefc'
+        value:      '#81aefc'
+        value_orig: '#81aefc'
       - utility: blue-warm-40v
         family_token: 'blue-warm'
         grade_token: '40'
         variant_token: 'vivid'
-        value: '#5e99ff'
+        value:      '#5890f0'
+        value_orig: '#5e99ff'
       - utility: blue-warm-50v
         family_token: 'blue-warm'
         grade_token: '50'
         variant_token: 'vivid'
-        value: '#2673df'
+        value:      '#2672de'
+        value_orig: '#2673df'
       - utility: blue-warm-60v
         family_token: 'blue-warm'
         grade_token: '60'
         variant_token: 'vivid'
-        value: '#0052de'
+        value:      '#0050d8'
+        value_orig: '#0052de'
       - utility: blue-warm-70v
         family_token: 'blue-warm'
         grade_token: '70'
         variant_token: 'vivid'
-        value: '#1e4f94'
+        value:      '#1a4480'
+        value_orig: '#1e4f94'
       - utility: blue-warm-80v
         family_token: 'blue-warm'
         grade_token: '80'
         variant_token: 'vivid'
-        value: '#112a4d'
+        value:      '#162e51'
+        value_orig: '#112a4d'
       - utility: blue-warm-90v
         family_token: 'blue-warm'
         grade_token: '90'
@@ -1992,52 +2198,62 @@ colors:
         family_token: 'indigo-cool'
         grade_token: '5'
         variant_token: false
-        value: '#f5f6fc'
+        value:      '#eff0f6'
+        value_orig: '#f5f6fc'
       - utility: indigo-cool-10
         family_token: 'indigo-cool'
         grade_token: '10'
         variant_token: false
-        value: '#e1e6fa'
+        value:      '#e1e6f9'
+        value_orig: '#e1e6fa'
       - utility: indigo-cool-20
         family_token: 'indigo-cool'
         grade_token: '20'
         variant_token: false
-        value: '#bac7f5'
+        value:      '#bbc8f5'
+        value_orig: '#bac7f5'
       - utility: indigo-cool-30
         family_token: 'indigo-cool'
         grade_token: '30'
         variant_token: false
-        value: '#97acf0'
+        value:      '#96abee'
+        value_orig: '#97acf0'
       - utility: indigo-cool-40
         family_token: 'indigo-cool'
         grade_token: '40'
         variant_token: false
-        value: '#6d91ed'
+        value:      '#6b8ee8'
+        value_orig: '#6d91ed'
       - utility: indigo-cool-50
         family_token: 'indigo-cool'
         grade_token: '50'
         variant_token: false
-        value: '#4a70d9'
+        value:      '#496fd8'
+        value_orig: '#4a70d9'
       - utility: indigo-cool-60
         family_token: 'indigo-cool'
         grade_token: '60'
         variant_token: false
-        value: '#425bad'
+        value:      '#3f57a6'
+        value_orig: '#425bad'
       - utility: indigo-cool-70
         family_token: 'indigo-cool'
         grade_token: '70'
         variant_token: false
-        value: '#364173'
+        value:      '#374274'
+        value_orig: '#364173'
       - utility: indigo-cool-80
         family_token: 'indigo-cool'
         grade_token: '80'
         variant_token: false
-        value: '#23273d'
+        value:      '#292d42'
+        value_orig: '#23273d'
       - utility: indigo-cool-90
         family_token: 'indigo-cool'
         grade_token: '90'
         variant_token: false
-        value: '#1b1c2b'
+        value:      '#151622'
+        value_orig: '#1b1c2b'
     indigo_cool_vivid:
       - utility: indigo-cool-5v
         family_token: 'indigo-cool'
@@ -2063,7 +2279,8 @@ colors:
         family_token: 'indigo-cool'
         grade_token: '40'
         variant_token: 'vivid'
-        value: '#6694ff'
+        value:      '#628ef4'
+        value_orig: '#6694ff'
       - utility: indigo-cool-50v
         family_token: 'indigo-cool'
         grade_token: '50'
@@ -2073,7 +2290,8 @@ colors:
         family_token: 'indigo-cool'
         grade_token: '60'
         variant_token: 'vivid'
-        value: '#4150f2'
+        value:      '#3b48db'
+        value_orig: '#4150f2'
       - utility: indigo-cool-70v
         family_token: 'indigo-cool'
         grade_token: '70'
@@ -2094,52 +2312,62 @@ colors:
         family_token: 'indigo'
         grade_token: '5'
         variant_token: false
-        value: '#fafaff'
+        value:      '#f0f0f4'
+        value_orig: '#fafaff'
       - utility: indigo-10
         family_token: 'indigo'
         grade_token: '10'
         variant_token: false
-        value: '#e4e3fa'
+        value:      '#e5e4fa'
+        value_orig: '#e4e3fa'
       - utility: indigo-20
         family_token: 'indigo'
         grade_token: '20'
         variant_token: false
-        value: '#c2c3f2'
+        value:      '#c5c5f3'
+        value_orig: '#c2c3f2'
       - utility: indigo-30
         family_token: 'indigo'
         grade_token: '30'
         variant_token: false
-        value: '#a4a7eb'
+        value:      '#a5a8eb'
+        value_orig: '#a4a7eb'
       - utility: indigo-40
         family_token: 'indigo'
         grade_token: '40'
         variant_token: false
-        value: '#8889db'
+        value:      '#8889db'
+        value_orig: '#8889db'
       - utility: indigo-50
         family_token: 'indigo'
         grade_token: '50'
         variant_token: false
-        value: '#686dca'
+        value:      '#676cc8'
+        value_orig: '#686dca'
       - utility: indigo-60
         family_token: 'indigo'
         grade_token: '60'
         variant_token: false
-        value: '#5055b5'
+        value:      '#4d52af'
+        value_orig: '#5055b5'
       - utility: indigo-70
         family_token: 'indigo'
         grade_token: '70'
         variant_token: false
-        value: '#3b3e75'
+        value:      '#3d4076'
+        value_orig: '#3b3e75'
       - utility: indigo-80
         family_token: 'indigo'
         grade_token: '80'
         variant_token: false
-        value: '#28293d'
+        value:      '#2b2c40'
+        value_orig: '#28293d'
       - utility: indigo-90
         family_token: 'indigo'
         grade_token: '90'
         variant_token: false
-        value: '#1b1c26'
+        value:      '#16171f'
+        value_orig: '#1b1c26'
     indigo_vivid:
       - utility: indigo-5v
         family_token: 'indigo'
@@ -2155,12 +2383,14 @@ colors:
         family_token: 'indigo'
         grade_token: '20'
         variant_token: 'vivid'
-        value: '#acaeec'
+        value:      '#c4c6f2'
+        value_orig: '#acaeec'
       - utility: indigo-30v
         family_token: 'indigo'
         grade_token: '30'
         variant_token: 'vivid'
-        value: '#8c8fe1'
+        value:      '#a5a8e8'
+        value_orig: '#8c8fe1'
       - utility: indigo-40v
         family_token: 'indigo'
         grade_token: '40'
@@ -2170,12 +2400,14 @@ colors:
         family_token: 'indigo'
         grade_token: '50'
         variant_token: 'vivid'
-        value: '#656bd7'
+        value:      '#646ad5'
+        value_orig: '#656bd7'
       - utility: indigo-60v
         family_token: 'indigo'
         grade_token: '60'
         variant_token: 'vivid'
-        value: '#353aa5'
+        value:      '#4d52b0'
+        value_orig: '#353aa5'
       - utility: indigo-70v
         family_token: 'indigo'
         grade_token: '70'
@@ -2196,52 +2428,62 @@ colors:
         family_token: 'indigo-warm'
         grade_token: '5'
         variant_token: false
-        value: '#f9f7ff'
+        value:      '#f1eff7'
+        value_orig: '#f9f7ff'
       - utility: indigo-warm-10
         family_token: 'indigo-warm'
         grade_token: '10'
         variant_token: false
-        value: '#e5e1fa'
+        value:      '#e7e3fa'
+        value_orig: '#e5e1fa'
       - utility: indigo-warm-20
         family_token: 'indigo-warm'
         grade_token: '20'
         variant_token: false
-        value: '#c9c2f2'
+        value:      '#cbc4f2'
+        value_orig: '#c9c2f2'
       - utility: indigo-warm-30
         family_token: 'indigo-warm'
         grade_token: '30'
         variant_token: false
-        value: '#b1a7eb'
+        value:      '#afa5e8'
+        value_orig: '#b1a7eb'
       - utility: indigo-warm-40
         family_token: 'indigo-warm'
         grade_token: '40'
         variant_token: false
-        value: '#968ade'
+        value:      '#9287d8'
+        value_orig: '#968ade'
       - utility: indigo-warm-50
         family_token: 'indigo-warm'
         grade_token: '50'
         variant_token: false
-        value: '#7766d3'
+        value:      '#7665d1'
+        value_orig: '#7766d3'
       - utility: indigo-warm-60
         family_token: 'indigo-warm'
         grade_token: '60'
         variant_token: false
-        value: '#5e519e'
+        value:      '#5e519e'
+        value_orig: '#5e519e'
       - utility: indigo-warm-70
         family_token: 'indigo-warm'
         grade_token: '70'
         variant_token: false
-        value: '#433a7a'
+        value:      '#453c7b'
+        value_orig: '#433a7a'
       - utility: indigo-warm-80
         family_token: 'indigo-warm'
         grade_token: '80'
         variant_token: false
-        value: '#29263b'
+        value:      '#2e2c40'
+        value_orig: '#29263b'
       - utility: indigo-warm-90
         family_token: 'indigo-warm'
         grade_token: '90'
         variant_token: false
-        value: '#1d1b24'
+        value:      '#18161d'
+        value_orig: '#1d1b24'
     indigo_warm_vivid:
       - utility: indigo-warm-5v
         family_token: 'indigo-warm'
@@ -2262,22 +2504,26 @@ colors:
         family_token: 'indigo-warm'
         grade_token: '30'
         variant_token: 'vivid'
-        value: '#b59eff'
+        value:      '#b69fff'
+        value_orig: '#b59eff'
       - utility: indigo-warm-40v
         family_token: 'indigo-warm'
         grade_token: '40'
         variant_token: 'vivid'
-        value: '#9980ff'
+        value:      '#967efb'
+        value_orig: '#9980ff'
       - utility: indigo-warm-50v
         family_token: 'indigo-warm'
         grade_token: '50'
         variant_token: 'vivid'
-        value: '#7560eb'
+        value:      '#745fe9'
+        value_orig: '#7560eb'
       - utility: indigo-warm-60v
         family_token: 'indigo-warm'
         grade_token: '60'
         variant_token: 'vivid'
-        value: '#5740d1'
+        value:      '#5942d2'
+        value_orig: '#5740d1'
       - utility: indigo-warm-70v
         family_token: 'indigo-warm'
         grade_token: '70'
@@ -2298,52 +2544,62 @@ colors:
         family_token: 'violet'
         grade_token: '5'
         variant_token: false
-        value: '#f7f5fa'
+        value:      '#f1eff4'
+        value_orig: '#f7f5fa'
       - utility: violet-10
         family_token: 'violet'
         grade_token: '10'
         variant_token: false
-        value: '#ebe3fa'
+        value:      '#ebe3f9'
+        value_orig: '#ebe3fa'
       - utility: violet-20
         family_token: 'violet'
         grade_token: '20'
         variant_token: false
-        value: '#cec1e8'
+        value:      '#d0c3e9'
+        value_orig: '#cec1e8'
       - utility: violet-30
         family_token: 'violet'
         grade_token: '30'
         variant_token: false
-        value: '#b7a1e3'
+        value:      '#b8a2e3'
+        value_orig: '#b7a1e3'
       - utility: violet-40
         family_token: 'violet'
         grade_token: '40'
         variant_token: false
-        value: '#9c82d1'
+        value:      '#9d84d2'
+        value_orig: '#9c82d1'
       - utility: violet-50
         family_token: 'violet'
         grade_token: '50'
         variant_token: false
-        value: '#8369b5'
+        value:      '#8168b3'
+        value_orig: '#8369b5'
       - utility: violet-60
         family_token: 'violet'
         grade_token: '60'
         variant_token: false
-        value: '#644f8f'
+        value:      '#665190'
+        value_orig: '#644f8f'
       - utility: violet-70
         family_token: 'violet'
         grade_token: '70'
         variant_token: false
-        value: '#493a66'
+        value:      '#4c3d69'
+        value_orig: '#493a66'
       - utility: violet-80
         family_token: 'violet'
         grade_token: '80'
         variant_token: false
-        value: '#2d273b'
+        value:      '#312b3f'
+        value_orig: '#2d273b'
       - utility: violet-90
         family_token: 'violet'
         grade_token: '90'
         variant_token: false
-        value: '#1e1b24'
+        value:      '#18161d'
+        value_orig: '#1e1b24'
     violet_vivid:
       - utility: violet-5v
         family_token: 'violet'
@@ -2364,27 +2620,32 @@ colors:
         family_token: 'violet'
         grade_token: '30'
         variant_token: 'vivid'
-        value: '#be95e9'
+        value:      '#c39deb'
+        value_orig: '#be95e9'
       - utility: violet-40v
         family_token: 'violet'
         grade_token: '40'
         variant_token: 'vivid'
-        value: '#b07bed'
+        value:      '#ad79e9'
+        value_orig: '#b07bed'
       - utility: violet-50v
         family_token: 'violet'
         grade_token: '50'
         variant_token: 'vivid'
-        value: '#9455dd'
+        value:      '#9355dc'
+        value_orig: '#9455dd'
       - utility: violet-60v
         family_token: 'violet'
         grade_token: '60'
         variant_token: 'vivid'
-        value: '#7639b8'
+        value:      '#783cb9'
+        value_orig: '#7639b8'
       - utility: violet-70v
         family_token: 'violet'
         grade_token: '70'
         variant_token: 'vivid'
-        value: '#552996'
+        value:      '#562b97'
+        value_orig: '#552996'
       - utility: violet-80v
         family_token: 'violet'
         grade_token: '80'
@@ -2400,83 +2661,99 @@ colors:
         family_token: 'violet-warm'
         grade_token: '5'
         variant_token: false
-        value: '#fef7ff'
+        value:      '#f5eef6'
+        value_orig: '#fef7ff'
       - utility: violet-warm-10
         family_token: 'violet-warm'
         grade_token: '10'
         variant_token: false
-        value: '#f5dcf7'
+        value:      '#f6dff8'
+        value_orig: '#f5dcf7'
       - utility: violet-warm-20
         family_token: 'violet-warm'
         grade_token: '20'
         variant_token: false
-        value: '#e0bae3'
+        value:      '#e2bee4'
+        value_orig: '#e0bae3'
       - utility: violet-warm-30
         family_token: 'violet-warm'
         grade_token: '30'
         variant_token: false
-        value: '#d096d6'
+        value:      '#d29ad8'
+        value_orig: '#d096d6'
       - utility: violet-warm-40
         family_token: 'violet-warm'
         grade_token: '40'
         variant_token: false
-        value: '#bd73c7'
+        value:      '#bf77c8'
+        value_orig: '#bd73c7'
       - utility: violet-warm-50
         family_token: 'violet-warm'
         grade_token: '50'
         variant_token: false
-        value: '#b24bbf'
+        value:      '#b04abd'
+        value_orig: '#b24bbf'
       - utility: violet-warm-60
         family_token: 'violet-warm'
         grade_token: '60'
         variant_token: false
-        value: '#854180'
+        value:      '#864381'
+        value_orig: '#854180'
       - utility: violet-warm-70
         family_token: 'violet-warm'
         grade_token: '70'
         variant_token: false
-        value: '#573455'
+        value:      '#5c395a'
+        value_orig: '#573455'
       - utility: violet-warm-80
         family_token: 'violet-warm'
         grade_token: '80'
         variant_token: false
-        value: '#332431'
+        value:      '#382936'
+        value_orig: '#332431'
       - utility: violet-warm-90
         family_token: 'violet-warm'
         grade_token: '90'
         variant_token: false
-        value: '#211a21'
+        value:      '#1b151b'
+        value_orig: '#211a21'
     violet_warm_vivid:
       - utility: violet-warm-5v
         family_token: 'violet-warm'
         grade_token: '5'
         variant_token: 'vivid'
-        value: '#fdedff'
+        value:      '#fbebfd'
+        value_orig: '#fdedff'
       - utility: violet-warm-10v
         family_token: 'violet-warm'
         grade_token: '10'
         variant_token: 'vivid'
-        value: '#f9c9ff'
+        value:      '#fbdcff'
+        value_orig: '#f9c9ff'
       - utility: violet-warm-20v
         family_token: 'violet-warm'
         grade_token: '20'
         variant_token: 'vivid'
-        value: '#f3a8ff'
+        value:      '#f4b2ff'
+        value_orig: '#f3a8ff'
       - utility: violet-warm-30v
         family_token: 'violet-warm'
         grade_token: '30'
         variant_token: 'vivid'
-        value: '#ee82ff'
+        value:      '#ee83ff'
+        value_orig: '#ee82ff'
       - utility: violet-warm-40v
         family_token: 'violet-warm'
         grade_token: '40'
         variant_token: 'vivid'
-        value: '#e05ef7'
+        value:      '#d85bef'
+        value_orig: '#e05ef7'
       - utility: violet-warm-50v
         family_token: 'violet-warm'
         grade_token: '50'
         variant_token: 'vivid'
-        value: '#c033d3'
+        value:      '#be32d0'
+        value_orig: '#c033d3'
       - utility: violet-warm-60v
         family_token: 'violet-warm'
         grade_token: '60'
@@ -2502,52 +2779,62 @@ colors:
         family_token: 'magenta'
         grade_token: '5'
         variant_token: false
-        value: '#faf5f6'
+        value:      '#f4eff0'
+        value_orig: '#faf5f6'
       - utility: magenta-10
         family_token: 'magenta'
         grade_token: '10'
         variant_token: false
-        value: '#f5dce4'
+        value:      '#f6e1e8'
+        value_orig: '#f5dce4'
       - utility: magenta-20
         family_token: 'magenta'
         grade_token: '20'
         variant_token: false
-        value: '#f0b9cb'
+        value:      '#f0bbcc'
+        value_orig: '#f0b9cb'
       - utility: magenta-30
         family_token: 'magenta'
         grade_token: '30'
         variant_token: false
-        value: '#e68eae'
+        value:      '#e895b3'
+        value_orig: '#e68eae'
       - utility: magenta-40
         family_token: 'magenta'
         grade_token: '40'
         variant_token: false
-        value: '#e0699f'
+        value:      '#e0699f'
+        value_orig: '#e0699f'
       - utility: magenta-50
         family_token: 'magenta'
         grade_token: '50'
         variant_token: false
-        value: '#c84180'
+        value:      '#c84281'
+        value_orig: '#c84180'
       - utility: magenta-60
         family_token: 'magenta'
         grade_token: '60'
         variant_token: false
-        value: '#8a4365'
+        value:      '#8b4566'
+        value_orig: '#8a4365'
       - utility: magenta-70
         family_token: 'magenta'
         grade_token: '70'
         variant_token: false
-        value: '#613046'
+        value:      '#66364b'
+        value_orig: '#613046'
       - utility: magenta-80
         family_token: 'magenta'
         grade_token: '80'
         variant_token: false
-        value: '#3b212c'
+        value:      '#402731'
+        value_orig: '#3b212c'
       - utility: magenta-90
         family_token: 'magenta'
         grade_token: '90'
         variant_token: false
-        value: '#211b1d'
+        value:      '#1b1617'
+        value_orig: '#211b1d'
     magenta_vivid:
       - utility: magenta-5v
         family_token: 'magenta'
@@ -2558,32 +2845,38 @@ colors:
         family_token: 'magenta'
         grade_token: '10'
         variant_token: 'vivid'
-        value: '#ffd1e2'
+        value:      '#ffd1e2'
+        value_orig: '#ffd1e2'
       - utility: magenta-20v
         family_token: 'magenta'
         grade_token: '20'
         variant_token: 'vivid'
-        value: '#ffadca'
+        value:      '#ffadca'
+        value_orig: '#ffadca'
       - utility: magenta-30v
         family_token: 'magenta'
         grade_token: '30'
         variant_token: 'vivid'
-        value: '#ff80ae'
+        value:      '#ff80ae'
+        value_orig: '#ff80ae'
       - utility: magenta-40v
         family_token: 'magenta'
         grade_token: '40'
         variant_token: 'vivid'
-        value: '#fa3c91'
+        value:      '#fa3c91'
+        value_orig: '#fa3c91'
       - utility: magenta-50v
         family_token: 'magenta'
         grade_token: '50'
         variant_token: 'vivid'
-        value: '#da2e7b'
+        value:      '#da2e7b'
+        value_orig: '#da2e7b'
       - utility: magenta-60v
         family_token: 'magenta'
         grade_token: '60'
         variant_token: 'vivid'
-        value: '#a91b61'
+        value:      '#a91b61'
+        value_orig: '#a91b61'
       - utility: magenta-70v
         family_token: 'magenta'
         grade_token: '70'
@@ -2604,214 +2897,256 @@ colors:
         family_token: 'gray-warm'
         grade_token: '1'
         variant_token: false
-        value: '#fdfdfc'
+        value:      '#fcfcfb'
+        value_orig: '#fdfdfc'
       - utility: gray-warm-2
         family_token: 'gray-warm'
         grade_token: '2'
         variant_token: false
-        value: '#fafaf8'
+        value:      '#f9f9f7'
+        value_orig: '#fafaf8'
       - utility: gray-warm-3
         family_token: 'gray-warm'
         grade_token: '3'
         variant_token: false
-        value: '#f7f7f3'
+        value:      '#f6f6f2'
+        value_orig: '#f7f7f3'
       - utility: gray-warm-4
         family_token: 'gray-warm'
         grade_token: '4'
         variant_token: false
-        value: '#f5f5f0'
+        value:      '#f3f3ee'
+        value_orig: '#f5f5f0'
       - utility: gray-warm-5
         family_token: 'gray-warm'
         grade_token: '5'
         variant_token: false
-        value: '#f5f5f1'
+        value:      '#f0f0ec'
+        value_orig: '#f5f5f1'
       - utility: gray-warm-10
         family_token: 'gray-warm'
         grade_token: '10'
         variant_token: false
-        value: '#e0e0da'
+        value:      '#e6e6e2'
+        value_orig: '#e0e0da'
       - utility: gray-warm-20
         family_token: 'gray-warm'
         grade_token: '20'
         variant_token: false
-        value: '#d6d5cb'
+        value:      '#cac9c0'
+        value_orig: '#d6d5cb'
       - utility: gray-warm-30
         family_token: 'gray-warm'
         grade_token: '30'
         variant_token: false
-        value: '#c2c1b4'
+        value:      '#afaea2'
+        value_orig: '#c2c1b4'
       - utility: gray-warm-40
         family_token: 'gray-warm'
         grade_token: '40'
         variant_token: false
-        value: '#969689'
+        value:      '#929285'
+        value_orig: '#969689'
       - utility: gray-warm-50
         family_token: 'gray-warm'
         grade_token: '50'
         variant_token: false
-        value: '#757569'
+        value:      '#76766a'
+        value_orig: '#757569'
       - utility: gray-warm-60
         family_token: 'gray-warm'
         grade_token: '60'
         variant_token: false
-        value: '#5e5e53'
+        value:      '#5d5d52'
+        value_orig: '#5e5e53'
       - utility: gray-warm-70
         family_token: 'gray-warm'
         grade_token: '70'
         variant_token: false
-        value: '#42423c'
+        value:      '#454540'
+        value_orig: '#42423c'
       - utility: gray-warm-80
         family_token: 'gray-warm'
         grade_token: '80'
         variant_token: false
-        value: '#2b2b27'
+        value:      '#2e2e2a'
+        value_orig: '#2b2b27'
       - utility: gray-warm-90
         family_token: 'gray-warm'
         grade_token: '90'
         variant_token: false
-        value: '#1c1c1b'
+        value:      '#171716'
+        value_orig: '#1c1c1b'
     gray:
       - utility: gray-1
         family_token: 'gray'
         grade_token: '1'
         variant_token: false
-        value: '#fcfcfc'
+        value:      '#fcfcfc'
+        value_orig: '#fcfcfc'
       - utility: gray-2
         family_token: 'gray'
         grade_token: '2'
         variant_token: false
-        value: '#f9f9f9'
+        value:      '#f9f9f9'
+        value_orig: '#f9f9f9'
       - utility: gray-3
         family_token: 'gray'
         grade_token: '3'
         variant_token: false
-        value: '#f6f6f6'
+        value:      '#f6f6f6'
+        value_orig: '#f6f6f6'
       - utility: gray-4
         family_token: 'gray'
         grade_token: '4'
         variant_token: false
-        value: '#f3f3f3'
+        value:      '#f3f3f3'
+        value_orig: '#f3f3f3'
       - utility: gray-5
         family_token: 'gray'
         grade_token: '5'
         variant_token: false
-        value: '#f0f0f0'
+        value:      '#f0f0f0'
+        value_orig: '#f0f0f0'
       - utility: gray-10
         family_token: 'gray'
         grade_token: '10'
         variant_token: false
-        value: '#e6e6e6'
+        value:      '#e6e6e6'
+        value_orig: '#e6e6e6'
       - utility: gray-20
         family_token: 'gray'
         grade_token: '20'
         variant_token: false
-        value: '#c9c9c9'
+        value:      '#c9c9c9'
+        value_orig: '#c9c9c9'
       - utility: gray-30
         family_token: 'gray'
         grade_token: '30'
         variant_token: false
-        value: '#adadad'
+        value:      '#adadad'
+        value_orig: '#adadad'
       - utility: gray-40
         family_token: 'gray'
         grade_token: '40'
         variant_token: false
-        value: '#919191'
+        value:      '#919191'
+        value_orig: '#919191'
       - utility: gray-50
         family_token: 'gray'
         grade_token: '50'
         variant_token: false
-        value: '#757575'
+        value:      '#757575'
+        value_orig: '#757575'
       - utility: gray-60
         family_token: 'gray'
         grade_token: '60'
         variant_token: false
-        value: '#5c5c5c'
+        value:      '#5c5c5c'
+        value_orig: '#5c5c5c'
       - utility: gray-70
         family_token: 'gray'
         grade_token: '70'
         variant_token: false
-        value: '#454545'
+        value:      '#454545'
+        value_orig: '#454545'
       - utility: gray-80
         family_token: 'gray'
         grade_token: '80'
         variant_token: false
-        value: '#2e2e2e'
+        value:      '#2e2e2e'
+        value_orig: '#2e2e2e'
       - utility: gray-90
         family_token: 'gray'
         grade_token: '90'
         variant_token: false
-        value: '#171717'
+        value:      '#171717'
+        value_orig: '#171717'
     gray_cool:
       - utility: gray-cool-1
         family_token: 'gray-cool'
         grade_token: '1'
         variant_token: false
-        value: '#fafbfc'
+        value:      '#fbfcfd'
+        value_orig: '#fafbfc'
       - utility: gray-cool-2
         family_token: 'gray-cool'
         grade_token: '2'
         variant_token: false
-        value: '#f7f9fa'
+        value:      '#f7f9fa'
+        value_orig: '#f7f9fa'
       - utility: gray-cool-3
         family_token: 'gray-cool'
         grade_token: '3'
         variant_token: false
-        value: '#f5f6f7'
+        value:      '#f5f6f7'
+        value_orig: '#f5f6f7'
       - utility: gray-cool-4
         family_token: 'gray-cool'
         grade_token: '4'
         variant_token: false
-        value: '#f0f2f5'
+        value:      '#f1f3f6'
+        value_orig: '#f0f2f5'
       - utility: gray-cool-5
         family_token: 'gray-cool'
         grade_token: '5'
         variant_token: false
-        value: '#edeff0'
+        value:      '#eef0f1'
+        value_orig: '#edeff0'
       - utility: gray-cool-10
         family_token: 'gray-cool'
         grade_token: '10'
         variant_token: false
-        value: '#d5d8db'
+        value:      '#e4e6e8'
+        value_orig: '#d5d8db'
       - utility: gray-cool-20
         family_token: 'gray-cool'
         grade_token: '20'
         variant_token: false
-        value: '#b8bdc2'
+        value:      '#c6cace'
+        value_orig: '#b8bdc2'
       - utility: gray-cool-30
         family_token: 'gray-cool'
         grade_token: '30'
         variant_token: false
-        value: '#9da2a6'
+        value:      '#a9aeb1'
+        value_orig: '#9da2a6'
       - utility: gray-cool-40
         family_token: 'gray-cool'
         grade_token: '40'
         variant_token: false
-        value: '#8c9196'
+        value:      '#8d9297'
+        value_orig: '#8c9196'
       - utility: gray-cool-50
         family_token: 'gray-cool'
         grade_token: '50'
         variant_token: false
-        value: '#707579'
+        value:      '#71767a'
+        value_orig: '#707579'
       - utility: gray-cool-60
         family_token: 'gray-cool'
         grade_token: '60'
         variant_token: false
-        value: '#595d63'
+        value:      '#585c62'
+        value_orig: '#595d63'
       - utility: gray-cool-70
         family_token: 'gray-cool'
         grade_token: '70'
         variant_token: false
-        value: '#404347'
+        value:      '#424549'
+        value_orig: '#404347'
       - utility: gray-cool-80
         family_token: 'gray-cool'
         grade_token: '80'
         variant_token: false
-        value: '#292a2b'
+        value:      '#2d2e2f'
+        value_orig: '#292a2b'
       - utility: gray-cool-90
         family_token: 'gray-cool'
         grade_token: '90'
         variant_token: false
-        value: '#1c1d1f'
+        value:      '#1c1d1f'
+        value_orig: '#161719'
 
 
 opacity:

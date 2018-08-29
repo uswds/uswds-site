@@ -1,12 +1,10 @@
 <div class="utility-example-container-condensed grid-row grid-gap flex-align-center">
   <span class="grid-col-2">
-    <span class="height-4 width-full radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.utility }}"></span>
+    <span  style="background-color: {{ color.value_orig }}" class="height-4 width-full radius-sm display-inline-block text-middle margin-right-1"></span>
   </span>
-  {% if color.value_2 %}
   <span class="grid-col-2">
-    <span style="background-color: {{ color.value_2 }}" class="height-4 width-full radius-sm display-inline-block text-middle margin-right-1"></span>
+    <span style="background-color: {{ color.value }}" class="height-4 width-full radius-sm display-inline-block text-middle margin-right-1"></span>
   </span>
-  {% endif %}
   <span class="grid-col-2">
     <span class="utility-class">'{{ color.family_token }}'</span>
   </span>
@@ -37,8 +35,8 @@
     {% else %}
     <span>—</span>
     {% endif %}
-    {% if color.value_2 %}
-    <span>{{ color.value_2 }}</span>
+    {% if color.value_orig %}
+    <span>{{ color.value_orig }}</span>
     {% else %}
     <span>—</span>
     {% endif %}

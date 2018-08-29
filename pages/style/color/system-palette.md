@@ -111,8 +111,8 @@ families:
       <h2 class="font-sans-10 margin-top-0 margin-bottom-1 text-ink" id="{{ family | replace: '_', '-' }}">{{ this_title }}</h2>
 
       <div class="grid-row grid-gap flex-align-center margin-bottom-1 padding-bottom-1 border-bottom-2px margin-top-2 text-bold font-sans-1">
-        <div class="grid-col-2">color</div>
-        <div class="grid-col-2">color: luminance v2</div>
+        <div class="grid-col-2">orig color</div>
+        <div class="grid-col-2">adj color</div>
         <div class="grid-col-2">family</div>
         <div class="grid-col-1">grade</div>
         <div class="grid-col-1">variant</div>

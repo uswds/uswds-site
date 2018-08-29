@@ -429,6 +429,7 @@ body {
   }
 
   .usa-footer-secondary_section {
+    @include padding(2rem null);
     background-color: color('accent-cool-lighter');
 
     @include media($medium-screen) {

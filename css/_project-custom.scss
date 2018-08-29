@@ -495,12 +495,11 @@ body {
   p {
     color: color('white');
     font-size: $small-font-size;
-    margin-top: 0;
     overflow: hidden;
 
-    &:first-of-type {
+    &:last-of-type {
       @include media($medium-screen) {
-        margin-bottom: 0;
+        margin-top: 0;
       }
     }
   }

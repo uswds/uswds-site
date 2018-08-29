@@ -30,13 +30,13 @@
     {% endif %}
   </span>
   <span class="grid-col-fill text-right font-mono-3">
-    {% if color.value %}
-    <span>{{ color.value }}</span>
+    {% if color.value_orig %}
+    <span>{{ color.value_orig }}</span>
     {% else %}
     <span>—</span>
     {% endif %}
-    {% if color.value_orig %}
-    <span>{{ color.value_orig }}</span>
+    {% if color.value %}
+    <span>{{ color.value }}</span>
     {% else %}
     <span>—</span>
     {% endif %}

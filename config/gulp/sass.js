@@ -1,32 +1,41 @@
-var gulp      = require('gulp');
-var dutil     = require('./doc-util');
-var combineMq = require('gulp-combine-mq');
-var sass      = require('gulp-sass');
-var linter    = require('gulp-scss-lint');
-var strip     = require('gulp-strip-css-comments');
-var task      = 'sass';
+var autoprefixer  = require('autoprefixer');
+var combineMq     = require('gulp-combine-mq');
+var cssnano       = require('cssnano');
+var dutil         = require('./doc-util');
+var gulp          = require('gulp');
+var linter        = require('gulp-scss-lint');
+var packCSS       = require('css-mqpacker');
+var postcss       = require('gulp-postcss');
+var sass          = require('gulp-sass');
+var sourcemaps    = require('gulp-sourcemaps');
+var strip         = require('gulp-strip-css-comments');
+var task          = 'sass';
 
 gulp.task('build-sass', function () {
+  var plugins = [
+    autoprefixer({ browsers: ['> 1%','Last 2 versions','IE 11'], cascade: false, }),
+    packCSS({ sort: true }),
+    cssnano({ autoprefixer: { browsers: '> 1%, Last 2 versions, IE 11' }})
+  ];
   return gulp.src('./css/**/*.scss')
-    .pipe(sass({
-      includePaths: [ './node_modules' ],
-      outputStyle: 'compressed',
-    }))
-    .on('error', function(error) {
-      sass.logError.bind(this)(error);
-
-      if (process.env.NODE_ENV !== 'development') {
-        process.exit(1);
-      }
-    })
-    .pipe(strip())
+    .pipe(sourcemaps.init({largeFile: true}))
     .pipe(
-      combineMq({
-        beautify: true,
+      sass({
+        includePaths: [ './node_modules' ],
+        outputStyle: 'expanded',
       })
+        .on('error', function(error) {
+          sass.logError.bind(this)(error);
+
+          if (process.env.NODE_ENV !== 'development') {
+            process.exit(1);
+          }
+        })
     )
+    .pipe(postcss(plugins))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('assets/css'))
-    .pipe(gulp.dest('_site/assets/css'));
+    .pipe(gulp.dest('_site/assets/css'))
 });
 
 gulp.task('scss-lint', function (done) {

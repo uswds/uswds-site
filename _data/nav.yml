@@ -1,12 +1,14 @@
 primary:
+  - href: /documentation/
   - href: /components/
   - href: /utilities/
   - href: /style/
   - href: /page-templates/
-  - href: /documentation/
   - href: /about/
 
 mobile:
+  - href: /documentation/
+    collapsible: true
   - href: /components/
     collapsible: true
   - href: /utilities/
@@ -14,8 +16,6 @@ mobile:
   - href: /style/
     collapsible: true
   - href: /page-templates/
-  - href: /documentation/
-    collapsible: true
   - href: /about/
     collapsible: true
 

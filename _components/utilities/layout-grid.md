@@ -57,7 +57,7 @@ The above example creates three equal-width columns on tablet, desktop, and wide
 
 Breaking it down, here's how it works:
 
-- **Containers** `.grid-container` centers the container and gives it a maximum width of 1024px. If you would like the grid to span the full width of the page, do not use `.grid-container`. `grid-container` can also accept any breakpoint width like `grid-container-tablet-lg` or `grid-container-widescreen`. 
+- **Containers** `.grid-container` centers the container and gives it a maximum width of 1024px. If you would like the grid to span the full width of the page, do not use `.grid-container`. `grid-container` can also accept any breakpoint width like `grid-container-tablet-lg` or `grid-container-widescreen`.
 - **Rows** Columns must have a `.grid-row` as a parent.
 - **Columns** `.grid-col-[1-12]` indicates the number of columns the item spans out of a possible 12 per row. So, if you want three equal-width columns across, use `.grid-col-4` for each item.
 - With flexbox, grid columns without a specified width will display as equal-width columns. For example, four instances of `.grid-col` will display as one-quarter-width columns across all sizes. See the [auto-layout columns](#auto-layout-columns) section for more examples.
@@ -369,14 +369,16 @@ Breaking it down, here's how it works:
 </div>
 
 <h3>Large gutter</h3>
-<p><code class="docs-inline-code">.grid-gap-lg</code> adds a larger gap (or gutter) between each column in a row. The default large gap width is 32px (4 spacing units). Customize the width of the large gap by adjusting the value of <code class="docs-inline-code">$theme-column-gap-large</code> in project settings. There is also a <code class="docs-inline-code">.grid-gap-sm</code> (2px) set with <code class="docs-inline-code">$theme-column-gap-small</code>. Also, you can add the following discrete values to <code class="docs-inline-code">.grid-gap</code>:</p>
+<p><code class="docs-inline-code">.grid-gap-lg</code> adds a larger gap (or gutter) between each column in a row. The default large gap width is 32px (4 spacing units). Customize the width of the large gap by adjusting the value of <code class="docs-inline-code">$theme-column-gap-lg</code> in project settings. There is also a <code class="docs-inline-code">.grid-gap-sm</code> (2px) set with <code class="docs-inline-code">$theme-column-gap-sm</code>. Also, you can add the following system values with <code class="docs-inline-code">.grid-gap</code>:</p>
 <div markdown="1">
 - `.grid-gap-2px`
 - `.grid-gap-05`
 - `.grid-gap-1`
+- `.grid-gap-2`
 - `.grid-gap-3`
 - `.grid-gap-4`
 - `.grid-gap-5`
+- `.grid-gap-6`
 </div>
 {{ grid-markers }}
 

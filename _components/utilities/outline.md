@@ -10,6 +10,11 @@ subnav:
   href: '#utility-outline'
 - text: Outline color
   href: '#utility-outline-color'
+- text: Utility mixins
+  href: '#utility-mixins'
+- text: Advanced settings
+  href: '#advanced-settings'
+
 utilities:
 - base:         outline
   var:          outline
@@ -160,6 +165,42 @@ utilities:
   </dl>
 </section>
 
+<section id="utility-mixins" class="padding-top-4">
+  <h2 class="margin-y-0">Utility mixins</h2>
+  {% include utilities/utility-mixin-intro.html %}
+
+  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2 margin-top-3">
+    <div class="grid-col-4">Utility</div>
+    <div class="grid-col-4">Mixin</div>
+    <div class="grid-col-4">Example</div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.outline-<code>units</code></div>
+    <div class="grid-col-4">u-outline(<code>units</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-outline(1px)</span>
+      <span class="display-block margin-top-1">u-outline('05')</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">.outline-<code>color</code></div>
+    <div class="grid-col-4">u-outline(<code>color</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-outline('red-20v')</span>
+      <span class="display-block margin-top-1">u-outline('05', 'red-20v')</span>
+    </div>
+  </div>
+  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
+    <div class="grid-col-4">color only</div>
+    <div class="grid-col-4">u-outline-color(<code>color</code>)</div>
+    <div class="grid-col-4">
+      <span class="display-block">u-outline-color('red-20v')</span>
+    </div>
+  </div>
+
+  {% include utilities/utility-mixin-using.html %}
+</section>
+
 <section id="advanced-settings" class="padding-top-4">
   <h2 class="margin-y-0">Advanced settings</h2>
 
@@ -170,7 +211,7 @@ utilities:
   <section class="utilities-section margin-top-6">
     {% include utilities/values-intro.html %}
 
-    <aside class="example border-left-05 border-secondary-light padding-left-105">
+    <aside class="example border-left-05 border-secondary-light padding-left-105 margin-top-2">
       <h4 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h4>
 <pre class="font-mono-xs margin-0 padding-0 bg-transparent">
 $outline-color-palettes: (

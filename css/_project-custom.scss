@@ -497,6 +497,7 @@ body {
     font-size: $small-font-size;
     overflow: hidden;
 
+    &:first-of-type,
     &:last-of-type {
       @include media($medium-screen) {
         margin-top: 0;

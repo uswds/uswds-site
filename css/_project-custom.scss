@@ -1390,6 +1390,7 @@ code {
 // Fancy Horizontal Rule
 
 .homepage-rule {
+  @include margin(0 null);
   border: 0;
   height: 1.5rem;
   width: 100%;

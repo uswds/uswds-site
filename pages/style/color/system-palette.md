@@ -117,8 +117,8 @@ families:
         <div class="grid-col-1">grade</div>
         <div class="grid-col-1">variant</div>
         <div class="grid-col-2">variable</div>
-        <div class="grid-col-fill text-right">hex</div>
-        <div class="grid-col-fill text-right">hex v2</div>
+        <div class="grid-col-fill text-right">orig hex</div>
+        <div class="grid-col-fill text-right">adj hex</div>
       </div>
 
       {% for color in system_colors[family] %}

@@ -111,16 +111,15 @@ families:
       <h2 class="font-sans-10 margin-top-0 margin-bottom-1 text-ink" id="{{ family | replace: '_', '-' }}">{{ this_title }}</h2>
 
       <div class="grid-row grid-gap flex-align-center margin-bottom-1 padding-bottom-1 border-bottom-2px margin-top-2 text-bold font-sans-1">
-        <div class="grid-col-2">color</div>
-        <div class="grid-col-2">family</div>
-        <div class="grid-col-1">grade</div>
-        <div class="grid-col-2">variant</div>
-        <div class="grid-col-3">variable</div>
-        <div class="grid-col-fill text-right">hex</div>
+        <div class="grid-col-2">Original</div>
+        <div class="grid-col-2">Adjusted</div>
+        <div class="grid-col-4">Shortcode</div>
+        <div class="grid-col-2 text-right">Original hex</div>
+        <div class="grid-col-2 text-right">Adjusted hex</div>
       </div>
 
       {% for color in system_colors[family] %}
-        {% include style/swatch-condensed.html %}
+        {% include style/swatch-comparison.html %}
       {% endfor %}
     </div>
     {% endfor %}

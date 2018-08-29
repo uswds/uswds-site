@@ -1,32 +1,25 @@
 <div class="utility-example-container-condensed grid-row grid-gap flex-align-center">
   <span class="grid-col-2">
-    <span class="height-4 width-full radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.utility }}"></span>
+    <span  style="background-color: {{ color.value_orig }}" class="height-4 width-full radius-sm display-inline-block text-middle margin-right-1"></span>
   </span>
   <span class="grid-col-2">
-    <span class="utility-class">'{{ color.family_token }}'</span>
+    <span style="background-color: {{ color.value }}" class="height-4 width-full radius-sm display-inline-block text-middle margin-right-1"></span>
   </span>
-  <span class="grid-col-1">
-    {% if color.grade_token %}
-    <span class="utility-class">{{ color.grade_token }}</span>
-    {% else %}
-    <span>—</span>
-    {% endif %}
-  </span>
-  <span class="grid-col-2">
-    {% if color.variant_token %}
-    <span class="utility-class">'{{ color.variant_token }}'</span>
-    {% else %}
-    <span>—</span>
-    {% endif %}
-  </span>
-  <span class="grid-col-3">
+  <span class="grid-col-4">
     {% if color.value %}
-    <span class="utility-class bg-transparent border border-base-light">${{ color.utility }}</span>
+    <span class="utility-class bg-transparent border border-base-light">{{ color.utility }}</span>
     {% else %}
     <span>—</span>
     {% endif %}
   </span>
-  <span class="grid-col-fill text-right font-mono-3">
+  <span class="grid-col-2 text-right font-mono-3">
+    {% if color.value_orig %}
+    <span>{{ color.value_orig }}</span>
+    {% else %}
+    <span>—</span>
+    {% endif %}
+  </span>
+  <span class="grid-col-2 text-right font-mono-3">
     {% if color.value %}
     <span>{{ color.value }}</span>
     {% else %}

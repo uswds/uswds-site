@@ -22,6 +22,7 @@ const SWITCHES = {
   LUMINANCE: 'l',
   APPLY_LUM: 'al',
   CONTRAST: 'c',
+  CONTRAST_ALL: 'ca',
   FAMILY: 'f',
   DEBUG: 'd',
 };
@@ -70,17 +71,15 @@ class ColorFamily {
 }
 
 class ContrastResult {
-  constructor({ ratio, base, contrast, name }) {
+  constructor({ ratio, base, contrast }) {
     this.ratio = ratio,
     this.base = base;
     this.contrast = contrast;
-    this.name = name;
   }
 
   toJSON() {
     return {
       ratio: this.ratio,
-      name: this.name,
       base: this.base,
       contrast: this.contrast,
     };
@@ -125,9 +124,6 @@ const WHITE = new Color({ grade: 0, value: '#ffffff', name: 'white' });
 const BLACK = new Color({ grade: 100, value: '#000000', name: 'black' });
 const MIN_CONTRAST_AA = 4.5;
 const MIN_CONTRAST_AA_LARGE = 3;
-
-// const AA_CONTRAST_DISTANCE = 50;
-// const COLOR_GRADE_INCREMENT = 10;
 
 const formatColorName = (family, grade) => `${family}-${grade}`;
 
@@ -193,16 +189,16 @@ const applyLuminance = (colorFamily) => {
  * @param {String} name the name of the color family
  * @returns new ContrastResult
  */
-const contrastResultFactory = (baseColor, contrastColor, name) =>
+const contrastResultFactory = (baseColor, contrastColor) =>
   new ContrastResult({
     ratio: baseColor.contrastBetween(contrastColor),
-    base: baseColor.grade,
-    contrast: contrastColor.grade,
-    name,
+    base: baseColor.toString(),
+    contrast: contrastColor.toString(),
   });
 
-const contrastForFamily = (colorFamily) => {
+const contrastForFamily = (colorFamily, familyB = null) => {
   const { name } = colorFamily
+  const nextColorFamily = familyB ? familyB : colorFamily;
   const output = [];
 
   console.log(`\nChecking contrast for color family ${name}.`);
@@ -224,16 +220,16 @@ const contrastForFamily = (colorFamily) => {
     while (adjustedGrade >= 0) {
       if (adjustedGrade === 0) {
         logger(`Comparing color grade ${formatColorName(name, grade)} with white.`);
-        contrastResult = contrastResultFactory(color, WHITE, name);
+        contrastResult = contrastResultFactory(color, WHITE);
       } else {
-        const nextColor = colorFamily.findByGrade(adjustedGrade);
+        const nextColor = nextColorFamily.findByGrade(adjustedGrade);
 
         if (!nextColor) {
           break;
         }
 
         logger(`Comparing color grade ${color.toString()} with ${nextColor.toString()}`);
-        contrastResult = contrastResultFactory(color, nextColor, name);
+        contrastResult = contrastResultFactory(color, nextColor);
       }
 
       if (!contrastResult.isCompliant()) {
@@ -248,16 +244,16 @@ const contrastForFamily = (colorFamily) => {
     while (adjustedGrade <= 100) {
       if (adjustedGrade === 100) {
         logger(`Comparing color grade ${color.toString()} with black.`);
-        contrastResult = contrastResultFactory(color, BLACK, name);
+        contrastResult = contrastResultFactory(color, BLACK);
       } else {
-        const nextColor = colorFamily.findByGrade(adjustedGrade);
+        const nextColor = nextColorFamily.findByGrade(adjustedGrade);
 
         if (!nextColor) {
           break;
         }
 
         logger(`Comparing color grade ${color.toString()} with ${nextColor.toString()}`);
-        contrastResult = contrastResultFactory(color, nextColor, name);
+        contrastResult = contrastResultFactory(color, nextColor);
       }
 
       if (!contrastResult.isCompliant()) {
@@ -290,7 +286,21 @@ const reportContrastErrors = (colorFamily) => {
 
 logger = debug(args[SWITCHES.DEBUG]);
 
-if (args[SWITCHES.APPLY_LUM]) {
+if (args[SWITCHES.CONTRAST_ALL]) {
+  const familyNames = Object.keys(COLORS);
+  const totalFamilies = familyNames.length;
+  let totalErrors = [];
+
+  for (let i = 0; i < totalFamilies; i++) {
+    for (let j = i + 1; j < totalFamilies; j++) {
+      const familyA = COLORS[familyNames[i]];
+      const familyB = COLORS[familyNames[j]];
+
+      totalErrors = totalErrors.concat(contrastForFamily(familyA, familyB));
+    }
+  }
+  console.log(totalErrors);
+} else if (args[SWITCHES.APPLY_LUM]) {
   const family = COLORS[args[SWITCHES.FAMILY]];
 
   if (!family) {

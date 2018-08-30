@@ -22,6 +22,7 @@ const SWITCHES = {
   LUMINANCE: 'l',
   APPLY_LUM: 'al',
   CONTRAST: 'c',
+  CONTRAST_ALL: 'ca',
   FAMILY: 'f',
   DEBUG: 'd',
 };
@@ -126,9 +127,6 @@ const BLACK = new Color({ grade: 100, value: '#000000', name: 'black' });
 const MIN_CONTRAST_AA = 4.5;
 const MIN_CONTRAST_AA_LARGE = 3;
 
-// const AA_CONTRAST_DISTANCE = 50;
-// const COLOR_GRADE_INCREMENT = 10;
-
 const formatColorName = (family, grade) => `${family}-${grade}`;
 
 /**
@@ -200,6 +198,73 @@ const contrastResultFactory = (baseColor, contrastColor, name) =>
     contrast: contrastColor.grade,
     name,
   });
+
+const contrastBetweenFamilies = (familyA, familyB) => {
+  const { name } = familyA;
+  const output = [];
+
+  for (let i = 0; i < familyA.colors.length; i++) {
+    const color = familyA.colors[i];
+    const { grade, value } = color;
+    let adjustedGrade = grade;
+    let ratio;
+    let contrast;
+    let contrastResult;
+
+    if (grade < 40) {
+      continue;
+    }
+
+    adjustedGrade -= 40;
+    while (adjustedGrade >= 0) {
+      if (adjustedGrade === 0) {
+        logger(`Comparing color grade ${formatColorName(name, grade)} with white.`);
+        contrastResult = contrastResultFactory(color, WHITE, name);
+      } else {
+        const nextColor = familyB.findByGrade(adjustedGrade);
+
+        if (!nextColor) {
+          break;
+        }
+
+        logger(`Comparing color grade ${color.toString()} with ${nextColor.toString()}`);
+        contrastResult = contrastResultFactory(color, nextColor, name);
+      }
+
+      if (!contrastResult.isCompliant()) {
+        output.push(contrastResult);
+      }
+
+      adjustedGrade -= 10;
+    }
+
+    adjustedGrade = grade + 40;
+
+    while (adjustedGrade <= 100) {
+      if (adjustedGrade === 100) {
+        logger(`Comparing color grade ${color.toString()} with black.`);
+        contrastResult = contrastResultFactory(color, BLACK, name);
+      } else {
+        const nextColor = familyB.findByGrade(adjustedGrade);
+
+        if (!nextColor) {
+          break;
+        }
+
+        logger(`Comparing color grade ${color.toString()} with ${nextColor.toString()}`);
+        contrastResult = contrastResultFactory(color, nextColor, name);
+      }
+
+      if (!contrastResult.isCompliant()) {
+        output.push(contrastResult);
+      }
+
+      adjustedGrade += 10;
+    }
+  }
+
+  return output;
+};
 
 const contrastForFamily = (colorFamily) => {
   const { name } = colorFamily
@@ -290,7 +355,21 @@ const reportContrastErrors = (colorFamily) => {
 
 logger = debug(args[SWITCHES.DEBUG]);
 
-if (args[SWITCHES.APPLY_LUM]) {
+if (args[SWITCHES.CONTRAST_ALL]) {
+  const familyNames = Object.keys(COLORS);
+  const totalFamilies = familyNames.length;
+  let totalErrors = [];
+
+  for (let i = 0; i < totalFamilies; i++) {
+    for (let j = i + 1; j < totalFamilies; j++) {
+      const familyA = COLORS[familyNames[i]];
+      const familyB = COLORS[familyNames[j]];
+
+      totalErrors = totalErrors.concat(contrastBetweenFamilies(familyA, familyB));
+    }
+  }
+  console.log(totalErrors);
+} else if (args[SWITCHES.APPLY_LUM]) {
   const family = COLORS[args[SWITCHES.FAMILY]];
 
   if (!family) {

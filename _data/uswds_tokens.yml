@@ -656,7 +656,7 @@ colors:
         family_token: 'red-warm'
         grade_token: '5'
         variant_token: false
-        value:      '#f2f0ee'
+        value:      '#f6efea'
         value_orig: '#faf7f5'
       - utility: red-warm-10
         family_token: 'red-warm'
@@ -727,19 +727,19 @@ colors:
         family_token: 'red-warm'
         grade_token: '20'
         variant_token: 'vivid'
-        value:      '#f1bfa2'
+        value:      '#f6bd9c'
         value_orig: '#eaa076'
       - utility: red-warm-30v
         family_token: 'red-warm'
         grade_token: '30'
         variant_token: 'vivid'
-        value:      '#ec9878'
+        value:      '#f39268'
         value_orig: '#e67549'
       - utility: red-warm-40v
         family_token: 'red-warm'
         grade_token: '40'
         variant_token: 'vivid'
-        value:      '#ef6828'
+        value:      '#ee601d'
         value_orig: '#ee601d'
       - utility: red-warm-50v
         family_token: 'red-warm'

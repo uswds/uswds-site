@@ -1835,7 +1835,7 @@ colors:
         family_token: 'cyan'
         grade_token: '5'
         variant_token: false
-        value:      '#e4f3f6'
+        value:      '#e7f6f8'
         value_orig: '#e8f7fa'
       - utility: cyan-10
         family_token: 'cyan'
@@ -1847,13 +1847,13 @@ colors:
         family_token: 'cyan'
         grade_token: '20'
         variant_token: false
-        value:      '#96d3e1'
+        value:      '#9ddfeb'
         value_orig: '#9ddceb'
       - utility: cyan-30
         family_token: 'cyan'
         grade_token: '30'
         variant_token: false
-        value:      '#64b9c8'
+        value:      '#6ecbdb'
         value_orig: '#6ecbdb'
       - utility: cyan-40
         family_token: 'cyan'
@@ -1913,7 +1913,7 @@ colors:
         family_token: 'cyan'
         grade_token: '30'
         variant_token: 'vivid'
-        value:      '#02bde2'
+        value:      '#00bde3'
         value_orig: '#02c2e8'
       - utility: cyan-40v
         family_token: 'cyan'

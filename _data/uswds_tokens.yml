@@ -2915,7 +2915,7 @@ colors:
         family_token: 'gray-warm'
         grade_token: '4'
         variant_token: false
-        value:      '#f3f3ee'
+        value:      '#f5f5f0'
         value_orig: '#f5f5f0'
       - utility: gray-warm-5
         family_token: 'gray-warm'

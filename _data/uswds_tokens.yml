@@ -1550,13 +1550,13 @@ colors:
         family_token: 'green-cool'
         grade_token: '10'
         variant_token: 'vivid'
-        value:      '#c7f1c4'
+        value:      '#a4ef9f'
         value_orig: '#91e48b'
       - utility: green-cool-20v
         family_token: 'green-cool'
         grade_token: '20'
         variant_token: 'vivid'
-        value:      '#8cdc86'
+        value:      '#6dd765'
         value_orig: '#61cf59'
       - utility: green-cool-30v
         family_token: 'green-cool'

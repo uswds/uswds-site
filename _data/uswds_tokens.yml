@@ -2198,7 +2198,7 @@ colors:
         family_token: 'indigo-cool'
         grade_token: '5'
         variant_token: false
-        value:      '#eff0f6'
+        value:      '#eef0f9'
         value_orig: '#f5f6fc'
       - utility: indigo-cool-10
         family_token: 'indigo-cool'
@@ -2290,7 +2290,7 @@ colors:
         family_token: 'indigo-cool'
         grade_token: '60'
         variant_token: 'vivid'
-        value:      '#3b48db'
+        value:      '#4150f2'
         value_orig: '#4150f2'
       - utility: indigo-cool-70v
         family_token: 'indigo-cool'

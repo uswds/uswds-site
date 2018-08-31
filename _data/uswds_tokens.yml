@@ -1718,7 +1718,7 @@ colors:
         family_token: 'mint-cool'
         grade_token: '5'
         variant_token: false
-        value:      '#e6f3f2'
+        value:      '#e0f7f6'
         value_orig: '#f2fffe'
       - utility: mint-cool-10
         family_token: 'mint-cool'
@@ -1779,7 +1779,7 @@ colors:
         family_token: 'mint-cool'
         grade_token: '5'
         variant_token: 'vivid'
-        value:      '#d4f7f1'
+        value:      '#d5fbf3'
         value_orig: '#dbfff8'
       - utility: mint-cool-10v
         family_token: 'mint-cool'

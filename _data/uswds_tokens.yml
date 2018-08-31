@@ -2312,7 +2312,7 @@ colors:
         family_token: 'indigo'
         grade_token: '5'
         variant_token: false
-        value:      '#f0f0f4'
+        value:      '#efeff8'
         value_orig: '#fafaff'
       - utility: indigo-10
         family_token: 'indigo'
@@ -2400,7 +2400,7 @@ colors:
         family_token: 'indigo'
         grade_token: '50'
         variant_token: 'vivid'
-        value:      '#646ad5'
+        value:      '#656bd7'
         value_orig: '#656bd7'
       - utility: indigo-60v
         family_token: 'indigo'

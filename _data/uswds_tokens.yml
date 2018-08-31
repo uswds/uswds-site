@@ -1355,7 +1355,7 @@ colors:
         family_token: 'green'
         grade_token: '5'
         variant_token: false
-        value:      '#edf2e6'
+        value:      '#eaf4dd'
         value_orig: '#f7fcf0'
         value_2: '#edf2e6'
       - utility: green-10
@@ -1426,25 +1426,25 @@ colors:
         family_token: 'green'
         grade_token: '5'
         variant_token: 'vivid'
-        value:      '#e2f7cf'
+        value:      '#ddf9c7'
         value_orig: '#d7f4bd'
       - utility: green-10v
         family_token: 'green'
         grade_token: '10'
         variant_token: 'vivid'
-        value:      '#d0f1aa'
+        value:      '#c3ee90'
         value_orig: '#b4e876'
       - utility: green-20v
         family_token: 'green'
         grade_token: '20'
         variant_token: 'vivid'
-        value:      '#acd85d'
+        value:      '#98d035'
         value_orig: '#93cc2e'
       - utility: green-30v
         family_token: 'green'
         grade_token: '30'
         variant_token: 'vivid'
-        value:      '#8cbc44'
+        value:      '#7fb135'
         value_orig: '#81b532'
       - utility: green-40v
         family_token: 'green'

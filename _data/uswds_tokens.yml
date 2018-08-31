@@ -2544,7 +2544,7 @@ colors:
         family_token: 'violet'
         grade_token: '5'
         variant_token: false
-        value:      '#f1eff4'
+        value:      '#f4f1f9'
         value_orig: '#f7f5fa'
       - utility: violet-10
         family_token: 'violet'

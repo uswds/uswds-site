@@ -1951,7 +1951,7 @@ colors:
         family_token: 'blue'
         grade_token: '5'
         variant_token: false
-        value:      '#ebf1f5'
+        value:      '#eff6fb'
         value_orig: '#f5fbff'
         value_2: '#ebf1f5'
       - utility: blue-10

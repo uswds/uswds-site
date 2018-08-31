@@ -1066,7 +1066,7 @@ colors:
         family_token: 'gold'
         grade_token: '5'
         variant_token: 'vivid'
-        value:      '#fbf0d0'
+        value:      '#fef0c8'
         value_orig: '#fff4d4'
       - utility: gold-10v
         family_token: 'gold'

@@ -2779,7 +2779,7 @@ colors:
         family_token: 'magenta'
         grade_token: '5'
         variant_token: false
-        value:      '#f4eff0'
+        value:      '#f9f0f2'
         value_orig: '#faf5f6'
       - utility: magenta-10
         family_token: 'magenta'
@@ -2863,7 +2863,7 @@ colors:
         family_token: 'magenta'
         grade_token: '40'
         variant_token: 'vivid'
-        value:      '#fa4f9b'
+        value:      '#fd4496'
         value_orig: '#fa3c91'
       - utility: magenta-50v
         family_token: 'magenta'

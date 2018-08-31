@@ -2661,7 +2661,7 @@ colors:
         family_token: 'violet-warm'
         grade_token: '5'
         variant_token: false
-        value:      '#f5eef6'
+        value:      '#f8f0f9'
         value_orig: '#fef7ff'
       - utility: violet-warm-10
         family_token: 'violet-warm'

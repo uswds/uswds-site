@@ -888,7 +888,7 @@ colors:
         family_token: 'orange'
         grade_token: '5'
         variant_token: false
-        value:      '#f3efec'
+        value:      '#fceee2'
         value_orig: '#fffbf7'
       - utility: orange-10
         family_token: 'orange'

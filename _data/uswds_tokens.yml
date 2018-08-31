@@ -1668,13 +1668,13 @@ colors:
         family_token: 'mint'
         grade_token: '10'
         variant_token: 'vivid'
-        value:      '#89fbd5'
+        value:      '#5dfdc8'
         value_orig: '#30f8b5'
       - utility: mint-20v
         family_token: 'mint'
         grade_token: '20'
         variant_token: 'vivid'
-        value:      '#06e59a'
+        value:      '#0ceda6'
         value_orig: '#06ec9f'
       - utility: mint-30v
         family_token: 'mint'

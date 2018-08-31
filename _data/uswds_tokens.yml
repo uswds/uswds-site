@@ -498,37 +498,37 @@ colors:
       value: '#000000'
   basic:
     - token: red
-      value: '#e82207'
+      value: '#e52207'
       var: $color-red-50v
     - token: orange
-      value: '#ff7b0f'
+      value: '#e66f0e'
       var: $color-orange-40v
     - token: gold
-      value: '#e6a100'
+      value: '#e5a000'
       var: $color-gold-30v
     - token: yellow
-      value: '#edc730'
+      value: '#ffcb00'
       var: $color-yellow-20v
     - token: green
-      value: '#73a22b'
+      value: '#719f2a'
       var: $color-green-40v
     - token: mint
-      value: '#04c786'
+      value: '#04c585'
       var: $color-mint-30v
     - token: cyan
-      value: '#02c2e8'
+      value: '#00bde3'
       var: $color-cyan-30v
     - token: blue
-      value: '#367bb4'
+      value: '#357ab2'
       var: $color-blue-50
     - token: indigo
       value: '#8889db'
       var: $color-indigo-40
     - token: violet
-      value: '#b07bed'
+      value: '#ad79e9'
       var: $color-violet-40v
     - token: magenta
-      value: '#c84180'
+      value: '#c84281'
       var: $color-magenta-50
   system:
     red:

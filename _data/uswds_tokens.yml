@@ -3091,13 +3091,13 @@ colors:
         family_token: 'gray-cool'
         grade_token: '5'
         variant_token: false
-        value:      '#eef0f1'
+        value:      '#edeff0'
         value_orig: '#edeff0'
       - utility: gray-cool-10
         family_token: 'gray-cool'
         grade_token: '10'
         variant_token: false
-        value:      '#e4e6e8'
+        value:      '#dbdee1'
         value_orig: '#d5d8db'
       - utility: gray-cool-20
         family_token: 'gray-cool'

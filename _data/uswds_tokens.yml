@@ -1123,7 +1123,7 @@ colors:
         family_token: 'yellow'
         grade_token: '5'
         variant_token: false
-        value:      '#f3f0e6'
+        value:      '#faf3d1'
         value_orig: '#faf7ed'
       - utility: yellow-10
         family_token: 'yellow'
@@ -1195,7 +1195,7 @@ colors:
         family_token: 'yellow'
         grade_token: '20'
         variant_token: 'vivid'
-        value:      '#ecc630'
+        value:      '#ffcb00'
         value_orig: '#edc730'
       - utility: yellow-30v
         family_token: 'yellow'

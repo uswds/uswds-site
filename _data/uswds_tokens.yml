@@ -536,7 +536,7 @@ colors:
         family_token: 'red'
         grade_token: '5'
         variant_token: false
-        value:      '#f5efef'
+        value:      '#f9eeee'
         value_orig: '#fcf5f5'
       - utility: red-10
         family_token: 'red'

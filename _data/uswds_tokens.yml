@@ -1237,7 +1237,7 @@ colors:
         family_token: 'green-warm'
         grade_token: '5'
         variant_token: false
-        value:      '#f0f1e5'
+        value:      '#f1f4d7'
         value_orig: '#f9faed'
       - utility: green-warm-10
         family_token: 'green-warm'
@@ -1249,7 +1249,7 @@ colors:
         family_token: 'green-warm'
         grade_token: '20'
         variant_token: false
-        value:      '#c9cf7c'
+        value:      '#cbd17a'
         value_orig: '#ced47f'
       - utility: green-warm-30
         family_token: 'green-warm'
@@ -1304,7 +1304,7 @@ colors:
         family_token: 'green-warm'
         grade_token: '10'
         variant_token: 'vivid'
-        value:      '#e2f10f'
+        value:      '#e2f106'
         value_orig: '#e6f50f'
       - utility: green-warm-20v
         family_token: 'green-warm'

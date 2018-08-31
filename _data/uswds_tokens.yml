@@ -772,13 +772,13 @@ colors:
         family_token: 'orange-warm'
         grade_token: '5'
         variant_token: false
-        value:      '#f5efeb'
+        value:      '#faeee5'
         value_orig: '#fcf6f2'
       - utility: orange-warm-10
         family_token: 'orange-warm'
         grade_token: '10'
         variant_token: false
-        value:      '#f7e2d6'
+        value:      '#fbe0d0'
         value_orig: '#f7e1d5'
       - utility: orange-warm-20
         family_token: 'orange-warm'

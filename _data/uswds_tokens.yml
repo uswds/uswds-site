@@ -2162,7 +2162,7 @@ colors:
         family_token: 'blue-warm'
         grade_token: '40'
         variant_token: 'vivid'
-        value:      '#5890f0'
+        value:      '#5994f6'
         value_orig: '#5e99ff'
       - utility: blue-warm-50v
         family_token: 'blue-warm'

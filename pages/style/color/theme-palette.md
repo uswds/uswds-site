@@ -80,7 +80,7 @@ Each color family has seven possible lightness grades, from `lightest` to `darke
 {% endfor %}
 
 ## State color palette
-The state color palette is divided into four high-level role-based color families: `error`, `warn`, `success`, and `disabled`.
+The state color palette is divided into four high-level role-based color families: `error`, `warning`, `success`, and `disabled`.
 
 Each color family except `disabled` has five possible lightness grades, from `lighter` to `darker`, though not every family needs to include a color at each grade. Some grades may be set to `false` in your project's theme settings.
 
@@ -186,12 +186,12 @@ $theme-color-error:                $theme-color-error-family, 50, 'vivid';
 $theme-color-error-dark:           $theme-color-error-family, 60;
 $theme-color-error-darker:         $theme-color-error-family, 70;
 
-$theme-color-warn-family:          'orange';
-$theme-color-warn-lighter:         $theme-color-warn-family, 10;
-$theme-color-warn-light:           $theme-color-warn-family, 20, 'vivid';
-$theme-color-warn:                 $theme-color-warn-family, 30, 'vivid';
-$theme-color-warn-dark:            $theme-color-warn-family, 40;
-$theme-color-warn-darker:          $theme-color-warn-family, 50;
+$theme-color-warning-family:       'gold';
+$theme-color-warning-lighter:      $theme-color-warning-family, 10;
+$theme-color-warning-light:        $theme-color-warning-family, 20, 'vivid';
+$theme-color-warning:              $theme-color-warning-family, 30, 'vivid';
+$theme-color-warning-dark:         $theme-color-warning-family, 40;
+$theme-color-warning-darker:       $theme-color-warning-family, 50;
 
 $theme-color-success-family:       'green-cool';
 $theme-color-success-lighter:      $theme-color-success-family, 20, 'vivid';

@@ -403,36 +403,36 @@ colors:
       value: '#6f3331'
       system: red-70
       theme_var: $theme-color-error-darker
-    - token: warn-lighter
-      family_token: 'warn'
+    - token: warning-lighter
+      family_token: 'warning'
       grade_token: 'lighter'
       value: '#fce2c5'
       system: orange-10
-      theme_var: $theme-color-warn-lighter
-    - token: warn-light
-      family_token: 'warn'
+      theme_var: $theme-color-warning-lighter
+    - token: warning-light
+      family_token: 'warning'
       grade_token: 'light'
       value: '#ffbc78'
       system: orange-20v
-      theme_var: $theme-color-warn-light
-    - token: warn
-      family_token: 'warn'
+      theme_var: $theme-color-warning-light
+    - token: warning
+      family_token: 'warning'
       grade_token: false
       value: '#fa9441'
       system: orange-30v
-      theme_var: $theme-color-warn
-    - token: warn-dark
-      family_token: 'warn'
+      theme_var: $theme-color-warning
+    - token: warning-dark
+      family_token: 'warning'
       grade_token: 'dark'
       value: '#db7725'
       system: orange-40
-      theme_var: $theme-color-warn-dark
-    - token: warn-darker
-      family_token: 'warn'
+      theme_var: $theme-color-warning-dark
+    - token: warning-darker
+      family_token: 'warning'
       grade_token: 'darker'
       value: '#a36830'
       system: orange-50
-      theme_var: $theme-color-warn-darker
+      theme_var: $theme-color-warning-darker
     - token: success-lighter
       family_token: 'success'
       grade_token: 'lighter'

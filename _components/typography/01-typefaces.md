@@ -31,7 +31,7 @@ order: 01
     <p>The combination of slim and thick weights gives the font family stylistic range, while conveying a desirable mix of classic, yet modern simplicity. Merriweather communicates warmth and credibility at both large and smaller font sizes.</p>
   </div>
 
-  <div class="typography-serif-intro usa-width-one-half usa-end-row usa-serif">
+  <div class="typography-serif-intro usa-width-one-half usa-end-row font-alt-md">
     <span class="text-huge">Aa</span>
     <div>
       <p class="text-tiny">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>

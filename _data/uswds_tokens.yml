@@ -153,48 +153,48 @@ colors:
     - token: base-lightest
       family_token: 'base'
       grade_token: 'lightest'
-      value: '#fcfcfc'
+      value: '#f0f0f0'
       reverse: true
       var: $color-base-lightest
-      system: gray-2
+      system: gray-5
       theme_var: $theme-color-base-lightest
     - token: base-lighter
       family_token: 'base'
       grade_token: 'lighter'
-      value: '#f0f0f0'
+      value: '#dbdee1'
       reverse: true
       var: $color-base-lighter
-      system: gray-5
+      system: gray-cool-10
       theme_var: $theme-color-base-lighter
     - token: base-light
       family_token: 'base'
       grade_token: 'light'
-      value: '#e6e6e6'
+      value: '#adadad'
       reverse: true
       var: $color-base-light
-      system: gray-10
+      system: gray-30
       theme_var: $theme-color-base-light
     - token: base
       family_token: 'base'
       grade_token: false
-      value: '#adadad'
+      value: '#757575'
       reverse: true
       var: $color-base
-      system: gray-30
+      system: gray-50
       theme_var: $theme-color-base
     - token: base-dark
       family_token: 'base'
       grade_token: 'dark'
-      value: '#757575'
+      value: '#585c62'
       var: $color-base-dark
-      system: gray-50
+      system: gray-cool-60
       theme_var: $theme-color-base-dark
     - token: base-darker
       family_token: 'base'
       grade_token: 'darker'
-      value: '#454545'
+      value: '#2d2e2f'
       var: $color-base-darker
-      system: gray-70
+      system: gray-cool-80
       theme_var: $theme-color-base-darker
     - token: base-darkest
       family_token: 'base'
@@ -406,32 +406,32 @@ colors:
     - token: warning-lighter
       family_token: 'warning'
       grade_token: 'lighter'
-      value: '#fce2c5'
-      system: orange-10
+      value: '#fef0c8'
+      system: gold-5v
       theme_var: $theme-color-warning-lighter
     - token: warning-light
       family_token: 'warning'
       grade_token: 'light'
-      value: '#ffbc78'
-      system: orange-20v
+      value: '#ffe3a3'
+      system: gold-10v
       theme_var: $theme-color-warning-light
     - token: warning
       family_token: 'warning'
       grade_token: false
-      value: '#fa9441'
-      system: orange-30v
+      value: '#fbc036'
+      system: gold-20v
       theme_var: $theme-color-warning
     - token: warning-dark
       family_token: 'warning'
       grade_token: 'dark'
-      value: '#db7725'
-      system: orange-40
+      value: '#e5a000'
+      system: gold-30v
       theme_var: $theme-color-warning-dark
     - token: warning-darker
       family_token: 'warning'
       grade_token: 'darker'
-      value: '#a36830'
-      system: orange-50
+      value: '#c2850c'
+      system: gold-40v
       theme_var: $theme-color-warning-darker
     - token: success-lighter
       family_token: 'success'

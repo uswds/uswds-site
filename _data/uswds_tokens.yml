@@ -376,8 +376,8 @@ colors:
     - token: error-lighter
       family_token: 'error'
       grade_token: 'lighter'
-      value: '#ff8d7b'
-      system: red-30v
+      value: '#f8e1de'
+      system: red-10
       theme_var: $theme-color-error-lighter
     - token: error-light
       family_token: 'error'
@@ -388,20 +388,20 @@ colors:
     - token: error
       family_token: 'error'
       grade_token: false
-      value: '#e52207'
-      system: red-50v
+      value: '#d83933'
+      system: red-50
       theme_var: $theme-color-error
     - token: error-dark
       family_token: 'error'
       grade_token: 'dark'
-      value: '#a23737'
-      system: red-60
+      value: '#b51d09'
+      system: red-60v
       theme_var: $theme-color-error-dark
     - token: error-darker
       family_token: 'error'
       grade_token: 'darker'
-      value: '#6f3331'
-      system: red-70
+      value: '#8b1303'
+      system: red-70v
       theme_var: $theme-color-error-darker
     - token: warning-lighter
       family_token: 'warning'
@@ -436,8 +436,8 @@ colors:
     - token: success-lighter
       family_token: 'success'
       grade_token: 'lighter'
-      value: '#6dd765'
-      system: green-cool-20v
+      value: '#e3f5e1'
+      system: green-cool-5
       theme_var: $theme-color-success-lighter
     - token: success-light
       family_token: 'success'
@@ -466,8 +466,8 @@ colors:
     - token: disabled
       family_token: 'disabled'
       grade_token: false
-      value: '#adadad'
-      system: gray-30
+      value: '#c9c9c9'
+      system: gray-20
       theme_var: $theme-color-disabled
   grayscale:
     - token: white

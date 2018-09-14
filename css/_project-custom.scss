@@ -1965,7 +1965,7 @@ li {
 }
 
 .utility-class {
-  @include u-bg('base-lighter');
+  @include u-bg('base-lightest');
   @include u-display('inline-block');
   @include u-font('mono', '2xs');
   @include u-margin(0);

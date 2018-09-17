@@ -1272,22 +1272,6 @@ code {
   margin-bottom: 6rem;
 }
 
-// This adds styleguide-only right and left margins for our disclaimer
-// Since the layout we use is not in a grid
-// .usa-banner {
-//   &.is-scrolled {
-//     @media (min-width: $medium-screen + $width-nav-sidebar) {
-//       display: none;
-//     }
-//   }
-// }
-
-// .usa-disclaimer-stage {
-//   @media (min-width: $medium-screen + $width-nav-sidebar) {
-//     display: block;
-//   }
-// }
-
 // External link styles
 
 #{$external-href} {

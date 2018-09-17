@@ -3,6 +3,8 @@ type: component
 title: Palette
 parent: colors
 order: 01
+redirect_to:
+  - /utilities/color/
 ---
 
 <p>This palette is designed to support a range of distinct visual styles that continue to feel connected. The intent of the palette is to convey a warm and open American spirit, with bright saturated tints of blue and red, grounded in sophisticated deeper shades of cool blues and grays. These colors — combined with clear hierarchy, good information design, and ample white space — should leave users feeling welcomed and in good hands.</p>

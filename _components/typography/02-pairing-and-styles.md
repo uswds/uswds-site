@@ -16,8 +16,8 @@ order: 02
       <h5>Default: Merriweather headings, Source Sans Pro body</h5>
     </button>
     <div id="font-pairing1-docs" class="usa-accordion-content">
-      <div class="usa-grid-full">
-        <div class="usa-width-two-thirds">
+      <div class="grid-row grid-gap">
+        <div class="tablet:grid-col-8">
           <p>A simple serif and sans serif combination designed to communicate warmth and credibility. Strong Merriweather heading weights offer clear information hierarchy and when paired with Source Sans Pro’s easy-to-read body text, create a clean and professional feel.</p>
           <p>This pairing is included in our design standards.</p>
           <p>Recommended applications: digital services that feature forms; basic and text heavy sites.</p>
@@ -29,7 +29,7 @@ order: 02
             <li>Source Sans Pro Italic 400</li>
           </ol>
         </div>
-        <aside class="usa-width-one-third usa-end-row">
+        <aside class="tablet:grid-col-4">
           <h6 class="usa-heading-alt">Page Performance</h6>
           <p><span class="usa-tag-big">Fast</span></p>
           <p>Ideal number of fonts. Will allow for optimal page load performance.</p>

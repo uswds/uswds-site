@@ -8,6 +8,13 @@ category: Components
 lead: This 12-column, responsive grid provides structure for website content.
 ---
 
+<div class="usa-alert usa-alert-warning" >
+  <div class="usa-alert-body">
+    <h3 class="usa-alert-heading">Deprecated component</h3>
+    <p class="usa-alert-text">This grid is deprecated. See the <a href="{{ site.baseurl }}/utilities/layout-grid/">new grid</a>.</p>
+  </div>
+</div>
+
 {% include code/preview.html component="grids" %}
 {% include code/accordion.html component="grids" %}
 <div class="usa-accordion-bordered">

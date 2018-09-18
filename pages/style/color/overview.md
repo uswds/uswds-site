@@ -7,6 +7,7 @@ lead: Color is a practical and emotional tool. It conveys personality, sets a to
 type: docs
 redirect_from:
   - /style/color/
+  - /components/colors/
 subnav:
   - text: Introduction
     href: '#introduction'

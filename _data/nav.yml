@@ -23,9 +23,11 @@ Components:
   - text: Overview
     href: /components/
   - href: /components/typography/
-  - href: /components/colors/
+  - text: Colors
+    href: /components/colors/
   - href: /components/icons/
-  - href: /components/grids/
+  - text: Grids
+    href: /components/grids/
   - href: /components/buttons/
   - href: /components/labels/
   - href: /components/tables/

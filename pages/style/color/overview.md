@@ -6,8 +6,9 @@ category: Style
 lead: Color is a practical and emotional tool. It conveys personality, sets a tone, attracts attention, and indicates importance.
 type: docs
 redirect_from:
-  - /style/color/
   - /components/colors/
+  - /style/color/
+  - /colors/
 subnav:
   - text: Introduction
     href: '#introduction'

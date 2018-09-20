@@ -39,11 +39,11 @@ project to our list.
 <a href="https://github.com/uswds/uswds/blob/develop/docs/WHO_IS_USING_USWDS.md" class="usa-button">View our list on GitHub</a>
 {% endcapture %}
 
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
+<div class="grid-row grid-gap">
+  <div class="tablet:grid-col">
     {{ blog | markdownify }}
   </div>
-  <div class="usa-width-one-half">
+  <div class="tablet:grid-col">
     {{ in_wild | markdownify }}
   </div>
 </div>

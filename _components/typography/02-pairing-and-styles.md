@@ -16,8 +16,8 @@ order: 02
       <h5>Default: Merriweather headings, Source Sans Pro body</h5>
     </button>
     <div id="font-pairing1-docs" class="usa-accordion-content">
-      <div class="usa-grid-full">
-        <div class="usa-width-two-thirds">
+      <div class="grid-row grid-gap">
+        <div class="tablet:grid-col-8">
           <p>A simple serif and sans serif combination designed to communicate warmth and credibility. Strong Merriweather heading weights offer clear information hierarchy and when paired with Source Sans Pro’s easy-to-read body text, create a clean and professional feel.</p>
           <p>This pairing is included in our design standards.</p>
           <p>Recommended applications: digital services that feature forms; basic and text heavy sites.</p>
@@ -29,9 +29,9 @@ order: 02
             <li>Source Sans Pro Italic 400</li>
           </ol>
         </div>
-        <aside class="usa-width-one-third usa-end-row">
+        <aside class="tablet:grid-col-4">
           <h6 class="usa-heading-alt">Page Performance</h6>
-          <p><span class="usa-tag-big">Fast</span></p>
+          <p><span class="usa-tag usa-tag-big">Fast</span></p>
           <p>Ideal number of fonts. Will allow for optimal page load performance.</p>
           <h6 class="usa-heading-alt">Example</h6>
           <p>
@@ -43,11 +43,11 @@ order: 02
         </aside>
       </div>
       <h6 class="usa-heading-alt">Web Hierarchy</h6>
-      <div class="usa-grid usa-typography-example-font">
-        <div class="usa-width-one-half">
+      <div class="grid-row usa-typography-example-font">
+        <div class="tablet:grid-col-6">
           <h3 class="usa-display">Display</h3>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Merriweather’<br>
             font-weight: 700<br>
@@ -55,10 +55,10 @@ order: 02
             line-height: 1.3em/68px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h1>Heading 1</h1>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Merriweather’<br>
             font-weight: 700<br>
@@ -66,10 +66,10 @@ order: 02
             line-height: 1.3em/52px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h2>Heading 2</h2>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Merriweather’<br>
             font-weight: 700<br>
@@ -77,10 +77,10 @@ order: 02
             line-height: 1.3em/39px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h3>Heading 3</h3>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Merriweather’<br>
             font-weight: 700<br>
@@ -88,10 +88,10 @@ order: 02
             line-height: 1.3em/26px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h4>Heading 4</h4>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Merriweather’<br>
             font-weight: 700<br>
@@ -99,10 +99,10 @@ order: 02
             line-height: 1.3em/22px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h5>Heading 5</h5>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Merriweather’<br>
             font-weight: 700<br>
@@ -110,10 +110,10 @@ order: 02
             line-height: 1.3em/20px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h6>Heading 6</h6>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Source Sans Pro’<br>
             font-weight: 400<br>
@@ -122,10 +122,10 @@ order: 02
             text-transform: uppercase
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
+        <div class="usa-font-example tablet:grid-col-6">
           <p class="usa-font-lead">Lead <br>paragraph</p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Merriweather’<br>
             font-weight: 400<br>
@@ -133,10 +133,10 @@ order: 02
             line-height: 1.7em/34px
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
+        <div class="usa-font-example tablet:grid-col-6">
           <p class="font-example-paragraph">Body copy. A series of sentences together which make a paragraph.</p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Source Sans Pro’<br>
             font-weight: 400<br>
@@ -144,10 +144,10 @@ order: 02
             line-height: 1.5em/26px
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
+        <div class="usa-font-example tablet:grid-col-6">
           <p class="font-example-paragraph"><em>Italic body copy. A series of sentences together which make a paragraph.</em></p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Source Sans Pro’<br>
             font-style: Italic<br>
@@ -168,9 +168,8 @@ order: 02
       <h5>Merriweather headings and body</h5>
     </button>
     <div id="font-pairing3-docs" class="usa-accordion-content">
-
-      <div class="usa-grid-full">
-        <div class="usa-width-two-thirds">
+      <div class="grid-row">
+        <div class="tablet:grid-col-8">
           <p>The most formal of the options, this pairing uses Merriweather for both headings and body text. The full suite of serif styles communicates trustworthiness, while Merriweather’s contemporary shapes convey freshness and a modern relevance. The weights are designed to pair together for easy reading and clean page design.</p>
           <p>Recommended applications: sites which need to convey reliability and trust; basic and text heavy sites.</p>
           <p>Font weights included in this package:</p>
@@ -181,18 +180,18 @@ order: 02
             <li>Merriweather, Light 300</li>
           </ol>
         </div>
-        <aside class="usa-width-one-third usa-end-row">
+        <aside class="tablet:grid-col-4">
           <h6 class="usa-heading-alt">Page Performance</h6>
-          <p><span class="usa-tag-big">Fast</span></p>
+          <p><span class="usa-tag usa-tag-big">Fast</span></p>
           <p>Ideal number of fonts. Will allow for optimal page load performance.</p>
         </aside>
       </div>
       <h6 class="usa-heading-alt">Web Hierarchy</h6>
-      <div class="serif-robust serif-body usa-grid usa-typography-example-font">
-        <div class="usa-width-one-half">
+      <div class="serif-robust serif-body grid-row usa-typography-example-font">
+        <div class="tablet:grid-col-6">
           <h3 class="usa-display">Display 1</h3>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Merriweather’<br>
             font-weight: 700<br>
@@ -200,10 +199,10 @@ order: 02
             line-height: 1.3em/68px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h3 class="usa-display usa-display-alt">Display 2</h3>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Merriweather’<br>
             font-weight: 300<br>
@@ -211,10 +210,10 @@ order: 02
             line-height: 1.3em/52px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h1>Heading 1</h1>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Merriweather’<br>
             font-weight: 700<br>
@@ -222,10 +221,10 @@ order: 02
             line-height: 1.3em/52px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h2>Heading 2</h2>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Merriweather’<br>
             font-weight: 700<br>
@@ -233,10 +232,10 @@ order: 02
             line-height: 1.3em/39px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h3>Heading 3</h3>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Merriweather’<br>
             font-weight: 700<br>
@@ -244,10 +243,10 @@ order: 02
             line-height: 1.3em/26px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h4>Heading 4</h4>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Merriweather’<br>
             font-weight: 700<br>
@@ -255,10 +254,10 @@ order: 02
             line-height: 1.3em/22px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h5>Heading 5</h5>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Merriweather’<br>
             font-weight: 700<br>
@@ -266,10 +265,10 @@ order: 02
             line-height: 1.3em/20px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h6>Heading 6</h6>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Merriweather’<br>
             font-weight: 400<br>
@@ -278,10 +277,10 @@ order: 02
             text-transform: uppercase
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
+        <div class="usa-font-example tablet:grid-col-6">
           <p class="usa-font-lead">Lead <br>paragraph 1</p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Merriweather’<br>
             font-weight: 300<br>
@@ -289,10 +288,10 @@ order: 02
             line-height: 1.7em/34px
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
+        <div class="usa-font-example tablet:grid-col-6">
           <p class="usa-font-lead usa-font-lead-alt">Lead <br>paragraph 2</p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Merriweather’<br>
             font-weight: 400<br>
@@ -300,10 +299,10 @@ order: 02
             line-height: 1.7em/29px
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
+        <div class="usa-font-example tablet:grid-col-6">
           <p class="font-example-paragraph">Body copy. A series of sentences together which make a paragraph.</p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Merriweather’<br>
             font-weight: 400<br>
@@ -311,10 +310,10 @@ order: 02
             line-height: 1.7em/26px
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
+        <div class="usa-font-example tablet:grid-col-6">
           <p class="font-example-paragraph"><em>Italic body copy. A series of sentences together which make a paragraph.</em></p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Merriweather’<br>
             font-style: Italic<br>
@@ -335,9 +334,8 @@ order: 02
       <h5>Source Sans Pro headings, Merriweather body</h5>
     </button>
     <div id="font-pairing4-docs" class="usa-accordion-content">
-
-      <div class="usa-grid-full">
-        <div class="usa-width-two-thirds">
+      <div class="grid-row">
+        <div class="tablet:grid-col-8">
           <p>A variation on the serif and sans serif pairing, this combination uses multiple weights of Source Sans Pro for clear headings combined with the formal feeling of Merriweather for body text. This pair similarly communicates professionalism, with extra emphasis on sleek and legible headings.</p>
           <p>Recommended applications: digital services that feature forms; basic and text heavy sites; marketing sites.</p>
           <p>Font weights included in this package:</p>
@@ -348,18 +346,18 @@ order: 02
             <li>Merriweather, Italic 400</li>
           </ol>
         </div>
-        <aside class="usa-width-one-third usa-end-row">
+        <aside class="tablet:grid-col-4">
           <h6 class="usa-heading-alt">Page Performance</h6>
-          <p><span class="usa-tag-big">Fast</span></p>
+          <p><span class="usa-tag usa-tag-big">Fast</span></p>
           <p>Ideal number of fonts. Will allow for optimal page load performance.</p>
         </aside>
       </div>
       <h6 class="usa-heading-alt">Web Hierarchy</h6>
-      <div class="sans-style serif-body usa-grid usa-typography-example-font">
-        <div class="usa-width-one-half">
+      <div class="sans-style serif-body grid-row usa-typography-example-font">
+        <div class="tablet:grid-col-6">
           <h3 class="usa-display">Display 1</h3>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Source Sans Pro’<br>
             font-weight: 700<br>
@@ -367,10 +365,10 @@ order: 02
             line-height: 1.3em/77px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h1>Heading 1</h1>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Source Sans Pro’<br>
             font-weight: 700<br>
@@ -378,10 +376,10 @@ order: 02
             line-height: 1.3em/57px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h2>Heading 2</h2>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Source Sans Pro’<br>
             font-weight: 700<br>
@@ -389,10 +387,10 @@ order: 02
             line-height: 1.3em/44px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h3>Heading 3</h3>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Source Sans Pro’<br>
             font-weight: 700<br>
@@ -400,10 +398,10 @@ order: 02
             line-height: 1.3em/31px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h4>Heading 4</h4>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Source Sans Pro’<br>
             font-weight: 700<br>
@@ -411,10 +409,10 @@ order: 02
             line-height: 1.3em/25px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h5>Heading 5</h5>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Source Sans Pro’<br>
             font-weight: 700<br>
@@ -422,10 +420,10 @@ order: 02
             line-height: 1.3em/21px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h6>Heading 6</h6>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Source Sans Pro’<br>
             font-weight: 400<br>
@@ -434,10 +432,10 @@ order: 02
             text-transform: uppercase
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
+        <div class="usa-font-example tablet:grid-col-6">
           <p class="usa-font-lead">Lead <br>paragraph</p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Source Sans Pro’<br>
             font-weight: 300<br>
@@ -445,10 +443,10 @@ order: 02
             line-height: 1.5em/33px
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
+        <div class="usa-font-example tablet:grid-col-6">
           <p class="font-example-paragraph">Body copy. A series of sentences together which make a paragraph.</p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Merriweather’<br>
             font-weight: 400<br>
@@ -456,10 +454,10 @@ order: 02
             line-height: 1.7em/26px
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
+        <div class="usa-font-example tablet:grid-col-6">
           <p class="font-example-paragraph"><em>Italic body copy. A series of sentences together which make a paragraph.</em></p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Merriweather’<br>
             font-style: Italic<br>
@@ -480,9 +478,8 @@ order: 02
       <h5>Source Sans Pro headings and body</h5>
     </button>
     <div id="font-pairing5-docs" class="usa-accordion-content">
-
-      <div class="usa-grid-full">
-        <div class="usa-width-two-thirds">
+      <div class="grid-row">
+        <div class="tablet:grid-col-8">
           <p>Inspired by the growth of simple and welcoming type in modern web UI design, this suite uses Source Sans Pro exclusively. With a range of weights designed to fit into heading styles to clearly communicate hierarchy of information, this pairing can support both extremely simple designs and more polished, promotional sites.</p>
           <p>Recommended applications: digital services that feature forms; basic and text heavy sites; marketing sites.</p>
           <p>Font weights included in this package:</p>
@@ -493,9 +490,9 @@ order: 02
             <li>Source Sans Pro, Italic 400</li>
           </ol>
         </div>
-        <aside class="usa-width-one-third usa-end-row">
+        <aside class="tablet:grid-col-4">
           <h6 class="usa-heading-alt">Page Performance</h6>
-          <p><span class="usa-tag-big">Fast</span></p>
+          <p><span class="usa-tag usa-tag-big">Fast</span></p>
           <p>Ideal number of fonts. Will allow for optimal page load performance.</p>
           <h6 class="usa-heading-alt">Example</h6>
           <p>
@@ -507,11 +504,11 @@ order: 02
         </aside>
       </div>
       <h6 class="usa-heading-alt">Web Hierarchy</h6>
-      <div class="sans-style usa-grid usa-typography-example-font">
-        <div class="usa-width-one-half">
+      <div class="sans-style grid-row usa-typography-example-font">
+        <div class="tablet:grid-col-6">
           <h3 class="usa-display">Display 1</h3>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Source Sans Pro’<br>
             font-weight: 700<br>
@@ -519,10 +516,10 @@ order: 02
             line-height: 1.3em/77px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h3 class="usa-display usa-display-alt">Display 2</h3>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Source Sans Pro’<br>
             font-weight: 300<br>
@@ -530,10 +527,10 @@ order: 02
             line-height: 1.3em/57px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h1>Heading 1</h1>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Source Sans Pro’<br>
             font-weight: 700<br>
@@ -541,10 +538,10 @@ order: 02
             line-height: 1.3em/57px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h2>Heading 2</h2>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Source Sans Pro’<br>
             font-weight: 700<br>
@@ -552,10 +549,10 @@ order: 02
             line-height: 1.3em/44px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h3>Heading 3</h3>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Source Sans Pro’<br>
             font-weight: 700<br>
@@ -563,10 +560,10 @@ order: 02
             line-height: 1.3em/31px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h4>Heading 4</h4>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Source Sans Pro’<br>
             font-weight: 700<br>
@@ -574,10 +571,10 @@ order: 02
             line-height: 1.3em/25px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h5>Heading 5</h5>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Source Sans Pro’<br>
             font-weight: 700<br>
@@ -585,10 +582,10 @@ order: 02
             line-height: 1.3em/21px
           </p>
         </div>
-        <div class="usa-width-one-half">
+        <div class="tablet:grid-col-6">
           <h6>Heading 6</h6>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Source Sans Pro’<br>
             font-weight: 400<br>
@@ -597,10 +594,10 @@ order: 02
             text-transform: uppercase
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
+        <div class="usa-font-example tablet:grid-col-6">
           <p class="usa-font-lead">Lead <br>paragraph</p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Source Sans Pro’<br>
             font-weight: 300<br>
@@ -608,10 +605,10 @@ order: 02
             line-height: 1.5em/33px
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
+        <div class="usa-font-example tablet:grid-col-6">
           <p class="font-example-paragraph">Body copy. A series of sentences together which make a paragraph.</p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Source Sans Pro’<br>
             font-weight: 400<br>
@@ -619,10 +616,10 @@ order: 02
             line-height: 1.5em/26px
           </p>
         </div>
-        <div class="usa-font-example usa-width-one-half">
+        <div class="usa-font-example tablet:grid-col-6">
           <p class="font-example-paragraph"><em>Italic body copy. A series of sentences together which make a paragraph.</em></p>
         </div>
-        <div class="usa-width-one-half usa-end-row">
+        <div class="tablet:grid-col-6">
           <p class="usa-monospace">
             font-family: ‘Source Sans Pro’<br>
             font-style: Italic<br>

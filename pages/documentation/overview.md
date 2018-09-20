@@ -8,14 +8,14 @@ lead: The U.S. Web Design System provides design guidelines and code to help you
 
 ## Role-based guides
 
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
+<div class="grid-row grid-gap">
+  <div class="tablet:grid-col">
     <h3>
       <a href="{{ site.baseurl }}/getting-started/developers/">Developers</a>
     </h3>
     <p>Get started with our code base one of two ways: downloading the code as a zip file, or installing with npm.</p>
   </div>
-  <div class="usa-width-one-half">
+  <div class="tablet:grid-col">
     <h3>
       <a href="{{ site.baseurl }}/getting-started/designers/">Designers</a>
     </h3>

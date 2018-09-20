@@ -101,11 +101,11 @@ Develop and implement a custom look and feel for your site or application-specif
 </a>
 {% endcapture %}
 
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
+<div class="grid-row grid-gap">
+  <div class="tablet:grid-col">
     {{ assessment | markdownify }}
   </div>
-  <div class="usa-width-one-half">
+  <div class="tablet:grid-col">
     {{ customization | markdownify }}
   </div>
 </div>

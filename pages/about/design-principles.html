@@ -62,8 +62,8 @@ principles:
 ---
 
 {% for principle in page.principles %}
-  {% cycle '<div class="usa-grid-full">', '' %}
-  <div class="usa-width-one-half">
+  {% cycle '<div class="grid-row grid-gap margin-top-0">', '' %}
+  <div class="tablet:grid-col-6 margin-top-4">
     <h2>
       {% if principle.href %}<a href="{{ principle.href | relative_url }}">{% endif %}
       {{ principle.title }}

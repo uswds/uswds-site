@@ -445,8 +445,9 @@ body {
   display: none;
   max-width: 18.1rem;
 
-  @include at-media('desktop') {
+  @include at-media('tablet') {
     display: block;
+    width: 100%;
   }
 }
 

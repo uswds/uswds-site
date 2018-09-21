@@ -499,6 +499,7 @@ body {
   p {
     color: color('white');
     font-size: $small-font-size;
+    max-width: none;
     overflow: hidden;
 
     &:first-of-type,

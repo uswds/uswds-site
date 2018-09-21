@@ -1252,24 +1252,6 @@ code {
   .usa-hero-callout {
     border-radius: 0.3rem;
     max-width: 46rem;
-    padding: 3.2rem;
-
-    > :first-child,
-    > :last-child {
-      margin-bottom: 0;
-    }
-
-    .usa-button {
-      margin-top: 2em;
-    }
-  }
-
-  .usa-hero-callout-alt {
-    font-size: 2.7rem;
-  }
-
-  .usa-section-dark p {
-    margin-top: 0.8rem;
   }
 
   // Override for 4x1 media grid when it collapses to 2x2

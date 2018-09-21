@@ -6,15 +6,19 @@ layout: default
   {% if page.hero %}
   <section class="usa-hero">
     <div class="grid-container">
-      <div class="usa-hero-callout usa-section-dark">
+      <div class="usa-hero-callout">
         {% if page.hero.callout %}
-        <h2><span class="usa-hero-callout-alt">{{ page.hero.callout }}</span></h2>
+        <h2 class="usa-hero-heading">
+          <span class="usa-hero-callout-alt">{{ page.hero.callout }}</span>
+        </h2>
         {% endif %}
 
-        {{ page.hero.content | markdownify }}
+        <div class="usa-hero-content">
+          {{ page.hero.content | markdownify }}
+        </div>
 
         {% if page.hero.button %}
-          <a class="usa-button usa-button-big usa-button-secondary" href="{{ page.hero.button.href }}">
+          <a class="usa-button" href="{{ page.hero.button.href }}">
             {{ page.hero.button.text }}
           </a>
         {% endif %}

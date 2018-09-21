@@ -1542,6 +1542,12 @@ iframe {
 
 // Utilities CSS --------------------- //
 
+// Temp: see if this fixes CircleCI
+@mixin add-knockout-font-smoothing {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
 .is-inverse {
   @include add-knockout-font-smoothing;
 }
@@ -1687,12 +1693,6 @@ strong {
   + .output-rule {
     @include u-margin-top(.5);
   }
-}
-
-// Temp: see if this fixes CircleCI
-@mixin add-knockout-font-smoothing {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
 }
 
 .output-true {

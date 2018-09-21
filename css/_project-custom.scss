@@ -58,7 +58,14 @@ body {
     margin-left: $site-margins-mobile;
 
     @include at-media('desktop') {
+      display: initial;
       margin-left: $site-margins;
+    }
+
+    .usa-logo-text {
+      @include at-media('desktop') {
+        display: initial;
+      }
     }
   }
 

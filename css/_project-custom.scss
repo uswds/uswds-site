@@ -1689,6 +1689,12 @@ strong {
   }
 }
 
+// Temp: see if this fixes CircleCI
+@mixin add-knockout-font-smoothing {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
 .output-true {
   @include add-knockout-font-smoothing;
   @include u-bg('blue-50v');

@@ -50,14 +50,14 @@ body {
 .site-header {
   background-color: color('primary-darker');
 
-  @include media($nav-width) {
+  @include at-media('desktop') {
     border-bottom: none;
   }
 
   .site-logo {
     margin-left: $site-margins-mobile;
 
-    @include media($nav-width) {
+    @include at-media('desktop') {
       margin-left: $site-margins;
     }
   }
@@ -67,7 +67,7 @@ body {
     display: none;
     margin-top: -5px;
 
-    @include media($nav-width) {
+    @include at-media('desktop') {
       line-height: 8rem;
       margin-top: 0;
       display: block;
@@ -103,7 +103,7 @@ body {
 .site-header-navbar {
   border-bottom: none;
 
-  @include media($nav-width) {
+  @include at-media('desktop') {
     height: 8rem;
     width: 100%;
     display: block;
@@ -111,7 +111,7 @@ body {
 
   // Firefox fix so that navbar buttons to align right
   @-moz-document url-prefix() {
-    @include media($nav-width) {
+    @include at-media('desktop') {
       padding-top: 1px;
     }
   }
@@ -133,7 +133,7 @@ body {
 .sidenav-mobile {
   @include outline-inverse-button;
 
-  @include media($nav-width) {
+  @include at-media('desktop') {
     display: none;
   }
 
@@ -185,7 +185,7 @@ body {
 }
 
 .site-logo {
-  @include media($nav-width) {
+  @include at-media('desktop') {
     margin-top: 0;
   }
 
@@ -198,17 +198,22 @@ body {
     font-size: 1.4rem;
     line-height: 4rem;
 
-    @include media($nav-width) {
+    @include at-media('desktop') {
       font-size: $h3-font-size;
       line-height: 8rem;
     }
   }
 }
 
+@mixin nav-border-thick {
+  border-bottom: 0.7rem solid $color-primary;
+  padding-bottom: 0.9rem;
+}
+
 .site-nav-secondary {
   display: none;
 
-  @include media($nav-width) {
+  @include at-media('desktop') {
     background-color: color('white');
     border-bottom: 1px solid color('gray-cool-10');
     clear: both;
@@ -260,7 +265,7 @@ body {
 .sidenav {
   display: none;
 
-  @include media($nav-width) {
+  @include at-media('desktop') {
     display: block;
     float: left;
     margin-bottom: 525px;
@@ -297,7 +302,7 @@ body {
   position: relative;
   width: 100%;
 
-  @include media($nav-width) {
+  @include at-media('desktop') {
     width: calc(100% - #{$width-nav-sidebar});
   }
 
@@ -412,7 +417,7 @@ body {
     margin-bottom: 1rem;
     margin-right: 2rem;
 
-    @include media($medium-screen) {
+    @include at-media('tablet') {
       float: left;
       margin-bottom: 0;
     }
@@ -430,7 +435,7 @@ body {
     @include padding(2rem null);
     background-color: color('accent-cool-lighter');
 
-    @include media($medium-screen) {
+    @include at-media('tablet') {
       @include padding(3rem null 4rem null);
     }
   }
@@ -440,7 +445,7 @@ body {
   display: none;
   max-width: 18.1rem;
 
-  @include media($large-screen) {
+  @include at-media('desktop') {
     display: block;
   }
 }
@@ -480,7 +485,7 @@ body {
     line-height: $heading-line-height;
     margin-top: 2rem;
 
-    @include media($medium-screen) {
+    @include at-media('tablet') {
       margin-top: 0;
     }
   }
@@ -497,7 +502,7 @@ body {
 
     &:first-of-type,
     &:last-of-type {
-      @include media($medium-screen) {
+      @include at-media('tablet') {
         margin-top: 0;
       }
     }
@@ -574,7 +579,7 @@ body {
   }
 
   .usa-width-one-twelfth {
-    @include media($medium-screen) {
+    @include at-media('tablet') {
       @include padding(null 0);
     }
   }
@@ -615,7 +620,7 @@ h3 + .button_wrapper {
   margin-left: -1rem;
   padding: 0 1rem;
 
-  @include media($small-screen) {
+  @include at-media('mobile-lg') {
     display: table;
   }
 
@@ -630,109 +635,6 @@ h3 + .button_wrapper {
 
 .usa-heading {
   color: color('primary-dark');
-}
-
-// Colors -------------- //
-
-.usa-color-short {
-  height: 7rem;
-  margin-bottom: 1rem;
-}
-
-.usa-color-name {
-  font-size: 1.2rem;
-
-  @include media($medium-screen) {
-    margin: 0;
-  }
-
-  @include margin(0 null 1em);
-}
-
-.usa-color-row {
-  margin-bottom: 3rem;
-
-  .color-big {
-    @include media($medium-screen) {
-      float: left;
-      padding-right: 4%;
-      width: 32%;
-    }
-  }
-
-  .color-small {
-    float: left;
-    margin-right: 0;
-    width: 50%;
-
-    @include media($medium-screen) {
-      width: 17%;
-    }
-  }
-
-  p {
-    font-family: $font-monospace;
-    font-size: 1.5rem;
-
-    &:last-of-type {
-      font-size: 11px;
-    }
-  }
-}
-
-.usa-primary-color-section {
-  margin-bottom: 0;
-
-  @include media($medium-screen) {
-    margin-bottom: 8rem;
-  }
-
-  .usa-color-square {
-    @include span-columns(6);
-    margin-bottom: 7rem;
-    padding-bottom: 50%;
-    position: relative;
-
-    @include media($medium-screen) {
-      @include span-columns(3);
-      margin-bottom: 0;
-      padding-bottom: 19%;
-    }
-  }
-
-  .usa-mobile-end-row {
-    margin-right: 0;
-
-    @include media($medium-screen) {
-      margin-right: 2.35765%;
-    }
-  }
-
-  .usa-color-name {
-    margin: 0;
-  }
-}
-
-.usa-color-inner-content {
-  position: absolute;
-  top: 100%;
-}
-
-.usa-color-hex {
-  @include margin(1rem null 0);
-  font-weight: $font-bold;
-}
-
-.usa-color-text {
-  @include padding(1rem 2rem);
-  font-weight: $font-bold;
-  margin-bottom: .4rem;
-}
-
-.usa-color-outline {
-  .usa-color-text {
-    box-shadow: inset 0 0 0 1px color('gray-cool-60');
-  }
 }
 
 // Color background helpers
@@ -984,7 +886,7 @@ h6 {
 }
 
 .font-example-paragraph {
-  @include media($medium-screen) {
+  @include at-media('tablet') {
     width: 20rem;
   }
 }
@@ -1322,7 +1224,7 @@ code {
       margin-right: 2rem;
       max-width: 7rem;
 
-      @include media($large-screen) {
+      @include at-media('desktop') {
         float: none;
       }
     }
@@ -1333,7 +1235,7 @@ code {
     padding-bottom: 7.2rem;
     padding-top: 3.2rem;
 
-    @include media($large-screen) {
+    @include at-media('desktop') {
       padding-bottom: 10.6rem;
     }
   }
@@ -1415,7 +1317,7 @@ code {
 }
 
 .page-design-principles {
-  @include media($medium-screen) {
+  @include at-media('tablet') {
     .main-content .usa-grid-full {
       @include margin(4rem null 3rem null);
     }
@@ -1537,7 +1439,7 @@ code {
 .layout-demo {
   margin-bottom: 8.6rem;
 
-  @include media($medium-screen) {
+  @include at-media('tablet') {
     margin-bottom: 5.9rem;
   }
 }
@@ -1560,7 +1462,7 @@ code {
     background-size: 1rem;
     padding-left: 3.3rem;
 
-    @include media($medium-screen) {
+    @include at-media('tablet') {
       @include margin(0 1.5rem 0 null);
     }
   }
@@ -1571,7 +1473,7 @@ code {
   color: color('white');
   display: inline-block;
 
-  @include media($medium-screen) {
+  @include at-media('tablet') {
     @include margin(1em null);
   }
 }
@@ -1579,7 +1481,7 @@ code {
 .demo-footer-content {
   @include margin(null $site-margins-mobile);
 
-  @include media($medium-screen) {
+  @include at-media('tablet') {
     @include margin(null $site-margins);
   }
 }
@@ -1632,7 +1534,7 @@ iframe {
 // Utilities CSS --------------------- //
 
 .is-inverse {
-  @include add-font-smoothing;
+  @include add-knockout-font-smoothing;
 }
 
 .page-content {
@@ -1779,7 +1681,7 @@ strong {
 }
 
 .output-true {
-  @include add-font-smoothing;
+  @include add-knockout-font-smoothing;
   @include u-bg('blue-50v');
   @include u-display('inline-block');
   @include u-padding-y(0);
@@ -1919,7 +1821,7 @@ li {
 
   a {
     @extend .utility-scope-button;
-    @include add-font-smoothing;
+    @include add-knockout-font-smoothing;
     @include u-bg('blue-50v');
     @include u-text('white', 'no-underline');
 

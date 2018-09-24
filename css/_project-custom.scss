@@ -55,11 +55,11 @@ body {
   }
 
   .site-logo {
-    margin-left: $site-margins-mobile;
+    margin-left: units($theme-site-margins-mobile-width);
 
     @include at-media('desktop') {
       display: initial;
-      margin-left: $site-margins;
+      margin-left: units($theme-site-margins-width);
     }
 
     .usa-logo-text {
@@ -78,13 +78,13 @@ body {
       line-height: 8rem;
       margin-top: 0;
       display: block;
-      padding-right: $site-margins;
+      padding-right: units($theme-site-margins-width);
     }
 
     // scss-lint:disable SelectorDepth, NestingDepth
     li {
       display: inline;
-      font-family: $font-sans;
+      font-family: font-family('sans');
 
       &:last-child .usa-button {
         margin-right: 0;
@@ -162,7 +162,7 @@ body {
   li > button {
     @include button-unstyled;
     @include padding(0.7rem 1rem 0.7rem 1.6rem);
-    font-weight: $font-normal;
+    font-weight: font-weight('normal');
 
     &:hover {
       background-color: color('gray-cool-5');
@@ -201,19 +201,19 @@ body {
   }
 
   em {
-    font-family: $font-serif;
+    font-family: font-family('serif');
     font-size: 1.4rem;
     line-height: 4rem;
 
     @include at-media('desktop') {
-      font-size: $h3-font-size;
+      font-size: $theme-h3-font-size;
       line-height: 8rem;
     }
   }
 }
 
 @mixin nav-border-thick {
-  border-bottom: 0.4rem solid $color-primary;
+  border-bottom: 0.4rem solid color('primary');
   padding-bottom: 1rem;
 }
 
@@ -244,8 +244,8 @@ body {
 
   a {
     color: color('gray-cool-60');
-    font-size: $h5-font-size;
-    font-weight: $font-bold;
+    font-size: $theme-h5-font-size;
+    font-weight: font-weight('bold');
     line-height: $height-nav-secondary;
     padding: 1.5rem;
     text-decoration: none;
@@ -321,13 +321,13 @@ body {
 // Styleguide Content -------- //
 
 .styleguide-content {
-  @include padding(null $site-margins-mobile);
+  @include padding(null units($theme-site-margins-mobile-width));
   margin-bottom: 5em;
-  max-width: $site-max-width;
+  max-width: units($theme-site-max-width);
   position: relative;
 
-  @media (min-width: $nav-width) {
-    @include padding(null $site-margins);
+  @include at-media('desktop') {
+    @include padding(null units($theme-site-margins-width));
   }
 
   header {
@@ -360,7 +360,7 @@ body {
 %label-maturity {
   color: color('gray-cool-80');
   font-size: 1.4rem;
-  font-weight: $font-bold;
+  font-weight: font-weight('bold');
   margin-left: 1.2rem;
   position: absolute;
   text-decoration: none;
@@ -473,8 +473,8 @@ body {
   }
 
   h4 {
-    font-family: $font-sans;
-    font-weight: $font-normal;
+    font-family: font-family('sans');
+    font-weight: font-weight('normal');
     margin-bottom: 0;
     margin-top: 3px;
   }
@@ -490,7 +490,7 @@ body {
 
   .usa-media_block {
     clear: both;
-    line-height: $heading-line-height;
+    line-height: line-height('heading', 3);
     margin-top: 2rem;
 
     @include at-media('tablet') {
@@ -505,7 +505,7 @@ body {
 
   p {
     color: color('white');
-    font-size: $small-font-size;
+    font-size: font-size('sans', 'xs');
     max-width: none;
     overflow: hidden;
 
@@ -528,7 +528,7 @@ body {
   @include clearfix;
   @include margin(2em null);
   background-color: color('white');
-  padding: $site-margins;
+  padding: units($theme-site-margins-width);
   border: 1px solid #eeeeee; // scss-lint:disable ColorVariable
 
   .usa-background-dark {
@@ -790,11 +790,11 @@ h3 + .button_wrapper {
 }
 
 .usa-color-focus {
-  background-color: $color-focus;
+  background-color: color($theme-color-focus);
 }
 
 .usa-color-visited {
-  background-color: $color-visited;
+  background-color: color($theme-color-link-visited);
 }
 
 // Color text helpers
@@ -824,7 +824,7 @@ h3 + .button_wrapper {
 }
 
 .usa-color-text-visited {
-  color: $color-visited;
+  color: color($theme-color-link-visited);
 }
 
 .usa-color-text-gray-dark {
@@ -954,7 +954,7 @@ code {
 }
 
 .highlight {
-  max-width: $lead-max-width;
+  max-width: measure(5);
 }
 
 // Code snippet boxes ----------------- //
@@ -1067,18 +1067,18 @@ code {
 // Alt font styles
 
 @mixin font-lead-alt {
-  font-size: $base-font-size;
-  font-weight: $font-normal;
+  font-size: font-size('sans', 'xs');
+  font-weight: font-weight('normal');
 }
 
 .serif-robust {
   .usa-display-alt {
-    font-size: $h1-font-size;
-    font-weight: $font-light;
+    font-size: $theme-h1-font-size;
+    font-weight: font-weight('light');
   }
 
   .usa-font-lead {
-    font-weight: $font-light;
+    font-weight: font-weight('light');
 
     .usa-font-lead-alt {
       @include font-lead-alt;
@@ -1088,14 +1088,14 @@ code {
   &.serif-body {
     .usa-font-example {
       p {
-        font-family: $font-serif;
+        font-family: font-family('serif');
         font-size: rem(15px);
-        line-height: $lead-line-height;
+        line-height: line-height('serif', 3);
       }
 
       // scss-lint:disable SelectorDepth, NestingDepth
       .usa-font-lead {
-        font-size: $h3-font-size;
+        font-size: $theme-h3-font-size;
 
         .usa-font-lead-alt {
           @include font-lead-alt;
@@ -1112,7 +1112,7 @@ code {
   h4,
   h5,
   h6 {
-    font-family: $font-sans;
+    font-family: font-family('sans');
   }
 
   h1 {
@@ -1145,29 +1145,29 @@ code {
 
   .usa-display-alt {
     font-size: rem(44px);
-    font-weight: $font-light;
+    font-weight: font-weight('light');
   }
 
   .usa-font-lead {
-    font-family: $font-sans;
+    font-family: font-family('sans');
     font-size: rem(22px);
-    font-weight: $font-light;
-    line-height: $base-line-height;
+    font-weight: font-weight('light');
+    line-height: line-height('body', 4);
   }
 
   &.serif-body {
     .usa-font-example {
       p {
-        font-family: $font-serif;
+        font-family: font-family('serif');
         font-size: rem(15px);
-        line-height: $lead-line-height;
+        line-height: line-height('serif', 3);
       }
 
       .usa-font-lead {
-        font-family: $font-sans;
+        font-family: font-family('sans');
         font-size: rem(22px);
-        font-weight: $font-light;
-        line-height: $base-line-height;
+        font-weight: font-weight('light');
+        line-height: line-height('body', 4);
       }
     }
   }
@@ -1175,7 +1175,7 @@ code {
 
 .serif-sans-minor {
   h6 {
-    font-family: $font-sans;
+    font-family: font-family('sans');
   }
 }
 
@@ -1255,7 +1255,7 @@ code {
   }
 
   // Override for 4x1 media grid when it collapses to 2x2
-  @media screen and (max-width: $large-screen) and (min-width: $medium-screen) {
+  @media screen and (max-width: units('desktop')) and (min-width: units('tablet')) {
     // scss-lint:disable SelectorDepth
     .usa-graphic_list .usa-graphic_list-row .usa-media_block:nth-child(-n+2) {
       margin-bottom: 6rem;
@@ -1351,7 +1351,7 @@ code {
 .page-component-maturity-scale {
   .usa-content {
     > ul:not(.usa-content-list) {
-      max-width: $text-max-width;
+      max-width: measure(3);
     }
   }
 }
@@ -1372,7 +1372,7 @@ code {
     max-width: 100% !important; // scss-lint:disable ImportantRule
 
     p {
-      max-width: $text-max-width;
+      max-width: measure(3);
     }
   }
 }
@@ -1470,10 +1470,10 @@ code {
 }
 
 .demo-footer-content {
-  @include margin(null $site-margins-mobile);
+  @include margin(null units($theme-site-margins-mobile-width));
 
   @include at-media('tablet') {
-    @include margin(null $site-margins);
+    @include margin(null units($theme-site-margins-width));
   }
 }
 

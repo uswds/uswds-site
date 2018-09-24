@@ -1,5 +1,7 @@
 <h6>Default buttons</h6>
-
+{% capture default_buttons %}
+  {% fractal_component buttons %}
+{% endcapture %}{{ default_buttons | strip }}
 
 <h6>Secondary buttons</h6>
 {% capture secondary_buttons %}

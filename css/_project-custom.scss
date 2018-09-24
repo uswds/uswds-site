@@ -206,7 +206,7 @@ body {
     line-height: 4rem;
 
     @include at-media('desktop') {
-      font-size: $theme-h3-font-size;
+      font-size: font-size('heading', $theme-h3-font-size);
       line-height: 8rem;
     }
   }
@@ -244,7 +244,7 @@ body {
 
   a {
     color: color('gray-cool-60');
-    font-size: $theme-h5-font-size;
+    font-size: font-size('body', 'xs');
     font-weight: font-weight('bold');
     line-height: $height-nav-secondary;
     padding: 1.5rem;
@@ -1073,7 +1073,7 @@ code {
 
 .serif-robust {
   .usa-display-alt {
-    font-size: $theme-h1-font-size;
+    font-size: font-size('heading', $theme-h1-font-size);
     font-weight: font-weight('light');
   }
 
@@ -1095,7 +1095,7 @@ code {
 
       // scss-lint:disable SelectorDepth, NestingDepth
       .usa-font-lead {
-        font-size: $theme-h3-font-size;
+        font-size: font-size('heading', $theme-h3-font-size);
 
         .usa-font-lead-alt {
           @include font-lead-alt;

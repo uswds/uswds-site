@@ -1507,26 +1507,6 @@ iframe {
   @include u-outline(.5, 'indigo-warm-50v');
 }
 
-.usa-accordion-content {
-  &[aria-hidden=true] {
-    @include u-display('none');
-  }
-}
-
-.usa-banner-button-text--open {
-  @include u-display('none');
-}
-
-[aria-expanded=true] {
-  > .usa-banner-button-text {
-    @include u-display('none');
-  }
-
-  > .usa-banner-button-text--open {
-    @include u-display('inline');
-  }
-}
-
 // * * * * * * ========================= *
 
 .docs-text {

@@ -1503,10 +1503,6 @@ iframe {
   }
 }
 
-*:active:focus {
-  @include u-outline(.5, 'indigo-warm-50v');
-}
-
 // * * * * * * ========================= *
 
 .docs-text {

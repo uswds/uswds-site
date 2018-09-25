@@ -9,7 +9,7 @@
   {% endif %}>
   {{ include.title | default: include.page.title }}
 </button>
-<ul id="{{ _id }}" class="usa-sidenav-sub_list">
+<ul id="{{ _id }}" class="usa-nav-sublist">
   {% assign _children = site.data.nav[include.page.category] %}
   {% include nav/list.html links=_children flat=false %}
 </ul>

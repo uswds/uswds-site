@@ -70,11 +70,11 @@ body {
   }
 
   .usa-button-list {
-    float: right;
     display: none;
     margin-top: -5px;
 
     @include at-media('desktop') {
+      float: right;
       line-height: 8rem;
       margin-top: 0;
       display: block;
@@ -97,6 +97,12 @@ body {
   }
 }
 
+.usa-nav {
+  .usa-button {
+    margin-top: 1em;
+  }
+}
+
 .site-banner {
   .usa-banner-inner {
     max-width: 100%;
@@ -108,7 +114,7 @@ body {
 }
 
 .site-header-navbar {
-  border-bottom: none;
+  border-bottom: none !important; // scss-lint:disable ImportantRule
 
   @include at-media('desktop') {
     height: 8rem;
@@ -142,52 +148,6 @@ body {
 
   @include at-media('desktop') {
     display: none;
-  }
-
-  .usa-sidenav-sub_list {
-    &[aria-hidden=true] {
-      display: none;
-    }
-
-    // scss-lint:disable SelectorDepth, NestingDepth
-    .usa-sidenav-sub_list {
-      .usa-sidenav-sub_list {
-        a {
-          padding-left: 4.8rem;
-        }
-      }
-    }
-  }
-
-  li > button {
-    @include button-unstyled;
-    @include padding(0.7rem 1rem 0.7rem 1.6rem);
-    font-weight: font-weight('normal');
-
-    &:hover {
-      background-color: color('gray-cool-5');
-      color: color('primary');
-    }
-
-    &[aria-expanded=false] {
-      background-image: url('#{$image-path}/plus-alt.png');
-      background-image: url('#{$image-path}/plus-alt.svg');
-      background-repeat: no-repeat;
-      background-position: right 0 center;
-      background-size: 1rem;
-    }
-
-    &[aria-expanded=true] {
-      background-image: url('#{$image-path}/minus-alt.png');
-      background-image: url('#{$image-path}/minus-alt.svg');
-      background-repeat: no-repeat;
-      background-position: right 0 center;
-      background-size: 1rem;
-    }
-  }
-
-  .usa-button-list {
-    margin-top: 4rem;
   }
 }
 

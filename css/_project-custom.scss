@@ -920,6 +920,8 @@ code {
 // Code snippet boxes ----------------- //
 
 .usa-code-sample {
+  margin-bottom: units(1);
+
   pre,
   code {
     @include u-font-size(mono, 2xs);
@@ -934,9 +936,11 @@ code {
   .usa-unstyled-list {
     @include unstyled-list;
   }
+}
 
-  .usa-accordion-content {
-    // padding: 0;
+.main-content {
+  .usa-accordion-button {
+    line-height: 1;
   }
 }
 

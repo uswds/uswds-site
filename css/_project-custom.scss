@@ -95,12 +95,6 @@ body {
       @include margin(0 null);
     }
   }
-
-  .usa-nav {
-    .usa-button {
-      margin-top: 1em;
-    }
-  }
 }
 
 .site-banner {
@@ -148,6 +142,14 @@ body {
 
   @include at-media('desktop') {
     display: none;
+  }
+
+  .usa-button-list {
+    margin-top: 3rem;
+  }
+
+  .usa-button {
+    margin-top: 1em;
   }
 }
 

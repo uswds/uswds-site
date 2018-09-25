@@ -92,7 +92,7 @@ body {
     }
 
     .usa-button {
-      @include margin(0 null);
+      @include u-margin-y(0);
     }
   }
 }
@@ -283,14 +283,10 @@ body {
 // Styleguide Content -------- //
 
 .styleguide-content {
-  @include padding(null units($theme-site-margins-mobile-width));
+  @include add-responsive-site-margins;
   margin-bottom: 5em;
   max-width: units($theme-site-max-width);
   position: relative;
-
-  @include at-media('desktop') {
-    @include padding(null units($theme-site-margins-width));
-  }
 
   header {
     > h1 {
@@ -401,11 +397,12 @@ body {
   }
 
   .usa-footer-secondary_section {
-    @include padding(2rem null);
+    @include u-padding-y(2rem);
     background-color: color('accent-cool-lighter');
 
     @include at-media('tablet') {
-      @include padding(3rem null 4rem null);
+      padding-bottom: 4rem;
+      padding-top: 3rem;
     }
   }
 }
@@ -462,7 +459,8 @@ body {
 }
 
 .footer-section-bottom {
-  @include padding(1.6rem null 1.3rem null);
+  padding-top: 1.6rem;
+  padding-bottom: 1.3rem;
   background-color: color('primary-darker');
 
   p {
@@ -488,13 +486,13 @@ body {
 
 .preview {
   @include clearfix;
-  @include margin(2em null);
+  @include u-margin-y(2em);
   background-color: color('white');
   padding: units($theme-site-margins-width);
   border: 1px solid #eeeeee; // scss-lint:disable ColorVariable
 
   .usa-background-dark {
-    @include padding(null 1em);
+    @include u-padding-x(1em);
     display: inline-block;
   }
 
@@ -504,8 +502,9 @@ body {
 }
 
 .preview-no_border {
-  @include margin(0 null 2em);
   border: 0;
+  margin-bottom: 2em;
+  margin-top: 0;
   padding: 0;
 }
 
@@ -527,8 +526,9 @@ body {
 
 .page-grids {
   .preview {
-    @include margin(0 null 2em);
     border: 0;
+    margin-bottom: 2em;
+    margin-top: 0;
     padding: 0;
 
     > *:first-child {
@@ -542,7 +542,7 @@ body {
     background: $color-grid-light;
 
     > * {
-      @include margin(.5em null);
+      @include u-margin-y(.5em);
       color: color('white');
       padding: 1em;
       background: $color-grid-dark;
@@ -551,7 +551,7 @@ body {
 
   .usa-width-one-twelfth {
     @include at-media('tablet') {
-      @include padding(null 0);
+      @include u-padding-x(0);
     }
   }
 }
@@ -864,8 +864,9 @@ h6 {
 
 .usa-typography-example {
   .usa-monospace {
-    @include margin(0 null 3rem);
     font-size: 1.2rem;
+    margin-botton: 3rem;
+    margin-top: 0;
   }
 }
 
@@ -896,7 +897,7 @@ pre {
 }
 
 code {
-  @include padding(0.2em null);
+  @include u-padding-y(0.2em);
 
   &::before,
   &::after {
@@ -1001,7 +1002,8 @@ code {
 }
 
 .text-tiny {
-  @include margin(5px null 0);
+  margin-bottom: 0;
+  margin-top: 5px;
 
   &:first-child {
     margin-top: 0;
@@ -1232,7 +1234,7 @@ code {
 // Fancy Horizontal Rule
 
 .homepage-rule {
-  @include margin(0 null);
+  @include u-margin-y(0);
   border: 0;
   height: 1.5rem;
   width: 100%;
@@ -1276,7 +1278,8 @@ code {
 .page-design-principles {
   @include at-media('tablet') {
     .main-content .usa-grid-full {
-      @include margin(4rem null 3rem null);
+      margin-bottom: 3rem;
+      margin-top: 4rem;
     }
   }
 
@@ -1420,27 +1423,25 @@ code {
     padding-left: 3.3rem;
 
     @include at-media('tablet') {
-      @include margin(0 1.5rem 0 null);
+      margin-right: 1.5rem;
+      margin-top: 0;
     }
   }
 }
 
 .demo-footer-title {
-  @include margin(0 null 0.7rem null);
+  margin-bottom: 0.7rem;
+  margin-top: 0;
   color: color('white');
   display: inline-block;
 
   @include at-media('tablet') {
-    @include margin(1em null);
+    @include u-margin-y(1em);
   }
 }
 
 .demo-footer-content {
-  @include margin(null units($theme-site-margins-mobile-width));
-
-  @include at-media('tablet') {
-    @include margin(null units($theme-site-margins-width));
-  }
+  @include add-responsive-site-margins;
 }
 
 hr {

@@ -13,9 +13,7 @@ layout: default
         </h2>
         {% endif %}
 
-        <div class="usa-hero-content">
-          {{ page.hero.content | markdownify }}
-        </div>
+        {{ page.hero.content | markdownify }}
 
         {% if page.hero.button %}
           <a class="usa-button" href="{{ page.hero.button.href }}">

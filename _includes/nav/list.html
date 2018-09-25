@@ -4,7 +4,7 @@
   {% else -%}
     {% assign _page = nil %}
   {% endif %}
-  <li>
+  <li class="{% if sidenav %}usa-sidenav-item{% else %}usa-nav-submenu-item{% endif %}">
     {% if _page -%}
       {%
         include nav/page-item.html

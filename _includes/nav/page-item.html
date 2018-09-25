@@ -19,7 +19,7 @@
       {% assign _links = nil %}
     {% endif %}
     {% if _links -%}
-    <ul class="{{ include.subnav_class | default: 'usa-sidenav-sub_list' }}">{%
+    <ul class="{% if sidenav %}usa-sidenav-sublist{% else %}usa-nav-submenu{% endif %}">{%
       include nav/list.html
       links=_links
       text_key=_text_key

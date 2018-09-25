@@ -2,7 +2,6 @@
 {% include banner.html %}
 <header class="usa-header site-header" role="banner">
   <div class="usa-navbar site-header-navbar">
-    <button class="usa-menu-btn">Menu</button>
     <div class="usa-logo site-logo" id="logo">
       <em class="usa-logo-text">
         <a class="margin-right-05" href="{{ site.baseurl }}/" title="Home" aria-label="{{ site.title }} home">
@@ -11,6 +10,7 @@
         <span class="usa-tag font-sans-2xs bg-primary-lighter text-base-darkest">2.0 alpha</span>
       </em>
     </div>
+    <button class="usa-menu-btn">Menu</button>
     {% include download-buttons.html %}
   </div>
 </header>
@@ -27,11 +27,11 @@
 <div class="usa-overlay"></div>
 
 <nav role="navigation" class="usa-nav sidenav-mobile">
+  <button class="usa-nav-close">
+    <img src="{{ site.baseurl }}/assets/img/close.svg" alt="close">
+  </button>
   <div class="usa-nav-inner">
-    <button class="usa-nav-close">
-      <img src="{{ site.baseurl }}/assets/img/close.svg" alt="close">
-    </button>
-    <ul class="usa-sidenav-list usa-accordion">
+    <ul class="usa-nav-primary usa-accordion">
       {% include nav/sections.html sections=site.data.nav.mobile %}
     </ul>
     {% include download-buttons.html %}

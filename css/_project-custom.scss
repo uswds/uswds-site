@@ -70,11 +70,11 @@ body {
   }
 
   .usa-button-list {
-    float: right;
     display: none;
     margin-top: -5px;
 
     @include at-media('desktop') {
+      float: right;
       line-height: 8rem;
       margin-top: 0;
       display: block;
@@ -108,7 +108,7 @@ body {
 }
 
 .site-header-navbar {
-  border-bottom: none;
+  border-bottom: none !important; // scss-lint:disable ImportantRule
 
   @include at-media('desktop') {
     height: 8rem;
@@ -144,50 +144,12 @@ body {
     display: none;
   }
 
-  .usa-sidenav-sub_list {
-    &[aria-hidden=true] {
-      display: none;
-    }
-
-    // scss-lint:disable SelectorDepth, NestingDepth
-    .usa-sidenav-sub_list {
-      .usa-sidenav-sub_list {
-        a {
-          padding-left: 4.8rem;
-        }
-      }
-    }
-  }
-
-  li > button {
-    @include button-unstyled;
-    @include padding(0.7rem 1rem 0.7rem 1.6rem);
-    font-weight: font-weight('normal');
-
-    &:hover {
-      background-color: color('gray-cool-5');
-      color: color('primary');
-    }
-
-    &[aria-expanded=false] {
-      background-image: url('#{$image-path}/plus-alt.png');
-      background-image: url('#{$image-path}/plus-alt.svg');
-      background-repeat: no-repeat;
-      background-position: right 0 center;
-      background-size: 1rem;
-    }
-
-    &[aria-expanded=true] {
-      background-image: url('#{$image-path}/minus-alt.png');
-      background-image: url('#{$image-path}/minus-alt.svg');
-      background-repeat: no-repeat;
-      background-position: right 0 center;
-      background-size: 1rem;
-    }
-  }
-
   .usa-button-list {
-    margin-top: 4rem;
+    margin-top: 3rem;
+  }
+
+  .usa-button {
+    margin-top: 1em;
   }
 }
 
@@ -505,7 +467,7 @@ body {
 
   p {
     color: color('white');
-    font-size: font-size('sans', 'xs');
+    font-size: font-size('sans', '2xs');
     max-width: none;
     overflow: hidden;
 
@@ -960,6 +922,8 @@ code {
 // Code snippet boxes ----------------- //
 
 .usa-code-sample {
+  margin-bottom: units(1);
+
   pre,
   code {
     @include u-font-size(mono, 2xs);
@@ -974,9 +938,11 @@ code {
   .usa-unstyled-list {
     @include unstyled-list;
   }
+}
 
-  .usa-accordion-content {
-    // padding: 0;
+.main-content {
+  .usa-accordion-button {
+    line-height: 1;
   }
 }
 
@@ -1290,11 +1256,11 @@ code {
       content: '◆';
       display: inline-block;
       position: relative;
-      top: -2.9rem;
+      top: -3.4rem;
       font-size: 1.8rem;
       padding: 0 1rem;
       color: color('secondary');
-      background: color('white');
+      background: color('gray-1');
     }
   }
 }
@@ -1536,30 +1502,6 @@ iframe {
     @include at-media('tablet-lg') {
       @include u-font-size('sans', 15);
     }
-  }
-}
-
-*:active:focus {
-  @include u-outline(.5, 'indigo-warm-50v');
-}
-
-.usa-accordion-content {
-  &[aria-hidden=true] {
-    @include u-display('none');
-  }
-}
-
-.usa-banner-button-text--open {
-  @include u-display('none');
-}
-
-[aria-expanded=true] {
-  > .usa-banner-button-text {
-    @include u-display('none');
-  }
-
-  > .usa-banner-button-text--open {
-    @include u-display('inline');
   }
 }
 

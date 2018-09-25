@@ -149,16 +149,6 @@ body {
   @include at-media('desktop') {
     display: none;
   }
-
-  .usa-nav-sublist {
-    @include margin(0 null);
-    list-style-type: none;
-    padding-left: 0;
-  }
-
-  .usa-nav-submenu-item {
-    margin-bottom: 0;
-  }
 }
 
 .site-logo {

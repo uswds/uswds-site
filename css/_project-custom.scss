@@ -149,6 +149,15 @@ body {
   @include at-media('desktop') {
     display: none;
   }
+
+  .usa-nav-sublist {
+    @include margin(0 null);
+    list-style-type: none;
+  }
+
+  .usa-nav-submenu-item {
+    margin-bottom: 0;
+  }
 }
 
 .site-logo {

@@ -170,6 +170,7 @@ body {
 }
 
 @mixin nav-border-thick {
+  // TODO: this is not working — use technique in v2 nav
   border-bottom: units(0.5) solid color('primary');
   padding-bottom: units(1);
 }
@@ -232,12 +233,12 @@ body {
   @include at-media('desktop') {
     display: block;
     float: left;
-    margin-bottom: 525px;
-    margin-top: 50px;
-    padding-right: 1rem;
-    padding-left: 3rem;
+    margin-bottom: units('mobile-lg'); // TODO what is this magic number?
+    margin-top: units(6);
+    padding-right: units(1);
+    padding-left: units(4);
     overflow-y: auto;
-    top: 5rem;
+    top: units(6);
     width: units($width-nav-sidebar);
   }
 
@@ -263,7 +264,7 @@ body {
   @include u-pin('right');
   @include u-pin('bottom');
   display: inline-block; // starting: not scrolled
-  margin-top: 4rem; // starting: not scrolled
+  margin-top: units(5); // starting: not scrolled
   position: relative;
   width: 100%;
 
@@ -284,7 +285,7 @@ body {
 
 .styleguide-content {
   @include add-responsive-site-margins;
-  margin-bottom: 5em;
+  margin-bottom: units(6);
   max-width: units($theme-site-max-width);
   position: relative;
 
@@ -301,7 +302,7 @@ body {
 
 .components-library-link {
   float: right;
-  padding-top: 20px;
+  padding-top: units(2.5);
 
   a {
     @include external-link(external-link, external-link-hover);
@@ -316,10 +317,10 @@ body {
 // Label links
 
 %label-maturity {
+  @include u-font('ui', 'sm');
   color: color('gray-cool-80');
-  font-size: 1.4rem;
   font-weight: font-weight('bold');
-  margin-left: 1.2rem;
+  margin-left: units(1.5);
   position: absolute;
   text-decoration: none;
 
@@ -347,24 +348,24 @@ body {
 }
 
 .heading-margin-alt {
-  margin-top: 6rem;
+  margin-top: units(7);
 }
 
 .site-subheading {
-  @include h6;
+  @include typeset-h6;
   color: color('gray-cool-60');
   display: block;
-  letter-spacing: 0.5px;
-  margin-bottom: 0.6rem;
+  letter-spacing: letter-spacing('ls-1');
+  margin-bottom: units(1);
   margin-top: 0;
 }
 
 .cta {
   img {
-    height: 1.5rem;
-    margin-right: 0.4rem;
+    height: units(2);
+    margin-right: units(0.5);
     position: relative;
-    top: 2px;
+    top: units(2px);
     vertical-align: baseline;
   }
 }
@@ -379,8 +380,8 @@ body {
   }
 
   .logo-links {
-    margin-bottom: 1rem;
-    margin-right: 2rem;
+    margin-bottom: units(1);
+    margin-right: units(2.5);
 
     @include at-media('tablet') {
       float: left;
@@ -388,7 +389,7 @@ body {
     }
 
     img {
-      width: 3.2rem;
+      width: units(4);
     }
 
     a {
@@ -401,41 +402,42 @@ body {
     background-color: color('accent-cool-lighter');
 
     @include at-media('tablet') {
-      padding-bottom: 4rem;
-      padding-top: 3rem;
+      padding-bottom: units(5);
+      padding-top: units(4);
     }
   }
 }
 
 .footer-main-img {
   display: none;
-  max-width: 18.1rem;
+  max-width: units('card');
 
   @include at-media('tablet') {
     display: block;
+    margin: 0;
     width: 100%;
   }
 }
 
 .footer-content {
   p {
-    max-width: 75ch;
+    max-width: measure(4);
   }
 }
 
 .footer-contact-links {
-  margin-top: 3rem;
+  @include grid-gap(2);
+  margin-top: units(4);
 
   h4,
   a {
-    font-size: 1.3rem;
+    @include u-font('sans', '2xs')
   }
 
   h4 {
-    font-family: font-family('sans');
     font-weight: font-weight('normal');
     margin-bottom: 0;
-    margin-top: 3px;
+    margin-top: units(2px);
   }
 
   a {
@@ -444,13 +446,13 @@ body {
   }
 
   img {
-    width: 4rem;
+    width: units(5);
   }
 
   .usa-media_block {
     clear: both;
-    line-height: line-height('heading', 3);
-    margin-top: 2rem;
+    line-height: line-height('ui', 3);
+    margin-top: units(2.5);
 
     @include at-media('tablet') {
       margin-top: 0;
@@ -459,8 +461,8 @@ body {
 }
 
 .footer-section-bottom {
-  padding-top: 1.6rem;
-  padding-bottom: 1.3rem;
+  padding-top: units(2);
+  padding-bottom: units(2);
   background-color: color('primary-darker');
 
   p {

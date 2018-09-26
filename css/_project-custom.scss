@@ -265,7 +265,8 @@ body {
 // Main Content --------- //
 
 .main-content {
-  @include position(absolute, null 0 0 null);
+  @include u-pin-right;
+  @include u-pin-bottom;
   display: inline-block; // starting: not scrolled
   margin-top: 4rem; // starting: not scrolled
   position: relative;

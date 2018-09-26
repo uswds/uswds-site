@@ -1,6 +1,6 @@
 // USWDS Overrides
-$color-grid-dark:   #727272;
-$color-grid-light:  #e3e4e5;
+$color-grid-dark:   'base';
+$color-grid-light:  'base-lightest';
 $font-monospace:    Consolas, Monaco, 'Andale Mono', monospace;
 $asset-path: '../';
 $font-path: '#{$asset-path}fonts';

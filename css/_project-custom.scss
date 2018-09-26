@@ -1184,12 +1184,6 @@ code {
 
   .usa-hero {
     background-image: url('#{$site-image-path}/home/wds-home-new-2x.png');
-    padding-bottom: units(9);
-    padding-top: units(4);
-
-    @include at-media('desktop') {
-      padding-bottom: units(10);
-    }
   }
 
   .usa-hero-callout {

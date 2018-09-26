@@ -159,7 +159,7 @@ body {
   }
 
   em {
-    @include u-font('heading', 'xs')
+    @include u-font('heading', 'xs');
     line-height: units(5);
 
     @include at-media('desktop') {
@@ -273,6 +273,10 @@ body {
 
   .lt-ie9 & {
     width: 75%;
+  }
+
+  .usa-accordion-button {
+    line-height: 1;
   }
 }
 
@@ -861,7 +865,7 @@ h6 {
 .usa-typography-example {
   .usa-monospace {
     font-size: 1.2rem;
-    margin-botton: 3rem;
+    margin-bottom: 3rem;
     margin-top: 0;
   }
 }
@@ -934,12 +938,6 @@ code {
 
   .usa-unstyled-list {
     @include unstyled-list;
-  }
-}
-
-.main-content {
-  .usa-accordion-button {
-    line-height: 1;
   }
 }
 

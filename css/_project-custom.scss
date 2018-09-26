@@ -846,33 +846,33 @@ h6 {
 
 .font-example-paragraph {
   @include at-media('tablet') {
-    width: 20rem;
+    max-width: units('card-lg');
+    width: 100%;
   }
 }
 
 .usa-typography-example {
   .usa-monospace {
-    font-size: 1.2rem;
-    margin-bottom: 3rem;
+    font-size: font-size('mono', '3xs');
+    margin-bottom: units(4);
     margin-top: 0;
   }
 }
 
 .usa-monospace {
-  font-family: $font-monospace;
+  font-family: font-family('mono');
 }
 
 // Code samples ---------------------- //
 
 code,
 pre {
-  @include u-font-family(mono);
+  @include u-font('mono', '3xs');
   background-color: color('gray-cool-5');
-  font-size: 1.3rem;
 }
 
 pre {
-  padding: 1.6rem;
+  padding: units(2);
 
   code {
     padding: 0;
@@ -889,7 +889,7 @@ code {
 
   &::before,
   &::after {
-    letter-spacing: -0.2em;
+    letter-spacing: letter-spacing('ls-neg-3');
     content: '\00a0';
   }
 
@@ -915,10 +915,8 @@ code {
 
   pre,
   code {
-    @include u-font-size(mono, 2xs);
-    @include u-line-height(mono, 4);
+    @include typeset('mono', '2xs', 4);
     background: none;
-    font-size: 1.2rem;
     margin-bottom: 0;
     margin-top: 0;
     padding: 0;
@@ -971,21 +969,21 @@ code {
 }
 
 .alignment-example {
-  border-left: 2px solid color('primary-dark');
-  padding-left: 1rem;
+  border-left: units(2px) solid color('primary-dark');
+  padding-left: units(1);
 }
 
 .help-text {
-  border-top: 2px solid color('primary-dark');
+  border-top: units(2px) solid color('primary-dark');
   color: color('primary-dark');
   font-size: $theme-root-font-size;
-  padding-top: 1rem;
+  padding-top: units(1);
   text-align: center;
 }
 
 .text-tiny {
   margin-bottom: 0;
-  margin-top: 5px;
+  margin-top: units(0.5);
 
   &:first-child {
     margin-top: 0;
@@ -994,23 +992,23 @@ code {
 
 .typography-sans-intro {
   .text-huge {
-    font-size: 140px;
-    line-height: 1.05;
+    font-size: font-size('sans', 20);
+    line-height: line-height('sans', 1);
   }
 
   .text-tiny {
-    font-size: 15px;
+    font-size: font-size('sans', '2xs');
   }
 }
 
 .typography-serif-intro {
   .text-huge {
-    font-size: 120px;
-    line-height: 1.275;
+    font-size: font-size('serif', 20);
+    line-height: line-height('serif', 1);
   }
 
   .text-tiny {
-    font-size: 13px;
+    font-size: font-size('serif', '2xs');
   }
 }
 
@@ -1038,14 +1036,12 @@ code {
   &.serif-body {
     .usa-font-example {
       p {
-        font-family: font-family('serif');
-        font-size: rem(15px);
-        line-height: line-height('serif', 3);
+        @include typeset('serif', 'xs', 3);
       }
 
       // scss-lint:disable SelectorDepth, NestingDepth
       .usa-font-lead {
-        font-size: font-size('heading', $theme-h3-font-size);
+        font-size: font-size('heading', 'lg');
 
         .usa-font-lead-alt {
           @include font-lead-alt;
@@ -1066,58 +1062,52 @@ code {
   }
 
   h1 {
-    font-size: rem(44px);
+    font-size: font-size('sans', 15);
   }
 
   h2 {
-    font-size: rem(34px);
+    font-size: font-size('sans', 13);
   }
 
   h3 {
-    font-size: rem(24px);
+    font-size: font-size('sans', 11);
   }
 
   h4 {
-    font-size: rem(19px);
+    font-size: font-size('sans', 8);
   }
 
   h5 {
-    font-size: rem(16px);
+    font-size: font-size('sans', 6);
   }
 
   h6 {
-    font-size: rem(13px);
+    font-size: font-size('sans', 3);
   }
 
   .usa-display {
-    font-size: rem(59px);
+    font-size: font-size('sans', 16);
   }
 
   .usa-display-alt {
-    font-size: rem(44px);
+    font-size: font-size('sans', 15);
     font-weight: font-weight('light');
   }
 
   .usa-font-lead {
-    font-family: font-family('sans');
-    font-size: rem(22px);
+    @include typeset('sans', 10, 4)
     font-weight: font-weight('light');
-    line-height: line-height('body', 4);
   }
 
   &.serif-body {
     .usa-font-example {
       p {
-        font-family: font-family('serif');
-        font-size: rem(15px);
-        line-height: line-height('serif', 3);
+        @include typeset('serif', 5, 3);
       }
 
       .usa-font-lead {
-        font-family: font-family('sans');
-        font-size: rem(22px);
+        @include typeset('sans', 8, 4);
         font-weight: font-weight('light');
-        line-height: line-height('body', 4);
       }
     }
   }
@@ -1130,7 +1120,7 @@ code {
 }
 
 .usa-accordion-docs {
-  margin-bottom: 6rem;
+  margin-bottom: units(7);
 }
 
 // External link styles
@@ -1167,14 +1157,14 @@ code {
     .usa-media_block-body {
       // scss-lint:disable SelectorDepth
       > *:first-child {
-        font-size: $media-block-header-font-size;
+        @include u-font('heading', $media-block-header-font-size);
         margin-top: 0;
         margin-bottom: 0;
       }
 
       > p {
-        margin: 0.5rem 0;
-        font-size: $media-block-body-font-size;
+        @include u-font('body', $media-block-body-font-size);
+        margin: units(0.5) 0;
       }
     }
 

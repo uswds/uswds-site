@@ -8,7 +8,7 @@ $image-path: '#{$asset-path}img';
 
 $external-href:     '[href^="http"]:not([href*=".gov"])';
 
-$z-nav-secondary: 10;
+$z-nav-secondary: 100;
 
 // Site image path, relative to /assets/css/
 $site-image-path: '../../img';
@@ -18,5 +18,5 @@ $font-light: 300;
 $site-nav-font-size: 1.7rem;
 $media-block-header-font-size: 1.7rem;
 $media-block-body-font-size: 1.5rem;
-$height-nav-secondary: 4.8rem;
-$width-nav-sidebar: 250px;
+$height-nav-secondary: 6;
+$width-nav-sidebar: 'card-lg';

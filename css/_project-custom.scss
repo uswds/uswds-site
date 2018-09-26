@@ -13,10 +13,6 @@
 // 1. Generic
 // ----------------------------------------
 
-html {
-  font-size: $theme-root-font-size;
-}
-
 body {
   @include u-bg('gray-1');
 }
@@ -71,11 +67,11 @@ body {
 
   .usa-button-list {
     display: none;
-    margin-top: -5px;
+    margin-top: units(-0.5);
 
     @include at-media('desktop') {
       float: right;
-      line-height: 8rem;
+      line-height: units(10);
       margin-top: 0;
       display: block;
       padding-right: units($theme-site-margins-width);
@@ -111,7 +107,7 @@ body {
   border-bottom: none !important; // scss-lint:disable ImportantRule
 
   @include at-media('desktop') {
-    height: 8rem;
+    height: units(10);
     width: 100%;
     display: block;
   }
@@ -119,7 +115,7 @@ body {
   // Firefox fix so that navbar buttons to align right
   @-moz-document url-prefix() {
     @include at-media('desktop') {
-      padding-top: 1px;
+      padding-top: units(1px);
     }
   }
 }
@@ -127,11 +123,11 @@ body {
 @mixin outline-inverse-button {
   // TODO: Fix this with button mixin
   .usa-button.usa-button-outline-inverse {
-    box-shadow: inset 0 0 0 2px color('primary');
+    box-shadow: inset 0 0 0 units(2px) color('primary');
     color: color('primary');
 
     &:hover {
-      box-shadow: inset 0 0 0 2px color('primary-dark');
+      box-shadow: inset 0 0 0 unit(2px) color('primary-dark');
       color: color('primary-dark');
     }
   }
@@ -145,11 +141,11 @@ body {
   }
 
   .usa-button-list {
-    margin-top: 3rem;
+    margin-top: units(4);
   }
 
   .usa-button {
-    margin-top: 1em;
+    margin-top: units(1);
   }
 }
 
@@ -163,20 +159,19 @@ body {
   }
 
   em {
-    font-family: font-family('serif');
-    font-size: 1.4rem;
-    line-height: 4rem;
+    @include u-font('heading', 'xs')
+    line-height: units(5);
 
     @include at-media('desktop') {
-      font-size: font-size('heading', $theme-h3-font-size);
-      line-height: 8rem;
+      font-size: font-size('heading', 'lg');
+      line-height: units(10);
     }
   }
 }
 
 @mixin nav-border-thick {
-  border-bottom: 0.4rem solid color('primary');
-  padding-bottom: 1rem;
+  border-bottom: units(0.5) solid color('primary');
+  padding-bottom: units(1);
 }
 
 .site-nav-secondary {
@@ -184,12 +179,12 @@ body {
 
   @include at-media('desktop') {
     background-color: color('white');
-    border-bottom: 1px solid color('gray-cool-10');
+    border-bottom: units(1px) solid color('gray-cool-10');
     clear: both;
     display: block;
-    height: $height-nav-secondary;
-    padding-left: 1.5rem;
-    z-index: $z-nav-secondary;
+    height: units($height-nav-secondary);
+    padding-left: units(2);
+    z-index: z-index($z-nav-secondary);
   }
 
   &.sticky {
@@ -205,13 +200,13 @@ body {
   }
 
   a {
+    @include typeset('ui', 'xs', 1);
     color: color('gray-cool-60');
-    font-size: font-size('body', 'xs');
+    display: inline-block;
     font-weight: font-weight('bold');
-    line-height: $height-nav-secondary;
-    padding: 1.5rem;
+    height: units($height-nav-secondary);
+    padding: units(2);
     text-decoration: none;
-    -webkit-font-smoothing: antialiased;
 
     &:hover {
       span {
@@ -243,7 +238,7 @@ body {
     padding-left: 3rem;
     overflow-y: auto;
     top: 5rem;
-    width: $width-nav-sidebar;
+    width: units($width-nav-sidebar);
   }
 
   .lt-ie9 & {
@@ -273,7 +268,7 @@ body {
   width: 100%;
 
   @include at-media('desktop') {
-    width: calc(100% - #{$width-nav-sidebar});
+    width: calc(100% - #{units($width-nav-sidebar)});
   }
 
   .lt-ie9 & {

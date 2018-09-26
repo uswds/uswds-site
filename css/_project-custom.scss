@@ -265,8 +265,8 @@ body {
 // Main Content --------- //
 
 .main-content {
-  @include u-pin-right;
-  @include u-pin-bottom;
+  @include u-pin('right');
+  @include u-pin('bottom');
   display: inline-block; // starting: not scrolled
   margin-top: 4rem; // starting: not scrolled
   position: relative;
@@ -997,7 +997,7 @@ code {
 .help-text {
   border-top: 2px solid color('primary-dark');
   color: color('primary-dark');
-  font-size: $em-base;
+  font-size: $theme-root-font-size;
   padding-top: 1rem;
   text-align: center;
 }

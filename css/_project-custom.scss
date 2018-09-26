@@ -317,7 +317,7 @@ body {
 // Label links
 
 %label-maturity {
-  @include u-font('ui', 'sm');
+  @include u-font('ui', '2xs');
   color: color('gray-cool-80');
   font-weight: font-weight('bold');
   margin-left: units(1.5);
@@ -488,13 +488,13 @@ body {
 
 .preview {
   @include clearfix;
-  @include u-margin-y(2em);
+  @include u-margin-y(2);
   background-color: color('white');
   padding: units($theme-site-margins-width);
-  border: 1px solid #eeeeee; // scss-lint:disable ColorVariable
+  border: units(1px) solid color('base-lightest');
 
   .usa-background-dark {
-    @include u-padding-x(1em);
+    @include u-padding-x(1);
     display: inline-block;
   }
 
@@ -505,7 +505,7 @@ body {
 
 .preview-no_border {
   border: 0;
-  margin-bottom: 2em;
+  margin-bottom: units(2.5);
   margin-top: 0;
   padding: 0;
 }
@@ -529,25 +529,25 @@ body {
 .page-grids {
   .preview {
     border: 0;
-    margin-bottom: 2em;
+    margin-bottom: units(2.5);
     margin-top: 0;
     padding: 0;
 
     > *:first-child {
-      margin-top: 1.5em;
+      margin-top: units(2);
     }
   }
 }
 
 .grid-example {
   .usa-grid {
-    background: $color-grid-light;
+    background: color($color-grid-light);
 
     > * {
-      @include u-margin-y(.5em);
+      @include u-margin-y(0.5);
       color: color('white');
-      padding: 1em;
-      background: $color-grid-dark;
+      padding: units(1);
+      background: color($color-grid-dark);
     }
   }
 
@@ -566,10 +566,10 @@ body {
 
 .grid-text {
   .usa-grid {
-    background: $color-grid-dark;
+    background: color($color-grid-dark);
 
     > * {
-      background: $color-grid-light;
+      background: color($color-grid-light);
       color: color('black');
     }
 
@@ -584,14 +584,14 @@ body {
 }
 
 h3 + .button_wrapper {
-  margin-top: -0.5em;
+  margin-top: units(-0.5);
 }
 
 .button_wrapper {
   clear: both;
   display: block;
-  margin-left: -1rem;
-  padding: 0 1rem;
+  margin-left: units(-1);
+  padding: 0 units(1);
 
   @include at-media('mobile-lg') {
     display: table;
@@ -603,7 +603,7 @@ h3 + .button_wrapper {
 }
 
 .button_wrapper-dark {
-  background: color('gray-cool-80');
+  background: color('base-darker');
 }
 
 .usa-heading {
@@ -629,11 +629,11 @@ h3 + .button_wrapper {
 }
 
 .usa-color-gray-dark {
-  background-color: color('gray-cool-80');
+  background-color: color('base-darker');
 }
 
 .usa-color-gray-light {
-  background-color: color('gray-30');
+  background-color: color('base-light');
 }
 
 .usa-color-white {
@@ -820,18 +820,18 @@ h3 + .button_wrapper {
 }
 
 .usa-heading-alt {
-  border-bottom: 1px solid color('gray-cool-60');
-  padding-bottom: .8rem;
+  border-bottom: units(1px) solid color('gray-cool-60');
+  padding-bottom: units(1);
 }
 
 h6 {
   &.usa-heading-alt {
-    margin-top: 4rem;
+    margin-top: units(5);
   }
 }
 
 .usa-typography-example-font {
-  padding-top: 1rem;
+  padding-top: units(1);
 
   h1,
   h2,
@@ -841,20 +841,6 @@ h6 {
   h6,
   .usa-font-example p {
     margin: 0;
-  }
-
-  // Add padding to first few  CSS details so they line up with different size
-  // headings on their left side.
-  .usa-width-one-half:nth-child(2) {
-    padding-top: 1.2rem;
-  }
-
-  .usa-width-one-half:nth-child(4) {
-    padding-top: 0.9rem;
-  }
-
-  .usa-width-one-half:nth-child(6) {
-    padding-top: 0.6rem;
   }
 }
 

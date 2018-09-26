@@ -1169,9 +1169,9 @@ code {
     }
 
     .usa-media_block-img {
-      margin-bottom: 1rem;
-      margin-right: 2rem;
-      max-width: 7rem;
+      margin-bottom: units(1);
+      margin-right: units(2.5);
+      max-width: units(9);
 
       @include at-media('desktop') {
         float: none;
@@ -1181,17 +1181,17 @@ code {
 
   .usa-hero {
     background-image: url('#{$site-image-path}/home/wds-home-new-2x.png');
-    padding-bottom: 7.2rem;
-    padding-top: 3.2rem;
+    padding-bottom: units(9);
+    padding-top: units(4);
 
     @include at-media('desktop') {
-      padding-bottom: 10.6rem;
+      padding-bottom: units(10);
     }
   }
 
   .usa-hero-callout {
-    border-radius: 0.3rem;
-    max-width: 46rem;
+    border-radius: border-radius('md');
+    max-width: units('mobile');
   }
 
   // Override for 4x1 media grid when it collapses to 2x2

@@ -169,12 +169,6 @@ body {
   }
 }
 
-@mixin nav-border-thick {
-  // TODO: this is not working — use technique in v2 nav
-  border-bottom: units(0.5) solid color('primary');
-  padding-bottom: units(1);
-}
-
 .site-nav-secondary {
   display: none;
 
@@ -207,21 +201,30 @@ body {
     font-weight: font-weight('bold');
     height: units($height-nav-secondary);
     padding: units(2);
+    position: relative;
     text-decoration: none;
 
     &:hover {
-      span {
-        @include nav-border-thick;
-        color: color('primary');
-      }
+      @include add-bar(
+        0.5,
+        'primary',
+        'bottom',
+        0,
+        2,
+        0
+      );
     }
   }
 
   .usa-current {
-    span {
-      @include nav-border-thick;
-      color: color('base-darkest');
-    }
+    @include add-bar(
+      0.5,
+      'primary',
+      'bottom',
+      0,
+      2,
+      0
+    );
   }
 }
 
@@ -1198,7 +1201,7 @@ code {
   @media screen and (max-width: units('desktop')) and (min-width: units('tablet')) {
     // scss-lint:disable SelectorDepth
     .usa-graphic_list .usa-graphic_list-row .usa-media_block:nth-child(-n+2) {
-      margin-bottom: 6rem;
+      margin-bottom: units(8);
     }
   }
 }
@@ -1208,7 +1211,7 @@ code {
 .homepage-rule {
   @include u-margin-y(0);
   border: 0;
-  height: 1.5rem;
+  height: units(2);
   width: 100%;
   position: relative;
 
@@ -1220,9 +1223,9 @@ code {
       content: '\00a0';
       display: inline-block;
       background: color('primary');
-      height: 1px;
+      height: units(1px);
       position: relative;
-      top: 0.6rem;
+      top: units(1);
       width: 100%;
     }
 
@@ -1230,9 +1233,9 @@ code {
       content: '◆';
       display: inline-block;
       position: relative;
-      top: -3.4rem;
-      font-size: 1.8rem;
-      padding: 0 1rem;
+      top: units(-4);
+      font-size: 1.8rem; // TODO: do I care about this?
+      padding: 0 units(1);
       color: color('secondary');
       background: color('gray-1');
     }
@@ -1242,7 +1245,7 @@ code {
 .page-ui-components {
   .usa-font-lead {
     &:first-of-type {
-      margin-top: 3.2rem;
+      margin-top: units(4);
     }
   }
 }
@@ -1250,13 +1253,13 @@ code {
 .page-design-principles {
   @include at-media('tablet') {
     .main-content .usa-grid-full {
-      margin-bottom: 3rem;
-      margin-top: 4rem;
+      margin-bottom: units(4);
+      margin-top: units(5);
     }
   }
 
   img {
-    max-width: 18.4rem;
+    max-width: units('card');
   }
 }
 
@@ -1269,20 +1272,20 @@ code {
     background-size: 100%;
     content: '';
     display: inline-block;
-    height: 0.8em;
-    margin-bottom: -1px;
-    margin-right: 1.2rem;
-    width: 0.8em;
+    height: units(1);
+    margin-bottom: 0;
+    margin-right: units(1.5);
+    width: units(1);
   }
 }
 
 .link-download-subtext {
-  margin-left: 2.6rem;
+  margin-left: units(3);
 }
 
 .link_group-download {
   .link-download {
-    margin-bottom: 1rem;
+    margin-bottom: units(1);
   }
 }
 
@@ -1333,7 +1336,7 @@ code {
   @include u-font('mono', 4);
 
   .grid-row {
-    margin-top: 8px;
+    margin-top: units(1);
   }
 
   [class*="grid-col"] {
@@ -1343,8 +1346,8 @@ code {
 
   .grid-row:not([class*="grid-gap"]) {
     [class*="grid-col"] {
-      border: 1px solid;
-      padding: 16px;
+      border: units(1px) solid;
+      padding: units(2);
     }
   }
 
@@ -1352,8 +1355,8 @@ code {
   [class*="grid-gap"] {
     [class*="grid-col"] > * {
       background-color: color('white');
-      border: 1px solid;
-      padding: 16px;
+      border: units(1px) solid;
+      padding: units(2);
     }
   }
 }
@@ -1363,52 +1366,53 @@ code {
 .page-page-templates {
   .preview {
     img {
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); // scss-lint:disable ColorVariable
+      @include u-shadow(2);
+      margin-bottom: units(2);
     }
   }
 }
 
 .layout-demo {
-  margin-bottom: 8.6rem;
+  margin-bottom: units(10);
 
   @include at-media('tablet') {
-    margin-bottom: 5.9rem;
+    margin-bottom: units(8);
   }
 }
 
 // Demo fixed footer
 .demo-footer {
+  @include add-knockout-font-smoothing;
   background-color: color('gray-cool-80');
+  // TODO: figure this out
   box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.5); // scss-lint:disable ColorVariable
   bottom: 0;
   position: fixed;
   width: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
 
   .usa-button {
     background-image: url('#{$site-image-path}/angle-arrow-left-inverse.png');
     background-image: url('#{$site-image-path}/angle-arrow-left-inverse.svg');
     background-repeat: no-repeat;
-    background-position: left 2rem center;
-    background-size: 1rem;
-    padding-left: 3.3rem;
+    background-position: left units(2.5) center;
+    background-size: units(1);
+    padding-left: units(4);
 
     @include at-media('tablet') {
-      margin-right: 1.5rem;
+      margin-right: units(2);
       margin-top: 0;
     }
   }
 }
 
 .demo-footer-title {
-  margin-bottom: 0.7rem;
+  margin-bottom: units(1);
   margin-top: 0;
   color: color('white');
   display: inline-block;
 
   @include at-media('tablet') {
-    @include u-margin-y(1em);
+    @include u-margin-y(1);
   }
 }
 
@@ -1419,16 +1423,16 @@ code {
 hr {
   background: color('gray-cool-10');
   border: none;
-  height: 1px;
-  margin: 3em 0;
+  height: units(1px);
+  margin: units(4) 0;
 }
 
 iframe {
-  margin-bottom: 3rem;
+  margin-bottom: units(4);
 }
 
 .post-excerpt {
-  margin-bottom: 5rem;
+  margin-bottom: units(6);
 
   .post-title {
     margin-top: 0;
@@ -1451,12 +1455,12 @@ iframe {
 
   &.post-excerpt {
     .post-title {
-      @include h2();
+      @include typeset-h2;
     }
 
     .post-content p {
       margin-bottom: 0;
-      margin-top: 0.5rem;
+      margin-top: units(0.5);
     }
   } // .post-excerpt
 } // article
@@ -1834,4 +1838,15 @@ li {
   + .utility-text {
     @include u-margin-top(1);
   }
+}
+
+p + .usa-accordion,
+h2 + *,
+h3 + *,
+h4 + * {
+  margin-top: units(2);
+}
+
+.usa-sidenav a {
+  padding-right: units(0.5);
 }

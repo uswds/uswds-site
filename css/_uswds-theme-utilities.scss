@@ -101,7 +101,7 @@ $border-settings: (
   responsive:   true,
   active:       false,
   focus:        false,
-  hover:        false,
+  hover:        true,
   visited:      false
 );
 
@@ -134,7 +134,7 @@ $border-style-settings: (
 
 $border-width-settings: (
   output:       true,
-  responsive:   true,
+  responsive:   false,
   active:       false,
   focus:        false,
   hover:        false,
@@ -296,7 +296,7 @@ $height-settings: (
 
 $justify-content-settings: (
   output:       true,
-  responsive:   false,
+  responsive:   true,
   active:       false,
   focus:        false,
   hover:        false,

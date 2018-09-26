@@ -85,7 +85,7 @@ $theme-color-error-dark:       '#{$theme-color-error-family}-60v';
 $theme-color-error-darker:     '#{$theme-color-error-family}-70v';
 
 // Warning colors
-$theme-color-warning-family:   'gold';
+$theme-color-warning-family:   'gold'; // TODO: How can this be gold vivid?
 $theme-color-warning-lighter:  '#{$theme-color-warning-family}-5v';
 $theme-color-warning-light:    '#{$theme-color-warning-family}-10v';
 $theme-color-warning:          '#{$theme-color-warning-family}-20v';
@@ -113,3 +113,15 @@ $theme-color-disabled-family:  'gray';
 $theme-color-disabled-light:   '#{$theme-color-disabled-family}-10';
 $theme-color-disabled:         '#{$theme-color-disabled-family}-20';
 $theme-color-disabled-dark:    '#{$theme-color-disabled-family}-30';
+
+/*
+----------------------------------------
+General colors
+----------------------------------------
+*/
+
+// Links
+$theme-link-color:             'primary';
+$theme-link-visited-color:     'violet-70v';
+$theme-link-hover-color:       'primary-darker';
+$theme-link-active-color:      'primary-darker';

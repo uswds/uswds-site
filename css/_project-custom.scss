@@ -753,11 +753,11 @@ h3 + .button_wrapper {
 }
 
 .usa-color-focus {
-  background-color: color($theme-color-focus);
+  background-color: color($theme-focus-color);
 }
 
 .usa-color-visited {
-  background-color: color($theme-color-link-visited);
+  background-color: color($theme-link-visited-color);
 }
 
 // Color text helpers
@@ -787,7 +787,7 @@ h3 + .button_wrapper {
 }
 
 .usa-color-text-visited {
-  color: color($theme-color-link-visited);
+  color: color($theme-link-visited-color);
 }
 
 .usa-color-text-gray-dark {

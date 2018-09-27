@@ -51,7 +51,7 @@
   "dependencies": {
     "jquery": "^3.3.1",
     "normalize.css": "^8.0.0",
-    "uswds": "github:uswds/uswds#release-2.0"
+    "uswds": "2.0.0-beta"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5",

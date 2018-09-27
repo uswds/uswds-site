@@ -1837,25 +1837,23 @@ li {
   }
 }
 
-p + .usa-accordion,
-h2 + div,
-h3 + div,
-h4 + div,
-h5 + div,
-h6 + div {
-  margin-top: units(2);
-}
+:not(.preview) {
+  p + .usa-accordion,
+  h2 + div,
+  h3 + div,
+  h4 + div,
+  h5 + div,
+  h6 + div {
+    margin-top: units(2);
+  }
 
-.usa-sidenav a {
-  padding-right: units(0.5);
-}
+  .usa-sidenav a {
+    padding-right: units(0.5);
+  }
 
-* + .usa-accordion {
-  margin-top: units(2);
-}
-
-.usa-accordion-heading + .usa-accordion-content {
-  margin-top: 0;
+  * + .usa-accordion {
+    margin-top: units(2);
+  }
 }
 
 .default-container {

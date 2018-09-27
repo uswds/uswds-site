@@ -1265,15 +1265,14 @@ code {
   display: table;
 
   &::before {
+    @include u-square(1.5);
     background: url('#{$image-path}/icon-download.png') no-repeat 0 0;
     background: url('#{$image-path}/icon-download.svg') no-repeat 0 0;
     background-size: 100%;
     content: '';
     display: inline-block;
-    height: units(1);
     margin-bottom: 0;
     margin-right: units(1.5);
-    width: units(1);
   }
 }
 

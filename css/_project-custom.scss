@@ -1103,7 +1103,7 @@ code {
   }
 
   .usa-font-lead {
-    @include typeset('sans', 10, 4)
+    @include typeset('sans', 10, 4);
     font-weight: font-weight('light');
   }
 

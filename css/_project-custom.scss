@@ -278,7 +278,12 @@ body {
   .lt-ie9 & {
     width: 75%;
   }
+}
 
+// Ensure the homepage accordion displays properly
+// TODO: make sure line height is added in USWDS accordion component and that
+// list styles don't override accordion styles
+#main-content {
   .usa-accordion-button {
     line-height: 1;
   }

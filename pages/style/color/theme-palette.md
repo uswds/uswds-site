@@ -42,11 +42,9 @@ Each color family has seven possible lightness grades, from `lightest` to `darke
 
 <div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-4 text-bold font-sans-1">
   <div class="grid-col-1">color</div>
-  <div class="grid-col-2">family token</div>
-  <div class="grid-col-2">grade token</div>
-  <div class="grid-col-4">theme settings variable</div>
-  <div class="grid-col-2">system equivalent</div>
-  <div class="grid-col-1 text-right">hex</div>
+  <div class="grid-col-4">token</div>
+  <div class="grid-col-3">system palette equivalent</div>
+  <div class="grid-col-fill text-right">hex value</div>
 </div>
 
 {% for color in theme_colors %}
@@ -56,23 +54,13 @@ Each color family has seven possible lightness grades, from `lightest` to `darke
   <span class="grid-col-1">
     <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
   </span>
-  <span class="grid-col-2">
-    <span class="utility-class">'{{ color.family_token }}'</span>
+  <span class="grid-col-4">
+    <span class="utility-class">'{{ color.family_token }}{% if color.grade_token %}-{{ color.grade_token }}{% endif %}'</span>
   </span>
-  <span class="grid-col-2">
-    {% if color.grade_token %}
-    <span class="utility-class">'{{ color.grade_token }}'</span>
-    {% else %}
-    <span>—</span>
-    {% endif %}
-  </span>
-  <span class="grid-col-4 font-mono-3">
-    <span>{{ color.theme_var }}</span>
-  </span>
-  <span class="grid-col-2 font-mono-3">
+  <span class="grid-col-3 font-mono-3">
     <span>{{ color.system }}</span>
   </span>
-  <span class="grid-col-1 text-right font-mono-3">
+  <span class="grid-col-fill text-right font-mono-3">
     {{ color.value }}
   </span>
 </div>
@@ -86,11 +74,9 @@ Each color family except `disabled` has five possible lightness grades, from `li
 
 <div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-4 text-bold font-sans-1">
   <div class="grid-col-1">color</div>
-  <div class="grid-col-2">family token</div>
-  <div class="grid-col-2">grade token</div>
-  <div class="grid-col-4">theme settings variable</div>
-  <div class="grid-col-2">system equivalent</div>
-  <div class="grid-col-1 text-right">hex</div>
+  <div class="grid-col-4">token</div>
+  <div class="grid-col-3">system palette equivalent</div>
+  <div class="grid-col-fill text-right">hex value</div>
 </div>
 
 {% for color in state_colors %}
@@ -100,23 +86,13 @@ Each color family except `disabled` has five possible lightness grades, from `li
   <span class="grid-col-1">
     <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
   </span>
-  <span class="grid-col-2">
-    <span class="utility-class">'{{ color.family_token }}'</span>
+  <span class="grid-col-4">
+    <span class="utility-class">'{{ color.family_token }}{% if color.grade_token %}-{{ color.grade_token }}{% endif %}'</span>
   </span>
-  <span class="grid-col-2">
-    {% if color.grade_token %}
-    <span class="utility-class">'{{ color.grade_token }}'</span>
-    {% else %}
-    <span>—</span>
-    {% endif %}
-  </span>
-  <span class="grid-col-4 font-mono-3">
-    <span>{{ color.theme_var }}</span>
-  </span>
-  <span class="grid-col-2 font-mono-3">
+  <span class="grid-col-3 font-mono-3">
     <span>{{ color.system }}</span>
   </span>
-  <span class="grid-col-1 text-right font-mono-3">
+  <span class="grid-col-fill text-right font-mono-3">
     {{ color.value }}
   </span>
 </div>

@@ -236,7 +236,7 @@ body {
   @include at-media('desktop') {
     display: block;
     float: left;
-    margin-bottom: units('mobile-lg'); // TODO what is this magic number?
+    margin-bottom: units(6);
     margin-top: units(6);
     padding-right: units(1);
     padding-left: units(4);
@@ -1838,11 +1838,11 @@ li {
 }
 
 p + .usa-accordion,
-h2 + *,
-h3 + *,
-h4 + *,
-h5 + *,
-h6 + * {
+h2 + div,
+h3 + div,
+h4 + div,
+h5 + div,
+h6 + div {
   margin-top: units(2);
 }
 
@@ -1856,4 +1856,8 @@ h6 + * {
 
 .usa-accordion-heading + .usa-accordion-content {
   margin-top: 0;
+}
+
+.default-container {
+  @include clearfix;
 }

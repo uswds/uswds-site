@@ -117,18 +117,12 @@ USWDS helps teams choose accessible colors with a color grade system. Let’s lo
 
 ### Magic number
 We call the difference in grade between any two colors the _magic number_. Magic numbers have important contrast implications:
-- **A magic number of `40`** or higher achieves WCAG 2.0 AA Large Text contrast (For example: between `gray 90` and `indigo warm 50v`).
-- **A magic number of `50`** or higher achieves WCAG 2.0 AA contrast or AAA Large Text contrast(For example: between `gray 90` and `red 40`).
-- **A magic number of `70`** or higher achieves WCAG 2.0 AAA contrast (For example: between `gray 10` and `red 80`).
+- **A magic number of `40`** or higher achieves WCAG 2.0 AA Large Text contrast (example: between `gray 90` and `indigo warm 50v`).
+- **A magic number of `50`** or higher achieves WCAG 2.0 AA contrast or AAA Large Text contrast(example: between `gray 90` and `red 40`).
+- **A magic number of `70`** or higher achieves WCAG 2.0 AAA contrast (example: between `gray 10` and `red 80`).
 - **Colors of grade `50`** achieve Section 508 AA contrast against both pure white (grade `0`) and pure black (grade `100`).
 
 Use USWDS magic numbers to choose accessible color combinations from any palette and color family.
-
-<!-- The difference in grades between two colors is meaningful. Use this difference to calculate contrast. Across all colors and color familes:
-
-**Grade differences (deltas) of 50** between any two colors assure that the contrast between the two colors conforms to WCAG 2.0 AA. (For example: between `gray 90` and `red 40`.)
-
-**Grade differences (deltas) of 40** between any two colors assure that the contrast between the two colors conforms to WCAG 2.0 AA Large. (For example: between `gray 90` and `indigo warm 50v`.) -->
 
 #### Accessible color combination examples
 

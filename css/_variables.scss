@@ -1,22 +1,20 @@
 // USWDS Overrides
-$color-grid-dark:   #727272;
-$color-grid-light:  #e3e4e5;
-$font-monospace:    Consolas, Monaco, 'Andale Mono', monospace;
+$color-grid-dark: 'base';
+$color-grid-light: 'base-lightest';
+$font-monospace: Consolas, Monaco, 'Andale Mono', monospace;
 $asset-path: '../';
 $font-path: '#{$asset-path}fonts';
 $image-path: '#{$asset-path}img';
 
-$external-href:     '[href^="http"]:not([href*=".gov"])';
+$external-href: '[href^="http"]:not([href*=".gov"])';
 
-$z-nav-secondary: 10;
+$z-nav-secondary: 100;
 
 // Site image path, relative to /assets/css/
 $site-image-path: '../../img';
 
 // Custom Variables
-$font-light: 300;
-$site-nav-font-size: 1.7rem;
-$media-block-header-font-size: 1.7rem;
-$media-block-body-font-size: 1.5rem;
-$height-nav-secondary: 4.8rem;
-$width-nav-sidebar: 250px;
+$media-block-header-font-size: 'md';
+$media-block-body-font-size: 'xs';
+$height-nav-secondary: 6;
+$width-nav-sidebar: 'card-lg';

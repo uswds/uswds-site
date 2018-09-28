@@ -20,11 +20,11 @@ Theme palette colors
 // Base colors
 $theme-color-base-family:           'gray';
 $theme-color-base-lightest:         '#{$theme-color-base-family}-5';
-$theme-color-base-lighter:          'gray-cool-10';
+$theme-color-base-lighter:          '#{$theme-color-base-family}-10';
 $theme-color-base-light:            '#{$theme-color-base-family}-30';
 $theme-color-base:                  '#{$theme-color-base-family}-50';
-$theme-color-base-dark:             'gray-cool-60';
-$theme-color-base-darker:           'gray-cool-80';
+$theme-color-base-dark:             '#{$theme-color-base-family}-60';
+$theme-color-base-darker:           '#{$theme-color-base-family}-80';
 $theme-color-base-darkest:          '#{$theme-color-base-family}-90';
 $theme-color-base-ink:              '#{$theme-color-base-family}-90';
 
@@ -35,8 +35,8 @@ $theme-color-primary-lighter:       '#{$theme-color-primary-family}-10';
 $theme-color-primary-light:         '#{$theme-color-primary-family}-30';
 $theme-color-primary:               '#{$theme-color-primary-family}-60v';
 $theme-color-primary-vivid:         'blue-warm-60v';
-$theme-color-primary-dark:          'blue-warm-70v';
-$theme-color-primary-darker:        'blue-warm-80v';
+$theme-color-primary-dark:          '#{$theme-color-primary-family}-70v';
+$theme-color-primary-darker:        '#{$theme-color-primary-family}-80v';
 $theme-color-primary-darkest:       false;
 
 // Secondary colors
@@ -67,7 +67,7 @@ $theme-color-accent-cool-lighter:   '#{$theme-color-accent-cool-family}-5';
 $theme-color-accent-cool-light:     '#{$theme-color-accent-cool-family}-20';
 $theme-color-accent-cool:           '#{$theme-color-accent-cool-family}-30v';
 $theme-color-accent-cool-dark:      '#{$theme-color-accent-cool-family}-40v';
-$theme-color-accent-cool-darker:    'blue-60';
+$theme-color-accent-cool-darker:    '#{$theme-color-accent-cool-family}-70';
 $theme-color-accent-cool-darkest:   false;
 
 /*
@@ -113,3 +113,15 @@ $theme-color-disabled-family:  'gray';
 $theme-color-disabled-light:   '#{$theme-color-disabled-family}-10';
 $theme-color-disabled:         '#{$theme-color-disabled-family}-20';
 $theme-color-disabled-dark:    '#{$theme-color-disabled-family}-30';
+
+/*
+----------------------------------------
+General colors
+----------------------------------------
+*/
+
+// Links
+$theme-link-color:             'primary';
+$theme-link-visited-color:     'violet-70v';
+$theme-link-hover-color:       'primary-darker';
+$theme-link-active-color:      'primary-darker';

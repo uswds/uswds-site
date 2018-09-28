@@ -8,7 +8,7 @@ order: 02
 <p>To support both more contemporary and more traditional web design aesthetics, this font system offers recommended font pairings. Each pairing includes web hierarchy guidance on font family, weight, size, and spacing which express either more modern or more classical type design.</p>
 <p>Note: Some pairings require more font weights than others. While this allows more typographic expression, the use of more than four font weights will have a negative impact on page load performance. Find the balance that works for your product.</p>
 
-<ul class="usa-accordion-bordered usa-typography-example">
+<ul class="usa-accordion usa-accordion-bordered usa-typography-example">
   <li>
     <button class="usa-accordion-button"
         aria-controls="font-pairing1-docs"
@@ -161,7 +161,7 @@ order: 02
   </li>
 </ul>
 
-<ul class="usa-accordion-bordered usa-typography-example">
+<ul class="usa-accordion usa-accordion-bordered usa-typography-example">
   <li>
     <button class="usa-accordion-button"
         aria-expanded="false" aria-controls="font-pairing3-docs">
@@ -327,7 +327,7 @@ order: 02
   </li>
 </ul>
 
-<ul class="usa-accordion-bordered usa-typography-example">
+<ul class="usa-accordion usa-accordion-bordered usa-typography-example">
   <li>
     <button class="usa-accordion-button"
         aria-expanded="false" aria-controls="font-pairing4-docs">
@@ -471,7 +471,7 @@ order: 02
   </li>
 </ul>
 
-<ul class="usa-accordion-bordered usa-typography-example">
+<ul class="usa-accordion usa-accordion-bordered usa-typography-example">
   <li>
     <button class="usa-accordion-button"
         aria-expanded="false" aria-controls="font-pairing5-docs">

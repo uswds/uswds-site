@@ -56,8 +56,8 @@ utilities:
 <div markdown="1">
 ```html
 <div class="clearfix">
-  <p class="float-left">.float-left</p>
-  <p class="float-right">.float-right</p>
+  <span class="float-left">.float-left</span>
+  <span class="float-right">.float-right</span>
 </div>
 ```
 </div>

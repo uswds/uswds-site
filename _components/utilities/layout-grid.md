@@ -60,7 +60,9 @@ The above example creates three equal-width columns on tablet, desktop, and wide
 
 Breaking it down, here's how it works:
 
-- **Containers** `grid-container` centers the container and gives it a maximum width of `desktop` (1024px). If you would like the grid to span the full width of the page, do not use `grid-container`. `grid-container` can also accept any breakpoint width like `grid-container-tablet-lg` or `grid-container-widescreen`. Set the default max width with `$theme-site-max-width` in `uswds-theme-spacing.scss`.
+- **Containers** `grid-container` centers the container and gives it a maximum width of `desktop` (1024px). If you would like the grid to span the full width of the page, do not use `grid-container`.
+
+  `grid-container` can also accept any breakpoint width like `grid-container-tablet-lg` or `grid-container-widescreen`. Set the default max width with `$theme-site-max-width` in `uswds-theme-spacing.scss`.
 
   By default, `grid-container`s have padding-x of 2 units, with a padding-x of 4 units at `desktop` and wider. Control these values with the values of `$theme-site-margins-mobile-width`, `$theme-site-margins-width` and `$theme-site-margins-beakpoint` in `uswds-theme-spacing.scss`.
 - **Rows** Columns must have a `grid-row` as a parent.
@@ -116,8 +118,8 @@ Breaking it down, here's how it works:
 
 <h2 id="auto-layout-columns">Auto layout columns</h2>
 <h3>Variable width content</h3>
-<p><code class="docs-inline-code">.grid-col-auto</code> items fit the natural width of their content.</p>
-<p><code class="docs-inline-code">.grid-col</code> and <code class="docs-inline-code">.grid-col-fill</code> items flex to fill the available space.</p>
+<p><code>.grid-col-auto</code> items fit the natural width of their content.</p>
+<p><code>.grid-col</code> and <code>.grid-col-fill</code> items flex to fill the available space.</p>
 
 
 <div class="docs-grid-example">
@@ -147,8 +149,8 @@ Breaking it down, here's how it works:
 
 <h2 id="responsive-classes">Responsive classes</h2>
 <h3>Same at all breakpoints</h3>
-<p>For columns that should maintain the same proportion at any viewport width, use the <code class="docs-inline-code">.grid-col</code> and <code class="docs-inline-code">.grid-col-*</code> classes. Specify a numbered class when you need a column of a specific width; otherwise, use <code class="docs-inline-code">.grid-col</code>.</p>
-<p><code class="docs-inline-code">.grid-col-[1-12]</code> set a fixed width of [n] grid-columns in a 12-column grid.</p>
+<p>For columns that should maintain the same proportion at any viewport width, use the <code>.grid-col</code> and <code>.grid-col-*</code> classes. Specify a numbered class when you need a column of a specific width; otherwise, use <code>.grid-col</code>.</p>
+<p><code>.grid-col-[1-12]</code> set a fixed width of [n] grid-columns in a 12-column grid.</p>
 
 {% capture grid-markers %}
 <div class="grid-row margin-top-1 font-sans-2">
@@ -223,7 +225,7 @@ Breaking it down, here's how it works:
 </div>
 
 <h3>Stacked columns at narrow widths</h3>
-<p>Columns are full-width until the narrowest breakpoint specified in a <code class="docs-inline-code">.grid-col</code> class. For instance, using a single set of <code class="docs-inline-code">tablet:grid-col-*</code> classes, you can create a basic grid system that starts out stacked before displaying as columns at the tablet breakpoint (<code class="docs-inline-code">tablet:</code>).</p>
+<p>Columns are full-width until the narrowest breakpoint specified in a <code>.grid-col</code> class. For instance, using a single set of <code>tablet:grid-col-*</code> classes, you can create a basic grid system that starts out stacked before displaying as columns at the tablet breakpoint (<code>tablet:</code>).</p>
 
 <div class="docs-grid-example">
 {% capture grid-stacked %}
@@ -290,7 +292,7 @@ Breaking it down, here's how it works:
 </div>
 
 <h2 id="offsetting-columns">Offsetting columns</h2>
-<p><code class="docs-inline-code">.grid-offset-[1-12]</code> offsets the item by the specified number of grid columns.</p>
+<p><code>.grid-offset-[1-12]</code> offsets the item by the specified number of grid columns.</p>
 {{ grid-markers }}
 
 <div class="docs-grid-example">
@@ -341,11 +343,11 @@ Breaking it down, here's how it works:
 
 <h2 id="gutters">Gutters</h2>
 
-<h3>Default gutter</h3>
-<p>Add <code class="docs-inline-code">.grid-gap</code> to a grid row to add a gap (or gutter) between each column in the row. The default gap width is 2 units and 4 units at `desktop` and higher. Customize the width of the gap by adjusting the value of <code class="docs-inline-code">$theme-column-gap</code> in project settings.</p>
-{{ grid-markers }}
+### Default gutter
+Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the row. The default gap width is 2 units and 4 units at `desktop` and higher. Customize the width of the gap by adjusting the value of `$theme-column-gap` in project settings.
 
-<div class="docs-grid-example">
+{{ grid-markers }}
+<div class="docs-grid-example margin-top-2">
 {% capture grid-gutters %}
 <div class="grid-row grid-gap">
   <div class="grid-col-4">
@@ -374,7 +376,7 @@ Breaking it down, here's how it works:
 </div>
 
 <h3>Large gutter</h3>
-<p><code class="docs-inline-code">grid-gap-lg</code> adds a larger gap (or gutter) between each column in a row. The default large gap width is 32px (4 spacing units). Customize the width of the large gap by adjusting the value of <code class="docs-inline-code">$theme-column-gap-lg</code> in project settings. There is also a <code class="docs-inline-code">.grid-gap-sm</code> (2px) set with <code class="docs-inline-code">$theme-column-gap-sm</code>. Also, you can add the following system values with <code class="docs-inline-code">grid-gap</code>:</p>
+<p><code>grid-gap-lg</code> adds a larger gap (or gutter) between each column in a row. The default large gap width is 32px (4 spacing units). Customize the width of the large gap by adjusting the value of <code>$theme-column-gap-lg</code> in project settings. There is also a <code>.grid-gap-sm</code> (2px) set with <code>$theme-column-gap-sm</code>. Also, you can add the following system values with <code>grid-gap</code>:</p>
 <div markdown="1">
 - `grid-gap-2px`
 - `grid-gap-05`

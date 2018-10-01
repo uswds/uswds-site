@@ -3,12 +3,12 @@ permalink: /documentation/designers/
 layout: styleguide
 title: For designers
 category: Documentation
-lead: While many programs maintain their own unique brand identities, the Design System offers a common visual style that you can flexibly apply to a range of government digital platforms. Our visual style offers a clean, modern aesthetic that meets high standards of visual accessibility while promoting credibility, trust, and warmth in the design.
+lead: USWDS offers a flexible yet coherent visual style you can apply to any government website. Our visual style offers a clean, modern aesthetic that meets high standards of usability and accessibility while promoting credibility and trust.
 redirect_from:
   - /getting-started/designers/
 ---
 
-We expect many teams will need to customize this guide, but we encourage you to incorporate as much consistency in look, feel, and usability as you can.
+See the [style]({{ site.baseurl }}/style/) section for more on USWDS system styles and palettes.
 
 As a complement to this visual style guidance, we strongly recommend you use [18F’s Content Guide](https://pages.18f.gov/content-guide/) when writing language for government services.
 

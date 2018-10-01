@@ -47,8 +47,8 @@ utilities:
 
     <section class="utility-examples">
       <div class="clearfix border-1px">
-        <p class="float-left bg-secondary-light padding-2">.float-left</p>
-        <p class="float-right bg-secondary-light padding-2">.float-right</p>
+        <span class="float-left bg-secondary-light padding-2">.float-left</span>
+        <span class="float-right bg-secondary-light padding-2">.float-right</span>
       </div>
       <div class="usa-accordion-bordered usa-code-sample margin-top-4">
         <button class="usa-accordion-button" aria-controls="code-clearfix" aria-expanded="true">Code</button>

@@ -19,7 +19,7 @@ lead: The U.S. Web Design System provides design guidelines and code to help you
     <h3>
       <a href="{{ site.baseurl }}/getting-started/designers/">Designers</a>
     </h3>
-    <p>Whether you’re creating simple wireframes or detailed visual design comps, we’ve got you covered with the design resources you need.</p>
+    <p>Whether you’re creating simple wireframes or detailed visual design comps, we’ve got you covered with the design resources you need. (<em>Note: Sketch and Illustrator USWDS 2.0 assets are not yet available.</em>)</p>
   </div>
 </div>
 

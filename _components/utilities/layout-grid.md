@@ -342,7 +342,7 @@ Breaking it down, here's how it works:
 <h2 id="gutters">Gutters</h2>
 
 <h3>Default gutter</h3>
-<p>Add <code class="docs-inline-code">.grid-gap</code> to a grid row to add a gap (or gutter) between each column in the row. The default gap width is 16px (2 spacing units). Customize the width of the gap by adjusting the value of <code class="docs-inline-code">$theme-column-gap</code> in project settings.</p>
+<p>Add <code class="docs-inline-code">.grid-gap</code> to a grid row to add a gap (or gutter) between each column in the row. The default gap width is 2 units and 4 units at `desktop` and higher. Customize the width of the gap by adjusting the value of <code class="docs-inline-code">$theme-column-gap</code> in project settings.</p>
 {{ grid-markers }}
 
 <div class="docs-grid-example">
@@ -374,7 +374,7 @@ Breaking it down, here's how it works:
 </div>
 
 <h3>Large gutter</h3>
-<p><code class="docs-inline-code">.grid-gap-lg</code> adds a larger gap (or gutter) between each column in a row. The default large gap width is 32px (4 spacing units). Customize the width of the large gap by adjusting the value of <code class="docs-inline-code">$theme-column-gap-lg</code> in project settings. There is also a <code class="docs-inline-code">.grid-gap-sm</code> (2px) set with <code class="docs-inline-code">$theme-column-gap-sm</code>. Also, you can add the following system values with <code class="docs-inline-code">.grid-gap</code>:</p>
+<p><code class="docs-inline-code">grid-gap-lg</code> adds a larger gap (or gutter) between each column in a row. The default large gap width is 32px (4 spacing units). Customize the width of the large gap by adjusting the value of <code class="docs-inline-code">$theme-column-gap-lg</code> in project settings. There is also a <code class="docs-inline-code">.grid-gap-sm</code> (2px) set with <code class="docs-inline-code">$theme-column-gap-sm</code>. Also, you can add the following system values with <code class="docs-inline-code">grid-gap</code>:</p>
 <div markdown="1">
 - `grid-gap-2px`
 - `grid-gap-05`
@@ -423,12 +423,30 @@ When generating your CSS from USWDS source files, you have the option of customi
 ### Variables
 Variables and maps determine the number of columns, the gutter width, and the media query point at which to begin floating columns. We use these to generate the predefined grid classes documented above, as well as for the custom mixins listed below.
 
-```scss
-$theme-column-gap:     16px;
-$theme-column-gap-lg:  32px;
+{:.font-mono-xs}
+#### uswds-theme-spacing.scss
 
+```scss
+// Values are set as units tokens.
+
+$theme-column-gap-sm:               2px;
+$theme-column-gap-md:               2;
+$theme-column-gap-lg:               3;
+$theme-column-gap-mobile:           2;
+$theme-column-gap-desktop:          4;
+$theme-grid-container-max-width:    'desktop';
+$theme-site-max-width:              'desktop';
+$theme-site-margins-breakpoint:     'desktop';
+$theme-site-margins-width:          4;
+$theme-site-margins-mobile-width:   2;
+```
+
+{:.font-mono-xs}
+#### uswds-theme-utilities.scss
+
+```scss
 // Turn on or off breakpoints
-$theme-output-breakpoints: (
+$theme-utility-breakpoints: (
   'card':              false,   // 160px
   'card-lg':           false,   // 240px
   'mobile':            false,   // 320px
@@ -439,8 +457,6 @@ $theme-output-breakpoints: (
   'desktop-lg':        false,   // 1200px
   'widescreen':        false,   // 1400px
 );
-
-$theme-grid-container-max-width: desktop;
 ```
 
 ### Mixins

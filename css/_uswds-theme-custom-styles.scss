@@ -1429,7 +1429,7 @@ iframe {
 }
 
 .post-excerpt {
-  margin-bottom: units(6);
+  margin-top: units(5);
 
   .post-title {
     margin-top: 0;
@@ -1444,23 +1444,31 @@ iframe {
         text-decoration: underline;
       }
     }
-  } // .post-title
+  }
+
+  .post-category {
+    margin-top: 0;
+  }
+
+  .post-category + .post-title {
+    margin-top: 0;
+  }
 
   .post-date {
+    letter-spacing: normal;
     text-transform: none;
   }
 
-  &.post-excerpt {
-    .post-title {
-      @include typeset-h2;
-    }
+  .post-content p {
+    margin-bottom: 0;
+    margin-top: units(0.5);
+  }
+} // .post-excerpt
 
-    .post-content p {
-      margin-bottom: 0;
-      margin-top: units(0.5);
-    }
-  } // .post-excerpt
-} // article
+.post-title {
+  @include typeset-h2;
+  @include u-measure(1);
+}
 
 // Utilities CSS --------------------- //
 

@@ -56,17 +56,19 @@ subnav:
 </div>
 
 <div markdown="1">
-The above example creates three equal-width columns on tablet, desktop, and widescreen devices using our predefined grid classes. Those columns are centered in the page with the parent `.grid-container` container.
+The above example creates three equal-width columns on tablet, desktop, and widescreen devices using our predefined grid classes. Those columns are centered in the page with the parent `grid-container` container.
 
 Breaking it down, here's how it works:
 
-- **Containers** `.grid-container` centers the container and gives it a maximum width of 1024px. If you would like the grid to span the full width of the page, do not use `.grid-container`. `grid-container` can also accept any breakpoint width like `grid-container-tablet-lg` or `grid-container-widescreen`.
-- **Rows** Columns must have a `.grid-row` as a parent.
-- **Columns** `.grid-col-[1-12]` indicates the number of columns the item spans out of a possible 12 per row. So, if you want three equal-width columns across, use `.grid-col-4` for each item.
-- With flexbox, grid columns without a specified width will display as equal-width columns. For example, four instances of `.grid-col` will display as one-quarter-width columns across all sizes. See the [auto-layout columns](#auto-layout-columns) section for more examples.
-- Rows and columns don't have any gutters by default, but they can be added by adding `.grid-gap-sm`, `.grid-gap`, or `.grid-gap-lg` at the row level. See [gutters](#gutters) for more info.
+- **Containers** `grid-container` centers the container and gives it a maximum width of `desktop` (1024px). If you would like the grid to span the full width of the page, do not use `grid-container`. `grid-container` can also accept any breakpoint width like `grid-container-tablet-lg` or `grid-container-widescreen`. Set the default max width with `$theme-site-max-width` in `uswds-theme-spacing.scss`.
+
+  By default, `grid-container`s have padding-x of 2 units, with a padding-x of 4 units at `desktop` and wider. Control these values with the values of `$theme-site-margins-mobile-width`, `$theme-site-margins-width` and `$theme-site-margins-beakpoint` in `uswds-theme-spacing.scss`.
+- **Rows** Columns must have a `grid-row` as a parent.
+- **Columns** `grid-col-[1-12]` indicates the number of columns the item spans out of a possible 12 per row. So, if you want three equal-width columns across, use `grid-col-4` for each item.
+- With flexbox, grid columns without a specified width will display as equal-width columns. For example, four instances of `grid-col` will display as one-quarter-width columns across all sizes. See the [auto-layout columns](#auto-layout-columns) section for more examples.
+- Rows and columns don't have any gutters by default, but they can be added by adding `grid-gap-sm`, `grid-gap`, or `grid-gap-lg` at the row level. See [gutters](#gutters) for more info.
 - Grid breakpoints are based on minimum width media queries, meaning they apply to that specific width and all greater widths (e.g., `tablet:col-4` applies to tablet, desktop, and widescreen devices, but not at `mobile-lg` or any width below the tablet breakpoint). See [responsive variants](#responsive-variants) for full list.
-- You can use predefined grid classes (like `.grid-col-4`) for presentational markup or [Sass mixins](#sass-mixins) for more semantic markup.
+- You can use predefined grid classes (like `grid-col-4`) for presentational markup or [Sass mixins](#sass-mixins) for more semantic markup.
 
 </div>
 
@@ -374,14 +376,14 @@ Breaking it down, here's how it works:
 <h3>Large gutter</h3>
 <p><code class="docs-inline-code">.grid-gap-lg</code> adds a larger gap (or gutter) between each column in a row. The default large gap width is 32px (4 spacing units). Customize the width of the large gap by adjusting the value of <code class="docs-inline-code">$theme-column-gap-lg</code> in project settings. There is also a <code class="docs-inline-code">.grid-gap-sm</code> (2px) set with <code class="docs-inline-code">$theme-column-gap-sm</code>. Also, you can add the following system values with <code class="docs-inline-code">.grid-gap</code>:</p>
 <div markdown="1">
-- `.grid-gap-2px`
-- `.grid-gap-05`
-- `.grid-gap-1`
-- `.grid-gap-2`
-- `.grid-gap-3`
-- `.grid-gap-4`
-- `.grid-gap-5`
-- `.grid-gap-6`
+- `grid-gap-2px`
+- `grid-gap-05`
+- `grid-gap-1`
+- `grid-gap-2`
+- `grid-gap-3`
+- `grid-gap-4`
+- `grid-gap-5`
+- `grid-gap-6`
 </div>
 {{ grid-markers }}
 

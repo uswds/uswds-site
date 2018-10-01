@@ -178,7 +178,6 @@ colors:
       family_token: 'base'
       grade_token: false
       value: '#757575'
-      reverse: true
       var: $color-base
       system: gray-50
       theme_var: $theme-color-base

@@ -108,20 +108,20 @@ utilities:
     <dd class="output-css">box-shadow: none</dd>
     <dd class="output-variable">—</dd>
     <dt class="output-utility">.shadow-1</dt>
-    <dd class="output-css">box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1)</dd>
-    <dd class="output-variable">—</dd>
+    <dd class="output-css">box-shadow: <span class="output-token">box-shadow(1)</span></dd>
+    <dd class="output-variable">0 1px units(0.5) 0 rgba(0, 0, 0, 0.1)</dd>
     <dt class="output-utility">.shadow-2</dt>
-    <dd class="output-css">box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1)</dd>
-    <dd class="output-variable">—</dd>
+    <dd class="output-css">box-shadow: <span class="output-token">box-shadow(2)</span></dd>
+    <dd class="output-variable">0 units(0.5) units(1) 0 rgba(0, 0, 0, 0.1)</dd>
     <dt class="output-utility">.shadow-3</dt>
-    <dd class="output-css">box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1)</dd>
-    <dd class="output-variable">—</dd>
+    <dd class="output-css">box-shadow: <span class="output-token">box-shadow(3)</span></dd>
+    <dd class="output-variable">0 units(1) units(2) 0 rgba(0, 0, 0, 0.1)</dd>
     <dt class="output-utility">.shadow-4</dt>
-    <dd class="output-css">box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1)</dd>
-    <dd class="output-variable">—</dd>
+    <dd class="output-css">box-shadow: <span class="output-token">box-shadow(4)</span></dd>
+    <dd class="output-variable">0 units(1.5) units(3) 0 rgba(0, 0, 0, 0.1)</dd>
     <dt class="output-utility">.shadow-5</dt>
-    <dd class="output-css">box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1)</dd>
-    <dd class="output-variable">—</dd>
+    <dd class="output-css">box-shadow: <span class="output-token">box-shadow(5)</span></dd>
+    <dd class="output-variable">0 units(2) units(4) 0 rgba(0, 0, 0, 0.1)</dd>
   </dl>
 </section>
 

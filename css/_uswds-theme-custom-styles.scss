@@ -1806,6 +1806,7 @@ li {
 .utility-example-container-condensed {
   @extend .utility-example-container;
   @include u-margin-bottom(1);
+  @include u-maxw(none);
   @include u-padding-bottom(1);
 }
 

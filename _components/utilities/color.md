@@ -204,7 +204,7 @@ utilities:
   <dl class="output-list">
     {% for color in all_colors %}
       <dt class="output-utility">.text-{{ color.token }}</dt>
-      <dd class="output-css">color: color('{{ color.token }}')</dd>
+      <dd class="output-css">color: <span class="output-token">color('{{ color.token }}')</span></dd>
       <dd class="output-variable">
         <span class="display-inline-block bg-{{ color.token }} circle-105 text-baseline margin-right-05"></span>
         {{ color.value }}
@@ -212,7 +212,7 @@ utilities:
     {% endfor %}
     {% for color in all_colors %}
       <dt class="output-utility">.bg-{{ color.token }}</dt>
-      <dd class="output-css">background-color: color('{{ color.token }}')</dd>
+      <dd class="output-css">background-color: <span class="output-token">color('{{ color.token }}')</span></dd>
       <dd class="output-variable">
         <span class="display-inline-block bg-{{ color.token }} circle-105 text-baseline margin-right-05"></span>
         {{ color.value }}

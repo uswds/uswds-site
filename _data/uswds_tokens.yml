@@ -142,9 +142,6 @@ colors:
       value: '#000000'
     - token: white
       value: '#ffffff'
-    - token: highlight
-      value: '#e5a000'
-      var: $gold-30v
 
   transparent:
     - token: transparent

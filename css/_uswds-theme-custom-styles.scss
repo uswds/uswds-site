@@ -1670,6 +1670,7 @@ li {
   @include u-font('sans', 1);
   @include u-margin-left(2px);
   @include u-margin-y(0);
+  @include u-maxw(none);
   @include u-text(right, normal, 'gray-60');
 }
 

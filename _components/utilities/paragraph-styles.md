@@ -129,7 +129,7 @@ utilities:
             <div class="display-flex flex-column flex-align-start">
               <p class="utility-class">.line-height-sans-2</p>
               <p class="utility-value">~1.15</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> introductory (dek) text, no more than 1-2 sentences</p>
+              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> headings, introductory (lead or dek) text, no more than 1-2 sentences</p>
             </div>
           </div>
           <div class="grid-col-4 grid-gap display-flex flex-column flex-justify flex-align-start utility-example-container">
@@ -137,7 +137,7 @@ utilities:
             <div class="display-flex flex-column flex-align-start">
               <p class="utility-class">.line-height-serif-2</p>
               <p class="utility-value">~1.15</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> introductory (dek) text, no more than 1-2 sentences</p>
+              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> headings, introductory (lead or dek) text, no more than 1-2 sentences</p>
           </div>
           </div>
           <div class="grid-col-4 grid-gap-lg display-flex flex-column flex-justify flex-align-start utility-example-container">
@@ -145,7 +145,7 @@ utilities:
             <div class="display-flex flex-column flex-align-start">
               <p class="utility-class">.line-height-mono-2</p>
               <p class="utility-value">~1.15</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> introductory (dek) text, no more than 1-2 sentences</p>
+              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> headings, introductory (lead or dek) text, no more than 1-2 sentences</p>
           </div>
           </div>
         </div>
@@ -607,141 +607,141 @@ utilities:
   <dl class="output-list">
     <dt class="output-utility">.line-height-sans-1</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(sans, 1)</span></span>
+      <span class="output-rule">line-height: <span class="output-token">line-height('sans', 1)</span></span>
     </dd>
     <dd class="output-variable">0.94</dd>
 
     <dt class="output-utility">.line-height-serif-1</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(serif, 1)</span></span>
+      <span class="output-rule">line-height: <span class="output-token">line-height('serif', 1)</span></span>
     </dd>
     <dd class="output-variable">1.06</dd>
 
     <dt class="output-utility">.line-height-mono-1</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(mono, 1)</span></span>
+      <span class="output-rule">line-height: <span class="output-token">line-height('mono', 1)</span></span>
     </dd>
     <dd class="output-variable">1.05</dd>
 
     <dt class="output-utility">.line-height-sans-2</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(sans, 2)</span></span>
+      <span class="output-rule">line-height: <span class="output-token">line-height('sans', 2)</span></span>
     </dd>
     <dd class="output-variable">1.08</dd>
 
     <dt class="output-utility">.line-height-serif-2</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(serif, 2)</span></span>
+      <span class="output-rule">line-height: <span class="output-token">line-height('serif', 2)</span></span>
     </dd>
     <dd class="output-variable">1.22</dd>
 
     <dt class="output-utility">.line-height-mono-2</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(mono, 2)</span></span>
+      <span class="output-rule">line-height: <span class="output-token">line-height('mono', 2)</span></span>
     </dd>
     <dd class="output-variable">1.21</dd>
 
     <dt class="output-utility">.line-height-sans-3</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(sans, 3)</span></span>
+      <span class="output-rule">line-height: <span class="output-token">line-height('sans', 3)</span></span>
     </dd>
     <dd class="output-variable">1.27</dd>
 
     <dt class="output-utility">.line-height-serif-3</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(serif, 3)</span></span>
+      <span class="output-rule">line-height: <span class="output-token">line-height('serif', 3)</span></span>
     </dd>
     <dd class="output-variable">1.44</dd>
 
     <dt class="output-utility">.line-height-mono-3</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(mono, 3)</span></span>
+      <span class="output-rule">line-height: <span class="output-token">line-height('mono', 3)</span></span>
     </dd>
     <dd class="output-variable">1.42</dd>
 
     <dt class="output-utility">.line-height-sans-4</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(sans, 4)</span></span>
+      <span class="output-rule">line-height: <span class="output-token">line-height('sans', 4)</span></span>
     </dd>
     <dd class="output-variable">1.41</dd>
 
     <dt class="output-utility">.line-height-serif-4</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(serif, 4)</span></span>
+      <span class="output-rule">line-height: <span class="output-token">line-height('serif', 4)</span></span>
     </dd>
     <dd class="output-variable">1.60</dd>
 
     <dt class="output-utility">.line-height-mono-4</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(mono, 4)</span></span>
+      <span class="output-rule">line-height: <span class="output-token">line-height('mono', 4)</span></span>
     </dd>
     <dd class="output-variable">1.57</dd>
 
     <dt class="output-utility">.line-height-sans-5</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(sans, 5)</span></span>
+      <span class="output-rule">line-height: <span class="output-token">line-height('sans', 5)</span></span>
     </dd>
     <dd class="output-variable">1.52</dd>
 
     <dt class="output-utility">.line-height-serif-5</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(serif, 5)</span></span>
+      <span class="output-rule">line-height: <span class="output-token">line-height('serif', 5)</span></span>
     </dd>
     <dd class="output-variable">1.72</dd>
 
     <dt class="output-utility">.line-height-mono-5</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(mono, 5)</span></span>
+      <span class="output-rule">line-height: <span class="output-token">line-height('mono', 5)</span></span>
     </dd>
     <dd class="output-variable">1.70</dd>
 
     <dt class="output-utility">.line-height-sans-6</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(sans, 6)</span></span>
+      <span class="output-rule">line-height: <span class="output-token">line-height('sans', 6)</span></span>
     </dd>
     <dd class="output-variable">1.64</dd>
 
     <dt class="output-utility">.line-height-serif-6</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(serif, 6)</span></span>
+      <span class="output-rule">line-height: <span class="output-token">line-height('serif', 6)</span></span>
     </dd>
     <dd class="output-variable">1.86</dd>
 
     <dt class="output-utility">.line-height-mono-6</dt>
     <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">lh(mono, 6)</span></span>
+      <span class="output-rule">line-height: <span class="output-token">line-height('mono', 6)</span></span>
     </dd>
     <dd class="output-variable">1.84</dd>
 
     <dt class="output-utility">.measure-1</dt>
     <dd class="output-css">
-      <span class="output-rule">max-width: 40ch</span>
+      <span class="output-rule">max-width: <span class="output-token">measure(1)</span></span>
     </dd>
-    <dd class="output-variable">—</dd>
+    <dd class="output-variable">40ch</dd>
 
     <dt class="output-utility">.measure-2</dt>
     <dd class="output-css">
-      <span class="output-rule">max-width: 60ch</span>
+      <span class="output-rule">max-width: <span class="output-token">measure(2)</span></span>
     </dd>
-    <dd class="output-variable">—</dd>
+    <dd class="output-variable">60ch</dd>
 
     <dt class="output-utility">.measure-3</dt>
     <dd class="output-css">
-      <span class="output-rule">max-width: 66ch</span>
+      <span class="output-rule">max-width: <span class="output-token">measure(3)</span></span>
     </dd>
-    <dd class="output-variable">—</dd>
+    <dd class="output-variable">66ch</dd>
 
     <dt class="output-utility">.measure-4</dt>
     <dd class="output-css">
-      <span class="output-rule">max-width: 72ch</span>
+      <span class="output-rule">max-width: <span class="output-token">measure(4)</span></span>
     </dd>
-    <dd class="output-variable">—</dd>
+    <dd class="output-variable">72ch</dd>
 
     <dt class="output-utility">.measure-5</dt>
     <dd class="output-css">
-      <span class="output-rule">max-width: 77ch</span>
+      <span class="output-rule">max-width: <span class="output-token">measure(5)</span></span>
     </dd>
-    <dd class="output-variable">—</dd>
+    <dd class="output-variable">77ch</dd>
 
     <dt class="output-utility">.measure-none</dt>
     <dd class="output-css">

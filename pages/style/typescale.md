@@ -431,6 +431,7 @@ Next, set role-based tokens with the type-based theme variables.
 {:.maxw-mobile-lg}
 ```
 $theme-font-heading:  $theme-font-serif;
+$theme-font-ui:       $theme-font-serif;
 $theme-font-body:     $theme-font-sans;
 $theme-font-code:     $theme-font-mono;
 $theme-font-alt:      $theme-font-sans;
@@ -476,31 +477,17 @@ _The `font` utilities set both the font size and family._
 ```
 
 {:.margin-bottom-0.margin-top-4}
-### Variables
-
-{:.margin-top-05}
-The `$scale` variable requires both an unquoted family token and an unquoted scale token in the form `$scale-[family]-[scale]`.
-
-_The `$scale` variable is only used for for `font-size`._
-
-{:.maxw-mobile-lg}
-```
-font-size: $scale-sans-sm;
-font-size: $scale-code-micro;
-```
-
-{:.margin-bottom-0.margin-top-4}
 ### Functions
 
 {:.margin-top-05}
-Use the `scale()` function to set the font size. The function requires both a  family token and a scale token in the form `scale([family], [scale])`.
+Use the `font-size()` function to set the font size. The function requires both a  family token and a scale token in the form `font-size([family], [scale])`.
 
 _The `scale()` function is only for font-size._
 
 {:.maxw-mobile-lg}
 ```
-font-size: scale('mono', 'sm');
-font-size: scale('body', 8);
+font-size: font-size('mono', 'sm');
+font-size: font-size('body', 8);
 ```
 
 {:.margin-bottom-0.margin-top-4}

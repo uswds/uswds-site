@@ -622,7 +622,7 @@ utilities:
     {% for color in all_colors %}
       <dt class="output-utility">.border-{{ color.token }}</dt>
       <dd class="output-css">
-        <span class="output-rule">border-color: {% if color.var %}<span class="output-token">{{ color.var }}</span>{% else %}{{ color.token }}{% endif %}</span>
+        <span class="output-rule">border-color: <span class="output-token">color('{{ color.token }}')</span></span>
       </dd>
       <dd class="output-variable">
         {% if color.var %}

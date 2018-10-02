@@ -115,7 +115,7 @@ families:
         <div class="grid-col-2">Family</div>
         <div class="grid-col-1">Grade</div>
         <div class="grid-col-2">Variant</div>
-        <div class="grid-col-3">Variable</div>
+        <div class="grid-col-3">Token</div>
         <div class="grid-col-fill text-right">Hex</div>
       </div>
 

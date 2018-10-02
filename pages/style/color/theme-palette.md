@@ -106,78 +106,103 @@ Theme and state families tend to include colors from the same system family, but
 
 Set any unused theme or state color to `false`.
 
-```
-$theme-color-base-family:          'gray';
-$theme-color-base-lightest:        $theme-color-base-family, 2;
-$theme-color-base-lighter:         $theme-color-base-family, 5;
-$theme-color-base-light:           $theme-color-base-family, 10;
-$theme-color-base:                 $theme-color-base-family, 30;
-$theme-color-base-dark:            $theme-color-base-family, 50;
-$theme-color-base-darker:          $theme-color-base-family, 70;
-$theme-color-base-darkest:         $theme-color-base-family, 90;
-$theme-color-ink:                  $theme-color-base-darkest;
+```sass
+// Base colors
+$theme-color-base-family:           'gray';
+$theme-color-base-lightest:         '#{$theme-color-base-family}-5';
+$theme-color-base-lighter:          'gray-cool-10';
+$theme-color-base-light:            '#{$theme-color-base-family}-30';
+$theme-color-base:                  '#{$theme-color-base-family}-50';
+$theme-color-base-dark:             'gray-cool-60';
+$theme-color-base-darker:           'gray-cool-80';
+$theme-color-base-darkest:          '#{$theme-color-base-family}-90';
+$theme-color-base-ink:              '#{$theme-color-base-family}-90';
 
-$theme-color-primary-family:       'blue';
-$theme-color-primary-lightest:     false;
-$theme-color-primary-lighter:      $theme-color-primary-family, 10;
-$theme-color-primary-light:        $theme-color-primary-family, 30;
-$theme-color-primary:              $theme-color-primary-family, 60, 'vivid';
-$theme-color-primary-vivid:        'blue-warm', 60, 'vivid';
-$theme-color-primary-dark:         'blue-warm', 70, 'vivid';
-$theme-color-primary-darker:       'blue-warm', 80, 'vivid';
-$theme-color-primary-darkest:      false;
+// Primary colors
+$theme-color-primary-family:        'blue';
+$theme-color-primary-lightest:      false;
+$theme-color-primary-lighter:       '#{$theme-color-primary-family}-10';
+$theme-color-primary-light:         '#{$theme-color-primary-family}-30';
+$theme-color-primary:               '#{$theme-color-primary-family}-60v';
+$theme-color-primary-vivid:         'blue-warm-60v';
+$theme-color-primary-dark:          'blue-warm-70v';
+$theme-color-primary-darker:        'blue-warm-80v';
+$theme-color-primary-darkest:       false;
 
-$theme-color-secondary-family:     'red';
-$theme-color-secondary-lightest:   false;
-$theme-color-secondary-lighter:    $theme-color-secondary-family, 10;
-$theme-color-secondary-light:      $theme-color-secondary-family, 30;
-$theme-color-secondary:            $theme-color-secondary-family, 50;
-$theme-color-secondary-vivid:      $theme-color-secondary-family, 50, 'vivid';
-$theme-color-secondary-dark:       $theme-color-secondary-family, 60, 'vivid';
-$theme-color-secondary-darker:     $theme-color-secondary-family, 70, 'vivid';
-$theme-color-secondary-darkest:    false;
+// Secondary colors
+$theme-color-secondary-family:      'red';
+$theme-color-secondary-lightest:    false;
+$theme-color-secondary-lighter:     '#{$theme-color-secondary-family}-10';
+$theme-color-secondary-light:       '#{$theme-color-secondary-family}-30';
+$theme-color-secondary:             '#{$theme-color-secondary-family}-50';
+$theme-color-secondary-vivid:       '#{$theme-color-secondary-family}-50v';
+$theme-color-secondary-dark:        '#{$theme-color-secondary-family}-60v';
+$theme-color-secondary-darker:      '#{$theme-color-secondary-family}-70v';
+$theme-color-secondary-darkest:     false;
 
-$theme-color-accent-warm-family:   'orange';
-$theme-color-accent-warm-lightest: false;
-$theme-color-accent-warm-lighter:  $theme-color-accent-warm-family, 10;
-$theme-color-accent-warm-light:    $theme-color-accent-warm-family, 20, 'vivid';
-$theme-color-accent-warm:          $theme-color-accent-warm-family, 30, 'vivid';
-$theme-color-accent-warm-dark:     $theme-color-accent-warm-family, 50, 'vivid';
-$theme-color-accent-warm-darker:   $theme-color-accent-warm-family, 60;
-$theme-color-accent-warm-darkest:  false;
+// Accent warm colors
+$theme-color-accent-warm-family:    'orange';
+$theme-color-accent-warm-lightest:  false;
+$theme-color-accent-warm-lighter:   '#{$theme-color-accent-warm-family}-10';
+$theme-color-accent-warm-light:     '#{$theme-color-accent-warm-family}-20v';
+$theme-color-accent-warm:           '#{$theme-color-accent-warm-family}-30v';
+$theme-color-accent-warm-dark:      '#{$theme-color-accent-warm-family}-50v';
+$theme-color-accent-warm-darker:    '#{$theme-color-accent-warm-family}-60';
+$theme-color-accent-warm-darkest:   false;
 
-$theme-color-accent-cool-family:   'cyan';
-$theme-color-accent-cool-lightest: false;
-$theme-color-accent-cool-lighter:  $theme-color-accent-cool-family, 5;
-$theme-color-accent-cool-light:    $theme-color-accent-cool-family, 20;
-$theme-color-accent-cool:          $theme-color-accent-cool-family, 30, 'vivid';
-$theme-color-accent-cool-dark:     $theme-color-accent-cool-family, 40, 'vivid';
-$theme-color-accent-cool-darker:   'blue', 60;
-$theme-color-accent-cool-darkest:  false;
+// Accent cool colors
+$theme-color-accent-cool-family:    'cyan';
+$theme-color-accent-cool-lightest:  false;
+$theme-color-accent-cool-lighter:   '#{$theme-color-accent-cool-family}-5';
+$theme-color-accent-cool-light:     '#{$theme-color-accent-cool-family}-20';
+$theme-color-accent-cool:           '#{$theme-color-accent-cool-family}-30v';
+$theme-color-accent-cool-dark:      '#{$theme-color-accent-cool-family}-40v';
+$theme-color-accent-cool-darker:    'blue-60';
+$theme-color-accent-cool-darkest:   false;
 
-$theme-color-error-family:         'red';
-$theme-color-error-lighter:        $theme-color-error-family, 30, 'vivid';
-$theme-color-error-light:          $theme-color-error-family, 40, 'vivid';
-$theme-color-error:                $theme-color-error-family, 50, 'vivid';
-$theme-color-error-dark:           $theme-color-error-family, 60;
-$theme-color-error-darker:         $theme-color-error-family, 70;
+/*
+----------------------------------------
+State palette colors
+----------------------------------------
+*/
 
-$theme-color-warning-family:       'gold';
-$theme-color-warning-lighter:      $theme-color-warning-family, 10;
-$theme-color-warning-light:        $theme-color-warning-family, 20, 'vivid';
-$theme-color-warning:              $theme-color-warning-family, 30, 'vivid';
-$theme-color-warning-dark:         $theme-color-warning-family, 40;
-$theme-color-warning-darker:       $theme-color-warning-family, 50;
+// Error colors
+$theme-color-error-family:     'red';
+$theme-color-error-lighter:    '#{$theme-color-error-family}-10';
+$theme-color-error-light:      '#{$theme-color-error-family}-40v';
+$theme-color-error:            '#{$theme-color-error-family}-50';
+$theme-color-error-dark:       '#{$theme-color-error-family}-60v';
+$theme-color-error-darker:     '#{$theme-color-error-family}-70v';
 
-$theme-color-success-family:       'green-cool';
-$theme-color-success-lighter:      $theme-color-success-family, 20, 'vivid';
-$theme-color-success-light:        $theme-color-success-family, 30, 'vivid';
-$theme-color-success:              $theme-color-success-family, 40, 'vivid';
-$theme-color-success-dark:         $theme-color-success-family, 50;
-$theme-color-success-darker:       $theme-color-success-family, 70;
+// Warning colors
+$theme-color-warning-family:   'gold';
+$theme-color-warning-lighter:  '#{$theme-color-warning-family}-5v';
+$theme-color-warning-light:    '#{$theme-color-warning-family}-10v';
+$theme-color-warning:          '#{$theme-color-warning-family}-20v';
+$theme-color-warning-dark:     '#{$theme-color-warning-family}-30v';
+$theme-color-warning-darker:   '#{$theme-color-warning-family}-40v';
 
-$theme-color-disabled-family:      $theme-color-base-family;
-$theme-color-disabled:             $theme-color-disabled-family, 30;
+// Success colors
+$theme-color-success-family:   'green-cool';
+$theme-color-success-lighter:  '#{$theme-color-success-family}-5';
+$theme-color-success-light:    '#{$theme-color-success-family}-30v';
+$theme-color-success:          '#{$theme-color-success-family}-40v';
+$theme-color-success-dark:     '#{$theme-color-success-family}-50';
+$theme-color-success-darker:   '#{$theme-color-success-family}-70';
+
+// Info colors
+$theme-color-info-family:      'cyan';
+$theme-color-info-lighter:     '#{$theme-color-info-family}-5';
+$theme-color-info-light:       '#{$theme-color-info-family}-20';
+$theme-color-info:             '#{$theme-color-info-family}-30v';
+$theme-color-info-dark:        '#{$theme-color-info-family}-40v';
+$theme-color-info-darker:      'blue-60';
+
+// Disabled colors
+$theme-color-disabled-family:  'gray';
+$theme-color-disabled-light:   '#{$theme-color-disabled-family}-10';
+$theme-color-disabled:         '#{$theme-color-disabled-family}-20';
+$theme-color-disabled-dark:    '#{$theme-color-disabled-family}-30';
 
 ```
 
@@ -188,19 +213,19 @@ You'll access USWDS colors using a few different techniques, depending on your s
 ### Settings
 
 {:.margin-top-05}
-Use family, grade, and an optional variant token (for vivid variants of system colors) in the form `[family], [grade], [variant]`.
+Use quoted color tokens in the form `[family]-[grade][vivid]`.
 
 {:.maxw-mobile-lg}
 ```
-$theme-color-accent-cool:          'mint', 30, 'vivid';
-$theme-color-accent-cool-dark:     'mint', 50;
+$theme-color-accent-cool:          'mint-30v';
+$theme-color-accent-cool-dark:     'mint-50';
 ```
 
 {:.margin-bottom-0.margin-top-4}
 ### Utilities
 
 {:.margin-top-05}
-Color utilities require an unquoted family token, an optional unquoted scale token, and an optional `v` suffix for vivid variants of system colors in the form `[utility]-[family]-[grade][v]`.
+Color utilities require a quoted color token in the form `[family]-[grade][vivid]`.
 
 _Note: In USWDS utilities, only the theme palette is activated by default. See the [color utilities section](#0) for more details about how to activate additional palettes for your utilities._
 
@@ -214,40 +239,31 @@ _Note: In USWDS utilities, only the theme palette is activated by default. See t
 ```
 
 {:.margin-bottom-0.margin-top-4}
-### Variables
-
-{:.margin-top-05}
-Color variable require an unquoted family token, an optional unquoted scale token, and an optional `v` suffix for vivid variants of system colors in the form `$[family]-[grade][v]`.
-
-{:.maxw-mobile-lg}
-```
-border-color: $primary-vivid;
-border-color: $blue-warm-50v;
-background-color: $disabled;
-```
-
-{:.margin-bottom-0.margin-top-4}
 ### Functions
 
 {:.margin-top-05}
-The `color()` function accepts a family token, an optional scale token, and an optional variant token for vivid variants of system colors in the form `color([family], [grade], [variant])`.
+The `color()` requires a quoted color token in the form `[family]-[grade][vivid]`. The `advanced-color()` function requires separate family, grade, and variant tokens in the form `'[family]', [grade], '[variant]'`.
 
 {:.maxw-mobile-lg}
 ```
-border-color: color('primary', 'vivid');
-border-color: color('blue-warm', 50, 'vivid');
+border-color: color('primary-vivid');
+border-color: color('blue-warm-50v');
 background-color: color('disabled');
+
+border-color: advanced-color('primary', 'vivid');
+border-color: advanced-color('blue-warm', 50, 'vivid');
+background-color: advanced-color('disabled');
 ```
 
 {:.margin-bottom-0.margin-top-4}
 ### Utility mixins
 
 {:.margin-top-05}
-Utility mixins accept color variables in the form outlined above.
+Utility mixins accept single color tokens in the form outlined above.
 
 {:.maxw-mobile-lg}
 ```
-@include u-text($primary, 'bold')
-@include u-bg($red-warm-50v)
-@include u-border-bottom('05', $base-lightest)
+@include u-text('primary-dark')
+@include u-bg('red-warm-50v')
+@include u-border-bottom('05', 'base-lightest')
 ```

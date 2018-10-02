@@ -283,13 +283,34 @@ utilities:
       </div>
     </section>
     <section class="utility-examples">
-      <p class="utility-example-container-condensed text-ls-neg-3">.text-ls-neg-3</p>
-      <p class="utility-example-container-condensed text-ls-neg-2">.text-ls-neg-2</p>
-      <p class="utility-example-container-condensed text-ls-neg-1">.text-ls-neg-1</p>
-      <p class="utility-example-container-condensed text-ls-auto">.text-ls-auto</p>
-      <p class="utility-example-container-condensed text-ls-1">.text-ls-1</p>
-      <p class="utility-example-container-condensed text-ls-2">.text-ls-2</p>
-      <p class="utility-example-container-condensed text-ls-3 border-0">.text-ls-3</p>
+      <p class="utility-example-container-condensed grid-row">
+        <span class="grid-col-fill text-ls-neg-3">.text-ls-neg-3</span>
+        <span class="grid-col-auto font-mono-xs text-light">-0.03em</span>
+      </p>
+      <p class="utility-example-container-condensed grid-row">
+        <span class="grid-col-fill text-ls-neg-2">.text-ls-neg-2</span>
+        <span class="grid-col-auto font-mono-xs text-light">-0.02em</span>
+      </p>
+      <p class="utility-example-container-condensed grid-row">
+        <span class="grid-col-fill text-ls-neg-1">.text-ls-neg-1</span>
+        <span class="grid-col-auto font-mono-xs text-light">-0.01em</span>
+      </p>
+      <p class="utility-example-container-condensed grid-row">
+        <span class="grid-col-fill text-ls-auto">.text-ls-auto</span>
+        <span class="grid-col-auto font-mono-xs text-light">initial</span>
+      </p>
+      <p class="utility-example-container-condensed grid-row">
+        <span class="grid-col-fill text-ls-1">.text-ls-1</span>
+        <span class="grid-col-auto font-mono-xs text-light">0.05em</span>
+      </p>
+      <p class="utility-example-container-condensed grid-row">
+        <span class="grid-col-fill text-ls-2">.text-ls-2</span>
+        <span class="grid-col-auto font-mono-xs text-light">0.1em</span>
+      </p>
+      <p class="utility-example-container-condensed grid-row">
+        <span class="grid-col-fill text-ls-3">.text-ls-3</span>
+        <span class="grid-col-auto font-mono-xs text-light">0.15em</span>
+      </p>
     </section>
   </section>
 
@@ -489,59 +510,59 @@ utilities:
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-thin</dt>
-    <dd class="output-css">font-weight: <span class="output-token">$theme-font-weight-thin</span></dd>
+    <dd class="output-css">font-weight: <span class="output-token">font-weight('thin')</span></dd>
     <dd class="output-variable">200</dd>
 
     <dt class="output-utility">.text-light</dt>
-    <dd class="output-css">font-weight: <span class="output-token">$theme-font-weight-light</span></dd>
+    <dd class="output-css">font-weight: <span class="output-token">font-weight('light')</span></dd>
     <dd class="output-variable">300</dd>
 
     <dt class="output-utility">.text-normal</dt>
-    <dd class="output-css">font-weight: normal</dd>
+    <dd class="output-css">font-weight: <span class="output-token">font-weight('normal')</span></dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-medium</dt>
-    <dd class="output-css">font-weight: <span class="output-token">$theme-font-weight-medium</span></dd>
+    <dd class="output-css">font-weight: <span class="output-token">font-weight('medium')</span></dd>
     <dd class="output-variable">500</dd>
 
     <dt class="output-utility">.text-semibold</dt>
-    <dd class="output-css">font-weight: <span class="output-token">$theme-font-weight-semibold</span></dd>
+    <dd class="output-css">font-weight: <span class="output-token">font-weight('semibold')</span></dd>
     <dd class="output-variable">600</dd>
 
     <dt class="output-utility">.text-bold</dt>
-    <dd class="output-css">font-weight: bold</dd>
+    <dd class="output-css">font-weight: <span class="output-token">font-weight('bold')</span></dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-heavy</dt>
-    <dd class="output-css">font-weight: <span class="output-token">$theme-font-weight-heavy</span></dd>
+    <dd class="output-css">font-weight: <span class="output-token">font-weight('heavy')</span></dd>
     <dd class="output-variable">900</dd>
 
     <dt class="output-utility">.text-ls-neg-3</dt>
-    <dd class="output-css">letter-spacing: <span class="output-token">ls(-3)</span></dd>
+    <dd class="output-css">letter-spacing: <span class="output-token">letter-spacing(-3)</span></dd>
     <dd class="output-variable">-.03em</dd>
 
     <dt class="output-utility">.text-ls-neg-2</dt>
-    <dd class="output-css">letter-spacing: <span class="output-token">ls(-2)</span></dd>
+    <dd class="output-css">letter-spacing: <span class="output-token">letter-spacing(-2)</span></dd>
     <dd class="output-variable">-.02em</dd>
 
     <dt class="output-utility">.text-ls-neg-1</dt>
-    <dd class="output-css">letter-spacing: <span class="output-token">ls(-1)</span></dd>
+    <dd class="output-css">letter-spacing: <span class="output-token">letter-spacing(-1)</span></dd>
     <dd class="output-variable">-.01em</dd>
 
     <dt class="output-utility">.text-ls-auto</dt>
-    <dd class="output-css">letter-spacing: initial</dd>
+    <dd class="output-css">letter-spacing: letter-spacing('auto')</dd>
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.text-ls-1</dt>
-    <dd class="output-css">letter-spacing: <span class="output-token">ls(1)</span></dd>
+    <dd class="output-css">letter-spacing: <span class="output-token">letter-spacing(1)</span></dd>
     <dd class="output-variable">.05em</dd>
 
     <dt class="output-utility">.text-ls-2</dt>
-    <dd class="output-css">letter-spacing: <span class="output-token">ls(2)</span></dd>
+    <dd class="output-css">letter-spacing: <span class="output-token">letter-spacing(2)</span></dd>
     <dd class="output-variable">.1em</dd>
 
     <dt class="output-utility">.text-ls-3</dt>
-    <dd class="output-css">letter-spacing: <span class="output-token">ls(3)</span></dd>
+    <dd class="output-css">letter-spacing: <span class="output-token">letter-spacing(3)</span></dd>
     <dd class="output-variable">.15em</dd>
 
     <dt class="output-utility">.text-underline</dt>
@@ -561,137 +582,137 @@ utilities:
     <dd class="output-variable">—</dd>
 
     <dt class="output-utility">.underline-lightest</dt>
-    <dd class="output-css">text-decoration-color: <span class="output-token">$base-lightest</span></dd>
+    <dd class="output-css">text-decoration-color: <span class="output-token">color('base-lightest')</span></dd>
     <dd class="output-variable">
       <span class="display-inline-block bg-base-lightest circle-105 text-middle margin-right-05"></span>
       #FCFCFC
     </dd>
 
     <dt class="output-utility">.underline-base-lighter</dt>
-    <dd class="output-css">text-decoration-color: <span class="output-token">$base-lighter</span></dd>
+    <dd class="output-css">text-decoration-color: <span class="output-token">color('base-lighter')</span></dd>
     <dd class="output-variable">
       <span class="display-inline-block bg-base-lighter circle-105 text-middle margin-right-05"></span>
       #F0F0F0
     </dd>
 
     <dt class="output-utility">.underline-base-light</dt>
-    <dd class="output-css">text-decoration-color: <span class="output-token">$base-light</span></dd>
+    <dd class="output-css">text-decoration-color: <span class="output-token">color('base-light')</span></dd>
     <dd class="output-variable">
       <span class="display-inline-block bg-base-light circle-105 text-middle margin-right-05"></span>
       #E6E6E6
     </dd>
 
     <dt class="output-utility">.underline-base</dt>
-    <dd class="output-css">text-decoration-color: <span class="output-token">$base</span></dd>
+    <dd class="output-css">text-decoration-color: <span class="output-token">color('base')</span></dd>
     <dd class="output-variable">
       <span class="display-inline-block bg-base circle-105 text-middle margin-right-05"></span>
       #ADADAD
     </dd>
 
     <dt class="output-utility">.underline-base-dark</dt>
-    <dd class="output-css">text-decoration-color: <span class="output-token">$base-dark</span></dd>
+    <dd class="output-css">text-decoration-color: <span class="output-token">color('base-dark')</span></dd>
     <dd class="output-variable">
       <span class="display-inline-block bg-base-dark circle-105 text-middle margin-right-05"></span>
       #757575
     </dd>
 
     <dt class="output-utility">.underline-base-darker</dt>
-    <dd class="output-css">text-decoration-color: <span class="output-token">$base-darker</span></dd>
+    <dd class="output-css">text-decoration-color: <span class="output-token">color('base-darker')</span></dd>
     <dd class="output-variable">
       <span class="display-inline-block bg-base-darker circle-105 text-middle margin-right-05"></span>
       #454545
     </dd>
 
     <dt class="output-utility">.underline-base-darkest</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">$base-darkest</span></dd>
+      <dd class="output-css">text-decoration-color: <span class="output-token">color('base-darkest')</span></dd>
       <dd class="output-variable">
         <span class="display-inline-block bg-base-darkest circle-105 text-middle margin-right-05"></span>
         #171717
       </dd>
 
     <dt class="output-utility">.underline-primary-lighter</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">$primary-lighter</span></dd>
+      <dd class="output-css">text-decoration-color: <span class="output-token">color('primary-lighter')</span></dd>
       <dd class="output-variable">
         <span class="display-inline-block bg-primary-lighter circle-105 text-middle margin-right-05"></span>
         #DAE9F6
       </dd>
     <dt class="output-utility">.underline-primary-light</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">$primary-light</span></dd>
+      <dd class="output-css">text-decoration-color: <span class="output-token">color('primary-light')</span></dd>
       <dd class="output-variable">
         <span class="display-inline-block bg-primary-light circle-105 text-middle margin-right-05"></span>
         #7CBDF0
       </dd>
     <dt class="output-utility">.underline-primary</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">$primary</span></dd>
+      <dd class="output-css">text-decoration-color: <span class="output-token">color('primary')</span></dd>
       <dd class="output-variable">
         <span class="display-inline-block bg-primary circle-105 text-middle margin-right-05"></span>
         #0F6BB2
       </dd>
     <dt class="output-utility">.underline-primary-vivid</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">$primary-vivid</span></dd>
+      <dd class="output-css">text-decoration-color: <span class="output-token">color('primary-vivid')</span></dd>
       <dd class="output-variable">
         <span class="display-inline-block bg-primary-vivid circle-105 text-middle margin-right-05"></span>
         #0E57DA
       </dd>
     <dt class="output-utility">.underline-primary-dark</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">$primary-dark</span></dd>
+      <dd class="output-css">text-decoration-color: <span class="output-token">color('primary-dark')</span></dd>
       <dd class="output-variable">
         <span class="display-inline-block bg-primary-dark circle-105 text-middle margin-right-05"></span>
         #215192
       </dd>
     <dt class="output-utility">.underline-primary-darker</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">$primary-darker</span></dd>
+      <dd class="output-css">text-decoration-color: <span class="output-token">color('primary-darker')</span></dd>
       <dd class="output-variable">
         <span class="display-inline-block bg-primary-darker circle-105 text-middle margin-right-05"></span>
         #122B4C
       </dd>
 
     <dt class="output-utility">.underline-secondary-light</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">$secondary-light</span></dd>
+      <dd class="output-css">text-decoration-color: <span class="output-token">color('secondary-light')</span></dd>
       <dd class="output-variable">
         <span class="display-inline-block bg-secondary-light circle-105 text-middle margin-right-05"></span>
         #122B4C
       </dd>
     <dt class="output-utility">.underline-secondary</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">$secondary</span></dd>
+      <dd class="output-css">text-decoration-color: <span class="output-token">color('secondary')</span></dd>
       <dd class="output-variable">
         <span class="display-inline-block bg-secondary circle-105 text-middle margin-right-05"></span>
         #122B4C
       </dd>
     <dt class="output-utility">.underline-secondary-vivid</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">$secondary-vivid</span></dd>
+      <dd class="output-css">text-decoration-color: <span class="output-token">color('secondary-vivid')</span></dd>
       <dd class="output-variable">
         <span class="display-inline-block bg-secondary-vivid circle-105 text-middle margin-right-05"></span>
         #E6251B
       </dd>
     <dt class="output-utility">.underline-secondary-dark</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">$secondary-dark</span></dd>
+      <dd class="output-css">text-decoration-color: <span class="output-token">color('secondary-dark')</span></dd>
       <dd class="output-variable">
         <span class="display-inline-block bg-secondary-dark circle-105 text-middle margin-right-05"></span>
         #3B2523
       </dd>
 
     <dt class="output-utility">.underline-accent-warm</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">$accent-warm</span></dd>
+      <dd class="output-css">text-decoration-color: <span class="output-token">color('accent-warm')</span></dd>
       <dd class="output-variable">
         <span class="display-inline-block bg-accent-warm circle-105 text-middle margin-right-05"></span>
         #FD974C
       </dd>
     <dt class="output-utility">.underline-accent-warm-dark</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">$accent-warm-dark</span></dd>
+      <dd class="output-css">text-decoration-color: <span class="output-token">color('accent-warm-dark')</span></dd>
       <dd class="output-variable">
         <span class="display-inline-block bg-accent-warm-dark circle-105 text-middle margin-right-05"></span>
         #FD7B28
       </dd>
 
     <dt class="output-utility">.underline-accent-cool</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">$accent-cool</span></dd>
+      <dd class="output-css">text-decoration-color: <span class="output-token">color('accent-cool')</span></dd>
       <dd class="output-variable">
         <span class="display-inline-block bg-accent-cool circle-105 text-middle margin-right-05"></span>
         #21C2E6
       </dd>
     <dt class="output-utility">.underline-accent-cool-dark</dt>
-    <dd class="output-css">text-decoration-color: <span class="output-token">$accent-cool-dark</span></dd>
+    <dd class="output-css">text-decoration-color: <span class="output-token">color('accent-cool-dark')</span></dd>
     <dd class="output-variable">
       <span class="display-inline-block bg-accent-cool-dark circle-105 text-middle margin-right-05"></span>
       #1BABCF
@@ -858,6 +879,6 @@ utilities:
 
   <section class="utilities-section margin-top-6">
     {% include utilities/values-intro.html %}
-    {% include utilities/values-no-palettes.html %}
+    {% include utilities/color-palettes.html %}
   </section>
 </section>

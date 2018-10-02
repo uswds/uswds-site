@@ -3,16 +3,18 @@ permalink: /documentation/designers/
 layout: styleguide
 title: For designers
 category: Documentation
-lead: While many programs maintain their own unique brand identities, the Design System offers a common visual style that you can flexibly apply to a range of government digital platforms. Our visual style offers a clean, modern aesthetic that meets high standards of visual accessibility while promoting credibility, trust, and warmth in the design.
+lead: USWDS offers a flexible yet coherent visual style you can apply to any government website. Our visual style offers a clean, modern aesthetic that meets high standards of usability and accessibility while promoting credibility and trust.
 redirect_from:
   - /getting-started/designers/
 ---
 
-We expect many teams will need to customize this guide, but we encourage you to incorporate as much consistency in look, feel, and usability as you can.
+See the [style]({{ site.baseurl }}/style/) section for more on USWDS system styles and palettes.
 
 As a complement to this visual style guidance, we strongly recommend you use [18F’s Content Guide](https://pages.18f.gov/content-guide/) when writing language for government services.
 
 ## Design resources
+
+<div class="bg-warning padding-1 radius-sm measure-4"><strong>Note:</strong> USWDS 2.0 assets for Sketch and Illustrator are not yet available. We expect them to be available by the end of October 2018.</div>
 
 The site contains HTML mockups of common UI components designed to follow the U.S. Web Design System’s visual style guide. To view the specs of each design live on this website (padding, margins, stroke weight, line-height, and so on), use your browser’s developer tools.
 

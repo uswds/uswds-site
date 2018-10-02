@@ -846,8 +846,8 @@ utilities:
 
     {% for item in site.data.uswds_tokens.opacity %}
       <dt class="output-utility">.opacity-{{ item.token }}</dt>
-      <dd class="output-css"><span>opacity: {{ item.value }}</span></dd>
-      <dd class="output-variable">—</dd>
+      <dd class="output-css"><span>opacity: <span class="output-token">opacity({{ item.token }})</span></span></dd>
+      <dd class="output-variable">{{ item.value }}</dd>
     {% endfor %}
 
     {% assign overflow_modifiers = ", -x, -y"
@@ -970,8 +970,8 @@ utilities:
 
     {% for value in site.data.uswds_tokens.z_index %}
       <dt class="output-utility">.z-{{ value.token }}</dt>
-      <dd class="output-css"><span>z-index: {{ value.value }}</span></dd>
-      <dd class="output-variable">—</dd>
+      <dd class="output-css"><span>z-index: <span class="output-token">z-index({{ value.token }})</span> </span></dd>
+      <dd class="output-variable">{{ value.value }}</dd>
     {% endfor %}
 
   </dl>

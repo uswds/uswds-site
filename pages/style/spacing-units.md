@@ -345,19 +345,6 @@ Use the unquoted spacing unit token as a suffix in utilities.
 ```
 
 {:.margin-bottom-0.margin-top-4}
-### Variables
-
-{:.margin-top-05}
-Add the unquoted spacing unit token as a suffix to the `$units-` variable.
-
-{:.maxw-mobile-lg}
-```
-margin-left: $units-neg-1;
-max-width: $units-tablet;
-padding-top: $units-05;
-```
-
-{:.margin-bottom-0.margin-top-4}
 ### Functions
 
 {:.margin-top-05}
@@ -384,7 +371,7 @@ Tokens `'05'`, `'105'`, and `'205'` and any `neg-` token may also use their nume
 
 {:.maxw-mobile-lg}
 ```
-@include u-border-top('05', $primary-darker);
+@include u-border-top('05', 'primary-darker');
 @include u-margin-x('neg-1');
 @include u-margin-x(-1);
 @include u-maxw('tablet');

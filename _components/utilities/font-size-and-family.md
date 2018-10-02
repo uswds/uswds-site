@@ -268,7 +268,8 @@ utilities:
   [class*='font-serif-'] { font-family: "Merriweather Web" ... serif; }
   [class*='font-alt-'] { font-family: "Source Sans Pro Web" ... sans-serif; }
   [class*='font-heading-'] { font-family: "Merriweather Web" ... serif; }
-  [class*='font-body-'] { font-family: "Merriweather Web" ... serif; }
+  [class*='font-ui-'] { font-family: "Source Sans Pro Web" ... sans-serif; }
+  [class*='font-body-'] { font-family: "Source Sans Pro Web" ... sans-serif; }
   [class*='font-code-'] { font-family: "Roboto Mono Web" ... monospace; }
   ```
   </div>
@@ -289,7 +290,7 @@ utilities:
 
           <dd class="output-css grid-col-5">
             <span>
-                <span class="output-rule">font-size: <span class="output-token">type-scale({{ face.style }}, {{ size[1].token }})</span></span>
+                <span class="output-rule">font-size: <span class="output-token">font-size('{{ face.style }}', '{{ size[1].token }}')</span></span>
             </span>
           </dd>
 
@@ -314,7 +315,7 @@ utilities:
 
             <dd class="output-css grid-col-5">
               <span>
-                  <span class="output-rule">font-size: <span class="output-token">type-scale({{ role }}, {{ size[1].token }})</span></span>
+                  <span class="output-rule">font-size: <span class="output-token">font-size('{{ role }}', '{{ size[1].token }}')</span></span>
               </span>
             </dd>
 
@@ -335,7 +336,7 @@ utilities:
         <dt class="output-utility grid-col-3">.font-family-{{ face.style }}</dt>
         <dd class="output-css grid-col-5">
           <span>
-              <span class="output-rule">font-family: <span class="output-token">$font-stack-{{ face.style }}</span></span>
+              <span class="output-rule">font-family: <span class="output-token">font-family('{{ face.style }}')</span></span>
           </span>
         </dd>
         <dd class="output-variable grid-col-4">{{ face.stack }}</dd>
@@ -348,7 +349,7 @@ utilities:
         <dt class="output-utility grid-col-3">.font-family-{{ role }}</dt>
         <dd class="output-css grid-col-5">
           <span>
-            <span class="output-rule">font-family: <span class="output-token">$font-stack-{{ role }}</span></span>
+            <span class="output-rule">font-family: <span class="output-token">font-family('{{ role }}')</span></span>
           </span>
         </dd>
         <dd class="output-variable grid-col-4">{{ face.stack }}</dd>

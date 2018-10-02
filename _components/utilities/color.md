@@ -142,7 +142,7 @@ utilities:
       <h3 class="font-sans-4 margin-top-0 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Project theme colors <a class="utility-examples-helper" href="#0">Read more about project theme colors</a></h3>
       <div class="grid-row">
         {% for color in theme_colors %}
-          <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center measure-none">
             <span class="flex-fill">
               <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
               <span class="utility-class">.bg-{{ color.token }}</span>
@@ -160,7 +160,7 @@ utilities:
       <h3 class="font-sans-4 margin-top-4 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Grayscale palette <a class="utility-examples-helper" href="#0">Read more about the USWDS grayscale palette</a></h3>
       <div class="grid-row">
         {% for color in grayscale_colors %}
-          <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center measure-none">
             <span class="flex-fill">
               <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
               <span class="utility-class">.bg-{{ color.token }}</span>
@@ -178,7 +178,7 @@ utilities:
       <h3 class="font-sans-4 margin-top-4 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Basic palette <a class="utility-examples-helper" href="#0">Read more about the USWDS basic palette</a></h3>
       <div class="grid-row">
         {% for color in basic_colors %}
-          <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center measure-none">
             <span class="flex-fill">
               <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
               <span class="utility-class">.bg-{{ color.token }}</span>
@@ -204,7 +204,7 @@ utilities:
   <dl class="output-list">
     {% for color in all_colors %}
       <dt class="output-utility">.text-{{ color.token }}</dt>
-      <dd class="output-css">color: <span class="output-token">{% if color.var %}{{ color.var }}{% else %}{{ color.token }}{% endif %}</span></dd>
+      <dd class="output-css">color: <span class="output-token">color('{{ color.token }}')</span></dd>
       <dd class="output-variable">
         <span class="display-inline-block bg-{{ color.token }} circle-105 text-baseline margin-right-05"></span>
         {{ color.value }}
@@ -212,7 +212,7 @@ utilities:
     {% endfor %}
     {% for color in all_colors %}
       <dt class="output-utility">.bg-{{ color.token }}</dt>
-      <dd class="output-css">background-color: <span class="output-token">{% if color.var %}{{ color.var }}{% else %}{{ color.token }}{% endif %}</span></dd>
+      <dd class="output-css">background-color: <span class="output-token">color('{{ color.token }}')</span></dd>
       <dd class="output-variable">
         <span class="display-inline-block bg-{{ color.token }} circle-105 text-baseline margin-right-05"></span>
         {{ color.value }}

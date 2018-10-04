@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '>= 3.4.3'
+gem 'jekyll', '>= 3.8.4'
 gem 'json'
-gem 'jekyll-redirect-from', '>= 0.12.1'
+gem 'jekyll-redirect-from', '>= 0.13.0'
 gem 'octopress-autoprefixer', '>= 2.0.1'
 
 gem 'scss_lint', require: false

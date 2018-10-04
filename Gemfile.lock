@@ -3,7 +3,7 @@ GEM
   specs:
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
-    autoprefixer-rails (8.6.4)
+    autoprefixer-rails (9.1.4)
       execjs
     colorator (1.1.0)
     concurrent-ruby (1.0.5)
@@ -18,7 +18,7 @@ GEM
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
-    jekyll (3.8.3)
+    jekyll (3.8.4)
       addressable (~> 2.4)
       colorator (~> 1.0)
       em-websocket (~> 0.5)
@@ -31,7 +31,7 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
-    jekyll-redirect-from (0.13.0)
+    jekyll-redirect-from (0.14.0)
       jekyll (~> 3.3)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
@@ -50,12 +50,12 @@ GEM
       jekyll (~> 3.0)
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
-    public_suffix (3.0.2)
+    public_suffix (3.0.3)
     rake (11.2.2)
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
-    rouge (3.1.1)
+    rouge (3.3.0)
     rspec-core (3.6.0)
       rspec-support (~> 3.6.0)
     rspec-expectations (3.6.0)
@@ -73,8 +73,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (>= 3.4.3)
-  jekyll-redirect-from (>= 0.12.1)
+  jekyll (>= 3.8.4)
+  jekyll-redirect-from (>= 0.13.0)
   json
   octopress-autoprefixer (>= 2.0.1)
   rspec-core
@@ -82,4 +82,4 @@ DEPENDENCIES
   scss_lint
 
 BUNDLED WITH
-   1.16.1
+   1.16.5

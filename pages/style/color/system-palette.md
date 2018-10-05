@@ -46,12 +46,12 @@ subnav:
     href: '#violet-warm'
   - text: Magenta
     href: '#magenta'
-  - text: Gray warm
-    href: '#gray-warm'
-  - text: Gray
-    href: '#gray'
   - text: Gray cool
     href: '#gray-cool'
+  - text: Gray
+    href: '#gray'
+  - text: Gray warm
+    href: '#gray-warm'
 families:
   - red_warm
   - red_warm_vivid

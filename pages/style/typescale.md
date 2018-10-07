@@ -17,7 +17,7 @@ subnav:
 - text: Role-based family tokens
   href: '#role-based family-tokens'
 - text: Using type scale
-  href: '#using-spacing-units-in-utilities-settings-and-component-sass'
+  href: '#using-typescale-in-utilities-settings-and-component-sass'
 - text: Settings
   href: '#settings'
 - text: Utilities

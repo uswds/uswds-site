@@ -124,9 +124,6 @@ We call the difference in grade between any two colors the _magic number_. Magic
 
 Use USWDS magic numbers to choose accessible color combinations from any palette and color family.
 
-#### Avoiding very high contrast with magic number
-Very high contrast, like pure black text on a pure black background, can make your site more difficult to read and understand, especially to people with [Irlen Syndrome](https://irlen.com/what-is-irlen-syndrome/). A magic number of `80`–`90` (like `gray 90` text on a `gray warm 5` background) can help make your site more readable — especially if you have lots of detailed text that requires concentration.
-
 #### Accessible color combination examples
 
 {:.measure-5}
@@ -140,6 +137,16 @@ Very high contrast, like pure black text on a pure black background, can make yo
 
 {:.font-sans-2xs}
 **Above:** The color grade system works across color families.
+
+### Color, contrast, and readability
+Readability is the ease with which a reader can understand a written text. It's a complicated phenomenon affected by many factors in addition to color and contrast, including (but not limited to) type size, typeface, line length, line height, whitespace, word choice, content design, and writing style. Readability issues can be especially important when your site contains documentation or detailed text that requires concentration.
+
+But when it comes to color, consider these general guidelines:
+
+- Section 508 AA+ color contrast helps colorblindness and color perception
+- Avoiding pure black text on white helps dyslexia, [Irlen Syndrome](https://irlen.com/what-is-irlen-syndrome/), light sensitivity, and autism
+- Best combination is the max color contrast of white/light text on black/dark background which seems to visually work well for all
+- The best option, when possible, is to provide a way for users to select their own text and background colors
 
 ## USWDS color wheels
 

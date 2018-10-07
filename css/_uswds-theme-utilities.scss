@@ -583,7 +583,7 @@ $align-items-manual-values: ();
 // .background-color
 
 $background-color-palettes: (
-  'palette-colors-uswds-all',
+  'palette-colors-system-all',
   'palette-colors-state'
 );
 $background-color-manual-values: ();
@@ -632,7 +632,7 @@ $circle-manual-values: ();
 
 // .color
 
-$color-palettes: ('palette-colors-uswds-all');
+$color-palettes: ('palette-colors-system-all');
 $color-manual-values: ();
 
 // .cursor
@@ -670,9 +670,9 @@ $float-manual-values: ();
 $font-palettes: (
   'palette-font-theme-all',
   'palette-font-theme-roles-all',
-  'palette-font-uswds-sans-all',
-  'palette-font-uswds-serif-all',
-  'palette-font-uswds-mono-all'
+  'palette-font-system-sans-all',
+  'palette-font-system-serif-all',
+  'palette-font-system-mono-all'
 );
 $font-manual-values: ();
 

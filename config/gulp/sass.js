@@ -21,7 +21,7 @@ gulp.task('build-sass', function () {
     .pipe(sourcemaps.init({largeFile: true}))
     .pipe(
       sass({
-        includePaths: [ './node_modules' ],
+        includePaths: [ './node_modules/uswds/dist/scss' ],
         outputStyle: 'expanded',
       })
         .on('error', function(error) {

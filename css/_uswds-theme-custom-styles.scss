@@ -406,7 +406,7 @@ body {
   }
 
   .usa-footer-secondary_section {
-    @include u-padding-y(2rem);
+    @include u-padding-y(2);
     background-color: color('accent-cool-lighter');
 
     @include at-media('tablet') {
@@ -893,7 +893,7 @@ pre {
 }
 
 code {
-  @include u-padding-y(0.2em);
+  @include u-padding-y(2px);
 
   &::before,
   &::after {
@@ -1479,7 +1479,7 @@ iframe {
 .page-content {
   h3 {
     @include u-font-size('sans', 10);
-    @include u-text('thin');
+    @include u-text('normal');
     @include u-line-height('heading', 3);
     @include at-media('tablet-lg') {
       @include u-font-size('sans', 15);
@@ -1524,7 +1524,7 @@ strong {
 .prose-graf-intro {
   $font: 'sans';
   @include u-font($font, 2);
-  @include u-text('semibold', 'uppercase', 'ls-2');
+  @include u-text('bold', 'uppercase', 'ls-2');
   @include at-media('desktop-lg') {
     @include u-font-size($font, 3);
   }
@@ -1584,7 +1584,7 @@ strong {
   @include u-padding-x(0.5);
   @include u-padding-y(2px);
   @include u-radius('sm');
-  @include u-text(400);
+  @include u-text('normal');
 }
 
 .output-rule {

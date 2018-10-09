@@ -175,15 +175,19 @@ If we use color intentionally, consistently, and sensitively, it can make a big 
 **Don’t use color exclusively to convey meaning.** Even Section 508 conformant contrast doesn’t ensure that colors are distinguishable for a significant percentage of your audience. [Approximately 0.5% of adult women and 8% of adult men](https://nei.nih.gov/health/color_blindness/facts_about) have some kind of color insensitivity, especially between red and green. Color should only be used as progressive enhancement — if color is the only signal, that signal won’t get through as intended to everyone.
 
 ## References
-- Improving accessibility for colorblind users
-  [https://www.smashingmagazine.com/2016/06/improving-color-accessibility-for-color-blind-users/](https://www.smashingmagazine.com/2016/06/improving-color-accessibility-for-color-blind-users/){:.text-no-wrap}
 - Accessibility: Color and contrast
   [https://accessibility.digital.gov/visual-design/color-and-contrast](https://accessibility.digital.gov/visual-design/color-and-contrast){:.text-no-wrap}
 - Color and readability
   [https://www.w3.org/WAI/RD/2012/text-customization/r11](https://www.w3.org/WAI/RD/2012/text-customization/r11){:.text-no-wrap}
+- Improving accessibility for colorblind users
+  [https://www.smashingmagazine.com/2016/06/improving-color-accessibility-for-color-blind-users/](https://www.smashingmagazine.com/2016/06/improving-color-accessibility-for-color-blind-users/){:.text-no-wrap}
 - Introduction to Irlen Syndrome
   [https://irlen.com/what-is-irlen-syndrome/](https://irlen.com/what-is-irlen-syndrome/){:.text-no-wrap}
-- W3C: Gap analysis of the state of accessibility for people with learning disabilities and cognitive disabilities
-  [https://w3c.github.io/wcag/coga/gap-analysis.html](https://w3c.github.io/wcag/coga/gap-analysis.html){:.text-no-wrap}
 - Making content accessible for those with dyslexia
   [https://www.dyslexic.com/blog/quick-guide-making-content-accessible/](https://www.dyslexic.com/blog/quick-guide-making-content-accessible/){:.text-no-wrap}
+- W3C: Contrast levels for readability
+  [https://www.w3.org/WAI/test-evaluate/preliminary/#contrast](https://www.w3.org/WAI/test-evaluate/preliminary/#contrast){:.text-no-wrap}
+- W3C: Gap analysis of the state of accessibility for people with learning disabilities and cognitive disabilities
+  [https://w3c.github.io/wcag/coga/gap-analysis.html](https://w3c.github.io/wcag/coga/gap-analysis.html){:.text-no-wrap}
+- W3C: Low vision needs
+  [https://www.w3.org/TR/low-vision-needs/](https://www.w3.org/TR/low-vision-needs/){:.text-no-wrap}

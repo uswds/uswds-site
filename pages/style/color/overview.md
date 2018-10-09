@@ -143,10 +143,10 @@ Readability is the ease with which a reader can understand a written text. It's 
 
 But when it comes to color, consider these general guidelines:
 
-- Section 508 AA+ color contrast helps colorblindness and color perception
-- Avoiding pure black text on white helps dyslexia, [Irlen Syndrome](https://irlen.com/what-is-irlen-syndrome/), light sensitivity, and autism
-- Best combination is the max color contrast of white/light text on black/dark background which seems to visually work well for all
-- The best option, when possible, is to provide a way for users to select their own text and background colors
+- Section 508 AA+ color contrast helps colorblindness and color perception.
+- Avoiding pure black text on white helps dyslexia, [Irlen Syndrome](https://irlen.com/what-is-irlen-syndrome/), light sensitivity, and autism.
+- Best combination is the max color contrast of white/light text on black/dark background which seems to visually work well for all.
+- The best option, when possible, is to provide a way for users to select their own text and background colors.
 
 ## USWDS color wheels
 

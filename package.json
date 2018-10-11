@@ -30,7 +30,13 @@
   "scripts": {
     "axe": "node config/run-axe.js",
     "build": "gulp build && bundle exec jekyll build",
-    "build-css": "gulp sass",
+    "build-css": "gulp build-sass",
+    "build-css-components": "gulp build-sass-components",
+    "build-css-custom": "gulp build-sass-custom",
+    "build-css-dev": "gulp build-sass-dev",
+    "build-css-fonts": "gulp build-sass-fonts",
+    "build-css-layout-grid": "gulp build-sass-layout-grid",
+    "build-css-utilities": "gulp build-sass-utilities",
     "build-fonts": "gulp fonts",
     "build-img": "gulp images",
     "build-js": "gulp javascript",
@@ -72,12 +78,12 @@
     "gulp": "^4.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-combine-mq": "^0.4.0",
-    "gulp-concat": "^2.6.0",
+    "gulp-concat": "^2.6.1",
     "gulp-eslint": "^4.0.2",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.3.0",
     "gulp-sass": "^4.0.1",
-    "gulp-scss-lint": "^0.6.1",
+    "gulp-scss-lint": "^0.7.1",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-strip-css-comments": "^2.0.0",
     "gulp-uglify": "^3.0.0",
@@ -94,8 +100,26 @@
     "yamljs": "^0.3.0"
   },
   "watch": {
-    "./css/**/*.scss": [
-      "build-css"
+    "./css/settings/**/*.scss": [
+      "build-css-dev"
+    ],
+    "./css/uswds-components.scss": [
+      "build-css-components"
+    ],
+    "./css/uswds-custom.scss": [
+      "build-css-custom"
+    ],
+    "./css/_uswds-theme-custom-styles.scss": [
+      "build-css-custom"
+    ],
+    "./css/uswds-fonts.scss": [
+      "build-css-fonts"
+    ],
+    "./css/uswds-layout-grid.scss": [
+      "build-css-layout-grid"
+    ],
+    "./css/uswds-utilities.scss": [
+      "build-css-utilities"
     ],
     "./img": [
       "build-img"
@@ -104,7 +128,7 @@
       "build-js"
     ],
     "./node_modules/uswds/src/stylesheets": [
-      "build-css"
+      "build-css-dev"
     ],
     "./node_modules/uswds/src/fonts": [
       "build-fonts"

@@ -1,12 +1,12 @@
 ---
-permalink: /style/letter-spacing/
+permalink: /style/order/
 layout: styleguide
-title: Letterspacing
+title: Order
 category: Style
-lead: Letterspacing dek
+lead: Order dek
 type: docs
 subnav:
-- text: Using letterspcing
+- text: Using order
   href: '#using-typescale-in-utilities-settings-and-component-sass'
 - text: Settings
   href: '#settings'

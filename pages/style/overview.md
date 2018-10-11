@@ -1,99 +1,180 @@
 ---
 permalink: /style/
 layout: styleguide
-title: Style
+title: Style tokens
 category: Style
-lead: We build USWDS components from consistent palettes of type scale, spacing units, and color. Your project’s custom theme settings provide a subset of the system palettes tailored to your project’s needs.
+lead: USWDS visual design is based on consistent palettes of typography, spacing units, color, and other discrete elements of style we call **style tokens**{:.font-sans-lg}.
 type: docs
 ---
 
-## The benefits of global style palettes
+## Introducing style tokens
 
-Our system palettes of [typescale]({{ site.baseurl }}/style/typescale/), [spacing units]({{ site.baseurl }}/style/spacing-units/), and [color]({{ site.baseurl }}/style/color/) are the visual building blocks any component. When we use these palettes consistently, not only do individual components fit better within the design of the larger website, but USWDS websites have better coherence across the entire federal government. This coherence provides a more familiar, reliable user experience.
+Anything we see on a website is built from elements of style like color, spacing, typography, line height, and opacity. The CSS rules associated with these elements can accept a broad continuum of values — in the case of color, there are over 16 million separate colors in the RGB color space. Font size, line height, spacing, and others can accept a similarly wide range of values.
 
-We recommend building exclusively with elements of the system palettes. Not only does this provide the improvements to cross-government user experience mentioned above, it allows individual projects to contribute their unique components and solutions back in to the System.
+This degree of choice can slow down design work and make communication between designer and developer unnecessarily granular. The US Web Design System seeks to maximize design efficiency and improve communication with **style tokens**: the discrete palettes of values from which we base all our visual design.
 
-## Using system palettes and project theme palettes
+### Example: Measure (line length)
+For example, measure (or line length) expressed with the `max-width` CSS property can accept any value in `em`, `rem`, `ch`, `px`, and beyond to at least two decimal places. USWDS limits itself to 6 measure tokens:
 
-The complete system spacing units palette is available to any USWDS project by default. The system color palette and the system type scale palette can be subsetted into a smaller theme palette using the project theme settings in `_uswds-project-settings.scss`. Whether you use items from the system palettes or the project theme palettes, you can access these values in your Sass using palette-specific variables and functions. The following is an overview of the functions and variables available — see the individual style sections for more detail.
+| token   | value
+| ---     | ---
+|`1`      | `40ch`
+|`2`      | `60ch`
+|`3`      | `66ch`
+|`4`      | `72ch`
+|`5`      | `77ch`
+|`'none'` | no max width
 
+Anything built using USWDS will use one of these 6 tokens when specifying measure.
+
+## Keys and values
+You can think of a style token as a **key** (expressed as a quoted string or, with only the exceptions of `1px` and `2px`, a unitless number) that unlocks a specific **value**. Often, the specific value is less important than its effect. And the mechanism by which the value is unlocked is a **function**, **mixin**, or **utility class**.
+
+We can't include tokens directly in our Sass, like `max-width: 1`, rather we use a helper function like `max-width: measure(1)` or a mixin like `@include u-measure(1)`. All USWDS style tokens have helper mixins and functions to use them in component Sass.
+
+_We do not include the token's value directly into our Sass rules._
+
+### Example: Tokens in settings and component Sass
+
+Tokens can, themselves, be expressed as variables. And this is how most USWDS theme settings work. For instance, the following is an example of theme settings from `_uswds-theme-spacing.scss` showing settings variables assigned spacing unit tokens:
+
+```
+$theme-site-max-width:              'desktop';
+$theme-site-margins-breakpoint:     'desktop';
+$theme-site-margins-width:          4;
+$theme-site-margins-mobile-width:   2;
+```
+
+USWDS component Sass uses those variableized tokens to build component styles:
+
+```
+.usa-example {
+  @include u-padding-x($theme-site-margins-mobile-width);
+  max-width: units($theme-site-max-width);
+
+  @include at-media($theme-site-margins-breakpoint) {
+    @include u-padding-x($theme-site-margins-width);
+  }
+}
+```
+
+This is the functional equivalent of:
+
+```
+.usa-example {
+  @include u-padding-x(2);
+  max-width: units('desktop');
+
+  @include at-media('desktop') {
+    @include u-padding-x(4);
+  }
+}
+```
+
+Which, if `$theme-respect-user-font-size` is set to true would output something like:
+
+```
+.usa-example {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 64rem;
+}
+
+@media screen and (min-width: 64em) {
+  .usa-example {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+```
+
+In general, USWDS sets variables with tokens, and passes those variables into functions and mixins in the source Sass.
+
+## Using style tokens
+
+Use style tokens directly to set the value of settings variables in USWDS theme settings files, like `$theme-site-max-width: 'desktop'`. Otherwise, use functions, mixins, or utility classes as in the examples below. See individual style token section for more details.
+
+### Color
 <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2">
-  <div class="grid-col-2">Palette item</div>
-  <div class="grid-col-3">Setting</div>
-  <div class="grid-col-3">Variable</div>
-  <div class="grid-col-4">Function</div>
-</div>
-<div class="grid-row font-sans-3xs padding-y-05 border-bottom border-base-light text-bold margin-top-2">
-  <div class="grid-col-2 font-sans-3xs">Color</div>
-  <div class="grid-col-3">[family], [grade][, vivid]*</div>
-  <div class="grid-col-3">$[family]-[grade][v]*</div>
-  <div class="grid-col-4">color(family, grade[, vivid]*)</div>
+  <div class="grid-col-2">Token</div>
+  <div class="grid-col-3">Function</div>
+  <div class="grid-col-3">Mixin</div>
+  <div class="grid-col-4">Utility class</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2 font-sans-2xs">Red warm 50</div>
-  <div class="grid-col-3">'red-warm', 50</div>
-  <div class="grid-col-3">$red-warm-50</div>
-  <div class="grid-col-4">color('red-warm', 50)</div>
+  <div class="grid-col-2">'red-warm-50'</div>
+  <div class="grid-col-3">color('red-warm-50')</div>
+  <div class="grid-col-3">u-border('red-warm-50')</div>
+  <div class="grid-col-3">.border-red-warm-50</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2 font-sans-2xs">Red warm 50 vivid</div>
-  <div class="grid-col-3">'red-warm', 50, vivid</div>
-  <div class="grid-col-3">$red-warm-50v</div>
-  <div class="grid-col-4">color('red-warm', 50, vivid)</div>
+  <div class="grid-col-2">'red-warm-50v'</div>
+  <div class="grid-col-3">color('red-warm-50v')</div>
+  <div class="grid-col-3">u-border('red-warm-50v')</div>
+  <div class="grid-col-3">.border-red-warm-50v</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2 font-sans-2xs">Accent cool dark</div>
-  <div class="grid-col-3">'accent-cool', 'dark'</div>
-  <div class="grid-col-3">$accent-cool-dark</div>
-  <div class="grid-col-4">color('accent-cool', 'dark')</div>
+  <div class="grid-col-2">'primary-vivid'</div>
+  <div class="grid-col-3">color('primary-vivid')</div>
+  <div class="grid-col-3">u-text('primary-vivid')</div>
+  <div class="grid-col-4">.text-primary-vivid</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-2">'white'</div>
+  <div class="grid-col-3">color('white')</div>
+  <div class="grid-col-3">u-bg('white')</div>
+  <div class="grid-col-4">.bg-white</div>
 </div>
 
-<div class="grid-row font-sans-3xs padding-y-05 border-bottom border-base-light text-bold margin-top-2">
-  <div class="grid-col-2 font-sans-3xs">Spacing units</div>
-  <div class="grid-col-3">[value]</div>
-  <div class="grid-col-3">$units-[value]</div>
-  <div class="grid-col-4">units([value])</div>
+### Spacing units
+<div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2">
+  <div class="grid-col-2">Token</div>
+  <div class="grid-col-3">Function</div>
+  <div class="grid-col-3">Mixin</div>
+  <div class="grid-col-4">Utility class</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2 font-sans-2xs">Half grid unit</div>
-  <div class="grid-col-3">0.5<br/><span class="display-inline-block padding-top-05">'05'</span></div>
-  <div class="grid-col-3">$units-05</div>
-  <div class="grid-col-4">units(0.5)<br/><span class="display-inline-block padding-top-05">units('05')</span></div>
+<div class="grid-col-2">0.5<br/><span class="display-inline-block padding-top-05">'05'</span></div>
+<div class="grid-col-3">units(0.5)<br/><span class="display-inline-block padding-top-05">units('05')</span></div>
+<div class="grid-col-3">u-padding-x(0.5)<br/><span class="display-inline-block padding-top-05">u-padding-x('05')</span></div>
+<div class="grid-col-3">.u-padding-x-05</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2 font-sans-2xs">2 grid units</div>
-  <div class="grid-col-3">2</div>
-  <div class="grid-col-3">$units-2</div>
-  <div class="grid-col-4">units(2)</div>
+  <div class="grid-col-2">2</div>
+  <div class="grid-col-3">units(2)</div>
+  <div class="grid-col-3">u-border(2)</div>
+  <div class="grid-col-3">.border-2</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2 font-sans-2xs">Card large unit</div>
-  <div class="grid-col-3">'card-lg'</div>
-  <div class="grid-col-3">$units-card-lg</div>
-  <div class="grid-col-4">units('card-lg')</div>
+  <div class="grid-col-2">'card-lg'</div>
+  <div class="grid-col-3">units('card-lg')</div>
+  <div class="grid-col-3">u-width('card-lg')</div>
+  <div class="grid-col-4">.width-card-lg</div>
 </div>
 
-<div class="grid-row font-sans-3xs padding-y-05 border-bottom border-base-light text-bold margin-top-2">
-  <div class="grid-col-2 font-sans-3xs">Type scale</div>
-  <div class="grid-col-3">[family], [size]</div>
-  <div class="grid-col-3">$[family]-[size]</div>
-  <div class="grid-col-4">units([value])</div>
+
+### Font (size and family together)
+<div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2">
+  <div class="grid-col-2">Token</div>
+  <div class="grid-col-3">Function</div>
+  <div class="grid-col-3">Mixin</div>
+  <div class="grid-col-4">Utility class</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2 font-sans-2xs">Sans 3xs</div>
-  <div class="grid-col-3">'sans', 3xs</div>
-  <div class="grid-col-3">$sans-3xs</div>
-  <div class="grid-col-4">scale('sans', 3xs)</div>
+  <div class="grid-col-2">'sans-3xs'</div>
+  <div class="grid-col-3">—</div>
+  <div class="grid-col-3">u-font('sans-3xs')</div>
+  <div class="grid-col-4">.font-sans-3xs</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2 font-sans-2xs">Body micro</div>
-  <div class="grid-col-3">'body', 'micro'</div>
-  <div class="grid-col-3">$body-micro</div>
-  <div class="grid-col-4">scale('body', 'micro')</div>
+  <div class="grid-col-2">'body-micro'</div>
+  <div class="grid-col-3">—</div>
+  <div class="grid-col-3">u-font('body-micro')</div>
+  <div class="grid-col-4">.font-body-micro</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2 font-sans-2xs">Heading 15</div>
-  <div class="grid-col-3">'heading', 15</div>
-  <div class="grid-col-3">$heading-15</div>
-  <div class="grid-col-4">scale('heading', 15)</div>
+  <div class="grid-col-2">'heading-15'</div>
+  <div class="grid-col-3">—</div>
+  <div class="grid-col-3">u-font('heading-15')</div>
+  <div class="grid-col-4">.font-heading-15</div>
 </div>

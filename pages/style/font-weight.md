@@ -1,14 +1,14 @@
 ---
-permalink: /style/typescale/
+permalink: /style/font-weight/
 layout: styleguide
-title: Typescale
+title: Font weight
 category: Style
 lead: USWDS typescale includes a nine-step regularized theme scale drawn from a 21-step system scale
 type: docs
 subnav:
-- text: Theme typescale
+- text: Theme font size
   href: '#theme-typescale'
-- text: System typescale
+- text: System font size
   href: '#system-typescale'
 - text: Setting theme typefaces
   href: '#setting-theme-typeface-families'

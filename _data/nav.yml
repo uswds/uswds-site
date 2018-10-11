@@ -1,8 +1,8 @@
 primary:
   - href: /documentation/
   - href: /components/
-  - href: /utilities/
   - href: /style/
+  - href: /utilities/
   - href: /page-templates/
   - href: /about/
 
@@ -11,9 +11,9 @@ mobile:
     collapsible: true
   - href: /components/
     collapsible: true
-  - href: /utilities/
-    collapsible: true
   - href: /style/
+    collapsible: true
+  - href: /utilities/
     collapsible: true
   - href: /page-templates/
   - href: /about/
@@ -50,6 +50,40 @@ Documentation:
   - href: /documentation/implementations/
   - href: /documentation/showcase/
 
+Style:
+  - text: Overview
+    href: /style/
+  - text: Color
+    href: /style/color/
+  - text: Flex
+    href: /style/flex/
+  - text: Font
+    href: /style/font/
+  - text: Font family
+    href: /style/font-family/
+  - text: Font size
+    href: /style/font-size/
+  - text: Font weight
+    href: /style/font-weight/
+  - text: Letterspacing
+    href: /style/letterspacing/
+  - text: Line height
+    href: /style/line-height/
+  - text: Measure
+    href: /style/measure/
+  - text: Opacity
+    href: /style/opacity/
+  - text: Order
+    href: /style/order/
+  - text: Shadow
+    href: /style/shadow/
+  - text: Spacing units
+    href: /style/spacing-units/
+  - text: Typescale
+    href: /style/typescale/
+  - text: Z-index
+    href: /style/z-index/
+
 Utilities:
   - text: Overview
     href: /utilities/
@@ -68,16 +102,6 @@ Utilities:
   - href: /utilities/float/
   - href: /utilities/clearfix/
   - href: /utilities/list-reset/
-
-Style:
-  - text: Overview
-    href: /style/
-  - text: Color
-    href: /style/color/
-  - text: Spacing units
-    href: /style/spacing-units/
-  - text: Typescale
-    href: /style/typescale/
 
 Page templates:
   - href: /page-templates/

@@ -5,6 +5,13 @@ title: Style tokens
 category: Style
 lead: USWDS visual design is based on consistent palettes of typography, spacing units, color, and other discrete elements of style we call **style tokens**{:.font-sans-lg}.
 type: docs
+subnav:
+  - text: Introducing style tokens
+    href: '#introducing-style-tokens'
+  - text: Keys and values
+    href: '#keys-and-values'
+  - text: Using style tokens
+    href: '#using-style-tokens'
 ---
 
 ## Introducing style tokens
@@ -12,6 +19,11 @@ type: docs
 Anything we see on a website is built from elements of style like color, spacing, typography, line height, and opacity. The CSS rules associated with these elements can accept a broad continuum of values — in the case of color, there are over 16 million separate colors in the RGB color space. Font size, line height, spacing, and others can accept a similarly wide range of values.
 
 This degree of choice can slow down design work and make communication between designer and developer unnecessarily granular. The US Web Design System seeks to maximize design efficiency and improve communication with **style tokens**: the discrete palettes of values from which we base all our visual design.
+
+Style tokens are a limited set of discrete options chosen from a larger continuity, just as notes on a scale are drawn from a the larger set of all possible frequencies. To extend the metaphor, USWDS style tokens are the notes from which we compose our visual designs.
+
+{:.padding-y-2}
+![continuous and tokenized values]({{ site.baseurl }}/assets/img/style/continuous-v-token.svg)
 
 ### Example: Measure (line length)
 For example, measure (or line length) expressed with the `max-width` CSS property can accept any value in `em`, `rem`, `ch`, `px`, and beyond to at least two decimal places. USWDS limits itself to 6 measure tokens:
@@ -32,7 +44,8 @@ You can think of a style token as a **key** (expressed as a quoted string or, wi
 
 We can't include tokens directly in our Sass, like `max-width: 1`, rather we use a helper function like `max-width: measure(1)` or a mixin like `@include u-measure(1)`. All USWDS style tokens have helper mixins and functions to use them in component Sass.
 
-_We do not include the token's value directly into our Sass rules._
+{: .bg-warning.padding-1.radius-md }
+**Note:** We do not include the token's value directly into our Sass rules.
 
 ### Example: Tokens in settings and component Sass
 
@@ -152,8 +165,7 @@ Use style tokens directly to set the value of settings variables in USWDS theme 
   <div class="grid-col-4">.width-card-lg</div>
 </div>
 
-
-### Font (size and family together)
+### Font size
 <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2">
   <div class="grid-col-2">Token</div>
   <div class="grid-col-3">Function</div>
@@ -161,20 +173,72 @@ Use style tokens directly to set the value of settings variables in USWDS theme 
   <div class="grid-col-4">Utility class</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">'sans-3xs'</div>
+  <div class="grid-col-2">'3xs'</div>
+  <div class="grid-col-3">font-size('3xs')</div>
+  <div class="grid-col-3">u-font-size('3xs')</div>
+  <div class="grid-col-4">.font-size-3xs</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-2">'micro'</div>
+  <div class="grid-col-3">font-size('micro')</div>
+  <div class="grid-col-3">u-font-size('micro')</div>
+  <div class="grid-col-4">.font-size-micro</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-2">15</div>
+  <div class="grid-col-3">font-size(15)</div>
+  <div class="grid-col-3">u-font-size(15)</div>
+  <div class="grid-col-4">.font-size-15</div>
+</div>
+
+### Font family
+<div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2">
+  <div class="grid-col-2">Token</div>
+  <div class="grid-col-3">Function</div>
+  <div class="grid-col-3">Mixin</div>
+  <div class="grid-col-4">Utility class</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-2">'sans'</div>
+  <div class="grid-col-3">font-family('sans')</div>
+  <div class="grid-col-3">u-font-family('sans')</div>
+  <div class="grid-col-4">.font-family-sans</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-2">'body'</div>
+  <div class="grid-col-3">font-family('body')</div>
+  <div class="grid-col-3">u-font-family('body')</div>
+  <div class="grid-col-4">.font-family-body</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-2">'heading'</div>
+  <div class="grid-col-3">font-family(15)</div>
+  <div class="grid-col-3">u-font-family(15)</div>
+  <div class="grid-col-4">.font-family-15</div>
+</div>
+
+### Font (size and family together)
+<div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2">
+  <div class="grid-col-2">Tokens</div>
+  <div class="grid-col-3">Function</div>
+  <div class="grid-col-3">Mixin</div>
+  <div class="grid-col-4">Utility class</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-2">'sans', '3xs'</div>
   <div class="grid-col-3">—</div>
-  <div class="grid-col-3">u-font('sans-3xs')</div>
+  <div class="grid-col-3">u-font('sans', '3xs')</div>
   <div class="grid-col-4">.font-sans-3xs</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">'body-micro'</div>
+  <div class="grid-col-2">'body', 'micro'</div>
   <div class="grid-col-3">—</div>
-  <div class="grid-col-3">u-font('body-micro')</div>
+  <div class="grid-col-3">u-font('body', 'micro')</div>
   <div class="grid-col-4">.font-body-micro</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">'heading-15'</div>
+  <div class="grid-col-2">'heading', 15</div>
   <div class="grid-col-3">—</div>
-  <div class="grid-col-3">u-font('heading-15')</div>
+  <div class="grid-col-3">u-font('heading', 15)</div>
   <div class="grid-col-4">.font-heading-15</div>
 </div>

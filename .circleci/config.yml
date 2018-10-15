@@ -19,13 +19,14 @@ jobs:
             - vendor/bundle
       - restore_cache:
           keys:
-            - v2-npm-cache-{{ checksum "package-lock.json" }}
+            - v2-npm-cache-{{ .Branch }}-{{ .Revision }}
+            - v2-npm-cache-{{ .Branch }}
             - v2-npm-cache-
       - run:
           name: Install node dependencies
           command: npm install --ignore-scripts --verbose
       - save_cache:
-          key: v2-npm-cache-{{ checksum "package-lock.json" }}
+          key: v2-npm-cache-{{ .Branch }}-{{ .Revision }}
           paths:
             - node_modules
       - run:

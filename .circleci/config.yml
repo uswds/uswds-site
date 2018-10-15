@@ -28,7 +28,7 @@ jobs:
       - save_cache:
           key: v2-npm-cache-{{ .Branch }}-{{ .Revision }}
           paths:
-            - ".git"
+            - node_modules
       - run:
           name: Rebuild node-sass
           command: npm rebuild node-sass

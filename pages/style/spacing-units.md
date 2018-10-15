@@ -1,8 +1,8 @@
 ---
-permalink: /style/spacing-units/
+permalink: /style-tokens/spacing-units/
 layout: styleguide
 title: Spacing units
-category: Style
+category: Style tokens
 lead: USWDS spacing units are based on multiples of 8px, with additional spacing units at small sizes
 type: docs
 subnav:

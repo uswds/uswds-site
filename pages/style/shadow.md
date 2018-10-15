@@ -1,8 +1,8 @@
 ---
-permalink: /style/shadow/
+permalink: /style-tokens/shadow/
 layout: styleguide
 title: Shadow
-category: Style
+category: Style tokens
 lead: Shadow dek
 type: docs
 subnav:

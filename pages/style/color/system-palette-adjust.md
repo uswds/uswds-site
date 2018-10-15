@@ -1,8 +1,8 @@
 ---
-permalink: /style/color/system-palette-adjust/
+permalink: /style-tokens/color/system-palette-adjust/
 layout: styleguide
 title: System palette adjustments
-category: Style
+category: Style tokens
 lead: Use this page as a reference for luminance based adjustments
 type: docs
 subnav:

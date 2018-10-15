@@ -1,8 +1,8 @@
 ---
-permalink: /style/measure/
+permalink: /style-tokens/measure/
 layout: styleguide
 title: Measure
-category: Style
+category: Style tokens
 lead: Measure dek
 type: docs
 subnav:

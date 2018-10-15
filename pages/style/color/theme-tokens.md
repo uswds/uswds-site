@@ -1,19 +1,19 @@
 ---
-permalink: /style/color/theme-palette/
+permalink: /style-tokens/color/theme-tokens/
 layout: styleguide
-title: Theme palette
-category: Style
-lead: USWDS theme colors provide flexible, accessible, customizable color choices
+title: Theme and state color tokens
+category: Style tokens
+lead: USWDS theme and state color tokens provide flexible, accessible, customizable color choices for your project
 type: docs
 subnav:
-- text: Theme color palette
-  href: '#theme-color-palette'
-- text: State color palette
-  href: '#state-color-palette'
-- text: Setting theme and state colors
+- text: Theme color tokens
+  href: '#theme-color-tokens'
+- text: State color tokens
+  href: '#state-color-tokens'
+- text: Setting theme and state color tokens
   href: '#setting-theme-and-state-colors'
-- text: Using colors
-  href: '#using-colors-in-utilities-settings-and-component-sass'
+- text: Using color tokens
+  href: '#using-color-tokens-in-utilities-settings-and-component-sass'
 - text: Settings
   href: '#settings'
 - text: Utilities
@@ -29,21 +29,21 @@ subnav:
 {% assign theme_colors = site.data.uswds_tokens.colors.project_theme %}
 {% assign state_colors = site.data.uswds_tokens.colors.project_state %}
 
-The USWDS theme color palette is designed to be useful and effective for small and large projects. Each color in a USWDS theme palette is drawn from a [larger system palette]({{ site.baseurl }}/style/color/system-palette/) that designers can use for further customization. Colors from the system palette are the only ones we use to build official components. Any components we accept back into the system need to be built with colors drawn from the system palette.
+USWDS theme color tokens are designed to be useful and effective for small and large projects. Each theme token is drawn from a [system color token]({{ site.baseurl }}/style-tokens/color/system-tokens/) and system color tokens are the only colors we accept in official components.
 
-## Theme color palette
-The theme color palettes is divided into five high-level role-based color families: `base`, `primary`, `secondary`, `accent-warm`, and `accent-cool`.
+## Theme color tokens
+USWDS theme color tokens are divided into five high-level role-based color families: `base`, `primary`, `secondary`, `accent-warm`, and `accent-cool`.
 
-Base is a project's neutral color, typically some tint of gray, and usually used as the text color throughout.
+**Base** is a project's neutral color, typically some tint of gray, and usually used as the text color throughout.
 
-Primary, secondary, and accent colors can be thought of as falling into a proportional 60/30/10 relationship: about 60% of your site’s color would be the primary color family, about 30% would be the secondary color family, and about 10% would be the accent color families (`accent-warm` and `accent-cool`). Note that these proportions are for non-base colors. In many cases, the neutral base text color will be the predominant tone on your site.
+**Primary**, **secondary**, and **accent** colors can be thought of as falling into a proportional 60/30/10 relationship: about 60% of your site’s color would be the primary color family, about 30% would be the secondary color family, and about 10% would be the accent color families (`accent-warm` and `accent-cool`). Note that these proportions are for non-base colors. In many cases, the neutral base text color will be the predominant tone on your site.
 
 Each color family has seven possible lightness grades, from `lightest` to `darkest`, though not every family needs to include a color at each grade. Some grades may be set to `false` in your project's theme settings. The default USWDS theme palette does not use every grade for every family. The `primary` and `secondary` families also have a `vivid` grade available.
 
 <div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-4 text-bold font-sans-1">
   <div class="grid-col-1">color</div>
-  <div class="grid-col-4">token</div>
-  <div class="grid-col-3">system palette equivalent</div>
+  <div class="grid-col-4">theme token</div>
+  <div class="grid-col-3">system token equivalent</div>
   <div class="grid-col-fill text-right">hex value</div>
 </div>
 
@@ -67,15 +67,15 @@ Each color family has seven possible lightness grades, from `lightest` to `darke
   {% endif %}
 {% endfor %}
 
-## State color palette
+## State color tokens
 The state color palette is divided into four high-level role-based color families: `error`, `warning`, `success`, and `disabled`.
 
 Each color family except `disabled` has five possible lightness grades, from `lighter` to `darker`, though not every family needs to include a color at each grade. Some grades may be set to `false` in your project's theme settings.
 
 <div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-4 text-bold font-sans-1">
   <div class="grid-col-1">color</div>
-  <div class="grid-col-4">token</div>
-  <div class="grid-col-3">system palette equivalent</div>
+  <div class="grid-col-4">state token</div>
+  <div class="grid-col-3">system token equivalent</div>
   <div class="grid-col-fill text-right">hex value</div>
 </div>
 
@@ -99,8 +99,8 @@ Each color family except `disabled` has five possible lightness grades, from `li
   {% endif %}
 {% endfor %}
 
-## Setting theme and state colors
-Set theme and state colors in your project's theme settings with tokens from the [system color palette]({{ site.baseurl }}/style/color/system-palette/) in the form `[family], [grade], [variant]` (The variant is optional).
+## Setting theme and state color tokens
+Set theme and state tokens in your project's theme settings with [system color tokens]({{ site.baseurl }}/style-tokens/color/system-tokens/).
 
 Theme and state families tend to include colors from the same system family, but this is not a hard-and-fast rule. For instance, the USWDS default theme palette uses colors from both the `blue-warm` and `blue` system color families for colors in the `primary` theme family.
 
@@ -206,14 +206,14 @@ $theme-color-disabled-dark:    '#{$theme-color-disabled-family}-30';
 
 ```
 
-## Using colors in utilities, settings, and component Sass
+## Using color tokens in utilities, settings, and component Sass
 You'll access USWDS colors using a few different techniques, depending on your situation and coding style.
 
 {:.margin-bottom-0}
 ### Settings
 
 {:.margin-top-05}
-Use quoted color tokens in the form `[family]-[grade][vivid]`.
+Use quoted color tokens.
 
 {:.maxw-mobile-lg}
 ```
@@ -225,7 +225,7 @@ $theme-color-accent-cool-dark:     'mint-50';
 ### Utilities
 
 {:.margin-top-05}
-Color utilities require a quoted color token in the form `[family]-[grade][vivid]`.
+Color utilities require a quoted color token.
 
 _Note: In USWDS utilities, only the theme palette is activated by default. See the [color utilities section](#0) for more details about how to activate additional palettes for your utilities._
 
@@ -242,7 +242,7 @@ _Note: In USWDS utilities, only the theme palette is activated by default. See t
 ### Functions
 
 {:.margin-top-05}
-The `color()` requires a quoted color token in the form `[family]-[grade][vivid]`. The `advanced-color()` function requires separate family, grade, and variant tokens in the form `'[family]', [grade], '[variant]'`.
+The `color()` function requires a quoted color token. The `advanced-color()` function requires separate family, grade, and variant tokens in the form `'[family]', [grade], '[variant]'`.
 
 {:.maxw-mobile-lg}
 ```

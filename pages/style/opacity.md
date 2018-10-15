@@ -1,8 +1,8 @@
 ---
-permalink: /style/opacity/
+permalink: /style-tokens/opacity/
 layout: styleguide
 title: Opacity
-category: Style
+category: Style tokens
 lead: Opacity dek
 type: docs
 subnav:

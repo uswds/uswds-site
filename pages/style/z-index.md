@@ -1,8 +1,8 @@
 ---
-permalink: /style/z-index/
+permalink: /style-tokens/z-index/
 layout: styleguide
 title: Z index
-category: Style
+category: Style tokens
 lead: Z-index dek
 type: docs
 subnav:

@@ -76,7 +76,7 @@ utilities:
 
       <h4 class="utility-examples-title margin-bottom-2">Style-based size and family utilities</h4>
 
-      <p class="utility-note font-sans-2xs margin-bottom-2 margin-top-0"><strong>Note:</strong> You can modify both the default theme sizes and default typefaces in your project’s <a href="{{ site.baseurl }}/style/typescale/#using-typescale-in-utilities-settings-and-component-sass">project settings</a>. Use font size values from the <a href="{{ site.baseurl }}/style/typescale/">global system type scale palette</a>. Use typefaces from the <a href="{{ site.baseurl }}/style/typescale/#setting-theme-typeface-families">system type library</a>.</p>
+      <p class="utility-note font-sans-2xs margin-bottom-2 margin-top-0"><strong>Note:</strong> You can modify both the default theme sizes and default typefaces in your project’s <a href="{{ site.baseurl }}/style-tokens/typescale/#using-typescale-in-utilities-settings-and-component-sass">project settings</a>. Use font size values from the <a href="{{ site.baseurl }}/style-tokens/typescale/">global system type scale palette</a>. Use typefaces from the <a href="{{ site.baseurl }}/style-tokens/typescale/#setting-theme-typeface-families">system type library</a>.</p>
 
       <div class="grid-row flex-align-center margin-bottom-2 padding-bottom-1">
         {% for face in our_faces %}
@@ -160,7 +160,7 @@ utilities:
 
       <h4 class="utility-examples-title margin-bottom-2">Role-based size and family utilities</h4>
 
-      <p class="utility-note font-sans-2xs margin-bottom-2 margin-top-0"><strong>Note:</strong> You can modify these roles, the default theme sizes, and the default typefaces in your project’s <a href="{{ site.baseurl }}/style/typescale/#using-typescale-in-utilities-settings-and-component-sass">project settings</a>. Use font size values from the <a href="{{ site.baseurl }}/style/typescale/">global system type scale palette</a>. Use typefaces from the <a href="{{ site.baseurl }}/style/typescale/#setting-theme-typeface-families">system type library</a>.</p>
+      <p class="utility-note font-sans-2xs margin-bottom-2 margin-top-0"><strong>Note:</strong> You can modify these roles, the default theme sizes, and the default typefaces in your project’s <a href="{{ site.baseurl }}/style-tokens/typescale/#using-typescale-in-utilities-settings-and-component-sass">project settings</a>. Use font size values from the <a href="{{ site.baseurl }}/style-tokens/typescale/">global system type scale palette</a>. Use typefaces from the <a href="{{ site.baseurl }}/style-tokens/typescale/#setting-theme-typeface-families">system type library</a>.</p>
 
       <div class="grid-row flex-align-center margin-bottom-2 padding-bottom-1">
         {% for face in our_faces %}

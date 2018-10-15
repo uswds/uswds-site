@@ -1,8 +1,8 @@
 ---
-permalink: /style/
+permalink: /style-tokens/
 layout: styleguide
 title: Style tokens
-category: Style
+category: Style tokens
 lead: USWDS visual design is based on consistent palettes of typography, spacing units, color, and other discrete elements of style we call **style tokens**{:.font-sans-lg}.
 type: docs
 subnav:
@@ -20,10 +20,10 @@ Anything we see on a website is built from elements of style like color, spacing
 
 This degree of choice can slow down design work and make communication between designer and developer unnecessarily granular. The US Web Design System seeks to maximize design efficiency and improve communication with **style tokens**: the discrete palettes of values from which we base all our visual design.
 
-Style tokens are a limited set of discrete options chosen from a larger continuity, just as notes on a scale are drawn from a the larger set of all possible frequencies. To extend the metaphor, USWDS style tokens are the notes from which we compose our visual designs.
+Style tokens are a limited set of discrete options, just as a scale of musical notes is drawn from an infinite spectrum of possible frequencies. To extend the metaphor, USWDS style tokens are the notes from which we compose our visual designs.
 
 {:.padding-y-2}
-![continuous and tokenized values]({{ site.baseurl }}/assets/img/style/continuous-v-token.svg)
+![continuous and tokenized values]({{ site.baseurl }}/assets/img/style-tokens/continuous-v-token.svg)
 
 ### Example: Measure (line length)
 For example, measure (or line length) expressed with the `max-width` CSS property can accept any value in `em`, `rem`, `ch`, `px`, and beyond to at least two decimal places. USWDS limits itself to 6 measure tokens:

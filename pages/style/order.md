@@ -1,8 +1,8 @@
 ---
-permalink: /style/order/
+permalink: /style-tokens/order/
 layout: styleguide
 title: Order
-category: Style
+category: Style tokens
 lead: Order dek
 type: docs
 subnav:

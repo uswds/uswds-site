@@ -1,8 +1,8 @@
 ---
-permalink: /style/letterspacing/
+permalink: /style-tokens/letterspacing/
 layout: styleguide
 title: Letterspacing
-category: Style
+category: Style tokens
 lead: Letterspacing dek
 type: docs
 subnav:

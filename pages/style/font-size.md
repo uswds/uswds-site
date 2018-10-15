@@ -1,8 +1,8 @@
 ---
-permalink: /style/font-size/
+permalink: /style-tokens/font-size/
 layout: styleguide
 title: Font size
-category: Style
+category: Style tokens
 lead: USWDS typescale includes a nine-step regularized theme scale drawn from a 21-step system scale
 type: docs
 subnav:

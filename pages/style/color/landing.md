@@ -1,12 +1,12 @@
 ---
-permalink: /style/color/
+permalink: /style-tokens/color/
 layout: styleguide
 title: Color overview
 category: Style
 lead: USWDS theme colors provide flexible, accessible, customizable color choices
 type: docs
 subnav:
-  - href: /style/color/overview/
-  - href: /style/color/theme-palette/
-  - href: /style/color/system-palette/
+  - href: /style-tokens/color/overview/
+  - href: /style-tokens/color/theme-tokens/
+  - href: /style-tokens/color/system-tokens/
 ---

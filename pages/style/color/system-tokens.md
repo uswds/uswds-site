@@ -1,9 +1,9 @@
 ---
-permalink: /style/color/system-palette/
+permalink: /style-tokens/color/system-tokens/
 layout: styleguide
-title: System palette
-category: Style
-lead: The USWDS system color palette is the complete set of colors from which any project can build a theme palette
+title: System color tokens
+category: Style tokens
+lead: USWDS system color tokens are the complete palette of color tokens from which any project can build a theme palette
 type: docs
 subnav:
   - text: Red warm
@@ -115,7 +115,7 @@ families:
         <div class="grid-col-2">Family</div>
         <div class="grid-col-1">Grade</div>
         <div class="grid-col-2">Variant</div>
-        <div class="grid-col-3">Token</div>
+        <div class="grid-col-3">System color token</div>
         <div class="grid-col-fill text-right">Hex</div>
       </div>
 

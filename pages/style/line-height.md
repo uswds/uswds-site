@@ -1,8 +1,8 @@
 ---
-permalink: /style/line-height/
+permalink: /style-tokens/line-height/
 layout: styleguide
 title: Line height
-category: Style
+category: Style tokens
 lead: Line height dek
 type: docs
 subnav:

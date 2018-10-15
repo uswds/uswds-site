@@ -1,7 +1,7 @@
 primary:
   - href: /documentation/
   - href: /components/
-  - href: /style/
+  - href: /style-tokens/
   - href: /utilities/
   - href: /page-templates/
   - href: /about/
@@ -11,7 +11,7 @@ mobile:
     collapsible: true
   - href: /components/
     collapsible: true
-  - href: /style/
+  - href: /style-tokens/
     collapsible: true
   - href: /utilities/
     collapsible: true
@@ -50,39 +50,37 @@ Documentation:
   - href: /documentation/implementations/
   - href: /documentation/showcase/
 
-Style:
+Style tokens:
   - text: Overview
-    href: /style/
+    href: /style-tokens/
   - text: Color
-    href: /style/color/
+    href: /style-tokens/color/
   - text: Flex
-    href: /style/flex/
+    href: /style-tokens/flex/
   - text: Font
-    href: /style/font/
+    href: /style-tokens/font/
   - text: Font family
-    href: /style/font-family/
+    href: /style-tokens/font-family/
   - text: Font size
-    href: /style/font-size/
+    href: /style-tokens/font-size/
   - text: Font weight
-    href: /style/font-weight/
+    href: /style-tokens/font-weight/
   - text: Letterspacing
-    href: /style/letterspacing/
+    href: /style-tokens/letterspacing/
   - text: Line height
-    href: /style/line-height/
+    href: /style-tokens/line-height/
   - text: Measure
-    href: /style/measure/
+    href: /style-tokens/measure/
   - text: Opacity
-    href: /style/opacity/
+    href: /style-tokens/opacity/
   - text: Order
-    href: /style/order/
+    href: /style-tokens/order/
   - text: Shadow
-    href: /style/shadow/
+    href: /style-tokens/shadow/
   - text: Spacing units
-    href: /style/spacing-units/
-  - text: Typescale
-    href: /style/typescale/
+    href: /style-tokens/spacing-units/
   - text: Z-index
-    href: /style/z-index/
+    href: /style-tokens/z-index/
 
 Utilities:
   - text: Overview

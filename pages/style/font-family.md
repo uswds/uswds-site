@@ -1,8 +1,8 @@
 ---
-permalink: /style/font-family/
+permalink: /style-tokens/font-family/
 layout: styleguide
 title: Font family
-category: Style
+category: Style tokens
 lead: USWDS typescale includes a nine-step regularized theme scale drawn from a 21-step system scale
 type: docs
 subnav:

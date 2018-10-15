@@ -1,8 +1,8 @@
 ---
-permalink: /style/flex/
+permalink: /style-tokens/flex/
 layout: styleguide
 title: Flex
-category: Style
+category: Style tokens
 lead: Flex dek
 type: docs
 subnav:

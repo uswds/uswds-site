@@ -14,7 +14,7 @@ subnav:
     href: '#typesetting-with-tokens'
 ---
 
-## Font normalization
+## Normalization
 Typefaces vary in optical size. This means that at any fixed pixel value, an optically small typeface like Source Sans Pro will appear smaller than an optically large typeface like Merriweather. Optical size is a function of internal font metrics and typeface design choices like x-height.
 
 {:.font-sans-md}

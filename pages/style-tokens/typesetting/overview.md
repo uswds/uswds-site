@@ -9,23 +9,19 @@ redirect_from:
   - /style-tokens/typesetting/
 subnav:
   - text: Normalization
-    href: '#introduction'
-  - text: Theme font tokens
-    href: '#theme-typescale'
-  - text: System font tokens
-    href: '#system-typescale'
-  - text: Setting theme typefaces
-    href: '#setting-theme-typeface-families'
+    href: '#normalization'
+  - text: Typesetting with tokens
+    href: '#typesetting-with-tokens'
 ---
 
-## Normalization
+## Font normalization
 Typefaces vary in optical size. This means that at any fixed pixel value, an optically small typeface like Source Sans Pro will appear smaller than an optically large typeface like Merriweather. Optical size is a function of internal font metrics and typeface design choices like x-height.
 
 {:.font-sans-md}
 ### Fonts at native size
 ![continuous and tokenized values]({{ site.baseurl }}/assets/img/style-tokens/font-comparison.svg)
 
-USWDS is designed so each typescale token outputs a consistent optical size regardless of the typeface to make our guidance more reliable and our theming more flexible.
+USWDS 2.0 is designed so each size token outputs a consistent optical size regardless of the typeface. This makes our guidance more reliable and our theming more flexible.
 
 {:.font-sans-md}
 ### Fonts at normalized size
@@ -201,4 +197,149 @@ Since we use normalization on font sizing, we must also normalize line height to
     <div class="grid-col-2 text-300">1.36</div>
     <div class="grid-col-2 text-300">32.4px</div>
   </div>
+</div>
+
+## Typesetting with tokens
+USWDS uses functions, mixins, and utility classes to style its components with style tokens. Because we use normalized values, as described above, font size and line height functions, mixins, and utility classes differ from many others in the system by requiring two tokens: a `family` token and either `size` or a `line-height` token.
+
+The individual style token sections go into this in more detail, but here's a summary:
+
+### Font family
+<div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2">
+  <div class="grid-col-2">Token</div>
+  <div class="grid-col-3">Function</div>
+  <div class="grid-col-3">Mixin</div>
+  <div class="grid-col-4">Utility class</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-2">[family]</div>
+  <div class="grid-col-3">family([family])</div>
+  <div class="grid-col-3">u-font-family([family])</div>
+  <div class="grid-col-4">.font-family-[family]</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-2">'body'</div>
+  <div class="grid-col-3">family('body')</div>
+  <div class="grid-col-3">u-font-family('body')</div>
+  <div class="grid-col-4">.font-family-body</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-2">'sans'</div>
+  <div class="grid-col-3">family('sans')</div>
+  <div class="grid-col-3">u-font-family('sans')</div>
+  <div class="grid-col-4">.font-family-sans</div>
+</div>
+
+### Font size
+<div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2">
+  <div class="grid-col-2">Tokens</div>
+  <div class="grid-col-3">Function</div>
+  <div class="grid-col-3">Mixin</div>
+  <div class="grid-col-4">Utility class</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-2">[family], [size]</div>
+  <div class="grid-col-3">size([family], [size])</div>
+  <div class="grid-col-3">u-font-size([family], [size])</div>
+  <div class="grid-col-4">.font-size-[family]-[size]</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-2">'ui', 'micro'</div>
+  <div class="grid-col-3">size('ui', 'micro')</div>
+  <div class="grid-col-3">u-font-size('ui', 'micro')</div>
+  <div class="grid-col-4">.font-size-ui-micro</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-2">'sans', 6</div>
+  <div class="grid-col-3">size('sans', 6)</div>
+  <div class="grid-col-3">u-font-size('sans', 6)</div>
+  <div class="grid-col-4">.font-size-sans-6</div>
+</div>
+
+### Font size and family
+<div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2">
+  <div class="grid-col-2">Tokens</div>
+  <div class="grid-col-3">Function</div>
+  <div class="grid-col-3">Mixin</div>
+  <div class="grid-col-4">Utility class</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-2">[family], [size]</div>
+  <div class="grid-col-3">—</div>
+  <div class="grid-col-3">u-font([family], [size])</div>
+  <div class="grid-col-4">.font-[family]-[size]</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-2">'ui', 'micro'</div>
+  <div class="grid-col-3">—</div>
+  <div class="grid-col-3">u-font('ui', 'micro')</div>
+  <div class="grid-col-4">.font-ui-micro</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-2">'sans', 6</div>
+  <div class="grid-col-3">—</div>
+  <div class="grid-col-3">u-font('sans', 6)</div>
+  <div class="grid-col-4">.font-sans-6</div>
+</div>
+
+### Line height
+<div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2">
+  <div class="grid-col-2">Tokens</div>
+  <div class="grid-col-3">Function</div>
+  <div class="grid-col-3">Mixin</div>
+  <div class="grid-col-4">Utility class</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-2">[family], <br/>[line height]</div>
+  <div class="grid-col-3">line-height([family], <br/>[line height])</div>
+  <div class="grid-col-3">u-line-height([family], <br/>[line height])</div>
+  <div class="grid-col-4">.line-height-[family]-[line height]</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-2">'ui', 1</div>
+  <div class="grid-col-3">line-height('ui', 1)</div>
+  <div class="grid-col-3">u-line-height('ui', 1)</div>
+  <div class="grid-col-4">.line-height-ui-1</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-2">'sans', 3</div>
+  <div class="grid-col-3">line-height('sans', 3)</div>
+  <div class="grid-col-3">u-line-height('sans', 3)</div>
+  <div class="grid-col-4">.line-height-sans-3</div>
+</div>
+
+### Family, size, and line height
+The `typeset()` mixin outlined below accepts the tokens listed as well as a special `null` value. If either of the three properties get `null` instead of a token, the system will use a default value from `$uswds-theme-typography`: either `$theme-body-font-family`, `$theme-body-font-size`, or `$theme-body-line-height` depending on the property passed the `null` value.
+
+We use the `typeset()` mixin on all our components to get the effect of default `<body>` element styling without having to explicitly style the `<body>` element.
+
+<div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2">
+  <div class="grid-col-4">Tokens</div>
+  <div class="grid-col-1">Function</div>
+  <div class="grid-col-5">Mixin</div>
+  <div class="grid-col-2">Utility class</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-4">[family], [size], [line height]</div>
+  <div class="grid-col-1">—</div>
+  <div class="grid-col-5">typeset([family], [size], [line height])</div>
+  <div class="grid-col-2">—</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-4">'ui', 'micro', 1</div>
+  <div class="grid-col-1">—</div>
+  <div class="grid-col-5">typeset('ui', 'micro', 1)</div>
+  <div class="grid-col-2">—</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-4">'ui', null, 3</div>
+  <div class="grid-col-1">—</div>
+  <div class="grid-col-5">typeset('ui', null, 3)</div>
+  <div class="grid-col-2">—</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-4">'ui', xs, null</div>
+  <div class="grid-col-1">—</div>
+  <div class="grid-col-5">typeset('ui', xs)</div>
+  <div class="grid-col-2">—</div>
 </div>

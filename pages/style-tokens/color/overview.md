@@ -16,8 +16,8 @@ subnav:
     href: '#color-and-accessibility'
   - text: USWDS color wheels
     href: '#uswds-color-wheels'
-  - text: Using color
-    href: '#using-color'
+  - text: General color guidance
+    href: '#general-color-guidance'
 ---
 
 ## Introduction
@@ -35,6 +35,7 @@ USWDS organizes its colors tokens into [project tokens]({{ site.baseurl }}/style
 <style>code {mix-blend-mode: multiply;}</style>
 <div class="bg-base-lighter measure-3 padding-3 usa-section" markdown="1">
 {:.font-sans-xs}
+
 ### COLOR, COLOR FAMILY, AND GRADE
 
 Throughout our documentation and guidance, we’ll use use the terms color, color family, and grade, but what do we mean when we use them?
@@ -155,7 +156,7 @@ The vivid palette is incomplete. We’ve added vivid variants as we’ve found a
 
 ![vivid color wheel]({{ site.baseurl }}/assets/img/style-tokens/uswds-vivid-color-wheel.webp)
 
-## Using color
+## General color guidance
 
 If we use color intentionally, consistently, and sensitively, it can make a big difference in the way people understand and connect with our pages, our products and services, and our message. Color is an important component of visual and emotional cognition, and that’s precisely what makes it difficult to use well — what’s strong and confident to one person can be jarring or alarming to another.
 

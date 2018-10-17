@@ -1,5 +1,5 @@
 ---
-permalink: /style-tokens/font-weight/
+permalink: /style-tokens/typesetting/font-weight/
 layout: styleguide
 title: Font weight
 category: Style tokens

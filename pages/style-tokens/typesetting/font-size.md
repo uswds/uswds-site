@@ -1,12 +1,22 @@
 ---
-permalink: /style-tokens/line-height/
+permalink: /style-tokens/typesetting/font-size/
 layout: styleguide
-title: Line height
+title: Font size
 category: Style tokens
-lead: Line height dek
+lead: USWDS typescale includes a nine-step regularized theme scale drawn from a 21-step system scale
 type: docs
 subnav:
-- text: Using line height
+- text: Theme font size
+  href: '#theme-typescale'
+- text: System font size
+  href: '#system-typescale'
+- text: Setting theme typefaces
+  href: '#setting-theme-typeface-families'
+- text: Type-based family tokens
+  href: '#type-based family-tokens'
+- text: Role-based family tokens
+  href: '#role-based family-tokens'
+- text: Using type scale
   href: '#using-typescale-in-utilities-settings-and-component-sass'
 - text: Settings
   href: '#settings'

@@ -1,5 +1,5 @@
 ---
-permalink: /style-tokens/measure/
+permalink: /style-tokens/typesetting/measure/
 layout: styleguide
 title: Measure
 category: Style tokens

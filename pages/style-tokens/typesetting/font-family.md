@@ -1,24 +1,22 @@
 ---
-permalink: /style-tokens/font/
+permalink: /style-tokens/typesetting/font-family/
 layout: styleguide
-title: Font (size and family together)
+title: Font family
 category: Style tokens
-lead: USWDS font tokens combine our font-family and font-size tokens into a single token that sets the font size and family together. Since USWDS font size is customized to specific font families, it’s often best to typeset them together using a font token.
+lead: USWDS typescale includes a nine-step regularized theme scale drawn from a 21-step system scale
 type: docs
 subnav:
-- text: Font normalization
-  href: '#font-normalization'
-- text: Theme font tokens
+- text: Theme font size
   href: '#theme-typescale'
-- text: System font tokens
+- text: System font size
   href: '#system-typescale'
 - text: Setting theme typefaces
   href: '#setting-theme-typeface-families'
 - text: Type-based family tokens
-  href: '#type-based-family-tokens'
+  href: '#type-based family-tokens'
 - text: Role-based family tokens
-  href: '#role-based-family-tokens'
-- text: Using font tokens
+  href: '#role-based family-tokens'
+- text: Using type scale
   href: '#using-typescale-in-utilities-settings-and-component-sass'
 - text: Settings
   href: '#settings'
@@ -32,14 +30,13 @@ subnav:
   href: '#utility-mixins'
 ---
 
-The USWDS typescale is designed to display type at a consistent size regardless of the typeface. Theme font tokens use a nine-step scale drawn from a 21-step system scale. Theme and system font tokens are the only tokens we accept for setting set font family and size in official components.
+The USWDS typescale is designed to display type at a consistent size regardless of the typeface. Project themes use a nine-step scale drawn from a 21-step system scale. These typescale values are the only values we use to build official components. Any components we accept back into the system need to be built with this typescale.
 
 Font size is output in `rem`. If you have `$theme-respect-user-font-size` set to `true` in your theme settings, the root font size is set to `100%` and typescale is calculated based on `16px`. If `$theme-respect-user-font-size` set to `false`, the root font size is set to the value of `$theme-root-font-size` and typescale is calculated based on that root.
 
-Since both the `rem` and absolute `px` values change depending on the theme settings and the typeface, the following table displays only the `px` value of the target.
-
-## Font normalization
 To make different typefaces appear the same size at each step of the scale, the absolute size of each step in the typescale varies from typeface to typeface. Each [supported typeface](#setting-theme-typeface-families) is regularized to a target value set by the the size of common system fonts — specifically Apple's typeface San Francisco and  Google's typeface Roboto. Optically smaller faces like Source Sans Pro will have a relatively larger rem value at each step in the scale, and optically larger faces like Merriweather will have a relatively smaller rem value. The USWDS typeface Public Sans is developed to be optically similar to system fonts.
+
+Since both the `rem` and absolute `px` values change depending on the theme settings and the typeface, the following table displays only the `px` value of the target.
 
 ## Theme typescale
 The nine-step theme scale should be sufficient for most project needs. First, try to use the theme scale. If your projects needs require more than nine sizes, use steps from the system scale as needed.

@@ -1,22 +1,12 @@
 ---
-permalink: /style-tokens/font-family/
+permalink: /style-tokens/typesetting/letterspacing/
 layout: styleguide
-title: Font family
+title: Letterspacing
 category: Style tokens
-lead: USWDS typescale includes a nine-step regularized theme scale drawn from a 21-step system scale
+lead: Letterspacing dek
 type: docs
 subnav:
-- text: Theme font size
-  href: '#theme-typescale'
-- text: System font size
-  href: '#system-typescale'
-- text: Setting theme typefaces
-  href: '#setting-theme-typeface-families'
-- text: Type-based family tokens
-  href: '#type-based family-tokens'
-- text: Role-based family tokens
-  href: '#role-based family-tokens'
-- text: Using type scale
+- text: Using letterspcing
   href: '#using-typescale-in-utilities-settings-and-component-sass'
 - text: Settings
   href: '#settings'

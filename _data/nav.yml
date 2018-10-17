@@ -55,22 +55,10 @@ Style tokens:
     href: /style-tokens/
   - text: Color
     href: /style-tokens/color/
+  - text: Typesetting
+    href: /style-tokens/typesetting/
   - text: Flex
     href: /style-tokens/flex/
-  - text: Font
-    href: /style-tokens/font/
-  - text: Font family
-    href: /style-tokens/font-family/
-  - text: Font size
-    href: /style-tokens/font-size/
-  - text: Font weight
-    href: /style-tokens/font-weight/
-  - text: Letterspacing
-    href: /style-tokens/letterspacing/
-  - text: Line height
-    href: /style-tokens/line-height/
-  - text: Measure
-    href: /style-tokens/measure/
   - text: Opacity
     href: /style-tokens/opacity/
   - text: Order

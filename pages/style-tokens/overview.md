@@ -26,7 +26,7 @@ Style tokens are a limited set of discrete options, just as a scale of musical n
 ![continuous and tokenized values]({{ site.baseurl }}/assets/img/style-tokens/continuous-v-token.svg)
 
 ### Example: Measure (line length)
-For example, measure (or line length) expressed with the `max-width` CSS property can accept any value in `em`, `rem`, `ch`, `px`, and beyond to at least two decimal places. USWDS limits itself to 6 [measure]({{ site.baseurl }}/style-tokens/measure/){:.token} tokens:
+For example, measure (or line length) expressed with the `max-width` CSS property can accept any value in `em`, `rem`, `ch`, `px`, and beyond to at least two decimal places. USWDS limits itself to 6 [measure]({{ site.baseurl }}/style-tokens/typesetting/measure/){:.token} tokens:
 
 | token   | value
 | ---     | ---
@@ -37,7 +37,7 @@ For example, measure (or line length) expressed with the `max-width` CSS propert
 |`5`      | `77ch`
 |`'none'` | no max width
 
-Anything built using USWDS will use one of these 6 [measure]({{ site.baseurl }}/style-tokens/measure/){:.token} tokens when specifying measure.
+Anything built using USWDS will use one of these 6 [measure]({{ site.baseurl }}/style-tokens/typesetting/measure/){:.token} tokens when specifying measure.
 
 ## Keys and values
 You can think of a style token as a **key** (expressed as a quoted string or, with only the exceptions of `1px` and `2px`, a unitless number) that unlocks a specific **value**. Often, the specific value is less important than its effect. And the mechanism by which the value is unlocked is a **function**, **mixin**, or **utility class**.

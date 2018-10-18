@@ -24,14 +24,14 @@ Typefaces vary in optical size. This means that at any specific pixel value, an 
 USWDS 2.0 is designed so each size token outputs a consistent optical size regardless of the typeface. This makes our guidance more reliable and our theming more flexible.
 
 {:.font-sans-md}
-### Fonts at normalized size
+### Fonts with normalization applied
 
 {:.padding-bottom-2}
 ![normalized typefaces]({{ site.baseurl }}/assets/img/style-tokens/font-comparison-normalized.svg)
 
-To make different typefaces appear the same size (here called the _target size_) at each step of the scale (here we see the output of size token `10`), the absolute size of each token's output varies depending on the font family.
+To make different typefaces appear the same size (here called the _target size_) at each step of the scale (here we see the output of [size]({{ site.baseurl }}/style-tokens/typesetting/font-size/){:.token} token `10`), the absolute size of each token's output varies depending on the font family.
 
-Each <code>supported typeface</code>(#setting-theme-typeface-families) is normalized to a target value determined by the optical size of common system fonts — specifically Apple's typeface San Francisco and Google's typeface Roboto.
+Each [supported typeface]({{ site.baseurl }}/style-tokens/typesetting/font-family/) is normalized to a target value determined by the optical size of common system fonts — specifically Apple's typeface San Francisco and Google's typeface Roboto.
 
 <div class="measure-3 bg-white radius-md border padding-x-2 padding-top-2">
   <div class="line-height-mono-1 font-mono-2 grid-row">
@@ -103,7 +103,7 @@ In USWDS, the final font size is output not in pixels but in `rem` (a proportion
 Since both the `rem` and absolute `px` values change depending on the theme settings and the typeface, our documentation displays only the `px` value of the target.
 
 ### Normalization and line height
-USWDS has six target line heights in its <code>line height token system</code>(#0). These targets are unitless numbers, multipliers of the font size of the affected text. For example, if the target line height were `2` in text with a target font size of `16px`, the final line height would be the `target line height * target font size` or `2 * 16px` or `32px`.
+USWDS has six target line heights in its [line-height]({{ site.baseurl }}/style-tokens/typesetting/line-height/){:.token} token system. These targets are unitless numbers, multipliers of the font size of the affected text. For example, if the target line height were `2` in text with a target font size of `16px`, the final line height would be the `target line height * target font size` or `2 * 16px` or `32px`.
 
 Since we use normalization on font sizing, we must also normalize line height to hit the target line height:
 

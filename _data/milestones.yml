@@ -5,10 +5,10 @@
       status: Done
       url: https://github.com/uswds/uswds/issues/2300
     - title: Develop an easier way to prototype and build consistently and incrementally
-      status: In progress
+      status: Done
       url: https://github.com/uswds/uswds/issues/2292
     - title: A more flexible, consistent color system
-      status: In progress
+      status: Done
       url: https://github.com/uswds/uswds/issues/2296
     - title: Better typographic flexibility and resilience, with or without webfonts
       status: In progress
@@ -20,14 +20,14 @@
       status: To-do
       url: https://github.com/uswds/uswds/issues/2294
     - title: A clearer connection between user research and patterns and components
-      status: To-do
+      status: Up next
       url: https://github.com/uswds/uswds/issues/2297
     - title: A clear, reliable way to stay up-to-date and track component changes and status
-      status: To-do
+      status: Up next
       url: https://github.com/uswds/uswds/issues/2298
     - title: A path to contribute components and research back to the system
-      status: To-do
+      status: Up next
       url: https://github.com/uswds/uswds/issues/2299
     - title: Grow our core government communities and our larger open source community
-      status: To-do
+      status: In progress
       url: https://github.com/uswds/uswds/issues/2301

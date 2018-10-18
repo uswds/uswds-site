@@ -16,7 +16,7 @@ subnav:
 
 ## Introducing style tokens
 
-Anything we see on a website is built from elements of style like color, spacing, typography, line height, and opacity. The CSS rules associated with these elements can accept a broad continuum of values — in the case of color, there are over 16 million separate colors in the RGB color space. Font size, line height, spacing, and others can accept a similarly wide range of values.
+Anything we see on a website is built from elements of style: elements like color, spacing, typography, line height, and opacity. The CSS rules associated with these elements can accept a broad continuum of values — in the case of color, there are over 16 million separate colors in the RGB color space. Font size, line height, spacing, and others can accept a similarly wide range of values.
 
 This degree of choice can slow down design work and make communication between designer and developer unnecessarily granular. The US Web Design System seeks to maximize design efficiency and improve communication with **style tokens**: the discrete palettes of values from which we base all our visual design.
 
@@ -26,7 +26,7 @@ Style tokens are a limited set of discrete options, just as a scale of musical n
 ![continuous and tokenized values]({{ site.baseurl }}/assets/img/style-tokens/continuous-v-token.svg)
 
 ### Example: Measure (line length)
-For example, measure (or line length) expressed with the `max-width` CSS property can accept any value in `em`, `rem`, `ch`, `px`, and beyond to at least two decimal places. USWDS limits itself to 6 measure tokens:
+For example, measure (or line length) expressed with the `max-width` CSS property can accept any value in `em`, `rem`, `ch`, `px`, and beyond to at least two decimal places. USWDS limits itself to 6 [measure]({{ site.baseurl }}/style-tokens/measure/){:.token} tokens:
 
 | token   | value
 | ---     | ---
@@ -37,7 +37,7 @@ For example, measure (or line length) expressed with the `max-width` CSS propert
 |`5`      | `77ch`
 |`'none'` | no max width
 
-Anything built using USWDS will use one of these 6 tokens when specifying measure.
+Anything built using USWDS will use one of these 6 [measure]({{ site.baseurl }}/style-tokens/measure/){:.token} tokens when specifying measure.
 
 ## Keys and values
 You can think of a style token as a **key** (expressed as a quoted string or, with only the exceptions of `1px` and `2px`, a unitless number) that unlocks a specific **value**. Often, the specific value is less important than its effect. And the mechanism by which the value is unlocked is a **function**, **mixin**, or **utility class**.
@@ -115,6 +115,14 @@ Use style tokens directly to set the value of settings variables in USWDS theme 
   <div class="grid-col-4">Utility class</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-2">
+    <a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>
+  </div>
+  <div class="grid-col-3">color(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)</div>
+  <div class="grid-col-3">u-border(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)</div>
+  <div class="grid-col-3">.border-<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a></div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
   <div class="grid-col-2">'red-warm-50'</div>
   <div class="grid-col-3">color('red-warm-50')</div>
   <div class="grid-col-3">u-border('red-warm-50')</div>
@@ -147,10 +155,18 @@ Use style tokens directly to set the value of settings variables in USWDS theme 
   <div class="grid-col-4">Utility class</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-<div class="grid-col-2">0.5<br/><span class="display-inline-block padding-top-05">'05'</span></div>
-<div class="grid-col-3">units(0.5)<br/><span class="display-inline-block padding-top-05">units('05')</span></div>
-<div class="grid-col-3">u-padding-x(0.5)<br/><span class="display-inline-block padding-top-05">u-padding-x('05')</span></div>
-<div class="grid-col-3">.u-padding-x-05</div>
+  <div class="grid-col-2">
+    <a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+  </div>
+  <div class="grid-col-3">units(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)</div>
+  <div class="grid-col-3">u-padding-x(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)</div>
+  <div class="grid-col-3">.u-padding-x-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a></div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-2">0.5<br/><span class="display-inline-block padding-top-05">'05'</span></div>
+  <div class="grid-col-3">units(0.5)<br/><span class="display-inline-block padding-top-05">units('05')</span></div>
+  <div class="grid-col-3">u-padding-x(0.5)<br/><span class="display-inline-block padding-top-05">u-padding-x('05')</span></div>
+  <div class="grid-col-3">.u-padding-x-05</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
   <div class="grid-col-2">2</div>
@@ -167,28 +183,37 @@ Use style tokens directly to set the value of settings variables in USWDS theme 
 
 ### Font size
 <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2">
-  <div class="grid-col-2">Token</div>
+  <div class="grid-col-2">Tokens</div>
   <div class="grid-col-3">Function</div>
   <div class="grid-col-3">Mixin</div>
   <div class="grid-col-4">Utility class</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">'3xs'</div>
-  <div class="grid-col-3">font-size('3xs')</div>
-  <div class="grid-col-3">u-font-size('3xs')</div>
-  <div class="grid-col-4">.font-size-3xs</div>
+  <div class="grid-col-2">
+    <a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-family" class="token">family</a>,
+    <a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-size" class="token">size</a>
+  </div>
+  <div class="grid-col-3">font-size(<a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-size" class="token">size</a>)</div>
+  <div class="grid-col-3">u-font-size(<a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-size" class="token">size</a>)</div>
+  <div class="grid-col-4">.font-size-<a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-family" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-size" class="token">size</a></div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">'micro'</div>
-  <div class="grid-col-3">font-size('micro')</div>
-  <div class="grid-col-3">u-font-size('micro')</div>
-  <div class="grid-col-4">.font-size-micro</div>
+  <div class="grid-col-2">'sans', '3xs'</div>
+  <div class="grid-col-3">font-size('sans', '3xs')</div>
+  <div class="grid-col-3">u-font-size('sans', '3xs')</div>
+  <div class="grid-col-4">.font-size-sans-3xs</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">15</div>
-  <div class="grid-col-3">font-size(15)</div>
-  <div class="grid-col-3">u-font-size(15)</div>
-  <div class="grid-col-4">.font-size-15</div>
+  <div class="grid-col-2">'ui', 'micro'</div>
+  <div class="grid-col-3">font-size('ui', 'micro')</div>
+  <div class="grid-col-3">u-font-size('ui', 'micro')</div>
+  <div class="grid-col-4">.font-size-ui-micro</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-2">'body', 15</div>
+  <div class="grid-col-3">font-size('body', 15)</div>
+  <div class="grid-col-3">u-font-size('body', 15)</div>
+  <div class="grid-col-4">.font-size-body-15</div>
 </div>
 
 ### Font family
@@ -197,6 +222,12 @@ Use style tokens directly to set the value of settings variables in USWDS theme 
   <div class="grid-col-3">Function</div>
   <div class="grid-col-3">Mixin</div>
   <div class="grid-col-4">Utility class</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-2"><a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-family" class="token">family</a></div>
+  <div class="grid-col-3">font-family(<a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-family" class="token">family</a>)</div>
+  <div class="grid-col-3">u-font-family(<a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-family" class="token">family</a>)</div>
+  <div class="grid-col-4">.font-family-<a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-family" class="token">family</a></div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
   <div class="grid-col-2">'sans'</div>
@@ -217,12 +248,18 @@ Use style tokens directly to set the value of settings variables in USWDS theme 
   <div class="grid-col-4">.font-family-15</div>
 </div>
 
-### Font (size and family together)
+### Font family and size together
 <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2">
   <div class="grid-col-2">Tokens</div>
   <div class="grid-col-3">Function</div>
   <div class="grid-col-3">Mixin</div>
   <div class="grid-col-4">Utility class</div>
+</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-2"><a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-size" class="token">size</a></div>
+  <div class="grid-col-3">—</div>
+  <div class="grid-col-3">u-font(<a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-size" class="token">size</a>)</div>
+  <div class="grid-col-4">.font-<a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-family" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-size" class="token">size</a></div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
   <div class="grid-col-2">'sans', '3xs'</div>

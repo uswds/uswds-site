@@ -876,7 +876,7 @@ h6 {
 code,
 pre {
   @include u-font('mono', '3xs');
-  background-color: color('gray-cool-5');
+  background-color: color('black-transparent-10');
 }
 
 pre {
@@ -884,6 +884,7 @@ pre {
 
   code {
     padding: 0;
+    background-color: transparent;
 
     &::before,
     &::after {

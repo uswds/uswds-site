@@ -892,6 +892,37 @@ pre {
   }
 }
 
+a.token {
+  @include u-padding-x(0.5);
+  @include u-padding-y('05');
+  @include u-font('code', '3xs');
+  @include u-text('no-underline');
+  background-color: color('primary-lighter');
+  border: units('1px') solid color('primary-lighter');
+  border-radius: radius('sm');
+  color: color('ink');
+  display: inline-block;
+  line-height: line-height('mono', 1);
+
+  &:visited {
+    color: color('ink');
+  }
+
+  &:hover,
+  &:hover:visited {
+    background-color: color('primary-vivid');
+    border-color: color('primary-vivid');
+    color: color('white');
+  }
+
+  &:active,
+  &:active:visited {
+    background-color: color('ink');
+    border-color: color('ink');
+    color: color('white');
+  }
+}
+
 code {
   @include u-padding-y(2px);
 
@@ -1509,7 +1540,7 @@ strong {
   @include u-radius('sm');
 }
 
-.token {
+.property {
   $font: 'mono';
   @include u-border(1px);
   @include u-color('red-warm-50v');

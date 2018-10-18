@@ -15,11 +15,11 @@ subnav:
 ---
 
 ## Normalization
-Typefaces vary in optical size. This means that at any fixed pixel value, an optically small typeface like Source Sans Pro will appear smaller than an optically large typeface like Merriweather. Optical size is a function of internal font metrics and typeface design choices like x-height.
+Typefaces vary in optical size. This means that at any specific pixel value, an optically small typeface like Source Sans Pro will appear smaller than an optically large typeface like Merriweather. Optical size is a function of internal font metrics and typeface design choices like x-height.
 
 {:.font-sans-md}
 ### Fonts at native size
-![continuous and tokenized values]({{ site.baseurl }}/assets/img/style-tokens/font-comparison.svg)
+![optical size of typefaces]({{ site.baseurl }}/assets/img/style-tokens/font-comparison.svg)
 
 USWDS 2.0 is designed so each size token outputs a consistent optical size regardless of the typeface. This makes our guidance more reliable and our theming more flexible.
 
@@ -27,11 +27,11 @@ USWDS 2.0 is designed so each size token outputs a consistent optical size regar
 ### Fonts at normalized size
 
 {:.padding-bottom-2}
-![continuous and tokenized values]({{ site.baseurl }}/assets/img/style-tokens/font-comparison-normalized.svg)
+![normalized typefaces]({{ site.baseurl }}/assets/img/style-tokens/font-comparison-normalized.svg)
 
-To make different typefaces appear the same size (here called the _target size_) at each step of the scale (here we see the output of size token `10`), the absolute size of each token's output varies from depending on the font family.
+To make different typefaces appear the same size (here called the _target size_) at each step of the scale (here we see the output of size token `10`), the absolute size of each token's output varies depending on the font family.
 
-Each [supported typeface](#setting-theme-typeface-families) is normalized to a target value set by the the size of common system fonts — specifically Apple's typeface San Francisco and Google's typeface Roboto.
+Each <code>supported typeface</code>(#setting-theme-typeface-families) is normalized to a target value determined by the optical size of common system fonts — specifically Apple's typeface San Francisco and Google's typeface Roboto.
 
 <div class="measure-3 bg-white radius-md border padding-x-2 padding-top-2">
   <div class="line-height-mono-1 font-mono-2 grid-row">
@@ -103,7 +103,7 @@ In USWDS, the final font size is output not in pixels but in `rem` (a proportion
 Since both the `rem` and absolute `px` values change depending on the theme settings and the typeface, our documentation displays only the `px` value of the target.
 
 ### Normalization and line height
-USWDS has six target line heights in its [line height token system](#0). These targets are unitless numbers, multipliers of the font size of the affected text. For example, if the target line height were `2` in text with a target font size of `16px`, the final line height would be the `target line height * target font size` or `2 * 16px` or `32px`.
+USWDS has six target line heights in its <code>line height token system</code>(#0). These targets are unitless numbers, multipliers of the font size of the affected text. For example, if the target line height were `2` in text with a target font size of `16px`, the final line height would be the `target line height * target font size` or `2 * 16px` or `32px`.
 
 Since we use normalization on font sizing, we must also normalize line height to hit the target line height:
 
@@ -200,7 +200,7 @@ Since we use normalization on font sizing, we must also normalize line height to
 </div>
 
 ## Typesetting with tokens
-USWDS uses functions, mixins, and utility classes to style its components with style tokens. Because we use normalized values, as described above, font size and line height functions, mixins, and utility classes differ from many others in the system by requiring two tokens: a `family` token and either `size` or a `line-height` token.
+USWDS uses **functions**, **mixins**, and **utility classes** to style its components with style tokens. Because we use normalized values, as described above, font size and line height functions, mixins, and utility classes differ from many others in the system by requiring _two_ tokens: a [family](#0){:.token} token and either a [size](#0){:.token} or a [line-height](#0){:.token} token.
 
 The individual style token sections go into this in more detail, but here's a summary:
 
@@ -212,10 +212,10 @@ The individual style token sections go into this in more detail, but here's a su
   <div class="grid-col-4">Utility class</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">[family]</div>
-  <div class="grid-col-3">family([family])</div>
-  <div class="grid-col-3">u-font-family([family])</div>
-  <div class="grid-col-4">.font-family-[family]</div>
+  <div class="grid-col-2"><a href="#0" class="token">family</a></div>
+  <div class="grid-col-3">family(<a href="#0" class="token">family</a>)</div>
+  <div class="grid-col-3">u-font-family(<a href="#0" class="token">family</a>)</div>
+  <div class="grid-col-4">.font-family-<a href="#0" class="token">family</a></div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
   <div class="grid-col-2">'body'</div>
@@ -238,10 +238,10 @@ The individual style token sections go into this in more detail, but here's a su
   <div class="grid-col-4">Utility class</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">[family], [size]</div>
-  <div class="grid-col-3">size([family], [size])</div>
-  <div class="grid-col-3">u-font-size([family], [size])</div>
-  <div class="grid-col-4">.font-size-[family]-[size]</div>
+  <div class="grid-col-2"><a href="#0" class="token">family</a>, <a href="#0" class="token">size</a></div>
+  <div class="grid-col-3">size(<a href="#0" class="token">family</a>, <a href="#0" class="token">size</a>)</div>
+  <div class="grid-col-3">u-font-size(<a href="#0" class="token">family</a>, <a href="#0" class="token">size</a>)</div>
+  <div class="grid-col-4">.font-size-<a href="#0" class="token">family</a>-<a href="#0" class="token">size</a></div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
   <div class="grid-col-2">'ui', 'micro'</div>
@@ -256,7 +256,7 @@ The individual style token sections go into this in more detail, but here's a su
   <div class="grid-col-4">.font-size-sans-6</div>
 </div>
 
-### Font size and family
+### Family and size together
 <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2">
   <div class="grid-col-2">Tokens</div>
   <div class="grid-col-3">Function</div>
@@ -264,10 +264,10 @@ The individual style token sections go into this in more detail, but here's a su
   <div class="grid-col-4">Utility class</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">[family], [size]</div>
+  <div class="grid-col-2"><a href="#0" class="token">family</a>, <a href="#0" class="token">size</a></div>
   <div class="grid-col-3">—</div>
-  <div class="grid-col-3">u-font([family], [size])</div>
-  <div class="grid-col-4">.font-[family]-[size]</div>
+  <div class="grid-col-3">u-font(<a href="#0" class="token">family</a>, <a href="#0" class="token">size</a>)</div>
+  <div class="grid-col-4">.font-<a href="#0" class="token">family</a>-<a href="#0" class="token">size</a></div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
   <div class="grid-col-2">'ui', 'micro'</div>
@@ -289,11 +289,11 @@ The individual style token sections go into this in more detail, but here's a su
   <div class="grid-col-3">Mixin</div>
   <div class="grid-col-4">Utility class</div>
 </div>
-<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">[family], <br/>[line height]</div>
-  <div class="grid-col-3">line-height([family], <br/>[line height])</div>
-  <div class="grid-col-3">u-line-height([family], <br/>[line height])</div>
-  <div class="grid-col-4">.line-height-[family]-[line height]</div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light line-height-code-6">
+  <div class="grid-col-2"><a href="#0" class="token">family</a>, <br/><a href="#0" class="token">line-height</a></div>
+  <div class="grid-col-3">line-height(<a href="#0" class="token">family</a>, <br/><a href="#0" class="token">line-height</a>)</div>
+  <div class="grid-col-3">u-line-height(<a href="#0" class="token">family</a>, <br/><a href="#0" class="token">line-height</a>)</div>
+  <div class="grid-col-4">.line-height-<a href="#0" class="token">family</a>-<a href="#0" class="token">line-height</a></div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
   <div class="grid-col-2">'ui', 1</div>
@@ -308,7 +308,7 @@ The individual style token sections go into this in more detail, but here's a su
   <div class="grid-col-4">.line-height-sans-3</div>
 </div>
 
-### Family, size, and line height
+### Family, size, and line height together
 The `typeset()` mixin outlined below accepts the tokens listed as well as a special `null` value. If either of the three properties get `null` instead of a token, the system will use a default value from `$uswds-theme-typography`: either `$theme-body-font-family`, `$theme-body-font-size`, or `$theme-body-line-height` depending on the property passed the `null` value.
 
 We use the `typeset()` mixin on all our components to get the effect of default `<body>` element styling without having to explicitly style the `<body>` element.
@@ -320,9 +320,9 @@ We use the `typeset()` mixin on all our components to get the effect of default 
   <div class="grid-col-2">Utility class</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-4">[family], [size], [line height]</div>
+  <div class="grid-col-4"><a href="#0" class="token">family</a>, <a href="#0" class="token">size</a>, <a href="#0" class="token">line-height</a></div>
   <div class="grid-col-1">—</div>
-  <div class="grid-col-5">typeset([family], [size], [line height])</div>
+  <div class="grid-col-5">typeset(<a href="#0" class="token">family</a>, <a href="#0" class="token">size</a>, <a href="#0" class="token">line-height</a>)</div>
   <div class="grid-col-2">—</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
@@ -343,3 +343,46 @@ We use the `typeset()` mixin on all our components to get the effect of default 
   <div class="grid-col-5">typeset('ui', xs)</div>
   <div class="grid-col-2">—</div>
 </div>
+<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
+  <div class="grid-col-4">'ui', null, null</div>
+  <div class="grid-col-1">—</div>
+  <div class="grid-col-5">typeset('ui')</div>
+  <div class="grid-col-2">—</div>
+</div>
+
+{:.margin-top-4}
+#### Example: Settings and typesetting
+
+```css
+// in _uswds-theme-typography:
+
+$theme-respect-user-font-size: true;
+$theme-font-sans:              'public-sans';
+$theme-font-ui:                $theme-font-sans;
+$theme-type-scale-sm:          5;
+$theme-body-font-size:         'sm';
+$theme-body-line-height:       5;
+
+// in component code:
+
+.usa-component {
+  @include typeset('ui');
+}
+
+// is the equivalent of:
+
+.usa-component {
+  font-family: family('ui');
+  font-size: size('ui', $theme-body-font-size);
+  line-height: line-height('ui', $theme-body-line-height);
+}
+
+// compiles as:
+
+.usa-component {
+  font-family: 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 1rem;
+  line-height: 1.62;
+}
+
+```

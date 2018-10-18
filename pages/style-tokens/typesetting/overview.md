@@ -200,7 +200,7 @@ Since we use normalization on font sizing, we must also normalize line height to
 </div>
 
 ## Typesetting with tokens
-USWDS uses **functions**, **mixins**, and **utility classes** to style its components with style tokens. Because we use normalized values, as described above, font size and line height functions, mixins, and utility classes differ from many others in the system by requiring _two_ tokens: a [family](#0){:.token} token and either a [size](#0){:.token} or a [line-height](#0){:.token} token.
+USWDS uses **functions**, **mixins**, and **utility classes** to style its components with style tokens. Because we use normalized values, as described above, font size and line height functions, mixins, and utility classes differ from many others in the system by requiring _two_ tokens: a [family]({{ site.baseurl }}/style-tokens/typesetting/font-family/){:.token} token and either a [size]({{ site.baseurl }}/style-tokens/typesetting/font-size/){:.token} or a [line-height]({{ site.baseurl }}/style-tokens/typesetting/line-height/){:.token} token.
 
 The individual style token sections go into this in more detail, but here's a summary:
 
@@ -212,10 +212,10 @@ The individual style token sections go into this in more detail, but here's a su
   <div class="grid-col-4">Utility class</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2"><a href="#0" class="token">family</a></div>
-  <div class="grid-col-3">family(<a href="#0" class="token">family</a>)</div>
-  <div class="grid-col-3">u-font-family(<a href="#0" class="token">family</a>)</div>
-  <div class="grid-col-4">.font-family-<a href="#0" class="token">family</a></div>
+  <div class="grid-col-2"><a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a></div>
+  <div class="grid-col-3">family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>)</div>
+  <div class="grid-col-3">u-font-family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>)</div>
+  <div class="grid-col-4">.font-family-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a></div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
   <div class="grid-col-2">'body'</div>
@@ -238,10 +238,10 @@ The individual style token sections go into this in more detail, but here's a su
   <div class="grid-col-4">Utility class</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2"><a href="#0" class="token">family</a>, <a href="#0" class="token">size</a></div>
-  <div class="grid-col-3">size(<a href="#0" class="token">family</a>, <a href="#0" class="token">size</a>)</div>
-  <div class="grid-col-3">u-font-size(<a href="#0" class="token">family</a>, <a href="#0" class="token">size</a>)</div>
-  <div class="grid-col-4">.font-size-<a href="#0" class="token">family</a>-<a href="#0" class="token">size</a></div>
+  <div class="grid-col-2"><a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a></div>
+  <div class="grid-col-3">size(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)</div>
+  <div class="grid-col-3">u-font-size(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)</div>
+  <div class="grid-col-4">.font-size-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a></div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
   <div class="grid-col-2">'ui', 'micro'</div>
@@ -264,10 +264,10 @@ The individual style token sections go into this in more detail, but here's a su
   <div class="grid-col-4">Utility class</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2"><a href="#0" class="token">family</a>, <a href="#0" class="token">size</a></div>
+  <div class="grid-col-2"><a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a></div>
   <div class="grid-col-3">—</div>
-  <div class="grid-col-3">u-font(<a href="#0" class="token">family</a>, <a href="#0" class="token">size</a>)</div>
-  <div class="grid-col-4">.font-<a href="#0" class="token">family</a>-<a href="#0" class="token">size</a></div>
+  <div class="grid-col-3">u-font(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)</div>
+  <div class="grid-col-4">.font-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a></div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
   <div class="grid-col-2">'ui', 'micro'</div>
@@ -290,10 +290,10 @@ The individual style token sections go into this in more detail, but here's a su
   <div class="grid-col-4">Utility class</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light line-height-code-6">
-  <div class="grid-col-2"><a href="#0" class="token">family</a>, <br/><a href="#0" class="token">line-height</a></div>
-  <div class="grid-col-3">line-height(<a href="#0" class="token">family</a>, <br/><a href="#0" class="token">line-height</a>)</div>
-  <div class="grid-col-3">u-line-height(<a href="#0" class="token">family</a>, <br/><a href="#0" class="token">line-height</a>)</div>
-  <div class="grid-col-4">.line-height-<a href="#0" class="token">family</a>-<a href="#0" class="token">line-height</a></div>
+  <div class="grid-col-2"><a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <br/><a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a></div>
+  <div class="grid-col-3">line-height(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <br/><a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a>)</div>
+  <div class="grid-col-3">u-line-height(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <br/><a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a>)</div>
+  <div class="grid-col-4">.line-height-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a></div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
   <div class="grid-col-2">'ui', 1</div>
@@ -320,9 +320,9 @@ We use the `typeset()` mixin on all our components to get the effect of default 
   <div class="grid-col-2">Utility class</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-4"><a href="#0" class="token">family</a>, <a href="#0" class="token">size</a>, <a href="#0" class="token">line-height</a></div>
+  <div class="grid-col-4"><a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a></div>
   <div class="grid-col-1">—</div>
-  <div class="grid-col-5">typeset(<a href="#0" class="token">family</a>, <a href="#0" class="token">size</a>, <a href="#0" class="token">line-height</a>)</div>
+  <div class="grid-col-5">typeset(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a>)</div>
   <div class="grid-col-2">—</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">

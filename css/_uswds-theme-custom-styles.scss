@@ -174,7 +174,7 @@ body {
 
   @include at-media('desktop') {
     background-color: color('white');
-    border-bottom: units(1px) solid color('gray-cool-10');
+    border-bottom: units(1px) solid color('black-transparent-10');
     clear: both;
     display: block;
     height: units($height-nav-secondary);
@@ -196,9 +196,8 @@ body {
 
   a {
     @include typeset('ui', 'xs', 1);
-    color: color('gray-cool-60');
+    color: color('base-darker');
     display: inline-block;
-    font-weight: font-weight('bold');
     height: units($height-nav-secondary);
     padding: units(2);
     position: relative;
@@ -230,6 +229,76 @@ body {
 
 // Sidebar Nav --------- //
 
+.usa-sidenav {
+  @include typeset('sans', 'xs', 3);
+  background-color: color('white');
+  border: units(1px) solid color('black-transparent-10');
+  border-radius: units(0.5);
+  padding: 0;
+
+  a {
+    @include u-padding-x(2);
+    color: color('base-darker');
+
+    &:hover {
+      background-color: transparent;
+      color: color('primary-vivid');
+    }
+  }
+
+  .usa-current {
+    color: color('base-darker');
+    position: static;
+
+    &::after {
+      border-radius: 0;
+      bottom: units(0);
+      color: color('primary-vivid');
+      left: units(-1px);
+      top: units(-1px);
+    }
+  }
+
+  .usa-sidenav-item {
+    border-top: none;
+    line-height: lh('sans', 3);
+    position: relative;
+
+    & + .usa-sidenav-item {
+      a {
+        // TODO: use 'black-transparent-5' when value changes
+        border-top: units(1px) solid rgba(0, 0, 0, .05);
+      }
+    }
+
+    &.is-current {
+      background-color: color('gray-1');
+
+      .is-current {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .usa-sidenav-sublist {
+    font-size: font-size('sans', '3xs');
+    a {
+      border-top: units(1px) solid rgba(0, 0, 0, .05);
+      padding-left: units(4);
+    }
+
+    .usa-current {
+      color: color('primary-vivid');
+    }
+
+    .usa-sidenav-sublist {
+      a {
+        padding-left: units(6);
+      }
+    }
+  }
+}
+
 .sidenav {
   display: none;
 
@@ -237,27 +306,18 @@ body {
     display: block;
     float: left;
     margin-bottom: units(6);
-    margin-top: units(6);
+    margin-top: units(5);
     padding-right: units(1);
-    padding-left: units(4);
+    padding-left: units(2);
     overflow-y: auto;
     top: units(6);
     width: units($width-nav-sidebar);
-  }
-
-  .lt-ie9 & {
-    width: 25%;
   }
 
   .usa-navigation-submenu {
     &[aria-hidden="false"] {
       display: block;
     }
-  }
-
-  .usa-sidenav-list,
-  .usa-sidenav-list > li {
-    border-color: color('gray-10');
   }
 }
 

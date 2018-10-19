@@ -5,7 +5,7 @@ layout: default
   <aside class="sidenav">
     {% assign sidenav = site.data.nav[page.category] %}
     {% if sidenav %}
-    <ul class="usa-sidenav">
+    <ul class="site-sidenav usa-sidenav">
       {% include nav/list.html links=sidenav %}
     </ul>
     {% endif %}

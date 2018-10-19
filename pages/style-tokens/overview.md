@@ -14,6 +14,8 @@ subnav:
     href: '#using-style-tokens'
 ---
 
+{{ page.collection | slugify }}
+
 ## Introducing style tokens
 
 Anything we see on a website is built from elements of style: elements like color, spacing, typography, line height, and opacity. The CSS rules associated with these elements can accept a broad continuum of values — in the case of color, there are over 16 million separate colors in the RGB color space. Font size, line height, spacing, and others can accept a similarly wide range of values.
@@ -190,12 +192,12 @@ Use style tokens directly to set the value of settings variables in USWDS theme 
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
   <div class="grid-col-2">
-    <a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-family" class="token">family</a>,
-    <a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-size" class="token">size</a>
+    <a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>,
+    <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>
   </div>
-  <div class="grid-col-3">font-size(<a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-size" class="token">size</a>)</div>
-  <div class="grid-col-3">u-font-size(<a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-size" class="token">size</a>)</div>
-  <div class="grid-col-4">.font-size-<a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-family" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-size" class="token">size</a></div>
+  <div class="grid-col-3">font-size(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)</div>
+  <div class="grid-col-3">u-font-size(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)</div>
+  <div class="grid-col-4">.font-size-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a></div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
   <div class="grid-col-2">'sans', '3xs'</div>
@@ -224,10 +226,10 @@ Use style tokens directly to set the value of settings variables in USWDS theme 
   <div class="grid-col-4">Utility class</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2"><a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-family" class="token">family</a></div>
-  <div class="grid-col-3">font-family(<a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-family" class="token">family</a>)</div>
-  <div class="grid-col-3">u-font-family(<a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-family" class="token">family</a>)</div>
-  <div class="grid-col-4">.font-family-<a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-family" class="token">family</a></div>
+  <div class="grid-col-2"><a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a></div>
+  <div class="grid-col-3">font-family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>)</div>
+  <div class="grid-col-3">u-font-family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>)</div>
+  <div class="grid-col-4">.font-family-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a></div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
   <div class="grid-col-2">'sans'</div>
@@ -256,10 +258,10 @@ Use style tokens directly to set the value of settings variables in USWDS theme 
   <div class="grid-col-4">Utility class</div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2"><a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-size" class="token">size</a></div>
+  <div class="grid-col-2"><a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a></div>
   <div class="grid-col-3">—</div>
-  <div class="grid-col-3">u-font(<a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-size" class="token">size</a>)</div>
-  <div class="grid-col-4">.font-<a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-family" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/spacing-units/typesetting/font-size" class="token">size</a></div>
+  <div class="grid-col-3">u-font(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)</div>
+  <div class="grid-col-4">.font-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a></div>
 </div>
 <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
   <div class="grid-col-2">'sans', '3xs'</div>

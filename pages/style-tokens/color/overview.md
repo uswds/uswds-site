@@ -12,11 +12,11 @@ redirect_from:
 subnav:
   - text: Introduction
     href: '#introduction'
-  - text: Color and accessibility
+  - text: Accessibility
     href: '#color-and-accessibility'
   - text: USWDS color wheels
     href: '#uswds-color-wheels'
-  - text: General color guidance
+  - text: Color guidance
     href: '#general-color-guidance'
 ---
 

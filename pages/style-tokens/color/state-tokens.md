@@ -1,15 +1,15 @@
 ---
-permalink: /style-tokens/color/theme-tokens/
+permalink: /style-tokens/color/state-tokens/
 layout: styleguide
-title: Theme color tokens
+title: State color tokens
 category: Style tokens
 lead: USWDS theme and state color tokens provide flexible, accessible, customizable color choices for your project
 type: docs
 subnav:
 - text: Theme color tokens
-  href: '#uswds-theme-color-tokens'
+  href: '#theme-color-tokens'
 - text: State color tokens
-  href: '#state-color-tokens'
+  href: '#uswds-state-color-tokens'
 - text: Setting theme and state color tokens
   href: '#setting-theme-and-state-colors'
 - text: Using color tokens
@@ -31,7 +31,6 @@ subnav:
 
 USWDS theme color tokens are designed to be useful and effective for small and large projects. Each theme token is drawn from a [system color token]({{ site.baseurl }}/style-tokens/color/system-tokens/) and system color tokens are the only colors we accept in official components.
 
-{:#uswds-theme-color-tokens}
 ## Theme color tokens
 USWDS theme color tokens are divided into five high-level role-based color families: `base`, `primary`, `secondary`, `accent-warm`, and `accent-cool`.
 
@@ -68,6 +67,7 @@ Each color family has seven possible lightness grades, from `lightest` to `darke
   {% endif %}
 {% endfor %}
 
+{:#uswds-state-color-tokens}
 ## State color tokens
 The state color palette is divided into four high-level role-based color families: `error`, `warning`, `success`, and `disabled`.
 

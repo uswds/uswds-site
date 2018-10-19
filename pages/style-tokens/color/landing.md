@@ -8,5 +8,6 @@ type: docs
 subnav:
   - href: /style-tokens/color/overview/
   - href: /style-tokens/color/theme-tokens/
+  - href: /style-tokens/color/state-tokens/
   - href: /style-tokens/color/system-tokens/
 ---

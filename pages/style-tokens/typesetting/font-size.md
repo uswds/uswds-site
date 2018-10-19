@@ -286,7 +286,7 @@ $theme-type-scale-3xl:      15;
 </div>
 
 ## Using size tokens
-Your context and coding style determine how you access USWDS font size tokens in code. Because of [font size normalization]({{ site.baseurl }}/style-tokens/typesetting), font size functions, utilities, amd mixins also require a [family]({{ site.baseurl }}/style-tokens/typesetting/font-family){:.token} token.
+Your context and coding style determine how you access USWDS font size tokens in code. Because of [font size normalization]({{ site.baseurl }}/style-tokens/typesetting/), font size functions, utilities, amd mixins also require a [family]({{ site.baseurl }}/style-tokens/typesetting/font-family/){:.token} token.
 
 
 <div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
@@ -298,7 +298,7 @@ Your context and coding style determine how you access USWDS font size tokens in
   <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
     <div class="grid-col-2 text-bold font-sans-3">function<br/>
     <span class="text-normal">Size only</span></div>
-    <div class="grid-col-5">font-size: size(<a href="{{ site.baseurl }}/style-tokens/typsetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typsetting/font-size" class="token">size</a>)</div>
+    <div class="grid-col-5">font-size: size(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)</div>
     <div class="grid-col-5">font-size: size(<code>'body'</code>, <code>'2xl'</code>);</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
@@ -306,7 +306,7 @@ Your context and coding style determine how you access USWDS font size tokens in
       mixin<br/>
       <span class="text-normal">Size only</span>
     </div>
-    <div class="grid-col-5">@include u-font-size(<a href="{{ site.baseurl }}/style-tokens/typsetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typsetting/font-size" class="token">size</a>)</div>
+    <div class="grid-col-5">@include u-font-size(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)</div>
     <div class="grid-col-5">@include u-font-size(<code>'body'</code>, <code>'2xl'</code>)</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
@@ -314,19 +314,19 @@ Your context and coding style determine how you access USWDS font size tokens in
       mixin<br/>
       <span class="text-normal">Family and size</span>
     </div>
-    <div class="grid-col-5">@include u-font(<a href="{{ site.baseurl }}/style-tokens/typsetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typsetting/font-size" class="token">size</a>)</div>
+    <div class="grid-col-5">@include u-font(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)</div>
     <div class="grid-col-5">@include u-font(<code>'body'</code>, <code>'2xl'</code>)</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
     <div class="grid-col-2 text-bold font-sans-3">setting</div>
-    <div class="grid-col-5">$theme-variable: <a href="{{ site.baseurl }}/style-tokens/typsetting/font-size" class="token">size</a></div>
+    <div class="grid-col-5">$theme-variable: <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a></div>
     <div class="grid-col-5">$theme-h1-font-size: <code>'2xl'</code>;</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-1 border-gray-10 font-mono-3">
     <div class="grid-col-2 text-bold font-sans-3">utility<br/>
       <span class="text-normal">Family and size</span>
     </div>
-    <div class="grid-col-5">.font-<a href="{{ site.baseurl }}/style-tokens/typsetting/font-family" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typsetting/font-size" class="token">size</a></div>
+    <div class="grid-col-5">.font-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a></div>
     <div class="grid-col-5">.font-<code>body</code>-<code>2xl</code>;</div>
   </div>
 </div>

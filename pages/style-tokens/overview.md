@@ -110,174 +110,184 @@ In general, USWDS sets variables with tokens, and passes those variables into fu
 Use style tokens directly to set the value of settings variables in USWDS theme settings files, like `$theme-site-max-width: 'desktop'`. Otherwise, use functions, mixins, or utility classes as in the examples below. See individual style token section for more details.
 
 ### Color
-<div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2">
-  <div class="grid-col-2">Token</div>
-  <div class="grid-col-3">Function</div>
-  <div class="grid-col-3">Mixin</div>
-  <div class="grid-col-4">Utility class</div>
-</div>
-<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">
-    <a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>
+<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
+  <div class="grid-row grid-gap font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
+    <div class="grid-col-2">Token</div>
+    <div class="grid-col-3">Function</div>
+    <div class="grid-col-3">Mixin</div>
+    <div class="grid-col-4">Utility class</div>
   </div>
-  <div class="grid-col-3">color(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)</div>
-  <div class="grid-col-3">u-border(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)</div>
-  <div class="grid-col-3">.border-<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a></div>
-</div>
-<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">'red-warm-50'</div>
-  <div class="grid-col-3">color('red-warm-50')</div>
-  <div class="grid-col-3">u-border('red-warm-50')</div>
-  <div class="grid-col-3">.border-red-warm-50</div>
-</div>
-<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">'red-warm-50v'</div>
-  <div class="grid-col-3">color('red-warm-50v')</div>
-  <div class="grid-col-3">u-border('red-warm-50v')</div>
-  <div class="grid-col-3">.border-red-warm-50v</div>
-</div>
-<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">'primary-vivid'</div>
-  <div class="grid-col-3">color('primary-vivid')</div>
-  <div class="grid-col-3">u-text('primary-vivid')</div>
-  <div class="grid-col-4">.text-primary-vivid</div>
-</div>
-<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">'white'</div>
-  <div class="grid-col-3">color('white')</div>
-  <div class="grid-col-3">u-bg('white')</div>
-  <div class="grid-col-4">.bg-white</div>
+  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
+    <div class="grid-col-2">
+      <a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>
+    </div>
+    <div class="grid-col-3">color(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)</div>
+    <div class="grid-col-3">u-border(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)</div>
+    <div class="grid-col-3">.border-<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a></div>
+  </div>
+  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
+    <div class="grid-col-2">'red-warm-50'</div>
+    <div class="grid-col-3">color('red-warm-50')</div>
+    <div class="grid-col-3">u-border('red-warm-50')</div>
+    <div class="grid-col-3">.border-red-warm-50</div>
+  </div>
+  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
+    <div class="grid-col-2">'red-warm-50v'</div>
+    <div class="grid-col-3">color('red-warm-50v')</div>
+    <div class="grid-col-3">u-border('red-warm-50v')</div>
+    <div class="grid-col-3">.border-red-warm-50v</div>
+  </div>
+  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
+    <div class="grid-col-2">'primary-vivid'</div>
+    <div class="grid-col-3">color('primary-vivid')</div>
+    <div class="grid-col-3">u-text('primary-vivid')</div>
+    <div class="grid-col-4">.text-primary-vivid</div>
+  </div>
+  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-base-light">
+    <div class="grid-col-2">'white'</div>
+    <div class="grid-col-3">color('white')</div>
+    <div class="grid-col-3">u-bg('white')</div>
+    <div class="grid-col-4">.bg-white</div>
+  </div>
 </div>
 
 ### Spacing units
-<div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2">
-  <div class="grid-col-2">Token</div>
-  <div class="grid-col-3">Function</div>
-  <div class="grid-col-3">Mixin</div>
-  <div class="grid-col-4">Utility class</div>
-</div>
-<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">
-    <a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
+  <div class="grid-row grid-gap font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
+    <div class="grid-col-2">Token</div>
+    <div class="grid-col-3">Function</div>
+    <div class="grid-col-3">Mixin</div>
+    <div class="grid-col-4">Utility class</div>
   </div>
-  <div class="grid-col-3">units(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)</div>
-  <div class="grid-col-3">u-padding-x(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)</div>
-  <div class="grid-col-3">.u-padding-x-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a></div>
-</div>
-<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">0.5<br/><span class="display-inline-block padding-top-05">'05'</span></div>
-  <div class="grid-col-3">units(0.5)<br/><span class="display-inline-block padding-top-05">units('05')</span></div>
-  <div class="grid-col-3">u-padding-x(0.5)<br/><span class="display-inline-block padding-top-05">u-padding-x('05')</span></div>
-  <div class="grid-col-3">.u-padding-x-05</div>
-</div>
-<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">2</div>
-  <div class="grid-col-3">units(2)</div>
-  <div class="grid-col-3">u-border(2)</div>
-  <div class="grid-col-3">.border-2</div>
-</div>
-<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">'card-lg'</div>
-  <div class="grid-col-3">units('card-lg')</div>
-  <div class="grid-col-3">u-width('card-lg')</div>
-  <div class="grid-col-4">.width-card-lg</div>
+  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
+    <div class="grid-col-2">
+      <a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+    </div>
+    <div class="grid-col-3">units(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)</div>
+    <div class="grid-col-3">u-padding-x(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)</div>
+    <div class="grid-col-3">.u-padding-x-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a></div>
+  </div>
+  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
+    <div class="grid-col-2">0.5<br/><span class="display-inline-block padding-top-05">'05'</span></div>
+    <div class="grid-col-3">units(0.5)<br/><span class="display-inline-block padding-top-05">units('05')</span></div>
+    <div class="grid-col-3">u-padding-x(0.5)<br/><span class="display-inline-block padding-top-05">u-padding-x('05')</span></div>
+    <div class="grid-col-3">.u-padding-x-05</div>
+  </div>
+  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
+    <div class="grid-col-2">2</div>
+    <div class="grid-col-3">units(2)</div>
+    <div class="grid-col-3">u-border(2)</div>
+    <div class="grid-col-3">.border-2</div>
+  </div>
+  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-base-light">
+    <div class="grid-col-2">'card-lg'</div>
+    <div class="grid-col-3">units('card-lg')</div>
+    <div class="grid-col-3">u-width('card-lg')</div>
+    <div class="grid-col-4">.width-card-lg</div>
+  </div>
 </div>
 
 ### Font size
-<div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2">
-  <div class="grid-col-2">Tokens</div>
-  <div class="grid-col-3">Function</div>
-  <div class="grid-col-3">Mixin</div>
-  <div class="grid-col-4">Utility class</div>
-</div>
-<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">
-    <a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>,
-    <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>
+<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
+  <div class="grid-row grid-gap font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
+    <div class="grid-col-2">Tokens</div>
+    <div class="grid-col-3">Function</div>
+    <div class="grid-col-3">Mixin</div>
+    <div class="grid-col-4">Utility class</div>
   </div>
-  <div class="grid-col-3">font-size(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)</div>
-  <div class="grid-col-3">u-font-size(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)</div>
-  <div class="grid-col-4">.font-size-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a></div>
-</div>
-<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">'sans', '3xs'</div>
-  <div class="grid-col-3">font-size('sans', '3xs')</div>
-  <div class="grid-col-3">u-font-size('sans', '3xs')</div>
-  <div class="grid-col-4">.font-size-sans-3xs</div>
-</div>
-<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">'ui', 'micro'</div>
-  <div class="grid-col-3">font-size('ui', 'micro')</div>
-  <div class="grid-col-3">u-font-size('ui', 'micro')</div>
-  <div class="grid-col-4">.font-size-ui-micro</div>
-</div>
-<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">'body', 15</div>
-  <div class="grid-col-3">font-size('body', 15)</div>
-  <div class="grid-col-3">u-font-size('body', 15)</div>
-  <div class="grid-col-4">.font-size-body-15</div>
+  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light line-height-mono-6">
+    <div class="grid-col-2">
+      <a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>,
+      <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>
+    </div>
+    <div class="grid-col-3">font-size(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)</div>
+    <div class="grid-col-3">u-font-size(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)</div>
+    <div class="grid-col-4">.font-size-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a></div>
+  </div>
+  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
+    <div class="grid-col-2">'sans', '3xs'</div>
+    <div class="grid-col-3">font-size('sans', '3xs')</div>
+    <div class="grid-col-3">u-font-size('sans', '3xs')</div>
+    <div class="grid-col-4">.font-size-sans-3xs</div>
+  </div>
+  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
+    <div class="grid-col-2">'ui', 'micro'</div>
+    <div class="grid-col-3">font-size('ui', 'micro')</div>
+    <div class="grid-col-3">u-font-size('ui', 'micro')</div>
+    <div class="grid-col-4">.font-size-ui-micro</div>
+  </div>
+  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-base-light">
+    <div class="grid-col-2">'body', 15</div>
+    <div class="grid-col-3">font-size('body', 15)</div>
+    <div class="grid-col-3">u-font-size('body', 15)</div>
+    <div class="grid-col-4">.font-size-body-15</div>
+  </div>
 </div>
 
 ### Font family
-<div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2">
-  <div class="grid-col-2">Token</div>
-  <div class="grid-col-3">Function</div>
-  <div class="grid-col-3">Mixin</div>
-  <div class="grid-col-4">Utility class</div>
-</div>
-<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2"><a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a></div>
-  <div class="grid-col-3">font-family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>)</div>
-  <div class="grid-col-3">u-font-family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>)</div>
-  <div class="grid-col-4">.font-family-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a></div>
-</div>
-<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">'sans'</div>
-  <div class="grid-col-3">font-family('sans')</div>
-  <div class="grid-col-3">u-font-family('sans')</div>
-  <div class="grid-col-4">.font-family-sans</div>
-</div>
-<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">'body'</div>
-  <div class="grid-col-3">font-family('body')</div>
-  <div class="grid-col-3">u-font-family('body')</div>
-  <div class="grid-col-4">.font-family-body</div>
-</div>
-<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">'heading'</div>
-  <div class="grid-col-3">font-family(15)</div>
-  <div class="grid-col-3">u-font-family(15)</div>
-  <div class="grid-col-4">.font-family-15</div>
+<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
+  <div class="grid-row grid-gap font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
+    <div class="grid-col-2">Token</div>
+    <div class="grid-col-3">Function</div>
+    <div class="grid-col-3">Mixin</div>
+    <div class="grid-col-4">Utility class</div>
+  </div>
+  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
+    <div class="grid-col-2"><a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a></div>
+    <div class="grid-col-3">font-family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>)</div>
+    <div class="grid-col-3">u-font-family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>)</div>
+    <div class="grid-col-4">.font-family-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a></div>
+  </div>
+  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
+    <div class="grid-col-2">'sans'</div>
+    <div class="grid-col-3">font-family('sans')</div>
+    <div class="grid-col-3">u-font-family('sans')</div>
+    <div class="grid-col-4">.font-family-sans</div>
+  </div>
+  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
+    <div class="grid-col-2">'body'</div>
+    <div class="grid-col-3">font-family('body')</div>
+    <div class="grid-col-3">u-font-family('body')</div>
+    <div class="grid-col-4">.font-family-body</div>
+  </div>
+  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-base-light">
+    <div class="grid-col-2">'heading'</div>
+    <div class="grid-col-3">font-family(15)</div>
+    <div class="grid-col-3">u-font-family(15)</div>
+    <div class="grid-col-4">.font-family-15</div>
+  </div>
 </div>
 
 ### Font family and size together
-<div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2">
-  <div class="grid-col-2">Tokens</div>
-  <div class="grid-col-3">Function</div>
-  <div class="grid-col-3">Mixin</div>
-  <div class="grid-col-4">Utility class</div>
-</div>
-<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2"><a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a></div>
-  <div class="grid-col-3">—</div>
-  <div class="grid-col-3">u-font(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)</div>
-  <div class="grid-col-4">.font-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a></div>
-</div>
-<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">'sans', '3xs'</div>
-  <div class="grid-col-3">—</div>
-  <div class="grid-col-3">u-font('sans', '3xs')</div>
-  <div class="grid-col-4">.font-sans-3xs</div>
-</div>
-<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">'body', 'micro'</div>
-  <div class="grid-col-3">—</div>
-  <div class="grid-col-3">u-font('body', 'micro')</div>
-  <div class="grid-col-4">.font-body-micro</div>
-</div>
-<div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-  <div class="grid-col-2">'heading', 15</div>
-  <div class="grid-col-3">—</div>
-  <div class="grid-col-3">u-font('heading', 15)</div>
-  <div class="grid-col-4">.font-heading-15</div>
+<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
+  <div class="grid-row grid-gap font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
+    <div class="grid-col-2">Tokens</div>
+    <div class="grid-col-3">Function</div>
+    <div class="grid-col-3">Mixin</div>
+    <div class="grid-col-4">Utility class</div>
+  </div>
+  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light line-height-mono-6">
+    <div class="grid-col-2"><a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a></div>
+    <div class="grid-col-3">—</div>
+    <div class="grid-col-3">u-font(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)</div>
+    <div class="grid-col-4">.font-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a></div>
+  </div>
+  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
+    <div class="grid-col-2">'sans', '3xs'</div>
+    <div class="grid-col-3">—</div>
+    <div class="grid-col-3">u-font('sans', '3xs')</div>
+    <div class="grid-col-4">.font-sans-3xs</div>
+  </div>
+  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
+    <div class="grid-col-2">'body', 'micro'</div>
+    <div class="grid-col-3">—</div>
+    <div class="grid-col-3">u-font('body', 'micro')</div>
+    <div class="grid-col-4">.font-body-micro</div>
+  </div>
+  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-base-light">
+    <div class="grid-col-2">'heading', 15</div>
+    <div class="grid-col-3">—</div>
+    <div class="grid-col-3">u-font('heading', 15)</div>
+    <div class="grid-col-4">.font-heading-15</div>
+  </div>
 </div>

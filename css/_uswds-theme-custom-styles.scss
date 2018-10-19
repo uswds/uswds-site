@@ -262,7 +262,7 @@ body {
 
 // Sidebar Nav --------- //
 
-.site-sidenav {
+.site-sidenav.usa-sidenav {
   @include typeset('sans', 'xs', 3);
   background-color: color('white');
   border: units(1px) solid color('black-transparent-10');
@@ -287,8 +287,9 @@ body {
       border-radius: 0;
       bottom: units(0);
       background-color: color($site-primary-vivid);
+      bottom: units(-1px);
       left: units(-1px);
-      top: units(-1px);
+      top: units(0);
     }
   }
 
@@ -339,11 +340,10 @@ body {
     display: block;
     float: left;
     margin-bottom: units(6);
-    margin-top: units(5);
-    padding-right: units(1);
-    padding-left: units(2);
+    margin-top: units(4);
+    padding-right: 0;
+    padding-left: units(4);
     overflow-y: auto;
-    top: units(6);
     width: units($width-nav-sidebar);
   }
 
@@ -407,7 +407,7 @@ body {
     margin-top: units(3);
 
     & + p {
-      margin-top: units(1);
+      margin-top: units(1.5);
     }
   }
 
@@ -2021,8 +2021,12 @@ h6 + div:not(.usa-accordion-content) {
   @include clearfix;
 }
 
-.usa-font-lead {
+.site-font-lead {
   @include typeset('sans', 'lg', 4);
+
+  & + p {
+    margin-top: units(4);
+  }
 }
 
 .site-header {

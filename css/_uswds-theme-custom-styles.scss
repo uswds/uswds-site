@@ -381,11 +381,39 @@ body {
   header {
     > h1 {
       margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    & + p {
+      margin-top: units(1.5);
     }
   }
 
   > h2 {
+    @include typeset('sans', 'xl', 3);
     color: color('primary-dark');
+    margin-top: units(3);
+
+    & + p {
+      margin-top: units(1);
+    }
+  }
+
+  > h3 {
+    @include typeset('sans', 'md', 3);
+
+    & + p {
+      margin-top: units(1);
+    }
+  }
+
+  > h4 {
+    @include typeset('sans', 'sm', 3);
+    @include u-text('uppercase', 'primary-dark', 'normal', 'ls-2');
+
+    & + p {
+      margin-top: units(1);
+    }
   }
 }
 
@@ -1979,4 +2007,8 @@ h6 + div:not(.usa-accordion-content) {
 
 .default-container {
   @include clearfix;
+}
+
+.usa-font-lead {
+  @include typeset('sans', 'lg', 4);
 }

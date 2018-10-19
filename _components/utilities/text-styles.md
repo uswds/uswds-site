@@ -194,15 +194,15 @@ utilities:
 <div class="utilities-properties">
   <h3 class="utilities-property-title">CSS properties</h3>
   <div class="margin-top-1">
-    <span class="token utilities-property">font-feature-settings</span>
-    <span class="token utilities-property">font-style</span>
-    <span class="token utilities-property">font-weight</span>
-    <span class="token utilities-property">letter-spacing</span>
-    <span class="token utilities-property">text-decoration</span>
-    <span class="token utilities-property">text-decoration-color</span>
-    <span class="token utilities-property">text-transform</span>
-    <span class="token utilities-property">vertical-align</span>
-    <span class="token utilities-property">white-space</span>
+    <span class="property utilities-property">font-feature-settings</span>
+    <span class="property utilities-property">font-style</span>
+    <span class="property utilities-property">font-weight</span>
+    <span class="property utilities-property">letter-spacing</span>
+    <span class="property utilities-property">text-decoration</span>
+    <span class="property utilities-property">text-decoration-color</span>
+    <span class="property utilities-property">text-transform</span>
+    <span class="property utilities-property">vertical-align</span>
+    <span class="property utilities-property">white-space</span>
   </div>
 </div>
 

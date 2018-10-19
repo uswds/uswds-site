@@ -172,12 +172,12 @@ utilities:
 <div class="utilities-properties">
   <h3 class="utilities-property-title">CSS properties</h3>
   <div class="margin-top-1">
-    <span class="token utilities-property">height</span>
-    <span class="token utilities-property">max-height</span>
-    <span class="token utilities-property">max-width</span>
-    <span class="token utilities-property">min-height</span>
-    <span class="token utilities-property">min-width</span>
-    <span class="token utilities-property">width</span>
+    <span class="property utilities-property">height</span>
+    <span class="property utilities-property">max-height</span>
+    <span class="property utilities-property">max-width</span>
+    <span class="property utilities-property">min-height</span>
+    <span class="property utilities-property">min-width</span>
+    <span class="property utilities-property">width</span>
   </div>
 </div>
 

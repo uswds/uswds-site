@@ -45,8 +45,8 @@ utilities:
 <div class="utilities-properties">
   <h3 class="utilities-property-title">CSS properties</h3>
   <div class="margin-top-1">
-    <span class="token utilities-property">background-color</span>
-    <span class="token utilities-property">color</span>
+    <span class="property utilities-property">background-color</span>
+    <span class="property utilities-property">color</span>
   </div>
 </div>
 

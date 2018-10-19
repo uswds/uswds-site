@@ -93,8 +93,8 @@ utilities:
 <div class="utilities-properties">
   <h3 class="utilities-property-title">CSS properties</h3>
   <div class="margin-top-1">
-    <span class="token utilities-property">margin</span>
-    <span class="token utilities-property">padding</span>
+    <span class="property utilities-property">margin</span>
+    <span class="property utilities-property">padding</span>
   </div>
 </div>
 

@@ -1776,10 +1776,6 @@ li {
 }
 
 .utilities-properties {
-  @include u-bg('white');
-  @include u-border(1px, 'gray-10');
-  @include u-padding(2);
-  @include u-radius('md');
 }
 
 .utilities-property {
@@ -1829,7 +1825,7 @@ li {
 
 .utility {
   @include u-bg('white');
-  @include u-border(1px, 'gray-10');
+  @include u-border(1px, 'base-darker');
   @include u-margin-y(2);
   @include u-padding-bottom(1);
   @include u-padding-top(2);

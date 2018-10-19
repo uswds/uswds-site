@@ -158,12 +158,33 @@ body {
     color: color('white');
   }
 
-  em {
-    @include u-font('heading', 'xs');
+  .usa-logo-text {
+    $logo-size-mobile: 3;
+    $logo-size-desktop: 3;
+    @include u-font('sans', 'xs');
     line-height: units(5);
 
+    &::before {
+      @include u-square($logo-size-mobile);
+      content: '';
+      background-image: url('../img/uswds-logo/4c-lg-white.png');
+      background-image: url('../img/uswds-logo/4c-lg-white.svg');
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      display: inline-block;
+      margin-left: units(-2px);
+      margin-right: units(0.5);
+      position: relative;
+      top: units(-1px);
+      vertical-align: middle;
+
+      @include at-media('desktop') {
+        @include u-square($logo-size-desktop);
+      }
+    }
+
     @include at-media('desktop') {
-      font-size: font-size('heading', 'lg');
+      font-size: font-size('sans', 'lg');
       line-height: units(10);
     }
   }
@@ -284,7 +305,7 @@ body {
     font-size: font-size('sans', '3xs');
     a {
       border-top: units(1px) solid rgba(0, 0, 0, .05);
-      padding-left: units(4);
+      padding-left: units(2);
     }
 
     .usa-current {
@@ -293,7 +314,7 @@ body {
 
     .usa-sidenav-sublist {
       a {
-        padding-left: units(6);
+        padding-left: units(4);
       }
     }
   }

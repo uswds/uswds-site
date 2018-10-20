@@ -2018,7 +2018,7 @@ h6 + div:not(.usa-accordion-content) {
 }
 
 .site-font-lead {
-  @include typeset('sans', 'lg', 4);
+  @include typeset('sans', 'lg', 5);
 
   & + p {
     margin-top: units(4);
@@ -2038,4 +2038,23 @@ h6 + div:not(.usa-accordion-content) {
       background-color: transparent;
     }
   }
+}
+
+.site-docs-card-link {
+  border-top: units('05') solid color('base-lighter');
+  padding-top: units('105');
+
+  &:hover {
+    @include u-border-color('blue-warm-50v');
+
+    a {
+      color: black;
+      text-decoration-color: color('base-lighter');
+    }
+  }
+}
+
+.block-link::before {
+  @include u-pin('all');
+  content: '';
 }

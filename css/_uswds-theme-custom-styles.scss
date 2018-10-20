@@ -264,13 +264,13 @@ body {
 
 .site-sidenav.usa-sidenav {
   @include typeset('sans', 'xs', 3);
-  background-color: color('white');
-  border: units(1px) solid color('black-transparent-10');
-  border-radius: units(0.5);
+  border: 0;
   padding: 0;
 
   a {
     @include u-padding-x(2);
+    // TODO: use 'black-transparent-5' when value changes
+    border-left: units(0.5) solid rgba(0, 0, 0, .05);
     color: color('base-darker');
 
     &:hover {
@@ -288,8 +288,9 @@ body {
       bottom: units(0);
       background-color: color($site-primary-vivid);
       bottom: units(-1px);
-      left: units(-1px);
+      left: 0;
       top: units(0);
+      z-index: z(100);
     }
   }
 
@@ -306,7 +307,7 @@ body {
     }
 
     &.is-current {
-      background-color: color('gray-1');
+      background-color: rgba(0, 0, 0, .025);
 
       .is-current {
         background-color: transparent;
@@ -2019,6 +2020,7 @@ h6 + div:not(.usa-accordion-content) {
 
 .site-font-lead {
   @include typeset('sans', 'lg', 5);
+  @include u-measure(3);
 
   & + p {
     margin-top: units(4);

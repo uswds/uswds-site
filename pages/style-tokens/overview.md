@@ -28,7 +28,7 @@ Style tokens are a limited set of discrete options, just as a scale of musical n
 ![continuous and tokenized values]({{ site.baseurl }}/assets/img/style-tokens/continuous-v-token.svg)
 
 ### Example: Measure (line length)
-For example, measure (or line length) expressed with the `max-width` CSS property can accept any value in `em`, `rem`, `ch`, `px`, and beyond to at least two decimal places. USWDS limits itself to 6 [measure]({{ site.baseurl }}/style-tokens/typesetting/measure/){:.token} tokens:
+For example, measure (or line length) expressed with the `max-width` CSS property can accept any value in units like `em`, `rem`, `ch`, `px` to at least two decimal places. USWDS limits itself to 6 [measure]({{ site.baseurl }}/style-tokens/typesetting/measure/){:.token} tokens:
 
 | token   | value
 | ---     | ---
@@ -42,7 +42,7 @@ For example, measure (or line length) expressed with the `max-width` CSS propert
 Anything built using USWDS will use one of these 6 [measure]({{ site.baseurl }}/style-tokens/typesetting/measure/){:.token} tokens when specifying measure.
 
 ## Keys and values
-You can think of a style token as a **key** (expressed as a quoted string or, with only the exceptions of `1px` and `2px`, a unitless number) that unlocks a specific **value**. Often, the specific value is less important than its effect. And the mechanism by which the value is unlocked is a **function**, **mixin**, or **utility class**.
+You can think of a style token as a **key** that unlocks a specific **value**. Often, the specific value is less important than its effect. Each token is a quoted string or, with only the exceptions of `1px` and `2px`, a unitless number — and the mechanism by which the final display value is unlocked is a **function**, **mixin**, or **utility class**.
 
 We can't include tokens directly in our Sass, like `max-width: 1`, rather we use a helper function like `max-width: measure(1)` or a mixin like `@include u-measure(1)`. All USWDS style tokens have helper mixins and functions to use them in component Sass.
 

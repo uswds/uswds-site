@@ -134,7 +134,7 @@ body {
 }
 
 .site-header-navbar {
-  background-color: color('blue-warm-80');
+  background-color: color('white');
   border-bottom: none !important; // scss-lint:disable ImportantRule
 
   @include at-media('desktop') {
@@ -186,7 +186,7 @@ body {
   }
 
   a {
-    color: color('white');
+    color: color($site-ink);
   }
 
   .usa-logo-text {
@@ -198,8 +198,8 @@ body {
     &::before {
       @include u-square($logo-size-mobile);
       content: '';
-      background-image: url('../img/uswds-logo/4c-lg-on-black.png');
-      background-image: url('../img/uswds-logo/4c-lg-on-black.svg');
+      background-image: url('../img/uswds-logo/4c-lg-on-white.png');
+      background-image: url('../img/uswds-logo/4c-lg-on-white.svg');
       background-repeat: no-repeat;
       background-size: 100% auto;
       display: inline-block;
@@ -2157,19 +2157,36 @@ h6 + div:not(.usa-accordion-content) {
   }
 }
 
-.usa-button.site-button-outline-inverse {
-  @include inner-border($site-border-width, 'white-transparent-70');
-  background-color: color('transparent');
-  color: color('white-transparent-70');
-
-  &:visited {
-    color: color('white-transparent-70');
+.site-header-dark {
+  .site-header-navbar {
+    background-color: color('blue-warm-80');
   }
+  .site-logo {
+    a {
+      color: color('white');
+    }
 
-  &:hover {
-    @include inner-border($site-border-width, 'white');
-    background-color: transparent;
-    color: color('white');
+    .usa-logo-text {
+      &::before {
+        background-image: url('../img/uswds-logo/4c-lg-on-black.png');
+        background-image: url('../img/uswds-logo/4c-lg-on-black.svg');
+      }
+    }
+  }
+  .usa-button.site-button-outline-secondary {
+    @include inner-border($site-border-width, 'white-transparent-70');
+    background-color: color('transparent');
+    color: color('white-transparent-70');
+
+    &:visited {
+      color: color('white-transparent-70');
+    }
+
+    &:hover {
+      @include inner-border($site-border-width, 'white');
+      background-color: transparent;
+      color: color('white');
+    }
   }
 }
 

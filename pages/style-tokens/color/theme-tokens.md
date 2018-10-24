@@ -61,7 +61,7 @@ Customize theme color tokens in your project's theme settings with [system color
 
 Theme families tend to include colors from the same system family, but this is not a hard-and-fast rule. For instance, the USWDS default theme palette uses colors from both the `blue-warm` and `blue` system color families for colors in the `primary` theme family.
 
-Set any unused theme or state color to `false`.
+Set any unused theme color to `false`.
 
 ```sass
 // Base colors
@@ -118,7 +118,7 @@ $theme-color-accent-cool-darker:    'blue-60';
 $theme-color-accent-cool-darkest:   false;
 ```
 
-## Using size tokens
+## Using color tokens
 Your context and coding style determine how you access USWDS color tokens in code.
 
 <div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
@@ -141,7 +141,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
       @include u-bg(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
     </div>
     <div class="grid-col-5">
-      @include u-bg(<code>'red-50v'</code>)<br/>
+      @include u-bg(<code>'secondary-vivid'</code>)<br/>
     </div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3 line-height-mono-6">
@@ -153,7 +153,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
       @include u-text(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
     </div>
     <div class="grid-col-5">
-      @include u-text(<code>'red-50v'</code>)<br/>
+      @include u-text(<code>'secondary-vivid'</code>)<br/>
     </div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3 line-height-mono-6">
@@ -165,7 +165,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
       @include u-border(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
     </div>
     <div class="grid-col-5">
-      @include u-border(<code>'red-50v'</code>)<br/>
+      @include u-border(<code>'secondary-vivid'</code>)<br/>
     </div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3 line-height-mono-6">
@@ -177,7 +177,19 @@ Your context and coding style determine how you access USWDS color tokens in cod
       @include u-outline(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
     </div>
     <div class="grid-col-5">
-      @include u-outline(<code>'red-50v'</code>)<br/>
+      @include u-outline(<code>'secondary-vivid'</code>)<br/>
+    </div>
+  </div>
+  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3 line-height-mono-6">
+    <div class="grid-col-2 text-bold font-sans-3 line-height-mono-2">
+      mixin<br/>
+      <span class="text-normal">text-decoration-color</span>
+    </div>
+    <div class="grid-col-5">
+      @include u-underline(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
+    </div>
+    <div class="grid-col-5">
+      @include u-underline(<code>'secondary-vivid'</code>)<br/>
     </div>
   </div>
 
@@ -186,11 +198,39 @@ Your context and coding style determine how you access USWDS color tokens in cod
     <div class="grid-col-5">$theme-variable: <a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a></div>
     <div class="grid-col-5">$theme-color-accent-warm: <code>'orange-40'</code>;</div>
   </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 border-gray-10 font-mono-3">
+  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
     <div class="grid-col-2 text-bold font-sans-3">utility<br/>
-      <span class="text-normal">Family and size</span>
+      <span class="text-normal">background-color</span>
     </div>
-    <div class="grid-col-5">.font-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a></div>
-    <div class="grid-col-5">.font-<code>body</code>-<code>2xl</code>;</div>
+    <div class="grid-col-5">.bg-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a></div>
+    <div class="grid-col-5">.bg-<code>accent-warm</code></div>
+  </div>
+  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
+    <div class="grid-col-2 text-bold font-sans-3">utility<br/>
+      <span class="text-normal">border-color</span>
+    </div>
+    <div class="grid-col-5">.border-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a></div>
+    <div class="grid-col-5">.border-<code>accent-warm</code></div>
+  </div>
+  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
+    <div class="grid-col-2 text-bold font-sans-3">utility<br/>
+      <span class="text-normal">color</span>
+    </div>
+    <div class="grid-col-5">.text-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a></div>
+    <div class="grid-col-5">.text-<code>accent-warm</code></div>
+  </div>
+  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
+    <div class="grid-col-2 text-bold font-sans-3">utility<br/>
+      <span class="text-normal">outline-color</span>
+    </div>
+    <div class="grid-col-5">.text-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a></div>
+    <div class="grid-col-5">.text-<code>accent-warm</code></div>
+  </div>
+  <div class="grid-row grid-gap flex-align-center padding-bottom-1 border-gray-10 font-mono-3">
+    <div class="grid-col-2 text-bold font-sans-3 line-height-mono-2">utility<br/>
+      <span class="text-normal">text-decoration-color</span>
+    </div>
+    <div class="grid-col-5">.underline-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a></div>
+    <div class="grid-col-5">.underline-<code>accent-warm</code></div>
   </div>
 </div>

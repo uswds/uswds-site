@@ -109,7 +109,7 @@ body {
 }
 
 .site-banner {
-  background-color: color('gray-80');
+  background-color: color('gray-90');
 
   .usa-banner-inner {
     max-width: 100%;
@@ -134,7 +134,7 @@ body {
 }
 
 .site-header-navbar {
-  background-color: color('white');
+  background-color: color('blue-warm-80');
   border-bottom: none !important; // scss-lint:disable ImportantRule
 
   @include at-media('desktop') {
@@ -186,7 +186,7 @@ body {
   }
 
   a {
-    color: color($site-ink);
+    color: color('white');
   }
 
   .usa-logo-text {
@@ -198,8 +198,8 @@ body {
     &::before {
       @include u-square($logo-size-mobile);
       content: '';
-      background-image: url('../img/uswds-logo/4c-lg-on-white.png');
-      background-image: url('../img/uswds-logo/4c-lg-on-white.svg');
+      background-image: url('../img/uswds-logo/4c-lg-on-black.png');
+      background-image: url('../img/uswds-logo/4c-lg-on-black.svg');
       background-repeat: no-repeat;
       background-size: 100% auto;
       display: inline-block;
@@ -250,6 +250,7 @@ body {
     @include typeset('ui', 'xs', 1);
     color: color('base-darker');
     display: inline-block;
+    font-weight: fw('bold');
     height: units($height-nav-secondary);
     padding: units(2);
     position: relative;
@@ -2153,6 +2154,22 @@ h6 + div:not(.usa-accordion-content) {
     @include inner-border($site-border-width, 'blue-warm-60v');
     background-color: transparent;
     color: color('blue-warm-60v');
+  }
+}
+
+.usa-button.site-button-outline-inverse {
+  @include inner-border($site-border-width, 'white-transparent-70');
+  background-color: color('transparent');
+  color: color('white-transparent-70');
+
+  &:visited {
+    color: color('white-transparent-70');
+  }
+
+  &:hover {
+    @include inner-border($site-border-width, 'white');
+    background-color: transparent;
+    color: color('white');
   }
 }
 

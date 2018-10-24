@@ -438,7 +438,7 @@ body {
   > h2 {
     @include typeset('sans', 'xl', 3);
     color: color($site-ink);
-    margin-top: units(3);
+    margin-top: units(4);
 
     & + p {
       margin-top: units(1.5);
@@ -2065,7 +2065,7 @@ h6 + div:not(.usa-accordion-content) {
   .usa-button {
     background-color: color($site-primary-vivid);
     &:hover {
-      background-color: color($site-primary-dark);
+      background-color: color('blue-warm-60v');
     }
   }
   .usa-button-outline-inverse {
@@ -2134,6 +2134,12 @@ h6 + div:not(.usa-accordion-content) {
   }
 }
 
+.usa-button {
+  &:hover {
+    background-color: color('blue-warm-60v');
+  }
+}
+
 .usa-button.site-button-outline-secondary {
   @include inner-border($site-border-width, 'secondary');
   background-color: color('transparent');
@@ -2144,9 +2150,9 @@ h6 + div:not(.usa-accordion-content) {
   }
 
   &:hover {
-    @include inner-border($site-border-width, $site-ink);
+    @include inner-border($site-border-width, 'blue-warm-60v');
     background-color: transparent;
-    color: color($site-ink);
+    color: color('blue-warm-60v');
   }
 }
 

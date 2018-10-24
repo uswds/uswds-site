@@ -23,7 +23,7 @@ subnav:
 ## Introduction
 USWDS organizes its colors tokens into [project tokens]({{ site.baseurl }}/style-tokens/color/theme-tokens/) and [system tokens]({{ site.baseurl }}/style-tokens/color/system-tokens/). System tokens are the complete set of colors available to the design system. Project tokens are a smaller, role-based subset customized to your project's individual identity, tone, and needs. It will use only a few color families from the broader set of 23 color families available in the system token set.
 
-{:.measure-5 .margin-top-5}
+{:.margin-top-3.bg-white.padding-2.radius-md.padding-bottom-0}
 ![System tokens]({{ site.baseurl }}/assets/img/style-tokens/color-system-overview.png)
 
 {:.font-sans-2xs}

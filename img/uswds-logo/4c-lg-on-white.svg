@@ -1,9 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="466" height="443" viewBox="0 0 466 443">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="466" height="443" viewBox="0 0 466 443">
+  <defs>
+    <polygon id="4c-lg-on-white-a" points="165.142 265.083 2 265.072 83.56 14"/>
+    <polygon id="4c-lg-on-white-c" points="264.453 0 214.029 155.154 .448 0"/>
+    <polygon id="4c-lg-on-white-e" points="11.948 111.884 143.939 16 225.532 267.062"/>
+    <polygon id="4c-lg-on-white-g" points="81.582 .5 213.56 96.402 0 251.583"/>
+    <polygon id="4c-lg-on-white-i" points="95.403 229.178 45 74.017 308.987 74"/>
+  </defs>
   <g fill="none" fill-rule="evenodd">
-    <polygon fill="#0BA900" points="465.142 265.083 302 265.072 383.56 14"/>
-    <polygon fill="#3F57A6" points="364.453 0 314.029 155.154 100.448 0"/>
-    <polygon fill="#EE601D" points="6.948 286.884 138.939 191 220.532 442.062"/>
-    <polygon fill="#FBC036" points="81.582 13.5 213.56 109.402 0 264.583"/>
-    <polygon fill="#2E2E2E" points="244.403 442.178 194 287.017 457.987 287"/>
+    <g transform="translate(300)">
+      <mask id="4c-lg-on-white-b" fill="#fff">
+        <use xlink:href="#4c-lg-on-white-a"/>
+      </mask>
+      <g fill="#81AEFC" mask="url(#4c-lg-on-white-b)">
+        <polygon points="0 0 166 0 166 274 0 274"/>
+      </g>
+    </g>
+    <g transform="translate(100)">
+      <mask id="4c-lg-on-white-d" fill="#fff">
+        <use xlink:href="#4c-lg-on-white-c"/>
+      </mask>
+      <g fill="#3F57A6" mask="url(#4c-lg-on-white-d)">
+        <polygon points="0 0 294 0 294 155 0 155" transform="translate(-11)"/>
+      </g>
+    </g>
+    <g transform="translate(-5 175)">
+      <mask id="4c-lg-on-white-f" fill="#fff">
+        <use xlink:href="#4c-lg-on-white-e"/>
+      </mask>
+      <g fill="#EE601D" mask="url(#4c-lg-on-white-f)">
+        <polygon points="0 0 238 0 238 276 0 276"/>
+      </g>
+    </g>
+    <g transform="translate(0 13)">
+      <mask id="4c-lg-on-white-h" fill="#fff">
+        <use xlink:href="#4c-lg-on-white-g"/>
+      </mask>
+      <g fill="#F6BD9C" mask="url(#4c-lg-on-white-h)">
+        <polygon points="0 0 226 0 226 287 0 287" transform="translate(-5 -13)"/>
+      </g>
+    </g>
+    <g transform="translate(149 213)">
+      <mask id="4c-lg-on-white-j" fill="#fff">
+        <use xlink:href="#4c-lg-on-white-i"/>
+      </mask>
+      <g fill="#2E2E2E" mask="url(#4c-lg-on-white-j)">
+        <polygon points="0 0 351 0 351 252 0 252"/>
+      </g>
+    </g>
   </g>
 </svg>

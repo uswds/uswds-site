@@ -2122,7 +2122,7 @@ h6 + div:not(.usa-accordion-content) {
 .usa-button.site-button-version {
   @include no-knockout-font-smoothing;
   color: color($site-ink);
-  background-color: color('gold-20v');
+  background-color: color($site-background-color);
 
   &:visited {
     color: color($site-ink);

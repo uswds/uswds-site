@@ -12,7 +12,7 @@ subnav:
   href: '#system-tokens'
 - text: Customizing tokens
   href: '#customizing-tokens'
-- text: Using tokens
+- text: Using weight tokens
   href: '#using-font-weight-tokens'
 ---
 
@@ -71,7 +71,7 @@ Font weight theme tokens use common names. Most projects will use only 2-4 of th
 </div>
 
 ## System tokens
-System weight theme tokens use numbers from `100`-`900` in increments of 100, with `100` as the lightest and `900` the heaviest, the same numerical system of grades used by most common typefaces.
+Font weight system tokens use numbers from `100`-`900` in increments of 100, with `100` as the lightest and `900` the heaviest, the same numerical system of grades used by most common typefaces.
 
 <div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px font-mono-3">
   <div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px text-bold">
@@ -130,7 +130,7 @@ $theme-font-weight-bold:          700;
 $theme-font-weight-heavy:         false;
 ```
 
-## Using family tokens
+## Using weight tokens
 Your context and coding style determine how you access USWDS font weight tokens in code.
 
 <div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">

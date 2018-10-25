@@ -31,24 +31,24 @@ Type based tokens set the font family value based on the _type_ of the requested
     <div class="grid-col-fill text-700 font-sans-1">Settings variable</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>'mono'</code></div>
-    <div class="grid-col-4 text-300 font-sans-3">project monospace typeface</div>
-    <div class="grid-col-fill text-300 font-mono-3">$theme-font-mono</div>
+    <div class="grid-col-2 font-sans-3"><code>'mono'</code></div>
+    <div class="grid-col-4 font-sans-3">project monospace typeface</div>
+    <div class="grid-col-fill font-mono-3">$theme-font-mono</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>'sans'</code></div>
-    <div class="grid-col-4 text-300 font-sans-3">project sans-serif typeface</div>
-    <div class="grid-col-fill text-300 font-mono-3">$theme-font-sans</div>
+    <div class="grid-col-2 font-sans-3"><code>'sans'</code></div>
+    <div class="grid-col-4 font-sans-3">project sans-serif typeface</div>
+    <div class="grid-col-fill font-mono-3">$theme-font-sans</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>'serif'</code></div>
-    <div class="grid-col-4 text-300 font-sans-3">project serif typeface</div>
-    <div class="grid-col-fill text-300 font-mono-3">$theme-font-serif</div>
+    <div class="grid-col-2 font-sans-3"><code>'serif'</code></div>
+    <div class="grid-col-4 font-sans-3">project serif typeface</div>
+    <div class="grid-col-fill font-mono-3">$theme-font-serif</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2">
-    <div class="grid-col-2 text-300 font-sans-3"><code>'cond'</code></div>
-    <div class="grid-col-4 text-300 font-sans-3">project condensed typeface</div>
-    <div class="grid-col-fill text-300 font-mono-3">$theme-font-cond</div>
+    <div class="grid-col-2 font-sans-3"><code>'cond'</code></div>
+    <div class="grid-col-4 font-sans-3">project condensed typeface</div>
+    <div class="grid-col-fill font-mono-3">$theme-font-cond</div>
   </div>
 </div>
 
@@ -65,35 +65,35 @@ Role-based tokens set the font family value based on the _role_ the face plays i
     <div class="grid-col-fill text-700 font-sans-1">Settings variable</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>'heading'</code></div>
-    <div class="grid-col-4 text-300 font-sans-3">project heading typeface</div>
-    <div class="grid-col-fill text-300 font-mono-3">$theme-font-heading</div>
+    <div class="grid-col-2 font-sans-3"><code>'heading'</code></div>
+    <div class="grid-col-4 font-sans-3">project heading typeface</div>
+    <div class="grid-col-fill font-mono-3">$theme-font-heading</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>'body'</code></div>
-    <div class="grid-col-4 text-300 font-sans-3">project body typeface</div>
-    <div class="grid-col-fill text-300 font-mono-3">$theme-font-body</div>
+    <div class="grid-col-2 font-sans-3"><code>'body'</code></div>
+    <div class="grid-col-4 font-sans-3">project body typeface</div>
+    <div class="grid-col-fill font-mono-3">$theme-font-body</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>'ui'</code></div>
-    <div class="grid-col-4 text-300 font-sans-3">project interface typeface</div>
-    <div class="grid-col-fill text-300 font-mono-3">$theme-font-ui</div>
+    <div class="grid-col-2 font-sans-3"><code>'ui'</code></div>
+    <div class="grid-col-4 font-sans-3">project interface typeface</div>
+    <div class="grid-col-fill font-mono-3">$theme-font-ui</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>'code'</code></div>
-    <div class="grid-col-4 text-300 font-sans-3">project code typeface</div>
-    <div class="grid-col-fill text-300 font-mono-3">$theme-font-code</div>
+    <div class="grid-col-2 font-sans-3"><code>'code'</code></div>
+    <div class="grid-col-4 font-sans-3">project code typeface</div>
+    <div class="grid-col-fill font-mono-3">$theme-font-code</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2">
-    <div class="grid-col-2 text-300 font-sans-3"><code>'alt'</code></div>
-    <div class="grid-col-4 text-300 font-sans-3">alternate project typeface</div>
-    <div class="grid-col-fill text-300 font-mono-3">$theme-font-alt</div>
+    <div class="grid-col-2 font-sans-3"><code>'alt'</code></div>
+    <div class="grid-col-4 font-sans-3">alternate project typeface</div>
+    <div class="grid-col-fill font-mono-3">$theme-font-alt</div>
   </div>
 </div>
 
 {:.margin-top-6}
 ## Available fonts
-The following fonts have normalization metadata in the design system, and are available to settings variables:
+The following fonts have normalization metadata in the design system, and are available to settings variables as tokens:
 
 <div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
   <div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px text-bold">
@@ -101,36 +101,36 @@ The following fonts have normalization metadata in the design system, and are av
     <div class="grid-col-fill text-700 font-sans-1">Font stack</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10 margin-top-2">
-    <div class="grid-col-3 text-300 font-sans-3"><code>'system'</code></div>
-    <div class="grid-col-fill text-300 font-mono-3">-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'</div>
+    <div class="grid-col-3 font-sans-3"><code>'system'</code></div>
+    <div class="grid-col-fill font-mono-3">-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10 margin-top-2">
-    <div class="grid-col-3 text-300 font-sans-3"><code>'public-sans'</code></div>
-    <div class="grid-col-fill text-300 font-mono-3">'Public Sans Web', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'</div>
+    <div class="grid-col-3 font-sans-3"><code>'public-sans'</code></div>
+    <div class="grid-col-fill font-mono-3">'Public Sans Web', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10 margin-top-2">
-    <div class="grid-col-3 text-300 font-sans-3"><code>'source-sans-pro'</code></div>
-    <div class="grid-col-fill text-300 font-mono-3">'Source Sans Pro','Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif</div>
+    <div class="grid-col-3 font-sans-3"><code>'source-sans-pro'</code></div>
+    <div class="grid-col-fill font-mono-3">'Source Sans Pro','Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10 margin-top-2">
-    <div class="grid-col-3 text-300 font-sans-3"><code>'helvetica'</code></div>
-    <div class="grid-col-fill text-300 font-mono-3">'Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif</div>
+    <div class="grid-col-3 font-sans-3"><code>'helvetica'</code></div>
+    <div class="grid-col-fill font-mono-3">'Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10 margin-top-2">
-    <div class="grid-col-3 text-300 font-sans-3"><code>'georgia'</code></div>
-    <div class="grid-col-fill text-300 font-mono-3">'Georgia', 'Cambria', 'Times New Roman', 'Times', serif</div>
+    <div class="grid-col-3 font-sans-3"><code>'georgia'</code></div>
+    <div class="grid-col-fill font-mono-3">'Georgia', 'Cambria', 'Times New Roman', 'Times', serif</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10 margin-top-2">
-    <div class="grid-col-3 text-300 font-sans-3"><code>'merriweather'</code></div>
-    <div class="grid-col-fill text-300 font-mono-3">'Merriweather Web', 'Georgia', 'Cambria', 'Times New Roman', 'Times', serif</div>
+    <div class="grid-col-3 font-sans-3"><code>'merriweather'</code></div>
+    <div class="grid-col-fill font-mono-3">'Merriweather Web', 'Georgia', 'Cambria', 'Times New Roman', 'Times', serif</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10 margin-top-2">
-    <div class="grid-col-3 text-300 font-sans-3"><code>'roboto-mono'</code></div>
-    <div class="grid-col-fill text-300 font-mono-3">'Roboto Mono Web', 'Bitstream Vera Sans Mono', 'Consolas', 'Courier', monospace</div>
+    <div class="grid-col-3 font-sans-3"><code>'roboto-mono'</code></div>
+    <div class="grid-col-fill font-mono-3">'Roboto Mono Web', 'Bitstream Vera Sans Mono', 'Consolas', 'Courier', monospace</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-top-2">
-    <div class="grid-col-3 text-300 font-sans-3"><code>'tahoma'</code></div>
-    <div class="grid-col-fill text-300 font-mono-3">'Tahoma', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'</div>
+    <div class="grid-col-3 font-sans-3"><code>'tahoma'</code></div>
+    <div class="grid-col-fill font-mono-3">'Tahoma', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'</div>
   </div>
 </div>
 

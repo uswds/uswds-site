@@ -30,81 +30,81 @@ The following chart shows the USWDS default settings for the nine theme size tok
   </div>
 
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>'3xs'</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">1</div>
-    <div class="grid-col-2 text-300 font-sans-3">12px</div>
+    <div class="grid-col-2 font-sans-3"><code>'3xs'</code></div>
+    <div class="grid-col-2 font-sans-3">1</div>
+    <div class="grid-col-2 font-sans-3">12px</div>
     <div class="grid-col-6">
       <span class="font-sans-3xs">Tallahassee</span>
     </div>
   </div>
 
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>'2xs'</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">3</div>
-    <div class="grid-col-2 text-300 font-sans-3">14px</div>
+    <div class="grid-col-2 font-sans-3"><code>'2xs'</code></div>
+    <div class="grid-col-2 font-sans-3">3</div>
+    <div class="grid-col-2 font-sans-3">14px</div>
     <div class="grid-col-6">
       <span class="font-sans-2xs">Tallahassee</span>
     </div>
   </div>
 
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>'xs'</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">5</div>
-    <div class="grid-col-2 text-300 font-sans-3">16px</div>
+    <div class="grid-col-2 font-sans-3"><code>'xs'</code></div>
+    <div class="grid-col-2 font-sans-3">5</div>
+    <div class="grid-col-2 font-sans-3">16px</div>
     <div class="grid-col-6">
       <span class="font-sans-xs">Tallahassee</span>
     </div>
   </div>
 
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>'sm'</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">6</div>
-    <div class="grid-col-2 text-300 font-sans-3">17px</div>
+    <div class="grid-col-2 font-sans-3"><code>'sm'</code></div>
+    <div class="grid-col-2 font-sans-3">6</div>
+    <div class="grid-col-2 font-sans-3">17px</div>
     <div class="grid-col-6">
       <span class="font-sans-sm">Tallahassee</span>
     </div>
   </div>
 
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>'md'</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">7</div>
-    <div class="grid-col-2 text-300 font-sans-3">18px</div>
+    <div class="grid-col-2 font-sans-3"><code>'md'</code></div>
+    <div class="grid-col-2 font-sans-3">7</div>
+    <div class="grid-col-2 font-sans-3">18px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-md">Tallahassee</span>
     </div>
   </div>
 
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>'lg'</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">10</div>
-    <div class="grid-col-2 text-300 font-sans-3">24px</div>
+    <div class="grid-col-2 font-sans-3"><code>'lg'</code></div>
+    <div class="grid-col-2 font-sans-3">10</div>
+    <div class="grid-col-2 font-sans-3">24px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-lg">Tallahassee</span>
     </div>
   </div>
 
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>'xl'</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">12</div>
-    <div class="grid-col-2 text-300 font-sans-3">32px</div>
+    <div class="grid-col-2 font-sans-3"><code>'xl'</code></div>
+    <div class="grid-col-2 font-sans-3">12</div>
+    <div class="grid-col-2 font-sans-3">32px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-xl">Tallahassee</span>
     </div>
   </div>
 
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>'2xl'</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">14</div>
-    <div class="grid-col-2 text-300 font-sans-3">40px</div>
+    <div class="grid-col-2 font-sans-3"><code>'2xl'</code></div>
+    <div class="grid-col-2 font-sans-3">14</div>
+    <div class="grid-col-2 font-sans-3">40px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-2xl">Tallahassee</span>
     </div>
   </div>
 
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>'3xl'</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">16</div>
-    <div class="grid-col-2 text-300 font-sans-3">56px</div>
+    <div class="grid-col-2 font-sans-3"><code>'3xl'</code></div>
+    <div class="grid-col-2 font-sans-3">16</div>
+    <div class="grid-col-2 font-sans-3">56px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-3xl">Tallahassee</span>
     </div>
@@ -137,148 +137,148 @@ $theme-type-scale-3xl:      15;
     <div class="grid-col-fill text-700 font-sans-1">Example</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>'micro'</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">10px</div>
+    <div class="grid-col-2 font-sans-3"><code>'micro'</code></div>
+    <div class="grid-col-2 font-sans-3">10px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-micro">Tallahassee</span>
     </div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>1</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">12px</div>
+    <div class="grid-col-2 font-sans-3"><code>1</code></div>
+    <div class="grid-col-2 font-sans-3">12px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-1">Tallahassee</span>
     </div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>2</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">13px</div>
+    <div class="grid-col-2 font-sans-3"><code>2</code></div>
+    <div class="grid-col-2 font-sans-3">13px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-2">Tallahassee</span>
     </div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>3</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">14px</div>
+    <div class="grid-col-2 font-sans-3"><code>3</code></div>
+    <div class="grid-col-2 font-sans-3">14px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-3">Tallahassee</span>
     </div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>4</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">15px</div>
+    <div class="grid-col-2 font-sans-3"><code>4</code></div>
+    <div class="grid-col-2 font-sans-3">15px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-4">Tallahassee</span>
     </div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>5</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">16px</div>
+    <div class="grid-col-2 font-sans-3"><code>5</code></div>
+    <div class="grid-col-2 font-sans-3">16px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-5">Tallahassee</span>
     </div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>6</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">17px</div>
+    <div class="grid-col-2 font-sans-3"><code>6</code></div>
+    <div class="grid-col-2 font-sans-3">17px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-6">Tallahassee</span>
     </div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>7</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">18px</div>
+    <div class="grid-col-2 font-sans-3"><code>7</code></div>
+    <div class="grid-col-2 font-sans-3">18px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-7">Tallahassee</span>
     </div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>8</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">20px</div>
+    <div class="grid-col-2 font-sans-3"><code>8</code></div>
+    <div class="grid-col-2 font-sans-3">20px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-8">Tallahassee</span>
     </div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>9</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">22px</div>
+    <div class="grid-col-2 font-sans-3"><code>9</code></div>
+    <div class="grid-col-2 font-sans-3">22px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-9">Tallahassee</span>
     </div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>10</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">24px</div>
+    <div class="grid-col-2 font-sans-3"><code>10</code></div>
+    <div class="grid-col-2 font-sans-3">24px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-10">Tallahassee</span>
     </div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>11</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">28px</div>
+    <div class="grid-col-2 font-sans-3"><code>11</code></div>
+    <div class="grid-col-2 font-sans-3">28px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-11">Tallahassee</span>
     </div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>12</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">32px</div>
+    <div class="grid-col-2 font-sans-3"><code>12</code></div>
+    <div class="grid-col-2 font-sans-3">32px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-12">Tallahassee</span>
     </div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>13</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">36px</div>
+    <div class="grid-col-2 font-sans-3"><code>13</code></div>
+    <div class="grid-col-2 font-sans-3">36px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-13">Tallahassee</span>
     </div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>14</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">40px</div>
+    <div class="grid-col-2 font-sans-3"><code>14</code></div>
+    <div class="grid-col-2 font-sans-3">40px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-14">Tallahassee</span>
     </div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>15</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">48px</div>
+    <div class="grid-col-2 font-sans-3"><code>15</code></div>
+    <div class="grid-col-2 font-sans-3">48px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-15">Tallahassee</span>
     </div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>16</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">56px</div>
+    <div class="grid-col-2 font-sans-3"><code>16</code></div>
+    <div class="grid-col-2 font-sans-3">56px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-16">Tallahassee</span>
     </div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>17</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">64px</div>
+    <div class="grid-col-2 font-sans-3"><code>17</code></div>
+    <div class="grid-col-2 font-sans-3">64px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-17">Tallahassee</span>
     </div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>18</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">80px</div>
+    <div class="grid-col-2 font-sans-3"><code>18</code></div>
+    <div class="grid-col-2 font-sans-3">80px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-18">Tallahassee</span>
     </div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>19</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">120px</div>
+    <div class="grid-col-2 font-sans-3"><code>19</code></div>
+    <div class="grid-col-2 font-sans-3">120px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-19">Utica</span>
     </div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-gray-10">
-    <div class="grid-col-2 text-300 font-sans-3"><code>20</code></div>
-    <div class="grid-col-2 text-300 font-sans-3">140px</div>
+    <div class="grid-col-2 font-sans-3"><code>20</code></div>
+    <div class="grid-col-2 font-sans-3">140px</div>
     <div class="grid-col-fill line-height-sans-1">
       <span class="font-sans-20">Utica</span>
     </div>

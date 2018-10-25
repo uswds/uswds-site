@@ -693,7 +693,10 @@ $font-style-manual-values: ();
 
 // .font-weight
 
-$font-weight-palettes: ('palette-standard-font-weight');
+$font-weight-palettes: (
+  'palette-standard-font-weight',
+  'palette-font-weights-numeric',
+);
 $font-weight-manual-values: ();
 
 // .height

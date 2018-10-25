@@ -8,7 +8,7 @@ lead: "We designed the U.S. Web Design System to help the federal government des
 principles:
 
   - title: Put user needs first.
-    desc: If we don’t know what our users need, we won’t build the right thing. Research, analyze data, and talk to the people who use what we build. Even if what people ask for isn’t always what they need, we are not the arbiter of needs, experience is. Validate assumptions. Listen, and try to understand.
+    desc: If we don’t know what our users need, we won’t build the right thing. Research, analyze data, and talk to the people who use what we build. Test with them. Continuously validate assumptions, even those of our users. Listen, and try to understand.
 
   - title: Make it easy to do the right thing.
     desc: The U.S. Web Design System should be the easiest way for teams around the federal government to build with contemporary best practices and comply with federal policy. We should cultivate the curiosity, research, and open communication necessary to understand what is best and easiest for those who use the system and for those who use what we build with it.
@@ -30,8 +30,8 @@ principles:
 
 {% for principle in page.principles %}
   {% cycle '<div class="grid-row grid-gap margin-top-0">', '' %}
-  <div class="tablet:grid-col-6 margin-top-4">
-    <h2>
+  <div class="tablet:grid-col-6">
+    <h2 class="site-h2 font-sans-lg border-top-05 padding-top-1">
       {% if principle.href %}<a href="{{ principle.href | relative_url }}">{% endif %}
       {{ principle.title }}
       {% if principle.href %}</a>{% endif %}

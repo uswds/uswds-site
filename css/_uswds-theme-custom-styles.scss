@@ -424,6 +424,16 @@ body {
   }
 }
 
+.site-h2 {
+  @include typeset('sans', 'xl', 3);
+  color: color($site-ink);
+  margin-top: units(4);
+
+  & + p {
+    margin-top: units(1.5);
+  }
+}
+
 // Styleguide Content -------- //
 
 .styleguide-content {
@@ -444,13 +454,7 @@ body {
   }
 
   > h2 {
-    @include typeset('sans', 'xl', 3);
-    color: color($site-ink);
-    margin-top: units(4);
-
-    & + p {
-      margin-top: units(1.5);
-    }
+    @extend .site-h2;
   }
 
   > h3 {

@@ -10,7 +10,7 @@ lead: The U.S. Web Design System provides design guidelines and code to help you
   <div class="tablet:grid-col display-flex flex-align-stretch">
     <div class="site-docs-card-link">
       <h3 class="font-sans-md margin-0">
-        <a href="{{ site.baseurl }}/getting-started/developers/" class="text-no-underline text-blue-warm-50v hover:text-underline block-link">USWDS for developers</a>
+        <a href="{{ site.baseurl }}/getting-started/developers/" class="text-no-underline text-blue-warm-50v hover:text-underline block-link">Developers</a>
       </h3>
       <p class="margin-top-1">Get started with our code base by downloading the code as a zip file, or installing with npm.</p>
     </div>
@@ -18,7 +18,7 @@ lead: The U.S. Web Design System provides design guidelines and code to help you
   <div class="margin-top-2 tablet:margin-top-0 tablet:grid-col display-flex flex-align-stretch">
     <div class="site-docs-card-link">
       <h3 class="font-sans-md margin-0">
-        <a href="{{ site.baseurl }}/getting-started/designers/" class="text-no-underline text-blue-warm-50v hover:text-underline block-link">USWDS for designers</a>
+        <a href="{{ site.baseurl }}/getting-started/designers/" class="text-no-underline text-blue-warm-50v hover:text-underline block-link">Designers</a>
       </h3>
       <p class="margin-top-1">Create wireframes and prototypes in Sketch. (<em>Note: USWDS 2.0 design assets are not yet available.</em>)</p>
     </div>

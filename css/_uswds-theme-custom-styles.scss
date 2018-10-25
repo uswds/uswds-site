@@ -248,9 +248,9 @@ body {
 
   a {
     @include typeset('ui', 'xs', 1);
-    color: color('base-darker');
+    color: color('gray-50');
     display: inline-block;
-    font-weight: fw('bold');
+    font-weight: fw('normal');
     height: units($height-nav-secondary);
     padding: units(2);
     position: relative;
@@ -265,6 +265,7 @@ body {
         2,
         0
       );
+      color: color($site-primary-vivid);
     }
   }
 
@@ -277,6 +278,12 @@ body {
       2,
       0
     );
+    color: color($site-ink);
+    font-weight: fw('bold');
+
+    &:hover {
+      color: color($site-ink);
+    }
   }
 }
 
@@ -455,11 +462,28 @@ body {
   }
 
   > h4 {
-    @include typeset('sans', 'sm', 3);
-    @include u-text('uppercase', $site-primary-dark, 'normal', 'ls-2');
+    @include typeset('sans', '2xs', 3);
+    @include u-text('uppercase', $site-ink, 'normal', 'ls-2');
+    margin-top: units(3);
 
-    & + p {
+    & + p,
+    & + ol,
+    & + ul {
       margin-top: units(1);
+    }
+  }
+
+  > h5 {
+    @include typeset('sans', '2xs', 3);
+    @include u-text($site-ink, 'bold');
+    margin-top: units(2);
+
+    & + p,
+    & + ol,
+    & + ul {
+      border-top: units(1px) solid color('base-lighter');
+      padding-top: units(1);
+      margin-top: units(0.5);
     }
   }
 }
@@ -517,9 +541,9 @@ body {
 
 .site-subheading {
   @include typeset-h6;
-  color: color('gray-cool-60');
+  color: color('black-transparent-60');
   display: block;
-  letter-spacing: letter-spacing('ls-1');
+  letter-spacing: letter-spacing(1);
   margin-bottom: units(1);
   margin-top: 0;
 }
@@ -1032,7 +1056,7 @@ h6 {
 code,
 pre {
   @include u-font('mono', '3xs');
-  background-color: color($site-base-transparent-light);
+  background-color: color('gray-5');
 }
 
 pre {
@@ -1087,16 +1111,6 @@ code {
   &::after {
     letter-spacing: letter-spacing('ls-neg-3');
     content: '\00a0';
-  }
-
-  a & {
-    @include u-border(1px, 'blue-50v');
-    @include u-bg('transparent');
-
-    &:hover {
-      @include u-bg('blue-50v');
-      @include u-text('white');
-    }
   }
 }
 

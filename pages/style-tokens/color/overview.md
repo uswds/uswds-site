@@ -36,6 +36,7 @@ USWDS organizes its colors tokens into [project tokens]({{ site.baseurl }}/style
 <div class="bg-base-lighter measure-3 padding-3 usa-section" markdown="1">
 {:.font-sans-xs}
 
+{:.font-sans-xs.color-ink.text-bold.text-ls-2}
 ### COLOR, COLOR FAMILY, AND GRADE
 
 Throughout our documentation and guidance, we’ll use use the terms color, color family, and grade, but what do we mean when we use them?
@@ -60,8 +61,7 @@ Accessibility is not a special case. In Q2 of 2018, [sites using USWDS topped 1.
 USWDS helps teams choose accessible colors with a color grade system. Let’s look at the `gray` color family, in grades 5-90 (grade 0 is `white`):
 
 {% capture gray-grade %}
-<div class="padding-2 border measure-5">
-  <span><strong>Gray</strong></span>
+<div class="padding-2 bg-white radius-md measure-3">
   <div class="grid-row font-mono-2 text-400">
     <div class="grid-col-fill">
       <div class="bg-gray-5 height-4"></div>
@@ -122,13 +122,13 @@ Use USWDS magic numbers to choose accessible color combinations from any palette
 
 #### Accessible color combination examples
 
-{:.measure-5}
+{:.measure-3}
 ![gray color contrast example]({{ site.baseurl }}/assets/img/style-tokens/gray-example.png)
 
 {:.font-sans-2xs}
 **Above:** Since `90 – 50 = 40`, on a background of `gray-90` use grades of `40` and below to assure Section 508 AA contrast. Grades of `50` and below are acceptable for large text.
 
-{:.measure-5 .margin-top-5}
+{:.measure-3 .margin-top-5}
 ![indigo color contrast example]({{ site.baseurl }}/assets/img/style-tokens/indigo-warm-example.png)
 
 {:.font-sans-2xs}
@@ -150,11 +150,17 @@ The following color wheels are a way to visualize the entire [USWDS system palet
 
 The vivid palette is incomplete. We’ve added vivid variants as we’ve found a project need. This number will continue to grow and we [welcome new suggetions](https://github.com/uswds/uswds/issues) in our Github repo for vivid variants where none currently exist.
 
+{:.bg-white.padding-2.radius-md}
 ![standard color wheel]({{ site.baseurl }}/assets/img/style-tokens/uswds-standard-color-wheel.webp)
 
----
+{:.font-sans-2xs}
+**Above:** USWDS standard system color tokens wheel
 
+{:.bg-white.padding-2.radius-md.margin-top-4}
 ![vivid color wheel]({{ site.baseurl }}/assets/img/style-tokens/uswds-vivid-color-wheel.webp)
+
+{:.font-sans-2xs}
+**Above:** USWDS vivid system color tokens wheel
 
 ## General color guidance
 

@@ -3,47 +3,90 @@ permalink: /style-tokens/typesetting/font-family/
 layout: styleguide
 title: Font family
 category: Style tokens
-lead: USWDS typescale includes a nine-step regularized theme scale drawn from a 21-step system scale
+lead: USWDS font family tokens allow designers and developers to set font family either by the type of font or the role the font plays in the design.
 type: docs
 subnav:
-- text: Theme font size
-  href: '#theme-typescale'
-- text: System font size
-  href: '#system-typescale'
-- text: Setting theme typefaces
-  href: '#setting-theme-typeface-families'
-- text: Type-based family tokens
-  href: '#type-based family-tokens'
-- text: Role-based family tokens
-  href: '#role-based family-tokens'
-- text: Using type scale
+- text: Available font families
+  href: '#available-font-families'
+- text: Type-based tokens
+  href: '#type-based-tokens'
+- text: Role-based tokens
+  href: '#role-based-tokens'
+- text: Customizing family tokens
+  href: '#customizing-family-tokens'
+- text: Using family tokens
   href: '#using-typescale-in-utilities-settings-and-component-sass'
-- text: Settings
-  href: '#settings'
-- text: Utilities
-  href: '#utilities'
-- text: Variables
-  href: '#variables'
-- text: Functions
-  href: '#functions'
-- text: Utility mixins
-  href: '#utility-mixins'
 ---
 
-The USWDS typescale is designed to display type at a consistent size regardless of the typeface. Project themes use a nine-step scale drawn from a 21-step system scale. These typescale values are the only values we use to build official components. Any components we accept back into the system need to be built with this typescale.
+{:.bg-gold-20v.padding-2.radius-md}
+Please see the [Typesetting]({{ site.baseurl }}/style-tokens/typesetting){:.text-ink.text-bold} section for more about font size normalization and how USWDS uses `size` and `family` tokens for typesetting.
 
-Font size is output in `rem`. If you have `$theme-respect-user-font-size` set to `true` in your theme settings, the root font size is set to `100%` and typescale is calculated based on `16px`. If `$theme-respect-user-font-size` set to `false`, the root font size is set to the value of `$theme-root-font-size` and typescale is calculated based on that root.
+## Type-based tokens
+Type based tokens set the font family value based on the _type_ of the requested font: **monospaced**, **sans-serif**, **serif**, and **condensed** families.
 
-To make different typefaces appear the same size at each step of the scale, the absolute size of each step in the typescale varies from typeface to typeface. Each [supported typeface](#setting-theme-typeface-families) is regularized to a target value set by the the size of common system fonts — specifically Apple's typeface San Francisco and  Google's typeface Roboto. Optically smaller faces like Source Sans Pro will have a relatively larger rem value at each step in the scale, and optically larger faces like Merriweather will have a relatively smaller rem value. The USWDS typeface Public Sans is developed to be optically similar to system fonts.
+<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
+  <div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px text-bold">
+    <div class="grid-col-2 text-700 font-sans-1">Token</div>
+    <div class="grid-col-4 text-700 font-sans-1">Description</div>
+    <div class="grid-col-fill text-700 font-sans-1">Settings variable</div>
+  </div>
+  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+    <div class="grid-col-2 text-300 font-sans-3"><code>'mono'</code></div>
+    <div class="grid-col-4 text-300 font-sans-3">project monospace typeface</div>
+    <div class="grid-col-fill text-300 font-mono-3">$theme-font-mono</div>
+  </div>
+  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+    <div class="grid-col-2 text-300 font-sans-3"><code>'sans'</code></div>
+    <div class="grid-col-4 text-300 font-sans-3">project sans-serif typeface</div>
+    <div class="grid-col-fill text-300 font-mono-3">$theme-font-sans</div>
+  </div>
+  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+    <div class="grid-col-2 text-300 font-sans-3"><code>'serif'</code></div>
+    <div class="grid-col-4 text-300 font-sans-3">project serif typeface</div>
+    <div class="grid-col-fill text-300 font-mono-3">$theme-font-serif</div>
+  </div>
+  <div class="grid-row grid-gap flex-align-center padding-bottom-2">
+    <div class="grid-col-2 text-300 font-sans-3"><code>'cond'</code></div>
+    <div class="grid-col-4 text-300 font-sans-3">project condensed typeface</div>
+    <div class="grid-col-fill text-300 font-mono-3">$theme-font-cond</div>
+  </div>
+</div>
 
-Since both the `rem` and absolute `px` values change depending on the theme settings and the typeface, the following table displays only the `px` value of the target.
+{:.bg-gold-20v.padding-2.radius-md}
+**Note:** The `icon` family type is coming in a later release of the USWDS 2.0 Beta — sometime in November 2018.
 
+## Role-based tokens
+Role-based tokens set the font family value based on the _role_ the face plays in the project: **heading**, **body**, **ui**, **code**, and **alternate**.
+
+<div class="grid-row flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-2 text-bold">
+  <div class="grid-col-2 text-700 font-sans-1">token</div>
+  <div class="grid-col-4 text-700 font-sans-1">description</div>
+  <div class="grid-col-fill text-700 font-sans-1">settings variable</div>
+</div>
+<div class="grid-row flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>'heading'</code></div>
+  <div class="grid-col-4 text-300 font-sans-3">project heading typeface</div>
+  <div class="grid-col-fill text-300 font-mono-3">$theme-font-heading</div>
+</div>
+<div class="grid-row flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>'body'</code></div>
+  <div class="grid-col-4 text-300 font-sans-3">project body typeface</div>
+  <div class="grid-col-fill text-300 font-mono-3">$theme-font-body</div>
+</div>
+<div class="grid-row flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>'code'</code></div>
+  <div class="grid-col-4 text-300 font-sans-3">project code typeface</div>
+  <div class="grid-col-fill text-300 font-mono-3">$theme-font-code</div>
+</div>
+<div class="grid-row flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
+  <div class="grid-col-2 text-300 font-sans-3"><code>'alt'</code></div>
+  <div class="grid-col-4 text-300 font-sans-3">alternate project typeface</div>
+  <div class="grid-col-fill text-300 font-mono-3">$theme-font-alt</div>
+</div>
 
 {:.margin-top-6}
-## Setting theme typeface families
-Since typescale is tied to the specific typeface, any technique that directly outputs a specific size must use both a typescale token and a type family token. Type family tokens are set with variables in your project's theme settings.
-
-The following typefaces have been regularized and are available in settings to the type-based settings variables:
+## Available font families
+The following typefaces have normalization metadata in the design system, and are available to settings variables:
 
 <div class="grid-row flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-2 text-bold">
   <div class="grid-col-3 text-700 font-sans-1">token</div>
@@ -80,72 +123,6 @@ The following typefaces have been regularized and are available in settings to t
 <div class="grid-row flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10 margin-top-2">
   <div class="grid-col-3 text-300 font-sans-3"><code>'tahoma'</code></div>
   <div class="grid-col-fill text-300 font-mono-3">'Tahoma', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'</div>
-</div>
-
-### Type-based family tokens
-Each project can choose a family from the available typefaces for monospaced, sans-serif, serif, and condensed families. The value of any of these families can be set to `false` if that family isn't used in your project.
-
-<div class="grid-row flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-2 text-bold">
-  <div class="grid-col-2 text-700 font-sans-1">token</div>
-  <div class="grid-col-4 text-700 font-sans-1">description</div>
-  <div class="grid-col-fill text-700 font-sans-1">settings variable</div>
-</div>
-<div class="grid-row flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 font-sans-3"><code>'mono'</code></div>
-  <div class="grid-col-4 text-300 font-sans-3">project monospace typeface</div>
-  <div class="grid-col-fill text-300 font-mono-3">$theme-font-mono</div>
-</div>
-<div class="grid-row flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 font-sans-3"><code>'sans'</code></div>
-  <div class="grid-col-4 text-300 font-sans-3">project sans-serif typeface</div>
-  <div class="grid-col-fill text-300 font-mono-3">$theme-font-sans</div>
-</div>
-<div class="grid-row flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 font-sans-3"><code>'serif'</code></div>
-  <div class="grid-col-4 text-300 font-sans-3">project serif typeface</div>
-  <div class="grid-col-fill text-300 font-mono-3">$theme-font-serif</div>
-</div>
-<div class="grid-row flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 font-sans-3"><code>'cond'</code></div>
-  <div class="grid-col-4 text-300 font-sans-3">project condensed typeface</div>
-  <div class="grid-col-fill text-300 font-mono-3">$theme-font-cond</div>
-</div>
-
-{:.maxw-mobile-lg}
-```
-$theme-font-mono:   'roboto-mono';
-$theme-font-sans:   'source-sans-pro';
-$theme-font-serif:  'merriweather';
-$theme-font-cond:   false;
-```
-
-### Role-based family tokens
-Next, set role-based tokens with the type-based theme variables.
-
-<div class="grid-row flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-2 text-bold">
-  <div class="grid-col-2 text-700 font-sans-1">token</div>
-  <div class="grid-col-4 text-700 font-sans-1">description</div>
-  <div class="grid-col-fill text-700 font-sans-1">settings variable</div>
-</div>
-<div class="grid-row flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 font-sans-3"><code>'heading'</code></div>
-  <div class="grid-col-4 text-300 font-sans-3">project heading typeface</div>
-  <div class="grid-col-fill text-300 font-mono-3">$theme-font-heading</div>
-</div>
-<div class="grid-row flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 font-sans-3"><code>'body'</code></div>
-  <div class="grid-col-4 text-300 font-sans-3">project body typeface</div>
-  <div class="grid-col-fill text-300 font-mono-3">$theme-font-body</div>
-</div>
-<div class="grid-row flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 font-sans-3"><code>'code'</code></div>
-  <div class="grid-col-4 text-300 font-sans-3">project code typeface</div>
-  <div class="grid-col-fill text-300 font-mono-3">$theme-font-code</div>
-</div>
-<div class="grid-row flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-  <div class="grid-col-2 text-300 font-sans-3"><code>'alt'</code></div>
-  <div class="grid-col-4 text-300 font-sans-3">alternate project typeface</div>
-  <div class="grid-col-fill text-300 font-mono-3">$theme-font-alt</div>
 </div>
 
 {:.maxw-mobile-lg}
@@ -232,4 +209,12 @@ _Use `u-font()` instead of using both `u-font-family()` and `u-font-size()` on a
 
 @include u-font-family('body')
 @include u-font-size('body', 'sm')
+```
+
+{:.maxw-mobile-lg}
+```
+$theme-font-mono:   'roboto-mono';
+$theme-font-sans:   'source-sans-pro';
+$theme-font-serif:  'merriweather';
+$theme-font-cond:   false;
 ```

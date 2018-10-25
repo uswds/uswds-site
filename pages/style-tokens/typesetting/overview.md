@@ -19,6 +19,8 @@ Typefaces vary in optical size. This means that at any specific pixel value, an 
 
 {:.font-sans-md}
 ### Fonts at native size
+
+{:.padding-top-2}
 ![optical size of typefaces]({{ site.baseurl }}/assets/img/style-tokens/font-comparison.svg)
 
 USWDS 2.0 is designed so each size token outputs a consistent optical size regardless of the typeface. This makes our guidance more reliable and our theming more flexible.
@@ -26,7 +28,7 @@ USWDS 2.0 is designed so each size token outputs a consistent optical size regar
 {:.font-sans-md}
 ### Fonts with normalization applied
 
-{:.padding-bottom-2}
+{:.padding-y-2}
 ![normalized typefaces]({{ site.baseurl }}/assets/img/style-tokens/font-comparison-normalized.svg)
 
 To make different typefaces appear the same size (here called the _target size_) at each step of the scale (here we see the output of [size]({{ site.baseurl }}/style-tokens/typesetting/font-size/){:.token} token `10`), the absolute size of each token's output varies depending on the font family.

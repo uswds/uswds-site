@@ -8,6 +8,8 @@ type: docs
 subnav:
 - text: Theme color tokens
   href: '#uswds-theme-color-tokens'
+- text: Customizing theme color tokens
+  href: '#customizing-theme-color-tokens'
 - text: Using color tokens
   href: '#using-color-tokens-in-utilities-settings-and-component-sass'
 ---

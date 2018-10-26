@@ -8,7 +8,7 @@ type: docs
 subnav:
 - text: Line height tokens
   href: '#line-height-tokens'
-- text: Using line-height tokens
+- text: Using line height tokens
   href: '#using-line-height-tokens'
 ---
 

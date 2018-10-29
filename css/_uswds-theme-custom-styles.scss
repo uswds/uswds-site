@@ -256,6 +256,10 @@ body {
     position: relative;
     text-decoration: none;
 
+    .page-home & {
+      color: color('ink');
+    }
+
     &:hover {
       @include add-bar(
         0.5,
@@ -2213,4 +2217,8 @@ h6 + div:not(.usa-accordion-content) {
   @include typeset('sans', '2xl', 2);
   font-weight: fw('light');
   color: color($site-ink);
+}
+
+.foo {
+  @include u-border(0.5);
 }

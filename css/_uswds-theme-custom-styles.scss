@@ -122,6 +122,10 @@ body {
 
   .usa-banner-button {
     color: color('gray-30');
+
+    &:hover {
+      color: color('gray-30');
+    }
   }
 
   .usa-banner-header-text {
@@ -2144,41 +2148,44 @@ h6 + div:not(.usa-accordion-content) {
   }
 }
 
-.usa-button.site-button-version {
-  @include no-knockout-font-smoothing;
-  color: color($site-ink);
-  background-color: color($site-background-color);
+.site-button-list {
+  .usa-button {
+    &:hover {
+      background-color: color('blue-warm-60v');
+    }
+  }
 
-  &:visited {
+  .usa-button.site-button-version {
+    @include no-knockout-font-smoothing;
     color: color($site-ink);
+    background-color: color($site-background-color);
+
+    &:visited {
+      color: color($site-ink);
+    }
+
+    &:hover {
+      background-color: color('yellow-20v');
+    }
   }
 
-  &:hover {
-    background-color: color('yellow-20v');
-  }
-}
-
-.usa-button {
-  &:hover {
-    background-color: color('blue-warm-60v');
-  }
-}
-
-.usa-button.site-button-outline-secondary {
-  @include inner-border($site-border-width, 'secondary');
-  background-color: color('transparent');
-  color: color('secondary');
-
-  &:visited {
+  .usa-button.site-button-outline-secondary {
+    @include inner-border($site-border-width, 'secondary');
+    background-color: color('transparent');
     color: color('secondary');
-  }
 
-  &:hover {
-    @include inner-border($site-border-width, 'blue-warm-60v');
-    background-color: transparent;
-    color: color('blue-warm-60v');
+    &:visited {
+      color: color('secondary');
+    }
+
+    &:hover {
+      @include inner-border($site-border-width, 'blue-warm-60v');
+      background-color: transparent;
+      color: color('blue-warm-60v');
+    }
   }
 }
+
 
 .site-header-dark {
   .site-header-navbar {

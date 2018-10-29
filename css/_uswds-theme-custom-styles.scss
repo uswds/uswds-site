@@ -13,13 +13,27 @@
 // 1. Generic
 // ----------------------------------------
 
+$site-primary-family:   'blue-warm';
+$site-primary-lighter:  '#{$site-primary-family}-10';
+$site-primary-light:    '#{$site-primary-family}-30';
+$site-primary:          '#{$site-primary-family}-50';
+$site-primary-vivid:    '#{$site-primary-family}-50v';
+$site-primary-dark:     '#{$site-primary-family}-70';
+$site-primary-darker:   '#{$site-primary-family}-80';
+$site-ink:              'black-transparent-80';
+
+$site-border-width:     2px;
+$site-base-transparent-light: 'black-transparent-10';
+$site-background-color: 'gray-2';
+
 body {
-  @include u-bg('gray-1');
+  @include u-bg($site-background-color);
 }
 
 html,
 body {
   height: auto;
+  color: color($site-ink);
 }
 
 .usa-center {
@@ -44,7 +58,7 @@ body {
 }
 
 .site-header {
-  background-color: color('primary-darker');
+  background-color: color($site-primary-darker);
 
   @include at-media('desktop') {
     border-bottom: none;
@@ -61,6 +75,7 @@ body {
     .usa-logo-text {
       @include at-media('desktop') {
         display: initial;
+        letter-spacing: ls(-1);
       }
     }
   }
@@ -94,16 +109,32 @@ body {
 }
 
 .site-banner {
+  background-color: color('gray-90');
+
   .usa-banner-inner {
     max-width: 100%;
   }
 
   .usa-banner-content {
+    color: color('white');
     margin-left: 0;
+  }
+
+  .usa-banner-button {
+    color: color('gray-30');
+  }
+
+  .usa-banner-header-text {
+    color: color('white');
+  }
+
+  .usa-banner-header-action {
+    color: color('gray-30');
   }
 }
 
 .site-header-navbar {
+  background-color: color('white');
   border-bottom: none !important; // scss-lint:disable ImportantRule
 
   @include at-media('desktop') {
@@ -123,12 +154,12 @@ body {
 @mixin outline-inverse-button {
   // TODO: Fix this with button mixin
   .usa-button.usa-button-outline-inverse {
-    box-shadow: inset 0 0 0 units(2px) color('primary');
-    color: color('primary');
+    box-shadow: inset 0 0 0 units(2px) color($site-primary);
+    color: color($site-primary);
 
     &:hover {
-      box-shadow: inset 0 0 0 unit(2px) color('primary-dark');
-      color: color('primary-dark');
+      box-shadow: inset 0 0 0 unit(2px) color($site-primary-dark);
+      color: color($site-primary-dark);
     }
   }
 }
@@ -151,20 +182,41 @@ body {
 
 .site-logo {
   @include at-media('desktop') {
-    margin-top: 0;
+    margin-top: units(0);
   }
 
   a {
-    color: color('white');
+    color: color($site-ink);
   }
 
-  em {
-    @include u-font('heading', 'xs');
+  .usa-logo-text {
+    $logo-size-mobile: 3;
+    $logo-size-desktop: 3;
+    @include u-font('sans', 'xs');
     line-height: units(5);
 
+    &::before {
+      @include u-square($logo-size-mobile);
+      content: '';
+      background-image: url('../img/uswds-logo/4c-lg-on-white.png');
+      background-image: url('../img/uswds-logo/4c-lg-on-white.svg');
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      display: inline-block;
+      margin-left: units(-2px);
+      margin-right: units(0.5);
+      position: relative;
+      top: units(-1px);
+      vertical-align: middle;
+
+      @include at-media('desktop') {
+        @include u-square($logo-size-desktop);
+      }
+    }
+
     @include at-media('desktop') {
-      font-size: font-size('heading', 'lg');
-      line-height: units(10);
+      @include typeset('sans', 'lg', 1);
+      line-height: units(9);
     }
   }
 }
@@ -174,7 +226,7 @@ body {
 
   @include at-media('desktop') {
     background-color: color('white');
-    border-bottom: units(1px) solid color('gray-cool-10');
+    border-bottom: units($site-border-width) solid color($site-base-transparent-light);
     clear: both;
     display: block;
     height: units($height-nav-secondary);
@@ -196,39 +248,136 @@ body {
 
   a {
     @include typeset('ui', 'xs', 1);
-    color: color('gray-cool-60');
+    color: color('gray-50');
     display: inline-block;
-    font-weight: font-weight('bold');
+    font-weight: fw('normal');
     height: units($height-nav-secondary);
     padding: units(2);
     position: relative;
     text-decoration: none;
 
+    .page-home & {
+      color: color('ink');
+    }
+
     &:hover {
       @include add-bar(
         0.5,
-        'primary',
+        $site-primary-vivid,
         'bottom',
         0,
         2,
         0
       );
+      color: color($site-primary-vivid);
     }
   }
 
   .usa-current {
     @include add-bar(
       0.5,
-      'primary',
+      $site-primary-vivid,
       'bottom',
       0,
       2,
       0
     );
+    color: color($site-ink);
+    font-weight: fw('bold');
+
+    &:hover {
+      color: color($site-ink);
+    }
   }
 }
 
 // Sidebar Nav --------- //
+
+.site-sidenav.usa-sidenav {
+  @include typeset('sans', 'xs', 3);
+  background-color: color('white');
+  border: units($site-border-width) solid color('black-transparent-10');
+  border-radius: radius('md');
+  padding: 0;
+
+  a {
+    @include u-padding-x(2);
+    color: color('base-darker');
+
+    &:hover {
+      background-color: transparent;
+      color: color($site-primary-vivid);
+    }
+  }
+
+  .usa-current {
+    color: color('base-darker');
+    position: static;
+
+    &::after {
+      border-radius: 0;
+      bottom: units(0);
+      background-color: color($site-primary-vivid);
+      bottom: units(-1px);
+      left: units($site-border-width) * -1;
+      top: units(0);
+      z-index: z(100);
+    }
+  }
+
+  .usa-sidenav-item:first-child {
+    .usa-current::after {
+      border-top-left-radius: radius('md');
+      top: units($site-border-width) * -1;
+    }
+  }
+
+  .usa-sidenav-item:last-child {
+    .usa-current::after {
+      border-bottom-left-radius: radius('md');
+      bottom: units($site-border-width) * -1;
+    }
+  }
+
+  .usa-sidenav-item {
+    border-top: none;
+    line-height: lh('sans', 3);
+    position: relative;
+
+    & + .usa-sidenav-item {
+      a {
+        // TODO: use 'black-transparent-5' when value changes
+        border-top: units(1px) solid rgba(0, 0, 0, .05);
+      }
+    }
+
+    &.is-current {
+      background-color: color($site-background-color);
+
+      .is-current {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .usa-sidenav-sublist {
+    font-size: font-size('sans', '3xs');
+    a {
+      border-top: units(1px) solid rgba(0, 0, 0, .05);
+      padding-left: units(2);
+    }
+
+    .usa-current {
+      color: color($site-primary-vivid);
+    }
+
+    .usa-sidenav-sublist {
+      a {
+        padding-left: units(4);
+      }
+    }
+  }
+}
 
 .sidenav {
   display: none;
@@ -237,27 +386,17 @@ body {
     display: block;
     float: left;
     margin-bottom: units(6);
-    margin-top: units(6);
-    padding-right: units(1);
+    margin-top: units(4);
+    padding-right: 0;
     padding-left: units(4);
     overflow-y: auto;
-    top: units(6);
     width: units($width-nav-sidebar);
-  }
-
-  .lt-ie9 & {
-    width: 25%;
   }
 
   .usa-navigation-submenu {
     &[aria-hidden="false"] {
       display: block;
     }
-  }
-
-  .usa-sidenav-list,
-  .usa-sidenav-list > li {
-    border-color: color('gray-10');
   }
 }
 
@@ -289,6 +428,16 @@ body {
   }
 }
 
+.site-h2 {
+  @include typeset('sans', 'xl', 3);
+  color: color($site-ink);
+  margin-top: units(4);
+
+  & + p {
+    margin-top: units(1.5);
+  }
+}
+
 // Styleguide Content -------- //
 
 .styleguide-content {
@@ -300,11 +449,50 @@ body {
   header {
     > h1 {
       margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    & + p {
+      margin-top: units(1.5);
     }
   }
 
   > h2 {
-    color: color('primary-dark');
+    @extend .site-h2;
+  }
+
+  > h3 {
+    @include typeset('sans', 'md', 3);
+
+    & + p {
+      margin-top: units(1);
+    }
+  }
+
+  > h4 {
+    @include typeset('sans', '2xs', 3);
+    @include u-text('uppercase', $site-ink, 'normal', 'ls-2');
+    margin-top: units(3);
+
+    & + p,
+    & + ol,
+    & + ul {
+      margin-top: units(1);
+    }
+  }
+
+  > h5 {
+    @include typeset('sans', '2xs', 3);
+    @include u-text($site-ink, 'bold');
+    margin-top: units(2);
+
+    & + p,
+    & + ol,
+    & + ul {
+      border-top: units(1px) solid color('base-lighter');
+      padding-top: units(1);
+      margin-top: units(0.5);
+    }
   }
 }
 
@@ -361,9 +549,9 @@ body {
 
 .site-subheading {
   @include typeset-h6;
-  color: color('gray-cool-60');
+  color: color('black-transparent-60');
   display: block;
-  letter-spacing: letter-spacing('ls-1');
+  letter-spacing: letter-spacing(1);
   margin-bottom: units(1);
   margin-top: 0;
 }
@@ -407,7 +595,7 @@ body {
 
   .usa-footer-secondary_section {
     @include u-padding-y(2);
-    background-color: color('accent-cool-lighter');
+    background-color: color('base-lightest');
 
     @include at-media('tablet') {
       padding-bottom: units(5);
@@ -449,7 +637,7 @@ body {
   }
 
   a {
-    color: color('primary-dark');
+    color: color($site-primary-dark);
     text-decoration: underline;
   }
 
@@ -471,7 +659,7 @@ body {
 .footer-section-bottom {
   padding-top: units(2);
   padding-bottom: units(2);
-  background-color: color('primary-darker');
+  background-color: color($site-primary-darker);
 
   p {
     color: color('white');
@@ -615,21 +803,21 @@ h3 + .button_wrapper {
 }
 
 .usa-heading {
-  color: color('primary-dark');
+  color: color($site-primary-dark);
 }
 
 // Color background helpers
 
 .usa-color-primary {
-  background-color: color('primary');
+  background-color: color($site-primary);
 }
 
 .usa-color-primary-darker {
-  background-color: color('primary-dark');
+  background-color: color($site-primary-dark);
 }
 
 .usa-color-primary-darkest {
-  background-color: color('primary-darker');
+  background-color: color($site-primary-darker);
 }
 
 .usa-color-base {
@@ -772,15 +960,15 @@ h3 + .button_wrapper {
 // Color text helpers
 
 .usa-color-text-primary-darkest {
-  color: color('primary-darker');
+  color: color($site-primary-darker);
 }
 
 .usa-color-text-primary-darker {
-  color: color('primary-dark');
+  color: color($site-primary-dark);
 }
 
 .usa-color-text-primary {
-  color: color('primary');
+  color: color($site-primary);
 }
 
 .usa-color-text-cool-blue-light {
@@ -876,7 +1064,8 @@ h6 {
 code,
 pre {
   @include u-font('mono', '3xs');
-  background-color: color('gray-cool-5');
+  // TODO: add more black-transparent values (1-5)
+  background-color: rgba(0,0,0,.05);
 }
 
 pre {
@@ -884,11 +1073,43 @@ pre {
 
   code {
     padding: 0;
+    background-color: transparent;
 
     &::before,
     &::after {
       display: none;
     }
+  }
+}
+
+a.token {
+  @include u-padding-x(0.5);
+  @include u-padding-y('05');
+  @include u-font('code', '3xs');
+  @include u-text('no-underline');
+  background-color: color($site-primary-lighter);
+  border: units('1px') solid color($site-primary-lighter);
+  border-radius: radius('sm');
+  color: color($site-ink);
+  display: inline-block;
+  line-height: line-height('mono', 1);
+
+  &:visited {
+    color: color($site-ink);
+  }
+
+  &:hover,
+  &:hover:visited {
+    background-color: color($site-primary-vivid);
+    border-color: color($site-primary-vivid);
+    color: color('white');
+  }
+
+  &:active,
+  &:active:visited {
+    background-color: color($site-ink);
+    border-color: color($site-ink);
+    color: color('white');
   }
 }
 
@@ -899,16 +1120,6 @@ code {
   &::after {
     letter-spacing: letter-spacing('ls-neg-3');
     content: '\00a0';
-  }
-
-  a & {
-    @include u-border(1px, 'blue-50v');
-    @include u-bg('transparent');
-
-    &:hover {
-      @include u-bg('blue-50v');
-      @include u-text('white');
-    }
   }
 }
 
@@ -977,13 +1188,13 @@ code {
 }
 
 .alignment-example {
-  border-left: units(2px) solid color('primary-dark');
+  border-left: units(2px) solid color($site-primary-dark);
   padding-left: units(1);
 }
 
 .help-text {
-  border-top: units(2px) solid color('primary-dark');
-  color: color('primary-dark');
+  border-top: units(2px) solid color($site-primary-dark);
+  color: color($site-primary-dark);
   font-size: $theme-root-font-size;
   padding-top: units(1);
   text-align: center;
@@ -1220,7 +1431,7 @@ code {
     &::before {
       content: '\00a0';
       display: inline-block;
-      background: color('primary');
+      background: color($site-primary);
       height: units(1px);
       position: relative;
       top: units(1);
@@ -1235,7 +1446,7 @@ code {
       font-size: 1.125rem; // TODO: do I care about this? (18px)
       padding: 0 units(1);
       color: color('secondary');
-      background: color('gray-1');
+      background: color($site-background-color);
     }
   }
 }
@@ -1303,7 +1514,7 @@ code {
 .page-component-maturity-scale,
 .page-research {
   h2 {
-    color: color('primary-dark');
+    color: color($site-primary-dark);
   }
 }
 
@@ -1337,7 +1548,7 @@ code {
   }
 
   [class*="grid-col"] {
-    background-color: color('primary-lighter');
+    background-color: color($site-primary-lighter);
     text-align: center;
   }
 
@@ -1440,7 +1651,7 @@ iframe {
       text-decoration: none;
 
       &:hover {
-        color: color('primary');
+        color: color($site-primary);
         text-decoration: underline;
       }
     }
@@ -1509,7 +1720,7 @@ strong {
   @include u-radius('sm');
 }
 
-.token {
+.property {
   $font: 'mono';
   @include u-border(1px);
   @include u-color('red-warm-50v');
@@ -1623,10 +1834,6 @@ li {
 }
 
 .utilities-properties {
-  @include u-bg('white');
-  @include u-border(1px, 'gray-10');
-  @include u-padding(2);
-  @include u-radius('md');
 }
 
 .utilities-property {
@@ -1676,7 +1883,7 @@ li {
 
 .utility {
   @include u-bg('white');
-  @include u-border(1px, 'gray-10');
+  @include u-border(1px, 'base-darker');
   @include u-margin-y(2);
   @include u-padding-bottom(1);
   @include u-padding-top(2);
@@ -1763,7 +1970,7 @@ li {
 .utility-examples-helper {
   @include u-font('sans', 2);
   @include u-margin-left(1);
-  @include u-text('normal', 'ink');
+  @include u-text('normal', $site-ink);
 }
 
 .utility-class {
@@ -1866,4 +2073,152 @@ h6 + div:not(.usa-accordion-content) {
 
 .default-container {
   @include clearfix;
+}
+
+.site-font-lead {
+  @include typeset('sans', 'lg', 5);
+  @include u-measure(3);
+  color: color($site-ink);
+
+  & + p {
+    margin-top: units(4);
+  }
+}
+
+.site-header {
+  .usa-button {
+    background-color: color($site-primary-vivid);
+    &:hover {
+      background-color: color('blue-warm-60v');
+    }
+  }
+  .usa-button-outline-inverse {
+    background-color: transparent;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+.site-docs-card-link {
+  border-top: units('05') solid color($site-base-transparent-light);
+  padding-top: units('105');
+
+  &:hover {
+    @include u-border-color('blue-warm-50v');
+
+    a {
+      color: black;
+      text-decoration-color: color('base-lighter');
+    }
+  }
+}
+
+.block-link::before {
+  @include u-pin('all');
+  content: '';
+}
+
+@mixin inner-border($width, $color) {
+  box-shadow: inset 0 0 0 units($width) color($color);
+}
+
+.usa-button-list.site-button-list {
+  .usa-button {
+    font-size: font-size('ui', 'xs');
+    margin: 0;
+    width: 100%;
+    @include at-media('desktop') {
+      width: auto;
+    }
+  }
+
+  li + li {
+    .usa-button {
+      margin-top: units(0.5);
+      @include at-media('desktop') {
+        margin-left: units(2px);
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.usa-button.site-button-version {
+  @include no-knockout-font-smoothing;
+  color: color($site-ink);
+  background-color: color($site-background-color);
+
+  &:visited {
+    color: color($site-ink);
+  }
+
+  &:hover {
+    background-color: color('yellow-20v');
+  }
+}
+
+.usa-button {
+  &:hover {
+    background-color: color('blue-warm-60v');
+  }
+}
+
+.usa-button.site-button-outline-secondary {
+  @include inner-border($site-border-width, 'secondary');
+  background-color: color('transparent');
+  color: color('secondary');
+
+  &:visited {
+    color: color('secondary');
+  }
+
+  &:hover {
+    @include inner-border($site-border-width, 'blue-warm-60v');
+    background-color: transparent;
+    color: color('blue-warm-60v');
+  }
+}
+
+.site-header-dark {
+  .site-header-navbar {
+    background-color: color('blue-warm-80');
+  }
+  .site-logo {
+    a {
+      color: color('white');
+    }
+
+    .usa-logo-text {
+      &::before {
+        background-image: url('../img/uswds-logo/4c-lg-on-black.png');
+        background-image: url('../img/uswds-logo/4c-lg-on-black.svg');
+      }
+    }
+  }
+  .usa-button.site-button-outline-secondary {
+    @include inner-border($site-border-width, 'white-transparent-70');
+    background-color: color('transparent');
+    color: color('white-transparent-70');
+
+    &:visited {
+      color: color('white-transparent-70');
+    }
+
+    &:hover {
+      @include inner-border($site-border-width, 'white');
+      background-color: transparent;
+      color: color('white');
+    }
+  }
+}
+
+.site-page-title {
+  @include typeset('sans', '2xl', 2);
+  font-weight: fw('light');
+  color: color($site-ink);
+}
+
+.foo {
+  @include u-border(0.5);
 }

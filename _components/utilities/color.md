@@ -45,8 +45,8 @@ utilities:
 <div class="utilities-properties">
   <h3 class="utilities-property-title">CSS properties</h3>
   <div class="margin-top-1">
-    <span class="token utilities-property">background-color</span>
-    <span class="token utilities-property">color</span>
+    <span class="property utilities-property">background-color</span>
+    <span class="property utilities-property">color</span>
   </div>
 </div>
 
@@ -76,7 +76,7 @@ utilities:
     </section>
 
     <section class="utility-examples">
-      <h4 class="utility-examples-title">Project theme colors <a class="utility-examples-helper" href="{{ site.baseurl }}/style/color/theme-palette/">Read more about project theme colors</a></h4>
+      <h4 class="utility-examples-title">Project theme colors <a class="utility-examples-helper" href="{{ site.baseurl }}/style-tokens/color/theme-tokens/">Read more about project theme colors</a></h4>
 
       <div class="grid-row">
         {% for color in theme_colors %}
@@ -139,7 +139,7 @@ utilities:
     </section>
 
     <section class="utility-examples">
-      <h3 class="font-sans-4 margin-top-0 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Project theme colors <a class="utility-examples-helper" href="{{ site.baseurl }}/style/color/theme-palette/">Read more about project theme colors</a></h3>
+      <h3 class="font-sans-4 margin-top-0 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Project theme colors <a class="utility-examples-helper" href="{{ site.baseurl }}/style-tokens/color/theme-tokens/">Read more about project theme colors</a></h3>
       <div class="grid-row">
         {% for color in theme_colors %}
           <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center measure-none">

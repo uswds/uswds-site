@@ -90,11 +90,11 @@ utilities:
 <div class="utilities-properties">
   <h3 class="utilities-property-title">CSS properties</h3>
   <div class="margin-top-1">
-    <span class="token utilities-property">border</span>
-    <span class="token utilities-property">border-style</span>
-    <span class="token utilities-property">border-width</span>
-    <span class="token utilities-property">border-color</span>
-    <span class="token utilities-property">border-radius</span>
+    <span class="property utilities-property">border</span>
+    <span class="property utilities-property">border-style</span>
+    <span class="property utilities-property">border-width</span>
+    <span class="property utilities-property">border-color</span>
+    <span class="property utilities-property">border-radius</span>
   </div>
 </div>
 

@@ -57,10 +57,10 @@ utilities:
 <div class="utilities-properties">
   <h3 class="utilities-property-title">CSS properties</h3>
   <div class="margin-top-1">
-    <span class="token utilities-property">line-height</span>
-    <span class="token utilities-property">max-width</span>
-    <span class="token utilities-property">text-align</span>
-    <span class="token utilities-property">text-indent</span>
+    <span class="property utilities-property">line-height</span>
+    <span class="property utilities-property">max-width</span>
+    <span class="property utilities-property">text-align</span>
+    <span class="property utilities-property">text-indent</span>
   </div>
 </div>
 

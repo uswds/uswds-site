@@ -1,13 +1,12 @@
 <a class="usa-skipnav" href="#main-content">Skip to main content</a>
 {% include banner.html %}
-<header class="usa-header site-header" role="banner">
+<header class="usa-header site-header site-header-dark" role="banner">
   <div class="usa-navbar site-header-navbar">
     <div class="usa-logo site-logo" id="logo">
       <em class="usa-logo-text">
         <a class="margin-right-05" href="{{ site.baseurl }}/" title="Home" aria-label="{{ site.title }} home">
           {{ site.title }}
         </a>
-        <span class="usa-tag font-sans-2xs bg-white text-ink">2.0 beta</span>
       </em>
     </div>
     <button class="usa-menu-btn">Menu</button>
@@ -21,6 +20,7 @@
       links=site.data.nav.primary
       rel='contains'
       flat=true
+      primary=true
     %}
   </ul>
 </nav>

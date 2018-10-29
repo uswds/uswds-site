@@ -173,12 +173,12 @@ utilities:
 <div class="utilities-properties">
   <h3 class="utilities-property-title">CSS properties</h3>
   <div class="margin-top-1">
-    <span class="token utilities-property">align-items</span>
-    <span class="token utilities-property">flex</span>
-    <span class="token utilities-property">flex-direction</span>
-    <span class="token utilities-property">flex-wrap</span>
-    <span class="token utilities-property">justify-content</span>
-    <span class="token utilities-property">order</span>
+    <span class="property utilities-property">align-items</span>
+    <span class="property utilities-property">flex</span>
+    <span class="property utilities-property">flex-direction</span>
+    <span class="property utilities-property">flex-wrap</span>
+    <span class="property utilities-property">justify-content</span>
+    <span class="property utilities-property">order</span>
   </div>
 </div>
 

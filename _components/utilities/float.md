@@ -26,7 +26,7 @@ utilities:
 <div class="utilities-properties">
   <h3 class="utilities-property-title">CSS properties</h3>
   <div class="margin-top-1">
-    <span class="token utilities-property">float</span>
+    <span class="property utilities-property">float</span>
   </div>
 </div>
 

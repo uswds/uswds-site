@@ -1,9 +1,9 @@
 ---
-permalink: /style/color/system-palette/
+permalink: /style-tokens/color/system-palette-adjust/
 layout: styleguide
-title: System palette
-category: Style
-lead: The USWDS system color palette is the complete set of colors from which any project can build a theme palette
+title: System palette adjustments
+category: Style tokens
+lead: Use this page as a reference for luminance based adjustments
 type: docs
 subnav:
   - text: Red warm
@@ -46,12 +46,12 @@ subnav:
     href: '#violet-warm'
   - text: Magenta
     href: '#magenta'
-  - text: Gray cool
-    href: '#gray-cool'
-  - text: Gray
-    href: '#gray'
   - text: Gray warm
     href: '#gray-warm'
+  - text: Gray
+    href: '#gray'
+  - text: Gray cool
+    href: '#gray-cool'
 families:
   - red_warm
   - red_warm_vivid
@@ -111,16 +111,15 @@ families:
       <h2 class="font-sans-10 margin-top-0 margin-bottom-1 text-ink" id="{{ family | replace: '_', '-' }}">{{ this_title }}</h2>
 
       <div class="grid-row grid-gap flex-align-center margin-bottom-1 padding-bottom-1 border-bottom-2px margin-top-2 text-bold font-sans-1">
-        <div class="grid-col-2">Color</div>
-        <div class="grid-col-2">Family</div>
-        <div class="grid-col-1">Grade</div>
-        <div class="grid-col-2">Variant</div>
-        <div class="grid-col-3">Token</div>
-        <div class="grid-col-fill text-right">Hex</div>
+        <div class="grid-col-2">Original</div>
+        <div class="grid-col-2">Adjusted</div>
+        <div class="grid-col-4">Shortcode</div>
+        <div class="grid-col-2 text-right">Original hex</div>
+        <div class="grid-col-2 text-right">Adjusted hex</div>
       </div>
 
       {% for color in system_colors[family] %}
-        {% include style/swatch-condensed.html %}
+        {% include style/swatch-comparison.html %}
       {% endfor %}
     </div>
     {% endfor %}

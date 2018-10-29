@@ -5,7 +5,7 @@ layout: default
   <aside class="sidenav">
     {% assign sidenav = site.data.nav[page.category] %}
     {% if sidenav %}
-    <ul class="usa-sidenav">
+    <ul class="site-sidenav usa-sidenav">
       {% include nav/list.html links=sidenav %}
     </ul>
     {% endif %}
@@ -16,11 +16,11 @@ layout: default
     <div class="styleguide-content{% unless page.category == 'Utilities' and page.type != 'docs' %} usa-content{% endunless %}">
       <header>
         {% if page.category != null %}
-          {% unless page.path contains 'overview' and page.permalink != '/style/color/overview/' %}
+          {% unless page.path contains 'overview' and page.permalink != '/style-tokens/color/overview/' %}
             <p class="site-subheading">{{ page.category }}</p>
           {% endunless %}
         {% endif %}
-        <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
+        <h1 id="{{ page.title | slugify }}" class="site-page-title">{{ page.title }}</h1>
         {% if page.category == 'UI components' and page.component_url %}
           <span class="components-library-link">
             <a href="{{ page.component_url }}">View in Component Library</a>

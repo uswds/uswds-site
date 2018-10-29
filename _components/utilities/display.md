@@ -123,15 +123,15 @@ utilities:
 <div class="utilities-properties">
   <h3 class="utilities-property-title">CSS properties</h3>
   <div class="margin-top-1">
-    <span class="token utilities-property">bottom</span>
-    <span class="token utilities-property">display</span>
-    <span class="token utilities-property">left</span>
-    <span class="token utilities-property">opacity</span>
-    <span class="token utilities-property">overflow</span>
-    <span class="token utilities-property">position</span>
-    <span class="token utilities-property">right</span>
-    <span class="token utilities-property">top</span>
-    <span class="token utilities-property">z-index</span>
+    <span class="property utilities-property">bottom</span>
+    <span class="property utilities-property">display</span>
+    <span class="property utilities-property">left</span>
+    <span class="property utilities-property">opacity</span>
+    <span class="property utilities-property">overflow</span>
+    <span class="property utilities-property">position</span>
+    <span class="property utilities-property">right</span>
+    <span class="property utilities-property">top</span>
+    <span class="property utilities-property">z-index</span>
   </div>
 </div>
 

@@ -1,47 +1,49 @@
 ---
-permalink: /style/color/overview/
+permalink: /style-tokens/color/overview/
 layout: styleguide
-title: Overview
-category: Style
+title: Using color
+category: Style tokens
 lead: Color is a practical and emotional tool. It conveys personality, sets a tone, attracts attention, and indicates importance.
 type: docs
 redirect_from:
   - /components/colors/
-  - /style/color/
+  - /style-tokens/color/
   - /colors/
 subnav:
   - text: Introduction
     href: '#introduction'
-  - text: Color and accessibility
+  - text: Accessibility
     href: '#color-and-accessibility'
   - text: USWDS color wheels
     href: '#uswds-color-wheels'
-  - text: Using color
-    href: '#using-color'
+  - text: Color guidance
+    href: '#general-color-guidance'
 ---
 
 ## Introduction
-USWDS organizes its colors into two related palettes: the [project theme palette]({{ site.baseurl }}/style/color/theme-palette/) and the [system palette]({{ site.baseurl }}/style/color/system-palette/). The project theme palette is a subset of the broader system palette — your project’s theme should reflect your project’s individual identity, tone, and needs. It will use only a few color families from the broader set of 23 color families available to all users of the system.
+USWDS organizes its colors tokens into [project tokens]({{ site.baseurl }}/style-tokens/color/theme-tokens/) and [system tokens]({{ site.baseurl }}/style-tokens/color/system-tokens/). System tokens are the complete set of colors available to the design system. Project tokens are a smaller, role-based subset customized to your project's individual identity, tone, and needs. It will use only a few color families from the broader set of 23 color families available in the system token set.
 
-{:.measure-5 .margin-top-5}
-![System color palette]({{ site.baseurl }}/assets/img/style/color-system-overview.png)
+{:.margin-top-3.bg-white.padding-2.radius-md.padding-bottom-0}
+![System tokens]({{ site.baseurl }}/assets/img/style-tokens/color-system-overview.png)
 
 {:.font-sans-2xs}
-**Above:** The 26 color families of the USWDS system palette, including all grades and variants. Together, they form a broad, expressive, and practical palette designed to encourage a diversity of tone as well as overall consistency and coherence.
+**Above:** The 26 color families of the USWDS system tokens, including all grades and variants. Together, they form a broad, expressive, and practical palette designed to encourage a diversity of tone as well as overall consistency and coherence.
 
-Use USWDS colors and avoid custom colors whenever possible. In the long run, it’s a better user experience across government when there’s coherence across sites and services. Of course, your mission, project needs, and user needs always come first, but if you plan to contribute your work back into the system — which helps the system learn, adapt, and improve — that work will need to conform to system standards and use system colors.
+**Use USWDS color tokens and avoid custom colors whenever possible.** In the long run, it’s a better user experience across government when there’s coherence across sites and services. Of course, your mission, project needs, and user needs always come first, but if you plan to contribute your work back into the system — which helps the system learn, adapt, and improve — that work will need to conform to system standards and use USWDS tokens.
 
 <div>
 <style>code {mix-blend-mode: multiply;}</style>
 <div class="bg-base-lighter measure-3 padding-3 usa-section" markdown="1">
 {:.font-sans-xs}
+
+{:.font-sans-xs.color-ink.text-bold.text-ls-2}
 ### COLOR, COLOR FAMILY, AND GRADE
 
 Throughout our documentation and guidance, we’ll use use the terms color, color family, and grade, but what do we mean when we use them?
 
-**Color** is any specific swatch in our palettes, like `red 50`, `primary base`, or `indigo warm 60v`.
+**Color** is any specific swatch in our token palettes, like `red-50`, `primary-base`, or `indigo-warm-60v`.
 
-**Color family** is a group of colors that all have the same hue on a color wheel (See [USWDS color wheels](#uswds-color-wheels) below). They contain a number of individual colors, distinguished by the brightness or saturation of each individual color. A color family is typically a conventional color name like `red` or `blue warm`, or could be a use-based name in the project theme palette, like `primary`.
+**Color family** is a group of colors that all have the same hue on a color wheel (See [USWDS color wheels](#uswds-color-wheels) below). They contain a number of individual colors, distinguished by the brightness or saturation of each individual color. A system token color family is typically a conventional color name like `red` or `blue-warm`, and a theme token color family is a role-based name like `primary`.
 
 **Grade** is a way to express how light or dark a color is. USWDS uses a 100-point scale to communicate the grade, where 0 is pure white and 100 is pure black. We’ve regularized these grades across color families: a color of grade `50` in one color family should be the same level of lightness as a color of grade `50` in another color family. This has important color contrast and accessibility implications that we’ll discuss later.
 </div>
@@ -59,8 +61,7 @@ Accessibility is not a special case. In Q2 of 2018, [sites using USWDS topped 1.
 USWDS helps teams choose accessible colors with a color grade system. Let’s look at the `gray` color family, in grades 5-90 (grade 0 is `white`):
 
 {% capture gray-grade %}
-<div class="padding-2 border measure-5">
-  <span><strong>Gray</strong></span>
+<div class="padding-2 bg-white radius-md measure-3">
   <div class="grid-row font-mono-2 text-400">
     <div class="grid-col-fill">
       <div class="bg-gray-5 height-4"></div>
@@ -112,23 +113,23 @@ USWDS helps teams choose accessible colors with a color grade system. Let’s lo
 
 ### Magic number
 We call the difference in grade between any two colors the _magic number_. Magic numbers have important contrast implications:
-- **A magic number of 40+** results in WCAG 2.0 AA Large Text contrast (example: `gray 90` and `indigo warm 50v`).
-- **A magic number of 50+** results in WCAG 2.0 AA contrast or AAA Large Text contrast (example: `gray 90` and `red 40`).
-- **A magic number of 70+** results in WCAG 2.0 AAA contrast (example: `gray 10` and `red 80`).
+- **A magic number of 40+** results in WCAG 2.0 AA Large Text contrast (example: `gray-90` and `indigo-warm-50v`).
+- **A magic number of 50+** results in WCAG 2.0 AA contrast or AAA Large Text contrast (example: `gray-90` and `red-40`).
+- **A magic number of 70+** results in WCAG 2.0 AAA contrast (example: `gray-10` and `red-80`).
 - **Colors of grade 50** result in Section 508 AA contrast against both pure white (grade `0`) and pure black (grade `100`).
 
 Use USWDS magic numbers to choose accessible color combinations from any palette and color family.
 
 #### Accessible color combination examples
 
-{:.measure-5}
-![gray color contrast example]({{ site.baseurl }}/assets/img/style/gray-example.png)
+{:.measure-3}
+![gray color contrast example]({{ site.baseurl }}/assets/img/style-tokens/gray-example.png)
 
 {:.font-sans-2xs}
-**Above:** Since `90 – 50 = 40`, on a background of `gray 90` use grades of `40` and below to assure Section 508 AA contrast. Grades of `50` and below are acceptable for large text.
+**Above:** Since `90 – 50 = 40`, on a background of `gray-90` use grades of `40` and below to assure Section 508 AA contrast. Grades of `50` and below are acceptable for large text.
 
-{:.measure-5 .margin-top-5}
-![indigo color contrast example]({{ site.baseurl }}/assets/img/style/indigo-warm-example.png)
+{:.measure-3 .margin-top-5}
+![indigo color contrast example]({{ site.baseurl }}/assets/img/style-tokens/indigo-warm-example.png)
 
 {:.font-sans-2xs}
 **Above:** The color grade system works across color families.
@@ -145,17 +146,23 @@ But when it comes to color, consider these general guidelines:
 
 ## USWDS color wheels
 
-The following color wheels are a way to visualize the entire [USWDS system palette]({{ site.baseurl }}/style/color/system-palette/) and its color family naming rubric. The color wheels are arranged around the 360° of the [HSL color model](https://en.wikipedia.org/wiki/HSL_and_HSV). Each color family is labelled with its position (in degrees) on this model. In general, colors within color families stay close to the hue value listed, but it is a custom palette, not generated by an algorithm. Hue variation within color families is intentional — we are trying to find good colors, not just those that fit a function.
+The following color wheels are a way to visualize the entire [USWDS system palette]({{ site.baseurl }}/style-tokens/color/system-tokens/) and its color family naming rubric. The color wheels are arranged around the 360° of the [HSL color model](https://en.wikipedia.org/wiki/HSL_and_HSV). Each color family is labelled with its position (in degrees) on this model. In general, colors within color families stay close to the hue value listed, but it is a custom palette, not generated by an algorithm. Hue variation within color families is intentional — we are trying to find good colors, not just those that fit a function.
 
 The vivid palette is incomplete. We’ve added vivid variants as we’ve found a project need. This number will continue to grow and we [welcome new suggetions](https://github.com/uswds/uswds/issues) in our Github repo for vivid variants where none currently exist.
 
-![standard color wheel]({{ site.baseurl }}/assets/img/style/uswds-standard-color-wheel.webp)
+{:.bg-white.padding-2.radius-md}
+![standard color wheel]({{ site.baseurl }}/assets/img/style-tokens/uswds-standard-color-wheel.webp)
 
----
+{:.font-sans-2xs}
+**Above:** USWDS standard system color tokens wheel
 
-![vivid color wheel]({{ site.baseurl }}/assets/img/style/uswds-vivid-color-wheel.webp)
+{:.bg-white.padding-2.radius-md.margin-top-4}
+![vivid color wheel]({{ site.baseurl }}/assets/img/style-tokens/uswds-vivid-color-wheel.webp)
 
-## Using color
+{:.font-sans-2xs}
+**Above:** USWDS vivid system color tokens wheel
+
+## General color guidance
 
 If we use color intentionally, consistently, and sensitively, it can make a big difference in the way people understand and connect with our pages, our products and services, and our message. Color is an important component of visual and emotional cognition, and that’s precisely what makes it difficult to use well — what’s strong and confident to one person can be jarring or alarming to another.
 

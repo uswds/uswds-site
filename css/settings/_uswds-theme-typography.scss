@@ -156,7 +156,7 @@ system:
 */
 
 $theme-font-mono:   'roboto-mono';
-$theme-font-sans:   'source-sans-pro';
+$theme-font-sans:   'public-sans';
 $theme-font-serif:  'merriweather';
 $theme-font-cond:   false;
 
@@ -210,7 +210,7 @@ Or use `false` for unneeded weights.
 ----------------------------------------
 */
 
-$theme-output-all-weights:        false;
+$theme-output-all-weights:        true;
 
 $theme-font-weight-thin:          false;
 $theme-font-weight-light:         300;

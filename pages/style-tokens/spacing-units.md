@@ -336,7 +336,7 @@ Many mixins and utilities accept spacing unit tokens. See the [utilities section
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
     <div class="grid-col-2 text-bold font-sans-3">setting</div>
-    <div class="grid-col-5">$theme-variable: <a href="{{ site.baseurl }}/style-tokens/typesetting/measure/" class="token">measure</a></div>
+    <div class="grid-col-5">$theme-variable: <a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a></div>
     <div class="grid-col-5">$theme-site-margin-mobile: <code>2</code>;</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-1 font-mono-3">

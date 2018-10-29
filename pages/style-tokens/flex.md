@@ -3,13 +3,13 @@ permalink: /style-tokens/flex/
 layout: styleguide
 title: Flex
 category: Style tokens
-lead: USWDS flex tokens provide simple controls for settings the flex width of an item.
+lead: USWDS flex tokens provide simple options for setting the flex width of an item.
 type: docs
 subnav:
 - text: Flex tokens
-  href: '#line-height-tokens'
+  href: '#flex-tokens'
 - text: Using flex tokens
-  href: '#using-line-height-tokens'
+  href: '#using-flex-tokens'
 
 values:
   flex:
@@ -80,8 +80,8 @@ values:
   {% endfor %}
 </div>
 
-## Using measure tokens
-Your context and coding style determine how you access USWDS measure tokens in code.
+## Using flex tokens
+Your context and coding style determine how you access USWDS flex tokens in code.
 
 <div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
   <div class="grid-row grid-gap flex-align-center margin-bottom-1 padding-bottom-1 border-bottom-2px text-bold">

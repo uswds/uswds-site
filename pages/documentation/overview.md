@@ -26,7 +26,7 @@ lead: The U.S. Web Design System provides design guidelines and code to help you
   <div class="tablet:grid-col margin-top-2 tablet:margin-top-0 display-flex flex-align-stretch">
     <div class="site-docs-card-link">
       <h3 class="font-sans-lg margin-0">
-        <a href="https://github.com/uswds/uswds/wiki" class="block-link text-no-underline text-blue-warm-50v hover:text-underline">USWDS project wki</a>
+        <a href="https://github.com/uswds/uswds/wiki" class="block-link text-no-underline text-blue-warm-50v hover:text-underline">USWDS project wiki</a>
       </h3>
       <p class="margin-top-1">Find detailed information about our design and development process, and our collected user research.</p>
     </div>

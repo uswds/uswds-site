@@ -7,6 +7,7 @@ lead: Typesetting in USWDS means understanding the relationship between font fam
 type: docs
 redirect_from:
   - /style-tokens/typesetting/
+  - /style-tokens/typography
 subnav:
   - text: Normalization
     href: '#normalization'

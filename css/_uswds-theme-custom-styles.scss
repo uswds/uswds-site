@@ -2208,3 +2208,7 @@ h6 + div:not(.usa-accordion-content) {
 .foo {
   @include u-border(0.5);
 }
+
+pre {
+  white-space: pre-wrap;
+}

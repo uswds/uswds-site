@@ -1512,17 +1512,6 @@ code {
   }
 }
 
-// Override max-width to ensure code blocks are wide enough
-.page-for-developers {
-  ol {
-    max-width: 100% !important; // scss-lint:disable ImportantRule
-
-    p {
-      max-width: measure(3);
-    }
-  }
-}
-
 .page-product-roadmap {
   .main-content {
     .usa-tag {

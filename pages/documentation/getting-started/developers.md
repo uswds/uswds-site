@@ -11,8 +11,8 @@ subnav:
   href: '#css-architecture'
 - text: JS customization
   href: '#js-customization'
-- text: Customization and theming
-  href: '#customization-and-theming'
+- text: Customization, theming, and tokens
+  href: '#customization-theming-and-tokens'
 - text: Where things live
   href: '#where-things-live'
 - text: Browser support

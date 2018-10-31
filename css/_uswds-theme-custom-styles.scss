@@ -1512,16 +1512,6 @@ code {
   }
 }
 
-.page-for-developers,
-.page-for-designers,
-.page-product-roadmap,
-.page-component-maturity-scale,
-.page-research {
-  h2 {
-    color: color($site-primary-dark);
-  }
-}
-
 // Override max-width to ensure code blocks are wide enough
 .page-for-developers {
   ol {

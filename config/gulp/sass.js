@@ -13,13 +13,13 @@ var strip         = require('gulp-strip-css-comments');
 var task          = 'sass';
 
 var dev_plugins = [
-  autoprefixer({ browsers: ['> 1%','Last 2 versions','IE 11'], cascade: false, }),
+  autoprefixer({ browsers: ['> 2%','Last 2 versions','IE 11'], cascade: false, }),
   packCSS({ sort: true })
 ];
 
 var prod_plugins = [
   packCSS({ sort: true }),
-  cssnano({ autoprefixer: { browsers: '> 1%, Last 2 versions, IE 11' }})
+  cssnano({ autoprefixer: { browsers: '> 2%, Last 2 versions, IE 11' }})
 ];
 
 gulp.task('build-sass-fonts', function () {

@@ -1512,27 +1512,6 @@ code {
   }
 }
 
-.page-for-developers,
-.page-for-designers,
-.page-product-roadmap,
-.page-component-maturity-scale,
-.page-research {
-  h2 {
-    color: color($site-primary-dark);
-  }
-}
-
-// Override max-width to ensure code blocks are wide enough
-.page-for-developers {
-  ol {
-    max-width: 100% !important; // scss-lint:disable ImportantRule
-
-    p {
-      max-width: measure(3);
-    }
-  }
-}
-
 .page-product-roadmap {
   .main-content {
     .usa-tag {
@@ -2228,4 +2207,8 @@ h6 + div:not(.usa-accordion-content) {
 
 .foo {
   @include u-border(0.5);
+}
+
+pre {
+  white-space: pre-wrap;
 }

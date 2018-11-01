@@ -40,11 +40,11 @@ Each color family except `disabled` has five possible lightness grades, from `li
             <td scope="row" data-title="Color" class="flex-align-center">
               <span class="site-inline-swatch bg-{{ color.token }}"></span>
             </td>
-            <td data-title="State token" class="font-mono-2xs">
+            <td data-title="State token">
               <span class="utility-class font-mono-2xs">'{{ color.family_token }}{% if color.grade_token %}-{{ color.grade_token }}{% endif %}'</span>
             </td>
             <td data-title="System token" class="font-mono-2xs">
-              <span >{{ color.system }}</span>
+              '{{ color.system }}'
             </td>
             <td data-title="Hex equivalent" class="font-mono-2xs text-right">
               {{ color.value }}

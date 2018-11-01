@@ -2213,12 +2213,32 @@ pre {
   white-space: pre-wrap;
 }
 
-// Table stuff
+// Responsive tables
 
 $theme-table-responsive-expand-at: 'tablet';
+$theme-table-responsive-title-width: 15;
+$theme-table-responsive-border-radius: 'md';
+$theme-table-padding-x: 2;
+$theme-table-column-gap: 2;
 
-@include at-media-max($theme-table-responsive-expand-at) {
-  .usa-table-responsive-reflow {
+.site-table-wrapper {
+  @include at-media($theme-table-responsive-expand-at) {
+    border: 1px solid;
+    border-radius: radius('md');
+    display: block;
+    background-color: white;
+  }
+
+  .site-table-responsive {
+    margin-top: 0;
+  }
+}
+
+.site-table-responsive {
+  width: 100%;
+  max-width: none;
+
+  @include at-media-max($theme-table-responsive-expand-at) {
     @include typeset(null, '2xs');
     display: block;
     width: 100%;
@@ -2249,6 +2269,49 @@ $theme-table-responsive-expand-at: 'tablet';
       padding: units(0.5) units(0.5) units(0.5) 0;
       position: relative;
       z-index: z(100);
+
+      &[data-title]:before {
+        @include typeset('ui', 1, 2);
+        @include u-padding-x(1);
+        content: attr(data-title);
+        flex: none;
+        font-weight: fw('normal');
+        margin-right: units(0.5);
+        max-width: units($theme-table-responsive-title-width);
+        text-align: left;
+        width: 50%;
+      }
+    }
+
+    th:not([data-title]) {
+      font-weight: fw('bold');
+    }
+
+    tr {
+      background-color: color('white');
+      border: 1px solid;
+      border-radius: radius($theme-table-responsive-border-radius);
+      display: block;
+      padding-bottom: units(2px);
+      position: relative;
+
+      &::after {
+        @include u-pin('y');
+        @include u-pin('left');
+        content: '';
+        background-color: color('gray-2');
+        border-bottom-left-radius: radius($theme-table-responsive-border-radius);
+        border-top-left-radius: radius($theme-table-responsive-border-radius);
+        display: block;
+        max-width: units($theme-table-responsive-title-width);
+        position: absolute;
+        width: 50%;
+        z-index: z(0);
+      }
+
+      & + tr {
+        margin-top: units(1);
+      }
     }
 
     td {
@@ -2256,60 +2319,70 @@ $theme-table-responsive-expand-at: 'tablet';
       background-color: transparent;
       display: flex;
       line-height: lh('ui', 4);
+
+      &:empty {
+        display: none;
+      }
+
+      & + td {
+        border-top: units(1px) solid color('base-lighter');
+      }
+
+      .site-inline-swatch {
+        width: 100%;
+      }
+    }
+  }
+
+  @include at-media($theme-table-responsive-expand-at) {
+    thead {
+      @include u-font('ui', 1);
     }
 
-    th[data-title]:before,
-    td[data-title]:before {
-      @include typeset('ui', 1, 2);
-      @include u-padding-x(1);
-      content: attr(data-title);
-      flex: none;
-      font-weight: fw('normal');
-      margin-right: units(0.5);
-      max-width: units(15);
-      text-align: left;
-      width: 50%;
+    th:first-child {
+      padding-left: units(2);
     }
 
-    table {
+    tr,
+    td {
+      background-color: transparent;
     }
 
-    tr {
-      background-color: color('white');
-      border: 1px solid;
-      border-radius: radius('md');
-      display: block;
-      padding-bottom: units(2px);
-      position: relative;
-      &::after {
-        @include u-pin('y');
-        @include u-pin('left');
-        content: '';
-        background-color: color('gray-2');
-        border-bottom-left-radius: radius('md');
-        border-top-left-radius: radius('md');
-        display: block;
-        max-width: units(15);
-        position: absolute;
-        width: 50%;
-        z-index: z(0);
+    th,
+    td {
+      @include u-padding-x($theme-table-column-gap / 2);
+      @include u-padding-y(1);
+      border: none;
+
+      &:first-child {
+        padding-left: units($theme-table-padding-x);
+      }
+
+      &:last-child {
+        padding-right: units($theme-table-padding-x);
       }
     }
 
-    tr + tr {
-      margin-top: units(1);
-    }
+    tbody {
+      tr {
+        border: none;
+        border-top: units(2px) solid;
 
-    td + td {
-      border-top: units(1px) solid color('base-lighter');
+        & + tr {
+          border-top: units(1px) solid color('base-lighter');
+        }
+      }
     }
+  }
+}
 
-    th:not([data-title]) {
-      font-weight: fw('bold');
-    }
+.site-inline-swatch {
+  @include u-square(4);
+  border-radius: radius('sm');
+  display: inline-block;
+  text-align: middle;
 
-    td:empty {
-      display: none;
-    }
+  table & {
+    display: block;
   }
 }

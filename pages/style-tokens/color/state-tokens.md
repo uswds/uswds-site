@@ -22,64 +22,39 @@ The state color palette is divided into five high-level role-based color familie
 
 Each color family except `disabled` has five possible lightness grades, from `lighter` to `darker`, though not every family needs to include a color at each grade. Some grades may be set to `false` in your project's theme settings.
 
-<table class="usa-table-borderless usa-table-responsive-reflow">
-  <thead>
-    <tr>
-      <th scope="col">Color</th>
-      <th scope="col">State color token</th>
-      <th scope="col">System color token</th>
-      <th scope="col">Hex equivalent</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for color in state_colors %}
-      {% if color.hide_from_palette == true %}
-      {% else %}
-        <tr>
-          <td scope="row" data-title="Color" class="flex-align-center">
-            <span class="square-4 radius-sm display-inline-block text-middle width-full bg-{{ color.token }}"></span>
-          </td>
-          <td data-title="State token" class="font-mono-2xs">
-            <span class="utility-class font-mono-2xs">'{{ color.family_token }}{% if color.grade_token %}-{{ color.grade_token }}{% endif %}'</span>
-          </td>
-          <td data-title="System token" class="font-mono-2xs">
-            <span >{{ color.system }}</span>
-          </td>
-          <td data-title="Hex equivalent" class="font-mono-2xs">
-            {{ color.value }}
-          </td>
-        </tr>
-      {% endif %}
-    {% endfor %}
-  </tbody>
-</table>
-
-<div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-4 text-bold font-sans-1">
-  <div class="grid-col-1">Color</div>
-  <div class="grid-col-4">State token</div>
-  <div class="grid-col-3">System token equivalent</div>
-  <div class="grid-col-fill text-right">Hex value</div>
+<div class="site-table-wrapper">
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col">Color</th>
+        <th scope="col">State color token</th>
+        <th scope="col">System color token</th>
+        <th scope="col" class="text-right">Hex equivalent</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for color in state_colors %}
+        {% if color.hide_from_palette == true %}
+        {% else %}
+          <tr>
+            <td scope="row" data-title="Color" class="flex-align-center">
+              <span class="site-inline-swatch bg-{{ color.token }}"></span>
+            </td>
+            <td data-title="State token" class="font-mono-2xs">
+              <span class="utility-class font-mono-2xs">'{{ color.family_token }}{% if color.grade_token %}-{{ color.grade_token }}{% endif %}'</span>
+            </td>
+            <td data-title="System token" class="font-mono-2xs">
+              <span >{{ color.system }}</span>
+            </td>
+            <td data-title="Hex equivalent" class="font-mono-2xs text-right">
+              {{ color.value }}
+            </td>
+          </tr>
+        {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
 </div>
-
-{% for color in state_colors %}
-  {% if color.hide_from_palette == true %}
-  {% else %}
-<div class="utility-example-container-condensed grid-row grid-gap flex-align-center">
-  <span class="grid-col-1">
-    <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
-  </span>
-  <span class="grid-col-4">
-    <span class="utility-class">'{{ color.family_token }}{% if color.grade_token %}-{{ color.grade_token }}{% endif %}'</span>
-  </span>
-  <span class="grid-col-3 font-mono-3">
-    <span>{{ color.system }}</span>
-  </span>
-  <span class="grid-col-fill text-right font-mono-3">
-    {{ color.value }}
-  </span>
-</div>
-  {% endif %}
-{% endfor %}
 
 ## Customizing state color tokens
 Customize theme color tokens in your project's theme settings with [system color tokens]({{ site.baseurl }}/style-tokens/color/system-tokens/). Set any unused state color to `false`.

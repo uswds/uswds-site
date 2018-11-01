@@ -21,13 +21,13 @@ subnav:
 ---
 
 ## Introduction
-USWDS organizes its colors tokens into [project tokens]({{ site.baseurl }}/style-tokens/color/theme-tokens/) and [system tokens]({{ site.baseurl }}/style-tokens/color/system-tokens/). System tokens are the complete set of colors available to the design system. Project tokens are a smaller, role-based subset customized to your project's individual identity, tone, and needs. It will use only a few color families from the broader set of 23 color families available in the system token set.
+USWDS organizes its colors tokens into [theme tokens]({{ site.baseurl }}/style-tokens/color/theme-tokens/), [state tokens]({{ site.baseurl }}/style-tokens/color/theme-tokens/), and [system tokens]({{ site.baseurl }}/style-tokens/color/system-tokens/). System tokens are the complete set of colors available to the design system. Project tokens are a smaller, role-based subset customized to your project's individual identity, tone, and needs. It will use only a few color families from the broader set of 23 color families available in the system token set.
 
 {:.margin-top-3.bg-white.padding-2.radius-md.padding-bottom-0}
 ![System tokens]({{ site.baseurl }}/assets/img/style-tokens/color-system-overview.png)
 
 {:.font-sans-2xs}
-**Above:** The 26 color families of the USWDS system tokens, including all grades and variants. Together, they form a broad, expressive, and practical palette designed to encourage a diversity of tone as well as overall consistency and coherence.
+**Above:** The 23 color families of the USWDS system tokens, including all grades and variants. Together, they form a broad, expressive, and practical palette designed to encourage a diversity of tone as well as overall consistency and coherence.
 
 **Use USWDS color tokens and avoid custom colors whenever possible.** In the long run, it’s a better user experience across government when there’s coherence across sites and services. Of course, your mission, project needs, and user needs always come first, but if you plan to contribute your work back into the system — which helps the system learn, adapt, and improve — that work will need to conform to system standards and use USWDS tokens.
 
@@ -151,13 +151,13 @@ The following color wheels are a way to visualize the entire [USWDS system palet
 The vivid palette is incomplete. We’ve added vivid variants as we’ve found a project need. This number will continue to grow and we [welcome new suggetions](https://github.com/uswds/uswds/issues) in our Github repo for vivid variants where none currently exist.
 
 {:.bg-white.padding-2.radius-md}
-![standard color wheel]({{ site.baseurl }}/assets/img/style-tokens/uswds-standard-color-wheel.webp)
+![standard color wheel]({{ site.baseurl }}/assets/img/style-tokens/uswds-standard-color-wheel.jpg)
 
 {:.font-sans-2xs}
 **Above:** USWDS standard system color tokens wheel
 
 {:.bg-white.padding-2.radius-md.margin-top-4}
-![vivid color wheel]({{ site.baseurl }}/assets/img/style-tokens/uswds-vivid-color-wheel.webp)
+![vivid color wheel]({{ site.baseurl }}/assets/img/style-tokens/uswds-vivid-color-wheel.jpg)
 
 {:.font-sans-2xs}
 **Above:** USWDS vivid system color tokens wheel

@@ -18,15 +18,47 @@ USWDS theme color tokens are designed to be useful and effective for small and l
 
 {:#uswds-state-color-tokens}
 ## State color tokens
-The state color palette is divided into four high-level role-based color families: `error`, `warning`, `success`, and `disabled`.
+The state color palette is divided into five high-level role-based color families: `info`, `error`, `warning`, `success`, and `disabled`.
 
 Each color family except `disabled` has five possible lightness grades, from `lighter` to `darker`, though not every family needs to include a color at each grade. Some grades may be set to `false` in your project's theme settings.
 
+<table class="usa-table-borderless usa-table-responsive-reflow">
+  <thead>
+    <tr>
+      <th scope="col">Color</th>
+      <th scope="col">State color token</th>
+      <th scope="col">System color token</th>
+      <th scope="col">Hex equivalent</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for color in state_colors %}
+      {% if color.hide_from_palette == true %}
+      {% else %}
+        <tr>
+          <td scope="row" data-title="Color" class="flex-align-center">
+            <span class="square-4 radius-sm display-inline-block text-middle width-full bg-{{ color.token }}"></span>
+          </td>
+          <td data-title="State token" class="font-mono-2xs">
+            <span class="utility-class font-mono-2xs">'{{ color.family_token }}{% if color.grade_token %}-{{ color.grade_token }}{% endif %}'</span>
+          </td>
+          <td data-title="System token" class="font-mono-2xs">
+            <span >{{ color.system }}</span>
+          </td>
+          <td data-title="Hex equivalent" class="font-mono-2xs">
+            {{ color.value }}
+          </td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+  </tbody>
+</table>
+
 <div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-4 text-bold font-sans-1">
-  <div class="grid-col-1">color</div>
-  <div class="grid-col-4">state token</div>
-  <div class="grid-col-3">system token equivalent</div>
-  <div class="grid-col-fill text-right">hex value</div>
+  <div class="grid-col-1">Color</div>
+  <div class="grid-col-4">State token</div>
+  <div class="grid-col-3">System token equivalent</div>
+  <div class="grid-col-fill text-right">Hex value</div>
 </div>
 
 {% for color in state_colors %}

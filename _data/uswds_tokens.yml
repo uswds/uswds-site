@@ -369,6 +369,31 @@ colors:
       system: orange-60
       theme_var: $theme-accent-warm-darker
   project_state:
+    - token: info-lighter
+      family_token: 'info'
+      grade_token: 'lighter'
+      value: '#e7f6f8'
+      system: cyan-5
+    - token: info-light
+      family_token: 'info'
+      grade_token: 'light'
+      value: '#9ddfeb'
+      system: cyan-20
+    - token: info
+      family_token: 'info'
+      grade_token: false
+      value: '#00bde3'
+      system: cyan-30v
+    - token: info-dark
+      family_token: 'info'
+      grade_token: 'dark'
+      value: '#009ec1'
+      system: cyan-40v
+    - token: info-darker
+      family_token: 'info'
+      grade_token: 'darker'
+      value: '#2c608a'
+      system: blue-60
     - token: error-lighter
       family_token: 'error'
       grade_token: 'lighter'

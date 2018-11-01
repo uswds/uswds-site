@@ -2212,3 +2212,104 @@ h6 + div:not(.usa-accordion-content) {
 pre {
   white-space: pre-wrap;
 }
+
+// Table stuff
+
+$theme-table-responsive-expand-at: 'tablet';
+
+@include at-media-max($theme-table-responsive-expand-at) {
+  .usa-table-responsive-reflow {
+    @include typeset(null, '2xs');
+    display: block;
+    width: 100%;
+
+    caption {
+      display: block;
+    }
+
+    thead {
+      @include sr-only;
+    }
+
+    tbody,
+    tr,
+    th,
+    td,
+    tfoot {
+      border: 0;
+      display: block;
+      padding: 0;
+      text-align: left;
+      white-space: normal;
+    }
+
+    td,
+    th {
+      width: 100%;
+      padding: units(0.5) units(0.5) units(0.5) 0;
+      position: relative;
+      z-index: z(100);
+    }
+
+    td {
+      align-items: baseline;
+      background-color: transparent;
+      display: flex;
+      line-height: lh('ui', 4);
+    }
+
+    th[data-title]:before,
+    td[data-title]:before {
+      @include typeset('ui', 1, 2);
+      @include u-padding-x(1);
+      content: attr(data-title);
+      flex: none;
+      font-weight: fw('normal');
+      margin-right: units(0.5);
+      max-width: units(15);
+      text-align: left;
+      width: 50%;
+    }
+
+    table {
+    }
+
+    tr {
+      background-color: color('white');
+      border: 1px solid;
+      border-radius: radius('md');
+      display: block;
+      padding-bottom: units(2px);
+      position: relative;
+      &::after {
+        @include u-pin('y');
+        @include u-pin('left');
+        content: '';
+        background-color: color('gray-2');
+        border-bottom-left-radius: radius('md');
+        border-top-left-radius: radius('md');
+        display: block;
+        max-width: units(15);
+        position: absolute;
+        width: 50%;
+        z-index: z(0);
+      }
+    }
+
+    tr + tr {
+      margin-top: units(1);
+    }
+
+    td + td {
+      border-top: units(1px) solid color('base-lighter');
+    }
+
+    th:not([data-title]) {
+      font-weight: fw('bold');
+    }
+
+    td:empty {
+      display: none;
+    }
+  }
+}

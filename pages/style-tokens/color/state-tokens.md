@@ -322,7 +322,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Usage">
           <span>
-            .underline-<a href="{{ site.baseurl }}/style-tokens/color/stste-tokens/" class="token">color</a>
+            .underline-<a href="{{ site.baseurl }}/style-tokens/color/state-tokens/" class="token">color</a>
           </span>
         </td>
         <td data-title="Example">

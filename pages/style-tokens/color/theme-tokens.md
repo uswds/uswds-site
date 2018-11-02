@@ -17,7 +17,7 @@ subnav:
 {% assign theme_colors = site.data.uswds_tokens.colors.project_theme %}
 {% assign state_colors = site.data.uswds_tokens.colors.project_state %}
 
-USWDS theme color tokens are designed to be useful and effective for small and large projects. Each theme token is drawn from a [system color token]({{ site.baseurl }}/style-tokens/color/system-tokens/) and system color tokens are the only colors we accept in official components.
+USWDS theme color tokens are designed to be useful and effective for small and large projects.  Each theme token is drawn from a [system color]({{ site.baseurl }}/style-tokens/color/system-tokens/){:.token} token and we only use token-based colors in official components.
 
 {:#uswds-theme-color-tokens}
 ## Theme color tokens

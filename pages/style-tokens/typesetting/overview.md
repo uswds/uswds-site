@@ -162,115 +162,331 @@ USWDS uses **functions**, **mixins**, and **utility classes** to style its compo
 The individual style token sections go into this in more detail, but here's a summary:
 
 ### Font family
-<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
-  <div class="grid-row grid-gap font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
-    <div class="grid-col-2">Token</div>
-    <div class="grid-col-3">Function</div>
-    <div class="grid-col-3">Mixin</div>
-    <div class="grid-col-4">Utility class</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-2"><a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a></div>
-    <div class="grid-col-3">family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>)</div>
-    <div class="grid-col-3">u-font-family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>)</div>
-    <div class="grid-col-4">.font-family-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a></div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-2">'body'</div>
-    <div class="grid-col-3">family('body')</div>
-    <div class="grid-col-3">u-font-family('body')</div>
-    <div class="grid-col-4">.font-family-body</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-base-light">
-    <div class="grid-col-2">'sans'</div>
-    <div class="grid-col-3">family('sans')</div>
-    <div class="grid-col-3">u-font-family('sans')</div>
-    <div class="grid-col-4">.font-family-sans</div>
-  </div>
+<div class="site-table-wrapper">
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col">Token</th>
+        <th scope="col">Function</th>
+        <th scope="col">Mixin</th>
+        <th scope="col">Utility class</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Token">
+          <span>
+            <a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>)
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-font-family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>)
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .font-family-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token">
+          <span>
+            'body'
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            family('body')
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-font-family('body')
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .font-family-body
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token">
+          <span>
+            'sans'
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            family('sans')
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-font-family('sans')
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .font-family-sans
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 ### Font size
-<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
-  <div class="grid-row grid-gap font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
-    <div class="grid-col-2">Tokens</div>
-    <div class="grid-col-3">Function</div>
-    <div class="grid-col-3">Mixin</div>
-    <div class="grid-col-4">Utility class</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-2"><a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a></div>
-    <div class="grid-col-3">size(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)</div>
-    <div class="grid-col-3">u-font-size(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)</div>
-    <div class="grid-col-4">.font-size-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a></div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-2">'ui', 'micro'</div>
-    <div class="grid-col-3">size('ui', 'micro')</div>
-    <div class="grid-col-3">u-font-size('ui', 'micro')</div>
-    <div class="grid-col-4">.font-size-ui-micro</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-base-light">
-    <div class="grid-col-2">'sans', 6</div>
-    <div class="grid-col-3">size('sans', 6)</div>
-    <div class="grid-col-3">u-font-size('sans', 6)</div>
-    <div class="grid-col-4">.font-size-sans-6</div>
-  </div>
+<div class="site-table-wrapper">
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col">Token</th>
+        <th scope="col">Function</th>
+        <th scope="col">Mixin</th>
+        <th scope="col">Utility class</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Token">
+          <span>
+            <a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            size(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-font-size(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .font-size-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token">
+          <span>
+            'ui', 'micro'
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            size('ui', 'micro')
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-font-size('ui', 'micro')
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            —
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token">
+          <span>
+            'sans', 6
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            size('sans', 6)
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-font-size('sans', 6)
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            —
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 ### Family and size together
-<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
-  <div class="grid-row grid-gap font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
-    <div class="grid-col-2">Tokens</div>
-    <div class="grid-col-3">Function</div>
-    <div class="grid-col-3">Mixin</div>
-    <div class="grid-col-4">Utility class</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-2"><a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a></div>
-    <div class="grid-col-3">—</div>
-    <div class="grid-col-3">u-font(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)</div>
-    <div class="grid-col-4">.font-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a></div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-2">'ui', 'micro'</div>
-    <div class="grid-col-3">—</div>
-    <div class="grid-col-3">u-font('ui', 'micro')</div>
-    <div class="grid-col-4">.font-ui-micro</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-base-light">
-    <div class="grid-col-2">'sans', 6</div>
-    <div class="grid-col-3">—</div>
-    <div class="grid-col-3">u-font('sans', 6)</div>
-    <div class="grid-col-4">.font-sans-6</div>
-  </div>
+<div class="site-table-wrapper">
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col">Token</th>
+        <th scope="col">Function</th>
+        <th scope="col">Mixin</th>
+        <th scope="col">Utility class</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Token">
+          <span>
+            <a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            —
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-font(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .font-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token">
+          <span>
+            'ui', 'micro'
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            —
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-font('ui', 'micro')
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .font-ui-micro
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token">
+          <span>
+            'sans', 6
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            —
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-font('sans', 6)
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .font-sans-6
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 ### Line height
-<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
-  <div class="grid-row grid-gap font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
-    <div class="grid-col-2">Tokens</div>
-    <div class="grid-col-3">Function</div>
-    <div class="grid-col-3">Mixin</div>
-    <div class="grid-col-4">Utility class</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light line-height-code-6">
-    <div class="grid-col-2"><a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <br/><a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a></div>
-    <div class="grid-col-3">line-height(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <br/><a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a>)</div>
-    <div class="grid-col-3">u-line-height(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <br/><a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a>)</div>
-    <div class="grid-col-4">.line-height-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a></div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-2">'ui', 1</div>
-    <div class="grid-col-3">line-height('ui', 1)</div>
-    <div class="grid-col-3">u-line-height('ui', 1)</div>
-    <div class="grid-col-4">.line-height-ui-1</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-base-light">
-    <div class="grid-col-2">'sans', 3</div>
-    <div class="grid-col-3">line-height('sans', 3)</div>
-    <div class="grid-col-3">u-line-height('sans', 3)</div>
-    <div class="grid-col-4">.line-height-sans-3</div>
-  </div>
+<div class="site-table-wrapper">
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col">Token</th>
+        <th scope="col">Function</th>
+        <th scope="col">Mixin</th>
+        <th scope="col">Utility class</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs line-height-sans-6">
+      <tr>
+        <td scope="row" data-title="Token">
+          <span>
+            <a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <br/><a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a>
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            line-height(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <br/><a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a>)
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-line-height(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <br/><a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a>)
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .line-height-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token">
+          <span>
+            'ui', 1
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            line-height('ui', 1)
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-line-height('ui', 1)
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            line-height-ui-1
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token">
+          <span>
+            'sans', 3
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            line-height('sans', 3)
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-line-height('sans', 3)
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .line-height-sans-3
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 ### Family, size, and line height together
@@ -278,43 +494,129 @@ The `typeset()` mixin outlined below accepts the tokens listed as well as a spec
 
 We use the `typeset()` mixin on all our components to get the effect of default `<body>` element styling without having to explicitly style the `<body>` element.
 
-<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
-  <div class="grid-row grid-gap font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
-    <div class="grid-col-4">Tokens</div>
-    <div class="grid-col-1">Function</div>
-    <div class="grid-col-5">Mixin</div>
-    <div class="grid-col-2">Utility class</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-4"><a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a></div>
-    <div class="grid-col-1">—</div>
-    <div class="grid-col-5">typeset(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a>)</div>
-    <div class="grid-col-2">—</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-4">'ui', 'micro', 1</div>
-    <div class="grid-col-1">—</div>
-    <div class="grid-col-5">typeset('ui', 'micro', 1)</div>
-    <div class="grid-col-2">—</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-4">'ui', null, 3</div>
-    <div class="grid-col-1">—</div>
-    <div class="grid-col-5">typeset('ui', null, 3)</div>
-    <div class="grid-col-2">—</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-4">'ui', xs, null</div>
-    <div class="grid-col-1">—</div>
-    <div class="grid-col-5">typeset('ui', xs)</div>
-    <div class="grid-col-2">—</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-base-light">
-    <div class="grid-col-4">'ui', null, null</div>
-    <div class="grid-col-1">—</div>
-    <div class="grid-col-5">typeset('ui')</div>
-    <div class="grid-col-2">—</div>
-  </div>
+<div class="site-table-wrapper">
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col">Token</th>
+        <th scope="col">Function</th>
+        <th scope="col">Mixin</th>
+        <th scope="col">Utility class</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs line-height-sans-6">
+      <tr>
+        <td scope="row" data-title="Token">
+          <span>
+            <a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a>
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            —
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            typeset(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a>)
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            —
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token">
+          <span>
+            'ui', 'micro', 1
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            —
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            typeset('ui', 'micro', 1)
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            —
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token">
+          <span>
+            'ui', null, 3
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            —
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            typeset('ui', null, 3)
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            —
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token">
+          <span>
+            'ui', xs, null
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            —
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            typeset('ui', xs)
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            —
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token">
+          <span>
+            'ui', null, null
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            —
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            typeset('ui')
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            —
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 {:.margin-top-4}

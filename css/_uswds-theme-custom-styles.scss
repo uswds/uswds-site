@@ -2409,7 +2409,7 @@ $theme-table-column-gap: 2;
 }
 
 .site-table-note {
-  @include typeset('sans', '2xs', 3);
+  @include typeset('sans', '2xs', 4);
   padding: units(2);
   background-color: color('gold-20v');
   border-radius: radius('md');

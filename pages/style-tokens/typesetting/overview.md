@@ -58,6 +58,7 @@ To make different typefaces appear the same size (here called the _target size_)
 Each [supported typeface]({{ site.baseurl }}/style-tokens/typesetting/font-family/) is normalized to a target value determined by the optical size of common system fonts — specifically Apple's typeface San Francisco and Google's typeface Roboto.
 
 {% assign target_font_size = 24 %}
+{% assign target_line_height = 1.35 %}
 
 <div class="site-table-wrapper maxw-tablet">
   <div class="site-table-note">
@@ -68,7 +69,7 @@ Each [supported typeface]({{ site.baseurl }}/style-tokens/typesetting/font-famil
     <thead>
       <tr>
         <th scope="col">Supported typeface</th>
-        <th scope="col">Multipler</th>
+        <th scope="col">Normalization</th>
         <th scope="col">Final output (px)</th>
       </tr>
     </thead>
@@ -80,7 +81,7 @@ Each [supported typeface]({{ site.baseurl }}/style-tokens/typesetting/font-famil
               {{ font.name }}
             </span>
           </td>
-          <td data-title="Multiplier">
+          <td data-title="Normalization">
             <span>
               {{ font.normal | round: 2 }}
             </span>
@@ -106,96 +107,53 @@ USWDS has six target line heights in its [line-height]({{ site.baseurl }}/style-
 
 Since we use normalization on font sizing, we must also normalize line height to hit the target line height:
 
-<div class="bg-white radius-md border padding-x-2 padding-top-2">
-  <div class="line-height-mono-1 font-mono-2 grid-row">
-    <div class="grid-col-auto padding-05 bg-ink text-white radius-sm">Size token: 10
-    </div>
-    <div class="grid-col-auto padding-05 bg-secondary-lighter radius-sm margin-left-1">target size: 24px
-    </div>
+<div class="site-table-wrapper">
+  <div class="site-table-note">
+    For <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a> token <code>10</code> (24px) and <a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a> token <code>3</code> ({{ target_line_height }} / {{ target_line_height | times: target_font_size }}px) we see the following normalized ouput:
   </div>
-  <div class="line-height-mono-1 font-mono-2 grid-row margin-top-05">
-    <div class="grid-col-auto padding-05 bg-ink text-white radius-sm">Line height token: 3
-    </div>
-    <div class="grid-col-auto padding-05 bg-secondary-lighter radius-sm margin-left-1">target line height: 1.35 (32.4px)
-    </div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center margin-bottom-1 padding-bottom-1 border-bottom-2px margin-top-2 text-bold">
-    <div class="grid-col-4 text-700 font-sans-1">Supported typeface</div>
-    <div class="grid-col-2 text-700 font-sans-1">Normalization value</div>
-    <div class="grid-col-2 text-700 font-sans-1">Final size (px)</div>
-    <div class="grid-col-2 text-700 font-sans-1">Final line height</div>
-    <div class="grid-col-2 text-700 font-sans-1">Final line height (px)</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-4 text-300">Georgia</div>
-    <div class="grid-col-2 text-300">1.05</div>
-    <div class="grid-col-2 text-300">25.2px</div>
-    <div class="grid-col-2 text-300">1.29</div>
-    <div class="grid-col-2 text-300">32.5px</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-4 text-300">Helvetica</div>
-    <div class="grid-col-2 text-300">1.01</div>
-    <div class="grid-col-2 text-300">24.2px</div>
-    <div class="grid-col-2 text-300">1.34</div>
-    <div class="grid-col-2 text-300">32.4px</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-4 text-300">Merriweather</div>
-    <div class="grid-col-2 text-300">0.94</div>
-    <div class="grid-col-2 text-300">22.6px</div>
-    <div class="grid-col-2 text-300">1.44</div>
-    <div class="grid-col-2 text-300">32.5px</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-4 text-300">Open Sans</div>
-    <div class="grid-col-2 text-300">1.01</div>
-    <div class="grid-col-2 text-300">24.2px</div>
-    <div class="grid-col-2 text-300">1.34</div>
-    <div class="grid-col-2 text-300">32.4px</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-4 text-300">Public Sans</div>
-    <div class="grid-col-2 text-300">1.00</div>
-    <div class="grid-col-2 text-300">24px</div>
-    <div class="grid-col-2 text-300">1.35</div>
-    <div class="grid-col-2 text-300">32.4px</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-4 text-300">Roboto Mono</div>
-    <div class="grid-col-2 text-300">0.95</div>
-    <div class="grid-col-2 text-300">22.8px</div>
-    <div class="grid-col-2 text-300">1.42</div>
-    <div class="grid-col-2 text-300">32.4px</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-4 text-300">Source Sans Pro</div>
-    <div class="grid-col-2 text-300">1.06</div>
-    <div class="grid-col-2 text-300">25.6px</div>
-    <div class="grid-col-2 text-300">1.27</div>
-    <div class="grid-col-2 text-300">32.5px</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-4 text-300">System fonts</div>
-    <div class="grid-col-2 text-300">1.00</div>
-    <div class="grid-col-2 text-300">24px</div>
-    <div class="grid-col-2 text-300">1.35</div>
-    <div class="grid-col-2 text-300">32.4px</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-4 text-300">Tahoma</div>
-    <div class="grid-col-2 text-300">1.00</div>
-    <div class="grid-col-2 text-300">24px</div>
-    <div class="grid-col-2 text-300">1.35</div>
-    <div class="grid-col-2 text-300">32.4px</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 border-gray-10 font-mono-3">
-    <div class="grid-col-4 text-300">Verdana</div>
-    <div class="grid-col-2 text-300">0.99</div>
-    <div class="grid-col-2 text-300">23.8px</div>
-    <div class="grid-col-2 text-300">1.36</div>
-    <div class="grid-col-2 text-300">32.4px</div>
-  </div>
+
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col">Supported typeface</th>
+        <th scope="col">Normalization</th>
+        <th scope="col">Final size (px)</th>
+        <th scope="col">Final line height</th>
+        <th scope="col">Final line height (px)</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      {% for font in page.data_typefaces %}
+        <tr>
+          <td scope="row" data-title="Typeface">
+            <span>
+              {{ font.name }}
+            </span>
+          </td>
+          <td data-title="Normalization">
+            <span>
+              {{ font.normal | round: 2 }}
+            </span>
+          </td>
+          <td data-title="Size (px)">
+            <span>
+              {{ target_font_size | times: font.normal | round: 2 }}
+            </span>
+          </td>
+          <td data-title="Line height">
+            <span>
+              {{ target_line_height | divided_by: font.normal | round: 2 }}
+            </span>
+          </td>
+          <td data-title="Line height (px)">
+            <span>
+              {{ target_line_height | times: target_font_size }}
+            </span>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 </div>
 
 ## Typesetting with tokens

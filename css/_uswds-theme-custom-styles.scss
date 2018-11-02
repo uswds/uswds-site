@@ -433,7 +433,7 @@ body {
 }
 
 .site-h2 {
-  @include typeset('sans', 'xl', 3);
+  @include typeset('sans', 'xl', 2);
   color: color($site-ink);
   margin-top: units(4);
 
@@ -448,6 +448,7 @@ body {
   @include add-responsive-site-margins;
   margin-bottom: units(6);
   max-width: units($theme-site-max-width);
+  overflow: hidden;
   position: relative;
 
   header {
@@ -2403,6 +2404,20 @@ $theme-table-column-gap: 2;
   padding-left: 0;
 
   @include at-media($theme-table-responsive-expand-at) {
-    padding-left: units(2);    
+    padding-left: units(2);
+  }
+}
+
+.site-table-note {
+  @include typeset('sans', '2xs', 3);
+  padding: units(2);
+  background-color: color('gray-5');
+  border-radius: radius('md');
+  margin-bottom: units(1);
+
+  @include at-media($theme-table-responsive-expand-at) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 0;
   }
 }

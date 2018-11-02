@@ -178,18 +178,18 @@ If we use color intentionally, consistently, and sensitively, it can make a big 
 
 ## References
 - Accessibility: Color and contrast
-  [https://accessibility.digital.gov/visual-design/color-and-contrast](https://accessibility.digital.gov/visual-design/color-and-contrast){:.text-no-wrap}
+  [https://accessibility.digital.gov/visual-design/color-and-contrast](https://accessibility.digital.gov/visual-design/color-and-contrast){:.display-block}
 - Color and readability
-  [https://www.w3.org/WAI/RD/2012/text-customization/r11](https://www.w3.org/WAI/RD/2012/text-customization/r11){:.text-no-wrap}
+  [https://www.w3.org/WAI/RD/2012/text-customization/r11](https://www.w3.org/WAI/RD/2012/text-customization/r11){:.display-block}
 - Improving accessibility for colorblind users
-  [https://www.smashingmagazine.com/2016/06/improving-color-accessibility-for-color-blind-users/](https://www.smashingmagazine.com/2016/06/improving-color-accessibility-for-color-blind-users/){:.text-no-wrap}
+  [https://www.smashingmagazine.com/2016/06/improving-color-accessibility-for-color-blind-users/](https://www.smashingmagazine.com/2016/06/improving-color-accessibility-for-color-blind-users/){:.display-block}
 - Introduction to Irlen Syndrome
-  [https://irlen.com/what-is-irlen-syndrome/](https://irlen.com/what-is-irlen-syndrome/){:.text-no-wrap}
+  [https://irlen.com/what-is-irlen-syndrome/](https://irlen.com/what-is-irlen-syndrome/){:.display-block}
 - Making content accessible for those with dyslexia
-  [https://www.dyslexic.com/blog/quick-guide-making-content-accessible/](https://www.dyslexic.com/blog/quick-guide-making-content-accessible/){:.text-no-wrap}
+  [https://www.dyslexic.com/blog/quick-guide-making-content-accessible/](https://www.dyslexic.com/blog/quick-guide-making-content-accessible/){:.display-block}
 - W3C: Contrast levels for readability
-  [https://www.w3.org/WAI/test-evaluate/preliminary/#contrast](https://www.w3.org/WAI/test-evaluate/preliminary/#contrast){:.text-no-wrap}
+  [https://www.w3.org/WAI/test-evaluate/preliminary/#contrast](https://www.w3.org/WAI/test-evaluate/preliminary/#contrast){:.display-block}
 - W3C: Gap analysis of the state of accessibility for people with learning disabilities and cognitive disabilities
-  [https://w3c.github.io/wcag/coga/gap-analysis.html](https://w3c.github.io/wcag/coga/gap-analysis.html){:.text-no-wrap}
+  [https://w3c.github.io/wcag/coga/gap-analysis.html](https://w3c.github.io/wcag/coga/gap-analysis.html){:.display-block}
 - W3C: Low vision needs
-  [https://www.w3.org/TR/low-vision-needs/](https://www.w3.org/TR/low-vision-needs/){:.text-no-wrap}
+  [https://www.w3.org/TR/low-vision-needs/](https://www.w3.org/TR/low-vision-needs/){:.display-block}

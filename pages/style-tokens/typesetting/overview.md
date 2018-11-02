@@ -13,6 +13,27 @@ subnav:
     href: '#normalization'
   - text: Typesetting with tokens
     href: '#typesetting-with-tokens'
+data_typefaces:
+  - name: Georgia
+    normal: 1.05
+  - name: Helvetica
+    normal: 1.01
+  - name: Merriweather
+    normal: 0.94
+  - name: Open Sans
+    normal: 1.01
+  - name: Public Sans
+    normal: 1.00
+  - name: Roboto Mono
+    normal: 0.95
+  - name: Source Sans Pro
+    normal: 1.06
+  - name: System fonts
+    normal: 1
+  - name: Tahoma
+    normal: 1
+  - name: Verdana
+    normal: 0.99
 ---
 
 ## Normalization
@@ -36,68 +57,43 @@ To make different typefaces appear the same size (here called the _target size_)
 
 Each [supported typeface]({{ site.baseurl }}/style-tokens/typesetting/font-family/) is normalized to a target value determined by the optical size of common system fonts — specifically Apple's typeface San Francisco and Google's typeface Roboto.
 
-<div class="measure-3 bg-white radius-md border padding-x-2 padding-top-2">
-  <div class="line-height-mono-1 font-mono-2 grid-row">
-    <div class="grid-col-auto padding-05 bg-ink text-white radius-sm">Size token: 10
-    </div>
-    <div class="grid-col-auto padding-05 bg-secondary-lighter radius-sm margin-left-1">target size: 24px
-    </div>
+{% assign target_font_size = 24 %}
+
+<div class="site-table-wrapper maxw-tablet">
+  <div class="site-table-note">
+    For <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a> token <code>10</code> (24px) we see the following normalized ouput:
   </div>
-  <div class="grid-row grid-gap flex-align-center margin-bottom-1 padding-bottom-1 border-bottom-2px margin-top-2 text-bold">
-    <div class="grid-col-6 text-700 font-sans-1">Supported typeface</div>
-    <div class="grid-col-3 text-700 font-sans-1">Multiplier</div>
-    <div class="grid-col-3 text-700 font-sans-1">Final output (px)</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-6 text-300">Georgia</div>
-    <div class="grid-col-3 text-300">1.05</div>
-    <div class="grid-col-3 text-300">25.2px</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-6 text-300">Helvetica</div>
-    <div class="grid-col-3 text-300">1.01</div>
-    <div class="grid-col-3 text-300">24.2px</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-6 text-300">Merriweather</div>
-    <div class="grid-col-3 text-300">0.94</div>
-    <div class="grid-col-3 text-300">22.6px</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-6 text-300">Open Sans</div>
-    <div class="grid-col-3 text-300">1.01</div>
-    <div class="grid-col-3 text-300">24.2px</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-6 text-300">Public Sans</div>
-    <div class="grid-col-3 text-300">1.00</div>
-    <div class="grid-col-3 text-300">24px</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-6 text-300">Roboto Mono</div>
-    <div class="grid-col-3 text-300">0.95</div>
-    <div class="grid-col-3 text-300">22.8px</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-6 text-300">Source Sans Pro</div>
-    <div class="grid-col-3 text-300">1.06</div>
-    <div class="grid-col-3 text-300">25.6px</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-6 text-300">System fonts</div>
-    <div class="grid-col-3 text-300">1.00</div>
-    <div class="grid-col-3 text-300">24px</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-6 text-300">Tahoma</div>
-    <div class="grid-col-3 text-300">1.00</div>
-    <div class="grid-col-3 text-300">24px</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 border-gray-10 font-mono-3">
-    <div class="grid-col-6 text-300">Verdana</div>
-    <div class="grid-col-3 text-300">0.99</div>
-    <div class="grid-col-3 text-300">23.8px</div>
-  </div>
+
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col">Supported typeface</th>
+        <th scope="col">Multipler</th>
+        <th scope="col">Final output (px)</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      {% for font in page.data_typefaces %}
+        <tr>
+          <td scope="row" data-title="Typeface">
+            <span>
+              {{ font.name }}
+            </span>
+          </td>
+          <td data-title="Multiplier">
+            <span>
+              {{ font.normal | round: 2 }}
+            </span>
+          </td>
+          <td data-title="Output (px)">
+            <span>
+              {{ target_font_size | times: font.normal | round: 2 }}
+            </span>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 </div>
 
 ### Rem-based font sizing

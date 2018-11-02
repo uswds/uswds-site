@@ -102,30 +102,35 @@ families:
 
 {% assign system_colors = site.data.uswds_tokens.colors.system %}
 
-<div class="padding-top-3 text-normal maxw-tablet-lg">
+<div class="padding-top-1 tablet:padding-top-3 maxw-tablet-lg">
+
   {% for family in page.families %}
     {% capture last %}{{ family | split: '_' | last }}{% endcapture %}
     {% capture this_title %}{{ family | replace: '_', ' ' | capitalize }}{% endcapture %}
     {% if last == 'vivid' %}
       {% capture this_title %}{{ family | replace: '_', ' ' | replace: ' vivid', '' | capitalize }}<span class="text-normal"> vivid</span>{% endcapture %}
     {% endif%}
-    <div class="bg-white padding-y-2 padding-x-3 radius-md border border-base-light margin-bottom-2">
-      <h2 class="font-sans-10 margin-top-0 margin-bottom-1 text-ink" id="{{ family | replace: '_', '-' }}">{{ this_title }}</h2>
-
-      <div class="grid-row grid-gap flex-align-center margin-bottom-1 padding-bottom-1 border-bottom-2px margin-top-2 text-bold font-sans-1">
-        <div class="grid-col-2">Color</div>
-        <div class="grid-col-2">Family</div>
-        <div class="grid-col-1">Grade</div>
-        <div class="grid-col-2">Variant</div>
-        <div class="grid-col-3">System color token</div>
-        <div class="grid-col-fill text-right">Hex</div>
-      </div>
-
-      {% for color in system_colors[family] %}
-        {% include style/swatch-condensed.html %}
-      {% endfor %}
+    <div class="site-table-wrapper">
+      <table class="usa-table-borderless site-table-responsive">
+        <caption class="site-caption-swatches" id="{{ family | replace: '_', '-' }}">{{ this_title }}</caption>
+        <thead>
+          <tr>
+            <th scope="col">Color</th>
+            <th scope="col">Family</th>
+            <th scope="col">Grade</th>
+            <th scope="col">Variant</th>
+            <th scope="col">System token</th>
+            <th scope="col" class="text-right">Hex</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for color in system_colors[family] %}
+            {% include style/swatch-condensed.html %}
+          {% endfor %}
+        </tbody>
+      </table>
     </div>
-    {% endfor %}
+  {% endfor %}
 </div>
 
 ## Using color tokens

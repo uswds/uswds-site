@@ -2232,6 +2232,10 @@ $theme-table-column-gap: 2;
   .site-table-responsive {
     margin: 0;
   }
+
+  & + .site-table-wrapper {
+    margin-top: units(3);
+  }
 }
 
 .site-table-responsive {
@@ -2309,6 +2313,10 @@ $theme-table-column-gap: 2;
         z-index: z(0);
       }
 
+      &.is-empty {
+        display: none;
+      }
+
       & + tr {
         margin-top: units(1);
       }
@@ -2384,5 +2392,17 @@ $theme-table-column-gap: 2;
 
   table & {
     display: block;
+  }
+}
+
+.site-caption-swatches {
+  @include typeset('sans', 10, 2);
+  color: color('ink');
+  margin-top: units(2);
+  margin-bottom: units(1);
+  padding-left: 0;
+
+  @include at-media($theme-table-responsive-expand-at) {
+    padding-left: units(2);    
   }
 }

@@ -125,7 +125,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Usage">
           <span>
-            color: color(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
+            color: color(<a href="{{ site.baseurl }}/style-tokens/color/state-tokens/" class="token">color</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -143,7 +143,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Usage">
           <span>
-            @include u-bg(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
+            @include u-bg(<a href="{{ site.baseurl }}/style-tokens/color/state-tokens/" class="token">color</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -161,7 +161,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Usage">
           <span>
-            @include u-text(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)<br/>
+            @include u-text(<a href="{{ site.baseurl }}/style-tokens/color/state-tokens/" class="token">color</a>)<br/>
           </span>
         </td>
         <td data-title="Example">
@@ -179,7 +179,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Usage">
           <span>
-            @include u-border(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
+            @include u-border(<a href="{{ site.baseurl }}/style-tokens/color/state-tokens/" class="token">color</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -197,7 +197,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Usage">
           <span>
-            @include u-underline(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
+            @include u-underline(<a href="{{ site.baseurl }}/style-tokens/color/state-tokens/" class="token">color</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -214,7 +214,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Usage">
           <span>
-            $theme-variable: <a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>
+            $theme-variable: <a href="{{ site.baseurl }}/style-tokens/color/state-tokens/" class="token">color</a>
           </span>
         </td>
         <td data-title="Example">
@@ -232,7 +232,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Usage">
           <span>
-            @include u-underline(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
+            @include u-underline(<a href="{{ site.baseurl }}/style-tokens/color/state-tokens/" class="token">color</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -250,7 +250,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Usage">
           <span>
-            .bg-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>
+            .bg-<a href="{{ site.baseurl }}/style-tokens/color/state-tokens/" class="token">color</a>
           </span>
         </td>
         <td data-title="Example">
@@ -268,7 +268,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Usage">
           <span>
-            .border-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>
+            .border-<a href="{{ site.baseurl }}/style-tokens/color/state-tokens/" class="token">color</a>
           </span>
         </td>
         <td data-title="Example">
@@ -286,7 +286,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Usage">
           <span>
-            .text-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>
+            .text-<a href="{{ site.baseurl }}/style-tokens/color/state-tokens/" class="token">color</a>
           </span>
         </td>
         <td data-title="Example">
@@ -304,7 +304,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Usage">
           <span>
-            .outline-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>
+            .outline-<a href="{{ site.baseurl }}/style-tokens/color/state-tokens/" class="token">color</a>
           </span>
         </td>
         <td data-title="Example">
@@ -322,7 +322,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         </td>
         <td data-title="Usage">
           <span>
-            .underline-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>
+            .underline-<a href="{{ site.baseurl }}/style-tokens/color/stste-tokens/" class="token">color</a>
           </span>
         </td>
         <td data-title="Example">

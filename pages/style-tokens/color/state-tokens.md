@@ -136,9 +136,9 @@ Your context and coding style determine how you access USWDS color tokens in cod
       </tr>
       <tr>
         <td scope="row" data-title="Context">
-          <span>
-            <span class="text-bold font-sans-3">mixin</span><br/>
-            <span class="font-sans-3">background-color</span>
+          <span class="font-sans-3">
+            <span class="text-bold">mixin</span><br/>
+            <span>background-color</span>
           </span>
         </td>
         <td data-title="Usage">
@@ -154,9 +154,9 @@ Your context and coding style determine how you access USWDS color tokens in cod
       </tr>
       <tr>
         <td scope="row" data-title="Context">
-          <span>
-            <span class="text-bold font-sans-3">mixin</span><br/>
-            <span class="font-sans-3">color</span>
+          <span class="font-sans-3">
+            <span class="text-bold">mixin</span><br/>
+            <span>color</span>
           </span>
         </td>
         <td data-title="Usage">
@@ -172,9 +172,9 @@ Your context and coding style determine how you access USWDS color tokens in cod
       </tr>
       <tr>
         <td scope="row" data-title="Context">
-          <span>
-            <span class="text-bold font-sans-3">mixin</span><br/>
-            <span class="font-sans-3">border-color</span>
+          <span class="font-sans-3">
+            <span class="text-bold">mixin</span><br/>
+            <span>border-color</span>
           </span>
         </td>
         <td data-title="Usage">
@@ -190,9 +190,9 @@ Your context and coding style determine how you access USWDS color tokens in cod
       </tr>
       <tr>
         <td scope="row" data-title="Context">
-          <span>
-            <span class="text-bold font-sans-3">mixin</span><br/>
-            <span class="font-sans-3">text-decoration-color</span>
+          <span class="font-sans-3">
+            <span class="text-bold">mixin</span><br/>
+            <span>text-decoration-color</span>
           </span>
         </td>
         <td data-title="Usage">
@@ -225,9 +225,9 @@ Your context and coding style determine how you access USWDS color tokens in cod
       </tr>
       <tr>
         <td scope="row" data-title="Context">
-          <span>
-            <span class="text-bold font-sans-3">mixin</span><br/>
-            <span class="font-sans-3">text-decoration-color</span>
+          <span class="font-sans-3">
+            <span class="text-bold">mixin</span><br/>
+            <span>text-decoration-color</span>
           </span>
         </td>
         <td data-title="Usage">
@@ -243,9 +243,9 @@ Your context and coding style determine how you access USWDS color tokens in cod
       </tr>
       <tr>
         <td scope="row" data-title="Context">
-          <span>
-            <span class="text-bold font-sans-3">utility</span><br/>
-            <span class="text-normal">background-color</span>
+          <span class="font-sans-3">
+            <span class="text-bold">utility</span><br/>
+            <span>background-color</span>
           </span>
         </td>
         <td data-title="Usage">
@@ -261,9 +261,9 @@ Your context and coding style determine how you access USWDS color tokens in cod
       </tr>
       <tr>
         <td scope="row" data-title="Context">
-          <span>
-            <span class="text-bold font-sans-3">utility</span><br/>
-            <span class="text-normal">border-color</span>
+          <span class="font-sans-3">
+            <span class="text-bold">utility</span><br/>
+            <span>border-color</span>
           </span>
         </td>
         <td data-title="Usage">
@@ -279,9 +279,9 @@ Your context and coding style determine how you access USWDS color tokens in cod
       </tr>
       <tr>
         <td scope="row" data-title="Context">
-          <span>
-            <span class="text-bold font-sans-3">utility</span><br/>
-            <span class="text-normal">color</span>
+          <span class="font-sans-3">
+            <span class="text-bold">utility</span><br/>
+            <span>color</span>
           </span>
         </td>
         <td data-title="Usage">
@@ -297,9 +297,9 @@ Your context and coding style determine how you access USWDS color tokens in cod
       </tr>
       <tr>
         <td scope="row" data-title="Context">
-          <span>
-            <span class="text-bold font-sans-3">utility</span><br/>
-            <span class="text-normal">outline-color</span>
+          <span class="font-sans-3">
+            <span class="text-bold">utility</span><br/>
+            <span>outline-color</span>
           </span>
         </td>
         <td data-title="Usage">
@@ -315,9 +315,9 @@ Your context and coding style determine how you access USWDS color tokens in cod
       </tr>
       <tr>
         <td scope="row" data-title="Context">
-          <span>
-            <span class="text-bold font-sans-3">utility</span><br/>
-            <span class="text-normal">text-decoration-color</span>
+          <span class="font-sans-3">
+            <span class="text-bold">utility</span><br/>
+            <span>text-decoration-color</span>
           </span>
         </td>
         <td data-title="Usage">

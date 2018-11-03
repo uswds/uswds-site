@@ -45,7 +45,7 @@ Typefaces vary in optical size. This means that at any specific pixel value, an 
 {:.padding-top-2}
 ![optical size of typefaces]({{ site.baseurl }}/assets/img/style-tokens/font-comparison.svg)
 
-USWDS 2.0 is designed so each size token outputs a consistent optical size regardless of the typeface. This makes our guidance more reliable and our theming more flexible.
+USWDS 2 is designed so each size token outputs a consistent optical size regardless of the typeface. This makes our guidance more reliable and our theming more flexible.
 
 {:.font-sans-md}
 ### Fonts with normalization applied
@@ -98,7 +98,7 @@ Each [supported typeface]({{ site.baseurl }}/style-tokens/typesetting/font-famil
 </div>
 
 ### Rem-based font sizing
-In USWDS, the final font size is output not in pixels but in `rem` (a proportion of the page's root font size). If you have `$theme-respect-user-font-size` set to `true` in your theme settings, the root font size is set to `100%` and typescale is calculated based on `16px`. If `$theme-respect-user-font-size` set to `false`, the root font size is set to the value of `$theme-root-font-size` and typescale is calculated based on that root.
+In USWDS, the final font size is output not in pixels but in `rem` (a multiple of the page's root font size). If you have `$theme-respect-user-font-size` set to `true` in your theme settings, the root font size is set to `100%` and typescale is calculated based on `16px`. If `$theme-respect-user-font-size` set to `false`, the root font size is set to the value of `$theme-root-font-size` and typescale is calculated based on that root.
 
 Since both the `rem` and absolute `px` values change depending on the theme settings and the typeface, our documentation displays only the `px` value of the target.
 

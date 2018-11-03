@@ -204,7 +204,7 @@ $theme-type-scale-3xl:      15;
 </div>
 
 ## Using size tokens
-Your context and coding style determine how you access USWDS font size tokens in code. Because of [font size normalization]({{ site.baseurl }}/style-tokens/typesetting/), font size functions, utilities, amd mixins also require a [family]({{ site.baseurl }}/style-tokens/typesetting/font-family/){:.token} token.
+Your context and coding style determine how you access USWDS font size tokens in code. Because of [font size normalization]({{ site.baseurl }}/style-tokens/typesetting/), font size functions, utilities, and mixins also require a [family]({{ site.baseurl }}/style-tokens/typesetting/font-family/){:.token} token.
 
 <div class="site-table-wrapper">
   <table class="usa-table-borderless site-table-responsive">

@@ -42,6 +42,53 @@ utilities:
   | concat: basic_colors
   %}
 
+{% assign colors = site.data.tokens.color %}
+{% assign system-colors =
+  colors.required
+  | concat: colors.system.red
+  | concat: colors.system.red-vivid
+  | concat: colors.system.red-warm
+  | concat: colors.system.red-warm-vivid
+  | concat: colors.system.orange
+  | concat: colors.system.orange-vivid
+  | concat: colors.system.orange-warm
+  | concat: colors.system.orange-warm-vivid
+  | concat: colors.system.gold
+  | concat: colors.system.gold-vivid
+  | concat: colors.system.yellow
+  | concat: colors.system.yellow-vivid
+  | concat: colors.system.green
+  | concat: colors.system.green-vivid
+  | concat: colors.system.green-warm
+  | concat: colors.system.green-warm-vivid
+  | concat: colors.system.green-cool
+  | concat: colors.system.green-cool-vivid
+  | concat: colors.system.mint
+  | concat: colors.system.mint-vivid
+  | concat: colors.system.mint-cool
+  | concat: colors.system.mint-cool-vivid
+  | concat: colors.system.cyan
+  | concat: colors.system.cyan-vivid
+  | concat: colors.system.blue
+  | concat: colors.system.blue-vivid
+  | concat: colors.system.blue-warm
+  | concat: colors.system.blue-warm-vivid
+  | concat: colors.system.indigo
+  | concat: colors.system.indigo-vivid
+  | concat: colors.system.indigo-warm
+  | concat: colors.system.indigo-warm-vivid
+  | concat: colors.system.indigo-cool
+  | concat: colors.system.indigo-cool-vivid
+  | concat: colors.system.violet
+  | concat: colors.system.violet-vivid
+  | concat: colors.system.violet-warm
+  | concat: colors.system.violet-warm-vivid
+  | concat: colors.system.magenta
+  | concat: colors.system.magenta-vivid
+  | concat: colors.system.gray
+  | concat: colors.system.gray-warm
+  | concat: colors.system.gray-cool %}
+
 <div class="utilities-properties">
   <h3 class="utilities-property-title">CSS properties</h3>
   <div class="margin-top-1">
@@ -80,11 +127,18 @@ utilities:
 
       <div class="grid-row">
         {% for color in theme_colors %}
+          {% assign system = system-colors | where: 'token', color.default %}
+          {% assign value = system[0].value %}
+          {% assign grade = color.default
+            | regexreplace: '.+?(\d+).*?$', '\1'
+            | times: 1 %}
+
           <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-            <span class="radius-md padding-05 text-{{ color.token }}{% if color.reverse %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
+            <span class="radius-md padding-05 text-{{ color.token }}{% if grade < 50 %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
-              {{ color.value }}
+              {% assign system = system-colors | where: 'token', color.default %}
+              {{ system[0].value }}
             </span>
           </div>
         {% endfor %}
@@ -94,8 +148,25 @@ utilities:
 
       <div class="grid-row">
         {% for color in grayscale_colors %}
+          {% assign system = system-colors | where: 'token', color.default %}
+          {% assign value = system[0].value %}
+          {% if color.default %}
+            {% assign grade = color.default
+              | regexreplace: '.+?(\d+).*?$', '\1'
+              | times: 1 %}
+          {% else %}
+            {% if color.token contains 'white' %}
+              {% assign grade = 0 %}
+            {% elsif color.token contains 'black' %}
+              {% assign grade = 100 %}
+            {% else %}
+              {% assign grade = color.token
+                | regexreplace: '.+?(\d+).*?$', '\1'
+                | times: 1 %}
+            {% endif %}
+          {% endif %}
           <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-            <span class="radius-md padding-05 text-{{ color.token }}{% if color.reverse %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
+            <span class="radius-md padding-05 text-{{ color.token }}{% if grade < 50 %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
               {{ color.value }}
@@ -108,11 +179,28 @@ utilities:
 
       <div class="grid-row">
         {% for color in basic_colors %}
+          {% assign system = system-colors | where: 'token', color.default %}
+          {% assign value = system[0].value %}
+          {% if color.default %}
+            {% assign grade = color.default
+              | regexreplace: '.+?(\d+).*?$', '\1'
+              | times: 1 %}
+          {% else %}
+            {% if color.token contains 'white' %}
+              {% assign grade = 0 %}
+            {% elsif color.token contains 'black' %}
+              {% assign grade = 100 %}
+            {% else %}
+              {% assign grade = color.token
+                | regexreplace: '.+?(\d+).*?$', '\1'
+                | times: 1 %}
+            {% endif %}
+          {% endif %}
           <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-            <span class="radius-md padding-05 text-{{ color.token }}{% if color.reverse %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
+            <span class="radius-md padding-05 text-{{ color.token }}{% if grade < 50 %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
-              {{ color.value }}
+              {{ value }}
             </span>
           </div>
         {% endfor %}
@@ -142,6 +230,8 @@ utilities:
       <h3 class="font-sans-4 margin-top-0 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Project theme colors <a class="utility-examples-helper" href="{{ site.baseurl }}/style-tokens/color/theme-tokens/">Read more about project theme colors</a></h3>
       <div class="grid-row">
         {% for color in theme_colors %}
+          {% assign system = system-colors | where: 'token', color.default %}
+          {% assign value = system[0].value %}
           <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center measure-none">
             <span class="flex-fill">
               <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
@@ -149,7 +239,7 @@ utilities:
             </span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
-              {{ color.value }}
+              {{ value }}
             </span>
           </p>
         {% endfor %}
@@ -178,6 +268,8 @@ utilities:
       <h3 class="font-sans-4 margin-top-4 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Basic palette</h3>
       <div class="grid-row">
         {% for color in basic_colors %}
+          {% assign system = system-colors | where: 'token', color.default %}
+          {% assign value = system[0].value %}
           <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center measure-none">
             <span class="flex-fill">
               <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
@@ -185,7 +277,7 @@ utilities:
             </span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
-              {{ color.value }}
+              {{ value }}
             </span>
           </p>
         {% endfor %}
@@ -203,19 +295,31 @@ utilities:
   </div>
   <dl class="output-list">
     {% for color in all_colors %}
+      {% if color.default %}
+        {% assign system = system-colors | where: 'token', color.default %}
+        {% assign value = system[0].value %}
+      {% else %}
+        {% assign value = color.value %}
+      {% endif %}
       <dt class="output-utility">.text-{{ color.token }}</dt>
       <dd class="output-css">color: <span class="output-token">color('{{ color.token }}')</span></dd>
       <dd class="output-variable">
         <span class="display-inline-block bg-{{ color.token }} circle-105 text-baseline margin-right-05"></span>
-        {{ color.value }}
+        {{ value }}
       </dd>
     {% endfor %}
     {% for color in all_colors %}
+      {% if color.default %}
+        {% assign system = system-colors | where: 'token', color.default %}
+        {% assign value = system[0].value %}
+      {% else %}
+        {% assign value = color.value %}
+      {% endif %}
       <dt class="output-utility">.bg-{{ color.token }}</dt>
       <dd class="output-css">background-color: <span class="output-token">color('{{ color.token }}')</span></dd>
       <dd class="output-variable">
         <span class="display-inline-block bg-{{ color.token }} circle-105 text-baseline margin-right-05"></span>
-        {{ color.value }}
+        {{ value }}
       </dd>
     {% endfor %}
   </dl>

@@ -1,26 +1,26 @@
 basic:
   - token: red
-    value: '#e52207'
+    default: 'red-50v'
   - token: orange
-    value: '#e66f0e'
+    default: 'orange-40v'
   - token: gold
-    value: '#e5a000'
+    default: 'gold-20v'
   - token: yellow
-    value: '#ffcb00'
+    default: 'yellow-10v'
   - token: green
-    value: '#719f2a'
+    default: 'green-50v'
   - token: mint
-    value: '#04c585'
+    default: 'mint-30v'
   - token: cyan
-    value: '#00bde3'
+    default: 'cyan-40v'
   - token: blue
-    value: '#357ab2'
+    default: 'blue-50v'
   - token: indigo
-    value: '#8889db'
+    default: 'indigo-50'
   - token: violet
-    value: '#ad79e9'
+    default: 'violet-50'
   - token: magenta
-    value: '#c84281'
+    default: 'magenta-50v'
 
 grayscale:
   - token: white

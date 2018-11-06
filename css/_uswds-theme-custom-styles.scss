@@ -2286,6 +2286,10 @@ $theme-table-column-gap: 2;
         text-align: left;
         width: 50%;
       }
+
+      &.is-empty {
+        display: none;
+      }
     }
 
     th:not([data-title]) {

@@ -15,7 +15,11 @@ subnav:
 {% assign conversion = site.data.tokens.conversion %}
 {% assign tokens = site.data.tokens.typesetting %}
 
+{:.bg-gold-20v.padding-2.radius-md}
+**Note:** Some letterspacing tokens come in two flavors: a **numeric token** (like `0.5` or `-2`) and a **string token** (like `'05'` or `'neg-2'`). _Utility classes use string tokens exclusively when they exist_ (like `.margin-x-neg-2`). Mixins and function usually accept either, and we will note any exceptions.
+
 ## Letterspacing tokens
+
 <div class="site-table-wrapper">
   <table class="usa-table-borderless site-table-responsive">
     <thead>
@@ -60,9 +64,6 @@ subnav:
 
 ## Using letterspacing tokens
 Your context and coding style determine how you access USWDS letterspacing tokens in code.
-
-{:.bg-gold-20v.padding-2.radius-md}
-**Note:** The `text()` mixin and the utilities require using the string token format with a `ls-`prefix (example: `'ls-neg-2'` instead of `-2`).
 
 <div class="site-table-wrapper">
   <table class="usa-table-borderless site-table-responsive">

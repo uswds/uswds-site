@@ -1,3 +1,7 @@
+- token: neg-15
+  number: -15
+- token: neg-10
+  number: -10
 - token: neg-9
   number: -9
 - token: neg-8

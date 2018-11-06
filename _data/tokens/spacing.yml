@@ -74,3 +74,20 @@ negative:
       value: -20px
     - token: 'neg-3'
       value: -24px
+  medium:
+    - token: 'neg-4'
+      value: -32px
+    - token: 'neg-5'
+      value: -40px
+    - token: 'neg-6'
+      value: -48px
+    - token: 'neg-7'
+      value: -56px
+    - token: 'neg-8'
+      value: -64px
+    - token: 'neg-9'
+      value: -72px
+    - token: 'neg-10'
+      value: -80px
+    - token: 'neg-15'
+      value: -120px

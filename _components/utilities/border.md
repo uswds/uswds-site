@@ -67,7 +67,6 @@ utilities:
 {% assign border_modifiers = ", -top, -bottom, -left, -right, -x, -y" | split: ", " %}
 {% assign border_modifiers_simple = ", -top, -bottom, -left, -right" | split: ", " %}
 
-
 {% assign border_widths =
   site.data.tokens.special.noValue
   | concat: site.data.tokens.special.zero_zero

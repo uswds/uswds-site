@@ -125,7 +125,6 @@ families:
         </thead>
         <tbody class="font-mono-2xs">
           {% for item in system_colors[family] %}
-
             {% include style/swatch-condensed.html %}
           {% endfor %}
         </tbody>

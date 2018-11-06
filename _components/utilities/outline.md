@@ -35,12 +35,12 @@ utilities:
 ---
 
 {% assign outline_widths =
-  site.data.uswds_tokens.special.zero_zero
-  | concat: site.data.uswds_tokens.spacing.positive.smaller
-  | concat: site.data.uswds_tokens.special.spacing_05
+  site.data.tokens.special.zero_zero
+  | concat: site.data.tokens.spacing.positive.smaller
+  | concat: site.data.tokens.special.spacing_05
   %}
 
-{% assign outline_colors = site.data.uswds_tokens.colors.required %}
+{% assign outline_colors = site.data.tokens.color.required %}
 
 <div class="utilities-properties">
   <h3 class="utilities-property-title">CSS properties</h3>

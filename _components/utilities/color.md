@@ -34,9 +34,9 @@ utilities:
   visited:      false
 ---
 
-{% assign theme_colors = site.data.uswds_tokens.colors.project_theme %}
-{% assign grayscale_colors = site.data.uswds_tokens.colors.grayscale %}
-{% assign basic_colors = site.data.uswds_tokens.colors.basic %}
+{% assign theme_colors = site.data.tokens.color.theme %}
+{% assign grayscale_colors = site.data.tokens.color.grayscale %}
+{% assign basic_colors = site.data.tokens.color.basic %}
 {% assign all_colors = theme_colors
   | concat: grayscale_colors
   | concat: basic_colors

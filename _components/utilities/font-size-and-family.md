@@ -34,10 +34,10 @@ utilities:
   visited:      false
 ---
 
-{% assign our_faces = site.data.uswds_tokens.fonts.faces %}
-{% assign our_system_scale = site.data.uswds_tokens.typescale.system %}
-{% assign our_theme_scale = site.data.uswds_tokens.typescale.theme %}
-{% assign font_normal = site.data.uswds_tokens.fonts.meta.normal %}
+{% assign our_faces = site.data.tokens.typesetting.family.font %}
+{% assign our_system_scale = site.data.tokens.typesetting.size.system %}
+{% assign our_theme_scale = site.data.tokens.typesetting.size.theme %}
+{% assign font_normal = site.data.tokens.typesetting.meta.normal %}
 
 <div class="utilities-properties">
   <h3 class="utilities-property-title">CSS properties</h3>

@@ -108,17 +108,17 @@ utilities:
   visited:      false
 ---
 
-{% assign spacing_tokens = site.data.uswds_tokens.spacing %}
+{% assign spacing_tokens = site.data.tokens.spacing %}
 {% assign neg_reversed = spacing_tokens.negative.smaller
   | concat: spacing_tokens.negative.small
   | reverse %}
 {% assign rp_spacing =
-  site.data.uswds_tokens.special.auto_auto
+  site.data.tokens.special.auto_auto
   | concat: neg_reversed
-  | concat: site.data.uswds_tokens.special.zero_zero
+  | concat: site.data.tokens.special.zero_zero
   | concat: spacing_tokens.positive.smaller
   | concat: spacing_tokens.positive.small
-  | concat: site.data.uswds_tokens.special.full_percent %}
+  | concat: site.data.tokens.special.full_percent %}
 
 <div class="utilities-properties">
   <h3 class="utilities-property-title">CSS properties</h3>
@@ -844,7 +844,7 @@ utilities:
       <dd class="output-variable">—</dd>
     {% endfor %}
 
-    {% for item in site.data.uswds_tokens.opacity %}
+    {% for item in site.data.tokens.opacity %}
       <dt class="output-utility">.opacity-{{ item.token }}</dt>
       <dd class="output-css"><span>opacity: <span class="output-token">opacity({{ item.token }})</span></span></dd>
       <dd class="output-variable">{{ item.value }}</dd>
@@ -968,7 +968,7 @@ utilities:
     </dd>
     <dd class="output-variable">—</dd>
 
-    {% for value in site.data.uswds_tokens.z_index %}
+    {% for value in site.data.tokens.z-index %}
       <dt class="output-utility">.z-{{ value.token }}</dt>
       <dd class="output-css"><span>z-index: <span class="output-token">z-index({{ value.token }})</span> </span></dd>
       <dd class="output-variable">{{ value.value }}</dd>

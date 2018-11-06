@@ -69,18 +69,18 @@ utilities:
 
 
 {% assign border_widths =
-  site.data.uswds_tokens.special.noValue
-  | concat: site.data.uswds_tokens.special.zero_zero
-  | concat: site.data.uswds_tokens.spacing.positive.smaller
-  | concat: site.data.uswds_tokens.spacing.positive.small
+  site.data.tokens.special.noValue
+  | concat: site.data.tokens.special.zero_zero
+  | concat: site.data.tokens.spacing.positive.smaller
+  | concat: site.data.tokens.spacing.positive.small
   %}
 
 {% assign noValue_value = '1px' %}
 
-{% assign theme_colors = site.data.uswds_tokens.colors.project_theme %}
-{% assign grayscale_colors = site.data.uswds_tokens.colors.grayscale %}
-{% assign basic_colors = site.data.uswds_tokens.colors.basic %}
-{% assign transparent = site.data.uswds_tokens.colors.transparent %}
+{% assign theme_colors = site.data.tokens.color.theme %}
+{% assign grayscale_colors = site.data.tokens.color.grayscale %}
+{% assign basic_colors = site.data.tokens.color.basic %}
+{% assign transparent = site.data.tokens.color.required %}
 {% assign all_colors = transparent
   | concat: theme_colors
   | concat: grayscale_colors

@@ -1,10 +1,10 @@
-<tr{% if token.value %}{% else %} class="is-empty"{% endif %}>
+<tr{% if item.value %}{% else %} class="is-empty"{% endif %}>
   <td scope="row" data-title="Color" class="flex-align-center">
-    <span class="site-inline-swatch bg-{{ color.token }}"></span>
+    <span class="site-inline-swatch bg-{{ item.token }}"></span>
   </td>
   <td data-title="Token">
-    {% if color.value %}
-    <span class="utility-class">'{{ color.token }}'</span>
+    {% if item.value %}
+    <span class="utility-class">'{{ item.token }}'</span>
     {% else %}
     <span>—</span>
     {% endif %}

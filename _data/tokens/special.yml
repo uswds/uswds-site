@@ -1,0 +1,27 @@
+noValue:
+    token: 'noValue'
+auto_auto:
+    token: 'auto'
+    value: auto
+zero_zero:
+    token: '0'
+    value: 0
+none_zero:
+    token: 'none'
+    value: 0
+none_none:
+    token: 'none'
+    value: none
+full_percent:
+    token: 'full'
+    value: 100%
+full_viewport_height:
+    token: 'viewport'
+    value: 100vw
+full_viewport_width:
+    token: 'viewport'
+    value: 100vh
+spacing_05:
+    token: '05'
+    value: 4px
+    scss: units(0.5)

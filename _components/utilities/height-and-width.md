@@ -104,69 +104,69 @@ utilities:
   visited:      false
 ---
 
-{% assign height_values = site.data.uswds_tokens.special.auto_auto
-  | concat: site.data.uswds_tokens.special.zero_zero
-  | concat: site.data.uswds_tokens.spacing.positive.smaller
-  | concat: site.data.uswds_tokens.spacing.positive.small
-  | concat: site.data.uswds_tokens.spacing.positive.medium
-  | concat: site.data.uswds_tokens.spacing.positive.large
-  | concat: site.data.uswds_tokens.special.full_percent
-  | concat: site.data.uswds_tokens.special.full_viewport_height
+{% assign height_values = site.data.tokens.special.auto_auto
+  | concat: site.data.tokens.special.zero_zero
+  | concat: site.data.tokens.spacing.positive.smaller
+  | concat: site.data.tokens.spacing.positive.small
+  | concat: site.data.tokens.spacing.positive.medium
+  | concat: site.data.tokens.spacing.positive.large
+  | concat: site.data.tokens.special.full_percent
+  | concat: site.data.tokens.special.full_viewport_height
 %}
 
-{% assign width_values = site.data.uswds_tokens.special.auto_auto
-  | concat: site.data.uswds_tokens.special.zero_zero
-  | concat: site.data.uswds_tokens.spacing.positive.smaller
-  | concat: site.data.uswds_tokens.spacing.positive.small
-  | concat: site.data.uswds_tokens.spacing.positive.medium
-  | concat: site.data.uswds_tokens.spacing.positive.large
-  | concat: site.data.uswds_tokens.spacing.positive.larger
-  | concat: site.data.uswds_tokens.spacing.positive.largest
-  | concat: site.data.uswds_tokens.special.full_percent
+{% assign width_values = site.data.tokens.special.auto_auto
+  | concat: site.data.tokens.special.zero_zero
+  | concat: site.data.tokens.spacing.positive.smaller
+  | concat: site.data.tokens.spacing.positive.small
+  | concat: site.data.tokens.spacing.positive.medium
+  | concat: site.data.tokens.spacing.positive.large
+  | concat: site.data.tokens.spacing.positive.larger
+  | concat: site.data.tokens.spacing.positive.largest
+  | concat: site.data.tokens.special.full_percent
 %}
 
-{% assign maxh_values = site.data.uswds_tokens.special.none_none
-  | concat: site.data.uswds_tokens.spacing.positive.small
-  | concat: site.data.uswds_tokens.spacing.positive.medium
-  | concat: site.data.uswds_tokens.spacing.positive.large
-  | concat: site.data.uswds_tokens.spacing.positive.larger
-  | concat: site.data.uswds_tokens.special.full_viewport_height
+{% assign maxh_values = site.data.tokens.special.none_none
+  | concat: site.data.tokens.spacing.positive.small
+  | concat: site.data.tokens.spacing.positive.medium
+  | concat: site.data.tokens.spacing.positive.large
+  | concat: site.data.tokens.spacing.positive.larger
+  | concat: site.data.tokens.special.full_viewport_height
 %}
 
-{% assign maxw_values = site.data.uswds_tokens.special.none_none
-  | concat: site.data.uswds_tokens.spacing.positive.small
-  | concat: site.data.uswds_tokens.spacing.positive.medium
-  | concat: site.data.uswds_tokens.spacing.positive.large
-  | concat: site.data.uswds_tokens.spacing.positive.larger
-  | concat: site.data.uswds_tokens.spacing.positive.largest
-  | concat: site.data.uswds_tokens.special.full_percent
+{% assign maxw_values = site.data.tokens.special.none_none
+  | concat: site.data.tokens.spacing.positive.small
+  | concat: site.data.tokens.spacing.positive.medium
+  | concat: site.data.tokens.spacing.positive.large
+  | concat: site.data.tokens.spacing.positive.larger
+  | concat: site.data.tokens.spacing.positive.largest
+  | concat: site.data.tokens.special.full_percent
 %}
 
-{% assign minh_values = site.data.uswds_tokens.special.none_none
-  | concat: site.data.uswds_tokens.special.zero_zero
-  | concat: site.data.uswds_tokens.spacing.positive.small
-  | concat: site.data.uswds_tokens.spacing.positive.medium
-  | concat: site.data.uswds_tokens.spacing.positive.large
-  | concat: site.data.uswds_tokens.spacing.positive.larger
-  | concat: site.data.uswds_tokens.special.full_percent
-  | concat: site.data.uswds_tokens.special.full_viewport_height
+{% assign minh_values = site.data.tokens.special.none_none
+  | concat: site.data.tokens.special.zero_zero
+  | concat: site.data.tokens.spacing.positive.small
+  | concat: site.data.tokens.spacing.positive.medium
+  | concat: site.data.tokens.spacing.positive.large
+  | concat: site.data.tokens.spacing.positive.larger
+  | concat: site.data.tokens.special.full_percent
+  | concat: site.data.tokens.special.full_viewport_height
 %}
 
-{% assign minw_values = site.data.uswds_tokens.special.none_none
-  | concat: site.data.uswds_tokens.spacing.positive.small
-  | concat: site.data.uswds_tokens.spacing.positive.medium
+{% assign minw_values = site.data.tokens.special.none_none
+  | concat: site.data.tokens.spacing.positive.small
+  | concat: site.data.tokens.spacing.positive.medium
 %}
 
-{% assign circle_values = site.data.uswds_tokens.spacing.positive.smaller
-  | concat: site.data.uswds_tokens.spacing.positive.small
-  | concat: site.data.uswds_tokens.spacing.positive.medium
-  | concat: site.data.uswds_tokens.spacing.positive.large
+{% assign circle_values = site.data.tokens.spacing.positive.smaller
+  | concat: site.data.tokens.spacing.positive.small
+  | concat: site.data.tokens.spacing.positive.medium
+  | concat: site.data.tokens.spacing.positive.large
 %}
 
-{% assign square_values = site.data.uswds_tokens.spacing.positive.smaller
-  | concat: site.data.uswds_tokens.spacing.positive.small
-  | concat: site.data.uswds_tokens.spacing.positive.medium
-  | concat: site.data.uswds_tokens.spacing.positive.large
+{% assign square_values = site.data.tokens.spacing.positive.smaller
+  | concat: site.data.tokens.spacing.positive.small
+  | concat: site.data.tokens.spacing.positive.medium
+  | concat: site.data.tokens.spacing.positive.large
 %}
 
 <div class="utilities-properties">

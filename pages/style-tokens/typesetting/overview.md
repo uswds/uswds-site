@@ -13,28 +13,9 @@ subnav:
     href: '#normalization'
   - text: Typesetting with tokens
     href: '#typesetting-with-tokens'
-data_typefaces:
-  - name: Georgia
-    normal: 1.05
-  - name: Helvetica
-    normal: 1.01
-  - name: Merriweather
-    normal: 0.94
-  - name: Open Sans
-    normal: 1.01
-  - name: Public Sans
-    normal: 1.00
-  - name: Roboto Mono
-    normal: 0.95
-  - name: Source Sans Pro
-    normal: 1.06
-  - name: System fonts
-    normal: 1
-  - name: Tahoma
-    normal: 1
-  - name: Verdana
-    normal: 0.99
 ---
+
+{% assign tokens = site.data.tokens.typesetting %}
 
 ## Normalization
 Typefaces vary in optical size. This means that at any specific pixel value, an optically small typeface like Source Sans Pro will appear smaller than an optically large typeface like Merriweather. Optical size is a function of internal font metrics and typeface design choices like x-height.
@@ -74,21 +55,24 @@ Each [supported typeface]({{ site.baseurl }}/style-tokens/typesetting/font-famil
       </tr>
     </thead>
     <tbody class="font-mono-2xs">
-      {% for font in page.data_typefaces %}
+      {% for item in tokens.family.font %}
+        {% assign multiple = tokens.meta.normal
+          | times: 1.0
+          | divided_by: item.normal %}
         <tr>
           <td scope="row" data-title="Typeface">
             <span>
-              {{ font.name }}
+              {{ item.name }}
             </span>
           </td>
           <td data-title="Normalization">
             <span>
-              {{ font.normal | round: 2 }}
+              {{ multiple | round: 2 }}
             </span>
           </td>
           <td data-title="Output (px)">
             <span>
-              {{ target_font_size | times: font.normal | round: 2 }}
+              {{ target_font_size | times: multiple | round: 2 }}
             </span>
           </td>
         </tr>
@@ -123,26 +107,29 @@ Since we use normalization on font sizing, we must also normalize line height to
       </tr>
     </thead>
     <tbody class="font-mono-2xs">
-      {% for font in page.data_typefaces %}
+      {% for item in tokens.family.font %}
+        {% assign normal = tokens.meta.normal
+          | times: 1.0
+          | divided_by: item.normal %}
         <tr>
           <td scope="row" data-title="Typeface">
             <span>
-              {{ font.name }}
+              {{ item.name }}
             </span>
           </td>
           <td data-title="Normalization">
             <span>
-              {{ font.normal | round: 2 }}
+              {{ normal | round: 2 }}
             </span>
           </td>
           <td data-title="Size (px)">
             <span>
-              {{ target_font_size | times: font.normal | round: 2 }}
+              {{ target_font_size | times: normal | round: 2 }}
             </span>
           </td>
           <td data-title="Line height">
             <span>
-              {{ target_line_height | divided_by: font.normal | round: 2 }}
+              {{ target_line_height | divided_by: normal | round: 2 }}
             </span>
           </td>
           <td data-title="Line height (px)">

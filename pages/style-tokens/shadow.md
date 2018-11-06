@@ -12,92 +12,130 @@ subnav:
   href: '#using-shadow-tokens'
 ---
 
+{% assign tokens = site.data.tokens %}
+
 ## Shadow tokens
 Output values are shown in `px` below but are output in `rem` in the final CSS, based on the base font size in your project settings.
 
-<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px font-mono-3">
-  <div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px text-bold">
-    <div class="grid-col-2 text-700 font-sans-1">Token</div>
-    <div class="grid-col-5 text-700 font-sans-1">Example</div>
-    <div class="grid-col-fill text-700 font-sans-1">Output</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>0</code></div>
-    <div class="grid-col-5">
-      <div class="height-4 radius-md bg-white shadow-0 border border-base-lighter"></div>
-    </div>
-    <div class="grid-col-fill font-mono-3">0</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>1</code></div>
-    <div class="grid-col-5">
-      <div class="height-4 radius-md bg-white shadow-1 border border-base-lighter"></div>
-    </div>
-    <div class="grid-col-fill font-mono-3">0 1px 4px 0 rgba(0, 0, 0, 0.1) </div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>2</code></div>
-    <div class="grid-col-5">
-      <div class="height-4 radius-md bg-white shadow-2 border border-base-lighter"></div>
-    </div>
-    <div class="grid-col-fill font-mono-3">0 4px 8px 0 rgba(0, 0, 0, 0.1)</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>3</code></div>
-    <div class="grid-col-5">
-      <div class="height-4 radius-md bg-white shadow-3 border border-base-lighter"></div>
-    </div>
-    <div class="grid-col-fill font-mono-3">0 8px 16px 0 rgba(0, 0, 0, 0.1)</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>4</code></div>
-    <div class="grid-col-5">
-      <div class="height-4 radius-md bg-white shadow-4 border border-base-lighter"></div>
-    </div>
-    <div class="grid-col-fill font-mono-3">0 12px 24px 0 rgba(0, 0, 0, 0.1)</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>5</code></div>
-    <div class="grid-col-5">
-      <div class="height-4 radius-md bg-white shadow-5 border border-base-lighter"></div>
-    </div>
-    <div class="grid-col-fill font-mono-3">0 16px 32px 0 rgba(0, 0, 0, 0.1)</div>
-  </div>
+<div class="site-table-wrapper">
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col">Token</th>
+        <th scope="col">Example</th>
+        <th scope="col">Value</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      {% for item in tokens.shadow %}
+        {% include tokens/is_number.html %}
+
+        <tr>
+          <td scope="row" data-title="Token" class="tablet:width-10">
+            <span>
+              {% if converted %}
+                <code>{{ converted }}</code>,
+              {% endif %}
+              {% if is_number %}
+                <code>{{ item.token }}</code>
+              {% else %}
+                <code>'{{ item.token }}'</code>
+              {% endif %}
+            </span>
+          </td>
+          <td data-title="Example" class="padding-y-2">
+            <div class="width-full height-4 radius-md bg-white shadow-{{ item.token }} border border-base-lighter"></div>
+          </td>
+          <td data-title="Value" class="tablet:width-10">
+            <span class="tablet:text-no-wrap">
+              {{ item.value }}
+            </span>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 </div>
 
 ## Using shadow tokens
 Your context and coding style determine how you access USWDS shadow tokens in code.
 
-<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
-  <div class="grid-row grid-gap flex-align-center margin-bottom-1 padding-bottom-1 border-bottom-2px text-bold">
-    <div class="grid-col-2 text-700 font-sans-1">Context</div>
-    <div class="grid-col-5 text-700 font-sans-1">Usage</div>
-    <div class="grid-col-5 text-700 font-sans-1">Example</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">function
-    </div>
-    <div class="grid-col-5">box-shadow: shadow(<a href="{{ site.baseurl }}/style-tokens/shadow/" class="token">shadow</a>)</div>
-    <div class="grid-col-5">
-      box-shadow: shadow(<code>2</code>);
-    </div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">
-      mixin
-    </div>
-    <div class="grid-col-5">@include u-shadow(<a href="{{ site.baseurl }}/style-tokens/shadow/" class="token">shadow</a>)</div>
-    <div class="grid-col-5">@include u-shadow(<code>2</code>)</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">setting</div>
-    <div class="grid-col-5">$theme-variable: <a href="{{ site.baseurl }}/style-tokens/shadow/" class="token">shadow</a></div>
-    <div class="grid-col-5">$theme-subnav-shadow: <code>2</code>;</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">utility
-    </div>
-    <div class="grid-col-5">.shadow-<a href="{{ site.baseurl }}/style-tokens/shadow/" class="token">shadow</a></div>
-    <div class="grid-col-5">.shadow-<code>2</code>;</div>
-  </div>
+<div class="site-table-wrapper">
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col">Context</th>
+        <th scope="col">Usage</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="text-bold font-sans-3">function</span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            shadow(<a href="{{ site.baseurl }}/style-tokens/shadow/" class="token">shadow</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            box-shadow: shadow(<code>2</code>)
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">mixin</span><br/>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            u-shadow(<a href="{{ site.baseurl }}/style-tokens/shadow/" class="token">shadow</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-shadow(<code>2</code>)<br/>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span>
+            <span class="text-bold font-sans-3">setting</span><br/>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            <a href="{{ site.baseurl }}/style-tokens/shadow/" class="token">shadow</a>
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            $theme-subnav-shadow: <code>2</code>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">utility</span><br/>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            .shadow-<a href="{{ site.baseurl }}/style-tokens/shadow/" class="token">shadow</a>
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            .shadow-<code>2</code>
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>

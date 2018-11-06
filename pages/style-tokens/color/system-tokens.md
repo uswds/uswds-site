@@ -3,7 +3,7 @@ permalink: /style-tokens/color/system-tokens/
 layout: styleguide
 title: System color tokens
 category: Style tokens
-lead: USWDS system color tokens are the complete palette of color tokens from which any project can build a theme palette
+lead: USWDS system color tokens are the complete palette of color tokens from which any project can build a theme palette.
 type: docs
 subnav:
   - text: Red warm
@@ -116,7 +116,7 @@ families:
         <thead>
           <tr>
             <th scope="col">Color</th>
-            <th scope="col">System token</th>
+            <th scope="col">Token</th>
             <th scope="col">Family</th>
             <th scope="col">Grade</th>
             <th scope="col">Variant</th>

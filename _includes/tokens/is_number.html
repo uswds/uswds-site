@@ -4,9 +4,10 @@
 {% if divided == 0 %}
 {% elsif this_token contains 'xs' %}
 {% elsif this_token contains 'xl' %}
-{% elsif this_token == 0 %}
-  {% assign is_number = true %}
 {% else %}
+  {% assign is_number = true %}
+{% endif %}
+{% if this_token == 0 %}
   {% assign is_number = true %}
 {% endif %}
 

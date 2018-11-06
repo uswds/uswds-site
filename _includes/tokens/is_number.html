@@ -1,0 +1,19 @@
+{% assign is_number = false %}
+{% assign this_token = item.token %}
+{% assign divided = this_token | divided_by: 1%}
+{% if divided == 0 %}
+{% elsif this_token contains 'xs' %}
+{% elsif this_token contains 'xl' %}
+{% elsif this_token == 0 %}
+  {% assign is_number = true %}
+{% else %}
+  {% assign is_number = true %}
+{% endif %}
+
+{% assign converted = false %}
+{% assign conversion =
+  site.data.tokens.conversion
+  | where: 'token', item.token %}
+{% if conversion[0].number %}
+  {% assign converted = conversion[0].number %}
+{% endif %}

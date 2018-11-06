@@ -116,14 +116,14 @@ families:
         <thead>
           <tr>
             <th scope="col">Color</th>
+            <th scope="col">System token</th>
             <th scope="col">Family</th>
             <th scope="col">Grade</th>
             <th scope="col">Variant</th>
-            <th scope="col">System token</th>
             <th scope="col" class="text-right">Hex</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="font-mono-2xs">
           {% for color in system_colors[family] %}
             {% include style/swatch-condensed.html %}
           {% endfor %}

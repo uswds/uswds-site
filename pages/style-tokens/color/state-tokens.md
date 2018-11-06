@@ -12,7 +12,56 @@ subnav:
   href: '#using-color-tokens-in-utilities-settings-and-component-sass'
 ---
 
-{% assign state_colors = site.data.uswds_tokens.colors.project_state %}
+{% assign colors = site.data.uswds_tokens.colors %}
+
+{% assign system_colors =
+  colors.required
+  | concat: colors.system.red
+  | concat: colors.system.red_vivid
+  | concat: colors.system.red_warm
+  | concat: colors.system.red_warm_vivid
+  | concat: colors.system.orange
+  | concat: colors.system.orange_vivid
+  | concat: colors.system.orange_warm
+  | concat: colors.system.orange_warm_vivid
+  | concat: colors.system.gold
+  | concat: colors.system.gold_vivid
+  | concat: colors.system.yellow
+  | concat: colors.system.yellow_vivid
+  | concat: colors.system.green
+  | concat: colors.system.green_vivid
+  | concat: colors.system.green_warm
+  | concat: colors.system.green_warm_vivid
+  | concat: colors.system.green_cool
+  | concat: colors.system.green_cool_vivid
+  | concat: colors.system.mint
+  | concat: colors.system.mint_vivid
+  | concat: colors.system.mint_cool
+  | concat: colors.system.mint_cool_vivid
+  | concat: colors.system.cyan
+  | concat: colors.system.cyan_vivid
+  | concat: colors.system.blue
+  | concat: colors.system.blue_vivid
+  | concat: colors.system.blue_warm
+  | concat: colors.system.blue_warm_vivid
+  | concat: colors.system.indigo
+  | concat: colors.system.indigo_vivid
+  | concat: colors.system.indigo_warm
+  | concat: colors.system.indigo_warm_vivid
+  | concat: colors.system.indigo_cool
+  | concat: colors.system.indigo_cool_vivid
+  | concat: colors.system.violet
+  | concat: colors.system.violet_vivid
+  | concat: colors.system.violet_warm
+  | concat: colors.system.violet_warm_vivid
+  | concat: colors.system.magenta
+  | concat: colors.system.magenta_vivid
+  | concat: colors.system.gray
+  | concat: colors.system.gray_warm
+  | concat: colors.system.gray_cool %}
+
+{% assign theme_colors = colors.project_theme %}
+{% assign state_colors = colors.project_state %}
 
 USWDS state color tokens are designed to be useful and effective for any project that has states or alerts. Each state token is drawn from a system [color]({{ site.baseurl }}/style-tokens/color/system-tokens/){:.token} token and we only use token-based colors in official components.
 
@@ -41,13 +90,14 @@ Each color family except `disabled` has five possible lightness grades, from `li
               <span class="site-inline-swatch bg-{{ color.token }}"></span>
             </td>
             <td data-title="State token">
-              <span class="utility-class font-mono-2xs">'{{ color.family_token }}{% if color.grade_token %}-{{ color.grade_token }}{% endif %}'</span>
+              <span class="utility-class font-mono-2xs">'{{ color.token }}'</span>
             </td>
             <td data-title="System token" class="font-mono-2xs">
-              '{{ color.system }}'
+              '{{ color.assignment }}'
             </td>
             <td data-title="Hex equivalent" class="font-mono-2xs text-right">
-              {{ color.value }}
+              {% assign system = system_colors | where: 'token', color.assignment | first %}
+              {{ system.value }}
             </td>
           </tr>
         {% endif %}

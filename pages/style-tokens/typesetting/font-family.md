@@ -173,7 +173,7 @@ Your context and coding style determine how you access USWDS family tokens in co
   <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
     <div class="grid-col-2 text-bold font-sans-3">function
     </div>
-    <div class="grid-col-5">font-family: family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>)</div>
+    <div class="grid-col-5">family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>)</div>
     <div class="grid-col-5">font-family: family(<code>'body'</code>);</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
@@ -181,7 +181,7 @@ Your context and coding style determine how you access USWDS family tokens in co
       mixin<br/>
       <span class="text-normal">font-family</span>
     </div>
-    <div class="grid-col-5">@include u-font-family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>)</div>
+    <div class="grid-col-5">u-font-family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>)</div>
     <div class="grid-col-5">@include u-font-family(<code>'sans'</code>)</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
@@ -190,12 +190,12 @@ Your context and coding style determine how you access USWDS family tokens in co
       <span class="text-normal">font-family</span><br/>
       <span class="text-normal">font-size</span>
     </div>
-    <div class="grid-col-5">@include u-font(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)</div>
+    <div class="grid-col-5">u-font(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)</div>
     <div class="grid-col-5">@include u-font(<code>'body'</code>, <code>'2xl'</code>)</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
     <div class="grid-col-2 text-bold font-sans-3">setting</div>
-    <div class="grid-col-5">$theme-variable: <a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a></div>
+    <div class="grid-col-5"><a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a></div>
     <div class="grid-col-5">$theme-prose-font-family: <code>'body'</code>;</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">

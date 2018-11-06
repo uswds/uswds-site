@@ -1,0 +1,222 @@
+meta:
+  normal: 362
+
+stack:
+  - token: system
+    value: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
+  - token: helvetica
+    value: '"Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif'
+  - token: georgia
+    value: '"Georgia", "Cambria", "Times New Roman", "Times", serif'
+  - token: mono
+    value: '"Roboto Mono Web", "Bitstream Vera Sans Mono", "Consolas", "Courier", monospace'
+
+line-height:
+  - token: 1
+    value: 1
+  - token: 2
+    value: 1.15
+  - token: 3
+    value: 1.35
+  - token: 4
+    value: 1.5
+  - token: 5
+    value: 1.62
+  - token: 6
+    value: 1.75
+
+letterspacing:
+  - token: neg-3
+    value: -0.03em
+  - token: neg-2
+    value: -0.02em
+  - token: neg-1
+    value: -0.01em
+  - token: auto
+    value: auto
+  - token: 1
+    value: 0.05em
+  - token: 2
+    value: 0.1em
+  - token: 3
+    value: 0.15em
+
+weight:
+  system:
+    - token: 100
+      value: 100
+    - token: 200
+      value: 200
+    - token: 300
+      value: 300
+    - token: 400
+      value: 400
+    - token: 500
+      value: 500
+    - token: 600
+      value: 600
+    - token: 700
+      value: 700
+    - token: 800
+      value: 800
+    - token: 900
+      value: 900
+  theme:
+    - token: thin
+      default: false
+    - token: light
+      default: 300
+    - token: normal
+      default: 400
+    - token: medium
+      default: false
+    - token: semibold
+      default: false
+    - token: bold
+      default: 700
+    - token: heavy
+      default: false
+
+measure:
+  - token: 1
+    value: 40ch
+  - token: 2
+    value: 60ch
+  - token: 3
+    value: 66ch
+  - token: 4
+    value: 72ch
+  - token: 5
+    value: 77ch
+  - token: none
+    value: none
+
+size:
+  - token: tk
+
+family:
+  - token: tk
+
+font:
+  - token: system
+    name: System fonts
+    normal: 362
+    style: sans
+    role: heading
+    default: false
+    stack: system
+  - token: helvetica
+    name: Helvetica
+    normal: 357
+    style: sans
+    role: heading
+    default: false
+    stack: helvetica
+  - token: source-sans-pro
+    name: Source Sans Pro
+    normal: 340
+    style: sans
+    role:
+      - alt
+      - body
+      - ui
+    default: true
+    stack: helvetica
+  - token: public-sans
+    name: Public Sans
+    normal: 362
+    style: sans
+    role:
+      - heading
+      - alt
+      - ui
+    default: false
+    stack: system
+  - token: georgia
+    name: Georgia
+    normal: 346
+    style: serif
+    default: false
+    role:
+      - body
+    stack: georgia
+  - token: merriweather
+    name: Merriweather
+    normal: 385
+    style: serif
+    default: true
+    role:
+      - heading
+    stack: georgia
+  - token: roboto-mono
+    name: Roboto Mono
+    normal: 380
+    style: mono
+    default: true
+    role:
+      - code
+    stack: mono
+
+size:
+  system:
+    - token: micro
+      value: 10px
+    - token: 1
+      value: 12px
+    - token: 2
+      value: 13px
+    - token: 3
+      value: 14px
+    - token: 4
+      value: 15px
+    - token: 5
+      value: 16px
+    - token: 6
+      value: 17px
+    - token: 7
+      value: 18px
+    - token: 8
+      value: 20px
+    - token: 9
+      value: 22px
+    - token: 10
+      value: 24px
+    - token: 11
+      value: 28px
+    - token: 12
+      value: 32px
+    - token: 13
+      value: 36px
+    - token: 14
+      value: 40px
+    - token: 15
+      value: 48px
+    - token: 16
+      value: 56px
+    - token: 17
+      value: 64px
+    - token: 18
+      value: 80px
+    - token: 19
+      value: 120px
+    - token: 20
+      value: 140px
+  theme:
+    - token: 3xs
+      default: 1
+    - token: 2xs
+      default: 3
+    - token: xs
+      default: 5
+    - token: sm
+      default: 6
+    - token: md
+      default: 7
+    - token: lg
+      default: 10
+    - token: xl
+      default: 12
+    - token: 2xl
+      default: 14
+    - token: 3xl
+      default: 16

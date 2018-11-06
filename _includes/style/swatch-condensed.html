@@ -1,27 +1,27 @@
-<tr{% if color.value %}{% else %} class="is-empty"{% endif %}>
+<tr{% if token.value %}{% else %} class="is-empty"{% endif %}>
   <td scope="row" data-title="Color" class="flex-align-center">
-    <span class="site-inline-swatch bg-{{ color.utility }}"></span>
+    <span class="site-inline-swatch bg-{{ color.token }}"></span>
+  </td>
+  <td data-title="Token">
+    {% if color.value %}
+    <span class="utility-class">'{{ color.token }}'</span>
+    {% else %}
+    <span>—</span>
+    {% endif %}
   </td>
   <td data-title="Family">
-    <span class="utility-class">{{ color.family_token }}</span>
+    {{ color.family }}
   </td>
   <td data-title="Grade">
-    {% if color.grade_token %}
-    <span class="utility-class">{{ color.grade_token }}</span>
+    {% if color.grade %}
+    {{ color.grade }}
     {% else %}
     <span>—</span>
     {% endif %}
   </td>
   <td data-title="Variant">
-    {% if color.variant_token %}
-    <span class="utility-class">{{ color.variant_token }}</span>
-    {% else %}
-    <span>—</span>
-    {% endif %}
-  </td>
-  <td data-title="Token">
-    {% if color.value %}
-    <span class="utility-class bg-transparent border border-base-light">'{{ color.utility }}'</span>
+    {% if color.variant %}
+    {{ color.variant }}
     {% else %}
     <span>—</span>
     {% endif %}

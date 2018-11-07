@@ -2422,6 +2422,10 @@ $theme-table-column-gap: 4;
         tr {
           border: none;
           border-top: units(1px) solid color('base-light');
+
+          &:last-child {
+            border-bottom: units(1px) solid color('base-light');
+          }
         }
       }
     }

@@ -15,69 +15,78 @@
 </pre>
   </aside>
   <p class="utility-text margin-top-4">Set which breakpoints are available to USWDS utilities with the <code>$theme_output_breakpoints</code> variable found in <code>_project-utilities-settings.scss</code>.</p>
-  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2">
-    <div class="grid-col-6">Breakpoint name</div>
-    <div class="grid-col-3">Width</div>
-    <div class="grid-col-3">Default value</div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-6">card</div>
-    <div class="grid-col-3">160px</div>
-    <div class="grid-col-3">false</div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-6">card-lg</div>
-    <div class="grid-col-3">240px</div>
-    <div class="grid-col-3">false</div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-6">mobile</div>
-    <div class="grid-col-3">320px</div>
-    <div class="grid-col-3">false</div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-6">mobile-lg</div>
-    <div class="grid-col-3">480px</div>
-    <div class="grid-col-3"><span class="output-true">true</span></div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-6">tablet</div>
-    <div class="grid-col-3">640px</div>
-    <div class="grid-col-3"><span class="output-true">true</span></div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-6">tablet-lg</div>
-    <div class="grid-col-3">880px</div>
-    <div class="grid-col-3">false</div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-6">desktop</div>
-    <div class="grid-col-3">1024px</div>
-    <div class="grid-col-3 flex-justify-start"><span class="output-true">true</span></div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-6">desktop-lg</div>
-    <div class="grid-col-3">1200px</div>
-    <div class="grid-col-3">false</div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-6">widescreen</div>
-    <div class="grid-col-3">1400px</div>
-    <div class="grid-col-3">false</div>
-  </div>
+
+  {% assign breakpoint = site.data.tokens.spacing.positive %}
+  {% assign all-breakpoints =
+    breakpoint.large
+    | concat: breakpoint.larger
+    | concat: breakpoint.largest %}
+  {% assign output-breakpoints = "mobile-lg,tablet,desktop" | split: ',' %}
+
+  <table class="usa-table-borderless site-table-responsive site-table-simple">
+    <thead>
+      <tr>
+        <th scope="col">Breakpoint name</th>
+        <th scope="col" class="tablet:maxw-card-lg">Width</th>
+        <th scope="col" class="tablet:maxw-card-lg">Default</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      {% for item in all-breakpoints %}
+        <tr>
+          <td scope="row" data-title="Breakpoint" class="tablet:text-no-wrap">
+            <span>
+              {{ item.token }}
+            </span>
+          </td>
+          <td data-title="Width" class="tablet:maxw-card-lg">
+            <span>
+              {{ item.value }}
+            </span>
+          </td>
+          <td data-title="Default" class="tablet:maxw-card-lg">
+            <span>
+              {% assign output = false %}
+              {% for width in output-breakpoints %}
+                {% if width == item.token %}
+                {% assign output = true %}
+                <span class="output-true">true</span>
+                {% endif %}
+              {% endfor %}
+              {% if output == false %}
+                false
+              {% endif %}
+            </span>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 
   <p class="utility-text margin-top-4">Set whether a utility family outputs with responsive variants by setting the value of  <code>$[utility_family]-settings.responsive</code> in <code>_project-utilities-settings.scss</code>.</p>
 
-  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2">
-    <div class="grid-col-9">Utility variable</div>
-    <div class="grid-col-3">Default value</div>
-  </div>
-
-  {% for utility in page.utilities %}
-    <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-      <div class="grid-col-9">${{ utility.var }}-settings.responsive</div>
-      <div class="grid-col-3">{% if utility.responsive %}<span class="output-true">true</span>{% else %}false{% endif %}</div>
-    </div>
-  {% endfor %}
-
+  <table class="usa-table-borderless site-table-responsive site-table-simple">
+    <thead>
+      <tr>
+        <th scope="col">Utility variable</th>
+        <th scope="col" class="tablet:maxw-card-lg">Default</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      {% for utility in page.utilities %}
+        <tr>
+          <td scope="row" data-title="Utility variable" class="tablet:text-no-wrap">
+            <span>
+              ${{ utility.var }}-settings.responsive
+            </span>
+          </td>
+          <td data-title="Default" class="tablet:maxw-card-lg">
+            <span>
+              {% if utility.responsive %}<span class="output-true">true</span>{% else %}false{% endif %}
+            </span>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 </section>

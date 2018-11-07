@@ -52,7 +52,7 @@ type:
   - token: mono
     default: 'roboto-mono'
   - token: sans
-    default: 'source-sans-pro'
+    default: 'public-sans'
   - token: serif
     default: 'merriweather'
 role:

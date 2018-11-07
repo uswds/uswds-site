@@ -1128,10 +1128,6 @@ code {
   }
 }
 
-.highlight {
-  max-width: measure(5);
-}
-
 // Code snippet boxes ----------------- //
 
 .usa-code-sample {
@@ -1840,7 +1836,7 @@ li {
 }
 
 .utilities-section-title {
-  @include u-font(serif, 8);
+  @include u-font('sans', 8);
   @include u-margin(0);
   @include u-text(normal);
 

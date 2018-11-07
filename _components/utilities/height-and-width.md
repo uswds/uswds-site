@@ -481,80 +481,90 @@ utilities:
   <dl class="output-list">
     {% assign this_utility = 'height' %}
     {% assign this_property = 'height' %}
-    {% for value in height_values %}
-      <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
-      {% if value.scss %}
+    {% for item in height_values %}
+      {% include tokens/is_number.html %}
+      <dt class="output-utility">.{{ this_utility }}-{{ item.token }}</dt>
         <dd class="output-css">
-          <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
+          <span>{{ this_property }}:
+            <span class="output-token">
+              {% if converted %}
+                units({{ converted }})
+              {% elsif is_number %}
+                units({{ item.token }})
+              {% else %}
+                units('{{ item.token }}')
+              {% endif %}
+            </span>
           </span>
         </dd>
-        <dd class="output-variable">{{ value.value }}</dd>
-      {% else %}
-        <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
-        <dd class="output-variable">—</dd>
-      {% endif %}
+        <dd class="output-variable">{{ item.value }}</dd>
     {% endfor %}
 
     {% assign this_utility = 'width' %}
     {% assign this_property = 'width' %}
-    {% for value in width_values %}
-      <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
-      {% if value.scss %}
+    {% for item in width_values %}
+      {% include tokens/is_number.html %}
+      <dt class="output-utility">.{{ this_utility }}-{{ item.token }}</dt>
         <dd class="output-css">
-          <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
+          <span>{{ this_property }}:
+            <span class="output-token">
+              {% if converted %}
+                units({{ converted }})
+              {% elsif is_number %}
+                units({{ item.token }})
+              {% else %}
+                units('{{ item.token }}')
+              {% endif %}
+            </span>
           </span>
         </dd>
-        <dd class="output-variable">{{ value.value }}</dd>
-      {% else %}
-        <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
-        <dd class="output-variable">—</dd>
-      {% endif %}
+        <dd class="output-variable">{{ item.value }}</dd>
     {% endfor %}
 
     {% assign this_utility = 'maxh' %}
     {% assign this_property = 'max-height' %}
-    {% for value in maxh_values %}
-      <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
-      {% if value.scss %}
+    {% for item in maxh_values %}
+      <dt class="output-utility">.{{ this_utility }}-{{ item.token }}</dt>
+      {% if item.scss %}
         <dd class="output-css">
-          <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
+          <span>{{ this_property }}: <span class="output-token">{{ item.scss }}</span>
           </span>
         </dd>
-        <dd class="output-variable">{{ value.value }}</dd>
+        <dd class="output-variable">{{ item.value }}</dd>
       {% else %}
-        <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
+        <dd class="output-css"><span>{{ this_property }}: {{ item.value }}</span></dd>
         <dd class="output-variable">—</dd>
       {% endif %}
     {% endfor %}
 
     {% assign this_utility = 'maxw' %}
     {% assign this_property = 'max-width' %}
-    {% for value in maxw_values %}
-      <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
-      {% if value.scss %}
+    {% for item in maxw_values %}
+      <dt class="output-utility">.{{ this_utility }}-{{ item.token }}</dt>
+      {% if item.scss %}
         <dd class="output-css">
-          <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
+          <span>{{ this_property }}: <span class="output-token">{{ item.scss }}</span>
           </span>
         </dd>
-        <dd class="output-variable">{{ value.value }}</dd>
+        <dd class="output-variable">{{ item.value }}</dd>
       {% else %}
-        <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
+        <dd class="output-css"><span>{{ this_property }}: {{ item.value }}</span></dd>
         <dd class="output-variable">—</dd>
       {% endif %}
     {% endfor %}
 
     {% assign this_utility = 'minh' %}
     {% assign this_property = 'min-height' %}
-    {% for value in minh_values %}
-      <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
-      {% if value.scss %}
+    {% for item in minh_values %}
+      <dt class="output-utility">.{{ this_utility }}-{{ item.token }}</dt>
+      {% if item.scss %}
         <dd class="output-css">
-          <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
+          <span>{{ this_property }}: <span class="output-token">{{ item.scss }}</span>
           </span>
         </dd>
-        <dd class="output-variable">{{ value.value }}</dd>
+        <dd class="output-variable">{{ item.value }}</dd>
       {% else %}
-        <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
+        <dd class="output-css"><span>{{ this_property }}: {{ item.value }}</span></dd>
         <dd class="output-variable">—</dd>
       {% endif %}
     {% endfor %}
@@ -566,14 +576,14 @@ utilities:
     {% assign this_rule = 'border-radius: 50%'
       | split: ', '
     %}
-    {% for value in minw_values %}
-      <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
-      {% if value.scss %}
+    {% for item in minw_values %}
+      <dt class="output-utility">.{{ this_utility }}-{{ item.token }}</dt>
+      {% if item.scss %}
         <dd class="output-css">
           <span>
             {% if this_property %}
               {% for property in this_property %}
-              <span class="output-rule">{{ property }}: <span class="output-token">{{ value.scss }}</span></span>
+              <span class="output-rule">{{ property }}: <span class="output-token">{{ item.scss }}</span></span>
               {% endfor %}
             {% endif %}
             {% if this_rule %}
@@ -583,13 +593,13 @@ utilities:
             {% endif %}
           </span>
         </dd>
-        <dd class="output-variable">{{ value.value }}</dd>
+        <dd class="output-variable">{{ item.value }}</dd>
       {% else %}
         <dd class="output-css">
           <span>
             {% if this_property %}
               {% for property in this_property %}
-              <span class="output-rule">{{ property }}: {{ value.value }}</span>
+              <span class="output-rule">{{ property }}: {{ item.value }}</span>
               {% endfor %}
             {% endif %}
             {% if this_rule %}
@@ -608,14 +618,14 @@ utilities:
       | split: ', '
     %}
     {% assign this_rule = false %}
-    {% for value in minw_values %}
-      <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
-      {% if value.scss %}
+    {% for item in minw_values %}
+      <dt class="output-utility">.{{ this_utility }}-{{ item.token }}</dt>
+      {% if item.scss %}
         <dd class="output-css">
           <span>
             {% if this_property %}
               {% for property in this_property %}
-              <span class="output-rule">{{ property }}: <span class="output-token">{{ value.scss }}</span></span>
+              <span class="output-rule">{{ property }}: <span class="output-token">{{ item.scss }}</span></span>
               {% endfor %}
             {% endif %}
             {% if this_rule %}
@@ -625,13 +635,13 @@ utilities:
             {% endif %}
           </span>
         </dd>
-        <dd class="output-variable">{{ value.value }}</dd>
+        <dd class="output-variable">{{ item.value }}</dd>
       {% else %}
         <dd class="output-css">
           <span>
             {% if this_property %}
               {% for property in this_property %}
-              <span class="output-rule">{{ property }}: {{ value.value }}</span>
+              <span class="output-rule">{{ property }}: {{ item.value }}</span>
               {% endfor %}
             {% endif %}
             {% if this_rule %}

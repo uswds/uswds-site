@@ -2220,7 +2220,7 @@ $theme-table-responsive-expand-at: 'tablet';
 $theme-table-responsive-title-width: 15;
 $theme-table-responsive-border-radius: 'md';
 $theme-table-padding-x: 2;
-$theme-table-column-gap: 2;
+$theme-table-column-gap: 4;
 
 .site-table-wrapper {
   @include at-media($theme-table-responsive-expand-at) {
@@ -2383,6 +2383,45 @@ $theme-table-column-gap: 2;
 
         & + tr {
           border-top: units(1px) solid color('base-lighter');
+        }
+      }
+    }
+  }
+
+  &.site-table-simple {
+    @include at-media($theme-table-responsive-expand-at) {
+      thead {
+        @include u-font('ui', 2);
+      }
+
+      th,
+      td {
+        @include u-padding-x($theme-table-column-gap / 2);
+        @include u-padding-y(0.5);
+        border: none;
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+
+      tr {
+        display: flex;
+
+        th,
+        td {
+          flex: flex(1);
+        }
+      }
+
+      tbody {
+        tr {
+          border: none;
+          border-top: units(1px) solid color('base-light');
         }
       }
     }

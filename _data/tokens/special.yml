@@ -4,7 +4,7 @@ auto_auto:
   - token: 'auto'
     value: auto
 zero_zero:
-  - token: '0'
+  - token: 0
     value: 0
 none_zero:
   - token: 'none'

@@ -1,12 +1,26 @@
-<h4 class="font-sans-2xs margin-top-4 margin-bottom-1">Defaults</h4>
-<div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2">
-  <div class="grid-col-5">Palette name</div>
-  <div class="grid-col-7">Palette contents</div>
-</div>
+<h4 class="font-sans-2xs margin-top-4">Spacing and units</h4>
 
-{% for utility in page.utilities %}
-  <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-5">$palette-standard-{{ utility.var }}</div>
-    <div class="grid-col-7">{{ utility.var}} standard defaults</div>
-  </div>
-{% endfor %}
+<table class="usa-table-borderless site-table-responsive site-table-simple">
+  <thead>
+    <tr>
+      <th scope="col">Palette name</th>
+      <th scope="col">Palette contents</th>
+    </tr>
+  </thead>
+  <tbody class="font-mono-2xs">
+    {% for utility in page.utilities %}
+      <tr>
+        <td scope="row" data-title="Palette name" class="tablet:text-no-wrap">
+          <span>
+            $palette-standard-{{ utility.var }}
+          </span>
+        </td>
+        <td data-title="Palette contents">
+          <span>
+            {{ utility.var}} standard defaults
+          </span>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>

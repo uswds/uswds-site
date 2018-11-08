@@ -17,7 +17,7 @@ subnav:
 {% assign theme_colors = site.data.uswds_tokens.colors.project_theme %}
 {% assign state_colors = site.data.uswds_tokens.colors.project_state %}
 
-USWDS theme color tokens are designed to be useful and effective for small and large projects. Each theme token is drawn from a [system color token]({{ site.baseurl }}/style-tokens/color/system-tokens/) and system color tokens are the only colors we accept in official components.
+USWDS theme color tokens are designed to be useful and effective for small and large projects.  Each theme token is drawn from a [system color]({{ site.baseurl }}/style-tokens/color/system-tokens/){:.token} token and we only use token-based colors in official components.
 
 {:#uswds-theme-color-tokens}
 ## Theme color tokens
@@ -29,33 +29,38 @@ USWDS theme color tokens are divided into five high-level role-based color famil
 
 Each color family has seven possible lightness grades, from `lightest` to `darkest`, though not every family needs to include a color at each grade. Some grades may be set to `false` in your project's theme settings. The default USWDS theme palette does not use every grade for every family. The `primary` and `secondary` families also have a `vivid` grade available.
 
-<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
-  <div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px text-bold font-sans-1">
-    <div class="grid-col-1">Color</div>
-    <div class="grid-col-4">Theme token</div>
-    <div class="grid-col-3">System token equivalent</div>
-    <div class="grid-col-fill text-right">Hex value</div>
-  </div>
-
-  {% for color in theme_colors %}
-    {% if color.hide_from_palette == true %}
-    {% else %}
-  <div class="utility-example-container-condensed grid-row grid-gap flex-align-center{% if forloop.last == true %} border-bottom-0 margin-bottom-0{% endif %}">
-    <span class="grid-col-1">
-      <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
-    </span>
-    <span class="grid-col-4">
-      <span class="utility-class">'{{ color.family_token }}{% if color.grade_token %}-{{ color.grade_token }}{% endif %}'</span>
-    </span>
-    <span class="grid-col-3 font-mono-3">
-      <span>{{ color.system }}</span>
-    </span>
-    <span class="grid-col-fill text-right font-mono-3">
-      {{ color.value }}
-    </span>
-  </div>
-    {% endif %}
-  {% endfor %}
+<div class="site-table-wrapper">
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col">Color</th>
+        <th scope="col">Theme token</th>
+        <th scope="col">System token</th>
+        <th scope="col" class="text-right">Hex equivalent</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for color in theme_colors %}
+        {% if color.hide_from_palette == true %}
+        {% else %}
+          <tr>
+            <td scope="row" data-title="Color" class="flex-align-center">
+              <span class="site-inline-swatch bg-{{ color.token }}"></span>
+            </td>
+            <td data-title="Theme token">
+              <span class="utility-class font-mono-2xs">'{{ color.family_token }}{% if color.grade_token %}-{{ color.grade_token }}{% endif %}'</span>
+            </td>
+            <td data-title="System token" class="font-mono-2xs">
+              '{{ color.system }}'
+            </td>
+            <td data-title="Hex equivalent" class="font-mono-2xs text-right">
+              {{ color.value }}
+            </td>
+          </tr>
+        {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
 </div>
 
 ## Customizing theme color tokens
@@ -123,116 +128,228 @@ $theme-color-accent-cool-darkest:   false;
 ## Using color tokens
 Your context and coding style determine how you access USWDS color tokens in code.
 
-<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
-  <div class="grid-row grid-gap flex-align-center margin-bottom-1 padding-bottom-1 border-bottom-2px text-bold">
-    <div class="grid-col-2 text-700 font-sans-1">Context</div>
-    <div class="grid-col-5 text-700 font-sans-1">Usage</div>
-    <div class="grid-col-5 text-700 font-sans-1">Example</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3 line-height-mono-6">
-    <div class="grid-col-2 text-bold font-sans-3">function</div>
-    <div class="grid-col-5">color: color(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)</div>
-    <div class="grid-col-5">color: color(<code>'primary-vivid'</code>);</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3 line-height-mono-6">
-    <div class="grid-col-2 text-bold font-sans-3 line-height-mono-2">
-      mixin<br/>
-      <span class="text-normal">background-color</span>
-    </div>
-    <div class="grid-col-5">
-      @include u-bg(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
-    </div>
-    <div class="grid-col-5">
-      @include u-bg(<code>'secondary-vivid'</code>)<br/>
-    </div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3 line-height-mono-6">
-    <div class="grid-col-2 text-bold font-sans-3 line-height-mono-2">
-      mixin<br/>
-      <span class="text-normal">color</span>
-    </div>
-    <div class="grid-col-5">
-      @include u-text(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
-    </div>
-    <div class="grid-col-5">
-      @include u-text(<code>'secondary-vivid'</code>)<br/>
-    </div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3 line-height-mono-6">
-    <div class="grid-col-2 text-bold font-sans-3 line-height-mono-2">
-      mixin<br/>
-      <span class="text-normal">border-color</span>
-    </div>
-    <div class="grid-col-5">
-      @include u-border(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
-    </div>
-    <div class="grid-col-5">
-      @include u-border(<code>'secondary-vivid'</code>)<br/>
-    </div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3 line-height-mono-6">
-    <div class="grid-col-2 text-bold font-sans-3 line-height-mono-2">
-      mixin<br/>
-      <span class="text-normal">outline-color</span>
-    </div>
-    <div class="grid-col-5">
-      @include u-outline(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
-    </div>
-    <div class="grid-col-5">
-      @include u-outline(<code>'secondary-vivid'</code>)<br/>
-    </div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3 line-height-mono-6">
-    <div class="grid-col-2 text-bold font-sans-3 line-height-mono-2">
-      mixin<br/>
-      <span class="text-normal">text-decoration-color</span>
-    </div>
-    <div class="grid-col-5">
-      @include u-underline(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
-    </div>
-    <div class="grid-col-5">
-      @include u-underline(<code>'secondary-vivid'</code>)<br/>
-    </div>
-  </div>
-
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">setting</div>
-    <div class="grid-col-5">$theme-variable: <a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a></div>
-    <div class="grid-col-5">$theme-color-accent-warm: <code>'orange-40'</code>;</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">utility<br/>
-      <span class="text-normal">background-color</span>
-    </div>
-    <div class="grid-col-5">.bg-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a></div>
-    <div class="grid-col-5">.bg-<code>accent-warm</code></div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">utility<br/>
-      <span class="text-normal">border-color</span>
-    </div>
-    <div class="grid-col-5">.border-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a></div>
-    <div class="grid-col-5">.border-<code>accent-warm</code></div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">utility<br/>
-      <span class="text-normal">color</span>
-    </div>
-    <div class="grid-col-5">.text-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a></div>
-    <div class="grid-col-5">.text-<code>accent-warm</code></div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">utility<br/>
-      <span class="text-normal">outline-color</span>
-    </div>
-    <div class="grid-col-5">.text-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a></div>
-    <div class="grid-col-5">.text-<code>accent-warm</code></div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3 line-height-mono-2">utility<br/>
-      <span class="text-normal">text-decoration-color</span>
-    </div>
-    <div class="grid-col-5">.underline-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a></div>
-    <div class="grid-col-5">.underline-<code>accent-warm</code></div>
-  </div>
+<div class="site-table-wrapper">
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col">Context</th>
+        <th scope="col">Usage</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="text-bold font-sans-3">function</span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            color: color(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            color: color(<code>'primary-vivid'</code>)
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">mixin</span><br/>
+            <span>background-color</span>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            @include u-bg(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-bg(<code>'primary-vivid'</code>)<br/>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">mixin</span><br/>
+            <span>color</span>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            @include u-text(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)<br/>
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-text(<code>'primary-vivid'</code>)<br/>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">mixin</span><br/>
+            <span>border-color</span>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            @include u-border(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-border(<code>'primary-vivid'</code>)<br/>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">mixin</span><br/>
+            <span>text-decoration-color</span>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            @include u-underline(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-underline(<code>'primary-vivid'</code>)<br/>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span>
+            <span class="text-bold font-sans-3">setting</span><br/>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            $theme-variable: <a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            $theme-border-color: <code>'primary-vivid'</code>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">mixin</span><br/>
+            <span>text-decoration-color</span>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            @include u-underline(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-underline(<code>'primary-vivid'</code>)<br/>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">utility</span><br/>
+            <span>background-color</span>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            .bg-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            .bg-<code>base-lighter</code>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">utility</span><br/>
+            <span>border-color</span>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            .border-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            .border-<code>primary</code>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">utility</span><br/>
+            <span>color</span>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            .text-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            .text-<code>primary</code>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">utility</span><br/>
+            <span>outline-color</span>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            .outline-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            .outline-<code>primary</code>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">utility</span><br/>
+            <span>text-decoration-color</span>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            .underline-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            .underline-<code>primary</code>
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>

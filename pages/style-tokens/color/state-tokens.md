@@ -14,43 +14,50 @@ subnav:
 
 {% assign state_colors = site.data.uswds_tokens.colors.project_state %}
 
-USWDS theme color tokens are designed to be useful and effective for small and large projects. Each theme token is drawn from a [system color token]({{ site.baseurl }}/style-tokens/color/system-tokens/) and system color tokens are the only colors we accept in official components.
+USWDS state color tokens are designed to be useful and effective for any project that has states or alerts. Each state token is drawn from a system [color]({{ site.baseurl }}/style-tokens/color/system-tokens/){:.token} token and we only use token-based colors in official components.
 
 {:#uswds-state-color-tokens}
 ## State color tokens
-The state color palette is divided into four high-level role-based color families: `error`, `warning`, `success`, and `disabled`.
+The state color palette is divided into five high-level role-based color families: `info`, `error`, `warning`, `success`, and `disabled`.
 
 Each color family except `disabled` has five possible lightness grades, from `lighter` to `darker`, though not every family needs to include a color at each grade. Some grades may be set to `false` in your project's theme settings.
 
-<div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px margin-top-4 text-bold font-sans-1">
-  <div class="grid-col-1">color</div>
-  <div class="grid-col-4">state token</div>
-  <div class="grid-col-3">system token equivalent</div>
-  <div class="grid-col-fill text-right">hex value</div>
+<div class="site-table-wrapper">
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col">Color</th>
+        <th scope="col">State token</th>
+        <th scope="col">System token</th>
+        <th scope="col" class="text-right">Hex equivalent</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for color in state_colors %}
+        {% if color.hide_from_palette == true %}
+        {% else %}
+          <tr>
+            <td scope="row" data-title="Color" class="flex-align-center">
+              <span class="site-inline-swatch bg-{{ color.token }}"></span>
+            </td>
+            <td data-title="State token">
+              <span class="utility-class font-mono-2xs">'{{ color.family_token }}{% if color.grade_token %}-{{ color.grade_token }}{% endif %}'</span>
+            </td>
+            <td data-title="System token" class="font-mono-2xs">
+              '{{ color.system }}'
+            </td>
+            <td data-title="Hex equivalent" class="font-mono-2xs text-right">
+              {{ color.value }}
+            </td>
+          </tr>
+        {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
 </div>
-
-{% for color in state_colors %}
-  {% if color.hide_from_palette == true %}
-  {% else %}
-<div class="utility-example-container-condensed grid-row grid-gap flex-align-center">
-  <span class="grid-col-1">
-    <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
-  </span>
-  <span class="grid-col-4">
-    <span class="utility-class">'{{ color.family_token }}{% if color.grade_token %}-{{ color.grade_token }}{% endif %}'</span>
-  </span>
-  <span class="grid-col-3 font-mono-3">
-    <span>{{ color.system }}</span>
-  </span>
-  <span class="grid-col-fill text-right font-mono-3">
-    {{ color.value }}
-  </span>
-</div>
-  {% endif %}
-{% endfor %}
 
 ## Customizing state color tokens
-Customize theme color tokens in your project's theme settings with [system color tokens]({{ site.baseurl }}/style-tokens/color/system-tokens/). Set any unused state color to `false`.
+Customize theme color tokens in your project's theme settings with system [color]({{ site.baseurl }}/style-tokens/color/system-tokens/){:.token} tokens. Set any unused state color to `false`.
 
 ```sass
 /*
@@ -102,116 +109,228 @@ $theme-color-disabled-dark:    '#{$theme-color-disabled-family}-30';
 ## Using color tokens
 Your context and coding style determine how you access USWDS color tokens in code.
 
-<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
-  <div class="grid-row grid-gap flex-align-center margin-bottom-1 padding-bottom-1 border-bottom-2px text-bold">
-    <div class="grid-col-2 text-700 font-sans-1">Context</div>
-    <div class="grid-col-5 text-700 font-sans-1">Usage</div>
-    <div class="grid-col-5 text-700 font-sans-1">Example</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3 line-height-mono-6">
-    <div class="grid-col-2 text-bold font-sans-3">function</div>
-    <div class="grid-col-5">color: color(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)</div>
-    <div class="grid-col-5">color: color(<code>'warning-dark'</code>);</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3 line-height-mono-6">
-    <div class="grid-col-2 text-bold font-sans-3 line-height-mono-2">
-      mixin<br/>
-      <span class="text-normal">background-color</span>
-    </div>
-    <div class="grid-col-5">
-      @include u-bg(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
-    </div>
-    <div class="grid-col-5">
-      @include u-bg(<code>'warning-dark'</code>)<br/>
-    </div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3 line-height-mono-6">
-    <div class="grid-col-2 text-bold font-sans-3 line-height-mono-2">
-      mixin<br/>
-      <span class="text-normal">color</span>
-    </div>
-    <div class="grid-col-5">
-      @include u-text(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
-    </div>
-    <div class="grid-col-5">
-      @include u-text(<code>'warning-dark'</code>)<br/>
-    </div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3 line-height-mono-6">
-    <div class="grid-col-2 text-bold font-sans-3 line-height-mono-2">
-      mixin<br/>
-      <span class="text-normal">border-color</span>
-    </div>
-    <div class="grid-col-5">
-      @include u-border(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
-    </div>
-    <div class="grid-col-5">
-      @include u-border(<code>'warning-dark'</code>)<br/>
-    </div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3 line-height-mono-6">
-    <div class="grid-col-2 text-bold font-sans-3 line-height-mono-2">
-      mixin<br/>
-      <span class="text-normal">outline-color</span>
-    </div>
-    <div class="grid-col-5">
-      @include u-outline(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
-    </div>
-    <div class="grid-col-5">
-      @include u-outline(<code>'warning-dark'</code>)<br/>
-    </div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3 line-height-mono-6">
-    <div class="grid-col-2 text-bold font-sans-3 line-height-mono-2">
-      mixin<br/>
-      <span class="text-normal">text-decoration-color</span>
-    </div>
-    <div class="grid-col-5">
-      @include u-underline(<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a>)
-    </div>
-    <div class="grid-col-5">
-      @include u-underline(<code>'warning-dark'</code>)<br/>
-    </div>
-  </div>
-
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">setting</div>
-    <div class="grid-col-5">$theme-variable: <a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a></div>
-    <div class="grid-col-5">$theme-color-warning: <code>'warning-dark'</code>;</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">utility<br/>
-      <span class="text-normal">background-color</span>
-    </div>
-    <div class="grid-col-5">.bg-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a></div>
-    <div class="grid-col-5">.bg-<code>warning-light</code></div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">utility<br/>
-      <span class="text-normal">border-color</span>
-    </div>
-    <div class="grid-col-5">.border-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a></div>
-    <div class="grid-col-5">.border-<code>error</code></div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">utility<br/>
-      <span class="text-normal">color</span>
-    </div>
-    <div class="grid-col-5">.text-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a></div>
-    <div class="grid-col-5">.text-<code>error</code></div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">utility<br/>
-      <span class="text-normal">outline-color</span>
-    </div>
-    <div class="grid-col-5">.text-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a></div>
-    <div class="grid-col-5">.text-<code>error</code></div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3 line-height-mono-2">utility<br/>
-      <span class="text-normal">text-decoration-color</span>
-    </div>
-    <div class="grid-col-5">.underline-<a href="{{ site.baseurl }}/style-tokens/color/theme-tokens/" class="token">color</a></div>
-    <div class="grid-col-5">.underline-<code>error</code></div>
-  </div>
+<div class="site-table-wrapper">
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col">Context</th>
+        <th scope="col">Usage</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="text-bold font-sans-3">function</span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            color: color(<a href="{{ site.baseurl }}/style-tokens/color/state-tokens/" class="token">color</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            color: color(<code>'warning-dark'</code>)
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">mixin</span><br/>
+            <span>background-color</span>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            @include u-bg(<a href="{{ site.baseurl }}/style-tokens/color/state-tokens/" class="token">color</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-bg(<code>'warning-dark'</code>)<br/>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">mixin</span><br/>
+            <span>color</span>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            @include u-text(<a href="{{ site.baseurl }}/style-tokens/color/state-tokens/" class="token">color</a>)<br/>
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-text(<code>'warning-dark'</code>)<br/>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">mixin</span><br/>
+            <span>border-color</span>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            @include u-border(<a href="{{ site.baseurl }}/style-tokens/color/state-tokens/" class="token">color</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-border(<code>'warning-dark'</code>)<br/>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">mixin</span><br/>
+            <span>text-decoration-color</span>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            @include u-underline(<a href="{{ site.baseurl }}/style-tokens/color/state-tokens/" class="token">color</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-underline(<code>'warning-dark'</code>)<br/>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span>
+            <span class="text-bold font-sans-3">setting</span><br/>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            $theme-variable: <a href="{{ site.baseurl }}/style-tokens/color/state-tokens/" class="token">color</a>
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            $theme-color-warning: <code>'warning-dark'</code>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">mixin</span><br/>
+            <span>text-decoration-color</span>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            @include u-underline(<a href="{{ site.baseurl }}/style-tokens/color/state-tokens/" class="token">color</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-underline(<code>'warning-dark'</code>)<br/>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">utility</span><br/>
+            <span>background-color</span>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            .bg-<a href="{{ site.baseurl }}/style-tokens/color/state-tokens/" class="token">color</a>
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            .bg-<code>warning-light</code>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">utility</span><br/>
+            <span>border-color</span>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            .border-<a href="{{ site.baseurl }}/style-tokens/color/state-tokens/" class="token">color</a>
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            .border-<code>error</code>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">utility</span><br/>
+            <span>color</span>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            .text-<a href="{{ site.baseurl }}/style-tokens/color/state-tokens/" class="token">color</a>
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            .text-<code>error</code>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">utility</span><br/>
+            <span>outline-color</span>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            .outline-<a href="{{ site.baseurl }}/style-tokens/color/state-tokens/" class="token">color</a>
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            .outline-<code>error</code>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">utility</span><br/>
+            <span>text-decoration-color</span>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            .underline-<a href="{{ site.baseurl }}/style-tokens/color/state-tokens/" class="token">color</a>
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            .underline-<code>error</code>
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>

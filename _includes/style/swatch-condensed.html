@@ -1,36 +1,36 @@
-<div class="utility-example-container-condensed grid-row grid-gap flex-align-center">
-  <span class="grid-col-2">
-    <span class="height-4 width-full radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.utility }}"></span>
-  </span>
-  <span class="grid-col-2">
+<tr{% if color.value %}{% else %} class="is-empty"{% endif %}>
+  <td scope="row" data-title="Color" class="flex-align-center">
+    <span class="site-inline-swatch bg-{{ color.utility }}"></span>
+  </td>
+  <td data-title="Family">
     <span class="utility-class">{{ color.family_token }}</span>
-  </span>
-  <span class="grid-col-1">
+  </td>
+  <td data-title="Grade">
     {% if color.grade_token %}
     <span class="utility-class">{{ color.grade_token }}</span>
     {% else %}
     <span>—</span>
     {% endif %}
-  </span>
-  <span class="grid-col-2">
+  </td>
+  <td data-title="Variant">
     {% if color.variant_token %}
     <span class="utility-class">{{ color.variant_token }}</span>
     {% else %}
     <span>—</span>
     {% endif %}
-  </span>
-  <span class="grid-col-3">
+  </td>
+  <td data-title="Token">
     {% if color.value %}
     <span class="utility-class bg-transparent border border-base-light">'{{ color.utility }}'</span>
     {% else %}
     <span>—</span>
     {% endif %}
-  </span>
-  <span class="grid-col-fill text-right font-mono-3">
+  </td>
+  <td data-title="Hex equivalent" class="text-right font-mono-2xs">
     {% if color.value %}
     <span>{{ color.value }}</span>
     {% else %}
     <span>—</span>
     {% endif %}
-  </span>
-</div>
+  </td>
+</tr>

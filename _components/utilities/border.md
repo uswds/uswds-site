@@ -64,6 +64,8 @@ utilities:
   visited:      false
 ---
 
+{% include tokens/get-system-colors.html %}
+
 {% assign border_modifiers = ", -top, -bottom, -left, -right, -x, -y" | split: ", " %}
 {% assign border_modifiers_simple = ", -top, -bottom, -left, -right" | split: ", " %}
 
@@ -450,6 +452,14 @@ utilities:
     <section class="utility-examples">
       <div class="grid-row">
         {% for color in all_colors %}
+          {% if color.default %}
+            {% assign system = system-colors | where: 'token', color.default %}
+            {% assign value = system[0].value %}
+            {% assign token = color.default %}
+          {% else %}
+            {% assign value = color.value %}
+            {% assign token = false %}
+          {% endif %}
           <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
             <span class="flex-fill">
               <span class="square-4 radius-sm text-middle padding-05 display-inline-block margin-right-1 bg-white ">
@@ -460,9 +470,12 @@ utilities:
               </span>
               <span class="utility-class">.border-{{ color.token }}</span>
             </span>
-            <span class="flex-auto utility-value-color">
+            {% if token %}
+              <code class="bg-secondary-lighter radius-sm">{{ token }}</code>
+            {% endif %}
+            <span class="flex-auto utility-value-color margin-left-1">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
-              {{ color.value }}
+              {{ value }}
             </span>
           </p>
         {% endfor %}
@@ -526,7 +539,7 @@ utilities:
             <div class="bg-secondary-light height-9 width-15 radius{{ modifier }}-pill"></div>
             <div class="display-flex flex-column flex-align-start margin-top-2">
               <span class="utility-class">.radius{{ modifier }}-pill</span>
-              <span class="utility-value margin-top-2px">9999em</span>
+              <span class="utility-value margin-top-2px">99rem</span>
             </div>
           </div>
         </div>
@@ -535,258 +548,123 @@ utilities:
   </section>
 </section>
 
-<section class="utilities-section">
-  <h2 class="utilities-section-title">Default output</h2>
-  <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
-    <div class="grid-col-4">Utility</div>
-    <div class="grid-col-6">Output SCSS</div>
-    <div class="grid-col-2">Default variable value</div>
-  </div>
-  <dl class="output-list">
-    {% for modifier in border_modifiers %}
-      {% for item in border_widths %}
-        {% if item.token == 'noValue' %}
-          <dt class="output-utility">.border{{ modifier }}</dt>
-          <dd class="output-css">
-            {% if modifier == '-x' %}
-            <span>
-              <span class="output-rule">border-left: {{ noValue_value }} solid</span>
-              <span class="output-rule">border-right: {{ noValue_value }} solid</span>
-            </span>
-            {% elsif modifier == '-y' %}
-            <span>
-              <span class="output-rule">border-bottom: {{ noValue_value }} solid</span>
-              <span class="output-rule">border-top: {{ noValue_value }} solid</span>
-            </span>
-            {% else %}
-            <span class="output-rule">border{{ modifier }}: {{ noValue_value }}  solid</span>
-            {% endif %}
-          </dd>
-          <dd class="output-variable">{% if item.scss %}{{ item.value }}{% else %}—{% endif %}</dd>
-        {% else %}
-          <dt class="output-utility">.border{{ modifier }}-{{ item.token }}</dt>
-          <dd class="output-css">
-            {% if modifier == '-x' %}
-            <span>
-              <span class="output-rule">border-left: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %} solid</span>
-              <span class="output-rule">border-right: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %} solid</span>
-            </span>
-            {% elsif modifier == '-y' %}
-            <span>
-              <span class="output-rule">border-bottom: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %} solid</span>
-              <span class="output-rule">border-top: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %} solid</span>
-            </span>
-            {% else %}
-            <span class="output-rule">border{{ modifier }}: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %} solid</span>
-            {% endif %}
-          </dd>
-          <dd class="output-variable">{% if item.scss %}{{ item.value }}{% else %}—{% endif %}</dd>
-        {% endif %}
-      {% endfor %}
-    {% endfor %}
-    <dt class="output-utility">.border-dashed</dt>
-    <dd class="output-css">border-style: dashed</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.border-dotted</dt>
-    <dd class="output-css">border-style: dotted</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.border-solid</dt>
-    <dd class="output-css">border-style: solid</dd>
-    <dd class="output-variable">—</dd>
-    {% for modifier in border_modifiers %}
-      {% for item in border_widths %}
-        {% if item.token != 'noValue' %}
-          <dt class="output-utility">.border{{ modifier }}-width-{{ item.token }}</dt>
-          <dd class="output-css">
-            {% if modifier == '-x' %}
-            <span>
-              <span class="output-rule">border-left-width: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %}</span>
-              <span class="output-rule">border-right-width: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %}</span>
-            </span>
-            {% elsif modifier == '-y' %}
-            <span>
-              <span class="output-rule">border-bottom-width: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %}</span>
-              <span class="output-rule">border-top-width: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %}</span>
-            </span>
-            {% else %}
-            <span class="output-rule">border{{ modifier }}-width: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %}</span>
-            {% endif %}
-          </dd>
-          <dd class="output-variable">{% if item.scss %}{{ item.value }}{% else %}—{% endif %}</dd>
-        {% endif %}
-      {% endfor %}
-    {% endfor %}
-    {% for color in all_colors %}
-      <dt class="output-utility">.border-{{ color.token }}</dt>
-      <dd class="output-css">
-        <span class="output-rule">border-color: <span class="output-token">color('{{ color.token }}')</span></span>
-      </dd>
-      <dd class="output-variable">
-        {% if color.var %}
-          <span class="display-inline-block bg-{{ color.token }} circle-105 text-baseline margin-right-05"></span>
-          {{ color.value }}
-        {% else %}
-          —
-        {% endif %}
-      </dd>
-    {% endfor %}
-
-    <dt class="output-utility">.radius-0</dt>
-    <dd class="output-css">border-radius: 0</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.radius-sm</dt>
-    <dd class="output-css"><span>border-radius: <span class="output-token">units($theme-border-radius-sm)</span></span></dd>
-    <dd class="output-variable">2px</dd>
-
-    <dt class="output-utility">.radius-md</dt>
-    <dd class="output-css"><span>border-radius: <span class="output-token">units($theme-border-radius-md)</span></span></dd>
-    <dd class="output-variable">4px</dd>
-
-    <dt class="output-utility">.radius-lg</dt>
-    <dd class="output-css"><span>border-radius: <span class="output-token">units($theme-border-radius-lg)</span></span></dd>
-    <dd class="output-variable">8px</dd>
-
-    <dt class="output-utility">.radius-pill</dt>
-    <dd class="output-css"><span>border-radius: <span class="output-token">units(pill)</span></span></dd>
-    <dd class="output-variable">9999em</dd>
-
-    <dt class="output-utility">.radius-top-0</dt>
-    <dd class="output-css">border-top-radius: 0</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.radius-top-sm</dt>
-    <dd class="output-css"><span>border-top-radius: <span class="output-token">units($theme-border-radius-sm)</span></span></dd>
-    <dd class="output-variable">2px</dd>
-
-    <dt class="output-utility">.radius-top-md</dt>
-    <dd class="output-css"><span>border-top-radius: <span class="output-token">units($theme-border-radius-md)</span></span></dd>
-    <dd class="output-variable">4px</dd>
-
-    <dt class="output-utility">.radius-top-lg</dt>
-    <dd class="output-css"><span>border-top-radius: <span class="output-token">units($theme-border-radius-lg)</span></span></dd>
-    <dd class="output-variable">8px</dd>
-
-    <dt class="output-utility">.radius-top-pill</dt>
-    <dd class="output-css"><span>border-top-radius: <span class="output-token">units(pill)</span></span></dd>
-    <dd class="output-variable">9999em</dd>
-
-    <dt class="output-utility">.radius-bottom-0</dt>
-    <dd class="output-css">border-bottom-radius: 0</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.radius-bottom-sm</dt>
-    <dd class="output-css"><span>border-bottom-radius: <span class="output-token">units($theme-border-radius-sm)</span></span></dd>
-    <dd class="output-variable">2px</dd>
-
-    <dt class="output-utility">.radius-bottom-md</dt>
-    <dd class="output-css"><span>border-bottom-radius: <span class="output-token">units($theme-border-radius-md)</span></span></dd>
-    <dd class="output-variable">4px</dd>
-
-    <dt class="output-utility">.radius-bottom-lg</dt>
-    <dd class="output-css"><span>border-bottom-radius: <span class="output-token">units($theme-border-radius-lg)</span></span></dd>
-    <dd class="output-variable">8px</dd>
-
-    <dt class="output-utility">.radius-bottom-pill</dt>
-    <dd class="output-css"><span>border-bottom-radius: <span class="output-token">units(pill)</span></span></dd>
-    <dd class="output-variable">9999em</dd>
-
-    <dt class="output-utility">.radius-left-0</dt>
-    <dd class="output-css">border-left-radius: 0</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.radius-left-sm</dt>
-    <dd class="output-css"><span>border-left-radius: <span class="output-token">units($theme-border-radius-sm)</span></span></dd>
-    <dd class="output-variable">2px</dd>
-
-    <dt class="output-utility">.radius-left-md</dt>
-    <dd class="output-css"><span>border-left-radius: <span class="output-token">units($theme-border-radius-md)</span></span></dd>
-    <dd class="output-variable">4px</dd>
-
-    <dt class="output-utility">.radius-left-lg</dt>
-    <dd class="output-css"><span>border-left-radius: <span class="output-token">units($theme-border-radius-lg)</span></span></dd>
-    <dd class="output-variable">8px</dd>
-
-    <dt class="output-utility">.radius-left-pill</dt>
-    <dd class="output-css"><span>border-left-radius: <span class="output-token">units(pill)</span></span></dd>
-    <dd class="output-variable">9999em</dd>
-
-    <dt class="output-utility">.radius-right-0</dt>
-    <dd class="output-css">border-right-radius: 0</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.radius-right-sm</dt>
-    <dd class="output-css"><span>border-right-radius: <span class="output-token">units($theme-border-radius-sm)</span></span></dd>
-    <dd class="output-variable">2px</dd>
-
-    <dt class="output-utility">.radius-right-md</dt>
-    <dd class="output-css"><span>border-right-radius: <span class="output-token">units($theme-border-radius-md)</span></span></dd>
-    <dd class="output-variable">4px</dd>
-
-    <dt class="output-utility">.radius-right-lg</dt>
-    <dd class="output-css"><span>border-right-radius: <span class="output-token">units($theme-border-radius-lg)</span></span></dd>
-    <dd class="output-variable">8px</dd>
-
-    <dt class="output-utility">.radius-right-pill</dt>
-    <dd class="output-css"><span>border-right-radius: <span class="output-token">units(pill)</span></span></dd>
-    <dd class="output-variable">9999em</dd>
-
-  </dl>
-</section>
-
 <section id="utility-mixins" class="padding-top-4">
   <h2 class="site-h2 margin-y-0">Utility mixins</h2>
   {% include utilities/utility-mixin-intro.html %}
 
-  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2 margin-top-3">
-    <div class="grid-col-4">Utility</div>
-    <div class="grid-col-4">Mixin</div>
-    <div class="grid-col-4">Example</div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.border-<code>units</code></div>
-    <div class="grid-col-4">u-border(<code>units</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-border(1px)</span>
-      <span class="display-block margin-top-1">u-border('05')</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.border-<code>side</code>-<code>units</code></div>
-    <div class="grid-col-4">u-border-<code>side</code>(<code>units</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-border-top(1px)</span>
-      <span class="display-block margin-top-1">u-border-y('05')</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.border-<code>color</code></div>
-    <div class="grid-col-4">u-border(<code>color</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-border('accent-warm-light')</span>
-      <span class="display-block margin-top-1">u-border('red-50v')</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.border-<code>style</code></div>
-    <div class="grid-col-4">u-border(<code>style</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-border('dotted')</span>
-      <span class="display-block margin-top-1">u-border('solid')</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.radius-<code>units</code></div>
-    <div class="grid-col-4">u-radius(<code>units</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-radius('md')</span>
-      <span class="display-block margin-top-1">u-radius('05')</span>
-      <span class="display-block margin-top-1">u-radius(0.5)</span>
-    </div>
-  </div>
-
+  <table class="usa-table-borderless site-table-responsive site-table-simple">
+    <thead>
+      <tr>
+        <th scope="col" class="tablet:maxw-card-lg">Utility</th>
+        <th scope="col">Mixin</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .border-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-border(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-border(2px)
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .border-<code>modifier</code>-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-border-<code>modifier</code>(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-border-y(1)
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .border-<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-border(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-border('primary-vivid')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .border-<code>style</code>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-border(<code>modifier</code>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-border('dotted')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .radius-<code>radius</code>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-radius(<code>radius</code>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-radius('sm')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .radius-<code>modifier</code>-<code>radius</code>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-radius-<code>modifier</code>(<code>radius</code>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-radius-left('pill')
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
   {% include utilities/utility-mixin-using.html %}
 </section>
 

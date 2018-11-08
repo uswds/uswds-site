@@ -42,52 +42,7 @@ utilities:
   | concat: basic_colors
   %}
 
-{% assign colors = site.data.tokens.color %}
-{% assign system-colors =
-  colors.required
-  | concat: colors.system.red
-  | concat: colors.system.red-vivid
-  | concat: colors.system.red-warm
-  | concat: colors.system.red-warm-vivid
-  | concat: colors.system.orange
-  | concat: colors.system.orange-vivid
-  | concat: colors.system.orange-warm
-  | concat: colors.system.orange-warm-vivid
-  | concat: colors.system.gold
-  | concat: colors.system.gold-vivid
-  | concat: colors.system.yellow
-  | concat: colors.system.yellow-vivid
-  | concat: colors.system.green
-  | concat: colors.system.green-vivid
-  | concat: colors.system.green-warm
-  | concat: colors.system.green-warm-vivid
-  | concat: colors.system.green-cool
-  | concat: colors.system.green-cool-vivid
-  | concat: colors.system.mint
-  | concat: colors.system.mint-vivid
-  | concat: colors.system.mint-cool
-  | concat: colors.system.mint-cool-vivid
-  | concat: colors.system.cyan
-  | concat: colors.system.cyan-vivid
-  | concat: colors.system.blue
-  | concat: colors.system.blue-vivid
-  | concat: colors.system.blue-warm
-  | concat: colors.system.blue-warm-vivid
-  | concat: colors.system.indigo
-  | concat: colors.system.indigo-vivid
-  | concat: colors.system.indigo-warm
-  | concat: colors.system.indigo-warm-vivid
-  | concat: colors.system.indigo-cool
-  | concat: colors.system.indigo-cool-vivid
-  | concat: colors.system.violet
-  | concat: colors.system.violet-vivid
-  | concat: colors.system.violet-warm
-  | concat: colors.system.violet-warm-vivid
-  | concat: colors.system.magenta
-  | concat: colors.system.magenta-vivid
-  | concat: colors.system.gray
-  | concat: colors.system.gray-warm
-  | concat: colors.system.gray-cool %}
+{% include tokens/get-system-colors.html %}
 
 <div class="utilities-properties">
   <h3 class="utilities-property-title">CSS properties</h3>

@@ -286,76 +286,61 @@ utilities:
   </section>
 </section>
 
-<section class="utilities-section margin-top-6">
-  <h2 class="utilities-section-title">Default output</h2>
-  <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
-    <div class="grid-col-4">Utility</div>
-    <div class="grid-col-6">Output SCSS</div>
-    <div class="grid-col-2">Default variable value</div>
-  </div>
-  <dl class="output-list">
-    {% for color in all_colors %}
-      {% if color.default %}
-        {% assign system = system-colors | where: 'token', color.default %}
-        {% assign value = system[0].value %}
-      {% else %}
-        {% assign value = color.value %}
-      {% endif %}
-      <dt class="output-utility">.text-{{ color.token }}</dt>
-      <dd class="output-css">color: <span class="output-token">color('{{ color.token }}')</span></dd>
-      <dd class="output-variable">
-        <span class="display-inline-block bg-{{ color.token }} circle-105 text-baseline margin-right-05"></span>
-        {{ value }}
-      </dd>
-    {% endfor %}
-    {% for color in all_colors %}
-      {% if color.default %}
-        {% assign system = system-colors | where: 'token', color.default %}
-        {% assign value = system[0].value %}
-      {% else %}
-        {% assign value = color.value %}
-      {% endif %}
-      <dt class="output-utility">.bg-{{ color.token }}</dt>
-      <dd class="output-css">background-color: <span class="output-token">color('{{ color.token }}')</span></dd>
-      <dd class="output-variable">
-        <span class="display-inline-block bg-{{ color.token }} circle-105 text-baseline margin-right-05"></span>
-        {{ value }}
-      </dd>
-    {% endfor %}
-  </dl>
-</section>
-
 <section id="utility-mixins" class="padding-top-4">
-  <h2 class="margin-y-0">Utility mixins</h2>
+  <h2 class="site-h2 margin-y-0">Utility mixins</h2>
   {% include utilities/utility-mixin-intro.html %}
 
-  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2 margin-top-3">
-    <div class="grid-col-4">Utility</div>
-    <div class="grid-col-4">Mixin</div>
-    <div class="grid-col-4">Example</div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.text-<code>color</code></div>
-    <div class="grid-col-4">u-text(<code>color</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-text('red-50')</span>
-      <span class="display-block margin-top-1">u-text('secondary-darker')</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.bg-<code>color</code></div>
-    <div class="grid-col-4">u-bg(<code>color</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-bg('indigo-warm-50v')</span>
-      <span class="display-block margin-top-1">u-bg('base-darker')</span>
-    </div>
-  </div>
+  <table class="usa-table-borderless site-table-responsive site-table-simple">
+    <thead>
+      <tr>
+        <th scope="col" class="tablet:maxw-card-lg">Utility</th>
+        <th scope="col">Mixin</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .text-<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-text(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-text('primary-darker')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .bg-<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-bg(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-bg('primary-darker')
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
   {% include utilities/utility-mixin-using.html %}
 </section>
 
 <section id="advanced-settings" class="padding-top-4">
-<h2 class="margin-y-0">Advanced settings</h2>
+<h2 class="site-h2 margin-y-0">Advanced settings</h2>
 
   {% include utilities/responsive-variants.html %}
 

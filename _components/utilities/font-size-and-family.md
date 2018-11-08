@@ -257,7 +257,7 @@ utilities:
         </td>
         <td data-title="Example">
           <span>
-            u-font('sans', 'sm')
+            @include u-font('sans', 'sm')
           </span>
         </td>
       </tr>
@@ -274,7 +274,7 @@ utilities:
         </td>
         <td data-title="Example">
           <span>
-            u-font-family('sans')
+            @include u-font-family('sans')
           </span>
         </td>
       </tr>

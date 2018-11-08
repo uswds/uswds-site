@@ -754,7 +754,7 @@ utilities:
 </section>
 
 <section id="utility-mixins" class="padding-top-4">
-  <h2 class="margin-y-0">Utility mixins</h2>
+  <h2 class="site-h2 margin-y-0">Utility mixins</h2>
   {% include utilities/utility-mixin-intro.html %}
 
   <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2 margin-top-3">
@@ -823,7 +823,7 @@ utilities:
 </section>
 
 <section id="advanced-settings" class="padding-top-4">
-  <h2 class="margin-y-0">Advanced settings</h2>
+  <h2 class="site-h2 margin-y-0">Advanced settings</h2>
 
   {% include utilities/responsive-variants.html %}
   {% include utilities/state-variants.html %}

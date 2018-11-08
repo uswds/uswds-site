@@ -828,256 +828,179 @@ utilities:
   </section>
 </section>
 
-<section class="utilities-section">
-  <h2 class="utilities-section-title">Default output</h2>
-  <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
-    <div class="grid-col-4">Utility</div>
-    <div class="grid-col-6">Output SCSS</div>
-    <div class="grid-col-2">Default variable value</div>
-  </div>
-  <dl class="output-list">
-    {% assign display_values = "block, flex, inline, inline-block, infline-flex, table, table-cell"
-      | split: ', ' %}
-    {% for value in display_values %}
-      <dt class="output-utility">.display-{{ value }}</dt>
-      <dd class="output-css"><span>display: {{ value }}</span></dd>
-      <dd class="output-variable">—</dd>
-    {% endfor %}
-
-    {% for item in site.data.tokens.opacity %}
-      <dt class="output-utility">.opacity-{{ item.token }}</dt>
-      <dd class="output-css"><span>opacity: <span class="output-token">opacity({{ item.token }})</span></span></dd>
-      <dd class="output-variable">{{ item.value }}</dd>
-    {% endfor %}
-
-    {% assign overflow_modifiers = ", -x, -y"
-      | split: ', ' %}
-    {% assign overflow_values = "visible, hidden, scroll, auto"
-      | split: ', ' %}
-    {% for modifier in overflow_modifiers %}
-      {% for value in overflow_values %}
-        <dt class="output-utility">.overflow{{ modifier }}-{{ value }}</dt>
-        <dd class="output-css"><span>overflow{{ modifier }}: {{ value }}</span></dd>
-        <dd class="output-variable">—</dd>
-      {% endfor %}
-    {% endfor %}
-
-    {% assign position_values = "absolute, fixed, relative, static, sticky"
-      | split: ', ' %}
-    {% for value in position_values %}
-      <dt class="output-utility">.position-{{ value }}</dt>
-      <dd class="output-css"><span>position: {{ value }}</span></dd>
-      <dd class="output-variable">—</dd>
-    {% endfor %}
-
-    {% assign rp_modifiers = "bottom, left, right, top"
-      | split: ', ' %}
-    {% for modifier in rp_modifiers %}
-      {% for value in rp_spacing %}
-        <dt class="output-utility">.{{ modifier }}-{{ value.token }}</dt>
-        {% if value.scss %}
-          <dd class="output-css">
-            <span>{{ modifier }}: <span class="output-token">{{ value.scss }}</span>
-            </span>
-          </dd>
-          <dd class="output-variable">{{ value.value }}</dd>
-        {% else %}
-          <dd class="output-css"><span>{{ modifier }}: {{ value.value }}</span></dd>
-          <dd class="output-variable">—</dd>
-        {% endif %}
-      {% endfor %}
-    {% endfor %}
-
-    <dt class="output-utility">.pin-bottom</dt>
-    <dd class="output-css">
-      <span class="">
-        <span class="output-rule">bottom: 0</span>
-        <span class="output-rule">position: absolute</span>
-      </span>
-    </dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.pin-left</dt>
-    <dd class="output-css">
-      <span class="">
-        <span class="output-rule">left: 0</span>
-        <span class="output-rule">position: absolute</span>
-      </span>
-    </dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.pin-right</dt>
-    <dd class="output-css">
-      <span class="">
-        <span class="output-rule">right: 0</span>
-        <span class="output-rule">position: absolute</span>
-      </span>
-    </dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.pin-top</dt>
-    <dd class="output-css">
-      <span class="">
-        <span class="output-rule">top: 0</span>
-        <span class="output-rule">position: absolute</span>
-      </span>
-    </dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.pin-x</dt>
-    <dd class="output-css">
-      <span class="">
-        <span class="output-rule">left: 0</span>
-        <span class="output-rule">right: 0</span>
-        <span class="output-rule">position: absolute</span>
-      </span>
-    </dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.pin-y</dt>
-    <dd class="output-css">
-      <span class="">
-        <span class="output-rule">bottom: 0</span>
-        <span class="output-rule">top: 0</span>
-        <span class="output-rule">position: absolute</span>
-      </span>
-    </dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.pin-all</dt>
-    <dd class="output-css">
-      <span class="">
-        <span class="output-rule">bottom: 0</span>
-        <span class="output-rule">left: 0</span>
-        <span class="output-rule">right: 0</span>
-        <span class="output-rule">top: 0</span>
-        <span class="output-rule">position: absolute</span>
-      </span>
-    </dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.pin-none</dt>
-    <dd class="output-css">
-      <span class="">
-        <span class="output-rule">bottom: auto</span>
-        <span class="output-rule">left: auto</span>
-        <span class="output-rule">right: auto</span>
-        <span class="output-rule">top: auto</span>
-        <span class="output-rule">position: static</span>
-      </span>
-    </dd>
-    <dd class="output-variable">—</dd>
-
-    {% for value in site.data.tokens.z-index %}
-      <dt class="output-utility">.z-{{ value.token }}</dt>
-      <dd class="output-css"><span>z-index: <span class="output-token">z-index({{ value.token }})</span> </span></dd>
-      <dd class="output-variable">{{ value.value }}</dd>
-    {% endfor %}
-
-  </dl>
-</section>
-
 <section id="utility-mixins" class="padding-top-4">
-  <h2 class="margin-y-0">Utility mixins</h2>
+  <h2 class="site-h2 margin-y-0">Utility mixins</h2>
   {% include utilities/utility-mixin-intro.html %}
 
-  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2 margin-top-3">
-    <div class="grid-col-4">Utility</div>
-    <div class="grid-col-4">Mixin</div>
-    <div class="grid-col-4">Example</div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.display-<code>value</code></div>
-    <div class="grid-col-4">u-display(<code>value</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-display('block')</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.opacity-<code>number</code></div>
-    <div class="grid-col-4">u-opacity(<code>number</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-opacity(0)</span>
-      <span class="display-block margin-top-1">u-opacity(0.3)</span>
-      <span class="display-block margin-top-1">u-opacity(1)</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.overflow-<code>modifier</code>-<code>value</code></div>
-    <div class="grid-col-4">u-overflow-<code>modifier</code>(<code>value</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-overflow('hidden')</span>
-      <span class="display-block margin-top-1">u-overflow-x('hidden')</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.position-<code>value</code></div>
-    <div class="grid-col-4">u-position(<code>value</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-position('relative')</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.bottom-<code>units</code></div>
-    <div class="grid-col-4">u-bottom-(<code>units</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-bottom('auto')</span>
-      <span class="display-block margin-top-1">u-bottom('neg-1px')</span>
-      <span class="display-block margin-top-1">u-bottom(-1px)</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.left-<code>units</code></div>
-    <div class="grid-col-4">u-left-(<code>units</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-left('auto')</span>
-      <span class="display-block margin-top-1">u-left('neg-1px')</span>
-      <span class="display-block margin-top-1">u-left(-1px)</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.right-<code>units</code></div>
-    <div class="grid-col-4">u-right-(<code>units</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-right('auto')</span>
-      <span class="display-block margin-top-1">u-right('neg-1px')</span>
-      <span class="display-block margin-top-1">u-right(-1px)</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.top-<code>units</code></div>
-    <div class="grid-col-4">u-top-(<code>units</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-top('auto')</span>
-      <span class="display-block margin-top-1">u-top('neg-1px')</span>
-      <span class="display-block margin-top-1">u-top(-1px)</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.pin-<code>value</code></div>
-    <div class="grid-col-4">u-pin-(<code>value</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-pin('all')</span>
-      <span class="display-block margin-top-1">u-pin('top')</span>
-      <span class="display-block margin-top-1">u-pin('x')</span>
-      <span class="display-block margin-top-1">u-pin('none')</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.z-<code>value</code></div>
-    <div class="grid-col-4">u-pin-(<code>value</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-z('bottom')</span>
-      <span class="display-block margin-top-1">u-z('top')</span>
-      <span class="display-block margin-top-1">u-z(0)</span>
-      <span class="display-block margin-top-1">u-z(400)</span>
-    </div>
-  </div>
+  <table class="usa-table-borderless site-table-responsive site-table-simple">
+    <thead>
+      <tr>
+        <th scope="col" class="tablet:maxw-card-lg">Utility</th>
+        <th scope="col">Mixin</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .display-<code>value</code>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-display(<code>value</code>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-display('block')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .opacity-<a href="{{ site.baseurl }}/style-tokens/opacity/" class="token">opacity</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-opacity(<a href="{{ site.baseurl }}/style-tokens/opacity/" class="token">opacity</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-opacity(0)
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .overflow-<code>modifier</code>-<code>value</code>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-overflow-<code>modifier</code>(<code>value</code>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-overflow-x('hidden')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .position-<code>value</code>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-position(<code>value</code>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-position('relative')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .bottom-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">unit</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-bottom(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">unit</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-bottom('auto')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .left-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">unit</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-left(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">unit</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-left(-2px)
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .right-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">unit</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-right(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">unit</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-right('full')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .top-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">unit</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-top(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">unit</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-top('05')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .pin-<code>value</code>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-pin-(<code>value</code>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-pin('x')
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
   {% include utilities/utility-mixin-using.html %}
 </section>
 
 <section id="advanced-settings" class="padding-top-4">
-  <h2 class="margin-y-0">Advanced settings</h2>
+  <h2 class="site-h2 margin-y-0">Advanced settings</h2>
 
   {% include utilities/responsive-variants.html %}
   {% include utilities/state-variants.html %}

@@ -132,72 +132,55 @@ utilities:
   </section>
 </section>
 
-<section class="utilities-section">
-  <h2 class="utilities-section-title">Default output</h2>
-  <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
-    <div class="grid-col-4">Utility</div>
-    <div class="grid-col-6">Output SCSS</div>
-    <div class="grid-col-2">Default variable value</div>
-  </div>
-  <dl class="output-list">
-    {% for item in outline_widths %}
-      <dt class="output-utility">.outline-{{ item.token }}</dt>
-      <dd class="output-css">
-        <span class="output-rule">outline: {% if item.scss %}<span class="output-token">{{ item.scss }}</span>{% else %}{{ item.value }}{% endif %} solid</span>
-      </dd>
-      <dd class="output-variable">{% if item.scss %}{{ item.value }}{% else %}—{% endif %}</dd>
-    {% endfor %}
-
-    {% for color in outline_colors %}
-      <dt class="output-utility">.outline-{{ color.token }}</dt>
-      <dd class="output-css">
-        <span class="output-rule">outline-color: {% if color.var %}<span class="output-token">{{ color.var }}</span>{% else %}{{ color.token }}{% endif %}</span>
-      </dd>
-      <dd class="output-variable">
-        {% if color.var %}
-          <span class="display-inline-block bg-{{ color.token }} circle-105 text-baseline margin-right-05"></span>
-          {{ color.value }}
-        {% else %}
-          —
-        {% endif %}
-      </dd>
-    {% endfor %}
-  </dl>
-</section>
-
 <section id="utility-mixins" class="padding-top-4">
   <h2 class="site-h2 margin-y-0">Utility mixins</h2>
   {% include utilities/utility-mixin-intro.html %}
 
-  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2 margin-top-3">
-    <div class="grid-col-4">Utility</div>
-    <div class="grid-col-4">Mixin</div>
-    <div class="grid-col-4">Example</div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.outline-<code>units</code></div>
-    <div class="grid-col-4">u-outline(<code>units</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-outline(1px)</span>
-      <span class="display-block margin-top-1">u-outline('05')</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.outline-<code>color</code></div>
-    <div class="grid-col-4">u-outline(<code>color</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-outline('red-20v')</span>
-      <span class="display-block margin-top-1">u-outline('05', 'red-20v')</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">color only</div>
-    <div class="grid-col-4">u-outline-color(<code>color</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-outline-color('red-20v')</span>
-    </div>
-  </div>
-
+  <table class="usa-table-borderless site-table-responsive site-table-simple">
+    <thead>
+      <tr>
+        <th scope="col" class="tablet:maxw-card-lg">Utility</th>
+        <th scope="col">Mixin</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .outline-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-outline(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-outline('05')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .outline-color-<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-outline-color(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-outline-color('gold-30v')
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
   {% include utilities/utility-mixin-using.html %}
 </section>
 

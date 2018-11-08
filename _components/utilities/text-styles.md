@@ -29,93 +29,6 @@ subnav:
 - text: Advanced settings
   href: '#advanced-settings'
 
-colors:
-  theme:
-  - token: base-lightest
-    value: '#fcfcfc'
-  - token: base-lighter
-    value: '#f0f0f0'
-  - token: base-light
-    value: '#e6e6e6'
-  - token: base
-    value: '#adadad'
-  - token: base-dark
-    value: '#757575'
-  - token: base-darker
-    value: '#454545'
-  - token: base-darkest
-    value: '#171717'
-  - token: ink
-    value: '#171717'
-  - token: primary-lighter
-    value: '#DAE9F6'
-  - token: primary-light
-    value: '#7CBDF0'
-  - token: primary
-    value: '#0F6BB2'
-  - token: primary-vivid
-    value: '#0E57DA'
-  - token: primary-dark
-    value: '#215192'
-  - token: primary-darker
-    value: '#122B4C'
-  - token: secondary-light
-    value: '#122B4C'
-  - token: secondary
-    value: '#122B4C'
-  - token: secondary-vivid
-    value: '#E6251B'
-  - token: secondary-dark
-    value: '#3B2523'
-  - token: accent-warm
-    value: '#FD974C'
-  - token: accent-warm-dark
-    value: '#FD7B28'
-  - token: accent-cool
-    value: '#FD7B28'
-  - token: accent-cool-dark
-    value: '#1BABCF'
-  grayscale:
-  - token: white
-    value: '#ffffff'
-  - token: gray-5
-    value: '#f0f0f0'
-  - token: gray-10
-    value: '#e6e6e6'
-  - token: gray-30
-    value: '#adadad'
-  - token: gray-50
-    value: '#757575'
-  - token: gray-70
-    value: '#454545'
-  - token: gray-90
-    value: '#171717'
-  - token: black
-    value: '#000000'
-  basic:
-  - token: red
-    value: '#E6251B'
-  - token: orange
-    value: '#FD7B28'
-  - token: gold
-    value: '#F8AE29'
-  - token: yellow
-    value: '#FCD344'
-  - token: green
-    value: '#548114'
-  - token: mint
-    value: '#20C688'
-  - token: cyan
-    value: '#1BABCF'
-  - token: blue
-    value: '#137CDB'
-  - token: indigo
-    value: '#6970C7'
-  - token: violet
-    value: '#836BB3'
-  - token: magenta
-    value: '#DF2D7A'
-
 utilities:
 - base:         text
   var:          font-style
@@ -190,6 +103,9 @@ utilities:
   hover:        false
   visited:      false
 ---
+
+{% include tokens/get-system-colors.html %}
+{% assign colors = site.data.tokens.color %}
 
 <div class="utilities-properties">
   <h3 class="utilities-property-title">CSS properties</h3>
@@ -392,12 +308,25 @@ utilities:
     </section>
     <section class="utility-examples">
 
-      {% for item in page.colors.theme %}
+      {% for color in colors.theme %}
+        {% if color.default %}
+          {% assign system = system-colors | where: 'token', color.default %}
+          {% assign value = system[0].value %}
+          {% assign token = color.default %}
+        {% else %}
+          {% assign value = color.value %}
+          {% assign token = false %}
+        {% endif %}
         <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify{% if forloop.last %} border-0{% endif %}">
-          <span class="text-underline underline-{{ item.token }}">.underline-{{ item.token }}<span class="text-thin text-gray-50">.text-underline</span></span>
-          <span class="flex-auto utility-value-color">
-            <span class="utility-value-color-chip bg-{{ item.token }}"></span>
-            {{ item.value }}
+          <span class="text-underline underline-{{ color.token }}">.underline-{{ color.token }}<span class="text-thin text-gray-50">.text-underline</span></span>
+          <span class="flex-auto">
+            {% if token %}
+              <code class="bg-secondary-lighter radius-sm">{{ token }}</code>
+            {% endif %}
+            <span class="utility-value-color">
+              <span class="utility-value-color-chip bg-{{ color.token }}"></span>
+              {{ value }}
+            </span>
           </span>
         </div>
       {% endfor %}
@@ -485,297 +414,153 @@ utilities:
   </section><!-- utility -->
 </section><!-- utilities -->
 
-<section class="utilities-section">
-  <h2 class="utilities-section-title">Default output</h2>
-  <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
-    <div class="grid-col-4">Utility</div>
-    <div class="grid-col-6">Output SCSS</div>
-    <div class="grid-col-2">Default variable value</div>
-  </div>
-  <dl class="output-list">
-    <dt class="output-utility">.text-tabular</dt>
-    <dd class="output-css">font-feature-settings: "tnum" 1, "kern" 1</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-no-tabular</dt>
-    <dd class="output-css">font-feature-settings: "kern" 1</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-italic</dt>
-    <dd class="output-css">font-style: italic</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-no-italic</dt>
-    <dd class="output-css">font-style: normal</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-thin</dt>
-    <dd class="output-css">font-weight: <span class="output-token">font-weight('thin')</span></dd>
-    <dd class="output-variable">200</dd>
-
-    <dt class="output-utility">.text-light</dt>
-    <dd class="output-css">font-weight: <span class="output-token">font-weight('light')</span></dd>
-    <dd class="output-variable">300</dd>
-
-    <dt class="output-utility">.text-normal</dt>
-    <dd class="output-css">font-weight: <span class="output-token">font-weight('normal')</span></dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-medium</dt>
-    <dd class="output-css">font-weight: <span class="output-token">font-weight('medium')</span></dd>
-    <dd class="output-variable">500</dd>
-
-    <dt class="output-utility">.text-semibold</dt>
-    <dd class="output-css">font-weight: <span class="output-token">font-weight('semibold')</span></dd>
-    <dd class="output-variable">600</dd>
-
-    <dt class="output-utility">.text-bold</dt>
-    <dd class="output-css">font-weight: <span class="output-token">font-weight('bold')</span></dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-heavy</dt>
-    <dd class="output-css">font-weight: <span class="output-token">font-weight('heavy')</span></dd>
-    <dd class="output-variable">900</dd>
-
-    <dt class="output-utility">.text-ls-neg-3</dt>
-    <dd class="output-css">letter-spacing: <span class="output-token">letter-spacing(-3)</span></dd>
-    <dd class="output-variable">-.03em</dd>
-
-    <dt class="output-utility">.text-ls-neg-2</dt>
-    <dd class="output-css">letter-spacing: <span class="output-token">letter-spacing(-2)</span></dd>
-    <dd class="output-variable">-.02em</dd>
-
-    <dt class="output-utility">.text-ls-neg-1</dt>
-    <dd class="output-css">letter-spacing: <span class="output-token">letter-spacing(-1)</span></dd>
-    <dd class="output-variable">-.01em</dd>
-
-    <dt class="output-utility">.text-ls-auto</dt>
-    <dd class="output-css">letter-spacing: letter-spacing('auto')</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-ls-1</dt>
-    <dd class="output-css">letter-spacing: <span class="output-token">letter-spacing(1)</span></dd>
-    <dd class="output-variable">.05em</dd>
-
-    <dt class="output-utility">.text-ls-2</dt>
-    <dd class="output-css">letter-spacing: <span class="output-token">letter-spacing(2)</span></dd>
-    <dd class="output-variable">.1em</dd>
-
-    <dt class="output-utility">.text-ls-3</dt>
-    <dd class="output-css">letter-spacing: <span class="output-token">letter-spacing(3)</span></dd>
-    <dd class="output-variable">.15em</dd>
-
-    <dt class="output-utility">.text-underline</dt>
-    <dd class="output-css">text-decoration: underline</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-strike</dt>
-    <dd class="output-css">text-decoration: line-through</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-no-underline</dt>
-    <dd class="output-css">text-decoration: none</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-no-strike</dt>
-    <dd class="output-css">text-decoration: none</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.underline-lightest</dt>
-    <dd class="output-css">text-decoration-color: <span class="output-token">color('base-lightest')</span></dd>
-    <dd class="output-variable">
-      <span class="display-inline-block bg-base-lightest circle-105 text-middle margin-right-05"></span>
-      #FCFCFC
-    </dd>
-
-    <dt class="output-utility">.underline-base-lighter</dt>
-    <dd class="output-css">text-decoration-color: <span class="output-token">color('base-lighter')</span></dd>
-    <dd class="output-variable">
-      <span class="display-inline-block bg-base-lighter circle-105 text-middle margin-right-05"></span>
-      #F0F0F0
-    </dd>
-
-    <dt class="output-utility">.underline-base-light</dt>
-    <dd class="output-css">text-decoration-color: <span class="output-token">color('base-light')</span></dd>
-    <dd class="output-variable">
-      <span class="display-inline-block bg-base-light circle-105 text-middle margin-right-05"></span>
-      #E6E6E6
-    </dd>
-
-    <dt class="output-utility">.underline-base</dt>
-    <dd class="output-css">text-decoration-color: <span class="output-token">color('base')</span></dd>
-    <dd class="output-variable">
-      <span class="display-inline-block bg-base circle-105 text-middle margin-right-05"></span>
-      #ADADAD
-    </dd>
-
-    <dt class="output-utility">.underline-base-dark</dt>
-    <dd class="output-css">text-decoration-color: <span class="output-token">color('base-dark')</span></dd>
-    <dd class="output-variable">
-      <span class="display-inline-block bg-base-dark circle-105 text-middle margin-right-05"></span>
-      #757575
-    </dd>
-
-    <dt class="output-utility">.underline-base-darker</dt>
-    <dd class="output-css">text-decoration-color: <span class="output-token">color('base-darker')</span></dd>
-    <dd class="output-variable">
-      <span class="display-inline-block bg-base-darker circle-105 text-middle margin-right-05"></span>
-      #454545
-    </dd>
-
-    <dt class="output-utility">.underline-base-darkest</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">color('base-darkest')</span></dd>
-      <dd class="output-variable">
-        <span class="display-inline-block bg-base-darkest circle-105 text-middle margin-right-05"></span>
-        #171717
-      </dd>
-
-    <dt class="output-utility">.underline-primary-lighter</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">color('primary-lighter')</span></dd>
-      <dd class="output-variable">
-        <span class="display-inline-block bg-primary-lighter circle-105 text-middle margin-right-05"></span>
-        #DAE9F6
-      </dd>
-    <dt class="output-utility">.underline-primary-light</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">color('primary-light')</span></dd>
-      <dd class="output-variable">
-        <span class="display-inline-block bg-primary-light circle-105 text-middle margin-right-05"></span>
-        #7CBDF0
-      </dd>
-    <dt class="output-utility">.underline-primary</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">color('primary')</span></dd>
-      <dd class="output-variable">
-        <span class="display-inline-block bg-primary circle-105 text-middle margin-right-05"></span>
-        #0F6BB2
-      </dd>
-    <dt class="output-utility">.underline-primary-vivid</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">color('primary-vivid')</span></dd>
-      <dd class="output-variable">
-        <span class="display-inline-block bg-primary-vivid circle-105 text-middle margin-right-05"></span>
-        #0E57DA
-      </dd>
-    <dt class="output-utility">.underline-primary-dark</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">color('primary-dark')</span></dd>
-      <dd class="output-variable">
-        <span class="display-inline-block bg-primary-dark circle-105 text-middle margin-right-05"></span>
-        #215192
-      </dd>
-    <dt class="output-utility">.underline-primary-darker</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">color('primary-darker')</span></dd>
-      <dd class="output-variable">
-        <span class="display-inline-block bg-primary-darker circle-105 text-middle margin-right-05"></span>
-        #122B4C
-      </dd>
-
-    <dt class="output-utility">.underline-secondary-light</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">color('secondary-light')</span></dd>
-      <dd class="output-variable">
-        <span class="display-inline-block bg-secondary-light circle-105 text-middle margin-right-05"></span>
-        #122B4C
-      </dd>
-    <dt class="output-utility">.underline-secondary</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">color('secondary')</span></dd>
-      <dd class="output-variable">
-        <span class="display-inline-block bg-secondary circle-105 text-middle margin-right-05"></span>
-        #122B4C
-      </dd>
-    <dt class="output-utility">.underline-secondary-vivid</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">color('secondary-vivid')</span></dd>
-      <dd class="output-variable">
-        <span class="display-inline-block bg-secondary-vivid circle-105 text-middle margin-right-05"></span>
-        #E6251B
-      </dd>
-    <dt class="output-utility">.underline-secondary-dark</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">color('secondary-dark')</span></dd>
-      <dd class="output-variable">
-        <span class="display-inline-block bg-secondary-dark circle-105 text-middle margin-right-05"></span>
-        #3B2523
-      </dd>
-
-    <dt class="output-utility">.underline-accent-warm</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">color('accent-warm')</span></dd>
-      <dd class="output-variable">
-        <span class="display-inline-block bg-accent-warm circle-105 text-middle margin-right-05"></span>
-        #FD974C
-      </dd>
-    <dt class="output-utility">.underline-accent-warm-dark</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">color('accent-warm-dark')</span></dd>
-      <dd class="output-variable">
-        <span class="display-inline-block bg-accent-warm-dark circle-105 text-middle margin-right-05"></span>
-        #FD7B28
-      </dd>
-
-    <dt class="output-utility">.underline-accent-cool</dt>
-      <dd class="output-css">text-decoration-color: <span class="output-token">color('accent-cool')</span></dd>
-      <dd class="output-variable">
-        <span class="display-inline-block bg-accent-cool circle-105 text-middle margin-right-05"></span>
-        #21C2E6
-      </dd>
-    <dt class="output-utility">.underline-accent-cool-dark</dt>
-    <dd class="output-css">text-decoration-color: <span class="output-token">color('accent-cool-dark')</span></dd>
-    <dd class="output-variable">
-      <span class="display-inline-block bg-accent-cool-dark circle-105 text-middle margin-right-05"></span>
-      #1BABCF
-    </dd>
-
-    <dt class="output-utility">.underline-auto</dt>
-    <dd class="output-css">text-decoration-color: <span class="output-token">auto</span></dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-baseline</dt>
-    <dd class="output-css">vertical-align: baseline</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-bottom</dt>
-    <dd class="output-css">vertical-align: bottom</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-middle</dt>
-    <dd class="output-css">vertical-align: middle</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-sub</dt>
-    <dd class="output-css">vertical-align: sub</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-super</dt>
-    <dd class="output-css">vertical-align: super</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-tbottom</dt>
-    <dd class="output-css">vertical-align: text-bottom</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-ttop</dt>
-    <dd class="output-css">vertical-align: text-top</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-top</dt>
-    <dd class="output-css">vertical-align: top</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-pre</dt>
-    <dd class="output-css">white-space: pre</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-pre-line</dt>
-    <dd class="output-css">white-space: pre-line</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-pre-wrap</dt>
-    <dd class="output-css">white-space: pre-wrap</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-wrap</dt>
-    <dd class="output-css">white-space: wrap</dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-no-wrap</dt>
-    <dd class="output-css">white-space: nowrap</dd>
-    <dd class="output-variable">—</dd>
-
-  </dl>
-</section>
+<table class="usa-table-borderless site-table-responsive site-table-simple">
+  <thead>
+    <tr>
+      <th scope="col" class="tablet:maxw-card-lg">Utility</th>
+      <th scope="col">Mixin</th>
+      <th scope="col">Example</th>
+    </tr>
+  </thead>
+  <tbody class="font-mono-2xs">
+    <tr>
+      <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <span>
+          .text-<code>style</code>
+        </span>
+      </td>
+      <td data-title="Mixin">
+        <span>
+          u-text(<code>style</code>)
+        </span>
+      </td>
+      <td data-title="Example">
+        <span>
+          @include u-text('italic')
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <span>
+          .text-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-weight/" class="token">weight</a>
+        </span>
+      </td>
+      <td data-title="Mixin">
+        <span>
+          u-text(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-weight/" class="token">weight</a>)
+        </span>
+      </td>
+      <td data-title="Example">
+        <span>
+          @include u-text('light')
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <span>
+          .text-<code>tabular</code>
+        </span>
+      </td>
+      <td data-title="Mixin">
+        <span>
+          u-text('<code>tabular</code>')
+        </span>
+      </td>
+      <td data-title="Example">
+        <span>
+          @include u-text('no-tabular')
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <span>
+          .text-<code>decoration</code>
+        </span>
+      </td>
+      <td data-title="Mixin">
+        <span>
+          u-text(<code>decoration</code>)
+        </span>
+      </td>
+      <td data-title="Example">
+        <span>
+          @include u-text('underline')
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <span>
+          .underline-<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>
+        </span>
+      </td>
+      <td data-title="Mixin">
+        <span>
+          u-underline(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)
+        </span>
+      </td>
+      <td data-title="Example">
+        <span>
+          @include u-underline('primary-vivid')
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <span>
+          .text-<code>case</code>
+        </span>
+      </td>
+      <td data-title="Mixin">
+        <span>
+          u-text(<code>case</code>)
+        </span>
+      </td>
+      <td data-title="Example">
+        <span>
+          @include u-text('uppercase')
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <span>
+          .text-<code>vertical-align</code>
+        </span>
+      </td>
+      <td data-title="Mixin">
+        <span>
+          u-text(<code>vertical-align</code>)
+        </span>
+      </td>
+      <td data-title="Example">
+        <span>
+          @include u-text('ttop')
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <span class="font-sans-2xs">
+          multiple text utilities...
+        </span>
+      </td>
+      <td data-title="Mixin">
+        <span>
+          u-text(<code>token</code>, <code>token</code>, <code>token</code>...)
+        </span>
+      </td>
+      <td data-title="Example">
+        <span>
+          @include u-text('uppercase', 'primary-darker', 'no-wrap', 'italic', 'bold', 'no-underline')
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 <section id="utility-mixins" class="padding-top-4">
   <h2 class="site-h2 margin-y-0">Utility mixins</h2>

@@ -912,12 +912,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .bottom-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">unit</a>
+            .bottom-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-bottom(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">unit</a>)
+            u-bottom(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -929,12 +929,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .left-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">unit</a>
+            .left-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-left(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">unit</a>)
+            u-left(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -946,12 +946,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .right-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">unit</a>
+            .right-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-right(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">unit</a>)
+            u-right(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -963,12 +963,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .top-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">unit</a>
+            .top-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-top(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">unit</a>)
+            u-top(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Example">

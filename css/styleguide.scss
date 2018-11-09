@@ -190,10 +190,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10px 40px;
+  @include padding(null 40px 10px 40px);
 
   @include media($medium-screen) {
     flex-direction: row;
+    padding-top: 10px;
     button {
       margin-left: 1em;
     }

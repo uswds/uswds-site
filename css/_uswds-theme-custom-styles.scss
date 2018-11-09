@@ -2464,3 +2464,15 @@ $theme-table-column-gap: 4;
     margin-bottom: 0;
   }
 }
+
+.site-title-short {
+  @include at-media('mobile-lg') {
+    display: none;
+  }
+}
+
+.site-title {
+  @include at-media-max('mobile-lg') {
+    @include sr-only;
+  }
+}

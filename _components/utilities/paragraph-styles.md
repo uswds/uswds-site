@@ -597,375 +597,89 @@ utilities:
   </section>
 </section>
 
-<section class="utilities-section">
-  <h2 class="utilities-section-title">Default output</h2>
-  <div class="grid-row utilities-output-heading">
-    <div class="grid-col-4">Utility</div>
-    <div class="grid-col-6">Output SCSS</div>
-    <div class="grid-col-2">Default variable value</div>
-  </div>
-  <dl class="output-list">
-    <dt class="output-utility">.line-height-sans-1</dt>
-    <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">line-height('sans', 1)</span></span>
-    </dd>
-    <dd class="output-variable">0.94</dd>
-
-    <dt class="output-utility">.line-height-serif-1</dt>
-    <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">line-height('serif', 1)</span></span>
-    </dd>
-    <dd class="output-variable">1.06</dd>
-
-    <dt class="output-utility">.line-height-mono-1</dt>
-    <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">line-height('mono', 1)</span></span>
-    </dd>
-    <dd class="output-variable">1.05</dd>
-
-    <dt class="output-utility">.line-height-sans-2</dt>
-    <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">line-height('sans', 2)</span></span>
-    </dd>
-    <dd class="output-variable">1.08</dd>
-
-    <dt class="output-utility">.line-height-serif-2</dt>
-    <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">line-height('serif', 2)</span></span>
-    </dd>
-    <dd class="output-variable">1.22</dd>
-
-    <dt class="output-utility">.line-height-mono-2</dt>
-    <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">line-height('mono', 2)</span></span>
-    </dd>
-    <dd class="output-variable">1.21</dd>
-
-    <dt class="output-utility">.line-height-sans-3</dt>
-    <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">line-height('sans', 3)</span></span>
-    </dd>
-    <dd class="output-variable">1.27</dd>
-
-    <dt class="output-utility">.line-height-serif-3</dt>
-    <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">line-height('serif', 3)</span></span>
-    </dd>
-    <dd class="output-variable">1.44</dd>
-
-    <dt class="output-utility">.line-height-mono-3</dt>
-    <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">line-height('mono', 3)</span></span>
-    </dd>
-    <dd class="output-variable">1.42</dd>
-
-    <dt class="output-utility">.line-height-sans-4</dt>
-    <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">line-height('sans', 4)</span></span>
-    </dd>
-    <dd class="output-variable">1.41</dd>
-
-    <dt class="output-utility">.line-height-serif-4</dt>
-    <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">line-height('serif', 4)</span></span>
-    </dd>
-    <dd class="output-variable">1.60</dd>
-
-    <dt class="output-utility">.line-height-mono-4</dt>
-    <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">line-height('mono', 4)</span></span>
-    </dd>
-    <dd class="output-variable">1.57</dd>
-
-    <dt class="output-utility">.line-height-sans-5</dt>
-    <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">line-height('sans', 5)</span></span>
-    </dd>
-    <dd class="output-variable">1.52</dd>
-
-    <dt class="output-utility">.line-height-serif-5</dt>
-    <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">line-height('serif', 5)</span></span>
-    </dd>
-    <dd class="output-variable">1.72</dd>
-
-    <dt class="output-utility">.line-height-mono-5</dt>
-    <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">line-height('mono', 5)</span></span>
-    </dd>
-    <dd class="output-variable">1.70</dd>
-
-    <dt class="output-utility">.line-height-sans-6</dt>
-    <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">line-height('sans', 6)</span></span>
-    </dd>
-    <dd class="output-variable">1.64</dd>
-
-    <dt class="output-utility">.line-height-serif-6</dt>
-    <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">line-height('serif', 6)</span></span>
-    </dd>
-    <dd class="output-variable">1.86</dd>
-
-    <dt class="output-utility">.line-height-mono-6</dt>
-    <dd class="output-css">
-      <span class="output-rule">line-height: <span class="output-token">line-height('mono', 6)</span></span>
-    </dd>
-    <dd class="output-variable">1.84</dd>
-
-    <dt class="output-utility">.measure-1</dt>
-    <dd class="output-css">
-      <span class="output-rule">max-width: <span class="output-token">measure(1)</span></span>
-    </dd>
-    <dd class="output-variable">40ch</dd>
-
-    <dt class="output-utility">.measure-2</dt>
-    <dd class="output-css">
-      <span class="output-rule">max-width: <span class="output-token">measure(2)</span></span>
-    </dd>
-    <dd class="output-variable">60ch</dd>
-
-    <dt class="output-utility">.measure-3</dt>
-    <dd class="output-css">
-      <span class="output-rule">max-width: <span class="output-token">measure(3)</span></span>
-    </dd>
-    <dd class="output-variable">66ch</dd>
-
-    <dt class="output-utility">.measure-4</dt>
-    <dd class="output-css">
-      <span class="output-rule">max-width: <span class="output-token">measure(4)</span></span>
-    </dd>
-    <dd class="output-variable">72ch</dd>
-
-    <dt class="output-utility">.measure-5</dt>
-    <dd class="output-css">
-      <span class="output-rule">max-width: <span class="output-token">measure(5)</span></span>
-    </dd>
-    <dd class="output-variable">77ch</dd>
-
-    <dt class="output-utility">.measure-none</dt>
-    <dd class="output-css">
-      <span class="output-rule">max-width: none</span>
-    </dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-left</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-align: left</span>
-    </dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-center</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-align: center</span>
-    </dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-right</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-align: right</span>
-    </dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-justify</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-align: justify</span>
-    </dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-indent-neg-9</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">units(-9)</span></span>
-    </dd>
-    <dd class="output-variable">-72px</dd>
-
-    <dt class="output-utility">.text-indent-neg-8</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">units(-8)</span></span>
-    </dd>
-    <dd class="output-variable">-64px</dd>
-
-    <dt class="output-utility">.text-indent-neg-7</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">units(-7)</span></span>
-    </dd>
-    <dd class="output-variable">-56px</dd>
-
-    <dt class="output-utility">.text-indent-neg-6</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">units(-6)</span></span>
-    </dd>
-    <dd class="output-variable">-48px</dd>
-
-    <dt class="output-utility">.text-indent-neg-5</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">units(-5)</span></span>
-    </dd>
-    <dd class="output-variable">-40px</dd>
-
-    <dt class="output-utility">.text-indent-neg-4</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">units(-4)</span></span>
-    </dd>
-    <dd class="output-variable">-32px</dd>
-
-    <dt class="output-utility">.text-indent-neg-3</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">units(-3)</span></span>
-    </dd>
-    <dd class="output-variable">-24px</dd>
-
-    <dt class="output-utility">.text-indent-neg-205</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">units(-2.5)</span></span>
-    </dd>
-    <dd class="output-variable">-20px</dd>
-
-    <dt class="output-utility">.text-indent-neg-2</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">units(-2)</span></span>
-    </dd>
-    <dd class="output-variable">-16px</dd>
-
-    <dt class="output-utility">.text-indent-neg-105</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">units(-1.5)</span></span>
-    </dd>
-    <dd class="output-variable">-12px</dd>
-
-    <dt class="output-utility">.text-indent-neg-1</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">units(-1)</span></span>
-    </dd>
-    <dd class="output-variable">-8px</dd>
-
-    <dt class="output-utility">.text-indent-neg-05</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">units(-0.5)</span></span>
-    </dd>
-    <dd class="output-variable">-4px</dd>
-
-    <dt class="output-utility">.text-indent-0</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: 0</span>
-    </dd>
-    <dd class="output-variable">—</dd>
-
-    <dt class="output-utility">.text-indent-05</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">units(0.5)</span></span>
-    </dd>
-    <dd class="output-variable">4px</dd>
-
-    <dt class="output-utility">.text-indent-1</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">units(1)</span></span>
-    </dd>
-    <dd class="output-variable">8px</dd>
-
-    <dt class="output-utility">.text-indent-105</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">units(1.5)</span></span>
-    </dd>
-    <dd class="output-variable">12px</dd>
-
-    <dt class="output-utility">.text-indent-2</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">units(2)</span></span>
-    </dd>
-    <dd class="output-variable">16px</dd>
-
-    <dt class="output-utility">.text-indent-205</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">units(2.5)</span></span>
-    </dd>
-    <dd class="output-variable">20px</dd>
-
-    <dt class="output-utility">.text-indent-3</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">units(3)</span></span>
-    </dd>
-    <dd class="output-variable">24px</dd>
-
-    <dt class="output-utility">.text-indent-4</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">units(4)</span></span>
-    </dd>
-    <dd class="output-variable">32px</dd>
-
-    <dt class="output-utility">.text-indent-5</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">units(5)</span></span>
-    </dd>
-    <dd class="output-variable">40px</dd>
-
-    <dt class="output-utility">.text-indent-6</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">units(6)</span></span>
-    </dd>
-    <dd class="output-variable">48px</dd>
-
-    <dt class="output-utility">.text-indent-7</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">units(7)</span></span>
-    </dd>
-    <dd class="output-variable">56px</dd>
-
-    <dt class="output-utility">.text-indent-8</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">units(8)</span></span>
-    </dd>
-    <dd class="output-variable">64px</dd>
-
-    <dt class="output-utility">.text-indent-9</dt>
-    <dd class="output-css">
-      <span class="output-rule">text-indent: <span class="output-token">units(9)</span></span>
-    </dd>
-    <dd class="output-variable">72px</dd>
-
-  </dl>
-</section>
-
 <section id="utility-mixins" class="padding-top-4">
   <h2 class="site-h2 margin-y-0">Utility mixins</h2>
   {% include utilities/utility-mixin-intro.html %}
 
-  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2 margin-top-3">
-    <div class="grid-col-4">Utility</div>
-    <div class="grid-col-4">Mixin</div>
-    <div class="grid-col-4">Example</div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.line-height-<code>family</code>-<code>height</code></div>
-    <div class="grid-col-4">u-line-height(<code>family</code>, <code>height</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-line-height('heading', 1)</span>
-      <span class="display-block margin-top-1">u-line-height('sans', 4)</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.measure-<code>units</code></div>
-    <div class="grid-col-4">u-measure(<code>units</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-measure(5)</span>
-      <span class="display-block margin-top-1">u-measure('none')</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.text-<code>alignment</code></div>
-    <div class="grid-col-4">u-text(<code>alignment</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-text('right')</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.text-indent-<code>units</code></div>
-    <div class="grid-col-4">u-text-indent(<code>units</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-text-indent(-2)</span>
-      <span class="display-block margin-top-1">u-text-indent('neg-2')</span>
-    </div>
-  </div>
+  <table class="usa-table-borderless site-table-responsive site-table-simple">
+    <thead>
+      <tr>
+        <th scope="col" class="tablet:maxw-card-lg">Utility</th>
+        <th scope="col">Mixin</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:maxw-card-lg">
+          <span>
+            .line-height-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-line-height(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-line-height('heading', 2)
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .measure-<a href="{{ site.baseurl }}/style-tokens/typesetting/measure/" class="token">measure</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-measure(<a href="{{ site.baseurl }}/style-tokens/typesetting/measure/" class="token">measure</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-measure(6)
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .text-<code>alignment</code>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-text('<code>alignment</code>')
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-text('right')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .text-indent-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-text-indent(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-text-indent(-4)
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
   {% include utilities/utility-mixin-using.html %}
 </section>

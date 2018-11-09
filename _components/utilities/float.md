@@ -69,44 +69,38 @@ utilities:
   </section>
 </section>
 
-<section class="utilities-section">
-  <h2 class="utilities-section-title">Default output</h2>
-  <div class="grid-row font-sans-1 text-bold border-bottom-1px padding-bottom-05 margin-top-2 border-base-light">
-    <div class="grid-col-4">Utility</div>
-    <div class="grid-col-6">Output SCSS</div>
-    <div class="grid-col-2">Default variable value</div>
-  </div>
-  <dl class="output-list">
-    <dt class="output-utility">.float-none</dt>
-    <dd class="output-css">float: none</dd>
-    <dd class="output-variable">—</dd>
-    <dt class="output-utility">.float-left</dt>
-    <dd class="output-css">float: left</dd>
-    <dd class="output-variable">—</dd>
-    <dt class="output-utility">.float-right</dt>
-    <dd class="output-css">float: right</dd>
-    <dd class="output-variable">—</dd>
-  </dl>
-</section>
-
 <section id="utility-mixins" class="padding-top-4">
   <h2 class="site-h2 margin-y-0">Utility mixins</h2>
   {% include utilities/utility-mixin-intro.html %}
 
-  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2 margin-top-3">
-    <div class="grid-col-4">Utility</div>
-    <div class="grid-col-4">Mixin</div>
-    <div class="grid-col-4">Example</div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.float-<code>value</code></div>
-    <div class="grid-col-4">u-float(<code>value</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-float('left')</span>
-      <span class="display-block margin-top-1">u-float('none')</span>
-    </div>
-  </div>
-
+  <table class="usa-table-borderless site-table-responsive site-table-simple">
+    <thead>
+      <tr>
+        <th scope="col" class="tablet:maxw-card-lg">Utility</th>
+        <th scope="col">Mixin</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .float-<code>value</code>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-float(<code>value</code>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-float('left')
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
   {% include utilities/utility-mixin-using.html %}
 </section>
 

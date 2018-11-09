@@ -198,8 +198,8 @@ utilities:
       <h4 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h4>
 <pre class="font-mono-xs margin-0 padding-0 bg-transparent">
 $outline-color-palettes: (
-  $palette-red-medium,
-  $palette-red-medium-vivid // note: no trailing comma
+  'palette-color-red-medium',
+  'palette-color-red-medium-vivid' // note: no trailing comma
 );
 </pre>
     <h4 class="font-sans-2xs margin-top-2 margin-bottom-05">Output</h4>

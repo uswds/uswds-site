@@ -659,7 +659,7 @@ utilities:
       <h4 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h4>
 <pre class="font-mono-xs margin-0 padding-0 bg-transparent">
 $width-palettes: (
-  $palette-spacing-uswds-large // note: no trailing comma
+  'palette-units-large' // note: no trailing comma
 );
 </pre>
     <h4 class="font-sans-2xs margin-top-2 margin-bottom-05">Output</h4>

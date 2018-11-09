@@ -297,15 +297,9 @@ utilities:
     <aside class="example border-left-05 border-secondary-light padding-left-105 margin-top-2">
       <h4 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h4>
 <pre class="font-mono-xs margin-0 padding-0 bg-transparent">
-$border-color-palettes: (
-  $palette-blue-warm-medium-vivid // note: no trailing comma
+$font-palettes: (
+  'palette-font-theme-types' // note: no trailing comma
 );
-</pre>
-    <h4 class="font-sans-2xs margin-top-2 margin-bottom-05">Output</h4>
-<pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
-.border-blue-warm-40v { border-color: #5E99FF; }
-.border-blue-warm-50v { border-color: #2673DF; }
-.border-blue-warm-60v { border-color: #0052DE; }
 </pre>
     </aside>
 

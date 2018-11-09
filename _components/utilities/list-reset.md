@@ -97,17 +97,17 @@ utilities:
         <tr>
           <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
             <span>
-              .list-reset
+              .add-list-reset
             </span>
           </td>
           <td data-title="Mixin">
             <span>
-              list-reset
+              add-list-reset
             </span>
           </td>
           <td data-title="Example">
             <span>
-              @include list-reset
+              @include add-list-reset
             </span>
           </td>
         </tr>

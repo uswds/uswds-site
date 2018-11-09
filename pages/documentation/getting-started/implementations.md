@@ -34,32 +34,34 @@ If you have a new implementation to add to this list, please [open an issue] or 
   </div>
 </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Distribution</th>
-      <th>Author or maintainer</th>
-      <th>Notes</th>
+<div class="site-table-wrapper margin-top-4">
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Distribution</th>
+        <th scope="col">Author or maintainer</th>
+        <th scope="col">Notes</th>
+      </tr>
+    </thead>
+  {% for impl in site.data.implementations %}
+    <tr id="{% if impl.id %}{{ impl.id }}{% else %}{{ impl.name | slugify }}{% endif %}">
+      <td scope="row" data-title="Name">
+        <strong><a href="{{ impl.url }}">{{ impl.name }}</a></strong>
+      </td>
+      <td data-title="Distribution">{{ impl.distribution }}</td>
+      <td data-title="Author">
+        {% if impl.author.url %}
+        <a href="{{ impl.author.url }}">{{ impl.author.name }}</a>
+        {% else %}
+        {{ impl.author.name }}
+        {% endif %}
+      </td>
+      <td data-title="Notes"><div>{{ impl.notes | markdownify | replace: '<p>', '' | replace: '</p>', '' }}</div></td>
     </tr>
-  </thead>
-{% for impl in site.data.implementations %}
-  <tr id="{% if impl.id %}{{ impl.id }}{% else %}{{ impl.name | slugify }}{% endif %}">
-    <th scope="row">
-      <strong><a href="{{ impl.url }}">{{ impl.name }}</a></strong>
-    </th>
-    <td>{{ impl.distribution }}</td>
-    <td>
-      {% if impl.author.url %}
-      <a href="{{ impl.author.url }}">{{ impl.author.name }}</a>
-      {% else %}
-      {{ impl.author.name }}
-      {% endif %}
-    </td>
-    <td>{{ impl.notes | markdownify | replace: '<p>', '' | replace: '</p>', '' }}</td>
-  </tr>
-{% endfor %}
-</table>
+  {% endfor %}
+  </table>
+</div>
 
 [open an issue]: https://github.com/uswds/uswds-site/issues/new
 [send us an email]: mailto:uswds@gsa.gov

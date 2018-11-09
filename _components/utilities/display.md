@@ -985,12 +985,12 @@ utilities:
         </td>
         <td data-title="Mixin">
           <span>
-            u-pin-(<code>value</code>)
+            u-pin-<code>value</code>
           </span>
         </td>
         <td data-title="Example">
           <span>
-            @include u-pin('x')
+            @include u-pin-x
           </span>
         </td>
       </tr>

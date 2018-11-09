@@ -184,7 +184,20 @@ body {
 }
 
 .site-banner-news {
-  margin-top: 0;
+  align-items: center;
+  background-color: $color-visited;
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 40px;
+
+  @include media($medium-screen) {
+    flex-direction: row;
+    button {
+      margin-left: 1em;
+    }
+  }
 }
 
 .site-header-navbar {

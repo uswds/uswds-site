@@ -19,7 +19,7 @@ subnav:
   href: '#lists'
 ---
 
-<div class="bg-warning padding-1 radius-sm measure-4"><strong>Note:</strong> Typography in USWDS 2.0 has some notable changes from USWDS 1.x that are not yet reflected in this documentation. Updated guidance will appear sometime in October 2018.</div>
+<div class="bg-warning padding-1 radius-sm measure-4"><strong>Note:</strong> Typography in USWDS 2.0 has some notable changes from USWDS 1.x that are not yet reflected in this documentation. Updated guidance will appear sometime in November 2018.</div>
 
 
 {% include child-sections.html parent='typography' %}

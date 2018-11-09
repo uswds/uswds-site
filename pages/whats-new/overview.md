@@ -61,16 +61,16 @@ numbers quarterly.
       <tr>
         <th scope="col" aria-sort="ascending">Quarter</th>
         {% for column in page.columns %}
-        <th scope="col" align="right">{{ column.title }}</th>
+        <th scope="col" align="right" class="text-right">{{ column.title }}</th>
         {% endfor %}
       </tr>
     </thead>
     <tbody class="font-sans-2xs text-tabular">
     {% for row in site.data.google_analytics reversed %}
       <tr>
-        <td scope="row" data-title="Quarter">{{ row.Year }} {{ row.Quarter }}</td>
+        <td scope="row" data-title="Quarter"><strong>{{ row.Year }}</strong> {{ row.Quarter }}</td>
         {% for column in page.columns %}
-        <td data-title="{{ column.title }}">{{ row[column.source] }}</td>
+        <td data-title="{{ column.title }}" class="text-right">{{ row[column.source] }}</td>
         {% endfor %}
       </tr>
     {% endfor %}

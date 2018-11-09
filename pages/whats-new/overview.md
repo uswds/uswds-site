@@ -68,7 +68,7 @@ numbers quarterly.
     <tbody class="font-sans-2xs text-tabular">
     {% for row in site.data.google_analytics reversed %}
       <tr>
-        <td scope="row" data-title="Quarter"><span><strong>{{ row.Year }}</strong> {{ row.Quarter }}<span></td>
+        <td scope="row" data-title="Quarter"><span><strong>{{ row.Year }}</strong> {{ row.Quarter }}</span></td>
         {% for column in page.columns %}
         <td data-title="{{ column.title }}" class="text-right">{{ row[column.source] }}</td>
         {% endfor %}

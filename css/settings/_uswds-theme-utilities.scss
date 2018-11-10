@@ -49,9 +49,9 @@ The following palettes will be added to
 */
 
 $global-color-palettes: (
-  'palette-color-theme',
-  'palette-color-basic',
-  'palette-color-grayscale'
+  'palette-colors-theme',
+  'palette-colors-basic',
+  'palette-colors-grayscale'
 );
 
 /*
@@ -583,8 +583,8 @@ $align-items-manual-values: ();
 // .background-color
 
 $background-color-palettes: (
-  'palette-color-system',
-  'palette-color-state'
+  'palette-colors-system',
+  'palette-colors-state'
 );
 $background-color-manual-values: ();
 
@@ -632,7 +632,7 @@ $circle-manual-values: ();
 
 // .color
 
-$color-palettes: ('palette-color-system');
+$color-palettes: ('palette-colors-system');
 $color-manual-values: ();
 
 // .cursor
@@ -668,9 +668,9 @@ $float-manual-values: ();
 // .font
 
 $font-palettes: (
-  'palette-font-theme',
-  'palette-font-system-serif',
-  'palette-font-system-mono'
+  'palette-fonts-theme',
+  'palette-fonts-system-serif',
+  'palette-fonts-system-mono'
 );
 $font-manual-values: ();
 

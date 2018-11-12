@@ -20,8 +20,6 @@ jobs:
       - restore_cache:
           keys:
             - v2-npm-cache-{{ .Branch }}-{{ .Revision }}
-            - v2-npm-cache-{{ .Branch }}
-            - v2-npm-cache-
       - run:
           name: Install node dependencies
           command: npm install --ignore-scripts --verbose

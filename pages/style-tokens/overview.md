@@ -110,184 +110,548 @@ In general, USWDS sets variables with tokens, and passes those variables into fu
 Use style tokens directly to set the value of settings variables in USWDS theme settings files, like `$theme-site-max-width: 'desktop'`. Otherwise, use functions, mixins, or utility classes as in the examples below. See individual style token section for more details.
 
 ### Color
-<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
-  <div class="grid-row grid-gap font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
-    <div class="grid-col-2">Token</div>
-    <div class="grid-col-3">Function</div>
-    <div class="grid-col-3">Mixin</div>
-    <div class="grid-col-4">Utility class</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-2">
-      <a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>
-    </div>
-    <div class="grid-col-3">color(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)</div>
-    <div class="grid-col-3">u-border(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)</div>
-    <div class="grid-col-3">.border-<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a></div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-2">'red-warm-50'</div>
-    <div class="grid-col-3">color('red-warm-50')</div>
-    <div class="grid-col-3">u-border('red-warm-50')</div>
-    <div class="grid-col-3">.border-red-warm-50</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-2">'red-warm-50v'</div>
-    <div class="grid-col-3">color('red-warm-50v')</div>
-    <div class="grid-col-3">u-border('red-warm-50v')</div>
-    <div class="grid-col-3">.border-red-warm-50v</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-2">'primary-vivid'</div>
-    <div class="grid-col-3">color('primary-vivid')</div>
-    <div class="grid-col-3">u-text('primary-vivid')</div>
-    <div class="grid-col-4">.text-primary-vivid</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-base-light">
-    <div class="grid-col-2">'white'</div>
-    <div class="grid-col-3">color('white')</div>
-    <div class="grid-col-3">u-bg('white')</div>
-    <div class="grid-col-4">.bg-white</div>
-  </div>
+<div class="site-table-wrapper">
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col" class="tablet:maxw-card-lg">Token</th>
+        <th scope="col">Function</th>
+        <th scope="col">Mixin</th>
+        <th scope="col">Utility class</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            <a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            color(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-border(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .border-<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            'red-warm-50'
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            color('red-warm-50')
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-border('red-warm-50')
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .border-red-warm-50
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            'red-warm-50v'
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            color('red-warm-50v')
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-border('red-warm-50v')
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .border-red-warm-50v
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            'primary-vivid'
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            color('primary-vivid')
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-text('primary-vivid')
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .text-primary-vivid
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            'white'
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            color('white')
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-bg('white')
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .bg-white
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 ### Spacing units
-<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
-  <div class="grid-row grid-gap font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
-    <div class="grid-col-2">Token</div>
-    <div class="grid-col-3">Function</div>
-    <div class="grid-col-3">Mixin</div>
-    <div class="grid-col-4">Utility class</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-2">
-      <a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
-    </div>
-    <div class="grid-col-3">units(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)</div>
-    <div class="grid-col-3">u-padding-x(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)</div>
-    <div class="grid-col-3">.u-padding-x-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a></div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-2">0.5<br/><span class="display-inline-block padding-top-05">'05'</span></div>
-    <div class="grid-col-3">units(0.5)<br/><span class="display-inline-block padding-top-05">units('05')</span></div>
-    <div class="grid-col-3">u-padding-x(0.5)<br/><span class="display-inline-block padding-top-05">u-padding-x('05')</span></div>
-    <div class="grid-col-3">.u-padding-x-05</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-2">2</div>
-    <div class="grid-col-3">units(2)</div>
-    <div class="grid-col-3">u-border(2)</div>
-    <div class="grid-col-3">.border-2</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-base-light">
-    <div class="grid-col-2">'card-lg'</div>
-    <div class="grid-col-3">units('card-lg')</div>
-    <div class="grid-col-3">u-width('card-lg')</div>
-    <div class="grid-col-4">.width-card-lg</div>
-  </div>
+<div class="site-table-wrapper">
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col" class="tablet:maxw-card-lg">Token</th>
+        <th scope="col">Function</th>
+        <th scope="col">Mixin</th>
+        <th scope="col">Utility class</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            <a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            units(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-padding-x(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .padding-x-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            0.5<br/>
+            <span class="display-inline-block padding-top-05">'05'</span>
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            units(0.5)<br/>
+            <span class="display-inline-block padding-top-05">units('05')</span>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-padding-x(0.5)<br/>
+            <span class="display-inline-block padding-top-05">u-padding-x('05')</span>
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .padding-x-05
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            1
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            units(1)
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-border(1)
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .border-1
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            'card-lg'
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            units('card-lg')
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-width('card-lg')
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .width-card-lg
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 ### Font size
-<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
-  <div class="grid-row grid-gap font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
-    <div class="grid-col-2">Tokens</div>
-    <div class="grid-col-3">Function</div>
-    <div class="grid-col-3">Mixin</div>
-    <div class="grid-col-4">Utility class</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light line-height-mono-6">
-    <div class="grid-col-2">
-      <a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>,
-      <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>
-    </div>
-    <div class="grid-col-3">font-size(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)</div>
-    <div class="grid-col-3">u-font-size(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)</div>
-    <div class="grid-col-4">.font-size-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a></div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-2">'sans', '3xs'</div>
-    <div class="grid-col-3">font-size('sans', '3xs')</div>
-    <div class="grid-col-3">u-font-size('sans', '3xs')</div>
-    <div class="grid-col-4">.font-size-sans-3xs</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-2">'ui', 'micro'</div>
-    <div class="grid-col-3">font-size('ui', 'micro')</div>
-    <div class="grid-col-3">u-font-size('ui', 'micro')</div>
-    <div class="grid-col-4">.font-size-ui-micro</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-base-light">
-    <div class="grid-col-2">'body', 15</div>
-    <div class="grid-col-3">font-size('body', 15)</div>
-    <div class="grid-col-3">u-font-size('body', 15)</div>
-    <div class="grid-col-4">.font-size-body-15</div>
-  </div>
+<div class="site-table-wrapper">
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col" class="tablet:maxw-card-lg">Token</th>
+        <th scope="col">Function</th>
+        <th scope="col">Mixin</th>
+        <th scope="col">Utility class</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            <a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>,
+            <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            size(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-font-size(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            —
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            'sans', '3xs'
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            size('sans', '3xs')
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-font-size('sans', '3xs')
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            —
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            'ui', 'micro'
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            size('ui', 'micro')
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-font-size('ui', 'micro')
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            —
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            'body', 15
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            size('body', 15)
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-font-size('body', 15)
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            —
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 ### Font family
-<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
-  <div class="grid-row grid-gap font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
-    <div class="grid-col-2">Token</div>
-    <div class="grid-col-3">Function</div>
-    <div class="grid-col-3">Mixin</div>
-    <div class="grid-col-4">Utility class</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-2"><a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a></div>
-    <div class="grid-col-3">font-family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>)</div>
-    <div class="grid-col-3">u-font-family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>)</div>
-    <div class="grid-col-4">.font-family-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a></div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-2">'sans'</div>
-    <div class="grid-col-3">font-family('sans')</div>
-    <div class="grid-col-3">u-font-family('sans')</div>
-    <div class="grid-col-4">.font-family-sans</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-2">'body'</div>
-    <div class="grid-col-3">font-family('body')</div>
-    <div class="grid-col-3">u-font-family('body')</div>
-    <div class="grid-col-4">.font-family-body</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-base-light">
-    <div class="grid-col-2">'heading'</div>
-    <div class="grid-col-3">font-family(15)</div>
-    <div class="grid-col-3">u-font-family(15)</div>
-    <div class="grid-col-4">.font-family-15</div>
-  </div>
+<div class="site-table-wrapper">
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col" class="tablet:maxw-card-lg">Token</th>
+        <th scope="col">Function</th>
+        <th scope="col">Mixin</th>
+        <th scope="col">Utility class</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            <a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>)
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-font-family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>)
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .font-family-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            'sans'
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            family('sans')
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-font-family('sans')
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .font-family-sans
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            'ui'
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            family('ui')
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-font-family('ui')
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .font-family-ui
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            'body'
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            family('body')
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-font-family('body')
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .font-family-body
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 ### Font family and size together
-<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
-  <div class="grid-row grid-gap font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05">
-    <div class="grid-col-2">Tokens</div>
-    <div class="grid-col-3">Function</div>
-    <div class="grid-col-3">Mixin</div>
-    <div class="grid-col-4">Utility class</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light line-height-mono-6">
-    <div class="grid-col-2"><a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a></div>
-    <div class="grid-col-3">—</div>
-    <div class="grid-col-3">u-font(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)</div>
-    <div class="grid-col-4">.font-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a></div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-2">'sans', '3xs'</div>
-    <div class="grid-col-3">—</div>
-    <div class="grid-col-3">u-font('sans', '3xs')</div>
-    <div class="grid-col-4">.font-sans-3xs</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-bottom border-base-light">
-    <div class="grid-col-2">'body', 'micro'</div>
-    <div class="grid-col-3">—</div>
-    <div class="grid-col-3">u-font('body', 'micro')</div>
-    <div class="grid-col-4">.font-body-micro</div>
-  </div>
-  <div class="grid-row grid-gap font-mono-2xs padding-y-05 border-base-light">
-    <div class="grid-col-2">'heading', 15</div>
-    <div class="grid-col-3">—</div>
-    <div class="grid-col-3">u-font('heading', 15)</div>
-    <div class="grid-col-4">.font-heading-15</div>
-  </div>
+<div class="site-table-wrapper">
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col" class="tablet:maxw-card-lg">Token</th>
+        <th scope="col">Function</th>
+        <th scope="col">Mixin</th>
+        <th scope="col">Utility class</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            <a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>,
+            <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            —
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-font(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .font-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            'sans', '3xs'
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            —
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-font('sans', '3xs')
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .font-sans-3xs
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            'ui', 'micro'
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            —
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-font('ui', 'micro')
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .font-ui-micro
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            'body', 15
+          </span>
+        </td>
+        <td data-title="Function">
+          <span>
+            —
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-font('body', 15)
+          </span>
+        </td>
+        <td data-title="Utility class">
+          <span>
+            .font-body-15
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>

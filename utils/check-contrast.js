@@ -31,7 +31,8 @@ const uswdsTokens = yaml.load(path.join(
   __dirname,
   '../',
   '_data',
-  '/uswds_tokens.yml'
+  '/tokens',
+  '/color.yml'
 ));
 const systemColors = uswdsTokens.colors.system;
 

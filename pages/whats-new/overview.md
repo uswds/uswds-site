@@ -55,23 +55,25 @@ we have aggregated a few data points to approximate how many users of federal
 websites have “experienced” the U.S. Web Design System. We will update these
 numbers quarterly.
 
-<table>
-  <thead>
-    <tr>
-      <th scope="col" aria-sort="ascending">Quarter</th>
-      {% for column in page.columns %}
-      <th scope="col" align="right">{{ column.title }}</th>
-      {% endfor %}
-    </tr>
-  </thead>
-  <tbody>
-  {% for row in site.data.google_analytics reversed %}
-    <tr>
-      <th scope="row">{{ row.Year }} {{ row.Quarter }}</th>
-      {% for column in page.columns %}
-      <td>{{ row[column.source] }}</td>
-      {% endfor %}
-    </tr>
-  {% endfor %}
-  </tbody>
-</table>
+<div class="site-table-wrapper margin-top-4">
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col" aria-sort="ascending">Quarter</th>
+        {% for column in page.columns %}
+        <th scope="col" align="right" class="text-right">{{ column.title }}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody class="font-sans-2xs text-tabular">
+    {% for row in site.data.google_analytics reversed %}
+      <tr>
+        <td scope="row" data-title="Quarter"><span><strong>{{ row.Year }}</strong> {{ row.Quarter }}</span></td>
+        {% for column in page.columns %}
+        <td data-title="{{ column.title }}" class="text-right">{{ row[column.source] }}</td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>

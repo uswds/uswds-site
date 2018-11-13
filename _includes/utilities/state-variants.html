@@ -12,22 +12,46 @@
 
   <p class="utility-text margin-top-4">Set whether a utility outputs a specific state variant by setting the value of the <code>$[utility_family]-settings.[state]</code> variable in <code>_project-utilities-settings.scss</code>.</p>
 
-  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2">
-    <div class="grid-col">Utility variable</div>
-    <div class="grid-col-auto width-15">.active</div>
-    <div class="grid-col-auto width-15">.focus</div>
-    <div class="grid-col-auto width-15">.hover</div>
-    <div class="grid-col-auto width-15">.visited</div>
-  </div>
-
-  {% for utility in page.utilities %}
-    <div class="grid-row font-mono-2xs padding-y-05 border-bottom border-base-light">
-      <div class="grid-col">${{ utility.var }}-settings</div>
-      <div class="grid-col-auto width-15">{% if utility.active %}<span class="output-true">true</span>{% else %}false{% endif %}</div>
-      <div class="grid-col-auto width-15">{% if utility.focus %}<span class="output-true">true</span>{% else %}false{% endif %}</div>
-      <div class="grid-col-auto width-15">{% if utility.hover %}<span class="output-true">true</span>{% else %}false{% endif %}</div>
-      <div class="grid-col-auto width-15">{% if utility.visited %}<span class="output-true">true</span>{% else %}false{% endif %}</div>
-    </div>
-  {% endfor %}
-
+  <table class="usa-table-borderless site-table-responsive site-table-simple">
+    <thead>
+      <tr>
+        <th scope="col">Utility variable</th>
+        <th scope="col" class="tablet:maxw-15">active</th>
+        <th scope="col" class="tablet:maxw-15">focus</th>
+        <th scope="col" class="tablet:maxw-15">hover</th>
+        <th scope="col" class="tablet:maxw-15">visited</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      {% for utility in page.utilities %}
+        <tr>
+          <td scope="row" data-title="Utility variable" class="tablet:text-no-wrap">
+            <span>
+              ${{ utility.var }}-settings
+            </span>
+          </td>
+          <td data-title="active" class="tablet:maxw-15">
+            <span>
+              {% if utility.active %}<span class="output-true">true</span>{% else %}false{% endif %}
+            </span>
+          </td>
+          <td data-title="focus" class="tablet:maxw-15">
+            <span>
+              {% if utility.focus %}<span class="output-true">true</span>{% else %}false{% endif %}
+            </span>
+          </td>
+          <td data-title="hover" class="tablet:maxw-15">
+            <span>
+              {% if utility.hover %}<span class="output-true">true</span>{% else %}false{% endif %}
+            </span>
+          </td>
+          <td data-title="visited" class="tablet:maxw-15">
+            <span>
+              {% if utility.visited %}<span class="output-true">true</span>{% else %}false{% endif %}
+            </span>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 </section>

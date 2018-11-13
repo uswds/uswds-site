@@ -104,69 +104,69 @@ utilities:
   visited:      false
 ---
 
-{% assign height_values = site.data.uswds_tokens.special.auto_auto
-  | concat: site.data.uswds_tokens.special.zero_zero
-  | concat: site.data.uswds_tokens.spacing.positive.smaller
-  | concat: site.data.uswds_tokens.spacing.positive.small
-  | concat: site.data.uswds_tokens.spacing.positive.medium
-  | concat: site.data.uswds_tokens.spacing.positive.large
-  | concat: site.data.uswds_tokens.special.full_percent
-  | concat: site.data.uswds_tokens.special.full_viewport_height
+{% assign height_values = site.data.tokens.special.auto_auto
+  | concat: site.data.tokens.special.zero_zero
+  | concat: site.data.tokens.spacing.positive.smaller
+  | concat: site.data.tokens.spacing.positive.small
+  | concat: site.data.tokens.spacing.positive.medium
+  | concat: site.data.tokens.spacing.positive.large
+  | concat: site.data.tokens.special.full_percent
+  | concat: site.data.tokens.special.full_viewport_height
 %}
 
-{% assign width_values = site.data.uswds_tokens.special.auto_auto
-  | concat: site.data.uswds_tokens.special.zero_zero
-  | concat: site.data.uswds_tokens.spacing.positive.smaller
-  | concat: site.data.uswds_tokens.spacing.positive.small
-  | concat: site.data.uswds_tokens.spacing.positive.medium
-  | concat: site.data.uswds_tokens.spacing.positive.large
-  | concat: site.data.uswds_tokens.spacing.positive.larger
-  | concat: site.data.uswds_tokens.spacing.positive.largest
-  | concat: site.data.uswds_tokens.special.full_percent
+{% assign width_values = site.data.tokens.special.auto_auto
+  | concat: site.data.tokens.special.zero_zero
+  | concat: site.data.tokens.spacing.positive.smaller
+  | concat: site.data.tokens.spacing.positive.small
+  | concat: site.data.tokens.spacing.positive.medium
+  | concat: site.data.tokens.spacing.positive.large
+  | concat: site.data.tokens.spacing.positive.larger
+  | concat: site.data.tokens.spacing.positive.largest
+  | concat: site.data.tokens.special.full_percent
 %}
 
-{% assign maxh_values = site.data.uswds_tokens.special.none_none
-  | concat: site.data.uswds_tokens.spacing.positive.small
-  | concat: site.data.uswds_tokens.spacing.positive.medium
-  | concat: site.data.uswds_tokens.spacing.positive.large
-  | concat: site.data.uswds_tokens.spacing.positive.larger
-  | concat: site.data.uswds_tokens.special.full_viewport_height
+{% assign maxh_values = site.data.tokens.special.none_none
+  | concat: site.data.tokens.spacing.positive.small
+  | concat: site.data.tokens.spacing.positive.medium
+  | concat: site.data.tokens.spacing.positive.large
+  | concat: site.data.tokens.spacing.positive.larger
+  | concat: site.data.tokens.special.full_viewport_height
 %}
 
-{% assign maxw_values = site.data.uswds_tokens.special.none_none
-  | concat: site.data.uswds_tokens.spacing.positive.small
-  | concat: site.data.uswds_tokens.spacing.positive.medium
-  | concat: site.data.uswds_tokens.spacing.positive.large
-  | concat: site.data.uswds_tokens.spacing.positive.larger
-  | concat: site.data.uswds_tokens.spacing.positive.largest
-  | concat: site.data.uswds_tokens.special.full_percent
+{% assign maxw_values = site.data.tokens.special.none_none
+  | concat: site.data.tokens.spacing.positive.small
+  | concat: site.data.tokens.spacing.positive.medium
+  | concat: site.data.tokens.spacing.positive.large
+  | concat: site.data.tokens.spacing.positive.larger
+  | concat: site.data.tokens.spacing.positive.largest
+  | concat: site.data.tokens.special.full_percent
 %}
 
-{% assign minh_values = site.data.uswds_tokens.special.none_none
-  | concat: site.data.uswds_tokens.special.zero_zero
-  | concat: site.data.uswds_tokens.spacing.positive.small
-  | concat: site.data.uswds_tokens.spacing.positive.medium
-  | concat: site.data.uswds_tokens.spacing.positive.large
-  | concat: site.data.uswds_tokens.spacing.positive.larger
-  | concat: site.data.uswds_tokens.special.full_percent
-  | concat: site.data.uswds_tokens.special.full_viewport_height
+{% assign minh_values = site.data.tokens.special.none_none
+  | concat: site.data.tokens.special.zero_zero
+  | concat: site.data.tokens.spacing.positive.small
+  | concat: site.data.tokens.spacing.positive.medium
+  | concat: site.data.tokens.spacing.positive.large
+  | concat: site.data.tokens.spacing.positive.larger
+  | concat: site.data.tokens.special.full_percent
+  | concat: site.data.tokens.special.full_viewport_height
 %}
 
-{% assign minw_values = site.data.uswds_tokens.special.none_none
-  | concat: site.data.uswds_tokens.spacing.positive.small
-  | concat: site.data.uswds_tokens.spacing.positive.medium
+{% assign minw_values = site.data.tokens.special.none_none
+  | concat: site.data.tokens.spacing.positive.small
+  | concat: site.data.tokens.spacing.positive.medium
 %}
 
-{% assign circle_values = site.data.uswds_tokens.spacing.positive.smaller
-  | concat: site.data.uswds_tokens.spacing.positive.small
-  | concat: site.data.uswds_tokens.spacing.positive.medium
-  | concat: site.data.uswds_tokens.spacing.positive.large
+{% assign circle_values = site.data.tokens.spacing.positive.smaller
+  | concat: site.data.tokens.spacing.positive.small
+  | concat: site.data.tokens.spacing.positive.medium
+  | concat: site.data.tokens.spacing.positive.large
 %}
 
-{% assign square_values = site.data.uswds_tokens.spacing.positive.smaller
-  | concat: site.data.uswds_tokens.spacing.positive.small
-  | concat: site.data.uswds_tokens.spacing.positive.medium
-  | concat: site.data.uswds_tokens.spacing.positive.large
+{% assign square_values = site.data.tokens.spacing.positive.smaller
+  | concat: site.data.tokens.spacing.positive.small
+  | concat: site.data.tokens.spacing.positive.medium
+  | concat: site.data.tokens.spacing.positive.large
 %}
 
 <div class="utilities-properties">
@@ -471,261 +471,180 @@ utilities:
   </section><!-- .utility#square -->
 </section>
 
-<section class="utilities-section">
-  <h2 class="utilities-section-title">Default output</h2>
-  <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
-    <div class="grid-col-4">Utility</div>
-    <div class="grid-col-6">Output SCSS</div>
-    <div class="grid-col-2">Default variable value</div>
-  </div>
-  <dl class="output-list">
-    {% assign this_utility = 'height' %}
-    {% assign this_property = 'height' %}
-    {% for value in height_values %}
-      <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
-      {% if value.scss %}
-        <dd class="output-css">
-          <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
-          </span>
-        </dd>
-        <dd class="output-variable">{{ value.value }}</dd>
-      {% else %}
-        <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
-        <dd class="output-variable">—</dd>
-      {% endif %}
-    {% endfor %}
-
-    {% assign this_utility = 'width' %}
-    {% assign this_property = 'width' %}
-    {% for value in width_values %}
-      <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
-      {% if value.scss %}
-        <dd class="output-css">
-          <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
-          </span>
-        </dd>
-        <dd class="output-variable">{{ value.value }}</dd>
-      {% else %}
-        <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
-        <dd class="output-variable">—</dd>
-      {% endif %}
-    {% endfor %}
-
-    {% assign this_utility = 'maxh' %}
-    {% assign this_property = 'max-height' %}
-    {% for value in maxh_values %}
-      <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
-      {% if value.scss %}
-        <dd class="output-css">
-          <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
-          </span>
-        </dd>
-        <dd class="output-variable">{{ value.value }}</dd>
-      {% else %}
-        <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
-        <dd class="output-variable">—</dd>
-      {% endif %}
-    {% endfor %}
-
-    {% assign this_utility = 'maxw' %}
-    {% assign this_property = 'max-width' %}
-    {% for value in maxw_values %}
-      <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
-      {% if value.scss %}
-        <dd class="output-css">
-          <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
-          </span>
-        </dd>
-        <dd class="output-variable">{{ value.value }}</dd>
-      {% else %}
-        <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
-        <dd class="output-variable">—</dd>
-      {% endif %}
-    {% endfor %}
-
-    {% assign this_utility = 'minh' %}
-    {% assign this_property = 'min-height' %}
-    {% for value in minh_values %}
-      <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
-      {% if value.scss %}
-        <dd class="output-css">
-          <span>{{ this_property }}: <span class="output-token">{{ value.scss }}</span>
-          </span>
-        </dd>
-        <dd class="output-variable">{{ value.value }}</dd>
-      {% else %}
-        <dd class="output-css"><span>{{ this_property }}: {{ value.value }}</span></dd>
-        <dd class="output-variable">—</dd>
-      {% endif %}
-    {% endfor %}
-
-    {% assign this_utility = 'circle' %}
-    {% assign this_property = 'height, width'
-      | split: ', '
-    %}
-    {% assign this_rule = 'border-radius: 50%'
-      | split: ', '
-    %}
-    {% for value in minw_values %}
-      <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
-      {% if value.scss %}
-        <dd class="output-css">
-          <span>
-            {% if this_property %}
-              {% for property in this_property %}
-              <span class="output-rule">{{ property }}: <span class="output-token">{{ value.scss }}</span></span>
-              {% endfor %}
-            {% endif %}
-            {% if this_rule %}
-              {% for rule in this_rule %}
-              <span class="output-rule">{{ rule }}</span>
-              {% endfor %}
-            {% endif %}
-          </span>
-        </dd>
-        <dd class="output-variable">{{ value.value }}</dd>
-      {% else %}
-        <dd class="output-css">
-          <span>
-            {% if this_property %}
-              {% for property in this_property %}
-              <span class="output-rule">{{ property }}: {{ value.value }}</span>
-              {% endfor %}
-            {% endif %}
-            {% if this_rule %}
-              {% for rule in this_rule %}
-              <span class="output-rule">{{ rule }}</span>
-              {% endfor %}
-            {% endif %}
-          </span>
-        </dd>
-        <dd class="output-variable">—</dd>
-      {% endif %}
-    {% endfor %}
-
-    {% assign this_utility = 'square' %}
-    {% assign this_property = 'height, width'
-      | split: ', '
-    %}
-    {% assign this_rule = false %}
-    {% for value in minw_values %}
-      <dt class="output-utility">.{{ this_utility }}-{{ value.token }}</dt>
-      {% if value.scss %}
-        <dd class="output-css">
-          <span>
-            {% if this_property %}
-              {% for property in this_property %}
-              <span class="output-rule">{{ property }}: <span class="output-token">{{ value.scss }}</span></span>
-              {% endfor %}
-            {% endif %}
-            {% if this_rule %}
-              {% for rule in this_rule %}
-              <span class="output-rule">{{ rule }}</span>
-              {% endfor %}
-            {% endif %}
-          </span>
-        </dd>
-        <dd class="output-variable">{{ value.value }}</dd>
-      {% else %}
-        <dd class="output-css">
-          <span>
-            {% if this_property %}
-              {% for property in this_property %}
-              <span class="output-rule">{{ property }}: {{ value.value }}</span>
-              {% endfor %}
-            {% endif %}
-            {% if this_rule %}
-              {% for rule in this_rule %}
-              <span class="output-rule">{{ rule }}</span>
-              {% endfor %}
-            {% endif %}
-          </span>
-        </dd>
-        <dd class="output-variable">—</dd>
-      {% endif %}
-    {% endfor %}
-
-  </dl>
-</section>
-
 <section id="utility-mixins" class="padding-top-4">
-  <h2 class="margin-y-0">Utility mixins</h2>
+  <h2 class="site-h2 margin-y-0">Utility mixins</h2>
   {% include utilities/utility-mixin-intro.html %}
 
-  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2 margin-top-3">
-    <div class="grid-col-4">Utility</div>
-    <div class="grid-col-4">Mixin</div>
-    <div class="grid-col-4">Example</div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.height-<code>unit</code></div>
-    <div class="grid-col-4">u-height(<code>value</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-height('card')</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.width-<code>unit</code></div>
-    <div class="grid-col-4">u-width(<code>value</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-width('auto')</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.maxh-<code>unit</code></div>
-    <div class="grid-col-4">u-maxh(<code>value</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-maxh('screen')</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.maxw-<code>unit</code></div>
-    <div class="grid-col-4">u-maxw(<code>value</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-maxw('card-lg')</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.minh-<code>unit</code></div>
-    <div class="grid-col-4">u-minh(<code>value</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-minh('screen')</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.minw-<code>unit</code></div>
-    <div class="grid-col-4">u-minw(<code>value</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-minw('auto')</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.add-aspect-<code>ratio</code></div>
-    <div class="grid-col-4">add-aspect(<code>value</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">add-aspect('16x9')</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.circle-<code>unit</code></div>
-    <div class="grid-col-4">u-circle(<code>value</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-circle('05')</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.square-<code>unit</code></div>
-    <div class="grid-col-4">u-square(<code>value</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-square(2)</span>
-    </div>
-  </div>
+  <table class="usa-table-borderless site-table-responsive site-table-simple">
+    <thead>
+      <tr>
+        <th scope="col" class="tablet:maxw-card-lg">Utility</th>
+        <th scope="col">Mixin</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .height-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-height(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-height('card')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .width-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-width(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-width('auto')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .maxh-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-maxh(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-maxh('screen')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .maxw-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-maxw(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-maxw('card-lg')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .minh-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-minh(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-minh('screen')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .minw-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-minw(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-minw('auto')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .add-aspect-<code>ratio</code>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            add-aspect(<code>ratio</code>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include add-aspect('16x9')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .circle-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-circle(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-circle('05')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .square-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-square(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-square('05')
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
   {% include utilities/utility-mixin-using.html %}
 </section>
 
 <section id="advanced-settings" class="padding-top-4">
-  <h2 class="margin-y-0">Advanced settings</h2>
+  <h2 class="site-h2 margin-y-0">Advanced settings</h2>
 
   {% include utilities/responsive-variants.html %}
 
@@ -740,7 +659,7 @@ utilities:
       <h4 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h4>
 <pre class="font-mono-xs margin-0 padding-0 bg-transparent">
 $width-palettes: (
-  $palette-spacing-uswds-large // note: no trailing comma
+  'palette-units-positive-large' // note: no trailing comma
 );
 </pre>
     <h4 class="font-sans-2xs margin-top-2 margin-bottom-05">Output</h4>

@@ -3,7 +3,7 @@ permalink: /style-tokens/color/system-tokens/
 layout: styleguide
 title: System color tokens
 category: Style tokens
-lead: USWDS system color tokens are the complete palette of color tokens from which any project can build a theme palette
+lead: USWDS system color tokens are the complete palette of color tokens from which any project can build a theme palette.
 type: docs
 subnav:
   - text: Red warm
@@ -55,76 +55,76 @@ subnav:
   - text: Using color tokens
     href: '#using-color-tokens'
 families:
-  - red_warm
-  - red_warm_vivid
+  - red-warm
+  - red-warm-vivid
   - red
-  - red_vivid
-  - orange_warm
-  - orange_warm_vivid
+  - red-vivid
+  - orange-warm
+  - orange-warm-vivid
   - orange
-  - orange_vivid
+  - orange-vivid
   - gold
-  - gold_vivid
+  - gold-vivid
   - yellow
-  - yellow_vivid
-  - green_warm
-  - green_warm_vivid
+  - yellow-vivid
+  - green-warm
+  - green-warm-vivid
   - green
-  - green_vivid
-  - green_cool
-  - green_cool_vivid
+  - green-vivid
+  - green-cool
+  - green-cool-vivid
   - mint
-  - mint_vivid
-  - mint_cool
-  - mint_cool_vivid
+  - mint-vivid
+  - mint-cool
+  - mint-cool-vivid
   - cyan
-  - cyan_vivid
+  - cyan-vivid
   - blue
-  - blue_vivid
-  - blue_warm
-  - blue_warm_vivid
-  - indigo_cool
-  - indigo_cool_vivid
+  - blue-vivid
+  - blue-warm
+  - blue-warm-vivid
+  - indigo-cool
+  - indigo-cool-vivid
   - indigo
-  - indigo_vivid
-  - indigo_warm
-  - indigo_warm_vivid
+  - indigo-vivid
+  - indigo-warm
+  - indigo-warm-vivid
   - violet
-  - violet_vivid
-  - violet_warm
-  - violet_warm_vivid
+  - violet-vivid
+  - violet-warm
+  - violet-warm-vivid
   - magenta
-  - magenta_vivid
-  - gray_cool
+  - magenta-vivid
+  - gray-cool
   - gray
-  - gray_warm
+  - gray-warm
 ---
 
-{% assign system_colors = site.data.uswds_tokens.colors.system %}
+{% assign system_colors = site.data.tokens.color.system %}
 
 <div class="padding-top-1 tablet:padding-top-3 maxw-tablet-lg">
 
   {% for family in page.families %}
-    {% capture last %}{{ family | split: '_' | last }}{% endcapture %}
-    {% capture this_title %}{{ family | replace: '_', ' ' | capitalize }}{% endcapture %}
+    {% capture last %}{{ family | split: '-' | last }}{% endcapture %}
+    {% capture this_title %}{{ family | replace: '-', ' ' | capitalize }}{% endcapture %}
     {% if last == 'vivid' %}
-      {% capture this_title %}{{ family | replace: '_', ' ' | replace: ' vivid', '' | capitalize }}<span class="text-normal"> vivid</span>{% endcapture %}
+      {% capture this_title %}{{ family | replace: '-', ' ' | replace: ' vivid', '' | capitalize }}<span class="text-normal"> vivid</span>{% endcapture %}
     {% endif%}
     <div class="site-table-wrapper">
       <table class="usa-table-borderless site-table-responsive">
-        <caption class="site-caption-swatches" id="{{ family | replace: '_', '-' }}">{{ this_title }}</caption>
+        <caption class="site-caption-swatches" id="{{ family }}">{{ this_title }}</caption>
         <thead>
           <tr>
             <th scope="col">Color</th>
+            <th scope="col">Token</th>
             <th scope="col">Family</th>
             <th scope="col">Grade</th>
             <th scope="col">Variant</th>
-            <th scope="col">System token</th>
             <th scope="col" class="text-right">Hex</th>
           </tr>
         </thead>
-        <tbody>
-          {% for color in system_colors[family] %}
+        <tbody class="font-mono-2xs">
+          {% for item in system_colors[family] %}
             {% include style/swatch-condensed.html %}
           {% endfor %}
         </tbody>

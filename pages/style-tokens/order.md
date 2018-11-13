@@ -12,642 +12,165 @@ subnav:
   href: '#using-order-tokens'
 ---
 
+{% assign tokens = site.data.tokens %}
+
 ## Order tokens
+<div class="site-table-wrapper">
+  <div class="site-table-note">
+    <strong>Note:</strong> Ordered items are only ordered among other ordered items. Any unordered siblings will be ordered by their appearance in the DOM. Siblings sharing the same order will all appear at the specified position in the order in which they appear in the DOM.
+  </div>
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col">Token</th>
+        <th scope="col">Example</th>
+        <th scope="col">Value</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      {% for item in tokens.order %}
+        {% include tokens/is_number.html %}
 
-{:.bg-gold-20v.padding-2.radius-md}
-**Note:** Ordered items are only ordered among other ordered items. Any unordered siblings will be ordered by their appearance in the DOM. Siblings sharing the same order will all appear at the specified position in the order in which they appear in the DOM.
-
-<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px font-mono-3">
-  <div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px text-bold">
-    <div class="grid-col-2 text-700 font-sans-1">Token</div>
-    <div class="grid-col-8 text-700 font-sans-1">Example</div>
-    <div class="grid-col-fill text-700 font-sans-1">Output</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>'initial'</code></div>
-    <div class="grid-col-8 grid-row grid-gap-sm">
-      <div class="grid-col order-1">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">1</span>
-      </div>
-      <div class="grid-col order-2">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">2</span>
-      </div>
-      <div class="grid-col order-3">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">3</span>
-      </div>
-      <div class="grid-col order-4">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">4</span>
-      </div>
-      <div class="grid-col order-5">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">5</span>
-      </div>
-      <div class="grid-col order-6">
-        <span class="bg-secondary border border-secondary text-white width-full display-inline-block radius-sm text-center padding-y-05">6</span>
-      </div>
-      <div class="grid-col order-7">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">7</span>
-      </div>
-      <div class="grid-col order-8">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">8</span>
-      </div>
-      <div class="grid-col order-9">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">9</span>
-      </div>
-      <div class="grid-col order-10">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">10</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">11</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">12</span>
-      </div>
-    </div>
-    <div class="grid-col-fill">initial</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>'first'</code></div>
-    <div class="grid-col-8 grid-row grid-gap-sm">
-      <div class="grid-col">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">1</span>
-      </div>
-      <div class="grid-col">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">2</span>
-      </div>
-      <div class="grid-col">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">3</span>
-      </div>
-      <div class="grid-col">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">4</span>
-      </div>
-      <div class="grid-col">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">5</span>
-      </div>
-      <div class="grid-col order-first">
-        <span class="bg-secondary border border-secondary text-white width-full display-inline-block radius-sm text-center padding-y-05">6</span>
-      </div>
-      <div class="grid-col">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">7</span>
-      </div>
-      <div class="grid-col">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">8</span>
-      </div>
-      <div class="grid-col">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">9</span>
-      </div>
-      <div class="grid-col">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">10</span>
-      </div>
-      <div class="grid-col">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">11</span>
-      </div>
-      <div class="grid-col">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">12</span>
-      </div>
-    </div>
-    <div class="grid-col-fill">-1</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>1</code></div>
-    <div class="grid-col-8 grid-row grid-gap-sm">
-      <div class="grid-col order-1">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">1</span>
-      </div>
-      <div class="grid-col order-2">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">2</span>
-      </div>
-      <div class="grid-col order-3">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">3</span>
-      </div>
-      <div class="grid-col order-4">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">4</span>
-      </div>
-      <div class="grid-col order-5">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">5</span>
-      </div>
-      <div class="grid-col order-1">
-        <span class="bg-secondary border border-secondary text-white width-full display-inline-block radius-sm text-center padding-y-05">6</span>
-      </div>
-      <div class="grid-col order-7">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">7</span>
-      </div>
-      <div class="grid-col order-8">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">8</span>
-      </div>
-      <div class="grid-col order-9">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">9</span>
-      </div>
-      <div class="grid-col order-10">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">10</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">11</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">12</span>
-      </div>
-    </div>
-    <div class="grid-col-fill">1</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>2</code></div>
-    <div class="grid-col-8 grid-row grid-gap-sm">
-      <div class="grid-col order-1">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">1</span>
-      </div>
-      <div class="grid-col order-2">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">2</span>
-      </div>
-      <div class="grid-col order-3">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">3</span>
-      </div>
-      <div class="grid-col order-4">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">4</span>
-      </div>
-      <div class="grid-col order-5">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">5</span>
-      </div>
-      <div class="grid-col order-2">
-        <span class="bg-secondary border border-secondary text-white width-full display-inline-block radius-sm text-center padding-y-05">6</span>
-      </div>
-      <div class="grid-col order-7">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">7</span>
-      </div>
-      <div class="grid-col order-8">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">8</span>
-      </div>
-      <div class="grid-col order-9">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">9</span>
-      </div>
-      <div class="grid-col order-10">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">10</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">11</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">12</span>
-      </div>
-    </div>
-    <div class="grid-col-fill">2</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>3</code></div>
-    <div class="grid-col-8 grid-row grid-gap-sm">
-      <div class="grid-col order-1">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">1</span>
-      </div>
-      <div class="grid-col order-2">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">2</span>
-      </div>
-      <div class="grid-col order-3">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">3</span>
-      </div>
-      <div class="grid-col order-4">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">4</span>
-      </div>
-      <div class="grid-col order-5">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">5</span>
-      </div>
-      <div class="grid-col order-3">
-        <span class="bg-secondary border border-secondary text-white width-full display-inline-block radius-sm text-center padding-y-05">6</span>
-      </div>
-      <div class="grid-col order-7">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">7</span>
-      </div>
-      <div class="grid-col order-8">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">8</span>
-      </div>
-      <div class="grid-col order-9">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">9</span>
-      </div>
-      <div class="grid-col order-10">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">10</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">11</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">12</span>
-      </div>
-    </div>
-    <div class="grid-col-fill">3</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>4</code></div>
-    <div class="grid-col-8 grid-row grid-gap-sm">
-      <div class="grid-col order-1">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">1</span>
-      </div>
-      <div class="grid-col order-2">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">2</span>
-      </div>
-      <div class="grid-col order-3">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">3</span>
-      </div>
-      <div class="grid-col order-4">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">4</span>
-      </div>
-      <div class="grid-col order-5">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">5</span>
-      </div>
-      <div class="grid-col order-4">
-        <span class="bg-secondary border border-secondary text-white width-full display-inline-block radius-sm text-center padding-y-05">6</span>
-      </div>
-      <div class="grid-col order-7">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">7</span>
-      </div>
-      <div class="grid-col order-8">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">8</span>
-      </div>
-      <div class="grid-col order-9">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">9</span>
-      </div>
-      <div class="grid-col order-10">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">10</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">11</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">12</span>
-      </div>
-    </div>
-    <div class="grid-col-fill">4</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>5</code></div>
-    <div class="grid-col-8 grid-row grid-gap-sm">
-      <div class="grid-col order-1">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">1</span>
-      </div>
-      <div class="grid-col order-2">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">2</span>
-      </div>
-      <div class="grid-col order-3">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">3</span>
-      </div>
-      <div class="grid-col order-4">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">4</span>
-      </div>
-      <div class="grid-col order-5">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">5</span>
-      </div>
-      <div class="grid-col order-5">
-        <span class="bg-secondary border border-secondary text-white width-full display-inline-block radius-sm text-center padding-y-05">6</span>
-      </div>
-      <div class="grid-col order-7">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">7</span>
-      </div>
-      <div class="grid-col order-8">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">8</span>
-      </div>
-      <div class="grid-col order-9">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">9</span>
-      </div>
-      <div class="grid-col order-10">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">10</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">11</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">12</span>
-      </div>
-    </div>
-    <div class="grid-col-fill">5</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>6</code></div>
-    <div class="grid-col-8 grid-row grid-gap-sm">
-      <div class="grid-col order-1">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">1</span>
-      </div>
-      <div class="grid-col order-2">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">2</span>
-      </div>
-      <div class="grid-col order-3">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">3</span>
-      </div>
-      <div class="grid-col order-4">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">4</span>
-      </div>
-      <div class="grid-col order-5">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">5</span>
-      </div>
-      <div class="grid-col order-6">
-        <span class="bg-secondary border border-secondary text-white width-full display-inline-block radius-sm text-center padding-y-05">6</span>
-      </div>
-      <div class="grid-col order-7">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">7</span>
-      </div>
-      <div class="grid-col order-8">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">8</span>
-      </div>
-      <div class="grid-col order-9">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">9</span>
-      </div>
-      <div class="grid-col order-10">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">10</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">11</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">12</span>
-      </div>
-    </div>
-    <div class="grid-col-fill">6</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>7</code></div>
-    <div class="grid-col-8 grid-row grid-gap-sm">
-      <div class="grid-col order-1">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">1</span>
-      </div>
-      <div class="grid-col order-2">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">2</span>
-      </div>
-      <div class="grid-col order-3">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">3</span>
-      </div>
-      <div class="grid-col order-4">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">4</span>
-      </div>
-      <div class="grid-col order-5">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">5</span>
-      </div>
-      <div class="grid-col order-7">
-        <span class="bg-secondary border border-secondary text-white width-full display-inline-block radius-sm text-center padding-y-05">6</span>
-      </div>
-      <div class="grid-col order-7">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">7</span>
-      </div>
-      <div class="grid-col order-8">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">8</span>
-      </div>
-      <div class="grid-col order-9">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">9</span>
-      </div>
-      <div class="grid-col order-10">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">10</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">11</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">12</span>
-      </div>
-    </div>
-    <div class="grid-col-fill">7</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>8</code></div>
-    <div class="grid-col-8 grid-row grid-gap-sm">
-      <div class="grid-col order-1">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">1</span>
-      </div>
-      <div class="grid-col order-2">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">2</span>
-      </div>
-      <div class="grid-col order-3">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">3</span>
-      </div>
-      <div class="grid-col order-4">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">4</span>
-      </div>
-      <div class="grid-col order-5">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">5</span>
-      </div>
-      <div class="grid-col order-8">
-        <span class="bg-secondary border border-secondary text-white width-full display-inline-block radius-sm text-center padding-y-05">6</span>
-      </div>
-      <div class="grid-col order-7">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">7</span>
-      </div>
-      <div class="grid-col order-8">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">8</span>
-      </div>
-      <div class="grid-col order-9">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">9</span>
-      </div>
-      <div class="grid-col order-10">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">10</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">11</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">12</span>
-      </div>
-    </div>
-    <div class="grid-col-fill">8</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>9</code></div>
-    <div class="grid-col-8 grid-row grid-gap-sm">
-      <div class="grid-col order-1">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">1</span>
-      </div>
-      <div class="grid-col order-2">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">2</span>
-      </div>
-      <div class="grid-col order-3">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">3</span>
-      </div>
-      <div class="grid-col order-4">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">4</span>
-      </div>
-      <div class="grid-col order-5">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">5</span>
-      </div>
-      <div class="grid-col order-9">
-        <span class="bg-secondary border border-secondary text-white width-full display-inline-block radius-sm text-center padding-y-05">6</span>
-      </div>
-      <div class="grid-col order-7">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">7</span>
-      </div>
-      <div class="grid-col order-8">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">8</span>
-      </div>
-      <div class="grid-col order-9">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">9</span>
-      </div>
-      <div class="grid-col order-10">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">10</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">11</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">12</span>
-      </div>
-    </div>
-    <div class="grid-col-fill">9</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>10</code></div>
-    <div class="grid-col-8 grid-row grid-gap-sm">
-      <div class="grid-col order-1">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">1</span>
-      </div>
-      <div class="grid-col order-2">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">2</span>
-      </div>
-      <div class="grid-col order-3">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">3</span>
-      </div>
-      <div class="grid-col order-4">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">4</span>
-      </div>
-      <div class="grid-col order-5">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">5</span>
-      </div>
-      <div class="grid-col order-10">
-        <span class="bg-secondary border border-secondary text-white width-full display-inline-block radius-sm text-center padding-y-05">6</span>
-      </div>
-      <div class="grid-col order-7">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">7</span>
-      </div>
-      <div class="grid-col order-8">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">8</span>
-      </div>
-      <div class="grid-col order-9">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">9</span>
-      </div>
-      <div class="grid-col order-10">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">10</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">11</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">12</span>
-      </div>
-    </div>
-    <div class="grid-col-fill">10</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>11</code></div>
-    <div class="grid-col-8 grid-row grid-gap-sm">
-      <div class="grid-col order-1">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">1</span>
-      </div>
-      <div class="grid-col order-2">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">2</span>
-      </div>
-      <div class="grid-col order-3">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">3</span>
-      </div>
-      <div class="grid-col order-4">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">4</span>
-      </div>
-      <div class="grid-col order-5">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">5</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="bg-secondary border border-secondary text-white width-full display-inline-block radius-sm text-center padding-y-05">6</span>
-      </div>
-      <div class="grid-col order-7">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">7</span>
-      </div>
-      <div class="grid-col order-8">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">8</span>
-      </div>
-      <div class="grid-col order-9">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">9</span>
-      </div>
-      <div class="grid-col order-10">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">10</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">11</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">12</span>
-      </div>
-    </div>
-    <div class="grid-col-fill">11</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>'last'</code></div>
-    <div class="grid-col-8 grid-row grid-gap-sm">
-      <div class="grid-col order-1">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">1</span>
-      </div>
-      <div class="grid-col order-2">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">2</span>
-      </div>
-      <div class="grid-col order-3">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">3</span>
-      </div>
-      <div class="grid-col order-4">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">4</span>
-      </div>
-      <div class="grid-col order-5">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">5</span>
-      </div>
-      <div class="grid-col order-last">
-        <span class="bg-secondary border border-secondary text-white width-full display-inline-block radius-sm text-center padding-y-05">6</span>
-      </div>
-      <div class="grid-col order-7">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">7</span>
-      </div>
-      <div class="grid-col order-8">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">8</span>
-      </div>
-      <div class="grid-col order-9">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">9</span>
-      </div>
-      <div class="grid-col order-10">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">10</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">11</span>
-      </div>
-      <div class="grid-col order-11">
-        <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">12</span>
-      </div>
-    </div>
-    <div class="grid-col-fill">999</div>
-  </div>
-
-
+        <tr>
+          <td scope="row" data-title="Token" class="tablet:width-15">
+            <span>
+              {% if converted %}
+                <code>{{ converted }}</code>,
+              {% endif %}
+              {% if is_number %}
+                <code>{{ item.token }}</code>
+              {% else %}
+                <code>'{{ item.token }}'</code>
+              {% endif %}
+            </span>
+          </td>
+          <td data-title="Example">
+            <div class="grid-row grid-gap-sm width-full">
+              <div class="grid-col {% if forloop.first == true %}order-initial{% else %}order-1{% endif %}">
+                <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">1</span>
+              </div>
+              <div class="grid-col {% if forloop.first %}order-initial{% else %}order-2{% endif %}">
+                <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">2</span>
+              </div>
+              <div class="grid-col {% if forloop.first %}order-initial{% else %}order-3{% endif %}">
+                <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">3</span>
+              </div>
+              <div class="grid-col {% if forloop.first %}order-initial{% else %}order-4{% endif %}">
+                <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">4</span>
+              </div>
+              <div class="grid-col {% if forloop.first %}order-initial{% else %}order-5{% endif %}">
+                <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">5</span>
+              </div>
+              <div class="grid-col order-{{ item.token }}">
+                <span class="bg-secondary border border-secondary text-white width-full display-inline-block radius-sm text-center padding-y-05">6</span>
+              </div>
+              <div class="grid-col {% if forloop.first %}order-initial{% else %}order-7{% endif %}">
+                <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">7</span>
+              </div>
+              <div class="grid-col {% if forloop.first %}order-initial{% else %}order-8{% endif %}">
+                <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">8</span>
+              </div>
+              <div class="grid-col {% if forloop.first %}order-initial{% else %}order-9{% endif %}">
+                <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">9</span>
+              </div>
+              <div class="grid-col {% if forloop.first %}order-initial{% else %}order-10{% endif %}">
+                <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">10</span>
+              </div>
+              <div class="grid-col {% if forloop.first %}order-initial{% else %}order-11{% endif %}">
+                <span class="border border-base-light width-full display-inline-block radius-sm text-center padding-y-05">11</span>
+              </div>
+            </div>
+          </td>
+          <td data-title="Value" class="tablet:width-15">
+            <span>
+              {{ item.value }}
+            </span>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 </div>
 
 ## Using order tokens
 Your context and coding style determine how you access USWDS order tokens in code.
 
-<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
-  <div class="grid-row grid-gap flex-align-center margin-bottom-1 padding-bottom-1 border-bottom-2px text-bold">
-    <div class="grid-col-2 text-700 font-sans-1">Context</div>
-    <div class="grid-col-5 text-700 font-sans-1">Usage</div>
-    <div class="grid-col-5 text-700 font-sans-1">Example</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">function
-    </div>
-    <div class="grid-col-5">order: order(<a href="{{ site.baseurl }}/style-tokens/order/" class="token">order</a>)</div>
-    <div class="grid-col-5">
-      order: order(<code>'last'</code>);
-    </div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">
-      mixin
-    </div>
-    <div class="grid-col-5">@include u-order(<a href="{{ site.baseurl }}/style-tokens/order/" class="token">order</a>)</div>
-    <div class="grid-col-5">@include u-order(<code>'last'</code>)</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">setting</div>
-    <div class="grid-col-5">$theme-variable: <a href="{{ site.baseurl }}/style-tokens/order/" class="token">order</a></div>
-    <div class="grid-col-5">$theme-nav-item-order: <code>'last'</code>;</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">utility
-    </div>
-    <div class="grid-col-5">.order-<a href="{{ site.baseurl }}/style-tokens/order/" class="token">order</a></div>
-    <div class="grid-col-5">.order-<code>last</code>;</div>
-  </div>
+<div class="site-table-wrapper">
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col">Context</th>
+        <th scope="col">Usage</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="text-bold font-sans-3">function</span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            order(<a href="{{ site.baseurl }}/style-tokens/order/" class="token">order</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            order: order(<code>'last'</code>)
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">mixin</span><br/>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            u-order(<a href="{{ site.baseurl }}/style-tokens/order/" class="token">order</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-order(<code>'last'</code>)<br/>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span>
+            <span class="text-bold font-sans-3">setting</span><br/>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            <a href="{{ site.baseurl }}/style-tokens/order/" class="token">order</a>
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            $theme-nav-item-order: <code>'last'</code>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">utility</span><br/>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            .order-<a href="{{ site.baseurl }}/style-tokens/order/" class="token">order</a>
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            .order-<code>last</code>
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>

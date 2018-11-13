@@ -96,58 +96,43 @@ utilities:
   </section><!-- utility -->
 </section><!-- utilities-section -->
 
-<section class="utilities-section">
-  <h2 class="utilities-section-title">Default output</h2>
-  <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
-    <div class="grid-col-4">Utility</div>
-    <div class="grid-col-6">Output SCSS</div>
-    <div class="grid-col-2">Default variable value</div>
-  </div>
-  <dl class="output-list">
-    <dt class="output-utility">.shadow-none</dt>
-    <dd class="output-css">box-shadow: none</dd>
-    <dd class="output-variable">—</dd>
-    <dt class="output-utility">.shadow-1</dt>
-    <dd class="output-css">box-shadow: <span class="output-token">box-shadow(1)</span></dd>
-    <dd class="output-variable">0 1px units(0.5) 0 rgba(0, 0, 0, 0.1)</dd>
-    <dt class="output-utility">.shadow-2</dt>
-    <dd class="output-css">box-shadow: <span class="output-token">box-shadow(2)</span></dd>
-    <dd class="output-variable">0 units(0.5) units(1) 0 rgba(0, 0, 0, 0.1)</dd>
-    <dt class="output-utility">.shadow-3</dt>
-    <dd class="output-css">box-shadow: <span class="output-token">box-shadow(3)</span></dd>
-    <dd class="output-variable">0 units(1) units(2) 0 rgba(0, 0, 0, 0.1)</dd>
-    <dt class="output-utility">.shadow-4</dt>
-    <dd class="output-css">box-shadow: <span class="output-token">box-shadow(4)</span></dd>
-    <dd class="output-variable">0 units(1.5) units(3) 0 rgba(0, 0, 0, 0.1)</dd>
-    <dt class="output-utility">.shadow-5</dt>
-    <dd class="output-css">box-shadow: <span class="output-token">box-shadow(5)</span></dd>
-    <dd class="output-variable">0 units(2) units(4) 0 rgba(0, 0, 0, 0.1)</dd>
-  </dl>
-</section>
-
 <section id="utility-mixins" class="padding-top-4">
-  <h2 class="margin-y-0">Utility mixins</h2>
+  <h2 class="site-h2 margin-y-0">Utility mixins</h2>
   {% include utilities/utility-mixin-intro.html %}
 
-  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2 margin-top-3">
-    <div class="grid-col-4">Utility</div>
-    <div class="grid-col-4">Mixin</div>
-    <div class="grid-col-4">Example</div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.shadow-<code>value</code></div>
-    <div class="grid-col-4">u-shadow(<code>value</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-shadow(1)</span>
-      <span class="display-block margin-top-1">u-shadow('none')</span>
-    </div>
-  </div>
-
+  <table class="usa-table-borderless site-table-responsive site-table-simple">
+    <thead>
+      <tr>
+        <th scope="col" class="tablet:maxw-card-lg">Utility</th>
+        <th scope="col">Mixin</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .shadow-<a href="{{ site.baseurl }}/style-tokens/shadow/" class="token">shadow</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-shadow(<a href="{{ site.baseurl }}/style-tokens/shadow/" class="token">shadow</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-shadow(2)
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
   {% include utilities/utility-mixin-using.html %}
 </section>
 
 <section id="advanced-settings" class="padding-top-4">
-<h2 class="margin-y-0">Advanced settings</h2>
+<h2 class="site-h2 margin-y-0">Advanced settings</h2>
 
   {% include utilities/responsive-variants.html %}
 

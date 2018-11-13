@@ -645,185 +645,128 @@ utilities:
 
 </section><!-- utilities -->
 
-<section class="utilities-section">
-  <h2 class="utilities-section-title">Default output</h2>
-  <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
-    <div class="grid-col-4">Utility</div>
-    <div class="grid-col-6">Output SCSS</div>
-    <div class="grid-col-2">Default variable value</div>
-  </div>
-  <dl class="output-list">
-
-    {% assign utility_base = 'flex' %}
-    {% assign utility_modifiers = 'none' | split: ' ,' %}
-    {% assign utility_values = page.values.flex %}
-    {% assign utility_properties = 'flex' | split: ', ' %}
-    {% assign utility_additional_rules = 'none' | split: ', ' %}
-    {% include utilities/output-utilities-loop.html %}
-
-    {% assign utility_base = 'flex' %}
-    {% assign utility_modifiers = 'none' | split: ' ,' %}
-    {% assign utility_values = page.values.flex_direction %}
-    {% assign utility_properties = 'flex-direction' | split: ', ' %}
-    {% assign utility_additional_rules = 'none' | split: ', ' %}
-    {% include utilities/output-utilities-loop.html %}
-
-    {% assign utility_base = 'flex' %}
-    {% assign utility_modifiers = 'none' | split: ' ,' %}
-    {% assign utility_values = page.values.flex_wrap %}
-    {% assign utility_properties = 'flex-wrap' | split: ', ' %}
-    {% assign utility_additional_rules = 'none' | split: ', ' %}
-    {% include utilities/output-utilities-loop.html %}
-
-    {% assign utility_base = 'flex-align' %}
-    {% assign utility_modifiers = 'none' | split: ' ,' %}
-    {% assign utility_values = page.values.flex_align %}
-    {% assign utility_properties = 'align-items' | split: ', ' %}
-    {% assign utility_additional_rules = 'none' | split: ', ' %}
-    {% include utilities/output-utilities-loop.html %}
-
-    {% assign utility_base = 'flex' %}
-    {% assign utility_modifiers = 'none' | split: ' ,' %}
-    {% assign utility_values = page.values.flex_justify %}
-    {% assign utility_properties = 'justify-content' | split: ', ' %}
-    {% assign utility_additional_rules = 'none' | split: ', ' %}
-    {% include utilities/output-utilities-loop.html %}
-
-    {% assign utility_base = 'order' %}
-    {% assign utility_modifiers = 'none' | split: ' ,' %}
-    {% assign utility_values = page.values.order %}
-    {% assign utility_properties = 'order' | split: ', ' %}
-    {% assign utility_additional_rules = 'none' | split: ', ' %}
-    {% include utilities/output-utilities-loop.html %}
-
-  </dl>
-</section>
-
-<section class="utilities-section">
-  <h2 class="utilities-section-title">Default output</h2>
-  <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
-    <div class="grid-col-4">Utility</div>
-    <div class="grid-col-6">Output SCSS</div>
-    <div class="grid-col-2">Default variable value</div>
-  </div>
-  <dl class="output-list">
-
-    {% assign utility_base = 'flex' %}
-    {% assign utility_modifiers = 'none' | split: ' ,' %}
-    {% assign utility_values = page.values.flex %}
-    {% assign utility_properties = 'flex' | split: ', ' %}
-    {% assign utility_additional_rules = 'none' | split: ', ' %}
-    {% include utilities/output-utilities-loop.html %}
-
-    {% assign utility_base = 'flex' %}
-    {% assign utility_modifiers = 'none' | split: ' ,' %}
-    {% assign utility_values = page.values.flex_direction %}
-    {% assign utility_properties = 'flex-direction' | split: ', ' %}
-    {% assign utility_additional_rules = 'none' | split: ', ' %}
-    {% include utilities/output-utilities-loop.html %}
-
-    {% assign utility_base = 'flex' %}
-    {% assign utility_modifiers = 'none' | split: ' ,' %}
-    {% assign utility_values = page.values.flex_wrap %}
-    {% assign utility_properties = 'flex-wrap' | split: ', ' %}
-    {% assign utility_additional_rules = 'none' | split: ', ' %}
-    {% include utilities/output-utilities-loop.html %}
-
-    {% assign utility_base = 'flex-align' %}
-    {% assign utility_modifiers = 'none' | split: ' ,' %}
-    {% assign utility_values = page.values.flex_align %}
-    {% assign utility_properties = 'align-items' | split: ', ' %}
-    {% assign utility_additional_rules = 'none' | split: ', ' %}
-    {% include utilities/output-utilities-loop.html %}
-
-    {% assign utility_base = 'flex' %}
-    {% assign utility_modifiers = 'none' | split: ' ,' %}
-    {% assign utility_values = page.values.flex_justify %}
-    {% assign utility_properties = 'justify-content' | split: ', ' %}
-    {% assign utility_additional_rules = 'none' | split: ', ' %}
-    {% include utilities/output-utilities-loop.html %}
-
-    {% assign utility_base = 'order' %}
-    {% assign utility_modifiers = 'none' | split: ' ,' %}
-    {% assign utility_values = page.values.order %}
-    {% assign utility_properties = 'order' | split: ', ' %}
-    {% assign utility_additional_rules = 'none' | split: ', ' %}
-    {% include utilities/output-utilities-loop.html %}
-
-  </dl>
-</section>
-
 <section id="utility-mixins" class="padding-top-4">
-  <h2 class="margin-y-0">Utility mixins</h2>
+  <h2 class="site-h2 margin-y-0">Utility mixins</h2>
   {% include utilities/utility-mixin-intro.html %}
 
-  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2 margin-top-3">
-    <div class="grid-col-4">Utility</div>
-    <div class="grid-col-4">Mixin</div>
-    <div class="grid-col-4">Example</div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.flex-<code>value</code></div>
-    <div class="grid-col-4">u-flex(<code>value</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-flex(1)</span>
-      <span class="display-block margin-top-1">u-flex('fill')</span>
-      <span class="display-block margin-top-1">u-flex('auto')</span>
-    </div>
-  </div>
-
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.flex-<code>direction</code></div>
-    <div class="grid-col-4">u-flex(<code>direction</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-flex('row')</span>
-      <span class="display-block margin-top-1">u-flex('column')</span>
-    </div>
-  </div>
-
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.flex-<code>wrap</code></div>
-    <div class="grid-col-4">u-flex(<code>wrap</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-flex('wrap')</span>
-      <span class="display-block margin-top-1">u-flex('no-wrap')</span>
-    </div>
-  </div>
-
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.flex-align-<code>value</code></div>
-    <div class="grid-col-4">u-flex(align-<code>value</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-flex('align-start')</span>
-      <span class="display-block margin-top-1">u-flex('align-stretch')</span>
-    </div>
-  </div>
-
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.flex-justify-<code>value</code></div>
-    <div class="grid-col-4">u-flex(justify-<code>value</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-flex('justify')</span>
-      <span class="display-block margin-top-1">u-flex('justify-start')</span>
-    </div>
-  </div>
-
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.order-<code>value</code></div>
-    <div class="grid-col-4">u-order(<code>value</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-order('last')</span>
-      <span class="display-block margin-top-1">u-order(2)</span>
-      <span class="display-block margin-top-1">u-order('initial')</span>
-    </div>
-  </div>
-
-
+  <table class="usa-table-borderless site-table-responsive site-table-simple">
+    <thead>
+      <tr>
+        <th scope="col" class="tablet:maxw-card-lg">Utility</th>
+        <th scope="col">Mixin</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:maxw-card-lg">
+          <span>
+            .flex-<a href="{{ site.baseurl }}/style-tokens/flex/" class="token">flex</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-flex(<a href="{{ site.baseurl }}/style-tokens/flex/" class="token">flex</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-flex('fill')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .flex-<code>direction</code>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-flex(<code>direction</code>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-flex('row')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .flex-<code>wrap</code>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-flex(<code>wrap</code>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-flex('no-wrap')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .flex-align-<code>value</code>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-flex('align-<code>value</code>')
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-flex('align-center')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .flex-justify-<code>value</code>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-flex('justify-<code>value</code>')
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-flex('justify')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .order-<a href="{{ site.baseurl }}/style-tokens/order/" class="token">order</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-order(<a href="{{ site.baseurl }}/style-tokens/order/" class="token">order</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-order('last')
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
   {% include utilities/utility-mixin-using.html %}
 </section>
 
 <section id="advanced-settings" class="padding-top-4">
-  <h2 class="margin-y-0">Advanced settings</h2>
+  <h2 class="site-h2 margin-y-0">Advanced settings</h2>
 
   {% include utilities/responsive-variants.html %}
   {% include utilities/state-variants.html %}

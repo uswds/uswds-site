@@ -1,0 +1,16 @@
+- token: auto
+  value: auto
+- token: bottom
+  value: -100
+- token: 100
+  value: 100
+- token: 200
+  value: 200
+- token: 300
+  value: 300
+- token: 400
+  value: 400
+- token: 500
+  value: 500
+- token: top
+  value: 99999

@@ -20,12 +20,65 @@ use case:
 {% capture show %}**show**{% endcapture %}
 {% capture hide %}_hide_{% endcapture %}
 
-Visual<br>browsers | Screen<br>readers | Solution
-:--- | :--- | :---
-{{ hide }} | {{ hide }} | Add the boolean [`hidden` attribute][hidden] attribute to dynamically hide content from all users. [Remove the attribute][remove-attr] to show it again.
-{{ show }} | {{ hide }} | Use the [`aria-hidden="true"`][aria-hidden] attribute to "hide" content from screen readers while keeping it visually perceivable.
-{{ hide }} | {{ show }} | Use the `usa-sr-only` class to show content to screen readers only. This removes the content from the visual flow of the document but retains its legibility by screen readers.
-
-[hidden]: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden
-[remove-attr]: https://developer.mozilla.org/en-US/docs/Web/API/Element/removeAttribute
-[aria-hidden]: https://www.w3.org/WAI/PF/aria-1.1/states_and_properties#aria-hidden
+<div class="site-table-wrapper margin-top-4">
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col" class="text-no-wrap">Visual browsers</th>
+        <th scope="col" class="text-no-wrap">Screen readers</th>
+        <th scope="col" class="text-no-wrap">Solution</th>
+      </tr>
+    </thead>
+    <tr>
+      <td scope="row" data-title="Visual browsers">
+        <span>
+          hide
+        </span>
+      </td>
+      <td data-title="Screen readers">
+        <span>
+          hide
+        </span>
+      </td>
+      <td data-title="Solution">
+        <span>
+          Add the boolean <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden"><code>hidden</code></a> attribute to dynamically hide content from all users. <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/removeAttribute">Remove the attribute</a> to show it again.
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td scope="row" data-title="Visual browsers">
+        <span>
+          <strong>show</strong>
+        </span>
+      </td>
+      <td data-title="Screen readers">
+        <span>
+          hide
+        </span>
+      </td>
+      <td data-title="Solution">
+        <span>
+          Use the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/hidden"><code>aria-hidden="true"</code></a> attribute to "hide" content from screen readers while keeping it visually perceivable.
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td scope="row" data-title="Visual browsers">
+        <span>
+          hide
+        </span>
+      </td>
+      <td data-title="Screen readers">
+        <span>
+          <strong>show</strong>
+        </span>
+      </td>
+      <td data-title="Solution">
+        <span>
+          Use the <code>usa-sr-only</code> class to show content to screen readers only. This removes the content from the visual flow of the document but retains its legibility by screen readers.
+        </span>
+      </td>
+    </tr>
+  </table>
+</div>

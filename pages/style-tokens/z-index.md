@@ -14,10 +14,10 @@ subnav:
 
 ## Z-index tokens
 <div class="position-relative z-bottom">
-  <div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2 font-mono-3 position-relative z-bottom">
+  <div class="bg-white radius-md border padding-x-1 tablet:padding-x-2 padding-top-1 padding-bottom-2 font-mono-3 position-relative z-bottom">
     <div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px text-bold">
       <div class="grid-col-fill text-700 font-sans-1">Token</div>
-      <div class="grid-col-auto text-700 font-sans-1">Output</div>
+      <div class="grid-col-auto text-700 font-sans-1">Value</div>
     </div>
     <section class="position-relative">
       <div class="bg-white border border-ink radius-lg padding-2  minh-10 margin-left-0 display-flex flex-justify flex-align-start z-auto">
@@ -63,36 +63,82 @@ subnav:
 ## Using z-index tokens
 Your context and coding style determine how you access USWDS z-index tokens in code.
 
-<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
-  <div class="grid-row grid-gap flex-align-center margin-bottom-1 padding-bottom-1 border-bottom-2px text-bold">
-    <div class="grid-col-2 text-700 font-sans-1">Context</div>
-    <div class="grid-col-5 text-700 font-sans-1">Usage</div>
-    <div class="grid-col-5 text-700 font-sans-1">Example</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">function
-    </div>
-    <div class="grid-col-5">z-index: z-index(<a href="{{ site.baseurl }}/style-tokens/z-index/" class="token">z-index</a>)</div>
-    <div class="grid-col-5">
-      z-index: z-index(<code>'bottom'</code>);
-    </div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">
-      mixin
-    </div>
-    <div class="grid-col-5">@include u-z-index(<a href="{{ site.baseurl }}/style-tokens/z-index/" class="token">z-index</a>)</div>
-    <div class="grid-col-5">@include u-z-index(<code>'bottom'</code>)</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">setting</div>
-    <div class="grid-col-5">$theme-variable: <a href="{{ site.baseurl }}/style-tokens/z-index/" class="token">z-index</a></div>
-    <div class="grid-col-5">$theme-subnav-z-index: <code>'top'</code>;</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">utility
-    </div>
-    <div class="grid-col-5">.z-index-<a href="{{ site.baseurl }}/style-tokens/z-index/" class="token">z-index</a></div>
-    <div class="grid-col-5">.z-index-<code>top</code>;</div>
-  </div>
+<div class="site-table-wrapper">
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col">Context</th>
+        <th scope="col">Usage</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="text-bold font-sans-3">function</span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            z-index(<a href="{{ site.baseurl }}/style-tokens/z-index/" class="token">z-index</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            z-index: z-index(<code>'bottom'</code>)
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">mixin</span><br/>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            u-z-index(<a href="{{ site.baseurl }}/style-tokens/z-index/" class="token">z-index</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-z-index(<code>'bottom'</code>)<br/>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span>
+            <span class="text-bold font-sans-3">setting</span><br/>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            <a href="{{ site.baseurl }}/style-tokens/z-index/" class="token">z-index</a>
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            $theme-subnav-z-index: <code>'top'</code>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">utility</span><br/>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            .z-index-<a href="{{ site.baseurl }}/style-tokens/z-index/" class="token">z-index</a>
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            .z-index-<code>top</code>
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>

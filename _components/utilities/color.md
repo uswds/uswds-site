@@ -34,13 +34,15 @@ utilities:
   visited:      false
 ---
 
-{% assign theme_colors = site.data.uswds_tokens.colors.project_theme %}
-{% assign grayscale_colors = site.data.uswds_tokens.colors.grayscale %}
-{% assign basic_colors = site.data.uswds_tokens.colors.basic %}
+{% assign theme_colors = site.data.tokens.color.theme %}
+{% assign grayscale_colors = site.data.tokens.color.grayscale %}
+{% assign basic_colors = site.data.tokens.color.basic %}
 {% assign all_colors = theme_colors
   | concat: grayscale_colors
   | concat: basic_colors
   %}
+
+{% include tokens/get-system-colors.html %}
 
 <div class="utilities-properties">
   <h3 class="utilities-property-title">CSS properties</h3>
@@ -80,11 +82,18 @@ utilities:
 
       <div class="grid-row">
         {% for color in theme_colors %}
+          {% assign system = system-colors | where: 'token', color.default %}
+          {% assign value = system[0].value %}
+          {% assign grade = color.default
+            | regexreplace: '.+?(\d+).*?$', '\1'
+            | times: 1 %}
+
           <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-            <span class="radius-md padding-05 text-{{ color.token }}{% if color.reverse %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
+            <span class="radius-md padding-05 text-{{ color.token }}{% if grade < 50 %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
-              {{ color.value }}
+              {% assign system = system-colors | where: 'token', color.default %}
+              {{ system[0].value }}
             </span>
           </div>
         {% endfor %}
@@ -94,8 +103,25 @@ utilities:
 
       <div class="grid-row">
         {% for color in grayscale_colors %}
+          {% assign system = system-colors | where: 'token', color.default %}
+          {% assign value = system[0].value %}
+          {% if color.default %}
+            {% assign grade = color.default
+              | regexreplace: '.+?(\d+).*?$', '\1'
+              | times: 1 %}
+          {% else %}
+            {% if color.token contains 'white' %}
+              {% assign grade = 0 %}
+            {% elsif color.token contains 'black' %}
+              {% assign grade = 100 %}
+            {% else %}
+              {% assign grade = color.token
+                | regexreplace: '.+?(\d+).*?$', '\1'
+                | times: 1 %}
+            {% endif %}
+          {% endif %}
           <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-            <span class="radius-md padding-05 text-{{ color.token }}{% if color.reverse %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
+            <span class="radius-md padding-05 text-{{ color.token }}{% if grade < 50 %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
               {{ color.value }}
@@ -108,11 +134,28 @@ utilities:
 
       <div class="grid-row">
         {% for color in basic_colors %}
+          {% assign system = system-colors | where: 'token', color.default %}
+          {% assign value = system[0].value %}
+          {% if color.default %}
+            {% assign grade = color.default
+              | regexreplace: '.+?(\d+).*?$', '\1'
+              | times: 1 %}
+          {% else %}
+            {% if color.token contains 'white' %}
+              {% assign grade = 0 %}
+            {% elsif color.token contains 'black' %}
+              {% assign grade = 100 %}
+            {% else %}
+              {% assign grade = color.token
+                | regexreplace: '.+?(\d+).*?$', '\1'
+                | times: 1 %}
+            {% endif %}
+          {% endif %}
           <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
-            <span class="radius-md padding-05 text-{{ color.token }}{% if color.reverse %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
+            <span class="radius-md padding-05 text-{{ color.token }}{% if grade < 50 %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
-              {{ color.value }}
+              {{ value }}
             </span>
           </div>
         {% endfor %}
@@ -142,6 +185,8 @@ utilities:
       <h3 class="font-sans-4 margin-top-0 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Project theme colors <a class="utility-examples-helper" href="{{ site.baseurl }}/style-tokens/color/theme-tokens/">Read more about project theme colors</a></h3>
       <div class="grid-row">
         {% for color in theme_colors %}
+          {% assign system = system-colors | where: 'token', color.default %}
+          {% assign value = system[0].value %}
           <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center measure-none">
             <span class="flex-fill">
               <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
@@ -149,7 +194,7 @@ utilities:
             </span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
-              {{ color.value }}
+              {{ value }}
             </span>
           </p>
         {% endfor %}
@@ -178,6 +223,8 @@ utilities:
       <h3 class="font-sans-4 margin-top-4 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Basic palette</h3>
       <div class="grid-row">
         {% for color in basic_colors %}
+          {% assign system = system-colors | where: 'token', color.default %}
+          {% assign value = system[0].value %}
           <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center measure-none">
             <span class="flex-fill">
               <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
@@ -185,7 +232,7 @@ utilities:
             </span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
-              {{ color.value }}
+              {{ value }}
             </span>
           </p>
         {% endfor %}
@@ -194,64 +241,61 @@ utilities:
   </section>
 </section>
 
-<section class="utilities-section margin-top-6">
-  <h2 class="utilities-section-title">Default output</h2>
-  <div class="grid-row font-sans-1 text-bold border-bottom padding-bottom-05 margin-top-2 border-base-light">
-    <div class="grid-col-4">Utility</div>
-    <div class="grid-col-6">Output SCSS</div>
-    <div class="grid-col-2">Default variable value</div>
-  </div>
-  <dl class="output-list">
-    {% for color in all_colors %}
-      <dt class="output-utility">.text-{{ color.token }}</dt>
-      <dd class="output-css">color: <span class="output-token">color('{{ color.token }}')</span></dd>
-      <dd class="output-variable">
-        <span class="display-inline-block bg-{{ color.token }} circle-105 text-baseline margin-right-05"></span>
-        {{ color.value }}
-      </dd>
-    {% endfor %}
-    {% for color in all_colors %}
-      <dt class="output-utility">.bg-{{ color.token }}</dt>
-      <dd class="output-css">background-color: <span class="output-token">color('{{ color.token }}')</span></dd>
-      <dd class="output-variable">
-        <span class="display-inline-block bg-{{ color.token }} circle-105 text-baseline margin-right-05"></span>
-        {{ color.value }}
-      </dd>
-    {% endfor %}
-  </dl>
-</section>
-
 <section id="utility-mixins" class="padding-top-4">
-  <h2 class="margin-y-0">Utility mixins</h2>
+  <h2 class="site-h2 margin-y-0">Utility mixins</h2>
   {% include utilities/utility-mixin-intro.html %}
 
-  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2 margin-top-3">
-    <div class="grid-col-4">Utility</div>
-    <div class="grid-col-4">Mixin</div>
-    <div class="grid-col-4">Example</div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.text-<code>color</code></div>
-    <div class="grid-col-4">u-text(<code>color</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-text('red-50')</span>
-      <span class="display-block margin-top-1">u-text('secondary-darker')</span>
-    </div>
-  </div>
-  <div class="grid-row font-mono-2xs padding-y-1 border-bottom border-base-light">
-    <div class="grid-col-4">.bg-<code>color</code></div>
-    <div class="grid-col-4">u-bg(<code>color</code>)</div>
-    <div class="grid-col-4">
-      <span class="display-block">u-bg('indigo-warm-50v')</span>
-      <span class="display-block margin-top-1">u-bg('base-darker')</span>
-    </div>
-  </div>
+  <table class="usa-table-borderless site-table-responsive site-table-simple">
+    <thead>
+      <tr>
+        <th scope="col" class="tablet:maxw-card-lg">Utility</th>
+        <th scope="col">Mixin</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .text-<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-text(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-text('primary-darker')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .bg-<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-bg(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-bg('primary-darker')
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
   {% include utilities/utility-mixin-using.html %}
 </section>
 
 <section id="advanced-settings" class="padding-top-4">
-<h2 class="margin-y-0">Advanced settings</h2>
+<h2 class="site-h2 margin-y-0">Advanced settings</h2>
 
   {% include utilities/responsive-variants.html %}
 
@@ -266,8 +310,8 @@ utilities:
       <h4 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h4>
 <pre class="font-mono-xs margin-0 padding-0 bg-transparent">
 $background-color-palettes: (
-  $palette-red-medium,
-  $palette-red-medium-vivid // note: no trailing comma
+  'palette-color-red-medium',
+  'palette-color-red-medium-vivid' // note: no trailing comma
 );
 </pre>
     <h4 class="font-sans-2xs margin-top-2 margin-bottom-05">Output</h4>

@@ -1,0 +1,1085 @@
+basic:
+  - token: red
+    default: 'red-50v'
+  - token: orange
+    default: 'orange-40v'
+  - token: gold
+    default: 'gold-20v'
+  - token: yellow
+    default: 'yellow-10v'
+  - token: green
+    default: 'green-50v'
+  - token: mint
+    default: 'mint-30v'
+  - token: cyan
+    default: 'cyan-40v'
+  - token: blue
+    default: 'blue-50v'
+  - token: indigo
+    default: 'indigo-50'
+  - token: violet
+    default: 'violet-50'
+  - token: magenta
+    default: 'magenta-50v'
+
+grayscale:
+  - token: white
+    value: '#ffffff'
+  - token: gray-5
+    value: '#f0f0f0'
+  - token: gray-10
+    value: '#e6e6e6'
+  - token: gray-30
+    value: '#adadad'
+  - token: gray-50
+    value: '#757575'
+  - token: gray-70
+    value: '#454545'
+  - token: gray-90
+    value: '#171717'
+  - token: black
+    value: '#000000'
+
+required:
+  - token: transparent
+    value: transparent
+  - token: black
+    value: '#000000'
+  - token: white
+    value: '#ffffff'
+
+state:
+  - token: info-lighter
+    default: 'cyan-5'
+  - token: info-light
+    default: 'cyan-20'
+  - token: info
+    default: 'cyan-30v'
+  - token: info-dark
+    default: 'cyan-40v'
+  - token: info-darker
+    default: 'blue-60'
+  - token: error-lighter
+    default: 'red-10'
+  - token: error-light
+    default: 'red-40v'
+  - token: error
+    default: 'red-50'
+  - token: error-dark
+    default: 'red-60v'
+  - token: error-darker
+    default: 'red-70v'
+  - token: warning-lighter
+    default: 'gold-5v'
+  - token: warning-light
+    default: 'gold-10v'
+  - token: warning
+    default: 'gold-20v'
+  - token: warning-dark
+    default: 'gold-30v'
+  - token: warning-darker
+    default: 'gold-40v'
+  - token: success-lighter
+    default: 'green-cool-5'
+  - token: success-light
+    default: 'green-cool-30v'
+  - token: success
+    default: 'green-cool-40v'
+  - token: success-dark
+    default: 'green-cool-50'
+  - token: success-darker
+    default: 'green-cool-70'
+  - token: disabled
+    default: 'gray-20'
+
+theme:
+  - token: base-lightest
+    default: 'gray-5'
+  - token: base-lighter
+    default: 'gray-cool-10'
+  - token: base-light
+    default: 'gray-30'
+  - token: base
+    default: 'gray-50'
+  - token: base-dark
+    default: 'gray-cool-60'
+  - token: base-darker
+    default: 'gray-cool-80'
+  - token: base-darkest
+    default: 'gray-90'
+  - token: ink
+    default: 'gray-90'
+  - token: primary-lighter
+    default: 'blue-10'
+  - token: primary-light
+    default: 'blue-30'
+  - token: primary
+    default: 'blue-60v'
+  - token: primary-vivid
+    default: 'blue-warm-60v'
+  - token: primary-dark
+    default: 'blue-warm-70v'
+  - token: primary-darker
+    default: 'blue-warm-80v'
+  - token: secondary-lighter
+    default: 'red-10'
+  - token: secondary-light
+    default: 'red-30'
+  - token: secondary
+    default: 'red-50'
+  - token: secondary-vivid
+    default: 'red-50v'
+  - token: secondary-dark
+    default: 'red-60v'
+  - token: secondary-darker
+    default: 'red-70v'
+  - token: accent-cool-lighter
+    default: 'cyan-5'
+  - token: accent-cool-light
+    default: 'cyan-20'
+  - token: accent-cool
+    default: 'cyan-30v'
+  - token: accent-cool-dark
+    default: 'cyan-40v'
+  - token: accent-cool-darker
+    default: 'blue-60'
+  - token: accent-warm-lighter
+    default: 'orange-10'
+  - token: accent-warm-light
+    default: 'orange-20v'
+  - token: accent-warm
+    default: 'orange-30v'
+  - token: accent-warm-dark
+    value: '#c05600'
+    default: 'orange-50v'
+  - token: accent-warm-darker
+    default: 'orange-60'
+
+system:
+  red:
+    - token: red-5
+      value: '#f9eeee'
+    - token: red-10
+      value: '#f8e1de'
+    - token: red-20
+      value: '#f7bbb1'
+    - token: red-30
+      value: '#f2938c'
+    - token: red-40
+      value: '#e9695f'
+    - token: red-50
+      value: '#d83933'
+    - token: red-60
+      value: '#a23737'
+    - token: red-70
+      value: '#6f3331'
+    - token: red-80
+      value: '#3e2927'
+    - token: red-90
+      value: '#1b1616'
+  red-vivid:
+    - token: red-5v
+      value: false
+    - token: red-10v
+      value: '#fde0db'
+    - token: red-20v
+      value: '#fdb8ae'
+    - token: red-30v
+      value: '#ff8d7b'
+    - token: red-40v
+      value: '#fb5a47'
+    - token: red-50v
+      value: '#e52207'
+    - token: red-60v
+      value: '#b51d09'
+    - token: red-70v
+      value: '#8b1303'
+    - token: red-80v
+      value: '#5c1111'
+    - token: red-90v
+      value: false
+  red-warm:
+    - token: red-warm-5
+      value: '#f6efea'
+    - token: red-warm-10
+      value: '#f4e3db'
+    - token: red-warm-20
+      value: '#ecc0a7'
+    - token: red-warm-30
+      value: '#dca081'
+    - token: red-warm-40
+      value: '#d27a56'
+    - token: red-warm-50
+      value: '#c3512c'
+    - token: red-warm-60
+      value: '#805039'
+    - token: red-warm-70
+      value: '#524236'
+    - token: red-warm-80
+      value: '#332d29'
+    - token: red-warm-90
+      value: '#1f1c18'
+  red-warm-vivid:
+    - token: red-warm-5v
+      value: false
+    - token: red-warm-10v
+      value: false
+    - token: red-warm-20v
+      value: '#f6bd9c'
+    - token: red-warm-30v
+      value: '#f39268'
+    - token: red-warm-40v
+      value: '#ee601d'
+    - token: red-warm-50v
+      value: '#d63e04'
+    - token: red-warm-60v
+      value: false
+    - token: red-warm-70v
+      value: false
+    - token: red-warm-80v
+      value: false
+    - token: red-warm-90v
+      value: false
+  orange-warm:
+    - token: orange-warm-5
+      value: '#faeee5'
+    - token: orange-warm-10
+      value: '#fbe0d0'
+    - token: orange-warm-20
+      value: '#f7bca2'
+    - token: orange-warm-30
+      value: '#f3966d'
+    - token: orange-warm-40
+      value: '#e17141'
+    - token: orange-warm-50
+      value: '#bd5727'
+    - token: orange-warm-60
+      value: '#914734'
+    - token: orange-warm-70
+      value: '#633a32'
+    - token: orange-warm-80
+      value: '#3d2925'
+    - token: orange-warm-90
+      value: '#1c1615'
+  orange-warm-vivid:
+    - token: orange-warm-5v
+      value: false
+    - token: orange-warm-10v
+      value: false
+    - token: orange-warm-20v
+      value: '#fbbaa7'
+    - token: orange-warm-30v
+      value: '#fc906d'
+    - token: orange-warm-40v
+      value: '#ff580a'
+    - token: orange-warm-50v
+      value: '#d24302'
+    - token: orange-warm-60v
+      value: false
+    - token: orange-warm-70v
+      value: false
+    - token: orange-warm-80v
+      value: false
+    - token: orange-warm-90v
+      value: false
+  orange:
+    - token: orange-5
+      value: '#fceee2'
+    - token: orange-10
+      value: '#fce2c5'
+    - token: orange-20
+      value: '#fabd87'
+    - token: orange-30
+      value: '#eb9b59'
+    - token: orange-40
+      value: '#db7725'
+    - token: orange-50
+      value: '#a36830'
+    - token: orange-60
+      value: '#73563e'
+    - token: orange-70
+      value: '#524236'
+    - token: orange-80
+      value: '#332d27'
+    - token: orange-90
+      value: '#1b1614'
+  orange-vivid:
+    - token: orange-5v
+      value: '#ffedda'
+    - token: orange-10v
+      value: false
+    - token: orange-20v
+      value: '#ffbc78'
+    - token: orange-30v
+      value: '#fa9441'
+    - token: orange-40v
+      value: '#e66f0e'
+    - token: orange-50v
+      value: '#c05600'
+    - token: orange-60v
+      value: false
+    - token: orange-70v
+      value: false
+    - token: orange-80v
+      value: false
+    - token: orange-90v
+      value: false
+  gold:
+    - token: gold-5
+      value: '#f5f0e6'
+    - token: gold-10
+      value: '#f1e5cd'
+    - token: gold-20
+      value: '#dec69a'
+    - token: gold-30
+      value: '#c7a97b'
+    - token: gold-40
+      value: '#ad8b65'
+    - token: gold-50
+      value: '#8e704f'
+    - token: gold-60
+      value: '#6b5947'
+    - token: gold-70
+      value: '#4d4438'
+    - token: gold-80
+      value: '#322d26'
+    - token: gold-90
+      value: '#191714'
+  gold-vivid:
+    - token: gold-5v
+      value: '#fef0c8'
+    - token: gold-10v
+      value: '#ffe3a3'
+    - token: gold-20v
+      value: '#fbc036'
+    - token: gold-30v
+      value: '#e5a000'
+    - token: gold-40v
+      value: '#c2850c'
+    - token: gold-50v
+      value: '#936f38'
+    - token: gold-60v
+      value: false
+    - token: gold-70v
+      value: false
+    - token: gold-80v
+      value: false
+    - token: gold-90v
+      value: false
+  yellow:
+    - token: yellow-5
+      value: '#faf3d1'
+    - token: yellow-10
+      value: '#f5e6af'
+    - token: yellow-20
+      value: '#e6c74c'
+    - token: yellow-30
+      value: '#c9ab48'
+    - token: yellow-40
+      value: '#a88f48'
+    - token: yellow-50
+      value: '#8a7237'
+    - token: yellow-60
+      value: '#6b5a39'
+    - token: yellow-70
+      value: '#504332'
+    - token: yellow-80
+      value: '#332d27'
+    - token: yellow-90
+      value: '#1a1614'
+  yellow-vivid:
+    - token: yellow-5v
+      value: false
+    - token: yellow-10v
+      value: '#fee685'
+    - token: yellow-20v
+      value: '#ffcb00'
+    - token: yellow-30v
+      value: false
+    - token: yellow-40v
+      value: false
+    - token: yellow-50v
+      value: false
+    - token: yellow-60v
+      value: false
+    - token: yellow-70v
+      value: false
+    - token: yellow-80v
+      value: false
+    - token: yellow-90v
+      value: false
+  green-warm:
+    - token: green-warm-5
+      value: '#f1f4d7'
+    - token: green-warm-10
+      value: '#e7eab7'
+    - token: green-warm-20
+      value: '#cbd17a'
+    - token: green-warm-30
+      value: '#a6b557'
+    - token: green-warm-40
+      value: '#8a984b'
+    - token: green-warm-50
+      value: '#6f7a41'
+    - token: green-warm-60
+      value: '#5a5f38'
+    - token: green-warm-70
+      value: '#45472f'
+    - token: green-warm-80
+      value: '#2d2f21'
+    - token: green-warm-90
+      value: '#171712'
+  green-warm-vivid:
+    - token: green-warm-5v
+      value: '#f1f6a5'
+    - token: green-warm-10v
+      value: '#e2f106'
+    - token: green-warm-20v
+      value: '#c5d30a'
+    - token: green-warm-30v
+      value: '#a3b72c'
+    - token: green-warm-40v
+      value: '#7e9c1d'
+    - token: green-warm-50v
+      value: '#6a7d00'
+    - token: green-warm-60v
+      value: false
+    - token: green-warm-70v
+      value: false
+    - token: green-warm-80v
+      value: false
+    - token: green-warm-90v
+      value: false
+  green:
+    - token: green-5
+      value: '#eaf4dd'
+    - token: green-10
+      value: '#dfeacd'
+    - token: green-20
+      value: '#b8d293'
+    - token: green-30
+      value: '#9bb672'
+    - token: green-40
+      value: '#7d9b4e'
+    - token: green-50
+      value: '#607f35'
+    - token: green-60
+      value: '#4c6424'
+    - token: green-70
+      value: '#3c4a29'
+    - token: green-80
+      value: '#293021'
+    - token: green-90
+      value: '#161814'
+  green-vivid:
+    - token: green-5v
+      value: '#ddf9c7'
+    - token: green-10v
+      value: '#c3ee90'
+    - token: green-20v
+      value: '#98d035'
+    - token: green-30v
+      value: '#7fb135'
+    - token: green-40v
+      value: '#719f2a'
+    - token: green-50v
+      value: '#538200'
+    - token: green-60v
+      value: false
+    - token: green-70v
+      value: false
+    - token: green-80v
+      value: false
+    - token: green-90v
+      value: false
+  green-cool:
+    - token: green-cool-5
+      value: '#e3f5e1'
+    - token: green-cool-10
+      value: '#caf0c7'
+    - token: green-cool-20
+      value: '#9cd899'
+    - token: green-cool-30
+      value: '#77bd75'
+    - token: green-cool-40
+      value: '#52a251'
+    - token: green-cool-50
+      value: '#3e8520'
+    - token: green-cool-60
+      value: '#466432'
+    - token: green-cool-70
+      value: '#364b29'
+    - token: green-cool-80
+      value: '#293024'
+    - token: green-cool-90
+      value: '#141814'
+  green-cool-vivid:
+    - token: green-cool-5v
+      value: '#dcf8da'
+    - token: green-cool-10v
+      value: '#a4ef9f'
+    - token: green-cool-20v
+      value: '#6dd765'
+    - token: green-cool-30v
+      value: '#2cc821'
+    - token: green-cool-40v
+      value: '#0ca900'
+    - token: green-cool-50v
+      value: '#178800'
+    - token: green-cool-60v
+      value: false
+    - token: green-cool-70v
+      value: false
+    - token: green-cool-80v
+      value: false
+    - token: green-cool-90v
+      value: false
+  mint:
+    - token: mint-5
+      value: '#c9fbeb'
+    - token: mint-10
+      value: '#97f9d8'
+    - token: mint-20
+      value: '#48e1af'
+    - token: mint-30
+      value: '#48c198'
+    - token: mint-40
+      value: '#34a37e'
+    - token: mint-50
+      value: '#1f8462'
+    - token: mint-60
+      value: '#286846'
+    - token: mint-70
+      value: '#204e34'
+    - token: mint-80
+      value: '#193324'
+    - token: mint-90
+      value: '#0d1a12'
+  mint-vivid:
+    - token: mint-5v
+      value: '#befde9'
+    - token: mint-10v
+      value: '#5dfdc8'
+    - token: mint-20v
+      value: '#0ceda6'
+    - token: mint-30v
+      value: '#04c585'
+    - token: mint-40v
+      value: false
+    - token: mint-50v
+      value: false
+    - token: mint-60v
+      value: '#146947'
+    - token: mint-70v
+      value: false
+    - token: mint-80v
+      value: false
+    - token: mint-90v
+      value: false
+  mint-cool:
+    - token: mint-cool-5
+      value: '#e0f7f6'
+    - token: mint-cool-10
+      value: '#c4eeeb'
+    - token: mint-cool-20
+      value: '#9bd4cf'
+    - token: mint-cool-30
+      value: '#6fbab3'
+    - token: mint-cool-40
+      value: '#4f9e99'
+    - token: mint-cool-50
+      value: '#21827f'
+    - token: mint-cool-60
+      value: '#376462'
+    - token: mint-cool-70
+      value: '#2a4b45'
+    - token: mint-cool-80
+      value: '#203131'
+    - token: mint-cool-90
+      value: '#111818'
+  mint-cool-vivid:
+    - token: mint-cool-5v
+      value: '#d5fbf3'
+    - token: mint-cool-10v
+      value: '#7efbe1'
+    - token: mint-cool-20v
+      value: '#29e1cb'
+    - token: mint-cool-30v
+      value: '#1dc2ae'
+    - token: mint-cool-40v
+      value: '#00a398'
+    - token: mint-cool-50v
+      value: false
+    - token: mint-cool-60v
+      value: false
+    - token: mint-cool-70v
+      value: false
+    - token: mint-cool-80v
+      value: false
+    - token: mint-cool-90v
+      value: false
+  cyan:
+    - token: cyan-5
+      value: '#e7f6f8'
+    - token: cyan-10
+      value: '#ccecf2'
+    - token: cyan-20
+      value: '#9ddfeb'
+    - token: cyan-30
+      value: '#6ecbdb'
+    - token: cyan-40
+      value: '#449dac'
+    - token: cyan-50
+      value: '#168092'
+    - token: cyan-60
+      value: '#2a646d'
+    - token: cyan-70
+      value: '#2c4a4e'
+    - token: cyan-80
+      value: '#203133'
+    - token: cyan-90
+      value: '#111819'
+  cyan-vivid:
+    - token: cyan-5v
+      value: false
+    - token: cyan-10v
+      value: '#a8f2ff'
+    - token: cyan-20v
+      value: '#52daf2'
+    - token: cyan-30v
+      value: '#00bde3'
+    - token: cyan-40v
+      value: '#009ec1'
+    - token: cyan-50v
+      value: false
+    - token: cyan-60v
+      value: false
+    - token: cyan-70v
+      value: false
+    - token: cyan-80v
+      value: false
+    - token: cyan-90v
+      value: false
+  blue:
+    - token: blue-5
+      value: '#eff6fb'
+    - token: blue-10
+      value: '#d9e8f6'
+    - token: blue-20
+      value: '#aacdec'
+    - token: blue-30
+      value: '#73b3e7'
+    - token: blue-40
+      value: '#4f97d1'
+    - token: blue-50
+      value: '#357ab2'
+    - token: blue-60
+      value: '#2c608a'
+    - token: blue-70
+      value: '#274863'
+    - token: blue-80
+      value: '#1f303e'
+    - token: blue-90
+      value: '#11181d'
+  blue-vivid:
+    - token: blue-5v
+      value: false
+    - token: blue-10v
+      value: false
+    - token: blue-20v
+      value: false
+    - token: blue-30v
+      value: '#58b4ff'
+    - token: blue-40v
+      value: '#0096f4'
+    - token: blue-50v
+      value: '#0076d6'
+    - token: blue-60v
+      value: '#005ea2'
+    - token: blue-70v
+      value: '#0b4778'
+    - token: blue-80v
+      value: '#112f4e'
+    - token: blue-90v
+      value: false
+  blue-warm:
+    - token: blue-warm-5
+      value: '#ecf1f7'
+    - token: blue-warm-10
+      value: '#dfe7f5'
+    - token: blue-warm-20
+      value: '#bccae6'
+    - token: blue-warm-30
+      value: '#93afda'
+    - token: blue-warm-40
+      value: '#6f92ca'
+    - token: blue-warm-50
+      value: '#3e76c2'
+    - token: blue-warm-60
+      value: '#345d96'
+    - token: blue-warm-70
+      value: '#2f4668'
+    - token: blue-warm-80
+      value: '#252f3e'
+    - token: blue-warm-90
+      value: '#13171f'
+  blue-warm-vivid:
+    - token: blue-warm-5v
+      value: false
+    - token: blue-warm-10v
+      value: false
+    - token: blue-warm-20v
+      value: '#b7caf0'
+    - token: blue-warm-30v
+      value: '#81aefc'
+    - token: blue-warm-40v
+      value: '#5994f6'
+    - token: blue-warm-50v
+      value: '#2672de'
+    - token: blue-warm-60v
+      value: '#0050d8'
+    - token: blue-warm-70v
+      value: '#1a4480'
+    - token: blue-warm-80v
+      value: '#162e51'
+    - token: blue-warm-90v
+      value: false
+  indigo-cool:
+    - token: indigo-cool-5
+      value: '#eef0f9'
+    - token: indigo-cool-10
+      value: '#e1e6f9'
+    - token: indigo-cool-20
+      value: '#bbc8f5'
+    - token: indigo-cool-30
+      value: '#96abee'
+    - token: indigo-cool-40
+      value: '#6b8ee8'
+    - token: indigo-cool-50
+      value: '#496fd8'
+    - token: indigo-cool-60
+      value: '#3f57a6'
+    - token: indigo-cool-70
+      value: '#374274'
+    - token: indigo-cool-80
+      value: '#292d42'
+    - token: indigo-cool-90
+      value: '#151622'
+  indigo-cool-vivid:
+    - token: indigo-cool-5v
+      value: false
+    - token: indigo-cool-10v
+      value: false
+    - token: indigo-cool-20v
+      value: false
+    - token: indigo-cool-30v
+      value: false
+    - token: indigo-cool-40v
+      value: '#628ef4'
+    - token: indigo-cool-50v
+      value: false
+    - token: indigo-cool-60v
+      value: '#4150f2'
+    - token: indigo-cool-70v
+      value: false
+    - token: indigo-cool-80v
+      value: false
+    - token: indigo-cool-90v
+      value: false
+  indigo:
+    - token: indigo-5
+      value: '#efeff8'
+    - token: indigo-10
+      value: '#e5e4fa'
+    - token: indigo-20
+      value: '#c5c5f3'
+    - token: indigo-30
+      value: '#a5a8eb'
+    - token: indigo-40
+      value: '#8889db'
+    - token: indigo-50
+      value: '#676cc8'
+    - token: indigo-60
+      value: '#4d52af'
+    - token: indigo-70
+      value: '#3d4076'
+    - token: indigo-80
+      value: '#2b2c40'
+    - token: indigo-90
+      value: '#16171f'
+  indigo-vivid:
+    - token: indigo-5v
+      value: false
+    - token: indigo-10v
+      value: false
+    - token: indigo-20v
+      value: '#c4c6f2'
+    - token: indigo-30v
+      value: '#a5a8e8'
+    - token: indigo-40v
+      value: false
+    - token: indigo-50v
+      value: '#656bd7'
+    - token: indigo-60v
+      value: '#4d52b0'
+    - token: indigo-70v
+      value: false
+    - token: indigo-80v
+      value: false
+    - token: indigo-90v
+      value: false
+  indigo-warm:
+    - token: indigo-warm-5
+      value: '#f1eff7'
+    - token: indigo-warm-10
+      value: '#e7e3fa'
+    - token: indigo-warm-20
+      value: '#cbc4f2'
+    - token: indigo-warm-30
+      value: '#afa5e8'
+    - token: indigo-warm-40
+      value: '#9287d8'
+    - token: indigo-warm-50
+      value: '#7665d1'
+    - token: indigo-warm-60
+      value: '#5e519e'
+    - token: indigo-warm-70
+      value: '#453c7b'
+    - token: indigo-warm-80
+      value: '#2e2c40'
+    - token: indigo-warm-90
+      value: '#18161d'
+  indigo-warm-vivid:
+    - token: indigo-warm-5v
+      value: false
+    - token: indigo-warm-10v
+      value: false
+    - token: indigo-warm-20v
+      value: false
+    - token: indigo-warm-30v
+      value: '#b69fff'
+    - token: indigo-warm-40v
+      value: '#967efb'
+    - token: indigo-warm-50v
+      value: '#745fe9'
+    - token: indigo-warm-60v
+      value: '#5942d2'
+    - token: indigo-warm-70v
+      value: false
+    - token: indigo-warm-80v
+      value: false
+    - token: indigo-warm-90v
+      value: false
+  violet:
+    - token: violet-5
+      value: '#f4f1f9'
+    - token: violet-10
+      value: '#ebe3f9'
+    - token: violet-20
+      value: '#d0c3e9'
+    - token: violet-30
+      value: '#b8a2e3'
+    - token: violet-40
+      value: '#9d84d2'
+    - token: violet-50
+      value: '#8168b3'
+    - token: violet-60
+      value: '#665190'
+    - token: violet-70
+      value: '#4c3d69'
+    - token: violet-80
+      value: '#312b3f'
+    - token: violet-90
+      value: '#18161d'
+  violet-vivid:
+    - token: violet-5v
+      value: false
+    - token: violet-10v
+      value: false
+    - token: violet-20v
+      value: false
+    - token: violet-30v
+      value: '#c39deb'
+    - token: violet-40v
+      value: '#ad79e9'
+    - token: violet-50v
+      value: '#9355dc'
+    - token: violet-60v
+      value: '#783cb9'
+    - token: violet-70v
+      value: '#562b97'
+    - token: violet-80v
+      value: false
+    - token: violet-90v
+      value: false
+  violet-warm:
+    - token: violet-warm-5
+      value: '#f8f0f9'
+    - token: violet-warm-10
+      value: '#f6dff8'
+    - token: violet-warm-20
+      value: '#e2bee4'
+    - token: violet-warm-30
+      value: '#d29ad8'
+    - token: violet-warm-40
+      value: '#bf77c8'
+    - token: violet-warm-50
+      value: '#b04abd'
+    - token: violet-warm-60
+      value: '#864381'
+    - token: violet-warm-70
+      value: '#5c395a'
+    - token: violet-warm-80
+      value: '#382936'
+    - token: violet-warm-90
+      value: '#1b151b'
+  violet-warm-vivid:
+    - token: violet-warm-5v
+      value: '#fbebfd'
+    - token: violet-warm-10v
+      value: '#fbdcff'
+    - token: violet-warm-20v
+      value: '#f4b2ff'
+    - token: violet-warm-30v
+      value: '#ee83ff'
+    - token: violet-warm-40v
+      value: '#d85bef'
+    - token: violet-warm-50v
+      value: '#be32d0'
+    - token: violet-warm-60v
+      value: false
+    - token: violet-warm-70v
+      value: false
+    - token: violet-warm-80v
+      value: false
+    - token: violet-warm-90v
+      value: false
+  magenta:
+    - token: magenta-5
+      value: '#f9f0f2'
+    - token: magenta-10
+      value: '#f6e1e8'
+    - token: magenta-20
+      value: '#f0bbcc'
+    - token: magenta-30
+      value: '#e895b3'
+    - token: magenta-40
+      value: '#e0699f'
+    - token: magenta-50
+      value: '#c84281'
+    - token: magenta-60
+      value: '#8b4566'
+    - token: magenta-70
+      value: '#66364b'
+    - token: magenta-80
+      value: '#402731'
+    - token: magenta-90
+      value: '#1b1617'
+  magenta-vivid:
+    - token: magenta-5v
+      value: false
+    - token: magenta-10v
+      value: '#ffddea'
+    - token: magenta-20v
+      value: '#ffb4cf'
+    - token: magenta-30v
+      value: '#ff87b2'
+    - token: magenta-40v
+      value: '#fd4496'
+    - token: magenta-50v
+      value: '#d72d79'
+    - token: magenta-60v
+      value: '#ab2165'
+    - token: magenta-70v
+      value: false
+    - token: magenta-80v
+      value: false
+    - token: magenta-90v
+      value: false
+  gray-warm:
+    - token: gray-warm-1
+      value: '#fcfcfb'
+    - token: gray-warm-2
+      value: '#f9f9f7'
+    - token: gray-warm-3
+      value: '#f6f6f2'
+    - token: gray-warm-4
+      value: '#f5f5f0'
+    - token: gray-warm-5
+      value: '#f0f0ec'
+    - token: gray-warm-10
+      value: '#e6e6e2'
+    - token: gray-warm-20
+      value: '#cac9c0'
+    - token: gray-warm-30
+      value: '#afaea2'
+    - token: gray-warm-40
+      value: '#929285'
+    - token: gray-warm-50
+      value: '#76766a'
+    - token: gray-warm-60
+      value: '#5d5d52'
+    - token: gray-warm-70
+      value: '#454540'
+    - token: gray-warm-80
+      value: '#2e2e2a'
+    - token: gray-warm-90
+      value: '#171716'
+  gray:
+    - token: gray-1
+      value: '#fcfcfc'
+    - token: gray-2
+      value: '#f9f9f9'
+    - token: gray-3
+      value: '#f6f6f6'
+    - token: gray-4
+      value: '#f3f3f3'
+    - token: gray-5
+      value: '#f0f0f0'
+    - token: gray-10
+      value: '#e6e6e6'
+    - token: gray-20
+      value: '#c9c9c9'
+    - token: gray-30
+      value: '#adadad'
+    - token: gray-40
+      value: '#919191'
+    - token: gray-50
+      value: '#757575'
+    - token: gray-60
+      value: '#5c5c5c'
+    - token: gray-70
+      value: '#454545'
+    - token: gray-80
+      value: '#2e2e2e'
+    - token: gray-90
+      value: '#171717'
+  gray-cool:
+    - token: gray-cool-1
+      value: '#fbfcfd'
+    - token: gray-cool-2
+      value: '#f7f9fa'
+    - token: gray-cool-3
+      value: '#f5f6f7'
+    - token: gray-cool-4
+      value: '#f1f3f6'
+    - token: gray-cool-5
+      value: '#edeff0'
+    - token: gray-cool-10
+      value: '#dbdee1'
+    - token: gray-cool-20
+      value: '#c6cace'
+    - token: gray-cool-30
+      value: '#a9aeb1'
+    - token: gray-cool-40
+      value: '#8d9297'
+    - token: gray-cool-50
+      value: '#71767a'
+    - token: gray-cool-60
+      value: '#585c62'
+    - token: gray-cool-70
+      value: '#424549'
+    - token: gray-cool-80
+      value: '#2d2e2f'
+    - token: gray-cool-90
+      value: '#1c1d1f'

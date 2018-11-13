@@ -16,151 +16,199 @@ subnav:
   href: '#using-font-weight-tokens'
 ---
 
+{% assign tokens = site.data.tokens.typesetting.weight %}
+
 ## Theme tokens
 Font weight theme tokens use common names. Most projects will use only 2-4 of these tokens, with the majority set to `false`.
 
-<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px font-mono-3">
-  <div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px text-bold">
-    <div class="grid-col-2 text-700 font-sans-1">Token</div>
-    <div class="grid-col-4 text-700 font-sans-1">Example</div>
-    <div class="grid-col-2 text-700 font-sans-1">Default</div>
-    <div class="grid-col-fill text-700 font-sans-1">Settings variable</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>'thin'</code></div>
-    <div class="grid-col-4 font-sans-8 text-100">Tallahassee</div>
-    <div class="grid-col-2">false</div>
-    <div class="grid-col-fill font-mono-3">$theme-font-weight-thin</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>'light'</code></div>
-    <div class="grid-col-4 font-sans-8 text-300">Tallahassee</div>
-    <div class="grid-col-2"><code>300</code></div>
-    <div class="grid-col-fill font-mono-3">$theme-font-weight-light</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 font-sans-3"><code>'normal'</code></div>
-    <div class="grid-col-4 text-400 font-sans-3 font-sans-8">Tallahassee</div>
-    <div class="grid-col-2"><code>400</code></div>
-    <div class="grid-col-fill font-mono-3">$theme-font-weight-normal</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 font-sans-3"><code>'medium'</code></div>
-    <div class="grid-col-4 text-500 font-sans-3 font-sans-8">Tallahassee</div>
-    <div class="grid-col-2">false</div>
-    <div class="grid-col-fill font-mono-3">$theme-font-weight-medium</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 font-sans-3"><code>'semibold'</code></div>
-    <div class="grid-col-4 text-600 font-sans-3 font-sans-8">Tallahassee</div>
-    <div class="grid-col-2">false</div>
-    <div class="grid-col-fill font-mono-3">$theme-font-weight-semibold</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2 font-sans-3"><code>'bold'</code></div>
-    <div class="grid-col-4 text-700 font-sans-3 font-sans-8">Tallahassee</div>
-    <div class="grid-col-2"><code>700</code></div>
-    <div class="grid-col-fill font-mono-3">$theme-font-weight-bold</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2">
-    <div class="grid-col-2 font-sans-3"><code>'heavy'</code></div>
-    <div class="grid-col-4 text-900 font-sans-3 font-sans-8">Tallahassee</div>
-    <div class="grid-col-2">false</div>
-    <div class="grid-col-fill font-mono-3">$theme-font-weight-heavy</div>
-  </div>
+Customize [theme](#theme-tokens){:.token} font weight tokens in your project's theme settings with available [system](#system-tokens){:.token} font weight tokens. All typography-related settings are in `_uswds-theme-typography.scss`.
+
+<div class="site-table-wrapper overflow-hidden">
+  <table class="usa-table-borderless site-table-responsive width-full">
+    <thead>
+      <tr>
+        <th scope="col">Token</th>
+        <th scope="col">Default</th>
+        <th scope="col">Example</th>
+        <th scope="col">Settings variable</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      {% for item in tokens.theme %}
+        {% assign is_number = false %}
+        {% assign this_token = item.token %}
+        {% assign divided = this_token | divided_by: 1%}
+        {% if divided == 0 %}
+        {% elsif this_token contains 'xs' %}
+        {% elsif this_token contains 'xl' %}
+        {% elsif this_token == 0 %}
+          {% assign is_number = true %}
+        {% else %}
+          {% assign is_number = true %}
+        {% endif %}
+        <tr>
+          <td scope="row" data-title="Theme token">
+            <span>
+              {% if is_number %}
+                <code class="text-no-wrap">{{ item.token }}</code>
+              {% else %}
+                <code class="text-no-wrap">'{{ item.token }}'</code>
+              {% endif %}
+            </span>
+          </td>
+          <td data-title="Default">
+            <span>
+              {% if item.default == false %}
+                false
+              {% else %}
+                {% assign default = tokens.system
+                  | where: 'token', item.default %}
+                {{ default[0].value }}
+              {% endif %}
+            </span>
+          </td>
+          <td data-title="Example" class="overflow-hidden">
+            {% if item.default %}
+              <span class="font-sans-8 text-{{ item.token }}">
+                Tallahassee
+              </span>
+            {% endif %}
+          </td>
+          <td data-title="Settings var">
+            <span>
+              $theme-font-weight-{{ item.token }}
+            </span>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 </div>
 
 ## System tokens
 Font weight system tokens use numbers from `100`-`900` in increments of 100, with `100` as the lightest and `900` the heaviest, the same numerical system of grades used by most common typefaces.
 
-<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px font-mono-3">
-  <div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px text-bold">
-    <div class="grid-col-2 text-700 font-sans-1">Token</div>
-    <div class="grid-col-fill text-700 font-sans-1">Example</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>100</code></div>
-    <div class="grid-col-fill font-sans-8 text-100">Tallahassee</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>200</code></div>
-    <div class="grid-col-fill font-sans-8 text-200">Tallahassee</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>300</code></div>
-    <div class="grid-col-fill font-sans-8 text-300">Tallahassee</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>400</code></div>
-    <div class="grid-col-fill font-sans-8 text-400">Tallahassee</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>500</code></div>
-    <div class="grid-col-fill font-sans-8 text-500">Tallahassee</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>600</code></div>
-    <div class="grid-col-fill font-sans-8 text-600">Tallahassee</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>700</code></div>
-    <div class="grid-col-fill font-sans-8 text-700">Tallahassee</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
-    <div class="grid-col-2"><code>800</code></div>
-    <div class="grid-col-fill font-sans-8 text-800">Tallahassee</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-2">
-    <div class="grid-col-2"><code>900</code></div>
-    <div class="grid-col-fill font-sans-8 text-900">Tallahassee</div>
-  </div>
+<div class="site-table-wrapper overflow-hidden maxw-tablet">
+  <table class="usa-table-borderless site-table-responsive width-full">
+    <thead>
+      <tr>
+        <th scope="col">Token</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      {% for item in tokens.system %}
+        {% assign is_number = false %}
+        {% assign this_token = item.token %}
+        {% assign divided = this_token | divided_by: 1%}
+        {% if divided == 0 %}
+        {% elsif this_token contains 'xs' %}
+        {% elsif this_token contains 'xl' %}
+        {% elsif this_token == 0 %}
+          {% assign is_number = true %}
+        {% else %}
+          {% assign is_number = true %}
+        {% endif %}
+        <tr>
+          <td scope="row" data-title="Theme token">
+            <span>
+              {% if is_number %}
+                <code class="text-no-wrap">{{ item.token }}</code>
+              {% else %}
+                <code class="text-no-wrap">'{{ item.token }}'</code>
+              {% endif %}
+            </span>
+          </td>
+          <td data-title="Example" class="overflow-hidden">
+            <span class="font-sans-8 text-{{ item.token }}">
+              Tallahassee
+            </span>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 </div>
-
-## Customizing tokens
-Customize [theme](#theme-tokens){:.token} font weight tokens in your project's theme settings with available [system](#system-tokens){:.token} font weight tokens. All typography-related settings are in `_uswds-theme-typography.scss`.
-
-{:.margin-bottom-4}
-```sass
-$theme-font-weight-thin:          false;
-$theme-font-weight-light:         300;
-$theme-font-weight-normal:        400;
-$theme-font-weight-medium:        false;
-$theme-font-weight-semibold:      false;
-$theme-font-weight-bold:          700;
-$theme-font-weight-heavy:         false;
-```
 
 ## Using weight tokens
 Your context and coding style determine how you access USWDS font weight tokens in code.
 
-<div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
-  <div class="grid-row grid-gap flex-align-center margin-bottom-1 padding-bottom-1 border-bottom-2px text-bold">
-    <div class="grid-col-2 text-700 font-sans-1">Context</div>
-    <div class="grid-col-5 text-700 font-sans-1">Usage</div>
-    <div class="grid-col-5 text-700 font-sans-1">Example</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">function
-    </div>
-    <div class="grid-col-5">font-weight: weight(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-weight/" class="token">weight</a>)</div>
-    <div class="grid-col-5">font-weight: weight(<code>'bold'</code>);</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">
-      mixin
-    </div>
-    <div class="grid-col-5">@include u-text(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-weight/" class="token">weight</a>)</div>
-    <div class="grid-col-5">@include u-text(<code>'light'</code>)</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">setting</div>
-    <div class="grid-col-5">$theme-variable: <a href="{{ site.baseurl }}/style-tokens/typesetting/font-weight/" class="token">weight</a></div>
-    <div class="grid-col-5">$theme-heading-font-weight: <code>'heavy'</code>;</div>
-  </div>
-  <div class="grid-row grid-gap flex-align-center padding-bottom-1 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">utility
-    </div>
-    <div class="grid-col-5">.text-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-weight/" class="token">weight</a></div>
-    <div class="grid-col-5">.text-<code>light</code>;</div>
-  </div>
+<div class="site-table-wrapper">
+  <table class="usa-table-borderless site-table-responsive">
+    <thead>
+      <tr>
+        <th scope="col">Context</th>
+        <th scope="col">Usage</th>
+        <th scope="col">Example</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="text-bold font-sans-3">function</span>
+        </td>
+        <td data-title="Usage">
+          <span class="line-height-sans-6">
+            weight(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-weight/" class="token">weight</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span class="line-height-sans-6">
+            font-weight: weight(<code>'bold'</code>)
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">mixin</span><br/>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            u-text(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-weight/" class="token">weight</a>)
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-text(<code>'light'</code>)
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span>
+            <span class="text-bold font-sans-3">setting</span><br/>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            <a href="{{ site.baseurl }}/style-tokens/typesetting/font-weight/" class="token">weight</a>
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            $theme-heading-font-weight: <code>'heavy'</code>
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Context">
+          <span class="font-sans-3">
+            <span class="text-bold">utility</span><br/>
+          </span>
+        </td>
+        <td data-title="Usage">
+          <span>
+            .text-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-weight/" class="token">weight</a>
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            .text-<code>light</code>
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>

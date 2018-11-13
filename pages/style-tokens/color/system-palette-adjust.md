@@ -98,7 +98,7 @@ families:
   - gray_warm
 ---
 
-{% assign system_colors = site.data.uswds_tokens.colors.system %}
+{% assign system_colors = site.data.tokens.color.system %}
 
 <div class="padding-top-3 text-normal maxw-tablet-lg">
   {% for family in page.families %}

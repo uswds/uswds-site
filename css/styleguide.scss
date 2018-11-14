@@ -183,6 +183,34 @@ body {
   }
 }
 
+.site-banner-news {
+  @include padding(16px);
+  align-items: center;
+  background-color: $color-visited;
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+    margin: 0;
+    text-align: center;
+  }
+
+  strong,
+  span {
+    white-space: nowrap;
+  }
+
+  .usa-button {
+    @include margin(null 16px);
+  }
+
+  @include media($medium-screen) {
+    flex-direction: row;
+  }
+}
+
 .site-header-navbar {
   border-bottom: none;
 

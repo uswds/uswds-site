@@ -184,20 +184,30 @@ body {
 }
 
 .site-banner-news {
+  @include padding(16px);
   align-items: center;
   background-color: $color-visited;
   color: $color-white;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  @include padding(null 40px 10px 40px);
+
+  p {
+    margin: 0;
+    text-align: center;
+  }
+
+  strong,
+  span {
+    white-space: nowrap;
+  }
+
+  .usa-button {
+    @include margin(null 16px);
+  }
 
   @include media($medium-screen) {
     flex-direction: row;
-    padding-top: 10px;
-    button {
-      margin-left: 1em;
-    }
   }
 }
 

@@ -16,7 +16,7 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
       aria-expanded="true" aria-controls="sidenav-docs">
     Documentation
   </button>
-  <div id="sidenav-docs" aria-hidden="false" class="usa-accordion-content">
+  <div id="sidenav-docs" aria-hidden="false" class="usa-accordion-content usa-prose">
     <h4 class="usa-heading">Implementation</h4>
     <ul class="usa-content-list">
       <li>The width of the current menu item’s highlight border is set with the <code>$sidenav-current-border-width</code> variable.</li>

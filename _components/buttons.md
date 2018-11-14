@@ -17,7 +17,7 @@ component_url: 'https://components.designsystem.digital.gov/components/detail/bu
       aria-expanded="true" aria-controls="accordion-bordered-docs">
     Documentation
   </button>
-  <div id="accordion-bordered-docs" aria-hidden="false" class="usa-accordion-content">
+  <div id="accordion-bordered-docs" aria-hidden="false" class="usa-accordion-content usa-prose">
     <h4 class="usa-heading">Implementation</h4>
     <p>The examples demonstrate how to use button elements. To use a button style on a link, add the <code>usa-button</code> class to your link.</p>
     <p>To use a different style button on your link, add the special button class in addition to <code>usa-button</code>:</p>

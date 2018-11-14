@@ -23,7 +23,7 @@ subnav:
       aria-expanded="true" aria-controls="footer-docs">
     Documentation
   </button>
-  <div id="footer-docs" aria-hidden="false" class="usa-accordion-content">
+  <div id="footer-docs" aria-hidden="false" class="usa-accordion-content usa-prose">
     <h4 class="usa-heading">Implementation</h4>
     <p>The social media icons used in the footer are from Font Awesome. To use additional icons, visit <a href="https://fontawesome.com/">Font Awesome</a>.</p>
     <h4 class="usa-heading">Accessibility</h4>

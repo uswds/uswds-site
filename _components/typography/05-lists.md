@@ -16,7 +16,7 @@ order: 05
       aria-expanded="true" aria-controls="list-docs">
     Documentation
   </button>
-  <div id="list-docs" class="usa-accordion-content">
+  <div id="list-docs" class="usa-accordion-content usa-prose">
     <h4 class="usa-heading">Implementation</h4>
     <p>Lists are styled by default. For unstyled lists, use either the <code>usa-unstyled-list</code> class or unstyled list mixin: <code>@include unstyled-list;</code>. Both are located in <code>src/stylesheets/core/<wbr>_utilities.scss</code>.</p>
     <h4 class="usa-heading">Usability</h4>

@@ -12,7 +12,7 @@ lead: Text inputs allow people to enter any combination of letters, numbers, or 
       aria-expanded="true" aria-controls="text-input-docs">
     Documentation
   </button>
-  <div id="text-input-docs" aria-hidden="false" class="usa-accordion-content">
+  <div id="text-input-docs" aria-hidden="false" class="usa-accordion-content usa-prose">
     <h4 class="usa-heading">Accessibility</h4>
     <p>If you customize the text inputs, ensure they continue to meet the the <a href="{{ site.baseurl }}/form-controls/"> accessibility requirements that apply to all form controls.</a></p>
     <ul class="usa-content-list">

@@ -17,7 +17,7 @@ order: 04
       aria-expanded="true" aria-controls="link-docs">
     Documentation
   </button>
-  <div id="link-docs" class="usa-accordion-content">
+  <div id="link-docs" class="usa-accordion-content usa-prose">
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>Users should be able to tab to navigate between links.</li>

@@ -13,7 +13,7 @@ lead: A dropdown allows users to select one option from a list.
       aria-expanded="true" aria-controls="dropdown-docs">
     Documentation
   </button>
-  <div id="dropdown-docs" aria-hidden="false" class="usa-accordion-content">
+  <div id="dropdown-docs" aria-hidden="false" class="usa-accordion-content usa-prose">
     <h4 class="usa-heading">Accessibility</h4>
     <p>If you customize the dropdown, ensure it continues to meet the the <a href="{{ site.baseurl }}/form-controls/"> accessibility requirements that apply to all form controls.</a></p>
     <ul class="usa-content-list">

@@ -14,7 +14,7 @@ order: 02
       aria-expanded="true" aria-controls="address-form-docs">
     Documentation
   </button>
-  <div id="address-form-docs" aria-hidden="false" class="usa-accordion-content">
+  <div id="address-form-docs" aria-hidden="false" class="usa-accordion-content usa-prose">
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>As you customize this form template, make sure it continues to follow the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines for form templates</a> and the <a href="{{ site.baseurl }}/form-controls/">accessibility guidelines for form controls</a>.</li>

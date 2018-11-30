@@ -16,7 +16,7 @@ lead: Labels draw attention to new or important content.
       aria-expanded="true" aria-controls="label-docs">
     Documentation
   </button>
-  <div id="label-docs" aria-hidden="false" class="usa-accordion-content">
+  <div id="label-docs" aria-hidden="false" class="usa-accordion-content usa-prose">
     <h4 class="usa-heading">Accessibility</h4>
     <p>When labels are used to call out new content that is dynamically loaded onto a page, be sure to use ARIA live regions to alert screen readers of the change.</p>
 

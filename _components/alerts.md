@@ -16,7 +16,7 @@ lead: Alerts keep users informed of important and sometimes time-sensitive chang
       aria-expanded="true" aria-controls="alert-docs">
     Documentation
   </button>
-  <div id="alert-docs" aria-hidden="false" class="usa-accordion-content">
+  <div id="alert-docs" aria-hidden="false" class="usa-accordion-content usa-prose">
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>Use the ARIA <code>role=<wbr>"alert"</code> to inform assistive technologies of a time-sensitive and important message that is not interactive. If the message is interactive, use the <code>alertdialog</code> role instead.</li>

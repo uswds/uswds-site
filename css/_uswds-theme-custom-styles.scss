@@ -2047,10 +2047,6 @@ h6 + div:not(.usa-accordion-content) {
   padding-right: units(0.5);
 }
 
-* + .usa-accordion {
-  margin-top: units(2);
-}
-
 .default-container {
   @include clearfix;
 }

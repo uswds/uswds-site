@@ -104,22 +104,14 @@ utilities:
   {% include utilities/utilities-section-title-bar.html %}
 
   <section class="utility" id="utility-border">
-    <section class="utility-title-bar">
-      <div class="grid-row flex-align-center">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Border</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">border, border-bottom, border-left, border-right, border-top</span></p>
-        </div>
 
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-active"><a href="#state-variants">hover</a></li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include
+      utilities/utility-title-bar.html
+      title="Border"
+      property="border, border-bottom, border-left, border-right, border-top"
+      responsive=true
+      hover=true
+    %}
 
     <section class="utility-examples">
       <p class="utility-note"><strong>Note: </strong> The <code>border</code> utilities apply a solid border of specified width. If no width is specified, the utilities apply a solid <code>1px</code> border.</p>

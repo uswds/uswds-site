@@ -36,7 +36,7 @@ $theme-grid-gap-default: 'md';
 
 .usa-grid-row {
   @include grid-row;
-  @include u-flex('column', 'align-stretch')
+  @include u-flex('column', 'align-stretch');
   @include at-media($theme-site-cols-split) {
     @include grid-gap($theme-grid-gap-default);
     @include u-flex('row')
@@ -1892,7 +1892,7 @@ li {
     @include u-text('light');
   }
 
-  .usa-grid-col & {
+  &.usa-grid-col {
     @include grid-cols(null, 'auto')
   }
 }
@@ -1900,9 +1900,10 @@ li {
 .utilities-section-helper {
   @include u-font('sans', 1);
   @include u-margin-y(0);
+  @include u-maxw('none');
   @include u-text(normal, 'gray-60');
 
-  .usa-grid-col & {
+  &.usa-grid-col {
     @include grid-cols(null, 'fill')
   }
 

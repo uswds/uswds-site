@@ -15,10 +15,7 @@ lead: Utility dek
 </div>
 
 <section class="utilities-section">
-  <div class="grid-row utilities-section-title-bar">
-    <h2 class="grid-col-auto utilities-section-title">Examples and usage</h2>
-    <p class="grid-col-fill utilities-section-helper">Utilities, values, and variants may be activated and deactivated in <a href="#advanced-settings" class="text-ink text-no-wrap">advanced settings</a>.</p>
-  </div>
+  {% include utilities/utilities-section-title-bar.html %}
 
   <section class="utility" id="utility-display">
     <section class="utility-title-bar">

@@ -8,7 +8,7 @@ order: 01
 <h4 class="usa-heading-alt">Source Sans Pro</h4>
 
 <div class="grid-row grid-gap">
-  <div class="tablet:grid-col">
+  <div class="tablet:grid-col usa-prose">
     <p>Source Sans Pro is an open-source sans serif typeface created for legibility in UI design. With a variety of weights that read easily at all sizes, Source Sans Pro provides clear headers as well as highly-readable body text.</p>
     <p>Inspired by twentieth-century American gothic typeface design, its slender but open letters offer a clean and friendly simplicity. Advanced hinting allows Source Sans Pro to render well on Windows systems which run Cleartype, and across browsers and devices. Moreover, it supports a variety of languages and alphabets, including Western and European language, Vietnamese, pinyin Romanization of Chinese, and Navajo.</p>
   </div>

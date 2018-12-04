@@ -131,8 +131,8 @@ utilities:
       title="Font style"
     %}
     <section class="utility-examples">
-      <p class="utility-example-container-condensed text-italic">.text-italic</p>
-      <p class="utility-example-container-condensed text-no-italic border-0">.text-no-italic</p>
+      <p class="utility-example-container text-italic">.text-italic</p>
+      <p class="utility-example-container text-no-italic border-0">.text-no-italic</p>
     </section>
   </section>
 
@@ -142,13 +142,13 @@ utilities:
       responsive=true
     %}
     <section class="utility-examples">
-      <p class="utility-example-container-condensed text-thin">.text-thin <span class="text-base-dark">(<b>Note:</b> not included in default set)</span></p>
-      <p class="utility-example-container-condensed text-light">.text-light</p>
-      <p class="utility-example-container-condensed text-normal">.text-normal</p>
-      <p class="utility-example-container-condensed text-medium">.text-medium <span class="text-base-dark">(<b>Note:</b>  not included in default set)</span></p>
-      <p class="utility-example-container-condensed text-semibold">.text-semibold <span class="text-base-dark">(<b>Note:</b>  not included in default set)</span></p>
-      <p class="utility-example-container-condensed text-bold">.text-bold</p>
-      <p class="utility-example-container-condensed text-heavy border-0">.text-heavy <span class="text-base-dark">(<b>Note:</b>  not included in default set)</span></p>
+      <p class="utility-example-container text-thin">.text-thin <span class="text-base-dark">(<b>Note:</b> not included in default set)</span></p>
+      <p class="utility-example-container text-light">.text-light</p>
+      <p class="utility-example-container text-normal">.text-normal</p>
+      <p class="utility-example-container text-medium">.text-medium <span class="text-base-dark">(<b>Note:</b>  not included in default set)</span></p>
+      <p class="utility-example-container text-semibold">.text-semibold <span class="text-base-dark">(<b>Note:</b>  not included in default set)</span></p>
+      <p class="utility-example-container text-bold">.text-bold</p>
+      <p class="utility-example-container text-heavy border-0">.text-heavy <span class="text-base-dark">(<b>Note:</b>  not included in default set)</span></p>
     </section>
   </section>
 
@@ -158,31 +158,31 @@ utilities:
       property="letter-spacing"
     %}
     <section class="utility-examples">
-      <p class="utility-example-container-condensed grid-row">
+      <p class="utility-example-container grid-row">
         <span class="grid-col-fill text-ls-neg-3">.text-ls-neg-3</span>
         <span class="grid-col-auto font-mono-xs text-light">-0.03em</span>
       </p>
-      <p class="utility-example-container-condensed grid-row">
+      <p class="utility-example-container grid-row">
         <span class="grid-col-fill text-ls-neg-2">.text-ls-neg-2</span>
         <span class="grid-col-auto font-mono-xs text-light">-0.02em</span>
       </p>
-      <p class="utility-example-container-condensed grid-row">
+      <p class="utility-example-container grid-row">
         <span class="grid-col-fill text-ls-neg-1">.text-ls-neg-1</span>
         <span class="grid-col-auto font-mono-xs text-light">-0.01em</span>
       </p>
-      <p class="utility-example-container-condensed grid-row">
+      <p class="utility-example-container grid-row">
         <span class="grid-col-fill text-ls-auto">.text-ls-auto</span>
         <span class="grid-col-auto font-mono-xs text-light">initial</span>
       </p>
-      <p class="utility-example-container-condensed grid-row">
+      <p class="utility-example-container grid-row">
         <span class="grid-col-fill text-ls-1">.text-ls-1</span>
         <span class="grid-col-auto font-mono-xs text-light">0.05em</span>
       </p>
-      <p class="utility-example-container-condensed grid-row">
+      <p class="utility-example-container grid-row">
         <span class="grid-col-fill text-ls-2">.text-ls-2</span>
         <span class="grid-col-auto font-mono-xs text-light">0.1em</span>
       </p>
-      <p class="utility-example-container-condensed grid-row">
+      <p class="utility-example-container grid-row">
         <span class="grid-col-fill text-ls-3">.text-ls-3</span>
         <span class="grid-col-auto font-mono-xs text-light">0.15em</span>
       </p>
@@ -195,14 +195,14 @@ utilities:
       property="font-feature-settings"
     %}
     <section class="utility-examples">
-      <div class="utility-example-container-condensed">
+      <div class="utility-example-container">
         <p class="font-sans-8 text-tabular margin-0">123,456,789</p>
         <p class="font-sans-8 text-tabular margin-0">825,489,012</p>
         <p class="font-sans-8 text-tabular margin-0">112,051,928</p>
         <p class="utility-class margin-top-2">.text-tabular</p>
         <p class="margin-bottom-05"><b>Note:</b> not included in default set</p>
       </div>
-      <div class="utility-example-container-condensed border-0">
+      <div class="utility-example-container border-0">
         <p class="font-sans-8 text-no-tabular margin-0">123,456,789</p>
         <p class="font-sans-8 text-no-tabular margin-0">825,489,012</p>
         <p class="font-sans-8 text-no-tabular margin-0">112,051,928</p>
@@ -217,10 +217,10 @@ utilities:
       hover=true
     %}
     <section class="utility-examples">
-      <p class="utility-example-container-condensed text-underline">.text-underline</p>
-      <p class="utility-example-container-condensed text-strike">.text-strike</p>
-      <p class="utility-example-container-condensed text-no-strike">.text-no-strike</p>
-      <p class="utility-example-container-condensed text-no-underline border-0">.text-no-underline</p>
+      <p class="utility-example-container text-underline">.text-underline</p>
+      <p class="utility-example-container text-strike">.text-strike</p>
+      <p class="utility-example-container text-no-strike">.text-no-strike</p>
+      <p class="utility-example-container text-no-underline border-0">.text-no-underline</p>
     </section>
   </section>
 
@@ -240,7 +240,7 @@ utilities:
           {% assign value = color.value %}
           {% assign token = false %}
         {% endif %}
-        <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify{% if forloop.last %} border-0{% endif %}">
+        <div class="utility-example-container grid-col-12 font-sans-xs display-flex flex-align-center flex-justify{% if forloop.last %} border-0{% endif %}">
           <span class="text-underline underline-{{ color.token }}">.underline-{{ color.token }}<span class="text-thin text-gray-50">.text-underline</span></span>
           <span class="flex-auto">
             {% if token %}
@@ -263,10 +263,10 @@ utilities:
       active=true
     %}
     <section class="utility-examples">
-      <p class="utility-example-container-condensed text-uppercase">.text-uppercase</p>
-      <p class="utility-example-container-condensed text-lowercase">.text-lowercase</p>
-      <p class="utility-example-container-condensed text-no-uppercase">.text-no-uppercase</p>
-      <p class="utility-example-container-condensed text-no-lowercase border-0">.text-no-lowercase</p>
+      <p class="utility-example-container text-uppercase">.text-uppercase</p>
+      <p class="utility-example-container text-lowercase">.text-lowercase</p>
+      <p class="utility-example-container text-no-uppercase">.text-no-uppercase</p>
+      <p class="utility-example-container text-no-lowercase border-0">.text-no-lowercase</p>
     </section>
   </section>
 
@@ -276,14 +276,14 @@ utilities:
       property="vertical-align"
     %}
     <section class="utility-examples">
-      <p class="utility-example-container-condensed">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-baseline"></span> <span class="text-baseline text-red">.text-baseline</span></p>
-      <p class="utility-example-container-condensed">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-bottom"></span> <span class="text-bottom text-red">.text-bottom</span></p>
-      <p class="utility-example-container-condensed">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-middle"></span> <span class="text-middle text-red">.text-middle</span></p>
-      <p class="utility-example-container-condensed">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-sub"></span> <span class="text-sub text-red">.text-sub</span></p>
-      <p class="utility-example-container-condensed">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-super"></span> <span class="text-super text-red">.text-super</span></p>
-      <p class="utility-example-container-condensed">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-tbottom"></span> <span class="text-tbottom text-red">.text-tbottom</span></p>
-      <p class="utility-example-container-condensed">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-ttop"></span> <span class="text-ttop text-red">.text-ttop</span></p>
-      <p class="utility-example-container-condensed border-0">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-top"></span> <span class="text-top text-red">.text-top</span></p>
+      <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-baseline"></span> <span class="text-baseline text-red">.text-baseline</span></p>
+      <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-bottom"></span> <span class="text-bottom text-red">.text-bottom</span></p>
+      <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-middle"></span> <span class="text-middle text-red">.text-middle</span></p>
+      <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-sub"></span> <span class="text-sub text-red">.text-sub</span></p>
+      <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-super"></span> <span class="text-super text-red">.text-super</span></p>
+      <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-tbottom"></span> <span class="text-tbottom text-red">.text-tbottom</span></p>
+      <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-ttop"></span> <span class="text-ttop text-red">.text-ttop</span></p>
+      <p class="utility-example-container border-0">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-top"></span> <span class="text-top text-red">.text-top</span></p>
     </section>
   </section>
 
@@ -293,11 +293,11 @@ utilities:
       property="white-space"
     %}
     <section class="utility-examples">
-      <p class="utility-example-container-condensed"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-pre"><span class="text-red">.text-pre</span> formatted line   with     multiple       spaces</span></span></p>
-      <p class="utility-example-container-condensed"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-pre-line"><span class="text-red">.text-pre-line</span> formatted line   with     multiple       spaces</span></span></p>
-      <p class="utility-example-container-condensed"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-pre-wrap"><span class="text-red">.text-pre-wrap</span> formatted line   with     multiple       spaces</span></span></p>
-      <p class="utility-example-container-condensed"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-wrap"><span class="text-red">.text-wrap</span> formatted line   with     multiple       spaces</span></span></p>
-      <p class="utility-example-container-condensed border-0"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-no-wrap"><span class="text-red">.text-no-wrap</span> formatted line   with     multiple       spaces</span></span></p>
+      <p class="utility-example-container"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-pre"><span class="text-red">.text-pre</span> formatted line   with     multiple       spaces</span></span></p>
+      <p class="utility-example-container"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-pre-line"><span class="text-red">.text-pre-line</span> formatted line   with     multiple       spaces</span></span></p>
+      <p class="utility-example-container"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-pre-wrap"><span class="text-red">.text-pre-wrap</span> formatted line   with     multiple       spaces</span></span></p>
+      <p class="utility-example-container"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-wrap"><span class="text-red">.text-wrap</span> formatted line   with     multiple       spaces</span></span></p>
+      <p class="utility-example-container border-0"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-no-wrap"><span class="text-red">.text-no-wrap</span> formatted line   with     multiple       spaces</span></span></p>
     </section><!-- examples -->
   </section><!-- utility -->
 </section><!-- utilities -->

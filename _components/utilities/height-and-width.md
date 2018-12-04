@@ -210,7 +210,7 @@ utilities:
     <section class="utility-examples">
       <div class="grid-row grid gap">
         {% for item in width_values %}
-          <div class="grid-col-12 utility-example-container-condensed grid-row flex-align-center {% if forloop.last %} border-0{% endif %}">
+          <div class="grid-col-12 utility-example-container grid-row flex-align-center {% if forloop.last %} border-0{% endif %}">
               <div class="grid-col-3 display-flex flex-column flex-align-start">
                 <span class="utility-class">.width-{{ item.token }}</span>
                 <span class="utility-value">{{ item.value }}</span>
@@ -231,7 +231,7 @@ utilities:
     %}
     <section class="utility-examples">
       {% for item in maxh_values %}
-        <p class="utility-example-container-condensed {% if forloop.last %}border-0{% endif %}">
+        <p class="utility-example-container {% if forloop.last %}border-0{% endif %}">
           <span class="utility-class">.maxh-{{ item.token }}</span>
           <span class="utility-value margin-left-2px">{{ item.value }}</span>
         </p>
@@ -246,7 +246,7 @@ utilities:
     %}
     <section class="utility-examples">
       {% for item in maxw_values %}
-        <p class="utility-example-container-condensed {% if forloop.last %}border-0{% endif %}">
+        <p class="utility-example-container {% if forloop.last %}border-0{% endif %}">
           <span class="utility-class">.maxw-{{ item.token }}</span>
           <span class="utility-value margin-left-2px">{{ item.value }}</span>
         </p>
@@ -261,7 +261,7 @@ utilities:
     %}
     <section class="utility-examples">
       {% for item in minh_values %}
-        <p class="utility-example-container-condensed {% if forloop.last %}border-0{% endif %}">
+        <p class="utility-example-container {% if forloop.last %}border-0{% endif %}">
           <span class="utility-class">.minh-{{ item.token }}</span>
           <span class="utility-value margin-left-2px">{{ item.value }}</span>
         </p>
@@ -276,7 +276,7 @@ utilities:
     %}
     <section class="utility-examples">
       {% for item in minw_values %}
-        <p class="utility-example-container-condensed {% if forloop.last %}border-0{% endif %}">
+        <p class="utility-example-container {% if forloop.last %}border-0{% endif %}">
           <span class="utility-class">.minw-{{ item.token }}</span>
           <span class="utility-value margin-left-2px">{{ item.value }}</span>
         </p>
@@ -291,31 +291,31 @@ utilities:
     %}
     <section class="utility-examples">
       <div class="grid-row grid-gap">
-        <div class="grid-col utility-example-container-condensed display-flex flex-column flex-justify">
+        <div class="grid-col utility-example-container display-flex flex-column flex-justify">
           <div class="width-full add-aspect-9x16 bg-secondary-light"></div>
           <div class="display-flex flex-column flex-align-start margin-top-2">
             <span class="utility-class">.add-aspect-9x16</span>
           </div>
         </div>
-        <div class="grid-col utility-example-container-condensed display-flex flex-column flex-justify">
+        <div class="grid-col utility-example-container display-flex flex-column flex-justify">
           <div class="width-full add-aspect-1x1 bg-secondary-light"></div>
           <div class="display-flex flex-column flex-align-start margin-top-2">
             <span class="utility-class">.add-aspect-1x1</span>
           </div>
         </div>
-        <div class="grid-col utility-example-container-condensed display-flex flex-column flex-justify">
+        <div class="grid-col utility-example-container display-flex flex-column flex-justify">
           <div class="width-full add-aspect-4x3 bg-secondary-light"></div>
           <div class="display-flex flex-column flex-align-start margin-top-2">
             <span class="utility-class">.add-aspect-4x3</span>
           </div>
         </div>
-        <div class="grid-col utility-example-container-condensed display-flex flex-column flex-justify">
+        <div class="grid-col utility-example-container display-flex flex-column flex-justify">
           <div class="width-full add-aspect-16x9 bg-secondary-light"></div>
           <div class="display-flex flex-column flex-align-start margin-top-2">
             <span class="utility-class">.add-aspect-16x9</span>
           </div>
         </div>
-        <div class="grid-col utility-example-container-condensed display-flex flex-column flex-justify">
+        <div class="grid-col utility-example-container display-flex flex-column flex-justify">
           <div class="width-full add-aspect-2x1 bg-secondary-light"></div>
           <div class="display-flex flex-column flex-align-start margin-top-2">
             <span class="utility-class">.add-aspect-2x1</span>

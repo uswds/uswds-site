@@ -75,7 +75,7 @@ utilities:
             | regexreplace: '.+?(\d+).*?$', '\1'
             | times: 1 %}
 
-          <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
+          <div class="utility-example-container grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
             <span class="radius-md padding-05 text-{{ color.token }}{% if grade < 50 %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
@@ -107,7 +107,7 @@ utilities:
                 | times: 1 %}
             {% endif %}
           {% endif %}
-          <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
+          <div class="utility-example-container grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
             <span class="radius-md padding-05 text-{{ color.token }}{% if grade < 50 %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
@@ -138,7 +138,7 @@ utilities:
                 | times: 1 %}
             {% endif %}
           {% endif %}
-          <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
+          <div class="utility-example-container grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
             <span class="radius-md padding-05 text-{{ color.token }}{% if grade < 50 %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
@@ -163,7 +163,7 @@ utilities:
         {% for color in theme_colors %}
           {% assign system = system-colors | where: 'token', color.default %}
           {% assign value = system[0].value %}
-          <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center measure-none">
+          <p class="utility-example-container grid-col-12 display-flex flex-align-center measure-none">
             <span class="flex-fill">
               <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
               <span class="utility-class">.bg-{{ color.token }}</span>
@@ -181,7 +181,7 @@ utilities:
       <h3 class="font-sans-4 margin-top-4 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Grayscale palette</h3>
       <div class="grid-row">
         {% for color in grayscale_colors %}
-          <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center measure-none">
+          <p class="utility-example-container grid-col-12 display-flex flex-align-center measure-none">
             <span class="flex-fill">
               <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
               <span class="utility-class">.bg-{{ color.token }}</span>
@@ -201,7 +201,7 @@ utilities:
         {% for color in basic_colors %}
           {% assign system = system-colors | where: 'token', color.default %}
           {% assign value = system[0].value %}
-          <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center measure-none">
+          <p class="utility-example-container grid-col-12 display-flex flex-align-center measure-none">
             <span class="flex-fill">
               <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
               <span class="utility-class">.bg-{{ color.token }}</span>

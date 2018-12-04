@@ -115,169 +115,229 @@ utilities:
     <section class="utility-examples">
       <p class="utility-note"><strong>Note: </strong> The <code>border</code> utilities apply a solid border of specified width. If no width is specified, the utilities apply a solid <code>1px</code> border.</p>
 
-      <div class="grid-row">
-        {% for modifier in border_modifiers %}
-          <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
-            <div class="border{{ modifier }} square-9 bg-base-lightest"></div>
-            <div class="display-flex flex-column flex-align-start margin-top-2">
+      {% for modifier in border_modifiers %}
+        <div class="utility-example-container">
+          <div class="usa-grid-row">
+            <div class="usa-grid-col utility-example-class">
               <span class="utility-class">.border{{ modifier }}</span>
             </div>
+            <div class="usa-grid-col utility-example-value">
+            </div>
+            <div class="usa-grid-col utility-example">
+              <div class="border{{ modifier }} square-8 bg-base-lightest"></div>
+            </div>
           </div>
-        {% endfor %}
-      </div>
+        </div>
+      {% endfor %}
 
       <h4 class="utility-examples-title margin-bottom-2">Border on all sides</h4>
-      <div class="grid-row">
-        {% for border in border_widths %}
-          <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
+      {% for border in border_widths %}
+        <div class="utility-example-container">
+          <div class="usa-grid-row">
             {% if border.token == 'noValue' %}
-              <div class="border square-9 bg-base-lightest"></div>
-              <div class="display-flex flex-column flex-align-start margin-top-2">
+              <div class="usa-grid-col utility-example-class">
                 <span class="utility-class">.border</span>
-                <span class="utility-value margin-top-2px">1px</span>
+              </div>
+              <div class="usa-grid-col utility-example-value">
+                <span class="utility-value">1px</span>
+              </div>
+              <div class="usa-grid-col utility-example">
+                <div class="border square-8 bg-base-lightest"></div>
               </div>
             {% else %}
-              <div class="border-{{ border.token }} square-9 bg-base-lightest"></div>
-              <div class="display-flex flex-column flex-align-start margin-top-2">
+              <div class="usa-grid-col utility-example-class">
                 <span class="utility-class">.border-{{ border.token }}</span>
-                <span class="utility-value margin-top-2px">{{ border.value }}</span>
+              </div>
+              <div class="usa-grid-col utility-example-value">
+                <span class="utility-value">{{ border.value }}</span>
+              </div>
+              <div class="usa-grid-col utility-example">
+                <div class="border-{{ border.token }} square-8 bg-base-lightest"></div>
               </div>
             {% endif %}
           </div>
-        {% endfor %}
-      </div>
+        </div>
+      {% endfor %}
 
       <!-- Border top -->
-      <h4 class="utility-examples-title margin-bottom-2">Border on the top</h4>
-      <div class="grid-row">
-        {% for border in border_widths %}
-          <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
+      <h4 class="utility-examples-title">Border on the top</h4>
+      {% for border in border_widths %}
+        <div class="utility-example-container">
+          <div class="usa-grid-row">
             {% if border.token == 'noValue' %}
-              <div class="border-top square-9 bg-base-lightest"></div>
-              <div class="display-flex flex-column flex-align-start margin-top-2">
+              <div class="usa-grid-col utility-example-class">
                 <span class="utility-class">.border-top</span>
-                <span class="utility-value margin-top-2px">1px</span>
+              </div>
+              <div class="usa-grid-col utility-example-value">
+                <span class="utility-value">1px</span>
+              </div>
+              <div class="usa-grid-col utility-example">
+                <div class="border-top square-8 bg-base-lightest"></div>
               </div>
             {% else %}
-              <div class="border-top-{{ border.token }} square-9 bg-base-lightest"></div>
-              <div class="display-flex flex-column flex-align-start margin-top-2">
+              <div class="usa-grid-col utility-example-class">
                 <span class="utility-class">.border-top-{{ border.token }}</span>
-                <span class="utility-value margin-top-2px">{{ border.value }}</span>
+              </div>
+              <div class="usa-grid-col utility-example-value">
+                <span class="utility-value">{{ border.value }}</span>
+              </div>
+              <div class="usa-grid-col utility-example">
+                <div class="border-top-{{ border.token }} square-8 bg-base-lightest"></div>
               </div>
             {% endif %}
           </div>
-        {% endfor %}
-      </div>
+        </div>
+      {% endfor %}
 
       <!-- Border bottom -->
       <h4 class="utility-examples-title margin-bottom-2">Border on the bottom</h4>
-      <div class="grid-row">
-        {% for border in border_widths %}
-          <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
+      {% for border in border_widths %}
+        <div class="utility-example-container">
+          <div class="usa-grid-row">
             {% if border.token == 'noValue' %}
-              <div class="border-bottom square-9 bg-base-lightest"></div>
-              <div class="display-flex flex-column flex-align-start margin-top-2">
+              <div class="usa-grid-col utility-example-class">
                 <span class="utility-class">.border-bottom</span>
-                <span class="utility-value margin-top-2px">1px</span>
+              </div>
+              <div class="usa-grid-col utility-example-value">
+                <span class="utility-value">1px</span>
+              </div>
+              <div class="usa-grid-col utility-example">
+                <div class="border-bottom square-8 bg-base-lightest"></div>
               </div>
             {% else %}
-              <div class="border-bottom-{{ border.token }} square-9 bg-base-lightest"></div>
-              <div class="display-flex flex-column flex-align-start margin-top-2">
+              <div class="usa-grid-col utility-example-class">
                 <span class="utility-class">.border-bottom-{{ border.token }}</span>
-                <span class="utility-value margin-top-2px">{{ border.value }}</span>
+              </div>
+              <div class="usa-grid-col utility-example-value">
+                <span class="utility-value">{{ border.value }}</span>
+              </div>
+              <div class="usa-grid-col utility-example">
+                <div class="border-bottom-{{ border.token }} square-8 bg-base-lightest"></div>
               </div>
             {% endif %}
           </div>
-        {% endfor %}
-      </div>
+        </div>
+      {% endfor %}
 
       <!-- Border left -->
       <h4 class="utility-examples-title margin-bottom-2">Border on the left</h4>
-      <div class="grid-row">
-        {% for border in border_widths %}
-          <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
+      {% for border in border_widths %}
+        <div class="utility-example-container">
+          <div class="usa-grid-row">
             {% if border.token == 'noValue' %}
-              <div class="border-left square-9 bg-base-lightest"></div>
-              <div class="display-flex flex-column flex-align-start margin-top-2">
+              <div class="usa-grid-col utility-example-class">
                 <span class="utility-class">.border-left</span>
-                <span class="utility-value margin-top-2px">1px</span>
+              </div>
+              <div class="usa-grid-col utility-example-value">
+                <span class="utility-value">1px</span>
+              </div>
+              <div class="usa-grid-col utility-example">
+                <div class="border-left square-8 bg-base-lightest"></div>
               </div>
             {% else %}
-              <div class="border-left-{{ border.token }} square-9 bg-base-lightest"></div>
-              <div class="display-flex flex-column flex-align-start margin-top-2">
+              <div class="usa-grid-col utility-example-class">
                 <span class="utility-class">.border-left-{{ border.token }}</span>
-                <span class="utility-value margin-top-2px">{{ border.value }}</span>
+              </div>
+              <div class="usa-grid-col utility-example-value">
+                <span class="utility-value">{{ border.value }}</span>
+              </div>
+              <div class="usa-grid-col utility-example">
+                <div class="border-left-{{ border.token }} square-8 bg-base-lightest"></div>
               </div>
             {% endif %}
           </div>
-        {% endfor %}
-      </div>
+        </div>
+      {% endfor %}
 
       <!-- Border right -->
       <h4 class="utility-examples-title margin-bottom-2">Border on the right</h4>
-      <div class="grid-row">
-        {% for border in border_widths %}
-          <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
+      {% for border in border_widths %}
+        <div class="utility-example-container">
+          <div class="usa-grid-row">
             {% if border.token == 'noValue' %}
-              <div class="border-right square-9 bg-base-lightest"></div>
-              <div class="display-flex flex-column flex-align-start margin-top-2">
+              <div class="usa-grid-col utility-example-class">
                 <span class="utility-class">.border-right</span>
-                <span class="utility-value margin-top-2px">1px</span>
+              </div>
+              <div class="usa-grid-col utility-example-value">
+                <span class="utility-value">1px</span>
+              </div>
+              <div class="usa-grid-col utility-example">
+                <div class="border-right square-8 bg-base-lightest"></div>
               </div>
             {% else %}
-              <div class="border-right-{{ border.token }} square-9 bg-base-lightest"></div>
-              <div class="display-flex flex-column flex-align-start margin-top-2">
+              <div class="usa-grid-col utility-example-class">
                 <span class="utility-class">.border-right-{{ border.token }}</span>
-                <span class="utility-value margin-top-2px">{{ border.value }}</span>
+              </div>
+              <div class="usa-grid-col utility-example-value">
+                <span class="utility-value">{{ border.value }}</span>
+              </div>
+              <div class="usa-grid-col utility-example">
+                <div class="border-right-{{ border.token }} square-8 bg-base-lightest"></div>
               </div>
             {% endif %}
           </div>
-        {% endfor %}
-      </div>
+        </div>
+      {% endfor %}
 
       <!-- Border x -->
       <h4 class="utility-examples-title margin-bottom-2">Border on the left and right</h4>
-      <div class="grid-row">
-        {% for border in border_widths %}
-          <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
+      {% for border in border_widths %}
+        <div class="utility-example-container">
+          <div class="usa-grid-row">
             {% if border.token == 'noValue' %}
-              <div class="border-x square-9 bg-base-lightest"></div>
-              <div class="display-flex flex-column flex-align-start margin-top-2">
+              <div class="usa-grid-col utility-example-class">
                 <span class="utility-class">.border-x</span>
-                <span class="utility-value margin-top-2px">1px</span>
+              </div>
+              <div class="usa-grid-col utility-example-value">
+                <span class="utility-value">1px</span>
+              </div>
+              <div class="usa-grid-col utility-example">
+                <div class="border-x square-8 bg-base-lightest"></div>
               </div>
             {% else %}
-              <div class="border-x-{{ border.token }} square-9 bg-base-lightest"></div>
-              <div class="display-flex flex-column flex-align-start margin-top-2">
+              <div class="usa-grid-col utility-example-class">
                 <span class="utility-class">.border-x-{{ border.token }}</span>
-                <span class="utility-value margin-top-2px">{{ border.value }}</span>
+              </div>
+              <div class="usa-grid-col utility-example-value">
+                <span class="utility-value">{{ border.value }}</span>
+              </div>
+              <div class="usa-grid-col utility-example">
+                <div class="border-x-{{ border.token }} square-8 bg-base-lightest"></div>
               </div>
             {% endif %}
           </div>
-        {% endfor %}
-      </div>
+        </div>
+      {% endfor %}
 
       <!-- Border y -->
       <h4 class="utility-examples-title margin-bottom-2">Border on the top and bottom</h4>
-      <div class="grid-row">
-        {% for border in border_widths %}
-          <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
+      {% for border in border_widths %}
+        <div class="utility-example-container">
+          <div class="usa-grid-row">
             {% if border.token == 'noValue' %}
-              <div class="border-y square-9 bg-base-lightest"></div>
-              <div class="display-flex flex-column flex-align-start margin-top-2">
+              <div class="usa-grid-col utility-example-class">
                 <span class="utility-class">.border-y</span>
-                <span class="utility-value margin-top-2px">1px</span>
+              </div>
+              <div class="usa-grid-col utility-example-value">
+                <span class="utility-value">1px</span>
+              </div>
+              <div class="usa-grid-col utility-example">
+                <div class="border-y square-8 bg-base-lightest"></div>
               </div>
             {% else %}
-              <div class="border-y-{{ border.token }} square-9 bg-base-lightest"></div>
-              <div class="display-flex flex-column flex-align-start margin-top-2">
+              <div class="usa-grid-col utility-example-class">
                 <span class="utility-class">.border-y-{{ border.token }}</span>
-                <span class="utility-value margin-top-2px">{{ border.value }}</span>
+              </div>
+              <div class="usa-grid-col utility-example-value">
+                <span class="utility-value">{{ border.value }}</span>
+              </div>
+              <div class="usa-grid-col utility-example">
+                <div class="border-y-{{ border.token }} square-8 bg-base-lightest"></div>
               </div>
             {% endif %}
           </div>
-        {% endfor %}
-      </div>
+        </div>
+      {% endfor %}
 
     </section><!-- exanples -->
   </section><!-- utility -->
@@ -290,23 +350,39 @@ utilities:
       hover=true
     %}
     <section class="utility-examples">
-      <div class="grid-row">
-        <div class="utility-example-container grid-col-4 display-flex flex-column flex-justify">
-          <div class="border border-solid square-9 bg-base-lightest"></div>
-          <div class="display-flex flex-column flex-align-start margin-top-2">
+      <div class="utility-example-container">
+        <div class="usa-grid-row">
+          <div class="usa-grid-col utility-example-class">
             <span class="utility-class"><span class="text-light">.border</span>.border-solid</span>
           </div>
-        </div>
-        <div class="utility-example-container grid-col-4 display-flex flex-column flex-justify">
-          <div class="border-1px border-dashed square-9 bg-base-lightest"></div>
-          <div class="display-flex flex-column flex-align-start margin-top-2">
-            <span class="utility-class"><span class="text-light">.border</span>.border-dashed</span>
+          <div class="usa-grid-col utility-example-value">
+          </div>
+          <div class="usa-grid-col utility-example">
+            <div class="border border-solid square-8 bg-base-lightest"></div>
           </div>
         </div>
-        <div class="utility-example-container grid-col-fill display-flex flex-column flex-justify">
-          <div class="border border-dotted square-9 bg-base-lightest"></div>
-          <div class="display-flex flex-column flex-align-start margin-top-2">
+      </div>
+      <div class="utility-example-container">
+        <div class="usa-grid-row">
+          <div class="usa-grid-col utility-example-class">
+            <span class="utility-class"><span class="text-light">.border</span>.border-dashed</span>
+          </div>
+          <div class="usa-grid-col utility-example-value">
+          </div>
+          <div class="usa-grid-col utility-example">
+            <div class="border border-dashed square-8 bg-base-lightest"></div>
+          </div>
+        </div>
+      </div>
+      <div class="utility-example-container">
+        <div class="usa-grid-row">
+          <div class="usa-grid-col utility-example-class">
             <span class="utility-class"><span class="text-light">.border</span>.border-dotted</span>
+          </div>
+          <div class="usa-grid-col utility-example-value">
+          </div>
+          <div class="usa-grid-col utility-example">
+            <div class="border border-dotted square-8 bg-base-lightest"></div>
           </div>
         </div>
       </div>
@@ -327,7 +403,7 @@ utilities:
       <div class="grid-row">
         {% for border in border_widths %}
           {% if border.token != 'noValue' %}
-            <div class="utility-example-container-condensed grid-col-12">
+            <div class="utility-example-container grid-col-12">
               <div class="display-flex flex-justify">
                 <span class="utility-class">.border-width-{{ border.token }}</span>
                 <span class="utility-value margin-left-2px">{{ border.value }}</span>
@@ -337,7 +413,7 @@ utilities:
         {% endfor %}
         {% for border in border_widths %}
           {% if border.token != 'noValue' %}
-            <div class="utility-example-container-condensed grid-col-12">
+            <div class="utility-example-container grid-col-12">
               <div class="display-flex flex-justify">
                 <span class="utility-class">.border-top-width-{{ border.token }}</span>
                 <span class="utility-value margin-left-2px">{{ border.value }}</span>
@@ -347,7 +423,7 @@ utilities:
         {% endfor %}
         {% for border in border_widths %}
           {% if border.token != 'noValue' %}
-            <div class="utility-example-container-condensed grid-col-12">
+            <div class="utility-example-container grid-col-12">
               <div class="display-flex flex-justify">
                 <span class="utility-class">.border-bottom-width-{{ border.token }}</span>
                 <span class="utility-value margin-left-2px">{{ border.value }}</span>
@@ -357,7 +433,7 @@ utilities:
         {% endfor %}
         {% for border in border_widths %}
           {% if border.token != 'noValue' %}
-            <div class="utility-example-container-condensed grid-col-12">
+            <div class="utility-example-container grid-col-12">
               <div class="display-flex flex-justify">
                 <span class="utility-class">.border-left-width-{{ border.token }}</span>
                 <span class="utility-value margin-left-2px">{{ border.value }}</span>
@@ -367,7 +443,7 @@ utilities:
         {% endfor %}
         {% for border in border_widths %}
           {% if border.token != 'noValue' %}
-            <div class="utility-example-container-condensed grid-col-12">
+            <div class="utility-example-container grid-col-12">
               <div class="display-flex flex-justify">
                 <span class="utility-class">.border-right-width-{{ border.token }}</span>
                 <span class="utility-value margin-left-2px">{{ border.value }}</span>
@@ -377,7 +453,7 @@ utilities:
         {% endfor %}
         {% for border in border_widths %}
           {% if border.token != 'noValue' %}
-            <div class="utility-example-container-condensed grid-col-12">
+            <div class="utility-example-container grid-col-12">
               <div class="display-flex flex-justify">
                 <span class="utility-class">.border-x-width-{{ border.token }}</span>
                 <span class="utility-value margin-left-2px">{{ border.value }}</span>
@@ -387,7 +463,7 @@ utilities:
         {% endfor %}
         {% for border in border_widths %}
           {% if border.token != 'noValue' %}
-            <div class="utility-example-container-condensed grid-col-12">
+            <div class="utility-example-container grid-col-12">
               <div class="display-flex flex-justify">
                 <span class="utility-class">.border-y-width-{{ border.token }}</span>
                 <span class="utility-value margin-left-2px">{{ border.value }}</span>
@@ -418,20 +494,20 @@ utilities:
             {% assign value = color.value %}
             {% assign token = false %}
           {% endif %}
-          <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <p class="utility-example-container grid-col-12 display-flex flex-align-center">
             <span class="flex-fill">
               <span class="square-4 radius-sm text-middle padding-05 display-inline-block margin-right-1 bg-white ">
                 <span class="square-3 radius-sm display-block border-1px border-{{ color.token }}"></span>
               </span>
-              <span class="square-4 radius-sm text-middle padding-05 display-inline-block margin-right-1 bg-ink ">
+              <span class="display-none tablet:display-inline-block square-4 radius-sm text-middle padding-05 margin-right-1 bg-ink">
                 <span class="square-3 radius-sm display-block border-1px border-{{ color.token }}"></span>
               </span>
               <span class="utility-class">.border-{{ color.token }}</span>
             </span>
             {% if token %}
-              <code class="bg-secondary-lighter radius-sm">{{ token }}</code>
+              <code class="display-none tablet:display-inline-block bg-secondary-lighter radius-sm">{{ token }}</code>
             {% endif %}
-            <span class="flex-auto utility-value-color margin-left-1">
+            <span class="display-none tablet:display-inline-block flex-auto utility-value-color margin-left-1">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
               {{ value }}
             </span>
@@ -453,40 +529,68 @@ utilities:
     <section class="utility-examples">
 
       {% for modifier in border_modifiers_simple %}
-        <div class="grid-row">
-          <div class="utility-example-container display-flex flex-column flex-justify grid-col">
-            <div class="bg-secondary-light height-9 width-15 radius{{ modifier }}-0"></div>
-            <div class="display-flex flex-column flex-align-start margin-top-2">
+        <div class="utility-example-container">
+          <div class="usa-grid-row">
+            <div class="usa-grid-col utility-example-class">
               <span class="utility-class">.radius{{ modifier }}-0</span>
+            </div>
+            <div class="usa-grid-col utility-example-value">
               <span class="utility-value margin-top-2px">0</span>
             </div>
+            <div class="usa-grid-col utility-example">
+              <div class="bg-secondary-light height-8 width-15 radius{{ modifier }}-0"></div>
+            </div>
           </div>
-          <div class="utility-example-container display-flex flex-column flex-justify grid-col">
-            <div class="bg-secondary-light height-9 width-15 radius{{ modifier }}-sm"></div>
-            <div class="display-flex flex-column flex-align-start margin-top-2">
+        </div>
+        <div class="utility-example-container">
+          <div class="usa-grid-row">
+            <div class="usa-grid-col utility-example-class">
               <span class="utility-class">.radius{{ modifier }}-sm</span>
+            </div>
+            <div class="usa-grid-col utility-example-value">
               <span class="utility-value margin-top-2px">2px</span>
             </div>
+            <div class="usa-grid-col utility-example">
+              <div class="bg-secondary-light height-8 width-15 radius{{ modifier }}-sm"></div>
+            </div>
           </div>
-          <div class="utility-example-container display-flex flex-column flex-justify grid-col">
-            <div class="bg-secondary-light height-9 width-15 radius{{ modifier }}-md"></div>
-            <div class="display-flex flex-column flex-align-start margin-top-2">
+        </div>
+        <div class="utility-example-container">
+          <div class="usa-grid-row">
+            <div class="usa-grid-col utility-example-class">
               <span class="utility-class">.radius{{ modifier }}-md</span>
+            </div>
+            <div class="usa-grid-col utility-example-value">
               <span class="utility-value margin-top-2px">4px</span>
             </div>
-          </div>
-          <div class="utility-example-container display-flex flex-column flex-justify grid-col">
-            <div class="bg-secondary-light height-9 width-15 radius{{ modifier }}-lg"></div>
-            <div class="display-flex flex-column flex-align-start margin-top-2">
-              <span class="utility-class">.radius{{ modifier }}-lg</span>
-              <span class="utility-value margin-top-2px">8px</span>
+            <div class="usa-grid-col utility-example">
+              <div class="bg-secondary-light height-8 width-15 radius{{ modifier }}-md"></div>
             </div>
           </div>
-          <div class="utility-example-container display-flex flex-column flex-justify grid-col">
-            <div class="bg-secondary-light height-9 width-15 radius{{ modifier }}-pill"></div>
-            <div class="display-flex flex-column flex-align-start margin-top-2">
+        </div>
+        <div class="utility-example-container">
+          <div class="usa-grid-row">
+            <div class="usa-grid-col utility-example-class">
+              <span class="utility-class">.radius{{ modifier }}-lg</span>
+            </div>
+            <div class="usa-grid-col utility-example-value">
+              <span class="utility-value margin-top-2px">8px</span>
+            </div>
+            <div class="usa-grid-col utility-example">
+              <div class="bg-secondary-light height-8 width-15 radius{{ modifier }}-lg"></div>
+            </div>
+          </div>
+        </div>
+        <div class="utility-example-container">
+          <div class="usa-grid-row">
+            <div class="usa-grid-col utility-example-class">
               <span class="utility-class">.radius{{ modifier }}-pill</span>
+            </div>
+            <div class="usa-grid-col utility-example-value">
               <span class="utility-value margin-top-2px">99rem</span>
+            </div>
+            <div class="usa-grid-col utility-example">
+              <div class="bg-secondary-light height-8 width-15 radius{{ modifier }}-pill"></div>
             </div>
           </div>
         </div>

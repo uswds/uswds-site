@@ -10,8 +10,8 @@
 // ----------------------------------------
 
 // TODO: move to uswds once finished
-$theme-site-cols-split: 'mobile-lg';
-$theme-site-cols-show: 'tablet-lg';
+$theme-site-cols-split: 'tablet';
+$theme-site-cols-show: 'desktop';
 $theme-grid-gap-default: 'md';
 
 @mixin grid-cols($default, $split: null, $full: null) {
@@ -30,11 +30,15 @@ $theme-grid-gap-default: 'md';
   }
 }
 
-.usa-grid-container {
+@mixin usa-grid-container {
   @include grid-container;
 }
 
-.usa-grid-row {
+.usa-grid-container {
+  @include usa-grid-container;
+}
+
+@mixin usa-grid-row {
   @include grid-row;
   @include u-flex('column', 'align-stretch');
   @include at-media($theme-site-cols-split) {
@@ -43,9 +47,17 @@ $theme-grid-gap-default: 'md';
   }
 }
 
-.usa-grid-col {
+.usa-grid-row {
+  @include usa-grid-row;
+}
+
+@mixin usa-grid-col {
   @include grid-cols('auto', 6);
   width: 100%;
+}
+
+.usa-grid-col {
+  @include usa-grid-col;
 }
 
 
@@ -433,7 +445,6 @@ body {
     margin-top: units(4);
     padding-right: 0;
     padding-left: units(4);
-    overflow-y: auto;
     width: units($width-nav-sidebar);
   }
 
@@ -1916,16 +1927,14 @@ li {
   @include u-bg('white');
   @include u-border(1px, 'base-darker');
   @include u-margin-y(2);
-  @include u-padding-bottom(1);
+  @include u-padding-bottom(2);
   @include u-padding-top(2);
   @include u-radius('md');
 }
 
 .utility-title-bar {
-  @include u-border-bottom(1px, 'gray-10');
   @include u-margin-bottom(2);
   @include u-padding-x(2);
-  @include u-padding-bottom(1.5);
 
   & > .usa-grid-row {
     @include u-flex('align-start');
@@ -2018,11 +2027,9 @@ li {
 }
 
 .utility-examples-title {
-  @include u-border-bottom(1px, 'gray-10');
   @include u-font('sans', 4);
   @include u-margin-bottom(1);
   @include u-margin-top(4);
-  @include u-padding-bottom(1);
 }
 
 .utility-examples-helper {
@@ -2063,17 +2070,34 @@ li {
 }
 
 .utility-example-container {
-  @include u-border-bottom(1px, 'gray-10');
-  @include u-margin-bottom(2);
-  @include u-margin-top(0);
-  @include u-padding-bottom(3);
+  @include u-border-top(1px, 'gray-10');
+  @include u-margin-top(1);
+  @include u-margin-bottom(0);
+  @include u-maxw(none);
+  @include u-padding-top(1);
+
+  & > .usa-grid-row {
+    @include grid-gap('md');
+    @include u-flex('row', 'align-center');
+  }
 }
 
-.utility-example-container-condensed {
-  @extend .utility-example-container;
-  @include u-margin-bottom(1);
-  @include u-maxw(none);
-  @include u-padding-bottom(1);
+.utility-example {
+  &.usa-grid-col {
+    @include grid-col('auto');
+  }
+}
+
+.utility-example-class {
+  &.usa-grid-col {
+    @include grid-col('fill');
+  }
+}
+
+.utility-example-value {
+  &.usa-grid-col {
+    @include grid-col('auto');
+  }
 }
 
 .utilities-output-heading {
@@ -2094,12 +2118,12 @@ li {
 }
 
 .utility-note {
+  @include u-border-top('1px', 'gray-10');
   @include u-font('sans', 'xs');
   @include u-line-height('sans', 5);
-  @include u-margin-bottom(5);
   @include u-measure(none);
-  @include u-padding-bottom(2);
-  @include u-border-bottom(1px, 'base-lighter');
+  @include u-margin-bottom(2);
+  @include u-padding-top(2);
 }
 
 .utility-text {

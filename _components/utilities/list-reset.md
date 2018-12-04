@@ -35,7 +35,7 @@ utilities:
       %}
       <section class="utility-examples">
         <div class="grid-row">
-          <div class="utility-example-container-condensed grid-col display-flex flex-column flex-justify flex-align-start border-0">
+          <div class="utility-example-container grid-col display-flex flex-column flex-justify flex-align-start border-0">
             <div class="bg-secondary-light">
               <ul class="bg-white">
                 <li>Red apples</li>
@@ -49,7 +49,7 @@ utilities:
               <p class="utility-value">padding-left: 1.94em</p>
             </div>
           </div>
-          <div class="utility-example-container-condensed grid-col display-flex flex-column flex-justify flex-align-start border-0">
+          <div class="utility-example-container grid-col display-flex flex-column flex-justify flex-align-start border-0">
             <ul class="add-list-reset">
               <li>Red apples</li>
               <li>Yellow bananas</li>

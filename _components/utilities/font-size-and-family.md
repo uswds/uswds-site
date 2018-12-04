@@ -183,7 +183,7 @@ utilities:
       <h4 class="utility-examples-title margin-bottom-2">Type-based</h4>
       {% for type in tokens.family.type %}
         {% if type.default %}
-          <div class="utility-example-container-condensed">
+          <div class="utility-example-container">
             <div class="utility-class">.font-family-{{ type.token }}</div>
           </div>
         {% endif %}
@@ -192,7 +192,7 @@ utilities:
       <h4 class="utility-examples-title margin-bottom-2">Role-based</h4>
       {% for role in tokens.family.role %}
         {% if role.default %}
-          <div class="utility-example-container-condensed">
+          <div class="utility-example-container">
             <div class="utility-class">.font-family-{{ role.token }}</div>
           </div>
         {% endif %}

@@ -376,27 +376,27 @@ utilities:
       <div class="grid-row grid-gap">
 
         <div class="grid-col-12">
-          <div class="utility-example-container-condensed">
+          <div class="utility-example-container">
             <p class="margin-0 font-sans-2xs"><span class="utility-class">.position-absolute</span></p>
           </div>
         </div>
         <div class="grid-col-12">
-          <div class="utility-example-container-condensed">
+          <div class="utility-example-container">
             <p class="margin-0 font-sans-2xs"><span class="utility-class">.position-fixed</span></p>
           </div>
         </div>
         <div class="grid-col-12">
-          <div class="utility-example-container-condensed">
+          <div class="utility-example-container">
             <p class="margin-0 font-sans-2xs"><span class="utility-class">.position-relative</span></p>
           </div>
         </div>
         <div class="grid-col-12">
-          <div class="utility-example-container-condensed">
+          <div class="utility-example-container">
             <p class="margin-0 font-sans-2xs"><span class="utility-class">.position-static</span></p>
           </div>
         </div>
         <div class="grid-col-12">
-          <div class="utility-example-container-condensed">
+          <div class="utility-example-container">
             <p class="margin-0 font-sans-2xs"><span class="utility-class">.position-sticky</span></p>
           </div>
         </div>
@@ -548,22 +548,22 @@ utilities:
       <div class="grid-row grid-gap">
         <div class="grid-col-3">
           {% for item in rp_spacing %}
-            <p class="utility-example-container-condensed font-sans-2xs display-flex flex-justify"><span class="utility-class">.top-{{ item.token }}</span><span class="utility-value margin-left-05">{{ item.value }}</span></p>
+            <p class="utility-example-container font-sans-2xs display-flex flex-justify"><span class="utility-class">.top-{{ item.token }}</span><span class="utility-value margin-left-05">{{ item.value }}</span></p>
           {% endfor %}
         </div>
         <div class="grid-col-3">
           {% for item in rp_spacing %}
-            <p class="utility-example-container-condensed font-sans-2xs display-flex flex-justify"><span class="utility-class">.bottom-{{ item.token }}</span><span class="utility-value margin-left-05">{{ item.value }}</span></p>
+            <p class="utility-example-container font-sans-2xs display-flex flex-justify"><span class="utility-class">.bottom-{{ item.token }}</span><span class="utility-value margin-left-05">{{ item.value }}</span></p>
           {% endfor %}
         </div>
         <div class="grid-col-3">
           {% for item in rp_spacing %}
-            <p class="utility-example-container-condensed font-sans-2xs display-flex flex-justify"><span class="utility-class">.left-{{ item.token }}</span><span class="utility-value margin-left-05">{{ item.value }}</span></p>
+            <p class="utility-example-container font-sans-2xs display-flex flex-justify"><span class="utility-class">.left-{{ item.token }}</span><span class="utility-value margin-left-05">{{ item.value }}</span></p>
           {% endfor %}
         </div>
         <div class="grid-col-3">
           {% for item in rp_spacing %}
-            <p class="utility-example-container-condensed font-sans-2xs display-flex flex-justify"><span class="utility-class">.right-{{ item.token }}</span><span class="utility-value margin-left-05">{{ item.value }}</span></p>
+            <p class="utility-example-container font-sans-2xs display-flex flex-justify"><span class="utility-class">.right-{{ item.token }}</span><span class="utility-value margin-left-05">{{ item.value }}</span></p>
           {% endfor %}
         </div>
       </div>

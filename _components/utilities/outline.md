@@ -82,7 +82,7 @@ utilities:
     <section class="utility-examples">
       <div class="grid-row">
         {% for color in outline_colors %}
-          <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
+          <p class="utility-example-container grid-col-12 display-flex flex-align-center">
             <span class="flex-fill">
               <span class="square-4 radius-sm text-middle padding-05 display-inline-block margin-right-1 bg-white ">
                 <span class="square-3 radius-sm display-block outline-1px outline-{{ color.token }}"></span>

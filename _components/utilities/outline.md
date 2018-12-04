@@ -55,23 +55,9 @@ utilities:
   {% include utilities/utilities-section-title-bar.html %}
 
   <section class="utility" id="utility-outline">
-    <section class="utility-title-bar">
-      <div class="grid-row flex-align-center">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Outline</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">outline</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
-
+    {% include utilities/utility-title-bar.html
+      title="Outline"
+    %}
     <section class="utility-examples">
       <p class="utility-note"><strong>Note: </strong> The <code>outline</code> utilities apply a solid outline of specified width.</p>
 
@@ -90,21 +76,9 @@ utilities:
   </section><!-- utility -->
 
   <section class="utility" id="utility-outline-color">
-    <section class="utility-title-bar">
-      <div class="grid-row flex-align-center">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Outline color</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">outline-color</span></p>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Outline color"
+    %}
     <section class="utility-examples">
       <div class="grid-row">
         {% for color in outline_colors %}

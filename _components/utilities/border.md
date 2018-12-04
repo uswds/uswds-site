@@ -105,8 +105,7 @@ utilities:
 
   <section class="utility" id="utility-border">
 
-    {% include
-      utilities/utility-title-bar.html
+    {% include utilities/utility-title-bar.html
       title="Border"
       property="border, border-bottom, border-left, border-right, border-top"
       responsive=true
@@ -284,21 +283,12 @@ utilities:
   </section><!-- utility -->
 
   <section class="utility" id="utility-border-style">
-    <section class="utility-title-bar">
-      <div class="grid-row flex-align-center">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Border style</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">border-style</span></p>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-active"><a href="#state-variants">hover</a></li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Border style"
+      property="border-style"
+      responsive=true
+      hover=true
+    %}
     <section class="utility-examples">
       <div class="grid-row">
         <div class="utility-example-container grid-col-4 display-flex flex-column flex-justify">
@@ -324,22 +314,11 @@ utilities:
   </section>
 
   <section class="utility" id="utility-border-width">
-    <section class="utility-title-bar">
-      <div class="grid-row flex-align-center">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Border width</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">border-width</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Border width"
+      property="border-width"
+      responsive=true
+    %}
 
     <section class="utility-examples">
       <p class="utility-note"><strong>Note: </strong> The <code>border-width</code> utilities apply only the <code>border-width</code> property to an item.</p>
@@ -421,22 +400,12 @@ utilities:
   </section>
 
   <section class="utility" id="utility-border-color">
-    <section class="utility-title-bar">
-      <div class="grid-row flex-align-center">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Border color</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">border-color</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-active"><a href="#state-variants">hover</a></li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Border color"
+      property="border-color"
+      responsive=true
+      hover=true
+    %}
 
     <section class="utility-examples">
       <div class="grid-row">
@@ -475,22 +444,11 @@ utilities:
 
 
   <section class="utility" id="utility-radius">
-    <section class="utility-title-bar">
-      <div class="grid-row flex-align-center">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Border radius</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">border-radius</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Border radius"
+      property="border-radius"
+      responsive=true
+    %}
 
     <section class="utility-examples">
 

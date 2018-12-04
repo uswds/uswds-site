@@ -1975,13 +1975,14 @@ li {
   @include u-display('inline-block');
   @include u-font-size('ui', '2xs');
   @include u-line-height('ui', 1);
+  @include u-margin-right(2px);
   @include u-margin-top(0.5);
-  @include u-margin-right(0.5);
   @include u-padding(0.5);
   @include u-radius('sm');
 
   @include at-media('tablet') {
     @include u-font-size('ui', 'xs');
+    @include u-margin-right(0.5);
     @include u-margin-top(0);
     @include u-padding-y(1);
     @include u-padding-x(1.5);

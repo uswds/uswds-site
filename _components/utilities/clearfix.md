@@ -25,22 +25,12 @@ utilities:
 
 <section class="utilities-section">
   {% include utilities/utilities-section-title-bar.html %}
-  
+
   <section class="utility" id="utility-clearfix">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Clearfix</h3>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section><!-- .utility-title-bar -->
+    {% include utilities/utility-title-bar.html
+      title="Clearfix"
+      property=false
+    %}
 
     <section class="utility-examples">
       <div class="clearfix border-1px">

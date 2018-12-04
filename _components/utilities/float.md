@@ -35,22 +35,9 @@ utilities:
 {% include utilities/utilities-section-title-bar.html %}
 
   <section class="utility" id="utility-float">
-    <section class="utility-title-bar">
-      <div class="grid-row flex-align-center">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Float</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">float</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Float"
+    %}
 
     <section class="utility-examples">
       <div class="clearfix">

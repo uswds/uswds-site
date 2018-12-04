@@ -127,23 +127,9 @@ utilities:
   {% include utilities/utilities-section-title-bar.html %}
 
   <section class="utility" id="font-style">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Font style</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">font-style</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <!--<li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>-->
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Font style"
+    %}
     <section class="utility-examples">
       <p class="utility-example-container-condensed text-italic">.text-italic</p>
       <p class="utility-example-container-condensed text-no-italic border-0">.text-no-italic</p>
@@ -151,22 +137,10 @@ utilities:
   </section>
 
   <section class="utility" id="font-weight">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Font weight</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">font-weight</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Font weight"
+      responsive=true
+    %}
     <section class="utility-examples">
       <p class="utility-example-container-condensed text-thin">.text-thin <span class="text-base-dark">(<b>Note:</b> not included in default set)</span></p>
       <p class="utility-example-container-condensed text-light">.text-light</p>
@@ -179,22 +153,10 @@ utilities:
   </section>
 
   <section class="utility" id="letterspacing">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Letterspacing</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">letter-spacing</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Letterspacing"
+      property="letter-spacing"
+    %}
     <section class="utility-examples">
       <p class="utility-example-container-condensed grid-row">
         <span class="grid-col-fill text-ls-neg-3">.text-ls-neg-3</span>
@@ -228,22 +190,10 @@ utilities:
   </section>
 
   <section class="utility" id="font-feature-settings">
-    <section class="utility-title-bar">
-      <div class="grid-row flex-align-center">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Tabular numerals</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">font-feature-settings</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Tabular numerals"
+      property="font-feature-settings"
+    %}
     <section class="utility-examples">
       <div class="utility-example-container-condensed">
         <p class="font-sans-8 text-tabular margin-0">123,456,789</p>
@@ -262,22 +212,10 @@ utilities:
   </section>
 
   <section class="utility" id="text-decoration">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Text decoration</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">text-decoration</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-active"><a href="#state-variants">hover</a></li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Text decoration"
+      hover=true
+    %}
     <section class="utility-examples">
       <p class="utility-example-container-condensed text-underline">.text-underline</p>
       <p class="utility-example-container-condensed text-strike">.text-strike</p>
@@ -287,22 +225,10 @@ utilities:
   </section>
 
   <section class="utility" id="text-decoration-color">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Text decoration color</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">text-decoration-color</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-active"><a href="#state-variants">hover</a></li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Text decoration color"
+      hover=true
+    %}
     <section class="utility-examples">
 
       {% for color in colors.theme %}
@@ -331,22 +257,11 @@ utilities:
   </section>
 
   <section class="utility" id="text-transform">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Uppercase and lowercase</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">text-transform</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-active"><a href="#state-variants">hover</a></li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Uppercase and lowercase"
+      property="text-transform"
+      active=true
+    %}
     <section class="utility-examples">
       <p class="utility-example-container-condensed text-uppercase">.text-uppercase</p>
       <p class="utility-example-container-condensed text-lowercase">.text-lowercase</p>
@@ -356,22 +271,10 @@ utilities:
   </section>
 
   <section class="utility" id="vertical-align">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Vertical alignment</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">vertical-align</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Vertical alignment"
+      property="vertical-align"
+    %}
     <section class="utility-examples">
       <p class="utility-example-container-condensed">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-baseline"></span> <span class="text-baseline text-red">.text-baseline</span></p>
       <p class="utility-example-container-condensed">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-bottom"></span> <span class="text-bottom text-red">.text-bottom</span></p>
@@ -385,22 +288,10 @@ utilities:
   </section>
 
   <section class="utility" id="whitespace">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Whitespace formatting</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">white-space</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Whitespace formatting"
+      property="white-space"
+    %}
     <section class="utility-examples">
       <p class="utility-example-container-condensed"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-pre"><span class="text-red">.text-pre</span> formatted line   with     multiple       spaces</span></span></p>
       <p class="utility-example-container-condensed"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-pre-line"><span class="text-red">.text-pre-line</span> formatted line   with     multiple       spaces</span></span></p>

@@ -48,23 +48,10 @@ utilities:
 {% include utilities/utilities-section-title-bar.html %}
 
   <section class="utility" id="utility-font">
-    <section class="utility-title-bar">
-      <div class="grid-row flex-align-center">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Font size and family</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">font-size, font-family</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
-
+    {% include utilities/utility-title-bar.html
+      title="Font size and family"
+      property="font-size, font-family"
+    %}
     <section class="utility-examples">
 
       <h4 class="utility-examples-title margin-bottom-2">Type-based size and family utilities</h4>
@@ -187,22 +174,9 @@ utilities:
   </section><!-- utility -->
 
   <section class="utility" id="utility-font-family">
-    <section class="utility-title-bar">
-      <div class="grid-row flex-align-center">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Font family</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">font-family</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Font family"
+    %}
 
     <section class="utility-examples">
 

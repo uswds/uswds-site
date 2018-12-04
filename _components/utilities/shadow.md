@@ -33,23 +33,10 @@ utilities:
   {% include utilities/utilities-section-title-bar.html %}
 
   <section class="utility" id="box-shadow">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Shadow</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">box-shadow</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section><!-- utility-title-bar -->
-
+    {% include utilities/utility-title-bar.html
+      title="Shadow"
+      property="box-shadow"
+    %}
     <section class="utility-examples">
       <div class="grid-row">
         <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">

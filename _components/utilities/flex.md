@@ -186,22 +186,9 @@ utilities:
 {% include utilities/utilities-section-title-bar.html %}
 
   <section class="utility" id="utility-flex">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Flex</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">flex</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Flex"
+    %}
     <section class="utility-examples">
 
     {% for value in page.values.flex %}
@@ -303,22 +290,9 @@ utilities:
   </section><!-- utility -->
 
   <section class="utility" id="utility-flex-direction">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Flex direction</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">flex-direction</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Flex direction"
+    %}
     <section class="utility-examples">
 
     {% for value in page.values.flex_direction %}
@@ -371,22 +345,9 @@ utilities:
   </section><!-- utility -->
 
   <section class="utility" id="utility-flex-wrap">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Flex wrap</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">flex-wrap</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Flex wrap"
+    %}
     <section class="utility-examples">
 
     {% for value in page.values.flex_wrap %}
@@ -443,22 +404,9 @@ utilities:
   </section><!-- utility -->
 
   <section class="utility" id="utility-flex-align">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Flex align</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">align-items</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Flex align"
+    %}
     <section class="utility-examples">
 
     {% for direction in page.values.flex_direction %}
@@ -516,22 +464,10 @@ utilities:
   </section><!-- utility -->
 
   <section class="utility" id="utility-flex-justify">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Flex justify</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">justify-content</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Flex justify"
+      property="justify-content"
+    %}
     <section class="utility-examples">
 
       <div class="border padding-1 radius-md margin-bottom-2">
@@ -581,22 +517,9 @@ utilities:
   </section><!-- utility -->
 
   <section class="utility" id="utility-order">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Order</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">order</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Order"
+    %}
     <section class="utility-examples">
 
     <div class="grid-row grid-gap-sm">

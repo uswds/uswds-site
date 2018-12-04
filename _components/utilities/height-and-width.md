@@ -182,27 +182,12 @@ utilities:
 </div>
 
 <section class="utilities-section">
-  <div class="utilities-section-title-bar usa-grid-row">
-    <h2 class="grid-col-auto utilities-section-title">Examples and usage</h2>
-    <p class="grid-col-fill utilities-section-helper">Utilities, values, and variants may be activated and deactivated in <a href="#advanced-settings" class="text-ink text-no-wrap">advanced settings</a>.</p>
-  </div>
+  {% include utilities/utilities-section-title-bar.html %}
 
   <section class="utility" id="height">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Height</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">height</span></p>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section><!-- .utility-title-bar -->
+    {% include utilities/utility-title-bar.html
+      title="Height"
+    %}
     <section class="utility-examples">
       <div class="grid-row grid gap">
         {% for item in height_values %}
@@ -219,21 +204,9 @@ utilities:
   </section><!-- .utility#height -->
 
   <section class="utility" id="width">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Width</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">width</span></p>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section><!-- .utility-title-bar -->
+    {% include utilities/utility-title-bar.html
+      title="Width"
+    %}
     <section class="utility-examples">
       <div class="grid-row grid gap">
         {% for item in width_values %}
@@ -252,21 +225,10 @@ utilities:
   </section><!-- .utility#width -->
 
   <section class="utility" id="maxh">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Maximum height</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">max-height</span></p>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section><!-- .utility-title-bar -->
+    {% include utilities/utility-title-bar.html
+      title="Maximum height"
+      property="max-height"
+    %}
     <section class="utility-examples">
       {% for item in maxh_values %}
         <p class="utility-example-container-condensed {% if forloop.last %}border-0{% endif %}">
@@ -278,21 +240,10 @@ utilities:
   </section><!-- .utility#maxh -->
 
   <section class="utility" id="maxw">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Maximum width</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">max-width</span></p>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section><!-- .utility-title-bar -->
+    {% include utilities/utility-title-bar.html
+      title="Maximum width"
+      property="max-width"
+    %}
     <section class="utility-examples">
       {% for item in maxw_values %}
         <p class="utility-example-container-condensed {% if forloop.last %}border-0{% endif %}">
@@ -304,21 +255,10 @@ utilities:
   </section><!-- .utility#maxw -->
 
   <section class="utility" id="minh">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Minimum height</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">min-height</span></p>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section><!-- .utility-title-bar -->
+    {% include utilities/utility-title-bar.html
+      title="Minimum height"
+      property="min-height"
+    %}
     <section class="utility-examples">
       {% for item in minh_values %}
         <p class="utility-example-container-condensed {% if forloop.last %}border-0{% endif %}">
@@ -330,21 +270,10 @@ utilities:
   </section><!-- .utility#minh -->
 
   <section class="utility" id="minw">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Minimum width</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">min-width</span></p>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section><!-- .utility-title-bar -->
+    {% include utilities/utility-title-bar.html
+      title="Minimum width"
+      property="min-width"
+    %}
     <section class="utility-examples">
       {% for item in minw_values %}
         <p class="utility-example-container-condensed {% if forloop.last %}border-0{% endif %}">
@@ -356,20 +285,10 @@ utilities:
   </section><!-- .utility#minw -->
 
   <section class="utility" id="aspect">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Aspect ratio</h3>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section><!-- .utility-title-bar -->
+    {% include utilities/utility-title-bar.html
+      title="Aspect ration"
+      property=false
+    %}
     <section class="utility-examples">
       <div class="grid-row grid-gap">
         <div class="grid-col utility-example-container-condensed display-flex flex-column flex-justify">
@@ -407,20 +326,10 @@ utilities:
   </section><!-- .utility#aspect -->
 
   <section class="utility" id="circle">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Circle</h3>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section><!-- .utility-title-bar -->
+    {% include utilities/utility-title-bar.html
+      title="Circle"
+      property=false
+    %}
     <section class="utility-examples">
       <div class="grid-row grid-gap">
         {% for item in circle_values %}
@@ -439,20 +348,10 @@ utilities:
   </section><!-- .utility#circle -->
 
   <section class="utility" id="square">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Square</h3>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section><!-- .utility-title-bar -->
+    {% include utilities/utility-title-bar.html
+      title="Square"
+      property=false
+    %}
     <section class="utility-examples">
       <div class="grid-row grid-gap">
         {% for item in square_values %}

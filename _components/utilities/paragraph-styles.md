@@ -70,22 +70,10 @@ utilities:
 
   <section class="line-height" id="line-height">
     <section class="utility">
-      <section class="utility-title-bar">
-        <div class="grid-row flex-align-center">
-          <div class="grid-col-fill">
-            <h3 class="grid-col-auto utility-title">Line height</h3>
-            <p class="utility-property">CSS property: <span class="utility-property-code">line-height</span></p>
-          </div>
-
-          <ul class="utility-scope grid-col-auto">
-            <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
-            <li class="utility-scope-button-disabled">active</li>
-            <li class="utility-scope-button-disabled">hover</li>
-            <li class="utility-scope-button-disabled">focus</li>
-            <li class="utility-scope-button-disabled">visited</li>
-          </ul>
-        </div>
-      </section>
+      {% include utilities/utility-title-bar.html
+        title="Line height"
+        responsive=true
+      %}
 
       <section class="padding-x-3">
         <div class="grid-row grid-gap margin-top-4">
@@ -260,23 +248,11 @@ utilities:
 
   <section class="max-width" id="max-width">
     <section class="utility">
-      <section class="utility-title-bar">
-        <div class="grid-row flex-align-center">
-          <div class="grid-col-fill">
-            <h3 class="grid-col-auto utility-title">Measure</h3>
-            <p class="utility-property">CSS property: <span class="utility-property-code">max-width</span></p>
-          </div>
-
-          <ul class="grid-col-auto utility-scope">
-            <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
-            <li class="utility-scope-button-disabled">active</li>
-            <li class="utility-scope-button-disabled">hover</li>
-            <li class="utility-scope-button-disabled">focus</li>
-            <li class="utility-scope-button-disabled">visited</li>
-          </ul>
-        </div>
-      </section>
-
+      {% include utilities/utility-title-bar.html
+        title="Measure"
+        property="max-width"
+        responsive=true
+      %}
       <section class="padding-x-3">
         <div class="grid-row grid-gap-lg">
           <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
@@ -348,23 +324,10 @@ utilities:
 
   <section class="text-align" id="text-align">
     <section class="utility">
-      <section class="utility-title-bar">
-        <div class="grid-row flex-align-center">
-          <div class="grid-col-fill">
-            <h3 class="grid-col-auto utility-title">Text alignment</h3>
-            <p class="utility-property">CSS property: <span class="utility-property-code">text-align</span></p>
-          </div>
-
-          <ul class="grid-col-auto utility-scope">
-            <li class="utility-scope-button-disabled">responsive</li>
-            <li class="utility-scope-button-disabled">active</li>
-            <li class="utility-scope-button-disabled">hover</li>
-            <li class="utility-scope-button-disabled">focus</li>
-            <li class="utility-scope-button-disabled">visited</li>
-          </ul>
-        </div>
-      </section>
-
+      {% include utilities/utility-title-bar.html
+        title="Text alignment"
+        property="text-align"
+      %}
       <section class="margin-x-3">
         <div class="grid-row grid-gap-lg">
           <div class="grid-col-3 grid-gap-lg display-flex flex-column flex-justify flex-align-start padding-bottom-1">
@@ -394,23 +357,9 @@ utilities:
 
   <section class="text-indent" id="text-indent">
     <section class="utility">
-      <section class="utility-title-bar">
-        <div class="grid-row flex-align-center">
-          <div class="grid-col-fill">
-            <h3 class="grid-col-auto utility-title">Text indent</h3>
-            <p class="utility-property">CSS property: <span class="utility-property-code">text-indent</span></p>
-          </div>
-
-          <ul class="grid-col-auto utility-scope">
-            <li class="utility-scope-button-disabled">responsive</li>
-            <li class="utility-scope-button-disabled">active</li>
-            <li class="utility-scope-button-disabled">hover</li>
-            <li class="utility-scope-button-disabled">focus</li>
-            <li class="utility-scope-button-disabled">visited</li>
-          </ul>
-        </div>
-      </section>
-
+      {% include utilities/utility-title-bar.html
+        title="Text indent"
+      %}
       <section class="padding-x-3">
         <div class="grid-row grid-gap-lg">
           <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start utility-example-container">

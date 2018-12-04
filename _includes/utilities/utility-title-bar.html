@@ -2,7 +2,9 @@
   <div class="usa-grid-row">
     <div class="usa-grid-col utility-name">
       <h3 class="utility-title">{{ include.title }}</h3>
-      <p class="utility-property">CSS property: <span class="utility-property-code">{{ include.property }}</span></p>
+      {% if include.property or include.property == nil %}
+        <p class="utility-property">CSS property: <span class="utility-property-code">{% if include.property == nil %}{{ include.title | slugify }}{% else %}{{ include.property }}{% endif %}</span></p>
+      {% endif %}
     </div>
 
     <ul class="usa-grid-col utility-scope">

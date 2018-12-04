@@ -103,23 +103,10 @@ utilities:
   {% include utilities/utilities-section-title-bar.html %}
 
   <section class="utility" id="margin">
-    <section class="utility-title-bar">
-      <div class="grid-row flex-align-center">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Margin</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">margin</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section><!-- utility-title-bar -->
-
+    {% include utilities/utility-title-bar.html
+      title="Margin"
+      responsive=true
+    %}
     <section class="utility-examples">
       <h4 class="utility-examples-title margin-bottom-3">Margin on all sides</h4>
       <div class="grid-row">
@@ -354,23 +341,10 @@ utilities:
   </section><!-- #margin -->
 
   <section class="utility" id="padding">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Padding</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">padding</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
-
+    {% include utilities/utility-title-bar.html
+      title="Padding"
+      responsive=true
+    %}
     <section class="utility-examples">
       <h4 class="utility-examples-title margin-bottom-3">Padding on all sides</h4>
       <div class="grid-row">

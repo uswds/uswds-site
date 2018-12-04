@@ -139,22 +139,9 @@ utilities:
 {% include utilities/utilities-section-title-bar.html %}
 
   <section class="utility" id="utility-display">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Display</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">display</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Display"
+    %}
     <section class="utility-examples">
       <div class="display-block border-1px padding-2 margin-bottom-05"><span class="utility-class">.display-block</span></div>
       <div class="display-flex border-1px padding-2 margin-bottom-05"><span class="utility-class">.display-flex</span></div>
@@ -193,21 +180,9 @@ utilities:
   </section><!-- utility -->
 
   <section class="utility" id="opacity">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Opacity</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">opacity</span></p>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Opacity"
+    %}
 
     <section class="utility-examples">
       <div class="bg-primary padding-3 radius-md margin-bottom-2">
@@ -304,21 +279,9 @@ utilities:
   </section>
 
   <section class="utility" id="overflow">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Overflow</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">overflow</span></p>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Overflow"
+    %}
 
     <section class="utility-examples">
 
@@ -405,21 +368,9 @@ utilities:
   </section><!-- utility -->
 
   <section class="utility" id="position">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Position</h3>
-          <p class="utility-property">CSS properties: <span class="utility-property-code">position</span></p>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Position"
+    %}
 
     <section class="utility-examples">
       <div class="grid-row grid-gap">
@@ -588,21 +539,10 @@ utilities:
   </section>
 
   <section class="utility" id="relative-position">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Relative position</h3>
-          <p class="utility-property">CSS properties: <span class="utility-property-code">top, bottom, left, right</span></p>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Relative position"
+      property="top, bottom, left, right"
+    %}
 
     <section class="utility-examples">
       <div class="grid-row grid-gap">
@@ -661,20 +601,10 @@ utilities:
   </section>
 
   <section class="utility" id="pinning">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Pin</h3>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Pin"
+      property=false
+    %}
 
     <section class="utility-examples">
       <p class="utility-note margin-bottom-3">The <code>pin</code> utilities position an item absolutely to the specified side.</p>
@@ -768,22 +698,9 @@ utilities:
   </section>
 
   <section class="utility z-bottom position-relative" id="z-index">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Z-index</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">z-index</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Z-index"
+    %}
     <section class="utility-examples position-relative padding-bottom-1">
       <div class="bg-white border border-ink radius-lg width-card-lg padding-2  minh-10 margin-left-0 display-flex flex-justify flex-align-start z-auto">
         <span class="utility-class">.z-auto</span>

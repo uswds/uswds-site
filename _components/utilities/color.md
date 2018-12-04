@@ -57,22 +57,12 @@ utilities:
 {% include utilities/utilities-section-title-bar.html %}
 
   <section class="utility" id="text-color">
-    <section class="utility-title-bar">
-      <div class="grid-row flex-align-center">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Text color</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">color</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-active"><a href="#state-variants">hover</a></li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Text color"
+      property="color"
+      responsive=true
+      hover=true
+    %}
 
     <section class="utility-examples">
       <h4 class="utility-examples-title">Project theme colors <a class="utility-examples-helper" href="{{ site.baseurl }}/style-tokens/color/theme-tokens/">Read more about project theme colors</a></h4>
@@ -161,22 +151,11 @@ utilities:
   </section>
 
   <section class="utility" id="background-color">
-    <section class="utility-title-bar">
-      <div class="grid-row flex-align-center">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Background color</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">background-color</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-active"><a href="#state-variants">hover</a></li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Background color"
+      property="background-color"
+      hover=true
+    %}
 
     <section class="utility-examples">
       <h3 class="font-sans-4 margin-top-0 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Project theme colors <a class="utility-examples-helper" href="{{ site.baseurl }}/style-tokens/color/theme-tokens/">Read more about project theme colors</a></h3>

@@ -2048,7 +2048,6 @@ li {
   @include u-padding-y(2px);
   @include u-padding-x(.5);
   @include u-radius('sm');
-  white-space: nowrap;
 }
 
 .utility-value {

@@ -189,17 +189,21 @@ utilities:
       title="Height"
     %}
     <section class="utility-examples">
-      <div class="grid-row grid gap">
-        {% for item in height_values %}
-          <div class="grid-col-{% if forloop.last %}fill{% else %}2{% endif %} utility-example-container display-flex flex-column flex-justify-end">
+      {% for item in height_values %}
+        <div class="utility-example-container">
+          <div class="usa-grid-row">
+            <div class="usa-grid-col utility-example-class">
+              <span class="utility-class">.height-{{ item.token }}</span>
+            </div>
+            <div class="usa-grid-col utility-example-value">
+              <span class="utility-value">{{ item.value }}</span>
+            </div>
+            <div class="usa-grid-col utility-example">
               <div class="width-4 bg-secondary-light height-{{ item.token }}"></div>
-              <div class="display-flex flex-column flex-align-start padding-top-2">
-                <span class="utility-class">.height-{{ item.token }}</span>
-                <span class="utility-value">{{ item.value }}</span>
-              </div>
+            </div>
           </div>
-        {% endfor %}
-      </div>
+        </div>
+      {% endfor %}
     </section><!-- .utility-examples -->
   </section><!-- .utility#height -->
 
@@ -208,19 +212,21 @@ utilities:
       title="Width"
     %}
     <section class="utility-examples">
-      <div class="grid-row grid gap">
-        {% for item in width_values %}
-          <div class="grid-col-12 utility-example-container grid-row flex-align-center {% if forloop.last %} border-0{% endif %}">
-              <div class="grid-col-3 display-flex flex-column flex-align-start">
-                <span class="utility-class">.width-{{ item.token }}</span>
-                <span class="utility-value">{{ item.value }}</span>
-              </div>
-              <div class="grid-col-9 padding-left-2">
-                <div class="height-4 bg-secondary-light width-{{ item.token }} maxw-full grid-col-auto"></div>
-              </div>
+      {% for item in width_values %}
+        <div class="utility-example-container">
+          <div class="usa-grid-row">
+            <div class="usa-grid-col utility-example-class">
+              <span class="utility-class">.width-{{ item.token }}</span>
+            </div>
+            <div class="usa-grid-col utility-example-value">
+              <span class="utility-value">{{ item.value }}</span>
+            </div>
+            <div class="usa-grid-col utility-example">
+              <div class="height-4 bg-secondary-light width-{{ item.token }} maxw-full grid-col-auto"></div>
+            </div>
           </div>
-        {% endfor %}
-      </div>
+        </div>
+      {% endfor %}
     </section><!-- .utility-examples -->
   </section><!-- .utility#width -->
 
@@ -286,39 +292,67 @@ utilities:
 
   <section class="utility" id="aspect">
     {% include utilities/utility-title-bar.html
-      title="Aspect ration"
+      title="Aspect ratio"
       property=false
     %}
     <section class="utility-examples">
-      <div class="grid-row grid-gap">
-        <div class="grid-col utility-example-container display-flex flex-column flex-justify">
-          <div class="width-full add-aspect-9x16 bg-secondary-light"></div>
-          <div class="display-flex flex-column flex-align-start margin-top-2">
+      <div class="utility-example-container">
+        <div class="usa-grid-row">
+          <div class="usa-grid-col utility-example-class">
             <span class="utility-class">.add-aspect-9x16</span>
           </div>
+          <div class="usa-grid-col utility-example-value">
+          </div>
+          <div class="usa-grid-col utility-example">
+            <div class="width-8 add-aspect-9x16 bg-secondary-light"></div>
+          </div>
         </div>
-        <div class="grid-col utility-example-container display-flex flex-column flex-justify">
-          <div class="width-full add-aspect-1x1 bg-secondary-light"></div>
-          <div class="display-flex flex-column flex-align-start margin-top-2">
+      </div>
+      <div class="utility-example-container">
+        <div class="usa-grid-row">
+          <div class="usa-grid-col utility-example-class">
             <span class="utility-class">.add-aspect-1x1</span>
           </div>
+          <div class="usa-grid-col utility-example-value">
+          </div>
+          <div class="usa-grid-col utility-example">
+            <div class="width-8 add-aspect-1x1 bg-secondary-light"></div>
+          </div>
         </div>
-        <div class="grid-col utility-example-container display-flex flex-column flex-justify">
-          <div class="width-full add-aspect-4x3 bg-secondary-light"></div>
-          <div class="display-flex flex-column flex-align-start margin-top-2">
+      </div>
+      <div class="utility-example-container">
+        <div class="usa-grid-row">
+          <div class="usa-grid-col utility-example-class">
             <span class="utility-class">.add-aspect-4x3</span>
           </div>
-        </div>
-        <div class="grid-col utility-example-container display-flex flex-column flex-justify">
-          <div class="width-full add-aspect-16x9 bg-secondary-light"></div>
-          <div class="display-flex flex-column flex-align-start margin-top-2">
-            <span class="utility-class">.add-aspect-16x9</span>
+          <div class="usa-grid-col utility-example-value">
+          </div>
+          <div class="usa-grid-col utility-example">
+            <div class="width-8 add-aspect-4x3 bg-secondary-light"></div>
           </div>
         </div>
-        <div class="grid-col utility-example-container display-flex flex-column flex-justify">
-          <div class="width-full add-aspect-2x1 bg-secondary-light"></div>
-          <div class="display-flex flex-column flex-align-start margin-top-2">
+      </div>
+      <div class="utility-example-container">
+        <div class="usa-grid-row">
+          <div class="usa-grid-col utility-example-class">
+            <span class="utility-class">.add-aspect-16x9</span>
+          </div>
+          <div class="usa-grid-col utility-example-value">
+          </div>
+          <div class="usa-grid-col utility-example">
+            <div class="width-8 add-aspect-16x9 bg-secondary-light"></div>
+          </div>
+        </div>
+      </div>
+      <div class="utility-example-container">
+        <div class="usa-grid-row">
+          <div class="usa-grid-col utility-example-class">
             <span class="utility-class">.add-aspect-2x1</span>
+          </div>
+          <div class="usa-grid-col utility-example-value">
+          </div>
+          <div class="usa-grid-col utility-example">
+            <div class="width-8 add-aspect-2x1 bg-secondary-light"></div>
           </div>
         </div>
       </div>
@@ -331,19 +365,23 @@ utilities:
       property=false
     %}
     <section class="utility-examples">
-      <div class="grid-row grid-gap">
-        {% for item in circle_values %}
-          {% if forloop.index > 1 %}
-            <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.index > 13 and forloop.last == false %} grid-col-6{% elsif forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
-              <div class="circle-{{ item.token }} bg-secondary-light"></div>
-              <div class="display-flex flex-column flex-align-start margin-top-2">
+      {% for item in circle_values %}
+        {% if forloop.index > 1 %}
+          <div class="utility-example-container">
+            <div class="usa-grid-row">
+              <div class="usa-grid-col utility-example-class">
                 <span class="utility-class">.circle-{{ item.token }}</span>
+              </div>
+              <div class="usa-grid-col utility-example-value">
                 <span class="utility-value margin-left-2px">{{ item.value }}</span>
               </div>
+              <div class="usa-grid-col utility-example">
+                <div class="circle-{{ item.token }} bg-secondary-light"></div>
+              </div>
             </div>
-          {% endif %}
-        {% endfor %}
-      </div>
+          </div>
+        {% endif %}
+      {% endfor %}
     </section><!-- .utility-examples -->
   </section><!-- .utility#circle -->
 
@@ -353,19 +391,23 @@ utilities:
       property=false
     %}
     <section class="utility-examples">
-      <div class="grid-row grid-gap">
-        {% for item in square_values %}
-          {% if forloop.index > 1 %}
-            <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.index > 13 and forloop.last == false %} grid-col-6{% elsif forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
-              <div class="square-{{ item.token }} bg-secondary-light"></div>
-              <div class="display-flex flex-column flex-align-start margin-top-2">
-                <span class="utility-class">.square-{{ item.token }}</span>
-                <span class="utility-value margin-left-2px">{{ item.value }}</span>
-              </div>
+      {% for item in square_values %}
+        {% if forloop.index > 1 %}
+        <div class="utility-example-container">
+          <div class="usa-grid-row">
+            <div class="usa-grid-col utility-example-class">
+              <span class="utility-class">.square-{{ item.token }}</span>
             </div>
-          {% endif %}
-        {% endfor %}
-      </div>
+            <div class="usa-grid-col utility-example-value">
+              <span class="utility-value margin-left-2px">{{ item.value }}</span>
+            </div>
+            <div class="usa-grid-col utility-example">
+              <div class="square-{{ item.token }} bg-secondary-light"></div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
     </section><!-- .utility-examples -->
   </section><!-- .utility#square -->
 </section>

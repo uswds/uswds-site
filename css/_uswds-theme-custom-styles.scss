@@ -2046,6 +2046,7 @@ li {
   @include u-padding-y(2px);
   @include u-padding-x(.5);
   @include u-radius('sm');
+  white-space: nowrap;
 }
 
 .utility-value {
@@ -2075,10 +2076,12 @@ li {
   @include u-margin-bottom(0);
   @include u-maxw(none);
   @include u-padding-top(1);
+  overflow: hidden;
 
   & > .usa-grid-row {
     @include grid-gap('md');
-    @include u-flex('row', 'align-center');
+    @include u-flex('row', 'align-center', 'no-wrap');
+    flex-wrap: nowrap !important; // TODO: remove when fixed in uswds
   }
 }
 

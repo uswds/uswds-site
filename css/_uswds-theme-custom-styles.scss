@@ -2086,6 +2086,8 @@ li {
 }
 
 .utility-example {
+  max-width: 50%;
+
   &.usa-grid-col {
     @include grid-col('auto');
   }

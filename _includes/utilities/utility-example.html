@@ -1,0 +1,13 @@
+<div class="utility-example-container">
+  <div class="usa-grid-row">
+    <div class="usa-grid-col utility-example-class{% if include.utilityClasses %} {{ include.utilityClasses }}{% endif %}">
+      <span class="utility-class">{{ include.utility }}</span>
+    </div>
+    <div class="usa-grid-col utility-example-value">
+      <span class="utility-value">{{ include.value }}</span>
+    </div>
+    <div class="usa-grid-col utility-example{% if include.exampleClasses %} {{ include.exampleClasses }}{% endif %}">
+      {{ include.example }}
+    </div>
+  </div>
+</div>

@@ -2028,8 +2028,10 @@ li {
 
 .utility-examples-title {
   @include u-font('sans', 4);
-  @include u-margin-bottom(1);
-  @include u-margin-top(4);
+  @include u-padding-top(4);
+  margin-bottom: 0;
+  margin-top: units(1);
+  border-top: units(1px) solid color('gray-10');
 }
 
 .utility-examples-helper {
@@ -2052,7 +2054,6 @@ li {
 .utility-value {
   @extend .utility-class;
   @include u-bg('secondary-lighter');
-  @include u-margin-top(2px);
 }
 
 .utility-value-color {
@@ -2086,7 +2087,7 @@ li {
 }
 
 .utility-example {
-  max-width: 50%;
+  max-width: 70%;
 
   &.usa-grid-col {
     @include grid-col('auto');

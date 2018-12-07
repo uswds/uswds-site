@@ -2123,12 +2123,20 @@ li {
 }
 
 .utility-note {
-  @include u-border-top('1px', 'gray-10');
+  @include u-bg('gold-20v');
   @include u-font('sans', 'xs');
   @include u-line-height('sans', 5);
+  @include u-margin-y(2);
   @include u-measure(none);
-  @include u-margin-bottom(2);
-  @include u-padding-top(2);
+  @include u-padding(2);
+  @include u-radius('md');
+  @include u-text('black-transparent-80');
+
+  & + .utility-examples-title {
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
+  }
 }
 
 .utility-text {

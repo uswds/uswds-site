@@ -1,9 +1,9 @@
-<div class="utility-example-container">
-  <div class="usa-grid-row">
+<div class="utility-example-container{% if include.containerClasses %} {{ include.containerClasses }}{% endif %}">
+  <div class="usa-grid-row{% if include.rowClasses %} {{ include.rowClasses }}{% endif %}">
     <div class="usa-grid-col utility-example-class{% if include.utilityClasses %} {{ include.utilityClasses }}{% endif %}">
       <span class="utility-class">{{ include.utility }}</span>
     </div>
-    <div class="usa-grid-col utility-example-value">
+    <div class="usa-grid-col utility-example-value{% if include.valueClasses %} {{ include.valueClasses }}{% endif %}">
       <span class="utility-value">{{ include.value }}</span>
     </div>
     <div class="usa-grid-col utility-example{% if include.exampleClasses %} {{ include.exampleClasses }}{% endif %}">

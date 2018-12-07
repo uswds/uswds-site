@@ -60,18 +60,23 @@ utilities:
     %}
     <section class="utility-examples">
       <p class="utility-note"><strong>Note: </strong> The <code>outline</code> utilities apply a solid outline of specified width.</p>
-
-      <div class="grid-row">
-        {% for width in outline_widths %}
-          <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
-            <div class="outline-{{ width.token }} square-9 bg-base-lightest"></div>
-            <div class="display-flex flex-column flex-align-start margin-top-2">
-              <span class="utility-class">.outline-{{ width.token }}</span>
-              <span class="utility-value margin-top-2px">{{ width.value }}</span>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
+      {% for width in outline_widths %}
+        {% capture this_class %}
+          .outline-{{ width.token }}
+        {% endcapture %}
+        {% capture this_value %}
+          {{ width.value }}
+        {% endcapture %}
+        {% capture this_example %}
+        <div class="outline-{{ width.token }} square-9 bg-base-lightest"></div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          containerClasses="overflow-visible"
+          utility=this_class
+          value=this_value
+          example=this_example
+        %}
+      {% endfor %}
     </section><!-- exanples -->
   </section><!-- utility -->
 
@@ -80,25 +85,27 @@ utilities:
       title="Outline color"
     %}
     <section class="utility-examples">
-      <div class="grid-row">
-        {% for color in outline_colors %}
-          <p class="utility-example-container grid-col-12 display-flex flex-align-center">
-            <span class="flex-fill">
-              <span class="square-4 radius-sm text-middle padding-05 display-inline-block margin-right-1 bg-white ">
-                <span class="square-3 radius-sm display-block outline-1px outline-{{ color.token }}"></span>
-              </span>
-              <span class="square-4 radius-sm text-middle padding-05 display-inline-block margin-right-1 bg-ink">
-                <span class="square-3 radius-sm display-block outline-1px outline-{{ color.token }}"></span>
-              </span>
-              <span class="utility-class"><span class="text-light">.outline-1px</span>.outline-{{ color.token }}</span>
-            </span>
-            <span class="flex-auto utility-value-color">
-              <span class="utility-value-color-chip bg-{{ color.token }}"></span>
-              {{ color.value }}
-            </span>
-          </p>
-        {% endfor %}
-      </div>
+      {% for color in outline_colors %}
+        {% capture this_class %}
+          <span class="text-light">.outline-1px</span>.outline-{{ color.token }}
+        {% endcapture %}
+        {% capture this_value %}
+        <span class="utility-value-color-chip bg-{{ color.token }}"></span>{{ color.value }}
+        {% endcapture %}
+        {% capture this_example %}
+        <span class="square-4 radius-sm text-middle padding-05 display-inline-block margin-right-1 bg-white ">
+          <span class="square-3 radius-sm display-block outline-1px outline-{{ color.token }}"></span>
+        </span>
+        <span class="square-4 radius-sm text-middle padding-05 display-inline-block margin-right-1 bg-ink">
+          <span class="square-3 radius-sm display-block outline-1px outline-{{ color.token }}"></span>
+        </span>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          utility=this_class
+          value=this_value
+          example=this_example
+        %}
+      {% endfor %}
     </section>
   </section>
 </section>

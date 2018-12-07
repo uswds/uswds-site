@@ -2080,8 +2080,7 @@ li {
 
   & > .usa-grid-row {
     @include grid-gap('md');
-    @include u-flex('row', 'align-center', 'no-wrap');
-    flex-wrap: nowrap !important; // TODO: remove when fixed in uswds
+    @include u-flex('row', 'align-center');
   }
 }
 

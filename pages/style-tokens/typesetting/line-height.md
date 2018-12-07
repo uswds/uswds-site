@@ -24,6 +24,7 @@ Please see the [Typesetting]({{ site.baseurl }}/style-tokens/typesetting){:.text
       <tr>
         <th scope="col">Token</th>
         <th scope="col">Example</th>
+        <th scope="col">Usage</th>
         <th scope="col">Output</th>
       </tr>
     </thead>
@@ -42,6 +43,9 @@ Please see the [Typesetting]({{ site.baseurl }}/style-tokens/typesetting){:.text
           </td>
           <td data-title="Example">
             <div class="font-sans-4 tablet:font-sans-6 line-height-sans-{{ item.token }} measure-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</div>
+          </td>
+          <td data-title="Usage">
+            <div class="font-sans-3 line-height-sans-3 measure-2"><strong>usage:</strong> {{ item.usage }}</div>
           </td>
           <td data-title="Output">
             <span>

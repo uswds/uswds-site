@@ -109,59 +109,62 @@ utilities:
     %}
     <section class="utility-examples">
       <h4 class="utility-examples-title">Margin on all sides</h4>
-      {% for item in page.vals_positive %}
-        <div class="utility-example-container">
-          <div class="usa-grid-row">
-            <div class="usa-grid-col utility-example-class">
-              <span class="utility-class">.margin-{{ item.token }}</span>
-            </div>
-            <div class="usa-grid-col utility-example-value">
-              <span class="utility-value">{{ item.value }}</span>
-            </div>
-            <div class="usa-grid-col utility-example">
-              <div class="bg-secondary-light padding-{{ item.token }}">
-                <div class="square-4 border-1px bg-white"></div>
-              </div>
-            </div>
+        {% for item in page.vals_positive %}
+        {% capture this_class %}
+          .margin-{{ item.token }}
+        {% endcapture %}
+        {% capture this_value %}
+          {{ item.value }}
+        {% endcapture %}
+        {% capture this_example %}
+          <div class="bg-secondary-light padding-{{ item.token }}">
+            <div class="square-4 border-1px bg-white"></div>
           </div>
-        </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          utility=this_class
+          value=this_value
+          example=this_example
+        %}
       {% endfor %}
 
 
       <h4 class="utility-examples-title">Margin bottom</h4>
       {% for item in page.vals_negative reversed %}
-        <div class="utility-example-container">
-          <div class="usa-grid-row">
-            <div class="usa-grid-col utility-example-class">
-              <span class="utility-class">.margin-bottom-{{ item.token }}</span>
-            </div>
-            <div class="usa-grid-col utility-example-value">
-              <span class="utility-value">{{ item.value }}</span>
-            </div>
-            <div class="usa-grid-col utility-example">
-              <div class="position-relative square-4 border-1px bg-white">
-                <div class="bg-secondary-light pin-bottom pin-x height-{{ item.equiv }}"></div>
-              </div>
-            </div>
+        {% capture this_class %}
+          .margin-bottom-{{ item.token }}
+        {% endcapture %}
+        {% capture this_value %}
+          {{ item.value }}
+        {% endcapture %}
+        {% capture this_example %}
+          <div class="position-relative square-4 border-1px bg-white">
+            <div class="bg-secondary-light pin-bottom pin-x height-{{ item.equiv }}"></div>
           </div>
-        </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          utility=this_class
+          value=this_value
+          example=this_example
+        %}
       {% endfor %}
       {% for item in page.vals_positive %}
-        <div class="utility-example-container">
-          <div class="usa-grid-row">
-            <div class="usa-grid-col utility-example-class">
-              <span class="utility-class">.margin-bottom-{{ item.token }}</span>
-            </div>
-            <div class="usa-grid-col utility-example-value">
-              <span class="utility-value">{{ item.value }}</span>
-            </div>
-            <div class="usa-grid-col utility-example">
-              <div class="bg-secondary-light padding-bottom-{{ item.token }}">
-                <div class="square-4 border-1px bg-white"></div>
-              </div>
-            </div>
+        {% capture this_class %}
+          .margin-bottom-{{ item.token }}
+        {% endcapture %}
+        {% capture this_value %}
+          {{ item.value }}
+        {% endcapture %}
+        {% capture this_example %}
+          <div class="bg-secondary-light padding-bottom-{{ item.token }}">
+            <div class="square-4 border-1px bg-white"></div>
           </div>
-        </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          utility=this_class
+          value=this_value
+          example=this_example
+        %}
       {% endfor %}
 
       <h4 class="utility-examples-title">Margin top</h4>

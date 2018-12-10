@@ -38,44 +38,32 @@ utilities:
       property="box-shadow"
     %}
     <section class="utility-examples">
-      <div class="grid-row">
-        <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-          <div class="bg-secondary-light display-inline-block">
-            <div class="square-9 bg-white shadow-none"></div>
-          </div>
-          <p class="utility-class margin-top-3">.shadow-none</p>
-        </div>
-        <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-          <div class="bg-secondary-light display-inline-block">
-            <div class="square-9 bg-white shadow-1"></div>
-          </div>
-          <p class="utility-class margin-top-3">.shadow-1</p>
-        </div>
-        <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-          <div class="bg-secondary-light display-inline-block">
-            <div class="square-9 bg-white shadow-2"></div>
-          </div>
-          <p class="utility-class margin-top-3">.shadow-2</p>
-        </div>
-        <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-          <div class="bg-secondary-light display-inline-block">
-            <div class="square-9 bg-white shadow-3"></div>
-          </div>
-          <p class="utility-class margin-top-3">.shadow-3</p>
-        </div>
-        <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-          <div class="bg-secondary-light display-inline-block">
-            <div class="square-9 bg-white shadow-4"></div>
-          </div>
-          <p class="utility-class margin-top-3">.shadow-4</p>
-        </div>
-        <div class="utility-example-container grid-col-fill text-center display-flex flex-column flex-justify flex-align-start">
-          <div class="bg-secondary-light display-inline-block">
-            <div class="square-9 bg-white shadow-5"></div>
-          </div>
-          <p class="utility-class margin-top-3">.shadow-5</p>
-        </div>
-      </div>
+      {% for item in site.data.tokens.shadow %}
+        {% assign thisWrap =              false %}
+        {% assign thisContainerClasses =  'overflow-visible' %}
+        {% assign thisUtilityClasses =    nil %}
+        {% assign thisValueClasses =      'display-none tablet:display-block' %}
+        {% assign thisExampleClasses =    'padding-y-2' %}
+        {% capture thisClass %}
+          .shadow-{{ item.token }}
+        {% endcapture %}
+        {% capture thisValue %}
+          {{ item.value }}
+        {% endcapture %}
+        {% capture thisExample %}
+          <div class="square-9 bg-white shadow-{{ item.token }}"></div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          wrap = thisWrap
+          containerClasses = thisContainerClasses
+          utility = thisClass
+          utilityClasses = thisUtilityClasses
+          value = thisValue
+          valueClasses = thisValueClasses
+          example = thisExample
+          exampleClasses = thisExampleClasses
+        %}
+      {% endfor %}
     </section><!-- utility-examples -->
   </section><!-- utility -->
 </section><!-- utilities-section -->

@@ -96,12 +96,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .shadow-<a href="{{ site.baseurl }}/style-tokens/shadow/" class="token">shadow</a>
+            .shadow-<a href="{{ site.baseurl }}/design-tokens/shadow/" class="token">shadow</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-shadow(<a href="{{ site.baseurl }}/style-tokens/shadow/" class="token">shadow</a>)
+            u-shadow(<a href="{{ site.baseurl }}/design-tokens/shadow/" class="token">shadow</a>)
           </span>
         </td>
         <td data-title="Example">

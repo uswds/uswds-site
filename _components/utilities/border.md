@@ -615,12 +615,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .border-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+            .border-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-border(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+            u-border(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -632,12 +632,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .border-<code>modifier</code>-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+            .border-<code>modifier</code>-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-border-<code>modifier</code>(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+            u-border-<code>modifier</code>(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -649,12 +649,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .border-<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>
+            .border-<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-border(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)
+            u-border(<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>)
           </span>
         </td>
         <td data-title="Example">

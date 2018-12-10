@@ -1,8 +1,8 @@
 ---
-permalink: /style-tokens/typesetting/font/
+permalink: /design-tokens/typesetting/font/
 layout: styleguide
 title: Font
-category: Style tokens
+category: Design tokens
 lead: USWDS font tokens combine our font-family and font-size tokens into a single token that sets the font size and family together. Since USWDS font size is customized to specific font families, it’s often best to typeset them together using a font token.
 type: docs
 subnav:

@@ -581,12 +581,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:maxw-card-lg">
           <span>
-            .flex-<a href="{{ site.baseurl }}/style-tokens/flex/" class="token">flex</a>
+            .flex-<a href="{{ site.baseurl }}/design-tokens/flex/" class="token">flex</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-flex(<a href="{{ site.baseurl }}/style-tokens/flex/" class="token">flex</a>)
+            u-flex(<a href="{{ site.baseurl }}/design-tokens/flex/" class="token">flex</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -666,12 +666,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .order-<a href="{{ site.baseurl }}/style-tokens/order/" class="token">order</a>
+            .order-<a href="{{ site.baseurl }}/design-tokens/order/" class="token">order</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-order(<a href="{{ site.baseurl }}/style-tokens/order/" class="token">order</a>)
+            u-order(<a href="{{ site.baseurl }}/design-tokens/order/" class="token">order</a>)
           </span>
         </td>
         <td data-title="Example">

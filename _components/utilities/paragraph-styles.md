@@ -402,12 +402,12 @@ vals_negative:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:maxw-card-lg">
           <span>
-            .line-height-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a>
+            .line-height-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-line-height(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a>)
+            u-line-height(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -419,12 +419,12 @@ vals_negative:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .measure-<a href="{{ site.baseurl }}/style-tokens/typesetting/measure/" class="token">measure</a>
+            .measure-<a href="{{ site.baseurl }}/design-tokens/typesetting/measure/" class="token">measure</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-measure(<a href="{{ site.baseurl }}/style-tokens/typesetting/measure/" class="token">measure</a>)
+            u-measure(<a href="{{ site.baseurl }}/design-tokens/typesetting/measure/" class="token">measure</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -453,12 +453,12 @@ vals_negative:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .text-indent-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+            .text-indent-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-text-indent(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+            u-text-indent(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Example">

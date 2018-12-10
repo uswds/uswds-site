@@ -331,12 +331,12 @@ utilities:
     <tr>
       <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
         <span>
-          .text-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-weight/" class="token">weight</a>
+          .text-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-weight/" class="token">weight</a>
         </span>
       </td>
       <td data-title="Mixin">
         <span>
-          u-text(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-weight/" class="token">weight</a>)
+          u-text(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-weight/" class="token">weight</a>)
         </span>
       </td>
       <td data-title="Example">
@@ -382,12 +382,12 @@ utilities:
     <tr>
       <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
         <span>
-          .underline-<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>
+          .underline-<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>
         </span>
       </td>
       <td data-title="Mixin">
         <span>
-          u-underline(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)
+          u-underline(<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>)
         </span>
       </td>
       <td data-title="Example">

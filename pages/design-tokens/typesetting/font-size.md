@@ -1,8 +1,8 @@
 ---
-permalink: /style-tokens/typesetting/font-size/
+permalink: /design-tokens/typesetting/font-size/
 layout: styleguide
 title: Font size
-category: Style tokens
+category: Design tokens
 lead: Font size tokens determine how big or small the referenced text will appear on the screen. The USWDS typescale includes nine regularized theme tokens drawn from 21 system tokens.
 type: docs
 subnav:
@@ -17,7 +17,7 @@ subnav:
 {% assign tokens = site.data.tokens.typesetting.size %}
 
 {:.bg-gold-20v.padding-2.radius-md}
-Please see the [Typesetting]({{ site.baseurl }}/style-tokens/typesetting){:.text-ink.text-bold} section for more about font size normalization and how USWDS uses tokens for typesetting. The documentation below displays a value in pixels, rather than the actual final output, which will be normalized depending on the typeface and output in `rem` customized to your project settings.
+Please see the [Typesetting]({{ site.baseurl }}/design-tokens/typesetting){:.text-ink.text-bold} section for more about font size normalization and how USWDS uses tokens for typesetting. The documentation below displays a value in pixels, rather than the actual final output, which will be normalized depending on the typeface and output in `rem` customized to your project settings.
 
 ## Theme tokens
 The following chart shows the USWDS default settings for the nine theme size tokens. Customize the output to your project needs in `$uswds-theme-typography.scss` by setting the variables listed below. If your project requires more than nine sizes, use [system size tokens](#system-tokens) as needed.
@@ -125,7 +125,7 @@ The following chart shows the USWDS default settings for the nine theme size tok
 </div>
 
 ## Using size tokens
-Your context and coding style determine how you access USWDS font size tokens in code. Because of [font size normalization]({{ site.baseurl }}/style-tokens/typesetting/), font size functions, utilities, and mixins also require a [family]({{ site.baseurl }}/style-tokens/typesetting/font-family/){:.token} token.
+Your context and coding style determine how you access USWDS font size tokens in code. Because of [font size normalization]({{ site.baseurl }}/design-tokens/typesetting/), font size functions, utilities, and mixins also require a [family]({{ site.baseurl }}/design-tokens/typesetting/font-family/){:.token} token.
 
 <div class="site-table-wrapper">
   <table class="usa-table-borderless site-table-responsive">
@@ -145,7 +145,7 @@ Your context and coding style determine how you access USWDS font size tokens in
         </td>
         <td data-title="Usage">
           <span>
-            size(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)
+            size(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -163,7 +163,7 @@ Your context and coding style determine how you access USWDS font size tokens in
         </td>
         <td data-title="Usage">
           <span>
-            u-font-size(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)
+            u-font-size(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -182,7 +182,7 @@ Your context and coding style determine how you access USWDS font size tokens in
         </td>
         <td data-title="Usage">
           <span>
-            u-font(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)
+            u-font(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -199,7 +199,7 @@ Your context and coding style determine how you access USWDS font size tokens in
         </td>
         <td data-title="Usage">
           <span>
-            <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>
+            <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>
           </span>
         </td>
         <td data-title="Example">
@@ -218,7 +218,7 @@ Your context and coding style determine how you access USWDS font size tokens in
         </td>
         <td data-title="Usage">
           <span>
-            .font-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>
+            .font-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>
           </span>
         </td>
         <td data-title="Example">

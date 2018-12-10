@@ -1,8 +1,8 @@
 ---
-permalink: /style-tokens/typesetting/font-weight/
+permalink: /design-tokens/typesetting/font-weight/
 layout: styleguide
 title: Font weight
-category: Style tokens
+category: Design tokens
 lead: USWDS has up to seven font weight theme tokens drawn from nine system tokens.
 type: docs
 subnav:
@@ -149,7 +149,7 @@ Your context and coding style determine how you access USWDS font weight tokens 
         </td>
         <td data-title="Usage">
           <span class="line-height-sans-6">
-            weight(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-weight/" class="token">weight</a>)
+            weight(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-weight/" class="token">weight</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -166,7 +166,7 @@ Your context and coding style determine how you access USWDS font weight tokens 
         </td>
         <td data-title="Usage">
           <span>
-            u-text(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-weight/" class="token">weight</a>)
+            u-text(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-weight/" class="token">weight</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -183,7 +183,7 @@ Your context and coding style determine how you access USWDS font weight tokens 
         </td>
         <td data-title="Usage">
           <span>
-            <a href="{{ site.baseurl }}/style-tokens/typesetting/font-weight/" class="token">weight</a>
+            <a href="{{ site.baseurl }}/design-tokens/typesetting/font-weight/" class="token">weight</a>
           </span>
         </td>
         <td data-title="Example">
@@ -200,7 +200,7 @@ Your context and coding style determine how you access USWDS font weight tokens 
         </td>
         <td data-title="Usage">
           <span>
-            .text-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-weight/" class="token">weight</a>
+            .text-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-weight/" class="token">weight</a>
           </span>
         </td>
         <td data-title="Example">

@@ -65,7 +65,7 @@ utilities:
     %}
 
     <section class="utility-examples">
-      <h4 class="utility-examples-title">Project theme colors <a class="utility-examples-helper" href="{{ site.baseurl }}/style-tokens/color/theme-tokens/">Read more about project theme colors</a></h4>
+      <h4 class="utility-examples-title">Project theme colors <a class="utility-examples-helper" href="{{ site.baseurl }}/design-tokens/color/theme-tokens/">Read more about project theme colors</a></h4>
 
       <div class="grid-row">
         {% for color in theme_colors %}
@@ -158,7 +158,7 @@ utilities:
     %}
 
     <section class="utility-examples">
-      <h3 class="font-sans-4 margin-top-0 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Project theme colors <a class="utility-examples-helper" href="{{ site.baseurl }}/style-tokens/color/theme-tokens/">Read more about project theme colors</a></h3>
+      <h3 class="font-sans-4 margin-top-0 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Project theme colors <a class="utility-examples-helper" href="{{ site.baseurl }}/design-tokens/color/theme-tokens/">Read more about project theme colors</a></h3>
       <div class="grid-row">
         {% for color in theme_colors %}
           {% assign system = system-colors | where: 'token', color.default %}
@@ -233,12 +233,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .text-<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>
+            .text-<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-text(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)
+            u-text(<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -250,12 +250,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .bg-<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>
+            .bg-<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-bg(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)
+            u-bg(<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>)
           </span>
         </td>
         <td data-title="Example">

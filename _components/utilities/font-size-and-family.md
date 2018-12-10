@@ -56,7 +56,7 @@ utilities:
 
       <h4 class="utility-examples-title margin-bottom-2">Type-based size and family utilities</h4>
 
-      <p class="utility-note"><strong>Note:</strong> You can modify both the default theme sizes and default typefaces in your project settings. Use valid system tokens following the guidance in the <strong><a href="{{ site.baseurl }}/style-tokens/typesetting/">Typesetting</a></strong> section of USWDS <a href="{{ site.baseurl }}/style-tokens/">style tokens</a> documentation.</p>
+      <p class="utility-note"><strong>Note:</strong> You can modify both the default theme sizes and default typefaces in your project settings. Use valid system tokens following the guidance in the <strong><a href="{{ site.baseurl }}/design-tokens/typesetting/">Typesetting</a></strong> section of USWDS <a href="{{ site.baseurl }}/design-tokens/">design tokens</a> documentation.</p>
 
 
       {% for family in tokens.family.type %}
@@ -102,7 +102,7 @@ utilities:
 
       <h4 class="utility-examples-title">Role-based size and family utilities</h4>
 
-      <p class="utility-note"><strong>Note:</strong> You can modify both the default theme sizes and default typefaces in your project settings. Use valid system tokens following the guidance in the <strong><a href="{{ site.baseurl }}/style-tokens/typesetting/">Typesetting</a></strong> section of USWDS <a href="{{ site.baseurl }}/style-tokens/">style tokens</a> documentation.</p>
+      <p class="utility-note"><strong>Note:</strong> You can modify both the default theme sizes and default typefaces in your project settings. Use valid system tokens following the guidance in the <strong><a href="{{ site.baseurl }}/design-tokens/typesetting/">Typesetting</a></strong> section of USWDS <a href="{{ site.baseurl }}/design-tokens/">design tokens</a> documentation.</p>
 
       {% for role in tokens.family.role %}
         {% if role.default %}
@@ -198,12 +198,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .font-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>
+            .font-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-font(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)
+            u-font(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -215,12 +215,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .font-family-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>
+            .font-family-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-font-family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>)
+            u-font-family(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>)
           </span>
         </td>
         <td data-title="Example">

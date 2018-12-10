@@ -126,12 +126,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .outline-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+            .outline-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-outline(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+            u-outline(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -143,12 +143,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .outline-color-<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>
+            .outline-color-<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-outline-color(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)
+            u-outline-color(<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>)
           </span>
         </td>
         <td data-title="Example">

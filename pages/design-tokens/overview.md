@@ -1,34 +1,34 @@
 ---
-permalink: /style-tokens/
+permalink: /design-tokens/
 layout: styleguide
-title: Style tokens
-category: Style tokens
-lead: USWDS visual design is based on consistent palettes of typography, spacing units, color, and other discrete elements of style we call **style tokens**{:.font-sans-lg}.
+title: Design tokens
+category: Design tokens
+lead: USWDS visual design is based on consistent palettes of typography, spacing units, color, and other discrete elements of style we call **design tokens**{:.font-sans-lg}.
 type: docs
 subnav:
-  - text: Introducing style tokens
-    href: '#introducing-style-tokens'
+  - text: Introducing design tokens
+    href: '#introducing-design-tokens'
   - text: Keys and values
     href: '#keys-and-values'
-  - text: Using style tokens
-    href: '#using-style-tokens'
+  - text: Using design tokens
+    href: '#using-design-tokens'
 ---
 
 {{ page.collection | slugify }}
 
-## Introducing style tokens
+## Introducing design tokens
 
 Anything we see on a website is built from elements of style: elements like color, spacing, typography, line height, and opacity. The CSS rules associated with these elements can accept a broad continuum of values — in the case of color, there are over 16 million separate colors in the RGB color space. Font size, line height, spacing, and others can accept a similarly wide range of values.
 
-This degree of choice can slow down design work and make communication between designer and developer unnecessarily granular. The US Web Design System seeks to maximize design efficiency and improve communication with **style tokens**: the discrete palettes of values from which we base all our visual design.
+This degree of choice can slow down design work and make communication between designer and developer unnecessarily granular. The US Web Design System seeks to maximize design efficiency and improve communication with **design tokens**: the discrete palettes of values from which we base all our visual design.
 
-Style tokens are a limited set of discrete options, just as a scale of musical notes is drawn from an infinite spectrum of possible frequencies. To extend the metaphor, USWDS style tokens are the notes from which we compose our visual designs.
+Design tokens are a limited set of discrete options, just as a scale of musical notes is drawn from an infinite spectrum of possible frequencies. To extend the metaphor, USWDS design tokens are the notes from which we compose our visual designs.
 
 {:.padding-y-2}
-![continuous and tokenized values]({{ site.baseurl }}/assets/img/style-tokens/continuous-v-token.svg)
+![continuous and tokenized values]({{ site.baseurl }}/assets/img/design-tokens/continuous-v-token.svg)
 
 ### Example: Measure (line length)
-For example, measure (or line length) expressed with the `max-width` CSS property can accept any value in units like `em`, `rem`, `ch`, `px` to at least two decimal places. USWDS limits itself to 6 [measure]({{ site.baseurl }}/style-tokens/typesetting/measure/){:.token} tokens:
+For example, measure (or line length) expressed with the `max-width` CSS property can accept any value in units like `em`, `rem`, `ch`, `px` to at least two decimal places. USWDS limits itself to 6 [measure]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token} tokens:
 
 | token   | value
 | ---     | ---
@@ -39,12 +39,12 @@ For example, measure (or line length) expressed with the `max-width` CSS propert
 |`5`      | `77ch`
 |`'none'` | no max width
 
-Anything built using USWDS will use one of these 6 [measure]({{ site.baseurl }}/style-tokens/typesetting/measure/){:.token} tokens when specifying measure.
+Anything built using USWDS will use one of these 6 [measure]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token} tokens when specifying measure.
 
 ## Keys and values
-You can think of a style token as a **key** that unlocks a specific **value**. Often, the specific value is less important than its effect. Each token is a quoted string or, with only the exceptions of `1px` and `2px`, a unitless number — and the mechanism by which the final display value is unlocked is a **function**, **mixin**, or **utility class**.
+You can think of a design token as a **key** that unlocks a specific **value**. Often, the specific value is less important than its effect. Each token is a quoted string or, with only the exceptions of `1px` and `2px`, a unitless number — and the mechanism by which the final display value is unlocked is a **function**, **mixin**, or **utility class**.
 
-We can't include tokens directly in our Sass, like `max-width: 1`, rather we use a helper function like `max-width: measure(1)` or a mixin like `@include u-measure(1)`. All USWDS style tokens have helper mixins and functions to use them in component Sass.
+We can't include tokens directly in our Sass, like `max-width: 1`, rather we use a helper function like `max-width: measure(1)` or a mixin like `@include u-measure(1)`. All USWDS design tokens have helper mixins and functions to use them in component Sass.
 
 {: .bg-warning.padding-1.radius-md }
 **Note:** We do not include the token's value directly into our Sass rules.
@@ -105,9 +105,9 @@ Which, if `$theme-respect-user-font-size` is set to true would output something 
 
 In general, USWDS sets variables with tokens, and passes those variables into functions and mixins in the source Sass.
 
-## Using style tokens
+## Using design tokens
 
-Use style tokens directly to set the value of settings variables in USWDS theme settings files, like `$theme-site-max-width: 'desktop'`. Otherwise, use functions, mixins, or utility classes as in the examples below. See individual style token section for more details.
+Use design tokens directly to set the value of settings variables in USWDS theme settings files, like `$theme-site-max-width: 'desktop'`. Otherwise, use functions, mixins, or utility classes as in the examples below. See individual design token section for more details.
 
 ### Color
 <div class="site-table-wrapper">
@@ -124,22 +124,22 @@ Use style tokens directly to set the value of settings variables in USWDS theme 
       <tr>
         <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            <a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>
+            <a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>
           </span>
         </td>
         <td data-title="Function">
           <span>
-            color(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)
+            color(<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>)
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-border(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)
+            u-border(<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>)
           </span>
         </td>
         <td data-title="Utility class">
           <span>
-            .border-<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>
+            .border-<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>
           </span>
         </td>
       </tr>
@@ -250,22 +250,22 @@ Use style tokens directly to set the value of settings variables in USWDS theme 
       <tr>
         <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            <a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+            <a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </td>
         <td data-title="Function">
           <span>
-            units(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+            units(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-padding-x(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+            u-padding-x(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Utility class">
           <span>
-            .padding-x-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+            .padding-x-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </td>
       </tr>
@@ -357,18 +357,18 @@ Use style tokens directly to set the value of settings variables in USWDS theme 
       <tr>
         <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            <a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>,
-            <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>
+            <a href="{{ site.baseurl }}/design-tokens/typesetting/font-family" class="token">family</a>,
+            <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>
           </span>
         </td>
         <td data-title="Function">
           <span>
-            size(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)
+            size(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>)
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-font-size(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)
+            u-font-size(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>)
           </span>
         </td>
         <td data-title="Utility class">
@@ -462,22 +462,22 @@ Use style tokens directly to set the value of settings variables in USWDS theme 
       <tr>
         <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            <a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>
+            <a href="{{ site.baseurl }}/design-tokens/typesetting/font-family" class="token">family</a>
           </span>
         </td>
         <td data-title="Function">
           <span>
-            family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>)
+            family(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family" class="token">family</a>)
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-font-family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>)
+            u-font-family(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family" class="token">family</a>)
           </span>
         </td>
         <td data-title="Utility class">
           <span>
-            .font-family-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>
+            .font-family-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family" class="token">family</a>
           </span>
         </td>
       </tr>
@@ -566,8 +566,8 @@ Use style tokens directly to set the value of settings variables in USWDS theme 
       <tr>
         <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            <a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>,
-            <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>
+            <a href="{{ site.baseurl }}/design-tokens/typesetting/font-family" class="token">family</a>,
+            <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>
           </span>
         </td>
         <td data-title="Function">
@@ -577,12 +577,12 @@ Use style tokens directly to set the value of settings variables in USWDS theme 
         </td>
         <td data-title="Mixin">
           <span>
-            u-font(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)
+            u-font(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>)
           </span>
         </td>
         <td data-title="Utility class">
           <span>
-            .font-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>
+            .font-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family" class="token">family</a>-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>
           </span>
         </td>
       </tr>

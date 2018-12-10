@@ -1,21 +1,20 @@
 ---
-permalink: /style-tokens/opacity/
+permalink: /design-tokens/flex/
 layout: styleguide
-title: Opacity
-category: Style tokens
-lead: Opacity tokens set the opacity (or transparency) of an item in increments of 10%.
+title: Flex
+category: Design tokens
+lead: USWDS flex tokens provide simple options for setting the flex width of an item.
 type: docs
 subnav:
-- text: Opacity tokens
-  href: '#opacity-tokens'
-- text: Using opacity tokens
-  href: '#using-opacity-tokens'
+- text: Flex tokens
+  href: '#flex-tokens'
+- text: Using flex tokens
+  href: '#using-flex-tokens'
 ---
 
 {% assign tokens = site.data.tokens %}
 
-## Opacity tokens
-
+## Flex tokens
 <div class="site-table-wrapper">
   <table class="usa-table-borderless site-table-responsive">
     <thead>
@@ -26,7 +25,7 @@ subnav:
       </tr>
     </thead>
     <tbody class="font-mono-2xs">
-      {% for item in tokens.opacity %}
+      {% for item in tokens.flex %}
         {% include tokens/is_number.html %}
 
         <tr>
@@ -42,11 +41,24 @@ subnav:
               {% endif %}
             </span>
           </td>
-          <td data-title="Example" class="padding-y-0">
-            <div class="grid-row bg-primary padding-05 width-full margin-x-neg-05">
-              <div class="grid-col opacity-{{ item.token }} bg-white height-4"></div>
-              <div class="grid-col opacity-{{ item.token }} bg-secondary-vivid height-4"></div>
-              <div class="grid-col opacity-{{ item.token }} bg-black height-4"></div>
+          <td data-title="Example">
+            <div class="grid-row grid-gap-sm width-full">
+              <div class="grid-col flex-{{ item.token }}">
+                <div class="height-6 width-full display-flex flex-align-center bg-secondary-light flex-justify-center padding-x-105">
+                </div>
+              </div>
+              <div class="grid-col flex-1">
+                <div class="height-6 width-full display-flex flex-align-center border border-base-dark flex-justify-center">
+                </div>
+              </div>
+              <div class="grid-col flex-1">
+                <div class="height-6 width-full display-flex flex-align-center border border-base-dark flex-justify-center">
+                </div>
+              </div>
+              <div class="grid-col flex-1">
+                <div class="height-6 width-full display-flex flex-align-center border border-base-dark flex-justify-center">
+                </div>
+              </div>
             </div>
           </td>
           <td data-title="Value" class="tablet:width-10">
@@ -60,8 +72,8 @@ subnav:
   </table>
 </div>
 
-## Using opacity tokens
-Your context and coding style determine how you access USWDS opacity tokens in code.
+## Using flex tokens
+Your context and coding style determine how you access USWDS flex tokens in code.
 
 <div class="site-table-wrapper">
   <table class="usa-table-borderless site-table-responsive">
@@ -79,12 +91,12 @@ Your context and coding style determine how you access USWDS opacity tokens in c
         </td>
         <td data-title="Usage">
           <span>
-            opacity(<a href="{{ site.baseurl }}/style-tokens/opacity/" class="token">opacity</a>)
+            flex(<a href="{{ site.baseurl }}/design-tokens/flex/" class="token">flex</a>)
           </span>
         </td>
         <td data-title="Example">
           <span>
-            opacity: opacity(<code>10</code>)
+            flex: flex(<code>'fill'</code>)
           </span>
         </td>
       </tr>
@@ -96,12 +108,12 @@ Your context and coding style determine how you access USWDS opacity tokens in c
         </td>
         <td data-title="Usage">
           <span>
-            u-opacity(<a href="{{ site.baseurl }}/style-tokens/opacity/" class="token">opacity</a>)
+            u-flex(<a href="{{ site.baseurl }}/design-tokens/flex/" class="token">flex</a>)
           </span>
         </td>
         <td data-title="Example">
           <span>
-            @include u-opacity(<code>10</code>)<br/>
+            @include u-flex(<code>'fill'</code>)<br/>
           </span>
         </td>
       </tr>
@@ -113,12 +125,12 @@ Your context and coding style determine how you access USWDS opacity tokens in c
         </td>
         <td data-title="Usage">
           <span>
-            <a href="{{ site.baseurl }}/style-tokens/opacity/" class="token">opacity</a>
+            <a href="{{ site.baseurl }}/design-tokens/flex/" class="token">flex</a>
           </span>
         </td>
         <td data-title="Example">
           <span>
-            $theme-hover-opacity: <code>50</code>
+            $theme-nav-column-flex: <code>4</code>
           </span>
         </td>
       </tr>
@@ -130,12 +142,12 @@ Your context and coding style determine how you access USWDS opacity tokens in c
         </td>
         <td data-title="Usage">
           <span>
-            .opacity-<a href="{{ site.baseurl }}/style-tokens/opacity/" class="token">opacity</a>
+            .flex-<a href="{{ site.baseurl }}/design-tokens/flex/" class="token">flex</a>
           </span>
         </td>
         <td data-title="Example">
           <span>
-            .opacity-<code>50</code>
+            .flex-<code>fill</code>
           </span>
         </td>
       </tr>

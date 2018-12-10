@@ -1,21 +1,20 @@
 ---
-permalink: /style-tokens/shadow/
+permalink: /design-tokens/opacity/
 layout: styleguide
-title: Shadow
-category: Style tokens
-lead: Often used to indicate elevation, shadow tokens determine the size of a drop shadow (or `box-shadow`) around an item.
+title: Opacity
+category: Design tokens
+lead: Opacity tokens set the opacity (or transparency) of an item in increments of 10%.
 type: docs
 subnav:
-- text: Shadow tokens
-  href: '#shadow-tokens'
-- text: Using shadow tokens
-  href: '#using-shadow-tokens'
+- text: Opacity tokens
+  href: '#opacity-tokens'
+- text: Using opacity tokens
+  href: '#using-opacity-tokens'
 ---
 
 {% assign tokens = site.data.tokens %}
 
-## Shadow tokens
-Output values are shown in `px` below but are output in `rem` in the final CSS, based on the base font size in your project settings.
+## Opacity tokens
 
 <div class="site-table-wrapper">
   <table class="usa-table-borderless site-table-responsive">
@@ -27,7 +26,7 @@ Output values are shown in `px` below but are output in `rem` in the final CSS, 
       </tr>
     </thead>
     <tbody class="font-mono-2xs">
-      {% for item in tokens.shadow %}
+      {% for item in tokens.opacity %}
         {% include tokens/is_number.html %}
 
         <tr>
@@ -43,11 +42,15 @@ Output values are shown in `px` below but are output in `rem` in the final CSS, 
               {% endif %}
             </span>
           </td>
-          <td data-title="Example" class="padding-y-2">
-            <div class="width-full height-4 radius-md bg-white shadow-{{ item.token }} border border-base-lighter"></div>
+          <td data-title="Example" class="padding-y-0">
+            <div class="grid-row bg-primary padding-05 width-full margin-x-neg-05">
+              <div class="grid-col opacity-{{ item.token }} bg-white height-4"></div>
+              <div class="grid-col opacity-{{ item.token }} bg-secondary-vivid height-4"></div>
+              <div class="grid-col opacity-{{ item.token }} bg-black height-4"></div>
+            </div>
           </td>
           <td data-title="Value" class="tablet:width-10">
-            <span class="tablet:text-no-wrap">
+            <span>
               {{ item.value }}
             </span>
           </td>
@@ -57,8 +60,8 @@ Output values are shown in `px` below but are output in `rem` in the final CSS, 
   </table>
 </div>
 
-## Using shadow tokens
-Your context and coding style determine how you access USWDS shadow tokens in code.
+## Using opacity tokens
+Your context and coding style determine how you access USWDS opacity tokens in code.
 
 <div class="site-table-wrapper">
   <table class="usa-table-borderless site-table-responsive">
@@ -76,12 +79,12 @@ Your context and coding style determine how you access USWDS shadow tokens in co
         </td>
         <td data-title="Usage">
           <span>
-            shadow(<a href="{{ site.baseurl }}/style-tokens/shadow/" class="token">shadow</a>)
+            opacity(<a href="{{ site.baseurl }}/design-tokens/opacity/" class="token">opacity</a>)
           </span>
         </td>
         <td data-title="Example">
           <span>
-            box-shadow: shadow(<code>2</code>)
+            opacity: opacity(<code>10</code>)
           </span>
         </td>
       </tr>
@@ -93,12 +96,12 @@ Your context and coding style determine how you access USWDS shadow tokens in co
         </td>
         <td data-title="Usage">
           <span>
-            u-shadow(<a href="{{ site.baseurl }}/style-tokens/shadow/" class="token">shadow</a>)
+            u-opacity(<a href="{{ site.baseurl }}/design-tokens/opacity/" class="token">opacity</a>)
           </span>
         </td>
         <td data-title="Example">
           <span>
-            @include u-shadow(<code>2</code>)<br/>
+            @include u-opacity(<code>10</code>)<br/>
           </span>
         </td>
       </tr>
@@ -110,12 +113,12 @@ Your context and coding style determine how you access USWDS shadow tokens in co
         </td>
         <td data-title="Usage">
           <span>
-            <a href="{{ site.baseurl }}/style-tokens/shadow/" class="token">shadow</a>
+            <a href="{{ site.baseurl }}/design-tokens/opacity/" class="token">opacity</a>
           </span>
         </td>
         <td data-title="Example">
           <span>
-            $theme-subnav-shadow: <code>2</code>
+            $theme-hover-opacity: <code>50</code>
           </span>
         </td>
       </tr>
@@ -127,12 +130,12 @@ Your context and coding style determine how you access USWDS shadow tokens in co
         </td>
         <td data-title="Usage">
           <span>
-            .shadow-<a href="{{ site.baseurl }}/style-tokens/shadow/" class="token">shadow</a>
+            .opacity-<a href="{{ site.baseurl }}/design-tokens/opacity/" class="token">opacity</a>
           </span>
         </td>
         <td data-title="Example">
           <span>
-            .shadow-<code>2</code>
+            .opacity-<code>50</code>
           </span>
         </td>
       </tr>

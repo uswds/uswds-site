@@ -34,35 +34,53 @@ utilities:
         property=false
       %}
       <section class="utility-examples">
-        <div class="grid-row">
-          <div class="utility-example-container grid-col display-flex flex-column flex-justify flex-align-start border-0">
-            <div class="bg-secondary-light">
-              <ul class="bg-white">
-                <li>Red apples</li>
-                <li>Yellow bananas</li>
-                <li>Purple eggplants</li>
-              </ul>
-            </div>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">default ul</p>
-              <p class="utility-value">margin-y: 1em</p>
-              <p class="utility-value">padding-left: 1.94em</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col display-flex flex-column flex-justify flex-align-start border-0">
-            <ul class="add-list-reset">
-              <li>Red apples</li>
-              <li>Yellow bananas</li>
-              <li>Purple eggplants</li>
-            </ul>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">ul.add-list-reset</p>
-              <p class="utility-value">margin-y: 0</p>
-              <p class="utility-value">padding-left: 0</p>
-              <p class="utility-value">list-style: none</p>
-            </div>
-          </div>
-        </div>
+        {% assign thisWrap =              false %}
+        {% assign thisContainerClasses =  nil %}
+        {% assign thisUtilityClasses =    nil %}
+        {% assign thisValueClasses =      nil %}
+        {% assign thisExampleClasses =    'bg-secondary-light padding-left-0 grid-col-6' %}
+        {% capture thisClass %}
+          default
+        {% endcapture %}
+        {% capture thisValue %}
+        {% endcapture %}
+        {% capture thisExample %}
+          <ul class="bg-white">
+            <li>Red apples</li>
+            <li>Yellow bananas</li>
+            <li>Purple eggplants</li>
+          </ul>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          wrap = thisWrap
+          containerClasses = thisContainerClasses
+          utility = thisClass
+          utilityClasses = thisUtilityClasses
+          value = nil
+          valueClasses = thisValueClasses
+          example = thisExample
+          exampleClasses = thisExampleClasses
+        %}
+        {% capture thisClass %}
+          .add-list-reset
+        {% endcapture %}
+        {% capture thisExample %}
+          <ul class="add-list-reset bg-white">
+            <li>Red apples</li>
+            <li>Yellow bananas</li>
+            <li>Purple eggplants</li>
+          </ul>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          wrap = thisWrap
+          containerClasses = thisContainerClasses
+          utility = thisClass
+          utilityClasses = thisUtilityClasses
+          value = nil
+          valueClasses = thisValueClasses
+          example = thisExample
+          exampleClasses = thisExampleClasses
+        %}
       </section>
     </section>
   </section>

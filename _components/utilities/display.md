@@ -185,96 +185,33 @@ utilities:
     %}
 
     <section class="utility-examples">
-      <div class="bg-primary padding-3 radius-md margin-bottom-2">
-        <div class="grid-row flex-align-center margin-bottom-05">
-          <div class="grid-col-3">
-            <span class="utility-class">.opacity-0</span>
-            <span class="utility-value margin-0">0</span>
+      {% for item in site.data.tokens.opacity %}
+        {% assign thisWrap =            false %}
+        {% assign thisUtilityClasses =  nil %}
+        {% assign thisValueClasses =    nil %}
+        {% assign thisExampleClasses =  'grid-col-6' %}
+        {% capture thisClass %}
+          .opacity-{{ item.token }}
+        {% endcapture %}
+        {% capture thisValue %}
+          {{ item.value }}
+        {% endcapture %}
+        {% capture thisExample %}
+          <div class="bg-primary grid-row radius-sm height-4 padding-x-1 flex-align-center">
+            <div class="grid-col opacity-{{ item.token }} height-05 bg-white radius-left-pill"></div>
+            <div class="grid-col opacity-{{ item.token }} height-05 bg-black radius-right-pill"></div>
           </div>
-          <div class="grid-col opacity-0 bg-white height-4"></div>
-          <div class="grid-col opacity-0 bg-black height-4"></div>
-        </div>
-        <div class="grid-row flex-align-center margin-bottom-05">
-          <div class="grid-col-3">
-            <span class="utility-class">.opacity-10</span>
-            <span class="utility-value margin-0">0.1</span>
-          </div>
-          <div class="grid-col opacity-10 bg-white height-4"></div>
-          <div class="grid-col opacity-10 bg-black height-4"></div>
-        </div>
-        <div class="grid-row flex-align-center margin-bottom-05">
-          <div class="grid-col-3">
-            <span class="utility-class">.opacity-20</span>
-            <span class="utility-value margin-0">0.2</span>
-          </div>
-          <div class="grid-col opacity-20 bg-white height-4"></div>
-          <div class="grid-col opacity-20 bg-black height-4"></div>
-        </div>
-        <div class="grid-row flex-align-center margin-bottom-05">
-          <div class="grid-col-3">
-            <span class="utility-class">.opacity-30</span>
-            <span class="utility-value margin-0">0.3</span>
-          </div>
-          <div class="grid-col opacity-30 bg-white height-4"></div>
-          <div class="grid-col opacity-30 bg-black height-4"></div>
-        </div>
-        <div class="grid-row flex-align-center margin-bottom-05">
-          <div class="grid-col-3">
-            <span class="utility-class">.opacity-40</span>
-            <span class="utility-value margin-0">0.4</span>
-          </div>
-          <div class="grid-col opacity-40 bg-white height-4"></div>
-          <div class="grid-col opacity-40 bg-black height-4"></div>
-        </div>
-        <div class="grid-row flex-align-center margin-bottom-05">
-          <div class="grid-col-3">
-            <span class="utility-class">.opacity-50</span>
-            <span class="utility-value margin-0">0.5</span>
-          </div>
-          <div class="grid-col opacity-50 bg-white height-4"></div>
-          <div class="grid-col opacity-50 bg-black height-4"></div>
-        </div>
-        <div class="grid-row flex-align-center margin-bottom-05">
-          <div class="grid-col-3">
-            <span class="utility-class">.opacity-60</span>
-            <span class="utility-value margin-0">0.6</span>
-          </div>
-          <div class="grid-col opacity-60 bg-white height-4"></div>
-          <div class="grid-col opacity-60 bg-black height-4"></div>
-        </div>
-        <div class="grid-row flex-align-center margin-bottom-05">
-          <div class="grid-col-3">
-            <span class="utility-class">.opacity-70</span>
-            <span class="utility-value margin-0">0.7</span>
-          </div>
-          <div class="grid-col opacity-70 bg-white height-4"></div>
-          <div class="grid-col opacity-70 bg-black height-4"></div>
-        </div>
-        <div class="grid-row flex-align-center margin-bottom-05">
-          <div class="grid-col-3">
-            <span class="utility-class">.opacity-80</span>
-            <span class="utility-value margin-0">0.8</span>
-          </div>
-          <div class="grid-col opacity-80 bg-white height-4"></div>
-          <div class="grid-col opacity-80 bg-black height-4"></div>
-        </div>
-        <div class="grid-row flex-align-center margin-bottom-05">
-          <div class="grid-col-3">
-            <span class="utility-class">.opacity-90</span>
-            <span class="utility-value margin-0">0.9</span>
-          </div>
-          <div class="grid-col opacity-90 bg-white height-4"></div>
-          <div class="grid-col opacity-90 bg-black height-4"></div>
-        </div>
-        <div class="grid-row flex-align-center margin-bottom-05">
-          <div class="grid-col-3">
-            <span class="utility-class">.opacity-100</span>
-            <span class="utility-value margin-0">1</span>
-          </div>
-          <div class="grid-col opacity-100 bg-white height-4"></div>
-          <div class="grid-col opacity-100 bg-black height-4"></div>
-        </div>
-      </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          wrap = thisWrap
+          utility = thisClass
+          utilityClasses = thisUtilityClasses
+          value = thisValue
+          valueClasses = thisValueClasses
+          example = thisExample
+          exampleClasses = thisExampleClasses
+        %}
+      {% endfor %}
     </section>
   </section>
 
@@ -287,83 +224,69 @@ utilities:
 
       <p class="utility-note"><strong>Note:</strong> <a href="http://www.w3.org/TR/css3-box/#overflow-x">Per the W3C overflow spec:</a> The computed values of ‘overflow-x’ and ‘overflow-y’ are the same as their specified values, except that some combinations with ‘visible’ are not possible: if one is specified as ‘visible’ and the other is ‘scroll’ or ‘auto’, then ‘visible’ is set to ‘auto’. The computed value of ‘overflow’ is equal to the computed value of ‘overflow-x’ if ‘overflow-y’ is the same; otherwise it is the pair of computed values of ‘overflow-x’ and ‘overflow-y’.</p>
 
-      <div class="grid-row">
-        <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">
-          <span class="utility-class">.overflow-visible</span>
-          <div class="overflow-visible square-card border-1px border-secondary-light padding-2 margin-y-1">
+      {% assign overflowTokens = 'visible, hidden, scroll, auto'
+        | split: ', ' %}
+      {% for token in overflowTokens %}
+        {% assign thisWrap =            false %}
+        {% assign thisUtilityClasses =  nil %}
+        {% assign thisValueClasses =    nil %}
+        {% assign thisExampleClasses =  'padding-right-3' %}
+        {% capture thisClass %}
+          .overflow-{{ token }}
+        {% endcapture %}
+        {% capture thisValue %}
+          {{ token }}
+        {% endcapture %}
+        {% capture thisExample %}
+          <div class="overflow-{{ token }} square-card border-1px border-secondary-light padding-2 margin-y-1">
             <div class="square-card bg-primary-lighter"></div>
           </div>
-        </div>
-        <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">
-          <span class="utility-class">.overflow-x-visible</span>
-          <div class="overflow-x-visible square-card border-1px border-secondary-light padding-2 margin-y-1">
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          wrap = thisWrap
+          utility = thisClass
+          utilityClasses = thisUtilityClasses
+          value = thisValue
+          valueClasses = thisValueClasses
+          example = thisExample
+          exampleClasses = thisExampleClasses
+        %}
+        {% capture thisClass %}
+          .overflow-x-{{ token }}
+        {% endcapture %}
+        {% capture thisExample %}
+          <div class="overflow-x-{{ token }} square-card border-1px border-secondary-light padding-2 margin-y-1">
             <div class="square-card bg-primary-lighter"></div>
           </div>
-        </div>
-        <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">
-          <span class="utility-class">.overflow-y-visible</span>
-          <div class="overflow-y-visible square-card border-1px border-secondary-light padding-2 margin-y-1">
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          wrap = thisWrap
+          utility = thisClass
+          utilityClasses = thisUtilityClasses
+          value = thisValue
+          valueClasses = thisValueClasses
+          example = thisExample
+          exampleClasses = thisExampleClasses
+        %}
+        {% capture thisClass %}
+          .overflow-y-{{ token }}
+        {% endcapture %}
+        {% capture thisExample %}
+          <div class="overflow-y-{{ token }} square-card border-1px border-secondary-light padding-2 margin-y-1">
             <div class="square-card bg-primary-lighter"></div>
           </div>
-        </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          wrap = thisWrap
+          utility = thisClass
+          utilityClasses = thisUtilityClasses
+          value = thisValue
+          valueClasses = thisValueClasses
+          example = thisExample
+          exampleClasses = thisExampleClasses
+        %}
 
-        <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">
-          <span class="utility-class">.overflow-hidden</span>
-          <div class="overflow-hidden square-card border-1px border-secondary-light padding-2 margin-y-1">
-            <div class="square-card bg-primary-lighter"></div>
-          </div>
-        </div>
-        <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">
-          <span class="utility-class">.overflow-x-hidden</span>
-          <div class="overflow-x-hidden square-card border-1px border-secondary-light padding-2 margin-y-1">
-            <div class="square-card bg-primary-lighter"></div>
-          </div>
-        </div>
-        <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">
-          <span class="utility-class">.overflow-y-hidden</span>
-          <div class="overflow-y-hidden square-card border-1px border-secondary-light padding-2 margin-y-1">
-            <div class="square-card bg-primary-lighter"></div>
-          </div>
-        </div>
-
-        <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">
-          <span class="utility-class">.overflow-scroll</span>
-          <div class="overflow-scroll square-card border-1px border-secondary-light padding-2 margin-y-1">
-            <div class="square-card bg-primary-lighter"></div>
-          </div>
-        </div>
-        <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">
-          <span class="utility-class">.overflow-x-scroll</span>
-          <div class="overflow-x-scroll square-card border-1px border-secondary-light padding-2 margin-y-1">
-            <div class="square-card bg-primary-lighter"></div>
-          </div>
-        </div>
-        <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">
-          <span class="utility-class">.overflow-y-scroll</span>
-          <div class="overflow-y-scroll square-card border-1px border-secondary-light padding-2 margin-y-1">
-            <div class="square-card bg-primary-lighter"></div>
-          </div>
-        </div>
-
-        <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">
-          <span class="utility-class">.overflow-auto</span>
-          <div class="overflow-auto square-card border-1px border-secondary-light padding-2 margin-y-1">
-            <div class="square-card bg-primary-lighter"></div>
-          </div>
-        </div>
-        <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">
-          <span class="utility-class">.overflow-x-auto</span>
-          <div class="overflow-x-auto square-card border-1px border-secondary-light padding-2 margin-y-1">
-            <div class="square-card bg-primary-lighter"></div>
-          </div>
-        </div>
-        <div class="utility-example-container grid-col-4 display-flex flex-column flex-align-start flex-justify">
-          <span class="utility-class">.overflow-y-auto</span>
-          <div class="overflow-y-auto square-card border-1px border-secondary-light padding-2 margin-y-1">
-            <div class="square-card bg-primary-lighter"></div>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
     </section><!-- utility-examples -->
   </section><!-- utility -->
 
@@ -404,7 +327,7 @@ utilities:
 
       <h4 class="utility-examples-title">Example: Relative, static, and absolute positioning</h4>
       <div class="grid-row grid-gap margin-top-2">
-        <div class="grid-col-6">
+        <div class="tablet:grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 margin-bottom-2 radius-md overflow-hidden">
             <div class="position-static height-card border-1px border-secondary-light padding-2 text-ink"><p class="margin-0 font-sans-2xs text-ink"><span class="utility-class text-ink">.position-static</span></p>
               <div class="position-absolute bottom-0 left-0 bg-secondary-light padding-2 text-ink is-inverse">
@@ -413,7 +336,7 @@ utilities:
             </div>
           </div>
         </div>
-        <div class="grid-col-6">
+        <div class="tablet:grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 margin-bottom-2 radius-md overflow-hidden">
             <div class="position-relative height-card border-1px border-secondary-light padding-2 text-ink"><p class="margin-0 font-sans-2xs text-ink"><span class="utility-class text-ink">.position-relative</span></p>
               <div class="position-absolute bottom-0 left-0 bg-secondary-light padding-2 text-ink is-inverse">
@@ -545,58 +468,33 @@ utilities:
     %}
 
     <section class="utility-examples">
-      <div class="grid-row grid-gap">
-        <div class="grid-col-3">
-          {% for item in rp_spacing %}
-            <p class="utility-example-container font-sans-2xs display-flex flex-justify"><span class="utility-class">.top-{{ item.token }}</span><span class="utility-value margin-left-05">{{ item.value }}</span></p>
-          {% endfor %}
-        </div>
-        <div class="grid-col-3">
-          {% for item in rp_spacing %}
-            <p class="utility-example-container font-sans-2xs display-flex flex-justify"><span class="utility-class">.bottom-{{ item.token }}</span><span class="utility-value margin-left-05">{{ item.value }}</span></p>
-          {% endfor %}
-        </div>
-        <div class="grid-col-3">
-          {% for item in rp_spacing %}
-            <p class="utility-example-container font-sans-2xs display-flex flex-justify"><span class="utility-class">.left-{{ item.token }}</span><span class="utility-value margin-left-05">{{ item.value }}</span></p>
-          {% endfor %}
-        </div>
-        <div class="grid-col-3">
-          {% for item in rp_spacing %}
-            <p class="utility-example-container font-sans-2xs display-flex flex-justify"><span class="utility-class">.right-{{ item.token }}</span><span class="utility-value margin-left-05">{{ item.value }}</span></p>
-          {% endfor %}
-        </div>
-      </div>
-      <div class="grid-row grid-gap margin-top-2">
-        <div class="grid-col-3">
-          <div class="position-relative border-1px border-secondary-light maxw-square-lg add-aspect-1x1 margin-bottom-2">
-            <div class="bg-secondary-light padding-2 text-ink is-inverse position-absolute top-0">
-              <div class="margin-0 font-sans-2xs"><span class="utility-class">.top-0.left-0</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-col-3">
-          <div class="position-relative border-1px border-secondary-light maxw-square-lg add-aspect-1x1 margin-bottom-2">
-            <div class="bg-secondary-light padding-2 text-ink is-inverse position-absolute top-0 right-0">
-              <div class="margin-0 font-sans-2xs"><span class="utility-class">.top-0.right-0</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-col-3">
-          <div class="position-relative border-1px border-secondary-light maxw-square-lg add-aspect-1x1 margin-bottom-2">
-            <div class="bg-secondary-light padding-2 text-ink is-inverse position-absolute bottom-0 right-0">
-              <div class="margin-0 font-sans-2xs"><span class="utility-class">.bottom-0.right-0</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-col-3">
-          <div class="position-relative border-1px border-secondary-light maxw-square-lg add-aspect-1x1 margin-bottom-2">
-            <div class="bg-secondary-light padding-2 text-ink is-inverse position-absolute bottom-0 left-0">
-              <div class="margin-0 font-sans-2xs"><span class="utility-class">.bottom-0.left-0</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {% assign rpSides = 'top, right, bottom, left'
+        | split: ', ' %}
+      {% for side in rpSides %}
+        {% for item in rp_spacing %}
+          {% assign thisWrap =            false %}
+          {% assign thisUtilityClasses =  nil %}
+          {% assign thisValueClasses =    nil %}
+          {% assign thisExampleClasses =  nil %}
+          {% capture thisClass %}
+            .{{ side }}-{{ item.token }}
+          {% endcapture %}
+          {% capture thisValue %}
+            {{ item.value }}
+          {% endcapture %}
+          {% capture thisExample %}
+          {% endcapture %}
+          {% include utilities/utility-example.html
+            wrap = thisWrap
+            utility = thisClass
+            utilityClasses = thisUtilityClasses
+            value = thisValue
+            valueClasses = thisValueClasses
+            example = nil
+            exampleClasses = thisExampleClasses
+          %}
+        {% endfor %}
+      {% endfor %}
     </section>
   </section>
 

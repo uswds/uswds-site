@@ -2362,6 +2362,7 @@ $theme-table-column-gap: 4;
       @include sr-only;
     }
 
+    caption,
     tbody,
     tr,
     th,
@@ -2372,6 +2373,11 @@ $theme-table-column-gap: 4;
       padding: 0;
       text-align: left;
       white-space: normal;
+    }
+
+    caption {
+      font-weight: fw('bold');
+      padding-bottom: units(1);
     }
 
     td,
@@ -2456,6 +2462,20 @@ $theme-table-column-gap: 4;
   @include at-media($theme-table-responsive-expand-at) {
     thead {
       @include u-font('ui', 1);
+    }
+
+    caption {
+      font-weight: fw('bold');
+      padding-bottom: units(1);
+    }
+
+    caption,
+    tbody,
+    tr,
+    th,
+    td,
+    tfoot {
+      text-align: left;
     }
 
     th:first-child {

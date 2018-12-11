@@ -75,46 +75,152 @@ Breaking it down, here's how it works:
 </div>
 
 <h2 id="responsive-variants">Responsive variants</h2>
-<table class="usa-table">
-  <caption>Default responsive sizes</caption>
-  <thead>
-    <tr>
-      <th scope="col"></th>
-      <th scope="col">Smallest</th>
-      <th scope="col">Mobile large</th>
-      <th scope="col">Tablet</th>
-      <th scope="col">Desktop</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Size</th>
-      <td>≥0</td>
-      <td>≥480px</td>
-      <td>≥640px</td>
-      <td>≥1024px</td>
-    </tr>
-    <tr>
-      <th scope="row">Responsive variant</th>
-      <td class="font-mono-4">grid-col</td>
-      <td class="font-mono-4"><span class="text-red">mobile-lg:</span>grid-col</td>
-      <td class="font-mono-4"><span class="text-red">tablet:</span>grid-col</td>
-      <td class="font-mono-4"><span class="text-red">desktop:</span>grid-col</td>
-    </tr>
-    <tr>
-      <th scope="row"># of columns</th>
-      <td colspan="4">12</td>
-    </tr>
-    <tr>
-      <th scope="row">Gutters</th>
-      <td colspan="4">0</td>
-    </tr>
-    <tr>
-      <th scope="row">Nestable</th>
-      <td colspan="4">Yes</td>
-    </tr>
-  </tbody>
-</table>
+
+<div>
+  <table class="usa-table-borderless site-table-responsive site-table-simple">
+    <caption>Default responsive sizes</caption>
+    <thead>
+      <tr>
+        <th scope="col" class="flex-2">Width</th>
+        <th scope="col">Size</th>
+        <th scope="col" class="flex-3">Utility class</th>
+        <th scope="col">Columns</th>
+        <th scope="col">Gutters</th>
+        <th scope="col">Nestable</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      <tr>
+        <td scope="row" data-title="Width" class="flex-2">
+          <span class="font-sans-2xs text-bold">
+            Smallest
+          </span>
+        </td>
+        <td data-title="Size">
+          <span>
+            ≥0
+          </span>
+        </td>
+        <td data-title="Utility class" class="flex-3">
+          <span>
+            .grid-col
+          </span>
+        </td>
+        <td data-title="Columns">
+          <span>
+            12
+          </span>
+        </td>
+        <td data-title="Gutters">
+          <span>
+            0
+          </span>
+        </td>
+        <td data-title="Nestable">
+          <span>
+            Yes
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Width" class="flex-2">
+          <span class="font-sans-2xs text-bold">
+            Mobile large
+          </span>
+        </td>
+        <td data-title="Size">
+          <span>
+            ≥480px
+          </span>
+        </td>
+        <td data-title="Utility class" class="flex-3">
+          <span>
+            <span class="text-secondary">.mobile-lg:</span>grid-col
+          </span>
+        </td>
+        <td data-title="Columns">
+          <span>
+            12
+          </span>
+        </td>
+        <td data-title="Gutters">
+          <span>
+            0
+          </span>
+        </td>
+        <td data-title="Nestable">
+          <span>
+            Yes
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Width" class="flex-2">
+          <span class="font-sans-2xs text-bold">
+            Tablet
+          </span>
+        </td>
+        <td data-title="Size">
+          <span>
+            ≥640px
+          </span>
+        </td>
+        <td data-title="Utility class" class="flex-3">
+          <span>
+            <span class="text-secondary">.tablet:</span>grid-col
+          </span>
+        </td>
+        <td data-title="Columns">
+          <span>
+            12
+          </span>
+        </td>
+        <td data-title="Gutters">
+          <span>
+            0
+          </span>
+        </td>
+        <td data-title="Nestable">
+          <span>
+            Yes
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Width" class="flex-2">
+          <span class="font-sans-2xs text-bold">
+            Desktop
+          </span>
+        </td>
+        <td data-title="Size">
+          <span>
+            ≥1024px
+          </span>
+        </td>
+        <td data-title="Utility class" class="flex-3">
+          <span>
+            <span class="text-secondary">.desktop:</span>grid-col
+          </span>
+        </td>
+        <td data-title="Columns">
+          <span>
+            12
+          </span>
+        </td>
+        <td data-title="Gutters">
+          <span>
+            0
+          </span>
+        </td>
+        <td data-title="Nestable">
+          <span>
+            Yes
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <h2 id="auto-layout-columns">Auto layout columns</h2>
 <h3>Variable width content</h3>
@@ -153,43 +259,12 @@ Breaking it down, here's how it works:
 <p><code>.grid-col-[1-12]</code> set a fixed width of [n] grid-columns in a 12-column grid.</p>
 
 {% capture grid-markers %}
-<div class="grid-row margin-top-1 font-sans-2">
-  <div class="grid-col-1 border-x-2px border-black-cool-90">
-    <div class="text-center padding-x-2">1</div>
+<div class="grid-row margin-top-3 font-sans-1 border-left border-secondary-light">
+  {% for i in (1..12) %}
+  <div class="grid-col-1 border-right border-secondary-light">
+    <div class="text-center padding-x-05">{{ i }}</div>
   </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">2</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">3</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">4</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">5</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">6</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">7</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">8</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">9</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">10</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">11</div>
-  </div>
-  <div class="grid-col-1 border-x-2px border-left-0 border-black-cool-90">
-    <div class="text-center padding-x-2">12</div>
-  </div>
+  {% endfor %}
 </div>
 {% endcapture %}
 {{ grid-markers }}

@@ -182,94 +182,62 @@ utilities:
 </div>
 
 <section class="utilities-section">
-  <div class="grid-row utilities-section-title-bar">
-    <h2 class="grid-col-auto utilities-section-title">Examples and usage</h2>
-    <p class="grid-col-fill utilities-section-helper">Utilities, values, and variants may be activated and deactivated in <a href="#advanced-settings" class="text-ink text-no-wrap">advanced settings</a>.</p>
-  </div>
+  {% include utilities/utilities-section-title-bar.html %}
 
   <section class="utility" id="height">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Height</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">height</span></p>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section><!-- .utility-title-bar -->
+    {% include utilities/utility-title-bar.html
+      title="Height"
+    %}
     <section class="utility-examples">
-      <div class="grid-row grid gap">
-        {% for item in height_values %}
-          <div class="grid-col-{% if forloop.last %}fill{% else %}2{% endif %} utility-example-container display-flex flex-column flex-justify-end">
+      {% for item in height_values %}
+        <div class="utility-example-container">
+          <div class="usa-grid-row">
+            <div class="usa-grid-col utility-example-class">
+              <span class="utility-class">.height-{{ item.token }}</span>
+            </div>
+            <div class="usa-grid-col utility-example-value">
+              <span class="utility-value">{{ item.value }}</span>
+            </div>
+            <div class="usa-grid-col utility-example">
               <div class="width-4 bg-secondary-light height-{{ item.token }}"></div>
-              <div class="display-flex flex-column flex-align-start padding-top-2">
-                <span class="utility-class">.height-{{ item.token }}</span>
-                <span class="utility-value">{{ item.value }}</span>
-              </div>
+            </div>
           </div>
-        {% endfor %}
-      </div>
+        </div>
+      {% endfor %}
     </section><!-- .utility-examples -->
   </section><!-- .utility#height -->
 
   <section class="utility" id="width">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Width</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">width</span></p>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section><!-- .utility-title-bar -->
+    {% include utilities/utility-title-bar.html
+      title="Width"
+    %}
     <section class="utility-examples">
-      <div class="grid-row grid gap">
-        {% for item in width_values %}
-          <div class="grid-col-12 utility-example-container-condensed grid-row flex-align-center {% if forloop.last %} border-0{% endif %}">
-              <div class="grid-col-3 display-flex flex-column flex-align-start">
-                <span class="utility-class">.width-{{ item.token }}</span>
-                <span class="utility-value">{{ item.value }}</span>
-              </div>
-              <div class="grid-col-9 padding-left-2">
-                <div class="height-4 bg-secondary-light width-{{ item.token }} maxw-full grid-col-auto"></div>
-              </div>
+      {% for item in width_values %}
+        <div class="utility-example-container">
+          <div class="usa-grid-row">
+            <div class="usa-grid-col utility-example-class">
+              <span class="utility-class">.width-{{ item.token }}</span>
+            </div>
+            <div class="usa-grid-col utility-example-value">
+              <span class="utility-value">{{ item.value }}</span>
+            </div>
+            <div class="usa-grid-col utility-example">
+              <div class="height-4 bg-secondary-light width-{{ item.token }} maxw-full grid-col-auto"></div>
+            </div>
           </div>
-        {% endfor %}
-      </div>
+        </div>
+      {% endfor %}
     </section><!-- .utility-examples -->
   </section><!-- .utility#width -->
 
   <section class="utility" id="maxh">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Maximum height</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">max-height</span></p>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section><!-- .utility-title-bar -->
+    {% include utilities/utility-title-bar.html
+      title="Maximum height"
+      property="max-height"
+    %}
     <section class="utility-examples">
       {% for item in maxh_values %}
-        <p class="utility-example-container-condensed {% if forloop.last %}border-0{% endif %}">
+        <p class="utility-example-container {% if forloop.last %}border-0{% endif %}">
           <span class="utility-class">.maxh-{{ item.token }}</span>
           <span class="utility-value margin-left-2px">{{ item.value }}</span>
         </p>
@@ -278,24 +246,13 @@ utilities:
   </section><!-- .utility#maxh -->
 
   <section class="utility" id="maxw">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Maximum width</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">max-width</span></p>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section><!-- .utility-title-bar -->
+    {% include utilities/utility-title-bar.html
+      title="Maximum width"
+      property="max-width"
+    %}
     <section class="utility-examples">
       {% for item in maxw_values %}
-        <p class="utility-example-container-condensed {% if forloop.last %}border-0{% endif %}">
+        <p class="utility-example-container {% if forloop.last %}border-0{% endif %}">
           <span class="utility-class">.maxw-{{ item.token }}</span>
           <span class="utility-value margin-left-2px">{{ item.value }}</span>
         </p>
@@ -304,24 +261,13 @@ utilities:
   </section><!-- .utility#maxw -->
 
   <section class="utility" id="minh">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Minimum height</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">min-height</span></p>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section><!-- .utility-title-bar -->
+    {% include utilities/utility-title-bar.html
+      title="Minimum height"
+      property="min-height"
+    %}
     <section class="utility-examples">
       {% for item in minh_values %}
-        <p class="utility-example-container-condensed {% if forloop.last %}border-0{% endif %}">
+        <p class="utility-example-container {% if forloop.last %}border-0{% endif %}">
           <span class="utility-class">.minh-{{ item.token }}</span>
           <span class="utility-value margin-left-2px">{{ item.value }}</span>
         </p>
@@ -330,24 +276,13 @@ utilities:
   </section><!-- .utility#minh -->
 
   <section class="utility" id="minw">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Minimum width</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">min-width</span></p>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section><!-- .utility-title-bar -->
+    {% include utilities/utility-title-bar.html
+      title="Minimum width"
+      property="min-width"
+    %}
     <section class="utility-examples">
       {% for item in minw_values %}
-        <p class="utility-example-container-condensed {% if forloop.last %}border-0{% endif %}">
+        <p class="utility-example-container {% if forloop.last %}border-0{% endif %}">
           <span class="utility-class">.minw-{{ item.token }}</span>
           <span class="utility-value margin-left-2px">{{ item.value }}</span>
         </p>
@@ -356,50 +291,68 @@ utilities:
   </section><!-- .utility#minw -->
 
   <section class="utility" id="aspect">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Aspect ratio</h3>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section><!-- .utility-title-bar -->
+    {% include utilities/utility-title-bar.html
+      title="Aspect ratio"
+      property=false
+    %}
     <section class="utility-examples">
-      <div class="grid-row grid-gap">
-        <div class="grid-col utility-example-container-condensed display-flex flex-column flex-justify">
-          <div class="width-full add-aspect-9x16 bg-secondary-light"></div>
-          <div class="display-flex flex-column flex-align-start margin-top-2">
+      <div class="utility-example-container">
+        <div class="usa-grid-row">
+          <div class="usa-grid-col utility-example-class">
             <span class="utility-class">.add-aspect-9x16</span>
           </div>
+          <div class="usa-grid-col utility-example-value">
+          </div>
+          <div class="usa-grid-col utility-example">
+            <div class="width-8 add-aspect-9x16 bg-secondary-light"></div>
+          </div>
         </div>
-        <div class="grid-col utility-example-container-condensed display-flex flex-column flex-justify">
-          <div class="width-full add-aspect-1x1 bg-secondary-light"></div>
-          <div class="display-flex flex-column flex-align-start margin-top-2">
+      </div>
+      <div class="utility-example-container">
+        <div class="usa-grid-row">
+          <div class="usa-grid-col utility-example-class">
             <span class="utility-class">.add-aspect-1x1</span>
           </div>
+          <div class="usa-grid-col utility-example-value">
+          </div>
+          <div class="usa-grid-col utility-example">
+            <div class="width-8 add-aspect-1x1 bg-secondary-light"></div>
+          </div>
         </div>
-        <div class="grid-col utility-example-container-condensed display-flex flex-column flex-justify">
-          <div class="width-full add-aspect-4x3 bg-secondary-light"></div>
-          <div class="display-flex flex-column flex-align-start margin-top-2">
+      </div>
+      <div class="utility-example-container">
+        <div class="usa-grid-row">
+          <div class="usa-grid-col utility-example-class">
             <span class="utility-class">.add-aspect-4x3</span>
           </div>
-        </div>
-        <div class="grid-col utility-example-container-condensed display-flex flex-column flex-justify">
-          <div class="width-full add-aspect-16x9 bg-secondary-light"></div>
-          <div class="display-flex flex-column flex-align-start margin-top-2">
-            <span class="utility-class">.add-aspect-16x9</span>
+          <div class="usa-grid-col utility-example-value">
+          </div>
+          <div class="usa-grid-col utility-example">
+            <div class="width-8 add-aspect-4x3 bg-secondary-light"></div>
           </div>
         </div>
-        <div class="grid-col utility-example-container-condensed display-flex flex-column flex-justify">
-          <div class="width-full add-aspect-2x1 bg-secondary-light"></div>
-          <div class="display-flex flex-column flex-align-start margin-top-2">
+      </div>
+      <div class="utility-example-container">
+        <div class="usa-grid-row">
+          <div class="usa-grid-col utility-example-class">
+            <span class="utility-class">.add-aspect-16x9</span>
+          </div>
+          <div class="usa-grid-col utility-example-value">
+          </div>
+          <div class="usa-grid-col utility-example">
+            <div class="width-8 add-aspect-16x9 bg-secondary-light"></div>
+          </div>
+        </div>
+      </div>
+      <div class="utility-example-container">
+        <div class="usa-grid-row">
+          <div class="usa-grid-col utility-example-class">
             <span class="utility-class">.add-aspect-2x1</span>
+          </div>
+          <div class="usa-grid-col utility-example-value">
+          </div>
+          <div class="usa-grid-col utility-example">
+            <div class="width-8 add-aspect-2x1 bg-secondary-light"></div>
           </div>
         </div>
       </div>
@@ -407,66 +360,54 @@ utilities:
   </section><!-- .utility#aspect -->
 
   <section class="utility" id="circle">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Circle</h3>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section><!-- .utility-title-bar -->
+    {% include utilities/utility-title-bar.html
+      title="Circle"
+      property=false
+    %}
     <section class="utility-examples">
-      <div class="grid-row grid-gap">
-        {% for item in circle_values %}
-          {% if forloop.index > 1 %}
-            <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.index > 13 and forloop.last == false %} grid-col-6{% elsif forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
-              <div class="circle-{{ item.token }} bg-secondary-light"></div>
-              <div class="display-flex flex-column flex-align-start margin-top-2">
+      {% for item in circle_values %}
+        {% if forloop.index > 1 %}
+          <div class="utility-example-container">
+            <div class="usa-grid-row">
+              <div class="usa-grid-col utility-example-class">
                 <span class="utility-class">.circle-{{ item.token }}</span>
+              </div>
+              <div class="usa-grid-col utility-example-value">
                 <span class="utility-value margin-left-2px">{{ item.value }}</span>
               </div>
+              <div class="usa-grid-col utility-example">
+                <div class="circle-{{ item.token }} bg-secondary-light"></div>
+              </div>
             </div>
-          {% endif %}
-        {% endfor %}
-      </div>
+          </div>
+        {% endif %}
+      {% endfor %}
     </section><!-- .utility-examples -->
   </section><!-- .utility#circle -->
 
   <section class="utility" id="square">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Square</h3>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section><!-- .utility-title-bar -->
+    {% include utilities/utility-title-bar.html
+      title="Square"
+      property=false
+    %}
     <section class="utility-examples">
-      <div class="grid-row grid-gap">
-        {% for item in square_values %}
-          {% if forloop.index > 1 %}
-            <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.index > 13 and forloop.last == false %} grid-col-6{% elsif forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
-              <div class="square-{{ item.token }} bg-secondary-light"></div>
-              <div class="display-flex flex-column flex-align-start margin-top-2">
-                <span class="utility-class">.square-{{ item.token }}</span>
-                <span class="utility-value margin-left-2px">{{ item.value }}</span>
-              </div>
+      {% for item in square_values %}
+        {% if forloop.index > 1 %}
+        <div class="utility-example-container">
+          <div class="usa-grid-row">
+            <div class="usa-grid-col utility-example-class">
+              <span class="utility-class">.square-{{ item.token }}</span>
             </div>
-          {% endif %}
-        {% endfor %}
-      </div>
+            <div class="usa-grid-col utility-example-value">
+              <span class="utility-value margin-left-2px">{{ item.value }}</span>
+            </div>
+            <div class="usa-grid-col utility-example">
+              <div class="square-{{ item.token }} bg-secondary-light"></div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
     </section><!-- .utility-examples -->
   </section><!-- .utility#square -->
 </section>
@@ -487,12 +428,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .height-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+            .height-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-height(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+            u-height(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -504,12 +445,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .width-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+            .width-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-width(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+            u-width(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -521,12 +462,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .maxh-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+            .maxh-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-maxh(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+            u-maxh(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -538,12 +479,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .maxw-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+            .maxw-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-maxw(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+            u-maxw(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -555,12 +496,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .minh-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+            .minh-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-minh(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+            u-minh(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -572,12 +513,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .minw-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+            .minw-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-minw(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+            u-minw(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -606,12 +547,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .circle-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+            .circle-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-circle(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+            u-circle(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -623,12 +564,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .square-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+            .square-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-square(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+            u-square(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Example">

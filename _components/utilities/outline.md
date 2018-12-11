@@ -52,82 +52,60 @@ utilities:
 
 <section class="utilities-section">
 
-  <div class="grid-row utilities-section-title-bar">
-    <h2 class="grid-col-auto utilities-section-title">Examples and usage</h2>
-    <p class="grid-col-fill utilities-section-helper">Utilities, values, and variants may be activated and deactivated in <a href="#advanced-settings" class="text-ink text-no-wrap">advanced settings</a>.</p>
-  </div>
+  {% include utilities/utilities-section-title-bar.html %}
 
   <section class="utility" id="utility-outline">
-    <section class="utility-title-bar">
-      <div class="grid-row flex-align-center">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Outline</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">outline</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
-
+    {% include utilities/utility-title-bar.html
+      title="Outline"
+    %}
     <section class="utility-examples">
       <p class="utility-note"><strong>Note: </strong> The <code>outline</code> utilities apply a solid outline of specified width.</p>
-
-      <div class="grid-row">
-        {% for width in outline_widths %}
-          <div class="utility-example-container display-flex flex-column flex-justify{% if forloop.last %} grid-col-fill{% else %} grid-col-3{% endif %}">
-            <div class="outline-{{ width.token }} square-9 bg-base-lightest"></div>
-            <div class="display-flex flex-column flex-align-start margin-top-2">
-              <span class="utility-class">.outline-{{ width.token }}</span>
-              <span class="utility-value margin-top-2px">{{ width.value }}</span>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
+      {% for width in outline_widths %}
+        {% capture this_class %}
+          .outline-{{ width.token }}
+        {% endcapture %}
+        {% capture this_value %}
+          {{ width.value }}
+        {% endcapture %}
+        {% capture this_example %}
+        <div class="outline-{{ width.token }} square-9 bg-base-lightest"></div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          containerClasses="overflow-visible"
+          utility=this_class
+          value=this_value
+          example=this_example
+        %}
+      {% endfor %}
     </section><!-- exanples -->
   </section><!-- utility -->
 
   <section class="utility" id="utility-outline-color">
-    <section class="utility-title-bar">
-      <div class="grid-row flex-align-center">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Outline color</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">outline-color</span></p>
-        </div>
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Outline color"
+    %}
     <section class="utility-examples">
-      <div class="grid-row">
-        {% for color in outline_colors %}
-          <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center">
-            <span class="flex-fill">
-              <span class="square-4 radius-sm text-middle padding-05 display-inline-block margin-right-1 bg-white ">
-                <span class="square-3 radius-sm display-block outline-1px outline-{{ color.token }}"></span>
-              </span>
-              <span class="square-4 radius-sm text-middle padding-05 display-inline-block margin-right-1 bg-ink">
-                <span class="square-3 radius-sm display-block outline-1px outline-{{ color.token }}"></span>
-              </span>
-              <span class="utility-class"><span class="text-light">.outline-1px</span>.outline-{{ color.token }}</span>
-            </span>
-            <span class="flex-auto utility-value-color">
-              <span class="utility-value-color-chip bg-{{ color.token }}"></span>
-              {{ color.value }}
-            </span>
-          </p>
-        {% endfor %}
-      </div>
+      {% for color in outline_colors %}
+        {% capture this_class %}
+          <span class="text-light">.outline-1px</span>.outline-{{ color.token }}
+        {% endcapture %}
+        {% capture this_value %}
+        <span class="utility-value-color-chip bg-{{ color.token }}"></span>{{ color.value }}
+        {% endcapture %}
+        {% capture this_example %}
+        <span class="square-4 radius-sm text-middle padding-05 display-inline-block margin-right-1 bg-white ">
+          <span class="square-3 radius-sm display-block outline-1px outline-{{ color.token }}"></span>
+        </span>
+        <span class="square-4 radius-sm text-middle padding-05 display-inline-block margin-right-1 bg-ink">
+          <span class="square-3 radius-sm display-block outline-1px outline-{{ color.token }}"></span>
+        </span>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          utility=this_class
+          value=this_value
+          example=this_example
+        %}
+      {% endfor %}
     </section>
   </section>
 </section>
@@ -148,12 +126,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .outline-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+            .outline-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-outline(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+            u-outline(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -165,12 +143,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .outline-color-<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>
+            .outline-color-<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-outline-color(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)
+            u-outline-color(<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>)
           </span>
         </td>
         <td data-title="Example">

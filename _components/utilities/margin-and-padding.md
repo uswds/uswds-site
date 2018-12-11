@@ -100,423 +100,469 @@ utilities:
 
 <section class="utilities-section">
 
-  <div class="grid-row flex-align-center margin-bottom-2">
-    <h2 class="grid-col-auto utilities-section-title">Examples and usage</h2>
-    <p class="grid-col-fill utilities-section-helper">Utilities, values, and variants may be activated and deactivated in <a href="#advanced-settings" class="text-ink text-no-wrap">advanced settings</a>.</p>
-  </div>
+  {% include utilities/utilities-section-title-bar.html %}
 
   <section class="utility" id="margin">
-    <section class="utility-title-bar">
-      <div class="grid-row flex-align-center">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Margin</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">margin</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section><!-- utility-title-bar -->
-
+    {% include utilities/utility-title-bar.html
+      title="Margin"
+      responsive=true
+    %}
     <section class="utility-examples">
-      <h4 class="utility-examples-title margin-bottom-3">Margin on all sides</h4>
-      <div class="grid-row">
+      <h4 class="utility-examples-title">Margin on all sides</h4>
         {% for item in page.vals_positive %}
-          {% if forloop.last %}
-          <div class="utility-example-container grid-col-6 text-center display-flex flex-column flex-justify flex-align-start">
-          {% else %}
-          <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-          {% endif %}
-            <div class="bg-secondary-light display-inline-block">
-              <div class="square-4 border-1px bg-white margin-{{ item.token }}"></div>
-            </div>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">.margin-{{ item.token }}</p>
-              <p class="utility-value">{{ item.value }}</p>
-            </div>
+        {% capture this_class %}
+          .margin-{{ item.token }}
+        {% endcapture %}
+        {% capture this_value %}
+          {{ item.value }}
+        {% endcapture %}
+        {% capture this_example %}
+          <div class="bg-secondary-light padding-{{ item.token }}">
+            <div class="square-4 border-1px bg-white"></div>
           </div>
-        {% endfor %}
-      </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          utility=this_class
+          value=this_value
+          example=this_example
+        %}
+      {% endfor %}
 
 
-      <h4 class="utility-examples-title margin-bottom-3">Margin bottom</h4>
+      <h4 class="utility-examples-title">Margin bottom</h4>
+      {% for item in page.vals_negative reversed %}
+        {% capture this_class %}
+          .margin-bottom-{{ item.token }}
+        {% endcapture %}
+        {% capture this_value %}
+          {{ item.value }}
+        {% endcapture %}
+        {% capture this_example %}
+          <div class="position-relative square-4 border-1px bg-white">
+            <div class="bg-secondary-light pin-bottom pin-x height-{{ item.equiv }}"></div>
+          </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          utility=this_class
+          value=this_value
+          example=this_example
+        %}
+      {% endfor %}
+      {% for item in page.vals_positive %}
+        {% capture this_class %}
+          .margin-bottom-{{ item.token }}
+        {% endcapture %}
+        {% capture this_value %}
+          {{ item.value }}
+        {% endcapture %}
+        {% capture this_example %}
+          <div class="bg-secondary-light padding-bottom-{{ item.token }}">
+            <div class="square-4 border-1px bg-white"></div>
+          </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          utility=this_class
+          value=this_value
+          example=this_example
+        %}
+      {% endfor %}
 
-      <div class="grid-row">
-        {% for item in page.vals_negative reversed %}
-          <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-            <div class="position-relative square-4 border-1px bg-white">
-              <div class="bg-secondary-light pin-bottom height-{{ item.equiv }}"></div>
-            </div>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">.margin-bottom-{{ item.token }}</p>
-              <p class="utility-value">{{ item.value }}</p>
-            </div>
+      <h4 class="utility-examples-title">Margin top</h4>
+      {% for item in page.vals_negative reversed %}
+        {% capture this_class %}
+          .margin-top-{{ item.token }}
+        {% endcapture %}
+        {% capture this_value %}
+          {{ item.value }}
+        {% endcapture %}
+        {% capture this_example %}
+          <div class="position-relative square-4 border-1px bg-white">
+            <div class="bg-secondary-light pin-top width-full height-{{ item.equiv }}"></div>
           </div>
-        {% endfor %}
-        {% for item in page.vals_positive %}
-          {% if forloop.last %}
-          <div class="utility-example-container grid-col-6 text-center display-flex flex-column flex-justify flex-align-start">
-          {% else %}
-          <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-          {% endif %}
-            <div class="bg-secondary-light display-inline-block">
-              <div class="square-4 border-1px bg-white margin-bottom-{{ item.token }}"></div>
-            </div>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">.margin-bottom-{{ item.token }}</p>
-              <p class="utility-value">{{ item.value }}</p>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          utility=this_class
+          value=this_value
+          example=this_example
+        %}
+      {% endfor %}
 
-      <h4 class="utility-examples-title margin-bottom-3">Margin top</h4>
-      <div class="grid-row">
-        {% for item in page.vals_negative reversed %}
-          <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-            <div class="position-relative square-4 border-1px bg-white">
-              <div class="bg-secondary-light pin-top width-full height-{{ item.equiv }}"></div>
-            </div>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">.margin-top-{{ item.token }}</p>
-              <p class="utility-value">{{ item.value }}</p>
-            </div>
+      {% for item in page.vals_positive %}
+        {% capture this_class %}
+          .margin-top-{{ item.token }}
+        {% endcapture %}
+        {% capture this_value %}
+          {{ item.value }}
+        {% endcapture %}
+        {% capture this_example %}
+          <div class="bg-secondary-light padding-top-{{ item.token }}">
+            <div class="square-4 border-1px bg-white"></div>
           </div>
-        {% endfor %}
-        {% for item in page.vals_positive %}
-          {% if forloop.last %}
-          <div class="utility-example-container grid-col-6 text-center display-flex flex-column flex-justify flex-align-start">
-          {% else %}
-          <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-          {% endif %}
-            <div class="bg-secondary-light display-inline-block">
-              <div class="square-4 border-1px bg-white margin-top-{{ item.token }}"></div>
-            </div>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">.margin-top-{{ item.token }}</p>
-              <p class="utility-value">{{ item.value }}</p>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          utility=this_class
+          value=this_value
+          example=this_example
+        %}
+      {% endfor %}
 
-      <h4 class="utility-examples-title margin-bottom-3">Margin left</h4>
-      <div class="grid-row">
-        {% for item in page.vals_negative reversed %}
-          <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-            <div class="position-relative square-4 border-1px bg-white">
-              <div class="bg-secondary-light pin-left height-full width-{{ item.equiv }}"></div>
-            </div>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">.margin-left-{{ item.token }}</p>
-              <p class="utility-value">{{ item.value }}</p>
-            </div>
+      <h4 class="utility-examples-title">Margin left</h4>
+      {% for item in page.vals_negative reversed %}
+        {% capture this_class %}
+          .margin-left-{{ item.token }}
+        {% endcapture %}
+        {% capture this_value %}
+          {{ item.value }}
+        {% endcapture %}
+        {% capture this_example %}
+          <div class="position-relative square-4 border-1px bg-white">
+            <div class="bg-secondary-light pin-left height-full width-{{ item.equiv }}"></div>
           </div>
-        {% endfor %}
-        {% for item in page.vals_positive %}
-          {% if forloop.last %}
-          <div class="utility-example-container grid-col-6 text-center display-flex flex-column flex-justify flex-align-start">
-          {% else %}
-          <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-          {% endif %}
-            <div class="bg-secondary-light display-inline-block">
-              <div class="square-4 border-1px bg-white margin-left-{{ item.token }}"></div>
-            </div>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">.margin-left-{{ item.token }}</p>
-              <p class="utility-value">{{ item.value }}</p>
-            </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          utility=this_class
+          value=this_value
+          example=this_example
+        %}
+      {% endfor %}
+      {% for item in page.vals_positive %}
+        {% capture this_class %}
+          .margin-left-{{ item.token }}
+        {% endcapture %}
+        {% capture this_value %}
+          {{ item.value }}
+        {% endcapture %}
+        {% capture this_example %}
+          <div class="bg-secondary-light padding-left-{{ item.token }}">
+            <div class="square-4 border-1px bg-white"></div>
           </div>
-        {% endfor %}
-        <div class="grid-col-12 text-center display-flex flex-column flex-justify flex-align-start utility-example-container">
-          <div class="bg-secondary-light display-inline-block width-full">
-            <div class="square-4 border-1px bg-white margin-left-auto"></div>
-          </div>
-          <div class="display-flex flex-column flex-align-start">
-            <p class="utility-class margin-top-2">.margin-left-auto</p>
-            <p class="utility-value">auto</p>
-          </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          utility=this_class
+          value=this_value
+          example=this_example
+        %}
+      {% endfor %}
+      {% capture this_class %}
+        .margin-left-auto
+      {% endcapture %}
+      {% capture this_value %}
+        auto
+      {% endcapture %}
+      {% capture this_example %}
+        <div class="bg-secondary-light width-full">
+          <div class="square-4 border-1px bg-white margin-left-auto"></div>
         </div>
-      </div>
+      {% endcapture %}
+      {% include utilities/utility-example.html
+        utility=this_class
+        utilityClasses='grid-col-auto'
+        value=this_value
+        example=this_example
+        exampleClasses='grid-col-fill maxw-none'
+      %}
 
       <h4 class="utility-examples-title margin-bottom-3">Margin right</h4>
-      <div class="grid-row">
-        {% for item in page.vals_negative reversed %}
-          <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-            <div class="position-relative square-4 border-1px bg-white">
-              <div class="bg-secondary-light pin-right height-full width-{{ item.equiv }}"></div>
-            </div>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">.margin-right-{{ item.token }}</p>
-              <p class="utility-value">{{ item.value }}</p>
-            </div>
+      {% for item in page.vals_negative reversed %}
+        {% capture this_utility %}
+          .margin-right-{{ item.token }}
+        {% endcapture %}
+        {% capture this_value %}
+          {{ item.value }}
+        {% endcapture %}
+        {% capture this_example %}
+          <div class="position-relative square-4 border-1px bg-white">
+            <div class="bg-secondary-light pin-right height-full width-{{ item.equiv }}"></div>
           </div>
-        {% endfor %}
-        {% for item in page.vals_positive %}
-          {% if forloop.last %}
-          <div class="utility-example-container grid-col-6 text-center display-flex flex-column flex-justify flex-align-start">
-          {% else %}
-          <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-          {% endif %}
-            <div class="bg-secondary-light display-inline-block">
-              <div class="square-4 border-1px bg-white margin-right-{{ item.token }}"></div>
-            </div>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">.margin-right-{{ item.token }}</p>
-              <p class="utility-value">{{ item.value }}</p>
-            </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          utility=this_utility
+          value=this_value
+          example=this_example
+        %}
+      {% endfor %}
+      {% for item in page.vals_positive %}
+        {% capture this_utility %}
+          .margin-right-{{ item.token }}
+        {% endcapture %}
+        {% capture this_value %}
+          {{ item.value }}
+        {% endcapture %}
+        {% capture this_example %}
+          <div class="bg-secondary-light padding-right-{{ item.token }}">
+            <div class="square-4 border-1px bg-white"></div>
           </div>
-        {% endfor %}
-        <div class="grid-col-12 text-center display-flex flex-column flex-justify flex-align-start utility-example-container">
-          <div class="bg-secondary-light display-inline-block width-full">
-            <div class="square-4 border-1px bg-white margin-right-auto"></div>
-          </div>
-          <div class="display-flex flex-column flex-align-start">
-            <p class="utility-class margin-top-2">.margin-right-auto</p>
-            <p class="utility-value">auto</p>
-          </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          utility=this_utility
+          value=this_value
+          example=this_example
+        %}
+      {% endfor %}
+      {% capture this_utility %}
+        .margin-right-auto
+      {% endcapture %}
+      {% capture this_value %}
+        auto
+      {% endcapture %}
+      {% capture this_example %}
+        <div class="bg-secondary-light width-full">
+          <div class="square-4 border-1px bg-white margin-right-auto"></div>
         </div>
-      </div>
+      {% endcapture %}
+      {% include utilities/utility-example.html
+        utility=this_utility
+        utilityClasses="grid-col-auto"
+        value=this_value
+        example=this_example
+        exampleClasses="grid-col-fill maxw-none"
+      %}
 
       <h4 class="utility-examples-title margin-bottom-3">Margin left and right</h4>
-      <div class="grid-row">
         {% for item in page.vals_negative reversed %}
-          <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-            <div class="position-relative height-4 width-9 border-1px bg-white">
-              <div class="bg-secondary-light pin-right height-full width-{{ item.equiv }}"></div>
-              <div class="bg-secondary-light pin-left height-full width-{{ item.equiv }}"></div>
-            </div>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">.margin-x-{{ item.token }}</p>
-              <p class="utility-value">{{ item.value }}</p>
-            </div>
+          {% capture this_utility %}
+            .margin-x-{{ item.token }}
+          {% endcapture %}
+          {% capture this_value %}
+            {{ item.value }}
+          {% endcapture %}
+          {% capture this_example %}
+          <div class="position-relative height-4 width-9 border-1px bg-white">
+            <div class="bg-secondary-light pin-right height-full width-{{ item.equiv }}"></div>
+            <div class="bg-secondary-light pin-left height-full width-{{ item.equiv }}"></div>
           </div>
+          {% endcapture %}
+          {% include utilities/utility-example.html
+            utility=this_utility
+            value=this_value
+            example=this_example
+          %}
         {% endfor %}
         {% for item in page.vals_positive %}
-          {% if forloop.last %}
-          <div class="utility-example-container grid-col-6 text-center display-flex flex-column flex-justify flex-align-start">
-          {% else %}
-          <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-          {% endif %}
-            <div class="bg-secondary-light display-inline-block">
-              <div class="square-4 border-1px bg-white margin-x-{{ item.token }}"></div>
-            </div>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">.margin-x-{{ item.token }}</p>
-              <p class="utility-value">{{ item.value }}</p>
-            </div>
+          {% capture this_utility %}
+            .margin-x-{{ item.token }}
+          {% endcapture %}
+          {% capture this_value %}
+            {{ item.value }}
+          {% endcapture %}
+          {% capture this_example %}
+          <div class="bg-secondary-light padding-x-{{ item.token }}">
+            <div class="square-4 border-1px bg-white"></div>
           </div>
+          {% endcapture %}
+          {% include utilities/utility-example.html
+            utility=this_utility
+            value=this_value
+            example=this_example
+          %}
         {% endfor %}
-        <div class="grid-col-12 text-center display-flex flex-column flex-justify flex-align-start utility-example-container">
-          <div class="bg-secondary-light display-inline-block width-full">
-            <div class="square-4 border-1px bg-white margin-x-auto"></div>
-          </div>
-          <div class="display-flex flex-column flex-align-start">
-            <p class="utility-class margin-top-2">.margin-x-auto</p>
-            <p class="utility-value">auto</p>
-          </div>
+        {% capture this_utility %}
+          .margin-x-auto
+        {% endcapture %}
+        {% capture this_value %}
+          auto
+        {% endcapture %}
+        {% capture this_example %}
+        <div class="bg-secondary-light width-full">
+          <div class="square-4 border-1px bg-white margin-x-auto"></div>
         </div>
-      </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          utility=this_utility
+          utilityClasses='grid-col-auto'
+          value=this_value
+          example=this_example
+          exampleClasses='grid-col-fill maxw-none'
+        %}
 
-      <h4 class="utility-examples-title margin-bottom-3">Margin bottom and top</h4>
-      <div class="grid-row">
-        {% for item in page.vals_negative reversed %}
-          <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-            <div class="position-relative width-4 height-9 border-1px bg-white">
-              <div class="bg-secondary-light pin-bottom height-{{ item.equiv }}"></div>
-              <div class="bg-secondary-light pin-top width-full height-{{ item.equiv }}"></div>
-            </div>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">.margin-y-{{ item.token }}</p>
-              <p class="utility-value">{{ item.value }}</p>
-            </div>
-          </div>
-        {% endfor %}
-        {% for item in page.vals_positive %}
-          {% if forloop.last %}
-          <div class="utility-example-container grid-col-6 text-center display-flex flex-column flex-justify flex-align-start">
-          {% else %}
-          <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-          {% endif %}
-            <div class="bg-secondary-light display-inline-block">
-              <div class="square-4 border-1px bg-white margin-y-{{ item.token }}"></div>
-            </div>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">.margin-y-{{ item.token }}</p>
-              <p class="utility-value">{{ item.value }}</p>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
+      <h4 class="utility-examples-title">Margin bottom and top</h4>
+      {% for item in page.vals_negative reversed %}
+        {% capture this_utility %}
+          .margin-y-{{ item.token }}
+        {% endcapture %}
+        {% capture this_value %}
+          {{ item.value }}
+        {% endcapture %}
+        {% capture this_example %}
+        <div class="position-relative height-9 width-4 border-1px bg-white">
+          <div class="bg-secondary-light pin-top width-full height-{{ item.equiv }}"></div>
+          <div class="bg-secondary-light pin-bottom width-full height-{{ item.equiv }}"></div>
+        </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          utility=this_utility
+          value=this_value
+          example=this_example
+        %}
+      {% endfor %}
+      {% for item in page.vals_positive %}
+        {% capture this_utility %}
+          .margin-y-{{ item.token }}
+        {% endcapture %}
+        {% capture this_value %}
+          {{ item.value }}
+        {% endcapture %}
+        {% capture this_example %}
+        <div class="bg-secondary-light padding-y-{{ item.token }}">
+          <div class="square-4 border-1px bg-white"></div>
+        </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          utility=this_utility
+          value=this_value
+          example=this_example
+        %}
+      {% endfor %}
     </section><!-- utility-examples -->
   </section><!-- #margin -->
 
   <section class="utility" id="padding">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Padding</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">padding</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
-
+    {% include utilities/utility-title-bar.html
+      title="Padding"
+      responsive=true
+    %}
     <section class="utility-examples">
-      <h4 class="utility-examples-title margin-bottom-3">Padding on all sides</h4>
-      <div class="grid-row">
-        {% for item in page.vals_positive %}
-          {% if forloop.last %}
-          <div class="utility-example-container grid-col-6 text-center display-flex flex-column flex-justify flex-align-start">
-          {% else %}
-          <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-          {% endif %}
-            <div class="square-card border-1px bg-primary-lighter margin-0 display-inline-block padding-{{ item.token }}">
-              <div class="bg-white add-aspect-1x1"></div>
-            </div>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">.padding-{{ item.token }}</p>
-              <p class="utility-value">{{ item.value }}</p>
-            </div>
+      <h4 class="utility-examples-title">Padding on all sides</h4>
+      {% for item in page.vals_positive %}
+        {% capture this_class %}
+          .padding-{{ item.token }}
+        {% endcapture %}
+        {% capture this_value %}
+          {{ item.value }}
+        {% endcapture %}
+        {% capture this_example %}
+          <div class="square-card border-1px bg-primary-lighter margin-0 display-inline-block padding-{{ item.token }}">
+            <div class="bg-white add-aspect-1x1"></div>
           </div>
-        {% endfor %}
-      </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          utility=this_class
+          value=this_value
+          example=this_example
+        %}
+      {% endfor %}
 
-      <h4 class="utility-examples-title margin-bottom-3">Padding bottom</h4>
-      <div class="grid-row">
-        {% for item in page.vals_positive %}
-          {% if forloop.last %}
-          <div class="utility-example-container grid-col-6 text-center display-flex flex-column flex-justify flex-align-start">
-            <div class="position-relative square-9 border-1px margin-0 bg-primary-lighter">
-            </div>
-          {% else %}
-          <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-            <div class="position-relative square-9 border-1px margin-0 bg-white">
-              <div class="bg-primary-lighter pin-bottom pin-x height-{{ item.token }}"></div>
-            </div>
-          {% endif %}
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">.padding-bottom-{{ item.token }}</p>
-              <p class="utility-value">{{ item.value }}</p>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
+      <h4 class="utility-examples-title">Padding bottom</h4>
+      {% for item in page.vals_positive %}
+        {% capture this_class %}
+          .padding-bottom-{{ item.token }}
+        {% endcapture %}
+        {% capture this_value %}
+          {{ item.value }}
+        {% endcapture %}
+        {% capture this_example %}
+        <div class="position-relative square-9 border-1px margin-0 bg-white">
+          <div class="bg-primary-lighter pin-bottom pin-x height-{{ item.token }}"></div>
+        </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          utility=this_class
+          value=this_value
+          example=this_example
+        %}
+      {% endfor %}
 
-      <h4 class="utility-examples-title margin-bottom-3">Padding top</h4>
-      <div class="grid-row">
-        {% for item in page.vals_positive %}
-          {% if forloop.last %}
-          <div class="utility-example-container grid-col-6 text-center display-flex flex-column flex-justify flex-align-start">
-            <div class="position-relative square-9 border-1px margin-0 bg-primary-lighter">
-            </div>
-          {% else %}
-          <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-            <div class="position-relative square-9 border-1px margin-0 bg-white">
-              <div class="bg-primary-lighter pin-top pin-x height-{{ item.token }}"></div>
-            </div>
-          {% endif %}
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">.padding-top-{{ item.token }}</p>
-              <p class="utility-value">{{ item.value }}</p>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
+      <h4 class="utility-examples-title">Padding top</h4>
+      {% for item in page.vals_positive %}
+        {% capture this_class %}
+          .padding-top-{{ item.token }}
+        {% endcapture %}
+        {% capture this_value %}
+          {{ item.value }}
+        {% endcapture %}
+        {% capture this_example %}
+        <div class="position-relative square-9 border-1px margin-0 bg-white">
+          <div class="bg-primary-lighter pin-top pin-x height-{{ item.token }}"></div>
+        </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          utility=this_class
+          value=this_value
+          example=this_example
+        %}
+      {% endfor %}
 
-      <h4 class="utility-examples-title margin-bottom-3">Padding left</h4>
-      <div class="grid-row">
-        {% for item in page.vals_positive %}
-          {% if forloop.last %}
-          <div class="utility-example-container grid-col-6 text-center display-flex flex-column flex-justify flex-align-start">
-            <div class="position-relative square-9 border-1px margin-0 bg-primary-lighter">
-            </div>
-          {% else %}
-          <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-            <div class="position-relative square-9 border-1px margin-0 bg-white">
-              <div class="bg-primary-lighter pin-left pin-y width-{{ item.token }}"></div>
-            </div>
-          {% endif %}
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">.padding-left-{{ item.token }}</p>
-              <p class="utility-value">{{ item.value }}</p>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
+      <h4 class="utility-examples-title">Padding left</h4>
+      {% for item in page.vals_positive %}
+        {% capture this_class %}
+          .padding-left-{{ item.token }}
+        {% endcapture %}
+        {% capture this_value %}
+          {{ item.value }}
+        {% endcapture %}
+        {% capture this_example %}
+        <div class="position-relative square-9 border-1px margin-0 bg-white">
+          <div class="bg-primary-lighter pin-left pin-y width-{{ item.token }}"></div>
+        </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          utility=this_class
+          value=this_value
+          example=this_example
+        %}
+      {% endfor %}
 
-      <h4 class="utility-examples-title margin-bottom-3">Padding right</h4>
-      <div class="grid-row">
-        {% for item in page.vals_positive %}
-          {% if forloop.last %}
-          <div class="utility-example-container grid-col-6 text-center display-flex flex-column flex-justify flex-align-start">
-            <div class="position-relative square-9 border-1px margin-0 bg-primary-lighter">
-            </div>
-          {% else %}
-          <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-            <div class="position-relative square-9 border-1px margin-0 bg-white">
-              <div class="bg-primary-lighter pin-right pin-y width-{{ item.token }}"></div>
-            </div>
-          {% endif %}
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">.padding-right-{{ item.token }}</p>
-              <p class="utility-value">{{ item.value }}</p>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
+      <h4 class="utility-examples-title">Padding right</h4>
+      {% for item in page.vals_positive %}
+        {% capture this_class %}
+          .padding-right-{{ item.token }}
+        {% endcapture %}
+        {% capture this_value %}
+          {{ item.value }}
+        {% endcapture %}
+        {% capture this_example %}
+        <div class="position-relative square-9 border-1px margin-0 bg-white">
+          <div class="bg-primary-lighter pin-right pin-y width-{{ item.token }}"></div>
+        </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          utility=this_class
+          value=this_value
+          example=this_example
+        %}
+      {% endfor %}
 
-      <h4 class="utility-examples-title margin-bottom-3">Padding left and right</h4>
-      <div class="grid-row">
-        {% for item in page.vals_positive %}
-          {% if forloop.last %}
-          <div class="utility-example-container grid-col-6 text-center display-flex flex-column flex-justify flex-align-start">
-          {% else %}
-          <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-          {% endif %}
-            <div class="position-relative height-9 width-card border-1px bg-white margin-0 display-inline-block padding-top-0">
-              <div class="bg-primary-lighter pin-right pin-y width-{{ item.token }}"></div>
-              <div class="bg-primary-lighter pin-left pin-y width-{{ item.token }}"></div>
-            </div>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">.padding-x-{{ item.token }}</p>
-              <p class="utility-value">{{ item.value }}</p>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
+      <h4 class="utility-examples-title">Padding left and right</h4>
+      {% for item in page.vals_positive %}
+        {% capture this_class %}
+          .padding-x-{{ item.token }}
+        {% endcapture %}
+        {% capture this_value %}
+          {{ item.value }}
+        {% endcapture %}
+        {% capture this_example %}
+        <div class="position-relative width-card height-9 border-1px margin-0 bg-white">
+          <div class="bg-primary-lighter pin-right pin-y width-{{ item.token }}"></div>
+          <div class="bg-primary-lighter pin-left pin-y width-{{ item.token }}"></div>
+        </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          utility=this_class
+          value=this_value
+          example=this_example
+        %}
+      {% endfor %}
 
-      <h4 class="utility-examples-title margin-bottom-3">Padding bottom and top</h4>
-      <div class="grid-row">
-        {% for item in page.vals_positive %}
-          {% if forloop.last %}
-          <div class="utility-example-container grid-col-6 text-center display-flex flex-column flex-justify flex-align-start">
-          {% else %}
-          <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-          {% endif %}
-            <div class="position-relative height-card width-9 border-1px bg-white margin-0 display-inline-block padding-top-0">
-              <div class="bg-primary-lighter pin-top pin-x height-{{ item.token }}"></div>
-              <div class="bg-primary-lighter pin-bottom pin-x height-{{ item.token }}"></div>
-            </div>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">.padding-y-{{ item.token }}</p>
-              <p class="utility-value">{{ item.value }}</p>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
+      <h4 class="utility-examples-title">Padding bottom and top</h4>
+      {% for item in page.vals_positive %}
+        {% capture this_class %}
+          .padding-y-{{ item.token }}
+        {% endcapture %}
+        {% capture this_value %}
+          {{ item.value }}
+        {% endcapture %}
+        {% capture this_example %}
+        <div class="position-relative height-card width-9 border-1px margin-0 bg-white">
+          <div class="bg-primary-lighter pin-top pin-x height-{{ item.token }}"></div>
+          <div class="bg-primary-lighter pin-bottom pin-x height-{{ item.token }}"></div>
+        </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          utility=this_class
+          value=this_value
+          example=this_example
+        %}
+      {% endfor %}
     </section><!-- utility-examples -->
   </section><!-- #padding -->
 </section><!-- utilities -->
@@ -537,12 +583,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .margin-<code>modifier</code>-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+            .margin-<code>modifier</code>-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-margin-<code>modifier</code>(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+            u-margin-<code>modifier</code>(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -554,12 +600,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .padding-<code>modifier</code>-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+            .padding-<code>modifier</code>-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-padding-<code>modifier</code>(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+            u-padding-<code>modifier</code>(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Example">

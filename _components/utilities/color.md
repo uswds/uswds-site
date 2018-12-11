@@ -54,31 +54,18 @@ utilities:
 
 <section class="utilities-section">
 
-  <div class="grid-row utilities-section-title-bar">
-    <h2 class="grid-col-auto utilities-section-title">Examples and usage</h2>
-    <p class="grid-col-fill utilities-section-helper">Utilities, values, and variants may be activated and deactivated in <a href="#advanced-settings" class="text-ink text-no-wrap">advanced settings</a>.</p>
-  </div>
+{% include utilities/utilities-section-title-bar.html %}
 
   <section class="utility" id="text-color">
-    <section class="utility-title-bar">
-      <div class="grid-row flex-align-center">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Text color</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">color</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-active"><a href="#state-variants">hover</a></li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Text color"
+      property="color"
+      responsive=true
+      hover=true
+    %}
 
     <section class="utility-examples">
-      <h4 class="utility-examples-title">Project theme colors <a class="utility-examples-helper" href="{{ site.baseurl }}/style-tokens/color/theme-tokens/">Read more about project theme colors</a></h4>
+      <h4 class="utility-examples-title">Project theme colors <a class="utility-examples-helper" href="{{ site.baseurl }}/design-tokens/color/theme-tokens/">Read more about project theme colors</a></h4>
 
       <div class="grid-row">
         {% for color in theme_colors %}
@@ -88,7 +75,7 @@ utilities:
             | regexreplace: '.+?(\d+).*?$', '\1'
             | times: 1 %}
 
-          <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
+          <div class="utility-example-container grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
             <span class="radius-md padding-05 text-{{ color.token }}{% if grade < 50 %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
@@ -120,7 +107,7 @@ utilities:
                 | times: 1 %}
             {% endif %}
           {% endif %}
-          <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
+          <div class="utility-example-container grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
             <span class="radius-md padding-05 text-{{ color.token }}{% if grade < 50 %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
@@ -151,7 +138,7 @@ utilities:
                 | times: 1 %}
             {% endif %}
           {% endif %}
-          <div class="utility-example-container-condensed grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
+          <div class="utility-example-container grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
             <span class="radius-md padding-05 text-{{ color.token }}{% if grade < 50 %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
@@ -164,30 +151,19 @@ utilities:
   </section>
 
   <section class="utility" id="background-color">
-    <section class="utility-title-bar">
-      <div class="grid-row flex-align-center">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Background color</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">background-color</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-active"><a href="#state-variants">hover</a></li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Background color"
+      property="background-color"
+      hover=true
+    %}
 
     <section class="utility-examples">
-      <h3 class="font-sans-4 margin-top-0 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Project theme colors <a class="utility-examples-helper" href="{{ site.baseurl }}/style-tokens/color/theme-tokens/">Read more about project theme colors</a></h3>
+      <h3 class="font-sans-4 margin-top-0 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Project theme colors <a class="utility-examples-helper" href="{{ site.baseurl }}/design-tokens/color/theme-tokens/">Read more about project theme colors</a></h3>
       <div class="grid-row">
         {% for color in theme_colors %}
           {% assign system = system-colors | where: 'token', color.default %}
           {% assign value = system[0].value %}
-          <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center measure-none">
+          <p class="utility-example-container grid-col-12 display-flex flex-align-center measure-none">
             <span class="flex-fill">
               <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
               <span class="utility-class">.bg-{{ color.token }}</span>
@@ -205,7 +181,7 @@ utilities:
       <h3 class="font-sans-4 margin-top-4 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Grayscale palette</h3>
       <div class="grid-row">
         {% for color in grayscale_colors %}
-          <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center measure-none">
+          <p class="utility-example-container grid-col-12 display-flex flex-align-center measure-none">
             <span class="flex-fill">
               <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
               <span class="utility-class">.bg-{{ color.token }}</span>
@@ -225,7 +201,7 @@ utilities:
         {% for color in basic_colors %}
           {% assign system = system-colors | where: 'token', color.default %}
           {% assign value = system[0].value %}
-          <p class="utility-example-container-condensed grid-col-12 display-flex flex-align-center measure-none">
+          <p class="utility-example-container grid-col-12 display-flex flex-align-center measure-none">
             <span class="flex-fill">
               <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
               <span class="utility-class">.bg-{{ color.token }}</span>
@@ -257,12 +233,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .text-<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>
+            .text-<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-text(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)
+            u-text(<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -274,12 +250,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .bg-<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>
+            .bg-<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-bg(<a href="{{ site.baseurl }}/style-tokens/color/" class="token">color</a>)
+            u-bg(<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>)
           </span>
         </td>
         <td data-title="Example">

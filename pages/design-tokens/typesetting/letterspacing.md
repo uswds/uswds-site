@@ -1,8 +1,8 @@
 ---
-permalink: /style-tokens/typesetting/letterspacing/
+permalink: /design-tokens/typesetting/letterspacing/
 layout: styleguide
 title: Letterspacing
-category: Style tokens
+category: Design tokens
 lead: USWDS has 6 letterspacing tokens to control the amount of space between individual letterforms.
 type: docs
 subnav:
@@ -81,8 +81,8 @@ Your context and coding style determine how you access USWDS letterspacing token
         </td>
         <td data-title="Usage">
           <span class="line-height-sans-6">
-            letter-spacing(<a href="{{ site.baseurl }}/style-tokens/typesetting/letterspacing/" class="token">letterspacing</a>)<br/>
-            ls(<a href="{{ site.baseurl }}/style-tokens/typesetting/letterspacing/" class="token">letterspacing</a>)
+            letter-spacing(<a href="{{ site.baseurl }}/design-tokens/typesetting/letterspacing/" class="token">letterspacing</a>)<br/>
+            ls(<a href="{{ site.baseurl }}/design-tokens/typesetting/letterspacing/" class="token">letterspacing</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -100,7 +100,7 @@ Your context and coding style determine how you access USWDS letterspacing token
         </td>
         <td data-title="Usage">
           <span>
-            u-text('ls-<a href="{{ site.baseurl }}/style-tokens/typesetting/letterspacing/" class="token">letterspacing</a>')
+            u-text('ls-<a href="{{ site.baseurl }}/design-tokens/typesetting/letterspacing/" class="token">letterspacing</a>')
           </span>
         </td>
         <td data-title="Example">
@@ -117,7 +117,7 @@ Your context and coding style determine how you access USWDS letterspacing token
         </td>
         <td data-title="Usage">
           <span>
-            <a href="{{ site.baseurl }}/style-tokens/typesetting/letterspacing/" class="token">letterspacing</a>
+            <a href="{{ site.baseurl }}/design-tokens/typesetting/letterspacing/" class="token">letterspacing</a>
           </span>
         </td>
         <td data-title="Example">
@@ -134,7 +134,7 @@ Your context and coding style determine how you access USWDS letterspacing token
         </td>
         <td data-title="Usage">
           <span>
-            .text-ls-<a href="{{ site.baseurl }}/style-tokens/typesetting/letterspacing/" class="token">letterspacing</a>
+            .text-ls-<a href="{{ site.baseurl }}/design-tokens/typesetting/letterspacing/" class="token">letterspacing</a>
           </span>
         </td>
         <td data-title="Example">

@@ -1,8 +1,8 @@
 ---
-permalink: /style-tokens/order/
+permalink: /design-tokens/order/
 layout: styleguide
 title: Order
-category: Style tokens
+category: Design tokens
 lead: Use order tokens to set the order of an item in a flex container.
 type: docs
 subnav:
@@ -111,7 +111,7 @@ Your context and coding style determine how you access USWDS order tokens in cod
         </td>
         <td data-title="Usage">
           <span>
-            order(<a href="{{ site.baseurl }}/style-tokens/order/" class="token">order</a>)
+            order(<a href="{{ site.baseurl }}/design-tokens/order/" class="token">order</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -128,7 +128,7 @@ Your context and coding style determine how you access USWDS order tokens in cod
         </td>
         <td data-title="Usage">
           <span>
-            u-order(<a href="{{ site.baseurl }}/style-tokens/order/" class="token">order</a>)
+            u-order(<a href="{{ site.baseurl }}/design-tokens/order/" class="token">order</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -145,7 +145,7 @@ Your context and coding style determine how you access USWDS order tokens in cod
         </td>
         <td data-title="Usage">
           <span>
-            <a href="{{ site.baseurl }}/style-tokens/order/" class="token">order</a>
+            <a href="{{ site.baseurl }}/design-tokens/order/" class="token">order</a>
           </span>
         </td>
         <td data-title="Example">
@@ -162,7 +162,7 @@ Your context and coding style determine how you access USWDS order tokens in cod
         </td>
         <td data-title="Usage">
           <span>
-            .order-<a href="{{ site.baseurl }}/style-tokens/order/" class="token">order</a>
+            .order-<a href="{{ site.baseurl }}/design-tokens/order/" class="token">order</a>
           </span>
         </td>
         <td data-title="Example">

@@ -26,56 +26,61 @@ utilities:
 <div class="font-sans-4 weight-300">
 
   <section class="utilities-section">
-    <div class="grid-row flex-align-center margin-bottom-2">
-      <h2 class="grid-col-auto utilities-section-title">Examples and usage</h2>
-      <p class="grid-col-fill utilities-section-helper">Utilities, values, and variants may be activated and deactivated in <a href="#advanced-settings" class="text-ink text-no-wrap">advanced settings</a>.</p>
-    </div>
+    {% include utilities/utilities-section-title-bar.html %}
 
     <section class="utility">
-      <section class="utility-title-bar">
-        <div class="grid-row">
-          <div class="grid-col-fill">
-            <h3 class="grid-col-auto utility-title">List reset</h3>
-          </div>
-          <ul class="grid-col-auto utility-scope">
-            <li class="utility-scope-button-disabled">responsive</li>
-            <li class="utility-scope-button-disabled">active</li>
-            <li class="utility-scope-button-disabled">hover</li>
-            <li class="utility-scope-button-disabled">focus</li>
-            <li class="utility-scope-button-disabled">visited</li>
-          </ul>
-        </div>
-      </section>
+      {% include utilities/utility-title-bar.html
+        title="List reset"
+        property=false
+      %}
       <section class="utility-examples">
-        <div class="grid-row">
-          <div class="utility-example-container-condensed grid-col display-flex flex-column flex-justify flex-align-start border-0">
-            <div class="bg-secondary-light">
-              <ul class="bg-white">
-                <li>Red apples</li>
-                <li>Yellow bananas</li>
-                <li>Purple eggplants</li>
-              </ul>
-            </div>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">default ul</p>
-              <p class="utility-value">margin-y: 1em</p>
-              <p class="utility-value">padding-left: 1.94em</p>
-            </div>
-          </div>
-          <div class="utility-example-container-condensed grid-col display-flex flex-column flex-justify flex-align-start border-0">
-            <ul class="add-list-reset">
-              <li>Red apples</li>
-              <li>Yellow bananas</li>
-              <li>Purple eggplants</li>
-            </ul>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class margin-top-2">ul.add-list-reset</p>
-              <p class="utility-value">margin-y: 0</p>
-              <p class="utility-value">padding-left: 0</p>
-              <p class="utility-value">list-style: none</p>
-            </div>
-          </div>
-        </div>
+        {% assign thisWrap =              false %}
+        {% assign thisContainerClasses =  nil %}
+        {% assign thisUtilityClasses =    nil %}
+        {% assign thisValueClasses =      nil %}
+        {% assign thisExampleClasses =    'bg-secondary-light padding-left-0 grid-col-6' %}
+        {% capture thisClass %}
+          default
+        {% endcapture %}
+        {% capture thisValue %}
+        {% endcapture %}
+        {% capture thisExample %}
+          <ul class="bg-white">
+            <li>Red apples</li>
+            <li>Yellow bananas</li>
+            <li>Purple eggplants</li>
+          </ul>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          wrap = thisWrap
+          containerClasses = thisContainerClasses
+          utility = thisClass
+          utilityClasses = thisUtilityClasses
+          value = nil
+          valueClasses = thisValueClasses
+          example = thisExample
+          exampleClasses = thisExampleClasses
+        %}
+        {% capture thisClass %}
+          .add-list-reset
+        {% endcapture %}
+        {% capture thisExample %}
+          <ul class="add-list-reset bg-white">
+            <li>Red apples</li>
+            <li>Yellow bananas</li>
+            <li>Purple eggplants</li>
+          </ul>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          wrap = thisWrap
+          containerClasses = thisContainerClasses
+          utility = thisClass
+          utilityClasses = thisUtilityClasses
+          value = nil
+          valueClasses = thisValueClasses
+          example = thisExample
+          exampleClasses = thisExampleClasses
+        %}
       </section>
     </section>
   </section>

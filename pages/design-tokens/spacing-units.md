@@ -1,8 +1,8 @@
 ---
-permalink: /style-tokens/spacing-units/
+permalink: /design-tokens/spacing-units/
 layout: styleguide
 title: Spacing units
-category: Style tokens
+category: Design tokens
 lead: USWDS spacing unit tokens are based on multiples of 8px, with additional tokens for small sizes, named tokens for large sizes, and a more limited selection of negative tokens.
 type: docs
 subnav:
@@ -113,7 +113,7 @@ Many mixins and utilities accept spacing unit tokens. See the [utilities section
         </td>
         <td data-title="Usage">
           <span>
-            units(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+            units(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -134,7 +134,7 @@ Many mixins and utilities accept spacing unit tokens. See the [utilities section
         </td>
         <td data-title="Usage">
           <span>
-            at-media(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+            at-media(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -152,7 +152,7 @@ Many mixins and utilities accept spacing unit tokens. See the [utilities section
         </td>
         <td data-title="Usage">
           <span>
-            at-media-max(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+            at-media-max(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -169,7 +169,7 @@ Many mixins and utilities accept spacing unit tokens. See the [utilities section
         </td>
         <td data-title="Usage">
           <span>
-            <a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+            <a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </td>
         <td data-title="Example">
@@ -186,8 +186,8 @@ Many mixins and utilities accept spacing unit tokens. See the [utilities section
         </td>
         <td data-title="Usage">
           <span>
-            .padding-x-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a><br/>
-            .margin-x-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+            .padding-x-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a><br/>
+            .margin-x-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </td>
         <td data-title="Example">

@@ -45,174 +45,125 @@ utilities:
 
 <section class="utilities-section">
 
-  <div class="grid-row flex-align-center margin-bottom-2">
-    <h2 class="grid-col-auto utilities-section-title">Examples and usage</h2>
-    <p class="grid-col-fill utilities-section-helper">Utilities, values, and variants may be activated and deactivated in <a href="#advanced-settings" class="text-ink text-no-wrap">advanced settings</a>.</p>
-  </div>
+{% include utilities/utilities-section-title-bar.html %}
 
   <section class="utility" id="utility-font">
-    <section class="utility-title-bar">
-      <div class="grid-row flex-align-center">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Font size and family</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">font-size, font-family</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
-
+    {% include utilities/utility-title-bar.html
+      title="Font size and family"
+      property="font-size, font-family"
+    %}
     <section class="utility-examples">
 
       <h4 class="utility-examples-title margin-bottom-2">Type-based size and family utilities</h4>
 
-      <p class="utility-note font-sans-2xs margin-bottom-2 margin-top-0"><strong>Note:</strong> You can modify both the default theme sizes and default typefaces in your project settings. Use valid system tokens following the guidance in the <strong><a href="{{ site.baseurl }}/style-tokens/typesetting/">Typesetting</a></strong> section of USWDS <a href="{{ site.baseurl }}/style-tokens/">style tokens</a> documentation.</p>
+      <p class="utility-note"><strong>Note:</strong> You can modify both the default theme sizes and default typefaces in your project settings. Use valid system tokens following the guidance in the <strong><a href="{{ site.baseurl }}/design-tokens/typesetting/">Typesetting</a></strong> section of USWDS <a href="{{ site.baseurl }}/design-tokens/">design tokens</a> documentation.</p>
 
-      <div class="grid-row flex-align-center margin-bottom-2 padding-bottom-1">
-        {% for family in tokens.family.type %}
-          {% if family.default %}
+
+      {% for family in tokens.family.type %}
+        {% if family.default %}
+          {% assign font = tokens.family.font
+            | where: 'token', family.default
+            | first %}
+            <h5 class="utility-examples-title">font-{{ family.token }} <span class="text-normal font-sans-3xs">(Shown: {{ font.name }})</span></h5>
+          {% for size in tokens.size.theme %}
             {% assign font = tokens.family.font
               | where: 'token', family.default
               | first %}
-            <div class="grid-col-4 text-bold font-sans-1">
-              <div class="text-normal line-height-sans-1">Default: {{ font.name }}</div>
-              <div class="margin-top-1 font-mono-3xs line-height-mono-1">font-family-{{ family.token }}</div>
-            </div>
-          {% endif %}
-        {% endfor %}
-        <div class="grid-col-12">
-          <div class="border-top-2px margin-top-1 margin-bottom-2"></div>
-        </div>
-        {% for size in tokens.size.theme %}
-          {% assign loop = forloop.index %}
-          <div class="grid-col-12 grid-row text-400 padding-bottom-2 margin-bottom-2 border-bottom-1px border-gray-20">
-          {% for family in tokens.family.type %}
-            {% if family.default %}
-              <div class="tablet:grid-col-4 display-flex flex-column flex-justify">
-                <div class="font-{{ family.token }}-{{ size.token }} line-height-{{ family.token }}-1 text-gray-90 padding-bottom-105">
-                  {% if loop < 9 %}
-                  Tuscaloosa
-                  {% elsif loop < 12 %}
-                  Utica
-                  {% else %}
-                  LA
-                  {% endif %}
-                </div>
-                <div>
-                  <div class="padding-top-05"><span class="utility-class">.font-{{ family.token }}-{{ size.token }}</span></div>
-                  {% assign font = tokens.family.font
-                    | where: 'token', family.default
-                    | first %}
-                  {% assign px = tokens.size.system
-                    | where: 'token', size.default
-                    | first %}
-                  {% assign normal = tokens.meta.normal
-                    | divided_by: font.normal %}
-                  {% assign output = px.value
-                    | times: normal
-                    | round: 1 %}
-                  <div class="padding-top-05"><span class="utility-value">{{ output }}px</span></div>
-                </div>
+            {% assign px = tokens.size.system
+              | where: 'token', size.default
+              | first %}
+            {% assign normal = tokens.meta.normal
+              | divided_by: font.normal %}
+            {% assign output = px.value
+              | times: normal
+              | round: 1 %}
+            {% capture this_class %}
+              .font-{{ family.token }}-{{ size.token }}
+            {% endcapture %}
+            {% capture this_value %}
+              {{ output }}px
+            {% endcapture %}
+            {% capture this_example %}
+              <div class="font-{{ family.token }}-{{ size.token }} line-height-{{ family.token }}-1 text-gray-90">
+                Tuscaloosa
               </div>
-            {% endif %}
+            {% endcapture %}
+            {% include utilities/utility-example.html
+              utility=this_class
+              utilityClasses='width-card flex-auto'
+              value=this_value
+              valueClasses='flex-fill'
+              example=this_example
+              exampleClasses='flex-auto'
+            %}
           {% endfor %}
-          </div>
-        {% endfor %}
-      </div>
+        {% endif %}
+      {% endfor %}
 
-      <h4 class="utility-examples-title margin-bottom-2">Role-based size and family utilities</h4>
+      <h4 class="utility-examples-title">Role-based size and family utilities</h4>
 
-      <p class="utility-note font-sans-2xs margin-bottom-2 margin-top-0"><strong>Note:</strong> You can modify both the default theme sizes and default typefaces in your project settings. Use valid system tokens following the guidance in the <strong><a href="{{ site.baseurl }}/style-tokens/typesetting/">Typesetting</a></strong> section of USWDS <a href="{{ site.baseurl }}/style-tokens/">style tokens</a> documentation.</p>
+      <p class="utility-note"><strong>Note:</strong> You can modify both the default theme sizes and default typefaces in your project settings. Use valid system tokens following the guidance in the <strong><a href="{{ site.baseurl }}/design-tokens/typesetting/">Typesetting</a></strong> section of USWDS <a href="{{ site.baseurl }}/design-tokens/">design tokens</a> documentation.</p>
 
-      <div class="grid-row flex-align-center margin-bottom-2 padding-bottom-1">
-        {% for role in tokens.family.role %}
-          {% if role.default %}
+      {% for role in tokens.family.role %}
+        {% if role.default %}
+          {% assign type = tokens.family.type
+            | where: 'token', role.default
+            | first %}
+          {% assign font = tokens.family.font
+            | where: 'token', type.default
+            | first %}
+            <h5 class="utility-examples-title">font-{{ role.token }} <span class="text-normal font-sans-3xs">(Shown: {{ font.name }})</span></h5>
+          {% for size in tokens.size.theme %}
             {% assign type = tokens.family.type
               | where: 'token', role.default
               | first %}
             {% assign font = tokens.family.font
               | where: 'token', type.default
               | first %}
-            <div class="grid-col text-bold font-sans-1">
-              <div class="text-normal line-height-sans-1">Default: {{ font.name }}</div>
-              <div class="margin-top-1 font-mono-3xs line-height-mono-1">font-family-{{ role.token }}</div>
-            </div>
-          {% endif %}
-        {% endfor %}
-        <div class="grid-col-12">
-          <div class="border-top-2px margin-top-1 margin-bottom-2"></div>
-        </div>
-        {% for size in tokens.size.theme %}
-          {% assign loop = forloop.index %}
-          <div class="grid-col-12 grid-row text-400 padding-bottom-2 margin-bottom-2 border-bottom-1px border-gray-20">
-          {% for role in tokens.family.role %}
-            {% if role.default %}
-              <div class="tablet:grid-col display-flex flex-column flex-justify">
-                <div class="font-{{ role.token }}-{{ size.token }} line-height-{{ role.token }}-1 text-gray-90 padding-bottom-105">
-                  {% if loop < 9 %}
-                  Utica
-                  {% else %}
-                  LA
-                  {% endif %}
-                </div>
-                <div>
-                  <div class="padding-top-05"><span class="utility-class">.font-{{ role.token }}-{{ size.token }}</span></div>
-                  {% assign type = tokens.family.type
-                    | where: 'token', role.default
-                    | first %}
-                  {% assign font = tokens.family.font
-                    | where: 'token', type.default
-                    | first %}
-                  {% assign px = tokens.size.system
-                    | where: 'token', size.default
-                    | first %}
-                  {% assign normal = tokens.meta.normal
-                    | divided_by: font.normal %}
-                  {% assign output = px.value
-                    | times: normal
-                    | round: 1 %}
-                  <div class="padding-top-05"><span class="utility-value">{{ output }}px</span></div>
-                </div>
+            {% assign px = tokens.size.system
+              | where: 'token', size.default
+              | first %}
+            {% assign normal = tokens.meta.normal
+              | divided_by: font.normal %}
+            {% assign output = px.value
+              | times: normal
+              | round: 1 %}
+            {% capture this_class %}
+              .font-{{ role.token }}-{{ size.token }}
+            {% endcapture %}
+            {% capture this_value %}
+              {{ output }}px
+            {% endcapture %}
+            {% capture this_example %}
+              <div class="font-{{ role.token }}-{{ size.token }} line-height-{{ role.token }}-1 text-gray-90">
+                Tuscaloosa
               </div>
-            {% endif %}
+            {% endcapture %}
+            {% include utilities/utility-example.html
+              utility=this_class
+              utilityClasses='width-card flex-auto'
+              value=this_value
+              valueClasses='flex-fill'
+              example=this_example
+              exampleClasses='flex-auto'
+            %}
           {% endfor %}
-          </div>
-        {% endfor %}
-      </div>
-
+        {% endif %}
+      {% endfor %}
     </section><!-- examples -->
   </section><!-- utility -->
 
   <section class="utility" id="utility-font-family">
-    <section class="utility-title-bar">
-      <div class="grid-row flex-align-center">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Font family</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">font-family</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section>
+    {% include utilities/utility-title-bar.html
+      title="Font family"
+    %}
 
     <section class="utility-examples">
 
       <h4 class="utility-examples-title margin-bottom-2">Type-based</h4>
       {% for type in tokens.family.type %}
         {% if type.default %}
-          <div class="utility-example-container-condensed">
+          <div class="utility-example-container">
             <div class="utility-class">.font-family-{{ type.token }}</div>
           </div>
         {% endif %}
@@ -221,7 +172,7 @@ utilities:
       <h4 class="utility-examples-title margin-bottom-2">Role-based</h4>
       {% for role in tokens.family.role %}
         {% if role.default %}
-          <div class="utility-example-container-condensed">
+          <div class="utility-example-container">
             <div class="utility-class">.font-family-{{ role.token }}</div>
           </div>
         {% endif %}
@@ -247,12 +198,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .font-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>
+            .font-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-font(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)
+            u-font(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -264,12 +215,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .font-family-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>
+            .font-family-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-font-family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>)
+            u-font-family(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>)
           </span>
         </td>
         <td data-title="Example">

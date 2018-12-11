@@ -1,12 +1,17 @@
 - token: 1
   value: 40ch
+  usage: 'shorter text (1-2 paragraphs) meant to be distinguished from other page text, pullquotes'
 - token: 2
   value: 60ch
+  usage: 'a snappy reading line for quick-reading text'
 - token: 3
   value: 66ch
+  usage: 'an all-purpose reading line for most longform text'
 - token: 4
   value: 72ch
+  usage: 'a longer line for longform text, particularly in larger sizes'
 - token: 5
   value: 77ch
+  usage: 'an extra-long line sometimes useful for short text (less than 1 paragaph) or captions'
 - token: none
   value: none

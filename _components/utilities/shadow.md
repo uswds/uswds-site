@@ -30,68 +30,40 @@ utilities:
 </div>
 
 <section class="utilities-section">
-  <div class="grid-row flex-align-center margin-bottom-2">
-    <h2 class="grid-col-auto utilities-section-title">Examples and usage</h2>
-    <p class="grid-col-fill utilities-section-helper">Utilities, values, and variants may be activated and deactivated in <a href="#advanced-settings" class="text-ink text-no-wrap">advanced settings</a>.</p>
-  </div>
+  {% include utilities/utilities-section-title-bar.html %}
 
   <section class="utility" id="box-shadow">
-    <section class="utility-title-bar">
-      <div class="grid-row">
-        <div class="grid-col-fill">
-          <h3 class="grid-col-auto utility-title">Shadow</h3>
-          <p class="utility-property">CSS property: <span class="utility-property-code">box-shadow</span></p>
-        </div>
-
-        <ul class="grid-col-auto utility-scope">
-          <li class="utility-scope-button-disabled">responsive</li>
-          <li class="utility-scope-button-disabled">active</li>
-          <li class="utility-scope-button-disabled">hover</li>
-          <li class="utility-scope-button-disabled">focus</li>
-          <li class="utility-scope-button-disabled">visited</li>
-        </ul>
-      </div>
-    </section><!-- utility-title-bar -->
-
+    {% include utilities/utility-title-bar.html
+      title="Shadow"
+      property="box-shadow"
+    %}
     <section class="utility-examples">
-      <div class="grid-row">
-        <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-          <div class="bg-secondary-light display-inline-block">
-            <div class="square-9 bg-white shadow-none"></div>
-          </div>
-          <p class="utility-class margin-top-3">.shadow-none</p>
-        </div>
-        <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-          <div class="bg-secondary-light display-inline-block">
-            <div class="square-9 bg-white shadow-1"></div>
-          </div>
-          <p class="utility-class margin-top-3">.shadow-1</p>
-        </div>
-        <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-          <div class="bg-secondary-light display-inline-block">
-            <div class="square-9 bg-white shadow-2"></div>
-          </div>
-          <p class="utility-class margin-top-3">.shadow-2</p>
-        </div>
-        <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-          <div class="bg-secondary-light display-inline-block">
-            <div class="square-9 bg-white shadow-3"></div>
-          </div>
-          <p class="utility-class margin-top-3">.shadow-3</p>
-        </div>
-        <div class="utility-example-container grid-col-3 text-center display-flex flex-column flex-justify flex-align-start">
-          <div class="bg-secondary-light display-inline-block">
-            <div class="square-9 bg-white shadow-4"></div>
-          </div>
-          <p class="utility-class margin-top-3">.shadow-4</p>
-        </div>
-        <div class="utility-example-container grid-col-fill text-center display-flex flex-column flex-justify flex-align-start">
-          <div class="bg-secondary-light display-inline-block">
-            <div class="square-9 bg-white shadow-5"></div>
-          </div>
-          <p class="utility-class margin-top-3">.shadow-5</p>
-        </div>
-      </div>
+      {% for item in site.data.tokens.shadow %}
+        {% assign thisWrap =              false %}
+        {% assign thisContainerClasses =  'overflow-visible' %}
+        {% assign thisUtilityClasses =    nil %}
+        {% assign thisValueClasses =      'display-none tablet:display-block' %}
+        {% assign thisExampleClasses =    'padding-y-2' %}
+        {% capture thisClass %}
+          .shadow-{{ item.token }}
+        {% endcapture %}
+        {% capture thisValue %}
+          {{ item.value }}
+        {% endcapture %}
+        {% capture thisExample %}
+          <div class="square-9 bg-white shadow-{{ item.token }}"></div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          wrap = thisWrap
+          containerClasses = thisContainerClasses
+          utility = thisClass
+          utilityClasses = thisUtilityClasses
+          value = thisValue
+          valueClasses = thisValueClasses
+          example = thisExample
+          exampleClasses = thisExampleClasses
+        %}
+      {% endfor %}
     </section><!-- utility-examples -->
   </section><!-- utility -->
 </section><!-- utilities-section -->
@@ -112,12 +84,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .shadow-<a href="{{ site.baseurl }}/style-tokens/shadow/" class="token">shadow</a>
+            .shadow-<a href="{{ site.baseurl }}/design-tokens/shadow/" class="token">shadow</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-shadow(<a href="{{ site.baseurl }}/style-tokens/shadow/" class="token">shadow</a>)
+            u-shadow(<a href="{{ site.baseurl }}/design-tokens/shadow/" class="token">shadow</a>)
           </span>
         </td>
         <td data-title="Example">

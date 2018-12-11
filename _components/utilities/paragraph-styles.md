@@ -52,7 +52,84 @@ utilities:
   focus:        false
   hover:        false
   visited:      false
+vals_positive:
+  - token: 0
+    value: 0
+  - token: 1px
+    value: 1px
+  - token: 2px
+    value: 2px
+  - token: '05'
+    value: 4px
+  - token: 1
+    value: 8px
+  - token: 105
+    value: 12px
+  - token: 2
+    value: 16px
+  - token: 205
+    value: 20px
+  - token: 3
+    value: 24px
+  - token: 4
+    value: 32px
+  - token: 5
+    value: 40px
+  - token: 6
+    value: 48px
+  - token: 7
+    value: 56px
+  - token: 8
+    value: 64px
+  - token: 9
+    value: 72px
+vals_negative:
+  - token: neg-1px
+    value: -1px
+    equiv: 1px
+  - token: neg-2px
+    value: -2px
+    equiv: 2px
+  - token: neg-05
+    value: -4px
+    equiv: '05'
+  - token: neg-1
+    value: -8px
+    equiv: 1
+  - token: neg-105
+    value: -12px
+    equiv: 105
+  - token: neg-2
+    value: -16px
+    equiv: 2
+  - token: neg-205
+    value: -20px
+    equiv: 205
+  - token: neg-3
+    value: -24px
+    equiv: 3
+  - token: neg-4
+    value: -32px
+    equiv: 4
+  - token: neg-5
+    value: -40px
+    equiv: 5
+  - token: neg-6
+    value: -48px
+    equiv: 6
+  - token: neg-7
+    value: -56px
+    equiv: 7
+  - token: neg-8
+    value: -64px
+    equiv: 8
+  - token: neg-9
+    value: -72px
+    equiv: 9
+
 ---
+
+{% assign tokens = site.data.tokens.typesetting %}
 
 <div class="utilities-properties">
   <h3 class="utilities-property-title">CSS properties</h3>
@@ -66,532 +143,244 @@ utilities:
 
 <section class="utilities-section">
 
-  <div class="grid-row utilities-section-title-bar">
-    <h2 class="grid-col-auto utilities-section-title">Examples and usage</h2>
-    <p class="grid-col-fill utilities-section-helper">Utilities, values, and variants may be activated and deactivated in <a href="#advanced-settings" class="text-ink text-no-wrap">advanced settings</a>.</p>
-  </div>
+  {% include utilities/utilities-section-title-bar.html %}
 
   <section class="line-height" id="line-height">
     <section class="utility">
-      <section class="utility-title-bar">
-        <div class="grid-row flex-align-center">
-          <div class="grid-col-fill">
-            <h3 class="grid-col-auto utility-title">Line height</h3>
-            <p class="utility-property">CSS property: <span class="utility-property-code">line-height</span></p>
-          </div>
+      {% include utilities/utility-title-bar.html
+        title="Line height"
+        responsive=true
+      %}
 
-          <ul class="utility-scope grid-col-auto">
-            <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
-            <li class="utility-scope-button-disabled">active</li>
-            <li class="utility-scope-button-disabled">hover</li>
-            <li class="utility-scope-button-disabled">focus</li>
-            <li class="utility-scope-button-disabled">visited</li>
-          </ul>
-        </div>
-      </section>
 
-      <section class="padding-x-3">
-        <div class="grid-row grid-gap margin-top-4">
-          <div class="grid-col-4 margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1 font-mono-2xs text-secondary-vivid">sans</div>
-          <div class="grid-col-4 margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1 font-mono-2xs text-secondary-vivid">serif</div>
-          <div class="grid-col-4 margin-bottom-2 border-bottom-1px border-gray-5 padding-bottom-1 font-mono-2xs text-secondary-vivid">mono</div>
-        </div>
-        <div class="grid-row grid-gap-lg">
-          <div class="utility-example-container grid-col-4 display-flex flex-column flex-justify">
-            <p class="font-sans-md line-height-sans-1 margin-top-0 text-bold border-y-1px border-secondary-light">Mark Twain</p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.line-height-sans-1</p>
-              <p class="utility-value">~1</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> buttons, navigation, and text not meant to break over a line</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-4 grid-gap display-flex flex-column flex-justify">
-            <p class="font-serif-md line-height-serif-1 margin-top-0 text-bold border-y-1px border-secondary-light">Mark Twain</p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.line-height-serif-1</p>
-              <p class="utility-value">~1</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> buttons, navigation, and text not meant to break over a line</p>
-            </div>
-          </div>
-          <div class="grid-col-4 grid-gap-lg display-flex flex-column flex-justify utility-example-container">
-            <p class="font-mono-md line-height-mono-1 margin-top-0 text-bold border-y-1px border-secondary-light">Mark Twain</p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.line-height-mono-1</p>
-              <p class="utility-value">~1</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> buttons, navigation, and text not meant to break over a line</p>
-            </div>
-          </div>
-        </div>
+      <section class="utility-examples">
+        {% for family in tokens.family.type %}
+          {% if family.default %}
+            {% assign font = tokens.family.font
+              | where: 'token', family.default
+              | first %}
+            <h5 class="utility-examples-title">line-height-{{ family.token }} <span class="text-normal font-sans-3xs">(Shown: {{ font.name }})</span></h5>
 
-        <div class="grid-row grid-gap-lg">
-          <div class="grid-col-4 display-flex flex-column flex-justify flex-align-start utility-example-container">
-            <p class="font-sans-sm line-height-sans-2 margin-top-0 text-bold">The Celebrated Jumping Frog of Calaveras County</p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.line-height-sans-2</p>
-              <p class="utility-value">~1.15</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> headings, introductory (lead or dek) text, no more than 1-2 sentences</p>
-            </div>
-          </div>
-          <div class="grid-col-4 grid-gap display-flex flex-column flex-justify flex-align-start utility-example-container">
-            <p class="font-serif-sm line-height-serif-2 margin-top-0 text-bold">The Celebrated Jumping Frog of Calaveras County</p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.line-height-serif-2</p>
-              <p class="utility-value">~1.15</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> headings, introductory (lead or dek) text, no more than 1-2 sentences</p>
-          </div>
-          </div>
-          <div class="grid-col-4 grid-gap-lg display-flex flex-column flex-justify flex-align-start utility-example-container">
-            <p class="font-mono-sm line-height-mono-2 margin-top-0 text-bold">The Celebrated Jumping Frog of Calaveras County</p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.line-height-mono-2</p>
-              <p class="utility-value">~1.15</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> headings, introductory (lead or dek) text, no more than 1-2 sentences</p>
-          </div>
-          </div>
-        </div>
+            {% assign thisUtilityClasses = 'grid-col-fill' %}
+            {% assign thisValueClasses = 'grid-col-auto' %}
+            {% assign thisExampleClasses = 'grid-col-12 width-full maxw-none padding-y-1 border-top border-base-lightest margin-top-1' %}
 
-        <div class="grid-row grid-gap-lg">
-          <div class="grid-col-4 display-flex flex-column flex-justify flex-align-start utility-example-container">
-            <p class="font-sans-2xs line-height-sans-3 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.line-height-sans-3</p>
-              <p class="utility-value">~1.35</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> short text (under 1 paragraph), captions, text with a very short or very long measure</p>
-            </div>
-          </div>
-          <div class="grid-col-4 grid-gap display-flex flex-column flex-justify flex-align-start utility-example-container">
-            <p class="font-serif-2xs line-height-serif-3 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.line-height-serif-3</p>
-              <p class="utility-value">~1.35</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> short text (under 1 paragraph), captions, text with a very short or very long measure</p>
-            </div>
-          </div>
-          <div class="grid-col-4 grid-gap-lg display-flex flex-column flex-justify flex-align-start utility-example-container">
-            <p class="font-mono-2xs line-height-mono-3 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.line-height-mono-3</p>
-              <p class="utility-value">~1.35</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> short text (under 1 paragraph), captions, text with a very short or very long measure</p>
-            </div>
-          </div>
-        </div>
+            {% assign this_lh = 1 %}
+            {% assign lh = tokens.line-height
+              | where: 'token', this_lh
+              | first %}
+            {% assign font = tokens.family.font
+              | where: 'token', family.default
+              | first %}
+            {% assign normal = tokens.meta.normal
+              | divided_by: font.normal %}
+            {% assign output = lh.value
+              | divided_by: normal
+              | round: 2 %}
+            {% capture this_class %}
+              .line-height-{{ family.token }}-{{ lh.token }}
+            {% endcapture %}
+            {% capture this_value %}
+              {{ output }}
+            {% endcapture %}
+            {% capture this_example %}
+              <p class="font-{{ family.token }}-md line-height-{{ family.token }}-{{ this_lh }} margin-top-0 text-bold">Mark Twain</p>
+            {% endcapture %}
+            {% include utilities/utility-example.html
+              wrap = true
+              utility = this_class
+              utilityClasses = thisUtilityClasses
+              value = this_value
+              valueClasses = thisValueClasses
+              example = this_example
+              exampleClasses = thisExampleClasses
+            %}
 
-        <div class="grid-row grid-gap-lg">
-          <div class="grid-col-4 display-flex flex-column flex-justify flex-align-start utility-example-container">
-            <p class="font-sans-2xs line-height-sans-4 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.line-height-sans-4</p>
-              <p class="utility-value">~1.5</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> short (1-2 paragraphs) of running text, especially with a short measure</p>
-            </div>
-          </div>
-          <div class="grid-col-4 grid-gap display-flex flex-column flex-justify flex-align-start utility-example-container">
-            <p class="font-serif-2xs line-height-serif-4 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.line-height-serif-4</p>
-              <p class="utility-value">~1.5</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> short (1-2 paragraphs) of running text, especially with a short measure</p>
-            </div>
-          </div>
-          <div class="grid-col-4 grid-gap-lg display-flex flex-column flex-justify flex-align-start utility-example-container">
-            <p class="font-mono-2xs line-height-mono-4 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.line-height-mono-4</p>
-              <p class="utility-value">~1.5</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> short (1-2 paragraphs) of running text, especially with a short measure</p>
-            </div>
-          </div>
-        </div>
+            {% assign this_lh = 2 %}
+            {% assign lh = tokens.line-height
+              | where: 'token', this_lh
+              | first %}
+            {% assign output = lh.value
+              | divided_by: normal
+              | round: 2 %}
+            {% capture this_class %}
+              .line-height-{{ family.token }}-{{ lh.token }}
+            {% endcapture %}
+            {% capture this_value %}
+              {{ output }}
+            {% endcapture %}
+            {% capture this_example %}
+              <p class="font-{{ family.token }}-sm line-height-{{ family.token }}-{{ this_lh }} margin-top-0 text-bold">The Celebrated Jumping Frog of Calaveras County</p>
+            {% endcapture %}
+            {% include utilities/utility-example.html
+              wrap = true
+              utility = this_class
+              utilityClasses = thisUtilityClasses
+              value = this_value
+              valueClasses = thisValueClasses
+              example = this_example
+              exampleClasses = thisExampleClasses
+            %}
 
-        <div class="grid-row grid-gap-lg">
-          <div class="grid-col-4 display-flex flex-column flex-justify flex-align-start utility-example-container">
-            <p class="font-sans-2xs line-height-sans-5 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.line-height-sans-5</p>
-              <p class="utility-value">~1.62</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> a good choice for most reading text, especially text meant for extended reading</p>
-            </div>
-          </div>
-          <div class="grid-col-4 grid-gap display-flex flex-column flex-justify flex-align-start utility-example-container">
-            <p class="font-serif-2xs line-height-serif-5 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.line-height-serif-5</p>
-              <p class="utility-value">~1.62</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> a good choice for most reading text, especially text meant for extended reading</p>
-            </div>
-          </div>
-          <div class="grid-col-4 grid-gap-lg display-flex flex-column flex-justify flex-align-start utility-example-container">
-            <p class="font-mono-2xs line-height-mono-5 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.line-height-mono-5</p>
-              <p class="utility-value">~1.62</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> a good choice for most reading text, especially text meant for extended reading</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid-row grid-gap-lg">
-          <div class="grid-col-4 display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-gray-5 padding-bottom-1">
-            <p class="font-sans-2xs line-height-sans-6 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.line-height-sans-6</p>
-              <p class="utility-value">~1.75</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> shorter text (1-2 paragraphs) meant to be distinguished from other page text, pullquotes</p>
-            </div>
-          </div>
-          <div class="grid-col-4 grid-gap display-flex flex-column flex-justify flex-align-start margin-bottom-2 border-gray-5 padding-bottom-1">
-            <p class="font-serif-2xs line-height-serif-6 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.line-height-serif-6</p>
-              <p class="utility-value">~1.75</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> shorter text (1-2 paragraphs) meant to be distinguished from other page text, pullquotes</p>
-            </div>
-          </div>
-          <div class="grid-col-4 grid-gap-lg display-flex flex-column flex-justify flex-align-start margin-bottom-2 padding-bottom-1">
-            <p class="font-mono-2xs line-height-mono-6 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.line-height-mono-6</p>
-              <p class="utility-value">~1.75</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> shorter text (1-2 paragraphs) meant to be distinguished from other page text, pullquotes</p>
-            </div>
-          </div>
-        </div>
+            {% assign thisLoop = '3,4,5,6'
+              | split: ',' %}
+            {% for item in thisLoop %}
+              {% assign this_lh = item %}
+              {% assign lh = tokens.line-height
+                | where: 'token', this_lh
+                | first %}
+              {% assign output = lh.value
+                | divided_by: normal
+                | round: 2 %}
+              {% capture this_class %}
+                .line-height-{{ family.token }}-{{ lh.token }}
+              {% endcapture %}
+              {% capture this_value %}
+                {{ output }}
+              {% endcapture %}
+              {% capture this_example %}
+                <p class="font-{{ family.token }}-2xs line-height-{{ family.token }}-{{ this_lh }} margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+              {% endcapture %}
+              {% include utilities/utility-example.html
+                wrap = true
+                utility = this_class
+                utilityClasses = thisUtilityClasses
+                value = this_value
+                valueClasses = thisValueClasses
+                example = this_example
+                exampleClasses = thisExampleClasses
+              %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
       </section>
     </section>
   </section>
 
   <section class="max-width" id="max-width">
     <section class="utility">
-      <section class="utility-title-bar">
-        <div class="grid-row flex-align-center">
-          <div class="grid-col-fill">
-            <h3 class="grid-col-auto utility-title">Measure</h3>
-            <p class="utility-property">CSS property: <span class="utility-property-code">max-width</span></p>
-          </div>
+      {% include utilities/utility-title-bar.html
+        title="Measure"
+        property="max-width"
+        responsive=true
+      %}
 
-          <ul class="grid-col-auto utility-scope">
-            <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
-            <li class="utility-scope-button-disabled">active</li>
-            <li class="utility-scope-button-disabled">hover</li>
-            <li class="utility-scope-button-disabled">focus</li>
-            <li class="utility-scope-button-disabled">visited</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="padding-x-3">
-        <div class="grid-row grid-gap-lg">
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-md line-height-serif-4 margin-top-0 measure-1 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.measure-1</p>
-              <p class="utility-value">40ch</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> shorter text (1-2 paragraphs) meant to be distinguished from other page text, pullquotes</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid-row grid-gap-lg">
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-md line-height-serif-4 margin-top-0 measure-2 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.measure-2</p>
-              <p class="utility-value">60ch</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> a snappy reading line for quick-reading text</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid-row grid-gap-lg">
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-md line-height-serif-4 margin-top-0 measure-3 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.measure-3</p>
-              <p class="utility-value">66ch</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> an all-purpose reading line for most longform text</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid-row grid-gap-lg">
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-md line-height-serif-4 margin-top-0 measure-4 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.measure-4</p>
-              <p class="utility-value">72ch</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> a longer line for longform text, particularly in larger sizes</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid-row grid-gap-lg">
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-md line-height-serif-4 margin-top-0 measure-5 border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.measure-5</p>
-              <p class="utility-value">77ch</p>
-              <p class="margin-0 margin-top-1 font-sans-3xs"><strong>usage:</strong> an extra-long line sometimes useful for short text (less than 1 paragaph) or captions</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid-row grid-gap-lg">
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start border-0 margin-bottom-0">
-            <p class="font-serif-md line-height-serif-4 margin-top-0 measure-none border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.measure-none</p>
-              <p class="utility-value">no maximum width</p>
-            </div>
-          </div>
-        </div>
+      <section class="utility-examples">
+        {% for measure in tokens.measure %}
+          {% assign thisUtilityClasses = 'grid-col-fill' %}
+          {% assign thisValueClasses = 'grid-col-auto' %}
+          {% assign thisExampleClasses = 'grid-col-12 width-full maxw-none padding-y-1 border-top border-base-lightest margin-top-1' %}
+          {% capture this_class %}
+            .measure-{{ measure.token }}
+          {% endcapture %}
+          {% capture this_value %}
+            {{ measure.value }}
+          {% endcapture %}
+          {% capture this_example %}
+            <p class="font-serif-md line-height-serif-4 margin-top-0 measure-{{ measure.token }} border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+          {% endcapture %}
+          {% include utilities/utility-example.html
+            wrap = true
+            utility = this_class
+            utilityClasses = thisUtilityClasses
+            value = this_value
+            valueClasses = thisValueClasses
+            example = this_example
+            exampleClasses = thisExampleClasses
+          %}
+        {% endfor %}
       </section>
     </section>
   </section>
 
   <section class="text-align" id="text-align">
     <section class="utility">
-      <section class="utility-title-bar">
-        <div class="grid-row flex-align-center">
-          <div class="grid-col-fill">
-            <h3 class="grid-col-auto utility-title">Text alignment</h3>
-            <p class="utility-property">CSS property: <span class="utility-property-code">text-align</span></p>
-          </div>
-
-          <ul class="grid-col-auto utility-scope">
-            <li class="utility-scope-button-disabled">responsive</li>
-            <li class="utility-scope-button-disabled">active</li>
-            <li class="utility-scope-button-disabled">hover</li>
-            <li class="utility-scope-button-disabled">focus</li>
-            <li class="utility-scope-button-disabled">visited</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="margin-x-3">
-        <div class="grid-row grid-gap-lg">
-          <div class="grid-col-3 grid-gap-lg display-flex flex-column flex-justify flex-align-start padding-bottom-1">
-            <p class="font-serif-2xs line-height-serif-4 margin-top-0 text-left">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-            <p class="utility-class">.text-left</p>
-          </div>
-          <div class="grid-col-3 grid-gap-lg display-flex flex-column flex-justify flex-align-start padding-bottom-1">
-            <p class="font-serif-2xs line-height-serif-4 margin-top-0 text-center">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-            <p class="utility-class">.text-center</p>
-
-          </div>
-          <div class="grid-col-3 grid-gap-lg display-flex flex-column flex-justify flex-align-start padding-bottom-1">
-            <p class="font-serif-2xs line-height-serif-4 margin-top-0 text-right">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-            <p class="utility-class text-right">.text-right</p>
-
-          </div>
-
-          <div class="grid-col-3 grid-gap-lg display-flex flex-column flex-justify flex-align-start padding-bottom-1">
-            <p class="font-serif-2xs line-height-serif-4 margin-top-0 text-justify">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
-            <p class="utility-class">.text-justify</p>
-
-          </div>
-        </div>
+      {% include utilities/utility-title-bar.html
+        title="Text alignment"
+        property="text-align"
+      %}
+      <section class="utility-examples">
+        {% assign alignments = 'left, center, right, justify'
+        | split: ', ' %}
+        {% for alignment in alignments %}
+          {% assign thisUtilityClasses = nil %}
+          {% assign thisValueClasses = nil %}
+          {% assign thisExampleClasses = 'padding-left-4' %}
+          {% capture this_class %}
+            .text-{{ alignment }}
+          {% endcapture %}
+          {% capture this_value %}
+            {{ alignment }}
+          {% endcapture %}
+          {% capture this_example %}
+            <p class="font-serif-2xs line-height-serif-4 margin-top-0 text-{{ alignment }}">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+          {% endcapture %}
+          {% include utilities/utility-example.html
+            utility = this_class
+            utilityClasses = thisUtilityClasses
+            value = this_value
+            valueClasses = thisValueClasses
+            example = this_example
+            exampleClasses = thisExampleClasses
+          %}
+        {% endfor %}
       </section>
     </section>
   </section>
 
   <section class="text-indent" id="text-indent">
     <section class="utility">
-      <section class="utility-title-bar">
-        <div class="grid-row flex-align-center">
-          <div class="grid-col-fill">
-            <h3 class="grid-col-auto utility-title">Text indent</h3>
-            <p class="utility-property">CSS property: <span class="utility-property-code">text-indent</span></p>
-          </div>
+      {% include utilities/utility-title-bar.html
+        title="Text indent"
+      %}
 
-          <ul class="grid-col-auto utility-scope">
-            <li class="utility-scope-button-disabled">responsive</li>
-            <li class="utility-scope-button-disabled">active</li>
-            <li class="utility-scope-button-disabled">hover</li>
-            <li class="utility-scope-button-disabled">focus</li>
-            <li class="utility-scope-button-disabled">visited</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="padding-x-3">
-        <div class="grid-row grid-gap-lg">
-          <div class="grid-col-12 display-flex flex-column flex-justify flex-align-start utility-example-container">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-9">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre">  </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-neg-9</p>
-              <p class="utility-value">-72px</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-8">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-neg-8</p>
-              <p class="utility-value">-64px</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-7">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-neg-7</p>
-              <p class="utility-value">-56px</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-6">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-neg-6</p>
-              <p class="utility-value">-48px</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-5">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-neg-5</p>
-              <p class="utility-value">-40px</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-4">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-neg-4</p>
-              <p class="utility-value">-32px</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-3">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-neg-3</p>
-              <p class="utility-value">-24px</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-205">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-neg-205</p>
-              <p class="utility-value">-20px</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-neg-2</p>
-              <p class="utility-value">-16px</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-105">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-neg-105</p>
-              <p class="utility-value">-12px</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-1">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-neg-1</p>
-              <p class="utility-value">-8px</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-neg-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-neg-05</p>
-              <p class="utility-value">-4px</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-0</p>
-              <p class="utility-value">0</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-05">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-05</p>
-              <p class="utility-value">4px</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-1">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-1</p>
-              <p class="utility-value">8px</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-105">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-105</p>
-              <p class="utility-value">12px</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-2</p>
-              <p class="utility-value">16px</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-205">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-205</p>
-              <p class="utility-value">20px</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-3">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-3</p>
-              <p class="utility-value">24px</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-4">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-4</p>
-              <p class="utility-value">32px</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-5">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-5</p>
-              <p class="utility-value">40px</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-6">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-6</p>
-              <p class="utility-value">48px</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-7">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-7</p>
-              <p class="utility-value">56px</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-8">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-8</p>
-              <p class="utility-value">64px</p>
-            </div>
-          </div>
-          <div class="utility-example-container grid-col-12 display-flex flex-column flex-justify flex-align-start margin-bottom-0 border-0">
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-9 text-indent-9">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre"> </span></span></p>
-            <div class="display-flex flex-column flex-align-start">
-              <p class="utility-class">.text-indent-9</p>
-              <p class="utility-value">72px</p>
-            </div>
-          </div>
-        </div>
+      <section class="utility-examples">
+        {% for item in page.vals_negative reversed %}
+          {% assign thisUtilityClasses = 'grid-col-fill' %}
+          {% assign thisValueClasses = 'grid-col-auto' %}
+          {% assign thisExampleClasses = 'grid-col-12 width-full maxw-none padding-y-1 border-top border-base-lightest margin-top-1' %}
+          {% capture this_class %}
+            .text-indent-{{ item.token }}
+          {% endcapture %}
+          {% capture this_value %}
+            {{ item.value }}
+          {% endcapture %}
+          {% capture this_example %}
+            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-{{ item.equiv }} text-indent-{{ item.token }}">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre">  </span></span></p>
+          {% endcapture %}
+          {% include utilities/utility-example.html
+            wrap = true
+            utility = this_class
+            utilityClasses = thisUtilityClasses
+            value = this_value
+            valueClasses = thisValueClasses
+            example = this_example
+            exampleClasses = thisExampleClasses
+          %}
+        {% endfor %}
+        {% for item in page.vals_positive %}
+          {% assign thisUtilityClasses = 'grid-col-fill' %}
+          {% assign thisValueClasses = 'grid-col-auto' %}
+          {% assign thisExampleClasses = 'grid-col-12 width-full maxw-none padding-y-1 border-top border-base-lightest margin-top-1' %}
+          {% capture this_class %}
+            .text-indent-{{ item.token }}
+          {% endcapture %}
+          {% capture this_value %}
+            {{ item.value }}
+          {% endcapture %}
+          {% capture this_example %}
+            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-{{ item.equiv }} text-indent-{{ item.token }}">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre">  </span></span></p>
+          {% endcapture %}
+          {% include utilities/utility-example.html
+            wrap = true
+            utility = this_class
+            utilityClasses = thisUtilityClasses
+            value = this_value
+            valueClasses = thisValueClasses
+            example = this_example
+            exampleClasses = thisExampleClasses
+          %}
+        {% endfor %}
       </section>
     </section>
   </section>
@@ -613,12 +402,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:maxw-card-lg">
           <span>
-            .line-height-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a>
+            .line-height-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-line-height(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a>)
+            u-line-height(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -630,12 +419,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .measure-<a href="{{ site.baseurl }}/style-tokens/typesetting/measure/" class="token">measure</a>
+            .measure-<a href="{{ site.baseurl }}/design-tokens/typesetting/measure/" class="token">measure</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-measure(<a href="{{ site.baseurl }}/style-tokens/typesetting/measure/" class="token">measure</a>)
+            u-measure(<a href="{{ site.baseurl }}/design-tokens/typesetting/measure/" class="token">measure</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -664,12 +453,12 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
-            .text-indent-<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>
+            .text-indent-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-text-indent(<a href="{{ site.baseurl }}/style-tokens/spacing-units/" class="token">units</a>)
+            u-text-indent(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
         <td data-title="Example">

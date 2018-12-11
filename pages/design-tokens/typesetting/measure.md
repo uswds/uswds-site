@@ -1,8 +1,8 @@
 ---
-permalink: /style-tokens/typesetting/measure/
+permalink: /design-tokens/typesetting/measure/
 layout: styleguide
 title: Measure (line length)
-category: Style tokens
+category: Design tokens
 lead: USWDS has 6 measure tokens to control the reading length of lines in a block of text.
 type: docs
 subnav:
@@ -80,7 +80,7 @@ Your context and coding style determine how you access USWDS measure tokens in c
         </td>
         <td data-title="Usage">
           <span>
-            measure(<a href="{{ site.baseurl }}/style-tokens/typesetting/measure/" class="token">measure</a>)
+            measure(<a href="{{ site.baseurl }}/design-tokens/typesetting/measure/" class="token">measure</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -97,7 +97,7 @@ Your context and coding style determine how you access USWDS measure tokens in c
         </td>
         <td data-title="Usage">
           <span>
-            u-measure(<a href="{{ site.baseurl }}/style-tokens/typesetting/measure/" class="token">measure</a>)
+            u-measure(<a href="{{ site.baseurl }}/design-tokens/typesetting/measure/" class="token">measure</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -114,7 +114,7 @@ Your context and coding style determine how you access USWDS measure tokens in c
         </td>
         <td data-title="Usage">
           <span>
-            <a href="{{ site.baseurl }}/style-tokens/typesetting/measure/" class="token">measure</a>
+            <a href="{{ site.baseurl }}/design-tokens/typesetting/measure/" class="token">measure</a>
           </span>
         </td>
         <td data-title="Example">
@@ -131,7 +131,7 @@ Your context and coding style determine how you access USWDS measure tokens in c
         </td>
         <td data-title="Usage">
           <span>
-            .measure-<a href="{{ site.baseurl }}/style-tokens/typesetting/measure/" class="token">measure</a>
+            .measure-<a href="{{ site.baseurl }}/design-tokens/typesetting/measure/" class="token">measure</a>
           </span>
         </td>
         <td data-title="Example">

@@ -1,13 +1,13 @@
 ---
-permalink: /style-tokens/typesetting/overview/
+permalink: /design-tokens/typesetting/overview/
 layout: styleguide
 title: Using type
-category: Style tokens
+category: Design tokens
 lead: Typesetting in USWDS means understanding the relationship between font family, font size, and line height.
 type: docs
 redirect_from:
-  - /style-tokens/typesetting/
-  - /style-tokens/typography
+  - /design-tokens/typesetting/
+  - /design-tokens/typography
 subnav:
   - text: Normalization
     href: '#normalization'
@@ -24,7 +24,7 @@ Typefaces vary in optical size. This means that at any specific pixel value, an 
 ### Fonts at native size
 
 {:.padding-top-2}
-![optical size of typefaces]({{ site.baseurl }}/assets/img/style-tokens/font-comparison.svg)
+![optical size of typefaces]({{ site.baseurl }}/assets/img/design-tokens/font-comparison.svg)
 
 USWDS 2 is designed so each size token outputs a consistent optical size regardless of the typeface. This makes our guidance more reliable and our theming more flexible.
 
@@ -32,18 +32,18 @@ USWDS 2 is designed so each size token outputs a consistent optical size regardl
 ### Fonts with normalization applied
 
 {:.padding-y-2}
-![normalized typefaces]({{ site.baseurl }}/assets/img/style-tokens/font-comparison-normalized.svg)
+![normalized typefaces]({{ site.baseurl }}/assets/img/design-tokens/font-comparison-normalized.svg)
 
-To make different typefaces appear the same size (here called the _target size_) at each step of the scale (here we see the output of [size]({{ site.baseurl }}/style-tokens/typesetting/font-size/){:.token} token `10`), the absolute size of each token's output varies depending on the font family.
+To make different typefaces appear the same size (here called the _target size_) at each step of the scale (here we see the output of [size]({{ site.baseurl }}/design-tokens/typesetting/font-size/){:.token} token `10`), the absolute size of each token's output varies depending on the font family.
 
-Each [supported typeface]({{ site.baseurl }}/style-tokens/typesetting/font-family/) is normalized to a target value determined by the optical size of common system fonts — specifically Apple's typeface San Francisco and Google's typeface Roboto.
+Each [supported typeface]({{ site.baseurl }}/design-tokens/typesetting/font-family/) is normalized to a target value determined by the optical size of common system fonts — specifically Apple's typeface San Francisco and Google's typeface Roboto.
 
 {% assign target_font_size = 24 %}
 {% assign target_line_height = 1.35 %}
 
 <div class="site-table-wrapper maxw-tablet">
   <div class="site-table-note">
-    For <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a> token <code>10</code> (24px) we see the following normalized ouput:
+    For <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a> token <code>10</code> (24px) we see the following normalized ouput:
   </div>
 
   <table class="usa-table-borderless site-table-responsive">
@@ -87,13 +87,13 @@ In USWDS, the final font size is output not in pixels but in `rem` (a multiple o
 Since both the `rem` and absolute `px` values change depending on the theme settings and the typeface, our documentation displays only the `px` value of the target.
 
 ### Normalization and line height
-USWDS has six target line heights in its [line-height]({{ site.baseurl }}/style-tokens/typesetting/line-height/){:.token} token system. These targets are unitless numbers, multipliers of the font size of the affected text. For example, if the target line height were `2` in text with a target font size of `16px`, the final line height would be the `target line height * target font size` or `2 * 16px` or `32px`.
+USWDS has six target line heights in its [line-height]({{ site.baseurl }}/design-tokens/typesetting/line-height/){:.token} token system. These targets are unitless numbers, multipliers of the font size of the affected text. For example, if the target line height were `2` in text with a target font size of `16px`, the final line height would be the `target line height * target font size` or `2 * 16px` or `32px`.
 
 Since we use normalization on font sizing, we must also normalize line height to hit the target line height:
 
 <div class="site-table-wrapper">
   <div class="site-table-note">
-    For <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a> token <code>10</code> (24px) and <a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a> token <code>3</code> ({{ target_line_height }} / {{ target_line_height | times: target_font_size }}px) we see the following normalized ouput:
+    For <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a> token <code>10</code> (24px) and <a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a> token <code>3</code> ({{ target_line_height }} / {{ target_line_height | times: target_font_size }}px) we see the following normalized ouput:
   </div>
 
   <table class="usa-table-borderless site-table-responsive">
@@ -144,9 +144,9 @@ Since we use normalization on font sizing, we must also normalize line height to
 </div>
 
 ## Typesetting with tokens
-USWDS uses **functions**, **mixins**, and **utility classes** to style its components with style tokens. Because we use normalized values, as described above, font size and line height functions, mixins, and utility classes differ from many others in the system by requiring _two_ tokens: a [family]({{ site.baseurl }}/style-tokens/typesetting/font-family/){:.token} token and either a [size]({{ site.baseurl }}/style-tokens/typesetting/font-size/){:.token} or a [line-height]({{ site.baseurl }}/style-tokens/typesetting/line-height/){:.token} token.
+USWDS uses **functions**, **mixins**, and **utility classes** to style its components with design tokens. Because we use normalized values, as described above, font size and line height functions, mixins, and utility classes differ from many others in the system by requiring _two_ tokens: a [family]({{ site.baseurl }}/design-tokens/typesetting/font-family/){:.token} token and either a [size]({{ site.baseurl }}/design-tokens/typesetting/font-size/){:.token} or a [line-height]({{ site.baseurl }}/design-tokens/typesetting/line-height/){:.token} token.
 
-The individual style token sections go into this in more detail, but here's a summary:
+The individual design token sections go into this in more detail, but here's a summary:
 
 ### Font family
 <div class="site-table-wrapper">
@@ -163,22 +163,22 @@ The individual style token sections go into this in more detail, but here's a su
       <tr>
         <td scope="row" data-title="Token">
           <span>
-            <a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>
+            <a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>
           </span>
         </td>
         <td data-title="Function">
           <span>
-            family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>)
+            family(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>)
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-font-family(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>)
+            u-font-family(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>)
           </span>
         </td>
         <td data-title="Utility class">
           <span>
-            .font-family-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>
+            .font-family-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>
           </span>
         </td>
       </tr>
@@ -245,22 +245,22 @@ The individual style token sections go into this in more detail, but here's a su
       <tr>
         <td scope="row" data-title="Token">
           <span>
-            <a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>
+            <a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>
           </span>
         </td>
         <td data-title="Function">
           <span>
-            size(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)
+            size(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>)
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-font-size(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)
+            u-font-size(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>)
           </span>
         </td>
         <td data-title="Utility class">
           <span>
-            .font-size-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>
+            .font-size-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>
           </span>
         </td>
       </tr>
@@ -327,7 +327,7 @@ The individual style token sections go into this in more detail, but here's a su
       <tr>
         <td scope="row" data-title="Token">
           <span>
-            <a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>
+            <a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>
           </span>
         </td>
         <td data-title="Function">
@@ -337,12 +337,12 @@ The individual style token sections go into this in more detail, but here's a su
         </td>
         <td data-title="Mixin">
           <span>
-            u-font(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>)
+            u-font(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>)
           </span>
         </td>
         <td data-title="Utility class">
           <span>
-            .font-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>
+            .font-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>
           </span>
         </td>
       </tr>
@@ -409,22 +409,22 @@ The individual style token sections go into this in more detail, but here's a su
       <tr>
         <td scope="row" data-title="Token">
           <span>
-            <a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <br/><a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a>
+            <a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <br/><a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a>
           </span>
         </td>
         <td data-title="Function">
           <span>
-            line-height(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <br/><a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a>)
+            line-height(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <br/><a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a>)
           </span>
         </td>
         <td data-title="Mixin">
           <span>
-            u-line-height(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <br/><a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a>)
+            u-line-height(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <br/><a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a>)
           </span>
         </td>
         <td data-title="Utility class">
           <span>
-            .line-height-<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a>
+            .line-height-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a>
           </span>
         </td>
       </tr>
@@ -495,7 +495,7 @@ We use the `typeset()` mixin on all our components to get the effect of default 
       <tr>
         <td scope="row" data-title="Token">
           <span>
-            <a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a>
+            <a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a>
           </span>
         </td>
         <td data-title="Function">
@@ -505,7 +505,7 @@ We use the `typeset()` mixin on all our components to get the effect of default 
         </td>
         <td data-title="Mixin">
           <span>
-            typeset(<a href="{{ site.baseurl }}/style-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/font-size/" class="token">size</a>, <a href="{{ site.baseurl }}/style-tokens/typesetting/line-height/" class="token">line-height</a>)
+            typeset(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a>)
           </span>
         </td>
         <td data-title="Utility class">

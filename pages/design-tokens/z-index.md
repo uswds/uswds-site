@@ -1,8 +1,8 @@
 ---
-permalink: /style-tokens/z-index/
+permalink: /design-tokens/z-index/
 layout: styleguide
 title: Z-index
-category: Style tokens
+category: Design tokens
 lead: Z-index tokens determine an item's position in the stacking order.
 type: docs
 subnav:
@@ -79,7 +79,7 @@ Your context and coding style determine how you access USWDS z-index tokens in c
         </td>
         <td data-title="Usage">
           <span>
-            z-index(<a href="{{ site.baseurl }}/style-tokens/z-index/" class="token">z-index</a>)
+            z-index(<a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -96,7 +96,7 @@ Your context and coding style determine how you access USWDS z-index tokens in c
         </td>
         <td data-title="Usage">
           <span>
-            u-z-index(<a href="{{ site.baseurl }}/style-tokens/z-index/" class="token">z-index</a>)
+            u-z-index(<a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>)
           </span>
         </td>
         <td data-title="Example">
@@ -113,7 +113,7 @@ Your context and coding style determine how you access USWDS z-index tokens in c
         </td>
         <td data-title="Usage">
           <span>
-            <a href="{{ site.baseurl }}/style-tokens/z-index/" class="token">z-index</a>
+            <a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>
           </span>
         </td>
         <td data-title="Example">
@@ -130,7 +130,7 @@ Your context and coding style determine how you access USWDS z-index tokens in c
         </td>
         <td data-title="Usage">
           <span>
-            .z-index-<a href="{{ site.baseurl }}/style-tokens/z-index/" class="token">z-index</a>
+            .z-index-<a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>
           </span>
         </td>
         <td data-title="Example">

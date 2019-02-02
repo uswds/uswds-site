@@ -30,6 +30,8 @@ subnav:
     href: '#mint-cool'
   - text: Cyan
     href: '#cyan'
+  - text: Blue cool
+    href: '#blue-cool'
   - text: Blue
     href: '#blue'
   - text: Blue warm
@@ -79,6 +81,7 @@ families:
   - mint-cool-vivid
   - cyan
   - cyan-vivid
+  - blue-cool
   - blue
   - blue-vivid
   - blue-warm

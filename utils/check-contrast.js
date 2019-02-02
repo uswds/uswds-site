@@ -34,7 +34,7 @@ const uswdsTokens = yaml.load(path.join(
   '/tokens',
   '/color.yml'
 ));
-const systemColors = uswdsTokens.colors.system;
+const systemColors = uswdsTokens.system;
 
 class Color {
   constructor({ grade, value, name = null }) {
@@ -106,8 +106,8 @@ const COLORS = Object.keys(systemColors)
     const colorFamily = systemColors[colorName];
     const safeColors = colorFamily
       .filter(color => color.value)
-      .reduce((memo, { utility, value }) => {
-        const colorMagicNumber = /(\d+)/.exec(utility)[0];
+      .reduce((memo, { token, value }) => {
+        const colorMagicNumber = /(\d+)/.exec(token)[0];
 
         return [...memo, new Color({ grade: colorMagicNumber, value, name: colorName })];
       }, []);

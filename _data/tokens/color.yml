@@ -660,6 +660,48 @@ system:
       value: false
     - token: cyan-90v
       value: false
+  blue-cool:
+    - token: blue-cool-5
+      value: '#e7f2f5'
+    - token: blue-cool-10
+      value: '#dae9ee'
+    - token: blue-cool-20
+      value: '#adcfdb'
+    - token: blue-cool-30
+      value: '#83b5c9'
+    - token: blue-cool-40
+      value: '#529ab7'
+    - token: blue-cool-50
+      value: '#0d7ca0'
+    - token: blue-cool-60
+      value: '#07648d'
+    - token: blue-cool-70
+      value: '#074b69'
+    - token: blue-cool-80
+      value: '#14333d'
+    - token: blue-cool-90
+      value: '#0f191c'
+  blue-cool-vivid:
+    - token: blue-cool-5v
+      value: false
+    - token: blue-cool-10v
+      value: false
+    - token: blue-cool-20v
+      value: false
+    - token: blue-cool-30v
+      value: false
+    - token: blue-cool-40v
+      value: false
+    - token: blue-cool-50v
+      value: false
+    - token: blue-cool-60v
+      value: false
+    - token: blue-cool-70v
+      value: false
+    - token: blue-cool-80v
+      value: false
+    - token: blue-cool-90v
+      value: false
   blue:
     - token: blue-5
       value: '#eff6fb'

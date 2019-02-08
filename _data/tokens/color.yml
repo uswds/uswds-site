@@ -1095,7 +1095,7 @@ system:
     - token: gray-80
       value: '#2e2e2e'
     - token: gray-90
-      value: '#171717'
+      value: '#1b1b1b'
   gray-cool:
     - token: gray-cool-1
       value: '#fbfcfd'

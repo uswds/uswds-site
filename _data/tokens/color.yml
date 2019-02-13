@@ -52,7 +52,7 @@ state:
   - token: info-lighter
     default: 'cyan-5'
   - token: info-light
-    default: 'cyan-20v'
+    default: 'cyan-20'
   - token: info
     default: 'cyan-30v'
   - token: info-dark

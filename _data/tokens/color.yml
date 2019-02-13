@@ -393,7 +393,7 @@ system:
     - token: gold-10v
       value: '#ffe3a3'
     - token: gold-20v
-      value: '#fbc036'
+      value: '#ffbe2e'
     - token: gold-30v
       value: '#e5a000'
     - token: gold-40v

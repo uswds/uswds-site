@@ -10,6 +10,8 @@ subnav:
     href: '#red-warm'
   - text: Red
     href: '#red'
+  - text: Red cool
+    href: '#red-cool'
   - text: Orange warm
     href: '#orange-warm'
   - text: Orange
@@ -61,6 +63,8 @@ families:
   - red-warm-vivid
   - red
   - red-vivid
+  - red-cool
+  - red-cool-vivid
   - orange-warm
   - orange-warm-vivid
   - orange

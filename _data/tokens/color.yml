@@ -142,7 +142,7 @@ theme:
   - token: accent-cool-dark
     default: 'cyan-40v'
   - token: accent-cool-darker
-    default: 'blue-cool-60'
+    default: 'blue-cool-60v'
   - token: accent-warm-lighter
     default: 'orange-10'
   - token: accent-warm-light

@@ -52,45 +52,49 @@ state:
   - token: info-lighter
     default: 'cyan-5'
   - token: info-light
-    default: 'cyan-20'
+    default: 'cyan-20v'
   - token: info
     default: 'cyan-30v'
   - token: info-dark
     default: 'cyan-40v'
   - token: info-darker
-    default: 'blue-60'
+    default: 'blue-cool-60'
   - token: error-lighter
     default: 'red-10'
   - token: error-light
-    default: 'red-40v'
+    default: 'red-30v'
   - token: error
     default: 'red-50'
   - token: error-dark
     default: 'red-60v'
   - token: error-darker
-    default: 'red-70v'
+    default: 'red-70'
   - token: warning-lighter
-    default: 'gold-5v'
+    default: 'yellow-5'
   - token: warning-light
-    default: 'gold-10v'
+    default: 'yellow-10v'
   - token: warning
     default: 'gold-20v'
   - token: warning-dark
     default: 'gold-30v'
   - token: warning-darker
-    default: 'gold-40v'
+    default: 'gold-50v'
   - token: success-lighter
     default: 'green-cool-5'
   - token: success-light
-    default: 'green-cool-30v'
+    default: 'green-cool-20v'
   - token: success
     default: 'green-cool-40v'
   - token: success-dark
     default: 'green-cool-50'
   - token: success-darker
-    default: 'green-cool-70'
+    default: 'green-cool-60'
+  - token: disabled-light
+    default: 'gray-10'
   - token: disabled
     default: 'gray-20'
+  - token: disabled-dark
+    default: 'gray-30'
 
 theme:
   - token: base-lightest

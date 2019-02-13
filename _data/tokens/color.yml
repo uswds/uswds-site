@@ -156,6 +156,48 @@ theme:
     default: 'orange-60'
 
 system:
+  red-cool:
+    - token: red-cool-5
+      value: '#f8eff1'
+    - token: red-cool-10
+      value: '#f3e1e4'
+    - token: red-cool-20
+      value: '#ecbec6'
+    - token: red-cool-30
+      value: '#e09aa6'
+    - token: red-cool-40
+      value: '#e16b80'
+    - token: red-cool-50
+      value: '#cd425b'
+    - token: red-cool-60
+      value: '#9e394b'
+    - token: red-cool-70
+      value: '#68363f'
+    - token: red-cool-80
+      value: '#40282c'
+    - token: red-cool-90
+      value: '#1e1517'
+  red-cool-vivid:
+    - token: red-cool-5v
+      value: false
+    - token: red-cool-10v
+      value: false
+    - token: red-cool-20v
+      value: '#f8b9c5'
+    - token: red-cool-30v
+      value: '#fd8ba0'
+    - token: red-cool-40v
+      value: '#f45d79'
+    - token: red-cool-50v
+      value: '#e41d3d'
+    - token: red-cool-60v
+      value: '#b21d38'
+    - token: red-cool-70v
+      value: '#822133'
+    - token: red-cool-80v
+      value: false
+    - token: red-cool-90v
+      value: false
   red:
     - token: red-5
       value: '#f9eeee'

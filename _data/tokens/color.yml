@@ -979,9 +979,9 @@ system:
     - token: violet-5v
       value: false
     - token: violet-10v
-      value: false
+      value: '#ede3ff'
     - token: violet-20v
-      value: false
+      value: "#d5bfff"
     - token: violet-30v
       value: '#c39deb'
     - token: violet-40v

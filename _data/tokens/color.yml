@@ -1154,7 +1154,7 @@ system:
     - token: gray-cool-5
       value: '#edeff0'
     - token: gray-cool-10
-      value: '#dbdee1'
+      value: '#dcdee0'
     - token: gray-cool-20
       value: '#c6cace'
     - token: gray-cool-30
@@ -1164,9 +1164,9 @@ system:
     - token: gray-cool-50
       value: '#71767a'
     - token: gray-cool-60
-      value: '#585c62'
+      value: '#565c65'
     - token: gray-cool-70
-      value: '#424549'
+      value: '#3d4551'
     - token: gray-cool-80
       value: '#2d2e2f'
     - token: gray-cool-90

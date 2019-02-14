@@ -102,13 +102,13 @@ theme:
   - token: base-lighter
     default: 'gray-cool-10'
   - token: base-light
-    default: 'gray-30'
+    default: 'gray-cool-30'
   - token: base
-    default: 'gray-50'
+    default: 'gray-cool-50'
   - token: base-dark
     default: 'gray-cool-60'
   - token: base-darker
-    default: 'gray-cool-80'
+    default: 'gray-cool-70'
   - token: base-darkest
     default: 'gray-90'
   - token: ink

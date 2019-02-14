@@ -729,15 +729,15 @@ system:
       value: '#0f191c'
   blue-cool-vivid:
     - token: blue-cool-5v
-      value: false
+      value: '#e1f3f8'
     - token: blue-cool-10v
       value: false
     - token: blue-cool-20v
-      value: '#a9d0df'
+      value: '#97d4ea'
     - token: blue-cool-30v
-      value: '#83b5c9'
+      value: '#6dbbd9'
     - token: blue-cool-40v
-      value: '#529ab7'
+      value: '#28a0cb'
     - token: blue-cool-50v
       value: '#0d7ea2'
     - token: blue-cool-60v

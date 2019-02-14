@@ -126,25 +126,25 @@ theme:
   - token: primary-darker
     default: 'blue-warm-80v'
   - token: secondary-lighter
-    default: 'red-10'
+    default: 'red-cool-10v'
   - token: secondary-light
     default: 'red-30'
   - token: secondary
     default: 'red-50'
   - token: secondary-vivid
-    default: 'red-50v'
+    default: 'red-cool-50v'
   - token: secondary-dark
     default: 'red-60v'
   - token: secondary-darker
     default: 'red-70v'
   - token: accent-cool-lighter
-    default: 'cyan-5'
+    default: 'blue-cool-5v'
   - token: accent-cool-light
-    default: 'cyan-20'
+    default: 'blue-cool-20v'
   - token: accent-cool
     default: 'cyan-30v'
   - token: accent-cool-dark
-    default: 'cyan-40v'
+    default: 'blue-cool-40v'
   - token: accent-cool-darker
     default: 'blue-cool-60v'
   - token: accent-warm-lighter

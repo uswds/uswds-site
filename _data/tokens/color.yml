@@ -794,15 +794,15 @@ system:
     - token: blue-warm-5
       value: '#ecf1f7'
     - token: blue-warm-10
-      value: '#dfe7f5'
+      value: '#e0e7f4'
     - token: blue-warm-20
-      value: '#bccae6'
+      value: '#bbcae4'
     - token: blue-warm-30
-      value: '#93afda'
+      value: '#98afd2'
     - token: blue-warm-40
-      value: '#6f92ca'
+      value: '#7292c7'
     - token: blue-warm-50
-      value: '#3e76c2'
+      value: '#4a77b4'
     - token: blue-warm-60
       value: '#345d96'
     - token: blue-warm-70

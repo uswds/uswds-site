@@ -540,38 +540,38 @@ system:
       value: false
   green-cool:
     - token: green-cool-5
-      value: '#e3f5e1'
+      value: '#ecf3ec'
     - token: green-cool-10
-      value: '#caf0c7'
+      value: '#dbebde'
     - token: green-cool-20
-      value: '#9cd899'
+      value: '#b4d0b9'
     - token: green-cool-30
-      value: '#77bd75'
+      value: '#86b98e'
     - token: green-cool-40
-      value: '#52a251'
+      value: '#5e9f69'
     - token: green-cool-50
-      value: '#3e8520'
+      value: '#4d8055'
     - token: green-cool-60
-      value: '#466432'
+      value: '#446443'
     - token: green-cool-70
-      value: '#364b29'
+      value: '#37493b'
     - token: green-cool-80
-      value: '#293024'
+      value: '#28312a'
     - token: green-cool-90
-      value: '#141814'
+      value: '#1a1f1a'
   green-cool-vivid:
     - token: green-cool-5v
-      value: '#dcf8da'
+      value: '#e3f5e1'
     - token: green-cool-10v
-      value: '#a4ef9f'
+      value: '#b7f5bd'
     - token: green-cool-20v
-      value: '#6dd765'
+      value: '#70e17b'
     - token: green-cool-30v
-      value: '#2cc821'
+      value: '#21c834'
     - token: green-cool-40v
-      value: '#0ca900'
+      value: '#00a91c'
     - token: green-cool-50v
-      value: '#178800'
+      value: '#008817'
     - token: green-cool-60v
       value: false
     - token: green-cool-70v

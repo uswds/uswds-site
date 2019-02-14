@@ -735,7 +735,7 @@ system:
     - token: blue-cool-20v
       value: '#97d4ea'
     - token: blue-cool-30v
-      value: '#6dbbd9'
+      value: '#59b9de'
     - token: blue-cool-40v
       value: '#28a0cb'
     - token: blue-cool-50v
@@ -745,7 +745,7 @@ system:
     - token: blue-cool-70v
       value: '#074b69'
     - token: blue-cool-80v
-      value: false
+      value: '#002D3F'
     - token: blue-cool-90v
       value: false
   blue:

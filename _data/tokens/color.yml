@@ -439,7 +439,7 @@ system:
     - token: yellow-10v
       value: '#fee685'
     - token: yellow-20v
-      value: '#ffcb00'
+      value: '#face00'
     - token: yellow-30v
       value: false
     - token: yellow-40v

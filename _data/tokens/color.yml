@@ -60,11 +60,11 @@ state:
   - token: info-darker
     default: 'blue-cool-60'
   - token: error-lighter
-    default: 'red-10'
+    default: 'red-warm-10'
   - token: error-light
-    default: 'red-30v'
+    default: 'red-warm-30v'
   - token: error
-    default: 'red-50'
+    default: 'red-warm-50v'
   - token: error-dark
     default: 'red-60v'
   - token: error-darker

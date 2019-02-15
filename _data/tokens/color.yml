@@ -334,15 +334,15 @@ system:
     - token: orange-10
       value: '#fce2c5'
     - token: orange-20
-      value: '#fabd87'
+      value: '#fbcca2'
     - token: orange-30
-      value: '#eb9b59'
+      value: '#f09860'
     - token: orange-40
-      value: '#db7725'
+      value: '#dd7533'
     - token: orange-50
-      value: '#a36830'
+      value: '#a86437'
     - token: orange-60
-      value: '#73563e'
+      value: '#775540'
     - token: orange-70
       value: '#524236'
     - token: orange-80

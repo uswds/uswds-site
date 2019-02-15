@@ -712,11 +712,11 @@ system:
     - token: blue-cool-10
       value: '#dae9ee'
     - token: blue-cool-20
-      value: '#b8cdd5'
+      value: '#adcfdc'
     - token: blue-cool-30
-      value: '#92b1bf'
+      value: '#82b4c9'
     - token: blue-cool-40
-      value: '#6b96a8'
+      value: '#6499af'
     - token: blue-cool-50
       value: '#3a7d95'
     - token: blue-cool-60

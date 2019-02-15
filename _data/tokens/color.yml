@@ -330,11 +330,11 @@ system:
       value: false
   orange:
     - token: orange-5
-      value: '#fceee2'
+      value: '#f6efe9'
     - token: orange-10
-      value: '#fce2c5'
+      value: '#f2e4d4'
     - token: orange-20
-      value: '#fbcca2'
+      value: '#f3bf90'
     - token: orange-30
       value: '#f09860'
     - token: orange-40
@@ -353,7 +353,7 @@ system:
     - token: orange-5v
       value: '#ffedda'
     - token: orange-10v
-      value: false
+      value: '#fce2c5'
     - token: orange-20v
       value: '#ffbc78'
     - token: orange-30v

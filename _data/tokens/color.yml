@@ -582,13 +582,13 @@ system:
       value: false
   mint:
     - token: mint-5
-      value: '#c9fbeb'
+      value: '#dbf6ed'
     - token: mint-10
-      value: '#97f9d8'
+      value: '#c7efe2'
     - token: mint-20
-      value: '#48e1af'
+      value: '#92d9bb'
     - token: mint-30
-      value: '#48c198'
+      value: '#5abf95'
     - token: mint-40
       value: '#34a37e'
     - token: mint-50
@@ -603,7 +603,7 @@ system:
       value: '#0d1a12'
   mint-vivid:
     - token: mint-5v
-      value: '#befde9'
+      value: '#c9fbeb'
     - token: mint-10v
       value: '#5dfdc8'
     - token: mint-20v

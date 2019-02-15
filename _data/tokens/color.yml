@@ -779,7 +779,7 @@ system:
     - token: blue-30v
       value: '#58b4ff'
     - token: blue-40v
-      value: '#0096f4'
+      value: '#2491ff'
     - token: blue-50v
       value: '#0076d6'
     - token: blue-60v

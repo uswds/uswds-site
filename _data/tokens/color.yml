@@ -351,7 +351,7 @@ system:
       value: '#1b1614'
   orange-vivid:
     - token: orange-5v
-      value: '#ffedda'
+      value: '#fef2e4'
     - token: orange-10v
       value: '#fce2c5'
     - token: orange-20v

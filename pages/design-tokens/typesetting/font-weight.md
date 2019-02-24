@@ -24,7 +24,7 @@ Font weight theme tokens use common names. Most projects will use only 2-4 of th
 Customize [theme](#theme-tokens){:.token} font weight tokens in your project's theme settings with available [system](#system-tokens){:.token} font weight tokens. All typography-related settings are in `_uswds-theme-typography.scss`.
 
 <div class="site-table-wrapper overflow-hidden">
-  <table class="usa-table-borderless site-table-responsive width-full">
+  <table class="usa-table--borderless site-table-responsive width-full">
     <thead>
       <tr>
         <th scope="col">Token</th>
@@ -89,7 +89,7 @@ Customize [theme](#theme-tokens){:.token} font weight tokens in your project's t
 Font weight system tokens use numbers from `100`-`900` in increments of 100, with `100` as the lightest and `900` the heaviest, the same numerical system of grades used by most common typefaces.
 
 <div class="site-table-wrapper overflow-hidden maxw-tablet">
-  <table class="usa-table-borderless site-table-responsive width-full">
+  <table class="usa-table--borderless site-table-responsive width-full">
     <thead>
       <tr>
         <th scope="col">Token</th>
@@ -134,7 +134,7 @@ Font weight system tokens use numbers from `100`-`900` in increments of 100, wit
 Your context and coding style determine how you access USWDS font weight tokens in code.
 
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Context</th>

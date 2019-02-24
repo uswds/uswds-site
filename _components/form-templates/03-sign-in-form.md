@@ -7,12 +7,12 @@ lead: A template for signing a user into a website or app
 
 {% include code/preview.html component="sign-in-form" %}
 {% include code/accordion.html component="sign-in-form" %}
-<div class="usa-accordion-bordered">
-  <button class="usa-button-unstyled usa-accordion-button"
+<div class="usa-accordion usa-accordion--bordered">
+  <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="signin-form-docs">
     Documentation
   </button>
-  <div id="signin-form-docs" aria-hidden="false" class="usa-accordion-content usa-prose">
+  <div id="signin-form-docs" aria-hidden="false" class="usa-accordion__content usa-prose">
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>As you customize this form template, make sure it continues to follow the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines for form templates</a> and the <a href="{{ site.baseurl }}/form-controls/">accessibility guidelines for form controls</a>.</li>

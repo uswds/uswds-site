@@ -35,7 +35,7 @@ If you have a new implementation to add to this list, please [open an issue] or 
 </div>
 
 <div class="site-table-wrapper margin-top-4">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Name</th>

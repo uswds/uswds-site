@@ -64,7 +64,7 @@ subnav:
 Your context and coding style determine how you access USWDS z-index tokens in code.
 
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Context</th>

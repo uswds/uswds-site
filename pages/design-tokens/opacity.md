@@ -17,7 +17,7 @@ subnav:
 ## Opacity tokens
 
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Token</th>
@@ -64,7 +64,7 @@ subnav:
 Your context and coding style determine how you access USWDS opacity tokens in code.
 
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Context</th>

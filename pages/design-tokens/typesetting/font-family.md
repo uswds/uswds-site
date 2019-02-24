@@ -27,7 +27,7 @@ Please see the [Typesetting]({{ site.baseurl }}/design-tokens/typesetting){:.tex
 The following fonts have normalization metadata in the design system, and are available to settings variables as tokens:
 
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Token</th>
@@ -65,7 +65,7 @@ The following fonts have normalization metadata in the design system, and are av
 Type based tokens set the font family value based on the _type_ of the requested font: **monospaced**, **sans-serif**, **serif**, and **condensed** families.
 
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Token</th>
@@ -115,7 +115,7 @@ Type based tokens set the font family value based on the _type_ of the requested
 Role-based tokens set the font family value based on the _role_ the face plays in the project: **heading**, **body**, **ui**, **code**, and **alternate**.
 
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Token</th>

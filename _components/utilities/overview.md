@@ -22,7 +22,7 @@ Most USWDS utilities are built to assign a single CSS property a single value. O
 The utility values are drawn from your project theme's settings tokens, but can be extended to include additional values drawn from our palette of common units (like px, em, ch, and percentages) as well as the broader USWDS system palette of colors, grid spacing, and font scale. (See each utility's **Advanced settings** section for more on customization.)
 
 <div class="site-table-wrapper maxw-tablet-lg">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">USWDS utility</th>

@@ -51,12 +51,12 @@ We work with you to assess your current system and determine the most cost-effic
 
 <ul class="usa-accordion">
   <li>
-    <button class="usa-accordion-button"
+    <button class="usa-accordion__button"
       aria-expanded="false"
       aria-controls="assessment-content">
       Why should you work with us?
     </button>
-    <div id="assessment-content" class="usa-accordion-content">
+    <div id="assessment-content" class="usa-accordion__content">
       <ul>
         <li>We’ll ensure your Design System implementation is in compliance with the official web policy guidance from OMB and your agency.</li>
         <li>We’ll determine any gaps in skill sets, equipment, design, and code quality needed for successful implementation of the Design System.</li>
@@ -79,12 +79,12 @@ Develop and implement a custom look and feel for your site or application-specif
 
 <ul class="usa-accordion">
   <li>
-    <button class="usa-accordion-button"
+    <button class="usa-accordion__button"
       aria-expanded="false"
       aria-controls="customization-content">
       Why should you work with us?
     </button>
-    <div id="customization-content" class="usa-accordion-content">
+    <div id="customization-content" class="usa-accordion__content">
       <ul>
         <li>We’ll get you up and running with a version of the Design System that’s tailored to meet your needs.</li>
         <li>Your digital services will stay in compliance with the official web policy guidance from OMB.</li>

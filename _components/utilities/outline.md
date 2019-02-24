@@ -114,7 +114,7 @@ utilities:
   <h2 class="site-h2 margin-y-0">Utility mixins</h2>
   {% include utilities/utility-mixin-intro.html %}
 
-  <table class="usa-table-borderless site-table-responsive site-table-simple">
+  <table class="usa-table--borderless site-table-responsive site-table-simple">
     <thead>
       <tr>
         <th scope="col" class="tablet:maxw-card-lg">Utility</th>

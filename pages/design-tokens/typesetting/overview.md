@@ -46,7 +46,7 @@ Each [supported typeface]({{ site.baseurl }}/design-tokens/typesetting/font-fami
     For <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a> token <code>10</code> (24px) we see the following normalized ouput:
   </div>
 
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Supported typeface</th>
@@ -96,7 +96,7 @@ Since we use normalization on font sizing, we must also normalize line height to
     For <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a> token <code>10</code> (24px) and <a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a> token <code>3</code> ({{ target_line_height }} / {{ target_line_height | times: target_font_size }}px) we see the following normalized ouput:
   </div>
 
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Supported typeface</th>
@@ -150,7 +150,7 @@ The individual design token sections go into this in more detail, but here's a s
 
 ### Font family
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Token</th>
@@ -232,7 +232,7 @@ The individual design token sections go into this in more detail, but here's a s
 
 ### Font size
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Token</th>
@@ -314,7 +314,7 @@ The individual design token sections go into this in more detail, but here's a s
 
 ### Family and size together
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Token</th>
@@ -396,7 +396,7 @@ The individual design token sections go into this in more detail, but here's a s
 
 ### Line height
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Token</th>
@@ -482,7 +482,7 @@ The `typeset()` mixin outlined below accepts the tokens listed as well as a spec
 We use the `typeset()` mixin on all our components to get the effect of default `<body>` element styling without having to explicitly style the `<body>` element.
 
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Token</th>

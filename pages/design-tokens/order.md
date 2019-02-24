@@ -19,7 +19,7 @@ subnav:
   <div class="site-table-note">
     <strong>Note:</strong> Ordered items are only ordered among other ordered items. Any unordered siblings will be ordered by their appearance in the DOM. Siblings sharing the same order will all appear at the specified position in the order in which they appear in the DOM.
   </div>
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Token</th>
@@ -96,7 +96,7 @@ subnav:
 Your context and coding style determine how you access USWDS order tokens in code.
 
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Context</th>

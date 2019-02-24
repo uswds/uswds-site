@@ -478,7 +478,7 @@ body {
 // TODO: make sure line height is added in USWDS accordion component and that
 // list styles don't override accordion styles
 #main-content { // scss-lint:disable IdSelector
-  .usa-accordion-button {
+  .usa-accordion__button {
     line-height: 1;
   }
 }
@@ -1390,7 +1390,7 @@ code {
   }
 }
 
-.usa-accordion-docs {
+.usa-accordion__docs {
   margin-bottom: units(7);
 }
 
@@ -2149,11 +2149,11 @@ li {
 }
 
 p + .usa-accordion,
-h2 + div:not(.usa-accordion-content),
-h3 + div:not(.usa-accordion-content),
-h4 + div:not(.usa-accordion-content),
-h5 + div:not(.usa-accordion-content),
-h6 + div:not(.usa-accordion-content) {
+h2 + div:not(.usa-accordion__content),
+h3 + div:not(.usa-accordion__content),
+h4 + div:not(.usa-accordion__content),
+h5 + div:not(.usa-accordion__content),
+h6 + div:not(.usa-accordion__content) {
   margin-top: units(2);
 }
 

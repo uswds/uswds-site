@@ -18,12 +18,12 @@ subnav:
 
 {% include code/preview.html component="footers" %}
 {% include code/accordion.html component="footers" %}
-<div class="usa-accordion-bordered">
-  <button class="usa-button-unstyled usa-accordion-button"
+<div class="usa-accordion usa-accordion--bordered">
+  <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="footer-docs">
     Documentation
   </button>
-  <div id="footer-docs" aria-hidden="false" class="usa-accordion-content usa-prose">
+  <div id="footer-docs" aria-hidden="false" class="usa-accordion__content usa-prose">
     <h4 class="usa-heading">Implementation</h4>
     <p>The social media icons used in the footer are from Font Awesome. To use additional icons, visit <a href="https://fontawesome.com/">Font Awesome</a>.</p>
     <h4 class="usa-heading">Accessibility</h4>

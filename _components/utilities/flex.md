@@ -216,9 +216,9 @@ utilities:
       </div>
       {% endfor %}
 
-      <div class="usa-accordion-bordered usa-code-sample margin-top-4 margin-bottom-1">
-        <button class="usa-accordion-button" aria-controls="code-flex" aria-expanded="true">Code</button>
-        <div id="code-flex" class="usa-accordion-content">
+      <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4 margin-bottom-1">
+        <button class="usa-accordion__button" aria-controls="code-flex" aria-expanded="true">Code</button>
+        <div id="code-flex" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
 ```html
 <div class="grid-row">
@@ -319,9 +319,9 @@ utilities:
       </div>
     {% endfor %}
 
-    <div class="usa-accordion-bordered usa-code-sample margin-top-4 margin-bottom-1">
-      <button class="usa-accordion-button" aria-controls="code-flex-direction" aria-expanded="true">Code</button>
-      <div id="code-flex-direction" class="usa-accordion-content">
+    <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4 margin-bottom-1">
+      <button class="usa-accordion__button" aria-controls="code-flex-direction" aria-expanded="true">Code</button>
+      <div id="code-flex-direction" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
 ```html
 <div class="grid-row flex-column">
@@ -378,9 +378,9 @@ utilities:
       </div>
     {% endfor %}
 
-    <div class="usa-accordion-bordered usa-code-sample margin-top-4 margin-bottom-1">
-      <button class="usa-accordion-button" aria-controls="code-flex-wrap" aria-expanded="true">Code</button>
-      <div id="code-flex-wrap" class="usa-accordion-content">
+    <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4 margin-bottom-1">
+      <button class="usa-accordion__button" aria-controls="code-flex-wrap" aria-expanded="true">Code</button>
+      <div id="code-flex-wrap" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
 ```html
 <div class="grid-row flex-wrap">
@@ -438,9 +438,9 @@ utilities:
         </div>
     {% endfor %}
 
-    <div class="usa-accordion-bordered usa-code-sample margin-top-4 margin-bottom-1">
-      <button class="usa-accordion-button" aria-controls="code-flex-align" aria-expanded="true">Code</button>
-      <div id="code-flex-align" class="usa-accordion-content">
+    <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4 margin-bottom-1">
+      <button class="usa-accordion__button" aria-controls="code-flex-align" aria-expanded="true">Code</button>
+      <div id="code-flex-align" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
 ```html
 <div class="display-flex flex-column">
@@ -497,9 +497,9 @@ utilities:
         {% endfor %}
         </div>
 
-    <div class="usa-accordion-bordered usa-code-sample margin-top-4 margin-bottom-1">
-      <button class="usa-accordion-button" aria-controls="code-flex-justify" aria-expanded="true">Code</button>
-      <div id="code-flex-justify" class="usa-accordion-content">
+    <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4 margin-bottom-1">
+      <button class="usa-accordion__button" aria-controls="code-flex-justify" aria-expanded="true">Code</button>
+      <div id="code-flex-justify" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
 ```html
 <div class="display-flex flex-row">
@@ -533,9 +533,9 @@ utilities:
       {% endfor %}
     </div>
 
-    <div class="usa-accordion-bordered usa-code-sample margin-top-4 margin-bottom-1">
-      <button class="usa-accordion-button" aria-controls="code-order" aria-expanded="true">Code</button>
-      <div id="code-order" class="usa-accordion-content">
+    <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4 margin-bottom-1">
+      <button class="usa-accordion__button" aria-controls="code-order" aria-expanded="true">Code</button>
+      <div id="code-order" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
 ```html
 <div class="grid-row">
@@ -569,7 +569,7 @@ utilities:
   <h2 class="site-h2 margin-y-0">Utility mixins</h2>
   {% include utilities/utility-mixin-intro.html %}
 
-  <table class="usa-table-borderless site-table-responsive site-table-simple">
+  <table class="usa-table--borderless site-table-responsive site-table-simple">
     <thead>
       <tr>
         <th scope="col" class="tablet:maxw-card-lg">Utility</th>

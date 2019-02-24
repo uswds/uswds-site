@@ -22,16 +22,16 @@ component_url: 'https://components.designsystem.digital.gov/components/detail/bu
     <p>The examples demonstrate how to use button elements. To use a button style on a link, add the <code>usa-button</code> class to your link.</p>
     <p>To use a different style button on your link, add the special button class in addition to <code>usa-button</code>:</p>
     <ul>
-      <li><code>usa-button-primary-alt</code></li>
-      <li><code>usa-button-secondary</code></li>
+      <li><code>usa-button--primary-alt</code></li>
+      <li><code>usa-button--secondary</code></li>
       <li><code>usa-button-gray</code></li>
-      <li><code>usa-button-outline</code></li>
-      <li><code>usa-button-outline-inverse</code></li>
-      <li><code>usa-button-disabled</code></li>
+      <li><code>usa-button--outline</code></li>
+      <li><code>usa-button--outline-inverse</code></li>
+      <li><code>usa-button--disabled</code></li>
       <li><code>usa-button-big</code></li>
     </ul>
     <p>For example, a secondary button style would use the following code:
-    <code>&lt;a class="usa-button usa-button-secondary" href=&quot;/my-link"&gt;My button&lt;/a&gt;</code></p>
+    <code>&lt;a class="usa-button usa-button--secondary" href=&quot;/my-link"&gt;My button&lt;/a&gt;</code></p>
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>Buttons should display a visible focus state when users tab to them.</li>

@@ -163,16 +163,16 @@ body {
 .site-banner {
   background-color: color('gray-90');
 
-  .usa-banner-inner {
+  .usa-banner__inner {
     max-width: 100%;
   }
 
-  .usa-banner-content {
+  .usa-banner__content {
     color: color('white');
     margin-left: 0;
   }
 
-  .usa-banner-button {
+  .usa-banner__button {
     color: color('gray-30');
 
     &:hover {
@@ -180,11 +180,11 @@ body {
     }
   }
 
-  .usa-banner-header-text {
+  .usa-banner__header-text {
     color: color('white');
   }
 
-  .usa-banner-header-action {
+  .usa-banner__header-action {
     color: color('gray-30');
   }
 }

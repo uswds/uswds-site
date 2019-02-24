@@ -701,7 +701,7 @@ body {
     width: units(5);
   }
 
-  .usa-media_block {
+  .usa-media-block {
     clear: both;
     line-height: line-height('ui', 3);
     margin-top: units(2.5);
@@ -1424,8 +1424,8 @@ code {
 // Homepage styles --------------------- //
 
 .page-home {
-  .usa-graphic_list {
-    .usa-media_block-body {
+  .usa-graphic-list {
+    .usa-media-block__body {
       // scss-lint:disable SelectorDepth
       > *:first-child {
         @include u-font('heading', $media-block-header-font-size);
@@ -1439,7 +1439,7 @@ code {
       }
     }
 
-    .usa-media_block-img {
+    .usa-media-block__img {
       margin-bottom: units(1);
       margin-right: units(2.5);
       max-width: units(9);
@@ -1461,7 +1461,7 @@ code {
   // Override for 4x1 media grid when it collapses to 2x2
   @media screen and (max-width: units('desktop')) and (min-width: units('tablet')) {
     // scss-lint:disable SelectorDepth
-    .usa-graphic_list .usa-graphic_list-row .usa-media_block:nth-child(-n+2) {
+    .usa-graphic-list .usa-graphic-list__row .usa-media-block:nth-child(-n+2) {
       margin-bottom: units(8);
     }
   }

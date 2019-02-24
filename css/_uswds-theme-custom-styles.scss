@@ -124,7 +124,7 @@ body {
       margin-left: units($theme-site-margins-width);
     }
 
-    .usa-logo-text {
+    .usa-logo__text {
       @include at-media('desktop') {
         display: initial;
         letter-spacing: ls(-1);
@@ -245,7 +245,7 @@ body {
     color: color($site-ink);
   }
 
-  .usa-logo-text {
+  .usa-logo__text {
     $logo-size-mobile: 3;
     $logo-size-desktop: 3;
     @include u-font('sans', 'xs');
@@ -2282,7 +2282,7 @@ h6 + div:not(.usa-accordion__content) {
       color: color('white');
     }
 
-    .usa-logo-text {
+    .usa-logo__text {
       &::before {
         background-image: url('../img/uswds-logo/4c-lg-on-black.png');
         background-image: url('../img/uswds-logo/4c-lg-on-black.svg');

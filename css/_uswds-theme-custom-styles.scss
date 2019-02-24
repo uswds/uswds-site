@@ -381,26 +381,26 @@ body {
     }
   }
 
-  .usa-sidenav-item:first-child {
+  .usa-sidenav__item:first-child {
     .usa-current::after {
       border-top-left-radius: radius('md');
       top: units($site-border-width) * -1;
     }
   }
 
-  .usa-sidenav-item:last-child {
+  .usa-sidenav__item:last-child {
     .usa-current::after {
       border-bottom-left-radius: radius('md');
       bottom: units($site-border-width) * -1;
     }
   }
 
-  .usa-sidenav-item {
+  .usa-sidenav__item {
     border-top: none;
     line-height: lh('sans', 3);
     position: relative;
 
-    & + .usa-sidenav-item {
+    & + .usa-sidenav__item {
       a {
         // TODO: use 'black-transparent-5' when value changes
         border-top: units(1px) solid rgba(0, 0, 0, .05);
@@ -416,7 +416,7 @@ body {
     }
   }
 
-  .usa-sidenav-sublist {
+  .usa-sidenav__sublist {
     font-size: font-size('sans', '3xs');
     a {
       border-top: units(1px) solid rgba(0, 0, 0, .05);
@@ -427,7 +427,7 @@ body {
       color: color($site-primary-vivid);
     }
 
-    .usa-sidenav-sublist {
+    .usa-sidenav__sublist {
       a {
         padding-left: units(4);
       }

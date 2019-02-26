@@ -57,7 +57,7 @@
   "dependencies": {
     "jquery": "^3.3.1",
     "normalize.css": "^8.0.0",
-    "uswds": "github:uswds/uswds#dw-variant-naming"
+    "uswds": "github:uswds/uswds#release-2.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5",
@@ -88,7 +88,6 @@
     "gulp-strip-css-comments": "^2.0.0",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.7",
-    "highlight.js": "^9.14.2",
     "json-format": "^1.0.1",
     "merge-stream": "^1.0.0",
     "minimist": "^1.2.0",

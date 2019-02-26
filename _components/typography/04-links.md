@@ -12,12 +12,12 @@ order: 04
 
 {% include code/preview.html component="links" %}
 {% include code/accordion.html component="links" %}
-<div class="usa-accordion-bordered usa-accordion-docs">
-  <button class="usa-button-unstyled usa-accordion-button"
+<div class="usa-accordion usa-accordion--bordered usa-accordion__docs">
+  <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="link-docs">
     Documentation
   </button>
-  <div id="link-docs" class="usa-accordion-content usa-prose">
+  <div id="link-docs" class="usa-accordion__content usa-prose">
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>Users should be able to tab to navigate between links.</li>

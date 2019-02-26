@@ -11,12 +11,12 @@ order: 03
 
 {% include code/preview.html component="typesetting" %}
 {% include code/accordion.html component="typesetting" %}
-<div class="usa-accordion-bordered usa-accordion-docs">
-  <button class="usa-button-unstyled usa-accordion-button"
+<div class="usa-accordion usa-accordion--bordered usa-accordion__docs">
+  <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="typesetting-docs">
     Documentation
   </button>
-  <div id="typesetting-docs" class="usa-accordion-content usa-prose">
+  <div id="typesetting-docs" class="usa-accordion__content usa-prose">
     <h4 class="usa-heading">Implementation</h4>
     <p>To add a max-width to text, add the class <code>usa-content</code> to your document. Use at the specificity that best suits your project's needs.</p>
     <p>You can change the max-width value <code>$text-max-width</code> in <code>dist/scss/core/_variables.scss</code>. The max-width defaults to 66 characters per line using character units (`66ch`).</p>

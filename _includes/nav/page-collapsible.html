@@ -1,6 +1,6 @@
 {% assign _current = include.page.category | eq: page.category %}
 {% assign _id = include.page.title | slugify | prepend: 'nav-' %}
-<button class="usa-accordion-button usa-nav-link" aria-controls="{{ _id }}"
+<button class="usa-accordion__button usa-nav__link" aria-controls="{{ _id }}"
   {% if _current %}
   class="usa-current"
   aria-expanded="true"
@@ -9,7 +9,7 @@
   {% endif %}>
   {{ include.title | default: include.page.title }}
 </button>
-<ul id="{{ _id }}" class="usa-nav-submenu">
+<ul id="{{ _id }}" class="usa-nav__submenu">
   {% assign _children = site.data.nav[include.page.category] %}
   {% include nav/list.html links=_children flat=false %}
 </ul>

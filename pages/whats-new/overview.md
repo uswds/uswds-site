@@ -56,7 +56,7 @@ websites have “experienced” the U.S. Web Design System. We will update these
 numbers quarterly.
 
 <div class="site-table-wrapper margin-top-4">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col" aria-sort="ascending">Quarter</th>

@@ -302,7 +302,7 @@ utilities:
   </section><!-- utility -->
 </section><!-- utilities -->
 
-<table class="usa-table-borderless site-table-responsive site-table-simple">
+<table class="usa-table--borderless site-table-responsive site-table-simple">
   <thead>
     <tr>
       <th scope="col" class="tablet:maxw-card-lg">Utility</th>

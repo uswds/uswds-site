@@ -21,7 +21,7 @@ use case:
 {% capture hide %}_hide_{% endcapture %}
 
 <div class="site-table-wrapper margin-top-4">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col" class="text-no-wrap">Visual browsers</th>

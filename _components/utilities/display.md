@@ -156,9 +156,9 @@ utilities:
         </div>
       </div>
 
-      <div class="usa-accordion-bordered usa-code-sample margin-top-4 margin-bottom-1">
-        <button class="usa-accordion-button" aria-controls="code-relative" aria-expanded="true">Code</button>
-        <div id="code-relative" class="usa-accordion-content">
+      <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4 margin-bottom-1">
+        <button class="usa-accordion__button" aria-controls="code-relative" aria-expanded="true">Code</button>
+        <div id="code-relative" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
 ```html
 <div class="display-block border-1px ...">.display-block</div>
@@ -346,9 +346,9 @@ utilities:
           </div>
         </div>
       </div>
-      <div class="usa-accordion-bordered usa-code-sample margin-top-0">
-        <button class="usa-accordion-button" aria-controls="code-static-relative" aria-expanded="true">Code</button>
-        <div id="code-static-relative" class="usa-accordion-content">
+      <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-0">
+        <button class="usa-accordion__button" aria-controls="code-static-relative" aria-expanded="true">Code</button>
+        <div id="code-static-relative" class="usa-accordion__content">
 <div markdown="1">
 ```html
 <div class="position-relative">
@@ -389,9 +389,9 @@ utilities:
           </div>
         </div>
       </div>
-      <div class="usa-accordion-bordered usa-code-sample margin-top-2">
-        <button class="usa-accordion-button" aria-controls="code-fixed" aria-expanded="true">Code</button>
-        <div id="code-fixed" class="usa-accordion-content">
+      <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-2">
+        <button class="usa-accordion__button" aria-controls="code-fixed" aria-expanded="true">Code</button>
+        <div id="code-fixed" class="usa-accordion__content">
 <div markdown="1">
 ```html
 <div class="position-relative">
@@ -431,9 +431,9 @@ utilities:
           </div>
         </div>
       </div>
-      <div class="usa-accordion-bordered usa-code-sample margin-top-2 margin-bottom-1">
-        <button class="usa-accordion-button" aria-controls="code-sticky" aria-expanded="true">Code</button>
-        <div id="code-sticky" class="usa-accordion-content">
+      <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-2 margin-bottom-1">
+        <button class="usa-accordion__button" aria-controls="code-sticky" aria-expanded="true">Code</button>
+        <div id="code-sticky" class="usa-accordion__content">
 <div markdown="1">
 ```html
 <div class="position-relative overflow-scroll">
@@ -644,7 +644,7 @@ utilities:
   <h2 class="site-h2 margin-y-0">Utility mixins</h2>
   {% include utilities/utility-mixin-intro.html %}
 
-  <table class="usa-table-borderless site-table-responsive site-table-simple">
+  <table class="usa-table--borderless site-table-responsive site-table-simple">
     <thead>
       <tr>
         <th scope="col" class="tablet:maxw-card-lg">Utility</th>

@@ -11,12 +11,12 @@ lead: A box that allows users to search for specific content if they know what s
 
 {% include code/preview.html component="search-bar" classes="preview-search-bar" %}
 {% include code/accordion.html component="search-bar" %}
-<div class="usa-accordion-bordered">
-  <button class="usa-button-unstyled usa-accordion-button"
+<div class="usa-accordion usa-accordion--bordered">
+  <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="search-bar-docs">
     Documentation
   </button>
-  <div id="search-bar-docs" aria-hidden="false" class="usa-accordion-content usa-prose">
+  <div id="search-bar-docs" aria-hidden="false" class="usa-accordion__content usa-prose">
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>As you customize this form template, ensure it continues to follow the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines for form templates</a> and the <a href="{{ site.baseurl }}/form-controls/">accessibility guidelines for form controls</a>.</li>

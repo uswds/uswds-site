@@ -37,9 +37,9 @@ utilities:
         <span class="float-left bg-secondary-light padding-2">.float-left</span>
         <span class="float-right bg-secondary-light padding-2">.float-right</span>
       </div>
-      <div class="usa-accordion-bordered usa-code-sample margin-top-4">
-        <button class="usa-accordion-button" aria-controls="code-clearfix" aria-expanded="true">Code</button>
-        <div id="code-clearfix" class="usa-accordion-content margin-bottom-1">
+      <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4">
+        <button class="usa-accordion__button" aria-controls="code-clearfix" aria-expanded="true">Code</button>
+        <div id="code-clearfix" class="usa-accordion__content margin-bottom-1">
 <div markdown="1">
 ```html
 <div class="clearfix">
@@ -56,7 +56,7 @@ utilities:
 
 <section class="utilities-section margin-top-6">
   <h2 class="utilities-section-title">Default output</h2>
-  <table class="usa-table-borderless site-table-responsive site-table-simple">
+  <table class="usa-table--borderless site-table-responsive site-table-simple">
     <thead>
       <tr>
         <th scope="col" class="tablet:maxw-card-lg">Utility</th>
@@ -83,7 +83,7 @@ utilities:
 <section id="utility-mixins" class="padding-top-4">
   <h2 class="site-h2 margin-y-0">Utility mixins</h2>
   {% include utilities/utility-mixin-intro.html %}
-  <table class="usa-table-borderless site-table-responsive site-table-simple">
+  <table class="usa-table--borderless site-table-responsive site-table-simple">
     <thead>
       <tr>
         <th scope="col" class="tablet:maxw-card-lg">Utility</th>

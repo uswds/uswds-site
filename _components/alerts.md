@@ -11,12 +11,12 @@ lead: Alerts keep users informed of important and sometimes time-sensitive chang
 
 {% include code/preview.html component="alerts" %}
 {% include code/accordion.html component="alerts" %}
-<div class="usa-accordion-bordered">
-  <button class="usa-button-unstyled usa-accordion-button"
+<div class="usa-accordion usa-accordion--bordered">
+  <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="alert-docs">
     Documentation
   </button>
-  <div id="alert-docs" aria-hidden="false" class="usa-accordion-content usa-prose">
+  <div id="alert-docs" aria-hidden="false" class="usa-accordion__content usa-prose">
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>Use the ARIA <code>role=<wbr>"alert"</code> to inform assistive technologies of a time-sensitive and important message that is not interactive. If the message is interactive, use the <code>alertdialog</code> role instead.</li>

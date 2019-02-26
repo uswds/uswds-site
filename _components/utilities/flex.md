@@ -503,10 +503,10 @@ utilities:
 <div markdown="1" class="font-mono-xs">
 ```html
 <div class="display-flex flex-row">
-  <div class="flex-align-start"></div>
-  <div class="flex-align-center"></div>
-  <div class="flex-align-end"></div>
-  <div class="flex-align-stretch"></div>
+  <div class="flex-justify"></div>
+  <div class="flex-justify-start"></div>
+  <div class="flex-justify-center"></div>
+  <div class="flex-justify-end"></div>
 </div>
 ```
 </div><!-- markdown -->
@@ -696,4 +696,4 @@ utilities:
     {% include utilities/values-intro.html %}
     {% include utilities/values-no-palettes.html %}
   </section>
-</section
+</section>

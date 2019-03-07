@@ -18,7 +18,7 @@ subnav:
 Output values are shown in `px` below but are output in `rem` in the final CSS, based on the base font size in your project settings.
 
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Token</th>
@@ -61,7 +61,7 @@ Output values are shown in `px` below but are output in `rem` in the final CSS, 
 Your context and coding style determine how you access USWDS shadow tokens in code.
 
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Context</th>

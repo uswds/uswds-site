@@ -32,7 +32,7 @@ Each color family has seven possible lightness grades, from `lightest` to `darke
 Customize theme color tokens using the variables listed below in `_uswds_theme_color.scss` with [system color tokens]({{ site.baseurl }}/design-tokens/color/system-tokens/). Set any unused theme color to `false`.
 
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Color</th>
@@ -71,7 +71,7 @@ Customize theme color tokens using the variables listed below in `_uswds_theme_c
 Your context and coding style determine how you access USWDS color tokens in code.
 
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Context</th>

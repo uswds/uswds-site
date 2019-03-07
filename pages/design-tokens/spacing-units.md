@@ -32,7 +32,7 @@ Any spacing value in utilities or component CSS should use the following spacing
 ## Spacing unit tokens
 
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Token</th>
@@ -98,7 +98,7 @@ Your context and coding style determine how you access USWDS spacing unit tokens
 Many mixins and utilities accept spacing unit tokens. See the [utilities section]({{ site.baseurl }}/utilities/) for more on individual utilities and their matching mixins. We show only a few representative examples below.
 
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Context</th>

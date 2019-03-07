@@ -11,12 +11,12 @@ lead: Accordions are a list of headers that can be clicked to hide or reveal add
 
 {% include code/preview.html component="accordion" %}
 {% include code/accordion.html component="accordion" %}
-<div class="usa-accordion-bordered">
-  <button class="usa-button-unstyled usa-accordion-button"
+<div class="usa-accordion usa-accordion--bordered">
+  <button class="usa-button-unstyled usa-accordion__button"
     aria-expanded="true" aria-controls="documentation">
     Documentation
   </button>
-  <div id="documentation" class="usa-accordion-content usa-prose">
+  <div id="documentation" class="usa-accordion__content usa-prose">
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>

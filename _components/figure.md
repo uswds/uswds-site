@@ -7,12 +7,12 @@ lead: Intro text on what is included in this section and how to use it. No more 
 
 {% include code/preview.html component="figure" %}
 {% include code/accordion.html component="figure" %}
-<div class="usa-accordion-bordered">
-  <button class="usa-button-unstyled usa-accordion-button"
+<div class="usa-accordion usa-accordion--bordered">
+  <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="figure-docs">
     Documentation
   </button>
-  <div id="figure-docs" aria-hidden="false" class="usa-accordion-content usa-prose">
+  <div id="figure-docs" aria-hidden="false" class="usa-accordion__content usa-prose">
     <h4 class="usa-heading">Accessibility</h4>
     <p>As you customize this form template, ensure it continues to follow the:</p>
     <ul class="usa-content-list">

@@ -19,7 +19,7 @@ Please see the [Typesetting]({{ site.baseurl }}/design-tokens/typesetting){:.tex
 
 ## Line height tokens
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Token</th>
@@ -65,7 +65,7 @@ Your context and coding style determine how you access USWDS line height tokens 
 **Note:** Because line height is affected by [font size normalization]({{ site.baseurl }}/design-tokens/typesetting/){:.text-ink} all [letter spacing]({{ site.baseurl }}/design-tokens/typesetting/letterspacing){:.token} tokens also require a [family]({{ site.baseurl }}/design-tokens/typesetting/font-family){:.token} token.
 
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Context</th>

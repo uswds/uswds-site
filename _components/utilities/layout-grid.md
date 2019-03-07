@@ -44,9 +44,9 @@ subnav:
 {{ grid-1 }}
 </div>
 
-<div class="usa-accordion-bordered usa-code-sample margin-top-4">
-  <button class="usa-accordion-button" aria-controls="code-sticky" aria-expanded="true">Code</button>
-  <div id="code-sticky" class="usa-accordion-content">
+<div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4">
+  <button class="usa-accordion__button" aria-controls="code-sticky" aria-expanded="true">Code</button>
+  <div id="code-sticky" class="usa-accordion__content">
 <div markdown="1">
 ```html
 {{ grid-1 | strip }}
@@ -77,7 +77,7 @@ Breaking it down, here's how it works:
 <h2 id="responsive-variants">Responsive variants</h2>
 
 <div>
-  <table class="usa-table-borderless site-table-responsive site-table-simple">
+  <table class="usa-table--borderless site-table-responsive site-table-simple">
     <caption>Default responsive sizes</caption>
     <thead>
       <tr>
@@ -242,9 +242,9 @@ Breaking it down, here's how it works:
 {{ grid-auto }}
 </div>
 
-<div class="usa-accordion-bordered usa-code-sample margin-top-4">
-  <button class="usa-accordion-button" aria-controls="code-auto" aria-expanded="true">Code</button>
-  <div id="code-auto" class="usa-accordion-content">
+<div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4">
+  <button class="usa-accordion__button" aria-controls="code-auto" aria-expanded="true">Code</button>
+  <div id="code-auto" class="usa-accordion__content">
 <div markdown="1">
 ```html
 {{ grid-auto | strip }}
@@ -288,9 +288,9 @@ Breaking it down, here's how it works:
 {{ grid-responsive }}
 </div>
 
-<div class="usa-accordion-bordered usa-code-sample margin-top-4">
-  <button class="usa-accordion-button" aria-controls="code-responsive" aria-expanded="true">Code</button>
-  <div id="code-responsive" class="usa-accordion-content">
+<div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4">
+  <button class="usa-accordion__button" aria-controls="code-responsive" aria-expanded="true">Code</button>
+  <div id="code-responsive" class="usa-accordion__content">
 <div markdown="1">
 ```html
 {{ grid-responsive | strip }}
@@ -318,9 +318,9 @@ Breaking it down, here's how it works:
 {{ grid-stacked }}
 </div>
 
-<div class="usa-accordion-bordered usa-code-sample margin-top-4">
-  <button class="usa-accordion-button" aria-controls="code-stacked" aria-expanded="true">Code</button>
-  <div id="code-stacked" class="usa-accordion-content">
+<div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4">
+  <button class="usa-accordion__button" aria-controls="code-stacked" aria-expanded="true">Code</button>
+  <div id="code-stacked" class="usa-accordion__content">
 <div markdown="1">
 ```html
 {{ grid-stacked | strip }}
@@ -355,9 +355,9 @@ Breaking it down, here's how it works:
 {{ grid-mix }}
 </div>
 
-<div class="usa-accordion-bordered usa-code-sample margin-top-4">
-  <button class="usa-accordion-button" aria-controls="code-mix" aria-expanded="true">Code</button>
-  <div id="code-mix" class="usa-accordion-content">
+<div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4">
+  <button class="usa-accordion__button" aria-controls="code-mix" aria-expanded="true">Code</button>
+  <div id="code-mix" class="usa-accordion__content">
 <div markdown="1">
 ```html
 {{ grid-mix | strip }}
@@ -379,9 +379,9 @@ Breaking it down, here's how it works:
 {{ grid-offsets }}
 </div>
 
-<div class="usa-accordion-bordered usa-code-sample margin-top-4">
-  <button class="usa-accordion-button" aria-controls="code-offsets" aria-expanded="true">Code</button>
-  <div id="code-offsets" class="usa-accordion-content">
+<div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4">
+  <button class="usa-accordion__button" aria-controls="code-offsets" aria-expanded="true">Code</button>
+  <div id="code-offsets" class="usa-accordion__content">
 <div markdown="1">
 ```html
 {{ grid-offsets | strip }}
@@ -405,9 +405,9 @@ Breaking it down, here's how it works:
 {{ grid-wrapping }}
 </div>
 
-<div class="usa-accordion-bordered usa-code-sample margin-top-4">
-  <button class="usa-accordion-button" aria-controls="code-wrapping" aria-expanded="true">Code</button>
-  <div id="code-wrapping" class="usa-accordion-content">
+<div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4">
+  <button class="usa-accordion__button" aria-controls="code-wrapping" aria-expanded="true">Code</button>
+  <div id="code-wrapping" class="usa-accordion__content">
 <div markdown="1">
 ```html
 {{ grid-wrapping | strip }}
@@ -439,9 +439,9 @@ Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the
 {{ grid-gutters }}
 </div>
 
-<div class="usa-accordion-bordered usa-code-sample margin-top-4">
-  <button class="usa-accordion-button" aria-controls="code-gutters" aria-expanded="true">Code</button>
-  <div id="code-gutters" class="usa-accordion-content">
+<div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4">
+  <button class="usa-accordion__button" aria-controls="code-gutters" aria-expanded="true">Code</button>
+  <div id="code-gutters" class="usa-accordion__content">
 <div markdown="1">
 ```html
 {{ grid-gutters | strip }}
@@ -482,9 +482,9 @@ Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the
 {{ grid-gutters-lg }}
 </div>
 
-<div class="usa-accordion-bordered usa-code-sample margin-top-4">
-  <button class="usa-accordion-button" aria-controls="code-gutters-lg" aria-expanded="true">Code</button>
-  <div id="code-gutters-lg" class="usa-accordion-content">
+<div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4">
+  <button class="usa-accordion__button" aria-controls="code-gutters-lg" aria-expanded="true">Code</button>
+  <div id="code-gutters-lg" class="usa-accordion__content">
 <div markdown="1">
 ```html
 {{ grid-gutters-lg | strip }}

@@ -124,7 +124,7 @@ body {
       margin-left: units($theme-site-margins-width);
     }
 
-    .usa-logo-text {
+    .usa-logo__text {
       @include at-media('desktop') {
         display: initial;
         letter-spacing: ls(-1);
@@ -163,16 +163,16 @@ body {
 .site-banner {
   background-color: color('gray-90');
 
-  .usa-banner-inner {
+  .usa-banner__inner {
     max-width: 100%;
   }
 
-  .usa-banner-content {
+  .usa-banner__content {
     color: color('white');
     margin-left: 0;
   }
 
-  .usa-banner-button {
+  .usa-banner__button {
     color: color('gray-30');
 
     &:hover {
@@ -180,11 +180,11 @@ body {
     }
   }
 
-  .usa-banner-header-text {
+  .usa-banner__header-text {
     color: color('white');
   }
 
-  .usa-banner-header-action {
+  .usa-banner__header-action {
     color: color('gray-30');
   }
 }
@@ -209,7 +209,7 @@ body {
 
 @mixin outline-inverse-button {
   // TODO: Fix this with button mixin
-  .usa-button.usa-button-outline-inverse {
+  .usa-button.usa-button--outline-inverse {
     box-shadow: inset 0 0 0 units(2px) color($site-primary);
     color: color($site-primary);
 
@@ -245,7 +245,7 @@ body {
     color: color($site-ink);
   }
 
-  .usa-logo-text {
+  .usa-logo__text {
     $logo-size-mobile: 3;
     $logo-size-desktop: 3;
     @include u-font('sans', 'xs');
@@ -381,26 +381,26 @@ body {
     }
   }
 
-  .usa-sidenav-item:first-child {
+  .usa-sidenav__item:first-child {
     .usa-current::after {
       border-top-left-radius: radius('md');
       top: units($site-border-width) * -1;
     }
   }
 
-  .usa-sidenav-item:last-child {
+  .usa-sidenav__item:last-child {
     .usa-current::after {
       border-bottom-left-radius: radius('md');
       bottom: units($site-border-width) * -1;
     }
   }
 
-  .usa-sidenav-item {
+  .usa-sidenav__item {
     border-top: none;
     line-height: lh('sans', 3);
     position: relative;
 
-    & + .usa-sidenav-item {
+    & + .usa-sidenav__item {
       a {
         // TODO: use 'black-transparent-5' when value changes
         border-top: units(1px) solid rgba(0, 0, 0, .05);
@@ -416,7 +416,7 @@ body {
     }
   }
 
-  .usa-sidenav-sublist {
+  .usa-sidenav__sublist {
     font-size: font-size('sans', '3xs');
     a {
       border-top: units(1px) solid rgba(0, 0, 0, .05);
@@ -427,7 +427,7 @@ body {
       color: color($site-primary-vivid);
     }
 
-    .usa-sidenav-sublist {
+    .usa-sidenav__sublist {
       a {
         padding-left: units(4);
       }
@@ -478,7 +478,7 @@ body {
 // TODO: make sure line height is added in USWDS accordion component and that
 // list styles don't override accordion styles
 #main-content { // scss-lint:disable IdSelector
-  .usa-accordion-button {
+  .usa-accordion__button {
     line-height: 1;
   }
 }
@@ -649,7 +649,7 @@ body {
     }
   }
 
-  .usa-footer-secondary_section {
+  .usa-footer__secondary-section {
     @include u-padding-y(2);
     background-color: color('base-lightest');
 
@@ -701,7 +701,7 @@ body {
     width: units(5);
   }
 
-  .usa-media_block {
+  .usa-media-block {
     clear: both;
     line-height: line-height('ui', 3);
     margin-top: units(2.5);
@@ -1390,7 +1390,7 @@ code {
   }
 }
 
-.usa-accordion-docs {
+.usa-accordion__docs {
   margin-bottom: units(7);
 }
 
@@ -1424,8 +1424,8 @@ code {
 // Homepage styles --------------------- //
 
 .page-home {
-  .usa-graphic_list {
-    .usa-media_block-body {
+  .usa-graphic-list {
+    .usa-media-block__body {
       // scss-lint:disable SelectorDepth
       > *:first-child {
         @include u-font('heading', $media-block-header-font-size);
@@ -1439,7 +1439,7 @@ code {
       }
     }
 
-    .usa-media_block-img {
+    .usa-media-block__img {
       margin-bottom: units(1);
       margin-right: units(2.5);
       max-width: units(9);
@@ -1454,14 +1454,14 @@ code {
     background-image: url('#{$site-image-path}/home/wds-home-new-2x.png');
   }
 
-  .usa-hero-callout {
+  .usa-hero__callout {
     border-radius: border-radius('md');
   }
 
   // Override for 4x1 media grid when it collapses to 2x2
   @media screen and (max-width: units('desktop')) and (min-width: units('tablet')) {
     // scss-lint:disable SelectorDepth
-    .usa-graphic_list .usa-graphic_list-row .usa-media_block:nth-child(-n+2) {
+    .usa-graphic-list .usa-graphic-list__row .usa-media-block:nth-child(-n+2) {
       margin-bottom: units(8);
     }
   }
@@ -2149,11 +2149,11 @@ li {
 }
 
 p + .usa-accordion,
-h2 + div:not(.usa-accordion-content),
-h3 + div:not(.usa-accordion-content),
-h4 + div:not(.usa-accordion-content),
-h5 + div:not(.usa-accordion-content),
-h6 + div:not(.usa-accordion-content) {
+h2 + div:not(.usa-accordion__content),
+h3 + div:not(.usa-accordion__content),
+h4 + div:not(.usa-accordion__content),
+h5 + div:not(.usa-accordion__content),
+h6 + div:not(.usa-accordion__content) {
   margin-top: units(2);
 }
 
@@ -2182,7 +2182,7 @@ h6 + div:not(.usa-accordion-content) {
       background-color: color('blue-warm-60v');
     }
   }
-  .usa-button-outline-inverse {
+  .usa-button--outline-inverse {
     background-color: transparent;
     &:hover {
       background-color: transparent;
@@ -2282,7 +2282,7 @@ h6 + div:not(.usa-accordion-content) {
       color: color('white');
     }
 
-    .usa-logo-text {
+    .usa-logo__text {
       &::before {
         background-image: url('../img/uswds-logo/4c-lg-on-black.png');
         background-image: url('../img/uswds-logo/4c-lg-on-black.svg');

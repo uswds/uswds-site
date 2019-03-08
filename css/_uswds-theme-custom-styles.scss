@@ -1622,6 +1622,7 @@ code {
 // Demo fixed footer
 .demo-footer {
   @include add-knockout-font-smoothing;
+  @include u-margin-y(1);
   background-color: color('gray-cool-80');
   // TODO: figure this out
   box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.5); // scss-lint:disable ColorVariable

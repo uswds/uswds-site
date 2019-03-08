@@ -80,6 +80,7 @@ $site-background-color: 'gray-2';
 
 body {
   @include u-bg($site-background-color);
+
   &.layout-demo {
     @include u-bg('white');
   }

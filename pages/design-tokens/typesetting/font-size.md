@@ -23,7 +23,7 @@ Please see the [Typesetting]({{ site.baseurl }}/design-tokens/typesetting){:.tex
 The following chart shows the USWDS default settings for the nine theme size tokens. Customize the output to your project needs in `$uswds-theme-typography.scss` by setting the variables listed below. If your project requires more than nine sizes, use [system size tokens](#system-tokens) as needed.
 
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Token</th>
@@ -77,7 +77,7 @@ The following chart shows the USWDS default settings for the nine theme size tok
 ## System tokens
 
 <div class="site-table-wrapper overflow-hidden">
-  <table class="usa-table-borderless site-table-responsive width-full">
+  <table class="usa-table--borderless site-table-responsive width-full">
     <thead>
       <tr>
         <th scope="col">Token</th>
@@ -128,7 +128,7 @@ The following chart shows the USWDS default settings for the nine theme size tok
 Your context and coding style determine how you access USWDS font size tokens in code. Because of [font size normalization]({{ site.baseurl }}/design-tokens/typesetting/), font size functions, utilities, and mixins also require a [family]({{ site.baseurl }}/design-tokens/typesetting/font-family/){:.token} token.
 
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Context</th>

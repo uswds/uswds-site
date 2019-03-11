@@ -27,15 +27,15 @@ If you have a new implementation to add to this list, please [open an issue] or 
 {% assign latest = site.data.releases | first %}
 {% capture latest_version %}<a href="{{ site.baseurl }}/whats-new/releases/#version-{{ latest.name | slugify }}">{{ latest.name }}</a>{% endcapture %}
 
-<div class="usa-alert usa-alert-warning">
-  <div class="usa-alert-body">
-    <h3 class="usa-alert-heading">Heads up</h3>
-    <p class="usa-alert-text">Some of the implementations listed here are not affiliated or endorsed, and have not been tested, by the Design System team. Use them at your own discretion.</p>
+<div class="usa-alert usa-alert--warning">
+  <div class="usa-alert__body">
+    <h3 class="usa-alert__heading">Heads up</h3>
+    <p class="usa-alert__text">Some of the implementations listed here are not affiliated or endorsed, and have not been tested, by the Design System team. Use them at your own discretion.</p>
   </div>
 </div>
 
 <div class="site-table-wrapper margin-top-4">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col">Name</th>

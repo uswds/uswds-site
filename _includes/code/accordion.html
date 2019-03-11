@@ -1,7 +1,7 @@
-<div class="usa-accordion-bordered usa-code-sample">
+<div class="usa-accordion usa-accordion--bordered usa-code-sample">
   {% assign _id = include.component | prepend: 'code-' %}
-  <button class="usa-accordion-button" aria-controls="{{ _id }}">Code</button>
-  <div id="{{ _id }}" class="usa-accordion-content">
+  <button class="usa-accordion__button" aria-controls="{{ _id }}">Code</button>
+  <div id="{{ _id }}" class="usa-accordion__content">
     {% include code/syntax.html component=include.component %}
   </div>
 </div>

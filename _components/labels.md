@@ -11,12 +11,12 @@ lead: Labels draw attention to new or important content.
 
 {% include code/preview.html component="labels" %}
 {% include code/accordion.html component="labels" %}
-<div class="usa-accordion-bordered">
-  <button class="usa-button-unstyled usa-accordion-button"
+<div class="usa-accordion usa-accordion--bordered">
+  <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="label-docs">
     Documentation
   </button>
-  <div id="label-docs" aria-hidden="false" class="usa-accordion-content usa-prose">
+  <div id="label-docs" aria-hidden="false" class="usa-accordion__content usa-prose">
     <h4 class="usa-heading">Accessibility</h4>
     <p>When labels are used to call out new content that is dynamically loaded onto a page, be sure to use ARIA live regions to alert screen readers of the change.</p>
 

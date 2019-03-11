@@ -9,12 +9,12 @@ lead: Icons communicate meaning in a graphical user interface.
 
 The Design System uses a subset of [Font Awesome](https://fontawesome.com/) icons on the project. They are available for use in `src/img`. If you need additional icons, use [Font Awesome](https://fontawesome.com/) in your project.
 
-<div class="usa-accordion-bordered">
-  <button class="usa-button-unstyled usa-accordion-button"
+<div class="usa-accordion usa-accordion--bordered">
+  <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="icons-docs">
     Documentation
   </button>
-  <div id="icons-docs" aria-hidden="false" class="usa-accordion-content usa-prose">
+  <div id="icons-docs" aria-hidden="false" class="usa-accordion__content usa-prose">
     <h4 class="usa-heading">Implementation</h4>
     <p>Use the Design System icons available in <code>src/img</code> or <a href="https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css">add Font Awesome to your project</a>. This project uses icons in two ways:</p>
     <ul>

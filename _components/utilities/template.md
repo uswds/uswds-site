@@ -36,9 +36,9 @@ lead: Utility dek
     </section>
     <section class="utility-examples">
 
-      <div class="usa-accordion-bordered usa-code-sample margin-top-4 margin-bottom-1">
-        <button class="usa-accordion-button" aria-controls="code-flex" aria-expanded="true">Code</button>
-        <div id="code-flex" class="usa-accordion-content">
+      <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4 margin-bottom-1">
+        <button class="usa-accordion__button" aria-controls="code-flex" aria-expanded="true">Code</button>
+        <div id="code-flex" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
 ```html
 <div class="display-block border-1px ...">.display-block</div>

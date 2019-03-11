@@ -8,12 +8,12 @@ lead: Three text fields are the easiest way for users to enter most dates.
 
 {% include code/preview.html component="date-input" %}
 {% include code/accordion.html component="date-input" %}
-<div class="usa-accordion-bordered">
-  <button class="usa-button-unstyled usa-accordion-button"
+<div class="usa-accordion usa-accordion--bordered">
+  <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="date-input-docs">
     Documentation
   </button>
-  <div id="date-input-docs" aria-hidden="false" class="usa-accordion-content usa-prose">
+  <div id="date-input-docs" aria-hidden="false" class="usa-accordion__content usa-prose">
     <h4 class="usa-heading">Implementation</h4>
       <p>Currently, the max limit for the year input is set to 2000, but it should be changed depending on the context of the form.</p>
     <h4 class="usa-heading">Accessibility</h4>

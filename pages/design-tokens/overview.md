@@ -111,7 +111,7 @@ Use design tokens directly to set the value of settings variables in USWDS theme
 
 ### Color
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col" class="tablet:maxw-card-lg">Token</th>
@@ -237,7 +237,7 @@ Use design tokens directly to set the value of settings variables in USWDS theme
 
 ### Spacing units
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col" class="tablet:maxw-card-lg">Token</th>
@@ -344,7 +344,7 @@ Use design tokens directly to set the value of settings variables in USWDS theme
 
 ### Font size
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col" class="tablet:maxw-card-lg">Token</th>
@@ -449,7 +449,7 @@ Use design tokens directly to set the value of settings variables in USWDS theme
 
 ### Font family
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col" class="tablet:maxw-card-lg">Token</th>
@@ -553,7 +553,7 @@ Use design tokens directly to set the value of settings variables in USWDS theme
 
 ### Font family and size together
 <div class="site-table-wrapper">
-  <table class="usa-table-borderless site-table-responsive">
+  <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
         <th scope="col" class="tablet:maxw-card-lg">Token</th>

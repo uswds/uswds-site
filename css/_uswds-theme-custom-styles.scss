@@ -745,7 +745,7 @@ body {
   padding: units($theme-site-margins-width);
   border: units(1px) solid color('base-lightest');
 
-  .usa-background-dark {
+  .usa-dark-background {
     @include u-padding-x(1);
     display: inline-block;
   }

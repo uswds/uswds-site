@@ -216,7 +216,7 @@ utilities:
       </div>
       {% endfor %}
 
-      <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4 margin-bottom-1">
+      <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4 margin-bottom-1">
         <button class="usa-accordion__button" aria-controls="code-flex" aria-expanded="true">Code</button>
         <div id="code-flex" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
@@ -319,7 +319,7 @@ utilities:
       </div>
     {% endfor %}
 
-    <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4 margin-bottom-1">
+    <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4 margin-bottom-1">
       <button class="usa-accordion__button" aria-controls="code-flex-direction" aria-expanded="true">Code</button>
       <div id="code-flex-direction" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
@@ -378,7 +378,7 @@ utilities:
       </div>
     {% endfor %}
 
-    <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4 margin-bottom-1">
+    <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4 margin-bottom-1">
       <button class="usa-accordion__button" aria-controls="code-flex-wrap" aria-expanded="true">Code</button>
       <div id="code-flex-wrap" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
@@ -438,7 +438,7 @@ utilities:
         </div>
     {% endfor %}
 
-    <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4 margin-bottom-1">
+    <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4 margin-bottom-1">
       <button class="usa-accordion__button" aria-controls="code-flex-align" aria-expanded="true">Code</button>
       <div id="code-flex-align" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
@@ -497,7 +497,7 @@ utilities:
         {% endfor %}
         </div>
 
-    <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4 margin-bottom-1">
+    <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4 margin-bottom-1">
       <button class="usa-accordion__button" aria-controls="code-flex-justify" aria-expanded="true">Code</button>
       <div id="code-flex-justify" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
@@ -533,7 +533,7 @@ utilities:
       {% endfor %}
     </div>
 
-    <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4 margin-bottom-1">
+    <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4 margin-bottom-1">
       <button class="usa-accordion__button" aria-controls="code-order" aria-expanded="true">Code</button>
       <div id="code-order" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">

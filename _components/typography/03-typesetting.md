@@ -11,7 +11,7 @@ order: 03
 
 {% include code/preview.html component="typesetting" %}
 {% include code/accordion.html component="typesetting" %}
-<div class="usa-accordion usa-accordion--bordered usa-accordion__docs">
+<div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="typesetting-docs">
     Documentation

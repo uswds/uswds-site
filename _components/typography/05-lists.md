@@ -11,7 +11,7 @@ order: 05
 
 {% include code/preview.html component="lists" classes="preview-lists" %}
 {% include code/accordion.html component="lists" %}
-<div class="usa-accordion usa-accordion--bordered usa-accordion__docs">
+<div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="list-docs">
     Documentation

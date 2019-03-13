@@ -7,7 +7,7 @@ lead: Text inputs allow people to enter any combination of letters, numbers, or 
 
 {% include code/preview.html component="text-input" %}
 {% include code/accordion.html component="text-input" %}
-<div class="usa-accordion usa-accordion--bordered usa-accordion__docs">
+<div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="text-input-docs">
     Documentation

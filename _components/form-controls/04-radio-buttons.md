@@ -7,7 +7,7 @@ lead: Radio buttons allow users to see all available choices at once and select 
 
 {% include code/preview.html component="radio-buttons" %}
 {% include code/accordion.html component="radio-buttons" %}
-<div class="usa-accordion usa-accordion--bordered usa-accordion__docs">
+<div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="radio-docs">
     Documentation

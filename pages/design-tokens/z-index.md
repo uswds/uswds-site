@@ -13,7 +13,7 @@ subnav:
 ---
 
 ## Z-index tokens
-<div class="position-relative z-bottom">
+<div class="position-relative z-0">
   <div class="bg-white radius-md border padding-x-1 tablet:padding-x-2 padding-top-1 padding-bottom-2 font-mono-3 position-relative z-bottom">
     <div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px text-bold">
       <div class="grid-col-fill text-700 font-sans-1">Token</div>

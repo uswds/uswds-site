@@ -13,7 +13,7 @@ lead: Stating validation requirements up front, with live feedback, means users 
       aria-expanded="true" aria-controls="validation-docs">
     Documentation
   </button>
-  <div id="validation-docs" aria-hidden="false" class="usa-accordion__content usa-prose">
+  <div id="validation-docs" aria-hidden="false" class="usa-accordion__content usa prose site-prose">
     <h4 class="usa-heading">Implementation</h4>
     <p>The validation component is intended primarily for usability, not as a robust security solution, since all the validation logic occurs on the client-side. The validation should be "mirrored" on the server-side for security purposes.</p>
     <h4 class="usa-heading">Guidance</h4>

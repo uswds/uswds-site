@@ -93,7 +93,7 @@ body {
   text-align: center;
 }
 
-.usa-prose {
+.usa prose site-prose {
   @include typeset('lang');
 }
 
@@ -2615,4 +2615,51 @@ $theme-table-column-gap: 4;
 .site-accordion-docs,
 .site-accordion-code {
   @include typeset('lang');
+}
+
+.site-prose {
+  @include typeset('lang');
+
+  p + * {
+    margin-top: 1em;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h5 {
+    @extend %header-margin;
+    color: color('ink');
+    margin: 0;
+  }
+
+  h4 {
+    @include typeset('lang', lg, 2);
+    font-weight: fw('light');
+  }
+}
+
+%header-margin {
+  * + & {
+    margin-top: 2em;
+  }
+  & + * {
+    margin-top: 1em;
+  }
+}
+
+.usa-accordion--bordered .usa-accordion__content {
+  padding-bottom: units(3);
+  padding-left: units(2);
+  padding-top: units(3);
+}
+
+.usa-content-list {
+  @include unstyled-list;
+  li {
+    border-top: 1px solid color('base-lighter');
+    margin-top: units(1);
+    padding-top: units(1);
+  }
 }

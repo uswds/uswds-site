@@ -16,7 +16,7 @@ lead: Accordions are a list of headers that can be clicked to hide or reveal add
     aria-expanded="true" aria-controls="documentation">
     Documentation
   </button>
-  <div id="documentation" class="usa-accordion__content usa-prose">
+  <div id="documentation" class="usa-accordion__content usa prose site-prose">
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>

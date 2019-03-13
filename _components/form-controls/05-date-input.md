@@ -13,7 +13,7 @@ lead: Three text fields are the easiest way for users to enter most dates.
       aria-expanded="true" aria-controls="date-input-docs">
     Documentation
   </button>
-  <div id="date-input-docs" aria-hidden="false" class="usa-accordion__content usa-prose">
+  <div id="date-input-docs" aria-hidden="false" class="usa-accordion__content usa prose site-prose">
     <h4 class="usa-heading">Implementation</h4>
       <p>Currently, the max limit for the year input is set to 2000, but it should be changed depending on the context of the form.</p>
     <h4 class="usa-heading">Accessibility</h4>

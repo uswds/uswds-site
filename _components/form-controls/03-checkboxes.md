@@ -13,7 +13,7 @@ lead: Checkboxes allow users to select one or more options from a visible list.
       aria-expanded="true" aria-controls="checkbox-docs">
     Documentation
   </button>
-  <div id="checkbox-docs" aria-hidden="false" class="usa-accordion__content usa-prose">
+  <div id="checkbox-docs" aria-hidden="false" class="usa-accordion__content usa prose site-prose">
     <h4 class="usa-heading">Accessibility</h4>
     <p>If you customize the text inputs, ensure they continue to meet the the <a href="{{ site.baseurl }}/form-controls/"> accessibility requirements that apply to all form controls.</a></p>
     <ul class="usa-content-list">

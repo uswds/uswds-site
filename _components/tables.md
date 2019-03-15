@@ -16,7 +16,7 @@ lead: Tables show tabular data in columns and rows.
       aria-expanded="true" aria-controls="table-docs">
     Documentation
   </button>
-  <div id="table-docs" aria-hidden="false" class="usa-accordion__content usa prose site-prose">
+  <div id="table-docs" aria-hidden="false" class="usa-accordion__content usa-prose site-prose">
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>Simple tables can have two levels of headers. Each header cell should have <code>scope=<wbr>"col"</code> or <code>scope=<wbr>"row"</code>.</li>

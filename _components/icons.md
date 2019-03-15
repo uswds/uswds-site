@@ -14,7 +14,7 @@ The Design System uses a subset of [Font Awesome](https://fontawesome.com/) icon
       aria-expanded="true" aria-controls="icons-docs">
     Documentation
   </button>
-  <div id="icons-docs" aria-hidden="false" class="usa-accordion__content usa prose site-prose">
+  <div id="icons-docs" aria-hidden="false" class="usa-accordion__content usa-prose site-prose">
     <h4 class="usa-heading">Implementation</h4>
     <p>Use the Design System icons available in <code>src/img</code> or <a href="https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css">add Font Awesome to your project</a>. This project uses icons in two ways:</p>
     <ul>

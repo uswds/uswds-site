@@ -14,9 +14,9 @@ lead: Alerts keep users informed of important and sometimes time-sensitive chang
 <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="alert-docs">
-    Documentation
+    Usage
   </button>
-  <div id="alert-docs" aria-hidden="false" class="usa-accordion__content usa prose site-prose">
+  <div id="alert-docs" aria-hidden="false" class="usa-accordion__content usa-prose site-prose">
     <h4>When to use the alert component</h4>
     <ul class="usa-content-list">
       <li><strong>System status messages.</strong> As a notification that keeps people informed of the status of the system and which may or may not require the user to respond. This includes errors, warnings, and general updates.</li>

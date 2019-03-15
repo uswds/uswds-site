@@ -42,10 +42,10 @@ subnav:
           </td>
           <td data-title="Example" class="overflow-hidden">
             <div>
-              <div class="measure-{{ item.token }} font-sans-1">
+              <div class="measure-{{ item.token }} font-lang-1">
                 <strong>1</strong> c e g i k m o q s u w y <strong>2</strong> c e g i k m o q s u w y <strong>3</strong> c e g i k m o q s u w y <strong>4</strong> c e g i k m o q s u w y <strong>5</strong> c e g i k m o q s u w y <strong>6</strong> c e g i k m o q s u w y <strong>7</strong> c e g i k m o q s u w y <strong>8</strong> c e g i k m o q s u w y <strong>9</strong> c e g i k m o q s u w y
               </div>
-              <div class="font-sans-1 measure-{{ item.token }} margin-top-2">
+              <div class="font-lang-1 measure-{{ item.token }} margin-top-2">
                 You never see a frog so modest and straightforward as he was, for all he was so gifted. And when it come to fair and square jumping on a dead level, he could get over more ground at one straddle than any animal of his breed you ever see. Jumping on a dead level was his strong suit, you understand; and when it come to that, Smiley would ante up money on him as long as he had a red. Smiley was monstrous proud of his frog, and well he might be, for fellers that had traveled and been everywheres, all said he laid over any frog that ever they see.
               </div>
             </div>

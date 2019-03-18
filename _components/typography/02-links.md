@@ -18,8 +18,8 @@ lead: "Links connect users to a different page or further information."
       aria-expanded="true" aria-controls="link-docs">
     Documentation
   </button>
-  <div id="link-docs" class="usa-accordion__content usa-prose site-prose">
-    <h4 class="usa-heading">Accessibility</h4>
+  <div id="link-docs" class="usa-accordion__content site-component-usage">
+    <h4>Accessibility</h4>
     <ul class="usa-content-list">
       <li>Users should be able to tab to navigate between links.</li>
       <li>Users should be able to activate a link when pressing ‘Enter’ on their keyboard.</li>

@@ -2861,3 +2861,27 @@ $theme-table-column-gap: 4;
     @include typeset('lang', '2xs', 2);
   }
 }
+
+.site-banner {
+  @include typeset('lang');
+
+  .usa-accordion {
+    @include typeset('lang');
+  }
+
+  .usa-banner__header-text,
+  .usa-banner__header-action,
+  .usa-banner__button {
+    @include typeset('lang', 1, 2);
+  }
+
+  .usa-banner__content {
+    @include typeset('lang', 'xs', 5);
+
+    p {
+      line-height: lh('lang', 5);
+    }
+  }
+
+
+}

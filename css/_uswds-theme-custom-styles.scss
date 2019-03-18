@@ -14,7 +14,7 @@ $theme-site-cols-split: 'tablet';
 $theme-site-cols-show: 'desktop';
 $theme-grid-gap-default: 'md';
 
-$site-measure: 5;
+$site-measure: 4;
 
 @mixin grid-cols($default, $split: null, $full: null) {
   @if $default != null {
@@ -2667,6 +2667,7 @@ $theme-table-column-gap: 4;
 
     .usa-content-list {
       padding-left: 0;
+      max-width: measure($site-measure);
     }
 
     li,

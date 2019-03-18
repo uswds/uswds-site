@@ -2819,3 +2819,45 @@ $theme-table-column-gap: 4;
     @include typeset('lang', null, 1);
   }
 }
+
+.site-header {
+  @include typeset('lang');
+
+  .usa-menu-btn {
+    font-size: fs('lang', '3xs');
+  }
+}
+
+.site-nav {
+  @include typeset('lang');
+
+  .usa-accordion {
+    @include typeset('lang');
+  }
+
+  .usa-nav__close {
+    @include add-background-svg('close-blue-60v-alt');
+    @include u-square(6);
+    background-color: color('base-lightest');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: units(2);
+  }
+
+  .usa-nav__link {
+    &[aria-expanded=true] {
+      @include add-background-svg('minus-thin-ink');
+    }
+    &[aria-expanded=false] {
+      @include add-background-svg('plus-thin-ink');
+    }
+  }
+
+  .usa-nav__primary button {
+    line-height: lh('lang', 2);
+  }
+
+  .usa-nav__submenu-item {
+    @include typeset('lang', '2xs', 2);
+  }
+}

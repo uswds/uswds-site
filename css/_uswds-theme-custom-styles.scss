@@ -14,7 +14,7 @@ $theme-site-cols-split: 'tablet';
 $theme-site-cols-show: 'desktop';
 $theme-grid-gap-default: 'md';
 
-$site-max-width: 74ex;
+$site-measure: 5;
 
 @mixin grid-cols($default, $split: null, $full: null) {
   @if $default != null {
@@ -2640,7 +2640,7 @@ $theme-table-column-gap: 4;
   & > {
     p {
       line-height: lh('lang', 5);
-      max-width: $site-max-width;
+      max-width: measure($site-measure);
     }
 
     p + * {
@@ -2673,7 +2673,7 @@ $theme-table-column-gap: 4;
     ul li,
     ol li {
       line-height: lh('lang', 5);
-      max-width: $site-max-width;
+      max-width: measure($site-measure);
     }
   }
 }
@@ -2696,7 +2696,7 @@ $theme-table-column-gap: 4;
     border-top: 1px solid color('base-lighter');
     margin-top: units(1);
     padding-top: units(1);
-    max-width: $site-max-width;
+    max-width: measure($site-measure);
 
     ul {
       list-style-type: disc;
@@ -2705,7 +2705,7 @@ $theme-table-column-gap: 4;
 
     li {
       margin-top: units(0.5);
-      max-width: calc($site-max-width - units(3));
+      max-width: calc(measure($site-measure) - units(3));
     }
   }
 

@@ -2680,7 +2680,7 @@ $theme-table-column-gap: 4;
 }
 
 .site-text-intro {
-  @include typeset('lang', 'lg', 4)
+  @include typeset('lang', 'lg', 4);
   font-weight: fw('light');
   margin-top: units(1);
 }

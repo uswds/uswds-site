@@ -22,7 +22,7 @@ component_url: 'https://components.designsystem.digital.gov/components/detail/bu
     <div id="accordion-bordered-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
       <h4>When to use the button component</h4>
       <ul class="usa-content-list">
-        <li>Use buttons for the most important actions you want users to take on your site, such as "download," "sign up," or "log out."</li>
+        <li>Use buttons for the most important actions you want users to take on your site, such as <code>Download</code>, <code>Sign up</code> or <code>Log out</code>.</li>
       </ul>
       <h4>When to consider something else</h4>
       <ul class="usa-content-list">
@@ -31,15 +31,15 @@ component_url: 'https://components.designsystem.digital.gov/components/detail/bu
       </ul>
       <h4>Usability guidance</h4>
       <ul class="usa-content-list">
-        <li><strong>Use primary buttons for actions that go a next step.</strong></li>
-        <li><strong>Use secondary buttons for actions that happen on the current page.</strong></li>
+        <li><strong>Use standard buttons for actions that go a next step.</strong></li>
+        <li><strong>Use outline buttons for actions that happen on the current page.</strong></li>
         <li><strong>Give an important action a distinctive style.</strong> Style the button most users should click in a way that distinguishes it from other buttons on the page. Try using the <code>usa-button--big</code> variant or the most visually distinct color variant.</li>
         <li><strong>Make sure buttons look clickable.</strong> Use color variations to distinguish static, hover, and active states.</li>
         <li><strong>Avoid using too many buttons on a page.</strong></li>
         <li><strong>Use sentence case for button labels.</strong></li>
-        <li><strong>Keep button text short.</strong> Button text should be as short as possible with action words that clearly explain what will happen when the button is selected (for example, “download,” “view” or “sign up”).</li>
-        <li><strong>Lead with a verb.</strong> Make the first word of the button’s text a verb. For example, instead of “Complaint Filing” label the button “File a complaint.”</li>
-        <li><strong>Icons can also be helpful.</strong> At times, consider adding an icon to signal specific actions (“download”, “open in a new window”, etc). </li>
+        <li><strong>Keep button text short.</strong> Button text should be as short as possible with action words that clearly explain what will happen when the button is selected (for example, <code>Download</code>, <code>View</code> or <code>Sign up</code>).</li>
+        <li><strong>Lead with a verb.</strong> Make the first word of the button’s text a verb. For example, instead of <code>Complaint filing</code> label the button <code>File a complaint</code>.</li>
+        <li><strong>Icons can also be helpful.</strong> At times, consider adding an icon to signal specific actions (<code>Download</code>, <code>Open in a new window</code>, etc). </li>
       </ul>
     <h4 class="usa-heading">Accessibility</h4>
       <ul class="usa-content-list">

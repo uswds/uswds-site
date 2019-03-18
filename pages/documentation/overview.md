@@ -9,7 +9,7 @@ lead: The U.S. Web Design System provides design guidelines and code to help you
 <div class="grid-row grid-gap flex-align-stretch margin-top-4">
   <div class="tablet:grid-col display-flex flex-align-stretch">
     <div class="site-docs-card-link">
-      <h3 class="font-sans-lg margin-0">
+      <h3 class="font-lang-lg margin-0">
         <a href="{{ site.baseurl }}/getting-started/developers/" class="text-no-underline text-blue-warm-50v hover:text-underline block-link">Developers</a>
       </h3>
       <p class="margin-top-1">Get started with our code base by downloading the code as a zip file, or installing with npm.</p>

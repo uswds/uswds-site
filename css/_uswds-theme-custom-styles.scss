@@ -632,6 +632,7 @@ body {
 // Footer --------------- //
 
 .site-footer {
+  @include typeset('lang');
   clear: both;
 
   h3 {
@@ -679,6 +680,10 @@ body {
 }
 
 .footer-content {
+  h3 {
+    @include typeset('lang', 'lg', 2);
+    margin: 0;
+  }
   p {
     max-width: measure(4);
   }
@@ -2806,5 +2811,11 @@ $theme-table-column-gap: 4;
   }
   & + * {
     margin-top: 1em;
+  }
+}
+
+.site-button-list {
+  .usa-button {
+    @include typeset('lang', null, 1);
   }
 }

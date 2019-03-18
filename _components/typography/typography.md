@@ -31,7 +31,6 @@ subnav:
 - **Font size tokens:**
   - Use tokens between [font-size 5]({{ site.baseurl }}/design-tokens/typesetting/font-size/){:.token} and [font-size 8]({{ site.baseurl }}/design-tokens/typesetting/font-size/){:.token} for most running text.
   - Tokens smaller than [font-size 5]({{ site.baseurl }}/design-tokens/typesetting/font-size/){:.token} should be used more sparingly — for shorter companion text like captions, footnotes, photo credits, or specialized UI.
-- **Font size utilities:** See the [Font size and family]({{ site.baseurl }}/utilities/font-size-and-family/) utilities section for more detail.
 
 ### Text alignment
 While right-aligned, centered, and justified text have their place, most websites benefit from a consistent use of left-aligned text. Justified text, common in print, does not yet display well enough in a web browser to be considered a best practice.

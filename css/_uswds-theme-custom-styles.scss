@@ -2736,8 +2736,23 @@ $theme-table-column-gap: 4;
 
 .site-accordion-code {
   .usa-accordion__button {
+    @include add-background-svg('minus-thin-white');
     background-color: color('primary-vivid');
     color: color('white');
+
+    &[aria-expanded=false] {
+      @include add-background-svg('plus-thin-white');
+    }
+  }
+}
+
+.site-accordion-docs {
+  .usa-accordion__button {
+    @include add-background-svg('minus-thin-ink');
+
+    &[aria-expanded=false] {
+      @include add-background-svg('plus-thin-ink');
+    }
   }
 }
 

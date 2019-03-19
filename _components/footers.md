@@ -1,12 +1,13 @@
 ---
-permalink: /components/footers/
+permalink: /components/footer/
 redirect_from:
 - /footers/
+- /components/footers/
 layout: styleguide
 type: component
-title: Footers
+title: Footer
 category: Components
-lead: Footers serve site visitors who arrive at the bottom of a page without finding what they want.
+lead: A footer serves site visitors who arrive at the bottom of a page without finding what they want.
 subnav:
 - text: Big footer
   href: '#big-footer'

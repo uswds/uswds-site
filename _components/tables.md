@@ -1,12 +1,13 @@
 ---
-permalink: /components/tables/
+permalink: /components/table/
 redirect_from:
 - /tables/
+- /components/tables/
 layout: styleguide
 type: element
-title: Tables
+title: Table
 category: Components
-lead: Tables show tabular data in columns and rows.
+lead: A table shows tabular data in columns and rows.
 ---
 
 {% include code/preview.html component="tables" %}

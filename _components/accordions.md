@@ -1,12 +1,13 @@
 ---
-permalink: /components/accordions/
+permalink: /components/accordion/
 redirect_from:
 - /accordions/
+- /components/accordions/
 layout: styleguide
 type: component
-title: Accordions
+title: Accordion
 category: Components
-lead: Accordions are a list of headers that hide or reveal additional content when selected.
+lead: An accordion is a list of headers that hide or reveal additional content when selected.
 ---
 
 {% include code/preview.html component="accordion" %}

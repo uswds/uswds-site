@@ -1,12 +1,13 @@
 ---
-permalink: /components/alerts/
+permalink: /components/alert/
 redirect_from:
 - /alerts/
+- /components/alerts/
 layout: styleguide
 type: component
-title: Alerts
+title: Alert
 category: Components
-lead: Alerts keep users informed of important and sometimes time-sensitive changes.
+lead: An alert keeps users informed of important and sometimes time-sensitive changes.
 ---
 
 {% include code/preview.html component="alerts" %}

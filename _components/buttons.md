@@ -1,10 +1,11 @@
 ---
-permalink: /components/buttons/
+permalink: /components/button/
 redirect_from:
 - /buttons/
+- /components/buttons/
 layout: styleguide
 type: element
-title: Buttons
+title: Button
 category: Components
 lead: Use buttons to signal actions.
 component_url: 'https://components.designsystem.digital.gov/components/detail/buttons.html'

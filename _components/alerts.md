@@ -40,8 +40,8 @@ lead: An alert keeps users informed of important and sometimes time-sensitive ch
       </ul>
       <h4>Accessibility</h4>
       <ul class="usa-content-list">
-        <li>If the message is not interactive, use the ARIA <code>role=<wbr>"alert"</code> to inform assistive technologies of a time-sensitive and important message. If the message is interactive, use the use the ARIA <code>role=<wbr>"alertdialog"</code> instead.</li>
-        <li>Do not visually hide alert messages on the page and then make them visible when they are needed. Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.</li>
+        <li><strong>Use the proper ARIA role.</strong> If the message is not interactive, use the ARIA <code>role=<wbr>"alert"</code> to inform assistive technologies of a time-sensitive and important message. If the message is interactive, use the use the ARIA <code>role=<wbr>"alertdialog"</code> instead.</li>
+        <li><strong>Don’t visually hide alert messages and then make them visible when they are needed.</strong> Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.</li>
       </ul>
     </div>
   </div>

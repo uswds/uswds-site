@@ -28,13 +28,13 @@ subnav:
     <div id="footer-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
       <h4>When to use the footer component</h4>
       <ul class="usa-content-list">
-        <li><strong>Big footer.</strong> Use the big footer when you want to replicate your site’s navigation scheme in the footer and offer newsletter signups.</li>
-        <li><strong>Medium footer.</strong> Use the medium footer when you want to offer only a few footer links (for disclaimers, terms of service, etc.), social media icons, and contact information.</li>
-        <li><strong>Slim footer.</strong> Use the slim footer when you only want to offer a few footer links and nothing else.</li>
+        <li><strong>Big footer:</strong> Use the big footer when you want to replicate your site’s navigation scheme in the footer and offer newsletter signups.</li>
+        <li><strong>Medium footer:</strong> Use the medium footer when you want to offer only a few footer links (for disclaimers, terms of service, etc.), social media icons, and contact information.</li>
+        <li><strong>Slim footer:</strong> Use the slim footer when you only want to offer a few footer links and nothing else.</li>
       </ul>
       <h4>When to consider something else</h4>
       <ul class="usa-content-list">
-        <li>Avoid using the medium and slim footers when your footer has more than five links.</li>
+        <li><strong>Medium and slim footers:</strong> Use the big footer when your footer has more than five links.</li>
       </ul>
       <h4>Usability guidance</h4>
       <ul class="usa-content-list">
@@ -46,11 +46,13 @@ subnav:
       </ul>
       <h4 class="usa-heading">Accessibility</h4>
       <ul class="usa-content-list">
-        <li>Code the navigation so that pressing the tab key moves focus from link to link in the navigation, even when the navigation has collapsed into an accordion.</li>
-        <li>On small screens: when collapsed into an accordion, the navigation should also meet the accessibility requirements outlined in the "Accordion" section.</li>
+        <li><strong>Use tab focus.</strong> Code the navigation so that pressing the tab key moves focus from link to link in the navigation, even when the navigation has collapsed into an accordion.</li>
+        <li><strong>Use accessible accordions.</strong> On small screens: when collapsed into an accordion, the navigation should also meet the accessibility requirements outlined in the "Accordion" section.</li>
       </ul>
       <h4 class="usa-heading">Implementation</h4>
-      <p>The social media icons used in the footer are from Font Awesome. To use additional icons, visit <a href="https://fontawesome.com/">Font Awesome</a>.</p>
+      <ul class="usa-content-list">
+        <li>The social media icons used in the footer are from Font Awesome. To use additional icons, visit <a href="https://fontawesome.com/">Font Awesome</a>.</li>
+      </ul>
     </div>
   </div>
 </section>

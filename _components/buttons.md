@@ -23,12 +23,12 @@ component_url: 'https://components.designsystem.digital.gov/components/detail/bu
     <div id="accordion-bordered-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
       <h4>When to use the button component</h4>
       <ul class="usa-content-list">
-        <li>Use buttons for the most important actions you want users to take on your site, such as <code>Download</code>, <code>Sign up</code> or <code>Log out</code>.</li>
+        <li><strong>Important actions.</strong> Use buttons for the most important actions you want users to take on your site, such as <code>Download</code>, <code>Sign up</code> or <code>Log out</code>.</li>
       </ul>
       <h4>When to consider something else</h4>
       <ul class="usa-content-list">
-        <li>If you want to lead users between pages of a website. Use links instead.</li>
-        <li>Less popular or less important actions may be visually styled as links.</li>
+        <li><strong>Linking between a site’s pages.</strong> Use regular links instead.</li>
+        <li><strong>If the action is less popular or less important.</strong> Less popular or less important actions may be visually styled as links.</li>
       </ul>
       <h4>Usability guidance</h4>
       <ul class="usa-content-list">

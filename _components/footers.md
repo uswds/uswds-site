@@ -17,38 +17,39 @@ subnav:
 ---
 
 {% include code/preview.html component="footers" %}
-{% include code/accordion.html component="footers" %}
-<div class="usa-accordion usa-accordion--bordered">
-  <button class="usa-button-unstyled usa-accordion__button"
-      aria-expanded="true" aria-controls="footer-docs">
-    Documentation
-  </button>
-  <div id="footer-docs" aria-hidden="false" class="usa-accordion__content usa-prose site-prose">
-    <h4 class="usa-heading">Implementation</h4>
-    <p>The social media icons used in the footer are from Font Awesome. To use additional icons, visit <a href="https://fontawesome.com/">Font Awesome</a>.</p>
-    <h4 class="usa-heading">Accessibility</h4>
-    <ul class="usa-content-list">
-      <li>Code the navigation so that pressing the tab key moves focus from link to link in the navigation, even when the navigation has collapsed into an accordion.</li>
-      <li>On small screens: when collapsed into an accordion, the navigation should also meet the accessibility requirements outlined in the "Accordion" section.</li>
-    </ul>
-    <h4 class="usa-heading">Usability</h4>
-    <h5>When to use</h5>
-    <ul class="usa-content-list">
-      <li>Use the big footer when you want to replicate your site’s navigation scheme in the footer and offer newsletter signups.</li>
-      <li>Use the medium footer when you want to offer only a few footer links (for disclaimers, terms of service, etc.), social media icons, and contact information.</li>
-      <li>Use the slim footer when you only want to offer a few footer links and nothing else.</li>
-    </ul>
-    <h5>When to consider something else</h5>
-    <ul class="usa-content-list">
-      <li>Avoid using the medium and slim footers when your footer has more than five links.</li>
-    </ul>
-    <h5>Guidance</h5>
-    <ul class="usa-content-list">
-      <li>Footer links should point to popular content that might answer a visitor’s remaining questions. Links to disclaimers and legal content sometimes need to be in the footer, but try to minimize “disclaimer bloat” wherever possible.</li>
-      <li>Link grouping in the footer does not have to mirror link grouping in top level header navigation (especially if the navigation offers many more links than the footer can).</li>
-      <li>Include the newsletter sign up if one of your website’s goals is getting visitors to sign up for a newsletter.</li>
-      <li>Link only to social media your agency updates frequently or uses to communicate with customers.</li>
-      <li>Important contact information should be limited to general email or phone numbers, which should be clickable links to dial from a mobile phone. Physical addresses should live on contact pages users can navigate to from the accordion links.</li>
-    </ul>
+<section class="site-component-section">
+  {% include code/accordion.html component="footers" %}
+  <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
+    <button class="usa-button-unstyled usa-accordion__button"
+        aria-expanded="true" aria-controls="footer-docs">
+      Usage
+    </button>
+    <div id="footer-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
+      <h4>When to use the footer component</h4>
+      <ul class="usa-content-list">
+        <li><strong>Big footer.</strong> Use the big footer when you want to replicate your site’s navigation scheme in the footer and offer newsletter signups.</li>
+        <li><strong>Medium footer.</strong> Use the medium footer when you want to offer only a few footer links (for disclaimers, terms of service, etc.), social media icons, and contact information.</li>
+        <li><strong>Slim footer.</strong> Use the slim footer when you only want to offer a few footer links and nothing else.</li>
+      </ul>
+      <h4>When to consider something else</h4>
+      <ul class="usa-content-list">
+        <li>Avoid using the medium and slim footers when your footer has more than five links.</li>
+      </ul>
+      <h4>Usability guidance</h4>
+      <ul class="usa-content-list">
+        <li><strong>Curate your footer.</strong> Footer links should point to popular content that might answer a visitor’s remaining questions. Links to disclaimers and legal content sometimes need to be in the footer, but try to minimize “disclaimer bloat” wherever possible.</li>
+        <li><strong>The footer doesn’t need to mirror the header.</strong> Link grouping in the footer does not have to mirror link grouping in top level header navigation (especially if the navigation offers many more links than the footer can).</li>
+        <li><strong>Include newsletter signup.</strong> Include the newsletter signup if one of your website’s goals is getting visitors to sign up for a newsletter.</li>
+        <li><strong>Avoid stale social media accounts.</strong> Link only to social media your agency updates frequently or uses to communicate with customers.</li>
+        <li><strong>Limit contact information to email and phone.</strong> Important contact information should be limited to general email or phone numbers, which should be clickable links to dial from a mobile phone. Physical addresses should live on contact pages users can navigate to from the accordion links.</li>
+      </ul>
+      <h4 class="usa-heading">Accessibility</h4>
+      <ul class="usa-content-list">
+        <li>Code the navigation so that pressing the tab key moves focus from link to link in the navigation, even when the navigation has collapsed into an accordion.</li>
+        <li>On small screens: when collapsed into an accordion, the navigation should also meet the accessibility requirements outlined in the "Accordion" section.</li>
+      </ul>
+      <h4 class="usa-heading">Implementation</h4>
+      <p>The social media icons used in the footer are from Font Awesome. To use additional icons, visit <a href="https://fontawesome.com/">Font Awesome</a>.</p>
+    </div>
   </div>
-</div>
+</section>

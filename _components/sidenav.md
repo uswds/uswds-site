@@ -18,7 +18,7 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
       Usage
     </button>
     <div id="sidenav-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
-      <h4>When to use the sidenav component</h4>
+      <h4>When to use the side navigation component</h4>
       <ul class="usa-content-list">
         <li>To display a navigational hierarchy with one to three levels.</li>
         <li>To display the “sub-navigation” within a section of the website.</li>

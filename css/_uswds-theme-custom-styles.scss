@@ -1129,6 +1129,7 @@ pre {
   @include u-font('mono', '3xs');
   // TODO: add more black-transparent values (1-5)
   background-color: rgba(0,0,0,.05);
+  font-weight: fw('normal');
 }
 
 pre {
@@ -2809,8 +2810,8 @@ $theme-table-column-gap: 4;
 
   h4 {
     @include typeset('lang', 'lg', 2);
-    color: color('ink');
-    font-weight: fw('light');
+    color: color('base-dark');
+    font-weight: fw('thin');
   }
 }
 

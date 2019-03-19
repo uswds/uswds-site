@@ -60,6 +60,7 @@ The above example creates three equal-width columns on tablet, desktop, and wide
 
 Breaking it down, here's how it works:
 
+{:.usa-content-list}
 - **Containers** `grid-container` centers the container and gives it a maximum width of `desktop` (1024px). If you would like the grid to span the full width of the page, do not use `grid-container`.
 
   `grid-container` can also accept any breakpoint width like `grid-container-tablet-lg` or `grid-container-widescreen`. Set the default max width with `$theme-site-max-width` in `uswds-theme-spacing.scss`.

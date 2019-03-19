@@ -27,17 +27,17 @@ lead: Checkboxes allow users to select one or more options from a visible list.
     </ul>
     <h4>Usability guidelines</h4>
     <ul class="usa-content-list">
-      <li>Users should be able to tap on or click on either the text label or the checkbox to select or deselect an option.</li>
-      <li>List options vertically if possible; horizontal listings can make it difficult to tell which label pertains to which checkbox.</li>
-      <li>Avoid using negative language in labels as they can be counterintuitive. For example, “I want to receive a promotional email” instead of “I don’t want to receive promotional email.”</li>
-      <li>If you customize, make sure selections are adequately spaced for touch screens.</li>
+      <li><strong>Make the label selectable.</strong> Users should be able to tap on or click on either the text label or the checkbox to select or deselect an option.</li>
+      <li><strong>List options vertically.</strong> Horizontal listings can make it difficult to tell which label pertains to which checkbox.</li>
+      <li><strong>Use positive statements.</strong> Negative language in labels can be counterintuitive. For example, use “I want to receive a promotional email” instead of “I don’t want to receive promotional email.”</li>
+      <li><strong>Use adequate touch targets.</strong> If you customize, make sure selections are adequately spaced for touch screens.</li>
     </ul>
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li><strong>Customize accessibly.</strong> If you customize the text inputs, ensure they continue to meet the the <a href="{{ site.baseurl }}/form-controls/"> accessibility requirements that apply to all form controls.</a></li>
-      <li>Surround a related set of checkboxes with a <code>&lt;fieldset&gt;</code>. The <code>&lt;legend&gt;</code> provides context for the grouping. Do not use fieldset and legend for a single check.</li>
-      <li>The custom checkboxes here are accessible to screen readers because the default checkboxes are moved off-screen with <code>position: absolute; left: -999em</code>.</li>
-      <li>Each input should have a semantic <code>id</code> attribute, and its corresponding label should have the same value in it’s <code>for</code> attribute.</li>
+      <li><strong>Use a fieldset and legend for a checkbox group.</strong> Surround a related set of checkboxes with a <code>&lt;fieldset&gt;</code>. The <code>&lt;legend&gt;</code> provides context for the grouping. Do not use fieldset and legend for a single check.</li>
+      <li><strong>These custom checkboxes are accessible.</strong> The custom checkboxes here are accessible to screen readers because the default checkboxes are moved off-screen with <code>position: absolute; left: -999em</code>.</li>
+      <li><strong>Use semantic ids.</strong> Each input should have a semantic <code>id</code> attribute, and its corresponding label should have the same value in it’s <code>for</code> attribute.</li>
       <li>The <code>title</code> attribute can replace <code>&lt;label&gt;</code>.</li>
     </ul>
   </div>

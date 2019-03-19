@@ -7,7 +7,7 @@ layout: styleguide
 type: element
 title: Button
 category: Components
-lead: Use buttons to signal actions.
+lead: Use buttons to draw attention to important actions.
 component_url: 'https://components.designsystem.digital.gov/components/detail/buttons.html'
 ---
 

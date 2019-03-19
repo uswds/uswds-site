@@ -20,14 +20,13 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
     <div id="sidenav-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
       <h4>When to use the side navigation component</h4>
       <ul class="usa-content-list">
-        <li>To display a navigational hierarchy with one to three levels.</li>
-        <li>To display the “sub-navigation” within a section of the website.</li>
+        <li><strong>To display a navigational hierarchy with one to three levels.</strong></li>
+        <li><strong>To display the “sub-navigation” within a section of the website.</strong></li>
       </ul>
       <h4>When to consider something else</h4>
       <ul class="usa-content-list">
-        <li>If the site has fewer than five pages, consider organizing the page without a navigational hierarchy.</li>
-        <li>If your page already has a horizontal and vertical navigation bar, consider ways to simplify your navigation system.</li>
-        <li>If your content is within a frame or sub-area of a page, consider ways to simplify your navigation system.</li>
+        <li><strong>Small site.</strong> If the site has fewer than five pages, consider organizing the page without a navigational hierarchy.</li>
+        <li><strong>Existing navigation.</strong> If your page already has a horizontal and vertical navigation bar, consider ways to simplify your navigation system.</li>
       </ul>
       <h4>Usability guidance</h4>
       <ul class="usa-content-list">
@@ -37,7 +36,7 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
       </ul>
       <h4 class="usa-heading">Accessibility</h4>
       <ul class="usa-content-list">
-        <li>Ensure the side navigational system is keyboard accessible. Users should be able to tab through each link.</li>
+        <li><strong>Ensure the side navigational system is keyboard accessible. </strong> Users should be able to tab through each link.</li>
       </ul>
       <h4 class="usa-heading">Implementation</h4>
       <ul class="usa-content-list">

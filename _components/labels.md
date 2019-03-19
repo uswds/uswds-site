@@ -27,9 +27,9 @@ lead: A tag draws attention to new or categorized content elements.
       </ul>
       <h4>When to consider something else</h4>
       <ul class="usa-content-list">
-        <li>When users are likely to confuse a static tag with a button. For example, when the tag appears in the same area of the page as buttons.</li>
-        <li>To call attention to new or updated content, consider changing the background color of the object itself or experiment with changing the font weight.</li>
-        <li>When users already expect content to be updated frequently. For example, on a site dedicated to breaking news. In this case placing the new content at the top may be enough.</li>
+        <li><strong>Confusion with buttons.</strong> Avoid tags if they might appear in the same area of the page as buttons.</li>
+        <li><strong>New or updated content.</strong> To call attention to new or updated content, consider changing the background color of the object itself or experiment with changing the font weight.</li>
+        <li><strong>When users already expect content to be updated frequently.</strong> For example, on a site dedicated to breaking news. In this case placing the new content at the top may be enough.</li>
       </ul>
       <h4>Usability guidance</h4>
       <ul class="usa-content-list">
@@ -40,7 +40,7 @@ lead: A tag draws attention to new or categorized content elements.
       </ul>
       <h4 class="usa-heading">Accessibility</h4>
       <ul class="usa-content-list">
-        <li>When tags are used to call out new content that is dynamically loaded onto a page, be sure to use ARIA live regions to alert screen readers of the change.</li>
+        <li><strong>Use ARIA live regions to highlight dynamically loaded content.</strong> When tags are used to call out new content that is dynamically loaded onto a page, be sure to use ARIA live regions to alert screen readers of the change.</li>
       </ul>
     </div>
   </div>

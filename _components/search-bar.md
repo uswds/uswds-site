@@ -22,7 +22,7 @@ lead: Search allows users to search for specific content if they know what searc
       <h4 class="usa-heading">Accessibility</h4>
       <ul class="usa-content-list">
         <li><strong>Customize accessibly.</strong> As you customize this form template, ensure it continues to follow the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines for form templates</a> and the <a href="{{ site.baseurl }}/form-controls/">accessibility guidelines for form controls</a>.</li>
-        <li>Always include the word "search" inside the <code>&lt;button&gt;</code> element for screen readers. You can visually hide this text using the CSS class <code>usa-sr-only</code> or Sass mixin <code>@include sr-only;</code>.</li>
+        <li><strong>Include the word “Search” in the button.</strong> Always include the word “search” inside the <code>&lt;button&gt;</code> element for screen readers. You can visually hide this text using the CSS class <code>usa-sr-only</code> or Sass mixin <code>@include sr-only;</code>.</li>
       </ul>
       <h4>When to use the search bar component</h4>
       <ul class="usa-content-list">
@@ -30,7 +30,7 @@ lead: Search allows users to search for specific content if they know what searc
       </ul>
       <h4>When to consider something else</h4>
       <ul class="usa-content-list">
-        <li>On single-page or very small sites, you may be able to get away without a search bar.</li>
+        <li><strong>Very small sites.</strong> On single-page or very small sites, you may be able to get away without a search bar.</li>
       </ul>
       <h4>Usability guidance</h4>
       <ul class="usa-content-list">

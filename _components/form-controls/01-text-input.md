@@ -21,14 +21,14 @@ lead: Text inputs allow users to enter any combination of letters, numbers, or s
     </ul>
     <h4>When to consider something else</h4>
     <ul class="usa-content-list">
-      <li>When users are choosing from a specific set of options.</li>
+      <li><strong>Predetermined input options.</strong> When users are choosing from a specific set of options.</li>
     </ul>
     <h4>Usability guidance</h4>
     <ul class="usa-content-list">
-      <li>The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a text area instead.</li>
-      <li>Text inputs are among the easiest type of input for desktop users but are more difficult for mobile users.</li>
-      <li>Only show error validation messages or stylings after a user has interacted with a particular field.</li>
-      <li>Avoid using placeholder text that appears within a text field before a user starts typing. If placeholder text is no longer visible after a user clicks into the field, users will no longer have that text available when they need to review their entries. (People who have cognitive or visual disabilities have additional problems with placeholder text.)</li>
+      <li><strong>Use fields appropriate to the length of the input.</strong> The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a text area instead.</li>
+      <li><strong>Consider the mobile context.</strong> Text inputs are among the easiest type of input for desktop users but are more difficult for mobile users.</li>
+      <li><strong>Wait to validate.</strong> Only show error validation messages or stylings after a user has interacted with a particular field.</li>
+      <li><strong>Avoid placeholder text.</strong> Avoid using placeholder text that appears within a text field before a user starts typing. If placeholder text is no longer visible after a user clicks into the field, users will no longer have that text available when they need to review their entries. (People who have cognitive or visual disabilities have additional problems with placeholder text.)</li>
     </ul>
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">

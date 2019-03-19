@@ -21,15 +21,15 @@ lead: A table shows tabular data in columns and rows.
     <div id="table-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
       <h4>When to use the table component</h4>
       <ul class="usa-content-list">
-        <li>When you need tabular information, such as statistical data.</li>
+        <li><strong>Tabular data.</strong> When you need tabular information, such as statistical data.</li>
       </ul>
       <h4>When to consider something else</h4>
       <ul class="usa-content-list">
-        <li>Depending on the type of content, consider using other presentation formats such as definition lists or hierarchical lists. </li>
+        <li><strong>Non-tabular data.</strong> Depending on the type of content, consider using other presentation formats such as definition lists or hierarchical lists. </li>
       </ul>
       <h4>Usability guidance</h4>
       <ul class="usa-content-list">
-        <li>Tables are great at displaying tabular data. Minimal visual styling helps surface this information more easily.</li>
+        <li><strong>Keep it simple.</strong> Tables are great at displaying tabular data. Minimal visual styling helps surface this information more easily.</li>
       </ul>
       <h4 class="usa-heading">Accessibility</h4>
       <ul class="usa-content-list">

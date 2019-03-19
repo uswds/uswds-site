@@ -22,15 +22,15 @@ lead: Dropdowns allow users to select one option from a temporary modal menu.
     <ul class="usa-content-list">
       <li><strong>Fewer than seven options.</strong> Use radio buttons instead.</li>
       <li><strong>More than 15 options.</strong> If the list of options is very long. Let users type the same information into a text input that suggests possible options instead.</li>
-      <li><strong>Multi-select.</strong>If you need to allow users to select more than one option at once. Users often don’t understand how to select multiple items from dropdowns. Use checkboxes instead.</li>
+      <li><strong>Multi-select.</strong> If you need to allow users to select more than one option at once. Users often don’t understand how to select multiple items from dropdowns. Use checkboxes instead.</li>
       <li><strong>Site navigation.</strong> Use the navigation components instead.</li>
     </ul>
     <h4>Usability guidance</h4>
     <ul class="usa-content-list">
-      <li>Test dropdowns thoroughly with members of your target audience. Several usability experts suggest they should be the “UI of last resort.” Many users find them confusing and difficult to use.</li>
-      <li>Avoid making options in one dropdown menu change based on the input to another. Users often don’t understand how selecting an item in one impacts another.</li>
-      <li>When most users will (or should) pick a particular option, make it the default: <code>&lt;option selected=<wbr>"selected"&gt;Default<wbr>&lt;/option&gt;</code></li>
-      <li>Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Offer a “submit” button at the end of the form instead. Users often change their choices multiple times. Auto-submission is also less accessible.</li>
+      <li><strong>Make sure to test.</strong> Test dropdowns thoroughly with members of your target audience. Several usability experts suggest they should be the “UI of last resort.” Many users find them confusing and difficult to use.</li>
+      <li><strong>Avoid dependent options.</strong> Avoid making options in one dropdown menu change based on the input to another. Users often don’t understand how selecting an item in one impacts another.</li>
+      <li><strong>Use a good default.</strong> When most users will (or should) pick a particular option, make it the default: <code>&lt;option selected=<wbr>"selected"&gt;Default<wbr>&lt;/option&gt;</code></li>
+      <li><strong>Avoid auto-submission.</strong> Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Offer a “submit” button at the end of the form instead. Users often change their choices multiple times. Auto-submission is also less accessible.</li>
     </ul>
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">

@@ -3,7 +3,7 @@ permalink: /design-tokens/
 layout: styleguide
 title: Design tokens
 category: Design tokens
-lead: USWDS visual design is based on consistent palettes of typography, spacing units, color, and other discrete elements of style we call **design tokens**{:.font-sans-lg}.
+lead: USWDS visual design is based on consistent palettes of typography, spacing units, color, and other discrete elements of style we call **design tokens**{:.font-lang-8}.
 type: docs
 subnav:
   - text: Introducing design tokens
@@ -28,18 +28,20 @@ Design tokens are a limited set of discrete options, just as a scale of musical 
 ![continuous and tokenized values]({{ site.baseurl }}/assets/img/design-tokens/continuous-v-token.svg)
 
 ### Example: Measure (line length)
-For example, measure (or line length) expressed with the `max-width` CSS property can accept any value in units like `em`, `rem`, `ch`, `px` to at least two decimal places. USWDS limits itself to 6 [measure]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token} tokens:
+For example, measure (or line length) expressed with the `max-width` CSS property can accept any value in units like `em`, `rem`, `ch`, `ex`, and `px` to at least two decimal places. USWDS limits itself to 7 [measure]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token} tokens:
 
+{:.site-table}
 | token   | value
 | ---     | ---
-|`1`      | `40ch`
-|`2`      | `60ch`
-|`3`      | `66ch`
-|`4`      | `72ch`
-|`5`      | `77ch`
+|`1`      | `44ex`
+|`2`      | `60ex`
+|`3`      | `64ex`
+|`4`      | `68ex`
+|`5`      | `74ex`
+|`6`      | `88ex`
 |`'none'` | no max width
 
-Anything built using USWDS will use one of these 6 [measure]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token} tokens when specifying measure.
+Anything built using USWDS will use one of these 7 [measure]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token} tokens when specifying measure.
 
 ## Keys and values
 You can think of a design token as a **key** that unlocks a specific **value**. Often, the specific value is less important than its effect. Each token is a quoted string or, with only the exceptions of `1px` and `2px`, a unitless number — and the mechanism by which the final display value is unlocked is a **function**, **mixin**, or **utility class**.

@@ -55,25 +55,27 @@ subnav:
   </div>
 </div>
 
-<div markdown="1">
 The above example creates three equal-width columns on tablet, desktop, and widescreen devices using our predefined grid classes. Those columns are centered in the page with the parent `grid-container` container.
 
 Breaking it down, here's how it works:
 
+### Containers, rows, and columns
+
 {:.usa-content-list}
-- **Containers** `grid-container` centers the container and gives it a maximum width of `desktop` (1024px). If you would like the grid to span the full width of the page, do not use `grid-container`.
+- **Containers:** `grid-container` centers the container and gives it a maximum width of `desktop` (1024px). If you would like the grid to span the full width of the page, do not use `grid-container`.
+  - `grid-container` can also accept any breakpoint width like `grid-container-tablet-lg` or `grid-container-widescreen`. Set the default max width with `$theme-site-max-width` in `uswds-theme-spacing.scss`.
+  - By default, `grid-container`s have padding-x of 2 units, with a padding-x of 4 units at `desktop` and wider. Control these values with the values of `$theme-site-margins-mobile-width`, `$theme-site-margins-width` and `$theme-site-margins-beakpoint` in `uswds-theme-spacing.scss`.
+- **Rows:** Columns must have a `grid-row` as a parent.
+- **Columns:** `grid-col-[1-12]` indicates the number of columns the item spans out of a possible 12 per row. So, if you want three equal-width columns across, use `grid-col-4` for each item.
 
-  `grid-container` can also accept any breakpoint width like `grid-container-tablet-lg` or `grid-container-widescreen`. Set the default max width with `$theme-site-max-width` in `uswds-theme-spacing.scss`.
+### Additional functionality
 
-  By default, `grid-container`s have padding-x of 2 units, with a padding-x of 4 units at `desktop` and wider. Control these values with the values of `$theme-site-margins-mobile-width`, `$theme-site-margins-width` and `$theme-site-margins-beakpoint` in `uswds-theme-spacing.scss`.
-- **Rows** Columns must have a `grid-row` as a parent.
-- **Columns** `grid-col-[1-12]` indicates the number of columns the item spans out of a possible 12 per row. So, if you want three equal-width columns across, use `grid-col-4` for each item.
-- With flexbox, grid columns without a specified width will display as equal-width columns. For example, four instances of `grid-col` will display as one-quarter-width columns across all sizes. See the [auto-layout columns](#auto-layout-columns) section for more examples.
-- Rows and columns don't have any gutters by default, but they can be added by adding `grid-gap-sm`, `grid-gap`, or `grid-gap-lg` at the row level. See [gutters](#gutters) for more info.
-- Grid breakpoints are based on minimum width media queries, meaning they apply to that specific width and all greater widths (e.g., `tablet:col-4` applies to tablet, desktop, and widescreen devices, but not at `mobile-lg` or any width below the tablet breakpoint). See [responsive variants](#responsive-variants) for full list.
-- You can use predefined grid classes (like `grid-col-4`) for presentational markup or [Sass mixins](#sass-mixins) for more semantic markup.
+{:.usa-content-list}
+- **Equal-width columns:** With flexbox, grid columns without a specified width will display as equal-width columns. For example, four instances of `grid-col` will display as one-quarter-width columns across all sizes. See the [auto-layout columns](#auto-layout-columns) section for more examples.
+- **Gutters:** Rows and columns don't have any gutters by default, but they can be added by adding `grid-gap-sm`, `grid-gap`, or `grid-gap-lg` at the row level. See [gutters](#gutters) for more info.
+- **Media queries:** Grid breakpoints are based on minimum width media queries, meaning they apply to that specific width and all greater widths (e.g., `tablet:col-4` applies to tablet, desktop, and widescreen devices, but not at `mobile-lg` or any width below the tablet breakpoint). See [responsive variants](#responsive-variants) for full list.
+- **Sass mixins:** You can use predefined grid classes (like `grid-col-4`) for presentational markup or [Sass mixins](#sass-mixins) for more semantic markup.
 
-</div>
 
 <h2 id="responsive-variants">Responsive variants</h2>
 
@@ -495,13 +497,11 @@ Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the
 </div>
 
 <h2 id="sass-mixins">Sass mixins</h2>
-<div markdown="1">
 When generating your CSS from USWDS source files, you have the option of customizing many system defaults by modifying project theme variables. USWDS also provides grid mixins for adding grid functionality to custom semantic component CSS.
 
 ### Variables
 Variables and maps determine the number of columns, the gutter width, and the media query point at which to begin floating columns. We use these to generate the predefined grid classes documented above, as well as for the custom mixins listed below.
 
-{:.font-mono-xs}
 #### uswds-theme-spacing.scss
 
 ```scss
@@ -519,7 +519,6 @@ $theme-site-margins-width:          4;
 $theme-site-margins-mobile-width:   2;
 ```
 
-{:.font-mono-xs}
 #### uswds-theme-utilities.scss
 
 ```scss
@@ -611,4 +610,3 @@ You can modify the variables to your own custom values, or just use the mixins w
   }
 }
 ```
-</div>

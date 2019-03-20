@@ -10,8 +10,8 @@ category: Components
 lead: A tag draws attention to new or categorized content elements.
 ---
 
-{% include code/preview.html component="labels" %}
 <section class="site-component-section">
+  {% include code/preview.html component="labels" %}
   {% include code/accordion.html component="labels" %}
   <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
     <button class="usa-button-unstyled usa-accordion__button"

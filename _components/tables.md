@@ -10,8 +10,8 @@ category: Components
 lead: A table shows tabular data in columns and rows.
 ---
 
-{% include code/preview.html component="tables" %}
 <section class="site-component-section">
+  {% include code/preview.html component="tables" %}
   {% include code/accordion.html component="tables" %}
   <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
     <button class="usa-button-unstyled usa-accordion__button"

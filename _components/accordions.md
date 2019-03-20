@@ -10,8 +10,8 @@ category: Components
 lead: An accordion is a list of headers that hide or reveal additional content when selected.
 ---
 
-{% include code/preview.html component="accordion" %}
 <section class="site-component-section">
+  {% include code/preview.html component="accordion" %}
   {% include code/accordion.html component="accordion" %}
   <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
     <button class="usa-button-unstyled usa-accordion__button"

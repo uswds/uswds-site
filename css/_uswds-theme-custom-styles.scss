@@ -2168,7 +2168,7 @@ li {
 .utility-text {
   @include u-font('lang', 'xs');
   @include u-line-height('lang', 5);
-  @include u-measure(none);
+  @include u-measure(5);
 
   + .utility-text {
     @include u-margin-top(1);

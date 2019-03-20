@@ -102,7 +102,7 @@ USWDS helps teams choose accessible colors with a color grade system. Let’s lo
 {% endcapture %}
 {{ gray-grade }}
 
-{:.font-sans-2xs}
+{:.font-lang-2xs}
 **Above:** Each color family has ten grades, from 5-90. Pure `white` is the equivalent of grade 0, and pure `black` is the equivalent of grade 100.
 
 ### Magic number
@@ -119,13 +119,13 @@ Use USWDS magic numbers to choose accessible color combinations from any palette
 {:.measure-3}
 ![gray color contrast example]({{ site.baseurl }}/assets/img/design-tokens/gray-example.png)
 
-{:.font-sans-2xs}
+{:.font-lang-2xs}
 **Above:** Since `90 – 50 = 40`, on a background of `gray-90` use grades of `40` and below to assure Section 508 AA contrast. Grades of `50` and below are acceptable for large text.
 
 {:.measure-3 .margin-top-5}
 ![indigo color contrast example]({{ site.baseurl }}/assets/img/design-tokens/indigo-warm-example.png)
 
-{:.font-sans-2xs}
+{:.font-lang-2xs}
 **Above:** The color grade system works across color families.
 
 ### Color, contrast, and readability
@@ -147,13 +147,13 @@ The vivid palette is incomplete. We’ve added vivid variants as we’ve found a
 {:.bg-white.padding-2.radius-md}
 ![standard color wheel]({{ site.baseurl }}/assets/img/design-tokens/uswds-standard-color-wheel.jpg)
 
-{:.font-sans-2xs}
+{:.font-lang-2xs}
 **Above:** USWDS standard system color tokens wheel
 
 {:.bg-white.padding-2.radius-md.margin-top-4}
 ![vivid color wheel]({{ site.baseurl }}/assets/img/design-tokens/uswds-vivid-color-wheel.jpg)
 
-{:.font-sans-2xs}
+{:.font-lang-2xs}
 **Above:** USWDS vivid system color tokens wheel
 
 ## General color guidance

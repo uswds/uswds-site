@@ -432,7 +432,7 @@ utilities:
     </tr>
     <tr>
       <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-        <span class="font-sans-2xs">
+        <span class="font-lang-2xs">
           multiple text utilities...
         </span>
       </td>

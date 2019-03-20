@@ -67,9 +67,9 @@ The nine-step theme scale should be sufficient for most project needs. First, tr
   <div class="grid-col-2 text-300 font-sans-3">3</div>
   <div class="grid-col-1 text-300 font-sans-3">14px</div>
   <div class="grid-col-fill">
-    <span class="font-sans-2xs">Tallahassee</span>
+    <span class="font-lang-2xs">Tallahassee</span>
   </div>
-  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-2xs</code></div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-lang-2xs</code></div>
 </div>
 
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">
@@ -87,9 +87,9 @@ The nine-step theme scale should be sufficient for most project needs. First, tr
   <div class="grid-col-2 text-300 font-sans-3">6</div>
   <div class="grid-col-1 text-300 font-sans-3">17px</div>
   <div class="grid-col-fill">
-    <span class="font-sans-sm">Tallahassee</span>
+    <span class="font-lang-4">Tallahassee</span>
   </div>
-  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-sans-sm</code></div>
+  <div class="grid-col-3 text-300 font-sans-2 text-right"><code>font-lang-4</code></div>
 </div>
 
 <div class="grid-row grid-gap flex-align-center padding-bottom-2 margin-bottom-2 border-bottom border-gray-10">

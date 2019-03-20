@@ -283,14 +283,14 @@ utilities:
     {% include utilities/values-intro.html %}
 
     <aside class="example border-left-05 border-secondary-light padding-left-105 margin-top-2">
-      <h4 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h4>
+      <h4 class="font-lang-2xs margin-top-0 margin-bottom-05">Example</h4>
 <pre class="font-mono-xs margin-0 padding-0 bg-transparent">
 $background-color-palettes: (
   'palette-color-red-medium',
   'palette-color-red-medium-vivid' // note: no trailing comma
 );
 </pre>
-    <h4 class="font-sans-2xs margin-top-2 margin-bottom-05">Output</h4>
+    <h4 class="font-lang-2xs margin-top-2 margin-bottom-05">Output</h4>
 <pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
 .bg-red-40 { background-color: #ed6b61; }
 .bg-red-50 { background-color: #d83731; }
@@ -301,7 +301,7 @@ $background-color-palettes: (
 </pre>
     </aside>
 
-    <h4 class="font-sans-2xs margin-top-4 margin-bottom-0">Global color palettes</h4>
+    <h4 class="font-lang-2xs margin-top-4 margin-bottom-0">Global color palettes</h4>
     <p class="utility-text margin-top-05">Any palette added to the <code>$global-color-palettes</code> list in <code>_project-utilities-settings.scss</code> will output in the background color, text color, border color, and text decoration color utilities.</p>
 
     {% include utilities/color-palettes.html %}

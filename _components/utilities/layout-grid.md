@@ -95,7 +95,7 @@ Breaking it down, here's how it works:
     <tbody class="font-mono-2xs">
       <tr>
         <td scope="row" data-title="Width" class="flex-2">
-          <span class="font-sans-2xs text-bold">
+          <span class="font-lang-2xs text-bold">
             Smallest
           </span>
         </td>
@@ -127,7 +127,7 @@ Breaking it down, here's how it works:
       </tr>
       <tr>
         <td scope="row" data-title="Width" class="flex-2">
-          <span class="font-sans-2xs text-bold">
+          <span class="font-lang-2xs text-bold">
             Mobile large
           </span>
         </td>
@@ -159,7 +159,7 @@ Breaking it down, here's how it works:
       </tr>
       <tr>
         <td scope="row" data-title="Width" class="flex-2">
-          <span class="font-sans-2xs text-bold">
+          <span class="font-lang-2xs text-bold">
             Tablet
           </span>
         </td>
@@ -191,7 +191,7 @@ Breaking it down, here's how it works:
       </tr>
       <tr>
         <td scope="row" data-title="Width" class="flex-2">
-          <span class="font-sans-2xs text-bold">
+          <span class="font-lang-2xs text-bold">
             Desktop
           </span>
         </td>

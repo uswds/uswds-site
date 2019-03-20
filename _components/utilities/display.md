@@ -595,7 +595,7 @@ utilities:
     </section>
   </section>
 
-  <section class="utility z-bottom position-relative" id="z-index">
+  <section class="utility z-0 position-relative" id="z-index">
     {% include utilities/utility-title-bar.html
       title="Z-index"
     %}

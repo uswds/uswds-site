@@ -755,7 +755,7 @@ body {
   @include clearfix;
   @include u-margin-y(2);
   background-color: color('white');
-  padding: units($theme-site-margins-width);
+  padding: units(2);
   border: units(1px) solid color('base-lightest');
 
   .usa-dark-background {
@@ -2900,4 +2900,9 @@ $theme-table-column-gap: 4;
 
 .site-button {
   @include typeset('lang', null, 1);
+}
+
+.site-table,
+.usa-prose > .site-table {
+  @include typeset('lang');
 }

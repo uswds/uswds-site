@@ -2347,7 +2347,7 @@ h6 + div:not(.usa-accordion__content) {
 }
 
 pre {
-  white-space: pre-wrap;
+  white-space: pre;
 }
 
 // Responsive tables
@@ -2916,4 +2916,16 @@ $theme-table-column-gap: 4;
 .usa-hero__callout p {
   @include typeset('lang');
   margin-bottom: 0;
+}
+
+[class*="language-"] {
+  color: color('base');
+
+  .nt {
+    color: color('primary-dark');
+  }
+
+  .s {
+    color: color('primary-vivid');
+  }
 }

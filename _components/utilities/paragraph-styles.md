@@ -239,7 +239,7 @@ vals_negative:
                 {{ output }}
               {% endcapture %}
               {% capture this_example %}
-                <p class="font-{{ family.token }}-2xs line-height-{{ family.token }}-{{ this_lh }} margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+                <p class="font-{{ family.token }}-2xs line-height-{{ family.token }}-{{ this_lh }} measure-5 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
               {% endcapture %}
               {% include utilities/utility-example.html
                 wrap = true

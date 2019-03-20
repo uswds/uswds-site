@@ -11,7 +11,7 @@ font:
     name: Merriweather
     stack-name: Merriweather Web
     stack: 'georgia'
-    normal: 385
+    normal: 371
   - token: open-sans
     name: Open Sans
     stack-name: Open Sans
@@ -48,6 +48,10 @@ font:
     normal: 364
 type:
   - token: cond
+    default: false
+  - token: icon
+    default: false
+  - token: lang
     default: false
   - token: mono
     default: 'roboto-mono'

@@ -1285,7 +1285,7 @@ code {
   }
 
   .text-tiny {
-    @include typeset('sans', '2xs', 1);
+    @include typeset('serif', '2xs', 1);
   }
 }
 
@@ -2263,6 +2263,8 @@ h6 + div:not(.usa-accordion__content) {
 }
 
 .site-button-list {
+  margin-bottom: 0;
+
   .usa-button {
     &:hover {
       background-color: color('blue-warm-60v');
@@ -2677,7 +2679,7 @@ $theme-table-column-gap: 4;
     }
 
     header + .site-text-intro {
-      margin-top: units(2);
+      margin-top: units(1);
     }
 
     .usa-content-list {
@@ -2905,4 +2907,13 @@ $theme-table-column-gap: 4;
 .site-table,
 .usa-prose > .site-table {
   @include typeset('lang');
+}
+
+.usa-accordion__button:hover {
+  text-decoration: none;
+}
+
+.usa-hero__callout p {
+  @include typeset('lang');
+  margin-bottom: 0;
 }

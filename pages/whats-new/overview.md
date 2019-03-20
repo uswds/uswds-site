@@ -24,7 +24,7 @@ latest development releases as well as interviews with the teams from across
 government who have successfully implemented the Design System at their agencies.
 You can read some older posts on the [18F Blog](https://18f.gsa.gov/tags/web-design-system/).
 
-<a href="{{ site.baseurl }}/whats-new/updates/" class="usa-button">Read the latest blog posts</a>
+<a href="{{ site.baseurl }}/whats-new/updates/" class="usa-button site-button">Read the latest blog posts</a>
 {% endcapture %}
 
 {% capture in_wild %}
@@ -36,7 +36,7 @@ maintain a list of sites in our GitHub repo. Feel free to
 or [email us](mailto:uswds@gsa.gov) if you’d like to add your
 project to our list.
 
-<a href="https://github.com/uswds/uswds/blob/develop/docs/WHO_IS_USING_USWDS.md" class="usa-button">View our list on GitHub</a>
+<a href="https://github.com/uswds/uswds/blob/develop/docs/WHO_IS_USING_USWDS.md" class="usa-button site-button">View our list on GitHub</a>
 {% endcapture %}
 
 <div class="grid-row grid-gap">
@@ -65,7 +65,7 @@ numbers quarterly.
         {% endfor %}
       </tr>
     </thead>
-    <tbody class="font-sans-2xs text-tabular">
+    <tbody class="font-lang-2 text-tabular">
     {% for row in site.data.google_analytics reversed %}
       <tr>
         <td scope="row" data-title="Quarter"><span><strong>{{ row.Year }}</strong> {{ row.Quarter }}</span></td>

@@ -31,7 +31,7 @@ principles:
 {% for principle in page.principles %}
   {% cycle '<div class="grid-row grid-gap margin-top-0">', '' %}
   <div class="tablet:grid-col-6">
-    <h2 class="site-h2 font-lang-lg border-top-05 padding-top-1">
+    <h2 class="site-h2 font-lang-8 border-top-05 padding-top-1">
       {% if principle.href %}<a href="{{ principle.href | relative_url }}">{% endif %}
       {{ principle.title }}
       {% if principle.href %}</a>{% endif %}

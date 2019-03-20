@@ -4,16 +4,17 @@ tags:
 - case study
 - web design system
 - design
+category: About USWDS
 excerpt:
 ---
 
-The U.S. Web Design System (formerly Standards) is currently being used on hundreds of government sites, with an audience of more than 100 million monthly users. In this 10th post in our series, we met with Kyle Jennings, creator of the [Benjamin WordPress theme](https://github.com/kyle-jennings/benjamin) (and [Franklin plug-in](https://github.com/kyle-jennings/franklin)) using the System. 
+The U.S. Web Design System (formerly Standards) is currently being used on hundreds of government sites, with an audience of more than 100 million monthly users. In this 10th post in our series, we met with Kyle Jennings, creator of the [Benjamin WordPress theme](https://github.com/kyle-jennings/benjamin) (and [Franklin plug-in](https://github.com/kyle-jennings/franklin)) using the System.
 
 Jennings is a full stack WordPress developer, who worked on the former GSA Sites.USA.gov program.
 
 **System team:** How did you find out about the U.S. Web Design System?
 
-**Kyle Jennings:** I found out about the System (formerly Standards) a couple years ago when I started working on the Sites program. 
+**Kyle Jennings:** I found out about the System (formerly Standards) a couple years ago when I started working on the Sites program.
 
 **System team:** Tell us about the Benjamin theme (and great name, by the way).
 
@@ -29,7 +30,7 @@ It received lots of  positive feedback from people at the IRS and State Departme
 
 **System team:** Did you run into any issues with the Web Design System when creating your theme?
 
-**Kyle Jennings:** I had a few issues with the components in creating Franklin. The biggest issue I had was with the grid system. I’m used to using Bootstrap & Foundation, which are really robust and legible, easier to implement with dynamic WordPress themes. This wasn’t as easy to use and there were a couple instances where things broke when I was working on this about a year ago. 
+**Kyle Jennings:** I had a few issues with the components in creating Franklin. The biggest issue I had was with the grid system. I’m used to using Bootstrap & Foundation, which are really robust and legible, easier to implement with dynamic WordPress themes. This wasn’t as easy to use and there were a couple instances where things broke when I was working on this about a year ago.
 
 Another issue is that some of the other components were highly coupled, so I couldn't take a component and drop into a different area of the site without it losing its styling, so I had to refractor a few things to make them work. I know a low of these issues have been worked out since I built the theme a year ago, so I’ll have to update it with the latest changes.
 
@@ -37,11 +38,11 @@ Another issue is that some of the other components were highly coupled, so I cou
 
 **Kyle Jennings:** My biggest hurdle right now is getting it into the WordPress repositories, which are run by volunteers who have their own acceptance criteria. I’ve almost had it accepted in the past, and trying to make sure everything is properly translatable, and not missing anything.
 
-I would like to help people structure their posts to look different than pages in WordPress, so you could have specific pages for YouTube, for example. I’d also like to restructure the customizer area so it’s a little easier to navigate. 
+I would like to help people structure their posts to look different than pages in WordPress, so you could have specific pages for YouTube, for example. I’d also like to restructure the customizer area so it’s a little easier to navigate.
 A long-term goal I have is to add a feature allowing other plugin authors to create their own color schemes for this theme, which could go through a vetting process first.
 
 This interview is motivating me to go back and add features!
- 
+
 **System team:** What’s the foundation for this theme?
 
 **Kyle Jennings:** It’s built using the great [Underscores theme](https://underscores.me/) as a foundation, but 90% of the functionality is built from scratch.

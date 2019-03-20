@@ -4,10 +4,11 @@ tags:
 - case study
 - web design system
 - design
+category: About USWDS
 excerpt: For our 11th post in the series, we talked with Scott Weber, front-end developer, who worked on America’s Seed Fund site for the National Science Foundation (NSF). The site was created for people who want to get federal grant funding for their science or technology projects.
 ---
 
-The [U.S. Web Design System](https://designsystem.digital.gov/) was created by the government, for the government. They’re currently implemented on hundreds of government sites, with an audience of more than 59 million monthly users. 
+The [U.S. Web Design System](https://designsystem.digital.gov/) was created by the government, for the government. They’re currently implemented on hundreds of government sites, with an audience of more than 59 million monthly users.
 
 For our 11th post in the series, we talked with Scott Weber, front-end developer, who worked on [America’s Seed Fund](https://seedfund.nsf.gov/) site for the National Science Foundation (NSF). The site was created for people who want to get federal grant funding for their science or technology projects.
 
@@ -21,17 +22,17 @@ For our 11th post in the series, we talked with Scott Weber, front-end developer
 
 **USWDS team:** How did you integrate your work with the USWDS?
 
-**Scott Weber:** For the most part it was fairly seamless. We started with the USWDS-Jekyll theme and from there it was about modifying the look and feel, moving pieces around to accommodate the design. We changed the typography and color choices to be on-brand with our site. 
+**Scott Weber:** For the most part it was fairly seamless. We started with the USWDS-Jekyll theme and from there it was about modifying the look and feel, moving pieces around to accommodate the design. We changed the typography and color choices to be on-brand with our site.
 
 Overall the USWDS shortened the amount of time it took to implement the site, for example, the layout was easy to leverage. But at the same time, we spent a lot of time overriding the defaults, since the Seed Fund is a big departure from the “out of the box” style the USWDS provides. We needed more spacing on elements, different color palettes, among other things.
 
 **USWDS team:** What were the benefits you gained by using the USWDS?
 
-**Scott Weber:** One benefit was tapping into the knowledge of designers and developers who had already spent time and energy creating the components. For example, the navigation didn’t need a lot of extra thought around functionality or accessibility as that was already taken care of by the USWDS team. 
+**Scott Weber:** One benefit was tapping into the knowledge of designers and developers who had already spent time and energy creating the components. For example, the navigation didn’t need a lot of extra thought around functionality or accessibility as that was already taken care of by the USWDS team.
 
 **USWDS team:** What specific components did you use?
 
-**Scott Weber:**  We used the header (and modified it quite a bit), footer, grid system, and accordion components. 
+**Scott Weber:**  We used the header (and modified it quite a bit), footer, grid system, and accordion components.
 
 **USWDS team:** Is there anything the USWDS team could do, to help you in your efforts?
 

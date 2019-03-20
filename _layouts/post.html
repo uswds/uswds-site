@@ -6,7 +6,7 @@ category: What’s new
   <aside class="sidenav">
     {% assign sidenav = site.data.nav[page.category] %}
     {% if sidenav %}
-    <ul class="usa-sidenav">
+    <ul class="site-sidenav usa-sidenav">
       {% include nav/list.html links=sidenav %}
     </ul>
     {% endif %}
@@ -19,7 +19,7 @@ category: What’s new
     {% else %}
       <header>
         <p class="site-subheading">{{ page.category | default: layout.category }}</p>
-        <h1 id="{{ page.title | slugify }}">{{ page.title }}</h1>
+        <h1 id="{{ page.title | slugify }}" class="site-page-title">{{ page.title }}</h1>
       </header>
       {{ content }}
     {% endif %}

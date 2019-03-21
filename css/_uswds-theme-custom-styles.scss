@@ -2920,6 +2920,16 @@ $theme-table-column-gap: 4;
   margin-bottom: 0;
 }
 
+figure.highlight {
+  margin: 0;
+}
+
+pre.lineno {
+  padding-right: 2ch;
+  color: color('base');
+  font-weight: fw('light');
+}
+
 [class*="language-"] {
   color: color('base');
 

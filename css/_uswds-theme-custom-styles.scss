@@ -2938,3 +2938,8 @@ $theme-table-column-gap: 4;
     @include u-measure(5);
   }
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}

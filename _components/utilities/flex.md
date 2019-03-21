@@ -443,17 +443,60 @@ utilities:
       <div id="code-flex-align" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
 ```html
-<div class="display-flex flex-column">
-  <div class="flex-align-start"></div>
-  <div class="flex-align-center"></div>
-  <div class="flex-align-end"></div>
-  <div class="flex-align-stretch"></div>
+<div class="display-flex flex-column flex-align-start">
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
 </div>
-<div class="display-flex flex-row">
-  <div class="flex-align-start"></div>
-  <div class="flex-align-center"></div>
-  <div class="flex-align-end"></div>
-  <div class="flex-align-stretch"></div>
+
+<div class="display-flex flex-column flex-align-center">
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+</div>
+
+<div class="display-flex flex-column flex-align-end">
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+</div>
+
+<div class="display-flex flex-column flex-align-stretch">
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+</div>
+
+<div class="display-flex flex-row flex-align-start">
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+</div>
+
+<div class="display-flex flex-row flex-align-center">
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+</div>
+
+<div class="display-flex flex-row flex-align-end">
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+</div>
+
+<div class="display-flex flex-row flex-align-stretch">
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
 </div>
 ```
 </div><!-- markdown -->
@@ -502,11 +545,60 @@ utilities:
       <div id="code-flex-justify" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
 ```html
-<div class="display-flex flex-row">
-  <div class="flex-justify"></div>
-  <div class="flex-justify-start"></div>
-  <div class="flex-justify-center"></div>
-  <div class="flex-justify-end"></div>
+<div class="display-flex flex-column flex-justify">
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+</div>
+
+<div class="display-flex flex-column flex-justify-start">
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+</div>
+
+<div class="display-flex flex-column flex-justify-center">
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+</div>
+
+<div class="display-flex flex-column flex-justify-end">
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+</div>
+
+<div class="display-flex flex-row flex-justify">
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+</div>
+
+<div class="display-flex flex-row flex-justify-start">
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+</div>
+
+<div class="display-flex flex-row flex-justify-center">
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+</div>
+
+<div class="display-flex flex-row flex-justify-end">
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
+  <div class="example"></div>
 </div>
 ```
 </div><!-- markdown -->

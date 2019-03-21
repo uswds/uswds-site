@@ -349,6 +349,7 @@ utilities:
       title="Flex wrap"
     %}
     <section class="utility-examples">
+
     {% for value in page.values.flex_wrap %}
       <div class="border padding-1 radius-md{% if forloop.first %} margin-bottom-2{% endif %}">
         <span class="utility-class">.flex-{{ value.token }}</span>

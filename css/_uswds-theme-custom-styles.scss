@@ -2929,3 +2929,10 @@ $theme-table-column-gap: 4;
     color: color('primary-vivid');
   }
 }
+
+#utility-mixins {
+  p,
+  ul {
+    @include u-measure(5);
+  }
+}

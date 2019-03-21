@@ -128,6 +128,8 @@ body {
 
     @include at-media('desktop') {
       display: initial;
+      float: left;
+      margin-bottom: 0;
       margin-left: units($theme-site-margins-width);
     }
 

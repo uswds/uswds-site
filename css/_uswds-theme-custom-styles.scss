@@ -2948,3 +2948,7 @@ pre.lineno {
     @include u-measure(5);
   }
 }
+
+body {
+  text-rendering: optimizeLegibility;
+}

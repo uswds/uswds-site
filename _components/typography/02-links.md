@@ -16,7 +16,7 @@ lead: "Links connect users to a different page or further information."
 <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="link-docs">
-    Documentation
+    Usage
   </button>
   <div id="link-docs" class="usa-accordion__content site-component-usage">
     <h4>Accessibility</h4>

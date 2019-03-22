@@ -160,7 +160,7 @@ utilities:
         <button class="usa-accordion__button" aria-controls="code-relative" aria-expanded="true">Code</button>
         <div id="code-relative" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
-```html
+{% highlight html linenos %}
 <div class="display-block border-1px ...">.display-block</div>
 <div class="display-flex border-1px ...">.display-flex</div>
 <div class="display-inline border-1px ...">.display-inline</div>
@@ -172,7 +172,7 @@ utilities:
   <div class="display-table-cell border-1px ...">.display-table-cell</div>
   <div class="display-table-cell border-1px ...">.display-table-cell</div>
 </div>
-```
+{% endhighlight %}
 </div>
         </div>
       </div>
@@ -350,7 +350,7 @@ utilities:
         <button class="usa-accordion__button" aria-controls="code-static-relative" aria-expanded="true">Code</button>
         <div id="code-static-relative" class="usa-accordion__content">
 <div markdown="1">
-```html
+{% highlight html linenos %}
 <div class="position-relative">
   <div class="position-static">
     <div class="position-absolute bottom-0 left-0">
@@ -366,7 +366,7 @@ utilities:
     </div>
   </div>
 </div>
-```
+{% endhighlight %}
 </div>
         </div><!-- accordion-content -->
       </div><!-- code-sample -->
@@ -393,13 +393,13 @@ utilities:
         <button class="usa-accordion__button" aria-controls="code-fixed" aria-expanded="true">Code</button>
         <div id="code-fixed" class="usa-accordion__content">
 <div markdown="1">
-```html
+{% highlight html linenos %}
 <div class="position-relative">
   <div class="position-fixed pin-top bg-secondary-light">
     .position-fixed
   </div>
 </div>
-```
+{% endhighlight %}
 </div>
         </div><!-- accordion-content -->
       </div><!-- code-sample -->
@@ -435,7 +435,7 @@ utilities:
         <button class="usa-accordion__button" aria-controls="code-sticky" aria-expanded="true">Code</button>
         <div id="code-sticky" class="usa-accordion__content">
 <div markdown="1">
-```html
+{% highlight html linenos %}
 <div class="position-relative overflow-scroll">
   <div>
     <div class="position-sticky bg-secondary-light">Sticky Heading 1</div>
@@ -454,7 +454,7 @@ utilities:
     <p>...</p>
   </div>
 </div>
-```
+{% endhighlight %}
 </div>
         </div>
       </div>

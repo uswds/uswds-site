@@ -48,9 +48,9 @@ subnav:
   <button class="usa-accordion__button" aria-controls="code-sticky" aria-expanded="true">Code</button>
   <div id="code-sticky" class="usa-accordion__content">
 <div markdown="1">
-```html
+{% highlight html linenos %}
 {{ grid-1 | strip }}
-```
+{% endhighlight %}
 </div>
   </div>
 </div>
@@ -249,9 +249,9 @@ Breaking it down, here's how it works:
   <button class="usa-accordion__button" aria-controls="code-auto" aria-expanded="true">Code</button>
   <div id="code-auto" class="usa-accordion__content">
 <div markdown="1">
-```html
+{% highlight html linenos %}
 {{ grid-auto | strip }}
-```
+{% endhighlight %}
 </div>
   </div>
 </div>
@@ -295,9 +295,9 @@ Breaking it down, here's how it works:
   <button class="usa-accordion__button" aria-controls="code-responsive" aria-expanded="true">Code</button>
   <div id="code-responsive" class="usa-accordion__content">
 <div markdown="1">
-```html
+{% highlight html linenos %}
 {{ grid-responsive | strip }}
-```
+{% endhighlight %}
 </div>
   </div>
 </div>
@@ -325,9 +325,9 @@ Breaking it down, here's how it works:
   <button class="usa-accordion__button" aria-controls="code-stacked" aria-expanded="true">Code</button>
   <div id="code-stacked" class="usa-accordion__content">
 <div markdown="1">
-```html
+{% highlight html linenos %}
 {{ grid-stacked | strip }}
-```
+{% endhighlight %}
 </div>
   </div>
 </div>
@@ -362,9 +362,9 @@ Breaking it down, here's how it works:
   <button class="usa-accordion__button" aria-controls="code-mix" aria-expanded="true">Code</button>
   <div id="code-mix" class="usa-accordion__content">
 <div markdown="1">
-```html
+{% highlight html linenos %}
 {{ grid-mix | strip }}
-```
+{% endhighlight %}
 </div>
   </div>
 </div>
@@ -386,9 +386,9 @@ Breaking it down, here's how it works:
   <button class="usa-accordion__button" aria-controls="code-offsets" aria-expanded="true">Code</button>
   <div id="code-offsets" class="usa-accordion__content">
 <div markdown="1">
-```html
+{% highlight html linenos %}
 {{ grid-offsets | strip }}
-```
+{% endhighlight %}
 </div>
   </div>
 </div>
@@ -412,9 +412,9 @@ Breaking it down, here's how it works:
   <button class="usa-accordion__button" aria-controls="code-wrapping" aria-expanded="true">Code</button>
   <div id="code-wrapping" class="usa-accordion__content">
 <div markdown="1">
-```html
+{% highlight html linenos %}
 {{ grid-wrapping | strip }}
-```
+{% endhighlight %}
 </div>
   </div>
 </div>
@@ -446,9 +446,9 @@ Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the
   <button class="usa-accordion__button" aria-controls="code-gutters" aria-expanded="true">Code</button>
   <div id="code-gutters" class="usa-accordion__content">
 <div markdown="1">
-```html
+{% highlight html linenos %}
 {{ grid-gutters | strip }}
-```
+{% endhighlight %}
 </div>
   </div>
 </div>
@@ -489,9 +489,9 @@ Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the
   <button class="usa-accordion__button" aria-controls="code-gutters-lg" aria-expanded="true">Code</button>
   <div id="code-gutters-lg" class="usa-accordion__content">
 <div markdown="1">
-```html
+{% highlight html linenos %}
 {{ grid-gutters-lg | strip }}
-```
+{% endhighlight %}
 </div>
   </div>
 </div>
@@ -504,7 +504,7 @@ Variables and maps determine the number of columns, the gutter width, and the me
 
 #### uswds-theme-spacing.scss
 
-```scss
+{% endhighlight %}scss
 // Values are set as units tokens.
 
 $theme-column-gap-sm:               2px;
@@ -517,11 +517,11 @@ $theme-site-max-width:              'desktop';
 $theme-site-margins-breakpoint:     'desktop';
 $theme-site-margins-width:          4;
 $theme-site-margins-mobile-width:   2;
-```
+{% endhighlight %}
 
 #### uswds-theme-utilities.scss
 
-```scss
+{% endhighlight %}scss
 // Turn on or off breakpoints
 $theme-utility-breakpoints: (
   'card':              false,   // 160px
@@ -534,12 +534,12 @@ $theme-utility-breakpoints: (
   'desktop-lg':        false,   // 1200px
   'widescreen':        false,   // 1400px
 );
-```
+{% endhighlight %}
 
 ### Mixins
 Mixins can be used in conjunction with the grid variables to add grid functionality to semantic component Sass.
 
-```scss
+{% endhighlight %}scss
 // Creates a wrapper for a series of rows
 // $container-size can be mobile, mobile-lg, tablet, tablet-lg, desktop, desktop-lg, or widescreen
 @include grid-container;
@@ -567,12 +567,12 @@ Mixins can be used in conjunction with the grid variables to add grid functional
 
 // $order can be first, last, initial, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
 @include u-order($order);
-```
+{% endhighlight %}
 
 ### Example usage
 You can modify the variables to your own custom values, or just use the mixins with their default values. Here’s an example of using the default settings to create a two-column layout with a gap between.
 
-```scss
+{% endhighlight %}scss
 .example-container {
   @include grid-container;
 }
@@ -609,4 +609,4 @@ You can modify the variables to your own custom values, or just use the mixins w
     @include grid-col(4);
   }
 }
-```
+{% endhighlight %}

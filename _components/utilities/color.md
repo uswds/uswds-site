@@ -75,7 +75,7 @@ utilities:
             | regexreplace: '.+?(\d+).*?$', '\1'
             | times: 1 %}
 
-          <div class="utility-example-container grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
+          <div class="utility-example-container grid-col-12 font-lang-xs display-flex flex-align-center flex-justify">
             <span class="radius-md padding-05 text-{{ color.token }}{% if grade < 50 %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
@@ -86,7 +86,7 @@ utilities:
         {% endfor %}
       </div>
 
-      <h3 class="font-sans-6 margin-top-4 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Grayscale palette</h3>
+      <h3 class="font-lang-6 margin-top-4 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Grayscale palette</h3>
 
       <div class="grid-row">
         {% for color in grayscale_colors %}
@@ -107,7 +107,7 @@ utilities:
                 | times: 1 %}
             {% endif %}
           {% endif %}
-          <div class="utility-example-container grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
+          <div class="utility-example-container grid-col-12 font-lang-xs display-flex flex-align-center flex-justify">
             <span class="radius-md padding-05 text-{{ color.token }}{% if grade < 50 %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
@@ -117,7 +117,7 @@ utilities:
         {% endfor %}
       </div>
 
-      <h3 class="font-sans-6 margin-top-4 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Basic palette</h3>
+      <h3 class="font-lang-6 margin-top-4 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Basic palette</h3>
 
       <div class="grid-row">
         {% for color in basic_colors %}
@@ -138,7 +138,7 @@ utilities:
                 | times: 1 %}
             {% endif %}
           {% endif %}
-          <div class="utility-example-container grid-col-12 font-sans-xs display-flex flex-align-center flex-justify">
+          <div class="utility-example-container grid-col-12 font-lang-xs display-flex flex-align-center flex-justify">
             <span class="radius-md padding-05 text-{{ color.token }}{% if grade < 50 %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
@@ -158,7 +158,7 @@ utilities:
     %}
 
     <section class="utility-examples">
-      <h3 class="font-sans-4 margin-top-0 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Project theme colors <a class="utility-examples-helper" href="{{ site.baseurl }}/design-tokens/color/theme-tokens/">Read more about project theme colors</a></h3>
+      <h3 class="font-lang-4 margin-top-0 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Project theme colors <a class="utility-examples-helper" href="{{ site.baseurl }}/design-tokens/color/theme-tokens/">Read more about project theme colors</a></h3>
       <div class="grid-row">
         {% for color in theme_colors %}
           {% assign system = system-colors | where: 'token', color.default %}
@@ -178,7 +178,7 @@ utilities:
     </section>
 
     <section class="utility-examples">
-      <h3 class="font-sans-4 margin-top-4 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Grayscale palette</h3>
+      <h3 class="font-lang-4 margin-top-4 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Grayscale palette</h3>
       <div class="grid-row">
         {% for color in grayscale_colors %}
           <p class="utility-example-container grid-col-12 display-flex flex-align-center measure-none">
@@ -196,7 +196,7 @@ utilities:
     </section>
 
     <section class="utility-examples">
-      <h3 class="font-sans-4 margin-top-4 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Basic palette</h3>
+      <h3 class="font-lang-4 margin-top-4 padding-bottom-1 margin-bottom-1 border-gray-10 border-bottom-1px">Basic palette</h3>
       <div class="grid-row">
         {% for color in basic_colors %}
           {% assign system = system-colors | where: 'token', color.default %}

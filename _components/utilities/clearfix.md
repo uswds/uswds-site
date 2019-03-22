@@ -41,12 +41,12 @@ utilities:
         <button class="usa-accordion__button" aria-controls="code-clearfix" aria-expanded="true">Code</button>
         <div id="code-clearfix" class="usa-accordion__content margin-bottom-1">
 <div markdown="1">
-```html
+{% highlight html linenos %}
 <div class="clearfix">
   <span class="float-left">.float-left</span>
   <span class="float-right">.float-right</span>
 </div>
-```
+{% endhighlight %}
 </div>
         </div>
       </div>

@@ -13,7 +13,7 @@ Utilities allow designers and developers to build and test new designs and compo
 
 They also make it possible to make element-specific overrides without writing high specificity variants into component CSS.
 
-USWDS provides useful default set of utilities that developers can extended and modify in their project's `_project-utilities-settings.scss` file (see Utility settings) to suit your project's needs and their development preferences.
+USWDS provides useful default set of utilities that developers can extended and modify in their project's `_uswds-theme-utilities.scss` file (see Utility settings) to suit your project's needs and their development preferences.
 
 ## Utility naming
 

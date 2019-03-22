@@ -21,7 +21,7 @@ subnav:
 ---
 
 ## Introduction
-USWDS organizes its colors tokens into [theme tokens]({{ site.baseurl }}/design-tokens/color/theme-tokens/), [state tokens]({{ site.baseurl }}/design-tokens/color/state-tokens/), and [system tokens]({{ site.baseurl }}/design-tokens/color/system-tokens/). System tokens are the complete set of colors available to the design system. Project tokens are a smaller, role-based subset customized to your project's individual identity, tone, and needs. It will use only a few color families from the broader set of 24 color families available in the system token set.
+USWDS organizes its colors tokens into [theme tokens]({{ site.baseurl }}/design-tokens/color/theme-tokens/), [state tokens]({{ site.baseurl }}/design-tokens/color/state-tokens/), and [system tokens]({{ site.baseurl }}/design-tokens/color/system-tokens/). System tokens are the complete set of colors available to USWDS. Project tokens are a smaller, role-based subset customized to your project's individual identity, tone, and needs. It will use only a few color families from the broader set of 24 color families available in the system token set.
 
 **Use USWDS color tokens and avoid custom colors whenever possible.** In the long run, it’s a better user experience across government when there’s coherence across sites and services. Of course, your mission, project needs, and user needs always come first, but if you plan to contribute your work back into the system — which helps the system learn, adapt, and improve — that work will need to conform to system standards and use USWDS tokens.
 
@@ -30,8 +30,8 @@ USWDS organizes its colors tokens into [theme tokens]({{ site.baseurl }}/design-
 <div class="bg-base-lighter measure-3 padding-3 usa-section" markdown="1">
 {:.font-sans-xs}
 
-{:.font-sans-xs.color-ink.text-bold.text-ls-2}
-### COLOR, COLOR FAMILY, AND GRADE
+{:.font-lang-xs.color-ink.text-bold.text-ls-2.margin-top-0.text-uppercase}
+### Color, color family, and grade
 
 Throughout our documentation and guidance, we’ll use use the terms color, color family, and grade, but what do we mean when we use them?
 
@@ -102,7 +102,7 @@ USWDS helps teams choose accessible colors with a color grade system. Let’s lo
 {% endcapture %}
 {{ gray-grade }}
 
-{:.font-sans-2xs}
+{:.font-lang-2xs}
 **Above:** Each color family has ten grades, from 5-90. Pure `white` is the equivalent of grade 0, and pure `black` is the equivalent of grade 100.
 
 ### Magic number
@@ -119,13 +119,13 @@ Use USWDS magic numbers to choose accessible color combinations from any palette
 {:.measure-3}
 ![gray color contrast example]({{ site.baseurl }}/assets/img/design-tokens/gray-example.png)
 
-{:.font-sans-2xs}
+{:.font-lang-2xs}
 **Above:** Since `90 – 50 = 40`, on a background of `gray-90` use grades of `40` and below to assure Section 508 AA contrast. Grades of `50` and below are acceptable for large text.
 
 {:.measure-3 .margin-top-5}
 ![indigo color contrast example]({{ site.baseurl }}/assets/img/design-tokens/indigo-warm-example.png)
 
-{:.font-sans-2xs}
+{:.font-lang-2xs}
 **Above:** The color grade system works across color families.
 
 ### Color, contrast, and readability
@@ -147,13 +147,13 @@ The vivid palette is incomplete. We’ve added vivid variants as we’ve found a
 {:.bg-white.padding-2.radius-md}
 ![standard color wheel]({{ site.baseurl }}/assets/img/design-tokens/uswds-standard-color-wheel.jpg)
 
-{:.font-sans-2xs}
+{:.font-lang-2xs}
 **Above:** USWDS standard system color tokens wheel
 
 {:.bg-white.padding-2.radius-md.margin-top-4}
 ![vivid color wheel]({{ site.baseurl }}/assets/img/design-tokens/uswds-vivid-color-wheel.jpg)
 
-{:.font-sans-2xs}
+{:.font-lang-2xs}
 **Above:** USWDS vivid system color tokens wheel
 
 ## General color guidance

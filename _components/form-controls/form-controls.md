@@ -22,8 +22,7 @@ subnav:
   href: '#validation'
 ---
 
+<div class="bg-warning padding-1 radius-sm measure-5"><strong>Note:</strong> If you are a building a form with multiple controls, also consider the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines in the “Form Templates” section</a>.</div>
+
 {% include accessibility.html %}
-
-<p>If you are a building a form with multiple controls, also consider the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines in the “Form Templates” section</a>.</p>
-
 {% include child-sections.html parent='Form controls' %}

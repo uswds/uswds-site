@@ -239,7 +239,7 @@ vals_negative:
                 {{ output }}
               {% endcapture %}
               {% capture this_example %}
-                <p class="font-{{ family.token }}-2xs line-height-{{ family.token }}-{{ this_lh }} margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+                <p class="font-{{ family.token }}-2xs line-height-{{ family.token }}-{{ this_lh }} measure-5 margin-top-0">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
               {% endcapture %}
               {% include utilities/utility-example.html
                 wrap = true
@@ -277,7 +277,7 @@ vals_negative:
             {{ measure.value }}
           {% endcapture %}
           {% capture this_example %}
-            <p class="font-serif-md line-height-serif-4 margin-top-0 measure-{{ measure.token }} border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+            <p class="font-serif-md line-height-serif-4 margin-top-0 measure-{{ measure.token }} border-bottom-05 border-secondary-light padding-bottom-05 margin-bottom-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
           {% endcapture %}
           {% include utilities/utility-example.html
             wrap = true
@@ -313,7 +313,7 @@ vals_negative:
             {{ alignment }}
           {% endcapture %}
           {% capture this_example %}
-            <p class="font-serif-2xs line-height-serif-4 margin-top-0 text-{{ alignment }}">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
+            <p class="font-serif-2xs line-height-serif-4 margin-top-0 measure-4 text-{{ alignment }}">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
           {% endcapture %}
           {% include utilities/utility-example.html
             utility = this_class
@@ -346,7 +346,7 @@ vals_negative:
             {{ item.value }}
           {% endcapture %}
           {% capture this_example %}
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-{{ item.equiv }} text-indent-{{ item.token }}">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre">  </span></span></p>
+            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-{{ item.equiv }} text-indent-{{ item.token }}">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre">  </span></span></p>
           {% endcapture %}
           {% include utilities/utility-example.html
             wrap = true
@@ -369,7 +369,7 @@ vals_negative:
             {{ item.value }}
           {% endcapture %}
           {% capture this_example %}
-            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-{{ item.equiv }} text-indent-{{ item.token }}">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre">  </span></span></p>
+            <p class="font-serif-sm line-height-serif-4 margin-top-0 margin-bottom-2 text-left measure-4 padding-left-{{ item.equiv }} text-indent-{{ item.token }}">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend’s friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result. <span class="font-sans-xs margin-top-05 display-block border-left-1px border-secondary-light"><span class="border-left-1px border-secondary-light display-inline-block text-indent-0 padding-left-1 text-pre">  </span></span></p>
           {% endcapture %}
           {% include utilities/utility-example.html
             wrap = true
@@ -484,13 +484,13 @@ vals_negative:
     {% include utilities/values-intro.html %}
 
     <aside class="example border-left-05 border-secondary-light padding-left-105 margin-top-2">
-      <h4 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h4>
+      <h4 class="font-lang-2xs margin-top-0 margin-bottom-05">Example</h4>
 <pre class="font-mono-xs margin-0 padding-0 bg-transparent">
 $text-indent-palettes: (
   'palette-units-small-negative' // note: no trailing comma
 );
 </pre>
-    <h4 class="font-sans-2xs margin-top-2 margin-bottom-05">Output</h4>
+    <h4 class="font-lang-2xs margin-top-2 margin-bottom-05">Output</h4>
 <pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
 .text-indent-neg-05  { text-indent: -.25rem; }
 .text-indent-neg-1   { text-indent: -.5rem; }

@@ -156,11 +156,11 @@ utilities:
         </div>
       </div>
 
-      <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4 margin-bottom-1">
+      <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4 margin-bottom-1">
         <button class="usa-accordion__button" aria-controls="code-relative" aria-expanded="true">Code</button>
         <div id="code-relative" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
-```html
+{% highlight html linenos %}
 <div class="display-block border-1px ...">.display-block</div>
 <div class="display-flex border-1px ...">.display-flex</div>
 <div class="display-inline border-1px ...">.display-inline</div>
@@ -172,7 +172,7 @@ utilities:
   <div class="display-table-cell border-1px ...">.display-table-cell</div>
   <div class="display-table-cell border-1px ...">.display-table-cell</div>
 </div>
-```
+{% endhighlight %}
 </div>
         </div>
       </div>
@@ -300,27 +300,27 @@ utilities:
 
         <div class="grid-col-12">
           <div class="utility-example-container">
-            <p class="margin-0 font-sans-2xs"><span class="utility-class">.position-absolute</span></p>
+            <p class="margin-0 font-lang-2xs"><span class="utility-class">.position-absolute</span></p>
           </div>
         </div>
         <div class="grid-col-12">
           <div class="utility-example-container">
-            <p class="margin-0 font-sans-2xs"><span class="utility-class">.position-fixed</span></p>
+            <p class="margin-0 font-lang-2xs"><span class="utility-class">.position-fixed</span></p>
           </div>
         </div>
         <div class="grid-col-12">
           <div class="utility-example-container">
-            <p class="margin-0 font-sans-2xs"><span class="utility-class">.position-relative</span></p>
+            <p class="margin-0 font-lang-2xs"><span class="utility-class">.position-relative</span></p>
           </div>
         </div>
         <div class="grid-col-12">
           <div class="utility-example-container">
-            <p class="margin-0 font-sans-2xs"><span class="utility-class">.position-static</span></p>
+            <p class="margin-0 font-lang-2xs"><span class="utility-class">.position-static</span></p>
           </div>
         </div>
         <div class="grid-col-12">
           <div class="utility-example-container">
-            <p class="margin-0 font-sans-2xs"><span class="utility-class">.position-sticky</span></p>
+            <p class="margin-0 font-lang-2xs"><span class="utility-class">.position-sticky</span></p>
           </div>
         </div>
       </div>
@@ -329,28 +329,28 @@ utilities:
       <div class="grid-row grid-gap margin-top-2">
         <div class="tablet:grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 margin-bottom-2 radius-md overflow-hidden">
-            <div class="position-static height-card border-1px border-secondary-light padding-2 text-ink"><p class="margin-0 font-sans-2xs text-ink"><span class="utility-class text-ink">.position-static</span></p>
+            <div class="position-static height-card border-1px border-secondary-light padding-2 text-ink"><p class="margin-0 font-lang-2xs text-ink"><span class="utility-class text-ink">.position-static</span></p>
               <div class="position-absolute bottom-0 left-0 bg-secondary-light padding-2 text-ink is-inverse">
-                <p class="margin-0 font-sans-2xs"><span class="utility-class">.position-absolute</span></p>
+                <p class="margin-0 font-lang-2xs"><span class="utility-class">.position-absolute</span></p>
               </div>
             </div>
           </div>
         </div>
         <div class="tablet:grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 margin-bottom-2 radius-md overflow-hidden">
-            <div class="position-relative height-card border-1px border-secondary-light padding-2 text-ink"><p class="margin-0 font-sans-2xs text-ink"><span class="utility-class text-ink">.position-relative</span></p>
+            <div class="position-relative height-card border-1px border-secondary-light padding-2 text-ink"><p class="margin-0 font-lang-2xs text-ink"><span class="utility-class text-ink">.position-relative</span></p>
               <div class="position-absolute bottom-0 left-0 bg-secondary-light padding-2 text-ink is-inverse">
-                <p class="margin-0 font-sans-2xs"><span class="utility-class">.position-absolute</span></p>
+                <p class="margin-0 font-lang-2xs"><span class="utility-class">.position-absolute</span></p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-0">
+      <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-0">
         <button class="usa-accordion__button" aria-controls="code-static-relative" aria-expanded="true">Code</button>
         <div id="code-static-relative" class="usa-accordion__content">
 <div markdown="1">
-```html
+{% highlight html linenos %}
 <div class="position-relative">
   <div class="position-static">
     <div class="position-absolute bottom-0 left-0">
@@ -366,7 +366,7 @@ utilities:
     </div>
   </div>
 </div>
-```
+{% endhighlight %}
 </div>
         </div><!-- accordion-content -->
       </div><!-- code-sample -->
@@ -380,7 +380,7 @@ utilities:
           </div>
           <div class="position-absolute pin-all overflow-auto padding-top-7 padding-x-3 text-ink">
             <div class="measure-6">
-              <p class="text-ink"><span class="display-inline-block bg-ink text-white is-inverse padding-x-1 font-sans-2xs text-bold">Scroll me!</span></p>
+              <p class="text-ink"><span class="display-inline-block bg-ink text-white is-inverse padding-x-1 font-lang-2xs text-bold">Scroll me!</span></p>
               <p class="line-height-sans-6">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
               <p class="line-height-sans-6">I found Simon Wheeler dozing comfortably by the bar-room stove of the old, dilapidated tavern in the ancient mining camp of Angel's, and I noticed that he was fat and bald-headed, and had an expression of winning gentleness and simplicity upon his tranquil countenance. He roused up and gave me good-day. I told him a friend of mine had commissioned me to make some inquiries about a cherished companion of his boyhood named Leonidas W. Smiley Rev. Leonidas W. Smiley a young minister of the Gospel, who he had heard was at one time a resident of Angel's Camp. I added that, if Mr. Wheeler could tell me any thing about this Rev. Leonidas W. Smiley, I would feel under many obligations to him.</p>
               <p class="line-height-sans-6">Simon Wheeler backed me into a corner and blockaded me there with his chair, and then sat me down and reeled off the monotonous narrative which follows this paragraph. He never smiled, he never frowned, he never changed his voice from the gentle-flowing key to which he tuned the initial sentence, he never betrayed the slightest suspicion of enthusiasm; but all through the interminable narrative there ran a vein of impressive earnestness and sincerity, which showed me plainly that, so far from his imagining that there was any thing ridiculous or funny about his story, he regarded it as a really important matter, and admired its two heroes as men of transcendent genius in finesse. To me, the spectacle of a man drifting serenely along through such a queer yarn without ever smiling, was exquisitely absurd. As I said before, I asked him to tell me what he knew of Rev. Leonidas W. Smiley, and he replied as follows. I let him go on in his own way, and never interrupted him once:</p>
@@ -389,17 +389,17 @@ utilities:
           </div>
         </div>
       </div>
-      <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-2">
+      <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-2">
         <button class="usa-accordion__button" aria-controls="code-fixed" aria-expanded="true">Code</button>
         <div id="code-fixed" class="usa-accordion__content">
 <div markdown="1">
-```html
+{% highlight html linenos %}
 <div class="position-relative">
   <div class="position-fixed pin-top bg-secondary-light">
     .position-fixed
   </div>
 </div>
-```
+{% endhighlight %}
 </div>
         </div><!-- accordion-content -->
       </div><!-- code-sample -->
@@ -409,7 +409,7 @@ utilities:
         <div class="pin-all overflow-scroll padding-x-2">
           <div>
             <div class="position-sticky top-0 bg-secondary-light padding-x-2 padding-y-1 text-bold text-ink display-flex flex-justify">Sticky Heading 1 <span class="utility-class text-normal">.position-sticky</span></div>
-            <p class="text-ink padding-x-2"><span class="display-inline-block bg-ink text-white is-inverse padding-x-1 font-sans-2xs text-bold">Scroll me!</span></p>
+            <p class="text-ink padding-x-2"><span class="display-inline-block bg-ink text-white is-inverse padding-x-1 font-lang-2xs text-bold">Scroll me!</span></p>
             <p class="line-height-sans-6 padding-x-2">Thish-yer Smiley had a mare the boys called her the fifteen- minute nag, but that was only in fun, you know, because, of course, she was faster than that and he used to win money on that horse, for all she was so slow and always had the asthma, or the distemper, or the consumption, or something of that kind. They used to give her two or three hundred yards start, and then pass her under way; but always at the fag-end of the race she'd get excited and desperate- like, and come cavorting and straddling up, and scattering her legs around limber, sometimes in the air, and sometimes out to one side amongst the fences, and kicking up m-o-r-e dust, and raising m-o-r-e racket with her coughing and sneezing and blowing her nose and always fetch up at the stand just about a neck ahead, as near as you could cipher it down.</p>
           </div>
           <div>
@@ -431,11 +431,11 @@ utilities:
           </div>
         </div>
       </div>
-      <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-2 margin-bottom-1">
+      <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-2 margin-bottom-1">
         <button class="usa-accordion__button" aria-controls="code-sticky" aria-expanded="true">Code</button>
         <div id="code-sticky" class="usa-accordion__content">
 <div markdown="1">
-```html
+{% highlight html linenos %}
 <div class="position-relative overflow-scroll">
   <div>
     <div class="position-sticky bg-secondary-light">Sticky Heading 1</div>
@@ -454,7 +454,7 @@ utilities:
     <p>...</p>
   </div>
 </div>
-```
+{% endhighlight %}
 </div>
         </div>
       </div>
@@ -510,84 +510,84 @@ utilities:
         <div class="grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
             <div class="pin-top bg-secondary-light padding-2 text-ink is-inverse">
-              <div class="margin-0 font-sans-2xs"><span class="utility-class">.pin-top</span></div>
+              <div class="margin-0 font-lang-2xs"><span class="utility-class">.pin-top</span></div>
             </div>
           </div>
         </div>
         <div class="grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
             <div class="pin-bottom bg-secondary-light padding-2 text-ink is-inverse">
-              <div class="margin-0 font-sans-2xs"><span class="utility-class">.pin-bottom</span></div>
+              <div class="margin-0 font-lang-2xs"><span class="utility-class">.pin-bottom</span></div>
             </div>
           </div>
         </div>
         <div class="grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
             <div class="pin-left bg-secondary-light padding-2 text-ink is-inverse">
-              <div class="margin-0 font-sans-2xs"><span class="utility-class">.pin-left</span></div>
+              <div class="margin-0 font-lang-2xs"><span class="utility-class">.pin-left</span></div>
             </div>
           </div>
         </div>
         <div class="grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
             <div class="pin-right bg-secondary-light padding-2 text-ink is-inverse">
-              <div class="margin-0 font-sans-2xs"><span class="utility-class">.pin-right</span></div>
+              <div class="margin-0 font-lang-2xs"><span class="utility-class">.pin-right</span></div>
             </div>
           </div>
         </div>
         <div class="grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
             <div class="pin-x bg-secondary-light padding-2 text-ink is-inverse">
-              <div class="margin-0 font-sans-2xs"><span class="utility-class">.pin-x</span></div>
+              <div class="margin-0 font-lang-2xs"><span class="utility-class">.pin-x</span></div>
             </div>
           </div>
         </div>
         <div class="grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
             <div class="pin-y bg-secondary-light padding-2 text-ink is-inverse">
-              <div class="margin-0 font-sans-2xs"><span class="utility-class">.pin-y</span></div>
+              <div class="margin-0 font-lang-2xs"><span class="utility-class">.pin-y</span></div>
             </div>
           </div>
         </div>
         <div class="grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
             <div class="pin-all bg-secondary-light padding-2 text-ink is-inverse">
-              <div class="margin-0 font-sans-2xs"><span class="utility-class">.pin-all</span></div>
+              <div class="margin-0 font-lang-2xs"><span class="utility-class">.pin-all</span></div>
             </div>
           </div>
         </div>
         <div class="grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
             <div class="pin-none bg-secondary-light padding-2 text-ink is-inverse">
-              <div class="margin-0 font-sans-2xs"><span class="utility-class">.pin-none</span></div>
+              <div class="margin-0 font-lang-2xs"><span class="utility-class">.pin-none</span></div>
             </div>
           </div>
         </div>
         <div class="grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
             <div class="pin-top pin-x bg-secondary-light padding-2 text-ink is-inverse">
-              <div class="margin-0 font-sans-2xs"><span class="utility-class">.pin-top.pin-x</span></div>
+              <div class="margin-0 font-lang-2xs"><span class="utility-class">.pin-top.pin-x</span></div>
             </div>
           </div>
         </div>
         <div class="grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
             <div class="pin-bottom pin-x bg-secondary-light padding-2 text-ink is-inverse">
-              <div class="margin-0 font-sans-2xs"><span class="utility-class">.pin-bottom.pin-x</span></div>
+              <div class="margin-0 font-lang-2xs"><span class="utility-class">.pin-bottom.pin-x</span></div>
             </div>
           </div>
         </div>
         <div class="grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
             <div class="pin-left pin-y bg-secondary-light padding-2 text-ink is-inverse">
-              <div class="margin-0 font-sans-2xs"><span class="utility-class">.pin-left.pin-y</span></div>
+              <div class="margin-0 font-lang-2xs"><span class="utility-class">.pin-left.pin-y</span></div>
             </div>
           </div>
         </div>
         <div class="grid-col-6">
           <div class="position-relative border-1px border-secondary-light padding-2 height-card margin-bottom-2">
             <div class="pin-right pin-y bg-secondary-light padding-2 text-ink is-inverse">
-              <div class="margin-0 font-sans-2xs"><span class="utility-class">.pin-right.pin-y</span></div>
+              <div class="margin-0 font-lang-2xs"><span class="utility-class">.pin-right.pin-y</span></div>
             </div>
           </div>
         </div>
@@ -822,14 +822,14 @@ utilities:
     {% include utilities/values-intro.html %}
 
     <aside class="example border-left-05 border-secondary-light padding-left-105 margin-top-2">
-      <h4 class="font-sans-2xs margin-top-0 margin-bottom-05">Example</h4>
+      <h4 class="font-lang-2xs margin-top-0 margin-bottom-05">Example</h4>
 <pre class="font-mono-xs margin-0 padding-0 bg-transparent">
 $top-palettes: (
   'palette-units-system-smaller',
   'palette-units-system-smaller-negative', // note: no trailing comma
 );
 </pre>
-    <h4 class="font-sans-2xs margin-top-2 margin-bottom-05">Output</h4>
+    <h4 class="font-lang-2xs margin-top-2 margin-bottom-05">Output</h4>
 <pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
 .top-1px     { margin: 1px; }
 .top-2px     { margin: 2px; }

@@ -44,35 +44,38 @@ subnav:
 {{ grid-1 }}
 </div>
 
-<div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4">
+<div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
   <button class="usa-accordion__button" aria-controls="code-sticky" aria-expanded="true">Code</button>
   <div id="code-sticky" class="usa-accordion__content">
 <div markdown="1">
-```html
+{% highlight html linenos %}
 {{ grid-1 | strip }}
-```
+{% endhighlight %}
 </div>
   </div>
 </div>
 
-<div markdown="1">
 The above example creates three equal-width columns on tablet, desktop, and widescreen devices using our predefined grid classes. Those columns are centered in the page with the parent `grid-container` container.
 
 Breaking it down, here's how it works:
 
-- **Containers** `grid-container` centers the container and gives it a maximum width of `desktop` (1024px). If you would like the grid to span the full width of the page, do not use `grid-container`.
+### Containers, rows, and columns
 
-  `grid-container` can also accept any breakpoint width like `grid-container-tablet-lg` or `grid-container-widescreen`. Set the default max width with `$theme-site-max-width` in `uswds-theme-spacing.scss`.
+{:.usa-content-list}
+- **Containers:** `grid-container` centers the container and gives it a maximum width of `desktop` (1024px). If you would like the grid to span the full width of the page, do not use `grid-container`.
+  - `grid-container` can also accept any breakpoint width like `grid-container-tablet-lg` or `grid-container-widescreen`. Set the default max width with `$theme-site-max-width` in `uswds-theme-spacing.scss`.
+  - By default, `grid-container`s have padding-x of 2 units, with a padding-x of 4 units at `desktop` and wider. Control these values with the values of `$theme-site-margins-mobile-width`, `$theme-site-margins-width` and `$theme-site-margins-beakpoint` in `uswds-theme-spacing.scss`.
+- **Rows:** Columns must have a `grid-row` as a parent.
+- **Columns:** `grid-col-[1-12]` indicates the number of columns the item spans out of a possible 12 per row. So, if you want three equal-width columns across, use `grid-col-4` for each item.
 
-  By default, `grid-container`s have padding-x of 2 units, with a padding-x of 4 units at `desktop` and wider. Control these values with the values of `$theme-site-margins-mobile-width`, `$theme-site-margins-width` and `$theme-site-margins-beakpoint` in `uswds-theme-spacing.scss`.
-- **Rows** Columns must have a `grid-row` as a parent.
-- **Columns** `grid-col-[1-12]` indicates the number of columns the item spans out of a possible 12 per row. So, if you want three equal-width columns across, use `grid-col-4` for each item.
-- With flexbox, grid columns without a specified width will display as equal-width columns. For example, four instances of `grid-col` will display as one-quarter-width columns across all sizes. See the [auto-layout columns](#auto-layout-columns) section for more examples.
-- Rows and columns don't have any gutters by default, but they can be added by adding `grid-gap-sm`, `grid-gap`, or `grid-gap-lg` at the row level. See [gutters](#gutters) for more info.
-- Grid breakpoints are based on minimum width media queries, meaning they apply to that specific width and all greater widths (e.g., `tablet:col-4` applies to tablet, desktop, and widescreen devices, but not at `mobile-lg` or any width below the tablet breakpoint). See [responsive variants](#responsive-variants) for full list.
-- You can use predefined grid classes (like `grid-col-4`) for presentational markup or [Sass mixins](#sass-mixins) for more semantic markup.
+### Additional functionality
 
-</div>
+{:.usa-content-list}
+- **Equal-width columns:** With flexbox, grid columns without a specified width will display as equal-width columns. For example, four instances of `grid-col` will display as one-quarter-width columns across all sizes. See the [auto-layout columns](#auto-layout-columns) section for more examples.
+- **Gutters:** Rows and columns don't have any gutters by default, but they can be added by adding `grid-gap-sm`, `grid-gap`, or `grid-gap-lg` at the row level. See [gutters](#gutters) for more info.
+- **Media queries:** Grid breakpoints are based on minimum width media queries, meaning they apply to that specific width and all greater widths (e.g., `tablet:col-4` applies to tablet, desktop, and widescreen devices, but not at `mobile-lg` or any width below the tablet breakpoint). See [responsive variants](#responsive-variants) for full list.
+- **Sass mixins:** You can use predefined grid classes (like `grid-col-4`) for presentational markup or [Sass mixins](#sass-mixins) for more semantic markup.
+
 
 <h2 id="responsive-variants">Responsive variants</h2>
 
@@ -92,7 +95,7 @@ Breaking it down, here's how it works:
     <tbody class="font-mono-2xs">
       <tr>
         <td scope="row" data-title="Width" class="flex-2">
-          <span class="font-sans-2xs text-bold">
+          <span class="font-lang-2xs text-bold">
             Smallest
           </span>
         </td>
@@ -124,7 +127,7 @@ Breaking it down, here's how it works:
       </tr>
       <tr>
         <td scope="row" data-title="Width" class="flex-2">
-          <span class="font-sans-2xs text-bold">
+          <span class="font-lang-2xs text-bold">
             Mobile large
           </span>
         </td>
@@ -156,7 +159,7 @@ Breaking it down, here's how it works:
       </tr>
       <tr>
         <td scope="row" data-title="Width" class="flex-2">
-          <span class="font-sans-2xs text-bold">
+          <span class="font-lang-2xs text-bold">
             Tablet
           </span>
         </td>
@@ -188,7 +191,7 @@ Breaking it down, here's how it works:
       </tr>
       <tr>
         <td scope="row" data-title="Width" class="flex-2">
-          <span class="font-sans-2xs text-bold">
+          <span class="font-lang-2xs text-bold">
             Desktop
           </span>
         </td>
@@ -242,13 +245,13 @@ Breaking it down, here's how it works:
 {{ grid-auto }}
 </div>
 
-<div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4">
+<div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
   <button class="usa-accordion__button" aria-controls="code-auto" aria-expanded="true">Code</button>
   <div id="code-auto" class="usa-accordion__content">
 <div markdown="1">
-```html
+{% highlight html linenos %}
 {{ grid-auto | strip }}
-```
+{% endhighlight %}
 </div>
   </div>
 </div>
@@ -288,13 +291,13 @@ Breaking it down, here's how it works:
 {{ grid-responsive }}
 </div>
 
-<div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4">
+<div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
   <button class="usa-accordion__button" aria-controls="code-responsive" aria-expanded="true">Code</button>
   <div id="code-responsive" class="usa-accordion__content">
 <div markdown="1">
-```html
+{% highlight html linenos %}
 {{ grid-responsive | strip }}
-```
+{% endhighlight %}
 </div>
   </div>
 </div>
@@ -318,13 +321,13 @@ Breaking it down, here's how it works:
 {{ grid-stacked }}
 </div>
 
-<div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4">
+<div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
   <button class="usa-accordion__button" aria-controls="code-stacked" aria-expanded="true">Code</button>
   <div id="code-stacked" class="usa-accordion__content">
 <div markdown="1">
-```html
+{% highlight html linenos %}
 {{ grid-stacked | strip }}
-```
+{% endhighlight %}
 </div>
   </div>
 </div>
@@ -355,13 +358,13 @@ Breaking it down, here's how it works:
 {{ grid-mix }}
 </div>
 
-<div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4">
+<div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
   <button class="usa-accordion__button" aria-controls="code-mix" aria-expanded="true">Code</button>
   <div id="code-mix" class="usa-accordion__content">
 <div markdown="1">
-```html
+{% highlight html linenos %}
 {{ grid-mix | strip }}
-```
+{% endhighlight %}
 </div>
   </div>
 </div>
@@ -379,13 +382,13 @@ Breaking it down, here's how it works:
 {{ grid-offsets }}
 </div>
 
-<div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4">
+<div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
   <button class="usa-accordion__button" aria-controls="code-offsets" aria-expanded="true">Code</button>
   <div id="code-offsets" class="usa-accordion__content">
 <div markdown="1">
-```html
+{% highlight html linenos %}
 {{ grid-offsets | strip }}
-```
+{% endhighlight %}
 </div>
   </div>
 </div>
@@ -405,13 +408,13 @@ Breaking it down, here's how it works:
 {{ grid-wrapping }}
 </div>
 
-<div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4">
+<div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
   <button class="usa-accordion__button" aria-controls="code-wrapping" aria-expanded="true">Code</button>
   <div id="code-wrapping" class="usa-accordion__content">
 <div markdown="1">
-```html
+{% highlight html linenos %}
 {{ grid-wrapping | strip }}
-```
+{% endhighlight %}
 </div>
   </div>
 </div>
@@ -439,14 +442,14 @@ Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the
 {{ grid-gutters }}
 </div>
 
-<div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4">
+<div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
   <button class="usa-accordion__button" aria-controls="code-gutters" aria-expanded="true">Code</button>
   <div id="code-gutters" class="usa-accordion__content">
-<div markdown="1">
-```html
+
+{% highlight html linenos %}
 {{ grid-gutters | strip }}
-```
-</div>
+{% endhighlight %}
+
   </div>
 </div>
 
@@ -482,28 +485,26 @@ Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the
 {{ grid-gutters-lg }}
 </div>
 
-<div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4">
+<div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
   <button class="usa-accordion__button" aria-controls="code-gutters-lg" aria-expanded="true">Code</button>
   <div id="code-gutters-lg" class="usa-accordion__content">
-<div markdown="1">
-```html
+
+{% highlight html linenos %}
 {{ grid-gutters-lg | strip }}
-```
-</div>
+{% endhighlight %}
+
   </div>
 </div>
 
 <h2 id="sass-mixins">Sass mixins</h2>
-<div markdown="1">
 When generating your CSS from USWDS source files, you have the option of customizing many system defaults by modifying project theme variables. USWDS also provides grid mixins for adding grid functionality to custom semantic component CSS.
 
 ### Variables
 Variables and maps determine the number of columns, the gutter width, and the media query point at which to begin floating columns. We use these to generate the predefined grid classes documented above, as well as for the custom mixins listed below.
 
-{:.font-mono-xs}
 #### uswds-theme-spacing.scss
 
-```scss
+{% highlight scss %}
 // Values are set as units tokens.
 
 $theme-column-gap-sm:               2px;
@@ -516,12 +517,11 @@ $theme-site-max-width:              'desktop';
 $theme-site-margins-breakpoint:     'desktop';
 $theme-site-margins-width:          4;
 $theme-site-margins-mobile-width:   2;
-```
+{% endhighlight %}
 
-{:.font-mono-xs}
 #### uswds-theme-utilities.scss
 
-```scss
+{% highlight scss %}
 // Turn on or off breakpoints
 $theme-utility-breakpoints: (
   'card':              false,   // 160px
@@ -534,12 +534,12 @@ $theme-utility-breakpoints: (
   'desktop-lg':        false,   // 1200px
   'widescreen':        false,   // 1400px
 );
-```
+{% endhighlight %}
 
 ### Mixins
 Mixins can be used in conjunction with the grid variables to add grid functionality to semantic component Sass.
 
-```scss
+{% highlight scss %}
 // Creates a wrapper for a series of rows
 // $container-size can be mobile, mobile-lg, tablet, tablet-lg, desktop, desktop-lg, or widescreen
 @include grid-container;
@@ -567,12 +567,12 @@ Mixins can be used in conjunction with the grid variables to add grid functional
 
 // $order can be first, last, initial, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11
 @include u-order($order);
-```
+{% endhighlight %}
 
 ### Example usage
 You can modify the variables to your own custom values, or just use the mixins with their default values. Here’s an example of using the default settings to create a two-column layout with a gap between.
 
-```scss
+{% highlight scss %}
 .example-container {
   @include grid-container;
 }
@@ -609,5 +609,4 @@ You can modify the variables to your own custom values, or just use the mixins w
     @include grid-col(4);
   }
 }
-```
-</div>
+{% endhighlight %}

@@ -4,6 +4,7 @@ tags:
 - case study
 - web design standards
 - design
+category: About USWDS
 ---
 The U.S. Web Design Standards team continues to sit down with various agencies who are using the Standards. In this fourth post in our series, we met with the team at the [Lab@OPM](https://lab.opm.gov/) and learned how they used the Standards to refresh [USAJOBS](https://www.usajobs.gov/).
 
@@ -19,7 +20,7 @@ The U.S. Web Design Standards team continues to sit down with various agencies w
 
 **USAJOBS Team**: The development team we were working with was a little hesitant to change things up because they had already been using Bootstrap. However, we gave the pitch on why it’s good to establish your own design system and decided the Standards would be a good foundation for that work.
 
-There were some struggles with how the developers were consuming the design system in their code – they were using compiled assets rather than the Sass files – but it was something we were able to work through. Some folks were less familiar with the idea of using a design system to help create designs and there was a bit of a learning curve, however, over time it was easy to see how using the Standards could speed things up.
+There were some struggles with how the developers were consuming USWDS in their code – they were using compiled assets rather than the Sass files – but it was something we were able to work through. Some folks were less familiar with the idea of using a design system to help create designs and there was a bit of a learning curve, however, over time it was easy to see how using the Standards could speed things up.
 
 **Standards team**: What were the benefits you gained? How much time or money did this save?
 

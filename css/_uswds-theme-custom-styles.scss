@@ -14,6 +14,8 @@ $theme-site-cols-split: 'tablet';
 $theme-site-cols-show: 'desktop';
 $theme-grid-gap-default: 'md';
 
+$site-measure: 5;
+
 @mixin grid-cols($default, $split: null, $full: null) {
   @if $default != null {
     @include grid-col($default);
@@ -84,12 +86,17 @@ $site-background-color: 'gray-1';
 
 html,
 body {
+  @include typeset('lang');
   height: auto;
   color: color($site-ink);
 }
 
 .usa-center {
   text-align: center;
+}
+
+.usa-prose site-prose {
+  @include typeset('lang');
 }
 
 // ========================================
@@ -121,6 +128,8 @@ body {
 
     @include at-media('desktop') {
       display: initial;
+      float: left;
+      margin-bottom: 0;
       margin-left: units($theme-site-margins-width);
     }
 
@@ -147,7 +156,7 @@ body {
     // scss-lint:disable SelectorDepth, NestingDepth
     li {
       display: inline;
-      font-family: font-family('sans');
+      font-family: font-family('lang');
 
       &:last-child .usa-button {
         margin-right: 0;
@@ -248,7 +257,7 @@ body {
   .usa-logo__text {
     $logo-size-mobile: 3;
     $logo-size-desktop: 3;
-    @include u-font('sans', 'xs');
+    @include u-font('lang', 'xs');
     line-height: units(5);
 
     &::before {
@@ -271,7 +280,7 @@ body {
     }
 
     @include at-media('desktop') {
-      @include typeset('sans', 'lg', 1);
+      @include typeset('lang', 'lg', 1);
       line-height: units(9);
     }
   }
@@ -303,7 +312,7 @@ body {
   }
 
   a {
-    @include typeset('ui', 'xs', 1);
+    @include typeset('lang', 'xs', 1);
     color: color('gray-50');
     display: inline-block;
     font-weight: fw('normal');
@@ -350,7 +359,7 @@ body {
 // Sidebar Nav --------- //
 
 .site-sidenav.usa-sidenav {
-  @include typeset('sans', 'xs', 3);
+  @include typeset('lang', 'xs', 3);
   background-color: color('white');
   border: units($site-border-width) solid color('black-transparent-10');
   border-radius: radius('md');
@@ -397,7 +406,7 @@ body {
 
   .usa-sidenav__item {
     border-top: none;
-    line-height: lh('sans', 3);
+    line-height: lh('lang', 3);
     position: relative;
 
     & + .usa-sidenav__item {
@@ -417,7 +426,7 @@ body {
   }
 
   .usa-sidenav__sublist {
-    font-size: font-size('sans', '3xs');
+    font-size: font-size('lang', '3xs');
     a {
       border-top: units(1px) solid rgba(0, 0, 0, .05);
       padding-left: units(2);
@@ -484,7 +493,7 @@ body {
 }
 
 .site-h2 {
-  @include typeset('sans', 'xl', 2);
+  @include typeset('lang', 'xl', 2);
   color: color($site-ink);
   margin-top: units(4);
 
@@ -518,7 +527,7 @@ body {
   }
 
   > h3 {
-    @include typeset('sans', 'md', 3);
+    @include typeset('lang', 'md', 3);
 
     & + p {
       margin-top: units(1);
@@ -526,7 +535,7 @@ body {
   }
 
   > h4 {
-    @include typeset('sans', '2xs', 3);
+    @include typeset('lang', '2xs', 3);
     @include u-text('uppercase', $site-ink, 'normal', 'ls-2');
     margin-top: units(3);
 
@@ -538,7 +547,7 @@ body {
   }
 
   > h5 {
-    @include typeset('sans', '2xs', 3);
+    @include typeset('lang', '2xs', 3);
     @include u-text($site-ink, 'bold');
     margin-top: units(2);
 
@@ -569,7 +578,7 @@ body {
 // Label links
 
 %label-maturity {
-  @include u-font('ui', '2xs');
+  @include u-font('lang', '2xs');
   color: color('gray-cool-80');
   font-weight: font-weight('bold');
   margin-left: units(1.5);
@@ -605,6 +614,7 @@ body {
 
 .site-subheading {
   @include typeset-h6;
+  @include u-font('lang', '3xs');
   color: color('black-transparent-60');
   display: block;
   letter-spacing: letter-spacing(1);
@@ -625,6 +635,7 @@ body {
 // Footer --------------- //
 
 .site-footer {
+  @include typeset('lang');
   clear: both;
 
   h3 {
@@ -672,8 +683,12 @@ body {
 }
 
 .footer-content {
+  h3 {
+    @include typeset('lang', 'lg', 2);
+    margin: 0;
+  }
   p {
-    max-width: measure(4);
+    max-width: measure($site-measure);
   }
 }
 
@@ -683,7 +698,7 @@ body {
 
   h4,
   a {
-    @include u-font('sans', '2xs')
+    @include u-font('lang', '2xs')
   }
 
   h4 {
@@ -703,7 +718,7 @@ body {
 
   .usa-media-block {
     clear: both;
-    line-height: line-height('ui', 3);
+    line-height: line-height('lang', 3);
     margin-top: units(2.5);
 
     @include at-media('tablet') {
@@ -719,14 +734,14 @@ body {
 
   p {
     color: color('white');
-    font-size: font-size('sans', '2xs');
+    font-size: font-size('lang', '2xs');
     max-width: none;
     overflow: hidden;
 
     &:first-of-type,
     &:last-of-type {
       @include at-media('tablet') {
-        margin-top: 0;
+        margin: 0;
       }
     }
   }
@@ -742,7 +757,7 @@ body {
   @include clearfix;
   @include u-margin-y(2);
   background-color: color('white');
-  padding: units($theme-site-margins-width);
+  padding: units(2);
   border: units(1px) solid color('base-lightest');
 
   .usa-dark-background {
@@ -1076,12 +1091,6 @@ h3 + .button_wrapper {
   padding-bottom: units(1);
 }
 
-h6 {
-  &.usa-heading-alt {
-    margin-top: units(5);
-  }
-}
-
 .usa-typography-example-font {
   padding-top: units(1);
 
@@ -1122,6 +1131,7 @@ pre {
   @include u-font('mono', '3xs');
   // TODO: add more black-transparent values (1-5)
   background-color: rgba(0,0,0,.05);
+  font-weight: fw('normal');
 }
 
 pre {
@@ -1181,7 +1191,7 @@ code {
 
 // Code snippet boxes ----------------- //
 
-.usa-code-sample {
+.site-accordion-code {
   margin-bottom: units(1);
 
   pre,
@@ -1263,36 +1273,54 @@ code {
 
 .typography-sans-intro {
   .text-huge {
-    font-size: font-size('sans', 20);
-    line-height: line-height('sans', 1);
+    @include typeset('sans', 20, 1);
   }
 
   .text-tiny {
-    font-size: font-size('sans', '2xs');
+    @include typeset('sans', '2xs', 1);
   }
 }
 
 .typography-serif-intro {
   .text-huge {
-    font-size: font-size('serif', 20);
-    line-height: line-height('serif', 1);
+    @include typeset('serif', 20, 1);
   }
 
   .text-tiny {
-    font-size: font-size('serif', '2xs');
+    @include typeset('serif', '2xs', 1);
+  }
+}
+
+.typography-lang-intro {
+  .text-huge {
+    @include typeset('lang', 20, 1);
+  }
+
+  .text-tiny {
+    @include typeset('lang', '2xs', 1);
+  }
+}
+
+.typography-mono-intro {
+  .text-huge {
+    @include typeset('mono', 20, 1);
+  }
+
+  .text-tiny {
+    @include typeset('mono', '2xs', 1);
   }
 }
 
 // Alt font styles
 
 @mixin font-lead-alt {
-  font-size: font-size('sans', 'xs');
+  font-size: font-size('lang', 'xs');
   font-weight: font-weight('normal');
 }
 
 .serif-robust {
   .usa-display-alt {
-    font-size: font-size('heading', $theme-h1-font-size);
+    font-size: font-size('lang', $theme-h1-font-size);
     font-weight: font-weight('light');
   }
 
@@ -1312,7 +1340,7 @@ code {
 
       // scss-lint:disable SelectorDepth, NestingDepth
       .usa-font-lead {
-        font-size: font-size('heading', 'lg');
+        font-size: font-size('lang', 'lg');
 
         .usa-font-lead-alt {
           @include font-lead-alt;
@@ -1390,7 +1418,7 @@ code {
   }
 }
 
-.usa-accordion__docs {
+.site-accordion-docs {
   margin-bottom: units(7);
 }
 
@@ -1428,13 +1456,13 @@ code {
     .usa-media-block__body {
       // scss-lint:disable SelectorDepth
       > *:first-child {
-        @include u-font('heading', $media-block-header-font-size);
+        @include u-font('lang', $media-block-header-font-size);
         margin-top: 0;
         margin-bottom: 0;
       }
 
       > p {
-        @include u-font('body', $media-block-body-font-size);
+        @include u-font('lang', $media-block-body-font-size);
         margin: units(0.5) 0;
       }
     }
@@ -1721,11 +1749,11 @@ iframe {
 
 .page-content {
   h3 {
-    @include u-font-size('sans', 10);
+    @include u-font-size('lang', 10);
     @include u-text('normal');
-    @include u-line-height('heading', 3);
+    @include u-line-height('lang', 3);
     @include at-media('tablet-lg') {
-      @include u-font-size('sans', 15);
+      @include u-font-size('lang', 15);
     }
   }
 }
@@ -1733,10 +1761,10 @@ iframe {
 // * * * * * * ========================= *
 
 .docs-text {
-  @include u-font('sans', 6);
+  @include u-font('lang', 6);
   @include u-margin-bottom(1);
   @include u-margin-top(4);
-  @include u-measure(4);
+  @include u-measure($site-measure);
   @include u-text('normal');
 }
 
@@ -1765,7 +1793,7 @@ strong {
 }
 
 .prose-graf-intro {
-  $font: 'sans';
+  $font: 'lang';
   @include u-font($font, 2);
   @include u-text('bold', 'uppercase', 'ls-2');
   @include at-media('desktop-lg') {
@@ -1798,7 +1826,7 @@ strong {
 
   .output-utility {
     @include grid-col(4);
-    @include u-font('sans', '2xs');
+    @include u-font('lang', '2xs');
     @include u-padding-right(2);
   }
 
@@ -1859,7 +1887,7 @@ li {
 // Utility docs
 
 .utilities-property-title {
-  @include u-font('sans', 'micro');
+  @include u-font('lang', 'micro');
   @include u-margin-left(2px);
   @include u-margin-y(0);
   @include u-text('normal', 'uppercase', 'ls-1');
@@ -1888,7 +1916,7 @@ li {
 }
 
 .utilities-section-title {
-  @include u-font('sans', 8);
+  @include u-font('lang', 8);
   @include u-margin(0);
   @include u-text(normal);
 
@@ -1910,7 +1938,7 @@ li {
 }
 
 .utilities-section-helper {
-  @include u-font('sans', 1);
+  @include u-font('lang', 1);
   @include u-margin-y(0);
   @include u-maxw('none');
   @include u-text(normal, 'gray-60');
@@ -1950,13 +1978,13 @@ li {
 }
 
 .utility-title {
-  @include u-font('sans', 'md');
+  @include u-font('lang', 'md');
   @include u-margin-bottom(.5);
   @include u-margin-top(0);
 }
 
 .utility-property {
-  @include u-font('sans', '3xs');
+  @include u-font('lang', '3xs');
   @include u-margin(0);
   @include u-text('uppercase', 'ls-1');
 }
@@ -1983,15 +2011,15 @@ li {
 
 .utility-scope-button {
   @include u-display('inline-block');
-  @include u-font-size('ui', '2xs');
-  @include u-line-height('ui', 1);
+  @include u-font-size('lang', '2xs');
+  @include u-line-height('lang', 1);
   @include u-margin-right(2px);
   @include u-margin-top(0.5);
   @include u-padding(0.5);
   @include u-radius('sm');
 
   @include at-media('tablet') {
-    @include u-font-size('ui', 'xs');
+    @include u-font-size('lang', 'xs');
     @include u-margin-right(0.5);
     @include u-margin-top(0);
     @include u-padding-y(1);
@@ -2028,7 +2056,7 @@ li {
 }
 
 .utility-examples-title {
-  @include u-font('sans', 4);
+  @include u-font('lang', 4);
   @include u-padding-top(4);
   margin-bottom: 0;
   margin-top: units(1);
@@ -2036,7 +2064,7 @@ li {
 }
 
 .utility-examples-helper {
-  @include u-font('sans', 2);
+  @include u-font('lang', 2);
   @include u-margin-left(1);
   @include u-text('normal', $site-ink);
 }
@@ -2107,7 +2135,7 @@ li {
 
 .utilities-output-heading {
   @include u-border-bottom(1px, 'gray-10');
-  @include u-font('sans', 1);
+  @include u-font('lang', 1);
   @include u-margin-top(2);
   @include u-padding-bottom(.5);
   @include u-text('bold');
@@ -2124,8 +2152,8 @@ li {
 
 .utility-note {
   @include u-bg('gold-20v');
-  @include u-font('sans', 'xs');
-  @include u-line-height('sans', 5);
+  @include u-font('lang', 'xs');
+  @include u-line-height('lang', 5);
   @include u-margin-y(2);
   @include u-measure(none);
   @include u-padding(2);
@@ -2140,9 +2168,9 @@ li {
 }
 
 .utility-text {
-  @include u-font('sans', 'xs');
-  @include u-line-height('sans', 5);
-  @include u-measure(none);
+  @include u-font('lang', 'xs');
+  @include u-line-height('lang', 5);
+  @include u-measure(5);
 
   + .utility-text {
     @include u-margin-top(1);
@@ -2167,9 +2195,10 @@ h6 + div:not(.usa-accordion__content) {
 }
 
 .site-font-lead {
-  @include typeset('sans', 'lg', 5);
+  @include typeset('lang', 'lg', 5);
   @include u-measure(3);
   color: color($site-ink);
+  font-weight: fw('light');
 
   & + p {
     margin-top: units(4);
@@ -2216,7 +2245,7 @@ h6 + div:not(.usa-accordion__content) {
 
 .usa-button-list.site-button-list {
   .usa-button {
-    font-size: font-size('ui', 'xs');
+    font-size: font-size('lang', 'xs');
     margin: 0;
     width: 100%;
     @include at-media('desktop') {
@@ -2236,6 +2265,8 @@ h6 + div:not(.usa-accordion__content) {
 }
 
 .site-button-list {
+  margin-bottom: 0;
+
   .usa-button {
     &:hover {
       background-color: color('blue-warm-60v');
@@ -2308,8 +2339,8 @@ h6 + div:not(.usa-accordion__content) {
 }
 
 .site-page-title {
-  @include typeset('sans', '2xl', 2);
-  font-weight: fw('light');
+  @include typeset('lang', '2xl', 2);
+  font-weight: fw('bold');
   color: color($site-ink);
 }
 
@@ -2318,7 +2349,7 @@ h6 + div:not(.usa-accordion__content) {
 }
 
 pre {
-  white-space: pre-wrap;
+  white-space: pre;
 }
 
 // Responsive tables
@@ -2351,7 +2382,7 @@ $theme-table-column-gap: 4;
   max-width: none;
 
   @include at-media-max($theme-table-responsive-expand-at) {
-    @include typeset(null, '2xs');
+    @include typeset('lang', '2xs');
     display: block;
     width: 100%;
 
@@ -2389,7 +2420,7 @@ $theme-table-column-gap: 4;
       z-index: z(100);
 
       &[data-title]:before {
-        @include typeset('ui', 1, 2);
+        @include typeset('lang', 1, 2);
         @include u-padding-x(1);
         content: attr(data-title);
         flex: none;
@@ -2444,7 +2475,7 @@ $theme-table-column-gap: 4;
       align-items: baseline;
       background-color: transparent;
       display: flex;
-      line-height: lh('ui', 4);
+      line-height: lh('lang', 4);
 
       &:empty {
         display: none;
@@ -2462,7 +2493,7 @@ $theme-table-column-gap: 4;
 
   @include at-media($theme-table-responsive-expand-at) {
     thead {
-      @include u-font('ui', 1);
+      @include u-font('lang', 1);
     }
 
     caption {
@@ -2519,7 +2550,7 @@ $theme-table-column-gap: 4;
   &.site-table-simple {
     @include at-media($theme-table-responsive-expand-at) {
       thead {
-        @include u-font('ui', 2);
+        @include u-font('lang', 2);
       }
 
       th,
@@ -2572,7 +2603,7 @@ $theme-table-column-gap: 4;
 }
 
 .site-caption-swatches {
-  @include typeset('sans', 10, 2);
+  @include typeset('lang', 10, 2);
   color: color('ink');
   margin-top: units(2);
   margin-bottom: units(1);
@@ -2584,7 +2615,7 @@ $theme-table-column-gap: 4;
 }
 
 .site-table-note {
-  @include typeset('sans', '2xs', 4);
+  @include typeset('lang', '2xs', 4);
   padding: units(2);
   background-color: color('gold-20v');
   border-radius: radius('md');
@@ -2606,5 +2637,329 @@ $theme-table-column-gap: 4;
 .site-title {
   @include at-media-max('mobile-lg') {
     @include sr-only;
+  }
+}
+
+.site-accordion-docs,
+.site-accordion-code,
+.site-accordion {
+  @include typeset('lang');
+}
+
+.site-prose {
+  @include typeset('lang');
+
+  & > {
+    p {
+      line-height: lh('lang', 5);
+      max-width: measure($site-measure);
+    }
+
+    p + * {
+      margin-top: 1em;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h5 {
+      @extend %header-margin;
+      color: color('ink');
+      margin: 0;
+    }
+
+    h3 {
+      @include typeset('lang', 'lg', 2);
+    }
+
+    .site-text-intro {
+      @extend .site-text-intro;
+
+      & + p {
+        margin-top: units(4);
+      }
+    }
+
+    header + .site-text-intro {
+      margin-top: units(1);
+    }
+
+    .usa-content-list {
+      padding-left: 0;
+      max-width: measure($site-measure);
+    }
+
+    li,
+    ul li,
+    ol li {
+      line-height: lh('lang', 5);
+      max-width: measure($site-measure);
+    }
+  }
+}
+
+.site-text-intro {
+  @include typeset('lang', 'lg', 5);
+  font-weight: fw('light');
+  margin-top: units(1);
+}
+
+.usa-accordion--bordered .usa-accordion__content {
+  padding-bottom: units(3);
+  padding-left: units(2);
+  padding-top: units(3);
+}
+
+.usa-content-list {
+  @include unstyled-list;
+  > li {
+    border-top: 1px solid color('base-lighter');
+    margin-top: units(1);
+    padding-top: units(1);
+    max-width: measure($site-measure);
+
+    ul {
+      list-style-type: disc;
+      padding-left: units(3);
+    }
+
+    li {
+      margin-top: units(0.5);
+      max-width: calc(measure($site-measure) - units(3));
+    }
+  }
+
+  ol {
+    counter-reset: ol-counter;
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      counter-increment: ol-counter;
+      margin-top: 0.5em;
+      padding-left: units(3);
+      text-indent: units(-3);
+
+      &:before {
+        content: counter(ol-counter) ". ";
+        display: inline-block;
+        font-size: fs('lang', '3xs');
+        font-weight: fw('bold');
+        padding-right: units(0.5);
+        text-align: left;
+        text-indent: 0;
+        width: units(3);
+      }
+    }
+  }
+}
+
+.site-accordion-code {
+  .usa-accordion__button {
+    @include add-background-svg('minus-thin-white');
+    background-color: color('primary-vivid');
+    color: color('white');
+
+    &[aria-expanded=false] {
+      @include add-background-svg('plus-thin-white');
+    }
+  }
+}
+
+.site-accordion-docs,
+.site-accordion {
+  .usa-accordion__button {
+    @include add-background-svg('minus-thin-ink');
+
+    &[aria-expanded=false] {
+      @include add-background-svg('plus-thin-ink');
+    }
+  }
+}
+
+.site-component-section {
+  @include typeset('lang');
+  @include u-measure(5);
+  margin-top: units(5);
+
+  > h2 {
+    @extend %header-margin;
+    @include typeset('lang', '2xl', 2);
+    color: color('ink');
+    margin: 0;
+  }
+
+  .site-text-intro {
+    @extend .site-text-intro;
+  }
+}
+
+.site-component-usage {
+  p + * {
+    margin-top: 1em;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h5 {
+    @extend %header-margin;
+    color: color('ink');
+    margin: 0;
+  }
+
+  h3 {
+    @include typeset('lang', 'lg', 2);
+  }
+
+  h4 {
+    @include typeset('lang', 'lg', 2);
+    color: color('base-dark');
+    font-weight: fw('thin');
+  }
+}
+
+%header-margin {
+  * + & {
+    margin-top: 2em;
+  }
+  & + * {
+    margin-top: 1em;
+  }
+}
+
+.site-button-list {
+  .usa-button {
+    @include typeset('lang', null, 1);
+  }
+}
+
+.site-header {
+  @include typeset('lang');
+
+  .usa-menu-btn {
+    font-size: fs('lang', '3xs');
+  }
+}
+
+.site-nav {
+  @include typeset('lang');
+
+  .usa-accordion {
+    @include typeset('lang');
+  }
+
+  .usa-nav__close {
+    @include add-background-svg('close-blue-60v-alt');
+    @include u-square(6);
+    background-color: color('base-lightest');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: units(2);
+  }
+
+  .usa-nav__link {
+    &[aria-expanded=true] {
+      @include add-background-svg('minus-thin-ink');
+    }
+    &[aria-expanded=false] {
+      @include add-background-svg('plus-thin-ink');
+    }
+  }
+
+  .usa-nav__primary button {
+    line-height: lh('lang', 2);
+  }
+
+  .usa-nav__submenu-item {
+    @include typeset('lang', '2xs', 2);
+  }
+}
+
+.site-banner {
+  @include typeset('lang');
+
+  .usa-accordion {
+    @include typeset('lang');
+  }
+
+  .usa-banner__header-text,
+  .usa-banner__header-action,
+  .usa-banner__button {
+    @include typeset('lang', 1, 2);
+  }
+
+  .usa-banner__content {
+    @include typeset('lang', 'xs', 5);
+
+    p {
+      line-height: lh('lang', 5);
+    }
+  }
+}
+
+.usa-content-list {
+  max-width: measure($site-measure);
+}
+
+.site-button {
+  @include typeset('lang', null, 1);
+}
+
+.site-table,
+.usa-prose > .site-table {
+  @include typeset('lang');
+}
+
+.usa-accordion__button:hover {
+  text-decoration: none;
+}
+
+.usa-hero__callout p {
+  @include typeset('lang');
+  margin-bottom: 0;
+}
+
+figure.highlight {
+  margin: 0;
+}
+
+pre.lineno {
+  color: color('base');
+  font-weight: fw('light');
+  margin-right: 2ch;
+  text-align: right;
+  width: 3ch;
+}
+
+[class*="language-"] {
+  color: color('base');
+
+  .nt {
+    color: color('primary-dark');
+  }
+
+  .s {
+    color: color('primary-vivid');
+  }
+}
+
+#utility-mixins {
+  p,
+  ul {
+    @include u-measure(5);
+  }
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+.site-accordion {
+  .usa-accordion__content {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

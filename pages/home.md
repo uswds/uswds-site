@@ -9,7 +9,7 @@ hero:
 graphic_list:
   list_item:
     - topic: Getting started
-      description: Learn how to get started using the U.S. Web Design System for your project, regardless of your technical stack.
+      description: Learn how to get started using USWDS for your project, regardless of your technical stack.
       image:
         src: img/home/get-started.svg
         alt:
@@ -17,7 +17,7 @@ graphic_list:
         text: Take the first step
         url: documentation
     - topic: UI components
-      description: Discover all the different components that the Design System provides as both design and development assets.
+      description: Discover all the different components that USWDS provides as both design and development assets.
       image:
         src: img/home/ui-component.svg
         alt:
@@ -25,7 +25,7 @@ graphic_list:
         text: Browse the components
         url: components
     - topic: What’s new
-      description: Keep up to date with the current news and product development updates for the U.S. Web Design System.
+      description: Keep up to date with the current news and product development updates for USWDS.
       image:
         src: img/home/new.svg
         alt:
@@ -49,7 +49,7 @@ graphic_list:
 
 We work with you to assess your current system and determine the most cost-efficient and effective path forward.
 
-<ul class="usa-accordion">
+<ul class="usa-accordion site-accordion">
   <li>
     <button class="usa-accordion__button"
       aria-expanded="false"
@@ -57,16 +57,16 @@ We work with you to assess your current system and determine the most cost-effic
       Why should you work with us?
     </button>
     <div id="assessment-content" class="usa-accordion__content">
-      <ul>
+      <ul class="usa-content-list">
         <li>We’ll ensure your Design System implementation is in compliance with the official web policy guidance from OMB and your agency.</li>
-        <li>We’ll determine any gaps in skill sets, equipment, design, and code quality needed for successful implementation of the Design System.</li>
+        <li>We’ll determine any gaps in skill sets, equipment, design, and code quality needed for successful implementation of USWDS.</li>
         <li>Your team will leave better prepared to adopt private-sector best practices and continue to create successful digital services.</li>
-      </ul> 
+      </ul>
     </div>
   </li>
 </ul>
 
-<a href="mailto:uswebdesignstandards+assessment@gsa.gov?cc=inquiries18F@gsa.gov" class="usa-button cta" onclick="ga('send', 'event', 'Clicked Assessment CTA', 'Clicked assessment call to action');">
+<a href="mailto:uswebdesignstandards+assessment@gsa.gov?cc=inquiries18F@gsa.gov" class="usa-button site-button cta" onclick="ga('send', 'event', 'Clicked Assessment CTA', 'Clicked assessment call to action');">
   <img src="{{ site.baseurl }}/img/logo-email.png" alt="">
   Email us about assessment
 </a>
@@ -77,7 +77,7 @@ We work with you to assess your current system and determine the most cost-effic
 
 Develop and implement a custom look and feel for your site or application-specific needs.
 
-<ul class="usa-accordion">
+<ul class="usa-accordion site-accordion">
   <li>
     <button class="usa-accordion__button"
       aria-expanded="false"
@@ -85,17 +85,17 @@ Develop and implement a custom look and feel for your site or application-specif
       Why should you work with us?
     </button>
     <div id="customization-content" class="usa-accordion__content">
-      <ul>
-        <li>We’ll get you up and running with a version of the Design System that’s tailored to meet your needs.</li>
+      <ul class="usa-content-list">
+        <li>We’ll get you up and running with a version of USWDS that’s tailored to meet your needs.</li>
         <li>Your digital services will stay in compliance with the official web policy guidance from OMB.</li>
-        <li>Fully implementing the Design System brings a range of best practices to your digital services.</li>
+        <li>Fully implementing USWDS brings a range of best practices to your digital services.</li>
         <li>This investment will reduce the cost and time to design and develop future compliant digital services.</li>
-      </ul> 
+      </ul>
     </div>
   </li>
 </ul>
 
-<a href="mailto:uswebdesignstandards+customization@gsa.gov?cc=inquiries18F@gsa.gov" class="usa-button cta" onclick="ga('send', 'event', 'Clicked Customization CTA', 'Clicked customization call to action');">
+<a href="mailto:uswebdesignstandards+customization@gsa.gov?cc=inquiries18F@gsa.gov" class="usa-button site-button cta" onclick="ga('send', 'event', 'Clicked Customization CTA', 'Clicked customization call to action');">
   <img src="{{ site.baseurl }}/img/logo-email.png" alt="">
   Ask us about customization
 </a>

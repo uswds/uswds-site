@@ -36,11 +36,11 @@ lead: Utility dek
     </section>
     <section class="utility-examples">
 
-      <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4 margin-bottom-1">
+      <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4 margin-bottom-1">
         <button class="usa-accordion__button" aria-controls="code-flex" aria-expanded="true">Code</button>
         <div id="code-flex" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
-```html
+{% highlight html linenos %}
 <div class="display-block border-1px ...">.display-block</div>
 <div class="display-flex border-1px ...">.display-flex</div>
 <div class="display-inline border-1px ...">.display-inline</div>
@@ -52,7 +52,7 @@ lead: Utility dek
 <div class="display-table-cell border-1px ...">.display-table-cell</div>
 <div class="display-table-cell border-1px ...">.display-table-cell</div>
 </div>
-```
+{% endhighlight %}
 </div><!-- markdown -->
         </div><!-- code-content -->
       </div><!-- code-sample -->

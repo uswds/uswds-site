@@ -216,11 +216,12 @@ utilities:
       </div>
       {% endfor %}
 
-      <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4 margin-bottom-1">
+      <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4 margin-bottom-1">
         <button class="usa-accordion__button" aria-controls="code-flex" aria-expanded="true">Code</button>
         <div id="code-flex" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
-```html
+
+{% highlight html linenos %}
 <div class="grid-row">
   <div class="grid-col flex-1"></div>
   <div class="grid-col flex-1"></div>
@@ -281,7 +282,7 @@ utilities:
   <div class="grid-col flex-fill"></div>
   ...
 </div>
-```
+{% endhighlight %}
 </div><!-- markdown -->
         </div><!-- code-content -->
       </div><!-- code-sample -->
@@ -319,11 +320,11 @@ utilities:
       </div>
     {% endfor %}
 
-    <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4 margin-bottom-1">
+    <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4 margin-bottom-1">
       <button class="usa-accordion__button" aria-controls="code-flex-direction" aria-expanded="true">Code</button>
       <div id="code-flex-direction" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
-```html
+{% highlight html linenos %}
 <div class="grid-row flex-column">
   <div class="grid-col"></div>
   <div class="grid-col"></div>
@@ -336,7 +337,7 @@ utilities:
   <div class="grid-col"></div>
   <div class="grid-col"></div>
 </div>
-```
+{% endhighlight %}
 </div><!-- markdown -->
         </div><!-- code-content -->
       </div><!-- code-sample -->
@@ -378,11 +379,11 @@ utilities:
       </div>
     {% endfor %}
 
-    <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4 margin-bottom-1">
+    <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4 margin-bottom-1">
       <button class="usa-accordion__button" aria-controls="code-flex-wrap" aria-expanded="true">Code</button>
       <div id="code-flex-wrap" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
-```html
+{% highlight html linenos %}
 <div class="grid-row flex-wrap">
   <div class="grid-col-4"></div>
   <div class="grid-col-4"></div>
@@ -395,7 +396,7 @@ utilities:
   <div class="grid-col-4"></div>
   <div class="grid-col-4"></div>
 </div>
-```
+{% endhighlight %}
 </div><!-- markdown -->
         </div><!-- code-content -->
       </div><!-- code-sample -->
@@ -438,11 +439,11 @@ utilities:
         </div>
     {% endfor %}
 
-    <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4 margin-bottom-1">
+    <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4 margin-bottom-1">
       <button class="usa-accordion__button" aria-controls="code-flex-align" aria-expanded="true">Code</button>
       <div id="code-flex-align" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
-```html
+{% highlight html linenos %}
 <div class="display-flex flex-column flex-align-start">
   <div class="example"></div>
   <div class="example"></div>
@@ -498,7 +499,7 @@ utilities:
   <div class="example"></div>
   <div class="example"></div>
 </div>
-```
+{% endhighlight %}
 </div><!-- markdown -->
         </div><!-- code-content -->
       </div><!-- code-sample -->
@@ -540,11 +541,11 @@ utilities:
         {% endfor %}
         </div>
 
-    <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4 margin-bottom-1">
+    <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4 margin-bottom-1">
       <button class="usa-accordion__button" aria-controls="code-flex-justify" aria-expanded="true">Code</button>
       <div id="code-flex-justify" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
-```html
+{% highlight html linenos %}
 <div class="display-flex flex-column flex-justify">
   <div class="example"></div>
   <div class="example"></div>
@@ -600,7 +601,7 @@ utilities:
   <div class="example"></div>
   <div class="example"></div>
 </div>
-```
+{% endhighlight %}
 </div><!-- markdown -->
         </div><!-- code-content -->
       </div><!-- code-sample -->
@@ -618,18 +619,18 @@ utilities:
       {% for value in page.values.order reversed %}
         <div class="grid-col-auto order-{{ value.token }}">
           <div class="padding-x-1 padding-y-1 border border-secondary-light margin-y-1px display-flex flex-column flex-align-start">
-            <span class="font-sans-3xs text-red-warm-50v margin-bottom-2">intital: {{ forloop.index }}</span>
+            <span class="font-lang-3xs text-red-warm-50v margin-bottom-2">intital: {{ forloop.index }}</span>
             <span class="utility-class">.order-{{ value.token }}</span>
           </div>
         </div>
       {% endfor %}
     </div>
 
-    <div class="usa-accordion usa-accordion--bordered usa-code-sample margin-top-4 margin-bottom-1">
+    <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4 margin-bottom-1">
       <button class="usa-accordion__button" aria-controls="code-order" aria-expanded="true">Code</button>
       <div id="code-order" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
-```html
+{% highlight html linenos %}
 <div class="grid-row">
   <div class="grid-col order-11"></div>
   <div class="grid-col order-10"></div>
@@ -647,7 +648,7 @@ utilities:
   <div class="grid-col order-last"></div>
   <div class="grid-col order-first"></div>
 </div>
-```
+{% endhighlight %}
 </div><!-- markdown -->
         </div><!-- code-content -->
       </div><!-- code-sample -->

@@ -12,7 +12,7 @@ lead: Intro text on what is included in this section and how to use it. No more 
       aria-expanded="true" aria-controls="figure-docs">
     Documentation
   </button>
-  <div id="figure-docs" aria-hidden="false" class="usa-accordion__content usa-prose">
+  <div id="figure-docs" aria-hidden="false" class="usa-accordion__content usa-prose site-prose">
     <h4 class="usa-heading">Accessibility</h4>
     <p>As you customize this form template, ensure it continues to follow the:</p>
     <ul class="usa-content-list">

@@ -138,7 +138,7 @@ Your context and coding style determine how you access USWDS font size tokens in
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Context" class="font-sans-2xs">
+        <td scope="row" data-title="Context" class="font-lang-2xs">
           <span>
             <span class="text-bold">function</span>
           </span>
@@ -155,7 +155,7 @@ Your context and coding style determine how you access USWDS font size tokens in
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context" class="font-sans-2xs">
+        <td scope="row" data-title="Context" class="font-lang-2xs">
           <span>
             <span class="text-bold">mixin</span>
             <span class="display-block">font-size</span>
@@ -173,7 +173,7 @@ Your context and coding style determine how you access USWDS font size tokens in
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context" class="font-sans-2xs">
+        <td scope="row" data-title="Context" class="font-lang-2xs">
           <span>
             <span class="text-bold">mixin</span>
             <span class="display-block">font-family</span>
@@ -192,7 +192,7 @@ Your context and coding style determine how you access USWDS font size tokens in
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context" class="font-sans-2xs">
+        <td scope="row" data-title="Context" class="font-lang-2xs">
           <span>
             <span class="text-bold">setting</span>
           </span>
@@ -209,7 +209,7 @@ Your context and coding style determine how you access USWDS font size tokens in
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context" class="font-sans-2xs">
+        <td scope="row" data-title="Context" class="font-lang-2xs">
           <span>
             <span class="text-bold">utility</span>
             <span class="display-block">font-family</span>

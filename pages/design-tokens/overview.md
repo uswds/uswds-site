@@ -3,7 +3,7 @@ permalink: /design-tokens/
 layout: styleguide
 title: Design tokens
 category: Design tokens
-lead: USWDS visual design is based on consistent palettes of typography, spacing units, color, and other discrete elements of style we call **design tokens**{:.font-sans-lg}.
+lead: USWDS visual design is based on consistent palettes of typography, spacing units, color, and other discrete elements of style we call **design tokens**{:.font-lang-8}.
 type: docs
 subnav:
   - text: Introducing design tokens
@@ -20,7 +20,7 @@ subnav:
 
 Anything we see on a website is built from elements of style: elements like color, spacing, typography, line height, and opacity. The CSS rules associated with these elements can accept a broad continuum of values — in the case of color, there are over 16 million separate colors in the RGB color space. Font size, line height, spacing, and others can accept a similarly wide range of values.
 
-This degree of choice can slow down design work and make communication between designer and developer unnecessarily granular. The US Web Design System seeks to maximize design efficiency and improve communication with **design tokens**: the discrete palettes of values from which we base all our visual design.
+This degree of choice can slow down design work and make communication between designer and developer unnecessarily granular. USWDS seeks to maximize design efficiency and improve communication with **design tokens**: the discrete palettes of values from which we base all our visual design.
 
 Design tokens are a limited set of discrete options, just as a scale of musical notes is drawn from an infinite spectrum of possible frequencies. To extend the metaphor, USWDS design tokens are the notes from which we compose our visual designs.
 
@@ -28,18 +28,20 @@ Design tokens are a limited set of discrete options, just as a scale of musical 
 ![continuous and tokenized values]({{ site.baseurl }}/assets/img/design-tokens/continuous-v-token.svg)
 
 ### Example: Measure (line length)
-For example, measure (or line length) expressed with the `max-width` CSS property can accept any value in units like `em`, `rem`, `ch`, `px` to at least two decimal places. USWDS limits itself to 6 [measure]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token} tokens:
+For example, measure (or line length) expressed with the `max-width` CSS property can accept any value in units like `em`, `rem`, `ch`, `ex`, and `px` to at least two decimal places. USWDS limits itself to 7 [measure]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token} tokens:
 
+{:.site-table}
 | token   | value
 | ---     | ---
-|`1`      | `40ch`
-|`2`      | `60ch`
-|`3`      | `66ch`
-|`4`      | `72ch`
-|`5`      | `77ch`
+|`1`      | `44ex`
+|`2`      | `60ex`
+|`3`      | `64ex`
+|`4`      | `68ex`
+|`5`      | `74ex`
+|`6`      | `88ex`
 |`'none'` | no max width
 
-Anything built using USWDS will use one of these 6 [measure]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token} tokens when specifying measure.
+Anything built using USWDS will use one of these 7 [measure]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token} tokens when specifying measure.
 
 ## Keys and values
 You can think of a design token as a **key** that unlocks a specific **value**. Often, the specific value is less important than its effect. Each token is a quoted string or, with only the exceptions of `1px` and `2px`, a unitless number — and the mechanism by which the final display value is unlocked is a **function**, **mixin**, or **utility class**.

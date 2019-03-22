@@ -29,7 +29,7 @@ redirect_from:
   - /getting-started/developers/
 ---
 
-{% assign content = site.data.install-readme.decoded | markdownify | absolutify_links: 'https://github.com/uswds/uswds/blob/release-2.0/' | split: '<h2 id="using-the-design-system">Using the design system</h2>' | last | split: '<h2 id="reuse-of-open-source-style-guides">' | first %}
+{% assign content = site.data.install-readme.decoded | markdownify | absolutify_links: 'https://github.com/uswds/uswds/blob/release-2.0/' | split: '<h2 id="using-the-design-system">Using USWDS</h2>' | last | split: '<h2 id="reuse-of-open-source-style-guides">' | first %}
 
 ## Installation
 

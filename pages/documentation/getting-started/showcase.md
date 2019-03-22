@@ -5,7 +5,7 @@ title: Showcase
 category: Documentation
 subnav:
   - href: /getting-started/showcase/all/
-lead: The U.S. Web Design System has been used by federal, state, and local governments to help build over 100 government websites. Below is a selection of sites that showcase what can be accomplished by using the Design System.
+lead: Federal, state, and local governments used USWDS to help build over 100 government websites. Below is a selection of sites that showcase what can be accomplished by using USWDS.
 redirect_from:
   - /getting-started/showcase/
 ---

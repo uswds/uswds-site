@@ -11,6 +11,7 @@ meta:
   og:image: /img/updates/fractal_v1.0.0.png
 preview_baseurl: https://federalist.fr.cloud.gov/preview/18f/web-design-standards
 github_baseurl: https://github.com/uswds/uswds
+category: About USWDS
 ---
 
 <p class="usa-font-lead">

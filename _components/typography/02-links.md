@@ -2,23 +2,24 @@
 type: component
 title: Links
 parent: typography
-order: 04
+order: 02
+lead: "Links connect users to a different page or further information."
 ---
 
 <!-- Links section begin -->
 
-<p class="usa-font-lead">Links lead users to a different page or further information.
+<p class="usa-font-lead">
 </p>
 
 {% include code/preview.html component="links" %}
 {% include code/accordion.html component="links" %}
-<div class="usa-accordion usa-accordion--bordered usa-accordion__docs">
+<div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="link-docs">
     Documentation
   </button>
-  <div id="link-docs" class="usa-accordion__content usa-prose">
-    <h4 class="usa-heading">Accessibility</h4>
+  <div id="link-docs" class="usa-accordion__content site-component-usage">
+    <h4>Accessibility</h4>
     <ul class="usa-content-list">
       <li>Users should be able to tab to navigate between links.</li>
       <li>Users should be able to activate a link when pressing ‘Enter’ on their keyboard.</li>

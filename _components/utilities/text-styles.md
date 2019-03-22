@@ -132,7 +132,7 @@ utilities:
     %}
     <section class="utility-examples">
       <p class="utility-example-container text-italic">.text-italic</p>
-      <p class="utility-example-container text-no-italic border-0">.text-no-italic</p>
+      <p class="utility-example-container text-no-italic">.text-no-italic</p>
     </section>
   </section>
 
@@ -148,7 +148,7 @@ utilities:
       <p class="utility-example-container text-medium">.text-medium <span class="text-base-dark">(<b>Note:</b>  not included in default set)</span></p>
       <p class="utility-example-container text-semibold">.text-semibold <span class="text-base-dark">(<b>Note:</b>  not included in default set)</span></p>
       <p class="utility-example-container text-bold">.text-bold</p>
-      <p class="utility-example-container text-heavy border-0">.text-heavy <span class="text-base-dark">(<b>Note:</b>  not included in default set)</span></p>
+      <p class="utility-example-container text-heavy">.text-heavy <span class="text-base-dark">(<b>Note:</b>  not included in default set)</span></p>
     </section>
   </section>
 
@@ -196,16 +196,16 @@ utilities:
     %}
     <section class="utility-examples">
       <div class="utility-example-container">
-        <p class="font-sans-8 text-tabular margin-0">123,456,789</p>
-        <p class="font-sans-8 text-tabular margin-0">825,489,012</p>
-        <p class="font-sans-8 text-tabular margin-0">112,051,928</p>
+        <p class="font-lang-8 text-tabular margin-0">123,456,789</p>
+        <p class="font-lang-8 text-tabular margin-0">825,489,012</p>
+        <p class="font-lang-8 text-tabular margin-0">112,051,928</p>
         <p class="utility-class margin-top-2">.text-tabular</p>
         <p class="margin-bottom-05"><b>Note:</b> not included in default set</p>
       </div>
-      <div class="utility-example-container border-0">
-        <p class="font-sans-8 text-no-tabular margin-0">123,456,789</p>
-        <p class="font-sans-8 text-no-tabular margin-0">825,489,012</p>
-        <p class="font-sans-8 text-no-tabular margin-0">112,051,928</p>
+      <div class="utility-example-container">
+        <p class="font-lang-8 text-no-tabular margin-0">123,456,789</p>
+        <p class="font-lang-8 text-no-tabular margin-0">825,489,012</p>
+        <p class="font-lang-8 text-no-tabular margin-0">112,051,928</p>
         <p class="utility-class margin-top-2">.text-no-tabular</p>
       </div>
     </section>
@@ -220,7 +220,7 @@ utilities:
       <p class="utility-example-container text-underline">.text-underline</p>
       <p class="utility-example-container text-strike">.text-strike</p>
       <p class="utility-example-container text-no-strike">.text-no-strike</p>
-      <p class="utility-example-container text-no-underline border-0">.text-no-underline</p>
+      <p class="utility-example-container text-no-underline">.text-no-underline</p>
     </section>
   </section>
 
@@ -240,7 +240,7 @@ utilities:
           {% assign value = color.value %}
           {% assign token = false %}
         {% endif %}
-        <div class="utility-example-container grid-col-12 font-sans-xs display-flex flex-align-center flex-justify{% if forloop.last %} border-0{% endif %}">
+        <div class="utility-example-container grid-col-12 font-lang-xs display-flex flex-align-center flex-justify{% if forloop.last %}{% endif %}">
           <span class="text-underline underline-{{ color.token }}">.underline-{{ color.token }}<span class="text-thin text-gray-50">.text-underline</span></span>
           <span class="flex-auto">
             {% if token %}
@@ -266,7 +266,7 @@ utilities:
       <p class="utility-example-container text-uppercase">.text-uppercase</p>
       <p class="utility-example-container text-lowercase">.text-lowercase</p>
       <p class="utility-example-container text-no-uppercase">.text-no-uppercase</p>
-      <p class="utility-example-container text-no-lowercase border-0">.text-no-lowercase</p>
+      <p class="utility-example-container text-no-lowercase">.text-no-lowercase</p>
     </section>
   </section>
 
@@ -283,7 +283,7 @@ utilities:
       <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-super"></span> <span class="text-super text-red">.text-super</span></p>
       <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-tbottom"></span> <span class="text-tbottom text-red">.text-tbottom</span></p>
       <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-ttop"></span> <span class="text-ttop text-red">.text-ttop</span></p>
-      <p class="utility-example-container border-0">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-top"></span> <span class="text-top text-red">.text-top</span></p>
+      <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-top"></span> <span class="text-top text-red">.text-top</span></p>
     </section>
   </section>
 
@@ -297,7 +297,7 @@ utilities:
       <p class="utility-example-container"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-pre-line"><span class="text-red">.text-pre-line</span> formatted line   with     multiple       spaces</span></span></p>
       <p class="utility-example-container"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-pre-wrap"><span class="text-red">.text-pre-wrap</span> formatted line   with     multiple       spaces</span></span></p>
       <p class="utility-example-container"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-wrap"><span class="text-red">.text-wrap</span> formatted line   with     multiple       spaces</span></span></p>
-      <p class="utility-example-container border-0"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-no-wrap"><span class="text-red">.text-no-wrap</span> formatted line   with     multiple       spaces</span></span></p>
+      <p class="utility-example-container"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-no-wrap"><span class="text-red">.text-no-wrap</span> formatted line   with     multiple       spaces</span></span></p>
     </section><!-- examples -->
   </section><!-- utility -->
 </section><!-- utilities -->
@@ -432,7 +432,7 @@ utilities:
     </tr>
     <tr>
       <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-        <span class="font-sans-2xs">
+        <span class="font-lang-2xs">
           multiple text utilities...
         </span>
       </td>
@@ -454,7 +454,7 @@ utilities:
   <h2 class="site-h2 margin-y-0">Utility mixins</h2>
   {% include utilities/utility-mixin-intro.html %}
 
-  <div class="grid-row font-sans-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2 margin-top-3">
+  <div class="grid-row font-lang-3xs text-bold border-bottom border-base-light padding-bottom-05 margin-top-2 margin-top-3">
     <div class="grid-col-4">Utility</div>
     <div class="grid-col-4">Mixin</div>
     <div class="grid-col-4">Example</div>

@@ -22,21 +22,21 @@ mobile:
 Components:
   - text: Overview
     href: /components/
-  - href: /components/typography/
-  - href: /components/icons/
-  - text: Grids
-    href: /components/grids/
-  - href: /components/buttons/
-  - href: /components/labels/
-  - href: /components/tables/
-  - href: /components/alerts/
-  - href: /components/accordions/
+  - href: /components/accordion/
+  - href: /components/alert/
+  - href: /components/button/
+  - href: /components/footer/
   - href: /components/form-controls/
   - href: /components/form-templates/
-  - href: /components/search-bar/
+  - text: Grid
+    href: /components/grids/
+  - href: /components/header/
+  - href: /components/icons/
+  - href: /components/search/
   - href: /components/sidenav/
-  - href: /components/headers/
-  - href: /components/footers/
+  - href: /components/table/
+  - href: /components/tag/
+  - href: /components/typography/
 
 Documentation:
   - text: Overview

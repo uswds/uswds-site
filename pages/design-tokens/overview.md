@@ -37,7 +37,7 @@ For example, measure (or line length) expressed with the `max-width` CSS propert
 |`2`      | `60ex`
 |`3`      | `64ex`
 |`4`      | `68ex`
-|`5`      | `74ex`
+|`5`      | `72ex`
 |`6`      | `88ex`
 |`'none'` | no max width
 

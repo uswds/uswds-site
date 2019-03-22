@@ -1,7 +1,7 @@
 ---
 permalink: /
 layout: landing
-title: "U.S. Web Design System: A design system for the federal government"
+title: "USWDS: The United States Web Design System"
 class: home
 hero:
   callout: A design system for the federal government
@@ -61,7 +61,7 @@ We work with you to assess your current system and determine the most cost-effic
         <li>We’ll ensure your Design System implementation is in compliance with the official web policy guidance from OMB and your agency.</li>
         <li>We’ll determine any gaps in skill sets, equipment, design, and code quality needed for successful implementation of the Design System.</li>
         <li>Your team will leave better prepared to adopt private-sector best practices and continue to create successful digital services.</li>
-      </ul> 
+      </ul>
     </div>
   </li>
 </ul>
@@ -90,7 +90,7 @@ Develop and implement a custom look and feel for your site or application-specif
         <li>Your digital services will stay in compliance with the official web policy guidance from OMB.</li>
         <li>Fully implementing the Design System brings a range of best practices to your digital services.</li>
         <li>This investment will reduce the cost and time to design and develop future compliant digital services.</li>
-      </ul> 
+      </ul>
     </div>
   </li>
 </ul>

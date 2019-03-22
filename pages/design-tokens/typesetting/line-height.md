@@ -42,10 +42,10 @@ Please see the [Typesetting]({{ site.baseurl }}/design-tokens/typesetting){:.tex
             </span>
           </td>
           <td data-title="Example">
-            <div class="font-sans-4 tablet:font-sans-6 line-height-sans-{{ item.token }} measure-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</div>
+            <div class="font-lang-4 tablet:font-lang-6 line-height-sans-{{ item.token }} measure-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</div>
           </td>
           <td data-title="Usage">
-            <div class="font-sans-3 line-height-sans-3 measure-2"><strong>usage:</strong> {{ item.usage }}</div>
+            <div class="font-lang-3 line-height-sans-3 measure-2"><strong>usage:</strong> {{ item.usage }}</div>
           </td>
           <td data-title="Output">
             <span>
@@ -76,7 +76,7 @@ Your context and coding style determine how you access USWDS line height tokens 
     <tbody class="font-mono-2xs">
       <tr>
         <td scope="row" data-title="Context">
-          <span class="text-bold font-sans-3">function</span>
+          <span class="text-bold font-lang-3">function</span>
         </td>
         <td data-title="Usage">
           <span class="line-height-sans-6">
@@ -93,7 +93,7 @@ Your context and coding style determine how you access USWDS line height tokens 
       </tr>
       <tr>
         <td scope="row" data-title="Context">
-          <span class="font-sans-3">
+          <span class="font-lang-3">
             <span class="text-bold">mixin</span><br/>
           </span>
         </td>
@@ -111,7 +111,7 @@ Your context and coding style determine how you access USWDS line height tokens 
       <tr>
         <td scope="row" data-title="Context">
           <span>
-            <span class="text-bold font-sans-3">setting</span><br/>
+            <span class="text-bold font-lang-3">setting</span><br/>
           </span>
         </td>
         <td data-title="Usage">
@@ -127,7 +127,7 @@ Your context and coding style determine how you access USWDS line height tokens 
       </tr>
       <tr>
         <td scope="row" data-title="Context">
-          <span class="font-sans-3">
+          <span class="font-lang-3">
             <span class="text-bold">utility</span><br/>
           </span>
         </td>

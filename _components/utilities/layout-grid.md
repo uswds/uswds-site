@@ -445,11 +445,11 @@ Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the
 <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
   <button class="usa-accordion__button" aria-controls="code-gutters" aria-expanded="true">Code</button>
   <div id="code-gutters" class="usa-accordion__content">
-<div markdown="1">
+
 {% highlight html linenos %}
 {{ grid-gutters | strip }}
 {% endhighlight %}
-</div>
+
   </div>
 </div>
 
@@ -488,11 +488,11 @@ Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the
 <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4">
   <button class="usa-accordion__button" aria-controls="code-gutters-lg" aria-expanded="true">Code</button>
   <div id="code-gutters-lg" class="usa-accordion__content">
-<div markdown="1">
+
 {% highlight html linenos %}
 {{ grid-gutters-lg | strip }}
 {% endhighlight %}
-</div>
+
   </div>
 </div>
 
@@ -504,7 +504,7 @@ Variables and maps determine the number of columns, the gutter width, and the me
 
 #### uswds-theme-spacing.scss
 
-{% endhighlight %}scss
+{% highlight scss %}
 // Values are set as units tokens.
 
 $theme-column-gap-sm:               2px;
@@ -521,7 +521,7 @@ $theme-site-margins-mobile-width:   2;
 
 #### uswds-theme-utilities.scss
 
-{% endhighlight %}scss
+{% highlight scss %}
 // Turn on or off breakpoints
 $theme-utility-breakpoints: (
   'card':              false,   // 160px
@@ -539,7 +539,7 @@ $theme-utility-breakpoints: (
 ### Mixins
 Mixins can be used in conjunction with the grid variables to add grid functionality to semantic component Sass.
 
-{% endhighlight %}scss
+{% highlight scss %}
 // Creates a wrapper for a series of rows
 // $container-size can be mobile, mobile-lg, tablet, tablet-lg, desktop, desktop-lg, or widescreen
 @include grid-container;
@@ -572,7 +572,7 @@ Mixins can be used in conjunction with the grid variables to add grid functional
 ### Example usage
 You can modify the variables to your own custom values, or just use the mixins with their default values. Here’s an example of using the default settings to create a two-column layout with a gap between.
 
-{% endhighlight %}scss
+{% highlight scss %}
 .example-container {
   @include grid-container;
 }

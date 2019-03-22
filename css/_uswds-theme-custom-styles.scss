@@ -182,10 +182,10 @@ body {
   }
 
   .usa-banner__button {
-    color: color('gray-30');
+    color: color('base-light');
 
     &:hover {
-      color: color('gray-30');
+      color: color('white');
     }
   }
 
@@ -747,7 +747,11 @@ body {
   }
 
   a {
-    color: color('white');
+    color: color('base-light');
+
+    &:hover {
+      color: color('white');
+    }
   }
 }
 
@@ -2760,6 +2764,10 @@ $theme-table-column-gap: 4;
     @include add-background-svg('minus-thin-white');
     background-color: color('primary-vivid');
     color: color('white');
+
+    &:hover {
+      background-color: color('blue-warm-70v');
+    }
 
     &[aria-expanded=false] {
       @include add-background-svg('plus-thin-white');

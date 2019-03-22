@@ -48,7 +48,7 @@ You can think of a design token as a **key** that unlocks a specific **value**. 
 
 We can't include tokens directly in our Sass, like `max-width: 1`, rather we use a helper function like `max-width: measure(1)` or a mixin like `@include u-measure(1)`. All USWDS design tokens have helper mixins and functions to use them in component Sass.
 
-{: .bg-warning.padding-1.radius-md }
+{: .site-note }
 **Note:** We do not include the token's value directly into our Sass rules.
 
 ### Example: Tokens in settings and component Sass

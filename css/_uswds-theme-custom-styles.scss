@@ -2961,3 +2961,14 @@ body {
     padding-right: 0;
   }
 }
+
+.site-note {
+  @include u-bg('warning');
+  @include u-measure(5);
+  @include u-padding(1);
+  @include u-radius('sm');
+
+  a {
+    color: color('ink');
+  }
+}

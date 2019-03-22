@@ -28,7 +28,6 @@ USWDS organizes its colors tokens into [theme tokens]({{ site.baseurl }}/design-
 <div>
 <style>code {mix-blend-mode: multiply;}</style>
 <div class="bg-base-lighter measure-3 padding-3 usa-section" markdown="1">
-{:.font-sans-xs}
 
 {:.font-lang-xs.color-ink.text-bold.text-ls-2.margin-top-0.text-uppercase}
 ### Color, color family, and grade
@@ -116,13 +115,13 @@ Use USWDS magic numbers to choose accessible color combinations from any palette
 
 #### Accessible color combination examples
 
-{:.measure-3}
+{:.measure-6}
 ![gray color contrast example]({{ site.baseurl }}/assets/img/design-tokens/gray-example.png)
 
 {:.font-lang-2xs}
 **Above:** Since `90 – 50 = 40`, on a background of `gray-90` use grades of `40` and below to assure Section 508 AA contrast. Grades of `50` and below are acceptable for large text.
 
-{:.measure-3 .margin-top-5}
+{:.measure-6.margin-top-5}
 ![indigo color contrast example]({{ site.baseurl }}/assets/img/design-tokens/indigo-warm-example.png)
 
 {:.font-lang-2xs}

@@ -14,7 +14,7 @@ As a complement to this visual style guidance, we strongly recommend you use [18
 
 ## Design resources
 
-<div class="site-note"><strong>Note:</strong> USWDS 2.0 assets for Sketch and Illustrator are not yet available. We expect them to be available by the end of November 2018.</div>
+<div class="site-note"><strong>Note:</strong> USWDS 2.0 assets for Sketch and Illustrator are not yet available. We expect them to be available by USWDS 2.0 launch.</div>
 
 The site contains HTML mockups of common UI components designed to follow USWDS’s visual style guide. To view the specs of each design live on this website (padding, margins, stroke weight, line-height, and so on), use your browser’s developer tools.
 

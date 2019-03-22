@@ -1,5 +1,5 @@
 ---
-title: "WordPress Theme ‘Benjamin’ created using the Design System"
+title: "WordPress Theme ‘Benjamin’ created using USWDS"
 tags:
 - case study
 - web design system

@@ -3,7 +3,7 @@ title: Performance research
 permalink: /performance/research/
 category: Documentation
 layout: styleguide
-lead: Report on research the Design System team did on performance.
+lead: Report on research USWDS team did on performance.
 subnav:
 - text: Introduction
   href: '#introduction'

@@ -24,7 +24,7 @@ subnav:
 Please see the [Typesetting]({{ site.baseurl }}/design-tokens/typesetting){:.text-ink.text-bold} section for more about font size normalization and how USWDS uses `size` and `family` tokens for typesetting.
 
 ## Available fonts
-The following fonts have normalization metadata in the design system, and are available to settings variables as tokens:
+The following fonts have normalization metadata in USWDS, and are available to settings variables as tokens:
 
 <div class="site-table-wrapper">
   <table class="usa-table--borderless site-table-responsive">
@@ -159,7 +159,7 @@ Role-based tokens set the font family value based on the _role_ the face plays i
 </div>
 
 {:.bg-gold-20v.padding-2.radius-md}
-**Note:** It is possible to add custom font metadata in the design system settings. This documentation is coming in November 2018.
+**Note:** It is possible to add custom font metadata in USWDS settings. This documentation is coming in November 2018.
 
 ## Customizing family tokens
 Customize [type](#0){:.token} and [role](#0){:.token} family tokens in your project's theme settings with available [font](#0){:.token} tokens. All typography-related settings are in `_uswds-theme-typography.scss`.

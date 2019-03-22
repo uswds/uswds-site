@@ -741,7 +741,7 @@ body {
     &:first-of-type,
     &:last-of-type {
       @include at-media('tablet') {
-        margin-top: 0;
+        margin: 0;
       }
     }
   }
@@ -2641,7 +2641,8 @@ $theme-table-column-gap: 4;
 }
 
 .site-accordion-docs,
-.site-accordion-code {
+.site-accordion-code,
+.site-accordion {
   @include typeset('lang');
 }
 
@@ -2766,7 +2767,8 @@ $theme-table-column-gap: 4;
   }
 }
 
-.site-accordion-docs {
+.site-accordion-docs,
+.site-accordion {
   .usa-accordion__button {
     @include add-background-svg('minus-thin-ink');
 
@@ -2951,4 +2953,11 @@ pre.lineno {
 
 body {
   text-rendering: optimizeLegibility;
+}
+
+.site-accordion {
+  .usa-accordion__content {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

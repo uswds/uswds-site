@@ -3,7 +3,7 @@ permalink: /documentation/video-tutorials/
 layout: styleguide
 title: Video tutorials
 category: Documentation
-lead: Watch these videos to familiarize yourself with key concepts from the U.S. Web Design System and open source development.
+lead: Watch these videos to familiarize yourself with key concepts from USWDS and open source development.
 ---
 
 {% for video in site.data.videos %}

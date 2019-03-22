@@ -7,7 +7,7 @@ category: Components
 lead: Icons communicate meaning in a graphical user interface.
 ---
 
-The Design System uses a subset of [Font Awesome](https://fontawesome.com/) icons on the project. They are available for use in `src/img`. If you need additional icons, use [Font Awesome](https://fontawesome.com/) in your project.
+USWDS uses a subset of [Font Awesome](https://fontawesome.com/) icons on the project. They are available for use in `src/img`. If you need additional icons, use [Font Awesome](https://fontawesome.com/) in your project.
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-docs site-component-section">
   <button class="usa-button-unstyled usa-accordion__button"
@@ -23,7 +23,7 @@ The Design System uses a subset of [Font Awesome](https://fontawesome.com/) icon
       <li>See <a href="https://accessibility.digital.gov/front-end/images/">Images - Accessibility for Teams</a> and <a href="https://fontawesome.com/how-to-use/on-the-web/other-topics/accessibility">Accessibility - Font Awesome</a>.</li>
     </ul>
     <h4 class="usa-heading">Implementation</h4>
-    <p>Use the Design System icons available in <code>src/img</code> or <a href="https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css">add Font Awesome to your project</a>. USWDS uses icons in two ways:</p>
+    <p>Use USWDS icons available in <code>src/img</code> or <a href="https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css">add Font Awesome to your project</a>. USWDS uses icons in two ways:</p>
     <ul>
       <li>as SVGs with PNG fallbacks</li>
       <li>as CSS background images</li>

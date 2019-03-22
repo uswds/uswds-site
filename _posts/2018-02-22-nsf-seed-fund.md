@@ -1,5 +1,5 @@
 ---
-title: How the National Science Foundation started its Seed Fund site with the Design System
+title: How the National Science Foundation started its Seed Fund site with USWDS
 tags:
 - case study
 - web design system
@@ -44,4 +44,4 @@ Overall the USWDS shortened the amount of time it took to implement the site, fo
 
 ---
 
-We’re looking to learn more [from agencies that have used the Design System](https://github.com/uswds/uswds/blob/develop/docs/WHO_IS_USING_USWDS.md); if you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at [uswds@gsa.gov](mailto:uswds@gsa.gov). You can also chat with the team in the [public Slack channel for the Design System](https://chat.18f.gov/)!
+We’re looking to learn more [from agencies that have used USWDS](https://github.com/uswds/uswds/blob/develop/docs/WHO_IS_USING_USWDS.md); if you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at [uswds@gsa.gov](mailto:uswds@gsa.gov). You can also chat with the team in the [public Slack channel for USWDS](https://chat.18f.gov/)!

@@ -20,7 +20,7 @@ subnav:
 ## Normalization
 Typefaces vary in optical size. This means that at any specific pixel value, an optically small typeface like Source Sans Pro will appear smaller than an optically large typeface like Merriweather. Optical size is a function of internal font metrics and typeface design choices like x-height.
 
-{:.font-sans-md}
+{:.font-lang-md}
 ### Fonts at native size
 
 {:.padding-top-2}
@@ -28,7 +28,7 @@ Typefaces vary in optical size. This means that at any specific pixel value, an 
 
 USWDS 2 is designed so each size token outputs a consistent optical size regardless of the typeface. This makes our guidance more reliable and our theming more flexible.
 
-{:.font-sans-md}
+{:.font-lang-md}
 ### Fonts with normalization applied
 
 {:.padding-y-2}
@@ -609,12 +609,12 @@ We use the `typeset()` mixin on all our components to get the effect of default 
 {:.margin-top-4}
 #### Example: Settings and typesetting
 
-```css
+```scss
 // in _uswds-theme-typography:
 
 $theme-respect-user-font-size: true;
-$theme-font-sans:              'public-sans';
-$theme-font-ui:                $theme-font-sans;
+$theme-font-type-sans:         'public-sans';
+$theme-font-role-ui:           $theme-font-sans;
 $theme-type-scale-sm:          5;
 $theme-body-font-size:         'sm';
 $theme-body-line-height:       5;

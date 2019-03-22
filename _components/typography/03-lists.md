@@ -31,6 +31,8 @@ lead: "Lists organize information into discrete sequential sections."
       <li><strong>Use punctuation appropriate to the text.</strong> Do not leave sentences without periods.</li>
     </ul>
     <h4>Implementation</h4>
-    <p>For unstyled lists, use either the <code>.usa-list.usa-list--unstyled</code> classes or the unstyled list mixin: <code>@include unstyled-list;</code>.</p>
+    <ul class="usa-content-list">
+      <li>For unstyled lists, use either the <code>.usa-list.usa-list--unstyled</code> classes or the unstyled list mixin: <code>@include unstyled-list;</code>.</li>
+    </ul>
   </div>
 </div>

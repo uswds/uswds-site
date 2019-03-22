@@ -12,7 +12,7 @@ post in our series, we met with Jennifer Thibault, visual designer and
 innovation specialist, to talk about the Federal Election Commission (FEC)’s use
 of the Standards on [fec.gov][].
 
-**Standards team:** How did you find out about the U.S. Web Design Standards?
+**USWDS:** How did you find out about the U.S. Web Design Standards?
 
 **Jennifer Thibault:** We knew of the USWDS project early on since it was
 kicked off by a team inside 18F. But, we needed to get out a
@@ -33,7 +33,7 @@ When the first version of the Standards was released, we updated our patterns
 with components that were similar to what we already had, but kept them styled
 with the FEC’s new visual look and feel.
 
-**Standards team:** Which components did you use?
+**USWDS:** Which components did you use?
 
 **Thibault:** The footer was one of the first things we used. Every agency has
 to customize a little bit, but we followed the information pattern and layout.
@@ -54,7 +54,7 @@ I come back to the Standards, because they have easy-to-use, ready-made
 solutions for many design scenarios the FEC has. No need to reinvent the wheel
 if this looks good and works.
 
-**Standards team:** Is there anything the Standards team could do to help
+**USWDS:** Is there anything the Standards team could do to help
 you in your efforts?
 
 **Thibault:** The FEC site has really detailed financial tables and we would
@@ -63,7 +63,7 @@ best practices for how to handle long-form content. The FEC, like other
 agencies, has a lot of compliance guidance, which can result in very long
 pages of content—no matter how far down you distill it.
 
-**Standards team:** Advice for other agencies?
+**USWDS:** Advice for other agencies?
 
 **Thibault:** It’s really helped us to think about the U.S. Web Design
 Standards as a resource where we can take what’s useful and leave what we don’t

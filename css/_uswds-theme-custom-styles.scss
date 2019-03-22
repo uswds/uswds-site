@@ -2927,9 +2927,11 @@ figure.highlight {
 }
 
 pre.lineno {
-  padding-right: 2ch;
   color: color('base');
   font-weight: fw('light');
+  margin-right: 2ch;
+  text-align: right;
+  width: 3ch;
 }
 
 [class*="language-"] {

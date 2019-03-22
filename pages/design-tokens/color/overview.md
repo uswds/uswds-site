@@ -30,8 +30,8 @@ USWDS organizes its colors tokens into [theme tokens]({{ site.baseurl }}/design-
 <div class="bg-base-lighter measure-3 padding-3 usa-section" markdown="1">
 {:.font-sans-xs}
 
-{:.font-sans-xs.color-ink.text-bold.text-ls-2}
-### COLOR, COLOR FAMILY, AND GRADE
+{:.font-lang-xs.color-ink.text-bold.text-ls-2.margin-top-0.text-uppercase}
+### Color, color family, and grade
 
 Throughout our documentation and guidance, we’ll use use the terms color, color family, and grade, but what do we mean when we use them?
 

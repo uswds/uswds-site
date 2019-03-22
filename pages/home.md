@@ -1,7 +1,7 @@
 ---
 permalink: /
 layout: landing
-title: "U.S. Web Design System: A design system for the federal government"
+title: "USWDS: The United States Web Design System"
 class: home
 hero:
   callout: A design system for the federal government

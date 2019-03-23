@@ -2906,6 +2906,22 @@ $theme-table-column-gap: 4;
       line-height: lh('lang', 5);
     }
   }
+
+  .usa-banner__header-action {
+    @include add-icon('angle-arrow-down-primary', 'after', 1, 1, 0.5, 'no-hover');
+  }
+
+  .usa-banner__button {
+    @include at-media('tablet') {
+      @include add-icon('angle-arrow-down-primary', 'after', 1, 1, 2px, 'no-hover');
+    }
+
+    &[aria-expanded=true] {
+      @include at-media('tablet') {
+        @include add-icon('angle-arrow-up-primary', 'after', 1, 1, 2px, 'no-hover');
+      }
+    }
+  }
 }
 
 .usa-content-list {

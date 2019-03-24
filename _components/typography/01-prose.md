@@ -19,7 +19,7 @@ lead: "Format a block of running text."
     <h4 class="usa-heading">Implementation</h4>
     <ul class="usa-content-list">
       <li><code>usa-prose</code> is meant for blocks of text where it’s more difficult to add custom classes to individual elements, like a blog post where the content is coming out of markdown or a CMS.</li>
-      <li>Adding <code>usa-prose</code> to any container styles adds USWDS default heading and body text styling to the following <strong>direct-child elements</strong>:
+      <li>Adding <code>usa-prose</code> to any container adds USWDS default heading and body text styling to the following <strong>direct-child elements</strong>:
         <ul>
           <li><code>h1</code>-<code>h6</code></li>
           <li><code>p</code></li>

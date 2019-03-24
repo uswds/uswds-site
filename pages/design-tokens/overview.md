@@ -22,7 +22,7 @@ Anything we see on a website is built from elements of style: elements like colo
 
 This degree of choice can slow down design work and make communication between designer and developer unnecessarily granular. USWDS seeks to maximize design efficiency and improve communication with **design tokens**: the discrete palettes of values from which we base all our visual design.
 
-Design tokens are a limited set of discrete options, just as a scale of musical notes is drawn from an infinite spectrum of possible frequencies. To extend the metaphor, USWDS design tokens are the notes from which we compose our visual designs.
+Design tokens are a limited set of discrete options, just like a scale of musical notes is drawn from the spectrum of all possible frequencies. Or like the presets on a car radio — not every option, just a specific selection.
 
 {:.padding-y-2}
 ![continuous and tokenized values]({{ site.baseurl }}/assets/img/design-tokens/continuous-v-token.svg)

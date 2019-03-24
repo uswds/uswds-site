@@ -16,7 +16,7 @@ subnav:
 {% assign tokens = site.data.tokens.typesetting %}
 
 {:.bg-gold-20v.padding-2.radius-md}
-**Note:** Some letterspacing tokens come in two flavors: a **numeric token** (like `0.5` or `-2`) and a **string token** (like `'05'` or `'neg-2'`). _Utility classes use string tokens exclusively when they exist_ (like `.margin-x-neg-2`). Mixins and function usually accept either, and we will note any exceptions.
+**Note:** Some letterspacing tokens come in two flavors: a **numeric token** (like `0.5` or `-2`) and a **string token** (like `'05'` or `'neg-2'`). _Utility classes use string tokens exclusively when they exist_ (like `.margin-x-neg-2`). Mixins and functions usually accept either, and we will note any exceptions.
 
 ## Letterspacing tokens
 

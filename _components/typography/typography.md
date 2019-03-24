@@ -50,7 +50,7 @@ Controlling the length of lines of text (also known as _measure_) helps readersâ
 - **Measure tokens:**
   - Use tokens between [measure 2]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token} and [measure 5]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token} for most long running text
   - The [measure 6]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token} token can be appropriate for shorter blocks of text, like captions of fewer than three lines â€” or for text that isn't meant for longform reading
-  - The [measure 1]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token} token can be appropriate for helper text no longer than a paragraph or two or for larger text like a subheading or intro text.
+  - The [measure 1]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token} token can be appropriate for helper text (no longer than a paragraph or two) or for larger text (like a subheading or intro text).
 
 
 ### Line height

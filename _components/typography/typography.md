@@ -148,7 +148,7 @@ Letterspacing is the spacing between individual letterforms in a block of text. 
 <div class="grid-row grid-gap">
   <div class="tablet:grid-col">
     <p>Roboto Mono, designed by Christian Robinson, is a monospaced addition to the Roboto type family. Like the other members of the Roboto family, the fonts are optimized for readability on screens across a wide variety of devices and reading environments.</p>
-    <p>Special consideration is given to glyphs important for reading and writing software source code. Letters with similar shapes are easy to tell apart.</p>
+    <p>Special consideration is given to glyphs important for reading and writing code. Letters with similar shapes are easy to tell apart.</p>
   </div>
 
   <div class="typography-mono-intro tablet:grid-col font-alt-md">

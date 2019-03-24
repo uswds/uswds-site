@@ -683,6 +683,8 @@ body {
 }
 
 .footer-content {
+  margin-bottom: units(5);
+
   h3 {
     @include typeset('lang', 'lg', 2);
     margin: 0;
@@ -694,7 +696,6 @@ body {
 
 .footer-contact-links {
   @include grid-gap(2);
-  margin-top: units(4);
 
   h4,
   a {
@@ -724,6 +725,10 @@ body {
     @include at-media('tablet') {
       margin-top: 0;
     }
+  }
+
+  @include at-media('tablet') {
+    margin-top: units(4);
   }
 }
 

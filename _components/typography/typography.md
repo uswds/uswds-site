@@ -116,7 +116,7 @@ Letterspacing is the spacing between individual letterforms in a block of text. 
 <div class="grid-row grid-gap">
   <div class="tablet:grid-col">
     <p>Merriweather, designed by Sorkin Type, is an open-source serif typeface designed for on-screen reading. This font is ideal for text-dense design: the letterforms have a tall x-height but remain relatively small, making for excellent readability across screen sizes while not occupying extra horizontal space.</p>
-    <p>The combination of slim and thick weights gives the font family stylistic range, while conveying a desirable mix of classic, yet modern simplicity. Merriweather communicates warmth and credibility at both large and smaller font sizes.</p>
+    <p>The combination of thin and thick weights gives the typeface stylistic range while conveying a desirable mix of classic, yet modern, simplicity. Merriweather communicates warmth and credibility at both large and small font sizes.</p>
   </div>
 
   <div class="typography-serif-intro tablet:grid-col font-alt-md">

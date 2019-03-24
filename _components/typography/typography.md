@@ -52,9 +52,8 @@ Controlling the length of lines of text (also known as _measure_) helps readers�
   - The [measure 6]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token} token can be appropriate for shorter blocks of text, like captions of fewer than three lines — or for text that isn't meant for longform reading
   - The [measure 1]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token} token can be appropriate for helper text (no longer than a paragraph or two) or for larger text (like a subheading or intro text).
 
-
 ### Line height
-Line height controls the vertical rhythm and density of a block of text. It is written as a multiplier of the text’s font size — for instance, a line height of 1.5 on 16px text results in a line height of 24px.
+Line height controls the vertical rhythm and density of a block of text. It is written as a unitless multiplier of the text’s font size — for instance, a line height of 1.5 on 16px text results in a line height of 24px.
 
 {:.usa-content-list}
 - **Longer texts require more line height.** Headings and other content elements no longer than a line or two can have a line height between 1 ([line-height 1]({{ site.baseurl }}/design-tokens/typesetting/line-height/){:.token}) and 1.35 ([line-height 3]({{ site.baseurl }}/design-tokens/typesetting/line-height/){:.token}). Longer texts should have a line height of at least 1.5 ([line-height 4]({{ site.baseurl }}/design-tokens/typesetting/line-height/){:.token}).

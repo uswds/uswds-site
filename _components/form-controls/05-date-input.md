@@ -25,7 +25,7 @@ lead: Three text fields are the easiest way for users to enter most dates.
     <h4>Usability guidelines</h4>
     <ul class="usa-content-list">
       <li><strong>Label each field.</strong> Be sure each field is properly labeled — some countries enter dates in day, month, year order.</li>
-      <li><strong>Avoid dropdowns.</strong> It may be tempting to switch all or some of these text fields to drop downs, but these tend to be more difficult to use than text boxes.</li>
+      <li><strong>Avoid dropdowns.</strong> It may be tempting to switch all or some of these text fields to dropdowns, but these tend to be more difficult to use than text boxes.</li>
     </ul>
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">

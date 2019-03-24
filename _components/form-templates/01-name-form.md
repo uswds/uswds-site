@@ -23,7 +23,7 @@ lead: Collect a full name as separate elements of data
     </ul>
     <h4>Usability guidance</h4>
     <ul class="usa-content-list">
-      <li><strong>Avoid dropdowns.</strong> Leave the title and suffix fields as text boxes instead of offering drop downs. There are many possible titles and suffixes; text boxes accommodate them all.</li>
+      <li><strong>Avoid dropdowns.</strong> Leave the title and suffix fields as text boxes instead of offering dropdowns. There are many possible titles and suffixes; text boxes accommodate them all.</li>
       <li><strong>Don’t restrict characters.</strong> Do not restrict the types of characters users can enter in any of these fields. Names can include characters outside the standard Roman alphabet.</li>
     </ul>
     <h4 class="usa-heading">Accessibility</h4>

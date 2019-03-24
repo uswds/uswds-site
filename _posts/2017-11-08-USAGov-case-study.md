@@ -64,7 +64,7 @@ From an accessibility standpoint, we created an issue log and gave it to the Sta
 
 **USWDS:** Advice for other agencies?
 
-**RO**: Don’t be afraid to use them in your own way. We ended up forking the Standards, tweaking them to our needs, but using them as the baseline. For instance, in our drop down menu we added an icon and visual link that wasn’t in the Standards. We know that forking has long-term implications, but we think we’re getting a lot from the design language of the Standards. And users having the same experience across government—that’s a positive.
+**RO**: Don’t be afraid to use them in your own way. We ended up forking the Standards, tweaking them to our needs, but using them as the baseline. For instance, in our dropdown menu we added an icon and visual link that wasn’t in the Standards. We know that forking has long-term implications, but we think we’re getting a lot from the design language of the Standards. And users having the same experience across government—that’s a positive.
 
 
 ---

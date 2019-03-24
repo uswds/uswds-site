@@ -34,7 +34,7 @@ USWDS 2 is designed so each size token outputs a consistent optical size regardl
 {:.padding-y-2}
 ![normalized typefaces]({{ site.baseurl }}/assets/img/design-tokens/font-comparison-normalized.svg)
 
-To make different typefaces appear the same size (here called the _target size_) at each step of the scale (here we see the output of [size]({{ site.baseurl }}/design-tokens/typesetting/font-size/){:.token} token `10`), the absolute size of each token's output varies depending on the font family.
+To make different typefaces appear the same size (here called the _target size_) at each step of the scale (below, we see the output of [size]({{ site.baseurl }}/design-tokens/typesetting/font-size/){:.token} token `10`), the absolute size of each token's output varies depending on the font family.
 
 Each [supported typeface]({{ site.baseurl }}/design-tokens/typesetting/font-family/) is normalized to a target value determined by the optical size of common system fonts — specifically Apple's typeface San Francisco and Google's typeface Roboto.
 

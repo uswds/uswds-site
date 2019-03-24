@@ -661,11 +661,11 @@ body {
   }
 
   .usa-footer__secondary-section {
-    @include u-padding-y(2);
+    @include u-padding-bottom(0);
+    @include u-padding-top(2);
     background-color: color('base-lightest');
 
     @include at-media('tablet') {
-      padding-bottom: units(5);
       padding-top: units(4);
     }
   }

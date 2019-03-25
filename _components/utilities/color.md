@@ -76,7 +76,7 @@ utilities:
             | times: 1 %}
 
           <div class="utility-example-container grid-col-12 font-lang-xs display-flex flex-align-center flex-justify">
-            <span class="radius-md padding-05 text-{{ color.token }}{% if grade < 50 %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
+            <span class="radius-md padding-05 text-default-{{ color.token }}{% if grade < 50 %} bg-gray-90 is-inverse{% endif %}">.text-{{ color.token }}</span>
             <span class="flex-auto utility-value-color">
               <span class="utility-value-color-chip bg-{{ color.token }}"></span>
               {% assign system = system-colors | where: 'token', color.default %}
@@ -165,7 +165,7 @@ utilities:
           {% assign value = system[0].value %}
           <p class="utility-example-container grid-col-12 display-flex flex-align-center measure-none">
             <span class="flex-fill">
-              <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-{{ color.token }}"></span>
+              <span class="square-4 radius-sm display-inline-block text-middle margin-right-1 bg-default-{{ color.token }}"></span>
               <span class="utility-class">.bg-{{ color.token }}</span>
             </span>
             <span class="flex-auto utility-value-color">

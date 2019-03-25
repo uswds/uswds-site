@@ -241,7 +241,7 @@ utilities:
           {% assign token = false %}
         {% endif %}
         <div class="utility-example-container grid-col-12 font-lang-xs display-flex flex-align-center flex-justify{% if forloop.last %}{% endif %}">
-          <span class="text-underline underline-{{ color.token }}">.underline-{{ color.token }}<span class="text-thin text-gray-50">.text-underline</span></span>
+          <span class="text-underline underline-default-{{ color.token }}">.underline-{{ color.token }}<span class="text-thin text-gray-50">.text-underline</span></span>
           <span class="flex-auto">
             {% if token %}
               <code class="bg-secondary-lighter radius-sm">{{ token }}</code>

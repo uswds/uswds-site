@@ -82,9 +82,7 @@ utilities:
 {% assign grayscale_colors = site.data.tokens.color.grayscale %}
 {% assign basic_colors = site.data.tokens.color.basic %}
 {% assign transparent = site.data.tokens.color.required %}
-{% assign all_colors = transparent
-  | concat: theme_colors
-  | concat: grayscale_colors
+{% assign all_colors = grayscale_colors
   | concat: basic_colors
   %}
 
@@ -485,6 +483,62 @@ utilities:
 
     <section class="utility-examples">
       <div class="grid-row">
+        {% for color in transparent %}
+          {% if color.default %}
+            {% assign system = system-colors | where: 'token', color.default %}
+            {% assign value = system[0].value %}
+            {% assign token = color.default %}
+          {% else %}
+            {% assign value = color.value %}
+            {% assign token = false %}
+          {% endif %}
+          <p class="utility-example-container grid-col-12 display-flex flex-align-center">
+            <span class="flex-fill">
+              <span class="square-4 radius-sm text-middle padding-05 display-inline-block margin-right-1 bg-white ">
+                <span class="square-3 radius-sm display-block border-1px border-{{ color.token }}"></span>
+              </span>
+              <span class="display-none tablet:display-inline-block square-4 radius-sm text-middle padding-05 margin-right-1 bg-ink">
+                <span class="square-3 radius-sm display-block border-1px border-{{ color.token }}"></span>
+              </span>
+              <span class="utility-class">.border-{{ color.token }}</span>
+            </span>
+            {% if token %}
+              <code class="display-none tablet:display-inline-block bg-secondary-lighter radius-sm">{{ token }}</code>
+            {% endif %}
+            <span class="display-none tablet:display-inline-block flex-auto utility-value-color margin-left-1">
+              <span class="utility-value-color-chip bg-{{ color.token }}"></span>
+              {{ value }}
+            </span>
+          </p>
+        {% endfor %}
+        {% for color in theme_colors %}
+          {% if color.default %}
+            {% assign system = system-colors | where: 'token', color.default %}
+            {% assign value = system[0].value %}
+            {% assign token = color.default %}
+          {% else %}
+            {% assign value = color.value %}
+            {% assign token = false %}
+          {% endif %}
+          <p class="utility-example-container grid-col-12 display-flex flex-align-center">
+            <span class="flex-fill">
+              <span class="square-4 radius-sm text-middle padding-05 display-inline-block margin-right-1 bg-white ">
+                <span class="square-3 radius-sm display-block border-1px border-default-{{ color.token }}"></span>
+              </span>
+              <span class="display-none tablet:display-inline-block square-4 radius-sm text-middle padding-05 margin-right-1 bg-ink">
+                <span class="square-3 radius-sm display-block border-1px border-{{ color.token }}"></span>
+              </span>
+              <span class="utility-class">.border-{{ color.token }}</span>
+            </span>
+            {% if token %}
+              <code class="display-none tablet:display-inline-block bg-secondary-lighter radius-sm">{{ token }}</code>
+            {% endif %}
+            <span class="display-none tablet:display-inline-block flex-auto utility-value-color margin-left-1">
+              <span class="utility-value-color-chip bg-{{ color.token }}"></span>
+              {{ value }}
+            </span>
+          </p>
+        {% endfor %}
         {% for color in all_colors %}
           {% if color.default %}
             {% assign system = system-colors | where: 'token', color.default %}

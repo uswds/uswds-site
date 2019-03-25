@@ -185,7 +185,7 @@ system:
     - token: red-cool-5v
       value: false
     - token: red-cool-10v
-      value: false
+      value: '#f8dfe2'
     - token: red-cool-20v
       value: '#f8b9c5'
     - token: red-cool-30v

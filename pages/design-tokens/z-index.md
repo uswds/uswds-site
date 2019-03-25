@@ -16,8 +16,8 @@ subnav:
 <div class="position-relative z-0">
   <div class="bg-white radius-md border padding-x-1 tablet:padding-x-2 padding-top-1 padding-bottom-2 font-mono-3 position-relative z-bottom">
     <div class="grid-row grid-gap flex-align-center margin-bottom-2 padding-bottom-1 border-bottom-2px text-bold">
-      <div class="grid-col-fill text-700 font-sans-1">Token</div>
-      <div class="grid-col-auto text-700 font-sans-1">Value</div>
+      <div class="grid-col-fill text-700 font-lang-1">Token</div>
+      <div class="grid-col-auto text-700 font-lang-1">Value</div>
     </div>
     <section class="position-relative">
       <div class="bg-white border border-ink radius-lg padding-2  minh-10 margin-left-0 display-flex flex-justify flex-align-start z-auto">
@@ -75,7 +75,7 @@ Your context and coding style determine how you access USWDS z-index tokens in c
     <tbody class="font-mono-2xs">
       <tr>
         <td scope="row" data-title="Context">
-          <span class="text-bold font-sans-3">function</span>
+          <span class="text-bold font-lang-3">function</span>
         </td>
         <td data-title="Usage">
           <span>
@@ -90,7 +90,7 @@ Your context and coding style determine how you access USWDS z-index tokens in c
       </tr>
       <tr>
         <td scope="row" data-title="Context">
-          <span class="font-sans-3">
+          <span class="font-lang-3">
             <span class="text-bold">mixin</span><br/>
           </span>
         </td>
@@ -108,7 +108,7 @@ Your context and coding style determine how you access USWDS z-index tokens in c
       <tr>
         <td scope="row" data-title="Context">
           <span>
-            <span class="text-bold font-sans-3">setting</span><br/>
+            <span class="text-bold font-lang-3">setting</span><br/>
           </span>
         </td>
         <td data-title="Usage">
@@ -124,7 +124,7 @@ Your context and coding style determine how you access USWDS z-index tokens in c
       </tr>
       <tr>
         <td scope="row" data-title="Context">
-          <span class="font-sans-3">
+          <span class="font-lang-3">
             <span class="text-bold">utility</span><br/>
           </span>
         </td>

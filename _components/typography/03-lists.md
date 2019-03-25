@@ -18,8 +18,8 @@ lead: "Lists organize information into discrete sequential sections."
   <div id="list-docs" class="usa-accordion__content site-component-usage">
     <h4>When to use the list component</h4>
     <ul class="usa-content-list">
-      <li>Use an ordered list when you need to display text in some ranking, hierarchy, or series of steps.</li>
-      <li>Use unordered lists to display text in no specific order.</li>
+      <li><strong>Ordered list:</strong> Use an ordered list when you need to display text in some ranking, hierarchy, or series of steps.</li>
+      <li><strong>Unordered list:</strong> Use unordered lists to display text in no specific order.</li>
     </ul>
     <h4>When to consider something different</h4>
     <ul class="usa-content-list">
@@ -31,6 +31,8 @@ lead: "Lists organize information into discrete sequential sections."
       <li><strong>Use punctuation appropriate to the text.</strong> Do not leave sentences without periods.</li>
     </ul>
     <h4>Implementation</h4>
-    <p>For unstyled lists, use either the <code>.usa-list.usa-list--unstyled</code> classes or the unstyled list mixin: <code>@include unstyled-list;</code>.</p>
+    <ul class="usa-content-list">
+      <li>For unstyled lists, use either the <code>.usa-list.usa-list--unstyled</code> classes or the unstyled list mixin: <code>@include unstyled-list;</code>.</li>
+    </ul>
   </div>
 </div>

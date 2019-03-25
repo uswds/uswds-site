@@ -62,7 +62,7 @@ The following fonts have normalization metadata in USWDS, and are available to s
 </div>
 
 ## Type-based tokens
-Type based tokens set the font family value based on the _type_ of the requested font: **monospaced**, **sans-serif**, **serif**, and **condensed** families.
+Type based tokens set the font family value based on the _type_ of the requested font: **icon**, **language**, **monospaced**, **sans-serif**, **serif**, and **condensed** families.
 
 <div class="site-table-wrapper">
   <table class="usa-table--borderless site-table-responsive">
@@ -99,7 +99,7 @@ Type based tokens set the font family value based on the _type_ of the requested
           </td>
           <td data-title="Settings var">
             <span>
-              $theme-font-{{ item.token }}
+              $theme-font-type-{{ item.token }}
             </span>
           </td>
         </tr>
@@ -107,9 +107,6 @@ Type based tokens set the font family value based on the _type_ of the requested
     </tbody>
   </table>
 </div>
-
-{:.bg-gold-20v.padding-2.radius-md}
-**Note:** The `icon` family type is coming in a later release of the USWDS 2.0 Beta — sometime in November 2018.
 
 ## Role-based tokens
 Role-based tokens set the font family value based on the _role_ the face plays in the project: **heading**, **body**, **ui**, **code**, and **alternate**.
@@ -149,7 +146,7 @@ Role-based tokens set the font family value based on the _role_ the face plays i
           </td>
           <td data-title="Settings var">
             <span>
-              $theme-font-{{ item.token }}
+              $theme-font-role-{{ item.token }}
             </span>
           </td>
         </tr>
@@ -159,7 +156,7 @@ Role-based tokens set the font family value based on the _role_ the face plays i
 </div>
 
 {:.bg-gold-20v.padding-2.radius-md}
-**Note:** It is possible to add custom font metadata in USWDS settings. This documentation is coming in November 2018.
+**Note:** It is possible to add **custom font metadata**, **custom font stacks**, and **custom font source files** in your USWDS settings. This documentation is coming soon. See the inline documentation in `_uswds-theme-typography` for more details.
 
 ## Customizing family tokens
 Customize [type](#0){:.token} and [role](#0){:.token} family tokens in your project's theme settings with available [font](#0){:.token} tokens. All typography-related settings are in `_uswds-theme-typography.scss`.
@@ -168,20 +165,22 @@ Customize [type](#0){:.token} and [role](#0){:.token} family tokens in your proj
 
 {:.margin-bottom-4}
 ```sass
-$theme-font-mono:   'roboto-mono';
-$theme-font-sans:   'source-sans-pro';
-$theme-font-serif:  'merriweather';
-$theme-font-cond:   false;
+$theme-font-type-cond:   false;
+$theme-font-type-icon:   false;
+$theme-font-type-lang:   false;
+$theme-font-type-mono:   'roboto-mono';
+$theme-font-type-sans:   'source-sans-pro';
+$theme-font-type-serif:  'merriweather';
 ```
 
 **Then use the type variables you just set to set the [role](#0){:.token} family tokens.** Set any unused types to `false`.
 
 ```sass
-$theme-font-ui:       $theme-font-sans;
-$theme-font-heading:  $theme-font-serif;
-$theme-font-body:     $theme-font-sans;
-$theme-font-code:     $theme-font-mono;
-$theme-font-alt:      $theme-font-serif;
+$theme-font-role-ui:       $theme-font-sans;
+$theme-font-role-heading:  $theme-font-serif;
+$theme-font-role-body:     $theme-font-sans;
+$theme-font-role-code:     $theme-font-mono;
+$theme-font-role-alt:      $theme-font-serif;
 ```
 
 ## Using family tokens
@@ -190,18 +189,18 @@ Your context and coding style determine how you access USWDS family tokens in co
 
 <div class="bg-white radius-md border padding-x-2 padding-top-1 padding-bottom-2px">
   <div class="grid-row grid-gap flex-align-center margin-bottom-1 padding-bottom-1 border-bottom-2px text-bold">
-    <div class="grid-col-2 text-700 font-sans-1">Context</div>
-    <div class="grid-col-5 text-700 font-sans-1">Usage</div>
-    <div class="grid-col-5 text-700 font-sans-1">Example</div>
+    <div class="grid-col-2 text-700 font-lang-1">Context</div>
+    <div class="grid-col-5 text-700 font-lang-1">Usage</div>
+    <div class="grid-col-5 text-700 font-lang-1">Example</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">function
+    <div class="grid-col-2 text-bold font-lang-3">function
     </div>
     <div class="grid-col-5">family(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>)</div>
     <div class="grid-col-5">font-family: family(<code>'body'</code>);</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">
+    <div class="grid-col-2 text-bold font-lang-3">
       mixin<br/>
       <span class="text-normal">font-family</span>
     </div>
@@ -209,7 +208,7 @@ Your context and coding style determine how you access USWDS family tokens in co
     <div class="grid-col-5">@include u-font-family(<code>'sans'</code>)</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">
+    <div class="grid-col-2 text-bold font-lang-3">
       mixin<br/>
       <span class="text-normal">font-family</span><br/>
       <span class="text-normal">font-size</span>
@@ -218,19 +217,19 @@ Your context and coding style determine how you access USWDS family tokens in co
     <div class="grid-col-5">@include u-font(<code>'body'</code>, <code>'2xl'</code>)</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">setting</div>
+    <div class="grid-col-2 text-bold font-lang-3">setting</div>
     <div class="grid-col-5"><a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a></div>
     <div class="grid-col-5">$theme-prose-font-family: <code>'body'</code>;</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-1 margin-bottom-1 border-bottom border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">utility<br/>
+    <div class="grid-col-2 text-bold font-lang-3">utility<br/>
       <span class="text-normal">font-family</span>
     </div>
     <div class="grid-col-5">.font-family-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a></div>
     <div class="grid-col-5">.font-family-<code>body</code>;</div>
   </div>
   <div class="grid-row grid-gap flex-align-center padding-bottom-1 border-gray-10 font-mono-3">
-    <div class="grid-col-2 text-bold font-sans-3">utility<br/>
+    <div class="grid-col-2 text-bold font-lang-3">utility<br/>
       <span class="text-normal">font-family</span><br/>
       <span class="text-normal">font-size</span>
     </div>

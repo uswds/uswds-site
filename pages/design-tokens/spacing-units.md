@@ -27,7 +27,7 @@ subnav:
 Any spacing value in utilities or component CSS should use the following spacing unit tokens, based on multiples of 8px. The documentation below displays a target value in pixels, but the final output for tokens above `2px` and below `-2px` is the eqivalent value in `rem`, which will vary depending on your project settings.
 
 {:.bg-gold-20v.padding-2.radius-md}
-**Note:** Some units tokens come in two flavors: a **numeric token** (like `0.5` or `-2`) and a **string token** (like `'05'` or `'neg-2'`). _Utility classes use string tokens exclusively when they exist_ (like `.margin-x-neg-2`). Mixins and function usually accept either, and we will note any exceptions.
+**Note:** Some units tokens come in two flavors: a **numeric token** (like `0.5` or `-2`) and a **string token** (like `'05'` or `'neg-2'`). _Utility classes use unquoted string tokens exclusively when they exist_ (like `.margin-x-neg-2`). Mixins and functions usually accept either, and we will note any exceptions.
 
 ## Spacing unit tokens
 
@@ -109,7 +109,7 @@ Many mixins and utilities accept spacing unit tokens. See the [utilities section
     <tbody class="font-mono-2xs line-height-sans-6">
       <tr>
         <td scope="row" data-title="Context">
-          <span class="text-bold font-sans-3">function</span>
+          <span class="text-bold font-lang-3">function</span>
         </td>
         <td data-title="Usage">
           <span>
@@ -127,7 +127,7 @@ Many mixins and utilities accept spacing unit tokens. See the [utilities section
       </tr>
       <tr>
         <td scope="row" data-title="Context">
-          <span class="font-sans-3 line-height-sans-2">
+          <span class="font-lang-3 line-height-sans-2">
             <span class="text-bold">mixin</span><br/>
             <span>min-width media query</span><br/>
           </span>
@@ -145,7 +145,7 @@ Many mixins and utilities accept spacing unit tokens. See the [utilities section
       </tr>
       <tr>
         <td scope="row" data-title="Context">
-          <span class="font-sans-3 line-height-sans-2">
+          <span class="font-lang-3 line-height-sans-2">
             <span class="text-bold">mixin</span><br/>
             <span>max-width media query</span><br/>
           </span>
@@ -164,7 +164,7 @@ Many mixins and utilities accept spacing unit tokens. See the [utilities section
       <tr>
         <td scope="row" data-title="Context">
           <span>
-            <span class="text-bold font-sans-3">setting</span><br/>
+            <span class="text-bold font-lang-3">setting</span><br/>
           </span>
         </td>
         <td data-title="Usage">
@@ -180,7 +180,7 @@ Many mixins and utilities accept spacing unit tokens. See the [utilities section
       </tr>
       <tr>
         <td scope="row" data-title="Context">
-          <span class="font-sans-3">
+          <span class="font-lang-3">
             <span class="text-bold">utility</span><br/>
           </span>
         </td>

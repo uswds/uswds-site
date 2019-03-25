@@ -100,7 +100,7 @@ In the cloud.gov dashboard, we have chosen the following metrics:
 Once you’ve decided which metrics your team wants to track, you’re ready to choose a tool to accurately track these metrics. Different tools can be run in different ways and show different metrics. When selecting a tool, it’s important to consider what metrics the tool reports on and how the tool runs.
 
 #### Checking chosen metrics
-The first step in choosing a tool is to make sure   the metrics you chose before are reported by the tool. To simplify the researching process, here’s a small helper to determine which tools track which metrics. To use it, select the metrics you plan on using from the drop down lists and view the chart below to see whether it’s available in each tool.
+The first step in choosing a tool is to make sure   the metrics you chose before are reported by the tool. To simplify the researching process, here’s a small helper to determine which tools track which metrics. To use it, select the metrics you plan on using from the dropdown lists and view the chart below to see whether it’s available in each tool.
 
 Depending on the metrics you’ve chosen, it might be difficult to find a tool that tracks all of them. If you’re finding that it would take more than three tools to track all your metrics, it might be time to go back to your chosen metrics and take some out that are harder to track. When doing this, it’s usually wise to leave in the **primary direct metrics**, such as [Speed index](../glossary/#speed-index), but take out some of the **secondary direct metrics**, such as [load time](../glossary/#load-time) or [first byte](../glossary/#first-byte).
 

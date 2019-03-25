@@ -11,12 +11,12 @@ The U.S. Web Design Standards are currently being used on hundreds of government
 We talked with Maria Marrero, user experience designer and team lead, Russell O’Neil, director of delivery and channel operations, and David Stenger, senior innovation specialist.
 
 
-**Standards team**: How did you hear about the U.S. Web Design Standards?
+**USWDS:** How did you hear about the U.S. Web Design Standards?
 
 **Maria Marrero**: A couple of years ago, when the initial discussions and brainstorming around the Standards was beginning, the USA.gov team was asked to take part. We looked at the components already used in government sites and thought about what could be built across the government in a more standard way.
 
 
-**Standards team**: Did you pick up the components right away? Which components did you pick up?
+**USWDS:** Did you pick up the components right away? Which components did you pick up?
 
 **MM**: We didn’t use them right away, but started looking at the components last year when we started planning a site facelift to see what could be implemented. We followed the development of the Standards and provided feedback.
 
@@ -25,7 +25,7 @@ We talked with Maria Marrero, user experience designer and team lead, Russell O�
 **MM**: We wanted to implement small components, little by little. We adopted the header and footer and fonts—font family and sizes.
 
 
-**Standards team**: How was it to incorporate those elements?
+**USWDS:** How was it to incorporate those elements?
 
 **MM**: From a design perspective, we were able to easily adopt the header and footer and accommodate content we had on our current sites. It fit pretty well. We had to make some adjustments to the mega menus, as we didn’t have them on our site before. It was not as complicated from the design perspective as we’d thought. From a technical perspective, it wasn’t as simple.
 
@@ -38,12 +38,12 @@ From an accessibility standpoint, we created an issue log and gave it to the Sta
 **MM**: We adopted the Standards knowing it’s a work in progress and that some of the components would need some tweaking. We have had to go back and fix code. Our general feedback to other agencies has been that for new and small websites, the Standards would work nicely. But, with more established sites that already have a CMS (Content Management System), lots of content (with a deep information architecture), it could be a big and complicated project.
 
 
-**Standards team**: That’s helpful feedback. Did you also report that feedback in the repos (repositories)?
+**USWDS:** That’s helpful feedback. Did you also report that feedback in the repos (repositories)?
 
 **MM**: Yes. We did report it in the [GitHub repos](https://github.com/uswds/uswds/). As we adopted components, we provided additional testing information we have from using the Standards. For example, usage of the official tagline that appears at the very top of the pages. It was also helpful to see comments from other users/agencies on their experience or suggestions with the Standards. When using the Standards and encountering issues, we had to move forward whether they were addressed or not. We had deadlines for launching sections of our sites.
 
 
-**Standards team**: Anything else the Standards team should know about multilingual sites?
+**USWDS:** Anything else the Standards team should know about multilingual sites?
 
 **RO**: The biggest thing was that Spanish is a longer language. Things don’t wrap properly, especially in menus.
 
@@ -52,19 +52,19 @@ From an accessibility standpoint, we created an issue log and gave it to the Sta
 **DS**: One thing we learned was how the white space changed when implementing the Standards. It took us a while to adjust the white space. The way we’d previously coded the site resulted in incongruities — like a lot of space in form fields. When we implemented the Standards, it tended to multiply the white space.
 
 
-**Standards team**: What were the benefits you gained by using the Standards?
+**USWDS:** What were the benefits you gained by using the Standards?
 
 **MM**: I think the treatment of buttons or the accordion—something we could make more standardized across all government was helpful and served as a guide for consistency. It helps that they have working examples of the components. Better than just an image. The fact that there is a community with feedback. It’s good to hear from others sharing concerns or solutions.
 
 
-**Standards team**: Is there anything the Standards team could do to help you in your efforts?
+**USWDS:** Is there anything the Standards team could do to help you in your efforts?
 
 **RO**: That’s hard to answer because the Standards don’t answer to any one project or agency. You get lots of feedback from lots of sources. It’s great we can put in issue requests. In the early days, we didn’t know if anything was being done with the input provided. But, it’s been really great to share our experience with the Standards team in efforts like this and my experience with members of the team has always been good.
 
 
-**Standards team**: Advice for other agencies?
+**USWDS:** Advice for other agencies?
 
-**RO**: Don’t be afraid to use them in your own way. We ended up forking the Standards, tweaking them to our needs, but using them as the baseline. For instance, in our drop down menu we added an icon and visual link that wasn’t in the Standards. We know that forking has long-term implications, but we think we’re getting a lot from the design language of the Standards. And users having the same experience across government—that’s a positive.
+**RO**: Don’t be afraid to use them in your own way. We ended up forking the Standards, tweaking them to our needs, but using them as the baseline. For instance, in our dropdown menu we added an icon and visual link that wasn’t in the Standards. We know that forking has long-term implications, but we think we’re getting a lot from the design language of the Standards. And users having the same experience across government—that’s a positive.
 
 
 ---

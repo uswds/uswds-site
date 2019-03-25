@@ -44,17 +44,16 @@ Controlling the length of lines of text (also known as _measure_) helps readers�
 
 {:.usa-content-list}
 - **Most lines of text should be 45-90 characters.** Somewhere between 45 ([measure 1]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token}) and 90 characters per line ([measure 5]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token}) is broadly considered to be a readable line length, with 66 characters ([measure 2]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token}) considered a comfortable target for long texts.
-- **Text with greater line height can have a longer measure.** Since of the functions of measure is to help readers move from one line of text to another more naturally, the effects of a long measure can be lessened by increasing the space between lines. This, text with more space between lines can have somewhat longer line length.
+- **Text with greater line height can have a longer measure.** Since of the functions of measure is to help readers move from one line of text to another more naturally, the effects of a long measure can be lessened by increasing the space between lines. Thus, text with more space between lines can have somewhat longer line length.
 - **Short passages can have measure outside the ideal range.** Contexts in which users will not be reading long passages of text (such as footnotes or alerts) can safely be set with somewhat longer or shorter lines than usual.
 - **Large text can have a shorter measure.** Since larger text takes up more screen real estate, it can make sense to assign it a relatively small measure.
 - **Measure tokens:**
   - Use tokens between [measure 2]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token} and [measure 5]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token} for most long running text
   - The [measure 6]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token} token can be appropriate for shorter blocks of text, like captions of fewer than three lines — or for text that isn't meant for longform reading
-  - The [measure 1]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token} token can be appropriate for helper text no longer than a paragraph or two or for larger text like a subheading or intro text.
-
+  - The [measure 1]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token} token can be appropriate for helper text (no longer than a paragraph or two) or for larger text (like a subheading or intro text).
 
 ### Line height
-Line height controls the vertical rhythm and density of a block of text. It is written as a multiplier of the text’s font size — for instance, a line height of 1.5 on 16px text results in a line height of 24px.
+Line height controls the vertical rhythm and density of a block of text. It is written as a unitless multiplier of the text’s font size — for instance, a line height of 1.5 on 16px text results in a line height of 24px.
 
 {:.usa-content-list}
 - **Longer texts require more line height.** Headings and other content elements no longer than a line or two can have a line height between 1 ([line-height 1]({{ site.baseurl }}/design-tokens/typesetting/line-height/){:.token}) and 1.35 ([line-height 3]({{ site.baseurl }}/design-tokens/typesetting/line-height/){:.token}). Longer texts should have a line height of at least 1.5 ([line-height 4]({{ site.baseurl }}/design-tokens/typesetting/line-height/){:.token}).
@@ -75,7 +74,7 @@ The space around your content elements affects the relationship between these el
 - **Don't indent paragraphs, use whitespace before.** While most longform print design uses indented lines to distinguish paragraphs, it's more conventional on the web to use unindented paragraphs separated by whitespace.
 - **Use at least 1em of whitespace between paragraphs.** To properly separate paragraphs from one other, use the equivalent of one blank line of whitespace between them. Using more than 1.5em disturbs the flow of the text and using less than 0.5em doesn't provide enough separation.
 - **Use at least 0.5em of whitespace between list items.** List items should also be separated by whitespace, but they need less space than paragraphs because the list item indicator also helps distinguish adjacent items.
-- **Headings should be closer to the text that follows them than the text that preceeds them.** It's important that headings are more visually connected to the text for which they're the heading than the text of the previous section to reduce ambiguity and cognitive dissonance. Use at least 1.5 times the amount of whitespace above the heading as below it.
+- **Headings should be closer to the text they introduce than the text that preceeds them.** It's important that headings are more visually connected to the text for which they're the heading than the text of the previous section to reduce ambiguity and cognitive dissonance. Use at least 1.5 times the amount of whitespace above the heading as below it.
 - **Text should have sufficient margin on the left and right**. Running text requires right and left margin proportional to the width of the viewport. Use at least [1 unit]({{ site.baseurl }}/design-tokens/spacing-units/){:.token} of margin between the text and the edge of the viewport at mobile widths and at least [2 units]({{ site.baseurl }}/design-tokens/spacing-units/){:.token} on a tablet. Desktop widths can require as much as [4-5 units]({{ site.baseurl }}/design-tokens/spacing-units/){:.token} of minimum horizontal margin between the body of the text and any adjacent elements.
 
 ### Font style
@@ -117,7 +116,7 @@ Letterspacing is the spacing between individual letterforms in a block of text. 
 <div class="grid-row grid-gap">
   <div class="tablet:grid-col">
     <p>Merriweather, designed by Sorkin Type, is an open-source serif typeface designed for on-screen reading. This font is ideal for text-dense design: the letterforms have a tall x-height but remain relatively small, making for excellent readability across screen sizes while not occupying extra horizontal space.</p>
-    <p>The combination of slim and thick weights gives the font family stylistic range, while conveying a desirable mix of classic, yet modern simplicity. Merriweather communicates warmth and credibility at both large and smaller font sizes.</p>
+    <p>The combination of thin and thick weights gives the typeface stylistic range while conveying a desirable mix of classic, yet modern, simplicity. Merriweather communicates warmth and credibility at both large and small font sizes.</p>
   </div>
 
   <div class="typography-serif-intro tablet:grid-col font-alt-md">
@@ -133,7 +132,7 @@ Letterspacing is the spacing between individual letterforms in a block of text. 
 <h3 class="usa-heading-alt">Public Sans</h3>
 <div class="grid-row grid-gap">
   <div class="tablet:grid-col">
-    <p><a href="https://github.com/uswds/public-sans">Public Sans</a> is an open-source sans serif typeface designed and maintained by USWDS. It is a strong, neutral, principles-driven typeface for text or display based on a traditionally American Franklin form. It uses metrics similar to common system fonts for smoother progressive enhancement. It has a plain, straightforward style, appropriate for interfaces and running text. Its large x-height makes it legible at small sizes. Its heavier weights have tighter letterspacing than its lighter weights, meaning running text (which tends to be relatively small) is spaced more generously and headings (which tend to be relatively large) are more compact. It has tabular numerals for aligning numbers in tables.</p>
+    <p><a href="https://github.com/uswds/public-sans">Public Sans</a> is an open-source sans serif typeface designed and maintained by USWDS and derived from <a href="https://github.com/impallari/Libre-Franklin">Libre Franklin</a>. It is a strong, neutral, principles-driven typeface for text or display based on a traditional American form. (The Franklin form is most noticeable in the two-story design of the “g” character.) It uses metrics similar to common system fonts for smoother progressive enhancement. It has a plain, straightforward style, appropriate for interfaces and running text. Its large x-height makes it legible at small sizes. It features a broad range of weights — and its heavier weights have tighter letterspacing than its lighter weights, meaning running text (which tends to be relatively small) is spaced more generously and headings (which tend to be relatively large) are more compact. It has tabular numerals for aligning numbers in tables.</p>
   </div>
   <div class="typography-lang-intro tablet:grid-col font-alt-md">
     <span class="text-huge">Aa</span>
@@ -149,7 +148,7 @@ Letterspacing is the spacing between individual letterforms in a block of text. 
 <div class="grid-row grid-gap">
   <div class="tablet:grid-col">
     <p>Roboto Mono, designed by Christian Robinson, is a monospaced addition to the Roboto type family. Like the other members of the Roboto family, the fonts are optimized for readability on screens across a wide variety of devices and reading environments.</p>
-    <p>Special consideration is given to glyphs important for reading and writing software source code. Letters with similar shapes are easy to tell apart.</p>
+    <p>Special consideration is given to glyphs important for reading and writing code. Letters with similar shapes are easy to tell apart.</p>
   </div>
 
   <div class="typography-mono-intro tablet:grid-col font-alt-md">
@@ -163,6 +162,6 @@ Letterspacing is the spacing between individual letterforms in a block of text. 
 </div>
 
 <h2>Pairing and styles</h2>
-<div class="bg-warning padding-1 radius-sm measure-4"><strong>Note:</strong> This section is changing in USWDS 2.0. Updated guidance will appear soon.</div>
+<div class="site-note"><strong>Note:</strong> This section is changing in USWDS 2.0. Updated guidance will appear soon.</div>
 
 {% include child-sections.html parent='typography' %}

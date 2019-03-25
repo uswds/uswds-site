@@ -20,7 +20,7 @@ subnav:
 ## Normalization
 Typefaces vary in optical size. This means that at any specific pixel value, an optically small typeface like Source Sans Pro will appear smaller than an optically large typeface like Merriweather. Optical size is a function of internal font metrics and typeface design choices like x-height.
 
-{:.font-sans-md}
+{:.font-lang-md}
 ### Fonts at native size
 
 {:.padding-top-2}
@@ -28,13 +28,13 @@ Typefaces vary in optical size. This means that at any specific pixel value, an 
 
 USWDS 2 is designed so each size token outputs a consistent optical size regardless of the typeface. This makes our guidance more reliable and our theming more flexible.
 
-{:.font-sans-md}
+{:.font-lang-md}
 ### Fonts with normalization applied
 
 {:.padding-y-2}
 ![normalized typefaces]({{ site.baseurl }}/assets/img/design-tokens/font-comparison-normalized.svg)
 
-To make different typefaces appear the same size (here called the _target size_) at each step of the scale (here we see the output of [size]({{ site.baseurl }}/design-tokens/typesetting/font-size/){:.token} token `10`), the absolute size of each token's output varies depending on the font family.
+To make different typefaces appear the same size (here called the _target size_) at each step of the scale (below, we see the output of [size]({{ site.baseurl }}/design-tokens/typesetting/font-size/){:.token} token `10`), the absolute size of each token's output varies depending on the font family.
 
 Each [supported typeface]({{ site.baseurl }}/design-tokens/typesetting/font-family/) is normalized to a target value determined by the optical size of common system fonts — specifically Apple's typeface San Francisco and Google's typeface Roboto.
 
@@ -609,12 +609,12 @@ We use the `typeset()` mixin on all our components to get the effect of default 
 {:.margin-top-4}
 #### Example: Settings and typesetting
 
-```css
+```scss
 // in _uswds-theme-typography:
 
 $theme-respect-user-font-size: true;
-$theme-font-sans:              'public-sans';
-$theme-font-ui:                $theme-font-sans;
+$theme-font-type-sans:         'public-sans';
+$theme-font-role-ui:           $theme-font-sans;
 $theme-type-scale-sm:          5;
 $theme-body-font-size:         'sm';
 $theme-body-line-height:       5;

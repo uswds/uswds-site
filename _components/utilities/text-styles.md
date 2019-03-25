@@ -142,13 +142,13 @@ utilities:
       responsive=true
     %}
     <section class="utility-examples">
-      <p class="utility-example-container text-thin">.text-thin <span class="text-base-dark">(<b>Note:</b> not included in default set)</span></p>
+      <p class="utility-example-container text-thin">.text-thin</p>
       <p class="utility-example-container text-light">.text-light</p>
       <p class="utility-example-container text-normal">.text-normal</p>
       <p class="utility-example-container text-medium">.text-medium <span class="text-base-dark">(<b>Note:</b>  not included in default set)</span></p>
-      <p class="utility-example-container text-semibold">.text-semibold <span class="text-base-dark">(<b>Note:</b>  not included in default set)</span></p>
+      <p class="utility-example-container text-semibold">.text-semibold</p>
       <p class="utility-example-container text-bold">.text-bold</p>
-      <p class="utility-example-container text-heavy">.text-heavy <span class="text-base-dark">(<b>Note:</b>  not included in default set)</span></p>
+      <p class="utility-example-container text-heavy">.text-heavy </p>
     </section>
   </section>
 

@@ -28,7 +28,6 @@ USWDS organizes its colors tokens into [theme tokens]({{ site.baseurl }}/design-
 <div>
 <style>code {mix-blend-mode: multiply;}</style>
 <div class="bg-base-lighter measure-3 padding-3 usa-section" markdown="1">
-{:.font-sans-xs}
 
 {:.font-lang-xs.color-ink.text-bold.text-ls-2.margin-top-0.text-uppercase}
 ### Color, color family, and grade
@@ -116,13 +115,13 @@ Use USWDS magic numbers to choose accessible color combinations from any palette
 
 #### Accessible color combination examples
 
-{:.measure-3}
+{:.measure-6}
 ![gray color contrast example]({{ site.baseurl }}/assets/img/design-tokens/gray-example.png)
 
 {:.font-lang-2xs}
 **Above:** Since `90 – 50 = 40`, on a background of `gray-90` use grades of `40` and below to assure Section 508 AA contrast. Grades of `50` and below are acceptable for large text.
 
-{:.measure-3 .margin-top-5}
+{:.measure-6.margin-top-5}
 ![indigo color contrast example]({{ site.baseurl }}/assets/img/design-tokens/indigo-warm-example.png)
 
 {:.font-lang-2xs}
@@ -162,7 +161,7 @@ If we use color intentionally, consistently, and sensitively, it can make a big 
 
 **Start in black and white.** Start with your core message and use type scale and heierarchy to test and refine its effectiveness. Then introduce color to support that message. Color can overwhelm interpretation, and since [approximately 4.5% of the population](https://nei.nih.gov/health/color_blindness/facts_about) has some kind of color insensitivity, it’s important not to rely on color to convey information critical to your message.
 
-**Put the practical before the emotional.** Because color can do so much, it can be smart to be focused. Limit the complexity of color by concentrating on functional requirements (like status states or directions) first. Then, use color as progressive enhancement to reinforce or balance the emotional needs of the content. Even so, bear in mind that the effects of color are often personal and cultural as much, or more so, than physiological. Understand that using color to optimize for tone necessarily exludes in in subtle and not-so-subtle ways.
+**Put the practical before the emotional.** Because color can do so much, it can be smart to be focused. Limit the complexity of color by concentrating on functional requirements (like status states or directions) first. Then, use color as progressive enhancement to reinforce or balance the emotional needs of the content. Even so, bear in mind that the effects of color are often personal and cultural as much, or more so, than physiological. Understand that using color to optimize for tone necessarily excludes in in subtle and not-so-subtle ways.
 
 **Use mood boards for guidance.** It can be challenging to derive appropriate color palettes, and it makes sense to let existing colors and palettes be your guide. Collect images from other sources that evoke the desired tone to find commonalities. Then, find close matches in the system palette to help build your theme.
 

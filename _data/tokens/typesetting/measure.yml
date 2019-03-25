@@ -11,7 +11,7 @@
   value: 68ex
   usage: 'a longer line for longform text, particularly in larger sizes'
 - token: 5
-  value: 74ex
+  value: 72ex
   usage: 'a long, slower reading line'
 - token: 6
   value: 88ex

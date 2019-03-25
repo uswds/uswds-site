@@ -27,12 +27,12 @@ $site-default-colors: (
   'default-base-darkest': '#1b1b1b',
   'default-ink': '#1b1b1b',
   'default-primary-lighter': '#d9e8f6',
-  'default-primary-light': '#d9e8f6',
-  'default-primary': '#d9e8f6',
-  'default-primary-vivid': '#d9e8f6',
+  'default-primary-light': '#73b3e7',
+  'default-primary': '#005ea2',
+  'default-primary-vivid': '#0050d8',
   'default-primary-dark': '#1a4480',
   'default-primary-darker': '#162e51',
-  'default-secondary-lighter': false,
+  'default-secondary-lighter': '#f8dfe2',
   'default-secondary-light': '#f2938c',
   'default-secondary': '#d83933',
   'default-secondary-vivid': '#e41d3d',
@@ -633,7 +633,7 @@ $border-manual-values: ();
 // .border-color
 
 $border-color-palettes: ();
-$border-color-manual-values: ();
+$border-color-manual-values: $site-default-colors;
 
 // .border-radius
 
@@ -670,7 +670,7 @@ $circle-manual-values: ();
 // .color
 
 $color-palettes: ('palette-color-system');
-$color-manual-values: ();
+$color-manual-values: $site-default-colors;
 
 // .cursor
 
@@ -849,7 +849,7 @@ $text-decoration-manual-values: ();
 // .text-decoration-color
 
 $text-decoration-color-palettes: ();
-$text-decoration-color-manual-values: ();
+$text-decoration-color-manual-values: $site-default-colors;
 
 // .text-indent
 

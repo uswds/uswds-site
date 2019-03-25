@@ -46,7 +46,7 @@ Customize theme color tokens using the variables listed below in `_uswds_theme_c
       {% for item in colors.theme %}
         <tr>
           <td scope="row" data-title="Color" class="flex-align-center">
-            <span class="site-inline-swatch bg-{{ item.token }}"></span>
+            <span class="site-inline-swatch bg-default-{{ item.token }}"></span>
           </td>
           <td data-title="Token">
             <span class="utility-class font-mono-2xs">'{{ item.token }}'</span>

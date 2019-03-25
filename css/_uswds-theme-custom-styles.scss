@@ -182,10 +182,10 @@ body {
   }
 
   .usa-banner__button {
-    color: color('gray-30');
+    color: color('base-light');
 
     &:hover {
-      color: color('gray-30');
+      color: color('white');
     }
   }
 
@@ -752,7 +752,11 @@ body {
   }
 
   a {
-    color: color('white');
+    color: color('base-light');
+
+    &:hover {
+      color: color('white');
+    }
   }
 }
 
@@ -2768,6 +2772,10 @@ $theme-table-column-gap: 4;
     background-color: color('primary-vivid');
     color: color('white');
 
+    &:hover {
+      background-color: color('primary-darker');
+    }
+
     &[aria-expanded=false] {
       @include add-background-svg('plus-thin-white');
     }
@@ -2903,6 +2911,22 @@ $theme-table-column-gap: 4;
 
     p {
       line-height: lh('lang', 5);
+    }
+  }
+
+  .usa-banner__header-action {
+    @include add-icon('angle-arrow-down-primary', 'after', 1, 1, 0.5, 'no-hover');
+  }
+
+  .usa-banner__button {
+    @include at-media('tablet') {
+      @include add-icon('angle-arrow-down-primary', 'after', 1, 1, 2px, 'no-hover');
+    }
+
+    &[aria-expanded=true] {
+      @include at-media('tablet') {
+        @include add-icon('angle-arrow-up-primary', 'after', 1, 1, 2px, 'no-hover');
+      }
     }
   }
 }

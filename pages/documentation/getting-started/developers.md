@@ -21,7 +21,7 @@ subnav:
   href: '#accessibility'
 - text: Fractal
   href: '#fractal'
-- text: Long-term support
+- text: Long-term support of v1.x
   href: '#long-term-support-of-v1.x'
 - text: Need installation help?
   href: '#need-installation-help'

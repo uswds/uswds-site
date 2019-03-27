@@ -19,13 +19,15 @@ redirect_from:
 Have suggestions for a new feature or bug fix? [Open an issue](https://github.com/uswds/uswds/issues/new) in our repo.
 
 {% for release in site.data.releases %}
-
+{% if release.target_commitish == "release-2.0" %}
 ## Version {{ release.name }}
-
+{{ release.target_commitish }}
 <p class="site-subheading">{{ release.published_at | date: "%B %d, %Y" }}</p>
 
 {% assign id_replace = 'id="v%-' | replace: '%', release.name %}
 {{ release.body | markdownify | replace: 'id="', id_replace | remove_relative_links }}
 
 <hr>
+{% endif %}
+
 {% endfor %}

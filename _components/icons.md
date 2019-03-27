@@ -25,8 +25,8 @@ USWDS uses a subset of [Font Awesome](https://fontawesome.com/) icons on the pro
     <h4 class="usa-heading">Implementation</h4>
     <p>Use USWDS icons available in <code>src/img</code> or <a href="https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css">add Font Awesome to your project</a>. USWDS uses icons in two ways:</p>
     <ul>
-      <li>as SVGs with PNG fallbacks</li>
-      <li>as CSS background images</li>
+      <li>SVG in HTML <code>img</code> elements</li>
+      <li>SVG in CSS backgrounds</li>
     </ul>
   </div>
 </div>

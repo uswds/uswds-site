@@ -11,7 +11,7 @@
       status: Done
       url: https://github.com/uswds/uswds/issues/2296
     - title: Better typographic flexibility and resilience, with or without webfonts
-      status: In progress
+      status: Done
       url: https://github.com/uswds/uswds/issues/2295
     - title: Clearer, more specific design and implementation guidance
       status: In progress

@@ -23,7 +23,7 @@ high-level future requests and ideas. You can also <a href="https://github.com/u
 {% for milestone in site.data.milestones %}
 <section>
   <h2 id="{{ milestone.id }}">{{ milestone.title }}</h2>
-  <ul class="product-roadmap-list">
+  <ul class="product-roadmap-list usa-list">
   {% for task in milestone.tasks %}
     <li>
       <a href="{{ task.url }}">

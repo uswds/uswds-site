@@ -572,7 +572,9 @@ body {
 }
 
 .product-roadmap-list {
-  max-width: 100% !important; // scss-lint:disable ImportantRule
+  li {
+    max-width: 100%;
+  }
 }
 
 // Label links

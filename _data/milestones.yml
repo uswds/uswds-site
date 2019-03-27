@@ -14,7 +14,7 @@
       status: Done
       url: https://github.com/uswds/uswds/issues/2295
     - title: Clearer, more specific design and implementation guidance
-      status: In progress
+      status: Done
       url: https://github.com/uswds/uswds/issues/2293
     - title: Better support and guidance for Federalist and Jekyll
       status: To-do

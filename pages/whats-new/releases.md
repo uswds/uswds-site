@@ -28,5 +28,4 @@ Have suggestions for a new feature or bug fix? [Open an issue](https://github.co
 {{ release.body | markdownify | replace: 'id="', id_replace | remove_relative_links }}
 
 <hr>
-
 {% endfor %}

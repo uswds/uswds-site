@@ -3,27 +3,16 @@ layout: default
 ---
 
 <main id="main-content">
-  {% if page.hero %}
-  <section class="usa-hero">
+  <section class="hero bg-base-lightest padding-y-4 tablet:padding-y-8">
     <div class="grid-container">
-      <div class="usa-hero__callout">
-        {% if page.hero.callout %}
-        <h2 class="usa-hero__heading">
-          <span class="usa-hero__heading--alt">{{ page.hero.callout }}</span>
-        </h2>
-        {% endif %}
-
-        {{ page.hero.content | markdownify }}
-
-        {% if page.hero.button %}
-          <a class="usa-button" href="{{ page.hero.button.href }}">
-            {{ page.hero.button.text }}
-          </a>
-        {% endif %}
+      <div class="maxw-mobile-lg padding-x-1">
+        <h1 class="hero--heading margin-top-0 line-height-sans-2 text-normal">A design system for the federal government.</h1>
+        <p class="hero--content">We make it easier to build accessible, mobile-friendly government websites.</p>
+        <a class="usa-button bg-secondary hover:bg-secondary-dark" href="#">Get started</a>
+        <!-- <a class="usa-button usa-button--outline" href="#">Learn more</a> -->
       </div>
     </div>
   </section>
-  {% endif %}
 
   {% if page.graphic_list %}
   <section class="usa-section usa-graphic-list grid-container">

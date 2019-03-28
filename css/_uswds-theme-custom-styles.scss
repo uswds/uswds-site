@@ -1504,6 +1504,18 @@ code {
   }
 }
 
+.hero--heading {
+  font-size: font-size('lang', 'xl');
+
+  @include at-media('desktop') {
+    font-size: font-size('lang', '2xl');
+  }
+}
+
+.hero--content {
+  font-size: font-size('lang', 'lg');
+}
+
 // Fancy Horizontal Rule
 
 .homepage-rule {

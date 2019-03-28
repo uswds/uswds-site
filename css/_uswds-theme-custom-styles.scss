@@ -1504,10 +1504,19 @@ code {
   }
 }
 
+.hero {
+  @include at-media('tablet-lg') {
+    background-image: url('#{$site-image-path}/home/hero.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right units(5) center;
+  }
+}
+
 .hero--heading {
   font-size: font-size('lang', 'xl');
 
-  @include at-media('desktop') {
+  @include at-media('tablet') {
     font-size: font-size('lang', '2xl');
   }
 }

@@ -43,3 +43,29 @@ graphic_list:
         text: Start from a template
         url: page-templates
 ---
+
+<section class="usa-section bg-base-lightest">
+  <div class="grid-container">
+    <h2 class="font-lang-xl margin-y-0">Showcase</h2>
+    <div class="grid-row grid-gap">
+      <div class="tablet:grid-col">
+        <img src="{{ site.baseurl }}/img/home/va.jpg" alt="">
+        <a href="https://www.va.gov/">
+          <h3 class="font-lang-md">U.S. Department of Veterans Affairs</h3>
+        </a>
+      </div>
+      <div class="tablet:grid-col">
+        <img src="{{ site.baseurl }}/img/home/fec.jpg" alt="">
+        <a href="https://www.fec.gov/">
+          <h3 class="font-lang-md">Federal Election Commission</h3>
+        </a>
+      </div>
+      <div class="tablet:grid-col">
+        <img src="{{ site.baseurl }}/img/home/nasa.jpg" alt="">
+        <a href="https://www1.grc.nasa.gov/">
+          <h3 class="font-lang-md">NASA Glenn Research Center</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

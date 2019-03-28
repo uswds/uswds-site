@@ -3,7 +3,7 @@
     icon-slack
   </title>
   <g fill="none" fill-rule="evenodd">
-    <circle fill="#00BFE7" cx="20" cy="20" r="20"/>
+    <circle fill="#00bde3" cx="20" cy="20" r="20"/>
     <g fill-rule="nonzero" fill="#FFF">
       <path d="M18.295 19.13l2.65-.886.856 2.558-2.648.888z"/>
       <path d="M18.295 19.13l2.65-.886.856 2.558-2.648.888z"/>

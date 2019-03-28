@@ -84,7 +84,7 @@ utilities:
               {{ output }}px
             {% endcapture %}
             {% capture this_example %}
-              <div class="font-{{ family.token }}-{{ size.token }} line-height-{{ family.token }}-1 text-gray-90">
+              <div class="font-{{ family.token }}-{{ size.default }} line-height-{{ family.token }}-1 text-gray-90">
                 Tuscaloosa
               </div>
             {% endcapture %}
@@ -135,7 +135,7 @@ utilities:
               {{ output }}px
             {% endcapture %}
             {% capture this_example %}
-              <div class="font-{{ role.token }}-{{ size.token }} line-height-{{ role.token }}-1 text-gray-90">
+              <div class="font-{{ role.token }}-{{ size.default }} line-height-{{ role.token }}-1 text-gray-90">
                 Tuscaloosa
               </div>
             {% endcapture %}

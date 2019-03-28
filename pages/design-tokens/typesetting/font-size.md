@@ -52,7 +52,7 @@ The following chart shows the USWDS default settings for the nine theme size tok
             </span>
           </td>
           <td data-title="Example"  class="line-height-sans-1 overflow-hidden">
-            <span class="font-lang-{{ item.token }}">
+            <span class="font-lang-{{ item.default }}">
               Tallahassee
             </span>
           </td>

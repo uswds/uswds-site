@@ -135,7 +135,7 @@ utilities:
               {{ output }}px
             {% endcapture %}
             {% capture this_example %}
-              <div class="font-{{ role.token }}-{{ size.default }} line-height-{{ role.token }}-1 text-gray-90">
+              <div class="font-{{ role.default }}-{{ size.default }} line-height-{{ role.token }}-1 text-gray-90">
                 Tuscaloosa
               </div>
             {% endcapture %}

@@ -16,13 +16,15 @@ subnav:
   href: '#version-200-beta-3'
 - text: Version 2.0.0 Beta 2
   href: '#version-200-beta-2'
+- text: Version 2.0.0 Beta
+  href: '#version-200-beta'
 - text: Version 2.0.0 Alpha
   href: '#version-200-alpha'
 ---
 <p class="site-text-intro">USWDS 2.0 is a major rewrite of the entire project. The most notable changes are summarized below, followed by more specific changes to relevant components.</p>
 
 {% for release in site.data.releases %}
-{% if release.target_commitish == "release-2.0" %}
+{% if release.target_commitish == "release-2.0" or release.name == "2.0.0-beta" %}
 
 ## Version {{ release.name }}
 

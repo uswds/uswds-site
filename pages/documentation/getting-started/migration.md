@@ -40,6 +40,9 @@ subnav:
 ### Tags
 - Formerly called “labels”
 
+## Integrating tokens
+Settings, tokens, and functions
+
 ## BEM naming change
 To change your components from v1 to v2, you’ll need to update your classes to the BEM naming convention. Next, we’ll walk through how to do that by looking at the alert component.
 - `usa-alert` is the **block**, the outermost parent element of the component. No need to change anything from v1 to v2.

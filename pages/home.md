@@ -49,21 +49,44 @@ graphic_list:
     <h2 class="font-lang-xl margin-y-0">Showcase</h2>
     <div class="grid-row grid-gap">
       <div class="tablet:grid-col">
-        <img src="{{ site.baseurl }}/img/home/va.jpg" alt="">
+        <img src="{{ site.baseurl }}/img/home/showcase/va.jpg" alt="">
         <a href="https://www.va.gov/">
           <h3 class="font-lang-md">U.S. Department of Veterans Affairs</h3>
         </a>
       </div>
       <div class="tablet:grid-col">
-        <img src="{{ site.baseurl }}/img/home/fec.jpg" alt="">
+        <img src="{{ site.baseurl }}/img/home/showcase/fec.jpg" alt="">
         <a href="https://www.fec.gov/">
           <h3 class="font-lang-md">Federal Election Commission</h3>
         </a>
       </div>
       <div class="tablet:grid-col">
-        <img src="{{ site.baseurl }}/img/home/nasa.jpg" alt="">
+        <img src="{{ site.baseurl }}/img/home/showcase/nasa.jpg" alt="">
         <a href="https://www1.grc.nasa.gov/">
           <h3 class="font-lang-md">NASA Glenn Research Center</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-container margin-top-6">
+    <div class="grid-row grid-gap">
+      <div class="tablet:grid-col">
+        <img src="{{ site.baseurl }}/img/home/showcase/vote.jpg" alt="">
+        <a href="https://www.va.gov/">
+          <h3 class="font-lang-md">vote.gov</h3>
+        </a>
+      </div>
+      <div class="tablet:grid-col">
+        <img src="{{ site.baseurl }}/img/home/showcase/seedfund.jpg" alt="">
+        <a href="https://www.fec.gov/">
+          <h3 class="font-lang-md">America's Seedfund</h3>
+        </a>
+      </div>
+      <div class="tablet:grid-col">
+        <img src="{{ site.baseurl }}/img/home/showcase/newfarmers.jpg" alt="">
+        <a href="https://www1.grc.nasa.gov/">
+          <h3 class="font-lang-md">USDA New Farmers</h3>
         </a>
       </div>
     </div>

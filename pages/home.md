@@ -49,7 +49,7 @@ graphic_list:
     <h2 class="font-lang-xl margin-y-0">Showcase</h2>
     <div class="grid-row grid-gap">
       <div class="tablet:grid-col">
-        <img src="{{ site.baseurl }}/img/home/showcase/va.jpg" alt="">
+        <img src="{{ site.baseurl }}/img/home/showcase/va-healthcare.jpg" alt="">
         <a href="https://www.va.gov/">
           <h3 class="font-lang-md">U.S. Department of Veterans Affairs</h3>
         </a>

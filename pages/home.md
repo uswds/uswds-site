@@ -91,4 +91,28 @@ graphic_list:
       </div>
     </div>
   </div>
+
+
+  <div class="grid-container margin-top-6">
+    <div class="grid-row grid-gap">
+      <div class="tablet:grid-col">
+        <img src="{{ site.baseurl }}/img/home/showcase/pubmed.jpg" alt="">
+        <a href="https://www.va.gov/">
+          <h3 class="font-lang-md">PubMed Labs NLM</h3>
+        </a>
+      </div>
+      <div class="tablet:grid-col">
+        <img src="{{ site.baseurl }}/img/home/showcase/foia.jpg" alt="">
+        <a href="https://www.fec.gov/">
+          <h3 class="font-lang-md">FOIA</h3>
+        </a>
+      </div>
+      <div class="tablet:grid-col">
+        <img src="{{ site.baseurl }}/img/home/showcase/plainlanguage.jpg" alt="">
+        <a href="https://www1.grc.nasa.gov/">
+          <h3 class="font-lang-md">Plain Language</h3>
+        </a>
+      </div>
+    </div>
+  </div>
 </section>

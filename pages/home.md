@@ -44,7 +44,7 @@ graphic_list:
         url: page-templates
 ---
 
-<section class="usa-section bg-base-lightest">
+<section class="usa-section bg-base-lightest showcase">
   <div class="grid-container">
     <h2 class="font-lang-xl margin-y-0">Showcase</h2>
     <div class="grid-row grid-gap">
@@ -87,18 +87,6 @@ graphic_list:
         <img src="{{ site.baseurl }}/img/home/showcase/plainlanguage.jpg" alt="">
         <a href="https://www1.grc.nasa.gov/">
           <h3 class="font-lang-md">Plain Language</h3>
-        </a>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="grid-container margin-top-6">
-    <div class="grid-row grid-gap">
-      <div class="tablet:grid-col-4">
-        <img src="{{ site.baseurl }}/img/home/showcase/newfarmers.jpg" alt="">
-        <a href="https://www1.grc.nasa.gov/">
-          <h3 class="font-lang-md">USDA New Farmers</h3>
         </a>
       </div>
     </div>

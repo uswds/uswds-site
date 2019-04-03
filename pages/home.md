@@ -50,7 +50,7 @@ graphic_list:
     <div class="grid-row grid-gap">
       <div class="tablet:grid-col">
         <img src="{{ site.baseurl }}/img/home/showcase/vote.jpg" alt="">
-        <a href="https://www.va.gov/">
+        <a href="https://vote.gov/">
           <h3 class="font-lang-md">vote.gov</h3>
         </a>
       </div>
@@ -73,19 +73,19 @@ graphic_list:
     <div class="grid-row grid-gap">
       <div class="tablet:grid-col">
         <img src="{{ site.baseurl }}/img/home/showcase/pubmed.jpg" alt="">
-        <a href="https://www.va.gov/">
-          <h3 class="font-lang-md">PubMed Labs NLM</h3>
+        <a href="https://www.ncbi.nlm.nih.gov/labs/pubmed/">
+          <h3 class="font-lang-md">PubMed Labs | U.S. National Library of Medicine</h3>
         </a>
       </div>
       <div class="tablet:grid-col">
         <img src="{{ site.baseurl }}/img/home/showcase/seedfund.jpg" alt="">
-        <a href="https://www.fec.gov/">
+        <a href="https://seedfund.nsf.gov/">
           <h3 class="font-lang-md">America's Seedfund</h3>
         </a>
       </div>
       <div class="tablet:grid-col">
         <img src="{{ site.baseurl }}/img/home/showcase/plainlanguage.jpg" alt="">
-        <a href="https://www1.grc.nasa.gov/">
+        <a href="https://plainlanguage.gov/">
           <h3 class="font-lang-md">Plain Language</h3>
         </a>
       </div>

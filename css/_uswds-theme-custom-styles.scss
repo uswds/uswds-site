@@ -1487,14 +1487,6 @@ code {
     }
   }
 
-  .usa-hero {
-    background-image: url('#{$site-image-path}/home/wds-home-new-2x.png');
-  }
-
-  .usa-hero__callout {
-    border-radius: border-radius('md');
-  }
-
   // Override for 4x1 media grid when it collapses to 2x2
   @media screen and (max-width: units('desktop')) and (min-width: units('tablet')) {
     // scss-lint:disable SelectorDepth
@@ -1523,6 +1515,12 @@ code {
 
 .hero--content {
   font-size: font-size('lang', 'lg');
+}
+
+.showcase {
+  img {
+    @include u-shadow(1);
+  }
 }
 
 .font-display {

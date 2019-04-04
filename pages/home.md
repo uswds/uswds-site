@@ -80,7 +80,7 @@ graphic_list:
       <div class="tablet:grid-col">
         <img src="{{ site.baseurl }}/img/home/showcase/seedfund.jpg" alt="">
         <a href="https://seedfund.nsf.gov/">
-          <h3 class="font-lang-md">America's Seedfund</h3>
+          <h3 class="font-lang-md">America’s Seedfund</h3>
         </a>
       </div>
       <div class="tablet:grid-col">

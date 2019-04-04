@@ -32,15 +32,15 @@ jekyll_get:
     decode_content: true
 
 repos:
-- name: U.S. Web Design System
+- name: USWDS
   description: Main repository for the U.S. Web Design System package
   url: https://github.com/uswds/uswds
-- name: U.S. Web Design System Documentation
-  description: Documentation for the U.S. Web Design System
+- name: USWDS site
+  description: USWDS website
   url: https://github.com/uswds/uswds-site
-- name: U.S. Web Design System Assets
-  description: U.S. Web Design System visual design assets
-  url: https://github.com/uswds/uswds-assets
+- name: USWDS for designers
+  description: USWDS visual design assets
+  url: https://github.com/uswds/uswds-for-designers
 
 collections:
   components:

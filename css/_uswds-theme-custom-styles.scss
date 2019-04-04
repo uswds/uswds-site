@@ -618,7 +618,6 @@ body {
   @include typeset-h6;
   @include u-font('lang', '3xs');
   color: color('black-transparent-60');
-  // display: block;
   letter-spacing: letter-spacing(1);
   margin-bottom: units(1);
   margin-top: 0;
@@ -1751,10 +1750,6 @@ iframe {
   @include u-measure(1);
 }
 
-// .post-divider {
-//   @include u-margin-x(1);
-// }
-
 // Utilities CSS --------------------- //
 
 .is-inverse {
@@ -1901,6 +1896,7 @@ li {
   .post-content {
     img {
       @include u-maxw(mobile);
+      mix-blend-mode: darken;
     }
   }
 }

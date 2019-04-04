@@ -561,16 +561,6 @@ body {
   }
 }
 
-.components-library-link {
-  float: right;
-  padding-top: units(2.5);
-
-  a {
-    @include external-link(external-link, external-link-hover);
-    text-decoration: none;
-  }
-}
-
 .product-roadmap-list {
   li {
     max-width: 100%;
@@ -1432,9 +1422,21 @@ code {
 }
 
 // External link styles
-
 #{$external-href} {
-  @include external-link(external-link, external-link-hover);
+    &::after {
+    background: url('#{$theme-image-path}/external-link.svg') no-repeat 0 0;
+    background-size: 100%;
+    content: '';
+    display: inline-block;
+    height: 0.65em;
+    margin-bottom: -1px;
+    margin-left: units(0.5);
+    width: 0.65em;
+  }
+
+  &:hover::after {
+    background: url('#{$theme-image-path}/external-link-hover.svg') no-repeat 0 0;
+  }
 }
 
 .usa-button,

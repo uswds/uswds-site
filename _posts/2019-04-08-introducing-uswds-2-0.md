@@ -7,8 +7,9 @@ author: Dan Williams, Maya Benari
 excerpt: Today, we’re launching U.S. Web Design System 2.0 (USWDS 2.0), a new foundation for the future of our design system. This new version was designed to make it easier for any project to integrate USWDS and use it to support both your mission and the needs of your audience. 
 ---
 
-Reinvent the experience, not the wheel
-{: .site-text-intro}
+![Feature image][Feature image]{: .maxw-full}
+
+## Reinvent the experience, not the wheel
 
 Today, we’re launching [U.S. Web Design System 2.0](https://v2.designsystem.digital.gov/) (USWDS 2.0), a new foundation for the future of our design system. This new version was designed to make it easier for any project to integrate USWDS and use it to support both your mission and the needs of your audience.
 
@@ -152,6 +153,7 @@ Like any true 2.0, this is a living product. We’ll continue to test our decisi
 
 A sincere thanks to Sara Cope, Stephanie Green, Jeremy Zilar, Jacob Parcell, Toni Bonitto, Andre Francisco, Dahianna Salazar Foreman, Wesley Thompson, Adam Biagianti, John Donmoyer, Brian Hurst, Steve Walker, Jen Thibault, Aviva Oskow, Christine Bath, Austin Hernandez, Nick Ng, Eddie Tejeda, Amir Reavis-Bey, Miguel Sousa, Scott Kellum, Eli Altman, Aaron Borden, Andrew Dunkman, Sawyer Hollenshead, Sha Hwang, Jared Cunha, Matt Langan, Heather Battaglia, T. Carter Baxter, Matt Yoder, David Way, nolawi, Amber Reed, Shawn Allen, Micah Taylor, Scott Weber, Brendan Sudol, Brandon Ruffridge, Atul Varma, Maria Marrero, bet4a, Robert Romore, Dave Methvin, Nick Schonning, cathrowe, fat32, Juliette Cezzar, Pablo Stanley, Eric Ronne, Ryan Thurlwell, Linzi Berry, Sam Soffes, Pablo Impallari, and Dave Crossland.
 
+[Feature image]: {{ site.baseurl }}/img/introducing-uswds-2-0/feature-image.png
 [Easier Incremental Adoption]: {{ site.baseurl }}/img/introducing-uswds-2-0/easier-incremental-adoption.png
 [Practical Design Tokens]: {{ site.baseurl }}/img/introducing-uswds-2-0/practical-design-tokens.png
 [Accessible Color System]: {{ site.baseurl }}/img/introducing-uswds-2-0/accessible-color-system.png

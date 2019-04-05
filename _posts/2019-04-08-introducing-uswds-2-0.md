@@ -7,7 +7,7 @@ author: Dan O. Williams, Maya Benari
 excerpt: Today, we’re launching U.S. Web Design System 2.0 (USWDS 2.0), a new foundation for the future of our design system. This new version was designed to make it easier for any project to integrate USWDS and use it to support both your mission and the needs of your audience.
 ---
 
-<img src="{{ site.baseurl }}/img/introducing-uswds-2-0/feature-image.png" alt="A colorful collection of screens and interface components" class="width-full tablet:width-tablet-lg maxw-full tablet:maxw-tablet-lg">
+<img src="{{ site.baseurl }}/img/introducing-uswds-2-0/feature-image.jpg" alt="A colorful collection of screens and interface components" class="width-full tablet:width-tablet-lg maxw-full tablet:maxw-tablet-lg">
 
 {:.line-height-sans-2}
 ## Reinvent the experience, not the wheel
@@ -32,7 +32,7 @@ Over the last two years, we’ve listened to the designers and developers using 
 So, what’s new in USWDS 2.0?
 
 <div class="margin-top-5 margin-bottom-1">
-  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/easier-incremental-adoption--alt.png" alt="Side by side illustrations show before-and-after examples of a web page. One has the original page and the other shows that page with just a few design system components added." class="width-full maxw-full">
+  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/easier-incremental-adoption--alt.jpg" alt="Side by side illustrations show before-and-after examples of a web page. One has the original page and the other shows that page with just a few design system components added." class="width-full maxw-full">
 </div>
 
 {:.margin-top-0}
@@ -51,7 +51,7 @@ You don’t need to totally redesign your existing site to [get started with USW
 - Provides resilient, modular components
 
 <div class="margin-top-5 margin-bottom-1">
-  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/practical-design-tokens--alt.png" alt="An illustration of three designers and developers using design tokens to communicate their intention. They move from themes to components to a finished website." class="width-full maxw-full">
+  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/practical-design-tokens--alt.jpg" alt="An illustration of three designers and developers using design tokens to communicate their intention. They move from themes to components to a finished website." class="width-full maxw-full">
 </div>
 
 {:.margin-top-0}
@@ -73,7 +73,7 @@ Design and development are all about decision making. Making decisions and commu
 - Typescale outputs consistently and predictably, regardless of typeface
 
 <div class="margin-top-5 margin-bottom-1">
-  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/accessible-color-system--alt.png" alt="Two rows of colors from light to dark and their accessible color combinations." class="width-full maxw-full">
+  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/accessible-color-system--alt.jpg" alt="Two rows of colors from light to dark and their accessible color combinations." class="width-full maxw-full">
 </div>
 
 {:.margin-top-0}
@@ -91,7 +91,7 @@ Making a good color decision means making an accessible color decision. The [USW
 - Is the foundation for expressive color families
 
 <div class="margin-top-5 margin-bottom-1">
-  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/expressive-theming--alt.png" alt="An illustration shows five images of websites at different screen sizes, ranging from small to large — each with a different look and feel." class="width-full maxw-full">
+  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/expressive-theming--alt.jpg" alt="An illustration shows five images of websites at different screen sizes, ranging from small to large — each with a different look and feel." class="width-full maxw-full">
 </div>
 
 {:.margin-top-0}
@@ -109,7 +109,7 @@ Every project is different. Different audiences, different missions, and differe
 - Integrated with tokens and utilities
 
 <div class="margin-top-5 margin-bottom-1">
-  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/powerful-utility-classes--alt.png" alt="This illustration shows another before-and-after example of how a website can use utility classes to change the styles of site elements. Five stylized examples of code are given below the two versions of the page." class="width-full maxw-full">
+  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/powerful-utility-classes--alt.jpg" alt="This illustration shows another before-and-after example of how a website can use utility classes to change the styles of site elements. Five stylized examples of code are given below the two versions of the page." class="width-full maxw-full">
 </div>
 
 {:.margin-top-0}
@@ -129,7 +129,7 @@ Building and testing a prototype is an invaluable step to understanding how real
 - 25 KB gzipped, but optional
 
 <div class="margin-top-5 margin-bottom-1">
-  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/simplified-12-column-layout-grid--alt.png" alt="An illustration shows a yellow 12-column grid system overlaid on a colorful website." class="width-full maxw-full">
+  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/simplified-12-column-layout-grid--alt.jpg" alt="An illustration shows a yellow 12-column grid system overlaid on a colorful website." class="width-full maxw-full">
 </div>
 
 {:.margin-top-0.line-height-sans-2}
@@ -148,7 +148,7 @@ Layout grids give any website visual coherence. The [USWDS 2.0 layout grid](http
 - Designed to be mobile-first and responsive
 
 <div class="margin-top-5 margin-bottom-1">
-  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/public-sans-hello--alt.png" alt="The word Hello displayed in Public Sans as though it were being edited in a font editor." class="width-full maxw-full">
+  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/public-sans-hello--alt.jpg" alt="The word Hello displayed in Public Sans as though it were being edited in a font editor." class="width-full maxw-full">
 </div>
 
 {:.margin-top-0}
@@ -168,7 +168,7 @@ USWDS 2.0 adds built-in support for custom typefaces, but sometimes you need som
 - Features tabular numerals for data design
 
 <div class="margin-top-5 margin-bottom-1">
-  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/built-to-grow--alt.svg" alt="An expanding geometric flower formed from the USWDS logo." class="width-full maxw-full">
+  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/built-to-grow--alt.jpg" alt="An expanding geometric flower formed from the USWDS logo." class="width-full maxw-full">
 </div>
 
 {:.margin-top-0}
@@ -196,12 +196,12 @@ Like any true 2.0, this is a living product. We’ll continue to test our decisi
 
 A sincere thanks to Sara Cope, Stephanie Green, Jeremy Zilar, Jacob Parcell, Toni Bonitto, Andre Francisco, Dahianna Salazar Foreman, Wesley Thompson, Adam Biagianti, John Donmoyer, Brian Hurst, Steve Walker, Jen Thibault, Aviva Oskow, Christine Bath, Austin Hernandez, Nick Ng, Eddie Tejeda, Amir Reavis-Bey, Miguel Sousa, Scott Kellum, Eli Altman, Aaron Borden, Andrew Dunkman, Sawyer Hollenshead, Sha Hwang, Jared Cunha, Matt Langan, Heather Battaglia, T. Carter Baxter, Matt Yoder, David Way, nolawi, Amber Reed, Shawn Allen, Micah Taylor, Scott Weber, Brendan Sudol, Brandon Ruffridge, Atul Varma, Maria Marrero, bet4a, Robert Romore, Dave Methvin, Nick Schonning, cathrowe, fat32, Juliette Cezzar, Pablo Stanley, Eric Ronne, Ryan Thurlwell, Linzi Berry, Sam Soffes, Pablo Impallari, and Dave Crossland.
 
-[Feature image]: {{ site.baseurl }}/img/introducing-uswds-2-0/feature-image.png
-[Easier Incremental Adoption]: {{ site.baseurl }}/img/introducing-uswds-2-0/easier-incremental-adoption.png
-[Practical Design Tokens]: {{ site.baseurl }}/img/introducing-uswds-2-0/practical-design-tokens.png
-[Accessible Color System]: {{ site.baseurl }}/img/introducing-uswds-2-0/accessible-color-system.png
-[Expressive Theming]: {{ site.baseurl }}/img/introducing-uswds-2-0/expressive-theming.png
-[Powerful Utility Classes]: {{ site.baseurl }}/img/introducing-uswds-2-0/powerful-utility-classes.png
-[Simplified 12-Column Layout Grid]: {{ site.baseurl }}/img/introducing-uswds-2-0/simplified-12-column-layout-grid.png
-[Introducing Public Sans]: {{ site.baseurl }}/img/introducing-uswds-2-0/introducing-public-sans.png
-[Built to Grow]: {{ site.baseurl }}/img/introducing-uswds-2-0/built-to-grow.png
+[Feature image]: {{ site.baseurl }}/img/introducing-uswds-2-0/feature-image.jpg
+[Easier Incremental Adoption]: {{ site.baseurl }}/img/introducing-uswds-2-0/easier-incremental-adoption.jpg
+[Practical Design Tokens]: {{ site.baseurl }}/img/introducing-uswds-2-0/practical-design-tokens.jpg
+[Accessible Color System]: {{ site.baseurl }}/img/introducing-uswds-2-0/accessible-color-system.jpg
+[Expressive Theming]: {{ site.baseurl }}/img/introducing-uswds-2-0/expressive-theming.jpg
+[Powerful Utility Classes]: {{ site.baseurl }}/img/introducing-uswds-2-0/powerful-utility-classes.jpg
+[Simplified 12-Column Layout Grid]: {{ site.baseurl }}/img/introducing-uswds-2-0/simplified-12-column-layout-grid.jpg
+[Introducing Public Sans]: {{ site.baseurl }}/img/introducing-uswds-2-0/introducing-public-sans.jpg
+[Built to Grow]: {{ site.baseurl }}/img/introducing-uswds-2-0/built-to-grow.jpg

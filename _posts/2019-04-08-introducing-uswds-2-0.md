@@ -168,7 +168,7 @@ USWDS 2.0 adds built-in support for custom typefaces, but sometimes you need som
 - Features tabular numerals for data design
 
 <div class="margin-top-5 margin-bottom-1">
-  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/built-to-grow--alt.png" alt="An expanding geometric flower formed from the USWDS logo." class="width-full maxw-full">
+  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/built-to-grow--alt.svg" alt="An expanding geometric flower formed from the USWDS logo." class="width-full maxw-full">
 </div>
 
 {:.margin-top-0}

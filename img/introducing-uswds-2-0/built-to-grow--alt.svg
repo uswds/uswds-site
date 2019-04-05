@@ -5,11 +5,11 @@
       <stop offset="0%" stop-color="#FFF"/>
       <stop offset="100%" stop-color="#F0F0F0"/>
     </radialGradient>
-    <polygon id="built-to-grow--alt-b" points="11.903 18.704 0 18.703 5.951 0"/>
-    <polygon id="built-to-grow--alt-d" points="19.295 0 15.616 11.558 .033 0"/>
-    <polygon id="built-to-grow--alt-f" points=".069 7.143 9.699 0 15.653 18.702"/>
-    <polygon id="built-to-grow--alt-h" points="5.952 .037 15.582 7.181 0 18.741"/>
-    <polygon id="built-to-grow--alt-j" points="3.677 11.56 0 .001 19.261 0"/>
+    <polygon id="built-to-grow--alt-b" points="11.203 17.57 0 17.569 5.601 0"/>
+    <polygon id="built-to-grow--alt-d" points="18.16 0 14.697 10.857 .031 0"/>
+    <polygon id="built-to-grow--alt-f" points=".065 6.71 9.129 0 14.732 17.569"/>
+    <polygon id="built-to-grow--alt-h" points="5.602 .035 14.665 6.746 0 17.605"/>
+    <polygon id="built-to-grow--alt-j" points="3.461 10.859 0 .001 18.128 0"/>
     <polygon id="built-to-grow--alt-l" points="12.953 20.404 0 20.403 6.476 0"/>
     <polygon id="built-to-grow--alt-n" points="20.997 0 16.994 12.608 .036 0"/>
     <polygon id="built-to-grow--alt-p" points=".075 7.792 10.555 0 17.034 20.402"/>
@@ -90,50 +90,50 @@
     <rect width="492" height="288" fill="#F0F0F0"/>
     <rect width="572" height="336" x="-40" y="-24" fill="url(#built-to-grow--alt-a)"/>
     <g transform="translate(-193.897 -296.958)" style="mix-blend-mode:multiply">
-      <g transform="translate(382.22 375.259)">
-        <g transform="translate(41.403 42.86)">
-          <g transform="translate(22.034 1.043)">
+      <g transform="translate(381.397 375.29)">
+        <g transform="translate(41.903 44.168)">
+          <g transform="translate(20.738 .98)">
             <mask id="built-to-grow--alt-c" fill="#fff">
               <use xlink:href="#built-to-grow--alt-b"/>
             </mask>
             <g fill="#81AEFC" mask="url(#built-to-grow--alt-c)">
-              <polygon points="0 0 12 0 12 20 0 20" transform="translate(-.146 -1.043)"/>
+              <polygon points="0 0 11 0 11 19 0 19" transform="translate(-.137 -.98)"/>
             </g>
           </g>
-          <g transform="translate(7.296)">
+          <g transform="translate(6.867)">
             <mask id="built-to-grow--alt-e" fill="#fff">
               <use xlink:href="#built-to-grow--alt-d"/>
             </mask>
             <g fill="#3E76C2" mask="url(#built-to-grow--alt-e)">
-              <rect width="21" height="12" transform="translate(-.803)"/>
+              <rect width="20" height="11" transform="translate(-.755)"/>
             </g>
           </g>
-          <g transform="translate(.438 14.228)">
+          <g transform="translate(.412 13.366)">
             <mask id="built-to-grow--alt-g" fill="#fff">
               <use xlink:href="#built-to-grow--alt-f"/>
             </mask>
             <g fill="#EE601D" mask="url(#built-to-grow--alt-g)">
-              <polygon points="0 0 17 0 17 21 0 21" transform="translate(-.803 -1.192)"/>
+              <polygon points="0 0 16 0 16 19 0 19" transform="translate(-.755 -1.12)"/>
             </g>
           </g>
-          <g transform="translate(0 .968)">
+          <g transform="translate(0 .91)">
             <mask id="built-to-grow--alt-i" fill="#fff">
               <use xlink:href="#built-to-grow--alt-h"/>
             </mask>
             <g fill="#F6BD9C" mask="url(#built-to-grow--alt-i)">
-              <polygon points="0 0 16 0 16 21 0 21" transform="translate(-.365 -.968)"/>
+              <polygon points="0 0 16 0 16 20 0 20" transform="translate(-.343 -.91)"/>
             </g>
           </g>
-          <g transform="translate(14.155 21.38)">
+          <g transform="translate(13.322 20.084)">
             <mask id="built-to-grow--alt-k" fill="#fff">
               <use xlink:href="#built-to-grow--alt-j"/>
             </mask>
             <g fill="#2E2E2E" mask="url(#built-to-grow--alt-k)">
-              <polygon points="0 0 26 0 26 19 0 19" transform="translate(-3.283 -5.512)"/>
+              <polygon points="0 0 24 0 24 18 0 18" transform="translate(-3.09 -5.178)"/>
             </g>
           </g>
         </g>
-        <g transform="rotate(36 -57.205 140.061)">
+        <g transform="rotate(36 -58.245 141.63)">
           <g transform="translate(23.979 1.138)">
             <mask id="built-to-grow--alt-m" fill="#fff">
               <use xlink:href="#built-to-grow--alt-l"/>
@@ -175,7 +175,7 @@
             </g>
           </g>
         </g>
-        <g transform="rotate(36 3.953 141.042)">
+        <g transform="rotate(36 3.38 142.093)">
           <g transform="translate(23.979 1.138)">
             <mask id="built-to-grow--alt-w" fill="#fff">
               <use xlink:href="#built-to-grow--alt-v"/>
@@ -217,7 +217,7 @@
             </g>
           </g>
         </g>
-        <g transform="rotate(36 25.427 81.684)">
+        <g transform="rotate(36 25.516 81.737)">
           <g transform="translate(23.979 1.138)">
             <mask id="built-to-grow--alt-G" fill="#fff">
               <use xlink:href="#built-to-grow--alt-F"/>
@@ -259,7 +259,7 @@
             </g>
           </g>
         </g>
-        <g transform="rotate(36 -27.2 45.164)">
+        <g transform="rotate(36 -28.227 44.82)">
           <g transform="translate(23.979 1.138)">
             <mask id="built-to-grow--alt-Q" fill="#fff">
               <use xlink:href="#built-to-grow--alt-P"/>
@@ -301,7 +301,7 @@
             </g>
           </g>
         </g>
-        <g transform="rotate(36 -76.101 81.906)">
+        <g transform="rotate(36 -77.809 81.416)">
           <g transform="translate(23.979 1.138)">
             <mask id="built-to-grow--alt-aa" fill="#fff">
               <use xlink:href="#built-to-grow--alt-Z"/>

@@ -5,7 +5,7 @@
       {{ post.category | default: post.tags[0] | default: layout.category }}
     </p>
 
-    <h1 class="post-title font-lang-11 text-light">
+    <h1 class="post-title font-lang-11 tablet:font-lang-14 text-thin">
       {% if include.excerpt %}<a href="{{ site.baseurl }}{{ post.url }}">{% endif %}
       {{ post.title }}
       {% if include.excerpt %}</a>{% endif %}

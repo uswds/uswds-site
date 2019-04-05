@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="258" height="306" viewBox="0 0 258 306">
+  <defs>
+    <rect id="simplified-12-column-layout-grid-a" width="252" height="424.742" x="0" y=".766" rx="4"/>
+    <rect id="simplified-12-column-layout-grid-c" width="56" height="53" x="0" y="0" rx="2"/>
+    <polygon id="simplified-12-column-layout-grid-e" points="26.607 41.942 0 41.94 13.302 0"/>
+    <polygon id="simplified-12-column-layout-grid-g" points="43.13 0 34.906 25.917 .073 0"/>
+    <polygon id="simplified-12-column-layout-grid-i" points=".155 16.017 21.681 0 34.988 41.938"/>
+    <polygon id="simplified-12-column-layout-grid-k" points="13.305 .084 34.83 16.103 0 42.025"/>
+    <polygon id="simplified-12-column-layout-grid-m" points="8.22 25.921 0 .003 43.054 0"/>
+    <rect id="simplified-12-column-layout-grid-o" width="268" height="96" x="0" y="0"/>
+    <polygon id="simplified-12-column-layout-grid-q" points="146.338 230.113 0 230.102 73.159 0"/>
+    <polygon id="simplified-12-column-layout-grid-s" points="237.213 0 191.983 142.195 .402 0"/>
+    <polygon id="simplified-12-column-layout-grid-u" points=".85 87.875 119.246 0 192.435 230.093"/>
+    <polygon id="simplified-12-column-layout-grid-w" points="73.179 .458 191.563 88.35 0 230.571"/>
+    <polygon id="simplified-12-column-layout-grid-y" points="45.211 142.217 0 .016 236.796 0"/>
+    <rect id="simplified-12-column-layout-grid-A" width="410" height="12" x="0" y="0"/>
+    <filter id="simplified-12-column-layout-grid-B" width="120.5%" height="800%" x="-10.2%" y="-250%" filterUnits="objectBoundingBox">
+      <feOffset dy="12" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="12"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(3 2)">
+      <mask id="simplified-12-column-layout-grid-b" fill="#fff">
+        <use xlink:href="#simplified-12-column-layout-grid-a"/>
+      </mask>
+      <rect width="254" height="426.742" x="-1" y="-.234" stroke="#171717" stroke-width="2" rx="4"/>
+      <g fill="#F5F5F0" mask="url(#simplified-12-column-layout-grid-b)">
+        <polygon points="0 0 316 0 316 250 0 250" transform="translate(-21 213)"/>
+      </g>
+      <g mask="url(#simplified-12-column-layout-grid-b)">
+        <g transform="translate(188 236)">
+          <mask id="simplified-12-column-layout-grid-d" fill="#fff">
+            <use xlink:href="#simplified-12-column-layout-grid-c"/>
+          </mask>
+          <use fill="#FFF" xlink:href="#simplified-12-column-layout-grid-c"/>
+          <g mask="url(#simplified-12-column-layout-grid-d)">
+            <g transform="translate(-4.308 .051)">
+              <g transform="translate(49.253 2.339)">
+                <mask id="simplified-12-column-layout-grid-f" fill="#fff">
+                  <use xlink:href="#simplified-12-column-layout-grid-e"/>
+                </mask>
+                <g fill="#81AEFC" mask="url(#simplified-12-column-layout-grid-f)">
+                  <polygon points="0 0 27 0 27 46 0 46" transform="translate(-.326 -2.339)"/>
+                </g>
+              </g>
+              <g transform="translate(16.309)">
+                <mask id="simplified-12-column-layout-grid-h" fill="#fff">
+                  <use xlink:href="#simplified-12-column-layout-grid-g"/>
+                </mask>
+                <g fill="#3E76C2" mask="url(#simplified-12-column-layout-grid-h)">
+                  <rect width="48" height="26" transform="translate(-1.794)"/>
+                </g>
+              </g>
+              <g transform="translate(.979 31.905)">
+                <mask id="simplified-12-column-layout-grid-j" fill="#fff">
+                  <use xlink:href="#simplified-12-column-layout-grid-i"/>
+                </mask>
+                <g fill="#D63E04" mask="url(#simplified-12-column-layout-grid-j)">
+                  <polygon points="0 0 39 0 39 46 0 46" transform="translate(-1.794 -2.673)"/>
+                </g>
+              </g>
+              <g transform="translate(0 2.172)">
+                <mask id="simplified-12-column-layout-grid-l" fill="#fff">
+                  <use xlink:href="#simplified-12-column-layout-grid-k"/>
+                </mask>
+                <g fill="#F6BD9C" mask="url(#simplified-12-column-layout-grid-l)">
+                  <polygon points="0 0 37 0 37 48 0 48" transform="translate(-.815 -2.172)"/>
+                </g>
+              </g>
+              <g transform="translate(31.64 47.941)">
+                <mask id="simplified-12-column-layout-grid-n" fill="#fff">
+                  <use xlink:href="#simplified-12-column-layout-grid-m"/>
+                </mask>
+                <g fill="#2E2E2E" mask="url(#simplified-12-column-layout-grid-n)">
+                  <polygon points="0 0 57 0 57 42 0 42" transform="translate(-7.34 -12.361)"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g mask="url(#simplified-12-column-layout-grid-b)">
+        <g transform="translate(-8.258 128.799)">
+          <mask id="simplified-12-column-layout-grid-p" fill="#fff">
+            <use xlink:href="#simplified-12-column-layout-grid-o"/>
+          </mask>
+          <g mask="url(#simplified-12-column-layout-grid-p)">
+            <polygon fill="#E6E6E6" points="0 0 359 0 359 129 0 129" transform="translate(-22.09)"/>
+          </g>
+          <g mask="url(#simplified-12-column-layout-grid-p)">
+            <g transform="translate(-90.206 -206.016)">
+              <g transform="translate(270.893 12.83)">
+                <mask id="simplified-12-column-layout-grid-r" fill="#fff">
+                  <use xlink:href="#simplified-12-column-layout-grid-q"/>
+                </mask>
+                <g fill="#81AEFC" mask="url(#simplified-12-column-layout-grid-r)">
+                  <polygon points="0 0 149 0 149 251 0 251" transform="translate(-1.794 -12.83)"/>
+                </g>
+              </g>
+              <g transform="translate(89.7)">
+                <mask id="simplified-12-column-layout-grid-t" fill="#fff">
+                  <use xlink:href="#simplified-12-column-layout-grid-s"/>
+                </mask>
+                <g fill="#3E76C2" mask="url(#simplified-12-column-layout-grid-t)">
+                  <rect width="264" height="142" transform="translate(-9.867)"/>
+                </g>
+              </g>
+              <g transform="translate(5.382 175.047)">
+                <mask id="simplified-12-column-layout-grid-v" fill="#fff">
+                  <use xlink:href="#simplified-12-column-layout-grid-u"/>
+                </mask>
+                <g fill="#D63E04" mask="url(#simplified-12-column-layout-grid-v)">
+                  <polygon points="0 0 213 0 213 253 0 253" transform="translate(-9.867 -14.664)"/>
+                </g>
+              </g>
+              <g transform="translate(0 11.914)">
+                <mask id="simplified-12-column-layout-grid-x" fill="#fff">
+                  <use xlink:href="#simplified-12-column-layout-grid-w"/>
+                </mask>
+                <g fill="#F6BD9C" mask="url(#simplified-12-column-layout-grid-x)">
+                  <polygon points="0 0 203 0 203 263 0 263" transform="translate(-4.485 -11.914)"/>
+                </g>
+              </g>
+              <g transform="translate(174.017 263.03)">
+                <mask id="simplified-12-column-layout-grid-z" fill="#fff">
+                  <use xlink:href="#simplified-12-column-layout-grid-y"/>
+                </mask>
+                <g fill="#2E2E2E" mask="url(#simplified-12-column-layout-grid-z)">
+                  <polygon points="0 0 315 0 315 231 0 231" transform="translate(-40.365 -67.82)"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g mask="url(#simplified-12-column-layout-grid-b)" style="mix-blend-mode:multiply">
+        <g transform="translate(8 236)">
+          <rect width="115" height="4" fill="#ADADAD" rx="2"/>
+          <rect width="103" height="4" y="8" fill="#ADADAD" rx="2"/>
+          <rect width="115" height="4" y="16" fill="#ADADAD" rx="2"/>
+          <rect width="112" height="4" y="24" fill="#ADADAD" rx="2"/>
+          <rect width="112" height="4" y="32" fill="#ADADAD" rx="2"/>
+          <rect width="55" height="4" y="40" fill="#ADADAD" rx="2"/>
+          <g transform="translate(140 1)">
+            <rect width="32" height="2" fill="#ADADAD" rx="1"/>
+            <rect width="36" height="2" y="4" fill="#ADADAD" rx="1"/>
+            <rect width="36" height="2" y="8" fill="#ADADAD" rx="1"/>
+            <rect width="16" height="2" y="12" fill="#ADADAD" rx="1"/>
+          </g>
+        </g>
+      </g>
+      <g fill="#C3512C" mask="url(#simplified-12-column-layout-grid-b)">
+        <rect width="56" height="15" x="1" y="1" rx="2" transform="translate(7.097 285.153)"/>
+      </g>
+      <rect width="112" height="16" x="8" y="82" fill="#2E2E2E" mask="url(#simplified-12-column-layout-grid-b)" rx="8"/>
+      <g fill="#2672DE" mask="url(#simplified-12-column-layout-grid-b)">
+        <polygon points="0 0 277 0 277 41 0 41" transform="translate(-4 32)"/>
+      </g>
+      <rect width="77" height="16" x="168" y="46" fill="#FFF" fill-opacity=".4" mask="url(#simplified-12-column-layout-grid-b)" rx="8"/>
+      <rect width="72" height="16" x="8" y="104" fill="#2E2E2E" mask="url(#simplified-12-column-layout-grid-b)" rx="8"/>
+      <g fill="#E6E6E6" mask="url(#simplified-12-column-layout-grid-b)">
+        <g transform="translate(8.113 52.589)">
+          <rect width="29" height="4" rx="2"/>
+          <rect width="29" height="4" x="36" rx="2"/>
+          <rect width="29" height="4" x="71" rx="2"/>
+          <rect width="29" height="4" x="107" rx="2"/>
+        </g>
+      </g>
+      <g mask="url(#simplified-12-column-layout-grid-b)">
+        <g transform="translate(-78.242 24)">
+          <mask id="simplified-12-column-layout-grid-C" fill="#fff">
+            <use xlink:href="#simplified-12-column-layout-grid-A"/>
+          </mask>
+          <use fill="#000" filter="url(#simplified-12-column-layout-grid-B)" xlink:href="#simplified-12-column-layout-grid-A"/>
+          <g fill="#171717" mask="url(#simplified-12-column-layout-grid-C)">
+            <polygon points="0 0 412 0 412 14 0 14" transform="translate(-1 -1)"/>
+          </g>
+        </g>
+      </g>
+      <g fill="#E6E6E6" mask="url(#simplified-12-column-layout-grid-b)">
+        <g transform="translate(8.129 8.895)">
+          <rect width="7" height="7" rx="3.5"/>
+          <rect width="7" height="7" x="14" rx="3.5"/>
+          <rect width="7" height="7" x="28" rx="3.5"/>
+        </g>
+      </g>
+    </g>
+    <g fill="#FFC800" opacity=".505" transform="translate(11 26)">
+      <rect width="16" height="344"/>
+      <rect width="16" height="344" x="120"/>
+      <rect width="16" height="344" x="40"/>
+      <rect width="16" height="344" x="160"/>
+      <rect width="16" height="344" x="80"/>
+      <rect width="16" height="344" x="200"/>
+      <rect width="16" height="344" x="20"/>
+      <rect width="16" height="344" x="140"/>
+      <rect width="16" height="344" x="100"/>
+      <rect width="16" height="344" x="220"/>
+      <rect width="16" height="344" x="60"/>
+      <rect width="16" height="344" x="180"/>
+    </g>
+  </g>
+</svg>

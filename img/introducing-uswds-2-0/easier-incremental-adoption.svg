@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="326" height="242" viewBox="0 0 326 242">
+  <defs>
+    <rect id="easier-incremental-adoption-a" width="144" height="236" x="0" y="0" rx="4"/>
+    <rect id="easier-incremental-adoption-c" width="166.365" height="42" x="0" y="0"/>
+    <rect id="easier-incremental-adoption-e" width="144" height="236" x="0" y="0" rx="4"/>
+    <rect id="easier-incremental-adoption-g" width="166.365" height="64" x="0" y="0"/>
+    <polygon id="easier-incremental-adoption-i" points="73.169 115.056 0 115.051 36.58 0"/>
+    <polygon id="easier-incremental-adoption-k" points="118.607 0 95.991 71.098 .201 0"/>
+    <polygon id="easier-incremental-adoption-m" points=".425 43.938 59.623 0 96.217 115.046"/>
+    <polygon id="easier-incremental-adoption-o" points="36.589 .229 95.781 44.175 0 115.285"/>
+    <polygon id="easier-incremental-adoption-q" points="22.606 71.109 0 .008 118.398 0"/>
+    <path id="easier-incremental-adoption-s" d="M1,0 L15,0 C15.5522847,-1.01453063e-16 16,0.44771525 16,1 L16,1 C16,1.55228475 15.5522847,2 15,2 L1,2 C0.44771525,2 6.76353751e-17,1.55228475 0,1 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z"/>
+    <filter id="easier-incremental-adoption-t" width="625%" height="4300%" x="-262.5%" y="-1500%" filterUnits="objectBoundingBox">
+      <feOffset dy="12" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="12"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0 0"/>
+    </filter>
+    <path id="easier-incremental-adoption-v" d="M0.292893219,1.70710678 C-0.0976310729,1.31658249 -0.0976310729,0.683417511 0.292893219,0.292893219 C0.683417511,-0.0976310729 1.31658249,-0.0976310729 1.70710678,0.292893219 L6.41421356,5 L1.70710678,9.70710678 C1.31658249,10.0976311 0.683417511,10.0976311 0.292893219,9.70710678 C-0.0976310729,9.31658249 -0.0976310729,8.68341751 0.292893219,8.29289322 L3.58578644,5 L0.292893219,1.70710678 Z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <g transform="translate(3 3)">
+      <mask id="easier-incremental-adoption-b" fill="#fff">
+        <use xlink:href="#easier-incremental-adoption-a"/>
+      </mask>
+      <rect width="146" height="238" x="-1" y="-1" stroke="#171717" stroke-width="2" rx="4"/>
+      <g mask="url(#easier-incremental-adoption-b)">
+        <g transform="translate(3 102)">
+          <rect width="30" height="10" x="1" y="1" stroke="#E6E6E6" stroke-width="2" rx="2"/>
+          <rect width="30" height="10" x="37" y="1" stroke="#E6E6E6" stroke-width="2" rx="2"/>
+          <rect width="56" height="8" y="82" fill="#E6E6E6" rx="4"/>
+          <rect width="115" height="4" y="24" fill="#E6E6E6" rx="2"/>
+          <rect width="16" height="2" x="122" y="24" fill="#E6E6E6" rx="1"/>
+          <rect width="16" height="2" x="122" y="28" fill="#E6E6E6" rx="1"/>
+          <rect width="16" height="2" x="122" y="32" fill="#E6E6E6" rx="1"/>
+          <rect width="16" height="2" x="122" y="36" fill="#E6E6E6" rx="1"/>
+          <rect width="16" height="2" x="122" y="94" fill="#E6E6E6" rx="1"/>
+          <rect width="16" height="2" x="122" y="98" fill="#E6E6E6" rx="1"/>
+          <rect width="16" height="2" x="122" y="102" fill="#E6E6E6" rx="1"/>
+          <rect width="115" height="4" y="32" fill="#E6E6E6" rx="2"/>
+          <rect width="115" height="4" y="40" fill="#E6E6E6" rx="2"/>
+          <rect width="115" height="4" y="48" fill="#E6E6E6" rx="2"/>
+          <rect width="115" height="4" y="56" fill="#E6E6E6" rx="2"/>
+          <rect width="115" height="4" y="64" fill="#E6E6E6" rx="2"/>
+          <rect width="115" height="4" y="94" fill="#E6E6E6" rx="2"/>
+          <rect width="115" height="4" y="102" fill="#E6E6E6" rx="2"/>
+          <rect width="115" height="4" y="110" fill="#E6E6E6" rx="2"/>
+          <rect width="115" height="4" y="118" fill="#E6E6E6" rx="2"/>
+          <rect width="115" height="4" y="126" fill="#E6E6E6" rx="2"/>
+        </g>
+      </g>
+      <rect width="56" height="8" x="3" y="26" fill="#E6E6E6" mask="url(#easier-incremental-adoption-b)" rx="4"/>
+      <rect width="16" height="2" x="3" y="15" fill="#E6E6E6" mask="url(#easier-incremental-adoption-b)" rx="1"/>
+      <rect width="16" height="2" x="23" y="15" fill="#E6E6E6" mask="url(#easier-incremental-adoption-b)" rx="1"/>
+      <rect width="16" height="2" x="42" y="15" fill="#E6E6E6" mask="url(#easier-incremental-adoption-b)" rx="1"/>
+      <rect width="16" height="2" x="62" y="15" fill="#E6E6E6" mask="url(#easier-incremental-adoption-b)" rx="1"/>
+      <rect width="36" height="8" x="3" y="37" fill="#E6E6E6" mask="url(#easier-incremental-adoption-b)" rx="4"/>
+      <g mask="url(#easier-incremental-adoption-b)">
+        <g transform="translate(-7.922 51.054)">
+          <mask id="easier-incremental-adoption-d" fill="#fff">
+            <use xlink:href="#easier-incremental-adoption-c"/>
+          </mask>
+          <rect width="163" height="42" x="-1" fill="#E6E6E6" mask="url(#easier-incremental-adoption-d)"/>
+        </g>
+      </g>
+      <g fill="#E6E6E6" mask="url(#easier-incremental-adoption-b)">
+        <g transform="translate(3.521 3.521)">
+          <rect width="4" height="4" rx="2"/>
+          <rect width="4" height="4" x="7" rx="2"/>
+          <rect width="4" height="4" x="14" rx="2"/>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(179 3)">
+      <mask id="easier-incremental-adoption-f" fill="#fff">
+        <use xlink:href="#easier-incremental-adoption-e"/>
+      </mask>
+      <rect width="146" height="238" x="-1" y="-1" stroke="#171717" stroke-width="2" rx="4"/>
+      <g mask="url(#easier-incremental-adoption-f)">
+        <g transform="translate(-7.922 64)">
+          <mask id="easier-incremental-adoption-h" fill="#fff">
+            <use xlink:href="#easier-incremental-adoption-g"/>
+          </mask>
+          <rect width="180" height="64" x="-7" fill="#171717" mask="url(#easier-incremental-adoption-h)"/>
+          <g mask="url(#easier-incremental-adoption-h)">
+            <g transform="translate(-15.078 -81.054)">
+              <g transform="translate(135.446 6.415)">
+                <mask id="easier-incremental-adoption-j" fill="#fff">
+                  <use xlink:href="#easier-incremental-adoption-i"/>
+                </mask>
+                <g fill="#81AEFC" mask="url(#easier-incremental-adoption-j)">
+                  <polygon points="0 0 74 0 74 126 0 126" transform="translate(-.897 -6.415)"/>
+                </g>
+              </g>
+              <g transform="translate(44.85)">
+                <mask id="easier-incremental-adoption-l" fill="#fff">
+                  <use xlink:href="#easier-incremental-adoption-k"/>
+                </mask>
+                <g fill="#3E76C2" mask="url(#easier-incremental-adoption-l)">
+                  <rect width="132" height="71" transform="translate(-4.933)"/>
+                </g>
+              </g>
+              <g transform="translate(2.691 87.524)">
+                <mask id="easier-incremental-adoption-n" fill="#fff">
+                  <use xlink:href="#easier-incremental-adoption-m"/>
+                </mask>
+                <g fill="#D63E04" mask="url(#easier-incremental-adoption-n)">
+                  <polygon points="0 0 107 0 107 126 0 126" transform="translate(-4.933 -7.332)"/>
+                </g>
+              </g>
+              <g transform="translate(0 5.957)">
+                <mask id="easier-incremental-adoption-p" fill="#fff">
+                  <use xlink:href="#easier-incremental-adoption-o"/>
+                </mask>
+                <g fill="#F6BD9C" mask="url(#easier-incremental-adoption-p)">
+                  <polygon points="0 0 101 0 101 132 0 132" transform="translate(-2.242 -5.957)"/>
+                </g>
+              </g>
+              <g transform="translate(87.009 131.515)">
+                <mask id="easier-incremental-adoption-r" fill="#fff">
+                  <use xlink:href="#easier-incremental-adoption-q"/>
+                </mask>
+                <g fill="#2E2E2E" mask="url(#easier-incremental-adoption-r)">
+                  <polygon points="0 0 157 0 157 115 0 115" transform="translate(-20.182 -33.91)"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g stroke-width="2" mask="url(#easier-incremental-adoption-f)">
+        <g transform="translate(3 137.946)">
+          <rect width="30" height="10" x="1" y="1" stroke="#D63E04" rx="5"/>
+          <rect width="30" height="10" x="37" y="1" stroke="#2672DE" rx="5"/>
+        </g>
+      </g>
+      <g mask="url(#easier-incremental-adoption-f)">
+        <g transform="translate(3 23)">
+          <rect width="56" height="8" y="14" fill="#E6E6E6" rx="4"/>
+          <rect width="36" height="8" x="102" fill="#171717" rx="4"/>
+          <rect width="36" height="8" y="25" fill="#E6E6E6" rx="4"/>
+        </g>
+      </g>
+      <g mask="url(#easier-incremental-adoption-f)">
+        <g transform="translate(3 219.946)">
+          <rect width="56" height="8" fill="#E6E6E6" rx="4"/>
+          <rect width="115" height="4" y="12" fill="#E6E6E6" rx="2"/>
+          <g transform="translate(122 12)">
+            <rect width="16" height="2" fill="#E6E6E6" rx="1"/>
+            <g transform="translate(0 4)">
+              <mask id="easier-incremental-adoption-u" fill="#fff">
+                <use xlink:href="#easier-incremental-adoption-s"/>
+              </mask>
+              <use fill="#000" filter="url(#easier-incremental-adoption-t)" xlink:href="#easier-incremental-adoption-s"/>
+              <g fill="#DCDEE0" mask="url(#easier-incremental-adoption-u)">
+                <polygon points="0 0 18 0 18 4 0 4" transform="translate(-1 -1)"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g mask="url(#easier-incremental-adoption-f)">
+        <g transform="translate(3 161.946)">
+          <rect width="115" height="4" fill="#E6E6E6" rx="2"/>
+          <rect width="115" height="4" y="8" fill="#E6E6E6" rx="2"/>
+          <rect width="115" height="4" y="16" fill="#E6E6E6" rx="2"/>
+          <rect width="115" height="4" y="24" fill="#E6E6E6" rx="2"/>
+          <rect width="115" height="4" y="32" fill="#E6E6E6" rx="2"/>
+          <rect width="115" height="4" y="40" fill="#E6E6E6" rx="2"/>
+          <g transform="translate(122)">
+            <rect width="16" height="2" fill="#E6E6E6" rx="1"/>
+            <rect width="16" height="2" y="4" fill="#E6E6E6" rx="1"/>
+            <rect width="16" height="2" y="8" fill="#E6E6E6" rx="1"/>
+            <rect width="16" height="2" y="12" fill="#E6E6E6" rx="1"/>
+          </g>
+        </g>
+      </g>
+      <g fill="#E6E6E6" mask="url(#easier-incremental-adoption-f)">
+        <g transform="translate(3 26)">
+          <rect width="16" height="2" rx="1"/>
+          <rect width="16" height="2" x="20" rx="1"/>
+          <rect width="16" height="2" x="39" rx="1"/>
+          <rect width="16" height="2" x="59" rx="1"/>
+        </g>
+      </g>
+      <rect width="205" height="6" x="-39" y="12" fill="#171717" mask="url(#easier-incremental-adoption-f)"/>
+      <g fill="#E6E6E6" mask="url(#easier-incremental-adoption-f)">
+        <g transform="translate(3.521 3.521)">
+          <rect width="4" height="4" rx="2"/>
+          <rect width="4" height="4" x="7" rx="2"/>
+          <rect width="4" height="4" x="14" rx="2"/>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(157 115)">
+      <g transform="translate(5 1)">
+        <mask id="easier-incremental-adoption-w" fill="#fff">
+          <use xlink:href="#easier-incremental-adoption-v"/>
+        </mask>
+        <use fill="#979797" fill-rule="nonzero" xlink:href="#easier-incremental-adoption-v"/>
+        <g fill="#C3512C" mask="url(#easier-incremental-adoption-w)">
+          <rect width="15" height="18" transform="translate(-7 -4)"/>
+        </g>
+      </g>
+      <rect width="10" height="2" y="5" fill="#C3512C"/>
+    </g>
+  </g>
+</svg>

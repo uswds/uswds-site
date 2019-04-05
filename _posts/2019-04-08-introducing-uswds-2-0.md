@@ -68,8 +68,8 @@ Design and development are all about decision making. Making decisions and commu
 - Even spacing units (based on 8px) yield reliable spacing and centering
 - Typescale outputs consistently and predictably, regardless of typeface
 
-<div class="margin-top-4 padding-top-3 margin-bottom-1 border-top-05 border-base-lighter">
-  <img src="/img/introducing-uswds-2-0/accessible-color-system-long.svg" alt="Two rows of colors from light to dark and their accessible color combinations." class="width-mobile-lg maxw-full">
+<div class="margin-top-4 padding-top-3 margin-bottom-2 border-top-05 border-base-lighter">
+  <img src="/img/introducing-uswds-2-0/accessible-color-system-long.svg" alt="Two rows of colors from light to dark and their accessible color combinations." class="width-full maxw-full">
 </div>
 
 {:.margin-top-0}

@@ -11,9 +11,8 @@
       </em>
     </div>
     <button class="usa-menu-btn">Menu</button>
-
     <div class="navbar--container float-right">
-      <form class="usa-search usa-search--small desktop:margin-right-2 display-none desktop:display-inline-block float-none text-middle" action="/search/">
+      <form class="usa-search usa-search--small desktop:margin-right-2 display-none desktop:display-inline-block float-none text-middle" action="{{ site.baseurl }}/search/">
         <div role="search">
           <label class="usa-sr-only" for="search-input">Search</label>
           <input class="usa-input" id="search-input" type="search" name="q">
@@ -43,8 +42,7 @@
   <button class="usa-nav__close">
     <span class="usa-sr-only">Close</span>
   </button>
-
-  <form class="usa-search usa-search--small desktop:margin-right-4" action="/search/">
+  <form class="usa-search usa-search--small desktop:margin-right-4" action="{{ site.baseurl }}/search/">
     <div role="search">
       <label class="usa-sr-only" for="search-field-small2">Search</label>
       <input class="usa-input" id="search-field-small2" type="search" name="q">
@@ -53,7 +51,6 @@
       </button>
     </div>
   </form>
-
   <div class="usa-nav__inner">
     <ul class="usa-nav__primary usa-accordion">
       {% include nav/sections.html sections=site.data.nav.mobile %}

@@ -98,10 +98,3 @@ jekyll_pages_api_search:
     url:
       boost: 5
     body:
-
-  # If defined and browserify and uglifyify are installed, the plugin will
-  # generate a bundle to define the renderJekyllPagesApiSearchResults
-  # function.
-#  browserify:
-#    source: js/my-search.js
-#    target: js/my-search-bundle.js

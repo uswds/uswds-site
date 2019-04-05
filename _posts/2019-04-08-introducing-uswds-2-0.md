@@ -20,6 +20,7 @@ We’re proud that USWDS currently powers nearly [200 federal websites](https://
 
 Over the last two years, we’ve listened to the designers and developers using USWDS. We’ve conducted interviews with project teams, listened to public feedback, and paid attention to the issues in our [GitHub repos](https://github.com/uswds/). We’ve conducted our own research on how designers and developers communicate with each other, and the tools they use to prototype. This research and feedback shaped our priorities for USWDS 2.0:
 
+{:.margin-left-neg-205}
 - Encourage modular, iterative, user-centered design
 - Promote accessibility and mobile friendliness
 - Develop a consistent design language
@@ -42,6 +43,7 @@ So, what’s new in USWDS 2.0?
 
 You don’t need to totally redesign your existing site to [get started with USWDS](https://v2.designsystem.digital.gov/documentation/). Adding USWDS 2.0 doesn’t mean breaking existing site functionality, so it’s easier to make incremental changes. Our components and code play well with existing styles, and it’s easy to adapt our default styles to a look-and-feel approppriate to your audience.
 
+{:.margin-left-neg-205}
 - Won’t affect your existing styles… until you want it to
 - Isolated class-based styling
 - Customizable base font size
@@ -60,6 +62,7 @@ You don’t need to totally redesign your existing site to [get started with USW
 
 Design and development are all about decision making. Making decisions and communicating these details with the team takes time and has a cost, both in money and energy. [USWDS 2.0 design tokens](https://v2.designsystem.digital.gov/design-tokens/) are the common building blocks of visual design decisions (like color, typescale, and spacing units) that all USWDS projects share. Using a design token means that designers and developers spend more time solving problems, and less time fussing over pixels, eyedroppering hex codes, and redlining.
 
+{:.margin-left-neg-205}
 - Design tokens are a common language between designers and developers
 - Creates simple standardized palettes
 - Makes for a streamlined handoff
@@ -81,6 +84,7 @@ Design and development are all about decision making. Making decisions and commu
 
 Making a good color decision means making an accessible color decision. The [USWDS 2.0 color system](https://v2.designsystem.digital.gov/design-tokens/color/overview/) makes it simple and predictable to pick accessible color pairs. Each USWDS system color has a numeric grade (like the `50` in `red-50`). The difference between any two grades is what we call the magic number. Colors with magic numbers of 40+ achieve AA Large contrast, magic numbers of 50+ achieve AA contrast, and magic numbers of 70+ achieve AAA contrast.
 
+{:.margin-left-neg-205}
 - Magic number makes contrast decisions a snap
 - Encourages accessible color choices for your mission and brand
 - Supports practical project theme palettes
@@ -98,6 +102,7 @@ Making a good color decision means making an accessible color decision. The [USW
 
 Every project is different. Different audiences, different missions, and different goals require different solutions. USWDS 2.0 helps teams reinvent the experience without reinventing the wheel with a flexible design system that encourages customization consistent with our best-practice guidance. Because using user-centered design to extend our defaults and build new things shouldn’t have to mean abandoning USWDS guidance altogether.
 
+{:.margin-left-neg-205}
 - Normalized typefaces allow custom typeface support
 - It’s easier to match your brand to USWDS
 - Custom settings power themeable layouts
@@ -115,6 +120,7 @@ Every project is different. Different audiences, different missions, and differe
 
 Building and testing a prototype is an invaluable step to understanding how real people use our services. Utility classes are a modern way to use USWDS design tokens to rapidly test a new idea, make tweaks to existing components, or design in code. [USWDS utilities](https://v2.designsystem.digital.gov/utilities/) help teams deliver actionable prototypes quickly and consistently, and make quick modifications to production components without writing high-specificity CSS.
 
+{:.margin-left-neg-205}
 - Build new components or modify old ones without touching production CSS
 - Uses modular, atomic, and mobile-first design
 - Optimized for legibility and comprehension
@@ -134,6 +140,7 @@ Building and testing a prototype is an invaluable step to understanding how real
 
 Layout grids give any website visual coherence. The [USWDS 2.0 layout grid](https://v2.designsystem.digital.gov/utilities/layout-grid/) is a familiar flexbox-powered grid that gives predictable control to designers and developers. The grid’s simple, nestable structure means any component and any layout, large or small, can implement a grid in a snap — and its mobile-first layout options make them customizable to any screen or situation.
 
+{:.margin-left-neg-205}
 - Similar to Bootstrap 4 and Foundation
 - Uses a familiar row and column–based structure
 - Built with Flexbox
@@ -152,6 +159,7 @@ Layout grids give any website visual coherence. The [USWDS 2.0 layout grid](http
 
 USWDS 2.0 adds built-in support for custom typefaces, but sometimes you need something free, simple, and readable that just isn’t Helvetica. [Public Sans](https://github.com/uswds/public-sans) is an open source, open license  typeface (SIL Open Font License 1.1) designed and maintained by USWDS, adapted from Libre Franklin. We intend Public Sans to be a model of how to design an open source typeface in public, with contributions and feedback from the public — to deliver a useful, neutral, sans serif now and continuously improve it into the future.
 
+{:.margin-left-neg-205}
 - A clear, strong, neutral face for interfaces and continuous text
 - Developed by USWDS
 - A consistent alternative to system fonts or other neutral sans serifs
@@ -171,6 +179,7 @@ USWDS 2.0 adds built-in support for custom typefaces, but sometimes you need som
 
 USWDS 2.0 is built to grow. It exists to help teams build new things and explore new solutions — to be more useful to any federal website and to adapt to new problems and new insights. Our new release is the foundation for the future of the design system and a way to maintain predictable, reliable coherence in an ever-changing world of new technology and evolving expectations. We can’t wait to see what you build with it.
 
+{:.margin-left-neg-205}
 - No new components, but all new components
 - Consistent, predictable BEM naming
 - Overhauled documentation

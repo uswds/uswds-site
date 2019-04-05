@@ -3,7 +3,7 @@ title: Introducing USWDS 2.0
 tags:
 - web design system
 category: About USWDS
-author: Dan Williams, Maya Benari
+author: Dan O. Williams, Maya Benari
 excerpt: Today, we’re launching U.S. Web Design System 2.0 (USWDS 2.0), a new foundation for the future of our design system. This new version was designed to make it easier for any project to integrate USWDS and use it to support both your mission and the needs of your audience.
 ---
 

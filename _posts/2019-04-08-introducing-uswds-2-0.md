@@ -30,8 +30,8 @@ Over the last two years, we’ve listened to the designers and developers using 
 
 So, what’s new in USWDS 2.0?
 
-<div class="margin-top-4 padding-top-3 margin-bottom-1 border-top-05 border-base-lighter">
-  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/easier-incremental-adoption.svg" alt="An illustration of three designers and developers using design tokens to communicate their intention. They move from themes to components to a finished website." class="width-full tablet:width-card-lg maxw-full">
+<div class="margin-top-5 margin-bottom-1">
+  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/easier-incremental-adoption--alt.png" alt="Side by side illustrations show before-and-after examples of a web page. One has the original page and the other shows that page with just a few design system components added." class="width-full maxw-full">
 </div>
 
 {:.margin-top-0}
@@ -48,8 +48,9 @@ You don’t need to totally redesign your existing site to [get started with USW
 - Supports custom typefaces
 - Provides resilient, modular components
 
-{:.margin-top-4.padding-top-3.margin-bottom-1.border-top-05.border-base-lighter}
-![An illustration of three designers and developers using design tokens to communicate their intention. They move from themes to components to a finished website.][Practical Design Tokens]{:.width-full.tablet:width-card-lg.maxw-full}
+<div class="margin-top-5 margin-bottom-1">
+  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/practical-design-tokens--alt.png" alt="An illustration of three designers and developers using design tokens to communicate their intention. They move from themes to components to a finished website." class="width-full maxw-full">
+</div>
 
 {:.margin-top-0}
 ## Practical design tokens
@@ -68,8 +69,8 @@ Design and development are all about decision making. Making decisions and commu
 - Even spacing units (based on 8px) yield reliable spacing and centering
 - Typescale outputs consistently and predictably, regardless of typeface
 
-<div class="margin-top-4 padding-top-3 margin-bottom-2 border-top-05 border-base-lighter">
-  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/accessible-color-system-long.svg" alt="Two rows of colors from light to dark and their accessible color combinations." class="width-full maxw-full">
+<div class="margin-top-5 margin-bottom-1">
+  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/accessible-color-system--alt.png" alt="Two rows of colors from light to dark and their accessible color combinations." class="width-full maxw-full">
 </div>
 
 {:.margin-top-0}
@@ -85,8 +86,8 @@ Making a good color decision means making an accessible color decision. The [USW
 - Supports practical project theme palettes
 - Is the foundation for expressive color families
 
-<div class="margin-top-4 padding-top-3 margin-bottom-1 border-top-05 border-base-lighter">
-  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/expressive-theming-long.png" alt="An illustration shows five images of websites at different screen sizes, ranging from small to large — each with a different look and feel." class="width-mobile-lg maxw-full">
+<div class="margin-top-5 margin-bottom-1">
+  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/expressive-theming--alt.png" alt="An illustration shows five images of websites at different screen sizes, ranging from small to large — each with a different look and feel." class="width-full maxw-full">
 </div>
 
 {:.margin-top-0}
@@ -102,8 +103,8 @@ Every project is different. Different audiences, different missions, and differe
 - Custom settings power themeable layouts
 - Integrated with tokens and utilities
 
-<div class="margin-top-4 padding-top-3 margin-bottom-1 border-top-05 border-base-lighter">
-  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/powerful-utility-classes-long.svg" alt="This illustration shows another before-and-after example of how a website can use utility classes to change the styles of site elements. Five stylized examples of code are given below the two versions of the page." class="width-mobile-lg maxw-full">
+<div class="margin-top-5 margin-bottom-1">
+  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/powerful-utility-classes--alt.png" alt="This illustration shows another before-and-after example of how a website can use utility classes to change the styles of site elements. Five stylized examples of code are given below the two versions of the page." class="width-full maxw-full">
 </div>
 
 {:.margin-top-0}
@@ -121,8 +122,8 @@ Building and testing a prototype is an invaluable step to understanding how real
 - Easy to transfer into production Sass with integrated functions and mixins
 - 25 KB gzipped, but optional
 
-<div class="margin-top-4 padding-top-3 margin-bottom-1 border-top-05 border-base-lighter">
-  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/simplified-12-column-layout-grid.svg" alt="An illustration shows a yellow 12-column grid system overlaid on a colorful website." class="width-full tablet:width-card maxw-full">
+<div class="margin-top-5 margin-bottom-1">
+  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/simplified-12-column-layout-grid--alt.png" alt="An illustration shows a yellow 12-column grid system overlaid on a colorful website." class="width-full maxw-full">
 </div>
 
 {:.margin-top-0.line-height-sans-2}
@@ -139,8 +140,8 @@ Layout grids give any website visual coherence. The [USWDS 2.0 layout grid](http
 - Predictable and nestable
 - Designed to be mobile-first and responsive
 
-<div class="margin-top-4 padding-top-3 margin-bottom-1 border-top-05 border-base-lighter">
-  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/public-sans-hello.png" alt="The word Hello displayed in Public Sans as though it were being edited in a font editor." class="width-full  maxw-full">
+<div class="margin-top-5 margin-bottom-1">
+  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/public-sans-hello--alt.png" alt="The word Hello displayed in Public Sans as though it were being edited in a font editor." class="width-full maxw-full">
 </div>
 
 {:.margin-top-0}
@@ -158,8 +159,8 @@ USWDS 2.0 adds built-in support for custom typefaces, but sometimes you need som
 - Free and open-source
 - Features tabular numerals for data design
 
-<div class="margin-top-4 padding-top-3 margin-bottom-1 border-top-05 border-base-lighter">
-  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/built-to-grow.png" alt="An expanding geometric flower formed from the USWDS logo." class="width-full tablet:width-card maxw-full">
+<div class="margin-top-5 margin-bottom-1">
+  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/built-to-grow--alt.png" alt="An expanding geometric flower formed from the USWDS logo." class="width-full maxw-full">
 </div>
 
 {:.margin-top-0}
@@ -177,6 +178,7 @@ USWDS 2.0 is built to grow. It exists to help teams build new things and explore
 - Easier to integrate new components from outside projects
 - Prepared to grow and adapt to user needs and industry best practices
 
+{:.margin-top-6}
 Like any true 2.0, this is a living product. We’ll continue to test our decisions and assumptions with real-world feedback as it develops and evolves. We encourage you to explore USWDS 2.0, contribute your own code and ideas, and leave feedback on [GitHub](https://github.com/uswds/uswds/issues), [email](mailto:uswds@gsa.gov), or our [Slack channel](https://chat.18f.gov/). And join our new mailing list by sending an email to [uswds-subscribe-request@listserv.gsa.gov](mailto:uswds-subscribe-request@listserv.gsa.gov). We’ll use your input to continuously improve the system with ongoing regular releases. We’re listening.
 
 ---

@@ -1144,7 +1144,7 @@ pre {
       display: none;
     }
   }
-  
+
   &.lineno {
     user-select: none;
   }
@@ -2978,6 +2978,7 @@ $theme-table-column-gap: 4;
 
 .site-button {
   @include typeset('lang', null, 1);
+  font-weight: fw('normal');
 }
 
 .site-table,
@@ -3044,5 +3045,29 @@ body {
 
   a {
     color: color('ink');
+  }
+}
+
+.site-hero {
+  @include u-bg('base-lightest');
+  @include u-padding-bottom(4);
+  @include u-padding-x(0);
+  background-image: url('../img/introducing-uswds-2-0/feature-image.png');
+  background-repeat: no-repeat;
+  background-position: 0 units(2);
+  background-size: 100% auto;
+  padding-top: 65vw;
+
+  @include at-media('tablet') {
+    @include u-padding-bottom(8);
+    @include u-padding-top(6);
+    background-image: url('../img/introducing-uswds-2-0/feature-image-homepage.svg');
+    background-repeat: no-repeat;
+    background-position: left calc(#{units('mobile-lg')} + #{units(2)}) top units('105');
+    background-size: auto 400px;
+  }
+
+  @include at-media('tablet-lg') {
+    background-position: left calc(50% + #{units('card-lg')}) top units('105');
   }
 }

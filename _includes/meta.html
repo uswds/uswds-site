@@ -6,17 +6,14 @@
 {% endif %}
 <title>{{ title }}</title>
 <meta property="og:title" content="{{ title | xml_escape }}">
-{% if page.excerpt -%}
-  {% assign desc = page.excerpt %}
-{% else %}
 {% assign desc = page.description
   | default: page.lead
   | default: site.description
+  | markdownify
   | strip_html
   | strip
   | xml_escape
 %}
-{% endif %}
 {% if desc -%}
 <meta name="description" content="{{ desc }}">
 <meta property="og:description" content="{{ desc }}">

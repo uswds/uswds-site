@@ -86,7 +86,7 @@ Making a good color decision means making an accessible color decision. The [USW
 - Is the foundation for expressive color families
 
 <div class="margin-top-4 padding-top-3 margin-bottom-1 border-top-05 border-base-lighter">
-  <img src="/img/introducing-uswds-2-0/expressive-theming-long.svg" alt="An illustration shows five images of websites at different screen sizes, ranging from small to large — each with a different look and feel." class="width-mobile-lg maxw-full">
+  <img src="/img/introducing-uswds-2-0/expressive-theming-long.png" alt="An illustration shows five images of websites at different screen sizes, ranging from small to large — each with a different look and feel." class="width-mobile-lg maxw-full">
 </div>
 
 {:.margin-top-0}

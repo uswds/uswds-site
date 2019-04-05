@@ -148,7 +148,7 @@ Layout grids give any website visual coherence. The [USWDS 2.0 layout grid](http
 - Designed to be mobile-first and responsive
 
 <div class="margin-top-5 margin-bottom-1">
-  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/public-sans-hello--alt.jpg" alt="The word Hello displayed in Public Sans as though it were being edited in a font editor." class="width-full maxw-full">
+  <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/public-sans-hello--alt.jpg" alt="The word Hello displayed in Public Sans as though being edited in a font editor." class="width-full maxw-full">
 </div>
 
 {:.margin-top-0}

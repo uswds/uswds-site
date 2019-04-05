@@ -5,24 +5,30 @@ title: Migrating to USWDS 2
 category: Documentation
 subnav:
 - text: Summary
-  href: #summary
-- text: By component
-  href: #by-component
-- text: Version 2.0.0 Beta 7
+  href: '#summary'
+- text: Integrating tokens
+  href: '#integrating-tokens'
+- text: Mixins and functions
+  href: '#mixins-and-functions'
+- text: BEM
+  href: '#bem'
+- text: Migration by component
+  href: '#migration-by-component'
+- text: Beta 7 release notes
   href: '#version-200-beta-7-release-candidate'
-- text: Version 2.0.0 Beta 6
+- text: Beta 6 release notes
   href: '#version-200-beta-6'
-- text: Version 2.0.0 Beta 5
+- text: Beta 5 release notes
   href: '#version-200-beta-5'
-- text: Version 2.0.0 Beta 4
+- text: Beta 4 release notes
   href: '#version-200-beta-4'
-- text: Version 2.0.0 Beta 3
+- text: Beta 3 release notes
   href: '#version-200-beta-3'
-- text: Version 2.0.0 Beta 2
+- text: Beta 2 release notes
   href: '#version-200-beta-2'
-- text: Version 2.0.0 Beta
+- text: Beta 1 release notes
   href: '#version-200-beta'
-- text: Version 2.0.0 Alpha
+- text: Alpha release notes
   href: '#version-200-alpha'
 ---
 {:.site-text-intro}
@@ -124,7 +130,7 @@ This is what the HTML markup looks like going from v1 to v2:
 ### Layout grid
 - Deprecated the float-based grid system (and Bourbon Neat) in favor of a flexbox grid system
 - Grid no longer makes assumptions about reponsive behavior. Breakpoints are specified manually.
-- Gird column classes must be enclosed by a `grid-row`.
+- Grid column classes must be enclosed by a `grid-row`.
 - See the [layout grid documetation]({{ site.baseurl }}/utilities/layout-grid/) for more details.
 {% include migration-table.html class='layout-grid' %}
 

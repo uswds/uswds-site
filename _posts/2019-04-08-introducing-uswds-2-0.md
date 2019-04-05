@@ -18,7 +18,7 @@ USWDS is a library of code, tools, and guidance to help government teams design 
 
 We’re proud that USWDS currently powers nearly [200 federal websites](https://v2.designsystem.digital.gov/getting-started/showcase/all/) and we’re committed to making the design system work better for any federal website. With USWDS 2.0 we’re introducing a design system that’s built to grow with your needs — to help teams build better, more engaging websites for the American public.
 
-Over the last two years, we’ve listened to the designers and developers using USWDS to build their websites. We’ve conducted interviews with project teams, listened to public feedback, and paid close attention to the issues in our [GitHub repos](https://github.com/uswds/). We’ve conducted our own research on how designers and developers communicate with each other, and the tools they use to prototype. This research and feedback shaped our priorities for USWDS 2.0:
+Over the last two years, we’ve listened to the designers and developers using USWDS. We’ve conducted interviews with project teams, listened to public feedback, and paid attention to the issues in our [GitHub repos](https://github.com/uswds/). We’ve conducted our own research on how designers and developers communicate with each other, and the tools they use to prototype. This research and feedback shaped our priorities for USWDS 2.0:
 
 - Encourage modular, iterative, user-centered design
 - Promote accessibility and mobile friendliness
@@ -31,16 +31,16 @@ Over the last two years, we’ve listened to the designers and developers using 
 So, what’s new in USWDS 2.0?
 
 <div class="margin-top-4 padding-top-3 margin-bottom-1 border-top-05 border-base-lighter">
-  <img src="/img/introducing-uswds-2-0/easier-incremental-adoption.svg" alt="An illustration of three designers and developers using design tokens to communicate their intention. They move from themes to components to a finished website." class="width-full tablet:width-card maxw-full">
+  <img src="/img/introducing-uswds-2-0/easier-incremental-adoption.svg" alt="An illustration of three designers and developers using design tokens to communicate their intention. They move from themes to components to a finished website." class="width-full tablet:width-card-lg maxw-full">
 </div>
 
 {:.margin-top-0}
-## Easier Incremental Adoption
+## Easier incremental adoption
 
 {:.margin-top-0.text-light}
 ### Add a component, not a headache
 
-You don’t need to totally redesign your existing site to [get started with USWDS](https://v2.designsystem.digital.gov/documentation/). Adding USWDS 2.0 doesn’t mean breaking existing site functionality, so it’s easier to make incremental changes. Our components and code play well with existing styles, and it’s easy to adapt our default styles to the look-and-feel your users trust.
+You don’t need to totally redesign your existing site to [get started with USWDS](https://v2.designsystem.digital.gov/documentation/). Adding USWDS 2.0 doesn’t mean breaking existing site functionality, so it’s easier to make incremental changes. Our components and code play well with existing styles, and it’s easy to adapt our default styles to a look-and-feel approppriate to your audience.
 
 - Won’t affect your existing styles… until you want it to
 - Isolated class-based styling
@@ -49,15 +49,15 @@ You don’t need to totally redesign your existing site to [get started with USW
 - Provides resilient, modular components
 
 {:.margin-top-4.padding-top-3.margin-bottom-1.border-top-05.border-base-lighter}
-![An illustration of three designers and developers using design tokens to communicate their intention. They move from themes to components to a finished website.][Practical Design Tokens]{:.width-full.tablet:width-card.maxw-full}
+![An illustration of three designers and developers using design tokens to communicate their intention. They move from themes to components to a finished website.][Practical Design Tokens]{:.width-full.tablet:width-card-lg.maxw-full}
 
 {:.margin-top-0}
-## Practical Design Tokens
+## Practical design tokens
 
 {:.margin-top-0.text-light}
 ### A common language for designers and developers
 
-Design and development are all about decision making. Making decisions and communicating their details with the team takes time and has a cost, both in money and energy. [USWDS 2.0 design tokens](https://v2.designsystem.digital.gov/design-tokens/) are the common building blocks of visual design decisions (like color, typescale, and spacing units) that all USWDS projects share. Using a design token means that designers and developers spend less time fussing over pixels, eyedroppering hex codes, and redlining, and more time solving problems.
+Design and development are all about decision making. Making decisions and communicating these details with the team takes time and has a cost, both in money and energy. [USWDS 2.0 design tokens](https://v2.designsystem.digital.gov/design-tokens/) are the common building blocks of visual design decisions (like color, typescale, and spacing units) that all USWDS projects share. Using a design token means that designers and developers spend more time solving problems, and less time fussing over pixels, eyedroppering hex codes, and redlining.
 
 - Design tokens are a common language between designers and developers
 - Creates simple standardized palettes
@@ -73,12 +73,12 @@ Design and development are all about decision making. Making decisions and commu
 </div>
 
 {:.margin-top-0}
-## Accessible Color System
+## An accessible color system
 
 {:.margin-top-0.text-light}
 ### From AA Large to AAA: Section 508 contrast made simple
 
-Making a good color decision means making an accessible color decision. The [USWDS 2.0 color system](https://v2.designsystem.digital.gov/design-tokens/color/overview/) makes it simple and predictable to pick accessible color pairs. Each USWDS system color has a numeric grade (like the `50` in `red-50`). The difference between any two colors’ grades is what we call the magic number. Magic numbers of 40+ achieve AA Large contrast, magic numbers of 50+ achieve AA contrast, and magic numbers of 70+ achieve AAA contrast.
+Making a good color decision means making an accessible color decision. The [USWDS 2.0 color system](https://v2.designsystem.digital.gov/design-tokens/color/overview/) makes it simple and predictable to pick accessible color pairs. Each USWDS system color has a numeric grade (like the `50` in `red-50`). The difference between any two grades is what we call the magic number. Colors with magic numbers of 40+ achieve AA Large contrast, magic numbers of 50+ achieve AA contrast, and magic numbers of 70+ achieve AAA contrast.
 
 - Magic number makes contrast decisions a snap
 - Encourages accessible color choices for your mission and brand
@@ -90,7 +90,7 @@ Making a good color decision means making an accessible color decision. The [USW
 </div>
 
 {:.margin-top-0}
-## Expressive Theming
+## Expressive theming
 
 {:.margin-top-0.text-light}
 ### Powered by your mission and user needs
@@ -107,7 +107,7 @@ Every project is different. Different audiences, different missions, and differe
 </div>
 
 {:.margin-top-0}
-## Powerful Utility Classes
+## Powerful utility classes
 
 {:.margin-top-0.text-light}
 ### Prototype faster to get your designs in front of real users
@@ -126,7 +126,7 @@ Building and testing a prototype is an invaluable step to understanding how real
 </div>
 
 {:.margin-top-0.line-height-sans-2}
-## Simplified 12-Column Layout Grid
+## Simplified 12-column layout grid
 
 {:.margin-top-0.text-light.padding-top-1}
 ### A simple, powerful, flexible grid
@@ -140,7 +140,7 @@ Layout grids give any website visual coherence. The [USWDS 2.0 layout grid](http
 - Designed to be mobile-first and responsive
 
 <div class="margin-top-4 padding-top-3 margin-bottom-1 border-top-05 border-base-lighter">
-  <img src="/img/introducing-uswds-2-0/introducing-public-sans.svg" alt="Seven ways to say hello — Hi, Hello, Hey, Hola, Howdy, Heya, and Hai — are displayed in the new Public Sans font in various font weights." class="width-full tablet:width-card maxw-full">
+  <img src="/img/introducing-uswds-2-0/public-sans-hello.png" alt="Seven ways to say hello — Hi, Hello, Hey, Hola, Howdy, Heya, and Hai — are displayed in the new Public Sans font in various font weights." class="width-full  maxw-full">
 </div>
 
 {:.margin-top-0}
@@ -149,7 +149,7 @@ Layout grids give any website visual coherence. The [USWDS 2.0 layout grid](http
 {:.margin-top-0.text-light}
 ### A free, open source typeface from USWDS
 
-USWDS 2.0 adds built-in support for custom typefaces, but sometimes you need something free, simple, and readable that just isn’t Helvetica. [Public Sans](https://github.com/uswds/public-sans) is an open source, open license (SIL Open Font License 1.1) typeface designed and maintained by USWDS, adapted from Libre Franklin. We intend Public Sans to be a model of how to design an open source typeface in public, with contributions and feedback from the public — to deliver a useful, neutral, sans serif now and continuously improve it into the future.
+USWDS 2.0 adds built-in support for custom typefaces, but sometimes you need something free, simple, and readable that just isn’t Helvetica. [Public Sans](https://github.com/uswds/public-sans) is an open source, open license  typeface (SIL Open Font License 1.1) designed and maintained by USWDS, adapted from Libre Franklin. We intend Public Sans to be a model of how to design an open source typeface in public, with contributions and feedback from the public — to deliver a useful, neutral, sans serif now and continuously improve it into the future.
 
 - A clear, strong, neutral face for interfaces and continuous text
 - Developed by USWDS
@@ -163,7 +163,7 @@ USWDS 2.0 adds built-in support for custom typefaces, but sometimes you need som
 </div>
 
 {:.margin-top-0}
-## Built to Grow
+## Built to grow
 
 {:.margin-top-0.text-light}
 ### A stable foundation for the future

@@ -14,6 +14,8 @@ subnav:
   href: '#bem'
 - text: Migration by component
   href: '#migration-by-component'
+- text: 2.0.0 release notes
+  href: '#version-200'
 - text: Beta 7 release notes
   href: '#version-200-beta-7-release-candidate'
 - text: Beta 6 release notes
@@ -208,7 +210,7 @@ This is what the HTML markup looks like going from v1 to v2:
 {% include migration-table.html class='skipnav' %}
 
 {% for release in site.data.releases %}
-{% if release.target_commitish == "release-2.0" or release.name == "2.0.0-beta" %}
+{% if release.target_commitish == "release-2.0" or release.name == "2.0.0-beta" or release.name == "2.0.0" %}
 
 ## Version {{ release.name }}
 

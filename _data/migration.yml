@@ -1,0 +1,581 @@
+mixins:
+  - v1: All Bourbon functions and mixins
+    v2: deprecated
+    deprecated: true
+  - v1: '@include media()'
+    v2: '@include at-media'
+    token: spacing-units
+  - v1: '@include focus'
+    v2: deprecated
+    deprecated: true
+  - v1: '@include font-smoothing'
+    v2: '@mixin add-knockout-font-smoothing'
+  - v1: '@include allow-layout-classes'
+    v2: deprecated
+    deprecated: true
+  - v1: '@include display-icon()'
+    v2: now uses tokens for spacing units
+  - v1: '@include usa-sidenav-list'
+    v2: '@include nav-list'
+  - v1: '@include usa-sidenav-sublist'
+    v2: '@include nav-sublist'
+
+layout-grid:
+  - v1: .usa-grid
+    v2: .grid-container
+  - v1: .usa-grid-full
+    v2: .grid-container.padding-x-0
+  - v1: .usa-width-one-whole
+    v2: .grid-row-12
+  - v1: .usa-width-one-half
+    v2: .grid-row-6
+  - v1: .usa-width-one-third
+    v2: .grid-row-4
+  - v1: .usa-width-two-thirds
+    v2: .grid-row-8
+  - v1: .usa-width-one-fourth
+    v2: .grid-row-3
+  - v1: .usa-width-three-fourths
+    v2: .grid-row-9
+  - v1: .usa-width-one-sixth
+    v2: .grid-row-2
+  - v1: .usa-width-five-sixths
+    v2: .grid-row-10
+  - v1: .usa-width-one-twelfth
+    v2: .grid-row-1
+  - v1: .usa-width-five-twelfths
+    v2: .grid-row-5
+  - v1: .usa-width-seven-twelfths
+    v2: .grid-row-7
+  - v1: .usa-offset-one-twelfth
+    v2: .grid-offset-1
+  - v1: .usa-offset-one-sixth
+    v2: .grid-offset-2
+  - v1: .usa-offset-one-fourth
+    v2: .grid-offset-3
+  - v1: .usa-offset-one-third
+    v2: .grid-offset-4
+  - v1: .usa-offset-five-twelfths
+    v2: .grid-offset-5
+  - v1: .usa-offset-one-half
+    v2: .grid-offset-6
+  - v1: .usa-offset-seven-twelfths
+    v2: .grid-offset-7
+  - v1: .usa-offset-two-thirds
+    v2: .grid-offset-8
+  - v1: .usa-offset-three-fourths
+    v2: .grid-offset-9
+  - v1: .usa-offset-five-sixths
+    v2: .grid-offset-10
+  - v1: .usa-offset-eleven-twelfths
+    v2: .grid-offset-11
+
+typography:
+  - v1: 'a'
+    v2: '.usa-link'
+  - v1: 'p'
+    v2: '.usa-paragraph'
+  - v1: 'h1'
+    v2: '.usa-prose > h1'
+  - v1: 'h2'
+    v2: '.usa-prose > h2'
+  - v1: 'h3'
+    v2: '.usa-prose > h3'
+  - v1: 'h4'
+    v2: '.usa-prose > h4'
+  - v1: 'h5'
+    v2: '.usa-prose > h6'
+  - v1: 'h6'
+    v2: '.usa-prose > h6'
+  - v1: 'ol'
+    v2: 'ol.usa-list'
+  - v1: 'ul'
+    v2: 'ul.usa-list'
+  - v1: '.usa-background-dark'
+    v2: '.usa-dark-background'
+  - v1: '.usa-content'
+    v2: '.usa-content'
+  - v1: '.usa-content-list'
+    v2: '.usa-content-list'
+  - v1: '.usa-display'
+    v2: '.usa-display'
+  - v1: '.usa-external_link'
+    v2: '.usa-external-link'
+  - v1: '.usa-external_link-alt'
+    v2: '.usa-external-link-alt'
+  - v1: '.usa-font-lead'
+    v2: '.usa-intro'
+  - v1: '.usa-heading-alt'
+    v2: 'deprecated: use utilities'
+    deprecated: true
+  - v1: '.usa-sans'
+    v2: 'deprecated: use utilities'
+    deprecated: true
+  - v1: '.usa-serif'
+    v2: 'deprecated: use utilities'
+    deprecated: true
+  - v1: '.usa-text-small'
+    v2: 'deprecated: use utilities'
+    deprecated: true
+
+button:
+  - v1: '.usa-button'
+    v2: '.usa-button'
+  - v1: '.usa-button-active'
+    v2: '.usa-button--active'
+  - v1: '.usa-button-big'
+    v2: '.usa-button--big'
+  - v1: '.usa-button-disabled'
+    v2: '.usa-button--disabled'
+  - v1: '.usa-button-gray'
+    v2: '.usa-button--base'
+  - v1: '.usa-button-hover'
+    v2: '.usa-button--hover'
+  - v1: '.usa-button-primary'
+    v2: '.usa-button'
+  - v1: '.usa-button-primary-alt'
+    v2: '.usa-button--accent-cool'
+  - v1: '.usa-button-secondary'
+    v2: '.usa-button--outline'
+  - v1: '.usa-button-secondary-disabled'
+    v2: '.usa-button--outline.usa-button--disabled'
+  - v1: '.usa-button-secondary-inverse'
+    v2: '.usa-button--outline.usa-button--inverse'
+  - v1: '.usa-button-secondary-inverse-disabled'
+    v2: '.usa-button--outline.usa-button--inverse.usa-button--disabled'
+  - v1: '.usa-button-red'
+    v2: '.usa-button--secondary'
+  - v1: '.usa-button-unstyled'
+    v2: '.usa-button--unstyled'
+  - v1: '.usa-focus'
+    v2: '.usa-focus'
+
+embed:
+  - v1: '.usa-embed-container'
+    v2: '.usa-embed-container'
+
+figure:
+  - v1: 'media-link'
+    v2: '.usa-media-link'
+
+inputs:
+  - v1: '[type=checkbox]'
+    v2: '.usa-checkbox__input'
+  - v1: '[type=checkbox] + label'
+    v2: '.usa-checkbox__label'
+  - v1: '[type=radio]'
+    v2: '.usa-radio__input'
+  - v1: '[type=radio] label'
+    v2: '.usa-radio__label'
+  - v1: '[type=range]'
+    v2: '.usa-range'
+  - v1: 'fieldset'
+    v2: '.usa-fieldset'
+  - v1: 'input'
+    v2: '.usa-input'
+  - v1: 'label'
+    v2: '.usa-label'
+  - v1: 'legend'
+    v2: '.usa-legend'
+  - v1: 'select'
+    v2: '.usa-select'
+  - v1: 'textarea'
+    v2: '.usa-textarea'
+  - v1: '.usa-date-of-birth'
+    v2: '.usa-memorable-date'
+  - v1: '.usa-fieldset-inputs'
+    v2: 'deprecated: see new checkbox and radio markup'
+    deprecated: true
+  - v1: '.usa-form-group'
+    v2: '.usa-form-group'
+  - v1: '.usa-form-group-day'
+    v2: '.usa-form-group--day'
+  - v1: '.usa-form-group-month'
+    v2: '.usa-form-group--month'
+  - v1: '.usa-form-group-year'
+    v2: '.usa-form-group--year'
+  - v1: '.usa-form-hint'
+    v2: '.usa-hint'
+  - v1: '.usa-input-error'
+    v2: '.usa-form-group--error'
+  - v1: '.usa-input-inline'
+    v2: '.usa-input--inline'
+  - v1: '.usa-input-medium'
+    v2: '.usa-input--medium'
+  - v1: '.usa-input-error'
+    v2: '.usa-input--error'
+  - v1: '.usa-input-error-label'
+    v2: '.usa-label--error'
+  - v1: '.usa-input-error-message'
+    v2: '.usa-error-message'
+  - v1: '.usa-input-inline-error'
+    v2: '.usa-input--error'
+  - v1: '.usa-input-label-helper'
+    v2: '.usa-hint'
+  - v1: '.usa-input-label-required'
+    v2: '.usa-label--required'
+  - v1: '.usa-input-optional'
+    v2: 'deprecated: use .usa-hint for option text in a .usa-label'
+    deprecated: true
+  - v1: '.usa-input-required'
+    v2: 'deprecated: no longer recommended'
+    deprecated: true
+  - v1: '.usa-input-success'
+    v2: '.usa-input--success'
+  - v1: '.usa-input-tiny'
+    v2: '.usa-input--small'
+  - v1: '.usa-unstyled-list (for checkboxes)'
+    v2: 'div.usa-checkbox'
+  - v1: '.usa-unstyled-list (for radio buttons)'
+    v2: 'div.usa-radio'
+
+list:
+  - v1: 'li'
+    v2: '.usa-list li'
+  - v1: 'ol'
+    v2: 'ol.usa-list'
+  - v1: 'ul'
+    v2: 'ul.usa-list'
+  - v1: '.usa-unstyled-list'
+    v2: '.usa-list--unstyled'
+
+table:
+  - v1: 'caption'
+    v2: '.usa-table caption'
+  - v1: 'thead'
+    v2: '.usa-table thead'
+  - v1: 'th'
+    v2: '.usa-table th'
+  - v1: 'td'
+    v2: '.usa-table td'
+  - v1: 'table'
+    v2: '.usa-table'
+  - v1: '.usa-table-borderless'
+    v2: '.usa-table--borderless'
+
+tag:
+  - v1: '.usa-label'
+    v2: '.usa-tag'
+  - v1: '.usa-label-big'
+    v2: '.usa-tag--big'
+
+accordion:
+  - v1: '.usa-accordion'
+    v2: '.usa-accordion'
+  - v1: '.usa-accordion-bordered'
+    v2: '.usa-accordion--bordered'
+  - v1: '.usa-accordion-button'
+    v2: '.usa-accordion__button'
+  - v1: '.usa-accordion-content'
+    v2: '.usa-accordion__content'
+  - v1: '—'
+    v2: '.usa-accordion__heading'
+
+alert:
+  - v1: '.usa-alert'
+    v2: '.usa-alert'
+  - v1: '.usa-alert-error'
+    v2: '.usa-alert--error'
+  - v1: '.usa-alert-no_icon'
+    v2: '.usa-alert--no-icon'
+  - v1: '.usa-alert-slim'
+    v2: '.usa-alert--slim'
+  - v1: '.usa-alert-success'
+    v2: '.usa-alert--success'
+  - v1: '.usa-alert-warning'
+    v2: '.usa-alert--warning'
+  - v1: '.usa-alert-body'
+    v2: '.usa-alert__body'
+  - v1: '.usa-alert-heading'
+    v2: '.usa-alert__heading'
+  - v1: '.usa-alert-icon'
+    v2: '.usa-alert__icon'
+  - v1: '.usa-alert-info'
+    v2: '.usa-alert--info'
+  - v1: '.usa-alert-paragraph'
+    v2: '.usa-alert__paragraph'
+  - v1: '.usa-alert-text'
+    v2: '.usa-alert__text'
+
+banner:
+  - v1: '.usa-banner'
+    v2: '.usa-banner'
+  - v1: '.usa-banner-button'
+    v2: '.usa-banner__button'
+  - v1: '.usa-banner-button-text'
+    v2: '.usa-banner__button-text'
+  - v1: '.usa-banner-content'
+    v2: '.usa-banner__content'
+  - v1: '.usa-banner-guidance-gov'
+    v2: '.usa-banner__guidance'
+  - v1: '.usa-banner-guidance-ssl'
+    v2: '.usa-banner__guidance'
+  - v1: '.usa-banner-header'
+    v2: '.usa-banner__header'
+  - v1: '.usa-banner-header-expanded'
+    v2: '.usa-banner__header--expanded'
+  - v1: '.usa-banner-icon'
+    v2: '.usa-banner__icon'
+  - v1: '.usa-banner-inner'
+    v2: '.usa-banner__inner'
+  - v1: '—'
+    v2: '.usa-banner__header-action'
+  - v1: '—'
+    v2: '.usa-banner__header-close-text'
+  - v1: '—'
+    v2: '.usa-banner__header-flag'
+  - v1: '—'
+    v2: '.usa-banner__header-text'
+
+checklist:
+  - v1: '.usa-checklist'
+    v2: '.usa-checklist'
+  - v1: '.usa-checklist li'
+    v2: '.usa-checklist__item'
+  - v1: '.usa-checklist-checked'
+    v2: '.usa-checklist__item--checked'
+
+footer:
+  - v1: 'address'
+    v2: '.usa-footer__address'
+  - v1: '.usa-footer'
+    v2: '.usa-footer'
+  - v1: '.usa-footer-big'
+    v2: '.usa-footer--big'
+  - v1: '.usa-footer-big'
+    v2: '.usa-footer--big'
+  - v1: '.usa-footer-big-secondary-section'
+    v2: '.usa-footer__secondary-section'
+  - v1: '.usa-footer-big-logo-heading'
+    v2: '.usa-footer__logo-heading'
+  - v1: '.usa-footer-big-logo-img'
+    v2: '.usa-footer__logo-img'
+  - v1: '.usa-footer-contact-heading'
+    v2: '.usa-footer__contact-heading'
+  - v1: '.usa-footer-contact-links'
+    v2: '.usa-footer__contact-links'
+  - v1: '.usa-footer-contact_info'
+    v2: '.usa-footer__contact-info'
+  - v1: '.usa-footer-logo'
+    v2: '.usa-footer__logo'
+  - v1: '.usa-footer-logo-heading'
+    v2: '.usa-footer__logo-heading'
+  - v1: '.usa-footer-logo-img'
+    v2: '.usa-footer__logo-img'
+  - v1: '.usa-footer-medium'
+    v2: '.usa-footer'
+  - v1: '.usa-footer-nav'
+    v2: '.usa-footer__nav'
+  - v1: '.usa-footer-slim'
+    v2: '.usa-footer--slim'
+  - v1: '.usa-footer-slim-logo-heading'
+    v2: '.usa-footer__logo-heading'
+  - v1: '.usa-footer-slim-logo-img'
+    v2: '.usa-footer__logo-img'
+  - v1: '.usa-footer-primary-content'
+    v2: '.usa-footer__primary-content'
+  - v1: '.usa-footer-primary-content (collapsible)'
+    v2: '.usa-footer__primary-content--collapsible'
+  - v1: '.usa-footer-primary-link'
+    v2: '.usa-footer__primary-link'
+  - v1: '.usa-footer-primary-section'
+    v2: '.usa-footer__primary-section'
+  - v1: '.usa-footer-return-to-top'
+    v2: '.usa-footer__return-to-top'
+  - v1: '.usa-footer-secondary-link'
+    v2: '.usa-footer__secondary-link'
+  - v1: '.usa-footer-secondary_section'
+    v2: '.usa-footer__secondary-section'
+  - v1: '.usa-footer-topic'
+    v2: 'deprecated'
+    deprecated: true
+  - v1: '.usa-link-facebook'
+    v2: '.usa-social-link--facebook'
+  - v1: '.usa-link-rss'
+    v2: '.usa-social-link--rss'
+  - v1: '.usa-link-twitter'
+    v2: '.usa-social-link--twitter'
+  - v1: '.usa-link-youtube'
+    v2: '.usa-social-link--youtube'
+  - v1: '.usa-sign_up-block'
+    v2: '.usa-sign-up'
+  - v1: '.usa-sign_up-header'
+    v2: '.usa-sign-up__heading'
+  - v1: '.usa-social-links'
+    v2: '.usa-footer__social-links'
+  - v1: '.usa-social_link'
+    v2: '.usa-social-link'
+
+form:
+  - v1: '.usa-additional_text'
+    v2: 'deprecated: not used'
+    deprecated: true
+  - v1: '.usa-checklist'
+    v2: '.usa-checklist'
+  - v1: '.usa-checklist li'
+    v2: '.usa-checklist__item'
+  - v1: '.usa-checklist-checked'
+    v2: '.usa-checklist__item--checked'
+  - v1: '.usa-form'
+    v2: '.usa-form'
+  - v1: '.usa-form-large'
+    v2: '.usa-form--large'
+  - v1: '.usa-form-note'
+    v2: '.usa-form__note'
+  - v1: '.usa-input-medium'
+    v2: '.usa-input--medium'
+  - v1: '.usa-input-tiny'
+    v2: '.usa-input--small'
+  - v1: '.usa-input-grid'
+    v2: 'deprecated: use grid utilities'
+    deprecated: true
+  - v1: '.usa-input-grid-small'
+    v2: 'deprecated: use grid utilities'
+    deprecated: true
+  - v1: '.usa-input-grid-medium'
+    v2: 'deprecated: use grid utilities'
+    deprecated: true
+  - v1: '.usa-input-grid-large'
+    v2: 'deprecated: use grid utilities'
+    deprecated: true
+
+graphic-list:
+  - v1: '.usa-graphic_list'
+    v2: '.usa-graphic-list'
+  - v1: '.usa-graphic_list h3'
+    v2: '.usa-graphic-list__heading'
+  - v1: '.usa-graphic_list-row'
+    v2: '.usa-graphic-list__row'
+
+header:
+  - v1: '.usa-header'
+    v2: '.usa-header'
+  - v1: '.usa-logo'
+    v2: '.usa-logo'
+  - v1: '.usa-logo-text'
+    v2: '.usa-logo__text'
+  - v1: '.usa-menu-btn'
+    v2: '.usa-menu-btn'
+  - v1: '.usa-overlay'
+    v2: '.usa-overlay'
+  - v1: '.usa-overlay.is-visible'
+    v2: '.usa-overlay.is-visible'
+  - v1: '.usa-header-basic'
+    v2: '.usa-header--basic'
+  - v1: '.usa-navbar'
+    v2: '.usa-navbar'
+  - v1: '.usa-header-extended'
+    v2: '.usa-header--extended'
+  - v1: '.usa-current'
+    v2: '.usa-current'
+
+hero:
+  - v1: '.usa-hero'
+    v2: '.usa-hero'
+  - v1: '.usa-hero h2'
+    v2: '.usa-hero__heading'
+  - v1: '.usa-hero-callout'
+    v2: '.usa-hero__callout'
+  - v1: '.usa-hero-callout-alt'
+    v2: '.usa-hero__callout-alt'
+  - v1: '.usa-hero-link'
+    v2: 'deprecated: use utilities'
+    deprecated: true
+
+layout:
+  - v1: '.usa-layout-docs-main_content'
+    v2: '.usa-layout-docs__main'
+  - v1: '.usa-layout-docs-sidenav'
+    v2: '.usa-layout-docs__sidenav'
+  - v1: '.usa-layout-docs'
+    v2: '.usa-layout-docs'
+
+media-block:
+  - v1: '.usa-media_block'
+    v2: '.usa-media-block'
+  - v1: '.usa-media_block-body'
+    v2: '.usa-media-block__body'
+  - v1: '.usa-media_block-img'
+    v2: '.usa-media-block__img'
+
+navigation:
+  - v1: '.usa-accordion-button'
+    v2: '.usa-accordion__button'
+  - v1: '.usa-current'
+    v2: '.usa-current'
+  - v1: '.usa-header-basic-megamenu'
+    v2: '.usa-header--megamenu'
+  - v1: '.usa-header-extended'
+    v2: '.usa-header--extended'
+  - v1: '.usa-header-search-button'
+    v2: 'deprecated: not used'
+    deprecated: true
+  - v1: '.usa-megamenu'
+    v2: '.usa-megamenu'
+  - v1: '.usa-megamenu-col'
+    v2: 'deprecated: use utilities'
+    deprecated: true
+  - v1: '.usa-mobile_nav-active'
+    v2: '.usa-mobile-nav--active'
+  - v1: '.usa-nav'
+    v2: '.usa-nav'
+  - v1: '.usa-nav-close'
+    v2: '.usa-nav__close'
+  - v1: '.usa-nav-container'
+    v2: '.usa-nav-container'
+  - v1: '.usa-nav-inner'
+    v2: '.usa-nav__inner'
+  - v1: '.usa-nav-link'
+    v2: '.usa-nav__link'
+  - v1: '.usa-nav-primary'
+    v2: '.usa-nav__primary'
+  - v1: '.usa-nav-primary li'
+    v2: '.usa-nav__primary-item'
+  - v1: '.usa-nav-secondary'
+    v2: '.usa-nav__secondary'
+  - v1: '.usa-nav-secondary li'
+    v2: '.usa-nav__secondary-item'
+  - v1: '.usa-nav-secondary-links'
+    v2: '.usa-nav__secondary-links'
+  - v1: '.usa-nav-submenu'
+    v2: '.usa-nav__submenu'
+  - v1: '.usa-nav-submenu li'
+    v2: '.usa-nav__submenu-item'
+  - v1: '.usa-nav-submenu ul'
+    v2: '.usa-nav__submenu-list'
+  - v1: '.usa-navbar'
+    v2: '.usa-navbar'
+  - v1: '.usa-search'
+    v2: '.usa-search'
+
+search:
+  - v1: '.usa-search'
+    v2: '.usa-search'
+  - v1: '.usa-search-big'
+    v2: '.usa-search--big'
+  - v1: '.usa-search-input'
+    v2: '.usa-search__input'
+  - v1: '.usa-search-small'
+    v2: '.usa-search--small'
+  - v1: '.usa-search-submit'
+    v2: '.usa-search__submit'
+  - v1: '.usa-search-submit-text'
+    v2: '.usa-search__submit-text'
+
+section:
+  - v1: '.usa-section-dark'
+    v2: '.usa-section--dark'
+  - v1: '.usa-section-light'
+    v2: '.usa-section--light'
+
+sidenav:
+  - v1: '.usa-layout-docs-sidenav'
+    v2: '.usa-layout-docs__sidenav'
+  - v1: '.usa-sidenav-list'
+    v2: '.usa-sidenav'
+  - v1: '.usa-sidenav-sub_list'
+    v2: '.usa-sidenav__sublist'
+
+skipnav:
+  - v1: '.usa-skipnav'
+    v2: '.usa-skipnav'

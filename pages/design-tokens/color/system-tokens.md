@@ -86,6 +86,7 @@ families:
   - cyan
   - cyan-vivid
   - blue-cool
+  - blue-cool-vivid
   - blue
   - blue-vivid
   - blue-warm

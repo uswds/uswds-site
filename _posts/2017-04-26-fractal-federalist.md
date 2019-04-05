@@ -14,7 +14,7 @@ github_baseurl: https://github.com/uswds/uswds
 category: About USWDS
 ---
 
-<p class="usa-font-lead">
+<p class="site-text-intro">
   We've recently added two powerful tools to our development workflow that
   allow us to preview, test, and publish the Standards code more quickly
   and easily.

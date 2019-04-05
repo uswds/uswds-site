@@ -8,9 +8,6 @@ lead: "Links connect users to a different page or further information."
 
 <!-- Links section begin -->
 
-<p class="usa-font-lead">
-</p>
-
 {% include code/preview.html component="links" %}
 {% include code/accordion.html component="links" %}
 <div class="usa-accordion usa-accordion--bordered site-accordion-docs">

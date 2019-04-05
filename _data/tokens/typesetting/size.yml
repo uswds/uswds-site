@@ -43,20 +43,20 @@ system:
     value: 140px
 theme:
   - token: 3xs
-    default: 1
+    default: 2
   - token: 2xs
     default: 3
   - token: xs
-    default: 5
+    default: 4
   - token: sm
-    default: 6
+    default: 5
   - token: md
-    default: 7
+    default: 6
   - token: lg
-    default: 10
+    default: 9
   - token: xl
     default: 12
   - token: 2xl
     default: 14
   - token: 3xl
-    default: 16
+    default: 15

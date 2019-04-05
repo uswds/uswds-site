@@ -140,7 +140,7 @@ Layout grids give any website visual coherence. The [USWDS 2.0 layout grid](http
 - Designed to be mobile-first and responsive
 
 <div class="margin-top-4 padding-top-3 margin-bottom-1 border-top-05 border-base-lighter">
-  <img src="/img/introducing-uswds-2-0/public-sans-hello.png" alt="Seven ways to say hello — Hi, Hello, Hey, Hola, Howdy, Heya, and Hai — are displayed in the new Public Sans font in various font weights." class="width-full  maxw-full">
+  <img src="/img/introducing-uswds-2-0/public-sans-hello.png" alt="The word Hello displayed in Public Sans as though it were being edited in a font editor." class="width-full  maxw-full">
 </div>
 
 {:.margin-top-0}

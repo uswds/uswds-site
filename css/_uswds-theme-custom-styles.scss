@@ -1145,6 +1145,10 @@ pre {
       display: none;
     }
   }
+  
+  &.lineno {
+    user-select: none;
+  }
 }
 
 a.token {

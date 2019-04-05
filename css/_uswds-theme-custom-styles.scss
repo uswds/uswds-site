@@ -608,7 +608,6 @@ body {
   @include typeset-h6;
   @include u-font('lang', '3xs');
   color: color('black-transparent-60');
-  display: block;
   letter-spacing: letter-spacing(1);
   margin-bottom: units(1);
   margin-top: 0;
@@ -1763,16 +1762,17 @@ iframe {
     margin-top: 0;
   }
 
-  .post-date {
-    letter-spacing: normal;
-    text-transform: none;
-  }
-
   .post-content p {
     margin-bottom: 0;
     margin-top: units(0.5);
   }
 } // .post-excerpt
+
+.post-date {
+  display: block;
+  letter-spacing: normal;
+  text-transform: none;
+}
 
 .post-title {
   @include typeset-h2;
@@ -1918,6 +1918,15 @@ strong {
 li {
   &.display-inline-block {
     margin-bottom: 0;
+  }
+}
+
+.page-introducing-uswds-2-0 {
+  .post-content {
+    img {
+      @include u-maxw(mobile);
+      mix-blend-mode: darken;
+    }
   }
 }
 

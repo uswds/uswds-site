@@ -2,15 +2,18 @@
 <article id="{{ post.id | default: post.title | slugify }}"{% if include.excerpt %} class="post-excerpt padding-top-2 border-top-2px margin-top-4 measure-6"{% endif %}>
   <header class="post-meta">
     <p class="post-category site-subheading">
-      {{ post.category | default: post.tags[0] | default: layout.category }}
+      {{ post.tags[0] }}
     </p>
 
-    <h1 class="post-title font-lang-11 text-light">
+    <h1 class="post-title font-lang-11 tablet:font-lang-14 text-thin">
       {% if include.excerpt %}<a href="{{ site.baseurl }}{{ post.url }}">{% endif %}
       {{ post.title }}
       {% if include.excerpt %}</a>{% endif %}
     </h1>
 
+    {% if post.author %}
+    <span class="post-date site-subheading">By {{ post.author }}</span>
+    {% endif %}
     <time class="post-date site-subheading" datetime="{{ post.date | date: '%FT%T' }}">
       {{ post.date | date: '%B %-d, %Y' }}
     </time>

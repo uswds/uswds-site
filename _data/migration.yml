@@ -1,3 +1,75 @@
+mixins:
+  - v1: All Bourbon functions and mixins
+    v2: deprecated
+    deprecated: true
+  - v1: '@include media()'
+    v2: '@include at-media'
+    token: spacing-units
+  - v1: '@include focus'
+    v2: deprecated
+    deprecated: true
+  - v1: '@include font-smoothing'
+    v2: '@mixin add-knockout-font-smoothing'
+  - v1: '@include allow-layout-classes'
+    v2: deprecated
+    deprecated: true
+  - v1: '@include display-icon()'
+    v2: now uses tokens for spacing units
+  - v1: '@include usa-sidenav-list'
+    v2: '@include nav-list'
+  - v1: '@include usa-sidenav-sublist'
+    v2: '@include nav-sublist'
+
+layout-grid:
+  - v1: .usa-grid
+    v2: .grid-container
+  - v1: .usa-grid-full
+    v2: .grid-container.padding-x-0
+  - v1: .usa-width-one-whole
+    v2: .grid-row-12
+  - v1: .usa-width-one-half
+    v2: .grid-row-6
+  - v1: .usa-width-one-third
+    v2: .grid-row-4
+  - v1: .usa-width-two-thirds
+    v2: .grid-row-8
+  - v1: .usa-width-one-fourth
+    v2: .grid-row-3
+  - v1: .usa-width-three-fourths
+    v2: .grid-row-9
+  - v1: .usa-width-one-sixth
+    v2: .grid-row-2
+  - v1: .usa-width-five-sixths
+    v2: .grid-row-10
+  - v1: .usa-width-one-twelfth
+    v2: .grid-row-1
+  - v1: .usa-width-five-twelfths
+    v2: .grid-row-5
+  - v1: .usa-width-seven-twelfths
+    v2: .grid-row-7
+  - v1: .usa-offset-one-twelfth
+    v2: .grid-offset-1
+  - v1: .usa-offset-one-sixth
+    v2: .grid-offset-2
+  - v1: .usa-offset-one-fourth
+    v2: .grid-offset-3
+  - v1: .usa-offset-one-third
+    v2: .grid-offset-4
+  - v1: .usa-offset-five-twelfths
+    v2: .grid-offset-5
+  - v1: .usa-offset-one-half
+    v2: .grid-offset-6
+  - v1: .usa-offset-seven-twelfths
+    v2: .grid-offset-7
+  - v1: .usa-offset-two-thirds
+    v2: .grid-offset-8
+  - v1: .usa-offset-three-fourths
+    v2: .grid-offset-9
+  - v1: .usa-offset-five-sixths
+    v2: .grid-offset-10
+  - v1: .usa-offset-eleven-twelfths
+    v2: .grid-offset-11
+
 typography:
   - v1: 'a'
     v2: '.usa-link'
@@ -35,12 +107,16 @@ typography:
     v2: '.usa-intro'
   - v1: '.usa-heading-alt'
     v2: 'deprecated: use utilities'
+    deprecated: true
   - v1: '.usa-sans'
     v2: 'deprecated: use utilities'
+    deprecated: true
   - v1: '.usa-serif'
     v2: 'deprecated: use utilities'
+    deprecated: true
   - v1: '.usa-text-small'
     v2: 'deprecated: use utilities'
+    deprecated: true
 
 button:
   - v1: '.usa-button'
@@ -109,6 +185,7 @@ inputs:
     v2: '.usa-memorable-date'
   - v1: '.usa-fieldset-inputs'
     v2: 'deprecated: see new checkbox and radio markup'
+    deprecated: true
   - v1: '.usa-form-group'
     v2: '.usa-form-group'
   - v1: '.usa-form-group-day'
@@ -139,8 +216,10 @@ inputs:
     v2: '.usa-label--required'
   - v1: '.usa-input-optional'
     v2: 'deprecated: use .usa-hint for option text in a .usa-label'
+    deprecated: true
   - v1: '.usa-input-required'
     v2: 'deprecated: no longer recommended'
+    deprecated: true
   - v1: '.usa-input-success'
     v2: '.usa-input--success'
   - v1: '.usa-input-tiny'
@@ -180,8 +259,7 @@ tag:
   - v1: '.usa-label-big'
     v2: '.usa-tag--big'
 
-accordions:
-	major markup changes throughout
+accordion:
   - v1: '.usa-accordion'
     v2: '.usa-accordion'
   - v1: '.usa-accordion-bordered'
@@ -193,7 +271,7 @@ accordions:
   - v1: '—'
     v2: '.usa-accordion__heading'
 
-alerts:
+alert:
   - v1: '.usa-alert'
     v2: '.usa-alert'
   - v1: '.usa-alert-error'
@@ -310,6 +388,7 @@ footer:
     v2: '.usa-footer__secondary-section'
   - v1: '.usa-footer-topic'
     v2: 'deprecated'
+    deprecated: true
   - v1: '.usa-link-facebook'
     v2: '.usa-social-link--facebook'
   - v1: '.usa-link-rss'
@@ -327,9 +406,10 @@ footer:
   - v1: '.usa-social_link'
     v2: '.usa-social-link'
 
-forms:
+form:
   - v1: '.usa-additional_text'
     v2: 'deprecated: not used'
+    deprecated: true
   - v1: '.usa-checklist'
     v2: '.usa-checklist'
   - v1: '.usa-checklist li'
@@ -348,14 +428,18 @@ forms:
     v2: '.usa-input--small'
   - v1: '.usa-input-grid'
     v2: 'deprecated: use grid utilities'
+    deprecated: true
   - v1: '.usa-input-grid-small'
     v2: 'deprecated: use grid utilities'
+    deprecated: true
   - v1: '.usa-input-grid-medium'
     v2: 'deprecated: use grid utilities'
+    deprecated: true
   - v1: '.usa-input-grid-large'
     v2: 'deprecated: use grid utilities'
+    deprecated: true
 
-graphic list:
+graphic-list:
   - v1: '.usa-graphic_list'
     v2: '.usa-graphic-list'
   - v1: '.usa-graphic_list h3'
@@ -396,6 +480,7 @@ hero:
     v2: '.usa-hero__callout-alt'
   - v1: '.usa-hero-link'
     v2: 'deprecated: use utilities'
+    deprecated: true
 
 layout:
   - v1: '.usa-layout-docs-main_content'
@@ -405,7 +490,7 @@ layout:
   - v1: '.usa-layout-docs'
     v2: '.usa-layout-docs'
 
-media block:
+media-block:
   - v1: '.usa-media_block'
     v2: '.usa-media-block'
   - v1: '.usa-media_block-body'
@@ -424,10 +509,12 @@ navigation:
     v2: '.usa-header--extended'
   - v1: '.usa-header-search-button'
     v2: 'deprecated: not used'
+    deprecated: true
   - v1: '.usa-megamenu'
     v2: '.usa-megamenu'
   - v1: '.usa-megamenu-col'
     v2: 'deprecated: use utilities'
+    deprecated: true
   - v1: '.usa-mobile_nav-active'
     v2: '.usa-mobile-nav--active'
   - v1: '.usa-nav'
@@ -460,8 +547,6 @@ navigation:
     v2: '.usa-navbar'
   - v1: '.usa-search'
     v2: '.usa-search'
-  - v1: '—'
-    v2: '.usa-nav__submenu-list-item: doesn't seem to be used anywhere?'
 
 search:
   - v1: '.usa-search'

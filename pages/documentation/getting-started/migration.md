@@ -41,7 +41,7 @@ Every component has changed in some way or another from USWDS v1 to USWDS v2. Th
 - A suite of settings files that use design tokens replace a single `variables`.
 
 ## Integrating tokens
-You can think of a design token as a **key** that unlocks a specific **value**. They are distinct from variables in that they are usually strings or unitless numbers (like `'sm'` or `'2'`) instead of something like `$variable`. Unlike variables, system tokens are constants and not meant to be modified. They aren't included directly in component Sass like `color: $primary`, rather the mechanism by which the final display value is unlocked is a function, mixin, or utility class (like `color: color('primary')`).
+You can think of a design token as a **key** that unlocks a specific **value**. They are distinct from variables in that they are usually strings or unitless numbers (like `'sm'` or `'2'`) instead of something like `$variable`. Unlike variables, system tokens are constants and not meant to be modified. They aren't included directly in component Sass like `color: $primary`, rather the mechanism by which the final display value is unlocked is a function, mixin, or utility class, like `color: color('primary')`.
 
 The [design tokens]({{ site.baseurl }}/design-tokens/) section of the documentation describes how we use design tokens in depth, but here's a simple example:
 

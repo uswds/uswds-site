@@ -4,6 +4,8 @@ description: Design and build fast, accessible, mobile-friendly government websi
 google_analytics_ua: UA-48605964-43
 components_url: 'https://components.designsystem.digital.gov'
 components_url_v2_preview: 'https://federalist-proxy.app.cloud.gov/preview/uswds/uswds/release-2.0/components/preview'
+meta:
+  og:image: /img/uswds-logo/lg-black.png
 
 # this is for pages that don't have a permalink (primarily posts)
 permalink: /whats-new/updates/:year/:month/:day/:title/

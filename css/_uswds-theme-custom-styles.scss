@@ -1145,7 +1145,7 @@ pre {
       display: none;
     }
   }
-  
+
   &.lineno {
     user-select: none;
   }
@@ -1427,20 +1427,7 @@ code {
 
 // External link styles
 #{$external-href} {
-    &::after {
-    background: url('#{$theme-image-path}/external-link.svg') no-repeat 0 0;
-    background-size: 100%;
-    content: '';
-    display: inline-block;
-    height: 0.65em;
-    margin-bottom: -1px;
-    margin-left: units(0.5);
-    width: 0.65em;
-  }
-
-  &:hover::after {
-    background: url('#{$theme-image-path}/external-link-hover.svg') no-repeat 0 0;
-  }
+  @include external-link(external-link, external-link-hover);
 }
 
 .usa-button,

@@ -50,21 +50,15 @@ graphic_list:
     <div class="grid-row grid-gap">
       <div class="tablet:grid-col">
         <img src="{{ site.baseurl }}/img/home/showcase/vote.jpg" alt="">
-        <a href="https://vote.gov/">
-          <h3 class="font-lang-md">vote.gov</h3>
-        </a>
+        <a href="https://vote.gov/">vote.gov</a>
       </div>
       <div class="tablet:grid-col">
         <img src="{{ site.baseurl }}/img/home/showcase/va-healthcare.jpg" alt="">
-        <a href="https://www.va.gov/">
-          <h3 class="font-lang-md">U.S. Department of Veterans Affairs</h3>
-        </a>
+        <a href="https://www.va.gov/">U.S. Department of Veterans Affairs</a>
       </div>
       <div class="tablet:grid-col">
         <img src="{{ site.baseurl }}/img/home/showcase/nasa.jpg" alt="">
-        <a href="https://www1.grc.nasa.gov/">
-          <h3 class="font-lang-md">NASA Glenn Research Center</h3>
-        </a>
+        <a href="https://www1.grc.nasa.gov/">NASA Glenn Research Center</a>
       </div>
     </div>
   </div>
@@ -73,21 +67,15 @@ graphic_list:
     <div class="grid-row grid-gap">
       <div class="tablet:grid-col">
         <img src="{{ site.baseurl }}/img/home/showcase/pubmed.jpg" alt="">
-        <a href="https://www.ncbi.nlm.nih.gov/labs/pubmed/">
-          <h3 class="font-lang-md">PubMed Labs | U.S. National Library of Medicine</h3>
-        </a>
+        <a class="font-lang-md" href="https://www.ncbi.nlm.nih.gov/labs/pubmed/">PubMed Labs | U.S. National Library of Medicine</a>
       </div>
       <div class="tablet:grid-col">
         <img src="{{ site.baseurl }}/img/home/showcase/seedfund.jpg" alt="">
-        <a href="https://seedfund.nsf.gov/">
-          <h3 class="font-lang-md">America’s Seedfund</h3>
-        </a>
+        <a href="https://seedfund.nsf.gov/">America’s Seedfund</a>
       </div>
       <div class="tablet:grid-col">
         <img src="{{ site.baseurl }}/img/home/showcase/plainlanguage.jpg" alt="">
-        <a href="https://plainlanguage.gov/">
-          <h3 class="font-lang-md">Plain Language</h3>
-        </a>
+        <a href="https://plainlanguage.gov/">Plain Language</a>
       </div>
     </div>
   </div>

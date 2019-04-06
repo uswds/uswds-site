@@ -1526,6 +1526,13 @@ code {
   img {
     @include u-shadow(1);
   }
+
+  a {
+    display: inline-block;
+    font-size: font-size('lang', 'md');
+    font-weight: fw('bold');
+    margin-top: units(1);
+  }
 }
 
 .font-display {

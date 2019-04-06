@@ -22,7 +22,7 @@
 <meta name="description" content="{{ desc }}">
 <meta property="og:description" content="{{ desc }}">
 {% endif %}
-<meta name="twitter:card" value="summary_large_image">
+<meta name="twitter:card" value="{% if page.meta contains 'image' %}summary_large_image{% else %}summary{% endif %}">
 <meta name="twitter:site" content="@USWDS">
 <meta property="og:type" content="article">
 {% assign metas = '' | split: '' %}

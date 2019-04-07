@@ -163,8 +163,8 @@ USWDS 2.0 adds built-in support for custom typefaces, and sometimes you need one
 - A consistent alternative to system fonts or other neutral sans serifs
 - Developed for outcome-based continuous improvement just like our components
 - Designed for readability and accessibility
-- Free and open source
 - Features tabular numerals for data design
+- Free and open source
 
 <div class="margin-top-5 margin-bottom-1">
   <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/built-to-grow--alt.jpg" alt="An expanding geometric flower formed from the USWDS logo." class="width-full maxw-full">

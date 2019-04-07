@@ -11,7 +11,7 @@ hero:
 graphic_list:
   list_item:
     - topic: Components
-      description: Discover all the different components that USWDS provides as both design and development assets.
+      description: Browse our complete selection of components, as well as design and implementation guidance.
       image:
         src: img/home/ui-component.svg
         alt:
@@ -27,7 +27,7 @@ graphic_list:
         text: View design tokens
         url: design-tokens
     - topic: Utilities
-      description: Learn how to tweak your designs and deliver prototypes quickly and consistently, without touching a line of CSS.
+      description: Learn how to adapt your designs and deliver prototypes quickly and consistently, without touching a line of CSS.
       image:
         src: img/home/utilities.svg
         alt:
@@ -35,7 +35,7 @@ graphic_list:
         text: Build with utilities
         url: utilities
     - topic: Page templates
-      description: Explore the different page templates that have been created to jump start your product development.
+      description: Use our basic page templates as a starting point for your design and development process.
       image:
         src: img/home/page-templates.svg
         alt:

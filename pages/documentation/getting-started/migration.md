@@ -174,7 +174,7 @@ This is what the HTML markup looks like going from v1 to v2:
 {% include migration-table.html class='checklist' %}
 
 ### Footer
-{% include migration-table.html class='checklist' %}
+{% include migration-table.html class='footer' %}
 
 ### Form controls
 {% include migration-table.html class='form' %}

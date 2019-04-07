@@ -3087,3 +3087,7 @@ body {
     background-position: left calc(50% + #{units('card-lg')}) top units('105');
   }
 }
+
+.post-content h2 {
+  line-height: lh('lang', 2);
+}

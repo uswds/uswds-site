@@ -16,8 +16,8 @@ graphic_list:
         src: img/home/get-started.svg
         alt:
       link:
-        text: Take the first step
-        url: documentation
+        text: View design tokens
+        url: design-tokens
     - topic: Components
       description: Discover all the different components that USWDS provides as both design and development assets.
       image:
@@ -32,8 +32,8 @@ graphic_list:
         src: img/home/new.svg
         alt:
       link:
-        text: See what’s new
-        url: whats-new
+        text: Build with utilities
+        url: utilities
     - topic: Page templates
       description: Explore the different page templates that have been created to jump start your product development.
       image:

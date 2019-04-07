@@ -71,7 +71,7 @@ graphic_list:
       </div>
       <div class="tablet:grid-col">
         <img src="{{ site.baseurl }}/img/home/showcase/seedfund.jpg" alt="">
-        <a href="https://seedfund.nsf.gov/">America’s Seedfund</a>
+        <a href="https://seedfund.nsf.gov/">America’s Seed Fund</a>
       </div>
       <div class="tablet:grid-col">
         <img src="{{ site.baseurl }}/img/home/showcase/plainlanguage.jpg" alt="">

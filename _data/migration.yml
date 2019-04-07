@@ -575,6 +575,8 @@ sidenav:
     v2: '.usa-sidenav'
   - v1: '.usa-sidenav-sub_list'
     v2: '.usa-sidenav__sublist'
+  - v1: '.usa-sidenav li'
+    v2: '.usa-sidenav__item'
 
 skipnav:
   - v1: '.usa-skipnav'

@@ -34,7 +34,7 @@ subnav:
   href: '#version-200-alpha'
 ---
 {:.site-text-intro}
-USWDS 2.0 is a major rewrite of the entire project. Migration can be difficult. The most notable changes are summarized below, followed by more specific changes to relevant components.
+USWDS 2.0 is a major rewrite of the entire codebase and migration can be complicated. We’ve outlined the high-level changes any project will need to implement, followed by more specific component changes and complete release notes from each related release.
 
 {: .site-note }
 **Note:** If you're migrating, expect that every USWDS component on your site will change, and that USWDS v1 functions, mixins, and variables will not work as expected. We will expand and improve this page as we learn from teams that have migrated their own projects.

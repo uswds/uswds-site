@@ -1535,7 +1535,12 @@ code {
     display: inline-block;
     font-size: font-size('lang', 'md');
     font-weight: fw('bold');
+    margin-bottom: units(4);
     margin-top: units(1);
+
+    @include at-media('tablet') {
+      margin-bottom: 0;
+    }
   }
 }
 

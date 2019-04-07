@@ -46,8 +46,8 @@ graphic_list:
 
 <section class="usa-section bg-base-lightest showcase">
   <div class="grid-container">
-    <h2 class="font-lang-xl margin-y-0">Showcase</h2>
-    <div class="grid-row grid-gap">
+    <h2 class="font-lang-xl margin-y-0 line-height-serif-2">Showcase</h2>
+    <div class="grid-row grid-gap tablet:margin-top-3">
       <div class="tablet:grid-col">
         <img src="{{ site.baseurl }}/img/home/showcase/vote.jpg" alt="">
         <a href="https://vote.gov/">vote.gov</a>
@@ -63,7 +63,7 @@ graphic_list:
     </div>
   </div>
 
-  <div class="grid-container margin-top-6">
+  <div class="grid-container tablet:margin-top-6">
     <div class="grid-row grid-gap">
       <div class="tablet:grid-col">
         <img src="{{ site.baseurl }}/img/home/showcase/pubmed.jpg" alt="">

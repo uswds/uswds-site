@@ -13,7 +13,7 @@ graphic_list:
     - topic: Design tokens
       description: Learn how to get started using design tokens, the common building blocks of visual design decisions.
       image:
-        src: img/home/get-started.svg
+        src: img/home/design-tokens.svg
         alt:
       link:
         text: View design tokens
@@ -29,7 +29,7 @@ graphic_list:
     - topic: Utilities
       description: Learn how to tweak your designs and deliver prototypes quickly and consistently, without touching a line of CSS.
       image:
-        src: img/home/new.svg
+        src: img/home/utilities.svg
         alt:
       link:
         text: Build with utilities

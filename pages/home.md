@@ -10,14 +10,6 @@ hero:
   content: Design and build fast, accessible, mobile-friendly government websites backed by user research.
 graphic_list:
   list_item:
-    - topic: Design tokens
-      description: Learn how to get started using design tokens, the common building blocks of visual design decisions.
-      image:
-        src: img/home/design-tokens.svg
-        alt:
-      link:
-        text: View design tokens
-        url: design-tokens
     - topic: Components
       description: Discover all the different components that USWDS provides as both design and development assets.
       image:
@@ -26,6 +18,14 @@ graphic_list:
       link:
         text: Browse the components
         url: components
+    - topic: Design tokens
+      description: Learn how to get started using design tokens, the common building blocks of visual design decisions.
+      image:
+        src: img/home/design-tokens.svg
+        alt:
+      link:
+        text: View design tokens
+        url: design-tokens
     - topic: Utilities
       description: Learn how to tweak your designs and deliver prototypes quickly and consistently, without touching a line of CSS.
       image:

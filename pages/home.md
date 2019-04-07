@@ -11,7 +11,7 @@ hero:
 graphic_list:
   list_item:
     - topic: Components
-      description: Browse our complete selection of components, as well as design and implementation guidance.
+      description: Browse all USWDS components and get UX, accessibility, and implementation guidance.
       image:
         src: img/home/ui-component.svg
         alt:
@@ -19,7 +19,7 @@ graphic_list:
         text: Browse the components
         url: components
     - topic: Design tokens
-      description: Learn how to get started using design tokens, the common building blocks of visual design decisions.
+      description: Learn how to get started using design tokens, the building blocks of USWDS component design.
       image:
         src: img/home/design-tokens.svg
         alt:
@@ -27,7 +27,7 @@ graphic_list:
         text: View design tokens
         url: design-tokens
     - topic: Utilities
-      description: Learn how to adapt your designs and deliver prototypes quickly and consistently, without touching a line of CSS.
+      description: Adapt your designs and deliver prototypes quickly and consistently, without touching a line of CSS.
       image:
         src: img/home/utilities.svg
         alt:

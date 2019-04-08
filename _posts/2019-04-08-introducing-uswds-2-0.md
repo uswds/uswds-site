@@ -59,7 +59,7 @@ You don’t need to totally redesign your existing site to [get started with USW
 {:.margin-top-1.text-light}
 ### A common language for designers and developers
 
-Design and development are all about decision making. Making decisions and communicating these details with the team takes time and has a cost, both in money and energy. [USWDS 2.0 design tokens](https://v2.designsystem.digital.gov/design-tokens/) are the common building blocks of visual design decisions (like color, typescale, and spacing units) that all USWDS projects share. Using a design token means that designers and developers spend more time solving problems, and less time fussing over pixels, eyedroppering hex codes, and redlining.
+Design and development are all about decision making. Making decisions and communicating these details with the team takes time and has a cost, both in money and energy. [USWDS 2.0 design tokens](https://v2.designsystem.digital.gov/design-tokens/) are the common building blocks of visual design decisions (like color, typescale, and spacing units) that all USWDS projects share. By using design tokens, designers and developers spend more time solving problems and less time fussing over pixels, eyedroppering hex codes, and redlining.
 
 {:.margin-left-neg-205}
 - Design tokens are a common language between designers and developers

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="504" height="113" viewBox="0 0 504 113">
+  <defs>
+    <linearGradient id="accessible-color-system-long-a" x1="2.669%" x2="100%" y1="98.25%" y2="98.25%">
+      <stop offset="0%" stop-color="#E1E7F1"/>
+      <stop offset="68.342%" stop-color="#E3837A"/>
+      <stop offset="100%" stop-color="#E52207"/>
+    </linearGradient>
+    <linearGradient id="accessible-color-system-long-b" x1="0%" x2="100%" y1="98.25%" y2="98.25%">
+      <stop offset="0%" stop-color="#E1E7F1"/>
+      <stop offset="100%" stop-color="#805039"/>
+    </linearGradient>
+    <linearGradient id="accessible-color-system-long-c" x1="0%" x2="100%" y1="98.25%" y2="98.25%">
+      <stop offset="0%" stop-color="#E1E7F1"/>
+      <stop offset="100%" stop-color="#0050D8"/>
+    </linearGradient>
+    <linearGradient id="accessible-color-system-long-d" x1="0%" x2="100%" y1="98.25%" y2="98.25%">
+      <stop offset="0%" stop-color="#E1E7F1"/>
+      <stop offset="100%" stop-color="#2672DE"/>
+    </linearGradient>
+    <linearGradient id="accessible-color-system-long-e" x1="0%" x2="100%" y1="98.25%" y2="98.25%">
+      <stop offset="0%" stop-color="#E1E7F1"/>
+      <stop offset="100%" stop-color="#162E51"/>
+    </linearGradient>
+    <linearGradient id="accessible-color-system-long-f" x1="0%" x2="100%" y1="98.25%" y2="98.25%">
+      <stop offset="0%" stop-color="#E1E7F1"/>
+      <stop offset="100%" stop-color="#332D29"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path stroke="#DBDEE1" stroke-dasharray="1 2" stroke-linecap="round" d="M1 .716981132L1 74.5660377M57 .716981132L57 74.5660377M113 .716981132L113 74.5660377M170 .716981132L170 74.5660377M29 .716981132L29 74.5660377M85 .716981132L85 74.5660377M141 .716981132L141 74.5660377M198 .716981132L198 74.5660377M225 .716981132L225 74.5660377" transform="translate(13 10)"/>
+    <path stroke="#DBDEE1" stroke-dasharray="1 2" stroke-linecap="round" d="M1 .716981132L1 74.5660377M57 .716981132L57 74.5660377M113 .716981132L113 74.5660377M170 .716981132L170 74.5660377M29 .716981132L29 74.5660377M85 .716981132L85 74.5660377M141 .716981132L141 74.5660377M198 .716981132L198 74.5660377M225 .716981132L225 74.5660377" transform="translate(265 10)"/>
+    <rect width="24" height="24" x="142" y="29" fill="#0050D8" rx="2"/>
+    <g transform="matrix(-1 0 0 1 494 56)">
+      <g transform="translate(104)">
+        <rect width="24" height="24" fill="#D63E04" rx="2"/>
+        <path fill="#E1E7F1" fill-rule="nonzero" d="M2.095,17 L5.721,6.878 L7.877,6.878 L11.489,17 L9.459,17 L8.633,14.648 L4.993,14.648 L4.139,17 L2.095,17 Z M5.441,12.87 L8.143,12.87 L6.799,8.852 L5.441,12.87 Z M12.525,17 L16.151,6.878 L18.307,6.878 L21.919,17 L19.889,17 L19.063,14.648 L15.423,14.648 L14.569,17 L12.525,17 Z M15.871,12.87 L18.573,12.87 L17.229,8.852 L15.871,12.87 Z"/>
+      </g>
+      <path stroke="url(#accessible-color-system-long-a)" stroke-linecap="square" d="M104,11.5 L4,11.5"/>
+      <circle cx="4" cy="12" r="3.5" fill="#F4E3DB" stroke="#FFF"/>
+      <circle cx="32" cy="12" r="3.5" fill="#E2B9BA" stroke="#FFF"/>
+      <circle cx="60" cy="12" r="3.5" fill="#E38E88" stroke="#FFF"/>
+      <circle cx="88" cy="12" r="3.5" fill="#E44531" stroke="#FFF"/>
+    </g>
+    <g transform="matrix(-1 0 0 1 494 29)">
+      <g transform="translate(132)">
+        <rect width="24" height="24" fill="#805039" rx="2"/>
+        <path fill="#E1E7F1" fill-rule="nonzero" d="M5.225,16 L7.845,8.77 L8.865,8.77 L11.475,16 L10.565,16 L9.845,14.01 L6.865,14.01 L6.135,16 L5.225,16 Z M7.095,13.18 L9.605,13.18 L8.355,9.66 L7.095,13.18 Z M12.535,16 L15.155,8.77 L16.175,8.77 L18.785,16 L17.875,16 L17.155,14.01 L14.175,14.01 L13.445,16 L12.535,16 Z M14.405,13.18 L16.915,13.18 L15.665,9.66 L14.405,13.18 Z"/>
+      </g>
+      <path stroke="url(#accessible-color-system-long-b)" stroke-linecap="square" d="M133.5,11.5 L4,11.5"/>
+      <circle cx="4" cy="12" r="3.5" fill="#F4E3DB" stroke="#FFF"/>
+      <circle cx="32" cy="12" r="3.5" fill="#C7BEBF" stroke="#FFF"/>
+      <circle cx="60" cy="12" r="3.5" fill="#B39F99" stroke="#FFF"/>
+      <circle cx="88" cy="12" r="3.5" fill="#9E7F73" stroke="#FFF"/>
+      <circle cx="116" cy="12" r="3.5" fill="#8A604C" stroke="#FFF"/>
+    </g>
+    <rect width="24" height="24" x="198" y="2" fill="#162E51" rx="2"/>
+    <circle cx="14" cy="14" r="3.5" fill="#E1E7F1" stroke="#FFF"/>
+    <circle cx="14" cy="41" r="3.5" fill="#E1E7F1" stroke="#FFF"/>
+    <circle cx="14" cy="68" r="3.5" fill="#E1E7F1" stroke="#FFF"/>
+    <path stroke="url(#accessible-color-system-long-c)" stroke-linecap="square" d="M143.5,40.5 L16,40.5"/>
+    <rect width="24" height="24" x="114" y="56" fill="#2672DE" rx="2"/>
+    <path stroke="url(#accessible-color-system-long-d)" stroke-linecap="square" d="M118.5,67.5 L15,67.5"/>
+    <path stroke="url(#accessible-color-system-long-e)" stroke-linecap="square" d="M199,13.5 L15,13.5"/>
+    <path fill="#E1E7F1" fill-rule="nonzero" d="M1.095,14 L4.721,3.878 L6.877,3.878 L10.489,14 L8.459,14 L7.633,11.648 L3.993,11.648 L3.139,14 L1.095,14 Z M4.441,9.87 L7.143,9.87 L5.799,5.852 L4.441,9.87 Z M11.525,14 L15.151,3.878 L17.307,3.878 L20.919,14 L18.889,14 L18.063,11.648 L14.423,11.648 L13.569,14 L11.525,14 Z M14.871,9.87 L17.573,9.87 L16.229,5.852 L14.871,9.87 Z" transform="translate(115 59)"/>
+    <path fill="#E1E7F1" fill-rule="nonzero" d="M1.225,10 L3.845,2.77 L4.865,2.77 L7.475,10 L6.565,10 L5.845,8.01 L2.865,8.01 L2.135,10 L1.225,10 Z M3.095,7.18 L5.605,7.18 L4.355,3.66 L3.095,7.18 Z M8.535,10 L11.155,2.77 L12.175,2.77 L14.785,10 L13.875,10 L13.155,8.01 L10.175,8.01 L9.445,10 L8.535,10 Z M10.405,7.18 L12.915,7.18 L11.665,3.66 L10.405,7.18 Z" transform="translate(146 35)"/>
+    <path fill="#E1E7F1" fill-rule="nonzero" d="M0.57,10 L3.19,2.77 L4.21,2.77 L6.82,10 L5.91,10 L5.19,8.01 L2.21,8.01 L1.48,10 L0.57,10 Z M2.44,7.18 L4.95,7.18 L3.7,3.66 L2.44,7.18 Z M7.88,10 L10.5,2.77 L11.52,2.77 L14.13,10 L13.22,10 L12.5,8.01 L9.52,8.01 L8.79,10 L7.88,10 Z M9.75,7.18 L12.26,7.18 L11.01,3.66 L9.75,7.18 Z M15.19,10 L17.81,2.77 L18.83,2.77 L21.44,10 L20.53,10 L19.81,8.01 L16.83,8.01 L16.1,10 L15.19,10 Z M17.06,7.18 L19.57,7.18 L18.32,3.66 L17.06,7.18 Z" transform="translate(199 8)"/>
+    <circle cx="42" cy="14" r="3.5" fill="#B7CAF0" stroke="#FFF"/>
+    <circle cx="70" cy="14" r="3.5" fill="#81AEFC" stroke="#FFF"/>
+    <circle cx="98" cy="14" r="3.5" fill="#5994F6" stroke="#FFF"/>
+    <circle cx="126" cy="14" r="3.5" fill="#2672DE" stroke="#FFF"/>
+    <circle cx="154" cy="14" r="3.5" fill="#0050D8" stroke="#FFF"/>
+    <circle cx="183" cy="14" r="3.5" fill="#162E51" stroke="#FFF"/>
+    <circle cx="42" cy="41" r="3.5" fill="#B7CAF0" stroke="#FFF"/>
+    <circle cx="70" cy="41" r="3.5" fill="#81AEFC" stroke="#FFF"/>
+    <circle cx="98" cy="41" r="3.5" fill="#5994F6" stroke="#FFF"/>
+    <circle cx="126" cy="41" r="3.5" fill="#2672DE" stroke="#FFF"/>
+    <circle cx="42" cy="68" r="3.5" fill="#B7CAF0" stroke="#FFF"/>
+    <circle cx="70" cy="68" r="3.5" fill="#81AEFC" stroke="#FFF"/>
+    <circle cx="98" cy="68" r="3.5" fill="#5994F6" stroke="#FFF"/>
+    <rect width="24" height="24" x="2" y="88" fill="#E1E7F1" rx="2"/>
+    <rect width="24" height="24" x="478" y="88" fill="#F4E3DB" rx="2"/>
+    <rect width="24" height="24" x="30" y="88" fill="#B7CAF0" rx="2"/>
+    <rect width="24" height="24" x="58" y="88" fill="#81AEFC" rx="2"/>
+    <rect width="24" height="24" x="86" y="88" fill="#5994F6" rx="2"/>
+    <rect width="24" height="24" x="114" y="88" fill="#2672DE" rx="2"/>
+    <rect width="24" height="24" x="142" y="88" fill="#0050D8" rx="2"/>
+    <rect width="24" height="24" x="170" y="88" fill="#1A4480" rx="2"/>
+    <rect width="24" height="24" x="198" y="88" fill="#162E51" rx="2"/>
+    <rect width="24" height="24" x="226" y="88" fill="#13171F" rx="2"/>
+    <rect width="24" height="24" x="450" y="88" fill="#F6BD9C" rx="2"/>
+    <rect width="24" height="24" x="422" y="88" fill="#F39268" rx="2"/>
+    <rect width="24" height="24" x="394" y="88" fill="#EE601D" rx="2"/>
+    <rect width="24" height="24" x="366" y="88" fill="#D63E04" rx="2"/>
+    <rect width="24" height="24" x="338" y="88" fill="#805039" rx="2"/>
+    <rect width="24" height="24" x="310" y="88" fill="#524236" rx="2"/>
+    <rect width="24" height="24" x="282" y="88" fill="#332D29" rx="2"/>
+    <rect width="24" height="24" x="254" y="88" fill="#1F1C18" rx="2"/>
+    <g transform="matrix(-1 0 0 1 494 2)">
+      <rect width="24" height="24" x="188.43" y=".23" fill="#332D29" rx="2"/>
+      <path fill="#E1E7F1" fill-rule="nonzero" d="M190,16.23 L192.62,9 L193.64,9 L196.25,16.23 L195.34,16.23 L194.62,14.24 L191.64,14.24 L190.91,16.23 L190,16.23 Z M191.87,13.41 L194.38,13.41 L193.13,9.89 L191.87,13.41 Z M197.31,16.23 L199.93,9 L200.95,9 L203.56,16.23 L202.65,16.23 L201.93,14.24 L198.95,14.24 L198.22,16.23 L197.31,16.23 Z M199.18,13.41 L201.69,13.41 L200.44,9.89 L199.18,13.41 Z M204.62,16.23 L207.24,9 L208.26,9 L210.87,16.23 L209.96,16.23 L209.24,14.24 L206.26,14.24 L205.53,16.23 L204.62,16.23 Z M206.49,13.41 L209,13.41 L207.75,9.89 L206.49,13.41 Z"/>
+      <path stroke="url(#accessible-color-system-long-f)" stroke-linecap="square" d="M187.969062,11.73 L4.43,11.73"/>
+      <circle cx="4.43" cy="12.23" r="3.5" fill="#F4E3DB" stroke="#FFF"/>
+      <circle cx="32.43" cy="12.23" r="3.5" fill="#C0C4CB" stroke="#FFF"/>
+      <circle cx="60.43" cy="12.23" r="3.5" fill="#A7A9AE" stroke="#FFF"/>
+      <circle cx="88.43" cy="12.23" r="3.5" fill="#8C8C90" stroke="#FFF"/>
+      <circle cx="116.43" cy="12.23" r="3.5" fill="#727072" stroke="#FFF"/>
+      <circle cx="144.43" cy="12.23" r="3.5" fill="#575453" stroke="#FFF"/>
+      <circle cx="172.43" cy="12.23" r="3.5" fill="#3E3835" stroke="#FFF"/>
+    </g>
+  </g>
+</svg>

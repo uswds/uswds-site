@@ -34,10 +34,10 @@ subnav:
   href: '#version-200-alpha'
 ---
 {:.site-text-intro}
-USWDS 2.0 is a major rewrite of the entire project. Migration can be difficult. The most notable changes are summarized below, followed by more specific changes to relevant components.
+USWDS 2.0 is a major rewrite of the entire codebase and migration can be complicated. We’ve outlined the high-level changes any project will need to implement, followed by more specific component changes and complete release notes from each related release.
 
 {: .site-note }
-**Note:** If you're migrating, expect that every USWDS component on your site will change, and that USWDS v1 functions, mixins, and variables will not work as expected. We will expand and improve this page as we learn from teams that have migrated their own projects.
+**Note:** If you're migrating, expect that every USWDS component on your site will change, and that USWDS v1 functions, mixins, and variables will not work as expected. We will expand and improve this page as we learn from teams that are migrating their own projects. Leave feedback and make suggestions at this site’s [GitHub page](https://github.com/uswds/uswds-site).
 
 ## Summary
 Every component has changed in some way or another from USWDS v1 to USWDS v2. There are also some important conceptual differences in v2 — most notably, the introduction of [design tokens]({{ site.baseurl }}//design-tokens/) which, in most cases, are used somewhat differently from v1 variables. Design tokens are at the core of the USWDS 2.0 design language and we expect that sites will transition toward using these tokens exclusively for their projects, though this may be an incremental process.

@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70"><title>ui-component</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><circle cx="35" cy="35" r="35" fill="#e31c3d"/><ellipse cx="26.87" cy="44.01" rx="3.59" ry="3.67" fill="#e94964" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/><path d="M43.18,50.54H26.87a6.49,6.49,0,0,1,0-13H43.18a6.49,6.49,0,0,1,0,13Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/><path d="M26.87,21.56H43.18a6.49,6.49,0,0,1,0,13H26.87a6.49,6.49,0,0,1,0-13Z" fill="#e94964" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="43.18" cy="28.09" rx="3.59" ry="3.67" fill="#e31c3d" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="35" cy="35" r="35" fill="#D83933"/>
+    <ellipse cx="26.87" cy="44.01" fill="#E9695F" fill-rule="nonzero" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" rx="3.59" ry="3.67"/>
+    <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" d="M43.18,50.54 L26.87,50.54 C23.2801491,50.54 20.37,47.6298509 20.37,44.04 C20.37,40.4501491 23.2801491,37.54 26.87,37.54 L43.18,37.54 C46.7698509,37.54 49.68,40.4501491 49.68,44.04 C49.68,47.6298509 46.7698509,50.54 43.18,50.54 Z"/>
+    <path fill="#E9695F" fill-rule="nonzero" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" d="M26.87,21.56 L43.18,21.56 C46.7698509,21.56 49.68,24.4701491 49.68,28.06 C49.68,31.6498509 46.7698509,34.56 43.18,34.56 L26.87,34.56 C23.2801491,34.56 20.37,31.6498509 20.37,28.06 C20.37,24.4701491 23.2801491,21.56 26.87,21.56 L26.87,21.56 Z"/>
+    <ellipse cx="43.18" cy="28.09" fill="#D83933" fill-rule="nonzero" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" rx="3.59" ry="3.67"/>
+  </g>
+</svg>

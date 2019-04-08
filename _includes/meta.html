@@ -22,7 +22,7 @@
 <meta name="description" content="{{ desc }}">
 <meta property="og:description" content="{{ desc }}">
 {% endif %}
-<meta name="twitter:card" value="{% if page.meta contains 'image' %}summary_large_image{% else %}summary{% endif %}">
+<meta name="twitter:card" value="{% if page.meta contains 'og:image' %}summary_large_image{% else %}summary{% endif %}">
 <meta name="twitter:site" content="@USWDS">
 <meta property="og:type" content="article">
 {% assign metas = '' | split: '' %}
@@ -31,7 +31,7 @@
 {% assign metas = metas | unique %}
 {% for meta in metas -%}
   {% assign val = page.meta[meta] | default: site.meta[meta] %}
-  {% if meta contains 'image' %}{% assign val = val | absolute_url %}{% endif %}
+  {% if meta contains 'og:image' %}{% assign val = val | absolute_url %}{% endif %}
   <meta property="{{ meta }}" content="{{ val | xml_escape }}">
 {% endfor %}
 {% if site.url %}

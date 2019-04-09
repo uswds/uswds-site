@@ -16,12 +16,12 @@
     {% endif %}
       <tr>
         <td scope="row" data-title="USWDS 1.x">
-          <span{% if class.deprecated %} class="text-secondary"{% endif %}>
+          <span{% if class.deprecated %} class="text-secondary-vivid"{% endif %}>
             {{ class.v1 }}
           </span>
         </td>
         <td scope="row" data-title="USWDS 2.0">
-          <span{% if class.deprecated %} class="text-secondary"{% endif %}>
+          <span{% if class.deprecated %} class="text-secondary-vivid"{% endif %}>
             {% if variant %}<span class="text-light text-primary">{{ base }}</span>{% endif %}{{ class.v2 }}
           </span>
         </td>

@@ -19,7 +19,7 @@ subnav:
   href: '#lists'
 ---
 
-<h2>Typesetting with USWDS</h2>
+<h2 id="typesetting-with-uswds">Typesetting with USWDS</h2>
 <p>Typesetting controls the readability of a text with the size, style, and spacing of its type. It’s a function of microtypography (how text is styled within a text block) and macrotypography (how content elements are arranged on the page). The more readable a text the more easily users can understand its content. Text with poor readability turns off readers and can make it challenging for them to stay focused.</p>
 <p>In USWDS we control typesetting values with a token system. You can read more about typesetting tokens in the <a href="{{ site.baseurl }}/design-tokens/typesetting/">Typesetting tokens</a> section and in the <a href="{{ site.baseurl }}/utilities/">Utilities</a> section.</p>
 <p><a href="https://accessibility.digital.gov/visual-design/typography/"> Accessibility for Teams</a> also provides good guidance around typesetting.</p>
@@ -94,7 +94,7 @@ Letterspacing is the spacing between individual letterforms in a block of text. 
 - **Very large text can use tighter letterspacing.** Tighter letterspacing can improve large headings. Headings of [font-size 9+]({{ site.baseurl }}/design-tokens/typesetting/font-size/){:.token} could use [letterspacing -1]({{ site.baseurl }}/design-tokens/typesetting/letterspacing/){:.token}. Headings of [font-size 12+]({{ site.baseurl }}/design-tokens/typesetting/font-size/){:.token} could use [letterspacing -2]({{ site.baseurl }}/design-tokens/typesetting/letterspacing/){:.token}. Headings of [font-size 17+]({{ site.baseurl }}/design-tokens/typesetting/font-size/){:.token} could use [letterspacing -3]({{ site.baseurl }}/design-tokens/typesetting/letterspacing/){:.token}.
 - **Text set in uppercase or small caps should use looser letterspacing.** Uppercase text and small caps can appear too tight with normal letterspacing. Consider using [letterspacing 1]({{ site.baseurl }}/design-tokens/typesetting/letterspacing/){:.token} with uppercase buttons, and [letterspacing 2-3]({{ site.baseurl }}/design-tokens/typesetting/letterspacing/){:.token} with longer stretches of uppercase or small cap text (like acronyms or section intros).
 
-<h2>Included typefaces</h2>
+<h2 id="included-typefaces">Included typefaces</h2>
 <h3 class="usa-heading-alt">Source Sans Pro</h3>
 <div class="grid-row grid-gap">
   <div class="tablet:grid-col usa-prose site-prose">

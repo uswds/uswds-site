@@ -10,6 +10,10 @@ lead: Accessibility tips to help you deliver delightful experiences to all users
 order: 25
 ---
 
+## Accessibility for Teams
+
+Everyone who works on government websites has a role to play in making federal resources accessible and inclusive. Visit [Accessibility for Teams](https://accessibility.digital.gov/) to learn how to embed accessibility and inclusive design practices into your team’s workflow. Read more: [Introducing Accessibility for Teams](https://18f.gsa.gov/2018/07/10/introducing-accessibility-for-teams/).
+
 ## Hiding and showing content
 
 There will be cases in which you will need to selectively "show" and "hide"

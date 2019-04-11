@@ -8,12 +8,12 @@ title: Form controls
 category: Components
 lead: Form controls allow users to enter information into a page.
 subnav:
-- text: Text inputs and area
+- text: Text input
   href: '#text-input'
 - text: Dropdown
   href: '#dropdown'
-- text: Checkboxes
-  href: '#checkboxes'
+- text: Checkbox
+  href: '#checkbox'
 - text: Radio buttons
   href: '#radio-buttons'
 - text: Date input

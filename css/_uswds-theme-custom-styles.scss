@@ -169,6 +169,22 @@ body {
   }
 }
 
+.navbar__search {
+  .usa-input {
+    @include at-media('desktop') {
+      background-color: color('blue-warm-90');
+      color: color('white');
+      height: 39px;
+    }
+  }
+
+  .usa-button {
+    @include at-media('desktop') {
+      height: 39px;
+    }
+  }
+}
+
 .site-banner {
   background-color: color('gray-90');
 
@@ -2262,14 +2278,35 @@ h6 + div:not(.usa-accordion__content) {
 .site-header {
   .usa-button {
     background-color: color($site-primary-vivid);
+
     &:hover {
       background-color: color('blue-warm-60v');
     }
   }
+
   .usa-button--outline-inverse {
     background-color: transparent;
+    margin-right: 0;
+
     &:hover {
       background-color: transparent;
+    }
+  }
+
+  .navbar--container {
+    @include at-media('desktop') {
+      align-items: center;
+      display: flex;
+      float: right;
+      height: units(10);
+    }
+
+    .usa-button {
+      display: none;
+
+      @include at-media('desktop') {
+        display: initial;
+      }
     }
   }
 }
@@ -2318,7 +2355,7 @@ h6 + div:not(.usa-accordion__content) {
   }
 }
 
-.site-button-list {
+.usa-nav__inner {
   margin-bottom: 0;
 
   .usa-button {
@@ -2375,6 +2412,7 @@ h6 + div:not(.usa-accordion__content) {
       }
     }
   }
+
   .usa-button.site-button-outline-secondary {
     @include inner-border($site-border-width, 'white-transparent-70');
     background-color: color('transparent');
@@ -2388,6 +2426,10 @@ h6 + div:not(.usa-accordion__content) {
       @include inner-border($site-border-width, 'white');
       background-color: transparent;
       color: color('white');
+    }
+
+    @include at-media('desktop') {
+      margin-right: units(4);
     }
   }
 }

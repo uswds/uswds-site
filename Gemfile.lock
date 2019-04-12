@@ -12,6 +12,7 @@ GEM
     eventmachine (1.2.7)
     ffi (1.10.0)
     forwardable-extended (2.6.0)
+    htmlentities (4.3.4)
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
@@ -34,6 +35,12 @@ GEM
       sass (~> 3.4)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
+    jekyll_pages_api (0.1.6)
+      htmlentities (~> 4.3)
+      jekyll (>= 2.0, < 4.0)
+    jekyll_pages_api_search (0.5.0)
+      jekyll_pages_api (~> 0.1.4)
+      sass (~> 3.4)
     json (2.2.0)
     kramdown (1.17.0)
     liquid (4.0.3)
@@ -69,6 +76,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (>= 3.8.4)
   jekyll-redirect-from (>= 0.13.0)
+  jekyll_pages_api_search
   json
   rspec-core
   rspec-expectations

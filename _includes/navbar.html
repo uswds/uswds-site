@@ -11,7 +11,18 @@
       </em>
     </div>
     <button class="usa-menu-btn">Menu</button>
-    {% include download-buttons.html %}
+    <div class="navbar--container">
+      <form class="navbar__search usa-search usa-search--small desktop:margin-right-2 display-none desktop:display-inline-block float-none text-middle" action="{{ site.baseurl }}/search/">
+        <div role="search">
+          <label class="usa-sr-only" for="search-input">Search</label>
+          <input class="usa-input" id="search-input" type="search" name="q">
+          <button class="usa-button" type="submit">
+            <span class="usa-sr-only">Search</span>
+          </button>
+        </div>
+      </form>
+      {% include download-buttons.html %}
+    </div>
   </div>
 </header>
 <nav class="site-nav-secondary sticky">
@@ -31,6 +42,15 @@
   <button class="usa-nav__close">
     <span class="usa-sr-only">Close</span>
   </button>
+  <form class="usa-search usa-search--small desktop:margin-right-4" action="{{ site.baseurl }}/search/">
+    <div role="search">
+      <label class="usa-sr-only" for="search-field-small2">Search</label>
+      <input class="usa-input" id="search-field-small2" type="search" name="q">
+      <button class="usa-button margin-top-0" type="submit">
+        <span class="usa-sr-only">Search</span>
+      </button>
+    </div>
+  </form>
   <div class="usa-nav__inner">
     <ul class="usa-nav__primary usa-accordion">
       {% include nav/sections.html sections=site.data.nav.mobile %}

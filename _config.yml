@@ -22,15 +22,15 @@ incremental_regeneration_fixer:
 
 jekyll_get:
   - data: releases
-    json: 'https://api.github.com/repos/uswds/uswds/releases'
+    json: 'https://api.github.com/repos/uswds/uswds/releases?ref=release-2.0.1'
   - data: contributing
-    json: 'https://api.github.com/repos/uswds/uswds/contents/CONTRIBUTING.md'
+    json: 'https://api.github.com/repos/uswds/uswds/contents/CONTRIBUTING.md?ref=release-2.0.1'
     decode_content: true
   - data: install-readme
-    json: 'https://api.github.com/repos/uswds/uswds/contents/README.md?ref=master'
+    json: 'https://api.github.com/repos/uswds/uswds/contents/README.md?ref=release-2.0.1'
     decode_content: true
   - data: standards-sites
-    json: 'https://api.github.com/repos/uswds/uswds/contents/docs/WHO_IS_USING_USWDS.md'
+    json: 'https://api.github.com/repos/uswds/uswds/contents/docs/WHO_IS_USING_USWDS.md?ref=release-2.0.1'
     decode_content: true
 
 repos:

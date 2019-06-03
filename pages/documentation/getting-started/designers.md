@@ -8,7 +8,7 @@ redirect_from:
   - /getting-started/designers/
 ---
 
-See the [style]({{ site.baseurl }}/design-tokens/) section for more on USWDS system styles and palettes.
+See the [design tokens]({{ site.baseurl }}/design-tokens/) section for more on USWDS system styles and palettes.
 
 As a complement to this visual style guidance, we strongly recommend you use [18F’s Content Guide](https://pages.18f.gov/content-guide/) when writing language for government services.
 

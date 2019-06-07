@@ -34,13 +34,13 @@ subnav:
   href: '#version-200-alpha'
 ---
 {:.site-text-intro}
-USWDS 2.0 is a major rewrite of the entire codebase and migration can be complicated. We’ve outlined the high-level changes any project will need to implement, followed by more specific component changes and complete release notes from each related release.
+USWDS 2 is a major rewrite of the entire codebase and migration can be complicated. We’ve outlined the high-level changes any project will need to implement, followed by more specific component changes and complete release notes from each related release.
 
 {: .site-note }
 **Note:** If you're migrating, expect that every USWDS component on your site will change, and that USWDS v1 functions, mixins, and variables will not work as expected. We will expand and improve this page as we learn from teams that are migrating their own projects. Leave feedback and make suggestions at this site’s [GitHub page](https://github.com/uswds/uswds-site).
 
 ## Summary
-Every component has changed in some way or another from USWDS v1 to USWDS v2. There are also some important conceptual differences in v2 — most notably, the introduction of [design tokens]({{ site.baseurl }}//design-tokens/) which, in most cases, are used somewhat differently from v1 variables. Design tokens are at the core of the USWDS 2.0 design language and we expect that sites will transition toward using these tokens exclusively for their projects, though this may be an incremental process.
+Every component has changed in some way or another from USWDS v1 to USWDS v2. There are also some important conceptual differences in v2 — most notably, the introduction of [design tokens]({{ site.baseurl }}/design-tokens/) which, in most cases, are used somewhat differently from v1 variables. Design tokens are at the core of the USWDS 2 design language and we expect that sites will transition toward using these tokens exclusively for their projects, though this may be an incremental process.
 
 - Now USWDS CSS almost always applies to classes not directly to HTML elements.
 - We've moved toward a flatter, more modular coding style.
@@ -49,7 +49,7 @@ Every component has changed in some way or another from USWDS v1 to USWDS v2. Th
 - A suite of settings files that use design tokens replace a single `variables`.
 
 ## Integrating tokens
-You can think of a design token as a **key** that unlocks a specific **value**. They are distinct from variables in that they are usually strings or unitless numbers (like `'sm'` or `'2'`) instead of something like `$variable`. Unlike variables, system tokens are constants and not meant to be modified. They aren't included directly in component Sass like `color: $primary`, rather the mechanism by which the final display value is unlocked is a function, mixin, or utility class, like `color: color('primary')`.
+You can think of a design token as a **key** that unlocks a specific **value**. They are distinct from variables in that they are usually strings or unitless numbers (like `'sm'` or `2`) instead of something like `$variable`. Unlike variables, system tokens are constants and not meant to be modified. They aren't included directly in component Sass like `color: $primary`, rather the mechanism by which the final display value is unlocked is a function, mixin, or utility class, like `color: color('primary')`.
 
 The [design tokens]({{ site.baseurl }}/design-tokens/) section of the documentation describes how we use design tokens in depth, but here's a simple example:
 

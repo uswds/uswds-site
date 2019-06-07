@@ -55,7 +55,7 @@
     "prepare": "npm run snyk-protect"
   },
   "dependencies": {
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.0",
     "normalize.css": "^8.0.0",
     "uswds": "2.0.3"
   },

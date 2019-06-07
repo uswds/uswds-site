@@ -14,7 +14,7 @@ As a complement to this visual style guidance, we strongly recommend you use [18
 
 ## USWDS for designers
 
-<div class="site-note"><strong>Note:</strong> USWDS 2.0 are only currently available in Sketch format.</div>
+<div class="site-note"><strong>Note:</strong> USWDS 2.0 design assets are only currently available in Sketch format.</div>
 
 The site contains HTML mockups of common UI components designed to follow USWDS’s visual style guide. To view the specs of each design live on this website (padding, margins, stroke weight, line-height, and so on), use your browser’s developer tools.
 
@@ -23,10 +23,10 @@ USWDS components and tokens are available as a suite of Sketch files and librari
 {% include download-buttons-design.html %}
 
 ### Retired design files
-The following design files are no longer being maintained by the USWDS team as of version 1.0.0. The most recent versions remain available for download at the links below. While USWDS team is no longer maintaining these files, we'd love to hear from any teams that are using these files and adding new components when new versions of USWDS is released. [Send us an email](mailto:@uswds@gsa.gov).
+USWDS no longer maintains the following design files. The most recent versions remain available for download at the links below. While USWDS is no longer maintaining these files, we'd love to hear from any teams that are using them and adding new components when new versions of USWDS are released. [Send us an email](mailto:@uswds@gsa.gov).
 
-#### 1.6.12
-{% include download-buttons-design-retired-1.6.12.html %}
+#### 1.6.10
+{% include download-buttons-design-retired-1.6.10.html %}
 
 #### 1.0.0
 {% include download-buttons-design-retired-1.0.0.html %}

@@ -8,26 +8,30 @@ redirect_from:
   - /getting-started/designers/
 ---
 
-See the [style]({{ site.baseurl }}/design-tokens/) section for more on USWDS system styles and palettes.
+See the [design tokens]({{ site.baseurl }}/design-tokens/) section for more on USWDS system styles and palettes.
 
 As a complement to this visual style guidance, we strongly recommend you use [18F’s Content Guide](https://pages.18f.gov/content-guide/) when writing language for government services.
 
-## Design resources
+## USWDS for designers
 
-<div class="site-note"><strong>Note:</strong> USWDS 2.0 assets for Sketch and Illustrator are not yet available. We expect them to be available by USWDS 2.0 launch.</div>
+<div class="site-note"><strong>Note:</strong> USWDS 2.0 design assets are only currently available in Sketch format.</div>
 
 The site contains HTML mockups of common UI components designed to follow USWDS’s visual style guide. To view the specs of each design live on this website (padding, margins, stroke weight, line-height, and so on), use your browser’s developer tools.
 
-All of these designs are also available in various file formats, which are available for download:
+USWDS components and tokens are available as a suite of Sketch files and libraries. Download the assets and all associated fonts and images from the link below. Find more complete installation instructions at [our USWDS for designers GitHub repo](https://www.github.com/uswds/uswds-for-designers):
 
 {% include download-buttons-design.html %}
 
 ### Retired design files
-The following design files are no longer being maintained by the USWDS team as of version 1.0.0. The most recent versions remain available for download at the links below. While USWDS team is no longer maintaining these files, we'd love to hear from any teams that are using these files and adding new components when new versions of USWDS is released. [Send us an email](mailto:@uswds@gsa.gov).
+USWDS no longer maintains the following design files. The most recent versions remain available for download at the links below. While USWDS is no longer maintaining these files, we'd love to hear from any teams that are using them and adding new components when new versions of USWDS are released. [Send us an email](mailto:@uswds@gsa.gov).
 
-{% include download-buttons-design-retired.html %}
+#### 1.6.10
+{% include download-buttons-design-retired-1.6.10.html %}
 
-## Notes on accessibility
+#### 1.0.0
+{% include download-buttons-design-retired-1.0.0.html %}
+
+## Accessibility requirements
 
 All of our designs meet the [WCAG 2.0 AA accessibility guidelines](https://www.w3.org/TR/WCAG20/) and are compliant with [Section 508 of the Rehabilitation Act](http://www.section508.gov/). If you choose to customize these designs, please make sure they continue to meet the requirements listed in the “Accessibility” section of each design.
 

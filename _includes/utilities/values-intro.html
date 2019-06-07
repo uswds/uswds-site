@@ -1,0 +1,21 @@
+<h3 class="utilities-section-title">Custom values</h3>
+<p class="utility-text">By default, USWDS utilities output the standard values listed in the documentation above. Customize and refine any utility family’s specific values by editing the <code>$[utility_family]-manual-values</code> and <code>$[utility_family]-palettes</code> variables in  <code>_uswds-theme-utilities.scss</code>.</p>
+
+<h3 class="font-lang-4 margin-bottom-0">Manual values</h3>
+<p class="utility-text margin-top-1">Specify manual values as unique <code>key:value</code> pairs using the <code>$[utility_family]-manual-values</code> map, where the <code>key</code> is the utility’s value suffix, and the <code>value</code> is what the utility will output.</p>
+
+<aside class="example border-left-05 border-secondary-light padding-left-105 margin-top-2">
+  <h4 class="font-lang-2xs margin-top-0 margin-bottom-05">Example</h4>
+<pre class="font-mono-xs margin-0 padding-0 bg-transparent">
+$width-manual-values: (
+  'tab': 4ch,
+);
+</pre>
+  <h4 class="font-lang-2xs margin-top-2 margin-bottom-05">Output</h4>
+<pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
+.width-tab { width: 4ch; }
+</pre>
+</aside>
+
+<h3 class="font-lang-4 margin-bottom-0">Palettes</h3>
+<p class="utility-text margin-top-1">Palettes are predefined groups of values. Add palettes to the <code>$[utility_family]-palettes</code> list variable in  <code>_uswds-theme-utilities.scss</code> to add those values to the utility family.</p>

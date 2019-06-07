@@ -2,6 +2,9 @@
 ================================================== -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  {% unless site.env == "production" %}
+    <meta name="robots" content="noindex, nofollow">
+  {% endunless %}
 
 <!-- Mobile Specific Metas
 ================================================== -->
@@ -35,4 +38,14 @@
 
 <!-- CSS
 ================================================== -->
-<link rel="stylesheet" href="{{ site.baseurl }}/css/styleguide.css">
+<!-- env: {{ site.env }} -->
+
+{% if site.env == 'dev' %}
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-fonts.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-components.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-layout-grid.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-custom.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-utilities.css">
+{% else %}
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+{% endif %}

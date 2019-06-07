@@ -1,11 +1,5 @@
 scss_files: 'css/**/*.scss'
 
-exclude: 'assets/css/vendor/**'
-
-# Removes front matter from Jekyll requirements for Sass files
-# See https://github.com/brigade/scss-lint#preprocessing
-preprocess_command: "sed '1,2s/---//'"
-
 linters:
   BangFormat:
     enabled: true
@@ -20,7 +14,7 @@ linters:
   ColorVariable:
     enabled: true
   Comment:
-    enabled: true
+    enabled: false
   DebugStatement:
     enabled: true
   DeclarationOrder:

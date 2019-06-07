@@ -1,0 +1,29 @@
+<div class="utility-example-container grid-row grid-gap flex-align-center">
+  <span class="grid-col-2">
+    <span  style="background-color: {{ color.value_orig }}" class="height-4 width-full radius-sm display-inline-block text-middle margin-right-1"></span>
+  </span>
+  <span class="grid-col-2">
+    <span style="background-color: {{ color.value }}" class="height-4 width-full radius-sm display-inline-block text-middle margin-right-1"></span>
+  </span>
+  <span class="grid-col-4">
+    {% if color.value %}
+    <span class="utility-class bg-transparent border border-base-light">{{ color.utility }}</span>
+    {% else %}
+    <span>—</span>
+    {% endif %}
+  </span>
+  <span class="grid-col-2 text-right font-mono-3">
+    {% if color.value_orig %}
+    <span>{{ color.value_orig }}</span>
+    {% else %}
+    <span>—</span>
+    {% endif %}
+  </span>
+  <span class="grid-col-2 text-right font-mono-3">
+    {% if color.value %}
+    <span>{{ color.value }}</span>
+    {% else %}
+    <span>—</span>
+    {% endif %}
+  </span>
+</div>

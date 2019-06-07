@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="35" cy="35" r="35" fill="#D83933"/>
+    <g transform="translate(18 17.5)">
+      <rect width="33" height="33" x=".5" y="1" fill="#E9695F" stroke="#FFF"/>
+      <path fill="#FFF" d="M23.2,23.3 L27.2,23.3 L27.2,24.3 L23.2,24.3 L23.2,28.3 L22.2,28.3 L22.2,24.3 L18.2,24.3 L18.2,23.3 L22.2,23.3 L22.2,19.3 L23.2,19.3 L23.2,23.3 Z"/>
+      <g fill="#D83933" stroke="#FFF" transform="translate(5 5.5)">
+        <ellipse cx="4.904" cy="18.222" rx="4.714" ry="4.889"/>
+        <rect width="8.429" height="8.778" x="13.5" y=".5"/>
+        <path d="M5.33279221,1.07409181 L1.01786647,9.27777778 L9.64771794,9.27777778 L5.33279221,1.07409181 Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

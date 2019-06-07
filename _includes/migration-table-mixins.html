@@ -1,0 +1,25 @@
+{% assign commands = site.data.migration[include.class] %}
+<table class="usa-table--borderless site-table-responsive site-table-simple">
+  <thead>
+    <tr>
+      <th scope="col">USWDS v1</th>
+      <th scope="col">USWDS v2</th>
+    </tr>
+  </thead>
+  <tbody class="font-mono-2xs">
+    {% for command in commands %}
+      <tr>
+        <td scope="row" data-title="USWDS 1.x">
+          <span{% if command.deprecated %} class="text-secondary-vivid"{% endif %}>
+            {{ command.v1 }}
+          </span>
+        </td>
+        <td scope="row" data-title="USWDS 2.0">
+          <span{% if command.deprecated %} class="text-secondary-vivid"{% endif %}>
+            {{ command.v2 }}{% if command.token %}(<a href="{{ site.baseurl }}/design-tokens/{{ command.token }}/" class="token">{{ command.token | remove: '/typesetting' }}</a>{% if command.token_2 %}, <a href="{{ site.baseurl }}/design-tokens/{{ command.token }}/" class="token">{{ command.token | remove: '/typesetting' }}</a>{% endif %}{% if command.token_3 %}, <a href="{{ site.baseurl }}/design-tokens/{{ command.token }}/" class="token">{{ command.token | remove: '/typesetting' }}</a>{% endif %}{% if command.token_4 %}, <a href="{{ site.baseurl }}/design-tokens/{{ command.token }}/" class="token">{{ command.token | remove: '/typesetting' }}</a>{% endif %}){% endif %}
+          </span>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>

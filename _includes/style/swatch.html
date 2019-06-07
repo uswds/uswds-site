@@ -1,0 +1,11 @@
+<div class="grid-col-4 swatch-container">
+  <div class="swatch margin-bottom-4">
+    <div class="height-9 bg-{{ color.utility }}"></div>
+    <ul class="swatch-info add-list-reset font-mono-1 margin-top-1 line-height-mono-5">
+      <li class="margin-bottom-05 font-sans-3 text-bold">{{ color.family_token | capitalize | replace: "-", " " }} {{ color.grade_token }}{% if color.variant_token %} {{ color.variant_token }}{% endif %}</li>
+      <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Utility suffix:</span> <code>-{{ color.utility}}</code></li>
+      <li class="margin-bottom-05 margin-y-2px"><span class="font-sans-2">Sass:</span> <code>color('{{color.family_token}}', {{ color.grade_token }}{% if color.variant_token %}, '{{ color.variant_token }}'{% endif %})</code></li>
+      <li>{{ color.value }}</li>
+    </ul>
+  </div>
+</div><!-- swatch-container -->

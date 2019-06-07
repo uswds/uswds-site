@@ -3,7 +3,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.3-node-browsers
+      - image: circleci/ruby:2.4-node-browsers
     steps:
       - checkout
       - restore_cache:
@@ -19,15 +19,17 @@ jobs:
             - vendor/bundle
       - restore_cache:
           keys:
-            - v1-node-cache-{{ checksum "package-lock.json" }}
-            - v1-node-cache
+            - v2-npm-cache-{{ .Branch }}-{{ .Revision }}
       - run:
           name: Install node dependencies
           command: npm install --ignore-scripts --verbose
       - save_cache:
-          key: v1-node-cache-{{ checksum "package-lock.json" }}
+          key: v2-npm-cache-{{ .Branch }}-{{ .Revision }}
           paths:
             - node_modules
+      - run:
+          name: Rebuild node-sass
+          command: npm rebuild node-sass
       - run:
           name: Build site files
           command: npm run build

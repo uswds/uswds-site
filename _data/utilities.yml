@@ -1,0 +1,245 @@
+display:
+  - class: .display-block
+    value: block
+  - class: .display-flex
+    value: flex
+  - class: .display-inline
+    value: inline
+  - class: .display-inline-block
+    value: inline-block
+  - class: .display-inline-flex
+    value: inline-flex
+  - class: .display-none
+    value: none
+  - class: .display-table
+    value: table
+  - class: .display-table-cell
+    value: table-cell
+  - class: .display-table-row
+    value: table-row
+  - class: .position-absolute
+    value: absolute
+  - class: .position-fixed
+    value: fixed
+  - class: .position-relative
+    value: relative
+  - class: .position-static
+    value: static
+  - class: .position-sticky
+    value: sticky
+  - class: .bottom-0
+    value: 0
+  - class: .bottom-1px
+    value: 1px
+  - class: .bottom-2px
+    value: 2px
+  - class: .bottom-05
+    value: units(0.5)
+  - class: .bottom-1
+    value: units(1)
+  - class: .bottom-105
+    value: units(1.5)
+  - class: .bottom-2
+    value: units(2)
+  - class: .bottom-205
+    value: units(2.5)
+  - class: .bottom-3
+    value: units(3)
+  - class: .bottom-neg-1px
+    value: -1px
+  - class: .bottom-neg-2px
+    value: -2px
+  - class: .bottom-neg-05
+    value: units(-0.5)
+  - class: .bottom-neg-1
+    value: units(-1)
+  - class: .bottom-neg-105
+    value: units(-1.5)
+  - class: .bottom-neg-2
+    value: units(-2)
+  - class: .bottom-neg-205
+    value: units(-2.5)
+  - class: .bottom-neg-3
+    value: units(-3)
+  - class: .bottom-auto
+    value: auto
+  - class: .bottom-full
+    value: 100%
+  - class: .left-0
+    value: 0
+  - class: .left-1px
+    value: 1px
+  - class: .left-2px
+    value: 2px
+  - class: .left-05
+    value: units(0.5)
+  - class: .left-1
+    value: units(1)
+  - class: .left-105
+    value: units(1.5)
+  - class: .left-2
+    value: units(2)
+  - class: .left-205
+    value: units(2.5)
+  - class: .left-3
+    value: units(3)
+  - class: .left-neg-1px
+    value: -1px
+  - class: .left-2px
+    value: -2px
+  - class: .left-neg-05
+    value: units(-0.5)
+  - class: .left-neg-1
+    value: units(-1)
+  - class: .left-neg-105
+    value: units(-1.5)
+  - class: .left-neg-2
+    value: units(-2)
+  - class: .left-neg-205
+    value: units(-2.5)
+  - class: .left-neg-3
+    value: units(-3)
+  - class: .left-auto
+    value: auto
+  - class: .left-full
+    value: 100%
+  - class: .right-0
+    value: 0
+  - class: .right-1px
+    value: 1px
+  - class: .right-2px
+    value: 2px
+  - class: .right-05
+    value: units(0.5)
+  - class: .right-1
+    value: units(1)
+  - class: .right-105
+    value: units(1.5)
+  - class: .right-2
+    value: units(2)
+  - class: .right-205
+    value: units(2.5)
+  - class: .right-3
+    value: units(3)
+  - class: .right-neg-1px
+    value: -1px
+  - class: .right-neg-2px
+    value: -2px
+  - class: .right-neg-05
+    value: units(-0.5)
+  - class: .right-neg-1
+    value: units(-1)
+  - class: .right-neg-105
+    value: units(-1.5)
+  - class: .right-neg-2
+    value: units(-2)
+  - class: .right-neg-205
+    value: units(-2.5)
+  - class: .right-neg-3
+    value: units(-3)
+  - class: .right-auto
+    value: auto
+  - class: .right-full
+    value: 100%
+  - class: .top-0
+    value: 0
+  - class: .top-1px
+    value: 1px
+  - class: .top-2px
+    value: 2px
+  - class: .top-05
+    value: units(0.5)
+  - class: .top-1
+    value: units(1)
+  - class: .top-105
+    value: units(1.5)
+  - class: .top-2
+    value: units(2)
+  - class: .top-205
+    value: units(2.5)
+  - class: .top-3
+    value: units(3)
+  - class: .top-neg-1px
+    value: -1px
+  - class: .top-neg-2px
+    value: -2px
+  - class: .top-neg-05
+    value: units(-0.5)
+  - class: .top-neg-1
+    value: units(-1)
+  - class: .top-neg-105
+    value: units(-1.5)
+  - class: .top-neg-2
+    value: units(-2)
+  - class: .top-neg-205
+    value: units(-2.5)
+  - class: .top-neg-3
+    value: units(-3)
+  - class: .top-auto
+    value: auto
+  - class: .top-full
+    value: 100%
+  - class: .pin-all
+    value: 0
+  - class: .pin-none
+    value: auto
+  - class: .overflow-visible
+    value: visible
+  - class: .overflow-hidden
+    value: hidden
+  - class: .overflow-scroll
+    value: scroll
+  - class: .overflow-auto
+    value: auto
+  - class: .overflow-x-visible
+    value: visible
+  - class: .overflow-x-hidden
+    value: hidden
+  - class: .overflow-x-scroll
+    value: scroll
+  - class: .overflow-x-auto
+    value: auto
+  - class: .overflow-y-visible
+    value: visible
+  - class: .overflow-y-hidden
+    value: hidden
+  - class: .overflow-y-scroll
+    value: scroll
+  - class: .overflow-y-auto
+    value: auto
+  - class: .z-auto
+    value: auto
+  - class: .z-top
+    value: 99999
+  - class: .z-bottom
+    value: -99999
+  - class: .z-0
+    value: 0
+  - class: .z-100
+    value: 100
+  - class: .z-200
+    value: 200
+  - class: .z-300
+    value: 300
+  - class: .z-400
+    value: 400
+  - class: .z-500
+    value: 500
+  - class: .opacity-0
+    value: 0
+  - class: .opacity-1
+    value: 1
+  - class: .opacity-lightest
+    value: 0.01
+  - class: .opacity-lighter
+    value: 0.1
+  - class: .opacity-light
+    value: 0.25
+  - class: .opacity-dark
+    value: 0.5
+  - class: .opacity-darker
+    value: 0.75
+  - class: .opacity-darkest
+    value: 0.9
+  - class: .opacity-full
+    value: 1

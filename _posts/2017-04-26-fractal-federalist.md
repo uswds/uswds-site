@@ -11,9 +11,10 @@ meta:
   og:image: /img/updates/fractal_v1.0.0.png
 preview_baseurl: https://federalist.fr.cloud.gov/preview/18f/web-design-standards
 github_baseurl: https://github.com/uswds/uswds
+category: About USWDS
 ---
 
-<p class="usa-font-lead">
+<p class="site-text-intro">
   We've recently added two powerful tools to our development workflow that
   allow us to preview, test, and publish the Standards code more quickly
   and easily.

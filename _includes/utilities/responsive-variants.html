@@ -1,0 +1,92 @@
+<section class="utilities-section margin-top-3" id="responsive-variants">
+  <h3 class="utilities-section-title">Responsive variants</h3>
+  <p class="utility-text">Add a responsive breakpoint prefix separated with a  <code>:</code> to target a utility at a responsive breakpoint and higher, following a mobile-first methodology.</p>
+  <aside class="example border-left-05 border-secondary-light padding-left-105 margin-top-2">
+    <h4 class="font-lang-2xs margin-top-0 margin-bottom-05">Example</h4>
+    <p class="font-mono-xs margin-top-0"><span class="text-red-warm-50v">.tablet:</span>padding-y-2</p>
+    <h4 class="font-lang-2xs margin-top-2 margin-bottom-05">Output</h4>
+<pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
+@media screen and (min-width: 640px) {
+  .tablet\:padding-y-2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+</pre>
+  </aside>
+  <p class="utility-text margin-top-4">Set which breakpoints are available to USWDS utilities with the <code>$theme_output_breakpoints</code> variable found in <code>_uswds-theme-utilities.scss</code>.</p>
+
+  {% assign breakpoint = site.data.tokens.spacing.positive %}
+  {% assign all-breakpoints =
+    breakpoint.large
+    | concat: breakpoint.larger
+    | concat: breakpoint.largest %}
+  {% assign output-breakpoints = "mobile-lg,tablet,desktop" | split: ',' %}
+
+  <table class="usa-table--borderless site-table-responsive site-table-simple">
+    <thead>
+      <tr>
+        <th scope="col">Breakpoint name</th>
+        <th scope="col" class="tablet:maxw-card-lg">Width</th>
+        <th scope="col" class="tablet:maxw-card-lg">Default</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      {% for item in all-breakpoints %}
+        <tr>
+          <td scope="row" data-title="Breakpoint" class="tablet:text-no-wrap">
+            <span>
+              {{ item.token }}
+            </span>
+          </td>
+          <td data-title="Width" class="tablet:maxw-card-lg">
+            <span>
+              {{ item.value }}
+            </span>
+          </td>
+          <td data-title="Default" class="tablet:maxw-card-lg">
+            <span>
+              {% assign output = false %}
+              {% for width in output-breakpoints %}
+                {% if width == item.token %}
+                {% assign output = true %}
+                <span class="output-true">true</span>
+                {% endif %}
+              {% endfor %}
+              {% if output == false %}
+                false
+              {% endif %}
+            </span>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <p class="utility-text margin-top-4">Set whether a utility family outputs with responsive variants by setting the value of  <code>$[utility_family]-settings.responsive</code> in <code>_uswds-theme-utilities.scss</code>.</p>
+
+  <table class="usa-table--borderless site-table-responsive site-table-simple">
+    <thead>
+      <tr>
+        <th scope="col">Utility variable</th>
+        <th scope="col" class="tablet:maxw-card-lg">Default</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      {% for utility in page.utilities %}
+        <tr>
+          <td scope="row" data-title="Utility variable" class="tablet:text-no-wrap">
+            <span>
+              ${{ utility.var }}-settings.responsive
+            </span>
+          </td>
+          <td data-title="Default" class="tablet:maxw-card-lg">
+            <span>
+              {% if utility.responsive %}<span class="output-true">true</span>{% else %}false{% endif %}
+            </span>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>

@@ -1,38 +1,43 @@
 primary:
-  - href: /components/
-  - href: /page-templates/
   - href: /documentation/
-  - href: /about/
+  - href: /components/
+  - href: /design-tokens/
+  - href: /utilities/
+  - href: /page-templates/
+  - text: About
+    href: /about/
 
 mobile:
-  - href: /components/
-    collapsible: true
-  - href: /page-templates/
   - href: /documentation/
     collapsible: true
+  - href: /components/
+    collapsible: true
+  - href: /design-tokens/
+    collapsible: true
+  - href: /utilities/
+    collapsible: true
+  - href: /page-templates/
   - href: /about/
     collapsible: true
-  - href: /whats-new/
-    collapsible: true
 
-UI components:
+Components:
   - text: Overview
     href: /components/
-  - href: /components/typography/
-  - href: /components/colors/
-  - href: /components/icons/
-  - href: /components/grids/
-  - href: /components/buttons/
-  - href: /components/labels/
-  - href: /components/tables/
-  - href: /components/alerts/
-  - href: /components/accordions/
+  - href: /components/accordion/
+  - href: /components/alert/
+  - href: /components/button/
+  - href: /components/footer/
   - href: /components/form-controls/
   - href: /components/form-templates/
-  - href: /components/search-bar/
+  - text: Grid
+    href: /components/grids/
+  - href: /components/header/
+  - href: /components/icons/
+  - href: /components/search/
   - href: /components/sidenav/
-  - href: /components/headers/
-  - href: /components/footers/
+  - href: /components/table/
+  - href: /components/tag/
+  - href: /components/typography/
 
 Documentation:
   - text: Overview
@@ -42,9 +47,50 @@ Documentation:
   - href: /documentation/accessibility/
   - href: /performance/
   - href: /documentation/code-guidelines/
+  - text: Migration
+    href: /documentation/migration/
   - href: /documentation/video-tutorials/
   - href: /documentation/implementations/
   - href: /documentation/showcase/
+
+Design tokens:
+  - text: Overview
+    href: /design-tokens/
+  - text: Color
+    href: /design-tokens/color/
+  - text: Typesetting
+    href: /design-tokens/typesetting/
+  - text: Flex
+    href: /design-tokens/flex/
+  - text: Opacity
+    href: /design-tokens/opacity/
+  - text: Order
+    href: /design-tokens/order/
+  - text: Shadow
+    href: /design-tokens/shadow/
+  - text: Spacing units
+    href: /design-tokens/spacing-units/
+  - text: Z-index
+    href: /design-tokens/z-index/
+
+Utilities:
+  - text: Overview
+    href: /utilities/
+  - href: /utilities/layout-grid/
+  - href: /utilities/color/
+  - href: /utilities/height-and-width/
+  - href: /utilities/margin-and-padding/
+  - href: /utilities/border/
+  - href: /utilities/outline/
+  - href: /utilities/font-size-and-family/
+  - href: /utilities/text-styles/
+  - href: /utilities/paragraph-styles/
+  - href: /utilities/display/
+  - href: /utilities/flex/
+  - href: /utilities/shadow/
+  - href: /utilities/float/
+  - href: /utilities/clearfix/
+  - href: /utilities/list-reset/
 
 Page templates:
   - href: /page-templates/

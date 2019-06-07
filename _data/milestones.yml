@@ -1,20 +1,20 @@
-- title: 2018 Product roadmap
-  id: 2018-roadmap
+- title: 2019 Product roadmap
+  id: 2019-roadmap
   tasks:
     - title: Change our name to more accurately describe what we are and what we do
       status: Done
       url: https://github.com/uswds/uswds/issues/2300
     - title: Develop an easier way to prototype and build consistently and incrementally
-      status: In progress
+      status: Done
       url: https://github.com/uswds/uswds/issues/2292
     - title: A more flexible, consistent color system
-      status: In progress
+      status: Done
       url: https://github.com/uswds/uswds/issues/2296
     - title: Better typographic flexibility and resilience, with or without webfonts
-      status: In progress
+      status: Done
       url: https://github.com/uswds/uswds/issues/2295
     - title: Clearer, more specific design and implementation guidance
-      status: In progress
+      status: Done
       url: https://github.com/uswds/uswds/issues/2293
     - title: Better support and guidance for Federalist and Jekyll
       status: To-do
@@ -29,5 +29,5 @@
       status: To-do
       url: https://github.com/uswds/uswds/issues/2299
     - title: Grow our core government communities and our larger open source community
-      status: To-do
+      status: In progress
       url: https://github.com/uswds/uswds/issues/2301

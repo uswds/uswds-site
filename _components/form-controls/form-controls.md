@@ -5,15 +5,15 @@ redirect_from:
 layout: styleguide
 type: component
 title: Form controls
-category: UI components
+category: Components
 lead: Form controls allow users to enter information into a page.
 subnav:
-- text: Text inputs and area
+- text: Text input
   href: '#text-input'
 - text: Dropdown
   href: '#dropdown'
-- text: Checkboxes
-  href: '#checkboxes'
+- text: Checkbox
+  href: '#checkbox'
 - text: Radio buttons
   href: '#radio-buttons'
 - text: Date input
@@ -24,8 +24,7 @@ subnav:
   href: '#range'
 ---
 
+<div class="site-note"><strong>Note:</strong> If you are a building a form with multiple controls, also consider the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines in the “Form Templates” section</a>.</div>
+
 {% include accessibility.html %}
-
-<p>If you are a building a form with multiple controls, also consider the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines in the “Form Templates” section</a>.</p>
-
 {% include child-sections.html parent='Form controls' %}

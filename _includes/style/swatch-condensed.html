@@ -1,0 +1,54 @@
+{% assign family = false %}
+{% assign grade = false %}
+{% assign variant = false %}
+
+{% if item.value %}
+  {% assign family = item.token
+    | regexreplace: '(^.+-*warm|cool|transparent).+$', '\1' %}
+  {% assign grade = item.token
+    | regexreplace: '.+?(\d+).*?$', '\1'%}
+  {% assign check_variant = item.token
+    | regexreplace: '.+(v)$', '\1'%}
+  {% if check_variant == 'v' %}
+    {% assign variant = 'vivid' %}
+  {% endif %}
+{% endif %}
+
+{% if item.value %}
+  <tr>
+    <td scope="row" data-title="Color" class="flex-align-center">
+      <span class="site-inline-swatch bg-{{ item.token }}"></span>
+    </td>
+    <td data-title="Token">
+      {% if item.value %}
+        <span class="utility-class">'{{ item.token }}'</span>
+      {% else %}
+        <span>—</span>
+      {% endif %}
+    </td>
+    <td data-title="Family">
+      '{{ family }}'
+    </td>
+    <td data-title="Grade">
+      {% if grade %}
+        {{ grade }}
+      {% else %}
+        <span>—</span>
+      {% endif %}
+    </td>
+    <td data-title="Variant">
+      {% if variant %}
+        '{{ variant }}'
+      {% else %}
+        <span>—</span>
+      {% endif %}
+    </td>
+    <td data-title="Hex equivalent" class="text-right font-mono-2xs">
+      {% if item.value %}
+        <span>{{ item.value }}</span>
+      {% else %}
+        <span>—</span>
+      {% endif %}
+    </td>
+  </tr>
+{% endif %}

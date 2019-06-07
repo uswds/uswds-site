@@ -1,0 +1,38 @@
+<section class="utility-title-bar">
+  <div class="usa-grid-row">
+    <div class="usa-grid-col utility-name">
+      <h3 class="utility-title">{{ include.title }}</h3>
+      {% if include.property or include.property == nil %}
+        <p class="utility-property">CSS property: <span class="utility-property-code">{% if include.property == nil %}{{ include.title | slugify }}{% else %}{{ include.property }}{% endif %}</span></p>
+      {% endif %}
+    </div>
+
+    <ul class="usa-grid-col utility-scope">
+      {% if include.responsive %}
+        <li class="utility-scope-button-active"><a href="#responsive-variants">responsive</a></li>
+      {% else %}
+        <li class="utility-scope-button-disabled">responsive</li>
+      {% endif %}
+      {% if include.active %}
+        <li class="utility-scope-button-active"><a href="#state-variants">active</a></li>
+      {% else %}
+        <li class="utility-scope-button-disabled">active</li>
+      {% endif %}
+      {% if include.hover %}
+        <li class="utility-scope-button-active"><a href="#state-variants">hover</a></li>
+      {% else %}
+        <li class="utility-scope-button-disabled">hover</li>
+      {% endif %}
+      {% if include.focus %}
+        <li class="utility-scope-button-active"><a href="#state-variants">focus</a></li>
+      {% else %}
+        <li class="utility-scope-button-disabled">focus</li>
+      {% endif %}
+      {% if include.visited %}
+        <li class="utility-scope-button-active"><a href="#state-variants">visited</a></li>
+      {% else %}
+        <li class="utility-scope-button-disabled">visited</li>
+      {% endif %}
+    </ul>
+  </div>
+</section>

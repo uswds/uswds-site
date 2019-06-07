@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70"><title>get-started</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><circle cx="35" cy="35" r="35" fill="#e31c3d"/><polygon points="47.06 25.48 23.97 25.48 27.75 21.51 43.32 21.52 47.06 25.48" fill="#e94964" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/><polyline points="26.49 28.01 23.97 30.48 47.06 30.48 44.56 28.01" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/><polyline points="26.49 33.01 23.97 35.48 47.06 35.48 44.56 33.01" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/><rect x="18.5" y="39.5" width="5" height="9" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/><path d="M30.45,44l7.22,2.27c2,.62,2.83-2.58.87-3.19l-6.87-2.17c-2.11-.66-5.53-.36-8.16,0v5.76c1.47-.42,3-.68,3.77-.33a18.6,18.6,0,0,0,8.2,2c3.23,0,2.59,0,10.72-4,1.84-.9.62-4-1.32-3L39.51,44" fill="#e94964" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="35" cy="35" r="35" fill="#D83933"/>
+    <polygon fill="#E9695F" fill-rule="nonzero" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" points="47.06 25.48 23.97 25.48 27.75 21.51 43.32 21.52"/>
+    <polyline stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" points="26.49 28.01 23.97 30.48 47.06 30.48 44.56 28.01"/>
+    <polyline stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" points="26.49 33.01 23.97 35.48 47.06 35.48 44.56 33.01"/>
+    <rect width="5" height="9" x="18.5" y="39.5" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round"/>
+    <path fill="#E9695F" fill-rule="nonzero" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" d="M30.45,44 L37.67,46.27 C39.67,46.89 40.5,43.69 38.54,43.08 L31.67,40.91 C29.56,40.25 26.14,40.55 23.51,40.91 L23.51,46.67 C24.98,46.25 26.51,45.99 27.28,46.34 C29.8239599,47.6262236 32.6295205,48.3105067 35.48,48.34 C38.71,48.34 38.07,48.34 46.2,44.34 C48.04,43.44 46.82,40.34 44.88,41.34 L39.51,44"/>
+  </g>
+</svg>

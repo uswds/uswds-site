@@ -4,13 +4,17 @@
   {% else -%}
     {% assign _page = nil %}
   {% endif %}
-  <li>
+  {% if _page -%}
+    {% include nav/current.html page=_page primary=include.primary %}
+  {% endif %}
+  <li class="{% if sidenav %}usa-sidenav__item{% else %}usa-nav__submenu-item{% endif %}{% if _current %} is-current{% endif %}">
     {% if _page -%}
       {%
         include nav/page-item.html
         page=_page
         rel=include.rel
         flat=include.flat
+        primary=include.primary
         links=link.links
         subnav_class=include.subnav_class
         text=link.text
@@ -18,6 +22,7 @@
     {% else -%}
       {% include nav/link-item.html
         link=link
+        primary=include.primary
         subnav_class=include.subnav_class
         href_key=include.href_key
         text_key=include.text_key

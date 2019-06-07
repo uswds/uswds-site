@@ -26,13 +26,13 @@ gulp.task('copy-uswds-images', function (done) {
 
 gulp.task(task,
   gulp.series(
-    function(done) {
+    function (done) {
       dutil.logMessage(task, 'Copying images Sass');
       done();
     },
     gulp.parallel(
       'copy-doc-images',
       'copy-uswds-images'
-    ),
+    )
   )
 );

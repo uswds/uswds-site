@@ -6,21 +6,23 @@
 {% endif %}
 <title>{{ title }}</title>
 <meta property="og:title" content="{{ title | xml_escape }}">
-{% for post in site.posts %}
+{% if page.path contains '_posts' and page.excerpt %}
   {% assign desc = page.excerpt %}
-{% endfor %}
-{% assign desc = page.description
-  | default: page.lead
-  | default: site.description
-  | strip_html
-  | strip
-  | xml_escape
-%}
+{% else %}
+  {% assign desc = page.description
+    | default: page.lead
+    | default: site.description
+    | markdownify
+    | strip_html
+    | strip
+    | xml_escape
+  %}
+{% endif %}
 {% if desc -%}
 <meta name="description" content="{{ desc }}">
 <meta property="og:description" content="{{ desc }}">
 {% endif %}
-<meta name="twitter:card" value="summary">
+<meta name="twitter:card" value="{% if page.meta contains 'og:image' %}summary_large_image{% else %}summary{% endif %}">
 <meta name="twitter:site" content="@USWDS">
 <meta property="og:type" content="article">
 {% assign metas = '' | split: '' %}
@@ -29,7 +31,7 @@
 {% assign metas = metas | unique %}
 {% for meta in metas -%}
   {% assign val = page.meta[meta] | default: site.meta[meta] %}
-  {% if meta contains 'image' %}{% assign val = val | absolute_url %}{% endif %}
+  {% if meta contains 'og:image' %}{% assign val = val | absolute_url %}{% endif %}
   <meta property="{{ meta }}" content="{{ val | xml_escape }}">
 {% endfor %}
 {% if site.url %}

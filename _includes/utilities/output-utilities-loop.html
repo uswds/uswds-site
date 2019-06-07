@@ -1,0 +1,46 @@
+{% for modifier in utility_modifiers %}
+  {% for value in utility_values %}
+    {% if value.token %}
+    {% else %}
+      {% assign value.token = value %}
+      {% assign value.value = value %}
+    {% endif %}
+    <dt class="output-utility">.{{ utility_base }}{% if modifier == 'none'%}{% else %}{{ modifier }}{% endif %}-{{ value.token }}</dt>
+    {% if value.scss %}
+
+      <dd class="output-css">
+        <span>
+          {% if utility_properties %}
+            {% for property in utility_properties %}
+            <span class="output-rule">{{ property }}{% if modifier == 'none'%}{% else %}-{{ modifier }}{% endif %}: <span class="output-token">{{ value.scss }}</span></span>
+            {% endfor %}
+          {% endif %}
+          {% for rule in utility_additional_rules %}
+            {% if rule == 'none' %}
+            {% else %}
+              <span class="output-rule">{{ rule }}</span>
+            {% endif %}
+          {% endfor %}
+        </span>
+      </dd>
+      <dd class="output-variable">{{ value.value }}</dd>
+    {% else %}
+      <dd class="output-css">
+        <span>
+          {% if utility_properties %}
+            {% for property in utility_properties %}
+            <span class="output-rule">{{ property }}{% if modifier == 'none'%}{% else %}-{{ modifier }}{% endif %}: {{ value.value }}</span>
+            {% endfor %}
+          {% endif %}
+          {% for rule in utility_additional_rules %}
+            {% if rule == 'none' %}
+            {% else %}
+              <span class="output-rule">{{ rule }}</span>
+            {% endif %}
+          {% endfor %}
+        </span>
+      </dd>
+      <dd class="output-variable">—</dd>
+    {% endif %}
+  {% endfor %}
+{% endfor %}

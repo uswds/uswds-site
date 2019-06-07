@@ -1,0 +1,26 @@
+<h4 class="font-lang-2xs margin-top-4">Default palettes</h4>
+
+<table class="usa-table--borderless site-table-responsive site-table-simple">
+  <thead>
+    <tr>
+      <th scope="col">Palette name</th>
+      <th scope="col">Palette contents</th>
+    </tr>
+  </thead>
+  <tbody class="font-mono-2xs">
+    {% for utility in page.utilities %}
+      <tr>
+        <td scope="row" data-title="Palette name" class="tablet:text-no-wrap">
+          <span>
+            'palette-{{ utility.var }}-default'
+          </span>
+        </td>
+        <td data-title="Palette contents">
+          <span>
+            {{ utility.var}} default tokens
+          </span>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>

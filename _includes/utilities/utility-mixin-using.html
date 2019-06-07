@@ -1,0 +1,7 @@
+<h3 class="utilities-section-title border-top padding-top-1 margin-top-6">Using utility mixins</h3>
+<ul>
+  <li>Use single-quoted strings in utility mixins. Do not quote numbers or px values, with the exception of half (<code>05</code>) values like <code>'05'</code>, <code>'105'</code>, and <code>'205'</code> which should be treated as strings.</li>
+  <li>String tokens for half values (<code>05</code>) and negative values (like <code>neg-1</code>)may also be written with their unquoted number token equivalent: <code>0.5</code>, <code>1.5</code>, <code>2.5</code>, <code>2.5</code>, <code>-1</code>, <code>-1.5</code>, etc</li>
+  <li>If multiple utilities share the same prefix (ex: <code>.text-</code> or <code>.flex-</code>) or a single utility accepts multiple kinds of values (ex: <code>.border</code> accepts both border weight and border color), their shared mixin can accept multiple comma-separated values: <code>u-text('primary-darkest', 'no-underline', 'bold')</code> or <code>u-border-top(2px, 'accent-warm')</code>.</li>
+  <li>Output any utility mixin as <code>!important</code> by appending <code>!important</code> to the mixin’s argument list: <code>u-bg('red-warm-50v', !important)</code>.</li>
+</ul>

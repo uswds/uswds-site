@@ -1,6 +1,7 @@
 ---
 title: "2017: Where we’ve been and where we’re going"
 tags: updates
+category: About USWDS
 excerpt: "2017 was a big year for the U.S. Web Design Standards. Here’s a look at where we’re headed in 2018."
 ---
 

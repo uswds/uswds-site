@@ -1,0 +1,62 @@
+system:
+  - token: micro
+    value: 10px
+  - token: 1
+    value: 12px
+  - token: 2
+    value: 13px
+  - token: 3
+    value: 14px
+  - token: 4
+    value: 15px
+  - token: 5
+    value: 16px
+  - token: 6
+    value: 17px
+  - token: 7
+    value: 18px
+  - token: 8
+    value: 20px
+  - token: 9
+    value: 22px
+  - token: 10
+    value: 24px
+  - token: 11
+    value: 28px
+  - token: 12
+    value: 32px
+  - token: 13
+    value: 36px
+  - token: 14
+    value: 40px
+  - token: 15
+    value: 48px
+  - token: 16
+    value: 56px
+  - token: 17
+    value: 64px
+  - token: 18
+    value: 80px
+  - token: 19
+    value: 120px
+  - token: 20
+    value: 140px
+theme:
+  - token: 3xs
+    default: 2
+  - token: 2xs
+    default: 3
+  - token: xs
+    default: 4
+  - token: sm
+    default: 5
+  - token: md
+    default: 6
+  - token: lg
+    default: 9
+  - token: xl
+    default: 12
+  - token: 2xl
+    default: 14
+  - token: 3xl
+    default: 15

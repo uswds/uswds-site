@@ -4,7 +4,7 @@
   author:
     name: Paul Tagliamonte (USDS)
     url: https://github.com/paultag
-  notes: "This package provides access to the Design System in [Django](https://www.djangoproject.com/) applications."
+  notes: "This package provides access to USWDS in [Django](https://www.djangoproject.com/) applications."
 
 - name: django-uswds-forms
   distribution: Django
@@ -13,7 +13,7 @@
     name: 18F
     url: https://github.com/18F
   notes: |
-    This package provides Django Forms integration with the Design System.
+    This package provides Django Forms integration with USWDS.
 
 - name: USWDS Drupal theme
   distribution: Drupal
@@ -29,7 +29,7 @@
   author:
     name: 18F
     url: https://github.com/18F
-  notes: "A [Jekyll](https://jekyllrb.com/) theme for the Design System."
+  notes: "A [Jekyll](https://jekyllrb.com/) theme for USWDS."
 
 - name: uswds-simple-sass
   distribution: npm and gulp
@@ -39,7 +39,7 @@
     url: https://github.com/18F
   notes: |
     This is a simple Node JS-based "starter project" that uses gulp and gulp-sass to
-    power a development workflow for a one-page site that leverages the Design System'
+    power a development workflow for a one-page site that leverages USWDS'
     SASS. Note that this is a starter project and *not* a reusable package.
 
 - name: 18f-contrib-web-design-standards
@@ -88,7 +88,7 @@
   author:
     name: Broadcasting Board of Governors (BBG)
     url: https://github.com/BBGInnovate
-  notes: "This is not a reusable WordPress theme, but an implementation of the Design System for [bbg.gov](https://www.bbg.gov/)."
+  notes: "This is not a reusable WordPress theme, but an implementation of USWDS for [bbg.gov](https://www.bbg.gov/)."
 
 - name: Benjamin
   distribution: WordPress

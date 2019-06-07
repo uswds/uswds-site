@@ -1,0 +1,31 @@
+{% assign classes = site.data.migration[include.class] %}
+<table class="usa-table--borderless site-table-responsive site-table-simple">
+  <thead>
+    <tr>
+      <th scope="col">USWDS v1</th>
+      <th scope="col">USWDS v2</th>
+    </tr>
+  </thead>
+  <tbody class="font-mono-2xs">
+    {% for class in classes %}
+    {% assign variant = false %}
+    {% if class.v2 contains "--" %}
+      {% assign variant = true %}
+      {% assign segments = class.v2 | split: '--' %}
+      {% assign base = segments |first %}
+    {% endif %}
+      <tr>
+        <td scope="row" data-title="USWDS 1.x">
+          <span{% if class.deprecated %} class="text-secondary-vivid"{% endif %}>
+            {{ class.v1 }}
+          </span>
+        </td>
+        <td scope="row" data-title="USWDS 2.0">
+          <span{% if class.deprecated %} class="text-secondary-vivid"{% endif %}>
+            {% if variant %}<span class="text-light text-primary">{{ base }}</span>{% endif %}{{ class.v2 }}
+          </span>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>

@@ -1,0 +1,14 @@
+- token: neg-3
+  value: -0.03em
+- token: neg-2
+  value: -0.02em
+- token: neg-1
+  value: -0.01em
+- token: auto
+  value: auto
+- token: 1
+  value: 0.025em
+- token: 2
+  value: 0.1em
+- token: 3
+  value: 0.15em

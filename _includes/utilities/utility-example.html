@@ -1,0 +1,22 @@
+<div class="utility-example-container{% if include.containerClasses %} {{ include.containerClasses }}{% endif %}">
+  <div class="usa-grid-row{% if include.wrap %}{% else %} flex-no-wrap{% endif %}{% if include.rowClasses %} {{ include.rowClasses }}{% endif %}">
+    <div class="usa-grid-col utility-example-class{% if include.utilityClasses %} {{ include.utilityClasses }}{% endif %}">
+      <span class="utility-class">{{ include.utility }}</span>
+    </div>
+    {% if include.value %}
+      <div class="usa-grid-col utility-example-value{% if include.valueClasses %} {{ include.valueClasses }}{% endif %}">
+        <span class="utility-value">{{ include.value }}</span>
+      </div>
+    {% endif %}
+    {% if include.example %}
+      <div class="usa-grid-col utility-example{% if include.exampleClasses %} {{ include.exampleClasses }}{% endif %}">
+        {{ include.example }}
+      </div>
+    {% endif %}
+    {% if include.usage %}
+      <div class="usa-grid-col utility-usage{% if include.usageClasses %} {{ include.usageClasses }}{% endif %}">
+        {{ include.usage }}
+      </div>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,29 @@
+{% assign is_number = false %}
+{% assign this_token = item.token %}
+{% assign divided = this_token | divided_by: 1%}
+{% if divided == 0 %}
+{% elsif this_token contains 'xs' %}
+{% elsif this_token contains 'xl' %}
+{% else %}
+  {% assign is_number = true %}
+{% endif %}
+{% if this_token == 0 or this_token == '0' %}
+  {% assign is_number = true %}
+{% endif %}
+{% if this_token == '05' %}
+  {% assign is_number = false %}
+{% endif %}
+{% if this_token == '105' %}
+  {% assign is_number = false %}
+{% endif %}
+{% if this_token == '205' %}
+  {% assign is_number = false %}
+{% endif %}
+
+{% assign converted = false %}
+{% assign conversion =
+  site.data.tokens.conversion
+  | where: 'token', item.token %}
+{% if conversion[0].number %}
+  {% assign converted = conversion[0].number %}
+{% endif %}

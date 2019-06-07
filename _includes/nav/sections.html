@@ -1,5 +1,5 @@
 {% for section in include.sections %}
-  <li>
+  <li class="usa-nav__primary-item">
   {% assign _page = section.href | resolve_permalink %}
   {% if section.collapsible %}
     {% include nav/page-collapsible.html page=_page %}

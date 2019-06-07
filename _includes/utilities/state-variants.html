@@ -1,0 +1,57 @@
+<section class="utilities-section margin-top-6" id="state-variants">
+  <h3 class="utilities-section-title">State variants</h3>
+  <p class="utility-text">Use a state prefix separated with a <code>:</code> to target a utility in a specific state.</p>
+  <aside class="example border-left-05 border-secondary-light padding-left-105 margin-top-2">
+    <h4 class="font-lang-2xs margin-top-0 margin-bottom-05">Example</h4>
+    <p class="font-mono-xs margin-top-0"><span class="text-red-warm-50v">.hover:</span>bg-primary-vivid</p>
+    <h4 class="font-lang-2xs margin-top-2 margin-bottom-05">Output</h4>
+<pre class=" font-mono-xs margin-0 padding-0 bg-transparent">
+.hover\:bg-primary-vivid:hover { background-color: #0052de; }
+</pre>
+  </aside>
+
+  <p class="utility-text margin-top-4">Set whether a utility outputs a specific state variant by setting the value of the <code>$[utility_family]-settings.[state]</code> variable in <code>_uswds-theme-utilities.scss</code>.</p>
+
+  <table class="usa-table--borderless site-table-responsive site-table-simple">
+    <thead>
+      <tr>
+        <th scope="col">Utility variable</th>
+        <th scope="col" class="tablet:maxw-15">active</th>
+        <th scope="col" class="tablet:maxw-15">focus</th>
+        <th scope="col" class="tablet:maxw-15">hover</th>
+        <th scope="col" class="tablet:maxw-15">visited</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      {% for utility in page.utilities %}
+        <tr>
+          <td scope="row" data-title="Utility variable" class="tablet:text-no-wrap">
+            <span>
+              ${{ utility.var }}-settings
+            </span>
+          </td>
+          <td data-title="active" class="tablet:maxw-15">
+            <span>
+              {% if utility.active %}<span class="output-true">true</span>{% else %}false{% endif %}
+            </span>
+          </td>
+          <td data-title="focus" class="tablet:maxw-15">
+            <span>
+              {% if utility.focus %}<span class="output-true">true</span>{% else %}false{% endif %}
+            </span>
+          </td>
+          <td data-title="hover" class="tablet:maxw-15">
+            <span>
+              {% if utility.hover %}<span class="output-true">true</span>{% else %}false{% endif %}
+            </span>
+          </td>
+          <td data-title="visited" class="tablet:maxw-15">
+            <span>
+              {% if utility.visited %}<span class="output-true">true</span>{% else %}false{% endif %}
+            </span>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>

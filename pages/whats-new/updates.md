@@ -10,7 +10,7 @@ redirect_from:
 ---
 {% capture lead %}
 From time to time we post product updates, guidance, and interviews
-we've conducted with users of the {{ site.title }}.
+we've conducted with USWDS users.
 {% endcapture %}
 {% include lead.html text=lead %}
 

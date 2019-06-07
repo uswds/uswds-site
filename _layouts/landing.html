@@ -3,50 +3,38 @@ layout: default
 ---
 
 <main id="main-content">
-  {% include banner-news.html %}
-  {% if page.hero %}
-  <section class="usa-hero">
-    <div class="usa-grid">
-      <div class="usa-hero-callout usa-section-dark">
-        {% if page.hero.callout %}
-        <h2><span class="usa-hero-callout-alt">{{ page.hero.callout }}</span></h2>
-        {% endif %}
+  <div class="bg-gold-20v padding-x-2 desktop:padding-x-4 padding-y-1 line-height-sans-3 font-lang-4">
+    For USWDS 1.x documentation, see <a href="https://v1.designsystem.digital.gov" class="text-ink text-bold text-no-underline hover:text-underline">v1.designsystem.digital.gov</a>.
+  </div>
+  <section class="site-hero">
+    <div class="grid-container">
+      <div class="maxw-mobile-lg">
+        <h1 class="hero--heading margin-y-0 line-height-sans-3 text-thin font-lang-13">A design system for the federal government.</h1>
+        <p class="hero--content font-lang-10 text-thin line-height-sans-4 margin-top-205 margin-bottom-105">We make it easier to build accessible, mobile-friendly government websites for the American public.</p>
+        <a class="usa-button bg-secondary hover:bg-secondary-dark text-normal font-lang-sm margin-top-1" href="{{ site.baseurl }}/whats-new/updates/2019/04/08/introducing-uswds-2-0/">Learn about USWDS 2</a>
+        <a class="usa-button hover:bg-primary-darker text-normal font-lang-sm bg-primary-vivid margin-top-1" href="{{ site.baseurl }}/documentation/migration/">Migrate to v2.0.3</a>
+      </div>
+    </div>
+  </section>
 
-        {{ page.hero.content | markdownify }}
-
-        {% if page.hero.button %}
-          <a class="usa-button usa-button-big usa-button-secondary" href="{{ page.hero.button.href }}">
-            {{ page.hero.button.text }}
-          </a>
-        {% endif %}
+  {% if page.graphic_list %}
+  <section class="usa-section usa-graphic-list grid-container">
+    <div class="">
+      <div class="grid-row grid-gap">
+        {% for list_item in page.graphic_list.list_item %}
+          <div class="desktop:grid-col-3 tablet:grid-col-6 usa-media-block margin-bottom-3 desktop:margin-bottom-0">
+            <img class="usa-media-block__img"  src="{{ list_item.image.src | relative_url }}" alt="{{ list_item.image.alt }}">
+            <div class="usa-media-block__body">
+              {% if list_item.topic %}<h3>{{ list_item.topic }}</h3>{% endif %}
+              {{ list_item.description | markdownify }}
+              <p><a href="{{ site.baseurl }}/{{ list_item.link.url }}/">{{ list_item.link.text }}</a></p>
+            </div>
+          </div>
+        {% endfor %}
       </div>
     </div>
   </section>
   {% endif %}
-
-  {% if page.graphic_list %}
-  <section class="usa-section usa-graphic_list">
-    <div class="usa-grid usa-graphic_list-row">
-      {% for list_item in page.graphic_list.list_item %}
-        <div class="usa-width-one-fourth usa-media_block">
-          <img class="usa-media_block-img"  src="{{ list_item.image.src | relative_url }}" alt="{{ list_item.image.alt }}">
-          <div class="usa-media_block-body">
-            {% if list_item.topic %}<h3>{{ list_item.topic }}</h3>{% endif %}
-            {{ list_item.description | markdownify }}
-            <p><a href="{{ site.baseurl }}/{{ list_item.link.url }}/">{{ list_item.link.text }}</a></p>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-  </section>
-  {% endif %}
-
-  <div class="usa-grid">
-    <hr class="homepage-rule center-diamond">
-  </div>
-
-  <section class="usa-grid usa-section">
-    {{ content }}
-  </section>
-
 </main>
+
+{{ content }}

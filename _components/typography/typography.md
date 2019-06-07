@@ -161,7 +161,4 @@ Letterspacing is the spacing between individual letterforms in a block of text. 
   </div>
 </div>
 
-<h2>Pairing and styles</h2>
-<div class="site-note"><strong>Note:</strong> This section is changing in USWDS 2.0. Updated guidance will appear soon.</div>
-
 {% include child-sections.html parent='typography' %}

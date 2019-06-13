@@ -13,7 +13,7 @@ var strip         = require('gulp-strip-css-comments');
 var task          = 'sass';
 
 var dev_plugins = [
-  autoprefixer({ browsers: ['> 2%','Last 2 versions','IE 11'], cascade: false, }),
+  autoprefixer({ cascade: false }),
   packCSS({ sort: true })
 ];
 

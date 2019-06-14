@@ -79,12 +79,14 @@ Your context and coding style determine how you access USWDS z-index tokens in c
         </td>
         <td data-title="Usage">
           <span>
-            z-index(<a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>)
+            z-index(<a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>)<br/>
+            z(<a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>)
           </span>
         </td>
         <td data-title="Example">
           <span>
-            z-index: z-index(<code>'bottom'</code>)
+            z-index: z-index(<code>'bottom'</code>)<br/>
+            z-index: z(<code>'bottom'</code>)
           </span>
         </td>
       </tr>
@@ -96,12 +98,12 @@ Your context and coding style determine how you access USWDS z-index tokens in c
         </td>
         <td data-title="Usage">
           <span>
-            u-z-index(<a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>)
+            u-z(<a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>)
           </span>
         </td>
         <td data-title="Example">
           <span>
-            @include u-z-index(<code>'bottom'</code>)<br/>
+            @include u-z(<code>'bottom'</code>)<br/>
           </span>
         </td>
       </tr>
@@ -130,12 +132,12 @@ Your context and coding style determine how you access USWDS z-index tokens in c
         </td>
         <td data-title="Usage">
           <span>
-            .z-index-<a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>
+            .z-<a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>
           </span>
         </td>
         <td data-title="Example">
           <span>
-            .z-index-<code>top</code>
+            .z-<code>top</code>
           </span>
         </td>
       </tr>

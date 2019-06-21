@@ -56,7 +56,6 @@
   },
   "dependencies": {
     "jquery": "^3.4.0",
-    "normalize.css": "^8.0.0",
     "uswds": "github:uswds/uswds#develop"
   },
   "devDependencies": {

@@ -1,5 +1,4 @@
 var autoprefixer  = require('autoprefixer');
-var combineMq     = require('gulp-combine-mq');
 var concat        = require('gulp-concat');
 var cssnano       = require('cssnano');
 var dutil         = require('./doc-util');
@@ -9,7 +8,6 @@ var packCSS       = require('css-mqpacker');
 var postcss       = require('gulp-postcss');
 var sass          = require('gulp-sass');
 var sourcemaps    = require('gulp-sourcemaps');
-var strip         = require('gulp-strip-css-comments');
 var task          = 'sass';
 
 var dev_plugins = [

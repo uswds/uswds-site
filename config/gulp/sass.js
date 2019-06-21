@@ -17,7 +17,7 @@ var dev_plugins = [
 
 var prod_plugins = [
   packCSS({ sort: true }),
-  cssnano({ autoprefixer: { browsers: '> 1% in US, last 2 versions, not dead, IE 11' }})
+  cssnano({ autoprefixer: { browsers: '> 2%, Last 2 versions, IE 11' }})
 ];
 
 gulp.task('build-sass-fonts', function () {

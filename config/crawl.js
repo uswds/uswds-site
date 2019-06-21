@@ -1,7 +1,6 @@
 const path = require('path');
 const fs = require('fs');
 const cheerio = require('cheerio');
-const express = require('express');
 const Crawler = require("simplecrawler");
 const chalk = require('chalk');
 

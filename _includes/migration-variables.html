@@ -1,0 +1,55 @@
+{% assign classes = site.data.migration['variables'] %}
+<table class="usa-table--borderless site-table-responsive site-table-simple">
+  <thead>
+    <tr>
+      <th scope="col" class="flex-1">USWDS v1.6.12</th>
+      <th scope="col" class="flex-2">USWDS v2</th>
+      <th scope="col" class="flex-1">v2 default</th>
+      <th scope="col" class="flex-1">kind</th>
+      <th scope="col" class="flex-1">location</th>
+      <th scope="col" class="flex-2">note</th>
+    </tr>
+  </thead>
+  <tbody class="font-mono-2xs">
+    {% for class in classes %}
+    {% assign variant = false %}
+    {% if class.v2 contains "--" %}
+      {% assign variant = true %}
+      {% assign segments = class.v2 | split: '--' %}
+      {% assign base = segments |first %}
+    {% endif %}
+      <tr>
+        <td scope="row" data-title="USWDS 1.6.12" class="flex-1">
+          <span class="font-lang-3xs">
+            {{ class.v1 }}
+          </span>
+        </td>
+        <td scope="row" data-title="USWDS 2" class="flex-2">
+            <span class="text-bold font-lang-3xs">
+              {{ class.v2 }}
+            </span>
+        </td>
+        <td scope="row" data-title="v2 default" class="flex-1">
+          <span class="text-primary-vivid">
+            {{ class.v2_value }}
+          </span>
+        </td>
+        <td scope="row" data-title="kind" class="flex-1">
+          <span{% if class.deprecated %} class="text-secondary-vivid"{% endif %}>
+            {{ class.kind }}
+          </span>
+        </td>
+        <td scope="row" data-title="location" class="flex-1">
+          <span{% if class.deprecated %} class="text-secondary-vivid"{% endif %}>
+            {{ class.location }}
+          </span>
+        </td>
+        <td scope="row" data-title="location" class="flex-2">
+          <span class="font-lang-3xs">
+            {{ class.notes | markdownify }}
+          </span>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>

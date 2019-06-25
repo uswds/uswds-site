@@ -124,6 +124,9 @@ This is what the HTML markup looks like going from v1 to v2:
 </div>
 ```
 
+## Variables
+{% include migration-variables.html %}
+
 ## Migration by component
 
 {: .site-note }

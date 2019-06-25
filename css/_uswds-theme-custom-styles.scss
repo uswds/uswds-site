@@ -2645,6 +2645,10 @@ $theme-table-column-gap: 4;
   }
 
   &.site-table-simple {
+    p {
+      margin: 0;
+    }
+
     @include at-media($theme-table-responsive-expand-at) {
       thead {
         @include u-font('lang', 2);
@@ -3120,3 +3124,4 @@ body {
 .post-content h2 {
   line-height: lh('lang', 2);
 }
+

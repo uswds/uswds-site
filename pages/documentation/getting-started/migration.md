@@ -12,7 +12,7 @@ subnav:
   href: '#bem'
 - text: Mixins and functions
   href: '#mixins-and-functions'
-- text: Spacing Units
+- text: Spacing units
   href: '#spacing-units'
 - text: Variables
   href: '#variables'

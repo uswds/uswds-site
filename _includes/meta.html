@@ -13,12 +13,14 @@
     | default: page.lead
     | default: site.description
     | markdownify
-    | strip_html
-    | strip
-    | xml_escape
   %}
 {% endif %}
 {% if desc -%}
+  {% assign desc = desc
+        | strip_html
+        | strip
+        | xml_escape
+      %}
 <meta name="description" content="{{ desc }}">
 <meta property="og:description" content="{{ desc }}">
 {% endif %}

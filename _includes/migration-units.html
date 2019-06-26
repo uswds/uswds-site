@@ -1,0 +1,70 @@
+{% assign classes = site.data.migration['units'] %}
+{% assign col1Title = 'USWDS v1' %}
+{% assign col1Width = 'flex-1' %}
+{% assign col2Title = 'USWDS v2' %}
+{% assign col2Width = 'flex-1' %}
+{% assign col3Title = 'Function' %}
+{% assign col3Width = 'flex-1' %}
+{% assign col4Title = 'Mixin' %}
+{% assign col4Width = 'flex-2' %}
+{% assign col5Title = 'Utility' %}
+{% assign col5Width = 'flex-2' %}
+{% assign col6Title = 'Setting' %}
+{% assign col6Width = 'flex-1' %}
+{% assign col7Title = 'Value' %}
+{% assign col7Width = 'flex-1' %}
+
+<table class="usa-table--borderless site-table-responsive site-table-simple margin-top-4">
+  <thead>
+    <tr>
+      <th scope="col" class="{{ col1Width }}">{{ col1Title }}</th>
+      <th scope="col" class="{{ col2Width }}">{{ col2Title }}</th>
+      <th scope="col" class="{{ col3Width }}">{{ col3Title }}</th>
+      <th scope="col" class="{{ col4Width }}">{{ col4Title }}</th>
+      <th scope="col" class="{{ col5Width }}">{{ col5Title }}</th>
+      <th scope="col" class="{{ col6Width }}">{{ col6Title }}</th>
+      <th scope="col" class="{{ col7Width }}">{{ col7Title }}</th>
+    </tr>
+  </thead>
+  <tbody class="font-mono-2xs">
+    {% for class in classes %}
+    <tr>
+      <td scope="row" data-title="{{ col1Title }}" class="{{ col1Width }}">
+        <span class="">
+          {{ class.v1 }}
+        </span>
+      </td>
+      <td scope="row" data-title="{{ col2Title }}" class="{{ col2Width }}">
+        <span class="text-bold">
+          {{ class.v2 }}
+        </span>
+      </td>
+      <td scope="row" data-title="{{ col3Title }}" class="{{ col3Width }}">
+        <span class="">
+          {{ class.function }}
+        </span>
+      </td>
+      <td scope="row" data-title="{{ col4Title }}" class="{{ col4Width }}">
+        <span>
+          {{ class.mixin }}
+        </span>
+      </td>
+      <td scope="row" data-title="{{ col5Title }}" class="{{ col5Width }}">
+        <span class="">
+          {{ class.utility }}
+        </span>
+      </td>
+      <td scope="row" data-title="{{ col6Title }}" class="{{ col6Width }}">
+        <span class="">
+          {{ class.setting }}
+        </span>
+      </td>
+      <td scope="row" data-title="{{ col7Title }}" class="{{ col7Width }}">
+        <span class="">
+          {{ class.value }}
+        </span>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

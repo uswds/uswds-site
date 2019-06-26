@@ -8,10 +8,14 @@ subnav:
   href: '#summary'
 - text: Integrating tokens
   href: '#integrating-tokens'
-- text: Mixins and functions
-  href: '#mixins-and-functions'
 - text: BEM
   href: '#bem'
+- text: Mixins and functions
+  href: '#mixins-and-functions'
+- text: Spacing units
+  href: '#spacing-units'
+- text: Variables
+  href: '#variables'
 - text: Migration by component
   href: '#migration-by-component'
 - text: 2.0.0 release notes
@@ -89,11 +93,6 @@ or
   }
 }
 ```
-
-## Mixins and functions
-{% include migration-table-mixins.html class='mixins' %}
-
-
 ## BEM
 To change your components from USWDS v1 to USWDS v2, you’ll need to update your classes to the BEM naming convention. We’ll walk through how to do that by looking at the alert component.
 - `usa-alert` is the **block**, the outermost parent element of the component. No need to change anything from v1 to v2.
@@ -123,6 +122,23 @@ This is what the HTML markup looks like going from v1 to v2:
   </div>
 </div>
 ```
+
+## Mixins and functions
+{% include migration-table-mixins.html class='mixins' %}
+
+## Spacing units
+Spacing units in USWDS 2 are based on multiples of `8px` with a handful of half sizes (`0.5`, `1.5`, and `2.5`), plus `1px` and `2px`. You'll need to update your project spacing when you migrate from v1 to v2 to use these new [units]({{ site.baseurl }}/design-tokens/spacing-units){:.token} tokens.
+
+Negative values should use the same migration pattern as positive values. See the [units]({{ site.baseurl }}/design-tokens/spacing-units){:.token} section for their naming convention and how to use negative tokens in functions, mixins, settings, and utilities.
+
+{: .site-note }
+**Rule of thumb:** We recommend rounding up to the larger spacing token when you have an existing value that falls between tokens. Only round down if the existing value is within `2px` of the token _and_ less than half of the distance between the bigger token and the smaller token. For instance `14px` would round up to `2 units` since `14px` is halfway between `1.5 units` (`12px`) and `2 units` (`16px`).
+
+
+{% include migration-units.html %}
+
+## Variables
+{% include migration-variables.html %}
 
 ## Migration by component
 

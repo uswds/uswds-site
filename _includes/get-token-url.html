@@ -1,0 +1,21 @@
+{% assign typesettingTokens = site.data.tokens.meta['typesetting'] %}
+{% assign fontTokens = site.data.tokens.meta['font'] %}
+{% assign generalTokens = site.data.tokens.meta['general'] %}
+
+{% assign token = include.token %}
+{% assign urlStub = false %}
+{% if typesettingTokens contains token %}
+  {% assign urlStub = token | prepend: 'typesetting/' %}
+{% elsif fontTokens contains token %}
+  {% assign urlStub = token | prepend: 'typesetting/font-' %}
+{% elsif generalTokens contains token %}
+  {% assign urlStub = token %}
+{% elsif token == 'units' %}
+  {% assign urlStub = 'spacing-units' %}
+{% endif %}
+
+{% if urlStub %}
+<a href="{{ site.baseurl }}/design-tokens/{{ urlStub }}" class="token">{{ token }}</a>
+{% else %}
+{{ token }}
+{% endif %}

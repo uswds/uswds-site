@@ -17,10 +17,10 @@
 {% endif %}
 {% if desc -%}
   {% assign desc = desc
-        | strip_html
-        | strip
-        | xml_escape
-      %}
+    | strip_html
+    | strip
+    | xml_escape
+  %}
 <meta name="description" content="{{ desc }}">
 <meta property="og:description" content="{{ desc }}">
 {% endif %}

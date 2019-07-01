@@ -1933,6 +1933,12 @@ strong {
   @include u-text('white');
 }
 
+.output-false {
+  @extend .output-true;
+  @include u-bg('error');
+}
+
+
 // Ensure that inline lists do not have a bottom margin
 li {
   &.display-inline-block {

@@ -1,0 +1,103 @@
+{% assign col1Title = 'Name' %}
+{% assign col1Width = 'flex-2' %}
+{% assign col2Title = 'Variable' %}
+{% assign col2Width = 'flex-3' %}
+{% assign col3Title = 'Default' %}
+{% assign col3Width = 'flex-2' %}
+{% assign col4Title = 'Kind' %}
+{% assign col4Width = 'flex-1' %}
+{% assign col5Title = 'Usage' %}
+{% assign col5Width = 'flex-3' %}
+
+{% assign settings = include.settings %}
+
+<table class="usa-table--borderless site-table-responsive site-table-simple">
+  <thead>
+    <tr>
+      <th scope="col" class="{{ col1Width }}">{{ col1Title }}</th>
+      <th scope="col" class="{{ col2Width }}">{{ col2Title }}</th>
+      <th scope="col" class="{{ col3Width }}">{{ col3Title }}</th>
+      <th scope="col" class="{{ col4Width }}">{{ col4Title }}</th>
+      <th scope="col" class="{{ col5Width }}">{{ col5Title }}</th>
+    </tr>
+  </thead>
+  <tbody class="font-mono-2xs">
+    {% for setting in settings %}
+    <tr class="{% if setting.section %}tablet:border-top-2px tablet:margin-top-2{% endif %}">
+      <td scope="row" data-title="{{ col1Title }}" class="{{ col1Width }}">
+        <span class="text-bold font-lang-3xs">
+          {{ setting.name }}
+        </span>
+        {% if setting.subsection %}
+          <span class="font-normal font-lang-3xs display-block">
+            {{ setting.subsection }}
+          </span>
+        {% endif %}
+      </td>
+      <td scope="row" data-title="{{ col2Title }}" class="{{ col2Width }}">
+        <span class="">
+          {{ setting.var }}
+        </span>
+      </td>
+      <td scope="row" data-title="{{ col3Title }}" class="{{ col3Width }}">
+        {% assign defaultFormat = false %}
+        {% if setting.default == 'true' %}
+          {% assign defaultFormat = 'output-true' %}
+        {% elsif setting.default == 'false' %}
+          {% assign defaultFormat = 'output-false' %}
+        {% endif %}
+        <span class="{% if defaultFormat %}{{ defaultFormat }}{% endif %}">
+          {{ setting.default }}
+        </span>
+      </td>
+      <td scope="row" data-title="{{ col4Title }}" class="{{ col4Width }}">
+        <span>
+          {% include get-token-url.html token=setting.kind %}
+        </span>
+      </td>
+      <td scope="row" data-title="{{ col5Title }}" class="{{ col5Width }}">
+        <span class="font-lang-3xs">
+          {{ setting.description | markdownify }}
+        </span>
+      </td>
+    </tr>
+      {% if setting.map %}
+        {% for entry in setting.map %}
+          <tr class="border-base-lighter">
+            <td scope="row" data-title="{{ col1Title }}" class="{{ col1Width }}">
+              <span class="tablet:display-none font-lang-3xs">
+                {{ setting.name }}
+              </span>
+            </td>
+            <td scope="row" data-title="{{ col2Title }}" class="{{ col2Width }}">
+              <span class="text-primary-vivid">
+                {{ entry.key }}
+              </span>
+            </td>
+            <td scope="row" data-title="{{ col3Title }}" class="{{ col3Width }}">
+              {% assign defaultFormat = false %}
+              {% if entry.value == 'true' %}
+                {% assign defaultFormat = 'output-true' %}
+              {% elsif entry.value == 'false' %}
+                {% assign defaultFormat = 'output-false' %}
+              {% endif %}
+              <span class="{% if defaultFormat %}{{ defaultFormat }}{% endif %}">
+                {{ entry.value }}
+              </span>
+            </td>
+            <td scope="row" data-title="{{ col4Title }}" class="{{ col4Width }}">
+              <span>
+                {% include get-token-url.html token=entry.kind %}
+              </span>
+            </td>
+            <td scope="row" data-title="{{ col5Title }}" class="{{ col5Width }}">
+              <span class="font-lang-3xs">
+                {{ entry.description | markdownify }}
+              </span>
+            </td>
+          </tr>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  </tbody>
+</table>

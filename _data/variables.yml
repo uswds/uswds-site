@@ -1,0 +1,1083 @@
+- section:
+  name: General
+  description: General
+  contents:
+  - name        : Image path
+    description : Use a path relative to the location of the final compiled CSS
+    var         : $theme-image-path
+    default     : "'../img'"
+    kind        : path
+
+  - name        : Show compile warnings
+    description : Show Sass warnings when functions and mixins use non-standard tokens.
+    var         : $theme-show-compile-warnings
+    default     : 'true'
+    kind        : boolean
+
+  - name        : Namespace
+    description : Set a namespace for grid and utility classes
+    var         : $theme-namespace
+    default     :
+    kind        : map
+    map         :
+      - key: grid.namespace
+        description: The grid class prefix
+        value: "'grid-'"
+        kind: string
+      - key: grid.output
+        description: Set prefix output
+        value: 'true'
+        kind: boolean
+      - key: utility.namespace
+        description: The utility class prefix
+        value: "'u-'"
+        kind: string
+      - key: utility.output
+        description: Set prefix output
+        value: 'true'
+        kind: boolean
+
+  - name        : Important layout grid
+    description : |
+      Should the layout grid classes output with !important
+    var         : $theme-layout-grid-use-important
+    default     : 'false'
+    kind        : boolean
+
+  - name        : Border box sizing
+    description : |
+      When set to true, sets the box-sizing property of all site elements to `border-box`.
+    var         : $theme-global-border-box-sizing
+    default     : 'false'
+    kind        : boolean
+
+  - name        : Focus
+    subsection  : color
+    description :
+    var         : $theme-focus-color
+    default     : "'blue-40v'"
+    kind        : color
+
+  - name        : Focus
+    subsection  : offset
+    description : |
+      The offset between the element and the focus outline
+    var         : $theme-focus-offset
+    default     : 0
+    kind        : units
+
+  - name        : Focus
+    subsection  : style
+    description :
+    var         : $theme-focus-style
+    default     : solid
+    kind        : border-style
+
+  - name        : Focus
+    subsection  : width
+    description : |
+      The width of the focus outline
+    var         : $theme-focus-width
+    default     : 0.5
+    kind        : units
+
+  - name        : Icon size
+    description : |
+      The size of a standard UI icon (like a close box)
+    var         : $theme-icon-image-size
+    default     : 2
+    kind        : units
+
+- section:
+  name: Color
+  description: Color
+  contents:
+  - name        : Base color family
+    description : Color family of site text
+    var         : $theme-color-base-family
+    default     : "'gray-cool'"
+    kind        : color
+  - name        : base-lightest
+    subsection  : theme color token
+    description : Use grades from 0-10
+    var         : $theme-color-base-lightest
+    default     : "'gray-5'"
+    kind        : color
+  - name        : base-lighter
+    subsection  : theme color token
+    description : Use grades from 10-20
+    var         : $theme-color-base-lighter
+    default     : "'gray-cool-10'"
+    kind        : color
+  - name        : base-light
+    subsection  : theme color token
+    description : Use grades from 30-40
+    var         : $theme-color-base-light
+    default     : "'gray-cool-30'"
+    kind        : color
+  - name        : base
+    subsection  : theme color token
+    description : Use grades from 40-50
+    var         : $theme-color-base
+    default     : "'gray-cool-50'"
+    kind        : color
+  - name        : base-dark
+    subsection  : theme color token
+    description : Use grades from 50-70
+    var         : $theme-color-base-dark
+    default     : "'gray-cool-60'"
+    kind        : color
+  - name        : base-darker
+    subsection  : theme color token
+    description : Use grades from 60-90
+    var         : $theme-color-base-darker
+    default     : "'gray-cool-70'"
+    kind        : color
+  - name        : base-darkest
+    subsection  : theme color token
+    description : Use grades from 70-90
+    var         : $theme-color-base-darkest
+    default     : "'gray-90'"
+    kind        : color
+  - name        : ink
+    subsection  : theme color token
+    description : Recommend a clone of `base-darkest`
+    var         : $theme-color-base-ink
+    default     : "'gray-90'"
+    kind        : color
+
+  - name        : Primary color family
+    section     : true
+    description : Color family of ~60% of the non-base color
+    var         : $theme-color-primary-family
+    default     : "'blue'"
+    kind        : color
+  - name        : primary-lightest
+    subsection  : theme color token
+    description : Use grades 0-10.
+    var         : $theme-color-primary-lightest
+    default     : 'false'
+    kind        : color
+  - name        : primary-lighter
+    subsection  : theme color token
+    description : Use grades 10-20.
+    var         : $theme-color-primary-lighter
+    default     : "'blue-10'"
+    kind        : color
+  - name        : primary-light
+    subsection  : theme color token
+    description : Use grades 30-40.
+    var         : $theme-color-primary-light
+    default     : "'blue-30'"
+    kind        : color
+  - name        : primary
+    subsection  : theme color token
+    description : Use grades 40-60
+    var         : $theme-color-primary
+    default     : "'blue-60v'"
+    kind        : color
+  - name        : primary-vivid
+    subsection  : theme color token
+    description : Use vivid grades 30-60
+    var         : $theme-color-primary
+    default     : "'blue-warm-60v'"
+    kind        : color
+  - name        : primary-dark
+    subsection  : theme color token
+    description : Use grades 50-70
+    var         : $theme-color-primary-dark
+    default     : "'blue-warm-70v'"
+    kind        : color
+  - name        : primary-darker
+    subsection  : theme color token
+    description : Use grades 60-90
+    var         : $theme-color-primary-darker
+    default     : "'blue-warm-80v'"
+    kind        : color
+  - name        : primary-darkest
+    subsection  : theme color token
+    description : Use grades 70-90
+    var         : $theme-color-primary-darkest
+    default     : 'false'
+    kind        : color
+
+  - name        : Secondary color family
+    section     : true
+    description : Color family of ~30% of the non-base color
+    var         : $theme-color-secondary-family
+    default     : "'red'"
+    kind        : color
+  - name        : secondary-lightest
+    subsection  : theme color token
+    description : Use grades 0-10
+    var         : $theme-color-secondary-lightest
+    default     : 'false'
+    kind        : color
+  - name        : secondary-lighter
+    subsection  : theme color token
+    description : Use grades 10-20
+    var         : $theme-color-secondary-lighter
+    default     : "'red-cool-10'"
+    kind        : color
+  - name        : secondary-light
+    subsection  : theme color token
+    description : Use grades 30-40
+    var         : $theme-color-secondary-light
+    default     : "'red-30'"
+    kind        : color
+  - name        : secondary
+    subsection  : theme color token
+    description : Use grades 40-60
+    var         : $theme-color-secondary
+    default     : "'red-50'"
+    kind        : color
+  - name        : secondary-vivid
+    subsection  : theme color token
+    description : Use vivid grades 30-60
+    var         : $theme-color-secondary
+    default     : "'red-cool-50v'"
+    kind        : color
+  - name        : secondary-dark
+    subsection  : theme color token
+    description : Use grades 50-70
+    var         : $theme-color-secondary-dark
+    default     : "'red-60v'"
+    kind        : color
+  - name        : secondary-darker
+    subsection  : theme color token
+    description : Use grades 60-90
+    var         : $theme-color-secondary-darker
+    default     : "'red-70v'"
+    kind        : color
+  - name        : secondary-darkest
+    subsection  : theme color token
+    description : Use grades 70-90
+    var         : $theme-color-secondary-darkest
+    default     : 'false'
+    kind        : color
+
+  - name        : Accent warm color family
+    section     : true
+    description : Color family of occasional warm accents
+    var         : $theme-color-accent-warm-family
+    default     : "'orange'"
+    kind        : color
+  - name        : accent-warm-lightest
+    subsection  : theme color token
+    description : Use grades 0-10
+    var         : $theme-color-accent-warm-lightest
+    default     : 'false'
+    kind        : color
+  - name        : accent-warm-lighter
+    subsection  : theme color token
+    description : Use grades 10-20
+    var         : $theme-color-accent-warm-lighter
+    default     : "'orange-10'"
+    kind        : color
+  - name        : accent-warm-light
+    subsection  : theme color token
+    description : Use grades 20-40
+    var         : $theme-color-accent-warm-light
+    default     : "'orange-20v'"
+    kind        : color
+  - name        : accent-warm
+    subsection  : theme color token
+    description : Use grades 30-60
+    var         : $theme-color-accent-warm
+    default     : "'orange-30v'"
+    kind        : color
+  - name        : accent-warm-dark
+    subsection  : theme color token
+    description : Use grades 50-70
+    var         : $theme-color-accent-warm-dark
+    default     : "'orange-50v'"
+    kind        : color
+  - name        : accent-warm-darker
+    subsection  : theme color token
+    description : Use grades 60-90
+    var         : $theme-color-accent-warm-darker
+    default     : "'orange-60v'"
+    kind        : color
+  - name        : accent-warm-lightest
+    subsection  : theme color token
+    description : Use grades 70-90
+    var         : $theme-color-accent-warm-darkest
+    default     : 'false'
+    kind        : color
+
+  - name        : Accent cool color family
+    section     : true
+    description : Color family of occasional cool accents
+    var         : $theme-color-accent-cool-family
+    default     : "'blue-cool'"
+    kind        : color
+  - name        : accent-cool-lightest
+    subsection  : theme color token
+    description : Use grades 0-20
+    var         : $theme-color-accent-cool-lightest
+    default     : 'false'
+    kind        : color
+  - name        : accent-cool-lighter
+    subsection  : theme color token
+    description : Use grades 10-30
+    var         : $theme-color-accent-cool-lighter
+    default     : "'blue-cool-5v'"
+    kind        : color
+  - name        : accent-cool-light
+    subsection  : theme color token
+    description : Use grades 30-40
+    var         : $theme-color-accent-cool-light
+    default     : "'blue-cool-20v'"
+    kind        : color
+  - name        : accent-cool
+    subsection  : theme color token
+    var         : $theme-color-accent-cool
+    default     : "'cyan-30v'"
+    kind        : color
+  - name        : accent-cool-dark
+    subsection  : theme color token
+    description : Use grades 50-60
+    var         : $theme-color-accent-cool-dark
+    default     : "'blue-cool-40v'"
+    kind        : color
+  - name        : accent-cool-darker
+    subsection  : theme color token
+    description : Use grades 60-80
+    var         : $theme-color-accent-cool-darker
+    default     : "'blue-cool-60v'"
+    kind        : color
+  - name        : accent-cool-darkest
+    subsection  : theme color token
+    description : Use grades 70-100
+    var         : $theme-color-accent-cool-darkest
+    default     : 'false'
+    kind        : color
+
+  - name        : Error color family
+    section     : true
+    description : Color family of error messaging
+    var         : $theme-color-error-family
+    default     : "'red-warm'"
+    kind        : color
+  - name        : error-lighter
+    subsection  : state color token
+    description : Use grades 10-30.
+    var         : $theme-color-error-lighter
+    default     : "'red-warm-10'"
+    kind        : color
+  - name        : error-light
+    subsection  : state color token
+    description : Use grades 30-40.
+    var         : $theme-color-error-light
+    default     : "'red-warm-30v'"
+    kind        : color
+  - name        : error
+    subsection  : state color token
+    description : Use grades 50-60
+    var         : $theme-color-error
+    default     : "'red-warm-50v'"
+    kind        : color
+  - name        : error-dark
+    subsection  : state color token
+    description : Use grades 60-70
+    var         : $theme-color-error-dark
+    default     : "'red-60v'"
+    kind        : color
+  - name        : error-darker
+    subsection  : state color token
+    description : Use grades 70-80
+    var         : $theme-color-error-darker
+    default     : "'red-70'"
+    kind        : color
+
+  - name        : Warning color family
+    section     : true
+    description : Color family of warning messaging
+    var         : $theme-color-warning-family
+    default     : "'gold'"
+    kind        : color
+  - name        : warning-lighter
+    subsection  : state color token
+    description : Use grades 0-30.
+    var         : $theme-color-warning-lighter
+    default     : "'yellow-5'"
+    kind        : color
+  - name        : warning-light
+    subsection  : state color token
+    description : Use grades 10-40.
+    var         : $theme-color-warning-light
+    default     : "'yellow-10v'"
+    kind        : color
+  - name        : warning
+    subsection  : state color token
+    description : Use grades 50-60
+    var         : $theme-color-warning
+    default     : "'gold-20v'"
+    kind        : color
+  - name        : warning-dark
+    subsection  : state color token
+    description : Use grades 60-70
+    var         : $theme-color-warning-dark
+    default     : "'gold-30v'"
+    kind        : color
+  - name        : warning-darker
+    subsection  : state color token
+    description : Use grades 70-80
+    var         : $theme-color-warning-darker
+    default     : "'gold-50v'"
+    kind        : color
+
+  - name        : Success color family
+    section     : true
+    description : Color family of success messaging
+    var         : $theme-color-success-family
+    default     : "'green-cool'"
+    kind        : color
+  - name        : success-lighter
+    subsection  : state color token
+    description : Use grades 0-30
+    var         : $theme-color-success-lighter
+    default     : "'green-cool-5'"
+    kind        : color
+  - name        : success-light
+    subsection  : state color token
+    description : Use grades 10-40
+    var         : $theme-color-success-light
+    default     : "'green-cool-20v'"
+    kind        : color
+  - name        : success
+    subsection  : state color token
+    description : Use grades 50-60
+    var         : $theme-color-success
+    default     : "'green-cool-40v'"
+    kind        : color
+  - name        : success-dark
+    subsection  : state color token
+    description : Use grades 60-70
+    var         : $theme-color-success-dark
+    default     : "'green-cool-50'"
+    kind        : color
+  - name        : success-darker
+    subsection  : state color token
+    description : Use grades 70-80
+    var         : $theme-color-success-darker
+    default     : "'green-cool-60'"
+    kind        : color
+
+  - name        : Info color family
+    section     : true
+    description : Color family of info messaging
+    var         : $theme-color-info-family
+    default     : "'cyan'"
+    kind        : color
+  - name        : info-lighter
+    subsection  : state color token
+    description : Use grades 0-30
+    var         : $theme-color-info-lighter
+    default     : "'cyan-5'"
+    kind        : color
+  - name        : info-light
+    subsection  : state color token
+    description : Use grades 10-40
+    var         : $theme-color-info-light
+    default     : "'cyan-20'"
+    kind        : color
+  - name        : info
+    subsection  : state color token
+    description : Use grades 50-60
+    var         : $theme-color-info
+    default     : "'cyan-30v'"
+    kind        : color
+  - name        : info-dark
+    subsection  : state color token
+    description : Use grades 60-70
+    var         : $theme-color-info-dark
+    default     : "'cyan-40v'"
+    kind        : color
+  - name        : info-darker
+    subsection  : state color token
+    description : Use grades 70-80
+    var         : $theme-color-info-darker
+    default     : "'blue-cool-60'"
+    kind        : color
+
+  - name        : Disabled color family
+    section     : true
+    description : Color family of disabled actions
+    var         : $theme-color-info-family
+    default     : "'gray'"
+    kind        : color
+  - name        : info-light
+    subsection  : state color token
+    description : Use grade 10
+    var         : $theme-color-info-light
+    default     : "'gray-10'"
+    kind        : color
+  - name        : info
+    subsection  : state color token
+    description : Use grade 20
+    var         : $theme-color-info
+    default     : "'gray-20'"
+    kind        : color
+  - name        : info-dark
+    subsection  : state color token
+    description : Use grade 30
+    var         : $theme-color-info-dark
+    default     : "'gray-30'"
+    kind        : color
+
+  - name        : Link color
+    section     : true
+    description : Color for text links
+    var         : $theme-color-info-family
+    default     : "'primary'"
+    kind        : color
+  - name        : Visited link color
+    description : Color for `:visted` text links
+    var         : $theme-color-info-family
+    default     : "'violet-70v'"
+    kind        : color
+  - name        : Hover link color
+    description : Color for `:hover` text links
+    var         : $theme-color-info-family
+    default     : "'primary-dark'"
+    kind        : color
+  - name        : Active link color
+    description : Color for `:active` text links
+    var         : $theme-color-info-family
+    default     : "'primary-darker'"
+    kind        : color
+
+- section:
+  name: Typography
+  description: Set values related to typefaces, type style, font size, and weights
+  contents:
+  - name        : Respect user font size
+    description : |
+      When `true` the root font size will be `100%` and media queries use  ems. When `false`, the root font size will be the px value specified in `$theme-root-font-size` and media queries will use px values.
+    var         : $theme-respect-user-font-size
+    default     : 'true'
+    kind        : boolean
+  - name        : Root font size
+    description : |
+      Only applies when `$theme-respect-user-font-size` is `false`. Sets the root font size to the specified px value and uses px values for media queries.
+    var         : $theme-root-font-size
+    default     : 10px
+    kind        : px
+  - name        : Global paragraph styles
+    description : Adds basic styling to `p` elements
+    var         : $theme-global-paragraph-styles
+    default     : 'false'
+    kind        : boolean
+  - name        : Global link styles
+    description : Adds basic styling to `a` elements
+    var         : $theme-global-link-styles
+    default     : 'false'
+    kind        : boolean
+  - name        : Global content styles
+    description : Adds basic styling to paragraph text, links, headings, lists, and tables
+    var         : $theme-global-content-styles
+    default     : 'false'
+    kind        : boolean
+  - name        : Font path
+    description : Path to the font files, relative to the compiled css
+    var         : $theme-global-content-styles
+    default     : "'../fonts'"
+    kind        : path
+
+  - name        : Custom typeface tokens
+    description : Add custom typeface tokens
+    var         : $theme-typeface-tokens
+    default     :
+    kind        : map
+    map         :
+      - key: token
+        description: The name of the token
+        value: example-serif-token
+        kind: string
+      - key: token.display-name
+        description: Display name of the typeface
+        value: "'Example Serif Display Name'"
+        kind: boolean
+      - key: token.cap-height
+        description: Height of a 500px `N` character in Sketch
+        value: 364px
+        kind: px
+  - name        : cond
+    section     : true
+    subsection  : font-family token
+    description : Project condensed font. <br/>Set to `false` if unused.
+    var         : $theme-font-type-cond
+    default     : "false"
+    kind        : family
+  - name        : icon
+    subsection  : font-type token
+    description : Project icon font. <br/>Set to `false` if unused.
+    var         : $theme-font-type-icon
+    default     : "false"
+    kind        : family
+  - name        : lang
+    subsection  : font-family token
+    description : Project language-specific font. <br/>Set to `false` if unused.
+    var         : $theme-font-type-lang
+    default     : "false"
+    kind        : family
+  - name        : mono
+    subsection  : font family token
+    description : Project monospaced font. <br/>Set to `false` if unused.
+    var         : $theme-font-type-mono
+    default     : "roboto-mono"
+    kind        : family
+  - name        : sans
+    subsection  : font-family token
+    description : Project sans-serif font. <br/>Set to `false` if unused.
+    var         : $theme-font-type-sans
+    default     : "source-sans-proi"
+    kind        : family
+  - name        : serif
+    subsection  : font-family token
+    description : Project serif font. <br/>Set to `false` if unused.
+    var         : $theme-font-type-serif
+    default     : "merriweather"
+    kind        : family
+
+  - name        : ui
+    section     : true
+    subsection  : font-family token
+    description : Assign font family used for interfaces and buttons from type-based `family` tokens
+    var         : $theme-font-role-ui
+    default     : "'sans'"
+    kind        : family
+  - name        : heading
+    subsection  : font-family token
+    description : Assign font family used for headings from type-based `family` tokens
+    var         : $theme-font-role-heading
+    default     : "'serif'"
+    kind        : family
+  - name        : body
+    subsection  : font-family token
+    description : Assign font family used for body text from type-based `family` tokens
+    var         : $theme-font-role-body
+    default     : "'serif'"
+    kind        : family
+  - name        : code
+    subsection  : font-family token
+    description : Assign font family used for code from type-based `family` tokens
+    var         : $theme-font-role-code
+    default     : "'serif'"
+    kind        : family
+  - name        : alt
+    subsection  : font-family token
+    description : Assign font family used for alternative type sections from type-based `family` tokens
+    var         : $theme-font-role-alt
+    default     : "'serif'"
+    kind        : family
+
+  - name        : 3xs
+    section     : true
+    subsection  : font-size token
+    description : Use system `size` tokens. <br/>Use `false` if unused.
+    var         : $theme-type-scale-3xs
+    default     : 2
+    kind        : size
+  - name        : 2xs
+    subsection  : font-size token
+    description : Use system `size` tokens. <br/>Use `false` if unused.
+    var         : $theme-type-scale-2xs
+    default     : 3
+    kind        : size
+  - name        : xs
+    subsection  : font-size token
+    description : Use system `size` tokens. <br/>Use `false` if unused.
+    var         : $theme-type-scale-xs
+    default     : 4
+    kind        : size
+  - name        : sm
+    subsection  : font-size token
+    description : Use system `size` tokens. <br/>Use `false` if unused.
+    var         : $theme-type-scale-sm
+    default     : 5
+    kind        : size
+  - name        : md
+    subsection  : font-size token
+    description : Use system `size` tokens. <br/>Use `false` if unused.
+    var         : $theme-type-scale-md
+    default     : 6
+    kind        : size
+  - name        : lg
+    subsection  : font-size token
+    description : Use system `size` tokens. <br/>Use `false` if unused.
+    var         : $theme-type-scale-lg
+    default     : 9
+    kind        : size
+  - name        : xl
+    subsection  : font-size token
+    description : Use system `size` tokens. <br/>Use `false` if unused.
+    var         : $theme-type-scale-xl
+    default     : 12
+    kind        : size
+  - name        : 2xl
+    subsection  : font-size token
+    description : Use system `size` tokens. <br/>Use `false` if unused.
+    var         : $theme-type-scale-2xl
+    default     : 14
+    kind        : size
+  - name        : 3xl
+    subsection  : font-size token
+    description : Use system `size` tokens. <br/>Use `false` if unused.
+    var         : $theme-type-scale-3xl
+    default     : 15
+    kind        : size
+
+  - name        : thin
+    section     : true
+    subsection  : font-weight token
+    description : Use system `weight` tokens. <br/>Use `false` if unused.
+    var         : $theme-font-weight-thin
+    default     : 'false'
+    kind        : weight
+  - name        : light
+    subsection  : font-weight token
+    description : Use system `weight` tokens. <br/>Use `false` if unused.
+    var         : $theme-font-weight-light
+    default     : 300
+    kind        : weight
+  - name        : normal
+    subsection  : font-weight token
+    description : Use system `weight` tokens. <br/>Use `false` if unused.
+    var         : $theme-font-weight-normal
+    default     : 400
+    kind        : weight
+  - name        : medium
+    subsection  : font-weight token
+    description : Use system `weight` tokens. <br/>Use `false` if unused.
+    var         : $theme-font-weight-medium
+    default     : 'false'
+    kind        : weight
+  - name        : semibold
+    subsection  : font-weight token
+    description : Use system `weight` tokens. <br/>Use `false` if unused.
+    var         : $theme-font-weight-medium
+    default     : 'false'
+    kind        : weight
+  - name        : bold
+    subsection  : font-weight token
+    description : Use system `weight` tokens. <br/>Use `false` if unused.
+    var         : $theme-font-weight-bold
+    default     : 700
+    kind        : weight
+  - name        : heavy
+    subsection  : font-weight token
+    description : Use system `weight` tokens. <br/>Use `false` if unused.
+    var         : $theme-font-weight-heavy
+    default     : 'false'
+    kind        : weight
+  - name        : Generate all font weights
+    subsection  : font-weight token
+    description : |
+      If USWDS is generating your `@font-face` rules, should we generate all available weights regardless of the assignments above?
+    var         : $theme-generate-all-weights
+    default     : 'false'
+    kind        : boolean
+
+  - name        : Condensed custom font stack
+    section     : yes
+    description : Custom font stack for condensed font. <br/>Set to `false` if unused.
+    var         : $theme-font-cond-custom-stack
+    default     : "false"
+    kind        : font stack
+  - name        : Icon font stack
+    description : Custom font stack for icon font. <br/>Set to `false` if unused.
+    var         : $theme-font-icon-custom-stack
+    default     : "false"
+    kind        : font stack
+  - name        : Language-specific font stack
+    description : Custom font stack for language-specific font. <br/>Set to `false` if unused.
+    var         : $theme-font-lang-custom-stack
+    default     : "false"
+    kind        : font stack
+  - name        : Monospaced font stack
+    description : Custom font stack for monospaced font. <br/>Set to `false` if unused.
+    var         : $theme-font-mono-custom-stack
+    default     : "false"
+    kind        : font stack
+  - name        : Sans-serif font stack
+    description : Custom font stack for sans-serif font. <br/>Set to `false` if unused.
+    var         : $theme-font-sans-custom-stack
+    default     : "false"
+    kind        : font stack
+  - name        : Serif font stack
+    description : Custom font stack for serif font. <br/>Set to `false` if unused.
+    var         : $theme-font-serif-custom-stack
+    default     : "false"
+    kind        : font stack
+
+  - name        : Custom font source files
+    section     : true
+    description : |
+      If you want USWDS to generate additional `@font-face` declarations, add your font data to the following variables as a map with these keys. You must include fonts saved as `.ttf`, `.woff`, and `.woff2`.
+    var         : $theme-font-[family]-custom-src
+    default     :
+    kind        : map
+    map         :
+      - key: dir
+        description: Path relative to `$theme-font-path`
+        value: "'custom/example-serif'"
+        kind: path
+      - key: roman.100
+        description: |
+          The Roman 100 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "false"
+        kind: file name
+      - key: roman.200
+        description: |
+          The Roman 200 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "false"
+        kind: file name
+      - key: roman.300
+        description: |
+          The Roman 300 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "'ExampleSerif-Light'"
+        kind: file name
+      - key: roman.400
+        description: |
+          The Roman 400 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "'ExampleSerif-Normal'"
+        kind: file name
+      - key: roman.500
+        description: |
+          The Roman 500 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "false"
+        kind: file name
+      - key: roman.600
+        description: |
+          The Roman 600 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "false"
+        kind: file name
+      - key: roman.700
+        description: |
+          The Roman 700 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "'ExampleSerif-Bold'"
+        kind: file name
+      - key: roman.800
+        description: |
+          The Roman 800 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "false"
+        kind: file name
+      - key: roman.900
+        description: |
+          The Roman 900 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "false"
+        kind: file name
+      - key: italic.100
+        description: |
+          The Italic 100 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "false"
+        kind: file name
+      - key: italic.200
+        description: |
+          The Italic 200 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "false"
+        kind: file name
+      - key: italic.300
+        description: |
+          The Italic 300 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "'ExampleSerif-LightItalic'"
+        kind: file name
+      - key: italic.400
+        description: |
+          The Italic 400 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "'ExampleSerif-Italic'"
+        kind: file name
+      - key: italic.500
+        description: |
+          The Italic 500 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "false"
+        kind: file name
+      - key: italic.600
+        description: |
+          The Italic 600 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "false"
+        kind: file name
+      - key: italic.700
+        description: |
+          The Italic 700 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "'ExampleSerif-BoldItalic'"
+        kind: file name
+      - key: italic.800
+        description: |
+          The Italic 800 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "false"
+        kind: file name
+      - key: italic.900
+        description: |
+          The Italic 900 font file, filetype excluded.
+          <br/>Set to `false` if unused.
+        value: "false"
+        kind: file name
+  - name        : Custom condensed source files
+    description : _See guidance above._ <br/>Set to `false` if unused.
+    var         : $theme-font-cond-custom-src
+    default     : 'false'
+    kind        : map
+  - name        : Custom icon source files
+    description : _See guidance above._ <br/>Set to `false` if unused.
+    var         : $theme-font-icon-custom-src
+    default     : 'false'
+    kind        : map
+  - name        : Custom language-specific source files
+    description : _See guidance above._ <br/>Set to `false` if unused.
+    var         : $theme-font-lang-custom-src
+    default     : 'false'
+    kind        : map
+  - name        : Custom monospaced source files
+    description : _See guidance above._ <br/>Set to `false` if unused.
+    var         : $theme-font-mono-custom-src
+    default     : 'false'
+    kind        : map
+  - name        : Custom sans-serif source files
+    description : _See guidance above._ <br/>Set to `false` if unused.
+    var         : $theme-font-sans-custom-src
+    default     : 'false'
+    kind        : map
+  - name        : Custom serif source files
+    description : _See guidance above._ <br/>Set to `false` if unused.
+    var         : $theme-font-serif-custom-src
+    default     : 'false'
+    kind        : map
+
+  - name        : Body font family
+    section     : true
+    description : Use theme tokens when possible
+    var         : $theme-body-font-family
+    default     : "'body'"
+    kind        : family
+  - name        : Body font size
+    description : Use theme tokens when possible
+    var         : $theme-body-font-size
+    default     : "'sm'"
+    kind        : size
+  - name        : Body line height
+    description :
+    var         : $theme-body-font-size
+    default     : 5
+    kind        : line-height
+  - name        : Style body element
+    description : Explicitly apply bpdy styles to the `body` element
+    var         : $theme-style-body-element
+    default     : 'false'
+    kind        : boolean
+
+  - name        : h1 font size
+    section     : true
+    description :
+    var         : $theme-h1-font-size
+    default     : "'2xl'"
+    kind        : size
+  - name        : h2 font size
+    description :
+    var         : $theme-h2-font-size
+    default     : "'xl'"
+    kind        : size
+  - name        : h3 font size
+    description :
+    var         : $theme-h3-font-size
+    default     : "'lg'"
+    kind        : size
+  - name        : h4 font size
+    description :
+    var         : $theme-h4-font-size
+    default     : "'sm'"
+    kind        : size
+  - name        : h5 font size
+    description :
+    var         : $theme-h5-font-size
+    default     : "'xs'"
+    kind        : size
+  - name        : h6 font size
+    description :
+    var         : $theme-h6-font-size
+    default     : "'3xs'"
+    kind        : size
+  - name        : Heading line height
+    description :
+    var         : $theme-heading-line-height
+    default     : 2
+    kind        : line-height
+  - name        : Small font size
+    description : Used for the smallest text on a site
+    var         : $theme-small-font-size
+    default     : "'2xs'"
+    kind        : line-height
+  - name        : Display font size
+    description : Used for the largest text on a site
+    var         : $theme-display-font-size
+    default     : "'3xs'"
+    kind        : size
+
+  - name        : Narrow measure
+    section     : true
+    description :
+    var         : $theme-text-measure-narrow
+    default     : 1
+    kind        : measure
+  - name        : Default measure
+    description :
+    var         : $theme-h2-font-size
+    default     : 4
+    kind        : measure
+  - name        : Wide measure
+    description :
+    var         : $theme-h2-font-size
+    default     : 5
+    kind        : measure
+  - name        : Prose font family
+    description : Font family used for body text in `usa-prose`. Use role-based `family` tokens.
+    var         : $theme-h2-font-size
+    default     : "'body'"
+    kind        : family
+
+  - name        : Lead (intro) font family
+    section     : true
+    description : _This name may change._ Use role-based `family` tokens.
+    var         : $theme-lead-font-family
+    default     : "'heading'"
+    kind        : family
+  - name        : Lead (intro) font size
+    description : _This name may change._ Use role-based `size` tokens.
+    var         : $theme-lead-font-size
+    default     : "'lg'"
+    kind        : size
+  - name        : Lead (intro) line height
+    description : _This name may change._
+    var         : $theme-lead-line-height
+    default     : 6
+    kind        : line-height
+  - name        : Lead (intro) measuere
+    description : _This name may change._
+    var         : $theme-lead-measure
+    default     : 6
+    kind        : measure
+
+
+
+
+
+

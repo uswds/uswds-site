@@ -901,7 +901,7 @@
       - key: token.display-name
         description: Display name of the typeface
         value: "'Example Serif Display Name'"
-        kind: boolean
+        kind: string
       - key: token.cap-height
         description: Height of a 500px `N` character in Sketch
         value: 364px
@@ -929,19 +929,19 @@
     subsection  : font family token
     description : Project monospaced font. <br/>Set to `false` if unused.
     var         : $theme-font-type-mono
-    default     : "roboto-mono"
+    default     : "'roboto-mono'"
     kind        : family
   - name        : sans
     subsection  : font-family token
     description : Project sans-serif font. <br/>Set to `false` if unused.
     var         : $theme-font-type-sans
-    default     : "source-sans-proi"
+    default     : "'source-sans-pro'"
     kind        : family
   - name        : serif
     subsection  : font-family token
     description : Project serif font. <br/>Set to `false` if unused.
     var         : $theme-font-type-serif
-    default     : "merriweather"
+    default     : "'merriweather'"
     kind        : family
 
   - name        : ui
@@ -1283,7 +1283,7 @@
     default     : 5
     kind        : line-height
   - name        : Style body element
-    description : Explicitly apply bpdy styles to the `body` element
+    description : Explicitly apply body styles to the `body` element
     var         : $theme-style-body-element
     default     : 'false'
     kind        : boolean
@@ -1448,7 +1448,7 @@
 
   - name        : "Utility settings"
     description : |
-      "Control the output of a [utility] and its responsive and state variants."
+      Control the output of a [utility] and its responsive and state variants.
     var         : $[utility]-settings
     default     :
     kind        : map
@@ -1479,13 +1479,13 @@
         kind: boolean
   - name        : "Utility palettes"
     description : |
-      Utilities output with the values set inght palettes list
+      Utilities output with the values set in the palettes list
     var         : $[utility]-palettes
     default     : "'palette-[utility]-default'"
     kind        : palettes
   - name        : "Utility manual values"
     description : |
-      Utilities output with the values set inght paslettes list
+      Utilities output with the tokens and values set in the manual values map
     var         : $[utility]-palettes
     default     : "'palette-[utility]-manual-values'"
     kind        : map

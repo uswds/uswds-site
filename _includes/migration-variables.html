@@ -48,7 +48,11 @@
         </td>
         <td scope="row" data-title="{{ col5Title }}" class="{{ col5Width }}">
           <span class="font-lang-3xs">
-            {{ class.location }}
+            {% if class.location %}
+            <a href="{{ site.baseurl }}/documentation/settings/#{{ class.location }}">{{ class.location }}</a>
+            {% else %}
+            —
+            {% endif %}
           </span>
         </td>
         <td scope="row" data-title="{{ col6Title }}" class="{{ col6Width }}">

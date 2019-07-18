@@ -138,6 +138,8 @@ Negative values should use the same migration pattern as positive values. See th
 {% include migration-units.html %}
 
 ## Variables
+USWDS v1 variables have been replaced with new variables called [settings]({{ site.baseurl }}/documentation/settings). Theme settings variables control the appearance of USWDS components and the values of USWDS theme tokens.
+
 {% include migration-variables.html %}
 
 ## Migration by component

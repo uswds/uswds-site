@@ -549,6 +549,309 @@
     kind        : color
 
 - section:
+  name: Components
+  description: Set custom values for USWDS components
+  contents:
+  - name        : Accordion
+    subsection  : border width
+    description :
+    var         : $theme-accordion-border-width
+    default     : 0.5
+    kind        : units
+  - name        : Accordion
+    subsection  : border color
+    description :
+    var         : $theme-accordion-border-color
+    default     : "'base-lightest'"
+    kind        : color
+  - name        : Accordion
+    subsection  : font family
+    description :
+    var         : $theme-accordion-font-family
+    default     : "'body'"
+    kind        : family
+
+  - name        : Alert
+    section     : true
+    subsection  : Bar width
+    description : Width of the colored bar to the left of the alert
+    var         : $theme-alert-bar-width
+    default     : 0.5
+    kind        : units
+  - name        : Alert
+    subsection  : Font family
+    description :
+    var         : $theme-alert-font-family
+    default     : "'ui'"
+    kind        : family
+  - name        : Alert
+    subsection  : Icon size
+    description : Size of the alert icon
+    var         : $theme-accordion-icon-size
+    default     : 4
+    kind        : units
+  - name        : Alert
+    subsection  : Horizontal padding
+    description : Padding on the left and right of the alert
+    var         : $theme-accordion-padding-x
+    default     : 2.5
+    kind        : units
+
+  - name        : Banner
+    section     : true
+    subsection  : Font family
+    description :
+    var         : $theme-banner-font-family
+    default     : "'ui'"
+    kind        : family
+
+  - name        : Button
+    section     : true
+    subsection  : Font family
+    description :
+    var         : $theme-button-font-family
+    default     : 0.5
+    kind        : units
+  - name        : Button
+    subsection  : Border radius
+    description :
+    var         : $theme-button-border-radius
+    default     : "'ui'"
+    kind        : family
+  - name        : Button
+    subsection  : Small width
+    description : Size of the header search button
+    var         : $theme-button-small-width
+    default     : 4
+    kind        : units
+  - name        : Button
+    subsection  : Stroke width
+    description : Stroke width of `outline` button variants
+    var         : $theme-accordion-padding-x
+    default     : 2px
+    kind        : units
+
+  - name        : Footer
+    section     : true
+    subsection  : Font family
+    description : Font family of the footer
+    var         : $theme-footer-font-family
+    default     : 0.5
+    kind        : units
+
+  - name        : Checkbox
+    section     : true
+    subsection  : Border radius
+    description :
+    var         : $theme-checkbox-border-radius
+    default     : "'sm'"
+    kind        : border-radius
+  - name        : Form
+    subsection  : Font family
+    description :
+    var         : $theme-form-font-family
+    default     : "'ui'"
+    kind        : family
+  - name        : Input
+    subsection  : Line height
+    description :
+    var         : $theme-input-line-height
+    default     : 3
+    kind        : line-height
+  - name        : Input
+    subsection  : Max width
+    description :
+    var         : $theme-input-max-width
+    default     : "'mobile-lg'"
+    kind        : units
+  - name        : Input
+    subsection  : Border width when selected
+    description : Border width when selected
+    var         : $theme-input-select-border-width
+    default     : 2px
+    kind        : units
+  - name        : Input
+    subsection  : Border width of selection element
+    description : Border width of checkboxes and radio buttons
+    var         : $theme-input-select-border-width
+    default     : 2px
+    kind        : units
+  - name        : Input
+    subsection  : Size of selection element
+    description : Height and width checkboxes and radio buttons
+    var         : $theme-input-select-size
+    default     : 2.5
+    kind        : units
+  - name        : Input
+    subsection  : State border width
+    description : Border width of special state inputs (like error state)
+    var         : $theme-input-state-border-width
+    default     : 0.5
+    kind        : units
+
+  - name        : Header
+    section     : true
+    subsection  : Font family
+    description :
+    var         : $theme-header-font-family
+    default     : "'ui'"
+    kind        : family
+  - name        : Header
+    subsection  : Logo text width
+    description : Width of the logo text area at desktop width as a percentage of the total header width
+    var         : $theme-header-logo-text-width
+    default     : 33%
+    kind        : percentage
+
+  - name        : Navigation
+    section     : true
+    subsection  : Font family
+    description :
+    var         : $theme-navigation-font-family
+    default     : "'ui'"
+    kind        : family
+  - name        : Navigation
+    subsection  : Width
+    description : Max width of the top nav
+    var         : $theme-navigation-width
+    default     : "'desktop'"
+    kind        : units
+
+  - name        : Search
+    section     : true
+    subsection  : Font family
+    description :
+    var         : $theme-search-font-family
+    default     : "'ui'"
+    kind        : family
+  - name        : Search
+    subsection  : Min-width
+    description : Min-width of the search input
+    var         : $theme-search-min-width
+    default     : 27ch
+    kind        : —
+
+  - name        : Sidenav
+    section     : true
+    subsection  : Font family
+    description :
+    var         : $theme-sidenav-font-family
+    default     : "'ui'"
+    kind        : family
+  - name        : Sidenav
+    subsection  : Current border width
+    description : Width of the current section indicator
+    var         : $theme-sidenav-current-border-width
+    default     : 0.2
+    kind        : units
+
+  - name        : Footer
+    section     : true
+    subsection  : Font family
+    description :
+    var         : $theme-footer-font-family
+    default     : 0.5
+    kind        : units
+  - name        : Button
+    subsection  : Border radius
+    description :
+    var         : $theme-alert-font-family
+    default     : "'ui'"
+    kind        : family
+  - name        : Button
+    subsection  : Small width
+    description : Size of the alert icon
+    var         : $theme-accordion-icon-size
+    default     : 4
+    kind        : units
+  - name        : Button
+    subsection  : Stroke width
+    description : Stroke width of `outline` button variants
+    var         : $theme-accordion-padding-x
+    default     : 2px
+    kind        : units
+
+
+- section:
+  name: Spacing
+  description: Spacing
+  contents:
+  - name        : sm
+    subsection  : border-radius token
+    description : Sets `'sm'` `border-radius` theme token
+    var         : $theme-border-radius-sm
+    default     : 2px
+    kind        : units
+  - name        : md
+    subsection  : border-radius token
+    description : Sets `'md'` `border-radius` theme token
+    var         : $theme-border-radius-md
+    default     : 0.5
+    kind        : units
+  - name        : lg
+    subsection  : border-radius token
+    description : Sets `'lg'` `border-radius` theme token
+    var         : $theme-border-radius-lg
+    default     : 1
+    kind        : units
+
+  - name        : Small grid gap
+    section     : true
+    description : Sets `'grid-gap-sm'` output
+    var         : $theme-column-gap-sm
+    default     : 2px
+    kind        : units
+  - name        : Medium grid gap
+    description : Sets `'grid-gap-md'` output
+    var         : $theme-column-gap-md
+    default     : 2
+    kind        : units
+  - name        : Large grid gap
+    description : Sets `'grid-gap-lg'` output
+    var         : $theme-column-gap-md
+    default     : 3
+    kind        : units
+  - name        : Mobile grid gap
+    description : Sets value of `'grid-gap'` at `mobile` width
+    var         : $theme-column-gap-mobile
+    default     : 2
+    kind        : units
+  - name        : Desktop grid gap
+    description : Sets value of `'grid-gap'` at `desktop` width
+    var         : $theme-column-gap-desktop
+    default     : 4
+    kind        : units
+
+  - name        : Grid container max width
+    section     : true
+    description : Sets the `max-width` value of the `.grid-container` utility
+    var         : $theme-grid-container-max-width
+    default     : "'desktop'"
+    kind        : units
+
+  - name        : Site max width
+    section     : true
+    description : Used to set a consistent `max-width` across components
+    var         : $theme-site-max-width
+    default     : "'desktop'"
+    kind        : units
+  - name        : Site outer margins breakpoint
+    description : At what breakpoint should the site's outer margin change
+    var         : $theme-site-margins-breakpoint
+    default     : "'desktop'"
+    kind        : units
+  - name        : Site mobile outer margins
+    description : Site outer margin at mobile width
+    var         : $theme-site-margins-mobile-width
+    default     : 2
+    kind        : units
+  - name        : Site outer margins
+    description : Site outer margin at non-mobile width (breakpoint defined by `$theme-site-margins-breakpoint`)
+    var         : $theme-site-margins-width
+    default     : 4
+    kind        : units
+
+- section:
   name: Typography
   description: Set values related to typefaces, type style, font size, and weights
   contents:
@@ -1070,14 +1373,125 @@
     var         : $theme-lead-line-height
     default     : 6
     kind        : line-height
-  - name        : Lead (intro) measuere
+  - name        : Lead (intro) measure
     description : _This name may change._
     var         : $theme-lead-measure
     default     : 6
     kind        : measure
 
+- section:
+  name: Utilities
+  description: Set values related to utilities
+  contents:
+  - name        : Utilities use !important
+    description : |
+      When `true` utilities will all ouput with `!important`. This can be necessary if you intend utilities to override existing styles.
+    var         : $utilities-use-important
+    default     : 'false'
+    kind        : boolean
+  - name        : Output all utilities
+    description : |
+      Output all utilities regardless of any individual utility’s output setting
+    var         : $output-all-utilities
+    default     : 'true'
+    kind        : boolean
+  - name        : Utility breakpoints
+    description : |
+      Set which mobile-first breakpoints are output for the utilities
+    var         : $theme-utility-breakpoints
+    default     :
+    kind        : map
+    map         :
+      - key: "'card'"
+        description:
+        value: "false"
+        kind: boolean
+      - key: "'card-lg'"
+        description:
+        value: "false"
+        kind: boolean
+      - key: "'mobile'"
+        description:
+        value: "false"
+        kind: boolean
+      - key: "'mobile-lg'"
+        description:
+        value: "true"
+        kind: boolean
+      - key: "'tablet'"
+        description:
+        value: "true"
+        kind: boolean
+      - key: "'tablet-lg'"
+        description:
+        value: "false"
+        kind: boolean
+      - key: "'desktop'"
+        description:
+        value: "true"
+        kind: boolean
+      - key: "'desktop-lg'"
+        description:
+        value: "false"
+        kind: boolean
+      - key: "'widescreen'"
+        description:
+        value: "false"
+        kind: boolean
 
+  - name        : Global color palettes
+    description : |
+      Any palettes added to this list will output in the the following utilities: `background-color`, `border-color`, `color`, `text-decoration-color`
+    var         : $global-color-palettes
+    default     :
+    kind        : palettes
 
-
-
-
+  - name        : "Utility settings"
+    description : |
+      "Control the output of a [utility] and its responsive and state variants."
+    var         : $[utility]-settings
+    default     :
+    kind        : map
+    map         :
+      - key: "'output'"
+        description: Control output of the utility.
+        value: —
+        kind: boolean
+      - key: "'responsive'"
+        description: Control output of the responsive variants
+        value: —
+        kind: boolean
+      - key: "'active'"
+        description: Control output of the `active:` state variant
+        value: —
+        kind: boolean
+      - key: "'focus'"
+        description: Control output of the `focus:` state variant
+        value: —
+        kind: boolean
+      - key: "'hover'"
+        description: Control output of the `hover:` state variant
+        value: —
+        kind: boolean
+      - key: "'visited'"
+        description: Control output of the `visited:` state variant
+        value: —
+        kind: boolean
+  - name        : "Utility palettes"
+    description : |
+      Utilities output with the values set inght palettes list
+    var         : $[utility]-palettes
+    default     : "'palette-[utility]-default'"
+    kind        : palettes
+  - name        : "Utility manual values"
+    description : |
+      Utilities output with the values set inght paslettes list
+    var         : $[utility]-palettes
+    default     : "'palette-[utility]-manual-values'"
+    kind        : map
+    map:
+      - key: "[token name]"
+        description: |
+          Add a map of manual tokens and values in the form `name: value`
+        value: "[token value]"
+        kind: map

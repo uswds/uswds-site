@@ -884,7 +884,7 @@
     kind        : boolean
   - name        : Font path
     description : Path to the font files, relative to the compiled css
-    var         : $theme-global-content-styles
+    var         : $theme-font-path
     default     : "'../fonts'"
     kind        : path
 

@@ -49,6 +49,15 @@ lead: An accordion is a list of headers that hide or reveal additional content w
           <strong>The accordion uses javascript to set the aria-hidden value of its content area.</strong> Each content area will have its <code>aria-hidden</code> attribute set to either <code>true</code> or <code>false</code> by the component, depending on its corresponding button&rsquo;s <code>aria-expanded</code> attribute. To ensure that your content is accessible in the event that the JavaScript does not load or is disabled, you should not set <code>aria-hidden=<wbr>"true"</code> on any of your content areas.
         </li>
       </ul>
+      <h4 class="usa-heading">Package information</h4>
+      <ul class="usa-content-list">
+        <li>
+          <strong>Package usage:</strong> <code>@import usa-accordion</code>
+        </li>
+        <li>
+          <strong>Requires:</strong> <code>required</code>, <code>global</code>
+        </li>
+      </ul>
     </div>
   </div>
 </section>

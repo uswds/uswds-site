@@ -65,6 +65,15 @@ component_url: 'https://components.designsystem.digital.gov/components/detail/bu
         <li>For example, a secondary button style would use the following code:
         <code>&lt;a class="usa-button usa-button--secondary" href=&quot;/my-link"&gt;My button&lt;/a&gt;</code></li>
       </ul>
+      <h4 class="usa-heading">Package information</h4>
+      <ul class="usa-content-list">
+        <li>
+          <strong>Package usage:</strong> <code>@import usa-button</code>
+        </li>
+        <li>
+          <strong>Requires:</strong> <code>required</code>, <code>global</code>
+        </li>
+      </ul>
     </div>
   </div>
 </section>

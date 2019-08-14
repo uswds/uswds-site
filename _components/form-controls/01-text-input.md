@@ -36,5 +36,14 @@ lead: Text inputs allow users to enter any combination of letters, numbers, or s
       <li><strong>Avoid placeholder text.</strong> Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio.</li>
       <li><strong>Avoid splitting numbers.</strong> Avoid breaking numbers with distinct sections (such as phone numbers, Social Security Numbers, or credit card numbers) into separate input fields. For example, use one input for phone number, not three (one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.</li>
     </ul>
+      <h4 class="usa-heading">Package information</h4>
+      <ul class="usa-content-list">
+        <li>
+          <strong>Package usage:</strong> <code>@import form-controls</code>
+        </li>
+        <li>
+          <strong>Requires:</strong> <code>required</code>, <code>global</code>
+        </li>
+      </ul>
   </div>
 </div>

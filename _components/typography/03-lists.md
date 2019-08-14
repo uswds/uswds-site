@@ -34,5 +34,14 @@ lead: "Lists organize information into discrete sequential sections."
     <ul class="usa-content-list">
       <li>For unstyled lists, use either the <code>.usa-list.usa-list--unstyled</code> classes or the unstyled list mixin: <code>@include unstyled-list;</code>.</li>
     </ul>
+    <h4 class="usa-heading">Package information</h4>
+    <ul class="usa-content-list">
+      <li>
+        <strong>Package usage:</strong> <code>@import typography</code>
+      </li>
+      <li>
+        <strong>Requires:</strong> <code>required</code>, <code>global</code>
+      </li>
+    </ul>
   </div>
 </div>

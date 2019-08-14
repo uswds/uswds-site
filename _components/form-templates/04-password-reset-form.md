@@ -32,6 +32,14 @@ lead: Reset a password
       <li>For guidance on the technical details of validation, see the
         <a href="/components/form-controls/#validation">validation documentation</a>.</li>
       </ul>
-
+    <h4 class="usa-heading">Package information</h4>
+    <ul class="usa-content-list">
+      <li>
+        <strong>Package usage:</strong> <code>@import form-templates</code>
+      </li>
+      <li>
+        <strong>Requires:</strong> <code>required</code>, <code>global</code>
+      </li>
+    </ul>
   </div>
 </div>

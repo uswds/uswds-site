@@ -42,6 +42,15 @@ lead: A tag draws attention to new or categorized content elements.
       <ul class="usa-content-list">
         <li><strong>Use ARIA live regions to highlight dynamically loaded content.</strong> When tags are used to call out new content that is dynamically loaded onto a page, be sure to use ARIA live regions to alert screen readers of the change.</li>
       </ul>
+      <h4 class="usa-heading">Package information</h4>
+      <ul class="usa-content-list">
+        <li>
+          <strong>Package usage:</strong> <code>@import usa-tag</code>
+        </li>
+        <li>
+          <strong>Requires:</strong> <code>required</code>, <code>global</code>
+        </li>
+      </ul>
     </div>
   </div>
 </section>

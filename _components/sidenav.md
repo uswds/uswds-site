@@ -42,6 +42,15 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
       <ul class="usa-content-list">
         <li>The width of the current menu item’s highlight border is set with the <code>$theme-sidenav-current-border-width</code> variable.</li>
       </ul>
+      <h4 class="usa-heading">Package information</h4>
+      <ul class="usa-content-list">
+        <li>
+          <strong>Package usage:</strong> <code>@import usa-sidenav</code>
+        </li>
+        <li>
+          <strong>Requires:</strong> <code>required</code>, <code>global</code>
+        </li>
+      </ul>
     </div>
   </div>
 </section>

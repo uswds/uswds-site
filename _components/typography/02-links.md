@@ -23,5 +23,14 @@ lead: "Links connect users to a different page or further information."
       <li>Users should be able to identify links without relying on color alone.</li>
       <li>Users should be able to activate hover and focus states with both a mouse and a keyboard.</li>
     </ul>
+    <h4 class="usa-heading">Package information</h4>
+    <ul class="usa-content-list">
+      <li>
+        <strong>Package usage:</strong> <code>@import global</code>
+      </li>
+      <li>
+        <strong>Requires:</strong> <code>required</code>
+      </li>
+    </ul>
   </div>
 </div>

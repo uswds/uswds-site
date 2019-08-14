@@ -34,5 +34,13 @@ lead: Sign a user in to a website or application
       <li><strong>Customize accessibly.</strong> As you customize this form template, make sure it continues to follow the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines for form templates</a> and the <a href="{{ site.baseurl }}/form-controls/">accessibility guidelines for form controls</a>.</li>
       <li><strong>Give adequate advance notice before automatic sign-out.</strong> Don’t automatically sign out a user without giving them 20 seconds' advance notice to request more time. Users with disabilities sometimes require more time to respond to prompts.</li>
     </ul>
-  </div>
+    <h4 class="usa-heading">Package information</h4>
+    <ul class="usa-content-list">
+      <li>
+        <strong>Package usage:</strong> <code>@import form-templates</code>
+      </li>
+      <li>
+        <strong>Requires:</strong> <code>required</code>, <code>global</code>
+      </li>
+    </ul>  </div>
 </div>

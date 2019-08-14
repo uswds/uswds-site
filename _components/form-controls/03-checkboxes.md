@@ -40,5 +40,14 @@ lead: Checkboxes allow users to select one or more options from a visible list.
       <li><strong>Use semantic ids.</strong> Each input should have a semantic <code>id</code> attribute, and its corresponding label should have the same value in it’s <code>for</code> attribute.</li>
       <li>The <code>title</code> attribute can replace <code>&lt;label&gt;</code>.</li>
     </ul>
+      <h4 class="usa-heading">Package information</h4>
+      <ul class="usa-content-list">
+        <li>
+          <strong>Package usage:</strong> <code>@import form-controls</code>
+        </li>
+        <li>
+          <strong>Requires:</strong> <code>required</code>, <code>global</code>
+        </li>
+      </ul>
   </div>
 </div>

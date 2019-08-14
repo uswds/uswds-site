@@ -56,7 +56,7 @@
   },
   "dependencies": {
     "jquery": "^3.4.0",
-    "uswds": "github:uswds/uswds#ext-component-imports"
+    "uswds": "2.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.5",

@@ -38,5 +38,14 @@ lead: Dropdowns allow users to select one option from a temporary modal menu.
       <li><strong>Always use a label.</strong> Make sure your dropdown has a label. Don’t replace it with the default menu option (for example, removing the “State” label and just having the dropdown read “Select a state” by default).</li>
       <li><strong>Avoid auto-submission.</strong> Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Auto-submission disrupts screen readers because they select each option as they read them.</li>
     </ul>
+      <h4 class="usa-heading">Package information</h4>
+      <ul class="usa-content-list">
+        <li>
+          <strong>Package usage:</strong> <code>@import form-controls</code>
+        </li>
+        <li>
+          <strong>Requires:</strong> <code>required</code>, <code>global</code>
+        </li>
+      </ul>
   </div>
 </div>

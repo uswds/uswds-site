@@ -39,5 +39,14 @@ lead: Radio buttons allow users to see all available choices and select exactly 
       <li><strong>Use proper labels and attributes.</strong> Each radio button should have a <code>&lt;label&gt;</code>. Associate the two by matching the <code>&lt;label&gt;</code>’s <code>for</code> attribute to the <code>&lt;input&gt;</code>’s <code>id</code> attribute.</li>
       <li>The <code>title</code> attribute can replace <code>&lt;label&gt;</code>.</li>
     </ul>
+    <h4 class="usa-heading">Package information</h4>
+    <ul class="usa-content-list">
+      <li>
+        <strong>Package usage:</strong> <code>@import form-controls</code>
+      </li>
+      <li>
+        <strong>Requires:</strong> <code>required</code>, <code>global</code>
+      </li>
+    </ul>
   </div>
 </div>

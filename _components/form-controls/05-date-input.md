@@ -36,5 +36,14 @@ lead: Three text fields are the easiest way for users to enter most dates.
       <ul class="usa-content-list">
         <li>Currently, the max limit for the year input is set to 2000, but it should be changed depending on the context of the form.</li>
       </ul>
+    <h4 class="usa-heading">Package information</h4>
+    <ul class="usa-content-list">
+      <li>
+        <strong>Package usage:</strong> <code>@import form-controls</code>
+      </li>
+      <li>
+        <strong>Requires:</strong> <code>required</code>, <code>global</code>
+      </li>
+    </ul>
   </div>
 </div>

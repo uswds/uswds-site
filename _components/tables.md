@@ -37,6 +37,15 @@ lead: A table shows tabular data in columns and rows.
         <li>Complex tables are tables with more than two levels of headers. Each header should be given a unique <code>id</code> and each data cell should have a <code>headers</code> attribute with each related header cell’s <code>id</code> listed.</li>
         <li>When adding a title to a table, include it in a <code>&lt;caption&gt;</code> tag inside of the <code>&lt;table&gt;</code> element.</li>
       </ul>
+      <h4 class="usa-heading">Package information</h4>
+      <ul class="usa-content-list">
+        <li>
+          <strong>Package usage:</strong> <code>@import usa-table</code>
+        </li>
+        <li>
+          <strong>Requires:</strong> <code>required</code>, <code>global</code>
+        </li>
+      </ul>
     </div>
   </div>
 </section>

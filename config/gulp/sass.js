@@ -70,31 +70,6 @@ gulp.task('build-sass-components', function () {
     .pipe(gulp.dest('_site/assets/css'))
 });
 
-gulp.task('build-sass-layout-grid', function () {
-  return gulp.src('./css/uswds-layout-grid.scss')
-    .pipe(sourcemaps.init({largeFile: true}))
-    .pipe(
-      sass({
-        includePaths: [
-          './node_modules/uswds/dist/scss',
-          './css/settings',
-        ],
-        outputStyle: 'expanded',
-      })
-        .on('error', function(error) {
-          sass.logError.bind(this)(error);
-
-          if (process.env.NODE_ENV !== 'development') {
-            process.exit(1);
-          }
-        })
-    )
-    .pipe(postcss(dev_plugins))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('assets/css'))
-    .pipe(gulp.dest('_site/assets/css'))
-});
-
 gulp.task('build-sass-custom', function () {
   return gulp.src('./css/uswds-custom.scss')
     .pipe(sourcemaps.init({largeFile: true}))
@@ -149,7 +124,6 @@ gulp.task('build-sass-dev',
   gulp.parallel(
     'build-sass-fonts',
     'build-sass-components',
-    'build-sass-layout-grid',
     'build-sass-custom',
     'build-sass-utilities',
   )
@@ -159,7 +133,6 @@ gulp.task('build-sass-prod', function () {
   return gulp.src([
     './assets/css/uswds-fonts.css',
     './assets/css/uswds-components.css',
-    './assets/css/uswds-layout-grid.css',
     './assets/css/uswds-custom.css',
     './assets/css/uswds-utilities.css'
   ])

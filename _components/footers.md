@@ -53,6 +53,15 @@ subnav:
       <ul class="usa-content-list">
         <li>The social media icons used in the footer are from Font Awesome. To use additional icons, visit <a href="https://fontawesome.com/">Font Awesome</a>.</li>
       </ul>
+      <h4 class="usa-heading">Package information</h4>
+      <ul class="usa-content-list">
+        <li>
+          <strong>Package usage:</strong> <code>@import usa-footer</code>
+        </li>
+        <li>
+          <strong>Requires:</strong> <code>required</code>, <code>global</code>
+        </li>
+      </ul>
     </div>
   </div>
 </section>

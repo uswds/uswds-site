@@ -42,6 +42,15 @@ lead: Search allows users to search for specific content if they know what searc
         <li><strong>Customize accessibly.</strong> As you customize this form template, ensure it continues to follow the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines for form templates</a> and the <a href="{{ site.baseurl }}/form-controls/">accessibility guidelines for form controls</a>.</li>
         <li><strong>Include the word “Search” in the button.</strong> Always include the word “search” inside the <code>&lt;button&gt;</code> element for screen readers. You can visually hide this text using the CSS class <code>usa-sr-only</code> or Sass mixin <code>@include sr-only;</code>.</li>
       </ul>
+      <h4 class="usa-heading">Package information</h4>
+      <ul class="usa-content-list">
+        <li>
+          <strong>Package usage:</strong> <code>@import usa-search</code>
+        </li>
+        <li>
+          <strong>Requires:</strong> <code>required</code>, <code>global</code>
+        </li>
+      </ul>
     </div>
   </div>
 </section>

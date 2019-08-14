@@ -45,6 +45,12 @@ lead: The range slider allows users to choose an approximate number from a range
 {:.usa-content-list}
 - Set the `min` and `max` attribute of the `input` element to correspond to the instructions or labels that accompany the slider.
 
+#### Package information
+
+{:.usa-content-list}
+- **Package usage:** `@import form-controls`
+- **Requires:** `required`, `global`
+
 #### References
 
 {:.usa-content-list}

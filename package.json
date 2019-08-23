@@ -56,7 +56,7 @@
   },
   "dependencies": {
     "jquery": "^3.4.1",
-    "uswds": "github:uswds/uswds#dw-fix-vulns"
+    "uswds": "github:uswds/uswds#develop"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",

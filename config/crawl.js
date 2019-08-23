@@ -1,5 +1,4 @@
 const path = require('path');
-const fs = require('fs');
 const cheerio = require('cheerio');
 const Crawler = require("simplecrawler");
 const chalk = require('chalk');
@@ -16,7 +15,6 @@ const WARNING_PAGES = [
 ];
 const WARNING = chalk.yellow('Warning');
 const ERROR = chalk.red('Error');
-const SITE_PATH = path.normalize(`${__dirname}/../_site`);
 
 function shouldFetch(item, referrerItem) {
   if (item.path.match(/&quot;/)) {
@@ -115,7 +113,7 @@ runServer().then(server => {
         const refs = referrers[item.url];
         const label = makeLabelForPaths(refs);
 
-        console.log(`${label}: 404 for ${item.path}`);
+        console.log(`${label}: 404 for ${item.path} in ${item}`);
         console.log(`  ${refs.length} referrer(s) including at least:`,
                     refs.slice(0, 5));
       });

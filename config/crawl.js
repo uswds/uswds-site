@@ -1,5 +1,4 @@
 const path = require('path');
-const fs = require('fs');
 const cheerio = require('cheerio');
 const Crawler = require("simplecrawler");
 const chalk = require('chalk');
@@ -16,13 +15,15 @@ const WARNING_PAGES = [
 ];
 const WARNING = chalk.yellow('Warning');
 const ERROR = chalk.red('Error');
-const SITE_PATH = path.normalize(`${__dirname}/../_site`);
 
 function shouldFetch(item, referrerItem) {
   if (item.path.match(/&quot;/)) {
     // If a URL's path contains a literal `&quot;` in it, then it's
     // almost guaranteed to be a false-positive that's actually
     // in an example snippet of HTML in the docs, so ignore it.
+    return false;
+  } else if (item.path.match(/%3C/)) {
+    // ignore paths that have a false < in them. a bug?
     return false;
   } else if (referrerItem.path.match(/\.js$/)) {
     // Just ignore anything gleaned from JS files for now, it's too likely
@@ -115,7 +116,7 @@ runServer().then(server => {
         const refs = referrers[item.url];
         const label = makeLabelForPaths(refs);
 
-        console.log(`${label}: 404 for ${item.path}`);
+        console.log(`${label}: 404 for ${item.path} in ${item}`);
         console.log(`  ${refs.length} referrer(s) including at least:`,
                     refs.slice(0, 5));
       });

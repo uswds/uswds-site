@@ -3,7 +3,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.4-node-browsers
+      - image: circleci/ruby:2.6-node-browsers
     steps:
       - checkout
       - restore_cache:
@@ -12,7 +12,10 @@ jobs:
             - v1-gem-cache
       - run:
           name: Install ruby dependencies
-          command: bundle install --jobs=4 --retry=3 --path vendor/bundle
+          command: |
+            gem update --system
+            gem install bundler
+            bundle install --jobs=4 --retry=3 --path vendor/bundle
       - save_cache:
           key: v1-gem-cache-{{ checksum "Gemfile.lock" }}
           paths:

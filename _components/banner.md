@@ -7,12 +7,12 @@ layout: styleguide
 type: element
 title: Banner
 category: Components
-lead: The banner identifies your site as an official website of the U.S. Government.
+lead: The banner identifies your site as an official website of the United States government and helps visitors understand how to tell that it is official.
 ---
 
+{% include code/preview.html component="banner" %}
 <section class="site-component-section">
-  {% include code/preview.html component="tables" %}
-  {% include code/accordion.html component="tables" %}
+  {% include code/accordion.html component="banner" %}
   <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
     <button class="usa-button-unstyled usa-accordion__button"
         aria-expanded="true" aria-controls="table-docs">

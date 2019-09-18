@@ -21,7 +21,7 @@ lead: Radio buttons allow users to see all available choices and select exactly 
     </ul>
     <h4>When to consider something else</h4>
     <ul class="usa-content-list">
-      <li><strong>Multiple seleections.</strong> Consider checkboxes if users need to select more than one option or if there is only one item to select.</li>
+      <li><strong>Multiple selections.</strong> Consider checkboxes if users need to select more than one option or if there is only one item to select.</li>
       <li><strong>Limited space.</strong> Consider a dropdown if you don’t have enough space to list out all available options.</li>
       <li><strong>Selecting none.</strong> If users should be able to select zero of the options.</li>
     </ul>

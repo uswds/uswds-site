@@ -604,6 +604,12 @@
     var         : $theme-banner-font-family
     default     : "'ui'"
     kind        : family
+  - name        : Banner
+    subsection  : Max width
+    description : Maximum width of the banner
+    var         : $theme-banner-max-width
+    default     : "'desktop'"
+    kind        : units
 
   - name        : Button
     section     : true
@@ -697,11 +703,31 @@
     default     : "'ui'"
     kind        : family
   - name        : Header
+    subsection  : Max width
+    description : Maximum width of the header
+    var         : $theme-header-max-width
+    default     : "'desktop'"
+    kind        : units
+  - name        : Header
+    subsection  : Min width
+    description : Breakpoint at which the non-mobile header is shown
+    var         : $theme-header-min-width
+    default     : "'desktop'"
+    kind        : units
+  - name        : Header
     subsection  : Logo text width
     description : Width of the logo text area at desktop width as a percentage of the total header width
     var         : $theme-header-logo-text-width
     default     : 33%
     kind        : percentage
+
+  - name        : Hero
+    section     : true
+    subsection  : Hero image
+    description : Background image for the hero. Use a path relative to the final project CSS.
+    var         : $theme-hero-image
+    default     : "'../img/hero.png'"
+    kind        : path
 
   - name        : Navigation
     section     : true
@@ -711,11 +737,11 @@
     default     : "'ui'"
     kind        : family
   - name        : Navigation
-    subsection  : Width
-    description : Max width of the top nav
-    var         : $theme-navigation-width
-    default     : "'desktop'"
-    kind        : units
+    subsection  : Megamenu columns
+    description : Number of columns in the megamenu
+    var         : $theme-megamenu-columns
+    default     : 3
+    kind        : number
 
   - name        : Search
     section     : true

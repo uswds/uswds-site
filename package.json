@@ -56,7 +56,7 @@
   },
   "dependencies": {
     "jquery": "^3.4.1",
-    "uswds": "github:uswds/uswds#develop"
+    "uswds": "2.2.0"
   },
   "devDependencies": {
     "ansi-colors": "^4.1.1",
@@ -112,9 +112,6 @@
     ],
     "./css/uswds-fonts.scss": [
       "build-css-fonts"
-    ],
-    "./css/uswds-layout-grid.scss": [
-      "build-css-layout-grid"
     ],
     "./css/uswds-utilities.scss": [
       "build-css-utilities"

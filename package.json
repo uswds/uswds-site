@@ -113,9 +113,6 @@
     "./css/uswds-fonts.scss": [
       "build-css-fonts"
     ],
-    "./css/uswds-layout-grid.scss": [
-      "build-css-layout-grid"
-    ],
     "./css/uswds-utilities.scss": [
       "build-css-utilities"
     ],

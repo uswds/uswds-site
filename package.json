@@ -56,7 +56,7 @@
   },
   "dependencies": {
     "jquery": "^3.4.1",
-    "uswds": "2.2.0"
+    "uswds": "^2.2.1"
   },
   "devDependencies": {
     "ansi-colors": "^4.1.1",

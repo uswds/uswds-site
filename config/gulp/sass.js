@@ -51,7 +51,6 @@ gulp.task('build-sass-components', function () {
     .pipe(
       sass({
         includePaths: [
-          './node_modules/uswds/dist/scss',
           './css/settings',
         ],
         outputStyle: 'expanded',

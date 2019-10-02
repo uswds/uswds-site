@@ -20,7 +20,7 @@ lead: USWDS provides design guidelines and code to help you quickly create trust
       <h3 class="font-lang-lg margin-0">
         <a href="{{ site.baseurl }}/getting-started/designers/" class="text-no-underline text-blue-warm-50v hover:text-underline block-link">Designers</a>
       </h3>
-      <p class="margin-top-1">Create wireframes and prototypes in Sketch.</p>
+      <p class="margin-top-1">Create wireframes and prototypes in Sketch or Adobe XD.</p>
     </div>
   </div>
   <div class="tablet:grid-col margin-top-2 tablet:margin-top-0 display-flex flex-align-stretch">

@@ -6,33 +6,34 @@ title: Font size and family
 category: Utilities
 lead: Set the font size and the font family together.
 subnav:
-- text: Font size and family
-  href: '#utility-font'
-- text: Font family
-  href: '#utility-font-family'
-- text: Utility mixins
-  href: '#utility-mixins'
-- text: Advanced settings
-  href: '#advanced-settings'
+  - text: Font size and family
+    href: "#utility-font"
+  - text: Font family
+    href: "#utility-font-family"
+  - text: Utility mixins
+    href: "#utility-mixins"
+  - text: Advanced settings
+    href: "#advanced-settings"
 
 utilities:
-- base:         font
-  var:          font
-  output:       true
-  responsive:   true
-  active:       false
-  focus:        false
-  hover:        false
-  visited:      false
-- base:         font-family
-  var:          font-family
-  output:       true
-  responsive:   false
-  active:       false
-  focus:        false
-  hover:        false
-  visited:      false
+  - base: font
+    var: font
+    output: true
+    responsive: true
+    active: false
+    focus: false
+    hover: false
+    visited: false
+  - base: font-family
+    var: font-family
+    output: true
+    responsive: false
+    active: false
+    focus: false
+    hover: false
+    visited: false
 ---
+
 {% assign tokens = site.data.tokens.typesetting %}
 
 <div class="utilities-properties">
@@ -151,6 +152,7 @@ utilities:
         {% endif %}
       {% endfor %}
     </section><!-- examples -->
+
   </section><!-- utility -->
 
   <section class="utility" id="utility-font-family">
@@ -179,6 +181,7 @@ utilities:
       {% endfor %}
 
     </section><!-- examples -->
+
   </section><!-- utility -->
 </section><!-- utilities -->
 
@@ -232,26 +235,29 @@ utilities:
     </tbody>
   </table>
 
-  {% include utilities/utility-mixin-using.html %}
+{% include utilities/utility-mixin-using.html %}
+
 </section>
 
 <section id="advanced-settings" class="padding-top-4">
   <h2 class="site-h2 margin-y-0">Advanced settings</h2>
 
-  {% include utilities/responsive-variants.html %}
-  {% include utilities/state-variants.html %}
-  {% include utilities/output-control.html %}
+{% include utilities/responsive-variants.html %}
+{% include utilities/state-variants.html %}
+{% include utilities/output-control.html %}
 
   <section class="utilities-section margin-top-6">
     {% include utilities/values-intro.html %}
 
     <aside class="example border-left-05 border-secondary-light padding-left-105 margin-top-2">
       <h4 class="font-lang-2xs margin-top-0 margin-bottom-05">Example</h4>
+
 <pre class="font-mono-xs margin-0 padding-0 bg-transparent">
 $font-palettes: (
   'palette-font-theme-types' // note: no trailing comma
 );
 </pre>
+
     </aside>
 
     {% include utilities/standard-palettes.html %}

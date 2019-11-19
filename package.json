@@ -56,7 +56,7 @@
   },
   "dependencies": {
     "jquery": "^3.4.1",
-    "uswds": "github:uswds/uswds#develop"
+    "uswds": "github:uswds/uswds#dw-fix-federalist-build"
   },
   "devDependencies": {
     "ansi-colors": "^4.1.1",

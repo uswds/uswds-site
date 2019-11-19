@@ -92,11 +92,11 @@
 
 - name: Benjamin
   distribution: WordPress
-  url: https://github.com/kyle-jennings/Benjamin
+  url: https://wordpress.org/themes/benjamin/
   author:
     name: Kyle Jennings
     url: https://github.com/kyle-jennings
-  notes: "A WordPress theme built with Automattic's _s, the U.S. Web Design System, and the needs of the people. For additional components and shortcodes, check out the [Franklin](https://github.com/kyle-jennings/Franklin) plugin."
+  notes: "A WordPress theme built with Automattic's _s, the U.S. Web Design System, and the needs of the people. For additional components and shortcodes, check out the [Franklin](https://wordpress.org/plugins/franklin) plugin."
 
 - name: The Standards
   distribution: WordPress

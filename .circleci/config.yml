@@ -25,7 +25,7 @@ jobs:
             - v2-npm-cache-{{ .Branch }}-{{ .Revision }}
       - run:
           name: Install node dependencies
-          command: npm install --ignore-scripts --verbose
+          command: npm install
       - save_cache:
           key: v2-npm-cache-{{ .Branch }}-{{ .Revision }}
           paths:

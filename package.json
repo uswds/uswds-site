@@ -49,7 +49,8 @@
     "prestart": "gulp build",
     "serve": "bundle exec jekyll serve --drafts --future --incremental --livereload",
     "start": "bundle exec jekyll serve --drafts --future",
-    "test": "npm run axe && npm run crawl && bundle exec rspec && npm run lint",
+    "test": "snyk test && npm run axe && npm run crawl && bundle exec rspec && npm run lint",
+    "test:ci": "npm run axe && npm run crawl && bundle exec rspec && npm run lint",
     "watch": "NODE_ENV=development nswatch",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
@@ -93,7 +94,7 @@
     "node-sass": "^4.13.0",
     "nswatch": "^0.2.0",
     "simplecrawler": "^1.1.8",
-    "snyk": "^1.224.0",
+    "snyk": "^1.249.1",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",
     "yamljs": "^0.3.0"

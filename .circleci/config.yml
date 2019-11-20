@@ -36,9 +36,3 @@ jobs:
       - run:
           name: Run test
           command: npm test
-
-workflows:
-  version: 2
-  build-and-test:
-    jobs:
-      - build

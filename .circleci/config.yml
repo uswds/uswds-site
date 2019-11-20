@@ -1,5 +1,8 @@
 version: 2.1
 
+orbs:
+  snyk: snyk/snyk@0.0.8
+
 jobs:
   build:
     docker:
@@ -39,12 +42,14 @@ jobs:
       - run:
           name: Install scss_lint
           command: gem install scss_lint
+      - snyk/scan:
+          organization: uswds
       - run:
           name: Run test
-          command: npm test
+          command: npm run test:ci
 
 workflows:
   version: 2.1
-  build-and-test:
+  circle-uswds-site:
     jobs:
       - build

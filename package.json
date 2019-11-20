@@ -43,7 +43,7 @@
     "check-contrast": "node ./utils/check-contrast.js",
     "clean": "gulp clean-assets",
     "crawl": "node config/crawl.js",
-    "federalist": "npm install --only=dev && gulp build",
+    "federalist": "npm install && gulp build",
     "postinstall": "bundle",
     "lint": "gulp eslint scss-lint",
     "prestart": "gulp build",
@@ -56,7 +56,7 @@
   },
   "dependencies": {
     "jquery": "^3.4.1",
-    "uswds": "^2.2.1"
+    "uswds": "github:uswds/uswds#develop"
   },
   "devDependencies": {
     "ansi-colors": "^4.1.1",
@@ -90,6 +90,7 @@
     "merge-stream": "^1.0.0",
     "minimist": "^1.2.0",
     "node-notifier": "^5.4.3",
+    "node-sass": "^4.13.0",
     "nswatch": "^0.2.0",
     "simplecrawler": "^1.1.8",
     "snyk": "^1.224.0",

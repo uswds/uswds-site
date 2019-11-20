@@ -90,6 +90,7 @@
     "merge-stream": "^1.0.0",
     "minimist": "^1.2.0",
     "node-notifier": "^5.4.3",
+    "node-sass": "^4.13.0",
     "nswatch": "^0.2.0",
     "simplecrawler": "^1.1.8",
     "snyk": "^1.224.0",

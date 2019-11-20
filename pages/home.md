@@ -1,7 +1,8 @@
 ---
 permalink: /
 redirect_from:
-- /getting-started/
+  - /getting-started/
+
 layout: landing
 title: "USWDS: The United States Web Design System"
 class: home

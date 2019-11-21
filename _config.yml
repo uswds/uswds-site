@@ -1,9 +1,9 @@
 # Site settings
-title:  United States Web Design System
+title: United States Web Design System
 description: Design and build fast, accessible, mobile-friendly government websites backed by user research.
 google_analytics_ua: UA-48605964-43
-components_url: 'https://components.designsystem.digital.gov'
-components_url_v2_preview: 'https://federalist-proxy.app.cloud.gov/preview/uswds/uswds/release-2.2.1/components/preview'
+components_url: "https://components.designsystem.digital.gov"
+components_url_v2_preview: "https://federalist-proxy.app.cloud.gov/preview/uswds/uswds/release-2.3.0/components/preview"
 meta:
   og:image: /img/uswds-logo/lg-black.png
 
@@ -22,27 +22,27 @@ incremental_regeneration_fixer:
 
 jekyll_get:
   - data: releases
-    json: 'https://api.github.com/repos/uswds/uswds/releases'
+    json: "https://api.github.com/repos/uswds/uswds/releases"
   - data: contributing
-    json: 'https://api.github.com/repos/uswds/uswds/contents/CONTRIBUTING.md'
+    json: "https://api.github.com/repos/uswds/uswds/contents/CONTRIBUTING.md"
     decode_content: true
   - data: install-readme
-    json: 'https://api.github.com/repos/uswds/uswds/contents/README.md?ref=develop'
+    json: "https://api.github.com/repos/uswds/uswds/contents/README.md?ref=develop"
     decode_content: true
   - data: standards-sites
-    json: 'https://api.github.com/repos/uswds/uswds/contents/docs/WHO_IS_USING_USWDS.md'
+    json: "https://api.github.com/repos/uswds/uswds/contents/docs/WHO_IS_USING_USWDS.md"
     decode_content: true
 
 repos:
-- name: USWDS
-  description: Main repository for the U.S. Web Design System package
-  url: https://github.com/uswds/uswds
-- name: USWDS site
-  description: USWDS website
-  url: https://github.com/uswds/uswds-site
-- name: USWDS for designers
-  description: USWDS visual design assets
-  url: https://github.com/uswds/uswds-for-designers
+  - name: USWDS
+    description: Main repository for the U.S. Web Design System package
+    url: https://github.com/uswds/uswds
+  - name: USWDS site
+    description: USWDS website
+    url: https://github.com/uswds/uswds-site
+  - name: USWDS for designers
+    description: USWDS visual design assets
+    url: https://github.com/uswds/uswds-for-designers
 
 collections:
   components:
@@ -51,12 +51,12 @@ collections:
 
 defaults:
   - scope:
-      path: ''
+      path: ""
       type: components
     values:
       layout: component
   - scope:
-      path: ''
+      path: ""
       type: posts
     values:
       layout: post

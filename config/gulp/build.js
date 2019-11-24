@@ -81,7 +81,7 @@ gulp.task("build-uswds-if-needed", function() {
     }
 
     const sharedOpts = { stdio: "inherit", cwd: uswdsDir };
-    return spawnP("npm", ["install"], sharedOpts);
+    return spawnP("npm", ["build"], sharedOpts);
   }
 });
 

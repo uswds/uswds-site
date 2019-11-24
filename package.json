@@ -34,7 +34,7 @@
     "build-js": "gulp javascript",
     "clean": "gulp clean-assets",
     "crawl": "node config/crawl.js",
-    "federalist": "gulp build && ls assets/css/vendor/uswds/lib",
+    "federalist": "gulp build",
     "postinstall": "bundle",
     "lint": "gulp eslint scss-lint",
     "prestart": "gulp build",

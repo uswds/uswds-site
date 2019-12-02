@@ -9,6 +9,19 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+<!-- Temporary Redirect
+================================================== -->
+  <script type="text/javascript">
+    var v2_url = 'https://v2.designsystem.digital.gov/';
+    var current_url = window.location;
+    if ( current_url.href.indexOf(v2_url) >= 0 ) {
+      var path = current_url.href.replace(v2_url, "");
+      window.location.href = 'https://designsystem.digital.gov/' + path;
+    }
+  </script>
+
+
 <!-- Title and meta description
 ================================================== -->
   {% include meta.html %}

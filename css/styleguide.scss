@@ -2,8 +2,8 @@
 ---
 
 // Imports
-@import 'variables';
-@import 'vendor/uswds/uswds';
+@import "variables";
+@import "vendor/uswds/uswds";
 
 html,
 body {
@@ -19,7 +19,7 @@ body {
   }
 
   .usa-hero {
-    background-image: url('#{$site-image-path}/home/wds-home-new-2x.png');
+    background-image: url("#{$site-image-path}/home/wds-home-new-2x.png");
     padding-bottom: 7.2rem;
     padding-top: 3.2rem;
 
@@ -76,7 +76,7 @@ body {
 
   // Override for 4x1 media grid when it collapses to 2x2
   @media screen and (max-width: $large-screen) and (min-width: $medium-screen) {
-    .usa-graphic_list .usa-graphic_list-row .usa-media_block:nth-child(-n+2) {
+    .usa-graphic_list .usa-graphic_list-row .usa-media_block:nth-child(-n + 2) {
       margin-bottom: 6rem;
     }
   }
@@ -125,7 +125,7 @@ body {
 
   &:before,
   &:after {
-    content: '';
+    content: "";
     display: table;
   }
 }
@@ -249,7 +249,7 @@ body {
   }
 
   .usa-sidenav-sub_list {
-    &[aria-hidden=true] {
+    &[aria-hidden="true"] {
       display: none;
     }
   }
@@ -264,17 +264,17 @@ body {
       color: $color-primary;
     }
 
-    &[aria-expanded=false] {
-      background-image: url('#{$image-path}/plus-alt.png');
-      background-image: url('#{$image-path}/plus-alt.svg');
+    &[aria-expanded="false"] {
+      background-image: url("#{$image-path}/plus-alt.png");
+      background-image: url("#{$image-path}/plus-alt.svg");
       background-repeat: no-repeat;
       background-position: right 0 center;
       background-size: 1rem;
     }
 
-    &[aria-expanded=true] {
-      background-image: url('#{$image-path}/minus-alt.png');
-      background-image: url('#{$image-path}/minus-alt.svg');
+    &[aria-expanded="true"] {
+      background-image: url("#{$image-path}/minus-alt.png");
+      background-image: url("#{$image-path}/minus-alt.svg");
       background-repeat: no-repeat;
       background-position: right 0 center;
       background-size: 1rem;
@@ -560,7 +560,8 @@ footer.site {
 .footer-contact-links {
   margin-top: 3rem;
 
-  h4, a {
+  h4,
+  a {
     font-size: 1.3rem;
   }
 
@@ -689,7 +690,7 @@ footer.site {
     background: $color-grid-light;
 
     > * {
-      @include margin(.5em null);
+      @include margin(0.5em null);
       color: $color-white;
       padding: 1em;
       background: $color-grid-dark;
@@ -845,7 +846,7 @@ h3 + .button_wrapper {
 .usa-color-text {
   @include padding(1rem 2rem);
   font-weight: $font-bold;
-  margin-bottom: .4rem;
+  margin-bottom: 0.4rem;
 }
 
 .usa-color-outline {
@@ -1065,7 +1066,7 @@ h3 + .button_wrapper {
 
 .usa-heading-alt {
   border-bottom: 1px solid $color-gray;
-  padding-bottom: .8rem;
+  padding-bottom: 0.8rem;
 }
 
 // scss-lint:disable QualifyingElement
@@ -1145,7 +1146,7 @@ code {
   &::before,
   &::after {
     letter-spacing: -0.2em;
-    content: '\00a0';
+    content: "\00a0";
   }
 }
 
@@ -1418,7 +1419,6 @@ code {
 
 // Page styles
 .page-ui-components {
-
   .usa-font-lead {
     &:first-of-type {
       margin-top: 3.2rem;
@@ -1442,10 +1442,10 @@ code {
   display: table;
 
   &::before {
-    background: url('#{$image-path}/icon-download.png') no-repeat 0 0;
-    background: url('#{$image-path}/icon-download.svg') no-repeat 0 0;
+    background: url("#{$image-path}/icon-download.png") no-repeat 0 0;
+    background: url("#{$image-path}/icon-download.svg") no-repeat 0 0;
     background-size: 100%;
-    content: '';
+    content: "";
     display: inline-block;
     height: 0.8em;
     margin-bottom: -1px;
@@ -1511,7 +1511,7 @@ code {
 .page-page-templates {
   .preview {
     img {
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     }
   }
 }
@@ -1555,7 +1555,7 @@ code {
       border-width: 5px;
       border-style: solid;
       border-color: $color-base transparent transparent transparent;
-      content: ' ';
+      content: " ";
       left: 10%;
       margin-left: -12px;
       position: absolute;
@@ -1575,7 +1575,7 @@ code {
 // Demo fixed footer
 .demo-footer {
   background-color: $color-gray-dark;
-  box-shadow: 0 -2px 4px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.5);
   bottom: 0;
   position: fixed;
   width: 100%;
@@ -1583,8 +1583,8 @@ code {
   -webkit-font-smoothing: antialiased;
 
   .usa-button {
-    background-image: url('#{$site-image-path}/angle-arrow-left-inverse.png');
-    background-image: url('#{$site-image-path}/angle-arrow-left-inverse.svg');
+    background-image: url("#{$site-image-path}/angle-arrow-left-inverse.png");
+    background-image: url("#{$site-image-path}/angle-arrow-left-inverse.svg");
     background-repeat: no-repeat;
     background-position: left 2rem center;
     background-size: 1rem;
@@ -1657,6 +1657,4 @@ article {
       margin-top: 0.5rem;
     }
   } // .post-excerpt
-
-
 } // article

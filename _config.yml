@@ -1,8 +1,8 @@
 # Site settings
-title:  U.S. Web Design System
+title: U.S. Web Design System
 description: Design and build fast, accessible, mobile-friendly government websites backed by user research.
 google_analytics_ua: UA-48605964-43
-components_url: 'https://components.designsystem.digital.gov'
+components_url: "https://components.designsystem.digital.gov"
 
 # this is for pages that don't have a permalink (primarily posts)
 permalink: /whats-new/updates/:year/:month/:day/:title/
@@ -21,27 +21,27 @@ incremental_regeneration_fixer:
 
 jekyll_get:
   - data: releases
-    json: 'https://api.github.com/repos/uswds/uswds/releases'
+    json: "https://api.github.com/repos/uswds/uswds/releases"
   - data: contributing
-    json: 'https://api.github.com/repos/uswds/uswds/contents/CONTRIBUTING.md'
+    json: "https://api.github.com/repos/uswds/uswds/contents/CONTRIBUTING.md"
     decode_content: true
   - data: install-readme
-    json: 'https://api.github.com/repos/uswds/uswds/contents/README.md?ref=release-1.6.10'
+    json: "https://api.github.com/repos/uswds/uswds/contents/README.md?ref=release-1.6.13"
     decode_content: true
   - data: standards-sites
-    json: 'https://api.github.com/repos/uswds/uswds/contents/docs/WHO_IS_USING_USWDS.md'
+    json: "https://api.github.com/repos/uswds/uswds/contents/docs/WHO_IS_USING_USWDS.md"
     decode_content: true
 
 repos:
-- name: U.S. Web Design System
-  description: Main repository for the U.S. Web Design System package
-  url: https://github.com/uswds/uswds
-- name: U.S. Web Design System Documentation
-  description: Documentation for the U.S. Web Design System
-  url: https://github.com/uswds/uswds-site
-- name: U.S. Web Design System Assets
-  description: U.S. Web Design System visual design assets
-  url: https://github.com/uswds/uswds-assets
+  - name: U.S. Web Design System
+    description: Main repository for the U.S. Web Design System package
+    url: https://github.com/uswds/uswds
+  - name: U.S. Web Design System Documentation
+    description: Documentation for the U.S. Web Design System
+    url: https://github.com/uswds/uswds-site
+  - name: U.S. Web Design System Assets
+    description: U.S. Web Design System visual design assets
+    url: https://github.com/uswds/uswds-assets
 
 sass:
   load_paths:
@@ -55,17 +55,17 @@ collections:
 
 defaults:
   - scope:
-      path: ''
+      path: ""
       type: components
     values:
       layout: component
   - scope:
-      path: ''
+      path: ""
       type: posts
     values:
       layout: post
 
-gems:
+plugins:
   - jekyll-redirect-from
   - octopress-autoprefixer
 

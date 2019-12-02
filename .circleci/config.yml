@@ -33,7 +33,7 @@ jobs:
           command: npm run build
       - run:
           name: Install scss_lint
-          command: gem install scss_lint
+          command: gem install scss_lint -v 0.57.1
       - run:
           name: Run test
           command: npm test

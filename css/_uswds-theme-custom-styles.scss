@@ -485,6 +485,7 @@ body {
 .main-content {
   @include u-pin('right');
   @include u-pin('bottom');
+  display: inline-block; // starting: not scrolled
   margin-top: units(5); // starting: not scrolled
   position: relative;
   width: 100%;

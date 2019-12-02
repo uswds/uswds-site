@@ -485,7 +485,7 @@ body {
 .main-content {
   @include u-pin('right');
   @include u-pin('bottom');
-  margin-top: units(5); // starting: not scrolled
+  padding-top: units(5);
   position: relative;
   width: 100%;
 

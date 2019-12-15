@@ -10,7 +10,7 @@ lead: Sign a user in to a website or application
 <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="signin-form-docs">
-    Usage
+    Guidance
   </button>
   <div id="signin-form-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
     <h4>When to use a sign-in form</h4>

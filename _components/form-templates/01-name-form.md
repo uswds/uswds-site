@@ -10,7 +10,7 @@ lead: Collect a full name as separate elements of data
 <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="name-form-docs">
-    Usage
+    Guidance
   </button>
   <div id="name-form-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
     <h4>When to use a name form</h4>

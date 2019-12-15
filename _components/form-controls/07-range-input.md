@@ -13,7 +13,7 @@ lead: The range slider allows users to choose an approximate number from a range
 <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="range-docs">
-    Usage
+    Guidance
   </button>
   <div id="range-docs" aria-hidden="false" class="usa-accordion__content site-component-usage" markdown="1">
 #### When to use the range slider component

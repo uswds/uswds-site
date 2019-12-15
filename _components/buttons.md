@@ -18,7 +18,7 @@ component_url: 'https://components.designsystem.digital.gov/components/detail/bu
   <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
     <button class="usa-button-unstyled usa-accordion__button"
         aria-expanded="true" aria-controls="accordion-bordered-docs">
-      Usage
+      Guidance
     </button>
     <div id="accordion-bordered-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
       <h4>When to use the button component</h4>

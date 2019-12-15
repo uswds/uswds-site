@@ -1,5 +1,8 @@
 primary:
-  - href: /documentation/
+  - text: How to use USWDS
+    href: /documentation/
+  - text: Principles
+    href: /principles/
   - href: /components/
   - href: /design-tokens/
   - href: /utilities/
@@ -10,6 +13,8 @@ primary:
 mobile:
   - href: /documentation/
     collapsible: true
+  - text: Principles
+    href: /principles/
   - href: /components/
     collapsible: true
   - href: /design-tokens/
@@ -39,7 +44,7 @@ Components:
   - href: /components/tag/
   - href: /components/typography/
 
-Documentation:
+How to use USWDS:
   - text: Overview
     href: /documentation/
   - href: /documentation/developers/
@@ -106,3 +111,7 @@ About USWDS:
   - href: /about/updates/
   - href: /about/product-roadmap/
   - href: /about/research/
+
+Design principles:
+  - text: Design principles
+    href: /design-principles/

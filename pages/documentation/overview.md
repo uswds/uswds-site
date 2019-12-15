@@ -1,10 +1,15 @@
 ---
-permalink: /documentation/
+permalink: /how-to-use-uswds/
 layout: styleguide
-title: Documentation
+title: How to use USWDS
 category: Documentation
 lead: USWDS provides design guidelines and code to help you quickly create trustworthy, accessible, and consistent digital government services.
+redirect_from:
+  - /documentation/how-to-use-uswds/
+  - /documentation/
 ---
+
+## Get started with USWDS
 
 <div class="grid-row grid-gap flex-align-stretch margin-top-4">
   <div class="tablet:grid-col display-flex flex-align-stretch">
@@ -32,3 +37,13 @@ lead: USWDS provides design guidelines and code to help you quickly create trust
     </div>
   </div>
 </div>
+
+## Adopt USWDS incrementally
+
+Agencies should use the [USWDS maturity model]({{site.baseurl}}/maturity-model) to deliver a great digital experience:
+
+1. **Follow service design principles.**
+1. **Follow user experience guidance.**
+1. **Use USWDS code.**
+
+Agencies should adopt USWDS incrementally, and prioritize implementation to align with the priorities identified in its modernization plans and 21st Century IDEA reports.

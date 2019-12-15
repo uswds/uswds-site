@@ -2,7 +2,7 @@ primary:
   - text: How to use USWDS
     href: /documentation/
   - text: Principles
-    href: /principles/
+    href: /design-principles/
   - href: /components/
   - href: /design-tokens/
   - href: /utilities/
@@ -44,9 +44,10 @@ Components:
   - href: /components/tag/
   - href: /components/typography/
 
-How to use USWDS:
-  - text: Overview
-    href: /documentation/
+Documentation:
+  - text: How to use USWDS
+    href: /how-to-use-uswds/
+  - href: /maturity-model/
   - href: /documentation/developers/
   - href: /documentation/designers/
   - href: /documentation/accessibility/

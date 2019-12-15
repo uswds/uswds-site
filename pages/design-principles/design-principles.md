@@ -19,9 +19,13 @@ subnav:
     href: "#listen"
 ---
 
+<div></div>
+
+{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
+
 ## Start with real user needs
 
-{:.font-lang-7.border-top-05.border-primary.padding-top-2}
+{:.font-lang-7}
 **Real user needs should inform product decisions.** Whether our audience includes members of the public or government employees, decision-makers must include real people in our design process from the beginning. Then, we need to test the assumptions we make and the products and services we build with real people, to keep us focused on what is most useful and important.
 
 ### Key considerations
@@ -64,9 +68,11 @@ subnav:
 - **Share you findings.** Document and share your research findings with team members, managers, and the public, when practical.
 - **Test regularly.** As the product is being built, regularly test it with potential users to ensure it meets people’s needs.
 
+{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
+
 ## Earn trust
 
-{:.font-lang-7.border-top-05.border-primary.padding-top-2}
+{:.font-lang-7}
 **Trust has to be earned every time.** Federal websites and digital services can't assume it. Trust is about understanding and meeting or exceeding expectations, a process that can be established quickly and maintained over continued interactions, but is easily damaged. Be reliable, consistent, and honest. Reduce the impact of failure with solid design and engineering. Be a good steward of your audience's data, resources, and time.
 
 ### Key considerations
@@ -119,9 +125,11 @@ subnav:
 - **Publish open code and data.** When appropriate, publish [source code](https://code.gov/) and [datasets](https://www.data.gov/) of projects or components online.
 - **Work in the open.** When appropriate, share your development process and progress publicly.
 
+{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
+
 ## Embrace accessibility
 
-{:.font-lang-7.border-top-05.border-primary.padding-top-2}
+{:.font-lang-7}
 **Accessibility affects everybody, build it into every decision.** Legal requirements are a critical, necessary starting point, but this is only the beginning. Accessibility is about real people who use our services — it's usability for people who interact with products differently. Everyone who works on government websites has a role to play in making federal resources accessible and inclusive. Design generously and celebrate accessibility requirements as a set of design constraints that help us create a better product for all users.
 
 ### Key considerations
@@ -176,9 +184,11 @@ subnav:
 - **Be responsive.** Remediate accessibility issues when you discover them.
 - **Contract for accessibility.** Use the [Accessibility Requirements Tool](https://www.section508.gov/buy/accessibility-requirements-tool) (ART) to incorporate accessibility requirements into your contracts.
 
+{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
+
 ## Promote continuity
 
-{:.font-lang-7.border-top-05.border-primary.padding-top-2}
+{:.font-lang-7}
 **Minimize disruption and provide a consistent experience: throughout services, over time, and across agencies, platforms, and devices.** Consistency is not necessarily conformity. Agencies, sites, and services may have different audiences, missions, and goals — and the way we implement our solutions may differ — but we promote continuity by starting from shared solutions and values. These design principles are one set of shared values. The design language of the U.S. Web Design System is another. Strive to build user-centered solutions that address the whole experience, not just a user's specific task, but the context of their journey.
 
 ### Key considerations
@@ -235,9 +245,11 @@ subnav:
 - **Support re-use of saved data.** Assure that repeat website visitors, who have logged in, can auto-populate forms with saved information.
 - **Find a community.** Participate in cross-government communities of practice.
 
+{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
+
 ## Listen
 
-{:.font-lang-7.border-top-05.border-primary.padding-top-2}
+{:.font-lang-7}
 **Evaluate and improve your product by listening to your audience and learning from what you hear.** Continuous feedback drives continuous improvement. Measure customer experience — how well what we've built is working for our audience — at every stage of a project, and as projects grow and mature. Listen to what people say and observe how they interact with our products or services, whether through direct observation or through analytics data. If we're not listening, we're not learning.
 
 ### Key considerations

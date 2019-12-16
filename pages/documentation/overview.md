@@ -42,7 +42,7 @@ redirect_from:
 
 Agencies should use the [USWDS maturity model]({{site.baseurl}}/maturity-model) to deliver a great digital experience:
 
-1. **Follow service design principles.**
+1. **Integrate design principles.**
 1. **Follow user experience guidance.**
 1. **Use USWDS code.**
 

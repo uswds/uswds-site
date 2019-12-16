@@ -1,4 +1,7 @@
-version: 2
+version: 2.1
+
+orbs:
+  snyk: snyk/snyk@0.0.8
 
 jobs:
   build:
@@ -25,7 +28,7 @@ jobs:
             - v2-npm-cache-{{ .Branch }}-{{ .Revision }}
       - run:
           name: Install node dependencies
-          command: npm install --ignore-scripts --verbose
+          command: npm install
       - save_cache:
           key: v2-npm-cache-{{ .Branch }}-{{ .Revision }}
           paths:
@@ -39,9 +42,14 @@ jobs:
       - run:
           name: Install scss_lint
           command: gem install scss_lint
+      - snyk/scan:
+          organization: uswds
       - run:
           name: Run test
-          command: npm test
-      - run:
-          name: Checking build
-          command: ls -agolf _site/
+          command: npm run test:ci
+
+workflows:
+  version: 2.1
+  circle-uswds-site:
+    jobs:
+      - build

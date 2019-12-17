@@ -2312,11 +2312,11 @@ h6 + div:not(.usa-accordion__content) {
 }
 
 .site-docs-card-link {
-  border-top: units("05") solid color("primary");
+  border-top: units("05") solid color("$site-base-transparent-light");
   padding-top: units("105");
 
   &:hover {
-    @include u-border-color("blue-warm-50v");
+    @include u-border-color("primary");
 
     a {
       color: black;

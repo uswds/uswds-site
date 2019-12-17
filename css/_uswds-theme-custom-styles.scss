@@ -2312,7 +2312,7 @@ h6 + div:not(.usa-accordion__content) {
 }
 
 .site-docs-card-link {
-  border-top: units("05") solid color("$site-base-transparent-light");
+  border-top: units("05") solid color($site-base-transparent-light);
   padding-top: units("105");
 
   &:hover {

@@ -39,7 +39,7 @@ lead: The banner identifies your site as an official website of the United State
       </ul>
       <h4 class="usa-heading">Accessibility</h4>
       <ul class="usa-content-list">
-        <li><strong>Use <code>aria-label</code> to give the banner a useful name.</strong> Our default markup uses <code>aria-label="Government banner"</code> to distinguish the banner <code>header</code> from the main <code>header</code>.</li>
+        <li><strong>Use <code>aria-label</code> to give the banner a useful name.</strong> Our default markup uses <code>aria-label="official government website"</code> to distinguish the banner <code>header</code> from the main <code>header</code>.</li>
         <li><strong>The banner's accordion uses javascript to set the <code>aria-hidden</code> value of its content area.</strong> To ensure that your content is accessible in the event that the JavaScript does not load or is disabled, you should not set <code>aria-hidden="true"</code> on <code>usa-banner__content</code>.</li>
       </ul>
       <h4 class="usa-heading">Implementation</h4>

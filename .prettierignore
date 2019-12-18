@@ -17,3 +17,5 @@ Gemfile
 Gemfile.lock
 .gitkeep
 *.csv
+*.html
+*.md

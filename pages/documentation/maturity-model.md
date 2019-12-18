@@ -2,7 +2,7 @@
 permalink: /maturity-model/
 layout: styleguide
 title: USWDS maturity model
-category: Documentation
+category: How to use USWDS
 lead: Use the USWDS maturity model to adopt the design system incrementally and design and build better digital experiences for the American public.
 ---
 
@@ -12,7 +12,7 @@ lead: Use the USWDS maturity model to adopt the design system incrementally and 
       <div class="padding-top-2">
       <h2 class="font-lang-lg margin-top-0 line-height-sans-2">You don’t need to adopt the design system all at once.</h2>
       <p>Adopt the design system incrementally through the levels of the USWDS maturity model. Your project can progress both through higher levels of maturity and with more comprehensive maturity at each level. Most importantly, using the design system is about integrating the <a href="{{ site.baseurl }}/design-principles">USWDS Design Principles</a>, common goals that align teams across government and serve as an evaluative lens for design and implementation decisions.</p>
-      <p>As you adopt and adapt the design system, be sure to contribute back to the system. Use the <a href="https://github.xom/uswds/uswds">USWDS GitHub page</a> to:</p>
+      <p>As you adopt and adapt the design system, be sure to contribute back to the system. Use the <a href="https://github.com/uswds/uswds">USWDS GitHub page</a> to:</p>
       <ul>
         <li>Report problems or bugs</li>
         <li>Contribute new research or guidance</li>
@@ -39,47 +39,47 @@ lead: Use the USWDS maturity model to adopt the design system incrementally and 
 {:.border-top-2px.border-base-lighter.padding-top-1}
 **Real user needs should inform product decisions.** Whether our audience includes members of the public or government employees, decision-makers must include real people in our design process from the beginning. Then, we need to test the assumptions we make and the products and services we build with real people, to keep us focused on what is most useful and important.
 
-<a class="usa-button font-lang-sm" href="{{ site.baseurl }}/design-principles/#start-with-real-user-needs">Learn how to start with user needs</a>
+<a class="usa-button font-lang-sm" href="{{ site.baseurl }}/design-principles/#start-with-real-user-needs">Learn about starting with user needs</a>
 
 ### Earn trust
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
 **Trust has to be earned every time.** Federal websites and digital services can't assume it. Trust is about understanding and meeting or exceeding expectations, a process that can be established quickly and maintained over continued interactions, but is easily damaged. Be reliable, consistent, and honest. Reduce the impact of failure with solid design and engineering. Be a good steward of your audience's data, resources, and time.
 
-<a class="usa-button font-lang-sm" href="{{ site.baseurl }}/design-principles/#earn-trust">Learn how to earn trust</a>
+<a class="usa-button font-lang-sm" href="{{ site.baseurl }}/design-principles/#earn-trust">Learn about earning trust</a>
 
 ### Embrace accessibility
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
 **Accessibility affects everybody, build it into every decision.** Legal requirements are a critical, necessary starting point, but this is only the beginning. Accessibility is about real people who use our services — it's usability for people who interact with products differently. Everyone who works on government websites has a role to play in making federal resources accessible and inclusive. Design generously and celebrate accessibility requirements as a set of design constraints that help us create a better product for all users.
 
-<a class="usa-button font-lang-sm" href="{{ site.baseurl }}/design-principles/#embrace-accessibility">Learn how to embrace accessibility</a>
+<a class="usa-button font-lang-sm" href="{{ site.baseurl }}/design-principles/#embrace-accessibility">Learn about embracing accessibility</a>
 
 ### Promote continuity
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
 **Minimize disruption and provide a consistent experience: throughout services, over time, and across agencies, platforms, and devices.** Consistency is not necessarily conformity. Agencies, sites, and services may have different audiences, missions, and goals — and the way we implement our solutions may differ — but we promote continuity by starting from shared solutions and values. These design principles are one set of shared values. The design language of the U.S. Web Design System is another. Strive to build user-centered solutions that address the whole experience, not just a user's specific task, but the context of their journey.
 
-<a class="usa-button font-lang-sm" href="{{ site.baseurl }}/design-principles/#promote-continuity">Learn how to promote continuity</a>
+<a class="usa-button font-lang-sm" href="{{ site.baseurl }}/design-principles/#promote-continuity">Learn about promoting continuity</a>
 
 ### Listen
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
 **Evaluate and improve your product by listening to your audience and learning from what you hear.** Continuous feedback drives continuous improvement. Measure customer experience — how well what we've built is working for our audience — at every stage of a project, and as projects grow and mature. Listen to what people say and observe how they interact with our products or services, whether through direct observation or through analytics data. If we're not listening, we're not learning.
 
-<a class="usa-button font-lang-sm" href="{{ site.baseurl }}/design-principles/#listen">Learn how to listen</a>
+<a class="usa-button font-lang-sm" href="{{ site.baseurl }}/design-principles/#listen">Learn about listening</a>
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-3}
 
 ## Level 2: **Follow user experience guidance**{:.text-light}
 
-**USWDS UX guidance helps assure that components do what users expect them to do, based on UX best practices and research.** Every website is built of common functional units: components like [buttons]({{ site.url }}/components/button), [forms]({{ site.url }}/components/form-controls), and [navigation]({{ site.url }}/components/sidenav). For every website component in USWDS, we provide user experience (UX) guidance as well as code. You should follow the UX guidance even it you don’t use USWDS code.
+**USWDS UX guidance helps assure that components do what users expect them to do, based on UX best practices and research.** Every website is built of common functional units: components like [buttons]({{ site.baseurl }}/components/button), [forms]({{ site.baseurl }}/components/form-controls), and [navigation]({{ site.baseurl }}/components/sidenav). For every website component in USWDS, we provide user experience (UX) guidance as well as code. You should follow the UX guidance even it you don’t use USWDS code.
 
 ### What to do
 
 #### 1: Inventory your site components.
 
-- Make a list of the components your current site uses. Use this sample inventory tracker or create your own.
+- Make a list of the components your current site uses.
 - Check to see if an equivalent USWDS component exists.
 
 #### 2: Read the component UX guidance.

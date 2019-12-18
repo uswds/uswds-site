@@ -4,7 +4,7 @@ redirect_from:
 - /documentation/distributions/
 layout: styleguide
 title: Implementations
-category: Documentation
+category: How to use USWDS
 lead: |
   Users of the U.S. Web Design System have created implementations for
   popular content management systems, web frameworks, and package managers that

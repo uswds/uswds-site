@@ -2,8 +2,8 @@
 permalink: /how-to-use-uswds/
 layout: styleguide
 title: How to use USWDS
-category: Documentation
-lead: USWDS provides principles, guidance, and code to help you quickly create trustworthy, accessible, and consistent government digital products and services.
+category: How to use USWDS
+lead: USWDS provides principles, guidance, and code to help you design and build accessible, mobile-friendly government websites and digital services.
 redirect_from:
   - /documentation/how-to-use-uswds/
   - /documentation/

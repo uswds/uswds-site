@@ -189,11 +189,11 @@ subnav:
 ## Promote continuity
 
 {:.font-lang-7}
-**Minimize disruption and provide a consistent experience: throughout services, over time, and across agencies, platforms, and devices.** Consistency is not necessarily conformity. Agencies, sites, and services may have different audiences, missions, and goals — and the way we implement our solutions may differ — but we promote continuity by starting from shared solutions and values. These design principles are one set of shared values. The design language of the U.S. Web Design System is another. Strive to build user-centered solutions that address the whole experience, not just a user's specific task, but the context of their journey.
+**Minimize disruption and provide a consistent experience: throughout services, over time, and across agencies, platforms, and devices.** Consistency is not necessarily conformity. Agencies, sites, and services may have different audiences, missions, and goals — and the way we implement our solutions may differ — but we promote continuity by starting from shared solutions and values. These design principles are one set of shared values, and the design language of the U.S. Web Design System is another. Strive to build user-centered solutions that address the whole experience, not just a user's specific task, but the context of their journey.
 
 ### Key considerations
 
-- Do you know if your audience understands your product is a government site or service?
+- Do you know if your audience understands that your product is a government site or service?
 - Do you know if your audience understands the purpose of each page or section?
 - Is it always clear what users are expected to do next?
 - Does your agency have established style guidance?
@@ -225,7 +225,7 @@ subnav:
 
 #### Non-government resources
 
-- [Journey mapping 101](https://www.nngroup.com/articles/journey-mapping-101/[nngroup.com]
+- [Journey mapping 101](https://www.nngroup.com/articles/journey-mapping-101/)[nngroup.com]
 - [Service design 101](https://www.nngroup.com/articles/service-design-101/) [nngroup.com]
 - [Service blueprints](https://www.nngroup.com/articles/service-blueprints-definition/) [nngroup.com]
 - [Using a service ecosystem map](https://www.service-design-network.org/community-knowledge/using-a-service-ecosystem-to-quickly-grasp-complexity) [service-design-network.org]

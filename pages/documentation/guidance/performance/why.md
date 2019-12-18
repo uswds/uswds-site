@@ -1,7 +1,7 @@
 ---
 title: Why track performance
 permalink: /performance/why/
-category: Documentation
+category: How to use USWDS
 layout: styleguide
 lead: Performance is an important part of user experience that shouldn’t go unnoticed
 ---

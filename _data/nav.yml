@@ -11,10 +11,10 @@ primary:
     href: /about/
 
 mobile:
-  - href: /documentation/
+  - href: /how-to-use-uswds/
     collapsible: true
   - text: Principles
-    href: /principles/
+    href: /design-principles/
   - href: /components/
     collapsible: true
   - href: /design-tokens/
@@ -22,7 +22,8 @@ mobile:
   - href: /utilities/
     collapsible: true
   - href: /page-templates/
-  - href: /about/
+  - text: About
+    href: /about/
     collapsible: true
 
 Components:

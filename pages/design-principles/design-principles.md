@@ -65,7 +65,7 @@ subnav:
 - **Start early.** Early in the project, spend time with current and prospective users to better understand their perspective and the context of the problem.
 - **Use a range of methods.** Use a range of qualitative and quantitative research methods (such as [18F Methods](https://methods.18f.gov/)) to determine people’s goals, needs, and behaviors.
 - **Use prototypes.** Use [prototypes](https://methods.18f.gov/make/prototyping/) to test your assumptions and solutions with real people, in the field if possible.
-- **Share you findings.** Document and share your research findings with team members, managers, and the public, when practical.
+- **Share your findings.** Document and share your research findings with team members, managers, and the public, when practical.
 - **Test regularly.** As the product is being built, regularly test it with potential users to ensure it meets people’s needs.
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
@@ -167,7 +167,7 @@ subnav:
 - [Accessibility fundamentals with Rob Dodson](https://www.youtube.com/watch?v=z8xUCzToff8) [youtube.com]
 - [Microsoft's inclusive design manual](https://www.microsoft.com/design/inclusive/) [microsoft.com]
 - [Inclusive components by Heydon Pickering](https://inclusive-components.design/) [inclusive-components.design]
-- [Humane by design ](https://humanebydesign.com/[humanebydesign.com]
+- [Humane by design](https://humanebydesign.com/) [humanebydesign.com]
 
 ### Practical actions
 

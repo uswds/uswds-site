@@ -29,10 +29,10 @@ module Jekyll
       cache = site.data['fractal_components']
       if not cache.key? @name
         if @base_url
-          puts " + uswds component: #{@name} from #{@fs_path}"
+          puts " + local uswds component: #{@name}"
           html = get_from_server
         elsif File.exist?(@fs_path)
-          puts " + uswds component: #{@name}"
+          puts " + packaged uswds component: #{@name}"
           html = open(@fs_path).read
         else
           raise (

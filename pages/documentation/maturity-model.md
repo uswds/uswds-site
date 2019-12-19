@@ -84,19 +84,17 @@ lead: Use the USWDS maturity model to adopt the design system incrementally and 
 
 #### 2: Read the component UX guidance.
 
-- Find the relevant component guidance on the USWDS website. Each component has its own UX guidance.
+- Find the relevant component guidance on the USWDS website. Each component has its own UX guidance. (See the "Guidance" section of the [button component]({{ site.baseurl }}/components/button/), for example.)
 - Read and understand the guidance for each component used on your site.
 
 #### 3: Assure site components follow guidance.
 
-- Update any site components that fall outside USWDS guidance
+- Update any site components that fall outside [USWDS guidance]({{ site.baseurl }}/components/).
 
 ### How to check
 
 - [Google Lighthouse UX audit](https://developers.google.com/web/tools/lighthouse)
 - Check [maximum line lengths](https://designsystem.digital.gov/components/typography/#measure-line-length) are no longer than 90 characters
-- Check tap target sizes are at least 48px on each side
-- Check number of primary nav items
 - Check that sites adhere to agency-specific design and style guidelines
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-3}
@@ -111,34 +109,34 @@ Government websites include components that aren’t included in USWDS yet. Use 
 
 #### 1: Add USWDS code and adjust settings.
 
-- Add USWDS to your project with NPM or by forking the source from Github
-- Compile the Sass source code using the guidelines on the USWDS website or by using uswds-gulp
-- Compile the Javascript source code using the instructions on the USWDS website or download a precompiled version
-- Add USWDS Javascript to your page templates
-- Add USWDS CSS to your page templates
+- Add USWDS to your project [with NPM]({{ site.baseurl }}/documentation/developers/#install-using-npm) or by [downloading the source from Github]({{ site.baseurl }}/documentation/developers/#download).
+- Compile the Sass source code using the [guidelines in the documentation]({{ site.baseurl }}/documentation/developers/#sass-compilation-requirements) or by using [uswds-gulp](https://github.com/uswds/uswds-gulp).
+- Compile the Javascript source code using the [guidelines in the documentation]({{ site.baseurl }}/documentation/developers/#js-customization) or [download a precompiled version]({{ site.baseurl }}/documentation/developers/#download).
+- Add USWDS Javascript to your page templates.
+- Add USWDS CSS to your page templates.
 
 #### 2: Use USWDS design tokens in all stylesheets.
 
-- Install USWDS source Sass files using the instructions on the USWDS website.
-- Include USWDS Sass before including existing project source files.
-- Convert existing values to tokenized values. Use the conversion tables on the USWDS website to convert existing values to USWDS tokens.
-- Use USWDS tokens, functions, and utility mixins in existing component code.
+- Install USWDS source Sass files using [the instructions]({{ site.baseurl }}/documentation/developers/#installation) on the USWDS website.
+- Include USWDS Sass before including existing project source files. See [Sass an theme settings]({{ site.baseurl }}/documentation/developers/#sass-and-theme-settings).
+- Convert existing values to tokenized values. Use [the conversion tables](/documentation/migration/#integrating-tokens) to convert existing values to USWDS tokens.
+- Use USWDS [tokens]({{ site.baseurl }}/design-tokens/), functions (see [font-family functions]({{ site.baseurl }}/design-tokens/typesetting/font-family/#using-family-tokens), for example), and utility mixins (see [font-family utility mixins]({{ site.baseurl }}/design-tokens/typesetting/font-family/#using-family-tokens), for example) in existing component code.
 
 #### 3: Replace existing components with USWDS components.
 
-- Swap existing components with usa- classed components in project templates
-- Use component overrides and USWDS settings to adapt the USWDS default components to your project's desired style and tone
+- Swap existing components with `usa-` classed [components]({{ site.baseurl }}/components/) in project templates.
+- Use component overrides and [USWDS settings]({{ site.baseurl }}/documentation/settings/) to adapt the USWDS default components to your project's desired style and tone.
 
 #### 4: Contribute back to the system.
 
-- Contribute new research, guidance, components, and issues back into the system
+- Contribute new research, guidance, components, and issues back into the system.
 
 ### How to check
 
 - Presence of banner markup
 - Presence of current banner text
-- Presence of usa- prefixed classes
-- Presence of specific usa-prefixed classes for common components (banner, header, footer, button, search, inputs)
+- Presence of `usa-` prefixed classes
+- Presence of specific `usa-` prefixed classes for common components (banner, header, footer, button, search, inputs)
 - Presence of USWDS stylesheet
 - Presence of USWDS color tokens
 - Presence of current USWDS version in stylesheets

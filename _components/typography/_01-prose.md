@@ -13,7 +13,7 @@ lead: "Format a block of running text."
 <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="typesetting-docs">
-    Usage
+    Guidance
   </button>
   <div id="typesetting-docs" class="usa-accordion__content site-component-usage">
     <h4 class="usa-heading">Implementation</h4>

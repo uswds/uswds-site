@@ -2,7 +2,7 @@
 permalink: /documentation/video-tutorials/
 layout: styleguide
 title: Video tutorials
-category: Documentation
+category: How to use USWDS
 lead: Watch these videos to familiarize yourself with key concepts from USWDS and open source development.
 ---
 

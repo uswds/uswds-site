@@ -16,7 +16,7 @@ lead: An accordion is a list of headers that hide or reveal additional content w
   <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
     <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="documentation">
-      Usage
+      Guidance
     </button>
     <div id="documentation" class="usa-accordion__content site-component-usage">
       <h4>When to use the accordion component</h4>

@@ -5,7 +5,7 @@ redirect_from:
 - /components/accessibility/
 layout: styleguide
 title: Accessibility
-category: Documentation
+category: How to use USWDS
 lead: Accessibility tips to help you deliver delightful experiences to all users.
 order: 25
 ---

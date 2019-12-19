@@ -10,7 +10,7 @@ lead: Text inputs allow users to enter any combination of letters, numbers, or s
 <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="text-input-docs">
-    Usage
+    Guidance
   </button>
   <div id="text-input-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
     <h4>When to use the text input component</h4>

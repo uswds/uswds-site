@@ -1,7 +1,7 @@
 ---
 title: HTTP/2 Performance Guide
 permalink: /performance/http2/
-category: Documentation
+category: How to use USWDS
 layout: styleguide
 ---
 

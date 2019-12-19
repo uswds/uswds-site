@@ -11,7 +11,7 @@ lead: Three text fields are the easiest way for users to enter most dates.
 <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="date-input-docs">
-    Usage
+    Guidance
   </button>
   <div id="date-input-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
     <h4>When to use the date input component</h4>

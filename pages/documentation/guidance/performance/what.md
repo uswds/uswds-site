@@ -1,7 +1,7 @@
 ---
 title: What is web performance
 permalink: /performance/what/
-category: Documentation
+category: How to use USWDS
 layout: styleguide
 ---
 

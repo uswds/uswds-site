@@ -1,5 +1,8 @@
 primary:
-  - href: /documentation/
+  - text: How to use USWDS
+    href: /how-to-use-uswds/
+  - text: Principles
+    href: /design-principles/
   - href: /components/
   - href: /design-tokens/
   - href: /utilities/
@@ -8,8 +11,10 @@ primary:
     href: /about/
 
 mobile:
-  - href: /documentation/
+  - href: /how-to-use-uswds/
     collapsible: true
+  - text: Principles
+    href: /design-principles/
   - href: /components/
     collapsible: true
   - href: /design-tokens/
@@ -17,7 +22,8 @@ mobile:
   - href: /utilities/
     collapsible: true
   - href: /page-templates/
-  - href: /about/
+  - text: About
+    href: /about/
     collapsible: true
 
 Components:
@@ -31,7 +37,7 @@ Components:
   - href: /components/form-controls/
   - href: /components/form-templates/
   - text: Grid
-    href: /components/grids/
+    href: /utilities/layout-grid/
   - href: /components/header/
   - href: /components/icons/
   - href: /components/search/
@@ -40,9 +46,10 @@ Components:
   - href: /components/tag/
   - href: /components/typography/
 
-Documentation:
-  - text: Overview
-    href: /documentation/
+How to use USWDS:
+  - text: How to use USWDS
+    href: /how-to-use-uswds/
+  - href: /maturity-model/
   - href: /documentation/developers/
   - href: /documentation/designers/
   - href: /documentation/accessibility/
@@ -101,9 +108,13 @@ About USWDS:
   - text: Overview
     href: /about/
   - href: /about/history/
-  - href: /about/design-principles/
+  - href: /about/product-principles/
   - href: /about/whats-new/
   - href: /about/releases/
   - href: /about/updates/
   - href: /about/product-roadmap/
   - href: /about/research/
+
+Design principles:
+  - text: Design principles
+    href: /design-principles/

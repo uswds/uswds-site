@@ -2,7 +2,7 @@
 permalink: /documentation/migration/
 layout: styleguide
 title: Migrating to USWDS 2
-category: Documentation
+category: How to use USWDS
 subnav:
 - text: Summary
   href: '#summary'

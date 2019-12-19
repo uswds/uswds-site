@@ -16,7 +16,7 @@ lead: An alert keeps users informed of important and sometimes time-sensitive ch
   <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
     <button class="usa-button-unstyled usa-accordion__button"
         aria-expanded="true" aria-controls="alert-docs">
-      Usage
+      Guidance
     </button>
     <div id="alert-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
       <h4>When to use the alert component</h4>

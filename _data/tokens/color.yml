@@ -113,7 +113,7 @@ theme:
     default: "gray-90"
   - token: ink
     default: "gray-90"
-    setting: "base-ink"
+    setting: "$theme-color-base-ink"
   - token: primary-lighter
     default: "blue-10"
   - token: primary-light

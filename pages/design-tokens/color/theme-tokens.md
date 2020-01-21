@@ -55,8 +55,8 @@ Customize theme color tokens using the variables listed below in `_uswds_theme_c
             '{{ item.default }}'
           </td>
           <td data-title="Settings var" class="font-mono-2xs">
-            {% if item.settings %}
-            $theme-color-{{ item.settings }}
+            {% if item.setting %}
+            {{ item.setting }}
             {% else %}
             $theme-color-{{ item.token }}
             {% endif %}

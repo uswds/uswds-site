@@ -2379,12 +2379,12 @@ h6 + div:not(.usa-accordion__content) {
   }
 
   .usa-button.site-button-outline-secondary {
-    @include inner-border($site-border-width, "secondary");
+    @include inner-border($site-border-width, "primary");
     background-color: color("transparent");
-    color: color("secondary");
+    color: color("primary");
 
     &:visited {
-      color: color("secondary");
+      color: color("primary");
     }
 
     &:hover {
@@ -3146,4 +3146,30 @@ body {
 
 .post-content h2 {
   line-height: lh("lang", 2);
+}
+
+.site-nav {
+  .usa-button {
+    display: block;
+  }
+}
+
+.site-button-github {
+  .logo {
+    bottom: units(2px);
+    display: inline-block;
+    fill: white;
+    margin-right: units(0.5);
+    vertical-align: middle;
+    width: units(3);
+
+    path {
+      fill: white;
+    }
+  }
+
+  .text {
+    bottom: units(-2px);
+    position : relative;
+  }
 }

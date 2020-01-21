@@ -262,7 +262,7 @@ body {
 
 .site-logo {
   @include at-media("desktop") {
-    margin-top: units(0);
+    margin-top: units(2px);
   }
 
   a {

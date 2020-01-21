@@ -1,14 +1,26 @@
-<a
-  class="usa-button desktop:margin-right-1"
-  href="{{ site.baseurl }}/download/"
-  onclick="ga('send', 'event', 'Downloaded code and design files', 'Clicked Download code and design files from inside site');"
->
-  Download v2.4.0
-</a>
-<a
-  class="usa-button site-button-outline-secondary"
-  href="{{ site.repos[0].url }}"
-  onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');"
->
-  View on GitHub
-</a>
+<div class="buttons">
+  <a
+    class="usa-button site-button-outline-secondary margin-x-0 desktop:margin-right-1 font-lang-sm"
+    href="{{ site.baseurl }}/download/"
+    onclick="ga('send', 'event', 'Downloaded code and design files', 'Clicked Download code and design files from inside site');"
+  >
+    Download v2.4.0
+  </a>
+  <a
+    class="usa-button site-button-outline-secondary margin-x-0 desktop:margin-right-1 padding-x-05 font-lang-sm"
+    href="{{ site.repos[0].url }}"
+    onclick="ga('send', 'event', 'Read website standards', 'Clicked Read website standards from inside site');"
+  >
+    Read website standards
+  </a>
+  <a
+    class="usa-button site-button-github margin-x-0 desktop:margin-right-4 font-lang-sm"
+    href="{{ site.repos[0].url }}"
+    onclick="ga('send', 'event', 'Viewed on Github', 'Clicked View on Github from inside site');"
+  >
+    {% include github-logo.svg %}
+    <span class="text">View on GitHub</span>
+  </a>
+  </a>
+</div>
+

@@ -4,6 +4,15 @@ layout: styleguide
 title: USWDS maturity model
 category: How to use USWDS
 lead: Use the USWDS maturity model to adopt the design system incrementally and design and build better digital experiences for the American public.
+subnav:
+- text: "1: Integrate design principles"
+  href: '#level-1-integrate-design-principles'
+- text: "2: Follow UX guidance"
+  href: '#level-2-follow-user-experience-guidance'
+- text: "3: Use USWDS code"
+  href: '#level-3-use-uswds-code'
+- text: Maturity assessment resources
+  href: '#maturity-assessment-resources'
 ---
 
 <div class="margin-top-6 border-top-05 border-primary padding-top-2">
@@ -142,3 +151,17 @@ Government websites include components that aren’t included in USWDS yet. Use 
 - Presence of current USWDS version in stylesheets
 - Presence of tokens in source Sass
 - Presence of rem units for margin and padding in compiled CSS
+
+
+{:.border-top-05.border-primary.padding-top-2.margin-bottom-3}
+
+## Maturity assessment resources
+Our maturity assessment resources are meant to help you assess and understand your as-is state, what you’re doing well, and how you can better use USWDS to improve the public’s experience of your websites and digital services.
+
+They're meant to help your team understand and improve your design system maturity: to help your team solve problems, not stress you out. Over the next few months, we will be working on the format of a maturity assessment, our user-centered process for updating it, and how we’ll release updates to the community.
+
+If any of our guidance doesn’t make sense or feels like it’s leading your team in the wrong direction, please let us know. File an issue at [our GitHub page](https://github.com/uswds/uswds) or [send USWDS an email](mailto:uswds@support.digitalgov.gov).
+
+<div class="embed-youtube">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/AUcc30UKru0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>

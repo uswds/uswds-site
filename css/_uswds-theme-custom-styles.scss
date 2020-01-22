@@ -262,7 +262,7 @@ body {
 
 .site-logo {
   @include at-media("desktop") {
-    margin-top: units(0);
+    margin-top: units(2px);
   }
 
   a {
@@ -2379,12 +2379,12 @@ h6 + div:not(.usa-accordion__content) {
   }
 
   .usa-button.site-button-outline-secondary {
-    @include inner-border($site-border-width, "secondary");
+    @include inner-border($site-border-width, "primary");
     background-color: color("transparent");
-    color: color("secondary");
+    color: color("primary");
 
     &:visited {
-      color: color("secondary");
+      color: color("primary");
     }
 
     &:hover {
@@ -2416,10 +2416,6 @@ h6 + div:not(.usa-accordion__content) {
     @include inner-border($site-border-width, "white-transparent-70");
     background-color: color("transparent");
     color: color("white-transparent-70");
-
-    &:visited {
-      color: color("white-transparent-70");
-    }
 
     &:hover {
       @include inner-border($site-border-width, "white");
@@ -3146,4 +3142,102 @@ body {
 
 .post-content h2 {
   line-height: lh("lang", 2);
+}
+
+.page-website-standards {
+  .site-subheading {
+    display: none;
+  }
+}
+
+.site-nav {
+  .usa-button {
+    display: block;
+  }
+}
+
+.site-button-github {
+  .logo {
+    bottom: units(2px);
+    display: inline-block;
+    fill: white;
+    margin-right: units(0.5);
+    vertical-align: middle;
+    width: units(3);
+
+    path {
+      fill: white;
+    }
+  }
+
+  .text {
+    bottom: units(-2px);
+    position : relative;
+    @include at-media("desktop") {
+      @include add-sr-only;
+    }
+  }
+
+  @include at-media("desktop") {
+    &.usa-button {
+      @include u-padding-x(0);
+      background-color: color("transparent");
+      display: inline-block;
+
+      .logo {
+        @include u-padding-x(0);
+        bottom: units(1px);
+        margin-left: units(0.5);
+        position: relative;
+        width: units(4);
+
+        path {
+          fill: color("white-transparent-70");
+        }
+      }
+
+      &:hover,
+      &:active {
+        background-color: color("transparent");
+
+        .logo {
+          path {
+            fill: color("white");
+          }
+        }
+      }
+    }
+
+
+    .text {
+      @include add-sr-only;
+    }
+  }
+}
+
+@include at-media("desktop") {
+  .site-header .buttons .usa-button {
+    position: relative;
+    bottom: units(-2px);
+  }
+
+  .site-header .buttons .site-button-standards {
+    box-shadow: inset 0 0 0 2px color("gold-30v");
+    color: color("gold-30v");
+  }
+}
+
+.embed-youtube {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }

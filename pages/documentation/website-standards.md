@@ -18,6 +18,6 @@ Agencies should use the U.S. Web Design System (USWDS) maturity model to deliver
 
 Agencies should use the maturity model to adopt USWDS incrementally, and prioritize implementation to align with the priorities identified in their modernization plans and the Act’s reports.
 
-First published: 1/22/20
+First published: 1/22/2020
 
-Last revised: 1/22/20
+Last revised: 1/22/2020

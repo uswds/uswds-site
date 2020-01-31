@@ -529,22 +529,22 @@
   - name        : Link color
     section     : true
     description : Color for text links
-    var         : $theme-color-info-family
+    var         : $theme-link-color
     default     : "'primary'"
     kind        : color
   - name        : Visited link color
     description : Color for `:visted` text links
-    var         : $theme-color-info-family
+    var         : $theme-link-visted-color
     default     : "'violet-70v'"
     kind        : color
   - name        : Hover link color
     description : Color for `:hover` text links
-    var         : $theme-color-info-family
+    var         : $theme-link-hover-color
     default     : "'primary-dark'"
     kind        : color
   - name        : Active link color
     description : Color for `:active` text links
-    var         : $theme-color-info-family
+    var         : $theme-link-active-color
     default     : "'primary-darker'"
     kind        : color
 

@@ -1,27 +1,20 @@
 const autoprefixer = require("autoprefixer");
 const concat = require("gulp-concat");
-const cssnano = require("cssnano");
+const csso = require("postcss-csso");
 const dutil = require("./doc-util");
 const Fiber = require("fibers");
 const gulp = require("gulp");
 const linter = require("gulp-scss-lint");
 const postcss = require("gulp-postcss");
 const sass = require("gulp-sass");
-const sortMQ = require("postcss-sort-media-queries");
 const sourcemaps = require("gulp-sourcemaps");
 const task = "sass";
 
 sass.compiler = require("sass");
 
-const dev_plugins = [
-  autoprefixer({ cascade: false }),
-  sortMQ({ sort: "mobile-first" })
-];
+const dev_plugins = [autoprefixer({ cascade: false })];
 
-var prod_plugins = [
-  sortMQ({ sort: "mobile-first" }),
-  cssnano({ autoprefixer: { browsers: "> 2%, Last 2 versions, IE 11" } })
-];
+const prod_plugins = [csso({ forceMediaMerge: true })];
 
 gulp.task("build-sass-fonts", function() {
   return gulp

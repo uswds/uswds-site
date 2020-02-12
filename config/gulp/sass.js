@@ -2,7 +2,6 @@ const autoprefixer = require("autoprefixer");
 const concat = require("gulp-concat");
 const csso = require("postcss-csso");
 const dutil = require("./doc-util");
-const Fiber = require("fibers");
 const gulp = require("gulp");
 const linter = require("gulp-scss-lint");
 const postcss = require("gulp-postcss");
@@ -21,17 +20,18 @@ gulp.task("build-sass-fonts", function() {
     .src("./css/uswds-fonts.scss")
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
-      sass({
-        fiber: Fiber,
-        includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
-        outputStyle: "expanded"
-      }).on("error", function(error) {
-        sass.logError.bind(this)(error);
+      sass
+        .sync({
+          includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
+          outputStyle: "expanded"
+        })
+        .on("error", function(error) {
+          sass.logError.bind(this)(error);
 
-        if (process.env.NODE_ENV !== "development") {
-          process.exit(1);
-        }
-      })
+          if (process.env.NODE_ENV !== "development") {
+            process.exit(1);
+          }
+        })
     )
     .pipe(postcss(dev_plugins))
     .pipe(sourcemaps.write("."))
@@ -44,17 +44,18 @@ gulp.task("build-sass-components", function() {
     .src("./css/uswds-components.scss")
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
-      sass({
-        fiber: Fiber,
-        includePaths: ["./css/settings"],
-        outputStyle: "expanded"
-      }).on("error", function(error) {
-        sass.logError.bind(this)(error);
+      sass
+        .sync({
+          includePaths: ["./css/settings"],
+          outputStyle: "expanded"
+        })
+        .on("error", function(error) {
+          sass.logError.bind(this)(error);
 
-        if (process.env.NODE_ENV !== "development") {
-          process.exit(1);
-        }
-      })
+          if (process.env.NODE_ENV !== "development") {
+            process.exit(1);
+          }
+        })
     )
     .pipe(postcss(dev_plugins))
     .pipe(sourcemaps.write("."))
@@ -67,17 +68,18 @@ gulp.task("build-sass-custom", function() {
     .src("./css/uswds-custom.scss")
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
-      sass({
-        fiber: Fiber,
-        includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
-        outputStyle: "expanded"
-      }).on("error", function(error) {
-        sass.logError.bind(this)(error);
+      sass
+        .sync({
+          includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
+          outputStyle: "expanded"
+        })
+        .on("error", function(error) {
+          sass.logError.bind(this)(error);
 
-        if (process.env.NODE_ENV !== "development") {
-          process.exit(1);
-        }
-      })
+          if (process.env.NODE_ENV !== "development") {
+            process.exit(1);
+          }
+        })
     )
     .pipe(postcss(dev_plugins))
     .pipe(sourcemaps.write("."))
@@ -90,17 +92,18 @@ gulp.task("build-sass-utilities", function() {
     .src("./css/uswds-utilities.scss")
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
-      sass({
-        fiber: Fiber,
-        includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
-        outputStyle: "expanded"
-      }).on("error", function(error) {
-        sass.logError.bind(this)(error);
+      sass
+        .sync({
+          includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
+          outputStyle: "expanded"
+        })
+        .on("error", function(error) {
+          sass.logError.bind(this)(error);
 
-        if (process.env.NODE_ENV !== "development") {
-          process.exit(1);
-        }
-      })
+          if (process.env.NODE_ENV !== "development") {
+            process.exit(1);
+          }
+        })
     )
     .pipe(postcss(dev_plugins))
     .pipe(sourcemaps.write("."))

@@ -57,7 +57,7 @@
   },
   "dependencies": {
     "jquery": "^3.4.1",
-    "uswds": "github:uswds/uswds#dw-use-sync"
+    "uswds": "github:uswds/uswds#develop"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",

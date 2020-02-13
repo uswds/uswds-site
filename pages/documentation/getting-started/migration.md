@@ -149,9 +149,9 @@ USWDS v1 variables have been replaced with new variables called [settings]({{ si
 
 ### Layout grid
 - Deprecated the float-based grid system (and Bourbon Neat) in favor of a flexbox grid system
-- Grid no longer makes assumptions about reponsive behavior. Breakpoints are specified manually.
+- Grid no longer makes assumptions about responsive behavior. Breakpoints are specified manually.
 - Grid column classes must be enclosed by a `grid-row`.
-- See the [layout grid documetation]({{ site.baseurl }}/utilities/layout-grid/) for more details.
+- See the [layout grid documentation]({{ site.baseurl }}/utilities/layout-grid/) for more details.
 {% include migration-table.html class='layout-grid' %}
 
 ### Typography

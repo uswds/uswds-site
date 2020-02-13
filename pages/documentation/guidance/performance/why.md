@@ -53,4 +53,3 @@ Measuring performance ensures the team:
 ## Conclusion
 
 As technology becomes more prevalent in the Unites States, it's more common that the primary way Americans interact with the government is through the web. Ensuring that government sites perform quickly for all ensures that all Americans have a good user experience and aren't blocked from the web services they require. Tracking and improving a site's performance is a first step towards ensuring that a site can reach as wide of an audience as possible.
-s

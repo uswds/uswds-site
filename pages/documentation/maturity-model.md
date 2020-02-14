@@ -82,7 +82,7 @@ subnav:
 
 ## Level 2: **Follow user experience guidance**{:.text-light}
 
-**USWDS UX guidance helps assure that components do what users expect them to do, based on UX best practices and research.** Every website is built of common functional units: components like [buttons]({{ site.baseurl }}/components/button), [forms]({{ site.baseurl }}/components/form-controls), and [navigation]({{ site.baseurl }}/components/sidenav). For every website component in USWDS, we provide user experience (UX) guidance as well as code. You should follow the UX guidance even it you don’t use USWDS code.
+**USWDS UX guidance helps assure that components do what users expect them to do, based on UX best practices and research.** Every website is built of common functional units: components like [buttons]({{ site.baseurl }}/components/button), [forms]({{ site.baseurl }}/components/form-controls), and [navigation]({{ site.baseurl }}/components/sidenav). For every website component in USWDS, we provide user experience (UX) guidance as well as code. You should follow the UX guidance even if you don’t use USWDS code.
 
 ### What to do
 

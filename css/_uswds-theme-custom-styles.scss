@@ -3152,6 +3152,10 @@ body {
 }
 
 .site-nav {
+  // Search input gets cutoff on mobile.
+  .usagov-search-autocomplete {
+    min-width: 0;
+  }
   .usa-button {
     display: block;
   }

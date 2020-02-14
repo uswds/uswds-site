@@ -2472,6 +2472,7 @@ $theme-table-column-gap: 4;
 .site-table-responsive {
   width: 100%;
   max-width: none;
+  border-collapse: collapse;
 
   @include at-media-max($theme-table-responsive-expand-at) {
     @include typeset("lang", "2xs");
@@ -3172,7 +3173,7 @@ body {
 
   .text {
     bottom: units(-2px);
-    position : relative;
+    position: relative;
     @include at-media("desktop") {
       @include add-sr-only;
     }
@@ -3208,7 +3209,6 @@ body {
       }
     }
 
-
     .text {
       @include add-sr-only;
     }
@@ -3228,10 +3228,10 @@ body {
 }
 
 .embed-youtube {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
 
   iframe {
     position: absolute;

@@ -13,7 +13,7 @@ sass.compiler = require("sass");
 
 const dev_plugins = [autoprefixer({ cascade: false })];
 
-const prod_plugins = [csso({ forceMediaMerge: true })];
+const prod_plugins = [csso({ forceMediaMerge: false })];
 
 gulp.task("build-sass-fonts", function() {
   return gulp

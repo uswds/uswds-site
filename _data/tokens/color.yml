@@ -268,7 +268,7 @@ system:
       value: "#1f1c18"
   red-warm-vivid:
     - token: red-warm-5v
-      value: "#FCF5F0"
+      value: "#FFF5EE"
     - token: red-warm-10v
       value: "#FCE1D4"
     - token: red-warm-20v

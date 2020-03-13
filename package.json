@@ -57,7 +57,7 @@
   },
   "dependencies": {
     "jquery": "^3.4.1",
-    "uswds": "2.5.1"
+    "uswds": "github:uswds/uswds#dw-add-vivid-values"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",

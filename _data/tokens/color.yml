@@ -866,7 +866,7 @@ system:
     - token: indigo-cool-40v
       value: "#628ef4"
     - token: indigo-cool-50v
-      value: "#496FD8"
+      value: "#4866ff"
     - token: indigo-cool-60v
       value: "#3E4DED"
     - token: indigo-cool-70v

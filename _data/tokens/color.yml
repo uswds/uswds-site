@@ -858,7 +858,7 @@ system:
     - token: indigo-cool-5v
       value: "#EDF0FF"
     - token: indigo-cool-10v
-      value: "#DBE3FF"
+      value: "#dee5ff"
     - token: indigo-cool-20v
       value: "#B8C8FF"
     - token: indigo-cool-30v

@@ -574,7 +574,7 @@ system:
     - token: green-cool-50v
       value: "#008817"
     - token: green-cool-60v
-      value: "#20721D"
+      value: "#216e1f"
     - token: green-cool-70v
       value: "#154C21"
     - token: green-cool-80v

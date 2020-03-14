@@ -902,11 +902,11 @@ system:
     - token: indigo-10v
       value: "#E0E0FF"
     - token: indigo-20v
-      value: "#c4c6f2"
+      value: "#CCCEFF"
     - token: indigo-30v
-      value: "#a5a8e8"
+      value: "#A6AAFF"
     - token: indigo-40v
-      value: "#8889DB"
+      value: "#8289FF"
     - token: indigo-50v
       value: "#656bd7"
     - token: indigo-60v

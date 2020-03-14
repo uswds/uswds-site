@@ -839,7 +839,7 @@ system:
     - token: indigo-cool-10
       value: "#e1e6f9"
     - token: indigo-cool-20
-      value: "#B9C5F0"
+      value: "#bbc8f5"
     - token: indigo-cool-30
       value: "#96abee"
     - token: indigo-cool-40

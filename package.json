@@ -57,6 +57,7 @@
   },
   "dependencies": {
     "jquery": "^3.4.1",
+    "snyk": "^1.299.0",
     "uswds": "github:uswds/uswds#dw-add-vivid-values"
   },
   "devDependencies": {
@@ -95,7 +96,6 @@
     "postcss-csso": "^4.0.0",
     "sass": "^1.25.0",
     "simplecrawler": "^1.1.8",
-    "snyk": "^1.249.1",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",
     "yamljs": "^0.3.0"

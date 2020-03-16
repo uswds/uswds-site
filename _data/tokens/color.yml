@@ -904,7 +904,7 @@ system:
     - token: indigo-20v
       value: "#CCCEFF"
     - token: indigo-30v
-      value: "#A6AAFF"
+      value: "#A3A7FA"
     - token: indigo-40v
       value: "#8289FF"
     - token: indigo-50v

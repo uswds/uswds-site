@@ -58,7 +58,7 @@
   "dependencies": {
     "jquery": "^3.4.1",
     "snyk": "^1.299.0",
-    "uswds": "github:uswds/uswds#dw-add-vivid-values"
+    "uswds": "github:uswds/uswds#develop"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",

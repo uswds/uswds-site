@@ -276,7 +276,7 @@ system:
     - token: red-warm-30v
       value: "#f39268"
     - token: red-warm-40v
-      value: "#F25727"
+      value: "#EF5E25"
     - token: red-warm-50v
       value: "#D63C04"
     - token: red-warm-60v

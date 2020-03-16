@@ -89,7 +89,7 @@
     "highlight.js": "^9.15.10",
     "json-format": "^1.0.1",
     "merge-stream": "^1.0.0",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.2",
     "node-notifier": "^5.4.3",
     "node-sass": "^4.13.0",
     "nswatch": "^0.2.0",

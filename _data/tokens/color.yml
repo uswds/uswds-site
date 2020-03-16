@@ -184,7 +184,7 @@ system:
       value: "#1e1517"
   red-cool-vivid:
     - token: red-cool-5v
-      value: "#FFF2F5"
+      value: "#fff2f5"
     - token: red-cool-10v
       value: "#f8dfe2"
     - token: red-cool-20v
@@ -200,7 +200,7 @@ system:
     - token: red-cool-70v
       value: "#822133"
     - token: red-cool-80v
-      value: "#4F1C24"
+      value: "#4f1c24"
     - token: red-cool-90v
       value: false
   red:
@@ -226,7 +226,7 @@ system:
       value: "#1b1616"
   red-vivid:
     - token: red-5v
-      value: "#FFF3F2"
+      value: "#fff3f2"
     - token: red-10v
       value: "#fde0db"
     - token: red-20v
@@ -268,23 +268,23 @@ system:
       value: "#1f1c18"
   red-warm-vivid:
     - token: red-warm-5v
-      value: "#FFF5EE"
+      value: "#fff5ee"
     - token: red-warm-10v
-      value: "#FCE1D4"
+      value: "#fce1d4"
     - token: red-warm-20v
       value: "#f6bd9c"
     - token: red-warm-30v
       value: "#f39268"
     - token: red-warm-40v
-      value: "#EF5E25"
+      value: "#ef5e25"
     - token: red-warm-50v
-      value: "#D54309"
+      value: "#d54309"
     - token: red-warm-60v
-      value: "#9C3D10"
+      value: "#9c3d10"
     - token: red-warm-70v
-      value: "#63340F"
+      value: "#63340f"
     - token: red-warm-80v
-      value: "#3E2A1E"
+      value: "#3e2a1e"
     - token: red-warm-90v
       value: false
   orange-warm:
@@ -310,9 +310,9 @@ system:
       value: "#1c1615"
   orange-warm-vivid:
     - token: orange-warm-5v
-      value: "#FFF3EA"
+      value: "#fff3ea"
     - token: orange-warm-10v
-      value: "#FFE2D1"
+      value: "#ffe2d1"
     - token: orange-warm-20v
       value: "#fbbaa7"
     - token: orange-warm-30v
@@ -320,13 +320,13 @@ system:
     - token: orange-warm-40v
       value: "#ff580a"
     - token: orange-warm-50v
-      value: "#CF4900"
+      value: "#cf4900"
     - token: orange-warm-60v
-      value: "#A72F10"
+      value: "#a72f10"
     - token: orange-warm-70v
       value: "#782312"
     - token: orange-warm-80v
-      value: "#3D231D"
+      value: "#3d231d"
     - token: orange-warm-90v
       value: false
   orange:
@@ -364,9 +364,9 @@ system:
     - token: orange-50v
       value: "#c05600"
     - token: orange-60v
-      value: "#8C471C"
+      value: "#8c471c"
     - token: orange-70v
-      value: "#5F3617"
+      value: "#5f3617"
     - token: orange-80v
       value: "#352313"
     - token: orange-90v
@@ -406,11 +406,11 @@ system:
     - token: gold-50v
       value: "#936f38"
     - token: gold-60v
-      value: "#7A591A"
+      value: "#7a591a"
     - token: gold-70v
-      value: "#5C410A"
+      value: "#5c410a"
     - token: gold-80v
-      value: "#3B2B15"
+      value: "#3b2b15"
     - token: gold-90v
       value: false
   yellow:
@@ -436,23 +436,23 @@ system:
       value: "#1a1614"
   yellow-vivid:
     - token: yellow-5v
-      value: "#FFF5C2"
+      value: "#fff5c2"
     - token: yellow-10v
       value: "#fee685"
     - token: yellow-20v
       value: "#face00"
     - token: yellow-30v
-      value: "#DDAA01"
+      value: "#ddaa01"
     - token: yellow-40v
-      value: "#B38C00"
+      value: "#b38c00"
     - token: yellow-50v
       value: "#947100"
     - token: yellow-60v
       value: "#776017"
     - token: yellow-70v
-      value: "#5C4809"
+      value: "#5c4809"
     - token: yellow-80v
-      value: "#422D19"
+      value: "#422d19"
     - token: yellow-90v
       value: false
   green-warm:
@@ -478,9 +478,9 @@ system:
       value: "#171712"
   green-warm-vivid:
     - token: green-warm-5v
-      value: "#F5FBC1"
+      value: "#f5fbc1"
     - token: green-warm-10v
-      value: "#E7F434"
+      value: "#e7f434"
     - token: green-warm-20v
       value: "#c5d30a"
     - token: green-warm-30v
@@ -490,11 +490,11 @@ system:
     - token: green-warm-50v
       value: "#6a7d00"
     - token: green-warm-60v
-      value: "#5A6613"
+      value: "#5a6613"
     - token: green-warm-70v
-      value: "#4B4E10"
+      value: "#4b4e10"
     - token: green-warm-80v
-      value: "#38380B"
+      value: "#38380b"
     - token: green-warm-90v
       value: false
   green:
@@ -522,7 +522,7 @@ system:
     - token: green-5v
       value: "#ddf9c7"
     - token: green-10v
-      value: "#C5EE93"
+      value: "#c5ee93"
     - token: green-20v
       value: "#98d035"
     - token: green-30v
@@ -532,9 +532,9 @@ system:
     - token: green-50v
       value: "#538200"
     - token: green-60v
-      value: "#466C04"
+      value: "#466c04"
     - token: green-70v
-      value: "#2F4A0B"
+      value: "#2f4a0b"
     - token: green-80v
       value: "#243413"
     - token: green-90v
@@ -576,9 +576,9 @@ system:
     - token: green-cool-60v
       value: "#216e1f"
     - token: green-cool-70v
-      value: "#154C21"
+      value: "#154c21"
     - token: green-cool-80v
-      value: "#19311E"
+      value: "#19311e"
     - token: green-cool-90v
       value: false
   mint:
@@ -593,7 +593,7 @@ system:
     - token: mint-40
       value: "#34a37e"
     - token: mint-50
-      value: "#2E8367"
+      value: "#2e8367"
     - token: mint-60
       value: "#286846"
     - token: mint-70
@@ -606,21 +606,21 @@ system:
     - token: mint-5v
       value: "#c9fbeb"
     - token: mint-10v
-      value: "#83FCD4"
+      value: "#83fcd4"
     - token: mint-20v
       value: "#0ceda6"
     - token: mint-30v
       value: "#04c585"
     - token: mint-40v
-      value: "#00A871"
+      value: "#00a871"
     - token: mint-50v
       value: "#008659"
     - token: mint-60v
       value: "#146947"
     - token: mint-70v
-      value: "#0C4E29"
+      value: "#0c4e29"
     - token: mint-80v
-      value: "#0D351E"
+      value: "#0d351e"
     - token: mint-90v
       value: false
   mint-cool:
@@ -635,7 +635,7 @@ system:
     - token: mint-cool-40
       value: "#4f9e99"
     - token: mint-cool-50
-      value: "#40807E"
+      value: "#40807e"
     - token: mint-cool-60
       value: "#376462"
     - token: mint-cool-70
@@ -658,9 +658,9 @@ system:
     - token: mint-cool-50v
       value: "#008480"
     - token: mint-cool-60v
-      value: "#0F6460"
+      value: "#0f6460"
     - token: mint-cool-70v
-      value: "#0B4B3F"
+      value: "#0b4b3f"
     - token: mint-cool-80v
       value: "#123131"
     - token: mint-cool-90v
@@ -671,9 +671,9 @@ system:
     - token: cyan-10
       value: "#ccecf2"
     - token: cyan-20
-      value: "#99DEEA"
+      value: "#99deea"
     - token: cyan-30
-      value: "#5DC0D1"
+      value: "#5dc0d1"
     - token: cyan-40
       value: "#449dac"
     - token: cyan-50
@@ -688,7 +688,7 @@ system:
       value: "#111819"
   cyan-vivid:
     - token: cyan-5v
-      value: "#E5FAFF"
+      value: "#e5faff"
     - token: cyan-10v
       value: "#a8f2ff"
     - token: cyan-20v
@@ -698,13 +698,13 @@ system:
     - token: cyan-40v
       value: "#009ec1"
     - token: cyan-50v
-      value: "#0081A1"
+      value: "#0081a1"
     - token: cyan-60v
-      value: "#00687D"
+      value: "#00687d"
     - token: cyan-70v
-      value: "#0E4F5C"
+      value: "#0e4f5c"
     - token: cyan-80v
-      value: "#093B44"
+      value: "#093b44"
     - token: cyan-90v
       value: false
   blue-cool:
@@ -732,7 +732,7 @@ system:
     - token: blue-cool-5v
       value: "#e1f3f8"
     - token: blue-cool-10v
-      value: "#C3EBFA"
+      value: "#c3ebfa"
     - token: blue-cool-20v
       value: "#97d4ea"
     - token: blue-cool-30v
@@ -746,7 +746,7 @@ system:
     - token: blue-cool-70v
       value: "#074b69"
     - token: blue-cool-80v
-      value: "#002D3F"
+      value: "#002d3f"
     - token: blue-cool-90v
       value: false
   blue:
@@ -772,11 +772,11 @@ system:
       value: "#11181d"
   blue-vivid:
     - token: blue-5v
-      value: "#E8F5FF"
+      value: "#e8f5ff"
     - token: blue-10v
-      value: "#CFE8FF"
+      value: "#cfe8ff"
     - token: blue-20v
-      value: "#A1D3FF"
+      value: "#a1d3ff"
     - token: blue-30v
       value: "#58b4ff"
     - token: blue-40v
@@ -814,11 +814,11 @@ system:
       value: "#13171f"
   blue-warm-vivid:
     - token: blue-warm-5v
-      value: "#EDF5FF"
+      value: "#edf5ff"
     - token: blue-warm-10v
-      value: "#D4E5FF"
+      value: "#d4e5ff"
     - token: blue-warm-20v
-      value: "#ADCDFF"
+      value: "#adcdff"
     - token: blue-warm-30v
       value: "#81aefc"
     - token: blue-warm-40v
@@ -856,23 +856,23 @@ system:
       value: "#151622"
   indigo-cool-vivid:
     - token: indigo-cool-5v
-      value: "#EDF0FF"
+      value: "#edf0ff"
     - token: indigo-cool-10v
       value: "#dee5ff"
     - token: indigo-cool-20v
-      value: "#B8C8FF"
+      value: "#b8c8ff"
     - token: indigo-cool-30v
-      value: "#94ADFF"
+      value: "#94adff"
     - token: indigo-cool-40v
       value: "#628ef4"
     - token: indigo-cool-50v
       value: "#4866ff"
     - token: indigo-cool-60v
-      value: "#3E4DED"
+      value: "#3e4ded"
     - token: indigo-cool-70v
-      value: "#222FBF"
+      value: "#222fbf"
     - token: indigo-cool-80v
-      value: "#1B2B85"
+      value: "#1b2b85"
     - token: indigo-cool-90v
       value: false
   indigo:
@@ -898,21 +898,21 @@ system:
       value: "#16171f"
   indigo-vivid:
     - token: indigo-5v
-      value: "#F0F0FF"
+      value: "#f0f0ff"
     - token: indigo-10v
-      value: "#E0E0FF"
+      value: "#e0e0ff"
     - token: indigo-20v
-      value: "#CCCEFF"
+      value: "#ccceff"
     - token: indigo-30v
-      value: "#A3A7FA"
+      value: "#a3a7fa"
     - token: indigo-40v
-      value: "#8289FF"
+      value: "#8289ff"
     - token: indigo-50v
       value: "#656bd7"
     - token: indigo-60v
       value: "#4a50c4"
     - token: indigo-70v
-      value: "#3333A3"
+      value: "#3333a3"
     - token: indigo-80v
       value: "#212463"
     - token: indigo-90v
@@ -940,11 +940,11 @@ system:
       value: "#18161d"
   indigo-warm-vivid:
     - token: indigo-warm-5v
-      value: "#F5F2FF"
+      value: "#f5f2ff"
     - token: indigo-warm-10v
-      value: "#E4DEFF"
+      value: "#e4deff"
     - token: indigo-warm-20v
-      value: "#CFC4FD"
+      value: "#cfc4fd"
     - token: indigo-warm-30v
       value: "#b69fff"
     - token: indigo-warm-40v
@@ -954,9 +954,9 @@ system:
     - token: indigo-warm-60v
       value: "#5942d2"
     - token: indigo-warm-70v
-      value: "#3D2C9D"
+      value: "#3d2c9d"
     - token: indigo-warm-80v
-      value: "#261F5B"
+      value: "#261f5b"
     - token: indigo-warm-90v
       value: false
   violet:
@@ -982,7 +982,7 @@ system:
       value: "#18161d"
   violet-vivid:
     - token: violet-5v
-      value: "#F7F2FF"
+      value: "#f7f2ff"
     - token: violet-10v
       value: "#ede3ff"
     - token: violet-20v
@@ -996,9 +996,9 @@ system:
     - token: violet-60v
       value: "#783cb9"
     - token: violet-70v
-      value: "#54278F"
+      value: "#54278f"
     - token: violet-80v
-      value: "#39215E"
+      value: "#39215e"
     - token: violet-90v
       value: false
   violet-warm:
@@ -1024,7 +1024,7 @@ system:
       value: "#1b151b"
   violet-warm-vivid:
     - token: violet-warm-5v
-      value: "#FEF2FF"
+      value: "#fef2ff"
     - token: violet-warm-10v
       value: "#fbdcff"
     - token: violet-warm-20v
@@ -1036,9 +1036,9 @@ system:
     - token: violet-warm-50v
       value: "#be32d0"
     - token: violet-warm-60v
-      value: "#93348C"
+      value: "#93348c"
     - token: violet-warm-70v
-      value: "#711E6C"
+      value: "#711e6c"
     - token: violet-warm-80v
       value: "#481441"
     - token: violet-warm-90v
@@ -1066,7 +1066,7 @@ system:
       value: "#1b1617"
   magenta-vivid:
     - token: magenta-5v
-      value: "#FFF2F5"
+      value: "#fff2f5"
     - token: magenta-10v
       value: "#ffddea"
     - token: magenta-20v
@@ -1080,9 +1080,9 @@ system:
     - token: magenta-60v
       value: "#ab2165"
     - token: magenta-70v
-      value: "#731F44"
+      value: "#731f44"
     - token: magenta-80v
-      value: "#4F172E"
+      value: "#4f172e"
     - token: magenta-90v
       value: false
   gray-warm:
@@ -1155,7 +1155,7 @@ system:
     - token: gray-cool-5
       value: "#edeff0"
     - token: gray-cool-10
-      value: "#DFE1E2"
+      value: "#dfe1e2"
     - token: gray-cool-20
       value: "#c6cace"
     - token: gray-cool-30

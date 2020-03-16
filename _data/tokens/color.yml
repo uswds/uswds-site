@@ -910,7 +910,7 @@ system:
     - token: indigo-50v
       value: "#656bd7"
     - token: indigo-60v
-      value: "#494FC9"
+      value: "#4a50c4"
     - token: indigo-70v
       value: "#3333A3"
     - token: indigo-80v

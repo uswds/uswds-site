@@ -6,6 +6,145 @@ ignore:
     - nswatch > chokidar > fsevents > node-pre-gyp > tar > chownr:
         reason: None given
         expires: '2019-04-06T15:19:32.382Z'
+  SNYK-JS-AUTOLINKER-73494:
+    - uswds > autolinker:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+    - uswds > handlebars-helpers > helper-markdown > remarkable > autolinker:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+    - uswds > handlebars-helpers > helper-md > remarkable > autolinker:
+        reason: Wait for uSWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+  SNYK-JS-DOTPROP-543489:
+    - uswds > @frctl/fractal > update-notifier > configstore > dot-prop:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+  SNYK-JS-MINIMIST-559764:
+    - uswds > gulp-stylelint > mkdirp > minimist:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+    - uswds > @frctl/fractal > update-notifier > configstore > mkdirp > minimist:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+    - uswds > glob-watcher > chokidar > fsevents > node-pre-gyp > rc > minimist:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+    - uswds > @frctl/fractal > chokidar > fsevents > node-pre-gyp > rc > minimist:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+    - uswds > nswatch > chokidar > fsevents > node-pre-gyp > rc > minimist:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+    - uswds > @frctl/fractal > browser-sync > chokidar > fsevents > node-pre-gyp > rc > minimist:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+    - uswds > @frctl/fractal > nunjucks > chokidar > fsevents > node-pre-gyp > rc > minimist:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+    - uswds > @frctl/nunjucks > nunjucks > chokidar > fsevents > node-pre-gyp > rc > minimist:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+    - uswds > gulp > glob-watcher > chokidar > fsevents > node-pre-gyp > rc > minimist:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+  SNYK-JS-YARGSPARSER-560381:
+    - uswds > mocha > yargs > yargs-parser:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+    - uswds > nyc > yargs > yargs-parser:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+    - uswds > gulp > gulp-cli > yargs > yargs-parser:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.122Z'
+    - uswds > gulp-sass > node-sass > sass-graph > yargs > yargs-parser:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.122Z'
+    - uswds > mocha > yargs-parser:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.122Z'
+    - uswds > stylelint > meow > yargs-parser:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.122Z'
+    - yargs > yargs-parser:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.122Z'
+    - uswds > yargs > yargs-parser:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.122Z'
+  SNYK-JS-JSYAML-174129:
+    - uswds > @frctl/fractal > sinon > build > jxLoader > js-yaml:
+        reason: fractal
+        expires: '2020-04-15T18:16:00.121Z'
+  SNYK-JS-NODESASS-535497:
+    - uswds > gulp-sass > node-sass:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+  SNYK-JS-NODESASS-535498:
+    - uswds > gulp-sass > node-sass:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+  SNYK-JS-NODESASS-535502:
+    - uswds > gulp-sass > node-sass:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+  SNYK-JS-NODESASS-540956:
+    - uswds > gulp-sass > node-sass:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+  SNYK-JS-NODESASS-540958:
+    - uswds > gulp-sass > node-sass:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+  SNYK-JS-NODESASS-540964:
+    - uswds > gulp-sass > node-sass:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+  SNYK-JS-NODESASS-540974:
+    - uswds > gulp-sass > node-sass:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+  SNYK-JS-NODESASS-540978:
+    - uswds > gulp-sass > node-sass:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+  SNYK-JS-NODESASS-540980:
+    - uswds > gulp-sass > node-sass:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+  SNYK-JS-NODESASS-540990:
+    - uswds > gulp-sass > node-sass:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+  SNYK-JS-NODESASS-540992:
+    - uswds > gulp-sass > node-sass:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+  SNYK-JS-NODESASS-540994:
+    - uswds > gulp-sass > node-sass:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+  SNYK-JS-NODESASS-540996:
+    - uswds > gulp-sass > node-sass:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+  SNYK-JS-NODESASS-540998:
+    - uswds > gulp-sass > node-sass:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
+  SNYK-JS-NODESASS-541000:
+    - uswds > gulp-sass > node-sass:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.122Z'
+  SNYK-JS-NODESASS-541002:
+    - uswds > gulp-sass > node-sass:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.122Z'
+  'npm:braces:20180219':
+    - uswds > nswatch > chokidar > anymatch > micromatch > braces:
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.122Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':
@@ -15,3 +154,6 @@ patch:
         patched: '2018-05-15T14:15:25.814Z'
     - gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
         patched: '2018-05-15T14:15:25.814Z'
+  'npm:lodash:20180130':
+    - uswds > @frctl/fractal > vorpal > inquirer > lodash:
+        patched: '2020-03-16T18:10:25.586Z'

@@ -33,10 +33,10 @@ lead: Character count helps users know how much text they can enter when there i
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>
-        <strong>Associate the count message.</strong> Use <code>aria-describedby</code> on the input to allow for the updated message to be cast to those using screen readers.
+        <strong>Associate the character count message to the input.</strong> Use <code>aria-describedby</code> on the input to allow for the message to be announced to those using screen readers.
       </li>
       <li>
-        <strong>Use aria-live polite on character count message.</strong> Use <code>aria-live=<wbr>"polite"</code>. 
+        <strong>Use aria-live polite on character count message.</strong> Use <code>aria-live=<wbr>"polite"</code> so that updates to character count message are also announced when using a screen reader. 
       </li>
     </ul>
     <h4 class="usa-heading">Package information</h4>

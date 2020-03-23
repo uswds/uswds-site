@@ -7,7 +7,7 @@ lead: Here you can find the latest news and information about the U.S. Web Desig
 ---
 
 ## Vision
-Empowered agency digital teams share solutions and use effective human-centered design practices
+Empowered agency digital teams share solutions and use effective human-centered design practices.
 
 ## Mission
 USWDS is a design system for the federal government. We make it easier to build accessible, mobile-friendly government websites for the American public.

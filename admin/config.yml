@@ -1,9 +1,10 @@
 backend:
   name: github
-  repo: uswds/uswds
+  repo: uswds/uswds-site
   branch: master
-  base_url: https://designsystem.digital.gov/
+  base_url: https://federalistapp.18f.gov
   auth_endpoint: external/auth/github
+  preview_context: federalist/build
 
 publish_mode: editorial_workflow
 media_folder: "img/uploads" # Media files will be stored in the repo under images/uploads

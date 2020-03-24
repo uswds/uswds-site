@@ -1,7 +1,7 @@
 ---
-title: The history
-permalink: /about/history/
 layout: styleguide
+title: Testing History
+permalink: /about/history/
 category: About USWDS
 lead: A brief history of the United States Web Design System
 ---

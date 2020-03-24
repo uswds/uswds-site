@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: uswds/uswds
+  branch: master
+  base_url: https://designsystem.digital.gov/
+  auth_endpoint: external/auth/github
+
+publish_mode: editorial_workflow
+media_folder: "img/uploads" # Media files will be stored in the repo under images/uploads
+
+collections:
+  - name: "about"
+    label: "About"
+    folder: "pages/about"
+    create: true
+    slug: "about-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Permalink", name: "permalink", widget: "string" }
+      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Lead", name: "lead", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }

@@ -37,11 +37,85 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
       preview: false
+    # 1. Netlify CMS doesn't pull date information from filename and requires a front matter date field
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" } # Netlify CMS doesn't pull date information from filename and requires a frontmatter date field
+      - { label: "Publish Date", name: "date", widget: "datetime" } # 1
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Category", name: "category", widget: "string", required: false }
       - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "config"
+    label: "Config"
+    editor:
+      preview: false
+    files:
+      - label: "Navigation"
+        name: "navigation"
+        file: "_data/nav.yml"
+        fields:
+          - label: "Primary Navigation"
+            name: "primary"
+            widget: "list"
+            fields:
+              - { label: "Text", name: text, widget: string, required: false }
+              - { label: "Link", name: href, widget: string }
+
+          - label: "Mobile Navigation"
+            name: "mobile"
+            widget: "list"
+            fields:
+              - { label: "Text", name: text, widget: string, required: false }
+              - { label: "Link", name: href, widget: string }
+              - { label: "Collapsible", name: collapsible, widget: boolean, default: false }
+
+          - label: "Components Navigation"
+            name: "Components"
+            widget: "list"
+            fields:
+              - { label: "Text", name: text, widget: string, required: false }
+              - { label: "Link", name: href, widget: string }
+
+          - label: "How to use USWDS"
+            name: "How to use USWDS"
+            widget: "list"
+            fields:
+              - { label: "Text", name: text, widget: string, required: false }
+              - { label: "Link", name: href, widget: string }
+
+          - label: "Design tokens"
+            name: "Design tokens"
+            widget: "list"
+            fields:
+              - { label: "Text", name: text, widget: string }
+              - { label: "Link", name: href, widget: string }
+
+          - label: "Utilities"
+            name: "Utilities"
+            widget: "list"
+            fields:
+              - { label: "Text", name: text, widget: string, required: false }
+              - { label: "Link", name: href, widget: string }
+
+          - label: "Page templates"
+            name: "Page template"
+            widget: "list"
+            fields:
+              - { label: "Text", name: text, widget: string, required: false }
+              - { label: "Link", name: href, widget: string }
+
+          - label: "About"
+            name: "About USWDS"
+            widget: "list"
+            fields:
+              - { label: "Text", name: text, widget: string, required: false }
+              - { label: "Link", name: href, widget: string }
+
+          - label: "Design principles"
+            name: "Design principles"
+            widget: "list"
+            fields:
+              - { label: "Text", name: text, widget: string, required: false }
+              - { label: "Link", name: href, widget: string }

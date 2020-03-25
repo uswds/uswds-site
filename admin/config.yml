@@ -7,18 +7,33 @@ backend:
   preview_context: federalist/build
 
 publish_mode: editorial_workflow
-media_folder: "img/uploads" # Media files will be stored in the repo under images/uploads
+media_folder: "assets/uploads"
 
 collections:
   - name: "about"
     label: "About"
     folder: "pages/about"
     create: true
-    slug: "about-{{slug}}"
+    slug: "{{year}}-{{month}}-{{slug}}"
+    editor:
+      preview: false # Netlify doesn't provide a way to preview liquid templates.
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "styleguide" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Permalink", name: "permalink", widget: "string" }
-      - { label: "Category", name: "category", widget: "string" }
+      - { label: "Category", name: "category", widget: "string", required: false }
       - { label: "Lead", name: "lead", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: 'blog'
+    label: 'Blog'
+    folder: '_posts/'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' } # Netlify CMS doesn't pull date information from filename and requires a frontmatter date field
+      - { label: 'Body', name: 'body', widget: 'markdown' }

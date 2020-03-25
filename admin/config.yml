@@ -1,3 +1,5 @@
+# Content saved using the admin UI will save directly to the hosted repository,
+# even if you're running the UI locally or in staging.
 backend:
   name: github
   repo: uswds/uswds-site
@@ -6,8 +8,11 @@ backend:
   auth_endpoint: external/auth/github
   preview_context: federalist/build
 
+site_url: https://designsystem.digital.gov/
+
 publish_mode: editorial_workflow
-media_folder: "assets/uploads"
+media_folder: "assets/img"
+public_folder: "assets/img/uploads" # Files uploaded by media library.
 
 collections:
   - name: "about"
@@ -22,18 +27,21 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Permalink", name: "permalink", widget: "string" }
       - { label: "Category", name: "category", widget: "string", required: false }
-      - { label: "Lead", name: "lead", widget: "text" }
+      - { label: "Lead", name: "lead", widget: "text", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: 'blog'
-    label: 'Blog'
-    folder: '_posts/'
+  - name: "blog"
+    label: "Blog"
+    folder: "_posts/"
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
       preview: false
     fields:
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' } # Netlify CMS doesn't pull date information from filename and requires a frontmatter date field
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" } # Netlify CMS doesn't pull date information from filename and requires a frontmatter date field
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Category", name: "category", widget: "string", required: false }
+      - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }

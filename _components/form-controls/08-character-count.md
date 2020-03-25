@@ -27,17 +27,25 @@ lead: Character count helps users know how much text they can enter when there i
       <li><strong>Already Implied.</strong> If the character length is apparent or implied by the data type. (i.e. phone number, zip code) </li>
       <li><strong>Short response expected.</strong> If the response will likely by shorter than the limit using normal validation may suffice. (i.e. an address with a 250 chatacter limit) </li>
     </ul>
-     <h4>Usability guidance</h4>
-    <ul class="usa-content-list">
-      <li><strong>Account for a lack of javascript.</strong> Have a default message.</li>
-    </ul>
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li>
         <strong>Associate the character count message to the input.</strong> Use <code>aria-describedby</code> on the input to allow for the message to be announced to those using screen readers.
       </li>
       <li>
-        <strong>Use aria-live polite on character count message.</strong> Use <code>aria-live=<wbr>"polite"</code> so that updates to character count message are also announced when using a screen reader. 
+        <strong>Use the aria-live attribute on character count message.</strong> Use <code>aria-live=<wbr>"polite"</code> so that updates to character count message are also announced when using a screen reader. 
+      </li>
+    </ul>
+    <h4>Implementation</h4>
+    <ul class="usa-content-list">
+      <li>
+        <strong>Add component classes.</strong> The structure should include a base element with the class <code>usa-character-count</code>. Inside of that base element there should be an input element (input or textarea) with the class <code>usa-character-count__input</code> and an message element (span or div) with the class <code>usa-character-count__message</code>
+      </li>
+      <li>
+        <strong>Add a maxlength attribute to the input element.</strong> This will be used as the limit referenced in the message and for validation.
+      </li>
+      <li>
+        <strong>Account for a lack of javascript.</strong> Add a default message in the message element that refers to the character limit.
       </li>
     </ul>
     <h4 class="usa-heading">Package information</h4>

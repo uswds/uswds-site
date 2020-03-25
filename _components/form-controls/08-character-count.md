@@ -17,7 +17,8 @@ lead: Character count helps users know how much text they can enter when there i
   <div id="character-count-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
     <h4>When to use the character count component</h4>
     <ul class="usa-content-list">
-      <li><strong>Long response expected.</strong> When users are likely to enter more information than they need to.</li>
+      <li><strong>Longer response expected.</strong> When users are likely to enter more information than they need to.</li>
+      <li><strong>Long response expected.</strong> When users would need to enter a longer response and would then need more feedback on the limit. (i.e. similar to when you would use a textarea)</li>
       <li><strong>Legal requirement.</strong> When there is a legal reason where an entry must be under a certain number of characters.</li>
     </ul>
     <h4>When to consider something else</h4>
@@ -28,7 +29,7 @@ lead: Character count helps users know how much text they can enter when there i
     </ul>
      <h4>Usability guidance</h4>
     <ul class="usa-content-list">
-      <li><strong>Account for a lack of javascript</strong> Have a default message.</li>
+      <li><strong>Account for a lack of javascript.</strong> Have a default message.</li>
     </ul>
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">

@@ -12,16 +12,79 @@ site_url: https://designsystem.digital.gov/
 
 publish_mode: editorial_workflow
 media_folder: "assets/img"
-public_folder: "assets/img/uploads" # Files uploaded by media library.
+public_folder: "assets/uploads" # Files uploaded by media library.
 
 collections:
+  - name: "documentation"
+    label: "Documentation"
+    folder: "pages/documentation"
+    # ! Completely skips `guidance/performance` posts
+    # ! https://www.netlifycms.org/docs/beta-features/#folder-collections-path
+    path: 'documentation/{{ slug }}'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "styleguide" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Category", name: "category", widget: "string", required: false }
+      - { label: "Lead", name: "lead", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "design-principles"
+    label: "Principles"
+    folder: "pages/design-principles"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "styleguide" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" } # 1
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Category", name: "category", widget: "string", required: false }
+      - label: "Subnav"
+        name: "subnav"
+        widget: "object"
+        fields:
+          - label: "Subnav Items"
+            name: "subnav"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Text", name: text, widget: string, required: false }
+              - { label: "Link", name: href, widget: string }
+      - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "ui-components"
+    label: "Components"
+    folder: "pages/ui-components"
+    create: true
+    slug: "components/{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "styleguide" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Permalink", name: "permalink", widget: "string" }
+      - { label: "Category", name: "category", widget: "string", required: false }
+      - { label: "Lead", name: "lead", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
   - name: "about"
     label: "About"
+    # @TODO: Figure out why it skips research.md
     folder: "pages/about"
     create: true
-    slug: "{{year}}-{{month}}-{{slug}}"
+    slug: "about/{{slug}}"
+    # ! https://www.netlifycms.org/docs/deploy-preview-links#configuring-preview-paths
+    # preview_path: "about/{{ slug }}"
     editor:
-      preview: false # Netlify doesn't provide a way to preview liquid templates.
+      preview: false
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "styleguide" }
       - { label: "Title", name: "title", widget: "string" }

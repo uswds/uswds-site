@@ -18,9 +18,41 @@ collections:
   - name: "documentation"
     label: "Documentation"
     folder: "pages/documentation"
-    # ! Completely skips `guidance/performance` posts
-    # ! https://www.netlifycms.org/docs/beta-features/#folder-collections-path
-    path: 'documentation/{{ slug }}'
+    slug: "{{slug}}"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "styleguide" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Category", name: "category", widget: "string", required: false }
+      - { label: "Lead", name: "lead", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "getting-started"
+    label: "Getting Started"
+    folder: "pages/documentation/getting-started"
+    path: 'documentation/getting-started/{{ slug }}'
+    slug: "{{slug}}"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "styleguide" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Category", name: "category", widget: "string", required: false }
+      - { label: "Lead", name: "lead", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "guidance"
+    label: "Guidance"
+    folder: "pages/documentation/guidance"
+    path: 'documentation/guidance/{{ slug }}'
+    slug: "{{slug}}"
     create: true
     editor:
       preview: false
@@ -90,6 +122,32 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Permalink", name: "permalink", widget: "string" }
       - { label: "Category", name: "category", widget: "string", required: false }
+      - { label: "Lead", name: "lead", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "whats-new"
+    label: "What's New"
+    folder: "pages/whats-new"
+    create: true
+    slug: "about/{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "styleguide" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Permalink", name: "permalink", widget: "string" }
+      - { label: "Category", name: "category", widget: "string", required: false }
+      - label: "Subnav"
+        name: "subnav"
+        widget: "object"
+        fields:
+          - label: "Subnav Items"
+            name: "subnav"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Text", name: text, widget: string, required: false }
+              - { label: "Link", name: href, widget: string }
       - { label: "Lead", name: "lead", widget: "text", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
 

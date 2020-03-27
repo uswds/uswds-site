@@ -18,7 +18,6 @@ lead: Character count helps users know how much text they can enter when there i
     <h4>When to use the character count component</h4>
     <ul class="usa-content-list">
       <li><strong>Brevity is desired.</strong> When users are likely to provide more detail than is needed, and you want to force them to user fewer words. Note: this will likely increase the amount of time it takes users to submit the form because editing requires thinking. In the words of Mark Twain, “I didn't have time to write a short letter, so I wrote a long one instead.”</li>
-      <li><strong>Long response expected.</strong> When users would need to enter a longer response and would then need more feedback on the limit. (i.e. similar to when you would use a textarea)</li>
       <li><strong>Legal requirement.</strong> When there is a legal reason where an entry must be under a certain number of characters.</li>
     </ul>
     <h4>When to consider something else</h4>

@@ -36,6 +36,7 @@ lead: Three text fields are the easiest way for users to enter most dates.
     <h4 class="usa-heading">Implementation</h4>
       <ul class="usa-content-list">
         <li>The year input is set to accept only a four-digit number while the month and day inputs can accept up to a two-digit number.</li>
+        <li>Always use back-end validation on dates for correctness.</li>
       </ul>
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">

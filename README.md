@@ -59,7 +59,7 @@ Sometimes you will want to use the latest version of the `web-design-standards` 
 1. Run `npm start` in the `uswds` directory, and nake a note of the `Local URL` that Fractal is serving.
 1. In another terminal window, set the `FRACTAL_BASE_URL` env var to the running Fractal instance for `uswds`. In your terminal window in the `uswds-site` directory, enter `export FRACTAL_BASE_URL="http://127.0.0.1:3000"` (or the `Local URL` noted above).
 1. In the `uswds-site` window, run `npm run serve` in the `uswds-site` directory to start the Jekyll server.
-1. Run `npm run watch` in both project directories to have changes automatically built and compiled on changes to any asset files.
+1. Run `npm run watch` in the `uswds-site` directory to have changes to that repo automatically built and compiled. Note: `uswds-site` will _not_ automatically rebuild when there are changes in `uswds`, you'll need to trigger a site rebuild manually to reflect changes in the `uswds` repo.
 
 You are now linked and using the local version of USWDS. To unlink this version, type `npm unlink uswds` from the _root level_ of the `uswds` directory.
 
@@ -69,11 +69,7 @@ USWDS uses the [fractal design system builder](http://fractal.build/) to organiz
 
 ### Deployment and previews
 
-This site is deployed on [Federalist](https://federalist.18f.gov/), which automatically builds the site whenever commits are pushed to `master`.
-
-Federalist also builds public previews for each branch pushed to GitHub. For instance, to see the latest build of the `develop` branch, visit:
-
-https://federalist.fr.cloud.gov/preview/18f/web-design-standards-docs/develop/
+This site is deployed on [Federalist](https://federalist.18f.gov/), which automatically builds the public site whenever commits are pushed to `master`. Federalist also builds public previews for each branch pushed to GitHub.
 
 ### Updating the USWDS version
 

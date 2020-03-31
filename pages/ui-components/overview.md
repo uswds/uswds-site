@@ -110,3 +110,5 @@ usa-table | 11 |  9 | 2
 usa-tag | 10 | 9 | 2
 usa-header + usa-footer | 162 | 72 | 10
 usa-banner + usa-footer | 99 | 55 | 7
+
+<!-- ! @TODO add final usa-card stats to table -->

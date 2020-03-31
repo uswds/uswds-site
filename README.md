@@ -45,11 +45,11 @@ Here are a few other utility commands you may find useful:
 
 - `npm run watch`: Runs a series of commands that watches for any changes in both USWDS node module and the root level asset folders in this repo.
 
-- `npm start -- --incremental`: Runs your local server with incremental regeneration enabled to greatly improve build time. Use instead of `npm start`.
+- `npm start -- --incremental` or `npm run serve`: Runs your local server with incremental regeneration enabled to greatly improve build time. Use instead of `npm start`.
 
 ### Using the latest version of the `uswds` package
 
-Sometimes you will want to use the latest version of the `web-design-standards` repo. Follow these steps to do so:
+Sometimes you will want to use the latest version of the `uswds` repo. Follow these steps to do so:
 
 1. Clone the latest version of the [`uswds` repo](https://github.com/uswds/uswds/tree/develop).
 1. Run `npm install` to install the dependencies required for the package in the `uswds` directory.

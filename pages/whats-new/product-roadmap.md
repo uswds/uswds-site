@@ -66,7 +66,7 @@ You can also <a href="https://github.com/uswds/uswds/milestone/52" class="">view
     <li class="site-roadmap-list__item">Blueprint incremental upgrade path</li>
     <li class="site-roadmap-list__item">Blueprint USWDS API</li>
     <li class="site-roadmap-list__item">Improve communication of system state and changes</li>
-    <li class="site-roadmap-list__item">Pilot github communities</li>
+    <li class="site-roadmap-list__item">Pilot GitHub communities</li>
     <li class="site-roadmap-list__item">Blueprint research repo</li>
   </ul>
 </div>

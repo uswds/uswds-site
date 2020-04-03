@@ -573,8 +573,8 @@ body {
 // Label links
 
 %label-maturity {
-  @include u-font("lang", "2xs");
-  color: color("gray-cool-80");
+  @include typeset("lang", "2xs", 4);
+  color: color("ink");
   font-weight: font-weight("bold");
   margin-left: units(1.5);
   position: absolute;
@@ -588,13 +588,21 @@ body {
 .label-alpha,
 .label-in-progress {
   @extend %label-maturity;
-  background-color: color("gold-5v");
+  background-color: color("gold-20v");
 }
 
 .label-beta,
-.label-to-do {
+.label-next {
   @extend %label-maturity;
-  background-color: color("accent-cool-lighter");
+  background-color: color("primary-vivid");
+  color: color("white");
+}
+
+.label-upcoming {
+  @include u-text("ls-1", "normal");
+  @include u-border("base-light", 1px);
+  color: color("base-dark");
+  background-color: color("transparent");
 }
 
 .label-recommended,

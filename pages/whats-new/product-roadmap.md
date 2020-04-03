@@ -27,7 +27,7 @@ You can also <a href="https://github.com/uswds/uswds/milestone/52" class="">view
 
 <div class="maxw-tablet">
   <ul class="site-roadmap-list">
-    <li class="site-roadmap-list__item"><span class="flex-fill">Build most requested new components</span> <span class="usa-tag label-in-progress flex-auto">In progress</span>
+    <li class="site-roadmap-list__item"><span class="flex-fill">Build most-requested new components</span> <span class="usa-tag label-in-progress flex-auto">In progress</span>
       <ul class="site-roadmap-list__sublist">
         <li class="site-roadmap-list__item"><span class="flex-fill">Card</span> <span class="usa-tag label-in-progress">In progress</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Breadcrumb</span> <span class="usa-tag label-to-do">Upcoming</span></li>
@@ -52,13 +52,13 @@ You can also <a href="https://github.com/uswds/uswds/milestone/52" class="">view
         <li class="site-roadmap-list__item">Top tasks</li>
       </ul>
     </li>
-    <li class="site-roadmap-list__item"><span class="flex-fill">Create tailored guides for common user types</span> <span class="usa-tag label-to-do">Upcoming</span></li>
-    <li class="site-roadmap-list__item">Rebuild component library</li>
-    <li class="site-roadmap-list__item"><span class="flex-fill">Improve design assets</span> <span class="usa-tag label-in-progress">In progress</span></li>
-    <li class="site-roadmap-list__item">Develop contribution model</li>
-    <li class="site-roadmap-list__item">Improve test suite</li>
+    <li class="site-roadmap-list__item"><span class="flex-fill">Simplify and improve design assets</span> <span class="usa-tag label-in-progress">In progress</span></li>
     <li class="site-roadmap-list__item"><span class="flex-fill">Develop product design principles</span> <span class="usa-tag label-in-progress">In progress</span></li>
     <li class="site-roadmap-list__item"><span class="flex-fill">Update USWDS Jekyll theme to USWDS 2</span> <span class="usa-tag label-in-progress">In progress</span></li>
+    <li class="site-roadmap-list__item"><span class="flex-fill">Create tailored guides for common user types</span> <span class="usa-tag label-to-do">Upcoming</span></li>
+    <li class="site-roadmap-list__item">Rebuild component library</li>
+    <li class="site-roadmap-list__item">Develop contribution model</li>
+    <li class="site-roadmap-list__item">Improve test suite</li>
   </ul>
 </div>
 

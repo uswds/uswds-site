@@ -599,6 +599,7 @@ body {
 }
 
 .label-upcoming {
+  @extend %label-maturity;
   @include u-text("ls-1", "normal");
   @include u-border("base-light", 1px);
   color: color("base-dark");

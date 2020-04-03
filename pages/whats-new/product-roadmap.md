@@ -30,15 +30,14 @@ You can also <a href="https://github.com/uswds/uswds/milestone/52" class="">view
     <li class="site-roadmap-list__item"><span class="flex-fill">Build most requested new components</span> <span class="usa-tag label-in-progress flex-auto">In progress</span>
       <ul class="site-roadmap-list__sublist">
         <li class="site-roadmap-list__item"><span class="flex-fill">Card</span> <span class="usa-tag label-in-progress">In progress</span></li>
-        <li class="site-roadmap-list__item">Breadcrumb</li>
-        <li class="site-roadmap-list__item">Tooltip</li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Breadcrumb</span> <span class="usa-tag label-to-do">Upcoming</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Character limit</span> <span class="usa-tag label-in-progress">In progress</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Autocomplete combobox</span> <span class="usa-tag label-in-progress">In progress</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Button group</span> <span class="usa-tag label-in-progress">In progress</span></li>
-        <li class="site-roadmap-list__item">Date picker</li>
-        <li class="site-roadmap-list__item">Date range picker</li>
-        <li class="site-roadmap-list__item">Time picker</li>
-        <li class="site-roadmap-list__item">Date and time picker</li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Date picker</span>  <span class="usa-tag label-to-do">Upcoming</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Date range picker</span>  <span class="usa-tag label-to-do">Upcoming</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Time picker</span>  <span class="usa-tag label-to-do">Upcoming</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Date and time picker</span> <span class="usa-tag label-to-do">Upcoming</span></li>
         <li class="site-roadmap-list__item">Tooltip</li>
         <li class="site-roadmap-list__item">Document upload</li>
         <li class="site-roadmap-list__item">Progress bar</li>
@@ -53,7 +52,7 @@ You can also <a href="https://github.com/uswds/uswds/milestone/52" class="">view
         <li class="site-roadmap-list__item">Top tasks</li>
       </ul>
     </li>
-    <li class="site-roadmap-list__item">Create tailored guides for common user types</li>
+    <li class="site-roadmap-list__item"><span class="flex-fill">Create tailored guides for common user types</span> <span class="usa-tag label-to-do">Upcoming</span></li>
     <li class="site-roadmap-list__item">Rebuild component library</li>
     <li class="site-roadmap-list__item"><span class="flex-fill">Improve design assets</span> <span class="usa-tag label-in-progress">In progress</span></li>
     <li class="site-roadmap-list__item">Develop contribution model</li>

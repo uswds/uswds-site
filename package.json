@@ -57,7 +57,7 @@
   },
   "dependencies": {
     "jquery": "^3.4.1",
-    "uswds": "^2.6.0"
+    "uswds": "github:uswds/uswds#advanced-forms"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",

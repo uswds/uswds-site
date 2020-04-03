@@ -7,10 +7,6 @@ layout: styleguide
 title: Product roadmap
 category: About USWDS
 lead: Here, you’ll find our product roadmap — an up-to-date report on the work we’re doing.
-subnav:
-  data: milestones
-  href: ['#%', id]
-  text: title
 redirect_from:
   - /whats-new/product-roadmap/
 ---

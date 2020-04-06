@@ -8,7 +8,7 @@ layout: styleguide
 type: component
 title: Card
 category: Components
-lead: A card component.
+lead: Cards are containers for content that can live as part of a collection or by itself.
 subnav:
 - text: Default card
   href: '#card-title--default'
@@ -16,7 +16,7 @@ subnav:
   href: '#card-title--media'
 - text: Media card
   href: '#card-title--raised'
-- text: Flag card
+- text: Flag
   href: '#card-title--flag'
 ---
 
@@ -31,11 +31,33 @@ subnav:
     <div id="alert-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
       <h4>When to use the card component</h4>
       <ul class="usa-content-list">
-        <li><strong>A strong message.</strong> Work on getting prose.</li>
+        <li>
+          <strong>On its own. A card can be used to visually separate
+          content, but that content must be independent.</strong>
+        </li>
+        <li>
+          <strong>In groups. Cards can be used to display
+          collections of related content.</strong>
+        </li>
       </ul>
       <h4>When to consider something else</h4>
       <ul class="usa-content-list">
-        <li><strong>Something here too.</strong> Plain language</li>
+        <li>
+          <strong>If you have dense and scannable content.</strong> Use a list
+          if the content is brief and can't stand on its own.
+        </li>
+        <li>
+          <strong>A container for form controls.</strong> Form controls aren't
+          independent as they control the content that's being displayed.
+        </li>
+        <li>
+          <strong>Long form content.</strong> Cards can hold a variety of things,
+          but they should be brief and summarize content.
+        </li>
+        <li>
+          <strong>Toggling content.</strong> Use accordions if you want to toggle
+          the display of content.
+        </li>
       </ul>
       <h4>Usability guidance</h4>
       <ul class="usa-content-list">

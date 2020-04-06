@@ -2,12 +2,22 @@
 permalink: /components/card/
 redirect_from:
 - /cards/
+- /card/
 - /components/cards/
 layout: styleguide
 type: component
 title: Card
 category: Components
 lead: A card component.
+subnav:
+- text: Default card
+  href: '#card-title--default'
+- text: Raised card
+  href: '#card-title--media'
+- text: Media card
+  href: '#card-title--raised'
+- text: Flag card
+  href: '#card-title--flag'
 ---
 
 {% include code/preview.html component="card" %}
@@ -29,11 +39,22 @@ lead: A card component.
       </ul>
       <h4>Usability guidance</h4>
       <ul class="usa-content-list">
+        <li><strong>Consider responsive images.</strong> Responsive images help
+        with site performance. As well as making sure your image looks good across all
+        screen sizes.</li>
         <li><strong>Multiple rows of results.</strong> Make sure that a user can tab to each section.</li>
       </ul>
       <h4>Accessibility</h4>
       <ul class="usa-content-list">
-        <li><strong>Consider using `aria-labelledby`.</strong> This will ensure the card shows up in VoiceOver rotor</li>
+        <li>
+          <strong>Consider using <code>aria-label</code> or <code>aria-labelledby</code>.</strong>
+          To briefly summarize the cards purpose when you're listing repeated content or when using it outside of a landmark role.
+        </li>
+        <li>
+          <strong>Use the appropriate sized header.</strong>
+          Update heading size based on the content of your page to make sure
+          headers are in a logical order.
+        </li>
       </ul>
       <h4 class="usa-heading">Package information</h4>
       <ul class="usa-content-list">

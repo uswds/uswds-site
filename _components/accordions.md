@@ -46,7 +46,16 @@ lead: An accordion is a list of headers that hide or reveal additional content w
           <strong>Use unique ids.</strong> Each button has a unique name <code>aria-controls=<wbr>"id"</code> that associates the control to the appropriate region by referencing the controlled element&rsquo;s <code>id</code>.
         </li>
         <li>
-          <strong>The accordion uses javascript to set the aria-hidden value of its content area.</strong> Each content area will have its <code>aria-hidden</code> attribute set to either <code>true</code> or <code>false</code> by the component, depending on its corresponding button&rsquo;s <code>aria-expanded</code> attribute. To ensure that your content is accessible in the event that the JavaScript does not load or is disabled, you should not set <code>aria-hidden=<wbr>"true"</code> on any of your content areas.
+          <strong>The accordion uses javascript to set the <code>hidden</code> value of its content area.</strong> Each content area will have its <code>hidden</code> attribute set by the component, depending on its corresponding button&rsquo;s <code>aria-expanded</code> attribute. To ensure that your content is accessible in the event that the JavaScript does not load or is disabled, you should not manually set <code>hidden</code> on any of your content areas.
+        </li>
+      </ul>
+      <h4 class="usa-heading">Implementation</h4>
+      <ul class="usa-content-list">
+        <li>
+          <strong>Multiselectable accordion groups.</strong> Add the <code>aria-multiselectable="true"</code> attribute to any <code>usa-accordion</code> to create a multiselectable accordion group.
+        </li>
+        <li>
+          <strong>Default an accordion button to open.</strong> Add the <code>aria-expanded="true"</code> attribute to any <code>usa-accordion__button</code> to have that section open by default at page load.
         </li>
       </ul>
       <h4 class="usa-heading">Package information</h4>

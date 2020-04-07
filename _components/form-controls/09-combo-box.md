@@ -3,8 +3,6 @@ title: Combo box
 parent: Form controls
 order: 09
 lead: Combo box helps users select an item from a large list of options.
-
-
 ---
 
 {% include code/preview.html component="combo-box" %}

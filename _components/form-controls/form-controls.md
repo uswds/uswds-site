@@ -22,7 +22,7 @@ subnav:
   href: '#validation'
 - text: Range slider
   href: '#range'
-- text: Combo-box
+- text: Combo box
   href: '#combo-box'
 ---
 

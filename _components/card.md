@@ -8,7 +8,9 @@ layout: styleguide
 type: component
 title: Card
 category: Components
-lead: Cards are containers for content that can live as part of a collection or by itself.
+lead: Cards are containers for content that can live as part of a collection or
+  by itself. They include interactive options so users can access more
+  information about the items contained within them.
 subnav:
 - text: Default card
   href: '#card-title--default'
@@ -32,12 +34,13 @@ subnav:
       <h4>When to use the card component</h4>
       <ul class="usa-content-list">
         <li>
-          <strong>On its own. A card can be used to visually separate
-          content, but that content must be independent.</strong>
+          <strong>
+            To display a scannable summary with an option to scroll or link
+            to more details.
+          </strong>
         </li>
         <li>
-          <strong>In groups. Cards can be used to display
-          collections of related content.</strong>
+          <strong>To display a collection of related items.</strong>
         </li>
       </ul>
       <h4>When to consider something else</h4>
@@ -47,8 +50,12 @@ subnav:
           if the content is brief and can't stand on its own.
         </li>
         <li>
-          <strong>A container for form controls.</strong> Form controls aren't
+          <strong>For collections of controls.</strong> Form controls aren't
           independent as they control the content that's being displayed.
+        </li>
+        <li>
+          <strong>Uniform collections.</strong> For uniform collections of
+          visual content, use a grid.
         </li>
         <li>
           <strong>Long form content.</strong> Cards can hold a variety of things,

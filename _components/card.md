@@ -20,6 +20,8 @@ subnav:
   href: '#card-title--raised'
 - text: Flag
   href: '#card-title--flag'
+- text: Equal Height
+  href: '#card-title--equal-height'
 ---
 
 {% include code/preview.html component="card" %}

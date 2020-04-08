@@ -617,13 +617,13 @@
     description :
     var         : $theme-button-font-family
     default     : 0.5
-    kind        : units
+    kind        : family
   - name        : Button
     subsection  : Border radius
     description :
     var         : $theme-button-border-radius
     default     : "'ui'"
-    kind        : family
+    kind        : units
   - name        : Button
     subsection  : Small width
     description : Size of the header search button
@@ -824,26 +824,7 @@
     description :
     var         : $theme-footer-font-family
     default     : 0.5
-    kind        : units
-  - name        : Button
-    subsection  : Border radius
-    description :
-    var         : $theme-alert-font-family
-    default     : "'ui'"
     kind        : family
-  - name        : Button
-    subsection  : Small width
-    description : Size of the alert icon
-    var         : $theme-accordion-icon-size
-    default     : 4
-    kind        : units
-  - name        : Button
-    subsection  : Stroke width
-    description : Stroke width of `outline` button variants
-    var         : $theme-accordion-padding-x
-    default     : 2px
-    kind        : units
-
 
 - section:
   name: Spacing

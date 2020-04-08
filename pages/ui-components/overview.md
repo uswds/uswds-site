@@ -98,6 +98,7 @@ usa-accordion | 13 | 12 | 2
 usa-alert | 13 | 12 | 2
 usa-banner | 50 | 38 | 5
 usa-button | 19 | 16 | 3
+usa-card | 107 | 44 | 5
 usa-checklist | 11 | 9 | 2
 usa-footer | 59 | 46 | 6
 usa-header | 113 | 63 | 9
@@ -110,5 +111,3 @@ usa-table | 11 |  9 | 2
 usa-tag | 10 | 9 | 2
 usa-header + usa-footer | 162 | 72 | 10
 usa-banner + usa-footer | 99 | 55 | 7
-
-<!-- ! @TODO add final usa-card stats to table -->

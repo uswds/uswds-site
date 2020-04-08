@@ -93,13 +93,8 @@ subnav:
           <strong>Package usage:</strong> <code>@import usa-card</code>
         </li>
         <li>
-          <div class="usa-alert usa-alert--warning usa-alert--slim">
-            <div class="usa-alert__body">
-              <h3 class="usa-alert__heading">@TODO</h3>
-              <p class="usa-alert__text">Get package requirements</p>
-            </div>
-          </div>
-          <strong>Requires:</strong> <code>required</code>, <code>global</code>
+          <strong>Requires:</strong>
+          <code>required</code>, <code>global</code>
         </li>
       </ul>
     </div>

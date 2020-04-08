@@ -11,17 +11,6 @@ category: Components
 lead: Cards are containers for content that can live as part of a collection or
   by itself. They include interactive options so users can access more
   information about the items contained within them.
-subnav:
-- text: Default card
-  href: '#card-title--default'
-- text: Raised card
-  href: '#card-title--media'
-- text: Media card
-  href: '#card-title--raised'
-- text: Flag
-  href: '#card-title--flag'
-- text: Equal Height
-  href: '#card-title--equal-height'
 ---
 
 {% include code/preview.html component="card" %}
@@ -85,6 +74,14 @@ subnav:
           <strong>Use the appropriate sized header.</strong>
           Update heading size based on the content of your page to make sure
           headers are in a logical order.
+        </li>
+      </ul>
+      <h4>Implementation</h4>
+      <ul class="usa-content-list">
+        <li>
+          <strong>Equal height.</strong>
+          Use the <code>usa-card--equal-height</code> class or include the
+          <code>card-equal-height</code> mixin on each card.
         </li>
       </ul>
       <h4 class="usa-heading">Package information</h4>

@@ -637,12 +637,59 @@
     default     : 2px
     kind        : units
 
-  - name        : Footer
+  - name        : Card
     section     : true
-    subsection  : Font family
-    description : Font family of the footer
-    var         : $theme-footer-font-family
-    default     : 0.5
+    subsection  : Background Color
+    description : Background color of card.
+    var         : $theme-card-bg-color
+    default     : "'white'"
+    kind        : color
+  - name        : Card
+    subsection  : Border Color
+    description : Stroke color of card.
+    var         : $theme-card-border-color
+    default     : "'base-lighter'"
+    kind        : color
+  - name        : Card
+    subsection  : Border Radius
+    var         : $theme-card-border-radius
+    default     : "'md'"
+    kind        : units
+  - name        : Card
+    subsection  : Border Width
+    description : Stroke thickness of card.
+    var         : $theme-card-border-width
+    default     : 2px
+    kind        : units
+  - name        : Card
+    subsection  : Font Family
+    description : Font family for the entire card.
+    var         : $theme-card-font-family
+    default     : "'ui'"
+    kind        : family
+  - name        : Card
+    subsection  : Header Font Family
+    description : Font family for the card title.
+    var         : $theme-card-font-family
+    default     : "'ui'"
+    kind        : family
+  - name        : Card
+    subsection  : Card Margin
+    description : Bottom margin for card.
+    var         : $theme-card-margin
+    default     : 2
+    kind        : units
+  - name        : Card
+    subsection  : Card Padding
+    description : Inner spacing of the card. Sometimes halved for vertical spacing.
+    var         : $theme-card-padding-size
+    default     : 4
+    kind        : units
+  - name        : Card
+    subsection  : Card Shadow Size
+    description : Size of the shadow on the card.
+    var         : $theme-card-shadow-size
+    default     : 3
     kind        : units
 
   - name        : Checkbox

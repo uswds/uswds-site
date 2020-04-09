@@ -1,8 +1,8 @@
 <h6>Standard alerts</h6>
 
-{% capture alerts--default %}
-  {% fractal_component alerts--default %}
-{% endcapture %}{{ alerts--default | strip }}
+{% capture alerts--info %}
+  {% fractal_component alerts--info %}
+{% endcapture %}{{ alerts--info | strip }}
 
 {% capture alerts--warning %}
   {% fractal_component alerts--warning %}
@@ -12,10 +12,9 @@
   {% fractal_component alerts--error %}
 {% endcapture %}{{ alerts--error | strip }}
 
-<!-- TODO: The success alert is rendering as info -->
-{% capture alerts--info %}
-  {% fractal_component alerts--info %}
-{% endcapture %}{{ alerts--info | strip }}
+{% capture alerts--success %}
+  {% fractal_component alerts--success %}
+{% endcapture %}{{ alerts--success | strip }}
 
 
 <h6>Slim alert</h6>

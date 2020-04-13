@@ -60,6 +60,7 @@ utilities:
     {% include utilities/utility-title-bar.html
       title="Text color"
       property="color"
+      var="color"
     %}
 
     <section class="utility-examples">

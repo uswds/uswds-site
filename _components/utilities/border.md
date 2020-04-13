@@ -36,7 +36,7 @@ utilities:
   responsive:   true
   active:       false
   focus:        false
-  hover:        true
+  hover:        false
   visited:      false
 - base:         border
   var:          border-width

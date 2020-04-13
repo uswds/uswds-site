@@ -1,5 +1,9 @@
+{% if include.var %}
+  {% assign this_var = include.var %}
+{% else %}
+  {% assign this_var = include.title | slugify %}
+{% endif %}
 
-{% assign this_var = include.title | slugify %}
 {% assign utility = page.utilities | where: "var", this_var | first%}
 
 <section class="utility-title-bar">

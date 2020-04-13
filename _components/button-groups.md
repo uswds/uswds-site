@@ -24,12 +24,12 @@ component_url: 'https://components.designsystem.digital.gov/components/detail/bu
       <h4>When to consider something else</h4>
       <ul class="usa-content-list">
         <li><strong>If actions are not related.</strong> Consider how placement and alternative structure of unrelated actions can improve usability over placing all actions in a group.</li>
-        <li><strong>If there are too many actions.</strong> Be mindful of how a long list of buttons might appear on small screens.</li>
+        <li><strong>If there are too many actions in a segmented button group.</strong> Be mindful of how a long list of buttons might appear on small screens.</li>
         <li><strong>When using destructive and non-destructive actions.</strong> In some cases you may need to use the default button group with destructive and non-destructive actions, but do not place them inside the segmented variant.</li>
       </ul>
       <h4>Usability guidance</h4>
       <ul class="usa-content-list">
-        <li><strong>Do not use button groups for hyperlinks or navigation.</strong> Though buttons can be used for links, buttons in a group should be actions.</li>
+        <li><strong>Do not use button groups for hyperlinks or navigation outside of a form.</strong> Though buttons can be used for links, buttons in a group should be actions.</li>
         <li><strong>Use the default button group to space out multiple buttons.</strong></li>
         <li><strong>Use the segmented button group when button actions are categorically linked.</strong></li>
       </ul>
@@ -42,6 +42,7 @@ component_url: 'https://components.designsystem.digital.gov/components/detail/bu
         <li>Buttons inside of a button group follow the same guidelines as the <a href="{{ site.baseurl }}/components/button/">button component</a>.</li>
         <li>Button groups support any style and size.</li>
         <li>Do not mix differently-sized buttons in the same group.</li>
+        <li>The default button group will display as a column on smaller screen sizes, with the first button in the source order appearing at the top. Because the button group uses <code>flexbox</code>, you can override both of these properties with the <a href="{{ site.baseurl }}/utilities/flex/#utility-flex-direction">flex-direction</a> and <a href="{{ site.baseurl }}/utilities/flex/#utility-order">order</a> utilities, respectively.</li>
         <li>To use the segmented style button group, add the variant to <code>usa-button-group</code>:
           <ul>
             <li><code>usa-button-group--segmented</code></li>

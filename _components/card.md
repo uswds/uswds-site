@@ -8,10 +8,18 @@ layout: styleguide
 type: component
 title: Card
 category: Components
-lead: Cards are containers for content that can live as part of a collection or
-  by itself. They include interactive options so users can access more
-  information about the items contained within them.
+lead: Cards serve as containers that can exist individually or as part of a collection.
 ---
+
+The card component acts as an entry point to more detailed information and
+can contain elements such as multimedia, text, links, graphs, and captions.
+
+Card is typically a member of a collection of similar cards as well as a
+subset or summary of a parent record. A card is distinct from its collection
+peers in content. A card is distinct from its page context in form.
+
+A card is modular in the sense that you can vary the order of its peers
+without destroying the card’s meaning.
 
 {% include code/preview.html component="card" %}
 <section class="site-component-section">
@@ -25,44 +33,51 @@ lead: Cards are containers for content that can live as part of a collection or
       <h4>When to use the card component</h4>
       <ul class="usa-content-list">
         <li>
-          <strong>
-            To display a scannable summary with an option to scroll or link
-            to more details.
-          </strong>
-        </li>
-        <li>
-          <strong>To display a collection of related items.</strong>
+            When you need to present a collection of content that is easily
+            browseable and scannable for differences. Some example use cases
+            include catalogs and dashboards.
         </li>
       </ul>
       <h4>When to consider something else</h4>
       <ul class="usa-content-list">
         <li>
-          <strong>If you have dense and scannable content.</strong> Use a list
-          if the content is brief and can't stand on its own.
+          <strong>If you have dense and scannable content.</strong>
+          Use a list if the content is brief and can't stand on its own.
         </li>
         <li>
-          <strong>For collections of controls.</strong> Form controls aren't
-          independent as they control the content that's being displayed.
+          <strong>Never use a card as decoration.</strong>
+          The styling of a card is not simple ornamentation.
+          The card must have content that is meaningful to the page.
         </li>
         <li>
-          <strong>Uniform collections.</strong> For uniform collections of
-          visual content, use a grid.
+          <strong>Using cards to present a continuous sequential flow.</strong>
+          Cards can hold a variety of things, but they should be brief and summarize content.
         </li>
         <li>
-          <strong>Long form content.</strong> Cards can hold a variety of things,
-          but they should be brief and summarize content.
-        </li>
-        <li>
-          <strong>Toggling content.</strong> Use accordions if you want to toggle
-          the display of content.
+          <strong>
+            Do not repeat information common to all or most peers
+            (i.e. use the same main image).
+          </strong>
+          Repeated information will make it more difficult to distinguish cards
+          from one another. This will reduce the information scent for different
+          cards and increase confusion.
         </li>
       </ul>
       <h4>Usability guidance</h4>
       <ul class="usa-content-list">
-        <li><strong>Consider responsive images.</strong> Responsive images help
-        with site performance. As well as making sure your image looks good across all
-        screen sizes.</li>
-        <li><strong>Multiple rows of results.</strong> Make sure that a user can tab to each section.</li>
+        <li>
+          <strong>Include at least one actionable element.</strong>
+          In addition to its content, a card will include at least one actionable element.
+        </li>
+        <li>
+          <strong>Consider resizing with images or graphic elements.</strong>
+          If using images or other graphic elements like video, make sure to
+          account for resizing.
+        </li>
+        <li>
+          <strong>Multiple rows of results.</strong>
+          Make sure that a user can tab to each section.
+        </li>
       </ul>
       <h4>Accessibility</h4>
       <ul class="usa-content-list">

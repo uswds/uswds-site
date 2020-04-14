@@ -41,7 +41,7 @@ You can also <a href="https://github.com/uswds/uswds/milestone/52" class="">view
         <li class="site-roadmap-list__item"><span class="flex-fill">Tabs</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Icons</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Button icon</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Paginator</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Pagination</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Advanced layout</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Glossary</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Data tables</span> <span class="usa-tag label-upcoming">Upcoming</span></li>

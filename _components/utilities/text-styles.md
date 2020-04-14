@@ -156,6 +156,7 @@ utilities:
     {% include utilities/utility-title-bar.html
       title="Letterspacing"
       property="letter-spacing"
+      var="letter-spacing"
     %}
     <section class="utility-examples">
       <p class="utility-example-container grid-row">
@@ -193,6 +194,7 @@ utilities:
     {% include utilities/utility-title-bar.html
       title="Tabular numerals"
       property="font-feature-settings"
+      var="font-feature-settings"
     %}
     <section class="utility-examples">
       <div class="utility-example-container">
@@ -214,7 +216,6 @@ utilities:
   <section class="utility" id="text-decoration">
     {% include utilities/utility-title-bar.html
       title="Text decoration"
-      hover=true
     %}
     <section class="utility-examples">
       <p class="utility-example-container text-underline">.text-underline</p>
@@ -227,7 +228,6 @@ utilities:
   <section class="utility" id="text-decoration-color">
     {% include utilities/utility-title-bar.html
       title="Text decoration color"
-      hover=true
     %}
     <section class="utility-examples">
 
@@ -260,7 +260,7 @@ utilities:
     {% include utilities/utility-title-bar.html
       title="Uppercase and lowercase"
       property="text-transform"
-      active=true
+      var="text-transform"
     %}
     <section class="utility-examples">
       <p class="utility-example-container text-uppercase">.text-uppercase</p>
@@ -274,6 +274,7 @@ utilities:
     {% include utilities/utility-title-bar.html
       title="Vertical alignment"
       property="vertical-align"
+      var="vertical-align"
     %}
     <section class="utility-examples">
       <p class="utility-example-container">A line of text and <span class="display-inline-block bg-red height-2px width-4 text-baseline"></span> <span class="text-baseline text-red">.text-baseline</span></p>
@@ -291,6 +292,7 @@ utilities:
     {% include utilities/utility-title-bar.html
       title="Whitespace formatting"
       property="white-space"
+      var="whitespace"
     %}
     <section class="utility-examples">
       <p class="utility-example-container"><span class="display-inline-block width-card padding-1 border-1px"> <span class="text-pre"><span class="text-red">.text-pre</span> formatted line   with     multiple       spaces</span></span></p>

@@ -407,6 +407,7 @@ utilities:
   <section class="utility" id="utility-flex-align">
     {% include utilities/utility-title-bar.html
       title="Flex align"
+      var="align-items"
     %}
     <section class="utility-examples">
 
@@ -511,6 +512,7 @@ utilities:
     {% include utilities/utility-title-bar.html
       title="Flex justify"
       property="justify-content"
+      var="justify-content"
     %}
     <section class="utility-examples">
 

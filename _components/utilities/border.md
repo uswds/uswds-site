@@ -33,7 +33,7 @@ utilities:
 - base:         border
   var:          border-style
   output:       true
-  responsive:   false
+  responsive:   true
   active:       false
   focus:        false
   hover:        false
@@ -41,7 +41,7 @@ utilities:
 - base:         border
   var:          border-width
   output:       true
-  responsive:   false
+  responsive:   true
   active:       false
   focus:        false
   hover:        false
@@ -106,8 +106,6 @@ utilities:
     {% include utilities/utility-title-bar.html
       title="Border"
       property="border, border-bottom, border-left, border-right, border-top"
-      responsive=true
-      hover=true
     %}
 
     <section class="utility-examples">
@@ -344,8 +342,6 @@ utilities:
     {% include utilities/utility-title-bar.html
       title="Border style"
       property="border-style"
-      responsive=true
-      hover=true
     %}
     <section class="utility-examples">
       <div class="utility-example-container">
@@ -391,7 +387,6 @@ utilities:
     {% include utilities/utility-title-bar.html
       title="Border width"
       property="border-width"
-      responsive=true
     %}
 
     <section class="utility-examples">
@@ -477,8 +472,6 @@ utilities:
     {% include utilities/utility-title-bar.html
       title="Border color"
       property="border-color"
-      responsive=true
-      hover=true
     %}
 
     <section class="utility-examples">
@@ -577,7 +570,6 @@ utilities:
     {% include utilities/utility-title-bar.html
       title="Border radius"
       property="border-radius"
-      responsive=true
     %}
 
     <section class="utility-examples">

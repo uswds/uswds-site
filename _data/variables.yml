@@ -1305,7 +1305,7 @@
     kind        : size
   - name        : Body line height
     description :
-    var         : $theme-body-font-size
+    var         : $theme-body-line-height
     default     : 5
     kind        : line-height
   - name        : Style body element
@@ -1369,17 +1369,17 @@
     kind        : measure
   - name        : Default measure
     description :
-    var         : $theme-h2-font-size
+    var         : $theme-text-measure
     default     : 4
     kind        : measure
   - name        : Wide measure
     description :
-    var         : $theme-h2-font-size
+    var         : $theme-text-measure-wide
     default     : 5
     kind        : measure
   - name        : Prose font family
     description : Font family used for body text in `usa-prose`. Use role-based `family` tokens.
-    var         : $theme-h2-font-size
+    var         : $theme-prose-font-family
     default     : "'body'"
     kind        : family
 

@@ -1,5 +1,5 @@
 ---
-title: Default button group
+title: Default
 parent: Button groups
 order: 01
 lead: The default button group arranges each button as a separate element with a gap between them. On mobile devices, the buttons are arranged vertically.
@@ -18,12 +18,13 @@ lead: The default button group arranges each button as a separate element with a
       <h4>When to use the default button groups</h4>
       <ul class="usa-content-list">
         <li><strong>Actions have a contextual relationship.</strong> For example, the default button group can be used when a form has both a primary and alternative action.</li>
+        <li><strong>Stepping through linear content.</strong> Buttons in a button group can be used for  directional navigation and actions (e.g., "Back," "Next," "Continue," "Skip," "Cancel.").</li>
       </ul>
       <h4>When to consider something else</h4>
       <ul class="usa-content-list">
         <li><strong>If actions are not related.</strong> Consider how placement and alternative structure of unrelated actions can improve usability over placing all actions in a group.</li>
         <li><strong>When mixing destructive and non-destructive actions.</strong> This can lead to making mistakes.</li>
-        <li><strong>Navigational links.</strong> Though buttons can be used for links, buttons in a group should relate to actions.</li>
+        <li><strong>Linking to content.</strong> Buttons in buttons button groups should not be used for navigating through site pages.</li>
       </ul>
       <h4>Usability guidance</h4>
       <ul class="usa-content-list">

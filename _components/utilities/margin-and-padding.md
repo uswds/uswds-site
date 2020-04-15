@@ -105,7 +105,6 @@ utilities:
   <section class="utility" id="margin">
     {% include utilities/utility-title-bar.html
       title="Margin"
-      responsive=true
     %}
     <section class="utility-examples">
       <h4 class="utility-examples-title">Margin on all sides</h4>
@@ -419,7 +418,6 @@ utilities:
   <section class="utility" id="padding">
     {% include utilities/utility-title-bar.html
       title="Padding"
-      responsive=true
     %}
     <section class="utility-examples">
       <h4 class="utility-examples-title">Padding on all sides</h4>

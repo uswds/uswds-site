@@ -234,6 +234,7 @@ utilities:
     {% include utilities/utility-title-bar.html
       title="Maximum height"
       property="max-height"
+      var="max-height"
     %}
     <section class="utility-examples">
       {% for item in maxh_values %}
@@ -249,6 +250,7 @@ utilities:
     {% include utilities/utility-title-bar.html
       title="Maximum width"
       property="max-width"
+      var="max-width"
     %}
     <section class="utility-examples">
       {% for item in maxw_values %}
@@ -264,6 +266,7 @@ utilities:
     {% include utilities/utility-title-bar.html
       title="Minimum height"
       property="min-height"
+      var="min-height"
     %}
     <section class="utility-examples">
       {% for item in minh_values %}
@@ -279,6 +282,7 @@ utilities:
     {% include utilities/utility-title-bar.html
       title="Minimum width"
       property="min-width"
+      var="min-width"
     %}
     <section class="utility-examples">
       {% for item in minw_values %}
@@ -294,6 +298,7 @@ utilities:
     {% include utilities/utility-title-bar.html
       title="Aspect ratio"
       property=false
+      var="add-aspect"
     %}
     <section class="utility-examples">
       <div class="utility-example-container">

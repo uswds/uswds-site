@@ -35,7 +35,7 @@ layout: default
         <a
           class="usa-button hover:bg-primary-darker text-normal font-lang-sm bg-primary-vivid margin-top-1"
           href="{{ site.baseurl }}/documentation/migration/"
-          >Migrate to v2.5.0</a
+          >Migrate to v2.6.0</a
         >
         <p class="font-ui-xs measure-2">
           USWDS has discontinued support for Version 1.x as of January 2020. We encourage you to migrate,
@@ -60,7 +60,7 @@ layout: default
           />
           <div class="usa-media-block__body">
             {% if list_item.topic %}
-            <h3>{{ list_item.topic }}</h3>
+            <h2>{{ list_item.topic }}</h2>
             {% endif %} {{ list_item.description | markdownify }}
             <p>
               <a href="{{ site.baseurl }}/{{ list_item.link.url }}/"

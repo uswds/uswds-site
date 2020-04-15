@@ -8,18 +8,16 @@ layout: styleguide
 type: component
 title: Card
 category: Components
-lead: Cards serve as containers that can exist individually or as part of a collection.
+lead: Cards contain content and actions about a single subject.
 ---
 
-The card component acts as an entry point to more detailed information and
-can contain elements such as multimedia, text, links, graphs, and captions.
+A **card** is often a subset or summary of a larger idea. It acts as an entry point to more detailed information. This summary can contain a variety of content types, such as text, images and multimedia, or buttons and links.
 
-Card is typically a member of a collection of similar cards as well as a
-subset or summary of a parent record. A card is distinct from its collection
-peers in content. A card is distinct from its page context in form.
+An individual card is typically **a member of a collection** of similar cards, not a single card in isolation. A card is distinguished from others in its collection by its content, and cards are distinguished from the broader page context in form — usually with a border or a shadow.
 
-A card is modular in the sense that you can vary the order of its peers
-without destroying the card’s meaning.
+{:.margin-bottom-4}
+
+Finally, a card is **modular**. This means that you can vary the order of cards in a collection without destroying any individual card’s meaning.
 
 {% include code/preview.html component="card" %}
 <section class="site-component-section">
@@ -33,69 +31,55 @@ without destroying the card’s meaning.
       <h4>When to use the card component</h4>
       <ul class="usa-content-list">
         <li>
-            When you need to present a collection of content that is easily
-            browseable and scannable for differences. Some example use cases
-            include catalogs and dashboards.
+            <strong>Collections of related content.</strong> When you need to present a collection of related groups of content, like articles or sections of a website.
         </li>
       </ul>
       <h4>When to consider something else</h4>
       <ul class="usa-content-list">
         <li>
-          <strong>If you have dense and scannable content.</strong>
-          Use a list if the content is brief and can't stand on its own.
+          <strong>Tabular data.</strong> Don't use a card as a substitute for a table row.
         </li>
         <li>
-          <strong>Never use a card as decoration.</strong>
-          The styling of a card is not simple ornamentation.
-          The card must have content that is meaningful to the page.
+          <strong>Simple calls to action.</strong> Use a button instead.
         </li>
         <li>
-          <strong>Using cards to present a continuous sequential flow.</strong>
-          Cards can hold a variety of things, but they should be brief and summarize content.
+          <strong>Standalone content.</strong> Consider an <code>aside</code> or another standalone element.
         </li>
         <li>
-          <strong>
-            Do not repeat information common to all or most peers
-            (i.e. use the same main image).
-          </strong>
-          Repeated information will make it more difficult to distinguish cards
-          from one another. This will reduce the information scent for different
-          cards and increase confusion.
+          <strong>Sequential, continuous text.</strong> Cards should be self-contained and modular. If the reader is meant to read from card to card, consider a list or simple body text and headings.
         </li>
       </ul>
       <h4>Usability guidance</h4>
       <ul class="usa-content-list">
         <li>
-          <strong>Include at least one actionable element.</strong>
-          In addition to its content, a card will include at least one actionable element.
+          <strong>Make cards actionable.</strong> Since cards are used as a summary of more detailed information, any individual card should link out to that information.
         </li>
         <li>
-          <strong>Consider resizing with images or graphic elements.</strong>
-          If using images or other graphic elements like video, make sure to
-          account for resizing.
+          <strong>Don't use the card component only for decoration.</strong> Use the card component for cards, not for any type of content that's designed to have a border around it.
         </li>
         <li>
-          <strong>Multiple rows of results.</strong>
-          Make sure that a user can tab to each section.
+          <strong>Include non-redundant content.</strong> Don't repeat images or content common to all or most cards in a collection. Repeated information (like using the same image for each card in a collection) makes it more difficult to distinguish cards from one another.
+        </li>
+        <li>
+          <strong>Make sure images are properly sized.</strong> Cards often change size depending on the device. Make sure you use an image that works well on any device at any size.
+        </li>
+        <li>
+          <strong>Use simple styling.</strong> Avoid distracting skeumorphism. Don't include any card styling that calls too much attention to the metaphor of a paper card, like folds, bent edges, or paper texture.
         </li>
       </ul>
       <h4>Accessibility</h4>
       <ul class="usa-content-list">
         <li>
-          <strong>Consider using <code>aria-label</code> or <code>aria-labelledby</code>.</strong>
-          To briefly summarize the cards purpose when you're listing repeated content or when using it outside of a landmark role.
+          <strong>Consider using <code>aria-label</code> or <code>aria-labelledby</code>.</strong> ARIA labels can help screen readers summarize the cards purpose when you're listing repeated content or when using it outside of a landmark role.
         </li>
         <li>
-          <strong>Use the appropriate sized header.</strong>
-          Update heading size based on the content of your page to make sure
-          headers are in a logical order.
+          <strong>Use the appropriate heading level for your page.</strong> Update heading level based on the content of your page to make sure card headings are in the correct logical outline order.
         </li>
       </ul>
       <h4>Implementation</h4>
       <ul class="usa-content-list">
         <li>
-          <strong>Equal height.</strong>
-          Use the <code>usa-card--equal-height</code> class or include the
+          <strong>Equal height cards.</strong> Use the <code>usa-card--equal-height</code> class or include the
           <code>card-equal-height</code> mixin on each card.
         </li>
       </ul>

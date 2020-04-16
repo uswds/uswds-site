@@ -18,7 +18,7 @@ As a complement to this visual style guidance, we strongly recommend you use [18
 
 The site contains HTML mockups of common UI components designed to follow USWDS’s visual style guide. To view the specs of each design live on this website (padding, margins, stroke weight, line-height, and so on), use your browser’s developer tools.
 
-USWDS components and tokens are available as an Adobe XD components file and as a suite of Sketch files and libraries. Download the assets and all associated fonts and images from the link below. Find more complete installation instructions at [our USWDS for designers GitHub repo](https://www.github.com/uswds/uswds-for-designers):
+USWDS components and tokens are available as an Adobe XD components file and as a Sketch library and project file. Download the assets and all associated fonts and images from the link below. Find more complete installation instructions at [our USWDS for designers GitHub repo](https://www.github.com/uswds/uswds-for-designers):
 
 {% include download-buttons-design.html %}
 

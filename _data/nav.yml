@@ -1,20 +1,17 @@
 primary:
   - text: How to use USWDS
     href: /how-to-use-uswds/
-  - text: Design principles
-    href: /design-principles/
+  - href: /design-principles/
   - href: /components/
   - href: /design-tokens/
   - href: /utilities/
   - href: /page-templates/
-  - text: About us
-    href: /about-us/
+  - href: /about-us/
 
 mobile:
   - href: /how-to-use-uswds/
     collapsible: true
-  - text: Design principles
-    href: /design-principles/
+  - href: /design-principles/
   - href: /components/
     collapsible: true
   - href: /design-tokens/
@@ -22,8 +19,7 @@ mobile:
   - href: /utilities/
     collapsible: true
   - href: /page-templates/
-  - text: About us
-    href: /about-us/
+  - href: /about-us/
     collapsible: true
 
 Components:
@@ -64,8 +60,7 @@ How to use USWDS:
   - href: /documentation/showcase/
 
 Design tokens:
-  - text: Design tokens
-    href: /design-tokens/
+  - href: /design-tokens/
   - text: Color
     href: /design-tokens/color/
   - text: Typesetting
@@ -106,8 +101,7 @@ Page templates:
   - href: /page-templates/
 
 About USWDS:
-  - text: About us
-    href: /about-us/
+  - href: /about-us/
   - href: /about-us/history/
   - href: /about-us/our-values/
   - href: /about-us/whats-new/
@@ -117,5 +111,4 @@ About USWDS:
   - href: /about-us/research/
 
 Design principles:
-  - text: Design principles
-    href: /design-principles/
+  - href: /design-principles/

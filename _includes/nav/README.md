@@ -29,7 +29,7 @@ For example, given the following navigation list data:
 # _data/nav.yml
 primary:
   - href: /
-  - href: /about/
+  - href: /about-us/
 ```
 
 You could generate a navigation list with:

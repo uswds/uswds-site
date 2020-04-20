@@ -1,5 +1,5 @@
 ---
-title: About Us
+title: About us
 permalink: /about-us/
 layout: styleguide
 category: About USWDS

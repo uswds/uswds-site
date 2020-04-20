@@ -1,7 +1,7 @@
 primary:
   - text: How to use USWDS
     href: /how-to-use-uswds/
-  - text: Principles
+  - text: Design principles
     href: /design-principles/
   - href: /components/
   - href: /design-tokens/
@@ -13,7 +13,7 @@ primary:
 mobile:
   - href: /how-to-use-uswds/
     collapsible: true
-  - text: Principles
+  - text: Design principles
     href: /design-principles/
   - href: /components/
     collapsible: true

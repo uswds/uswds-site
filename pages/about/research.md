@@ -1,5 +1,5 @@
 ---
-permalink: /about/research/
+permalink: /about-us/research/
 redirect_from:
 - /about-our-work/research-strategy/
 - /about/research-strategy/

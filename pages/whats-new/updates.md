@@ -1,7 +1,7 @@
 ---
 title: News and updates
 layout: post
-permalink: /about/updates/
+permalink: /about-us/updates/
 category: About USWDS
 subnav:
   type: posts

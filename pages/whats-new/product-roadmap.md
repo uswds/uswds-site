@@ -1,5 +1,5 @@
 ---
-permalink: /about/product-roadmap/
+permalink: /about-us/product-roadmap/
 redirect_from:
 - /getting-started/product-roadmap/
 - /about-our-work/product-roadmap/

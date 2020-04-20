@@ -7,7 +7,7 @@ primary:
   - href: /design-tokens/
   - href: /utilities/
   - href: /page-templates/
-  - text: About Us
+  - text: About us
     href: /about-us/
 
 mobile:
@@ -22,7 +22,7 @@ mobile:
   - href: /utilities/
     collapsible: true
   - href: /page-templates/
-  - text: About Us
+  - text: About us
     href: /about-us/
     collapsible: true
 
@@ -106,7 +106,7 @@ Page templates:
   - href: /page-templates/
 
 About USWDS:
-  - text: About Us
+  - text: About us
     href: /about-us/
   - href: /about-us/history/
   - href: /about-us/product-principles/

@@ -23,8 +23,7 @@ mobile:
     collapsible: true
 
 Components:
-  - text: Overview
-    href: /components/
+  - href: /components/
   - href: /components/accordion/
   - href: /components/alert/
   - href: /components/banner/
@@ -79,8 +78,7 @@ Design tokens:
     href: /design-tokens/z-index/
 
 Utilities:
-  - text: Overview
-    href: /utilities/
+  - href: /utilities/
   - href: /utilities/layout-grid/
   - href: /utilities/color/
   - href: /utilities/height-and-width/

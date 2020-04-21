@@ -57,7 +57,7 @@
   },
   "dependencies": {
     "jquery": "^3.5.0",
-    "uswds": "github:uswds/uswds#feature/USWDS-3301"
+    "uswds": "github:uswds/uswds#add-card-component"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",

@@ -98,7 +98,7 @@ usa-accordion | 13 | 12 | 2
 usa-alert | 13 | 12 | 2
 usa-banner | 50 | 38 | 5
 usa-button | 19 | 16 | 3
-usa-card | 73 | 20 | 3
+usa-card | 76 | 23 | 4
 usa-checklist | 11 | 9 | 2
 usa-footer | 59 | 46 | 6
 usa-header | 113 | 63 | 9

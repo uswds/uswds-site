@@ -1,7 +1,7 @@
 ---
 title: How to track performance
 permalink: /performance/how/
-category: Documentation
+category: How to use USWDS
 layout: styleguide
 lead: A step-by-step guide to picking metrics and tools for tracking performance on your site.
 subnav:

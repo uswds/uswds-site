@@ -16,7 +16,7 @@ lead: Search allows users to search for specific content if they know what searc
   <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
     <button class="usa-button-unstyled usa-accordion__button"
         aria-expanded="true" aria-controls="search-bar-docs">
-      Usage
+      Guidance
     </button>
     <div id="search-bar-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
       <h4>When to use the search component</h4>

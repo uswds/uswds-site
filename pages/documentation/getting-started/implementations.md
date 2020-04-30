@@ -4,7 +4,7 @@ redirect_from:
 - /documentation/distributions/
 layout: styleguide
 title: Implementations
-category: Documentation
+category: How to use USWDS
 lead: |
   Users of the U.S. Web Design System have created implementations for
   popular content management systems, web frameworks, and package managers that
@@ -64,4 +64,4 @@ If you have a new implementation to add to this list, please [open an issue] or 
 </div>
 
 [open an issue]: https://github.com/uswds/uswds-site/issues/new
-[send us an email]: mailto:uswds@gsa.gov
+[send us an email]: mailto:uswds@support.digitalgov.gov

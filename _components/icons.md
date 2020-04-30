@@ -12,7 +12,7 @@ USWDS uses a subset of [Font Awesome](https://fontawesome.com/) icons on the pro
 <div class="usa-accordion usa-accordion--bordered site-accordion-docs site-component-section">
   <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="icons-docs">
-    Usage
+    Guidance
   </button>
   <div id="icons-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
     <h4 class="usa-heading">Usability guidance</h4>

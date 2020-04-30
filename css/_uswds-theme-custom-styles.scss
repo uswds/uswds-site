@@ -262,7 +262,7 @@ body {
 
 .site-logo {
   @include at-media("desktop") {
-    margin-top: units(0);
+    margin-top: units(2px);
   }
 
   a {
@@ -470,7 +470,8 @@ body {
 .main-content {
   @include u-pin("right");
   @include u-pin("bottom");
-  padding-top: units(5); // starting: not scrolled
+  display: inline-block; // starting: not scrolled
+  margin-top: units(5); // starting: not scrolled
   position: relative;
   width: 100%;
 
@@ -571,8 +572,8 @@ body {
 // Label links
 
 %label-maturity {
-  @include u-font("lang", "2xs");
-  color: color("gray-cool-80");
+  @include typeset("lang", "2xs", 4);
+  color: color("ink");
   font-weight: font-weight("bold");
   margin-left: units(1.5);
   position: absolute;
@@ -586,13 +587,22 @@ body {
 .label-alpha,
 .label-in-progress {
   @extend %label-maturity;
-  background-color: color("gold-5v");
+  background-color: color("gold-20v");
 }
 
 .label-beta,
-.label-to-do {
+.label-next {
   @extend %label-maturity;
-  background-color: color("accent-cool-lighter");
+  background-color: color("primary-vivid");
+  color: color("white");
+}
+
+.label-upcoming {
+  @extend %label-maturity;
+  @include u-text("ls-1", "normal");
+  @include u-border("base-light", 1px);
+  color: color("base-dark");
+  background-color: color("transparent");
 }
 
 .label-recommended,
@@ -2314,7 +2324,7 @@ h6 + div:not(.usa-accordion__content) {
   padding-top: units("105");
 
   &:hover {
-    @include u-border-color("blue-warm-50v");
+    @include u-border-color("primary");
 
     a {
       color: black;
@@ -2377,12 +2387,12 @@ h6 + div:not(.usa-accordion__content) {
   }
 
   .usa-button.site-button-outline-secondary {
-    @include inner-border($site-border-width, "secondary");
+    @include inner-border($site-border-width, "primary");
     background-color: color("transparent");
-    color: color("secondary");
+    color: color("primary");
 
     &:visited {
-      color: color("secondary");
+      color: color("primary");
     }
 
     &:hover {
@@ -2414,10 +2424,6 @@ h6 + div:not(.usa-accordion__content) {
     @include inner-border($site-border-width, "white-transparent-70");
     background-color: color("transparent");
     color: color("white-transparent-70");
-
-    &:visited {
-      color: color("white-transparent-70");
-    }
 
     &:hover {
       @include inner-border($site-border-width, "white");
@@ -2474,6 +2480,7 @@ $theme-table-column-gap: 4;
 .site-table-responsive {
   width: 100%;
   max-width: none;
+  border-collapse: collapse;
 
   @include at-media-max($theme-table-responsive-expand-at) {
     @include typeset("lang", "2xs");
@@ -3144,4 +3151,142 @@ body {
 
 .post-content h2 {
   line-height: lh("lang", 2);
+}
+
+.page-website-standards {
+  .site-subheading {
+    display: none;
+  }
+}
+
+.site-nav {
+  // Search input gets cutoff on mobile.
+  .usagov-search-autocomplete {
+    min-width: 0;
+  }
+  .usa-button {
+    display: block;
+  }
+}
+
+.site-button-github {
+  .logo {
+    bottom: units(2px);
+    display: inline-block;
+    fill: white;
+    margin-right: units(0.5);
+    vertical-align: middle;
+    width: units(3);
+
+    path {
+      fill: white;
+    }
+  }
+
+  .text {
+    bottom: units(-2px);
+    position: relative;
+    @include at-media("desktop") {
+      @include add-sr-only;
+    }
+  }
+
+  @include at-media("desktop") {
+    &.usa-button {
+      @include u-padding-x(0);
+      background-color: color("transparent");
+      display: inline-block;
+
+      .logo {
+        @include u-padding-x(0);
+        bottom: units(1px);
+        margin-left: units(0.5);
+        position: relative;
+        width: units(4);
+
+        path {
+          fill: color("white-transparent-70");
+        }
+      }
+
+      &:hover,
+      &:active {
+        background-color: color("transparent");
+
+        .logo {
+          path {
+            fill: color("white");
+          }
+        }
+      }
+    }
+
+    .text {
+      @include add-sr-only;
+    }
+  }
+}
+
+@include at-media("desktop") {
+  .site-header .buttons .usa-button {
+    position: relative;
+    bottom: units(-2px);
+  }
+
+  .site-header .buttons .site-button-standards {
+    box-shadow: inset 0 0 0 2px color("gold-30v");
+    color: color("gold-30v");
+  }
+}
+
+.embed-youtube {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.site-roadmap-list,
+.site-roadmap-list__sublist {
+  @include add-list-reset;
+}
+
+.site-roadmap-list {
+  @include u-margin-top(2);
+}
+
+.site-roadmap-list__item,
+.site-roadmap-list__subitem {
+  @include u-border-top(1px);
+  @include u-line-height("lang", 3);
+  @include u-padding-top(0.5);
+  @include u-margin-top(0.5);
+  @include u-display("flex");
+  @include u-flex("wrap", "align-start");
+}
+
+.site-roadmap-list__item {
+  @include u-border-top("ink");
+  @include u-text("bold");
+
+  .usa-tag {
+    @include u-flex("auto");
+  }
+}
+
+.site-roadmap-list__sublist {
+  @include u-width("full");
+
+  .site-roadmap-list__item {
+    @include u-border-top("base-lighter");
+    @include u-text("normal");
+  }
 }

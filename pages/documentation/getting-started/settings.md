@@ -2,7 +2,7 @@
 permalink: /documentation/settings/
 layout: styleguide
 title: Settings
-category: Documentation
+category: How to use USWDS
 lead: Theme settings variables control the appearance of USWDS components and the values of USWDS theme tokens.
 subnav:
 - text: General

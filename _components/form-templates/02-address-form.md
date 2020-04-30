@@ -11,7 +11,7 @@ lead: Enter a standard U.S. mailing or shipping address
 <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="address-form-docs">
-    Usage
+    Guidance
   </button>
   <div id="address-form-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
     <h4>When to use an address form</h4>

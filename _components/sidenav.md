@@ -15,7 +15,7 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
   <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
     <button class="usa-button-unstyled usa-accordion__button"
         aria-expanded="true" aria-controls="sidenav-docs">
-      Usage
+      Guidance
     </button>
     <div id="sidenav-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
       <h4>When to use the side navigation component</h4>

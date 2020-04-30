@@ -24,12 +24,12 @@ As we were looking to see how we could most easily integrate USWDS, I found an e
 
 **USWDS:** How did it make your lives easier?
 
-**Garber:** As a front-end developer, I don’t have to spend a bunch of time making a grid system, or thinking about what markup to use, I can reference USWDS, which has great documentation. It saved us a ton of time spinning up a prototype that we could show to service members when we’re doing user testing. We can ask them how this new site compares to what they’re currently using. We couldn’t have gotten a prototype in front of our users as quickly without USWDS. 
+**Garber:** As a front-end developer, I don’t have to spend a bunch of time making a grid system, or thinking about what markup to use, I can reference USWDS, which has great documentation. It saved us a ton of time spinning up a prototype that we could show to service members when we’re doing user testing. We can ask them how this new site compares to what they’re currently using. We couldn’t have gotten a prototype in front of our users as quickly without USWDS.
 
 
 **USWDS:** Were there any unintended consequences or surprises in using USWDS?
 
-**Garber:** Inevitably, you run into something you need to build that doesn’t exist in USWDS and you have to build it by hand. 
+**Garber:** Inevitably, you run into something you need to build that doesn’t exist in USWDS and you have to build it by hand.
 
 
 **USWDS:** Is there anything USWDS team could do to help you in your efforts?
@@ -45,4 +45,4 @@ I’m pretty happy with the level of engagement from USWDS team. They have been 
 
 ---
 
-We’re looking to learn more [from agencies that have used USWDS](https://github.com/uswds/uswds/blob/develop/docs/WHO_IS_USING_USWDS.md). If you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at [uswds@gsa.gov](mailto:uswds@gsa.gov). You can also chat with the team in the [public Slack channel for USWDS](https://chat.18f.gov/).
+We’re looking to learn more [from agencies that have used USWDS](https://github.com/uswds/uswds/blob/develop/docs/WHO_IS_USING_USWDS.md). If you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at [uswds@support.digitalgov.gov](mailto:uswds@support.digitalgov.gov). You can also chat with the team in the [public Slack channel for USWDS](https://chat.18f.gov/).

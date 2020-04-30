@@ -2,7 +2,7 @@
 permalink: /documentation/designers/
 layout: styleguide
 title: For designers
-category: Documentation
+category: How to use USWDS
 lead: USWDS offers a flexible yet coherent visual style you can apply to any government website. Our visual style offers a clean, modern aesthetic that meets high standards of usability and accessibility while promoting credibility and trust.
 redirect_from:
   - /getting-started/designers/
@@ -18,12 +18,12 @@ As a complement to this visual style guidance, we strongly recommend you use [18
 
 The site contains HTML mockups of common UI components designed to follow USWDS’s visual style guide. To view the specs of each design live on this website (padding, margins, stroke weight, line-height, and so on), use your browser’s developer tools.
 
-USWDS components and tokens are available as an Adobe XD components file and as a suite of Sketch files and libraries. Download the assets and all associated fonts and images from the link below. Find more complete installation instructions at [our USWDS for designers GitHub repo](https://www.github.com/uswds/uswds-for-designers):
+USWDS components and tokens are available as an Adobe XD components file and as a Sketch library and project file. Download the assets and all associated fonts and images from the link below. Find more complete installation instructions at [our USWDS for designers GitHub repo](https://www.github.com/uswds/uswds-for-designers):
 
 {% include download-buttons-design.html %}
 
 ### Retired design files
-USWDS no longer maintains the following design files. The most recent versions remain available for download at the links below. While USWDS is no longer maintaining these files, we'd love to hear from any teams that are using them and adding new components when new versions of USWDS are released. [Send us an email](mailto:@uswds@gsa.gov).
+USWDS no longer maintains the following design files. The most recent versions remain available for download at the links below. While USWDS is no longer maintaining these files, we'd love to hear from any teams that are using them and adding new components when new versions of USWDS are released. [Send us an email](mailto:@uswds@support.digitalgov.gov).
 
 #### 1.6.10
 {% include download-buttons-design-retired-1.6.10.html %}
@@ -41,4 +41,4 @@ We’re glad you’re considering contributing to USWDS — their success relies
 
 Please visit our [wiki](https://github.com/uswds/uswds/wiki/Contribution-Guidelines:-Design) to read our full contribution guidelines. Also, please note that every submission we receive goes through a full design review. (Changes that only affect underlying code are reviewed by our developers.)
 
-Questions or comments? [Email us](mailto:uswds@gsa.gov) and we’ll get back to you as quickly as we can.
+Questions or comments? [Email us](mailto:uswds@support.digitalgov.gov) and we’ll get back to you as quickly as we can.

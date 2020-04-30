@@ -298,6 +298,7 @@ vals_negative:
       {% include utilities/utility-title-bar.html
         title="Text alignment"
         property="text-align"
+        var="text-align"
       %}
       <section class="utility-examples">
         {% assign alignments = 'left, center, right, justify'

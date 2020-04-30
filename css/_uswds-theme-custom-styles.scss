@@ -468,20 +468,8 @@ body {
 // Main Content --------- //
 
 .main-content {
-  @include u-pin("right");
-  @include u-pin("bottom");
-  display: inline-block; // starting: not scrolled
   margin-top: units(5); // starting: not scrolled
   position: relative;
-  width: 100%;
-
-  @include at-media("desktop") {
-    width: calc(100% - #{units($width-nav-sidebar)});
-  }
-
-  .lt-ie9 & {
-    width: 75%;
-  }
 }
 
 // Ensure the homepage accordion displays properly

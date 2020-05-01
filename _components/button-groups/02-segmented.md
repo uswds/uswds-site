@@ -11,10 +11,10 @@ lead: Segmented button groups display a set of discrete buttons in a row as a si
     {% include code/accordion.html component="button-groups-segmented" %}
   <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
     <button class="usa-button-unstyled usa-accordion__button"
-        aria-expanded="true" aria-controls="accordion-bordered-docs">
+        aria-expanded="true" aria-controls="segmented-button-groups-docs">
       Guidance
     </button>
-    <div id="accordion-bordered-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
+    <div id="segmented-button-groups-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
       <h4>When to use the segmented button groups</h4>
       <ul class="usa-content-list">
         <li><strong>Categorically related controls.</strong> For example, segmented buttons can be used as a switch between different views.</li>

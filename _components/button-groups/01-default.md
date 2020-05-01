@@ -11,10 +11,10 @@ lead: The default button group arranges each button as a separate element with a
     {% include code/accordion.html component="button-groups" %}
   <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
     <button class="usa-button-unstyled usa-accordion__button"
-        aria-expanded="true" aria-controls="accordion-bordered-docs">
+        aria-expanded="true" aria-controls="default-button-groups-docs">
       Guidance
     </button>
-    <div id="accordion-bordered-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
+    <div id="default-button-groups-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
       <h4>When to use the default button groups</h4>
       <ul class="usa-content-list">
         <li><strong>Actions have a contextual relationship.</strong> For example, the default button group can be used when a form has both a primary and alternative action.</li>

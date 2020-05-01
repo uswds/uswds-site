@@ -1,6 +1,6 @@
 # Site settings
-title: United States Web Design System
-description: Design and build fast, accessible, mobile-friendly government websites backed by user research.
+title: U.S. Web Design System (USWDS)
+description: USWDS makes it easier to build accessible, mobile-friendly government websites for the American public.
 google_analytics_ua: UA-48605964-43
 components_url: "https://components.designsystem.digital.gov"
 components_url_v2_preview: "https://federalist-3b6ba08e-0df4-44c9-ac73-6fc193b0e19c.app.cloud.gov/preview/uswds/uswds/release-2.6.0/components/preview"

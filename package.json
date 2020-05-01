@@ -56,7 +56,7 @@
     "prepare": "npm run snyk-protect"
   },
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "uswds": "github:uswds/uswds#develop"
   },
   "devDependencies": {

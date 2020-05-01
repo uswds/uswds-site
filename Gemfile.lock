@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/jekyll/jekyll.git
+  remote: https://github.com/jekyll/jekyll.git
   revision: 5ba42c5fd77f2513a54b898ca719061420b862b7
   ref: refs/pull/7821/head
   specs:
@@ -97,4 +97,4 @@ DEPENDENCIES
   scss_lint
 
 BUNDLED WITH
-   1.17.3
+   2.1.4

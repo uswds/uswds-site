@@ -127,7 +127,7 @@ USWDS magic number works because each grade conforms to a specific range of valu
 | `60` | `0.100` | `0.125`
 | `70` | `0.050` | `0.070`
 | `80` | `0.020` | `0.040`
-| `90` | `0.015` | `0.012`
+| `90` | `0.005` | `0.015`
 | `100` | `0.000` | `0.000`
 
 #### Accessible color combination examples

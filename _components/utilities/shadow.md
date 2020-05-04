@@ -36,6 +36,7 @@ utilities:
     {% include utilities/utility-title-bar.html
       title="Shadow"
       property="box-shadow"
+      var="box-shadow"
     %}
     <section class="utility-examples">
       {% for item in site.data.tokens.shadow %}

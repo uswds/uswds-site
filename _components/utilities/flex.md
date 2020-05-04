@@ -408,6 +408,7 @@ utilities:
     {% include utilities/utility-title-bar.html
       title="Flex align"
       var="align-items"
+      property="align-items"
     %}
     <section class="utility-examples">
 

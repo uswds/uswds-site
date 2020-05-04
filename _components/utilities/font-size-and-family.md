@@ -52,6 +52,7 @@ utilities:
     {% include utilities/utility-title-bar.html
       title="Font size and family"
       property="font-size, font-family"
+      var="font"
     %}
     <section class="utility-examples">
 

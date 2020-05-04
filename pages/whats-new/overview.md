@@ -2,7 +2,7 @@
 permalink: /about/whats-new/
 layout: styleguide
 title: What’s new
-category: About USWDS
+category: About
 lead: Here you can find the latest news and information about USWDS. Read our latest release notes, learn about our impact in the government, and learn how we conduct user research to continuously improve our product and process.
 columns:
   - title: New users

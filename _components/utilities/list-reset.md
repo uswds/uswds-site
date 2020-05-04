@@ -32,6 +32,7 @@ utilities:
       {% include utilities/utility-title-bar.html
         title="List reset"
         property=false
+        var="add-list-reset"
       %}
       <section class="utility-examples">
         {% assign thisWrap =              false %}

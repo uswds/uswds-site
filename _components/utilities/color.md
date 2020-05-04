@@ -60,8 +60,7 @@ utilities:
     {% include utilities/utility-title-bar.html
       title="Text color"
       property="color"
-      responsive=true
-      hover=true
+      var="color"
     %}
 
     <section class="utility-examples">
@@ -154,7 +153,6 @@ utilities:
     {% include utilities/utility-title-bar.html
       title="Background color"
       property="background-color"
-      hover=true
     %}
 
     <section class="utility-examples">

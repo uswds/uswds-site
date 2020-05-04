@@ -6,7 +6,7 @@ primary:
   - href: /design-tokens/
   - href: /utilities/
   - href: /page-templates/
-  - href: /about-us/
+  - href: /about/
 
 mobile:
   - href: /how-to-use-uswds/
@@ -19,7 +19,7 @@ mobile:
   - href: /utilities/
     collapsible: true
   - href: /page-templates/
-  - href: /about-us/
+  - href: /about/
     collapsible: true
 
 Components:
@@ -98,15 +98,15 @@ Utilities:
 Page templates:
   - href: /page-templates/
 
-About USWDS:
-  - href: /about-us/
-  - href: /about-us/history/
-  - href: /about-us/our-values/
-  - href: /about-us/whats-new/
-  - href: /about-us/releases/
-  - href: /about-us/updates/
-  - href: /about-us/product-roadmap/
-  - href: /about-us/research/
+About:
+  - href: /about/
+  - href: /about/history/
+  - href: /about/our-values/
+  - href: /about/whats-new/
+  - href: /about/releases/
+  - href: /about/updates/
+  - href: /about/product-roadmap/
+  - href: /about/research/
 
 Design principles:
   - href: /design-principles/

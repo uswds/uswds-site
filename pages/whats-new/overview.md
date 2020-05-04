@@ -1,5 +1,5 @@
 ---
-permalink: /about-us/whats-new/
+permalink: /about/whats-new/
 layout: styleguide
 title: What’s new
 category: About USWDS

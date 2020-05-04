@@ -1,6 +1,6 @@
 ---
 title: The history
-permalink: /about-us/history/
+permalink: /about/history/
 layout: styleguide
 category: About USWDS
 lead: A brief history of the United States Web Design System

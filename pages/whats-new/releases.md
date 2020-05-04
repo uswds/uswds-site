@@ -1,5 +1,5 @@
 ---
-permalink: /about-us/releases/
+permalink: /about/releases/
 redirect_from:
   - /about-our-work/releases/
 layout: styleguide

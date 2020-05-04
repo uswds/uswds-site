@@ -24,6 +24,7 @@ mobile:
 
 Components:
   - href: /components/
+    text: Overview
   - href: /components/accordion/
   - href: /components/alert/
   - href: /components/banner/
@@ -42,7 +43,7 @@ Components:
   - href: /components/typography/
 
 How to use USWDS:
-  - text: How to use USWDS
+  - text: Overview
     href: /how-to-use-uswds/
   - href: /website-standards/
   - href: /maturity-model/
@@ -60,6 +61,7 @@ How to use USWDS:
 
 Design tokens:
   - href: /design-tokens/
+    text: Overview
   - text: Color
     href: /design-tokens/color/
   - text: Typesetting
@@ -79,6 +81,7 @@ Design tokens:
 
 Utilities:
   - href: /utilities/
+    text: Overview
   - href: /utilities/layout-grid/
   - href: /utilities/color/
   - href: /utilities/height-and-width/
@@ -100,6 +103,7 @@ Page templates:
 
 About:
   - href: /about/
+    text: Overview
   - href: /about/product-values/
   - href: /about/whats-new/
   - href: /about/releases/

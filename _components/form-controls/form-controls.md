@@ -24,6 +24,8 @@ subnav:
   href: '#range'
 - text: Character count
   href: '#character-count'
+- text: Combo box
+  href: '#combo-box'
 ---
 
 <div class="site-note"><strong>Note:</strong> If you are a building a form with multiple controls, also consider the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines in the “Form Templates” section</a>.</div>

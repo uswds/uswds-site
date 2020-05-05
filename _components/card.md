@@ -70,18 +70,27 @@ Finally, a card is **modular**. This means that you can vary the order of cards 
       <h4>Accessibility</h4>
       <ul class="usa-content-list">
         <li>
-          <strong>Consider using <code>aria-label</code> or <code>aria-labelledby</code>.</strong> ARIA labels can help screen readers summarize the cards purpose when you're listing repeated content or when using it outside of a landmark role.
+          <strong>Use unordered lists and list items.</strong> Use a <code>ul</code> for a card group and an <code>li</code> for each card. This allows screen readers to enumerate the items in the card group and allows shortcuts between list items.
         </li>
         <li>
           <strong>Use the appropriate heading level for your page.</strong> Update heading level based on the content of your page to make sure card headings are in the correct logical outline order.
         </li>
+        <li>
+          <strong>Use CSS to order the media element.</strong> Logically, the media element should follow the header elmement. Don't re-organize the markup to reverse their order.
+        </li>
       </ul>
       <h4>Implementation</h4>
       <ul class="usa-content-list">
-        <li>
-          <strong>Equal height cards.</strong> Use the <code>usa-card--equal-height</code> class or include the
-          <code>card-equal-height</code> mixin on each card.
-        </li>
+        <li><strong>Control card size and layout with grid utilities.</strong> The <code>usa-card-group</code> block is functionally a wrap-able <code>grid-row</code> and each individual <code>usa-card</code> is a <code>grid-col</code>. This means that you can use a grid utility like <code>tablet:grid-col-4</code> to set a four-column size on a card at tablet width. You can also set custom grid gaps on a <code>usa-card-group</code> using the <code>grid-gap</code> utilities. Since the USWDS grid is based on flexbox, you can use flex positioning utilities on the card group. The default alignment is stretch (this aligns the top and bottom of each card in a row), but the <code>flex-align-start</code> utility can set the alignment to the top of the row.</li>
+        <li><strong>Style cards with utilities.</strong> Style the <code>usa-card__container</code> element with utilities to achieve custom effects, such as changing the border or background color, or adding a drop shadow.</li>
+        <li><strong><code>usa-card--flag</code>:</strong> Display in a horizontal ("flag") orientation at a specified width (<code>$theme-card-flag-min-width</code>)</li>
+        <li><strong><code>usa-card--header-first</code>:</strong> Displays the header element before the media element.</li>
+        <li><strong><code>usa-card--media-right</code>:</strong> In combination with <code>usa-card--flag</code>, sets the media element on the right. (Flag cards display media on the left by default.)</li>
+        <li><strong><code>usa-card__media--indent</code>:</strong> Indents the media element so it doesn't extend to the edge of the card.</li>
+        <li><strong><code>usa-card__media--set-aspect</code>:</strong> Sets a fixed aspect ratio on the card media. The default is 16x9, but this can be changed by adding an <code>add-aspect</code> utility to the media element, like <code>usa-card__media--set-aspect.add-aspect-1x1</code></li>
+        <li><strong><code>usa-card__media--exdent</code>:</strong> Extends the media element out over the card border. Useful for light-bordered cards.</li>
+        <li><strong><code>usa-card__body--exdent</code>:</strong> Extends the body element out over the card border. Useful for light-bordered cards.</li>
+        <li><strong><code>usa-card__footer--exdent</code>:</strong> Extends the footer element out over the card border. Useful for light-bordered cards.</li>
       </ul>
       <h4 class="usa-heading">Package information</h4>
       <ul class="usa-content-list">

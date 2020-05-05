@@ -22,6 +22,8 @@ subnav:
   href: '#validation'
 - text: Range slider
   href: '#range'
+- text: Character count
+  href: '#character-count'
 - text: Combo box
   href: '#combo-box'
 ---

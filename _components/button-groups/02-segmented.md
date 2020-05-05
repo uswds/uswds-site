@@ -31,13 +31,13 @@ lead: Segmented button groups display a set of discrete buttons in a row as a si
       <h4 class="usa-heading">Accessibility</h4>
       <ul class="usa-content-list">
         <li><strong>Use <code>aria-label</code> to give the buttons a useful name.</strong> Some contexts may require additional context provided to screen readers.</li>
-        <li><strong>Use the <code>&lt;button&gt;</code> element.</strong> Do not use <code>&lt;a&gt;</code> or <code>&lt;span&gt;</code> because screen readers will not know if it is a usable button.</li>
+        <li><strong>Use the <code>&lt;button&gt;</code> element.</strong> Don't use <code>&lt;a&gt;</code> because it's a link. Don't use <code>&lt;span&gt;</code> because screen readers won't know it's a usable button.</li>
       </ul>
       <h4 class="usa-heading">Implementation</h4>
       <ul class="usa-content-list">
-        <li>Do not mix differently-sized buttons in the same group.</li>
+        <li>Don't mix differently-sized buttons (like a default button and a big button) in the same group.</li>
         <li>Use short, descriptive button labels to describe controls.</li>
-        <li>Use default buttons as a current state and outline buttons as a non-current state. The segmented button group works with all button variants. However, you will need to create custom styles to distinguish state for all other button variants.</li>
+        <li>Use default buttons as a current state and outline buttons as a non-current state. The segmented button group works with all button variants. However, you may need to create custom styles to distinguish state for some button variants.</li>
       </ul>
       <h4 class="usa-heading">Package information</h4>
       <ul class="usa-content-list">

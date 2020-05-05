@@ -24,7 +24,7 @@ lead: The default button group arranges each button as a separate element with a
       <ul class="usa-content-list">
         <li><strong>If actions are not related.</strong> Consider how placement and alternative structure of unrelated actions can improve usability over placing all actions in a group.</li>
         <li><strong>When mixing destructive and non-destructive actions.</strong> This can lead to input mistakes.</li>
-        <li><strong>Linking to content.</strong> Buttons in buttons button groups should not be used for navigating through site pages.</li>
+        <li><strong>Linking to content.</strong> Buttons in button groups should not be used when text links would be simpler and more contextually appropriate. Grouped buttons such as "Next" and "Previous" are acceptable when content is organized sequentially.</li>
       </ul>
       <h4>Usability guidance</h4>
       <ul class="usa-content-list">

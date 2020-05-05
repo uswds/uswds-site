@@ -57,7 +57,7 @@
   },
   "dependencies": {
     "jquery": "^3.5.0",
-    "uswds": "github:uswds/uswds#add-card-component"
+    "uswds": "github:uswds/uswds#dw-card-layout-grid"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",

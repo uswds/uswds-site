@@ -2,7 +2,7 @@
 title: Combo box
 parent: Form controls
 order: 09
-lead: Combo box helps users select an item from a large list of options.
+lead: A combo box helps users select an item from a large list of options.
 ---
 
 {% include code/preview.html component="combo-box" %}
@@ -15,7 +15,7 @@ lead: Combo box helps users select an item from a large list of options.
   <div id="combo-box-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
     <h4>When to use the combo box component</h4>
     <ul class="usa-content-list">
-      <li><strong>More than 15 options.</strong> When there are more than 15 choices in a drop-down list.</li>
+      <li><strong>More than 15 options.</strong> When there are more than 15 choices in a drop-down list it can be hard to navigate with scrolling only.</li>
       <li><strong>Limited space.</strong> Use a combo box for presenting options when screen real estate is limited.</li>
     </ul>
     <h4>When to consider something else</h4>
@@ -24,6 +24,7 @@ lead: Combo box helps users select an item from a large list of options.
     </ul>
     <h4>Usability guidance</h4>
     <ul class="usa-content-list">
+      <li><strong>Use option strings familiar to users.</strong> The combo box filters by matching strings. Include option text that includes familiar strings or spellings (i.e. if using the combobox with a state list, include the postal abbreviation in the option text: <code>District of Columbia (DC)</code>).</li>
       <li><strong>Make sure to test.</strong> Test dropdowns thoroughly with members of your target audience. Several usability experts suggest they should be the “UI of last resort.” Many users find them confusing and difficult to use.</li>
       <li><strong>Avoid dependent options.</strong> Avoid making options in one dropdown menu change based on the input to another. Users often don’t understand how selecting an item in one impacts another.</li>
       <li><strong>Use a good default.</strong> When most users will (or should) pick a particular option, make it the default: <code>&lt;option selected=<wbr>"selected"&gt;Default<wbr>&lt;/option&gt;</code></li>

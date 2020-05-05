@@ -18,24 +18,24 @@ lead: The default button group arranges each button as a separate element with a
       <h4>When to use the default button groups</h4>
       <ul class="usa-content-list">
         <li><strong>Actions have a contextual relationship.</strong> For example, the default button group can be used when a form has both a primary and alternative action.</li>
-        <li><strong>Stepping through linear content.</strong> Buttons in a button group can be used for  directional navigation and actions (e.g., "Back," "Next," "Continue," "Skip," "Cancel.").</li>
+        <li><strong>Stepping through linear content.</strong> Buttons in a button group can be used for directional navigation and actions (e.g., "Back," "Next," "Continue," "Skip," "Cancel.").</li>
       </ul>
       <h4>When to consider something else</h4>
       <ul class="usa-content-list">
         <li><strong>If actions are not related.</strong> Consider how placement and alternative structure of unrelated actions can improve usability over placing all actions in a group.</li>
-        <li><strong>When mixing destructive and non-destructive actions.</strong> This can lead to making mistakes.</li>
+        <li><strong>When mixing destructive and non-destructive actions.</strong> This can lead to input mistakes.</li>
         <li><strong>Linking to content.</strong> Buttons in buttons button groups should not be used for navigating through site pages.</li>
       </ul>
       <h4>Usability guidance</h4>
       <ul class="usa-content-list">
-        <li><strong>Avoid burden of choice.</strong> Try not to present the user with too many options from which to choose.</li>
+        <li><strong>Avoid burden of choice.</strong> Try not to present the user with too many options.</li>
       </ul>
       <h4 class="usa-heading">Implementation</h4>
       <ul class="usa-content-list">
         <li>Because the button group uses <code>flexbox</code>, there are several ways modify how the default button group is displayed.
         <ul>
           <li>The default button group will display as a column on smaller screen sizes. To override this behavior and display buttons in a row for all screen sizes, use the <a href="{{ site.baseurl }}/utilities/flex/#utility-flex-direction">flex-row</a> utility.</li>
-          <li>On smaller screens, the first button in the source order will appear at the top of column. You can change this behavior using the <a href="{{ site.baseurl }}/utilities/flex/#utility-order">order</a> utility. The order utility includes <a href="{{ site.baseurl }}/utilities/flex/#advanced-settings">advanced settings</a> that allow it modified across different screen sizes.</li>
+          <li>On smaller screens, the first button in the source order will appear at the top of column. You can change this behavior using the <a href="{{ site.baseurl }}/utilities/flex/#utility-order">order</a> utility. The order utility includes <a href="{{ site.baseurl }}/utilities/flex/#advanced-settings">responsive advanced settings</a> that allow it to target specific screen sizes.</li>
           <li>Instead of each button appearing on the left-hand side on larger screens (or if you used <code>flex-row</code>), you can use <a href="{{ site.baseurl }}/utilities/flex/#utility-flex-justify">flex-justify</a> to justify the buttons</li>
         </ul>
         </li>

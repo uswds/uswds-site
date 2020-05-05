@@ -4,7 +4,7 @@ layout: styleguide
 title: Button groups
 type: component
 category: Components
-lead: Use buttons groups to organize similar or related actions together
+lead: Use button groups to collect similar or related actions
 component_url: 'https://components.designsystem.digital.gov/components/detail/button-groups--default.html'
 subnav:
 - text: Default

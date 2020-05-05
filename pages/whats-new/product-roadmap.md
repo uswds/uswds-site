@@ -5,7 +5,7 @@ redirect_from:
 - /about-our-work/product-roadmap/
 layout: styleguide
 title: Product roadmap
-category: About USWDS
+category: About
 lead: Here, you’ll find our product roadmap — an up-to-date report on the work we’re doing.
 redirect_from:
   - /whats-new/product-roadmap/

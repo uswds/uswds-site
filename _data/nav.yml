@@ -1,20 +1,17 @@
 primary:
   - text: How to use USWDS
     href: /how-to-use-uswds/
-  - text: Principles
-    href: /design-principles/
+  - href: /design-principles/
   - href: /components/
   - href: /design-tokens/
   - href: /utilities/
   - href: /page-templates/
-  - text: About
-    href: /about/
+  - href: /about/
 
 mobile:
   - href: /how-to-use-uswds/
     collapsible: true
-  - text: Principles
-    href: /design-principles/
+  - href: /design-principles/
   - href: /components/
     collapsible: true
   - href: /design-tokens/
@@ -22,13 +19,11 @@ mobile:
   - href: /utilities/
     collapsible: true
   - href: /page-templates/
-  - text: About
-    href: /about/
+  - href: /about/
     collapsible: true
 
 Components:
-  - text: Overview
-    href: /components/
+  - href: /components/
   - href: /components/accordion/
   - href: /components/alert/
   - href: /components/banner/
@@ -47,8 +42,7 @@ Components:
   - href: /components/typography/
 
 How to use USWDS:
-  - text: How to use USWDS
-    href: /how-to-use-uswds/
+  - href: /how-to-use-uswds/
   - href: /website-standards/
   - href: /maturity-model/
   - href: /documentation/developers/
@@ -64,8 +58,7 @@ How to use USWDS:
   - href: /documentation/showcase/
 
 Design tokens:
-  - text: Overview
-    href: /design-tokens/
+  - href: /design-tokens/
   - text: Color
     href: /design-tokens/color/
   - text: Typesetting
@@ -84,8 +77,7 @@ Design tokens:
     href: /design-tokens/z-index/
 
 Utilities:
-  - text: Overview
-    href: /utilities/
+  - href: /utilities/
   - href: /utilities/layout-grid/
   - href: /utilities/color/
   - href: /utilities/height-and-width/
@@ -105,10 +97,9 @@ Utilities:
 Page templates:
   - href: /page-templates/
 
-About USWDS:
-  - text: Overview
-    href: /about/
-  - href: /about/product-principles/
+About:
+  - href: /about/
+  - href: /about/product-values/
   - href: /about/whats-new/
   - href: /about/releases/
   - href: /about/updates/
@@ -116,5 +107,4 @@ About USWDS:
   - href: /about/research/
 
 Design principles:
-  - text: Design principles
-    href: /design-principles/
+  - href: /design-principles/

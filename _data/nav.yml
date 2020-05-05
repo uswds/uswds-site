@@ -33,6 +33,7 @@ Components:
   - href: /components/alert/
   - href: /components/banner/
   - href: /components/button/
+  - href: /components/button-groups/
   - href: /components/card/
   - href: /components/footer/
   - href: /components/form-controls/
@@ -109,7 +110,6 @@ Page templates:
 About USWDS:
   - text: Overview
     href: /about/
-  - href: /about/history/
   - href: /about/product-principles/
   - href: /about/whats-new/
   - href: /about/releases/

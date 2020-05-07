@@ -83,7 +83,10 @@ Finally, a card is **modular**. This means that you can vary the order of cards 
       <ul class="usa-content-list">
         <li><strong>Control card size and layout with grid utilities.</strong> The <code>usa-card-group</code> block is functionally a wrap-able <code>grid-row</code> and each individual <code>usa-card</code> is a <code>grid-col</code>. This means that you can use a grid utility like <code>tablet:grid-col-4</code> to set a four-column size on a card at tablet width. You can also set custom grid gaps on a <code>usa-card-group</code> using the <code>grid-gap</code> utilities. Since the USWDS grid is based on flexbox, you can use flex positioning utilities on the card group. The default alignment is stretch (this aligns the top and bottom of each card in a row), but the <code>flex-align-start</code> utility can set the alignment to the top of the row.</li>
         <li><strong>Style cards with utilities.</strong> Style the <code>usa-card__container</code> element with utilities to achieve custom effects, such as changing the border or background color, or adding a drop shadow.</li>
-        <li><strong><code>usa-card--flag</code>:</strong> Display in a horizontal ("flag") orientation at a specified width (<code>$theme-card-flag-min-width</code>)</li>
+      </ul>
+      <h5>Card variants</h5>
+      <ul>
+        <li><strong><code>usa-card--flag</code>:</strong> Display in a horizontal ("flag") orientation at a specified width.(<code>$theme-card-flag-min-width</code>)</li>
         <li><strong><code>usa-card--header-first</code>:</strong> Displays the header element before the media element.</li>
         <li><strong><code>usa-card--media-right</code>:</strong> In combination with <code>usa-card--flag</code>, sets the media element on the right. (Flag cards display media on the left by default.)</li>
         <li><strong><code>usa-card__media--indent</code>:</strong> Indents the media element so it doesn't extend to the edge of the card.</li>

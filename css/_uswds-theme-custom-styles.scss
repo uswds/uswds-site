@@ -3291,3 +3291,9 @@ body {
     @include u-text("normal");
   }
 }
+
+.usa-js-loading {
+  .usa-banner__content {
+    @include add-sr-only;
+  }
+}

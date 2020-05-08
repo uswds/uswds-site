@@ -238,9 +238,9 @@ system:
     - token: red-50v
       value: "#e52207"
     - token: red-60v
-      value: "#b51d09"
+      value: "#b50909"
     - token: red-70v
-      value: "#8b1303"
+      value: "#8b0a03"
     - token: red-80v
       value: "#5c1111"
     - token: red-90v

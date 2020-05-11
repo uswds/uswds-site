@@ -31,10 +31,12 @@ lead: Three text fields are the easiest way for users to enter most dates.
     <ul class="usa-content-list">
       <li><strong>Follow input guidance.</strong> These text fields should follow the <a href="{{ site.baseurl }}/form-controls/#text-inputs"> accessibility guidelines for all text inputs.</a></li>
       <li><strong>Don’t auto-advance focus.</strong> Do not use JavaScript to auto advance the focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes.</li>
+      <li><strong>Use "text" instead of "number" inputs.</strong> Research indicates that <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">numeric inputs still carry many usability problems</a>.</li>
     </ul>
     <h4 class="usa-heading">Implementation</h4>
       <ul class="usa-content-list">
-        <li>Currently, the max limit for the year input is set to 2000, but it should be changed depending on the context of the form.</li>
+        <li>The year input is set to accept only a four-digit number while the month and day inputs can accept up to a two-digit number.</li>
+        <li>Always use back-end validation on dates for correctness.</li>
       </ul>
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">

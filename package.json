@@ -57,7 +57,7 @@
   },
   "dependencies": {
     "jquery": "^3.5.0",
-    "uswds": "github:uswds/uswds#develop"
+    "uswds": "^2.7.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",

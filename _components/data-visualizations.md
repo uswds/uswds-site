@@ -45,7 +45,7 @@ subnav:
         <li><strong>Provide equivalent access.</strong>
           <ul>
             <li>Consider differing experiences. Using a semantic heading and description that provides the author's stated intent delivers a clear message to various audiences while also being supported by assistive technologies.</li>
-            <li>Provide an accessible data table of information represented in the chart using the class <code>usa-sr-only</code>. Screen readers might have difficulty reading content within the SVG. When providing accessible equivalent, you can hide the graphic using the class name using <code>aria-hidden="true"</code>. Note: This is not always a sufficient alternative for complex data sets.</li>
+            <li>Provide an accessible data table of information represented in the chart using the class <code>usa-sr-only</code>. Screen readers might have difficulty reading content within the SVG. When providing accessible equivalent, you can hide the graphic using the class name using <code>aria-hidden="true"</code>. The information in both of the charts on this page is made accessible table for screen readers with a visually-hidden table. Note: This is not always a sufficient alternative for complex data sets.</li>
           </ul>
         </li>
         <li><strong>Provide equivalent facilitation.</strong>

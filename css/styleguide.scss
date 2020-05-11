@@ -214,9 +214,13 @@ body {
 }
 
 .site-banner-alert {
-  @include padding(16px, 8px);
-  background-color: $color-gold;
-  text-align: center;
+  background-color: $color-primary-darkest;
+  @include padding(1.5em);
+
+  .usa-alert {
+    @include margin(0);
+    @include outer-container($site-max-width);
+  }
 }
 
 .site-header-navbar {

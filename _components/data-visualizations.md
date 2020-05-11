@@ -95,10 +95,10 @@ subnav:
 .line-st7{fill:#005EA2;}
 .line-st8{font-size:24px;}
 </style>
-<g id="Roosevelts">
+<g stroke-dasharray="4 1" >
 <g>
   <line class="line-st0" x1="69.45" y1="574.89" x2="971.08" y2="574.89"/>
-  
+
 </g>
 <g>
   <g>
@@ -134,14 +134,14 @@ subnav:
     </g>
   </g>
   <g>
-    <line class="line-st4" x1="622.43" y1="43" x2="735.14" y2="43"/>
+    <line class="line-st4" x1="622.43" y1="43" x2="735.14" y2="43" stroke-dasharray="4 1" />
     <g>
-      <line class="line-st4" x1="262.66" y1="341.21" x2="133.85" y2="434.68"/>
-      <line class="line-st4" x1="391.46" y1="359.9" x2="262.66" y2="341.21"/>
-      <line class="line-st4" x1="520.27" y1="378.6" x2="391.46" y2="359.9"/>
-      <line class="line-st4" x1="649.07" y1="359.9" x2="520.27" y2="378.6"/>
-      <line class="line-st5" x1="777.88" y1="392.62" x2="649.07" y2="359.9"/>
-      <line class="line-st5" x1="906.68" y1="472.07" x2="777.88" y2="392.62"/>
+      <line class="line-st4" x1="262.66" y1="341.21" x2="133.85" y2="434.68" stroke-dasharray="4 1" />
+      <line class="line-st4" x1="391.46" y1="359.9" x2="262.66" y2="341.21" stroke-dasharray="4 1" />
+      <line class="line-st4" x1="520.27" y1="378.6" x2="391.46" y2="359.9" stroke-dasharray="4 1" />
+      <line class="line-st4" x1="649.07" y1="359.9" x2="520.27" y2="378.6" stroke-dasharray="4 1" />
+      <line class="line-st5" x1="777.88" y1="392.62" x2="649.07" y2="359.9" stroke-dasharray="4 1" />
+      <line class="line-st5" x1="906.68" y1="472.07" x2="777.88" y2="392.62" stroke-dasharray="4 1" />
     </g>
   </g>
 </g>

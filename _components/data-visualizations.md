@@ -87,6 +87,7 @@ subnav:
  viewBox="0 0 1020.29 660.46" style="enable-background:new 0 0 1020.29 660.46;" xml:space="preserve" aria-hidden="true">
 <style type="text/css">
 .line-st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+.line-st0-light{fill:none;stroke:#dfe1e2;stroke-miterlimit:10;}
 .line-st2{font-size:27px;}
 .line-st3{fill:none;stroke:#FA9441;stroke-width:5;stroke-miterlimit:10;}
 .line-st4{fill:none;stroke:#005EA2;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
@@ -101,20 +102,20 @@ subnav:
 </g>
 <g>
   <g>
-    <text transform="matrix(1 0 0 1 41.5112 590.7432)" class="line-st1 line-st2">0</text>
-    <text transform="matrix(1 0 0 1 27.6606 473.9014)" class="line-st1 line-st2">25</text>
-    <text transform="matrix(1 0 0 1 27.6606 357.0591)" class="line-st1 line-st2">50</text>
-    <text transform="matrix(1 0 0 1 27.6606 240.2168)" class="line-st1 line-st2">75</text>
-    <text transform="matrix(1 0 0 1 13.8101 123.375)" class="line-st1 line-st2">100</text>
+    <text transform="matrix(1 0 0 1 41.5112 586.7432)" class="line-st1 line-st2">0</text>
+    <text transform="matrix(1 0 0 1 27.6606 469.9014)" class="line-st1 line-st2">25</text>
+    <text transform="matrix(1 0 0 1 27.6606 353.0591)" class="line-st1 line-st2">50</text>
+    <text transform="matrix(1 0 0 1 27.6606 236.2168)" class="line-st1 line-st2">75</text>
+    <text transform="matrix(1 0 0 1 13.8101 119.375)" class="line-st1 line-st2">100</text>
   </g>
   <line class="line-st0" x1="69.45" y1="574.89" x2="69.45" y2="107.53"/>
   <g>
     <g>
-      <line class="line-st0" x1="69.45" y1="574.89" x2="91.99" y2="574.89"/>
-      <line class="line-st0" x1="69.45" y1="458.05" x2="91.99" y2="458.05"/>
-      <line class="line-st0" x1="69.45" y1="341.21" x2="91.99" y2="341.21"/>
-      <line class="line-st0" x1="69.45" y1="224.37" x2="91.99" y2="224.37"/>
-      <line class="line-st0" x1="69.45" y1="107.53" x2="91.99" y2="107.53"/>
+      <line class="line-st0" x1="69.45" y1="574.89" x2="971.08" y2="574.89"/>
+      <line class="line-st0-light" x1="69.45" y1="458.05" x2="971.08" y2="458.05"/>
+      <line class="line-st0-light" x1="69.45" y1="341.21" x2="971.08" y2="341.21"/>
+      <line class="line-st0-light" x1="69.45" y1="224.37" x2="971.08" y2="224.37"/>
+      <line class="line-st0-light" x1="69.45" y1="107.53" x2="971.08" y2="107.53"/>
     </g>
     <g>
     </g>

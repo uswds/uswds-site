@@ -86,7 +86,7 @@ subnav:
 <svg version="1.1" id="LineChart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
  viewBox="0 0 1020.29 660.46" style="enable-background:new 0 0 1020.29 660.46;" xml:space="preserve" aria-hidden="true">
 <style type="text/css">
-.line-st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+.line-st0{fill:none;stroke:#71767a;stroke-miterlimit:10;}
 .line-st0-light{fill:none;stroke:#dfe1e2;stroke-miterlimit:10;}
 .line-st2{font-size:27px;}
 .line-st3{fill:none;stroke:#FA9441;stroke-width:5;stroke-miterlimit:10;}
@@ -108,14 +108,14 @@ subnav:
     <text transform="matrix(1 0 0 1 27.6606 236.2168)" class="line-st1 line-st2">75</text>
     <text transform="matrix(1 0 0 1 13.8101 119.375)" class="line-st1 line-st2">100</text>
   </g>
-  <line class="line-st0" x1="69.45" y1="574.89" x2="69.45" y2="107.53"/>
+  <line class="line-st0" x1="69.45" y1="574.89" x2="69.45" y2="107.53" stroke-width='1px' vector-effect="non-scaling-stroke"/>
   <g>
     <g>
-      <line class="line-st0" x1="69.45" y1="574.89" x2="971.08" y2="574.89"/>
-      <line class="line-st0-light" x1="69.45" y1="458.05" x2="971.08" y2="458.05"/>
-      <line class="line-st0-light" x1="69.45" y1="341.21" x2="971.08" y2="341.21"/>
-      <line class="line-st0-light" x1="69.45" y1="224.37" x2="971.08" y2="224.37"/>
-      <line class="line-st0-light" x1="69.45" y1="107.53" x2="971.08" y2="107.53"/>
+      <line class="line-st0" x1="69.45" y1="574.89" x2="971.08" y2="574.89" stroke-width='1px' vector-effect="non-scaling-stroke"/>
+      <line class="line-st0-light" x1="69.45" y1="458.05" x2="971.08" y2="458.05" stroke-width='1px' vector-effect="non-scaling-stroke"/>
+      <line class="line-st0-light" x1="69.45" y1="341.21" x2="971.08" y2="341.21" stroke-width='1px' vector-effect="non-scaling-stroke"/>
+      <line class="line-st0-light" x1="69.45" y1="224.37" x2="971.08" y2="224.37" stroke-width='1px' vector-effect="non-scaling-stroke"/>
+      <line class="line-st0-light" x1="69.45" y1="107.53" x2="971.08" y2="107.53" stroke-width='1px' vector-effect="non-scaling-stroke"/>
     </g>
     <g>
     </g>
@@ -279,8 +279,8 @@ subnav:
 
 <div class="border bg-white padding-2 margin-bottom-2">
 
-  <h3 class="margin-0">5 Most Visited "National Parks" in 2019</h3>
-  <p class="margin-top-0 font-sans-2xs text-base margin-bottom--3">Out of the 419 parks in the National Park System in 2019, there were 62 with the designation "national park" as part of their official name. </p>
+  <h3 class="margin-0">5 Most Visited National Parks in 2019</h3>
+  <p class="margin-top-0 font-sans-2xs text-base margin-bottom--3">Of the 62 parks with the designation "national park" as part of their official title, these were the top 5 with Great Smoky Mountains National Park ahead over a factor of two.</p>
   <?xml version="1.0" encoding="utf-8"?>
   <?xml version="1.0" encoding="utf-8"?>
   <!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -290,40 +290,43 @@ subnav:
     .st0{fill:#1B1B1B;}
     .st1{font-family:'MyriadPro-Regular';}
     .st2{font-size:28.6875px;}
-    .st3{fill:#1B1B1B;stroke:#000000;stroke-miterlimit:10;}
+    .st3{fill:#71767a;stroke:#71767a;stroke-miterlimit:10;}
+    .st3a{fill:#dfe1e2;stroke:#dfe1e2;stroke-miterlimit:10;}
     .st4{fill:#005EA2;}
     .st5{letter-spacing:-2;}
+    .font-sans-xl-m{font-size: 1.6rem}
+
   </style>
   <g>
     <g>
       <g>
-        <text transform="matrix(1 0 0 1 307.1421 582.875)" class="font-sans-xl">0</text>
-        <text transform="matrix(1 0 0 1 394.5708 582.875)" class="font-sans-xl">2</text>
-        <text transform="matrix(1 0 0 1 481.999 582.875)" class="font-sans-xl">4</text>
-        <text transform="matrix(1 0 0 1 569.4277 582.875)" class="font-sans-xl">6</text>
-        <text transform="matrix(1 0 0 1 656.8564 582.875)" class="font-sans-xl">8</text>
-        <text transform="matrix(1 0 0 1 736.9268 582.875)" class="font-sans-xl">10</text>
-        <text transform="matrix(1 0 0 1 824.3555 582.875)" class="font-sans-xl">12</text>
-        <text transform="matrix(1 0 0 1 911.7842 582.875)" class="font-sans-xl">14</text>
+        <text transform="matrix(1 0 0 1 307.1421 582.875)" class="font-sans-xl-m">0</text>
+        <text transform="matrix(1 0 0 1 394.5708 582.875)" class="font-sans-xl-m">2</text>
+        <text transform="matrix(1 0 0 1 481.999 582.875)" class="font-sans-xl-m">4</text>
+        <text transform="matrix(1 0 0 1 569.4277 582.875)" class="font-sans-xl-m">6</text>
+        <text transform="matrix(1 0 0 1 656.8564 582.875)" class="font-sans-xl-m">8</text>
+        <text transform="matrix(1 0 0 1 736.9268 582.875)" class="font-sans-xl-m">10</text>
+        <text transform="matrix(1 0 0 1 824.3555 582.875)" class="font-sans-xl-m">12</text>
+        <text transform="matrix(1 0 0 1 911.7842 582.875)" class="font-sans-xl-m">14</text>
       </g>
-      <line class="st3" x1="314.5" y1="554.5" x2="926.5" y2="554.5"/>
+      <line class="st3" x1="314.5" y1="554.5" x2="926.5" y2="554.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
       <g>
         <g>
-          <line class="st3" x1="314.5" y1="554.5" x2="314.5" y2="115.5"/>
-          <line class="st3" x1="401.93" y1="554.5" x2="401.93" y2="115.5"/>
-          <line class="st3" x1="489.36" y1="554.5" x2="489.36" y2="115.5"/>
-          <line class="st3" x1="576.79" y1="554.5" x2="576.79" y2="115.5"/>
-          <line class="st3" x1="664.21" y1="554.5" x2="664.21" y2="115.5"/>
-          <line class="st3" x1="751.64" y1="554.5" x2="751.64" y2="115.5"/>
-          <line class="st3" x1="839.07" y1="554.5" x2="839.07" y2="115.5"/>
-          <line class="st3" x1="926.5" y1="554.5" x2="926.5" y2="115.5"/>
+          <line class="st3" x1="314.5" y1="554.5" x2="314.5" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
+          <line class="st3a" x1="401.93" y1="554.5" x2="401.93" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
+          <line class="st3a" x1="489.36" y1="554.5" x2="489.36" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
+          <line class="st3a" x1="576.79" y1="554.5" x2="576.79" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
+          <line class="st3a" x1="664.21" y1="554.5" x2="664.21" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
+          <line class="st3a" x1="751.64" y1="554.5" x2="751.64" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
+          <line class="st3a" x1="839.07" y1="554.5" x2="839.07" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
+          <line class="st3a" x1="926.5" y1="554.5" x2="926.5" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
         </g>
         <g>
         </g>
       </g>
     </g>
     <g>
-      <line class="st3" x1="314.5" y1="554.5" x2="314.5" y2="115.5"/>
+      <line class="st3" x1="314.5" y1="554.5" x2="314.5" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
       <g>
         <g>
           <line class="st3" x1="314.5" y1="510.6" x2="329.8" y2="510.6"/>
@@ -355,14 +358,14 @@ subnav:
     <g>
       <g>
       </g>
-      <text transform="matrix(1 0 0 1 366.5312 80.6797)" class="font-sans-xl">Visits (in millions)</text>
+      <text transform="matrix(1 0 0 1 366.5312 80.6797)" class="font-sans-xl-m">Visits (in millions)</text>
     </g>
     <g>
-      <text transform="matrix(1 0 0 1 195.7827 521.3574)" class="font-sans-xl">Yosemite</text>
-      <text transform="matrix(1 0 0 1 250.6899 433.5576)" class="font-sans-xl">Zion</text>
-      <text transform="matrix(1 0 0 1 110.8125 345.7578)" class="font-sans-xl">Rocky Mountain</text>
-      <text transform="matrix(1 0 0 1 134.4487 257.958)" class="font-sans-xl">Grand Canyon</text>
-      <text transform="matrix(1 0 0 1 18.4971 170.1577)" class="font-sans-xl">Great Smoky Mountain</text>
+      <text transform="matrix(1 0 0 1 290 501.3574)" class="font-sans-xl-m"><tspan x="0" text-anchor="end">Yosemite</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
+      <text transform="matrix(1 0 0 1 290 413.5576)" class="font-sans-xl-m"><tspan x="0" text-anchor="end">Zion</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
+      <text transform="matrix(1 0 0 1 290 325.7578)" class="font-sans-xl-m"><tspan x="0" text-anchor="end">Rocky Mountain</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
+      <text transform="matrix(1 0 0 1 290 237.958)" class="font-sans-xl-m"><tspan x="0" text-anchor="end">Grand Canyon</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
+      <text transform="matrix(1 0 0 1 290 153.1577)" class="font-sans-xl-m"><tspan x="0" text-anchor="end">Great Smoky Mountains</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
     </g>
   </g>
   </svg>

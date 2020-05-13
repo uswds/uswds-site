@@ -283,7 +283,7 @@ subnav:
 
   <h3>References</h3>
   <ul>
-    <li><a href="https://accessibility.psu.edu/images/charts/">Chart Accessibillity guidance</a> &nbsp; [psu.edu]</li>
+    <li><a href="https://accessibility.psu.edu/images/charts/">Chart Accessibility guidance</a> &nbsp; [psu.edu]</li>
   </ul>
 
 </section>
@@ -297,7 +297,7 @@ subnav:
   <ul>
     <li>When displaying multi-variant data: </li>
       <ul>
-        <li>It is important to use discrete, high contrast colors or textured fill. These accomodateion allow for various levels of visual impairments to differentiate between variables. </li>
+        <li>It is important to use discrete, high contrast colors or textured fill. This accommodation differentiates variables for audiences with visual impairments like color blindness or low vision. </li>
         <li>The use of stacked bar charts for multi-variant data can be used if it is important to communicate the sum of the dataset.</li>
       </ul>
   </ul>

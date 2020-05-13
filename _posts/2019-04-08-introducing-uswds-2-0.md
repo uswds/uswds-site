@@ -2,7 +2,7 @@
 title: Introducing USWDS 2.0
 tags:
 - updates
-category: About USWDS
+category: About
 author: Dan O. Williams, Maya Benari
 meta:
   og:image: /img/introducing-uswds-2-0/feature-image.jpg

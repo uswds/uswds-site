@@ -5,7 +5,7 @@ tags:
 - case study
 - design
 - cbp
-category: About USWDS
+category: About
 ---
 As mentioned in our [recent Q&A with the team at NASA](https://designsystem.digital.gov/whats-new/updates/2017/03/21/nasa-journey-with-us-web-design-standards/), the U.S. Web Design Standards team is sitting down with various agencies that are using the Standards. In this second post in our series, we met with the team at the U.S. Customs and Border Protection and learned how they used the  Standards to train, develop, and design their various websites and applications.
 

@@ -273,7 +273,7 @@ subnav:
     <p id="source_line">Source: <a href="https://trends.google.com/trends/explore?date=2020-03-01%202020-03-07&geo=US&q=%2Fm%2F07hyk,%2Fm%2F02yy8">Google Trends</a></p>
   </div>
 
-  <h3>What we with our example</h3>
+  <h3>What we did in our example</h3>
   <ul>
     <li>The graphic itself is hidden from screen readers. Because the data set is rather simple, non-visual users will be able to read the same data in the form of data table that hidden for visual users but accessible to screen readers. If the data was more complex, consider using a 3rd party charting tool with support for accessibility as described above.</li>
     <li>The lines are made visually distinct from each other. One is a solid color, and the other uses a dash pattern and a color contrast between the colors of the lines and dots. The dots can also be made into the shape of a triangle, square, or any other shape. Normally, shapes and textures can be introduced if you are comparing more than three data sets. The line chart here is simply a demonstration of how these differentiators can be applied.</li>
@@ -431,7 +431,7 @@ subnav:
   <p id="source">Source: <a href="https://www.nps.gov/aboutus/visitation-numbers.htm">National Park Service</a></p>
 </div>
 
-  <h3>What we with our example</h3>
+  <h3>What we did in our example</h3>
   <ul>
     <li>The graphic itself is hidden from screen readers. Because the data set is rather simple, non-visual users will be able to read the same data in the form of data table that hidden for visual users but accessible to screen readers. If the data was more complex, consider using a 3rd party charting tool with support for accessibility as described above.</li>
     <li>The bars are the same color here because the data depicted is categorically the same (visits) for different national parks.</li>

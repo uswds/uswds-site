@@ -76,6 +76,16 @@ subnav:
 <section id="section-linechart" class="site-component-section">
 <h2 class="usa-heading-alt" id="linechart">Line charts</h2>
 
+<p>Line charts are ideal for depicting trends in data over time using a continuous line.</p>
+
+<h3>Guidance</h3>
+<h4> In addition to the general guidance above, the following line chart guidance applies:</h4>
+<ul>
+  <li>Line charts origin should start at zero, unless clearly noted.</li>
+  <li>If high contrast color selection is not an option, the usage of discrete dash or datapoint styles distinguishes lines without relying upon color.</li>
+</ul>
+
+
 <div class="border bg-white padding-2 margin-bottom-2">
 
 <h3 class="margin-0">Search interest in the Roosevelts first week of March, 2020</h3>
@@ -260,22 +270,37 @@ subnav:
   </table>
 
 
-  <p id="source_line">Source: <a href="https://trends.google.com/trends/explore?date=2020-03-01%202020-03-07&geo=US&q=%2Fm%2F07hyk,%2Fm%2F02yy8">Google Trends</a></p>
-</div>
+    <p id="source_line">Source: <a href="https://trends.google.com/trends/explore?date=2020-03-01%202020-03-07&geo=US&q=%2Fm%2F07hyk,%2Fm%2F02yy8">Google Trends</a></p>
+  </div>
 
-  <h3>Guidance</h3>
-    <h4> In addition to the general guidance above, the following line chart guidance applies:</h4>
-    <ul>
-      <li>Line charts origin should start at zero, unless clearly noted.</li>
-      <li>If high contrast color selection is not an option, the usage of discrete dash or datapoint styles distinguishes lines without relying upon color.</li>
-    </ul>
-    <h3>References</h3>
-      <ul>
-        <li><a href="https://accessibility.psu.edu/images/charts/">Chart Accessibillity guidance</a> &nbsp; [psu.edu]</li>
-      </ul>
+  <h3>What we with our example</h3>
+  <ul>
+    <li>The graphic itself is hidden from screen readers. Because the data set is rather simple, non-visual users will be able to read the same data in the form of data table that hidden for visual users but accessible to screen readers. If the data was more complex, consider using a 3rd party charting tool with support for accessibility as described above.</li>
+    <li>The lines are made visually distinct from each other. One is a solid color, and the other uses a dash pattern and a color contrast between the colors of the lines and dots. The dots can also be made into the shape of a triangle, square, or any other shape. Normally, shapes and textures can be introduced if you are comparing more than three data sets. The line chart here is simply a demonstration of how these differentiators can be applied.</li>
+    <li>Explain in words what the chart intends to communicate. Users may not understand some narrative objectives from a chart graphic alone.</li>
+    <li>Link back to the original chart source data.</li>
+  </ul>
+
+  <h3>References</h3>
+  <ul>
+    <li><a href="https://accessibility.psu.edu/images/charts/">Chart Accessibillity guidance</a> &nbsp; [psu.edu]</li>
+  </ul>
+
 </section>
 <section id="section-barchart" class="site-component-section">
-<h2 class="usa-heading-alt" id="barchart">Bar charts</h2>
+  <h2 class="usa-heading-alt" id="barchart">Bar charts</h2>
+
+  <p>Bar charts are ideal for displaying categorical data.</p>
+
+  <h3>Guidance</h3>
+  <h4> In addition to the general guidance above, the following bar chart guidance applies:</h4>
+  <ul>
+    <li>When displaying multi-variant data: </li>
+      <ul>
+        <li>It is important to use discrete, high contrast colors or textured fill. These accomodateion allow for various levels of visual impairments to differentiate between variables. </li>
+        <li>The use of stacked bar charts for multi-variant data can be used if it is important to communicate the sum of the dataset.</li>
+      </ul>
+  </ul>
 
 <div class="border bg-white padding-2 margin-bottom-2">
 
@@ -406,15 +431,15 @@ subnav:
   <p id="source">Source: <a href="https://www.nps.gov/aboutus/visitation-numbers.htm">National Park Service</a></p>
 </div>
 
-  <h3>Guidance</h3>
-    <h4> In addition to the general guidance above, the following bar chart guidance applies:</h4>
-    <ul>
-      <li>When displaying multi-variant data: </li>
-        <ul>
-          <li>It is important to use discrete, high contrast colors or textured fill. These accomodateion allow for various levels of visual impairments to differentiate between variables. </li>
-          <li>The use of stacked bar charts for multi-variant data can be used if it is important to communicate the sum of the dataset.</li>
-        </ul>
-    </ul>
+  <h3>What we with our example</h3>
+  <ul>
+    <li>The graphic itself is hidden from screen readers. Because the data set is rather simple, non-visual users will be able to read the same data in the form of data table that hidden for visual users but accessible to screen readers. If the data was more complex, consider using a 3rd party charting tool with support for accessibility as described above.</li>
+    <li>The bars are the same color here because the data depicted is categorically the same (visits) for different national parks.</li>
+    <li>Explain in words what the chart intends to communicate, as well as highlight an interesting fact that the graphic conveys. Users may not understand some narrative objectives from a chart graphic alone and the data tables used by screen readers may not adequately capture key insights.</li>
+    <li>Link back to the original chart source data.</li>
+  </ul>
+
+
     <h3>References</h3>
       <ul>
         <li><a href="https://www.highcharts.com/blog/tutorials/best-chart-accessibility-practices/">Bar chart accessibility practices</a>&nbsp; [highcharts.com]</li>

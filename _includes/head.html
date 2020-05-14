@@ -55,6 +55,8 @@
 
   // Don't edit below this line ----------------------------------------------
   // https://github.com/filamentgroup/loadJS
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+
   (function( w ){
     var loadJS = function( src, cb, ordered ){
       "use strict";
@@ -86,7 +88,7 @@
     }
   }( typeof global !== "undefined" ? global : this ));
 
-  // https://www.filamentgroup.com/lab/enhancing-optimistically.html
+  // Based on https://www.filamentgroup.com/lab/enhancing-optimistically.html
   if( "querySelector" in window.document && "addEventListener" in window ){
     var docElem = window.document.documentElement;
     var loadingClass = "usa-js-loading";

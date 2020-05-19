@@ -38,7 +38,7 @@ lead: Character count helps users know how much text they can enter when there i
     <h4>Implementation</h4>
     <ul class="usa-content-list">
       <li>
-        <strong>Add component classes.</strong> The structure should include a base element with the class <code>usa-character-count</code>. Inside of that base element there should be an input element (input or textarea) with the class <code>usa-character-count__input</code> and an message element (span or div) with the class <code>usa-character-count__message</code>
+        <strong>Add component classes.</strong> The structure should include a base element with the class <code>usa-character-count</code>. Inside of that base element there should be an input element (input or textarea) with the class <code>usa-character-count__field</code> and an message element (span or div) with the class <code>usa-character-count__message</code>
       </li>
       <li>
         <strong>Add a <code>maxlength</code> attribute to the input element.</strong> This will be used as the limit referenced in the message and for validation.

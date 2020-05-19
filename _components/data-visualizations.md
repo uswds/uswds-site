@@ -16,7 +16,7 @@ subnav:
 ---
 <div class="site-note"><strong>Note:</strong> This data visualization guidance does not include any <code>Component Code</code> samples. Examples of specific visualizations are included that exhibit the guidance provided below with a focus on accessibility and tags for assistive tooling.</div>
 <section class="site-component-section">
-      <h2 class="usa-heading-alt">General Guidance</h2>
+      <h2 class="usa-heading-alt">General guidance</h2>
       <h3>Simplicity</h3>
       <ul class="usa-content-list">
         <li><strong>Design for an audience.</strong> Limit the type of data visualization to those understood by the audience. Explanatory visualizations, where the level of the audience's data literacy is unknown, should stick to well-used types: line and bar charts as an example. </li>

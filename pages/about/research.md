@@ -5,7 +5,7 @@ redirect_from:
 - /about/research-strategy/
 layout: styleguide
 title: Research
-category: About USWDS
+category: About
 lead: User research is a core aspect of USWDS as it’s our main source of feedback and inspiration for future product development.
 redirect_from:
   - /whats-new/research/

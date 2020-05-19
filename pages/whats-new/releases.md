@@ -4,7 +4,7 @@ redirect_from:
   - /about-our-work/releases/
 layout: styleguide
 title: Release notes
-category: About USWDS
+category: About
 subnav:
   data: releases
   href: ['#version-%', name]

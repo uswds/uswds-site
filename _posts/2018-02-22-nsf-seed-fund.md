@@ -4,7 +4,7 @@ tags:
 - case study
 - web design system
 - design
-category: About USWDS
+category: About
 excerpt: For our 11th post in the series, we talked with Scott Weber, front-end developer, who worked on America’s Seed Fund site for the National Science Foundation (NSF). The site was created for people who want to get federal grant funding for their science or technology projects.
 ---
 

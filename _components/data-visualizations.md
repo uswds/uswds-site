@@ -218,17 +218,17 @@ subnav:
 <g>
   <g>
   </g>
-  <text class="font-sans-xl" transform="matrix(1 0 0 1 200.2261 50.7432)">Franklin D. Roosevelt</text>
-  <text class="font-sans-xl" transform="matrix(1 0 0 1 749.2261 50.8486)">Theodore Roosevelt</text>
+  <text class="font-lang-xl" transform="matrix(1 0 0 1 200.2261 50.7432)">Franklin D. Roosevelt</text>
+  <text class="font-lang-xl" transform="matrix(1 0 0 1 749.2261 50.8486)">Theodore Roosevelt</text>
 </g>
 <g>
-  <text class="font-sans-xl" transform="matrix(1 0 0 1 88.8032 613.895)">Mar. 1</text>
-  <text class="font-sans-xl" transform="matrix(1 0 0 1 217.6079 613.895)">Mar. 2</text>
-  <text class="font-sans-xl" transform="matrix(1 0 0 1 346.4126 613.895)">Mar. 3</text>
-  <text class="font-sans-xl" transform="matrix(1 0 0 1 475.2173 613.895)">Mar. 4</text>
-  <text class="font-sans-xl" transform="matrix(1 0 0 1 604.022 613.895)">Mar. 5</text>
-  <text class="font-sans-xl" transform="matrix(1 0 0 1 732.8267 613.895)">Mar. 6</text>
-  <text class="font-sans-xl" transform="matrix(1 0 0 1 861.6313 613.895)">Mar. 7</text>
+  <text class="font-lang-xl" transform="matrix(1 0 0 1 88.8032 613.895)">Mar. 1</text>
+  <text class="font-lang-xl" transform="matrix(1 0 0 1 217.6079 613.895)">Mar. 2</text>
+  <text class="font-lang-xl" transform="matrix(1 0 0 1 346.4126 613.895)">Mar. 3</text>
+  <text class="font-lang-xl" transform="matrix(1 0 0 1 475.2173 613.895)">Mar. 4</text>
+  <text class="font-lang-xl" transform="matrix(1 0 0 1 604.022 613.895)">Mar. 5</text>
+  <text class="font-lang-xl" transform="matrix(1 0 0 1 732.8267 613.895)">Mar. 6</text>
+  <text class="font-lang-xl" transform="matrix(1 0 0 1 861.6313 613.895)">Mar. 7</text>
 </g>
 </g>
 </svg>
@@ -320,19 +320,19 @@ subnav:
       .st3a{fill:#dfe1e2;stroke:#dfe1e2;stroke-miterlimit:10;}
       .st4{fill:#005EA2;}
       .st5{letter-spacing:-2;}
-      .font-sans-xl-m{font-size: 1.6rem}
+      .font-lang-xl-m{font-size: 1.6rem}
     </style>
     <g>
       <g>
         <g>
-          <text transform="matrix(1 0 0 1 307.1421 582.875)" class="font-sans-xl-m">0</text>
-          <text transform="matrix(1 0 0 1 394.5708 582.875)" class="font-sans-xl-m">2</text>
-          <text transform="matrix(1 0 0 1 481.999 582.875)" class="font-sans-xl-m">4</text>
-          <text transform="matrix(1 0 0 1 569.4277 582.875)" class="font-sans-xl-m">6</text>
-          <text transform="matrix(1 0 0 1 656.8564 582.875)" class="font-sans-xl-m">8</text>
-          <text transform="matrix(1 0 0 1 736.9268 582.875)" class="font-sans-xl-m">10</text>
-          <text transform="matrix(1 0 0 1 824.3555 582.875)" class="font-sans-xl-m">12</text>
-          <text transform="matrix(1 0 0 1 911.7842 582.875)" class="font-sans-xl-m">14</text>
+          <text transform="matrix(1 0 0 1 307.1421 582.875)" class="font-lang-xl-m">0</text>
+          <text transform="matrix(1 0 0 1 394.5708 582.875)" class="font-lang-xl-m">2</text>
+          <text transform="matrix(1 0 0 1 481.999 582.875)" class="font-lang-xl-m">4</text>
+          <text transform="matrix(1 0 0 1 569.4277 582.875)" class="font-lang-xl-m">6</text>
+          <text transform="matrix(1 0 0 1 656.8564 582.875)" class="font-lang-xl-m">8</text>
+          <text transform="matrix(1 0 0 1 736.9268 582.875)" class="font-lang-xl-m">10</text>
+          <text transform="matrix(1 0 0 1 824.3555 582.875)" class="font-lang-xl-m">12</text>
+          <text transform="matrix(1 0 0 1 911.7842 582.875)" class="font-lang-xl-m">14</text>
         </g>
         <line class="st3" x1="314.5" y1="554.5" x2="926.5" y2="554.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
         <g>
@@ -383,14 +383,14 @@ subnav:
       <g>
         <g>
         </g>
-        <text transform="matrix(1 0 0 1 366.5312 80.6797)" class="font-sans-xl-m">Visits (in millions)</text>
+        <text transform="matrix(1 0 0 1 366.5312 80.6797)" class="font-lang-xl-m">Visits (in millions)</text>
       </g>
       <g>
-        <text transform="matrix(1 0 0 1 290 501.3574)" class="font-sans-xl-m"><tspan x="0" text-anchor="end">Yosemite</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
-        <text transform="matrix(1 0 0 1 290 413.5576)" class="font-sans-xl-m"><tspan x="0" text-anchor="end">Zion</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
-        <text transform="matrix(1 0 0 1 290 325.7578)" class="font-sans-xl-m"><tspan x="0" text-anchor="end">Rocky Mountain</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
-        <text transform="matrix(1 0 0 1 290 237.958)" class="font-sans-xl-m"><tspan x="0" text-anchor="end">Grand Canyon</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
-        <text transform="matrix(1 0 0 1 290 153.1577)" class="font-sans-xl-m"><tspan x="0" text-anchor="end">Great Smoky Mountains</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
+        <text transform="matrix(1 0 0 1 290 501.3574)" class="font-lang-xl-m"><tspan x="0" text-anchor="end">Yosemite</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
+        <text transform="matrix(1 0 0 1 290 413.5576)" class="font-lang-xl-m"><tspan x="0" text-anchor="end">Zion</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
+        <text transform="matrix(1 0 0 1 290 325.7578)" class="font-lang-xl-m"><tspan x="0" text-anchor="end">Rocky Mountain</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
+        <text transform="matrix(1 0 0 1 290 237.958)" class="font-lang-xl-m"><tspan x="0" text-anchor="end">Grand Canyon</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
+        <text transform="matrix(1 0 0 1 290 153.1577)" class="font-lang-xl-m"><tspan x="0" text-anchor="end">Great Smoky Mountains</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
       </g>
     </g>
     </svg>

@@ -56,7 +56,6 @@ subnav:
       </ul>
     </li>
     <li><strong>Focus on manual testing.</strong> Become familiar with testing tools and browser plugins. But only manual testing can check  context and intent. The use of automated or mechanical checks can verify the presence of tags, not the proper content.</li>
-    <li><strong>Provide keyboard navigation.</strong> Avoid keyboard <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-trapping.html">traps</a>, and use headers for navigation and the ability to skip sections.</li>
     <li><strong>Choose an accessible charting tool.</strong> There are many charting tools available, but not many adequately support accessibility. When using a 3rd-party tool, look for features such as:
       <ul>
         <li>Support for accessible patterns and colors</li>

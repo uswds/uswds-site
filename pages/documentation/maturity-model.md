@@ -156,12 +156,25 @@ Government websites include components that aren’t included in USWDS yet. Use 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-3}
 
 ## Maturity assessment resources
-Our maturity assessment resources are meant to help you assess and understand your as-is state, what you’re doing well, and how you can better use USWDS to improve the public’s experience of your websites and digital services.
+Our maturity assessment resources are meant to help you assess and understand
+your as-is state, what you’re doing well, and how you can better use USWDS to
+improve the public’s experience of your websites and digital services.
 
-They're meant to help your team understand and improve your design system maturity: to help your team solve problems, not stress you out. Over the next few months, we will be working on the format of a maturity assessment, our user-centered process for updating it, and how we’ll release updates to the community.
+### Maturity Assessment Worksheet
+We’re introducing the draft [Maturity Model Assessment Worksheet]({{ site.baseurl }}/files/uswds-maturity-assessment-worksheet-v0.2.pdf) (PDF, 778 KB, 24 pages).
+It’s meant to help you assess and understand your as-is state, what you’re
+doing well, and how you can better use USWDS to improve the public’s experience
+of your websites and digital services.
 
-If any of our guidance doesn’t make sense or feels like it’s leading your team in the wrong direction, please let us know. File an issue at [our GitHub page](https://github.com/uswds/uswds) or [send USWDS an email](mailto:uswds@support.digitalgov.gov).
+### Checklists to track your progress
+Use the checklists in the worksheet to help track your team’s progress in
+understanding and adopting the design principles and individual components.
 
-<div class="embed-youtube">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/AUcc30UKru0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+
+This is a work in progress, and we want your input.
+- Share your feedback and collaborate with the [USWDS community](https://digital.gov/communities/uswds/)
+on the [#uswds-public](https://app.slack.com/client/T025AQGAN/C3F14AHSQ){:target="_blank" rel="noopener"} Slack channel.
+- If you can't access slack, email us your feedback directly at [uswds@support.digitalgov.gov](mailto:uswds@support.digitalgov.gov)
+
+If you’re new to the maturity model, listen to [USWDS January Monthly Call](https://digital.gov/event/2020/01/16/uswds-january-monthly-call/)
+on the using the USWDS maturity model.

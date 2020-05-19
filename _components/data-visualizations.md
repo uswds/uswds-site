@@ -20,9 +20,9 @@ subnav:
       <p>Usability and accessibility are complementary goals for data visualizations.</p>
       <h3 class="margin-bottom-1">Simplicity</h3>
       <ul class="usa-content-list">
-        <li><strong>Design for an audience.</strong> Limit the type of data visualization to those understood by the audience. Explanatory visualizations, where the level of the audience's data literacy is unknown, should stick to well-used types: line and bar charts as an example. </li>
-        <li>Limit the 'big idea' expressed in a visualization to a central theme. Use no more than two or three concepts in order to reduce the cognitive load placed on the audience. </li>
-        <li>Simplify color selection and don't reuse colors for different variables or within a particular variable. If you are finding this difficult, it may indicate too many concepts are present for a single visualization. When selecting colors, be sure to meet contrast requirements.</li>
+        <li><strong>Prefer common visualization types.</strong> Use data visualizations types that your target audience understands. When the level of the audience's data literacy is unknown, stick to well-used types (like line and bar charts) for explanatory visualizations.</li>
+        <li><strong>Don't try to do too much.</strong> Limit the 'big idea' expressed in a visualization to a central theme. Use no more than two or three concepts to reduce the cognitive load placed on the audience.</li>
+        <li><strong>Use color with care.</strong> Simplify color selection and don't reuse colors for different variables or within a particular variable. If you are finding this difficult, it may indicate too many concepts are present for a single visualization. When selecting colors, be sure to meet contrast requirements.</li>
       </ul>
       <h4>References</h4>
       <ul>
@@ -31,33 +31,33 @@ subnav:
       </ul>
       <h3>Lossless representation</h3>
       <ul class="usa-content-list">
-        <li><strong>Avoid embedded information.</strong> Avoid embedding information as part of an image. Provide a textual representation of axis values and labels, provide the ability to get a tabular representation of underlying data.   </li>
-        <li><strong>Reduce interaction.</strong> The audience should not be required to interact with a visualization to have the message conveyed. Presuming the ability to use a mouse to hover over page elements eliminates portions of the audience from the full experience.</li>
+        <li><strong>Avoid embedded information.</strong> Avoid embedding information as part of an image. Provide a textual representation of axis values and labels, and provide the ability to get a tabular representation of the underlying data.</li>
+        <li><strong>Reduce interaction.</strong> Even simple interactions have a usability cost. Your audience shouldn't be required to interact with a visualization to understand its message. Presuming the ability to use a mouse to hover over page elements eliminates portions of the audience from the full experience.</li>
       </ul>
       <h3>Clarity of intent</h3>
       <ul class="usa-content-list">
-        <li><strong>Provide context-sensitive explanation.</strong> Data visualization authors should consider the audience's experience when providing background of the information they are sharing. Explanations or summaries should be provided in the context of the target audience not the author. </li>
-        <li>If the visualization is intended to explain a point, don't leave the audience guessing as to the conclusion they should draw.</li>
-        <li>Clearly state the author's intended message in text. This helps the audience quickly understand what the visualization is attempting to communicate. </li>
+        <li><strong>Provide context-sensitive explanations.</strong> Data visualization authors should consider the audience's experience when providing the background for the information they're sharing. Provide explanations or summaries that make sense to the target audience not just the author.</li>
+        <li><strong>Get to the point.</strong> If the visualization is intended to explain a specific point, don't leave the audience guessing as to the conclusion they're meant to draw.</li>
+        <li><strong>Clearly state the author's intended message as text.</strong> This avoids unintended ambiguity and helps the audience understand the visualization's intention. </li>
       </ul>
       <h3>Accessibility</h3>
       <ul class="usa-content-list">
-        <li><strong>Understand motivation.</strong> Solve for individual impacted group, be specific in solution.</li>
+        <li>Solve for individual impacted groups, and be specific in your solutions.</li>
         <li><strong>Provide equivalent access.</strong>
           <ul>
-            <li>Consider differing experiences. Using a semantic heading and description that provides the author's stated intent delivers a clear message to various audiences while also being supported by assistive technologies.</li>
-            <li>Provide an accessible data table of information represented in the chart using the class <code>usa-sr-only</code>. Screen readers might have difficulty reading content within the SVG. When providing accessible equivalent, you can hide the graphic using the class name using <code>aria-hidden="true"</code>. The information in both of the charts on this page is made accessible table for screen readers with a visually-hidden table. Note: This is not always a sufficient alternative for complex data sets.</li>
+            <li>Semantic headings and descriptions that provide the author's stated intent support assistive technologies and deliver a clear message to across audiences.</li>
+            <li>Screen readers might have difficulty reading content within an SVG. Provide an screen-reader accessible data table of the information represented in your visualization using the class <code>usa-sr-only</code>. When providing accessible equivalent, you can hide the visualization using the attribute <code>aria-hidden="true"</code>. The information in both of the example charts on this page is made accessible to screen readers with a visually-hidden table. <strong>Note:</strong> This is not always a sufficient alternative for complex data sets.</li>
           </ul>
         </li>
         <li><strong>Provide equivalent facilitation.</strong>
           <ul>
-            <li>Including access to the underlying data tables provide alternative affordance for consuming the same information in an alternative manner, but a data table does not provide an equivalent narrative as a chart.  </li>
-            <li>Increase accessibility by providing additional information that is communicated visually (trends, statistical summary) in screen reader classes like <code>.usa-sr-only</code>.</li>
+            <li>Access to the underlying data provides an alternative affordance for consuming the same information, but a data table does not provide an equivalent narrative to a visualization.</li>
+            <li>Increase accessibility by providing additional information that the visualization communicates (like trends or a statistical summary) in plain text, using a screen reader–only class like <code>.usa-sr-only</code>.</li>
           </ul>
         </li>
-        <li><strong>Focus on manual testing.</strong> Become familiar with testing tools and browser plugins. However, remember that context and intent need to be verified manually. The use of automated or mechanical checks only verifies the presence of tags, not proper content.</li>
-        <li><strong>Provide keyboard navigation.</strong> Avoid keyboard <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-trapping.html">traps</a>, use headers for navigation and the ability to skip sections.</li>
-        <li><strong>Choose an accessible charting tool.</strong> There are many charting available, but not many adequately support accessibility. When using a 3rd-party tool, look for features such as:
+        <li><strong>Focus on manual testing.</strong> Become familiar with testing tools and browser plugins. But only manual testing can check  context and intent. The use of automated or mechanical checks can verify the presence of tags, not the proper content.</li>
+        <li><strong>Provide keyboard navigation.</strong> Avoid keyboard <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-trapping.html">traps</a>, and use headers for navigation and the ability to skip sections.</li>
+        <li><strong>Choose an accessible charting tool.</strong> There are many charting tools available, but not many adequately support accessibility. When using a 3rd-party tool, look for features such as:
           <ul>
             <li>Support for accessible patterns and colors</li>
             <li><a href="https://www.perkinselearning.org/technology/blog/sonification-sounds-meaning-activity">Sonification as a audio tool for visual impairment and analysis</a>&nbsp; [perkinselearning.org]</li>

@@ -4,7 +4,7 @@ layout: styleguide
 type: element
 title: Data visualizations
 category: Components
-lead: Data visualizations help communicate patterns and relationships in a dataset.
+lead: Data visualizations help communicate patterns and relationships in a data set.
 
 
 
@@ -298,7 +298,7 @@ subnav:
     <li>When displaying multi-variant data:
       <ul>
         <li>It is important to use discrete, high contrast colors or textured fill. This accommodation differentiates variables for audiences with visual impairments like color blindness or low vision. </li>
-        <li>The use of stacked bar charts for multi-variant data can be used if it is important to communicate the sum of the dataset.</li>
+        <li>The use of stacked bar charts for multi-variant data can be used if it is important to communicate the sum of the data set.</li>
       </ul>
     </li>
   </ul>

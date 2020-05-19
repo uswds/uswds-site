@@ -4,7 +4,7 @@ layout: styleguide
 type: element
 title: Data visualizations
 category: Components
-lead: Usability and accessibility are complementary goals for data visualizations.
+lead: Data visualizations help communicate patterns and relationships in a dataset.
 
 
 
@@ -17,7 +17,8 @@ subnav:
 <div class="site-note"><strong>Note:</strong> This data visualization guidance does not include any <code>Component Code</code> samples. Examples of specific visualizations are included that exhibit the guidance provided below with a focus on accessibility and tags for assistive tooling.</div>
 <section class="site-component-section">
       <h2 class="usa-heading-alt">General guidance</h2>
-      <h3>Simplicity</h3>
+      <p>Usability and accessibility are complementary goals for data visualizations.</p>
+      <h3 class="margin-bottom-1">Simplicity</h3>
       <ul class="usa-content-list">
         <li><strong>Design for an audience.</strong> Limit the type of data visualization to those understood by the audience. Explanatory visualizations, where the level of the audience's data literacy is unknown, should stick to well-used types: line and bar charts as an example. </li>
         <li>Limit the 'big idea' expressed in a visualization to a central theme. Use no more than two or three concepts in order to reduce the cognitive load placed on the audience. </li>

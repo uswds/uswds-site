@@ -6,17 +6,17 @@ title: Data visualizations
 category: Components
 lead: Data visualizations help communicate patterns and relationships in a data set.
 
-
-
 subnav:
-- text: Line chart
-  href: '#linechart'
-- text: Bar chart
-  href: '#barchart'
+- text: General guidance
+  href: '#general-guidance'
+- text: Line charts
+  href: '#line-charts'
+- text: Bar charts
+  href: '#bar-charts'
 ---
 <div class="site-note"><strong>Note:</strong> This data visualization guidance does not include any <code>Component Code</code> samples. Examples of specific visualizations are included that exhibit the guidance provided below with a focus on accessibility and tags for assistive tooling.</div>
 <section class="site-component-section">
-  <h2 class="usa-heading-alt">General guidance</h2>
+  <h2 id="general-guidance" class="usa-heading-alt">General guidance</h2>
   <p>Usability and accessibility are complementary goals for data visualizations.</p>
   <h3 class="margin-bottom-1">Simplicity</h3>
   <ul class="usa-content-list">
@@ -75,7 +75,7 @@ subnav:
 </section>
 
 <section id="section-linechart" class="site-component-section">
-<h2 class="usa-heading-alt" id="linechart">Line charts</h2>
+<h2 class="usa-heading-alt" id="line-charts">Line charts</h2>
 
 <p class="site-text-intro">Line charts are ideal for depicting trends in data over time using a continuous line.</p>
 
@@ -288,7 +288,7 @@ subnav:
 
 </section>
 <section id="section-barchart" class="site-component-section">
-  <h2 class="usa-heading-alt" id="barchart">Bar charts</h2>
+  <h2 class="usa-heading-alt" id="bar-charts">Bar charts</h2>
 
   <p class="site-text-intro">Bar charts are ideal for displaying categorical data.</p>
 

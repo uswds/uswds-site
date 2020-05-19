@@ -25,7 +25,7 @@ subnav:
         <li><strong>Use color with care.</strong> Simplify color selection and don't reuse colors for different variables or within a particular variable. If you are finding this difficult, it may indicate too many concepts are present for a single visualization. When selecting colors, be sure to meet contrast requirements.</li>
       </ul>
       <h4>References</h4>
-      <ul>
+      <ul class="usa-content-list">
         <li><a href="https://medium.com/nightingale/how-to-choose-the-colors-for-your-data-visualizations-50b2557fa335">Choosing Colors</a>&nbsp; [medium.com]</li>
         <li><a href="https://venngage.com/blog/color-blind-friendly-palette/">Color Contrast and Color Blindness</a>&nbsp; [venngage.com]</li>
       </ul>
@@ -66,7 +66,7 @@ subnav:
         </li>
       </ul>
       <h4>References</h4>
-      <ul>
+      <ul class="usa-content-list">
         <li><a href="https://accessibility.digital.gov/visual-design/data-visualizations/">Accessibility for Teams</a>&nbsp; [digital.gov]</li>
         <li><a href="https://www.section508.gov/test">508 testing</a>&nbsp; [section508.gov]</li>
         <li><a href="https://www.matuzo.at/blog/testing-with-tab/">Accessibility testing with tab key</a>&nbsp; [matuzo.at]</li>
@@ -77,20 +77,21 @@ subnav:
 <section id="section-linechart" class="site-component-section">
 <h2 class="usa-heading-alt" id="linechart">Line charts</h2>
 
-<p>Line charts are ideal for depicting trends in data over time using a continuous line.</p>
+<p class="site-text-intro">Line charts are ideal for depicting trends in data over time using a continuous line.</p>
 
 <h3>Guidance</h3>
-<h4> In addition to the general guidance above, the following line chart guidance applies:</h4>
-<ul>
+<p>In addition to the general guidance above, the following line chart guidance applies:</p>
+<ul class="usa-content-list">
   <li>Line charts origin should start at zero, unless clearly noted.</li>
   <li>If high contrast color selection is not an option, the usage of discrete dash or datapoint styles distinguishes lines without relying upon color.</li>
 </ul>
 
 
-<div class="border bg-white padding-2 margin-bottom-2">
+<h3>Example line chart</h3>
+<div class="border bg-white padding-2 margin-bottom-2 margin-top-1 radius-md padding-bottom-0">
 
-<h3 class="margin-0">Search interest in the Roosevelts first week of March, 2020</h3>
-<p class="margin-top-0 font-sans-2xs text-base margin-bottom--3">Interest in Franklin D. Roosevelt has been consistently higher than Theodore Roosevelt. Numbers represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means there was not enough data for this term.</p>
+<h4 class="margin-0">Search interest in Franklin D. and Theodore Roosevelt for the first week of March, 2020</h4>
+<p class="margin-top-1 font-sans-2xs text-base margin-bottom--3">Search interest in Franklin D. Roosevelt has been consistently higher than Theodore Roosevelt. Numbers represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means there was not enough data for this term.</p>
 
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -269,21 +270,19 @@ subnav:
       </tr>
     </tbody>
   </table>
-
-
-    <p id="source_line">Source: <a href="https://trends.google.com/trends/explore?date=2020-03-01%202020-03-07&geo=US&q=%2Fm%2F07hyk,%2Fm%2F02yy8">Google Trends</a></p>
+  <p id="source_line">Source: <a href="https://trends.google.com/trends/explore?date=2020-03-01%202020-03-07&geo=US&q=%2Fm%2F07hyk,%2Fm%2F02yy8">Google Trends</a></p>
   </div>
 
-  <h3>What we did in our example</h3>
-  <ul>
-    <li>The graphic itself is hidden from screen readers. Because the data set is rather simple, non-visual users will be able to read the same data in the form of data table that hidden for visual users but accessible to screen readers. If the data was more complex, consider using a 3rd party charting tool with support for accessibility as described above.</li>
-    <li>The lines are made visually distinct from each other. One is a solid color, and the other uses a dash pattern and a color contrast between the colors of the lines and dots. The dots can also be made into the shape of a triangle, square, or any other shape. Normally, shapes and textures can be introduced if you are comparing more than three data sets. The line chart here is simply a demonstration of how these differentiators can be applied.</li>
-    <li>Explain in words what the chart intends to communicate. Users may not understand some narrative objectives from a chart graphic alone.</li>
-    <li>Link back to the original chart source data.</li>
+  <h3>What we did in our line chart example</h3>
+  <ul class="usa-content-list">
+    <li><strong>There is a clear summary.</strong> Users may not understand some narrative objectives from a graphic alone. The visualization also explains what the chart intends to communicate in plain language.</li>
+    <li><strong>The lines are visually distinct from each other.</strong> One is a solid color, and the other uses both a dash pattern and a color contrast between the line and the indicators. The indicators can also be triangles, squares, or other simple shapes. Typically, multiple indicator shapes and textures are most useful when comparing more than three data sets.</li>
+    <li><strong>The graphic is hidden from screen readers.</strong> Because the data set is fairly simple, non-visual users will be able to read the same data in the form of data table that's hidden from visual users but accessible to screen readers. If the data were more complex, we might consider using a 3rd party charting tool with support for accessibility as described above.</li>
+    <li><strong>Original data linked.</strong> We linked back to the original source data for the line chart.</li>
   </ul>
 
   <h3>References</h3>
-  <ul>
+  <ul class="usa-content-list">
     <li><a href="https://accessibility.psu.edu/images/charts/">Chart Accessibility guidance</a> &nbsp; [psu.edu]</li>
   </ul>
 
@@ -291,158 +290,154 @@ subnav:
 <section id="section-barchart" class="site-component-section">
   <h2 class="usa-heading-alt" id="barchart">Bar charts</h2>
 
-  <p>Bar charts are ideal for displaying categorical data.</p>
+  <p class="site-text-intro">Bar charts are ideal for displaying categorical data.</p>
 
   <h3>Guidance</h3>
-  <h4> In addition to the general guidance above, the following bar chart guidance applies:</h4>
-  <ul>
-    <li>When displaying multi-variant data: </li>
+  <p> In addition to the general guidance above, the following bar chart guidance applies:</p>
+  <ul class="usa-content-list">
+    <li>When displaying multi-variant data:
       <ul>
         <li>It is important to use discrete, high contrast colors or textured fill. This accommodation differentiates variables for audiences with visual impairments like color blindness or low vision. </li>
         <li>The use of stacked bar charts for multi-variant data can be used if it is important to communicate the sum of the dataset.</li>
       </ul>
+    </li>
   </ul>
 
-<div class="border bg-white padding-2 margin-bottom-2">
-
-  <h3 class="margin-0">5 Most Visited National Parks in 2019</h3>
-  <p class="margin-top-0 font-sans-2xs text-base margin-bottom--3">Of the 62 parks with the designation "national park" as part of their official title, these were the top 5 with Great Smoky Mountains National Park ahead over a factor of two.</p>
-  <?xml version="1.0" encoding="utf-8"?>
-  <?xml version="1.0" encoding="utf-8"?>
-  <!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-     viewBox="0 0 952 601" style="enable-background:new 0 0 952 601;" xml:space="preserve" aria-hidden="true">
-  <style type="text/css">
-    .st0{fill:#1B1B1B;}
-    .st1{font-family:'MyriadPro-Regular';}
-    .st2{font-size:28.6875px;}
-    .st3{fill:#71767a;stroke:#71767a;stroke-miterlimit:10;}
-    .st3a{fill:#dfe1e2;stroke:#dfe1e2;stroke-miterlimit:10;}
-    .st4{fill:#005EA2;}
-    .st5{letter-spacing:-2;}
-    .font-sans-xl-m{font-size: 1.6rem}
-
-  </style>
-  <g>
+  <h3>Example bar chart</h3>
+  <div class="border bg-white padding-2 margin-bottom-2 radius-md padding-bottom-0">
+    <h4 class="margin-0">The five most-visited national parks of 2019</h4>
+    <p class="margin-top-0 font-sans-2xs text-base margin-bottom-0 radius-1">Of the 62 parks with the designation "national park" as part of their official title, these were the top five. The Great Smoky Mountains National Park was the most-visited park by more than a factor of two.</p>
+    <?xml version="1.0" encoding="utf-8"?>
+    <?xml version="1.0" encoding="utf-8"?>
+    <!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      viewBox="0 0 952 601" style="enable-background:new 0 0 952 601;" xml:space="preserve" aria-hidden="true">
+    <style type="text/css">
+      .st0{fill:#1B1B1B;}
+      .st1{font-family:'MyriadPro-Regular';}
+      .st2{font-size:28.6875px;}
+      .st3{fill:#71767a;stroke:#71767a;stroke-miterlimit:10;}
+      .st3a{fill:#dfe1e2;stroke:#dfe1e2;stroke-miterlimit:10;}
+      .st4{fill:#005EA2;}
+      .st5{letter-spacing:-2;}
+      .font-sans-xl-m{font-size: 1.6rem}
+    </style>
     <g>
-      <g>
-        <text transform="matrix(1 0 0 1 307.1421 582.875)" class="font-sans-xl-m">0</text>
-        <text transform="matrix(1 0 0 1 394.5708 582.875)" class="font-sans-xl-m">2</text>
-        <text transform="matrix(1 0 0 1 481.999 582.875)" class="font-sans-xl-m">4</text>
-        <text transform="matrix(1 0 0 1 569.4277 582.875)" class="font-sans-xl-m">6</text>
-        <text transform="matrix(1 0 0 1 656.8564 582.875)" class="font-sans-xl-m">8</text>
-        <text transform="matrix(1 0 0 1 736.9268 582.875)" class="font-sans-xl-m">10</text>
-        <text transform="matrix(1 0 0 1 824.3555 582.875)" class="font-sans-xl-m">12</text>
-        <text transform="matrix(1 0 0 1 911.7842 582.875)" class="font-sans-xl-m">14</text>
-      </g>
-      <line class="st3" x1="314.5" y1="554.5" x2="926.5" y2="554.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
       <g>
         <g>
-          <line class="st3" x1="314.5" y1="554.5" x2="314.5" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
-          <line class="st3a" x1="401.93" y1="554.5" x2="401.93" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
-          <line class="st3a" x1="489.36" y1="554.5" x2="489.36" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
-          <line class="st3a" x1="576.79" y1="554.5" x2="576.79" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
-          <line class="st3a" x1="664.21" y1="554.5" x2="664.21" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
-          <line class="st3a" x1="751.64" y1="554.5" x2="751.64" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
-          <line class="st3a" x1="839.07" y1="554.5" x2="839.07" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
-          <line class="st3a" x1="926.5" y1="554.5" x2="926.5" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
+          <text transform="matrix(1 0 0 1 307.1421 582.875)" class="font-sans-xl-m">0</text>
+          <text transform="matrix(1 0 0 1 394.5708 582.875)" class="font-sans-xl-m">2</text>
+          <text transform="matrix(1 0 0 1 481.999 582.875)" class="font-sans-xl-m">4</text>
+          <text transform="matrix(1 0 0 1 569.4277 582.875)" class="font-sans-xl-m">6</text>
+          <text transform="matrix(1 0 0 1 656.8564 582.875)" class="font-sans-xl-m">8</text>
+          <text transform="matrix(1 0 0 1 736.9268 582.875)" class="font-sans-xl-m">10</text>
+          <text transform="matrix(1 0 0 1 824.3555 582.875)" class="font-sans-xl-m">12</text>
+          <text transform="matrix(1 0 0 1 911.7842 582.875)" class="font-sans-xl-m">14</text>
         </g>
+        <line class="st3" x1="314.5" y1="554.5" x2="926.5" y2="554.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
         <g>
+          <g>
+            <line class="st3" x1="314.5" y1="554.5" x2="314.5" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
+            <line class="st3a" x1="401.93" y1="554.5" x2="401.93" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
+            <line class="st3a" x1="489.36" y1="554.5" x2="489.36" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
+            <line class="st3a" x1="576.79" y1="554.5" x2="576.79" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
+            <line class="st3a" x1="664.21" y1="554.5" x2="664.21" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
+            <line class="st3a" x1="751.64" y1="554.5" x2="751.64" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
+            <line class="st3a" x1="839.07" y1="554.5" x2="839.07" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
+            <line class="st3a" x1="926.5" y1="554.5" x2="926.5" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
+          </g>
+          <g>
+          </g>
         </g>
       </g>
-    </g>
-    <g>
-      <line class="st3" x1="314.5" y1="554.5" x2="314.5" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
+      <g>
+        <line class="st3" x1="314.5" y1="554.5" x2="314.5" y2="115.5" stroke-width='1px' vector-effect="non-scaling-stroke"/>
+        <g>
+          <g>
+            <line class="st3" x1="314.5" y1="510.6" x2="329.8" y2="510.6"/>
+            <line class="st3" x1="314.5" y1="422.8" x2="329.8" y2="422.8"/>
+            <line class="st3" x1="314.5" y1="335" x2="329.8" y2="335"/>
+            <line class="st3" x1="314.5" y1="247.2" x2="329.8" y2="247.2"/>
+            <line class="st3" x1="314.5" y1="159.4" x2="329.8" y2="159.4"/>
+          </g>
+          <g>
+          </g>
+        </g>
+      </g>
       <g>
         <g>
-          <line class="st3" x1="314.5" y1="510.6" x2="329.8" y2="510.6"/>
-          <line class="st3" x1="314.5" y1="422.8" x2="329.8" y2="422.8"/>
-          <line class="st3" x1="314.5" y1="335" x2="329.8" y2="335"/>
-          <line class="st3" x1="314.5" y1="247.2" x2="329.8" y2="247.2"/>
-          <line class="st3" x1="314.5" y1="159.4" x2="329.8" y2="159.4"/>
+          <rect x="314.5" y="50.34" class="st4" width="38.25" height="41.16"/>
+          <g>
+            <rect x="314.5" y="127.79" class="st4" width="546.43" height="63.22"/>
+            <rect x="314.5" y="215.59" class="st4" width="260.97" height="63.22"/>
+            <rect x="314.5" y="303.39" class="st4" width="205.46" height="63.22"/>
+            <rect x="314.5" y="391.19" class="st4" width="196.71" height="63.22"/>
+            <rect x="314.5" y="478.99" class="st4" width="196.71" height="63.22"/>
+          </g>
         </g>
+      </g>
+      <g>
         <g>
         </g>
       </g>
-    </g>
-    <g>
       <g>
-        <rect x="314.5" y="50.34" class="st4" width="38.25" height="41.16"/>
         <g>
-          <rect x="314.5" y="127.79" class="st4" width="546.43" height="63.22"/>
-          <rect x="314.5" y="215.59" class="st4" width="260.97" height="63.22"/>
-          <rect x="314.5" y="303.39" class="st4" width="205.46" height="63.22"/>
-          <rect x="314.5" y="391.19" class="st4" width="196.71" height="63.22"/>
-          <rect x="314.5" y="478.99" class="st4" width="196.71" height="63.22"/>
         </g>
+        <text transform="matrix(1 0 0 1 366.5312 80.6797)" class="font-sans-xl-m">Visits (in millions)</text>
       </g>
-    </g>
-    <g>
       <g>
+        <text transform="matrix(1 0 0 1 290 501.3574)" class="font-sans-xl-m"><tspan x="0" text-anchor="end">Yosemite</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
+        <text transform="matrix(1 0 0 1 290 413.5576)" class="font-sans-xl-m"><tspan x="0" text-anchor="end">Zion</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
+        <text transform="matrix(1 0 0 1 290 325.7578)" class="font-sans-xl-m"><tspan x="0" text-anchor="end">Rocky Mountain</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
+        <text transform="matrix(1 0 0 1 290 237.958)" class="font-sans-xl-m"><tspan x="0" text-anchor="end">Grand Canyon</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
+        <text transform="matrix(1 0 0 1 290 153.1577)" class="font-sans-xl-m"><tspan x="0" text-anchor="end">Great Smoky Mountains</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
       </g>
     </g>
-    <g>
-      <g>
-      </g>
-      <text transform="matrix(1 0 0 1 366.5312 80.6797)" class="font-sans-xl-m">Visits (in millions)</text>
-    </g>
-    <g>
-      <text transform="matrix(1 0 0 1 290 501.3574)" class="font-sans-xl-m"><tspan x="0" text-anchor="end">Yosemite</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
-      <text transform="matrix(1 0 0 1 290 413.5576)" class="font-sans-xl-m"><tspan x="0" text-anchor="end">Zion</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
-      <text transform="matrix(1 0 0 1 290 325.7578)" class="font-sans-xl-m"><tspan x="0" text-anchor="end">Rocky Mountain</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
-      <text transform="matrix(1 0 0 1 290 237.958)" class="font-sans-xl-m"><tspan x="0" text-anchor="end">Grand Canyon</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
-      <text transform="matrix(1 0 0 1 290 153.1577)" class="font-sans-xl-m"><tspan x="0" text-anchor="end">Great Smoky Mountains</tspan><tspan x="0" y="35" text-anchor="end">National Park</tspan></text>
-    </g>
-  </g>
-  </svg>
+    </svg>
+    <table class="usa-sr-only" aria-describedby="source">
+      <caption>Top 5 most visited Nation Parks</caption>
+      <thead>
+        <tr>
+          <th scope="col">Park</th>
+          <th scope="col">Visits (in millions)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Great Smoky Mountain National Park</th>
+          <td>12.5</td>
+        </tr>
+        <tr>
+          <th scope="row">Grand Canyon National Park</th>
+          <td>5.87</td>
+        </tr>
+        <tr>
+          <th scope="row">Rocky Mountain National Park</th>
+          <td>4.7</td>
+        </tr>
+        <tr>
+          <th scope="row">Zion National Park</th>
+          <td>4.5</td>
+        </tr>
+        <tr>
+          <th scope="row">Yosemite National Park</th>
+          <td>4.5</td>
+        </tr>
+      </tbody>
+    </table>
+    <p id="source_bar">Source: <a href="https://www.nps.gov/aboutus/visitation-numbers.htm">National Park Service</a></p>
+  </div>
 
-  <table class="usa-sr-only" aria-describedby="source">
-    <caption>Top 5 most visited Nation Parks</caption>
-    <thead>
-      <tr>
-        <th scope="col">Park</th>
-        <th scope="col">Visits (in millions)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">Great Smoky Mountain National Park</th>
-        <td>12.5</td>
-      </tr>
-      <tr>
-        <th scope="row">Grand Canyon National Park</th>
-        <td>5.87</td>
-      </tr>
-      <tr>
-        <th scope="row">Rocky Mountain National Park</th>
-        <td>4.7</td>
-      </tr>
-      <tr>
-        <th scope="row">Zion National Park</th>
-        <td>4.5</td>
-      </tr>
-      <tr>
-        <th scope="row">Yosemite National Park</th>
-        <td>4.5</td>
-      </tr>
-    </tbody>
-  </table>
-
-
-  <p id="source">Source: <a href="https://www.nps.gov/aboutus/visitation-numbers.htm">National Park Service</a></p>
-</div>
-
-  <h3>What we did in our example</h3>
-  <ul>
-    <li>The graphic itself is hidden from screen readers. Because the data set is rather simple, non-visual users will be able to read the same data in the form of data table that hidden for visual users but accessible to screen readers. If the data was more complex, consider using a 3rd party charting tool with support for accessibility as described above.</li>
-    <li>The bars are the same color here because the data depicted is categorically the same (visits) for different national parks.</li>
-    <li>Explain in words what the chart intends to communicate, as well as highlight an interesting fact that the graphic conveys. Users may not understand some narrative objectives from a chart graphic alone and the data tables used by screen readers may not adequately capture key insights.</li>
-    <li>Link back to the original chart source data.</li>
+  <h3>What we did in our bar chart example</h3>
+  <ul class="usa-content-list">
+    <li><strong>There is a clear summary.</strong> Users may not understand some narrative objectives from a graphic alone. The visualization also explains what the chart intends to communicate in plain language.</li>
+    <li><strong>Used a single color for the bars.</strong> The bars are the same color because the data is categorically the same (visits) for each national park.</li>
+    <li><strong>The graphic is hidden from screen readers.</strong> Because the data set is fairly simple, non-visual users will be able to read the same data in the form of data table that's hidden from visual users but accessible to screen readers. If the data were more complex, we might consider using a 3rd party charting tool with support for accessibility as described above.</li>
+    <li><strong>Original data linked.</strong> We linked back to the original source data for the line chart.</li>
   </ul>
 
-
-    <h3>References</h3>
-      <ul>
-        <li><a href="https://www.highcharts.com/blog/tutorials/best-chart-accessibility-practices/">Bar chart accessibility practices</a>&nbsp; [highcharts.com]</li>
-      </ul>
+  <h3>References</h3>
+    <ul class="usa-content-list">
+      <li><a href="https://www.highcharts.com/blog/tutorials/best-chart-accessibility-practices/">Bar chart accessibility practices</a>&nbsp; [highcharts.com]</li>
+    </ul>
 </section>

@@ -161,7 +161,7 @@ your as-is state, what you’re doing well, and how you can better use USWDS to
 improve the public’s experience of your websites and digital services.
 
 ### Maturity Assessment Worksheet
-We’re introducing the draft [Maturity Model Assessment Worksheet (PDF, 778 KB, 24 pages)]({{ site.baseurl }}/files/uswds-maturity-assessment-worksheet-v0.2.pdf).
+We’re introducing the draft [Maturity Model Assessment Worksheet]({{ site.baseurl }}/files/uswds-maturity-assessment-worksheet-v0.2.pdf) (PDF, 778 KB, 24 pages).
 It’s meant to help you assess and understand your as-is state, what you’re
 doing well, and how you can better use USWDS to improve the public’s experience
 of your websites and digital services.
@@ -170,25 +170,11 @@ of your websites and digital services.
 Use the checklists in the worksheet to help track your team’s progress in
 understanding and adopting the design principles and individual components.
 
-<figure>
-  <img src="https://dummyimage.com/595x400/757575/ffffff"
-       alt="Placeholder image">
-  <figcaption>
-    Accessibility Checklist from Maturity Model Assessment Worksheet
-  </figcaption>
-</figure>
 
 This is a work in progress, and we want your input.
 - Share your feedback and collaborate with the [USWDS community](https://digital.gov/communities/uswds/)
 on the [#uswds-public](https://app.slack.com/client/T025AQGAN/C3F14AHSQ){:target="_blank" rel="noopener"} Slack channel.
 - If you can't access slack, email us your feedback directly at [uswds@support.digitalgov.gov](mailto:uswds@support.digitalgov.gov)
-
-<div class="usa-alert usa-alert--info usa-alert--slim usa-alert--no-icon maxw-tablet">
-  <div class="usa-alert__body">
-    If you're new to Slack or just new to USWDS on Slack, we've provided
-    <a href="https://chat.18f.gov/" class="usa-link--external">guidance for joining USWDS Slack</a>.
-  </div>
-</div>
 
 If you’re new to the maturity model, listen to [USWDS January Monthly Call](https://digital.gov/event/2020/01/16/uswds-january-monthly-call/)
 on the using the USWDS maturity model.

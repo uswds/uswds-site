@@ -21,12 +21,15 @@ component_url: 'https://components.designsystem.digital.gov/components/detail/to
       <ul class="usa-content-list">
         <li><strong>Brief descriptions.</strong> Tooltips should be concise, only a few words.</li>
         <li><strong>Helpful, but not critical information.</strong></li>
+        <li><strong>Enhance confidence.</strong> Tooltips can be used to increase certainty about an interaction.</li>
+        <li><strong>Lack of space.</strong> Tooltips can be helpful when your UI can be short on space. All other options should be exhausted for keeping content visible on the page.</li>
       </ul>
       <h4>When to consider something else</h4>
       <ul class="usa-content-list">
         <li><strong>Lengthy descriptions.</strong> Tooltips are micro-content, they should be brief. If you need a lot of text, consider an alternative approach.</li>
         <li><strong>Vital information.</strong> Information that is important for completing a task should never be hidden behind an interaction.</li>
-        <li><strong>Redundant information.</strong> Do not use where the information is repetitive or usability is obvious.</li>
+        <li><strong>Redundant content.</strong> Do not use where the information is repetitive or usability is obvious.</li>
+        <li><strong>Sufficient space.</strong> If your UI can fit the content you like to put inside of a tooltip, consider not using a tooltip.</li>
       </ul>
       <h4>Usability guidance</h4>
       <ul class="usa-content-list">

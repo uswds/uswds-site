@@ -1,0 +1,9 @@
+<h6>Standard tooltips</h6>
+{% capture tooltips %}
+  {% fractal_component tooltips %}
+{% endcapture %}{{ tooltips | strip }}
+
+<h6>Tooltip with utility classes</h6>
+{% capture tooltips-utilities %}
+  {% fractal_component tooltips--utilities %}
+{% endcapture %}{{ tooltips-utilities | strip }}

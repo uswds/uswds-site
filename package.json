@@ -52,7 +52,7 @@
     "test": "snyk test && npm run axe && npm run crawl && bundle exec rspec && npm run lint",
     "test:ci": "npm run axe && npm run crawl && bundle exec rspec && npm run lint",
     "watch": "NODE_ENV=development nswatch",
-    "snyk-protect": "snyk protect",
+    "snyk-protect": "npx snyk protect",
     "prepare": "npm run snyk-protect"
   },
   "dependencies": {
@@ -76,6 +76,7 @@
     "postcss-csso": "^4.0.0",
     "sass": "^1.25.0",
     "uswds": "^2.7.0",
+    "snyk": "^1.332.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },
@@ -97,7 +98,6 @@
     "node-sass": "^4.13.0",
     "nswatch": "^0.2.0",
     "simplecrawler": "^1.1.8",
-    "snyk": "^1.332.0",
     "yamljs": "^0.3.0"
   },
   "watch": {

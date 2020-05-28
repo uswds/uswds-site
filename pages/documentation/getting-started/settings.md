@@ -52,7 +52,7 @@ Use the `@import` directive in Sass to import these settings files before import
 @import 'uswds-theme-custom-styles';
 ```
 
-You can also just add the settings you wish to modify before importing `uswds`, either in a separate file, or directly in your Sass entry point:
+You can also add only the settings you wish to modify before importing `uswds`, either in a separate file, or directly in your Sass entry point:
 
 ```scss
 $theme-show-compile-warnings: false;

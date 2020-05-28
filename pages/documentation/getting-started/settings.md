@@ -5,21 +5,21 @@ title: Settings
 category: How to use USWDS
 lead: USWDS settings variables tell the design system how to build.
 subnav:
-- text: General
-  href: '#general'
-- text: Color
-  href: '#color'
-- text: Components
-  href: '#components'
-- text: Spacing
-  href: '#spacing'
-- text: Typography
-  href: '#typography'
-- text: Utilities
-  href: '#utilities'
+- text: General settings
+  href: '#general-settings'
+- text: Color settings
+  href: '#color-settings'
+- text: Component settings
+  href: '#component-settings'
+- text: Spacing settings
+  href: '#spacing-settings'
+- text: Typography settings
+  href: '#typography-settings'
+- text: Utilities settings
+  href: '#utilities-settings'
 ---
 
-A good way to get started with custom settings is to copy the `dist/src/stylesheets/theme` directory out of the USWDS package and into your project files. Then use the `@import` directive in Sass to import these settings **before importing the main USWDS Sass** with `@import uswds`. You can use the `styles.scss` file in the `dist/src/stylesheets/theme` directory as a starting point:
+A good way to get started with USWDS settings is to copy the `dist/src/stylesheets/theme` directory out of the `uswds` package and into the same directory where you keep your project Sass files. Then use the `@import` directive in Sass to import these settings **before importing the main USWDS Sass**. You can use the `styles.scss` example file in the `dist/src/stylesheets/theme` directory as a starting point for your own Sass entry point:
 
 ```scss
 // -------------------------------------

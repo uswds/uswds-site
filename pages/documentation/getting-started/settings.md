@@ -3,7 +3,7 @@ permalink: /documentation/settings/
 layout: styleguide
 title: Settings
 category: How to use USWDS
-lead: Theme settings variables control the appearance of USWDS components and the values of USWDS theme tokens.
+lead: USWDS settings variables tell the design system how to build.
 subnav:
 - text: General
   href: '#general'
@@ -19,9 +19,7 @@ subnav:
   href: '#utilities'
 ---
 
-Copy the `dist/src/stylesheets/theme` directory out of the USWDS package and use its contents to control the appearance of USWDS components and the values of USWDS theme tokens.
-
-Use the `@import` directive in Sass to import these settings **before importing the main USWDS Sass** with `@import uswds`. You can use the `styles.scss` file in the directory as a starting place:
+A good way to get started with custom settings is to copy the `dist/src/stylesheets/theme` directory out of the USWDS package and into your project files. Then use the `@import` directive in Sass to import these settings **before importing the main USWDS Sass** with `@import uswds`. You can use the `styles.scss` file in the `dist/src/stylesheets/theme` directory as a starting point:
 
 ```scss
 // -------------------------------------

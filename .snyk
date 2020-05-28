@@ -52,6 +52,9 @@ ignore:
     - uswds > mocha > yargs > yargs-parser:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass > sass-graph > yargs > yargs-parser:
+        reason: no patch available
+        expires: '2020-06-27T20:57:49.431Z'
     - uswds > nyc > yargs > yargs-parser:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'

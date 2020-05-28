@@ -44,7 +44,7 @@
     "check-contrast": "node ./utils/check-contrast.js",
     "clean": "gulp clean-assets",
     "crawl": "node config/crawl.js",
-    "federalist": "gulp build",
+    "federalist": "npx gulp build",
     "lint": "gulp eslint scss-lint",
     "prestart": "gulp build",
     "serve": "bundle exec jekyll serve --drafts --future --incremental --livereload",
@@ -97,7 +97,7 @@
     "node-sass": "^4.13.0",
     "nswatch": "^0.2.0",
     "simplecrawler": "^1.1.8",
-    "snyk": "^1.299.0",
+    "snyk": "^1.332.0",
     "yamljs": "^0.3.0"
   },
   "watch": {

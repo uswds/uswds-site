@@ -6,7 +6,7 @@ category: Design tokens
 lead: USWDS theme color tokens provide flexible, accessible, customizable color choices for your project.
 type: docs
 subnav:
-- text: Theme color tokens
+- text: About theme color tokens
   href: '#uswds-theme-color-tokens'
 - text: Customizing theme color tokens
   href: '#customizing-theme-color-tokens'
@@ -20,7 +20,7 @@ subnav:
 USWDS theme color tokens are designed to be useful and effective for small and large projects.  Each theme token is drawn from a [system color]({{ site.baseurl }}/design-tokens/color/system-tokens/){:.token} token and we only use token-based colors in official components.
 
 {:#uswds-theme-color-tokens}
-## Theme color tokens
+## About theme color tokens
 USWDS theme color tokens are divided into five high-level role-based color families: `base`, `primary`, `secondary`, `accent-warm`, and `accent-cool`.
 
 **Base** is a project's neutral color, typically some tint of gray, and usually used as the text color throughout.

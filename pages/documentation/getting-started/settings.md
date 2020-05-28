@@ -62,6 +62,11 @@ $theme-show-notifications: false;
 @import 'uswds-theme-custom-styles';
 ```
 
+In general, when importing settings and custom code, you just need to follow this order of operations:
+1. **Import settings:** Tell the design system how to build.
+1. **Import `uswds`:** Build the design system.
+1. **Import custom styles:** Build on top of the design system.
+
 {% assign settings = site.data.variables %}
 
 {%- for section in settings -%}

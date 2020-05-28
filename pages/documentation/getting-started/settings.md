@@ -21,7 +21,7 @@ subnav:
 
 Copy the `dist/src/stylesheets/theme` directory out of the USWDS package and use its contents to control the appearance of USWDS components and the values of USWDS theme tokens.
 
-Use the `@import` directive in Sass to import these settings files before importing the main USWDS Sass with `@import uswds`. You can use the `styles.scss` file in the directory as a starting place:
+Use the `@import` directive in Sass to import these settings **before importing the main USWDS Sass** with `@import uswds`. You can use the `styles.scss` file in the directory as a starting place:
 
 ```scss
 // -------------------------------------

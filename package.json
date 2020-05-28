@@ -29,7 +29,7 @@
   },
   "scripts": {
     "axe": "node config/run-axe.js",
-    "build": "gulp build && bundle exec jekyll build",
+    "build": "gulp build",
     "build-css": "gulp build-sass",
     "build-css-components": "gulp build-sass-components",
     "build-css-custom": "gulp build-sass-custom",

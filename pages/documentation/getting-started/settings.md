@@ -3,25 +3,23 @@ permalink: /documentation/settings/
 layout: styleguide
 title: Settings
 category: How to use USWDS
-lead: Theme settings variables control the appearance of USWDS components and the values of USWDS theme tokens.
+lead: USWDS settings variables tell the design system how to build.
 subnav:
-- text: General
-  href: '#general'
-- text: Color
-  href: '#color'
-- text: Components
-  href: '#components'
-- text: Spacing
-  href: '#spacing'
-- text: Typography
-  href: '#typography'
-- text: Utilities
-  href: '#utilities'
+- text: General settings
+  href: '#general-settings'
+- text: Color settings
+  href: '#color-settings'
+- text: Component settings
+  href: '#component-settings'
+- text: Spacing settings
+  href: '#spacing-settings'
+- text: Typography settings
+  href: '#typography-settings'
+- text: Utilities settings
+  href: '#utilities-settings'
 ---
 
-Copy the `dist/src/stylesheets/theme` directory out of the USWDS package and use its contents to control the appearance of USWDS components and the values of USWDS theme tokens.
-
-Use the `@import` directive in Sass to import these settings files before importing the main USWDS Sass with `@import uswds`. You can use the `styles.scss` file in the directory as a starting place:
+A good way to get started with USWDS settings is to copy the `dist/src/stylesheets/theme` directory out of the `uswds` package and into the same directory where you keep your project Sass files. Then use the `@import` directive in Sass to import these settings **before importing the main USWDS Sass**. You can use the `styles.scss` example file in the `dist/src/stylesheets/theme` directory as a starting point for your own Sass entry point:
 
 ```scss
 // -------------------------------------
@@ -51,6 +49,21 @@ Use the `@import` directive in Sass to import these settings files before import
 
 @import 'uswds-theme-custom-styles';
 ```
+
+You can also add only the settings you wish to modify before importing `uswds`, either in a separate file, or directly in your Sass entry point:
+
+```scss
+$theme-show-compile-warnings: false;
+$theme-show-notifications: false;
+
+@import 'uswds';
+@import 'uswds-theme-custom-styles';
+```
+
+In general, when importing settings and custom code, you just need to follow this order of operations:
+1. **Import settings:** Tell the design system how to build.
+1. **Import `uswds`:** Build the design system.
+1. **Import custom styles:** Build on top of the design system.
 
 {% assign settings = site.data.variables %}
 

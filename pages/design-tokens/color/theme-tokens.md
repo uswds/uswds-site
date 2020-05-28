@@ -6,12 +6,12 @@ category: Design tokens
 lead: USWDS theme color tokens provide flexible, accessible, customizable color choices for your project.
 type: docs
 subnav:
-- text: Theme color tokens
+- text: About theme color tokens
   href: '#uswds-theme-color-tokens'
 - text: Customizing theme color tokens
   href: '#customizing-theme-color-tokens'
-- text: Using color tokens
-  href: '#using-color-tokens-in-utilities-settings-and-component-sass'
+- text: Using theme color tokens
+  href: '#using-theme-color-tokens'
 ---
 
 {% assign colors = site.data.tokens.color %}
@@ -20,7 +20,7 @@ subnav:
 USWDS theme color tokens are designed to be useful and effective for small and large projects.  Each theme token is drawn from a [system color]({{ site.baseurl }}/design-tokens/color/system-tokens/){:.token} token and we only use token-based colors in official components.
 
 {:#uswds-theme-color-tokens}
-## Theme color tokens
+## About theme color tokens
 USWDS theme color tokens are divided into five high-level role-based color families: `base`, `primary`, `secondary`, `accent-warm`, and `accent-cool`.
 
 **Base** is a project's neutral color, typically some tint of gray, and usually used as the text color throughout.
@@ -29,7 +29,11 @@ USWDS theme color tokens are divided into five high-level role-based color famil
 
 Each color family has seven possible lightness grades, from `lightest` to `darkest`, though not every family needs to include a color at each grade. Some grades may be set to `false` in your project's theme settings. The default USWDS theme palette does not use every grade for every family. The `primary` and `secondary` families also have a `vivid` grade available.
 
-Customize theme color tokens using the variables listed below in `_uswds_theme_color.scss` with [system color tokens]({{ site.baseurl }}/design-tokens/color/system-tokens/). Set any unused theme color to `false`.
+## Customizing theme color tokens
+
+Customize theme color tokens using the variables listed below in the `_uswds_theme_color.scss` [settings file]({{ site.baseurl }}/documentation/settings/) with [system color tokens]({{ site.baseurl }}/design-tokens/color/system-tokens/). Set any unused theme color to `false`.
+
+For example, if you wanted to set the value of the `primary-vivid` token to `blue-warm-50v`, set the variable `$theme-color-primary-vivid: "blue-warm-50v"` in `_uswds_theme_color.scss`.
 
 <div class="site-table-wrapper">
   <table class="usa-table--borderless site-table-responsive">
@@ -71,8 +75,26 @@ Customize theme color tokens using the variables listed below in `_uswds_theme_c
   </table>
 </div>
 
-## Using color tokens
-Your context and coding style determine how you access USWDS color tokens in code.
+## Using theme color tokens
+Your context and coding style determine how you access USWDS theme color tokens in code.
+
+For example, all three of the following examples result in the same output:
+
+```
+// function
+div {
+  background-color: color("primary");
+}
+
+// mixin
+div {
+  @include u-bg("primary");
+}
+
+// utility
+<div class="bg-primary">...</div>
+
+```
 
 <div class="site-table-wrapper">
   <table class="usa-table--borderless site-table-responsive">

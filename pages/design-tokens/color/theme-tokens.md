@@ -31,7 +31,7 @@ Each color family has seven possible lightness grades, from `lightest` to `darke
 
 ## Customizing theme color tokens
 
-Customize theme color tokens using the variables listed below in `_uswds_theme_color.scss` with [system color tokens]({{ site.baseurl }}/design-tokens/color/system-tokens/). Set any unused theme color to `false`.
+Customize theme color tokens using the variables listed below in the `_uswds_theme_color.scss` [settings file]({{ site.baseurl }}/documentation/settings/) with [system color tokens]({{ site.baseurl }}/design-tokens/color/system-tokens/). Set any unused theme color to `false`.
 
 For example, if you wanted to set the value of the `primary-vivid` token to `blue-warm-50v`, set the variable `$theme-color-primary-vivid: "blue-warm-50v"` in `_uswds_theme_color.scss`.
 

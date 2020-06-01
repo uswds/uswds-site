@@ -19,9 +19,9 @@ component_url: 'https://components.designsystem.digital.gov/components/detail/to
     <div id="tooltip-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
       <h4>When to use the tooltip component</h4>
       <ul class="usa-content-list">
-        <li><strong>Brief descriptions.</strong> Tooltips should be concise, only a few words.</li>
         <li><strong>Helpful, but not critical information.</strong></li>
         <li><strong>Enhance confidence.</strong> Tooltips can be used to increase certainty about an interaction.</li>
+        <li><strong>Brief descriptions.</strong> Tooltips can be a good choice when the the helper text is only a few words long.</li>
         <li><strong>Lack of space.</strong> Tooltips can be helpful when your UI can be short on space. All other options should be exhausted for keeping content visible on the page.</li>
       </ul>
       <h4>When to consider something else</h4>

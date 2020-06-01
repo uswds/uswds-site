@@ -1,7 +1,7 @@
 ---
-permalink: /components/tooltips/
+permalink: /components/tooltip/
 layout: styleguide
-title: Tooltips
+title: Tooltip
 type: component
 category: Components
 lead: Tooltips are short messages containing additional information that appear when a user hovers or focuses on an element.
@@ -9,8 +9,8 @@ component_url: 'https://components.designsystem.digital.gov/components/detail/to
 ---
 
 <section class="site-component-section">
-  {% include code/preview.html component="tooltips" %}
-  {% include code/accordion.html component="tooltips" %}
+  {% include code/preview.html component="tooltip" %}
+  {% include code/accordion.html component="tooltip" %}
   <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
     <button class="usa-button-unstyled usa-accordion__button"
         aria-expanded="true" aria-controls="tooltip-docs">

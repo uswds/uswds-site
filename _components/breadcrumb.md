@@ -105,8 +105,10 @@ link from another site.
         </li>
       </ul>
       <h4>Implementation</h4>
-      We're using a nav element to encapsulate our breadcrumbs, and a
-      <code>ul</code> to collect the links together.
+      <p>
+        We're using a nav element to encapsulate our breadcrumbs, and a
+        <code>ul</code> to collect the links together.
+      </p>
       <ul class="usa-content-list">
         <li>
           <strong>Truncation and wrapping:</strong> The default breadcrumb
@@ -119,6 +121,10 @@ link from another site.
           (defined by <code>$theme-breadcrumb-min-width</code>), the breadcrumb
           shows the current page's parent to sighted users. (Screenreaders see the full trail.)
           The parent is preceded by a <code>←</code>.
+        </li>
+        <li>
+          <strong>Control the text color with utilities.</strong> Change the
+          link color in settings, but change the text color with utilities.
         </li>
       </ul>
       <h5>Breadcrumb variants</h5>

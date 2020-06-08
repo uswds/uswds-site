@@ -31,7 +31,7 @@ subnav:
     </div>
     <div class="tablet:grid-col-5">
       <div class="padding-2 tablet:padding-left-4">
-        <img src="{{ site.baseurl }}/img/maturity-model.svg" alt="A diagram showing the concentric circles of the USWDS maturity model, progressing from Principles on the outside, through Guidance, and finally to Code in the innermost circle.">
+        <img src="{{ site.baseurl }}/img/maturity-model.svg" role="img" alt="A diagram showing the concentric circles of the USWDS maturity model, progressing from Principles on the outside, through Guidance, and finally to Code in the innermost circle.">
       </div>
     </div>
   </div>

@@ -14,13 +14,17 @@ As a complement to this visual style guidance, we strongly recommend you use [18
 
 ## USWDS for designers
 
-<div class="site-note"><strong>Note:</strong> USWDS 2 design assets are only currently available in Sketch and Adobe XD formats.</div>
+<div class="site-note"><strong>Note:</strong> USWDS 2 design assets are only currently available in Sketch, Adobe XD, and Figma formats.</div>
 
 The site contains HTML mockups of common UI components designed to follow USWDS’s visual style guide. To view the specs of each design live on this website (padding, margins, stroke weight, line-height, and so on), use your browser’s developer tools.
 
 USWDS components and tokens are available as an Adobe XD components file and as a Sketch library and project file. Download the assets and all associated fonts and images from the link below. Find more complete installation instructions at [our USWDS for designers GitHub repo](https://www.github.com/uswds/uswds-for-designers):
 
 {% include download-buttons-design.html %}
+
+Alternatively you can view the design assets on [Figma](https://www.figma.com/community/file/817531077036545462).
+Thanks to Maya Benari for sharing in [slack](https://gsa-tts.slack.com/archives/C3F14AHSQ/p1583869188104500)!
+
 
 ### Retired design files
 USWDS no longer maintains the following design files. The most recent versions remain available for download at the links below. While USWDS is no longer maintaining these files, we'd love to hear from any teams that are using them and adding new components when new versions of USWDS are released. [Send us an email](mailto:@uswds@support.digitalgov.gov).

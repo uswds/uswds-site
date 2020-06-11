@@ -22,8 +22,7 @@ USWDS components and tokens are available as an Adobe XD components file and as 
 
 {% include download-buttons-design.html %}
 
-Alternatively you can view the design assets on [Figma](https://www.figma.com/community/file/817531077036545462).
-Thanks to Maya Benari for sharing in [slack](https://gsa-tts.slack.com/archives/C3F14AHSQ/p1583869188104500)!
+Alternatively you can view the design assets on [Figma](https://figma.com/community/file/836611771720754351).
 
 
 ### Retired design files

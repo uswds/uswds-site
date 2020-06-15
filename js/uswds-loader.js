@@ -1,7 +1,7 @@
 var loadJS = require("./vendor/loadjs.js");
 
 // EDITABLE: path to USWDS js
-var enhancedScriptPath = "/assets/js/vendor/uswds.min.js";
+var enhancedScriptPath = "./assets/js/vendor/uswds.min.js";
 
 // Don't edit below this line ----------------------------------------------
 // Based on https://www.filamentgroup.com/lab/enhancing-optimistically.html

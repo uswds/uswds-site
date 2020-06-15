@@ -564,6 +564,10 @@ body {
   }
 }
 
+.usa-prose > .usa-button-group {
+  padding-left: 0;
+}
+
 .product-roadmap-list {
   li {
     max-width: 100%;
@@ -609,7 +613,7 @@ body {
 .label-recommended,
 .label-done {
   @extend %label-maturity;
-  background-color: color("green-cool-5");
+  background-color: color("green-cool-20v");
 }
 
 .heading-margin-alt {
@@ -2900,6 +2904,23 @@ $theme-table-column-gap: 4;
     @include typeset("lang", "2xl", 2);
     color: color("ink");
     margin: 0;
+  }
+
+  > h3 {
+    margin-bottom: units(1);
+    margin-top: units(3);
+
+    + p {
+      margin-top: 0;
+    }
+  }
+
+  > h4 {
+    margin-bottom: units(0.5);
+
+    + ul {
+      margin-top: units(0.5);
+    }
   }
 
   .site-text-intro {

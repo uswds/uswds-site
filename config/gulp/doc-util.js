@@ -1,4 +1,3 @@
-const pkg         = require('../../package.json');
 const log         = require('fancy-log');
 const chalk       = require('ansi-colors');
 const notifier    = require('node-notifier');
@@ -31,23 +30,11 @@ function notify (title, message, wait) {
 
 module.exports = {
 
-  pkg: {
-
-    name: pkg.name,
-    version: pkg.version,
-
-  },
-
-  dirName: pkg.name + '-' + pkg.version,
-
   logIntroduction: function (message) {
 
     message = message || 'U.S. Web Design System Documentation';
 
-    log(
-      chalk.yellow('v' + pkg.version),
-      message
-    );
+    log(message);
     drawFlag();
 
   },
@@ -87,7 +74,7 @@ module.exports = {
       chalk.red(name),
       chalk.yellow(message)
     );
-    notify(this.dirName + ' gulp ' + name, message, true);
+    notify('gulp: ' + name, message, true);
 
   },
 
@@ -97,7 +84,7 @@ module.exports = {
       chalk.cyan(name),
       chalk.green(message)
     );
-    notify(this.dirName + ' gulp ' + name, message, false);
+    notify('gulp: ' + name, message, false);
 
   },
 

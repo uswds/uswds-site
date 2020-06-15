@@ -3,7 +3,7 @@ title: How the Defense Digital Service uses USWDS for a Ruby app
 tags:
 - case study
 - web design system
-category: About USWDS
+category: About
 excerpt: In this 12th post in our series, we sat down with Jason Garber, front-end web developer at the U.S. Digital Service’s Defense Digital Service, to talk about his work creating a Ruby gem that integrates USWDS into a Ruby on Rails application.
 ---
 

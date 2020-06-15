@@ -4,7 +4,7 @@ tags:
 - case study
 - web design standards
 - design
-category: About USWDS
+category: About
 ---
 The U.S. Web Design Standards are currently being used on hundreds of government
 sites, with an audience of more than 59 million monthly users. In this eighth

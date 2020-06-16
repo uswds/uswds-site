@@ -36,6 +36,10 @@ lead: A combo box helps users select an item from a large list of options.
       <li><strong>Always use a label.</strong> Make sure your dropdown has a label. Don’t replace it with the default menu option (for example, removing the “State” label and just having the dropdown read “Select a state” by default).</li>
       <li><strong>Avoid auto-submission.</strong> Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Auto-submission disrupts screen readers because they select each option as they read them.</li>
     </ul>
+    <h4 class="usa-heading">Implementation</h4>
+    <ul class="usa-content-list">
+      <li><strong>Add a default value or a placeholder with data attributes.</strong> Add a default value to the combo box by adding a <code>data-default-value</code> attribute to the <code>div.usa-combo-box</code> element using the id of the option you want to be the default value as the attribute's value. Add a placeholder to the combo box by adding a <code>data-placeholder</code> attribute to the <code>div.usa-combo-box</code> element. The placeholder value can be any string.</li>
+    </ul>
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">
       <li>

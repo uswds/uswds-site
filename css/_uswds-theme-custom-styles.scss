@@ -1470,6 +1470,12 @@ code {
 
 .page-home {
   .usa-graphic-list {
+    .usa-media-block {
+      @include at-media("desktop") {
+        @include u-flex("column");
+      }
+    }
+
     .usa-media-block__body {
       // scss-lint:disable SelectorDepth
       > *:first-child {
@@ -1485,13 +1491,9 @@ code {
     }
 
     .usa-media-block__img {
-      margin-bottom: units(1);
+      margin-bottom: units(2);
       margin-right: units(2.5);
       max-width: units(9);
-
-      @include at-media("desktop") {
-        float: none;
-      }
     }
   }
 

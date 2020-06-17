@@ -14,6 +14,12 @@
       default: "true"
       kind: boolean
 
+    - name: Show notifications
+      description: Show updates and notifications about the framework.
+      var: $theme-show-notifications
+      default: "true"
+      kind: boolean
+
     - name: Namespace
       description: Set a namespace for grid and utility classes
       var: $theme-namespace

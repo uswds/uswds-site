@@ -100,7 +100,7 @@
   contents:
     - name: Test color tokens
       description: |
-        Test system color tokens against luminance bounds. This is intended to be an internal setting, and may result in false positives.
+        Test system color tokens against luminosity bounds. This is intended to be an internal setting, and may result in false positives.
       var: $theme-test-colors
       default: "false"
       kind: boolean

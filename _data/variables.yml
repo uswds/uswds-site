@@ -98,6 +98,12 @@
   name: Color settings
   description: Color
   contents:
+    - name: Test color tokens
+      description: |
+        Test system color tokens against luminance bounds. This is intended to be an internal setting, and may result in false positives.
+      var: $theme-test-colors
+      default: "false"
+      kind: boolean
     - name: Base color family
       description: Color family of site text.
       var: $theme-color-base-family

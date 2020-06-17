@@ -36,6 +36,30 @@ lead: A combo box helps users select an item from a large list of options.
       <li><strong>Always use a label.</strong> Make sure your dropdown has a label. Don’t replace it with the default menu option (for example, removing the “State” label and just having the dropdown read “Select a state” by default).</li>
       <li><strong>Avoid auto-submission.</strong> Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Auto-submission disrupts screen readers because they select each option as they read them.</li>
     </ul>
+    <h4 class="usa-heading">Implementation</h4>
+<div class="usa-prose site-prose" markdown="1">
+
+{:.usa-content-list}
+
+- **Initialization properties.**  There are properties available that will update the component during initialization. These properties must be set before the component is initialized in order to have an affect.
+
+| property | element | effect |
+| --- | --- | --- 
+required | select | The combo box component will be required in terms of native form validation.
+disabled | select | The combo box component will be disabled / readonly. You can re-enable by executing the enable procedure on the component.
+data-placeholder | .usa-combo-box | To update the placeholder text of the combo-box use the `data-placeholder` attribute. Is it recommended that a label or hint is used in lieu of a placeholder.
+data-default-value | .usa-combo-box | The combo box will set this value as the default selection if it is found within the select options.
+
+{:.usa-content-list}
+
+- **Additional component procedures.**  There are static procedures available that can update the component after initialization. These procedures are in addition to the primary methods referenced in the  <a href="{{ site.baseurl }}/documentation/developers/#js-customization">JS customization</a>
+
+| procedure | parameters | effect |
+| --- | --- | ---
+enable | .usa-combo-box element | The combo box component will be enabled.
+disable | .usa-combo-box element | The combo box component will be disabled / readonly.
+
+</div>
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">
       <li>

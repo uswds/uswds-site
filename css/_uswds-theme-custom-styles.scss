@@ -613,7 +613,7 @@ body {
 .label-recommended,
 .label-done {
   @extend %label-maturity;
-  background-color: color("green-cool-5");
+  background-color: color("green-cool-20v");
 }
 
 .heading-margin-alt {
@@ -1470,6 +1470,12 @@ code {
 
 .page-home {
   .usa-graphic-list {
+    .usa-media-block {
+      @include at-media("desktop") {
+        @include u-flex("column");
+      }
+    }
+
     .usa-media-block__body {
       // scss-lint:disable SelectorDepth
       > *:first-child {
@@ -1485,13 +1491,9 @@ code {
     }
 
     .usa-media-block__img {
-      margin-bottom: units(1);
+      margin-bottom: units(2);
       margin-right: units(2.5);
       max-width: units(9);
-
-      @include at-media("desktop") {
-        float: none;
-      }
     }
   }
 
@@ -2904,6 +2906,23 @@ $theme-table-column-gap: 4;
     @include typeset("lang", "2xl", 2);
     color: color("ink");
     margin: 0;
+  }
+
+  > h3 {
+    margin-bottom: units(1);
+    margin-top: units(3);
+
+    + p {
+      margin-top: 0;
+    }
+  }
+
+  > h4 {
+    margin-bottom: units(0.5);
+
+    + ul {
+      margin-top: units(0.5);
+    }
   }
 
   .site-text-intro {

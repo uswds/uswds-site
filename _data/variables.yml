@@ -844,77 +844,77 @@
   contents:
     - name: sm
       subsection: border-radius token
-      description: Sets `'sm'` `border-radius` theme token
+      description: Sets `'sm'` `border-radius` theme token.
       var: $theme-border-radius-sm
       default: 2px
       kind: units
     - name: md
       subsection: border-radius token
-      description: Sets `'md'` `border-radius` theme token
+      description: Sets `'md'` `border-radius` theme token.
       var: $theme-border-radius-md
       default: 0.5
       kind: units
     - name: lg
       subsection: border-radius token
-      description: Sets `'lg'` `border-radius` theme token
+      description: Sets `'lg'` `border-radius` theme token.
       var: $theme-border-radius-lg
       default: 1
       kind: units
 
     - name: Small grid gap
       section: true
-      description: Sets `'grid-gap-sm'` output
+      description: Sets `'grid-gap-sm'` output.
       var: $theme-column-gap-sm
       default: 2px
       kind: units
     - name: Medium grid gap
-      description: Sets `'grid-gap-md'` output
+      description: Sets `'grid-gap-md'` output.
       var: $theme-column-gap-md
       default: 2
       kind: units
     - name: Large grid gap
-      description: Sets `'grid-gap-lg'` output
+      description: Sets `'grid-gap-lg'` output.
       var: $theme-column-gap-md
       default: 3
       kind: units
     - name: Mobile grid gap
-      description: Sets value of `'grid-gap'` at `mobile` width
+      description: Sets value of `'grid-gap'` at `mobile` width.
       var: $theme-column-gap-mobile
       default: 2
       kind: units
     - name: Desktop grid gap
-      description: Sets value of `'grid-gap'` at `desktop` width
+      description: Sets value of `'grid-gap'` at `desktop` width.
       var: $theme-column-gap-desktop
       default: 4
       kind: units
 
     - name: Grid container max width
       section: true
-      description: Sets the `max-width` value of the `.grid-container` utility
+      description: Sets the `max-width` value of the `.grid-container` utility.
       var: $theme-grid-container-max-width
       default: "'desktop'"
       kind: units
 
     - name: Site max width
       section: true
-      description: Used to set a consistent `max-width` across components
+      description: Used to set a consistent `max-width` across components.
       var: $theme-site-max-width
       default: "'desktop'"
       kind: units
     - name: Site outer margins breakpoint
-      description: At what breakpoint should the site's outer margin change
+      description: At what breakpoint should the site's outer margin change.
       var: $theme-site-margins-breakpoint
       default: "'desktop'"
       kind: units
-    - name: Site mobile outer margins
-      description: Site outer margin at mobile width
-      var: $theme-site-margins-mobile-width
-      default: 2
-      kind: units
     - name: Site outer margins
-      description: Site outer margin at non-mobile width (breakpoint defined by `$theme-site-margins-breakpoint`)
+      description: Site outer margin at non-mobile width (breakpoint defined by `$theme-site-margins-breakpoint`).
       var: $theme-site-margins-width
       default: 4
+      kind: units
+    - name: Site mobile outer margins
+      description: Site outer margin at mobile width.
+      var: $theme-site-margins-mobile-width
+      default: 2
       kind: units
 
 - section:

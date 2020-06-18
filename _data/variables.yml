@@ -45,7 +45,7 @@
 
     - name: Important layout grid
       description: |
-        Should the layout grid classes output with !important
+        Should the layout grid classes output with !important.
       var: $theme-layout-grid-use-important
       default: "false"
       kind: boolean
@@ -67,7 +67,7 @@
     - name: Focus
       subsection: offset
       description: |
-        The offset between the element and the focus outline
+        The offset between the element and the focus outline.
       var: $theme-focus-offset
       default: 0
       kind: units
@@ -82,14 +82,14 @@
     - name: Focus
       subsection: width
       description: |
-        The width of the focus outline
+        The width of the focus outline.
       var: $theme-focus-width
       default: 0.5
       kind: units
 
     - name: Icon size
       description: |
-        The size of a standard UI icon (like a close box)
+        The size of a standard UI icon (like a close box).
       var: $theme-icon-image-size
       default: 2
       kind: units
@@ -99,62 +99,62 @@
   description: Color
   contents:
     - name: Base color family
-      description: Color family of site text
+      description: Color family of site text.
       var: $theme-color-base-family
       default: "'gray-cool'"
       kind: color
     - name: base-lightest
       subsection: theme color token
-      description: Use grades from 0-10
+      description: Use grades from 0-10.
       var: $theme-color-base-lightest
       default: "'gray-5'"
       kind: color
     - name: base-lighter
       subsection: theme color token
-      description: Use grades from 10-20
+      description: Use grades from 10-20.
       var: $theme-color-base-lighter
       default: "'gray-cool-10'"
       kind: color
     - name: base-light
       subsection: theme color token
-      description: Use grades from 30-40
+      description: Use grades from 30-40.
       var: $theme-color-base-light
       default: "'gray-cool-30'"
       kind: color
     - name: base
       subsection: theme color token
-      description: Use grades from 40-50
+      description: Use grades from 40-50.
       var: $theme-color-base
       default: "'gray-cool-50'"
       kind: color
     - name: base-dark
       subsection: theme color token
-      description: Use grades from 50-70
+      description: Use grades from 50-70.
       var: $theme-color-base-dark
       default: "'gray-cool-60'"
       kind: color
     - name: base-darker
       subsection: theme color token
-      description: Use grades from 60-90
+      description: Use grades from 60-90.
       var: $theme-color-base-darker
       default: "'gray-cool-70'"
       kind: color
     - name: base-darkest
       subsection: theme color token
-      description: Use grades from 70-90
+      description: Use grades from 70-90.
       var: $theme-color-base-darkest
       default: "'gray-90'"
       kind: color
     - name: ink
       subsection: theme color token
-      description: Recommend a clone of `base-darkest`
+      description: Recommend a clone of `base-darkest`.
       var: $theme-color-base-ink
       default: "'gray-90'"
       kind: color
 
     - name: Primary color family
       section: true
-      description: Color family of ~60% of the non-base color
+      description: Color family of ~60% of the non-base color.
       var: $theme-color-primary-family
       default: "'blue'"
       kind: color
@@ -178,160 +178,160 @@
       kind: color
     - name: primary
       subsection: theme color token
-      description: Use grades 40-60
+      description: Use grades 40-60.
       var: $theme-color-primary
       default: "'blue-60v'"
       kind: color
     - name: primary-vivid
       subsection: theme color token
-      description: Use vivid grades 30-60
+      description: Use vivid grades 30-60.
       var: $theme-color-primary
       default: "'blue-warm-60v'"
       kind: color
     - name: primary-dark
       subsection: theme color token
-      description: Use grades 50-70
+      description: Use grades 50-70.
       var: $theme-color-primary-dark
       default: "'blue-warm-70v'"
       kind: color
     - name: primary-darker
       subsection: theme color token
-      description: Use grades 60-90
+      description: Use grades 60-90.
       var: $theme-color-primary-darker
       default: "'blue-warm-80v'"
       kind: color
     - name: primary-darkest
       subsection: theme color token
-      description: Use grades 70-90
+      description: Use grades 70-90.
       var: $theme-color-primary-darkest
       default: "false"
       kind: color
 
     - name: Secondary color family
       section: true
-      description: Color family of ~30% of the non-base color
+      description: Color family of ~30% of the non-base color.
       var: $theme-color-secondary-family
       default: "'red'"
       kind: color
     - name: secondary-lightest
       subsection: theme color token
-      description: Use grades 0-10
+      description: Use grades 0-10.
       var: $theme-color-secondary-lightest
       default: "false"
       kind: color
     - name: secondary-lighter
       subsection: theme color token
-      description: Use grades 10-20
+      description: Use grades 10-20.
       var: $theme-color-secondary-lighter
       default: "'red-cool-10'"
       kind: color
     - name: secondary-light
       subsection: theme color token
-      description: Use grades 30-40
+      description: Use grades 30-40.
       var: $theme-color-secondary-light
       default: "'red-30'"
       kind: color
     - name: secondary
       subsection: theme color token
-      description: Use grades 40-60
+      description: Use grades 40-60.
       var: $theme-color-secondary
       default: "'red-50'"
       kind: color
     - name: secondary-vivid
       subsection: theme color token
-      description: Use vivid grades 30-60
+      description: Use vivid grades 30-60.
       var: $theme-color-secondary
       default: "'red-cool-50v'"
       kind: color
     - name: secondary-dark
       subsection: theme color token
-      description: Use grades 50-70
+      description: Use grades 50-70.
       var: $theme-color-secondary-dark
       default: "'red-60v'"
       kind: color
     - name: secondary-darker
       subsection: theme color token
-      description: Use grades 60-90
+      description: Use grades 60-90.
       var: $theme-color-secondary-darker
       default: "'red-70v'"
       kind: color
     - name: secondary-darkest
       subsection: theme color token
-      description: Use grades 70-90
+      description: Use grades 70-90.
       var: $theme-color-secondary-darkest
       default: "false"
       kind: color
 
     - name: Accent warm color family
       section: true
-      description: Color family of occasional warm accents
+      description: Color family of occasional warm accents.
       var: $theme-color-accent-warm-family
       default: "'orange'"
       kind: color
     - name: accent-warm-lightest
       subsection: theme color token
-      description: Use grades 0-10
+      description: Use grades 0-10.
       var: $theme-color-accent-warm-lightest
       default: "false"
       kind: color
     - name: accent-warm-lighter
       subsection: theme color token
-      description: Use grades 10-20
+      description: Use grades 10-20.
       var: $theme-color-accent-warm-lighter
       default: "'orange-10'"
       kind: color
     - name: accent-warm-light
       subsection: theme color token
-      description: Use grades 20-40
+      description: Use grades 20-40.
       var: $theme-color-accent-warm-light
       default: "'orange-20v'"
       kind: color
     - name: accent-warm
       subsection: theme color token
-      description: Use grades 30-60
+      description: Use grades 30-60.
       var: $theme-color-accent-warm
       default: "'orange-30v'"
       kind: color
     - name: accent-warm-dark
       subsection: theme color token
-      description: Use grades 50-70
+      description: Use grades 50-70.
       var: $theme-color-accent-warm-dark
       default: "'orange-50v'"
       kind: color
     - name: accent-warm-darker
       subsection: theme color token
-      description: Use grades 60-90
+      description: Use grades 60-90.
       var: $theme-color-accent-warm-darker
       default: "'orange-60v'"
       kind: color
     - name: accent-warm-lightest
       subsection: theme color token
-      description: Use grades 70-90
+      description: Use grades 70-90.
       var: $theme-color-accent-warm-darkest
       default: "false"
       kind: color
 
     - name: Accent cool color family
       section: true
-      description: Color family of occasional cool accents
+      description: Color family of occasional cool accents.
       var: $theme-color-accent-cool-family
       default: "'blue-cool'"
       kind: color
     - name: accent-cool-lightest
       subsection: theme color token
-      description: Use grades 0-20
+      description: Use grades 0-20.
       var: $theme-color-accent-cool-lightest
       default: "false"
       kind: color
     - name: accent-cool-lighter
       subsection: theme color token
-      description: Use grades 10-30
+      description: Use grades 10-30.
       var: $theme-color-accent-cool-lighter
       default: "'blue-cool-5v'"
       kind: color
     - name: accent-cool-light
       subsection: theme color token
-      description: Use grades 30-40
+      description: Use grades 30-40.
       var: $theme-color-accent-cool-light
       default: "'blue-cool-20v'"
       kind: color
@@ -342,26 +342,26 @@
       kind: color
     - name: accent-cool-dark
       subsection: theme color token
-      description: Use grades 50-60
+      description: Use grades 50-60.
       var: $theme-color-accent-cool-dark
       default: "'blue-cool-40v'"
       kind: color
     - name: accent-cool-darker
       subsection: theme color token
-      description: Use grades 60-80
+      description: Use grades 60-80.
       var: $theme-color-accent-cool-darker
       default: "'blue-cool-60v'"
       kind: color
     - name: accent-cool-darkest
       subsection: theme color token
-      description: Use grades 70-100
+      description: Use grades 70-100.
       var: $theme-color-accent-cool-darkest
       default: "false"
       kind: color
 
     - name: Error color family
       section: true
-      description: Color family of error messaging
+      description: Color family of error messaging.
       var: $theme-color-error-family
       default: "'red-warm'"
       kind: color
@@ -379,26 +379,26 @@
       kind: color
     - name: error
       subsection: state color token
-      description: Use grades 50-60
+      description: Use grades 50-60.
       var: $theme-color-error
       default: "'red-warm-50v'"
       kind: color
     - name: error-dark
       subsection: state color token
-      description: Use grades 60-70
+      description: Use grades 60-70.
       var: $theme-color-error-dark
       default: "'red-60v'"
       kind: color
     - name: error-darker
       subsection: state color token
-      description: Use grades 70-80
+      description: Use grades 70-80.
       var: $theme-color-error-darker
       default: "'red-70'"
       kind: color
 
     - name: Warning color family
       section: true
-      description: Color family of warning messaging
+      description: Color family of warning messaging.
       var: $theme-color-warning-family
       default: "'gold'"
       kind: color
@@ -416,140 +416,140 @@
       kind: color
     - name: warning
       subsection: state color token
-      description: Use grades 50-60
+      description: Use grades 50-60.
       var: $theme-color-warning
       default: "'gold-20v'"
       kind: color
     - name: warning-dark
       subsection: state color token
-      description: Use grades 60-70
+      description: Use grades 60-70.
       var: $theme-color-warning-dark
       default: "'gold-30v'"
       kind: color
     - name: warning-darker
       subsection: state color token
-      description: Use grades 70-80
+      description: Use grades 70-80.
       var: $theme-color-warning-darker
       default: "'gold-50v'"
       kind: color
 
     - name: Success color family
       section: true
-      description: Color family of success messaging
+      description: Color family of success messaging.
       var: $theme-color-success-family
       default: "'green-cool'"
       kind: color
     - name: success-lighter
       subsection: state color token
-      description: Use grades 0-30
+      description: Use grades 0-30.
       var: $theme-color-success-lighter
       default: "'green-cool-5'"
       kind: color
     - name: success-light
       subsection: state color token
-      description: Use grades 10-40
+      description: Use grades 10-40.
       var: $theme-color-success-light
       default: "'green-cool-20v'"
       kind: color
     - name: success
       subsection: state color token
-      description: Use grades 50-60
+      description: Use grades 50-60.
       var: $theme-color-success
       default: "'green-cool-40v'"
       kind: color
     - name: success-dark
       subsection: state color token
-      description: Use grades 60-70
+      description: Use grades 60-70.
       var: $theme-color-success-dark
       default: "'green-cool-50'"
       kind: color
     - name: success-darker
       subsection: state color token
-      description: Use grades 70-80
+      description: Use grades 70-80.
       var: $theme-color-success-darker
       default: "'green-cool-60'"
       kind: color
 
     - name: Info color family
       section: true
-      description: Color family of info messaging
+      description: Color family of info messaging.
       var: $theme-color-info-family
       default: "'cyan'"
       kind: color
     - name: info-lighter
       subsection: state color token
-      description: Use grades 0-30
+      description: Use grades 0-30.
       var: $theme-color-info-lighter
       default: "'cyan-5'"
       kind: color
     - name: info-light
       subsection: state color token
-      description: Use grades 10-40
+      description: Use grades 10-40.
       var: $theme-color-info-light
       default: "'cyan-20'"
       kind: color
     - name: info
       subsection: state color token
-      description: Use grades 50-60
+      description: Use grades 50-60.
       var: $theme-color-info
       default: "'cyan-30v'"
       kind: color
     - name: info-dark
       subsection: state color token
-      description: Use grades 60-70
+      description: Use grades 60-70.
       var: $theme-color-info-dark
       default: "'cyan-40v'"
       kind: color
     - name: info-darker
       subsection: state color token
-      description: Use grades 70-80
+      description: Use grades 70-80.
       var: $theme-color-info-darker
       default: "'blue-cool-60'"
       kind: color
 
     - name: Disabled color family
       section: true
-      description: Color family of disabled actions
+      description: Color family of disabled actions.
       var: $theme-color-disabled-family
       default: "'gray'"
       kind: color
     - name: info-light
       subsection: state color token
-      description: Use grade 10
+      description: Use grade 10.
       var: $theme-color-disabled-light
       default: "'gray-10'"
       kind: color
     - name: info
       subsection: state color token
-      description: Use grade 20
+      description: Use grade 20.
       var: $theme-color-disabled
       default: "'gray-20'"
       kind: color
     - name: info-dark
       subsection: state color token
-      description: Use grade 30
+      description: Use grade 30.
       var: $theme-color-disabled-dark
       default: "'gray-30'"
       kind: color
 
     - name: Link color
       section: true
-      description: Color for text links
+      description: Color for text links.
       var: $theme-link-color
       default: "'primary'"
       kind: color
     - name: Visited link color
-      description: Color for `:visted` text links
+      description: Color for `:visted` text links.
       var: $theme-link-visited-color
       default: "'violet-70v'"
       kind: color
     - name: Hover link color
-      description: Color for `:hover` text links
+      description: Color for `:hover` text links.
       var: $theme-link-hover-color
       default: "'primary-dark'"
       kind: color
     - name: Active link color
-      description: Color for `:active` text links
+      description: Color for `:active` text links.
       var: $theme-link-active-color
       default: "'primary-darker'"
       kind: color
@@ -580,7 +580,7 @@
     - name: Alert
       section: true
       subsection: Bar width
-      description: Width of the colored bar to the left of the alert
+      description: Width of the colored bar to the left of the alert.
       var: $theme-alert-bar-width
       default: 1
       kind: units
@@ -592,13 +592,13 @@
       kind: family
     - name: Alert
       subsection: Icon size
-      description: Size of the alert icon
+      description: Size of the alert icon.
       var: $theme-alert-icon-size
       default: 4
       kind: units
     - name: Alert
       subsection: Horizontal padding
-      description: Padding on the left and right of the alert
+      description: Padding on the left and right of the alert.
       var: $theme-alert-padding-x
       default: 2.5
       kind: units
@@ -612,7 +612,7 @@
       kind: family
     - name: Banner
       subsection: Max width
-      description: Maximum width of the banner
+      description: Maximum width of the banner.
       var: $theme-banner-max-width
       default: "'desktop'"
       kind: units
@@ -632,13 +632,13 @@
       kind: units
     - name: Button
       subsection: Small width
-      description: Size of the header search button
+      description: Size of the header search button.
       var: $theme-button-small-width
       default: 6
       kind: units
     - name: Button
       subsection: Stroke width
-      description: Stroke width of `outline` button variants
+      description: Stroke width of `outline` button variants.
       var: $theme-button-stroke-width
       default: 2px
       kind: units
@@ -745,19 +745,19 @@
       kind: units
     - name: Input
       subsection: Border width when selected
-      description: Border width when selected
+      description: Border width when selected.
       var: $theme-input-select-border-width
       default: 2px
       kind: units
     - name: Input
       subsection: Size of selection element
-      description: Height and width checkboxes and radio buttons
+      description: Height and width checkboxes and radio buttons.
       var: $theme-input-select-size
       default: 2.5
       kind: units
     - name: Input
       subsection: State border width
-      description: Border width of special state inputs (like error state)
+      description: Border width of special state inputs (like error state).
       var: $theme-input-state-border-width
       default: 0.5
       kind: units
@@ -805,7 +805,7 @@
       kind: family
     - name: Navigation
       subsection: Megamenu columns
-      description: Number of columns in the megamenu
+      description: Number of columns in the megamenu.
       var: $theme-megamenu-columns
       default: 3
       kind: number
@@ -819,7 +819,7 @@
       kind: family
     - name: Search
       subsection: Min-width
-      description: Min-width of the search input
+      description: Min-width of the search input.
       var: $theme-search-min-width
       default: 27ch
       kind: —
@@ -827,7 +827,7 @@
     - name: Sidenav
       section: true
       subsection: Current border width
-      description: Width of the current section indicator
+      description: Width of the current section indicator.
       var: $theme-sidenav-current-border-width
       default: 0.5
       kind: units
@@ -923,13 +923,16 @@
   contents:
     - name: Respect user font size
       description: |
-        When `true` the root font size will be `100%` and media queries use  ems. When `false`, the root font size will be the px value specified in `$theme-root-font-size` and media queries will use px values.
+        When `true` the root font size will be `100%` and media queries use  ems.
+        When `false`, the root font size will be the px value specified in
+        `$theme-root-font-size` and media queries will use px values.
       var: $theme-respect-user-font-size
       default: "true"
       kind: boolean
     - name: Root font size
       description: |
-        Only applies when `$theme-respect-user-font-size` is `false`. Sets the root font size to the specified px value and uses px values for media queries.
+        Only applies when `$theme-respect-user-font-size` is `false`.
+        Sets the root font size to the specified px value and uses px values for media queries.
       var: $theme-root-font-size
       default: 10px
       kind: px
@@ -1157,7 +1160,8 @@
     - name: Generate all font weights
       subsection: font-weight token
       description: |
-        If USWDS is generating your `@font-face` rules, should we generate all available weights regardless of the assignments above?
+        If USWDS is generating your `@font-face` rules, should we generate all
+        available weights regardless of the assignments above?
       var: $theme-generate-all-weights
       default: "false"
       kind: boolean
@@ -1197,7 +1201,9 @@
     - name: Custom font source files
       section: true
       description: |
-        If you want USWDS to generate additional `@font-face` declarations, add your font data to the following variables as a map with these keys. You must include fonts saved as `.ttf`, `.woff`, and `.woff2`.
+        If you want USWDS to generate additional `@font-face` declarations,
+        add your font data to the following variables as a map with these keys.
+        You must include fonts saved as `.ttf`, `.woff`, and `.woff2`.
       var: $theme-font-[family]-custom-src
       default:
       kind: map
@@ -1347,12 +1353,12 @@
 
     - name: Body font family
       section: true
-      description: Use theme tokens when possible
+      description: Use theme tokens when possible.
       var: $theme-body-font-family
       default: "'body'"
       kind: family
     - name: Body font size
-      description: Use theme tokens when possible
+      description: Use theme tokens when possible.
       var: $theme-body-font-size
       default: "'sm'"
       kind: size
@@ -1362,7 +1368,7 @@
       default: 5
       kind: line-height
     - name: Style body element
-      description: Explicitly apply body styles to the `body` element
+      description: Explicitly apply body styles to the `body` element.
       var: $theme-style-body-element
       default: "false"
       kind: boolean
@@ -1560,19 +1566,19 @@
           kind: boolean
     - name: "Utility palettes"
       description: |
-        Utilities output with the values set in the palettes list
+        Utilities output with the values set in the palettes list.
       var: $[utility]-palettes
       default: "'palette-[utility]-default'"
       kind: palettes
     - name: "Utility manual values"
       description: |
-        Utilities output with the tokens and values set in the manual values map
+        Utilities output with the tokens and values set in the manual values map.
       var: $[utility]-palettes
       default: "'palette-[utility]-manual-values'"
       kind: map
       map:
         - key: "[token name]"
           description: |
-            Add a map of manual tokens and values in the form `name: value`
+            Add a map of manual tokens and values in the form `name: value`.
           value: "[token value]"
           kind: map

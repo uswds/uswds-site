@@ -919,7 +919,7 @@
 
 - section:
   name: Typography settings
-  description: Set values related to typefaces, type style, font size, and weights
+  description: Set values related to typefaces, type style, font size, and weights.
   contents:
     - name: Respect user font size
       description: |
@@ -934,42 +934,55 @@
       default: 10px
       kind: px
     - name: Global paragraph styles
-      description: Adds basic styling to `p` elements
+      description: Adds basic styling to `p` elements.
       var: $theme-global-paragraph-styles
       default: "false"
       kind: boolean
     - name: Global link styles
-      description: Adds basic styling to `a` elements
+      description: Adds basic styling to `a` elements.
       var: $theme-global-link-styles
       default: "false"
       kind: boolean
     - name: Global content styles
-      description: Adds basic styling to paragraph text, links, headings, lists, and tables
+      description: Adds basic styling to paragraph text, links, headings, lists, and tables.
       var: $theme-global-content-styles
       default: "false"
       kind: boolean
     - name: Font path
-      description: Path to the font files, relative to the compiled css
+      description: Path to the font files, relative to the compiled css.
       var: $theme-font-path
       default: "'../fonts'"
       kind: path
 
     - name: Custom typeface tokens
-      description: Add custom typeface tokens
+      description: Add custom typeface tokens.
       var: $theme-typeface-tokens
       default:
       kind: map
       map:
         - key: token
-          description: The name of the token
+          description: The name of the token.
           value: example-serif-token
           kind: string
         - key: token.display-name
-          description: Display name of the typeface
+          description: Display name of the typeface.
           value: "'Example Serif Display Name'"
           kind: string
         - key: token.cap-height
-          description: Height of a 500px `N` character in Sketch
+          description: Height of a 500px `N` character in Sketch.
+          value: 364px
+          kind: px
+      map:
+        - key: token
+          description: The name of the token.
+          value: example-sans-token
+          kind: string
+        - key: token.display-name
+          description: Display name of the typeface.
+          value: "'Example Sans Display Name'"
+          kind: string
+        - key: token.cap-height
+          description: Height of a 500px `N` character in Sketch.
           value: 364px
           kind: px
     - name: cond
@@ -1013,31 +1026,31 @@
     - name: ui
       section: true
       subsection: font-family token
-      description: Assign font family used for interfaces and buttons from type-based `family` tokens
+      description: Assign font family used for interfaces and buttons from type-based `family` tokens.
       var: $theme-font-role-ui
       default: "'sans'"
       kind: family
     - name: heading
       subsection: font-family token
-      description: Assign font family used for headings from type-based `family` tokens
+      description: Assign font family used for headings from type-based `family` tokens.
       var: $theme-font-role-heading
       default: "'serif'"
       kind: family
     - name: body
       subsection: font-family token
-      description: Assign font family used for body text from type-based `family` tokens
+      description: Assign font family used for body text from type-based `family` tokens.
       var: $theme-font-role-body
-      default: "'serif'"
+      default: "'sans'"
       kind: family
     - name: code
       subsection: font-family token
-      description: Assign font family used for code from type-based `family` tokens
+      description: Assign font family used for code from type-based `family` tokens.
       var: $theme-font-role-code
-      default: "'serif'"
+      default: "'mono'"
       kind: family
     - name: alt
       subsection: font-family token
-      description: Assign font family used for alternative type sections from type-based `family` tokens
+      description: Assign font family used for alternative type sections from type-based `family` tokens.
       var: $theme-font-role-alt
       default: "'serif'"
       kind: family
@@ -1126,7 +1139,7 @@
     - name: semibold
       subsection: font-weight token
       description: Use system `weight` tokens. <br/>Use `false` if unused.
-      var: $theme-font-weight-medium
+      var: $theme-font-weight-semibold
       default: "false"
       kind: weight
     - name: bold
@@ -1391,14 +1404,14 @@
       default: 2
       kind: line-height
     - name: Small font size
-      description: Used for the smallest text on a site
+      description: Used for the smallest text on a site.
       var: $theme-small-font-size
       default: "'2xs'"
-      kind: line-height
+      kind: size
     - name: Display font size
-      description: Used for the largest text on a site
+      description: Used for the largest text on a site.
       var: $theme-display-font-size
-      default: "'3xs'"
+      default: "'3xl'"
       kind: size
 
     - name: Narrow measure
@@ -1415,7 +1428,7 @@
     - name: Wide measure
       description:
       var: $theme-text-measure-wide
-      default: 5
+      default: 6
       kind: measure
     - name: Prose font family
       description: Font family used for body text in `usa-prose`. Use role-based `family` tokens.

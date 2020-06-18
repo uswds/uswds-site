@@ -582,7 +582,7 @@
       subsection: Bar width
       description: Width of the colored bar to the left of the alert
       var: $theme-alert-bar-width
-      default: 0.5
+      default: 1
       kind: units
     - name: Alert
       subsection: Font family
@@ -593,13 +593,13 @@
     - name: Alert
       subsection: Icon size
       description: Size of the alert icon
-      var: $theme-accordion-icon-size
+      var: $theme-alert-icon-size
       default: 4
       kind: units
     - name: Alert
       subsection: Horizontal padding
       description: Padding on the left and right of the alert
-      var: $theme-accordion-padding-x
+      var: $theme-alert-padding-x
       default: 2.5
       kind: units
 
@@ -622,24 +622,24 @@
       subsection: Font family
       description:
       var: $theme-button-font-family
-      default: 0.5
+      default: "'ui'"
       kind: family
     - name: Button
       subsection: Border radius
       description:
       var: $theme-button-border-radius
-      default: "'ui'"
+      default: "'md'"
       kind: units
     - name: Button
       subsection: Small width
       description: Size of the header search button
       var: $theme-button-small-width
-      default: 4
+      default: 6
       kind: units
     - name: Button
       subsection: Stroke width
       description: Stroke width of `outline` button variants
-      var: $theme-accordion-padding-x
+      var: $theme-button-stroke-width
       default: 2px
       kind: units
 
@@ -710,13 +710,21 @@
       default: 2
       kind: units
 
+    - name: Footer
+      section: true
+      subsection: Font family
+      description:
+      var: $theme-footer-font-family
+      default: "'body'"
+      kind: family
+
     - name: Checkbox
       section: true
       subsection: Border radius
       description:
       var: $theme-checkbox-border-radius
       default: "'sm'"
-      kind: border-radius
+      kind: units
     - name: Form
       subsection: Font family
       description:
@@ -742,12 +750,6 @@
       default: 2px
       kind: units
     - name: Input
-      subsection: Border width of selection element
-      description: Border width of checkboxes and radio buttons
-      var: $theme-input-select-border-width
-      default: 2px
-      kind: units
-    - name: Input
       subsection: Size of selection element
       description: Height and width checkboxes and radio buttons
       var: $theme-input-select-size
@@ -768,30 +770,30 @@
       default: "'ui'"
       kind: family
     - name: Header
+      subsection: Logo text width
+      description: Width of the logo text area at desktop width as a percentage of the total header width.
+      var: $theme-header-logo-text-width
+      default: 33%
+      kind: percentage
+    - name: Header
       subsection: Max width
-      description: Maximum width of the header
+      description: Maximum width of the header.
       var: $theme-header-max-width
       default: "'desktop'"
       kind: units
     - name: Header
       subsection: Min width
-      description: Breakpoint at which the non-mobile header is shown
+      description: Breakpoint at which the non-mobile header is shown.
       var: $theme-header-min-width
       default: "'desktop'"
       kind: units
-    - name: Header
-      subsection: Logo text width
-      description: Width of the logo text area at desktop width as a percentage of the total header width
-      var: $theme-header-logo-text-width
-      default: 33%
-      kind: percentage
 
     - name: Hero
       section: true
       subsection: Hero image
       description: Background image for the hero. Use a path relative to the final project CSS.
       var: $theme-hero-image
-      default: "'../img/hero.png'"
+      default: "'#{$theme-image-path}/hero.png'"
       kind: path
 
     - name: Navigation
@@ -824,24 +826,16 @@
 
     - name: Sidenav
       section: true
+      subsection: Current border width
+      description: Width of the current section indicator
+      var: $theme-sidenav-current-border-width
+      default: 0.5
+      kind: units
+    - name: Sidenav
       subsection: Font family
       description:
       var: $theme-sidenav-font-family
       default: "'ui'"
-      kind: family
-    - name: Sidenav
-      subsection: Current border width
-      description: Width of the current section indicator
-      var: $theme-sidenav-current-border-width
-      default: 0.2
-      kind: units
-
-    - name: Footer
-      section: true
-      subsection: Font family
-      description:
-      var: $theme-footer-font-family
-      default: 0.5
       kind: family
 
 - section:

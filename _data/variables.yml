@@ -510,47 +510,47 @@
     - name: Disabled color family
       section: true
       description: Color family of disabled actions
-      var: $theme-color-info-family
+      var: $theme-color-disabled-family
       default: "'gray'"
       kind: color
     - name: info-light
       subsection: state color token
       description: Use grade 10
-      var: $theme-color-info-light
+      var: $theme-color-disabled-light
       default: "'gray-10'"
       kind: color
     - name: info
       subsection: state color token
       description: Use grade 20
-      var: $theme-color-info
+      var: $theme-color-disabled
       default: "'gray-20'"
       kind: color
     - name: info-dark
       subsection: state color token
       description: Use grade 30
-      var: $theme-color-info-dark
+      var: $theme-color-disabled-dark
       default: "'gray-30'"
       kind: color
 
     - name: Link color
       section: true
       description: Color for text links
-      var: $theme-color-info-family
+      var: $theme-link-color
       default: "'primary'"
       kind: color
     - name: Visited link color
       description: Color for `:visted` text links
-      var: $theme-color-info-family
+      var: $theme-link-visited-color
       default: "'violet-70v'"
       kind: color
     - name: Hover link color
       description: Color for `:hover` text links
-      var: $theme-color-info-family
+      var: $theme-link-hover-color
       default: "'primary-dark'"
       kind: color
     - name: Active link color
       description: Color for `:active` text links
-      var: $theme-color-info-family
+      var: $theme-link-active-color
       default: "'primary-darker'"
       kind: color
 

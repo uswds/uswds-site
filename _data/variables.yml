@@ -54,7 +54,7 @@
       description: |
         When set to true, sets the box-sizing property of all site elements to `border-box`.
       var: $theme-global-border-box-sizing
-      default: "false"
+      default: "true"
       kind: boolean
 
     - name: Focus
@@ -77,7 +77,7 @@
       description:
       var: $theme-focus-style
       default: solid
-      kind: border-style
+      kind: outline-style
 
     - name: Focus
       subsection: width

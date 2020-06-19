@@ -1,12 +1,12 @@
 ---
-title: Date picker
+title: Date range picker
 parent: Form controls
-order: 10
-lead: Date picker helps users select a single date.
+order: 11
+lead: Date range picker helps users select a date range.
 ---
 
-{% include code/preview.html component="date-picker" %}
-{% include code/accordion.html component="date-picker" %}
+{% include code/preview.html component="date-range-picker" %}
+{% include code/accordion.html component="date-range-picker" %}
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
@@ -14,7 +14,7 @@ lead: Date picker helps users select a single date.
     Guidance
   </button>
   <div id="date-picker-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
-    <h4>When to use the date picker component</h4>
+    <h4>When to use the date range picker component</h4>
     <ul class="usa-content-list">
       <li><strong>Scheduling.</strong> When users are trying to schedule something in the future and would likely benefit from the context of selecting from a calendar.</li>
     </ul>
@@ -40,27 +40,8 @@ lead: Date picker helps users select a single date.
 
 | property | element | effect |
 | --- | --- | --- 
-required | input | The combo box component will be required in terms of native form validation.
-disabled | input | The combo box component will be disabled / readonly. You can re-enable by executing the `enable` procedure on the component.
-
-{:.usa-content-list}
-
-- **Component properties.**  There are properties available that will alter the component functionality when updated. These properties must be set before the component is initialized in order to have an affect.
-
-| property | element | effect |
-| --- | --- | --- 
 data-min-date | .usa-date-picker | The date picker will not allow a date selection before this date. Typing in an earlier date will cause native form validation error. A default min date or 1/1/0000 is used as a default.
 data-max-date | .usa-date-picker | The date picker will not allow a date selection after this date. Typing in an later date will cause native form validation error. There is no default maximum date.
-data-range-date | .usa-date-picker | The date picker will show a range selection from the range date.
-
-{:.usa-content-list}
-
-- **Additional component procedures.**  There are static procedures available that can update the component after initialization. These procedures are in addition to the primary methods referenced in the  <a href="{{ site.baseurl }}/documentation/developers/#js-customization">JS customization</a>
-
-| procedure | parameters | effect |
-| --- | --- | ---
-enable | .usa-date-picker element | The combo box component will be enabled.
-disable | .usa-date-picker element | The combo box component will be disabled / readonly.
 
 </div>
     <h4 class="usa-heading">Package information</h4>

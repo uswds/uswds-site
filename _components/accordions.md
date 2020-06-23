@@ -99,13 +99,27 @@ lead: An accordion is a list of headers that hide or reveal additional content w
             </tr>
           </tbody>
         </table>
-        <h5 id="component-variables">Accordion variants</h5>
-        <ul>
-          <li>
-            <strong><code>usa-accordion--bordered</code>:</strong>
-            Display a border around accordion content.
-          </li>
-        </ul>
+        <h5 id="component-variants">Accordion variants</h5>
+        <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants">
+          <thead>
+            <tr>
+              <th scope="col" class="flex-6">Variant</th>
+              <th scope="col" class="flex-6">Usage</th>
+            </tr>
+          </thead>
+          <tbody class="font-mono-2xs">
+            <tr>
+              <td scope="row" data-title="Variant" class="flex-6">
+                usa-accordion--bordered
+              </td>
+              <td scope="row" data-title="Usage" class="flex-6">
+                <span class="font-lang-3xs">
+                  <p>Display a border around accordion content.</p>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
         <h4 class="usa-heading">Package information</h4>
         <ul class="usa-content-list">
           <li>

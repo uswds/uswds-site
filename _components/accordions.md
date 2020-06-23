@@ -68,30 +68,30 @@ lead: An accordion is a list of headers that hide or reveal additional content w
           </thead>
           <tbody class="font-mono-2xs">
             <tr>
-              <td scope="row" data-title="Variable" class="flex-6">
+              <td data-title="Variable" class="flex-6">
                 $theme-accordion-padding-x
               </td>
-              <td scope="row" data-title="Usage" class="flex-6">
+              <td data-title="Usage" class="flex-6">
                 <span class="font-lang-3xs">
                   <p>Stroke width of accordion.</p>
                 </span>
               </td>
             </tr>
             <tr>
-              <td scope="row" data-title="Variable" class="flex-6">
+              <td data-title="Variable" class="flex-6">
                 $theme-accordion-border-color
               </td>
-              <td scope="row" data-title="Usage" class="flex-6">
+              <td data-title="Usage" class="flex-6">
                 <span class="font-lang-3xs">
                   <p>Stroke color of accordion.</p>
                 </span>
               </td>
             </tr>
             <tr>
-              <td scope="row" data-title="Variable" class="flex-6">
+              <td data-title="Variable" class="flex-6">
                 $theme-accordion-font-family
               </td>
-              <td scope="row" data-title="Usage" class="flex-6">
+              <td data-title="Usage" class="flex-6">
                 <span class="font-lang-3xs">
                   <p>Font family of accordion.</p>
                 </span>
@@ -109,10 +109,10 @@ lead: An accordion is a list of headers that hide or reveal additional content w
           </thead>
           <tbody class="font-mono-2xs">
             <tr>
-              <td scope="row" data-title="Variant" class="flex-6">
+              <td data-title="Variant" class="flex-6">
                 usa-accordion--bordered
               </td>
-              <td scope="row" data-title="Usage" class="flex-6">
+              <td data-title="Usage" class="flex-6">
                 <span class="font-lang-3xs">
                   <p>Display a border around accordion content.</p>
                 </span>

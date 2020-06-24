@@ -43,6 +43,88 @@ lead: An alert keeps users informed of important and sometimes time-sensitive ch
         <li><strong>Use the proper ARIA role.</strong> If the message is not interactive, use the ARIA <code>role=<wbr>"alert"</code> to inform assistive technologies of a time-sensitive and important message. If the message is interactive, use the use the ARIA <code>role=<wbr>"alertdialog"</code> instead.</li>
         <li><strong>Don’t visually hide alert messages and then make them visible when they are needed.</strong> Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.</li>
       </ul>
+      <h5 id="component-settings">Alert settings</h5>
+      <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-settings">
+        <thead>
+          <tr>
+            <th scope="col" class="flex-6">Variable</th>
+            <th scope="col" class="flex-6">Usage</th>
+          </tr>
+        </thead>
+        <tbody class="font-mono-2xs">
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-alert-bar-width</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">Stroke width of alert.</p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-alert-font-family</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">Font family of alert.</p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-alert-icon-size</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">Size of the icon in alert.</p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-alert-padding-x</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">Side padding of alert.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h5 id="component-variants">Alert variants</h5>
+      <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants">
+        <thead>
+          <tr>
+            <th scope="col" class="flex-6">Variant</th>
+            <th scope="col" class="flex-6">Usage</th>
+          </tr>
+        </thead>
+        <tbody class="font-mono-2xs">
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-alert--info</td>
+            <td data-title="Usage" class="flex-6">
+              <span class="font-lang-3xs">Display an informational status alert.</span>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-alert--warning</td>
+            <td data-title="Usage" class="flex-6">
+              <span class="font-lang-3xs">Display a warning status alert.</span>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-alert--error</td>
+            <td data-title="Usage" class="flex-6">
+              <span class="font-lang-3xs">Display an error status alert.</span>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-alert--success</td>
+            <td data-title="Usage" class="flex-6">
+              <span class="font-lang-3xs">Display a success status alert.</span>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-alert--slim</td>
+            <td data-title="Usage" class="flex-6">
+              <span class="font-lang-3xs">Display a slimmer version of the alert.</span>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-alert--no-icon</td>
+            <td data-title="Usage" class="flex-6">
+              <span class="font-lang-3xs">Display an alert without an icon.</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
       <h4 class="usa-heading">Package information</h4>
       <ul class="usa-content-list">
         <li>

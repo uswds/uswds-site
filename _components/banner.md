@@ -45,8 +45,6 @@ lead: The banner identifies your site as an official website of the United State
       <h4 class="usa-heading">Implementation</h4>
       <ul class="usa-content-list">
         <li>The banner should directly follow the <code>skipnav</code> component.</li>
-        <li>Set the width of the banner content area with <code>$theme-banner-max-width</code>.</li>
-        <li>Set the banner font with <code>$theme-banner-font-family</code>.</li>
       </ul>
       <h5 id="component-settings">Banner settings</h5>
       <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-settings">

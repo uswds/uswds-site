@@ -53,6 +53,50 @@ subnav:
       <ul class="usa-content-list">
         <li>The social media icons used in the footer are from Font Awesome. To use additional icons, visit <a href="https://fontawesome.com/">Font Awesome</a>.</li>
       </ul>
+      <h5 id="component-settings">Footer settings</h5>
+      <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-settings">
+        <thead>
+          <tr>
+            <th scope="col" class="flex-6">Variable</th>
+            <th scope="col" class="flex-6">Usage</th>
+          </tr>
+        </thead>
+        <tbody class="font-mono-2xs">
+          <tr>
+            <td class="flex-6" data-title="Variable">$theme-footer-font-family</td>
+            <td class="flex-6" data-title="Usage">
+              <span class="font-lang-3xs">Font used in the footer.</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h5 id="component-variants">Footer variants</h5>
+      <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants">
+        <thead>
+          <tr>
+            <th scope="col" class="flex-6">Variant</th>
+            <th scope="col" class="flex-6">Usage</th>
+          </tr>
+        </thead>
+        <tbody class="font-mono-2xs">
+          <tr>
+            <td class="flex-6" data-title="Variant">usa-footer--big</td>
+            <td class="flex-6" data-title="Usage">
+              <span class="font-lang-3xs">
+                A multi-column footer that expands and collapses on mobile.
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td class="flex-6" data-title="Variant">usa-footer--slim</td>
+            <td class="flex-6" data-title="Usage">
+            <span class="font-lang-3xs">
+              A compact version of the footer.
+            </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
       <h4 class="usa-heading">Package information</h4>
       <ul class="usa-content-list">
         <li>

@@ -511,7 +511,6 @@ body {
   @include add-responsive-site-margins;
   margin-bottom: units(6);
   max-width: units($theme-site-max-width);
-  overflow: hidden;
   position: relative;
 
   header {

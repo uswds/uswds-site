@@ -84,17 +84,162 @@ Finally, a card is **modular**. This means that you can vary the order of cards 
         <li><strong>Control card size and layout with grid utilities.</strong> The <code>usa-card-group</code> block is functionally a wrap-able <code>grid-row</code> and each individual <code>usa-card</code> is a <code>grid-col</code>. This means that you can use a grid utility like <code>tablet:grid-col-4</code> to set a four-column size on a card at tablet width. You can also set custom grid gaps on a <code>usa-card-group</code> using the <code>grid-gap</code> utilities. Since the USWDS grid is based on flexbox, you can use flex positioning utilities on the card group. The default alignment is stretch (this aligns the top and bottom of each card in a row), but the <code>flex-align-start</code> utility can set the alignment to the top of the row.</li>
         <li><strong>Style cards with utilities.</strong> Style the <code>usa-card__container</code> element with utilities to achieve custom effects, such as changing the border or background color, or adding a drop shadow.</li>
       </ul>
-      <h5>Card variants</h5>
-      <ul>
-        <li><strong><code>usa-card--flag</code>:</strong> Display in a horizontal ("flag") orientation at a specified width.(<code>$theme-card-flag-min-width</code>)</li>
-        <li><strong><code>usa-card--header-first</code>:</strong> Displays the header element before the media element.</li>
-        <li><strong><code>usa-card--media-right</code>:</strong> In combination with <code>usa-card--flag</code>, sets the media element on the right. (Flag cards display media on the left by default.)</li>
-        <li><strong><code>usa-card__media--indent</code>:</strong> Indents the media element so it doesn't extend to the edge of the card.</li>
-        <li><strong><code>usa-card__media--set-aspect</code>:</strong> Sets a fixed aspect ratio on the card media. The default is 16x9, but this can be changed by adding an <code>add-aspect</code> utility to the media element, like <code>usa-card__media--set-aspect.add-aspect-1x1</code></li>
-        <li><strong><code>usa-card__media--exdent</code>:</strong> Extends the media element out over the card border. Useful for light-bordered cards.</li>
-        <li><strong><code>usa-card__body--exdent</code>:</strong> Extends the body element out over the card border. Useful for light-bordered cards.</li>
-        <li><strong><code>usa-card__footer--exdent</code>:</strong> Extends the footer element out over the card border. Useful for light-bordered cards.</li>
-      </ul>
+            <h5 id="component-settings">Card settings</h5>
+      <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-settings">
+        <thead>
+          <tr>
+            <th scope="col" class="flex-6">Variable</th>
+            <th scope="col" class="flex-6">Usage</th>
+          </tr>
+        </thead>
+        <tbody class="font-mono-2xs">
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-card-border-color</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">Stroke color of card.</p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-card-border-radius</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">Controls how round the card's corners are.</p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-card-border-width</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">The stroke thickness of the card.</p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-card-gap</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">Gap between cards in a card group.</p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-card-flag-min-width</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">Width at which flag cards change to horizontal layout.</p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-card-flag-image-width</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">
+                Fixed image width in the card flag variant.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-card-font-family</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">Font family for card body.</p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-card-header-typeset</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">Family, size, and line height of the heading.</p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-card-margin-bottom</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">Bottom margin for the card.</p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-card-padding-perimeter</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">Padding between card elements and card border.</p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-card-padding-y</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">Vertical padding between card elements.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h5 id="component-variants">Card variants</h5>
+      <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants">
+        <thead>
+          <tr>
+            <th scope="col" class="flex-6">Variant</th>
+            <th scope="col" class="flex-6">Usage</th>
+          </tr>
+        </thead>
+        <tbody class="font-mono-2xs">
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-card--flag</td>
+            <td data-title="Usage" class="flex-6">
+              <span class="font-lang-3xs">Display in a horizontal ("flag") orientation at a specified width (`$theme-card-flag-min-width`).</span>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-card--header-first</td>
+            <td data-title="Usage" class="flex-6">
+              <span class="font-lang-3xs">Displays the header element before the media element.</span>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-card--media-right</td>
+            <td data-title="Usage" class="flex-6">
+              <span class="font-lang-3xs">
+                In combination with <code>usa-card--flag</code>, sets the media
+                element on the right. (Flag cards display media on the left by default.)
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-card__media--indent</td>
+            <td data-title="Usage" class="flex-6">
+              <span class="font-lang-3xs">
+                Indents the media element so it doesn't extend to the edge of the card.
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-card__media--set-aspect</td>
+            <td data-title="Usage" class="flex-6">
+              <span class="font-lang-3xs">
+                Sets a fixed aspect ratio on the card media. The default is 16x9,
+                but this can be changed by adding an <code>add-aspect</code> utility
+                to the media element, like <code>usa-card__media--set-aspect.add-aspect-1x1</code>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-card__media--exdent</td>
+            <td data-title="Usage" class="flex-6">
+              <span class="font-lang-3xs">
+                Extends the media element out over the card border.
+                Useful for light-bordered cards.
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-card__body--exdent</td>
+            <td data-title="Usage" class="flex-6">
+              <span class="font-lang-3xs">
+                Extends the body element out over the card border.
+                Useful for light-bordered cards.
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-card__footer--exdent</td>
+            <td data-title="Usage" class="flex-6">
+              <span class="font-lang-3xs">
+                Extends the footer element out over the card border.
+                Useful for light-bordered cards.
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
       <h4 class="usa-heading">Package information</h4>
       <ul class="usa-content-list">
         <li>

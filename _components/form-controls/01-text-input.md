@@ -36,14 +36,93 @@ lead: Text inputs allow users to enter any combination of letters, numbers, or s
       <li><strong>Avoid placeholder text.</strong> Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio.</li>
       <li><strong>Avoid splitting numbers.</strong> Avoid breaking numbers with distinct sections (such as phone numbers, Social Security Numbers, or credit card numbers) into separate input fields. For example, use one input for phone number, not three (one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.</li>
     </ul>
-      <h4 class="usa-heading">Package information</h4>
-      <ul class="usa-content-list">
-        <li>
-          <strong>Package usage:</strong> <code>@import form-controls</code>
-        </li>
-        <li>
-          <strong>Requires:</strong> <code>required</code>, <code>global</code>
-        </li>
-      </ul>
+    <h4 class="usa-heading">Implementation</h4>
+    <h5 id="component-settings-text-input">Text input settings</h5>
+    <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-settings-text-input">
+      <thead>
+        <tr>
+          <th scope="col" class="flex-6">Variable</th>
+          <th scope="col" class="flex-6">Usage</th>
+        </tr>
+      </thead>
+      <tbody class="font-mono-2xs">
+        <tr>
+          <td class="flex-6" data-title="Variable">$theme-form-font-family</td>
+          <td class="flex-6" data-title="Usage">
+            <span class="font-lang-3xs">Font family used in inputs.</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="flex-6" data-title="Variable">$theme-body-font-size</td>
+          <td class="flex-6" data-title="Usage">
+            <span class="font-lang-3xs">Font size used in inputs.</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="flex-6" data-title="Variable">$theme-input-line-height</td>
+          <td class="flex-6" data-title="Usage">
+            <span class="font-lang-3xs">Line-height used in inputs.</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="flex-6" data-title="Variable">$theme-input-max-width</td>
+          <td class="flex-6" data-title="Usage">
+            <span class="font-lang-3xs">The inputs maximum width.</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="flex-6" data-title="Variable">$theme-input-state-border-width</td>
+          <td class="flex-6" data-title="Usage">
+            <span class="font-lang-3xs">
+              Border width of special state inputs (like error state).
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h5 id="component-variants-text-input">Text input variants</h5>
+    <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants-text-input">
+      <thead>
+        <tr>
+          <th scope="col" class="flex-6">Variant</th>
+          <th scope="col" class="flex-6">Usage</th>
+        </tr>
+      </thead>
+      <tbody class="font-mono-2xs">
+        <tr>
+          <td class="flex-6" data-title="Variant">usa-input--error</td>
+          <td class="flex-6" data-title="Usage">
+            <span class="font-lang-3xs">The error state of the text input.</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="flex-6" data-title="Variant">usa-input--success</td>
+          <td class="flex-6" data-title="Usage">
+            <span class="font-lang-3xs">The success state of the text input.</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="flex-6" data-title="Variant">usa-input--small</td>
+          <td class="flex-6" data-title="Usage">
+            <span class="font-lang-3xs">A smaller input with a max width of <code>8 units</code>.</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="flex-6" data-title="Variant">usa-input--medium</td>
+          <td class="flex-6" data-title="Usage">
+            <span class="font-lang-3xs">A smaller input with a max width of <code>15 units</code>.</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h4 class="usa-heading">Package information</h4>
+    <ul class="usa-content-list">
+      <li>
+        <strong>Package usage:</strong> <code>@import form-controls</code>
+      </li>
+      <li>
+        <strong>Requires:</strong> <code>required</code>, <code>global</code>
+      </li>
+    </ul>
   </div>
 </div>

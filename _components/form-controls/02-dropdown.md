@@ -38,14 +38,54 @@ lead: Dropdowns allow users to select one option from a temporary modal menu.
       <li><strong>Always use a label.</strong> Make sure your dropdown has a label. Don’t replace it with the default menu option (for example, removing the “State” label and just having the dropdown read “Select a state” by default).</li>
       <li><strong>Avoid auto-submission.</strong> Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Auto-submission disrupts screen readers because they select each option as they read them.</li>
     </ul>
-      <h4 class="usa-heading">Package information</h4>
-      <ul class="usa-content-list">
-        <li>
-          <strong>Package usage:</strong> <code>@import form-controls</code>
-        </li>
-        <li>
-          <strong>Requires:</strong> <code>required</code>, <code>global</code>
-        </li>
-      </ul>
+    <h4 class="usa-heading">Implementation</h4>
+    <h5 id="component-settings-dropdown">Dropdown settings</h5>
+    <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-settings-dropdown">
+      <thead>
+        <tr>
+          <th scope="col" class="flex-6">Variable</th>
+          <th scope="col" class="flex-6">Usage</th>
+        </tr>
+      </thead>
+      <tbody class="font-mono-2xs">
+        <tr>
+          <td class="flex-6" data-title="Variable">$theme-form-font-family</td>
+          <td class="flex-6" data-title="Usage">
+            <span class="font-lang-3xs">Font family used in dropdown.</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="flex-6" data-title="Variable">$theme-body-font-size</td>
+          <td class="flex-6" data-title="Usage">
+            <span class="font-lang-3xs">Font size used in dropdown.</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="flex-6" data-title="Variable">$theme-input-state-border-width</td>
+          <td class="flex-6" data-title="Usage">
+            <span class="font-lang-3xs">
+              Border width of special state (like error state).
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td class="flex-6" data-title="Variable">$theme-input-max-width</td>
+          <td class="flex-6" data-title="Usage">
+            <span class="font-lang-3xs">The dropdowns maximum width.</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h5 id="component-variants-dropdown">Dropdown variants</h5>
+    <p>This component doesn't have any variants.</p>
+    <h4 class="usa-heading">Package information</h4>
+    <ul class="usa-content-list">
+      <li>
+        <strong>Package usage:</strong> <code>@import form-controls</code>
+      </li>
+      <li>
+        <strong>Requires:</strong> <code>required</code>, <code>global</code>
+      </li>
+    </ul>
   </div>
 </div>

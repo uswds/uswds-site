@@ -16,6 +16,7 @@ lead: The range slider allows users to choose an approximate number from a range
     Guidance
   </button>
   <div id="range-docs" aria-hidden="false" class="usa-accordion__content site-component-usage" markdown="1">
+
 #### When to use the range slider component
 
 {:.usa-content-list}
@@ -49,6 +50,33 @@ lead: The range slider allows users to choose an approximate number from a range
 {:.usa-content-list}
 
 - Set the `min` and `max` attribute of the `input` element to correspond to the instructions or labels that accompany the slider.
+
+##### Range slider settings {#component-settings-range}
+<table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-settings-range">
+  <thead>
+    <tr>
+      <th scope="col" class="flex-6">Variable</th>
+      <th scope="col" class="flex-6">Usage</th>
+    </tr>
+  </thead>
+  <tbody class="font-mono-2xs">
+    <tr>
+      <td class="flex-6" data-title="Variable">$theme-input-select-size</td>
+      <td class="flex-6" data-title="Usage">
+        <span class="font-lang-3xs">The size of the range thumb.</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="flex-6" data-title="Variable">$theme-input-select-border-width</td>
+      <td class="flex-6" data-title="Usage">
+        <span class="font-lang-3xs">Border width when in focus.</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+##### Range slider variants {#component-variants-range}
+This component doesn't have any variants.
 
 #### Package information
 

@@ -8,14 +8,15 @@ layout: styleguide
 type: component
 title: Breadcrumb
 category: Components
-lead: Breadcrumbs are a form of navigation that help visitors understand where they are in a website.
+lead: Breadcrumbs are a secondary navigational element that helps users understand where they are in a website.
 ---
 
 Breadcrumbs convey where the current page of a website fits into the hierarchy
-of the overall site structure. They also include a series of links that allow
-you to navigate up through the hierarchy. These features are particularly
-relevant when a visitor has landed on an interior page from a web search or
-link from another site.
+of the overall site structure, as determined by the information architecture.
+Breadcrumbs are essentially a series of links that allow the user to navigate up,
+rather than simply back using the “Back” button, through the hierarchy.
+These features are particularly relevant when a user has landed on an interior
+page from a web search or link from another site.
 
 {% include code/preview.html component="breadcrumb" %}
 
@@ -27,70 +28,87 @@ link from another site.
       <h4>When to use the breadcrumb component</h4>
       <ul class="usa-content-list">
         <li>
-          <strong>You are here.</strong> When you need to communicate where the
-          current page is located in the website hierarchy. This is the most common usage.
+          <strong>Orient the user.</strong> Provide the user with a visual
+          marker of where the current page is located in the website hierarchy.
+          Putting the page in the context of the site structure is the most common
+          usage of breadcrumbs.
         </li>
         <li>
-          <strong>How you got here.</strong> In some cases, it may help to use
-          breadcrumbs to communicate a visitor's path to the current location,
-          such as when navigating through search results. This is a less common scenario.
+          <strong>Show the path.</strong>  In some cases, it may help to use
+          breadcrumbs to communicate a user's path to the current location.
+          For example, if a user finds the page through search results, the
+          breadcrumbs will show an alternate path the user could have taken to
+          navigate to that page. This is a less common scenario.
         </li>
       </ul>
       <h4>When to consider something else</h4>
       <ul class="usa-content-list">
         <li>
-          <strong>Simple sites with few levels.</strong> If the website is not
-          very deep and the context for the current page is clear from the main
+          <strong>Omit on simple sites.</strong>  If the website is not very
+          deep, and the context for the current page is clear from the main
           navigation, you can omit breadcrumbs.
         </li>
         <li>
-          <strong>Main landing pages.</strong> For the homepage and landing pages
-          of the main sections, you can omit breadcrumbs. They are more useful
-          at deeper levels of the site where the hierarchy is not immediately
-          apparent from the main navigation.
+          <strong>Omit on landing pages.</strong> For the homepage and landing
+          pages of the main sections, you can omit breadcrumbs. They are more
+          useful at deeper levels of the site where the hierarchy is not
+          immediately apparent from the main navigation.
         </li>
         <li>
           <strong>Side navigation.</strong> When side navigation is used in
           combination with main navigation, it may be redundant to include breadcrumbs.
         </li>
         <li>
-          <strong>Steps in a process.</strong> Although there are similarities
-          between breadcrumbs and a step-by-step wizard process, typically wizard
-          navigation will be more prominent than the way breadcrumbs are used.
-          Also, it may be confusing to see two sets of breadcrumbs performing
-          different functions on the same page. Instead, consider using a
-          <a href="{{ site.baseurl }}/components/button-groups/" class="usa-link">button group</a>.
+          <strong>Prioritize navigational elements.</strong> When side navigation
+          is used in combination with main navigation, it may be redundant to
+          include breadcrumbs.
+        </li>
+        <li>
+          <strong>Avoid in step-by-step processes.</strong>  Although there are
+          similarities between breadcrumbs and a step-by-step wizard process,
+          typically wizard navigation will be more prominent than the way breadcrumbs
+          are used. Also, it may be confusing to see two sets of breadcrumbs
+          performing different functions on the same page.
         </li>
       </ul>
       <h4>Usability guidance</h4>
       <ul class="usa-content-list">
         <li>
-          <strong>Parent <em>only</em> on small screens.</strong> By default,
-          the breadcrumb component collapses to display only a link to the
-          parent page at small widths. Consider keeping this context instead of
-          simply hiding the component.
+          <strong>Collapse to parent only on small widths.</strong> By default,
+          the breadcrumb component collapses to display only a link to the parent
+          page at small widths. Consider keeping this context instead of simply
+          hiding the component.
         </li>
         <li>
-          <strong>Tap targets on small screens.</strong> Although breadcrumbs
-          are frequently displayed using smaller text, make sure the text is not
-          too small to easily tap at small widths.
+          <strong>Consider size of tap targets on small widths.</strong>
+          Although breadcrumbs are frequently displayed using smaller text,
+          make sure the text is not too small to easily tap at small widths.
         </li>
         <li>
-          <strong>Complex sites with many levels.</strong> If a website contains
-          many levels of hierarchy, it can become overwhelming and cumbersome to
-          display the full breadcrumbs, even at larger widths. Consider setting
-          the min-width token to a larger screen size and avoiding wrapping for deep sites.
+          <strong>Avoid wrapping.</strong>  If a website contains many levels of
+          hierarchy, it can become overwhelming and cumbersome to display the
+          full breadcrumbs – even at larger widths. Consider setting the min-width
+          token to a larger screen size and avoid wrapping for deep sites.
         </li>
         <li>
-          <strong>Supplemental navigation</strong> Use breadcrumbs to supplement,
-          not replace, main navigation and side navigation.
+          <strong>Supplement navigation with breadcrumbs.</strong> Use breadcrumbs
+          to supplement, not replace, main navigation and side navigation.
+        </li>
+        <li>
+          <strong>Reflect the title of the page.</strong> Ensure the titles on
+          both the page and in the link in the breadcrumbs are the same.
+        </li>
+        <li>
+          <strong>Start with the word “Home”.</strong> Rather than using a house
+          icon, spell out the word “Home” as the starting link in the breadcrumbs.
         </li>
       </ul>
       <h4>Accessibility</h4>
       <ul class="usa-content-list">
         <li>
           <strong>Use the <code>nav</code> element.</strong> This allows assistive
-          technology to present the breadcrumbs in context as a navigational element on the page.
+          technology to present the breadcrumbs in context as a navigational element
+          on the page.
         </li>
         <li>
           <strong>Use ordered lists and list items.</strong> Use an <code>ol</code>
@@ -103,24 +121,28 @@ link from another site.
           Use <code>aria-label="Breadcrumbs"</code> on the main element and
           <code>aria-current="page"</code> on the current page.
         </li>
+        <li>
+          <strong>Hide separators from screen readers.</strong> The separators
+          between links in the breadcrumbs should not be read by screen readers.
+        </li>
       </ul>
       <h4>Implementation</h4>
       <p>
-        We're using a nav element to encapsulate our breadcrumbs, and a
+        Use a <code>nav</code> element to encapsulate breadcrumbs, and a
         <code>ul</code> to collect the links together.
       </p>
       <ul class="usa-content-list">
         <li>
-          <strong>Truncation and wrapping:</strong> The default breadcrumb
-          displays all the breadcrumb items in a single line at wide widths,
-          truncating the last element of the line if there is any overrun.
+          <strong>Truncate when wrapping occurs.</strong> The default breadcrumb
+          displays all the breadcrumb items in a single line at wide widths —
+          truncate the last element of the line if there is any overrun.
           The breadcrumb will wrap when <code>$theme-breadcrumb-wrapping: true</code>.
         </li>
         <li>
-          <strong>Narrow widths:</strong> At narrow widths
-          (defined by <code>$theme-breadcrumb-min-width</code>), the breadcrumb
-          shows the current page's parent to sighted users. (Screenreaders see the full trail.)
-          The parent is preceded by a <code>←</code>.
+          <strong>Show the parent at narrow widths.</strong> At narrow widths
+          (defined by <code>$theme-breadcrumb-min-width</code>), show the current
+          page's parent — this will be visible to sighted users and screen
+          readers see the full trail. The parent is preceded by a <code>←</code>.
         </li>
         <li>
           <strong>Control the text color with utilities.</strong> Change the

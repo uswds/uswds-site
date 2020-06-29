@@ -127,13 +127,119 @@ link from another site.
           link color in settings, but change the text color with utilities.
         </li>
       </ul>
-      <h5>Breadcrumb variants</h5>
-      <p>This component has no variants.</p>
-      <h5>Breadcrumb settings</h5>
-      <p>
-        All of the available settings on the
-        <a href="{{ site.baseurl }}/documentation/settings#component-settings" class="usa-link">settings documentation page</a>.
-      </p>
+      <h5 id="component-settings">Breadcrumb settings</h5>
+      <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-settings">
+        <thead>
+          <tr>
+            <th scope="col" class="flex-6">Variable</th>
+            <th scope="col" class="flex-6">Usage</th>
+          </tr>
+        </thead>
+        <tbody class="font-mono-2xs">
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-breadcrumb-back-icon</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">
+                The aspect ratio of the back icon, expressed as a list in the
+                form <code>[width], [height]</code>.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-breadcrumb-back-icon-aspect</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">
+                The path to the back icon, relative to the CSS output.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-breadcrumb-font-size</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">
+                The size of the breadcrumb text.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-breadcrumb-font-family</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">
+                The family of the breadcrumb text.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-breadcrumb-gap</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">
+                The space between indicator icons and text.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-breadcrumb-icon-color</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">
+                The color of indicator icons.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-breadcrumb-link-colors</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">
+                The color of breadcrumb links in the form <code>[link], [hover], [active].</code>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-breadcrumb-min-width</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">
+                The width at which the breadcrumb displays the full breadcrumb list.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-breadcrumb-separator-icon</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">
+                The path to the <strong>separator</strong> icon, relative to the CSS output.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-breadcrumb-separator-icon-aspect</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">
+                The aspect ratio of the separator icon, expressed as a list in
+                the form <code>[width], [height]</code>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-breadcrumb-spacing-bottom</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">Spacing below the breadcrumb.</p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-breadcrumb-spacing-top</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">Spacing above the breadcrumb.</p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-breadcrumb-wrapping</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">Controls whether the breadcrumb wraps or truncates.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h5 id="component-variants">Breadcrumb variants</h5>
+      <p>This component doesn't have any variants.</p>
     </div>
   </div>
 </section>

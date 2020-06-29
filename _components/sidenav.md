@@ -25,23 +25,70 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
       </ul>
       <h4>When to consider something else</h4>
       <ul class="usa-content-list">
-        <li><strong>Small site.</strong> If the site has fewer than five pages, consider organizing the page without a navigational hierarchy.</li>
-        <li><strong>Existing navigation.</strong> If your page already has a horizontal and vertical navigation bar, consider ways to simplify your navigation system.</li>
+        <li>
+          <strong>Small site.</strong> If the site has fewer than five pages,
+          consider organizing the page without a navigational hierarchy.
+        </li>
+        <li>
+          <strong>Existing navigation.</strong> If your page already has a
+          horizontal and vertical navigation bar, consider ways to simplify your
+          navigation system.
+        </li>
       </ul>
       <h4>Usability guidance</h4>
       <ul class="usa-content-list">
-        <li><strong>Show the current page.</strong> Indicate where a user is within the navigational hierarchy. Use the “active” state to show users which page they have navigated to.</li>
-        <li><strong>Keep the navigation links short.</strong> They can be shorter derivatives of page titles themselves.</li>
-        <li><strong>Always test your navigation.</strong> If the navigation hierarchy is too long, users may miss items at the bottom. If it’s too deep, users may miss items that require too many clicks. Usability test to find the right balance between breadth and depth.</li>
+        <li>
+          <strong>Show the current page.</strong> Indicate where a user is
+          within the navigational hierarchy. Use the “active” state to show users
+          which page they have navigated to.
+        </li>
+        <li>
+          <strong>Keep the navigation links short.</strong> They can be shorter
+          derivatives of page titles themselves.
+        </li>
+        <li>
+          <strong>Always test your navigation.</strong> If the navigation
+          hierarchy is too long, users may miss items at the bottom. If it’s too
+          deep, users may miss items that require too many clicks. Usability
+          test to find the right balance between breadth and depth.
+        </li>
       </ul>
       <h4 class="usa-heading">Accessibility</h4>
       <ul class="usa-content-list">
-        <li><strong>Ensure the side navigational system is keyboard accessible. </strong> Users should be able to tab through each link.</li>
+        <li>
+          <strong>Ensure the side navigational system is keyboard accessible.
+          </strong> Users should be able to tab through each link.
+        </li>
       </ul>
       <h4 class="usa-heading">Implementation</h4>
       <ul class="usa-content-list">
         <li>The width of the current menu item’s highlight border is set with the <code>$theme-sidenav-current-border-width</code> variable.</li>
       </ul>
+      <h5 id="component-settings">Side navigation settings</h5>
+      <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-settings">
+        <thead>
+          <tr>
+            <th scope="col" class="flex-6">Variable</th>
+            <th scope="col" class="flex-6">Usage</th>
+          </tr>
+        </thead>
+        <tbody class="font-mono-2xs">
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-sidenav-current-border-width</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">Width of the current section indicator.</p>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variable" class="flex-6">$theme-sidenav-font-family</td>
+            <td data-title="Usage" class="flex-6">
+              <p class="font-lang-3xs">The font family used in the side navigation.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h5 id="component-variants">Side navigation variants</h5>
+      <p>This component doesn't have any variants.</p>
       <h4 class="usa-heading">Package information</h4>
       <ul class="usa-content-list">
         <li>

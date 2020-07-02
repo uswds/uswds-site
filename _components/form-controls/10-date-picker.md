@@ -49,9 +49,9 @@ disabled | input | The combo box component will be disabled / readonly. You can 
 
 | property | element | effect |
 | --- | --- | --- 
-data-min-date | .usa-date-picker | The date picker will not allow a date selection before this date. Typing in an earlier date will cause native form validation error. A default min date or 1/1/0000 is used as a default.
-data-max-date | .usa-date-picker | The date picker will not allow a date selection after this date. Typing in an later date will cause native form validation error. There is no default maximum date.
-data-range-date | .usa-date-picker | The date picker will show a range selection from the range date.
+data-min-date | .usa-date-picker | The date picker will not allow a date selection before this date. The date should be in the format YYYY-MM-DD. Typing in an earlier date will cause native form validation error. A default min date or 0000-01-01 is used as a default.
+data-max-date | .usa-date-picker | The date picker will not allow a date selection after this date. The date should be in the format YYYY-MM-DD. Typing in an later date will cause native form validation error. There is no default maximum date.
+data-range-date | .usa-date-picker | The date picker will show a range selection from the range date. The date should be in the format YYYY-MM-DD.
 
 {:.usa-content-list}
 

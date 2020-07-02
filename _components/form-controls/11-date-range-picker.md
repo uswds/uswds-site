@@ -40,8 +40,8 @@ lead: Date range picker helps users select a date range.
 
 | property | element | effect |
 | --- | --- | --- 
-data-min-date | .usa-date-picker | The date picker will not allow a date selection before this date. Typing in an earlier date will cause native form validation error. A default min date or 1/1/0000 is used as a default.
-data-max-date | .usa-date-picker | The date picker will not allow a date selection after this date. Typing in an later date will cause native form validation error. There is no default maximum date.
+data-min-date | .usa-date-picker | The date picker will not allow a date selection before this date. The date should be in the format YYYY-MM-DD. Typing in an earlier date will cause native form validation error. A default min date or 0000-01-01 is used as a default.
+data-max-date | .usa-date-picker | The date picker will not allow a date selection after this date. The date should be in the format YYYY-MM-DD. Typing in an later date will cause native form validation error. There is no default maximum date.
 
 </div>
     <h4 class="usa-heading">Package information</h4>

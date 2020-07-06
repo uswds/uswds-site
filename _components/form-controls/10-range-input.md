@@ -2,7 +2,7 @@
 title: Range slider
 parent: Form controls
 maturity: alpha
-order: 09
+order: 10
 id_custom: range
 lead: A range slider allows users to choose an approximate number from a range.
 ---

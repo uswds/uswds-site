@@ -1,7 +1,7 @@
 ---
 title: File input
 parent: Form controls
-order: 10
+order: 08
 lead: The file input allow users to attach a file and displays the file name with a thumbnail preview.
 ---
 

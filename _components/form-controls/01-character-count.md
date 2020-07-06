@@ -1,7 +1,7 @@
 ---
 title: Character count
 parent: Form controls
-order: 08
+order: 01
 lead: Character count helps users know how much text they can enter when there is a limit on the number of characters.
 
 
@@ -9,6 +9,7 @@ lead: Character count helps users know how much text they can enter when there i
 
 {% include code/preview.html component="character-count" %}
 {% include code/accordion.html component="character-count" %}
+
 <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="character-count-docs">

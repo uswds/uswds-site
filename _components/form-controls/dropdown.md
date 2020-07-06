@@ -1,8 +1,8 @@
 ---
 title: Dropdown
 parent: Form controls
-order: 02
-lead: Dropdowns allow users to select one option from a temporary modal menu.
+order: 07
+lead: A dropdown allow users to select one option from a temporary modal menu.
 ---
 
 

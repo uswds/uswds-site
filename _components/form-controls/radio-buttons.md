@@ -1,7 +1,7 @@
 ---
 title: Radio buttons
 parent: Form controls
-order: 04
+order: 08
 lead: Radio buttons allow users to see all available choices and select exactly one.
 ---
 

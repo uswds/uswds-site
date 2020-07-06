@@ -1,7 +1,7 @@
 ---
 title: Combo box
 parent: Form controls
-order: 09
+order: 03
 lead: A combo box helps users select an item from a large list of options.
 ---
 
@@ -44,7 +44,7 @@ lead: A combo box helps users select an item from a large list of options.
 - **Initialization properties.**  There are properties available that will update the component during initialization. These properties must be set before the component is initialized in order to have an affect.
 
 | property | element | effect |
-| --- | --- | --- 
+| --- | --- | ---
 required | select | The combo box component will be required in terms of native form validation.
 disabled | select | The combo box component will be disabled / readonly. You can re-enable by executing the enable procedure on the component.
 data-placeholder | .usa-combo-box | To update the placeholder text of the combo-box use the `data-placeholder` attribute. Is it recommended that a label or hint is used in lieu of a placeholder.

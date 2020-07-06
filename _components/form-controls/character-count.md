@@ -1,7 +1,7 @@
 ---
 title: Character count
 parent: Form controls
-order: 08
+order: 01
 lead: Character count helps users know how much text they can enter when there is a limit on the number of characters.
 
 

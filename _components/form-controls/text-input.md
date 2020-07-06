@@ -1,8 +1,8 @@
 ---
 title: Text input
 parent: Form controls
-order: 01
-lead: Text inputs allow users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.
+order: 10
+lead: A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.
 ---
 
 {% include code/preview.html component="text-input" %}

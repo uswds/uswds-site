@@ -159,23 +159,6 @@ page from a web search or link from another site.
         </thead>
         <tbody class="font-mono-2xs">
           <tr>
-            <td data-title="Variable" class="flex-6">$theme-breadcrumb-back-icon</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">
-                The aspect ratio of the back icon, expressed as a list in the
-                form <code>[width], [height]</code>.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-breadcrumb-back-icon-aspect</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">
-                The path to the back icon, relative to the CSS output.
-              </p>
-            </td>
-          </tr>
-          <tr>
             <td data-title="Variable" class="flex-6">$theme-breadcrumb-font-size</td>
             <td data-title="Usage" class="flex-6">
               <p class="font-lang-3xs">
@@ -200,14 +183,6 @@ page from a web search or link from another site.
             </td>
           </tr>
           <tr>
-            <td data-title="Variable" class="flex-6">$theme-breadcrumb-icon-color</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">
-                The color of indicator icons.
-              </p>
-            </td>
-          </tr>
-          <tr>
             <td data-title="Variable" class="flex-6">$theme-breadcrumb-link-colors</td>
             <td data-title="Usage" class="flex-6">
               <p class="font-lang-3xs">
@@ -220,23 +195,6 @@ page from a web search or link from another site.
             <td data-title="Usage" class="flex-6">
               <p class="font-lang-3xs">
                 The width at which the breadcrumb displays the full breadcrumb list.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-breadcrumb-separator-icon</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">
-                The path to the <strong>separator</strong> icon, relative to the CSS output.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-breadcrumb-separator-icon-aspect</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">
-                The aspect ratio of the separator icon, expressed as a list in
-                the form <code>[width], [height]</code>
               </p>
             </td>
           </tr>

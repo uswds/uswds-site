@@ -2,7 +2,7 @@
 title: File input
 parent: Form controls
 order: 08
-lead: The file input allow users to attach a file and displays the file name with a thumbnail preview.
+lead: File input allow users to attach one or multiple files.
 ---
 
 {% include code/preview.html component="file-input" %}
@@ -14,22 +14,21 @@ lead: The file input allow users to attach a file and displays the file name wit
     Guidance
   </button>
   <div id="file-input-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
-
     <h4>When to use the file input</h4>
     <ul class="usa-content-list">
-      <li><strong>Documents are required.</strong> Ask users to provide files when it is necessary.</li>
+      <li><strong>Documents are required.</strong> Ask users to provide files when it's necessary.</li>
     </ul>
     <h4>When to consider something else</h4>
     <ul class="usa-content-list">
-      <li><strong>Documents are optional.</strong> Don’t ask users to provide documents if you do not require them.</li>
-      <li><strong>Upload in place.</strong> Files are only posted when the form is submitted. The USWDS file input does not support uploading files to a server.</li>
+      <li><strong>Documents are optional.</strong> Avoid asking users to provide documents if you don't require them.</li>
+      <li><strong>If you need to upload files to a server.</strong> Files are posted only when the form is submitted. The file input component doesn't support uploading files to a server.</li>
       <li><strong>Asking for large files.</strong> Be mindful that some users might have limited connectivity or data plans.</li>
     </ul>
     <h4>Usability guidance</h4>
     <ul class="usa-content-list">
-      <li><strong>Allow multiple file formats.</strong> Users won’t have the same software. Be flexible with file types so user won’t need to use different software.</li>
-      <li><strong>Prefer one file per input.</strong> Some users might not know how to select multiple files in a file browser. Also, iOS does not allow multiple file selection using the Files app.</li>
-      <li><strong>Highlight restrictions.</strong> Use the <code>usa-hint</code> to inform users of any restrictions, such as document types or file size.</li>
+      <li><strong>Allow multiple file formats.</strong> Not everyone has access to the same software. Be flexible with file types to avoid unnecessary software requirements.</li>
+      <li><strong>Prefer one file per input.</strong> Some users might not know how to select multiple files in a file browser. Additionally, iOS does not allow multiple-file selection using the Files app.</li>
+      <li><strong>Highlight input restrictions.</strong> Use <code>usa-hint</code> to be clear about any file restrictions, such as document types or file size.</li>
     </ul>
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">

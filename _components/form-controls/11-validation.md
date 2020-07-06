@@ -8,6 +8,7 @@ lead: Stating validation requirements up front, with live feedback, means users 
 
 {% include code/preview.html component="validation" %}
 {% include code/accordion.html component="validation" %}
+
 <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="validation-docs">

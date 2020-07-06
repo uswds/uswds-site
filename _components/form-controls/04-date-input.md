@@ -8,6 +8,7 @@ lead: Three text fields are the easiest way for users to enter most dates.
 
 {% include code/preview.html component="date-input" %}
 {% include code/accordion.html component="date-input" %}
+
 <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="date-input-docs">

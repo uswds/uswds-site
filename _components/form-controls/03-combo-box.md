@@ -7,6 +7,7 @@ lead: A combo box helps users select an item from a large list of options.
 
 {% include code/preview.html component="combo-box" %}
 {% include code/accordion.html component="combo-box" %}
+
 <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="combo-box-docs">

@@ -1,19 +1,19 @@
 ---
 title: Radio buttons
 parent: Form controls
-order: 04
+order: 08
 lead: Radio buttons allow users to see all available choices and select exactly one.
 ---
 
 {% include code/preview.html component="radio-buttons" %}
 {% include code/accordion.html component="radio-buttons" %}
+
 <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="radio-docs">
     Guidance
   </button>
   <div id="radio-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
-
     <h4>When to use the radio button component</h4>
     <ul class="usa-content-list">
       <li><strong>Single selection.</strong> When users need to select only one option out of a set of mutually exclusive choices.</li>

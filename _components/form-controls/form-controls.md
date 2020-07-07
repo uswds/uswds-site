@@ -22,6 +22,8 @@ subnav:
   href: '#date-range-picker'
 - text: Dropdown
   href: '#dropdown'
+- text: File input
+  href: '#file-input'
 - text: Radio buttons
   href: '#radio-buttons'
 - text: Range slider

@@ -42,8 +42,9 @@ lead: A date picker helps users select a single date.
 
 | property | element | effect |
 | --- | --- | ---
-required | input | The combo box component will be required in terms of native form validation.
-disabled | input | The combo box component will be disabled / readonly. You can re-enable by executing the `enable` procedure on the component.
+required | input | The date picker component will be required in terms of native form validation.
+disabled | input | The date picker component will be disabled / readonly. You can re-enable by executing the `enable` procedure on the component.
+data-default-value | .usa-date-picker | The date picker input will set this value if it is a valid date. The date should be in the format YYYY-MM-DD.
 
 {:.usa-content-list}
 
@@ -61,8 +62,8 @@ data-range-date | .usa-date-picker | The date picker will show a range selection
 
 | procedure | parameters | effect |
 | --- | --- | ---
-enable | .usa-date-picker element | The combo box component will be enabled.
-disable | .usa-date-picker element | The combo box component will be disabled / readonly.
+enable | .usa-date-picker element | The date picker component will be enabled.
+disable | .usa-date-picker element | The date picker component will be disabled / readonly.
 
 </div>
     <h4 class="usa-heading">Package information</h4>

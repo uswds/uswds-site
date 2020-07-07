@@ -1,3 +1,25 @@
+<h6>.gov domains</h6>
+{% capture banner %}
+  {% fractal_component banner %}
+{% endcapture %}{{ banner | strip }}
+
+<h6>.mil domains</h6>
+{% capture banner %}
+  {% fractal_component banner--dot-mil %}
+{% endcapture %}{{ banner--dot-mil | strip }}
+
+<h6>.gov domains (Spanish)</h6>
+{% capture banner %}
+  {% fractal_component banner--lang-es %}
+{% endcapture %}{{ banner--lang-es | strip }}
+
+<h6>.mil domains (Spanish)</h6>
+{% capture banner %}
+  {% fractal_component banner--dot-mil-lang-es %}
+{% endcapture %}{{ banner--dot-mil-lang-es | strip }}
+
+{% comment %}
 {% capture banner %}
   {% fractal_component banner %}
 {% endcapture %}{{ banner | strip | replace: '"gov-banner"', '"gov-banner-demo"' }}
+{% endcomment %}

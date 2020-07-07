@@ -1475,7 +1475,7 @@
   contents:
     - name: Utilities use !important
       description: |
-        When `true` utilities will all ouput with `!important`. This can be
+        Ouput all utilities with `!important`. This can be
         necessary if you intend utilities to override existing styles.
       var: $utilities-use-important
       default: "false"
@@ -1546,27 +1546,27 @@
       kind: map
       map:
         - key: "'output'"
-          description: Control output of the utility.
+          description: Output the utility.
           value: —
           kind: boolean
         - key: "'responsive'"
-          description: Control output of the responsive variants.
+          description: Output the responsive variants.
           value: —
           kind: boolean
         - key: "'active'"
-          description: Control output of the `active:` state variant.
+          description: Output the `active:` state variant.
           value: —
           kind: boolean
         - key: "'focus'"
-          description: Control output of the `focus:` state variant.
+          description: Output the `focus:` state variant.
           value: —
           kind: boolean
         - key: "'hover'"
-          description: Control output of the `hover:` state variant.
+          description: Output the `hover:` state variant.
           value: —
           kind: boolean
         - key: "'visited'"
-          description: Control output of the `visited:` state variant.
+          description: Output the `visited:` state variant.
           value: —
           kind: boolean
     - name: "Utility palettes"

@@ -33,13 +33,13 @@ lead: File input allow users to attach one or multiple files.
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li><strong>Use proper labels and attributes.</strong> Each file input should have a <code>&lt;label&gt;</code>. Associate the two by matching the <code>&lt;label&gt;</code>’s <code>for</code> attribute to the <code>&lt;input&gt;</code>’s <code>id</code> attribute.</li>
-      <li><strong>Use as a progressive enhancement.</strong> The file input component should be a progressive enhancement of <code>&lt;input type="file"&gt;</code>. If the component doesn't initialize, it should still work and appear like a standard <code>file</code> input.</li>
+      <li><strong>Use as a progressive enhancement.</strong> The file input component should be a progressive enhancement of <code>&lt;input type="file" /&gt;</code>. If the component doesn't initialize, it should still work and appear like a standard <code>file</code> input.</li>
     </ul>
     <h4 class="usa-heading">Implementation</h4>
     <ul class="usa-content-list">
       <li><strong>Initialization properties.</strong> JavaScript will create most elements for file input. To get a file input to initialize, add the class name <code>usa-file-input</code> to <code>&lt;input type="file" /&gt;</code>.</li>
       <li><strong>Interaction.</strong> When a user selects or drags documents to the file input, the file name and a thumbnail preview are listed.</li>
-      <li><strong>Using the <code>accept</code> attribute.</strong> You can allow certain files by placing an <code>accept</code> attribute on the <code>&lt;input/&gt;></code>If a file type is not accepted, the file will not be attached and the file input will display a message. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#attr-accept">Learn more about the accept attribute</a>.</li>
+      <li><strong>Using the <code>accept</code> attribute.</strong> You can allow certain files by placing an <code>accept</code> attribute on the <code>&lt;input/&gt;</code>If a file type is not accepted, the file will not be attached and the file input will display a message. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#attr-accept">Learn more about the accept attribute</a>.</li>
       <li><strong>Internet Explorer/Edge</strong> These browsers do not support dragging items to a file input. Instructions to drag files are removed for these browsers.</li>
     </ul>
     <h4 class="usa-heading">Package information</h4>

@@ -938,22 +938,22 @@
     - name: Root font size
       description: |
         Only applies when `$theme-respect-user-font-size` is `false`.
-        Sets the root font size to the specified px value and uses px values for media queries.
+        Set the root font size to the specified px value and use px values for media queries.
       var: $theme-root-font-size
       default: 10px
       kind: px
     - name: Global paragraph styles
-      description: Adds basic styling to `p` elements.
+      description: Add basic styling to `p` elements.
       var: $theme-global-paragraph-styles
       default: "false"
       kind: boolean
     - name: Global link styles
-      description: Adds basic styling to `a` elements.
+      description: Add basic styling to `a` elements.
       var: $theme-global-link-styles
       default: "false"
       kind: boolean
     - name: Global content styles
-      description: Adds basic styling to paragraph text, links, headings, lists, and tables.
+      description: Add basic styling to paragraph text, links, headings, lists, and tables.
       var: $theme-global-content-styles
       default: "false"
       kind: boolean
@@ -1166,8 +1166,7 @@
     - name: Generate all font weights
       subsection: font-weight token
       description: |
-        If USWDS is generating your `@font-face` rules, should we generate all
-        available weights regardless of the assignments above?
+        If USWDS is generating `@font-face` rules, generate all available weights regardless of the assignments above.
       var: $theme-generate-all-weights
       default: "false"
       kind: boolean

@@ -31,7 +31,7 @@
           value: "'grid-'"
           kind: string
         - key: grid.output
-          description: Set prefix output.
+          description: Output grid prefix.
           value: "true"
           kind: boolean
         - key: utility.namespace
@@ -39,13 +39,13 @@
           value: "'u-'"
           kind: string
         - key: utility.output
-          description: Set prefix output.
+          description: Output utility prefix.
           value: "true"
           kind: boolean
 
     - name: Important layout grid
       description: |
-        Should the layout grid classes output with !important.
+        Output grid classes output with "!important."
       var: $theme-layout-grid-use-important
       default: "false"
       kind: boolean

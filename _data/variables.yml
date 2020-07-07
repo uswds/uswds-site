@@ -15,7 +15,7 @@
       kind: boolean
 
     - name: Show notifications
-      description: Show updates and notifications about the framework.
+      description: Show updates and notifications about the design system.
       var: $theme-show-notifications
       default: "true"
       kind: boolean

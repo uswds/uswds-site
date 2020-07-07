@@ -33,6 +33,7 @@ lead: File input allow users to attach one or multiple files.
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
       <li><strong>Use proper labels and attributes.</strong> Each file input should have a <code>&lt;label&gt;</code>. Associate the two by matching the <code>&lt;label&gt;</code>’s <code>for</code> attribute to the <code>&lt;input&gt;</code>’s <code>id</code> attribute.</li>
+      <li><strong>Use as a progressive enhancement.</strong> The file input component should be a progressive enhancement of <code>&lt;input type="file"&gt;</code>. If the component doesn't initialize, it should still work and appear like a standard <code>file</code> input.</li>
     </ul>
     <h4 class="usa-heading">Implementation</h4>
     <ul class="usa-content-list">

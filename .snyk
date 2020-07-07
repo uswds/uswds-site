@@ -96,6 +96,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
@@ -106,6 +109,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
@@ -116,6 +122,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
@@ -126,6 +135,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
@@ -136,6 +148,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
@@ -146,6 +161,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
@@ -156,6 +174,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
@@ -166,6 +187,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
@@ -176,6 +200,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
@@ -186,6 +213,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
@@ -196,6 +226,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
@@ -206,6 +239,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
@@ -216,6 +252,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
@@ -226,6 +265,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
@@ -236,6 +278,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.122Z'
+      gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
@@ -246,6 +291,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.122Z'
+      gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
@@ -268,8 +316,8 @@ ignore:
         expires: '2020-06-27T22:01:23.325Z'
   SNYK-JS-GULPSCSSLINT-560114:
     - gulp-scss-lint:
-        reason: n/a
-        expires: '2020-06-27T22:01:23.325Z'
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
   SNYK-JS-HTTPPROXY-569139:
     - uswds > @frctl/fractal > browser-sync > http-proxy:
         reason: n/a

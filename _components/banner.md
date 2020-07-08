@@ -46,8 +46,10 @@ lead: The banner identifies official United States government websites  and help
       <ul class="usa-content-list">
         <li>A small number of .mil websites do not belong to an official U.S. Department of Defense organization. These sites may choose to adapt the <strong>Official websites use .mil</strong> section to use more technically correct language: “A <strong>.mil</strong> website operates under the approval authority of the U.S. Department of Defense.”</li>
         <li>The banner should directly follow the <code>skipnav</code> component.</li>
+        <li>Set the banner background color with <code>$theme-banner-background-color</code>. Banner text will update automatically.</li>
         <li>Set the width of the banner content area with <code>$theme-banner-max-width</code>.</li>
         <li>Set the banner font with <code>$theme-banner-font-family</code>.</li>
+        <li>Set the banner link color with <code>$theme-banner-link-color</code>. The default of <code>default</code> uses the link colors set in <code>uswds-theme-colors</code>.</li>
       </ul>
       <h4 class="usa-heading">Package information</h4>
       <ul class="usa-content-list">

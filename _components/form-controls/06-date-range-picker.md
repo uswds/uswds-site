@@ -37,7 +37,7 @@ lead: A date range picker helps users select a range between two dates.
 
 {:.usa-content-list}
 
-- **Initialization properties.**  There are properties available that will update the component during initialization. These properties must be set before the component is initialized in order to have an affect.
+- **Initialization properties.** The following properties update the component during initialization. These properties must be set before the component is initialized in order to have an effect.
 
 | property | element | effect |
 | --- | --- | ---

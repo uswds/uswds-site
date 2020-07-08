@@ -42,7 +42,7 @@ lead: A combo box helps users select an item from a large list of options.
 
 {:.usa-content-list}
 
-- **Initialization properties.**  There are properties available that will update the component during initialization. These properties must be set before the component is initialized in order to have an affect.
+- **Initialization properties.** The following properties update the component during initialization. These properties must be set before the component is initialized in order to have an effect.
 
 | property | element | effect |
 | --- | --- | ---
@@ -53,7 +53,7 @@ data-default-value | .usa-combo-box | The combo box will set this value as the d
 
 {:.usa-content-list}
 
-- **Additional component procedures.**  There are static procedures available that can update the component after initialization. These procedures are in addition to the primary methods referenced in the  <a href="{{ site.baseurl }}/documentation/developers/#js-customization">JS customization</a>
+- **Additional component procedures.** The following static procedures update the component after initialization. These are in addition to the primary methods referenced in the <a href="{{ site.baseurl }}/documentation/developers/#js-customization">JS customization</a> documentation.
 
 | procedure | parameters | effect |
 | --- | --- | ---

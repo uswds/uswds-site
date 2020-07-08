@@ -38,17 +38,17 @@ lead: A date picker helps users select a single date.
 
 {:.usa-content-list}
 
-- **Initialization properties.**  There are properties available that will update the component during initialization. These properties must be set before the component is initialized in order to have an affect.
+- **Initialization properties.**  The following properties update the component during initialization. These properties must be set before the component is initialized in order to have an effect.
 
 | property | element | effect |
 | --- | --- | ---
 required | input | The date picker component will be required in terms of native form validation.
-disabled | input | The date picker component will be disabled / readonly. You can re-enable by executing the `enable` procedure on the component.
+disabled | input | The date picker component will be disabled/readonly. You can re-enable by executing the `enable` procedure on the component.
 data-default-value | .usa-date-picker | The date picker input will set this value if it is a valid date. The date should be in the format YYYY-MM-DD.
 
 {:.usa-content-list}
 
-- **Component properties.**  There are properties available that will alter the component functionality when updated. These properties must be set before the component is initialized in order to have an affect.
+- **Component properties.**  The following properties modify component functionality. These properties must be set before the component is initialized in order to have an effect.
 
 | property | element | effect |
 | --- | --- | ---
@@ -58,12 +58,12 @@ data-range-date | .usa-date-picker | The date picker will show a range selection
 
 {:.usa-content-list}
 
-- **Additional component procedures.**  There are static procedures available that can update the component after initialization. These procedures are in addition to the primary methods referenced in the  <a href="{{ site.baseurl }}/documentation/developers/#js-customization">JS customization</a>
+- **Additional component procedures.**  The following static procedures update the component after initialization. These are in addition to the primary methods referenced in the <a href="{{ site.baseurl }}/documentation/developers/#js-customization">JS customization</a> documentation.
 
 | procedure | parameters | effect |
 | --- | --- | ---
 enable | .usa-date-picker element | The date picker component will be enabled.
-disable | .usa-date-picker element | The date picker component will be disabled / readonly.
+disable | .usa-date-picker element | The date picker component will be disabled/readonly.
 
 </div>
     <h4 class="usa-heading">Package information</h4>

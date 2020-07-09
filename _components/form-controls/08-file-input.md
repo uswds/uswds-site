@@ -2,7 +2,7 @@
 title: File input
 parent: Form controls
 order: 08
-lead: File input allow users to attach one or multiple files.
+lead: File input allows users to attach one or multiple files.
 ---
 
 {% include code/preview.html component="file-input" %}

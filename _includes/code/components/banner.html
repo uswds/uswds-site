@@ -3,7 +3,9 @@
   {% fractal_component banner %}
 {% endcapture %}{{ banner
   | strip
-  | replace: 'gov-banner', 'gov-banner-default' }}
+  | replace: 'gov-banner', 'gov-banner-default'
+  | replace: 'banner-lock-title', 'banner-lock-title-default'
+  | replace: 'banner-lock-description', 'banner-lock-description-default' }}
 
 <h6>.mil domains</h6>
 {% capture banner--dot-mil %}

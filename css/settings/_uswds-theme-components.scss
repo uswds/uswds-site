@@ -30,8 +30,10 @@ $theme-alert-measure: 3;
 $theme-alert-padding-x: 2.5;
 
 // Banner
-$theme-banner-font-family: "ui";
-//$theme-banner-max-width: 'full';
+$theme-banner-background-color: "ink" !default;
+//$theme-banner-font-family: "ui" !default;
+//$theme-banner-link-color: default !default;
+$theme-banner-max-width: "none" !default;
 
 // Button
 $theme-button-font-family: "ui";

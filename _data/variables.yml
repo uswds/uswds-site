@@ -1475,7 +1475,7 @@
   contents:
     - name: Utilities use !important
       usage: |
-        Ouput all utilities with `!important`. This can be
+        Output all utilities with `!important`. This can be
         necessary if you intend utilities to override existing styles.
       var: $utilities-use-important
       default: "false"

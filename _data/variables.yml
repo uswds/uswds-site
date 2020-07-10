@@ -617,6 +617,56 @@
       default: "'desktop'"
       kind: units
 
+    - name: Breadcrumb
+      section: true
+      subsection: Font family
+      description: The family of the breadcrumb text.
+      var: $theme-breadcrumb-font-family
+      default: "sm"
+      kind: family
+    - name: Breadcrumb
+      subsection: Font size
+      description: The size of the breadcrumb text.
+      var: $theme-breadcrumb-font-size
+      default: "sm"
+      kind: units
+    - name: Breadcrumb
+      subsection: Breadcrumb gap
+      description: The space between indicator icons and text.
+      var: $theme-breadcrumb-gap
+      default: 1.5
+      kind: units
+    - name: Breadcrumb
+      subsection: Link colors
+      description: The color of breadcrumb links in the form `[link], [hover], [active]`
+      var: $theme-breadcrumb-link-colors
+      default: '"primary", "primary-dark", "primary-dark"'
+      kind: color
+    - name: Breadcrumb
+      subsection: Breadcrumb minimum width
+      description: The width at which the breadcrumb displays the full breadcrumb list.
+      var: $theme-breadcrumb-min-width
+      default: "mobile-lg"
+      kind: units
+    - name: Breadcrumb
+      subsection: Spacing bottom
+      description: Spacing below the breadcrumb.
+      var: $theme-breadcrumb-spacing-bottom
+      default: 2
+      kind: units
+    - name: Breadcrumb
+      subsection: Spacing top
+      description: Spacing above the breadcrumb.
+      var: $theme-breadcrumb-spacing-top
+      default: 2
+      kind: units
+    - name: Breadcrumb
+      subsection: Breadcrumb wrapping
+      description: Controls whether the breadcrumb wraps or truncates.
+      var: $theme-breadcrumb-wrapping
+      default: "false"
+      kind: units
+
     - name: Button
       section: true
       subsection: Font family

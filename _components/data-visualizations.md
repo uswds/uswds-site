@@ -106,6 +106,7 @@ subnav:
 .line-st6{fill:#C05600;}
 .line-st7{fill:#005EA2;}
 .line-st8{font-size:24px;}
+.font-svg-main{font-size:26px;}
 </style>
 <g id="Roosevelts">
 <g>
@@ -217,17 +218,17 @@ subnav:
 <g>
   <g>
   </g>
-  <text class="font-lang-xl" transform="matrix(1 0 0 1 200.2261 50.7432)">Franklin D. Roosevelt</text>
-  <text class="font-lang-xl" transform="matrix(1 0 0 1 749.2261 50.8486)">Theodore Roosevelt</text>
+  <text class="font-svg-main" transform="matrix(1 0 0 1 200.2261 50.7432)">Franklin D. Roosevelt</text>
+  <text class="font-svg-main" transform="matrix(1 0 0 1 749.2261 50.8486)">Theodore Roosevelt</text>
 </g>
 <g>
-  <text class="font-lang-xl" transform="matrix(1 0 0 1 88.8032 613.895)">Mar. 1</text>
-  <text class="font-lang-xl" transform="matrix(1 0 0 1 217.6079 613.895)">Mar. 2</text>
-  <text class="font-lang-xl" transform="matrix(1 0 0 1 346.4126 613.895)">Mar. 3</text>
-  <text class="font-lang-xl" transform="matrix(1 0 0 1 475.2173 613.895)">Mar. 4</text>
-  <text class="font-lang-xl" transform="matrix(1 0 0 1 604.022 613.895)">Mar. 5</text>
-  <text class="font-lang-xl" transform="matrix(1 0 0 1 732.8267 613.895)">Mar. 6</text>
-  <text class="font-lang-xl" transform="matrix(1 0 0 1 861.6313 613.895)">Mar. 7</text>
+  <text class="font-svg-main" transform="matrix(1 0 0 1 88.8032 613.895)">Mar. 1</text>
+  <text class="font-svg-main" transform="matrix(1 0 0 1 217.6079 613.895)">Mar. 2</text>
+  <text class="font-svg-main" transform="matrix(1 0 0 1 346.4126 613.895)">Mar. 3</text>
+  <text class="font-svg-main" transform="matrix(1 0 0 1 475.2173 613.895)">Mar. 4</text>
+  <text class="font-svg-main" transform="matrix(1 0 0 1 604.022 613.895)">Mar. 5</text>
+  <text class="font-svg-main" transform="matrix(1 0 0 1 732.8267 613.895)">Mar. 6</text>
+  <text class="font-svg-main" transform="matrix(1 0 0 1 861.6313 613.895)">Mar. 7</text>
 </g>
 </g>
 </svg>
@@ -319,7 +320,7 @@ subnav:
       .st3a{fill:#dfe1e2;stroke:#dfe1e2;stroke-miterlimit:10;}
       .st4{fill:#005EA2;}
       .st5{letter-spacing:-2;}
-      .font-lang-xl-m{font-size: 1.6rem}
+      .font-lang-xl-m{font-size: 25px}
     </style>
     <g>
       <g>

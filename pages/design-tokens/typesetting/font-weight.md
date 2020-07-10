@@ -149,12 +149,12 @@ Your context and coding style determine how you access USWDS font weight tokens 
         </td>
         <td data-title="Usage">
           <span class="line-height-sans-6">
-            weight(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-weight/" class="token">weight</a>)
+            font-weight(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-weight/" class="token">weight</a>)
           </span>
         </td>
         <td data-title="Example">
           <span class="line-height-sans-6">
-            font-weight: weight(<code>'bold'</code>)
+            font-weight: font-weight(<code>'bold'</code>)
           </span>
         </td>
       </tr>

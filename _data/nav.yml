@@ -27,10 +27,11 @@ Components:
   - href: /components/accordion/
   - href: /components/alert/
   - href: /components/banner/
+  - href: /components/breadcrumb/
   - href: /components/button/
-  - href: /components/data-visualizations/
   - href: /components/button-groups/
   - href: /components/card/
+  - href: /components/data-visualizations/
   - href: /components/footer/
   - href: /components/form-controls/
   - href: /components/form-templates/
@@ -42,6 +43,7 @@ Components:
   - href: /components/sidenav/
   - href: /components/table/
   - href: /components/tag/
+  - href: /components/tooltip/
   - href: /components/typography/
 
 How to use USWDS:

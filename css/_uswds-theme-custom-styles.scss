@@ -511,7 +511,6 @@ body {
   @include add-responsive-site-margins;
   margin-bottom: units(6);
   max-width: units($theme-site-max-width);
-  overflow: hidden;
   position: relative;
 
   header {
@@ -3014,58 +3013,110 @@ $theme-table-column-gap: 4;
 }
 
 .site-banner {
-  @include typeset("lang");
+  $site-banner-bg: "ink";
+  $site-banner-icon-color: "blue-40v";
+  $site-banner-font-family: "lang";
+  $site-banner-max-width: "none";
+  $site-banner-link-color: "base-light";
 
-  .usa-accordion {
-    @include typeset("lang");
+  $banner-icon-colors: get-link-tokens-from-bg(
+    $site-banner-bg,
+    $site-banner-icon-color
+  );
+  $banner-icon-color: nth($banner-icon-colors, 1);
+  $banner-icon-hover: nth($banner-icon-colors, 2);
+  $banner-icon-chevron: (
+    "name": "chevron",
+    "svg-height": 39,
+    "svg-width": 64,
+    "height": 0.8ex,
+    "color": $banner-icon-color,
+    "color-hover": $banner-icon-hover,
+  );
+  $banner-icon-chevron-up: map-merge(
+    $banner-icon-chevron,
+    (
+      "rotate": 180deg,
+    )
+  );
+
+  @include typeset($site-banner-font-family);
+  background-color: color($site-banner-bg);
+
+  @include at-media("tablet") {
+    font-size: font-size($site-banner-font-family, "3xs");
   }
 
-  .usa-banner__header-text,
-  .usa-banner__header-action,
-  .usa-banner__button {
-    @include typeset("lang", 1, 2);
+  .usa-accordion {
+    @include typeset($site-banner-font-family);
+  }
+
+  .usa-banner__header,
+  .usa-banner__content {
+    @include set-text-from-bg($site-banner-bg);
   }
 
   .usa-banner__content {
-    @include typeset("lang", "xs", 5);
+    @include u-maxw("desktop");
+    font-size: font-size($site-banner-font-family, 4);
+  }
 
-    p {
-      line-height: lh("lang", 5);
-    }
+  .usa-banner__inner {
+    @include grid-container($site-banner-max-width);
+  }
+
+  .usa-banner__header {
+    font-size: font-size($site-banner-font-family, 1);
+  }
+
+  .usa-banner__header-text {
+    font-size: font-size($site-banner-font-family, 1);
+    line-height: line-height($site-banner-font-family, 2);
   }
 
   .usa-banner__header-action {
-    @include add-icon(
-      "angle-arrow-down-primary",
+    @include place-icon(
+      $banner-icon-chevron,
       "after",
-      1,
-      1,
-      0.5,
-      "no-hover"
+      2px,
+      middle,
+      $site-banner-bg
     );
+    @include set-link-from-bg($site-banner-bg, $site-banner-link-color);
+
+    line-height: line-height($site-banner-font-family, 2);
+  }
+
+  .usa-banner__header--expanded {
+    @include at-media("tablet") {
+      font-size: font-size($site-banner-font-family, 1);
+    }
   }
 
   .usa-banner__button {
+    @include set-link-from-bg($site-banner-bg, $site-banner-link-color);
+    font-size: font-size($site-banner-font-family, 1);
+    line-height: line-height($site-banner-font-family, 2);
+
     @include at-media("tablet") {
-      @include add-icon(
-        "angle-arrow-down-primary",
+      @include place-icon(
+        $banner-icon-chevron,
         "after",
-        1,
-        1,
         2px,
-        "no-hover"
+        middle,
+        $site-banner-bg
       );
+      @include set-link-from-bg($site-banner-bg, $site-banner-link-color);
     }
 
     &[aria-expanded="true"] {
       @include at-media("tablet") {
-        @include add-icon(
-          "angle-arrow-up-primary",
+        @include place-icon(
+          $banner-icon-chevron-up,
           "after",
-          1,
-          1,
           2px,
-          "no-hover"
+          middle,
+          $site-banner-bg
         );
       }
     }

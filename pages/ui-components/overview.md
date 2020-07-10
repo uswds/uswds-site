@@ -97,6 +97,7 @@ validation | 32 | 28 | 5
 usa-accordion | 13 | 12 | 2
 usa-alert | 13 | 12 | 2
 usa-banner | 50 | 38 | 5
+usa-breadcrumb | 62 | 12 | 3
 usa-button | 19 | 16 | 3
 usa-card | 76 | 23 | 4
 usa-checklist | 11 | 9 | 2

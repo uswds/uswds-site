@@ -30,12 +30,12 @@ You can also <a href="https://github.com/uswds/uswds/milestone/52" class="">view
         <li class="site-roadmap-list__item"><span class="flex-fill">Character limit</span> <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Autocomplete combobox</span> <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Button group</span> <span class="usa-tag label-done">Done</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Date picker</span>  <span class="usa-tag label-in-progress">In progress</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Date range picker</span>  <span class="usa-tag label-in-progress">In progress</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Time picker</span>  <span class="usa-tag label-next">On deck</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Date and time picker</span> <span class="usa-tag label-next">On deck</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Tooltip</span> <span class="usa-tag label-in-progress">In progress</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Document upload</span> <span class="usa-tag label-in-progress">In progress</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Date picker</span>  <span class="usa-tag label-done">Done</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Date range picker</span>  <span class="usa-tag label-done">Done</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Time picker</span>  <span class="usa-tag in-progress">In progress</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Date and time picker</span> <span class="usa-tag in-progress">In progress</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Tooltip</span> <span class="usa-tag label-done">Done</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Document upload</span> <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Progress bar</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Anchor</span> <span class="usa-tag label-next">On deck</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Tabs</span> <span class="usa-tag label-upcoming">Upcoming</span></li>

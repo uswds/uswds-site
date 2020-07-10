@@ -53,6 +53,14 @@ data-default-value | .usa-combo-box | The combo box will set this value as the d
 
 {:.usa-content-list}
 
+- **Component properties.** The following properties modify component functionality. These properties can be set or adjusted at any time before or after initialization in order to have an effect.
+
+| property | element | effect |
+| --- | --- | ---
+data-filter | .usa-combo-box | The combo box will use this regular expression to filter the combo box options. You are declaring a case insensitive match over the entire option text (which means '^' and '$' are added automatically). You can specify the inputted query with `$`. The default filter is `.*$.*`, which is a simple find anywhere within the option text. 
+
+{:.usa-content-list}
+
 - **Additional component procedures.** The following static procedures update the component after initialization. These are in addition to the primary methods referenced in the <a href="{{ site.baseurl }}/documentation/developers/#js-customization">JS customization</a> documentation.
 
 | procedure | parameters | effect |

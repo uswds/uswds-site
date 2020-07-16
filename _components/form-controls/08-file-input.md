@@ -21,7 +21,7 @@ lead: File input allows users to attach one or multiple files.
     <h4>When to consider something else</h4>
     <ul class="usa-content-list">
       <li><strong>Documents are optional.</strong> Avoid asking users to provide documents if you don't require them.</li>
-      <li><strong>Asynchronous upload.</strong> The file input component doesn't support asynchronous uploading. Files are POSTed only when only on form submission.</li>
+      <li><strong>Asynchronous upload.</strong> The file input component doesn't support asynchronous uploading. Files are POSTed only on form submission.</li>
       <li><strong>Asking for large files.</strong> Be mindful that some users might have limited connectivity or data plans.</li>
     </ul>
     <h4>Usability guidance</h4>

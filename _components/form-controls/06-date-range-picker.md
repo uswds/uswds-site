@@ -16,7 +16,7 @@ lead: A date range picker helps users select a range between two dates.
   <div id="date-range-picker-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
     <h4>When to use the date range picker component</h4>
     <ul class="usa-content-list">
-      <li><strong>Scheduling.</strong> When users needs to schedule an event and benefit from the context of a calendar.</li>
+      <li><strong>Scheduling.</strong> When users need to schedule an event and benefit from the context of a calendar.</li>
       <li><strong>When the day of the week is important.</strong> When knowing the day of the week helps users choose a specific date.</li>
     </ul>
     <h4>When to consider something else</h4>

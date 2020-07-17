@@ -4,19 +4,19 @@ contents:
     usage:
     var: $theme-button-font-family
     default: '"ui"'
-    kind: family
+    type: family
   - name: Border radius
     usage:
     var: $theme-button-border-radius
     default: '"md"'
-    kind: units
+    type: units
   - name: Small width
     usage: Size of the header search button.
     var: $theme-button-small-width
     default: 6
-    kind: units
+    type: units
   - name: Stroke width
     usage: Stroke width of `outline` button variants.
     var: $theme-button-stroke-width
     default: 2px
-    kind: units
+    type: units

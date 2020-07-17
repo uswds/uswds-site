@@ -4,9 +4,9 @@ contents:
     usage:
     var: $theme-search-font-family
     default: '"ui"'
-    kind: family
+    type: family
   - name: Min-width
     usage: Min-width of the search input.
     var: $theme-search-min-width
     default: 27ch
-    kind: —
+    type: —

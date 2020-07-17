@@ -4,4 +4,4 @@ contents:
     usage:
     var: $theme-form-font-family
     default: '"ui"'
-    kind: family
+    type: family

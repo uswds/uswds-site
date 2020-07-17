@@ -4,9 +4,9 @@ contents:
     usage:
     var: $theme-navigation-font-family
     default: '"ui"'
-    kind: family
+    type: family
   - name: Megamenu columns
     usage: Number of columns in the megamenu.
     var: $theme-megamenu-columns
     default: 3
-    kind: number
+    type: number

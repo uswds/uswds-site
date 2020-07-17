@@ -7,56 +7,56 @@ contents:
       necessary if you intend utilities to override existing styles.
     var: $utilities-use-important
     default: "false"
-    kind: boolean
+    type: boolean
   - name: Output all utilities
     usage: |
       Output all utilities regardless of any individual utility’s output setting.
     var: $output-all-utilities
     default: "true"
-    kind: boolean
+    type: boolean
   - name: Utility breakpoints
     usage: |
       Set which mobile-first breakpoints are output for the utilities.
     var: $theme-utility-breakpoints
     default:
-    kind: map
+    type: map
     map:
       - key: '"card"'
         usage:
         value: "false"
-        kind: boolean
+        type: boolean
       - key: '"card-lg"'
         usage:
         value: "false"
-        kind: boolean
+        type: boolean
       - key: '"mobile"'
         usage:
         value: "false"
-        kind: boolean
+        type: boolean
       - key: '"mobile-lg"'
         usage:
         value: "true"
-        kind: boolean
+        type: boolean
       - key: '"tablet"'
         usage:
         value: "true"
-        kind: boolean
+        type: boolean
       - key: '"tablet-lg"'
         usage:
         value: "false"
-        kind: boolean
+        type: boolean
       - key: '"desktop"'
         usage:
         value: "true"
-        kind: boolean
+        type: boolean
       - key: '"desktop-lg"'
         usage:
         value: "false"
-        kind: boolean
+        type: boolean
       - key: '"widescreen"'
         usage:
         value: "false"
-        kind: boolean
+        type: boolean
 
   - name: Global color palettes
     usage: |
@@ -64,54 +64,54 @@ contents:
       `background-color`, `border-color`, `color`, `text-decoration-color`.
     var: $global-color-palettes
     default:
-    kind: palettes
+    type: palettes
 
   - name: "Utility settings"
     usage: |
       Control the output of a [utility] and its responsive and state variants.
     var: $[utility]-settings
     default:
-    kind: map
+    type: map
     map:
       - key: '"output"'
         usage: Output the utility.
         value: —
-        kind: boolean
+        type: boolean
       - key: '"responsive"'
         usage: Output the responsive variants.
         value: —
-        kind: boolean
+        type: boolean
       - key: '"active"'
         usage: Output the `active:` state variant.
         value: —
-        kind: boolean
+        type: boolean
       - key: '"focus"'
         usage: Output the `focus:` state variant.
         value: —
-        kind: boolean
+        type: boolean
       - key: '"hover"'
         usage: Output the `hover:` state variant.
         value: —
-        kind: boolean
+        type: boolean
       - key: '"visited"'
         usage: Output the `visited:` state variant.
         value: —
-        kind: boolean
+        type: boolean
   - name: "Utility palettes"
     usage: |
       Utilities output with the values set in the palettes list.
     var: $[utility]-palettes
     default: '"palette-[utility]-default"'
-    kind: palettes
+    type: palettes
   - name: "Utility manual values"
     usage: |
       Utilities output with the tokens and values set in the manual values map.
     var: $[utility]-palettes
     default: '"palette-[utility]-manual-values"'
-    kind: map
+    type: map
     map:
       - key: "[token name]"
         usage: |
           Add a map of manual tokens and values in the form `name: value`.
         value: "[token value]"
-        kind: map
+        type: map

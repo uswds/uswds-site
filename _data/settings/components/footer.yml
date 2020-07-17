@@ -4,4 +4,4 @@ contents:
     usage:
     var: $theme-footer-font-family
     default: '"body"'
-    kind: family
+    type: family

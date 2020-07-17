@@ -4,9 +4,9 @@ contents:
     usage: Width of the current section indicator.
     var: $theme-sidenav-current-border-width
     default: 0.5
-    kind: units
+    type: units
   - name: Font family
     usage:
     var: $theme-sidenav-font-family
     default: '"ui"'
-    kind: family
+    type: family

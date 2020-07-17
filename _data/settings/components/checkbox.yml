@@ -4,4 +4,4 @@ contents:
     usage:
     var: $theme-checkbox-border-radius
     default: '"sm"'
-    kind: units
+    type: units

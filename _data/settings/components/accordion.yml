@@ -4,14 +4,14 @@ contents:
     usage:
     var: $theme-accordion-border-width
     default: 0.5
-    kind: units
+    type: units
   - name: Border color
     usage:
     var: $theme-accordion-border-color
     default: '"base-lightest"'
-    kind: color
+    type: color
   - name: Font family
     usage:
     var: $theme-accordion-font-family
     default: '"body"'
-    kind: family
+    type: family

@@ -4,19 +4,19 @@ contents:
     usage: Width of the colored bar to the left of the alert.
     var: $theme-alert-bar-width
     default: 1
-    kind: units
+    type: units
   - name: Font family
     usage:
     var: $theme-alert-font-family
     default: '"ui"'
-    kind: family
+    type: family
   - name: Icon size
     usage: Size of the alert icon.
     var: $theme-alert-icon-size
     default: 4
-    kind: units
+    type: units
   - name: Horizontal padding
     usage: Padding on the left and right of the alert.
     var: $theme-alert-padding-x
     default: 2.5
-    kind: units
+    type: units

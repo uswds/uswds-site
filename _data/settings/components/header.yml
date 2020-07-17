@@ -1,7 +1,6 @@
 name: Header
 contents:
   - name: Font family
-    section: true
     usage:
     var: $theme-header-font-family
     default: '"ui"'

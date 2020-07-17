@@ -1,31 +1,26 @@
 name: Input
 contents:
-  - name: Input
-    subsection: Line height
+  - name: Line height
     usage:
     var: $theme-input-line-height
     default: 3
     kind: line-height
-  - name: Input
-    subsection: Max width
+  - name: Max width
     usage:
     var: $theme-input-max-width
     default: "'mobile-lg'"
     kind: units
-  - name: Input
-    subsection: Border width when selected
+  - name: Border width when selected
     usage: Border width when selected.
     var: $theme-input-select-border-width
     default: 2px
     kind: units
-  - name: Input
-    subsection: Size of selection element
+  - name: Size of selection element
     usage: Height and width checkboxes and radio buttons.
     var: $theme-input-select-size
     default: 2.5
     kind: units
-  - name: Input
-    subsection: State border width
+  - name: State border width
     usage: Border width of special state inputs (like error state).
     var: $theme-input-state-border-width
     default: 0.5

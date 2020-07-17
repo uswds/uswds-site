@@ -1,8 +1,6 @@
 name: Footer
 contents:
-  - name: Footer
-    section: true
-    subsection: Font family
+  - name: Font family
     usage:
     var: $theme-footer-font-family
     default: "'body'"

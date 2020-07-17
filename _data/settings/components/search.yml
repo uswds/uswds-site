@@ -1,14 +1,11 @@
 name: Search
 contents:
-  - name: Search
-    section: true
-    subsection: Font family
+  - name: Font family
     usage:
     var: $theme-search-font-family
     default: "'ui'"
     kind: family
-  - name: Search
-    subsection: Min-width
+  - name: Min-width
     usage: Min-width of the search input.
     var: $theme-search-min-width
     default: 27ch

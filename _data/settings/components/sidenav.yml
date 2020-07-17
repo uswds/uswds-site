@@ -1,14 +1,11 @@
 name: Sidenav
 contents:
-  - name: Sidenav
-    section: true
-    subsection: Current border width
+  - name: Current border width
     usage: Width of the current section indicator.
     var: $theme-sidenav-current-border-width
     default: 0.5
     kind: units
-  - name: Sidenav
-    subsection: Font family
+  - name: Font family
     usage:
     var: $theme-sidenav-font-family
     default: "'ui'"

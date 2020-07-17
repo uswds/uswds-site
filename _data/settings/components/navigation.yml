@@ -1,14 +1,11 @@
 name: Navigation
 contents:
-  - name: Navigation
-    section: true
-    subsection: Font family
+  - name: Font family
     usage:
     var: $theme-navigation-font-family
     default: "'ui'"
     kind: family
-  - name: Navigation
-    subsection: Megamenu columns
+  - name: Megamenu columns
     usage: Number of columns in the megamenu.
     var: $theme-megamenu-columns
     default: 3

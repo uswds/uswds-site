@@ -1,51 +1,52 @@
 name: Breadcrumb
 contents:
-  - name: Breadcrumb
-    section: true
-    subsection: Font family
+  - name: Background color
+    usage: The background color of the complete breadcrumb bar
+    var: $theme-breadcrumb-background-color
+    default: "white"
+    kind: color
+  - name: Font family
     usage: The family of the breadcrumb text.
     var: $theme-breadcrumb-font-family
     default: "sm"
     kind: family
-  - name: Breadcrumb
-    subsection: Font size
+  - name: Font size
     usage: The size of the breadcrumb text.
     var: $theme-breadcrumb-font-size
     default: "sm"
     kind: units
-  - name: Breadcrumb
-    subsection: Breadcrumb gap
+  - name: Breadcrumb gap
     usage: The space between indicator icons and text.
     var: $theme-breadcrumb-gap
     default: 1.5
     kind: units
-  - name: Breadcrumb
-    subsection: Link colors
-    usage: The color of breadcrumb links in the form `[link], [hover], [active]`
-    var: $theme-breadcrumb-link-colors
-    default: '"primary", "primary-dark", "primary-dark"'
+  - name: Link color
+    usage: The color of breadcrumb link. Add the link color and the system will generate the hover state. `Default` uses the default link settings calculated from your background color.
+    var: $theme-breadcrumb-link-color
+    default: default
     kind: color
-  - name: Breadcrumb
-    subsection: Breadcrumb minimum width
+  - name: Full breadcrumb minimum width
     usage: The width at which the breadcrumb displays the full breadcrumb list.
     var: $theme-breadcrumb-min-width
     default: "mobile-lg"
     kind: units
-  - name: Breadcrumb
-    subsection: Spacing bottom
-    usage: Spacing below the breadcrumb.
-    var: $theme-breadcrumb-spacing-bottom
+  - name: Bottom padding
+    usage: Padding under the breadcrumb
+    var: $theme-breadcrumb-padding-bottom
     default: 2
     kind: units
-  - name: Breadcrumb
-    subsection: Spacing top
-    usage: Spacing above the breadcrumb.
-    var: $theme-breadcrumb-spacing-top
+  - name: Top padding
+    usage: Padding above the breadcrumb
+    var: $theme-breadcrumb-padding-top
     default: 2
     kind: units
-  - name: Breadcrumb
-    subsection: Breadcrumb wrapping
-    usage: Controls whether the breadcrumb wraps or truncates.
-    var: $theme-breadcrumb-wrapping
-    default: "false"
+  - name: Horizontal padding
+    usage: Padding to the right and left of the breadcrumb
+    var: $theme-breadcrumb-padding-x
+    default: 0
     kind: units
+  - name: Separator color
+    usage: Color of the breadcrumb separator. This value needs AA contrast. against the background.
+    var: $theme-breadcrumb-separator-color
+    default: "base"
+    kind: color

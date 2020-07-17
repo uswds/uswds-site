@@ -1,7 +1,6 @@
 name: Form
 contents:
-  - name: Form
-    subsection: Font family
+  - name: Font family
     usage:
     var: $theme-form-font-family
     default: "'ui'"

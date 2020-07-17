@@ -3,46 +3,46 @@ usage: Spacing
 contents:
   - name: sm
     subsection: border-radius token
-    usage: Sets `'sm'` `border-radius` theme token.
+    usage: Sets `"sm"` `border-radius` theme token.
     var: $theme-border-radius-sm
     default: 2px
     type: units
   - name: md
     subsection: border-radius token
-    usage: Sets `'md'` `border-radius` theme token.
+    usage: Sets `"md"` `border-radius` theme token.
     var: $theme-border-radius-md
     default: 0.5
     type: units
   - name: lg
     subsection: border-radius token
-    usage: Sets `'lg'` `border-radius` theme token.
+    usage: Sets `"lg"` `border-radius` theme token.
     var: $theme-border-radius-lg
     default: 1
     type: units
 
   - name: Small grid gap
     section: true
-    usage: Sets `'grid-gap-sm'` output.
+    usage: Sets `"grid-gap-sm"` output.
     var: $theme-column-gap-sm
     default: 2px
     type: units
   - name: Medium grid gap
-    usage: Sets `'grid-gap-md'` output.
+    usage: Sets `"grid-gap-md"` output.
     var: $theme-column-gap-md
     default: 2
     type: units
   - name: Large grid gap
-    usage: Sets `'grid-gap-lg'` output.
+    usage: Sets `"grid-gap-lg"` output.
     var: $theme-column-gap-md
     default: 3
     type: units
   - name: Mobile grid gap
-    usage: Sets value of `'grid-gap'` at `mobile` width.
+    usage: Sets value of `"grid-gap"` at `mobile` width.
     var: $theme-column-gap-mobile
     default: 2
     type: units
   - name: Desktop grid gap
-    usage: Sets value of `'grid-gap'` at `desktop` width.
+    usage: Sets value of `"grid-gap"` at `desktop` width.
     var: $theme-column-gap-desktop
     default: 4
     type: units

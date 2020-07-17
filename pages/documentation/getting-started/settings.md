@@ -76,9 +76,10 @@ In general, when importing settings and custom code, you just need to follow thi
     %}
   {%- else -%}
     <h2 id="components">Components</h2>
-    {%- for component_hash in section -%}
+    {%- assign sorted_components = section | sort -%}
+    {%- for component_hash in sorted_components -%}
     {%- assign component = component_hash[1] -%}
-      <h3 id="{{ component.name | slugify }}">{{ component.name }}</h3>
+      <h3 id="{{ component.name | slugify }}" class="border-bottom-2px padding-bottom-05 text-normal">{{ component.name }}</h3>
       {% include settings-table.html
         settings=component.contents
       %}

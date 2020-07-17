@@ -51,19 +51,19 @@ contents:
     section: true
     usage: Sets the `max-width` value of the `.grid-container` utility.
     var: $theme-grid-container-max-width
-    default: "'desktop'"
+    default: '"desktop"'
     kind: units
 
   - name: Site max width
     section: true
     usage: Used to set a consistent `max-width` across components.
     var: $theme-site-max-width
-    default: "'desktop'"
+    default: '"desktop"'
     kind: units
   - name: Site outer margins breakpoint
     usage: At what breakpoint should the site's outer margin change.
     var: $theme-site-margins-breakpoint
-    default: "'desktop'"
+    default: '"desktop"'
     kind: units
   - name: Site outer margins
     usage: Site outer margin at non-mobile width (breakpoint defined by `$theme-site-margins-breakpoint`).

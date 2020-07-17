@@ -3,12 +3,12 @@ contents:
   - name: Font family
     usage:
     var: $theme-button-font-family
-    default: "'ui'"
+    default: '"ui"'
     kind: family
   - name: Border radius
     usage:
     var: $theme-button-border-radius
-    default: "'md'"
+    default: '"md"'
     kind: units
   - name: Small width
     usage: Size of the header search button.

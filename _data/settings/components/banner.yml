@@ -8,7 +8,7 @@ contents:
   - name: Font family
     usage: The font family of the banner
     var: $theme-banner-font-family
-    default: "'ui'"
+    default: '"ui"'
     kind: family
   - name: Link color
     usage: The color of banner link. Add the link color and the system will generate the hover state. `Default` uses the default link settings calculated from your background color.
@@ -18,5 +18,5 @@ contents:
   - name: Maximum width
     usage: Maximum width of the banner content
     var: $theme-banner-max-width
-    default: "'desktop'"
+    default: '"desktop"'
     kind: units

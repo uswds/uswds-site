@@ -8,7 +8,7 @@ contents:
   - name: Max width
     usage:
     var: $theme-input-max-width
-    default: "'mobile-lg'"
+    default: '"mobile-lg"'
     kind: units
   - name: Border width when selected
     usage: Border width when selected.

@@ -3,5 +3,5 @@ contents:
   - name: Hero image
     usage: Background image for the hero. Use a path relative to the final project CSS.
     var: $theme-hero-image
-    default: "'#{$theme-image-path}/hero.png'"
+    default: '"#{$theme-image-path}/hero.png"'
     kind: path

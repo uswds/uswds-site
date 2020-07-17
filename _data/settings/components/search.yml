@@ -3,7 +3,7 @@ contents:
   - name: Font family
     usage:
     var: $theme-search-font-family
-    default: "'ui'"
+    default: '"ui"'
     kind: family
   - name: Min-width
     usage: Min-width of the search input.

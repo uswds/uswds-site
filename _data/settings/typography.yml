@@ -34,7 +34,7 @@ contents:
   - name: Font path
     usage: Path to the font files, relative to the compiled css.
     var: $theme-font-path
-    default: "'../fonts'"
+    default: '"../fonts"'
     kind: path
 
   - name: Custom typeface tokens
@@ -49,7 +49,7 @@ contents:
         kind: string
       - key: token.display-name
         usage: Display name of the typeface.
-        value: "'Example Serif Display Name'"
+        value: '"Example Serif Display Name"'
         kind: string
       - key: token.cap-height
         usage: Height of a 500px `N` character in Sketch.
@@ -62,7 +62,7 @@ contents:
         kind: string
       - key: token.display-name
         usage: Display name of the typeface.
-        value: "'Example Sans Display Name'"
+        value: '"Example Sans Display Name"'
         kind: string
       - key: token.cap-height
         usage: Height of a 500px `N` character in Sketch.
@@ -91,19 +91,19 @@ contents:
     subsection: font family token
     usage: Project monospaced font. <br/>Set to `false` if unused.
     var: $theme-font-type-mono
-    default: "'roboto-mono'"
+    default: '"roboto-mono"'
     kind: family
   - name: sans
     subsection: font-family token
     usage: Project sans-serif font. <br/>Set to `false` if unused.
     var: $theme-font-type-sans
-    default: "'source-sans-pro'"
+    default: '"source-sans-pro"'
     kind: family
   - name: serif
     subsection: font-family token
     usage: Project serif font. <br/>Set to `false` if unused.
     var: $theme-font-type-serif
-    default: "'merriweather'"
+    default: '"merriweather"'
     kind: family
 
   - name: ui
@@ -111,31 +111,31 @@ contents:
     subsection: font-family token
     usage: Assign font family used for interfaces and buttons from type-based `family` tokens.
     var: $theme-font-role-ui
-    default: "'sans'"
+    default: '"sans"'
     kind: family
   - name: heading
     subsection: font-family token
     usage: Assign font family used for headings from type-based `family` tokens.
     var: $theme-font-role-heading
-    default: "'serif'"
+    default: '"serif"'
     kind: family
   - name: body
     subsection: font-family token
     usage: Assign font family used for body text from type-based `family` tokens.
     var: $theme-font-role-body
-    default: "'sans'"
+    default: '"sans"'
     kind: family
   - name: code
     subsection: font-family token
     usage: Assign font family used for code from type-based `family` tokens.
     var: $theme-font-role-code
-    default: "'mono'"
+    default: '"mono"'
     kind: family
   - name: alt
     subsection: font-family token
     usage: Assign font family used for alternative type sections from type-based `family` tokens.
     var: $theme-font-role-alt
-    default: "'serif'"
+    default: '"serif"'
     kind: family
 
   - name: 3xs
@@ -289,7 +289,7 @@ contents:
     map:
       - key: dir
         usage: Path relative to `$theme-font-path`
-        value: "'custom/example-serif'"
+        value: '"custom/example-serif"'
         kind: path
       - key: roman.100
         usage: |
@@ -307,13 +307,13 @@ contents:
         usage: |
           The Roman 300 font file, filetype excluded.
           <br/>Set to `false` if unused.
-        value: "'ExampleSerif-Light'"
+        value: '"ExampleSerif-Light"'
         kind: file name
       - key: roman.400
         usage: |
           The Roman 400 font file, filetype excluded.
           <br/>Set to `false` if unused.
-        value: "'ExampleSerif-Normal'"
+        value: '"ExampleSerif-Normal"'
         kind: file name
       - key: roman.500
         usage: |
@@ -331,7 +331,7 @@ contents:
         usage: |
           The Roman 700 font file, filetype excluded.
           <br/>Set to `false` if unused.
-        value: "'ExampleSerif-Bold'"
+        value: '"ExampleSerif-Bold"'
         kind: file name
       - key: roman.800
         usage: |
@@ -361,13 +361,13 @@ contents:
         usage: |
           The Italic 300 font file, filetype excluded.
           <br/>Set to `false` if unused.
-        value: "'ExampleSerif-LightItalic'"
+        value: '"ExampleSerif-LightItalic"'
         kind: file name
       - key: italic.400
         usage: |
           The Italic 400 font file, filetype excluded.
           <br/>Set to `false` if unused.
-        value: "'ExampleSerif-Italic'"
+        value: '"ExampleSerif-Italic"'
         kind: file name
       - key: italic.500
         usage: |
@@ -385,7 +385,7 @@ contents:
         usage: |
           The Italic 700 font file, filetype excluded.
           <br/>Set to `false` if unused.
-        value: "'ExampleSerif-BoldItalic'"
+        value: '"ExampleSerif-BoldItalic"'
         kind: file name
       - key: italic.800
         usage: |
@@ -434,12 +434,12 @@ contents:
     section: true
     usage: Use theme tokens when possible.
     var: $theme-body-font-family
-    default: "'body'"
+    default: '"body"'
     kind: family
   - name: Body font size
     usage: Use theme tokens when possible.
     var: $theme-body-font-size
-    default: "'sm'"
+    default: '"sm"'
     kind: size
   - name: Body line height
     usage:
@@ -456,32 +456,32 @@ contents:
     section: true
     usage:
     var: $theme-h1-font-size
-    default: "'2xl'"
+    default: '"2xl"'
     kind: size
   - name: h2 font size
     usage:
     var: $theme-h2-font-size
-    default: "'xl'"
+    default: '"xl"'
     kind: size
   - name: h3 font size
     usage:
     var: $theme-h3-font-size
-    default: "'lg'"
+    default: '"lg"'
     kind: size
   - name: h4 font size
     usage:
     var: $theme-h4-font-size
-    default: "'sm'"
+    default: '"sm"'
     kind: size
   - name: h5 font size
     usage:
     var: $theme-h5-font-size
-    default: "'xs'"
+    default: '"xs"'
     kind: size
   - name: h6 font size
     usage:
     var: $theme-h6-font-size
-    default: "'3xs'"
+    default: '"3xs"'
     kind: size
   - name: Heading line height
     usage:
@@ -491,12 +491,12 @@ contents:
   - name: Small font size
     usage: Used for the smallest text on a site.
     var: $theme-small-font-size
-    default: "'2xs'"
+    default: '"2xs"'
     kind: size
   - name: Display font size
     usage: Used for the largest text on a site.
     var: $theme-display-font-size
-    default: "'3xl'"
+    default: '"3xl"'
     kind: size
 
   - name: Narrow measure
@@ -518,19 +518,19 @@ contents:
   - name: Prose font family
     usage: Font family used for body text in `usa-prose`. Use role-based `family` tokens.
     var: $theme-prose-font-family
-    default: "'body'"
+    default: '"body"'
     kind: family
 
   - name: Lead (intro) font family
     section: true
     usage: _This name may change._ Use role-based `family` tokens.
     var: $theme-lead-font-family
-    default: "'heading'"
+    default: '"heading"'
     kind: family
   - name: Lead (intro) font size
     usage: _This name may change._ Use role-based `size` tokens.
     var: $theme-lead-font-size
-    default: "'lg'"
+    default: '"lg"'
     kind: size
   - name: Lead (intro) line height
     usage: _This name may change._

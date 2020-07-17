@@ -3,5 +3,5 @@ contents:
   - name: Font family
     usage:
     var: $theme-form-font-family
-    default: "'ui'"
+    default: '"ui"'
     kind: family

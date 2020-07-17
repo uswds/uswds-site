@@ -8,10 +8,10 @@ contents:
   - name: Border color
     usage:
     var: $theme-accordion-border-color
-    default: "'base-lightest'"
+    default: '"base-lightest"'
     kind: color
   - name: Font family
     usage:
     var: $theme-accordion-font-family
-    default: "'body'"
+    default: '"body"'
     kind: family

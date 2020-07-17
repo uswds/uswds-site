@@ -3,5 +3,5 @@ contents:
   - name: Font family
     usage:
     var: $theme-footer-font-family
-    default: "'body'"
+    default: '"body"'
     kind: family

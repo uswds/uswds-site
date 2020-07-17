@@ -4,7 +4,7 @@ contents:
   - name: Image path
     usage: Use a path relative to the location of the final compiled CSS.
     var: $theme-image-path
-    default: "'../img'"
+    default: '"../img"'
     kind: path
 
   - name: Show compile warnings
@@ -27,7 +27,7 @@ contents:
     map:
       - key: grid.namespace
         usage: The grid class prefix.
-        value: "'grid-'"
+        value: '"grid-"'
         kind: string
       - key: grid.output
         usage: Output grid prefix.
@@ -35,7 +35,7 @@ contents:
         kind: boolean
       - key: utility.namespace
         usage: The utility class prefix.
-        value: "'u-'"
+        value: '"u-"'
         kind: string
       - key: utility.output
         usage: Output utility prefix.
@@ -60,7 +60,7 @@ contents:
     subsection: color
     usage:
     var: $theme-focus-color
-    default: "'blue-40v'"
+    default: '"blue-40v"'
     kind: color
 
   - name: Focus

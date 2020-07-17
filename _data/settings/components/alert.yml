@@ -8,7 +8,7 @@ contents:
   - name: Font family
     usage:
     var: $theme-alert-font-family
-    default: "'ui'"
+    default: '"ui"'
     kind: family
   - name: Icon size
     usage: Size of the alert icon.

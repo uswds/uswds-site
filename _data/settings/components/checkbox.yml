@@ -3,5 +3,5 @@ contents:
   - name: Border radius
     usage:
     var: $theme-checkbox-border-radius
-    default: "'sm'"
+    default: '"sm"'
     kind: units

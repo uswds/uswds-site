@@ -3,7 +3,7 @@ contents:
   - name: Font family
     usage:
     var: $theme-navigation-font-family
-    default: "'ui'"
+    default: '"ui"'
     kind: family
   - name: Megamenu columns
     usage: Number of columns in the megamenu.

@@ -21,39 +21,39 @@ contents:
     default:
     kind: map
     map:
-      - key: "'card'"
+      - key: '"card"'
         usage:
         value: "false"
         kind: boolean
-      - key: "'card-lg'"
+      - key: '"card-lg"'
         usage:
         value: "false"
         kind: boolean
-      - key: "'mobile'"
+      - key: '"mobile"'
         usage:
         value: "false"
         kind: boolean
-      - key: "'mobile-lg'"
+      - key: '"mobile-lg"'
         usage:
         value: "true"
         kind: boolean
-      - key: "'tablet'"
+      - key: '"tablet"'
         usage:
         value: "true"
         kind: boolean
-      - key: "'tablet-lg'"
+      - key: '"tablet-lg"'
         usage:
         value: "false"
         kind: boolean
-      - key: "'desktop'"
+      - key: '"desktop"'
         usage:
         value: "true"
         kind: boolean
-      - key: "'desktop-lg'"
+      - key: '"desktop-lg"'
         usage:
         value: "false"
         kind: boolean
-      - key: "'widescreen'"
+      - key: '"widescreen"'
         usage:
         value: "false"
         kind: boolean
@@ -73,27 +73,27 @@ contents:
     default:
     kind: map
     map:
-      - key: "'output'"
+      - key: '"output"'
         usage: Output the utility.
         value: —
         kind: boolean
-      - key: "'responsive'"
+      - key: '"responsive"'
         usage: Output the responsive variants.
         value: —
         kind: boolean
-      - key: "'active'"
+      - key: '"active"'
         usage: Output the `active:` state variant.
         value: —
         kind: boolean
-      - key: "'focus'"
+      - key: '"focus"'
         usage: Output the `focus:` state variant.
         value: —
         kind: boolean
-      - key: "'hover'"
+      - key: '"hover"'
         usage: Output the `hover:` state variant.
         value: —
         kind: boolean
-      - key: "'visited'"
+      - key: '"visited"'
         usage: Output the `visited:` state variant.
         value: —
         kind: boolean
@@ -101,13 +101,13 @@ contents:
     usage: |
       Utilities output with the values set in the palettes list.
     var: $[utility]-palettes
-    default: "'palette-[utility]-default'"
+    default: '"palette-[utility]-default"'
     kind: palettes
   - name: "Utility manual values"
     usage: |
       Utilities output with the tokens and values set in the manual values map.
     var: $[utility]-palettes
-    default: "'palette-[utility]-manual-values'"
+    default: '"palette-[utility]-manual-values"'
     kind: map
     map:
       - key: "[token name]"

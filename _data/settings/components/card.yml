@@ -3,11 +3,11 @@ contents:
   - name: Border color
     usage: Stroke color of card.
     var: $theme-card-border-color
-    default: "'base-lighter'"
+    default: '"base-lighter"'
     kind: color
   - name: Border radius
     var: $theme-card-border-radius
-    default: "'lg'"
+    default: '"lg"'
     kind: units
   - name: Border width
     usage: Stroke thickness of card.
@@ -22,17 +22,17 @@ contents:
   - name: Flag minimum width
     usage: Width at which flag cards change to horizontal layout.
     var: $theme-card-flag-min-width
-    default: "'tablet'"
+    default: '"tablet"'
     kind: units
   - name: Flag image width
     usage: Fixed image width in the card flag variant.
     var: $theme-card-flag-image-width
-    default: "'card-lg'"
+    default: '"card-lg"'
     kind: units
   - name: Font family
     usage: Font family for card body.
     var: $theme-card-font-family
-    default: "'body'"
+    default: '"body"'
     kind: family
   - name: Header typeset
     usage: Family, size, and line height of the heading.

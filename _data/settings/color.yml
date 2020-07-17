@@ -1,0 +1,464 @@
+name: Color settings
+usage: Color
+contents:
+  - name: Test color tokens
+    usage: |
+      Test system color tokens against luminosity bounds. _This is intended to be an internal setting, and may result in false positives._
+    var: $test-system-color-tokens
+    default: "false"
+    kind: boolean
+  - name: Base color family
+    usage: Color family of site text.
+    var: $theme-color-base-family
+    default: "'gray-cool'"
+    kind: color
+  - name: base-lightest
+    subsection: theme color token
+    usage: Use grades from 0-10.
+    var: $theme-color-base-lightest
+    default: "'gray-5'"
+    kind: color
+  - name: base-lighter
+    subsection: theme color token
+    usage: Use grades from 10-20.
+    var: $theme-color-base-lighter
+    default: "'gray-cool-10'"
+    kind: color
+  - name: base-light
+    subsection: theme color token
+    usage: Use grades from 30-40.
+    var: $theme-color-base-light
+    default: "'gray-cool-30'"
+    kind: color
+  - name: base
+    subsection: theme color token
+    usage: Use grades from 40-50.
+    var: $theme-color-base
+    default: "'gray-cool-50'"
+    kind: color
+  - name: base-dark
+    subsection: theme color token
+    usage: Use grades from 50-70.
+    var: $theme-color-base-dark
+    default: "'gray-cool-60'"
+    kind: color
+  - name: base-darker
+    subsection: theme color token
+    usage: Use grades from 60-90.
+    var: $theme-color-base-darker
+    default: "'gray-cool-70'"
+    kind: color
+  - name: base-darkest
+    subsection: theme color token
+    usage: Use grades from 70-90.
+    var: $theme-color-base-darkest
+    default: "'gray-90'"
+    kind: color
+  - name: ink
+    subsection: theme color token
+    usage: Recommend a clone of `base-darkest`.
+    var: $theme-color-base-ink
+    default: "'gray-90'"
+    kind: color
+
+  - name: Primary color family
+    section: true
+    usage: Color family of ~60% of the non-base color.
+    var: $theme-color-primary-family
+    default: "'blue'"
+    kind: color
+  - name: primary-lightest
+    subsection: theme color token
+    usage: Use grades 0-10.
+    var: $theme-color-primary-lightest
+    default: "false"
+    kind: color
+  - name: primary-lighter
+    subsection: theme color token
+    usage: Use grades 10-20.
+    var: $theme-color-primary-lighter
+    default: "'blue-10'"
+    kind: color
+  - name: primary-light
+    subsection: theme color token
+    usage: Use grades 30-40.
+    var: $theme-color-primary-light
+    default: "'blue-30'"
+    kind: color
+  - name: primary
+    subsection: theme color token
+    usage: Use grades 40-60.
+    var: $theme-color-primary
+    default: "'blue-60v'"
+    kind: color
+  - name: primary-vivid
+    subsection: theme color token
+    usage: Use vivid grades 30-60.
+    var: $theme-color-primary
+    default: "'blue-warm-60v'"
+    kind: color
+  - name: primary-dark
+    subsection: theme color token
+    usage: Use grades 50-70.
+    var: $theme-color-primary-dark
+    default: "'blue-warm-70v'"
+    kind: color
+  - name: primary-darker
+    subsection: theme color token
+    usage: Use grades 60-90.
+    var: $theme-color-primary-darker
+    default: "'blue-warm-80v'"
+    kind: color
+  - name: primary-darkest
+    subsection: theme color token
+    usage: Use grades 70-90.
+    var: $theme-color-primary-darkest
+    default: "false"
+    kind: color
+
+  - name: Secondary color family
+    section: true
+    usage: Color family of ~30% of the non-base color.
+    var: $theme-color-secondary-family
+    default: "'red'"
+    kind: color
+  - name: secondary-lightest
+    subsection: theme color token
+    usage: Use grades 0-10.
+    var: $theme-color-secondary-lightest
+    default: "false"
+    kind: color
+  - name: secondary-lighter
+    subsection: theme color token
+    usage: Use grades 10-20.
+    var: $theme-color-secondary-lighter
+    default: "'red-cool-10'"
+    kind: color
+  - name: secondary-light
+    subsection: theme color token
+    usage: Use grades 30-40.
+    var: $theme-color-secondary-light
+    default: "'red-30'"
+    kind: color
+  - name: secondary
+    subsection: theme color token
+    usage: Use grades 40-60.
+    var: $theme-color-secondary
+    default: "'red-50'"
+    kind: color
+  - name: secondary-vivid
+    subsection: theme color token
+    usage: Use vivid grades 30-60.
+    var: $theme-color-secondary
+    default: "'red-cool-50v'"
+    kind: color
+  - name: secondary-dark
+    subsection: theme color token
+    usage: Use grades 50-70.
+    var: $theme-color-secondary-dark
+    default: "'red-60v'"
+    kind: color
+  - name: secondary-darker
+    subsection: theme color token
+    usage: Use grades 60-90.
+    var: $theme-color-secondary-darker
+    default: "'red-70v'"
+    kind: color
+  - name: secondary-darkest
+    subsection: theme color token
+    usage: Use grades 70-90.
+    var: $theme-color-secondary-darkest
+    default: "false"
+    kind: color
+
+  - name: Accent warm color family
+    section: true
+    usage: Color family of occasional warm accents.
+    var: $theme-color-accent-warm-family
+    default: "'orange'"
+    kind: color
+  - name: accent-warm-lightest
+    subsection: theme color token
+    usage: Use grades 0-10.
+    var: $theme-color-accent-warm-lightest
+    default: "false"
+    kind: color
+  - name: accent-warm-lighter
+    subsection: theme color token
+    usage: Use grades 10-20.
+    var: $theme-color-accent-warm-lighter
+    default: "'orange-10'"
+    kind: color
+  - name: accent-warm-light
+    subsection: theme color token
+    usage: Use grades 20-40.
+    var: $theme-color-accent-warm-light
+    default: "'orange-20v'"
+    kind: color
+  - name: accent-warm
+    subsection: theme color token
+    usage: Use grades 30-60.
+    var: $theme-color-accent-warm
+    default: "'orange-30v'"
+    kind: color
+  - name: accent-warm-dark
+    subsection: theme color token
+    usage: Use grades 50-70.
+    var: $theme-color-accent-warm-dark
+    default: "'orange-50v'"
+    kind: color
+  - name: accent-warm-darker
+    subsection: theme color token
+    usage: Use grades 60-90.
+    var: $theme-color-accent-warm-darker
+    default: "'orange-60v'"
+    kind: color
+  - name: accent-warm-lightest
+    subsection: theme color token
+    usage: Use grades 70-90.
+    var: $theme-color-accent-warm-darkest
+    default: "false"
+    kind: color
+
+  - name: Accent cool color family
+    section: true
+    usage: Color family of occasional cool accents.
+    var: $theme-color-accent-cool-family
+    default: "'blue-cool'"
+    kind: color
+  - name: accent-cool-lightest
+    subsection: theme color token
+    usage: Use grades 0-20.
+    var: $theme-color-accent-cool-lightest
+    default: "false"
+    kind: color
+  - name: accent-cool-lighter
+    subsection: theme color token
+    usage: Use grades 10-30.
+    var: $theme-color-accent-cool-lighter
+    default: "'blue-cool-5v'"
+    kind: color
+  - name: accent-cool-light
+    subsection: theme color token
+    usage: Use grades 30-40.
+    var: $theme-color-accent-cool-light
+    default: "'blue-cool-20v'"
+    kind: color
+  - name: accent-cool
+    subsection: theme color token
+    var: $theme-color-accent-cool
+    default: "'cyan-30v'"
+    kind: color
+  - name: accent-cool-dark
+    subsection: theme color token
+    usage: Use grades 50-60.
+    var: $theme-color-accent-cool-dark
+    default: "'blue-cool-40v'"
+    kind: color
+  - name: accent-cool-darker
+    subsection: theme color token
+    usage: Use grades 60-80.
+    var: $theme-color-accent-cool-darker
+    default: "'blue-cool-60v'"
+    kind: color
+  - name: accent-cool-darkest
+    subsection: theme color token
+    usage: Use grades 70-100.
+    var: $theme-color-accent-cool-darkest
+    default: "false"
+    kind: color
+
+  - name: Error color family
+    section: true
+    usage: Color family of error messaging.
+    var: $theme-color-error-family
+    default: "'red-warm'"
+    kind: color
+  - name: error-lighter
+    subsection: state color token
+    usage: Use grades 10-30.
+    var: $theme-color-error-lighter
+    default: "'red-warm-10'"
+    kind: color
+  - name: error-light
+    subsection: state color token
+    usage: Use grades 30-40.
+    var: $theme-color-error-light
+    default: "'red-warm-30v'"
+    kind: color
+  - name: error
+    subsection: state color token
+    usage: Use grades 50-60.
+    var: $theme-color-error
+    default: "'red-warm-50v'"
+    kind: color
+  - name: error-dark
+    subsection: state color token
+    usage: Use grades 60-70.
+    var: $theme-color-error-dark
+    default: "'red-60v'"
+    kind: color
+  - name: error-darker
+    subsection: state color token
+    usage: Use grades 70-80.
+    var: $theme-color-error-darker
+    default: "'red-70'"
+    kind: color
+
+  - name: Warning color family
+    section: true
+    usage: Color family of warning messaging.
+    var: $theme-color-warning-family
+    default: "'gold'"
+    kind: color
+  - name: warning-lighter
+    subsection: state color token
+    usage: Use grades 0-30.
+    var: $theme-color-warning-lighter
+    default: "'yellow-5'"
+    kind: color
+  - name: warning-light
+    subsection: state color token
+    usage: Use grades 10-40.
+    var: $theme-color-warning-light
+    default: "'yellow-10v'"
+    kind: color
+  - name: warning
+    subsection: state color token
+    usage: Use grades 50-60.
+    var: $theme-color-warning
+    default: "'gold-20v'"
+    kind: color
+  - name: warning-dark
+    subsection: state color token
+    usage: Use grades 60-70.
+    var: $theme-color-warning-dark
+    default: "'gold-30v'"
+    kind: color
+  - name: warning-darker
+    subsection: state color token
+    usage: Use grades 70-80.
+    var: $theme-color-warning-darker
+    default: "'gold-50v'"
+    kind: color
+
+  - name: Success color family
+    section: true
+    usage: Color family of success messaging.
+    var: $theme-color-success-family
+    default: "'green-cool'"
+    kind: color
+  - name: success-lighter
+    subsection: state color token
+    usage: Use grades 0-30.
+    var: $theme-color-success-lighter
+    default: "'green-cool-5'"
+    kind: color
+  - name: success-light
+    subsection: state color token
+    usage: Use grades 10-40.
+    var: $theme-color-success-light
+    default: "'green-cool-20v'"
+    kind: color
+  - name: success
+    subsection: state color token
+    usage: Use grades 50-60.
+    var: $theme-color-success
+    default: "'green-cool-40v'"
+    kind: color
+  - name: success-dark
+    subsection: state color token
+    usage: Use grades 60-70.
+    var: $theme-color-success-dark
+    default: "'green-cool-50'"
+    kind: color
+  - name: success-darker
+    subsection: state color token
+    usage: Use grades 70-80.
+    var: $theme-color-success-darker
+    default: "'green-cool-60'"
+    kind: color
+
+  - name: Info color family
+    section: true
+    usage: Color family of info messaging.
+    var: $theme-color-info-family
+    default: "'cyan'"
+    kind: color
+  - name: info-lighter
+    subsection: state color token
+    usage: Use grades 0-30.
+    var: $theme-color-info-lighter
+    default: "'cyan-5'"
+    kind: color
+  - name: info-light
+    subsection: state color token
+    usage: Use grades 10-40.
+    var: $theme-color-info-light
+    default: "'cyan-20'"
+    kind: color
+  - name: info
+    subsection: state color token
+    usage: Use grades 50-60.
+    var: $theme-color-info
+    default: "'cyan-30v'"
+    kind: color
+  - name: info-dark
+    subsection: state color token
+    usage: Use grades 60-70.
+    var: $theme-color-info-dark
+    default: "'cyan-40v'"
+    kind: color
+  - name: info-darker
+    subsection: state color token
+    usage: Use grades 70-80.
+    var: $theme-color-info-darker
+    default: "'blue-cool-60'"
+    kind: color
+
+  - name: Disabled color family
+    section: true
+    usage: Color family of disabled actions.
+    var: $theme-color-disabled-family
+    default: "'gray'"
+    kind: color
+  - name: info-light
+    subsection: state color token
+    usage: Use grade 10.
+    var: $theme-color-disabled-light
+    default: "'gray-10'"
+    kind: color
+  - name: info
+    subsection: state color token
+    usage: Use grade 20.
+    var: $theme-color-disabled
+    default: "'gray-20'"
+    kind: color
+  - name: info-dark
+    subsection: state color token
+    usage: Use grade 30.
+    var: $theme-color-disabled-dark
+    default: "'gray-30'"
+    kind: color
+
+  - name: Link color
+    section: true
+    usage: Color for text links.
+    var: $theme-link-color
+    default: "'primary'"
+    kind: color
+  - name: Visited link color
+    usage: Color for `:visted` text links.
+    var: $theme-link-visited-color
+    default: "'violet-70v'"
+    kind: color
+  - name: Hover link color
+    usage: Color for `:hover` text links.
+    var: $theme-link-hover-color
+    default: "'primary-dark'"
+    kind: color
+  - name: Active link color
+    usage: Color for `:active` text links.
+    var: $theme-link-active-color
+    default: "'primary-darker'"
+    kind: color

@@ -1,0 +1,51 @@
+name: Breadcrumb
+contents:
+  - name: Breadcrumb
+    section: true
+    subsection: Font family
+    usage: The family of the breadcrumb text.
+    var: $theme-breadcrumb-font-family
+    default: "sm"
+    kind: family
+  - name: Breadcrumb
+    subsection: Font size
+    usage: The size of the breadcrumb text.
+    var: $theme-breadcrumb-font-size
+    default: "sm"
+    kind: units
+  - name: Breadcrumb
+    subsection: Breadcrumb gap
+    usage: The space between indicator icons and text.
+    var: $theme-breadcrumb-gap
+    default: 1.5
+    kind: units
+  - name: Breadcrumb
+    subsection: Link colors
+    usage: The color of breadcrumb links in the form `[link], [hover], [active]`
+    var: $theme-breadcrumb-link-colors
+    default: '"primary", "primary-dark", "primary-dark"'
+    kind: color
+  - name: Breadcrumb
+    subsection: Breadcrumb minimum width
+    usage: The width at which the breadcrumb displays the full breadcrumb list.
+    var: $theme-breadcrumb-min-width
+    default: "mobile-lg"
+    kind: units
+  - name: Breadcrumb
+    subsection: Spacing bottom
+    usage: Spacing below the breadcrumb.
+    var: $theme-breadcrumb-spacing-bottom
+    default: 2
+    kind: units
+  - name: Breadcrumb
+    subsection: Spacing top
+    usage: Spacing above the breadcrumb.
+    var: $theme-breadcrumb-spacing-top
+    default: 2
+    kind: units
+  - name: Breadcrumb
+    subsection: Breadcrumb wrapping
+    usage: Controls whether the breadcrumb wraps or truncates.
+    var: $theme-breadcrumb-wrapping
+    default: "false"
+    kind: units

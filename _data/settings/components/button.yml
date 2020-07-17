@@ -1,0 +1,27 @@
+name: Button
+contents:
+  - name: Button
+    section: true
+    subsection: Font family
+    usage:
+    var: $theme-button-font-family
+    default: "'ui'"
+    kind: family
+  - name: Button
+    subsection: Border radius
+    usage:
+    var: $theme-button-border-radius
+    default: "'md'"
+    kind: units
+  - name: Button
+    subsection: Small width
+    usage: Size of the header search button.
+    var: $theme-button-small-width
+    default: 6
+    kind: units
+  - name: Button
+    subsection: Stroke width
+    usage: Stroke width of `outline` button variants.
+    var: $theme-button-stroke-width
+    default: 2px
+    kind: units

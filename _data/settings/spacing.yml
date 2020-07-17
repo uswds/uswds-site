@@ -1,0 +1,77 @@
+name: Spacing settings
+usage: Spacing
+contents:
+  - name: sm
+    subsection: border-radius token
+    usage: Sets `'sm'` `border-radius` theme token.
+    var: $theme-border-radius-sm
+    default: 2px
+    kind: units
+  - name: md
+    subsection: border-radius token
+    usage: Sets `'md'` `border-radius` theme token.
+    var: $theme-border-radius-md
+    default: 0.5
+    kind: units
+  - name: lg
+    subsection: border-radius token
+    usage: Sets `'lg'` `border-radius` theme token.
+    var: $theme-border-radius-lg
+    default: 1
+    kind: units
+
+  - name: Small grid gap
+    section: true
+    usage: Sets `'grid-gap-sm'` output.
+    var: $theme-column-gap-sm
+    default: 2px
+    kind: units
+  - name: Medium grid gap
+    usage: Sets `'grid-gap-md'` output.
+    var: $theme-column-gap-md
+    default: 2
+    kind: units
+  - name: Large grid gap
+    usage: Sets `'grid-gap-lg'` output.
+    var: $theme-column-gap-md
+    default: 3
+    kind: units
+  - name: Mobile grid gap
+    usage: Sets value of `'grid-gap'` at `mobile` width.
+    var: $theme-column-gap-mobile
+    default: 2
+    kind: units
+  - name: Desktop grid gap
+    usage: Sets value of `'grid-gap'` at `desktop` width.
+    var: $theme-column-gap-desktop
+    default: 4
+    kind: units
+
+  - name: Grid container max width
+    section: true
+    usage: Sets the `max-width` value of the `.grid-container` utility.
+    var: $theme-grid-container-max-width
+    default: "'desktop'"
+    kind: units
+
+  - name: Site max width
+    section: true
+    usage: Used to set a consistent `max-width` across components.
+    var: $theme-site-max-width
+    default: "'desktop'"
+    kind: units
+  - name: Site outer margins breakpoint
+    usage: At what breakpoint should the site's outer margin change.
+    var: $theme-site-margins-breakpoint
+    default: "'desktop'"
+    kind: units
+  - name: Site outer margins
+    usage: Site outer margin at non-mobile width (breakpoint defined by `$theme-site-margins-breakpoint`).
+    var: $theme-site-margins-width
+    default: 4
+    kind: units
+  - name: Site mobile outer margins
+    usage: Site outer margin at mobile width.
+    var: $theme-site-margins-mobile-width
+    default: 2
+    kind: units

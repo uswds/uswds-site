@@ -1,0 +1,15 @@
+name: Banner
+contents:
+  - name: Banner
+    section: true
+    subsection: Font family
+    usage:
+    var: $theme-banner-font-family
+    default: "'ui'"
+    kind: family
+  - name: Banner
+    subsection: Max width
+    usage: Maximum width of the banner.
+    var: $theme-banner-max-width
+    default: "'desktop'"
+    kind: units

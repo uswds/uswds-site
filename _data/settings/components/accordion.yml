@@ -1,0 +1,17 @@
+name: Accordion
+contents:
+  - name: Border width
+    usage:
+    var: $theme-accordion-border-width
+    default: 0.5
+    kind: units
+  - name: Border color
+    usage:
+    var: $theme-accordion-border-color
+    default: "'base-lightest'"
+    kind: color
+  - name: Font family
+    usage:
+    var: $theme-accordion-font-family
+    default: "'body'"
+    kind: family

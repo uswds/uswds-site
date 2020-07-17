@@ -1,0 +1,68 @@
+name: Card
+contents:
+  - name: Card
+    section: true
+    subsection: Border Color
+    usage: Stroke color of card.
+    var: $theme-card-border-color
+    default: "'base-lighter'"
+    kind: color
+  - name: Card
+    subsection: Border Radius
+    var: $theme-card-border-radius
+    default: "'lg'"
+    kind: units
+  - name: Card
+    subsection: Border Width
+    usage: Stroke thickness of card.
+    var: $theme-card-border-width
+    default: 2px
+    kind: units
+  - name: Card
+    subsection: Gap
+    usage: Gap between cards in a card group.
+    var: $theme-card-gap
+    default: 2
+    kind: units
+  - name: Card
+    subsection: Flag minimum width
+    usage: Width at which flag cards change to horizontal layout.
+    var: $theme-card-flag-min-width
+    default: "'tablet'"
+    kind: units
+  - name: Card
+    subsection: Flag image width
+    usage: Fixed image width in the card flag variant.
+    var: $theme-card-flag-image-width
+    default: "'card-lg'"
+    kind: units
+  - name: Card
+    subsection: Card font family
+    usage: Font family for card body.
+    var: $theme-card-font-family
+    default: "'body'"
+    kind: family
+  - name: Card
+    subsection: Header typeset
+    usage: Family, size, and line height of the heading.
+    var: $theme-card-header-typeset
+    default: "'heading', 'lg', 2"
+    kind: family
+  - name: Card
+    subsection: Card margin bottom
+    usage: Bottom margin for card.
+    var: $theme-card-margin-bottom
+    default: 4
+    kind: units
+  - name: Card
+    subsection: Card padding perimeter
+    usage: Padding between card elements and card border.
+    var: $theme-card-padding-perimeter
+    default: 3
+    kind: units
+  - name: Card
+    subsection: Card padding y
+    usage: Vertical padding between card elements.
+    var: $theme-card-padding-y
+    default: 2
+    kind: units

@@ -69,7 +69,7 @@ USWDS uses the [fractal design system builder](http://fractal.build/) to organiz
 
 ### Deployment and previews
 
-This site is deployed on [Federalist](https://federalist.18f.gov/), which automatically builds the public site whenever commits are pushed to `master`. Federalist also builds public previews for each branch pushed to GitHub.
+This site is deployed on [Federalist](https://federalist.18f.gov/), which automatically builds the public site whenever commits are pushed to `main`. Federalist also builds public previews for each branch pushed to GitHub.
 
 ### Updating the USWDS version
 
@@ -93,7 +93,7 @@ npm install --save "uswds/uswds#v1.3.1"
 This version number or commit hash is automatically parsed when the site
 is built and used for display on the site (see `_plugins/uswds_version.rb`
 for details). Therefore, be sure to use an actual version tag on all
-`master` branch commits--otherwise a commit hash will show up as the
+`main` branch commits--otherwise a commit hash will show up as the
 version on the production site, which would be confusing.
 
 ### Adding content to the "Updates" section

@@ -41,7 +41,7 @@ lead: A time picker helps users select a time of day.
 | --- | --- | ---
 data-min-time | .usa-time-picker | The start time that would be used for the time picker combo-box options. Given in hh:mm 24 hour format. The default is 00:00.
 data-max-time | .usa-time-picker | The end time that would be used for the time picker combo-box options. Given in hh:mm 24 hour format. The default is 23:59.
-data-step | .usa-time-picker | The number of minutes between options. The minimum is 1 minute.
+data-step | .usa-time-picker | The number of minutes between options. The minimum is 1 minute. The default is 30 minutes.
 
 </div>
     <h4 class="usa-heading">Package information</h4>

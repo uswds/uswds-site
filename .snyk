@@ -96,210 +96,210 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No update available
-        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
     - gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
+    - gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
   SNYK-JS-NODESASS-535498:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No update available
-        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
     - gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
+    - gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
   SNYK-JS-NODESASS-535502:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No update available
-        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
     - gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
+    - gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
   SNYK-JS-NODESASS-540956:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No update available
-        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
     - gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
+    - gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
   SNYK-JS-NODESASS-540958:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No update available
-        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
     - gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
+    - gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
   SNYK-JS-NODESASS-540964:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No update available
-        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
     - gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
+    - gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
   SNYK-JS-NODESASS-540974:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No update available
-        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
     - gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
+    - gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
   SNYK-JS-NODESASS-540978:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No update available
-        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
     - gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
+    - gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
   SNYK-JS-NODESASS-540980:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No update available
-        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
     - gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
+    - gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
   SNYK-JS-NODESASS-540990:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No update available
-        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
     - gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
+    - gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
   SNYK-JS-NODESASS-540992:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No update available
-        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
     - gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
+    - gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
   SNYK-JS-NODESASS-540994:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No update available
-        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
     - gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
+    - gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
   SNYK-JS-NODESASS-540996:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No update available
-        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
     - gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
+    - gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
   SNYK-JS-NODESASS-540998:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No update available
-        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
     - gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
+    - gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
   SNYK-JS-NODESASS-541000:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.122Z'
-      gulp-sass > node-sass:
-        reason: No update available
-        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
     - gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
+    - gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
   SNYK-JS-NODESASS-541002:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.122Z'
-      gulp-sass > node-sass:
-        reason: No update available
-        expires: '2020-08-05T21:37:10.138Z'
     - uswds > gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
     - gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
+    - gulp-sass > node-sass:
+        reason: No update available
+        expires: '2020-08-05T21:37:10.138Z'
   'npm:braces:20180219':
     - uswds > nswatch > chokidar > anymatch > micromatch > braces:
         reason: n/a

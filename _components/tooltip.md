@@ -33,7 +33,7 @@ lead: A tooltip is a short descriptive message that appears when a user hovers o
       </ul>
       <h4>Usability guidance</h4>
       <ul class="usa-content-list">
-        <li><strong>Use affordances.</strong> A hidden tooltip is unusable. Use tooltips only on elements that appear interative, like buttons or links.</li>
+        <li><strong>Use affordances.</strong> A hidden tooltip is unusable. Use tooltips only on elements that appear interactive, like buttons or links.</li>
         <li><strong>Avoid collisions.</strong> Be careful not introduce conflicting hover or focus events.</li>
         <li><strong>Be consistent.</strong> If using tooltips in one context, use in all similar contexts.</li>
         <li><strong>Don’t block content.</strong> Use the <code>data-position</code> attribute to prevent the tooltip from covering other page elements.</li>

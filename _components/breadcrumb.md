@@ -23,7 +23,7 @@ A breadcrumb bar (or _breadcrumbs_, or _breadcrumb trail_) is a series of links 
       <h4>When to use the breadcrumb component</h4>
       <ul class="usa-content-list">
         <li>
-          <strong>When orientation matters.</strong> Breadcrumbs show where the current page is located in the website hierarchy. Use a breadcrumb when it's likely that a user will arrive at an interior page from search or fomr an outside link.
+          <strong>When orientation matters.</strong> Breadcrumbs show where the current page is located in the website hierarchy. Use a breadcrumb when it's likely that a user will arrive at an interior page from search or from an outside link.
         </li>
         <li>
           <strong>To facilitate navigation.</strong> Breadcrumbs make it easier to understand complex sites. Use breadcrumbs to reinforce your site's structure.
@@ -43,7 +43,7 @@ A breadcrumb bar (or _breadcrumbs_, or _breadcrumb trail_) is a series of links 
           <strong>Redundant side navigation.</strong> When side navigation is used in combination with main navigation, it may be redundant to include breadcrumbs.
         </li>
         <li>
-          <strong>Step-by-step processes.</strong> Use breadcrumbs for hierarchical relationships, not linear relationships (like individual steps in a multi-spte process).
+          <strong>Step-by-step processes.</strong> Use breadcrumbs for hierarchical relationships, not linear relationships (like individual steps in a multi-step process).
         </li>
       </ul>
       <h4>Usability guidance</h4>

@@ -74,27 +74,27 @@ contents:
     type: map
     map:
       - key: '"output"'
-        usage: Output the utility.
+        usage: Output the utility
         value: —
         type: boolean
       - key: '"responsive"'
-        usage: Output the responsive variants.
+        usage: Output the responsive variants
         value: —
         type: boolean
       - key: '"active"'
-        usage: Output the `active:` state variant.
+        usage: Output the `active:` state variant
         value: —
         type: boolean
       - key: '"focus"'
-        usage: Output the `focus:` state variant.
+        usage: Output the `focus:` state variant
         value: —
         type: boolean
       - key: '"hover"'
-        usage: Output the `hover:` state variant.
+        usage: Output the `hover:` state variant
         value: —
         type: boolean
       - key: '"visited"'
-        usage: Output the `visited:` state variant.
+        usage: Output the `visited:` state variant
         value: —
         type: boolean
   - name: "Utility palettes"

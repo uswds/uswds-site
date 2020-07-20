@@ -11,12 +11,12 @@ contents:
     default: '"md"'
     type: units
   - name: Small width
-    usage: Size of the header search button.
+    usage: Size of the header search button
     var: $theme-button-small-width
     default: 6
     type: units
   - name: Stroke width
-    usage: Stroke width of `outline` button variants.
+    usage: Stroke width of `outline` button variants
     var: $theme-button-stroke-width
     default: 2px
     type: units

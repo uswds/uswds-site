@@ -3,7 +3,7 @@ usage: Set values related to typefaces, type style, font size, and weights.
 contents:
   - name: Respect user font size
     usage: |
-      When `true` the root font size will be `100%` and media queries use  ems.
+      When `true` the root font size will be `100%` and media queries use ems.
       When `false`, the root font size will be the px value specified in
       `$theme-root-font-size` and media queries will use px values.
     var: $theme-respect-user-font-size
@@ -17,55 +17,55 @@ contents:
     default: 10px
     type: px
   - name: Global paragraph styles
-    usage: Add basic styling to `p` elements.
+    usage: Add basic styling to `p` elements
     var: $theme-global-paragraph-styles
     default: "false"
     type: boolean
   - name: Global link styles
-    usage: Add basic styling to `a` elements.
+    usage: Add basic styling to `a` elements
     var: $theme-global-link-styles
     default: "false"
     type: boolean
   - name: Global content styles
-    usage: Add basic styling to paragraph text, links, headings, lists, and tables.
+    usage: Add basic styling to paragraph text, links, headings, lists, and tables
     var: $theme-global-content-styles
     default: "false"
     type: boolean
   - name: Font path
-    usage: Path to the font files, relative to the compiled css.
+    usage: Path to the font files, relative to the compiled CSS
     var: $theme-font-path
     default: '"../fonts"'
     type: path
 
   - name: Custom typeface tokens
-    usage: Add custom typeface tokens.
+    usage: Add custom typeface tokens
     var: $theme-typeface-tokens
     default:
     type: map
     map:
       - key: token
-        usage: The name of the token.
+        usage: Name of the token
         value: example-serif-token
         type: string
       - key: token.display-name
-        usage: Display name of the typeface.
+        usage: Display name of the typeface
         value: '"Example Serif Display Name"'
         type: string
       - key: token.cap-height
-        usage: Height of a 500px `N` character in Sketch.
+        usage: Height of a 500px `N` character in Sketch
         value: 364px
         type: px
     map:
       - key: token
-        usage: The name of the token.
+        usage: Nme of the token
         value: example-sans-token
         type: string
       - key: token.display-name
-        usage: Display name of the typeface.
+        usage: Display name of the typeface
         value: '"Example Sans Display Name"'
         type: string
       - key: token.cap-height
-        usage: Height of a 500px `N` character in Sketch.
+        usage: Height of a 500px `N` character in Sketch
         value: 364px
         type: px
   - name: cond
@@ -447,7 +447,7 @@ contents:
     default: 5
     type: line-height
   - name: Style body element
-    usage: Explicitly apply body styles to the `body` element.
+    usage: Add explicit body styles to the `body` element
     var: $theme-style-body-element
     default: "false"
     type: boolean
@@ -489,12 +489,12 @@ contents:
     default: 2
     type: line-height
   - name: Small font size
-    usage: Used for the smallest text on a site.
+    usage: Used for the smallest text on a site
     var: $theme-small-font-size
     default: '"2xs"'
     type: size
   - name: Display font size
-    usage: Used for the largest text on a site.
+    usage: Used for the largest text on a site
     var: $theme-display-font-size
     default: '"3xl"'
     type: size

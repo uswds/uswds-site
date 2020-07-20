@@ -443,22 +443,22 @@ contents:
 
   - name: Link color
     section: true
-    usage: Color for text links.
+    usage: Color for text links
     var: $theme-link-color
     default: '"primary"'
     type: color
   - name: Visited link color
-    usage: Color for `:visted` text links.
+    usage: Color for `:visted` text links
     var: $theme-link-visited-color
     default: '"violet-70v"'
     type: color
   - name: Hover link color
-    usage: Color for `:hover` text links.
+    usage: Color for `:hover` text links
     var: $theme-link-hover-color
     default: '"primary-dark"'
     type: color
   - name: Active link color
-    usage: Color for `:active` text links.
+    usage: Color for `:active` text links
     var: $theme-link-active-color
     default: '"primary-darker"'
     type: color

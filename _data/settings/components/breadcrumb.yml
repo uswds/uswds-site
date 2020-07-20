@@ -6,17 +6,17 @@ contents:
     default: "white"
     type: color
   - name: Font family
-    usage: The family of the breadcrumb text.
+    usage: The family of the breadcrumb text
     var: $theme-breadcrumb-font-family
     default: "sm"
     type: family
   - name: Font size
-    usage: The size of the breadcrumb text.
+    usage: The size of the breadcrumb text
     var: $theme-breadcrumb-font-size
     default: "sm"
     type: units
   - name: Breadcrumb gap
-    usage: The space between indicator icons and text.
+    usage: The space between indicator icons and text
     var: $theme-breadcrumb-gap
     default: 1.5
     type: units
@@ -26,7 +26,7 @@ contents:
     default: default
     type: color
   - name: Full breadcrumb minimum width
-    usage: The width at which the breadcrumb displays the full breadcrumb list.
+    usage: The width at which the breadcrumb displays the full breadcrumb list
     var: $theme-breadcrumb-min-width
     default: "mobile-lg"
     type: units

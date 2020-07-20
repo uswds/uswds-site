@@ -65,7 +65,7 @@ In general, when importing settings and custom code, you just need to follow thi
 1. **Import `uswds`:** Build the design system.
 1. **Import custom styles:** Build on top of the design system.
 
-{% assign settings = site.data.settings %}
+{% assign settings = site.data.settings | sort %}
 
 {%- for section_hash in settings -%}
   {%- assign section = section_hash[1] -%}

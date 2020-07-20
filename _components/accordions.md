@@ -59,46 +59,10 @@ lead: An accordion is a list of headers that hide or reveal additional content w
           </li>
         </ul>
         <h5 id="component-settings">Accordion settings</h5>
-        <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-settings">
-          <thead>
-            <tr>
-              <th scope="col" class="flex-6">Variable</th>
-              <th scope="col" class="flex-6">Usage</th>
-            </tr>
-          </thead>
-          <tbody class="font-mono-2xs">
-            <tr>
-              <td data-title="Variable" class="flex-6">
-                $theme-accordion-padding-x
-              </td>
-              <td data-title="Usage" class="flex-6">
-                <span class="font-lang-3xs">
-                  <p>Stroke width of accordion.</p>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td data-title="Variable" class="flex-6">
-                $theme-accordion-border-color
-              </td>
-              <td data-title="Usage" class="flex-6">
-                <span class="font-lang-3xs">
-                  <p>Stroke color of accordion.</p>
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td data-title="Variable" class="flex-6">
-                $theme-accordion-font-family
-              </td>
-              <td data-title="Usage" class="flex-6">
-                <span class="font-lang-3xs">
-                  <p>Font family of accordion.</p>
-                </span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        {% assign settings = site.data.settings.components.accordion %}
+        {% include settings-table-simple.html
+          settings=settings.contents
+        %}
         <h5 id="component-variants">Accordion variants</h5>
         <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants">
           <thead>

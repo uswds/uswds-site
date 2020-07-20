@@ -4,7 +4,7 @@
 {% assign col2Width = 'flex-3' %}
 {% assign col3Title = 'Default' %}
 {% assign col3Width = 'flex-2' %}
-{% assign col4Title = 'Kind' %}
+{% assign col4Title = 'Type' %}
 {% assign col4Width = 'flex-1' %}
 {% assign col5Title = 'Usage' %}
 {% assign col5Width = 'flex-3' %}
@@ -52,12 +52,12 @@
       </td>
       <td scope="row" data-title="{{ col4Title }}" class="{{ col4Width }}">
         <span>
-          {% include get-token-url.html token=setting.kind %}
+          {% include get-token-url.html token=setting.type %}
         </span>
       </td>
       <td scope="row" data-title="{{ col5Title }}" class="{{ col5Width }}">
         <span class="font-lang-3xs">
-          {{ setting.description | markdownify }}
+          {{ setting.usage | markdownify }}
         </span>
       </td>
     </tr>
@@ -92,7 +92,7 @@
             </td>
             <td scope="row" data-title="{{ col5Title }}" class="{{ col5Width }}">
               <span class="font-lang-3xs">
-                {{ entry.description | markdownify }}
+                {{ entry.usage | markdownify }}
               </span>
             </td>
           </tr>

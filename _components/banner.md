@@ -52,28 +52,10 @@ lead: The banner identifies official websites of government organizations in the
         <li>Set the banner link color with <code>$theme-banner-link-color</code>. The default of <code>default</code> uses the link colors set in <code>uswds-theme-colors</code>.</li>
       </ul>
       <h5 id="component-settings">Banner settings</h5>
-      <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-settings">
-        <thead>
-          <tr>
-            <th scope="col" class="flex-6">Variable</th>
-            <th scope="col" class="flex-6">Usage</th>
-          </tr>
-        </thead>
-        <tbody class="font-mono-2xs">
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-banner-font-family</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">Font used in banner.</p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-banner-max-width</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">The width of the banner content area.</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      {% assign settings = site.data.settings.components.banner %}
+      {% include settings-table-simple.html
+        settings=settings.contents
+      %}
       <h5 id="component-variants">Banner variants</h5>
       <p>This component doesn't have any variants.</p>
       <h4 class="usa-heading">Package information</h4>

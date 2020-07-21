@@ -5,27 +5,31 @@
 
 {% assign settings = include.settings %}
 
-<table class="usa-table--borderless site-table-responsive site-table-simple">
-  <thead>
-    <tr>
-      <th scope="col" class="{{ col1Width }}">{{ col1Title }}</th>
-      <th scope="col" class="{{ col2Width }}">{{ col2Title }}</th>
-    </tr>
-  </thead>
-  <tbody class="font-mono-2xs">
-    {% for setting in settings %}
-    <tr>
-      <td scope="row" data-title="{{ col1Title }}" class="{{ col1Width }}">
-        <span class="font-mono-2xs font-lang-3xs">
-          {{ setting.var }}
-        </span>
-      </td>
-      <td scope="row" data-title="{{ col2Title }}" class="{{ col2Width }}">
-        <span class="font-lang-3xs">
-          {{ setting.usage | markdownify }}
-        </span>
-      </td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+{% if settings != nil  %}
+  <table class="usa-table--borderless site-table-responsive site-table-simple">
+    <thead>
+      <tr>
+        <th scope="col" class="{{ col1Width }}">{{ col1Title }}</th>
+        <th scope="col" class="{{ col2Width }}">{{ col2Title }}</th>
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      {% for setting in settings %}
+      <tr>
+        <td scope="row" data-title="{{ col1Title }}" class="{{ col1Width }}">
+          <span class="font-mono-2xs font-lang-3xs">
+            {{ setting.var }}
+          </span>
+        </td>
+        <td scope="row" data-title="{{ col2Title }}" class="{{ col2Width }}">
+          <span class="font-lang-3xs">
+            {{ setting.usage | markdownify }}
+          </span>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% else %}
+  <p>This component doesn't have any settings.</p>
+{% endif %}

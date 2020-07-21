@@ -65,28 +65,10 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
         <li>The width of the current menu item’s highlight border is set with the <code>$theme-sidenav-current-border-width</code> variable.</li>
       </ul>
       <h5 id="component-settings">Side navigation settings</h5>
-      <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-settings">
-        <thead>
-          <tr>
-            <th scope="col" class="flex-6">Variable</th>
-            <th scope="col" class="flex-6">Usage</th>
-          </tr>
-        </thead>
-        <tbody class="font-mono-2xs">
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-sidenav-current-border-width</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">Width of the current section indicator.</p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-sidenav-font-family</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">The font family used in the side navigation.</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      {% assign settings = site.data.settings.components.sidenav %}
+      {% include settings-table-simple.html
+        settings=settings.contents
+      %}
       <h5 id="component-variants">Side navigation variants</h5>
       <p>This component doesn't have any variants.</p>
       <h4 class="usa-heading">Package information</h4>

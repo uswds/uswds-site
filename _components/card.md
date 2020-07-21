@@ -84,85 +84,11 @@ Finally, a card is **modular**. This means that you can vary the order of cards 
         <li><strong>Control card size and layout with grid utilities.</strong> The <code>usa-card-group</code> block is functionally a wrap-able <code>grid-row</code> and each individual <code>usa-card</code> is a <code>grid-col</code>. This means that you can use a grid utility like <code>tablet:grid-col-4</code> to set a four-column size on a card at tablet width. You can also set custom grid gaps on a <code>usa-card-group</code> using the <code>grid-gap</code> utilities. Since the USWDS grid is based on flexbox, you can use flex positioning utilities on the card group. The default alignment is stretch (this aligns the top and bottom of each card in a row), but the <code>flex-align-start</code> utility can set the alignment to the top of the row.</li>
         <li><strong>Style cards with utilities.</strong> Style the <code>usa-card__container</code> element with utilities to achieve custom effects, such as changing the border or background color, or adding a drop shadow.</li>
       </ul>
-            <h5 id="component-settings">Card settings</h5>
-      <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-settings">
-        <thead>
-          <tr>
-            <th scope="col" class="flex-6">Variable</th>
-            <th scope="col" class="flex-6">Usage</th>
-          </tr>
-        </thead>
-        <tbody class="font-mono-2xs">
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-card-border-color</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">Stroke color of card.</p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-card-border-radius</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">Controls how round the card's corners are.</p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-card-border-width</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">The stroke thickness of the card.</p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-card-gap</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">Gap between cards in a card group.</p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-card-flag-min-width</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">Width at which flag cards change to horizontal layout.</p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-card-flag-image-width</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">
-                Fixed image width in the card flag variant.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-card-font-family</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">Font family for card body.</p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-card-header-typeset</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">Family, size, and line height of the heading.</p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-card-margin-bottom</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">Bottom margin for the card.</p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-card-padding-perimeter</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">Padding between card elements and card border.</p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-card-padding-y</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">Vertical padding between card elements.</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <h5 id="component-settings">Card settings</h5>
+      {% assign settings = site.data.settings.components.card %}
+      {% include settings-table-simple.html
+        settings=settings.contents
+      %}
       <h5 id="component-variants">Card variants</h5>
       <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants">
         <thead>

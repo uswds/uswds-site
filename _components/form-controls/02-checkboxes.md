@@ -92,46 +92,10 @@ lead: Checkboxes allow users to select one or more options from a visible list.
     </ul>
     <h4 class="usa-heading">Implementation</h4>
     <h5 id="component-settings-checkbox">Checkbox settings</h5>
-    <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-settings-checkbox">
-      <thead>
-        <tr>
-          <th scope="col" class="flex-6">Variable</th>
-          <th scope="col" class="flex-6">Usage</th>
-        </tr>
-      </thead>
-      <tbody class="font-mono-2xs">
-        <tr>
-          <td class="flex-6" data-title="Variable">$theme-checkbox-border-radius</td>
-          <td class="flex-6" data-title="Usage">
-            <span class="font-lang-3xs">How round the checkbox corners are.</span>
-          </td>
-        </tr>
-        <tr>
-          <td class="flex-6" data-title="Variable">$theme-form-font-family</td>
-          <td class="flex-6" data-title="Usage">
-            <span class="font-lang-3xs">The font family used in the label.</span>
-          </td>
-        </tr>
-        <tr>
-          <td class="flex-6" data-title="Variable">$theme-input-line-height</td>
-          <td class="flex-6" data-title="Usage">
-            <span class="font-lang-3xs">The line-height used in the input.</span>
-          </td>
-        </tr>
-        <tr>
-          <td class="flex-6" data-title="Variable">$theme-input-select-size</td>
-          <td class="flex-6" data-title="Usage">
-            <span class="font-lang-3xs">Height and width checkboxes and radio buttons.</span>
-          </td>
-        </tr>
-        <tr>
-          <td class="flex-6" data-title="Variable">$theme-input-select-border-width</td>
-          <td class="flex-6" data-title="Usage">
-            <span class="font-lang-3xs">Border width when selected.</span>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    {% assign settings = site.data.settings.components.checkbox %}
+    {% include settings-table-simple.html
+      settings=settings.contents
+    %}
     <h5 id="component-variants-checkbox">Checkbox variants</h5>
     <p>This component doesn't have any variants.</p>
     <h4 class="usa-heading">Package information</h4>

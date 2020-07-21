@@ -80,25 +80,6 @@ lead: File input allows users to attach one or multiple files.
         these browsers.
       </li>
     </ul>
-    <h5 id="component-settings-file-input">File input settings</h5>
-    <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-settings-file-input">
-      <thead>
-        <tr>
-          <th scope="col" class="flex-6">Variable</th>
-          <th scope="col" class="flex-6">Usage</th>
-        </tr>
-      </thead>
-      <tbody class="font-mono-2xs">
-        <tr>
-          <td class="flex-6" data-title="Variable">$theme-input-max-width</td>
-          <td class="flex-6" data-title="Usage">
-            <span class="font-lang-3xs">The maximum width of the input.</span>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <h5 id="component-variants-file-input">File input variants</h5>
-    <p>This component doesn't have any variants.</p>
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">
       <li>

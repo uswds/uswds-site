@@ -72,37 +72,6 @@ lead: Three text fields are the easiest way for users to enter most dates.
         Always use back-end validation on dates for correctness.
       </li>
     </ul>
-    <h5 id="component-settings-date">Date settings</h5>
-    <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-settings-date">
-      <thead>
-        <tr>
-          <th scope="col" class="flex-6">Variable</th>
-          <th scope="col" class="flex-6">Usage</th>
-        </tr>
-      </thead>
-      <tbody class="font-mono-2xs">
-        <tr>
-          <td class="flex-6" data-title="Variable">$theme-form-font-family</td>
-          <td class="flex-6" data-title="Usage">
-            <span class="font-lang-3xs">The font family used in component.</span>
-          </td>
-        </tr>
-        <tr>
-          <td class="flex-6" data-title="Variable">$theme-input-line-height</td>
-          <td class="flex-6" data-title="Usage">
-            <span class="font-lang-3xs">The line-height used in component.</span>
-          </td>
-        </tr>
-        <tr>
-          <td class="flex-6" data-title="Variable">$theme-input-select-border-width</td>
-          <td class="flex-6" data-title="Usage">
-            <span class="font-lang-3xs">Border width when selected.</span>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <h5 id="component-variants-date">Date variants</h5>
-    <p>This component doesn't have any variants.</p>
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">
       <li>

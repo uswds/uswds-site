@@ -39,48 +39,10 @@ lead: A text input allows users to enter any combination of letters, numbers, or
     </ul>
     <h4 class="usa-heading">Implementation</h4>
     <h5 id="component-settings-text-input">Text input settings</h5>
-    <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-settings-text-input">
-      <thead>
-        <tr>
-          <th scope="col" class="flex-6">Variable</th>
-          <th scope="col" class="flex-6">Usage</th>
-        </tr>
-      </thead>
-      <tbody class="font-mono-2xs">
-        <tr>
-          <td class="flex-6" data-title="Variable">$theme-form-font-family</td>
-          <td class="flex-6" data-title="Usage">
-            <span class="font-lang-3xs">Font family used in inputs.</span>
-          </td>
-        </tr>
-        <tr>
-          <td class="flex-6" data-title="Variable">$theme-body-font-size</td>
-          <td class="flex-6" data-title="Usage">
-            <span class="font-lang-3xs">Font size used in inputs.</span>
-          </td>
-        </tr>
-        <tr>
-          <td class="flex-6" data-title="Variable">$theme-input-line-height</td>
-          <td class="flex-6" data-title="Usage">
-            <span class="font-lang-3xs">Line-height used in inputs.</span>
-          </td>
-        </tr>
-        <tr>
-          <td class="flex-6" data-title="Variable">$theme-input-max-width</td>
-          <td class="flex-6" data-title="Usage">
-            <span class="font-lang-3xs">The inputs maximum width.</span>
-          </td>
-        </tr>
-        <tr>
-          <td class="flex-6" data-title="Variable">$theme-input-state-border-width</td>
-          <td class="flex-6" data-title="Usage">
-            <span class="font-lang-3xs">
-              Border width of special state inputs (like error state).
-            </span>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    {% assign settings = site.data.settings.components.input %}
+    {% include settings-table-simple.html
+      settings=settings.contents
+    %}
     <h5 id="component-variants-text-input">Text input variants</h5>
     <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants-text-input">
       <thead>

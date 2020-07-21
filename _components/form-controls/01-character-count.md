@@ -48,37 +48,6 @@ lead: Character count helps users know how much text they can enter when there i
         <strong>Account for no-JavaScript environments.</strong> Add a default message in the message element that refers to the character limit. This will appear in instances when JavaScript does not load.
       </li>
     </ul>
-    <h5 id="component-settings-character-count">Character count settings</h5>
-    <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-settings-character-count">
-      <thead>
-        <tr>
-          <th scope="col" class="flex-6">Variable</th>
-          <th scope="col" class="flex-6">Usage</th>
-        </tr>
-      </thead>
-      <tbody class="font-mono-2xs">
-        <tr>
-          <td class="flex-6" data-title="Variable">$theme-form-font-family</td>
-          <td class="flex-6" data-title="Usage">
-            <span class="font-lang-3xs">The font family used in the label.</span>
-          </td>
-        </tr>
-        <tr>
-          <td class="flex-6" data-title="Variable">$theme-input-line-height</td>
-          <td class="flex-6" data-title="Usage">
-            <span class="font-lang-3xs">The line-height used in the input.</span>
-          </td>
-        </tr>
-        <tr>
-          <td class="flex-6" data-title="Variable">$theme-input-select-border-width</td>
-          <td class="flex-6" data-title="Usage">
-            <span class="font-lang-3xs">Border width when selected.</span>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <h5 id="component-variants-character-count">Character count variants</h5>
-    <p>This component doesn't have any variants.</p>
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">
       <li>

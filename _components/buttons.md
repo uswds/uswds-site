@@ -66,40 +66,10 @@ component_url: 'https://components.designsystem.digital.gov/components/detail/bu
         <code>&lt;a class="usa-button usa-button--secondary" href=&quot;/my-link"&gt;My button&lt;/a&gt;</code></li>
       </ul>
       <h5 id="component-settings">Button settings</h5>
-      <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-settings">
-        <thead>
-          <tr>
-            <th scope="col" class="flex-6">Variable</th>
-            <th scope="col" class="flex-6">Usage</th>
-          </tr>
-        </thead>
-        <tbody class="font-mono-2xs">
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-button-font-family</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">The font used in button.</p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-button-border-radius</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">Defines how round the button is.</p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-button-small-width</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">The size of the header search button.</p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-button-stroke-width</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">Stroke width of outline button variants.</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      {% assign settings = site.data.settings.components.buttons %}
+      {% include settings-table-simple.html
+        settings=settings.contents
+      %}
       <h5 id="component-variants">Button variants</h5>
       <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants">
         <thead>

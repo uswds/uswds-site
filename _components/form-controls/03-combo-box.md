@@ -57,7 +57,7 @@ data-default-value | .usa-combo-box | The combo box will set this value as the d
 
 | property | element | effect |
 | --- | --- | ---
-data-filter | .usa-combo-box | The combo box will use this regular expression to filter the combo box options. You are declaring a case insensitive match over the entire option text (which means '^' and '$' are added automatically). You can specify the inputted query with `$`. The default filter is `.*$.*`, which is a simple find anywhere within the option text. 
+data-filter | .usa-combo-box | The combo box will use this regular expression to filter the combo box options. You are declaring a case insensitive match over the entire option text (which means '^' and '$' are added automatically). You can specify the inputted query with `{% raw %}{{query}}{% endraw %}`. You can also declare a custom query filter as a data property as well which can used in the custom filter (`data-number-filter="[0-9]"` and then using `data-filter="{% raw %}{{numberFilter}}{% endraw %}.*"`). The default filter is `{% raw %}.*{{query}}.*{% endraw %}`, which is a simple find anywhere within the option text. 
 
 {:.usa-content-list}
 

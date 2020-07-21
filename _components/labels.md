@@ -82,7 +82,10 @@ lead: A tag draws attention to new or categorized content elements.
       </ul>
       <h4 class="usa-heading">Implementation</h4>
       <h5 id="component-settings">Tag settings</h5>
-      <p>This component doesn't have any settings.</p>
+      {% assign settings = site.data.settings.components.label %}
+      {% include settings-table-simple.html
+        settings=settings.contents
+      %}
       <h5 id="component-variants">Tag variants</h5>
       <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants">
         <thead>

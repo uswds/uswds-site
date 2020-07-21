@@ -170,81 +170,10 @@ subnav:
 <section class="site-component-section">
   <h3>Implementation</h3>
   <h4 id="component-settings">Header settings</h4>
-  <table class="usa-table--borderless site-table-responsive site-table-simple"
-    aria-labelledby="component-settings">
-    <thead>
-      <tr>
-        <th scope="col" class="flex-6">Variable</th>
-        <th scope="col" class="flex-6">Usage</th>
-      </tr>
-    </thead>
-    <tbody class="font-mono-2xs">
-      <tr>
-        <td class="flex-6" data-title="Variable">$theme-header-font-family</td>
-        <td class="flex-6" data-title="Usage">
-          <span class="font-lang-3xs">Font family used in header.</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="flex-6" data-title="Variable">$theme-header-logo-text-width</td>
-        <td class="flex-6" data-title="Usage">
-          <span class="font-lang-3xs">
-            Width of the logo text area at desktop width as a percentage of the
-            total header width.
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <td class="flex-6" data-title="Variable">$theme-header-max-width</td>
-        <td class="flex-6" data-title="Usage">
-          <span class="font-lang-3xs">Maximum width of the header.</span>
-        </td>
-      </tr>
-      <tr>
-        <td class="flex-6" data-title="Variable">$theme-header-min-width</td>
-        <td class="flex-6" data-title="Usage">
-          <span class="font-lang-3xs">Breakpoint at which the non-mobile header is shown.</span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="component-variants">Header variants</h4>
-  <table class="usa-table--borderless site-table-responsive site-table-simple"
-    aria-labelledby="component-variants">
-    <thead>
-      <tr>
-        <th scope="col" class="flex-6">Variant</th>
-        <th scope="col" class="flex-6">Usage</th>
-      </tr>
-    </thead>
-    <tbody class="font-mono-2xs">
-      <tr>
-        <td class="flex-6" data-title="Variant">usa-header--basic</td>
-        <td class="flex-6" data-title="Usage">
-          <span class="font-lang-3xs">
-            A simple version of the header. Useful for when you have just a
-            few sections.
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <td class="flex-6" data-title="Variant">usa-header--megamenu</td>
-        <td class="flex-6" data-title="Usage">
-          <span class="font-lang-3xs">
-            Use alongside <code>usa-header--basic</code> to set megamenu styles.
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <td class="flex-6" data-title="Variant">usa-header--extended</td>
-        <td class="flex-6" data-title="Usage">
-          <span class="font-lang-3xs">
-            An expanded version of the header. Useful for sites with lots of sections.
-          </span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  {% assign settings = site.data.settings.components.header %}
+  {% include settings-table-simple.html
+    settings=settings.contents
+  %}
 </section>
 
 <section id="section-basic" class="site-component-section margin-top-5">

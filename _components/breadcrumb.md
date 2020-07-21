@@ -84,74 +84,10 @@ A breadcrumb bar (or _breadcrumbs_, or _breadcrumb trail_) is a series of links 
       </ul>
       <h4>Implementation</h4>
       <h5 id="component-settings">Breadcrumb settings</h5>
-      <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-settings">
-        <thead>
-          <tr>
-            <th scope="col" class="flex-6">Variable</th>
-            <th scope="col" class="flex-6">Usage</th>
-          </tr>
-        </thead>
-        <tbody class="font-mono-2xs">
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-breadcrumb-background-color</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">
-                The background color of the breadcrumb container.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-breadcrumb-font-size</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">
-                The size of the breadcrumb text.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-breadcrumb-font-family</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">
-                The family of the breadcrumb text.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-breadcrumb-link-color</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">
-                The color of breadcrumb links. The system will calculate hover, active, and visited states. Use <code>default</code> to use system link defaults.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-breadcrumb-min-width</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">
-                The width at which the breadcrumb displays the full breadcrumb list.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-breadcrumb-spacing-bottom</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">Spacing below the breadcrumb.</p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-breadcrumb-spacing-top</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">Spacing above the breadcrumb.</p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-breadcrumb-spacing-x</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">The padding on the left and right of the breadcrumb container.</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      {% assign settings = site.data.settings.components.breadcrumb %}
+      {% include settings-table-simple.html
+        settings=settings.contents
+      %}
       <h5 id="component-variants">Breadcrumb variants</h5>
       <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants">
         <thead>

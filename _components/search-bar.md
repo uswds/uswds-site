@@ -72,29 +72,11 @@ lead: Search allows users to search for specific content if they know what searc
           This reduces the number of keystrokes required to use the form.
         </li>
       </ul>
-            <h5 id="component-settings">Search settings</h5>
-      <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-settings">
-        <thead>
-          <tr>
-            <th scope="col" class="flex-6">Variable</th>
-            <th scope="col" class="flex-6">Usage</th>
-          </tr>
-        </thead>
-        <tbody class="font-mono-2xs">
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-search-font-family</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">Font family used in search.</p>
-            </td>
-          </tr>
-          <tr>
-            <td data-title="Variable" class="flex-6">$theme-search-min-width</td>
-            <td data-title="Usage" class="flex-6">
-              <p class="font-lang-3xs">Minimum width of search input.</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <h5 id="component-settings">Search settings</h5>
+      {% assign settings = site.data.settings.components.search %}
+      {% include settings-table-simple.html
+        settings=settings.contents
+      %}
       <h5 id="component-variants">Search variants</h5>
       <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants">
         <thead>

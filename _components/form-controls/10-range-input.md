@@ -51,6 +51,10 @@ lead: A range slider allows users to choose an approximate number from a range.
 
 - Set the `min` and `max` attribute of the `input` element to correspond to the instructions or labels that accompany the slider.
 
+<h5 id="range-slider-settings">Range slider settings</h5>
+<p>This component has no settings.</p>
+<h5 id="range-slider-variants">Range slider variants</h5>
+<p>This component has no variants.</p>
 
 #### Package information
 

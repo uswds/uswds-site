@@ -72,6 +72,10 @@ lead: Three text fields are the easiest way for users to enter most dates.
         Always use back-end validation on dates for correctness.
       </li>
     </ul>
+    <h5 id="date-input-settings">Date input settings</h5>
+    <p>This component has no settings.</p>
+    <h5 id="date-input-variants">Date input variants</h5>
+    <p>This component has no variants.</p>
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">
       <li>

@@ -80,6 +80,10 @@ lead: File input allows users to attach one or multiple files.
         these browsers.
       </li>
     </ul>
+    <h5 id="file-input-settings">File input settings</h5>
+    <p>This component has no settings.</p>
+    <h5 id="file-input-variants">File input variants</h5>
+    <p>This component has no variants.</p>
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">
       <li>

@@ -54,6 +54,10 @@ lead: Stating validation requirements up front, with live feedback, means users 
         </ol>
       </li>
     </ul>
+    <h5 id="validation-settings">Validation settings</h5>
+    <p>This component has no settings.</p>
+    <h5 id="validation-variants">Validation variants</h5>
+    <p>This component has no variants.</p>
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">
       <li>

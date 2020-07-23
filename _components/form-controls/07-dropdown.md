@@ -40,6 +40,10 @@ lead: A dropdown allow users to select one option from a temporary modal menu.
       <li><strong>Avoid auto-submission.</strong> Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Auto-submission disrupts screen readers because they select each option as they read them.</li>
     </ul>
     <h4 class="usa-heading">Implementation</h4>
+    <h5 id="dropdown-settings">Dropdown settings</h5>
+    <p>This component has no settings.</p>
+    <h5 id="dropdown-variants">Dropdown variants</h5>
+    <p>This component has no variants.</p>
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">
       <li>

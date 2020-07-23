@@ -85,6 +85,11 @@ lead: Radio buttons allow users to see all available choices and select exactly 
         The <code>title</code> attribute can replace <code>&lt;label&gt;</code>.
       </li>
     </ul>
+    <h4 class="usa-heading">Implementation</h4>
+    <h5 id="radio-buttons-settings">Radio buttons settings</h5>
+    <p>This component has no settings.</p>
+    <h5 id="radio-buttons-variants">Radio buttons variants</h5>
+    <p>This component has no variants.</p>
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">
       <li>

@@ -105,6 +105,10 @@ enable | .usa-combo-box element | The combo box component will be enabled.
 disable | .usa-combo-box element | The combo box component will be disabled / readonly.
 
 </div>
+    <h5 id="combo-box-settings">Combo box settings</h5>
+    <p>This component has no settings.</p>
+    <h5 id="combo-box-variants">Combo box variants</h5>
+    <p>This component has no variants.</p>
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">
       <li>

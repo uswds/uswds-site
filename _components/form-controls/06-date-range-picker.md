@@ -45,6 +45,10 @@ data-min-date | .usa-date-picker | The date picker will not allow a date selecti
 data-max-date | .usa-date-picker | The date picker will not allow a date selection after this date. The date should be in the format YYYY-MM-DD. Typing in an later date will cause native form validation error. There is no default maximum date.
 
 </div>
+    <h5 id="date-range-picker-settings">Date range picker settings</h5>
+    <p>This component has no settings.</p>
+    <h5 id="date-range-picker-variants">Date range picker variants</h5>
+    <p>This component has no variants.</p>
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">
       <li>

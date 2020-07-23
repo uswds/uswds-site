@@ -60,6 +60,13 @@ lead: A tooltip is a short descriptive message that appears when a user hovers o
         <li>Tooltips are protected from viewport clipping. If clipping is detected, the tooltip is positioned on the opposite side as <code>data-position</code> attribute indicates. If the tooltip is still clipped, it is positioned on top of the element, with its width constrained to the width its related element. Only then does the tooltip wrap to multiple lines.</li>
         <li>JavaScript generated most of the tooltip’s markup. Apply <a href="{{ site.baseurl }}/utilities/">utility classes</a> to any tooltip’s wrapping element, by including them inside a <code>data-classes</code> attribute, separated by spaces.</li>
       </ul>
+      <h5 id="component-settings">Tooltip settings</h5>
+      {% assign settings = site.data.settings.components.tooltip %}
+      {% include settings-table-simple.html
+        settings=settings.contents
+      %}
+      <h5 id="tooltip-variants">Tooltip variants</h5>
+      <p>This component has no variants.</p>
       <h4 class="usa-heading">Package information</h4>
       <ul class="usa-content-list">
         <li>

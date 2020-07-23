@@ -51,6 +51,13 @@ lead: The banner identifies official websites of government organizations in the
         <li>Set the banner font with <code>$theme-banner-font-family</code>.</li>
         <li>Set the banner link color with <code>$theme-banner-link-color</code>. The default of <code>default</code> uses the link colors set in <code>uswds-theme-colors</code>.</li>
       </ul>
+      <h5 id="component-settings">Banner settings</h5>
+      {% assign settings = site.data.settings.components.banner %}
+      {% include settings-table-simple.html
+        settings=settings.contents
+      %}
+      <h5 id="component-variants">Banner variants</h5>
+      <p>This component has no variants.</p>
       <h4 class="usa-heading">Package information</h4>
       <ul class="usa-content-list">
         <li>

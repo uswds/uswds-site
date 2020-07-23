@@ -1,21 +1,21 @@
 name: Utilities settings
-usage: Set values related to utilities
+description: Set values related to utilities
 contents:
   - name: Utilities use !important
-    usage: |
+    description: |
       Output all utilities with `!important`. This can be
       necessary if you intend utilities to override existing styles.
     var: $utilities-use-important
     default: "false"
     type: boolean
   - name: Output all utilities
-    usage: |
+    description: |
       Output all utilities regardless of any individual utility’s output setting.
     var: $output-all-utilities
     default: "true"
     type: boolean
   - name: Utility breakpoints
-    usage: |
+    description: |
       Set which mobile-first breakpoints are output for the utilities.
     var: $theme-utility-breakpoints
     default:
@@ -59,7 +59,7 @@ contents:
         type: boolean
 
   - name: Global color palettes
-    usage: |
+    description: |
       Any palettes added to this list will output in the the following utilities:
       `background-color`, `border-color`, `color`, `text-decoration-color`.
     var: $global-color-palettes
@@ -67,51 +67,51 @@ contents:
     type: palettes
 
   - name: "Utility settings"
-    usage: |
+    description: |
       Control the output of a [utility] and its responsive and state variants.
     var: $[utility]-settings
     default:
     type: map
     map:
       - key: '"output"'
-        usage: Output the utility
+        description: Output the utility
         value: —
         type: boolean
       - key: '"responsive"'
-        usage: Output the responsive variants
+        description: Output the responsive variants
         value: —
         type: boolean
       - key: '"active"'
-        usage: Output the `active:` state variant
+        description: Output the `active:` state variant
         value: —
         type: boolean
       - key: '"focus"'
-        usage: Output the `focus:` state variant
+        description: Output the `focus:` state variant
         value: —
         type: boolean
       - key: '"hover"'
-        usage: Output the `hover:` state variant
+        description: Output the `hover:` state variant
         value: —
         type: boolean
       - key: '"visited"'
-        usage: Output the `visited:` state variant
+        description: Output the `visited:` state variant
         value: —
         type: boolean
   - name: "Utility palettes"
-    usage: |
+    description: |
       Utilities output with the values set in the palettes list.
     var: $[utility]-palettes
     default: '"palette-[utility]-default"'
     type: palettes
   - name: "Utility manual values"
-    usage: |
+    description: |
       Utilities output with the tokens and values set in the manual values map.
     var: $[utility]-palettes
     default: '"palette-[utility]-manual-values"'
     type: map
     map:
       - key: "[token name]"
-        usage: |
+        description: |
           Add a map of manual tokens and values in the form `name: value`.
         value: "[token value]"
         type: map

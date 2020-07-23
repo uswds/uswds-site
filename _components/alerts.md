@@ -43,6 +43,59 @@ lead: An alert keeps users informed of important and sometimes time-sensitive ch
         <li><strong>Use the proper ARIA role.</strong> If the message is not interactive, use the ARIA <code>role=<wbr>"alert"</code> to inform assistive technologies of a time-sensitive and important message. If the message is interactive, use the use the ARIA <code>role=<wbr>"alertdialog"</code> instead.</li>
         <li><strong>Don’t visually hide alert messages and then make them visible when they are needed.</strong> Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.</li>
       </ul>
+      <h4 class="usa-heading">Implementation</h4>
+      <h5 id="component-settings">Alert settings</h5>
+      {% assign settings = site.data.settings.components.alert %}
+      {% include settings-table-simple.html
+        settings=settings.contents
+      %}
+      <h5 id="component-variants">Alert variants</h5>
+      <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants">
+        <thead>
+          <tr>
+            <th scope="col" class="flex-6">Variant</th>
+            <th scope="col" class="flex-6">Description</th>
+          </tr>
+        </thead>
+        <tbody class="font-mono-2xs">
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-alert--info</td>
+            <td data-title="Description" class="flex-6">
+              <span class="font-lang-3xs">Display an informational status alert.</span>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-alert--warning</td>
+            <td data-title="Description" class="flex-6">
+              <span class="font-lang-3xs">Display a warning status alert.</span>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-alert--error</td>
+            <td data-title="Description" class="flex-6">
+              <span class="font-lang-3xs">Display an error status alert.</span>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-alert--success</td>
+            <td data-title="Description" class="flex-6">
+              <span class="font-lang-3xs">Display a success status alert.</span>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-alert--slim</td>
+            <td data-title="Description" class="flex-6">
+              <span class="font-lang-3xs">Display a slimmer version of the alert.</span>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-alert--no-icon</td>
+            <td data-title="Description" class="flex-6">
+              <span class="font-lang-3xs">Display an alert without an icon.</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
       <h4 class="usa-heading">Package information</h4>
       <ul class="usa-content-list">
         <li>

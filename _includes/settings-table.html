@@ -6,7 +6,7 @@
 {% assign col3Width = 'flex-2' %}
 {% assign col4Title = 'Type' %}
 {% assign col4Width = 'flex-1' %}
-{% assign col5Title = 'Usage' %}
+{% assign col5Title = 'Description' %}
 {% assign col5Width = 'flex-3' %}
 
 {% assign settings = include.settings %}
@@ -57,7 +57,7 @@
       </td>
       <td scope="row" data-title="{{ col5Title }}" class="{{ col5Width }}">
         <span class="font-lang-3xs">
-          {{ setting.usage | markdownify }}
+          {{ setting.description | markdownify }}
         </span>
       </td>
     </tr>

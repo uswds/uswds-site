@@ -79,7 +79,7 @@ Your context and coding style determine how you access USWDS letterspacing token
         <td scope="row" data-title="Context">
           <span class="text-bold font-lang-3">function</span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span class="line-height-sans-6">
             letter-spacing(<a href="{{ site.baseurl }}/design-tokens/typesetting/letterspacing/" class="token">letterspacing</a>)<br/>
             ls(<a href="{{ site.baseurl }}/design-tokens/typesetting/letterspacing/" class="token">letterspacing</a>)
@@ -98,7 +98,7 @@ Your context and coding style determine how you access USWDS letterspacing token
             <span class="text-bold">mixin</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             u-text('ls-<a href="{{ site.baseurl }}/design-tokens/typesetting/letterspacing/" class="token">letterspacing</a>')
           </span>
@@ -115,7 +115,7 @@ Your context and coding style determine how you access USWDS letterspacing token
             <span class="text-bold font-lang-3">setting</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/typesetting/letterspacing/" class="token">letterspacing</a>
           </span>
@@ -132,7 +132,7 @@ Your context and coding style determine how you access USWDS letterspacing token
             <span class="text-bold">utility</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             .text-ls-<a href="{{ site.baseurl }}/design-tokens/typesetting/letterspacing/" class="token">letterspacing</a>
           </span>

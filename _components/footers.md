@@ -63,13 +63,13 @@ subnav:
         <thead>
           <tr>
             <th scope="col" class="flex-6">Variant</th>
-            <th scope="col" class="flex-6">Usage</th>
+            <th scope="col" class="flex-6">Description</th>
           </tr>
         </thead>
         <tbody class="font-mono-2xs">
           <tr>
             <td class="flex-6" data-title="Variant">usa-footer--big</td>
-            <td class="flex-6" data-title="Usage">
+            <td class="flex-6" data-title="Description">
               <span class="font-lang-3xs">
                 A multi-column footer that expands and collapses on mobile.
               </span>
@@ -77,7 +77,7 @@ subnav:
           </tr>
           <tr>
             <td class="flex-6" data-title="Variant">usa-footer--slim</td>
-            <td class="flex-6" data-title="Usage">
+            <td class="flex-6" data-title="Description">
             <span class="font-lang-3xs">
               A compact version of the footer.
             </span>

@@ -93,13 +93,13 @@ A breadcrumb bar (or _breadcrumbs_, or _breadcrumb trail_) is a series of links 
         <thead>
           <tr>
             <th scope="col" class="flex-6">Variant</th>
-            <th scope="col" class="flex-6">Usage</th>
+            <th scope="col" class="flex-6">Description</th>
           </tr>
         </thead>
         <tbody class="font-mono-2xs">
           <tr>
             <td data-title="Variable" class="flex-6">usa-breadcrumb--wrap</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <p class="font-lang-3xs">
                 Wrap the breadcrumb bar instead of truncating.
               </p>

@@ -48,31 +48,31 @@ lead: A text input allows users to enter any combination of letters, numbers, or
       <thead>
         <tr>
           <th scope="col" class="flex-6">Variant</th>
-          <th scope="col" class="flex-6">Usage</th>
+          <th scope="col" class="flex-6">Description</th>
         </tr>
       </thead>
       <tbody class="font-mono-2xs">
         <tr>
           <td class="flex-6" data-title="Variant">usa-input--error</td>
-          <td class="flex-6" data-title="Usage">
+          <td class="flex-6" data-title="Description">
             <span class="font-lang-3xs">The error state of the text input.</span>
           </td>
         </tr>
         <tr>
           <td class="flex-6" data-title="Variant">usa-input--success</td>
-          <td class="flex-6" data-title="Usage">
+          <td class="flex-6" data-title="Description">
             <span class="font-lang-3xs">The success state of the text input.</span>
           </td>
         </tr>
         <tr>
           <td class="flex-6" data-title="Variant">usa-input--small</td>
-          <td class="flex-6" data-title="Usage">
+          <td class="flex-6" data-title="Description">
             <span class="font-lang-3xs">A smaller input with a max width of <code>8 units</code>.</span>
           </td>
         </tr>
         <tr>
           <td class="flex-6" data-title="Variant">usa-input--medium</td>
-          <td class="flex-6" data-title="Usage">
+          <td class="flex-6" data-title="Description">
             <span class="font-lang-3xs">A smaller input with a max width of <code>15 units</code>.</span>
           </td>
         </tr>

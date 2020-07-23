@@ -49,13 +49,13 @@ lead: The default button group arranges each button as a separate element with a
         <thead>
           <tr>
             <th scope="col" class="flex-6">Variant</th>
-            <th scope="col" class="flex-6">Usage</th>
+            <th scope="col" class="flex-6">Description</th>
           </tr>
         </thead>
         <tbody class="font-mono-2xs">
           <tr>
             <td data-title="Variant" class="flex-6">usa-button-group--segmented</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">Display a group of buttons in a row as a single element.</span>
             </td>
           </tr>

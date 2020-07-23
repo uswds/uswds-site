@@ -53,43 +53,43 @@ lead: An alert keeps users informed of important and sometimes time-sensitive ch
         <thead>
           <tr>
             <th scope="col" class="flex-6">Variant</th>
-            <th scope="col" class="flex-6">Usage</th>
+            <th scope="col" class="flex-6">Description</th>
           </tr>
         </thead>
         <tbody class="font-mono-2xs">
           <tr>
             <td data-title="Variant" class="flex-6">usa-alert--info</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">Display an informational status alert.</span>
             </td>
           </tr>
           <tr>
             <td data-title="Variant" class="flex-6">usa-alert--warning</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">Display a warning status alert.</span>
             </td>
           </tr>
           <tr>
             <td data-title="Variant" class="flex-6">usa-alert--error</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">Display an error status alert.</span>
             </td>
           </tr>
           <tr>
             <td data-title="Variant" class="flex-6">usa-alert--success</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">Display a success status alert.</span>
             </td>
           </tr>
           <tr>
             <td data-title="Variant" class="flex-6">usa-alert--slim</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">Display a slimmer version of the alert.</span>
             </td>
           </tr>
           <tr>
             <td data-title="Variant" class="flex-6">usa-alert--no-icon</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">Display an alert without an icon.</span>
             </td>
           </tr>

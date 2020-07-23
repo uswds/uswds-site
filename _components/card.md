@@ -94,25 +94,25 @@ Finally, a card is **modular**. This means that you can vary the order of cards 
         <thead>
           <tr>
             <th scope="col" class="flex-6">Variant</th>
-            <th scope="col" class="flex-6">Usage</th>
+            <th scope="col" class="flex-6">Description</th>
           </tr>
         </thead>
         <tbody class="font-mono-2xs">
           <tr>
             <td data-title="Variant" class="flex-6">usa-card--flag</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">Display in a horizontal ("flag") orientation at a specified width (`$theme-card-flag-min-width`).</span>
             </td>
           </tr>
           <tr>
             <td data-title="Variant" class="flex-6">usa-card--header-first</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">Displays the header element before the media element.</span>
             </td>
           </tr>
           <tr>
             <td data-title="Variant" class="flex-6">usa-card--media-right</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">
                 In combination with <code>usa-card--flag</code>, sets the media
                 element on the right. (Flag cards display media on the left by default.)
@@ -121,7 +121,7 @@ Finally, a card is **modular**. This means that you can vary the order of cards 
           </tr>
           <tr>
             <td data-title="Variant" class="flex-6">usa-card__media--indent</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">
                 Indents the media element so it doesn't extend to the edge of the card.
               </span>
@@ -129,7 +129,7 @@ Finally, a card is **modular**. This means that you can vary the order of cards 
           </tr>
           <tr>
             <td data-title="Variant" class="flex-6">usa-card__media--set-aspect</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">
                 Sets a fixed aspect ratio on the card media. The default is 16x9,
                 but this can be changed by adding an <code>add-aspect</code> utility
@@ -139,7 +139,7 @@ Finally, a card is **modular**. This means that you can vary the order of cards 
           </tr>
           <tr>
             <td data-title="Variant" class="flex-6">usa-card__media--exdent</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">
                 Extends the media element out over the card border.
                 Useful for light-bordered cards.
@@ -148,7 +148,7 @@ Finally, a card is **modular**. This means that you can vary the order of cards 
           </tr>
           <tr>
             <td data-title="Variant" class="flex-6">usa-card__body--exdent</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">
                 Extends the body element out over the card border.
                 Useful for light-bordered cards.
@@ -157,7 +157,7 @@ Finally, a card is **modular**. This means that you can vary the order of cards 
           </tr>
           <tr>
             <td data-title="Variant" class="flex-6">usa-card__footer--exdent</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">
                 Extends the footer element out over the card border.
                 Useful for light-bordered cards.

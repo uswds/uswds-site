@@ -91,13 +91,13 @@ lead: A tag draws attention to new or categorized content elements.
         <thead>
           <tr>
             <th scope="col" class="flex-6">Variant</th>
-            <th scope="col" class="flex-6">Usage</th>
+            <th scope="col" class="flex-6">Description</th>
           </tr>
         </thead>
         <tbody class="font-mono-2xs">
           <tr>
             <td data-title="Variant" class="flex-6">usa-tag--big</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">A tag with increased padding and font size.</span>
             </td>
           </tr>

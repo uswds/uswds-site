@@ -82,13 +82,13 @@ lead: Search allows users to search for specific content if they know what searc
         <thead>
           <tr>
             <th scope="col" class="flex-6">Variant</th>
-            <th scope="col" class="flex-6">Usage</th>
+            <th scope="col" class="flex-6">Description</th>
           </tr>
         </thead>
         <tbody class="font-mono-2xs">
           <tr>
             <td data-title="Variant" class="flex-6">usa-search--big</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">
                 Search component with increased padding and font-size.
               </span>
@@ -96,7 +96,7 @@ lead: Search allows users to search for specific content if they know what searc
           </tr>
           <tr>
             <td data-title="Variant" class="flex-6">usa-search--small</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">
                 A compact variation of the search. Uses a magnifying glass icon
                 for the submit button.

@@ -1,56 +1,56 @@
 name: General settings
-usage: General
+description: General
 contents:
   - name: Image path
-    usage: Use a path relative to the location of the final compiled CSS.
+    description: Use a path relative to the location of the final compiled CSS.
     var: $theme-image-path
     default: '"../img"'
     type: path
 
   - name: Show compile warnings
-    usage: Show Sass warnings when functions and mixins use non-standard tokens.
+    description: Show Sass warnings when functions and mixins use non-standard tokens.
     var: $theme-show-compile-warnings
     default: "true"
     type: boolean
 
   - name: Show notifications
-    usage: Show updates and notifications about the design system.
+    description: Show updates and notifications about the design system.
     var: $theme-show-notifications
     default: "true"
     type: boolean
 
   - name: Namespace
-    usage: Set a namespace for grid and utility classes.
+    description: Set a namespace for grid and utility classes.
     var: $theme-namespace
     default:
     type: map
     map:
       - key: grid.namespace
-        usage: The grid class prefix.
+        description: The grid class prefix.
         value: '"grid-"'
         type: string
       - key: grid.output
-        usage: Output grid prefix.
+        description: Output grid prefix.
         value: "true"
         type: boolean
       - key: utility.namespace
-        usage: The utility class prefix.
+        description: The utility class prefix.
         value: '"u-"'
         type: string
       - key: utility.output
-        usage: Output utility prefix.
+        description: Output utility prefix.
         value: "true"
         type: boolean
 
   - name: Important layout grid
-    usage: |
+    description: |
       Output grid classes output with "!important."
     var: $theme-layout-grid-use-important
     default: "false"
     type: boolean
 
   - name: Border box sizing
-    usage: |
+    description: |
       When set to true, sets the box-sizing property of all site elements to `border-box`.
     var: $theme-global-border-box-sizing
     default: "true"
@@ -65,7 +65,7 @@ contents:
 
   - name: Focus
     subsection: offset
-    usage: |
+    description: |
       The offset between the element and the focus outline
     var: $theme-focus-offset
     default: 0
@@ -80,14 +80,14 @@ contents:
 
   - name: Focus
     subsection: width
-    usage: |
+    description: |
       The width of the focus outline
     var: $theme-focus-width
     default: 0.5
     type: units
 
   - name: Icon size
-    usage: |
+    description: |
       The size of a standard UI icon (like a close box)
     var: $theme-icon-image-size
     default: 2

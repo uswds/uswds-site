@@ -68,7 +68,7 @@ lead: An accordion is a list of headers that hide or reveal additional content w
           <thead>
             <tr>
               <th scope="col" class="flex-6">Variant</th>
-              <th scope="col" class="flex-6">Usage</th>
+              <th scope="col" class="flex-6">Description</th>
             </tr>
           </thead>
           <tbody class="font-mono-2xs">
@@ -76,7 +76,7 @@ lead: An accordion is a list of headers that hide or reveal additional content w
               <td data-title="Variant" class="flex-6">
                 usa-accordion--bordered
               </td>
-              <td data-title="Usage" class="flex-6">
+              <td data-title="Description" class="flex-6">
                 <span class="font-lang-3xs">
                   <p>Display a border around accordion content.</p>
                 </span>

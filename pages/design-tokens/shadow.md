@@ -74,7 +74,7 @@ Your context and coding style determine how you access USWDS shadow tokens in co
         <td scope="row" data-title="Context">
           <span class="text-bold font-lang-3">function</span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             shadow(<a href="{{ site.baseurl }}/design-tokens/shadow/" class="token">shadow</a>)
           </span>
@@ -91,7 +91,7 @@ Your context and coding style determine how you access USWDS shadow tokens in co
             <span class="text-bold">mixin</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             u-shadow(<a href="{{ site.baseurl }}/design-tokens/shadow/" class="token">shadow</a>)
           </span>
@@ -108,7 +108,7 @@ Your context and coding style determine how you access USWDS shadow tokens in co
             <span class="text-bold font-lang-3">setting</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/shadow/" class="token">shadow</a>
           </span>
@@ -125,7 +125,7 @@ Your context and coding style determine how you access USWDS shadow tokens in co
             <span class="text-bold">utility</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             .shadow-<a href="{{ site.baseurl }}/design-tokens/shadow/" class="token">shadow</a>
           </span>

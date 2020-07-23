@@ -75,49 +75,49 @@ component_url: 'https://components.designsystem.digital.gov/components/detail/bu
         <thead>
           <tr>
             <th scope="col" class="flex-6">Variant</th>
-            <th scope="col" class="flex-6">Usage</th>
+            <th scope="col" class="flex-6">Description</th>
           </tr>
         </thead>
         <tbody class="font-mono-2xs">
           <tr>
             <td data-title="Variant" class="flex-6">usa-button--secondary</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">The secondary style of button.</span>
             </td>
           </tr>
           <tr>
             <td data-title="Variant" class="flex-6">usa-button--accent-cool</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">Button with a accent-cool background.</span>
             </td>
           </tr>
           <tr>
             <td data-title="Variant" class="flex-6">usa-button--base</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">Button with a base gray background.</span>
             </td>
           </tr>
           <tr>
             <td data-title="Variant" class="flex-6">usa-button--outline</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">Transparent button with a stroke.</span>
             </td>
           </tr>
           <tr>
             <td data-title="Variant" class="flex-6">usa-button--inverse</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">Outlined button for dark backgrounds.</span>
             </td>
           </tr>
           <tr>
             <td data-title="Variant" class="flex-6">usa-button--big</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">A bigger version of the default button.</span>
             </td>
           </tr>
           <tr>
             <td data-title="Variant" class="flex-6">usa-button--unstyled</td>
-            <td data-title="Usage" class="flex-6">
+            <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">A button that looks like a link.</span>
             </td>
           </tr>

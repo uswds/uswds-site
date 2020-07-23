@@ -70,7 +70,7 @@ lead: "Hierarchical, vertical navigation to place at the side of a page."
         settings=settings.contents
       %}
       <h5 id="component-variants">Side navigation variants</h5>
-      <p>This component doesn't have any variants.</p>
+      <p>This component has no variants.</p>
       <h4 class="usa-heading">Package information</h4>
       <ul class="usa-content-list">
         <li>

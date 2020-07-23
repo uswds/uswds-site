@@ -97,7 +97,7 @@ lead: Checkboxes allow users to select one or more options from a visible list.
       settings=settings.contents
     %}
     <h5 id="component-variants-checkbox">Checkbox variants</h5>
-    <p>This component doesn't have any variants.</p>
+    <p>This component has no variants.</p>
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">
       <li>

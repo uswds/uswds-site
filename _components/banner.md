@@ -57,7 +57,7 @@ lead: The banner identifies official websites of government organizations in the
         settings=settings.contents
       %}
       <h5 id="component-variants">Banner variants</h5>
-      <p>This component doesn't have any variants.</p>
+      <p>This component has no variants.</p>
       <h4 class="usa-heading">Package information</h4>
       <ul class="usa-content-list">
         <li>

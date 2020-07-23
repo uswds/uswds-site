@@ -42,7 +42,7 @@ lead: The default button group arranges each button as a separate element with a
       </ul>
       <h5 id="component-settings">Button group settings</h5>
       <p>
-        This component is affected by button settings.
+        This component has no settings.
       </p>
       <h5 id="component-variants">Button group variants</h5>
       <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants">

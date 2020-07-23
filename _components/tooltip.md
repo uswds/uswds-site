@@ -65,6 +65,8 @@ lead: A tooltip is a short descriptive message that appears when a user hovers o
       {% include settings-table-simple.html
         settings=settings.contents
       %}
+      <h5 id="tooltip-variants">Tooltip variants</h5>
+      <p>This component has no variants.</p>
       <h4 class="usa-heading">Package information</h4>
       <ul class="usa-content-list">
         <li>

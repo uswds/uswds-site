@@ -44,7 +44,7 @@ Please see the [Typesetting]({{ site.baseurl }}/design-tokens/typesetting){:.tex
           <td data-title="Example">
             <div class="font-lang-4 tablet:font-lang-6 line-height-sans-{{ item.token }} measure-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</div>
           </td>
-          <td data-title="Usage">
+          <td data-title="Description">
             <div class="font-lang-3 line-height-sans-3 measure-2"><strong>usage:</strong> {{ item.usage }}</div>
           </td>
           <td data-title="Output">
@@ -78,7 +78,7 @@ Your context and coding style determine how you access USWDS line height tokens 
         <td scope="row" data-title="Context">
           <span class="text-bold font-lang-3">function</span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span class="line-height-sans-6">
             line-height(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a>)<br/>
             lh(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a>)
@@ -97,7 +97,7 @@ Your context and coding style determine how you access USWDS line height tokens 
             <span class="text-bold">mixin</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             u-line-height(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a>)
           </span>
@@ -114,7 +114,7 @@ Your context and coding style determine how you access USWDS line height tokens 
             <span class="text-bold font-lang-3">setting</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a>
           </span>
@@ -131,7 +131,7 @@ Your context and coding style determine how you access USWDS line height tokens 
             <span class="text-bold">utility</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             .line-height-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/design-tokens/typesetting/letterspacing/" class="token">line height</a>
           </span>

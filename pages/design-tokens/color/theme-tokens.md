@@ -110,7 +110,7 @@ div {
         <td scope="row" data-title="Context">
           <span class="text-bold font-lang-3">function</span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             color(<a href="{{ site.baseurl }}/design-tokens/color/theme-tokens/" class="token">color</a>)
           </span>
@@ -128,7 +128,7 @@ div {
             <span>background-color</span>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             u-bg(<a href="{{ site.baseurl }}/design-tokens/color/theme-tokens/" class="token">color</a>)
           </span>
@@ -146,7 +146,7 @@ div {
             <span>color</span>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             u-text(<a href="{{ site.baseurl }}/design-tokens/color/theme-tokens/" class="token">color</a>)<br/>
           </span>
@@ -164,7 +164,7 @@ div {
             <span>border-color</span>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             u-border(<a href="{{ site.baseurl }}/design-tokens/color/theme-tokens/" class="token">color</a>)
           </span>
@@ -182,7 +182,7 @@ div {
             <span>text-decoration-color</span>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             u-underline(<a href="{{ site.baseurl }}/design-tokens/color/theme-tokens/" class="token">color</a>)
           </span>
@@ -199,7 +199,7 @@ div {
             <span class="text-bold font-lang-3">setting</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/color/theme-tokens/" class="token">color</a>
           </span>
@@ -217,7 +217,7 @@ div {
             <span>background-color</span>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             .bg-<a href="{{ site.baseurl }}/design-tokens/color/theme-tokens/" class="token">color</a>
           </span>
@@ -235,7 +235,7 @@ div {
             <span>border-color</span>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             .border-<a href="{{ site.baseurl }}/design-tokens/color/theme-tokens/" class="token">color</a>
           </span>
@@ -253,7 +253,7 @@ div {
             <span>color</span>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             .text-<a href="{{ site.baseurl }}/design-tokens/color/theme-tokens/" class="token">color</a>
           </span>
@@ -271,7 +271,7 @@ div {
             <span>outline-color</span>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             .outline-<a href="{{ site.baseurl }}/design-tokens/color/theme-tokens/" class="token">color</a>
           </span>
@@ -289,7 +289,7 @@ div {
             <span>text-decoration-color</span>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             .underline-<a href="{{ site.baseurl }}/design-tokens/color/theme-tokens/" class="token">color</a>
           </span>

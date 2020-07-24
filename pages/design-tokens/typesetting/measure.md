@@ -78,7 +78,7 @@ Your context and coding style determine how you access USWDS measure tokens in c
         <td scope="row" data-title="Context">
           <span class="text-bold font-lang-3">function</span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             measure(<a href="{{ site.baseurl }}/design-tokens/typesetting/measure/" class="token">measure</a>)
           </span>
@@ -95,7 +95,7 @@ Your context and coding style determine how you access USWDS measure tokens in c
             <span class="text-bold">mixin</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             u-measure(<a href="{{ site.baseurl }}/design-tokens/typesetting/measure/" class="token">measure</a>)
           </span>
@@ -112,7 +112,7 @@ Your context and coding style determine how you access USWDS measure tokens in c
             <span class="text-bold font-lang-3">setting</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/typesetting/measure/" class="token">measure</a>
           </span>
@@ -129,7 +129,7 @@ Your context and coding style determine how you access USWDS measure tokens in c
             <span class="text-bold">utility</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             .measure-<a href="{{ site.baseurl }}/design-tokens/typesetting/measure/" class="token">measure</a>
           </span>

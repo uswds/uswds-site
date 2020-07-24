@@ -143,7 +143,7 @@ Your context and coding style determine how you access USWDS font size tokens in
             <span class="text-bold">function</span>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             size(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>)
           </span>
@@ -161,7 +161,7 @@ Your context and coding style determine how you access USWDS font size tokens in
             <span class="display-block">font-size</span>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             u-font-size(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>)
           </span>
@@ -180,7 +180,7 @@ Your context and coding style determine how you access USWDS font size tokens in
             <span class="display-block">font-size</span>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             u-font(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>)
           </span>
@@ -197,7 +197,7 @@ Your context and coding style determine how you access USWDS font size tokens in
             <span class="text-bold">setting</span>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>
           </span>
@@ -216,7 +216,7 @@ Your context and coding style determine how you access USWDS font size tokens in
             <span class="display-block">font-size</span>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             .font-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>
           </span>

@@ -66,6 +66,10 @@ enable | .usa-date-picker element | The date picker component will be enabled.
 disable | .usa-date-picker element | The date picker component will be disabled/readonly.
 
 </div>
+    <h5 id="date-picker-settings">Date picker settings</h5>
+    <p>This component has no settings.</p>
+    <h5 id="date-picker-variants">Date picker variants</h5>
+    <p>This component has no variants.</p>
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">
       <li>

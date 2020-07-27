@@ -48,6 +48,10 @@ lead: Character count helps users know how much text they can enter when there i
         <strong>Account for no-JavaScript environments.</strong> Add a default message in the message element that refers to the character limit. This will appear in instances when JavaScript does not load.
       </li>
     </ul>
+    <h5 id="character-count-settings">Character count settings</h5>
+    <p>This component has no settings.</p>
+    <h5 id="character-count-variants">Character count variants</h5>
+    <p>This component has no variants.</p>
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">
       <li>

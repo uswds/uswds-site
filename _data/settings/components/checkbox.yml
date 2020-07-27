@@ -1,0 +1,7 @@
+name: Checkbox
+contents:
+  - name: Border radius
+    usage:
+    var: $theme-checkbox-border-radius
+    default: '"sm"'
+    type: units

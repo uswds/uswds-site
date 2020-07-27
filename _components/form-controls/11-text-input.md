@@ -37,14 +37,55 @@ lead: A text input allows users to enter any combination of letters, numbers, or
       <li><strong>Avoid placeholder text.</strong> Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio.</li>
       <li><strong>Avoid splitting numbers.</strong> Avoid breaking numbers with distinct sections (such as phone numbers, Social Security Numbers, or credit card numbers) into separate input fields. For example, use one input for phone number, not three (one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.</li>
     </ul>
-      <h4 class="usa-heading">Package information</h4>
-      <ul class="usa-content-list">
-        <li>
-          <strong>Package usage:</strong> <code>@import form-controls</code>
-        </li>
-        <li>
-          <strong>Requires:</strong> <code>required</code>, <code>global</code>
-        </li>
-      </ul>
+    <h4 class="usa-heading">Implementation</h4>
+    <h5 id="component-settings-text-input">Text input settings</h5>
+    {% assign settings = site.data.settings.components.input %}
+    {% include settings-table-simple.html
+      settings=settings.contents
+    %}
+    <h5 id="component-variants-text-input">Text input variants</h5>
+    <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants-text-input">
+      <thead>
+        <tr>
+          <th scope="col" class="flex-6">Variant</th>
+          <th scope="col" class="flex-6">Description</th>
+        </tr>
+      </thead>
+      <tbody class="font-mono-2xs">
+        <tr>
+          <td class="flex-6" data-title="Variant">usa-input--error</td>
+          <td class="flex-6" data-title="Description">
+            <span class="font-lang-3xs">The error state of the text input.</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="flex-6" data-title="Variant">usa-input--success</td>
+          <td class="flex-6" data-title="Description">
+            <span class="font-lang-3xs">The success state of the text input.</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="flex-6" data-title="Variant">usa-input--small</td>
+          <td class="flex-6" data-title="Description">
+            <span class="font-lang-3xs">A smaller input with a max width of <code>8 units</code>.</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="flex-6" data-title="Variant">usa-input--medium</td>
+          <td class="flex-6" data-title="Description">
+            <span class="font-lang-3xs">A smaller input with a max width of <code>15 units</code>.</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h4 class="usa-heading">Package information</h4>
+    <ul class="usa-content-list">
+      <li>
+        <strong>Package usage:</strong> <code>@import form-controls</code>
+      </li>
+      <li>
+        <strong>Requires:</strong> <code>required</code>, <code>global</code>
+      </li>
+    </ul>
   </div>
 </div>

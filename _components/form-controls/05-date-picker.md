@@ -16,7 +16,7 @@ lead: A date picker helps users select a single date.
   <div id="date-picker-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
     <h4>When to use the date picker component</h4>
     <ul class="usa-content-list">
-      <li><strong>Scheduling.</strong> When users needs to schedule an event and benefit from the context of a calendar.</li>
+      <li><strong>Scheduling.</strong> When users need to schedule or record an event and benefit from the context of a calendar.</li>
       <li><strong>When the day of the week is important.</strong> When knowing the day of the week helps users choose a specific date.</li>
     </ul>
     <h4>When to consider something else</h4>
@@ -58,7 +58,7 @@ data-range-date | .usa-date-picker | The date picker will show a range selection
 
 {:.usa-content-list}
 
-- **Additional component procedures.**  The following static procedures update the component after initialization. These are in addition to the primary methods referenced in the <a href="{{ site.baseurl }}/documentation/developers/#js-customization">JS customization</a> documentation.
+- **Additional component procedures.** The following static procedures update the component after initialization. These are in addition to the primary methods referenced in the <a href="{{ site.baseurl }}/documentation/developers/#js-customization">JS customization</a> documentation.
 
 | procedure | parameters | effect |
 | --- | --- | ---
@@ -66,6 +66,10 @@ enable | .usa-date-picker element | The date picker component will be enabled.
 disable | .usa-date-picker element | The date picker component will be disabled/readonly.
 
 </div>
+    <h5 id="date-picker-settings">Date picker settings</h5>
+    <p>This component has no settings.</p>
+    <h5 id="date-picker-variants">Date picker variants</h5>
+    <p>This component has no variants.</p>
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">
       <li>

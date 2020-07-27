@@ -109,7 +109,7 @@ Your context and coding style determine how you access USWDS order tokens in cod
         <td scope="row" data-title="Context">
           <span class="text-bold font-lang-3">function</span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             order(<a href="{{ site.baseurl }}/design-tokens/order/" class="token">order</a>)
           </span>
@@ -126,7 +126,7 @@ Your context and coding style determine how you access USWDS order tokens in cod
             <span class="text-bold">mixin</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             u-order(<a href="{{ site.baseurl }}/design-tokens/order/" class="token">order</a>)
           </span>
@@ -143,7 +143,7 @@ Your context and coding style determine how you access USWDS order tokens in cod
             <span class="text-bold font-lang-3">setting</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/order/" class="token">order</a>
           </span>
@@ -160,7 +160,7 @@ Your context and coding style determine how you access USWDS order tokens in cod
             <span class="text-bold">utility</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             .order-<a href="{{ site.baseurl }}/design-tokens/order/" class="token">order</a>
           </span>

@@ -111,7 +111,7 @@ Many mixins and utilities accept spacing unit tokens. See the [utilities section
         <td scope="row" data-title="Context">
           <span class="text-bold font-lang-3">function</span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             units(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
@@ -132,7 +132,7 @@ Many mixins and utilities accept spacing unit tokens. See the [utilities section
             <span>min-width media query</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             at-media(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
@@ -150,7 +150,7 @@ Many mixins and utilities accept spacing unit tokens. See the [utilities section
             <span>max-width media query</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             at-media-max(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
@@ -167,7 +167,7 @@ Many mixins and utilities accept spacing unit tokens. See the [utilities section
             <span class="text-bold font-lang-3">setting</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
@@ -184,7 +184,7 @@ Many mixins and utilities accept spacing unit tokens. See the [utilities section
             <span class="text-bold">utility</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             .padding-x-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a><br/>
             .margin-x-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>

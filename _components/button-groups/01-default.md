@@ -40,8 +40,27 @@ lead: The default button group arranges each button as a separate element with a
         </ul>
         </li>
       </ul>
-
-
+      <h5 id="component-settings">Button group settings</h5>
+      <p>
+        This component has no settings.
+      </p>
+      <h5 id="component-variants">Button group variants</h5>
+      <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants">
+        <thead>
+          <tr>
+            <th scope="col" class="flex-6">Variant</th>
+            <th scope="col" class="flex-6">Description</th>
+          </tr>
+        </thead>
+        <tbody class="font-mono-2xs">
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-button-group--segmented</td>
+            <td data-title="Description" class="flex-6">
+              <span class="font-lang-3xs">Display a group of buttons in a row as a single element.</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
       <h4 class="usa-heading">Package information</h4>
       <ul class="usa-content-list">
         <li>

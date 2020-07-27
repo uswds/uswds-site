@@ -16,7 +16,7 @@ lead: A date range picker helps users select a range between two dates.
   <div id="date-range-picker-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
     <h4>When to use the date range picker component</h4>
     <ul class="usa-content-list">
-      <li><strong>Scheduling.</strong> When users needs to schedule an event and benefit from the context of a calendar.</li>
+      <li><strong>Scheduling.</strong> When users need to schedule or record an event and benefit from the context of a calendar.</li>
       <li><strong>When the day of the week is important.</strong> When knowing the day of the week helps users choose a specific date.</li>
     </ul>
     <h4>When to consider something else</h4>
@@ -45,6 +45,10 @@ data-min-date | .usa-date-picker | The date picker will not allow a date selecti
 data-max-date | .usa-date-picker | The date picker will not allow a date selection after this date. The date should be in the format YYYY-MM-DD. Typing in an later date will cause native form validation error. There is no default maximum date.
 
 </div>
+    <h5 id="date-range-picker-settings">Date range picker settings</h5>
+    <p>This component has no settings.</p>
+    <h5 id="date-range-picker-variants">Date range picker variants</h5>
+    <p>This component has no variants.</p>
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">
       <li>

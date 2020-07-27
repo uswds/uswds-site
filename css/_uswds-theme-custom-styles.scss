@@ -2654,6 +2654,11 @@ $theme-table-column-gap: 4;
         }
       }
     }
+
+    .site-component-usage h5 + & {
+      border-top: units(2px) solid;
+      margin-top: units(1);
+    }
   }
 
   &.site-table-simple {

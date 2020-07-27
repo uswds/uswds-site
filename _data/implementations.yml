@@ -74,7 +74,7 @@
     name: Truss
     url: https://github.com/trussworks
   version: 1.6.1
-  notes: "A front-end component library aimed at implementing USWDS design patterns in react."
+  notes: "A front-end component library aimed at implementing USWDS design patterns in React."
 
 - name: us_web_design_standards gem
   distribution: Ruby gem

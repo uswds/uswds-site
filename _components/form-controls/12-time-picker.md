@@ -45,7 +45,7 @@ initProps:
 
 {:.usa-content-list}
 
-- **Initialization properties.** The following properties update the component during initialization. These properties must be set before the component is initialized in order to have an effect. These are specfic to time picker but this also transforms into a <a href="{{ site.baseurl }}/form-controls/#combo-box">combo box</a> instance. You can reference it's docs for more information.
+- **Initialization properties.** The following properties update the component during initialization. These properties must be set before the component is initialized in order to have an effect. These are specific to time picker but this also transforms into a <a href="{{ site.baseurl }}/form-controls/#combo-box">combo box</a> instance. Reference the combo box documentation for more information.
 
 {% include settings-table-flex.html
   content=page.initProps

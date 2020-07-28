@@ -2,17 +2,17 @@
 title: Time picker
 parent: Form controls
 order: 12
-lead: A time picker helps users select a time of day.
+lead: A time picker helps users select a specific time.
 initProps:
-  - property: data-min-time
+  - property: "`data-min-time`"
     element: .usa-time-picker
-    effect: The start time that would be used for the time picker combo-box options. Given in `hh:mm` 24 hour format. The default is `00:00`.
-  - property: data-max-time
+    description: The start time that would be used for the time picker combo-box options. Given in `hh:mm` 24 hour format. The default is `00:00`.
+  - property: "`data-max-time`"
     element: .usa-time-picker
-    effect: The end time that would be used for the time picker combo-box options. Given in `hh:mm` 24 hour format. The default is `23:59`.
-  - property: data-step
+    description: The end time that would be used for the time picker combo-box options. Given in `hh:mm` 24 hour format. The default is `23:59`.
+  - property: "`data-step`"
     element: .usa-time-picker
-    effect: The number of minutes between options. The minimum is 1 minute. The default is 30 minutes.
+    description: The number of minutes between options. The minimum is 1 minute. The default is 30 minutes.
 ---
 
 {% include code/preview.html component="time-picker" %}
@@ -49,7 +49,7 @@ initProps:
 
 {% include settings-table-flex.html
   content=page.initProps
-  cols="flex-3, flex-3, flex-8"
+  cols="flex-1, flex-1, flex-2"
 %}
 
 </div>

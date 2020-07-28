@@ -1,7 +1,7 @@
 ---
 title: Time picker
 parent: Form controls
-order: 13
+order: 12
 lead: A time picker helps users select a time of day.
 ---
 

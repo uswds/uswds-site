@@ -3,6 +3,16 @@ title: Time picker
 parent: Form controls
 order: 12
 lead: A time picker helps users select a time of day.
+initProps:
+  - property: data-min-time
+    element: .usa-time-picker
+    effect: The start time that would be used for the time picker combo-box options. Given in `hh:mm` 24 hour format. The default is `00:00`.
+  - property: data-max-time
+    element: .usa-time-picker
+    effect: The end time that would be used for the time picker combo-box options. Given in `hh:mm` 24 hour format. The default is `23:59`.
+  - property: data-step
+    element: .usa-time-picker
+    effect: The number of minutes between options. The minimum is 1 minute. The default is 30 minutes.
 ---
 
 {% include code/preview.html component="time-picker" %}
@@ -37,11 +47,10 @@ lead: A time picker helps users select a time of day.
 
 - **Initialization properties.** The following properties update the component during initialization. These properties must be set before the component is initialized in order to have an effect. These are specfic to time picker but this also transforms into a <a href="{{ site.baseurl }}/form-controls/#combo-box">combo box</a> instance. You can reference it's docs for more information.
 
-| property | element | effect |
-| --- | --- | ---
-data-min-time | .usa-time-picker | The start time that would be used for the time picker combo-box options. Given in hh:mm 24 hour format. The default is 00:00.
-data-max-time | .usa-time-picker | The end time that would be used for the time picker combo-box options. Given in hh:mm 24 hour format. The default is 23:59.
-data-step | .usa-time-picker | The number of minutes between options. The minimum is 1 minute. The default is 30 minutes.
+{% include settings-table-flex.html
+  content=page.initProps
+  cols="flex-3, flex-3, flex-8"
+%}
 
 </div>
     <h4 class="usa-heading">Package information</h4>

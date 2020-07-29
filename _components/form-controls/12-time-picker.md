@@ -30,7 +30,7 @@ initProps:
     </ul>
     <h4>When to consider something else</h4>
     <ul class="usa-content-list">
-      <li><strong>Exact time.</strong> Though 1-minute increments are possible using the <code>data-step</code> attribute, plain text input is more appropriate for historical exact times, like time of birth.</li>
+      <li><strong>Exact time.</strong> Plain text input is more appropriate for historical exact times, like time of birth.</li>
     </ul>
     <h4>Usability guidance</h4>
     <ul class="usa-content-list">

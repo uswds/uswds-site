@@ -34,18 +34,18 @@ initProps:
     </ul>
     <h4>Usability guidance</h4>
     <ul class="usa-content-list">
-      <li><strong>See combo-box.</strong> The time picker is a specialized combo box, see the <a href="{{ site.baseurl }}/form-controls/#combo-box">combo box</a> documentation for complete usability guidance.</li>
+      <li><strong>See combo box usability guidance.</strong> The time picker is a specialized combo box, see the <a href="{{ site.baseurl }}/components/form-controls/#combo-box">combo box</a> documentation for complete usability guidance.</li>
     </ul>
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
-      <li><strong>See combo-box.</strong> The time picker is a specialized combo box, see the <a href="{{ site.baseurl }}/form-controls/#combo-box">combo box</a> documentation for complete accessibility guidance.</li>
+      <li><strong>See combo box accessibility guidance.</strong> The time picker is a specialized combo box, see the <a href="{{ site.baseurl }}/components/form-controls/#combo-box">combo box</a> documentation for complete accessibility guidance.</li>
     </ul>
     <h4 class="usa-heading">Implementation</h4>
 <div class="usa-prose site-prose">
-  <p>The properties and procedures listed below that show <code>.usa-time-picker</code> as the element are specific to the time picker, but the time picker is a specialized <a href="{{ site.baseurl }}/form-controls/#combo-box">combo box</a> instance, and supports the all combo box properties and procedures on <code>.usa-time-picker</code> just as on <code>.usa-combo-box</code>. </p>
+  <p>The properties and procedures listed below that show <code>.usa-time-picker</code> as the element are specific to the time picker, but the time picker is a specialized <a href="{{ site.baseurl }}/components/form-controls/#combo-box">combo box</a> instance, and supports the all combo box properties and procedures on <code>.usa-time-picker</code> just as on <code>.usa-combo-box</code>. </p>
   <ul class="usa-content-list">
     <li>
-        <strong>Initialization properties.</strong> The following properties update the component during initialization. These properties must be set before the component is initialized in order to have an effect. Those listed below that show <code>.usa-time-picker</code> as the element are specific to the time picker, but the time picker is a specialized <a href="{{ site.baseurl }}/form-controls/#combo-box">combo box</a> instance, and supports the combo box initialization properties on <code>.usa-time-picker</code> just as on <code>.usa-combo-box</code>.
+        <strong>Initialization properties.</strong> The following properties update the component during initialization. These properties must be set before the component is initialized in order to have an effect. Those listed below that show <code>.usa-time-picker</code> as the element are specific to the time picker, but the time picker is a specialized <a href="{{ site.baseurl }}/components/form-controls/#combo-box">combo box</a> instance, and supports the combo box initialization properties on <code>.usa-time-picker</code> just as on <code>.usa-combo-box</code>.
         {% assign comboBox = site.components | where: "title", "Combo box" | first %}
         {% assign initPropsCombined = comboBox.initProps | concat: page.initProps %}
         {% include settings-table-flex.html

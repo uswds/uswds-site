@@ -24,8 +24,8 @@ You can also <a href="https://github.com/uswds/uswds/milestone/52" class="">view
       <ul class="site-roadmap-list__sublist">
         <li class="site-roadmap-list__item"><span class="flex-fill">Card</span> <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Breadcrumb</span> <span class="usa-tag label-done">Done</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Character limit</span> <span class="usa-tag label-done">Done</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Autocomplete combobox</span> <span class="usa-tag label-done">Done</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Character count</span> <span class="usa-tag label-done">Done</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Combobox</span> <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Button group</span> <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Date picker</span>  <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Date range picker</span>  <span class="usa-tag label-done">Done</span></li>

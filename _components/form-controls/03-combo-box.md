@@ -12,7 +12,7 @@ initProps:
     description: The combo box component will be disabled / readonly. You can re-enable by executing the enable procedure on the component.
   - property: "`data-placeholder`"
     element: .usa-combo-box
-    description: To update the placeholder text of the combo-box use the `data-placeholder` attribute. Is it recommended that a label or hint is used in lieu of a placeholder.
+    description: To update the placeholder text of the combo-box use the `data-placeholder` attribute. We recommended using a label or hint instead of a placeholder.
   - property: "`data-default-value`"
     element: .usa-combo-box
     description: The combo box will set this value as the default selection if it is found within the select options.

@@ -66,6 +66,16 @@
     url: https://github.com/18F
   notes: "This [Ruby on Rails](http://rubyonrails.org/) gem is not currently maintained."
 
+- name: react-uswds
+  distribution: React
+  id: react-uswds
+  url: https://github.com/trussworks/react-uswds
+  author:
+    name: Truss
+    url: https://github.com/trussworks
+  version: 1.6.1
+  notes: "A front-end component library aimed at implementing USWDS design patterns in React."
+
 - name: us_web_design_standards gem
   distribution: Ruby gem
   url: https://github.com/18F/us_web_design_standards_gem

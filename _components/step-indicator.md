@@ -17,11 +17,11 @@ lead: A step indicator tells users how many steps there are in a form or process
       Guidance
     </button>
     <div id="sidenav-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
-      <h4>When to use the side step indicator</h4>
+      <h3>When to use the side step indicator</h3>
       <ul class="usa-content-list">
         <li><strong>Multiple steps and screens.</strong> When the user is working through a form or process that will span several different pages that can be organized into three or more high-level steps or chapters. This helps users see the “light at the end of the tunnel” when completing long forms, and it helps reduce uncertainty as they complete each screen.</li>
       </ul>
-      <h4>When to consider something else</h4>
+      <h3>When to consider something else</h3>
       <ul class="usa-content-list">
         <li>
           <strong>Complex forms with conditional logic.</strong>If the number of steps might change due to user input, this might not be the component you’re looking for. (Or, you may want to consider simplifying your form.)
@@ -30,7 +30,7 @@ lead: A step indicator tells users how many steps there are in a form or process
           <strong>Very short forms.</strong> Don’t use a step indicator when there’s no need to break up a short form into chapters.
         </li>
       </ul>
-      <h4>Usability guidance</h4>
+      <h3>Usability guidance</h3>
       <ul class="usa-content-list">
         <li>
           <strong>Use single-word labels.</strong> If placing labels below the step indicators, stick to very short 
@@ -48,7 +48,7 @@ lead: A step indicator tells users how many steps there are in a form or process
           <strong>Indicate where a user is in the process. </strong> Use the same color for all steps before and after the user’s current step. Use a different color with sufficient contrast for the current step line.
         </li>
       </ul>
-      <h4 class="usa-heading">Accessibility</h4>
+      <h3 class="usa-heading">Accessibility</h3>
       <ul class="usa-content-list">
         <li>
           <strong>Use semantic heading levels</strong> Though the example above uses an <code>&lt;h2&gt;</code>, use the correct heading level and avoid improper nesting.
@@ -66,7 +66,7 @@ lead: A step indicator tells users how many steps there are in a form or process
           <strong>Hide unlabeled segments</strong> There is no content inside the segments when labels are not used, so it is safe to add <code>aria-hidden="true"</code> to the element with the class name <code>usa-step-indicator__segments</code>.
         </li>
       </ul>
-      <h4 class="usa-heading">Implementation</h4>
+      <h3 class="usa-heading">Implementation</h3>
       <ul class="usa-content-list">
         <li>
           <strong>No labeled segments if more than four steps.</strong> This component can’t accommodate more than four labels on mobile screens. If you have more than four steps, use the version without labeled segments.
@@ -75,12 +75,12 @@ lead: A step indicator tells users how many steps there are in a form or process
           <strong>Pay attention to visually hidden text.</strong> Step indicator uses visual elements to convey information. Don’t forget to include text for screen readers.
         </li>
       </ul>
-      <h5 id="component-settings">Step Inidcator settings</h5>
+      <h4 id="component-settings">Step Inidcator settings</h4>
       {% assign settings = site.data.settings.components.step-indicator %}
       {% include settings-table-simple.html
         settings=settings.contents
       %}
-      <h5 id="component-variants">Side navigation variants</h5>
+      <h4 id="component-variants">Side navigation variants</h4>
       <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants">
         <thead>
           <tr>

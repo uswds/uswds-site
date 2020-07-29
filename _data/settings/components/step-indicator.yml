@@ -1,0 +1,62 @@
+name: Step indicator
+contents:
+  - name: Indicator gap
+    description: Space between indicator segments
+    var: $theme-step-indicator-gap
+    default: 2px
+    type: units
+  - name: Label font size
+    description: Font size for segment labels
+    var: $theme-step-indicator-label-font-size
+    default: sm
+    type: size
+  - name: Label font size (sm)
+    description: Font size for segment labels on mobile devices
+    var: $theme-step-indicator-label-font-size-small
+    default: 3xs
+    type: size
+  - name: Bottom margin
+    description: Margin below indicator
+    var: $theme-step-indicator-margin-bottom
+    default: 4
+    type: units
+  - name: Min width
+    description: Breakpoint where font sizes change
+    var: $theme-step-indicator-min-width
+    default: mobile-lg
+    type: size
+  - name: Segment height
+    description: Height setting for each segment
+    var: $theme-step-indicator-segment-height
+    default: 1
+    type: units
+  - name: Step color
+    description: Default color of segment steps
+    var: $theme-step-indicator-step-color
+    default: 'primary-light'
+    type: color
+  - name: Current step color
+    description: Color segment indicating current step
+    var: $theme-step-indicator-step-color-current
+    default: 'primary-dark'
+    type: color
+  - name: Completed step color
+    description: Color segment indicating complete step
+    var: $theme-step-indicator-step-color-complete
+    default: 'primary-dark'
+    type: color
+  - name: Font family
+    description: Font family used in header
+    var: $theme-step-indicator-font-family
+    default: 'ui'
+    type: family
+  - name: Header font size
+    description: Font sizes used in header
+    var: $theme-step-indicator-font-size
+    default: 'lg'
+    type: size
+  - name: Header font size (sm)
+    description: Font sizes used in header on mobile devices
+    var: $theme-step-indicator-font-size-small
+    default: 'md'
+    type: size

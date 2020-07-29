@@ -1,32 +1,36 @@
 {% assign content = include.content %}
 
-{% assign schema = content[0] %}
-{% assign cols = include.cols | remove: " " | split: "," %}
+{% if content != nil  %}
+  {% assign schema = content[0] %}
+  {% assign cols = include.cols | remove: " " | split: "," %}
 
-<table class="usa-table--borderless site-table-responsive site-table-simple">
-  <thead>
-    <tr>
-      {% for item in schema %}
-      {% assign colKey = forloop.index | minus: 1 %}
-      <th scope="col" class="{{ cols[colKey] }}">{{ item[0] | capitalize }}</th>
+  <table class="usa-table--borderless site-table-responsive site-table-simple margin-top-105">
+    <thead>
+      <tr>
+        {% for item in schema %}
+        {% assign colKey = forloop.index | minus: 1 %}
+        <th scope="col" class="{{ cols[colKey] }}">{{ item[0] | capitalize }}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody class="font-mono-2xs">
+      {% for row in content %}
+      <tr>
+        {% for column in row %}
+        {% assign colKey = forloop.index | minus: 1 %}
+        <td class="{{ cols[colKey] }}"
+          scope="row"
+          data-title="{{ column[0] | capitalize }}"
+          >
+          <span class="font-lang-3xs">
+            {{ column[1] | markdownify }}
+          </span>
+        </td>
+        {% endfor %}
+      </tr>
       {% endfor %}
-    </tr>
-  </thead>
-  <tbody class="font-mono-2xs">
-    {% for row in content %}
-    <tr>
-      {% for column in row %}
-      {% assign colKey = forloop.index | minus: 1 %}
-      <td class="{{ cols[colKey] }}"
-        scope="row"
-        data-title="{{ column[0] | capitalize }}"
-        >
-        <span class="font-lang-3xs">
-          {{ column[1] | markdownify }}
-        </span>
-      </td>
-      {% endfor %}
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+    </tbody>
+  </table>
+{% else %}
+  <p>This component has no {{ include.section }}.</p>
+{% endif %}

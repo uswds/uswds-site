@@ -108,39 +108,45 @@ procedures:
     </ul>
     <h4 class="usa-heading">Implementation</h4>
 <div class="usa-prose site-prose" markdown="1">
-
-{:.usa-content-list}
-
-- **Initialization properties.** The following properties update the component during initialization. These properties must be set before the component is initialized in order to have an effect.
-
-{% include settings-table-flex.html
-  content=page.initProps
-  cols="flex-1, flex-1, flex-2"
-%}
-
-{:.usa-content-list}
-
-- **Component properties.** The following properties modify component functionality. These properties can be set or adjusted at any time before or after initialization in order to have an effect.
-
-{% include settings-table-flex.html
-  content=page.props
-  cols="flex-1, flex-1, flex-2"
-%}
-
-{:.usa-content-list }
-
-- **Additional component procedures.** The following static procedures update the component after initialization. These are in addition to the primary methods referenced in the <a href="{{ site.baseurl }}/documentation/developers/#js-customization">JS customization</a> documentation.
-
-{% include settings-table-flex.html
-  content=page.procedures
-  cols="flex-1, flex-1, flex-2"
-%}
-
+  <ul class="usa-content-list">
+    <li>
+        <strong>Initialization properties.</strong> The following properties update the component during initialization. These properties must be set before the component is initialized in order to have an effect.
+        {% include settings-table-flex.html
+          content=page.initProps
+          cols="flex-1, flex-1, flex-2"
+          section="initialization properties"
+        %}
+    </li>
+    <li class="border-0">
+        <strong>Component properties.</strong> The following properties modify component functionality. These properties can be set or adjusted at any time before or after initialization in order to have an effect.
+        {% include settings-table-flex.html
+          content=page.props
+          cols="flex-1, flex-1, flex-2"
+          section="component properties"
+        %}
+    </li>
+    <li class="border-0">
+        <strong>Additional component procedures.</strong> TThe following static procedures update the component after initialization. These are in addition to the primary methods referenced in the <a href="{{ site.baseurl }}/documentation/developers/#js-customization">JS customization</a> documentation.
+        {% include settings-table-flex.html
+          content=page.procedures
+          cols="flex-1, flex-1, flex-2"
+          section="additional component procedures"
+        %}
+    </li>
+  </ul>
 </div>
     <h5 id="combo-box-settings">Combo box settings</h5>
-    <p>This component has no settings.</p>
+    {% include settings-table-flex.html
+      content=site.data.settings.components.combo-box
+      cols="flex-1, flex-1"
+      section="settings"
+    %}
     <h5 id="combo-box-variants">Combo box variants</h5>
-    <p>This component has no variants.</p>
+    {% include settings-table-flex.html
+      content=page.variants
+      cols="flex-1, flex-1"
+      section="variants"
+    %}
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">
       <li>

@@ -126,7 +126,7 @@ body {
     margin-left: units($theme-site-margins-mobile-width);
 
     @include at-media("desktop") {
-      display: initial;
+      display: inherit;
       float: left;
       margin-bottom: 0;
       margin-left: units($theme-site-margins-width);
@@ -134,7 +134,7 @@ body {
 
     .usa-logo__text {
       @include at-media("desktop") {
-        display: initial;
+        display: inherit;
         letter-spacing: ls(-1);
       }
     }
@@ -2319,7 +2319,7 @@ h6 + div:not(.usa-accordion__content) {
       display: none;
 
       @include at-media("desktop") {
-        display: initial;
+        display: inherit;
       }
     }
   }

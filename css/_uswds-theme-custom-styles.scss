@@ -1472,12 +1472,6 @@ code {
     .usa-media-block {
       @include at-media("desktop") {
         @include u-flex("column");
-
-        // IE11 overlap issue.
-        &__body {
-          width: 100%;
-          flex: 0 0 auto;
-        }
       }
     }
 
@@ -1492,6 +1486,12 @@ code {
       > p {
         @include u-font("lang", $media-block-body-font-size);
         margin: units(0.5) 0;
+      }
+
+      // IE11 overlap issue.
+      @include at-media("desktop") {
+        width: 100%;
+        flex: 0 0 auto;
       }
     }
 

@@ -1472,6 +1472,12 @@ code {
     .usa-media-block {
       @include at-media("desktop") {
         @include u-flex("column");
+
+        // IE11 overlap issue.
+        &__body {
+          width: 100%;
+          flex: 0 0 auto;
+        }
       }
     }
 
@@ -2321,6 +2327,14 @@ h6 + div:not(.usa-accordion__content) {
       @include at-media("desktop") {
         display: inherit;
       }
+    }
+  }
+
+  // Read website standards, Download, Github buttons
+  .buttons {
+    @include at-media("desktop") {
+      display: flex;
+      align-items: center;
     }
   }
 }

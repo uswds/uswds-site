@@ -2,9 +2,11 @@
 title: U.S. Web Design System (USWDS)
 description: USWDS makes it easier to build accessible, mobile-friendly government websites for the American public.
 google_analytics_ua: UA-48605964-43
-uswds_version: "2.8.1"
+uswds_version: 2.8.1
 components_url: "https://components.designsystem.digital.gov"
-components_url_v2_preview: "https://federalist-3b6ba08e-0df4-44c9-ac73-6fc193b0e19c.app.cloud.gov/preview/uswds/uswds/release-{{ uswds_version }}/components/preview"
+federalist_base: "https://federalist-3b6ba08e-0df4-44c9-ac73-6fc193b0e19c.app.cloud.gov/preview/uswds/uswds"
+federalist_component_preview: "components/preview"
+federalist_release_prefix: "release-"
 meta:
   og:image: /img/uswds-logo/lg-black.png
 

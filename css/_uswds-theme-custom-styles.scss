@@ -2325,7 +2325,7 @@ h6 + div:not(.usa-accordion__content) {
       display: none;
 
       @include at-media("desktop") {
-        display: inherit;
+        display: block;
       }
     }
   }

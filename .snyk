@@ -414,6 +414,28 @@ ignore:
     - uswds > @frctl/fractal > marked:
         reason: No patch available
         expires: '2020-09-12T03:55:15.829Z'
+  SNYK-JS-LODASH-590103:
+    - gulp-eslint > eslint > lodash:
+        reason: Fix does not work
+        expires: '2020-09-16T16:09:09.498Z'
+    - gulp-eslint > eslint > inquirer > lodash:
+        reason: Fix does not work
+        expires: '2020-09-16T16:09:09.498Z'
+    - gulp-eslint > eslint > table > lodash:
+        reason: Fix does not work
+        expires: '2020-09-16T16:09:09.498Z'
+    - gulp-sass > lodash:
+        reason: Fix does not work
+        expires: '2020-09-16T16:09:09.498Z'
+    - gulp-sass > node-sass > lodash:
+        reason: Fix does not work
+        expires: '2020-09-16T16:09:09.498Z'
+    - gulp-sass > node-sass > sass-graph > lodash:
+        reason: Fix does not work
+        expires: '2020-09-16T16:09:09.498Z'
+    - gulp-sass > node-sass > gaze > globule > lodash:
+        reason: Fix does not work
+        expires: '2020-09-16T16:09:09.499Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

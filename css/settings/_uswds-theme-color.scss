@@ -7,13 +7,13 @@
 ========================================
 ========================================
 ----------------------------------------
-USWDS 2.0.0 Beta 6
+USWDS 2.8.0
 ----------------------------------------
 COLOR SETTINGS
 ----------------------------------------
 Read more about settings and
 USWDS color tokens in the documentation:
-https://v2.designsystem.digital.gov/style-tokens/color
+https://designsystem.digital.gov/design-tokens/color
 ----------------------------------------
 */
 
@@ -131,3 +131,6 @@ $theme-link-color:             'primary';
 $theme-link-visited-color:     'violet-70v';
 $theme-link-hover-color:       'primary-dark';
 $theme-link-active-color:      'primary-darker';
+$theme-link-reverse-color: "base-lighter";
+$theme-link-reverse-hover-color: "base-lightest";
+$theme-link-reverse-active-color: "white";

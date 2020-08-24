@@ -32,3 +32,10 @@ Then work with your contracting officer (CO) to determine your acquisition strat
 ## Draft Contract Language
 ### New Solicitations
 In new solicitations, you can include requirements for 21st Century IDEA in the performance work statement. 
+
+> **Draft Language for New Solicitations**
+ 
+> Any website that is developed, modernized, enhanced, maintained, or otherwise delivered as a result of this contract shall be in compliance with the website standards of the Technology Transformation Services of the General Services Administration at https://designsystem.digital.gov/website-standards/.
+ 
+> The U.S. Web Design System (USWDS) shall be adopted incrementally over the life of the requirement and the contractor shall prioritize implementation to align with the priorities identified within the Performance Work Statement.
+

@@ -52,9 +52,53 @@ You can use evaluation factors to select the best vendor by evaluating their abi
 | ----------- | ----------- |
 | Accessible | be accessible to individuals with disabilities in  accordance with [Section 508](https://www.section508.gov/)|
 | Consistent | have a consistent appearance|
-| Authoritative | not overlap with or duplicate existing websites
+| Authoritative | not overlap with or duplicate existing websites |
 | Searchable | contain a search function |
 | Secure | be provided through a secure connection |
 | User-Centered* | be designed around user needs with data-driven analysis |
 | Customizable | provide an option for a more customized digital experience |
 | Mobile-Friendly | be functional and usable on mobile devices |
+
+> **Draft 2 (Scenario): Modern Website or Digital Service Scenario Evaluation Factor**
+> The Contractor shall provide a link to a public-facing website or digital service developed as a Minimal Viable Product (MVP) based on the provided information. The information contained within the MVP will be evaluated on the following:
+ 
+> *Government Provided Information*
+> User Scenario 1 - {{add scenario}}
+> User Scenario 2 - {{add scenario}}
+ 
+> *Evaluation*
+> The government will evaluate the below eight minuman areas on a pass/fail basis.
+
+| The website or digital service is:| Evaluated Area |
+| ----------- | ----------- |
+| Accessible | be accessible to individuals with disabilities in  accordance with [Section 508](https://www.section508.gov/)|
+| Consistent | have a consistent appearance|
+| Authoritative | not overlap with or duplicate existing websites |
+| Searchable | contain a search function |
+| Secure | be provided through a secure connection |
+| User-Centered* | be designed around user needs with data-driven analysis |
+| Customizable | provide an option for a more customized digital experience |
+| Mobile-Friendly | be functional and usable on mobile devices |
+
+> The Contractor will also submit a 1-page whitepaper outlining their use of the U.S. Web Design System maturity model to deliver a great digital experience integrating design principles, following user experience guidance, and using USWDS code. The whitepaper shall be specific to the MVP developed and the evaluation of this whitepaper will not be conducted on a pass/fail basis.
+
+**Customize the Evaluation Factors**
+Work with your CO to select the best evaluation factor and customize the draft language. For example, instead of “18 months” you may require a shorter or longer time period.
+
+For the evaluation scenario, you can use it as an “all or nothing” factor (meaning, price is the only other factor evaluated by the government), or it could be pared down and used alongside other evaluation factors, such as past performance, experience, and price.
+
+Provide as many user scenarios as needed to describe your requirements. A user scenario is a method for telling a story about a user’s interaction with your product, service, or website, focusing on the what, how, and why. Check out the user scenarios card in 18F Methods for more information on how to write scenarios.
+
+## Accessibility Requirements
+Accessibility is not only the law, it’s also fundamental to a great digital experience. To ensure your technology is usable by all, regardless of ability, address accessibility and other requirements up-front in all your IT-related contracts and purchases. 
+
+You can [find sample procurement language](https://www.section508.gov/buy/accessibility-requirements-tool) in the Accessibility Requirements Tool.
+
+## Resources
+- [18F Methods](https://methods.18f.gov/) - A guide to putting human-centered design into practice.
+- Accessibility Requirements Tool - A step-by-step guide to help you easily identify relevant accessibility requirements from the Revised 508 Standards, and incorporate them into your procurement and contracting documentation.
+- [Agile Acquisitions 101](https://www.fai.gov/media-library/item/agile-acquisitions-101) - Online webinar that provides a great foundation to begin. Shares lessons learned, success stories, and examples of where agile acquisition has been successfully implemented in the federal government.
+- [An Agile Software Development Solicitation Guide](https://18f.gsa.gov/2019/08/20/an-agile-software-development-solicitation-guide/) - How to contract for agile software development services. In this post, the authors show you how to create a complete solicitation in hours, not months, using 18F’s agile contract format.
+- [Checklist of Requirements for Federal Websites and Digital Services](https://digital.gov/resources/checklist-of-requirements-for-federal-digital-services/) - The relevant laws, policies, and regulations for federal agencies.
+- [TechFAR Hub](https://techfarhub.cio.gov/) - Practical tools and resources for applying industry best practices to digital service acquisitions.
+- [U.S. Web Design System](https://designsystem.digital.gov/) - A toolkit of principles, guidance, and code to help you design and build accessible, mobile-friendly government websites and digital services.

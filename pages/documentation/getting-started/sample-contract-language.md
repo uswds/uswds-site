@@ -42,7 +42,9 @@ In new solicitations, you can include requirements for 21st Century IDEA in the 
 > The U.S. Web Design System (USWDS) shall be adopted incrementally over the life of the requirement and the contractor shall prioritize implementation to align with the priorities identified within the Performance Work Statement.
 
 **Open Solicitations**
+
 You can ask your CO to amend open solicitations to include requirements for 21st Century IDEA.
+
 > **Draft Language for Open Solicitations**
  
 > This solicitation is hereby amended to include the website standards of the Technology Transformation Services of the General Services Administration [(https://designsystem.digital.gov/website-standards/)](https://designsystem.digital.gov/website-standards/) in accordance with the 21st Century Integrated Digital Experience Act.
@@ -50,6 +52,7 @@ You can ask your CO to amend open solicitations to include requirements for 21st
 > The U.S. Web Design System (USWDS) shall be adopted incrementally over the life of the requirement and the contractor shall prioritize implementation to align with the priorities identified within the Performance Work Statement.
 
 **Customize the Draft Language**
+
 Work with your CO to customize the draft language for new and open solicitations. For example, instead of “life of the requirement” you may use period of performance, sprint, next refresh, or another time period. Or, you may replace “Performance Work Statement” with “Statement of Objectives,” agency modernization plans, or another source of priorities.
 
 ## Evaluation Factors

@@ -8,6 +8,8 @@ redirect_from:
   - /contract-language
   - /contracts
 ---
+# Sample Contract Language for 21st Century IDEA
+**How to document requirements related to website modernization in contracts**
 
 The [21st Century Integrated Digital Experience Act](https://digital.gov/resources/21st-century-integrated-digital-experience-act/) (21st Century IDEA) requires all executive branch agencies to:
 
@@ -36,6 +38,14 @@ In new solicitations, you can include requirements for 21st Century IDEA in the 
 > **Draft Language for New Solicitations**
  
 > Any website that is developed, modernized, enhanced, maintained, or otherwise delivered as a result of this contract shall be in compliance with the website standards of the Technology Transformation Services of the General Services Administration at https://designsystem.digital.gov/website-standards/.
+ 
+> The U.S. Web Design System (USWDS) shall be adopted incrementally over the life of the requirement and the contractor shall prioritize implementation to align with the priorities identified within the Performance Work Statement.
+
+**Open Solicitations**
+You can ask your CO to amend open solicitations to include requirements for 21st Century IDEA.
+> **Draft Language for Open Solicitations**
+ 
+> This solicitation is hereby amended to include the website standards of the Technology Transformation Services of the General Services Administration [(https://designsystem.digital.gov/website-standards/)](https://designsystem.digital.gov/website-standards/) in accordance with the 21st Century Integrated Digital Experience Act.
  
 > The U.S. Web Design System (USWDS) shall be adopted incrementally over the life of the requirement and the contractor shall prioritize implementation to align with the priorities identified within the Performance Work Statement.
 
@@ -83,6 +93,7 @@ You can use evaluation factors to select the best vendor by evaluating their abi
 > The Contractor will also submit a 1-page whitepaper outlining their use of the U.S. Web Design System maturity model to deliver a great digital experience integrating design principles, following user experience guidance, and using USWDS code. The whitepaper shall be specific to the MVP developed and the evaluation of this whitepaper will not be conducted on a pass/fail basis.
 
 **Customize the Evaluation Factors**
+
 Work with your CO to select the best evaluation factor and customize the draft language. For example, instead of “18 months” you may require a shorter or longer time period.
 
 For the evaluation scenario, you can use it as an “all or nothing” factor (meaning, price is the only other factor evaluated by the government), or it could be pared down and used alongside other evaluation factors, such as past performance, experience, and price.

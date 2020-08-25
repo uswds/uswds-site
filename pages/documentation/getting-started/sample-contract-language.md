@@ -33,6 +33,7 @@ Then work with your contracting officer (CO) to determine your acquisition strat
 
 ## Draft Contract Language
 **New Solicitations**
+
 In new solicitations, you can include requirements for 21st Century IDEA in the performance work statement. 
 
 > **Draft Language for New Solicitations**

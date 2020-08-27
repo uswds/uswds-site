@@ -1,5 +1,5 @@
 ---
-permalink: /about/security-information/
+permalink: /about/security/
 redirect_from:
 - /security/
 - /about/security

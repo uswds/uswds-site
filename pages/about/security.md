@@ -1,5 +1,5 @@
 ---
-permalink: /about/security-information/
+permalink: /about/security/
 redirect_from:
 - /security/
 - /about/security
@@ -16,9 +16,9 @@ checks locally during development and automatically on pull requests kee the USW
 
 We also encourage you to verify the security of the USWDS package you're using:
 
-1. **Check the vulnerability badge.** Confirm the vulnerability badge in the [USWDS Github code repository](https://github.com/uswds/uswds) says there are `0` vulnerabilities. 
+1. **Check the vulnerability badge.** Confirm the vulnerability badge in the [USWDS Github code repository](https://github.com/uswds/uswds) says there are `0` vulnerabilities.
 1. **Download the package via NPM.** We recommend using the [NPM package](/documentation/developers/#install-using-npm) instead of downloading the [zip file](/documentation/developers/#download).  NPM ensures you’re using a legitimate copy of USWDS straight from the source. It also makes it easier to stay
-up-to-date with the latest USWDS version. 
+up-to-date with the latest USWDS version.
 
 To learn more about our security best practices or to report a security issue,
 please [email us](mailto:uswds@support.digitalgov.gov).

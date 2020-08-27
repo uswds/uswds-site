@@ -2,7 +2,7 @@
 permalink: /about/security/
 redirect_from:
 - /security/
-- /about/security-information
+- /about/security-information/
 layout: styleguide
 title: Security
 category: About

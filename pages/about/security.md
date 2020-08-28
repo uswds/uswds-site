@@ -12,7 +12,7 @@ lead: We have security checks and processes in place to ensure that USWDS is a s
 We follow GSA's [IT security policy](https://www.gsa.gov/directive/gsa-information-technology-%28it%29-security-policy) to ensure the confidentiality, integrity and availability of USWDS.
 
 We use Snyk to find, fix, and prevent vulnerabilities in USWDS. We run Snyk
-checks locally during development and automatically on pull requests keep the USWDS package up-to-date.
+checks locally during development and automatically on pull requests to keep the USWDS package up-to-date.
 
 We also encourage you to verify the security of the USWDS package you're using:
 

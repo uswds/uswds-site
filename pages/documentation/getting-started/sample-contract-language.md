@@ -44,11 +44,12 @@ In new solicitations, you can include requirements for 21st Century IDEA in the
 performance work statement.
 
 {:.example.border-left-05.border-primary-light.padding-left-105.margin-top-2}
-> **Draft Language for New Solicitations**
+> **✎ Draft Language for New Solicitations**
+>
 > Any website that is developed, modernized, enhanced, maintained, or otherwise
 > delivered as a result of this contract shall be in compliance with the website
 > standards of the Technology Transformation Services of the General Services
-> Administration at https://designsystem.digital.gov/website-standards/.
+> Administration at [https://designsystem.digital.gov/website-standards/](https://designsystem.digital.gov/website-standards/).
 >
 > The U.S. Web Design System (USWDS) shall be adopted incrementally over the life
 > of the requirement and the contractor shall prioritize implementation to align
@@ -60,7 +61,7 @@ You can ask your CO to amend open solicitations to include requirements for
 21st Century IDEA.
 
 {:.example.border-left-05.border-primary-light.padding-left-105.margin-top-2}
-> **Draft Language for Open Solicitations**
+> **✎ Draft Language for Open Solicitations**
 >
 > This solicitation is hereby amended to include the website standards of the
 > Technology Transformation Services of the General Services Administration [(https://designsystem.digital.gov/website-standards/)](https://designsystem.digital.gov/website-standards/) in accordance with the
@@ -82,8 +83,10 @@ You can use evaluation factors to select the best vendor by evaluating their
 ability to develop modern websites that meet specific requirements in
 21st Century IDEA, including incremental adoption of USWDS.
 
-<div class="example border-left-05 border-primary-light padding-left-105 margin-top-2">
-  <h3>Draft 1: Modern Website or Digital Service Evaluation Factor</h3>
+<div class="example border-left-05 border-primary-light padding-left-105 margin-top-2 margin-left-5">
+  <h3>
+    ✎ Draft 1: Modern Website or Digital Service Evaluation Factor
+  </h3>
 
   <p>
     Contractor shall provide a link to a public-facing website or digital service
@@ -135,9 +138,9 @@ ability to develop modern websites that meet specific requirements in
   </table>
 </div>
 
-<div class="example border-left-05 border-primary-light padding-left-105 margin-top-2">
+<div class="example border-left-05 border-primary-light padding-left-105 margin-top-2 margin-left-5">
   <h3>
-    Draft 2 (Scenario): Modern Website or Digital Service Scenario Evaluation Factor
+    ✎ Draft 2 (Scenario): Modern Website or Digital Service Scenario Evaluation Factor
   </h3>
 
   <p>

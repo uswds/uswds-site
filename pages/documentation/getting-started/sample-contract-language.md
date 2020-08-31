@@ -43,7 +43,7 @@ including customizing the draft language below to meet your needs and requiremen
 In new solicitations, you can include requirements for 21st Century IDEA in the
 performance work statement.
 
-{:.example.border-left-05.border-primary-light.padding-left-105.margin-top-2}
+{:.example.border-left-05.border-base-light.padding-left-105.margin-top-2}
 > **✎ Draft Language for New Solicitations**
 >
 > Any website that is developed, modernized, enhanced, maintained, or otherwise
@@ -60,7 +60,7 @@ performance work statement.
 You can ask your CO to amend open solicitations to include requirements for
 21st Century IDEA.
 
-{:.example.border-left-05.border-primary-light.padding-left-105.margin-top-2}
+{:.example.border-left-05.border-base-light.padding-left-105.margin-top-2}
 > **✎ Draft Language for Open Solicitations**
 >
 > This solicitation is hereby amended to include the website standards of the
@@ -83,7 +83,7 @@ You can use evaluation factors to select the best vendor by evaluating their
 ability to develop modern websites that meet specific requirements in
 21st Century IDEA, including incremental adoption of USWDS.
 
-<div class="example border-left-05 border-primary-light padding-left-105 margin-top-2 margin-left-5">
+<div class="example border-left-05 border-base-light padding-left-105 margin-top-2 margin-left-5">
   <h3>
     ✎ Draft 1: Modern Website or Digital Service Evaluation Factor
   </h3>
@@ -138,7 +138,7 @@ ability to develop modern websites that meet specific requirements in
   </table>
 </div>
 
-<div class="example border-left-05 border-primary-light padding-left-105 margin-top-2 margin-left-5">
+<div class="example border-left-05 border-base-light padding-left-105 margin-top-2 margin-left-5">
   <h3>
     ✎ Draft 2 (Scenario): Modern Website or Digital Service Scenario Evaluation Factor
   </h3>

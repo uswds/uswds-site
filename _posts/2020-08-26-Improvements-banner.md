@@ -5,8 +5,8 @@ tags:
 category: About
 author: Ammie Farraj Feijoo, Dan Williams
 meta:
-  og:image: /img/introducing-uswds-2-0/feature-image.jpg
-excerpt: USWDS 2.8.0 includes an update to the banner that is featured on many government websites, and teams are encouraged to update the copy as soon as possible. 
+  og:image: /img/banner-blog/banner-blog-post.jpg
+excerpt: USWDS 2.8.0 includes an update to the banner that is featured on many government websites, and teams are encouraged to update the copy as soon as possible.
 ---
 
 <img src="{{ site.baseurl }}/img/banner-blog/banner-blog-post.jpg" alt="A colorful collection of screens and interface components" class="width-full tablet:width-tablet-lg maxw-full tablet:maxw-tablet-lg">
@@ -20,7 +20,7 @@ This July, in USWDS 2.8.0, we updated the security language in our banner compon
 
 {:.margin-top-1.text-light}
 ## What the banner does
-Most government sites should use the USWDS banner to identify as an official website. The banner's "Here's how you know" section helps visitors understand how to tell when a government website is both official and secure. Specifically, it explains that the combination of an official .gov or .mil domain and a secure HTTPS connection together are the best way to be assured you're connected to an official site. 
+Most government sites should use the USWDS banner to identify as an official website. The banner's "Here's how you know" section helps visitors understand how to tell when a government website is both official and secure. Specifically, it explains that the combination of an official .gov or .mil domain and a secure HTTPS connection together are the best way to be assured you're connected to an official site.
 
 The clarity and correctness of our message builds trust. For example, in August 2019, USAGov conducted user interviews asking “What makes a government website trustworthy?” Answers included:
 
@@ -81,7 +81,7 @@ As of USWDS 2.8.0, we’re encouraging teams to update their banners with the fo
 {:.margin-top-1.text-light}
 ### Section 2: HTTPS (if you use a .gov domain)
 
-> **English** 
+> **English**
 > Secure .gov websites use HTTPS
 > A lock ([image]) or https:// means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
 
@@ -103,7 +103,7 @@ As of USWDS 2.8.0, we’re encouraging teams to update their banners with the fo
 > Un candado ([image]) o https:// significa que usted se conectó de forma segura a un sitio web .mil. Comparta información sensible sólo en sitios web oficiales y seguros.
 
 ## Next steps
-- [Update your banner copy as soon as possible](https://designsystem.digital.gov/components/banner) 
+- [Update your banner copy as soon as possible](https://designsystem.digital.gov/components/banner)
 - [Join the USWDS community](https://digital.gov/communities/uswds/) to contribute to design and development
 - [Submit an issue](https://github.com/uswds/uswds/issues/new) if you find a bug or have an idea for an improvement
 

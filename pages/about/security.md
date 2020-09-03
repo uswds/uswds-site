@@ -10,3 +10,7 @@ lead: We have security checks and processes in place to ensure that USWDS is a s
 ---
 
 {{ site.data.security.decoded | markdownify }}
+
+If you have the latest version of USWDS you can verify the authenticity using
+this hash:
+{{ site.data.hash.decoded | markdownify }}

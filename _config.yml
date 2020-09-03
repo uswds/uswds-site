@@ -39,6 +39,9 @@ jekyll_get:
   - data: security
     json: "https://api.github.com/repos/uswds/uswds/contents/SECURITY.md"
     decode_content: true
+  - data: hash
+    json: "https://api.github.com/repos/uswds/uswds/contents/sha256sum.md?ref=jm-sha256-hash"
+    decode_content: true
 
 repos:
   - name: USWDS

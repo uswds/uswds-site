@@ -38,7 +38,7 @@ You should use the banner to identify a site as an official government site, whi
 
 Also consider something else if it would be misleading to use the banner component. Since the banner should be used to reduce confusion, avoid using it on any site meant only for testing or in other cases when the site is not meant to be identified as an official government website.
 
-## The updated security language
+## Updated security language
 
 As of USWDS 2.8.0, we’re encouraging teams to update their banners with the following content:
 
@@ -47,19 +47,19 @@ As of USWDS 2.8.0, we’re encouraging teams to update their banners with the fo
 
 *This text is unchanged from earlier versions.*
 
-### Section 1: Top-level domain (if you use a .gov domain)
+### Section 1: Top-level domain <span class="text-light">(if using a .gov domain)</span>
 
 #### English
 > **Official websites use .gov**
 >
-> A .gov website belongs to an official government organization in the United States.
+> A **.gov** website belongs to an official government organization in the United States.
 
 #### Spanish
 > **Los sitios web oficiales usan .gov**
 >
 > Un sitio web **.gov** pertenece a una organización oficial del Gobierno de Estados Unidos.
 
-### Section 1: Top-level domain (if you use a .mil domain)
+### Section 1: Top-level domain <span class="text-light">(if using a .mil domain)</span>
 
 #### English
 > **Official websites use .mil**
@@ -71,7 +71,7 @@ As of USWDS 2.8.0, we’re encouraging teams to update their banners with the fo
 >
 > Un sitio web **.mil** pertenece a una organización oficial del Departamento de Defensa de EE. UU.
 
-### Section 2: HTTPS (if you use a .gov domain)
+### Section 2: HTTPS <span class="text-light">(if using a .gov domain)</span>
 
 #### English
 > **Secure .gov websites use HTTPS**
@@ -83,7 +83,7 @@ As of USWDS 2.8.0, we’re encouraging teams to update their banners with the fo
 >
 > Un **candado** ([image]) o **https://** significa que usted se conectó de forma segura a un sitio web .gov. Comparta información sensible sólo en sitios web oficiales y seguros.
 
-### Section 2: HTTPS  (if you use a .mil domain)
+### Section 2: HTTPS <span class="text-light">(if using a .mil domain)</span>
 
 #### English
 > **Secure .mil websites use HTTPS**

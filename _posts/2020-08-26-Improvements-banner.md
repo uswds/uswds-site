@@ -9,7 +9,10 @@ meta:
 excerpt: USWDS 2.8.0 includes an update to the banner that is featured on many government websites, and teams are encouraged to update the copy as soon as possible.
 ---
 
-<img src="{{ site.baseurl }}/img/banner-blog/banner-blog-post.jpg" alt="A colorful collection of screens and interface components" class="width-full tablet:width-tablet-lg maxw-full tablet:maxw-tablet-lg">
+{% capture lock-icon %}<span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" class="usa-banner__lock-image" role="img" aria-labelledby="banner-lock-title banner-lock-description"><title id="banner-lock-title">Lock</title><desc id="banner-lock-description">A locked padlock</desc><path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"/></svg></span>{% endcapture %}
+
+{:.width-full.tablet:width-tablet-lg.maxw-full.tablet:maxw-tablet-lg}
+![A colorful collection of screens and interface components, including the banner]({{ site.baseurl }}/img/banner-blog/banner-blog-post.jpg)
 
 ## Update to the new security language as soon as possible
 
@@ -76,36 +79,26 @@ As of USWDS 2.8.0, we’re encouraging teams to update their banners with the fo
 #### English
 > **Secure .gov websites use HTTPS**
 >
-> A **lock** ([image]) or **https://** means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
+> A **lock** ({{ lock-icon }}) or **https://** means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
 
 #### Spanish
 > **Los sitios web seguros .gov usan HTTPS**
 >
-> Un **candado** ([image]) o **https://** significa que usted se conectó de forma segura a un sitio web .gov. Comparta información sensible sólo en sitios web oficiales y seguros.
+> Un **candado** ({{ lock-icon }}) o **https://** significa que usted se conectó de forma segura a un sitio web .gov. Comparta información sensible sólo en sitios web oficiales y seguros.
 
 ### Section 2: HTTPS <span class="text-light">(if using a .mil domain)</span>
 
 #### English
 > **Secure .mil websites use HTTPS**
 >
-> A **lock** ([image]) or **https://** means you’ve safely connected to the .mil website. Share sensitive information only on official, secure websites.
+> A **lock** ({{ lock-icon }}) or **https://** means you’ve safely connected to the .mil website. Share sensitive information only on official, secure websites.
 
 #### Spanish
-> Los sitios web seguros .mil usan HTTPS
-> Un **candado** ([image]) o **https://** significa que usted se conectó de forma segura a un sitio web .mil. Comparta información sensible sólo en sitios web oficiales y seguros.
+> **Los sitios web seguros .mil usan HTTPS**
+>
+> Un **candado** ({{ lock-icon }}) o **https://** significa que usted se conectó de forma segura a un sitio web .mil. Comparta información sensible sólo en sitios web oficiales y seguros.
 
 ## Next steps
 - [Update your banner copy as soon as possible](https://designsystem.digital.gov/components/banner)
 - [Join the USWDS community](https://digital.gov/communities/uswds/) to contribute to design and development
 - [Submit an issue](https://github.com/uswds/uswds/issues/new) if you find a bug or have an idea for an improvement
-
-
-[Feature image]: {{ site.baseurl }}/img/introducing-uswds-2-0/feature-image.jpg
-[Easier Incremental Adoption]: {{ site.baseurl }}/img/introducing-uswds-2-0/easier-incremental-adoption.jpg
-[Practical Design Tokens]: {{ site.baseurl }}/img/introducing-uswds-2-0/practical-design-tokens.jpg
-[Accessible Color System]: {{ site.baseurl }}/img/introducing-uswds-2-0/accessible-color-system.jpg
-[Expressive Theming]: {{ site.baseurl }}/img/introducing-uswds-2-0/expressive-theming.jpg
-[Powerful Utility Classes]: {{ site.baseurl }}/img/introducing-uswds-2-0/powerful-utility-classes.jpg
-[Simplified 12-Column Layout Grid]: {{ site.baseurl }}/img/introducing-uswds-2-0/simplified-12-column-layout-grid.jpg
-[Introducing Public Sans]: {{ site.baseurl }}/img/introducing-uswds-2-0/introducing-public-sans.jpg
-[Built to Grow]: {{ site.baseurl }}/img/introducing-uswds-2-0/built-to-grow.jpg

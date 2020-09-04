@@ -2830,7 +2830,7 @@ $theme-table-column-gap: 4;
     }
 
     blockquote {
-      border-left: units(0.5) solid;
+      border-left: units(0.5) solid color("base-lighter");
       margin-left: 0;
       padding-left: units(2);
     }

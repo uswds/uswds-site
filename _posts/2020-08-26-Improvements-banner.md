@@ -43,44 +43,51 @@ Also consider something else if it would be misleading to use the banner compone
 As of USWDS 2.8.0, we’re encouraging teams to update their banners with the following content:
 
 ### Closed banner
-> An official website of the United States government. Here’s how you know
+> **An official website of the United States government** Here’s how you know
 
 *This text is unchanged from earlier versions.*
 
 ### Section 1: Top-level domain (if you use a .gov domain)
 
 #### English
-> Official websites use .gov
+> **Official websites use .gov**
+>
 > A .gov website belongs to an official government organization in the United States.
 
 #### Spanish
-> Los sitios web oficiales usan .gov
+> **Los sitios web oficiales usan .gov**
+>
 > Un sitio web .gov pertenece a una organización oficial del Gobierno de Estados Unidos.
 
 ### Section 1: Top-level domain (if you use a .mil domain)
 
 #### English
-> Official websites use .mil
+> **Official websites use .mil**
+>
 > A .mil website belongs to an official U.S. Department of Defense organization.
 
 #### Spanish
-> Los sitios web oficiales usan .mil
+> **Los sitios web oficiales usan .mil**
+>
 > Un sitio web .mil pertenece a una organización oficial del Departamento de Defensa de EE. UU.
 
 ### Section 2: HTTPS (if you use a .gov domain)
 
 #### English
-> Secure .gov websites use HTTPS
+> **Secure .gov websites use HTTPS**
+>
 > A lock ([image]) or https:// means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
 
 #### Spanish
-> Los sitios web seguros .gov usan HTTPS
+> **Los sitios web seguros .gov usan HTTPS**
+>
 > Un candado ([image]) o https:// significa que usted se conectó de forma segura a un sitio web .gov. Comparta información sensible sólo en sitios web oficiales y seguros.
 
 ### Section 2: HTTPS  (if you use a .mil domain)
 
 #### English
-> Secure .mil websites use HTTPS
+> **Secure .mil websites use HTTPS**
+>
 > A lock ([image]) or https:// means you’ve safely connected to the .mil website. Share sensitive information only on official, secure websites.
 
 #### Spanish

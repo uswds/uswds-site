@@ -3,7 +3,7 @@ title: Improvements to our banner content and code
 tags:
 - updates
 category: About
-author: Ammie Farraj Feijoo, Dan Williams
+author: Ammie Farraj Feijoo, Dan O. Williams
 meta:
   og:image: /img/banner-blog/banner-blog-post.jpg
 excerpt: USWDS 2.8.0 includes an update to the banner that is featured on many government websites, and teams are encouraged to update the copy as soon as possible.

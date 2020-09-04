@@ -43,7 +43,7 @@ Also consider something else if it would be misleading to use the banner compone
 
 ## Updated security language
 
-As of USWDS 2.8.0, we’re encouraging teams to update their banners with the following content:
+As of USWDS 2.8.0, we’re encouraging teams to update their banners with the following content. Each section has slightly different language depending on whether the site uses a .gov or a .mil top-level domain. Use the version appropriate to your site's domain.
 
 {:.border-top-1px.padding-top-2}
 ### Closed banner

@@ -57,42 +57,42 @@ As of USWDS 2.8.0, we’re encouraging teams to update their banners with the fo
 #### Spanish
 > **Los sitios web oficiales usan .gov**
 >
-> Un sitio web .gov pertenece a una organización oficial del Gobierno de Estados Unidos.
+> Un sitio web **.gov** pertenece a una organización oficial del Gobierno de Estados Unidos.
 
 ### Section 1: Top-level domain (if you use a .mil domain)
 
 #### English
 > **Official websites use .mil**
 >
-> A .mil website belongs to an official U.S. Department of Defense organization.
+> A **.mil** website belongs to an official U.S. Department of Defense organization.
 
 #### Spanish
 > **Los sitios web oficiales usan .mil**
 >
-> Un sitio web .mil pertenece a una organización oficial del Departamento de Defensa de EE. UU.
+> Un sitio web **.mil** pertenece a una organización oficial del Departamento de Defensa de EE. UU.
 
 ### Section 2: HTTPS (if you use a .gov domain)
 
 #### English
 > **Secure .gov websites use HTTPS**
 >
-> A lock ([image]) or https:// means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
+> A **lock** ([image]) or **https://** means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
 
 #### Spanish
 > **Los sitios web seguros .gov usan HTTPS**
 >
-> Un candado ([image]) o https:// significa que usted se conectó de forma segura a un sitio web .gov. Comparta información sensible sólo en sitios web oficiales y seguros.
+> Un **candado** ([image]) o **https://** significa que usted se conectó de forma segura a un sitio web .gov. Comparta información sensible sólo en sitios web oficiales y seguros.
 
 ### Section 2: HTTPS  (if you use a .mil domain)
 
 #### English
 > **Secure .mil websites use HTTPS**
 >
-> A lock ([image]) or https:// means you’ve safely connected to the .mil website. Share sensitive information only on official, secure websites.
+> A **lock** ([image]) or **https://** means you’ve safely connected to the .mil website. Share sensitive information only on official, secure websites.
 
 #### Spanish
 > Los sitios web seguros .mil usan HTTPS
-> Un candado ([image]) o https:// significa que usted se conectó de forma segura a un sitio web .mil. Comparta información sensible sólo en sitios web oficiales y seguros.
+> Un **candado** ([image]) o **https://** significa que usted se conectó de forma segura a un sitio web .mil. Comparta información sensible sólo en sitios web oficiales y seguros.
 
 ## Next steps
 - [Update your banner copy as soon as possible](https://designsystem.digital.gov/components/banner)

@@ -30,11 +30,9 @@ The clarity and correctness of our message builds trust. For example, in August 
 In addition to identification and trustworthiness, the banner also provides visual and structural continuity between government sites. That's why it's extra important that the language and display of the banner is up-to-date and consistent.
 
 ## Why we updated the banner
-The importance of the banner language is reflected in the feedback we collected while performing research on this component. Based on what we heard, we set out to update the banner copy with certain considerations in mind.
+We knew from user feedback that we wanted to be as clear as possible that trustworthiness is based on _the combination_ of an official top-level domain (like .gov or .mil) and a secure HTTPS connection. We noted that indicators of HTTPS may take a couple distinct forms. For example, browsers often hide or mask the HTTPS section of a URL and instead only show a lock icon. Also, knowing that each government top-level domain (.gov and .mil) has a specific usage and requirement, we wanted to give an accurate description of which sites use each.
 
-For one, we knew we wanted to be as clear as possible that trustworthiness is based on the combination of an official top-level domain (like .gov or .mil) and a secure https connection. We noted that indicators of https may take a couple distinct forms. For example, browsers often hide or mask the https section of a url and instead only show a lock icon. Also, knowing that each government top-level domain (.gov and .mil) has a specific usage and requirement, we wanted to give an accurate description of which sites use each.
-
-Additionally, we considered that simplicity and plain language improve the message and, as a result, we made the updated copy concise and clear. And to better support access to government information and services for people with limited English proficiency, we decided to develop official language support for other languages, starting with Spanish.
+All of this needed to use plain language that's easy for anyone to understand. And to better support access to government information and services for people with limited English proficiency, we developed official language support for other languages, starting with Spanish.
 
 ## When to use the banner
 You should use the banner to identify a site as an official government site, which means most government sites should use the banner. If you are unable to update to USWDS 2.8.0 or higher but you still want to include the new language in your banner, we recommend editing your content to the language outlined below — as long as the site fits the requirements. You shouldn't use the banner if you don’t use a .gov or .mil domain *and* HTTPS.

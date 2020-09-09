@@ -84,6 +84,14 @@
     url: https://github.com/18F
   notes: "**This gem has been deprecated in favor of the [Rails gem](#rails-gem).** Please [let us know](https://github.com/18F/us_web_design_standards_gem/issues/new) if you'd like to adopt it."
 
+- name: uswds-sf-lightning-community
+  distribution: Salesforce lightning
+  url: https://github.com/GSA/uswds-sf-lightning-community
+  author:
+    name: Mark Vogelgesang (GSA IT)
+    url: https://github.com/GSA/uswds-sf-lightning-community
+  notes: "Works to meet GSA's Guidelines for Digital Presence as well as tenants of the 21st Century IDEA Act. Theme allows users to toggle between native Salesforce components/ functionality along with custom components built using USWDS. View live implementation at [https://labs.gsa.gov](https://labs.gsa.gov)"
+
 - name: USWDS WebJar
   distribution: WebJars
   url: https://mvnrepository.com/artifact/org.webjars/uswds

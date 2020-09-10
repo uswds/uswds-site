@@ -81,6 +81,11 @@ lead: The identifier discloses a site's parent agency and displays agency links
         <li>
           <strong>Add <code>alt</code> attribute to each logo image.</strong>
         </li>
+        </li>
+        <li>
+          <strong>Add <code>role="img"</code> attribute to SVG logo images.</strong>
+          This allows screenreaders to properly identify SVGs as images.
+        </li>
       </ul>
       <h4>Implementation</h4>
       <ul class="usa-content-list">

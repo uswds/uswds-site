@@ -132,6 +132,13 @@ lead: The identifier discloses a site's parent agency and displays agency links
           For example, "An official website of [Department]. Produced and published at taxpayer expense."
         </li>
       </ul>
+      <h5 id="component-settings">Identifier settings</h5>
+      {% assign settings = site.data.settings.components.identifier %}
+      {% include settings-table-simple.html
+        settings=settings.contents
+      %}
+      <h5 id="component-variants">Identifier variants</h5>
+      <p>This component has no variants.</p>
     </div>
   </div>
 </section>

@@ -15,11 +15,6 @@ contents:
     var: $theme-step-indicator-label-font-size-small
     default: 3xs
     type: size
-  - name: Bottom margin
-    description: Margin below indicator
-    var: $theme-step-indicator-margin-bottom
-    default: 4
-    type: units
   - name: Min width
     description: Breakpoint where font sizes change
     var: $theme-step-indicator-min-width
@@ -33,30 +28,30 @@ contents:
   - name: Step color
     description: Default color of segment steps
     var: $theme-step-indicator-step-color
-    default: 'primary-light'
+    default: "primary-light"
     type: color
   - name: Current step color
     description: Color segment indicating current step
     var: $theme-step-indicator-step-color-current
-    default: 'primary-dark'
+    default: "primary-dark"
     type: color
   - name: Completed step color
     description: Color segment indicating complete step
     var: $theme-step-indicator-step-color-complete
-    default: 'primary-dark'
+    default: "primary-dark"
     type: color
   - name: Font family
     description: Font family used in header
     var: $theme-step-indicator-font-family
-    default: 'ui'
+    default: "ui"
     type: family
   - name: Header font size
     description: Font sizes used in header
     var: $theme-step-indicator-font-size
-    default: 'lg'
+    default: "lg"
     type: size
   - name: Header font size (sm)
     description: Font sizes used in header on mobile devices
     var: $theme-step-indicator-font-size-small
-    default: 'md'
+    default: "md"
     type: size

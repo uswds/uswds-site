@@ -16,10 +16,10 @@ subnav:
   <p class="site-text-intro">Provide someone’s first impression of your agency or program. </p>
   <p>Often, site users arrive at a landing page without much context, like a search result or a colleague’s email. So a landing page needs to be clear, engaging, and contextualizing.</p>
   <div class="preview">
-    <a class="media_link" href="{{ site.components_url_v2_preview }}/layout--landing.html">
+    <a class="media_link" href={% include component-preview-link.html component="layout--landing" %}>
       <img src="{{ site.baseurl }}/assets/img/templates/layout--landing.png" alt="Basic header">
     </a>
-    <a class="usa-button" href="{{ site.components_url_v2_preview }}/layout--landing.html">Demo landing page template</a>
+    <a class="usa-button" href={% include component-preview-link.html component="layout--landing" %}>Demo landing page template</a>
   </div>
   {% include code/accordion.html component="template-landing" %}
   <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
@@ -68,10 +68,10 @@ subnav:
   <p class="site-text-intro">Present information on a certain theme, topic, or idea.</p>
   <p>People often arrive at a documentation page after visiting the landing page or after searching for a specific piece of information, so documentation pages don’t need to provide as much contextualizing information as more introductory pages would. The copy should be clear, focused, and concise.</p>
   <div class="preview">
-    <a class="media_link" href="{{ site.components_url_v2_preview }}/layout--docs.html">
+    <a class="media_link" href={% include component-preview-link.html component="layout--docs" %}>
       <img src="{{ site.baseurl }}/assets/img/templates/layout--docs.png" alt="Basic header">
     </a>
-    <a class="usa-button" href="{{ site.components_url_v2_preview }}/layout--docs.html">Demo documentation template</a>
+    <a class="usa-button" href={% include component-preview-link.html component="layout--docs" %}>Demo documentation template</a>
   </div>
   {% include code/accordion.html component="template-docs" %}
   <div class="usa-accordion usa-accordion--bordered site-accordion-docs">

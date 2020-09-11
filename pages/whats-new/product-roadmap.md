@@ -11,10 +11,7 @@ redirect_from:
   - /whats-new/product-roadmap/
 ---
 
-Below is our product roadmap: a long-term plan of the goals, features,
-and long-term direction of USWDS. We update this
-every few months with the status of our progress, as well as add new
-high-level future requests and ideas.
+Below is our product roadmap: a long-term plan of the goals, features, and long-term direction of USWDS. We update this frequently with the status of our progress, as well as add new high-level feature requests and ideas.
 
 <!-- TODO: Make these into issues; add roadmap project board
 You can also <a href="https://github.com/uswds/uswds/milestone/52" class="">view our product roadmap goals on GitHub</a>. -->
@@ -23,21 +20,21 @@ You can also <a href="https://github.com/uswds/uswds/milestone/52" class="">view
 
 <div class="maxw-tablet">
   <ul class="site-roadmap-list">
-    <li class="site-roadmap-list__item"><span class="flex-fill">Build most-requested new components</span> <span class="usa-tag label-in-progress flex-auto">In progress</span>
+    <li class="site-roadmap-list__item"><span class="flex-fill">Build most-requested new components</span>
       <ul class="site-roadmap-list__sublist">
         <li class="site-roadmap-list__item"><span class="flex-fill">Card</span> <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Breadcrumb</span> <span class="usa-tag label-done">Done</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Character limit</span> <span class="usa-tag label-done">Done</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Autocomplete combobox</span> <span class="usa-tag label-done">Done</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Character count</span> <span class="usa-tag label-done">Done</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Combobox</span> <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Button group</span> <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Date picker</span>  <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Date range picker</span>  <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Time picker</span>  <span class="usa-tag label-in-progress">In progress</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Date and time picker</span> <span class="usa-tag label-in-progress">In progress</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Tooltip</span> <span class="usa-tag label-done">Done</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Document upload</span> <span class="usa-tag label-done">Done</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Progress bar</span> <span class="usa-tag label-in-progress">In progress</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Anchor</span> <span class="usa-tag label-next">On deck</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">File input</span> <span class="usa-tag label-done">Done</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Step indicator</span> <span class="usa-tag label-in-progress">In progress</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Anchor</span> <span class="usa-tag label-in-progress">In progress</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Tabs</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Icons</span> <span class="usa-tag label-next">On deck</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Button icon</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
@@ -49,11 +46,11 @@ You can also <a href="https://github.com/uswds/uswds/milestone/52" class="">view
       </ul>
     </li>
     <li class="site-roadmap-list__item"><span class="flex-fill">Simplify and improve design assets</span> <span class="usa-tag label-done">Done</span></li>
-    <li class="site-roadmap-list__item"><span class="flex-fill">Develop product design principles</span> <span class="usa-tag label-in-progress">In progress</span></li>
-    <li class="site-roadmap-list__item"><span class="flex-fill">Update USWDS Jekyll theme to USWDS 2</span> <span class="usa-tag label-in-progress">In progress</span></li>
+    <li class="site-roadmap-list__item"><span class="flex-fill">Update product values</span> <span class="usa-tag label-in-progress">In progress</span></li>
+    <li class="site-roadmap-list__item"><span class="flex-fill">Update USWDS Jekyll theme to USWDS 2</span> <span class="usa-tag label-done">Done</span></li>
     <li class="site-roadmap-list__item"><span class="flex-fill">Create tailored guides for common user types</span> <span class="usa-tag label-next">On deck</span></li>
     <li class="site-roadmap-list__item"><span class="flex-fill">Rebuild component library</span> <span class="usa-tag label-in-progress">In progress</span></li>
-    <li class="site-roadmap-list__item"><span class="flex-fill">Develop contribution model</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
+    <li class="site-roadmap-list__item"><span class="flex-fill">Develop contribution model</span> <span class="usa-tag label-in-progress">In progress</span></li>
     <li class="site-roadmap-list__item"><span class="flex-fill">Improve test suite</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
   </ul>
 </div>

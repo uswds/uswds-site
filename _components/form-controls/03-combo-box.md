@@ -3,6 +3,31 @@ title: Combo box
 parent: Form controls
 order: 03
 lead: A combo box helps users select an item from a large list of options.
+initProps:
+  - property: "`required`"
+    element: select
+    description: The combo box component will be required in terms of native form validation.
+  - property: "`disabled`"
+    element: select
+    description: The combo box component will be disabled / read-only. You can re-enable it by executing the enable procedure on the component.
+  - property: "`data-placeholder`"
+    element: .usa-combo-box
+    description: To update the placeholder text of the combo box, use the `data-placeholder` attribute. We recommend using a label or hint instead of a placeholder.
+  - property: "`data-default-value`"
+    element: .usa-combo-box
+    description: The combo box will set this value as the default selection if it is found within the select options.
+props:
+  - property: "`data-filter`"
+    element: .usa-combo-box
+    description: The combo box will use this regular expression to filter the combo box options. You are declaring a case insensitive match over the entire option text, which means `^` and `$` are added automatically. You can specify the inputted query with `{{query}}`. You can also declare a custom query filter as a data property as well, which can be used in the custom filter (`data-number-filter="[0-9]"` and then using `data-filter="{{numberFilter}}.*"`). The default filter is `.*{{query}}.*`, which is a simple "find anywhere within the option" text.
+procedures:
+  - procedure: "`enable`"
+    parameters: .usa-combo-box
+    description: The combo box component will be enabled.
+  - procedure: "`disable`"
+    parameters: .usa-combo-box
+    description: The combo box component will be disabled / read-only.
+
 ---
 
 {% include code/preview.html component="combo-box" %}
@@ -83,32 +108,45 @@ lead: A combo box helps users select an item from a large list of options.
     </ul>
     <h4 class="usa-heading">Implementation</h4>
 <div class="usa-prose site-prose" markdown="1">
-
-{:.usa-content-list}
-
-- **Initialization properties.** The following properties update the component during initialization. These properties must be set before the component is initialized in order to have an effect.
-
-| property | element | effect |
-| --- | --- | ---
-required | select | The combo box component will be required in terms of native form validation.
-disabled | select | The combo box component will be disabled / readonly. You can re-enable by executing the enable procedure on the component.
-data-placeholder | .usa-combo-box | To update the placeholder text of the combo-box use the `data-placeholder` attribute. Is it recommended that a label or hint is used in lieu of a placeholder.
-data-default-value | .usa-combo-box | The combo box will set this value as the default selection if it is found within the select options.
-
-{:.usa-content-list}
-
-- **Additional component procedures.** The following static procedures update the component after initialization. These are in addition to the primary methods referenced in the <a href="{{ site.baseurl }}/documentation/developers/#js-customization">JS customization</a> documentation.
-
-| procedure | parameters | effect |
-| --- | --- | ---
-enable | .usa-combo-box element | The combo box component will be enabled.
-disable | .usa-combo-box element | The combo box component will be disabled / readonly.
-
+  <ul class="usa-content-list">
+    <li>
+        <strong>Initialization properties.</strong> The following properties update the component during initialization. These properties must be set before the component is initialized in order to have an effect.
+        {% include settings-table-flex.html
+          content=page.initProps
+          cols="flex-1, flex-1, flex-2"
+          section="initialization properties"
+        %}
+    </li>
+    <li class="border-0">
+        <strong>Component properties.</strong> The following properties modify component functionality. These properties can be set or adjusted at any time before or after initialization in order to have an effect.
+        {% include settings-table-flex.html
+          content=page.props
+          cols="flex-1, flex-1, flex-2"
+          section="component properties"
+        %}
+    </li>
+    <li class="border-0">
+        <strong>Additional component procedures.</strong> TThe following static procedures update the component after initialization. These are in addition to the primary methods referenced in the <a href="{{ site.baseurl }}/documentation/developers/#js-customization">JS customization</a> documentation.
+        {% include settings-table-flex.html
+          content=page.procedures
+          cols="flex-1, flex-1, flex-2"
+          section="additional component procedures"
+        %}
+    </li>
+  </ul>
 </div>
     <h5 id="combo-box-settings">Combo box settings</h5>
-    <p>This component has no settings.</p>
+    {% include settings-table-flex.html
+      content=site.data.settings.components.combo-box
+      cols="flex-1, flex-1"
+      section="settings"
+    %}
     <h5 id="combo-box-variants">Combo box variants</h5>
-    <p>This component has no variants.</p>
+    {% include settings-table-flex.html
+      content=page.variants
+      cols="flex-1, flex-1"
+      section="variants"
+    %}
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">
       <li>

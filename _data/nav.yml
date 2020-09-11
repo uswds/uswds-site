@@ -41,6 +41,7 @@ Components:
   - href: /components/icons/
   - href: /components/search/
   - href: /components/sidenav/
+  - href: /components/step-indicator/
   - href: /components/table/
   - href: /components/tag/
   - href: /components/tooltip/
@@ -111,7 +112,7 @@ About:
   - href: /about/updates/
   - href: /about/product-roadmap/
   - href: /about/research/
-  - href: /about/security-information/
+  - href: /about/security/
 
 Design principles:
   - href: /design-principles/

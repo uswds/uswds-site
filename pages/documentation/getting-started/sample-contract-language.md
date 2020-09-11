@@ -22,7 +22,7 @@ It also requires agencies to comply with [website standards](https://designsyste
 
 Use the approaches below as a starting point for any solicitations with requirements related to websites and digital services.
 
-## Before You Get Started
+## Before you get started
 
 21st Century IDEA codifies high-level requirements for federal websites and digital
 services. Additionally, many agencies have more specific requirements in their
@@ -34,9 +34,9 @@ websites and digital services, including 21st Century IDEA.
 Then work with your contracting officer (CO) to determine your acquisition strategy,
 including customizing the draft language below to meet your needs and requirements.
 
-## Draft Contract Language
+## Draft contract language
 
-### New Solicitations
+### New solicitations
 
 In new solicitations, you can include requirements for 21st Century IDEA in the
 performance work statement.
@@ -53,7 +53,7 @@ performance work statement.
 > of the requirement and the contractor shall prioritize implementation to align
 > with the priorities identified within the Performance Work Statement.
 
-### Open Solicitations
+### Open solicitations
 
 You can ask your CO to amend open solicitations to include requirements for
 21st Century IDEA.
@@ -69,14 +69,14 @@ You can ask your CO to amend open solicitations to include requirements for
 > of the requirement and the contractor shall prioritize implementation to align
 > with the priorities identified within the Performance Work Statement.
 
-### Customize the Draft Language
+### Customize the draft language
 
 Work with your CO to customize the draft language for new and open solicitations.
 For example, instead of “life of the requirement” you may use period of performance,
 sprint, next refresh, or another time period. Or, you may replace “Performance Work Statement”
 with “Statement of Objectives,” agency modernization plans, or another source of priorities.
 
-## Evaluation Factors
+## Evaluation factors
 You can use evaluation factors to select the best vendor by evaluating their
 ability to develop modern websites that meet specific requirements in
 21st Century IDEA, including incremental adoption of USWDS.
@@ -230,7 +230,7 @@ ability to develop modern websites that meet specific requirements in
  </p>
 </div>
 
-## Customize the Evaluation Factors
+## Customize the evaluation factors
 
 Work with your CO to select the best evaluation factor and customize the draft
 language. For example, instead of “18 months” you may require a shorter or longer time period.
@@ -245,7 +245,7 @@ scenario is a method for telling a story about a user’s interaction with your
 product, service, or website, focusing on the what, how, and why. Check out the
 user scenarios card in 18F Methods for more information on how to write scenarios.
 
-## Accessibility Requirements
+## Accessibility requirements
 Accessibility is not only the law, it’s also fundamental to a great digital
 experience. To ensure your technology is usable by all, regardless of ability,
 address accessibility and other requirements up-front in all your IT-related

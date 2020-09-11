@@ -213,11 +213,11 @@ Provide as many user scenarios as needed to describe your requirements. A user s
 ## Accessibility requirements
 Accessibility is not only the law, it’s also fundamental to a great digital experience. To ensure your technology is usable by all, regardless of ability, address accessibility and other requirements up-front in all your IT-related contracts and purchases.
 
-You can [find sample procurement language](https://www.section508.gov/buy/accessibility-requirements-tool) in the Accessibility Requirements Tool.
+You can find sample procurement language in the [Accessibility Requirements Tool](https://www.section508.gov/buy/accessibility-requirements-tool).
 
 ### Resources
 - [18F Methods](https://methods.18f.gov/): A guide to putting human-centered design into practice.
-- Accessibility Requirements Tool: A step-by-step guide to help you easily identify relevant accessibility requirements from the Revised 508 Standards, and incorporate them into your procurement and contracting documentation.
+- [Accessibility Requirements Tool](https://www.section508.gov/buy/accessibility-requirements-tool): A step-by-step guide to help you easily identify relevant accessibility requirements from the Revised 508 Standards, and incorporate them into your procurement and contracting documentation.
 - [Agile Acquisitions 101](https://www.fai.gov/media-library/item/agile-acquisitions-101): Online webinar that provides a great foundation to begin. Shares lessons learned, success stories, and examples of where agile acquisition has been successfully implemented in the federal government.
 - [An Agile Software Development Solicitation Guide](https://18f.gsa.gov/2019/08/20/an-agile-software-development-solicitation-guide/): How to contract for agile software development services. In this post, the authors show you how to create a complete solicitation in hours, not months, using 18F’s agile contract format.
 - [Checklist of Requirements for Federal Websites and Digital Services](https://digital.gov/resources/checklist-of-requirements-for-federal-digital-services/): The relevant laws, policies, and regulations for federal agencies.

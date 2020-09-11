@@ -6,7 +6,7 @@ redirect_from:
 layout: styleguide
 title: Security
 category: About
-lead: We have security checks and processes in place to ensure that USWDS is a secure system.
+lead: Developing and using USWDS with security in mind
 ---
 
 {{ site.data.security.decoded

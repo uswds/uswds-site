@@ -418,9 +418,9 @@ ignore:
     - gulp-eslint > eslint > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
-      snyk > snyk-nodejs-lockfile-parser > @yarnpkg/core > lodash:
-        reason: Patch not working
-        expires: '2020-10-04T18:14:03.410Z'
+      snyk > snyk-docker-plugin > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        reason: No current fix
+        expires: '2020-10-11T04:46:32.827Z'
     - gulp-eslint > eslint > inquirer > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
@@ -439,6 +439,9 @@ ignore:
     - gulp-sass > node-sass > gaze > globule > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.499Z'
+    - snyk > snyk-nodejs-lockfile-parser > @yarnpkg/core > lodash:
+        reason: Patch not working
+        expires: '2020-10-04T18:14:03.410Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

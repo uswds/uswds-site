@@ -1225,7 +1225,7 @@ code {
   }
 }
 
-[class*="language-"] {
+code[class*="language-"] {
   color: color("base");
 
   // Custom code sample colors
@@ -3381,13 +3381,4 @@ body {
     @include u-border-top("base-lighter");
     @include u-text("normal");
   }
-}
-
-// ==========================================================================
-// Contract Language Page
-// ==========================================================================
-
-// Override base gray from `[class*="language-"]`
-.page-sample-contract-language-for-21st-century-idea {
-  color: inherit;
 }

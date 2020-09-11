@@ -5,6 +5,13 @@ type: component
 title: Step indicator
 category: Components
 lead: A step indicator updates users on their progress through a multi-step process.
+variants:
+  - variant: "`.usa-step-indicator--no-labels`"
+    description: Don't show step labels
+  - variant: "`.usa-step-indicator--no-counters`"
+    description: Don't show the step counters
+  - variant: "`.usa-step-indicator--centered`"
+    description: Center the counters and labels in the steps
 ---
 
 {% include code/preview.html component="step-indicator" %}
@@ -105,24 +112,11 @@ lead: A step indicator updates users on their progress through a multi-step proc
         settings=settings.contents
       %}
       <h4 id="component-variants">Step indicator variants</h4>
-      <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants">
-        <thead>
-          <tr>
-            <th scope="col" class="flex-6">Variant</th>
-            <th scope="col" class="flex-6">Description</th>
-          </tr>
-        </thead>
-        <tbody class="font-mono-2xs">
-          <tr>
-            <td data-title="Variable" class="flex-6">Labeled segments</td>
-            <td data-title="Description" class="flex-6">
-              <p class="font-lang-3xs">
-                In each segement, place <code>&lt;span class="usa-step-indicator__segment-label"&gt;LABEL&lt;/span&gt;</code>
-              </p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      {% include settings-table-flex.html
+        content=page.variants
+        cols="flex-1, flex-1"
+        section="variants"
+      %}
       <h4 class="usa-heading">Package information</h4>
       <ul class="usa-content-list">
         <li>

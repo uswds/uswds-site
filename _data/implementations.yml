@@ -66,6 +66,16 @@
     url: https://github.com/18F
   notes: "This [Ruby on Rails](http://rubyonrails.org/) gem is not currently maintained."
 
+- name: react-uswds
+  distribution: React
+  id: react-uswds
+  url: https://github.com/trussworks/react-uswds
+  author:
+    name: Truss
+    url: https://github.com/trussworks
+  version: 1.6.1
+  notes: "A front-end component library aimed at implementing USWDS design patterns in React."
+
 - name: us_web_design_standards gem
   distribution: Ruby gem
   url: https://github.com/18F/us_web_design_standards_gem
@@ -116,3 +126,11 @@
     url: https://github.com/bruffridge
   version:
   notes: "A WordPress theme designed for NASA, built on the [Sage starter theme](https://roots.io/sage/), styled using the U.S. Web Design System. While it currently uses the NASA fork of the U.S. Web Design System, this could be swapped out by changing the dependency in package.json from nasawds to uswds."
+
+- name: tailwindcss-uswds
+  distribution: Tailwind CSS plugin
+  url: https://github.com/hursey013/tailwindcss-uswds
+  author:
+    name: Brian Hurst
+    url: https://github.com/hursey013
+  notes: "A Tailwind CSS plugin for adding U.S. Web Design System design tokens to supported Tailwind utilities."

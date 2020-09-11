@@ -216,11 +216,10 @@ Accessibility is not only the law, it’s also fundamental to a great digital ex
 You can [find sample procurement language](https://www.section508.gov/buy/accessibility-requirements-tool) in the Accessibility Requirements Tool.
 
 ### Resources
-- [18F Methods](https://methods.18f.gov/) - A guide to putting human-centered design into practice.
-- Accessibility Requirements Tool - A step-by-step guide to help you easily identify relevant accessibility requirements from the Revised 508 Standards, and incorporate them into your procurement and contracting documentation.
-- [Agile Acquisitions 101](https://www.fai.gov/media-library/item/agile-acquisitions-101)
-- Online webinar that provides a great foundation to begin. Shares lessons learned, success stories, and examples of where agile acquisition has been successfully implemented in the federal government.
-- [An Agile Software Development Solicitation Guide](https://18f.gsa.gov/2019/08/20/an-agile-software-development-solicitation-guide/) - How to contract for agile software development services. In this post, the authors show you how to create a complete solicitation in hours, not months, using 18F’s agile contract format.
-- [Checklist of Requirements for Federal Websites and Digital Services](https://digital.gov/resources/checklist-of-requirements-for-federal-digital-services/) - The relevant laws, policies, and regulations for federal agencies.
-- [TechFAR Hub](https://techfarhub.cio.gov/) - Practical tools and resources for applying industry best practices to digital service acquisitions.
-- [U.S. Web Design System](https://designsystem.digital.gov/) - A toolkit of principles, guidance, and code to help you design and build accessible, mobile-friendly government websites and digital services.
+- [18F Methods](https://methods.18f.gov/): A guide to putting human-centered design into practice.
+- Accessibility Requirements Tool: A step-by-step guide to help you easily identify relevant accessibility requirements from the Revised 508 Standards, and incorporate them into your procurement and contracting documentation.
+- [Agile Acquisitions 101](https://www.fai.gov/media-library/item/agile-acquisitions-101): Online webinar that provides a great foundation to begin. Shares lessons learned, success stories, and examples of where agile acquisition has been successfully implemented in the federal government.
+- [An Agile Software Development Solicitation Guide](https://18f.gsa.gov/2019/08/20/an-agile-software-development-solicitation-guide/): How to contract for agile software development services. In this post, the authors show you how to create a complete solicitation in hours, not months, using 18F’s agile contract format.
+- [Checklist of Requirements for Federal Websites and Digital Services](https://digital.gov/resources/checklist-of-requirements-for-federal-digital-services/): The relevant laws, policies, and regulations for federal agencies.
+- [TechFAR Hub](https://techfarhub.cio.gov/): Practical tools and resources for applying industry best practices to digital service acquisitions.
+- [U.S. Web Design System](https://designsystem.digital.gov/): A toolkit of principles, guidance, and code to help you design and build accessible, mobile-friendly government websites and digital services.

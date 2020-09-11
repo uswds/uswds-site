@@ -1,7 +1,7 @@
 ---
 permalink: /documentation/sample-contract/
 layout: styleguide
-title: Sample Contract Language for 21st Century IDEA
+title: Sample contract language for 21st Century IDEA
 category: How to use USWDS
 lead: How to document requirements related to website modernization in contracts
 redirect_from:
@@ -18,16 +18,14 @@ The [21st Century Integrated Digital Experience Act](https://digital.gov/resourc
 - improve customer experience, and
 - standardize and transition to centralized shared services.
 
-It also requires agencies to comply with [website standards](https://designsystem.digital.gov/website-standards/)
-to improve federal websites and digital services.
+It also requires agencies to comply with [website standards](https://designsystem.digital.gov/website-standards/) to improve federal websites and digital services.
 
-Use the approaches below as a starting point for any solicitations with requirements
-related to websites and digital services.
+Use the approaches below as a starting point for any solicitations with requirements related to websites and digital services.
 
 ## Before You Get Started
 
 21st Century IDEA codifies high-level requirements for federal websites and digital
-services.  Additionally, many agencies have more specific requirements in their
+services. Additionally, many agencies have more specific requirements in their
 digital strategy and other guidelines.
 
 Consult with your agency’s Chief Information Officer and [Federal Web Council representative](https://digital.gov/resources/federal-web-council/#current-council-members) regarding agency requirements for
@@ -84,152 +82,152 @@ ability to develop modern websites that meet specific requirements in
 21st Century IDEA, including incremental adoption of USWDS.
 
 <div class="example border-left-05 border-base-light padding-left-105 margin-top-2 margin-left-5">
-  <h3>
-    ✎ Draft 1: Modern Website or Digital Service Evaluation Factor
-  </h3>
+ <h3>
+  ✎ Draft 1: Modern Website or Digital Service Evaluation Factor
+ </h3>
 
-  <p>
-    Contractor shall provide a link to a public-facing website or digital service
-    developed in the last 18 months. The information contained within the link will
-    be evaluated on the following:
-  </p>
+ <p>
+  Contractor shall provide a link to a public-facing website or digital service
+  developed in the last 18 months. The information contained within the link will
+  be evaluated on the following:
+ </p>
 
-  <table class="font-sans-2xs usa-table">
-    <thead>
-      <tr>
-        <th scope="col">Requirement</th>
-        <th scope="col">Evaluated Area</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">Accessible</th>
-        <td>be accessible to individuals with disabilities in  accordance with [Section 508](https://www.section508.gov/)</td>
-      </tr>
-      <tr>
-        <th scope="row">Consistent</th>
-        <td>have a consistent appearance</td>
-      </tr>
-      <tr>
-        <th scope="row">Authoritative</th>
-        <td>not overlap with or duplicate existing websites</td>
-      </tr>
-      <tr>
-        <th scope="row">Searchable</th>
-        <td>contain a search function</td>
-      </tr>
-      <tr>
-        <th scope="row">Secure</th>
-        <td>be provided through a secure connection</td>
-      </tr>
-      <tr>
-        <th scope="row">User-Centered*</th>
-        <td>be designed around user needs with data-driven analysis</td>
-      </tr>
-      <tr>
-        <th scope="row">Customizable</th>
-        <td>provide an option for a more customized digital experience</td>
-      </tr>
-      <tr>
-        <th scope="row">Mobile-Friendly</th>
-        <td>be functional and usable on mobile devices</td>
-      </tr>
-    </tbody>
-  </table>
+ <table class="font-sans-2xs usa-table">
+  <thead>
+   <tr>
+    <th scope="col">Requirement</th>
+    <th scope="col">Evaluated Area</th>
+   </tr>
+  </thead>
+  <tbody>
+   <tr>
+    <th scope="row">Accessible</th>
+    <td>be accessible to individuals with disabilities in accordance with [Section 508](https://www.section508.gov/)</td>
+   </tr>
+   <tr>
+    <th scope="row">Consistent</th>
+    <td>have a consistent appearance</td>
+   </tr>
+   <tr>
+    <th scope="row">Authoritative</th>
+    <td>not overlap with or duplicate existing websites</td>
+   </tr>
+   <tr>
+    <th scope="row">Searchable</th>
+    <td>contain a search function</td>
+   </tr>
+   <tr>
+    <th scope="row">Secure</th>
+    <td>be provided through a secure connection</td>
+   </tr>
+   <tr>
+    <th scope="row">User-Centered*</th>
+    <td>be designed around user needs with data-driven analysis</td>
+   </tr>
+   <tr>
+    <th scope="row">Customizable</th>
+    <td>provide an option for a more customized digital experience</td>
+   </tr>
+   <tr>
+    <th scope="row">Mobile-Friendly</th>
+    <td>be functional and usable on mobile devices</td>
+   </tr>
+  </tbody>
+ </table>
 </div>
 
 <div class="example border-left-05 border-base-light padding-left-105 margin-top-2 margin-left-5">
-  <h3>
-    ✎ Draft 2 (Scenario): Modern Website or Digital Service Scenario Evaluation Factor
-  </h3>
+ <h3>
+  ✎ Draft 2 (Scenario): Modern Website or Digital Service Scenario Evaluation Factor
+ </h3>
 
-  <p>
-    The Contractor shall provide a link to a public-facing website or digital
-    service developed as a Minimal Viable Product (MVP) based on the provided information.
-    The information contained within the MVP will be evaluated on the following:
-  </p>
+ <p>
+  The Contractor shall provide a link to a public-facing website or digital
+  service developed as a Minimal Viable Product (MVP) based on the provided information.
+  The information contained within the MVP will be evaluated on the following:
+ </p>
 
-  <h4>
-    Government Provided Information
-  </h4>
+ <h4>
+  Government Provided Information
+ </h4>
 
-  <ul>
-    <li>User Scenario 1 - `add scenario`</li>
-    <li>User Scenario 2 - `add scenario`</li>
-  </ul>
+ <ul>
+  <li>User Scenario 1 - `add scenario`</li>
+  <li>User Scenario 2 - `add scenario`</li>
+ </ul>
 
-  <h4>Evaluation</h4>
-  <p>
-    The government will evaluate the below eight minimal areas on a pass/fail basis.
-  </p>
+ <h4>Evaluation</h4>
+ <p>
+  The government will evaluate the below eight minimal areas on a pass/fail basis.
+ </p>
 
-  <table class="usa-table font-sans-2xs">
-    <thead>
-      <tr>
-        <th scope="col">The website or digital service is</th>
-        <th scope="col">Evaluated Area</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">Accessible</th>
-        <td>
-          be accessible to individuals with disabilities in  accordance with
-          <a href="https://www.section508.gov/">Section 508</a>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">Consistent</th>
-        <td>
-          have a consistent appearance
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">Authoritative</th>
-        <td>
-          not overlap with or duplicate existing websites
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">Searchable</th>
-        <td>
-          contain a search function
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">Secure</th>
-        <td>
-          be provided through a secure connection
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">User-Centered*</th>
-        <td>
-          be designed around user needs with data-driven analysis
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">Customizable</th>
-        <td>
-          provide an option for a more customized digital experience
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">Mobile-Friendly</th>
-        <td>
-          be functional and usable on mobile devices
-        </td>
-      </tr>
-    </tbody>
-  </table>
+ <table class="usa-table font-sans-2xs">
+  <thead>
+   <tr>
+    <th scope="col">The website or digital service is</th>
+    <th scope="col">Evaluated Area</th>
+   </tr>
+  </thead>
+  <tbody>
+   <tr>
+    <th scope="row">Accessible</th>
+    <td>
+     be accessible to individuals with disabilities in accordance with
+     <a href="https://www.section508.gov/">Section 508</a>
+    </td>
+   </tr>
+   <tr>
+    <th scope="row">Consistent</th>
+    <td>
+     have a consistent appearance
+    </td>
+   </tr>
+   <tr>
+    <th scope="row">Authoritative</th>
+    <td>
+     not overlap with or duplicate existing websites
+    </td>
+   </tr>
+   <tr>
+    <th scope="row">Searchable</th>
+    <td>
+     contain a search function
+    </td>
+   </tr>
+   <tr>
+    <th scope="row">Secure</th>
+    <td>
+     be provided through a secure connection
+    </td>
+   </tr>
+   <tr>
+    <th scope="row">User-Centered*</th>
+    <td>
+     be designed around user needs with data-driven analysis
+    </td>
+   </tr>
+   <tr>
+    <th scope="row">Customizable</th>
+    <td>
+     provide an option for a more customized digital experience
+    </td>
+   </tr>
+   <tr>
+    <th scope="row">Mobile-Friendly</th>
+    <td>
+     be functional and usable on mobile devices
+    </td>
+   </tr>
+  </tbody>
+ </table>
 
-  <p>
-    The Contractor will also submit a 1-page whitepaper outlining their use of the
-    U.S. Web Design System maturity model to deliver a great digital experience
-    integrating design principles, following user experience guidance, and using
-    USWDS code. The whitepaper shall be specific to the MVP developed and the evaluation
-    of this whitepaper will not be conducted on a pass/fail basis.
-  </p>
+ <p>
+  The Contractor will also submit a 1-page whitepaper outlining their use of the
+  U.S. Web Design System maturity model to deliver a great digital experience
+  integrating design principles, following user experience guidance, and using
+  USWDS code. The whitepaper shall be specific to the MVP developed and the evaluation
+  of this whitepaper will not be conducted on a pass/fail basis.
+ </p>
 </div>
 
 ## Customize the Evaluation Factors

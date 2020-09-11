@@ -9,4 +9,7 @@ category: About
 lead: We have security checks and processes in place to ensure that USWDS is a secure system.
 ---
 
-{{ site.data.security.decoded | markdownify }}
+{{ site.data.security.decoded
+  | markdownify
+  | split: '</h1>'
+  | last }}

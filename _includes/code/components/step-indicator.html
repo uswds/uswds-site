@@ -1,4 +1,24 @@
+<h6>Default</h6>
 {% capture step-indicator %}
   {% fractal_component step-indicator %}
-  {% fractal_component step-indicator--with-labels %}
 {% endcapture %}{{ step-indicator | strip }}
+
+<h6>Centered</h6>
+{% capture step-indicator--centered %}
+  {% fractal_component step-indicator--centered %}
+{% endcapture %}{{ step-indicator--centered | strip }}
+
+<h6>No counters</h6>
+{% capture step-indicator--no-counters %}
+  {% fractal_component step-indicator--no-counters %}
+{% endcapture %}{{ step-indicator--no-counters | strip }}
+
+<h6>No counters and centered</h6>
+{% capture step-indicator--centered-no-counters %}
+  {% fractal_component step-indicator--centered-no-counters %}
+{% endcapture %}{{ step-indicator--centered-no-counters | strip }}
+
+<h6>No labels</h6>
+{% capture step-indicator--no-labels %}
+  {% fractal_component step-indicator--no-labels %}
+{% endcapture %}{{ step-indicator--no-labels | strip }}

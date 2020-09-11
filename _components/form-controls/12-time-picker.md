@@ -6,10 +6,10 @@ lead: A time picker helps users select a specific time.
 initProps:
   - property: "`data-min-time`"
     element: .usa-time-picker
-    description: The start time used in the time picker, given in `hh:mm` 24-hour format. The default is `00:00`.
+    description: The start time used in the time picker in `hh:mm` 24-hour format. The default is `00:00`.
   - property: "`data-max-time`"
     element: .usa-time-picker
-    description: The end time used for the time picker, given in `hh:mm` 24-hour format. The default is `23:59`.
+    description: The end time used for the time picker in `hh:mm` 24-hour format. The default is `23:59`.
   - property: "`data-step`"
     element: .usa-time-picker
     description: The number of minutes between options. The minimum is `1` minute and the default is `30` minutes.
@@ -26,7 +26,7 @@ initProps:
   <div id="time-picker-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
     <h4>When to use the time picker component</h4>
     <ul class="usa-content-list">
-      <li><strong>Scheduling.</strong> Use the time picker to schedule a time from common, consistent increments, such as planning a meeting time from 30-minute blocks.</li>
+      <li><strong>Scheduling.</strong> Use the time picker to schedule a time from common, consistent increments, such as planning a meeting time in 30-minute blocks.</li>
     </ul>
     <h4>When to consider something else</h4>
     <ul class="usa-content-list">
@@ -42,10 +42,10 @@ initProps:
     </ul>
     <h4 class="usa-heading">Implementation</h4>
 <div class="usa-prose site-prose">
-  <p>The properties and procedures listed below that show <code>.usa-time-picker</code> as the element are specific to the time picker, but the time picker is a specialized <a href="{{ site.baseurl }}/components/form-controls/#combo-box">combo box</a> instance, and supports the all combo box properties and procedures on <code>.usa-time-picker</code> just as on <code>.usa-combo-box</code>. </p>
+  <p>The properties and procedures listed below that show <code>.usa-time-picker</code> as the element are specific to the time picker, but the time picker is a specialized <a href="{{ site.baseurl }}/components/form-controls/#combo-box">combo box</a> instance and supports all combo box properties and procedures on <code>.usa-time-picker</code> just as on <code>.usa-combo-box</code>. </p>
   <ul class="usa-content-list">
     <li>
-        <strong>Initialization properties.</strong> The following properties update the component during initialization. These properties must be set before the component is initialized in order to have an effect. Those listed below that show <code>.usa-time-picker</code> as the element are specific to the time picker, but the time picker is a specialized <a href="{{ site.baseurl }}/components/form-controls/#combo-box">combo box</a> instance, and supports the combo box initialization properties on <code>.usa-time-picker</code> just as on <code>.usa-combo-box</code>.
+        <strong>Initialization properties.</strong> The following properties update the component during initialization. These properties must be set before the component is initialized in order to have an effect. Those listed below that show <code>.usa-time-picker</code> as the element are specific to the time picker, but the time picker is a specialized <a href="{{ site.baseurl }}/components/form-controls/#combo-box">combo box</a> instances and supports the combo box initialization properties on <code>.usa-time-picker</code> just as on <code>.usa-combo-box</code>.
         {% assign comboBox = site.components | where: "title", "Combo box" | first %}
         {% assign initPropsCombined = comboBox.initProps | concat: page.initProps %}
         {% include settings-table-flex.html

@@ -12,11 +12,11 @@ redirect_from:
 The [21st Century Integrated Digital Experience Act](https://digital.gov/resources/21st-century-integrated-digital-experience-act/)
 (21st Century IDEA) requires all executive branch agencies to:
 
-- modernize their websites,
-- digitize services and forms,
-- accelerate use of e-signatures,
-- improve customer experience, and
-- standardize and transition to centralized shared services.
+- modernize their websites
+- digitize services and forms
+- accelerate use of e-signatures
+- improve customer experience
+- standardize and transition to centralized shared services
 
 It also requires agencies to comply with [website standards](https://designsystem.digital.gov/website-standards/) to improve federal websites and digital services.
 

@@ -76,7 +76,7 @@
     "postcss-csso": "^4.0.0",
     "sass": "^1.26.10",
     "snyk": "^1.363.0",
-    "uswds": "uswds/uswds#10x-forms-3362/progress-stepper",
+    "uswds": "github:uswds/uswds#10x-forms-3362/progress-stepper",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },

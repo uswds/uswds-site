@@ -61,10 +61,10 @@ Work with your CO to customize the draft language for new and open solicitations
 ## Evaluation factors
 You can use evaluation factors to select the best vendor by evaluating their ability to develop modern websites that meet specific requirements in 21st Century IDEA, including incremental adoption of USWDS.
 
-<div class="example border-left-05 border-base-light padding-left-105 margin-top-2 margin-left-5">
- <h3>
-  ✎ Draft 1: Modern Website or Digital Service Evaluation Factor
- </h3>
+### Draft 1
+
+<div class="example border-left-05 border-base-light padding-left-105 margin-top-2">
+ <h3>Modern Website or Digital Service Evaluation Factor</h3>
 
  <p>
   Contractor shall provide a link to a public-facing website or digital service developed in the last 18 months. The information contained within the link will be evaluated on the following:
@@ -114,10 +114,9 @@ You can use evaluation factors to select the best vendor by evaluating their abi
  </table>
 </div>
 
-<div class="example border-left-05 border-base-light padding-left-105 margin-top-2 margin-left-5">
- <h3>
-  ✎ Draft 2 (Scenario): Modern Website or Digital Service Scenario Evaluation Factor
- </h3>
+### Draft 2 (scenario)
+<div class="example border-left-05 border-base-light padding-left-105 margin-top-2">
+ <h3>Modern Website or Digital Service Scenario Evaluation Factor</h3>
 
  <p>
   The Contractor shall provide a link to a public-facing website or digital service developed as a Minimal Viable Product (MVP) based on the provided information. The information contained within the MVP will be evaluated on the following:

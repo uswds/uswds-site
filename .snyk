@@ -10,18 +10,18 @@ ignore:
     - uswds > autolinker:
         reason: No fix available
         expires: '2020-09-12T03:55:15.820Z'
-      uswds > handlebars-helpers > helper-markdown > remarkable > autolinker:
-        reason: No patch available
-        expires: '2020-10-14T16:26:55.825Z'
     - uswds > handlebars-helpers > helper-markdown > remarkable > autolinker:
         reason: No patch available
         expires: '2020-09-12T03:55:15.828Z'
-      uswds > handlebars-helpers > helper-md > remarkable > autolinker:
+    - uswds > handlebars-helpers > helper-md > remarkable > autolinker:
+        reason: No patch available
+        expires: '2020-09-12T03:55:15.828Z'
+    - uswds > handlebars-helpers > helper-markdown > remarkable > autolinker:
         reason: No patch available
         expires: '2020-10-14T16:26:55.825Z'
     - uswds > handlebars-helpers > helper-md > remarkable > autolinker:
         reason: No patch available
-        expires: '2020-09-12T03:55:15.828Z'
+        expires: '2020-10-14T16:26:55.825Z'
   SNYK-JS-DOTPROP-543489:
     - uswds > @frctl/fractal > update-notifier > configstore > dot-prop:
         reason: No fix available
@@ -102,9 +102,6 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -117,13 +114,13 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-09-12T03:55:15.829Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2020-10-14T16:26:55.826Z'
   SNYK-JS-NODESASS-535498:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -136,13 +133,13 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-09-12T03:55:15.829Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2020-10-14T16:26:55.826Z'
   SNYK-JS-NODESASS-535502:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -155,13 +152,13 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-09-12T03:55:15.829Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2020-10-14T16:26:55.826Z'
   SNYK-JS-NODESASS-540956:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -174,13 +171,13 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-09-12T03:55:15.829Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2020-10-14T16:26:55.826Z'
   SNYK-JS-NODESASS-540958:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -193,13 +190,13 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-09-12T03:55:15.829Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2020-10-14T16:26:55.826Z'
   SNYK-JS-NODESASS-540964:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -212,13 +209,13 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-09-12T03:55:15.829Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2020-10-14T16:26:55.826Z'
   SNYK-JS-NODESASS-540974:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -231,13 +228,13 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-09-12T03:55:15.829Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2020-10-14T16:26:55.826Z'
   SNYK-JS-NODESASS-540978:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -250,13 +247,13 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-09-12T03:55:15.829Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2020-10-14T16:26:55.826Z'
   SNYK-JS-NODESASS-540980:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -269,13 +266,13 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-09-12T03:55:15.829Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2020-10-14T16:26:55.826Z'
   SNYK-JS-NODESASS-540990:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -288,13 +285,13 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-09-12T03:55:15.829Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2020-10-14T16:26:55.826Z'
   SNYK-JS-NODESASS-540992:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -307,13 +304,13 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-09-12T03:55:15.829Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2020-10-14T16:26:55.826Z'
   SNYK-JS-NODESASS-540994:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -326,13 +323,13 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-09-12T03:55:15.829Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2020-10-14T16:26:55.826Z'
   SNYK-JS-NODESASS-540996:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -345,13 +342,13 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-09-12T03:55:15.829Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2020-10-14T16:26:55.826Z'
   SNYK-JS-NODESASS-540998:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -364,13 +361,13 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-09-12T03:55:15.829Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2020-10-14T16:26:55.826Z'
   SNYK-JS-NODESASS-541000:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.122Z'
-      gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -383,13 +380,13 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-09-12T03:55:15.829Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2020-10-14T16:26:55.826Z'
   SNYK-JS-NODESASS-541002:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.122Z'
-      gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -402,6 +399,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-09-12T03:55:15.829Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2020-10-14T16:26:55.826Z'
   'npm:braces:20180219':
     - uswds > nswatch > chokidar > anymatch > micromatch > braces:
         reason: No patch available
@@ -410,18 +410,18 @@ ignore:
     - uswds > autolinker:
         reason: No fix available
         expires: '2020-09-12T03:55:15.811Z'
-      uswds > handlebars-helpers > helper-markdown > remarkable > autolinker:
-        reason: No patch available
-        expires: '2020-10-14T16:26:55.825Z'
     - uswds > handlebars-helpers > helper-markdown > remarkable > autolinker:
         reason: No patch available
         expires: '2020-09-12T03:55:15.828Z'
-      uswds > handlebars-helpers > helper-md > remarkable > autolinker:
+    - uswds > handlebars-helpers > helper-md > remarkable > autolinker:
+        reason: No patch available
+        expires: '2020-09-12T03:55:15.828Z'
+    - uswds > handlebars-helpers > helper-markdown > remarkable > autolinker:
         reason: No patch available
         expires: '2020-10-14T16:26:55.825Z'
     - uswds > handlebars-helpers > helper-md > remarkable > autolinker:
         reason: No patch available
-        expires: '2020-09-12T03:55:15.828Z'
+        expires: '2020-10-14T16:26:55.825Z'
   SNYK-JS-GULPSCSSLINT-560114:
     - gulp-scss-lint:
         reason: No patch available
@@ -467,12 +467,12 @@ ignore:
     - uswds > flat:
         reason: No fix available
         expires: '2020-09-12T03:55:15.828Z'
-      uswds > mocha > yargs-unparser > flat:
-        reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
     - uswds > mocha > yargs-unparser > flat:
         reason: No patch available
         expires: '2020-09-12T03:55:15.828Z'
+    - uswds > mocha > yargs-unparser > flat:
+        reason: No patch available
+        expires: '2020-10-14T16:26:55.826Z'
   SNYK-JS-MARKED-584281:
     - uswds > @frctl/fractal > marked:
         reason: No patch available
@@ -481,30 +481,84 @@ ignore:
     - gulp-eslint > eslint > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
-      uswds > @frctl/fractal > vorpal > inquirer > lodash:
-        reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
+      snyk > inquirer > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.682Z'
     - gulp-eslint > eslint > inquirer > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
+      snyk > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.682Z'
     - gulp-eslint > eslint > table > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
+      snyk > @snyk/dep-graph > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.682Z'
     - gulp-sass > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
+      snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.682Z'
     - gulp-sass > node-sass > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
+      snyk > snyk-go-plugin > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.682Z'
     - gulp-sass > node-sass > sass-graph > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
+      snyk > @snyk/cli-interface > @snyk/dep-graph > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.683Z'
     - gulp-sass > node-sass > gaze > globule > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.499Z'
+      snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.683Z'
     - snyk > snyk-nodejs-lockfile-parser > @yarnpkg/core > lodash:
         reason: Patch not working
         expires: '2020-10-04T18:14:03.410Z'
+      snyk > snyk-cpp-plugin > @snyk/dep-graph > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.683Z'
+    - uswds > @frctl/fractal > vorpal > inquirer > lodash:
+        reason: No patch available
+        expires: '2020-10-14T16:26:55.826Z'
+      snyk > snyk-go-plugin > @snyk/dep-graph > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.683Z'
+    - snyk > snyk-gradle-plugin > @snyk/dep-graph > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.683Z'
+    - snyk > snyk-docker-plugin > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.683Z'
+    - snyk > snyk-mvn-plugin > @snyk/java-call-graph-builder > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.683Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cli-interface > @snyk/dep-graph > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.683Z'
+    - snyk > snyk-php-plugin > @snyk/cli-interface > @snyk/dep-graph > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.683Z'
+    - snyk > snyk-python-plugin > @snyk/cli-interface > @snyk/dep-graph > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.684Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.684Z'
+    - snyk > snyk-gradle-plugin > @snyk/cli-interface > @snyk/dep-graph > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.684Z'
+    - snyk > snyk-mvn-plugin > @snyk/cli-interface > @snyk/dep-graph > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.684Z'
   SNYK-JS-LODASH-608086:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No patch available

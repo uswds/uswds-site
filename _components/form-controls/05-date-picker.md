@@ -48,7 +48,7 @@ data-default-value | .usa-date-picker | The date picker input will set this valu
 
 {:.usa-content-list}
 
-- **Component properties.** The following properties modify component functionality. These properties must be set before the component is initialized in order to have an effect.
+- **Component properties.** The following properties modify component functionality. These properties can be set or adjusted at any time before or after initialization in order to have an effect.
 
 | property | element | effect |
 | --- | --- | ---

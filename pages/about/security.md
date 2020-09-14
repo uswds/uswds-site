@@ -6,11 +6,14 @@ redirect_from:
 layout: styleguide
 title: Security
 category: About
-lead: We have security checks and processes in place to ensure that USWDS is a secure system.
+lead: Developing and using USWDS with security in mind
 ---
 
 {% assign latest_release = site.data.releases | first %}
-{{ site.data.security.decoded | markdownify }}
+{{ site.data.security.decoded
+  | markdownify
+  | split: '</h1>'
+  | last }}
 
 ### Verify hash
 

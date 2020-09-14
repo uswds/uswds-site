@@ -814,6 +814,23 @@ utilities:
       <tr>
         <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
           <span>
+            .flex-align-self-<code>value</code>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-flex('align-self-<code>value</code>')
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-flex('align-self-center')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
             .flex-justify-<code>value</code>
           </span>
         </td>

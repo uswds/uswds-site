@@ -75,7 +75,7 @@
     "node-notifier": "^7.0.1",
     "postcss-csso": "^4.0.0",
     "sass": "^1.26.10",
-    "snyk": "^1.394.0",
+    "snyk": "^1.395.0",
     "uswds": "github:uswds/uswds#add-align-self--internal",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"

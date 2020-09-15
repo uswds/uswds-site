@@ -13,7 +13,7 @@ contents:
   - name: Domain text color
     description: The color of your domain text in the identifier masthead. This should be **grade 20-30** in the same family as the `$theme-identifier-background-color`.
     var: $theme-identifier-identity-domain-color
-    default: default
+    default: '"base-light"'
     type: color
   - name: Maximum width
     description: The maximum width of the content within the identifier. Use the same max-width as your site footer.

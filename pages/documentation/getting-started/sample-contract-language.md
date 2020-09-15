@@ -36,9 +36,9 @@ Then work with your contracting officer (CO) to determine your acquisition strat
 
 In new solicitations, you can include requirements for 21st Century IDEA in the performance work statement.
 
-{:.example.border-left-05.border-base-light.padding-left-105.margin-top-2}
-> **✎ Draft Language for New Solicitations**
->
+#### Draft language for new solicitations
+
+{:.example.border-left-05.border-base-light.padding-left-105.margin-top-2.measure-5}
 > Any website that is developed, modernized, enhanced, maintained, or otherwise delivered as a result of this contract shall be in compliance with the website standards of the Technology Transformation Services of the General Services Administration at [https://designsystem.digital.gov/website-standards/](https://designsystem.digital.gov/website-standards/).
 >
 > The U.S. Web Design System (USWDS) shall be adopted incrementally over the life of the requirement and the contractor shall prioritize implementation to align with the priorities identified within the Performance Work Statement.
@@ -47,9 +47,9 @@ In new solicitations, you can include requirements for 21st Century IDEA in the 
 
 You can ask your CO to amend open solicitations to include requirements for 21st Century IDEA.
 
-{:.example.border-left-05.border-base-light.padding-left-105.margin-top-2}
-> **✎ Draft Language for Open Solicitations**
->
+#### Draft language for open solicitations
+
+{:.example.border-left-05.border-base-light.padding-left-105.margin-top-2.measure-5}
 > This solicitation is hereby amended to include the website standards of the Technology Transformation Services of the General Services Administration [(https://designsystem.digital.gov/website-standards/)](https://designsystem.digital.gov/website-standards/) in accordance with the 21st Century Integrated Digital Experience Act.
 >
 > The U.S. Web Design System (USWDS) shall be adopted incrementally over the life of the requirement and the contractor shall prioritize implementation to align with the priorities identified within the Performance Work Statement.
@@ -61,16 +61,16 @@ Work with your CO to customize the draft language for new and open solicitations
 ## Evaluation factors
 You can use evaluation factors to select the best vendor by evaluating their ability to develop modern websites that meet specific requirements in 21st Century IDEA, including incremental adoption of USWDS.
 
-### Draft 1
+### Draft 1: <span class="text-light">Modern website or digital service evaluation factor</span>
 
-<div class="example border-left-05 border-base-light padding-left-105 margin-top-2">
- <h3>Modern Website or Digital Service Evaluation Factor</h3>
+<div class="example measure-4 border-left-05 border-base-light padding-left-105 margin-top-2 site-prose">
 
+<h4>Modern Website or Digital Service Evaluation Factor</h4>
  <p>
   Contractor shall provide a link to a public-facing website or digital service developed in the last 18 months. The information contained within the link will be evaluated on the following:
  </p>
 
- <table class="font-sans-2xs usa-table">
+ <table class="font-lang-2xs usa-table">
   <thead>
    <tr>
     <th scope="col">Requirement</th>
@@ -80,7 +80,7 @@ You can use evaluation factors to select the best vendor by evaluating their abi
   <tbody>
    <tr>
     <th scope="row">Accessible</th>
-    <td>be accessible to individuals with disabilities in accordance with [Section 508](https://www.section508.gov/)</td>
+    <td>be accessible to individuals with disabilities in accordance with <a href="https://www.section508.gov/">Section 508</a></td>
    </tr>
    <tr>
     <th scope="row">Consistent</th>
@@ -114,10 +114,10 @@ You can use evaluation factors to select the best vendor by evaluating their abi
  </table>
 </div>
 
-### Draft 2 (scenario)
-<div class="example border-left-05 border-base-light padding-left-105 margin-top-2">
- <h3>Modern Website or Digital Service Scenario Evaluation Factor</h3>
+### Draft 2 (scenario): <span class="text-light">Modern website or digital service scenario evaluation factor</span>
 
+<div class="example measure-4 border-left-05 border-base-light padding-left-105 margin-top-2 site-prose">
+  <h4>Modern Website or Digital Service Scenario Evaluation Factor</h4>
  <p>
   The Contractor shall provide a link to a public-facing website or digital service developed as a Minimal Viable Product (MVP) based on the provided information. The information contained within the MVP will be evaluated on the following:
  </p>
@@ -136,7 +136,7 @@ You can use evaluation factors to select the best vendor by evaluating their abi
   The government will evaluate the below eight minimal areas on a pass/fail basis.
  </p>
 
- <table class="usa-table font-sans-2xs">
+ <table class="usa-table font-lang-2xs">
   <thead>
    <tr>
     <th scope="col">The website or digital service is</th>

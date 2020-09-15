@@ -22,9 +22,6 @@ function shouldFetch(item, referrerItem) {
     // almost guaranteed to be a false-positive that's actually
     // in an example snippet of HTML in the docs, so ignore it.
     return false;
-  } else if (item.path.match(/%20/)) {
-    // ignore paths that have a false < in them. a bug?
-    return false;
   } else if (item.path.match(/%3C/)) {
     // ignore paths that have a false < in them. a bug?
     return false;

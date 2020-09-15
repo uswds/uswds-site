@@ -30,6 +30,8 @@ subnav:
   href: '#range'
 - text: Text input
   href: '#text-input'
+- text: Time picker
+  href: '#time-picker'
 - text: Validation
   href: '#validation'
 ---

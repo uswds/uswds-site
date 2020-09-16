@@ -12,7 +12,7 @@ variants:
     description: Show step counters
   - variant: "`.usa-step-indicator--counters-sm`"
     description: Show small step counters
-  - variant: "`.usa-step-indicator--centered`"
+  - variant: "`.usa-step-indicator--center`"
     description: Center counters and labels in each step
 ---
 

@@ -8,10 +8,12 @@ lead: A step indicator updates users on their progress through a multi-step proc
 variants:
   - variant: "`.usa-step-indicator--no-labels`"
     description: Don't show step labels
-  - variant: "`.usa-step-indicator--no-counters`"
-    description: Don't show the step counters
+  - variant: "`.usa-step-indicator--counters`"
+    description: Show step counters
+  - variant: "`.usa-step-indicator--counters-sm`"
+    description: Show small step counters
   - variant: "`.usa-step-indicator--centered`"
-    description: Center the counters and labels in the steps
+    description: Center counters and labels in each step
 ---
 
 {% include code/preview.html component="step-indicator" %}

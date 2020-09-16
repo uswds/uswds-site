@@ -15,11 +15,6 @@ contents:
     var: $theme-step-indicator-counter-border-width
     default: 0.5
     type: size
-  - name: Counter size
-    description: Diameter of the counter circle
-    var: $theme-step-indicator-counter-size
-    default: 5
-    type: size
   - name: Font family
     description: Font family of the labels and counter numbers
     var: $theme-step-indicator-font-family

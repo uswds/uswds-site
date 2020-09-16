@@ -1,57 +1,87 @@
 name: Step indicator
 contents:
-  - name: Indicator gap
-    description: Space between indicator segments
-    var: $theme-step-indicator-gap
+  - name: Background color
+    description: Background color of the component and the gaps around the counters
+    var: $step-indicator-background-color
+    default: '"white"'
+    type: color
+  - name: Counter gap
+    description: Gap between the counter and the segment
+    var: $theme-step-indicator-counter-gap
+    default: 0.5
+    type: size
+  - name: Counter border width
+    description: Size of the border around the pending steps
+    var: $theme-step-indicator-counter-border-width
+    default: 0.5
+    type: size
+  - name: Counter size
+    description: Diameter of the counter circle
+    var: $theme-step-indicator-counter-size
+    default: 5
+    type: size
+  - name: Font family
+    description: Font family of the labels and counter numbers
+    var: $theme-step-indicator-font-family
+    default: '"ui"'
+    type: family
+  - name: Heading font family
+    description: Font family of the heading
+    var: $theme-step-indicator-heading-font-family
+    default: '"ui"'
+    type: family
+  - name: Heading color
+    description: Color of the heading
+    var: $theme-step-indicator-heading-color
+    default: '"ink"'
+    type: color
+  - name: Heading font size
+    description: Font size of the heading on screens of **$theme-step-indicator-min-width** and larger
+    var: $theme-step-indicator-heading-font-size
+    default: '"lg"'
+    type: size
+  - name: Mobile heading font size
+    description: Font size of the heading on screens smaller than **$theme-step-indicator-min-width**
+    var: $theme-step-indicator-heading-font-size-small
+    default: '"md"'
+    type: size
+  - name: Label font size
+    description: Font size of segment labels
+    var: $theme-step-indicator-label-font-size
+    default: '"sm"'
+    type: size
+  - name: Minimum width
+    description: Width at which the component displays large-width features
+    var: $theme-step-indicator-min-width
+    default: '"tablet"'
+    type: size
+  - name: Pending segment color
+    description: Color of pending step segments. Use a grade of 20 more than **$step-indicator-background-color**.
+    var: $theme-step-indicator-segment-color-pending
+    default: '"base-lighter"'
+    type: color
+  - name: Complete segment color
+    description: Color of complete step segments. Use a grade at least 60.
+    var: $theme-step-indicator-segment-color-complete
+    default: '"primary-darker"'
+    type: color
+  - name: Current segment color
+    description: Color of the current step segments. Use a grade at least 20 more than **$theme-step-indicator-segment-color-complete**.
+    var: $theme-step-indicator-segment-color-current
+    default: '"primary"'
+    type: color
+  - name: Segment gap
+    description: Gap between step segments
+    var: $theme-step-indicator-segment-gap
     default: 2px
     type: units
-  - name: Label font size
-    description: Font size for segment labels
-    var: $theme-step-indicator-label-font-size
-    default: sm
-    type: size
-  - name: Label font size (sm)
-    description: Font size for segment labels on mobile devices
-    var: $theme-step-indicator-label-font-size-small
-    default: 3xs
-    type: size
-  - name: Min width
-    description: Breakpoint where font sizes change
-    var: $theme-step-indicator-min-width
-    default: mobile-lg
-    type: size
   - name: Segment height
-    description: Height setting for each segment
+    description: Height of the step segment. Note that the mobile segment height is always 1 unit.
     var: $theme-step-indicator-segment-height
     default: 1
     type: units
-  - name: Step color
-    description: Default color of segment steps
-    var: $theme-step-indicator-step-color
-    default: "primary-light"
+  - name: Pending text color
+    description: The text color of pending steps. Use a gray grade of 60 more than the **$step-indicator-background-color**.
+    var: $theme-step-indicator-text-pending-color
+    default: '"base-dark"'
     type: color
-  - name: Current step color
-    description: Color segment indicating current step
-    var: $theme-step-indicator-step-color-current
-    default: "primary-dark"
-    type: color
-  - name: Completed step color
-    description: Color segment indicating complete step
-    var: $theme-step-indicator-step-color-complete
-    default: "primary-dark"
-    type: color
-  - name: Font family
-    description: Font family used in header
-    var: $theme-step-indicator-font-family
-    default: "ui"
-    type: family
-  - name: Header font size
-    description: Font sizes used in header
-    var: $theme-step-indicator-font-size
-    default: "lg"
-    type: size
-  - name: Header font size (sm)
-    description: Font sizes used in header on mobile devices
-    var: $theme-step-indicator-font-size-small
-    default: "md"
-    type: size

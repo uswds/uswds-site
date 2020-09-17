@@ -1,21 +1,9 @@
-// Imports
-@use 'packages/required';
-@use 'settings/variables';
-@use 'settings/uswds-theme-general';
-@use 'settings/uswds-theme-typography';
-@use 'settings/uswds-theme-spacing';
-@use 'settings/uswds-theme-color';
-@use 'settings/uswds-theme-utilities';
-
-// Settings
+// Customizations
 // -------------------------------------
-// @import 'settings/settings-general';
-// @import 'settings/settings-typography';
-// @import 'settings/settings-color';
-// @import 'settings/settings-spacing';
-// @import 'settings/settings-utilities';
-// @import 'settings/settings-components';
-
-// Tools
-// -------------------------------------
+// @use "uswds-custom-styles-helper";
 @use 'uswds-theme-custom-styles';
+
+// @use 'sass:meta';
+// @include meta.load-css(
+//   'uswds-theme-custom-styles'
+// );

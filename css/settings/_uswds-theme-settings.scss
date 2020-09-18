@@ -1,7 +1,13 @@
+// Custom styles needs this
 @forward "variables";
+// Utilities needs $site-default-colors
+@use "variables" as *;
+
 @forward "packages/uswds-core" with (
+  // General
   $theme-show-notifications: false,
   $theme-layout-grid-use-important: true,
+  // Typography
   $theme-root-font-size: 16px,
   $theme-global-link-styles: true,
   $theme-font-type-lang: "public-sans",
@@ -16,10 +22,55 @@
   $theme-text-measure: 3,
   $theme-text-measure-wide: 4,
   $theme-lead-measure: 5,
+  // Fonts
   $theme-color-base-family: 'gray',
   $theme-color-base-lighter: 'gray-10',
   $theme-color-base-light: 'gray-30',
   $theme-color-base: 'gray-50',
   $theme-color-base-dark: 'gray-60',
   $theme-color-base-darker: 'gray-80',
+  $theme-color-warning: 'gold-20v',
+  // Utilities
+  $utilities-use-important: true,
+  $theme-utility-breakpoints: (
+    'card':             false,   // 160px
+    'card-lg':          false,   // 240px
+    'mobile':           false,   // 320px
+    'mobile-lg':        true,    // 480px
+    'tablet':           true,    // 640px
+    'tablet-lg':        false,   // 800px
+    'desktop':          true,    // 1024px
+    'desktop-lg':       true,   // 1200px
+    'widescreen':       false,   // 1400px
+  ),
+  $max-width-settings: (
+    output: true,
+    responsive: true,
+    active: false,
+    focus: false,
+    hover: false,
+    visited: false
+  ),
+  $whitespace-settings: (
+    output: true,
+    responsive: true,
+    active: false,
+    focus: false,
+    hover: false,
+    visited: false
+  ),
+  $background-color-palettes: (
+    'palette-color-system',
+    'palette-color-state'
+  ),
+  $background-color-manual-values: $site-default-colors,
+  $color-palettes: ('palette-color-system'),
+  $color-manual-values: $site-default-colors,
+  $font-palettes: ('palette-font'),
+  $font-weight-palettes: (
+    'palette-font-weight-default',
+    'palette-font-weight-system',
+  ),
+  $min-width-palettes: ('palette-min-width-default', 'palette-units-percentage'),
+  $text-decoration-color-manual-values: $site-default-colors,
 );

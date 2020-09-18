@@ -41,26 +41,26 @@ gulp.task("build-sass-fonts", function() {
 
 gulp.task("build-sass-components", function() {
   return gulp
-    .src("./css/uswds-components.scss")
+    .src('./css/uswds-components.scss')
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass
         .sync({
-          includePaths: ["./css/settings"],
-          outputStyle: "expanded"
+          includePaths: ['./node_modules/uswds/dist/scss', './css/settings'],
+          outputStyle: 'expanded',
         })
-        .on("error", function(error) {
+        .on('error', function (error) {
           sass.logError.bind(this)(error);
 
-          if (process.env.NODE_ENV !== "development") {
+          if (process.env.NODE_ENV !== 'development') {
             process.exit(1);
           }
         })
     )
     .pipe(postcss(dev_plugins))
-    .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("assets/css"))
-    .pipe(gulp.dest("_site/assets/css"));
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('assets/css'))
+    .pipe(gulp.dest('_site/assets/css'));
 });
 
 gulp.task("build-sass-custom", function() {

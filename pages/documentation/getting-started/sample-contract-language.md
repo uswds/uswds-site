@@ -144,8 +144,8 @@ You can use evaluation factors to select the best vendor by evaluating their abi
     <p>The Contractor shall provide a link to a public-facing website or digital service developed as a Minimal Viable Product (MVP) based on the provided information. The information contained within the MVP will be evaluated on the following:</p>
     <h5 class="font-mono-xs margin-bottom-0">Government Provided Information</h5>
     <ul>
-      <li>User Scenario 1 - `add scenario`</li>
-      <li>User Scenario 2 - `add scenario`</li>
+      <li>User Scenario 1 - [add scenario]</li>
+      <li>User Scenario 2 - [add scenario]</li>
     </ul>
     <h5 class="font-mono-xs margin-bottom-0">Evaluation</h5>
     <p>The government will evaluate the below eight minimal areas on a pass/fail basis.</p>

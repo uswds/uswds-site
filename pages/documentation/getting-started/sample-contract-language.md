@@ -1,5 +1,5 @@
 ---
-permalink: /documentation/sample-contract/
+permalink: /documentation/sample-contract-language/
 layout: styleguide
 title: Sample contract language for 21st Century IDEA
 category: How to use USWDS
@@ -36,23 +36,37 @@ Then work with your contracting officer (CO) to determine your acquisition strat
 
 In new solicitations, you can include requirements for 21st Century IDEA in the performance work statement.
 
-#### Draft language for new solicitations
-
-{:.example.border-left-05.border-base-light.padding-left-105.margin-top-2.measure-5}
-> Any website that is developed, modernized, enhanced, maintained, or otherwise delivered as a result of this contract shall be in compliance with the website standards of the Technology Transformation Services of the General Services Administration at [https://designsystem.digital.gov/website-standards/](https://designsystem.digital.gov/website-standards/).
->
-> The U.S. Web Design System (USWDS) shall be adopted incrementally over the life of the requirement and the contractor shall prioritize implementation to align with the priorities identified within the Performance Work Statement.
+<div class="usa-accordion site-accordion usa-accordion--bordered measure-5">
+  <h4 class="usa-accordion__heading">
+    <button class="usa-accordion__button font-lang-sm radius-top-md"
+      aria-expanded="true"
+      aria-controls="example-1">
+      Draft language for new solicitations
+    </button>
+  </h4>
+  <div id="example-1" class="usa-accordion__content font-mono-xs padding-2 radius-bottom-md">
+    <p>Any website that is developed, modernized, enhanced, maintained, or otherwise delivered as a result of this contract shall be in compliance with the website standards of the Technology Transformation Services of the General Services Administration at <a href="https://designsystem.digital.gov/website-standards/">https://designsystem.digital.gov/website-standards/</a>.</p>
+    <p>The U.S. Web Design System (USWDS) shall be adopted incrementally over the life of the requirement and the contractor shall prioritize implementation to align with the priorities identified within the Performance Work Statement.</p>
+  </div>
+</div>
 
 ### Open solicitations
 
 You can ask your CO to amend open solicitations to include requirements for 21st Century IDEA.
 
-#### Draft language for open solicitations
-
-{:.example.border-left-05.border-base-light.padding-left-105.margin-top-2.measure-5}
-> This solicitation is hereby amended to include the website standards of the Technology Transformation Services of the General Services Administration [(https://designsystem.digital.gov/website-standards/)](https://designsystem.digital.gov/website-standards/) in accordance with the 21st Century Integrated Digital Experience Act.
->
-> The U.S. Web Design System (USWDS) shall be adopted incrementally over the life of the requirement and the contractor shall prioritize implementation to align with the priorities identified within the Performance Work Statement.
+<div class="usa-accordion site-accordion usa-accordion--bordered measure-5">
+  <h4 class="usa-accordion__heading font-lang-sm">
+    <button class="usa-accordion__button radius-top-md"
+      aria-expanded="true"
+      aria-controls="example-2">
+      Draft language for open solicitations
+    </button>
+  </h4>
+  <div id="example-2" class="usa-accordion__content font-mono-xs padding-2 radius-bottom-md">
+    <p>This solicitation is hereby amended to include the website standards of the Technology Transformation Services of the General Services Administration (<a href="https://designsystem.digital.gov/website-standards/">https://designsystem.digital.gov/website-standards/</a>) in accordance with the 21st Century Integrated Digital Experience Act.</p>
+    <p>The U.S. Web Design System (USWDS) shall be adopted incrementally over the life of the requirement and the contractor shall prioritize implementation to align with the priorities identified within the Performance Work Statement.</p>
+  </div>
+</div>
 
 ### Customize the draft language
 
@@ -61,144 +75,141 @@ Work with your CO to customize the draft language for new and open solicitations
 ## Evaluation factors
 You can use evaluation factors to select the best vendor by evaluating their ability to develop modern websites that meet specific requirements in 21st Century IDEA, including incremental adoption of USWDS.
 
-### Draft 1: <span class="text-light">Modern website or digital service evaluation factor</span>
-
-<div class="example measure-4 border-left-05 border-base-light padding-left-105 margin-top-2 site-prose">
-
-<h4>Modern Website or Digital Service Evaluation Factor</h4>
- <p>
-  Contractor shall provide a link to a public-facing website or digital service developed in the last 18 months. The information contained within the link will be evaluated on the following:
- </p>
-
- <table class="font-lang-2xs usa-table">
-  <thead>
-   <tr>
-    <th scope="col">Requirement</th>
-    <th scope="col">Evaluated Area</th>
-   </tr>
-  </thead>
-  <tbody>
-   <tr>
-    <th scope="row">Accessible</th>
-    <td>be accessible to individuals with disabilities in accordance with <a href="https://www.section508.gov/">Section 508</a></td>
-   </tr>
-   <tr>
-    <th scope="row">Consistent</th>
-    <td>have a consistent appearance</td>
-   </tr>
-   <tr>
-    <th scope="row">Authoritative</th>
-    <td>not overlap with or duplicate existing websites</td>
-   </tr>
-   <tr>
-    <th scope="row">Searchable</th>
-    <td>contain a search function</td>
-   </tr>
-   <tr>
-    <th scope="row">Secure</th>
-    <td>be provided through a secure connection</td>
-   </tr>
-   <tr>
-    <th scope="row">User-Centered*</th>
-    <td>be designed around user needs with data-driven analysis</td>
-   </tr>
-   <tr>
-    <th scope="row">Customizable</th>
-    <td>provide an option for a more customized digital experience</td>
-   </tr>
-   <tr>
-    <th scope="row">Mobile-Friendly</th>
-    <td>be functional and usable on mobile devices</td>
-   </tr>
-  </tbody>
- </table>
+<div class="usa-accordion site-accordion usa-accordion--bordered measure-5">
+  <h3 class="usa-accordion__heading radius-top-md">
+    <button class="usa-accordion__button font-lang-sm"
+      aria-expanded="true"
+      aria-controls="example-3">
+      Draft 1: Modern website or digital service evaluation factor
+    </button>
+  </h3>
+  <div id="example-3" class="usa-accordion__content font-mono-xs padding-2 radius-bottom-md">
+    <h4 class="font-mono-sm">Modern Website or Digital Service Evaluation Factor</h4>
+    <p>Contractor shall provide a link to a public-facing website or digital service developed in the last 18 months. The information contained within the link will be evaluated on the following:</p>
+    <table class="font-mono-2xs usa-table">
+      <thead>
+      <tr>
+        <th scope="col">Requirement</th>
+        <th scope="col">Evaluated Area</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th scope="row">Accessible</th>
+        <td>be accessible to individuals with disabilities in accordance with <a href="https://www.section508.gov/">Section 508</a></td>
+      </tr>
+      <tr>
+        <th scope="row">Consistent</th>
+        <td>have a consistent appearance</td>
+      </tr>
+      <tr>
+        <th scope="row">Authoritative</th>
+        <td>not overlap with or duplicate existing websites</td>
+      </tr>
+      <tr>
+        <th scope="row">Searchable</th>
+        <td>contain a search function</td>
+      </tr>
+      <tr>
+        <th scope="row">Secure</th>
+        <td>be provided through a secure connection</td>
+      </tr>
+      <tr>
+        <th scope="row">User-Centered*</th>
+        <td>be designed around user needs with data-driven analysis</td>
+      </tr>
+      <tr>
+        <th scope="row">Customizable</th>
+        <td>provide an option for a more customized digital experience</td>
+      </tr>
+      <tr>
+        <th scope="row">Mobile-Friendly</th>
+        <td>be functional and usable on mobile devices</td>
+      </tr>
+      </tbody>
+    </table>
+   </div>
 </div>
 
-### Draft 2 (scenario): <span class="text-light">Modern website or digital service scenario evaluation factor</span>
-
-<div class="example measure-4 border-left-05 border-base-light padding-left-105 margin-top-2 site-prose">
-  <h4>Modern Website or Digital Service Scenario Evaluation Factor</h4>
- <p>
-  The Contractor shall provide a link to a public-facing website or digital service developed as a Minimal Viable Product (MVP) based on the provided information. The information contained within the MVP will be evaluated on the following:
- </p>
-
- <h4>
-  Government Provided Information
- </h4>
-
- <ul>
-  <li>User Scenario 1 - `add scenario`</li>
-  <li>User Scenario 2 - `add scenario`</li>
- </ul>
-
- <h4>Evaluation</h4>
- <p>
-  The government will evaluate the below eight minimal areas on a pass/fail basis.
- </p>
-
- <table class="usa-table font-lang-2xs">
-  <thead>
-   <tr>
-    <th scope="col">The website or digital service is</th>
-    <th scope="col">Evaluated Area</th>
-   </tr>
-  </thead>
-  <tbody>
-   <tr>
-    <th scope="row">Accessible</th>
-    <td>
-     be accessible to individuals with disabilities in accordance with
-     <a href="https://www.section508.gov/">Section 508</a>
-    </td>
-   </tr>
-   <tr>
-    <th scope="row">Consistent</th>
-    <td>
-     have a consistent appearance
-    </td>
-   </tr>
-   <tr>
-    <th scope="row">Authoritative</th>
-    <td>
-     not overlap with or duplicate existing websites
-    </td>
-   </tr>
-   <tr>
-    <th scope="row">Searchable</th>
-    <td>
-     contain a search function
-    </td>
-   </tr>
-   <tr>
-    <th scope="row">Secure</th>
-    <td>
-     be provided through a secure connection
-    </td>
-   </tr>
-   <tr>
-    <th scope="row">User-Centered*</th>
-    <td>
-     be designed around user needs with data-driven analysis
-    </td>
-   </tr>
-   <tr>
-    <th scope="row">Customizable</th>
-    <td>
-     provide an option for a more customized digital experience
-    </td>
-   </tr>
-   <tr>
-    <th scope="row">Mobile-Friendly</th>
-    <td>
-     be functional and usable on mobile devices
-    </td>
-   </tr>
-  </tbody>
- </table>
-
- <p>
-  The Contractor will also submit a 1-page whitepaper outlining their use of the U.S. Web Design System maturity model to deliver a great digital experience integrating design principles, following user experience guidance, and using USWDS code. The whitepaper shall be specific to the MVP developed and the evaluation of this whitepaper will not be conducted on a pass/fail basis.
- </p>
+<div class="usa-accordion site-accordion usa-accordion--bordered measure-5">
+  <h3 class="usa-accordion__heading font-lang-sm">
+    <button class="usa-accordion__button radius-top-md line-height-sans-4"
+      aria-expanded="true"
+      aria-controls="example-4">
+      Draft 2 (scenario): Modern website or digital service scenario evaluation factor
+    </button>
+  </h3>
+  <div id="example-4" class="usa-accordion__content font-mono-xs padding-2 radius-bottom-md">
+    <h4 class="font-mono-sm">Modern Website or Digital Service Scenario Evaluation Factor</h4>
+    <p>The Contractor shall provide a link to a public-facing website or digital service developed as a Minimal Viable Product (MVP) based on the provided information. The information contained within the MVP will be evaluated on the following:</p>
+    <h5 class="font-mono-xs margin-bottom-0">Government Provided Information</h5>
+    <ul>
+      <li>User Scenario 1 - `add scenario`</li>
+      <li>User Scenario 2 - `add scenario`</li>
+    </ul>
+    <h5 class="font-mono-xs margin-bottom-0">Evaluation</h5>
+    <p>The government will evaluate the below eight minimal areas on a pass/fail basis.</p>
+    <table class="usa-table font-mono-2xs">
+      <thead>
+      <tr>
+        <th scope="col">The website or digital service is</th>
+        <th scope="col">Evaluated Area</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th scope="row">Accessible</th>
+        <td>
+        be accessible to individuals with disabilities in accordance with
+        <a href="https://www.section508.gov/">Section 508</a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Consistent</th>
+        <td>
+        have a consistent appearance
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Authoritative</th>
+        <td>
+        not overlap with or duplicate existing websites
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Searchable</th>
+        <td>
+        contain a search function
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Secure</th>
+        <td>
+        be provided through a secure connection
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">User-Centered*</th>
+        <td>
+        be designed around user needs with data-driven analysis
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Customizable</th>
+        <td>
+        provide an option for a more customized digital experience
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Mobile-Friendly</th>
+        <td>
+        be functional and usable on mobile devices
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <p>The Contractor will also submit a 1-page whitepaper outlining their use of the U.S. Web Design System maturity model to deliver a great digital experience integrating design principles, following user experience guidance, and using USWDS code. The whitepaper shall be specific to the MVP developed and the evaluation of this whitepaper will not be conducted on a pass/fail basis.</p>
+   </div>
 </div>
 
 ## Customize the evaluation factors

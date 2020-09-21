@@ -42,7 +42,7 @@ variants:
       <h3>Usability guidance</h3>
       <ul class="usa-content-list">
         <li>
-          <strong>Indicate where a user is in the process.</strong> Use the same color for all steps before and after the user’s current step. Use a different color with sufficient contrast for the current step line.
+          <strong>Indicate where a user is in the process.</strong> Use a color and text treatment for the current step segment that is distinct from both the completed and pending step segments. This current segment should be the most visually prominent segment in the step indicator. Pending segments should be the least prominent of the segments, but should still maintain accessible contrast and not appear disabled.
         </li>
         <li>
           <strong>Use short or single-word labels.</strong> If labelling the step indicators, stick to very short words.

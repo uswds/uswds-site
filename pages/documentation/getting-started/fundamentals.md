@@ -92,7 +92,7 @@ Install USWDS from the command line, and save it as a dependency in your `packag
 npm install uswds --save
 
 # [a lot of notices]
-# + uswds@2.8.1 [or another version number]
+# + uswds@2.9.0 [or another version number]
 # [a few more notifications]
 ```
 

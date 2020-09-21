@@ -3382,3 +3382,37 @@ body {
     @include u-text("normal");
   }
 }
+
+.site-terminal {
+  pre,
+  code {
+    @include typeset("mono", "sm", 3);
+  }
+  pre {
+    @include u-bg("gray-cool-80");
+    @include u-measure(5);
+    @include u-text("white", "pre-wrap");
+    @include u-radius("md");
+  }
+  .nt,
+  .nv,
+  .nx {
+    @include u-text("blue-warm-30v");
+  }
+  .nb {
+    @include u-text("mint-30");
+  }
+  .c,
+  .p,
+  .c1 {
+    @include u-text("gray-cool-30");
+  }
+  .nl,
+  .k,
+  .kd {
+    @include u-text("red-warm-30v");
+  }
+  .bp {
+    @include u-text("violet-30v");
+  }
+}

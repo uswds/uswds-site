@@ -6,7 +6,7 @@ layout: styleguide
 type: element
 title: Identifier
 category: Components
-lead: The identifier discloses a site's parent agency and displays agency links required by federal policy.
+lead: The identifier communicates a site's parent agency and displays agency links required by federal laws and policies.
 ---
 
 {% include code/preview.html component="identifier" %}
@@ -22,7 +22,7 @@ lead: The identifier discloses a site's parent agency and displays agency links 
       <h4>When to use the identifier component</h4>
       <ul class="usa-content-list">
         <li><strong>To identify a site's parent agency.</strong> The identifier is a complement to the USWDS <a href="{{ site.baseurl }}/components/banner">banner</a>. Use the identifier to tell users what agency is responsible for your website.</li>
-        <li><strong>To display links required by federal policy.</strong> The identifier includes <a href="https://digital.gov/resources/required-web-content-and-links/">links required on all government sites</a>.</li>
+        <li><strong>To display links required by federal laws and policies.</strong> The identifier includes <a href="https://digital.gov/resources/required-web-content-and-links/">links required on all government sites</a>.</li>
       </ul>
       <h4>When to consider something else</h4>
       <ul class="usa-content-list">

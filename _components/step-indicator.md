@@ -29,11 +29,17 @@ variants:
       <h3>When to use the step indicator</h3>
       <ul class="usa-content-list">
         <li><strong>Multiple steps and screens.</strong> Use the step indicator when the user is working through a form or process that will span several different pages that can be organized into three or more high-level steps or chapters. This helps users understand the progression of long forms and reduces uncertainty as they complete each screen.</li>
+        <li>
+          <strong>Linear progression.</strong> The step indicator is designed to complement standard back/next navigation in a linear sequence, not to be navigation of its own.
+        </li>
       </ul>
       <h3>When to consider something else</h3>
       <ul class="usa-content-list">
         <li>
           <strong>Long forms with conditional logic.</strong> Consider another approach if the number of steps might change due to user input.
+        </li>
+        <li>
+          <strong>Nonlinear progression.</strong> The step indicator isn't appropriate for nonlinear forms or interactions that might be completed in any order.
         </li>
         <li>
           <strong>Very short forms.</strong> Don’t use a step indicator for short forms without chapters or sections. If a form or process has fewer than three sections, don't use a step indicator.
@@ -42,7 +48,7 @@ variants:
       <h3>Usability guidance</h3>
       <ul class="usa-content-list">
         <li>
-          <strong>Indicate where a user is in the process.</strong> Use the same color for all steps before and after the user’s current step. Use a different color with sufficient contrast for the current step line.
+          <strong>Indicate where a user is in the process.</strong> Use a color and text treatment for the current step segment that is distinct from both the completed and pending step segments. The current segment should be the most visually prominent segment in the step indicator. Pending segments should be the least visually prominent of the segments, but should still maintain accessible contrast and not appear disabled.
         </li>
         <li>
           <strong>Use short or single-word labels.</strong> If labelling the step indicators, stick to very short words.

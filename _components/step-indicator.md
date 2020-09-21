@@ -36,6 +36,9 @@ variants:
           <strong>Long forms with conditional logic.</strong> Consider another approach if the number of steps might change due to user input.
         </li>
         <li>
+          <strong>Nonlinear progression.</strong> The step indicator isn't appropriate for nonlinear forms or interactions that might be completed in any order.
+        </li>
+        <li>
           <strong>Very short forms.</strong> Don’t use a step indicator for short forms without chapters or sections. If a form or process has fewer than three sections, don't use a step indicator.
         </li>
       </ul>

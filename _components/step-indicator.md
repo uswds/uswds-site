@@ -29,6 +29,9 @@ variants:
       <h3>When to use the step indicator</h3>
       <ul class="usa-content-list">
         <li><strong>Multiple steps and screens.</strong> Use the step indicator when the user is working through a form or process that will span several different pages that can be organized into three or more high-level steps or chapters. This helps users understand the progression of long forms and reduces uncertainty as they complete each screen.</li>
+        <li>
+          <strong>Linear progression.</strong> The step indicator is designed to complement standard back/next navigation in a linear sequence, not to be navigation of its own.
+        </li>
       </ul>
       <h3>When to consider something else</h3>
       <ul class="usa-content-list">

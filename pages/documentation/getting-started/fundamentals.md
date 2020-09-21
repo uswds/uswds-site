@@ -128,7 +128,7 @@ A project often has many Sass files, but typically there's a single Sass file th
 
 The Sass entry point is a simple file that only needs to do three things:
 
-1. Include or point to a **USWDS [settings file](https://designsystem.digital.gov/documentation/settings/)** (or files)
+1. Include or point to a **USWDS [settings file]({{ site.baseurl }}/documentation/settings/)** (or files)
 1. Point to the **USWDS Sass entry point**
 1. Include or point to your project's **custom Sass**
 
@@ -161,7 +161,7 @@ We'll look at each section before moving on to compiling.
 
 USWDS settings provide a way to customize your theme styles without writing new code. Settings tell the design system how to build its stylesheets. In the Sass entry point, these settings are the first thing you need to import.
 
-Any individual setting is, essentially, a Sass variable. Each setting begins with the `$theme`- prefix, and we provide a list of all available settings [in the USWDS documentation]({{ site.baseurl }}/settings) as well as examples [in the USWDS codebase](https://github.com/uswds/uswds/tree/master/src/stylesheets/theme). A very simple settings file might look like this:
+Any individual setting is, essentially, a Sass variable. Each setting begins with the `$theme`- prefix, and we provide a list of all available settings [in the USWDS documentation]({{ site.baseurl }}/documentation/settings/) as well as examples [in the USWDS codebase](https://github.com/uswds/uswds/tree/master/src/stylesheets/theme). A very simple settings file might look like this:
 
 {:.site-terminal}
 ```scss

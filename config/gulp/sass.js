@@ -126,8 +126,8 @@ gulp.task("build-sass-prod", function() {
     .src([
       "./assets/css/uswds-fonts.css",
       "./assets/css/uswds-components.css",
-      "./assets/css/uswds-custom.css",
-      "./assets/css/uswds-utilities.css"
+      "./assets/css/uswds-utilities.css",
+      "./assets/css/uswds-custom.css"
     ])
     .pipe(
       sourcemaps.init({

@@ -18,9 +18,7 @@ lead: Developing and using USWDS with security in mind
 ### Verify hash
 
 If you have the latest version of USWDS you can verify the authenticity using
-this hash:
-
-{{ site.data.hash.decoded | markdownify }}
+the hash [shown on the download page]({{ site.baseurl }}/download/). Use the following techniques to generate a hash for your file. Your generated hash should match the hash we show on our download page.
 
 #### OSX / Linux
 Open a new terminal window and type:

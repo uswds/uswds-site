@@ -9,7 +9,6 @@ category: About
 lead: Developing and using USWDS with security in mind
 ---
 
-{% assign latest_release = site.data.releases | first %}
 {{ site.data.security.decoded
   | markdownify
   | split: '</h1>'

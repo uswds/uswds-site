@@ -115,7 +115,7 @@ You can use evaluation factors to select the best vendor by evaluating their abi
         <td>be provided through a secure connection</td>
       </tr>
       <tr>
-        <th scope="row">User-Centered*</th>
+        <th scope="row">User-Centered</th>
         <td>be designed around user needs with data-driven analysis</td>
       </tr>
       <tr>
@@ -189,7 +189,7 @@ You can use evaluation factors to select the best vendor by evaluating their abi
         </td>
       </tr>
       <tr>
-        <th scope="row">User-Centered*</th>
+        <th scope="row">User-Centered</th>
         <td>
         be designed around user needs with data-driven analysis
         </td>

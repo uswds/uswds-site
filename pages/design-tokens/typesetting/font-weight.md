@@ -147,14 +147,14 @@ Your context and coding style determine how you access USWDS font weight tokens 
         <td scope="row" data-title="Context">
           <span class="text-bold font-lang-3">function</span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span class="line-height-sans-6">
-            weight(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-weight/" class="token">weight</a>)
+            font-weight(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-weight/" class="token">weight</a>)
           </span>
         </td>
         <td data-title="Example">
           <span class="line-height-sans-6">
-            font-weight: weight(<code>'bold'</code>)
+            font-weight: font-weight(<code>'bold'</code>)
           </span>
         </td>
       </tr>
@@ -164,7 +164,7 @@ Your context and coding style determine how you access USWDS font weight tokens 
             <span class="text-bold">mixin</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             u-text(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-weight/" class="token">weight</a>)
           </span>
@@ -181,7 +181,7 @@ Your context and coding style determine how you access USWDS font weight tokens 
             <span class="text-bold font-lang-3">setting</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/typesetting/font-weight/" class="token">weight</a>
           </span>
@@ -198,7 +198,7 @@ Your context and coding style determine how you access USWDS font weight tokens 
             <span class="text-bold">utility</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             .text-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-weight/" class="token">weight</a>
           </span>

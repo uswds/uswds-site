@@ -14,6 +14,8 @@ subnav:
   href: '#utility-flex-wrap'
 - text: Flex align
   href: '#utility-flex-align'
+- text: Flex align self
+  href: '#utility-flex-align-self'
 - text: Flex justify
   href: '#utility-flex-justify'
 - text: Order
@@ -67,6 +69,16 @@ values:
     value: 'nowrap'
 
   flex_align:
+  - token: start
+    value: 'flex-start'
+  - token: center
+    value: 'center'
+  - token: end
+    value: 'flex-end'
+  - token: stretch
+    value: 'stretch'
+
+  flex_align_self:
   - token: start
     value: 'flex-start'
   - token: center
@@ -151,6 +163,14 @@ utilities:
   focus:        false
   hover:        false
   visited:      false
+- base:         flex-align-self
+  var:          align-self
+  output:       true
+  responsive:   false
+  active:       false
+  focus:        false
+  hover:        false
+  visited:      false
 - base:         flex-justify
   var:          justify-content
   output:       true
@@ -174,6 +194,7 @@ utilities:
   <h3 class="utilities-property-title">CSS properties</h3>
   <div class="margin-top-1">
     <span class="property utilities-property">align-items</span>
+    <span class="property utilities-property">align-self</span>
     <span class="property utilities-property">flex</span>
     <span class="property utilities-property">flex-direction</span>
     <span class="property utilities-property">flex-wrap</span>
@@ -407,6 +428,8 @@ utilities:
   <section class="utility" id="utility-flex-align">
     {% include utilities/utility-title-bar.html
       title="Flex align"
+      var="align-items"
+      property="align-items"
     %}
     <section class="utility-examples">
 
@@ -507,10 +530,59 @@ utilities:
     </section><!-- examples -->
   </section><!-- utility -->
 
+  <section class="utility" id="utility-flex-align-self">
+    {% include utilities/utility-title-bar.html
+      title="Flex align self"
+      var="align-self"
+      property="align-self"
+    %}
+    <section class="utility-examples">
+    {% for direction in page.values.flex_direction %}
+      <div class="border padding-1 radius-md{% if forloop.first %} margin-bottom-2{% endif %}">
+        <div class="padding-bottom-4 border-bottom margin-bottom-2">
+          <span class="utility-class">.flex-{{ direction.token }}</span>
+        </div>
+        <div class="grid-row flex-{{ direction.token }} margin-top-2 border-bottom border-base-light padding-bottom-2 margin-bottom-2 minh-card margin-x-neg-05 flex-no-wrap">
+          {% for align-self in page.values.flex_align_self %}
+          <div class="flex-1 padding-1px flex-align-self-{{ align-self.token }} display-flex flex-align-center bg-secondary-light flex-justify-center minh-7 minw-7 padding-1 margin-bottom-1 margin-x-05">
+            <span class="utility-class">.flex-align-self-{{ align-self.token }}</span>
+          </div>
+          {% endfor %}
+        </div>
+        </div>
+    {% endfor %}
+    <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4 margin-bottom-1">
+      <button class="usa-accordion__button" aria-controls="code-flex-align" aria-expanded="true">Code</button>
+      <div id="code-flex-align-self" class="usa-accordion__content">
+<div markdown="1" class="font-mono-xs">
+{% highlight html linenos %}
+<div class="display-flex flex-column">
+  <div class="flex-align-self-start"></div>
+  <div class="flex-align-self-center"></div>
+  <div class="flex-align-self-end"></div>
+  <div class="flex-align-self-stretch"></div>
+</div>
+
+<div class="display-flex flex-row">
+  <div class="flex-align-self-start"></div>
+  <div class="flex-align-self-center"></div>
+  <div class="flex-align-self-end"></div>
+  <div class="flex-align-self-stretch"></div>
+</div>
+
+{% endhighlight %}
+</div><!-- markdown -->
+        </div><!-- code-content -->
+      </div><!-- code-sample -->
+
+    </section><!-- examples -->
+  </section><!-- utility -->
+
   <section class="utility" id="utility-flex-justify">
     {% include utilities/utility-title-bar.html
       title="Flex justify"
       property="justify-content"
+      var="justify-content"
     %}
     <section class="utility-examples">
 
@@ -736,6 +808,23 @@ utilities:
         <td data-title="Example">
           <span>
             @include u-flex('align-center')
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span>
+            .flex-align-self-<code>value</code>
+          </span>
+        </td>
+        <td data-title="Mixin">
+          <span>
+            u-flex('align-self-<code>value</code>')
+          </span>
+        </td>
+        <td data-title="Example">
+          <span>
+            @include u-flex('align-self-center')
           </span>
         </td>
       </tr>

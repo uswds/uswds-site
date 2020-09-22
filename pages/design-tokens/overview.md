@@ -25,7 +25,7 @@ This degree of choice can slow down design work and make communication between d
 Design tokens are a limited set of discrete options, just like a scale of musical notes is drawn from the spectrum of all possible frequencies. Or like the presets on a car radio — not every option, just a specific selection.
 
 {:.padding-y-2}
-![continuous and tokenized values]({{ site.baseurl }}/assets/img/design-tokens/continuous-v-token.svg)
+![continuous and tokenized values]({{ site.baseurl }}/assets/img/design-tokens/continuous-v-token.svg){: role="img"}
 
 ### Example: Measure (line length)
 For example, measure (or line length) expressed with the `max-width` CSS property can accept any value in units like `em`, `rem`, `ch`, `ex`, and `px` to at least two decimal places. USWDS limits itself to 7 [measure]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token} tokens:

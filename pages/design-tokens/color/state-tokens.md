@@ -79,7 +79,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
         <td scope="row" data-title="Context">
           <span class="text-bold font-lang-3">function</span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             color(<a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>)
           </span>
@@ -97,7 +97,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
             <span>background-color</span>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             u-bg(<a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>)
           </span>
@@ -115,7 +115,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
             <span>color</span>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             u-text(<a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>)<br/>
           </span>
@@ -133,7 +133,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
             <span>border-color</span>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             u-border(<a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>)
           </span>
@@ -151,7 +151,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
             <span>text-decoration-color</span>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             u-underline(<a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>)
           </span>
@@ -168,7 +168,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
             <span class="text-bold font-lang-3">setting</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>
           </span>
@@ -186,7 +186,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
             <span>text-decoration-color</span>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             u-underline(<a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>)
           </span>
@@ -204,7 +204,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
             <span>background-color</span>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             .bg-<a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>
           </span>
@@ -222,7 +222,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
             <span>border-color</span>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             .border-<a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>
           </span>
@@ -240,7 +240,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
             <span>color</span>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             .text-<a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>
           </span>
@@ -258,7 +258,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
             <span>outline-color</span>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             .outline-<a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>
           </span>
@@ -276,7 +276,7 @@ Your context and coding style determine how you access USWDS color tokens in cod
             <span>text-decoration-color</span>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             .underline-<a href="{{ site.baseurl }}/design-tokens/color/state-tokens/" class="token">color</a>
           </span>

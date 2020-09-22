@@ -2,7 +2,7 @@
 permalink: /about/whats-new/
 layout: styleguide
 title: What’s new
-category: About USWDS
+category: About
 lead: Here you can find the latest news and information about USWDS. Read our latest release notes, learn about our impact in the government, and learn how we conduct user research to continuously improve our product and process.
 columns:
   - title: New users
@@ -46,34 +46,4 @@ project to our list.
   <div class="tablet:grid-col">
     {{ in_wild | markdownify }}
   </div>
-</div>
-
-## Web analytics for sites that use USWDS
-
-By accessing the Google Analytics data gathered for [analytics.usa.gov](https://analytics.usa.gov),
-we have aggregated a few data points to approximate how many users of federal
-websites have “experienced” USWDS. We will update these
-numbers quarterly.
-
-<div class="site-table-wrapper margin-top-4">
-  <table class="usa-table--borderless site-table-responsive">
-    <thead>
-      <tr>
-        <th scope="col" aria-sort="ascending">Quarter</th>
-        {% for column in page.columns %}
-        <th scope="col" align="right" class="text-right">{{ column.title }}</th>
-        {% endfor %}
-      </tr>
-    </thead>
-    <tbody class="font-lang-2 text-tabular">
-    {% for row in site.data.google_analytics reversed %}
-      <tr>
-        <td scope="row" data-title="Quarter"><span><strong>{{ row.Year }}</strong> {{ row.Quarter }}</span></td>
-        {% for column in page.columns %}
-        <td data-title="{{ column.title }}" class="text-right">{{ row[column.source] }}</td>
-        {% endfor %}
-      </tr>
-    {% endfor %}
-    </tbody>
-  </table>
 </div>

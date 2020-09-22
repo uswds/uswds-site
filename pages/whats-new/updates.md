@@ -2,7 +2,7 @@
 title: News and updates
 layout: post
 permalink: /about/updates/
-category: About USWDS
+category: About
 subnav:
   type: posts
 redirect_from:

@@ -4,7 +4,7 @@ tags:
 - case study
 - web design system
 - design
-category: About USWDS
+category: About
 excerpt:
 ---
 

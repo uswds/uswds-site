@@ -30,12 +30,12 @@ layout: default
         <a
           class="usa-button bg-secondary hover:bg-secondary-dark text-normal font-lang-sm margin-top-1"
           href="{{ site.baseurl }}/whats-new/updates/2019/04/08/introducing-uswds-2-0/"
-          >Learn about USWDS 2</a
+          >Learn about USWDS</a
         >
         <a
           class="usa-button hover:bg-primary-darker text-normal font-lang-sm bg-primary-vivid margin-top-1"
           href="{{ site.baseurl }}/documentation/migration/"
-          >Migrate to v2.6.0</a
+          >Migrate to v{{ site.uswds_version }}</a
         >
       </div>
     </div>
@@ -56,7 +56,7 @@ layout: default
           />
           <div class="usa-media-block__body">
             {% if list_item.topic %}
-            <h3>{{ list_item.topic }}</h3>
+            <h2>{{ list_item.topic }}</h2>
             {% endif %} {{ list_item.description | markdownify }}
             <p>
               <a href="{{ site.baseurl }}/{{ list_item.link.url }}/"

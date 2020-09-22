@@ -77,7 +77,7 @@ Your context and coding style determine how you access USWDS opacity tokens in c
         <td scope="row" data-title="Context">
           <span class="text-bold font-lang-3">function</span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             opacity(<a href="{{ site.baseurl }}/design-tokens/opacity/" class="token">opacity</a>)
           </span>
@@ -94,7 +94,7 @@ Your context and coding style determine how you access USWDS opacity tokens in c
             <span class="text-bold">mixin</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             u-opacity(<a href="{{ site.baseurl }}/design-tokens/opacity/" class="token">opacity</a>)
           </span>
@@ -111,7 +111,7 @@ Your context and coding style determine how you access USWDS opacity tokens in c
             <span class="text-bold font-lang-3">setting</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/opacity/" class="token">opacity</a>
           </span>
@@ -128,7 +128,7 @@ Your context and coding style determine how you access USWDS opacity tokens in c
             <span class="text-bold">utility</span><br/>
           </span>
         </td>
-        <td data-title="Usage">
+        <td data-title="Description">
           <span>
             .opacity-<a href="{{ site.baseurl }}/design-tokens/opacity/" class="token">opacity</a>
           </span>

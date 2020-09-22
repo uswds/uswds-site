@@ -30,21 +30,39 @@ ignore:
     - uswds > gulp-stylelint > mkdirp > minimist:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp > glob-watcher > chokidar > fsevents > node-pre-gyp > mkdirp > minimist:
+        reason: No fix available
+        expires: '2020-10-22T04:08:29.969Z'
     - uswds > @frctl/fractal > update-notifier > configstore > mkdirp > minimist:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp > glob-watcher > chokidar > fsevents > node-pre-gyp > tar > mkdirp > minimist:
+        reason: No fix available
+        expires: '2020-10-22T04:08:29.969Z'
     - uswds > glob-watcher > chokidar > fsevents > node-pre-gyp > rc > minimist:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp > glob-watcher > chokidar > fsevents > node-pre-gyp > rc > minimist:
+        reason: No fix available
+        expires: '2020-10-22T04:08:29.969Z'
     - uswds > @frctl/fractal > chokidar > fsevents > node-pre-gyp > rc > minimist:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      sass > chokidar > fsevents > node-pre-gyp > mkdirp > minimist:
+        reason: No fix available
+        expires: '2020-10-22T04:08:29.969Z'
     - uswds > nswatch > chokidar > fsevents > node-pre-gyp > rc > minimist:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      sass > chokidar > fsevents > node-pre-gyp > tar > mkdirp > minimist:
+        reason: No fix available
+        expires: '2020-10-22T04:08:29.969Z'
     - uswds > @frctl/fractal > browser-sync > chokidar > fsevents > node-pre-gyp > rc > minimist:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      sass > chokidar > fsevents > node-pre-gyp > rc > minimist:
+        reason: No fix available
+        expires: '2020-10-22T04:08:29.969Z'
     - uswds > @frctl/fractal > nunjucks > chokidar > fsevents > node-pre-gyp > rc > minimist:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
@@ -58,6 +76,9 @@ ignore:
     - uswds > mocha > yargs > yargs-parser:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp > gulp-cli > yargs > yargs-parser:
+        reason: No fix available
+        expires: '2020-10-22T04:08:29.970Z'
     - uswds > nyc > yargs > yargs-parser:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
@@ -481,57 +502,30 @@ ignore:
     - gulp-eslint > eslint > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
-      snyk > inquirer > lodash:
-        reason: Fix does not work
-        expires: '2020-10-14T16:33:16.682Z'
     - gulp-eslint > eslint > inquirer > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
-      snyk > graphlib > lodash:
-        reason: Fix does not work
-        expires: '2020-10-14T16:33:16.682Z'
     - gulp-eslint > eslint > table > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
-      snyk > @snyk/dep-graph > graphlib > lodash:
-        reason: Fix does not work
-        expires: '2020-10-14T16:33:16.682Z'
     - gulp-sass > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
-      snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
-        reason: Fix does not work
-        expires: '2020-10-14T16:33:16.682Z'
     - gulp-sass > node-sass > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
-      snyk > snyk-go-plugin > graphlib > lodash:
-        reason: Fix does not work
-        expires: '2020-10-14T16:33:16.682Z'
     - gulp-sass > node-sass > sass-graph > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
-      snyk > @snyk/cli-interface > @snyk/dep-graph > graphlib > lodash:
-        reason: Fix does not work
-        expires: '2020-10-14T16:33:16.683Z'
     - gulp-sass > node-sass > gaze > globule > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.499Z'
-      snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > graphlib > lodash:
-        reason: Fix does not work
-        expires: '2020-10-14T16:33:16.683Z'
     - snyk > snyk-nodejs-lockfile-parser > @yarnpkg/core > lodash:
         reason: Patch not working
         expires: '2020-10-04T18:14:03.410Z'
-      snyk > snyk-cpp-plugin > @snyk/dep-graph > graphlib > lodash:
-        reason: Fix does not work
-        expires: '2020-10-14T16:33:16.683Z'
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
-      snyk > snyk-go-plugin > @snyk/dep-graph > graphlib > lodash:
-        reason: Fix does not work
-        expires: '2020-10-14T16:33:16.683Z'
     - snyk > snyk-gradle-plugin > @snyk/dep-graph > graphlib > lodash:
         reason: Fix does not work
         expires: '2020-10-14T16:33:16.683Z'
@@ -559,6 +553,33 @@ ignore:
     - snyk > snyk-mvn-plugin > @snyk/cli-interface > @snyk/dep-graph > graphlib > lodash:
         reason: Fix does not work
         expires: '2020-10-14T16:33:16.684Z'
+    - snyk > inquirer > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.682Z'
+    - snyk > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.682Z'
+    - snyk > @snyk/dep-graph > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.682Z'
+    - snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.682Z'
+    - snyk > snyk-go-plugin > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.682Z'
+    - snyk > @snyk/cli-interface > @snyk/dep-graph > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.683Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.683Z'
+    - snyk > snyk-cpp-plugin > @snyk/dep-graph > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.683Z'
+    - snyk > snyk-go-plugin > @snyk/dep-graph > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.683Z'
   SNYK-JS-LODASH-608086:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No patch available

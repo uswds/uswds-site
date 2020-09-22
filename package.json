@@ -56,7 +56,7 @@
     "prepare": "npm run snyk-protect"
   },
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.1",
     "uswds": "github:uswds/uswds#use-sass-modules"
   },
   "devDependencies": {
@@ -69,7 +69,7 @@
     "chalk": "^2.4.2",
     "cheerio": "^1.0.0-rc.3",
     "chroma-js": "^1.4.0",
-    "chrome-launcher": "^0.10.5",
+    "chrome-launcher": "^0.13.4",
     "chrome-remote-interface": "^0.25.7",
     "colors": "^1.3.2",
     "del": "^3.0.0",
@@ -88,12 +88,12 @@
     "highlight.js": "^9.15.10",
     "json-format": "^1.0.1",
     "merge-stream": "^1.0.0",
-    "minimist": "^1.2.2",
+    "minimist": "^1.2.5",
     "node-notifier": "^5.4.3",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.14.1",
     "nswatch": "^0.2.0",
     "postcss-csso": "^4.0.0",
-    "sass": "^1.25.0",
+    "sass": "^1.26.11",
     "simplecrawler": "^1.1.8",
     "snyk": "^1.299.0",
     "vinyl-buffer": "^1.0.1",

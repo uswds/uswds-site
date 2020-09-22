@@ -15,7 +15,7 @@ const dev_plugins = [autoprefixer({ cascade: false })];
 
 const prod_plugins = [csso({ forceMediaMerge: false })];
 
-gulp.task("build-sass-fonts", function() {
+gulp.task("build-sass-fonts", function () {
   return gulp
     .src("./css/uswds-fonts.scss")
     .pipe(sourcemaps.init({ largeFile: true }))
@@ -23,9 +23,9 @@ gulp.task("build-sass-fonts", function() {
       sass
         .sync({
           includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
-          outputStyle: "expanded"
+          outputStyle: "expanded",
         })
-        .on("error", function(error) {
+        .on("error", function (error) {
           sass.logError.bind(this)(error);
 
           if (process.env.NODE_ENV !== "development") {
@@ -39,7 +39,7 @@ gulp.task("build-sass-fonts", function() {
     .pipe(gulp.dest("_site/assets/css"));
 });
 
-gulp.task("build-sass-components", function() {
+gulp.task("build-sass-components", function () {
   return gulp
     .src("./css/uswds-components.scss")
     .pipe(sourcemaps.init({ largeFile: true }))
@@ -47,9 +47,9 @@ gulp.task("build-sass-components", function() {
       sass
         .sync({
           includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
-          outputStyle: "expanded"
+          outputStyle: "expanded",
         })
-        .on("error", function(error) {
+        .on("error", function (error) {
           sass.logError.bind(this)(error);
 
           if (process.env.NODE_ENV !== "development") {
@@ -63,7 +63,7 @@ gulp.task("build-sass-components", function() {
     .pipe(gulp.dest("_site/assets/css"));
 });
 
-gulp.task("build-sass-custom", function() {
+gulp.task("build-sass-custom", function () {
   return gulp
     .src("./css/uswds-custom.scss")
     .pipe(sourcemaps.init({ largeFile: true }))
@@ -71,9 +71,9 @@ gulp.task("build-sass-custom", function() {
       sass
         .sync({
           includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
-          outputStyle: "expanded"
+          outputStyle: "expanded",
         })
-        .on("error", function(error) {
+        .on("error", function (error) {
           sass.logError.bind(this)(error);
 
           if (process.env.NODE_ENV !== "development") {
@@ -87,7 +87,7 @@ gulp.task("build-sass-custom", function() {
     .pipe(gulp.dest("_site/assets/css"));
 });
 
-gulp.task("build-sass-utilities", function() {
+gulp.task("build-sass-utilities", function () {
   return gulp
     .src("./css/uswds-utilities.scss")
     .pipe(sourcemaps.init({ largeFile: true }))
@@ -95,9 +95,9 @@ gulp.task("build-sass-utilities", function() {
       sass
         .sync({
           includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
-          outputStyle: "expanded"
+          outputStyle: "expanded",
         })
-        .on("error", function(error) {
+        .on("error", function (error) {
           sass.logError.bind(this)(error);
 
           if (process.env.NODE_ENV !== "development") {
@@ -121,18 +121,18 @@ gulp.task(
   )
 );
 
-gulp.task("build-sass-prod", function() {
+gulp.task("build-sass-prod", function () {
   return gulp
     .src([
       "./assets/css/uswds-fonts.css",
       "./assets/css/uswds-components.css",
       "./assets/css/uswds-custom.css",
-      "./assets/css/uswds-utilities.css"
+      "./assets/css/uswds-utilities.css",
     ])
     .pipe(
       sourcemaps.init({
         largeFile: true,
-        loadMaps: true
+        loadMaps: true,
       })
     )
     .pipe(concat("styles.css"))
@@ -144,7 +144,7 @@ gulp.task("build-sass-prod", function() {
 
 gulp.task("build-sass", gulp.series("build-sass-dev", "build-sass-prod"));
 
-gulp.task("scss-lint", function(done) {
+gulp.task("scss-lint", function (done) {
   if (!cFlags.test) {
     dutil.logMessage("scss-lint", "Skipping linting of Sass files.");
     return done();
@@ -154,7 +154,7 @@ gulp.task("scss-lint", function(done) {
     .src(["./css/**/*.scss"])
     .pipe(
       linter({
-        config: ".scss-lint.yml"
+        config: ".scss-lint.yml",
       })
     )
     .pipe(linter.failReporter("E"));

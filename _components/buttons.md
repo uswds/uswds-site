@@ -56,6 +56,7 @@ component_url: 'https://components.designsystem.digital.gov/components/detail/bu
             <li><code>usa-button--secondary</code></li>
             <li><code>usa-button--base</code></li>
             <li><code>usa-button--accent-cool</code></li>
+            <li><code>usa-button--accent-warm</code></li>
             <li><code>usa-button--outline</code></li>
             <li><code>usa-button--inverse</code></li>
             <li><code>usa-button--big</code></li>
@@ -89,6 +90,12 @@ component_url: 'https://components.designsystem.digital.gov/components/detail/bu
             <td data-title="Variant" class="flex-6">usa-button--accent-cool</td>
             <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">Button with a accent-cool background.</span>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-button--accent-warm</td>
+            <td data-title="Description" class="flex-6">
+              <span class="font-lang-3xs">Button with a accent-warm background.</span>
             </td>
           </tr>
           <tr>

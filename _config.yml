@@ -2,7 +2,7 @@
 title: U.S. Web Design System (USWDS)
 description: USWDS makes it easier to build accessible, mobile-friendly government websites for the American public.
 google_analytics_ua: UA-48605964-43
-uswds_version: 2.8.1
+uswds_version: 2.9.0
 components_url: "https://components.designsystem.digital.gov"
 federalist_base: "https://federalist-3b6ba08e-0df4-44c9-ac73-6fc193b0e19c.app.cloud.gov/preview/uswds/uswds"
 federalist_component_preview: "components/preview"
@@ -35,6 +35,12 @@ jekyll_get:
     decode_content: true
   - data: standards-sites
     json: "https://api.github.com/repos/uswds/uswds/contents/docs/WHO_IS_USING_USWDS.md"
+    decode_content: true
+  - data: security
+    json: "https://api.github.com/repos/uswds/uswds/contents/SECURITY.md"
+    decode_content: true
+  - data: hash
+    json: "https://api.github.com/repos/uswds/uswds/contents/security/uswds-2.9.0-zip-hash.txt?ref=master"
     decode_content: true
 
 repos:

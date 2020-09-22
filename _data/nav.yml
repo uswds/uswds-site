@@ -39,8 +39,10 @@ Components:
     href: /utilities/layout-grid/
   - href: /components/header/
   - href: /components/icons/
+  - href: /components/identifier/
   - href: /components/search/
   - href: /components/sidenav/
+  - href: /components/step-indicator/
   - href: /components/table/
   - href: /components/tag/
   - href: /components/tooltip/
@@ -50,6 +52,8 @@ How to use USWDS:
   - href: /how-to-use-uswds/
   - href: /website-standards/
   - href: /maturity-model/
+  - text: USWDS fundamentals and quickstart guide
+    href: /documentation/fundamentals/
   - href: /documentation/developers/
   - href: /documentation/designers/
   - href: /documentation/accessibility/
@@ -61,6 +65,7 @@ How to use USWDS:
   - href: /documentation/video-tutorials/
   - href: /documentation/implementations/
   - href: /documentation/showcase/
+  - href: /documentation/sample-contract-language/
 
 Design tokens:
   - href: /design-tokens/
@@ -110,6 +115,7 @@ About:
   - href: /about/updates/
   - href: /about/product-roadmap/
   - href: /about/research/
+  - href: /about/security/
 
 Design principles:
   - href: /design-principles/

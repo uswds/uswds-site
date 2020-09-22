@@ -1,5 +1,8 @@
 @use "packages/uswds-core" as uswds;
 
+// this throws a false positive syntax error in scss-lint :(
+/*
 .foo {
   color: uswds.color("primary");
 }
+*/

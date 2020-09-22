@@ -1,0 +1,5 @@
+@use "packages/uswds-core" as uswds;
+
+.foo {
+  color: uswds.color("primary");
+}

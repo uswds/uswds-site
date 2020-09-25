@@ -95,7 +95,6 @@
     "json-format": "^1.0.1",
     "merge-stream": "^2.0.0",
     "minimist": "^1.2.3",
-    "node-sass": "^4.14.1",
     "nswatch": "^0.2.0",
     "simplecrawler": "^1.1.8",
     "yamljs": "^0.3.0"

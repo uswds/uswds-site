@@ -161,7 +161,7 @@ your as-is state, what you’re doing well, and how you can better use USWDS to
 improve the public’s experience of your websites and digital services.
 
 ### Maturity Assessment Worksheet
-We’re introducing the draft [Maturity Model Assessment Worksheet]({{ site.baseurl }}/files/uswds-maturity-assessment-worksheet-v0.2.pdf) (PDF, 846 KB, 26 pages).
+We’re introducing the draft [Maturity Model Assessment Worksheet]({{ site.baseurl }}/files/uswds-maturity-assessment-worksheet_v0.3.pdf) (PDF, 695 KB, 14 pages).
 It’s meant to help you assess and understand your as-is state, what you’re
 doing well, and how you can better use USWDS to improve the public’s experience
 of your websites and digital services.

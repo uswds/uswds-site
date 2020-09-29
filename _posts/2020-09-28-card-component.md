@@ -16,8 +16,7 @@ This May, in USWDS 2.7.0, we released a [card component]({{ site.baseurl }}/comp
 ## What the card component looks like
 Like most things we design, a card should be easily scannable to determine the topic and the action. Both visual and content hierarchy are important. The basic card anatomy can contain a variety of content types, such as text, images and multimedia, or even buttons and links. Because a card is **modular**, it should be able to stand alone without relying on surrounding elements for context.
 
-#### [Caption: Anatomy of a Card]
-
+![Anatomy of a Card]({{ site.baseurl }}/img/card-blog/card--flag-outline.jpg)
 
 Card components could include any of the following elements:
 1. **Container:** Card containers hold all card elements, and their size is determined by the space those elements occupy. Card elevation is expressed by the container.

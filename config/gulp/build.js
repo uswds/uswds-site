@@ -1,10 +1,10 @@
-var fs            = require('fs');
-var path          = require('path');
+var fs = require('fs');
+var path = require('path');
 var child_process = require('child_process');
-var gulp          = require('gulp');
-var dutil         = require('./doc-util');
-var clean         = require('gulp-clean');
-var del           = require('del');
+var gulp = require('gulp');
+var dutil = require('./doc-util');
+var clean = require('gulp-clean');
+var del = require('del');
 
 
 gulp.task('clean-fonts', function () {
@@ -41,10 +41,10 @@ function spawnP(cmd, args, opts) {
   return new Promise((resolve, reject) => {
     console.log(`running ${cmd} ${args}`);
     child_process.spawn(
-        cmd,
-        args,
-        opts
-      )
+      cmd,
+      args,
+      opts
+    )
       .on('error', err => {
         reject(new Error(err));
       })
@@ -64,7 +64,7 @@ function spawnP(cmd, args, opts) {
 gulp.task('build-uswds-if-needed', function () {
   const rootDir = path.normalize(path.join(__dirname, '..', '..'));
   const uswdsDir = path.join(rootDir, 'node_modules', 'uswds');
-  const fractalIndex = path.join(uswdsDir, 'build', 'index.html');
+  const fractalIndex = path.join(uswdsDir, 'build', 'components', 'render');
   const gulpfile = path.join(uswdsDir, 'gulpfile.js');
 
   if (fs.existsSync(fractalIndex)) {
@@ -82,13 +82,13 @@ gulp.task('build-uswds-if-needed', function () {
     }
 
     const sharedOpts = { stdio: 'inherit', cwd: uswdsDir };
-    return spawnP('npm', [ 'run', 'federalist' ], sharedOpts);
+    return spawnP('npm', ['run', 'federalist'], sharedOpts);
   }
 });
 
 gulp.task('build',
   gulp.series(
-    function(done) {
+    function (done) {
       dutil.logIntroduction();
       dutil.logMessage(
         'build'

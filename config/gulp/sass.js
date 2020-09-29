@@ -1,9 +1,10 @@
+const { formatters } = require("stylelint");
 const autoprefixer = require("autoprefixer");
 const concat = require("gulp-concat");
 const csso = require("postcss-csso");
 const dutil = require("./doc-util");
 const gulp = require("gulp");
-const linter = require("gulp-scss-lint");
+const gulpStylelint = require("gulp-stylelint");
 const postcss = require("gulp-postcss");
 const sass = require("gulp-sass");
 const sourcemaps = require("gulp-sourcemaps");
@@ -12,8 +13,24 @@ const task = "sass";
 sass.compiler = require("sass");
 
 const dev_plugins = [autoprefixer({ cascade: false })];
-
 const prod_plugins = [csso({ forceMediaMerge: false })];
+
+const IGNORE_STRING = "This file is ignored";
+const ignoreStylelintIgnoreWarnings = (lintResults) =>
+  formatters.string(
+    lintResults.reduce((memo, result) => {
+      const { warnings } = result;
+      const fileIsIgnored = warnings.some((warning) =>
+        RegExp(IGNORE_STRING, "i").test(warning.text)
+      );
+
+      if (!fileIsIgnored) {
+        memo.push(result);
+      }
+
+      return memo;
+    }, [])
+  );
 
 gulp.task("build-sass-fonts", function () {
   return gulp
@@ -151,13 +168,20 @@ gulp.task("scss-lint", function (done) {
   }
 
   return gulp
-    .src(["./css/**/*.scss"])
+    .src("./css/**/*.scss")
     .pipe(
-      linter({
-        config: ".scss-lint.yml",
+      gulpStylelint({
+        failAfterError: true,
+        reporters: [
+          {
+            formatter: ignoreStylelintIgnoreWarnings,
+            console: true,
+          },
+        ],
+        syntax: "scss",
       })
     )
-    .pipe(linter.failReporter("E"));
+    .on("error", dutil.logError);
 });
 
 gulp.task(task, gulp.series("build-sass"));

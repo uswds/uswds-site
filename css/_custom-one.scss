@@ -3,6 +3,6 @@
 
 .foo {
   @extend .bar;
-  //  @include usa.u-margin-x(1);
-  //  color: usa.color("secondary-vivid");
+  @include usa.u-margin-x(1);
+  color: usa.color("secondary-vivid");
 }

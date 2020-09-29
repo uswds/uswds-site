@@ -2,7 +2,9 @@
 @use "packages/uswds-core" as uswds;
 
 // this throws a false positive syntax error in scss-lint :(
+/*
 .qaz {
   @include uswds.u-margin-y(1);
   color: uswds.color("primary-vivid");
 }
+*/

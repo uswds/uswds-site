@@ -1,6 +1,6 @@
-var gulp  = require('gulp');
+var gulp = require('gulp');
 var dutil = require('./doc-util');
-var task  = 'images';
+var task = 'images';
 
 gulp.task('copy-doc-images', function (done) {
 
@@ -17,7 +17,7 @@ gulp.task('copy-uswds-images', function (done) {
 
   dutil.logMessage(task, 'Copying images from uswds');
 
-  var stream = gulp.src('./node_modules/uswds/src/img/**/*')
+  var stream = gulp.src('./node_modules/uswds/dist/img/**/*')
     .pipe(gulp.dest('assets/img'));
 
   return stream;

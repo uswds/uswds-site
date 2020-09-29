@@ -1,8 +1,12 @@
-@import "variables";
+// forward any module-based packages:
+// testing ----------------------------
+// @forward "theme-modules--packages";
+// @forward "theme-modules--custom";
+// /testing ---------------------------
+
 @import "uswds-theme-general";
 @import "uswds-theme-typography";
 @import "uswds-theme-spacing";
 @import "uswds-theme-color";
 @import "uswds-theme-utilities";
-@import "uswds-theme-components";
 @import "packages/uswds-components";

@@ -1,0 +1,6 @@
+@use "packages/uswds-core" as *;
+
+.bar {
+  @include u-margin-y(1);
+  color: color("primary-vivid");
+}

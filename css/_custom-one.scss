@@ -1,0 +1,8 @@
+@use "packages/uswds-core" as usa;
+@use "custom-two" as *;
+
+.foo {
+  @extend .bar;
+  @include usa.u-margin-x(1);
+  color: usa.color("secondary-vivid");
+}

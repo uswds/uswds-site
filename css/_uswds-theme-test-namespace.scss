@@ -1,8 +1,8 @@
+@forward "packages/uswds-core";
 @use "packages/uswds-core" as uswds;
 
 // this throws a false positive syntax error in scss-lint :(
-/*
-.foo {
-  color: uswds.color("primary");
+.qaz {
+  @include uswds.u-margin-y(1);
+  color: uswds.color("primary-vivid");
 }
-*/

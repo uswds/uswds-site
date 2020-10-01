@@ -28,7 +28,7 @@ It’s also useful on sites where the hierarchy isn’t immediately obvious. For
 Breadcrumbs can help search engine optimization (or SEO) as well. When you use proper breadcrumb metadata, search engines display richer results for your webpages. This helps users more easily find and click on your content when they search for it.
 
 ## How to use the breadcrumb component
-This latest release provides a smart way of easily creating accessible links on any background. If you use the default link color in the breadcrumb settings, the system will pick the proper standard or reverse link color based on the value you set in `$theme-breadcrumb-background-color`. If you want a custom link color in the breadcrumb, you can set that with `$theme-breadcrumb-link-color` and the system will automatically build the hover, visited and active states, and check these for proper contrast.
+This release provides a smart way of easily creating accessible links on any background. If you use the default link color in the breadcrumb settings, the system will pick the proper standard or reverse link color based on the value you set in `$theme-breadcrumb-background-color`. If you want a custom link color in the breadcrumb, you can set that with `$theme-breadcrumb-link-color` and the system will automatically build the hover, visited and active states, and check these for proper contrast.
 
 On small screens we show a link to the parent of the current page. At wider widths, we'll show the full breadcrumb trail, with truncation. Your page titles should match the items in the breadcrumb. You can also update the breakpoint at which we display the full breadcrumb trail with `$theme-breadcrumb-min-width`.
 

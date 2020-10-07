@@ -218,7 +218,7 @@ Work with your CO to select the best evaluation factor and customize the draft l
 
 For the evaluation scenario, you can use it as an “all or nothing” factor (meaning, price is the only other factor evaluated by the government), or it could be pared down and used alongside other evaluation factors, such as past performance, experience, and price.
 
-Provide as many user scenarios as needed to describe your requirements. A user scenario is a method for telling a story about a user’s interaction with your product, service, or website, focusing on the what, how, and why. Check out the user scenarios card in 18F Methods for more information on how to write scenarios.
+Provide as many user scenarios as needed to describe your requirements. A user scenario is a method for telling a story about a user’s interaction with your product, service, or website, focusing on the what, how, and why. Check out the [user scenarios](https://methods.18f.gov/decide/user-scenarios/) card in 18F Methods for more information on how to write scenarios.
 
 ## Accessibility requirements
 Accessibility is not only the law, it’s also fundamental to a great digital experience. To ensure your technology is usable by all, regardless of ability, address accessibility and other requirements up-front in all your IT-related contracts and purchases.
@@ -231,4 +231,5 @@ You can find sample procurement language in the [Accessibility Requirements Tool
 - [Agile Acquisitions 101](https://www.fai.gov/media-library/item/agile-acquisitions-101): Online webinar that provides a great foundation to begin. Shares lessons learned, success stories, and examples of where agile acquisition has been successfully implemented in the federal government.
 - [An Agile Software Development Solicitation Guide](https://18f.gsa.gov/2019/08/20/an-agile-software-development-solicitation-guide/): How to contract for agile software development services. In this post, the authors show you how to create a complete solicitation in hours, not months, using 18F’s agile contract format.
 - [Checklist of Requirements for Federal Websites and Digital Services](https://digital.gov/resources/checklist-of-requirements-for-federal-digital-services/): The relevant laws, policies, and regulations for federal agencies.
+- [De-risking guide](https://derisking-guide.18f.gov/): Provides expert, actionable guidance to the public sector for delivering federally-funded, custom technology projects successfully. Includes a section on [deciding what to buy](https://derisking-guide.18f.gov/federal-field-guide/deciding-what-to-buy/).
 - [TechFAR Hub](https://techfarhub.cio.gov/): Practical tools and resources for applying industry best practices to digital service acquisitions.

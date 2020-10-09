@@ -738,34 +738,6 @@ body {
   }
 }
 
-.footer-section-bottom {
-  padding-top: units(2);
-  padding-bottom: units(2);
-  background-color: color($site-primary-darker);
-
-  p {
-    color: color("white");
-    font-size: font-size("lang", "2xs");
-    max-width: none;
-    overflow: hidden;
-
-    &:first-of-type,
-    &:last-of-type {
-      @include at-media("tablet") {
-        margin: 0;
-      }
-    }
-  }
-
-  a {
-    color: color("base-light");
-
-    &:hover {
-      color: color("white");
-    }
-  }
-}
-
 // Pattern Preview Boxes -------- //
 
 .preview {

@@ -8,8 +8,6 @@ lead: USWDS components are designed to set a new bar for simplicity and consiste
 
 **Getting started.** For getting up and running with USWDS, head over to our [Getting started]({{ site.baseurl }}/documentation/) page for more information.
 
-**See all USWDS components.** To browse the entire collection of USWDS components, visit [components.designsystem.digital.gov]({{ site.components_url }}).
-
 ## Importing only the components your project needs
 Not every USWDS project needs to use the entire design system. We support incremental adoption, in part by allowing any USWDS project to import only the components they need.
 

@@ -5,7 +5,6 @@ title: Button groups
 type: component
 category: Components
 lead: Use button groups to collect similar or related actions
-component_url: 'https://components.designsystem.digital.gov/components/detail/button-groups--default.html'
 subnav:
 - text: Default
   href: '#default-button-group'

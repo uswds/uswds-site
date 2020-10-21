@@ -1,0 +1,45 @@
+<h6>Standard site-alert</h6>
+
+{% capture site-alert--info %}
+  {% fractal_component site-alert--info %}
+{% endcapture %}{{ site-alert--info | strip }}
+
+{% capture site-alert--warning %}
+  {% fractal_component site-alert--warning %}
+{% endcapture %}{{ site-alert--warning | strip }}
+
+{% capture site-alert--error %}
+  {% fractal_component site-alert--error %}
+{% endcapture %}{{ site-alert--error | strip }}
+
+{% capture site-alert--emergency %}
+  {% fractal_component site-alert--emergency %}
+{% endcapture %}{{ site-alert--emergency | strip }}
+
+{% capture site-alert--success %}
+  {% fractal_component site-alert--success %}
+{% endcapture %}{{ site-alert--success | strip }}
+
+<h6>Slim site alert</h6>
+
+{% capture site-alert--slim %}
+  {% fractal_component site-alert--slim %}
+{% endcapture %}{{ site-alert--slim | strip }}
+
+<h6>Site alert with no icon</h6>
+
+{% capture site-alert--no-icon %}
+  {% fractal_component site-alert--no-icon %}
+{% endcapture %}{{ site-alert--no-icon | strip }}
+
+<h6>Grid contained site alert</h6>
+
+{% capture site-alert--warning-grid-contained %}
+  {% fractal_component site-alert--warning-grid-contained %}
+{% endcapture %}{{ site-alert--warning-grid-contained | strip }}
+
+<h6>Grid contained site alert with list </h6>
+
+{% capture site-alert--emergency-grid-contained-list %}
+  {% fractal_component site-alert--emergency-grid-contained-list %}
+{% endcapture %}{{ site-alert--emergency-grid-contained-list | strip }}

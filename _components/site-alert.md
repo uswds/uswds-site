@@ -1,8 +1,8 @@
 ---
-permalink: /components/alert/
+permalink: /components/site-alert/
 redirect_from:
 - /site-alert/
-- /components/site-alert/
+- /components/site-alerts/
 layout: styleguide
 type: component
 title: Site Alert
@@ -21,8 +21,8 @@ lead: A site alert contains critical, timely warnings or directions that have gr
     <div id="alert-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
       <h4>When to use the site alert component</h4>
       <ul class="usa-content-list">
-        <li><strong>System status messages.</strong> As a notification that keeps people informed of the status of the system and which may or may not require the user to respond. This includes errors, warnings, and general updates.</li>
-        <li><strong>Validation messages.</strong> As a validation message that alerts someone that they just did something that needs to be corrected or as confirmation that a task was completed successfully.</li>
+        <li><strong>Urgent system status messages.</strong> As a notification that keeps people informed of the status of the system and which may or may not require the user to respond. This includes errors, warnings, and general updates.</li>
+        <li><strong>Message to display on every page.</strong> As a notification that keeps people informed of the status of the system and which may or may not require the user to respond. This includes errors, warnings, and general updates.</li>
       </ul>
       <h4>When to consider something else</h4>
       <ul class="usa-content-list">
@@ -32,7 +32,7 @@ lead: A site alert contains critical, timely warnings or directions that have gr
       </ul>
       <h4>Usability guidance</h4>
       <ul class="usa-content-list">
-        <li><strong>Avoid stacking multiple emergency alert banners.</strong> Use the "Grid contained with list" variant to provide a list of links to multiple, simultaneous emergency alerts.</li>
+        <li><strong>Avoid stacking multiple site alert.</strong> Use the "Grid contained with list" variant to provide a list of links to multiple, simultaneous emergency alerts.</li>
         <li><strong>Consider the psychological impact of color.</strong> It may be tempting to make heavy use of red or orange to draw attention to the emergency alert banner. Such colors, however, can produce emotional reactions such as fear. Positioning the banner at the top of the screen provides dominance so use of bold colors may not be necessary.</li>
         <li><strong>Consider next steps.</strong> When the user is required to do something in response to an alert, let them know what they need to do and make that task as easy as possible. Think about how much context to provide with your message. For example, a notification of a system change may require more contextual information than a validation message. Write the message in concise, human readable language; avoid jargon and computer code.</li>
         <li><strong>Be polite.</strong> Be polite in error messages — don’t blame the user.</li>

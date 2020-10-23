@@ -38,7 +38,7 @@ lead: A site alert contains critical, timely warnings or directions that have gr
         <li><strong>Be polite.</strong> Be polite in error messages — don’t blame the user.</li>
         <li><strong>Alerts are an opportunity.</strong> Users will read a message that helps them resolve an error even if they generally won’t read documentation; include some educational material in your error message.</li>
         <li><strong>Don’t overdo it.</strong> Too many notifications will either overwhelm or annoy the user and are likely to be ignored.</li>
-        <li><strong>Allow a user to dismiss a notification wherever appropriate.</strong></li>
+        <li><strong>Allow a user to dismiss a notification wherever appropriate.</strong>Also remember when the user has dismissed the alert and make sure the alert does not reappear on subsequent navigation</li>
         <li><strong>Understand the user’s context.</strong> Don’t include notifications that aren’t related to the user’s current goal.</li>
       </ul>
       <h4>Accessibility</h4>
@@ -47,11 +47,6 @@ lead: A site alert contains critical, timely warnings or directions that have gr
         <li><strong>Don’t visually hide alert messages and then make them visible when they are needed.</strong> Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.</li>
       </ul>
       <h4 class="usa-heading">Implementation</h4>
-      <h5 id="component-settings">Alert settings</h5>
-      {% assign settings = site.data.settings.components.alert %}
-      {% include settings-table-simple.html
-        settings=settings.contents
-      %}
       <h5 id="component-variants">Alert variants</h5>
       <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants">
         <thead>

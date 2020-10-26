@@ -32,12 +32,10 @@ lead: A site alert contains critical, timely warnings or directions that have gr
       </ul>
       <h4>Usability guidance</h4>
       <ul class="usa-content-list">
+        <li><strong>Place prominently.</strong> The alert should be positioned full width and near the top so that the alert would be noticed immediately upon view the site.</li>
         <li><strong>Avoid stacking multiple site alerts.</strong> Use the "Grid contained with list" variant to provide a list of links to multiple, simultaneous emergency alerts.</li>
         <li><strong>Consider the psychological impact of color.</strong> It may be tempting to make heavy use of red or orange to draw attention to the emergency alert banner. Such colors, however, can produce emotional reactions such as fear. Positioning the banner at the top of the screen provides dominance so use of bold colors may not be necessary.</li>
-        <li><strong>Be polite.</strong> Be polite in error messages — don’t blame the user.</li>
-        <li><strong>Alerts are an opportunity.</strong> Users will read a message that helps them resolve an error even if they generally won’t read documentation; include some educational material in your error message.</li>
-        <li><strong>Don’t overdo it.</strong> Too many notifications will either overwhelm or annoy the user and are likely to be ignored.</li>
-        <li><strong>Allow a user to dismiss a notification wherever appropriate.</strong>Also remember when the user has dismissed the alert and make sure the alert does not reappear on subsequent navigation</li>
+        <li><strong>Allow a user to dismiss a notification wherever appropriate.</strong> Also remember when the user has dismissed the alert and make sure the alert does not reappear on subsequent navigation.</li>
         <li><strong>Understand the user’s context.</strong> Don’t include notifications that aren’t related to the user’s current goal.</li>
       </ul>
       <h4>Accessibility</h4>

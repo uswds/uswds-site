@@ -99,7 +99,7 @@ lead: A site alert contains critical, timely warnings or directions that have gr
       <h4 class="usa-heading">Package information</h4>
       <ul class="usa-content-list">
         <li>
-          <strong>Package usage:</strong> <code>@import usa-alert</code>
+          <strong>Package usage:</strong> <code>@import usa-site-alert</code>
         </li>
         <li>
           <strong>Requires:</strong> <code>required</code>, <code>global</code>

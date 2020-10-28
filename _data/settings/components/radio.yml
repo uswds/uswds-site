@@ -1,10 +1,5 @@
-name: Checkbox
+name: Radio
 contents:
-  - name: Border radius
-    usage:
-    var: $theme-checkbox-border-radius
-    default: '"sm"'
-    type: units
   - name: Selected background color
     usage:
     var: $theme-input-tile-background-color-selected

@@ -63,6 +63,9 @@ lead: Radio buttons allow users to see all available choices and select exactly 
          or alienate users who don’t fit into your assumptions.
          If you are unsure, leave nothing selected by default.
       </li>
+      <li>
+        <strong>Don’t mix default and tile variants.</strong> While tiles provide a better interaction affordance, they can appear to indicate preference when mixed.
+      </li>
     </ul>
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
@@ -87,9 +90,29 @@ lead: Radio buttons allow users to see all available choices and select exactly 
     </ul>
     <h4 class="usa-heading">Implementation</h4>
     <h5 id="radio-buttons-settings">Radio buttons settings</h5>
-    <p>This component has no settings.</p>
+    {% assign settings = site.data.settings.components.radio %}
+    {% include settings-table-simple.html
+      settings=settings.contents
+    %}
     <h5 id="radio-buttons-variants">Radio buttons variants</h5>
-    <p>This component has no variants.</p>
+    <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants">
+        <thead>
+          <tr>
+            <th scope="col" class="flex-6">Variant</th>
+            <th scope="col" class="flex-6">Description</th>
+          </tr>
+        </thead>
+        <tbody class="font-mono-2xs">
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-checkbox__input--tile</td>
+            <td data-title="Description" class="flex-6">
+              <span class="font-lang-3xs">
+                Radio tiles provide a better interaction affordance and neatly group the label with the form control. They are useful in benefit applications and questionnaires, but should not be used in instances such as list filtering.
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">
       <li>

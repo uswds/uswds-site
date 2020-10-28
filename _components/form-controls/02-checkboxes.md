@@ -60,6 +60,9 @@ lead: Checkboxes allow users to select one or more options from a visible list.
         <strong>Use adequate touch targets.</strong> If you customize, make sure
         selections are adequately spaced for touch screens.
       </li>
+      <li>
+        <strong>Don’t mix default and tile variants.</strong> While tiles provide a better interaction affordance, they can appear to indicate preference when mixed.
+      </li>
     </ul>
     <h4 class="usa-heading">Accessibility</h4>
     <ul class="usa-content-list">
@@ -97,7 +100,24 @@ lead: Checkboxes allow users to select one or more options from a visible list.
       settings=settings.contents
     %}
     <h5 id="component-variants-checkbox">Checkbox variants</h5>
-    <p>This component has no variants.</p>
+    <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants">
+        <thead>
+          <tr>
+            <th scope="col" class="flex-6">Variant</th>
+            <th scope="col" class="flex-6">Description</th>
+          </tr>
+        </thead>
+        <tbody class="font-mono-2xs">
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-checkbox__input--tile</td>
+            <td data-title="Description" class="flex-6">
+              <span class="font-lang-3xs">
+                Checkbox tiles provide a better interaction affordance and neatly group the label with the form control. They are useful in benefit applications and questionnaires, but should not be used in instances such as list filtering or for terms of service acceptance.
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">
       <li>

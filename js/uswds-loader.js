@@ -29,14 +29,26 @@ function switchToLoadedClass() {
 if ("querySelector" in window.document && "addEventListener" in window) {
   addLoadingClass();
 
-  var script = loadJS(enhancedScriptPath);
-
   var fallback = setTimeout(revertClass, 8000);
+  var timeout = 100;
 
-  script.onload = function () {
-    clearTimeout(fallback);
-    removeDefaultClass();
-    // small timeout prevents FOUC
-    setTimeout(switchToLoadedClass, 100);
+  var poll = function () {
+    setTimeout(function () {
+      timeout--;
+      if (typeof USWDSLibrary !== 'undefined') {
+        // External file loaded
+        clearTimeout(fallback);
+        removeDefaultClass();
+        setTimeout(switchToLoadedClass, 100);
+      }
+      else if (timeout > 0) {
+        poll();
+      }
+      else {
+        // External library failed to load
+      }
+    }, 100);
   };
+  
+  poll();
 }

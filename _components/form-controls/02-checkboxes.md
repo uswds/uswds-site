@@ -58,7 +58,7 @@ lead: Checkboxes allow users to select one or more options from a visible list.
       </li>
       <li>
         <strong>Use adequate touch targets.</strong> If you customize, make sure
-        selections are adequately spaced for touch screens.
+        selections are adequately spaced for touch screens. Consider using the tile variant for larger touch targets.
       </li>
       <li>
         <strong>Don’t mix default and tile variants.</strong> While tiles provide a better interaction affordance, they can appear to indicate preference when mixed.

@@ -55,7 +55,7 @@ lead: Radio buttons allow users to see all available choices and select exactly 
       </li>
       <li>
         <strong>Use adequate spacing.</strong> If you customize, make sure
-         selections are adequately spaced for touch screens.
+         selections are adequately spaced for touch screens. Consider using the tile variant for larger touch targets.
       </li>
       <li>
         <strong>Set default values with caution.</strong> Setting a default

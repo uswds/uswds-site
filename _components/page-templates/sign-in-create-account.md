@@ -1,5 +1,5 @@
 ---
-permalink: /page-templates/sign-in/
+permalink: /page-templates/sign-in-create-account/
 title: Sign in / create account
 layout: styleguide
 category: Page templates

@@ -583,6 +583,7 @@ ignore:
     - uswds > @stylelint/postcss-markdown > remark > remark-parse > trim:
         reason: None given
         expires: '2020-12-05T20:04:38.630Z'
+<<<<<<< HEAD
   SNYK-JS-Y18N-1021887:
     - gulp > gulp-cli > yargs > y18n:
         reason: no fix available
@@ -590,6 +591,34 @@ ignore:
     - gulp-sass > node-sass > sass-graph > yargs > y18n:
         reason: no fix available
         expires: '2020-12-30T17:19:29.232Z'
+=======
+  SNYK-JS-AXIOS-1038255:
+    - uswds > @frctl/fractal > @frctl/mandelbrot > @frctl/web > browser-sync > localtunnel > axios:
+        reason: None given
+        expires: '2020-12-17T19:19:20.479Z'
+  SNYK-JS-Y18N-1021887:
+    - gulp > gulp-cli > yargs > y18n:
+        reason: None given
+        expires: '2020-12-17T19:19:20.479Z'
+    - uswds > gulp > gulp-cli > yargs > y18n:
+        reason: None given
+        expires: '2020-12-17T19:19:20.480Z'
+    - snyk > snyk-config > nconf > yargs > y18n:
+        reason: None given
+        expires: '2020-12-17T19:19:20.480Z'
+    - gulp-sass > node-sass > sass-graph > yargs > y18n:
+        reason: None given
+        expires: '2020-12-17T19:19:20.480Z'
+    - uswds > gulp-sass > node-sass > sass-graph > yargs > y18n:
+        reason: None given
+        expires: '2020-12-17T19:19:20.481Z'
+    - uswds > @frctl/fractal > @frctl/mandelbrot > @frctl/web > browser-sync > yargs > y18n:
+        reason: None given
+        expires: '2020-12-17T19:19:20.481Z'
+    - uswds > @frctl/fractal > @frctl/mandelbrot > @frctl/web > browser-sync > localtunnel > yargs > y18n:
+        reason: None given
+        expires: '2020-12-17T19:19:20.481Z'
+>>>>>>> snyk
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

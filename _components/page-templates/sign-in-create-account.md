@@ -1,6 +1,6 @@
 ---
-permalink: /page-templates/sign-in-create-account/
-title: Sign in / create account
+permalink: /page-templates/authentication-pages/
+title: Authentication pages
 layout: styleguide
 category: Page templates
 lead: Allow users to create or sign in to their account
@@ -13,11 +13,11 @@ subnav:
   href: '#third-party-options'
 ---
 
-Users can have difficulty easily creating accounts or signing in to accounts within a website. The best way to help them is to provide context about what they’re creating an account for and remove unnecessary distractions from the page so they can focus on the task at hand.
+Users can have difficulty creating accounts or signing in to a website. The best way to help them is to provide context about what they’re creating an account for and remove unnecessary distractions from the page so they can focus on the task at hand.
 
 ## Shared services
 
-Government websites requiring account creation can use login.gov, a FedRAMP-authorized, single sign-on shared service. Login.gov is simple and secure, and it includes our sign-in guidance “out of the box.” This benefits the public because they can sign in to any government website that uses [login.gov](https://login.gov) with the same username and password, giving them a more consistent experience across websites and digital services.
+Government websites requiring account creation can use [login.gov](https://login.gov), a FedRAMP-authorized, single sign-on shared service. Login.gov is simple and secure, and it includes our sign-in guidance “out of the box.” This benefits the public because they can sign in to any government website that uses login.gov with the same username and password, giving them a more consistent experience across websites and digital services..
 
 **Your website is required to meet the following standards:**
 Link out for this guidance, since this might change
@@ -32,20 +32,18 @@ Leveraging shared services also reduces your operating costs by outsourcing the 
 
 ## Create account
 
+{:.site-text-intro}
+
+Explain the benefits of setting up an account
+
+Site users will be more likely to create an account if it’s easy to do and they understand the benefits it provides. Keep the account creation process simple and clear with limited distractions (e.g., other calls-to-action, messaging, or interactions) and a single “create account” button. Briefly point out the benefits of setting up an account, emphasizing what they can do and how it can help them.
+
 <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="create-account-docs">
     Guidance
   </button>
 <div id="create-account-docs" aria-hidden="false" class="usa-accordion__content site-component-usage" markdown="1">
-
-### Explain the benefits of setting up an account
-
-{:.usa-content-list}
-
-- Site users will be more likely to create an account if it’s easy to do and they understand the benefits it provides.
-- Keep the account creation process simple and clear with limited distractions (e.g., other calls-to-action, messaging, or interactions) and a single “create account” button. 
-- Briefly point out the benefits of setting up an account, emphasizing what they can do and how it can help them.
 
 ### When to use the create account template
 
@@ -74,10 +72,20 @@ Leveraging shared services also reduces your operating costs by outsourcing the 
 - **Include required legal agreements.** Work with your agency’s security officer and general counsel to determine how to handle legal copy placement regarding terms and conditions. Use a checkbox to affirm that your users accept terms and conditions. Make the terms and conditions easy to find without distracting from the primary purpose of creating an account.
 
 ### Components used in this template
+- Extended header with `.usa-nav` and `.usa-menu-btn` removed
 - Form controls
+- Grid
 - Buttons
 - Graphic list
 - Medium footer
+
+{:.usa-content-list}
+
+### Component definitions
+
+{:.usa-content-list}
+
+- **Graphic list:** The graphic list is used to showcase a number of related items and their respective images in a grid pattern. In this template, we have removed the grid classes.
 
 </div>
 </div>
@@ -116,19 +124,25 @@ Users signing in to your website need to know that they’re in the right place.
 
 {:.usa-content-list}
 
-- **Clearly provide a way to reset passwords or recover usernames.** Provide a clearly marked link for users to reset a password or recover a forgotten username. 
+- **Clearly provide a way to reset passwords or recover usernames.** Provide a clearly marked link for users to reset a password or recover a forgotten username.  
 - **Provide error feedback.** If a sign-in attempt fails, let users know there was an error, but don’t indicate which field was invalid, for example “Incorrect password” or “Username not found.” This helps maintain stronger protection against hackers or unauthorized users.
 - **Focus on the task.** Remove extra, unneeded information to prevent the user from getting distracted.
 - **Use specific field labels.** If you’re asking for a username, say username. If it’s an email, say email address. Don’t make the user guess which one you mean. 
 - **Allow users to toggle password visibility.** This helps ensure users are entering it correctly while maintaining privacy when it’s needed as well. 
-- **Enable copy/paste and autocomplete.** Many users rely on password generators because they provide secure passwords and phrases that a user doesn’t have to memorize. Forcing a user to type these in is a large barrier to usability. Allowing autocomplete also helps reduce user burden and typos. 
+- **Enable copy/paste and autocomplete.** Many users rely on password generators because they provide secure passwords and phrases that a user doesn’t have to memorize. Forcing a user to type these in is a large barrier to usability. Allowing autocomplete also helps reduce user burden and typos.
 - **Use consistent, accurate language.** Use “sign in” or “sign-in”—depending on if it’s a verb (link in a call-to-action or button) or noun/adjective form (sign-in page)“. Don’t use “login” or “log in.”
-- **Allow users to switch between creating an account and signing in.** Users should be able to easily find where to sign in from the create account page, and vice versa. This also applies to the global header of the site, where users should have “one-click” access to either the sign-in or create an account page. 
+- **Allow users to switch between creating an account and signing in.** Users should be able to easily find where to sign in from the create account page, and vice versa. This also applies to the global header of the site, where users should have “one-click” access to either the sign-in or create an account page.
 
 ### Components used in this template
+- Extended header with `.usa-nav` and `.usa-menu-btn` removed
 - Form controls
 - Buttons
 - Medium footer
+
+{:.usa-content-list}
+
+### Component definitions
+- **Graphic list:** The graphic list is used to showcase a number of related items and their respective images in a grid pattern. In this template, we have removed the grid classes.
 
 </div>
 </div>
@@ -142,7 +156,7 @@ Users signing in to your website need to know that they’re in the right place.
 
 One landing page for all sign-in options.
 
-If you have multiple sign-in options, use this template to guide users to access their account through a prioritized option.  
+If you have multiple sign-in options, use this template to guide users to access their account through a prioritized option. 
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
@@ -172,11 +186,20 @@ If you have multiple sign-in options, use this template to guide users to access
 - **Use consistent, accurate language.** Use “sign in” or “sign-in”—depending on if it’s a verb (link in a call-to-action or button) or noun/adjective form (sign-in page)“. Don’t use “login” or “log in.”
 - **Explain why and how.** Let users know the value of accessing their account and provide context on their sign-in options.
 
+
 ### Components used in this template
+- Extended header with `.usa-nav` and `.usa-menu-btn` removed
+- Form controls
+- Grid
 - Buttons
 - Graphic list
 - Medium footer
 
+### Component definitions
+
+{:.usa-content-list}
+
+- **Graphic list:** The graphic list is used to showcase a number of related items and their respective images in a grid pattern. In this template, we have removed the grid classes.
 
 </div>
 </div>

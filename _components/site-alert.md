@@ -57,7 +57,7 @@ lead: A site alert contains critical, time-sensitive warnings or directions that
           <tr>
             <td data-title="Variant" class="flex-6">usa-site-alert--info</td>
             <td data-title="Description" class="flex-6">
-              <span class="font-lang-3xs">Display an informational status site alert.</span>
+              <span class="font-lang-3xs">Display an informational status site alert</span>
             </td>
           </tr>
           <tr>

@@ -46,9 +46,9 @@ If you have a new implementation to add to this list, please [open an issue] or 
     </thead>
   {% for impl in site.data.implementations %}
     <tr id="{% if impl.id %}{{ impl.id }}{% else %}{{ impl.name | slugify }}{% endif %}">
-      <td scope="row" data-title="Name">
+      <th scope="row" data-title="Name">
         <strong><a href="{{ impl.url }}">{{ impl.name }}</a></strong>
-      </td>
+      </th>
       <td data-title="Distribution">{{ impl.distribution }}</td>
       <td data-title="Author">
         {% if impl.author.url %}

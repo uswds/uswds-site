@@ -16,8 +16,10 @@ const PAGES = [
   '/page-templates/docs/',
   '/documentation/designers/',
   '/documentation/implementations/',
-  '/maturity-model/',
-  '/about/product-roadmap/'
+  '/about/product-roadmap/',
+  '/utilities/',
+  '/design-tokens/',
+  '/page-templates/',
 ];
 
 function launchChromeLocally(headless=true) {

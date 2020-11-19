@@ -9,10 +9,15 @@ const runServer = require('./static-server');
 
 const REMOTE_CHROME_URL = process.env['REMOTE_CHROME_URL'];
 const AXE_JS = fs.readFileSync(__dirname + '/../node_modules/axe-core/axe.js');
+
 const PAGES = [
   '/',
   '/page-templates/landing/',
   '/page-templates/docs/',
+  '/documentation/designers/',
+  '/documentation/implementations/',
+  '/maturity-model/',
+  '/about/product-roadmap/'
 ];
 
 function launchChromeLocally(headless=true) {
@@ -45,8 +50,9 @@ const RUN_AXE_FUNC_JS = function runAxe() {
   return new Promise((resolve, reject) => {
     window.axe.run((err, results) => {
       if (err) return reject(err);
-      resolve(JSON.stringify(results.violations));
-    });
+        resolve(JSON.stringify(results.violations));
+      }
+    );
   });
 }.toString();
 

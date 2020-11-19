@@ -38,13 +38,13 @@
 
 <!-- ANALYTICS
 ================================================== -->
-
-{% include analytics.html %}
+<!-- env: {{ site.env }} -->
+{% if site.env != 'dev' %}
+  {% include analytics.html %}
+{% endif %}
 
 <!-- CSS
 ================================================== -->
-<!-- env: {{ site.env }} -->
-
 {% if site.env == 'dev' %}
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-fonts.css">
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-components.css">

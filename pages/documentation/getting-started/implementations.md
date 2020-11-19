@@ -29,7 +29,7 @@ If you have a new implementation to add to this list, please [open an issue] or 
 
 <div class="usa-alert usa-alert--warning">
   <div class="usa-alert__body">
-    <h3 class="usa-alert__heading">Heads up</h3>
+    <h2 class="usa-alert__heading">Heads up</h2>
     <p class="usa-alert__text">Some of the implementations listed here are not affiliated or endorsed, and have not been tested, by USWDS team. Use them at your own discretion.</p>
   </div>
 </div>

@@ -38,7 +38,24 @@ lead: Enter a standard U.S. mailing or shipping address
     </ul>
     <h4>Additional Information</h4>
     <ul class="usa-content-list">
-      <li>The <a href="https://pe.usps.com/text/pub28/28c1_001.htm">USPS Publication 28</a> defines the mailing standards in the United States (see <a href="https://drive.google.com/file/d/1T1dmOfuBoOypUw4FbOSYtOHaTGUGE9MC/view">USPS Publication 28</a> for easier refernece and search.)</li>
+      <li>
+        <a href="https://pe.usps.com/text/pub28/28c1_001.htm">USPS Publication 28</a> defines the mailing standards in the United States (see <a href="https://drive.google.com/file/d/1T1dmOfuBoOypUw4FbOSYtOHaTGUGE9MC/view?usp=sharing">this summary of applicable standards</a> 🔒 for easier reference and search)
+      </li>
+      <li>
+        Specifically, look at the USPS Publication 28 appendixes for the <a href="https://pe.usps.com/text/pub28/28apc_003.htm">unit types</a> and <a href="https://pe.usps.com/text/pub28/28c1_004.htm">bytes</a>
+      </li>
+      <li>
+        It is recommended that Commercial Mailers use <a href="https://postalpro.usps.com/certifications/cass">CASS<sup>&trade;</sup></a> approved software to analyze, parse, correct, validate, and format addresses according to the standard.
+      </li>
+      <li>
+        List of <a href="">CASS<sup>&trade;</sup> Vendors</a>
+      </li>
+      <li>
+        <a href="https://postalpro.usps.com/mtac#anchor-5">USPS Mailer’s Technical Advisory Committee (MTAC)</a> works to improve mailing address quality and they have created the MTAC- Address Quality Methodologies document as a list of best practices/standards for commercial mailers
+      </li>
+      <li>
+        The <a href="http://www.upu.int/en.html">Universal Postal Union</a> is responsible for managing the address standards for all of it’s 131 member countries. Each member country has a different layout and organization of the data elements when sending mail to a foreign country. They maintain the <a href="http://www.upu.int/en/activities/addressing/s42-standard.html">S42 Standard</a>, which provides the layout and format for each member country.
+      </li>
     </ul>
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">

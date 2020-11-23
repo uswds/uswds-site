@@ -1,29 +1,29 @@
 ---
-permalink: /components/featured-content/
+permalink: /components/preview-list/
 redirect_from:
-- /featured-content/
-- /components/featured-contents/
+- /preview-list/
+- /components/preview-lists/
 layout: styleguide
 type: component
-title: Featured Content
+title: Preview List
 category: Components
-lead: The featured content component provides a short list of recently posted or relevant articles or content pages.
+lead: The preview list component provides a short list of recently posted or relevant articles or content pages.
 ---
 
-{% include code/preview.html component="featured-content" %}
+{% include code/preview.html component="preview-list" %}
 <section class="site-component-section">
-  {% include code/accordion.html component="featured-content" %}
+  {% include code/accordion.html component="preview-list" %}
   <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
     <button class="usa-button-unstyled usa-accordion__button"
         aria-expanded="true" aria-controls="alert-docs">
       Guidance
     </button>
     <div id="alert-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
-      <h4>When to use the featured content component</h4>
+      <h4>When to use the preview list component</h4>
       <ul class="usa-content-list">
-        <li><strong>Displaying links and excerpts from recently posted articles.</strong> Featured content can point users to the most recently posted articles in a blog or content site, ideally no more than 10.</li>
-        <li><strong>Grouping links of related content together.</strong> Featured content can provide links to articles from a trusted source, popular guides and resources, or a collection of pages that cover different aspects of a single topic.</li>
-        <li><strong>Teaser content When just a few links will do.</strong> Featured content gives access to a compact set of selected articles and can serve as a gateway to a more robust catalog of content on a dedicated page.</li>
+        <li><strong>Displaying links and excerpts from recently posted articles.</strong> Preview list can point users to the most recently posted articles in a blog or content site, ideally no more than 10.</li>
+        <li><strong>Grouping links of related content together.</strong> Preview list can provide links to articles from a trusted source, popular guides and resources, or a collection of pages that cover different aspects of a single topic.</li>
+        <li><strong>Teaser content When just a few links will do.</strong> Preview list gives access to a compact set of selected articles and can serve as a gateway to a more robust catalog of content on a dedicated page.</li>
       </ul>
       <h4>When to consider something else</h4>
       <ul class="usa-content-list">
@@ -42,10 +42,10 @@ lead: The featured content component provides a short list of recently posted or
       <h4>Accessibility</h4>
       <ul class="usa-content-list">
         <li><strong>Use the proper ARIA role.</strong> Use unordered lists and list items. Use a <code>ul</code> for a card group and an <code>li</code> for each card. This allows screen readers to enumerate the items in the card group and allows shortcuts between list items.</li>
-        <li><strong>Use the appropriate heading level for your page.</strong> Update heading levels based on the content of your page to make sure featured content headings are in the correct logical outline order.</li>
+        <li><strong>Use the appropriate heading level for your page.</strong> Update heading levels based on the content of your page to make sure preview list headings are in the correct logical outline order.</li>
       </ul>
       <h4 class="usa-heading">Implementation</h4>     
-      <h5 id="component-variants">Featured Content variants</h5>
+      <h5 id="component-variants">Preview List variants</h5>
       <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants">
         <thead>
           <tr>
@@ -77,7 +77,7 @@ lead: The featured content component provides a short list of recently posted or
       <h4 class="usa-heading">Package information</h4>
       <ul class="usa-content-list">
         <li>
-          <strong>Package usage:</strong> <code>@import usa-featured-content</code>
+          <strong>Package usage:</strong> <code>@import usa-preview-list</code>
         </li>
         <li>
           <strong>Requires:</strong> <code>required</code>, <code>global</code>

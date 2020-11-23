@@ -3,6 +3,7 @@ title: Community
 permalink: /about/community/
 redirect_from:
 - /about/communities/
+- /community/
 layout: styleguide
 category: About
 lead: USWDS is an active open source community of government engineers, content specialists, and designers. Our contributors both in and out of government support dozens of agencies and nearly 200 sites.

@@ -1,0 +1,17 @@
+name: Tables
+contents:
+  - name: Border color
+    description: Defines a border color for table cells.
+    var: $theme-table-border-color
+    default: '"base-dark"'
+    type: color
+  - name: Header Background Color
+    description: Defines a background color for the header cells.
+    var: $theme-table-header-background-color
+    default: '"base-lightest"'
+    type: color
+  - name: Stripe Background Color
+    description: Defines a background color for the “zebra” stripes for the striped table variant.
+    var: $theme-table-stripe-background-color
+    default: '"base-lightest"'
+    type: color

@@ -9,10 +9,10 @@ ignore:
   SNYK-JS-AUTOLINKER-73494:
     - uswds > autolinker:
         reason: No fix available
-        expires: '2020-09-12T03:55:15.820Z'
+        expires: '2020-12-05T20:04:38.629Z'
     - uswds > handlebars-helpers > helper-markdown > remarkable > autolinker:
         reason: No patch available
-        expires: '2020-09-12T03:55:15.828Z'
+        expires: '2020-12-05T20:04:38.629Z'
     - uswds > handlebars-helpers > helper-md > remarkable > autolinker:
         reason: No patch available
         expires: '2020-09-12T03:55:15.828Z'
@@ -368,9 +368,12 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.122Z'
+      gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2020-12-05T20:04:38.630Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
+        expires: '2020-12-05T20:04:38.630Z'
     - gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
@@ -387,9 +390,12 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.122Z'
+      gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2020-12-05T20:04:38.630Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
+        expires: '2020-12-05T20:04:38.630Z'
     - gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
@@ -405,14 +411,14 @@ ignore:
   'npm:braces:20180219':
     - uswds > nswatch > chokidar > anymatch > micromatch > braces:
         reason: No patch available
-        expires: '2020-10-14T16:26:55.827Z'
+        expires: '2020-12-05T20:04:38.630Z'
   SNYK-JS-AUTOLINKER-564438:
     - uswds > autolinker:
         reason: No fix available
-        expires: '2020-09-12T03:55:15.811Z'
+        expires: '2020-12-05T20:04:38.629Z'
     - uswds > handlebars-helpers > helper-markdown > remarkable > autolinker:
         reason: No patch available
-        expires: '2020-09-12T03:55:15.828Z'
+        expires: '2020-12-05T20:04:38.629Z'
     - uswds > handlebars-helpers > helper-md > remarkable > autolinker:
         reason: No patch available
         expires: '2020-09-12T03:55:15.828Z'
@@ -425,7 +431,7 @@ ignore:
   SNYK-JS-GULPSCSSLINT-560114:
     - gulp-scss-lint:
         reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
+        expires: '2020-12-05T20:04:38.629Z'
   SNYK-JS-HTTPPROXY-569139:
     - uswds > @frctl/fractal > browser-sync > http-proxy:
         reason: n/a
@@ -433,19 +439,19 @@ ignore:
   SNYK-JS-LODASH-450202:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
+        expires: '2020-12-05T20:04:38.629Z'
   SNYK-JS-LODASH-567746:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
+        expires: '2020-12-05T20:04:38.629Z'
   SNYK-JS-LODASH-73638:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
+        expires: '2020-12-05T20:04:38.629Z'
   SNYK-JS-LODASH-73639:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
+        expires: '2020-12-05T20:04:38.630Z'
   'npm:ua-parser-js:20180227':
     - uswds > @frctl/fractal > browser-sync > ua-parser-js:
         reason: n/a
@@ -477,61 +483,40 @@ ignore:
     - uswds > @frctl/fractal > marked:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
+      uswds > @frctl/core > marked:
+        reason: None given
+        expires: '2020-12-05T20:04:38.630Z'
   SNYK-JS-LODASH-590103:
     - gulp-eslint > eslint > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
-      snyk > inquirer > lodash:
-        reason: Fix does not work
-        expires: '2020-10-14T16:33:16.682Z'
+      uswds > @frctl/fractal > vorpal > inquirer > lodash:
+        reason: No patch available
+        expires: '2020-12-05T20:04:38.629Z'
     - gulp-eslint > eslint > inquirer > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
-      snyk > graphlib > lodash:
-        reason: Fix does not work
-        expires: '2020-10-14T16:33:16.682Z'
     - gulp-eslint > eslint > table > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
-      snyk > @snyk/dep-graph > graphlib > lodash:
-        reason: Fix does not work
-        expires: '2020-10-14T16:33:16.682Z'
     - gulp-sass > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
-      snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
-        reason: Fix does not work
-        expires: '2020-10-14T16:33:16.682Z'
     - gulp-sass > node-sass > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
-      snyk > snyk-go-plugin > graphlib > lodash:
-        reason: Fix does not work
-        expires: '2020-10-14T16:33:16.682Z'
     - gulp-sass > node-sass > sass-graph > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
-      snyk > @snyk/cli-interface > @snyk/dep-graph > graphlib > lodash:
-        reason: Fix does not work
-        expires: '2020-10-14T16:33:16.683Z'
     - gulp-sass > node-sass > gaze > globule > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.499Z'
-      snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > graphlib > lodash:
-        reason: Fix does not work
-        expires: '2020-10-14T16:33:16.683Z'
     - snyk > snyk-nodejs-lockfile-parser > @yarnpkg/core > lodash:
         reason: Patch not working
         expires: '2020-10-04T18:14:03.410Z'
-      snyk > snyk-cpp-plugin > @snyk/dep-graph > graphlib > lodash:
-        reason: Fix does not work
-        expires: '2020-10-14T16:33:16.683Z'
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
-      snyk > snyk-go-plugin > @snyk/dep-graph > graphlib > lodash:
-        reason: Fix does not work
-        expires: '2020-10-14T16:33:16.683Z'
     - snyk > snyk-gradle-plugin > @snyk/dep-graph > graphlib > lodash:
         reason: Fix does not work
         expires: '2020-10-14T16:33:16.683Z'
@@ -559,10 +544,45 @@ ignore:
     - snyk > snyk-mvn-plugin > @snyk/cli-interface > @snyk/dep-graph > graphlib > lodash:
         reason: Fix does not work
         expires: '2020-10-14T16:33:16.684Z'
+    - snyk > inquirer > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.682Z'
+    - snyk > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.682Z'
+    - snyk > @snyk/dep-graph > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.682Z'
+    - snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.682Z'
+    - snyk > snyk-go-plugin > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.682Z'
+    - snyk > @snyk/cli-interface > @snyk/dep-graph > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.683Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.683Z'
+    - snyk > snyk-cpp-plugin > @snyk/dep-graph > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.683Z'
+    - snyk > snyk-go-plugin > @snyk/dep-graph > graphlib > lodash:
+        reason: Fix does not work
+        expires: '2020-10-14T16:33:16.683Z'
   SNYK-JS-LODASH-608086:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No patch available
-        expires: '2020-10-14T16:26:55.826Z'
+        expires: '2020-12-05T20:04:38.629Z'
+  'npm:lodash:20180130':
+    - uswds > @frctl/fractal > vorpal > inquirer > lodash:
+        reason: None given
+        expires: '2020-12-05T20:04:38.629Z'
+  SNYK-JS-TRIM-1017038:
+    - uswds > @stylelint/postcss-markdown > remark > remark-parse > trim:
+        reason: None given
+        expires: '2020-12-05T20:04:38.630Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

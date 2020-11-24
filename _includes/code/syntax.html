@@ -1,5 +1,20 @@
+{% capture _markup %}
+{% include code/components/{{ include.component }}.{{ include.language | default: 'html' }} %}
+{% endcapture %}
+
 {% capture _syntax %}
 {% highlight html linenos %}
-{% include code/components/{{ include.component }}.{{ include.language | default: 'html' }} %}
+{{ _markup }}
 {% endhighlight %}
-{% endcapture %}{{ _syntax | markdownify }}
+{% endcapture %}
+
+<div class="usa-sr-only">
+  {% highlight text %}
+  {{- _markup -}}
+  {% endhighlight %}
+</div>
+<div aria-hidden="true">
+  {% highlight html linenos %}
+  {{- _markup -}}
+  {% endhighlight %}
+</div>

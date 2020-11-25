@@ -64,6 +64,9 @@ subnav:
           <strong>Keep it simple.</strong> Tables are great at displaying tabular data. Minimal visual styling helps surface this information more easily.
         </li>
         <li>
+          <strong>Consider a narrow browser experience.</strong> On small screens, numerical data across many columns is usually easier to understand if the table can scroll horizontally, whereas directories and content-heavy tables are more comprehensible if the rows reflow to a stacked layout. Both options are available to you in the table variants described above. For tables with more than 2 columns, make sure you choose either a scrollable or a stacked variant.
+        </li>
+        <li>
           <strong>Always use a header row.</strong> Define the type of information that can be found in each column.
         </li>
         <li>
@@ -77,9 +80,6 @@ subnav:
         </li>
         <li>
           <strong>Cite a source for table data.</strong>  If your table includes information from a specific source, or contains content that is frequently updated, provide the source and/or last updated date after the table or in the caption. This is especially useful if your table summarizes data from a more extensive source.
-        </li>
-        <li>
-          <strong>Consider a narrow browser experience.</strong> On small screens, numerical data across many columns is usually easier to understand if the table can scroll horizontally, whereas directory lists are more comprehensible if the rows reflow to a stacked layout. Both options are available to you in the table variants described above. 
         </li>
       </ul>
       <h4 class="usa-heading">Accessibility</h4>

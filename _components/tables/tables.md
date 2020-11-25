@@ -67,7 +67,7 @@ subnav:
           <strong>Consider a narrow browser experience.</strong> On small screens, numerical data across many columns is usually easier to understand if the table can scroll horizontally, whereas directories and content-heavy tables are more comprehensible if the rows reflow to a stacked layout. Both options are available to you in the table variants described above. For tables with more than 2 columns, make sure you choose either a scrollable or a stacked variant.
         </li>
         <li>
-          <strong>Always use a header row.</strong> Define the type of information that can be found in each column.
+          <strong>Always use table headers.</strong> Define the type of information that can be found in each column or row. For more complex table structures, review the <a href="https://www.w3.org/WAI/tutorials/tables/" title="WC3 Web Accessibility Tables Tutorial">WCAG accessibility recommendations for tables</a>.
         </li>
         <li>
           <strong>Predictably format columns.</strong> Take care not to vary units or formatting within the same column. Instead, normalize values so they can be easily compared (ie., if most of the rows in a table show a count in days, don’t have some rows that count by weeks).

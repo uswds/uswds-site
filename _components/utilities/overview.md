@@ -31,48 +31,44 @@ The utility values are drawn from your project theme's settings tokens, but can 
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Utility">
-          .bg-primary-darker
-        </td>
-        <td scope="row" data-title="Sass">
+        <th scope="row" data-title="Utility">
+          <span class="text-normal">.bg-primary-darker</span>
+        </th>
+        <td data-title="Sass">
           background-color: color('primary-darker')
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility">
-          .bg-red-50v
-        </td>
-        <td scope="row" data-title="Sass">
+        <th scope="row" data-title="Utility">
+          <span class="text-normal">.bg-red-50v</span>
+        </th>
+        <td data-title="Sass">
           background-color: color('red-50v')
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility">
-          .text-underline
-        </td>
-        <td scope="row" data-title="Sass">
+        <th scope="row" data-title="Utility">
+          <span class="text-normal">.text-underline</span>
+        </th>
+        <td data-title="Sass">
           text-decoration: underline
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility">
-          .margin-x-auto
-        </td>
-        <td scope="row" data-title="Sass">
-        <span>
+        <th scope="row" data-title="Utility">
+          <span class="text-normal">.margin-x-auto</span>
+        </th>
+        <td data-title="Sass">
           <span>margin-left: auto;</span><br/>
           <span>margin-right: auto;</span><br/>
-        </span>
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility">
-          .padding-bottom-1
-        </td>
-        <td scope="row" data-title="Sass">
-        <span>
+        <th scope="row" data-title="Utility">
+          <span class="text-normal">.padding-bottom-1</span>
+        </th>
+        <td data-title="Sass">
           padding-bottom: units(1)
-        </span>
         </td>
       </tr>
     </tbody>

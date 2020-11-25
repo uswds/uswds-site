@@ -67,13 +67,19 @@ subnav:
           <strong>Always use a header row.</strong> Define the type of information that can be found in each column.
         </li>
         <li>
-          <strong>Predictably format columns.</strong> Take care not to vary units or formatting within the same column. Instead, normalize values so they can be easily compared (ie., if most of the rows in a table show a count in days, don’t have some rows that count by weeks). Right-align numerical data using the <a href="{{ site.baseurl }}/utilities/paragraph-styles/#text-align" title="USWDS Paragraph Style Utilities">text alignment utilities</a> on the table cells. For even better readability of dense, numerical data, consider formatting numbers that convey amounts such as percentages, currency, or tallies in a <a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/#available-font-families" title="USWDS Font Families">monospace</a> font. (There’s no need to apply special formatting to phone numbers, zip codes, dates, or other number content that can’t be totalled.)
+          <strong>Predictably format columns.</strong> Take care not to vary units or formatting within the same column. Instead, normalize values so they can be easily compared (ie., if most of the rows in a table show a count in days, don’t have some rows that count by weeks).
         </li>
         <li>
-          <strong>Attribute table data.</strong>  If your table includes information from a specific source, or contains content that is frequently updated, provide the source and/or last updated date after the table or in the caption. This is especially useful if your table summarizes data from a more extensive source.
+          <strong>Right-align numerical data.</strong> Align numbers which represent a sum to the right using the <a href="{{ site.baseurl }}/utilities/paragraph-styles/#text-align" title="USWDS Paragraph Style Utilities">text alignment utilities</a> on the table cells.
         </li>
         <li>
-          <strong>Consider a narrow browser experience.</strong> On small screens, numerical data across many columns is usually easier to understand if the table can scroll horizontally, whereas directory lists are more comprehensible if the rows reflow to a stacked layout. Both options are available to you in the table variants described aboce. 
+          <strong>Use a monospace font for numerical data.</strong> For even better readability of dense, numerical data, consider formatting numbers that convey amounts such as percentages, currency, or tallies in a <a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/#available-font-families" title="USWDS Font Families">monospace</a> font. (There’s no need to apply monospace formatting or alignment to phone numbers, zip codes, dates, or other number content that can’t be totaled.)
+        </li>
+        <li>
+          <strong>Cite a source for table data.</strong>  If your table includes information from a specific source, or contains content that is frequently updated, provide the source and/or last updated date after the table or in the caption. This is especially useful if your table summarizes data from a more extensive source.
+        </li>
+        <li>
+          <strong>Consider a narrow browser experience.</strong> On small screens, numerical data across many columns is usually easier to understand if the table can scroll horizontally, whereas directory lists are more comprehensible if the rows reflow to a stacked layout. Both options are available to you in the table variants described above. 
         </li>
       </ul>
       <h4 class="usa-heading">Accessibility</h4>
@@ -141,7 +147,7 @@ subnav:
             <td data-title="Variant" class="flex-6">usa-table--striped</td>
             <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">
-                Applies alternating horizontal or “zebra” striping to help the eye track across table rows. Pairs well with the scrollable variant for tables with many columns. 
+                Applies alternating horizontal striping to help the eye track across table rows. Pairs well with the scrollable variant for tables with many columns. 
               </span>
             </td>
           </tr>

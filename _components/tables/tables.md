@@ -13,7 +13,7 @@ subnav:
   href: '#borderless-table'
 - text: Scrollable Table
   href: '#scrollable-table'
-- text: Responsive Stacked Table
+- text: Responsive stacked Table
   href: '#responsive-stacked-table'
 
 ---

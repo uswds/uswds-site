@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem "jekyll", github: "jekyll/jekyll", ref: "refs/pull/7821/head"
+gem "jekyll", '>= 4.1.1'
 gem 'json', '>= 2.3.0'
 gem 'jekyll-redirect-from', '>= 0.15.0'
 gem 'jekyll-sitemap', '>= 1.3.1'

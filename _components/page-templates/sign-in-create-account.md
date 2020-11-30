@@ -19,15 +19,6 @@ Users can have difficulty creating accounts or signing in to a website. The best
 
 Government websites requiring account creation can use [login.gov](https://login.gov), a FedRAMP-authorized, single sign-on shared service. Login.gov is simple and secure, and it includes our sign-in guidance “out of the box.” This benefits the public because they can sign in to any government website that uses login.gov with the same username and password, giving them a more consistent experience across websites and digital services..
 
-**Your website is required to meet the following standards:**
-Link out for this guidance, since this might change
-- Pull from 21st Century IDEA
-- NIST 800-63-3
-    - Authentication (63B)
-    - Identity proofing (63A)
-
-Leveraging shared services also reduces your operating costs by outsourcing the maintenance of this service, helps mitigate risk, and enables a simpler, faster rollout.
-
 <div class="site-component-section" markdown="1">
 
 ## Create account
@@ -93,6 +84,11 @@ Site users will be more likely to create an account if it’s easy to do and the
 {:.usa-content-list}
 
 - **Graphic list:** The graphic list is used to showcase a number of related items and their respective images in a grid pattern. In this template, we have removed the grid classes.
+
+### Additional Information
+
+NIST Special Publication 800-63-3, [Digital Identity Guidelines](https://pages.nist.gov/800-63-3/), provides technical requirements for federal agencies implementing digital identity services. The guidelines cover identity proofing and authentication of users (such as employees, contractors, or private individuals) interacting with government IT systems over open networks.
+
 
 </div>
 </div>

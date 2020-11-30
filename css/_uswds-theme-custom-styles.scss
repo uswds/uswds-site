@@ -2570,7 +2570,8 @@ $theme-table-column-gap: 4;
       }
     }
 
-    td {
+    td,
+    tbody th:first-of-type {
       align-items: baseline;
       background-color: transparent;
       display: flex;

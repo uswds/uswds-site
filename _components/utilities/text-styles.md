@@ -108,7 +108,7 @@ utilities:
 {% assign colors = site.data.tokens.color %}
 
 <div class="utilities-properties">
-  <h3 class="utilities-property-title">CSS properties</h3>
+  <h2 class="utilities-property-title">CSS properties</h2>
   <div class="margin-top-1">
     <span class="property utilities-property">font-feature-settings</span>
     <span class="property utilities-property">font-style</span>
@@ -314,11 +314,11 @@ utilities:
   </thead>
   <tbody class="font-mono-2xs">
     <tr>
-      <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-        <span>
+      <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <span class="text-normal">
           .text-<code>style</code>
         </span>
-      </td>
+      </th>
       <td data-title="Mixin">
         <span>
           u-text(<code>style</code>)
@@ -331,11 +331,11 @@ utilities:
       </td>
     </tr>
     <tr>
-      <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-        <span>
+      <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <span class="text-normal">
           .text-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-weight/" class="token">weight</a>
         </span>
-      </td>
+      </th>
       <td data-title="Mixin">
         <span>
           u-text(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-weight/" class="token">weight</a>)
@@ -348,11 +348,11 @@ utilities:
       </td>
     </tr>
     <tr>
-      <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-        <span>
+      <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <span class="text-normal">
           .text-<code>tabular</code>
         </span>
-      </td>
+      </th>
       <td data-title="Mixin">
         <span>
           u-text('<code>tabular</code>')
@@ -365,11 +365,11 @@ utilities:
       </td>
     </tr>
     <tr>
-      <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-        <span>
+      <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <span class="text-normal">
           .text-<code>decoration</code>
         </span>
-      </td>
+      </th>
       <td data-title="Mixin">
         <span>
           u-text(<code>decoration</code>)
@@ -382,11 +382,11 @@ utilities:
       </td>
     </tr>
     <tr>
-      <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-        <span>
+      <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <span class="text-normal">
           .underline-<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>
         </span>
-      </td>
+      </th>
       <td data-title="Mixin">
         <span>
           u-underline(<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>)
@@ -399,11 +399,11 @@ utilities:
       </td>
     </tr>
     <tr>
-      <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-        <span>
+      <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <span class="text-normal">
           .text-<code>case</code>
         </span>
-      </td>
+      </th>
       <td data-title="Mixin">
         <span>
           u-text(<code>case</code>)
@@ -416,11 +416,11 @@ utilities:
       </td>
     </tr>
     <tr>
-      <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-        <span>
+      <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <span class="text-normal">
           .text-<code>vertical-align</code>
         </span>
-      </td>
+      </th>
       <td data-title="Mixin">
         <span>
           u-text(<code>vertical-align</code>)
@@ -433,11 +433,11 @@ utilities:
       </td>
     </tr>
     <tr>
-      <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-        <span class="font-lang-2xs">
+      <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <span class="text-normal font-lang-2xs">
           multiple text utilities...
         </span>
-      </td>
+      </th>
       <td data-title="Mixin">
         <span>
           u-text(<code>token</code>, <code>token</code>, <code>token</code>...)

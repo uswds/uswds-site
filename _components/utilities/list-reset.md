@@ -101,11 +101,11 @@ utilities:
       </thead>
       <tbody class="font-mono-2xs">
         <tr>
-          <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-            <span>
+          <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+            <span class="text-normal">
               .add-list-reset
             </span>
-          </td>
+          </th>
           <td data-title="Mixin">
             <span>
               add-list-reset

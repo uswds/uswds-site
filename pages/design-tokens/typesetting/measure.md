@@ -31,15 +31,15 @@ subnav:
       {% for item in tokens.measure %}
         {% include tokens/is_number.html %}
         <tr>
-          <td scope="row" data-title="Token">
-            <span>
+          <th scope="row" data-title="Token">
+            <span class="text-normal">
               {% if is_number %}
                 <code class="text-no-wrap">{{ item.token }}</code>
               {% else %}
                 <code class="text-no-wrap">'{{ item.token }}'</code>
               {% endif %}
             </span>
-          </td>
+          </th>
           <td data-title="Example" class="overflow-hidden">
             <div>
               <div class="measure-{{ item.token }} font-lang-1">
@@ -75,9 +75,9 @@ Your context and coding style determine how you access USWDS measure tokens in c
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Context">
-          <span class="text-bold font-lang-3">function</span>
-        </td>
+        <th scope="row" data-title="Context">
+          <span class="font-lang-3">function</span>
+        </th>
         <td data-title="Description">
           <span>
             measure(<a href="{{ site.baseurl }}/design-tokens/typesetting/measure/" class="token">measure</a>)
@@ -90,11 +90,11 @@ Your context and coding style determine how you access USWDS measure tokens in c
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">mixin</span><br/>
+            mixin
           </span>
-        </td>
+        </th>
         <td data-title="Description">
           <span>
             u-measure(<a href="{{ site.baseurl }}/design-tokens/typesetting/measure/" class="token">measure</a>)
@@ -107,11 +107,9 @@ Your context and coding style determine how you access USWDS measure tokens in c
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
-          <span>
-            <span class="text-bold font-lang-3">setting</span><br/>
-          </span>
-        </td>
+        <th scope="row" data-title="Context">
+          <span class="font-lang-3">setting</span>
+        </th>
         <td data-title="Description">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/typesetting/measure/" class="token">measure</a>
@@ -124,11 +122,11 @@ Your context and coding style determine how you access USWDS measure tokens in c
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">utility</span><br/>
+            utility
           </span>
-        </td>
+        </th>
         <td data-title="Description">
           <span>
             .measure-<a href="{{ site.baseurl }}/design-tokens/typesetting/measure/" class="token">measure</a>

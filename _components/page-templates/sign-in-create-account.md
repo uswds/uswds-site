@@ -38,6 +38,13 @@ Explain the benefits of setting up an account
 
 Site users will be more likely to create an account if it’s easy to do and they understand the benefits it provides. Keep the account creation process simple and clear with limited distractions (e.g., other calls-to-action, messaging, or interactions) and a single “create account” button. Briefly point out the benefits of setting up an account, emphasizing what they can do and how it can help them.
 
+<div class="preview">
+  <a class="media_link" href={% include component-preview-link.html component="layout--create-account" %}>
+    <img src="{{ site.baseurl }}/assets/img/templates/layout--create-account.png" alt="Create account">
+  </a>
+  <a class="usa-button" href={% include component-preview-link.html component="layout--create-account" %}>Demo create account page template</a>
+</div>
+{% include code/accordion.html component="template-create-account" %}
 <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="create-account-docs">
@@ -101,6 +108,14 @@ Provide users with a clear and uncluttered sign-in experience.
 
 Users signing in to your website need to know that they’re in the right place. Keep the user on task with a simple sign-in process, free of unrelated content or actions.
 
+<div class="preview">
+  <a class="media_link" href={% include component-preview-link.html component="layout--sign-in" %}>
+    <img src="{{ site.baseurl }}/assets/img/templates/layout--sign-in.png" alt="Sign in">
+  </a>
+  <a class="usa-button" href={% include component-preview-link.html component="layout--sign-in" %}>Demo sign in page template</a>
+</div>
+{% include code/accordion.html component="template-sign-in" %}
+
 <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
       aria-expanded="true" aria-controls="sign-in-docs">
@@ -157,6 +172,14 @@ Users signing in to your website need to know that they’re in the right place.
 One landing page for all sign-in options.
 
 If you have multiple sign-in options, use this template to guide users to access their account through a prioritized option. 
+
+<div class="preview">
+  <a class="media_link" href={% include component-preview-link.html component="layout--sign-in-multiple" %}>
+    <img src="{{ site.baseurl }}/assets/img/templates/layout--multiple-sign-in-options.png" alt="Sign in">
+  </a>
+  <a class="usa-button" href={% include component-preview-link.html component="layout--sign-in-multiple" %}>Demo multiplesign-in-options page template</a>
+</div>
+{% include code/accordion.html component="template-sign-in-multiple" %}
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"

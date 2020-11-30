@@ -37,15 +37,15 @@ The following chart shows the USWDS default settings for the nine theme size tok
       {% for item in tokens.theme %}
         {% include tokens/is_number.html %}
         <tr>
-          <td scope="row" data-title="Theme token">
-            <span>
+          <th scope="row" data-title="Theme token">
+            <span class="text-normal">
               {% if is_number %}
                 <code class="text-no-wrap">{{ item.token }}</code>
               {% else %}
                 <code class="text-no-wrap">'{{ item.token }}'</code>
               {% endif %}
             </span>
-          </td>
+          </th>
           <td data-title="Default">
             <span>
               <code>{{ item.default }}</code>
@@ -99,15 +99,15 @@ The following chart shows the USWDS default settings for the nine theme size tok
           {% assign is_number = true %}
         {% endif %}
         <tr>
-          <td scope="row" data-title="System token">
-            <span>
+          <th scope="row" data-title="System token">
+            <span class="text-normal">
               {% if is_number %}
                 <code class="text-no-wrap">{{ item.token }}</code>
               {% else %}
                 <code class="text-no-wrap">'{{ item.token }}'</code>
               {% endif %}
             </span>
-          </td>
+          </th>
           <td data-title="Target size">
             <span>
               {{ item.value }}
@@ -138,11 +138,11 @@ Your context and coding style determine how you access USWDS font size tokens in
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Context" class="font-lang-2xs">
+        <th scope="row" data-title="Context" class="font-lang-2xs">
           <span>
-            <span class="text-bold">function</span>
+            function
           </span>
-        </td>
+        </th>
         <td data-title="Description">
           <span>
             size(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>)
@@ -155,12 +155,12 @@ Your context and coding style determine how you access USWDS font size tokens in
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context" class="font-lang-2xs">
+        <th scope="row" data-title="Context" class="font-lang-2xs">
           <span>
-            <span class="text-bold">mixin</span>
-            <span class="display-block">font-size</span>
+            <span>mixin</span>
+            <span class="text-normal display-block">font-size</span>
           </span>
-        </td>
+        </th>
         <td data-title="Description">
           <span>
             u-font-size(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>)
@@ -173,13 +173,13 @@ Your context and coding style determine how you access USWDS font size tokens in
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context" class="font-lang-2xs">
+        <th scope="row" data-title="Context" class="font-lang-2xs">
           <span>
-            <span class="text-bold">mixin</span>
-            <span class="display-block">font-family</span>
-            <span class="display-block">font-size</span>
+            <span>mixin</span>
+            <span class="text-normal display-block">font-family</span>
+            <span class="text-normal display-block">font-size</span>
           </span>
-        </td>
+        </th>
         <td data-title="Description">
           <span>
             u-font(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>)
@@ -192,11 +192,11 @@ Your context and coding style determine how you access USWDS font size tokens in
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context" class="font-lang-2xs">
+        <th scope="row" data-title="Context" class="font-lang-2xs">
           <span>
-            <span class="text-bold">setting</span>
+            setting
           </span>
-        </td>
+        </th>
         <td data-title="Description">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>
@@ -209,13 +209,13 @@ Your context and coding style determine how you access USWDS font size tokens in
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context" class="font-lang-2xs">
+        <th scope="row" data-title="Context" class="font-lang-2xs">
           <span>
-            <span class="text-bold">utility</span>
-            <span class="display-block">font-family</span>
-            <span class="display-block">font-size</span>
+            <span>utility</span>
+            <span class="text-normal display-block">font-family</span>
+            <span class="text-normal display-block">font-size</span>
           </span>
-        </td>
+        </th>
         <td data-title="Description">
           <span>
             .font-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>

@@ -132,7 +132,7 @@ vals_negative:
 {% assign tokens = site.data.tokens.typesetting %}
 
 <div class="utilities-properties">
-  <h3 class="utilities-property-title">CSS properties</h3>
+  <h2 class="utilities-property-title">CSS properties</h2>
   <div class="margin-top-1">
     <span class="property utilities-property">line-height</span>
     <span class="property utilities-property">max-width</span>
@@ -159,7 +159,7 @@ vals_negative:
             {% assign font = tokens.family.font
               | where: 'token', family.default
               | first %}
-            <h5 class="utility-examples-title">line-height-{{ family.token }} <span class="text-normal font-sans-3xs">(Shown: {{ font.name }})</span></h5>
+            <h3 class="utility-examples-title">line-height-{{ family.token }} <span class="text-normal font-sans-3xs">(Shown: {{ font.name }})</span></h3>
 
             {% assign thisUtilityClasses = 'grid-col-fill' %}
             {% assign thisValueClasses = 'grid-col-auto' %}
@@ -401,11 +401,11 @@ vals_negative:
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:maxw-card-lg">
+          <span class="text-normal">
             .line-height-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-line-height(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a>)
@@ -418,11 +418,11 @@ vals_negative:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .measure-<a href="{{ site.baseurl }}/design-tokens/typesetting/measure/" class="token">measure</a>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-measure(<a href="{{ site.baseurl }}/design-tokens/typesetting/measure/" class="token">measure</a>)
@@ -435,11 +435,11 @@ vals_negative:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .text-<code>alignment</code>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-text('<code>alignment</code>')
@@ -452,11 +452,11 @@ vals_negative:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .text-indent-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-text-indent(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)

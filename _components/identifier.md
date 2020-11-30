@@ -31,7 +31,7 @@ lead: The identifier communicates a site's parent agency and displays agency lin
       </ul>
       <h4>Usability guidance</h4>
       <ul class="usa-content-list">
-        <li><strong>Use the indicator component for required links.</strong> If your site already includes the federally required links in its site footer, remove them in favor of the links in the identifier. This assures that site visitors find the required links in a consistent location from site to site.</li>
+        <li><strong>Use the identifier component for required links.</strong> If your site already includes the federally required links in its site footer, remove them in favor of the links in the identifier. This assures that site visitors find the required links in a consistent location from site to site.</li>
         <li><strong>Display the parent agency logo, not the product logo.</strong> The identifier is meant to identify a website's parent agency as a complement to the site footer. Site-specific logos, like a product logo, should be in the site footer, not the identifier. </li>
         <li><strong>Display multiple parents and logos in hierarchical order. </strong> If a site has more than one parent agency, you may display a reference and a logo for each parent in hierarchical order, highest first. For example,"An official website of [Grandparent Department] and [Parent Agency]".</li>
         <li><strong>Avoid distraction.</strong> The identifier appears on every page of your site. Choose background colors that fit with your site theme and avoid color combinations that draw excessive attention to the identifier.</li>
@@ -48,7 +48,7 @@ lead: The identifier communicates a site's parent agency and displays agency lin
         <li><strong>Except where noted, use the entire component without deletions or additions.</strong> With rare exceptions, if you use the identifier, include the entire identifier. That is, don't delete sections or required links or change any link text beyond the customizations mentioned in the implementation section.</li>
         <li><strong>Use a background color darker than that of the footer.</strong> Use color to anchor the identifier to the bottom of the page and distinguish it from other site content. Use primary or base family background colors of grade <code>80</code> or higher, or <code>black</code>.</li>
         <li><strong>Use an SVG logo if possible.</strong> Ensure the logo is high resolution. We recommend using the SVG version of any logo if you have one. Otherwise, use an image that's at least 120 pixels tall.</li>
-        <li><strong>Use logos intended for dark backgrounds if possible.</strong> The indicator has a dark background. If your agency has a version of its logo intended for dark backgrounds, use that version.</li>
+        <li><strong>Use logos intended for dark backgrounds if possible.</strong> The identifier has a dark background. If your agency has a version of its logo intended for dark backgrounds, use that version.</li>
         <li><strong>Update the required links to point to the proper URLs. </strong> The identifier includes links required of any federal website, and these links are specific to a department, agency, or website. We've linked each section below to the guidance on Digital.gov to provide further context.
           <ul>
             <li>

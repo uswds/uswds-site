@@ -38,7 +38,7 @@ lead: Enter a standard U.S. mailing or shipping address
     </ul>
     <h4>Additional Information</h4>
     <p>
-      <a href="https://pe.usps.com/text/pub28/28c1_001.htm">USPS Publication 28</a> defines the mailing standards in the United States (see <a href="https://drive.google.com/file/d/1T1dmOfuBoOypUw4FbOSYtOHaTGUGE9MC/view?usp=sharing">this summary of applicable standards</a> 🔒 for easier reference and search)
+      <a href="https://pe.usps.com/text/pub28/28c1_001.htm">USPS Publication 28</a> defines the mailing standards in the United States
     </p>
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">

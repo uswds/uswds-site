@@ -23,7 +23,7 @@ If you're having trouble, email [uswds@support.digitalgov.gov](mailto:uswds@supp
 
 
 ## Contribute to USWDS
-There are several ways to contribute to USWDS. Participating in the community is one way to contribute. There are also specific stages during the design process when you can contribute. Please visit our [wiki](https://github.com/uswds/uswds/wiki/Contribution-Guidelines:-Design) to read our full contribution guidelines. Also, please note that every submission we receive goes through a full design review. Changes that only affect underlying code are reviewed by our developers.
+There are several ways to contribute to USWDS. Participating in the community is one way to contribute. See [our contributing guidelines](https://github.com/uswds/uswds/blob/develop/CONTRIBUTING.md) for more about how to contribute back to our codebase. Also, please note that every submission we receive goes through a full design and code review.
 
 <p>
   <a href="https://github.com/uswds/uswds" class="usa-button usa-button--outline width-card-lg margin-top-2">

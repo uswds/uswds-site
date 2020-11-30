@@ -12,7 +12,7 @@ subnav:
 
 {:.usa-prose}
 
-USWDS uses a curated set of [Material Design](https://material.io/resources/icons/?style=baseline) icons on the project as an SVG sprite. They are available for use in `src/img/usa-icons`. Any icons not included in the curated set are located in `src/img/usa-icons-unused`. You can move them into your project and rebuild the SVG sprite using the [USWDS Gulpfile](github.com/uswds/uswds-gulp/). 
+USWDS uses a curated set of [Material Design](https://material.io/resources/icons/?style=baseline) icons on the project as an SVG sprite. They are available for use in `src/img/usa-icons`. Any icons not included in the curated set are located in `src/img/usa-icons-unused`. You can move them into your project and rebuild the SVG sprite using the [USWDS Gulpfile](http://github.com/uswds/uswds-gulp/). 
 
 {:.usa-prose}
 

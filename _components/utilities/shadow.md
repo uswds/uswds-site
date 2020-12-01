@@ -23,7 +23,7 @@ utilities:
 ---
 
 <div class="utilities-properties">
-  <h3 class="utilities-property-title">CSS properties</h3>
+  <h2 class="utilities-property-title">CSS properties</h2>
   <div class="margin-top-1">
     <span class="property utilities-property">box-shadow</span>
   </div>
@@ -83,11 +83,11 @@ utilities:
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .shadow-<a href="{{ site.baseurl }}/design-tokens/shadow/" class="token">shadow</a>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-shadow(<a href="{{ site.baseurl }}/design-tokens/shadow/" class="token">shadow</a>)

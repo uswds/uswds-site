@@ -48,7 +48,7 @@ Any spacing value in utilities or component CSS should use the following spacing
         {% assign rounded = multiple | round: 0 %}
 
         <tr>
-          <td scope="row" data-title="Token" class="tablet:width-10">
+          <th scope="row" data-title="Token" class="tablet:width-10">
             <span class="text-no-wrap padding-right-4">
               {% if converted %}
                 <code>{{ converted }}</code>,
@@ -59,7 +59,7 @@ Any spacing value in utilities or component CSS should use the following spacing
                 <code>'{{ item.token }}'</code>
               {% endif %}
             </span>
-          </td>
+          </th>
           <td data-title="Multiple" class="tablet:width-10">
             <span>
               {% if item.token contains 'px' %}
@@ -108,9 +108,9 @@ Many mixins and utilities accept spacing unit tokens. See the [utilities section
     </thead>
     <tbody class="font-mono-2xs line-height-sans-6">
       <tr>
-        <td scope="row" data-title="Context">
-          <span class="text-bold font-lang-3">function</span>
-        </td>
+        <th scope="row" data-title="Context">
+          <span class="font-lang-3">function</span>
+        </th>
         <td data-title="Description">
           <span>
             units(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
@@ -126,12 +126,12 @@ Many mixins and utilities accept spacing unit tokens. See the [utilities section
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3 line-height-sans-2">
-            <span class="text-bold">mixin</span><br/>
-            <span>min-width media query</span><br/>
+            mixin <br>
+            <span class="text-normal">min-width media query</span>
           </span>
-        </td>
+        </th>
         <td data-title="Description">
           <span>
             at-media(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
@@ -144,12 +144,12 @@ Many mixins and utilities accept spacing unit tokens. See the [utilities section
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3 line-height-sans-2">
-            <span class="text-bold">mixin</span><br/>
-            <span>max-width media query</span><br/>
+            mixin <br>
+            <span class="text-normal">max-width media query</span>
           </span>
-        </td>
+        </th>
         <td data-title="Description">
           <span>
             at-media-max(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
@@ -162,11 +162,9 @@ Many mixins and utilities accept spacing unit tokens. See the [utilities section
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
-          <span>
-            <span class="text-bold font-lang-3">setting</span><br/>
-          </span>
-        </td>
+        <th scope="row" data-title="Context">
+          <span class="font-lang-3">setting</span>
+        </th>
         <td data-title="Description">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
@@ -179,11 +177,11 @@ Many mixins and utilities accept spacing unit tokens. See the [utilities section
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">utility</span><br/>
+            utility
           </span>
-        </td>
+        </th>
         <td data-title="Description">
           <span>
             .padding-x-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a><br/>

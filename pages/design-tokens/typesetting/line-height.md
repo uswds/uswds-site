@@ -32,15 +32,15 @@ Please see the [Typesetting]({{ site.baseurl }}/design-tokens/typesetting){:.tex
       {% for item in tokens.line-height %}
         {% include tokens/is_number.html %}
         <tr>
-          <td scope="row" data-title="Token">
-            <span>
+          <th scope="row" data-title="Token">
+            <span class="text-normal">
               {% if is_number %}
                 <code class="text-no-wrap">{{ item.token }}</code>
               {% else %}
                 <code class="text-no-wrap">'{{ item.token }}'</code>
               {% endif %}
             </span>
-          </td>
+          </th>
           <td data-title="Example">
             <div class="font-lang-4 tablet:font-lang-6 line-height-sans-{{ item.token }} measure-2">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</div>
           </td>
@@ -75,9 +75,9 @@ Your context and coding style determine how you access USWDS line height tokens 
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Context">
-          <span class="text-bold font-lang-3">function</span>
-        </td>
+        <th scope="row" data-title="Context">
+          <span class="font-lang-3">function</span>
+        </th>
         <td data-title="Description">
           <span class="line-height-sans-6">
             line-height(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a>)<br/>
@@ -92,11 +92,11 @@ Your context and coding style determine how you access USWDS line height tokens 
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">mixin</span><br/>
+            mixin
           </span>
-        </td>
+        </th>
         <td data-title="Description">
           <span>
             u-line-height(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a>)
@@ -109,11 +109,9 @@ Your context and coding style determine how you access USWDS line height tokens 
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
-          <span>
-            <span class="text-bold font-lang-3">setting</span><br/>
-          </span>
-        </td>
+        <th scope="row" data-title="Context">
+          <span class="font-lang-3">setting</span>
+        </th>
         <td data-title="Description">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a>
@@ -126,11 +124,11 @@ Your context and coding style determine how you access USWDS line height tokens 
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">utility</span><br/>
+            utility
           </span>
-        </td>
+        </th>
         <td data-title="Description">
           <span>
             .line-height-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/design-tokens/typesetting/letterspacing/" class="token">line height</a>

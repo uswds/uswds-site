@@ -16,7 +16,7 @@ lead: The banner identifies official websites of government organizations in the
     You should use the banner to identify your site as an official government site.
   </p>
   <p>
-    The banner explains that the combination of (a) an official .gov or .mil domain and (b) a secure HTTPS connection are the best way to assure visitors that they’'re connected to an official site.
+    The banner explains that the combination of (a) an official .gov or .mil domain and (b) a secure HTTPS connection are the best way to assure visitors that they're connected to an official site.
   </p>
   <p>
     Most government sites should use the banner, but some should not use the banner. Do NOT use the banner on non-government domains such as a .com or .org.

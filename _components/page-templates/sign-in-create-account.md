@@ -17,7 +17,7 @@ Users can have difficulty creating accounts or signing in to a website. The best
 
 ## Shared services
 
-Government websites requiring account creation can use [login.gov](https://login.gov), a FedRAMP-authorized, single sign-on shared service. Login.gov is simple and secure, and it includes our sign-in guidance “out of the box.” This benefits the public because they can sign in to any government website that uses login.gov with the same username and password, giving them a more consistent experience across websites and digital services..
+Government websites requiring account creation can use [login.gov](https://login.gov), a FedRAMP-authorized, single sign-on shared service. Login.gov is simple and secure, and it includes our sign-in guidance “out of the box.” This benefits the public because they can sign in to any government website that uses login.gov with the same username and password, giving them a more consistent experience across websites and digital services.
 
 <div class="site-component-section" markdown="1">
 
@@ -64,7 +64,7 @@ Site users will be more likely to create an account if it’s easy to do and the
 - **Keep the form short.** Only ask for the essential things a user needs to create an account. Eliminate optional fields whenever possible, and keep the information pertinent to the account creation process (e.g., username, email, password, security questions, etc.). If you need to ask for something outside common account creation information, explain to the user why it’s needed.
 - **Convey clear password requirements.** Clearly indicate your password requirements when users are creating a password. If possible, visually indicate to the user if they've met password strength requirements as they type, and use a password meter to show the user how strong their password is.
 - **Allow users to toggle password visibility.** This helps ensure users are entering it correctly while maintaining privacy when it’s needed as well. 
-- **Enable copy/paste and autocomplete.** Many users rely on password generators because they provide secure passwords and phrases that a user doesn’t have to memorize. Forcing a user to type these in is a large barrier to usability. Allowing autocomplete also helps reduce user burden and typos.
+- **Enable copy/paste.** MMany users rely on password generators because they provide secure passwords and phrases that users don't have to memorize. Forcing a user to type these in is a large barrier to usability.
 - **Use consistent, accurate language.** Use the phrase “create account” instead of “sign up,” which can be more easily confused with “sign in.” It’s also more accurate, since users aren’t necessarily “signing up” for something when accessing a government service or site. 
 - **Allow users to switch between creating an account and signing in.** Users should be able to easily find where to sign in from the create account page, and vice versa. This also applies to the global header of the site, where users should have “one-click” access to either the sign-in or create an account page. 
 - **Include required legal agreements.** Work with your agency’s security officer and general counsel to determine how to handle legal copy placement regarding terms and conditions. Use a checkbox to affirm that your users accept terms and conditions. Make the terms and conditions easy to find without distracting from the primary purpose of creating an account.
@@ -140,7 +140,7 @@ Users signing in to your website need to know that they’re in the right place.
 - **Focus on the task.** Remove extra, unneeded information to prevent the user from getting distracted.
 - **Use specific field labels.** If you’re asking for a username, say username. If it’s an email, say email address. Don’t make the user guess which one you mean. 
 - **Allow users to toggle password visibility.** This helps ensure users are entering it correctly while maintaining privacy when it’s needed as well. 
-- **Enable copy/paste and autocomplete.** Many users rely on password generators because they provide secure passwords and phrases that a user doesn’t have to memorize. Forcing a user to type these in is a large barrier to usability. Allowing autocomplete also helps reduce user burden and typos.
+- **Enable copy/paste.** MMany users rely on password generators because they provide secure passwords and phrases that users don't have to memorize. Forcing a user to type these in is a large barrier to usability.
 - **Use consistent, accurate language.** Use “sign in” or “sign-in”—depending on if it’s a verb (link in a call-to-action or button) or noun/adjective form (sign-in page)“. Don’t use “login” or “log in.”
 - **Allow users to switch between creating an account and signing in.** Users should be able to easily find where to sign in from the create account page, and vice versa. This also applies to the global header of the site, where users should have “one-click” access to either the sign-in or create an account page.
 

@@ -33,15 +33,15 @@ lead: The preview list component provides a short list of recently posted or rel
       <h4>Usability guidance</h4>
       <ul class="usa-content-list">
         <li><strong>Use thumbnail images consistently.</strong> If you use a thumbnail on one article, use a similar kind of image (photo, illustration, etc.) on every article. Ensure icons or illustrations have clear meaning that add value or context to the content. </li>
-        <li><strong>Use a consistent width for media.</strong> Thumbnail images should be presented with consistent width so the list aligns vertically for easy scanability.</li>
+        <li><strong>Use a consistent width for media.</strong> Thumbnail images should be presented with consistent width so the list aligns vertically for easy scannability.</li>
         <li><strong>Avoid ambiguous, generic article links such as “read more.”</strong> The heading for each article links to the full article. Ensure each heading is clear, concise, and unique so users can quickly understand what the article is about. Don’t include additional links that take users to the same place.</li>
-        <li><strong>Provide a button or link to load more articles.</strong> Users may need access to an index or archive where they can find more articles than those listed in the component.</li>
-        <li><strong>Provide a strong “<a href="https://www.nngroup.com/articles/information-scent/">information scent</a>” for each article.</strong> Use headings, teaser text, a thumbnail image, and meta information effectively to help users understand the value of each article and choose which ones to visit.</li>
+        <li><strong>Provide a button or link to where more articles can be found.</strong> Users may need access to an index or archive where they can find more articles than those listed in the component.</li>
+        <li><strong>Provide a strong "<a href="https://www.nngroup.com/articles/information-scent/">information scent</a>" for each article.</strong> Use headings, teaser text, a thumbnail image, and meta information effectively to help users understand the value of each article and choose which ones to visit.</li>
         <li><strong>Indicate to the user if they will navigate to another website.</strong> Add the <a href="https://designsystem.digital.gov/components/typography/#links">external link class</a> to the heading if the link takes you away from the current site.</li>
       </ul>
       <h4>Accessibility</h4>
       <ul class="usa-content-list">
-        <li><strong>Use the proper ARIA role.</strong> Use unordered lists and list items. Use a <code>ul</code> for a card group and an <code>li</code> for each card. This allows screen readers to enumerate the items in the card group and allows shortcuts between list items.</li>
+        <li><strong>Use unordered lists and list items.</strong> Use a <code>ul</code> for a preview list and an <code>li</code> for each item. This allows screen readers to enumerate the items in the preview list and allows shortcuts between list items.</li>
         <li><strong>Use the appropriate heading level for your page.</strong> Update heading levels based on the content of your page to make sure preview list headings are in the correct logical outline order.</li>
       </ul>
       <h4 class="usa-heading">Implementation</h4>     

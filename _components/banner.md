@@ -10,6 +10,22 @@ category: Components
 lead: The banner identifies official websites of government organizations in the United States. It also helps visitors understand how to tell that a website is both official and secure.
 ---
 
+<section class="site-component-section" id="site-component-intro">
+  <h2 class="font-body-md">Why use the banner</h2>
+  <p>
+    You should use the banner to identify your site as an official government site.
+  </p>
+  <p>
+    The banner explains that the combination of (a) an official .gov or .mil domain and (b) a secure HTTPS connection are the best way to assure visitors that they’'re connected to an official site.
+  </p>
+  <p>
+    Most government sites should use the banner, but some should not use the banner. Do NOT use the banner on non-government domains such as a .com or .org.
+  </p>
+  <p>
+    If you are unable to update to <a href="https://github.com/uswds/uswds/releases">USWDS 2.8.0 or higher</a> but you still want to include the new language in your banner, we recommend editing your content to the language outlined below.
+  </p>
+</section>
+
 {% include code/preview.html component="banner" %}
 
 <section class="site-component-section">

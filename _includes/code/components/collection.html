@@ -1,0 +1,23 @@
+<h6>Collection</h6>
+
+{% capture collection--default %}
+  {% fractal_component collection--default %}
+{% endcapture %}{{ collection--default | strip }}
+
+<h6>Collection with thumbnails</h6>
+
+{% capture collection--media %}
+  {% fractal_component collection--media %}
+{% endcapture %}{{ collection--media | strip }}
+
+<h6>Collection with calendar date</h6>
+
+{% capture collection--fancy-date %}
+  {% fractal_component collection--fancy-date %}
+{% endcapture %}{{ collection--fancy-date | strip }}
+
+<h6>Collection with only headers</h6>
+
+{% capture collection--only-headers %}
+  {% fractal_component collection--only-headers %}
+{% endcapture %}{{ collection--only-headers | strip }}

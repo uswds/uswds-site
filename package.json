@@ -76,6 +76,7 @@
     "postcss-csso": "^4.0.0",
     "sass": "^1.26.10",
     "snyk": "^1.431.4",
+    "uswds": "github:uswds/uswds#jm-search-spanish",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },
@@ -96,7 +97,6 @@
     "minimist": "^1.2.3",
     "nswatch": "^0.2.0",
     "simplecrawler": "^1.1.8",
-    "uswds": "github:uswds/uswds#jm-search-spanish",
     "yamljs": "^0.3.0"
   },
   "watch": {

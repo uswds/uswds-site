@@ -45,7 +45,7 @@ utilities:
 {% include tokens/get-system-colors.html %}
 
 <div class="utilities-properties">
-  <h3 class="utilities-property-title">CSS properties</h3>
+  <h2 class="utilities-property-title">CSS properties</h2>
   <div class="margin-top-1">
     <span class="property utilities-property">background-color</span>
     <span class="property utilities-property">color</span>
@@ -229,11 +229,11 @@ utilities:
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .text-<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-text(<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>)
@@ -246,11 +246,11 @@ utilities:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .bg-<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-bg(<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>)

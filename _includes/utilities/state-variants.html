@@ -25,11 +25,11 @@
     <tbody class="font-mono-2xs">
       {% for utility in page.utilities %}
         <tr>
-          <td scope="row" data-title="Utility variable" class="tablet:text-no-wrap">
-            <span>
+          <th scope="row" data-title="Utility variable" class="tablet:text-no-wrap">
+            <span class="text-normal">
               ${{ utility.var }}-settings
             </span>
-          </td>
+          </th>
           <td data-title="active" class="tablet:maxw-15">
             <span>
               {% if utility.active %}<span class="output-true">true</span>{% else %}false{% endif %}

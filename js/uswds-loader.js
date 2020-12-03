@@ -1,9 +1,3 @@
-var loadJS = require("./vendor/loadjs.js");
-
-// EDITABLE: path to USWDS js
-var enhancedScriptPath = "../../assets/js/vendor/uswds.min.js";
-
-// Don't edit below this line ----------------------------------------------
 // Based on https://www.filamentgroup.com/lab/enhancing-optimistically.html
 var docElem = window.document.documentElement;
 var loadingClass = "usa-js-loading";
@@ -35,20 +29,21 @@ if ("querySelector" in window.document && "addEventListener" in window) {
   var poll = function () {
     setTimeout(function () {
       timeout--;
-      if (typeof USWDSLibrary !== 'undefined') {
+      if (window.uswdsPresent == true) {
         // External file loaded
         clearTimeout(fallback);
         removeDefaultClass();
         setTimeout(switchToLoadedClass, 100);
-      }
-      else if (timeout > 0) {
+        console.log("USWDS loaded.");
+      } else if (timeout > 0) {
         poll();
-      }
-      else {
+        console.log("Looking for USWDS...");
+      } else {
+        console.log("Library didn't load.");
         // External library failed to load
       }
     }, 100);
   };
-  
+
   poll();
 }

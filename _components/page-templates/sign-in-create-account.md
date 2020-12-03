@@ -3,31 +3,36 @@ permalink: /page-templates/authentication-pages/
 title: Authentication pages
 layout: styleguide
 category: Page templates
-lead: Allow users to create or sign in to their account
+lead: Allow users to create an account or sign in. 
 subnav:
 - text: Create account
   href: '#create-account'
 - text: Sign in
   href: '#sign-in'
-- text: Third-party options
-  href: '#third-party-options'
+- text: Multiple sign-in options 
+  href: '#multiple-sign-in-options'
 ---
 
-Users can have difficulty creating accounts or signing in to a website. The best way to help them is to provide context about what they’re creating an account for and remove unnecessary distractions from the page so they can focus on the task at hand.
+It can be difficult or confusing for users to create accounts or sign in to a website. The best way to help is to provide context about why they’re creating an account and to remove unnecessary distractions from the page.
 
-## Shared services
+You should use a shared service or the authentication page templates to create a more consistent experience across sites and services. 
 
-Government websites requiring account creation can use [login.gov](https://login.gov), a FedRAMP-authorized, single sign-on shared service. Login.gov is simple and secure, and it includes our sign-in guidance “out of the box.” This benefits the public because they can sign in to any government website that uses login.gov with the same username and password, giving them a more consistent experience across websites and digital services.
+Government websites requiring account creation can use [login.gov](https://login.gov), a FedRAMP-authorized, single sign-on shared service. Login.gov is simple, secure, and follows our sign-in guidance. Users can also sign in to any government website that uses login.gov with the same username and password.
+
+If you’re unable to use a shared service like login.gov, use our authentication page templates:
+
+- [Create account template](#create-account)
+- [Sign-in template](#sign-in)
+- [Multiple sign-in options](#multiple-sign-in-options)
+
 
 <div class="site-component-section" markdown="1">
 
 ## Create account
 
-{:.site-text-intro}
+### Explain the benefits of setting up an account
 
-Explain the benefits of setting up an account
-
-Site users will be more likely to create an account if it’s easy to do and they understand the benefits it provides. Keep the account creation process simple and clear with limited distractions (e.g., other calls-to-action, messaging, or interactions) and a single “create account” button. Briefly point out the benefits of setting up an account, emphasizing what they can do and how it can help them.
+Site users will be more likely to create an account if it’s easy and they understand the benefits. Keep the account creation process simple with a single “create account” button and limited distractions (like other calls-to-action). Succinctly outline the benefits of setting up an account, emphasizing what they can do and how it can help them.
 
 <div class="preview">
   <a class="media_link" href={% include component-preview-link.html component="layout--create-account" %}>
@@ -47,43 +52,36 @@ Site users will be more likely to create an account if it’s easy to do and the
 
 {:.usa-content-list}
 
-- **Users can create an account directly on your website.** This template is great for agencies who have a self-hosted authentication system to leverage a design that’s simple, mobile-friendly, and consistent across government websites.
+- **Users can create an account directly on your website.** This template is intended for agencies who have a self-hosted authentication system and need a design that’s simple, usable, and mobile-friendly.
 
 ### When to consider something else
 
 {:.usa-content-list}
 
-- **Your agency uses a third-party authentication system.** If you’re leveraging a shared service (as we recommend), follow the UX guidelines from that service. For instance, login.gov recommends placing a “sign in” link in the header of your website that takes users through the entire “sign in” or “create an account” experience on the login.gov site.
+- **Your agency uses a third-party authentication system.** If you’re leveraging a shared service, follow the user experience guidelines from that service. For example, login.gov recommends placing a “sign in” link in the header of your website that takes users through the entire “sign in” or “create an account” experience on the login.gov site.
 
 ### Usability guidance
 
 {:.usa-content-list}
 
-- **Focus on the task.** Remove extra, unneeded information, and don’t overcomplicate the value propositions. A “create account” page works best when it’s simple, focused, and to-the-point.
+- **Help users focus on the task.** Remove extraneous content. A “create account” page works best when it’s simple, focused, and to-the-point.
 - **Use specific field labels.** If you’re asking for a username, say username. If it’s an email, say email address. Don’t make the user guess which one you mean. 
-- **Keep the form short.** Only ask for the essential things a user needs to create an account. Eliminate optional fields whenever possible, and keep the information pertinent to the account creation process (e.g., username, email, password, security questions, etc.). If you need to ask for something outside common account creation information, explain to the user why it’s needed.
-- **Convey clear password requirements.** Clearly indicate your password requirements when users are creating a password. If possible, visually indicate to the user if they've met password strength requirements as they type, and use a password meter to show the user how strong their password is.
-- **Allow users to toggle password visibility.** This helps ensure users are entering it correctly while maintaining privacy when it’s needed as well. 
-- **Enable copy/paste.** MMany users rely on password generators because they provide secure passwords and phrases that users don't have to memorize. Forcing a user to type these in is a large barrier to usability.
-- **Use consistent, accurate language.** Use the phrase “create account” instead of “sign up,” which can be more easily confused with “sign in.” It’s also more accurate, since users aren’t necessarily “signing up” for something when accessing a government service or site. 
-- **Allow users to switch between creating an account and signing in.** Users should be able to easily find where to sign in from the create account page, and vice versa. This also applies to the global header of the site, where users should have “one-click” access to either the sign-in or create an account page. 
-- **Include required legal agreements.** Work with your agency’s security officer and general counsel to determine how to handle legal copy placement regarding terms and conditions. Use a checkbox to affirm that your users accept terms and conditions. Make the terms and conditions easy to find without distracting from the primary purpose of creating an account.
+- **Keep the form short.** Only ask for what's necessary to create an account. Eliminate optional fields whenever possible, and keep the information pertinent to the account creation process (like username, email, password, and security questions). If you need to ask for something outside this common account creation information, explain why it’s needed.
+- **Convey clear password requirements.** Clearly indicate any password requirements. If possible, validate these requirements as users type, and use a password meter to show password strength.
+- **Allow users to toggle password visibility.** This helps ensure users are entering passwords correctly while maintaining privacy when needed. 
+- **Enable copy and paste.** Many users rely on password generators because they provide secure passwords and phrases they don't have to memorize. Forcing manual entry is a barrier to usability and can cause mistakes.
+- **Use consistent, accurate language.** Use the phrase “create account” instead of “sign up,” which can be more easily confused with “sign in.” It’s also more accurate, since users aren’t necessarily “signing up” for anything when accessing a government site or service. 
+- **Allow users to switch between creating an account and signing in.** Users should be able to easily find where to sign in from the create account page, and vice versa. This also applies to the global header of the site, where users should have direct access to either the sign-in or create an account page.  
+- **Include required legal agreements.** Work with your agency’s information security officer and general counsel to determine how to handle legal copy placement regarding terms and conditions. Use a checkbox to affirm that your users accept terms and conditions. Make the terms and conditions easy to find without distracting from the primary purpose of creating an account.
 
 ### Components used in this template
-- Extended header with `.usa-nav` and `.usa-menu-btn` removed
-- Form controls
-- Grid
-- Buttons
+
+- [Extended header]({{ site.baseurl }}/components/header/#extended) with `.usa-nav` and `.usa-menu-btn` removed
+- [Form controls]({ site.baseurl }}/components/form-controls/)
+- [Grid]({{ site.baseurl }}/utilities/layout-grid/)
+- [Buttons]({{ site.baseurl }}/components/button/)
 - Graphic list
-- Medium footer
-
-{:.usa-content-list}
-
-### Component definitions
-
-{:.usa-content-list}
-
-- **Graphic list:** The graphic list is used to showcase a number of related items and their respective images in a grid pattern. In this template, we have removed the grid classes.
+- [Medium footer]({{ site.baseurl}}/components/footer/#medium-footer)
 
 ### Additional Information
 
@@ -101,8 +99,6 @@ NIST Special Publication 800-63-3, [Digital Identity Guidelines](https://pages.n
 {:.site-text-intro}
 
 Provide users with a clear and uncluttered sign-in experience.
-
-Users signing in to your website need to know that they’re in the right place. Keep the user on task with a simple sign-in process, free of unrelated content or actions.
 
 <div class="preview">
   <a class="media_link" href={% include component-preview-link.html component="layout--sign-in" %}>
@@ -123,37 +119,34 @@ Users signing in to your website need to know that they’re in the right place.
 
 {:.usa-content-list}
 
-- **Users have accounts directly on your website.** This template is great for agencies who have a self-hosted authentication system to leverage a design that’s simple, mobile-friendly, and consistent across government websites.
+- **Users have accounts directly on your website.** This template is intended for agencies who have a self-hosted authentication system and need a design that’s simple, usable, and mobile-friendly.
 
 ### When to consider something else
 
 {:.usa-content-list}
 
-- **Your agency uses a third-party authentication system.** If you’re leveraging a shared service (as we recommend), follow the sign-in guidelines from that service. For instance, login.gov recommends placing a “sign-in” link in the header of your website that takes users through the entire “sign in” or “create an account” experience on the login.gov site.
+- **Your agency uses a third-party authentication system.** If you’re leveraging a shared service , follow the sign-in guidelines from that service. For example, login.gov recommends placing a “sign-in” link in the header of your website that takes users through the entire “sign in” or “create an account” experience on the login.gov site.
 
 ### Usability guidance
 
 {:.usa-content-list}
 
 - **Clearly provide a way to reset passwords or recover usernames.** Provide a clearly marked link for users to reset a password or recover a forgotten username.  
-- **Provide error feedback.** If a sign-in attempt fails, let users know there was an error, but don’t indicate which field was invalid, for example “Incorrect password” or “Username not found.” This helps maintain stronger protection against hackers or unauthorized users.
-- **Focus on the task.** Remove extra, unneeded information to prevent the user from getting distracted.
+- **Provide secure error feedback.** If a sign-in attempt fails, let users know there was an error, but don’t indicate which field was invalid, for example “Incorrect password” or “Username not found.” This helps maintain stronger protection against hackers and unauthorized users.
+- **Help users focus on the task.** Remove extraneous content to minimize distractions.
 - **Use specific field labels.** If you’re asking for a username, say username. If it’s an email, say email address. Don’t make the user guess which one you mean. 
-- **Allow users to toggle password visibility.** This helps ensure users are entering it correctly while maintaining privacy when it’s needed as well. 
-- **Enable copy/paste.** MMany users rely on password generators because they provide secure passwords and phrases that users don't have to memorize. Forcing a user to type these in is a large barrier to usability.
-- **Use consistent, accurate language.** Use “sign in” or “sign-in”—depending on if it’s a verb (link in a call-to-action or button) or noun/adjective form (sign-in page)“. Don’t use “login” or “log in.”
-- **Allow users to switch between creating an account and signing in.** Users should be able to easily find where to sign in from the create account page, and vice versa. This also applies to the global header of the site, where users should have “one-click” access to either the sign-in or create an account page.
+- **Allow users to toggle password visibility.** This helps ensure users are entering passwords correctly while maintaining privacy when needed. 
+- **Enable copy/paste.** Many users rely on password generators because they provide secure passwords and phrases they don't have to memorize. Forcing manual entry is a barrier to usability and can cause mistakes. 
+- **Use consistent, accurate language.** Use “sign in” if it’s a verb (like a link in a call-to-action or button) or “sign-in” if it's a noun or adjective (like "sign-in page"). Don’t use “login” or “log in.”
+- **Allow users to switch between creating an account and signing in.** Users should be able to easily find where to sign in from the create account page, and vice versa. This also applies to the global header of the site, where users should have “one-click” access to either the sign-in or create an account page. 
 
 ### Components used in this template
-- Extended header with `.usa-nav` and `.usa-menu-btn` removed
-- Form controls
-- Buttons
-- Medium footer
-
-{:.usa-content-list}
-
-### Component definitions
-- **Graphic list:** The graphic list is used to showcase a number of related items and their respective images in a grid pattern. In this template, we have removed the grid classes.
+- [Extended header]({{ site.baseurl }}/components/header/#extended) with `.usa-nav` and `.usa-menu-btn` removed
+- [Form controls]({ site.baseurl }}/components/form-controls/)
+- [Grid]({{ site.baseurl }}/utilities/layout-grid/)
+- [Buttons]({{ site.baseurl }}/components/button/)
+- Graphic list
+- [Medium footer]({{ site.baseurl}}/components/footer/#medium-footer)
 
 </div>
 </div>
@@ -161,11 +154,11 @@ Users signing in to your website need to know that they’re in the right place.
 
 <div class="site-component-section" markdown="1">
 
-## Third-party options
+## Multiple sign-in options
 
 {:.site-text-intro}
 
-One landing page for all sign-in options.
+Use one landing page for all sign-in options.
 
 If you have multiple sign-in options, use this template to guide users to access their account through a prioritized option. 
 
@@ -184,7 +177,7 @@ If you have multiple sign-in options, use this template to guide users to access
   </button>
 <div id="third-party-docs" aria-hidden="false" class="usa-accordion__content site-component-usage" markdown="1">
 
-### When to use this component
+### When to use the multiple sign-in options template
 
 {:.usa-content-list}
 
@@ -201,24 +194,18 @@ If you have multiple sign-in options, use this template to guide users to access
 {:.usa-content-list}
 
 - **Emphasize one method over others.** Indicate a preferred method by giving it more prominence in your design.
-- **Focus on the task.** Remove extra, unneeded information to prevent the user from getting distracted.
-- **Use consistent, accurate language.** Use “sign in” or “sign-in”—depending on if it’s a verb (link in a call-to-action or button) or noun/adjective form (sign-in page)“. Don’t use “login” or “log in.”
-- **Explain why and how.** Let users know the value of accessing their account and provide context on their sign-in options.
+- **Focus on the task.** Remove extraneous content to minimize distractions.
+- **Use consistent, accurate language.** Use “sign in” if it’s a verb (like link in a call-to-action or button) or “sign-in” if it's a noun or adjective form (like "sign-in page"). Don’t use “login” or “log in.”
+- **Explain why and how.** Let users know the value of accessing their account and explain the purpose of any additional sign-in options.
 
 
 ### Components used in this template
-- Extended header with `.usa-nav` and `.usa-menu-btn` removed
-- Form controls
-- Grid
-- Buttons
+- [Extended header]({{ site.baseurl }}/components/header/#extended) with `.usa-nav` and `.usa-menu-btn` removed
+- [Form controls]({ site.baseurl }}/components/form-controls/)
+- [Grid]({{ site.baseurl }}/utilities/layout-grid/)
+- [Buttons]({{ site.baseurl }}/components/button/)
 - Graphic list
-- Medium footer
-
-### Component definitions
-
-{:.usa-content-list}
-
-- **Graphic list:** The graphic list is used to showcase a number of related items and their respective images in a grid pattern. In this template, we have removed the grid classes.
+- [Medium footer]({{ site.baseurl}}/components/footer/#medium-footer)
 
 </div>
 </div>

@@ -71,6 +71,7 @@
     "gulp-scss-lint": "^1.0.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
+    "jquery": "^3.5.1",
     "node-notifier": "^5.4.3",
     "postcss-csso": "^4.0.0",
     "sass": "^1.25.0",

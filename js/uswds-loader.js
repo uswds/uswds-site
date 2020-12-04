@@ -41,11 +41,9 @@ if ("querySelector" in window.document && "addEventListener" in window) {
         setTimeout(switchToLoadedClass, 100);
       }
       else if (timeout > 0) {
-        console.log('polling')
         poll();
       }
       else {
-        console.log('failed')
         // External library failed to load
       }
     }, 100);

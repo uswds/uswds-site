@@ -88,7 +88,7 @@ Using a consistent set of icons helps establish a familiar look and feel across 
 
 #### Icon variants
 
-<table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants">
+<table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="icon-variants">
   <thead>
     <tr>
       <th scope="col" class="flex-6">Variant</th>

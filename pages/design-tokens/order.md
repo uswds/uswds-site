@@ -32,7 +32,7 @@ subnav:
         {% include tokens/is_number.html %}
 
         <tr>
-          <td scope="row" data-title="Token" class="tablet:width-15">
+          <th scope="row" data-title="Token" class="tablet:width-15 text-normal">
             <span>
               {% if converted %}
                 <code>{{ converted }}</code>,
@@ -43,7 +43,7 @@ subnav:
                 <code>'{{ item.token }}'</code>
               {% endif %}
             </span>
-          </td>
+          </th>
           <td data-title="Example">
             <div class="grid-row grid-gap-sm width-full">
               <div class="grid-col {% if forloop.first == true %}order-initial{% else %}order-1{% endif %}">
@@ -106,9 +106,9 @@ Your context and coding style determine how you access USWDS order tokens in cod
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context text-normal">
           <span class="text-bold font-lang-3">function</span>
-        </td>
+        </th>
         <td data-title="Description">
           <span>
             order(<a href="{{ site.baseurl }}/design-tokens/order/" class="token">order</a>)
@@ -121,11 +121,11 @@ Your context and coding style determine how you access USWDS order tokens in cod
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context text-normal">
           <span class="font-lang-3">
             <span class="text-bold">mixin</span><br/>
           </span>
-        </td>
+        </th>
         <td data-title="Description">
           <span>
             u-order(<a href="{{ site.baseurl }}/design-tokens/order/" class="token">order</a>)
@@ -138,11 +138,11 @@ Your context and coding style determine how you access USWDS order tokens in cod
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context text-normal">
           <span>
             <span class="text-bold font-lang-3">setting</span><br/>
           </span>
-        </td>
+        </th>
         <td data-title="Description">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/order/" class="token">order</a>
@@ -155,11 +155,11 @@ Your context and coding style determine how you access USWDS order tokens in cod
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context text-normal">
           <span class="font-lang-3">
             <span class="text-bold">utility</span><br/>
           </span>
-        </td>
+        </th>
         <td data-title="Description">
           <span>
             .order-<a href="{{ site.baseurl }}/design-tokens/order/" class="token">order</a>

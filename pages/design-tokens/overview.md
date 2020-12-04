@@ -124,11 +124,11 @@ Use design tokens directly to set the value of settings variables in USWDS theme
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             color(<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>)
@@ -146,11 +146,11 @@ Use design tokens directly to set the value of settings variables in USWDS theme
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
             'red-warm-50'
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             color('red-warm-50')
@@ -168,11 +168,11 @@ Use design tokens directly to set the value of settings variables in USWDS theme
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
             'red-warm-50v'
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             color('red-warm-50v')
@@ -190,11 +190,11 @@ Use design tokens directly to set the value of settings variables in USWDS theme
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
             'primary-vivid'
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             color('primary-vivid')
@@ -212,11 +212,11 @@ Use design tokens directly to set the value of settings variables in USWDS theme
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
             'white'
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             color('white')
@@ -250,11 +250,11 @@ Use design tokens directly to set the value of settings variables in USWDS theme
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             units(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
@@ -272,12 +272,12 @@ Use design tokens directly to set the value of settings variables in USWDS theme
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
             0.5<br/>
             <span class="display-inline-block padding-top-05">'05'</span>
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             units(0.5)<br/>
@@ -297,11 +297,11 @@ Use design tokens directly to set the value of settings variables in USWDS theme
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
             1
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             units(1)
@@ -319,11 +319,11 @@ Use design tokens directly to set the value of settings variables in USWDS theme
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
             'card-lg'
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             units('card-lg')
@@ -357,12 +357,12 @@ Use design tokens directly to set the value of settings variables in USWDS theme
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/typesetting/font-family" class="token">family</a>,
             <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             size(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>)
@@ -380,11 +380,11 @@ Use design tokens directly to set the value of settings variables in USWDS theme
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
             'sans', '3xs'
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             size('sans', '3xs')
@@ -402,11 +402,11 @@ Use design tokens directly to set the value of settings variables in USWDS theme
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
             'ui', 'micro'
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             size('ui', 'micro')
@@ -424,11 +424,11 @@ Use design tokens directly to set the value of settings variables in USWDS theme
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
             'body', 15
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             size('body', 15)
@@ -462,11 +462,11 @@ Use design tokens directly to set the value of settings variables in USWDS theme
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/typesetting/font-family" class="token">family</a>
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             family(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family" class="token">family</a>)
@@ -484,11 +484,11 @@ Use design tokens directly to set the value of settings variables in USWDS theme
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
             'sans'
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             family('sans')
@@ -506,11 +506,11 @@ Use design tokens directly to set the value of settings variables in USWDS theme
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
             'ui'
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             family('ui')
@@ -528,11 +528,11 @@ Use design tokens directly to set the value of settings variables in USWDS theme
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
             'body'
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             family('body')
@@ -566,12 +566,12 @@ Use design tokens directly to set the value of settings variables in USWDS theme
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/typesetting/font-family" class="token">family</a>,
             <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             —
@@ -589,11 +589,11 @@ Use design tokens directly to set the value of settings variables in USWDS theme
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
             'sans', '3xs'
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             —
@@ -611,11 +611,11 @@ Use design tokens directly to set the value of settings variables in USWDS theme
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
             'ui', 'micro'
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             —
@@ -633,11 +633,11 @@ Use design tokens directly to set the value of settings variables in USWDS theme
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Token" class="tablet:text-no-wrap tablet:maxw-card-lg text-normal">
           <span>
             'body', 15
           </span>
-        </td>
+        </th>
         <td data-title="Function">
           <span>
             —

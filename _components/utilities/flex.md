@@ -191,7 +191,7 @@ utilities:
 ---
 
 <div class="utilities-properties">
-  <h3 class="utilities-property-title">CSS properties</h3>
+  <h2 class="utilities-property-title">CSS properties</h2>
   <div class="margin-top-1">
     <span class="property utilities-property">align-items</span>
     <span class="property utilities-property">align-self</span>
@@ -744,11 +744,11 @@ utilities:
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:maxw-card-lg">
+          <span class="text-normal">
             .flex-<a href="{{ site.baseurl }}/design-tokens/flex/" class="token">flex</a>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-flex(<a href="{{ site.baseurl }}/design-tokens/flex/" class="token">flex</a>)
@@ -761,11 +761,11 @@ utilities:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .flex-<code>direction</code>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-flex(<code>direction</code>)
@@ -778,11 +778,11 @@ utilities:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .flex-<code>wrap</code>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-flex(<code>wrap</code>)
@@ -795,11 +795,11 @@ utilities:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .flex-align-<code>value</code>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-flex('align-<code>value</code>')
@@ -812,11 +812,11 @@ utilities:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .flex-align-self-<code>value</code>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-flex('align-self-<code>value</code>')
@@ -829,11 +829,11 @@ utilities:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .flex-justify-<code>value</code>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-flex('justify-<code>value</code>')
@@ -846,11 +846,11 @@ utilities:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .order-<a href="{{ site.baseurl }}/design-tokens/order/" class="token">order</a>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-order(<a href="{{ site.baseurl }}/design-tokens/order/" class="token">order</a>)

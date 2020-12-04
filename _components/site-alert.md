@@ -43,7 +43,7 @@ When your agency has urgent information to share with the public, it’s essenti
         <li><strong>Don’t visually hide alert messages and then make them visible when they are needed.</strong> Users of older assistive technologies may still be able to perceive hidden alert messages. Fully remove alert messages when they’re not needed.</li>
       </ul>
       <h4 class="usa-heading">Implementation</h4>     
-      <h5 id="component-settings">Banner settings</h5>
+      <h5 id="component-settings">Site Alert settings</h5>
       {% assign settings = site.data.settings.components.site-alert %}
       {% include settings-table-simple.html
         settings=settings.contents

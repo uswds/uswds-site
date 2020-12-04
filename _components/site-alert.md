@@ -29,7 +29,7 @@ When your agency has urgent information to share with the public, it’s essenti
       </ul>
       <h4>When to consider something else</h4>
       <ul class="usa-content-list">
-        <li><strong>Responding to user actions.</strong> Use the <a href="https://designsystem.digital.gov/components/alert/">alert</a> component for page-level validation messages (like error messages on a form) or to inform a user that a task was completed successfully.</li>
+        <li><strong>Responding to user actions.</strong> Use the <a href="{{ site.baseurl }}/components/alert/">alert</a> component for page-level validation messages (like error messages on a form) or to inform a user that a task was completed successfully.</li>
         <li><strong>Validating form input.</strong> On most forms, especially longer forms, validation messages should appear inline with error messages at the top of the form.</li>
       </ul>
       <h4>Usability guidance</h4>
@@ -42,7 +42,7 @@ When your agency has urgent information to share with the public, it’s essenti
       <ul class="usa-content-list">
         <li><strong>Don’t visually hide alert messages and then make them visible when they are needed.</strong> Users of older assistive technologies may still be able to perceive hidden alert messages. Fully remove alert messages when they’re not needed.</li>
       </ul>
-      <h4 class="usa-heading">Implementation</h4>     
+      <h4 class="usa-heading">Implementation</h4>
       <h5 id="component-settings">Site Alert settings</h5>
       {% assign settings = site.data.settings.components.site-alert %}
       {% include settings-table-simple.html

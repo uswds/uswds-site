@@ -35,7 +35,7 @@ Items in a collection should be related. This could be by publication date (for 
       <h4>When to consider something else</h4>
       <ul class="usa-content-list">
         <li><strong>Providing an archive of articles or pages.</strong> Consider limiting the number of items in each collection to six or fewer. If you need to allow users to search or browse a larger content catalog, consider using a separate index or archive page.</li>
-        <li><strong>When you want to display large images or other media.</strong> Collections are meant to be compact. If you need something with large images or other media, consider using the <a href="https://designsystem.digital.gov/components/card/">card</a> component. The card has a bigger footprint and provides more flexibility with large images and other media.</li>
+        <li><strong>When you want to display large images or other media.</strong> Collections are meant to be compact. If you need something with large images or other media, consider using the <a href="{{ site.baseurl }}/components/card/">card</a> component. The card has a bigger footprint and provides more flexibility with large images and other media.</li>
       </ul>
       <h4>Usability guidance</h4>
       <ul class="usa-content-list">
@@ -46,7 +46,7 @@ Items in a collection should be related. This could be by publication date (for 
         <li><strong>Link to additional related content, if applicable.</strong> Collections may not include every piece of content related to its theme. If there's a location that collects more comprehensive results related to the theme, add a link to that location.</li>
         <li><strong>Provide a button or link to where more articles can be found.</strong> Users may need access to an index or archive where they can find more articles than those listed in the component.</li>
         <li><strong>Provide a strong "information scent" for each article.</strong> Use headings, teaser text, a thumbnail image, and meta information effectively to help users understand the value of each item and choose which ones to visit.</li>
-        <li><strong>Indicate to the user if they'll navigate to another website.</strong> A common way to do this is to add the <a href="https://designsystem.digital.gov/components/typography/#links">external link class</a> to the heading if the link takes you away from the current site.</li>
+        <li><strong>Indicate to the user if they'll navigate to another website.</strong> A common way to do this is to add the <a href="{{ site.baseurl }}/components/typography/#links">external link class</a> to the heading if the link takes you away from the current site.</li>
         <li><strong>Don’t force in-page scrolling.</strong> Display all collection items in a flexible container so it displays without forcing the user to scroll within a component container. You can help prevent this by limiting the number of items in the collection to six or fewer.</li>
       </ul>
       <h4>Accessibility</h4>

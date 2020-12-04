@@ -172,10 +172,10 @@ If you have multiple sign-in options, use this template to guide users to access
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
   <button class="usa-button-unstyled usa-accordion__button"
-      aria-expanded="true" aria-controls="third-party-docs">
+      aria-expanded="true" aria-controls="multiple-sign-in-docs">
     Guidance
   </button>
-<div id="third-party-docs" aria-hidden="false" class="usa-accordion__content site-component-usage" markdown="1">
+<div id="multiple-sign-in-docs" aria-hidden="false" class="usa-accordion__content site-component-usage" markdown="1">
 
 ### When to use the multiple sign-in options template
 

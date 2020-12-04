@@ -76,7 +76,7 @@
     "postcss-csso": "^4.0.0",
     "sass": "^1.26.10",
     "snyk": "^1.431.4",
-    "uswds": "github:uswds/uswds#accelerator/3676-news-feed-prototype",
+    "uswds": "github:uswds/uswds#develop",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },

@@ -125,7 +125,7 @@ Provide users with a clear and uncluttered sign-in experience.
 
 {:.usa-content-list}
 
-- **Your agency uses a third-party authentication system.** If you’re leveraging a shared service , follow the sign-in guidelines from that service. For example, login.gov recommends placing a “sign-in” link in the header of your website that takes users through the entire “sign in” or “create an account” experience on the login.gov site.
+- **Your agency uses a third-party authentication system.** If you’re leveraging a shared service, follow the sign-in guidelines from that service. For example, login.gov recommends placing a “sign-in” link in the header of your website that takes users through the entire “sign in” or “create an account” experience on the login.gov site.
 
 ### Usability guidance
 

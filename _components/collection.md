@@ -8,13 +8,16 @@ type: component
 title: Collection
 category: Components
 lead: A collection displays a compact list of multiple related items like articles or events. The list links each item to its original source.
+variants:
+  - variant: "`usa-collection--condensed`"
+    description: A more condensed item presentation with less space between items.
 ---
 
-The collection component offers users a way to view short descriptions of related content, providing a simple way to access the original source to learn more. It’s useful when you want to highlight information like articles, events, or documents that appear elsewhere on your website or from other sources. 
+The collection component offers users a way to view short descriptions of related content, providing a simple way to access the original source to learn more. It’s useful when you want to highlight information like articles, events, or documents that appear elsewhere on your website or from other sources.
 
-Each item in the collection includes a headline that links to another page and (optionally) a small image, descriptive text, and metadata such as date, time, byline, and tags. 
+Each item in the collection includes a headline that links to another page and (optionally) a small image, descriptive text, and metadata such as date, time, byline, and tags.
 
-Items in a collection should be related. This could be by publication date (for instance, all the content was posted in the last week), by content type (all articles, events, or blog posts), or by subject (all items relate to the same topic or theme). Be selective about what content you show in each collection. Consider limiting the number of items in each collection to six or fewer. 
+Items in a collection should be related. This could be by publication date (for instance, all the content was posted in the last week), by content type (all articles, events, or blog posts), or by subject (all items relate to the same topic or theme). Be selective about what content you show in each collection. Consider limiting the number of items in each collection to six or fewer.
 
 {% include code/preview.html component="collection" %}
 
@@ -53,23 +56,28 @@ Items in a collection should be related. This could be by publication date (for 
       <ul class="usa-content-list">
         <li><strong>Use unordered lists and list items.</strong> Use a <code>ul</code> for a collection and an <code>li</code> for each item. This allows screen readers to enumerate the items in the collection and allows shortcuts between list items.</li>
         <li><strong>Use the appropriate heading level for your page.</strong> Update heading levels based on the content of your page to make sure collection headings are in the correct logical outline order.</li>
-        <li><strong>Each link should have a unique name.</strong> Those using assistive technology may collect all page links together. Unique names not only help these users distinguish between links, but help all users scan the page. Favor using link text itself to provide a unique name. Using a `title` attribute or `aria-label` to provide a unique name helps users of assistive technology, but doesn't promote scannability in standard browsers.</li>
+        <li><strong>Each link should have a unique name.</strong> Those using assistive technology may collect all page links together. Unique names not only help these users distinguish between links, but help all users scan the page. Favor using link text itself to provide a unique name. Using a <code>title</code> attribute or <code>aria-label</code> to provide a unique name helps users of assistive technology, but doesn't promote scannability in standard browsers.</li>
       </ul>
-      
-      <h4 class="usa-heading">Implementation</h4>     
-      Here are examples of additional content you can add:
+      <h4 class="usa-heading">Implementation</h4>
+      <p>See the code samples on this page for examples of the content types available to a collection:</p>
       <ul class="usa-list">
+        <li>Heading</li>
+        <li>Description</li>
         <li>Thumbnail image</li>
-        <li>Teaser text (preview text)</li>
-        <li>Meta information
-          <ul class="usa-list">
-            <li>Date</li>
-            <li>Time</li>
-            <li>Byline</li>
-            <li>Tags</li>
-          </ul>
-        </li>
+        <li>Calendar date</li>
+        <li>Meta information</li>
       </ul>
+      <h5 id="component-settings">Collection settings</h5>
+      {% assign settings = site.data.settings.components.collection %}
+      {% include settings-table-simple.html
+        settings=settings.contents
+      %}
+      <h5 id="component-variants">Collection variants</h5>
+      {% include settings-table-flex.html
+        content=page.variants
+        cols="flex-1, flex-1"
+        section="variants"
+      %}
 
       <h4 class="usa-heading">Package information</h4>
       <ul class="usa-content-list">

@@ -60,16 +60,16 @@ gulp.task(
         .pipe(gulp.dest("assets/js"));
     },
     function (done) {
-      dutil.logMessage(task, "Compiling Loader");
+      dutil.logMessage(task, "Compiling USWDS Detect");
 
       var minifiedStream = browserify({
-        entries: "js/uswds-loader.js",
+        entries: "js/uswds-detect.js",
         debug: true,
       });
 
       return minifiedStream
         .bundle()
-        .pipe(source("uswds-loader.js"))
+        .pipe(source("uswds-detect.js"))
         .pipe(buffer())
         .pipe(sourcemaps.init({ loadMaps: true }))
         .pipe(uglify())

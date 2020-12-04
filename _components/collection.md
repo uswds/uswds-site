@@ -22,10 +22,10 @@ Items in a collection should be related. This could be by publication date (for 
   {% include code/accordion.html component="collection" %}
   <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
     <button class="usa-button-unstyled usa-accordion__button"
-        aria-expanded="true" aria-controls="alert-docs">
+        aria-expanded="true" aria-controls="collection-docs">
       Guidance
     </button>
-    <div id="alert-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
+    <div id="collection-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
       <h4>When to use the collection component</h4>
       <ul class="usa-content-list">
         <li><strong>To feature content with its metadata.</strong> The collection component is a good option when displaying content that should be accompanied by limited metadata like tags, date/time, or source and attribution.</li>

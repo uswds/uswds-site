@@ -12,7 +12,7 @@ contents:
     type: color
   - name: Counter border width
     description: Size of the border around the pending steps
-    var: $theme-step-indicator-counter-border-width
+    var: $theme-process-list-counter-border-width
     default: 0.5
     type: size
   - name: Font family

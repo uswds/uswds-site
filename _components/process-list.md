@@ -7,10 +7,10 @@ category: Components
 lead: A process list displays the steps or stages of important instructions or processes.
 ---
 
-{% include code/preview.html component="step-indicator" %}
+{% include code/preview.html component="process-list" %}
 
 <section class="site-component-section">
-  {% include code/accordion.html component="step-indicator" %}
+  {% include code/accordion.html component="process-list" %}
   <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
     <button class="usa-button-unstyled usa-accordion__button"
         aria-expanded="true" aria-controls="sidenav-docs">
@@ -27,16 +27,16 @@ lead: A process list displays the steps or stages of important instructions or p
           <strong>Multi-page forms or wizards.</strong> Use the <a href="{{ site.baseurl }}/components/step-indicator">step indicator</a> component to help users work through a form or process that spans several different pages.
         </li>
         <li>
-          <strong>When showing current status or progress.</strong> Use the step indicator component to show the user the current step in a multi-step process.
+          <strong>When showing current status or progress.</strong> Use the <a href="{{ site.baseurl }}/components/step-indicator">step indicator</a> component to show the user the current step in a multi-step process.
         </li>
         <li>
-          <strong>In-page navigation.</strong> Use the side navigation component to display the “sub-navigation” within a section or page of the website.
+          <strong>In-page navigation.</strong> Use the <a href="{{ site.baseurl }}/components/sidenav">side navigation</a> component to display the “sub-navigation” within a section or page of the website.
         </li>
         <li>
-          <strong>The steps are non-sequential.</strong> Use unordered lists, graphic lists (coming soon), or icon lists (coming soon) to display text that doesn’t have a clear, logical order to it.
+          <strong>The steps are non-sequential.</strong> Use <a href="{{ site.baseurl }}/typography/03-lists">unordered lists</a>, graphic lists (coming soon), or icon lists (coming soon) to display text that doesn’t have a clear, logical order to it.
         </li>
         <li>
-          <strong>The listed content is meant to improve readability of a complex sentence.</strong> Use the ordered and unordered list components to break up sentences and paragraphs with lists. These lists are part of the general content of the page and don’t need the typographical hierarchy or visual impact of the process list.
+          <strong>The listed content is meant to improve readability of a complex sentence.</strong> Use the <a href="{{ site.baseurl }}/typography/03-lists">ordered and unordered list</a> components to break up sentences and paragraphs with lists. These lists are part of the general content of the page and don’t need the typographical hierarchy or visual impact of the process list.
         </li>
       </ul>
       <h3>Usability guidance</h3>

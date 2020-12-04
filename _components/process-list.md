@@ -13,10 +13,10 @@ lead: A process list displays the steps or stages of important instructions or p
   {% include code/accordion.html component="process-list" %}
   <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
     <button class="usa-button-unstyled usa-accordion__button"
-        aria-expanded="true" aria-controls="sidenav-docs">
+        aria-expanded="true" aria-controls="process-list-docs">
       Guidance
     </button>
-    <div id="sidenav-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
+    <div id="process-list-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
       <h3>When to use the process list component</h3>
       <ul class="usa-content-list">
         <li><strong>Displaying high-level sequential steps.</strong> Use process lists to create a clear hierarchy and help users easily differentiate between individual steps or stages in a process.</li>

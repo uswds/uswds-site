@@ -35,7 +35,7 @@ lead: A summary box highlights key information from a longer page or displays ne
           <strong>Your page is short.</strong> The summary box gives users quick access to the most important information on a long page. If your page isn’t that long, a recap may feel redundant.
         </li>
         <li>
-          <strong>Your list needs more detail.</strong> Summary boxes should be short. Use a <a href="{{ site.baseurl }}/components/process-list">process list</a>, graphic list, or icon list in the body of the article when:
+          <strong>Your list needs more detail.</strong> Summary boxes should be short. Use a process list, graphic list, or icon list in the body of the article when:
             <ul>
               <li>There are more than five bullet points;</li>
               <li>Bullet points are longer than 20 words; or</li>

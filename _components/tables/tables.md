@@ -9,15 +9,15 @@ title: Table
 category: Components
 lead: A table shows information in columns and rows.
 subnav:
-- text: Borderless Table
+- text: Borderless table
   href: '#borderless-table'
-- text: Scrollable Table
+- text: Scrollable table
   href: '#scrollable-table'
-- text: Responsive stacked Table
+- text: Responsive stacked table
   href: '#responsive-stacked-table'
 
 ---
-Tables help logically organize information and group like things together, and they [make it easier to understand complex content](https://www.plainlanguage.gov/guidelines/design/use-tables-to-make-complex-material-easier-to-understand/). They’re especially useful for showing long lists of sequential or structured content. Users read tables one row or column at a time making it easier to digest or compare information. 
+Tables help logically organize information and group like things together, and they [make it easier to understand complex content](https://www.plainlanguage.gov/guidelines/design/use-tables-to-make-complex-material-easier-to-understand/). They’re especially useful for showing long lists of sequential or structured content. Users read tables one row or column at a time making it easier to digest or compare information.
 
 Tables also help users find specific information within a large data set. For example, if someone is looking for how much their tax is based on their income for a particular year, it’s much easier to find the intersection of that year and income range, rather than scan or read an entire paragraph of text.
 
@@ -159,7 +159,7 @@ Tables also help users find specific information within a large data set. For ex
             <td data-title="Variant" class="flex-6">usa-table--striped</td>
             <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">
-                Applies alternating horizontal striping to help the eye track across table rows. Pairs well with the scrollable variant for tables with many columns. 
+                Applies alternating horizontal striping to help the eye track across table rows. Pairs well with the scrollable variant for tables with many columns.
               </span>
             </td>
           </tr>

@@ -1,5 +1,5 @@
 ---
-title: Responsive Stacked table
+title: Responsive stacked table
 parent: Table
 order: 03
 lead: A responsive stacked table collapses at narrow widths for better readability on small screens.

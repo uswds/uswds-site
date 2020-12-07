@@ -3,28 +3,38 @@ contents:
   - name: Counter background color
     description: Background color of the counter circle
     var: $theme-process-list-counter-background-color
-    default: '"primary"'
+    default: '"white"'
     type: color
   - name: Counter border color
     description: Color of the border around the counter circle
     var: $theme-process-list-counter-border-color
-    default: '"white"'
+    default: '"ink"'
     type: color
   - name: Counter border width
-    description: Size of the border around the pending steps
+    description: Size of the border around the counter circle
     var: $theme-process-list-counter-border-width
     default: 0.5
     type: size
-  - name: Font family
+  - name: Counter font family
     description: Font family of the counter text
     var: $theme-process-list-counter-font-family
     default: '"ui"'
     type: family
   - name: Counter font size
-    description: Font size of the counter number text
+    description: Font size of the counter text
     var: $theme-process-list-counter-font-size
     default: '"lg"'
     type: size
+  - name: Counter gap color
+    description: Color of gap between counter and connector. This should the the same as the background color behind the component.
+    var: $theme-process-list-counter-gap-color
+    default: '"white"'
+    type: units
+  - name: Counter gap width
+    description: Size of gap between counter and connector
+    var: $theme-process-list-counter-gap-width
+    default: "0.5"
+    type: units
   - name: Counter circle size
     description: Size of the counter circle
     var: $theme-process-list-counter-size
@@ -33,12 +43,12 @@ contents:
   - name: Counter text color
     description: Color of the number text inside the counter circle
     var: $theme-process-list-counter-text-color
-    default: '"white"'
+    default: '"ink"'
     type: color
   - name: Connector color
     description: Color of the connector line between counter circles
     var: $theme-process-list-connector-color
-    default: '"base-lighter"'
+    default: '"primary-lighter"'
     type: color
   - name: Connector width
     description: Width of the connector line between counter circles
@@ -68,5 +78,5 @@ contents:
   - name: Heading font size
     description: Font size of the heading text
     var: $theme-process-list-heading-font-size
-    default: '"md"'
+    default: '"lg"'
     type: size

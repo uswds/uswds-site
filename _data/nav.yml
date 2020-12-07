@@ -19,6 +19,7 @@ mobile:
   - href: /utilities/
     collapsible: true
   - href: /page-templates/
+    collapsible: true
   - href: /about/
     collapsible: true
 
@@ -107,6 +108,9 @@ Utilities:
 
 Page templates:
   - href: /page-templates/
+  - href: /page-templates/documentation-page/
+  - href: /page-templates/landing-page/
+  - href: /page-templates/authentication-pages/
 
 About:
   - href: /about/

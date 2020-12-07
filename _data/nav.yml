@@ -19,6 +19,7 @@ mobile:
   - href: /utilities/
     collapsible: true
   - href: /page-templates/
+    collapsible: true
   - href: /about/
     collapsible: true
 
@@ -44,6 +45,7 @@ Components:
   - href: /components/process-list/
   - href: /components/search/
   - href: /components/sidenav/
+  - href: /components/site-alert/
   - href: /components/step-indicator/
   - href: /components/table/
   - href: /components/tag/
@@ -108,6 +110,9 @@ Utilities:
 
 Page templates:
   - href: /page-templates/
+  - href: /page-templates/documentation-page/
+  - href: /page-templates/landing-page/
+  - href: /page-templates/authentication-pages/
 
 About:
   - href: /about/

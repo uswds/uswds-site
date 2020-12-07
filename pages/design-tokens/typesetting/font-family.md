@@ -38,15 +38,15 @@ The following fonts have normalization metadata in USWDS, and are available to s
       {% for item in tokens.family.font %}
         {% include tokens/is_number.html %}
         <tr>
-          <td scope="row" data-title="Token">
-            <span>
+          <th scope="row" data-title="Token">
+            <span class="text-normal">
               {% if is_number %}
                 <code class="text-no-wrap">{{ item.token }}</code>
               {% else %}
                 <code class="text-no-wrap">'{{ item.token }}'</code>
               {% endif %}
             </span>
-          </td>
+          </th>
           <td data-title="Stack">
             {% assign stack =
               tokens.stack
@@ -77,15 +77,15 @@ Type based tokens set the font family value based on the _type_ of the requested
       {% for item in tokens.family.type %}
         {% include tokens/is_number.html %}
         <tr>
-          <td scope="row" data-title="Token">
-            <span>
+          <th scope="row" data-title="Token">
+            <span class="text-normal">
               {% if is_number %}
                 <code class="text-no-wrap">{{ item.token }}</code>
               {% else %}
                 <code class="text-no-wrap">'{{ item.token }}'</code>
               {% endif %}
             </span>
-          </td>
+          </th>
           <td data-title="Default">
             {% if item.default %}
               <span>
@@ -124,15 +124,15 @@ Role-based tokens set the font family value based on the _role_ the face plays i
       {% for item in tokens.family.role %}
         {% include tokens/is_number.html %}
         <tr>
-          <td scope="row" data-title="Token">
-            <span>
+          <th scope="row" data-title="Token">
+            <span class="text-normal">
               {% if is_number %}
                 <code class="text-no-wrap">{{ item.token }}</code>
               {% else %}
                 <code class="text-no-wrap">'{{ item.token }}'</code>
               {% endif %}
             </span>
-          </td>
+          </th>
           <td data-title="Default">
             {% if item.default %}
               <span>

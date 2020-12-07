@@ -370,7 +370,7 @@ ignore:
         expires: '2020-04-15T18:16:00.122Z'
       gulp-sass > node-sass:
         reason: No patch available
-        expires: '2020-12-05T20:04:38.630Z'
+        expires: '2021-01-06T19:39:05.430Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-12-05T20:04:38.630Z'
@@ -386,13 +386,16 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2020-12-05T20:04:38.630Z'
   SNYK-JS-NODESASS-541002:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.122Z'
       gulp-sass > node-sass:
         reason: No patch available
-        expires: '2020-12-05T20:04:38.630Z'
+        expires: '2021-01-06T19:39:05.430Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-12-05T20:04:38.630Z'
@@ -408,6 +411,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2020-12-05T20:04:38.630Z'
   'npm:braces:20180219':
     - uswds > nswatch > chokidar > anymatch > micromatch > braces:
         reason: No patch available
@@ -431,7 +437,7 @@ ignore:
   SNYK-JS-GULPSCSSLINT-560114:
     - gulp-scss-lint:
         reason: No patch available
-        expires: '2020-12-05T20:04:38.629Z'
+        expires: '2021-01-06T19:39:05.429Z'
   SNYK-JS-HTTPPROXY-569139:
     - uswds > @frctl/fractal > browser-sync > http-proxy:
         reason: n/a
@@ -483,16 +489,13 @@ ignore:
     - uswds > @frctl/fractal > marked:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
-      uswds > @frctl/core > marked:
+    - uswds > @frctl/core > marked:
         reason: None given
         expires: '2020-12-05T20:04:38.630Z'
   SNYK-JS-LODASH-590103:
     - gulp-eslint > eslint > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
-      uswds > @frctl/fractal > vorpal > inquirer > lodash:
-        reason: No patch available
-        expires: '2020-12-05T20:04:38.629Z'
     - gulp-eslint > eslint > inquirer > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
@@ -571,6 +574,9 @@ ignore:
     - snyk > snyk-go-plugin > @snyk/dep-graph > graphlib > lodash:
         reason: Fix does not work
         expires: '2020-10-14T16:33:16.683Z'
+    - uswds > @frctl/fractal > vorpal > inquirer > lodash:
+        reason: No patch available
+        expires: '2020-12-05T20:04:38.629Z'
   SNYK-JS-LODASH-608086:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No patch available
@@ -583,6 +589,13 @@ ignore:
     - uswds > @stylelint/postcss-markdown > remark > remark-parse > trim:
         reason: None given
         expires: '2020-12-05T20:04:38.630Z'
+  SNYK-JS-Y18N-1021887:
+    - gulp > gulp-cli > yargs > y18n:
+        reason: no fix available
+        expires: '2020-12-30T17:19:29.232Z'
+    - gulp-sass > node-sass > sass-graph > yargs > y18n:
+        reason: no fix available
+        expires: '2020-12-30T17:19:29.232Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

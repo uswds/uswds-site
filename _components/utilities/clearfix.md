@@ -65,11 +65,11 @@ utilities:
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .clearfix
           </span>
-        </td>
+        </th>
         <td data-title="Output">
           <span>
             ::after { clear: both; content: ""; display: block; }
@@ -93,11 +93,11 @@ utilities:
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .cleafix
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             clearfix

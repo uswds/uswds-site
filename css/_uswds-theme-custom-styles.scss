@@ -2244,11 +2244,11 @@ li {
 }
 
 p + .usa-accordion,
-h2 + div:not(.usa-accordion__content),
-h3 + div:not(.usa-accordion__content),
-h4 + div:not(.usa-accordion__content),
-h5 + div:not(.usa-accordion__content),
-h6 + div:not(.usa-accordion__content) {
+h2 + div:not(.usa-accordion__content):not(.usa-collection__meta-list),
+h3 + div:not(.usa-accordion__content):not(.usa-collection__meta-list),
+h4 + div:not(.usa-accordion__content):not(.usa-collection__meta-list),
+h5 + div:not(.usa-accordion__content):not(.usa-collection__meta-list),
+h6 + div:not(.usa-accordion__content):not(.usa-collection__meta-list) {
   margin-top: units(2);
 }
 

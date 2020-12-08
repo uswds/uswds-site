@@ -28,10 +28,10 @@ contents:
   - name: Link color
     description: 'Color of the links inside the content text. When set to "default", links will get one of three values, based on contrast: $theme-link-color, $theme-link-reverse-color, or "ink"'
     var: $theme-summary-box-link-color
-    default: '"default"'
+    default: "default"
     type: color
   - name: Text color
     description: 'Color of the links inside the content text. When set to "default", text will get one of two values, based on contrast: "white" or "ink"'
     var: $theme-summary-box-link-color
-    default: '"default"'
+    default: "default"
     type: color

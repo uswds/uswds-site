@@ -12,7 +12,7 @@ contents:
     default: '"accent-cool-lighter"'
     type: color
     description: "Tile background color when selected"
-  - name: Tile border radus
+  - name: Tile border radius
     usage:
     var: $theme-input-tile-border-radius
     default: '"md"'

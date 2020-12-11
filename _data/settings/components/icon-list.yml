@@ -1,82 +1,12 @@
 name: Icon list
 contents:
-  - name: Counter background color
-    description: Background color of the counter circle
-    var: $theme-icon-list-counter-background-color
-    default: '"white"'
-    type: color
-  - name: Counter border color
-    description: Color of the border around the counter circle
-    var: $theme-icon-list-counter-border-color
-    default: '"ink"'
-    type: color
-  - name: Counter border width
-    description: Size of the border around the counter circle
-    var: $theme-icon-list-counter-border-width
-    default: 0.5
-    type: size
-  - name: Counter font family
-    description: Font family of the counter text
-    var: $theme-icon-list-counter-font-family
-    default: '"ui"'
-    type: family
-  - name: Counter font size
-    description: Font size of the counter text
-    var: $theme-icon-list-counter-font-size
-    default: '"lg"'
-    type: size
-  - name: Counter gap color
-    description: Color of gap between counter and connector. This should the the same as the background color behind the component.
-    var: $theme-icon-list-counter-gap-color
-    default: '"white"'
-    type: units
-  - name: Counter gap width
-    description: Size of gap between counter and connector
-    var: $theme-icon-list-counter-gap-width
-    default: "0.5"
-    type: units
-  - name: Counter circle size
-    description: Size of the counter circle
-    var: $theme-icon-list-counter-size
-    default: 5
-    type: size
-  - name: Counter text color
-    description: Color of the number text inside the counter circle
-    var: $theme-icon-list-counter-text-color
-    default: '"ink"'
-    type: color
-  - name: Connector color
-    description: Color of the connector line between counter circles
-    var: $theme-icon-list-connector-color
-    default: '"primary-lighter"'
-    type: color
-  - name: Connector width
-    description: Width of the connector line between counter circles
-    var: $theme-icon-list-connector-width
-    default: 1
-    type: size
-  - name: Font family of content
+  - name: Icon list font family
     description: Font family of the content text
     var: $theme-icon-list-font-family
     default: '"ui"'
     type: family
-  - name: Content font size
-    description: Font size of the content text
+  - name: Icon list font size
+    description: Font size of content of the content text
     var: $theme-icon-list-font-size
     default: '"sm"'
-    type: size
-  - name: Heading text color
-    description: Color of the heading text
-    var: $theme-icon-list-heading-color
-    default: '"ink"'
-    type: color
-  - name: Font family of heading
-    description: Font family of the heading text
-    var: $theme-icon-list-heading-font-family
-    default: '"ui"'
-    type: family
-  - name: Heading font size
-    description: Font size of the heading text
-    var: $theme-icon-list-heading-font-size
-    default: '"lg"'
     type: size

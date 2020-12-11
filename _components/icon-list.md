@@ -28,7 +28,7 @@ lead: An icon list displays a static unordered list of significant importance.
           <strong>Required actions or verification lists.</strong> Use an icon list to display required actions or items that users can reference to verify they've completed necessary tasks.
         </li>
         <li>
-          <strong>Formatting for print.</strong> Users may wish to print a page and use it as a manual checklist. The icon list provides additional customization usually only available in flat document file types (ie. pdf, jpg, .gif).  Use this component to ensure the page can be printed from the browser and maintain the desired format and design.
+          <strong>Formatting for print.</strong> Users may wish to print a page and use it as a manual checklist. The icon list provides additional customization usually only available in flat document file types (e.g., pdf, jpg, .gif).  Use this component to ensure the page can be printed from the browser and maintain the desired format and design.
         </li>
       </ul>
       <h4>When to consider something else</h4>
@@ -55,7 +55,7 @@ lead: An icon list displays a static unordered list of significant importance.
           <strong>Add rich content sparingly.</strong> Each list item can display rich text content like HTML, images, and even other components. Be succinct. Too much complexity distracts from the impact of an icon list.
         </li>
         <li>
-          <strong>Use similar icons.</strong> Use the same icon for each list item unless variation is meaningful (ie. ✔︎ vs. ✗’s).  Icons should come from the same icon library and have a similar look and feel.
+          <strong>Use similar icons.</strong> Use the same icon for each list item unless variation is meaningful (e.g., ✔︎ vs. ✗’s).  Icons should come from the same icon library and have a similar look and feel.
         </li>
       </ul>
       <h4 class="usa-heading">Accessibility</h4>

@@ -69,11 +69,34 @@ lead: An icon list displays a static unordered list of significant importance.
         </li>
       </ul>
       <h3 class="usa-heading">Implementation</h3>
-      <h4 id="component-settings">icon list settings</h4>
+      <h4 id="component-settings">Icon list settings</h4>
       {% assign settings = site.data.settings.components.icon-list %}
       {% include settings-table-simple.html
         settings=settings.contents
       %}
+      <h4 id="component-variants">Icon list variants</h5>
+      <table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants">
+        <thead>
+          <tr>
+            <th scope="col" class="flex-6">Variant</th>
+            <th scope="col" class="flex-6">Description</th>
+          </tr>
+        </thead>
+        <tbody class="font-mono-2xs">
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-icon-list--[color]</td>
+            <td data-title="Description" class="flex-6">
+              <span class="font-lang-3xs">Change the color of an icon by updating [color] to any one of the project colors listed on the <a href="{{ site.baseurl }}/utilities/color">color utilities</a> page</span>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="Variant" class="flex-6">usa-icon-list--size-[size]</td>
+            <td data-title="Description" class="flex-6">
+              <span class="font-lang-3xs">Change the size of an icon by updating [size] to 3, 4, 5, 6, 7, 8, or 9 as detailed on the icons component page (coming soon)</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
       <h4 class="usa-heading">Package information</h4>
       <ul class="usa-content-list">
         <li>

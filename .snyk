@@ -30,9 +30,6 @@ ignore:
     - uswds > gulp-stylelint > mkdirp > minimist:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      uswds > gulp-svg-sprite > svg-sprite > mocha > mkdirp > minimist:
-        reason: None given
-        expires: '2021-01-11T18:00:56.003Z'
     - uswds > @frctl/fractal > update-notifier > configstore > mkdirp > minimist:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
@@ -57,13 +54,13 @@ ignore:
     - uswds > gulp > glob-watcher > chokidar > fsevents > node-pre-gyp > rc > minimist:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+    - uswds > gulp-svg-sprite > svg-sprite > mocha > mkdirp > minimist:
+        reason: None given
+        expires: '2021-01-11T18:00:56.003Z'
   SNYK-JS-YARGSPARSER-560381:
     - uswds > mocha > yargs > yargs-parser:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      uswds > gulp-svg-sprite > svg-sprite > yargs > yargs-parser:
-        reason: None given
-        expires: '2021-01-11T18:00:56.004Z'
     - uswds > nyc > yargs > yargs-parser:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
@@ -100,6 +97,9 @@ ignore:
     - uswds > @frctl/fractal > browser-sync > localtunnel > yargs > yargs-parser:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
+    - uswds > gulp-svg-sprite > svg-sprite > yargs > yargs-parser:
+        reason: None given
+        expires: '2021-01-11T18:00:56.004Z'
   SNYK-JS-JSYAML-174129:
     - uswds > @frctl/fractal > sinon > build > jxLoader > js-yaml:
         reason: fractal
@@ -495,19 +495,16 @@ ignore:
     - uswds > @frctl/fractal > marked:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
-      uswds > @frctl/core > marked:
-        reason: None given
-        expires: '2021-01-11T18:00:56.003Z'
     - uswds > @frctl/core > marked:
         reason: None given
         expires: '2020-12-05T20:04:38.630Z'
+    - uswds > @frctl/core > marked:
+        reason: None given
+        expires: '2021-01-11T18:00:56.003Z'
   SNYK-JS-LODASH-590103:
     - gulp-eslint > eslint > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
-      uswds > @frctl/fractal > vorpal > inquirer > lodash:
-        reason: No patch available
-        expires: '2021-01-11T18:00:56.003Z'
     - gulp-eslint > eslint > inquirer > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
@@ -589,6 +586,9 @@ ignore:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No patch available
         expires: '2020-12-05T20:04:38.629Z'
+    - uswds > @frctl/fractal > vorpal > inquirer > lodash:
+        reason: No patch available
+        expires: '2021-01-11T18:00:56.003Z'
   SNYK-JS-LODASH-608086:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No patch available
@@ -605,12 +605,12 @@ ignore:
     - gulp > gulp-cli > yargs > y18n:
         reason: no fix available
         expires: '2020-12-30T17:19:29.232Z'
-      uswds > gulp > gulp-cli > yargs > y18n:
-        reason: None given
-        expires: '2021-01-11T18:00:56.004Z'
     - gulp-sass > node-sass > sass-graph > yargs > y18n:
         reason: no fix available
         expires: '2020-12-30T17:19:29.232Z'
+    - uswds > gulp > gulp-cli > yargs > y18n:
+        reason: None given
+        expires: '2021-01-11T18:00:56.004Z'
   SNYK-JS-AXIOS-1038255:
     - uswds > @frctl/fractal > @frctl/mandelbrot > @frctl/web > browser-sync > localtunnel > axios:
         reason: None given
@@ -626,6 +626,10 @@ ignore:
     - uswds > gulp-svg-sprite > svg-sprite > mocha:
         reason: None given
         expires: '2021-01-11T18:00:56.003Z'
+  SNYK-JS-NODENOTIFIER-1035794:
+    - node-notifier:
+        reason: None given
+        expires: '2021-01-12T23:05:22.678Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

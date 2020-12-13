@@ -4,7 +4,7 @@ layout: styleguide
 type: component
 title: Icons
 category: Components
-lead: Icons help communicate meaning, actions, status, or feedback. 
+lead: Icons help communicate meaning, actions, status, or feedback.
 subnav:
 - text: All icons
   href: '#all-icons'
@@ -38,9 +38,9 @@ Using a consistent set of icons helps establish a familiar look and feel across 
 
 {:.usa-content-list}
 
-- **Meaning is ambiguous.** Use icons in a common or conventional way only. If the meaning of an icon is ambiguous by itself, it needs accompanying text. 
+- **Meaning is ambiguous.** Use icons in a common or conventional way only. If the meaning of an icon is ambiguous by itself, it needs accompanying text.
 - **Compensating for page structure.** Icons don’t fix unclear page hierarchy or confusing content organization. Don’t rely on an icon to help draw attention to something important that’s hard to find. Fix the content’s placement first.
-- **You need illustrative artwork.** Icons have a specific, functional meaning. Avoid using icons outside their intended usage for illustrative purposes (like using the "visibility" eye icon to illustrate an actual eye). If you want to use a graphic to enhance your content or explain a more in-depth concept, consider using an illustration instead of an icon. 
+- **You need illustrative artwork.** Icons have a specific, functional meaning. Avoid using icons outside their intended usage for illustrative purposes (like using the "visibility" eye icon to illustrate an actual eye). If you want to use a graphic to enhance your content or explain a more in-depth concept, consider using an illustration instead of an icon.
 
 ### Usability guidance
 
@@ -160,10 +160,7 @@ Using a consistent set of icons helps establish a familiar look and feel across 
 {:.usa-content-list}
 
 - **Package usage:** `@import usa-icon`
-- **Requires:** `required`, `global` 
-
-</div>
-</div>
+- **Requires:** `required`, `global`
 
 ## All icons
 

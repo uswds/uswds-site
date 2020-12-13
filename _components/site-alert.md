@@ -5,12 +5,12 @@ redirect_from:
 - /components/site-alerts/
 layout: styleguide
 type: component
-title: Site Alert
+title: Site alert
 category: Components
 lead: A site alert communicates urgent sitewide information.
 ---
 
-When your agency has urgent information to share with the public, it’s essential that it stands out from other content on the site. A site alert prominently displays critical, time-sensitive warnings or directions across every page so that users see it whenever they visit the site. Using the same site alert treatment across agencies helps create a consistent and predictable way for users to find urgent information across all government websites. 
+When your agency has urgent information to share with the public, it’s essential that it stands out from other content on the site. A site alert prominently displays critical, time-sensitive warnings or directions across every page so that users see it whenever they visit the site. Using the same site alert treatment across agencies helps create a consistent and predictable way for users to find urgent information across all government websites.
 
 {% include code/preview.html component="site-alert" %}
 

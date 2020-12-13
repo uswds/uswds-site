@@ -8,5 +8,5 @@ contents:
   - name: Header typeset
     description: Family, size, and line height of the heading
     var: $theme-collection-header-typeset
-    default: "'ui', 'md', 3"
+    default: '"ui", "md", 3'
     type: family

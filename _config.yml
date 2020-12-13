@@ -73,6 +73,7 @@ defaults:
 plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
+  - jekyll-include-cache
 
 exclude:
   - ".ruby-version"

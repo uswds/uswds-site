@@ -75,14 +75,14 @@
     "node-notifier": "^7.0.1",
     "postcss-csso": "^4.0.0",
     "sass": "^1.26.10",
-    "snyk": "^1.431.4",
+    "snyk": "^1.436.0",
     "uswds": "github:uswds/uswds#develop",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.5",
-    "@babel/preset-env": "^7.10.4",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
     "axe-core": "^3.5.5",
     "chalk": "^4.1.0",
     "cheerio": "^1.0.0-rc.3",

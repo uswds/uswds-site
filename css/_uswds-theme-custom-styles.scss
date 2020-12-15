@@ -2811,6 +2811,10 @@ $theme-table-column-gap: 4;
       margin-left: 0;
       padding-left: units(2);
     }
+
+    .highlighter-rouge {
+      @include u-measure(5);
+    }
   }
 }
 

@@ -87,7 +87,7 @@ subnav:
 
 
 <h3>Example line chart</h3>
-<div class="border bg-white padding-2 margin-bottom-2 margin-top-1 radius-md padding-bottom-0">
+<div class="border bg-white padding-2 margin-bottom-2 margin-top-1 radius-md padding-bottom-0 maxw-tablet">
 
 <h4 class="margin-0">Search interest in Franklin D. and Theodore Roosevelt for the first week of March, 2020</h4>
 <p class="margin-top-1 font-sans-2xs text-base margin-bottom--3">Search interest in Franklin D. Roosevelt has been consistently higher than Theodore Roosevelt. Numbers represent search interest relative to the highest point on the chart for the given region and time. A value of 100 is the peak popularity for the term. A value of 50 means that the term is half as popular. A score of 0 means there was not enough data for this term.</p>
@@ -304,7 +304,7 @@ subnav:
   </ul>
 
   <h3>Example bar chart</h3>
-  <div class="border bg-white padding-2 margin-bottom-2 radius-md padding-bottom-0">
+  <div class="border bg-white padding-2 margin-bottom-2 radius-md padding-bottom-0 maxw-tablet">
     <h4 class="margin-0">The five most-visited national parks of 2019</h4>
     <p class="margin-top-0 font-sans-2xs text-base margin-bottom-0 radius-1">Of the 62 parks with the designation "national park" as part of their official title, these were the top five. The Great Smoky Mountains National Park was the most-visited park by more than a factor of two.</p>
     <?xml version="1.0" encoding="utf-8"?>

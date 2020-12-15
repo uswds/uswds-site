@@ -2877,7 +2877,7 @@ $theme-table-column-gap: 4;
 
 .site-accordion-code {
   .usa-accordion__button {
-    @include add-background-svg("minus-thin-white");
+    @include add-background-svg("icons/remove-white");
     background-color: color("primary-vivid");
     color: color("white");
 
@@ -2886,7 +2886,7 @@ $theme-table-column-gap: 4;
     }
 
     &[aria-expanded="false"] {
-      @include add-background-svg("plus-thin-white");
+      @include add-background-svg("icons/add-white");
     }
   }
 }
@@ -2894,10 +2894,10 @@ $theme-table-column-gap: 4;
 .site-accordion-docs,
 .site-accordion {
   .usa-accordion__button {
-    @include add-background-svg("minus-thin-ink");
+    @include add-background-svg("usa-icons/remove");
 
     &[aria-expanded="false"] {
-      @include add-background-svg("plus-thin-ink");
+      @include add-background-svg("usa-icons/add");
     }
   }
 }
@@ -3012,10 +3012,10 @@ $theme-table-column-gap: 4;
 
   .usa-nav__link {
     &[aria-expanded="true"] {
-      @include add-background-svg("minus-thin-ink");
+      @include add-background-svg("usa-icons/remove");
     }
     &[aria-expanded="false"] {
-      @include add-background-svg("plus-thin-ink");
+      @include add-background-svg("usa-icons/add");
     }
   }
 

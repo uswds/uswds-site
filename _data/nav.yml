@@ -19,6 +19,7 @@ mobile:
   - href: /utilities/
     collapsible: true
   - href: /page-templates/
+    collapsible: true
   - href: /about/
     collapsible: true
 
@@ -31,6 +32,7 @@ Components:
   - href: /components/button/
   - href: /components/button-groups/
   - href: /components/card/
+  - href: /components/collection/
   - href: /components/data-visualizations/
   - href: /components/footer/
   - href: /components/form-controls/
@@ -40,9 +42,12 @@ Components:
   - href: /components/header/
   - href: /components/icons/
   - href: /components/identifier/
+  - href: /components/process-list/
   - href: /components/search/
   - href: /components/sidenav/
+  - href: /components/site-alert/
   - href: /components/step-indicator/
+  - href: /components/summary-box/
   - href: /components/table/
   - href: /components/tag/
   - href: /components/tooltip/
@@ -106,6 +111,9 @@ Utilities:
 
 Page templates:
   - href: /page-templates/
+  - href: /page-templates/documentation-page/
+  - href: /page-templates/landing-page/
+  - href: /page-templates/authentication-pages/
 
 About:
   - href: /about/

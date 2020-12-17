@@ -132,7 +132,7 @@ Tables also help users find specific information within a large data set. For ex
             </td>
           </tr>
           <tr>
-            <td data-title="Variant" class="flex-6">usa-scrollable-container > usa-table</td>
+            <td data-title="Variant" class="flex-6">.usa-table-container--scrollable > .usa-table</td>
             <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">
                 Add the <code>usa-table-container--scrollable</code> class to a container around any <code>usa-table</code> to apply a horizontal scrollbar if the columns exceed the available width. Ideal for dense tables with many columns.

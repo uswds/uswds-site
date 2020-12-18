@@ -764,6 +764,18 @@ body {
   padding: 0;
 }
 
+// Preview component headers
+@include override-prose {
+  .preview__title {
+    @include u-font("sans", "3xs");
+    @include u-text("normal", "uppercase", "ls-1");
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+}
+
 // Custom preview box styles
 
 .preview-lists {

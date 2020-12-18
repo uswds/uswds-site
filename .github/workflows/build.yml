@@ -14,7 +14,7 @@ jobs:
       - name: Ruby 
         uses: actions/setup-ruby@v1
         with:
-          ruby-version: '2.4'
+          ruby-version: '2.7'
 
       - name: Install and Build 🔧
         run: |

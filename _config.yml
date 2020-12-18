@@ -94,3 +94,6 @@ exclude:
   - css
 
 env: dev
+
+# JCC: Remove this
+baseurl: "/uswds-accelerator-blueprint"

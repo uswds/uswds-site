@@ -36,10 +36,33 @@ gulp.task('copy-uswds-javascript', function (done) {
 
 });
 
+gulp.task('blueprint-js', function (done) {
+
+  dutil.logMessage(task, 'Compiling blueprint JS');
+
+  var minifiedStream = browserify({
+    entries: 'js/blueprint.js',
+    debug: true,
+  });
+
+  return minifiedStream.bundle()
+    .pipe(source('blueprint.js'))
+    .pipe(buffer())
+    .pipe(sourcemaps.init({ loadMaps: true }))
+      .pipe(uglify())
+      .on('error', log)
+      .pipe(rename({
+        basename: 'blueprint',
+      }))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('assets/js'));
+});
+
 gulp.task(task,
   gulp.series(
     gulp.parallel(
       'copy-uswds-javascript',
+      'blueprint-js',
       'eslint'
     ),
     function(done) {

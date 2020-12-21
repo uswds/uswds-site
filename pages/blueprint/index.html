@@ -3,5 +3,33 @@ layout: blueprint
 permalink: /blueprint/
 ---
 
-{{ page.layout }}
-<h1>Hello</h1>
+<header class="blueprint-hero">
+<div class="grid-container">
+  <div class="grid-row">
+    <div class="grid-col">
+      <h1>Transforming the American Digital Experience</h1>
+      <p>A Future Vision for the U.S Web Design System</p>
+    </div>
+  </div>
+</div>
+</header>
+
+<div class="blueprint-internal-nav">
+  <div class="grid-container">
+    <ul id="internal-nav" class="blueprint-internal-nav__list">
+      {% for item in site.blueprint %}
+        <li class="blueprint-internal-nav__item">
+          <a href="#section-{{ forloop.index }}" class="blueprint-internal-nav__link">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+{% for item in site.blueprint %}
+  <section id="section-{{ forloop.index }}" class="blueprint-section {{ item.section_class }}">
+    <div class="grid-container">
+      {{ item.content | markdownify }}
+    </div>
+  </section>
+{% endfor %}

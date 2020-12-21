@@ -1,3 +1,5 @@
-document.addEventListener("DOMContentLoaded", function(){
-  console.log("blueprint js loaded");
-});
+'use strict';
+
+require('./blueprint/internal-nav');
+require('./blueprint/smooth-scroll');
+

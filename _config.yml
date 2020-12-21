@@ -57,6 +57,7 @@ collections:
   components:
     output: true
     permalink: /:path/
+  blueprint:
 
 defaults:
   - scope:

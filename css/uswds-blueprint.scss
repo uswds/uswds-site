@@ -18,6 +18,67 @@
 // Tools
 // -------------------------------------
 @import 'packages/required';
-h1 {
-  padding: units(5);
+
+// Hero
+// -------------------------------------
+.blueprint-hero {
+  background-color: color("gray-80");
+  color: color("white");
+}
+
+// Internal nav
+// -------------------------------------
+.blueprint-internal-nav {
+  background-color: color("gray-5");
+  position: sticky;
+  left: 0;
+  top: 0;
+}
+
+.blueprint-internal-nav__list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+}
+
+.blueprint-internal-nav__item {
+  margin: units(105) 0;
+  padding: 0;
+}
+
+.blueprint-internal-nav__link,
+.blueprint-internal-nav__link:visited {
+  color: color("mint-60");
+  display: block;
+  font-weight: font-weight('bold');
+  padding: units(2) units(3);
+  text-decoration: none;
+}
+
+// Button
+// -------------------------------------
+.usa-button--blueprint {
+  background-color: color("mint-60");
+
+  &:hover,
+  &:focus {
+    background-color: color("mint-70");
+  }
+
+  &:active {
+    background-color: color("mint-80");
+  }
+}
+
+// Section
+// -------------------------------------
+.blueprint-section {
+  padding-bottom: units(7);
+  padding-top: units(7);
+}
+
+.blueprint-section--dark {
+  background-color: color("gray-80");
+  color: color("white");
 }

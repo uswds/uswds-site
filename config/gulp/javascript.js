@@ -36,7 +36,7 @@ gulp.task('copy-uswds-javascript', function (done) {
 
 });
 
-gulp.task('blueprint-js', function (done) {
+gulp.task('blueprint-js', function (cb) {
 
   dutil.logMessage(task, 'Compiling blueprint JS');
 
@@ -45,6 +45,7 @@ gulp.task('blueprint-js', function (done) {
     debug: true,
   });
 
+  cb();
   return minifiedStream.bundle()
     .pipe(source('blueprint.js'))
     .pipe(buffer())

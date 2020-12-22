@@ -3,6 +3,7 @@
 document.addEventListener('DOMContentLoaded', function (){
   
   var internalNav = document.getElementById('internal-nav');
+  var sectionBlock = document.getElementsByClassName('blueprint-section');
 
   if (typeof(internalNav) != 'undefined' && internalNav != null) {
 
@@ -49,6 +50,11 @@ document.addEventListener('DOMContentLoaded', function (){
           currentLink.classList.add(CURRENT_CLASS);
         }, 750);
       });
-    } 
+    }
+    
+    // Removes tabindex on blur to prevent click to focus sections
+    sectionBlock.addEventListener('blur', function () {
+      this.removeAttribute('tabindex');
+    });
   }
 });

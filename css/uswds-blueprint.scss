@@ -19,11 +19,110 @@
 // -------------------------------------
 @import 'packages/required';
 
+// Page width
+// -------------------------------------
+.blueprint-hero .grid-container,
+.blueprint-internal-nav .grid-container,
+.blueprint-section .grid-container {
+  max-width: 65rem !important;
+  width: 100%;
+}
+
 // Hero
 // -------------------------------------
 .blueprint-hero {
+  align-content: center;
+  align-items: center;
   background-color: color("gray-80");
   color: color("white");
+  display: flex;
+  flex-direction: column;
+}
+
+.blueprint-hero__content {
+  display: flex;
+  flex-direction: column;
+  margin: units(3) 0;
+
+  @include at-media("tablet") {
+    align-items: center;
+    margin: units(10) 0;
+    text-align: center;
+  }
+
+  @include at-media("desktop") {
+    margin: units(15) 0;
+  }
+}
+
+.blueprint-hero__heading {
+  font-size: size('lang', '2xl');
+  line-height: line-height('lang', 2);
+  margin: 0;
+  max-width: 30ex;
+  
+  @include at-media("tablet") {
+    font-size: size('lang', '3xl');
+  }
+}
+
+.blueprint-hero__subhead {
+  font-size: size('lang', 'lg');
+  line-height: line-height('lang', 2);
+  margin: units(2) 0 0;
+  max-width: 40ex;
+}
+
+.blueprint-hero__banner-container {
+  width: 100%;
+}
+
+.blueprint-hero__banner {
+  display: block;
+  width: 100%;
+}
+
+.blueprint-hero__ownership {
+  width: 100%; 
+
+  @include at-media("tablet") {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: units(3) 0;
+  }
+}
+
+.blueprint-hero__ownership-item {
+  align-items: center;
+  display: flex;
+  margin: units(2) 0;
+  
+  span {
+    font-size: size('lang', '3xs');
+  }
+}
+
+.blueprint-hero__ownership-img {
+  display: block;
+  margin-right: units(1.5);
+  width: 28px;
+
+  @include at-media("tablet") {
+    width: 36px;
+  }
+}
+
+.blueprint-hero__ownership-item:first-of-type {
+  @include at-media("tablet") {
+    flex-direction: row-reverse;
+
+    .blueprint-hero__ownership-img {
+      margin-left: units(1.5);
+      margin-right: 0;
+    }
+  }
 }
 
 // Internal nav
@@ -33,27 +132,49 @@
   position: sticky;
   left: 0;
   top: 0;
+  z-index: z('top'); 
 }
 
 .blueprint-internal-nav__list {
   display: flex;
   list-style: none;
-  justify-content: center;
+  justify-content: space-around;
   margin: 0;
+  padding: 0;
+
+  @include at-media("tablet") {
+    justify-content: center;
+  }
 }
 
 .blueprint-internal-nav__item {
-  margin: units(2) 0;
+  margin: units(1) 0;
   padding: 0;
+  @include at-media("tablet") {
+    margin-left: units(3);
+    margin-right: units(3);
+  }
 }
 
 .blueprint-internal-nav__link,
 .blueprint-internal-nav__link:visited {
+  border-bottom: 2px solid transparent;
   color: color("mint-60");
   display: block;
+  font-size: size('body', '3xs');
   font-weight: font-weight('bold');
-  padding: units(2) units(3);
+  padding: units(2) units(.5);
   text-decoration: none;
+
+  @include at-media("tablet") {
+    font-size: size('body', 'md');
+    padding: units(2) units(2);
+  }
+
+  &.current {
+    border-color: color('gray-80');
+    color: color('gray-80');
+  }
 }
 
 // Button
@@ -76,9 +197,74 @@
 .blueprint-section {
   padding-bottom: units(7);
   padding-top: units(7);
+
+  &:focus {
+    outline: none;
+  }
+
+  h2 {
+    margin-top: 0;
+
+    @include at-media("tablet") {
+      font-size: size('lang', '2xl');
+    }
+  }
 }
 
 .blueprint-section--dark {
   background-color: color("gray-80");
   color: color("white");
+}
+
+// Findings
+// -------------------------------------
+.blueprint-findings__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.blueprint-findings__item {
+  display: flex;
+  flex-direction: column;
+  margin: units(5) 0;
+
+  @include at-media("tablet") {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.blueprint-findings__img {
+  display: block;
+  height: 58px;
+  width: 58px;
+  margin-bottom: units(2);
+
+  @include at-media("tablet") {
+    height: 120px;
+    margin-bottom: 0;
+    width: 120px;
+  }
+
+  @include at-media("desktop") {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+.blueprint-findings__heading {
+  font-family: family('lang') !important;
+  margin: 0 !important;
+
+  @include at-media("tablet") {
+    font-size: size('lang', 'xl');
+  }
+}
+
+.blueprint-findings__body {
+
+  p:first-of-type {
+    margin-top: 0 !important;
+  }
 }

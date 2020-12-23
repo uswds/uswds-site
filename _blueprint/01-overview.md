@@ -7,7 +7,7 @@ title: Overview
 ## {{ page.title }}
 </div>
 <div class="grid-col-12 tablet:grid-col-8">
-<div class="usa-prose"  markdown="1">
+<div class="usa-prose blueprint-overview"  markdown="1">
 
 Across the federal government, agencies are working to improve their everyday interactions with the American public. How do we provide easy access to critical services? How do we deliver faster and more efficient touch points? How do we ensure transparency and build trust? The answer to these questions has increasingly become: deliver better digital services.
 

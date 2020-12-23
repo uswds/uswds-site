@@ -194,6 +194,14 @@
 
 // Section
 // -------------------------------------
+.blueprint-overview {
+  margin-top: 1em;
+
+  @include at-media("tablet") {
+    margin-top: 0;
+  }
+}
+
 .blueprint-section {
   padding-bottom: units(7);
   padding-top: units(7);
@@ -204,6 +212,7 @@
 
   h2 {
     margin-top: 0;
+    margin-bottom: 0;
 
     @include at-media("tablet") {
       font-size: size('lang', '2xl');
@@ -267,4 +276,43 @@
   p:first-of-type {
     margin-top: 0 !important;
   }
+}
+
+// Involvements
+// -------------------------------------
+
+.blueprint-involvements__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: units(4) 0;
+}
+
+.blueprint-involvements__img {
+  display: block;
+  height: 63px;
+  margin-bottom: units(2);
+  width: 63px;
+
+  @include at-media("tablet") {
+    height: 90px;
+    margin-bottom: units(3);
+    width: 90px;
+  }
+}
+
+.blueprint-involvements__button{
+  align-self: flex-start;
+}
+
+.blueprint-involvements__heading {
+  margin: 0;
+
+  @include at-media("tablet") {
+    font-size: size('lang', 'xl');
+  }
+}
+
+.blueprint-involvements__body {
+  margin-bottom: units(3);
 }

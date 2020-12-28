@@ -48,7 +48,7 @@ subnav:
   <button class="usa-accordion__button" aria-controls="code-sticky" aria-expanded="true">Code</button>
   <div id="code-sticky" class="usa-accordion__content">
 <div markdown="1">
-{% highlight html linenos %}
+{% highlight html %}
 {{ grid-1 | strip }}
 {% endhighlight %}
 </div>
@@ -94,11 +94,11 @@ Breaking it down, here's how it works:
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Width" class="flex-2">
-          <span class="font-lang-2xs text-bold">
+        <th scope="row" data-title="Width" class="flex-2">
+          <span class="font-lang-2xs">
             Smallest
           </span>
-        </td>
+        </th>
         <td data-title="Size">
           <span>
             ≥0
@@ -126,11 +126,11 @@ Breaking it down, here's how it works:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Width" class="flex-2">
-          <span class="font-lang-2xs text-bold">
+        <th scope="row" data-title="Width" class="flex-2">
+          <span class="font-lang-2xs">
             Mobile large
           </span>
-        </td>
+        </th>
         <td data-title="Size">
           <span>
             ≥480px
@@ -158,11 +158,11 @@ Breaking it down, here's how it works:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Width" class="flex-2">
-          <span class="font-lang-2xs text-bold">
+        <th scope="row" data-title="Width" class="flex-2">
+          <span class="font-lang-2xs">
             Tablet
           </span>
-        </td>
+        </th>
         <td data-title="Size">
           <span>
             ≥640px
@@ -190,11 +190,11 @@ Breaking it down, here's how it works:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Width" class="flex-2">
-          <span class="font-lang-2xs text-bold">
+        <th scope="row" data-title="Width" class="flex-2">
+          <span class="font-lang-2xs">
             Desktop
           </span>
-        </td>
+        </th>
         <td data-title="Size">
           <span>
             ≥1024px
@@ -249,7 +249,7 @@ Breaking it down, here's how it works:
   <button class="usa-accordion__button" aria-controls="code-auto" aria-expanded="true">Code</button>
   <div id="code-auto" class="usa-accordion__content">
 <div markdown="1">
-{% highlight html linenos %}
+{% highlight html %}
 {{ grid-auto | strip }}
 {% endhighlight %}
 </div>
@@ -295,7 +295,7 @@ Breaking it down, here's how it works:
   <button class="usa-accordion__button" aria-controls="code-responsive" aria-expanded="true">Code</button>
   <div id="code-responsive" class="usa-accordion__content">
 <div markdown="1">
-{% highlight html linenos %}
+{% highlight html %}
 {{ grid-responsive | strip }}
 {% endhighlight %}
 </div>
@@ -325,7 +325,7 @@ Breaking it down, here's how it works:
   <button class="usa-accordion__button" aria-controls="code-stacked" aria-expanded="true">Code</button>
   <div id="code-stacked" class="usa-accordion__content">
 <div markdown="1">
-{% highlight html linenos %}
+{% highlight html %}
 {{ grid-stacked | strip }}
 {% endhighlight %}
 </div>
@@ -362,7 +362,7 @@ Breaking it down, here's how it works:
   <button class="usa-accordion__button" aria-controls="code-mix" aria-expanded="true">Code</button>
   <div id="code-mix" class="usa-accordion__content">
 <div markdown="1">
-{% highlight html linenos %}
+{% highlight html %}
 {{ grid-mix | strip }}
 {% endhighlight %}
 </div>
@@ -386,7 +386,7 @@ Breaking it down, here's how it works:
   <button class="usa-accordion__button" aria-controls="code-offsets" aria-expanded="true">Code</button>
   <div id="code-offsets" class="usa-accordion__content">
 <div markdown="1">
-{% highlight html linenos %}
+{% highlight html %}
 {{ grid-offsets | strip }}
 {% endhighlight %}
 </div>
@@ -412,7 +412,7 @@ Breaking it down, here's how it works:
   <button class="usa-accordion__button" aria-controls="code-wrapping" aria-expanded="true">Code</button>
   <div id="code-wrapping" class="usa-accordion__content">
 <div markdown="1">
-{% highlight html linenos %}
+{% highlight html %}
 {{ grid-wrapping | strip }}
 {% endhighlight %}
 </div>
@@ -446,7 +446,7 @@ Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the
   <button class="usa-accordion__button" aria-controls="code-gutters" aria-expanded="true">Code</button>
   <div id="code-gutters" class="usa-accordion__content">
 
-{% highlight html linenos %}
+{% highlight html %}
 {{ grid-gutters | strip }}
 {% endhighlight %}
 
@@ -489,7 +489,7 @@ Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the
   <button class="usa-accordion__button" aria-controls="code-gutters-lg" aria-expanded="true">Code</button>
   <div id="code-gutters-lg" class="usa-accordion__content">
 
-{% highlight html linenos %}
+{% highlight html %}
 {{ grid-gutters-lg | strip }}
 {% endhighlight %}
 

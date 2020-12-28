@@ -34,11 +34,11 @@
     <tbody class="font-mono-2xs">
       {% for item in all-breakpoints %}
         <tr>
-          <td scope="row" data-title="Breakpoint" class="tablet:text-no-wrap">
-            <span>
+          <th scope="row" data-title="Breakpoint" class="tablet:text-no-wrap">
+            <span class="text-normal">
               {{ item.token }}
             </span>
-          </td>
+          </th>
           <td data-title="Width" class="tablet:maxw-card-lg">
             <span>
               {{ item.value }}
@@ -75,11 +75,11 @@
     <tbody class="font-mono-2xs">
       {% for utility in page.utilities %}
         <tr>
-          <td scope="row" data-title="Utility variable" class="tablet:text-no-wrap">
-            <span>
+          <th scope="row" data-title="Utility variable" class="tablet:text-no-wrap">
+            <span class="text-normal">
               ${{ utility.var }}-settings.responsive
             </span>
-          </td>
+          </th>
           <td data-title="Default" class="tablet:maxw-card-lg">
             <span>
               {% if utility.responsive %}<span class="output-true">true</span>{% else %}false{% endif %}

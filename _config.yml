@@ -21,7 +21,7 @@ incremental_regeneration_fixer:
   interdependent_files:
     - "_components/form-controls/*"
     - "_components/form-templates/*"
-    - "_components/button-groups/*"
+    - "_components/button-group/*"
 
 jekyll_get:
   - data: releases

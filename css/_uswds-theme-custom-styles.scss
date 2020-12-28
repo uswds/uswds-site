@@ -1244,6 +1244,10 @@ code[class*="language-"] {
   }
 }
 
+code[class*="language-plaintext"] {
+    color: inherit;
+}
+
 .alignment-example {
   border-left: units(2px) solid color($site-primary-dark);
   padding-left: units(1);

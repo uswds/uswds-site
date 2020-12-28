@@ -630,6 +630,136 @@ ignore:
     - node-notifier:
         reason: None given
         expires: '2021-01-12T23:05:22.678Z'
+  SNYK-JS-CACHEBASE-1054631:
+    - sass > chokidar > anymatch > micromatch > braces > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:04:04.035Z'
+      sass > chokidar > braces > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.057Z'
+    - gulp > glob-watcher > anymatch > micromatch > braces > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:04:04.035Z'
+      gulp > glob-watcher > chokidar > braces > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.058Z'
+    - uswds > @frctl/core > anymatch > micromatch > braces > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:04:04.035Z'
+      sass > chokidar > anymatch > micromatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.058Z'
+    - gulp > glob-watcher > anymatch > micromatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.058Z'
+    - sass > chokidar > readdirp > micromatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.058Z'
+    - gulp > gulp-cli > matchdep > micromatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.058Z'
+    - sass > chokidar > readdirp > micromatch > braces > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.058Z'
+    - gulp > gulp-cli > matchdep > micromatch > braces > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.058Z'
+    - sass > chokidar > anymatch > micromatch > extglob > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.058Z'
+    - gulp > glob-watcher > anymatch > micromatch > extglob > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.058Z'
+    - sass > chokidar > readdirp > micromatch > extglob > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - gulp > gulp-cli > matchdep > micromatch > extglob > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - sass > chokidar > anymatch > micromatch > nanomatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - gulp > glob-watcher > anymatch > micromatch > nanomatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - sass > chokidar > readdirp > micromatch > nanomatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - gulp > gulp-cli > matchdep > micromatch > nanomatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > braces > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > braces > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > braces > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > braces > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.060Z'
+    - sass > chokidar > anymatch > micromatch > extglob > expand-brackets > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.060Z'
+    - gulp > glob-watcher > anymatch > micromatch > extglob > expand-brackets > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.060Z'
+    - sass > chokidar > readdirp > micromatch > extglob > expand-brackets > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.060Z'
+    - gulp > gulp-cli > matchdep > micromatch > extglob > expand-brackets > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.060Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > extglob > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.060Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > extglob > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.060Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > extglob > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.060Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > extglob > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.060Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > nanomatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.060Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > nanomatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.060Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > nanomatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.060Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > nanomatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.061Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > extglob > expand-brackets > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.061Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > extglob > expand-brackets > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.061Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > extglob > expand-brackets > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.061Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > extglob > expand-brackets > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.061Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':
@@ -641,7 +771,7 @@ patch:
         patched: '2018-05-15T14:15:25.814Z'
   'npm:lodash:20180130':
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
-        patched: '2020-12-12T17:59:29.333Z'
+        patched: '2020-12-28T19:02:54.287Z'
   SNYK-JS-LODASH-567746:
     - gulp-eslint > eslint > lodash:
         patched: '2020-05-28T21:31:56.381Z'

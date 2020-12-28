@@ -75,7 +75,7 @@ In general, when importing settings and custom code, you just need to follow thi
       settings=section.contents
     %}
   {%- else -%}
-    <h2 id="components">Components</h2>
+    <h2 id="component-settings">Component settings</h2>
     {%- assign sorted_components = section | sort -%}
     {%- for component_hash in sorted_components -%}
     {%- assign component = component_hash[1] -%}

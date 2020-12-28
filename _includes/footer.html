@@ -10,11 +10,11 @@
       <div class="grid-row footer-contact-links">
         <div class="tablet:grid-col">
           <div class="usa-media-block">
-            <img
-              class="usa-media-block__img"
-              src="{{ site.baseurl }}/img/home/icon-question.svg"
-              alt=""
-            />
+            <div class="usa-media-block__img circle-5 bg-accent-cool display-flex flex-row flex-align-center flex-justify-center text-white">
+              <svg class="usa-icon usa-icon--size-3" aria-hidden="true" role="img" focusable="false">
+                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#help"></use>
+              </svg>
+            </div>
             <div class="usa-media-block__body">
               <h4>Running into an issue?</h4>
               <a href="{{ site.repos[0].url }}/issues/new">
@@ -29,6 +29,7 @@
               class="usa-media-block__img"
               src="{{ site.baseurl }}/img/home/icon-slack.svg"
               alt=""
+              aria-hidden="true"
             />
             <div class="usa-media-block__body">
               <h4>Engage with the community</h4>
@@ -40,11 +41,11 @@
         </div>
         <div class="tablet:grid-col">
           <div class="usa-media-block">
-            <img
-              class="usa-media-block__img"
-              src="{{ site.baseurl }}/img/home/icon-envelope.svg"
-              alt=""
-            />
+            <div class="usa-media-block__img circle-5 bg-accent-cool display-flex flex-row flex-align-center flex-justify-center text-white">
+              <svg class="usa-icon usa-icon--size-3" aria-hidden="true" role="img" focusable="false">
+                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#mail"></use>
+              </svg>
+            </div>
             <div class="usa-media-block__body">
               <h4>Reach the team</h4>
               <a href="mailto:uswds@support.digitalgov.gov">
@@ -59,6 +60,7 @@
               class="usa-media-block__img"
               src="{{ site.baseurl }}/img/home/icon-twitter.svg"
               alt=""
+              aria-hidden="true"
             />
             <div class="usa-media-block__body">
               <h4>Stay updated</h4>

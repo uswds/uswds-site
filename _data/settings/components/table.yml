@@ -1,0 +1,32 @@
+name: Tables
+contents:
+  - name: Border color
+    description: Defines a border color for table cells.
+    var: $theme-table-border-color
+    default: '"base-dark"'
+    type: color
+  - name: Text color
+    description: Defines a text color for table cells.
+    var: $theme-table-text-color
+    default: '"ink"'
+    type: color
+  - name: Header Background Color
+    description: Defines a background color for header cells.
+    var: $theme-table-header-background-color
+    default: '"base-lighter"'
+    type: color
+  - name: Header Text Color
+    description: Defines a text color for header cells.
+    var: $theme-table-header-text-color
+    default: '"ink"'
+    type: color
+  - name: Stripe Background Color
+    description: Defines a background color for alternating horizontal stripes in the striped table variant.
+    var: $theme-table-stripe-background-color
+    default: '"base-lightest"'
+    type: color
+  - name: Stripe Text Color
+    description: Defines a text color for alternating horizontal stripes in the striped table variant.
+    var: $theme-table-stripe-text-color
+    default: '"ink"'
+    type: color

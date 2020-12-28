@@ -24,7 +24,8 @@ mobile:
     collapsible: true
 
 Components:
-  - href: /components/
+  - text: Components
+    href: /components/
   - href: /components/accordion/
   - href: /components/alert/
   - href: /components/banner/

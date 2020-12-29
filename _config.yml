@@ -20,8 +20,8 @@ encoding: utf-8
 incremental_regeneration_fixer:
   interdependent_files:
     - "_components/form-controls/*"
-    - "_components/form-templates/*"
     - "_components/button-group/*"
+    - "_templates/form-templates/*"
 
 jekyll_get:
   - data: releases
@@ -55,6 +55,9 @@ repos:
 
 collections:
   components:
+    output: true
+    permalink: /:path/
+  templates:
     output: true
     permalink: /:path/
 

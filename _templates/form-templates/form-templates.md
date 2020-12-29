@@ -1,11 +1,12 @@
 ---
-permalink: /components/form-templates/
+permalink: /templates/form-templates/
 redirect_from:
 - /form-templates/
+- /components/form-templates/
 layout: styleguide
-type: component
+type: template
 title: Form templates
-category: Components
+category: Templates
 lead: Patterns for some of the most commonly used forms
 subnav:
 - text: Name form

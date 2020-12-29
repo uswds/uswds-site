@@ -5,7 +5,7 @@ primary:
   - href: /components/
   - href: /design-tokens/
   - href: /utilities/
-  - href: /page-templates/
+  - href: /templates/
   - href: /about/
 
 mobile:
@@ -18,7 +18,7 @@ mobile:
     collapsible: true
   - href: /utilities/
     collapsible: true
-  - href: /page-templates/
+  - href: /templates/
     collapsible: true
   - href: /about/
     collapsible: true
@@ -37,7 +37,6 @@ Components:
   - href: /components/data-visualizations/
   - href: /components/footer/
   - href: /components/form-controls/
-  - href: /components/form-templates/
   - text: Grid
     href: /utilities/layout-grid/
   - href: /components/header/
@@ -110,11 +109,13 @@ Utilities:
   - href: /utilities/clearfix/
   - href: /utilities/list-reset/
 
-Page templates:
-  - href: /page-templates/
-  - href: /page-templates/documentation-page/
-  - href: /page-templates/landing-page/
-  - href: /page-templates/authentication-pages/
+Templates:
+  - text: Templates
+    href: /templates/
+  - href: /templates/documentation-page/
+  - href: /templates/landing-page/
+  - href: /templates/authentication-pages/
+  - href: /templates/form-templates/
 
 About:
   - href: /about/

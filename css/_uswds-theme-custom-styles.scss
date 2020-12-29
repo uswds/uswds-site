@@ -2966,12 +2966,12 @@ $theme-table-column-gap: 4;
 
   h3 {
     @include typeset("lang", "lg", 2);
+    color: color("base-dark");
+    font-weight: fw("thin");
   }
 
   h4 {
-    @include typeset("lang", "lg", 2);
-    color: color("base-dark");
-    font-weight: fw("thin");
+    @include typeset("lang", "md", 2);
   }
 }
 

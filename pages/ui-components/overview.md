@@ -18,7 +18,7 @@ redirect_from:
 <div role="region" aria-atomic="true">
   <label for="icon-filter">Type to filter components</label>
   <input class="usa-input" id="icon-filter" class="usa-input" type="text" onkeyup="filter(this)"/>
-  <p class="text-base margin-top-1" aria-live="polite"><span id="component-count">{{ site.components.size }} components</span></p>
+  <p class="text-base margin-top-1" aria-live="polite"><span id="component-count"><strong>{{ site.components.size }}</strong> components found.</span></p>
 </div>
 
 <div class="usa-card-group flex-row margin-top-4">
@@ -32,7 +32,7 @@ redirect_from:
       <header class="usa-card__header">
         <h2 class="usa-card__heading font-lang-lg"><a href="{{ component.url }}">{{ component.title }}</a></h2>
       </header>
-      <div class="usa-card__body">
+      <div class="usa-card__body font-lang-sm">
         {{ component.lead | markdownify }}
       </div>
     </div>
@@ -52,6 +52,6 @@ function filter(e){
     });
     componentCount = document.querySelectorAll('.site-component-card:not(.display-none)').length;
     var word = (componentCount === 1) ? "component" : "components";
-    document.getElementById("component-count").innerHTML = `${componentCount} ${word}`
+    document.getElementById("component-count").innerHTML = `<strong>${componentCount}</strong> ${word} found.`
 }
 </script>

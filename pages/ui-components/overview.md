@@ -14,3 +14,8 @@ redirect_from:
 **Importing only the components your project needs.** See [Component packages]({{ site.baseurl }}/components/packages/)
 
 ## USWDS components
+
+{% for component in site.components %}
+### [{{ component.title }}]({{ component.url }})
+{{ component.lead | markdownify }}
+{% endfor %}

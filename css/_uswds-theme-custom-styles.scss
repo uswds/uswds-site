@@ -3189,8 +3189,19 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+.site-accordion,
+.site-accordion-code {
+  > .usa-accordion__button {
+    h2,
+    h3 {
+      @include typeset("lang", "sm", 1);
+      @include u-margin-y(0);
+    }
+  }
+}
+
 .site-accordion {
-  .usa-accordion__content {
+  > .usa-accordion__content {
     padding-left: 0;
     padding-right: 0;
   }

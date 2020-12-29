@@ -1,3 +1,9 @@
-<div class="preview usa-prose site-prose {{ include.classes }}">
-  {% include code/components/{{ include.component }}.html %}
+{% assign level = include.level | default: "h3" %}
+
+<div class="usa-accordion usa-accordion site-accordion">
+  {% assign _id = include.component | prepend: 'examples-' %}
+  <button class="usa-accordion__button" aria-controls="{{ _id }}" aria-expanded="true"><{{ level }}>Component preview</{{ level }}></button>
+  <div id="{{ _id }}" class="usa-accordion__content">
+    {% include code/components/{{ include.component }}.html %}
+  </div>
 </div>

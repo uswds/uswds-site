@@ -1,6 +1,8 @@
+{% assign level = include.level | default: "h3" %}
+
 <div class="usa-accordion usa-accordion--bordered site-accordion-code">
   {% assign _id = include.component | prepend: 'code-' %}
-  <button class="usa-accordion__button" aria-controls="{{ _id }}">Component code</button>
+  <button class="usa-accordion__button" aria-controls="{{ _id }}"><{{ level }}>Component code</{{ level }}></button>
   <div id="{{ _id }}" class="usa-accordion__content">
     {% include code/syntax.html component=include.component %}
   </div>

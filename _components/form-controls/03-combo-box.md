@@ -3,6 +3,7 @@ title: Combo box
 parent: Form controls
 order: 03
 lead: A combo box helps users select an item from a large list of options.
+meta: form controls input
 initProps:
   - property: "`required`"
     element: select

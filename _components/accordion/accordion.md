@@ -14,6 +14,13 @@ component:
 variants:
   - variant: "`.usa-accordion--bordered`"
     description: Display a border around accordion content
+subnav:
+- text: Preview
+  href: '#accordion-preview'
+- text: Code
+  href: '#accordion-code'
+- text: Guidance
+  href: '#accordion-guidance'
+- text: Package
+  href: '#accordion-package'
 ---
-
-

@@ -27,7 +27,7 @@ type: component
 {% include code/preview.html component=page.component.name level="h2" %}
 {% include code/accordion.html component=page.component.name level="h2" %}
 
-<h2>Guidance</h2>
+<h2 id="{{ page.component.name }}-guidance">Guidance</h2>
   <div class="site-component-usage">
     <h3>When to use the accordion component</h3>
     {{ when_to_use | markdownify }}
@@ -53,7 +53,7 @@ type: component
   </div>
 </section>
 
-<h2>Package</h2>
+<h2 id="{{ page.component.name }}-package">Package</h2>
 <ul class="usa-content-list">
   <li>
     <strong>Package usage:</strong> <code>@import {{ page.component.package}}</code>

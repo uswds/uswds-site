@@ -604,7 +604,7 @@ ignore:
   SNYK-JS-Y18N-1021887:
     - gulp > gulp-cli > yargs > y18n:
         reason: no fix available
-        expires: '2020-12-30T17:19:29.232Z'
+        expires: '2021-01-29T17:23:12.099Z'
     - gulp-sass > node-sass > sass-graph > yargs > y18n:
         reason: no fix available
         expires: '2020-12-30T17:19:29.232Z'
@@ -634,21 +634,12 @@ ignore:
     - sass > chokidar > anymatch > micromatch > braces > snapdragon > base > cache-base:
         reason: None given
         expires: '2021-01-27T19:04:04.035Z'
-      sass > chokidar > braces > snapdragon > base > cache-base:
-        reason: None given
-        expires: '2021-01-27T19:07:41.057Z'
     - gulp > glob-watcher > anymatch > micromatch > braces > snapdragon > base > cache-base:
         reason: None given
         expires: '2021-01-27T19:04:04.035Z'
-      gulp > glob-watcher > chokidar > braces > snapdragon > base > cache-base:
-        reason: None given
-        expires: '2021-01-27T19:07:41.058Z'
     - uswds > @frctl/core > anymatch > micromatch > braces > snapdragon > base > cache-base:
         reason: None given
         expires: '2021-01-27T19:04:04.035Z'
-      sass > chokidar > anymatch > micromatch > snapdragon > base > cache-base:
-        reason: None given
-        expires: '2021-01-27T19:07:41.058Z'
     - gulp > glob-watcher > anymatch > micromatch > snapdragon > base > cache-base:
         reason: None given
         expires: '2021-01-27T19:07:41.058Z'
@@ -760,6 +751,15 @@ ignore:
     - gulp > gulp-cli > matchdep > findup-sync > micromatch > extglob > expand-brackets > snapdragon > base > cache-base:
         reason: None given
         expires: '2021-01-27T19:07:41.061Z'
+    - sass > chokidar > braces > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.057Z'
+    - gulp > glob-watcher > chokidar > braces > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.058Z'
+    - sass > chokidar > anymatch > micromatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.058Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

@@ -1,9 +1,9 @@
 ---
 permalink: /components/overview/
 layout: styleguide
-title: Components overview
+title: Components
 category: Components
-lead: USWDS components are designed to set a new bar for simplicity and consistency across government services.
+lead: USWDS components are simple and consistent solutions to common user interface needs.
 type: docs
 redirect_from:
   - /components/
@@ -13,7 +13,7 @@ redirect_from:
 
 **Importing only the components your project needs.** See [Component packages]({{ site.baseurl }}/components/packages/)
 
-## USWDS components
+## Find a USWDS component
 
 <div role="region" aria-atomic="true">
   <label for="icon-filter">Type to filter components</label>

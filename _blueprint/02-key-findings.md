@@ -38,7 +38,7 @@ Though agencies start with different goals and capabilities, we discovered they 
           <img class="blueprint-findings__img" src="{{ site.baseurl }}/img/blueprint/{{ finding.img }}.svg" alt="" role="presentation">
         </div>
         <div class="blueprint-findings__body usa-prose grid-col-12 tablet:grid-col-9">
-          <h3 class="blueprint-findings__heading">{{ forloop.index }}. {{ finding.title }}</h3>
+          <h3 class="blueprint-findings__heading">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}. {{ finding.title }}</h3>
           {{ finding.text | markdownify}}
         </div>
       </li>

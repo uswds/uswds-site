@@ -6,7 +6,7 @@ ways:
   icon: speech
   button_text: Join Slack
   url: website.com
-- title: Join an event
+- title: Attend an event
   text: |- 
     We invite you to join us in asking and further exploring these big-picture questions by joining our community and attending our events. 
 

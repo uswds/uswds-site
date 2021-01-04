@@ -56,21 +56,25 @@
 }
 
 .blueprint-hero__heading {
-  font-size: size('lang', '2xl');
+  font-size: size('lang', 12);
   line-height: line-height('lang', 2);
   margin: 0;
   max-width: 30ex;
   
   @include at-media("tablet") {
-    font-size: size('lang', '3xl');
+    font-size: size('lang', 15);
   }
 }
 
 .blueprint-hero__subhead {
-  font-size: size('lang', 'lg');
+  font-size: size('lang', 8);
   line-height: line-height('lang', 2);
   margin: units(2) 0 0;
   max-width: 40ex;
+
+  @include at-media("tablet") {
+    font-size: size('lang', 11);
+  }
 }
 
 .blueprint-hero__banner-container {
@@ -161,13 +165,13 @@
   border-bottom: 2px solid transparent;
   color: color("mint-60");
   display: block;
-  font-size: size('body', '3xs');
+  font-size: size('lang', '3xs');
   font-weight: font-weight('bold');
   padding: units(1.5) units(.5);
   text-decoration: none;
 
   @include at-media("tablet") {
-    font-size: size('body', 'md');
+    font-size: size('lang', 'md');
     padding: units(1.5) units(2);
   }
 
@@ -211,11 +215,12 @@
   }
 
   h2 {
+    font-size: size('lang', 12);
     margin-top: 0;
     margin-bottom: 0;
 
     @include at-media("tablet") {
-      font-size: size('lang', '2xl');
+      font-size: size('lang', 14);
     }
   }
 }
@@ -264,10 +269,11 @@
 
 .blueprint-findings__heading {
   font-family: family('lang') !important;
+  font-size: size('lang', 9) !important;
   margin: 0 !important;
 
   @include at-media("tablet") {
-    font-size: size('lang', 'xl');
+    font-size: size('lang', 11) !important;
   }
 }
 
@@ -306,11 +312,8 @@
 }
 
 .blueprint-involvements__heading {
+  font-size: size('lang', 10);
   margin: 0;
-
-  @include at-media("tablet") {
-    font-size: size('lang', 'xl');
-  }
 }
 
 .blueprint-involvements__body {

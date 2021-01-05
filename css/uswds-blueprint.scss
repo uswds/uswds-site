@@ -19,6 +19,12 @@
 // -------------------------------------
 @import 'packages/required';
 
+// Typesetting 
+.usa-prose {
+  font-family: family('lang');
+}
+
+
 // Page width
 // -------------------------------------
 .blueprint-hero .grid-container,

@@ -11,11 +11,11 @@ findings:
 - title: Find the right team and resources
   text: Agencies have several options to assemble a cross-functional team to implement the design system and they're looking for more support in identifying needed skills and assembling the right people. 
   img: check
-- title: Feel engaged as a part of the comunity
+- title: Feel engaged with the community
   text: It’s a collaborative process to build a design system, so it’s essential for agencies to feel like they have access to a support network and a sense of ownership to contribute back to it. 
   img: triangles
 - title: Be able to iteratively improve digital services
-  text: Agency teams want reassurance that the design system and related support will continue to be there long into the future. 
+  text: Adopting a design system is an ongoing process of design, development, and making iterative improvements and upgrades over time, which requires continued resources and support.
   img: steps
 ---
 

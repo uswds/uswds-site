@@ -1,4 +1,8 @@
 ---
+component:
+  status: ready
+  package: usa-tk
+  dependencies:
 permalink: /components/data-visualizations/
 layout: styleguide
 type: component

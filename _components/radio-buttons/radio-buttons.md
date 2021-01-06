@@ -1,4 +1,8 @@
 ---
+component:
+  status: ready
+  package: usa-tk
+  dependencies:
 permalink: /components/radio-buttons/
 layout: styleguide
 title: Radio buttons

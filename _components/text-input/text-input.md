@@ -1,4 +1,8 @@
 ---
+component:
+  status: ready
+  package: usa-tk
+  dependencies:
 permalink: /components/text-input/
 title: Text input
 type: component

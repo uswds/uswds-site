@@ -1,4 +1,8 @@
 ---
+component:
+  status: ready
+  package: usa-tk
+  dependencies:
 permalink: /components/date-range-picker/
 title: Date range picker
 type: component

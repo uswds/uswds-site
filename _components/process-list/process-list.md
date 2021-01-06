@@ -1,4 +1,8 @@
 ---
+component:
+  status: ready
+  package: usa-tk
+  dependencies:
 permalink: /components/process-list/
 layout: styleguide
 type: component

@@ -1,4 +1,8 @@
 ---
+component:
+  status: alpha
+  package: usa-tk
+  dependencies:
 layout: styleguide
 title: Figure
 category: Components

@@ -1,4 +1,8 @@
 ---
+component:
+  status: ready
+  package: usa-tk
+  dependencies:
 permalink: /components/summary-box/
 layout: styleguide
 type: component
@@ -29,7 +33,7 @@ lead: A summary box highlights key information from a longer page or displays ne
       <h3>When to consider something else</h3>
       <ul class="usa-content-list">
         <li>
-          <strong>Internal page navigation.</strong> Don't use a summary box as a table of contents. If you’re listing headings for internal page navigation, use a simple unordered list of jump links or side navigation. 
+          <strong>Internal page navigation.</strong> Don't use a summary box as a table of contents. If you’re listing headings for internal page navigation, use a simple unordered list of jump links or side navigation.
         </li>
         <li>
           <strong>Your page is short.</strong> The summary box gives users quick access to the most important information on a long page. If your page isn’t that long, a recap may feel redundant.
@@ -43,7 +47,7 @@ lead: A summary box highlights key information from a longer page or displays ne
             </ul>
         </li>
         <li>
-          <strong>Alerts or callouts.</strong> If you’re highlighting something new, rather than surfacing details from further down the page, use the <a href="{{ site.baseurl }}/components/alert">alert</a> component, such as the <a href="{{ site.baseurl }}/components/alert">informative status alert</a>. 
+          <strong>Alerts or callouts.</strong> If you’re highlighting something new, rather than surfacing details from further down the page, use the <a href="{{ site.baseurl }}/components/alert">alert</a> component, such as the <a href="{{ site.baseurl }}/components/alert">informative status alert</a>.
         </li>
       </ul>
       <h3>Usability guidance</h3>
@@ -64,7 +68,7 @@ lead: A summary box highlights key information from a longer page or displays ne
       <h3 class="usa-heading">Accessibility</h3>
       <ul class="usa-content-list">
         <li>
-          <strong>Write for your audience.</strong> The summary box is meant to make it easier to understand page content. Don't leave readers without access to critical information. Check your writing level to ensure it’s easy to read. Search for "readability level tool" to find tools that assess reading level. 
+          <strong>Write for your audience.</strong> The summary box is meant to make it easier to understand page content. Don't leave readers without access to critical information. Check your writing level to ensure it’s easy to read. Search for "readability level tool" to find tools that assess reading level.
         </li>
       </ul>
       <h3 class="usa-heading">Implementation</h3>

@@ -1,4 +1,9 @@
 ---
+component:
+  name: character-count
+  status: ready
+  package: usa-character-count
+  dependencies:
 permalink: /components/character-count/
 title: Character count
 layout: styleguide

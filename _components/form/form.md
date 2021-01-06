@@ -12,6 +12,15 @@ type: component
 title: Form
 category: Components
 lead: A form allows users to enter information into a page.
+subnav:
+- text: Preview
+  href: '#tk-preview'
+- text: Code
+  href: '#tk-code'
+- text: Guidance
+  href: '#tk-guidance'
+- text: Package
+  href: '#tk-package'
 ---
 
 <div class="site-note"><strong>Note:</strong> If you are a building a form with multiple controls, also consider the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines in the “Form Templates” section</a>.</div>

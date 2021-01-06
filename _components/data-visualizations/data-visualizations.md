@@ -9,7 +9,6 @@ type: component
 title: Data visualizations
 category: Components
 lead: Data visualizations help communicate patterns and relationships in a data set.
-
 subnav:
 - text: General guidance
   href: '#general-guidance'

@@ -14,6 +14,15 @@ tags:
   - form controls
   - validation
 lead: Checkboxes allow users to select one or more options from a visible list.
+subnav:
+- text: Preview
+  href: '#tk-preview'
+- text: Code
+  href: '#tk-code'
+- text: Guidance
+  href: '#tk-guidance'
+- text: Package
+  href: '#tk-package'
 ---
 
 <p>Checkboxes are an easily understandable way to indicate that users can select one or more answers to a question or items from a list. They’re always followed by a label or instructions that clearly indicate what checking the box represents. </p>

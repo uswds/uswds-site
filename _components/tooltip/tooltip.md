@@ -9,6 +9,15 @@ title: Tooltip
 type: component
 category: Components
 lead: A tooltip is a short descriptive message that appears when a user hovers or focuses on an element.
+subnav:
+- text: Preview
+  href: '#tk-preview'
+- text: Code
+  href: '#tk-code'
+- text: Guidance
+  href: '#tk-guidance'
+- text: Package
+  href: '#tk-package'
 ---
 
 {% include code/preview.html component="tooltip" %}

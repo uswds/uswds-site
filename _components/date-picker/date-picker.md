@@ -7,6 +7,15 @@ permalink: /components/date-picker/
 title: Date picker
 type: component
 lead: A date picker helps users select a single date.
+subnav:
+- text: Preview
+  href: '#tk-preview'
+- text: Code
+  href: '#tk-code'
+- text: Guidance
+  href: '#tk-guidance'
+- text: Package
+  href: '#tk-package'
 ---
 
 {% include code/preview.html component="date-picker" %}

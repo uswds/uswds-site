@@ -17,6 +17,15 @@ initProps:
   - property: "`data-step`"
     element: .usa-time-picker
     description: The number of minutes between options. The minimum is `1` minute and the default is `30` minutes.
+subnav:
+- text: Preview
+  href: '#tk-preview'
+- text: Code
+  href: '#tk-code'
+- text: Guidance
+  href: '#tk-guidance'
+- text: Package
+  href: '#tk-package'
 ---
 
 {% include code/preview.html component="time-picker" %}

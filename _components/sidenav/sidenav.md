@@ -11,6 +11,15 @@ type: component
 title: Side navigation
 category: Components
 lead: "Hierarchical, vertical navigation to place at the side of a page."
+subnav:
+- text: Preview
+  href: '#tk-preview'
+- text: Code
+  href: '#tk-code'
+- text: Guidance
+  href: '#tk-guidance'
+- text: Package
+  href: '#tk-package'
 ---
 
 {% include code/preview.html component="sidenav" %}

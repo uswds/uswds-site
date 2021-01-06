@@ -7,6 +7,15 @@ permalink: /components/validation/
 title: Validation
 type: component
 lead: Stating validation requirements up front, with live feedback, means users won't be left guessing.
+subnav:
+- text: Preview
+  href: '#tk-preview'
+- text: Code
+  href: '#tk-code'
+- text: Guidance
+  href: '#tk-guidance'
+- text: Package
+  href: '#tk-package'
 ---
 
 {% include code/preview.html component="validation" %}

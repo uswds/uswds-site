@@ -12,6 +12,15 @@ type: component
 title: Tag
 category: Components
 lead: A tag draws attention to new or categorized content elements.
+subnav:
+- text: Preview
+  href: '#tk-preview'
+- text: Code
+  href: '#tk-code'
+- text: Guidance
+  href: '#tk-guidance'
+- text: Package
+  href: '#tk-package'
 ---
 
 <section class="site-component-section">

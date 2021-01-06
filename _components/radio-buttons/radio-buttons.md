@@ -8,6 +8,15 @@ layout: styleguide
 title: Radio buttons
 type: component
 lead: Radio buttons allow users to select exactly one choice from a group.
+subnav:
+- text: Preview
+  href: '#tk-preview'
+- text: Code
+  href: '#tk-code'
+- text: Guidance
+  href: '#tk-guidance'
+- text: Package
+  href: '#tk-package'
 ---
 
 <p>Radio buttons are a common way to let users know to make a single selection from a list of options. Only one radio button can be selected at a time within the same group. They also spell out each possible choice as its own item, with its own label (whereas <a href="#checkbox">checkboxes</a> show a single label and the checking/unchecking of that item means opposite things). For example, if the question was, “Do you prefer blue or red?” the radio button options would be “blue” or “red.” </p>

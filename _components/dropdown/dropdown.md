@@ -7,6 +7,15 @@ permalink: /components/dropdown/
 title: Dropdown
 type: component
 lead: A dropdown allow users to select one option from a temporary modal menu.
+subnav:
+- text: Preview
+  href: '#tk-preview'
+- text: Code
+  href: '#tk-code'
+- text: Guidance
+  href: '#tk-guidance'
+- text: Package
+  href: '#tk-package'
 ---
 
 

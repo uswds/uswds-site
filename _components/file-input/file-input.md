@@ -3,6 +3,15 @@ permalink: /components/file-input/
 title: File input
 type: component
 lead: File input allows users to attach one or multiple files.
+subnav:
+- text: Preview
+  href: '#tk-preview'
+- text: Code
+  href: '#tk-code'
+- text: Guidance
+  href: '#tk-guidance'
+- text: Package
+  href: '#tk-package'
 ---
 
 {% include code/preview.html component="file-input" %}

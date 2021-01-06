@@ -11,6 +11,15 @@ type: component
 title: Identifier
 category: Components
 lead: The identifier communicates a site's parent agency and displays agency links required by federal laws and policies.
+subnav:
+- text: Preview
+  href: '#tk-preview'
+- text: Code
+  href: '#tk-code'
+- text: Guidance
+  href: '#tk-guidance'
+- text: Package
+  href: '#tk-package'
 ---
 
 {% include code/preview.html component="identifier" %}

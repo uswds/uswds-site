@@ -18,6 +18,15 @@ variants:
     description: Show small step counters
   - variant: "`.usa-step-indicator--center`"
     description: Center counters and labels in each step
+subnav:
+- text: Preview
+  href: '#tk-preview'
+- text: Code
+  href: '#tk-code'
+- text: Guidance
+  href: '#tk-guidance'
+- text: Package
+  href: '#tk-package'
 ---
 
 {% include code/preview.html component="step-indicator" %}

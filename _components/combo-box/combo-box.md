@@ -39,6 +39,15 @@ procedures:
   - procedure: "`disable`"
     parameters: .usa-combo-box
     description: The combo box component will be disabled / read-only.
+subnav:
+- text: Preview
+  href: '#tk-preview'
+- text: Code
+  href: '#tk-code'
+- text: Guidance
+  href: '#tk-guidance'
+- text: Package
+  href: '#tk-package'
 ---
 
 {% include code/preview.html component="combo-box" %}

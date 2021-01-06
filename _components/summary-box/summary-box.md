@@ -9,6 +9,15 @@ type: component
 title: Summary box
 category: Components
 lead: A summary box highlights key information from a longer page or displays next steps.
+subnav:
+- text: Preview
+  href: '#tk-preview'
+- text: Code
+  href: '#tk-code'
+- text: Guidance
+  href: '#tk-guidance'
+- text: Package
+  href: '#tk-package'
 ---
 
 {% include code/preview.html component="summary-box" %}

@@ -15,6 +15,15 @@ lead: A collection displays a compact list of multiple related items like articl
 variants:
   - variant: "`usa-collection--condensed`"
     description: A more condensed item presentation with less space between items.
+subnav:
+- text: Preview
+  href: '#tk-preview'
+- text: Code
+  href: '#tk-code'
+- text: Guidance
+  href: '#tk-guidance'
+- text: Package
+  href: '#tk-package'
 ---
 
 The collection component offers users a way to view short descriptions of related content, providing a simple way to access the original source to learn more. It’s useful when you want to highlight information like articles, events, or documents that appear elsewhere on your website or from other sources.

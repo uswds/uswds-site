@@ -12,6 +12,15 @@ type: component
 title: Search
 category: Components
 lead: Search allows users to search for specific content if they know what search terms to use or can’t find desired content in the main navigation
+subnav:
+- text: Preview
+  href: '#tk-preview'
+- text: Code
+  href: '#tk-code'
+- text: Guidance
+  href: '#tk-guidance'
+- text: Package
+  href: '#tk-package'
 ---
 
 <section class="site-component-section">

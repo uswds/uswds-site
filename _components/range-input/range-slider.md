@@ -11,6 +11,15 @@ type: component
 maturity: alpha
 id_custom: range
 lead: A range slider allows users to choose an approximate number from a range.
+subnav:
+- text: Preview
+  href: '#tk-preview'
+- text: Code
+  href: '#tk-code'
+- text: Guidance
+  href: '#tk-guidance'
+- text: Package
+  href: '#tk-package'
 ---
 
 {% include code/preview.html component="range-slider" %}

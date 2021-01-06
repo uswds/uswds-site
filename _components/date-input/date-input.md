@@ -13,6 +13,15 @@ tags:
   - form controls
   - input
 lead: Three text fields are the easiest way for users to enter most dates.
+subnav:
+- text: Preview
+  href: '#tk-preview'
+- text: Code
+  href: '#tk-code'
+- text: Guidance
+  href: '#tk-guidance'
+- text: Package
+  href: '#tk-package'
 ---
 
 {% include code/preview.html component="date-input" %}

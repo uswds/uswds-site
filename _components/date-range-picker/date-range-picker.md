@@ -7,6 +7,15 @@ permalink: /components/date-range-picker/
 title: Date range picker
 type: component
 lead: A date range picker helps users select a range between two dates.
+subnav:
+- text: Preview
+  href: '#tk-preview'
+- text: Code
+  href: '#tk-code'
+- text: Guidance
+  href: '#tk-guidance'
+- text: Package
+  href: '#tk-package'
 ---
 
 {% include code/preview.html component="date-range-picker" %}

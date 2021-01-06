@@ -9,6 +9,15 @@ type: component
 title: Process list
 category: Components
 lead: A process list displays the steps or stages of important instructions or processes.
+subnav:
+- text: Preview
+  href: '#tk-preview'
+- text: Code
+  href: '#tk-code'
+- text: Guidance
+  href: '#tk-guidance'
+- text: Package
+  href: '#tk-package'
 ---
 
 {% include code/preview.html component="process-list" %}

@@ -9,6 +9,8 @@ redirect_from:
   - /components/
 ---
 
+{% assign uswdsComponents = site.components | where: "parent", null | where: "component.status", "ready" %}
+
 **Getting started.** For getting up and running with USWDS, head over to our [Getting started]({{ site.baseurl }}/documentation/) page for more information.
 
 **Importing only the components your project needs.** See [Component packages]({{ site.baseurl }}/components/packages/)
@@ -18,11 +20,12 @@ redirect_from:
 <div role="region" aria-atomic="true">
   <label for="icon-filter">Type to filter components</label>
   <input class="usa-input" id="icon-filter" class="usa-input" type="text" onkeyup="filter(this)"/>
-  <p class="text-base margin-top-1" aria-live="polite"><span id="component-count"><strong>{{ site.components.size }}</strong> components found.</span></p>
+  <p class="text-base margin-top-1" aria-live="polite"><span id="component-count"><strong>{{ uswdsComponents.size }}</strong> components found.</span></p>
 </div>
 
+
 <div class="usa-card-group flex-row margin-top-4">
-{% for component in site.components %}
+{% for component in uswdsComponents %}
   <li
     class="usa-card site-component-card grid-col-6 tablet:grid-col-4 margin-bottom-2"
     role="region"
@@ -30,7 +33,7 @@ redirect_from:
     data-meta="{{ component.title }} {{ component.meta }}">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h2 class="usa-card__heading font-lang-lg"><a href="{{ component.url }}">{{ component.title }}</a></h2>
+        <h2 class="usa-card__heading font-lang-lg"><a href="{{ component.permalink | prepend: site.baseurl }}">{{ component.title }}</a></h2>
       </header>
       <div class="usa-card__body font-lang-sm">
         {{ component.lead | markdownify }}

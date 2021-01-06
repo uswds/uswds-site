@@ -2,6 +2,7 @@
 title: Scrollable table
 parent: Table
 order: 02
+layout: styleguide
 lead: A scrollable table is ideal for dense, tabular data.
 
 ---

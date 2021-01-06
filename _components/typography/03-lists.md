@@ -1,6 +1,7 @@
 ---
 type: component
 title: Lists
+layout: styleguide
 parent: typography
 order: 03
 lead: "Lists organize information into discrete sequential sections."

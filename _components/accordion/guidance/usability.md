@@ -1,3 +1,2 @@
-{:.usa-content-list}
 - **Make the entire header selectable.** Allow users to click anywhere in the header area to expand or collapse the content; a larger target is easier to manipulate.
 - **Give interactive elements enough space.** Make sure interactive elements within the collapsible region are far enough from the headers that users don’t accidentally trigger a collapse. (The exact distance depends on the device.)

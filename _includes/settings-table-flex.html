@@ -13,7 +13,7 @@
         {% endfor %}
       </tr>
     </thead>
-    <tbody class="font-mono-2xs">
+    <tbody class="font-lang-3xs">
       {% for row in content %}
       <tr>
         {% for column in row %}
@@ -22,9 +22,7 @@
           scope="row"
           data-title="{{ column[0] | capitalize }}"
           >
-          <span class="font-lang-3xs">
-            {{ column[1] | markdownify }}
-          </span>
+          {{ column[1] | markdownify }}
         </td>
         {% endfor %}
       </tr>

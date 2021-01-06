@@ -1,4 +1,3 @@
-{:.usa-content-list}
 - **Code header areas in the accordion as buttons.** Using a `<button>` assures that accordions are usable with both screen readers and the keyboard.
 - **Use `aria-expanded` on buttons to express an accordion’s default state.** Buttons should state if they are expanded by default with `aria-expanded="true"`. The `aria-expanded="false"` attributes will be added to other buttons when the accordion is initialized by the JavaScript.
 - **Use unique ids.** Each button has a unique name `aria-controls="id"` that associates the control to the appropriate region by referencing the controlled element’s `id`.

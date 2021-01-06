@@ -3,12 +3,12 @@ permalink: /components/accordion/
 redirect_from:
   - /accordions/
   - /components/accordions/
-layout: component
-title: Accordion
 category: Components
+title: Accordion
 lead: An accordion is a list of headers that hide or reveal additional content when selected.
 component:
   name: accordion
+  status: ready
   package: usa-accordion
   dependencies:
 variants:

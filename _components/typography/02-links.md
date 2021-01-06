@@ -1,6 +1,7 @@
 ---
 type: component
 title: Links
+layout: styleguide
 parent: typography
 order: 02
 lead: "Links connect users to a different page or further information."

@@ -1,0 +1,86 @@
+{% assign guidancePath = page.guidancePath | default: "guidance" %}
+
+{%- capture when_to_use -%}
+{:.usa-content-list}
+{% include_relative {{guidancePath}}/when-to-use.md -%}
+{%- endcapture -%}
+{%- capture when_to_consider_something_else -%}
+{:.usa-content-list}
+{% include_relative {{guidancePath}}/when-to-consider-something-else.md -%}
+{%- endcapture -%}
+{%- capture usability -%}
+{:.usa-content-list}
+{% include_relative {{guidancePath}}/usability.md -%}
+{%- endcapture -%}
+{%- capture accessibility -%}
+{:.usa-content-list}
+{% include_relative {{guidancePath}}/accessibility.md -%}
+{%- endcapture -%}
+{%- capture implementation -%}
+{:.usa-content-list}
+{% include_relative {{guidancePath}}/implementation.md -%}
+{%- endcapture -%}
+
+{% assign componentName = page.title | downcase %}
+{% assign componentKey = componentName | slugify %}
+{% assign settingsKey = componentKey %}
+
+{% if page.parent %}
+  {% assign componentKey = page.parent | slugify %}
+  {% assign settingsKey = componentKey %}
+  {% if page.component.variant %}
+    {% assign componentKey = componentKey
+      | append: "--"
+      | append: page.component.variant %}
+  {% endif %}
+{% endif %}
+
+{% if page.parent == null and content.size > 1 %}
+<h2 class="site-component-section">About the {{ componentName }} component</h2>
+<div class="font-lang-md measure-5 margin-top-3 margin-bottom-6">
+  {{ content }}
+</div>
+{% endif %}
+
+{% include code/preview.html component=componentKey level="h2" %}
+{% include code/accordion.html component=componentKey level="h2" %}
+
+<h2 id="{{ componentKey }}-guidance" class="site-component-section">Guidance</h2>
+<div class="site-component-usage">
+  <h3>When to use the {{ componentName }} component</h3>
+  {{ when_to_use | markdownify }}
+  <h3>When to consider something else</h3>
+  {{ when_to_consider_something_else | markdownify }}
+  <h3>Usability guidance</h3>
+  {{ usability | markdownify }}
+  <h3 class="usa-heading">Accessibility</h3>
+  {{ accessibility | markdownify }}
+  <h3 class="usa-heading">Implementation</h3>
+  {{ implementation | markdownify }}
+  <h4 id="component-settings">{{ componentName | capitalize }} settings</h4>
+  {% assign settings = site.data.settings.components[settingsKey] %}
+  {% include settings-table-simple.html
+    settings=settings.contents
+  %}
+  <h4 id="component-variants">{{ page.title }} variants</h4>
+  {% include settings-table-flex.html
+    content=page.variants
+    cols="flex-1, flex-1"
+    section="variants"
+  %}
+</div>
+
+<h2 id="{{ name }}-package" class="site-component-section">Package</h2>
+<ul class="usa-content-list">
+  <li>
+    <strong>Package usage:</strong> <code>@import {{ page.component.package}}</code>
+  </li>
+  <li>
+    <strong>Requires:</strong> <code>required</code>, <code>global</code>
+    {%- if page.component.dependencies -%}
+      {%- for dependency in page.component.dependencies -%}
+      , <code>{{ dependency }}</code>
+      {%- endfor -%}
+    {%- endif -%}
+  </li>
+</ul>

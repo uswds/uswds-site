@@ -31,18 +31,28 @@ Components:
   - href: /components/banner/
   - href: /components/breadcrumb/
   - href: /components/button/
-  - href: /components/button-groups/
+  - href: /components/button-group/
   - href: /components/card/
+  - href: /components/character-count/
+  - href: /components/checkbox/
   - href: /components/collection/
+  - href: /components/combo-box/
   - href: /components/data-visualizations/
+  - href: /components/date-input/
+  - href: /components/date-picker/
+  - href: /components/date-range-picker/
+  - href: /components/dropdown/
+  - href: /components/file-input/
   - href: /components/footer/
-  - href: /components/form-controls/
+  - href: /components/form/
   - text: Grid
     href: /utilities/layout-grid/
   - href: /components/header/
   - href: /components/icons/
   - href: /components/identifier/
   - href: /components/process-list/
+  - href: /components/radio-buttons/
+  - href: /components/range-slider/
   - href: /components/search/
   - href: /components/sidenav/
   - href: /components/site-alert/
@@ -50,8 +60,11 @@ Components:
   - href: /components/summary-box/
   - href: /components/table/
   - href: /components/tag/
+  - href: /components/text-input/
+  - href: /components/time-picker/
   - href: /components/tooltip/
   - href: /components/typography/
+  - href: /components/validation/
 
 How to use USWDS:
   - href: /how-to-use-uswds/

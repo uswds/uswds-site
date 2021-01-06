@@ -1,6 +1,7 @@
 ---
 type: component
 title: Prose
+layout: styleguide
 parent: typography
 order: 01
 lead: "Format a block of running text."

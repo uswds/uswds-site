@@ -17,9 +17,9 @@
       {% for setting in settings %}
       <tr>
         <td scope="row" data-title="{{ col1Title }}" class="{{ col1Width }}">
-          <span class="font-mono-2xs font-lang-3xs">
+          <code>
             {{ setting.var }}
-          </span>
+          </code>
         </td>
         <td scope="row" data-title="{{ col2Title }}" class="{{ col2Width }}">
           <span class="font-lang-3xs">
@@ -31,5 +31,5 @@
     </tbody>
   </table>
 {% else %}
-  <p>This component has no settings.</p>
+  <p><em>This component has no settings.</em></p>
 {% endif %}

@@ -2,6 +2,7 @@
 title: Borderless table
 parent: Table
 order: 01
+layout: styleguide
 lead: A borderless table can be useful when you want the information to feel more a part of the text it accompanies and extends.
 
 ---

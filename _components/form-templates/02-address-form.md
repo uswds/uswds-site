@@ -33,9 +33,6 @@ lead: Enter a standard U.S. mailing or shipping address
     <ul class="usa-content-list">
       <li>As you customize this form template, make sure it continues to follow the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines for form templates</a> and the <a href="{{ site.baseurl }}/form-controls/">accessibility guidelines for form controls</a>.</li>
     </ul>
-    <ul class="usa-content-list">
-      <li>As you customize this form template, make sure it continues to follow the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines for form templates</a> and the <a href="{{ site.baseurl }}/form-controls/">accessibility guidelines for form controls</a>.</li>
-    </ul>
 
     <h4>Implementation</h4>
     <ul class="usa-content-list">

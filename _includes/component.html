@@ -1,23 +1,26 @@
 {% assign guidancePath = page.guidancePath | default: "guidance" %}
 
+{% assign guidanceFormat = "{:.usa-content-list}" %}
+{% assign guidanceNullLength = guidanceFormat.size | plus: 1 %}
+
 {%- capture when_to_use -%}
-{:.usa-content-list}
+{{ guidanceFormat }}
 {% include_relative {{guidancePath}}/when-to-use.md -%}
 {%- endcapture -%}
 {%- capture when_to_consider_something_else -%}
-{:.usa-content-list}
+{{ guidanceFormat }}
 {% include_relative {{guidancePath}}/when-to-consider-something-else.md -%}
 {%- endcapture -%}
 {%- capture usability -%}
-{:.usa-content-list}
+{{ guidanceFormat }}
 {% include_relative {{guidancePath}}/usability.md -%}
 {%- endcapture -%}
 {%- capture accessibility -%}
-{:.usa-content-list}
+{{ guidanceFormat }}
 {% include_relative {{guidancePath}}/accessibility.md -%}
 {%- endcapture -%}
 {%- capture implementation -%}
-{:.usa-content-list}
+{{ guidanceFormat }}
 {% include_relative {{guidancePath}}/implementation.md -%}
 {%- endcapture -%}
 
@@ -47,16 +50,26 @@
 
 <h2 id="{{ componentKey }}-guidance" class="site-component-section">Guidance</h2>
 <div class="site-component-usage">
+  {% if when_to_use.size > guidanceNullLength %}
   <h3>When to use the {{ componentName }} component</h3>
   {{ when_to_use | markdownify }}
+  {% endif %}
+  {% if when_to_consider_something_else.size > guidanceNullLength %}
   <h3>When to consider something else</h3>
   {{ when_to_consider_something_else | markdownify }}
+  {% endif %}
+  {% if usability.size > guidanceNullLength %}
   <h3>Usability guidance</h3>
   {{ usability | markdownify }}
+  {% endif %}
+  {% if accessibility.size > guidanceNullLength %}
   <h3 class="usa-heading">Accessibility</h3>
   {{ accessibility | markdownify }}
+  {% endif %}
   <h3 class="usa-heading">Implementation</h3>
+  {% if implementation.size > guidanceNullLength %}
   {{ implementation | markdownify }}
+  {% endif %}
   <h4 id="component-settings">{{ componentName | capitalize }} settings</h4>
   {% assign settings = site.data.settings.components[settingsKey] %}
   {% include settings-table-simple.html

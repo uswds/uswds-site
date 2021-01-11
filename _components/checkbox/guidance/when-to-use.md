@@ -1,2 +1,2 @@
-{:.usa-content-list}
-- **Hed.** Text.
+- **To display multiple answers.** When a user can select any number of choices from a list.
+- **To allow users to toggle answers.** When a user needs to acknowledge acceptance of something (like terms of service) or switch between two opposite states, such as unchecked = “no” and checked = “yes.”

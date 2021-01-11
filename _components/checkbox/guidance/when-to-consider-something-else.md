@@ -1,2 +1,1 @@
-{:.usa-content-list}
-- **Hed.** Text.
+- **Single-select only.** If a user can only select one option from a list of many, use [radio buttons]({{ site.baseurl }}/component/radio-buttons) instead.

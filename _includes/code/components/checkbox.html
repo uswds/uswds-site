@@ -1,0 +1,9 @@
+<h6 class="site-preview-heading">Default</h6>
+{% capture checkbox %}
+  {% fractal_component checkbox %}
+{% endcapture %}{{ checkbox | strip }}
+
+<h6 class="site-preview-heading">Tile</h6>
+{% capture checkbox--tile %}
+  {% fractal_component checkbox--tile %}
+{% endcapture %}{{ checkbox--tile | strip }}

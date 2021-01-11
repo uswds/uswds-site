@@ -1,2 +1,4 @@
-{:.usa-content-list}
-- **Hed.** Text.
+- **Customize accessibly.** If you customize the text inputs, ensure they continue to meet the accessibility requirements that apply to all form controls.
+- **Use a fieldset and legend for a checkbox group.** Surround a related set of checkboxes with a `<fieldset>`. The `<legend>` provides context for the grouping. Don’t use fieldset and legend for a single check.
+- **These custom checkboxes are accessible.** The custom checkboxes here are accessible to screen readers because the default checkboxes are moved off-screen with `position: absolute; left: -999em`.
+- **Use semantic tags.** Each input should have a semantic tag for the `id` attribute, and its corresponding label should have the same value in its `for` attribute.

@@ -2962,6 +2962,10 @@ $theme-table-column-gap: 4;
     @extend %header-margin;
     color: color("ink");
     margin: 0;
+
+    & + p {
+      margin-top: units(1);
+    }
   }
 
   h3 {
@@ -3420,7 +3424,7 @@ body {
 }
 
 .site-prose {
-  .site-component-section {
+  .site-component-section-title {
     @extend .site-h2;
     border-top: units(1px) solid;
     margin-bottom: units(2);

@@ -18,8 +18,8 @@ subnav:
   href: '#bar-charts'
 ---
 <div class="site-note"><strong>Note:</strong> The data visualizations components are guidance-only and do not include any <code>Component Code</code>. The examples of specific visualizations included with our guidance are intended to be a demonstration of one way to implement our guidance with a focus on accessibility and assistive tooling.</div>
-<section class="site-component-section">
-  <h2 id="general-guidance" class="usa-heading-alt">General guidance</h2>
+<section class="site-component-section site-component-usage">
+  <h2 id="general-guidance" class="site-component-name">General guidance</h2>
   <p>Usability and accessibility are complementary goals for data visualizations.</p>
   <h3 class="margin-bottom-1">Simplicity</h3>
   <ul class="usa-content-list">
@@ -76,8 +76,8 @@ subnav:
   </ul>
 </section>
 
-<section id="section-linechart" class="site-component-section">
-<h2 class="usa-heading-alt" id="line-charts">Line charts</h2>
+<section id="section-linechart" class="site-component-section site-component-usage">
+<h2 class="site-component-name" id="line-charts">Line charts</h2>
 
 <p class="site-text-intro">Line charts are ideal for depicting trends in data over time using a continuous line.</p>
 
@@ -290,8 +290,8 @@ subnav:
   </ul>
 
 </section>
-<section id="section-barchart" class="site-component-section">
-  <h2 class="usa-heading-alt" id="bar-charts">Bar charts</h2>
+<section id="section-barchart" class="site-component-section site-component-usage">
+  <h2 class="site-component-name" id="bar-charts">Bar charts</h2>
 
   <p class="site-text-intro">Bar charts are ideal for displaying categorical data.</p>
 

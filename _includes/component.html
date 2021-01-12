@@ -39,7 +39,7 @@
 {% endif %}
 
 {% if page.parent == null and content.size > 1 %}
-<h2 class="site-component-section">About the {{ componentName }} component</h2>
+<h2 class="site-component-section-title">About the {{ componentName }} component</h2>
 <div class="font-lang-md measure-5 margin-top-3 margin-bottom-6">
   {{ content }}
 </div>
@@ -48,7 +48,7 @@
 {% include code/preview.html component=componentKey level="h2" %}
 {% include code/accordion.html component=componentKey level="h2" %}
 
-<h2 id="{{ componentKey }}-guidance" class="site-component-section">Guidance</h2>
+<h2 id="{{ componentKey }}-guidance" class="site-component-section-title">Guidance</h2>
 <div class="site-component-usage">
   {% if when_to_use.size > guidanceNullLength %}
   <h3>When to use the {{ componentName }} component</h3>
@@ -83,7 +83,7 @@
   %}
 </div>
 
-<h2 id="{{ name }}-package" class="site-component-section">Package</h2>
+<h2 id="{{ name }}-package" class="site-component-section-title">Package</h2>
 <ul class="usa-content-list">
   <li>
     <strong>Package usage:</strong> <code>@import {{ page.component.package}}</code>

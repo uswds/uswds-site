@@ -28,7 +28,7 @@ If you’re unable to use a shared service like login.gov, use our authenticatio
 - [Multiple sign-in options](#multiple-sign-in-options)
 
 
-<div class="site-component-section" markdown="1">
+<div class="site-component-section-title" markdown="1">
 
 ## Create account
 
@@ -94,7 +94,7 @@ NIST Special Publication 800-63-3, [Digital Identity Guidelines](https://pages.n
 </div>
 </div>
 
-<div class="site-component-section" markdown="1">
+<div class="site-component-section-title" markdown="1">
 
 ## Sign-in
 
@@ -154,7 +154,7 @@ Provide users with a clear and uncluttered sign-in experience.
 </div>
 </div>
 
-<div class="site-component-section" markdown="1">
+<div class="site-component-section-title" markdown="1">
 
 ## Multiple sign-in options
 

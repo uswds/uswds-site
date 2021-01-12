@@ -1,15 +1,15 @@
 {% assign content = include.content %}
 
 {% if content != nil  %}
-  {% assign schema = content[0] %}
+  {% assign tableData = content[0] %}
   {% assign cols = include.cols | remove: " " | split: "," %}
 
   <table class="usa-table--borderless site-table-responsive site-table-simple margin-top-105">
     <thead>
       <tr>
-        {% for item in schema %}
+        {% for tableItem in tableData %}
         {% assign colKey = forloop.index | minus: 1 %}
-        <th scope="col" class="{{ cols[colKey] }}">{{ item[0] | capitalize }}</th>
+        <th scope="col" class="{{ cols[colKey] }}">{{ tableItem[0] | capitalize }}</th>
         {% endfor %}
       </tr>
     </thead>

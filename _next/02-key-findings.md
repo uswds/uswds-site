@@ -1,6 +1,6 @@
 ---
 title: Key findings
-section_class: blueprint-section--dark
+section_class: next-section--dark
 findings:
 - title: Understand the value and benefits
   text: Agencies need to be able to quickly discern the design system’s benefits and how it aligns with their goals for delivering better digital services.
@@ -31,14 +31,14 @@ Though agencies start with different goals and capabilities, we discovered they 
 </div>
 
 <div>
-  <ul class="blueprint-findings__list">
+  <ul class="next-findings__list">
     {% for finding in page.findings %}
-      <li class="blueprint-findings__item grid-row">
+      <li class="next-findings__item grid-row">
         <div class="grid-col-12 tablet:grid-col-3">
-          <img class="blueprint-findings__img" src="{{ site.baseurl }}/img/blueprint/{{ finding.img }}.svg" alt="" role="presentation">
+          <img class="next-findings__img" src="{{ site.baseurl }}/img/next/{{ finding.img }}.svg" alt="" role="presentation">
         </div>
-        <div class="blueprint-findings__body usa-prose grid-col-12 tablet:grid-col-9">
-          <h3 class="blueprint-findings__heading">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}. {{ finding.title }}</h3>
+        <div class="next-findings__body usa-prose grid-col-12 tablet:grid-col-9">
+          <h3 class="next-findings__heading">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}. {{ finding.title }}</h3>
           {{ finding.text | markdownify}}
         </div>
       </li>

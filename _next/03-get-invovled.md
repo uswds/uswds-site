@@ -29,17 +29,17 @@ Let’s work together to transform the way we design and deliver a digital gover
 </div>
 </div>
 
-<div class="grid-row tablet:margin-x-neg-205 blueprint-involvements">
+<div class="grid-row tablet:margin-x-neg-205 next-involvements">
   {% for item in page.ways %}
-    <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205 blueprint-involvements__item">
+    <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205 next-involvements__item">
       <div>
-        <img class="blueprint-involvements__img" src="{{ site.baseurl }}/img/blueprint/{{ item.icon }}.svg" alt="" role="presentation">
-        <h3 class="blueprint-involvements__heading">{{ item.title }}</h3>
-        <div class="blueprint-involvements__body usa-prose">
+        <img class="next-involvements__img" src="{{ site.baseurl }}/img/next/{{ item.icon }}.svg" alt="" role="presentation">
+        <h3 class="next-involvements__heading">{{ item.title }}</h3>
+        <div class="next-involvements__body usa-prose">
           {{ item.text | markdownify }}
         </div>
       </div>
-      <a href="#" class="usa-button usa-button--blueprint blueprint-involvements__button">{{ item.button_text }}</a>
+      <a href="#" class="usa-button usa-button--next next-involvements__button">{{ item.button_text }}</a>
     </div>
   {% endfor %}
 </div>

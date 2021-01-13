@@ -1,0 +1,58 @@
+---
+layout: next
+permalink: /next/
+title: Transforming the American digital experience
+subhead: What’s next for the U.S. Web Design System
+---
+
+<header class="next-hero">
+  <div class="grid-container">
+    <div class="next-hero__content">
+      <h1 class="next-hero__heading">{{ page.title }}</h1>
+      <p class="next-hero__subhead">{{ page.subhead }}</p>
+    </div>
+  </div>
+  <div class="next-hero__banner-container">
+    <picture>
+      <source media="(max-width: 799px)" srcset="{{ site.baseurl }}/img/next/cover-pattern-mobile.svg ">
+      <source media="(min-width: 800px)" srcset="{{ site.baseurl }}/img/next/cover-pattern.svg">
+      <img  class="next-hero__banner" src="{{ site.baseurl }}/img/next/cover-pattern.svg" alt="" role="presentation">
+    </picture>
+  </div>
+  <div class="grid-container">
+    <div class="grid-row">
+      <div class="next-hero__ownership">
+        <div class="next-hero__ownership-item">
+          <img class="next-hero__ownership-img" src="{{ site.baseurl }}/img/next/uswds.svg"  alt="" role="img">
+          <span>U.S. Web Design System</span>
+        </div>
+        <div class="next-hero__ownership-item">
+          <img class="next-hero__ownership-img" src="{{ site.baseurl }}/img/gsa-logo.svg" alt="" role="img">
+          <span>A product of the U.S. General <br/>Services Administration</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="next-internal-nav">
+  <div class="grid-container">
+    <ul id="internal-nav" class="next-internal-nav__list">
+      {% for item in site.next %}
+        <li class="next-internal-nav__item">
+          <a href="#section-{{ forloop.index }}" class="next-internal-nav__link">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<main role="main" id="main-content">
+  {% for item in site.next %}
+    <section id="section-{{ forloop.index }}" class="next-section {{ item.section_class }}">
+      <div class="grid-container">
+        {{ item.content | markdownify }}
+      </div>
+    </section>
+  {% endfor %}
+</main>

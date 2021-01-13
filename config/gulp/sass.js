@@ -87,9 +87,9 @@ gulp.task("build-sass-custom", function() {
     .pipe(gulp.dest("_site/assets/css"));
 });
 
-gulp.task("build-blueprint-sass", function() {
+gulp.task("build-next-sass", function() {
   return gulp
-    .src("./css/uswds-blueprint.scss")
+    .src("./css/uswds-next.scss")
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass
@@ -146,11 +146,11 @@ gulp.task(
 );
 
 gulp.task(
-  "build-blueprint-dev",
+  "build-next-dev",
   gulp.parallel(
     "build-sass-fonts",
     "build-sass-components",
-    "build-blueprint-sass",
+    "build-next-sass",
     "build-sass-utilities"
   )
 );
@@ -176,14 +176,14 @@ gulp.task("build-sass-prod", function() {
     .pipe(gulp.dest("_site/assets/css"));
 });
 
-gulp.task("build-blueprint-prod", function() {
+gulp.task("build-next-prod", function() {
   return gulp
     .src([
       "./assets/css/uswds-fonts.css",
       "./assets/css/uswds-components.css",
       "./assets/css/uswds-custom.css",
       "./assets/css/uswds-utilities.css",
-      "./assets/css/uswds-blueprint.css"
+      "./assets/css/uswds-next.css"
     ])
     .pipe(
       sourcemaps.init({
@@ -191,14 +191,14 @@ gulp.task("build-blueprint-prod", function() {
         loadMaps: true
       })
     )
-    .pipe(concat("styles-blueprint.css"))
+    .pipe(concat("styles-next.css"))
     .pipe(postcss(prod_plugins))
     .pipe(sourcemaps.write("."))
     .pipe(gulp.dest("assets/css"))
     .pipe(gulp.dest("_site/assets/css"));
 });
 
-gulp.task("build-sass", gulp.series("build-sass-dev", "build-blueprint-dev", "build-sass-prod", "build-blueprint-prod"));
+gulp.task("build-sass", gulp.series("build-sass-dev", "build-next-dev", "build-sass-prod", "build-next-prod"));
 
 gulp.task("scss-lint", function(done) {
   if (!cFlags.test) {

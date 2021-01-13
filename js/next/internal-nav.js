@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function (){
 
   if (typeof(internalNav) != 'undefined' && internalNav != null) {
 
-    var internalNavLinks = internalNav.querySelectorAll('.blueprint-internal-nav__link');
+    var internalNavLinks = internalNav.querySelectorAll('.next-internal-nav__link');
     var CURRENT_CLASS = 'current';
     var internalNavHeight = internalNav.clientHeight;
 

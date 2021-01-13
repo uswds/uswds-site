@@ -27,16 +27,16 @@
 
 // Page width
 // -------------------------------------
-.blueprint-hero .grid-container,
-.blueprint-internal-nav .grid-container,
-.blueprint-section .grid-container {
+.next-hero .grid-container,
+.next-internal-nav .grid-container,
+.next-section .grid-container {
   max-width: 65rem !important;
   width: 100%;
 }
 
 // Hero
 // -------------------------------------
-.blueprint-hero {
+.next-hero {
   align-content: center;
   align-items: center;
   background-color: color("gray-80");
@@ -45,7 +45,7 @@
   flex-direction: column;
 }
 
-.blueprint-hero__content {
+.next-hero__content {
   display: flex;
   flex-direction: column;
   margin: units(3) 0;
@@ -61,7 +61,7 @@
   }
 }
 
-.blueprint-hero__heading {
+.next-hero__heading {
   font-size: size('lang', 12);
   line-height: line-height('lang', 2);
   margin: 0;
@@ -72,7 +72,7 @@
   }
 }
 
-.blueprint-hero__subhead {
+.next-hero__subhead {
   font-size: size('lang', 8);
   line-height: line-height('lang', 2);
   margin: units(2) 0 0;
@@ -83,16 +83,16 @@
   }
 }
 
-.blueprint-hero__banner-container {
+.next-hero__banner-container {
   width: 100%;
 }
 
-.blueprint-hero__banner {
+.next-hero__banner {
   display: block;
   width: 100%;
 }
 
-.blueprint-hero__ownership {
+.next-hero__ownership {
   width: 100%; 
 
   @include at-media("tablet") {
@@ -104,7 +104,7 @@
   }
 }
 
-.blueprint-hero__ownership-item {
+.next-hero__ownership-item {
   align-items: center;
   display: flex;
   margin: units(2) 0;
@@ -114,7 +114,7 @@
   }
 }
 
-.blueprint-hero__ownership-img {
+.next-hero__ownership-img {
   display: block;
   margin-right: units(1.5);
   width: 28px;
@@ -124,11 +124,11 @@
   }
 }
 
-.blueprint-hero__ownership-item:first-of-type {
+.next-hero__ownership-item:first-of-type {
   @include at-media("tablet") {
     flex-direction: row-reverse;
 
-    .blueprint-hero__ownership-img {
+    .next-hero__ownership-img {
       margin-left: units(1.5);
       margin-right: 0;
     }
@@ -137,7 +137,7 @@
 
 // Internal nav
 // -------------------------------------
-.blueprint-internal-nav {
+.next-internal-nav {
   background-color: color("gray-5");
   position: sticky;
   left: 0;
@@ -145,7 +145,7 @@
   z-index: z('top'); 
 }
 
-.blueprint-internal-nav__list {
+.next-internal-nav__list {
   display: flex;
   list-style: none;
   justify-content: space-around;
@@ -157,7 +157,7 @@
   }
 }
 
-.blueprint-internal-nav__item {
+.next-internal-nav__item {
   margin: units(1) 0;
   padding: 0;
   @include at-media("tablet") {
@@ -166,8 +166,8 @@
   }
 }
 
-.blueprint-internal-nav__link,
-.blueprint-internal-nav__link:visited {
+.next-internal-nav__link,
+.next-internal-nav__link:visited {
   border-bottom: 2px solid transparent;
   color: color("mint-60");
   display: block;
@@ -189,7 +189,7 @@
 
 // Button
 // -------------------------------------
-.usa-button--blueprint {
+.usa-button--next {
   background-color: color("mint-60");
 
   &:hover,
@@ -204,7 +204,7 @@
 
 // Section
 // -------------------------------------
-.blueprint-overview {
+.next-overview {
   margin-top: 1em;
 
   @include at-media("tablet") {
@@ -212,7 +212,7 @@
   }
 }
 
-.blueprint-section {
+.next-section {
   padding-bottom: units(9);
   padding-top: units(9);
 
@@ -231,20 +231,20 @@
   }
 }
 
-.blueprint-section--dark {
+.next-section--dark {
   background-color: color("gray-80");
   color: color("white");
 }
 
 // Findings
 // -------------------------------------
-.blueprint-findings__list {
+.next-findings__list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.blueprint-findings__item {
+.next-findings__item {
   display: flex;
   flex-direction: column;
   margin: units(5) 0;
@@ -255,7 +255,7 @@
   }
 }
 
-.blueprint-findings__img {
+.next-findings__img {
   display: block;
   height: 58px;
   width: 58px;
@@ -273,7 +273,7 @@
   }
 }
 
-.blueprint-findings__heading {
+.next-findings__heading {
   font-family: family('lang') !important;
   font-size: size('lang', 9) !important;
   margin: 0 !important;
@@ -283,7 +283,7 @@
   }
 }
 
-.blueprint-findings__body {
+.next-findings__body {
 
   p:first-of-type {
     margin-top: 0 !important;
@@ -293,14 +293,14 @@
 // Involvements
 // -------------------------------------
 
-.blueprint-involvements__item {
+.next-involvements__item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: units(4) 0;
 }
 
-.blueprint-involvements__img {
+.next-involvements__img {
   display: block;
   height: 63px;
   margin-bottom: units(2);
@@ -313,15 +313,15 @@
   }
 }
 
-.blueprint-involvements__button{
+.next-involvements__button{
   align-self: flex-start;
 }
 
-.blueprint-involvements__heading {
+.next-involvements__heading {
   font-size: size('lang', 10);
   margin: 0;
 }
 
-.blueprint-involvements__body {
+.next-involvements__body {
   margin-bottom: units(3);
 }

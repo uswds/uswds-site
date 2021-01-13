@@ -3459,3 +3459,21 @@ body {
   left: auto;
   right: 0;
 }
+
+* + .usa-form-group {
+  margin-top: units(2)
+}
+
+.usa-form-group {
+  .usa-label:first-child {
+    margin-top: 0;
+  }
+}
+
+* + .usa-memorable-date {
+  margin-top: units(2)
+}
+
+.usa-memorable-date .usa-form-group {
+  margin-top: 0;
+}

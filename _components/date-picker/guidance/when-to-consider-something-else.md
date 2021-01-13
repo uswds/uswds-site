@@ -1,2 +1,2 @@
-{:.usa-content-list}
-- **Hed.** Text.
+- **Familiar dates.** When asking users for a date they know well, or can look up without using a calendar (like a birthday), use [date input]({{ site.baseurl }}//components/date-input) fields.
+- **When the day of the week is irrelevant.** If there's no benefit to knowing the day of the week for a particular date, consider [date input]({{ site.baseurl }}//components/date-input) fields.

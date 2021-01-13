@@ -3449,3 +3449,13 @@ body {
     margin-top: 0;
   }
 }
+
+.usa-date-picker__wrapper {
+  max-width: units($theme-input-max-width);
+}
+
+.usa-date-picker__calendar {
+  max-width: units("mobile-lg");
+  left: auto;
+  right: 0;
+}

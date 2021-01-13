@@ -1,2 +1,1 @@
-{:.usa-content-list}
-- **Hed.** Text.
+- **Appropriate for most dates.** Appropriate for most dates.

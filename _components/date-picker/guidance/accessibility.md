@@ -1,2 +1,2 @@
-{:.usa-content-list}
-- **Hed.** Text.
+- **Follow input guidance.** If you customize the date picker, ensure it continues to meet the [accessibility requirements that apply to all form controls]({{ site.baseurl }}components/form-controls/).
+- **Avoid auto-submission.** Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Auto-submission disrupts screen readers because they select each option as they read them.

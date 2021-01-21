@@ -25,7 +25,6 @@ lead: An icon list displays a static unordered list of significant importance.
 - **Nonlinear processes.** On pages highlighting processes that can be completed in any order, use an icon list to create a clear informational hierarchy and help users easily distinguish different steps in the process while retaining the flexibility to communicate the steps without a particular order.
 - **Required actions or verification lists.** Use an icon list to display required actions or items that users can reference to verify they've completed necessary tasks.
 - **Formatting for print.** Users may wish to print a page and use it as a manual checklist. The icon list provides additional customization usually only available in flat document file types (e.g., pdf, jpg, .gif).  Use this component to ensure the page can be printed from the browser and maintain the desired format and design.
-
 ### When to consider something else
 
 {:.usa-content-list}

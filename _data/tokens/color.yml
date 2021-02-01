@@ -69,6 +69,10 @@ state:
     default: "red-60v"
   - token: error-darker
     default: "red-70"
+  - token: theme-color-emergency
+    default: "red-warm-60v"
+  - token: theme-color-emergency-dark
+    default: "red-warm-80"
   - token: warning-lighter
     default: "yellow-5"
   - token: warning-light

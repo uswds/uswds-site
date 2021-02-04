@@ -26,7 +26,7 @@ Support USWDS and send the designer or developer you care about some #GovLove wi
 ![A collection of usa buttons with the chorus from the song Love Fool by the Cardigans]({{ site.baseurl }}/img/2021-govlove-blog/WDS_valentines_2021_SocialArtwork_3.png)
 
 ## Six columns are not enough. My heart could fill this entire [grid]({{ site.baseurl }}/utilities/layout-grid/)!
-![A browser window showing a heart filling up the entire USWDS grid]{{ site.baseurl }}(/img/2021-govlove-blog/WDS_valentines_2021_SocialArtwork_4.png)
+![A browser window showing a heart filling up the entire USWDS grid]({{ site.baseurl }}/img/2021-govlove-blog/WDS_valentines_2021_SocialArtwork_4.png)
 
 ## For you, a [token]({{ site.baseurl }}/design-tokens/color/system-tokens/) of my love…Roses are 'red-50', violets are 'blue-cool-60v'.
 ![A centered rose and violet using USWDS color tokens describing their colors]({{ site.baseurl }}/img/2021-govlove-blog/WDS_valentines_2021_SocialArtwork_5.png)

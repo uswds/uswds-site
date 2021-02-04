@@ -4,11 +4,13 @@ tags:
 - updates
 - design
 category: About
-author: TK
+author: Ammie Farraj Feijoo, Dan O. Williams
 meta:
   og:image: /img/2021-govlove-blog/WDS_valentines_2021_SocialArtwork_1.png
 excerpt: In this digital age, it’s simpler than ever to share the &#x23;GovLove virtually on Valentine’s Day, and the U.S. Web Design System (USWDS) is here to help you do just that.
 ---
+
+In this digital age, it’s simpler than ever to share the #GovLove virtually on Valentine’s Day, and the U.S. Web Design System (USWDS) is here to help you do just that.
 
 The more you adopt the design system, the easier it is to deliver the right content to the right people at the right time.
 
@@ -27,4 +29,4 @@ Support USWDS and send the designer or developer you care about some #GovLove wi
 ![A browser window showing a heart filling up the entire USWDS grid]{{ site.baseurl }}(/img/2021-govlove-blog/WDS_valentines_2021_SocialArtwork_4.png)
 
 ## For you, a [token]({{ site.baseurl }}/design-tokens/color/system-tokens/) of my love…Roses are 'red-50', violets are 'blue-cool-60v'.
-![A centered violet and rose using USWDS color tokens describing their colors]({{ site.baseurl }}/img/2021-govlove-blog/WDS_valentines_2021_SocialArtwork_5.png)
+![A centered rose and violet using USWDS color tokens describing their colors]({{ site.baseurl }}/img/2021-govlove-blog/WDS_valentines_2021_SocialArtwork_5.png)

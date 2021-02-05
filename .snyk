@@ -127,6 +127,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No available upgrade or patch.
+        expires: '2021-03-03T17:37:12.775Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -146,6 +149,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No available upgrade or patch.
+        expires: '2021-03-03T17:37:12.775Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -165,6 +171,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No available upgrade or patch.
+        expires: '2021-03-03T17:37:12.775Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -184,6 +193,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No available upgrade or patch.
+        expires: '2021-03-03T17:37:12.775Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -203,6 +215,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No available upgrade or patch.
+        expires: '2021-03-03T17:37:12.775Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -241,6 +256,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-03-03T17:37:12.775Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -260,6 +278,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-03-03T17:37:12.775Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -279,6 +300,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-03-03T17:37:12.775Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -298,6 +322,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-03-03T17:37:12.775Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -317,6 +344,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-03-03T17:37:12.775Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -336,6 +366,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-03-03T17:37:12.775Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -355,6 +388,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-03-03T17:37:12.775Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -395,6 +431,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2021-01-06T19:39:05.430Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-02-14T18:33:52.502Z'
   SNYK-JS-NODESASS-541002:
     - uswds > gulp-sass > node-sass:
         reason: No patch available
@@ -420,6 +459,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2021-01-06T19:39:05.430Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-02-14T18:33:52.502Z'
   'npm:braces:20180219':
     - uswds > nswatch > chokidar > anymatch > micromatch > braces:
         reason: No patch available
@@ -443,7 +485,7 @@ ignore:
   SNYK-JS-GULPSCSSLINT-560114:
     - gulp-scss-lint:
         reason: No patch available
-        expires: '2021-01-06T19:39:05.429Z'
+        expires: '2021-02-14T18:33:52.502Z'
   SNYK-JS-HTTPPROXY-569139:
     - uswds > @frctl/fractal > browser-sync > http-proxy:
         reason: n/a
@@ -630,6 +672,166 @@ ignore:
     - node-notifier:
         reason: None given
         expires: '2021-01-12T23:05:22.678Z'
+  SNYK-JS-CACHEBASE-1054631:
+    - sass > chokidar > anymatch > micromatch > braces > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:04:04.035Z'
+    - gulp > glob-watcher > anymatch > micromatch > braces > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:04:04.035Z'
+    - uswds > @frctl/core > anymatch > micromatch > braces > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:04:04.035Z'
+    - gulp > glob-watcher > anymatch > micromatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.058Z'
+    - sass > chokidar > readdirp > micromatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.058Z'
+    - gulp > gulp-cli > matchdep > micromatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.058Z'
+    - sass > chokidar > readdirp > micromatch > braces > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.058Z'
+    - gulp > gulp-cli > matchdep > micromatch > braces > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.058Z'
+    - sass > chokidar > anymatch > micromatch > extglob > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.058Z'
+    - gulp > glob-watcher > anymatch > micromatch > extglob > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.058Z'
+    - sass > chokidar > readdirp > micromatch > extglob > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - gulp > gulp-cli > matchdep > micromatch > extglob > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - sass > chokidar > anymatch > micromatch > nanomatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - gulp > glob-watcher > anymatch > micromatch > nanomatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - sass > chokidar > readdirp > micromatch > nanomatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - gulp > gulp-cli > matchdep > micromatch > nanomatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > braces > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > braces > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > braces > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.059Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > braces > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.060Z'
+    - sass > chokidar > anymatch > micromatch > extglob > expand-brackets > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.060Z'
+    - gulp > glob-watcher > anymatch > micromatch > extglob > expand-brackets > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.060Z'
+    - sass > chokidar > readdirp > micromatch > extglob > expand-brackets > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.060Z'
+    - gulp > gulp-cli > matchdep > micromatch > extglob > expand-brackets > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.060Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > extglob > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.060Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > extglob > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.060Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > extglob > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.060Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > extglob > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.060Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > nanomatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.060Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > nanomatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.060Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > nanomatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.060Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > nanomatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.061Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > extglob > expand-brackets > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.061Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > extglob > expand-brackets > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.061Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > extglob > expand-brackets > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.061Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > extglob > expand-brackets > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.061Z'
+    - sass > chokidar > braces > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.057Z'
+    - gulp > glob-watcher > chokidar > braces > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.058Z'
+    - sass > chokidar > anymatch > micromatch > snapdragon > base > cache-base:
+        reason: None given
+        expires: '2021-01-27T19:07:41.058Z'
+  SNYK-JS-GLOBPARENT-1016905:
+    - gulp-eslint > eslint > glob-parent:
+        reason: None given
+        expires: '2021-02-14T18:33:52.502Z'
+    - del > globby > fast-glob > glob-parent:
+        reason: None given
+        expires: '2021-02-14T18:33:52.502Z'
+    - uswds > del > globby > fast-glob > glob-parent:
+        reason: None given
+        expires: '2021-02-14T18:33:52.502Z'
+    - sass > chokidar > glob-parent:
+        reason: None given
+        expires: '2021-02-14T18:33:52.502Z'
+    - gulp > glob-watcher > chokidar > glob-parent:
+        reason: None given
+        expires: '2021-02-14T18:33:52.502Z'
+    - gulp > vinyl-fs > glob-stream > glob-parent:
+        reason: None given
+        expires: '2021-02-14T18:33:52.502Z'
+    - gulp-scss-lint > vinyl-fs > glob-stream > glob-parent:
+        reason: None given
+        expires: '2021-02-14T18:33:52.502Z'
+  SNYK-JS-NODESASS-1059081:
+    - gulp-sass > node-sass:
+        reason: No available upgrade or patch.
+        expires: '2021-03-03T17:37:12.775Z'
+  SNYK-JS-NODESASS-535500:
+    - gulp-sass > node-sass:
+        reason: No available upgrade or patch.
+        expires: '2021-03-03T17:37:12.775Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':
@@ -641,7 +843,7 @@ patch:
         patched: '2018-05-15T14:15:25.814Z'
   'npm:lodash:20180130':
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
-        patched: '2020-12-12T17:59:29.333Z'
+        patched: '2020-12-28T19:02:54.287Z'
   SNYK-JS-LODASH-567746:
     - gulp-eslint > eslint > lodash:
         patched: '2020-05-28T21:31:56.381Z'

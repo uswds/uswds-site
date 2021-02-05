@@ -127,6 +127,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No available upgrade or patch.
+        expires: '2021-03-03T17:37:12.775Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -146,6 +149,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No available upgrade or patch.
+        expires: '2021-03-03T17:37:12.775Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -165,6 +171,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No available upgrade or patch.
+        expires: '2021-03-03T17:37:12.775Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -184,6 +193,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No available upgrade or patch.
+        expires: '2021-03-03T17:37:12.775Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -203,6 +215,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No available upgrade or patch.
+        expires: '2021-03-03T17:37:12.775Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -241,6 +256,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-03-03T17:37:12.775Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -260,6 +278,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-03-03T17:37:12.775Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -279,6 +300,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-03-03T17:37:12.775Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -298,6 +322,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-03-03T17:37:12.775Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -317,6 +344,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-03-03T17:37:12.775Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -336,6 +366,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-03-03T17:37:12.775Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -355,6 +388,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-03-03T17:37:12.775Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -374,9 +410,6 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2021-01-11T18:00:56.004Z'
-      gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-02-14T18:33:52.502Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-12-05T20:04:38.630Z'
@@ -398,13 +431,13 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2021-01-06T19:39:05.430Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-02-14T18:33:52.502Z'
   SNYK-JS-NODESASS-541002:
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2021-01-11T18:00:56.004Z'
-      gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-02-14T18:33:52.502Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-12-05T20:04:38.630Z'
@@ -426,6 +459,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2021-01-06T19:39:05.430Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-02-14T18:33:52.502Z'
   'npm:braces:20180219':
     - uswds > nswatch > chokidar > anymatch > micromatch > braces:
         reason: No patch available
@@ -788,6 +824,14 @@ ignore:
     - gulp-scss-lint > vinyl-fs > glob-stream > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
+  SNYK-JS-NODESASS-1059081:
+    - gulp-sass > node-sass:
+        reason: No available upgrade or patch.
+        expires: '2021-03-03T17:37:12.775Z'
+  SNYK-JS-NODESASS-535500:
+    - gulp-sass > node-sass:
+        reason: No available upgrade or patch.
+        expires: '2021-03-03T17:37:12.775Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

@@ -421,13 +421,13 @@ contents:
     description: Colors of emergency actions.
   - name: emergency
     subsection: state color token
-    description: Use grade 60v.
+    description:
     var: $theme-color-emergency
     default: '"red-warm-60v"'
     type: color
   - name: emergency-dark
     subsection: state color token
-    description: Use grade 80.
+    description:
     var: $theme-color-emergency-dark
     default: '"red-warm-80"'
     type: color

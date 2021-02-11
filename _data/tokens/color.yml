@@ -91,6 +91,10 @@ state:
     default: "green-cool-60"
   - token: disabled-light
     default: "gray-10"
+  - token: emergency
+    default: "red-warm-60v"
+  - token: emergency-dark
+    default: "red-warm-80"
   - token: disabled
     default: "gray-20"
   - token: disabled-dark
@@ -159,6 +163,10 @@ theme:
     default: "orange-50v"
   - token: accent-warm-darker
     default: "orange-60"
+  - token: emergency
+    default: "red-warm-60v"
+  - token: emergency-dark
+    default: "red-warm-80"
 
 system:
   red-cool:

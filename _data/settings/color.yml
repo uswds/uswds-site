@@ -416,6 +416,23 @@ contents:
     default: '"blue-cool-60"'
     type: color
 
+  - name: Emergency colors
+    section: true
+    description: Colors of emergency actions.
+  - name: emergency
+    subsection: state color token
+    description:
+    var: $theme-color-emergency
+    default: '"red-warm-60v"'
+    type: color
+  - name: emergency-dark
+    subsection: state color token
+    description:
+    var: $theme-color-emergency-dark
+    default: '"red-warm-80"'
+    type: color
+
+
   - name: Disabled color family
     section: true
     description: Color family of disabled actions.

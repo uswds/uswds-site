@@ -43,15 +43,33 @@ subhead: What’s next for the U.S. Web Design System
           <a href="#section-{{ forloop.index }}" class="next-internal-nav__link">{{ item.title }}</a>
         </li>
       {% endfor %}
+      <li class="next-internal-nav__item next-internal-nav__item--button">
+        <a href="#" class="usa-button">Download the report</a>
+      </li>
     </ul>
   </div>
 </div>
 
 <main role="main" id="main-content">
   {% for item in site.next %}
-    <section id="section-{{ forloop.index }}" class="next-section {{ item.section_class }}">
+    <section id="section-{{ forloop.index }}" class="next-section next-section--{{ item.title | downcase | replace: " ", "-" | remove: "’" }} {{ item.section_class }}">
       <div class="grid-container">
-        {{ item.content | markdownify }}
+        <div class="grid-row">
+          <div class="grid-col-12 tablet:grid-col-3">
+            <div class="next-section__header">
+              {% unless item.hide_title %}<div class="next-section__subhead">{{ item.title }}</div>{% endunless %}
+              <h2 class="next-section__heading">{{ item.heading }}</h2>
+            </div>
+          </div>
+          <div class="grid-col-12 tablet:grid-col-8 tablet:margin-left-auto next-section-description">
+            {{ item.description | markdownify }}
+          </div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-col-12">
+            {{ item.content }}
+          </div>
+        </div>
       </div>
     </section>
   {% endfor %}

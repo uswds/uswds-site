@@ -90,6 +90,12 @@ lead: An icon list displays a static unordered list of significant importance.
         <span class="font-lang-3xs">Change the size of an icon by updating [size] to 3, 4, 5, 6, 7, 8, or 9 as detailed on the icons component page (coming soon)</span>
       </td>
     </tr>
+    <tr>
+      <td data-title="Variant" class="flex-6">[responsive_variant]:usa-icon-list--size-[size]</td>
+      <td data-title="Description" class="flex-6">
+        <span class="font-lang-3xs">Add a responsive breakpoint prefix separated with a : to target a utility at a responsive breakpoint and higher, following a mobile-first methodology.</span>
+      </td>
+    </tr>
   </tbody>
 </table>
 

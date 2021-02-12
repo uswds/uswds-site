@@ -4,20 +4,26 @@
   {% fractal_component icon-list %}
 {% endcapture %}{{ icon-list | strip }}
 
-<h6 class="margin-bottom-2 padding-top-2 border-top-1px border-base-lighter">Don't List</h6>
+<h6 class="margin-bottom-2 padding-top-2 border-top-1px border-base-lighter">Simple content</h6>
 
-{% capture icon-list--dont-list %}
-  {% fractal_component icon-list--dont-list %}
-{% endcapture %}{{ icon-list--dont-list | strip }}
+{% capture icon-list--simple %}
+  {% fractal_component icon-list--simple %}
+{% endcapture %}{{ icon-list--simple | strip }}
 
-<h6 class="margin-bottom-2 padding-top-2 border-top-1px border-base-lighter">Do List</h6>
+<h6 class="margin-bottom-2 padding-top-2 border-top-1px border-base-lighter">Rich content</h6>
 
-{% capture icon-list--do-list %}
-  {% fractal_component icon-list--do-list %}
-{% endcapture %}{{ icon-list--do-list | strip }}
+{% capture icon-list--rich %}
+  {% fractal_component icon-list--rich %}
+{% endcapture %}{{ icon-list--rich | strip }}
 
-<h6 class="margin-bottom-2 padding-top-2 border-top-1px border-base-lighter">Complex List</h6>
+<h6 class="margin-bottom-2 padding-top-2 border-top-1px border-base-lighter">Custom size</h6>
 
-{% capture icon-list--complex-list %}
-  {% fractal_component icon-list--complex-list %}
-{% endcapture %}{{ icon-list--complex-list | strip }}
+{% capture icon-list--custom-size %}
+  {% fractal_component icon-list--custom-size %}
+{% endcapture %}{{ icon-list--custom-size | strip }}
+
+<h6 class="margin-bottom-2 padding-top-2 border-top-1px border-base-lighter">Custom size with rich content</h6>
+
+{% capture icon-list--custom-size-rich %}
+  {% fractal_component icon-list--custom-size-rich %}
+{% endcapture %}{{ icon-list--custom-size-rich | strip }}

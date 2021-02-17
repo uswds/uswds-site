@@ -79,23 +79,6 @@ $next-button-hover-color: #0D53B7;
   border-bottom: 4px solid #757575;
   color: color("white");
   display: flex;
-  flex-direction: column;
-}
-
-.next-hero__content {
-  display: flex;
-  flex-direction: column;
-  margin: units(3) 0;
-
-  @include at-media("tablet") {
-    align-items: center;
-    margin: units(10) 0;
-    text-align: center;
-  }
-
-  @include at-media("desktop") {
-    margin: units(15) 0;
-  }
 }
 
 .next-hero__heading {
@@ -105,46 +88,54 @@ $next-button-hover-color: #0D53B7;
   max-width: 30ex;
   
   @include at-media("tablet") {
+    font-size: size('lang', 13);
+  }
+
+  @include at-media("desktop") {
     font-size: size('lang', 15);
   }
 }
 
 .next-hero__subhead {
+  color: $gray-20-next;
   font-size: size('lang', 8);
   line-height: line-height('lang', 2);
   margin: units(2) 0 0;
   max-width: 40ex;
 
   @include at-media("tablet") {
+    font-size: size('lang', 9);
+    max-width: 32ex;
+  }
+
+  @include at-media("desktop") {
     font-size: size('lang', 11);
+    max-width: 29ex;
   }
 }
 
 .next-hero__banner-container {
   width: 100%;
-}
 
-.next-hero__banner {
-  display: block;
-  width: 100%;
+  img {
+    display: block;
+    margin: units(5) 0;
+    width: 100%;
+  }
 }
 
 .next-hero__ownership {
   width: 100%; 
 
   @include at-media("tablet") {
-    align-items: center;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    margin: units(3) 0;
+    margin: units(3) 0 0;
   }
 }
 
 .next-hero__ownership-item {
   align-items: center;
   display: flex;
-  margin: units(2) 0;
+  margin: units(2) 0 0;
   
   span {
     font-size: size('lang', '3xs');
@@ -158,17 +149,6 @@ $next-button-hover-color: #0D53B7;
 
   @include at-media("tablet") {
     width: 36px;
-  }
-}
-
-.next-hero__ownership-item:first-of-type {
-  @include at-media("tablet") {
-    flex-direction: row-reverse;
-
-    .next-hero__ownership-img {
-      margin-left: units(1.5);
-      margin-right: 0;
-    }
   }
 }
 

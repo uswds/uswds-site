@@ -20,7 +20,8 @@
   }
   // Print the URL in parenthesis after the text of the link
   a[href]:after {
-    content: " (" attr(href) ")";
+    content: " (" attr(href) ")" !important;
+    word-break: break-all;
   }
   abbr[title]:after {
     content: " (" attr(title) ")";

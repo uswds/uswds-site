@@ -124,34 +124,6 @@ $next-button-hover-color: #0D53B7;
   }
 }
 
-.next-hero__ownership {
-  width: 100%; 
-
-  @include at-media("tablet") {
-    margin: units(3) 0 0;
-  }
-}
-
-.next-hero__ownership-item {
-  align-items: center;
-  display: flex;
-  margin: units(2) 0 0;
-  
-  span {
-    font-size: size('lang', '3xs');
-  }
-}
-
-.next-hero__ownership-img {
-  display: block;
-  margin-right: units(1.5);
-  width: 28px;
-
-  @include at-media("tablet") {
-    width: 36px;
-  }
-}
-
 // Internal nav
 // -------------------------------------
 .next-internal-nav {
@@ -209,6 +181,7 @@ $next-button-hover-color: #0D53B7;
 
   &:hover {
     color: color("gray-5");
+    border-color: color('gray-5');
   }
 
   &.current {

@@ -13,9 +13,6 @@ lead: The banner identifies official websites of government organizations in the
 <section class="site-component-section" id="site-component-intro">
   <h2 class="font-body-md">Why use the banner</h2>
   <p>
-    Banner is a core component along with identifier. We recommend using both components as they are the most recognizable and standardized design elements of a government site.
-  </p>
-  <p>
     You should use the banner to identify your site as an official government site.
   </p>
   <p>

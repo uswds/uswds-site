@@ -87,6 +87,12 @@ Tables also help users find specific information within a large data set. For ex
         <li>
           <strong>Minimize the number of columns.</strong> It’s easier for users to read down a long list of rows than it is to read across a long list of columns. Eliminate columns when possible or consider swapping the columns and rows to improve scannability.
         </li>
+        <li>
+          <strong>Enable sort where useful.</strong> Add row sorting to individual columns of long tables where the data can be logically ordered either alphabetically or numerically. <b>Don’t use row sorting with merged cells.</b> Sorting won’t work properly if your table contains <code>colspan</code> or <code>rowspan</code> attributes on the cells.
+        </li>
+        <li>
+          <strong>Don’t use row sorting with the mobile stacked variants.</strong> With these variants, the column headers at the top of the table don’t appear at narrow widths and are instead moved into the cell content in each row as prefixing headers — so sorting wouldn’t work properly.
+        </li>
       </ul>
       <h4 class="usa-heading">Accessibility</h4>
       <ul class="usa-content-list">
@@ -99,8 +105,40 @@ Tables also help users find specific information within a large data set. For ex
         <li>
           <strong>Add title and attribution in a caption.</strong> When adding a title, attribution, or a last-updated date to a table, include it in the <code>&lt;caption&gt;</code> tag inside of the <code>&lt;table&gt;</code> element.
         </li>
+        <li>
+          <strong>Add an aria-live region to the page when enabling row sorting.</strong> An <code>aria-live</code> region immediately following the <code>&lt;table&gt;</code> element automatically announces when the sort state changes for visitors using screen readers, but it must be added to the HTML document before load:<br>
+          <code>&lt;div class="usa-sr-only usa-table__announcement-region" aria-live="polite"&gt;&lt;/div&gt;</code>
+        </li>
+        <li>
+          <strong>Don’t add aria-label attributes to sortable column headers.</strong> Enabling row sorting automatically adds <code>aria-label</code> attributes to the sortable column headers and their toggle sort buttons via JavaScript. These labels are updated to reflect each column’s current sort state (ascending, descending, or unsorted) whenever sort changes. 
+        </li>
       </ul>
       <h4 class="usa-heading">Implementation</h4>
+      <ul class="usa-content-list">
+        <li>
+          <strong>Enable row sorting on columns with sortable data.</strong> To activate row sorting, add the <code>data-sortable</code> attribute to the table header element (<code>&lt;th&gt;</code>) of any column with sortable data, and insert an element with the <code>aria-live="polite"</code> attribute and the class <code>".usa-table__announcement-region"</code> immediately following the table.
+        </li>
+        <li>
+          <strong>Set a default sort column and direction.</strong> To sort a table’s rows by a specific sortable column on load, add the attribute <code>aria-sort</code> equal to a sort direction such as “ascending” or “descending” to that column header. For example, <br><code>&lt;th data-sortable aria-sort="ascending" scope="col"&gt;</code>. 
+        </li>
+        <li>
+          <strong>Provide raw values for cells with formatted number content.</strong> If you have formatted your cell content for display (such as using percent, currency, or comma formatting) or if your cell content is non-numeric but should be sorted in a numeric order (such as months, days of the week, or dates), then provide a numeric-sortable value in a <code>data-sort-value</code> attribute on each table cell. For example:
+          <ul>
+            <li><strong>Numbers</strong> with currency or comma formatting: <br>
+                <code>&lt;td data-sort-value="132773.54"&gt; $132,773.54 &lt;/td&gt;</code>
+            </li>
+            <li><strong>Percentages or fractions</strong>, converted to decimal: <br>
+                <code>&lt;td data-sort-value="0.943"&gt; 94.3% &lt;/td&gt;</code>
+            </li>
+            <li><strong>Months, weekdays, or other orderable text</strong>: <br>
+                <code>&lt;td data-sort-value="2"&gt; February &lt;/td&gt;</code>
+            </li>
+             <li><strong>Dates</strong>, in Unix timestamp: <br>
+                <code>&lt;td data-sort-value="327092400"&gt; Aug. 21, 1959 &lt;/td&gt;</code>
+            </li>
+          </ul>
+        </li>
+      </ul>
       <h5 id="component-settings">Table settings</h5>
       {% assign settings = site.data.settings.components.table %}
       {% include settings-table-simple.html

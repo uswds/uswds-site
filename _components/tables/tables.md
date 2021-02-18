@@ -70,7 +70,7 @@ Tables also help users find specific information within a large data set. For ex
           <strong>Always use a header row.</strong> Use plain language and short labels to define the type of information that can be found in each column or row. For more complex table structures, review the <a href="https://www.w3.org/WAI/tutorials/tables/" title="WC3 Web Accessibility Tables Tutorial">WCAG accessibility recommendations for tables</a>.
         </li>
         <li>
-          <strong>Predictably format columns.</strong> Take care not to vary units or formatting within the same column. Instead, normalize values so they can be easily compared. For example, if most of the rows in a table show a count in days, don’t have some rows that count by weeks.
+          <strong>Format columns predictably.</strong> Take care not to vary units or formatting within the same column. Instead, normalize values so they can be easily compared. For example, if most of the rows in a table show a count in days, don’t have some rows that count by weeks.
         </li>
         <li>
           <strong>Right-align numerical data.</strong> Align numbers which represent a sum to the right using the <a title="USWDS Paragraph Style Utilities" href="{{ site.baseurl }}/utilities/paragraph-styles/#text-align" >text alignment utilities</a> on the table cells.

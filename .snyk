@@ -661,7 +661,7 @@ ignore:
   SNYK-JS-Y18N-1021887:
     - gulp > gulp-cli > yargs > y18n:
         reason: no fix available
-        expires: '2020-12-30T17:19:29.232Z'
+        expires: '2021-02-07T17:59:47.973Z'
     - gulp-sass > node-sass > sass-graph > yargs > y18n:
         reason: no fix available
         expires: '2020-12-30T17:19:29.232Z'

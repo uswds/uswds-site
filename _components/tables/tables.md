@@ -15,7 +15,8 @@ subnav:
   href: '#scrollable-table'
 - text: Responsive stacked table
   href: '#responsive-stacked-table'
-
+- text: Sortable table rows
+  href: '#sortable-table-rows'
 ---
 Tables help logically organize information and group like things together, and they [make it easier to understand complex content](https://www.plainlanguage.gov/guidelines/design/use-tables-to-make-complex-material-easier-to-understand/). They’re especially useful for showing long lists of sequential or structured content. Users read tables one row or column at a time making it easier to digest or compare information.
 

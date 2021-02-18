@@ -2,7 +2,7 @@
 title: Validation
 parent: Form controls
 maturity: alpha
-order: 13
+order: 14
 lead: Stating validation requirements up front, with live feedback, means users won't be left guessing.
 ---
 

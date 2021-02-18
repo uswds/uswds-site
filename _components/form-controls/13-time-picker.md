@@ -1,7 +1,7 @@
 ---
 title: Time picker
 parent: Form controls
-order: 12
+order: 13
 lead: A time picker helps users select a specific time.
 initProps:
   - property: "`data-min-time`"

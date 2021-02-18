@@ -13,6 +13,7 @@ const PAGES = [
   '/',
   '/page-templates/landing/',
   '/page-templates/docs/',
+  '/page-templates/404-page/',
 ];
 
 function launchChromeLocally(headless=true) {

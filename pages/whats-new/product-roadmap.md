@@ -66,36 +66,36 @@ You can also <a href="https://github.com/uswds/uswds/milestone/52" class="">view
     </li>
     <li class="site-roadmap-list__item"><span class="flex-fill">Build most-requested new components</span>
       <ul class="site-roadmap-list__sublist">
-        <li class="site-roadmap-list__item"><span class="flex-fill">Card</span> <span class="usa-tag label-done">Done</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">404 page template</span> <span class="usa-tag label-in-progress">In progress</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Authentication page templates</span> <span class="usa-tag label-in-progress">In progress</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Breadcrumb</span> <span class="usa-tag label-done">Done</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Button group</span> <span class="usa-tag label-done">Done</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Card</span> <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Character count</span> <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Combobox</span> <span class="usa-tag label-done">Done</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Button group</span> <span class="usa-tag label-done">Done</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Data tables</span> <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Date picker</span>  <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Date range picker</span>  <span class="usa-tag label-done">Done</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Time picker</span>  <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Date and time picker</span> <span class="usa-tag label-done">Done</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Tooltip</span> <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">File input</span> <span class="usa-tag label-done">Done</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Step indicator</span> <span class="usa-tag label-done">Done</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Identifier (Anchor)</span> <span class="usa-tag label-done">Done</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Tabs</span> <span class="usa-tag label-cancelled">Cancelled</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Icons</span> <span class="usa-tag label-done">Done</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Button icon</span> <span class="usa-tag label-cancelled">Cancelled</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Pagination</span> <span class="usa-tag label-in-progress">In progress</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Advanced layout</span> <span class="usa-tag label-cancelled">Cancelled</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Glossary</span> <span class="usa-tag label-cancelled">Cancelled</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Data tables</span> <span class="usa-tag label-done">Done</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Top tasks</span> <span class="usa-tag label-cancelled">Cancelled</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Identifier</span> <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Icon list</span> <span class="usa-tag label-in-progress">In progress</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Modal</span> <span class="usa-tag label-in-progress">In progress</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Sortable tables</span> <span class="usa-tag label-in-progress">In progress</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Icons</span> <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Input prefix/suffix</span> <span class="usa-tag label-in-progress">In progress</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">404 page template</span> <span class="usa-tag label-in-progress">In progress</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Modal</span> <span class="usa-tag label-in-progress">In progress</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Pagination</span> <span class="usa-tag label-in-progress">In progress</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Step indicator</span> <span class="usa-tag label-done">Done</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Sortable tables</span> <span class="usa-tag label-in-progress">In progress</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Time picker</span>  <span class="usa-tag label-done">Done</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Tooltip</span> <span class="usa-tag label-done">Done</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Advanced layout</span> <span class="usa-tag label-cancelled">Cancelled</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Button icon</span> <span class="usa-tag label-cancelled">Cancelled</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Glossary</span> <span class="usa-tag label-cancelled">Cancelled</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Tabs</span> <span class="usa-tag label-cancelled">Cancelled</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Top tasks</span> <span class="usa-tag label-cancelled">Cancelled</span></li>
       </ul>
     </li>
     <li class="site-roadmap-list__item"><span class="flex-fill">Simplify and improve design assets</span> <span class="usa-tag label-done">Done</span></li>
-    <li class="site-roadmap-list__item"><span class="flex-fill">Update product values</span> <span class="usa-tag label-in-progress">In progress</span></li>
     <li class="site-roadmap-list__item"><span class="flex-fill">Update USWDS Jekyll theme to USWDS 2</span> <span class="usa-tag label-done">Done</span></li>
     <li class="site-roadmap-list__item"><span class="flex-fill">Create tailored guides for common user types</span> <span class="usa-tag label-next">On deck</span></li>
     <li class="site-roadmap-list__item"><span class="flex-fill">Rebuild component library</span> <span class="usa-tag label-in-progress">In progress</span></li>

@@ -30,7 +30,7 @@ You can also <a href="https://github.com/uswds/uswds/milestone/52" class="">view
         <li class="site-roadmap-list__item"><span class="flex-fill">Document undocumented components</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
       </ul>
     </li>
-    <li class="site-roadmap-list__item margin-top-2"><span class="flex-fill">Getting started</span>
+    <li class="site-roadmap-list__item"><span class="flex-fill">Getting started</span>
       <ul class="site-roadmap-list__sublist">
         <li class="site-roadmap-list__item"><span class="flex-fill">Expand and test getting started documentation</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Create multimedia tutorials</span> <span class="usa-tag label-upcoming">Upcoming</span></li>

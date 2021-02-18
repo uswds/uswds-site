@@ -3344,10 +3344,6 @@ body {
   @include add-list-reset;
 }
 
-.site-roadmap-list__sublist {
-  @include u-margin-top(2);
-}
-
 .site-roadmap-list {
   @include u-margin-top(2);
 }
@@ -3371,19 +3367,18 @@ body {
   }
 }
 
-.site-roadmap-list > .site-roadmap-list__item {
-  @include u-margin-top(2);
-  & + .site-roadmap-list__item {
-    @include u-margin-top(0.5);
-  }
-}
-
 .site-roadmap-list__sublist {
   @include u-width("full");
 
   .site-roadmap-list__item {
     @include u-border-top("base-lighter");
     @include u-text("normal");
+    &:first-child {
+      @include u-margin-top(1);
+    }
+    &:last-child {
+      @include u-margin-bottom(2);
+    }
   }
 }
 

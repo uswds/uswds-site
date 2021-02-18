@@ -1,3 +1,6 @@
 {% capture layout--docs %}
-  {% fractal_component layout--404 %}
+  <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+  {% fractal_component banner %}
+  {% fractal_component header--basic %}
+  {% fractal_component layout--404-inner %}
 {% endcapture %}{{ layout--docs | strip }}

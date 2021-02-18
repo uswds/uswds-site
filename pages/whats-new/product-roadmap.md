@@ -16,9 +16,10 @@ Below is our product roadmap: a long-term plan of the goals, features, and long-
 <!-- TODO: Make these into issues; add roadmap project board
 You can also <a href="https://github.com/uswds/uswds/milestone/52" class="">view our product roadmap goals on GitHub</a>. -->
 
-<h2>Product Roadmap</h2>
+<h2>Current USWDS product roadmap</h2>
+<p><span class="usa-tag label-done margin-left-0">Updated February 18, 2021</span></p>
 
-<div class="maxw-tablet">
+<div class="maxw-tablet margin-top-5">
   <ul class="site-roadmap-list">
     <li class="site-roadmap-list__item"><span class="flex-column">Value and benefits</span>
       <ul class="site-roadmap-list__sublist">

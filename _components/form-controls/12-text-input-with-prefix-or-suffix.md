@@ -20,7 +20,7 @@ Including a prefix or suffix in the input field helps reduce cognitive load by q
   </button>
   <div id="prefix-suffix-docs" aria-hidden="false" class="usa-accordion__content site-component-usage" markdown="1">
 
-### When to use the prefix or suffix component
+<h3>When to use the prefix or suffix component</h3>
 
 {:.usa-content-list}
 
@@ -28,7 +28,7 @@ Including a prefix or suffix in the input field helps reduce cognitive load by q
 
 - **Reduce mental load.** Adding a prefix or suffix can help the user more quickly understand what kind of information is requested. 
 
-### When to consider something else
+<h3>When to consider something else</h3>
 
 {:.usa-content-list}
 
@@ -36,7 +36,7 @@ Including a prefix or suffix in the input field helps reduce cognitive load by q
 
 - **Explanation requires additional words.** Don’t use prefixes or suffixes if a symbol or abbreviation is insufficient to convey the meaning. There shouldn’t be any confusion between what type of information a prefix or suffix represents. This is especially true when using icons that could have multiple meanings. 
 
-### Usability guidance
+<h3>Usability guidance</h3>
 
 {:.usa-content-list}
 
@@ -44,7 +44,7 @@ Including a prefix or suffix in the input field helps reduce cognitive load by q
 
 - **Use common abbreviations.** Only use commonly understood abbreviations when indicating a text prefix or suffix. Don’t use the full word.
 
-### Accessibility
+<h3>Accessibility</h3>
 
 {:.usa-content-list}
 
@@ -52,7 +52,7 @@ Including a prefix or suffix in the input field helps reduce cognitive load by q
 
 - **Use descriptive labels.** Labels should clearly indicate what type of data to enter since prefixes and suffixes are hidden from screen readers. For example, if you’re requesting someone’s height in inches, you have “in.” appear in a suffix, but your form label should say “Height, in inches.”
 
-### Implementation
+<h3>Implementation</h3>
 
 {:.usa-content-list}
 
@@ -62,7 +62,7 @@ Including a prefix or suffix in the input field helps reduce cognitive load by q
 
 - **Validation.** Place input validation classes on usa-input-group.
 
-#### Package information
+<h4>Package information</h4>
 
 {:.usa-content-list}
 

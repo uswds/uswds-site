@@ -20,7 +20,7 @@ You can also <a href="https://github.com/uswds/uswds/milestone/52" class="">view
 
 <div class="maxw-tablet">
   <ul class="site-roadmap-list">
-    <li class="site-roadmap-list__item"><span class="flex-fill">Value and benefits</span>
+    <li class="site-roadmap-list__item"><span class="flex-column">Value and benefits</span>
       <ul class="site-roadmap-list__sublist">
         <li class="site-roadmap-list__item"><span class="flex-fill">Publish journey maps and service blueprint</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Publish role-based intros to the design system</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
@@ -30,7 +30,7 @@ You can also <a href="https://github.com/uswds/uswds/milestone/52" class="">view
         <li class="site-roadmap-list__item"><span class="flex-fill">Document undocumented components</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
       </ul>
     </li>
-    <li class="site-roadmap-list__item"><span class="flex-fill">Getting started</span>
+    <li class="site-roadmap-list__item"><span class="flex-column">Getting started</span>
       <ul class="site-roadmap-list__sublist">
         <li class="site-roadmap-list__item"><span class="flex-fill">Expand and test getting started documentation</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Create multimedia tutorials</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
@@ -40,13 +40,13 @@ You can also <a href="https://github.com/uswds/uswds/milestone/52" class="">view
         <li class="site-roadmap-list__item"><span class="flex-fill">Improve color guidance</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
       </ul>
     </li>
-    <li class="site-roadmap-list__item"><span class="flex-fill">Resource estimation</span>
+    <li class="site-roadmap-list__item"><span class="flex-column">Resource estimation</span>
       <ul class="site-roadmap-list__sublist">
         <li class="site-roadmap-list__item"><span class="flex-fill">Collect team composition data from the community</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Publish team composition guidance</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
       </ul>
     </li>
-    <li class="site-roadmap-list__item"><span class="flex-fill">Community engagement</span>
+    <li class="site-roadmap-list__item"><span class="flex-column">Community engagement</span>
       <ul class="site-roadmap-list__sublist">
         <li class="site-roadmap-list__item"><span class="flex-fill">Ask the community what it needs</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Improve contribution guidance</span> <span class="usa-tag label-in-progress">In progress</span></li>
@@ -54,7 +54,7 @@ You can also <a href="https://github.com/uswds/uswds/milestone/52" class="">view
         <li class="site-roadmap-list__item"><span class="flex-fill">Improve open source software practices</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
       </ul>
     </li>
-    <li class="site-roadmap-list__item"><span class="flex-fill">Iterative improvement</span>
+    <li class="site-roadmap-list__item"><span class="flex-column">Iterative improvement</span>
       <ul class="site-roadmap-list__sublist">
         <li class="site-roadmap-list__item"><span class="flex-fill">Investigate component-based versioning</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Add component changelogs to website</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
@@ -64,7 +64,7 @@ You can also <a href="https://github.com/uswds/uswds/milestone/52" class="">view
         <li class="site-roadmap-list__item"><span class="flex-fill">Widen the scope of release communications</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
       </ul>
     </li>
-    <li class="site-roadmap-list__item"><span class="flex-fill">Build most-requested new components</span>
+    <li class="site-roadmap-list__item"><span class="flex-column">Build most-requested new components</span>
       <ul class="site-roadmap-list__sublist">
         <li class="site-roadmap-list__item"><span class="flex-fill">Card</span> <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Breadcrumb</span> <span class="usa-tag label-done">Done</span></li>

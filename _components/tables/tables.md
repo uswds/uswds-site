@@ -36,10 +36,10 @@ Tables also help users find specific information within a large data set. For ex
       <h4>When to use the table component</h4>
       <ul class="usa-content-list">
         <li>
-          <strong>Displaying tabular data.</strong> When you need to display tabular information, such as statistical data.
+          <strong>Tabular data.</strong> When you need to display tabular information, such as statistical data.
         </li>
         <li>
-          <strong>Displaying directories.</strong> When listing locations or resources that have similarly-structured content for many items.
+          <strong>Directories.</strong> When listing locations or resources that have similarly-structured content for many items.
         </li>
       </ul>
       <h4>When to consider something else</h4>

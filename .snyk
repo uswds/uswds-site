@@ -9,10 +9,10 @@ ignore:
   SNYK-JS-AUTOLINKER-73494:
     - uswds > autolinker:
         reason: No fix available
-        expires: '2021-03-20T20:49:39.375Z'
+        expires: '2021-01-11T18:00:56.002Z'
     - uswds > handlebars-helpers > helper-markdown > remarkable > autolinker:
         reason: No patch available
-        expires: '2021-03-20T20:49:39.376Z'
+        expires: '2021-01-11T18:00:56.003Z'
     - uswds > handlebars-helpers > helper-md > remarkable > autolinker:
         reason: No patch available
         expires: '2020-09-12T03:55:15.828Z'
@@ -30,9 +30,6 @@ ignore:
     - uswds > gulp-stylelint > mkdirp > minimist:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      uswds > gulp-svg-sprite > svg-sprite > mocha > mkdirp > minimist:
-        reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
     - uswds > @frctl/fractal > update-notifier > configstore > mkdirp > minimist:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
@@ -64,9 +61,6 @@ ignore:
     - uswds > mocha > yargs > yargs-parser:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      uswds > gulp-svg-sprite > svg-sprite > yargs > yargs-parser:
-        reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
     - uswds > nyc > yargs > yargs-parser:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
@@ -131,8 +125,8 @@ ignore:
         expires: '2020-10-14T16:26:55.826Z'
   SNYK-JS-NODESASS-535498:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T20:49:39.378Z'
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -153,8 +147,8 @@ ignore:
         expires: '2021-03-03T17:37:12.775Z'
   SNYK-JS-NODESASS-535502:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T20:49:39.378Z'
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -175,8 +169,8 @@ ignore:
         expires: '2021-03-03T17:37:12.775Z'
   SNYK-JS-NODESASS-540956:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T20:49:39.378Z'
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -197,8 +191,8 @@ ignore:
         expires: '2021-03-03T17:37:12.775Z'
   SNYK-JS-NODESASS-540958:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T20:49:39.378Z'
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -219,8 +213,8 @@ ignore:
         expires: '2021-03-03T17:37:12.775Z'
   SNYK-JS-NODESASS-540964:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T20:49:39.378Z'
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -260,8 +254,8 @@ ignore:
         expires: '2020-10-14T16:26:55.826Z'
   SNYK-JS-NODESASS-540978:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T20:49:39.378Z'
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -282,8 +276,8 @@ ignore:
         expires: '2021-03-03T17:37:12.775Z'
   SNYK-JS-NODESASS-540980:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T20:49:39.378Z'
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -304,8 +298,8 @@ ignore:
         expires: '2021-03-03T17:37:12.775Z'
   SNYK-JS-NODESASS-540990:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T20:49:39.378Z'
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -326,8 +320,8 @@ ignore:
         expires: '2021-03-03T17:37:12.775Z'
   SNYK-JS-NODESASS-540992:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T20:49:39.378Z'
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -348,8 +342,8 @@ ignore:
         expires: '2021-03-03T17:37:12.775Z'
   SNYK-JS-NODESASS-540994:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T20:49:39.378Z'
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -370,8 +364,8 @@ ignore:
         expires: '2021-03-03T17:37:12.775Z'
   SNYK-JS-NODESASS-540996:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T20:49:39.378Z'
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -392,8 +386,8 @@ ignore:
         expires: '2021-03-03T17:37:12.775Z'
   SNYK-JS-NODESASS-540998:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T20:49:39.378Z'
+        reason: Wait for USWDS 2.6.0
+        expires: '2020-04-15T18:16:00.121Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
@@ -416,12 +410,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2021-01-11T18:00:56.004Z'
-      gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T20:49:39.378Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
-        expires: '2021-03-20T20:49:39.378Z'
+        expires: '2020-12-05T20:04:38.630Z'
     - gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
@@ -447,12 +438,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: No patch available
         expires: '2021-01-11T18:00:56.004Z'
-      gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T20:49:39.378Z'
     - uswds > gulp-sass > node-sass:
         reason: No patch available
-        expires: '2021-03-20T20:49:39.378Z'
+        expires: '2020-12-05T20:04:38.630Z'
     - gulp-sass > node-sass:
         reason: n/a
         expires: '2020-06-27T22:01:23.325Z'
@@ -477,14 +465,14 @@ ignore:
   'npm:braces:20180219':
     - uswds > nswatch > chokidar > anymatch > micromatch > braces:
         reason: No patch available
-        expires: '2021-03-20T20:49:39.379Z'
+        expires: '2021-01-11T18:00:56.004Z'
   SNYK-JS-AUTOLINKER-564438:
     - uswds > autolinker:
         reason: No fix available
-        expires: '2021-03-20T20:49:39.375Z'
+        expires: '2021-01-11T18:00:56.002Z'
     - uswds > handlebars-helpers > helper-markdown > remarkable > autolinker:
         reason: No patch available
-        expires: '2021-03-20T20:49:39.376Z'
+        expires: '2021-01-11T18:00:56.002Z'
     - uswds > handlebars-helpers > helper-md > remarkable > autolinker:
         reason: No patch available
         expires: '2020-09-12T03:55:15.828Z'
@@ -497,7 +485,7 @@ ignore:
   SNYK-JS-GULPSCSSLINT-560114:
     - gulp-scss-lint:
         reason: No patch available
-        expires: '2021-03-20T20:49:39.376Z'
+        expires: '2021-02-14T18:33:52.502Z'
   SNYK-JS-HTTPPROXY-569139:
     - uswds > @frctl/fractal > browser-sync > http-proxy:
         reason: n/a
@@ -505,19 +493,19 @@ ignore:
   SNYK-JS-LODASH-450202:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No patch available
-        expires: '2021-03-20T20:49:39.378Z'
+        expires: '2021-01-11T18:00:56.003Z'
   SNYK-JS-LODASH-567746:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No patch available
-        expires: '2021-03-20T20:49:39.378Z'
+        expires: '2021-01-11T18:00:56.003Z'
   SNYK-JS-LODASH-73638:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No patch available
-        expires: '2021-03-20T20:49:39.378Z'
+        expires: '2021-01-11T18:00:56.003Z'
   SNYK-JS-LODASH-73639:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No patch available
-        expires: '2021-03-20T20:49:39.378Z'
+        expires: '2021-01-11T18:00:56.003Z'
   'npm:ua-parser-js:20180227':
     - uswds > @frctl/fractal > browser-sync > ua-parser-js:
         reason: n/a
@@ -549,9 +537,6 @@ ignore:
     - uswds > @frctl/fractal > marked:
         reason: No patch available
         expires: '2020-10-14T16:26:55.826Z'
-      uswds > @frctl/core > marked:
-        reason: No fix available
-        expires: '2021-03-20T20:49:39.375Z'
     - uswds > @frctl/core > marked:
         reason: None given
         expires: '2020-12-05T20:04:38.630Z'
@@ -562,9 +547,6 @@ ignore:
     - gulp-eslint > eslint > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
-      uswds > @frctl/fractal > vorpal > inquirer > lodash:
-        reason: No patch available
-        expires: '2021-03-20T20:49:39.378Z'
     - gulp-eslint > eslint > inquirer > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
@@ -652,11 +634,11 @@ ignore:
   SNYK-JS-LODASH-608086:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No patch available
-        expires: '2021-03-20T20:49:39.378Z'
+        expires: '2021-01-11T18:00:56.003Z'
   'npm:lodash:20180130':
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
-        reason: ''
-        expires: '2021-03-20T20:49:39.376Z'
+        reason: None given
+        expires: '2020-12-05T20:04:38.629Z'
   SNYK-JS-TRIM-1017038:
     - uswds > @stylelint/postcss-markdown > remark > remark-parse > trim:
         reason: None given
@@ -665,9 +647,6 @@ ignore:
     - gulp > gulp-cli > yargs > y18n:
         reason: no fix available
         expires: '2021-02-07T17:59:47.973Z'
-      uswds > gulp > gulp-cli > yargs > y18n:
-        reason: No fix available
-        expires: '2021-03-20T20:49:39.376Z'
     - gulp-sass > node-sass > sass-graph > yargs > y18n:
         reason: no fix available
         expires: '2020-12-30T17:19:29.232Z'
@@ -680,15 +659,15 @@ ignore:
         expires: '2021-01-11T18:00:56.003Z'
   SNYK-JS-HIGHLIGHTJS-1048676:
     - uswds > @frctl/core > highlight.js:
-        reason: No fix available
-        expires: '2021-03-20T20:49:39.375Z'
+        reason: None given
+        expires: '2021-01-11T18:00:56.003Z'
     - uswds > handlebars-helpers > helper-markdown > highlight.js:
         reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
+        expires: '2021-01-11T18:00:56.003Z'
   SNYK-JS-MOCHA-561476:
     - uswds > gulp-svg-sprite > svg-sprite > mocha:
         reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
+        expires: '2021-01-11T18:00:56.003Z'
   SNYK-JS-NODENOTIFIER-1035794:
     - node-notifier:
         reason: None given
@@ -826,428 +805,33 @@ ignore:
   SNYK-JS-GLOBPARENT-1016905:
     - gulp-eslint > eslint > glob-parent:
         reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
+        expires: '2021-02-14T18:33:52.502Z'
     - del > globby > fast-glob > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
-      uswds > eslint > glob-parent:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
     - uswds > del > globby > fast-glob > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
-      del > globby > fast-glob > glob-parent:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
     - sass > chokidar > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
-      uswds > @frctl/core > chokidar > glob-parent:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
     - gulp > glob-watcher > chokidar > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
-      uswds > gulp-eslint > eslint > glob-parent:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
     - gulp > vinyl-fs > glob-stream > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
-      uswds > @frctl/fractal > @frctl/mandelbrot > @frctl/web > browser-sync > chokidar > glob-parent:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
     - gulp-scss-lint > vinyl-fs > glob-stream > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
-      uswds > @frctl/fractal > @frctl/mandelbrot > @frctl/web > @frctl/core > globby > fast-glob > glob-parent:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - sass > chokidar > glob-parent:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - uswds > glob-stream > glob-parent:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - gulp > glob-watcher > chokidar > glob-parent:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - gulp-scss-lint > vinyl-fs > glob-stream > glob-parent:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - uswds > glob-watcher > chokidar > glob-parent:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - gulp > vinyl-fs > glob-stream > glob-parent:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - uswds > glob-base > glob-parent:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - uswds > nswatch > chokidar > glob-parent:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
   SNYK-JS-NODESASS-1059081:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
         expires: '2021-03-03T17:37:12.775Z'
-      uswds > gulp-sass > node-sass:
-        reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
   SNYK-JS-NODESASS-535500:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
         expires: '2021-03-03T17:37:12.775Z'
-      uswds > gulp-sass > node-sass:
-        reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
-  SNYK-JS-ELLIPTIC-1064899:
-    - uswds > browserify > crypto-browserify > browserify-sign > elliptic:
-        reason: No fix available
-        expires: '2021-03-20T20:49:39.375Z'
-    - uswds > browserify > crypto-browserify > create-ecdh > elliptic:
-        reason: No fix available
-        expires: '2021-03-20T20:49:39.375Z'
-  SNYK-JS-HANDLEBARS-1056767:
-    - uswds > @frctl/fractal > handlebars:
-        reason: No fix available
-        expires: '2021-03-20T20:49:39.375Z'
-    - uswds > handlebars-helpers > handlebars:
-        reason: No fix available
-        expires: '2021-03-20T20:49:39.375Z'
-    - uswds > @frctl/fractal > @frctl/handlebars > handlebars:
-        reason: No fix available
-        expires: '2021-03-20T20:49:39.375Z'
-  SNYK-JS-MARKED-1070800:
-    - uswds > @frctl/fractal > @frctl/mandelbrot > @frctl/web > @frctl/core > marked:
-        reason: No fix available
-        expires: '2021-03-20T20:49:39.375Z'
-  SNYK-JS-UAPARSERJS-1072471:
-    - uswds > @frctl/fractal > @frctl/mandelbrot > @frctl/web > browser-sync > ua-parser-js:
-        reason: No fix available
-        expires: '2021-03-20T20:49:39.375Z'
-  SNYK-JS-ENGINEIO-1056749:
-    - uswds > @frctl/fractal > @frctl/mandelbrot > @frctl/web > browser-sync > socket.io > engine.io:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-  SNYK-JS-JSDOM-1075447:
-    - uswds > jsdom:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-  SNYK-JS-LODASH-1018905:
-    - gulp-sass > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - snyk > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - '@snyk/dep-graph > graphlib > lodash':
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - '@snyk/java-call-graph-builder > graphlib > lodash':
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - snyk > inquirer > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - gulp-eslint > eslint > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - gulp-sass > node-sass > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - uswds > gulp-sass > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - snyk > snyk-nuget-plugin > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - uswds > @babel/core > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - uswds > @babel/helper-define-map > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - uswds > @eslint/eslintrc > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - uswds > @frctl/core > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - uswds > @frctl/fractal > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > @frctl/nunjucks > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > eslint > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > gulp-spawn-mocha > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > sass-true > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > snyk > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > stylelint > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > stylelint-scss > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - '@snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash':
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - snyk > @snyk/dep-graph > graphlib > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - gulp-eslint > eslint > inquirer > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - gulp-eslint > eslint > table > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > eslint > table > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > gulp-eslint > eslint > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > gaze > globule > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - gulp-sass > node-sass > sass-graph > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > gulp-sass > node-sass > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > @babel/core > @babel/helper-module-transforms > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > @babel/helper-annotate-as-pure > @babel/types > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > @frctl/fractal > @frctl/handlebars > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > @frctl/fractal > @frctl/mandelbrot > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > @frctl/fractal > inquirer > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > @frctl/fractal > vorpal > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > gulp-svg-sprite > svg-sprite > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > snyk > snyk-nuget-plugin > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > stylelint > table > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - '@snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash':
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > gulp-eslint > eslint > inquirer > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - gulp-sass > node-sass > gaze > globule > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
-    - uswds > gulp-sass > node-sass > sass-graph > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
-    - uswds > @babel/core > @babel/generator > @babel/types > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
-    - uswds > @frctl/fractal > @frctl/mandelbrot > @frctl/web > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
-    - uswds > jsdom > request-promise-native > request-promise-core > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
-    - uswds > @babel/core > @babel/helper-module-transforms > @babel/helper-replace-supers > @babel/traverse > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
-    - uswds > @frctl/fractal > @frctl/mandelbrot > @frctl/web > @frctl/core > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
-    - uswds > @frctl/fractal > @frctl/mandelbrot > @frctl/web > browser-sync > easy-extender > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
-    - uswds > @frctl/fractal > @frctl/mandelbrot > @frctl/web > portscanner > async > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
-    - uswds > @frctl/fractal > vorpal > inquirer > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
-  SNYK-JS-LODASH-1040724:
-    - gulp-sass > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - snyk > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - '@snyk/dep-graph > graphlib > lodash':
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - '@snyk/java-call-graph-builder > graphlib > lodash':
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - snyk > inquirer > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - gulp-eslint > eslint > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - gulp-sass > node-sass > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - uswds > gulp-sass > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - snyk > snyk-nuget-plugin > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - uswds > @babel/core > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - uswds > @babel/helper-define-map > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - uswds > @eslint/eslintrc > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.376Z'
-    - uswds > @frctl/core > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > @frctl/fractal > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > @frctl/nunjucks > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > eslint > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > gulp-spawn-mocha > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > sass-true > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > snyk > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > stylelint > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > stylelint-scss > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - '@snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash':
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - snyk > @snyk/dep-graph > graphlib > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - gulp-eslint > eslint > inquirer > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - gulp-eslint > eslint > table > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > eslint > table > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > gulp-eslint > eslint > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > gaze > globule > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - gulp-sass > node-sass > sass-graph > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > gulp-sass > node-sass > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > @babel/core > @babel/helper-module-transforms > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > @babel/helper-annotate-as-pure > @babel/types > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > @frctl/fractal > @frctl/handlebars > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > @frctl/fractal > @frctl/mandelbrot > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > @frctl/fractal > inquirer > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > @frctl/fractal > vorpal > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > gulp-svg-sprite > svg-sprite > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > snyk > snyk-nuget-plugin > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > stylelint > table > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - '@snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash':
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - uswds > gulp-eslint > eslint > inquirer > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.377Z'
-    - gulp-sass > node-sass > gaze > globule > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
-    - uswds > gulp-sass > node-sass > sass-graph > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
-    - uswds > @babel/core > @babel/generator > @babel/types > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
-    - uswds > @frctl/fractal > @frctl/mandelbrot > @frctl/web > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
-    - uswds > jsdom > request-promise-native > request-promise-core > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
-    - uswds > @babel/core > @babel/helper-module-transforms > @babel/helper-replace-supers > @babel/traverse > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
-    - uswds > @frctl/fractal > @frctl/mandelbrot > @frctl/web > @frctl/core > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
-    - uswds > @frctl/fractal > @frctl/mandelbrot > @frctl/web > browser-sync > easy-extender > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
-    - uswds > @frctl/fractal > @frctl/mandelbrot > @frctl/web > portscanner > async > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
-    - uswds > @frctl/fractal > vorpal > inquirer > lodash:
-        reason: None given
-        expires: '2021-03-20T20:49:39.378Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

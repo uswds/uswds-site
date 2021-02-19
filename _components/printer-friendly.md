@@ -2,73 +2,90 @@
 permalink: /components/printer-friendly/
 layout: styleguide
 type: component
-title: Printer friendly
+title: Printer-friendly
 category: Components
 lead: A good print style sheet enhances the user experience and addresses many issues people face when printing from the web.
+
 ---
 
-<h6>Printer friendly</h6>
-
-<p>Printing from the web is arguably one of the most overlooked areas of the online user experience; however, a <a href="https://varn.co.uk/01/26/varn-original-research-how-many-of-us-print-out-web-pages/" target="_blank">Varn.co.uk</a> study found that nearly half of all internet users print at least one page from websites they visit. While the number of people printing from the web skews higher for the 35 and up age group, the survey found that even in the 18-24 age group, users occasionally printed anything from recipes to receipts. In other words, the importance of having clearly presented, well formatted print outs of your web pages can’t be understated.</p>
+<div class="site-note"><strong>Note:</strong> The printer-friendly component is mostly guidance for best practices, along with  boilerplate print.css code. The specific print layout examples  are intended to demonstrate ways to implement this in your own print style sheet.</div>
 
 <section class="site-component-section">
-  {% include code/accordion.html component="printer-friendly" %}
-  <div class="usa-accordion usa-accordion--bordered site-accordion-docs">
-    <button class="usa-button-unstyled usa-accordion__button"
-        aria-expanded="true" aria-controls="printer-friendly-docs">
-      Guidance
-    </button>
-    <div id="printer-friendly-docs" aria-hidden="false" class="usa-accordion__content site-component-usage">
-      <h3>When to use the printer friendly component</h3>
-      <ul class="usa-content-list">
-        <li>
-          <strong>Always.</strong> The printer friendly component, or print style sheet, is an essential element of every website and should be a part of your global CSS implementation.
-        </li>
+  <h3>General guidance</h3>
+  <p><strong>Conserve paper and ink but don’t break up important content</strong></p>
+  <ul>
+    <li>Reduce white space when appropriate but not at the expense of splitting content across two printed pages.
+      <ul>
+        <li>Use the CSS properties <code>break-before</code>, <code>break-after</code> and <code>break-inside</code> to prevent content like images, lists and headings from being split across pages.</li>
       </ul>
-      <h3>When to consider something else</h3>
-      <ul class="usa-content-list">
-        <li>
-          <strong>Not applicable.</strong> Every website should provide at least a basic layout for print. 
-        </li>
+    </li>
+    <li>Make sure text is black and backgrounds are white.</li>
+    <li>Hide header, navigation and footer elements.</li>
+    <li>Display only the main content of the page.</li>
+    <li>Force text columns to print full-page width where appropriate.</li>
+    <li>Minimize page margins.</li>
+  </ul>
+
+  <p><strong>Give users information they can use</strong></p>
+  <ul>
+    <li>Display hidden URLs to the right of link text.
+      <ul>
+        <li>If your site uses absolute paths in hrefs (e.g. href="/page"), use CSS to prepend your full domain name to the printed URL.</li>
       </ul>
-      <h3>Usability guidance</h3>
-      <ul class="usa-content-list">
-        <li>
-          <strong>Reset the styles of your site.</strong> The printer friendly component provides a clean reset of all the basic styles of your site. This includes making all text black and all background colors transparent which is a core recommendation for making your site printer friendly.
-        </li>
-        <li>
-          <strong>Place your print styles wherever is convenient.</strong> Your print styles can be included as a separate print.css file or included in any existing css file.
-        </li>
-        <li>
-          <strong>Append URLs to link text.</strong> Making your site printer friendly includes revealing the hidden URL to the user on the printed page. The printer friendly CSS code does that by automatically extracting the URL from the <code>href</code> attribute and appending it to the link text inside parenthesis. And since this is inside the <code>@media print {}</code> rule, it only appears if the user decides to print.
-        </li>
-        <li>
-          <strong>Use the CSS at-rule @media print.</strong> Print styles encapsulated in the <code>@media print {}</code> rule are not rendered to the screen and are only used when the user chooses to print.
-        </li>
+    </li>
+    <li>Limit the use of javascript in hrefs when possible.
+      <ul>
+        <li>Using the javascript pseudo protocol in hrefs eliminates the effectiveness of the CSS to extract the URL and display it for print. </li>
       </ul>
-      <h3 class="usa-heading">Accessibility</h3>
-      <ul class="usa-content-list">
-        <li>
-          <strong>Lorem ipsum.</strong> Lorem ipsum.
-        </li>
-      </ul>
-      <h3 class="usa-heading">Implementation</h3>
-      <h4 id="component-settings">Printer-friendly settings</h4>
-      {% assign settings = site.data.settings.components.printer-friendly %}
-      {% include settings-table-simple.html
-        settings=settings.contents
-      %}
-      <h4 class="usa-heading">Package information</h4>
-      <ul class="usa-content-list">
-        <li>
-          <strong>Package usage:</strong> <code>@import usa-printer-friendly</code>
-        </li>
-        <li>
-          <strong>Requires:</strong> <code>required</code>, <code>global</code>
-        </li>
-      </ul>
-    </div>
-  </div>
+    </li>
+  </ul>
+  <p><strong>Test your print style sheet</strong></p>
+  <ul>
+    <li>See how your site actually prints out on a printer.</li>
+    <li>Check your print layout in all browsers.</li>
+    <li>Test your print layout in PDF.</li>
+  </ul>
+
+  <h3>Best practices</h3>
+
+  <p><strong>Use the CSS at-rule @media print.</strong> Print styles encapsulated in the <code>@media print {}</code> rule are not rendered to the screen and are only used in printed versions of the page.</p>
+
+  <p><strong>Reset the styles of your site for printing.</strong> The printer-friendly component provides a clean reset of all the basic styles of your site. This includes making all text black and all background colors transparent, which is a core recommendation for making your site printer-friendly.</p>
+
+  <p><strong>Place your print styles wherever is convenient.</strong> Your print styles can be included as a separate print.css file or in any existing css file. Note: USWDS includes the boilerplate print style sheet as a base .scss file that gets compiled into uswds.css.</p>
+
+  <p><strong>Append URLs to link text.</strong> Making your site printer-friendly includes revealing the hidden URL to the user on the printed page. This printer-friendly CSS automatically extracts the URL from the <code>href</code> attribute and appends it to the link text inside parentheses. Because this is inside the <code>@media print {}</code> rule, it only appears in printed versions of the page.</p>
+
+  <h3>Default print styles</h3>
+
+  <p>USWDS print styles enforce the following best practices when users print the page or save it as PDF through their browser:</p>
+  <ul>
+    <li>Removes backgrounds from all elements and sets all text to black</li>
+    <li>Expands body and article elements to a single, 100% wide column and removes margins</li>
+    <li>Minimizes page margins to maximize space</li>
+    <li>Adds underlines to all anchor tags to clearly indicate a link</li>
+    <li>Appends the URL in parenthesis after the text of each link</li>
+    <li>Adds a border around <code>&lt;pre&gt;</code> and <code>&lt;blockquote&gt;</code> elements to clearly indicate these elements</li>
+    <li>Avoids breaking elements like table rows, images, lists, headers, and others across multiple pages, where possible</li>
+    <li>Repeats table headers on every page where tables break across multiple pages</li>
+  </ul>
+
+  <h3>Project-specific print styles</h3>
+  <p>In addition to the above defaults, you can easily hide any element on printed versions of the page by adding the <code>.print:display-none</code> utility class to the element.</p>
+
+  <p>You’re encouraged to add project-specific custom print styles to ensure that:</p>
+  <ul>
+    <li>Elements that shouldn’t print are removed from the printed version</li>
+    <li>Main content fits nicely on the printed page</li>
+    <li>The user can effectively print out the most important content</li>
+  </ul>
+
+  <p>If you are using the USWDS <a href="https://github.com/uswds/uswds/tree/develop/src/stylesheets/theme" target="_blank">theme files</a>, you can add the <code>@media print {}</code> rule to <a href="https://github.com/uswds/uswds/blob/develop/src/stylesheets/theme/_uswds-theme-custom-styles.scss" target="_blank">_uswds-theme-custom-styles.scss.</a></p>
+
+  <p>If you are not using the USWDS theme files, make sure your project supports print styles with the <code>@media print {}</code> rule.</p>
+
+  <p>Add the <code>.print:display-none</code> utility class to any HTML element to hide anything you do not want to print.</p>
+
 </section>
 
 

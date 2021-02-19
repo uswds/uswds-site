@@ -1,4 +1,6 @@
 @media print {
+  // Ensure elements have transparent backgrounds and text is black
+  // plus remove any shadow effects
   *,
   *:before,
   *:after,
@@ -8,81 +10,103 @@
   blockquote:first-line,
   li:first-line {
     background: transparent !important;
-    // Black prints faster
     color: #000 !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
-
+  // Set body and article elements to 100% width and remove margins
+  body,
+  article {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  // Hide elements that are not necessary for print
+  nav,
+  aside,
+  footer {
+    display: none !important;
+  }
+  // Fine tune page margins to maximize space
+  @page {
+    margin: 2cm;
+  }
   // Force underlines on all anchor tags to clearly indicate a link in print
   a,
   a:visited {
-    text-decoration: underline;
+    text-decoration: underline !important;
   }
-
   // Print the URL in parenthesis after the text of the link
   a[href]:after {
     content: " (" attr(href) ")" !important;
-    word-break: break-all;
+    word-break: break-all !important;
   }
-
+  // For sites that use absolute paths in hrefs (e.g. href="/page")
+  // uncomment the following code to prepend your full domain name
+  // to the printed URL
+  //a[href^="/"]:after {
+  //  content: " (https://www.[your-domain-name]" attr(href) ") " !important;
+  //}
   abbr[title]:after {
-    content: " (" attr(title) ")";
+    content: " (" attr(title) ")" !important;
   }
-
   // Don't show links that are fragment identifiers,
-	// or use the `javascript:` pseudo protocol
-
+  // or use the `javascript:` pseudo protocol
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
-    content: "";
+    content: "" !important;
   }
-
   pre {
     white-space: pre-wrap !important;
   }
-
+  // Add a border around pre and blockquote tags to clearly indicate these elements in printt
   pre,
   blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
+    border: 1px solid #999 !important;
   }
-
-  // Printing Tables
+  // Print table headers on every page
   thead {
-    display: table-header-group;
+    display: table-header-group !important;
   }
-
-  tr,
+  // Avoid breaking a table row onto more than one page
+  tr {
+    break-inside: avoid !important;
+  }
+  // Avoid breaking headings onto more than one page
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    break-after: avoid !important;
+    break-inside: avoid !important;
+  }
+  // Prevent images from being cut off and bleeding over the edge
+  // and from being split to another page
   img {
-    page-break-inside: avoid;
+    max-width: 100% !important;
+    break-inside: avoid !important;
+    break-after: avoid !important;
   }
-
-  // Specify the number of lines in a paragraph that should be 
-  // left at the top (widows) or bottom (orphans) of a page.
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
+  blockquote,
+  table,
+  pre {
+    break-inside: avoid !important;
   }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
+  // Keep lists on the same page
+  ul,
+  ol,
+  dl {
+    break-before: avoid !important;
   }
-
-  // Custom print styles
-  // Hide certain elements completely
-  .site-navigation {
-    display: none;
+  // Uncomment this code to expand accordions for print
+  //.usa-accordion__content {
+  //  display: block !important;
+  //  height: auto !important;
+  //}
+  // Print utility class for hiding from display
+  .print\:display-none {
+    display: none !important;
   }
-
-  /**
-	 * Or go Nuclear and use this:
-	 * from: https://medium.com/@matuzo/i-totally-forgot-about-print-style-sheets-f1e6604cfd6#.9de6r4yhr
-	 *
-	 *   body > *:not(main) { display: none; }
-	 *
-	 */
 }

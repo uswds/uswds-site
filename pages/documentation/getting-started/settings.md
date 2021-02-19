@@ -19,7 +19,7 @@ subnav:
   href: '#utilities-settings'
 ---
 
-A good way to get started with USWDS settings is to copy the `dist/src/stylesheets/theme` directory out of the `uswds` package and into the same directory where you keep your project Sass files. Then use the `@import` directive in Sass to import these settings **before importing the main USWDS Sass**. You can use the `styles.scss` example file in the `dist/src/stylesheets/theme` directory as a starting point for your own Sass entry point:
+A good way to get started with USWDS settings is to copy the `dist/scss/theme` directory out of the `uswds` package and into the same directory where you keep your project Sass files. Then use the `@import` directive in Sass to import these settings **before importing the main USWDS Sass**. You can use the `styles.scss` example file in the `dist/scss/theme` directory as a starting point for your own Sass entry point:
 
 ```scss
 // -------------------------------------

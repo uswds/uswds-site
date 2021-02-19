@@ -615,6 +615,12 @@ body {
   background-color: color("green-cool-20v");
 }
 
+.label-cancelled {
+  @extend %label-maturity;
+  background-color: color("red-50v");
+  color: color("white");
+}
+
 .heading-margin-alt {
   margin-top: units(7);
 }
@@ -3367,6 +3373,12 @@ body {
   .site-roadmap-list__item {
     @include u-border-top("base-lighter");
     @include u-text("normal");
+    &:first-child {
+      @include u-margin-top(1);
+    }
+    &:last-child {
+      @include u-margin-bottom(2);
+    }
   }
 }
 

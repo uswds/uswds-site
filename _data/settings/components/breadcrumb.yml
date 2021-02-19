@@ -1,19 +1,19 @@
 name: Breadcrumb
 contents:
   - name: Background color
-    description: The background color of the complete breadcrumb bar
+    description: The background color of the complete breadcrumb bar. `Default` uses body background color set in `$theme-body-background-color`.
     var: $theme-breadcrumb-background-color
-    default: "white"
+    default: "default"
     type: color
   - name: Font family
     description: The family of the breadcrumb text
     var: $theme-breadcrumb-font-family
-    default: "sm"
+    default: '"sm"'
     type: family
   - name: Font size
     description: The size of the breadcrumb text
     var: $theme-breadcrumb-font-size
-    default: "sm"
+    default: '"sm"'
     type: units
   - name: Breadcrumb gap
     description: The space between indicator icons and text

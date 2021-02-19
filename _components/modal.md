@@ -98,7 +98,7 @@ Modals should have a simple headline that clearly states the purpose. They often
 %}
 
 ### Modal variants
-<table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="component-variants">
+<table class="usa-table--borderless site-table-responsive site-table-simple" aria-labelledby="modal-variants">
   <thead>
     <tr>
       <th scope="col" class="flex-6">Variant</th>

@@ -1,18 +1,18 @@
 ---
-permalink: /components/printer-friendly/
+permalink: /components/print-styles/
 layout: styleguide
 type: component
-title: Printer-friendly
+title: Print styles
 category: Components
 lead: A good print style sheet enhances the user experience and addresses many issues people face when printing from the web.
 
 ---
 
-<div class="site-note"><strong>Note:</strong> The printer-friendly component is mostly guidance for best practices, along with  boilerplate print.css code. The specific print layout examples  are intended to demonstrate ways to implement this in your own print style sheet.</div>
+<div class="site-note"><strong>Note:</strong> These print styles are mostly guidance for best practices, along with boilerplate print.css code. The specific print layout examples are intended to demonstrate ways to implement this in your own print style sheet.</div>
 
 <section class="site-component-section">
-  <h3>General guidance</h3>
-  <p><strong>Conserve paper and ink but don’t break up important content</strong></p>
+  <h2>General guidance</h2>
+  <h4 class="margin-bottom-1">Conserve paper and ink but don’t break up important content</h4>
   <ul>
     <li>Reduce white space when appropriate but not at the expense of splitting content across two printed pages.
       <ul>
@@ -26,7 +26,7 @@ lead: A good print style sheet enhances the user experience and addresses many i
     <li>Minimize page margins.</li>
   </ul>
 
-  <p><strong>Give users information they can use</strong></p>
+  <h4 class="margin-bottom-1">Give users information they can use</h4>
   <ul>
     <li>Display hidden URLs to the right of link text.
       <ul>
@@ -39,24 +39,24 @@ lead: A good print style sheet enhances the user experience and addresses many i
       </ul>
     </li>
   </ul>
-  <p><strong>Test your print style sheet</strong></p>
+  <h4 class="margin-bottom-1">Test your print style sheet</h4>
   <ul>
     <li>See how your site actually prints out on a printer.</li>
     <li>Check your print layout in all browsers.</li>
     <li>Test your print layout in PDF.</li>
   </ul>
 
-  <h3>Best practices</h3>
+  <h2>Best practices</h2>
 
   <p><strong>Use the CSS at-rule @media print.</strong> Print styles encapsulated in the <code>@media print {}</code> rule are not rendered to the screen and are only used in printed versions of the page.</p>
 
-  <p><strong>Reset the styles of your site for printing.</strong> The printer-friendly component provides a clean reset of all the basic styles of your site. This includes making all text black and all background colors transparent, which is a core recommendation for making your site printer-friendly.</p>
+  <p><strong>Reset the styles of your site for printing.</strong> These print styles provide a clean reset of all the basic styles of your site. This includes making all text black and all background colors transparent, which is a core recommendation for making your site printer-friendly.</p>
 
   <p><strong>Place your print styles wherever is convenient.</strong> Your print styles can be included as a separate print.css file or in any existing css file. Note: USWDS includes the boilerplate print style sheet as a base .scss file that gets compiled into uswds.css.</p>
 
-  <p><strong>Append URLs to link text.</strong> Making your site printer-friendly includes revealing the hidden URL to the user on the printed page. This printer-friendly CSS automatically extracts the URL from the <code>href</code> attribute and appends it to the link text inside parentheses. Because this is inside the <code>@media print {}</code> rule, it only appears in printed versions of the page.</p>
+  <p><strong>Append URLs to link text.</strong> Making your site printer-friendly includes revealing the hidden URL to the user on the printed page. This print styles CSS automatically extracts the URL from the <code>href</code> attribute and appends it to the link text inside parentheses. Because this is inside the <code>@media print {}</code> rule, it only appears in printed versions of the page.</p>
 
-  <h3>Default print styles</h3>
+  <h2>Default print styles</h2>
 
   <p>USWDS print styles enforce the following best practices when users print the page or save it as PDF through their browser:</p>
   <ul>
@@ -70,10 +70,10 @@ lead: A good print style sheet enhances the user experience and addresses many i
     <li>Repeats table headers on every page where tables break across multiple pages</li>
   </ul>
 
-  <h3>Project-specific print styles</h3>
+  <h2>Project-specific print styles</h2>
   <p>In addition to the above defaults, you can easily hide any element on printed versions of the page by adding the <code>.print:display-none</code> utility class to the element.</p>
 
-  <p>You’re encouraged to add project-specific custom print styles to ensure that:</p>
+  <h4 class="margin-bottom-1">You’re encouraged to add project-specific custom print styles to ensure that:</h4>
   <ul>
     <li>Elements that shouldn’t print are removed from the printed version</li>
     <li>Main content fits nicely on the printed page</li>

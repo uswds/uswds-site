@@ -1,6 +1,6 @@
 @media print {
   // Ensure elements have transparent backgrounds and text is black
-  // Also remove any shadow effects
+  // plus remove any shadow effects
   *,
   *:before,
   *:after,
@@ -20,6 +20,12 @@
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
+  }
+  // Hide elements that are not necessary for print
+  nav,
+  aside,
+  footer {
+    display: none !important;
   }
   // Fine tune page margins to maximize space
   @page {
@@ -47,8 +53,7 @@
   pre {
     white-space: pre-wrap !important;
   }
-  // Add a border around pre and blockquote tags to clearly indicate these elements in print
-  code,
+  // Add a border around pre and blockquote tags to clearly indicate these elements in printt
   pre,
   blockquote {
     border: 1px solid #999 !important;
@@ -89,12 +94,7 @@
   dl {
     break-before: avoid !important;
   }
-  // Expand accordions for print
-  .usa-accordion__content {
-    display: block !important;
-    height: auto !important;
-  }
-  // Print utility for hiding from display
+  // Print utility class for hiding from display
   .print\:display-none {
     display: none !important;
   }

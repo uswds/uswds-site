@@ -41,12 +41,6 @@
     content: " (" attr(href) ")" !important;
     word-break: break-all !important;
   }
-  // For sites that use absolute paths in hrefs (e.g. href="/page")
-  // uncomment the following code to prepend your full domain name
-  // to the printed URL
-  //a[href^="/"]:after {
-  //  content: " (https://www.[your-domain-name]" attr(href) ") " !important;
-  //}
   abbr[title]:after {
     content: " (" attr(title) ")" !important;
   }
@@ -100,11 +94,6 @@
   dl {
     break-before: avoid !important;
   }
-  // Uncomment this code to expand accordions for print
-  //.usa-accordion__content {
-  //  display: block !important;
-  //  height: auto !important;
-  //}
   // Print utility class for hiding from display
   .print\:display-none {
     display: none !important;

@@ -20,7 +20,12 @@ contents:
     var: $theme-identifier-max-width
     default: '"desktop"'
     type: units
-  - name: Maximum width
+  - name: Primary link color
+    description: The color of the links in the masthead section. `Default` uses either the standard or reverse link color set with `$theme-link-color` and `$theme-link-reverse-color`.
+    var: $theme-identifier-primary-link-color
+    default: "default"
+    type: color
+  - name: Secondary link color
     description: The color of the links in the required links section. This should be **grade 20-30** in a `gray` family.
     var: $theme-identifier-secondary-link-color
     default: '"base-light"'

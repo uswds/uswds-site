@@ -30,7 +30,7 @@ lead: A good print style sheet enhances the user experience and addresses many i
   <ul>
     <li>Display hidden URLs to the right of link text.
       <ul>
-        <li>If your site uses absolute paths in hrefs (e.g. href="/page"), use CSS to prepend your full domain name to the printed URL.</li>
+        <li>If your site uses absolute paths in hrefs (e.g. <code>href="/page"</code>), use CSS to prepend your full domain name to the printed URL.</li>
       </ul>
     </li>
     <li>Limit the use of javascript in hrefs when possible.

@@ -20,7 +20,7 @@
 @import 'packages/required';
 
 $pink-20v: #F8A897;
-$pink-50v: #CC6853;
+$pink-50v: #bc5843;
 
 $gray-20-next: #eaece9;
 $gray-80-next: #2e2e2e;
@@ -402,10 +402,14 @@ $next-button-hover-color: #0D53B7;
   width: 60px;
 }
 
-.next-finding__heading {
+.next-finding__heading { 
   font-family: family('lang') !important;
   font-size: size('lang', 8) !important;
   margin: 0 !important;
+}
+
+.next-section .next-finding__heading {
+  color: $gray-80-next;
 }
 
 .next-finding__text {

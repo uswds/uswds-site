@@ -126,16 +126,19 @@ Tables also help users find specific information within a large data set. For ex
           <strong>Provide raw values for cells with formatted number content.</strong> If you have formatted your cell content for display (such as using percent, currency, or comma formatting) or if your cell content is non-numeric but should be sorted in a numeric order (such as months, days of the week, or dates), then provide a numeric-sortable value in a <code>data-sort-value</code> attribute on each table cell. For example:
           <ul>
             <li><strong>Numbers</strong> with currency or comma formatting: <br>
-                <code>&lt;td data-sort-value="132773.54"&gt; $132,773.54 &lt;/td&gt;</code>
+              <code>&lt;td data-sort-value="132773.54"&gt; $132,773.54 &lt;/td&gt;</code>
             </li>
             <li><strong>Percentages or fractions</strong>, converted to decimal: <br>
-                <code>&lt;td data-sort-value="0.943"&gt; 94.3% &lt;/td&gt;</code>
+              <code>&lt;td data-sort-value="0.943"&gt; 94.3% &lt;/td&gt;</code>
             </li>
             <li><strong>Months, weekdays, or other orderable text</strong>: <br>
-                <code>&lt;td data-sort-value="2"&gt; February &lt;/td&gt;</code>
+              <code>&lt;td data-sort-value="2"&gt; February &lt;/td&gt;</code>
             </li>
-             <li><strong>Dates</strong>, in Unix timestamp: <br>
-                <code>&lt;td data-sort-value="327092400"&gt; Aug. 21, 1959 &lt;/td&gt;</code>
+            <li><strong>Dates</strong>, in Unix timestamp: <br>
+              <code>&lt;td data-sort-value="327092400"&gt; Aug. 21, 1959 &lt;/td&gt;</code>
+            </li>
+            <li><strong>File sizes</strong>, in bytes: <br>
+              <code>&lt;td data-sort-value="1126501"&gt; 1.1MB &lt;/td&gt;</code>
             </li>
           </ul>
         </li>

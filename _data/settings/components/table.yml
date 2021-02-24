@@ -48,7 +48,7 @@ contents:
     type: color
   - name: Sorted Column Stripe Background Color
     description: Defines a background color for the alternating horizontal stripes applied to cells of the sorted column 
-    var: theme-table-sorted-stripe-background-color
+    var: $theme-table-sorted-stripe-background-color
     default: '"blue-cool-10v"'
     type: color
   - name: Sorted Column Icon Color

@@ -120,7 +120,7 @@ Finally, a card is **modular**. This means that you can vary the order of cards 
             </td>
           </tr>
           <tr>
-            <td data-title="Variant" class="flex-6">usa-card__media--indent</td>
+            <td data-title="Variant" class="flex-6">usa-card__media--inset</td>
             <td data-title="Description" class="flex-6">
               <span class="font-lang-3xs">
                 Indents the media element so it doesn't extend to the edge of the card.

@@ -3464,9 +3464,14 @@ body {
   margin-top: units(2)
 }
 
-.usa-form-group {
-  .usa-label:first-child {
-    margin-top: 0;
+.site-accordion-code {
+  // Dont show margin at the top of the first form's label
+  .usa-form:first-child {
+    .usa-form-group {
+      .usa-label:first-child {
+        margin-top: 0;
+      }
+    }
   }
 }
 

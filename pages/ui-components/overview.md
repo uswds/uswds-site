@@ -26,11 +26,12 @@ redirect_from:
 
 <div class="usa-card-group flex-row margin-top-4">
 {% for component in uswdsComponents %}
+{% assign tags = component.tags | join: " " %}
   <li
     class="usa-card site-component-card grid-col-6 tablet:grid-col-4 margin-bottom-2"
     role="region"
     aria-atomic="true"
-    data-meta="{{ component.title }} {{ component.meta }}">
+    data-meta="{{ component.title }} {{ tags }}">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h2 class="usa-card__heading font-lang-lg"><a href="{{ component.permalink | prepend: site.baseurl }}">{{ component.title }}</a></h2>

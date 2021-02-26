@@ -1,19 +1,15 @@
 ---
-permalink: /components/accordion/
-redirect_from:
-  - /accordions/
-  - /components/accordions/
 category: Components
-title: Accordion
-lead: An accordion is a list of headers that hide or reveal additional content when selected.
 component:
   name: accordion
   status: ready
   package: usa-accordion
   dependencies:
-variants:
-  - variant: "`.usa-accordion--bordered`"
-    description: Display a border around accordion content
+lead: An accordion is a list of headers that hide or reveal additional content when selected.
+permalink: /components/accordion/
+redirect_from:
+  - /accordions/
+  - /components/accordions/
 subnav:
 - text: Preview
   href: '#accordion-preview'
@@ -23,4 +19,8 @@ subnav:
   href: '#accordion-guidance'
 - text: Package
   href: '#accordion-package'
+title: Accordion
+variants:
+  - variant: "`.usa-accordion--bordered`"
+    description: Display a border around accordion content
 ---

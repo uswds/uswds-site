@@ -44,6 +44,8 @@ subnav:
   href: '#date-range-picker-guidance'
 - text: Package
   href: '#date-range-picker-package'
+tags:
+  - calendar
 title: Date range picker
 type: component
 ---

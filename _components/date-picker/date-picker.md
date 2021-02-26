@@ -44,6 +44,8 @@ subnav:
   href: '#date-picker-guidance'
 - text: Package
   href: '#date-picker-package'
+tags:
+  - calendar
 title: Date picker
 type: component
 ---

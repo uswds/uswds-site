@@ -3455,18 +3455,24 @@ body {
 }
 
 .usa-date-picker__calendar {
-  max-width: units("mobile-lg");
+  max-width: units("mobile");
   left: auto;
   right: 0;
 }
 
 .site-accordion-code {
-  // Dont show margin at the top of the first form's label
+  // Don't show margin at the top of the first form-group's label
+  .usa-accordion__content > .usa-form-group:first-child,
+  .usa-date-range-picker > .usa-form-group:first-child {
+    .usa-label:first-child {
+      margin-top: 0;
+    }
+  }
+
+  // When form: Don't show margin at the top of the first form's label
   .usa-form:first-child {
-    .usa-form-group {
-      .usa-label:first-child {
-        margin-top: 0;
-      }
+    .usa-label:first-child {
+      margin-top: 0;
     }
   }
 }

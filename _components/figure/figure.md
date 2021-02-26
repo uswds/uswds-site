@@ -1,7 +1,7 @@
 ---
 component:
   status: alpha
-  package: usa-tk
+  package: usa-figure
   dependencies:
 layout: styleguide
 title: Figure

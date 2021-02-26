@@ -1,2 +1,1 @@
-{:.usa-content-list}
-- **Hed.** Text.
+- **Documents are required.** Ask users to provide files when it's necessary.

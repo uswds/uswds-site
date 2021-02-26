@@ -1,9 +1,9 @@
 ---
-category: Components
 component:
   status: ready
   package: usa-form-controls
   dependencies:
+category: Components
 implementation:
   initProps:
     - property: "`required`"
@@ -46,6 +46,10 @@ subnav:
   href: '#date-range-picker-package'
 tags:
   - calendar
+  - form
+  - forms
+  - form controls
+  - input
 title: Date range picker
 type: component
 ---

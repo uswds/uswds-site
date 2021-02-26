@@ -46,6 +46,10 @@ subnav:
   href: '#date-picker-package'
 tags:
   - calendar
+  - form
+  - forms
+  - form controls
+  - input
 title: Date picker
 type: component
 ---

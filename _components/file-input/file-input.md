@@ -19,5 +19,9 @@ subnav:
 tags:
   - document
   - upload
+  - form
+  - forms
+  - form controls
+  - input
 title: File input
 ---

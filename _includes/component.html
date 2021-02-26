@@ -3,6 +3,12 @@
 {% assign guidanceFormat = "{:.usa-content-list}" %}
 {% assign guidanceNullLength = guidanceFormat.size | plus: 1 %}
 
+{%- capture about -%}
+{% if page.component.about %}
+{{ guidanceFormat }}
+{% include_relative {{guidancePath}}/about.md -%}
+{% endif %}
+{%- endcapture -%}
 {%- capture when_to_use -%}
 {{ guidanceFormat }}
 {% include_relative {{guidancePath}}/when-to-use.md -%}
@@ -45,11 +51,35 @@
 </div>
 {% endif %}
 
+{% if page.component.image %}
+<div class="preview">
+  <a
+    class="media_link"
+    href={% include component-preview-link.html component=componentKey %}
+  >
+    <img
+      src="{{ site.baseurl }}/assets/img/headers/{{ componentKey }}.png"
+      alt={{ page.title }}
+    />
+  </a>
+  <a
+    class="usa-button"
+    href={% include component-preview-link.html component=componentKey %}
+    >Demo {{ page.title }}</a
+  >
+</div>
+{% else %}
 {% include code/preview.html component=componentKey level="h2" %}
+{% endif %}
+
 {% include code/accordion.html component=componentKey level="h2" %}
 
 <h2 id="{{ componentKey }}-guidance" class="site-component-section-title">Guidance</h2>
 <div class="site-component-usage">
+  {% if about.size > guidanceNullLength %}
+  <h3>About</h3>
+  {{ about | markdownify }}
+  {% endif %}
   {% if when_to_use.size > guidanceNullLength %}
   <h3>When to use the {{ componentName }} component</h3>
   {{ when_to_use | markdownify }}

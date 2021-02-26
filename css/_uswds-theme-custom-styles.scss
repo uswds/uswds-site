@@ -3460,10 +3460,6 @@ body {
   right: 0;
 }
 
-* + .usa-form-group {
-  margin-top: units(2)
-}
-
 .site-accordion-code {
   // Dont show margin at the top of the first form's label
   .usa-form:first-child {
@@ -3473,12 +3469,4 @@ body {
       }
     }
   }
-}
-
-* + .usa-memorable-date {
-  margin-top: units(2)
-}
-
-.usa-memorable-date .usa-form-group {
-  margin-top: 0;
 }

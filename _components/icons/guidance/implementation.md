@@ -1,2 +1,5 @@
-{:.usa-content-list}
-- **Hed.** Text.
+- **Don’t alter icons.** You shouldn’t customize, combine, or change the icons (other than updating the color) due to their [license](https://github.com/uswds/uswds/blob/develop/LICENSE.md).
+- **Icons are available for use in `src/img/usa-icons`.** Any icons not included in the curated set are located in `src/img/usa-icons-unused`. You can move them into your project and rebuild the SVG sprite using [uswds-gulp](https://github.com/uswds/uswds-gulp/).
+- **Using color in icons.** Icons use `currentColor`, so the color of the icon will be the text color of its parent element. Change colors with the [color utility](https://designsystem.digital.gov/utilities/color/).
+- **Relative to font size.** By default, icons will scale with font size. If you want to specify an icon size, use one of the component’s size variants.
+- **Icon names are identifiers.** To use an individual, simply change the identifier after the pound sign in the sprite path to the icon name. For example, to use the `accessibility_new` icon, the path will be `<use xlink:href="/path/to/sprite.svg#accessibility_new">` or to use the `info` icon, the path will be `<use xlink:href="/path/to/sprite.svg#info">`.

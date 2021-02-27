@@ -1,17 +1,15 @@
 ---
-permalink: /components/banner/
-redirect_from:
-  - /banner/
-  - /components/banners/
-type: component
-title: Banner
 category: Components
-lead: The banner identifies official websites of government organizations in the United States. It also helps visitors understand how to tell that a website is both official and secure.
 component:
   name: banner
   status: ready
   package: usa-banner
   dependencies:
+lead: The banner identifies official websites of government organizations in the United States. It also helps visitors understand how to tell that a website is both official and secure.
+permalink: /components/banner/
+redirect_from:
+  - /banner/
+  - /components/banners/
 subnav:
 - text: Preview
   href: '#banner-preview'
@@ -21,6 +19,8 @@ subnav:
   href: '#banner-guidance'
 - text: Package
   href: '#banner-package'
+title: Banner
+type: component
 ---
 
 You should use the banner to identify your site as an official government site.

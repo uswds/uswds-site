@@ -29,6 +29,12 @@
 {{ guidanceFormat }}
 {% include_relative {{guidancePath}}/implementation.md -%}
 {%- endcapture -%}
+{%- capture references -%}
+{% if page.component.references %}
+{{ guidanceFormat }}
+{% include_relative {{guidancePath}}/references.md -%}
+{% endif %}
+{%- endcapture -%}
 
 {% assign componentName = page.title | downcase %}
 {% assign componentKey = componentName | slugify %}
@@ -96,7 +102,7 @@
   <h3 class="usa-heading">Accessibility</h3>
   {{ accessibility | markdownify }}
   {% endif %}
-  <h3 class="usa-heading">Implementation</h3>
+  <h3 class="usa-heading">Using the {{ componentName }} component</h3>
   {% if implementation.size > guidanceNullLength %}
   {{ implementation | markdownify }}
   {% endif %}
@@ -111,9 +117,13 @@
     cols="flex-1, flex-1"
     section="variants"
   %}
+  {% if references.size > guidanceNullLength %}
+  <h3>References</h3>
+  {{ references | markdownify }}
+  {% endif %}
 </div>
 
-<h2 id="{{ name }}-package" class="site-component-section-title">Package</h2>
+<h2 id="{{ componentKey }}-package" class="site-component-section-title">Package</h2>
 <ul class="usa-content-list">
   <li>
     <strong>Package usage:</strong> <code>@import {{ page.component.package}}</code>

@@ -1,2 +1,1 @@
-{:.usa-content-list}
-- **Hed.** Text.
+- **Displaying high-level sequential steps.** Use process lists to create a clear hierarchy and help users easily differentiate between individual steps or stages in a process.

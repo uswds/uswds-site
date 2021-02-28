@@ -1,2 +1,1 @@
-{:.usa-content-list}
-- **Hed.** Text.
+- **Use semantic heading levels.** Though our default code uses an `<h4>`, use the correct heading level with the class name `usa-process-list__heading` in your own implementation.

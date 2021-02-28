@@ -2,8 +2,9 @@
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code">
   {% assign _id = include.component | append: '-code' %}
-  <button class="usa-accordion__button" aria-controls="{{ _id }}"><{{ level }}>Component code</{{ level }}></button>
-  <div id="{{ _id }}" class="usa-accordion__content">
+  {% assign _content_id = include.component | append: '-code-content' %}
+  <button class="usa-accordion__button" aria-controls="{{ _content_id }}"><{{ level }} id="{{ _id }}">Component code</{{ level }}></button>
+  <div id="{{ _content_id }}" class="usa-accordion__content">
     {% include code/syntax.html component=include.component %}
   </div>
 </div>

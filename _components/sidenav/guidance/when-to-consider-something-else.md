@@ -1,2 +1,2 @@
-{:.usa-content-list}
-- **Hed.** Text.
+- **Small site.** If the site has fewer than five pages, consider organizing the page without a navigational hierarchy.
+- **Existing navigation.** If your page already has a horizontal and vertical navigation bar, consider ways to simplify your navigation system.

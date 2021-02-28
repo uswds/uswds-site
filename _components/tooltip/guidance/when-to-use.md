@@ -1,2 +1,4 @@
-{:.usa-content-list}
-- **Hed.** Text.
+- **Helpful, non-critical information.** Use tooltips to strengthen an existing message.
+- **Enhance confidence.** Use tooltips to increase certainty about an interaction.
+- **Brief descriptions.** Tooltips perform best with succinct helper text.
+- **Lack of space.** Tooltips are useful as a last resort for space-constrained UI. Explore other options for keeping content visible without a tooltip.

@@ -50,7 +50,10 @@ Components:
   - href: /components/header/
   - href: /components/icons/
   - href: /components/identifier/
+  - href: /components/link/
+  - href: /components/list/
   - href: /components/process-list/
+  - href: /components/prose/
   - href: /components/radio-buttons/
   - href: /components/range-slider/
   - href: /components/search/

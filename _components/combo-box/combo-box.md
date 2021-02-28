@@ -34,13 +34,13 @@ lead: A combo box helps users select an item from a large list of options.
 permalink: /components/combo-box/
 subnav:
 - text: Preview
-  href: '#tk-preview'
+  href: '#combo-box-preview'
 - text: Code
-  href: '#tk-code'
+  href: '#combo-box-code'
 - text: Guidance
-  href: '#tk-guidance'
+  href: '#combo-box-guidance'
 - text: Package
-  href: '#tk-package'
+  href: '#combo-box-package'
 tags:
   - form
   - forms

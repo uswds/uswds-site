@@ -18,9 +18,9 @@ subnav:
 - text: Responsive stacked table
   href: '#responsive-stacked-table'
 - text: Guidance
-  href: '#summary-box-guidance'
+  href: '#table-guidance'
 - text: Package
-  href: '#summary-box-package'
+  href: '#table-package'
 tags:
   - table
   - zebra stripes

@@ -1,13 +1,15 @@
 ---
-title: Borderless table
-parent: Table
-order: 01
+component:
+  status: ready
+  package: usa-table
+  dependencies:
+  variant: borderless
+guidancePath: guidance/variants/default
 layout: styleguide
 lead: A borderless table can be useful when you want the information to feel more a part of the text it accompanies and extends.
-
+order: 01
+parent: Table
+title: Borderless table
 ---
 
-<section class="site-component-section">
-  {% include code/preview.html component="table--borderless" %}
-  {% include code/accordion.html component="table--borderless" %}
-</section>
+{% include component-preview-and-code.html level="h3" %}

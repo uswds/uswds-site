@@ -1,7 +1,7 @@
 ---
 component:
   status: ready
-  package: usa-tk
+  package: usa-step-indicator
   dependencies:
 permalink: /components/step-indicator/
 layout: styleguide
@@ -20,13 +20,17 @@ variants:
     description: Center counters and labels in each step
 subnav:
 - text: Preview
-  href: '#tk-preview'
+  href: '#step-indicator-preview'
 - text: Code
-  href: '#tk-code'
+  href: '#step-indicator-code'
 - text: Guidance
-  href: '#tk-guidance'
+  href: '#step-indicator-guidance'
 - text: Package
-  href: '#tk-package'
+  href: '#step-indicator-package'
+tags:
+  - stepper
+  - step by step
+  - progress bar
 ---
 
 {% include code/preview.html component="step-indicator" %}

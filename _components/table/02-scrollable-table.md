@@ -1,12 +1,15 @@
 ---
-title: Scrollable table
-parent: Table
-order: 02
+component:
+  status: ready
+  package: usa-table
+  dependencies:
+  variant: scrollable
+guidancePath: guidance/variants/scrollable
 layout: styleguide
 lead: A scrollable table is ideal for dense, tabular data.
-
+order: 02
+parent: Table
+title: Scrollable table
 ---
-<section class="site-component-section">
-  {% include code/preview.html component="table--scrollable" %}
-  {% include code/accordion.html component="table--scrollable" %}
-</section>
+
+{% include component-preview-and-code.html level="h3" %}

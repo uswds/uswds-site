@@ -1,12 +1,15 @@
 ---
-title: Responsive stacked table
-parent: Table
-order: 03
+component:
+  status: ready
+  package: usa-table
+  dependencies:
+  variant: stacked
+guidancePath: guidance/variants/scrollable
 layout: styleguide
 lead: A responsive stacked table collapses at narrow widths for better readability on small screens.
-
+order: 03
+parent: Table
+title: Responsive stacked table
 ---
-<section class="site-component-section">
-  {% include code/preview.html component="table--stacked" %}
-  {% include code/accordion.html component="table--stacked" %}
-</section>
+
+{% include component-preview-and-code.html level="h3" %}

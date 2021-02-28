@@ -1,2 +1,1 @@
-{:.usa-content-list}
-- **Hed.** Text.
+- **Don’t visually hide alert messages and then make them visible when they are needed.** Users of older assistive technologies may still be able to perceive hidden alert messages. Fully remove alert messages when they’re not needed.

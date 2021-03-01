@@ -47,7 +47,7 @@
   {{ about | markdownify }}
   {% endif %}
   {% if when_to_use.size > guidanceNullLength %}
-  <h3>When to use the {{ componentName }} component</h3>
+  <h3>When to use the {{ componentName }} {{ page.type }}</h3>
   {{ when_to_use | markdownify }}
   {% endif %}
   {% if when_to_consider_something_else.size > guidanceNullLength %}
@@ -62,10 +62,11 @@
   <h3 class="usa-heading">Accessibility</h3>
   {{ accessibility | markdownify }}
   {% endif %}
-  <h3 class="usa-heading">Using the {{ componentName }} component</h3>
   {% if implementation.size > guidanceNullLength %}
+  <h3 class="usa-heading">Using the {{ componentName }} {{ page.type }}</h3>
   {{ implementation | markdownify }}
   {% endif %}
+  {% if page.category == "Components" %}
   <h4 id="component-settings">{{ componentName | capitalize }} settings</h4>
   {% assign settings = site.data.settings.components[settingsKey] %}
   {% include settings-table-simple.html
@@ -77,6 +78,15 @@
     cols="flex-1, flex-1"
     section="variants"
   %}
+  {% endif %}
+  {% for item in page.guidance %}
+  <h3 class="usa-heading">{{ item.heading }}</h3>
+  {%- capture thisText -%}
+  {{ guidanceFormat }}
+  {% include_relative {{item.path}} -%}
+  {% endcapture %}
+  {{ thisText | markdownify }}
+  {% endfor %}
   {% if references.size > guidanceNullLength %}
   <h3>References</h3>
   {{ references | markdownify }}

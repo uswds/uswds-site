@@ -7,12 +7,9 @@ layout: styleguide
 category: Templates
 lead: Allow users to create an account or sign in.
 subnav:
-- text: Create account
-  href: '#create-account'
-- text: Sign in
-  href: '#sign-in'
-- text: Multiple sign-in options
-  href: '#multiple-sign-in-options'
+  - href: /templates/authentication-pages/create-account/
+  - href: /templates/authentication-pages/sign-in/
+  - href: /templates/authentication-pages/multiple-sign-in-options/
 ---
 
 It can be difficult or confusing for users to create accounts or sign in to a website. The best way to help is to provide context about why they’re creating an account and to remove unnecessary distractions from the page.
@@ -23,9 +20,9 @@ Government websites requiring account creation can use [login.gov](https://login
 
 If you’re unable to use a shared service like login.gov, use our authentication page templates:
 
-- [Create account template](#create-account)
-- [Sign-in template](#sign-in)
-- [Multiple sign-in options](#multiple-sign-in-options)
+- [Create account template]({{ site.baseurl }}/templates/authentication-pages/create-account/)
+- [Sign-in template]({{ site.baseurl }}/templates/authentication-pages/sign-in/)
+- [Multiple sign-in options]({{ site.baseurl }}/templates/authentication-pages/multiple-sign-in-options/)
 
 
 <div class="site-component-section-title" markdown="1">

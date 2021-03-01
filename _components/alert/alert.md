@@ -1,16 +1,25 @@
 ---
-permalink: /components/alert/
-redirect_from:
-- /alerts/
-- /components/alerts/
-title: Alert
 category: Components
-lead: An alert keeps users informed of important and sometimes time-sensitive changes.
 component:
   name: alert
   status: ready
   package: usa-alert
   dependencies:
+lead: An alert keeps users informed of important and sometimes time-sensitive changes.
+permalink: /components/alert/
+redirect_from:
+  - /alerts/
+  - /components/alerts/
+subnav:
+  - text: Preview
+    href: '#alert-preview'
+  - text: Code
+    href: '#alert-code'
+  - text: Guidance
+    href: '#alert-guidance'
+  - text: Package
+    href: '#alert-package'
+title: Alert
 variants:
   - variant: "`.usa-alert--info`"
     description: Display an informational status alert
@@ -24,13 +33,4 @@ variants:
     description: Display a slimmer version of the alert
   - variant: "`.usa-alert--no-icon`"
     description: Display an alert without an icon
-subnav:
-- text: Preview
-  href: '#alert-preview'
-- text: Code
-  href: '#alert-code'
-- text: Guidance
-  href: '#alert-guidance'
-- text: Package
-  href: '#alert-package'
 ---

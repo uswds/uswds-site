@@ -34,7 +34,7 @@ redirect_from:
     data-meta="{{ component.title }} {{ tags }}">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h2 class="usa-card__heading font-lang-lg"><a href="{{ component.permalink | prepend: site.baseurl }}">{{ component.title }}</a></h2>
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ component.permalink | prepend: site.baseurl }}">{{ component.title }}</a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         {{ component.lead | markdownify }}

@@ -3461,7 +3461,7 @@ body {
 
   // When form: Don't show margin at the top of the first form's label
   .usa-form:first-child {
-    .usa-label:first-child {
+    > .usa-label:first-child {
       margin-top: 0;
     }
   }

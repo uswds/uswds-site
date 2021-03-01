@@ -9,16 +9,10 @@ title: Form templates
 category: Templates
 lead: Patterns for some of the most commonly used forms
 subnav:
-- text: Name form
-  href: '#name-form'
-- text: Address form
-  href: '#address-form'
-- text: Sign-in form
-  href: '#sign-in-form'
-- text: Password reset form
-  href: '#password-reset-form'
+  - href: /templates/form-templates/address-form/
+  - href: /templates/form-templates/name-form/
+  - href: /templates/form-templates/password-reset-form/
+  - href: /templates/form-templates/sign-in-form/
 ---
 
 {% include accessibility.html %}
-
-{% include child-sections.html parent='Form templates' %}

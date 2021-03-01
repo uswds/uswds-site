@@ -7,6 +7,7 @@ lead: USWDS components are simple and consistent solutions to common user interf
 type: docs
 redirect_from:
   - /components/
+  - /form-controls/
 ---
 
 {% assign uswdsComponents = site.components | where: "parent", null | where: "component.status", "ready" %}

@@ -8,6 +8,7 @@ component:
 permalink: /components/range-slider/
 redirect_from:
 - /components/range-input/
+- /form-controls/10-range-input/
 title: Range slider
 type: component
 maturity: alpha

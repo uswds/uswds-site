@@ -35,6 +35,8 @@ implementation:
 layout: component
 lead: A date range picker helps users select a range between two dates.
 permalink: /components/date-range-picker/
+redirect_from:
+- /form-controls/06-date-range-picker/
 subnav:
 - text: Preview
   href: '#date-range-picker-preview'

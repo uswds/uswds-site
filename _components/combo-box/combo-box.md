@@ -32,6 +32,8 @@ implementation:
 layout: component
 lead: A combo box helps users select an item from a large list of options.
 permalink: /components/combo-box/
+redirect_from:
+  - /form-controls/03-combo-box/
 subnav:
 - text: Preview
   href: '#combo-box-preview'

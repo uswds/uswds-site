@@ -7,6 +7,8 @@ component:
   dependencies:
 lead: A link connects users to a different page or further information.
 permalink: /components/link/
+redirect_from:
+- /typography/02-links/
 subnav:
   - text: Preview
     href: '#accordion-preview'

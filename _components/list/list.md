@@ -7,6 +7,8 @@ component:
   dependencies:
 lead: A list organizes information into discrete sequential sections.
 permalink: /components/list/
+redirect_from:
+- /typography/03-lists/
 subnav:
   - text: Preview
     href: '#accordion-preview'

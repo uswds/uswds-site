@@ -7,6 +7,8 @@ component:
 layout: component
 lead: Checkboxes allow users to select one or more options from a list.
 permalink: /components/checkbox/
+redirect_from:
+- /form-controls/02-checkboxes/
 subnav:
 - text: Preview
   href: '#checkbox-preview'

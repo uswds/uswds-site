@@ -7,6 +7,8 @@ component:
 layout: component
 lead: Three text fields are the easiest way for users to enter most dates.
 permalink: /components/date-input/
+redirect_from:
+- /form-controls/04-date-input/
 subnav:
 - text: Preview
   href: '#date-input-preview'

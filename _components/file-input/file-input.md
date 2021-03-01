@@ -6,6 +6,8 @@ component:
   dependencies:
 lead: File input allows users to attach one or multiple files.
 permalink: /components/file-input/
+redirect_from:
+- /form-controls/08-file-input/
 type: component
 subnav:
 - text: Preview

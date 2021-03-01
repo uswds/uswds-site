@@ -7,6 +7,8 @@ component:
   dependencies:
 lead: Format a block of running text.
 permalink: /components/prose/
+redirect_from:
+- /typography/01-prose/
 subnav:
   - text: Preview
     href: '#accordion-preview'

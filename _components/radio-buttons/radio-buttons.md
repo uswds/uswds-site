@@ -6,6 +6,8 @@ component:
   dependencies:
 lead: Radio buttons allow users to select exactly one choice from a group.
 permalink: /components/radio-buttons/
+redirect_from:
+- /form-controls/09-radio-buttons/
 subnav:
 - text: Preview
   href: '#radio-buttons-preview'

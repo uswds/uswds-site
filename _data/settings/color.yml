@@ -432,7 +432,6 @@ contents:
     default: '"red-warm-80"'
     type: color
 
-
   - name: Disabled color family
     section: true
     description: Color family of disabled actions.
@@ -458,6 +457,23 @@ contents:
     default: '"gray-30"'
     type: color
 
+  - name: Body background color
+    section: true
+    description: Background color of the site body
+    var: $theme-body-background-color
+    default: '"white"'
+    type: color
+  - name: Body text color
+    description: Color of body text
+    var: $theme-text-color
+    default: '"ink"'
+    type: color
+  - name: Body text reverse color
+    description: Color of body text on dark backgrounds
+    var: $theme-text-reverse-color
+    default: '"white"'
+    type: color
+
   - name: Link color
     section: true
     description: Color for text links
@@ -478,4 +494,19 @@ contents:
     description: Color for `:active` text links
     var: $theme-link-active-color
     default: '"primary-darker"'
+    type: color
+  - name: Link reverse color
+    description: Color for reverse text links
+    var: $theme-link-reverse-color
+    default: '"base-lighter"'
+    type: color
+  - name: Link reverse hover color
+    description: Color for reverse `:hover` text links
+    var: $theme-link-reverse-hover-color
+    default: '"base-lightest"'
+    type: color
+  - name: Link reverse hover color
+    description: Color for reverse `:active` text links
+    var: $theme-link-reverse-active-color
+    default: '"white"'
     type: color

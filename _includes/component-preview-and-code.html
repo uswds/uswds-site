@@ -14,22 +14,7 @@
 {% endif %}
 
 {% if page.component.image %}
-<div class="preview">
-  <a
-    class="media_link"
-    href={% include component-preview-link.html component=componentKey %}
-  >
-    <img
-      src="{{ site.baseurl }}/assets/img/headers/{{ componentKey }}.png"
-      alt={{ page.title }}
-    />
-  </a>
-  <a
-    class="usa-button"
-    href={% include component-preview-link.html component=componentKey %}
-    >Demo {{ page.title }}</a
-  >
-</div>
+{% include code/preview.html component=componentKey image=page.component.image level=_level %}
 {% else %}
 {% include code/preview.html component=componentKey level=_level %}
 {% endif %}

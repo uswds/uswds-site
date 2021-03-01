@@ -5,9 +5,10 @@ component:
   package: usa-sidenav
   dependencies:
 lead: "Hierarchical, vertical navigation to place at the side of a page."
-permalink: /components/sidenav/
+permalink: /components/side-navigation/
 redirect_from:
 - /sidenav/
+- /components/sidenav/
 subnav:
 - text: Preview
   href: '#side-navigation-preview'

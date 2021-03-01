@@ -1,15 +1,31 @@
 ---
-permalink: /templates/authentication-pages/create-account/
-title: Create account
 category: Templates
+component:
+  status: ready
+  package: false
+  dependencies:
+  image: /assets/img/templates/layout--create-account.png
+guidance:
+  - heading: Components used in this template
+    path: /guidance/components-used.md
+  - heading: Additional information
+    path: /guidance/additional-information.md
+layout: component
 lead: Explain the benefits of setting up an account.
+permalink: /templates/authentication-pages/create-account/
+redirect_from:
 subnav:
   - text: Preview
-    href: '#card-preview'
+    href: '#create-account-preview'
   - text: Code
-    href: '#card-code'
+    href: '#create-account-code'
   - text: Guidance
-    href: '#card-guidance'
+    href: '#create-account-guidance'
   - text: Package
-    href: '#card-package'
+    href: '#create-account-package'
+title: Create account
+type: template
 ---
+
+Site users will be more likely to create an account if it’s easy and they understand the benefits. Keep the account creation process simple with a single “create account” button and limited distractions (like other calls-to-action). Succinctly outline the benefits of setting up an account, emphasizing what they can do and how it can help them.
+

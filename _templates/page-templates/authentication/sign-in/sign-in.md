@@ -1,15 +1,26 @@
 ---
-permalink: /templates/authentication-pages/sign-in/
-title: Sign-in
 category: Templates
+component:
+  status: ready
+  package: false
+  dependencies:
+  image: /assets/img/templates/layout--sign-in.png
+guidance:
+  - heading: Components used in this template
+    path: /guidance/components-used.md
+layout: component
 lead: Provide users with a clear and uncluttered sign-in experience.
+permalink: /templates/authentication-pages/sign-in/
+redirect_from:
 subnav:
   - text: Preview
-    href: '#card-preview'
+    href: '#sign-in-preview'
   - text: Code
-    href: '#card-code'
+    href: '#sign-in-code'
   - text: Guidance
-    href: '#card-guidance'
+    href: '#sign-in-guidance'
   - text: Package
-    href: '#card-package'
+    href: '#sign-in-package'
+title: Sign-in
+type: template
 ---

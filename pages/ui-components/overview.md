@@ -12,12 +12,10 @@ redirect_from:
 
 {% assign uswdsComponents = site.components | where: "parent", null | where: "component.status", "ready" %}
 
-## Find a USWDS component
-
-<div role="region" aria-atomic="true">
-  <label for="icon-filter">Type to filter components</label>
+<div role="region" aria-atomic="true" class="bg-base-lighter padding-2 radius-sm">
+  <label for="icon-filter"><strong>Find a USWDS component.</strong> Type below to filter.</label>
   <input class="usa-input" id="icon-filter" class="usa-input" type="text" onkeyup="filter(this)"/>
-  <p class="text-base margin-top-1" aria-live="polite"><span id="component-count"><strong>{{ uswdsComponents.size }}</strong> components found.</span></p>
+  <p class="text-base-darker margin-top-1 margin-bottom-0" aria-live="polite"><span id="component-count"><strong>{{ uswdsComponents.size }}</strong> components found</span></p>
 </div>
 
 See the [packages]({{ site.baseurl }}/components/packages/) section to learn about how to import only the components your project needs.
@@ -54,6 +52,6 @@ function filter(e){
     });
     componentCount = document.querySelectorAll('.site-component-card:not(.display-none)').length;
     var word = (componentCount === 1) ? "component" : "components";
-    document.getElementById("component-count").innerHTML = `<strong>${componentCount}</strong> ${word} found.`
+    document.getElementById("component-count").innerHTML = `<strong>${componentCount}</strong> ${word} found`
 }
 </script>

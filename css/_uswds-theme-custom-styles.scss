@@ -691,7 +691,7 @@ body {
 .footer-content {
   margin-bottom: units(5);
 
-  h3 {
+  h2 {
     @include typeset("lang", "lg", 2);
     margin: 0;
   }
@@ -703,12 +703,12 @@ body {
 .footer-contact-links {
   @include grid-gap(2);
 
-  h4,
+  h3,
   a {
     @include u-font("lang", "2xs");
   }
 
-  h4 {
+  h3 {
     font-weight: font-weight("normal");
     margin-bottom: 0;
     margin-top: units(2px);

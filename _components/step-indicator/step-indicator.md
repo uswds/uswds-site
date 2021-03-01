@@ -30,4 +30,7 @@ tags:
   - stepper
   - step by step
   - progress bar
+  - form
+  - multi page form
+  - progress
 ---

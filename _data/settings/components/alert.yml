@@ -20,3 +20,23 @@ contents:
     var: $theme-alert-padding-x
     default: 2.5
     type: units
+  - name: Text color
+    description: Text color on light backgrounds. `Default` uses text color set in `$theme-text-color`.
+    var: $theme-alert-text-color
+    default: "default"
+    type: color
+  - name: Reverse text color
+    description: Text color on dark backgrounds. `Default` uses reverse text color set in `$theme-text-reverse-color`.
+    var: $theme-alert-text-reverse-color
+    default: "default"
+    type: color
+  - name: Link color
+    description: Link color on light backgrounds. `Default` uses link color set in `$theme-link-color`.
+    var: $theme-alert-text-color
+    default: "default"
+    type: color
+  - name: Reverse link color
+    description: Link color on dark backgrounds. `Default` uses reverse link color set in `$theme-link-reverse-color`.
+    var: $theme-alert-link-reverse-color
+    default: "default"
+    type: color

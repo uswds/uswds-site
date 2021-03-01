@@ -15,12 +15,6 @@ subnav:
     href: '#typesetting-with-uswds'
   - text: Included typefaces
     href: '#included-typefaces'
-  - text: Prose
-    href: '#prose'
-  - text: Links
-    href: '#links'
-  - text: Lists
-    href: '#lists'
 tags:
   - type
   - typesetting

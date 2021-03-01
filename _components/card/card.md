@@ -30,7 +30,7 @@ variants:
     description: Displays the header element before the media element.
   - variant: "`.usa-card--media-right`"
     description: In combination with `usa-card--flag`, sets the media element on the right. (Flag cards display media on the left by default.)
-  - variant: "`.usa-card__media--indent`"
+  - variant: "`.usa-card__media--inset`"
     description: Indents the media element so it doesn't extend to the edge of the card
   - variant: "`.usa-card__media--set-aspect`"
     description: Sets a fixed aspect ratio on the card media. The default is 16x9, but this can be changed by adding an `add-aspect` utility to the media element, like `usa-card__media--set-aspect.add-aspect-1x1`.

@@ -143,7 +143,7 @@ Mobile devices often become a primary source of connection in an emergency. Agen
 
 ## How we created components
 
-After a few weeks of research and user interviews, we used themes and insights from those interviews to generate and gather over ideas for 60 component and pattern ideas. We then conducted a prioritization workshop where design, engineering, product, and stakeholders worked collaboratively to understand the effort and value of each idea. Honing in on easy wins and strategic initiatives, we prioritized the components in the [sprint backlog](https://github.com/orgs/uswds/projects/5) and started creating them.
+After a few weeks of research and user interviews, we used themes and insights from those interviews to generate and gather over 60 component and pattern ideas. We then conducted a prioritization workshop where design, engineering, product, and stakeholders worked collaboratively to understand the effort and value of each idea. Honing in on easy wins and strategic initiatives, we prioritized the components in the [sprint backlog](https://github.com/orgs/uswds/projects/5) and started creating them.
 
 Additionally, we outlined a component creation process to ensure each component was thoroughly researched, iterated on, and emerged from a highly collaborative process, including getting feedback from customers and other stakeholders.  
 

@@ -24,7 +24,7 @@
   <tbody class="font-mono-2xs">
     {% for setting in settings %}
     <tr class="{% if setting.section %}tablet:border-top-2px tablet:margin-top-2{% endif %}">
-      <td scope="row" data-title="{{ col1Title }}" class="{{ col1Width }}">
+      <td data-title="{{ col1Title }}" class="{{ col1Width }}">
         <span class="text-bold font-lang-3xs">
           {{ setting.name }}
         </span>
@@ -34,12 +34,12 @@
           </span>
         {% endif %}
       </td>
-      <td scope="row" data-title="{{ col2Title }}" class="{{ col2Width }}">
+      <td data-title="{{ col2Title }}" class="{{ col2Width }}">
         <code class="">
           {{ setting.var }}
         </code>
       </td>
-      <td scope="row" data-title="{{ col3Title }}" class="{{ col3Width }}">
+      <td data-title="{{ col3Title }}" class="{{ col3Width }}">
         {% assign defaultFormat = false %}
         {% if setting.default == 'true' %}
           {% assign defaultFormat = 'output-true' %}
@@ -50,12 +50,12 @@
           {{ setting.default }}
         </span>
       </td>
-      <td scope="row" data-title="{{ col4Title }}" class="{{ col4Width }}">
+      <td data-title="{{ col4Title }}" class="{{ col4Width }}">
         <span>
           {% include get-token-url.html token=setting.type %}
         </span>
       </td>
-      <td scope="row" data-title="{{ col5Title }}" class="{{ col5Width }}">
+      <td data-title="{{ col5Title }}" class="{{ col5Width }}">
         <span class="font-lang-3xs">
           {{ setting.description | markdownify }}
         </span>
@@ -64,17 +64,17 @@
       {% if setting.map %}
         {% for entry in setting.map %}
           <tr class="border-base-lighter">
-            <td scope="row" data-title="{{ col1Title }}" class="{{ col1Width }}">
+            <td data-title="{{ col1Title }}" class="{{ col1Width }}">
               <span class="tablet:display-none font-lang-3xs">
                 {{ setting.name }}
               </span>
             </td>
-            <td scope="row" data-title="{{ col2Title }}" class="{{ col2Width }}">
+            <td data-title="{{ col2Title }}" class="{{ col2Width }}">
               <span class="text-primary-vivid">
                 {{ entry.key }}
               </span>
             </td>
-            <td scope="row" data-title="{{ col3Title }}" class="{{ col3Width }}">
+            <td data-title="{{ col3Title }}" class="{{ col3Width }}">
               {% assign defaultFormat = false %}
               {% if entry.value == 'true' %}
                 {% assign defaultFormat = 'output-true' %}
@@ -85,12 +85,12 @@
                 {{ entry.value }}
               </span>
             </td>
-            <td scope="row" data-title="{{ col4Title }}" class="{{ col4Width }}">
+            <td data-title="{{ col4Title }}" class="{{ col4Width }}">
               <span>
                 {% include get-token-url.html token=entry.kind %}
               </span>
             </td>
-            <td scope="row" data-title="{{ col5Title }}" class="{{ col5Width }}">
+            <td data-title="{{ col5Title }}" class="{{ col5Width }}">
               <span class="font-lang-3xs">
                 {{ entry.usage | markdownify }}
               </span>

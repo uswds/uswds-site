@@ -16,12 +16,12 @@
     <tbody class="font-mono-2xs">
       {% for setting in settings %}
       <tr>
-        <td scope="row" data-title="{{ col1Title }}" class="{{ col1Width }}">
+        <td data-title="{{ col1Title }}" class="{{ col1Width }}">
           <code>
             {{ setting.var }}
           </code>
         </td>
-        <td scope="row" data-title="{{ col2Title }}" class="{{ col2Width }}">
+        <td data-title="{{ col2Title }}" class="{{ col2Width }}">
           <span class="font-lang-3xs">
             {{ setting.description | markdownify }}
           </span>

@@ -5,7 +5,7 @@ tags:
 category: About
 author: Arden Klemmer, Natalie Kurz, Norah Maki, and Kim Schulke
 meta:
-  og:image: /img/2021-next-blog/FILENAME.png
+  og:image: /img/2021-next-blog/post-2-social-share.jpg
 excerpt: "Today we’re releasing a new and exciting report and strategy that outlines what’s next for the U.S. Web Design System (USWDS) and our community."
 ---
 
@@ -118,7 +118,7 @@ A vibrant design system that more effectively meets these five needs is instrume
 
 3.  Leverage related efforts within TTS and the broader government digital services community
 
-Stay tuned for more detail on these next steps in [our roadmap](https://designsystem.digital.gov/about/product-roadmap/), and learn more about our findings and a vision for the future of the design system by reading the [full report]({{ site.baseurl }}/next/) (PDF, March 2021).
+Stay tuned for more detail on these next steps in [our roadmap]({{ site.baseurl }}/about/product-roadmap/), and learn more about our findings and a vision for the future of the design system by reading the [full report]({{ site.baseurl }}/next/) (PDF, March 2021).
 
 <style type="text/css" scoped>
 // Please remove when icon-list is merged (https://github.com/uswds/uswds-site/pull/1140)

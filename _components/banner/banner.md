@@ -23,6 +23,9 @@ title: Banner
 type: component
 ---
 
+{:.site-note}
+**Note:** Banner is a core component along with the [identifier]({{ site.baseurl }}/components/identifier) component. We recommend using both core components on most sites. Together, they are the most recognizable and standardized design elements of a government site.
+
 You should use the banner to identify your site as an official government site.
 
 The banner explains that the combination of (a) an official .gov or .mil domain and (b) a secure HTTPS connection are the best way to assure visitors that they're connected to an official site.

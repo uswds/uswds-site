@@ -26,3 +26,6 @@ tags:
   - indentifier
   - logo
 ---
+
+{:.site-note}
+**Note:** Identifier is a core component along with the [banner]({{ site.baseurl }}/components/banner) component. We recommend using both core components on most sites. Together, they are the most recognizable and standardized design elements of a government site.

@@ -4,4 +4,4 @@
   - There are more than five bullet points.
   - Bullet points are longer than 20 words.
   - Bullet points require a header, image, or button.
-- **Alerts or callouts.**  you’re highlighting something new, rather than surfacing details from further down the page, use the [alert]({{ site.baseurl }}/components/alert]) component, such as the [informative status alert]({{ site.baseurl }}/components/alert).
+- **Alerts or callouts.**  you’re highlighting something new, rather than surfacing details from further down the page, use the [alert]({{ site.baseurl }}/components/alert/) component, such as the [informative status alert]({{ site.baseurl }}/components/alert/).

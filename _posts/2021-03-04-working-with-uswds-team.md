@@ -5,7 +5,7 @@ tags:
 category: About
 author: Jona Decker
 meta:
-  og:image: /img/2021-next-blog/FILENAME.png
+  og:image: /img/2021-next-blog/post-3-social-share.jpg
 excerpt: Learn how the Accelerator team collaborated with other digital teams and end-users across the federal government to bring new and updated components to the USWDS community in Release 2.10.
 ---
 

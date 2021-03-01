@@ -12,10 +12,13 @@ redirect_from:
 
 {% assign uswdsComponents = site.components | where: "parent", null | where: "component.status", "ready" %}
 
-<div role="region" aria-atomic="true" class="bg-base-lighter padding-2 radius-sm">
-  <label for="icon-filter"><strong>Find a USWDS component.</strong> Type below to filter.</label>
-  <input class="usa-input" id="icon-filter" class="usa-input" type="text" onkeyup="filter(this)"/>
-  <p class="text-base-darker margin-top-1 margin-bottom-0" aria-live="polite"><span id="component-count"><strong>{{ uswdsComponents.size }}</strong> components found</span></p>
+<div class="bg-base-lighter padding-2 radius-md">
+  <h2 class="font-lang-lg margin-top-0 margin-bottom-0">Find a USWDS component</h2>
+  <div role="region" aria-atomic="true" class="margin-top-1">
+    <label for="icon-filter">Type below to filter by name and keyword</label>
+    <input class="usa-input" id="icon-filter" class="usa-input" type="text" onkeyup="filter(this)"/>
+    <p class="text-base-darker margin-top-1 margin-bottom-0" aria-live="polite"><span id="component-count"><strong>{{ uswdsComponents.size }}</strong> components found</span></p>
+  </div>
 </div>
 
 See the [packages]({{ site.baseurl }}/components/packages/) section to learn about how to import only the components your project needs.

@@ -12,7 +12,7 @@ subnav:
 - text: Default button group
   href: '#default-button-group'
 - text: Segmented button group
-  href: '#segmented'
+  href: '#segmented-button-group'
 title: Button group
 type: component
 ---

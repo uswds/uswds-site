@@ -1,4 +1,3 @@
-{:.usa-content-list}
 - Buttons inside of a button group follow the same guidelines as the [button component]({{ site.baseurl }}/components/button).
 - Button groups support any style and size.
 - Don't mix differently-sized buttons (like a default button and a big button) in the same group.

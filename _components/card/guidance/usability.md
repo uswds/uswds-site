@@ -1,4 +1,3 @@
-{:.usa-content-list}
 - **Make cards actionable.** Since cards are used as a summary of more detailed information, any individual card should link out to that information.
 - **Don't use the card component only for decoration.** Use the card component for cards, not for any type of content that's designed to have a border around it.
 - **Include non-redundant content.** Don't repeat images or content common to all or most cards in a collection. Repeated information (like using the same image for each card in a collection) makes it more difficult to distinguish cards from one another.

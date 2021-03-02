@@ -9,19 +9,19 @@
   <table class="usa-table--borderless site-table-responsive site-table-simple">
     <thead>
       <tr>
-        <th scope="col" class="{{ col1Width }}">{{ col1Title }}</th>
-        <th scope="col" class="{{ col2Width }}">{{ col2Title }}</th>
+        <th scope="col" class="{{ col1Width }} display-inline-flex">{{ col1Title }}</th>
+        <th scope="col" class="{{ col2Width }} display-inline-flex">{{ col2Title }}</th>
       </tr>
     </thead>
     <tbody class="font-mono-2xs">
       {% for setting in settings %}
       <tr>
-        <td data-title="{{ col1Title }}" class="{{ col1Width }}">
+        <td data-title="{{ col1Title }}" class="{{ col1Width }} display-inline-flex">
           <code>
             {{ setting.var }}
           </code>
         </td>
-        <td data-title="{{ col2Title }}" class="{{ col2Width }}">
+        <td data-title="{{ col2Title }}" class="{{ col2Width }} display-inline-flex">
           <span class="font-lang-3xs">
             {{ setting.description | markdownify }}
           </span>

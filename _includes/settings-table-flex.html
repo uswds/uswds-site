@@ -7,7 +7,7 @@
       <tr>
         {%- for tableItem in tableSchema %}
         {%- assign colKey = forloop.index | minus: 1 %}
-        <th scope="col" class="{{ cols[colKey] }}">{{ tableItem[0] | capitalize }}</th>
+        <th scope="col" class="{{ cols[colKey] }} display-inline-flex">{{ tableItem[0] | capitalize }}</th>
         {%- endfor %}
       </tr>
     </thead>
@@ -16,7 +16,7 @@
       <tr>
         {%- for column in row %}
         {%- assign colKey = forloop.index | minus: 1 %}
-        <td class="{{ cols[colKey] }}"
+        <td class="{{ cols[colKey] }} display-inline-flex"
           scope="row"
           data-title="{{ column[0] | capitalize }}"
           >

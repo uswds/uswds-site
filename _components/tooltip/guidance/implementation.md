@@ -1,0 +1,11 @@
+- Any element with the class name `usa-tooltip` and a `title` attribute will become a tooltip.
+- Place tooltips on elements with as few child elements as possible.
+- Elements or text that show a tooltip when hovered or focused will not wrap onto a new line and will get `tabindex="0"` for keyboard interaction.
+- By default, tooltips appear on the top of their related element.
+- Use the `data-position` attribute to indicate the tooltip's position in relation to the related element:
+  - `data-position="top"`: On top, horizontally centered. If the `data-position` attribute is omitted, the tooltip will appear on top by default.
+  - `data-position="bottom"`: Below, horizontally centered
+  - `data-position="right"`: To the right, vertically centered
+  - `data-position="left"`: To the left, vertically centered
+- Tooltips are protected from viewport clipping. If clipping is detected, the tooltip is positioned on the opposite side as `data-position` attribute indicates. If the tooltip is still clipped, it is positioned on top of the element, with its width constrained to the width its related element. Only then does the tooltip wrap to multiple lines.
+- JavaScript generated most of the tooltip’s markup. Apply [utility classes]({{ site.baseurl }}/utilities/) to any tooltip’s wrapping element, by including them inside a `data-classes` attribute, separated by spaces.

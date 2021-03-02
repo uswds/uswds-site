@@ -1,0 +1,5 @@
+- **Use the `nav` element.** This allows assistive technology to present the breadcrumbs in context as a navigational element on the page.
+- **Treat separators as text when it comes to contrast.** Use separators that have AA contrast against their background.
+- **Use ordered lists and list items.** Use an `ol` for breadcrumbs and an `li` for each item. This allows assistive technology to enumerate the items in the breadcrumbs and allows shortcuts between list items.
+- **Use ARIA markup for additional context.** Use `aria-label="Breadcrumbs"` on the main element and `aria-current="page"` on the current page.
+- **Hide separators from screen readers.** The separators between links in the breadcrumbs should not be read by screen readers.

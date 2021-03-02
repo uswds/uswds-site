@@ -193,41 +193,41 @@ utilities:
   <table class="usa-table--borderless site-table-responsive site-table-simple">
     <thead>
       <tr>
-        <th scope="col" class="tablet:maxw-card-lg">Utility</th>
-        <th scope="col">Mixin</th>
-        <th scope="col">Example</th>
+        <th scope="col" class="tablet:maxw-card-lg display-inline-flex">Utility</th>
+        <th scope="col" class="display-inline-flex">Mixin</th>
+        <th scope="col" class="display-inline-flex">Example</th>
       </tr>
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .font-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-font(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/font-size/" class="token">size</a>)
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-font('sans', 'sm')
           </span>
         </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .font-family-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-font-family(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>)
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-font-family('sans')
           </span>

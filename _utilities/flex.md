@@ -737,9 +737,9 @@ utilities:
   <table class="usa-table--borderless site-table-responsive site-table-simple">
     <thead>
       <tr>
-        <th scope="col" class="tablet:maxw-card-lg">Utility</th>
-        <th scope="col">Mixin</th>
-        <th scope="col">Example</th>
+        <th scope="col" class="tablet:maxw-card-lg display-inline-flex">Utility</th>
+        <th scope="col" class="display-inline-flex">Mixin</th>
+        <th scope="col" class="display-inline-flex">Example</th>
       </tr>
     </thead>
     <tbody class="font-mono-2xs">
@@ -749,114 +749,114 @@ utilities:
             .flex-<a href="{{ site.baseurl }}/design-tokens/flex/" class="token">flex</a>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-flex(<a href="{{ site.baseurl }}/design-tokens/flex/" class="token">flex</a>)
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-flex('fill')
           </span>
         </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .flex-<code>direction</code>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-flex(<code>direction</code>)
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-flex('row')
           </span>
         </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .flex-<code>wrap</code>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-flex(<code>wrap</code>)
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-flex('no-wrap')
           </span>
         </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .flex-align-<code>value</code>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-flex('align-<code>value</code>')
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-flex('align-center')
           </span>
         </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .flex-align-self-<code>value</code>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-flex('align-self-<code>value</code>')
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-flex('align-self-center')
           </span>
         </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .flex-justify-<code>value</code>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-flex('justify-<code>value</code>')
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-flex('justify')
           </span>
         </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .order-<a href="{{ site.baseurl }}/design-tokens/order/" class="token">order</a>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-order(<a href="{{ site.baseurl }}/design-tokens/order/" class="token">order</a>)
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-order('last')
           </span>

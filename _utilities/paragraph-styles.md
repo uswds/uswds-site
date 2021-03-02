@@ -394,9 +394,9 @@ vals_negative:
   <table class="usa-table--borderless site-table-responsive site-table-simple">
     <thead>
       <tr>
-        <th scope="col" class="tablet:maxw-card-lg">Utility</th>
-        <th scope="col">Mixin</th>
-        <th scope="col">Example</th>
+        <th scope="col" class="tablet:maxw-card-lg display-inline-flex">Utility</th>
+        <th scope="col" class="display-inline-flex">Mixin</th>
+        <th scope="col" class="display-inline-flex">Example</th>
       </tr>
     </thead>
     <tbody class="font-mono-2xs">
@@ -406,63 +406,63 @@ vals_negative:
             .line-height-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>-<a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-line-height(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-family/" class="token">family</a>, <a href="{{ site.baseurl }}/design-tokens/typesetting/line-height/" class="token">line-height</a>)
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-line-height('heading', 2)
           </span>
         </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .measure-<a href="{{ site.baseurl }}/design-tokens/typesetting/measure/" class="token">measure</a>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-measure(<a href="{{ site.baseurl }}/design-tokens/typesetting/measure/" class="token">measure</a>)
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-measure(6)
           </span>
         </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .text-<code>alignment</code>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-text('<code>alignment</code>')
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-text('right')
           </span>
         </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .text-indent-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-text-indent(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-text-indent(-4)
           </span>

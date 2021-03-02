@@ -25,8 +25,8 @@ The utility values are drawn from your project theme's settings tokens, but can 
   <table class="usa-table--borderless site-table-responsive">
     <thead>
       <tr>
-        <th scope="col">USWDS utility</th>
-        <th scope="col">Sass</th>
+        <th scope="col" class="display-inline-flex">USWDS utility</th>
+        <th scope="col" class="display-inline-flex">Sass</th>
       </tr>
     </thead>
     <tbody class="font-mono-2xs">

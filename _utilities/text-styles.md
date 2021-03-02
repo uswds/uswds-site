@@ -307,143 +307,143 @@ utilities:
 <table class="usa-table--borderless site-table-responsive site-table-simple">
   <thead>
     <tr>
-      <th scope="col" class="tablet:maxw-card-lg">Utility</th>
-      <th scope="col">Mixin</th>
-      <th scope="col">Example</th>
+      <th scope="col" class="tablet:maxw-card-lg display-inline-flex">Utility</th>
+      <th scope="col" class="display-inline-flex">Mixin</th>
+      <th scope="col" class="display-inline-flex">Example</th>
     </tr>
   </thead>
   <tbody class="font-mono-2xs">
     <tr>
-      <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+      <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
         <span class="text-normal">
           .text-<code>style</code>
         </span>
       </th>
-      <td data-title="Mixin">
+      <td data-title="Mixin" class="display-inline-flex">
         <span>
           u-text(<code>style</code>)
         </span>
       </td>
-      <td data-title="Example">
+      <td data-title="Example" class="display-inline-flex">
         <span>
           @include u-text('italic')
         </span>
       </td>
     </tr>
     <tr>
-      <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+      <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
         <span class="text-normal">
           .text-<a href="{{ site.baseurl }}/design-tokens/typesetting/font-weight/" class="token">weight</a>
         </span>
       </th>
-      <td data-title="Mixin">
+      <td data-title="Mixin" class="display-inline-flex">
         <span>
           u-text(<a href="{{ site.baseurl }}/design-tokens/typesetting/font-weight/" class="token">weight</a>)
         </span>
       </td>
-      <td data-title="Example">
+      <td data-title="Example" class="display-inline-flex">
         <span>
           @include u-text('light')
         </span>
       </td>
     </tr>
     <tr>
-      <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+      <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
         <span class="text-normal">
           .text-<code>tabular</code>
         </span>
       </th>
-      <td data-title="Mixin">
+      <td data-title="Mixin" class="display-inline-flex">
         <span>
           u-text('<code>tabular</code>')
         </span>
       </td>
-      <td data-title="Example">
+      <td data-title="Example" class="display-inline-flex">
         <span>
           @include u-text('no-tabular')
         </span>
       </td>
     </tr>
     <tr>
-      <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+      <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
         <span class="text-normal">
           .text-<code>decoration</code>
         </span>
       </th>
-      <td data-title="Mixin">
+      <td data-title="Mixin" class="display-inline-flex">
         <span>
           u-text(<code>decoration</code>)
         </span>
       </td>
-      <td data-title="Example">
+      <td data-title="Example" class="display-inline-flex">
         <span>
           @include u-text('underline')
         </span>
       </td>
     </tr>
     <tr>
-      <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+      <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
         <span class="text-normal">
           .underline-<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>
         </span>
       </th>
-      <td data-title="Mixin">
+      <td data-title="Mixin" class="display-inline-flex">
         <span>
           u-underline(<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>)
         </span>
       </td>
-      <td data-title="Example">
+      <td data-title="Example" class="display-inline-flex">
         <span>
           @include u-underline('primary-vivid')
         </span>
       </td>
     </tr>
     <tr>
-      <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+      <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
         <span class="text-normal">
           .text-<code>case</code>
         </span>
       </th>
-      <td data-title="Mixin">
+      <td data-title="Mixin" class="display-inline-flex">
         <span>
           u-text(<code>case</code>)
         </span>
       </td>
-      <td data-title="Example">
+      <td data-title="Example" class="display-inline-flex">
         <span>
           @include u-text('uppercase')
         </span>
       </td>
     </tr>
     <tr>
-      <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+      <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
         <span class="text-normal">
           .text-<code>vertical-align</code>
         </span>
       </th>
-      <td data-title="Mixin">
+      <td data-title="Mixin" class="display-inline-flex">
         <span>
           u-text(<code>vertical-align</code>)
         </span>
       </td>
-      <td data-title="Example">
+      <td data-title="Example" class="display-inline-flex">
         <span>
           @include u-text('ttop')
         </span>
       </td>
     </tr>
     <tr>
-      <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+      <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
         <span class="text-normal font-lang-2xs">
           multiple text utilities...
         </span>
       </th>
-      <td data-title="Mixin">
+      <td data-title="Mixin" class="display-inline-flex">
         <span>
           u-text(<code>token</code>, <code>token</code>, <code>token</code>...)
         </span>
       </td>
-      <td data-title="Example">
+      <td data-title="Example" class="display-inline-flex">
         <span>
           @include u-text('uppercase', 'primary-darker', 'no-wrap', 'italic', 'bold', 'no-underline')
         </span>

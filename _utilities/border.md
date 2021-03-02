@@ -652,109 +652,109 @@ utilities:
   <table class="usa-table--borderless site-table-responsive site-table-simple">
     <thead>
       <tr>
-        <th scope="col" class="tablet:maxw-card-lg">Utility</th>
-        <th scope="col">Mixin</th>
-        <th scope="col">Example</th>
+        <th scope="col" class="tablet:maxw-card-lg display-inline-flex">Utility</th>
+        <th scope="col" class="display-inline-flex">Mixin</th>
+        <th scope="col" class="display-inline-flex">Example</th>
       </tr>
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .border-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-border(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-border(2px)
           </span>
         </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .border-<code>modifier</code>-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-border-<code>modifier</code>(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-border-y(1)
           </span>
         </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .border-<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-border(<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>)
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-border('primary-vivid')
           </span>
         </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .border-<code>style</code>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-border(<code>modifier</code>)
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-border('dotted')
           </span>
         </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .radius-<code>radius</code>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-radius(<code>radius</code>)
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-radius('sm')
           </span>
         </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .radius-<code>modifier</code>-<code>radius</code>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-radius-<code>modifier</code>(<code>radius</code>)
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-radius-left('pill')
           </span>

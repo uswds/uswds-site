@@ -87,11 +87,11 @@ Breaking it down, here's how it works:
     <thead>
       <tr>
         <th scope="col" class="flex-2">Width</th>
-        <th scope="col">Size</th>
+        <th scope="col" class="display-inline-flex">Size</th>
         <th scope="col" class="flex-3">Utility class</th>
-        <th scope="col">Columns</th>
-        <th scope="col">Gutters</th>
-        <th scope="col">Nestable</th>
+        <th scope="col" class="display-inline-flex">Columns</th>
+        <th scope="col" class="display-inline-flex">Gutters</th>
+        <th scope="col" class="display-inline-flex">Nestable</th>
       </tr>
     </thead>
     <tbody class="font-mono-2xs">

@@ -424,160 +424,160 @@ utilities:
   <table class="usa-table--borderless site-table-responsive site-table-simple">
     <thead>
       <tr>
-        <th scope="col" class="tablet:maxw-card-lg">Utility</th>
-        <th scope="col">Mixin</th>
-        <th scope="col">Example</th>
+        <th scope="col" class="tablet:maxw-card-lg display-inline-flex">Utility</th>
+        <th scope="col" class="display-inline-flex">Mixin</th>
+        <th scope="col" class="display-inline-flex">Example</th>
       </tr>
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .height-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-height(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-height('card')
           </span>
         </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .width-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-width(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-width('auto')
           </span>
         </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .maxh-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-maxh(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-maxh('screen')
           </span>
         </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .maxw-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-maxw(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-maxw('card-lg')
           </span>
         </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .minh-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-minh(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-minh('screen')
           </span>
         </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .minw-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-minw(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-minw('auto')
           </span>
         </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .add-aspect-<code>ratio</code>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             add-aspect(<code>ratio</code>)
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include add-aspect('16x9')
           </span>
         </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .circle-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-circle(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-circle('05')
           </span>
         </td>
       </tr>
       <tr>
-        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg display-inline-flex">
           <span class="text-normal">
             .square-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
         </th>
-        <td data-title="Mixin">
+        <td data-title="Mixin" class="display-inline-flex">
           <span>
             u-square(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
           </span>
         </td>
-        <td data-title="Example">
+        <td data-title="Example" class="display-inline-flex">
           <span>
             @include u-square('05')
           </span>

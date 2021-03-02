@@ -22,5 +22,5 @@ tags:
   - error
   - check
   - checking
-  - chekmark
+  - checkmark
 ---

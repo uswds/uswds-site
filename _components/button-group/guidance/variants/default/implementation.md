@@ -1,4 +1,3 @@
-{:.usa-content-list}
 - Buttons inside of a button group follow the same guidelines as the [button component]({{ site.baseurl }}/components/button).
 - Button groups support any style and size.
 - Because the button group uses `flexbox`, there are several ways modify how the default button group is displayed.

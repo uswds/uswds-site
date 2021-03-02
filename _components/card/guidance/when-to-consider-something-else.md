@@ -1,4 +1,3 @@
-{:.usa-content-list}
 - **Tabular data.** Don't use a card as a substitute for a table row.
 - **Simple calls to action.** Use a button instead.
 - **Standalone content.** Consider an `aside` or another standalone element.

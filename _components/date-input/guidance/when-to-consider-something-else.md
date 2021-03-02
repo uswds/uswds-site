@@ -1,2 +1,1 @@
-{:.usa-content-list}
 - **Consider a date picker for scheduling.** If users are trying to schedule something, the [date picker]({{ site.baseurl }}/components/date-picker) might make more sense. Be sure to also provide an option for text entry as well.

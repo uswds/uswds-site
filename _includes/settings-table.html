@@ -24,8 +24,8 @@
   <tbody class="font-mono-2xs">
     {% for setting in settings %}
     <tr class="{% if setting.section %}tablet:border-top-2px tablet:margin-top-2{% endif %}">
-      <td data-title="{{ col1Title }}" class="{{ col1Width }} display-inline-flex flex-align-start">
-        <span class="text-bold font-lang-3xs">
+      <td data-title="{{ col1Title }}" class="{{ col1Width }} display-inline-flex flex-align-start flex-wrap">
+        <span class="text-bold font-lang-3xs margin-right-1 width-full">
           {{ setting.name }}
         </span>
         {% if setting.subsection %}

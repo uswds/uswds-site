@@ -20,8 +20,6 @@ subnav:
     href: '#accordion-package'
 title: List
 variants:
-  - variant: "`.usa-accordion--bordered`"
-    description: Display a border around accordion content
 tags:
   - typography
   - type

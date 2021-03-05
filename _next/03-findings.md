@@ -51,11 +51,15 @@ Agencies are the primary users of design system principles, guidance, and code, 
 
 Agencies across government shared that using the design system benefits them by:
 
-- Making hard things easy by providing a starting point and solid foundation for building websites
-- Providing useful components and clear, well-written guidance that’s backed by user research and user experience (UX) best practices
-- Helping them make more data-informed decisions using standardized, consistent, and accessible best practices, instead of relying on personal judgment
-- Saving time and energy so they can focus on their mission and more of what their customers need
-- Helping build trust with the public by providing continuity across federal websites, reducing existing fragmented and inconsistent experiences
+- **Making hard things easy** by providing a starting point and solid foundation for building websites
+
+- Providing useful components and **clear, well-written guidance** that’s backed by user research and user experience (UX) best practices
+
+- Helping them **make more data-informed decisions** using standardized, consistent, and accessible best practices, instead of relying on personal judgment
+
+- Saving time and energy so they can **focus on their mission** and more of what their customers need
+
+- Helping build trust with the public by **providing continuity across federal websites**, reducing existing fragmented and inconsistent experiences
 
 ### Where agencies need more support
 

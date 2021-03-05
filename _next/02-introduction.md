@@ -122,7 +122,7 @@ Their experiences, needs, pain points, and bright spots led directly to the deve
 
 [^6]: The US government’s web traffic. (n.d.). Retrieved February 5, 2021, from <https://analytics.usa.gov/>
 
-[^7]: 21st Century Integrated Digital Experience Act. (2020, August 31). Retrieved January 06, 2021, from <https://digital.gov/resources/21st-century-integrated- digital-experience-act/>
+[^7]: 21st Century Integrated Digital Experience Act. (2020, August 31). Retrieved January 06, 2021, from <https://digital.gov/resources/21st-century-integrated-digital-experience-act/>
 
 </div>
     </div>

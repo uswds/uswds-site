@@ -17,6 +17,10 @@ future: true
 
 encoding: utf-8
 
+markdown: kramdown
+kramdown:
+  footnote_backlink: "&#x21B5;"
+
 incremental_regeneration_fixer:
   interdependent_files:
     - "_components/form-controls/*"

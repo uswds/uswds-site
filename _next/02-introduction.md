@@ -3,7 +3,7 @@ title: Introduction
 subhead: Let’s transform the way we design and deliver digital government with and for the people.
 
 layout: next-chapter
-permalink: /next/intro
+permalink: /next/intro/
 
 chapter: true
 

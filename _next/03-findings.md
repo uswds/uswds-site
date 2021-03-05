@@ -3,7 +3,7 @@ title: Findings
 subhead: 
 
 layout: next-chapter
-permalink: /next/findings
+permalink: /next/findings/
 
 chapter: true
 ---

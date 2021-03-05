@@ -1,6 +1,6 @@
 ---
 layout: next
-permalink: /next
+permalink: /next/
 title: Transforming the American digital experience
 subhead: A report about what’s next for the U.S. Web Design System
 

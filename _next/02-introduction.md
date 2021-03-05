@@ -35,9 +35,13 @@ For millions, access to digital services isn’t a luxury — it’s critical. A
 
 Every moment an individual interacts with a government service is an opportunity to build their trust, as the Federal Customer Experience Initiative team’s 2020 strategy work has summarized [^1]. Only 20 percent of U.S. adults report that they
 trust government “most of the time” or “just about always” [^2]. Trust in government increases when the digital services people access are reliable, user-friendly, and consistently meet their needs. Customers are on average nine times more likely to trust a government agency if they’re satisfied with its service [^3].
+
 How we deliver these services is just as important as what services we provide.
+
 People are accustomed to intuitive, easy-to-use digital experiences in their day-to-day lives, and they increasingly expect the same from federal digital services. But we’re coming up short on digital services that meet the needs of the public.
+
 For example, only six percent of federal websites are rated “good” for mobile performance [^4]. To help put the issue in perspective, there were approximately 2.5 billion visits to federal websites from mobile phones in 2020 over a 90-day period [^5].
+
 The current global pandemic has shown us that access to digital services is more important than ever. Site visits to federal websites increased from 14 billion in 2019 to over 21 billion in 2020 [^6] as the public flocked online for information, assistance, and guidance.
 
 To improve, we have to take a more holistic look at the fragmented ecosystem of the thousands of federal websites that currently exist, all of which offer different experiences for the public to navigate.

@@ -60,7 +60,7 @@ Teams like 18F, Centers of Excellence, Lab at OPM, and U.S. Digital Service (USD
 <section class="next-section">
   <div class="grid-container">
     <div class="grid-row">
-      <h2 class="margin-top-0 tablet:margin-x-auto desktop:margin-x-0">Designing our way forward, together</h2>
+      <h2 class="grid-col-12 tablet:grid-col-8 desktop:grid-col-12 margin-top-0 tablet:margin-x-auto desktop:margin-x-0">Designing our way forward, together</h2>
     </div>
     <div class="grid-row">
       <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 next-section-prose" markdown="1">
@@ -101,7 +101,7 @@ Their experiences, needs, pain points, and bright spots led directly to the deve
 <section class="next-section">
   <div class="grid-container">
     <div class="grid-row">
-      <div class="grid-col-12 tablet:grid-col-8" markdown="1">
+      <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 " markdown="1">
 
 #### Citations
 

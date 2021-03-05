@@ -12,7 +12,7 @@ chapter: true
 <section class="next-section">
   <div class="grid-container">
     <div class="grid-row">
-       <h2 class="margin-top-0 tablet:margin-x-auto desktop:margin-x-0">Take action</h2>
+       <h2 class="grid-col-12 tablet:grid-col-8 desktop:grid-col-12 margin-top-0 tablet:margin-x-auto desktop:margin-x-0">Take action</h2>
     </div>
     <div class="grid-row">
       <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 next-section-prose">
@@ -20,7 +20,7 @@ chapter: true
       </div>
     </div>
     <div class="grid-row">
-<div class="grid-col-12 tablet:grid-col-6 tablet:padding-right-205" markdown="1">
+<div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 desktop:grid-col-6 desktop:padding-right-205" markdown="1">
 
 ### Everyone can: 
 
@@ -53,7 +53,7 @@ chapter: true
 - Reach out to your Federal Web Council representative to learn more about your agency’s digital strategy and modernization plans
 
 </div>
-<div class="grid-col-12 tablet:grid-col-6 tablet:padding-left-205" markdown="1">
+<div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 desktop:grid-col-6 desktop:padding-left-205" markdown="1">
 
 
 ### Engineers can: 
@@ -89,7 +89,7 @@ chapter: true
 <section class="next-section">
   <div class="grid-container">
     <div class="grid-row">
-      <h2 class="margin-top-0 tablet:margin-x-auto desktop:margin-x-0">Improving how the public interacts with government digital services will be a collective effort and won’t happen overnight.</h2>
+      <h2 class="grid-col-12 tablet:grid-col-8 desktop:grid-col-12 margin-top-0 tablet:margin-x-auto desktop:margin-x-0">Improving how the public interacts with government digital services will be a collective effort and won’t happen overnight.</h2>
     </div>
     <div class="grid-row">
       <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto margin-top-4 desktop:margin-x-0 next-section-prose" markdown="1">

@@ -13,8 +13,6 @@ chapter: true
     <div class="grid-row">
       <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 margin-top-neg-2 next-section-prose" markdown="1">
 
-## Conclusion
-
 Though we started out with the question, “How might we increase adoption of USWDS across the government?,” our interviews with agency teams and thought-leaders raised other thought-provoking questions, such as: “Should agencies even be responsible for building and maintaining all of their own websites?” “Is scaling the design system across about 1,200 domains and 9,000 federal websites [^8] the right goal, or could we provide an improved public experience with fewer, better websites overall?”
 
 These questions prompted us to start thinking about a blue-sky vision for how USWDS continues to evolve over time as part of a changing digital services landscape, which we’ve captured in our North Star vision.
@@ -59,7 +57,7 @@ We’ll provide regular updates on our progress in monthly calls, the public Sla
 <section class="next-section">
   <div class="grid-container">
     <div class="grid-row">
-      <div class="grid-col-12 tablet:grid-col-8" markdown="1">
+      <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 " markdown="1">
 
 #### Citations
 

@@ -34,15 +34,15 @@ bullet_list_interviews:
         <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 next-section-prose" markdown="1">
 For millions, access to digital services isn’t a luxury — it’s critical. And their experiences using government websites to find unemployment support, file taxes, apply for student loans, or get assistance with housing, childcare, or food can dramatically affect how they feel about the government.
 
-Every moment an individual interacts with a government service is an opportunity to build their trust, as the Federal Customer Experience Initiative team’s [2020 strategy work](https://www.performance.gov/cx/blog "What We Have Learned from Federal Customers in FY20") has summarized. [Only 20 percent of U.S. adults](https://www.pewresearch.org/politics/2020/09/14/americans-views-of-government-low-trust-but-some-positive-performance-ratings/ "Americans’ Views of Government: Low Trust, but Some Positive Performance Ratings") report that they trust government “most of the time” or “just about always”. Trust in government increases when the digital services people access are reliable, user-friendly, and consistently meet their needs. Customers are on average [nine times more likely](https://www.mckinsey.com/~/media/McKinsey/Industries/Public%20and%20Social%20Sector/Our%20Insights/The%20global%20case%20for%20customer%20experience%20in%20government/The-global-case-for-customer-experience-in-government-vF.pdf "The global case for customer experience in government") to trust a government agency if they’re satisfied with its service.
+Every moment an individual interacts with a government service is an opportunity to build their trust, as the [Federal Customer Experience Initiative team’s 2020 strategy work has summarized](https://www.performance.gov/cx/blog "What We Have Learned from Federal Customers in FY20"). Only [20 percent of U.S. adults report that they trust government](https://www.pewresearch.org/politics/2020/09/14/americans-views-of-government-low-trust-but-some-positive-performance-ratings/ "Americans’ Views of Government: Low Trust, but Some Positive Performance Ratings") “most of the time” or “just about always”. Trust in government increases when the digital services people access are reliable, user-friendly, and consistently meet their needs. Customers are on average [nine times more likely to trust a government agency if they’re satisfied](https://www.mckinsey.com/~/media/McKinsey/Industries/Public%20and%20Social%20Sector/Our%20Insights/The%20global%20case%20for%20customer%20experience%20in%20government/The-global-case-for-customer-experience-in-government-vF.pdf "The global case for customer experience in government") with its service.
 
 How we deliver these services is just as important as what services we provide.
 
 People are accustomed to intuitive, easy-to-use digital experiences in their day-to-day lives, and they increasingly expect the same from federal digital services. But we’re coming up short on digital services that meet the needs of the public.
 
-For example, [only six percent of federal websites](https://digitaldashboard.gov/ "Digital Dashboard") are rated “good” for mobile performance. To help put the issue in perspective, there were approximately [2.5 billion visits to federal websites](https://analytics.usa.gov/ "The US government’s web traffic") from mobile phones in 2020 over a 90-day period.
+For example, only six percent of [federal websites are rated “good” for mobile performance](https://digitaldashboard.gov/ "Digital Dashboard"). To help put the issue in perspective, there were approximately [2.5 billion visits to federal websites from mobile phones in 2020](https://analytics.usa.gov/ "The US government’s web traffic") over a 90-day period.
 
-The current global pandemic has shown us that access to digital services is more important than ever. Site visits to federal websites increased from 14 billion in 2019 to [over 21 billion in 2020](https://analytics.usa.gov/ "The US government’s web traffic") as the public flocked online for information, assistance, and guidance.
+The current global pandemic has shown us that access to digital services is more important than ever. Site [visits to federal websites increased from 14 billion in 2019 to over 21 billion in 2020](https://analytics.usa.gov/ "The US government’s web traffic") as the public flocked online for information, assistance, and guidance.
 
 To improve, we have to take a more holistic look at the fragmented ecosystem of the thousands of federal websites that currently exist, all of which offer different experiences for the public to navigate.
 
@@ -66,7 +66,7 @@ Teams like 18F, Centers of Excellence, Lab at OPM, and U.S. Digital Service (USD
 
 The U.S. Web Design System (USWDS) is just one piece of widespread federal efforts to improve the public’s experience of government digital services. Created in 2015, USWDS provides principles, guidance, and code to help federal agencies deliver great digital experiences by making it easier to build accessible, mobile-friendly government websites — which gives the public a more trusted, seamless way to access government digital services.
 
-In order to get there, we need to make good-for- government products (like the design system) an integrated part of agency service delivery. Even given all the benefits the design system provides, only a minority of federal executive branch domains (approximately [one out of four](https://digital.gov/resources/21st-century-integrated- digital-experience-act/ "21st Century Integrated Digital Experience Act.")) are currently using any design system code in their websites.
+In order to get there, we need to make good-for- government products (like the design system) an integrated part of agency service delivery. Even given all the benefits the design system provides, only a minority of [federal executive branch domains](https://digital.gov/resources/21st-century-integrated-digital-experience-act/ "21st Century Integrated Digital Experience Act.") (approximately one out of four) are currently using any design system code in their websites.
 
 So how can we succeed in supporting agencies to improve their digital services amid the diverse challenges they all face?
 
@@ -90,8 +90,6 @@ Their experiences, needs, pain points, and bright spots led directly to the deve
 
 
 {% include next/next-quote.html quote="I think the design system is probably the strongest place to spread best practices across government." source="Manager" variant="inline" %}
-
-<!-- quote goes here -->
 
 
 </div>

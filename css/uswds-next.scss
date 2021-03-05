@@ -126,11 +126,40 @@ $next-button-hover-color: #0D53B7;
   }
 }
 
-.next-hero--minor {
+.next-hero--chapter {
+  flex-flow: wrap;
+  padding-bottom: units(5);
+
   .next-hero__subhead {
     max-width: none;
+    margin-bottom: units(4);
   }
 }
+
+.next-hero--chapter__pattern {
+  background-image: url("#{$image-path}/next/cover-pattern-repeat.svg");
+  background-color: $gray-80-next;
+  background-repeat: repeat-x;
+  background-position: bottom right;
+  background-size: contain;
+  height: units(5);
+  width: 100%;
+  @include at-media("desktop") {
+    height: units(10);
+  }
+}
+.next-hero--chapter__pattern--top-row {
+  background-position: bottom right units(5);
+  @include at-media("desktop") {
+    background-position: bottom right units(10);
+  }
+}
+
+.next-hero--chapter-introduction .next-hero--chapter__pattern,
+.next-hero--chapter-findings .next-hero--chapter__pattern--top-row {
+  background-image: url("#{$image-path}/next/cover-pattern-repeat-grayscale.svg");
+}
+
 
 // Internal nav
 // -------------------------------------

@@ -140,7 +140,7 @@ $next-button-hover-color: #0D53B7;
   background-image: url("#{$image-path}/next/cover-pattern-repeat.svg");
   background-color: $gray-80-next;
   background-repeat: repeat-x;
-  background-position: bottom right;
+  background-position: bottom right units(-4);
   background-size: contain;
   height: units(5);
   width: 100%;
@@ -148,14 +148,14 @@ $next-button-hover-color: #0D53B7;
     height: units(10);
   }
 }
-.next-hero--chapter__pattern--top-row {
-  background-position: bottom right units(5);
+.next-hero--chapter__pattern--bottom-row {
+  background-position: bottom right units('neg-10');
   @include at-media("desktop") {
-    background-position: bottom right units(10);
+    background-position: bottom right units('neg-15');
   }
 }
 
-.next-hero--chapter-introduction .next-hero--chapter__pattern,
+.next-hero--chapter-intro .next-hero--chapter__pattern,
 .next-hero--chapter-findings .next-hero--chapter__pattern--top-row {
   background-image: url("#{$image-path}/next/cover-pattern-repeat-grayscale.svg");
 }
@@ -600,4 +600,28 @@ $next-button-hover-color: #0D53B7;
 
 .next-finding__text {
   margin-top: 0;
+}
+
+
+
+// Footnotes
+// -------------------------------------
+
+.footnote {
+  text-decoration: none;
+  
+  &:before {
+    content: "[";
+  }
+  &:after {
+    content: "]";
+  }
+
+}
+
+.reversefootnote {
+  font-family: family('sans');
+  font-size: size('sans', 4);
+  text-decoration: none;
+  vertical-align: text-top;
 }

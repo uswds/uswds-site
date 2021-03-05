@@ -1,0 +1,1 @@
+- **Single-select only.** If a user can only select one option from a list of many, use [radio buttons]({{ site.baseurl }}/components/radio-buttons) instead.

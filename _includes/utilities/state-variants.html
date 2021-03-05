@@ -16,36 +16,36 @@
     <thead>
       <tr>
         <th scope="col">Utility variable</th>
-        <th scope="col" class="tablet:maxw-15">active</th>
-        <th scope="col" class="tablet:maxw-15">focus</th>
-        <th scope="col" class="tablet:maxw-15">hover</th>
-        <th scope="col" class="tablet:maxw-15">visited</th>
+        <th scope="col" class="tablet:maxw-15 display-inline-flex">active</th>
+        <th scope="col" class="tablet:maxw-15 display-inline-flex">focus</th>
+        <th scope="col" class="tablet:maxw-15 display-inline-flex">hover</th>
+        <th scope="col" class="tablet:maxw-15 display-inline-flex">visited</th>
       </tr>
     </thead>
     <tbody class="font-mono-2xs">
       {% for utility in page.utilities %}
         <tr>
-          <th scope="row" data-title="Utility variable" class="tablet:text-no-wrap">
+          <th scope="row" data-title="Utility variable" class="tablet:text-no-wrap display-inline-flex">
             <span class="text-normal">
               ${{ utility.var }}-settings
             </span>
           </th>
-          <td data-title="active" class="tablet:maxw-15">
+          <td data-title="active" class="tablet:maxw-15 display-inline-flex">
             <span>
               {% if utility.active %}<span class="output-true">true</span>{% else %}false{% endif %}
             </span>
           </td>
-          <td data-title="focus" class="tablet:maxw-15">
+          <td data-title="focus" class="tablet:maxw-15 display-inline-flex">
             <span>
               {% if utility.focus %}<span class="output-true">true</span>{% else %}false{% endif %}
             </span>
           </td>
-          <td data-title="hover" class="tablet:maxw-15">
+          <td data-title="hover" class="tablet:maxw-15 display-inline-flex">
             <span>
               {% if utility.hover %}<span class="output-true">true</span>{% else %}false{% endif %}
             </span>
           </td>
-          <td data-title="visited" class="tablet:maxw-15">
+          <td data-title="visited" class="tablet:maxw-15 display-inline-flex">
             <span>
               {% if utility.visited %}<span class="output-true">true</span>{% else %}false{% endif %}
             </span>

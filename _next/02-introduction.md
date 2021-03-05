@@ -1,5 +1,5 @@
 ---
-title: Intro
+title: Introduction
 subhead: Let’s transform the way we design and deliver digital government with and for the people.
 
 layout: next-chapter
@@ -27,10 +27,11 @@ bullet_list_interviews:
 - Thought-leaders (industry experts, civic tech leaders)
 ---
 
-  <section class="next-section">
-    <div class="grid-container">
-      <div class="grid-row">
-        <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 next-section-prose" markdown="1">
+<section class="next-section">
+  <div class="grid-container">
+    <div class="grid-row">
+      <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 next-section-prose" markdown="1">
+
 For millions, access to digital services isn’t a luxury — it’s critical. And their experiences using government websites to find unemployment support, file taxes, apply for student loans, or get assistance with housing, childcare, or food can dramatically affect how they feel about the government.
 
 Every moment an individual interacts with a government service is an opportunity to build their trust, as the Federal Customer Experience Initiative team’s 2020 strategy work has summarized [^1]. Only 20 percent of U.S. adults report that they
@@ -52,17 +53,17 @@ Teams like 18F, Centers of Excellence, Lab at OPM, and U.S. Digital Service (USD
 
 {% include next/next-quote.html quote="The more we use the design system to standardize how we build digital experiences, the more we will improve how the federal web functions." source="Civic tech leader" variant="block" context="Shared during user interview" %}
 
-
 </div>
-      </div>
     </div>
-    <hr />
-    <div class="grid-container">
-      <div class="grid-row">
-        <h2 class="margin-top-3 tablet:margin-x-auto desktop:margin-x-0">Designing our way forward, together</h2>
-      </div>
-      <div class="grid-row">
-<div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 next-section-prose" markdown="1">
+  </div>
+</section>
+<section class="next-section">
+  <div class="grid-container">
+    <div class="grid-row">
+      <h2 class="margin-top-0 tablet:margin-x-auto desktop:margin-x-0">Designing our way forward, together</h2>
+    </div>
+    <div class="grid-row">
+      <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 next-section-prose" markdown="1">
 
 ### Purpose
 
@@ -93,14 +94,14 @@ Their experiences, needs, pain points, and bright spots led directly to the deve
 
 {% include next/next-quote.html quote="I think the design system is probably the strongest place to spread best practices across government." source="Manager" variant="inline" %}
 
-
 </div>
-      </div>
     </div>
-    <hr />
-    <div class="grid-container">
-      <div class="grid-row">
-        <div class="grid-col-12 tablet:grid-col-8" markdown="1">
+  </div>
+</section>
+<section class="next-section">
+  <div class="grid-container">
+    <div class="grid-row">
+      <div class="grid-col-12 tablet:grid-col-8" markdown="1">
 
 #### Citations
 
@@ -124,8 +125,7 @@ Their experiences, needs, pain points, and bright spots led directly to the deve
 [^7]: 21st Century Integrated Digital Experience Act. (2020, August 31). Retrieved January 06, 2021, from <https://digital.gov/resources/21st-century-integrated- digital-experience-act/>
 
 </div>
-      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-<div markdown="1">

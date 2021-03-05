@@ -324,6 +324,7 @@ $next-button-hover-color: #0D53B7;
   h2 {
     font-family: family("heading");
     font-size: size("heading", 12);
+    line-height: line-height("heading", 2);
     margin-top: units(2.5);
     margin-bottom: units(1.5);
   
@@ -342,6 +343,10 @@ $next-button-hover-color: #0D53B7;
     font-size: size('lang', 9);
     margin-bottom: 0;
   }
+}
+
+.next-section--shaded {
+  background-color: $gray-20-next;
 }
 
 .next-section__header {
@@ -609,7 +614,7 @@ $next-button-hover-color: #0D53B7;
 
 .footnote {
   text-decoration: none;
-  
+
   &:before {
     content: "[";
   }

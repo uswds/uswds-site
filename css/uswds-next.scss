@@ -135,31 +135,30 @@ $next-button-hover-color: #0D53B7;
     margin-bottom: units(4);
   }
 }
-
-.next-hero--chapter__pattern {
-  background-image: url("#{$image-path}/next/cover-pattern-repeat.svg");
+.next-hero--page__pattern {
   background-color: transparent;
   background-repeat: repeat-x;
   background-position: bottom right units(-4);
   background-size: contain;
+  margin-top: units(5);
   height: units(5);
   width: 100%;
   @include at-media("desktop") {
     height: units(10);
   }
 }
-.next-hero--chapter__pattern--bottom-row {
-  background-position: bottom right units('neg-10');
+
+.next-hero--chapter__pattern {
+  background-color: transparent;
+  background-repeat: repeat-x;
+  background-position: bottom right units(-4);
+  background-size: contain;
+  height: units(10);
+  width: 100%;
   @include at-media("desktop") {
-    background-position: bottom right units('neg-15');
+    height: units(15);
   }
 }
-
-.next-hero--intro .next-hero--chapter__pattern,
-.next-hero--findings .next-hero--chapter__pattern--top-row {
-  background-image: url("#{$image-path}/next/cover-pattern-repeat-grayscale.svg");
-}
-
 
 .next-hero--page {
   flex-flow: wrap;
@@ -190,24 +189,7 @@ $next-button-hover-color: #0D53B7;
   
   }
 }
-.next-hero--page__pattern {
-  background-color: transparent;
-  background-repeat: repeat-x;
-  background-position: bottom right units(-4);
-  background-size: contain;
-  height: units(5);
-  width: 100%;
-  @include at-media("desktop") {
-    height: units(10);
-  }
-}
 
-.next-hero--understand {
-  background-color: color("secondary-vivid");
-  .next-hero--page__pattern--bottom-row {
-    background-image: url("#{$image-path}/next/next-hero-pattern-understand.svg");
-  }
-}
 
 // Internal nav
 // -------------------------------------

@@ -3,8 +3,8 @@ title: Get involved
 subhead: Here are just a few ideas to get started. 
 # subhead: Take action
 
-layout: next-chapter
 permalink: /next/get-involved/
+slug: "get-involved"
 
 chapter: true
 ---

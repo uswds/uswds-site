@@ -138,7 +138,7 @@ $next-button-hover-color: #0D53B7;
 
 .next-hero--chapter__pattern {
   background-image: url("#{$image-path}/next/cover-pattern-repeat.svg");
-  background-color: $gray-80-next;
+  background-color: transparent;
   background-repeat: repeat-x;
   background-position: bottom right units(-4);
   background-size: contain;
@@ -155,11 +155,59 @@ $next-button-hover-color: #0D53B7;
   }
 }
 
-.next-hero--chapter-intro .next-hero--chapter__pattern,
-.next-hero--chapter-findings .next-hero--chapter__pattern--top-row {
+.next-hero--intro .next-hero--chapter__pattern,
+.next-hero--findings .next-hero--chapter__pattern--top-row {
   background-image: url("#{$image-path}/next/cover-pattern-repeat-grayscale.svg");
 }
 
+
+.next-hero--page {
+  flex-flow: wrap;
+  padding-bottom: units(5);
+
+  .next-hero__subhead {
+    color: color("white");
+    text-transform: uppercase;
+    font-size: size("sans", 2);
+    font-weight: font-weight("semibold");
+    margin-bottom: units(2);
+    letter-spacing: .1em;
+    max-width: none;
+  }
+
+  .next-hero__heading {
+    font-family: family("heading"); 
+    font-size: size("heading", 12);
+    font-weight: font-weight("bold");
+    
+    @include at-media("tablet") {
+      font-size: size('heading', 13);
+    }
+  
+    @include at-media("desktop") {
+      font-size: size('heading', 15);
+    }
+  
+  }
+}
+.next-hero--page__pattern {
+  background-color: transparent;
+  background-repeat: repeat-x;
+  background-position: bottom right units(-4);
+  background-size: contain;
+  height: units(5);
+  width: 100%;
+  @include at-media("desktop") {
+    height: units(10);
+  }
+}
+
+.next-hero--understand {
+  background-color: color("secondary-vivid");
+  .next-hero--page__pattern--bottom-row {
+    background-image: url("#{$image-path}/next/next-hero-pattern-understand.svg");
+  }
+}
 
 // Internal nav
 // -------------------------------------
@@ -456,16 +504,20 @@ $next-button-hover-color: #0D53B7;
     flex-shrink: 0;
     margin-right: units(2);
   }
+
+  h3 {
+    flex: 1;
+
+    & + p {
+      flex: unset;
+    }
+
+  }
+
   p {
-    margin-bottom: 0;
     flex: 1;
   }
 
-  ul {
-    margin-top: 0;
-    margin-left: units(4);
-    width: 100%;
-  }
 }
 
 // Styled inline blockquote
@@ -492,14 +544,13 @@ $next-button-hover-color: #0D53B7;
     font-size: size("heading", 10);
   }  
 
-  &:before {
+  .usa-icon {
     content: "";
     display: block;
-    width: units(2);
-    height: units(2);
-    background-image: url("data:image/svg+xml,%3Csvg width='38' height='28' viewBox='0 0 38 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M35.0013 0.589043L27.0013 0.589044L21.668 11.2557L21.668 27.2557L37.668 27.2557L37.668 11.2557L29.668 11.2557L35.0013 0.589043ZM13.668 0.589045L5.66797 0.589045L0.334631 11.2557L0.334633 27.2557L16.3346 27.2557L16.3346 11.2557L8.33463 11.2557L13.668 0.589045Z' fill='%232E2E2E'/%3E%3C/svg%3E%0A");    color: $gray-90-next;
-    background-size: contain;
-    background-repeat: no-repeat;
+    width: units(2.5);
+    height: units(2.5);
+    content: url("data:image/svg+xml,%3Csvg width='38' height='28' viewBox='0 0 38 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M35.0013 0.589043L27.0013 0.589044L21.668 11.2557L21.668 27.2557L37.668 27.2557L37.668 11.2557L29.668 11.2557L35.0013 0.589043ZM13.668 0.589045L5.66797 0.589045L0.334631 11.2557L0.334633 27.2557L16.3346 27.2557L16.3346 11.2557L8.33463 11.2557L13.668 0.589045Z' fill='currentColor'/%3E%3C/svg%3E%0A");
+    fill: $gray-90-next;
     position: absolute;
     left: units(-4);
     top: units(0.5)
@@ -532,7 +583,7 @@ $next-button-hover-color: #0D53B7;
   @include at-media("desktop") {
     font-size: size("heading", 14);
   }  
-  &:before {
+  .usa-icon {
     width: units(4);
     height: units(4);
     left: units(-6)
@@ -553,7 +604,14 @@ $next-button-hover-color: #0D53B7;
     padding-left: units(.5)
   }
 }
-
+.next-blockquote--inline {
+  font-size: size("heading", 7);
+  font-weight: $theme-font-weight-normal;
+  line-height: line-height("heading", 3);
+  & + h3 {
+    margin-top: units(5);
+  }
+}
 // Spot item
 // -------------------------------------
 

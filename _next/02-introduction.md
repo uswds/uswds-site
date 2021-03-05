@@ -2,8 +2,8 @@
 title: Introduction
 subhead: Let’s transform the way we design and deliver digital government with and for the people.
 
-layout: next-chapter
 permalink: /next/intro/
+slug: "intro"
 
 chapter: true
 
@@ -92,7 +92,7 @@ Over 60 individuals across 33 teams shared their stories and first-hand accounts
 Their experiences, needs, pain points, and bright spots led directly to the development of a future vision for USWDS and helped identify opportunities for its role in supporting improved digital services across government as a whole.
 
 
-{% include next/next-quote.html quote="I think the design system is probably the strongest place to spread best practices across government." source="Manager" variant="inline" %}
+{% include next/next-quote.html quote="I think the design system is probably the strongest place to spread best practices across government." source="Manager"%}
 
 </div>
     </div>
@@ -101,7 +101,7 @@ Their experiences, needs, pain points, and bright spots led directly to the deve
 <section class="next-section">
   <div class="grid-container">
     <div class="grid-row">
-      <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 " markdown="1">
+      <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 margin-top-neg-3" markdown="1">
 
 #### Citations
 

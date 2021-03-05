@@ -3,17 +3,29 @@ layout: next
 report_title: Transforming the American digital experience
 ---
 
-<header class="next-hero next-hero--chapter next-hero--chapter-{{ page.title | downcase }}">
+{% assign page_type = 'summary' %}
+{% if page.chapter == true %}
+  {% assign page_type = 'chapter' %}
+{% elsif page.parent %}
+  {% assign page_type = 'page' %}
+{% endif %}
+
+<header class="next-hero next-hero--{{ page_type}} next-hero--{{ page.slug }}">
   <div class="grid-container">
     <div class="grid-row flex-align-center margin-x-neg-2 tablet:margin-x-auto margin-y-2 tablet:margin-y-4 desktop:margin-y-6">
       <div class="grid-col-12 tablet:grid-col-8 tablet:margin-left-8 desktop:margin-left-0 desktop:grid-col-10 next-hero__content padding-x-2 tablet:padding-x-0">
-        <h1 class="next-hero__heading">{{ page.title }}</h1>
-        <p class="next-hero__subhead">{{ page.subhead }}</p>
+        {% if page_type == 'chapter' %}
+          <h1 class="next-hero__heading">{{ page.title }}</h1>
+          <h2 class="next-hero__subhead">{{ page.subhead }}</h2>
+        {% elsif page_type == 'page' %}
+          <h1 class="next-hero__subhead">{{ page.subhead }}</h1>
+          <h2 class="next-hero__heading">{{ page.title }}</h2>
+        {% endif %}
       </div>
     </div>
   </div>
-  <div class="next-hero--chapter__pattern next-hero--chapter__pattern--top-row"></div>
-  <div class="next-hero--chapter__pattern next-hero--chapter__pattern--bottom-row"></div>
+  <div class="next-hero--{{ page_type}}__pattern next-hero--{{ page_type}}__pattern--top-row"></div>
+  <div class="next-hero--{{ page_type}}__pattern next-hero--{{ page_type}}__pattern--bottom-row"></div>
 </header>
 
 <div class="next-internal-nav">
@@ -23,7 +35,7 @@ report_title: Transforming the American digital experience
       {% for item in site.next %}
       {% if item.chapter %}
         <li class="next-internal-nav__item">
-          <a href="{{ site.baseurl }}{{ item.url }}" class="next-internal-nav__link {% if item.title == page.title %}current{% endif %}">{{ item.title }}</a>
+          <a href="{{ site.baseurl }}{{ item.url }}" class="next-internal-nav__link {% if item.title == page.title or item.title == page.parent %}current{% endif %}">{{ item.title }}</a>
         </li>
         {% endif %}
       {% endfor %}

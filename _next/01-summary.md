@@ -66,7 +66,7 @@ summary_sections:
   </div>
 </header>
 
-<!-- maybe componentize this -- NOTE: it is different from the one on next-chapter layout -->
+<!-- maybe componentize this -- NOTE: it is different from the one on next-content layout -->
 <div class="next-internal-nav">
   <div class="grid-container">
     <ul id="internal-nav" class="next-internal-nav__list">

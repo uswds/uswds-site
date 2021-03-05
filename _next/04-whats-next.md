@@ -2,8 +2,8 @@
 title: What’s next
 subhead: Looking ahead
 
-layout: next-chapter
 permalink: /next/whats-next/
+slug: "whats-next"
 
 chapter: true
 ---
@@ -57,7 +57,7 @@ We’ll provide regular updates on our progress in monthly calls, the public Sla
 <section class="next-section">
   <div class="grid-container">
     <div class="grid-row">
-      <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 " markdown="1">
+      <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 margin-top-neg-3" markdown="1">
 
 #### Citations
 

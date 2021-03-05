@@ -80,7 +80,7 @@ defaults:
       path: ""
       type: next
     values:
-      layout: "next-chapter"
+      layout: "next-content"
       chapter: false
 
 plugins:

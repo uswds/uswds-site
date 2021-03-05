@@ -59,7 +59,7 @@ collections:
     permalink: /:path/
   next:
     output: true
-    permalink: /:path/
+    permalink: /:collection/:title
 
 defaults:
   - scope:
@@ -76,7 +76,7 @@ defaults:
       path: ""
       type: next
     values:
-      layout: next-chapter
+      layout: "next-chapter"
       chapter: false
 
 plugins:

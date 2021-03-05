@@ -31,7 +31,7 @@ bullet_list_interviews:
   <section class="next-section">
     <div class="grid-container">
       <div class="grid-row">
-        <div class="grid-col-12 tablet:grid-col-8 next-section-prose" markdown="1">
+        <div class="grid-col-12 tablet:grid-col-8 margin-x-auto next-section-prose" markdown="1">
 For millions, access to digital services isn’t a luxury — it’s critical. And their experiences using government websites to find unemployment support, file taxes, apply for student loans, or get assistance with housing, childcare, or food can dramatically affect how they feel about the government.
 
 Every moment an individual interacts with a government service is an opportunity to build their trust, as the Federal Customer Experience Initiative team’s [2020 strategy work](https://www.performance.gov/cx/blog "What We Have Learned from Federal Customers in FY20") has summarized. [Only 20 percent of U.S. adults](https://www.pewresearch.org/politics/2020/09/14/americans-views-of-government-low-trust-but-some-positive-performance-ratings/ "Americans’ Views of Government: Low Trust, but Some Positive Performance Ratings") report that they trust government “most of the time” or “just about always”. Trust in government increases when the digital services people access are reliable, user-friendly, and consistently meet their needs. Customers are on average [nine times more likely](https://www.mckinsey.com/~/media/McKinsey/Industries/Public%20and%20Social%20Sector/Our%20Insights/The%20global%20case%20for%20customer%20experience%20in%20government/The-global-case-for-customer-experience-in-government-vF.pdf "The global case for customer experience in government") to trust a government agency if they’re satisfied with its service.
@@ -60,7 +60,7 @@ Teams like 18F, Centers of Excellence, Lab at OPM, and U.S. Digital Service (USD
         <h2 class="margin-top-3">Designing our way forward, together</h2>
       </div>
       <div class="grid-row">
-        <div class="grid-col-12 tablet:grid-col-8 next-section-prose" markdown="1">
+<div class="grid-col-12 tablet:grid-col-8 margin-x-auto next-section-prose" markdown="1">
 
 ### Purpose
 

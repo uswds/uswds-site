@@ -1,0 +1,11 @@
+<div class="next-bulleted-list">
+  <svg class="usa-icon usa-icon--size-3" aria-hidden="true" focusable="false" role="img">
+    <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ include.icon }}"></use>
+  </svg>
+  <p class="margin-top-0">{{ include.paragraph }}</p>
+  <ul>
+    {% for bullet in include.bullets %}
+      <li>{{ bullet | markdownify | strip_newlines }}</li>
+    {% endfor %}
+  </ul>
+</div>

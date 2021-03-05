@@ -292,6 +292,17 @@ $next-button-hover-color: #0D53B7;
     outline: none;
   }
 
+  h2 {
+    font-family: family("heading");
+    font-size: size("heading", 12);
+    margin-top: units(2.5);
+    margin-bottom: units(1.5);
+  
+    @include at-media("desktop") {
+      font-size: size("heading", 14);
+    }  
+  }
+
   h3 {
     font-size: size('lang', 11);
     margin: units(8) 0 0 0;
@@ -377,6 +388,18 @@ $next-button-hover-color: #0D53B7;
   margin-top: 0;
 }
 
+.next-section-prose {
+  h3 {
+    margin-top: units(4);
+  }
+
+  & > p:first-child {
+    font-size: size('lang', 8);
+    margin-top: 0;
+  }
+}
+
+
 .next-highlight-text {
   @include u-measure(3);
   color: color("gold-50v");
@@ -386,6 +409,114 @@ $next-button-hover-color: #0D53B7;
 
 .next-lead {
   font-size: size('lang', 8);
+}
+
+// Bulleted list with icon
+// -------------------------------------
+.next-bulleted-list {
+  display: flex;
+  flex-flow: row wrap;
+  margin: units(2) 0;
+
+  .usa-icon {
+    flex-shrink: 0;
+    margin-right: units(2);
+  }
+  p {
+    margin-bottom: 0;
+    flex: 1;
+  }
+
+  ul {
+    margin-top: 0;
+    margin-left: units(4);
+  }
+}
+
+// Styled inline blockquote
+.next-blockquote {
+  position:relative;
+
+  border-left: units(1px) solid color("gray-cool-30");
+
+  color: color("gray-cool-70");
+
+  font-family: family("heading");
+  font-size: size("heading", 8);
+  font-weight: $theme-font-weight-bold;
+
+  line-height: line-height("heading", 2);
+
+  margin-top: units(4);
+  margin-bottom: units(4);
+
+  margin-left: units(4);
+  padding-left: units(1);
+
+  @include at-media("desktop") {
+    font-size: size("heading", 10);
+  }  
+
+  &:before {
+    content: "";
+    display: block;
+    width: units(2);
+    height: units(2);
+    background-image: url("data:image/svg+xml,%3Csvg width='38' height='28' viewBox='0 0 38 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M35.0013 0.589043L27.0013 0.589044L21.668 11.2557L21.668 27.2557L37.668 27.2557L37.668 11.2557L29.668 11.2557L35.0013 0.589043ZM13.668 0.589045L5.66797 0.589045L0.334631 11.2557L0.334633 27.2557L16.3346 27.2557L16.3346 11.2557L8.33463 11.2557L13.668 0.589045Z' fill='%232E2E2E'/%3E%3C/svg%3E%0A");    color: $gray-90-next;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: units(-4);
+    top: units(0.5)
+  }
+
+  .next-blockquote__source {
+    color: color("gray-cool-60");
+    display: block;
+    font-family: family("lang");
+    font-size: size("lang", 4);
+    font-weight: $theme-font-weight-normal;
+    margin-top: units(2);
+  }
+}
+
+.next-blockquote--block {
+  border-left: none;
+
+  color: color("gray-cool-90");
+
+  font-size: size("heading", 12);
+  font-weight: $theme-font-weight-bold;
+
+  margin-top: units(15);
+  margin-bottom: units(10);
+
+  margin-left: units(6);
+  margin-right: 0;
+
+  @include at-media("desktop") {
+    font-size: size("heading", 14);
+  }  
+  &:before {
+    width: units(4);
+    height: units(4);
+    left: units(-6)
+  }
+  .next-blockquote__source {
+    font-size: size("lang", 8);
+    margin-top: units(3);
+  }
+
+  .next-blockquote__context {
+    color: color("gray-cool-60");
+    display: block;
+    font-family: family("lang");
+    font-size: size("lang", 4);
+    font-weight: $theme-font-weight-normal;
+    margin-top: units(2);
+    margin-left: units(3);
+    padding-left: units(.5)
+  }
 }
 
 // Spot item

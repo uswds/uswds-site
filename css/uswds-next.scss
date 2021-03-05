@@ -24,6 +24,7 @@ $pink-50v: #bc5843;
 
 $gray-20-next: #eaece9;
 $gray-80-next: #2e2e2e;
+$gray-90-next: #202020;
 
 $next-button-color: #2672DE;
 $next-button-hover-color: #0D53B7;
@@ -114,6 +115,7 @@ $next-button-hover-color: #0D53B7;
   }
 }
 
+
 .next-hero__banner-container {
   width: 100%;
 
@@ -121,6 +123,12 @@ $next-button-hover-color: #0D53B7;
     display: block;
     margin: units(5) 0;
     width: 100%;
+  }
+}
+
+.next-hero--minor {
+  .next-hero__subhead {
+    max-width: none;
   }
 }
 
@@ -196,6 +204,23 @@ $next-button-hover-color: #0D53B7;
     display: list-item;
     margin-right: 0;
   }
+}
+
+.next-report-title {
+  background-color: $gray-90-next;
+  border-bottom: 1px solid #585858;
+  color: color("white");
+  display: block;
+  font-size: size('lang', 'sm');
+  font-weight: font-weight('bold');
+  padding: units(1) units(.5);
+  text-align: center;
+  text-decoration: none;
+  @include at-media("desktop") {
+    font-size: size('lang', 'lg');
+    padding: units(1.5) units(1);
+  }
+
 }
 
 // Blockquote

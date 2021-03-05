@@ -58,6 +58,10 @@ collections:
     output: true
     permalink: /:path/
   next:
+    output: true
+    values:
+      layout: next-chapter
+      chapter: false
 
 defaults:
   - scope:

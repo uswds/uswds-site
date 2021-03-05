@@ -18,6 +18,10 @@ subnav:
   href: '#icon-list-package'
 title: Icon list
 variants:
-  - variant: "`.usa-accordion--bordered`"
-    description: Display a border around accordion content
+  - variant: "`.usa-icon-list--[color]`"
+    description: Change the color of an icon by updating [color] to any one of the theme colors listed on the [color utilities]({{ site.baseurl }}/utilities/color)page
+  - variant: "`usa-icon-list--size-[size]`"
+    description: Change the size of an icon by updating [size] to `3`, `4`, `5`, `6`, `7`, `8`, or `9` as detailed on the [icons]({{ site.baseurl }}/components/icon) component page
+  - variant: "`[responsive_variant]:usa-icon-list--size-[size]`"
+    description: "Add a responsive breakpoint prefix separated with a `:` to target a utility at a responsive breakpoint and higher, following a mobile-first methodology."
 ---

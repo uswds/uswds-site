@@ -34,7 +34,7 @@ use case:
       </tr>
     </thead>
     <tr>
-      <td scope="row" data-title="Visual browsers">
+      <td data-title="Visual browsers">
         <span>
           hide
         </span>
@@ -51,7 +51,7 @@ use case:
       </td>
     </tr>
     <tr>
-      <td scope="row" data-title="Visual browsers">
+      <td data-title="Visual browsers">
         <span>
           <strong>show</strong>
         </span>
@@ -68,7 +68,7 @@ use case:
       </td>
     </tr>
     <tr>
-      <td scope="row" data-title="Visual browsers">
+      <td data-title="Visual browsers">
         <span>
           hide
         </span>

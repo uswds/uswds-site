@@ -25,7 +25,7 @@ report_title: Transforming the American digital experience
       {% for item in site.next %}
       {% if item.chapter %}
         <li class="next-internal-nav__item">
-          <a href="{{ item.url }}" class="next-internal-nav__link {% if item.title == page.title %}current{% endif %}">{{ item.title }}</a>
+          <a href="{{ site.baseurl }}{{ item.url }}" class="next-internal-nav__link {% if item.title == page.title %}current{% endif %}">{{ item.title }}</a>
         </li>
         {% endif %}
       {% endfor %}

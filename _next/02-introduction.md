@@ -31,7 +31,7 @@ bullet_list_interviews:
   <section class="next-section">
     <div class="grid-container">
       <div class="grid-row">
-        <div class="grid-col-12 tablet:grid-col-8 margin-x-auto next-section-prose" markdown="1">
+        <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 next-section-prose" markdown="1">
 For millions, access to digital services isn’t a luxury — it’s critical. And their experiences using government websites to find unemployment support, file taxes, apply for student loans, or get assistance with housing, childcare, or food can dramatically affect how they feel about the government.
 
 Every moment an individual interacts with a government service is an opportunity to build their trust, as the Federal Customer Experience Initiative team’s [2020 strategy work](https://www.performance.gov/cx/blog "What We Have Learned from Federal Customers in FY20") has summarized. [Only 20 percent of U.S. adults](https://www.pewresearch.org/politics/2020/09/14/americans-views-of-government-low-trust-but-some-positive-performance-ratings/ "Americans’ Views of Government: Low Trust, but Some Positive Performance Ratings") report that they trust government “most of the time” or “just about always”. Trust in government increases when the digital services people access are reliable, user-friendly, and consistently meet their needs. Customers are on average [nine times more likely](https://www.mckinsey.com/~/media/McKinsey/Industries/Public%20and%20Social%20Sector/Our%20Insights/The%20global%20case%20for%20customer%20experience%20in%20government/The-global-case-for-customer-experience-in-government-vF.pdf "The global case for customer experience in government") to trust a government agency if they’re satisfied with its service.
@@ -57,16 +57,16 @@ Teams like 18F, Centers of Excellence, Lab at OPM, and U.S. Digital Service (USD
     <hr />
     <div class="grid-container">
       <div class="grid-row">
-        <h2 class="margin-top-3">Designing our way forward, together</h2>
+        <h2 class="margin-top-3 tablet:margin-x-auto desktop:margin-x-0">Designing our way forward, together</h2>
       </div>
       <div class="grid-row">
-<div class="grid-col-12 tablet:grid-col-8 margin-x-auto next-section-prose" markdown="1">
+<div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 next-section-prose" markdown="1">
 
 ### Purpose
 
 The U.S. Web Design System (USWDS) is just one piece of widespread federal efforts to improve the public’s experience of government digital services. Created in 2015, USWDS provides principles, guidance, and code to help federal agencies deliver great digital experiences by making it easier to build accessible, mobile-friendly government websites — which gives the public a more trusted, seamless way to access government digital services.
 
-In order to get there, we need to make good-for- government products (like the design system) an integrated part of agency service delivery. Even given all the benefits the design system provides, only a minority of federal executive branch domains (approximately one out of four) are currently using any design system code in their websites [7].
+In order to get there, we need to make good-for- government products (like the design system) an integrated part of agency service delivery. Even given all the benefits the design system provides, only a minority of federal executive branch domains (approximately [one out of four](https://digital.gov/resources/21st-century-integrated- digital-experience-act/ "21st Century Integrated Digital Experience Act.")) are currently using any design system code in their websites.
 
 So how can we succeed in supporting agencies to improve their digital services amid the diverse challenges they all face?
 

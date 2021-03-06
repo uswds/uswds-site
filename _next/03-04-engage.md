@@ -36,7 +36,7 @@ Agencies developing their own solutions, sharing them back to the community, and
 
 Agency teams are already creating custom solutions to adapt or add on to the design system, but they’re sometimes unsure how to contribute those ideas back to USWDS.
 
-{% include next/next-quote.html quote="I think some teams want to contribute back, help with testing, etc. That would be a cool call for action — for people who want to work with USWDS on a component that agencies need.." source="Manager" variant="inline" color=page.quote_color %}
+{% include next/next-quote.html quote="I think some teams want to contribute back, help with testing, etc. That would be a cool call for action — for people who want to work with USWDS on a component that agencies need." source="Manager" variant="inline" color=page.quote_color %}
 
 ### Collaborate with others
 
@@ -50,7 +50,7 @@ to leverage the related work and reach of other partners and groups, including o
     </div>
   </div>
 </section>
-
+<div class="bg-{{ page.hero_color}} height-1"></div>
 <section class="next-section next-section--shaded">
   <div class="grid-container">
     <div class="grid-row">

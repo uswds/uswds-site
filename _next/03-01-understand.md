@@ -78,7 +78,7 @@ There are also questions of customization: can components or colors be customize
     </div>
   </div>
 </section>
-
+<div class="bg-{{ page.hero_color}} height-1"></div>
 <section class="next-section next-section--shaded">
   <div class="grid-container">
     <div class="grid-row">

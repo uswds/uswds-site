@@ -120,4 +120,11 @@ We also hold regular monthly calls that are open to everyone on the third Thursd
     </div>
   </div>
 </section>
-
+<div class="grid-row">
+  <div class="grid-col bg-next-red-medium height-1"></div>
+  <div class="grid-col bg-next-blue-medium height-1"></div>
+  <div class="grid-col bg-next-mint-medium height-1"></div>
+  <div class="grid-col bg-next-gold-medium height-1"></div>
+  <div class="grid-col bg-next-pink-medium height-1"></div>
+  <div class="grid-col bg-next-gray-medium height-1"></div>
+</div>

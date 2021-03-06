@@ -69,7 +69,7 @@ Teams like 18F, Centers of Excellence, Lab at OPM, and U.S. Digital Service (USD
 
 The U.S. Web Design System (USWDS) is just one piece of widespread federal efforts to improve the public’s experience of government digital services. Created in 2015, USWDS provides principles, guidance, and code to help federal agencies deliver great digital experiences by making it easier to build accessible, mobile-friendly government websites — which gives the public a more trusted, seamless way to access government digital services.
 
-In order to get there, we need to make good-for- government products (like the design system) an integrated part of agency service delivery. Even given all the benefits the design system provides, only a minority of federal executive branch domains (approximately one out of four) are currently using any design system code in their websites[^7].
+In order to get there, we need to make good-for-government products (like the design system) an integrated part of agency service delivery. Even given all the benefits the design system provides, only a minority of federal executive branch domains (approximately one out of four) are currently using any design system code in their websites[^7].
 
 So how can we succeed in supporting agencies to improve their digital services amid the diverse challenges they all face?
 

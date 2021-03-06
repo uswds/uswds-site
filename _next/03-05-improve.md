@@ -58,7 +58,7 @@ The cost of making updates to the design system (especially new major versions) 
     </div>
   </div>
 </section>
-
+<div class="bg-{{ page.hero_color}} height-1"></div>
 <section class="next-section next-section--shaded">
   <div class="grid-container">
     <div class="grid-row">

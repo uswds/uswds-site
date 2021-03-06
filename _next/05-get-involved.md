@@ -62,7 +62,7 @@ chapter: true
 
 - Learn about customization, theming, utilities, and tokens to adapt the design system to your agency’s brand
 
-- Review existing websites that use USWDS (such as those on the designsystem.digital. gov Showcase) to see how you could better integrate USWDS principles and components
+- Review existing websites that use USWDS (such as those on the [designsystem.digital.gov Showcase](https://designsystem.digital.gov/getting-started/showcase/all/)) to see how you could better integrate USWDS principles and components
 
 ### Designers can: 
 

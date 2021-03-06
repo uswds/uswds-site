@@ -29,6 +29,41 @@ $gray-90-next: #202020;
 $next-button-color: #2672DE;
 $next-button-hover-color: #0D53B7;
 
+
+
+
+$next-theme-colors: (
+  'next-gold-medium' #F2B600 true,
+  'next-gold-dark' #cc9900 true,
+
+  'next-red-medium' #E41D3D,
+  'next-red-dark' #bd0f2c,
+
+  'next-pink-medium' #F8A897 true,
+  'next-pink-dark' #ec8e79 true,
+
+  'next-blue-medium' #2672DE,
+  'next-blue-dark' #1f5aad,
+
+  'next-mint-medium' #74D7AD true,
+  'next-mint-dark' #5eba94 true,
+);
+
+
+
+@each $color-name, $color-value, $text-black in $next-theme-colors {
+  .bg-#{$color-name} {
+    background-color: $color-value !important;
+    @if $text-black == true {
+      color: $gray-90-next !important;      
+    }
+  }
+  .text-#{$color-name} {
+    color: $color-value !important;
+  }
+}
+
+
 // Typesetting 
 .usa-prose {
   font-family: family('lang');
@@ -165,7 +200,7 @@ $next-button-hover-color: #0D53B7;
   padding-bottom: units(5);
 
   .next-hero__subhead {
-    color: color("white");
+    color: inherit;
     text-transform: uppercase;
     font-size: size("sans", 2);
     font-weight: font-weight("semibold");
@@ -535,7 +570,8 @@ $next-button-hover-color: #0D53B7;
     fill: $gray-90-next;
     position: absolute;
     left: units(-4);
-    top: units(0.5)
+    top: units(0.5);
+    opacity: 0.8;
   }
 
   .next-blockquote__source {

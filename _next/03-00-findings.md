@@ -2,6 +2,8 @@
 title: Findings
 # subhead: Current state
 subhead: "10,000-foot view: systemic challenges to improving digital services"
+nav_title: Findings
+
 permalink: /next/findings/
 slug: "findings" 
 chapter: true

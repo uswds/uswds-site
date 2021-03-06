@@ -2,7 +2,7 @@
 title: Get involved
 subhead: Here are just a few ideas to get started. 
 # subhead: Take action
-
+nav_title: Get involved
 permalink: /next/get-involved/
 slug: "get-involved"
 

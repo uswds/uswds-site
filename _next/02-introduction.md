@@ -1,6 +1,7 @@
 ---
 title: Introduction
 subhead: Let’s transform the way we design and deliver digital government with and for the people.
+nav_title: Intro
 
 permalink: /next/intro/
 slug: "intro"

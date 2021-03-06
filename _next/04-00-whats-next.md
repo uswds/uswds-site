@@ -1,10 +1,9 @@
 ---
 title: What’s next
 subhead: Looking ahead
-
+nav_title: What’s next
 permalink: /next/whats-next/
 slug: "whats-next"
-
 chapter: true
 ---
 

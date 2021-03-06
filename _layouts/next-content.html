@@ -40,7 +40,7 @@ report_title: Transforming the American digital experience
       {% for item in site.next %}
       {% if item.chapter %}
         <li class="next-internal-nav__item">
-          <a href="{{ site.baseurl }}{{ item.url }}" class="next-internal-nav__link {% if item.title == page.title or item.title == page.parent %}current{% endif %}">{{ item.title }}</a>
+          <a href="{{ site.baseurl }}{{ item.url }}" class="next-internal-nav__link {% if item.title == page.title or item.title == page.parent %}current{% endif %}">{{ item.nav_title }}</a>
         </li>
         {% endif %}
       {% endfor %}

@@ -2,8 +2,9 @@
 layout: next
 permalink: /next/
 title: Transforming the American digital experience
+nav_title: Summary
 subhead: A report about what’s next for the U.S. Web Design System
-
+chapter: true 
 summary_sections:
   - heading: Overview
     description: |-
@@ -73,7 +74,7 @@ summary_sections:
       {% for item in site.next %}
       {% if item.chapter == true %}
         <li class="next-internal-nav__item">
-          <a href="{{ item.url }}" class="next-internal-nav__link">{{ item.title }}</a>
+          <a href="{{ item.url }}" class="next-internal-nav__link">{{ item.nav_title }}</a>
         </li>
       {% endif %}
       {% endfor %}

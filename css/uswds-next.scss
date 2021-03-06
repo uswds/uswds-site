@@ -138,6 +138,7 @@ $next-theme-colors: (
 .next-hero__subhead {
   color: $gray-20-next;
   font-size: size('lang', 8);
+  font-weight: $theme-font-weight-normal;
   line-height: line-height('lang', 2);
   margin: units(2) 0 0;
   max-width: 40ex;

@@ -4,9 +4,10 @@ subhead: Agency teams want to...
 
 permalink: /next/findings/understand
 slug: "understand"
-navbar_color: "red-60v"
-hero_color: "secondary-vivid"
-quote_color: "secondary"
+
+navbar_color: "next-red-dark"
+hero_color: "next-red-medium"
+quote_color: "next-red-medium"
 
 chapter: false
 parent: Findings

@@ -1,0 +1,1 @@
+- **Exact time.** Plain text input is more appropriate for historical exact times, like time of birth.

@@ -697,7 +697,7 @@ body {
 .footer-content {
   margin-bottom: units(5);
 
-  h3 {
+  h2 {
     @include typeset("lang", "lg", 2);
     margin: 0;
   }
@@ -709,12 +709,12 @@ body {
 .footer-contact-links {
   @include grid-gap(2);
 
-  h4,
+  h3,
   a {
     @include u-font("lang", "2xs");
   }
 
-  h4 {
+  h3 {
     font-weight: font-weight("normal");
     margin-bottom: 0;
     margin-top: units(2px);
@@ -1248,6 +1248,10 @@ code[class*="language-"] {
   .s {
     color: color("primary-vivid");
   }
+}
+
+code[class*="language-plaintext"] {
+    color: inherit;
 }
 
 .alignment-example {
@@ -2828,6 +2832,7 @@ $theme-table-column-gap: 4;
   @include typeset("lang", "lg", 5);
   @include u-measure(5);
   font-weight: fw("light");
+  margin-bottom: units(6);
   margin-top: units(1);
 }
 
@@ -2882,7 +2887,7 @@ $theme-table-column-gap: 4;
 }
 
 .site-accordion-code {
-  .usa-accordion__button {
+  > .usa-accordion__button {
     @include add-background-svg("icons/remove-white");
     background-color: color("primary-vivid");
     color: color("white");
@@ -2899,7 +2904,7 @@ $theme-table-column-gap: 4;
 
 .site-accordion-docs,
 .site-accordion {
-  .usa-accordion__button {
+  > .usa-accordion__button {
     @include add-background-svg("usa-icons/remove");
 
     &[aria-expanded="false"] {
@@ -2923,7 +2928,6 @@ $theme-table-column-gap: 4;
   }
 
   > h2 {
-    @extend %header-margin;
     @include typeset("lang", "2xl", 2);
     color: color("ink");
     margin: 0;
@@ -2964,16 +2968,20 @@ $theme-table-column-gap: 4;
     @extend %header-margin;
     color: color("ink");
     margin: 0;
+
+    & + p {
+      margin-top: units(1);
+    }
   }
 
   h3 {
     @include typeset("lang", "lg", 2);
+    color: color("base-dark");
+    font-weight: fw("thin");
   }
 
   h4 {
-    @include typeset("lang", "lg", 2);
-    color: color("base-dark");
-    font-weight: fw("thin");
+    @include typeset("lang", "md", 2);
   }
 }
 
@@ -3191,10 +3199,14 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-.site-accordion {
-  .usa-accordion__content {
-    padding-left: 0;
-    padding-right: 0;
+.site-accordion,
+.site-accordion-code {
+  > .usa-accordion__button {
+    h2,
+    h3 {
+      @include typeset("lang", "sm", 1);
+      @include u-margin-y(0);
+    }
   }
 }
 
@@ -3413,5 +3425,52 @@ body {
   }
   .bp {
     @include u-text("violet-30v");
+  }
+}
+
+.site-preview-heading {
+  @include typeset("lang", "2xs", 2);
+  @include u-margin-bottom(2);
+  @include u-margin-top(4);
+  @include u-text("uppercase", "ls-2", "normal", "base");
+}
+
+.site-prose {
+  .site-component-section-title {
+    @extend .site-h2;
+    border-top: units(1px) solid;
+    margin-bottom: units(2);
+    margin-top: units(3);
+    padding-top: units(1.5);
+  }
+
+  .site-component-name {
+    @extend .site-page-title;
+    border-top: units(2px) solid;
+    font-weight: fw("light");
+    padding-top: units(2);
+  }
+}
+
+.usa-content-list {
+  p:first-child {
+    margin-top: 0;
+  }
+}
+
+.site-accordion-code {
+  // Don't show margin at the top of the first form-group's label
+  .usa-accordion__content > .usa-form-group:first-child,
+  .usa-date-range-picker > .usa-form-group:first-child {
+    .usa-label:first-child {
+      margin-top: 0;
+    }
+  }
+
+  // When form: Don't show margin at the top of the first form's label
+  .usa-form:first-child {
+    > .usa-label:first-child {
+      margin-top: 0;
+    }
   }
 }

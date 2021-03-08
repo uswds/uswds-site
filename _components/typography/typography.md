@@ -1,4 +1,8 @@
 ---
+component:
+  status: ready
+  package: usa-typography
+  dependencies:
 permalink: /components/typography/
 redirect_from:
 - /typography/
@@ -7,16 +11,18 @@ title: Typography
 category: Components
 lead: "Government websites need clear and consistent headings, highly legible body paragraphs, clear labels, and easy-to-use input fields. Our default typefaces are designed for legibility and can adapt to a variety of visual tones."
 subnav:
-- text: Typesetting with USWDS
-  href: '#typesetting-with-uswds'
-- text: Included typefaces
-  href: '#included-typefaces'
-- text: Prose
-  href: '#prose'
-- text: Links
-  href: '#links'
-- text: Lists
-  href: '#lists'
+  - text: Typesetting with USWDS
+    href: '#typesetting-with-uswds'
+  - text: Included typefaces
+    href: '#included-typefaces'
+tags:
+  - type
+  - typesetting
+  - source sans pro
+  - public sans
+  - roboto mono
+  - leading
+  - measure
 ---
 
 <h2 id="typesetting-with-uswds">Typesetting with USWDS</h2>
@@ -160,5 +166,3 @@ Letterspacing is the spacing between individual letterforms in a block of text. 
     </div>
   </div>
 </div>
-
-{% include child-sections.html parent='typography' %}

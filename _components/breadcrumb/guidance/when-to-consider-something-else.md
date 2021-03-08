@@ -1,0 +1,4 @@
+- **Simple sites.** If the website is not very deep and the context for the current page is clear from the main navigation.
+- **Landing pages.** Omit breadcrumbs on the homepage of a site. Breadcrumbs could also be omitted from section landing pages. Breadcrumbs are most useful when the hierarchy is not immediately apparent from the main navigation.
+- **Redundant side navigation.** When side navigation is used in combination with main navigation, it may be redundant to include breadcrumbs.
+- **Step-by-step processes.** Use breadcrumbs for hierarchical relationships, not linear relationships (like individual steps in a multi-step process).

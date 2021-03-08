@@ -1,0 +1,1 @@
+- **You don’t need separate data elements.** If you don’t need to parse out the separate pieces of a person’s name, consider letting them enter it into a single text field.

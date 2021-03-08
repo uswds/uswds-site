@@ -1,0 +1,3 @@
+- **To feature content with its metadata.** The collection component is a good option when displaying content that should be accompanied by limited metadata like tags, date/time, or source and attribution.
+- **To group related content together.** The collection component can provide links to articles from a trusted source, popular guides and resources, or a collection of pages that cover different aspects of a single topic.
+- **To collect items from multiple sources.** Use collections when you want to guide users to additional resources available elsewhere. Collections introduce themes that help users find what they’re looking for, including when it's not on your site.

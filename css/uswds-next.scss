@@ -66,6 +66,9 @@ $next-theme-colors: (
   }
 }
 
+html {
+  scroll-padding-top: units(15) + units(3);
+}
 
 // Typesetting 
 .usa-prose {
@@ -758,7 +761,6 @@ $next-theme-colors: (
   &:after {
     content: "]";
   }
-
 }
 
 .reversefootnote {

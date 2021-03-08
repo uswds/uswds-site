@@ -1,0 +1,1 @@
+**Accessing public content.** Allow users to access as much as of your online services as possible without having to sign in. Sign-in forms are a barrier between users and the content they want.

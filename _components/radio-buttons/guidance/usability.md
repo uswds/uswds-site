@@ -1,0 +1,6 @@
+- **Use the label as a target.** Users should be able to select either the text label or the radio button to select or deselect an option.
+- **List items vertically.** Vertically-listed options are easier to read than those that are listed horizontally. A horizontal layout can make it difficult to tell which label belongs to which radio button.
+- **Use adequate spacing.** Make sure selections are adequately spaced for touch screens. Consider using the tile variant for larger touch targets.
+- **Set default values with caution.** Setting a default value can bias a decision, seem pushy, or alienate users who don’t fit your assumptions. Only use a default selection if you have data to back it up.
+- **Don’t mix default and tile variants.** Pick one implementation and stick with it. When mixed, tiles can appear to indicate a bias or preference toward that option.
+- **Use a logical order.** Make sure the selection options are organized in a meaningful way, like alphabetical or most-frequent to least-frequent. This helps users easily find the option they’re looking for.

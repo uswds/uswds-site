@@ -1,3 +1,9 @@
-{% capture card--compare %}
-  {% fractal_component card--compare %}
-{% endcapture %}{{ card--compare | strip }}
+<h3 class="site-preview-heading">Default card</h3>
+{% capture card--standard %}
+  {% fractal_component card--standard %}
+{% endcapture %}{{ card--standard | strip }}
+
+<h3 class="site-preview-heading">Flag layout card</h3>
+{% capture card--flag %}
+  {% fractal_component card--flag %}
+{% endcapture %}{{ card--flag | strip }}

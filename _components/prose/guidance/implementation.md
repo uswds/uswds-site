@@ -1,0 +1,9 @@
+- `usa-prose` is meant for blocks of text where it’s more difficult to add custom classes to individual elements, like a blog post where the content is coming out of markdown or a CMS.
+- Adding `usa-prose` to any container adds USWDS default heading and body text styling to the following **direct-child elements**:
+  - `h1`-`h6`
+  - `p`
+  - `ul` and `ol`, _plus_ child `li`
+  - `table`, _plus_ child `thead`, `th`, `td`, and `caption`
+- You can change the measure of elements styled with `usa-prose` in `_uswds-theme-typography.scss` with the following variables. Each accepts a measure token:
+  - `$theme-text-measure`
+  - `$theme-lead-measure`

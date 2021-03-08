@@ -1,0 +1,7 @@
+- **Make the label selectable.** Users should be able to select either the text label or the checkbox to select or deselect an option.
+- **List options vertically.** Horizontal listings can make it difficult to tell which label pertains to which checkbox.
+- **Use positive statements.** Negative language in labels can be counterintuitive. For example, use “I want to receive a promotional email” instead of “I don’t want to receive a promotional email.”
+- **Use logical labels.** Make sure that the label makes both states — checked and unchecked — clear to the user. If that’s not possible, consider using a [radio button]({{ site.baseurl }}/components/radio-buttons) with two individual options instead. Then both states can have their own clearly marked label.
+- **Use adequate touch targets.** Make sure selections are adequately spaced for touch screens. Consider using the tile variant for larger touch targets.
+- **Don’t mix default and tile variants.** Pick one implementation and stick with it. When mixed, tiles can appear to indicate a bias or preference toward that option.
+- **Use a logical order.** Make sure the selection options are organized in a meaningful way, like alphabetical or most-frequent to least-frequent. This helps users easily find the option they’re looking for.

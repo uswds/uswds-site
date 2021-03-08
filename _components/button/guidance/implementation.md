@@ -1,0 +1,2 @@
+- The examples demonstrate how to use button elements. To use a button style on a link, add the `usa-button` class to your link.
+- To use a different style button on your link, add button variant classes in addition to `usa-button`.

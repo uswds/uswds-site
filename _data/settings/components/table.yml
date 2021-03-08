@@ -30,24 +30,18 @@ contents:
     var: $theme-table-stripe-text-color
     default: '"ink"'
     type: color
-
-  - name: Sorted Column Border color
-    description: Defines a border color for the sorted column
-    var: $theme-table-sorted-border-color
-    default: '"accent-cool-darker"'
-    type: color
   - name: Sorted Column Header Background Color
     description: Defines a background color for the sorted column header
     var: $theme-table-sorted-header-background-color
     default: '"accent-cool-light"'
     type: color
   - name: Sorted Column Background Color
-    description: Defines a background color for the cells of the sorted column 
+    description: Defines a background color for the cells of the sorted column
     var: $theme-table-sorted-background-color
     default: '"accent-cool-lighter"'
     type: color
   - name: Sorted Column Stripe Background Color
-    description: Defines a background color for the alternating horizontal stripes applied to cells of the sorted column 
+    description: Defines a background color for the alternating horizontal stripes applied to cells of the sorted column
     var: $theme-table-sorted-stripe-background-color
     default: '"blue-cool-10v"'
     type: color

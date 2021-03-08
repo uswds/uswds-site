@@ -6,6 +6,7 @@ nav_title: Findings
 
 permalink: /next/findings/
 slug: "findings" 
+hero_color: "next-gray-dark"
 chapter: true
 ---
 

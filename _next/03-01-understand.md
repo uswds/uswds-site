@@ -89,10 +89,10 @@ There are also questions of customization: can components or colors be customize
   </div>
 </section>
 
-<section class="next-section">
+<section class="next-section next-section--citations">
   <div class="grid-container">
     <div class="grid-row">
-      <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 margin-top-neg-3" markdown="1">
+      <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0" markdown="1">
 
 #### Citations
 
@@ -105,4 +105,3 @@ There are also questions of customization: can components or colors be customize
     </div>
   </div>
 </section>
-

@@ -3,7 +3,7 @@ title: Strategic communications and engagement with key audiences
 subhead: Opportunity 01
 
 permalink: /next/whats-next/engagement
-slug: "engagement"
+slug: "opportunity"
 
 navbar_color: "next-gray-dark"
 hero_color: "next-gray-medium"
@@ -100,12 +100,3 @@ We also recommend expanding engagement with existing customers and empowering th
     </div>
   </div>
 </section>
-
-<div class="grid-row margin-bottom-neg-1">
-  <div class="grid-col bg-next-red-medium height-1"></div>
-  <div class="grid-col bg-next-blue-medium height-1"></div>
-  <div class="grid-col bg-next-mint-medium height-1"></div>
-  <div class="grid-col bg-next-gold-medium height-1"></div>
-  <div class="grid-col bg-next-pink-medium height-1"></div>
-  <div class="grid-col bg-next-gray-medium height-1"></div>
-</div>

@@ -3,6 +3,7 @@ layout: next
 permalink: /next/
 title: Transforming the American digital experience
 nav_title: Summary
+slug: summary
 subhead: A report about what’s next for the U.S. Web Design System
 chapter: true 
 summary_sections:

@@ -5,6 +5,7 @@ nav_title: What’s next
 permalink: /next/whats-next/
 slug: "whats-next"
 chapter: true
+hero_color: "next-gray-dark"
 ---
 
 <section class="next-section">
@@ -53,18 +54,10 @@ We’ll provide regular updates on our progress in monthly calls, the public Sla
     </div>
   </div>
 </section>
-<div class="grid-row margin-bottom-neg-1">
-  <div class="grid-col bg-next-red-medium height-1"></div>
-  <div class="grid-col bg-next-blue-medium height-1"></div>
-  <div class="grid-col bg-next-mint-medium height-1"></div>
-  <div class="grid-col bg-next-gold-medium height-1"></div>
-  <div class="grid-col bg-next-pink-medium height-1"></div>
-  <div class="grid-col bg-next-gray-medium height-1"></div>
-</div>
-<section class="next-section">
+<section class="next-section next-section--citations">
   <div class="grid-container">
     <div class="grid-row">
-      <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 margin-top-neg-3" markdown="1">
+      <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0" markdown="1">
 
 #### Citations
 
@@ -77,4 +70,3 @@ We’ll provide regular updates on our progress in monthly calls, the public Sla
     </div>
   </div>
 </section>
-

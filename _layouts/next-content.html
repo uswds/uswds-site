@@ -9,10 +9,6 @@ report_title: Transforming the American digital experience
 {% elsif page.parent %}
   {% assign page_type = 'page' %}
 {% endif %}
-{% assign no_image = false %}
-{% if page.parent == "What’s next" %}
-  {% assign no_image = true %}
-{% endif %}
 
 <header class="next-hero next-hero--{{ page_type }} next-hero--{{ page.slug }} bg-{{ page.hero_color }}">
   <div class="grid-container">
@@ -28,7 +24,7 @@ report_title: Transforming the American digital experience
       </div>
     </div>
   </div>
-  {% if no_image == false %}
+  {% if page.slug != "opportunity" %}
     <div class="next-hero--{{ page_type }}__pattern" style="background-image: url('{{ site.baseurl }}/img/next/hero-pattern-{{ page.slug }}.svg')"></div>
   {% endif %}
 </header>
@@ -55,3 +51,61 @@ report_title: Transforming the American digital experience
 {{ content }}
 
 </main>
+
+<div class="grid-row margin-bottom-neg-1">
+  <div class="grid-col bg-next-red-medium height-1"></div>
+  <div class="grid-col bg-next-blue-medium height-1"></div>
+  <div class="grid-col bg-next-mint-medium height-1"></div>
+  <div class="grid-col bg-next-gold-medium height-1"></div>
+  <div class="grid-col bg-next-pink-medium height-1"></div>
+  <div class="grid-col bg-next-gray-medium height-1"></div>
+</div>
+
+
+<!-- builds next/previous pages -->
+
+{% assign next_collection = site.next %}
+
+{% for pages in next_collection %}
+  {% capture report_length %}{{ forloop.length }}{% endcapture %}
+
+  {% if pages.title == page.title %}
+
+    {% capture page_index %}{{ forloop.index }}{% endcapture %}
+
+    {% unless forloop.first %}
+      {% assign prevurl = prevpage.url %}
+      {% assign previndex = forloop.index | minus: 1 %}
+    {% endunless %}
+
+    {% unless next.last.url %}
+      {% assign nextpage = next_collection[forloop.index] %}
+      {% assign nexturl = nextpage.url %}
+      {% assign nextindex = forloop.index | plus: 1 %}
+    {% endunless %}
+
+  {% endif %}
+
+  {% assign prevpage = pages %}
+
+{% endfor %}
+
+
+
+<nav class="grid-container margin-y-5 padding-bottom-2 padding-top-3">
+  <div class="grid-row flex-justify ">
+    <h2>Read more from “Transforming the American digital experience”:</p>
+  </div>
+  <div class="grid-row flex-justify padding-bottom-3">
+    <div class="grid-col-12 tablet:grid-col-10 tablet:margin-x-auto desktop-lg:margin-x-0 desktop-lg:grid-col-6 margin-bottom-3">
+      {% if prevurl %}
+        {% include next/next-pagination-cards.html preview=page.previous direction="prev" length=report_length index=previndex %}
+      {% endif %} 
+    </div>
+    <div class="grid-col-12 tablet:grid-col-10 tablet:margin-x-auto desktop-lg:margin-x-0 desktop-lg:grid-col-6 margin-bottom-3">
+      {% if nexturl %}
+        {% include next/next-pagination-cards.html preview=page.next direction="next" length=report_length index=nextindex %}
+      {% endif %}
+    </div>
+  </div>
+</nav>

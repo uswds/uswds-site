@@ -20,7 +20,7 @@
 @import 'packages/required';
 
 $pink-20v: #F8A897;
-$pink-50v: #bc5843;
+$pink-50v: #bc5843; 
 
 $gray-20-next: #eaece9;
 $gray-80-next: #2e2e2e;
@@ -691,7 +691,8 @@ $next-theme-colors: (
 // -------------------------------------
 
 .next-section--opportunities {
-  padding-top: units(5);
+  margin-bottom: units(-3);
+  padding-top: 0;
 
   .next-opportunity__heading {
     color: color("base-darker");
@@ -737,6 +738,12 @@ $next-theme-colors: (
 // Footnotes
 // -------------------------------------
 
+.next-section--citations {
+  padding-top: units(4);
+  padding-bottom: units(5);
+  margin-top: units(-3);
+}
+
 .footnote {
   text-decoration: none;
 
@@ -754,4 +761,40 @@ $next-theme-colors: (
   font-size: size('sans', 4);
   text-decoration: none;
   vertical-align: text-top;
+}
+
+// Next Pagination cards
+// --------------------------------------
+
+.next-page-card {
+  a {
+    text-decoration: none;
+  }
+  .usa-card__media {
+
+  }
+}
+.next-page-card__subheading {
+  text-transform: uppercase;
+  display: block;
+  font-family: family("sans");
+  font-size: size("sans", 2);
+  font-weight: font-weight("semibold");
+  margin-bottom: units(2);
+  letter-spacing: .1em;
+
+}
+
+.next-page-card__img {
+  background-color: transparent;
+  background-repeat: repeat-x;
+  background-position: bottom units(1) right 0;
+  background-size: auto units(0);
+  height: units(1);
+  width: 100%;
+  @include at-media("tablet") {
+    background-size: auto units(15);
+    height: 100%;
+
+  }
 }

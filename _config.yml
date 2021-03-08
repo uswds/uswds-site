@@ -83,6 +83,7 @@ defaults:
       report_title: "Report: Transforming the American digital experience"
       layout: "next-content"
       chapter: false
+      hero_color: "next-gray-dark"
 
 plugins:
   - jekyll-redirect-from

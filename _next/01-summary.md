@@ -196,4 +196,3 @@ summary_sections:
     </section>
   {% endfor %}
 </main>
-

@@ -80,6 +80,7 @@ defaults:
       path: ""
       type: next
     values:
+      report_title: "Report: Transforming the American digital experience"
       layout: "next-content"
       chapter: false
 

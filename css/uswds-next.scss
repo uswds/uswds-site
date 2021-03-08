@@ -539,6 +539,11 @@ $next-theme-colors: (
     flex: 1;
   }
 
+  ul {
+    flex: unset;
+    width: 100%;
+  }
+
 }
 
 // Styled inline blockquote

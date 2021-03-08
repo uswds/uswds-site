@@ -21,8 +21,8 @@ lead: A date picker helps users select a single date.
     </ul>
     <h4>When to consider something else</h4>
     <ul class="usa-content-list">
-      <li><strong>Familiar dates.</strong> When asking users for a date they know well, or can look up without using a calendar (like a birthday), use <a href="{{ site.baseurl }}/form-controls/#date-input">date input fields</a>.</li>
-      <li><strong>When the day of the week is irrelevant.</strong> If there's no benefit to knowing the day of the week for a particular date, consider <a href="{{ site.baseurl }}/form-controls/#date-input">date input fields</a>.</li>
+      <li><strong>Familiar dates.</strong> When asking users for a date they know well, or can look up without using a calendar (like a birthday), use <a href="{{ site.baseurl }}/components/form-controls/#date-input">date input fields</a>.</li>
+      <li><strong>When the day of the week is irrelevant.</strong> If there's no benefit to knowing the day of the week for a particular date, consider <a href="{{ site.baseurl }}/components/form-controls/#date-input">date input fields</a>.</li>
     </ul>
     <h4>Usability guidance</h4>
     <ul class="usa-content-list">

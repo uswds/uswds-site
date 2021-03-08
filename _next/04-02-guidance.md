@@ -68,10 +68,8 @@ It’s also critical to help equip agencies to build the right teams as they imp
 
 To help agencies begin using the design system, we can reduce barriers to getting started with these opportunities.
 
-{% include next/next-opportunity-matrix.html opportunities=page.collaboration_opportunities %}
-
-
 </div>
+      {% include next/next-opportunities-list.html opportunities=page.guidance_opportunities %}
     </div>
   </div>
 </section>

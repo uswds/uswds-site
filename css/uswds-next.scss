@@ -687,6 +687,51 @@ $next-theme-colors: (
   margin-top: 0;
 }
 
+// Opportunities List
+// -------------------------------------
+
+.next-section--opportunities {
+  padding-top: units(5);
+
+  .next-opportunity__heading {
+    color: color("base-darker");
+    font-family: family("lang");
+    font-size: size("lang", 8);
+    line-height: line-height("lang", 2);
+    margin: 0 0 units(1);
+  }
+  .next-opportunity-description {
+    margin: 0;
+    font-size: size("lang", 4);
+
+    @include at-media("desktop") {
+      font-size: size("lang", 5);
+    }
+
+    p:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .next-opportunity__need__need-img {
+    @include u-square(2);
+    margin-right: units(2);
+    @include at-media("desktop") {
+      @include u-square(2);
+    }
+  }
+
+  .next-opportunity__need__need-label {
+    font-size: size("lang", 6);
+    font-weight: $theme-font-weight-semibold;
+    margin-right: units(4);
+    @include at-media("desktop") {
+      font-size: size("heading", 7);
+    }
+  }
+}
+
+
 
 
 // Footnotes

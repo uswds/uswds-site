@@ -68,10 +68,8 @@ for more collaboration and coordination to help agencies navigate and benefit fr
 
 We see opportunities for USWDS to work with other government transformation efforts with the following opportunities.
 
-{% include next/next-opportunity-matrix.html opportunities=page.collaboration_opportunities %}
-
-
 </div>
+      {% include next/next-opportunities-list.html opportunities=page.collaboration_opportunities %}
     </div>
   </div>
 </section>

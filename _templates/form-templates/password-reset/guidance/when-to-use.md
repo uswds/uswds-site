@@ -1,0 +1,1 @@
+- **Any time your site requires passwords for sign-in.** To offer a way to easily reset a password any time users are able to sign in to your site.

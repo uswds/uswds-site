@@ -1,0 +1,3 @@
+- **Simple tables can have up to two rows of headers.** Each header cell should have `scope="col"` or `scope="row"`.
+- **Complex tables have more than two levels of headers.** Each header should have a unique `id` and each data cell should have a `headers` attribute with each related header cell’s `id` listed.
+- **Add title and attribution in a caption.** When adding a title, attribution, or a last-updated date to a table, include it in the `<caption>` tag inside of the `<table>` element.

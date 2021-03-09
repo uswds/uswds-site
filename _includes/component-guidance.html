@@ -1,0 +1,94 @@
+{% assign componentName = page.title | downcase %}
+{% assign componentKey = componentName | slugify %}
+{% assign settingsKey = componentKey %}
+
+{% assign guidancePath = page.guidancePath | default: "guidance" %}
+
+{% assign guidanceFormat = "{:.usa-content-list}" %}
+{% assign guidanceNullLength = guidanceFormat.size | plus: 1 %}
+
+{%- capture about -%}
+{% if page.component.about %}
+{{ guidanceFormat }}
+{% include_relative {{guidancePath}}/about.md -%}
+{% endif %}
+{%- endcapture -%}
+{%- capture when_to_use -%}
+{{ guidanceFormat }}
+{% include_relative {{guidancePath}}/when-to-use.md -%}
+{%- endcapture -%}
+{%- capture when_to_consider_something_else -%}
+{{ guidanceFormat }}
+{% include_relative {{guidancePath}}/when-to-consider-something-else.md -%}
+{%- endcapture -%}
+{%- capture usability -%}
+{{ guidanceFormat }}
+{% include_relative {{guidancePath}}/usability.md -%}
+{%- endcapture -%}
+{%- capture accessibility -%}
+{{ guidanceFormat }}
+{% include_relative {{guidancePath}}/accessibility.md -%}
+{%- endcapture -%}
+{%- capture implementation -%}
+{{ guidanceFormat }}
+{% include_relative {{guidancePath}}/implementation.md -%}
+{%- endcapture -%}
+{%- capture references -%}
+{% if page.component.references %}
+{{ guidanceFormat }}
+{% include_relative {{guidancePath}}/references.md -%}
+{% endif %}
+{%- endcapture -%}
+
+<h2 id="{{ componentKey }}-guidance" class="site-component-section-title">Guidance</h2>
+<div class="site-component-usage">
+  {% if about.size > guidanceNullLength %}
+  <h3>About</h3>
+  {{ about | markdownify }}
+  {% endif %}
+  {% if when_to_use.size > guidanceNullLength %}
+  <h3>When to use the {{ componentName }} {{ page.type }}</h3>
+  {{ when_to_use | markdownify }}
+  {% endif %}
+  {% if when_to_consider_something_else.size > guidanceNullLength %}
+  <h3>When to consider something else</h3>
+  {{ when_to_consider_something_else | markdownify }}
+  {% endif %}
+  {% if usability.size > guidanceNullLength %}
+  <h3>Usability guidance</h3>
+  {{ usability | markdownify }}
+  {% endif %}
+  {% if accessibility.size > guidanceNullLength %}
+  <h3 class="usa-heading">Accessibility</h3>
+  {{ accessibility | markdownify }}
+  {% endif %}
+  {% if implementation.size > guidanceNullLength %}
+  <h3 class="usa-heading">Using the {{ componentName }} {{ page.type }}</h3>
+  {{ implementation | markdownify }}
+  {% endif %}
+  {% if page.category == "Components" %}
+  <h4 id="component-settings">{{ componentName | capitalize }} settings</h4>
+  {% assign settings = site.data.settings.components[settingsKey] %}
+  {% include settings-table-simple.html
+    settings=settings.contents
+  %}
+  <h4 id="component-variants">{{ page.title }} variants</h4>
+  {% include settings-table-flex.html
+    content=page.variants
+    cols="flex-1, flex-1"
+    section="variants"
+  %}
+  {% endif %}
+  {% for item in page.guidance %}
+  <h3 class="usa-heading">{{ item.heading }}</h3>
+  {%- capture thisText -%}
+  {{ guidanceFormat }}
+  {% include_relative {{item.path}} -%}
+  {% endcapture %}
+  {{ thisText | markdownify }}
+  {% endfor %}
+  {% if references.size > guidanceNullLength %}
+  <h3>References</h3>
+  {{ references | markdownify }}
+  {% endif %}
+</div>

@@ -1,0 +1,4 @@
+- **Critical information.** Don’t hide information necessary for completing a task behind an tooltip interaction.
+- **Lengthy descriptions.** Tooltips are microcopy, and should be brief. Don't use a tooltip if you need a lot of text.
+- **Redundant content.** Don’t use a tooltip when its content is repetitive or if usability is obvious.
+- **Sufficient space.** If content can fit outside a tooltip, don't use a tooltip.

@@ -1,0 +1,7 @@
+- **Make the input at least 27 characters wide.** Allow the search component to be as wide as possible, but a minimum of 27 characters wide. This allows users to enter multiple search terms and still be able to see all of them. The more users can see their search terms, the easier it is to review, verify, and submit their search query. Romance languages are about 20% longer than English, so account for text swell on multilingual websites.
+- **The magnifying glass icon is effective.** The magnifying glass has been shown to be almost universally recognized by users as an indicator of search, and doesn’t need to be visually paired with the word "Search" as long as it remains for screen readers.
+- **Search terms should persist into search results.** When displaying the search results, preload the search bar content with the original search terms.
+- **Use a full search box on the home page.** On a site’s home page the search function should appear as a search box instead of a link so users can locate it easily.
+- **Don’t offer advanced search as the default.** The majority of people will do a simple search with one or two search terms. If advanced search is offered, it increases the likelihood of mistakes.
+- **Use a label even if it’s visually hidden.** The form field should include a label for screen reader users.
+- **The search button should be a submit button.** This reduces the number of keystrokes required to use the form.

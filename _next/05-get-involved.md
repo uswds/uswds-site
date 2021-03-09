@@ -49,7 +49,7 @@ chapter: true
 
 - Use the [design system’s principles]({{ site.baseurl }}/design-principles/) to bring human-centered design into your work and make data-informed decisions
 
-- Review the [design system’s UX guidelines]({{ site.baseurl }}/about/product-values/) around content and its organization
+- Review the [design system’s UX guidelines]({{ site.baseurl }}/maturity-model/#level-2-follow-user-experience-guidance) around content and its organization
 
 - Become familiar with the [components]({{ site.baseurl }}/components/) and proactively think about how you can use them to highlight and present content on your site
 
@@ -104,22 +104,41 @@ We also look forward to collaborating with our digital services colleagues in TT
 We thank everyone who shared their time, feedback, and ideas throughout this research effort and invite you — our collaborators and colleagues — to join us in further exploring these big-picture questions by joining our community and attending our events.
 
 ### What comes next?
-
-<!-- custom icon list here -->
-
-#### Attend a workshop
-
-The first workshop for federal employees will be in Spring 2021, and we hope to hold ad hoc workshops in the future as well.
-
-#### Join a monthly call
-
-We also hold regular monthly calls that are open to everyone on the third Thursday at 2:30 p.m. ET. Register at [digital.gov/events/](https://digital.gov/events).
-
-#### Become part of the community
-
-[Stay up-to-date](https://touchpoints.app.cloud.gov/touchpoints/8338c61b/submit) with the latest updates and events.
-
 </div>
+  </div>
+  <div class="grid-row">
+    <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0">
+      <div class="grid-row margin-y-4">
+        <div class="flex-auto">
+          <img class="usa-icon usa-icon--size-7 margin-right-3" src="{{ site.baseurl }}/img/next/group.svg" alt="" role="presentation">
+        </div>
+        <div class="flex-fill">
+          <h4 class="text-black margin-top-0">Attend a workshop</h4>
+          <p>The first workshop for federal employees will be in Spring 2021, and we hope to hold ad hoc workshops in the future as well.</p>
+        </div>
+      </div>
+
+      <div class="grid-row margin-y-4">
+        <div class="flex-auto">
+          <img class="usa-icon usa-icon--size-7 margin-right-3" src="{{ site.baseurl }}/img/next/calendar.svg" alt="" role="presentation">
+        </div>
+        <div class="flex-fill">
+          <h4 class="text-black margin-top-0">Join a monthly call</h4>
+          <p>We also hold regular monthly calls that are open to everyone on the third Thursday at 2:30 p.m. ET. Register at <a href="https://digital.gov/events">digital.gov/events/</a></p>
+        </div>
+      </div>
+
+      <div class="grid-row margin-y-4">
+        <div class="flex-auto">
+          <img class="usa-icon usa-icon--size-7 margin-right-3" src="{{ site.baseurl }}/img/next/forum.svg" alt="" role="presentation">
+        </div>
+        <div class="flex-fill">
+          <h4 class="text-black margin-top-0">Become part of the community</h4>
+          <p><a href="https://touchpoints.app.cloud.gov/touchpoints/8338c61b/submit">Stay up-to-date</a> with the latest updates and events.</p>
+        </div>
+      </div>
+      
     </div>
   </div>
+</div>
 </section>

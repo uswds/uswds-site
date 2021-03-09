@@ -77,19 +77,10 @@ To accomplish this, we recommend increasing outreach and targeted communications
     </div>
   </div>
 </section>
-<section class="next-section">
+<section class="next-section margin-top-neg-3">
   <div class="grid-container">
     <div class="grid-row">
-      <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 next-section-prose">
-        <aside markdown="1">
-
-#### Building momentum
-In November 2020, the USWDS team presented a webinar hosted by the CIO Council’s 508 subcommittee to share the purpose, value, and how-to’s of the design system. After the webinar, the 326 attendees (from both in and outside of the federal government) were asked if they would seek additional information about the design system after having attended the event — 69 percent of them reported they strongly agreed or agreed. Hosting more webinars or events in connection with others working in digital fields across government will help to bolster engagement around the design system. (2020 Evaluation Summary, Section 508 Best Practices Webinar)
-
-</aside>
-</div>
-
-<div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 next-section-prose" markdown="1">
+      <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 margin-top-neg-3 next-section-prose" markdown="1">
 ### Engage existing customers
 
 We also recommend expanding engagement with existing customers and empowering them to grow with the design system over time with these opportunities.
@@ -97,6 +88,20 @@ We also recommend expanding engagement with existing customers and empowering th
 </div>
 
 {% include next/next-opportunities-list.html opportunities=page.engagement_opportunities %}
+  </div>
+  </div>
+</section>
+<section class="next-section margin-top-neg-3">
+  <div class="grid-container">
+    <div class="grid-row">
+      <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 margin-top-neg-3 next-section-prose">
+<aside markdown="1">
+
+### Building momentum
+In November 2020, the USWDS team presented a webinar hosted by the CIO Council’s 508 subcommittee to share the purpose, value, and how-to’s of the design system. After the webinar, the 326 attendees (from both in and outside of the federal government) were asked if they would seek additional information about the design system after having attended the event — 69 percent of them reported they strongly agreed or agreed. Hosting more webinars or events in connection with others working in digital fields across government will help to bolster engagement around the design system. (2020 Evaluation Summary, Section 508 Best Practices Webinar)
+
+</aside>
+      </div>
     </div>
   </div>
 </section>

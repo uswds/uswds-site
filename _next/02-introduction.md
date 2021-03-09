@@ -6,7 +6,7 @@ description: "In 2020, the USWDS team conducted research across dozens of federa
 meta:
   og:image: /img/next/og-next-report.png
 
-permalink: /next/intro/
+permalink: /next/introduction/
 slug: "intro"
 
 chapter: true

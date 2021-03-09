@@ -3,7 +3,7 @@ category: Components
 component:
   status: ready
 layout: styleguide
-lead: A good print style sheet enhances the user experience and addresses many issues people face when printing from the web.
+lead: A good print stylesheet enhances the user experience and addresses many issues people face when printing from the web.
 permalink: /components/print-styles/
 redirect_from:
 subnav:
@@ -23,7 +23,7 @@ variants:
 ---
 
 {:.site-note}
-**Note:** These print styles are mostly guidance for best practices, along with boilerplate print.css code. The specific print layout examples are intended to demonstrate ways to implement this in your own print style sheet.
+**Note:** These print styles are mostly guidance for best practices, along with boilerplate `print.css` code. The specific print layout examples are intended to demonstrate ways to implement this in your own print stylesheet.
 
 {:.site-component-section-title}
 ## General guidance
@@ -46,7 +46,7 @@ variants:
 - Limit the use of javascript in hrefs when possible.
 - Using the javascript pseudo protocol in hrefs eliminates the effectiveness of the CSS to extract the URL and display it for print.
 
-### Test your print style sheet
+### Test your print stylesheet
 
 {:.usa-content-list}
 - See how your site actually prints out on a printer.
@@ -59,7 +59,7 @@ variants:
 {:.usa-content-list}
 - **Use the CSS at-rule @media print.** Print styles encapsulated in the `@media print {}` rule are not rendered to the screen and are only used in printed versions of the page.
 - **Reset the styles of your site for printing.** These print styles provide a clean reset of all the basic styles of your site. This includes making all text black and all background colors transparent, which is a core recommendation for making your site printer-friendly.
-- **Place your print styles wherever is convenient.** Your print styles can be included as a separate print.css file or in any existing css file. Note: USWDS includes the boilerplate print style sheet as a base .scss file that gets compiled into uswds.css.
+- **Place your print styles wherever is convenient.** Your print styles can be included as a separate print.css file or in any existing css file. Note: USWDS includes the boilerplate print stylesheet as a base .scss file that gets compiled into uswds.css.
 - **Append URLs to link text.** Making your site printer-friendly includes revealing the hidden URL to the user on the printed page. This print styles CSS automatically extracts the URL from the `href` attribute and appends it to the link text inside parentheses. Because this is inside the `@media print {}` rule, it only appears in printed versions of the page.
 
 {:.site-component-section-title}

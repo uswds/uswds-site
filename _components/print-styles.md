@@ -1,5 +1,5 @@
 ---
-permalink: /components/print-styles/
+permalink: /components/print-styleszz/
 layout: styleguide
 type: component
 title: Print styles

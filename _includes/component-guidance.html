@@ -1,4 +1,4 @@
-{% assign componentName = page.component.name | default: page.title %}
+{% assign componentName = page.component.name | default: page.title | downcase %}
 {% assign componentKey = componentName | slugify %}
 {% assign settingsKey = componentKey %}
 

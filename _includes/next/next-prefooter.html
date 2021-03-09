@@ -67,29 +67,29 @@
           March 2021
         </p>
         <li class="text-semibold font-sans-lg tablet:margin-y-5 padding-y-2">
-          <a href="{{ site.baseurl }}/files/next/Transforming-the-American-digital-experience.pdf" class="usa-button usa-button--next margin-x-o">Download the report</a>
+          <a href="{{ site.baseurl }}/files/next/Transforming-the-American-digital-experience.pdf" title="Transforming the American digital experience (report) — Downloadable PDF" class="usa-button usa-button--next margin-x-o">Download the report</a>
         </li>
       </ul>
 
       <ul class="grid-col-12 desktop:grid-col-4 margin-bottom-2 desktop:padding-left-3 add-list-reset">
         <li class="text-semibold font-sans-lg margin-bottom-2">
-          <a class="usa-link" href="{{ site.baseurl }}/next">
+          <a class="usa-link" href="{{ site.baseurl }}/next" title="Transforming the American digital experience | Executive Summary">
             Executive summary
           </a>
         </li>
         <li class="text-semibold font-sans-lg margin-bottom-2">
-          <a class="usa-link" href="{{ site.baseurl }}/next/intro">
+          <a class="usa-link" href="{{ site.baseurl }}/next/intro" title="Transforming the American digital experience | Introduction">
             Introduction
           </a>
         </li>
         <li class="text-semibold font-sans-lg margin-bottom-2">
-          <a class="usa-link" href="{{ site.baseurl }}/next/findings">
+          <a class="usa-link" href="{{ site.baseurl }}/next/findings" title="Transforming the American digital experience | Findings">
             Findings
           </a>
         </li>
         {% for report_page in findings_pages %}
           <li class="font-sans-sm margin-bottom-105">
-            <a class="usa-link" href="{{ site.baseurl }}{{ report_page.url }}">
+            <a class="usa-link" href="{{ site.baseurl }}{{ report_page.url }}" title="Transforming the American digital experience | {{ report_page.title }}">
               {{ report_page.title }}
             </a>
           </li>
@@ -98,19 +98,19 @@
 
       <ul class="grid-col-12 desktop:grid-col-4 margin-bottom-2 desktop:padding-left-2 add-list-reset">
         <li class="text-semibold font-sans-lg margin-bottom-2">
-          <a class="usa-link text-semibold font-sans-lg margin-bottom-2" href="{{ site.baseurl }}/next/whats-next">
-            What’s Next
+          <a class="usa-link" href="{{ site.baseurl }}/next/whats-next" title="Transforming the American digital experience | What’s next">
+            What’s next
           </a>
         </li>
         {% for report_page in opportunity_pages %}
-        <li class="font-sans-sm margin-bottom-105">
-          <a class="usa-link font-sans-sm margin-bottom-105" href="{{ site.baseurl }}{{ report_page.url }}">
-            {{ report_page.title }}
-          </a>
-        </li>
+          <li class="font-sans-sm margin-bottom-105">
+            <a class="usa-link" href="{{ site.baseurl }}{{ report_page.url }}" title="Transforming the American digital experience | {{ report_page.title }}">
+              {{ report_page.title }}
+            </a>
+          </li>
         {% endfor %}
          <li class="text-semibold font-sans-lg margin-top-3 margin-bottom-2">
-          <a class="usa-link" href="{{ site.baseurl }}/next/get-involved">
+          <a class="usa-link" href="{{ site.baseurl }}/next/get-involved" title="Transforming the American digital experience | Get involved">
             Get involved
           </a>
         </li>

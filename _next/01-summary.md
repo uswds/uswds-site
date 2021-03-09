@@ -27,12 +27,12 @@ summary_sections:
 
       But we need more. There are still gaps in how the design system can better meet agency needs, so they in turn can better meet the needs of the public. 
 
-      Through this research, we looked to agency teams to help us define what digital transformation looks like, both in the near-term and in the future. 
+      Through this research, [we looked to agency teams to help us define what digital transformation looks like](./intro), both in the near-term and in the future. 
 
   - heading: What we learned
     title: Findings
     description: |-
-      Though agencies start with different goals and capabilities, we discovered they follow a common journey with similar needs when it comes to successfully adopting, using, and maintaining the design system. 
+      Though agencies start with different goals and capabilities, we discovered [they follow a common journey with similar needs](./findings) when it comes to successfully adopting, using, and maintaining the design system. 
 
   - heading: Our future vision
     title: What’s next
@@ -44,7 +44,7 @@ summary_sections:
     description: |-
       Let’s transform the way we design and deliver digital government with and for the people.
 
-      Many of the ideas in this report are big-picture thinking, requiring time, collaboration, and strategies to come to fruition. But right now, you can begin by understanding the value and benefits of using the design system to deliver better digital services.
+      Many of the ideas in this report are big-picture thinking, requiring time, collaboration, and strategies to come to fruition. But right now, [you can begin by understanding the value and benefits of using the design system](./get-involved/) to deliver better digital services.
 
       Use the conversation starters throughout the report to prompt discussions with your managers and team members.
 
@@ -56,10 +56,9 @@ summary_sections:
 
       <a href="https://touchpoints.app.cloud.gov/touchpoints/8338c61b/submit" class="usa-button usa-button--outline usa-button--next">Stay in touch</a>
 
-      
 ---
 
-<header class="next-hero">
+<header class="next-hero usa-dark-background">
   <div class="grid-container">
     <div class="grid-row flex-align-center margin-x-neg-2 tablet:margin-x-auto margin-y-2 tablet:margin-y-4 desktop:margin-y-6">
       <div class="grid-col-12 tablet:grid-col-7 desktop:grid-col-6 next-hero__content padding-x-2 tablet:padding-x-0">
@@ -76,13 +75,13 @@ summary_sections:
 </header>
 
 <!-- maybe componentize this -- NOTE: it is different from the one on next-content layout -->
-<div class="next-internal-nav">
+<div class="next-internal-nav usa-dark-background">
   <div class="grid-container">
     <ul id="internal-nav" class="next-internal-nav__list">
       {% for item in site.next %}
       {% if item.chapter == true %}
         <li class="next-internal-nav__item">
-          <a href="{{ item.url }}" class="next-internal-nav__link">{{ item.nav_title }}</a>
+          <a href="{{ site.baseurl }}{{ item.url }}" class="next-internal-nav__link {% if item.title == page.title or item.title == page.parent %}current{% endif %}">{{ item.nav_title }}</a>
         </li>
       {% endif %}
       {% endfor %}
@@ -147,41 +146,41 @@ summary_sections:
 
               <div class="grid-row tablet:margin-x-neg-205">
                 <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205">
-                  {% include next/next-finding-item.html heading="Understand the value and benefits" text="Agencies need to be able to quickly discern the design system’s benefits and how it aligns with their goals for delivering better digital services." icon="plus"%}
+                  {% include next/next-finding-item.html link="/next/findings/benefits/" heading="Understand the value and benefits" text="Agencies need to be able to quickly discern the design system’s benefits and how it aligns with their goals for delivering better digital services." icon="plus"%}
 
-                  {% include next/next-finding-item.html heading="Know how to get started" text="No matter where an agency starts from, it needs to be clear and easy for them to figure out their first steps and how to create a sustainable path forward in the long-run." icon="arrow"%}
+                  {% include next/next-finding-item.html link="/next/findings/get-started/" heading="Know how to get started" text="No matter where an agency starts from, it needs to be clear and easy for them to figure out their first steps and how to create a sustainable path forward in the long-run." icon="arrow"%}
 
-                  {% include next/next-finding-item.html heading="Find the right team and resources" text="Agencies have several options to assemble a cross-functional team to implement the design system and they’re looking for more support in identifying needed skills and assembling the right people." icon="check"%}
+                  {% include next/next-finding-item.html link="/next/findings/team/" heading="Find the right team and resources" text="Agencies have several options to assemble a cross-functional team to implement the design system and they’re looking for more support in identifying needed skills and assembling the right people." icon="check"%}
 
                 </div>
                 <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205">
-                  {% include next/next-finding-item.html heading="Feel engaged with the community" text="It’s a collaborative process to build a design system, so it’s essential for agencies to feel like they have access to a support network and a sense of ownership to contribute back to it." icon="triangles"%}
+                  {% include next/next-finding-item.html link="/next/findings/community/" heading="Feel engaged with the community" text="It’s a collaborative process to build a design system, so it’s essential for agencies to feel like they have access to a support network and a sense of ownership to contribute back to it." icon="triangles"%}
 
-                  {% include next/next-finding-item.html heading="Be able to iteratively improve digital services" text="Adopting a design system is an ongoing process of design, development, and making iterative improvements and upgrades over time, which requires continued resources and support." icon="steps"%}
+                  {% include next/next-finding-item.html link="/next/findings/improve/" heading="Be able to iteratively improve digital services" text="Adopting a design system is an ongoing process of design, development, and making iterative improvements and upgrades over time, which requires continued resources and support." icon="steps"%}
                 </div>
               </div>
               {% elsif forloop.index == 4 %}
 
 
-              <h3>Our Near Star vision:</h3>
+              <h3>Our <a href="{{ site.baseurl }}/next/looking-ahead/">Near Star</a> vision:</h3>
 
               <p class="measure-3 next-lead">All agency teams have what they need to more easily adopt and effectively use the design system. To do that, we’ll focus on the following opportunity areas:</p>
 
               <div class="grid-row tablet:margin-x-neg-205">
                 <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
-                  {% include next/next-spot-item.html text="Improve strategic communications and engagement with key audiences" icon="mail" %}
+                  {% include next/next-spot-item.html text="[Improve strategic communications](./looking-ahead/engagement/) with key audiences" icon="mail" %}
                 </div>
                 <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
-                  {% include next/next-spot-item.html text="Provide more robust guidance and support to get started with the design system" icon="directions" %}
+                  {% include next/next-spot-item.html text="Provide more [robust guidance and support](./looking-ahead/guidance/) to get started with the design system" icon="directions" %}
                 </div>
                 <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
-                  {% include next/next-spot-item.html text="Better leverage related efforts within TTS and the broader government digital services community" icon="groups" %}
+                  {% include next/next-spot-item.html text="Better [leverage related efforts within TTS](./looking-ahead/collaboration/) and the broader government digital services community" icon="groups" %}
                 </div>
               </div>
 
               <p class="next-highlight-text measure-1"><strong>Accomplishing our Near Star vision will move us closer to the North Star we’re aiming for.</strong></p>
 
-              <h3>Our North Star vision:</h3>
+              <h3>Our <a href="{{ site.baseurl }}/next/looking-ahead/vision/">North Star</a> vision:</h3>
 
               <p class="measure-3 next-lead">Empowered digital agency teams share solutions and use effective human-centered design practices to create greater continuity, improved usability, and increased access for key digital services.</p>
 

@@ -2,5 +2,5 @@
   <svg class="usa-icon usa-icon--size-3" aria-hidden="true" focusable="false" role="img">
     <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ include.icon }}"></use>
   </svg>
-  <p class="margin-top-0">{{ include.text }}</p>
+  <p class="margin-top-0">{{ include.text | markdownify | remove: '<p>' | remove: '</p>' }}</p>
 </div>

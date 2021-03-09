@@ -684,6 +684,7 @@ html {
 .next-finding__heading { 
   font-family: family('lang') !important;
   font-size: size('lang', 8) !important;
+  line-height: line-height("lang", 2);
   margin: 0 !important;
 }
 
@@ -692,7 +693,7 @@ html {
 }
 
 .next-finding__text {
-  margin-top: 0;
+  margin-top: units(1);
 }
 
 // Opportunities List

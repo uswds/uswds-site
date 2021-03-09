@@ -82,15 +82,15 @@ design system.
         <h3 class="margin-top-0">Agency teams want to…</h3>
         <div class="grid-row tablet:margin-x-neg-205">
           <div class="grid-col-12 tablet:padding-x-205">
-            {% include next/next-finding-item.html heading="Understand the value and benefits" text="Agencies need to be able to quickly discern the design system’s benefits and how it aligns with their goals for delivering better digital services." icon="plus"%}
+            {% include next/next-finding-item.html link="/next/findings/benefits/" heading="Understand the value and benefits" text="Agencies need to be able to quickly discern the design system’s benefits and how it aligns with their goals for delivering better digital services." icon="plus"%}
 
-            {% include next/next-finding-item.html heading="Know how to get started" text="No matter where an agency starts from, it needs to be clear and easy for them to figure out their first steps and how to create a sustainable path forward in the long-run." icon="arrow"%}
+            {% include next/next-finding-item.html link="/next/findings/get-started/" heading="Know how to get started" text="No matter where an agency starts from, it needs to be clear and easy for them to figure out their first steps and how to create a sustainable path forward in the long-run." icon="arrow"%}
 
-            {% include next/next-finding-item.html heading="Find the right team and resources" text="Agencies have several options to assemble a cross-functional team to implement the design system and they’re looking for more support in identifying needed skills and assembling the right people." icon="check"%}
+            {% include next/next-finding-item.html link="/next/findings/team/" heading="Find the right team and resources" text="Agencies have several options to assemble a cross-functional team to implement the design system and they’re looking for more support in identifying needed skills and assembling the right people." icon="check"%}
 
-            {% include next/next-finding-item.html heading="Feel engaged with the community" text="It’s a collaborative process to build a design system, so it’s essential for agencies to feel like they have access to a support network and a sense of ownership to contribute back to it." icon="triangles"%}
+            {% include next/next-finding-item.html link="/next/findings/community/" heading="Feel engaged with the community" text="It’s a collaborative process to build a design system, so it’s essential for agencies to feel like they have access to a support network and a sense of ownership to contribute back to it." icon="triangles"%}
 
-            {% include next/next-finding-item.html heading="Be able to iteratively improve digital services" text="Adopting a design system is an ongoing process of design, development, and making iterative improvements and upgrades over time, which requires continued resources and support." icon="steps"%}
+            {% include next/next-finding-item.html link="/next/findings/improve/" heading="Be able to iteratively improve digital services" text="Adopting a design system is an ongoing process of design, development, and making iterative improvements and upgrades over time, which requires continued resources and support." icon="steps"%}
 
           </div>
         </div>

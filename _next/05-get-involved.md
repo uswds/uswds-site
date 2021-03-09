@@ -29,17 +29,17 @@ chapter: true
 
 - Use the conversation starters throughout this report to prompt discussions with your managers and team members
 
-- Join the USWDS community and get involved
+- Join the [USWDS community](https://chat.18f.gov/) and get involved
 
 ### Thought-leaders can: 
 
 - Be vocal advocates of USWDS and the benefits it provides
 
-- Share critical, candid feedback with us to help make the design system better
+- [Share critical, candid feedback with us](mailto:uswds@support.digitalgov.gov) to help make the design system better
 
 ### Policy analysts can: 
 
-- Better define what 21st Century IDEA compliance is
+- Better define what [21st Century IDEA compliance](https://digital.gov/resources/21st-century-integrated-digital-experience-act/) is
 
 - Think about how shared digital services can be better used throughout government and how policy could support that effort
 
@@ -47,13 +47,13 @@ chapter: true
 
 ### Content managers can: 
 
-- Use the design system’s principles to bring human-centered design into your work and make data-informed decisions
+- Use the [design system’s principles]({{ site.baseurl }}/design-principles/) to bring human-centered design into your work and make data-informed decisions
 
-- Review the design system’s UX guidelines around content and its organization
+- Review the [design system’s UX guidelines]({{ site.baseurl }}/about/product-values/) around content and its organization
 
-- Become familiar with the components and proactively think about how you can use them to highlight and present content on your site
+- Become familiar with the [components]({{ site.baseurl }}/components/) and proactively think about how you can use them to highlight and present content on your site
 
-- Reach out to your Federal Web Council representative to learn more about your agency’s digital strategy and modernization plans
+- Reach out to your [Federal Web Council representative](https://digital.gov/resources/federal-web-council/) to learn more about your agency’s digital strategy and modernization plans
 
 </div>
 <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 desktop:grid-col-6 desktop:padding-left-205" markdown="1">
@@ -61,25 +61,25 @@ chapter: true
 
 ### Engineers can: 
 
-- Review design system documentation to learn about the design system’s architecture and available components
+- Review [design system documentation]({{ site.baseurl }}/documentation/developers/) to learn about the design system’s architecture and available components
 
-- Learn about customization, theming, utilities, and tokens to adapt the design system to your agency’s brand
+- Learn about [customization, theming,]({{ site.baseurl }}/documentation/settings/) [utilities]({{ site.baseurl }}/utilities/), and [tokens]({{ site.baseurl }}/design-tokens/) to adapt the design system to your agency’s brand
 
-- Review existing websites that use USWDS (such as those on the [designsystem.digital.gov Showcase](https://designsystem.digital.gov/getting-started/showcase/all/)) to see how you could better integrate USWDS principles and components
+- Review existing websites that use USWDS (such as those on the [designsystem.digital.gov Showcase]({{ site.baseurl }}/getting-started/showcase/all/)) to see how you could better integrate USWDS principles and components
 
 ### Designers can: 
 
-- Download the design assets and work to incorporate them into your regular design process
+- [Download the design assets]({{ site.baseurl }}/documentation/designers/) and work to incorporate them into your regular design process
 
-- Investigate how the design system can be customized to meet your agency’s brand needs
+- Investigate [how the design system can be customized]({{ site.baseurl }}/documentation/settings/) to meet your agency’s brand needs
 
-- Review existing websites that use USWDS (such as the [design system Showcase](https://designsystem.digital.gov/getting-started/showcase/all/)) to see how you could better integrate the design system principles and components
+- Review existing websites that use USWDS (such as the [design system Showcase]({{ site.baseurl }}/getting-started/showcase/all/)) to see how you could better integrate the design system principles and components
 
 ### Leadership can: 
 
 - Talk with other agency leadership to learn how they’ve implemented the design system
 
-- Develop a plan for how your agency could adopt it, including aligning with modernization plan priorities, developing timelines, and budgeting
+- [Develop a plan for how your agency could adopt it]({{ site.baseurl }}/maturity-model/), including aligning with modernization plan priorities, developing timelines, and budgeting
 
 - Make sure websites have ongoing funding and resource support
 
@@ -97,7 +97,7 @@ chapter: true
     <div class="grid-row">
       <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto margin-top-4 desktop:margin-x-0 next-section-prose" markdown="1">
 
-To improve USWDS as a product, we’ll begin refining and implementing the next steps outlined in this report, incorporating additional research and input from the USWDS community as we go. Agencies interested in participating in this process — or simply in learning more about the design system — can join us in our public Slack channel (#uswds-public), for our monthly calls, and in the digital.gov communities of practice.
+To improve USWDS as a product, we’ll begin refining and implementing the next steps outlined in this report, incorporating additional research and input from the USWDS community as we go. Agencies interested in participating in this process — or simply in learning more about the design system — can join us in our [public Slack channel (#uswds-public)](https://chat.18f.gov/), for [our monthly calls](https://digital.gov/events/), and in the [digital.gov communities of practice](https://digital.gov/communities/).
 
 We also look forward to collaborating with our digital services colleagues in TTS and beyond to explore new ways of providing shared value for government and articulate a more defined path toward our North Star vision of empowered digital teams and trusted experiences.
 

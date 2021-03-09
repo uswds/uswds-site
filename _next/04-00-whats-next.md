@@ -2,8 +2,13 @@
 title: What’s next
 subhead: Looking ahead
 nav_title: What’s next
+description: "In our short-term vision, agency teams will have what they need to more easily adopt and effectively use the design system."
+meta:
+  og:image: /img/next/og-next-vision.png
+
 permalink: /next/whats-next/
 slug: "whats-next"
+
 chapter: true
 hero_color: "next-gray-dark"
 ---

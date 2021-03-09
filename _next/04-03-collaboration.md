@@ -1,6 +1,9 @@
 ---
 title: Better leverage related efforts within TTS and the broader government digital services community
 subhead: Opportunity 03
+description: "How might we build on existing collaboration and coordination to help agencies navigate and benefit from the multitude of shared services and collective knowledge?"
+meta:
+  og:image: /img/next/og-next-opportunities.png
 
 permalink: /next/whats-next/collaboration/
 slug: "opportunity"

@@ -1,6 +1,9 @@
 ---
 title: Provide more robust guidance and support around getting started
 subhead: Opportunity 02
+description: "How might we make it easier for agencies to find the right information and guidance to start implementing the design system, regardless of where they’re starting from or their skill level?"
+meta:
+  og:image: /img/next/og-next-opportunities.png
 
 permalink: /next/whats-next/guidance/
 slug: "opportunity"

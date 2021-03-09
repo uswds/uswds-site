@@ -2,11 +2,16 @@
 title: Introduction
 subhead: Let’s transform the way we design and deliver digital government with and for the people.
 nav_title: Intro
-
+description: "In September 2020, the USWDS team brought together researchers, designers, engineers, and policymakers to conduct research across dozens of federal agencies to help support emergency response efforts related to the COVID-19 pandemic."
+meta:
+  og:image: /img/next/og-next-report.png
+  
 permalink: /next/intro/
 slug: "intro"
 
 chapter: true
+
+
 
 bullet_list_focus: 
   - |-

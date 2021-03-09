@@ -1,6 +1,9 @@
 ---
 title: "North Star vision: thinking beyond agency adoption"
 subhead: Vision statement
+description: "In our long-term vision, a high level of design system maturity across the federal government will help us consistently provide trusted, exceptional digital experiences for the public."
+meta:
+  og:image: /img/next/og-next-vision.png
 
 permalink: /next/whats-next/vision/
 slug: "opportunity"
@@ -45,7 +48,7 @@ Using shared services could be less expensive and more effective, while also ena
 </div>
 </div>
 <div class="grid-row">
-<div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 next-section-prose" markdown="1">
+<div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 margin-top-5 next-section-prose" markdown="1">
 
 **What if** key content and functionality of government websites was consolidated into fewer public services websites, like usa.gov and recreation.gov?
 

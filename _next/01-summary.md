@@ -1,11 +1,18 @@
 ---
 layout: next
-permalink: /next/
 title: Transforming the American digital experience
 nav_title: Summary
+description: "Let’s transform the way we design and deliver digital government with and for the people."
+meta:
+  og:image: /img/next/og-next-report.png
+
+permalink: /next/
 slug: summary
+
 subhead: A report about what’s next for the U.S. Web Design System
+
 chapter: true 
+
 summary_sections:
   - heading: Overview
     description: |-

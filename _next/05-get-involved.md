@@ -1,7 +1,10 @@
 ---
 title: Get involved
 subhead: Here are just a few ideas to get started. 
-# subhead: Take action
+description: "Improving how the public interacts with government digital services will be a collective effort and won’t happen overnight."
+meta:
+  og:image: /img/next/og-next-report.png
+
 nav_title: Get involved
 permalink: /next/get-involved/
 slug: "get-involved"

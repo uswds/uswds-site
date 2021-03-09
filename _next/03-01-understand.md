@@ -1,6 +1,9 @@
 ---
 title: Understand the value and&nbsp;benefits
 subhead: Agency teams want to...
+description: "Agencies need to be able to quickly discern the design system’s benefits and how it aligns with their goals for delivering better digital services."
+meta:
+  og:image: /img/next/og-next-findings-understand.png
 
 permalink: /next/findings/understand/
 slug: "understand"

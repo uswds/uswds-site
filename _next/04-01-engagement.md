@@ -1,6 +1,9 @@
 ---
 title: Strategic communications and engagement with key audiences
 subhead: Opportunity 01
+description: "How might we meet agency teams where they are, making sure the design system is easily understood by a variety of audiences?"
+meta:
+  og:image: /img/next/og-next-opportunities.png
 
 permalink: /next/whats-next/engagement/
 slug: "opportunity"

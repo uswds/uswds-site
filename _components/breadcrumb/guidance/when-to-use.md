@@ -1,0 +1,2 @@
+- **When orientation matters.** Breadcrumbs show where the current page is located in the website hierarchy. Use a breadcrumb when it's likely that a user will arrive at an interior page from search or from an outside link.
+- **To facilitate navigation.** Breadcrumbs make it easier to understand complex sites. Use breadcrumbs to reinforce your site's structure.

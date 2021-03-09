@@ -1,0 +1,4 @@
+- **Highlight the control when selected.** The slider control should change color to indicate it is active when a user selects it.
+- **The control must be draggable.** Users should be able to drag the slider control or select somewhere along the slider itself to change the value.
+- **Label the limits of the range.** When appropriate, label the ends of the slider with the limits of the range (for example: “0/100”, “small/large” or “less expensive/more expensive”).
+- **Don’t be too granular.** In a range slider, the relative value is more important than the specific value, so set the step attribute so it’s not too granular. By setting the step to a value of 10-20% of the total range you prevent unnecessary precision and cognitive strain in your users. For example, set `step="10"` in a total range of 100.

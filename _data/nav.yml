@@ -5,7 +5,7 @@ primary:
   - href: /components/
   - href: /design-tokens/
   - href: /utilities/
-  - href: /page-templates/
+  - href: /templates/
   - href: /about/
 
 mobile:
@@ -18,40 +18,56 @@ mobile:
     collapsible: true
   - href: /utilities/
     collapsible: true
-  - href: /page-templates/
+  - href: /templates/
     collapsible: true
   - href: /about/
     collapsible: true
 
 Components:
-  - href: /components/
+  - text: Components
+    href: /components/
   - href: /components/accordion/
   - href: /components/alert/
   - href: /components/banner/
   - href: /components/breadcrumb/
   - href: /components/button/
-  - href: /components/button-groups/
+  - href: /components/button-group/
   - href: /components/card/
+  - href: /components/character-count/
+  - href: /components/checkbox/
   - href: /components/collection/
+  - href: /components/combo-box/
   - href: /components/data-visualizations/
+  - href: /components/date-input/
+  - href: /components/date-picker/
+  - href: /components/date-range-picker/
+  - href: /components/dropdown/
+  - href: /components/file-input/
   - href: /components/footer/
-  - href: /components/form-controls/
-  - href: /components/form-templates/
+  - href: /components/form/
   - text: Grid
     href: /utilities/layout-grid/
   - href: /components/header/
   - href: /components/icons/
   - href: /components/identifier/
+  - href: /components/link/
+  - href: /components/list/
   - href: /components/process-list/
+  - href: /components/prose/
+  - href: /components/radio-buttons/
+  - href: /components/range-slider/
   - href: /components/search/
-  - href: /components/sidenav/
+  - href: /components/side-navigation/
   - href: /components/site-alert/
   - href: /components/step-indicator/
   - href: /components/summary-box/
   - href: /components/table/
   - href: /components/tag/
+  - href: /components/text-input/
+  - href: /components/time-picker/
   - href: /components/tooltip/
   - href: /components/typography/
+  - href: /components/validation/
 
 How to use USWDS:
   - href: /how-to-use-uswds/
@@ -109,12 +125,14 @@ Utilities:
   - href: /utilities/clearfix/
   - href: /utilities/list-reset/
 
-Page templates:
-  - href: /page-templates/
-  - href: /page-templates/documentation-page/
-  - href: /page-templates/landing-page/
-  - href: /page-templates/authentication-pages/
-  - href: /page-templates/404-page/
+Templates:
+  - text: Templates
+    href: /templates/
+  - href: /templates/404-page/
+  - href: /templates/documentation-page/
+  - href: /templates/landing-page/
+  - href: /templates/authentication-pages/
+  - href: /templates/form-templates/
 
 About:
   - href: /about/

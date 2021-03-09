@@ -1,0 +1,1 @@
+- **Users have accounts directly on your website.** This template is intended for agencies who have a self-hosted authentication system and need a design that’s simple, usable, and mobile-friendly.

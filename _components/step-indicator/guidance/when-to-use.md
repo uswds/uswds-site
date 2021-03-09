@@ -1,0 +1,2 @@
+- **Multiple steps and screens.** Use the step indicator when the user is working through a form or process that will span several different pages that can be organized into three or more high-level steps or chapters. This helps users understand the progression of long forms and reduces uncertainty as they complete each screen.
+- **Linear progression.** The step indicator is designed to complement standard back/next navigation in a linear sequence, not to be navigation of its own.

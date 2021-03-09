@@ -2,7 +2,7 @@
 title: Findings
 subhead: "10,000-foot view: systemic challenges to improving digital services"
 nav_title: Findings
-description: "Though agencies start with different goals and capabilities, we discovered they follow a common journey with similar needs when it comes to successfully adopting, using, and maintaining the design system."
+description: "Agencies follow a common journey with similar needs when it comes to successfully adopting, using, and maintaining the design system."
 meta:
   og:image: /img/next/og-next-report.png
 

@@ -5,7 +5,7 @@ description: "No matter where an agency starts from, it needs to be clear and ea
 meta:
   og:image: /img/next/og-next-findings-know.png
 
-permalink: /next/findings/know/
+permalink: /next/findings/get-started/
 slug: "know"
 
 navbar_color: "next-blue-dark"

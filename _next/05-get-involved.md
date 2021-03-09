@@ -1,7 +1,7 @@
 ---
 title: Get involved
 subhead: Here are just a few ideas to get started. 
-description: "Improving how the public interacts with government digital services will be a collective effort and won’t happen overnight."
+description: "Take action. Improving how the public interacts with government digital services will be a collective effort and won’t happen overnight."
 meta:
   og:image: /img/next/og-next-report.png
 

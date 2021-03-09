@@ -2,7 +2,7 @@
 {% if page.class == "home" -%}
   {% assign title = page.title %}
 {% elsif page.collection == "next" -%}
-  {% assign title = page.title | append: ' | ' | append: page.report_title | append: ' | ' | append: title %}
+  {% assign title = page.title | append: ' | What’s next for the ' | append: title %}
 {% else %}
   {% assign title = page.title | append: ' | ' | append: title %}
 {% endif %}

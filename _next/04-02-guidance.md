@@ -1,11 +1,11 @@
 ---
 title: Provide more robust guidance and support around getting started
 subhead: Opportunity 02
-description: "How might we make it easier for agencies to find the right information and guidance to start implementing the design system, regardless of where they’re starting from or their skill level?"
+description: "Getting started is a key sticking point. There’s an opportunity to make it easier for agencies to find the right information to implement the design system."
 meta:
   og:image: /img/next/og-next-opportunities.png
 
-permalink: /next/whats-next/guidance/
+permalink: /next/looking-ahead/guidance/
 slug: "opportunity"
 
 navbar_color: "next-gray-dark"
@@ -61,10 +61,10 @@ guidance_opportunities:
     <div class="grid-row">
       <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 next-section-prose" markdown="1">
 
-Getting started is a key sticking point for agencies since it creates so much friction
-right out of the gate. There’s an opportunity
-to make it easier for agencies to find the right information and guidance to start implementing the design system regardless of where they’re starting from or their skill level. This guidance should also include better explanations of how to customize the look and feel of agency sites, as well as provide a clearer path for scaling over time.
+Getting started is a key sticking point for agencies since it creates so much friction right out of the gate. There’s an opportunity to make it easier for agencies to find the right information and guidance to start implementing the design system regardless of where they’re starting from or their skill level. This guidance should also include better explanations of how to customize the look and feel of agency sites, as well as provide a clearer path for scaling over time.
+
 It’s particularly difficult for agencies using existing content management systems or user interface frameworks to incorporate the design system into their sites. The design system could do more to help ease the transition by demonstrating how it’s different from other frameworks and sharing additional tips for integrating it into commonly used systems.
+
 It’s also critical to help equip agencies to build the right teams as they implement the design system, whether that’s through hiring individuals, partnering with other agencies, or acquiring through vendors.
 
 ### Improve guidance

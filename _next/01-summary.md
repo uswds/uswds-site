@@ -2,7 +2,7 @@
 layout: next
 title: Transforming the American digital experience
 nav_title: Summary
-description: "Let’s transform the way we design and deliver digital government with and for the people."
+description: "Access to digital services isn’t a luxury. It’s critical. Let’s transform the way we design and deliver digital government with and for the people."
 meta:
   og:image: /img/next/og-next-report.png
 

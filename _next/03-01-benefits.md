@@ -5,7 +5,7 @@ description: "Agencies need to be able to quickly discern the design system’s 
 meta:
   og:image: /img/next/og-next-findings-understand.png
 
-permalink: /next/findings/understand/
+permalink: /next/findings/benefits/
 slug: "understand"
 
 navbar_color: "next-red-dark"

@@ -1,11 +1,11 @@
 ---
 title: Feel engaged with the community
 subhead: Agency teams want to...
-description: "It’s a collaborative process to build a design system, so it’s essential for agencies to feel like they have access to a support network and a sense of ownership to contribute back to it."
+description: "It’s essential for agencies to feel like they have access to a support network and a sense of ownership to contribute back to it."
 meta:
   og:image: /img/next/og-next-findings-engage.png
 
-permalink: /next/findings/engage/
+permalink: /next/findings/community/
 slug: "engage"
 
 navbar_color: "next-gold-dark"

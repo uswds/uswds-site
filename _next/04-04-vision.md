@@ -1,11 +1,11 @@
 ---
 title: "North Star vision: thinking beyond agency adoption"
 subhead: Vision statement
-description: "In our long-term vision, a high level of design system maturity across the federal government will help us consistently provide trusted, exceptional digital experiences for the public."
+description: "A high level of design system maturity across the federal government will help us consistently provide trusted, exceptional digital experiences for the public."
 meta:
   og:image: /img/next/og-next-vision.png
 
-permalink: /next/whats-next/vision/
+permalink: /next/looking-ahead/vision/
 slug: "opportunity"
 
 chapter: false

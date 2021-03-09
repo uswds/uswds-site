@@ -1,11 +1,11 @@
 ---
 title: Better leverage related efforts within TTS and the broader government digital services community
 subhead: Opportunity 03
-description: "How might we build on existing collaboration and coordination to help agencies navigate and benefit from the multitude of shared services and collective knowledge?"
+description: "The design system is part of an ecosystem. There’s opportunity for more collaboration to help agencies benefit from the shared services available to them."
 meta:
   og:image: /img/next/og-next-opportunities.png
 
-permalink: /next/whats-next/collaboration/
+permalink: /next/looking-ahead/collaboration/
 slug: "opportunity"
 
 navbar_color: "next-gray-dark"
@@ -64,8 +64,7 @@ collaboration_opportunities:
     <div class="grid-row">
       <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0 next-section-prose" markdown="1">
 
-The design system is part of an ecosystem of collective efforts to steward good design practices, transformation, and resilience across government. There’s opportunity
-for more collaboration and coordination to help agencies navigate and benefit from the multitude of shared services and collective knowledge available to them.
+The design system is part of an ecosystem of collective efforts to steward good design practices, transformation, and resilience across government. There’s opportunity for more collaboration and coordination to help agencies navigate and benefit from the multitude of shared services and collective knowledge available to them.
 
 ### Further support TTS collaboration
 

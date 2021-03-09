@@ -1,7 +1,7 @@
 ---
 title: Be able to iteratively improve their digital services
 subhead: Agency teams want to...
-description: "Adopting a design system is an ongoing process of design, development, and making iterative improvements and upgrades over time, which requires continued resources and support."
+description: "Adopting a design system is an ongoing process. Making iterative improvements and upgrades over time requires continued resources and support."
 meta:
   og:image: /img/next/og-next-findings-improve.png
 

@@ -2,7 +2,7 @@
 title: "North Star vision: thinking beyond agency adoption"
 subhead: Vision statement
 
-permalink: /next/whats-next/vision
+permalink: /next/whats-next/vision/
 slug: "opportunity"
 
 chapter: false

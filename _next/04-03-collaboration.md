@@ -2,7 +2,7 @@
 title: Better leverage related efforts within TTS and the broader government digital services community
 subhead: Opportunity 03
 
-permalink: /next/whats-next/collaboration
+permalink: /next/whats-next/collaboration/
 slug: "opportunity"
 
 navbar_color: "next-gray-dark"

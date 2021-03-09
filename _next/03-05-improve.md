@@ -2,7 +2,7 @@
 title: Be able to iteratively improve their digital services
 subhead: Agency teams want to...
 
-permalink: /next/findings/improve
+permalink: /next/findings/improve/
 slug: "improve"
 navbar_color: "next-pink-dark"
 hero_color: "next-pink-medium"

@@ -2,7 +2,7 @@
 title: Understand the value and&nbsp;benefits
 subhead: Agency teams want to...
 
-permalink: /next/findings/understand
+permalink: /next/findings/understand/
 slug: "understand"
 
 navbar_color: "next-red-dark"

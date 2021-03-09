@@ -2,7 +2,7 @@
 title: Feel engaged with the community
 subhead: Agency teams want to...
 
-permalink: /next/findings/engage
+permalink: /next/findings/engage/
 slug: "engage"
 navbar_color: "next-gold-dark"
 hero_color: "next-gold-medium"

@@ -2,7 +2,7 @@
 title: Strategic communications and engagement with key audiences
 subhead: Opportunity 01
 
-permalink: /next/whats-next/engagement
+permalink: /next/whats-next/engagement/
 slug: "opportunity"
 
 navbar_color: "next-gray-dark"

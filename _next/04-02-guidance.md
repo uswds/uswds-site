@@ -2,7 +2,7 @@
 title: Provide more robust guidance and support around getting started
 subhead: Opportunity 02
 
-permalink: /next/whats-next/guidance
+permalink: /next/whats-next/guidance/
 slug: "opportunity"
 
 navbar_color: "next-gray-dark"

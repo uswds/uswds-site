@@ -17,6 +17,8 @@ subnav:
   href: '#scrollable-table'
 - text: Responsive stacked table
   href: '#responsive-stacked-table'
+- text: Sortable table rows
+  href: '#sortable-table-rows'
 - text: Guidance
   href: '#table-guidance'
 - text: Package
@@ -26,6 +28,13 @@ tags:
   - zebra stripes
   - data
   - tabular
+  - sorted
+  - sortable
+  - sorting
+  - stacked
+  - borderless
+  - scrollable
+  - scrolling
 title: Table
 type: component
 variants:

@@ -77,11 +77,14 @@ html {
 
 .usa-button--next {
   background-color: $next-button-color;
-
+ 
   &:hover,
   &:focus {
    background-color: $next-button-hover-color;
   } 
+}
+.usa-dark-background .usa-button--next {
+  color: white; // .usa-dark-background a makes links light grey, fails WCAG AAA
 }
 
 .usa-button--next.usa-button--outline {

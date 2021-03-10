@@ -5,8 +5,10 @@ component:
   package: usa-icon
   dependencies:
 lead: Icons help communicate meaning, actions, status, or feedback.
-permalink: /components/icons/
-title: Icons
+permalink: /components/icon/
+redirect_from:
+  - /components/icons/
+title: Icon
 type: component
 variants:
   - variant: "`.usa-icon--size-3`"
@@ -38,6 +40,7 @@ tags:
   - picture
   - material
   - font awesome
+  - icons
 ---
 
 Icons are a simple, easily graspable way to add visual emphasis or interest, signal an action, or indicate a feedback state — all while reducing a user's cognitive load.

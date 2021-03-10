@@ -1,4 +1,4 @@
-{% assign componentName = page.title | downcase %}
+{% assign componentName = page.component.name | default: page.title | downcase %}
 {% assign componentKey = componentName | slugify %}
 {% assign settingsKey = componentKey %}
 
@@ -47,7 +47,7 @@
   {{ about | markdownify }}
   {% endif %}
   {% if when_to_use.size > guidanceNullLength %}
-  <h3>When to use the {{ componentName }} {{ page.type }}</h3>
+  <h3>When to use the {{ page.title | downcase }} {{ page.type }}</h3>
   {{ when_to_use | markdownify }}
   {% endif %}
   {% if when_to_consider_something_else.size > guidanceNullLength %}
@@ -63,11 +63,11 @@
   {{ accessibility | markdownify }}
   {% endif %}
   {% if implementation.size > guidanceNullLength %}
-  <h3 class="usa-heading">Using the {{ componentName }} {{ page.type }}</h3>
+  <h3 class="usa-heading">Using the {{ page.title | downcase }} {{ page.type }}</h3>
   {{ implementation | markdownify }}
   {% endif %}
   {% if page.category == "Components" %}
-  <h4 id="component-settings">{{ componentName | capitalize }} settings</h4>
+  <h4 id="component-settings">{{ page.title }} settings</h4>
   {% assign settings = site.data.settings.components[settingsKey] %}
   {% include settings-table-simple.html
     settings=settings.contents

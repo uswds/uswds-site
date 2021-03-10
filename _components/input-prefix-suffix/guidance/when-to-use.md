@@ -1,0 +1,3 @@
+- **Highlight the type of information.** Prefixes and suffixes are useful when there’s a commonly understood symbol or abbreviation for the type of information the user needs to enter. Some common examples include units of measurement (like lbs or ft), symbols (like $ or %), or even icons (like showing an eye for password visibility).
+
+- **Reduce mental load.** Adding a prefix or suffix can help the user more quickly understand what kind of information is requested.

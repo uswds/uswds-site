@@ -27,4 +27,4 @@ subnav:
   href: '#breadcrumb-package'
 ---
 
-A breadcrumb bar (or _breadcrumbs_, or _breadcrumb trail_) is a series of links that describes the hierarchical relationship between the current page and the overall site structure. Breadcrumbs allow a user to navigate “up” instead of using the “Back” button to return to the previous page. A breadcrumb bar facilitates orientation when a user navigates to an interior page from a web search or link from another site.
+A breadcrumb bar shows the location of the current page in the site structure. It's like a path from the current page back to the home page, showing each level of organization in-between. Breadcrumbs allow a user to navigate “up” to a parent section instead of  “Back” to the previous page. Use breadcrumbs to help users navigate and understand the organization of your site.

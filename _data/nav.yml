@@ -129,6 +129,7 @@ Utilities:
 Templates:
   - text: Templates
     href: /templates/
+  - href: /templates/404-page/
   - href: /templates/documentation-page/
   - href: /templates/landing-page/
   - href: /templates/authentication-pages/

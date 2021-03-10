@@ -37,7 +37,7 @@ Agency teams have what they need to more easily adopt and effectively use the de
 
 - Can quickly and easily start using the design system and understand how its capabilities and features integrate into their unique contexts
 
-- Can identify and access the right team, skill sets, and resources to successfully increase their design maturity
+- Can identify and access the right team, skill sets, and resources to successfully increase their [design maturity]({{ site.baseurl }}/maturity-model/)
 
 - Are active participants in building and growing the design system as contributors, not bystanders
 
@@ -51,9 +51,10 @@ We’ve identified specific opportunity areas that will move us closer to a desi
 
 2. Provide more robust guidance and support to get started with the design system
 
-3. Better leverage related efforts within the Technology Transformation Services (TTS) and broader government digital services community
+3. Better leverage related efforts within the [Technology Transformation Services](https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services) (TTS) and broader government digital services community
 
-We’ll provide regular updates on our progress in monthly calls, the public Slack channel, and the product roadmap on [designsystem.digital.gov](https://designsystem.digital.gov).
+We’ll provide regular updates on our progress in [monthly calls](https://digital.gov/events/), the [public Slack channel]({{ site.baseurl }}/about/community/), and the [product roadmap]({{ site.baseurl }}/about/product-roadmap/).
+
 
 </div>
     </div>

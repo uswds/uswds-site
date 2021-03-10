@@ -53,9 +53,9 @@ The current global pandemic has shown us that access to digital services is more
 
 To improve, we have to take a more holistic look at the fragmented ecosystem of the thousands of federal websites that currently exist, all of which offer different experiences for the public to navigate.
 
-We’re already making important strides forward. The growth of GSA shared tools and services like the U.S. Web Design System, Federalist, and login.gov have baked-in priorities like accessibility, continuity of experience, and designing for user needs.
+We’re already making important strides forward. The growth of [GSA](https://gsa.gov) shared tools and services like the [U.S. Web Design System]({{ site.baseurl }}), [Federalist](https://federalist.18f.gov), and [login.gov](https://login.gov) have baked-in priorities like accessibility, continuity of experience, and designing for user needs.
 
-Teams like 18F, Centers of Excellence, Lab at OPM, and U.S. Digital Service (USDS) have helped numerous agencies deliver better digital services. Dozens of agencies, including those designated as High Impact Service Providers and coordinated by the OMB Federal Customer Experience Initiative team, have also worked to think more strategically about how they design services with their customers. Together we can rebuild public trust by scaling what works and continuing to invest in the design and technology capabilities of our federal workforce.
+Teams like [18F](https://18f.gsa.gov), [Centers of Excellence](https://coe.gsa.gov), [Lab at OPM](https://lab.opm.gov), and [U.S. Digital Service](https://usds.gov) (USDS) have helped numerous agencies deliver better digital services. Dozens of agencies, including those designated as High Impact Service Providers and coordinated by the OMB Federal Customer Experience Initiative team, have also worked to think more strategically about how they design services with their customers. Together we can rebuild public trust by scaling what works and continuing to invest in the design and technology capabilities of our federal workforce.
 
 {% include next/next-quote.html quote="The more we use the design system to standardize how we build digital experiences, the more we will improve how the federal web functions." source="Civic tech leader" variant="block" context="Shared during user interview" %}
 
@@ -73,15 +73,15 @@ Teams like 18F, Centers of Excellence, Lab at OPM, and U.S. Digital Service (USD
 
 ### Purpose
 
-The U.S. Web Design System (USWDS) is just one piece of widespread federal efforts to improve the public’s experience of government digital services. Created in 2015, USWDS provides principles, guidance, and code to help federal agencies deliver great digital experiences by making it easier to build accessible, mobile-friendly government websites — which gives the public a more trusted, seamless way to access government digital services.
+The U.S. Web Design System (USWDS) is just one piece of widespread federal efforts to improve the public’s experience of government digital services. [Created in 2015](https://18f.gsa.gov/2015/09/28/web-design-standards/), USWDS provides principles, guidance, and code to help federal agencies deliver great digital experiences by making it easier to build accessible, mobile-friendly government websites — which gives the public a more trusted, seamless way to access government digital services.
 
-In order to get there, we need to make good-for-government products (like the design system) an integrated part of agency service delivery. Even given all the benefits the design system provides, only a minority of federal executive branch domains (approximately one out of four) are currently using any design system code in their websites[^7].
+In order to get there, we need to make good-for-government products (like the design system) an integrated part of agency service delivery. Even given all the benefits the design system provides, only a minority of federal executive branch domains (approximately one out of four) are currently using any design system code in their websites[^4].
 
 So how can we succeed in supporting agencies to improve their digital services amid the diverse challenges they all face?
 
 ### Research
 
-In September 2020, the USWDS team brought together researchers, designers, engineers, and policymakers to conduct research across dozens of federal agencies to help support emergency response efforts related to the COVID-19 pandemic.
+In September 2020, the USWDS team brought together researchers, designers, engineers, and policymakers to [conduct research across dozens of federal agencies]({{ site.baseurl }}/whats-new/updates/2021/03/01/improving-emergency-response/) to help support emergency response efforts related to the COVID-19 pandemic.
 
 
 {% include next/next-bulleted-list.html paragraph="Our primary focus was to learn:" icon="search" bullets=page.bullet_list_focus %}
@@ -127,8 +127,6 @@ Their experiences, needs, pain points, and bright spots led directly to the deve
 [^5]: The US government’s web traffic. (n.d.). Retrieved January 06, 2021, from <https://analytics.usa.gov/>
 
 [^6]: The US government’s web traffic. (n.d.). Retrieved February 5, 2021, from <https://analytics.usa.gov/>
-
-[^7]: 21st Century Integrated Digital Experience Act. (2020, August 31). Retrieved January 06, 2021, from <https://digital.gov/resources/21st-century-integrated-digital-experience-act/>
 
 </div>
     </div>

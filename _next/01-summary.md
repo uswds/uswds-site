@@ -48,11 +48,11 @@ summary_sections:
 
       Use the conversation starters throughout the report to prompt discussions with your managers and team members.
 
-      Also, if you’re interested in exploring these ideas — or in learning more about the design system — [join our community]({{ site.baseurl }}/about/community/) and get involved.  
+      Also, if you’re interested in exploring these ideas — or in learning more about the design system — [join our community](../about/community/) and get involved.  
 
       The first workshop for federal employees will be in Spring 2021, and we hope to hold ad hoc workshops in the future as well. We also hold regular calls on the third Thursday of each month.
 
-      We’ll provide regular updates on our progress in [monthly calls](https://digital.gov/events/), the [public Slack channel](https://chat.18f.gov/), and the [product roadmap]({{ site.baseurl }}/about/product-roadmap/).
+      We’ll provide regular updates on our progress in [monthly calls](https://digital.gov/events/), the [public Slack channel](../about/community/), and the [product roadmap](../about/product-roadmap/).
 
       <a href="https://touchpoints.app.cloud.gov/touchpoints/8338c61b/submit" class="usa-button usa-button--outline usa-button--next">Stay in touch</a>
 

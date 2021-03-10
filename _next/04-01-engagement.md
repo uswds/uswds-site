@@ -101,7 +101,7 @@ We also recommend expanding engagement with existing customers and empowering th
 <aside markdown="1">
 
 ### Building momentum
-In November 2020, the USWDS team presented a webinar hosted by the CIO Council’s 508 subcommittee to share the purpose, value, and how-to’s of the design system. After the webinar, the 326 attendees (from both in and outside of the federal government) were asked if they would seek additional information about the design system after having attended the event — 69 percent of them reported they strongly agreed or agreed. Hosting more webinars or events in connection with others working in digital fields across government will help to bolster engagement around the design system. (2020 Evaluation Summary, Section 508 Best Practices Webinar)
+In November 2020, the USWDS team presented a webinar hosted by the [CIO Council](https://www.cio.gov/)’s 508 subcommittee to share the purpose, value, and how-to’s of the design system. After the webinar, the 326 attendees (from both in and outside of the federal government) were asked if they would seek additional information about the design system after having attended the event — 69 percent of them reported they strongly agreed or agreed. Hosting more webinars or events in connection with others working in digital fields across government will help to bolster engagement around the design system. (2020 Evaluation Summary, Section 508 Best Practices Webinar)
 
 </aside>
       </div>

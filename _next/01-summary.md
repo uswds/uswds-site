@@ -27,7 +27,7 @@ summary_sections:
 
       But we need more. There are still gaps in how the design system can better meet agency needs, so they in turn can better meet the needs of the public. 
 
-      Through this research, [we looked to agency teams to help us define what digital transformation looks like](./intro), both in the near-term and in the future. 
+      Through this research, [we looked to agency teams to help us define what digital transformation looks like](./introduction), both in the near-term and in the future. 
 
   - heading: What we learned
     title: Findings

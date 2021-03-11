@@ -48,8 +48,9 @@ Components:
   - text: Grid
     href: /utilities/layout-grid/
   - href: /components/header/
-  - href: /components/icons/
+  - href: /components/icon/
   - href: /components/identifier/
+  - href: /components/input-prefix-suffix/
   - href: /components/link/
   - href: /components/list/
   - href: /components/modal/
@@ -129,6 +130,7 @@ Utilities:
 Templates:
   - text: Templates
     href: /templates/
+  - href: /templates/404-page/
   - href: /templates/documentation-page/
   - href: /templates/landing-page/
   - href: /templates/authentication-pages/

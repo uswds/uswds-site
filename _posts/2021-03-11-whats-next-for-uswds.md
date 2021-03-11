@@ -11,6 +11,45 @@ excerpt: "Today we’re releasing a new and exciting report and strategy that ou
 
 Today we’re releasing a new and exciting report and strategy that outlines [what’s next for the U.S. Web Design System (USWDS)]({{ site.baseurl }}/next/) and our community.
 
+
+<style type="text/css" scoped>
+
+.next-page-card__subheading {
+    text-transform: uppercase;
+    display: block;
+    font-size: .87rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: .1em;
+}
+
+</style>
+<div class="grid-col usa-card usa-card__media--exdent margin-y-5 margin-x-neg-1 height-full">
+  <div class="usa-card__container">
+    <header class="usa-card__header">
+      <h3 class="next-page-card__subheading">
+        Transforming the American digital experience
+      </h3>
+      <h4 class="usa-card__heading">
+        A report about what’s next for the U.S. Web Design System
+      </h4>
+    </header>
+    <div class="usa-card__media bg-base-darker">
+      <div class="usa-card__img next-page-card__img width-full height-card-lg" style="background: url('{{ site.baseurl }}/img/next/hero-pattern-whats-next.svg') repeat-x bottom right;"></div>
+    </div>
+    <div class="usa-card__body">
+    </div>
+    <div class="usa-card__footer">
+      <a class="usa-button text-no-wrap" href="{{ site.baseurl }}{{ include.preview.url }}" title="Transforming the American digital experience">
+        Read the report
+        <svg class="usa-icon usa-icon--size-1 text-top margin-left-1" aria-hidden="true" role="img">
+          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#arrow_forward"></use>
+        </svg>
+      </a>
+      </div>
+  </div>
+</div>
+
 Thanks to the participation of content managers, designers, engineers, policy analysts, and thought leaders across dozens of federal agencies, we conducted the largest research effort in the history of the design system. We conducted 60 interviews across 33 teams to better understand how teams are dealing with **emergency response** situations (specifically COVID-19) in terms of their digital communications, as well as their needs as users of the design system.
   
 Taking action on what [we learned from the research]({{ site.baseurl }}/whats-new/updates/2021/03/01/improving-emergency-response/), we created and updated several design system components and templates to address the common needs agencies faced.  

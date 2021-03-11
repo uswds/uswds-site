@@ -13,7 +13,7 @@ Today we’re releasing a new and exciting report and strategy that outlines [wh
 
 Thanks to the participation of content managers, designers, engineers, policy analysts, and thought leaders across dozens of federal agencies, we conducted the largest research effort in the history of the design system. We conducted 60 interviews across 33 teams to better understand how teams are dealing with **emergency response** situations (specifically COVID-19) in terms of their digital communications, as well as their needs as users of the design system.
   
-Taking action on what [we learned from the research](#), we created and updated several design system components and templates to address the common needs agencies faced.  
+Taking action on what [we learned from the research]({{ site.baseurl }}/whats-new/updates/2021/03/01/improving-emergency-response/), we created and updated several design system components and templates to address the common needs agencies faced.  
 
 Their insights and observations also brought into focus a set of near-term opportunities — and longer-term vision — for the design system.
 
@@ -97,19 +97,6 @@ Though agencies start with different goals and capabilities, we discovered they 
   
 </ul>
 
-<!--  // In case we'd rather have plain bullets //
-- **Understand the value and benefits:** Agencies need to be able to quickly discern the design system’s benefits and how it aligns with their goals for delivering better digital services.
-
-- **Know how to get started:** No matter where an agency starts from, it needs to be clear and easy for them to figure out their first steps and how to create a sustainable path forward in the long-run.
-    
-- **Find the right team and resources:** Agencies have several options to assemble a cross-functional team to implement the design system, and they’re looking for more support in identifying needed skills and assembling the right people.
-
-- **Feel engaged with the community:** It’s a collaborative process to build a design system, so it’s essential for agencies to feel like they have access to a support network and a sense of ownership to contribute back to it.
- 
-- **Iteratively improve their digital services:** Adopting a design system is an ongoing process of design, development, and making iterative improvements and upgrades over time, which requires continued resources and support. 
-
--->
-
 A vibrant design system that more effectively meets these five needs is instrumental to agencies being able to deliver exceptional digital services. To get there, we’ll focus on the following near-term opportunities:
 
 1.  Improve strategic communications and engagement with key audiences including existing and new USWDS users
@@ -118,7 +105,7 @@ A vibrant design system that more effectively meets these five needs is instrume
 
 3.  Leverage related efforts within TTS and the broader government digital services community
 
-Stay tuned for more detail on these next steps in [our roadmap]({{ site.baseurl }}/about/product-roadmap/), and learn more about our findings and a vision for the future of the design system by reading the [full report]({{ site.baseurl }}/next/) (PDF, March 2021).
+Stay tuned for more detail on these next steps in [our roadmap]({{ site.baseurl }}/about/product-roadmap/), and learn more about our findings and a vision for the future of the design system by reading the [report]({{ site.baseurl }}/next/).
 
 <style type="text/css" scoped>
 // Please remove when icon-list is merged (https://github.com/uswds/uswds-site/pull/1140)

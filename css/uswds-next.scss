@@ -115,6 +115,10 @@ html {
   background-color: $gray-80-next;
 }
 
+.site-header-dark .site-logo .usa-logo__text::before {
+  filter: brightness(20);
+}
+
 // Hero
 // -------------------------------------
 .next-hero {

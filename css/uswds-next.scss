@@ -37,19 +37,19 @@ $next-theme-colors: (
   'next-gray-dark' #2e2e2e,
 
   'next-gold-medium' #F2B600 true,
-  'next-gold-dark' #cc9900 true,
+  'next-gold-dark' #B38600 true,
 
   'next-red-medium' #E41D3D,
   'next-red-dark' #bd0f2c,
 
   'next-pink-medium' #F8A897 true,
-  'next-pink-dark' #ec8e79 true,
+  'next-pink-dark' #D67B66 true,
 
   'next-blue-medium' #2672DE,
   'next-blue-dark' #1f5aad,
 
   'next-mint-medium' #74D7AD true,
-  'next-mint-dark' #5eba94 true,
+  'next-mint-dark' #45A17A true,
 );
 
 
@@ -113,6 +113,10 @@ html {
 // Header
 .next-site-header .site-header-navbar{
   background-color: $gray-80-next;
+}
+
+.site-header-dark .site-logo .usa-logo__text::before {
+  filter: brightness(20);
 }
 
 // Hero

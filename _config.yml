@@ -17,6 +17,10 @@ future: true
 
 encoding: utf-8
 
+markdown: kramdown
+kramdown:
+  footnote_backlink: "&#x21B5;"
+
 incremental_regeneration_fixer:
   interdependent_files:
     - "_components/form-controls/*"
@@ -57,6 +61,9 @@ collections:
   components:
     output: true
     permalink: /:path/
+  next:
+    output: true
+    permalink: /:collection/:title
 
 defaults:
   - scope:
@@ -69,6 +76,14 @@ defaults:
       type: posts
     values:
       layout: post
+  - scope:
+      path: ""
+      type: next
+    values:
+      report_title: "Report: Transforming the American digital experience"
+      layout: "next-content"
+      chapter: false
+      hero_color: "next-gray-dark"
 
 plugins:
   - jekyll-redirect-from

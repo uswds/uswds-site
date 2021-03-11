@@ -1,0 +1,46 @@
+<div class="next-page-card grid-col usa-card usa-card--flag margin-y-0 margin-x-neg-1 height-full {% if include.direction =='prev' %}usa-card--media-right{% endif %}">
+  <div class="usa-card__container">
+    <header class="usa-card__header">
+      {% if include.preview.chapter == true %}
+        <h3 class="next-page-card__subheading">
+          {{ include.preview.title }}
+        </h3>
+        <h4 class="usa-card__heading">
+          {{ include.preview.subhead }}
+        </h4>
+        {% else %}
+          <h3 class="next-page-card__subheading">
+            {{ include.preview.parent }} | 
+            {{ include.preview.subhead }}
+          </h3>
+          <h4 class="usa-card__heading">
+            {{ include.preview.title }}
+          </h4>
+        {% endif %}
+      </h3>
+    </header>
+    <div class="usa-card__media bg-{{ include.preview.hero_color }}">
+      <div class="usa-card__img next-page-card__img" style="background-image: url('{{ site.baseurl }}/img/next/hero-pattern-{{ include.preview.slug }}.svg')"></div>
+    </div>
+
+    <div class="usa-card__body">
+    </div>
+
+    <div class="usa-card__footer">
+        <a class="usa-button text-no-wrap" rel="{{ include.direction }}" href="{{ site.baseurl }}{{ include.preview.url }}" title="{{ include.preview.title }}">
+          {% if include.direction =='prev' %}
+            <svg class="usa-icon usa-icon--size-1 text-top margin-right-1" aria-hidden="true" role="img">
+              <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#arrow_back"></use>
+            </svg>
+            Read previous page
+          {% else %}
+            Read next page
+            <svg class="usa-icon usa-icon--size-1 text-top margin-left-1" aria-hidden="true" role="img">
+              <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#arrow_forward"></use>
+            </svg>
+          {% endif %}
+      
+        </a>
+      </div>
+  </div>
+</div>

@@ -36,6 +36,7 @@
     "build-css-custom": "gulp build-sass-custom",
     "build-css-dev": "gulp build-sass-dev",
     "build-css-fonts": "gulp build-sass-fonts",
+    "build-next-css": "gulp build-next-sass",
     "build-css-layout-grid": "gulp build-sass-layout-grid",
     "build-css-utilities": "gulp build-sass-utilities",
     "build-fonts": "gulp fonts",
@@ -77,7 +78,7 @@
     "postcss-csso": "^5.0.0",
     "sass": "^1.26.10",
     "snyk": "^1.456.0",
-    "uswds": "^2.10.1",
+    "uswds": "^2.10.2",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },
@@ -114,6 +115,9 @@
     ],
     "./css/uswds-fonts.scss": [
       "build-css-fonts"
+    ],
+    "./css/uswds-next.scss": [
+      "build-next-css"
     ],
     "./css/uswds-utilities.scss": [
       "build-css-utilities"

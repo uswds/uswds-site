@@ -1,32 +1,22 @@
 name: Modal
 contents:
   - name: Border Radius
-    description: Size of border radius
+    description: The border radius of the modal window.
     var: $theme-modal-border-radius
-    default: "'lg'"
-    type: units
-  - name: Box shadow
-    description: Size of box shadow
-    var: $theme-modal-box-shadow
     default: "'lg'"
     type: units
   - name: Max width
     description: Maximum width of default modal window.
     var: $theme-modal-default-max-width
-    default: "500px"
-    type: number
+    default: "'mobile-lg'"
+    type: units
   - name: Max width
     description: Maximum width of large modal window.
     var: $theme-modal-lg-max-width
-    default: "800px"
-    type: number
+    default: "'tablet-lg'"
+    type: units
   - name: Max width
     description: Maximum width of content area within large modal window.
     var: $theme-modal-lg-content-max-width
-    default: "630px"
-    type: number
-  - name: Z-index
-    description: Z-index for modal window when opened.
-    var: $theme-modal-z-index
-    default: "'500'"
-    type: number
+    default: "'tablet'"
+    type: units

@@ -1,0 +1,20 @@
+<section class="next-section--opportunities grid-col-12">
+{% for opportunity in include.opportunities %}
+  <div class="next-opportunity grid-row margin-top-6 margin-bottom-2">
+    <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:grid-col-3 desktop:margin-left-0">
+      <h4 class="next-opportunity__heading">{{ opportunity.name }}</h4>
+    </div>
+    <div class="grid-col-12 tablet:grid-col-8 desktop:grid-col-8 tablet:margin-x-auto desktop:margin-left-auto desktop:margin-left-0 next-opportunity-description">
+      {{ opportunity.description | markdownify }}
+    
+      <div class="next-opportunity__needs grid-row">
+        {% for need in opportunity.needs %}
+          <div class="grid-col-12 desktop:grid-col-6 margin-bottom-2">
+            {% include next/next-icon-need.html need=need %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</section>

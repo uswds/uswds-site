@@ -87,7 +87,7 @@ utilities:
   %}
 
 <div class="utilities-properties">
-  <h3 class="utilities-property-title">CSS properties</h3>
+  <h2 class="utilities-property-title">CSS properties</h2>
   <div class="margin-top-1">
     <span class="property utilities-property">border</span>
     <span class="property utilities-property">border-style</span>
@@ -659,11 +659,11 @@ utilities:
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .border-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-border(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
@@ -676,11 +676,11 @@ utilities:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .border-<code>modifier</code>-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-border-<code>modifier</code>(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
@@ -693,11 +693,11 @@ utilities:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .border-<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-border(<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>)
@@ -710,11 +710,11 @@ utilities:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .border-<code>style</code>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-border(<code>modifier</code>)
@@ -727,11 +727,11 @@ utilities:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .radius-<code>radius</code>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-radius(<code>radius</code>)
@@ -744,11 +744,11 @@ utilities:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .radius-<code>modifier</code>-<code>radius</code>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-radius-<code>modifier</code>(<code>radius</code>)

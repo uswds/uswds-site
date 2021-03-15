@@ -121,7 +121,7 @@ utilities:
   | concat: site.data.tokens.special.full_percent %}
 
 <div class="utilities-properties">
-  <h3 class="utilities-property-title">CSS properties</h3>
+  <h2 class="utilities-property-title">CSS properties</h2>
   <div class="margin-top-1">
     <span class="property utilities-property">bottom</span>
     <span class="property utilities-property">display</span>
@@ -655,11 +655,11 @@ utilities:
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .display-<code>value</code>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-display(<code>value</code>)
@@ -672,11 +672,11 @@ utilities:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .opacity-<a href="{{ site.baseurl }}/design-tokens/opacity/" class="token">opacity</a>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-opacity(<a href="{{ site.baseurl }}/design-tokens/opacity/" class="token">opacity</a>)
@@ -689,11 +689,11 @@ utilities:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .overflow-<code>modifier</code>-<code>value</code>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-overflow-<code>modifier</code>(<code>value</code>)
@@ -706,11 +706,11 @@ utilities:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .position-<code>value</code>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-position(<code>value</code>)
@@ -723,11 +723,11 @@ utilities:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .bottom-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-bottom(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
@@ -740,11 +740,11 @@ utilities:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .left-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-left(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
@@ -757,11 +757,11 @@ utilities:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .right-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-right(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
@@ -774,11 +774,11 @@ utilities:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .top-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-top(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
@@ -791,11 +791,11 @@ utilities:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .pin-<code>value</code>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-pin-<code>value</code>

@@ -74,9 +74,9 @@ Your context and coding style determine how you access USWDS z-index tokens in c
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Context">
-          <span class="text-bold font-lang-3">function</span>
-        </td>
+        <th scope="row" data-title="Context">
+          <span class="font-lang-3">function</span>
+        </th>
         <td data-title="Description">
           <span>
             z-index(<a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>)<br/>
@@ -91,11 +91,11 @@ Your context and coding style determine how you access USWDS z-index tokens in c
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">mixin</span><br/>
+            mixin
           </span>
-        </td>
+        </th>
         <td data-title="Description">
           <span>
             u-z(<a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>)
@@ -108,11 +108,9 @@ Your context and coding style determine how you access USWDS z-index tokens in c
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
-          <span>
-            <span class="text-bold font-lang-3">setting</span><br/>
-          </span>
-        </td>
+        <th scope="row" data-title="Context">
+          <span class="font-lang-3">setting</span>
+        </th>
         <td data-title="Description">
           <span>
             <a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>
@@ -125,11 +123,11 @@ Your context and coding style determine how you access USWDS z-index tokens in c
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Context">
+        <th scope="row" data-title="Context">
           <span class="font-lang-3">
-            <span class="text-bold">utility</span><br/>
+            utility
           </span>
-        </td>
+        </th>
         <td data-title="Description">
           <span>
             .z-<a href="{{ site.baseurl }}/design-tokens/z-index/" class="token">z-index</a>

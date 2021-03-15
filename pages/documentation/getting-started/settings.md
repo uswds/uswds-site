@@ -19,7 +19,7 @@ subnav:
   href: '#utilities-settings'
 ---
 
-A good way to get started with USWDS settings is to copy the `dist/src/stylesheets/theme` directory out of the `uswds` package and into the same directory where you keep your project Sass files. Then use the `@import` directive in Sass to import these settings **before importing the main USWDS Sass**. You can use the `styles.scss` example file in the `dist/src/stylesheets/theme` directory as a starting point for your own Sass entry point:
+A good way to get started with USWDS settings is to copy the `dist/scss/theme` directory out of the `uswds` package and into the same directory where you keep your project Sass files. Then use the `@import` directive in Sass to import these settings **before importing the main USWDS Sass**. You can use the `styles.scss` example file in the `dist/scss/theme` directory as a starting point for your own Sass entry point:
 
 ```scss
 // -------------------------------------
@@ -75,7 +75,7 @@ In general, when importing settings and custom code, you just need to follow thi
       settings=section.contents
     %}
   {%- else -%}
-    <h2 id="components">Components</h2>
+    <h2 id="component-settings">Component settings</h2>
     {%- assign sorted_components = section | sort -%}
     {%- for component_hash in sorted_components -%}
     {%- assign component = component_hash[1] -%}

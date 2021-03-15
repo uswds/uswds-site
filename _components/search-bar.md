@@ -40,7 +40,7 @@ lead: Search allows users to search for specific content if they know what searc
           search component to be as wide as possible, but a minimum of 27 characters
           wide. This allows users to enter multiple search terms and still be
           able to see all of them. The more users can see their search terms,
-          the easier it is to review, verify, and submit their search query.
+          the easier it is to review, verify, and submit their search query. Romance languages are about 20% longer than English, so account for text swell on multilingual websites.
         </li>
         <li>
           <strong>The magnifying glass icon is effective.</strong> The magnifying

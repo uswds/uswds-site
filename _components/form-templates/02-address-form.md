@@ -32,6 +32,19 @@ lead: Enter a standard U.S. mailing or shipping address
     <ul class="usa-content-list">
       <li>As you customize this form template, make sure it continues to follow the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines for form templates</a> and the <a href="{{ site.baseurl }}/form-controls/">accessibility guidelines for form controls</a>.</li>
     </ul>
+
+    <h4>Implementation</h4>
+    <ul class="usa-content-list">
+      <li>
+        We limit the characters in the ZIP code field to numbers and the hyphen (-), following the pattern <code>pattern="[\d]{5}(-[\d]{4})?"</code>. If you need your ZIP code field to allow non-U.S. postal codes that use a different pattern or require different characters, remove or edit the <code>pattern</code> property.
+      </li>
+    </ul>
+
+    <h4>Additional Information</h4>
+    <ul class="usa-content-list">
+      <li><a href="https://pe.usps.com/text/pub28/28c1_001.htm">USPS Publication 28</a> defines the mailing standards in the United States.</li>
+    </ul>
+
     <h4 class="usa-heading">Package information</h4>
     <ul class="usa-content-list">
       <li>

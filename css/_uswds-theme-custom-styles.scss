@@ -615,6 +615,12 @@ body {
   background-color: color("green-cool-20v");
 }
 
+.label-cancelled {
+  @extend %label-maturity;
+  background-color: color("red-50v");
+  color: color("white");
+}
+
 .heading-margin-alt {
   margin-top: units(7);
 }
@@ -2244,11 +2250,11 @@ li {
 }
 
 p + .usa-accordion,
-h2 + div:not(.usa-accordion__content),
-h3 + div:not(.usa-accordion__content),
-h4 + div:not(.usa-accordion__content),
-h5 + div:not(.usa-accordion__content),
-h6 + div:not(.usa-accordion__content) {
+h2 + div:not(.usa-accordion__content):not(.usa-collection__meta-list),
+h3 + div:not(.usa-accordion__content):not(.usa-collection__meta-list),
+h4 + div:not(.usa-accordion__content):not(.usa-collection__meta-list),
+h5 + div:not(.usa-accordion__content):not(.usa-collection__meta-list),
+h6 + div:not(.usa-accordion__content):not(.usa-collection__meta-list) {
   margin-top: units(2);
 }
 
@@ -2570,7 +2576,8 @@ $theme-table-column-gap: 4;
       }
     }
 
-    td {
+    td,
+    tbody th:first-of-type {
       align-items: baseline;
       background-color: transparent;
       display: flex;
@@ -2810,11 +2817,16 @@ $theme-table-column-gap: 4;
       margin-left: 0;
       padding-left: units(2);
     }
+
+    .highlighter-rouge {
+      @include u-measure(5);
+    }
   }
 }
 
 .site-text-intro {
   @include typeset("lang", "lg", 5);
+  @include u-measure(5);
   font-weight: fw("light");
   margin-top: units(1);
 }
@@ -2871,7 +2883,7 @@ $theme-table-column-gap: 4;
 
 .site-accordion-code {
   .usa-accordion__button {
-    @include add-background-svg("minus-thin-white");
+    @include add-background-svg("icons/remove-white");
     background-color: color("primary-vivid");
     color: color("white");
 
@@ -2880,7 +2892,7 @@ $theme-table-column-gap: 4;
     }
 
     &[aria-expanded="false"] {
-      @include add-background-svg("plus-thin-white");
+      @include add-background-svg("icons/add-white");
     }
   }
 }
@@ -2888,18 +2900,27 @@ $theme-table-column-gap: 4;
 .site-accordion-docs,
 .site-accordion {
   .usa-accordion__button {
-    @include add-background-svg("minus-thin-ink");
+    @include add-background-svg("usa-icons/remove");
 
     &[aria-expanded="false"] {
-      @include add-background-svg("plus-thin-ink");
+      @include add-background-svg("usa-icons/add");
     }
   }
 }
 
 .site-component-section {
   @include typeset("lang");
-  @include u-measure(5);
   margin-top: units(5);
+  max-width: none;
+
+  > h2,
+  > h3,
+  > h4,
+  > ul,
+  > ol,
+  > p {
+    @include u-measure(5);
+  }
 
   > h2 {
     @extend %header-margin;
@@ -2997,10 +3018,10 @@ $theme-table-column-gap: 4;
 
   .usa-nav__link {
     &[aria-expanded="true"] {
-      @include add-background-svg("minus-thin-ink");
+      @include add-background-svg("usa-icons/remove");
     }
     &[aria-expanded="false"] {
-      @include add-background-svg("plus-thin-ink");
+      @include add-background-svg("usa-icons/add");
     }
   }
 
@@ -3352,6 +3373,12 @@ body {
   .site-roadmap-list__item {
     @include u-border-top("base-lighter");
     @include u-text("normal");
+    &:first-child {
+      @include u-margin-top(1);
+    }
+    &:last-child {
+      @include u-margin-bottom(2);
+    }
   }
 }
 

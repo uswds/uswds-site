@@ -43,7 +43,7 @@ utilities:
 {% assign outline_colors = site.data.tokens.color.required %}
 
 <div class="utilities-properties">
-  <h3 class="utilities-property-title">CSS properties</h3>
+  <h2 class="utilities-property-title">CSS properties</h2>
   <div class="margin-top-1">
     <span class="property utilities-property">outline</span>
     <span class="property utilities-property">outline-color</span>
@@ -124,11 +124,11 @@ utilities:
     </thead>
     <tbody class="font-mono-2xs">
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .outline-<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-outline(<a href="{{ site.baseurl }}/design-tokens/spacing-units/" class="token">units</a>)
@@ -141,11 +141,11 @@ utilities:
         </td>
       </tr>
       <tr>
-        <td scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
-          <span>
+        <th scope="row" data-title="Utility" class="tablet:text-no-wrap tablet:maxw-card-lg">
+          <span class="text-normal">
             .outline-color-<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>
           </span>
-        </td>
+        </th>
         <td data-title="Mixin">
           <span>
             u-outline-color(<a href="{{ site.baseurl }}/design-tokens/color/" class="token">color</a>)

@@ -1,0 +1,3 @@
+- **Open-ended form fields.** If there aren’t specific parameters around the information the user needs to enter, a prefix or suffix may be incorrect. For example, don’t use a $ prefix for a form field asking “What’s a fair resolution?” if the user could enter either “$1,000” or “a full refund” as the answer.
+
+- **Explanation requires additional words.** Don’t use prefixes or suffixes if a symbol or abbreviation is insufficient to convey the meaning. There shouldn’t be any confusion between what type of information a prefix or suffix represents. This is especially true when using icons that could have multiple meanings.

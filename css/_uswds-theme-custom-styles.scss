@@ -3677,6 +3677,10 @@ body {
 }
 
 .site-accordion-code {
+  .usa-accordion__content {
+    overflow: visible;
+  }
+
   // Don't show margin at the top of the first form-group's label
   .usa-accordion__content > .usa-form-group:first-child,
   .usa-date-range-picker > .usa-form-group:first-child {

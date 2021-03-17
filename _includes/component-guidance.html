@@ -63,7 +63,7 @@
   {{ accessibility | markdownify }}
   {% endif %}
   {% if implementation.size > guidanceNullLength or page.variants or site.data.settings.components[settingsKey] %}
-  <h3 class="usa-heading">Using the {{ componentName }} {{ page.type }}</h3>
+  <h3 class="usa-heading">Using the {{ page.title | downcase }} {{ page.type }}</h3>
   {{ implementation | markdownify }}
   {% if page.category == "Components" %}
   <h4 id="component-settings">{{ page.title }} settings</h4>

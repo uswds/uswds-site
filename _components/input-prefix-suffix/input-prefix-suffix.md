@@ -1,6 +1,7 @@
 ---
 category: Components
 component:
+  name: input-prefix-suffix
   status: ready
   package: usa-form-controls
   dependencies:

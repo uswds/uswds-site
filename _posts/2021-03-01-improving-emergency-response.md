@@ -151,4 +151,4 @@ For every component, we conducted a landscape analysis, created low- and high-fi
 
 ## What’s next?
 
-The data, themes, and insights will support our decision-making well into the future. The research and interviews created a wealth of information to improve how we support agencies in emergency situations, as well as ideas for the future of the design system and how it can continue to improve.
+The data, themes, and insights will support our decision-making well into the future. The research and interviews created a wealth of information to improve how we support agencies in emergency situations, as well as ideas for the [future of the design system]({{ site.baseurl }}/whats-new/updates/2021/03/11/whats-next-for-uswds/) and how it can continue to improve.

@@ -17,6 +17,10 @@ future: true
 
 encoding: utf-8
 
+markdown: kramdown
+kramdown:
+  footnote_backlink: "&#x21B5;"
+
 incremental_regeneration_fixer:
   interdependent_files:
     - "_components/accordion/**/*"
@@ -40,7 +44,7 @@ jekyll_get:
     json: "https://api.github.com/repos/uswds/uswds/contents/SECURITY.md"
     decode_content: true
   - data: hash
-    json: "https://api.github.com/repos/uswds/uswds/contents/security/uswds-2.11.0-zip-hash.txt?ref=master"
+    json: "https://api.github.com/repos/uswds/uswds/contents/security/uswds-2.10.3-zip-hash.txt?ref=master"
     decode_content: true
 
 repos:
@@ -64,6 +68,9 @@ collections:
   utilities:
     output: true
     permalink: /:path/
+  next:
+    output: true
+    permalink: /:collection/:title
 
 defaults:
   - scope:
@@ -76,6 +83,14 @@ defaults:
       type: posts
     values:
       layout: post
+  - scope:
+      path: ""
+      type: next
+    values:
+      report_title: "Report: Transforming the American digital experience"
+      layout: "next-content"
+      chapter: false
+      hero_color: "next-gray-dark"
 
 plugins:
   - jekyll-redirect-from

@@ -1,3 +1,27 @@
-<div class="preview usa-prose site-prose {{ include.classes }}">
-  {% include code/components/{{ include.component }}.html %}
+{% assign level = include.level | default: "h3" %}
+
+<div class="usa-accordion usa-accordion usa-accordion--bordered site-accordion-code">
+  {% assign _id = include.component | append: '-preview' %}
+  {% assign _content_id = include.component | append: '-preview-content' %}
+  <button class="usa-accordion__button" aria-controls="{{ _content_id }}" aria-expanded="true"><{{ level }} id="{{ _id }}">Component preview</{{ level }}></button>
+  <div id="{{ _content_id }}" class="usa-accordion__content">
+    {% if include.image %}
+      <a
+        class="media_link"
+        href={% include component-preview-link.html component=include.component %}
+      >
+        <img
+          src="{{ site.baseurl }}{{ include.image }}"
+          alt={{ page.title }}
+        />
+      </a>
+      <a
+        class="usa-button"
+        href={% include component-preview-link.html component=include.component %}
+        >Demo {{ page.title }}</a
+      >
+    {% else %}
+        {% include code/components/{{ include.component }}.html %}
+    {% endif %}
+  </div>
 </div>

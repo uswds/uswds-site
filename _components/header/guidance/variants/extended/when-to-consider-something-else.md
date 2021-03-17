@@ -1,0 +1,1 @@
+- **Simple site needs.** Consider using the basic header if you have less information — the basic header takes up less space.

@@ -766,6 +766,44 @@
       default: 2
       kind: units
 
+    - name: Modal
+      section: true
+      subsection: Modal border Radius
+      usage: Size of border radius.
+      var: $theme-modal-border-radius
+      default: "'lg'"
+      kind: units
+    - name: Modal
+      subsection: Modal box shadow
+      usage: Size of box shadow.
+      var: $theme-modal-box-shadow
+      default: "'lg'"
+      kind: units
+    - name: Modal
+      subsection: Modal max width
+      usage: Maximum width of default modal window.
+      var: $theme-modal-default-max-width
+      default: "'lg'"
+      kind: units
+    - name: Modal
+      subsection: Modal max width (lg)
+      usage: Maximum width of large modal window.
+      var: $theme-modal-lg-max-width
+      default: "800px"
+      kind: px
+    - name: Modal
+      subsection: Modal max width (lg inner content)
+      usage: Maximum width of content area within large modal window.
+      var: $theme-modal-lg-content-max-width
+      default: "630px"
+      kind: px
+    - name: Modal
+      subsection: Modal z-index
+      usage: Z-index for modal window when opened.
+      var: $theme-modal-z-index
+      default: 500
+      kind: z-index
+
     - name: Footer
       section: true
       subsection: Font family

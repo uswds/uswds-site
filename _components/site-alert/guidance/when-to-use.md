@@ -1,0 +1,2 @@
+- **Critical system notifications.** Use a site alert to deliver a static system status update, such as notices about unavailable services or content. Site alerts should appear by default and not in response to an action.
+- **Messages that should be displayed on every page.** A site alert makes critical information obvious and findable on every page.

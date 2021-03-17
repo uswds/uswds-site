@@ -2,7 +2,7 @@
 title: U.S. Web Design System (USWDS)
 description: USWDS makes it easier to build accessible, mobile-friendly government websites.
 google_analytics_ua: UA-48605964-43
-uswds_version: 2.10.2
+uswds_version: 2.11.0
 federalist_base: "https://federalist-3b6ba08e-0df4-44c9-ac73-6fc193b0e19c.app.cloud.gov/preview/uswds/uswds"
 federalist_component_preview: "components/preview"
 federalist_release_prefix: "release-"
@@ -23,9 +23,10 @@ kramdown:
 
 incremental_regeneration_fixer:
   interdependent_files:
-    - "_components/form-controls/*"
-    - "_components/form-templates/*"
-    - "_components/button-groups/*"
+    - "_components/accordion/**/*"
+    - "_components/button-group/**/*"
+    - "_templates/form-templates/**/*"
+    - "_templates/page-templates/**/*"
 
 jekyll_get:
   - data: releases
@@ -43,7 +44,7 @@ jekyll_get:
     json: "https://api.github.com/repos/uswds/uswds/contents/SECURITY.md"
     decode_content: true
   - data: hash
-    json: "https://api.github.com/repos/uswds/uswds/contents/security/uswds-2.10.2-zip-hash.txt?ref=master"
+    json: "https://api.github.com/repos/uswds/uswds/contents/security/uswds-2.10.3-zip-hash.txt?ref=master"
     decode_content: true
 
 repos:
@@ -59,6 +60,12 @@ repos:
 
 collections:
   components:
+    output: true
+    permalink: /:path/
+  templates:
+    output: true
+    permalink: /:path/
+  utilities:
     output: true
     permalink: /:path/
   next:

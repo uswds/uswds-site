@@ -1,0 +1,2 @@
+- **Responding to user actions.** Use the [alert]({{ site.baseurl }}/components/alert) component for page-level validation messages (like error messages on a form) or to inform a user that a task was completed successfully.
+- **Validating form input.** On most forms, especially longer forms, validation messages should appear inline with error messages at the top of the form.

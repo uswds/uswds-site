@@ -82,6 +82,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86_64-darwin-18
 
 DEPENDENCIES
   jekyll (>= 4.2.0)
@@ -95,4 +96,4 @@ DEPENDENCIES
   scss_lint
 
 BUNDLED WITH
-   2.1.4
+   2.2.1

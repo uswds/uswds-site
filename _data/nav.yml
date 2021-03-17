@@ -48,10 +48,13 @@ Components:
   - text: Grid
     href: /utilities/layout-grid/
   - href: /components/header/
-  - href: /components/icons/
+  - href: /components/icon/
+  - href: /components/icon-list/
   - href: /components/identifier/
+  - href: /components/input-prefix-suffix/
   - href: /components/link/
   - href: /components/list/
+  - href: /components/modal/
   - href: /components/process-list/
   - href: /components/prose/
   - href: /components/radio-buttons/
@@ -128,6 +131,7 @@ Utilities:
 Templates:
   - text: Templates
     href: /templates/
+  - href: /templates/404-page/
   - href: /templates/documentation-page/
   - href: /templates/landing-page/
   - href: /templates/authentication-pages/

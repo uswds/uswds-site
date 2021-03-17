@@ -5,7 +5,7 @@ component:
   status: ready
   package: usa-icon-list
   dependencies: usa-icon
-lead: An icon list reinforces the meaning and visibility of individual list items with a visible icon.
+lead: An icon list reinforces the meaning and visibility of individual list items with a leading icon.
 permalink: /components/icon-list/
 subnav:
 - text: Preview

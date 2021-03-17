@@ -21,4 +21,9 @@ tags:
   - big
 title: Footer
 type: component
+variants:
+  - variant: usa-footer--big
+    description: A multi-column footer that expands and collapses on mobile
+  - variant: usa-footer--slim
+    description: A compact version of the footer
 ---

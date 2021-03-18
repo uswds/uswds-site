@@ -3677,9 +3677,6 @@ body {
 }
 
 .site-accordion-code {
-  .usa-accordion__content {
-    overflow: visible;
-  }
 
   // Don't show margin at the top of the first form-group's label
   .usa-accordion__content > .usa-form-group:first-child,
@@ -3694,5 +3691,11 @@ body {
     > .usa-label:first-child {
       margin-top: 0;
     }
+  }
+}
+
+.site-accordion-code.site-component-preview {
+  .usa-accordion__content {
+    overflow: visible;
   }
 }

@@ -5,6 +5,7 @@ component:
   package: false
   dependencies:
   image: /assets/img/templates/layout--sign-in.png
+  demo: layout--sign-in
 guidance:
   - heading: Components used in this template
     path: /guidance/components-used.md

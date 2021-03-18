@@ -5,6 +5,7 @@ component:
   package: false
   dependencies:
   image: /assets/img/templates/layout--create-account.png
+  demo: layout--create-account
 guidance:
   - heading: Components used in this template
     path: /guidance/components-used.md

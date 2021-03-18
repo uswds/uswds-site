@@ -6,6 +6,7 @@
 - **Attribute table data in a caption.** If your table includes information from a specific source or contains frequently updated content, provide the source and/or last updated date. This is especially useful if your table summarizes data from a more extensive source.
 - **Consider a small-screen experience.** On mobile devices and other small screens, numerical data across many columns can be easier to understand if the table scrolls horizontally. Directory lists are more readable if the rows display in a stacked layout. For tables with more than 2 columns, make sure you choose either a scrollable or a stacked variant.
 - **Minimize the number of columns.** It’s easier for users to read down a long list of rows than it is to read across a long list of columns. Eliminate columns when possible or consider swapping the columns and rows to improve scannability.
-- **Enable sort where useful.** Add row sorting to individual columns of long tables where the data can be logically ordered either alphabetically or numerically. **Don’t use row sorting with merged cells.** Sorting won’t work properly if your table contains `colspan` or `rowspan` attributes on the cells.
+- **Enable sort where useful.** Add row sorting to individual columns of long tables where the data can be logically ordered either alphabetically or numerically.
+- **Don’t use row sorting with merged cells.** Sorting won’t work properly if your table contains `colspan` or `rowspan` attributes on the cells.
 - **Don’t use row sorting with the mobile stacked variants.** Sorting won’t work properly with these variants because the column headers at the top of the table don’t appear at narrow widths and are instead moved into the cell content in each row.
 

@@ -1,0 +1,5 @@
+- **Curate your footer.** Footer links should point to popular content that might answer a visitor’s remaining questions. Links to disclaimers and legal content sometimes need to be in the footer, but try to minimize “disclaimer bloat” wherever possible.
+- **The footer doesn’t need to mirror the header.** Link grouping in the footer does not have to mirror link grouping in top level header navigation (especially if the navigation offers many more links than the footer can).
+- **Include newsletter signup.** Include the newsletter signup if one of your website’s goals is getting visitors to sign up for a newsletter.
+- **Avoid stale social media accounts.** Link only to social media your agency updates frequently or uses to communicate with customers.
+- **Limit contact information to email and phone.** Important contact information should be limited to general email or phone numbers, which should be clickable links to dial from a mobile phone. Physical addresses should live on contact pages users can navigate to from the accordion links.

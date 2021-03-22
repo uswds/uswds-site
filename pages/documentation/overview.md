@@ -46,7 +46,7 @@ redirect_from:
   <div class="grid-row">
     <div class="tablet:grid-col-7">
       <div class="">
-        <p>USWDS helps the federal government design and build better online experiences for the American public. As a toolkit to design and build government websites, the design system provides:</p>
+        <p>USWDS helps the federal government design and build better digital experiences. As a toolkit to design and build government websites, the design system provides:</p>
         <ol>
           <li><strong>Principles:</strong> USWDS design principles support and reflect the important guidance codified in 21st Century IDEA.</li>
           <li><strong>Guidance:</strong> USWDS user experience guidance provides best-practice advice for assuring components do what users expect them to do.</li>

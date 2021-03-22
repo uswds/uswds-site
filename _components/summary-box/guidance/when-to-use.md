@@ -1,0 +1,2 @@
+- **Summarize dense content.** If your page contains a lot of information, use the summary box to call out 3-5 key details that readers shouldn't miss.
+- **Highlight a short, actionable list.** If the page content describes a few steps or a checklist of items to remember, collect them in a summary box. Use five bullet points or less.

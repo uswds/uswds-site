@@ -1,6 +1,6 @@
 {% assign level = include.level | default: "h3" %}
 
-<div class="usa-accordion usa-accordion usa-accordion--bordered site-accordion-code">
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   {% assign _id = include.component | append: '-preview' %}
   {% assign _content_id = include.component | append: '-preview-content' %}
   <button class="usa-accordion__button" aria-controls="{{ _content_id }}" aria-expanded="true"><{{ level }} id="{{ _id }}">Component preview</{{ level }}></button>
@@ -17,7 +17,7 @@
       </a>
       <a
         class="usa-button"
-        href={% include component-preview-link.html component=include.component %}
+        href={% include component-preview-link.html demoLink=include.demoLink component=include.component %}
         >Demo {{ page.title }}</a
       >
     {% else %}

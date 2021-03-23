@@ -19,13 +19,13 @@ We identified three key things that contributed to our team success in working w
 
 Within the “guard rails” established in our [team agreement](https://tech.gsa.gov/guides/agile_team_working_agreement/) at kickoff, our project team self-organized to great effect. We worked in concert with the core USWDS product team to establish a sprint cadence, daily retros, weekly check-ins with the Product Owner, and biweekly check-ins with the core team. Ultimately, we also came up with schedules and structures that fit the work—staying collaborative without compromising efficiency. Outside of established team ceremonies, team members synced up in daily user experience (UX) standups, twice-weekly engineering touch bases, cross-pollination meetings, and pairing and workshopping sessions as needed.
 
-This approach allowed UX and engineering pairs to work on specific components in parallel to get more done, mobbing with additional team members when tackling thorny issues while preserving the heads-down time needed for high quality work.
+This approach allowed UX and engineering pairs to work on specific components in parallel to get more done, workshopping with additional team members when tackling thorny issues while preserving the heads-down time needed for high quality work.
 
 ### 2. Ask for feedback early and often
 
 Understanding the impact our decisions have on end-users of the design system as well as public users of the websites built using USWDS was critical to keeping us on the right path.
 
-We [interviewed digital teams across the federal government]({{ site.baseurl }}/whats-new/updates/2021/02/26/improving-emergency-response/), and got feedback from the product team, peers, and the [USWDS community]({{ site.baseurl }}/about/community/) to ensure we benefited from a diverse set of opinions, backgrounds, and experiences and reflecting that back into our work.
+We [interviewed digital teams across the federal government]({{ site.baseurl }}/whats-new/updates/2021/03/01/improving-emergency-response/), and got feedback from the product team, peers, and the [USWDS community]({{ site.baseurl }}/about/community/) to ensure we benefited from a diverse set of opinions, backgrounds, and experiences and reflected that back into our work.
 
 We took a many-pronged approach to soliciting feedback, sharing out work to the USWDS community, Digital.gov’s [UX community](https://digital.gov/communities/user-experience/), practitioners from a broad range of agencies who’ve participated in our research efforts, and TTS partners in specialized knowledge spaces like accessibility, structured data, and content strategy.
 

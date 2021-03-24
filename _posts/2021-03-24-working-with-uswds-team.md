@@ -41,7 +41,7 @@ Of course, a release isn’t the end of the story. Once a component is “in the
 
 An example in this latest release is the [Collection component]({{ site.baseurl }}/components/collection/). Within days of Release 2.10, we were excited to see a participant in the USWDS community post design evolutions to the Collection component.
 
-The customer also identified a tricky “sub-pixel” display bug resulting in a tiny gap on the Collection component’s calendar date in specific display situations. After posting their designs and the bug in the community’s Slack channel, one of our developers followed up with them, and the two collaborated asynchronously in Slack to knock out the bug and create a pull request. The fix quickly worked its way into the design system!  
+The customer also identified a tricky “sub-pixel” display bug resulting in a tiny gap on the Collection component’s calendar date in specific display situations. After posting their designs and the bug in the community’s Slack channel, one of our developers followed up with them, and the two collaborated asynchronously in Slack to knock out the bug and create a pull request. The fix quickly worked its way into the design system!
 
 Directly involving end-users in the development of features and fixes is exactly the kind of participation that makes the USWDS community so special. We have the chance to see folks take USWDS components and “make them their own,” and we can count on rapid identification of potential issues, enabling us to respond quickly.
 

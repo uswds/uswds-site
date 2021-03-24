@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.14.1
+version: v1.19.0
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   'npm:chownr:20180731':
@@ -8,11 +8,11 @@ ignore:
         expires: '2019-04-06T15:19:32.382Z'
   SNYK-JS-AUTOLINKER-73494:
     - uswds > autolinker:
-        reason: None given
-        expires: '2021-03-21T22:33:04.895Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.511Z'
     - uswds > handlebars-helpers > helper-markdown > remarkable > autolinker:
-        reason: None given
-        expires: '2021-03-21T22:33:04.895Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.511Z'
     - uswds > handlebars-helpers > helper-md > remarkable > autolinker:
         reason: No patch available
         expires: '2020-09-12T03:55:15.828Z'
@@ -30,6 +30,9 @@ ignore:
     - uswds > gulp-stylelint > mkdirp > minimist:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      uswds > gulp-svg-sprite > svg-sprite > mocha > mkdirp > minimist:
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
     - uswds > @frctl/fractal > update-notifier > configstore > mkdirp > minimist:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
@@ -67,6 +70,9 @@ ignore:
     - uswds > mocha > yargs > yargs-parser:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
+      uswds > gulp-svg-sprite > svg-sprite > yargs > yargs-parser:
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
     - uswds > nyc > yargs > yargs-parser:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
@@ -137,8 +143,8 @@ ignore:
         expires: '2020-10-14T16:26:55.826Z'
   SNYK-JS-NODESASS-535498:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T08:01:00.238Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-03-21T22:33:04.905Z'
@@ -162,8 +168,8 @@ ignore:
         expires: '2021-04-04T20:28:57.894Z'
   SNYK-JS-NODESASS-535502:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T08:01:00.238Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-03-21T22:33:04.905Z'
@@ -187,8 +193,8 @@ ignore:
         expires: '2021-04-04T20:28:57.894Z'
   SNYK-JS-NODESASS-540956:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T08:01:00.238Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-03-21T22:33:04.905Z'
@@ -212,8 +218,8 @@ ignore:
         expires: '2021-04-04T20:28:57.894Z'
   SNYK-JS-NODESASS-540958:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T08:01:00.238Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-03-21T22:33:04.906Z'
@@ -237,8 +243,8 @@ ignore:
         expires: '2021-04-04T20:28:57.894Z'
   SNYK-JS-NODESASS-540964:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T08:01:00.238Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-03-21T22:33:04.906Z'
@@ -281,8 +287,8 @@ ignore:
         expires: '2020-10-14T16:26:55.826Z'
   SNYK-JS-NODESASS-540978:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T08:01:00.238Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-03-21T22:33:04.906Z'
@@ -306,8 +312,8 @@ ignore:
         expires: '2021-04-04T20:28:57.894Z'
   SNYK-JS-NODESASS-540980:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T08:01:00.238Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-03-21T22:33:04.906Z'
@@ -331,8 +337,8 @@ ignore:
         expires: '2021-04-04T20:28:57.894Z'
   SNYK-JS-NODESASS-540990:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T08:01:00.238Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-03-21T22:33:04.906Z'
@@ -356,8 +362,8 @@ ignore:
         expires: '2021-04-04T20:28:57.894Z'
   SNYK-JS-NODESASS-540992:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T08:01:00.238Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-03-21T22:33:04.906Z'
@@ -381,8 +387,8 @@ ignore:
         expires: '2021-04-04T20:28:57.894Z'
   SNYK-JS-NODESASS-540994:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T08:01:00.238Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-03-21T22:33:04.906Z'
@@ -406,8 +412,8 @@ ignore:
         expires: '2021-04-04T20:28:57.894Z'
   SNYK-JS-NODESASS-540996:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T08:01:00.238Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-03-21T22:33:04.906Z'
@@ -431,8 +437,8 @@ ignore:
         expires: '2021-04-04T20:28:57.894Z'
   SNYK-JS-NODESASS-540998:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-03-20T08:01:00.238Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-03-21T22:33:04.906Z'
@@ -456,8 +462,8 @@ ignore:
         expires: '2021-04-04T20:28:57.895Z'
   SNYK-JS-NODESASS-541000:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-01-11T18:00:56.004Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-03-21T22:33:04.906Z'
@@ -493,8 +499,8 @@ ignore:
         expires: '2021-04-21T21:29:09.263Z'
   SNYK-JS-NODESASS-541002:
     - uswds > gulp-sass > node-sass:
-        reason: No patch available
-        expires: '2021-01-11T18:00:56.004Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-03-21T22:33:04.906Z'
@@ -530,15 +536,15 @@ ignore:
         expires: '2021-04-21T21:29:09.263Z'
   'npm:braces:20180219':
     - uswds > nswatch > chokidar > anymatch > micromatch > braces:
-        reason: None given
-        expires: '2021-03-21T22:33:04.906Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
   SNYK-JS-AUTOLINKER-564438:
     - uswds > autolinker:
-        reason: None given
-        expires: '2021-03-21T22:33:04.895Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.511Z'
     - uswds > handlebars-helpers > helper-markdown > remarkable > autolinker:
-        reason: None given
-        expires: '2021-03-21T22:33:04.895Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.511Z'
     - uswds > handlebars-helpers > helper-md > remarkable > autolinker:
         reason: No patch available
         expires: '2020-09-12T03:55:15.828Z'
@@ -558,20 +564,20 @@ ignore:
         expires: '2020-06-27T22:01:23.325Z'
   SNYK-JS-LODASH-450202:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
-        reason: None given
-        expires: '2021-03-21T22:33:04.904Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
   SNYK-JS-LODASH-567746:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
-        reason: None given
-        expires: '2021-03-21T22:33:04.904Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
   SNYK-JS-LODASH-73638:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
-        reason: None given
-        expires: '2021-03-21T22:33:04.904Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
   SNYK-JS-LODASH-73639:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
-        reason: None given
-        expires: '2021-03-21T22:33:04.904Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
   'npm:ua-parser-js:20180227':
     - uswds > @frctl/fractal > browser-sync > ua-parser-js:
         reason: n/a
@@ -613,6 +619,9 @@ ignore:
     - gulp-eslint > eslint > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
+      uswds > @frctl/fractal > vorpal > inquirer > lodash:
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
     - gulp-eslint > eslint > inquirer > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
@@ -705,12 +714,12 @@ ignore:
         expires: '2021-03-21T22:33:04.904Z'
   SNYK-JS-LODASH-608086:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
-        reason: None given
-        expires: '2021-03-21T22:33:04.904Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
   'npm:lodash:20180130':
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
-        reason: None given
-        expires: '2021-03-21T22:33:04.895Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.511Z'
   SNYK-JS-TRIM-1017038:
     - uswds > @stylelint/postcss-markdown > remark > remark-parse > trim:
         reason: None given
@@ -733,6 +742,9 @@ ignore:
     - uswds > @frctl/core > highlight.js:
         reason: None given
         expires: '2021-01-11T18:00:56.003Z'
+      uswds > handlebars-helpers > helper-markdown > highlight.js:
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
     - uswds > handlebars-helpers > helper-markdown > highlight.js:
         reason: None given
         expires: '2021-01-11T18:00:56.003Z'
@@ -744,8 +756,8 @@ ignore:
         expires: '2021-03-21T22:33:04.897Z'
   SNYK-JS-MOCHA-561476:
     - uswds > gulp-svg-sprite > svg-sprite > mocha:
-        reason: None given
-        expires: '2021-03-21T22:33:04.904Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
   SNYK-JS-NODENOTIFIER-1035794:
     - node-notifier:
         reason: None given
@@ -884,18 +896,27 @@ ignore:
     - gulp-eslint > eslint > glob-parent:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
-      sass > chokidar > glob-parent:
-        reason: No upgrade or patch available
-        expires: '2021-04-22T13:53:58.430Z'
+      uswds > glob-stream > glob-parent:
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.511Z'
     - del > globby > fast-glob > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
+      uswds > glob-watcher > chokidar > glob-parent:
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.511Z'
     - uswds > del > globby > fast-glob > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
+      uswds > glob-base > glob-parent:
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.511Z'
     - sass > chokidar > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
+      uswds > nswatch > chokidar > glob-parent:
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
     - gulp > glob-watcher > chokidar > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
@@ -974,10 +995,16 @@ ignore:
     - gulp-scss-lint > vinyl-fs > glob-stream > glob-parent:
         reason: No upgrade or patch available
         expires: '2021-04-21T21:29:09.263Z'
+    - sass > chokidar > glob-parent:
+        reason: No upgrade or patch available
+        expires: '2021-04-22T13:53:58.430Z'
   SNYK-JS-NODESASS-1059081:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
         expires: '2021-04-04T20:28:57.894Z'
+      uswds > gulp-sass > node-sass:
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-03-21T22:33:04.905Z'
@@ -985,13 +1012,16 @@ ignore:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
         expires: '2021-04-04T20:28:57.894Z'
+      uswds > gulp-sass > node-sass:
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-03-21T22:33:04.905Z'
   SNYK-JS-ENGINEIO-1056749:
     - uswds > @frctl/fractal > @frctl/mandelbrot > @frctl/web > browser-sync > socket.io > engine.io:
-        reason: None given
-        expires: '2021-03-21T22:33:04.896Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.511Z'
   SNYK-JS-JSDOM-1075447:
     - uswds > jsdom:
         reason: None given
@@ -1000,42 +1030,27 @@ ignore:
     - gulp-sass > lodash:
         reason: None given
         expires: '2021-03-21T22:33:04.898Z'
-      gulp-eslint > eslint > lodash:
-        reason: No upgrade or patch available
-        expires: '2021-04-22T13:53:58.430Z'
+      uswds > @frctl/fractal > vorpal > inquirer > lodash:
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
     - snyk > lodash:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
-      gulp-eslint > eslint > inquirer > lodash:
-        reason: No upgrade or patch available
-        expires: '2021-04-22T13:53:58.430Z'
     - snyk > inquirer > lodash:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
-      gulp-eslint > eslint > table > lodash:
-        reason: No upgrade or patch available
-        expires: '2021-04-22T13:53:58.430Z'
     - gulp-eslint > eslint > lodash:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
-      gulp-sass > lodash:
-        reason: No upgrade or patch available
-        expires: '2021-04-22T13:53:58.430Z'
     - gulp-sass > node-sass > lodash:
         reason: No upgrade or patch available
         expires: '2021-04-22T13:53:58.430Z'
     - uswds > gulp-sass > lodash:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
-      gulp-sass > node-sass > sass-graph > lodash:
-        reason: No upgrade or patch available
-        expires: '2021-04-22T13:53:58.430Z'
     - snyk > snyk-nuget-plugin > lodash:
         reason: None given
         expires: '2021-03-20T08:01:00.236Z'
-      gulp-sass > node-sass > gaze > globule > lodash:
-        reason: No upgrade or patch available
-        expires: '2021-04-22T13:53:58.430Z'
     - uswds > @babel/core > lodash:
         reason: None given
         expires: '2021-03-20T08:01:00.236Z'
@@ -1246,46 +1261,49 @@ ignore:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: None given
         expires: '2021-03-21T22:33:04.904Z'
+    - gulp-eslint > eslint > lodash:
+        reason: No upgrade or patch available
+        expires: '2021-04-22T13:53:58.430Z'
+    - gulp-eslint > eslint > inquirer > lodash:
+        reason: No upgrade or patch available
+        expires: '2021-04-22T13:53:58.430Z'
+    - gulp-eslint > eslint > table > lodash:
+        reason: No upgrade or patch available
+        expires: '2021-04-22T13:53:58.430Z'
+    - gulp-sass > lodash:
+        reason: No upgrade or patch available
+        expires: '2021-04-22T13:53:58.430Z'
+    - gulp-sass > node-sass > sass-graph > lodash:
+        reason: No upgrade or patch available
+        expires: '2021-04-22T13:53:58.430Z'
+    - gulp-sass > node-sass > gaze > globule > lodash:
+        reason: No upgrade or patch available
+        expires: '2021-04-22T13:53:58.430Z'
   SNYK-JS-LODASH-1040724:
     - gulp-sass > lodash:
         reason: None given
         expires: '2021-03-21T22:33:04.898Z'
-      gulp-eslint > eslint > lodash:
-        reason: No upgrade or patch available
-        expires: '2021-04-22T13:53:58.430Z'
+      uswds > @frctl/fractal > vorpal > inquirer > lodash:
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
     - snyk > lodash:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
-      gulp-eslint > eslint > inquirer > lodash:
-        reason: No upgrade or patch available
-        expires: '2021-04-22T13:53:58.430Z'
     - snyk > inquirer > lodash:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
-      gulp-eslint > eslint > table > lodash:
-        reason: No upgrade or patch available
-        expires: '2021-04-22T13:53:58.430Z'
     - gulp-eslint > eslint > lodash:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
-      gulp-sass > lodash:
-        reason: No upgrade or patch available
-        expires: '2021-04-22T13:53:58.430Z'
     - gulp-sass > node-sass > lodash:
         reason: No upgrade or patch available
         expires: '2021-04-22T13:53:58.430Z'
     - uswds > gulp-sass > lodash:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
-      gulp-sass > node-sass > sass-graph > lodash:
-        reason: No upgrade or patch available
-        expires: '2021-04-22T13:53:58.430Z'
     - snyk > snyk-nuget-plugin > lodash:
         reason: None given
         expires: '2021-03-20T08:01:00.236Z'
-      gulp-sass > node-sass > gaze > globule > lodash:
-        reason: No upgrade or patch available
-        expires: '2021-04-22T13:53:58.430Z'
     - uswds > @babel/core > lodash:
         reason: None given
         expires: '2021-03-20T08:01:00.236Z'
@@ -1496,6 +1514,46 @@ ignore:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: None given
         expires: '2021-03-21T22:33:04.904Z'
+    - gulp-eslint > eslint > lodash:
+        reason: No upgrade or patch available
+        expires: '2021-04-22T13:53:58.430Z'
+    - gulp-eslint > eslint > inquirer > lodash:
+        reason: No upgrade or patch available
+        expires: '2021-04-22T13:53:58.430Z'
+    - gulp-eslint > eslint > table > lodash:
+        reason: No upgrade or patch available
+        expires: '2021-04-22T13:53:58.430Z'
+    - gulp-sass > lodash:
+        reason: No upgrade or patch available
+        expires: '2021-04-22T13:53:58.430Z'
+    - gulp-sass > node-sass > sass-graph > lodash:
+        reason: No upgrade or patch available
+        expires: '2021-04-22T13:53:58.430Z'
+    - gulp-sass > node-sass > gaze > globule > lodash:
+        reason: No upgrade or patch available
+        expires: '2021-04-22T13:53:58.430Z'
+  SNYK-JS-HOSTEDGITINFO-1088355:
+    - gulp-sass > node-sass > meow > normalize-package-data > hosted-git-info:
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
+    - uswds > cac > read-pkg-up > read-pkg > normalize-package-data > hosted-git-info:
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
+    - gulp > gulp-cli > yargs > read-pkg-up > read-pkg > normalize-package-data > hosted-git-info:
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
+  SNYK-JS-LODASHTEMPLATE-1088054:
+    - uswds > autolinker > gulp-header > lodash.template:
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
+  SNYK-JS-XMLDOM-1084960:
+    - uswds > gulp-svg-sprite > svg-sprite > xmldom:
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
+  SNYK-JS-XMLHTTPREQUESTSSL-1082936:
+    - uswds > @frctl/fractal > @frctl/mandelbrot > @frctl/web > browser-sync > browser-sync-ui > socket.io-client > engine.io-client > xmlhttprequest-ssl:
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:37:45.512Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

@@ -8,7 +8,7 @@
     {% if include.image %}
       <a
         class="media_link"
-        href={% include component-preview-link.html component=include.component %}
+        href={% include component-preview-link.html demoLink=include.demoLink component=include.component %}
       >
         <img
           src="{{ site.baseurl }}{{ include.image }}"

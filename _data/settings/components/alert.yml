@@ -6,7 +6,7 @@ contents:
     default: 1
     type: units
   - name: Font family
-    usage:
+    usage: Font family of the alert
     var: $theme-alert-font-family
     default: '"ui"'
     type: family

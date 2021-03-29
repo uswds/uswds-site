@@ -1,0 +1,1 @@
+- **Just one sign-in option.** If you can reduce your sign-in options to one authentication system, we recommend avoiding this pattern.

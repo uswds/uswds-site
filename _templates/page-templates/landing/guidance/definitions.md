@@ -1,0 +1,2 @@
+- **Hero:** Heroes are used at the top of your landing page to help set the tone for the content of your site and to help users understand what your brand is all about. The hero offers a callout which provides a high-level overview of the content on the site and will often reference the hero image that sits behind it.
+- **Graphic list:** The graphic list is used to showcase a number of related items and their respective images in a grid pattern.

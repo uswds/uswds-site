@@ -1,0 +1,1 @@
+- **Track usage.** Include the 404 error code in the page `<title>` to assist with analytics. Use the [Digital Analytics Program’s vpv404 substring filter](https://digital.gov/2020/10/27/zero-pageviews-is-your-goal-finding-problem-pages-with-website-analytics/) to identify 404 pages and their referrers and help you track down and correct problematic links.

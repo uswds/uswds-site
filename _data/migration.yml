@@ -1157,7 +1157,7 @@ variables:
     notes:
   - v1: '$site-max-width'
     v1_value: '1040px'
-    v2: '$theme-site-max-width'
+    v2: '$theme-grid-container-max-width'
     v2_value: 'desktop'
     kind: 'units'
     location: 'spacing'

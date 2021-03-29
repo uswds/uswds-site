@@ -515,7 +515,6 @@ $theme-column-gap-lg:               3;
 $theme-column-gap-mobile:           2;
 $theme-column-gap-desktop:          4;
 $theme-grid-container-max-width:    'desktop';
-$theme-site-max-width:              'desktop';
 $theme-site-margins-breakpoint:     'desktop';
 $theme-site-margins-width:          4;
 $theme-site-margins-mobile-width:   2;

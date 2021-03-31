@@ -15,6 +15,8 @@ const dev_plugins = [autoprefixer({ cascade: false })];
 
 const prod_plugins = [csso({ forceMediaMerge: false })];
 
+const uswds_path = './node_modules/uswds/dist/scss/stylesheets';
+
 gulp.task('build-sass-fonts', () => {
   return gulp
     .src('./css/uswds-fonts.scss')
@@ -22,7 +24,7 @@ gulp.task('build-sass-fonts', () => {
     .pipe(
       sass
         .sync({
-          includePaths: ['./node_modules/uswds/dist/scss', './css/settings'],
+          includePaths: [uswds_path, './css/settings'],
           outputStyle: 'expanded'
         })
         .on('error', (error) => {
@@ -70,7 +72,7 @@ gulp.task('build-sass-custom', () => {
     .pipe(
       sass
         .sync({
-          includePaths: ['./node_modules/uswds/dist/scss', './css/settings'],
+          includePaths: [uswds_path, './css/settings'],
           outputStyle: 'expanded'
         })
         .on('error', (error) => {
@@ -94,7 +96,7 @@ gulp.task("build-next-sass", function() {
     .pipe(
       sass
         .sync({
-          includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
+          includePaths: [uswds_path, "./css/settings"],
           outputStyle: "expanded"
         })
         .on("error", function(error) {
@@ -118,7 +120,7 @@ gulp.task("build-sass-utilities", function() {
     .pipe(
       sass
         .sync({
-          includePaths: ['./node_modules/uswds/dist/scss', './css/settings'],
+          includePaths: [uswds_path, './css/settings'],
           outputStyle: 'expanded'
         })
         .on('error', (error) => {

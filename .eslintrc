@@ -19,6 +19,5 @@
         "node": true,
         "browser": true
     },
-    "extends": "eslint:recommended",
     "ignorePatterns": "node_modules/"
 }

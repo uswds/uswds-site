@@ -3,7 +3,7 @@ permalink: /maturity-model/
 layout: styleguide
 title: USWDS maturity model
 category: How to use USWDS
-lead: Use the USWDS maturity model to adopt the design system incrementally and design and build better digital experiences for the American public.
+lead: Use the USWDS maturity model to adopt the design system incrementally and design and build better digital experiences.
 subnav:
 - text: "1: Integrate design principles"
   href: '#level-1-integrate-design-principles'

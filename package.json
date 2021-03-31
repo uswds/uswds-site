@@ -36,6 +36,7 @@
     "build-css-custom": "gulp build-sass-custom",
     "build-css-dev": "gulp build-sass-dev",
     "build-css-fonts": "gulp build-sass-fonts",
+    "build-next-css": "gulp build-next-sass",
     "build-css-layout-grid": "gulp build-sass-layout-grid",
     "build-css-utilities": "gulp build-sass-utilities",
     "build-fonts": "gulp fonts",
@@ -72,7 +73,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.5.0",
-    "node-notifier": "^9.0.0",
+    "node-notifier": "^9.0.1",
     "postcss": "^8.2.1",
     "postcss-csso": "^5.0.0",
     "sass": "^1.26.10",
@@ -116,6 +117,9 @@
     ],
     "./css/uswds-fonts.scss": [
       "build-css-fonts"
+    ],
+    "./css/uswds-next.scss": [
+      "build-next-css"
     ],
     "./css/uswds-utilities.scss": [
       "build-css-utilities"

@@ -87,7 +87,31 @@ gulp.task('build-sass-custom', () => {
     .pipe(gulp.dest('_site/assets/css'));
 });
 
-gulp.task('build-sass-utilities', () => {
+gulp.task("build-next-sass", function() {
+  return gulp
+    .src("./css/uswds-next.scss")
+    .pipe(sourcemaps.init({ largeFile: true }))
+    .pipe(
+      sass
+        .sync({
+          includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
+          outputStyle: "expanded"
+        })
+        .on("error", function(error) {
+          sass.logError.bind(this)(error);
+
+          if (process.env.NODE_ENV !== "development") {
+            process.exit(1);
+          }
+        })
+    )
+    .pipe(postcss(dev_plugins))
+    .pipe(sourcemaps.write("."))
+    .pipe(gulp.dest("assets/css"))
+    .pipe(gulp.dest("_site/assets/css"));
+});
+
+gulp.task("build-sass-utilities", function() {
   return gulp
     .src('./css/uswds-utilities.scss')
     .pipe(sourcemaps.init({ largeFile: true }))
@@ -121,7 +145,17 @@ gulp.task(
   )
 );
 
-gulp.task('build-sass-prod', () => {
+gulp.task(
+  "build-next-dev",
+  gulp.parallel(
+    "build-sass-fonts",
+    "build-sass-components",
+    "build-next-sass",
+    "build-sass-utilities"
+  )
+);
+
+gulp.task("build-sass-prod", function() {
   return gulp
     .src([
       './assets/css/uswds-fonts.css',
@@ -142,7 +176,29 @@ gulp.task('build-sass-prod', () => {
     .pipe(gulp.dest('_site/assets/css'));
 });
 
-gulp.task('build-sass', gulp.series('build-sass-dev', 'build-sass-prod'));
+gulp.task("build-next-prod", function() {
+  return gulp
+    .src([
+      "./assets/css/uswds-fonts.css",
+      "./assets/css/uswds-components.css",
+      "./assets/css/uswds-custom.css",
+      "./assets/css/uswds-utilities.css",
+      "./assets/css/uswds-next.css"
+    ])
+    .pipe(
+      sourcemaps.init({
+        largeFile: true,
+        loadMaps: true
+      })
+    )
+    .pipe(concat("styles-next.css"))
+    .pipe(postcss(prod_plugins))
+    .pipe(sourcemaps.write("."))
+    .pipe(gulp.dest("assets/css"))
+    .pipe(gulp.dest("_site/assets/css"));
+});
+
+gulp.task("build-sass", gulp.series("build-sass-dev", "build-next-dev", "build-sass-prod", "build-next-prod"));
 
 gulp.task('scss-lint', (done) => {
   if (!cFlags.test) {

@@ -10,7 +10,7 @@ lead: We have an active open source community of content specialists, designers,
 ---
 
 ## Join the community
-The USWDS community has been working together since 2015 to make it easier to build accessible, mobile-friendly government websites for the American public.
+The USWDS community has been working together since 2015 to make it easier to build accessible, mobile-friendly government websites.
 
 Join us in the `#uswds-public` channel in Slack by [filling out our form](https://chat.18f.gov/). The community is open to the public. Members include content specialists, designers, engineers, and other technologists who share ideas, challenges, lessons learned, and best practices in design and design systems.
 

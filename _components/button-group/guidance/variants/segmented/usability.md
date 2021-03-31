@@ -1,0 +1,1 @@
+- **Avoid ambiguity of current state.** Make sure current states are clearly communicated and understood.

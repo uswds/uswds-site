@@ -1,0 +1,2 @@
+- **Any time it would be misleading.** The identifier should be used to reduce confusion. Avoid using the identifier on any site meant only for testing or otherwise not meant to be identified as an official government website.
+- **Redundant content.** Don't add the identifier without removing any duplicate links from your existing site footer. Favor the common links and content in the identifier over any equivalent content in your site footer.

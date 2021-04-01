@@ -485,16 +485,6 @@ body {
   }
 }
 
-// Ensure the homepage accordion displays properly
-// TODO: make sure line height is added in USWDS accordion component and that
-// list styles don't override accordion styles
-#main-content {
-  // scss-lint:disable IdSelector
-  .usa-accordion__button {
-    line-height: 1;
-  }
-}
-
 .site-h2 {
   @include typeset("lang", "xl", 2);
   color: color($site-ink);
@@ -1251,7 +1241,7 @@ code[class*="language-"] {
 }
 
 code[class*="language-plaintext"] {
-    color: inherit;
+  color: inherit;
 }
 
 .alignment-example {
@@ -2844,7 +2834,9 @@ $theme-table-column-gap: 4;
 
 // because any accordion__content inside of a bordered accordion get's
 // borders, we need to overide for this nested component preview.
-.site-component-preview .usa-accordion:not(.usa-accordion--bordered) .usa-accordion__content {
+.site-component-preview
+  .usa-accordion:not(.usa-accordion--bordered)
+  .usa-accordion__content {
   border: none;
 }
 
@@ -3683,7 +3675,6 @@ body {
 }
 
 .site-accordion-code {
-
   // Don't show margin at the top of the first form-group's label
   .usa-accordion__content > .usa-form-group:first-child,
   .usa-date-range-picker > .usa-form-group:first-child {
@@ -3704,4 +3695,17 @@ body {
   .usa-accordion__content {
     overflow: visible;
   }
+}
+
+blockquote {
+  @include u-border-left("1px", "primary");
+  margin-left: 0;
+  padding-left: units(2);
+}
+
+@import "custom-styles/card-policy";
+@import "custom-styles/highlight";
+
+[href^="http"]:not([href*=".gov"])::after {
+  display: none;
 }

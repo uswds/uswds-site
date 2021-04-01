@@ -6,6 +6,8 @@
 
 {% assign guidanceFormat = "{:.usa-content-list}" %}
 {% assign guidanceNullLength = guidanceFormat.size | plus: 1 %}
+{% assign guidanceFirst = page.guidance | where: "first", true %}
+{% assign guidanceLast = page.guidance | where: "first", null %}
 
 {%- capture about -%}
 {% if page.component.about %}
@@ -42,28 +44,40 @@
 
 <h2 id="{{ componentKey }}-guidance" class="site-component-section-title">Guidance</h2>
 <div class="site-component-usage">
+  {% for item in guidanceFirst %}
+  <h3 id="{{ item.heading | slugify }}" class="usa-heading">{{ item.heading }}</h3>
+  {% if item.html %}
+  {% include_relative {{item.path}} -%}
+  {% else %}
+  {%- capture thisText -%}
+  {{ guidanceFormat }}
+  {% include_relative {{item.path}} -%}
+  {% endcapture %}
+  {{ thisText | markdownify }}
+  {% endif %}
+  {% endfor %}
   {% if about.size > guidanceNullLength %}
-  <h3>About</h3>
+  <h3 id="about">About</h3>
   {{ about | markdownify }}
   {% endif %}
   {% if when_to_use.size > guidanceNullLength %}
-  <h3>When to use the {{ page.title | downcase }} {{ page.type }}</h3>
+  <h3 id="when-to-use-the-{{ page.title | slugify }}">When to use the {{ page.title | downcase }} {{ page.type }}</h3>
   {{ when_to_use | markdownify }}
   {% endif %}
   {% if when_to_consider_something_else.size > guidanceNullLength %}
-  <h3>When to consider something else</h3>
+  <h3 id="when-to-consider-something-else">When to consider something else</h3>
   {{ when_to_consider_something_else | markdownify }}
   {% endif %}
   {% if usability.size > guidanceNullLength %}
-  <h3>Usability guidance</h3>
+  <h3 id="usability-guidance">Usability guidance</h3>
   {{ usability | markdownify }}
   {% endif %}
   {% if accessibility.size > guidanceNullLength %}
-  <h3 class="usa-heading">Accessibility</h3>
+  <h3  id="accessibility" class="usa-heading">Accessibility</h3>
   {{ accessibility | markdownify }}
   {% endif %}
   {% if implementation.size > guidanceNullLength or page.variants or site.data.settings.components[settingsKey] %}
-  <h3 class="usa-heading">Using the {{ page.title | downcase }} {{ page.type }}</h3>
+  <h3  id="using-the-{{ page.title | slugify }}" class="usa-heading">Using the {{ page.title | downcase }} {{ page.type }}</h3>
   {{ implementation | markdownify }}
   {% if page.category == "Components" %}
   <h4 id="component-settings">{{ page.title }} settings</h4>
@@ -79,8 +93,8 @@
   %}
   {% endif %}
   {% endif %}
-  {% for item in page.guidance %}
-  <h3 class="usa-heading">{{ item.heading }}</h3>
+  {% for item in guidanceLast %}
+  <h3 id="{{ item.heading | slugify }}" class="usa-heading">{{ item.heading }}</h3>
   {%- capture thisText -%}
   {{ guidanceFormat }}
   {% include_relative {{item.path}} -%}
@@ -88,7 +102,7 @@
   {{ thisText | markdownify }}
   {% endfor %}
   {% if references.size > guidanceNullLength %}
-  <h3>References</h3>
+  <h3 id="references">References</h3>
   {{ references | markdownify }}
   {% endif %}
 </div>

@@ -8,6 +8,19 @@ component:
 guidance:
   - heading: Additional information
     path: guidance/additional-information.md
+  - heading: Overview
+    path: guidance/overview.md
+    first: true
+    html: true
+  - heading: "What teams must do"
+    path: guidance/usability-must.md
+    first: true
+  - heading: "What teams should do"
+    path: guidance/usability-should.md
+    first: true
+  - heading: "What teams should not do"
+    path: guidance/usability-should-not.md
+    first: true
 lead: A link connects users to a different page or further information.
 permalink: /components/link/
 redirect_from:

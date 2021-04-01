@@ -99,7 +99,7 @@
     "minimist": "^1.2.3",
     "nswatch": "^0.2.0",
     "simplecrawler": "^1.1.8",
-    "uswds": "github:uswds/uswds#library--develop",
+    "uswds": "github:uswds/uswds#jm-library-add-required",
     "yamljs": "^0.3.0"
   },
   "watch": {

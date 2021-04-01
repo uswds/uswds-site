@@ -7,7 +7,7 @@
       <ul class="usa-icon-list usa-icon-list--primary margin-top-2">
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="/assets/img/sprite.svg#local_police"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#local_police"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Provide required notification for non-federal external links.
@@ -20,7 +20,7 @@
       <ul class="usa-icon-list usa-icon-list--success margin-top-2">
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="/assets/img/sprite.svg#check_circle"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Include the destination for all external links.
@@ -28,7 +28,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="/assets/img/sprite.svg#check_circle"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Use unique, meaningful language.
@@ -36,7 +36,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="/assets/img/sprite.svg#check_circle"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Show file type and size.
@@ -44,7 +44,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="/assets/img/sprite.svg#check_circle"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Identify in-page links.
@@ -52,7 +52,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="/assets/img/sprite.svg#check_circle"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Summarize in-page links on long pages.
@@ -60,7 +60,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="/assets/img/sprite.svg#check_circle"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Use direct links.
@@ -68,7 +68,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="/assets/img/sprite.svg#check_circle"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Write out email and phone links.
@@ -76,7 +76,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="/assets/img/sprite.svg#check_circle"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Check with your IT security department regarding email link best practices.
@@ -84,7 +84,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="/assets/img/sprite.svg#check_circle"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Encode email and phone links.
@@ -97,7 +97,7 @@
       <ul class="usa-icon-list usa-icon-list--error margin-top-2">
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="/assets/img/sprite.svg#cancel"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#cancel"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Don’t rely on color.
@@ -105,7 +105,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="/assets/img/sprite.svg#cancel"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#cancel"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Don’t use generic link text.
@@ -113,7 +113,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="/assets/img/sprite.svg#cancel"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#cancel"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Don’t use the same link text for different URLs on the same page.
@@ -121,7 +121,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="/assets/img/sprite.svg#cancel"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#cancel"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Don’t use external link icons.
@@ -129,7 +129,7 @@
         </li>
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
-            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="/assets/img/sprite.svg#cancel"></use></svg>
+            <svg class="usa-icon" aria-hidden="true" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#cancel"></use></svg>
           </div>
           <div class="usa-icon-list__content">
             Don't roadblock external links with a modal window or dialog box.

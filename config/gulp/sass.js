@@ -48,7 +48,7 @@ gulp.task('build-sass-components', () => {
     .pipe(
       sass
         .sync({
-          includePaths: ['./css/settings'],
+          includePaths: [uswds_path, './css/settings'],
           outputStyle: 'expanded'
         })
         .on('error', (error) => {

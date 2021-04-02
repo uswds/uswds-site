@@ -12,13 +12,13 @@ guidance:
     path: guidance/overview.md
     first: true
     html: true
-  - heading: "What teams must do"
+  - heading: "What you must do"
     path: guidance/usability-must.md
     first: true
-  - heading: "What teams should do"
+  - heading: "What you should do"
     path: guidance/usability-should.md
     first: true
-  - heading: "What teams should not do"
+  - heading: "What you shouldn't do"
     path: guidance/usability-should-not.md
     first: true
 lead: A link connects users to a different page or further information.

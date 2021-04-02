@@ -21,7 +21,8 @@
       <div id="card-policy-6" class="card-policy-body usa-accordion__content usa-prose">
         <p><strong>11. Ensure Information Quality and Accuracy</strong></p>
         <p>The Internet enables agencies to communicate information quickly and easily to a wide audience, which, while of great benefit to society, also increases the potential harm that can result from disseminating incorrect information. Taking this into account, information disseminated from Federal Government websites and digital services, or from third-party services on behalf of the Government, is expected to be authoritative and reliable.</p>
-        <p>The Information Quality Act applies to all information disseminated from Federal websites, and in certain cases, to information published to third-party sites on behalf of the Government. OMB has published Information Quality Guidelines to help agencies meet this requirement.<sup>26</sup></p>
+        <p>The Information Quality Act applies to all information disseminated from Federal websites, and in certain cases, to information published to third-party sites on behalf of the Government. OMB has published Information Quality Guidelines to help agencies meet this requirement.</p>
+        <p>[...]</p>
         <p><strong>E.</strong> Agencies must clearly identify external links from their websites, and to the extent practicable update or remove the links when the external information is no longer sufficiently accurate, relevant, timely, necessary or complete.</p>
         <ol>
           <li><span class="highlight">Agency websites must clearly state that the content of external links to non-Federal Agency websites is not endorsed by the Federal Government and is not subject to Federal information quality, privacy, security, and related guidelines.</span></li>

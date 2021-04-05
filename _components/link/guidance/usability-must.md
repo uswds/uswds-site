@@ -23,10 +23,10 @@
         <p>The Internet enables agencies to communicate information quickly and easily to a wide audience, which, while of great benefit to society, also increases the potential harm that can result from disseminating incorrect information. Taking this into account, information disseminated from Federal Government websites and digital services, or from third-party services on behalf of the Government, is expected to be authoritative and reliable.</p>
         <p>The Information Quality Act applies to all information disseminated from Federal websites, and in certain cases, to information published to third-party sites on behalf of the Government. OMB has published Information Quality Guidelines to help agencies meet this requirement.</p>
         <p>[...]</p>
-        <p><span class="highlight"><strong>E.</strong> Agencies must clearly identify external links from their websites, and to the extent practicable update or remove the links when the external information is no longer sufficiently accurate, relevant, timely, necessary or complete.</span></p>
+        <p><span class="text-highlight"><strong>E.</strong> Agencies must clearly identify external links from their websites, and to the extent practicable update or remove the links when the external information is no longer sufficiently accurate, relevant, timely, necessary or complete.</span></p>
         <ol>
-          <li><span class="highlight">Agency websites must clearly state that the content of external links to non-Federal Agency websites is not endorsed by the Federal Government and is not subject to Federal information quality, privacy, security, and related guidelines.</span></li>
-          <li><span class="highlight">Agencies should choose the best approach to identify external links to users in a way that minimizes the impact on the usability of their websites and digital services.</span></li>
+          <li><span class="text-highlight">Agency websites must clearly state that the content of external links to non-Federal Agency websites is not endorsed by the Federal Government and is not subject to Federal information quality, privacy, security, and related guidelines.</span></li>
+          <li><span class="text-highlight">Agencies should choose the best approach to identify external links to users in a way that minimizes the impact on the usability of their websites and digital services.</span></li>
         </ol>
         <a class="src" href="https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2017/m-17-06.pdf" title="View ">View the full text of M-17-06 [whitehouse.gov; PDF; 1.2 MB]</a>
       </div>

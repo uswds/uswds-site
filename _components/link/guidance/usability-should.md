@@ -26,6 +26,13 @@
 
 - **Summarize in-page links on long pages.** Add a list of all anchor links on that page to break out the sections for the user to see at a glance. A list at the top of the page or in a sidebar/side-nav are two common places to display this list.
 
+    **Example:**
+    > In this article <br/>
+    > Overview <br/>
+    > **About this topic** <br/>
+    > More about this topic <br/>
+    > Conclusion
+
 - **Use direct links.** Send the user directly to the most topically relevant page instead of linking to a homepage or landing page and expecting users to find subpages.
 
 - **Write out email and phone links.** For `mailto:` and `tel:` links, write out email addresses and phone numbers so users can read this information without having to commit to clicking.
@@ -36,3 +43,10 @@
 - **Check with your IT security department regarding email link best practices.** While displaying email addresses and phone numbers provides a better experience for users, it can increase spam for the email recipient. One approach is to use a group email to protect individuals. The email address will remain the same even as staff and organizational structures change. Also consider using a contact form instead of showing email addresses.
 
 - **Encode email and phone links.** Some browsers don’t automatically display a clickable link for email addresses or phone numbers, so encode email and phone links with `mailto:` and `tel:`. Include the country code in phone numbers to support international users.
+
+    **Example:**
+
+    {:.site-terminal}
+    ```html
+    <p>Email or call us at <a href="mailto:program-team@agency.gov">program-team@agency.gov</a> or <a href="tel:1-800-555-1234">1-800-555-1234</a> to request support.</p>
+    ```

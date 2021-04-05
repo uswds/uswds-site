@@ -9,3 +9,5 @@
 - **Consider what happens when the modal is dismissed.** The page underneath should not reload or change to new content.
 
 - **Avoid long content that requires scrolling.** If a lot of content is needed, make sure it’s clear that users have to scroll to see all of it. Lengthy content can be problematic because it pushes buttons out of a user’s initial view, which may cause confusion.
+
+- **Don't roadblock external links with a modal window or dialog box.** Allow users to follow external links without taking a separate action to acknowledge leaving your site. Roadblock notices result in a poor user experience and are redundant with both the link's destination context and your site's policies and notices page (see [Link guidance]({{ site.baseurl }}/components/link)).

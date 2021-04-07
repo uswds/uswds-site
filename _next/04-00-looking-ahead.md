@@ -51,9 +51,9 @@ We’ve identified specific opportunity areas that will move us closer to a desi
 
 2. Provide more robust guidance and support to get started with the design system
 
-3. Better leverage related efforts within the [Technology Transformation Services](https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services) (TTS) and broader government digital services community
+3. Better leverage related efforts within the [Technology Transformation Services [gsa.gov]](https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services) (TTS) and broader government digital services community
 
-We’ll provide regular updates on our progress in [monthly calls](https://digital.gov/events/), the [public Slack channel]({{ site.baseurl }}/about/community/), and the [product roadmap]({{ site.baseurl }}/about/product-roadmap/).
+We’ll provide regular updates on our progress in [monthly calls [digital.gov]](https://digital.gov/events/), the [public Slack channel]({{ site.baseurl }}/about/community/), and the [product roadmap]({{ site.baseurl }}/about/product-roadmap/).
 
 
 </div>

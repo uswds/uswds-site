@@ -14,7 +14,7 @@ If possible, enable HTTP/2 support on your server for dramatic performance gains
 
 ## What is HTTP/2?
 
-HTTP/2 is the next version of [HTTP [wikipedia.org]](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol), the protocol that powers the web. HTTP/2 was originally known as [SPDY [wikipedia.org]](https://en.wikipedia.org/wiki/SPDY), a protocol invented by Google that was safer, faster, and more efficient than HTTP 1.1. Once SPDY gained traction among browser and server makers, the [Internet Engineering Task Force [ietf.org]]([IETF]) adopted it as the basis for HTTP/2.
+HTTP/2 is the next version of [HTTP [wikipedia.org]](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol), the protocol that powers the web. HTTP/2 was originally known as [SPDY [wikipedia.org]](https://en.wikipedia.org/wiki/SPDY), a protocol invented by Google that was safer, faster, and more efficient than HTTP 1.1. Once SPDY gained traction among browser and server makers, the [Internet Engineering Task Force [ietf.org]][IETF] adopted it as the basis for HTTP/2.
 
 ## How it differs from HTTP 1.1
 

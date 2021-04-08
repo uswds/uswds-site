@@ -20,9 +20,9 @@ USWDS state color tokens are designed to be useful and effective for any project
 
 {:#uswds-state-color-tokens}
 ## State color tokens
-The state color palette is divided into five high-level role-based color families: `info`, `error`, `warning`, `success`, and `disabled`.
+The state color palette is divided into five high-level role-based color families: `info`, `error`, `warning`, `success`, `emergency`, and `disabled`.
 
-Each color family except `disabled` has five possible lightness grades, from `lighter` to `darker`, though not every family needs to include a color at each grade. Some grades may be set to `false` in your project's theme settings.
+Each color family except `emergency` and `disabled` has five possible lightness grades, from `lighter` to `darker`, though not every family needs to include a color at each grade. Some grades may be set to `false` in your project's theme settings.
 
 Customize state color tokens using the variables listed below in `_uswds_theme_color.scss` with [system color tokens]({{ site.baseurl }}/design-tokens/color/system-tokens/). Set any unused theme color to `false`.
 

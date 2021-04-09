@@ -116,17 +116,17 @@ Their experiences, needs, pain points, and bright spots led directly to the deve
 
 
 
-[^1]: What We Have Learned from Federal Customers in FY20 (January 15, 2021) and Reflection on Federal Customer Experience Efforts in FY20 (January 8, 2021). Retrieved February 9, 2021, from <https://www.performance.gov/cx/blog/>
+[^1]: What We Have Learned from Federal Customers in FY20 (January 15, 2021) and Reflection on Federal Customer Experience Efforts in FY20 (January 8, 2021). Retrieved February 9, 2021, from [https://www.performance.gov/cx/blog/ [performance.gov]](https://www.performance.gov/cx/blog/)
 
-[^2]: Americans’ Views of Government: Low Trust, but Some Positive Performance Ratings. Pew Research Center. (September 14, 2020). Retrieved from <https://www.pewresearch.org/politics/2020/09/14/americans-views-of-government-low-trust-but-some-positive-performance-ratings/>
+[^2]: Americans’ Views of Government: Low Trust, but Some Positive Performance Ratings. Pew Research Center. (September 14, 2020). Retrieved from [https://www.pewresearch.org/politics/2020/09/14/americans-views-of-government-low-trust-but-some-positive-performance-ratings/ [pewresearch.org]](https://www.pewresearch.org/politics/2020/09/14/americans-views-of-government-low-trust-but-some-positive-performance-ratings/)
 
 [^3]: D’Emidio, T., Greenberg, S., Heidenreich, K., Klier, J., Wagner, J., & Weber, T. (2019). [The global case for customer experience in government](https://www.mckinsey.com/~/media/McKinsey/Industries/Public%20and%20Social%20Sector/Our%20Insights/The%20global%20case%20for%20customer%20experience%20in%20government/The-global-case-for-customer-experience-in-government-vF.pdf) (Public Sector Practice, Rep.). McKinsey & Company.
 
-[^4]: Digital Dashboard. (n.d.). Retrieved January 06, 2021, from <https://digitaldashboard.gov/>
+[^4]: Digital Dashboard. (n.d.). Retrieved January 06, 2021, from [https://digitaldashboard.gov/ [digitaldashboard.gov]](https://digitaldashboard.gov/)
 
-[^5]: The US government’s web traffic. (n.d.). Retrieved January 06, 2021, from <https://analytics.usa.gov/>
+[^5]: The US government’s web traffic. (n.d.). Retrieved January 06, 2021, from [https://analytics.usa.gov/ [usa.gov]](https://analytics.usa.gov/)
 
-[^6]: The US government’s web traffic. (n.d.). Retrieved February 5, 2021, from <https://analytics.usa.gov/>
+[^6]: The US government’s web traffic. (n.d.). Retrieved February 5, 2021, from [https://analytics.usa.gov/ [usa.gov]](https://analytics.usa.gov/)
 
 </div>
     </div>

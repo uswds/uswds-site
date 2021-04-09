@@ -70,7 +70,7 @@ We’ll provide regular updates on our progress in [monthly calls [digital.gov]]
 * footnotes will be placed here. This line is necessary
 {:footnotes }
 
-[^8]: Dotgov Data - List of federal .gov domains. (n.d.). Retrieved January 06, 2021, from <https://home.dotgov.gov/data/>
+[^8]: Dotgov Data - List of federal .gov domains. (n.d.). Retrieved January 06, 2021, from [https://home.dotgov.gov/data/ [dotgov.gov]](https://home.dotgov.gov/data/)
 
 </div>
     </div>

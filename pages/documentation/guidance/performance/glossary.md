@@ -89,7 +89,7 @@ The following gives a brief overview of a handful of metrics. If you're looking 
 - Can be calculated in any environment, on almost any browser
 
 #### Cons
-- It's not a valid metric for perceived user performance because the page may be fully rendered and active before the `load` event fires. For more information see: [Steve Souders, moving beyond window onload](https://www.stevesouders.com/blog/2013/05/13/moving-beyond-window-onload/).
+- It's not a valid metric for perceived user performance because the page may be fully rendered and active before the `load` event fires. For more information see: [Steve Souders, moving beyond window onload [stevesouders.com]](https://www.stevesouders.com/blog/2013/05/13/moving-beyond-window-onload/).
 
 #### How to measure
 Onload can be measured in the browser with the [performance API [mozilla.org]](https://developer.mozilla.org/en-US/docs/Web/API/Performance), which is available in all browsers except Internet Explorer 9 or earlier and Safari:

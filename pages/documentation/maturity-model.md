@@ -21,7 +21,7 @@ subnav:
       <div class="padding-top-2">
       <h2 class="font-lang-lg margin-top-0 line-height-sans-2">You don’t need to adopt the design system all at once.</h2>
       <p>Adopt the design system incrementally through the levels of the USWDS maturity model. Your project can progress both through higher levels of maturity and with more comprehensive maturity at each level. Most importantly, using the design system is about integrating the <a href="{{ site.baseurl }}/design-principles">USWDS Design Principles</a>, common goals that align teams across government and serve as an evaluative lens for design and implementation decisions.</p>
-      <p>As you adopt and adapt the design system, be sure to contribute back to the system. Use the <a href="https://github.com/uswds/uswds">USWDS GitHub page</a> to:</p>
+      <p>As you adopt and adapt the design system, be sure to contribute back to the system. Use the <a href="https://github.com/uswds/uswds">USWDS GitHub page [github.com]</a> to:</p>
       <ul>
         <li>Report problems or bugs</li>
         <li>Contribute new research or guidance</li>

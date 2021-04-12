@@ -896,6 +896,9 @@ ignore:
     - gulp-eslint > eslint > glob-parent:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
+      gulp-dart-scss > sass > chokidar > glob-parent:
+        reason: No upgrade or patch available.
+        expires: '2021-05-12T14:47:13.530Z'
     - del > globby > fast-glob > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
@@ -1030,6 +1033,9 @@ ignore:
     - gulp-sass > lodash:
         reason: None given
         expires: '2021-03-21T22:33:04.898Z'
+      snyk > snyk-nodejs-lockfile-parser > @yarnpkg/core > lodash:
+        reason: No upgrade or patch available.
+        expires: '2021-05-12T14:47:13.530Z'
     - snyk > lodash:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
@@ -1283,6 +1289,9 @@ ignore:
     - gulp-sass > lodash:
         reason: None given
         expires: '2021-03-21T22:33:04.898Z'
+      snyk > snyk-nodejs-lockfile-parser > @yarnpkg/core > lodash:
+        reason: No upgrade or patch available.
+        expires: '2021-05-12T14:47:13.530Z'
     - snyk > lodash:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
@@ -1536,15 +1545,15 @@ ignore:
     - gulp-sass > node-sass > meow > normalize-package-data > hosted-git-info:
         reason: No direct upgrade or patch.
         expires: '2021-04-23T15:37:45.512Z'
-      gulp-sass > node-sass > meow > read-pkg-up > read-pkg > normalize-package-data > hosted-git-info:
-        reason: No direct upgrade or patch.
-        expires: '2021-04-23T15:51:58.850Z'
     - uswds > cac > read-pkg-up > read-pkg > normalize-package-data > hosted-git-info:
         reason: No direct upgrade or patch.
         expires: '2021-04-23T15:37:45.512Z'
     - gulp > gulp-cli > yargs > read-pkg-up > read-pkg > normalize-package-data > hosted-git-info:
         reason: No direct upgrade or patch.
         expires: '2021-04-23T15:37:45.512Z'
+    - gulp-sass > node-sass > meow > read-pkg-up > read-pkg > normalize-package-data > hosted-git-info:
+        reason: No direct upgrade or patch.
+        expires: '2021-04-23T15:51:58.850Z'
   SNYK-JS-LODASHTEMPLATE-1088054:
     - uswds > autolinker > gulp-header > lodash.template:
         reason: No direct upgrade or patch.

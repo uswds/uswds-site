@@ -42,23 +42,16 @@ subnav:
 
 ### Resources
 
-#### Government resources
-
 - [Usability testing with Steve Krug [digital.gov]](https://digital.gov/event/2018/06/14/usability-testing-with-steve-krug/)
-- [18F's human-centered design methods [methods.18f.gov]](https://methods.18f.gov/)
-- [18F's research guidelines [handbook.18f.gov]](https://handbook.18f.gov/research-guidelines/)
-- [Interview checklist [methods.18f.gov]](https://methods.18f.gov/interview-checklist/)
-- [Tips for capturing the best data from user interviews [18f.gsa.gov]](https://18f.gsa.gov/2016/02/09/tips-for-capturing-the-best-data-from-user-interviews/)
-- [How to address barriers to user-centered design [18f.gsa.gov]](https://18f.gsa.gov/2019/11/07/barriers-to-governments-adoption-of-user-centered-design-and-how-to-address-them/)
-- [Three ways to manage research projects remotely [18f.gsa.gov]](https://18f.gsa.gov/2017/09/27/three-ways-to-manage-research-projects/)
+- [18F's human-centered design methods [18f.gov]](https://methods.18f.gov/)
+- [18F's research guidelines [18f.gov]](https://handbook.18f.gov/research-guidelines/)
+- [Interview checklist [18f.gov]](https://methods.18f.gov/interview-checklist/)
+- [Tips for capturing the best data from user interviews [gsa.gov]](https://18f.gsa.gov/2016/02/09/tips-for-capturing-the-best-data-from-user-interviews/)
+- [How to address barriers to user-centered design [gsa.gov]](https://18f.gsa.gov/2019/11/07/barriers-to-governments-adoption-of-user-centered-design-and-how-to-address-them/)
+- [Three ways to manage research projects remotely [gsa.gov]](https://18f.gsa.gov/2017/09/27/three-ways-to-manage-research-projects/)
 - [Driving innovation with design education by the Lab@OPM [youtube.com]](https://www.youtube.com/watch?v=DGDCd2ELpok)
 - [The Foundations of Agile, Part I [digital.gov]](https://digital.gov/event/2019/11/04/foundations-agile-i/)
 - [The Foundations of Agile, Part II [digital.gov]](https://digital.gov/event/2019/11/05/foundations-agile-ii/)
-
-#### Non-government resources
-
-- [The laws of UX [lawsofux.com]](https://lawsofux.com/)
-- [A List Apart: Articles, books, and events for people who make websites [alistapart.com]](https://alistapart.com/)
 
 ### Practical Actions
 
@@ -92,30 +85,20 @@ subnav:
 
 ### Resources
 
-#### Government resources
-
-- [Digital Services Playbook [playbook.cio.gov]](https://playbook.cio.gov/)
-- [U.S. Web Design System performance guidelines [designsystem.digital.gov]](https://designsystem.digital.gov/performance/)
-- [The HTTPS-only standard [https.cio.gov]](https://https.cio.gov/)
+- [Digital Services Playbook [cio.gov]](https://playbook.cio.gov/)
+- [U.S. Web Design System performance guidelines](https://designsystem.digital.gov/performance/)
+- [The HTTPS-only standard [cio.gov]](https://https.cio.gov/)
 - [.gov domain registration [dotgov.gov]](https://home.dotgov.gov/)
 - [Federal plain language guidelines [plainlanguage.gov]](https://plainlanguage.gov/guidelines/)
 - [How to design effective communications [PDF; oes.gsa.gov]](https://oes.gsa.gov/assets/abstracts/OES%20Learnings%20on%20Writing%20Better%20Communications%202018.pdf)
 - [Best practices for multilingual websites [digital.gov]](https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/)
-
-#### Non-government resources
-
-- [Ten usability heuristics [nngroup.com]](https://www.nngroup.com/articles/ten-usability-heuristics/)
-- [A link is a promise [nngroup.com]](https://www.nngroup.com/articles/link-promise/)
-- [Preventing user errors [nngroup.com]](https://www.nngroup.com/articles/slips/)
-- [Designing for trust [TED.com]](https://www.ted.com/talks/joe_gebbia_how_airbnb_designs_for_trust)
-- [Humane by design [humanebydesign.com]](https://humanebydesign.com/)
 
 ### Practical actions
 
 - **Identify yourself.** Clearly identify your site as a federal government site.
 - **Build with modern best practices.** See the [Digital Services Playbook [cio.gov]](https://playbook.cio.gov/).
 - **Review your content.** Review your content at least twice per year to assure information is correct and non-redundant.
-- **Use the proper government domain.** Use a [.gov [dotgov.gov]](https://home.dotgov.gov/) top-level domain and [https [cio.gov]](https://https.cio.gov/) with up-to-date certificates.
+- **Use the proper government domain.** Use a [.gov top-level domain [dotgov.gov]](https://home.dotgov.gov/) and [https [cio.gov]](https://https.cio.gov/) with up-to-date certificates.
 - **Add the USWDS banner component.** This shows your site is an official government website and explain the benefits of secure connections.
 - **Identify link rot.** Find and fix broken links on your website.
 - **Keep communications simple.** Ensure content is easy, personal, and timely.
@@ -148,26 +131,16 @@ subnav:
 
 ### Resources
 
-#### Government resources
-
 - [The Section 508 accessibility program [section508.gov]](https://www.section508.gov/)
-- [Accessibility for Teams guide [accessibility.digital.gov]](https://accessibility.digital.gov/)
+- [Accessibility for Teams guide [digital.gov]](https://accessibility.digital.gov/)
 - [Find your Section 508 Coordinator [section508.gov]](https://www.section508.gov/tools/coordinator-listing)
-- [Section 508 ICT Testing Baseline [section508coordinators.github.com ]](https://section508coordinators.github.io/ICTTestingBaseline/)
+- [Section 508 ICT Testing Baseline [github.com ]](https://section508coordinators.github.io/ICTTestingBaseline/)
 - [Learn about writing in plain language [plainlanguage.gov]](https://www.plainlanguage.gov/)
 - [Plain language resources [plainlanguage.gov]](https://www.plainlanguage.gov/resources/)
-- [18F's accessibility guide [accessibility.18f.gov]](https://accessibility.18f.gov/)
+- [18F's accessibility guide [18f.gov]](https://accessibility.18f.gov/)
 - [Accessibility Requirements Tool (ART) for contracting [section508.gov]](https://www.section508.gov/buy/accessibility-requirements-tool)
 - [Understanding universal design [section508.gov]](https://www.section508.gov/blog/Universal-Design-What-is-it)
-
-#### Non-government resources
-
 - [Web Accessibility Perspectives Videos [w3.org]](https://www.w3.org/WAI/perspective-videos/)
-- [Inclusive design principles [inclusivedesignprinciples.org]](https://inclusivedesignprinciples.org/)
-- [Accessibility fundamentals with Rob Dodson [youtube.com]](https://www.youtube.com/watch?v=z8xUCzToff8)
-- [Microsoft's inclusive design manual [microsoft.com]](https://www.microsoft.com/design/inclusive/)
-- [Inclusive components by Heydon Pickering [inclusive-components.design]](https://inclusive-components.design/)
-- [Humane by design [humanebydesign.com]](https://humanebydesign.com/)
 
 ### Practical actions
 
@@ -210,27 +183,16 @@ subnav:
 
 ### Resources
 
-#### Government resources
-
 - [How design systems help us work together [digital.gov]](https://digital.gov/event/2018/05/31/this-how-we-work-together-with-brad-frost/)
-- [The U.S. Web Design System [designsystem.digital.gov]](https://designsystem.digital.gov/)
-- [The Journey Mapping method [methods.18f.gov]](https://methods.18f.gov/decide/journey-mapping/)
+- [U.S. Web Design System](https://designsystem.digital.gov/)
+- [Journey mapping method [18f.gov]](https://methods.18f.gov/decide/journey-mapping/)
 - [Embracing responsive design [digital.gov]](https://digital.gov/2013/08/20/embracing-responsive-design/)
 - [Example: USDA's design and brand guidelines [usda.gov]](https://www.usda.gov/digital-strategy/design-and-brand)
-- [Example: Centers for Medicare and Medicaid Services design system [design.cms.gov]](https://design.cms.gov/)
-- [Federal Front Door research findings [labs.usa.gov]](https://labs.usa.gov/)
+- [Example: Centers for Medicare and Medicaid Services design system [cms.gov]](https://design.cms.gov/)
+- [Federal Front Door research findings [usa.gov]](https://labs.usa.gov/)
 - [Sharing Quality Services Cross-Agency Performance goal [performance.gov]](https://www.performance.gov/CAP/sharing-quality-services/)
 - [Eight Principles of Mobile-Friendliness [digital.gov]](https://digital.gov/resources/mobile/principles/)
 - [Test on real devices with the Federal Crowdsource Mobile Testing Program [digital.gov]](https://digital.gov/services/mobile-application-testing-program/)
-
-#### Non-government resources
-
-- [Journey mapping 101 [nngroup.com]](https://www.nngroup.com/articles/journey-mapping-101/)
-- [Service design 101 [nngroup.com]](https://www.nngroup.com/articles/service-design-101/)
-- [Service blueprints  [nngroup.com]](https://www.nngroup.com/articles/service-blueprints-definition/)
-- [Using a service ecosystem map [service-design-network.org]](https://www.service-design-network.org/community-knowledge/using-a-service-ecosystem-to-quickly-grasp-complexity)
-- [Ten usability heuristics  [nngroup.com]](https://www.nngroup.com/articles/ten-usability-heuristics/)
-- [Atomic Design [bradfrost.com]](http://atomicdesign.bradfrost.com/table-of-contents/)
 
 ### Practical actions
 
@@ -270,8 +232,6 @@ subnav:
 
 ### Resources
 
-#### Government resources
-
 - [Guide to the Digital Analytics Program (DAP) [digital.gov]](https://digital.gov/services/dap/)
 - [Getting started with Search.gov [youtube.com]](https://www.youtube.com/watch?v=p-y9T23ziEg)
 - [Office of Evaluation Sciences [oes.gsa.gov]](https://oes.gsa.gov/)
@@ -284,16 +244,11 @@ subnav:
 - [Customer Experience Toolkit [digital.gov]](https://digital.gov/resources/customer-experience-toolkit/)
 - [Top tasks: prioritizing what is truly important [digital.gov]](https://www.youtube.com/watch?v=5llJ98UkXYI)
 
-#### Non-government resources
-
-- [Google Design: Stop Talking, Start Listening [medium.com]](https://medium.com/google-design/stop-talking-start-listening-7a555ec8ebb1)
-- [Google Design: Listening as design strategy [youtube.com]](https://www.youtube.com/watch?v=6_mHCOAAEI8)
-
 ### Practical actions
 
 - **Actively collect issues.** Offer users a mechanism to report bugs and issues, and be responsive to these reports.
 - **Collect direct feedback.** Actively collect, review, and address feedback about your product or service (such as through surveys or customer email).
-- **Analyze analytics data.** Implement both the governmentwide [Digital Analytics Program [digital.gov]](https://digital.gov/services/dap/) (DAP) and agency-specific analytics services and analyze the data.
+- **Analyze analytics data.** Implement both the governmentwide [Digital Analytics Program (DAP) [digital.gov]](https://digital.gov/services/dap/) and agency-specific analytics services and analyze the data.
 - **Analyze search results.** Include a search function on your site (through [Search.gov](https://search.gov/) or another tool) and analyze the search data.
 - **Analyze social media data.** If you use social media platforms, analyze the data from these platforms.
 - **Publish metrics.** Publish metrics internally and externally.

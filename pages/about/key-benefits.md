@@ -68,7 +68,7 @@ Get off the redesign treadmill. When the design system improves, so does your pr
 ## A cross-functional design system community
 **Break down silos and grow your skills alongside web professionals across government.**
 
-As more and more agencies adopt and adapt the design system, the community of content managers, designers, and developers that use it grows. We chat, ask questions, and share solutions in a public Slack open to design system users (sign up to [join the USWDS community](https://designsystem.digital.gov/about/community/)) and also through [our GitHub organization](https://github.com/uswds). Your contributions to the community — which can range from simple questions to new components — help colleagues with their own questions and implementations.
+As more and more agencies adopt and adapt the design system, the community of content managers, designers, and developers that use it grows. We chat, ask questions, and share solutions in a public Slack open to design system users (sign up to [join the USWDS community]({{ site.baseurl }}/about/community/)) and also through [our GitHub organization [github.com]](https://github.com/uswds). Your contributions to the community — which can range from simple questions to new components — help colleagues with their own questions and implementations.
 
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
@@ -93,23 +93,24 @@ We know that making the case for USWDS is important and sometimes difficult. Her
     <div class="usa-icon-list__icon text-ink">
       <svg class="usa-icon" aria-hidden="true" role="img" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="30" cy="30" r="30" fill="#2672DE"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1657 36.3262L17.6016 31.762L21.9812 27.3824L26.5453 31.9465L38.0917 20.4001L42.4714 24.7798L30.925 36.3262L30.9251 36.3262L26.5454 40.7059L26.5454 40.7058L22.1657 36.3262Z" fill="white">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1657 36.3262L17.6016 31.762L21.9812 27.3824L26.5453 31.9465L38.0917 20.4001L42.4714 24.7798L30.925 36.3262L30.9251 36.3262L26.5454 40.7059L26.5454 40.7058L22.1657 36.3262Z" fill="white" />
       </svg>
     </div>
     <div class="usa-icon-list__content">
       <p><b>Use these key benefits listed to make the case to your team and management.</b> You may customize the themes and messages for your audience, and email us at <a href="mailto:uswds@support.digitalgov.gov">uswds@support.digitalgov.gov</a> if you have feedback on things to add or remove from this list.</p>
     </div>
+
   </li>
 
   <li class="usa-icon-list__item margin-bottom-2">
     <div class="usa-icon-list__icon text-ink">
       <svg class="usa-icon" aria-hidden="true" role="img" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="30" cy="30" r="30" fill="#2672DE"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1657 36.3262L17.6016 31.762L21.9812 27.3824L26.5453 31.9465L38.0917 20.4001L42.4714 24.7798L30.925 36.3262L30.9251 36.3262L26.5454 40.7059L26.5454 40.7058L22.1657 36.3262Z" fill="white">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1657 36.3262L17.6016 31.762L21.9812 27.3824L26.5453 31.9465L38.0917 20.4001L42.4714 24.7798L30.925 36.3262L30.9251 36.3262L26.5454 40.7059L26.5454 40.7058L22.1657 36.3262Z" fill="white" />
       </svg>
     </div>
     <div class="usa-icon-list__content">
-      <p><b>See the <a href="https://designsystem.digital.gov/documentation/sample-contract-language/"> sample contract language for 21st Century IDEA</a></b>. You may customize the themes and messages for your audience, and email us at <a href="mailto:uswds@support.digitalgov.gov">uswds@support.digitalgov.gov</a> we published, which you may use to document requirements related to website modernization in your various contracts.</p>
+      <p><b>See the <a href="{{ site.baseurl }}/documentation/sample-contract-language/"> sample contract language for 21st Century IDEA</a></b> we published, which you may use to document requirements related to website modernization in your various contracts.</p>
     </div>
   </li>
-  </ul>
+</ul>

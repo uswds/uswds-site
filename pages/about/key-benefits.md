@@ -11,12 +11,12 @@ The U.S. Web Design System (USWDS) is a toolkit of principles, guidance, and cod
 
 There are many ways to build a website or service. We designed USWDS to deliver unique benefits to government teams:
 
-- Compliance from the start
-- Proven design solutions that users expect
-- Team alignment and common goals
-- Mission focus
-- A cross-functional design system community
-- Effective stewardship of public resources
+- [Compliance from the start](#compliance-from-the-start)
+- [Proven design solutions that users expect](#proven-design-solutions-that-users-expect)
+- [Team alignment and common goals](#team-alignment-and-common-goals)
+- [Mission focus](#mission-focus)
+- [A cross-functional design system community](#a-cross-functional-design-system-community)
+- [Effective stewardship of public resources](#effective-stewardship-of-public-resources)
 
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}

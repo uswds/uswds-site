@@ -83,34 +83,36 @@ This process helps get the most from the teams that use the design system. It bu
 We are as committed as you are to public service, and we reflect this in our product, community, and customer support.
 
 
-{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
-## How to make the case for USWDS
-We know that making the case for USWDS is important and sometimes difficult. Here are a few tips!
+<div class="margin-top-7 border-05 border-primary-light bg-primary-lighter padding-3">
 
-<ul class="usa-icon-list usa-icon-list--size-lg margin-top-5 margin-bottom-4">
-  <li class="usa-icon-list__item margin-bottom-2">
-    <div class="usa-icon-list__icon text-ink">
-      <svg class="usa-icon" aria-hidden="true" role="img" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="30" cy="30" r="30" fill="#2672DE"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1657 36.3262L17.6016 31.762L21.9812 27.3824L26.5453 31.9465L38.0917 20.4001L42.4714 24.7798L30.925 36.3262L30.9251 36.3262L26.5454 40.7059L26.5454 40.7058L22.1657 36.3262Z" fill="white" />
-      </svg>
-    </div>
-    <div class="usa-icon-list__content">
-      <p><b>Use these key benefits listed to make the case to your team and management.</b> You may customize the themes and messages for your audience, and email us at <a href="mailto:uswds@support.digitalgov.gov">uswds@support.digitalgov.gov</a> if you have feedback on things to add or remove from this list.</p>
-    </div>
+  <h2 id="how-to-make-the-case" class="margin-top-0">How to make the case for USWDS</h2>
 
-  </li>
+  <p>
+    We know that making the case for USWDS is important and sometimes difficult. Here are a few tips!
+  </p>
 
-  <li class="usa-icon-list__item margin-bottom-2">
-    <div class="usa-icon-list__icon text-ink">
-      <svg class="usa-icon" aria-hidden="true" role="img" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="30" cy="30" r="30" fill="#2672DE"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1657 36.3262L17.6016 31.762L21.9812 27.3824L26.5453 31.9465L38.0917 20.4001L42.4714 24.7798L30.925 36.3262L30.9251 36.3262L26.5454 40.7059L26.5454 40.7058L22.1657 36.3262Z" fill="white" />
-      </svg>
-    </div>
-    <div class="usa-icon-list__content">
-      <p><b>See the <a href="{{ site.baseurl }}/documentation/sample-contract-language/"> sample contract language for 21st Century IDEA</a></b> we published, which you may use to document requirements related to website modernization in your various contracts.</p>
-    </div>
-  </li>
-</ul>
+  <ul class="usa-icon-list usa-icon-list--size-lg margin-top-5">
+    <li class="usa-icon-list__item margin-bottom-2">
+      <div class="usa-icon-list__icon text-blue">
+        <svg class="usa-icon" aria-hidden="true" role="img">
+          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
+        </svg>
+      </div>
+      <div class="usa-icon-list__content">
+        <p><b>Use these key benefits listed to make the case to your team and management.</b> You may customize the themes and messages for your audience, and email us at <a href="mailto:uswds@support.digitalgov.gov">uswds@support.digitalgov.gov</a> if you have feedback on things to add or remove from this list.</p>
+      </div>
+    </li>
+    <li class="usa-icon-list__item margin-bottom-2">
+      <div class="usa-icon-list__icon text-blue">
+        <svg class="usa-icon" aria-hidden="true" role="img">
+          <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
+        </svg>
+      </div>
+      <div class="usa-icon-list__content">
+        <p><b>See the <a href="{{ site.baseurl }}/documentation/sample-contract-language/"> sample contract language for 21st Century IDEA</a></b> we published, which you may use to document requirements related to website modernization in your various contracts.</p>
+      </div>
+    </li>
+  </ul>
+
+</div>

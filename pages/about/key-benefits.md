@@ -84,15 +84,15 @@ We are as committed as you are to public service, and we reflect this in our pro
 
 
 
-<div class="margin-top-7 border-05 border-primary-light bg-primary-lighter padding-3">
+<div class="margin-top-7 border-05 border-primary-light bg-primary-lighter padding-2 tablet:padding-3">
 
-  <h2 id="how-to-make-the-case" class="margin-top-0">How to make the case for USWDS</h2>
+  <h2 id="how-to-make-the-case" class="margin-y-0">How to make the case for USWDS</h2>
 
-  <p>
+  <p class="margin-top-1">
     We know that making the case for USWDS is important and sometimes difficult. Here are a few tips!
   </p>
 
-  <ul class="usa-icon-list usa-icon-list--size-lg margin-top-5">
+  <ul class="usa-icon-list usa-icon-list--size-lg margin-top-3">
     <li class="usa-icon-list__item">
       <div class="usa-icon-list__icon text-blue">
         <svg class="usa-icon" aria-hidden="true" role="img">

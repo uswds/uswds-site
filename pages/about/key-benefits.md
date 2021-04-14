@@ -93,7 +93,7 @@ We are as committed as you are to public service, and we reflect this in our pro
   </p>
 
   <ul class="usa-icon-list usa-icon-list--size-lg margin-top-5">
-    <li class="usa-icon-list__item margin-bottom-2">
+    <li class="usa-icon-list__item">
       <div class="usa-icon-list__icon text-blue">
         <svg class="usa-icon" aria-hidden="true" role="img">
           <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>
@@ -103,7 +103,7 @@ We are as committed as you are to public service, and we reflect this in our pro
         <p><b>Use these key benefits listed to make the case to your team and management.</b> You may customize the themes and messages for your audience, and email us at <a href="mailto:uswds@support.digitalgov.gov">uswds@support.digitalgov.gov</a> if you have feedback on things to add or remove from this list.</p>
       </div>
     </li>
-    <li class="usa-icon-list__item margin-bottom-2">
+    <li class="usa-icon-list__item">
       <div class="usa-icon-list__icon text-blue">
         <svg class="usa-icon" aria-hidden="true" role="img">
           <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#check_circle"></use>

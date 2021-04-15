@@ -3,6 +3,7 @@ title: Key benefits
 permalink: /about/key-benefits/
 redirect_from:
 - /key-benefits/
+- /why-use-uswds/
 layout: styleguide
 category: About
 lead: Using the U.S. Web Design System makes it easier to build accessible, mobile-friendly government websites. Here's why USWDS works for government teams.

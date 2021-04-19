@@ -97,6 +97,7 @@
     "merge-stream": "^2.0.0",
     "minimist": "^1.2.3",
     "nswatch": "^0.2.0",
+    "pa11y-ci": "^2.4.0",
     "simplecrawler": "^1.1.8",
     "yamljs": "^0.3.0"
   },

@@ -2789,8 +2789,14 @@ $theme-table-column-gap: 4;
       margin: 0;
     }
 
+    h2 {
+      @include typeset("lang", "lg", 2);
+      @include u-text("bold");
+    }
+
     h3 {
       @include typeset("lang", "lg", 2);
+      @include u-text("normal");
     }
 
     .site-text-intro {

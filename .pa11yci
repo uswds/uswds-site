@@ -1,6 +1,6 @@
 {
   "defaults": {
-    "concurrency": 4,
+    "concurrency": 8,
     "standard": "WCAG2AA",
     "runners": ["axe"]
   }

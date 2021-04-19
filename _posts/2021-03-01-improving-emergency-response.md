@@ -11,7 +11,7 @@ excerpt: USWDS Release 2.10 brings new components and updates as a result of our
 
 We recently conducted research with federal partners to better understand the challenges agencies face in dealing with emergency response situations like COVID-19, and how the design system can better support them in the future.
 
-{:.margin-left-3.margin-top-4.margin-bottom-5.text-italic.text-base}
+{:.margin-left-3.margin-top-4.margin-bottom-5.text-italic.text-base-dark}
 > “We keep telling agencies to do all this stuff and fix your websites. But there’s never any money for it. Particularly in the digital age of COVID-19, how can anything be more important than the presence of your website?”
 >
 > — From a thought-leader during interviews
@@ -64,7 +64,7 @@ The public needs to be able to easily understand and act on information publishe
 ### 2 - Prioritize information
 Communications can get chaotic when making frequent updates or coordinating several emergencies at once. Though many agencies use alert banners, they’re often inconsistent or try to convey too much information at once.
 
-{:.margin-left-3.margin-top-4.margin-bottom-5.text-italic.text-base}
+{:.margin-left-3.margin-top-4.margin-bottom-5.text-italic.text-base-dark}
 > “People can get alert banner happy during a response. At one point we had two banners with three or four links. This is important and new and urgent, but it can be a lot.”
 >
 > — From a manager during interviews
@@ -90,7 +90,7 @@ Communications can get chaotic when making frequent updates or coordinating seve
 
 Agency websites must gather information from multiple channels, and it can be challenging to determine how to incorporate and organize related news, press releases, and articles without it getting lost or becoming overwhelming.
 
-{:.margin-left-3.margin-top-4.margin-bottom-5.text-italic.text-base}
+{:.margin-left-3.margin-top-4.margin-bottom-5.text-italic.text-base-dark}
 > “How can we present news in a way that is not clunky? We’ve tried to slim it down but it's become a challenge. We have all these different partners and need a UI to support that—where the news is coming from, what type of news is it? That was a design challenge for us and is still a gap we have.”
 >
 > — From a manager during interviews
@@ -122,7 +122,7 @@ Standardizing common features that are used in an emergency helps to lessen the 
 
 Mobile devices often become a primary source of connection in an emergency. Agencies need a better way of meeting customer needs by helping them more easily complete actions and digest complex information quickly from a smaller screen
 
-{:.margin-left-3.margin-top-4.margin-bottom-5.text-italic.text-base}
+{:.margin-left-3.margin-top-4.margin-bottom-5.text-italic.text-base-dark}
 > “One big surprise we found during the COVID response was that even providers and first responders are using our website more on mobile than on desktop.”
 >
 > — From a designer during interviews

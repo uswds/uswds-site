@@ -2104,7 +2104,7 @@ li {
   @extend .utility-scope-button;
   @include u-bg("white");
   @include u-border(1px, "gray-10");
-  @include u-text("gray-20", strike);
+  @include u-text("gray-50", strike);
 }
 
 .utility-scope-button-active {

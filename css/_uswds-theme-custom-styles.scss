@@ -94,7 +94,7 @@ body {
   text-align: center;
 }
 
-.usa-prose site-prose {
+.usa-prose .site-prose {
   @include typeset("lang");
 }
 
@@ -1251,7 +1251,7 @@ code[class*="language-"] {
 }
 
 code[class*="language-plaintext"] {
-    color: inherit;
+  color: inherit;
 }
 
 .alignment-example {
@@ -2783,6 +2783,7 @@ $theme-table-column-gap: 4;
     h4,
     h5,
     h5 {
+      @include typeset("lang");
       @extend %header-margin;
       color: color("ink");
       margin: 0;
@@ -2844,7 +2845,9 @@ $theme-table-column-gap: 4;
 
 // because any accordion__content inside of a bordered accordion get's
 // borders, we need to overide for this nested component preview.
-.site-component-preview .usa-accordion:not(.usa-accordion--bordered) .usa-accordion__content {
+.site-component-preview
+  .usa-accordion:not(.usa-accordion--bordered)
+  .usa-accordion__content {
   border: none;
 }
 
@@ -3683,7 +3686,6 @@ body {
 }
 
 .site-accordion-code {
-
   // Don't show margin at the top of the first form-group's label
   .usa-accordion__content > .usa-form-group:first-child,
   .usa-date-range-picker > .usa-form-group:first-child {

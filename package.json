@@ -74,7 +74,7 @@
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.5.0",
     "node-notifier": "^9.0.1",
-    "postcss": "^8.2.1",
+    "postcss": "^8.2.10",
     "postcss-csso": "^5.0.0",
     "sass": "^1.32.8",
     "snyk": "^1.521.0",

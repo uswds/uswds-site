@@ -6,102 +6,102 @@ title: Text styles
 category: Utilities
 lead: Change the appearance of text. (Not all text styles are available in every typeface.)
 subnav:
-- text: Font style
-  href: '#font-style'
-- text: Font weight
-  href: '#font-weight'
-- text: Letterspacing
-  href: '#letterspacing'
-- text: Tabular numerals
-  href: '#font-feature-settings'
-- text: Text decoration
-  href: '#text-decoration'
-- text: Text decoration color
-  href: '#text-decoration-color'
-- text: Uppercase and lowercase
-  href: '#text-transform'
-- text: Vertical align
-  href: '#vertical-align'
-- text: Whitespace
-  href: '#whitespace'
-- text: Utility mixins
-  href: '#utility-mixins'
-- text: Advanced settings
-  href: '#advanced-settings'
+  - text: Font style
+    href: "#font-style"
+  - text: Font weight
+    href: "#font-weight"
+  - text: Letterspacing
+    href: "#letterspacing"
+  - text: Tabular numerals
+    href: "#font-feature-settings"
+  - text: Text decoration
+    href: "#text-decoration"
+  - text: Text decoration color
+    href: "#text-decoration-color"
+  - text: Uppercase and lowercase
+    href: "#text-transform"
+  - text: Vertical align
+    href: "#vertical-align"
+  - text: Whitespace
+    href: "#whitespace"
+  - text: Utility mixins
+    href: "#utility-mixins"
+  - text: Advanced settings
+    href: "#advanced-settings"
 
 utilities:
-- base:         text
-  var:          font-style
-  output:       true
-  responsive:   false
-  active:       false
-  focus:        false
-  hover:        false
-  visited:      false
-- base:         text
-  var:          font-weight
-  output:       true
-  responsive:   true
-  active:       false
-  focus:        false
-  hover:        false
-  visited:      false
-- base:         text
-  var:          letter-spacing
-  output:       true
-  responsive:   false
-  active:       false
-  focus:        false
-  hover:        false
-  visited:      false
-- base:         text
-  var:          font-feature-settings
-  output:       true
-  responsive:   false
-  active:       false
-  focus:        false
-  hover:        false
-  visited:      false
-- base:         text
-  var:          text-decoration
-  output:       true
-  responsive:   false
-  active:       false
-  focus:        false
-  hover:        true
-  visited:      false
-- base:         underline
-  var:          text-decoration-color
-  output:       true
-  responsive:   false
-  active:       false
-  focus:        false
-  hover:        true
-  visited:      false
-- base:         text
-  var:          text-transform
-  output:       true
-  responsive:   false
-  active:       false
-  focus:        false
-  hover:        false
-  visited:      false
-- base:         text
-  var:          vertical-align
-  output:       true
-  responsive:   false
-  active:       false
-  focus:        false
-  hover:        false
-  visited:      false
-- base:         text
-  var:          whitespace
-  output:       true
-  responsive:   false
-  active:       false
-  focus:        false
-  hover:        false
-  visited:      false
+  - base: text
+    var: font-style
+    output: true
+    responsive: false
+    active: false
+    focus: false
+    hover: false
+    visited: false
+  - base: text
+    var: font-weight
+    output: true
+    responsive: true
+    active: false
+    focus: false
+    hover: false
+    visited: false
+  - base: text
+    var: letter-spacing
+    output: true
+    responsive: false
+    active: false
+    focus: false
+    hover: false
+    visited: false
+  - base: text
+    var: font-feature-settings
+    output: true
+    responsive: false
+    active: false
+    focus: false
+    hover: false
+    visited: false
+  - base: text
+    var: text-decoration
+    output: true
+    responsive: false
+    active: false
+    focus: false
+    hover: true
+    visited: false
+  - base: underline
+    var: text-decoration-color
+    output: true
+    responsive: false
+    active: false
+    focus: false
+    hover: true
+    visited: false
+  - base: text
+    var: text-transform
+    output: true
+    responsive: false
+    active: false
+    focus: false
+    hover: false
+    visited: false
+  - base: text
+    var: vertical-align
+    output: true
+    responsive: false
+    active: false
+    focus: false
+    hover: false
+    visited: false
+  - base: text
+    var: whitespace
+    output: true
+    responsive: false
+    active: false
+    focus: false
+    hover: false
+    visited: false
 ---
 
 {% include tokens/get-system-colors.html %}
@@ -124,7 +124,7 @@ utilities:
 
 <section class="utilities-section">
 
-  {% include utilities/utilities-section-title-bar.html %}
+{% include utilities/utilities-section-title-bar.html %}
 
   <section class="utility" id="font-style">
     {% include utilities/utility-title-bar.html
@@ -177,7 +177,7 @@ utilities:
       </p>
       <p class="utility-example-container grid-row">
         <span class="grid-col-fill text-ls-1">.text-ls-1</span>
-        <span class="grid-col-auto font-mono-xs text-light">0.05em</span>
+        <span class="grid-col-auto font-mono-xs text-light">0.025em</span>
       </p>
       <p class="utility-example-container grid-row">
         <span class="grid-col-fill text-ls-2">.text-ls-2</span>
@@ -254,6 +254,7 @@ utilities:
         </div>
       {% endfor %}
     </section>
+
   </section>
 
   <section class="utility" id="text-transform">
@@ -540,17 +541,18 @@ utilities:
     </div>
   </div>
 
-  {% include utilities/utility-mixin-using.html %}
+{% include utilities/utility-mixin-using.html %}
+
 </section>
 
 <section id="advanced-settings" class="padding-top-4">
 <h2 class="site-h2 margin-y-0">Advanced settings</h2>
 
-  {% include utilities/responsive-variants.html %}
+{% include utilities/responsive-variants.html %}
 
-  {% include utilities/state-variants.html %}
+{% include utilities/state-variants.html %}
 
-  {% include utilities/output-control.html %}
+{% include utilities/output-control.html %}
 
   <section class="utilities-section margin-top-6">
     {% include utilities/values-intro.html %}

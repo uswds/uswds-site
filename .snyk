@@ -66,6 +66,9 @@ ignore:
     - uswds > gulp-svg-sprite > svg-sprite > mocha > mkdirp > minimist:
         reason: No direct upgrade or patch.
         expires: '2021-04-23T15:37:45.512Z'
+    - gulp-svg-sprite > svg-sprite > mocha > mkdirp > minimist:
+        reason: None given
+        expires: '2021-05-14T18:28:34.968Z'
   SNYK-JS-YARGSPARSER-560381:
     - uswds > mocha > yargs > yargs-parser:
         reason: Wait for USWDS 2.6.0
@@ -118,6 +121,9 @@ ignore:
     - uswds > gulp-svg-sprite > svg-sprite > yargs > yargs-parser:
         reason: No direct upgrade or patch.
         expires: '2021-04-23T15:37:45.512Z'
+    - gulp-svg-sprite > svg-sprite > yargs > yargs-parser:
+        reason: None given
+        expires: '2021-05-14T18:28:34.968Z'
   SNYK-JS-JSYAML-174129:
     - uswds > @frctl/fractal > sinon > build > jxLoader > js-yaml:
         reason: fractal
@@ -166,6 +172,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
         expires: '2021-04-04T20:28:57.894Z'
+    - gulp-sass > node-sass:
+        reason: No available upgrade or patch.
+        expires: '2021-05-14T18:28:34.968Z'
   SNYK-JS-NODESASS-535502:
     - uswds > gulp-sass > node-sass:
         reason: No direct upgrade or patch.
@@ -191,6 +200,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
         expires: '2021-04-04T20:28:57.894Z'
+    - gulp-sass > node-sass:
+        reason: No available upgrade or patch.
+        expires: '2021-05-14T18:28:34.968Z'
   SNYK-JS-NODESASS-540956:
     - uswds > gulp-sass > node-sass:
         reason: No direct upgrade or patch.
@@ -216,6 +228,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
         expires: '2021-04-04T20:28:57.894Z'
+    - gulp-sass > node-sass:
+        reason: No available upgrade or patch.
+        expires: '2021-05-14T18:28:34.968Z'
   SNYK-JS-NODESASS-540958:
     - uswds > gulp-sass > node-sass:
         reason: No direct upgrade or patch.
@@ -241,6 +256,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
         expires: '2021-04-04T20:28:57.894Z'
+    - gulp-sass > node-sass:
+        reason: No available upgrade or patch.
+        expires: '2021-05-14T18:28:34.968Z'
   SNYK-JS-NODESASS-540964:
     - uswds > gulp-sass > node-sass:
         reason: No direct upgrade or patch.
@@ -266,6 +284,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
         expires: '2021-04-04T20:28:57.894Z'
+    - gulp-sass > node-sass:
+        reason: No available upgrade or patch.
+        expires: '2021-05-14T18:28:34.968Z'
   SNYK-JS-NODESASS-540974:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
@@ -310,6 +331,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2021-04-04T20:28:57.894Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-05-14T18:28:34.968Z'
   SNYK-JS-NODESASS-540980:
     - uswds > gulp-sass > node-sass:
         reason: No direct upgrade or patch.
@@ -335,6 +359,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2021-04-04T20:28:57.894Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-05-14T18:28:34.968Z'
   SNYK-JS-NODESASS-540990:
     - uswds > gulp-sass > node-sass:
         reason: No direct upgrade or patch.
@@ -360,6 +387,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2021-04-04T20:28:57.894Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-05-14T18:28:34.968Z'
   SNYK-JS-NODESASS-540992:
     - uswds > gulp-sass > node-sass:
         reason: No direct upgrade or patch.
@@ -385,6 +415,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2021-04-04T20:28:57.894Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-05-14T18:28:34.968Z'
   SNYK-JS-NODESASS-540994:
     - uswds > gulp-sass > node-sass:
         reason: No direct upgrade or patch.
@@ -410,6 +443,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2021-04-04T20:28:57.894Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-05-14T18:28:34.968Z'
   SNYK-JS-NODESASS-540996:
     - uswds > gulp-sass > node-sass:
         reason: No direct upgrade or patch.
@@ -435,6 +471,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2021-04-04T20:28:57.894Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-05-14T18:28:34.968Z'
   SNYK-JS-NODESASS-540998:
     - uswds > gulp-sass > node-sass:
         reason: No direct upgrade or patch.
@@ -460,6 +499,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2021-04-04T20:28:57.895Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-05-14T18:28:34.968Z'
   SNYK-JS-NODESASS-541000:
     - uswds > gulp-sass > node-sass:
         reason: No direct upgrade or patch.
@@ -758,6 +800,9 @@ ignore:
     - uswds > gulp-svg-sprite > svg-sprite > mocha:
         reason: No direct upgrade or patch.
         expires: '2021-04-23T15:37:45.512Z'
+    - gulp-svg-sprite > svg-sprite > mocha:
+        reason: None given
+        expires: '2021-05-14T18:28:34.968Z'
   SNYK-JS-NODENOTIFIER-1035794:
     - node-notifier:
         reason: None given
@@ -1004,7 +1049,7 @@ ignore:
   SNYK-JS-NODESASS-1059081:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
-        expires: '2021-04-04T20:28:57.894Z'
+        expires: '2021-05-14T18:28:34.968Z'
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-03-21T22:33:04.905Z'
@@ -1014,7 +1059,7 @@ ignore:
   SNYK-JS-NODESASS-535500:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
-        expires: '2021-04-04T20:28:57.894Z'
+        expires: '2021-05-14T18:28:34.968Z'
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-03-21T22:33:04.905Z'
@@ -1285,6 +1330,12 @@ ignore:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No direct upgrade or patch.
         expires: '2021-04-23T15:37:45.512Z'
+    - gulp-svg-sprite > svg-sprite > lodash:
+        reason: None given
+        expires: '2021-05-14T18:28:34.968Z'
+    - gulp-svg-sprite > svg-sprite > async > lodash:
+        reason: None given
+        expires: '2021-05-14T18:28:34.968Z'
   SNYK-JS-LODASH-1040724:
     - gulp-sass > lodash:
         reason: None given
@@ -1541,6 +1592,12 @@ ignore:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No direct upgrade or patch.
         expires: '2021-04-23T15:37:45.512Z'
+    - gulp-svg-sprite > svg-sprite > lodash:
+        reason: None given
+        expires: '2021-05-14T18:28:34.968Z'
+    - gulp-svg-sprite > svg-sprite > async > lodash:
+        reason: None given
+        expires: '2021-05-14T18:28:34.968Z'
   SNYK-JS-HOSTEDGITINFO-1088355:
     - gulp-sass > node-sass > meow > normalize-package-data > hosted-git-info:
         reason: No direct upgrade or patch.
@@ -1562,10 +1619,17 @@ ignore:
     - uswds > gulp-svg-sprite > svg-sprite > xmldom:
         reason: No direct upgrade or patch.
         expires: '2021-04-23T15:37:45.512Z'
+    - gulp-svg-sprite > svg-sprite > xmldom:
+        reason: None given
+        expires: '2021-05-14T18:28:34.968Z'
   SNYK-JS-XMLHTTPREQUESTSSL-1082936:
     - uswds > @frctl/fractal > @frctl/mandelbrot > @frctl/web > browser-sync > browser-sync-ui > socket.io-client > engine.io-client > xmlhttprequest-ssl:
         reason: No direct upgrade or patch.
         expires: '2021-04-23T15:37:45.512Z'
+  SNYK-JS-POSTCSS-1090595:
+    - gulp-sourcemaps > @gulp-sourcemaps/identity-map > postcss:
+        reason: None given
+        expires: '2021-05-14T18:28:34.968Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

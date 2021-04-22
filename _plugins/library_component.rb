@@ -2,7 +2,7 @@ require 'open-uri'
 
 module Jekyll
   class LibraryComponentTag < Liquid::Tag
-    BASE_URL_ENV_VAR = 'FRACTAL_BASE_URL'
+    BASE_URL_ENV_VAR = 'LIBRARY_BASE_URL'
 
     def initialize(tag_name, name, tokens)
       super
@@ -41,7 +41,8 @@ module Jekyll
             "'fractal build' in the uswds directory."
           )
         end
-        html.gsub! "../../dist/", "#{site.baseurl}/assets/"
+        # Replace asset path from library to what site needs.
+        html.gsub! "../../img/", "#{site.baseurl}/assets/img/"
         cache[@name] = html
       end
       cache[@name]

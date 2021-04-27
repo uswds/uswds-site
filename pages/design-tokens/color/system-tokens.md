@@ -6,12 +6,12 @@ category: Design tokens
 lead: USWDS system color tokens are the complete palette of color tokens from which any project can build a theme palette.
 type: docs
 subnav:
-  - text: Red warm
-    href: '#red-warm'
-  - text: Red
-    href: '#red'
   - text: Red cool
     href: '#red-cool'
+  - text: Red
+    href: '#red'
+  - text: Red warm
+    href: '#red-warm'
   - text: Orange warm
     href: '#orange-warm'
   - text: Orange
@@ -59,12 +59,12 @@ subnav:
   - text: Using color tokens
     href: '#using-color-tokens'
 families:
-  - red-warm
-  - red-warm-vivid
-  - red
-  - red-vivid
   - red-cool
   - red-cool-vivid
+  - red
+  - red-warm
+  - red-warm-vivid
+  - red-vivid
   - orange-warm
   - orange-warm-vivid
   - orange

@@ -539,6 +539,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No upgrade or patch available
         expires: '2021-04-21T21:29:09.263Z'
+    - gulp-sass > node-sass:
+        reason: No upgrade or patch available
+        expires: '2021-05-22T23:38:06.635Z'
   SNYK-JS-NODESASS-541002:
     - uswds > gulp-sass > node-sass:
         reason: No direct upgrade or patch.
@@ -576,6 +579,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No upgrade or patch available
         expires: '2021-04-21T21:29:09.263Z'
+    - gulp-sass > node-sass:
+        reason: No upgrade or patch available
+        expires: '2021-05-22T23:38:06.635Z'
   'npm:braces:20180219':
     - uswds > nswatch > chokidar > anymatch > micromatch > braces:
         reason: No direct upgrade or patch.
@@ -599,7 +605,7 @@ ignore:
   SNYK-JS-GULPSCSSLINT-560114:
     - gulp-scss-lint:
         reason: No upgrade or patch available
-        expires: '2021-04-21T21:29:09.263Z'
+        expires: '2021-05-22T23:38:06.634Z'
   SNYK-JS-HTTPPROXY-569139:
     - uswds > @frctl/fractal > browser-sync > http-proxy:
         reason: n/a
@@ -1046,6 +1052,15 @@ ignore:
     - uswds > nswatch > chokidar > glob-parent:
         reason: No direct upgrade or patch.
         expires: '2021-04-23T15:37:45.512Z'
+    - gulp > glob-watcher > chokidar > glob-parent:
+        reason: No upgrade or patch available
+        expires: '2021-05-22T23:38:06.633Z'
+    - gulp > vinyl-fs > glob-stream > glob-parent:
+        reason: No upgrade or patch available
+        expires: '2021-05-22T23:38:06.633Z'
+    - gulp-scss-lint > vinyl-fs > glob-stream > glob-parent:
+        reason: No upgrade or patch available
+        expires: '2021-05-22T23:38:06.634Z'
   SNYK-JS-NODESASS-1059081:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
@@ -1336,6 +1351,12 @@ ignore:
     - gulp-svg-sprite > svg-sprite > async > lodash:
         reason: None given
         expires: '2021-05-14T18:28:34.968Z'
+    - pa11y-ci > lodash:
+        reason: None given
+        expires: '2021-05-22T23:38:06.634Z'
+    - pa11y-ci > async > lodash:
+        reason: None given
+        expires: '2021-05-22T23:38:06.634Z'
   SNYK-JS-LODASH-1040724:
     - gulp-sass > lodash:
         reason: None given
@@ -1598,6 +1619,12 @@ ignore:
     - gulp-svg-sprite > svg-sprite > async > lodash:
         reason: None given
         expires: '2021-05-14T18:28:34.968Z'
+    - pa11y-ci > lodash:
+        reason: None given
+        expires: '2021-05-22T23:38:06.634Z'
+    - pa11y-ci > async > lodash:
+        reason: None given
+        expires: '2021-05-22T23:38:06.635Z'
   SNYK-JS-HOSTEDGITINFO-1088355:
     - gulp-sass > node-sass > meow > normalize-package-data > hosted-git-info:
         reason: No direct upgrade or patch.

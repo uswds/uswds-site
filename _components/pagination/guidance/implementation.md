@@ -4,6 +4,6 @@
 
 - Use `usa-current` class to highlight the currently active page.
 
-- Add disabled attribute when there aren’t any pages before or after to navigate.
+- Add `disabled` and `aria-disabled` disabled attributes when there aren’t any pages before or after to navigate.
 
 - Use a unique aria-label if you have two pagination elements on the same page.

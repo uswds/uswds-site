@@ -11,7 +11,7 @@ contents:
     default: '"ui"'
     type: family
   - name: Icon size
-    description: Size of the alert icon
+    description: Size of the alert icon.
     var: $theme-alert-icon-size
     default: 4
     type: units

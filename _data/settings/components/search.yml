@@ -1,7 +1,7 @@
 name: Search
 contents:
   - name: Font family
-    description:
+    description: Font family of the search.
     var: $theme-search-font-family
     default: '"ui"'
     type: family

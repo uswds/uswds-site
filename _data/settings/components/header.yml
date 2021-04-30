@@ -1,7 +1,7 @@
 name: Header
 contents:
   - name: Font family
-    description:
+    description: Font family of the header.
     var: $theme-header-font-family
     default: '"ui"'
     type: family

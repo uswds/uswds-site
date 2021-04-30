@@ -6,6 +6,7 @@ contents:
     default: '"base-lighter"'
     type: color
   - name: Border radius
+    description: Border radius of card.
     var: $theme-card-border-radius
     default: '"lg"'
     type: units

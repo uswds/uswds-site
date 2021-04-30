@@ -16,6 +16,10 @@ subnav:
   href: '#medium-footer'
 - text: Slim footer
   href: '#slim-footer'
+- text: Guidance
+  href: '#footer-guidance'
+- text: Package
+  href: '#footer-package'
 tags:
   - slim
   - big

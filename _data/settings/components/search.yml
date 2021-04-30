@@ -6,7 +6,7 @@ contents:
     default: '"ui"'
     type: family
   - name: Min-width
-    description: Min-width of the search input
+    description: Min-width of the search input.
     var: $theme-search-min-width
     default: 27ch
     type: —

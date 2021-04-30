@@ -6,7 +6,7 @@ contents:
     default: '"ui"'
     type: family
   - name: Megamenu columns
-    description: Number of columns in the megamenu
+    description: Number of columns in the megamenu.
     var: $theme-megamenu-columns
     default: 3
     type: number

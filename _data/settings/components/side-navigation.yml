@@ -1,7 +1,7 @@
 name: Sidenav
 contents:
   - name: Current border width
-    description: Width of the current section indicator
+    description: Width of the current section indicator.
     var: $theme-sidenav-current-border-width
     default: 0.5
     type: units

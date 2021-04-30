@@ -66,7 +66,7 @@ contents:
   - name: Focus
     subsection: offset
     description: |
-      The offset between the element and the focus outline
+      The offset between the element and the focus outline.
     var: $theme-focus-offset
     default: 0
     type: units
@@ -81,14 +81,14 @@ contents:
   - name: Focus
     subsection: width
     description: |
-      The width of the focus outline
+      The width of the focus outline.
     var: $theme-focus-width
     default: 0.5
     type: units
 
   - name: Icon size
     description: |
-      The size of a standard UI icon (like a close box)
+      The size of a standard UI icon (like a close box).
     var: $theme-icon-image-size
     default: 2
     type: units

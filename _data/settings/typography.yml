@@ -442,7 +442,7 @@ contents:
     default: '"sm"'
     type: size
   - name: Body line height
-    usage:
+    description:
     var: $theme-body-line-height
     default: 5
     type: line-height
@@ -454,37 +454,37 @@ contents:
 
   - name: h1 font size
     section: true
-    usage:
+    description:
     var: $theme-h1-font-size
     default: '"2xl"'
     type: size
   - name: h2 font size
-    usage:
+    description:
     var: $theme-h2-font-size
     default: '"xl"'
     type: size
   - name: h3 font size
-    usage:
+    description:
     var: $theme-h3-font-size
     default: '"lg"'
     type: size
   - name: h4 font size
-    usage:
+    description:
     var: $theme-h4-font-size
     default: '"sm"'
     type: size
   - name: h5 font size
-    usage:
+    description:
     var: $theme-h5-font-size
     default: '"xs"'
     type: size
   - name: h6 font size
-    usage:
+    description:
     var: $theme-h6-font-size
     default: '"3xs"'
     type: size
   - name: Heading line height
-    usage:
+    description:
     var: $theme-heading-line-height
     default: 2
     type: line-height
@@ -501,17 +501,17 @@ contents:
 
   - name: Narrow measure
     section: true
-    usage:
+    description:
     var: $theme-text-measure-narrow
     default: 1
     type: measure
   - name: Default measure
-    usage:
+    description:
     var: $theme-text-measure
     default: 4
     type: measure
   - name: Wide measure
-    usage:
+    description:
     var: $theme-text-measure-wide
     default: 6
     type: measure

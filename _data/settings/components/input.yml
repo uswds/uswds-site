@@ -1,12 +1,12 @@
 name: Input
 contents:
   - name: Line height
-    usage:
+    description:
     var: $theme-input-line-height
     default: 3
     type: line-height
   - name: Max width
-    usage:
+    description:
     var: $theme-input-max-width
     default: '"mobile-lg"'
     type: units

@@ -1,7 +1,7 @@
 name: Form
 contents:
   - name: Font family
-    usage:
+    description:
     var: $theme-form-font-family
     default: '"ui"'
     type: family

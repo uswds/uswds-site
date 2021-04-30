@@ -12,19 +12,19 @@ title: Icon
 type: component
 variants:
   - variant: "`.usa-icon--size-3`"
-    description: "`3 unit` x `3 unit` icon"
+    description: "`3 unit` x `3 unit` icon."
   - variant: "`.usa-icon--size-4`"
-    description: "`4 unit` x `4 unit` icon"
+    description: "`4 unit` x `4 unit` icon."
   - variant: "`.usa-icon--size-5`"
-    description: "`5 unit` x `5 unit` icon"
+    description: "`5 unit` x `5 unit` icon."
   - variant: "`.usa-icon--size-6`"
-    description: "`6 unit` x `6 unit` icon"
+    description: "`6 unit` x `6 unit` icon."
   - variant: "`.usa-icon--size-7`"
-    description: "`7 unit` x `7 unit` icon"
+    description: "`7 unit` x `7 unit` icon."
   - variant: "`.usa-icon--size-8`"
-    description: "`8 unit` x `8 unit` icon"
+    description: "`8 unit` x `8 unit` icon."
   - variant: "`.usa-icon--size-9`"
-    description: "`9 unit` x `9 unit` icon"
+    description: "`9 unit` x `9 unit` icon."
 subnav:
 - text: Preview
   href: '#icons-preview'

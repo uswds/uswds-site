@@ -592,7 +592,7 @@
       kind: units
     - name: Alert
       subsection: Font family
-      usage:
+      usage: Font family of the alert.
       var: $theme-alert-font-family
       default: "'ui'"
       kind: family

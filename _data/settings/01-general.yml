@@ -58,7 +58,7 @@ contents:
 
   - name: Focus
     subsection: color
-    usage:
+    description: The default color of the focus outline.
     var: $theme-focus-color
     default: '"blue-40v"'
     type: color
@@ -73,7 +73,7 @@ contents:
 
   - name: Focus
     subsection: style
-    usage:
+    description: The style of the focus outline.
     var: $theme-focus-style
     default: solid
     type: outline-style

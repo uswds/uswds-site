@@ -59,7 +59,7 @@
 
     - name: Focus
       subsection: color
-      usage:
+      usage: The default color of the focus outline.
       var: $theme-focus-color
       default: "'blue-40v'"
       kind: color
@@ -74,7 +74,7 @@
 
     - name: Focus
       subsection: style
-      usage:
+      usage: The style of the focus outline.
       var: $theme-focus-style
       default: solid
       kind: outline-style
@@ -566,19 +566,19 @@
   contents:
     - name: Accordion
       subsection: border width
-      usage:
+      usage: The width of the accordion content border.
       var: $theme-accordion-border-width
       default: 0.5
       kind: units
     - name: Accordion
       subsection: border color
-      usage:
+      usage: The color of the accordion border.
       var: $theme-accordion-border-color
       default: "'base-lightest'"
       kind: color
     - name: Accordion
       subsection: font family
-      usage:
+      usage: The font family of the accordion.
       var: $theme-accordion-font-family
       default: "'body'"
       kind: family

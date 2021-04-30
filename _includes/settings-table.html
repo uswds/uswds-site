@@ -35,9 +35,9 @@
         {% endif %}
       </td>
       <td data-title="{{ col2Title }}" class="{{ col2Width }} display-inline-flex flex-align-start">
-        <code class="">
-          {{ setting.var }}
-        </code>
+        {% if setting.var %}
+          <code>{{ setting.var }}</code>
+        {% endif %}
       </td>
       <td data-title="{{ col3Title }}" class="{{ col3Width }} display-inline-flex flex-align-start">
         {% assign defaultFormat = false %}

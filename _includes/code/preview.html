@@ -7,14 +7,17 @@
   <div id="{{ _content_id }}" class="usa-accordion__content">
 
     {% if include.image %}
-    {% for image in include.image %}
-      {% assign demo = include.demoLink[forloop.index0] | default: include.demoLink %}
+      {% for image in include.image %}
+        {% assign demo = include.demoLink[forloop.index0] | default: include.demoLink %}
 
-      {% unless forloop.first %}<hr />{% endunless %}
+        {% unless forloop.first %}<hr />{% endunless %}
 
-      {% if include.variants %}
-        <h3>{{ include.variants[forloop.index0] }}</h3>
-      {% endif %}
+        {% if include.variants %}
+          {% assign variant_name = include.variants[forloop.index0] | escape %}
+          {% assign variant_alt = variant_name | append: ' ' | append: page.title | escape %}
+
+          <h3>{{ variant_name }}</h3>
+        {% endif %}
 
         <a
           class="media_link"
@@ -25,7 +28,7 @@
         >
           <img
             src="{{ site.baseurl }}{{ image }}"
-            alt={{ page.title }}
+            alt="{{ variant_alt | default(page.title) }}"
           />
         </a>
         {% endfor %}
@@ -44,7 +47,7 @@
               {{ page.title }}
             {% endif %}
           </a>
-        {% endfor %}
+      {% endfor %}
     {% else %}
         {% include code/components/{{ include.component }}.html %}
     {% endif %}

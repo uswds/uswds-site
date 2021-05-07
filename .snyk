@@ -1123,15 +1123,9 @@ ignore:
     - gulp-sass > lodash:
         reason: None given
         expires: '2021-03-21T22:33:04.898Z'
-      gulp-svg-sprite > svg-sprite > lodash:
-        reason: None given
-        expires: '2021-05-01T23:23:20.514Z'
     - snyk > lodash:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
-      gulp-svg-sprite > svg-sprite > async > lodash:
-        reason: None given
-        expires: '2021-05-01T23:23:20.514Z'
     - snyk > inquirer > lodash:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
@@ -1393,19 +1387,19 @@ ignore:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No direct upgrade or patch.
         expires: '2021-05-28T18:17:23.014Z'
+    - gulp-svg-sprite > svg-sprite > lodash:
+        reason: None given
+        expires: '2021-05-01T23:23:20.514Z'
+    - gulp-svg-sprite > svg-sprite > async > lodash:
+        reason: None given
+        expires: '2021-05-01T23:23:20.514Z'
   SNYK-JS-LODASH-1040724:
     - gulp-sass > lodash:
         reason: None given
         expires: '2021-03-21T22:33:04.898Z'
-      gulp-svg-sprite > svg-sprite > lodash:
-        reason: None given
-        expires: '2021-05-01T23:23:20.514Z'
     - snyk > lodash:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
-      gulp-svg-sprite > svg-sprite > async > lodash:
-        reason: None given
-        expires: '2021-05-01T23:23:20.514Z'
     - snyk > inquirer > lodash:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
@@ -1667,6 +1661,12 @@ ignore:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No direct upgrade or patch.
         expires: '2021-05-28T18:17:23.014Z'
+    - gulp-svg-sprite > svg-sprite > lodash:
+        reason: None given
+        expires: '2021-05-01T23:23:20.514Z'
+    - gulp-svg-sprite > svg-sprite > async > lodash:
+        reason: None given
+        expires: '2021-05-01T23:23:20.514Z'
   SNYK-JS-HOSTEDGITINFO-1088355:
     - gulp-sass > node-sass > meow > normalize-package-data > hosted-git-info:
         reason: No direct upgrade or patch.

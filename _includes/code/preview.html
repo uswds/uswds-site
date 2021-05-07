@@ -8,6 +8,9 @@
     {% if include.image %}
       {% for image in include.image %}
         {% assign demo = include.demoLink[forloop.index0] | default: include.demoLink %}
+
+        {% unless forloop.first %}<hr />{% endunless %}
+
         <a
           class="media_link"
           href={% include component-preview-link.html
@@ -21,6 +24,7 @@
           />
         </a>
         {% endfor %}
+
         {% for link in include.demoLink %}
           <a
             class="usa-button"

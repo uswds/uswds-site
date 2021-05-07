@@ -20,6 +20,7 @@ title: Modal
 variants:
   - variant: "`.usa-modal--lg`"
     description: Add `.usa-modal--lg` to `.usa-modal` for a larger window and larger heading size on wider screens
+type: component
 ---
 A modal prevents interaction with page content until the user completes an action or dismisses the modal. This intentionally interrupts the user’s workflow. **Use modals sparingly to minimize unnecessary disruptions.**
 

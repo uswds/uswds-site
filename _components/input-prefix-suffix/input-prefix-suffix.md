@@ -29,4 +29,5 @@ variants:
     description: Displays an input group error state
   - variant: "`usa-input-group--[width]`"
     description: Displays an input group at a specific width. Accepts `2xs` (5ex), `xs` (9ex), `sm` or `small` (13ex), `md` or `medium` (20ex), `lg` (30ex), `xl` (40ex), and `2xl` (50ex)
+type: component
 ---

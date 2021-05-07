@@ -77,8 +77,8 @@
     "postcss": "^8.2.13",
     "postcss-csso": "^5.0.0",
     "sass": "^1.32.8",
-    "snyk": "^1.571.0",
     "uswds": "github:uswds/uswds#jm-add-pagination",
+    "snyk": "^1.589.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },

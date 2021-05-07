@@ -54,12 +54,6 @@ contents:
     default: '"desktop"'
     type: units
 
-  - name: Site max width
-    section: true
-    description: Used to set a consistent `max-width` across components
-    var: $theme-site-max-width
-    default: '"desktop"'
-    type: units
   - name: Site outer margins breakpoint
     description: The breakpoint at which the site's outer margin changes
     var: $theme-site-margins-breakpoint

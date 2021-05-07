@@ -16,7 +16,7 @@
           {% assign variant_name = include.variants[forloop.index0] | escape %}
           {% assign variant_alt = variant_name | append: ' ' | append: page.title | escape %}
 
-          <h3>{{ variant_name }}</h3>
+          <h3 class="site-preview-heading">{{ variant_name }}</h3>
         {% endif %}
 
         <a

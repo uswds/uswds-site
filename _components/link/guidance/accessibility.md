@@ -1,2 +1,2 @@
-- **Allow keyboard navigation of links.** Users should be able to navigate between links by using the “Tab” key. They should also be able to activate a link when pressing “Enter” on their keyboard.
-- **Set focus state on link target.** When using smooth scrolling for in-page anchor links, set the focus state on the link target. Many third-party scripts fail to consider this behavior. Users should be able to activate hover and focus states with both a mouse and a keyboard.
+- **Allow keyboard navigation of links.** Users should be able to navigate between links by using the “Tab” key. They should be able to activate a link by pressing the “Enter” key.
+- **Link hover state should be visible on focus.** Users should be able to activate hover and focus states with both a mouse and a keyboard.

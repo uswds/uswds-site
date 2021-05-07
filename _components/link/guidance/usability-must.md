@@ -1,9 +1,10 @@
-- **Provide required notification for non-federal external links.** [OMB’s Policies for Federal Agency Public Websites and Digital Services [PDF; 1.2 MB]](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2017/m-17-06.pdf) state that you “must clearly state that the content of external links to non-federal agency websites is not endorsed by the federal government.”
+- **Clearly identify external links.** [OMB’s Policies for Federal Agency Public Websites and Digital Services [PDF; 1.2 MB]](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2017/m-17-06.pdf) states that agencies “must clearly identify external links from their websites" and that they "should choose the best approach to identify external links to users in a way that minimizes the impact on the usability of their websites and digital services.”
+- **Provide required notification for non-federal external links.** [OMB’s Policies for Federal Agency Public Websites and Digital Services [PDF; 1.2 MB]](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2017/m-17-06.pdf) states that you “must clearly state that the content of external links to non-federal agency websites is not endorsed by the federal government.”
 
     This requirement has two aspects:
 
+    - **Notification:** We recommend employing a clear, consistent, user-friendly approach for _all_ external links whether government or non-government links. Include the destination for all links that send users from your site to another site (see [What you should do](#what-you-should-do), below).
     - **Non-endorsement:** We recommend adding language to a policy and notices page on your site to explain to users that the agency does not endorse the information on any linked non-federal site. See, for example, [USA.gov’s linking policy](https://www.usa.gov/linking-policy).
-    - **Notification:** We recommend employing a clear, consistent, user-friendly approach for _all_ external links. Include the destination for all links that send users from your site to another site (see [What you should do](#what-you-should-do), below).
 
     Check with your [Federal Web Council representative [digital.gov]](https://digital.gov/resources/federal-web-council/) and General Counsel regarding agency requirements for this endorsement language and notification approach.
 

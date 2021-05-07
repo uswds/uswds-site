@@ -1,6 +1,5 @@
+<h3 class="site-preview-heading">Default</h3>
+
 {% capture layout--docs %}
-  <a class="usa-skipnav" href="#main-content">Skip to main content</a>
-  {% fractal_component banner %}
-  {% fractal_component header--basic %}
-  {% fractal_component layout--404-inner %}
+  {% fractal_component layout--404 %}
 {% endcapture %}{{ layout--docs | strip }}

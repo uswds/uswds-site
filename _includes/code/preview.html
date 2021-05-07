@@ -5,11 +5,16 @@
   {% assign _content_id = include.component | append: '-preview-content' %}
   <button class="usa-accordion__button" aria-controls="{{ _content_id }}" aria-expanded="true"><{{ level }} id="{{ _id }}">Component preview</{{ level }}></button>
   <div id="{{ _content_id }}" class="usa-accordion__content">
-    {% if include.image %}
-      {% for image in include.image %}
-        {% assign demo = include.demoLink[forloop.index0] | default: include.demoLink %}
 
-        {% unless forloop.first %}<hr />{% endunless %}
+    {% if include.image %}
+    {% for image in include.image %}
+      {% assign demo = include.demoLink[forloop.index0] | default: include.demoLink %}
+
+      {% unless forloop.first %}<hr />{% endunless %}
+
+      {% if include.variants %}
+        <h3>{{ include.variants[forloop.index0] }}</h3>
+      {% endif %}
 
         <a
           class="media_link"
@@ -28,8 +33,17 @@
         {% for link in include.demoLink %}
           <a
             class="usa-button"
-            href={% include component-preview-link.html demoLink=link component=include.component %}
-            >Demo {{ page.title }}</a>
+            href={% include component-preview-link.html
+              demoLink=link
+              component=include.component %}
+            >
+            Demo
+            {% if include.variants %}
+              {{ include.variants[forloop.index0] }}
+            {% else %}
+              {{ page.title }}
+            {% endif %}
+          </a>
         {% endfor %}
     {% else %}
         {% include code/components/{{ include.component }}.html %}

@@ -62,7 +62,7 @@ The [design tokens]({{ site.baseurl }}/design-tokens/) section of the documentat
 Settings variables are assigned design tokens.
 
 ```sass
-$theme-site-max-width:              'desktop';
+$theme-grid-container-max-width:    'desktop';
 $theme-site-margins-breakpoint:     'desktop';
 $theme-site-margins-width:          4;
 $theme-site-margins-mobile-width:   2;
@@ -75,7 +75,7 @@ We use tokens (or tokens expressed as variables) in mixins and functions.
 ```sass
 .usa-example {
   @include u-padding-x($theme-site-margins-mobile-width);
-  max-width: units($theme-site-max-width);
+  max-width: units($theme-grid-container-max-width);
 
   @include at-media($theme-site-margins-breakpoint) {
     @include u-padding-x($theme-site-margins-width);

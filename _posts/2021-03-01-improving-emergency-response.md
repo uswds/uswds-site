@@ -36,7 +36,7 @@ We took quotes and highlights from the interviews to create data points. Using a
 
 <div class="margin-top-4 margin-bottom-5">
   <img src="{{ site.baseurl }}/img/2021-next-blog/insights-themes-data-points.jpg" alt="Synthesis process: We captured data and first-hand accounts from interviews, then grouped these by theme to uncover insights and opportunities." class="width-full maxw-full">
-  <p class="font-sans-2xs text-base">Synthesis process: We captured data and first-hand accounts from interviews, then grouped these by theme to uncover insights and opportunities.</p>
+  <p class="font-lang-2xs text-base-dark text-bold">Synthesis process: We captured data and first-hand accounts from interviews, then grouped these by theme to uncover insights and opportunities.</p>
 </div>
 
 We discovered **five common agency needs** about how the design system can better support emergency response within federal agencies. Using these insights as a starting point for solutions, we ideated and identified new components and templates to add to the design system, as well as ways to improve some existing components.

@@ -9,6 +9,7 @@ layout: styleguide
 lead: A responsive stacked table collapses at narrow widths for better readability on small screens.
 order: 03
 parent: Table
+sitemap: false
 title: Responsive stacked table
 ---
 

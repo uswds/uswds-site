@@ -27,12 +27,12 @@ Today we’re releasing a new and exciting report and strategy that outlines [wh
 <div class="grid-col usa-card usa-card__media--exdent margin-y-5 margin-x-neg-1 height-full">
   <div class="usa-card__container">
     <header class="usa-card__header">
-      <h3 class="next-page-card__subheading">
+      <p class="next-page-card__subheading">
         Transforming the American digital experience
-      </h3>
-      <h4 class="usa-card__heading">
+      </p>
+      <p class="usa-card__heading text-bold">
         A report about what’s next for the U.S. Web Design System
-      </h4>
+      </p>
     </header>
     <div class="usa-card__media bg-base-darker">
       <div class="usa-card__img next-page-card__img width-full height-card-lg" style="background: url('{{ site.baseurl }}/img/next/hero-pattern-whats-next.svg') repeat-x bottom right;"></div>
@@ -51,18 +51,18 @@ Today we’re releasing a new and exciting report and strategy that outlines [wh
 </div>
 
 Thanks to the participation of content managers, designers, engineers, policy analysts, and thought leaders across dozens of federal agencies, we conducted the largest research effort in the history of the design system. We conducted 60 interviews across 33 teams to better understand how teams are dealing with **emergency response** situations (specifically COVID-19) in terms of their digital communications, as well as their needs as users of the design system.
-  
-Taking action on what [we learned from the research]({{ site.baseurl }}/whats-new/updates/2021/03/01/improving-emergency-response/), we created and updated several design system components and templates to address the common needs agencies faced.  
+
+Taking action on what [we learned from the research]({{ site.baseurl }}/whats-new/updates/2021/03/01/improving-emergency-response/), we created and updated several design system components and templates to address the common needs agencies faced.
 
 Their insights and observations also brought into focus a set of near-term opportunities — and longer-term vision — for the design system.
 
 > “The more we use the design system to standardize how we build digital experiences, the more we will improve how the federal web functions.”
-> 
+>
 > — From a digital modernization thought-leader during interviews
 
 
 Though agencies start with different goals and capabilities, we discovered they follow a common journey with similar needs when it comes to adopting and using the design system.
-  
+
 
 
 <ul class="usa-icon-list usa-icon-list--size-lg margin-top-5 margin-bottom-4">
@@ -133,7 +133,7 @@ Though agencies start with different goals and capabilities, we discovered they 
       <p>Adopting a design system is an ongoing process of design, development, and making iterative improvements and upgrades over time, which requires continued resources and support.</p>
     </div>
   </li>
-  
+
 </ul>
 
 A vibrant design system that more effectively meets these five needs is instrumental to agencies being able to deliver exceptional digital services. To get there, we’ll focus on the following near-term opportunities:

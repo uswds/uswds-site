@@ -74,7 +74,7 @@ Though agencies start with different goals and capabilities, we discovered they 
       </svg>
     </div>
     <div class="usa-icon-list__content">
-      <h3 class="usa-icon-list__title">Understand the value and benefits</h3>
+      <p class="usa-icon-list__title text-bold">Understand the value and benefits</p>
       <p>Agencies need to be able to quickly discern the design system’s benefits and how it aligns with their goals for delivering better digital services.</p>
     </div>
   </li>
@@ -87,7 +87,7 @@ Though agencies start with different goals and capabilities, we discovered they 
       </svg>
     </div>
     <div class="usa-icon-list__content">
-      <h3 class="usa-icon-list__title">Know how to get started</h3>
+      <p class="usa-icon-list__title text-bold">Know how to get started</p>
       <p>No matter where an agency starts from, it needs to be clear and easy for them to figure out their first steps and how to create a sustainable path forward in the long-run.</p>
     </div>
   </li>
@@ -100,7 +100,7 @@ Though agencies start with different goals and capabilities, we discovered they 
       </svg>
     </div>
     <div class="usa-icon-list__content">
-      <h3 class="usa-icon-list__title">Find the right team and resources</h3>
+      <p class="usa-icon-list__title text-bold">Find the right team and resources</p>
       <p>Agencies have several options to assemble a cross-functional team to implement the design system, and they’re looking for more support in identifying needed skills and assembling the right people.</p>
     </div>
   </li>
@@ -114,7 +114,7 @@ Though agencies start with different goals and capabilities, we discovered they 
       </svg>
     </div>
     <div class="usa-icon-list__content">
-      <h3 class="usa-icon-list__title">Feel engaged with the community</h3>
+      <p class="usa-icon-list__title text-bold">Feel engaged with the community</p>
       <p>It’s a collaborative process to build a design system, so it’s essential for agencies to feel like they have access to a support network and a sense of ownership to contribute back to it.</p>
     </div>
   </li>
@@ -129,7 +129,7 @@ Though agencies start with different goals and capabilities, we discovered they 
       </svg>
     </div>
     <div class="usa-icon-list__content">
-      <h3 class="usa-icon-list__title">Iteratively improve their digital services</h3>
+      <p class="usa-icon-list__title text-bold">Iteratively improve their digital services</p>
       <p>Adopting a design system is an ongoing process of design, development, and making iterative improvements and upgrades over time, which requires continued resources and support.</p>
     </div>
   </li>

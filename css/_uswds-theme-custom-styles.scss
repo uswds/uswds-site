@@ -510,7 +510,7 @@ body {
 .styleguide-content {
   @include add-responsive-site-margins;
   margin-bottom: units(6);
-  max-width: units($theme-site-max-width);
+  max-width: units($theme-grid-container-max-width);
   position: relative;
 
   header {

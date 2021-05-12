@@ -81,7 +81,7 @@
     "postcss-csso": "^5.0.0",
     "sass": "^1.32.8",
     "snyk": "^1.594.0",
-    "uswds": "^2.11.2",
+    "uswds": "github:uswds/uswds#dw-site-pa11y",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },

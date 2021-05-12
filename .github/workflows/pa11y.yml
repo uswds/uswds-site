@@ -1,8 +1,8 @@
-name: pa11y tests
+name: pa11y
 on: [pull_request]
 jobs:
   build:
-    name: Building site and running pa11y-ci tests
+    name: Build site and test accessibility
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source.

@@ -26,6 +26,7 @@ Tracking your site's performance is the first step to incorporating performance 
 To make the guide easier to follow, we’ll be taking an actual site, [dashboard.cloud.gov](https://dashboard.fr.cloud.gov), through the entire process. The dashboard is a user interface for the [cloud.gov platform](https://cloud.gov), which allows government agencies to launch servers and sites with ease in the same vein as private products. Throughout this guide, we'll use callouts like the one below to highlight specific examples:
 
 {% include perf_example.html
+  hed="h3"
   text='Examples will be displayed in a box like this.'
 %}
 
@@ -125,7 +126,7 @@ Besides checking that the tool tracks most of the main metrics your team is inte
 
 Not all sites require an extensive process to choose performance metrics. Many sites can use these recommended defaults and achieve valid tests.
 
-##### Default metric recommendations:
+#### Default metric recommendations:
 
 - [Speed index](../glossary/#speed-index): a direct metric to track how fast a site appears to a user
 - [Custom timing events](../glossary/#custom-timing-events): a direct metric to track a specific experience on your site
@@ -134,7 +135,7 @@ Not all sites require an extensive process to choose performance metrics. Many s
 Focusing on these three metrics provides a good overview of how well your site is performing and allows you to compare your site’s performance to other sites.
 
 Based on these metrics, we’ve also recommended tools that are able to track these three metrics.
-##### Default tool recommendation:
+#### Default tool recommendation:
 
 [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse/): a Google Chrome library that can be run in the CLI or as a browser extension. Google Chrome Lighthouse can be run in a CLI, or developer environment. It’s relatively easy to setup, and use, and includes harder to track metrics, like [Speed index](../glossary/#speed-index). Its only downside is that it requires both the Chrome browser and the ability to install Chrome extensions. If your team is unable to install Chrome or Chrome extensions  then [webpagetest](https://www.webpagetest.org/) can be run in any browser and is a good option.
 

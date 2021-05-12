@@ -235,8 +235,9 @@ Negative values should use the same migration pattern as positive values. See th
 <p class="site-subheading">{{ release.published_at | date: "%B %d, %Y" }}</p>
 
 {% assign id_replace = 'id="v%-' | replace: '%', release.name %}
-{{ release.body | markdownify | replace: 'id="', id_replace | remove_relative_links }}
-
+```
+{{ release.body | replace: 'id="', id_replace | remove_relative_links }}
+```
 <hr>
 {% endif %}
 {% endfor %}

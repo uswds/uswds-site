@@ -33,7 +33,7 @@ We took a many-pronged approach to soliciting feedback, sharing out work to the 
 
 No matter how evidence-based, well-architected and cleanly executed a component is, the true test of its adaptability and robustness is evaluating it in the real-world — woven into websites, and used alongside other USWDS components. Building a demo site for the [December 2020 monthly call](https://www.youtube.com/watch?v=OhtiTfKAIRw&feature=emb_logo) revealed the need for several components to receive a little more love.
 
-<iframe class="width-full maxw-full" width="560" height="315" src="https://www.youtube.com/embed/OhtiTfKAIRw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe title="USWDS Monthly Call for December 2020" class="width-full maxw-full" width="560" height="315" src="https://www.youtube.com/embed/OhtiTfKAIRw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 We partnered with the product owner to quickly identify inconsistencies and opportunities for improvement, knock those out, and get those improvements into [Release 2.10]({{ site.baseurl }}/about/releases/#version-2100) in time for the monthly call.
 

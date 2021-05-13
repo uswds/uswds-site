@@ -31,6 +31,7 @@
   "scripts": {
     "axe": "node config/run-axe.js",
     "build": "gulp build && bundle exec jekyll build",
+    "build-all-assets": "npm run build-fonts && npm run build-img && npm run build-js && npm run build-sass",
     "build-css": "gulp build-sass",
     "build-css-components": "gulp build-sass-components",
     "build-css-custom": "gulp build-sass-custom",
@@ -52,12 +53,14 @@
     "proof": "bundle exec htmlproofer --assume-extension --disable-external --allow-hash-href --alt-ignore '/.*/' --file-ignore '/developers/' ./_site",
     "serve": "bundle exec jekyll serve --drafts --future --incremental --livereload",
     "start": "bundle exec jekyll serve --drafts --future",
-    "test": "snyk test && npm run start-detached && npm run proof && bundle exec rspec && npm run lint",
+    "test": "npx snyk test && npm run test:ci",
     "test:ci": "npm run start-detached && bundle exec rspec && npm run lint && npm run proof",
+    "test:full": "npm run startup && npm run test",
     "watch": "NODE_ENV=development nswatch",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect",
     "start-detached": "bundle exec jekyll serve --detach",
+    "startup": "npm install && bundle install && npm run build-uswds && npm run build-all-assets",
     "pa11y-ci:sitemap": "pa11y-ci --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude '/*.pdf|next/'",
     "pa11y-ci:sitemap-json": "pa11y-ci --json > pa11y-results.json --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude '/*.pdf|next/'"
   },

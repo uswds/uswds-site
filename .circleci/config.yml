@@ -17,25 +17,28 @@ jobs:
             - gem-cache-{{ checksum "Gemfile.lock" }}
             - gem-cache
       - run:
-          name: Install node dependencies
-          command: npm install
-      - save_cache:
-          key: npm-cache-{{ .Branch }}-{{ .Revision }}
-          paths:
-            - node_modules
-      - run:
           name: Install ruby dependencies
           command: |
             gem update --system
             gem install bundler
             bundle install --jobs=4 --retry=3 --path vendor/bundle
+      - run:
+          name: Install scss_lint
+          command: gem install scss_lint
       - save_cache:
           key: gem-cache-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
       - run:
-          name: Install scss_lint
-          command: gem install scss_lint
+          name: Install node dependencies
+          command: npm install
+      - run:
+          name: Build USWDS if needed
+          command: npm run build-uswds
+      - save_cache:
+          key: npm-cache-{{ .Branch }}-{{ .Revision }}
+          paths:
+            - node_modules
       - snyk/scan:
           organization: uswds
       - run:

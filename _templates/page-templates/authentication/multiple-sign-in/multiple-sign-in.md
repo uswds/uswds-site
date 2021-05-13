@@ -20,8 +20,6 @@ subnav:
     href: '#multiple-sign-in-options-code'
   - text: Guidance
     href: '#multiple-sign-in-options-guidance'
-  - text: Package
-    href: '#multiple-sign-in-options-package'
 title: Multiple sign-in options
 type: template
 ---

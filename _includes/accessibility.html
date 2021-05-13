@@ -1,5 +1,5 @@
 <section class="usa-prose site-prose margin-top-5">
-  <h2 class="usa-heading heading-margin-alt">General accessibility guidance for forms</h2>
+  <h2 id="general-accessibility-guidance-for-forms" class="usa-heading heading-margin-alt">General accessibility guidance for forms</h2>
   <ul class="usa-content-list">
     <li><strong>Customize accessibly.</strong> As you customize these templates, make sure they meet the accessibility guidelines in this introduction and as described for each control.</li>
     <li><strong>Don’t control element order with CSS.</strong> Display form controls in the same order in HTML as they appear on screen. Don’t use CSS to rearrange the form controls. Screen readers narrate forms in the order they appear in the HTML.</li>
@@ -12,7 +12,7 @@
 
   <div class="site-note"><strong>Note:</strong> These components have been designed to support a wide range of screen readers, but they may not work with all versions.</div>
 
-  <h2>Known issues with screen readers</h2>
+  <h2 id="known-issues-with-screen-readers">Known issues with screen readers</h2>
   <ul class="usa-content-list">
     <li>VoiceOver on iOS currently does not support fieldset and legend for forms. You can address this by using <code>aria-labelledby="for-attribute-of-label id-of-legend id-of-additional-info"</code> on each input in the fieldset. Using <code>aria-labelledby</code> will overwrite the default text read by the screen reader, so it is important to include all relevant information.</li>
     <li>VoiceOver on OS X currently does not support <code>aria-describedby</code>. Use <code>aria-labelledby</code> instead, and include all related fields, including, labels, legend, and hint text</li>

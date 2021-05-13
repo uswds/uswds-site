@@ -7,6 +7,7 @@ gem 'jekyll-sitemap', '>= 1.4.0'
 gem 'scss_lint'
 gem 'jekyll-include-cache'
 gem 'liquid-c'
+gem 'html-proofer'
 
 gem 'rspec-core'
 gem 'rspec-expectations'

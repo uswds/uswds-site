@@ -9,7 +9,7 @@ subnav:
 - text: State color tokens
   href: '#uswds-theme-color-tokens'
 - text: Using color tokens
-  href: '#using-color-tokens-in-utilities-settings-and-component-sass'
+  href: '#using-color-tokens'
 ---
 
 {% assign colors = site.data.tokens.color %}

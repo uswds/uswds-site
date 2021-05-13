@@ -134,7 +134,7 @@ Mobile devices often become a primary source of connection in an emergency. Agen
 
 ![Screenshot of the new Radio Checkbox Tile component variant]({{ site.baseurl }}/img/2021-next-blog/radio-checkbox-tile.png)
 
-**[Radio/checkbox tile component]({{ site.baseurl }}/components/form-controls/#checkbox)** (updated): Tiles make it easier to complete mobile forms by providing a larger selection area for radio buttons and checkboxes.
+**[Radio/checkbox tile component]({{ site.baseurl }}/components/checkbox)** (updated): Tiles make it easier to complete mobile forms by providing a larger selection area for radio buttons and checkboxes.
 
 {:.margin-top-5}
 ![Screenshot of the Table component with Sortable Rows enabled]({{ site.baseurl }}/img/2021-next-blog/sortable-table.png)

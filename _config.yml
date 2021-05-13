@@ -117,4 +117,4 @@ exclude:
   - pa11y-results.json
 
 env: dev
-url: "localhost:4000"
+url: http://localhost:4000

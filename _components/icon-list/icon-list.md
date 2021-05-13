@@ -19,9 +19,9 @@ subnav:
 title: Icon list
 variants:
   - variant: "`.usa-icon-list--[color]`"
-    description: Change the color of all the list's icons by updating [color] to any one of the theme colors listed on the [color utilities]({{ site.baseurl }}/utilities/color) page.
+    description: Change the color of all the list's icons by updating [color] to any one of the theme colors listed on the color utilities page.
   - variant: "`usa-icon-list--size-[size]`"
-    description: "Change the size of the text and icon by updating [size] to a theme font size: `2xs`, `xs`, `sm`, `md`, `lg`, `xl`, or `2xl` as detailed on the [font size and family]({{ site.baseurl }}/utilities/font-size-and-family) utility page."
+    description: "Change the size of the text and icon by updating [size] to a theme font size: `2xs`, `xs`, `sm`, `md`, `lg`, `xl`, or `2xl` as detailed on the font size and family utility page."
   - variant: "`[responsive_variant]:usa-icon-list--size-[size]`"
     description: "Add a responsive breakpoint prefix separated with a `:` to target a utility at a responsive breakpoint and higher, following a mobile-first methodology."
 ---

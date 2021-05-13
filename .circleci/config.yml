@@ -11,8 +11,18 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - v1-gem-cache-{{ checksum "Gemfile.lock" }}
-            - v1-gem-cache
+            - npm-cache-{{ .Branch }}-{{ .Revision }}
+      - restore_cache:
+          keys:
+            - gem-cache-{{ checksum "Gemfile.lock" }}
+            - gem-cache
+      - run:
+          name: Install node dependencies
+          command: npm install
+      - save_cache:
+          key: npm-cache-{{ .Branch }}-{{ .Revision }}
+          paths:
+            - node_modules
       - run:
           name: Install ruby dependencies
           command: |
@@ -20,22 +30,9 @@ jobs:
             gem install bundler
             bundle install --jobs=4 --retry=3 --path vendor/bundle
       - save_cache:
-          key: v1-gem-cache-{{ checksum "Gemfile.lock" }}
+          key: gem-cache-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
-      - restore_cache:
-          keys:
-            - v2-npm-cache-{{ .Branch }}-{{ .Revision }}
-      - run:
-          name: Install node dependencies
-          command: npm install
-      - save_cache:
-          key: v2-npm-cache-{{ .Branch }}-{{ .Revision }}
-          paths:
-            - node_modules
-      - run:
-          name: Build site files
-          command: npm run build
       - run:
           name: Install scss_lint
           command: gem install scss_lint

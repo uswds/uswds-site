@@ -13,20 +13,20 @@ With the launch of 1.0 of the U.S Web Design Standards, it's time to look ahead 
 
 The following are some highlights of the types of research areas and design work the team will be working on in the coming months:
 
-### Growing the Pattern Library
+## Growing the Pattern Library
 There is a clear demand for additional and more advance U.S. Web Design Standard components. While the team has some ideas on what should be added, and previous research, we want this to be a focused area of the research to help build out the product backlog.
 
-### Advanced Users
+## Advanced Users
 The most common use of the U.S. Web Design Standards today is to create content based websites. However, there is a potential need to use the Standards for things like mobile applications, web applications, enterprise and open source content management systems, and more.
 
-### Agency partnerships
+## Agency partnerships
 We’d like to explore training models and better channels to better partner with federal agencies and other programs. This partnership could increase the adoption and use of the U.S. Web Design Standards, and help the team create targeted pitches and other sales material. This is critical to the long term funding and development of the product.
 
-### Branding
+## Branding
 The current brand of the Standards website doesn’t match some of the design guidance that’s present in the component library. Also, the name of the product has been known to be a potential barrier for teams adopting the Standards.
 
-### Metrics and analytics
+## Metrics and analytics
 The team would like to determine the metrics that can be tracked to determine overall impact of the U.S. Web Design Standards. Also, we want to find ways to support other teams getting set up and using DAP if they choose to use the U.S. Web Design Standards.
 
-### Future of WDS
+## Future of WDS
 The digital landscape is ever evolving and there are some teams within the federal government that are more likely than others to take advantage of new technologies like conversational design, augmented reality, and virtual reality. While we have no plans currently around this type of technology, we want to understand where the high level needs are so that future versions of the Standards can easily support them when it becomes appropriate.

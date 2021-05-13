@@ -36,7 +36,7 @@ jobs:
           name: Build USWDS if needed
           command: npm run build-uswds
       - save_cache:
-          key: npm-cache-{ checksum "package-lock.json" }}
+          key: npm-cache-{{ checksum "package-lock.json" }}
           paths:
             - node_modules
       - snyk/scan:

@@ -12,6 +12,20 @@
     **Example 2:**
     > We've documented our research in the [raw research notes](javascript:void(0)) (requires login).
 
+- <span class="usa-tag bg-gold-20v text-ink">Under review</span> **If you use an external link indicator, use it consistently for all text links.** If your project uses an external link indicator (like an icon), use it for all text links across your site. If users learn to associate an external link with the indicator, they will also expect that text links without an indicator are not external links. Icon- or image-only links like social share buttons or logos do not need the same treatment as text links.
+
+- <span class="usa-tag bg-gold-20v text-ink">Under review</span> **Provide text context for external links.** Following a link is a decision. Terse links without context often don't give users enough information to make that decision. Plain, straightforward text can be the best way to communicate to users that a link will take them away from your site. This is useful whether the external link is to a government or a non-government site. When possible, use the content of the link text itself to indicate its destination. In isolation, an external link indicator (like an icon) can be ambiguous. Plain text can help make any link destination more clear.
+
+    **Example 1:**
+    > [CDC recommends using sunscreen when you’re outside](https://www.cdc.gov/cancer/skin/basic_info/sun-safety.htm) to reduce your risk of skin damage and skin cancer.
+
+    > To ensure food safety during an emergency, [the Red Cross recommends you do not open the refrigerator or freezer](https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/food-safety.html).
+
+    **Example 2:**
+    > [Sun safety guidance [cdc.gov]](https://www.cdc.gov/cancer/skin/basic_info/sun-safety.htm).
+
+    > [Food safety during an emergency [redcross.org]](https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/food-safety.html)
+
 - **Show file type and size for links to non-HTML content.** When possible, create HTML pages instead of linking to files like PDFs. If you do link to a file, tell users ahead of time if the link may trigger a file download, and show the size and format of that file.
 
     We recommend including this information at the end of the link, in the format `[FILE_TYPE, SIZE]`. We recommend using the file type rather than a product name. Use uppercase for the file type and a comma for the separator. For file size, use the number of pages in the document or the size in MB or KB if the document is not paginated.

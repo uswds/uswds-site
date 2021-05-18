@@ -17,6 +17,7 @@ subnav:
 - text: Package
   href: '#pagination-package'
 title: Pagination
+type: component
 variants:
   - variant: "`.usa-pagination--infinite`"
     description: Display an unbounded data set with pagination infinite.

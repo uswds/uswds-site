@@ -7,7 +7,7 @@ lead: USWDS state colors tokens provide flexible, accessible, customizable color
 type: docs
 subnav:
 - text: State color tokens
-  href: '#uswds-theme-color-tokens'
+  href: '#uswds-state-color-tokens'
 - text: Using color tokens
   href: '#using-color-tokens'
 ---

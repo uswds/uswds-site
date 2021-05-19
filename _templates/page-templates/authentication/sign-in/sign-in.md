@@ -20,8 +20,6 @@ subnav:
     href: '#sign-in-code'
   - text: Guidance
     href: '#sign-in-guidance'
-  - text: Package
-    href: '#sign-in-package'
 title: Sign-in
 type: template
 ---

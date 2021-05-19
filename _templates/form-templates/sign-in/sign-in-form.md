@@ -11,11 +11,11 @@ title: Sign-in form
 type: template
 subnav:
   - text: Preview
-    href: '#card-preview'
+    href: '#sign-in-form-preview'
   - text: Code
-    href: '#card-code'
+    href: '#sign-in-form-code'
   - text: Guidance
-    href: '#card-guidance'
+    href: '#sign-in-form-guidance'
   - text: Package
-    href: '#card-package'
+    href: '#sign-in-form-package'
 ---

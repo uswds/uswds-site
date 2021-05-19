@@ -1,5 +1,5 @@
-- **Non-tabular data.** Depending on the type of content, consider using other presentation formats such as [definition lists or hierarchical lists]({{ site.baseurl }}/components/typography/#lists).
+- **Non-tabular data.** Depending on the type of content, consider using other presentation formats such as [definition lists or hierarchical lists]({{ site.baseurl }}/components/list).
 - **Robust data visualization.** If you need to display more complex relationships or [data visualizations]({{ site.baseurl }}/components/data-visualizations/), consider a bar graph, infographic, or other type of chart.
 - **Dashboards and other layouts.** Don’t use tables in place of a [layout grid]({{ site.baseurl }}/utilities/layout-grid/). Table content should follow a consistent structure using headers and logical columns and rows.
 - **Long-form content.** Table cell content should be brief and scannable. If you find yourself drafting multiple bullet points or paragraphs within a single table cell, the content is likely better off under conventional page headers or in an [accordion]({{ site.baseurl }}/components/accordion/).
-- **Groups of items with different structures.** Consider [lists]({{ site.baseurl }}/components/typography/#lists) or [cards]({{ site.baseurl }}/components/card/) for content items that don’t follow a consistent pattern.
+- **Groups of items with different structures.** Consider a [list]({{ site.baseurl }}/components/list) or [cards]({{ site.baseurl }}/components/card/) for content items that don’t follow a consistent pattern.

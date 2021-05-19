@@ -6,7 +6,7 @@ category: How to use USWDS
 lead: USWDS components are built on a solid HTML foundation, progressively enhanced to provide core experiences across browsers. All users will have access to the same critical information and basic experience regardless of their browser, although those experiences will render better in newer browsers. If JavaScript fails users will still get a robust HTML foundation and all the necessary content.
 subnav:
 - text: Installation
-  href: '#installation'
+  href: '#download-and-install'
 - text: CSS architecture
   href: '#css-architecture'
 - text: JS customization

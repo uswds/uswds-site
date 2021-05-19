@@ -626,8 +626,7 @@ utilities:
 
   <section class="utilities-section margin-top-6">
     {% include utilities/values-intro.html %}
-
-    <aside class="example border-left-05 border-secondary-light padding-left-105 margin-top-2">
+    <div class="example border-left-05 border-secondary-light padding-left-105 margin-top-2">
       <h4 class="font-lang-2xs margin-top-0 margin-bottom-05">Example</h4>
 <pre class="font-mono-xs margin-0 padding-0 bg-transparent">
 $margin-palettes: (
@@ -642,7 +641,7 @@ $margin-palettes: (
 .margin-neg-1px { margin: -1px; }
 .margin-neg-2px { margin: -2px; }
 </pre>
-    </aside>
+    </div>
 
     {% include utilities/standard-palettes.html %}
     {% include utilities/spacing-palettes.html %}

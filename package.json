@@ -64,7 +64,7 @@
     "watch": "NODE_ENV=development nswatch",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect",
-    "start-detached": "bundle exec jekyll serve --detach",
+    "start-detached": "bundle exec jekyll serve --detach --host=localhost",
     "startup": "npm install && bundle install && npm run build-uswds && npm run build-all-assets",
     "pa11y-ci:sitemap": "pa11y-ci --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude '/*.pdf|next/'",
     "pa11y-ci:sitemap-mobile": "pa11y-ci --config .pa11yci--mobile --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude '/*.pdf|next/'",

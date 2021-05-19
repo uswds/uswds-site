@@ -3,13 +3,10 @@ version: 2.1
 orbs:
   snyk: snyk/snyk@0.0.13
 
-defaults: &defaults
-  docker:
-    - image: circleci/ruby:2.6-node-browsers
-
 jobs:
-  install:
-    <<: *defaults
+  build:
+    docker:
+      - image: circleci/ruby:2.6-node-browsers
     steps:
       - checkout
       - restore_cache:
@@ -42,77 +39,14 @@ jobs:
           key: npm-cache-{{ checksum "package-lock.json" }}
           paths:
             - node_modules
-  security:
-    <<: *defaults
-    steps:
       - snyk/scan:
           organization: uswds
-  test-ruby:
-    <<: *defaults
-    steps:
       - run:
-          name: Run RSpec
-          command: bundle exec rspec
-  lint:
-    <<: *defaults
-    steps:
-      - run:
-          name: Run lint
-          command: npm run lint
-  build:
-    <<: *defaults
-    steps:
-      - checkout
-      - attach_workspace:
-          at: .
-      - run:
-          name: Build site and serve detached
-          command: npm run start-detached
-  proof:
-    <<: *defaults
-    steps:
-      - checkout
-      - attach_workspace:
-          at: .
-      - run:
-          name: Proof site
-          command: npm run proof
-  a11y-mobile:
-    <<: *defaults
-    steps:
-      - checkout
-      - attach_workspace:
-          at: .
-      - run:
-          name: Run pa11y mobile
-          command: npm run pa11y-ci:sitemap-mobile
-  a11y-desktop:
-    <<: *defaults
-    steps:
-      - checkout
-      - attach_workspace:
-          at: .
-      - run:
-          name: Run pa11y desktop
-          command: npm run pa11y-ci:sitemap
+          name: Run test
+          command: npm run test:ci
 
 workflows:
   version: 2.1
   circle-uswds-site:
     jobs:
-      - security
-      - test-ruby
-      - lint
-      - install
-      - build:
-          requires:
-            - install
-      - proof:
-          requires:
-            - build
-      - a11y-mobile:
-          requires:
-            - build
-      - a11y-desktop:
-          requires:
-            - build
+      - build

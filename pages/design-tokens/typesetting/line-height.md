@@ -15,7 +15,7 @@ subnav:
 {% assign tokens = site.data.tokens.typesetting %}
 
 {:.bg-gold-20v.padding-2.radius-md}
-Please see the [Typesetting]({{ site.baseurl }}/design-tokens/typesetting){:.text-ink.text-bold} section for more about font size normalization and how USWDS uses tokens for typesetting. Setting line height requires both a [line height](#0){:.token} token and a [family]({{ site.baseurl }}/design-tokens/typesetting/font-family){:.token} token. The documentation below displays a "target line-height" rather than the final output, which will be normalized depending on the targeted font family.
+Please see the [Typesetting]({{ site.baseurl }}/design-tokens/typesetting){:.text-ink.text-bold} section for more about font size normalization and how USWDS uses tokens for typesetting. Setting line height requires both a [line height]({{ site.baseurl }}/design-tokens/typesetting/line-height){:.token} token and a [family]({{ site.baseurl }}/design-tokens/typesetting/font-family){:.token} token. The documentation below displays a "target line-height" rather than the final output, which will be normalized depending on the targeted font family.
 
 ## Line height tokens
 <div class="site-table-wrapper">

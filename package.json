@@ -51,7 +51,7 @@
     "lint": "gulp eslint scss-lint",
     "prestart": "gulp build",
     "proof": "bundle exec htmlproofer --assume-extension --disable-external --allow-hash-href --alt-ignore '/.*/' --file-ignore '/developers/' ./_site",
-    "serve": "npm run build-all-assets && bundle exec jekyll serve --drafts --future --incremental --livereload",
+    "serve": "npm run build-all-assets && bundle exec jekyll serve --drafts --future --incremental --livereload --host=localhost",
     "serve:package": "npm run build-uswds && npm run serve",
     "serve:local": "export FRACTAL_BASE_URL=\"http://localhost:3000\" && npm run serve",
     "start": "bundle exec jekyll serve --drafts --future",

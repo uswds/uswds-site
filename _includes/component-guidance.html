@@ -87,7 +87,7 @@
     {{ accessibility | markdownify }}
   {% endif %}
   {% if implementation.size > guidanceNullLength or page.variants or site.data.settings.components[settingsKey] %}
-    <h3  id="using-the-{{ componentKey }}" class="usa-heading">
+    <h3  id="using-the-{{ componentKey }}-{{ page.type }}" class="usa-heading">
       Using the {{ page.title | downcase }} {{ page.type }}
     </h3>
     {{ implementation | markdownify }}

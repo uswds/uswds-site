@@ -6,7 +6,7 @@ redirect_from:
 layout: styleguide
 title: Accessibility
 category: How to use USWDS
-lead: Accessibility is usability for every ability
+lead: Usability for every ability
 order: 25
 subnav:
 - text: Common ability-based patterns the design system addresses

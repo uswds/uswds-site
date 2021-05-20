@@ -21,18 +21,28 @@ subnav:
 
 When it comes to accessibility (sometimes shortened to "a11y" for the eleven characters between the letters "a" and "y" in the word "accessibility"), legal requirements are a critical, necessary starting point, but requirements are only the beginning. Accessibility is about real people who use our services — it's usability for any ability. Accessibility enables full participation, and everyone who works on government websites has a role to play in making federal resources accessible and inclusive. Incorporate accessibility from the start, design generously, and celebrate accessibility requirements as a set of design constraints that help us build products and services for those who need it most, and better products and services for all users.
 
+Today, when we think practically about accessibility in digital services, we think about the requirements of Section 508 of the Rehabilitation Act of 1973, amended in 1998 to require Federal agencies to make their electronic and information technology accessible to people with disabilities. And we think about the requirements of WCAG, or the Web Content Accessibility Guidelines, an evolving set of requirements, now in version 2.1. These requirements are related. Section 508 incorporates by reference the WCAG 2.0 Level AA success criteria.
+
+The goal of both these requirements is to provide content and services that are Perceivable, Operable, Understandable, and Robust:
+
+- **Perceivable:** Users must be able to perceive the information presented.
+- **Operable:** Users must be able to operate the interface.
+- **Understandable:** Users must be able to understand both how the user interface operates and the meaning of information presented.
+- **Robust:** Users must be able to access the content as technologies advance. As technologies like browsers and other assistive technology evolve, the content should remain accessible.
+
 ## Common ability-based patterns the design system addresses
 Accessibility guidelines help us address specific, ability-based patterns of user experience — baseline UX needs that USWDS builds into its design language, components, guidance, and layouts.
 
-The following are a representative but not comprehensive list of the kind of user-based accessibility-focused guidance we follow, consistent with Section 508 and WCAG 2.1. Real-life users may cross categories. For instance, depending on their task, limited-vision users may use either screen readers or screen magnifiers.
+The following are a representative but not comprehensive list of the kind of user-based accessibility-focused guidance we follow, consistent with Section 508 and WCAG 2.1. Real-life users may cross categories. For instance, depending on their task, limited-vision users may use either screen readers or screen magnifiers. While not represented below, we also know that cognitive differences and neurodiversity are becoming a greater accessibility focus. Accessibility requirements may be relatively static, but accessibility itself is as dynamic and open-ended as any human-centered design process.
 
-{:.border-top-1px.padding-top-2.margin-top-2.measure-2}
+{:.border-top-1px.padding-top-2.measure-2}
 ### Blind users
 - Support screen readers and other assistive technology like braille displays
 - Outline semantic landmarks and regions
 - Assure all content has clear context and labeling
 - Provide text equivalents for visual resources
 - Announce updates of page state changes
+- Trap and move focus logically and predictably
 - Avoid visual-exclusive meaningful functionality
 
 {:.border-top-1px.padding-top-2.margin-top-2.measure-2}
@@ -52,8 +62,8 @@ The following are a representative but not comprehensive list of the kind of use
 
 {:.border-top-1px.padding-top-2.margin-top-2.measure-2}
 ### Limited-mobility users
-- Support keyboard-only (linear) functionality
-- Support touchscreen (direct input) functionality
+- Support keyboard-only (linear) functionality and conventions
+- Support touchscreen (direct input) functionality and conventions
 - Design generous readability and interaction targets
 - Prefer linear layouts
 - Don't rely on hover for critical information
@@ -69,7 +79,7 @@ The following are a representative but not comprehensive list of the kind of use
 ## What the design system does
 USWDS provides accessible components, the guidance to implement these components, and the tools to customize and extend the design system accessibly.
 
-{:.border-top-1px.padding-top-2.margin-top-2.measure-2}
+{:.border-top-1px.padding-top-2.measure-2}
 ### Deliver accessible components
 - Test with screen readers (VoiceOver, NVDA)
 - Test with keyboard-only
@@ -97,7 +107,7 @@ USWDS provides accessible components, the guidance to implement these components
 
 {:.border-top-1px.padding-top-2.margin-top-2.measure-2}
 ### Make accessibility one of our core design principles
-- It's not only part of our mission to embrace accessibility in our own work, but to do what we can to encourage it
+- It's not only part of our mission to embrace accessibility in our own work, but to do what we can to encourage it.
 - **We prioritize accessibility issues.** We will work hard to fix accessibility-related issues quickly, and to get them into the next available release. Accessibility is a mission-critical service for USWDS, and we want to know when there's an opportunity to fix something that's broken or improve something that could be better.
 
 While we conduct extensive research during the design and development of components, it is impossible to predict every use case for accessibility and usability overall. That is why we encourage you to [contribute to the community]({{ site.baseurl }}/about/community) by providing feedback on how a component is working on your site. We also recommend performing your own user testing at the page level to gauge the usability of a component within context. We welcome any and all findings and feedback as we work to identify and prioritize improvements to our components and guidance.

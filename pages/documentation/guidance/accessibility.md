@@ -30,7 +30,7 @@ The goal of both these requirements is to provide content and services that are 
 - **Understandable:** Users must be able to understand both how the user interface operates and the meaning of information presented.
 - **Robust:** Users must be able to access the content as technologies advance. As technologies like browsers and other assistive technology evolve, the content should remain accessible.
 
-## Common ability-based patterns the design system addresses
+## Common patterns USWDS addresses
 Accessibility guidelines help us address specific, ability-based patterns of user experience — baseline UX needs that USWDS builds into its design language, components, guidance, and layouts.
 
 The following are a representative but not comprehensive list of the kind of user-based accessibility-focused guidance we follow, consistent with Section 508 and WCAG 2.1. Real-life users may cross categories. For instance, depending on their task, limited-vision users may use either screen readers or screen magnifiers. While not represented below, we also know that cognitive differences and neurodiversity are becoming a greater accessibility focus. Accessibility requirements may be relatively static, but accessibility itself is as dynamic and open-ended as any human-centered design process.

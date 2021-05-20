@@ -140,7 +140,7 @@ Breaking it down, here's how it works:
         </td>
         <td data-title="Utility class" class="flex-3">
           <span>
-            <span class="text-secondary">.mobile-lg:</span>grid-col
+            <span class="text-secondary bg-white">.mobile-lg:</span>grid-col
           </span>
         </td>
         <td data-title="Columns">
@@ -172,7 +172,7 @@ Breaking it down, here's how it works:
         </td>
         <td data-title="Utility class" class="flex-3">
           <span>
-            <span class="text-secondary">.tablet:</span>grid-col
+            <span class="text-secondary bg-white">.tablet:</span>grid-col
           </span>
         </td>
         <td data-title="Columns">
@@ -204,7 +204,7 @@ Breaking it down, here's how it works:
         </td>
         <td data-title="Utility class" class="flex-3">
           <span>
-            <span class="text-secondary">.desktop:</span>grid-col
+            <span class="text-secondary bg-white">.desktop:</span>grid-col
           </span>
         </td>
         <td data-title="Columns">

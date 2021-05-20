@@ -114,5 +114,6 @@ exclude:
   - gulpfile.js
   - circle.yml
   - css
+  - pa11y-results.json
 
 env: dev

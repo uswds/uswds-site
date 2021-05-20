@@ -9,8 +9,8 @@ category: How to use USWDS
 lead: Usability for every ability
 order: 25
 subnav:
-- text: Common ability-based patterns the design system addresses
-  href: '#common-ability-based-patterns-the-design-system-addresses'
+- text: Common patterns USWDS addresses
+  href: '#common-patterns-uswds-addresses'
 - text: What the design system does
   href: '#what-the-design-system-does'
 - text: What project teams should do

@@ -101,7 +101,7 @@ USWDS provides accessible components, the guidance to implement these components
 - Normalized typography tokens that provide reliable, readable results regardless of the typeface
 
 {:.border-top-1px.padding-top-2.margin-top-2.measure-2}
-### Feature smart settings that allow accessible customization with minimal custom code
+### Feature context-aware settings that allow accessible customization with minimal custom code
 - Adding more smart components that change their color based on background
 - Smart settings for links to automatically choose accessible link and hover states
 

@@ -15,13 +15,13 @@ Our team is fortunate to include folks who’ve worked with the USWDS product te
 
 We identified three key things that contributed to our team success in working with the USWDS product team on projects over the past year.
 
-### 1. Two, three, four (or more!) minds are better than one
+## 1. Two, three, four (or more!) minds are better than one
 
 Within the “guard rails” established in our [team agreement](https://tech.gsa.gov/guides/agile_team_working_agreement/) at kickoff, our project team self-organized to great effect. We worked in concert with the core USWDS product team to establish a sprint cadence, daily retros, weekly check-ins with the Product Owner, and biweekly check-ins with the core team. Ultimately, we also came up with schedules and structures that fit the work—staying collaborative without compromising efficiency. Outside of established team ceremonies, team members synced up in daily user experience (UX) standups, twice-weekly engineering touch bases, cross-pollination meetings, and pairing and workshopping sessions as needed.
 
 This approach allowed UX and engineering pairs to work on specific components in parallel to get more done, workshopping with additional team members when tackling thorny issues while preserving the heads-down time needed for high quality work.
 
-### 2. Ask for feedback early and often
+## 2. Ask for feedback early and often
 
 Understanding the impact our decisions have on end-users of the design system as well as public users of the websites built using USWDS was critical to keeping us on the right path.
 
@@ -29,11 +29,11 @@ We [interviewed digital teams across the federal government]({{ site.baseurl }}/
 
 We took a many-pronged approach to soliciting feedback, sharing out work to the USWDS community, Digital.gov’s [UX community](https://digital.gov/communities/user-experience/), practitioners from a broad range of agencies who’ve participated in our research efforts, and TTS partners in specialized knowledge spaces like accessibility, structured data, and content strategy.
 
-### 3. Evaluate in context
+## 3. Evaluate in context
 
 No matter how evidence-based, well-architected and cleanly executed a component is, the true test of its adaptability and robustness is evaluating it in the real-world — woven into websites, and used alongside other USWDS components. Building a demo site for the [December 2020 monthly call](https://www.youtube.com/watch?v=OhtiTfKAIRw&feature=emb_logo) revealed the need for several components to receive a little more love.
 
-<iframe class="width-full maxw-full" width="560" height="315" src="https://www.youtube.com/embed/OhtiTfKAIRw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe title="USWDS Monthly Call for December 2020" class="width-full maxw-full" width="560" height="315" src="https://www.youtube.com/embed/OhtiTfKAIRw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 We partnered with the product owner to quickly identify inconsistencies and opportunities for improvement, knock those out, and get those improvements into [Release 2.10]({{ site.baseurl }}/about/releases/#version-2100) in time for the monthly call.
 
@@ -45,7 +45,7 @@ The customer also identified a tricky “sub-pixel” display bug resulting in a
 
 Directly involving end-users in the development of features and fixes is exactly the kind of participation that makes the USWDS community so special. We have the chance to see folks take USWDS components and “make them their own,” and we can count on rapid identification of potential issues, enabling us to respond quickly.
 
-### Get involved
+## Get involved
 
 If you’re using or thinking about using the design system, we’d love you to [join the USWDS]({{ site.baseurl }}/about/community/) community, where you can share feedback on upcoming features, post your amazing work, ask for help from the community, and let us know about any gotchas like that sub-pixel bug.
 

@@ -10,10 +10,8 @@ subnav:
   href: '#theme-tokens'
 - text: System tokens
   href: '#system-tokens'
-- text: Customizing tokens
-  href: '#customizing-tokens'
 - text: Using weight tokens
-  href: '#using-font-weight-tokens'
+  href: '#using-weight-tokens'
 ---
 
 {% assign tokens = site.data.tokens.typesetting.weight %}

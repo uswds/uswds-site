@@ -10,6 +10,7 @@ lead: Segmented button groups display a set of discrete buttons in a row as a si
 order: 02
 output: false
 parent: Button group
+sitemap: false
 title: Segmented button group
 variants:
   - variant: "`.usa-button-group--segmented`"

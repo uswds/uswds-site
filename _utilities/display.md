@@ -222,7 +222,7 @@ utilities:
 
     <section class="utility-examples">
 
-      <p class="utility-note"><strong>Note:</strong> <a href="http://www.w3.org/TR/css3-box/#overflow-x">Per the W3C overflow spec:</a> The computed values of ‘overflow-x’ and ‘overflow-y’ are the same as their specified values, except that some combinations with ‘visible’ are not possible: if one is specified as ‘visible’ and the other is ‘scroll’ or ‘auto’, then ‘visible’ is set to ‘auto’. The computed value of ‘overflow’ is equal to the computed value of ‘overflow-x’ if ‘overflow-y’ is the same; otherwise it is the pair of computed values of ‘overflow-x’ and ‘overflow-y’.</p>
+      <p class="utility-note"><strong>Note:</strong> <a href="http://www.w3.org/TR/css3-box/#overflow-x">Per the W3C overflow spec:</a> The computed values of ‘overflow-x’ and ‘overflow-y’ are the same as their specified values, except that some combinations with ‘visible’ are not possible: if one is specified as ‘visible’ and the other is ‘scroll’ or ‘auto’, then ‘visible’ is set to ‘auto’. The computed value of ‘overflow’ is equal to the computed value of ‘overflow-x’ if ‘overflow-y’ is the same; otherwise it is the pair of computed values of ‘overflow-x’ and ‘overflow-y’.<br/><br/>Any element that includes scrollable content must also be selectable with the keyboard. Add a <code>tabindex="0"</code> property to elements that include scrollable content.</p>
 
       {% assign overflowTokens = 'visible, hidden, scroll, auto'
         | split: ', ' %}
@@ -238,7 +238,7 @@ utilities:
           {{ token }}
         {% endcapture %}
         {% capture thisExample %}
-          <div class="overflow-{{ token }} square-card border-1px border-secondary-light padding-2 margin-y-1">
+          <div class="overflow-{{ token }} square-card border-1px border-secondary-light padding-2 margin-y-1" tabindex="0">
             <div class="square-card bg-primary-lighter"></div>
           </div>
         {% endcapture %}
@@ -255,7 +255,7 @@ utilities:
           .overflow-x-{{ token }}
         {% endcapture %}
         {% capture thisExample %}
-          <div class="overflow-x-{{ token }} square-card border-1px border-secondary-light padding-2 margin-y-1">
+          <div class="overflow-x-{{ token }} square-card border-1px border-secondary-light padding-2 margin-y-1" tabindex="0">
             <div class="square-card bg-primary-lighter"></div>
           </div>
         {% endcapture %}
@@ -272,7 +272,7 @@ utilities:
           .overflow-y-{{ token }}
         {% endcapture %}
         {% capture thisExample %}
-          <div class="overflow-y-{{ token }} square-card border-1px border-secondary-light padding-2 margin-y-1">
+          <div class="overflow-y-{{ token }} square-card border-1px border-secondary-light padding-2 margin-y-1" tabindex="0">
             <div class="square-card bg-primary-lighter"></div>
           </div>
         {% endcapture %}
@@ -378,7 +378,7 @@ utilities:
           <div class="position-absolute pin-top bg-secondary-light z-100 padding-2">
             <span class="utility-class">.position-fixed</span>
           </div>
-          <div class="position-absolute pin-all overflow-auto padding-top-7 padding-x-3 text-ink">
+          <div class="position-absolute pin-all overflow-auto padding-top-7 padding-x-3 text-ink" tabindex="0">
             <div class="measure-6">
               <p class="text-ink"><span class="display-inline-block bg-ink text-white is-inverse padding-x-1 font-lang-2xs text-bold">Scroll me!</span></p>
               <p class="line-height-sans-6">In compliance with the request of a friend of mine, who wrote me from the East, I called on good-natured, garrulous old Simon Wheeler, and inquired after my friend's friend, Leonidas W. Smiley, as requested to do, and I hereunto append the result.</p>
@@ -406,7 +406,7 @@ utilities:
 
       <h4 class="utility-examples-title">Example: Sticky positioning</h4>
       <div class="height-mobile position-relative overflow-hidden border border-secondary-light radius-md">
-        <div class="pin-all overflow-scroll padding-x-2">
+        <div class="pin-all overflow-scroll padding-x-2" tabindex="0">
           <div>
             <div class="position-sticky top-0 bg-secondary-light padding-x-2 padding-y-1 text-bold text-ink display-flex flex-justify">Sticky Heading 1 <span class="utility-class text-normal">.position-sticky</span></div>
             <p class="text-ink padding-x-2"><span class="display-inline-block bg-ink text-white is-inverse padding-x-1 font-lang-2xs text-bold">Scroll me!</span></p>
@@ -821,8 +821,7 @@ utilities:
 
   <section class="utilities-section margin-top-6">
     {% include utilities/values-intro.html %}
-
-    <aside class="example border-left-05 border-secondary-light padding-left-105 margin-top-2">
+    <div class="example border-left-05 border-secondary-light padding-left-105 margin-top-2">
       <h4 class="font-lang-2xs margin-top-0 margin-bottom-05">Example</h4>
 <pre class="font-mono-xs margin-0 padding-0 bg-transparent">
 $top-palettes: (
@@ -837,7 +836,7 @@ $top-palettes: (
 .top-neg-1px { margin: -1px; }
 .top-neg-2px { margin: -2px; }
 </pre>
-    </aside>
+    </div>
 
     {% include utilities/standard-palettes.html %}
     {% include utilities/spacing-palettes.html %}

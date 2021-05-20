@@ -85,10 +85,10 @@ USWDS provides accessible components, the guidance to implement these components
 - Test with keyboard-only
 - Test with touch-only
 - Test across browsers and operating systems
-- If it isn't accessible, it won't ship
 - Collect community feedback
 - Scan with automated tools, like pa11y and aXe, on every code change. If it doesn't pass, we can’t merge the code
 - Manually test components and functionality with a Trusted Tester
+- **If it isn't accessible, it won't ship.**
 
 {:.border-top-1px.padding-top-2.margin-top-2.measure-2}
 ### Provide guidance on how to implement our components accessibly

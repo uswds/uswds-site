@@ -94,7 +94,7 @@ body {
   text-align: center;
 }
 
-.usa-prose site-prose {
+.usa-prose .site-prose {
   @include typeset("lang");
 }
 
@@ -1194,7 +1194,7 @@ code {
 }
 
 code[class*="language-"] {
-  color: color("base");
+  color: color("base-dark");
 
   // Custom code sample colors
   .token.property,
@@ -2094,7 +2094,7 @@ li {
   @extend .utility-scope-button;
   @include u-bg("white");
   @include u-border(1px, "gray-10");
-  @include u-text("gray-20", strike);
+  @include u-text("gray-50", strike);
 }
 
 .utility-scope-button-active {
@@ -2444,7 +2444,7 @@ h6 + div:not(.usa-accordion__content):not(.usa-collection__meta-list) {
 }
 
 pre {
-  white-space: pre;
+  white-space: pre-wrap;
 }
 
 // Responsive tables
@@ -2773,13 +2773,20 @@ $theme-table-column-gap: 4;
     h4,
     h5,
     h5 {
+      @include typeset("lang");
       @extend %header-margin;
       color: color("ink");
       margin: 0;
     }
 
+    h2 {
+      @include typeset("lang", "lg", 2);
+      @include u-text("bold");
+    }
+
     h3 {
       @include typeset("lang", "lg", 2);
+      @include u-text("normal");
     }
 
     .site-text-intro {

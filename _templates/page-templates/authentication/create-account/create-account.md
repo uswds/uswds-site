@@ -22,8 +22,6 @@ subnav:
     href: '#create-account-code'
   - text: Guidance
     href: '#create-account-guidance'
-  - text: Package
-    href: '#create-account-package'
 title: Create account
 type: template
 ---

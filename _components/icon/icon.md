@@ -27,13 +27,13 @@ variants:
     description: "`9 unit` x `9 unit` icon"
 subnav:
 - text: Preview
-  href: '#icons-preview'
+  href: '#icon-preview'
 - text: Code
-  href: '#icons-code'
+  href: '#icon-code'
 - text: Guidance
-  href: '#icons-guidance'
+  href: '#icon-guidance'
 - text: Package
-  href: '#icons-package'
+  href: '#icon-package'
 tags:
   - image
   - graphic

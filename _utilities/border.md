@@ -774,8 +774,7 @@ utilities:
 
   <section class="utilities-section margin-top-6">
     {% include utilities/values-intro.html %}
-
-    <aside class="example border-left-05 border-secondary-light padding-left-105 margin-top-2">
+    <div class="example border-left-05 border-secondary-light padding-left-105 margin-top-2">
       <h4 class="font-lang-2xs margin-top-0 margin-bottom-05">Example</h4>
 <pre class="font-mono-xs margin-0 padding-0 bg-transparent">
 $border-color-palettes: (
@@ -788,7 +787,7 @@ $border-color-palettes: (
 .border-blue-warm-50v { border-color: #2673DF; }
 .border-blue-warm-60v { border-color: #0052DE; }
 </pre>
-    </aside>
+    </div>
 
     {% include utilities/standard-palettes.html %}
     {% include utilities/spacing-palettes.html %}

@@ -1,0 +1,9 @@
+{
+  "defaults": {
+    "userAgent": "pa11y",
+    "timeout": 120000,
+    "concurrency": 8,
+    "standard": "WCAG2AA",
+    "runners": ["axe"]
+  }
+}

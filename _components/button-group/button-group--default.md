@@ -8,6 +8,7 @@ layout: component
 lead: The default button group arranges each button as a separate element with a gap between them. On mobile devices, the buttons are arranged vertically.
 order: 01
 parent: Button group
+sitemap: false
 title: Default button group
 variants:
   - variant: "`.usa-button-group--segmented`"

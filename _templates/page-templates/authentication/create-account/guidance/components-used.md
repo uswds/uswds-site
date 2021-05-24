@@ -1,4 +1,4 @@
-- [Extended header]({{ site.baseurl }}/components/header/#extended) with `.usa-nav` and `.usa-menu-btn` removed
+- [Extended header]({{ site.baseurl }}/components/header/#extended-header) with `.usa-nav` and `.usa-menu-btn` removed
 - Form controls
 - [Grid]({{ site.baseurl }}/utilities/layout-grid/)
 - [Button]({{ site.baseurl }}/components/button/)

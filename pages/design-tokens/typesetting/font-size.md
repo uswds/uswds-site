@@ -11,7 +11,7 @@ subnav:
 - text: System tokens
   href: '#system-tokens'
 - text: Using size tokens
-  href: '#using-typescale-in-utilities-settings-and-component-sass'
+  href: '#using-size-tokens'
 ---
 
 {% assign tokens = site.data.tokens.typesetting.size %}

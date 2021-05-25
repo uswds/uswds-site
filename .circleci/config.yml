@@ -107,6 +107,34 @@ jobs:
       - run:
           name: Stop site
           command: npm run test:stop
+  test_a11y_mobile:
+    <<: *defaults
+    steps:
+      - *attach_workspace
+      - run: *build_ruby
+      - run:
+          name: Start site
+          command: npm run start-detached
+      - run:
+          name: Proof site
+          command: npm run pa11y-ci:sitemap-mobile
+      - run:
+          name: Stop site
+          command: npm run test:stop
+  test_a11y_desktop:
+    <<: *defaults
+    steps:
+      - *attach_workspace
+      - run: *build_ruby
+      - run:
+          name: Start site
+          command: npm run start-detached
+      - run:
+          name: Proof site
+          command: npm run pa11y-ci:sitemap
+      - run:
+          name: Stop site
+          command: npm run test:stop
 
 
 workflows:
@@ -132,3 +160,12 @@ workflows:
       - lint:
           requires:
             - install_node
+      - proof_site:
+          requires:
+            - build_uswds
+      - test_a11y_mobile:
+          requires:
+            - build_uswds
+      - test_a11y_desktop:
+          requires:
+            - build_uswds

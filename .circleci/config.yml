@@ -15,6 +15,9 @@ aliases:
         gem install bundler --install-dir 'vendor/bundle'
         echo $PATH
         ls vendor/bundle
+        ls vendor/bundle/bin
+        ls vendor/bundle/gems
+        ls vendor/bundle/ruby
         bundle config set --local path 'vendor/bundle'
         bundle install --jobs=6 --retry=3 --deployment
   - &save_workspace

@@ -12,7 +12,7 @@ aliases:
       name: Install ruby dependencies
       command: |
         pwd
-        gem install bundler --install-dir 'vendor/bundle/bin'
+        gem install bundler --install-dir 'vendor/bundle'
         echo $PATH
         ls vendor/bundle
         ls vendor/bundle/bin
@@ -56,7 +56,7 @@ jobs:
       - run:
           name: Update PATH and Define Environment Variable at Runtime
           command: |
-            echo 'export PATH=$PATH:/home/circleci/project/vendor/bundle' >> $BASH_ENV
+            echo 'export PATH=$PATH:/home/circleci/project/vendor/bundle/bin' >> $BASH_ENV
             source $BASH_ENV
       - restore_cache:
           keys:
@@ -96,7 +96,7 @@ jobs:
       - run:
           name: Update PATH and Define Environment Variable at Runtime
           command: |
-            echo 'export PATH=$PATH:/home/circleci/project/vendor/bundle' >> $BASH_ENV
+            echo 'export PATH=$PATH:/home/circleci/project/vendor/bundle/bin' >> $BASH_ENV
             source $BASH_ENV
       - run:
           name: Test Ruby
@@ -108,7 +108,7 @@ jobs:
       - run:
           name: Update PATH and Define Environment Variable at Runtime
           command: |
-            echo 'export PATH=$PATH:/home/circleci/project/vendor/bundle' >> $BASH_ENV
+            echo 'export PATH=$PATH:/home/circleci/project/vendor/bundle/bin' >> $BASH_ENV
             source $BASH_ENV
       - run:
           name: Run lint

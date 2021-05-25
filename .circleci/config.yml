@@ -77,6 +77,7 @@ jobs:
           root: .
           paths:
             - node_modules
+            - vendor/bundle
   snyk:
     <<: *defaults
     steps:
@@ -114,6 +115,8 @@ jobs:
           root: .
           paths:
             - _site
+            - node_modules
+            - vendor/bundle
   proof_site:
     <<: *defaults
     steps:

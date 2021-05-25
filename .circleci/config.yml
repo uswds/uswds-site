@@ -46,14 +46,14 @@ jobs:
             - gem-cache
       - run:
           name: Install ruby dependencies
-          command: |
-            gem update --system
-            gem install bundler
-            bundle install --jobs=4 --retry=3 --path vendor/bundle
+          command: bundle install
       - save_cache:
           key: gem-cache-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
+      - run:
+          name: Run ruby tests
+          command: bundle exec rspec
       - persist_to_workspace:
           root: .
           paths:

@@ -6,18 +6,11 @@ orbs:
 defaults: &defaults
     docker:
       - image: circleci/ruby:2.6-node-browsers
-
 aliases:
   - &build_ruby
       name: Install ruby dependencies
       command: |
-        pwd
         gem install bundler --install-dir 'vendor/bundle'
-        echo $PATH
-        ls vendor/bundle
-        ls vendor/bundle/bin
-        ls vendor/bundle/gems
-        ls vendor/bundle/ruby
         bundle config set --local path 'vendor/bundle'
         bundle install --jobs=6 --retry=3 --deployment
   - &save_workspace
@@ -49,15 +42,10 @@ jobs:
           paths:
             - node_modules
       - *save_workspace
-  install_ruby:
+  cache_ruby:
     <<: *defaults
     steps:
       - *attach_workspace
-      - run:
-          name: Update PATH and Define Environment Variable at Runtime
-          command: |
-            echo 'export PATH=$PATH:/home/circleci/project/vendor/bundle/bin' >> $BASH_ENV
-            source $BASH_ENV
       - restore_cache:
           keys:
             - gem-cache-{{ checksum "Gemfile.lock" }}
@@ -93,11 +81,7 @@ jobs:
     <<: *defaults
     steps:
       - *attach_workspace
-      - run:
-          name: Update PATH and Define Environment Variable at Runtime
-          command: |
-            echo 'export PATH=$PATH:/home/circleci/project/vendor/bundle/bin' >> $BASH_ENV
-            source $BASH_ENV
+      - run: *build_ruby
       - run:
           name: Test Ruby
           command: vendor/bundle/bundle exec rspec
@@ -105,11 +89,7 @@ jobs:
     <<: *defaults
     steps:
       - *attach_workspace
-      - run:
-          name: Update PATH and Define Environment Variable at Runtime
-          command: |
-            echo 'export PATH=$PATH:/home/circleci/project/vendor/bundle/bin' >> $BASH_ENV
-            source $BASH_ENV
+      - run: *build_ruby
       - run:
           name: Run lint
           command: npm run lint
@@ -123,18 +103,18 @@ workflows:
       - snyk:
           requires:
             - checkout
-      - install_ruby:
+      - cache_ruby:
           requires:
             - checkout
       - test_ruby:
           requires:
-            - install_ruby
-      - install_node:
-          requires:
-            - install_ruby
+            - cache_ruby
+      - install_node
       - build_uswds:
           requires:
+            - cache_ruby
             - install_node
       - lint:
           requires:
+            - cache_ruby
             - install_node

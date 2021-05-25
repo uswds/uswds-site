@@ -10,7 +10,7 @@ aliases:
   - &build_ruby
       name: Install ruby dependencies
       command: |
-        gem install bundler --install-dir 'vendor/bundle'
+        gem install bundler
         bundle config set --local path 'vendor/bundle'
         bundle install --jobs=6 --retry=3 --deployment
   - &save_workspace

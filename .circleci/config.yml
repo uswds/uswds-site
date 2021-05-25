@@ -13,11 +13,6 @@ aliases:
         gem install bundler
         bundle config set --local path 'vendor/bundle'
         bundle install --jobs=6 --retry=3
-  - &save_workspace
-      persist_to_workspace:
-        root: .
-        paths:
-          - .
   - &attach_workspace
       attach_workspace:
         at: .
@@ -29,7 +24,10 @@ jobs:
       - run:
           name: List
           command: ls
-      - *save_workspace
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
   install_node:
     <<: *defaults
     steps:
@@ -44,7 +42,10 @@ jobs:
           key: npm-cache-{{ checksum "package-lock.json" }}
           paths:
             - node_modules
-      - *save_workspace
+      - persist_to_workspace:
+          root: .
+          paths:
+            - node_modules
   cache_ruby:
     <<: *defaults
     steps:
@@ -58,7 +59,6 @@ jobs:
           key: gem-cache-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
-      - *save_workspace
   build_uswds:
     <<: *defaults
     steps:
@@ -73,7 +73,10 @@ jobs:
           key: uswds-cache-{{ checksum "package-lock.json" }}
           paths:
             - node_modules/uswds
-      - *save_workspace
+      - persist_to_workspace:
+          root: .
+          paths:
+            - node_modules
   snyk:
     <<: *defaults
     steps:
@@ -96,14 +99,29 @@ jobs:
       - run:
           name: Run lint
           command: npm run lint
+  build_site:
+    <<: *defaults
+    steps:
+      - *attach_workspace
+      - run: *build_ruby
+      - run:
+          name: Serve site to build proper _site directory
+          command: bundle exec jekyll serve --detach --host=localhost
+      - run:
+          name: Stop site
+          command: pkill -f jekyll
+      - persist_to_workspace:
+          root: .
+          paths:
+            - _site
   proof_site:
     <<: *defaults
     steps:
       - *attach_workspace
       - run: *build_ruby
       - run:
-          name: Start site
-          command: npm run start-detached
+          name: Start site from _site directory
+          command: bundle exec jekyll serve --skip-initial-build --detach --host=localhost
       - run:
           name: Proof site
           command: npm run proof
@@ -116,8 +134,8 @@ jobs:
       - *attach_workspace
       - run: *build_ruby
       - run:
-          name: Start site
-          command: npm run start-detached
+          name: Start site from _site directory
+          command: bundle exec jekyll serve --skip-initial-build --detach --host=localhost
       - run:
           name: Proof site
           command: npm run pa11y-ci:sitemap-mobile
@@ -130,8 +148,8 @@ jobs:
       - *attach_workspace
       - run: *build_ruby
       - run:
-          name: Start site
-          command: npm run start-detached
+          name: Start site from _site directory
+          command: bundle exec jekyll serve --skip-initial-build --detach --host=localhost
       - run:
           name: Proof site
           command: npm run pa11y-ci:sitemap
@@ -163,12 +181,15 @@ workflows:
       - lint:
           requires:
             - install_node
+      - build_site:
+          requires:
+            - build_uswds
       - proof_site:
           requires:
-            - build_uswds
+            - build_site
       - test_a11y_mobile:
           requires:
-            - build_uswds
+            - build_site
       - test_a11y_desktop:
           requires:
-            - build_uswds
+            - build_site

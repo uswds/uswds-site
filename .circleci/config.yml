@@ -12,7 +12,8 @@ aliases:
       name: Install ruby dependencies
       command: |
         gem install bundler
-        bundle install --path=vendor/bundle --jobs=4 --retry=3
+        bundle config set --local path 'vendor/bundle'
+        bundle install --jobs=4 --retry=3
   - &save_workspace
       persist_to_workspace:
         root: .

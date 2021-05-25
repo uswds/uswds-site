@@ -13,10 +13,10 @@ aliases:
       command: |
         pwd
         gem install bundler --install-dir 'vendor/bundle'
-        bundle config set --local path 'vendor/bundle'
-        bundle install --jobs=6 --retry=3 --deployment
         echo $PATH
         ls vendor/bundle
+        bundle config set --local path 'vendor/bundle'
+        bundle install --jobs=6 --retry=3 --deployment
   - &save_workspace
       persist_to_workspace:
         root: .

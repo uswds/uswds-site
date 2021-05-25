@@ -120,9 +120,6 @@ jobs:
       - run:
           name: Serve site to build proper _site directory
           command: bundle exec jekyll serve --detach --host=localhost
-      - run:
-          name: Stop site
-          command: pkill -f jekyll
       - persist_to_workspace:
           root: .
           paths:
@@ -144,9 +141,6 @@ jobs:
       - run:
           name: Proof site
           command: npm run proof
-      - run:
-          name: Stop site
-          command: npm run test:stop
   test_a11y_mobile:
     <<: *defaults
     steps:
@@ -162,9 +156,6 @@ jobs:
       - run:
           name: Proof site
           command: npm run pa11y-ci:sitemap-mobile
-      - run:
-          name: Stop site
-          command: npm run test:stop
   test_a11y_desktop:
     <<: *defaults
     steps:
@@ -180,9 +171,6 @@ jobs:
       - run:
           name: Proof site
           command: npm run pa11y-ci:sitemap
-      - run:
-          name: Stop site
-          command: npm run test:stop
 
 
 workflows:

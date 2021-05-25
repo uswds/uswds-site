@@ -47,8 +47,7 @@ jobs:
       - run:
           name: Install ruby dependencies
           command: |
-            gem update --system
-            gem install bundler
+            gem install bundler:2.2.14 --install-dir vendor/bundle
             bundle install
       - save_cache:
           key: gem-cache-{{ checksum "Gemfile.lock" }}

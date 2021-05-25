@@ -109,12 +109,12 @@ workflows:
       - test_ruby:
           requires:
             - cache_ruby
-      - install_node
-      - build_uswds:
+      - install_node:
           requires:
             - cache_ruby
+      - build_uswds:
+          requires:
             - install_node
       - lint:
           requires:
-            - cache_ruby
             - install_node

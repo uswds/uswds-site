@@ -95,7 +95,7 @@ jobs:
             source $BASH_ENV
       - run:
           name: Test Ruby
-          command: bundle exec rspec
+          command: vendor/bundle/bundle exec rspec
   lint:
     <<: *defaults
     steps:

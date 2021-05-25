@@ -8,13 +8,11 @@ defaults: &defaults
       - image: circleci/ruby:2.6-node-browsers
 
 aliases:
-  - &set_ruby_path
-      - run:
-        name: Update PATH and Define Environment Variable at Runtime
-        command: |
-          echo 'export PATH=$PATH:/home/circleci/project/vendor/bundle' >> $BASH_ENV
-          source $BASH_ENV
-
+  - &set_path
+      name: Update PATH and Define Environment Variable at Runtime
+      command: |
+        echo 'export PATH=$PATH:/home/circleci/project/vendor/bundle' >> $BASH_ENV
+        source $BASH_ENV
   - &build_ruby
       name: Install ruby dependencies
       command: |
@@ -55,7 +53,7 @@ jobs:
     <<: *defaults
     steps:
       - *attach_workspace
-      - *set_ruby_path
+      - *set_path
       - restore_cache:
           keys:
             - gem-cache-{{ checksum "Gemfile.lock" }}

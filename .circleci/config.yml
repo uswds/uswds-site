@@ -88,6 +88,10 @@ jobs:
     <<: *defaults
     steps:
       - *attach_workspace
+      - restore_cache:
+          keys:
+            - gem-cache-{{ checksum "Gemfile.lock" }}
+            - gem-cache
       - run: *build_ruby
       - run:
           name: Test Ruby
@@ -96,6 +100,10 @@ jobs:
     <<: *defaults
     steps:
       - *attach_workspace
+      - restore_cache:
+          keys:
+            - gem-cache-{{ checksum "Gemfile.lock" }}
+            - gem-cache
       - run: *build_ruby
       - run:
           name: Run lint
@@ -104,6 +112,10 @@ jobs:
     <<: *defaults
     steps:
       - *attach_workspace
+      - restore_cache:
+          keys:
+            - gem-cache-{{ checksum "Gemfile.lock" }}
+            - gem-cache
       - run: *build_ruby
       - run:
           name: Serve site to build proper _site directory
@@ -121,6 +133,10 @@ jobs:
     <<: *defaults
     steps:
       - *attach_workspace
+      - restore_cache:
+          keys:
+            - gem-cache-{{ checksum "Gemfile.lock" }}
+            - gem-cache
       - run: *build_ruby
       - run:
           name: Start site from _site directory
@@ -135,6 +151,10 @@ jobs:
     <<: *defaults
     steps:
       - *attach_workspace
+      - restore_cache:
+          keys:
+            - gem-cache-{{ checksum "Gemfile.lock" }}
+            - gem-cache
       - run: *build_ruby
       - run:
           name: Start site from _site directory
@@ -149,6 +169,10 @@ jobs:
     <<: *defaults
     steps:
       - *attach_workspace
+      - restore_cache:
+          keys:
+            - gem-cache-{{ checksum "Gemfile.lock" }}
+            - gem-cache
       - run: *build_ruby
       - run:
           name: Start site from _site directory

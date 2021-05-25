@@ -84,7 +84,7 @@ jobs:
       - run: *build_ruby
       - run:
           name: Test Ruby
-          command: vendor/bundle/bundle exec rspec
+          command: bundle exec rspec
   lint:
     <<: *defaults
     steps:

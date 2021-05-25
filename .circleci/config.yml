@@ -88,6 +88,10 @@ jobs:
     steps:
       - attach_workspace:
           at: .
+      - restore_cache:
+          keys:
+            - gem-cache-{{ checksum "Gemfile.lock" }}
+            - gem-cache
       - run:
           name: Run ruby tests
           command: |

@@ -96,6 +96,7 @@ jobs:
           name: Run ruby tests
           command: |
             gem install bundler
+            bundle install --path=vendor/bundle --jobs=4 --retry=3
             bundle exec rspec
   lint:
     <<: *defaults

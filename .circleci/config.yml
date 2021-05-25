@@ -16,7 +16,7 @@ jobs:
           root: .
           paths:
             - .
-  install_npm:
+  install_node:
     <<: *defaults
     steps:
       - attach_workspace:

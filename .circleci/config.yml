@@ -89,7 +89,7 @@ jobs:
     <<: *defaults
     steps:
       - *attach_workspace
-      - *set_ruby_path
+      - *set_path
       - run:
           name: Test Ruby
           command: bundle exec rspec

@@ -13,7 +13,7 @@ aliases:
       command: |
         gem install bundler
         bundle config set --local path 'vendor/bundle'
-        bundle install --jobs=4 --retry=3
+        bundle install --jobs=4 --retry=3 --deployment
   - &save_workspace
       persist_to_workspace:
         root: .

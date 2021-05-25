@@ -3,15 +3,43 @@ version: 2.1
 orbs:
   snyk: snyk/snyk@0.0.13
 
-jobs:
-  build:
+defaults: &defaults
     docker:
       - image: circleci/ruby:2.6-node-browsers
+
+jobs:
+  checkout:
+    <<: *defaults
     steps:
       - checkout
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+  install_npm:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: .
       - restore_cache:
           keys:
             - npm-cache-{{ checksum "package-lock.json" }}
+      - run:
+          name: Install node dependencies
+          command: npm install
+      - save_cache:
+          key: npm-cache-{{ checksum "package-lock.json" }}
+          paths:
+            - node_modules
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+  install_ruby:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: .
       - restore_cache:
           keys:
             - gem-cache-{{ checksum "Gemfile.lock" }}
@@ -22,31 +50,74 @@ jobs:
             gem update --system
             gem install bundler
             bundle install --jobs=4 --retry=3 --path vendor/bundle
-      - run:
-          name: Install scss_lint
-          command: gem install scss_lint
       - save_cache:
           key: gem-cache-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
-      - run:
-          name: Install node dependencies
-          command: npm install
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+  build_uswds:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: .
+      - restore_cache:
+          keys:
+            - uswds-cache-{{ checksum "package-lock.json" }}
       - run:
           name: Build USWDS if needed
           command: npm run build-uswds
       - save_cache:
-          key: npm-cache-{{ checksum "package-lock.json" }}
+          key: uswds-cache-{{ checksum "package-lock.json" }}
           paths:
-            - node_modules
+            - node_modules/uswds
+  snyk:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: .
       - snyk/scan:
           organization: uswds
+  test_ruby:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: .
       - run:
-          name: Run test
-          command: npm run test:ci
+          name: Run ruby tests
+          command: bundle exec rspec
+  lint:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: .
+      - run:
+          name: Run lint
+          command: npm run lint
+
 
 workflows:
   version: 2.1
   circle-uswds-site:
     jobs:
-      - build
+      - checkout
+      - snyk:
+          requires:
+            - checkout
+      - install_ruby:
+          requires:
+            - checkout
+      - test_ruby:
+          requires:
+            - install_ruby
+      - install_node:
+          requires:
+            - install_ruby
+      - build_uswds:
+          requires:
+            - install_node
+      - lint:
+          requires:
+            - install_node

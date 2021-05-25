@@ -7,20 +7,30 @@ defaults: &defaults
     docker:
       - image: circleci/ruby:2.6-node-browsers
 
+aliases:
+  - &build_ruby
+      name: Install ruby dependencies
+      command: |
+        gem install bundler
+        bundle install --path=vendor/bundle --jobs=4 --retry=3
+  - &save_workspace
+      persist_to_workspace:
+        root: .
+        paths:
+          - .
+  - &attach_workspace
+      attach_workspace:
+        at: .
 jobs:
   checkout:
     <<: *defaults
     steps:
       - checkout
-      - persist_to_workspace:
-          root: .
-          paths:
-            - .
+      - *save_workspace
   install_node:
     <<: *defaults
     steps:
-      - attach_workspace:
-          at: .
+      - *attach_workspace
       - restore_cache:
           keys:
             - npm-cache-{{ checksum "package-lock.json" }}
@@ -31,37 +41,25 @@ jobs:
           key: npm-cache-{{ checksum "package-lock.json" }}
           paths:
             - node_modules
-      - persist_to_workspace:
-          root: .
-          paths:
-            - .
+      - *save_workspace
   install_ruby:
     <<: *defaults
     steps:
-      - attach_workspace:
-          at: .
+      - *attach_workspace
       - restore_cache:
           keys:
             - gem-cache-{{ checksum "Gemfile.lock" }}
             - gem-cache
-      - run:
-          name: Install ruby dependencies
-          command: |
-            gem install bundler
-            bundle install --path=vendor/bundle --jobs=4 --retry=3
+      - run: *build_ruby
       - save_cache:
           key: gem-cache-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
-      - persist_to_workspace:
-          root: .
-          paths:
-            - vendor/bundle
+      - *save_workspace
   build_uswds:
     <<: *defaults
     steps:
-      - attach_workspace:
-          at: .
+      - *attach_workspace
       - restore_cache:
           keys:
             - uswds-cache-{{ checksum "package-lock.json" }}
@@ -72,41 +70,26 @@ jobs:
           key: uswds-cache-{{ checksum "package-lock.json" }}
           paths:
             - node_modules/uswds
-      - persist_to_workspace:
-          root: .
-          paths:
-            - .
+      - *save_workspace
   snyk:
     <<: *defaults
     steps:
-      - attach_workspace:
-          at: .
+      - *attach_workspace
       - snyk/scan:
           organization: uswds
   test_ruby:
     <<: *defaults
     steps:
-      - attach_workspace:
-          at: .
-      - run:
-          name: Install gems
-          command: |
-            gem install bundler
-            bundle install --path=vendor/bundle --jobs=4 --retry=3
-            bundle exec rspec
+      - *attach_workspace
+      - run: *build_ruby
       - run:
           name: Test Ruby
           command: bundle exec rspec
   lint:
     <<: *defaults
     steps:
-      - attach_workspace:
-          at: .
-      - run:
-          name: Install gems
-          command: |
-            gem install bundler
-            bundle install --path=vendor/bundle --jobs=4 --retry=3
+      - *attach_workspace
+      - run: *build_ruby
       - run:
           name: Run lint
           command: npm run lint

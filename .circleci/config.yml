@@ -88,21 +88,25 @@ jobs:
     steps:
       - attach_workspace:
           at: .
-      - restore_cache:
-          keys:
-            - gem-cache-{{ checksum "Gemfile.lock" }}
-            - gem-cache
       - run:
-          name: Run ruby tests
+          name: Install gems
           command: |
             gem install bundler
             bundle install --path=vendor/bundle --jobs=4 --retry=3
             bundle exec rspec
+      - run:
+          name: Test Ruby
+          command: bundle exec rspec
   lint:
     <<: *defaults
     steps:
       - attach_workspace:
           at: .
+      - run:
+          name: Install gems
+          command: |
+            gem install bundler
+            bundle install --path=vendor/bundle --jobs=4 --retry=3
       - run:
           name: Run lint
           command: npm run lint

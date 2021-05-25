@@ -93,6 +93,20 @@ jobs:
       - run:
           name: Run lint
           command: npm run lint
+  proof_site:
+    <<: *defaults
+    steps:
+      - *attach_workspace
+      - run: *build_ruby
+      - run:
+          name: Start site
+          command: npm run start-detached
+      - run:
+          name: Proof site
+          command: npm run proof
+      - run:
+          name: Stop site
+          command: npm run test:stop
 
 
 workflows:

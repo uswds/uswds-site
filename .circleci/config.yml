@@ -26,6 +26,9 @@ jobs:
     <<: *defaults
     steps:
       - checkout
+      - run:
+          name: List
+          command: ls
       - *save_workspace
   install_node:
     <<: *defaults

@@ -12,7 +12,7 @@ aliases:
       name: Install ruby dependencies
       command: |
         pwd
-        gem install bundler --install-dir 'vendor/bundle'
+        gem install bundler --install-dir 'vendor/bundle/bin'
         echo $PATH
         ls vendor/bundle
         ls vendor/bundle/bin

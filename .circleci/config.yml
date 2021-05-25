@@ -47,15 +47,12 @@ jobs:
       - run:
           name: Install ruby dependencies
           command: |
-            gem install bundler:2.2.14 --install-dir vendor/bundle
+            gem install bundler
             bundle install
       - save_cache:
           key: gem-cache-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
-      - run:
-          name: Run ruby tests
-          command: bundle exec rspec
       - persist_to_workspace:
           root: .
           paths:
@@ -75,6 +72,10 @@ jobs:
           key: uswds-cache-{{ checksum "package-lock.json" }}
           paths:
             - node_modules/uswds
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
   snyk:
     <<: *defaults
     steps:
@@ -89,7 +90,9 @@ jobs:
           at: .
       - run:
           name: Run ruby tests
-          command: bundle exec rspec
+          command: |
+            gem install bundler
+            bundle exec rspec
   lint:
     <<: *defaults
     steps:

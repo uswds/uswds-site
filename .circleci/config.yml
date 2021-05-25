@@ -6,15 +6,20 @@ orbs:
 defaults: &defaults
     docker:
       - image: circleci/ruby:2.6-node-browsers
-        environment:
-          PATH: $PATH':/home/circleci/project/vendor/bundle'
 
 aliases:
+  - &set_ruby_path
+      - run:
+        name: Update PATH and Define Environment Variable at Runtime
+        command: |
+          echo 'export PATH=$PATH:/home/circleci/project/vendor/bundle' >> $BASH_ENV
+          source $BASH_ENV
+
   - &build_ruby
       name: Install ruby dependencies
       command: |
         pwd
-        gem install bundler
+        gem install bundler --install-dir 'vendor/bundle'
         bundle config set --local path 'vendor/bundle'
         bundle install --jobs=6 --retry=3 --deployment
   - &save_workspace
@@ -50,6 +55,7 @@ jobs:
     <<: *defaults
     steps:
       - *attach_workspace
+      - *set_ruby_path
       - restore_cache:
           keys:
             - gem-cache-{{ checksum "Gemfile.lock" }}
@@ -85,6 +91,7 @@ jobs:
     <<: *defaults
     steps:
       - *attach_workspace
+      - *set_ruby_path
       - run:
           name: Test Ruby
           command: bundle exec rspec

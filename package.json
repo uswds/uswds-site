@@ -48,7 +48,7 @@
     "clean": "gulp clean-assets",
     "crawl": "node config/crawl.js",
     "federalist": "npx gulp build",
-    "lint": "gulp eslint scss-lint",
+    "lint": "gulp eslint",
     "prestart": "gulp build",
     "proof": "bundle exec htmlproofer --assume-extension --disable-external --allow-hash-href --alt-ignore '/.*/' --file-ignore '/developers/' ./_site",
     "serve": "npm run build-all-assets && bundle exec jekyll serve --drafts --future --incremental --livereload --host=localhost",

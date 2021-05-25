@@ -49,7 +49,7 @@ jobs:
           command: |
             gem update --system
             gem install bundler
-            bundle install --jobs=4 --retry=3 --path vendor/bundle
+            bundle install
       - save_cache:
           key: gem-cache-{{ checksum "Gemfile.lock" }}
           paths:

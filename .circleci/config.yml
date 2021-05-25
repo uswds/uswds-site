@@ -6,6 +6,8 @@ orbs:
 defaults: &defaults
     docker:
       - image: circleci/ruby:2.6-node-browsers
+        environment:
+          PATH: $PATH':/home/circleci/project/vendor/bundle'
 
 aliases:
   - &build_ruby

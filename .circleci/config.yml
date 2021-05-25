@@ -11,6 +11,7 @@ aliases:
   - &build_ruby
       name: Install ruby dependencies
       command: |
+        pwd
         gem install bundler
         bundle config set --local path 'vendor/bundle'
         bundle install --jobs=6 --retry=3 --deployment

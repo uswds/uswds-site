@@ -48,7 +48,7 @@ jobs:
           name: Install ruby dependencies
           command: |
             gem install bundler
-            bundle install --path vendor/bundle
+            bundle install --path=vendor/bundle --jobs=4 --retry=3
       - save_cache:
           key: gem-cache-{{ checksum "Gemfile.lock" }}
           paths:
@@ -56,7 +56,7 @@ jobs:
       - persist_to_workspace:
           root: .
           paths:
-            - .
+            - vendor/bundle
   build_uswds:
     <<: *defaults
     steps:

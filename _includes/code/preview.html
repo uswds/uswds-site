@@ -28,7 +28,7 @@
         >
           <img
             src="{{ site.baseurl }}{{ image }}"
-            alt="{{ variant_alt | default(page.title) }}"
+            alt="{{ variant_alt | default: page.title }}"
           />
         </a>
         {% endfor %}

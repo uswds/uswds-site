@@ -3,7 +3,7 @@
 <div class="bg-white border-1px border-base-lightest padding-2 radius-lg">
   <div class="grid-row grid-gap-lg">
     <div class="tablet:grid-col">
-      <h5>What you must do</h5>
+      <h4>What you must do</h4>
       <ul class="usa-icon-list usa-icon-list--primary margin-top-2">
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
@@ -16,7 +16,7 @@
       </ul>
     </div>
     <div class="margin-top-3 tablet:margin-top-0 tablet:grid-col">
-      <h5>What you should do</h5>
+      <h4>What you should do</h4>
       <ul class="usa-icon-list usa-icon-list--success margin-top-2">
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">
@@ -93,7 +93,7 @@
       </ul>
     </div>
     <div class="margin-top-3 tablet:margin-top-0 tablet:grid-col">
-      <h5>What you shouldn't do</h5>
+      <h4>What you shouldn't do</h4>
       <ul class="usa-icon-list usa-icon-list--error margin-top-2">
         <li class="usa-icon-list__item">
           <div class="usa-icon-list__icon">

@@ -11,28 +11,28 @@ slug: summary
 
 subhead: A report about what’s next for the U.S. Web Design System
 
-chapter: true 
+chapter: true
 
 summary_sections:
   - heading: Overview
     description: |-
-      In September 2020, we brought together researchers, designers, engineers, and policymakers to conduct research across dozens of federal agencies to help support emergency response efforts related to the COVID-19 pandemic. 
-  
+      In September 2020, we brought together researchers, designers, engineers, and policymakers to conduct research across dozens of federal agencies to help support emergency response efforts related to the COVID-19 pandemic.
+
   - heading: Why is this important?
     title: Purpose
     description: |-
       Across the federal government, agencies are working to improve their everyday interactions with the public. How do we provide easy access to critical services? How do we deliver faster and more efficient touch points? How do we ensure transparency and build trust? The answer to these questions has increasingly become: deliver better digital services.
 
-      One piece of the widespread federal effort is implementation of the design system, which provides principles, guidance, and code that makes it easier for the federal government to deliver mobile-friendly, accessible digital services. 
+      One piece of the widespread federal effort is implementation of the design system, which provides principles, guidance, and code that makes it easier for the federal government to deliver mobile-friendly, accessible digital services.
 
-      But we need more. There are still gaps in how the design system can better meet agency needs, so they in turn can better meet the needs of the public. 
+      But we need more. There are still gaps in how the design system can better meet agency needs, so they in turn can better meet the needs of the public.
 
-      Through this research, [we looked to agency teams to help us define what digital transformation looks like](./introduction), both in the near-term and in the future. 
+      Through this research, [we looked to agency teams to help us define what digital transformation looks like](./introduction), both in the near-term and in the future.
 
   - heading: What we learned
     title: Findings
     description: |-
-      Though agencies start with different goals and capabilities, we discovered [they follow a common journey with similar needs](./findings) when it comes to successfully adopting, using, and maintaining the design system. 
+      Though agencies start with different goals and capabilities, we discovered [they follow a common journey with similar needs](./findings) when it comes to successfully adopting, using, and maintaining the design system.
 
   - heading: Our future vision
     title: What’s next
@@ -48,7 +48,7 @@ summary_sections:
 
       Use the conversation starters throughout the report to prompt discussions with your managers and team members.
 
-      Also, if you’re interested in exploring these ideas — or in learning more about the design system — [join our community](../about/community/) and get involved.  
+      Also, if you’re interested in exploring these ideas — or in learning more about the design system — [join our community](../about/community/) and get involved.
 
       The first workshop for federal employees will be in Spring 2021, and we hope to hold ad hoc workshops in the future as well. We also hold regular calls on the third Thursday of each month.
 
@@ -58,7 +58,7 @@ summary_sections:
 
 ---
 
-<header class="next-hero usa-dark-background">
+<section class="next-hero usa-dark-background" aria-label="Page description">
   <div class="grid-container">
     <div class="grid-row flex-align-center margin-x-neg-2 tablet:margin-x-auto margin-y-2 tablet:margin-y-4 desktop:margin-y-6">
       <div class="grid-col-12 tablet:grid-col-7 desktop:grid-col-6 next-hero__content padding-x-2 tablet:padding-x-0">
@@ -72,10 +72,10 @@ summary_sections:
       </div>
     </div>
   </div>
-</header>
+</section>
 
 <!-- maybe componentize this -- NOTE: it is different from the one on next-content layout -->
-<div class="next-internal-nav usa-dark-background">
+<nav class="next-internal-nav usa-dark-background" aria-label="Next report internal navigation">
   <div class="grid-container">
     <ul id="internal-nav" class="next-internal-nav__list">
       {% for item in site.next %}
@@ -90,7 +90,7 @@ summary_sections:
       </li>
     </ul>
   </div>
-</div>
+</nav>
 
 <main role="main" id="main-content">
   {% for item in page.summary_sections %}

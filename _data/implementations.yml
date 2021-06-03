@@ -76,14 +76,6 @@
   version: 1.6.1
   notes: "A front-end component library aimed at implementing USWDS design patterns in React."
 
-- name: us_web_design_standards gem
-  distribution: Ruby gem
-  url: https://github.com/18F/us_web_design_standards_gem
-  author:
-    name: 18F
-    url: https://github.com/18F
-  notes: "**This gem has been deprecated in favor of the [Rails gem](#rails-gem).** Please [let us know](https://github.com/18F/us_web_design_standards_gem/issues/new) if you'd like to adopt it."
-
 - name: uswds-sf-lightning-community
   distribution: Salesforce Lightning
   url: https://github.com/GSA/uswds-sf-lightning-community

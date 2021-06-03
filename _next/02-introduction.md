@@ -13,7 +13,7 @@ chapter: true
 
 
 
-bullet_list_focus: 
+bullet_list_focus:
   - |-
     How are teams **dealing with emergency response** situations (specifically COVID-19) in terms of their digital communications?
   - |-

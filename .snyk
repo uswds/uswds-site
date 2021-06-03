@@ -187,6 +187,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
         expires: '2021-06-16T00:00:27.921Z'
+    - gulp-sass > node-sass:
+        reason: No available upgrade or patch.
+        expires: '2021-06-17T15:54:35.584Z'
   SNYK-JS-NODESASS-535502:
     - uswds > gulp-sass > node-sass:
         reason: None given
@@ -218,6 +221,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
         expires: '2021-06-16T00:00:27.921Z'
+    - gulp-sass > node-sass:
+        reason: No available upgrade or patch.
+        expires: '2021-06-17T15:54:35.584Z'
   SNYK-JS-NODESASS-540956:
     - uswds > gulp-sass > node-sass:
         reason: None given
@@ -249,6 +255,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
         expires: '2021-06-16T00:00:27.921Z'
+    - gulp-sass > node-sass:
+        reason: No available upgrade or patch.
+        expires: '2021-06-17T15:54:35.584Z'
   SNYK-JS-NODESASS-540958:
     - uswds > gulp-sass > node-sass:
         reason: None given
@@ -280,6 +289,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
         expires: '2021-06-16T00:00:27.921Z'
+    - gulp-sass > node-sass:
+        reason: No available upgrade or patch.
+        expires: '2021-06-17T15:54:35.584Z'
   SNYK-JS-NODESASS-540964:
     - uswds > gulp-sass > node-sass:
         reason: None given
@@ -311,6 +323,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
         expires: '2021-06-16T00:00:27.921Z'
+    - gulp-sass > node-sass:
+        reason: No available upgrade or patch.
+        expires: '2021-06-17T15:54:35.584Z'
   SNYK-JS-NODESASS-540974:
     - uswds > gulp-sass > node-sass:
         reason: Wait for USWDS 2.6.0
@@ -361,6 +376,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2021-06-16T00:00:27.921Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-06-17T15:54:35.584Z'
   SNYK-JS-NODESASS-540980:
     - uswds > gulp-sass > node-sass:
         reason: None given
@@ -392,6 +410,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2021-06-16T00:00:27.921Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-06-17T15:54:35.584Z'
   SNYK-JS-NODESASS-540990:
     - uswds > gulp-sass > node-sass:
         reason: None given
@@ -423,6 +444,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2021-06-16T00:00:27.921Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-06-17T15:54:35.584Z'
   SNYK-JS-NODESASS-540992:
     - uswds > gulp-sass > node-sass:
         reason: None given
@@ -454,6 +478,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2021-06-16T00:00:27.921Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-06-17T15:54:35.584Z'
   SNYK-JS-NODESASS-540994:
     - uswds > gulp-sass > node-sass:
         reason: None given
@@ -485,6 +512,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2021-06-16T00:00:27.921Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-06-17T15:54:35.584Z'
   SNYK-JS-NODESASS-540996:
     - uswds > gulp-sass > node-sass:
         reason: None given
@@ -516,6 +546,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2021-06-16T00:00:27.921Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-06-17T15:54:35.584Z'
   SNYK-JS-NODESASS-540998:
     - uswds > gulp-sass > node-sass:
         reason: None given
@@ -547,10 +580,16 @@ ignore:
     - gulp-sass > node-sass:
         reason: No patch available
         expires: '2021-06-16T00:00:27.921Z'
+    - gulp-sass > node-sass:
+        reason: No patch available
+        expires: '2021-06-17T15:54:35.584Z'
   SNYK-JS-NODESASS-541000:
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-05-28T18:17:23.014Z'
+      gulp-sass > node-sass:
+        reason: No upgrade or patch available
+        expires: '2021-06-23T17:51:05.841Z'
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-03-21T22:33:04.906Z'
@@ -591,6 +630,9 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-05-28T18:17:23.014Z'
+      gulp-sass > node-sass:
+        reason: No upgrade or patch available
+        expires: '2021-06-23T17:51:05.841Z'
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-03-21T22:33:04.906Z'
@@ -650,7 +692,7 @@ ignore:
   SNYK-JS-GULPSCSSLINT-560114:
     - gulp-scss-lint:
         reason: No upgrade or patch available
-        expires: '2021-05-22T23:38:06.634Z'
+        expires: '2021-06-23T17:51:05.841Z'
   SNYK-JS-HTTPPROXY-569139:
     - uswds > @frctl/fractal > browser-sync > http-proxy:
         reason: n/a
@@ -998,15 +1040,21 @@ ignore:
     - gulp-eslint > eslint > glob-parent:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
-      sass > chokidar > glob-parent:
+      gulp > glob-watcher > chokidar > glob-parent:
         reason: No upgrade or patch available
-        expires: '2021-06-06T22:39:48.674Z'
+        expires: '2021-06-23T17:51:05.841Z'
     - del > globby > fast-glob > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
+      gulp > vinyl-fs > glob-stream > glob-parent:
+        reason: No upgrade or patch available
+        expires: '2021-06-23T17:51:05.841Z'
     - uswds > del > globby > fast-glob > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
+      gulp-scss-lint > vinyl-fs > glob-stream > glob-parent:
+        reason: No upgrade or patch available
+        expires: '2021-06-23T17:51:05.841Z'
     - sass > chokidar > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'

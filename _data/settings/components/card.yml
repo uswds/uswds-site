@@ -1,56 +1,57 @@
 name: Card
 contents:
   - name: Border color
-    description: Stroke color of card
+    description: Stroke color of card.
     var: $theme-card-border-color
     default: '"base-lighter"'
     type: color
   - name: Border radius
+    description: Border radius of card.
     var: $theme-card-border-radius
     default: '"lg"'
     type: units
   - name: Border width
-    description: Stroke thickness of card
+    description: Stroke thickness of card.
     var: $theme-card-border-width
     default: 2px
     type: units
   - name: Gap
-    description: Gap between cards in a card group
+    description: Gap between cards in a card group.
     var: $theme-card-gap
     default: 2
     type: units
   - name: Flag minimum width
-    description: Width at which flag cards change to horizontal layout
+    description: Width at which flag cards change to horizontal layout.
     var: $theme-card-flag-min-width
     default: '"tablet"'
     type: units
   - name: Flag image width
-    description: Fixed image width in the card flag variant
+    description: Fixed image width in the card flag variant.
     var: $theme-card-flag-image-width
     default: '"card-lg"'
     type: units
   - name: Font family
-    description: Font family for card body
+    description: Font family for card body.
     var: $theme-card-font-family
     default: '"body"'
     type: family
   - name: Header typeset
-    description: Family, size, and line height of the heading
+    description: Family, size, and line height of the heading.
     var: $theme-card-header-typeset
     default: "'heading', 'lg', 2"
     type: family
   - name: Margin bottom
-    description: Bottom margin for card
+    description: Bottom margin for card.
     var: $theme-card-margin-bottom
     default: 4
     type: units
   - name: Perimeter padding
-    description: Padding between card elements and card border
+    description: Padding between card elements and card border.
     var: $theme-card-padding-perimeter
     default: 3
     type: units
   - name: Vertical padding
-    description: Vertical padding between card elements
+    description: Vertical padding between card elements.
     var: $theme-card-padding-y
     default: 2
     type: units

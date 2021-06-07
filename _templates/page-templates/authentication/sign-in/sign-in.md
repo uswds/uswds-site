@@ -4,8 +4,15 @@ component:
   status: ready
   package: false
   dependencies:
-  image: /assets/img/templates/layout--sign-in.png
-  demo: layout--sign-in
+  image:
+    - /assets/img/templates/layout--sign-in.jpeg
+    - /assets/img/templates/layout--sign-in-lang-es.jpeg
+  demo:
+    - layout--sign-in
+    - layout--sign-in--lang-es
+  variants:
+    - Sign-in
+    - Sign-in (Spanish)
 guidance:
   - heading: Components used in this template
     path: /guidance/components-used.md

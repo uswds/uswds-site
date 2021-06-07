@@ -12,7 +12,7 @@ sitemap: false
 title: Default button group
 variants:
   - variant: "`.usa-button-group--segmented`"
-    description: Display a group of buttons in a row as a single element
+    description: Display a group of buttons in a row as a single element.
 ---
 
 {% include component.html %}

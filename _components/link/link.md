@@ -24,7 +24,7 @@ subnav:
 title: Link
 variants:
   - variant: "`usa-link--external`"
-    description: Display an external link icon after the link
+    description: Display an external link icon after the link.
 tags:
   - typography
   - type

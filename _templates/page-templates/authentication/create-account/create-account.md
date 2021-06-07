@@ -4,8 +4,15 @@ component:
   status: ready
   package: false
   dependencies:
-  image: /assets/img/templates/layout--create-account.png
-  demo: layout--create-account
+  image:
+    - /assets/img/templates/layout--create-account.jpeg
+    - /assets/img/templates/layout--create-account-lang-es.jpeg
+  demo:
+    - layout--create-account
+    - layout--create-account--lang-es
+  variants:
+    - Create account
+    - Create account (Spanish)
 guidance:
   - heading: Components used in this template
     path: /guidance/components-used.md

@@ -15,7 +15,7 @@ component:
   dependencies:
 variants:
   - variant: "`.usa-breadcrumb--wrap`"
-    description: Wrap the breadcrumb bar instead of truncating
+    description: Wrap the breadcrumb bar instead of truncating.
 subnav:
 - text: Preview
   href: '#breadcrumb-preview'

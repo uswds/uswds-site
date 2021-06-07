@@ -587,9 +587,6 @@ ignore:
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-05-28T18:17:23.014Z'
-      gulp-sass > node-sass:
-        reason: No upgrade or patch available
-        expires: '2021-06-23T17:51:05.841Z'
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-03-21T22:33:04.906Z'
@@ -626,13 +623,13 @@ ignore:
     - gulp-sass > node-sass:
         reason: No upgrade or patch available
         expires: '2021-05-22T23:38:06.635Z'
+    - gulp-sass > node-sass:
+        reason: No upgrade or patch available
+        expires: '2021-06-23T17:51:05.841Z'
   SNYK-JS-NODESASS-541002:
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-05-28T18:17:23.014Z'
-      gulp-sass > node-sass:
-        reason: No upgrade or patch available
-        expires: '2021-06-23T17:51:05.841Z'
     - uswds > gulp-sass > node-sass:
         reason: None given
         expires: '2021-03-21T22:33:04.906Z'
@@ -669,6 +666,9 @@ ignore:
     - gulp-sass > node-sass:
         reason: No upgrade or patch available
         expires: '2021-05-22T23:38:06.635Z'
+    - gulp-sass > node-sass:
+        reason: No upgrade or patch available
+        expires: '2021-06-23T17:51:05.841Z'
   'npm:braces:20180219':
     - uswds > nswatch > chokidar > anymatch > micromatch > braces:
         reason: No direct upgrade or patch.
@@ -1040,21 +1040,12 @@ ignore:
     - gulp-eslint > eslint > glob-parent:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
-      gulp > glob-watcher > chokidar > glob-parent:
-        reason: No upgrade or patch available
-        expires: '2021-06-23T17:51:05.841Z'
     - del > globby > fast-glob > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
-      gulp > vinyl-fs > glob-stream > glob-parent:
-        reason: No upgrade or patch available
-        expires: '2021-06-23T17:51:05.841Z'
     - uswds > del > globby > fast-glob > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
-      gulp-scss-lint > vinyl-fs > glob-stream > glob-parent:
-        reason: No upgrade or patch available
-        expires: '2021-06-23T17:51:05.841Z'
     - sass > chokidar > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
@@ -1172,6 +1163,15 @@ ignore:
     - uswds > nswatch > chokidar > glob-parent:
         reason: No direct upgrade or patch.
         expires: '2021-05-28T18:17:23.014Z'
+    - gulp > glob-watcher > chokidar > glob-parent:
+        reason: No upgrade or patch available
+        expires: '2021-06-23T17:51:05.841Z'
+    - gulp > vinyl-fs > glob-stream > glob-parent:
+        reason: No upgrade or patch available
+        expires: '2021-06-23T17:51:05.841Z'
+    - gulp-scss-lint > vinyl-fs > glob-stream > glob-parent:
+        reason: No upgrade or patch available
+        expires: '2021-06-23T17:51:05.841Z'
   SNYK-JS-NODESASS-1059081:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
@@ -1804,7 +1804,7 @@ ignore:
   SNYK-JS-POSTCSS-1255640:
     - gulp-sourcemaps > @gulp-sourcemaps/identity-map > postcss:
         reason: None given
-        expires: '2021-05-28T18:17:23.014Z'
+        expires: '2021-07-07T17:30:51.625Z'
     - uswds > @gulp-sourcemaps/identity-map > postcss:
         reason: None given
         expires: '2021-05-28T18:17:23.014Z'

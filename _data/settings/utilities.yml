@@ -22,39 +22,39 @@ contents:
     type: map
     map:
       - key: '"card"'
-        usage:
+        description:
         value: "false"
         type: boolean
       - key: '"card-lg"'
-        usage:
+        description:
         value: "false"
         type: boolean
       - key: '"mobile"'
-        usage:
+        description:
         value: "false"
         type: boolean
       - key: '"mobile-lg"'
-        usage:
+        description:
         value: "true"
         type: boolean
       - key: '"tablet"'
-        usage:
+        description:
         value: "true"
         type: boolean
       - key: '"tablet-lg"'
-        usage:
+        description:
         value: "false"
         type: boolean
       - key: '"desktop"'
-        usage:
+        description:
         value: "true"
         type: boolean
       - key: '"desktop-lg"'
-        usage:
+        description:
         value: "false"
         type: boolean
       - key: '"widescreen"'
-        usage:
+        description:
         value: "false"
         type: boolean
 
@@ -74,27 +74,27 @@ contents:
     type: map
     map:
       - key: '"output"'
-        description: Output the utility
+        description: Output the utility.
         value: —
         type: boolean
       - key: '"responsive"'
-        description: Output the responsive variants
+        description: Output the responsive variants.
         value: —
         type: boolean
       - key: '"active"'
-        description: Output the `active:` state variant
+        description: Output the `active:` state variant.
         value: —
         type: boolean
       - key: '"focus"'
-        description: Output the `focus:` state variant
+        description: Output the `focus:` state variant.
         value: —
         type: boolean
       - key: '"hover"'
-        description: Output the `hover:` state variant
+        description: Output the `hover:` state variant.
         value: —
         type: boolean
       - key: '"visited"'
-        description: Output the `visited:` state variant
+        description: Output the `visited:` state variant.
         value: —
         type: boolean
   - name: "Utility palettes"

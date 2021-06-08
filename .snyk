@@ -30,9 +30,6 @@ ignore:
     - uswds > gulp-stylelint > mkdirp > minimist:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      uswds > gulp-svg-sprite > svg-sprite > mocha > mkdirp > minimist:
-        reason: No direct upgrade or patch.
-        expires: '2021-07-07T18:59:49.941Z'
     - uswds > @frctl/fractal > update-notifier > configstore > mkdirp > minimist:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
@@ -75,13 +72,13 @@ ignore:
     - uswds > gulp-svg-sprite > svg-sprite > mocha > mkdirp > minimist:
         reason: No direct upgrade or patch.
         expires: '2021-05-28T18:17:23.014Z'
+    - uswds > gulp-svg-sprite > svg-sprite > mocha > mkdirp > minimist:
+        reason: No direct upgrade or patch.
+        expires: '2021-07-07T18:59:49.941Z'
   SNYK-JS-YARGSPARSER-560381:
     - uswds > mocha > yargs > yargs-parser:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
-      uswds > gulp-svg-sprite > svg-sprite > yargs > yargs-parser:
-        reason: No direct upgrade or patch.
-        expires: '2021-07-07T18:59:49.941Z'
     - uswds > nyc > yargs > yargs-parser:
         reason: Wait for USWDS 2.6.0
         expires: '2020-04-15T18:16:00.121Z'
@@ -139,6 +136,9 @@ ignore:
     - uswds > gulp-svg-sprite > svg-sprite > yargs > yargs-parser:
         reason: No direct upgrade or patch.
         expires: '2021-05-28T18:17:23.015Z'
+    - uswds > gulp-svg-sprite > svg-sprite > yargs > yargs-parser:
+        reason: No direct upgrade or patch.
+        expires: '2021-07-07T18:59:49.941Z'
   SNYK-JS-JSYAML-174129:
     - uswds > @frctl/fractal > sinon > build > jxLoader > js-yaml:
         reason: fractal
@@ -760,9 +760,6 @@ ignore:
     - gulp-eslint > eslint > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
-      uswds > @frctl/fractal > vorpal > inquirer > lodash:
-        reason: No direct upgrade or patch.
-        expires: '2021-07-07T18:59:49.940Z'
     - gulp-eslint > eslint > inquirer > lodash:
         reason: Fix does not work
         expires: '2020-09-16T16:09:09.498Z'
@@ -859,6 +856,9 @@ ignore:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No direct upgrade or patch.
         expires: '2021-05-28T18:17:23.014Z'
+    - uswds > @frctl/fractal > vorpal > inquirer > lodash:
+        reason: No direct upgrade or patch.
+        expires: '2021-07-07T18:59:49.940Z'
   SNYK-JS-LODASH-608086:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No direct upgrade or patch.
@@ -889,9 +889,6 @@ ignore:
     - uswds > @frctl/core > highlight.js:
         reason: None given
         expires: '2021-01-11T18:00:56.003Z'
-      uswds > handlebars-helpers > helper-markdown > highlight.js:
-        reason: No direct upgrade or patch.
-        expires: '2021-07-07T18:59:49.940Z'
     - uswds > handlebars-helpers > helper-markdown > highlight.js:
         reason: None given
         expires: '2021-01-11T18:00:56.003Z'
@@ -907,6 +904,9 @@ ignore:
     - uswds > handlebars-helpers > helper-markdown > highlight.js:
         reason: No direct upgrade or patch.
         expires: '2021-05-28T18:17:23.014Z'
+    - uswds > handlebars-helpers > helper-markdown > highlight.js:
+        reason: No direct upgrade or patch.
+        expires: '2021-07-07T18:59:49.940Z'
   SNYK-JS-MOCHA-561476:
     - uswds > gulp-svg-sprite > svg-sprite > mocha:
         reason: No direct upgrade or patch.
@@ -1052,27 +1052,15 @@ ignore:
     - gulp-eslint > eslint > glob-parent:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
-      uswds > glob-stream > glob-parent:
-        reason: No direct upgrade or patch.
-        expires: '2021-07-07T18:59:49.940Z'
     - del > globby > fast-glob > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
-      uswds > glob-watcher > chokidar > glob-parent:
-        reason: No direct upgrade or patch.
-        expires: '2021-07-07T18:59:49.940Z'
     - uswds > del > globby > fast-glob > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
-      uswds > glob-base > glob-parent:
-        reason: No direct upgrade or patch.
-        expires: '2021-07-07T18:59:49.940Z'
     - sass > chokidar > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
-      uswds > nswatch > chokidar > glob-parent:
-        reason: No direct upgrade or patch.
-        expires: '2021-07-07T18:59:49.940Z'
     - gulp > glob-watcher > chokidar > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
@@ -1196,6 +1184,9 @@ ignore:
     - gulp-scss-lint > vinyl-fs > glob-stream > glob-parent:
         reason: No upgrade or patch available
         expires: '2021-06-23T17:51:05.841Z'
+    - uswds > nswatch > chokidar > glob-parent:
+        reason: No direct upgrade or patch.
+        expires: '2021-07-07T18:59:49.940Z'
   SNYK-JS-NODESASS-1059081:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
@@ -1226,7 +1217,7 @@ ignore:
     - uswds > @frctl/fractal > @frctl/mandelbrot > @frctl/web > browser-sync > socket.io > engine.io:
         reason: No direct upgrade or patch.
         expires: '2021-05-28T18:17:23.013Z'
-      uswds > @frctl/fractal > @frctl/web > browser-sync > socket.io > engine.io:
+    - uswds > @frctl/fractal > @frctl/web > browser-sync > socket.io > engine.io:
         reason: No direct upgrade or patch.
         expires: '2021-07-07T18:59:49.940Z'
   SNYK-JS-JSDOM-1075447:
@@ -1237,9 +1228,6 @@ ignore:
     - gulp-sass > lodash:
         reason: None given
         expires: '2021-03-21T22:33:04.898Z'
-      uswds > @frctl/fractal > vorpal > inquirer > lodash:
-        reason: No direct upgrade or patch.
-        expires: '2021-07-07T18:59:49.940Z'
     - snyk > lodash:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
@@ -1504,13 +1492,13 @@ ignore:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No direct upgrade or patch.
         expires: '2021-05-28T18:17:23.014Z'
+    - uswds > @frctl/fractal > vorpal > inquirer > lodash:
+        reason: No direct upgrade or patch.
+        expires: '2021-07-07T18:59:49.940Z'
   SNYK-JS-LODASH-1040724:
     - gulp-sass > lodash:
         reason: None given
         expires: '2021-03-21T22:33:04.898Z'
-      uswds > @frctl/fractal > vorpal > inquirer > lodash:
-        reason: No direct upgrade or patch.
-        expires: '2021-07-07T18:59:49.940Z'
     - snyk > lodash:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
@@ -1775,6 +1763,9 @@ ignore:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No direct upgrade or patch.
         expires: '2021-05-28T18:17:23.014Z'
+    - uswds > @frctl/fractal > vorpal > inquirer > lodash:
+        reason: No direct upgrade or patch.
+        expires: '2021-07-07T18:59:49.940Z'
   SNYK-JS-HOSTEDGITINFO-1088355:
     - gulp-sass > node-sass > meow > normalize-package-data > hosted-git-info:
         reason: No direct upgrade or patch.
@@ -1807,39 +1798,21 @@ ignore:
     - gulp-sourcemaps > @gulp-sourcemaps/identity-map > postcss:
         reason: None given
         expires: '2021-06-16T00:00:27.921Z'
-      uswds > postcss-discard-comments > postcss:
-        reason: No direct upgrade or patch.
-        expires: '2021-07-07T18:59:49.940Z'
     - uswds > postcss-discard-comments > postcss:
         reason: None given
         expires: '2021-05-28T18:17:23.014Z'
-      uswds > postcss-less > postcss:
-        reason: No direct upgrade or patch.
-        expires: '2021-07-07T18:59:49.940Z'
     - uswds > postcss-less > postcss:
         reason: None given
         expires: '2021-05-28T18:17:23.014Z'
-      uswds > postcss-safe-parser > postcss:
-        reason: No direct upgrade or patch.
-        expires: '2021-07-07T18:59:49.940Z'
     - uswds > postcss-safe-parser > postcss:
         reason: None given
         expires: '2021-05-28T18:17:23.014Z'
-      uswds > postcss-sass > postcss:
-        reason: No direct upgrade or patch.
-        expires: '2021-07-07T18:59:49.940Z'
     - uswds > postcss-sass > postcss:
         reason: None given
         expires: '2021-05-28T18:17:23.014Z'
-      uswds > postcss-scss > postcss:
-        reason: No direct upgrade or patch.
-        expires: '2021-07-07T18:59:49.940Z'
     - uswds > postcss-scss > postcss:
         reason: None given
         expires: '2021-05-28T18:17:23.014Z'
-      uswds > @gulp-sourcemaps/identity-map > postcss:
-        reason: None given
-        expires: '2021-07-07T18:59:49.941Z'
     - uswds > stylelint > postcss:
         reason: None given
         expires: '2021-07-07T18:59:49.941Z'
@@ -1852,49 +1825,46 @@ ignore:
     - uswds > @gulp-sourcemaps/identity-map > postcss:
         reason: None given
         expires: '2021-05-28T18:17:23.014Z'
+    - uswds > postcss-discard-comments > postcss:
+        reason: No direct upgrade or patch.
+        expires: '2021-07-07T18:59:49.940Z'
+    - uswds > postcss-less > postcss:
+        reason: No direct upgrade or patch.
+        expires: '2021-07-07T18:59:49.940Z'
+    - uswds > postcss-safe-parser > postcss:
+        reason: No direct upgrade or patch.
+        expires: '2021-07-07T18:59:49.940Z'
+    - uswds > postcss-sass > postcss:
+        reason: No direct upgrade or patch.
+        expires: '2021-07-07T18:59:49.940Z'
+    - uswds > postcss-scss > postcss:
+        reason: No direct upgrade or patch.
+        expires: '2021-07-07T18:59:49.940Z'
+    - uswds > @gulp-sourcemaps/identity-map > postcss:
+        reason: None given
+        expires: '2021-07-07T18:59:49.941Z'
   SNYK-JS-POSTCSS-1255640:
     - gulp-sourcemaps > @gulp-sourcemaps/identity-map > postcss:
         reason: None given
-        expires: '2021-05-28T18:17:23.014Z'
-      uswds > postcss-discard-comments > postcss:
-        reason: No direct upgrade or patch.
-        expires: '2021-07-07T18:59:49.940Z'
+        expires: '2021-07-07T17:30:51.625Z'
     - uswds > @gulp-sourcemaps/identity-map > postcss:
         reason: None given
         expires: '2021-05-28T18:17:23.014Z'
-      uswds > postcss-less > postcss:
-        reason: No direct upgrade or patch.
-        expires: '2021-07-07T18:59:49.940Z'
     - uswds > postcss-discard-comments > postcss:
         reason: None given
         expires: '2021-05-28T18:17:23.014Z'
-      uswds > postcss-safe-parser > postcss:
-        reason: No direct upgrade or patch.
-        expires: '2021-07-07T18:59:49.940Z'
     - uswds > postcss-less > postcss:
         reason: None given
         expires: '2021-05-28T18:17:23.014Z'
-      uswds > postcss-sass > postcss:
-        reason: No direct upgrade or patch.
-        expires: '2021-07-07T18:59:49.940Z'
     - uswds > postcss-safe-parser > postcss:
         reason: None given
         expires: '2021-05-28T18:17:23.014Z'
-      uswds > postcss-scss > postcss:
-        reason: No direct upgrade or patch.
-        expires: '2021-07-07T18:59:49.940Z'
     - uswds > postcss-sass > postcss:
         reason: None given
         expires: '2021-05-28T18:17:23.014Z'
-      gulp-sourcemaps > @gulp-sourcemaps/identity-map > postcss:
-        reason: None given
-        expires: '2021-07-07T18:59:49.941Z'
     - uswds > postcss-scss > postcss:
         reason: None given
         expires: '2021-05-28T18:17:23.014Z'
-      uswds > @gulp-sourcemaps/identity-map > postcss:
-        reason: None given
-        expires: '2021-07-07T18:59:49.941Z'
     - uswds > stylelint > postcss:
         reason: None given
         expires: '2021-07-07T18:59:49.941Z'
@@ -1902,6 +1872,24 @@ ignore:
         reason: None given
         expires: '2021-07-07T18:59:49.941Z'
     - uswds > stylelint > sugarss > postcss:
+        reason: None given
+        expires: '2021-07-07T18:59:49.941Z'
+    - uswds > postcss-less > postcss:
+        reason: No direct upgrade or patch.
+        expires: '2021-07-07T18:59:49.940Z'
+    - uswds > postcss-safe-parser > postcss:
+        reason: No direct upgrade or patch.
+        expires: '2021-07-07T18:59:49.940Z'
+    - uswds > postcss-sass > postcss:
+        reason: No direct upgrade or patch.
+        expires: '2021-07-07T18:59:49.940Z'
+    - uswds > postcss-scss > postcss:
+        reason: No direct upgrade or patch.
+        expires: '2021-07-07T18:59:49.940Z'
+    - gulp-sourcemaps > @gulp-sourcemaps/identity-map > postcss:
+        reason: None given
+        expires: '2021-07-07T18:59:49.941Z'
+    - uswds > @gulp-sourcemaps/identity-map > postcss:
         reason: None given
         expires: '2021-07-07T18:59:49.941Z'
   SNYK-JS-XMLHTTPREQUESTSSL-1255647:

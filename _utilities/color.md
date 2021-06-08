@@ -279,8 +279,7 @@ utilities:
 
   <section class="utilities-section margin-top-6">
     {% include utilities/values-intro.html %}
-
-    <aside class="example border-left-05 border-secondary-light padding-left-105 margin-top-2">
+    <div class="example border-left-05 border-secondary-light padding-left-105 margin-top-2">
       <h4 class="font-lang-2xs margin-top-0 margin-bottom-05">Example</h4>
 <pre class="font-mono-xs margin-0 padding-0 bg-transparent">
 $background-color-palettes: (
@@ -297,7 +296,7 @@ $background-color-palettes: (
 .bg-red-50v { background-color: #e82207; }
 .bg-red-60v { background-color: #c31f0a; }
 </pre>
-    </aside>
+    </div>
 
     <h4 class="font-lang-2xs margin-top-4 margin-bottom-0">Global color palettes</h4>
     <p class="utility-text margin-top-05">Any palette added to the <code>$global-color-palettes</code> list in <code>_uswds-theme-utilities.scss</code> will output in the background color, text color, border color, and text decoration color utilities.</p>

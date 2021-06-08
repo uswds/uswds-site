@@ -11,13 +11,13 @@ redirect_from:
 - /typography/03-lists/
 subnav:
   - text: Preview
-    href: '#accordion-preview'
+    href: '#list-preview'
   - text: Code
-    href: '#accordion-code'
+    href: '#list-code'
   - text: Guidance
-    href: '#accordion-guidance'
+    href: '#list-guidance'
   - text: Package
-    href: '#accordion-package'
+    href: '#list-package'
 title: List
 variants:
 tags:

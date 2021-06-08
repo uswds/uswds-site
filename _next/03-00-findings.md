@@ -7,7 +7,7 @@ meta:
   og:image: /img/next/og-next-report.png
 
 permalink: /next/findings/
-slug: "findings" 
+slug: "findings"
 hero_color: "next-gray-dark"
 chapter: true
 ---

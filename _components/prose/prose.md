@@ -11,17 +11,15 @@ redirect_from:
 - /typography/01-prose/
 subnav:
   - text: Preview
-    href: '#accordion-preview'
+    href: '#prose-preview'
   - text: Code
-    href: '#accordion-code'
+    href: '#prose-code'
   - text: Guidance
-    href: '#accordion-guidance'
+    href: '#prose-guidance'
   - text: Package
-    href: '#accordion-package'
+    href: '#prose-package'
 title: Prose
-variants:
-  - variant: "`.usa-accordion--bordered`"
-    description: Display a border around accordion content
+type: component
 tags:
   - typography
   - type

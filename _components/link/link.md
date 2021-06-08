@@ -14,17 +14,17 @@ redirect_from:
 - /typography/02-links/
 subnav:
   - text: Preview
-    href: '#accordion-preview'
+    href: '#link-preview'
   - text: Code
-    href: '#accordion-code'
+    href: '#link-code'
   - text: Guidance
-    href: '#accordion-guidance'
+    href: '#link-guidance'
   - text: Package
-    href: '#accordion-package'
+    href: '#link-package'
 title: Link
 variants:
   - variant: "`usa-link--external`"
-    description: Display an external link icon after the link
+    description: Display an external link icon after the link.
 tags:
   - typography
   - type

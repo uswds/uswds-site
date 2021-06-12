@@ -32,7 +32,7 @@ USWDS organizes its colors tokens into [theme tokens]({{ site.baseurl }}/design-
 {:.font-lang-xs.color-ink.text-bold.text-ls-2.margin-top-0.text-uppercase}
 ### Color, color family, and grade
 
-Throughout our documentation and guidance, we’ll use use the terms color, color family, and grade, but what do we mean when we use them?
+Throughout our documentation and guidance, we’ll use the terms color, color family, and grade, but what do we mean when we use them?
 
 **Color** is any specific swatch in our token palettes, like `red-50`, `primary-base`, or `indigo-warm-60v`.
 

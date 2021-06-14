@@ -36,7 +36,6 @@
     "clean": "gulp clean-assets",
     "crawl": "node config/crawl.js",
     "federalist": "gulp build",
-    "postinstall": "bundle",
     "lint": "gulp eslint scss-lint",
     "prestart": "gulp build",
     "start": "bundle exec jekyll serve --drafts --future",

@@ -51,7 +51,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "browserify": "^16.2.3",
     "chalk": "^2.4.1",
-    "cheerio": "^1.0.0-rc.2",
+    "cheerio": "^1.0.0-rc.10",
     "chrome-launcher": "^0.13.4",
     "chrome-remote-interface": "^0.25.6",
     "del": "^3.0.0",
@@ -71,7 +71,7 @@
     "normalize.css": "^8.0.0",
     "nswatch": "^0.2.0",
     "simplecrawler": "^1.1.6",
-    "snyk": "^1.251.0",
+    "snyk": "^1.630.0",
     "uswds": "1.6.14",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"

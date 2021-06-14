@@ -2,7 +2,7 @@
 category: Components
 component:
   status: ready
-  package: usa-validation
+  package: validation
   dependencies:
 lead: Stating validation requirements up front, with live feedback, means users won't be left guessing.
 permalink: /components/validation/

@@ -14,9 +14,15 @@
 {% endif %}
 
 {% if page.component.image %}
-{% include code/preview.html demoLink=page.component.demo component=componentKey image=page.component.image level=_level %}
+  {% include code/preview.html
+    demoLink=page.component.demo
+    component=componentKey
+    image=page.component.image
+    variants=page.component.variants
+    level=_level
+  %}
 {% else %}
-{% include code/preview.html component=componentKey level=_level %}
+  {% include code/preview.html component=componentKey level=_level %}
 {% endif %}
 
 {% include code/accordion.html component=componentKey level=_level %}

@@ -10,16 +10,6 @@ contents:
     var: $theme-pagination-breakpoint
     default: '"tablet"'
     type: units
-  - name: Button background color
-    description: Default pagination button background color
-    var: $theme-pagination-button-background-color
-    default: '"gray-2"'
-    type: color
-  - name: Button border color
-    description: Default pagination button border color
-    var: $theme-pagination-button-border-color
-    default: '"black-transparent-30"'
-    type: color
   - name: Button border radius
     description: Default pagination button border radius
     var: $theme-pagination-button-border-radius
@@ -30,33 +20,8 @@ contents:
     var: $theme-pagination-button-border-width
     default: "1px"
     type: units
-  - name: Current background color
-    description: Background color of current page
-    var: $theme-pagination-current-background-color
-    default: '"base-dark"'
-    type: color
   - name: Font family
     description: Default font family for pagination
     var: $theme-pagination-font-family
     default: '"ui"'
     type: family
-  - name: Horizontal pagination element spacing
-    description: Horizontal spacing between elements
-    var: $theme-pagination-margin-x
-    default: '"0.5"'
-    type: units
-  - name: Vertical pagination spacing
-    description: Vertical spacing above/below component
-    var: $theme-pagination-margin-y
-    default: '"2"'
-    type: units
-  - name: Minimum button width
-    description: Minimum width of pagination buttons
-    var: $theme-pagination-min-width
-    default: '"4.5ch"'
-    type: units
-  - name: Pagination button padding
-    description: Inner spacing of buttons
-    var: $theme-pagination-padding
-    default: '"1"'
-    type: units

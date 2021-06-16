@@ -75,7 +75,7 @@ Unlike many USWDS components, Pagination includes behaviors we cannot build into
     <div class="pagination-behaviors--examples">
       <img
         src="{{ site.baseurl }}/assets/img/components/pagination/pagination-behaviors-4a.png"
-        alt="Example: A eight-page set shows pages 1-5 in slots 1-5. Slot 4 is current. Slot 6 shows an overflow indicator. Slot 7 shows page 8."
+        alt="Example: A eight-page set shows pages 1 to 5 in slots 1 to 5. Slot 4 is current. Slot 6 shows an overflow indicator. Slot 7 shows page 8."
         class="pagination-behaviors--example" />
       <img
         src="{{ site.baseurl }}/assets/img/components/pagination/pagination-behaviors-4b.png"
@@ -90,15 +90,15 @@ Unlike many USWDS components, Pagination includes behaviors we cannot build into
     <div class="pagination-behaviors--examples">
       <img
         src="{{ site.baseurl }}/assets/img/components/pagination/pagination-behaviors-5a.png"
-        alt="Example: A eight-page set. Page 1 is the current page. Instance shows pages 1-5 in slots 1-5. Slot 6 is overflow. Slot 7 page 8."
+        alt="Example: A eight-page set. Page 1 is the current page. Instance shows pages 1 to 5 in slots 1 to 5. Slot 6 is overflow. Slot 7 page 8."
         class="pagination-behaviors--example" />
       <img
         src="{{ site.baseurl }}/assets/img/components/pagination/pagination-behaviors-5b.png"
-        alt="Example: A eight-page set. Page 5 is the current page. Instance shows page 1 in Slot 1. Slot 2 is overflow. Pages 4-8 appear in slots 3-7."
+        alt="Example: A eight-page set. Page 5 is the current page. Instance shows page 1 in Slot 1. Slot 2 is overflow. Pages 4 to 8 appear in slots 3 to 7."
         class="pagination-behaviors--example" />
       <img
         src="{{ site.baseurl }}/assets/img/components/pagination/pagination-behaviors-5c.png"
-        alt="Example: A eight-page set. Page 6 is the current page. Instance shows page 1 in Slot 1. Slot 2 is overflow. Pages 4-8 appear in slots 3-7."
+        alt="Example: A eight-page set. Page 6 is the current page. Instance shows page 1 in Slot 1. Slot 2 is overflow. Pages 4 to 8 appear in slots 3 to 7."
         class="pagination-behaviors--example" />
     </div>
   </li>
@@ -109,11 +109,11 @@ Unlike many USWDS components, Pagination includes behaviors we cannot build into
     <div class="pagination-behaviors--examples">
       <img
         src="{{ site.baseurl }}/assets/img/components/pagination/pagination-behaviors-6a.png"
-        alt="Example: A nine-page set. Page 5 is the current page. Instance shows page 1 in Slot 1. Slot 2 is overflow. Slots 3-5 contain Pages 4, 5, and 6. Slot 6 is overflow. Slot 7 is page 9."
+        alt="Example: A nine-page set. Page 5 is the current page. Instance shows page 1 in Slot 1. Slot 2 is overflow. Slots 3 to 5 contain Pages 4, 5, and 6. Slot 6 is overflow. Slot 7 is page 9."
         class="pagination-behaviors--example" />
       <img
         src="{{ site.baseurl }}/assets/img/components/pagination/pagination-behaviors-6b.png"
-        alt="Incorrect example: A nine-page set. Page 7 is the current page. Instance shows page 1 in Slot 1. Slots 2 and 3 are overflow. Slots 4-7 contain Pages 6-9. Slot 7 is page 8. Incorrect because Slot 3 is overflow."
+        alt="Incorrect example: A nine-page set. Page 7 is the current page. Instance shows page 1 in Slot 1. Slots 2 and 3 are overflow. Slots 4 to 7 contain Pages 6 to 9. Slot 7 is page 8. Incorrect because Slot 3 is overflow."
         class="pagination-behaviors--example" />
     </div>
   </li>
@@ -124,7 +124,7 @@ Unlike many USWDS components, Pagination includes behaviors we cannot build into
     <div class="pagination-behaviors--examples">
       <img
         src="{{ site.baseurl }}/assets/img/components/pagination/pagination-behaviors-7.png"
-        alt="Example: A unbounded set. Page 1 is the current page. Slots 1-6 contain pages 1-6. Slot 7 is overflow."
+        alt="Example: A unbounded set. Page 1 is the current page. Slots 1 to 6 contain pages 1 to 6. Slot 7 is overflow."
         class="pagination-behaviors--example" />
     </div>
   </li>
@@ -135,23 +135,23 @@ Unlike many USWDS components, Pagination includes behaviors we cannot build into
     <div class="pagination-behaviors--examples">
       <img
         src="{{ site.baseurl }}/assets/img/components/pagination/pagination-behaviors-8a.png"
-        alt="Example: A unbounded set. Page 4 is the current page. Slots 1-6 contain pages 1-6. Slot 7 is overflow."
+        alt="Example: A unbounded set. Page 4 is the current page. Slots 1 to 6 contain pages 1 to 6. Slot 7 is overflow."
         class="pagination-behaviors--example" />
       <img
         src="{{ site.baseurl }}/assets/img/components/pagination/pagination-behaviors-8b.png"
-        alt="Example: A unbounded set. Page 5 is the current page. Slot 1 is page 1. Slot 2 is overflow. Slots 3-6 contain pages 4-7. Slot 4 is current. Slot 7 is overflow."
+        alt="Example: A unbounded set. Page 5 is the current page. Slot 1 is page 1. Slot 2 is overflow. Slots 3 to 6 contain pages 4 to 7. Slot 4 is current. Slot 7 is overflow."
         class="pagination-behaviors--example" />
       <img
         src="{{ site.baseurl }}/assets/img/components/pagination/pagination-behaviors-8c.png"
-        alt="Example: A unbounded set. Page 7 is the current page. Slot 1 is page 1. Slot 2 is overflow. Slots 3-6 contain pages 6-9. Slot 4 is current. Slot 7 is overflow."
+        alt="Example: A unbounded set. Page 7 is the current page. Slot 1 is page 1. Slot 2 is overflow. Slots 3 to 6 contain pages 6 to 9. Slot 4 is current. Slot 7 is overflow."
         class="pagination-behaviors--example" />
       <img
         src="{{ site.baseurl }}/assets/img/components/pagination/pagination-behaviors-8d.png"
-        alt="Incorrect example: A unbounded set. Page 7 is the current page. Slot 1 is page 1. Slot 2 is overflow. Slots 3-6 contain pages 5-8. Slot 5 is current. Slot 7 is overflow. Incorrect because Slot 5 is current."
+        alt="Incorrect example: A unbounded set. Page 7 is the current page. Slot 1 is page 1. Slot 2 is overflow. Slots 3 to 6 contain pages 5 to 8. Slot 5 is current. Slot 7 is overflow. Incorrect because Slot 5 is current."
         class="pagination-behaviors--example" />
       <img
         src="{{ site.baseurl }}/assets/img/components/pagination/pagination-behaviors-8e.png"
-        alt="Incorrect example: A unbounded set. Page 7 is the current page. Slot 1 is page 1. Slot 2 is overflow. Slots 3-6 contain pages 4-7. Slot 6 is current. Slot 7 is overflow. Incorrect because Slot 6 is current."
+        alt="Incorrect example: A unbounded set. Page 7 is the current page. Slot 1 is page 1. Slot 2 is overflow. Slots 3 to 6 contain pages 4 to 7. Slot 6 is current. Slot 7 is overflow. Incorrect because Slot 6 is current."
         class="pagination-behaviors--example" />
     </div>
   </li>

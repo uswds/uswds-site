@@ -3715,4 +3715,40 @@ blockquote {
 
 [href^="http"]:not([href*=".gov"])::after {
   display: none;
+.pagination-behaviors {
+  @include list-reset;
+}
+
+.pagination-behaviors--item {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid color("base-light");
+  @include at-media("tablet") {
+    flex-direction: row;
+  }
+}
+
+.pagination-behaviors--guidance,
+.pagination-behaviors--examples {
+  @include u-flex(auto);
+}
+
+.pagination-behaviors--guidance {
+  @include at-media("tablet") {
+    width: 60%;
+    padding-right: units(4);
+  }
+}
+
+p + .pagination-behaviors--examples {
+  margin-top: 0;
+}
+
+.pagination-behaviors--example {
+  @include u-margin-y(1.5);
+  display: block;
+  width: auto;
+  @include at-media("tablet") {
+    height: units(4);
+  }
 }

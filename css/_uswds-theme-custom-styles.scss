@@ -3715,6 +3715,8 @@ blockquote {
 
 [href^="http"]:not([href*=".gov"])::after {
   display: none;
+}
+
 .pagination-behaviors {
   @include list-reset;
 }
@@ -3735,8 +3737,8 @@ blockquote {
 
 .pagination-behaviors--guidance {
   @include at-media("tablet") {
-    width: 60%;
     padding-right: units(4);
+    width: 60%;
   }
 }
 

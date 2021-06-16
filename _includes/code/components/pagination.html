@@ -3,18 +3,18 @@
   {% fractal_component pagination %}
 {% endcapture %}{{ pagination | strip }}
 
-<h3 class="site-preview-heading">Infinite</h3>
-{% capture pagination--infinite %}
-  {% fractal_component pagination--infinite %}
-{% endcapture %}{{ pagination--infinite | strip }}
+<h3 class="site-preview-heading">unbounded</h3>
+{% capture pagination--unbounded %}
+  {% fractal_component pagination--unbounded %}
+{% endcapture %}{{ pagination--unbounded | strip }}
 
 <h3 class="site-preview-heading">Default (Spanish)</h3>
 {% capture pagination--lang-es %}
 {% fractal_component pagination--lang-es %}
 {% endcapture %}{{ pagination--lang-es }}
 
-<h3 class="site-preview-heading">Infinite (Spanish)</h3>
-{% capture pagination--infinite-lang-es %}
-  {% fractal_component pagination--infinite-lang-es %}
-{% endcapture %}{{ pagination--infinite-lang-es | strip }}
+<h3 class="site-preview-heading">unbounded (Spanish)</h3>
+{% capture pagination--unbounded-lang-es %}
+  {% fractal_component pagination--unbounded-lang-es %}
+{% endcapture %}{{ pagination--unbounded-lang-es | strip }}
 

@@ -18,9 +18,6 @@ subnav:
   href: '#pagination-package'
 title: Pagination
 type: component
-variants:
-  - variant: "`.usa-pagination--infinite`"
-    description: Display an unbounded data set with pagination infinite.
 ---
 The pagination component divides a large amount of content into pages, limiting how many are displayed at one time. The outcome is a list of items distributed over a collection of easily navigable pages with unique URLs.
 

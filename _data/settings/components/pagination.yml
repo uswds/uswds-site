@@ -6,22 +6,22 @@ contents:
     default: '"white"'
     type: color
   - name: Breakpoint
-    description: Breakpoint at which full pagination displays
+    description: Breakpoint at which full pagination displays.
     var: $theme-pagination-breakpoint
     default: '"tablet"'
     type: units
   - name: Button border radius
-    description: Default pagination button border radius
+    description: Default pagination button border radius.
     var: $theme-pagination-button-border-radius
     default: '"md"'
     type: units
   - name: Button border width
-    description: Width of button border
+    description: Width of button border.
     var: $theme-pagination-button-border-width
     default: "1px"
     type: units
   - name: Font family
-    description: Default font family for pagination
+    description: Default font family for pagination.
     var: $theme-pagination-font-family
     default: '"ui"'
     type: family

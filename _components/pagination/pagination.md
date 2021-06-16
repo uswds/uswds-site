@@ -5,7 +5,7 @@ component:
   status: ready
   package: usa-pagination
   dependencies:
-lead: The pagination component helps users navigate a collection of pages displaying a list of items, often as a result of a search query.
+lead: Pagination is navigation for paginated content.
 permalink: /components/pagination/
 subnav:
 - text: Preview
@@ -19,5 +19,4 @@ subnav:
 title: Pagination
 type: component
 ---
-The pagination component divides a large amount of content into pages, limiting how many are displayed at one time. The outcome is a list of items distributed over a collection of easily navigable pages with unique URLs.
-
+Paginated content is any content split into multiple pages determined only by a specific amount of content per page, not split by any meaningful attribute, like feature or subject or step. Search results and article collections are often paginated. Readers use the pagination component to move from page to page in paginated content, or directly to the first or last page of the paginated set.

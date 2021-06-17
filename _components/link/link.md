@@ -47,3 +47,6 @@ tags:
 type: component
 ---
 Links are used as navigational elements and can appear either on their own or inline with text. Too many links will clutter a page and make it difficult for users to identify their next steps. This is especially true for inline links, which should be used sparingly.
+
+{:.site-note}
+**Note:** Some guidance sections on this page are under research and review. We've indicated these sections with an `UNDER REVIEW` tag. We'll update this page by the end of Summer 2021 with finalized guidance.

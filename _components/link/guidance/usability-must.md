@@ -1,5 +1,5 @@
-- **Clearly identify external links.** [OMB’s Policies for Federal Agency Public Websites and Digital Services [PDF; 1.2 MB]](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2017/m-17-06.pdf) states that agencies “must clearly identify external links from their websites" and that they "should choose the best approach to identify external links to users in a way that minimizes the impact on the usability of their websites and digital services.”
-- **Provide required notification for non-federal external links.** [OMB’s Policies for Federal Agency Public Websites and Digital Services [PDF; 1.2 MB]](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2017/m-17-06.pdf) states that you “must clearly state that the content of external links to non-federal agency websites is not endorsed by the federal government.”
+- **Clearly identify external links.** [OMB’s Policies for Federal Agency Public Websites and Digital Services [PDF, 1.2 MB]](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2017/m-17-06.pdf) states that agencies “must clearly identify external links from their websites" and that they "should choose the best approach to identify external links to users in a way that minimizes the impact on the usability of their websites and digital services.”
+- **Provide required notification for non-federal external links.** [OMB’s Policies for Federal Agency Public Websites and Digital Services [PDF, 1.2 MB]](https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2017/m-17-06.pdf) states that you “must clearly state that the content of external links to non-federal agency websites is not endorsed by the federal government.”
 
     This requirement has two aspects:
 
@@ -29,6 +29,6 @@
           <li><span class="text-highlight">Agency websites must clearly state that the content of external links to non-Federal Agency websites is not endorsed by the Federal Government and is not subject to Federal information quality, privacy, security, and related guidelines.</span></li>
           <li><span class="text-highlight">Agencies should choose the best approach to identify external links to users in a way that minimizes the impact on the usability of their websites and digital services.</span></li>
         </ol>
-        <a class="src" href="https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2017/m-17-06.pdf" title="View ">View the full text of M-17-06 [whitehouse.gov; PDF; 1.2 MB]</a>
+        <a class="src" href="https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2017/m-17-06.pdf" title="View ">View the full text of M-17-06 [PDF, 1.2 MB]</a>
       </div>
     </div>

@@ -485,16 +485,6 @@ body {
   }
 }
 
-// Ensure the homepage accordion displays properly
-// TODO: make sure line height is added in USWDS accordion component and that
-// list styles don't override accordion styles
-#main-content {
-  // scss-lint:disable IdSelector
-  .usa-accordion__button {
-    line-height: 1;
-  }
-}
-
 .site-h2 {
   @include typeset("lang", "xl", 2);
   color: color($site-ink);
@@ -3714,6 +3704,19 @@ body {
   }
 }
 
+blockquote {
+  @include u-border-left("1px", "primary");
+  margin-left: 0;
+  padding-left: units(2);
+}
+
+@import "custom-styles/card-policy";
+@import "custom-styles/highlight";
+
+[href^="http"]:not([href*=".gov"])::after {
+  display: none;
+}
+
 .pagination-behaviors {
   @include list-reset;
 }
@@ -3734,8 +3737,8 @@ body {
 
 .pagination-behaviors--guidance {
   @include at-media("tablet") {
-    width: 60%;
     padding-right: units(4);
+    width: 60%;
   }
 }
 

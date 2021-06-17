@@ -3,7 +3,7 @@
 
     This requirement has two aspects:
 
-    - **Notification:** We recommend employing a clear, consistent, user-friendly approach for _all_ external links whether government or non-government links. Include the destination for all links that send users from your site to another site (see [What you should do](#what-you-should-do), below).
+    - **Notification:** We recommend employing a clear, consistent, user-friendly approach for _all_ external links whether government or non-government links (see [What you should do](#what-you-should-do), below).
     - **Non-endorsement:** We recommend adding language to a policy and notices page on your site to explain to users that the agency does not endorse the information on any linked non-federal site. See, for example, [USA.gov’s linking policy](https://www.usa.gov/linking-policy).
 
     Check with your [Federal Web Council representative [digital.gov]](https://digital.gov/resources/federal-web-council/) and General Counsel regarding agency requirements for this endorsement language and notification approach.

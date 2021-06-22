@@ -130,7 +130,7 @@ Unlike many USWDS components, Pagination includes behaviors we cannot build into
   </li>
   <li class="pagination-behaviors--item">
     <p class="pagination-behaviors--guidance">
-      <strong>Unbounded sets</strong> use Slot 4 as the current page for pages 4 and higher.
+      <strong>Unbounded</strong> sets use Slot 4 as the current page for pages 4 and higher.
     </p>
     <div class="pagination-behaviors--examples">
       <img

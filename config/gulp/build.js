@@ -88,7 +88,6 @@ gulp.task('build-uswds-if-needed', () => {
     * We need to: install USWDS deps, build components, and then prettify the markup.
     */
     return spawnP('npm', [ 'install' ], sharedOpts)
-      .then(() => spawnP('npx', [ 'patch-package' ], sharedOpts))
       .then(() => spawnP('npm', [ 'run', 'pl:build' ], sharedOpts))
       .then(() => spawnP('npm', [ 'run', 'prettier:templates' ], sharedOpts));
   }

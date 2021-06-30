@@ -75,6 +75,9 @@ ignore:
     - uswds > gulp-svg-sprite > svg-sprite > mocha > mkdirp > minimist:
         reason: No direct upgrade or patch.
         expires: '2021-07-07T18:59:49.941Z'
+    - gulp-svg-sprite > svg-sprite > mocha > mkdirp > minimist:
+        reason: None given
+        expires: '2021-07-03T16:35:55.085Z'
   SNYK-JS-YARGSPARSER-560381:
     - uswds > mocha > yargs > yargs-parser:
         reason: Wait for USWDS 2.6.0
@@ -139,6 +142,9 @@ ignore:
     - uswds > gulp-svg-sprite > svg-sprite > yargs > yargs-parser:
         reason: No direct upgrade or patch.
         expires: '2021-07-07T18:59:49.941Z'
+    - gulp-svg-sprite > svg-sprite > yargs > yargs-parser:
+        reason: None given
+        expires: '2021-07-03T16:35:55.086Z'
   SNYK-JS-JSYAML-174129:
     - uswds > @frctl/fractal > sinon > build > jxLoader > js-yaml:
         reason: fractal
@@ -697,8 +703,8 @@ ignore:
         expires: '2020-10-14T16:26:55.825Z'
   SNYK-JS-GULPSCSSLINT-560114:
     - gulp-scss-lint:
-        reason: No upgrade or patch available
-        expires: '2021-06-23T17:51:05.841Z'
+        reason: No upgrade or patch available.
+        expires: '2021-07-30T14:47:43.752Z'
   SNYK-JS-HTTPPROXY-569139:
     - uswds > @frctl/fractal > browser-sync > http-proxy:
         reason: n/a
@@ -914,6 +920,9 @@ ignore:
     - gulp-svg-sprite > svg-sprite > mocha:
         reason: None given
         expires: '2021-05-14T18:28:34.968Z'
+    - gulp-svg-sprite > svg-sprite > mocha:
+        reason: None given
+        expires: '2021-07-17T05:29:00.678Z'
   SNYK-JS-NODENOTIFIER-1035794:
     - node-notifier:
         reason: None given
@@ -1052,12 +1061,21 @@ ignore:
     - gulp-eslint > eslint > glob-parent:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
+      gulp > glob-watcher > chokidar > glob-parent:
+        reason: No upgrade or patch available.
+        expires: '2021-07-30T14:47:43.752Z'
     - del > globby > fast-glob > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
+      gulp > vinyl-fs > glob-stream > glob-parent:
+        reason: No upgrade or patch available.
+        expires: '2021-07-30T14:47:43.752Z'
     - uswds > del > globby > fast-glob > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
+      gulp-scss-lint > vinyl-fs > glob-stream > glob-parent:
+        reason: No upgrade or patch available.
+        expires: '2021-07-30T14:47:43.752Z'
     - sass > chokidar > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
@@ -1238,8 +1256,8 @@ ignore:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
     - gulp-sass > node-sass > lodash:
-        reason: No upgrade or patch available
-        expires: '2021-04-22T13:53:58.430Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-06-06T22:39:48.673Z'
     - uswds > gulp-sass > lodash:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
@@ -1495,6 +1513,12 @@ ignore:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No direct upgrade or patch.
         expires: '2021-07-07T18:59:49.940Z'
+    - gulp-svg-sprite > svg-sprite > lodash:
+        reason: No patch or upgrade available.
+        expires: '2021-07-03T16:35:55.085Z'
+    - gulp-svg-sprite > svg-sprite > async > lodash:
+        reason: No patch or upgrade available.
+        expires: '2021-07-03T16:35:55.085Z'
   SNYK-JS-LODASH-1040724:
     - gulp-sass > lodash:
         reason: None given
@@ -1509,8 +1533,8 @@ ignore:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
     - gulp-sass > node-sass > lodash:
-        reason: No upgrade or patch available
-        expires: '2021-04-22T13:53:58.430Z'
+        reason: No direct upgrade or patch.
+        expires: '2021-06-06T22:39:48.673Z'
     - uswds > gulp-sass > lodash:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
@@ -1766,6 +1790,12 @@ ignore:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No direct upgrade or patch.
         expires: '2021-07-07T18:59:49.940Z'
+    - gulp-svg-sprite > svg-sprite > lodash:
+        reason: No patch or upgrade available.
+        expires: '2021-07-03T16:35:55.085Z'
+    - gulp-svg-sprite > svg-sprite > async > lodash:
+        reason: No patch or upgrade available.
+        expires: '2021-07-03T16:35:55.085Z'
   SNYK-JS-HOSTEDGITINFO-1088355:
     - gulp-sass > node-sass > meow > normalize-package-data > hosted-git-info:
         reason: No direct upgrade or patch.
@@ -1779,6 +1809,15 @@ ignore:
     - gulp-sass > node-sass > meow > read-pkg-up > read-pkg > normalize-package-data > hosted-git-info:
         reason: No direct upgrade or patch.
         expires: '2021-04-23T15:51:58.850Z'
+    - gulp > gulp-cli > yargs > read-pkg-up > read-pkg > normalize-package-data > hosted-git-info:
+        reason: No patch available.
+        expires: '2021-06-06T22:39:48.673Z'
+    - gulp-sass > node-sass > meow > normalize-package-data > hosted-git-info:
+        reason: No direct upgrade or patch.
+        expires: '2021-06-06T22:39:48.673Z'
+    - gulp-sass > node-sass > meow > read-pkg-up > read-pkg > normalize-package-data > hosted-git-info:
+        reason: No direct upgrade or patch.
+        expires: '2021-06-06T22:39:48.673Z'
   SNYK-JS-LODASHTEMPLATE-1088054:
     - uswds > autolinker > gulp-header > lodash.template:
         reason: No direct upgrade or patch.
@@ -1790,6 +1829,9 @@ ignore:
     - gulp-svg-sprite > svg-sprite > xmldom:
         reason: None given
         expires: '2021-05-14T18:28:34.968Z'
+    - gulp-svg-sprite > svg-sprite > xmldom:
+        reason: None given
+        expires: '2021-07-17T05:29:00.678Z'
   SNYK-JS-XMLHTTPREQUESTSSL-1082936:
     - uswds > @frctl/fractal > @frctl/mandelbrot > @frctl/web > browser-sync > browser-sync-ui > socket.io-client > engine.io-client > xmlhttprequest-ssl:
         reason: No direct upgrade or patch.
@@ -1931,10 +1973,17 @@ ignore:
     - uswds > css-select > css-what:
         reason: No direct upgrade or patch.
         expires: '2021-07-07T18:59:49.940Z'
+    - gulp-svg-sprite > svg-sprite > svgo > css-select > css-what:
+        reason: None given
+        expires: '2021-07-17T05:29:00.678Z'
   SNYK-JS-TRIMNEWLINES-1298042:
     - gulp-sass > node-sass > meow > trim-newlines:
         reason: None given
         expires: '2021-07-07T18:59:49.941Z'
+  SNYK-JS-REQUEST-1314897:
+    - gulp-svg-sprite > svg-sprite > phantomjs-prebuilt > request:
+        reason: No upgrade or patch available.
+        expires: '2021-07-30T14:47:43.752Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

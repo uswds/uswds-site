@@ -38,7 +38,7 @@ module Jekyll
           raise (
             "Unable to find the fractal component #{@name}! " +
             "Please either define #{BASE_URL_ENV_VAR} or run " +
-            "'fractal build' in the uswds directory."
+            "'pl:build' in the uswds directory."
           )
         end
         # Replace asset path from library to what site needs.

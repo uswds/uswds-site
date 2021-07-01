@@ -20,8 +20,7 @@ gulp.task('build-sass-fonts', () => {
     .src('./css/uswds-fonts.scss')
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
-      sass
-        .sync({
+      sass({
           includePaths: [uswds_path, './css/settings'],
           outputStyle: 'expanded'
         })
@@ -44,8 +43,7 @@ gulp.task('build-sass-components', () => {
     .src('./css/uswds-components.scss')
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
-      sass
-        .sync({
+      sass({
           includePaths: [uswds_path, './css/settings'],
           outputStyle: 'expanded'
         })
@@ -68,8 +66,7 @@ gulp.task('build-sass-custom', () => {
     .src('./css/uswds-custom.scss')
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
-      sass
-        .sync({
+      sass({
           includePaths: [uswds_path, './css/settings'],
           outputStyle: 'expanded'
         })
@@ -92,8 +89,7 @@ gulp.task('build-next-sass', () => {
     .src('./css/uswds-next.scss')
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
-      sass
-        .sync({
+      sass({
           includePaths: [uswds_path, './css/settings'],
           outputStyle: 'expanded'
         })
@@ -116,8 +112,7 @@ gulp.task('build-sass-utilities', () => {
     .src('./css/uswds-utilities.scss')
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
-      sass
-        .sync({
+      sass({
           includePaths: [uswds_path, './css/settings'],
           outputStyle: 'expanded'
         })

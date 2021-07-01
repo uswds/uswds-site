@@ -55,6 +55,7 @@ Components:
   - href: /components/link/
   - href: /components/list/
   - href: /components/modal/
+  - href: /components/pagination/
   - href: /components/process-list/
   - href: /components/prose/
   - href: /components/radio-buttons/
@@ -139,8 +140,9 @@ Templates:
 
 About:
   - href: /about/
-  - href: /about/community/
+  - href: /about/key-benefits/
   - href: /about/product-values/
+  - href: /about/community/
   - href: /about/whats-new/
   - href: /about/releases/
   - href: /about/updates/

@@ -5,11 +5,9 @@ const dutil = require('./doc-util');
 const gulp = require('gulp');
 const linter = require('gulp-scss-lint');
 const postcss = require('gulp-postcss');
-const sass = require('gulp-sass');
+const sass = require('gulp-dart-scss');
 const sourcemaps = require('gulp-sourcemaps');
 const task = 'sass';
-
-sass.compiler = require('sass');
 
 const dev_plugins = [autoprefixer({ cascade: false })];
 
@@ -89,31 +87,31 @@ gulp.task('build-sass-custom', () => {
     .pipe(gulp.dest('_site/assets/css'));
 });
 
-gulp.task("build-next-sass", function() {
+gulp.task('build-next-sass', () => {
   return gulp
-    .src("./css/uswds-next.scss")
+    .src('./css/uswds-next.scss')
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass
         .sync({
-          includePaths: [uswds_path, "./css/settings"],
-          outputStyle: "expanded"
+          includePaths: [uswds_path, './css/settings'],
+          outputStyle: 'expanded'
         })
-        .on("error", function(error) {
+        .on('error', function(error) {
           sass.logError.bind(this)(error);
 
-          if (process.env.NODE_ENV !== "development") {
+          if (process.env.NODE_ENV !== 'development') {
             process.exit(1);
           }
         })
     )
     .pipe(postcss(dev_plugins))
-    .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("assets/css"))
-    .pipe(gulp.dest("_site/assets/css"));
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('assets/css'))
+    .pipe(gulp.dest('_site/assets/css'));
 });
 
-gulp.task("build-sass-utilities", function() {
+gulp.task('build-sass-utilities', () => {
   return gulp
     .src('./css/uswds-utilities.scss')
     .pipe(sourcemaps.init({ largeFile: true }))
@@ -148,16 +146,16 @@ gulp.task(
 );
 
 gulp.task(
-  "build-next-dev",
+  'build-next-dev',
   gulp.parallel(
-    "build-sass-fonts",
-    "build-sass-components",
-    "build-next-sass",
-    "build-sass-utilities"
+    'build-sass-fonts',
+    'build-sass-components',
+    'build-next-sass',
+    'build-sass-utilities'
   )
 );
 
-gulp.task("build-sass-prod", function() {
+gulp.task('build-sass-prod', () => {
   return gulp
     .src([
       './assets/css/uswds-fonts.css',
@@ -178,14 +176,14 @@ gulp.task("build-sass-prod", function() {
     .pipe(gulp.dest('_site/assets/css'));
 });
 
-gulp.task("build-next-prod", function() {
+gulp.task('build-next-prod', () => {
   return gulp
     .src([
-      "./assets/css/uswds-fonts.css",
-      "./assets/css/uswds-components.css",
-      "./assets/css/uswds-custom.css",
-      "./assets/css/uswds-utilities.css",
-      "./assets/css/uswds-next.css"
+      './assets/css/uswds-fonts.css',
+      './assets/css/uswds-components.css',
+      './assets/css/uswds-custom.css',
+      './assets/css/uswds-utilities.css',
+      './assets/css/uswds-next.css'
     ])
     .pipe(
       sourcemaps.init({
@@ -193,14 +191,14 @@ gulp.task("build-next-prod", function() {
         loadMaps: true
       })
     )
-    .pipe(concat("styles-next.css"))
+    .pipe(concat('styles-next.css'))
     .pipe(postcss(prod_plugins))
-    .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("assets/css"))
-    .pipe(gulp.dest("_site/assets/css"));
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('assets/css'))
+    .pipe(gulp.dest('_site/assets/css'));
 });
 
-gulp.task("build-sass", gulp.series("build-sass-dev", "build-next-dev", "build-sass-prod", "build-next-prod"));
+gulp.task('build-sass', gulp.series('build-sass-dev', 'build-next-dev', 'build-sass-prod', 'build-next-prod'));
 
 gulp.task('scss-lint', (done) => {
   if (!cFlags.test) {

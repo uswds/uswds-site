@@ -1,4 +1,4 @@
-<h3 class="site-preview-heading">.gov domains</h6>
+<h3 class="site-preview-heading">.gov domains</h3>
 {% capture banner %}
   {% library_component components-usa-banner-usa-banner %}
 {% endcapture %}{{ banner
@@ -7,10 +7,10 @@
   | replace: 'banner-lock-title', 'banner-lock-title-default'
   | replace: 'banner-lock-description', 'banner-lock-description-default' }}
 
-<h3 class="site-preview-heading">.mil domains</h6>
-{% capture banner-mil %}
-  {% library_component components-usa-banner-usa-banner-mil %}
-{% endcapture %}{{ banner-mil
+<h3 class="site-preview-heading">.mil domains</h3>
+{% capture banner--dot-mil %}
+  {% fractal_component banner--dot-mil %}
+{% endcapture %}{{ banner--dot-mil
   | strip
   | replace: 'gov-banner', 'gov-banner-mil'
   | replace: 'banner-lock-title', 'banner-lock-title-dot-mil'

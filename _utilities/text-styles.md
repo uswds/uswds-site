@@ -177,7 +177,7 @@ utilities:
       </p>
       <p class="utility-example-container grid-row">
         <span class="grid-col-fill text-ls-1">.text-ls-1</span>
-        <span class="grid-col-auto font-mono-xs text-light">0.05em</span>
+        <span class="grid-col-auto font-mono-xs text-light">0.025em</span>
       </p>
       <p class="utility-example-container grid-row">
         <span class="grid-col-fill text-ls-2">.text-ls-2</span>

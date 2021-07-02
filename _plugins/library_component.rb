@@ -12,7 +12,7 @@ module Jekyll
     end
 
     def get_from_server()
-      url = "#{@base_url}/patterns/patterns/#{@name}/#{@name}.markup-only.html"
+      url = "#{@base_url}/patterns/#{@name}/#{@name}.markup-only.html"
       begin
         open(url).read
       rescue => e
@@ -36,7 +36,7 @@ module Jekyll
           html = open(@fs_path).read
         else
           raise (
-            "Unable to find the fractal component #{@name}! " +
+            "Unable to find the library component #{@name}! " +
             "Please either define #{BASE_URL_ENV_VAR} or run " +
             "'pl:build' in the uswds directory."
           )

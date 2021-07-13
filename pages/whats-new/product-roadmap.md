@@ -17,7 +17,7 @@ Below is our product roadmap: a long-term plan of the goals, features, and long-
 You can also <a href="https://github.com/uswds/uswds/milestone/52" class="">view our product roadmap goals on GitHub</a>. -->
 
 <h2>Current USWDS product roadmap</h2>
-<p><span class="usa-tag label-done margin-left-0">Updated March 17, 2021</span></p>
+<p><span class="usa-tag label-done margin-left-0">Updated July 13, 2021</span></p>
 
 <div class="maxw-tablet margin-top-5">
   <ul class="site-roadmap-list">

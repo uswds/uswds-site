@@ -84,7 +84,7 @@ You can also <a href="https://github.com/uswds/uswds/milestone/52" class="">view
         <li class="site-roadmap-list__item"><span class="flex-fill">Icons</span> <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Input prefix/suffix</span> <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Modal</span> <span class="usa-tag label-done">Done</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Pagination</span> <span class="usa-tag label-in-progress">In progress</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Pagination</span> <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Step indicator</span> <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Sortable tables</span> <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Time picker</span>  <span class="usa-tag label-done">Done</span></li>

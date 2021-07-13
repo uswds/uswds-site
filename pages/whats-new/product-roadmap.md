@@ -25,7 +25,7 @@ You can also <a href="https://github.com/uswds/uswds/milestone/52" class="">view
       <ul class="site-roadmap-list__sublist">
         <li class="site-roadmap-list__item"><span class="flex-fill">Publish journey maps and service blueprint</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Publish role-based intros to the design system</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
-        <li class="site-roadmap-list__item"><span class="flex-fill">Publish high-level system benefits</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
+        <li class="site-roadmap-list__item"><span class="flex-fill">Publish high-level system benefits</span> <span class="usa-tag label-done">Done</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Update product values</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Create and publish USWDS case studies</span> <span class="usa-tag label-upcoming">Upcoming</span></li>
         <li class="site-roadmap-list__item"><span class="flex-fill">Document undocumented components</span> <span class="usa-tag label-upcoming">Upcoming</span></li>

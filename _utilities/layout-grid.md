@@ -65,7 +65,7 @@ Breaking it down, here's how it works:
 
 {:.usa-content-list}
 - **Containers:** `grid-container` centers the container and gives it a maximum width of `desktop` (1024px). If you would like the grid to span the full width of the page, do not use `grid-container`.
-  - `grid-container` can also accept any breakpoint width like `grid-container-tablet-lg` or `grid-container-widescreen`. Set the default max width with `$theme-site-max-width` in `uswds-theme-spacing.scss`.
+  - `grid-container` can also accept any breakpoint width like `grid-container-tablet-lg` or `grid-container-widescreen`. Set the default max width with `$theme-grid-container-max-width` in `uswds-theme-spacing.scss`.
   - By default, `grid-container`s have padding-x of [2 units]({{ site.baseurl }}/design-tokens/spacing-units/){:.token}, with a padding-x of [4 units]({{ site.baseurl }}/design-tokens/spacing-units/){:.token} at `desktop` and wider. Control these values with the values of `$theme-site-margins-mobile-width`, `$theme-site-margins-width` and `$theme-site-margins-beakpoint` in `uswds-theme-spacing.scss`.
 - **Rows:** Columns must have a `grid-row` as a parent.
 - **Columns:** `grid-col-[1-12]` indicates the number of columns the item spans out of a possible 12 per row. So, if you want three equal-width columns across, use `grid-col-4` for each item.
@@ -140,7 +140,7 @@ Breaking it down, here's how it works:
         </td>
         <td data-title="Utility class" class="flex-3">
           <span>
-            <span class="text-secondary">.mobile-lg:</span>grid-col
+            <span class="text-secondary bg-white">.mobile-lg:</span>grid-col
           </span>
         </td>
         <td data-title="Columns">
@@ -172,7 +172,7 @@ Breaking it down, here's how it works:
         </td>
         <td data-title="Utility class" class="flex-3">
           <span>
-            <span class="text-secondary">.tablet:</span>grid-col
+            <span class="text-secondary bg-white">.tablet:</span>grid-col
           </span>
         </td>
         <td data-title="Columns">
@@ -204,7 +204,7 @@ Breaking it down, here's how it works:
         </td>
         <td data-title="Utility class" class="flex-3">
           <span>
-            <span class="text-secondary">.desktop:</span>grid-col
+            <span class="text-secondary bg-white">.desktop:</span>grid-col
           </span>
         </td>
         <td data-title="Columns">
@@ -515,7 +515,6 @@ $theme-column-gap-lg:               3;
 $theme-column-gap-mobile:           2;
 $theme-column-gap-desktop:          4;
 $theme-grid-container-max-width:    'desktop';
-$theme-site-max-width:              'desktop';
 $theme-site-margins-breakpoint:     'desktop';
 $theme-site-margins-width:          4;
 $theme-site-margins-mobile-width:   2;

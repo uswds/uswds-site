@@ -11,11 +11,11 @@ title: Password reset form
 type: template
 subnav:
   - text: Preview
-    href: '#card-preview'
+    href: '#password-reset-form-preview'
   - text: Code
-    href: '#card-code'
+    href: '#password-reset-form-code'
   - text: Guidance
-    href: '#card-guidance'
+    href: '#password-reset-form-guidance'
   - text: Package
-    href: '#card-package'
+    href: '#password-reset-form-package'
 ---

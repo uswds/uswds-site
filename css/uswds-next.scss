@@ -763,10 +763,10 @@ html {
 .footnote {
   text-decoration: none;
 
-  &:before {
+  &::before {
     content: "[";
   }
-  &:after {
+  &::after {
     content: "]";
   }
 }
@@ -777,8 +777,6 @@ html {
 .reversefootnote {
   font-family: family('sans');
   font-size: size('sans', 4);
-  text-decoration: none;
-  vertical-align: text-top;
 }
 
 // Next Pagination cards

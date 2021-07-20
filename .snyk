@@ -935,6 +935,9 @@ ignore:
     - uswds > gulp-svg-sprite > svg-sprite > mocha:
         reason: No direct upgrade or patch.
         expires: '2021-08-12T15:27:48.620Z'
+      gulp-svg-sprite > svg-sprite > mocha:
+        reason: No patch or update available.
+        expires: '2021-08-19T18:31:41.345Z'
     - gulp-svg-sprite > svg-sprite > mocha:
         reason: None given
         expires: '2021-05-14T18:28:34.968Z'
@@ -1865,6 +1868,9 @@ ignore:
     - uswds > gulp-svg-sprite > svg-sprite > xmldom:
         reason: No direct upgrade or patch.
         expires: '2021-08-12T15:27:48.620Z'
+      gulp-svg-sprite > svg-sprite > xmldom:
+        reason: No patch or update available.
+        expires: '2021-08-19T18:31:41.345Z'
     - gulp-svg-sprite > svg-sprite > xmldom:
         reason: None given
         expires: '2021-05-14T18:28:34.968Z'
@@ -2012,6 +2018,9 @@ ignore:
     - uswds > css-select > css-what:
         reason: No direct upgrade or patch.
         expires: '2021-08-12T15:27:48.619Z'
+      gulp-svg-sprite > svg-sprite > svgo > css-select > css-what:
+        reason: No patch or update available.
+        expires: '2021-08-19T18:31:41.345Z'
     - gulp-svg-sprite > svg-sprite > svgo > css-select > css-what:
         reason: None given
         expires: '2021-07-17T05:29:00.678Z'

@@ -13,6 +13,15 @@ const dev_plugins = [autoprefixer({ cascade: false })];
 
 const prod_plugins = [csso({ forceMediaMerge: false })];
 
+const handleError = (error) => {
+  dutil.logError.bind(this)(error);
+  this.emit("end");
+
+  if (process.env.NODE_ENV !== "development") {
+    process.exit(1);
+  }
+}
+
 gulp.task("build-sass-fonts", () => {
   return gulp
     .src("./css/uswds-fonts.scss")
@@ -22,13 +31,7 @@ gulp.task("build-sass-fonts", () => {
         includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
         outputStyle: "expanded"
       })
-      .on("error", error => {
-        sass.logError.bind(this)(error);
-
-        if (process.env.NODE_ENV !== "development") {
-          process.exit(1);
-        }
-      })
+      .on("error", handleError)
     )
     .pipe(postcss(dev_plugins))
     .pipe(sourcemaps.write("."))
@@ -45,13 +48,7 @@ gulp.task("build-sass-components", () => {
         includePaths: ["./css/settings"],
         outputStyle: "expanded"
       })
-      .on("error", error => {
-        sass.logError.bind(this)(error);
-
-        if (process.env.NODE_ENV !== "development") {
-          process.exit(1);
-        }
-      })
+      .on("error", handleError)
     )
     .pipe(postcss(dev_plugins))
     .pipe(sourcemaps.write("."))
@@ -68,13 +65,7 @@ gulp.task("build-sass-custom", () => {
         includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
         outputStyle: "expanded"
       })
-      .on("error", error => {
-        sass.logError.bind(this)(error);
-
-        if (process.env.NODE_ENV !== "development") {
-          process.exit(1);
-        }
-      })
+      .on("error", handleError)
     )
     .pipe(postcss(dev_plugins))
     .pipe(sourcemaps.write("."))
@@ -91,13 +82,7 @@ gulp.task("build-next-sass", () => {
         includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
         outputStyle: "expanded"
       })
-      .on("error", error => {
-        sass.logError.bind(this)(error);
-
-        if (process.env.NODE_ENV !== "development") {
-          process.exit(1);
-        }
-      })
+      .on("error", handleError)
     )
     .pipe(postcss(dev_plugins))
     .pipe(sourcemaps.write("."))
@@ -114,13 +99,7 @@ gulp.task("build-sass-utilities", () => {
         includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
         outputStyle: "expanded"
       })
-      .on("error", error => {
-        sass.logError.bind(this)(error);
-
-        if (process.env.NODE_ENV !== "development") {
-          process.exit(1);
-        }
-      })
+      .on("error", handleError)
     )
     .pipe(postcss(dev_plugins))
     .pipe(sourcemaps.write("."))

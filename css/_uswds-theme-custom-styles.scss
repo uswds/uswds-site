@@ -568,6 +568,7 @@ body {
 %label-maturity {
   @include typeset("lang", "2xs", 4);
   color: color("ink");
+  display: inline-block;
   font-weight: font-weight("bold");
   margin-left: units(1.5);
   position: absolute;
@@ -1634,7 +1635,6 @@ code[class*="language-plaintext"] {
 .page-product-roadmap {
   .main-content {
     .usa-tag {
-      display: inline-block;
       position: relative;
     }
   }

@@ -612,6 +612,16 @@ body {
   color: color("white");
 }
 
+.label-archived {
+  @extend %label-maturity;
+  @include set-text-and-bg("red-30");
+}
+
+.label-stale {
+  @extend %label-maturity;
+  @include set-text-and-bg("yellow-20v");
+}
+
 .heading-margin-alt {
   margin-top: units(7);
 }

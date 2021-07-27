@@ -1,6 +1,7 @@
 - name: django-designstandards
   distribution: Django
   url: https://github.com/department-of-veterans-affairs/django-designstandards
+  status: stale
   author:
     name: Paul Tagliamonte (USDS)
     url: https://github.com/paultag
@@ -9,6 +10,7 @@
 - name: django-uswds-forms
   distribution: Django
   url: http://django-uswds-forms.readthedocs.io/en/latest/
+  status: archived
   author:
     name: 18F
     url: https://github.com/18F
@@ -51,6 +53,7 @@
 - name: uswds-simple-sass
   distribution: npm and gulp
   url: https://github.com/18F/uswds-simple-sass
+  status: archived
   author:
     name: 18F
     url: https://github.com/18F
@@ -62,6 +65,7 @@
 - name: 18f-contrib-web-design-standards
   distribution: npm and node-sass
   url: https://github.com/openbrian/18f-contrib-web-design-standards
+  status: stale
   author:
     name: Brian DeRocher
     url: https://github.com/openbrian
@@ -70,6 +74,7 @@
 - name: NuGet web-design-standards
   distribution: NuGet
   url: https://www.nuget.org/packages/web-design-standards/
+  status: stale
   author:
     name: Abdul Ahad Monty
     url: https://www.nuget.org/profiles/montyaahad
@@ -78,6 +83,7 @@
 - name: uswds-rails
   distribution: Rails gem
   url: https://github.com/18F/uswds-rails-gem
+  status: archived
   author:
     name: 18F
     url: https://github.com/18F
@@ -120,6 +126,7 @@
 - name: Benjamin
   distribution: WordPress
   url: https://wordpress.org/themes/benjamin/
+  status: stale
   author:
     name: Kyle Jennings
     url: https://github.com/kyle-jennings
@@ -128,6 +135,7 @@
 - name: The Standards
   distribution: WordPress
   url: https://github.com/LavertyCreative/The-Standards
+  status: stale
   author:
     name: Kyle Laverty
     url: https://github.com/lavekyl

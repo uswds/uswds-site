@@ -21,6 +21,8 @@ guidance:
   - heading: "What you shouldn't do"
     path: guidance/usability-should-not.md
     first: true
+  - heading: Research findings
+    path: guidance/research-findings.md
 lead: A link connects users to a different page or further information.
 permalink: /components/link/
 redirect_from:

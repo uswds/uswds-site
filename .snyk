@@ -935,15 +935,15 @@ ignore:
     - uswds > gulp-svg-sprite > svg-sprite > mocha:
         reason: No direct upgrade or patch.
         expires: '2021-08-12T15:27:48.620Z'
-      gulp-svg-sprite > svg-sprite > mocha:
-        reason: No patch or update available.
-        expires: '2021-08-19T18:31:41.345Z'
     - gulp-svg-sprite > svg-sprite > mocha:
         reason: None given
         expires: '2021-05-14T18:28:34.968Z'
     - gulp-svg-sprite > svg-sprite > mocha:
         reason: None given
         expires: '2021-07-17T05:29:00.678Z'
+    - gulp-svg-sprite > svg-sprite > mocha:
+        reason: No patch or update available.
+        expires: '2021-08-19T18:31:41.345Z'
   SNYK-JS-NODENOTIFIER-1035794:
     - node-notifier:
         reason: None given
@@ -1868,15 +1868,15 @@ ignore:
     - uswds > gulp-svg-sprite > svg-sprite > xmldom:
         reason: No direct upgrade or patch.
         expires: '2021-08-12T15:27:48.620Z'
-      gulp-svg-sprite > svg-sprite > xmldom:
-        reason: No patch or update available.
-        expires: '2021-08-19T18:31:41.345Z'
     - gulp-svg-sprite > svg-sprite > xmldom:
         reason: None given
         expires: '2021-05-14T18:28:34.968Z'
     - gulp-svg-sprite > svg-sprite > xmldom:
         reason: None given
         expires: '2021-07-17T05:29:00.678Z'
+    - gulp-svg-sprite > svg-sprite > xmldom:
+        reason: No patch or update available.
+        expires: '2021-08-19T18:31:41.345Z'
   SNYK-JS-XMLHTTPREQUESTSSL-1082936:
     - uswds > @frctl/fractal > @frctl/mandelbrot > @frctl/web > browser-sync > browser-sync-ui > socket.io-client > engine.io-client > xmlhttprequest-ssl:
         reason: No direct upgrade or patch.
@@ -2018,12 +2018,12 @@ ignore:
     - uswds > css-select > css-what:
         reason: No direct upgrade or patch.
         expires: '2021-08-12T15:27:48.619Z'
-      gulp-svg-sprite > svg-sprite > svgo > css-select > css-what:
-        reason: No patch or update available.
-        expires: '2021-08-19T18:31:41.345Z'
     - gulp-svg-sprite > svg-sprite > svgo > css-select > css-what:
         reason: None given
         expires: '2021-07-17T05:29:00.678Z'
+    - gulp-svg-sprite > svg-sprite > svgo > css-select > css-what:
+        reason: No patch or update available.
+        expires: '2021-08-19T18:31:41.345Z'
   SNYK-JS-TRIMNEWLINES-1298042:
     - gulp-sass > node-sass > meow > trim-newlines:
         reason: None given
@@ -2036,6 +2036,10 @@ ignore:
     - uswds > create-frame > lazy-cache > set-getter:
         reason: No direct upgrade or patch.
         expires: '2021-08-12T15:27:48.620Z'
+  SNYK-JS-XMLDOM-1534562:
+    - gulp-svg-sprite > svg-sprite > xmldom:
+        reason: None given
+        expires: '2021-08-28T04:26:20.853Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

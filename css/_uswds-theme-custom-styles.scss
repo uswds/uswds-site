@@ -3733,10 +3733,6 @@ blockquote {
 @import "custom-styles/card-policy";
 @import "custom-styles/highlight";
 
-[href^="http"]:not([href*=".gov"])::after {
-  //  display: none;
-}
-
 .pagination-behaviors {
   @include list-reset;
 }

@@ -716,7 +716,7 @@ ignore:
   SNYK-JS-GULPSCSSLINT-560114:
     - gulp-scss-lint:
         reason: No upgrade or patch available.
-        expires: '2021-07-30T14:47:43.752Z'
+        expires: '2021-08-29T17:35:12.284Z'
   SNYK-JS-HTTPPROXY-569139:
     - uswds > @frctl/fractal > browser-sync > http-proxy:
         reason: n/a
@@ -1082,12 +1082,21 @@ ignore:
     - gulp-eslint > eslint > glob-parent:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
+      gulp > glob-watcher > chokidar > glob-parent:
+        reason: No upgrade or patch available.
+        expires: '2021-08-29T17:35:12.284Z'
     - del > globby > fast-glob > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
+      gulp > vinyl-fs > glob-stream > glob-parent:
+        reason: No upgrade or patch available.
+        expires: '2021-08-29T17:35:12.284Z'
     - uswds > del > globby > fast-glob > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
+      gulp-scss-lint > vinyl-fs > glob-stream > glob-parent:
+        reason: No upgrade or patch available.
+        expires: '2021-08-29T17:35:12.284Z'
     - sass > chokidar > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'

@@ -1094,21 +1094,12 @@ ignore:
     - gulp-eslint > eslint > glob-parent:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
-      uswds > glob-stream > glob-parent:
-        reason: No direct upgrade or patch.
-        expires: '2021-09-17T18:47:08.191Z'
     - del > globby > fast-glob > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
-      uswds > glob-watcher > chokidar > glob-parent:
-        reason: No direct upgrade or patch.
-        expires: '2021-09-17T18:47:08.191Z'
     - uswds > del > globby > fast-glob > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
-      uswds > glob-base > glob-parent:
-        reason: No direct upgrade or patch.
-        expires: '2021-09-17T18:47:08.191Z'
     - sass > chokidar > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
@@ -2073,10 +2064,7 @@ ignore:
   SNYK-JS-REQUEST-1314897:
     - gulp-svg-sprite > svg-sprite > phantomjs-prebuilt > request:
         reason: No upgrade or patch available.
-        expires: '2021-09-17T18:47:08.191Z'
-    - uswds > gulp-svg-sprite > svg-sprite > phantomjs-prebuilt > request:
-        reason: None given
-        expires: '2021-09-17T18:47:08.191Z'
+        expires: '2021-09-17T17:02:00.511Z'
   SNYK-JS-SETGETTER-1303099:
     - uswds > create-frame > lazy-cache > set-getter:
         reason: No direct upgrade or patch.

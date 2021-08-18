@@ -9,7 +9,7 @@ component:
     - /assets/img/templates/layout--sign-in-lang-es.jpeg
   demo:
     - sign-in--default
-    - sign-in--lang-es-multiple
+    - sign-in--lang-es
   variants:
     - Sign-in
     - Sign-in (Spanish)

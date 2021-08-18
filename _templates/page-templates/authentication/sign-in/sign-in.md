@@ -8,8 +8,8 @@ component:
     - /assets/img/templates/layout--sign-in.jpeg
     - /assets/img/templates/layout--sign-in-lang-es.jpeg
   demo:
-    - layout--sign-in
-    - layout--sign-in--lang-es
+    - sign-in--default
+    - sign-in--lang-es
   variants:
     - Sign-in
     - Sign-in (Spanish)

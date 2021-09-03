@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.19.0
+version: v1.22.1
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   'npm:chownr:20180731':
@@ -716,7 +716,7 @@ ignore:
   SNYK-JS-GULPSCSSLINT-560114:
     - gulp-scss-lint:
         reason: No upgrade or patch available.
-        expires: '2021-08-29T17:35:12.284Z'
+        expires: '2021-10-03T18:13:13.139Z'
   SNYK-JS-HTTPPROXY-569139:
     - uswds > @frctl/fractal > browser-sync > http-proxy:
         reason: n/a
@@ -1247,6 +1247,15 @@ ignore:
     - gulp-scss-lint > vinyl-fs > glob-stream > glob-parent:
         reason: No upgrade or patch available.
         expires: '2021-08-29T17:35:12.284Z'
+    - gulp > glob-watcher > chokidar > glob-parent:
+        reason: No upgrade or patch available.
+        expires: '2021-10-03T18:13:13.139Z'
+    - gulp > vinyl-fs > glob-stream > glob-parent:
+        reason: No upgrade or patch available.
+        expires: '2021-10-03T18:13:13.139Z'
+    - gulp-scss-lint > vinyl-fs > glob-stream > glob-parent:
+        reason: No upgrade or patch available.
+        expires: '2021-10-03T18:13:13.139Z'
   SNYK-JS-NODESASS-1059081:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
@@ -2033,6 +2042,9 @@ ignore:
     - gulp-svg-sprite > svg-sprite > svgo > css-select > css-what:
         reason: No patch or update available.
         expires: '2021-08-19T18:31:41.345Z'
+    - gulp-svg-sprite > svg-sprite > svgo > css-select > css-what:
+        reason: No patch or update available.
+        expires: '2021-10-03T18:13:13.139Z'
   SNYK-JS-TRIMNEWLINES-1298042:
     - gulp-sass > node-sass > meow > trim-newlines:
         reason: None given
@@ -2048,7 +2060,11 @@ ignore:
   SNYK-JS-XMLDOM-1534562:
     - gulp-svg-sprite > svg-sprite > xmldom:
         reason: None given
-        expires: '2021-08-28T04:26:20.853Z'
+        expires: '2021-10-03T18:13:13.139Z'
+  SNYK-JS-AXIOS-1579269:
+    - snyk > @snyk/code-client > axios:
+        reason: None given
+        expires: '2021-10-03T18:13:13.139Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

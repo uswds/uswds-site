@@ -17,6 +17,14 @@
   notes: |
     This package provides Django Forms integration with USWDS.
 
+- name: USWDS Drupal base theme
+  distribution: Drupal
+  url: https://www.drupal.org/project/uswds_base
+  author:
+    name: Michael Feranda
+    url: https://www.drupal.org/u/mferanda
+  notes: "A primary differences between this effort and the other USWDS theme is that I chose a minimal approach to Drupal theme. No extra JS/CSS is added in the primary theme and Classy is not used as a base."
+
 - name: USWDS Drupal theme
   distribution: Drupal
   url: https://www.drupal.org/project/uswds

@@ -6,7 +6,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.6-node-browsers
+      - image: circleci/ruby:2.7-node-browsers
     steps:
       - checkout
       - restore_cache:
@@ -21,7 +21,8 @@ jobs:
           command: |
             gem update --system
             gem install bundler
-            bundle install --jobs=4 --retry=3 --path vendor/bundle
+            bundle config set --local path 'vendor/bundle'
+            bundle install --jobs=4 --retry=3
       - run:
           name: Install scss_lint
           command: gem install scss_lint

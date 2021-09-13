@@ -1,4 +1,4 @@
 - **Fewer than seven options.** Use radio buttons instead.
-- **More than 15 options.** If the list of options is very long, consider using a [combo box]({{ site.baseurl }}/components/combo-box), or let users type the same information into a text input.
+- **More than 15 options.** If the list of options is very long, consider using a [combo box]({{ site.baseurl }}/components/combo-box).
 - **Multi-select.** If you need to allow users to select more than one option at once. Users often don’t understand how to select multiple items from dropdowns. Use checkboxes instead.
 - **Site navigation.** Use the navigation components instead.

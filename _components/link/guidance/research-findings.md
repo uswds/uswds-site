@@ -10,3 +10,5 @@
   - Paragraphs with lots of links can be hard to read or understand.
   - Users expect to find reference links at the bottom of the page.
   - Users find agency name/branding in the top left corner of a web page critical for orientation.
+
+  Read the [complete Research findings](https://github.com/uswds/uswds/wiki/2021-07-29-External-Link-Indicator-Research-Findings) on GitHub →

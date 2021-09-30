@@ -8,7 +8,7 @@ component:
     - /assets/img/templates/layout--create-account.jpeg
     - /assets/img/templates/layout--create-account-lang-es.jpeg
   demo:
-    - layout--create-account
+    - layout--create-account--default
     - layout--create-account--lang-es
   variants:
     - Create account

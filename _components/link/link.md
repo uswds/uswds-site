@@ -50,4 +50,4 @@ tags:
   - external link
 type: component
 ---
-Links are used as navigational elements and can appear either on their own or inline with text. Too many links will clutter a page and make it difficult for users to identify their next steps. This is especially true for inline links, which should be used sparingly.
+Links are navigational elements that direct visitors to other locations, either on the same page or to a different page or site. They can be inline or separate from the text flow. Since every link is a potential user interaction, too many links can be overwhelming. Be judicious with links to better identify necessary calls to action.

@@ -4,7 +4,7 @@ const concat = require("gulp-concat");
 const csso = require("postcss-csso");
 const dutil = require("./doc-util");
 const gulp = require("gulp");
-const linter = require("gulp-stylelint");
+const gulpStylelint = require("gulp-stylelint");
 const postcss = require("gulp-postcss");
 const sass = require("gulp-dart-scss");
 const sourcemaps = require("gulp-sourcemaps");
@@ -181,12 +181,11 @@ gulp.task("scss-lint", function(done) {
 
   return gulp
     .src(["./css/**/*.scss"])
-    .pipe(
-      linter({
-        config: ".stylelintrc.yml"
-      })
-    )
-    .pipe(linter.failReporter("E"));
+    .pipe(gulpStylelint({
+      reporters: [
+        {formatter: 'string', console: true}
+      ]
+    }));
 });
 
 gulp.task(task, gulp.series("build-sass"));

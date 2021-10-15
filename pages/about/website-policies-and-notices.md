@@ -41,7 +41,7 @@ Section 508 is a legal requirement and WCAG is a set of checkpoints and guidelin
 
 -   Links make sense and describe the destination (e.g., no links that just say "Click here" or "More...").
 
--   Tables are used for laying out tabular information and have proper headings and summaries.
+-   Tables are used for laying out tabular information and have proper headings.
 
 For those familiar with Section 508 and WCAG, we aim for AA compliance across our site. We also look for opportunities to meet AAA compliance.
 

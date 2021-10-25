@@ -41,7 +41,7 @@ utilities:
 - base:         width
   var:          width
   output:       true
-  responsive:   false
+  responsive:   true
   active:       false
   focus:        false
   hover:        false

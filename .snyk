@@ -10,6 +10,9 @@ ignore:
     - uswds > autolinker:
         reason: No direct upgrade or patch.
         expires: '2021-11-20T17:06:44.514Z'
+      uswds > handlebars-helpers > helper-md > remarkable > autolinker:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
     - uswds > handlebars-helpers > helper-markdown > remarkable > autolinker:
         reason: No patch available
         expires: '2021-11-20T17:06:44.514Z'
@@ -713,6 +716,9 @@ ignore:
     - uswds > autolinker:
         reason: No direct upgrade or patch.
         expires: '2021-11-20T17:06:44.514Z'
+      uswds > handlebars-helpers > helper-md > remarkable > autolinker:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
     - uswds > handlebars-helpers > helper-markdown > remarkable > autolinker:
         reason: No patch available
         expires: '2021-11-20T17:06:44.514Z'
@@ -1115,12 +1121,21 @@ ignore:
     - gulp-eslint > eslint > glob-parent:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
+      uswds > gulp > glob-watcher > chokidar > glob-parent:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
     - del > globby > fast-glob > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
+      uswds > gulp > vinyl-fs > glob-stream > glob-parent:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
     - uswds > del > globby > fast-glob > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
+      uswds > nswatch > chokidar > anymatch > micromatch > parse-glob > glob-base > glob-parent:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
     - sass > chokidar > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
@@ -1975,9 +1990,15 @@ ignore:
     - uswds > autolinker > gulp-header > lodash.template:
         reason: No direct upgrade or patch.
         expires: '2021-11-20T17:06:44.515Z'
+      uswds > handlebars-helpers > helper-markdown > remarkable > autolinker > gulp-header > lodash.template:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
     - uswds > handlebars-helpers > helper-markdown > remarkable > autolinker > gulp-header > lodash.template:
         reason: None given
         expires: '2021-10-13T18:16:12.802Z'
+      uswds > handlebars-helpers > helper-md > remarkable > autolinker > gulp-header > lodash.template:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
     - uswds > handlebars-helpers > helper-md > remarkable > autolinker > gulp-header > lodash.template:
         reason: None given
         expires: '2021-10-13T18:16:12.802Z'
@@ -2138,6 +2159,9 @@ ignore:
     - uswds > css-select > css-what:
         reason: No direct upgrade or patch.
         expires: '2021-11-20T17:06:44.514Z'
+      uswds > gulp-svg-sprite > svg-sprite > svgo > css-select > css-what:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
     - gulp-svg-sprite > svg-sprite > svgo > css-select > css-what:
         reason: None given
         expires: '2021-07-17T05:29:00.678Z'
@@ -2165,18 +2189,33 @@ ignore:
     - uswds > create-frame > lazy-cache > set-getter:
         reason: No direct upgrade or patch.
         expires: '2021-11-20T17:06:44.515Z'
+      uswds > handlebars-helpers > lazy-cache > set-getter:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
     - uswds > handlebars-helpers > lazy-cache > set-getter:
         reason: None given
         expires: '2021-10-13T18:16:12.803Z'
+      uswds > handlebars-helper-create-frame > create-frame > lazy-cache > set-getter:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
     - uswds > handlebars-helper-create-frame > create-frame > lazy-cache > set-getter:
         reason: None given
         expires: '2021-10-13T18:16:12.803Z'
+      uswds > handlebars-helpers > create-frame > lazy-cache > set-getter:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.314Z'
     - uswds > handlebars-helpers > create-frame > lazy-cache > set-getter:
         reason: None given
         expires: '2021-10-13T18:16:12.803Z'
+      uswds > handlebars-helpers > handlebars-helper-create-frame > create-frame > lazy-cache > set-getter:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.314Z'
     - uswds > handlebars-helpers > handlebars-helper-create-frame > create-frame > lazy-cache > set-getter:
         reason: None given
         expires: '2021-10-13T18:16:12.803Z'
+      uswds > handlebars-helpers > logging-helpers > log-utils > ansi-colors > lazy-cache > set-getter:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.314Z'
     - uswds > handlebars-helpers > logging-helpers > log-utils > ansi-colors > lazy-cache > set-getter:
         reason: None given
         expires: '2021-10-13T18:16:12.803Z'
@@ -2188,15 +2227,27 @@ ignore:
     - uswds > nswatch > chalk > strip-ansi > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
+      uswds > gulp-eslint > eslint > table > string-width > strip-ansi > ansi-regex:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
     - uswds > @frctl/fractal > columnify > strip-ansi > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
+      uswds > @mapbox/node-pre-gyp > npmlog > gauge > string-width > strip-ansi > ansi-regex:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
     - uswds > @frctl/fractal > vorpal > strip-ansi > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
+      uswds > canvas > @mapbox/node-pre-gyp > npmlog > gauge > string-width > strip-ansi > ansi-regex:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
     - uswds > nswatch > chalk > has-ansi > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
+      uswds > resemblejs > canvas > @mapbox/node-pre-gyp > npmlog > gauge > string-width > strip-ansi > ansi-regex:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
     - uswds > @frctl/fractal > vorpal > inquirer > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
@@ -3244,6 +3295,9 @@ ignore:
     - gulp-svg-sprite > svg-sprite > svgo > css-select > nth-check:
         reason: No upgrade or patch available.
         expires: '2021-10-21T13:30:56.739Z'
+      uswds > gulp-svg-sprite > svg-sprite > svgo > css-select > nth-check:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
     - gulp-svg-sprite > svg-sprite > svgo > css-select > nth-check:
         reason: No upgrade or patch available.
         expires: '2021-11-20T17:06:44.515Z'

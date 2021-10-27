@@ -7,7 +7,20 @@ layout: styleguide
 title: Security
 category: About
 lead: Developing and using USWDS with security in mind
+subnav:
+- text: Announcements
+  href: '#security-announcements'
+- text: Policies & Procedures
+  href: '#our-security-policies-and-procedures'
+- text: Using USWDS securely
+  href: '#using-uswds-securely'
+- text: Report a security issue
+  href: '#report-a-security-issue'
+- text: Verifying a release
+  href: '#verifying-zip-release-hash'
 ---
+
+## Security notices
 
 {{ site.data.security.decoded
   | markdownify

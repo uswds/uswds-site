@@ -1,0 +1,16 @@
+<ul class="usa-collection">
+  {% for notice in site.security_notices %}
+    <li class="usa-collection__item">
+      <div class="usa-collection__body">
+        <h3 class="usa-collection__heading">
+          <a class="usa-link" href="{{ notice.url }}">
+            {{ notice.title }}
+          </a>
+        </h3>
+        <p class="usa-collection__description">
+          {{ notice.excerpt }}
+        </p>
+      </div>
+    </li>
+  {% endfor %}
+</ul>

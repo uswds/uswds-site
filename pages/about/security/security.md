@@ -45,3 +45,8 @@ sha256sum path/to/filename.zip
 ```bash
 powershell get-filehash -algorithm sha256 .\path\to\filename.zip
 ```
+
+
+## Security updates
+
+{% include security-updates.html %}

@@ -71,6 +71,9 @@ collections:
   next:
     output: true
     permalink: /:collection/:title
+  security_notices:
+    output: true
+    permalink: /:collection/:title
 
 defaults:
   - scope:
@@ -91,6 +94,11 @@ defaults:
       layout: "next-content"
       chapter: false
       hero_color: "next-gray-dark"
+  - scope:
+      path: ""
+      type: security_notices
+    values:
+      layout: post
 
 plugins:
   - jekyll-redirect-from

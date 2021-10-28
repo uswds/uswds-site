@@ -8,8 +8,6 @@ title: Security
 category: About
 lead: Developing and using USWDS with security in mind
 subnav:
-- text: Announcements
-  href: '#security-announcements'
 - text: Policies & Procedures
   href: '#our-security-policies-and-procedures'
 - text: Using USWDS securely
@@ -18,9 +16,9 @@ subnav:
   href: '#report-a-security-issue'
 - text: Verifying a release
   href: '#verifying-zip-release-hash'
+- text: Updates
+  href: '#security-updates'
 ---
-
-## Security notices
 
 {{ site.data.security.decoded
   | markdownify

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Sanitizing Combobox content
 excerpt: "As of USWDS 2.12.1, Combobox sanitizes any content passed into it automatically."
 category: About

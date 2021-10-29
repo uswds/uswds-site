@@ -71,9 +71,9 @@ collections:
   next:
     output: true
     permalink: /:collection/:title
-  security_notices:
+  security_updates:
     output: true
-    permalink: /:collection/:title
+    permalink: /security/updates/:path/
 
 defaults:
   - scope:

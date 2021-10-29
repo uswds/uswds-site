@@ -73,7 +73,7 @@ collections:
     permalink: /:collection/:title
   security_updates:
     output: true
-    permalink: /security/updates/:path/
+    permalink: /:collection/:title
 
 defaults:
   - scope:
@@ -96,9 +96,9 @@ defaults:
       hero_color: "next-gray-dark"
   - scope:
       path: ""
-      type: security_notices
+      type: security_updates
     values:
-      layout: post
+      layout: styleguide
 
 plugins:
   - jekyll-redirect-from

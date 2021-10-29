@@ -1,23 +1,14 @@
 ---
 permalink: /about/security/
-redirect_from:
-- /security/
-- /about/security-information/
 layout: styleguide
 title: Security
 category: About
 lead: Developing and using USWDS with security in mind
 subnav:
-- text: Policies & Procedures
-  href: '#our-security-policies-and-procedures'
-- text: Using USWDS securely
-  href: '#using-uswds-securely'
-- text: Report a security issue
-  href: '#report-a-security-issue'
-- text: Verifying a release
-  href: '#verifying-zip-release-hash'
-- text: Updates
-  href: '#security-updates'
+  type: security_updates
+redirect_from:
+- /security/
+- /about/security-information/
 ---
 
 {{ site.data.security.decoded

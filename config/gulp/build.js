@@ -64,10 +64,10 @@ function spawnP(cmd, args, opts) {
 gulp.task('build-uswds-if-needed', () => {
   const rootDir = path.normalize(path.join(__dirname, '..', '..'));
   const uswdsDir = path.join(rootDir, 'node_modules', 'uswds');
-  const componentLibraryIndex = path.join(uswdsDir, 'build', 'index.html');
+  const componentDir = path.join(uswdsDir, 'html-templates');
   const gulpfile = path.join(uswdsDir, 'gulpfile.js');
 
-  if (fs.existsSync(componentLibraryIndex)) {
+  if (fs.existsSync(componentDir)) {
     dutil.logMessage('build-uswds-if-needed', 'USWDS is already built.');
     return Promise.resolve();
   } else {
@@ -88,8 +88,7 @@ gulp.task('build-uswds-if-needed', () => {
     * We need to: install USWDS deps, build components, and then prettify the markup.
     */
     return spawnP('npm', [ 'install' ], sharedOpts)
-      .then(() => spawnP('npm', [ 'run', 'pl:build' ], sharedOpts))
-      .then(() => spawnP('npm', [ 'run', 'prettier:templates' ], sharedOpts));
+      .then(() => spawnP('npm', [ 'run', 'build:html' ], sharedOpts));
   }
 });
 

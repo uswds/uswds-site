@@ -1121,21 +1121,12 @@ ignore:
     - gulp-eslint > eslint > glob-parent:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
-      uswds > gulp > glob-watcher > chokidar > glob-parent:
-        reason: No available patch or upgrade.
-        expires: '2021-11-25T17:50:38.313Z'
     - del > globby > fast-glob > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
-      uswds > gulp > vinyl-fs > glob-stream > glob-parent:
-        reason: No available patch or upgrade.
-        expires: '2021-11-25T17:50:38.313Z'
     - uswds > del > globby > fast-glob > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
-      uswds > nswatch > chokidar > anymatch > micromatch > parse-glob > glob-base > glob-parent:
-        reason: No available patch or upgrade.
-        expires: '2021-11-25T17:50:38.313Z'
     - sass > chokidar > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
@@ -2227,9 +2218,6 @@ ignore:
     - uswds > nswatch > chalk > strip-ansi > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
-      uswds > gulp-eslint > eslint > table > string-width > strip-ansi > ansi-regex:
-        reason: No available patch or upgrade.
-        expires: '2021-11-25T17:50:38.313Z'
     - uswds > @frctl/fractal > columnify > strip-ansi > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
@@ -3309,9 +3297,9 @@ ignore:
         reason: None given
         expires: '2021-11-20T17:06:44.515Z'
   SNYK-JS-SHELLQUOTE-1766506:
-    - browserify > shell-quote:
-        reason: No available patch or upgrade.
-        expires: '2021-11-24T15:38:14.900Z'
+    - uswds > browserify > shell-quote:
+        reason: None given
+        expires: '2021-11-26T22:56:17.564Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

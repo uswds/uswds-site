@@ -173,8 +173,8 @@ subnav:
 
 - **Humanize accessibility.** Seek out examples of the real life impact of accessible products and services. Try to make accessibility less abstract and more personal.
 - **Use agency resources.** Reach out to [your agency's accessibility team](https://www.section508.gov/tools/coordinator-listing) and build a relationship with them.
-- **Learn about assistive technology.** Get familiar with the basic ways people use assistive technology and [how people with disabilities use the web](https://www.w3.org/WAI/people-use-web/).
-- **Follow existing standards.** Conform to the [Revised 508 Standards](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh) and [WCAG 2.0](https://www.w3.org/TR/WCAG20/).
+- **Learn about assistive technology.** Visit the Web Accessibility Initiative website to get familiar with the basic ways people use assistive technology and [how people with disabilities use the web](https://www.w3.org/WAI/people-use-web/).
+- **Follow existing standards.** Conform to the [Revised 508 Standards](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh) and the [W3C WCAG 2.0](https://www.w3.org/TR/WCAG20/).
 - **Work from existing resources.** Consult [Section508.gov](https://www.section508.gov/), [Accessibility for Teams](https://accessibility.digital.gov/), and the [18F Accessibility Guide](https://accessibility.18f.gov/).
 - **Design generously.** Adopt an [inclusive design](http://inclusivedesignprinciples.org/) mentality.
 - **Develop accessible code.** Ensure front-end code is written accessibly and conducts manual and automated testing.

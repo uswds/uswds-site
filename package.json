@@ -92,7 +92,7 @@
     "postcss": "^8.3.11",
     "postcss-csso": "^5.0.0",
     "sass": "^1.43.3",
-    "snyk": "^1.745.0",
+    "snyk": "^1.749.0",
     "uswds": "^2.12.1",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"

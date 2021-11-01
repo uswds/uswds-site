@@ -51,7 +51,7 @@ subnav:
 - [Tips for capturing the best data from user interviews](https://18f.gsa.gov/2016/02/09/tips-for-capturing-the-best-data-from-user-interviews/) [18f.gsa.gov]
 - [How to address barriers to user-centered design](https://18f.gsa.gov/2019/11/07/barriers-to-governments-adoption-of-user-centered-design-and-how-to-address-them/) [18f.gsa.gov]
 - [Three ways to manage research projects remotely](https://18f.gsa.gov/2017/09/27/three-ways-to-manage-research-projects/) [18f.gsa.gov]
-- [Driving innovation with design education by the Lab@OPM](https://www.youtube.com/watch?v=DGDCd2ELpok) [youtube.com]
+- [Driving innovation with design education by the Lab at OPM](https://www.youtube.com/watch?v=DGDCd2ELpok) [youtube.com]
 - [The Foundations of Agile, Part I](https://digital.gov/event/2019/11/04/foundations-agile-i/) [digital.gov]
 - [The Foundations of Agile, Part II](https://digital.gov/event/2019/11/05/foundations-agile-ii/) [digital.gov]
 
@@ -162,7 +162,7 @@ subnav:
 
 #### Non-government resources
 
-- [Web Accessibility Perspectives Videos](https://www.w3.org/WAI/perspective-videos/) [w3.org]
+- [Web accessibility perspectives videos](https://www.w3.org/WAI/perspective-videos/) [w3.org]
 - [Inclusive design principles](https://inclusivedesignprinciples.org/) [inclusivedesignprinciples.org]
 - [Accessibility fundamentals with Rob Dodson](https://www.youtube.com/watch?v=z8xUCzToff8) [youtube.com]
 - [Microsoft's inclusive design manual](https://www.microsoft.com/design/inclusive/) [microsoft.com]
@@ -273,7 +273,7 @@ subnav:
 #### Government resources
 
 - [Guide to the Digital Analytics Program (DAP)](https://digital.gov/services/dap/) [digital.gov]
-- [Getting started with Search.gov](https://www.youtube.com/watch?v=p-y9T23ziEg) [search.gov]
+- [Getting started with Search.gov[youtube.com]](https://www.youtube.com/watch?v=p-y9T23ziEg) [search.gov]
 - [Office of Evaluation Sciences](https://oes.gsa.gov/) [oes.gsa.gov]
 - [Improving Customer Experience: Cross-Agency Priority Goal](https://www.performance.gov/CAP/cx/) [performance.gov]
 - [Tips for Starting Your Customer Experience Journey](https://www.performance.gov/tips-for-starting-your-customer-experience-journey/) [performance.gov]
@@ -282,7 +282,7 @@ subnav:
 - [Customer Experience Maturity Self-Assessment](https://www.performance.gov/cx/CXMaturitySelfAssessment.pdf) [performance.gov]
 - [Customer Experience Action Plan Template](https://www.performance.gov/cx/CXActionPlanTemplate.pptx) [performance.gov]
 - [Customer Experience Toolkit](https://digital.gov/resources/customer-experience-toolkit/) [digital.gov]
-- [Top tasks: prioritizing what is truly important](https://www.youtube.com/watch?v=5llJ98UkXYI) [digital.gov]
+- [Top tasks with Gerry McGovern [youtube.com]](https://www.youtube.com/watch?v=5llJ98UkXYI) [digital.gov]
 
 #### Non-government resources
 

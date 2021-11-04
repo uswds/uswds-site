@@ -93,7 +93,7 @@
     "postcss-csso": "^5.0.0",
     "sass": "^1.43.2",
     "snyk": "^1.738.0",
-    "uswds": "github:uswds/uswds#dw-update-node",
+    "uswds": "github:uswds/uswds#develop",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },

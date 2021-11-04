@@ -93,7 +93,7 @@
     "postcss": "^8.3.9",
     "sass": "^1.43.2",
     "snyk": "^1.738.0",
-    "uswds": "^2.12.2",
+    "uswds": "github:uswds/uswds#gsq-library-html-addon",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },
@@ -116,7 +116,6 @@
     "nswatch": "^0.2.0",
     "pa11y-ci": "^2.4.2",
     "simplecrawler": "^1.1.8",
-    "uswds": "github:uswds/uswds#jm-library--develop-sync-2.12.0",
     "yamljs": "^0.3.0"
   },
   "watch": {

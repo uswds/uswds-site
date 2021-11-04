@@ -568,6 +568,7 @@ body {
 %label-maturity {
   @include typeset("lang", "2xs", 4);
   color: color("ink");
+  display: inline-block;
   font-weight: font-weight("bold");
   margin-left: units(1.5);
   position: absolute;
@@ -609,6 +610,16 @@ body {
   @extend %label-maturity;
   background-color: color("red-50v");
   color: color("white");
+}
+
+.label-archived {
+  @extend %label-maturity;
+  @include set-text-and-bg("red-30");
+}
+
+.label-stale {
+  @extend %label-maturity;
+  @include set-text-and-bg("yellow-20v");
 }
 
 .heading-margin-alt {
@@ -1419,7 +1430,11 @@ code[class*="language-plaintext"] {
 
 // External link styles
 #{$external-href} {
-  @include external-link(external-link, external-link-hover);
+  @include external-link;
+}
+
+.usa-link--alt#{$external-href} {
+  @include external-link;
 }
 
 .usa-button,
@@ -1634,7 +1649,6 @@ code[class*="language-plaintext"] {
 .page-product-roadmap {
   .main-content {
     .usa-tag {
-      display: inline-block;
       position: relative;
     }
   }
@@ -3712,10 +3726,6 @@ blockquote {
 
 @import "custom-styles/card-policy";
 @import "custom-styles/highlight";
-
-[href^="http"]:not([href*=".gov"])::after {
-  display: none;
-}
 
 .pagination-behaviors {
   @include list-reset;

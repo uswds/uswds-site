@@ -92,7 +92,7 @@ Install USWDS from the command line, and save it as a dependency in your `packag
 npm install uswds --save
 
 # [a lot of notices]
-# + uswds@2.12.0 [or another version number]
+# + uswds@{{ site.uswds_version }} [or another version number]
 # [a few more notifications]
 ```
 
@@ -101,7 +101,7 @@ npm will show some notifications, install USWDS, and display the version number 
 {:.site-terminal}
 ```json
 "dependencies": {
-  "uswds": "^2.12.0" [or another version number]
+  "uswds": "^{{ site.uswds_version }}" [or another version number]
 }
 ```
 

@@ -1,17 +1,17 @@
 <h3 class="site-preview-heading">Borderless</h3>
 
 {% capture borderless %}
-  {% library_component components-usa-accordion-usa-accordion %}
+  {% library_component usa-accordion %}
 {% endcapture %}{{ borderless | strip }}
 
 <h3 class="site-preview-heading">Bordered</h3>
 
 {% capture bordered %}
-  {% library_component components-usa-accordion-usa-accordion-bordered %}
+  {% library_component usa-accordion~bordered %}
 {% endcapture %}{{ bordered | strip }}
 
 <h3 class="site-preview-heading">Multiselectable</h3>
 
 {% capture multiselectable %}
-  {% library_component components-usa-accordion-usa-accordion-multiselectable %}
+  {% library_component usa-accordion~multiselectable %}
 {% endcapture %}{{ multiselectable | strip  }}

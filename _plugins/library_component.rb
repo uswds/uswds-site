@@ -40,7 +40,7 @@ module Jekyll
           raise (
             "Unable to find the library component #{@name}! " +
             "Please either define #{BASE_URL_ENV_VAR} or run " +
-            "'pl:build' in the uswds directory."
+            "'html:build' in the uswds directory."
           )
         end
         # Replace asset path from library to what site needs.

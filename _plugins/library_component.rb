@@ -8,11 +8,13 @@ module Jekyll
       super
       @name = name.strip
       @base_url = ENV[BASE_URL_ENV_VAR]
-      @fs_path = "node_modules/uswds/build/patterns/#{@name}/#{@name}.markup-only.html"
+      @fs_path = "node_modules/uswds/html-templates/components/#{@name}.html"
+
     end
 
     def get_from_server()
-      url = "#{@base_url}/patterns/#{@name}/#{@name}.markup-only.html"
+      url = "#{@base_url}/html-templates/components/#{@name}.html"
+
       begin
         open(url).read
       rescue => e

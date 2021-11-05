@@ -30,6 +30,7 @@ The following are potentially breaking changes updating to 2.12.2.
 - **2.8.0:** The banner code requires Autoprefixer to work properly. See [https://designsystem.digital.gov/documentation/developers/#sass-compilation-requirements](https://designsystem.digital.gov/documentation/developers/#sass-compilation-requirements)
 
 - **2.8.0:** We introduced new Link and Banner settings.
+
     {:.usa-table}
     Setting | Accepts | Default | Usage
     -- | -- | -- | ---

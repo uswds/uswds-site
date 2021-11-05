@@ -14,7 +14,7 @@ Fixed in [USWDS 2.12.2]({{ site.baseurl }}/about/releases/#version-uswds-2122).
 ## Who should update
 Consider updating if you use any of the following components/versions:
 
-- **Combo Box:** USWDS 2.7.0 - 2.12.1
+- **Combo Box:** USWDS 2.7.0 - 2.12.0
 - **Character Count:** USWDS 2.7.0 - 2.12.1
 - **Date Picker Box:** USWDS 2.7.0 - 2.12.1
 - **Tooltip:** USWDS 2.8.0 - 2.12.1
@@ -27,6 +27,20 @@ Consider updating if you use any of the following components/versions:
 The following are potentially breaking changes updating to 2.12.2.
 
 {:.usa-content-list}
+- **2.8.0:** The banner code requires Autoprefixer to work properly. See [https://designsystem.digital.gov/documentation/developers/#sass-compilation-requirements](https://designsystem.digital.gov/documentation/developers/#sass-compilation-requirements)
+
+- **2.8.0:** We introduced new Link and Banner settings.
+    {:.usa-table}
+    Setting | Accepts | Default | Usage
+    -- | -- | -- | ---
+    $theme-link-reverse-color | color token | `"base-lighter"` | Default link color for reverse (dark) backgrounds
+    $theme-link-reverse-hover-color | color token | `"base-lightest"`| Default link hover color for reverse (dark) backgrounds
+    $theme-link-reverse-active-color | color token | `"white"`| Default link hover color for reverse (dark) backgrounds
+    $theme-banner-background-color | color token | `"base-lightest"` | Banner background color
+    $theme-banner-link-color | color token or `default` | `default` | Banner link color. `default` uses the value in `$theme-link-color. The system will calculate hover, active, and visited states.
+
+
+
 - **2.9.0:** We updated the formatting of `usa-legend` to make it smaller. Use the `usa-legend--large` class modifier to restore the previous formatting.
 
 - **2.10.1:** We introduced new Link color settings.

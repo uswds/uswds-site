@@ -33,7 +33,7 @@ The following are potentially breaking changes updating to 2.12.2.
 
     {:.usa-table}
     Setting | Accepts | Default | Usage
-    -- | -- | -- | ---
+    ------- | ------- | ------- | ---------
     $theme-link-reverse-color | color token | `"base-lighter"` | Default link color for reverse (dark) backgrounds
     $theme-link-reverse-hover-color | color token | `"base-lightest"`| Default link hover color for reverse (dark) backgrounds
     $theme-link-reverse-active-color | color token | `"white"`| Default link hover color for reverse (dark) backgrounds

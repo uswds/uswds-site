@@ -1,18 +1,18 @@
 ---
-title: Sanitizing Combobox content
-excerpt: "As of USWDS 2.12.1, Combobox sanitizes any content passed into it automatically."
+title: Sanitized Combo Box content
+excerpt: "As of USWDS 2.12.1, the design system automatically sanitizes content passed into the Combo Box."
 category: About
 tags:
 - security
 ---
 
-As of USWDS 2.12.1, Combobox sanitizes any content passed into it automatically.
+As of USWDS 2.12.1, the design system automatically sanitizes content passed into the Combo Box.
 
 ## When we made this change
 Fixed in [USWDS 2.12.1]({{ site.baseurl }}/about/releases/#version-uswds-2121).
 
 ## Who should update
-You should update if you use Combobox in versions 2.7.0 to 2.12.0.
+You should update if you use Combo Box in versions 2.7.0 to 2.12.0.
 
 ## Updating to USWDS 2.12.1
 

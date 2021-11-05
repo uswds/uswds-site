@@ -1,12 +1,14 @@
 ---
 permalink: /about/security/
-redirect_from:
-- /security/
-- /about/security-information/
 layout: styleguide
 title: Security
 category: About
 lead: Developing and using USWDS with security in mind
+subnav:
+  type: security_updates
+redirect_from:
+- /security/
+- /about/security-information/
 ---
 
 {{ site.data.security.decoded
@@ -32,3 +34,8 @@ sha256sum path/to/filename.zip
 ```bash
 powershell get-filehash -algorithm sha256 .\path\to\filename.zip
 ```
+
+
+## Security updates
+
+{% include security-updates.html %}

@@ -79,6 +79,8 @@ USWDS uses the [fractal design system builder](http://fractal.build/) to organiz
 
 This site is deployed on [Federalist](https://federalist.18f.gov/), which automatically builds the public site whenever commits are pushed to `main`. Federalist also builds public previews for each branch pushed to GitHub.
 
+⚠️ When generating new sections, sometimes they fail to build on Federalist. You can clear the cache by running a simple `bundle update`, which will trigger a fresh build.
+
 ### Updating the USWDS version
 
 To update the version of USWDS being used, change the version that

@@ -1,6 +1,6 @@
 ---
 title: Automatic sanitizing
-excerpt: "As of USWDS 2.12.2, the design system automatically sanitizes content in al;l components we compose with JavaScript."
+excerpt: "As of USWDS 2.12.2, the design system automatically sanitizes content in all components we compose with JavaScript."
 category: About
 tags:
 - security

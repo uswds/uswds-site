@@ -28,6 +28,9 @@ ignore:
     - uswds > handlebars-helpers > helper-md > remarkable > autolinker:
         reason: No patch available
         expires: '2021-10-13T18:16:12.802Z'
+    - uswds > handlebars-helpers > helper-md > remarkable > autolinker:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
   SNYK-JS-DOTPROP-543489:
     - uswds > @frctl/fractal > update-notifier > configstore > dot-prop:
         reason: No fix available
@@ -731,6 +734,9 @@ ignore:
     - uswds > handlebars-helpers > helper-md > remarkable > autolinker:
         reason: No patch available
         expires: '2021-10-13T18:16:12.802Z'
+    - uswds > handlebars-helpers > helper-md > remarkable > autolinker:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
   SNYK-JS-GULPSCSSLINT-560114:
     - gulp-scss-lint:
         reason: No upgrade or patch available.
@@ -1981,6 +1987,12 @@ ignore:
     - uswds > handlebars-helpers > helper-md > remarkable > autolinker > gulp-header > lodash.template:
         reason: None given
         expires: '2021-10-13T18:16:12.802Z'
+    - uswds > handlebars-helpers > helper-markdown > remarkable > autolinker > gulp-header > lodash.template:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
+    - uswds > handlebars-helpers > helper-md > remarkable > autolinker > gulp-header > lodash.template:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
   SNYK-JS-XMLDOM-1084960:
     - uswds > gulp-svg-sprite > svg-sprite > xmldom:
         reason: No direct upgrade or patch.
@@ -2153,6 +2165,9 @@ ignore:
     - gulp-svg-sprite > svg-sprite > svgo > css-select > css-what:
         reason: No upgrade or patch available.
         expires: '2021-11-17T18:14:14.352Z'
+    - uswds > gulp-svg-sprite > svg-sprite > svgo > css-select > css-what:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
   SNYK-JS-TRIMNEWLINES-1298042:
     - gulp-sass > node-sass > meow > trim-newlines:
         reason: None given
@@ -2180,6 +2195,21 @@ ignore:
     - uswds > handlebars-helpers > logging-helpers > log-utils > ansi-colors > lazy-cache > set-getter:
         reason: None given
         expires: '2021-10-13T18:16:12.803Z'
+    - uswds > handlebars-helpers > lazy-cache > set-getter:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
+    - uswds > handlebars-helper-create-frame > create-frame > lazy-cache > set-getter:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
+    - uswds > handlebars-helpers > create-frame > lazy-cache > set-getter:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.314Z'
+    - uswds > handlebars-helpers > handlebars-helper-create-frame > create-frame > lazy-cache > set-getter:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.314Z'
+    - uswds > handlebars-helpers > logging-helpers > log-utils > ansi-colors > lazy-cache > set-getter:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.314Z'
   SNYK-JS-XMLDOM-1534562:
     - gulp-svg-sprite > svg-sprite > xmldom:
         reason: None given
@@ -2491,6 +2521,15 @@ ignore:
     - uswds > gulp-eslint > eslint > strip-ansi > ansi-regex:
         reason: None given
         expires: '2021-11-20T17:06:44.514Z'
+    - uswds > @mapbox/node-pre-gyp > npmlog > gauge > string-width > strip-ansi > ansi-regex:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
+    - uswds > canvas > @mapbox/node-pre-gyp > npmlog > gauge > string-width > strip-ansi > ansi-regex:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
+    - uswds > resemblejs > canvas > @mapbox/node-pre-gyp > npmlog > gauge > string-width > strip-ansi > ansi-regex:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
   SNYK-JS-AXIOS-1579269:
     - uswds > @frctl/fractal > @frctl/web > browser-sync > localtunnel > axios:
         reason: None given
@@ -3250,6 +3289,9 @@ ignore:
     - uswds > css-select > nth-check:
         reason: No direct upgrade or patch.
         expires: '2021-11-20T17:06:44.514Z'
+    - uswds > gulp-svg-sprite > svg-sprite > svgo > css-select > nth-check:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
   SNYK-JS-STYLELINT-1585622:
     - uswds > stylelint:
         reason: None given
@@ -3258,6 +3300,9 @@ ignore:
     - uswds > browserify > shell-quote:
         reason: None given
         expires: '2021-11-26T22:56:17.564Z'
+      browserify > shell-quote:
+        reason: No patch or update available.
+        expires: '2021-12-01T16:21:49.009Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

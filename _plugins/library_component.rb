@@ -31,9 +31,10 @@ module Jekyll
       cache = site.data['library_components']
       if not cache.key? @name
         if @base_url
-          puts " + local uswds component: #{@name}"
+          puts "Base URL: #{@base_url}"
           html = get_from_server
         elsif File.exist?(@fs_path)
+          puts "File exists and Base url #{@base_url}"
           puts " + packaged uswds component: #{@name}"
           html = open(@fs_path).read
         else

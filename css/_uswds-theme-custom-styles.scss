@@ -1430,19 +1430,12 @@ code[class*="language-plaintext"] {
 
 // External link styles
 
-// @TODO: Remove args when updating to latest 2.12.2
 #{$external-href} {
-  @include external-link(
-    usa-icons-bg/launch--blue-60v,
-    usa-icons-bg/launch--blue-70v
-  );
+  @include external-link;
 }
 
 .usa-link--alt#{$external-href} {
-  @include external-link(
-    usa-icons-bg/launch--gray-5,
-    usa-icons-bg/launch--white
-  );
+  @include external-link;
 }
 
 .usa-button,

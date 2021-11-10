@@ -8,12 +8,12 @@ module Jekyll
       super
       @name = name.strip
       @base_url = ENV[BASE_URL_ENV_VAR]
-      @fs_path = "node_modules/uswds/html-templates/components/#{@name}.html"
+      @fs_path = "node_modules/uswds/html-templates/#{@name}.html"
 
     end
 
     def get_from_server()
-      url = "#{@base_url}/html-templates/components/#{@name}.html"
+      url = "#{@base_url}/html-templates/#{@name}.html"
 
       begin
         open(url).read

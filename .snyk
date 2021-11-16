@@ -1337,6 +1337,15 @@ ignore:
     - uswds > nswatch > chokidar > glob-parent:
         reason: No direct upgrade or patch.
         expires: '2021-11-20T17:06:44.514Z'
+    - uswds > gulp > glob-watcher > chokidar > glob-parent:
+        reason: None given
+        expires: '2021-12-16T22:31:31.058Z'
+    - uswds > gulp > vinyl-fs > glob-stream > glob-parent:
+        reason: None given
+        expires: '2021-12-16T22:31:31.058Z'
+    - uswds > nswatch > chokidar > anymatch > micromatch > parse-glob > glob-base > glob-parent:
+        reason: None given
+        expires: '2021-12-16T22:31:31.058Z'
   SNYK-JS-NODESASS-1059081:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
@@ -2530,6 +2539,9 @@ ignore:
     - uswds > resemblejs > canvas > @mapbox/node-pre-gyp > npmlog > gauge > string-width > strip-ansi > ansi-regex:
         reason: No available patch or upgrade.
         expires: '2021-11-25T17:50:38.313Z'
+    - uswds > gulp-eslint > eslint > table > string-width > strip-ansi > ansi-regex:
+        reason: None given
+        expires: '2021-12-16T22:31:31.058Z'
   SNYK-JS-AXIOS-1579269:
     - uswds > @frctl/fractal > @frctl/web > browser-sync > localtunnel > axios:
         reason: None given
@@ -3300,9 +3312,16 @@ ignore:
     - uswds > browserify > shell-quote:
         reason: None given
         expires: '2021-11-26T22:56:17.564Z'
-      browserify > shell-quote:
+    - browserify > shell-quote:
         reason: No patch or update available.
         expires: '2021-12-01T16:21:49.009Z'
+  SNYK-JS-JSONSCHEMA-1920922:
+    - gulp-svg-sprite > svg-sprite > phantomjs-prebuilt > request > http-signature > jsprim > json-schema:
+        reason: None given
+        expires: '2021-12-16T22:31:31.058Z'
+    - uswds > gulp-svg-sprite > svg-sprite > phantomjs-prebuilt > request > http-signature > jsprim > json-schema:
+        reason: None given
+        expires: '2021-12-16T22:31:31.058Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

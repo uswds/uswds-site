@@ -273,7 +273,7 @@ subnav:
 #### Government resources
 
 - [Guide to the Digital Analytics Program (DAP)](https://digital.gov/services/dap/) [digital.gov]
-- [Getting started with Search.gov[youtube.com]](https://www.youtube.com/watch?v=p-y9T23ziEg) [search.gov]
+- [Getting started with Search.gov [youtube.com]](https://www.youtube.com/watch?v=p-y9T23ziEg) [search.gov]
 - [Office of Evaluation Sciences](https://oes.gsa.gov/) [oes.gsa.gov]
 - [Improving Customer Experience: Cross-Agency Priority Goal](https://www.performance.gov/CAP/cx/) [performance.gov]
 - [Tips for Starting Your Customer Experience Journey](https://www.performance.gov/tips-for-starting-your-customer-experience-journey/) [performance.gov]

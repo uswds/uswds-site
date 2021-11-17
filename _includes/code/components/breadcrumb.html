@@ -4,9 +4,11 @@
 {% endcapture %}{{ breadcrumb | strip }}
 
 <h3 class="site-preview-heading">Breadcrumb with RDFa metadata</h6>
-<!-- @TODO add metadata variant -->
+{% capture breadcrumb-metadata %}
+  {% library_component components-usa-breadcrumb--metadata %}
+{% endcapture %}{{ breadcrumb-metadata | strip }}
 
 <h3 class="site-preview-heading">Wrapping breadcrumb</h6>
 {% capture breadcrumb-wrap %}
-  {% library_component components-usa-breadcrumb~wrap %}
+  {% library_component components-usa-breadcrumb--wrap %}
 {% endcapture %}{{ breadcrumb-wrap | strip }}

@@ -13,7 +13,7 @@ module Jekyll
     end
 
     def get_from_server()
-      url = "#{@base_url}/html-templates/#{@name}.html"
+      url = "#{@base_url}/html-templates/#{@name}"
 
       begin
         open(url).read
@@ -34,7 +34,6 @@ module Jekyll
           puts "Base URL: #{@base_url}"
           html = get_from_server
         elsif File.exist?(@fs_path)
-          puts "File exists and Base url #{@base_url}"
           puts " + packaged uswds component: #{@name}"
           html = open(@fs_path).read
         else
@@ -45,7 +44,7 @@ module Jekyll
           )
         end
         # Replace asset path from library to what site needs.
-        html.gsub! "../../img/", "#{site.baseurl}/assets/img/"
+        html.gsub! "img/", "#{site.baseurl}/assets/img/"
         cache[@name] = html
       end
       cache[@name]

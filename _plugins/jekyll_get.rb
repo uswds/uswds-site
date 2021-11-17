@@ -35,12 +35,12 @@ module Jekyll_Get
       if not File.exists?(path)
         FileUtils.mkpath File.dirname(path)
         print "Caching #{url} in #{path}...\n"
-        data = JSON.load(open(get_final_url(url)))
-        open(path, 'wb') do |file|
+        data = JSON.load(URI.open(get_final_url(url)))
+        URI.open(path, 'wb') do |file|
           file << JSON.pretty_generate(data)
         end
       end
-      site.data[name] = JSON.load(open(path))
+      site.data[name] = JSON.load(URI.open(path))
       if d['decode_content']
         decode_content site.data[name]
       end

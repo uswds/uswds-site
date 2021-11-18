@@ -44,7 +44,7 @@ module Jekyll
           )
         end
         # Replace asset path from library to what site needs.
-        html.gsub! "img/", "#{site.baseurl}/assets/img/"
+        html.gsub! "./img/", "#{site.baseurl}/assets/img/"
         cache[@name] = html
       end
       cache[@name]

@@ -1432,6 +1432,10 @@ code[class*="language-plaintext"] {
 #{$external-href} {
   @include external-link;
   display: inline;
+
+  &::after {
+    display: inline-block;
+  }
 }
 
 .usa-link--alt#{$external-href} {

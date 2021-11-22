@@ -1431,7 +1431,6 @@ code[class*="language-plaintext"] {
 // External link styles
 #{$external-href} {
   @include external-link;
-  display: inline; 
 }
 
 // External link - Safari only fix
@@ -1441,6 +1440,9 @@ code[class*="language-plaintext"] {
       display: inline-block;
     }
   }
+}
+.usa-identifier__required-link#{$external-href} {
+  display: inline;
 }
 
 .usa-link--alt#{$external-href} {

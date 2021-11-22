@@ -58,7 +58,7 @@ contents:
 
   - name: Focus
     subsection: color
-    usage:
+    description: The default color of the focus outline.
     var: $theme-focus-color
     default: '"blue-40v"'
     type: color
@@ -66,14 +66,14 @@ contents:
   - name: Focus
     subsection: offset
     description: |
-      The offset between the element and the focus outline
+      The offset between the element and the focus outline.
     var: $theme-focus-offset
     default: 0
     type: units
 
   - name: Focus
     subsection: style
-    usage:
+    description: The style of the focus outline.
     var: $theme-focus-style
     default: solid
     type: outline-style
@@ -81,14 +81,14 @@ contents:
   - name: Focus
     subsection: width
     description: |
-      The width of the focus outline
+      The width of the focus outline.
     var: $theme-focus-width
     default: 0.5
     type: units
 
   - name: Icon size
     description: |
-      The size of a standard UI icon (like a close box)
+      The size of a standard UI icon (like a close box).
     var: $theme-icon-image-size
     default: 2
     type: units

@@ -9,19 +9,19 @@
   <table class="usa-table--borderless site-table-responsive site-table-simple">
     <thead>
       <tr>
-        <th scope="col" class="{{ col1Width }}">{{ col1Title }}</th>
-        <th scope="col" class="{{ col2Width }}">{{ col2Title }}</th>
+        <th scope="col" class="{{ col1Width }} display-inline-flex">{{ col1Title }}</th>
+        <th scope="col" class="{{ col2Width }} display-inline-flex">{{ col2Title }}</th>
       </tr>
     </thead>
     <tbody class="font-mono-2xs">
       {% for setting in settings %}
       <tr>
-        <td scope="row" data-title="{{ col1Title }}" class="{{ col1Width }}">
-          <span class="font-mono-2xs font-lang-3xs">
+        <td data-title="{{ col1Title }}" class="{{ col1Width }} display-inline-flex flex-align-start">
+          <code>
             {{ setting.var }}
-          </span>
+          </code>
         </td>
-        <td scope="row" data-title="{{ col2Title }}" class="{{ col2Width }}">
+        <td data-title="{{ col2Title }}" class="{{ col2Width }} display-inline-flex flex-align-start">
           <span class="font-lang-3xs">
             {{ setting.description | markdownify }}
           </span>
@@ -31,5 +31,5 @@
     </tbody>
   </table>
 {% else %}
-  <p>This component has no settings.</p>
+  <p><em>This component has no settings.</em></p>
 {% endif %}

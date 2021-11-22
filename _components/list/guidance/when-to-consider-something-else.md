@@ -1,0 +1,1 @@
+- If you need to communicate long lists of narrative text.

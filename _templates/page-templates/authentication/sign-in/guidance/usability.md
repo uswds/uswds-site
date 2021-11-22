@@ -1,0 +1,8 @@
+- **Clearly provide a way to reset passwords or recover usernames.** Provide a clearly marked link for users to reset a password or recover a forgotten username.
+- **Provide secure error feedback.** If a sign-in attempt fails, let users know there was an error, but don’t indicate which field was invalid, for example “Incorrect password” or “Username not found.” This helps maintain stronger protection against hackers and unauthorized users.
+- **Help users focus on the task.** Remove extraneous content to minimize distractions.
+- **Use specific field labels.** If you’re asking for a username, say username. If it’s an email, say email address. Don’t make the user guess which one you mean.
+- **Allow users to toggle password visibility.** This helps ensure users are entering passwords correctly while maintaining privacy when needed.
+- **Enable copy/paste.** Many users rely on password generators because they provide secure passwords and phrases they don't have to memorize. Forcing manual entry is a barrier to usability and can cause mistakes.
+- **Use consistent, accurate language.** Use “sign in” if it’s a verb (like a link in a call-to-action or button) or “sign-in” if it's a noun or adjective (like "sign-in page"). Don’t use “login” or “log in.”
+- **Allow users to switch between creating an account and signing in.** Users should be able to easily find where to sign in from the create account page, and vice versa. This also applies to the global header of the site, where users should have “one-click” access to either the sign-in or create an account page.

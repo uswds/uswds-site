@@ -1,0 +1,2 @@
+- **No clear relationship.** Consider how placement and alternative structure of unrelated controls can improve usability over placing all actions in a group.
+- **If there are more than three buttons.** Be mindful of how a long list of buttons might appear on small screens. An alternative type of control might be more suitable.

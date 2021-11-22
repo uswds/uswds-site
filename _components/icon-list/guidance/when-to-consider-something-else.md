@@ -1,0 +1,4 @@
+- **Multi-step forms or wizards.** The [step indicator]({{ site.baseurl }}/components/step-indicator) is best for communicating progress through a form or process that spans several different pages.
+- **Sequential steps.** Use a standard ordered list or [process list]({{ site.baseurl }}/components/process-list) if the items must be completed sequentially.
+- **Using complex iconography or graphics.** Use the graphic list if you plan on using different large, complex, or multicolored images with each list item. The icon should only reinforce the text of the list item. If the image needs to convey unique meaning, this is a job for an illustration not an icon.
+- **Improving readability of running text.** The standard [unordered list]({{ site.baseurl }}/components/list) is best for displaying simple lists that are part of running text.

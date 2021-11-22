@@ -1,0 +1,4 @@
+- **Select, split, and sequence to prioritize critical information.** First, select the most important information from the page. Then, split up the information into logical parts. Finally, sequence the parts in an order that makes sense to the reader.
+- **Link to more information.** We suggest linking to further reading on the same page using an anchor link. To do this without confusing your readers, do your best to explain where the link will take them in the hyperlinked text and reiterate it with the subsequent heading.
+- **Use smooth scrolling.** Show the reader that they haven’t left the page with smooth scrolling. If you opt for smooth scrolling, ensure the focus state is transferred appropriately.
+- **Give the user a way to get back.** Provide a “back to top” link or sticky internal navigation.

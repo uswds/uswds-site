@@ -1,0 +1,3 @@
+- **Use a precise headline.** A precise headline quickly communicates your page’s purpose. If the page content is especially complex, you may consider using a subheadline to further clarify its meaning.
+- **Write concise copy.** Favor short sentences (and paragraphs) over longer ones, and use straightforward language, avoiding jargon. Remember, copy blocks don’t need to be long to be comprehensive.
+- **See component-specific guidance.** For guidance on specific components, see the page for the individual components.

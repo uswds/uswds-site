@@ -1,4 +1,4 @@
-<h6>.gov domains</h6>
+<h3 class="site-preview-heading">.gov domains</h3>
 {% capture banner %}
   {% fractal_component banner %}
 {% endcapture %}{{ banner
@@ -7,7 +7,7 @@
   | replace: 'banner-lock-title', 'banner-lock-title-default'
   | replace: 'banner-lock-description', 'banner-lock-description-default' }}
 
-<h6>.mil domains</h6>
+<h3 class="site-preview-heading">.mil domains</h3>
 {% capture banner--dot-mil %}
   {% fractal_component banner--dot-mil %}
 {% endcapture %}{{ banner--dot-mil
@@ -16,7 +16,7 @@
   | replace: 'banner-lock-title', 'banner-lock-title-dot-mil'
   | replace: 'banner-lock-description', 'banner-lock-description-dot-mil' }}
 
-<h6>.gov domains (Spanish)</h6>
+<h3 class="site-preview-heading">.gov domains (Spanish)</h3>
 {% capture banner--lang-es %}
   {% fractal_component banner--lang-es %}
 {% endcapture %}{{ banner--lang-es
@@ -25,7 +25,7 @@
   | replace: 'banner-lock-title', 'banner-lock-title-lang-es'
   | replace: 'banner-lock-description', 'banner-lock-description-lang-es' }}
 
-<h6>.mil domains (Spanish)</h6>
+<h3 class="site-preview-heading">.mil domains (Spanish)</h3>
 {% capture banner--dot-mil-lang-es %}
   {% fractal_component banner--dot-mil-lang-es %}
 {% endcapture %}{{ banner--dot-mil-lang-es

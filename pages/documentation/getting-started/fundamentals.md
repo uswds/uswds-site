@@ -92,7 +92,7 @@ Install USWDS from the command line, and save it as a dependency in your `packag
 npm install uswds --save
 
 # [a lot of notices]
-# + uswds@2.10.1 [or another version number]
+# + uswds@{{ site.uswds_version }} [or another version number]
 # [a few more notifications]
 ```
 
@@ -101,7 +101,7 @@ npm will show some notifications, install USWDS, and display the version number 
 {:.site-terminal}
 ```json
 "dependencies": {
-  "uswds": "^2.10.1" [or another version number]
+  "uswds": "^{{ site.uswds_version }}" [or another version number]
 }
 ```
 
@@ -161,7 +161,7 @@ We'll look at each section before moving on to compiling.
 
 USWDS settings provide a way to customize your theme styles without writing new code. Settings tell the design system how to build its stylesheets. In the Sass entry point, these settings are the first thing you need to import.
 
-Any individual setting is, essentially, a Sass variable. Each setting begins with the `$theme`- prefix, and we provide a list of all available settings [in the USWDS documentation]({{ site.baseurl }}/documentation/settings/) as well as examples [in the USWDS codebase](https://github.com/uswds/uswds/tree/master/src/stylesheets/theme). A very simple settings file might look like this:
+Any individual setting is, essentially, a Sass variable. Each setting begins with the `$theme`- prefix, and we provide a list of all available settings [in the USWDS documentation]({{ site.baseurl }}/documentation/settings/) as well as examples [in the USWDS codebase](https://github.com/uswds/uswds/tree/main/src/stylesheets/theme). A very simple settings file might look like this:
 
 {:.site-terminal}
 ```scss
@@ -208,7 +208,7 @@ For the purposes of this guide, we won't get into custom code, but the important
 
 ### How to compile: Using uswds-gulp
 
-Once you have a Sass entry point for your project, you need a tool to convert the source Sass into browser readable CSS. This step is called compiling, and we use a talk manager called [Gulp](https://gulpjs.com/) to watch our directories for changes, and compile our CSS whenever there's a change. We've developed a tool called [uswds-gulp](https://github.com/uswds/uswds-gulp) to help teams install Gulp and get up and running as quickly as possible.
+Once you have a Sass entry point for your project, you need a tool to convert the source Sass into browser readable CSS. This step is called compiling, and we use a task manager called [Gulp](https://gulpjs.com/) to watch our directories for changes, and compile our CSS whenever there's a change. We've developed a tool called [uswds-gulp](https://github.com/uswds/uswds-gulp) to help teams install Gulp and get up and running as quickly as possible.
 
 #### Install uswds-gulp
 

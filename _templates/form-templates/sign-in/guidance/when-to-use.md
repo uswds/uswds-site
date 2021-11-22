@@ -1,0 +1,1 @@
+- **Accessing customized or private content.** When users expect information to be customized or private, place it behind a sign-in form.

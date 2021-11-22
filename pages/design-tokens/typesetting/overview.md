@@ -24,7 +24,7 @@ Typefaces vary in optical size. This means that at any specific pixel value, an 
 ### Fonts at native size
 
 {:.padding-top-2}
-![optical size of typefaces]({{ site.baseurl }}/assets/img/design-tokens/font-comparison.svg){: role="img"}
+![optical size of native typefaces. shows merriweather as optically large, source sans pro as optically small, and public sans in the middle.]({{ site.baseurl }}/assets/img/design-tokens/font-comparison.svg){: role="img"}
 
 USWDS 2 is designed so each size token outputs a consistent optical size regardless of the typeface. This makes our guidance more reliable and our theming more flexible.
 
@@ -32,7 +32,7 @@ USWDS 2 is designed so each size token outputs a consistent optical size regardl
 ### Fonts with normalization applied
 
 {:.padding-y-2}
-![normalized typefaces]({{ site.baseurl }}/assets/img/design-tokens/font-comparison-normalized.svg){: role="img"}
+![optical size of normalized typefaces. shows each font having a similar optical size.]({{ site.baseurl }}/assets/img/design-tokens/font-comparison-normalized.svg){: role="img"}
 
 To make different typefaces appear the same size (here called the _target size_) at each step of the scale (below, we see the output of [size]({{ site.baseurl }}/design-tokens/typesetting/font-size/){:.token} token `10`), the absolute size of each token's output varies depending on the font family.
 

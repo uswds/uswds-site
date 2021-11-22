@@ -1,3 +1,55 @@
-<div class="preview usa-prose site-prose {{ include.classes }}">
-  {% include code/components/{{ include.component }}.html %}
+{% assign level = include.level | default: "h3" %}
+
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
+  {% assign _id = include.component | append: '-preview' %}
+  {% assign _content_id = include.component | append: '-preview-content' %}
+  <button class="usa-accordion__button" aria-controls="{{ _content_id }}" aria-expanded="true"><{{ level }} id="{{ _id }}">Component preview</{{ level }}></button>
+  <div id="{{ _content_id }}" class="usa-accordion__content">
+
+    {% if include.image %}
+      {% for image in include.image %}
+        {% assign demo = include.demoLink[forloop.index0] | default: include.demoLink %}
+
+        {% unless forloop.first %}<hr />{% endunless %}
+
+        {% if include.variants %}
+          {% assign variant_name = include.variants[forloop.index0] | escape %}
+          {% assign variant_alt = variant_name | append: ' ' | append: page.title | escape %}
+
+          <h3 class="site-preview-heading">{{ variant_name }}</h3>
+        {% endif %}
+
+        <a
+          class="media_link"
+          href={% include component-preview-link.html
+            demoLink=demo
+            component=include.component
+          %}
+        >
+          <img
+            src="{{ site.baseurl }}{{ image }}"
+            alt="{{ variant_alt | default: page.title }}"
+          />
+        </a>
+        {% endfor %}
+
+        {% for link in include.demoLink %}
+          <a
+            class="usa-button"
+            href={% include component-preview-link.html
+              demoLink=link
+              component=include.component %}
+            >
+            Demo
+            {% if include.variants %}
+              {{ include.variants[forloop.index0] }}
+            {% else %}
+              {{ page.title }}
+            {% endif %}
+          </a>
+      {% endfor %}
+    {% else %}
+        {% include code/components/{{ include.component }}.html %}
+    {% endif %}
+  </div>
 </div>

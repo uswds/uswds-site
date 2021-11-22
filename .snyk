@@ -739,8 +739,8 @@ ignore:
         expires: '2021-11-25T17:50:38.313Z'
   SNYK-JS-GULPSCSSLINT-560114:
     - gulp-scss-lint:
-        reason: No upgrade or patch available.
-        expires: '2021-11-17T16:48:29.977Z'
+        reason: ' No available update.'
+        expires: '2021-12-19T21:17:42.633Z'
   SNYK-JS-HTTPPROXY-569139:
     - uswds > @frctl/fractal > browser-sync > http-proxy:
         reason: n/a
@@ -1121,21 +1121,39 @@ ignore:
     - gulp-eslint > eslint > glob-parent:
         reason: None given
         expires: '2021-03-20T08:01:00.235Z'
+      gulp > glob-watcher > chokidar > glob-parent:
+        reason: ' No available update.'
+        expires: '2021-12-19T21:17:42.633Z'
     - del > globby > fast-glob > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
+      gulp > vinyl-fs > glob-stream > glob-parent:
+        reason: ' No available update.'
+        expires: '2021-12-19T21:17:42.633Z'
     - uswds > del > globby > fast-glob > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
+      gulp-scss-lint > vinyl-fs > glob-stream > glob-parent:
+        reason: ' No available update.'
+        expires: '2021-12-19T21:17:42.633Z'
     - sass > chokidar > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
+      uswds > gulp > glob-watcher > chokidar > glob-parent:
+        reason: ' No available update.'
+        expires: '2021-12-19T21:17:42.633Z'
     - gulp > glob-watcher > chokidar > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
+      uswds > gulp > vinyl-fs > glob-stream > glob-parent:
+        reason: ' No available update.'
+        expires: '2021-12-19T21:17:42.633Z'
     - gulp > vinyl-fs > glob-stream > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
+      uswds > nswatch > chokidar > anymatch > micromatch > parse-glob > glob-base > glob-parent:
+        reason: ' No available update.'
+        expires: '2021-12-19T21:17:42.633Z'
     - gulp-scss-lint > vinyl-fs > glob-stream > glob-parent:
         reason: None given
         expires: '2021-02-14T18:33:52.502Z'
@@ -2150,6 +2168,9 @@ ignore:
     - uswds > css-select > css-what:
         reason: No direct upgrade or patch.
         expires: '2021-11-20T17:06:44.514Z'
+      gulp-svg-sprite > svg-sprite > svgo > css-select > css-what:
+        reason: ' No available update.'
+        expires: '2021-12-19T21:17:42.633Z'
     - gulp-svg-sprite > svg-sprite > svgo > css-select > css-what:
         reason: None given
         expires: '2021-07-17T05:29:00.678Z'
@@ -2218,54 +2239,105 @@ ignore:
     - uswds > nswatch > chalk > strip-ansi > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
+      uswds > mocha > yargs > string-width > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
     - uswds > @frctl/fractal > columnify > strip-ansi > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
+      uswds > mocha > yargs > cliui > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
     - uswds > @frctl/fractal > vorpal > strip-ansi > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
+      uswds > mocha > yargs > cliui > string-width > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
     - uswds > nswatch > chalk > has-ansi > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
+      uswds > mocha > yargs-unparser > yargs > string-width > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
     - uswds > @frctl/fractal > vorpal > inquirer > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
+      uswds > mocha > yargs > cliui > wrap-ansi > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
     - gulp > gulp-cli > yargs > string-width > strip-ansi > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
+      uswds > mocha > yargs-unparser > yargs > cliui > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
     - uswds > @frctl/fractal > vorpal > wrap-ansi > strip-ansi > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
+      uswds > mocha > yargs > cliui > wrap-ansi > string-width > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
     - gulp > gulp-cli > yargs > cliui > strip-ansi > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
+      uswds > mocha > yargs-unparser > yargs > cliui > string-width > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
     - uswds > @frctl/fractal > vorpal > chalk > strip-ansi > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
+      uswds > mocha > yargs-unparser > yargs > cliui > wrap-ansi > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
     - uswds > nswatch > cac > chalk > strip-ansi > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
+      uswds > mocha > yargs-unparser > yargs > cliui > wrap-ansi > string-width > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
     - uswds > @frctl/fractal > vorpal > inquirer > strip-ansi > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
+      uswds > mocha > wide-align > string-width > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
     - uswds > @mapbox/node-pre-gyp > npmlog > gauge > strip-ansi > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
+      uswds > @mapbox/node-pre-gyp > npmlog > gauge > wide-align > string-width > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
     - uswds > @frctl/fractal > vorpal > chalk > has-ansi > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
+      uswds > canvas > @mapbox/node-pre-gyp > npmlog > gauge > wide-align > string-width > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
     - uswds > nswatch > cac > chalk > has-ansi > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
+      uswds > resemblejs > canvas > @mapbox/node-pre-gyp > npmlog > gauge > wide-align > string-width > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
     - uswds > @frctl/fractal > vorpal > wrap-ansi > string-width > strip-ansi > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
+      gulp-eslint > eslint > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
     - gulp > gulp-cli > yargs > cliui > string-width > strip-ansi > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
+      gulp-eslint > eslint > table > string-width > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
     - uswds > gulp > gulp-cli > yargs > string-width > strip-ansi > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
+      uswds > gulp-eslint > eslint > table > string-width > strip-ansi > ansi-regex:
+        reason: ' No available update.'
+        expires: '2021-12-19T21:17:42.633Z'
     - uswds > @mapbox/node-pre-gyp > npmlog > gauge > string-width > strip-ansi > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.797Z'
@@ -3300,9 +3372,16 @@ ignore:
     - uswds > browserify > shell-quote:
         reason: None given
         expires: '2021-11-26T22:56:17.564Z'
-      browserify > shell-quote:
+    - browserify > shell-quote:
         reason: No patch or update available.
         expires: '2021-12-01T16:21:49.009Z'
+  SNYK-JS-JSONSCHEMA-1920922:
+    - gulp-svg-sprite > svg-sprite > phantomjs-prebuilt > request > http-signature > jsprim > json-schema:
+        reason: ' No available update.'
+        expires: '2021-12-19T21:17:42.633Z'
+    - uswds > gulp-svg-sprite > svg-sprite > phantomjs-prebuilt > request > http-signature > jsprim > json-schema:
+        reason: ' No available update.'
+        expires: '2021-12-19T21:17:42.633Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

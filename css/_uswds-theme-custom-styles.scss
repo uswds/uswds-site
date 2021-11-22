@@ -1431,20 +1431,22 @@ code[class*="language-plaintext"] {
 // External link styles
 #{$external-href} {
   @include external-link;
-}
+  display: inline-block;
+  padding-right: 1.75ex;
 
-// Safari only 
-//fix icon display issues 
-@media not all and (min-resolution:.001dpcm) { 
-  @supports (-webkit-appearance:none) {
-    #{$external-href}::after {
-      display: inline-block;
-    }
+  &::after {
+    display: inline-block;
   }
 }
 
-.usa-identifier__required-link {
-  display: inline;
+// External link - Safari only fix
+@media not all and (min-resolution:.001dpcm) { 
+  @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    #{$external-href}{
+      display: inline; 
+      padding-right: 0;
+    }
+  }
 }
 
 .usa-link--alt#{$external-href} {

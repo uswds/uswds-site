@@ -1431,13 +1431,20 @@ code[class*="language-plaintext"] {
 // External link styles
 #{$external-href} {
   @include external-link;
+}
 
-  &::after {
-    -webkit-clip-path: inset(0.5ex 0 0.2ex);
-    clip-path: inset(0.5ex 0 0.2ex);
-    -webkit-mask-size: contain;
-    mask-size: contain;
+// Safari only 
+//fix icon display issues 
+@media not all and (min-resolution:.001dpcm) { 
+  @supports (-webkit-appearance:none) {
+    #{$external-href}::after {
+      display: inline-block;
+    }
   }
+}
+
+.usa-identifier__required-link {
+  display: inline;
 }
 
 .usa-link--alt#{$external-href} {

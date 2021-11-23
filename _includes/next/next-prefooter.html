@@ -1,0 +1,128 @@
+<div class="grid-row margin-bottom-neg-1">
+  <div class="grid-col bg-next-red-medium height-1"></div>
+  <div class="grid-col bg-next-blue-medium height-1"></div>
+  <div class="grid-col bg-next-mint-medium height-1"></div>
+  <div class="grid-col bg-next-gold-medium height-1"></div>
+  <div class="grid-col bg-next-pink-medium height-1"></div>
+  <div class="grid-col bg-next-gray-medium height-1"></div>
+</div>
+
+
+<!-- builds next/previous pages -->
+
+{% assign next_collection = site.next %}
+
+{% for pages in next_collection %}
+
+  {% if pages.title == page.title %}
+
+    {% unless forloop.first %}
+      {% assign prevurl = prevpage.url %}
+    {% endunless %}
+
+    {% unless next.last.url %}
+      {% assign nextpage = next_collection[forloop.index] %}
+      {% assign nexturl = nextpage.url %}
+    {% endunless %}
+
+  {% endif %}
+
+  {% assign prevpage = pages %}
+
+{% endfor %}
+
+{% assign findings_pages = next_collection | where:"parent", "Findings" %}
+{% assign opportunity_pages = next_collection | where:"slug", "opportunity" %}
+
+<nav class="grid-container margin-y-5 padding-bottom-2 padding-top-3" aria-label="Page navigation">
+  <div class="grid-row">
+    <div class="grid-col-12 text-center tablet:grid-col-10 tablet:margin-x-auto desktop-lg:grid-col-12 margin-bottom-2">
+      <h2>Continue reading this report</h2>
+    </div>
+  </div>
+  <div class="grid-row flex-justify padding-bottom-3">
+    <div class="grid-col-12 tablet:grid-col-10 tablet:margin-x-auto desktop-lg:margin-x-0 desktop-lg:grid-col-6 margin-bottom-3">
+      {% if prevurl %}
+        {% include next/next-pagination-cards.html preview=page.previous direction="prev" %}
+      {% endif %}
+    </div>
+    <div class="grid-col-12 tablet:grid-col-10 tablet:margin-x-auto desktop-lg:margin-x-0 desktop-lg:grid-col-6 margin-bottom-3">
+      {% if nexturl %}
+        {% include next/next-pagination-cards.html preview=page.next direction="next" %}
+      {% endif %}
+    </div>
+  </div>
+</nav>
+
+
+<nav class="next-prefooter bg-base-darker usa-dark-background text-base-lightest text-center padding-y-5 text-white text-left">
+  <div class="grid-container margin-top-3">
+    <div class="grid-row">
+      <div class="grid-col-12 desktop:grid-col-4 add-list-reset">
+        <h2 class=" text-bold font-heading-xl line-height-heading-3 margin-bottom-2 margin-top-0">
+          Transforming the American digital experience
+        </h2>
+        <p class="font-sans-sm margin-bottom-4 text-base-lightest">
+          What’s next for the U.S. Web Design System <br>
+          March 2021
+        </p>
+        <div class="text-semibold font-sans-lg tablet:margin-y-5 padding-y-2">
+          <a href="{{ site.baseurl }}/files/next/Transforming-the-American-digital-experience.pdf" title="Transforming the American digital experience (report) — Downloadable PDF" class="usa-button usa-button--next margin-x-o">Download the report</a>
+        </div>
+      </div>
+
+      <ul class="grid-col-12 desktop:grid-col-4 margin-bottom-2 desktop:padding-left-3 add-list-reset">
+        <li class="text-semibold font-sans-lg margin-bottom-2">
+          <a class="usa-link" href="{{ site.baseurl }}/next/" title="Transforming the American digital experience | Executive Summary">
+            Executive summary
+          </a>
+        </li>
+        <li class="text-semibold font-sans-lg margin-bottom-2">
+          <a class="usa-link" href="{{ site.baseurl }}/next/introduction/" title="Transforming the American digital experience | Introduction">
+            Introduction
+          </a>
+        </li>
+        <li class="text-semibold font-sans-lg margin-bottom-2">
+          <a class="usa-link" href="{{ site.baseurl }}/next/findings/" title="Transforming the American digital experience | Findings">
+            Findings
+          </a>
+        </li>
+        {% for report_page in findings_pages %}
+          <li class="font-sans-sm margin-bottom-105">
+            <a class="usa-link" href="{{ site.baseurl }}{{ report_page.url }}" title="Transforming the American digital experience | {{ report_page.title }}">
+              {{ report_page.title }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <ul class="grid-col-12 desktop:grid-col-4 margin-bottom-2 desktop:padding-left-2 add-list-reset">
+        <li class="text-semibold font-sans-lg margin-bottom-2">
+          <a class="usa-link" href="{{ site.baseurl }}/next/looking-ahead/" title="Transforming the American digital experience | What’s next">
+            What’s next
+          </a>
+        </li>
+        {% for report_page in opportunity_pages %}
+          <li class="font-sans-sm margin-bottom-105">
+            <a class="usa-link" href="{{ site.baseurl }}{{ report_page.url }}" title="Transforming the American digital experience | {{ report_page.title }}">
+              {{ report_page.title }}
+            </a>
+          </li>
+        {% endfor %}
+        <li class="text-semibold font-sans-lg margin-top-3 margin-bottom-2">
+          <a class="usa-link" href="{{ site.baseurl }}/next/get-involved" title="Transforming the American digital experience | Get involved">
+            Get involved
+          </a>
+        </li>
+        </div>
+    </ul>
+  </div>
+</nav>
+<div class="grid-row">
+  <div class="grid-col bg-next-red-medium height-1"></div>
+  <div class="grid-col bg-next-blue-medium height-1"></div>
+  <div class="grid-col bg-next-mint-medium height-1"></div>
+  <div class="grid-col bg-next-gold-medium height-1"></div>
+  <div class="grid-col bg-next-pink-medium height-1"></div>
+  <div class="grid-col bg-next-gray-medium height-1"></div>
+</div>

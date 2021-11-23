@@ -1,0 +1,1 @@
+- **Use sparingly.** Use the dropdown component only when a user needs to choose from about seven to 15 possible options and you have limited space to display the options.

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+    {% include banner.html %}
+    <header class="usa-header site-header site-header-dark next-site-header" aria-label="Next report header">
+      <div class="usa-navbar site-header-navbar bg-{{ page.navbar_color }}">
+        <div class="usa-logo site-logo" id="logo">
+          <em class="usa-logo__text">
+            <a class="margin-right-05" href="{{ site.baseurl }}/" title="Home" aria-label="{{ site.title }} home">
+              <span aria-hidden="true" class="site-title-short">USWDS</span>
+              <span class="site-title">{{ site.title }}</span>
+            </a>
+          </em>
+        </div>
+      </div>
+    </header>
+    {{ content }}
+    {% include next/next-prefooter.html %}
+    {% include footer.html %}
+    {% include scripts.html %}
+  </body>
+</html>

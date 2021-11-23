@@ -6,19 +6,19 @@
   <table class="usa-table--borderless site-table-responsive site-table-simple">
     <thead>
       <tr>
-        <th scope="col">Utility variable</th>
-        <th scope="col" class="tablet:maxw-card-lg">Default</th>
+        <th scope="col" class="display-inline-flex">Utility variable</th>
+        <th scope="col" class="tablet:maxw-card-lg display-inline-flex">Default</th>
       </tr>
     </thead>
     <tbody class="font-mono-2xs">
       {% for utility in page.utilities %}
         <tr>
-          <th scope="row" data-title="Utility variable" class="tablet:text-no-wrap">
+          <th scope="row" data-title="Utility variable" class="tablet:text-no-wrap display-inline-flex">
             <span class="text-normal">
               ${{ utility.var }}-settings.output
             </span>
           </th>
-          <td data-title="Default" class="tablet:maxw-card-lg">
+          <td data-title="Default" class="tablet:maxw-card-lg display-inline-flex">
             <span>
               {% if utility.output %}<span class="output-true">true</span>{% else %}false{% endif %}
             </span>

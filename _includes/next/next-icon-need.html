@@ -1,0 +1,22 @@
+{% assign text = '' %}
+{% assign icon = 'none' %}
+{% if include.need == 'understand' %}
+  {% assign text = 'Understand the value' %}
+  {% assign icon = 'plus' %}
+{% elsif include.need == 'know' %}
+  {% assign text = 'Know how to get started' %}
+  {% assign icon = 'arrow' %}
+{% elsif include.need == 'find' %}
+  {% assign text = 'Find the right team' %}
+  {% assign icon = 'check' %}
+{% elsif include.need == 'engage' %}
+  {% assign text = 'Feel engaged' %}
+  {% assign icon = 'triangles' %}
+{% elsif include.need == 'improve' %}
+  {% assign text = 'Iteratively improve' %}
+  {% assign icon = 'steps' %}
+{% endif %}
+<div class="grid-row flex-align-center">
+  <img class="next-opportunity__need__need-img usa-icon" src="{{ site.baseurl }}/img/next/{{ icon }}-small.svg" alt="" role="presentation">
+  <div class="next-opportunity__need__need-label">{{ text }}</div>
+</div>

@@ -40,6 +40,7 @@ If you have a new implementation to add to this list, please [open an issue] or 
       <tr>
         <th scope="col">Name</th>
         <th scope="col">Distribution</th>
+        <th scope="col">Status</th>
         <th scope="col">Author or maintainer</th>
         <th scope="col">Notes</th>
       </tr>
@@ -50,6 +51,13 @@ If you have a new implementation to add to this list, please [open an issue] or 
         <a href="{{ impl.url }}">{{ impl.name }}</a>
       </th>
       <td data-title="Distribution">{{ impl.distribution }}</td>
+      <td data-title="Status">
+        {% if impl.status %}
+          <div class="usa-tag label-{{ impl.status | strip }} position-static margin-x-0">
+            {{ impl.status }}
+          </div>
+        {% endif %}
+      </td>
       <td data-title="Author">
         {% if impl.author.url %}
         <a href="{{ impl.author.url }}">{{ impl.author.name }}</a>

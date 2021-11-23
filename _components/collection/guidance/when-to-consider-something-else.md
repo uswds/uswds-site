@@ -1,0 +1,2 @@
+- **Providing an archive of articles or pages.** Consider limiting the number of items in each collection to six or fewer. If you need to allow users to search or browse a larger content catalog, consider using a separate index or archive page.
+- **When you want to display large images or other media.** Collections are meant to be compact. If you need something with large images or other media, consider using the card component. The [card]({{ site.baseurl }}/components/card) has a bigger footprint and provides more flexibility with large images and other media.

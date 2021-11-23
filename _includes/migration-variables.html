@@ -26,36 +26,36 @@
   <tbody class="font-mono-2xs">
     {% for class in classes %}
       <tr>
-        <td scope="row" data-title="{{ col1Title }}" class="{{ col1Width }}">
+        <td data-title="{{ col1Title }}" class="{{ col1Width }}">
           <span class="font-lang-3xs">
             {{ class.v1 }}
           </span>
         </td>
-        <td scope="row" data-title="{{ col2Title }}" class="{{ col2Width }}">
+        <td data-title="{{ col2Title }}" class="{{ col2Width }}">
             <span class="text-bold font-lang-3xs">
               {{ class.v2 }}
             </span>
         </td>
-        <td scope="row" data-title="{{ col3Title }}" class="{{ col3Width }}">
+        <td data-title="{{ col3Title }}" class="{{ col3Width }}">
           <span class="text-primary-vivid">
             {{ class.v2_value }}
           </span>
         </td>
-        <td scope="row" data-title="{{ col4Title }}" class="{{ col4Width }}">
+        <td data-title="{{ col4Title }}" class="{{ col4Width }}">
           <span>
             {% include get-token-url.html token=class.kind %}
           </span>
         </td>
-        <td scope="row" data-title="{{ col5Title }}" class="{{ col5Width }}">
+        <td data-title="{{ col5Title }}" class="{{ col5Width }}">
           <span class="font-lang-3xs">
             {% if class.location %}
-            <a href="{{ site.baseurl }}/documentation/settings/#{{ class.location }}">{{ class.location }}</a>
+            <a href="{{ site.baseurl }}/documentation/settings/#{{ class.location }}-settings">{{ class.location }}</a>
             {% else %}
             —
             {% endif %}
           </span>
         </td>
-        <td scope="row" data-title="{{ col6Title }}" class="{{ col6Width }}">
+        <td data-title="{{ col6Title }}" class="{{ col6Width }}">
           <span class="font-lang-3xs">
             {{ class.notes | markdownify }}
           </span>

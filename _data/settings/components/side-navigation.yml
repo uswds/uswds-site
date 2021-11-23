@@ -1,0 +1,12 @@
+name: Sidenav
+contents:
+  - name: Current border width
+    description: Width of the current section indicator.
+    var: $theme-sidenav-current-border-width
+    default: 0.5
+    type: units
+  - name: Font family
+    description: Font family of the side navigation.
+    var: $theme-sidenav-font-family
+    default: '"ui"'
+    type: family

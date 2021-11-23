@@ -44,4 +44,4 @@ Overall the USWDS shortened the amount of time it took to implement the site, fo
 
 ---
 
-We’re looking to learn more [from agencies that have used USWDS](https://github.com/uswds/uswds/blob/develop/docs/WHO_IS_USING_USWDS.md)(see list on GitHub); if you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at [uswds@support.digitalgov.gov](mailto:uswds@support.digitalgov.gov). You can also chat with the team in the [public Slack channel for USWDS](https://chat.18f.gov/) via Google Forms!
+We’re looking to learn more [from agencies that have used USWDS](https://github.com/uswds/uswds/blob/develop/docs/WHO_IS_USING_USWDS.md) (see list on GitHub); if you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at [uswds@support.digitalgov.gov](mailto:uswds@support.digitalgov.gov). You can also chat with the team in the [public Slack channel for USWDS](https://chat.18f.gov/) via Google Forms!

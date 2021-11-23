@@ -61,8 +61,8 @@ formats it understands, and it will generate a web site automatically.
 Fractal's component-oriented architecture nudged us to consider how each of
 [our own components]({{ site.baseurl }}/components/) really _work_: What are
 their moving parts, and how do their "variants" (for instance, our [basic]({{
-site.baseurl }}/components/headers/#basic) and [extended]({{ site.baseurl
-}}/components/headers/#extended) headers) differ from one another? The process
+site.baseurl }}/components/header/#basic-header) and [extended]({{ site.baseurl
+}}/components/header/#extended-header) headers) differ from one another? The process
 of adapting our components to Fractal produced a basic [interface inventory] (described in the Brad Frost blog),
 which shows us exactly where we are right now, and the interactive previews
 give us the confidence to make bigger changes because we can immediately see
@@ -189,7 +189,7 @@ free to [file an issue on GitHub]({{ page.github_baseurl }}/issues/new),
 
 [1.1.0 pre-release]: {{ page.github_baseurl }}/releases/tag/v1.1.0-pre
 [Drupal twig]: https://www.drupal.org/docs/8/theming/twig
-[Federalist]: https://federalist.fr.cloud.gov
+[Federalist]: https://federalist.18f.gov
 [Fractal]: http://fractal.build
 [GitHub Pages]: https://pages.github.com/
 [GitHub repository]: {{ page.github_baseurl }}

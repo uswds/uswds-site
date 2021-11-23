@@ -1,0 +1,12 @@
+name: Icon list
+contents:
+  - name: Icon list font family
+    description: Font family of the content text.
+    var: $theme-icon-list-font-family
+    default: '"body"'
+    type: family
+  - name: Icon list title font family
+    description: Font family of the content title.
+    var: $theme-icon-list-title-font-family
+    default: '"heading"'
+    type: family

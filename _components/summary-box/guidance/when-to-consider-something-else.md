@@ -1,0 +1,7 @@
+- **Internal page navigation.** Don't use a summary box as a table of contents. If you’re listing headings for internal page navigation, use a simple unordered list of jump links or side navigation.
+- **Your page is short.** The summary box gives users quick access to the most important information on a long page. If your page isn’t that long, a recap may feel redundant.
+- **Your list needs more detail.** Summary boxes should be short. Use a process list, graphic list, or icon list in the body of the article when:
+  - There are more than five bullet points.
+  - Bullet points are longer than 20 words.
+  - Bullet points require a header, image, or button.
+- **Alerts or callouts.**  you’re highlighting something new, rather than surfacing details from further down the page, use the [alert]({{ site.baseurl }}/components/alert/) component, such as the [informative status alert]({{ site.baseurl }}/components/alert/).

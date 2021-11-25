@@ -1,6 +1,6 @@
 # U.S. Web Design System documentation
 
-This repo includes code and documentation for the U.S. Web Design System website. For information on USWDS (components) themselves, please visit our [uswds](https://github.com/uswds/uswds) Github repo.
+This repo includes code and documentation for the U.S. Web Design System website. For information on the USWDS components and codebase, please visit our [uswds](https://github.com/uswds/uswds) Github repo.
 
 Note that this README includes steps to pull the latest version of USWDS into your local instance of the documentation.
 
@@ -10,12 +10,20 @@ The U.S. Web Design System documentation is built using Jekyll for the file fram
 
 ### Before you start
 
+Recommended before install:
+
+1. Ruby Version Manager - RVM [Installation guides](https://rvm.io/rvm/install)
+1. Node Version Manager - NVM [Installation guides](https://github.com/nvm-sh/nvm#installing-and-updating)
+
 You will need to have the following installed on your machine before following the commands below:
 
 1. Ruby v2.2.2+, [Installation guides](https://www.ruby-lang.org/en/documentation/installation/)
 1. Node v4.2.3+, [Installation guides](https://nodejs.org/en/download/)
 1. Bundler v1.12.3+, [Installation guides](http://bundler.io/v1.13/guides/using_bundler_in_application.html#getting-started---installing-bundler-and-bundle-init)
 1. Chrome v59 or higher (v60 if on Windows)
+1. Python v2.7* (For node-gyp dependency)
+
+>\* If you're running into node-gyp issues on `npm install` you'll need to install python v2.7, which is the recommended version as of `node-gyp@3.8.0`. Once installed you can reference it via `npm config set python /usr/bin/python2.7` or wherever you have installed. You can find that with `whereis python` command.
 
 ### Building the documentation with gulp
 
@@ -70,6 +78,8 @@ USWDS uses the [fractal design system builder](http://fractal.build/) to organiz
 ### Deployment and previews
 
 This site is deployed on [Federalist](https://federalist.18f.gov/), which automatically builds the public site whenever commits are pushed to `main`. Federalist also builds public previews for each branch pushed to GitHub.
+
+⚠️ When generating new sections, sometimes they fail to build on Federalist. You can clear the cache by running a simple `bundle update`, which will trigger a fresh build.
 
 ### Updating the USWDS version
 

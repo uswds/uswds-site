@@ -1,0 +1,5 @@
+- **Use fields appropriate to the length of the input.** The length of the text input provides a hint to users as to how much text to write. Do not require users to write paragraphs of text into a single-line input box; use a text area instead.
+- **Consider the mobile context.** Text inputs are among the easiest type of input for desktop users but are more difficult for mobile users.
+- **Wait to validate.** Only show error validation messages or stylings after a user has interacted with a particular field.
+- **Avoid placeholder text.** Avoid using placeholder text that appears within a text field before a user starts typing. If placeholder text is no longer visible after a user clicks into the field, users will no longer have that text available when they need to review their entries. (People who have cognitive or visual disabilities have additional problems with placeholder text.)
+.

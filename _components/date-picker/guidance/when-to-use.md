@@ -1,0 +1,2 @@
+- **Scheduling.** When users need to schedule or record an event and benefit from the context of a calendar.
+- **When the day of the week is important.** When knowing the day of the week helps users choose a specific date.

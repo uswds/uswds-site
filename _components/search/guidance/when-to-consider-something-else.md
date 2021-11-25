@@ -1,0 +1,1 @@
+- **Very small sites.** On single-page or very small sites, you may be able to get away without a search bar.

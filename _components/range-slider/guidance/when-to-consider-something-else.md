@@ -1,0 +1,1 @@
+- Use a regular text input if a user needs to enter a precise number.

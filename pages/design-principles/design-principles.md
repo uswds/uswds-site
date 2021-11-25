@@ -287,7 +287,7 @@ subnav:
 #### Non-government resources
 
 - [Google Design: Stop Talking, Start Listening](https://medium.com/google-design/stop-talking-start-listening-7a555ec8ebb1) [medium.com]
-- [Google Design: Listening as design strategy](https://www.youtube.com/watch?v=6_mHCOAAEI8) [youtube.com]
+- [Design is Listening: listening as design strategy](https://www.youtube.com/watch?v=6_mHCOAAEI8) [youtube.com]
 
 ### Practical actions
 

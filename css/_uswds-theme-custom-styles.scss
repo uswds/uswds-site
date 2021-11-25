@@ -94,7 +94,7 @@ body {
   text-align: center;
 }
 
-.usa-prose site-prose {
+.usa-prose .site-prose {
   @include typeset("lang");
 }
 
@@ -485,16 +485,6 @@ body {
   }
 }
 
-// Ensure the homepage accordion displays properly
-// TODO: make sure line height is added in USWDS accordion component and that
-// list styles don't override accordion styles
-#main-content {
-  // scss-lint:disable IdSelector
-  .usa-accordion__button {
-    line-height: 1;
-  }
-}
-
 .site-h2 {
   @include typeset("lang", "xl", 2);
   color: color($site-ink);
@@ -510,7 +500,7 @@ body {
 .styleguide-content {
   @include add-responsive-site-margins;
   margin-bottom: units(6);
-  max-width: units($theme-site-max-width);
+  max-width: units($theme-grid-container-max-width);
   position: relative;
 
   header {
@@ -578,6 +568,7 @@ body {
 %label-maturity {
   @include typeset("lang", "2xs", 4);
   color: color("ink");
+  display: inline-block;
   font-weight: font-weight("bold");
   margin-left: units(1.5);
   position: absolute;
@@ -619,6 +610,16 @@ body {
   @extend %label-maturity;
   background-color: color("red-50v");
   color: color("white");
+}
+
+.label-archived {
+  @extend %label-maturity;
+  @include set-text-and-bg("red-30");
+}
+
+.label-stale {
+  @extend %label-maturity;
+  @include set-text-and-bg("yellow-20v");
 }
 
 .heading-margin-alt {
@@ -697,7 +698,7 @@ body {
 .footer-content {
   margin-bottom: units(5);
 
-  h3 {
+  h2 {
     @include typeset("lang", "lg", 2);
     margin: 0;
   }
@@ -709,12 +710,12 @@ body {
 .footer-contact-links {
   @include grid-gap(2);
 
-  h4,
+  h3,
   a {
     @include u-font("lang", "2xs");
   }
 
-  h4 {
+  h3 {
     font-weight: font-weight("normal");
     margin-bottom: 0;
     margin-top: units(2px);
@@ -1204,7 +1205,7 @@ code {
 }
 
 code[class*="language-"] {
-  color: color("base");
+  color: color("base-dark");
 
   // Custom code sample colors
   .token.property,
@@ -1248,6 +1249,10 @@ code[class*="language-"] {
   .s {
     color: color("primary-vivid");
   }
+}
+
+code[class*="language-plaintext"] {
+  color: inherit;
 }
 
 .alignment-example {
@@ -1425,7 +1430,11 @@ code[class*="language-"] {
 
 // External link styles
 #{$external-href} {
-  @include external-link(external-link, external-link-hover);
+  @include external-link;
+}
+
+.usa-link--alt#{$external-href} {
+  @include external-link;
 }
 
 .usa-button,
@@ -1640,7 +1649,6 @@ code[class*="language-"] {
 .page-product-roadmap {
   .main-content {
     .usa-tag {
-      display: inline-block;
       position: relative;
     }
   }
@@ -2100,7 +2108,7 @@ li {
   @extend .utility-scope-button;
   @include u-bg("white");
   @include u-border(1px, "gray-10");
-  @include u-text("gray-20", strike);
+  @include u-text("gray-50", strike);
 }
 
 .utility-scope-button-active {
@@ -2450,7 +2458,7 @@ h6 + div:not(.usa-accordion__content):not(.usa-collection__meta-list) {
 }
 
 pre {
-  white-space: pre;
+  white-space: pre-wrap;
 }
 
 // Responsive tables
@@ -2779,13 +2787,20 @@ $theme-table-column-gap: 4;
     h4,
     h5,
     h5 {
+      @include typeset("lang");
       @extend %header-margin;
       color: color("ink");
       margin: 0;
     }
 
+    h2 {
+      @include typeset("lang", "lg", 2);
+      @include u-text("bold");
+    }
+
     h3 {
       @include typeset("lang", "lg", 2);
+      @include u-text("normal");
     }
 
     .site-text-intro {
@@ -2828,6 +2843,7 @@ $theme-table-column-gap: 4;
   @include typeset("lang", "lg", 5);
   @include u-measure(5);
   font-weight: fw("light");
+  margin-bottom: units(6);
   margin-top: units(1);
 }
 
@@ -2835,6 +2851,14 @@ $theme-table-column-gap: 4;
   padding-bottom: units(3);
   padding-left: units(2);
   padding-top: units(3);
+}
+
+// because any accordion__content inside of a bordered accordion get's
+// borders, we need to overide for this nested component preview.
+.site-component-preview
+  .usa-accordion:not(.usa-accordion--bordered)
+  .usa-accordion__content {
+  border: none;
 }
 
 .usa-content-list {
@@ -2847,6 +2871,7 @@ $theme-table-column-gap: 4;
 
     ul {
       list-style-type: disc;
+      margin-bottom: units(2);
       padding-left: units(3);
     }
 
@@ -2882,7 +2907,7 @@ $theme-table-column-gap: 4;
 }
 
 .site-accordion-code {
-  .usa-accordion__button {
+  > .usa-accordion__button {
     @include add-background-svg("icons/remove-white");
     background-color: color("primary-vivid");
     color: color("white");
@@ -2899,7 +2924,7 @@ $theme-table-column-gap: 4;
 
 .site-accordion-docs,
 .site-accordion {
-  .usa-accordion__button {
+  > .usa-accordion__button {
     @include add-background-svg("usa-icons/remove");
 
     &[aria-expanded="false"] {
@@ -2923,7 +2948,6 @@ $theme-table-column-gap: 4;
   }
 
   > h2 {
-    @extend %header-margin;
     @include typeset("lang", "2xl", 2);
     color: color("ink");
     margin: 0;
@@ -2964,16 +2988,20 @@ $theme-table-column-gap: 4;
     @extend %header-margin;
     color: color("ink");
     margin: 0;
+
+    & + p {
+      margin-top: units(1);
+    }
   }
 
   h3 {
     @include typeset("lang", "lg", 2);
+    color: color("base-dark");
+    font-weight: fw("thin");
   }
 
   h4 {
-    @include typeset("lang", "lg", 2);
-    color: color("base-dark");
-    font-weight: fw("thin");
+    @include typeset("lang", "md", 2);
   }
 }
 
@@ -3035,38 +3063,55 @@ $theme-table-column-gap: 4;
 }
 
 .site-banner {
-  $site-banner-bg: "ink";
+  $banner-context: "Banner";
+  $site-banner-background-color: "ink";
   $site-banner-icon-color: "blue-40v";
   $site-banner-font-family: "lang";
   $site-banner-max-width: "none";
   $site-banner-link-color: "base-light";
+  $banner-guidance-measure: 3;
 
   $banner-icon-colors: get-link-tokens-from-bg(
-    $site-banner-bg,
-    $site-banner-icon-color
+    $site-banner-background-color,
+    $site-banner-icon-color,
+    $context: $banner-context
   );
+
   $banner-icon-color: nth($banner-icon-colors, 1);
   $banner-icon-hover: nth($banner-icon-colors, 2);
   $banner-icon-chevron: (
-    "name": "chevron",
-    "svg-height": 39,
-    "svg-width": 64,
-    "height": 0.8ex,
+    "name": "expand_more",
+    "svg-height": 40,
+    "svg-width": 40,
+    "height": 2,
     "color": $banner-icon-color,
+    "color-variant": "white",
     "color-hover": $banner-icon-hover,
   );
   $banner-icon-chevron-up: map-merge(
     $banner-icon-chevron,
     (
-      "rotate": 180deg,
+      "name": "expand_less",
     )
+  );
+  $banner-icon-close: (
+    "name": "close",
+    "svg-height": 40,
+    "svg-width": 40,
+    "height": 3,
+    "color": "blue-60v",
+    "color-variant": "white",
+    "container-height": $size-touch-target,
+    "container-width": $size-touch-target,
   );
 
   @include typeset($site-banner-font-family);
-  background-color: color($site-banner-bg);
+  @include border-box-sizing;
+  background-color: color($site-banner-background-color);
 
   @include at-media("tablet") {
     font-size: font-size($site-banner-font-family, "3xs");
+    padding-bottom: units(0);
   }
 
   .usa-accordion {
@@ -3075,23 +3120,85 @@ $theme-table-column-gap: 4;
 
   .usa-banner__header,
   .usa-banner__content {
-    @include set-text-from-bg($site-banner-bg);
+    @include set-text-from-bg(
+      $site-banner-background-color,
+      $context: $banner-context
+    );
   }
 
   .usa-banner__content {
-    @include u-maxw("desktop");
+    @include grid-container($site-banner-max-width);
+    @include add-responsive-site-margins;
+    background-color: color("transparent");
     font-size: font-size($site-banner-font-family, 4);
+    overflow: hidden;
+    padding-bottom: units(2);
+    padding-left: units($theme-site-margins-mobile-width - 1);
+    padding-top: units(0.5);
+    width: 100%;
+
+    @include at-media("tablet") {
+      @include u-padding-y(3);
+    }
+
+    p {
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
+
+  .usa-banner__guidance {
+    @include u-display("flex");
+    @include u-flex("align-start");
+    @include u-measure($banner-guidance-measure);
+    padding-top: units(2);
+
+    @include at-media("tablet") {
+      padding-top: units(0);
+    }
+  }
+
+  .usa-banner__lock-image {
+    $lock-h: 64; // unitless height of svg
+    $lock-w: 52; // unitless width of svg
+    $lock-aspect: $lock-w / $lock-h;
+    $icon-height: 1.5ex; // height of the lock icon; use ex for resilience
+
+    height: $icon-height;
+    width: $icon-height * $lock-aspect;
+    path {
+      fill: currentColor;
+    }
   }
 
   .usa-banner__inner {
+    @include add-responsive-site-margins;
     @include grid-container($site-banner-max-width);
+    @include grid-row;
+    @include u-flex("align-start");
+    padding-right: units(0);
+
+    @include at-media("tablet") {
+      @include u-flex("align-center");
+    }
   }
 
   .usa-banner__header {
+    @include u-padding-y(1);
     font-size: font-size($site-banner-font-family, 1);
+    font-weight: font-weight("normal");
+    min-height: units($size-touch-target);
+    position: relative;
+
+    @include at-media("tablet") {
+      @include u-padding-y(0.5);
+      min-height: 0;
+    }
   }
 
   .usa-banner__header-text {
+    @include u-margin-y(0);
     font-size: font-size($site-banner-font-family, 1);
     line-height: line-height($site-banner-font-family, 2);
   }
@@ -3100,47 +3207,185 @@ $theme-table-column-gap: 4;
     @include place-icon(
       $banner-icon-chevron,
       "after",
-      2px,
+      0,
       middle,
-      $site-banner-bg
+      $site-banner-background-color
     );
-    @include set-link-from-bg($site-banner-bg, $site-banner-link-color);
+    @include set-link-from-bg(
+      $site-banner-background-color,
+      $site-banner-link-color,
+      $context: $banner-context
+    );
 
     line-height: line-height($site-banner-font-family, 2);
+    margin-bottom: units(0);
+    margin-top: units(2px);
+    text-decoration: underline;
+
+    .usa-banner__header--expanded & {
+      display: none;
+    }
+
+    @include at-media("tablet") {
+      display: none;
+    }
+  }
+
+  .usa-banner__header-flag {
+    @include u-float("left");
+    margin-right: units(1);
+    width: units(2);
+
+    @include at-media("tablet") {
+      margin-right: units(1);
+      padding-top: units(0);
+    }
   }
 
   .usa-banner__header--expanded {
+    padding-right: units($size-touch-target + 1);
+
     @include at-media("tablet") {
+      background-color: transparent;
+      display: block;
       font-size: font-size($site-banner-font-family, 1);
+      font-weight: font-weight("normal");
+      min-height: units(0);
+      padding-right: units(0);
+    }
+
+    .usa-banner__inner {
+      margin-left: units(0);
+
+      @include at-media("tablet") {
+        margin-left: units(auto);
+      }
+    }
+
+    .usa-banner__header-action {
+      display: none;
     }
   }
 
   .usa-banner__button {
-    @include set-link-from-bg($site-banner-bg, $site-banner-link-color);
+    @include button-unstyled;
+    @include u-pin("left");
+    @include u-pin("y");
+    @include u-text("primary", underline, baseline);
+    @include set-link-from-bg(
+      $site-banner-background-color,
+      $site-banner-link-color,
+      $context: $banner-context
+    );
+    display: block;
     font-size: font-size($site-banner-font-family, 1);
+    height: auto;
     line-height: line-height($site-banner-font-family, 2);
+    padding-top: units(0);
+    padding-left: units(0);
+    text-decoration: none;
+    width: auto;
+
+    @include at-media-max("tablet") {
+      width: 100%;
+    }
 
     @include at-media("tablet") {
       @include place-icon(
         $banner-icon-chevron,
         "after",
-        2px,
+        "2px",
         middle,
-        $site-banner-bg
+        $site-banner-background-color
       );
-      @include set-link-from-bg($site-banner-bg, $site-banner-link-color);
+      @include set-link-from-bg(
+        $site-banner-background-color,
+        $site-banner-link-color,
+        $context: $banner-context
+      );
+      @include u-pin("none");
+      display: inline;
+      margin-left: units(1);
+      position: relative;
+
+      &:after {
+        position: absolute;
+      }
+
+      &:hover {
+        // Underline added to inner text instead.
+        text-decoration: none;
+      }
+    }
+
+    &[aria-expanded="false"] {
+      background-image: none;
     }
 
     &[aria-expanded="true"] {
+      background-image: none;
+
+      @include at-media-max("tablet") {
+        @include place-icon(
+          $banner-icon-close,
+          "after",
+          0,
+          middle,
+          "base-lighter"
+        );
+
+        &:before {
+          @include u-pin("y");
+          @include u-pin("right");
+          background-color: color("base-lighter");
+          content: "";
+          display: block;
+          height: units($size-touch-target);
+          width: units($size-touch-target);
+        }
+        &:after {
+          @include u-pin("y");
+          @include u-pin("right");
+        }
+      }
+
       @include at-media("tablet") {
         @include place-icon(
           $banner-icon-chevron-up,
           "after",
-          2px,
+          "2px",
           middle,
-          $site-banner-bg
+          $site-banner-background-color
         );
+        height: auto;
+        padding: units(0);
+        position: relative;
+
+        &:after {
+          position: absolute;
+        }
       }
+    }
+  }
+
+  .usa-banner__button-text {
+    @include add-sr-only;
+    text-decoration: underline;
+
+    @include at-media("tablet") {
+      @include add-no-sr-only;
+      display: inline;
+    }
+  }
+
+  .usa-banner__icon {
+    width: units(5);
+  }
+
+  // [uswds-init.js] Offscreen content while js is loading
+  .usa-js-loading {
+    .usa-banner__content {
+      @include add-sr-only;
     }
   }
 }
@@ -3191,10 +3436,14 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-.site-accordion {
-  .usa-accordion__content {
-    padding-left: 0;
-    padding-right: 0;
+.site-accordion,
+.site-accordion-code {
+  > .usa-accordion__button {
+    h2,
+    h3 {
+      @include typeset("lang", "sm", 1);
+      @include u-margin-y(0);
+    }
   }
 }
 
@@ -3413,5 +3662,105 @@ body {
   }
   .bp {
     @include u-text("violet-30v");
+  }
+}
+
+.site-preview-heading {
+  @include typeset("lang", "2xs", 2);
+  @include u-margin-bottom(2);
+  @include u-margin-top(4);
+  @include u-text("uppercase", "ls-2", "normal", "base");
+}
+
+.site-prose {
+  .site-component-section-title {
+    @extend .site-h2;
+    border-top: units(1px) solid;
+    margin-bottom: units(2);
+    margin-top: units(3);
+    padding-top: units(1.5);
+  }
+
+  .site-component-name {
+    @extend .site-page-title;
+    border-top: units(2px) solid;
+    font-weight: fw("light");
+    padding-top: units(2);
+  }
+}
+
+.usa-content-list {
+  p:first-child {
+    margin-top: 0;
+  }
+}
+
+.site-accordion-code {
+  // Don't show margin at the top of the first form-group's label
+  .usa-accordion__content > .usa-form-group:first-child,
+  .usa-date-range-picker > .usa-form-group:first-child {
+    .usa-label:first-child {
+      margin-top: 0;
+    }
+  }
+
+  // When form: Don't show margin at the top of the first form's label
+  .usa-form:first-child {
+    > .usa-label:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.site-accordion-code.site-component-preview {
+  .usa-accordion__content {
+    overflow: visible;
+  }
+}
+
+blockquote {
+  @include u-border-left("1px", "primary");
+  margin-left: 0;
+  padding-left: units(2);
+}
+
+@import "custom-styles/card-policy";
+@import "custom-styles/highlight";
+
+.pagination-behaviors {
+  @include list-reset;
+}
+
+.pagination-behaviors--item {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid color("base-light");
+  @include at-media("tablet") {
+    flex-direction: row;
+  }
+}
+
+.pagination-behaviors--guidance,
+.pagination-behaviors--examples {
+  @include u-flex(auto);
+}
+
+.pagination-behaviors--guidance {
+  @include at-media("tablet") {
+    padding-right: units(4);
+    width: 60%;
+  }
+}
+
+p + .pagination-behaviors--examples {
+  margin-top: 0;
+}
+
+.pagination-behaviors--example {
+  @include u-margin-y(1.5);
+  display: block;
+  width: auto;
+  @include at-media("tablet") {
+    height: units(4);
   }
 }

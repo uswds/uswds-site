@@ -1,0 +1,29 @@
+<h3 class="site-preview-heading">Standard alerts</h3>
+
+{% capture alerts--info %}
+  {% fractal_component alerts--info %}
+{% endcapture %}{{ alerts--info | strip }}
+
+{% capture alerts--warning %}
+  {% fractal_component alerts--warning %}
+{% endcapture %}{{ alerts--warning | strip }}
+
+{% capture alerts--error %}
+  {% fractal_component alerts--error %}
+{% endcapture %}{{ alerts--error | strip }}
+
+{% capture alerts--success %}
+  {% fractal_component alerts--success %}
+{% endcapture %}{{ alerts--success | strip }}
+
+<h3 class="site-preview-heading">Slim alert</h3>
+
+{% capture alerts--slim %}
+  {% fractal_component alerts--slim %}
+{% endcapture %}{{ alerts--slim | strip }}
+
+<h3 class="site-preview-heading">Alert with no icon</h3>
+
+{% capture alerts--no-icon %}
+  {% fractal_component alerts--no-icon %}
+{% endcapture %}{{ alerts--no-icon | strip }}

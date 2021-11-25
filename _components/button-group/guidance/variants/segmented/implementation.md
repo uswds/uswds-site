@@ -1,0 +1,5 @@
+- Buttons inside of a button group follow the same guidelines as the [button component]({{ site.baseurl }}/components/button).
+- Button groups support any style and size.
+- Don't mix differently-sized buttons (like a default button and a big button) in the same group.
+- Use short, descriptive button labels to describe controls.
+- Use default buttons as a current state and outline buttons as a non-current state. The segmented button group works with all button variants. However, you may need to create custom styles to distinguish state for some button variants.

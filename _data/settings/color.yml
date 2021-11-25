@@ -459,7 +459,7 @@ contents:
 
   - name: Body background color
     section: true
-    description: Background color of the site body
+    description: Background color of the site body.
     var: $theme-body-background-color
     default: '"white"'
     type: color
@@ -469,14 +469,14 @@ contents:
     default: '"ink"'
     type: color
   - name: Body text reverse color
-    description: Color of body text on dark backgrounds
+    description: Color of body text on dark backgrounds.
     var: $theme-text-reverse-color
     default: '"white"'
     type: color
 
   - name: Link color
     section: true
-    description: Color for text links
+    description: Color for text links.
     var: $theme-link-color
     default: '"primary"'
     type: color
@@ -486,27 +486,27 @@ contents:
     default: '"violet-70v"'
     type: color
   - name: Hover link color
-    description: Color for `:hover` text links
+    description: Color for `:hover` text links.
     var: $theme-link-hover-color
     default: '"primary-dark"'
     type: color
   - name: Active link color
-    description: Color for `:active` text links
+    description: Color for `:active` text links.
     var: $theme-link-active-color
     default: '"primary-darker"'
     type: color
   - name: Link reverse color
-    description: Color for reverse text links
+    description: Color for reverse text links.
     var: $theme-link-reverse-color
     default: '"base-lighter"'
     type: color
   - name: Link reverse hover color
-    description: Color for reverse `:hover` text links
+    description: Color for reverse `:hover` text links.
     var: $theme-link-reverse-hover-color
     default: '"base-lightest"'
     type: color
   - name: Link reverse hover color
-    description: Color for reverse `:active` text links
+    description: Color for reverse `:active` text links.
     var: $theme-link-reverse-active-color
     default: '"white"'
     type: color

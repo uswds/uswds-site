@@ -17,55 +17,55 @@ contents:
     default: 10px
     type: px
   - name: Global paragraph styles
-    description: Add basic styling to `p` elements
+    description: Add basic styling to `p` elements.
     var: $theme-global-paragraph-styles
     default: "false"
     type: boolean
   - name: Global link styles
-    description: Add basic styling to `a` elements
+    description: Add basic styling to `a` elements.
     var: $theme-global-link-styles
     default: "false"
     type: boolean
   - name: Global content styles
-    description: Add basic styling to paragraph text, links, headings, lists, and tables
+    description: Add basic styling to paragraph text, links, headings, lists, and tables.
     var: $theme-global-content-styles
     default: "false"
     type: boolean
   - name: Font path
-    description: Path to the font files, relative to the compiled CSS
+    description: Path to the font files, relative to the compiled CSS.
     var: $theme-font-path
     default: '"../fonts"'
     type: path
 
   - name: Custom typeface tokens
-    description: Add custom typeface tokens
+    description: Add custom typeface tokens.
     var: $theme-typeface-tokens
     default:
     type: map
     map:
       - key: token
-        description: Name of the token
+        description: Name of the token.
         value: example-serif-token
         type: string
       - key: token.display-name
-        description: Display name of the typeface
+        description: Display name of the typeface.
         value: '"Example Serif Display Name"'
         type: string
       - key: token.cap-height
-        description: Height of a 500px `N` character in Sketch
+        description: Height of a 500px `N` character in Sketch.
         value: 364px
         type: px
     map:
       - key: token
-        description: Nme of the token
+        description: Nme of the token.
         value: example-sans-token
         type: string
       - key: token.display-name
-        description: Display name of the typeface
+        description: Display name of the typeface.
         value: '"Example Sans Display Name"'
         type: string
       - key: token.cap-height
-        description: Height of a 500px `N` character in Sketch
+        description: Height of a 500px `N` character in Sketch.
         value: 364px
         type: px
   - name: cond
@@ -442,76 +442,76 @@ contents:
     default: '"sm"'
     type: size
   - name: Body line height
-    usage:
+    description:
     var: $theme-body-line-height
     default: 5
     type: line-height
   - name: Style body element
-    description: Add explicit body styles to the `body` element
+    description: Add explicit body styles to the `body` element.
     var: $theme-style-body-element
     default: "false"
     type: boolean
 
   - name: h1 font size
     section: true
-    usage:
+    description:
     var: $theme-h1-font-size
     default: '"2xl"'
     type: size
   - name: h2 font size
-    usage:
+    description:
     var: $theme-h2-font-size
     default: '"xl"'
     type: size
   - name: h3 font size
-    usage:
+    description:
     var: $theme-h3-font-size
     default: '"lg"'
     type: size
   - name: h4 font size
-    usage:
+    description:
     var: $theme-h4-font-size
     default: '"sm"'
     type: size
   - name: h5 font size
-    usage:
+    description:
     var: $theme-h5-font-size
     default: '"xs"'
     type: size
   - name: h6 font size
-    usage:
+    description:
     var: $theme-h6-font-size
     default: '"3xs"'
     type: size
   - name: Heading line height
-    usage:
+    description:
     var: $theme-heading-line-height
     default: 2
     type: line-height
   - name: Small font size
-    description: Used for the smallest text on a site
+    description: Used for the smallest text on a site.
     var: $theme-small-font-size
     default: '"2xs"'
     type: size
   - name: Display font size
-    description: Used for the largest text on a site
+    description: Used for the largest text on a site.
     var: $theme-display-font-size
     default: '"3xl"'
     type: size
 
   - name: Narrow measure
     section: true
-    usage:
+    description:
     var: $theme-text-measure-narrow
     default: 1
     type: measure
   - name: Default measure
-    usage:
+    description:
     var: $theme-text-measure
     default: 4
     type: measure
   - name: Wide measure
-    usage:
+    description:
     var: $theme-text-measure-wide
     default: 6
     type: measure

@@ -26,7 +26,7 @@ The best direct metrics most accurately measure the user’s experience with the
 
 - [Custom timing events](#custom-timing-events)
 - [Speed index](#speed-index)
-- [Meaningful first paint](#meaningful-first-paint)
+- [First meaningful paint](#first-meaningful-paint)
 - [Time to interactive](#time-to-interactive)
 - [Input latency](#input-latency)
 
@@ -78,7 +78,7 @@ While synthetic monitoring is the best way to receive consistent performance mon
 
 ## Metrics and implementations
 
-The following gives a brief overview of a handful of metrics. If you're looking for guidance on which metrics are best for your team to start with, view the [how to guide on performance](../how#choosing-metrics-amp-tools).
+The following gives a brief overview of a handful of metrics. If you're looking for guidance on which metrics are best for your team to start with, view the [how to guide on performance](../how/).
 
 ### Onload
 
@@ -281,7 +281,7 @@ Render start measures how long it takes for blocking scripts, style sheets, and 
 
 #### Cons
 - Requires complex testing setups such as [WebPagetest]
-- Isn't as thorough as speed index and meaningful first paint
+- Isn't as thorough as speed index and first meaningful paint
 
 #### How to measure
 Render start can be measured along with speed index with [WebPagetest] or similar tools. For more information, see the [speed index](#speed-index) instructions.
@@ -313,7 +313,7 @@ First byte is time from which the first request went out from the browser to the
 - Easy to test, and available in most testing tools
 
 #### Cons
-- Doesn't tell the big picture, like speed index or meaningful first paint
+- Doesn't tell the big picture, like speed index or first meaningful paint
 - Doesn't get into details of backend response, so might be better served by more backend-related tools rather than browsers
 
 #### How to measure

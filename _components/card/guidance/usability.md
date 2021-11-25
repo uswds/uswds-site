@@ -1,0 +1,5 @@
+- **Make cards actionable.** Since cards are used as a summary of more detailed information, any individual card should link out to that information.
+- **Don't use the card component only for decoration.** Use the card component for cards, not for any type of content that's designed to have a border around it.
+- **Include non-redundant content.** Don't repeat images or content common to all or most cards in a collection. Repeated information (like using the same image for each card in a collection) makes it more difficult to distinguish cards from one another.
+- **Make sure images are properly sized.** Cards often change size depending on the device. Make sure you use an image that works well on any device at any size.
+- **Use simple styling.** Avoid distracting skeumorphism. Don't include any card styling that calls too much attention to the metaphor of a paper card, like folds, bent edges, or paper texture.

@@ -11,3 +11,4 @@ assets/
 contrast-report.json
 .jekyll-cache/
 vendor/
+pa11y-results.json

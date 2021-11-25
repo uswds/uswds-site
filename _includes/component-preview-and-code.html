@@ -1,0 +1,28 @@
+{% assign componentName = page.component.name | default: page.title | downcase %}
+{% assign componentKey = componentName | slugify %}
+{% assign settingsKey = componentKey %}
+{% assign _level = include.level | default: "h2" %}
+
+{% if page.parent %}
+  {% assign componentKey = page.parent | slugify %}
+  {% assign settingsKey = componentKey %}
+  {% if page.component.variant %}
+    {% assign componentKey = componentKey
+      | append: "--"
+      | append: page.component.variant %}
+  {% endif %}
+{% endif %}
+
+{% if page.component.image %}
+  {% include code/preview.html
+    demoLink=page.component.demo
+    component=componentKey
+    image=page.component.image
+    variants=page.component.variants
+    level=_level
+  %}
+{% else %}
+  {% include code/preview.html component=componentKey level=_level %}
+{% endif %}
+
+{% include code/accordion.html component=componentKey level=_level %}

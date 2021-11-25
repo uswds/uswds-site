@@ -1,7 +1,7 @@
 <section class="utilities-section margin-top-3" id="responsive-variants">
   <h3 class="utilities-section-title">Responsive variants</h3>
   <p class="utility-text">Add a responsive breakpoint prefix separated with a  <code>:</code> to target a utility at a responsive breakpoint and higher, following a mobile-first methodology.</p>
-  <aside class="example border-left-05 border-secondary-light padding-left-105 margin-top-2">
+  <div class="example border-left-05 border-secondary-light padding-left-105 margin-top-2 bg-white">
     <h4 class="font-lang-2xs margin-top-0 margin-bottom-05">Example</h4>
     <p class="font-mono-xs margin-top-0"><span class="text-red-warm-50v">.tablet:</span>padding-y-2</p>
     <h4 class="font-lang-2xs margin-top-2 margin-bottom-05">Output</h4>
@@ -13,7 +13,7 @@
   }
 }
 </pre>
-  </aside>
+</div>
   <p class="utility-text margin-top-4">Set which breakpoints are available to USWDS utilities with the <code>$theme_output_breakpoints</code> variable found in <code>_uswds-theme-utilities.scss</code>.</p>
 
   {% assign breakpoint = site.data.tokens.spacing.positive %}
@@ -26,25 +26,25 @@
   <table class="usa-table--borderless site-table-responsive site-table-simple">
     <thead>
       <tr>
-        <th scope="col">Breakpoint name</th>
-        <th scope="col" class="tablet:maxw-card-lg">Width</th>
-        <th scope="col" class="tablet:maxw-card-lg">Default</th>
+        <th scope="col" class="display-inline-flex">Breakpoint name</th>
+        <th scope="col" class="tablet:maxw-card-lg display-inline-flex">Width</th>
+        <th scope="col" class="tablet:maxw-card-lg display-inline-flex">Default</th>
       </tr>
     </thead>
     <tbody class="font-mono-2xs">
       {% for item in all-breakpoints %}
         <tr>
-          <th scope="row" data-title="Breakpoint" class="tablet:text-no-wrap">
+          <th scope="row" data-title="Breakpoint" class="tablet:text-no-wrap display-inline-flex">
             <span class="text-normal">
               {{ item.token }}
             </span>
           </th>
-          <td data-title="Width" class="tablet:maxw-card-lg">
+          <td data-title="Width" class="tablet:maxw-card-lg display-inline-flex">
             <span>
               {{ item.value }}
             </span>
           </td>
-          <td data-title="Default" class="tablet:maxw-card-lg">
+          <td data-title="Default" class="tablet:maxw-card-lg display-inline-flex">
             <span>
               {% assign output = false %}
               {% for width in output-breakpoints %}
@@ -68,19 +68,19 @@
   <table class="usa-table--borderless site-table-responsive site-table-simple">
     <thead>
       <tr>
-        <th scope="col">Utility variable</th>
-        <th scope="col" class="tablet:maxw-card-lg">Default</th>
+        <th scope="col" class="display-inline-flex">Utility variable</th>
+        <th scope="col" class="tablet:maxw-card-lg display-inline-flex">Default</th>
       </tr>
     </thead>
     <tbody class="font-mono-2xs">
       {% for utility in page.utilities %}
         <tr>
-          <th scope="row" data-title="Utility variable" class="tablet:text-no-wrap">
+          <th scope="row" data-title="Utility variable" class="tablet:text-no-wrap display-inline-flex">
             <span class="text-normal">
               ${{ utility.var }}-settings.responsive
             </span>
           </th>
-          <td data-title="Default" class="tablet:maxw-card-lg">
+          <td data-title="Default" class="tablet:maxw-card-lg display-inline-flex">
             <span>
               {% if utility.responsive %}<span class="output-true">true</span>{% else %}false{% endif %}
             </span>

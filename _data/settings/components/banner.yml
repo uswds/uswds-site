@@ -1,12 +1,12 @@
 name: Banner
 contents:
   - name: Background color
-    description: Background color of the banner and its content
+    description: Background color of the banner and its content.
     var: $theme-banner-background-color
     default: '"base-lightest"'
     type: family
   - name: Font family
-    description: The font family of the banner
+    description: The font family of the banner.
     var: $theme-banner-font-family
     default: '"ui"'
     type: family
@@ -16,7 +16,7 @@ contents:
     default: default
     type: color
   - name: Maximum width
-    description: Maximum width of the banner content
+    description: Maximum width of the banner content.
     var: $theme-banner-max-width
     default: '"desktop"'
     type: units

@@ -1,0 +1,3 @@
+- **Confusion with buttons.** Avoid tags if they might appear in the same area of the page as buttons.
+- **New or updated content.** To call attention to new or updated content, consider changing the background color of the object itself or experiment with changing the font weight.
+- **When users already expect content to be updated frequently.** For example, on a site dedicated to breaking news. In this case placing the new content at the top may be enough.

@@ -1,0 +1,5 @@
+- **Less is more.** Make your explanations concise. Users sign in faster when less text surrounds the form.
+- **Allow email addresses to sign in.** People have an easier time remembering their email address than they do a unique username.
+- **Consider keeping users signed in.** If you must include a sign-in form, consider allowing users to stay logged in (“Remember me”) on trusted computers so they can avoid this barrier in the future.
+- **Make it easy to retrieve forgotten sign-in info.** Most authentication failures occur because a user has forgotten their username or password. This is especially common when a long time passes between visits, as is the case with most federal websites.
+- **Toggle password masking.** Password masking (replacing what the user types with a generic symbol) makes it more likely that users will make mistakes when trying to sign in, and doesn't offer much in the way of additional security. Allow users to unmask the password field so they can see what they type. This is especially useful on mobile devices, when users are more likely to mistype.

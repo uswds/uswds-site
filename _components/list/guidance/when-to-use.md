@@ -1,0 +1,2 @@
+- **Ordered list:** Use an ordered list when you need to display text in some ranking, hierarchy, or series of steps.
+- **Unordered list:** Use unordered lists to display text in no specific order.

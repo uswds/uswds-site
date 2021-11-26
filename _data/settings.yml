@@ -59,7 +59,7 @@
 
     - name: Focus
       subsection: color
-      usage:
+      usage: The default color of the focus outline.
       var: $theme-focus-color
       default: "'blue-40v'"
       kind: color
@@ -74,7 +74,7 @@
 
     - name: Focus
       subsection: style
-      usage:
+      usage: The style of the focus outline.
       var: $theme-focus-style
       default: solid
       kind: outline-style
@@ -566,19 +566,19 @@
   contents:
     - name: Accordion
       subsection: border width
-      usage:
+      usage: The width of the accordion content border.
       var: $theme-accordion-border-width
       default: 0.5
       kind: units
     - name: Accordion
       subsection: border color
-      usage:
+      usage: The color of the accordion border.
       var: $theme-accordion-border-color
       default: "'base-lightest'"
       kind: color
     - name: Accordion
       subsection: font family
-      usage:
+      usage: The font family of the accordion.
       var: $theme-accordion-font-family
       default: "'body'"
       kind: family
@@ -592,7 +592,7 @@
       kind: units
     - name: Alert
       subsection: Font family
-      usage:
+      usage: Font family of the alert.
       var: $theme-alert-font-family
       default: "'ui'"
       kind: family
@@ -765,6 +765,44 @@
       var: $theme-card-padding-y
       default: 2
       kind: units
+
+    - name: Modal
+      section: true
+      subsection: Modal border Radius
+      usage: Size of border radius.
+      var: $theme-modal-border-radius
+      default: "'lg'"
+      kind: units
+    - name: Modal
+      subsection: Modal box shadow
+      usage: Size of box shadow.
+      var: $theme-modal-box-shadow
+      default: "'lg'"
+      kind: units
+    - name: Modal
+      subsection: Modal max width
+      usage: Maximum width of default modal window.
+      var: $theme-modal-default-max-width
+      default: "'lg'"
+      kind: units
+    - name: Modal
+      subsection: Modal max width (lg)
+      usage: Maximum width of large modal window.
+      var: $theme-modal-lg-max-width
+      default: "800px"
+      kind: px
+    - name: Modal
+      subsection: Modal max width (lg inner content)
+      usage: Maximum width of content area within large modal window.
+      var: $theme-modal-lg-content-max-width
+      default: "630px"
+      kind: px
+    - name: Modal
+      subsection: Modal z-index
+      usage: Z-index for modal window when opened.
+      var: $theme-modal-z-index
+      default: 500
+      kind: z-index
 
     - name: Footer
       section: true
@@ -951,12 +989,6 @@
       default: "'desktop'"
       kind: units
 
-    - name: Site max width
-      section: true
-      usage: Used to set a consistent `max-width` across components.
-      var: $theme-site-max-width
-      default: "'desktop'"
-      kind: units
     - name: Site outer margins breakpoint
       usage: At what breakpoint should the site's outer margin change.
       var: $theme-site-margins-breakpoint

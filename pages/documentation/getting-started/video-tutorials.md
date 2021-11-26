@@ -8,10 +8,10 @@ lead: Watch these videos to familiarize yourself with key concepts from USWDS an
 
 {% for video in site.data.videos %}
 
-### {{ video.title }}
+## {{ video.title }}
 
 <div class="usa-embed-container">
-  <iframe src="https://www.youtube.com/embed/{{ video.id }}" frameborder="0" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/{{ video.id }}" title="{{ video.title }}" frameborder="0" allowfullscreen></iframe>
 </div>
 
 {% endfor %}

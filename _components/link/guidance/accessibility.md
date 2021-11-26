@@ -1,0 +1,2 @@
+- **Allow keyboard navigation of links.** Users should be able to navigate between links by using the “Tab” key. They should be able to activate a link by pressing the “Enter” key.
+- **Link hover state should be visible on focus.** Users should be able to activate hover and focus states with both a mouse and a keyboard.

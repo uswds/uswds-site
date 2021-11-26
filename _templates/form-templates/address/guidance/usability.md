@@ -1,0 +1,3 @@
+- <span class="usa-tag">Deprecated USWDS 2.10.2</span> <s><strong>Don’t call out required fields.</strong> Call out optional fields instead. Users can infer that non-optional fields are required.</s>
+- **Avoid dropdowns.** If possible, let users type their state’s abbreviation when they reach the state drop-down menu.
+- **Support both five- and nine-digit ZIP codes.** Some addresses require a nine-digit ZIP code. If you would like to use an input mask, it should be “#####-####” so that the text is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code.

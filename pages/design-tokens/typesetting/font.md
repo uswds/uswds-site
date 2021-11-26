@@ -19,7 +19,7 @@ subnav:
 - text: Role-based family tokens
   href: '#role-based-family-tokens'
 - text: Using font tokens
-  href: '#using-typescale-in-utilities-settings-and-component-sass'
+  href: '#using-font-tokens'
 - text: Settings
   href: '#settings'
 - text: Utilities

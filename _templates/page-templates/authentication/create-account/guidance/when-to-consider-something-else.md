@@ -1,0 +1,1 @@
+- **Your agency uses a third-party authentication system.** If you’re leveraging a shared service, follow the user experience guidelines from that service. For example, login.gov recommends placing a “sign in” link in the header of your website that takes users through the entire “sign in” or “create an account” experience on the login.gov site.

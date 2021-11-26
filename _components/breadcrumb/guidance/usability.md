@@ -1,0 +1,5 @@
+- **Consider alternatives to wrapping.** In general, rely on truncating the title of the current page over wrapping breadcrumb text. But usability comes first. Consider alternative approaches if the title of the current page is completely truncated. For example, a mobile-friendly breadcrumb may show only a page's direct parent. Sites with very long breadcrumb trails might ultimately need to wrap breadcrumbs, or consider flattening the information architecture of the site.
+- **Use complete page titles.** Use the same wording in breadcrumb text as in the page title.
+- **Start with the word “Home”.** Rather than using a house icon, spell out the word “Home” as the first link in the breadcrumbs.
+- **Consider size of tap targets on small widths.** Although breadcrumbs are frequently displayed using smaller text, make sure the text is not too small to select at small widths.
+- **Optimize for search engines.** To be eligible for rich results display in search engine results, mark up your site’s breadcrumbs using JSON-LD (recommended) or RDFa.

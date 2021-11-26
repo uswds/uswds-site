@@ -1,0 +1,1 @@
+- We limit the characters in the ZIP code field to numbers and the hyphen (-), following the pattern `pattern="[\d]{5}(-[\d]{4})?"`. If you need your ZIP code field to allow non-U.S. postal codes that use a different pattern or require different characters, remove or edit the `pattern` property.

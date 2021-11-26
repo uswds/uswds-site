@@ -1,0 +1,1 @@
+- Set the `min` and `max` attribute of the `input` element to correspond to the instructions or labels that accompany the slider.

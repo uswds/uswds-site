@@ -1,0 +1,1 @@
+- **Scheduling.** Use the time picker to schedule a time from common, consistent increments, such as planning a meeting time in 30-minute blocks.

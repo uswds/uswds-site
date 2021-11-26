@@ -1,0 +1,2 @@
+- **When the range is more important than precision.** For instance, it could be more important for a target price selector to communicate where the target price falls within a certain range than the precise dollar amount selected.
+- **When a relative value is more important than an exact value.** For instance, a volume slider is typically more focussed on the relative loudness of the output rather than the specific decibel level.

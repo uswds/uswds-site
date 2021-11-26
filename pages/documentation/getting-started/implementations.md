@@ -17,7 +17,7 @@ subnav:
   text: name
 ---
 
-If you have a new implementation to add to this list, please [open an issue] or [send us an email] with the following information:
+If you have a new implementation to add to this list, please [open an issue] on GitHub or [send us an email] with the following information:
 
 * The implementation’s target language and/or framework
 * The author’s name (or alias) and contact URL or email address
@@ -40,6 +40,7 @@ If you have a new implementation to add to this list, please [open an issue] or 
       <tr>
         <th scope="col">Name</th>
         <th scope="col">Distribution</th>
+        <th scope="col">Status</th>
         <th scope="col">Author or maintainer</th>
         <th scope="col">Notes</th>
       </tr>
@@ -50,6 +51,13 @@ If you have a new implementation to add to this list, please [open an issue] or 
         <a href="{{ impl.url }}">{{ impl.name }}</a>
       </th>
       <td data-title="Distribution">{{ impl.distribution }}</td>
+      <td data-title="Status">
+        {% if impl.status %}
+          <div class="usa-tag label-{{ impl.status | strip }} position-static margin-x-0">
+            {{ impl.status }}
+          </div>
+        {% endif %}
+      </td>
       <td data-title="Author">
         {% if impl.author.url %}
         <a href="{{ impl.author.url }}">{{ impl.author.name }}</a>

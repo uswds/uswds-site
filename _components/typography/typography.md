@@ -1,4 +1,8 @@
 ---
+component:
+  status: ready
+  package: usa-typography
+  dependencies:
 permalink: /components/typography/
 redirect_from:
 - /typography/
@@ -7,16 +11,18 @@ title: Typography
 category: Components
 lead: "Government websites need clear and consistent headings, highly legible body paragraphs, clear labels, and easy-to-use input fields. Our default typefaces are designed for legibility and can adapt to a variety of visual tones."
 subnav:
-- text: Typesetting with USWDS
-  href: '#typesetting-with-uswds'
-- text: Included typefaces
-  href: '#included-typefaces'
-- text: Prose
-  href: '#prose'
-- text: Links
-  href: '#links'
-- text: Lists
-  href: '#lists'
+  - text: Typesetting with USWDS
+    href: '#typesetting-with-uswds'
+  - text: Included typefaces
+    href: '#included-typefaces'
+tags:
+  - type
+  - typesetting
+  - source sans pro
+  - public sans
+  - roboto mono
+  - leading
+  - measure
 ---
 
 <h2 id="typesetting-with-uswds">Typesetting with USWDS</h2>
@@ -132,7 +138,7 @@ Letterspacing is the spacing between individual letterforms in a block of text. 
 <h3 class="usa-heading-alt">Public Sans</h3>
 <div class="grid-row grid-gap">
   <div class="tablet:grid-col">
-    <p><a href="https://github.com/uswds/public-sans">Public Sans</a> is an open-source sans serif typeface designed and maintained by USWDS and derived from <a href="https://github.com/impallari/Libre-Franklin">Libre Franklin</a>. It is a strong, neutral, principles-driven typeface for text or display based on a traditional American form. (The Franklin form is most noticeable in the two-story design of the “g” character.) It uses metrics similar to common system fonts for smoother progressive enhancement. It has a plain, straightforward style, appropriate for interfaces and running text. Its large x-height makes it legible at small sizes. It features a broad range of weights — and its heavier weights have tighter letterspacing than its lighter weights, meaning running text (which tends to be relatively small) is spaced more generously and headings (which tend to be relatively large) are more compact. It has tabular numerals for aligning numbers in tables.</p>
+    <p><a href="https://github.com/uswds/public-sans">Public Sans</a> (available on GitHub) is an open-source sans serif typeface designed and maintained by USWDS and derived from <a href="https://github.com/impallari/Libre-Franklin">Libre Franklin</a> (also available on GitHub). It is a strong, neutral, principles-driven typeface for text or display based on a traditional American form. (The Franklin form is most noticeable in the two-story design of the “g” character.) It uses metrics similar to common system fonts for smoother progressive enhancement. It has a plain, straightforward style, appropriate for interfaces and running text. Its large x-height makes it legible at small sizes. It features a broad range of weights — and its heavier weights have tighter letterspacing than its lighter weights, meaning running text (which tends to be relatively small) is spaced more generously and headings (which tend to be relatively large) are more compact. It has tabular numerals for aligning numbers in tables.</p>
   </div>
   <div class="typography-lang-intro tablet:grid-col font-alt-md">
     <span class="text-huge">Aa</span>
@@ -160,5 +166,3 @@ Letterspacing is the spacing between individual letterforms in a block of text. 
     </div>
   </div>
 </div>
-
-{% include child-sections.html parent='typography' %}

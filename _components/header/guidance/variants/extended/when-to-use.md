@@ -1,0 +1,2 @@
+- **Lots of sections.** Use the extended header if you have too many sections in your horizontal navigation to fit comfortably in the basic header format.
+- **Secondary links or specific calls to action.** Use the extended header if you’d like to include secondary links or specific calls to action in addition to the main content navigation — for example `Log in` and `Sign up` links.

@@ -18,24 +18,6 @@ subnav:
   href: '#variables'
 - text: Migration by component
   href: '#migration-by-component'
-- text: 2.0.0 release notes
-  href: '#version-200'
-- text: Beta 7 release notes
-  href: '#version-200-beta-7-release-candidate'
-- text: Beta 6 release notes
-  href: '#version-200-beta-6'
-- text: Beta 5 release notes
-  href: '#version-200-beta-5'
-- text: Beta 4 release notes
-  href: '#version-200-beta-4'
-- text: Beta 3 release notes
-  href: '#version-200-beta-3'
-- text: Beta 2 release notes
-  href: '#version-200-beta-2'
-- text: Beta 1 release notes
-  href: '#version-200-beta'
-- text: Alpha release notes
-  href: '#version-200-alpha'
 ---
 {:.site-text-intro}
 USWDS 2 is a major rewrite of the entire codebase and migration can be complicated. We’ve outlined the high-level changes any project will need to implement, followed by more specific component changes and complete release notes from each related release.
@@ -62,7 +44,7 @@ The [design tokens]({{ site.baseurl }}/design-tokens/) section of the documentat
 Settings variables are assigned design tokens.
 
 ```sass
-$theme-site-max-width:              'desktop';
+$theme-grid-container-max-width:    'desktop';
 $theme-site-margins-breakpoint:     'desktop';
 $theme-site-margins-width:          4;
 $theme-site-margins-mobile-width:   2;
@@ -75,7 +57,7 @@ We use tokens (or tokens expressed as variables) in mixins and functions.
 ```sass
 .usa-example {
   @include u-padding-x($theme-site-margins-mobile-width);
-  max-width: units($theme-site-max-width);
+  max-width: units($theme-grid-container-max-width);
 
   @include at-media($theme-site-margins-breakpoint) {
     @include u-padding-x($theme-site-margins-width);
@@ -226,17 +208,3 @@ Negative values should use the same migration pattern as positive values. See th
 
 ### Skipnav
 {% include migration-table.html class='skipnav' %}
-
-{% for release in site.data.releases %}
-{% if release.target_commitish == "release-2.0" or release.name == "2.0.0-beta" or release.name == "2.0.0" %}
-
-## Version {{ release.name }}
-
-<p class="site-subheading">{{ release.published_at | date: "%B %d, %Y" }}</p>
-
-{% assign id_replace = 'id="v%-' | replace: '%', release.name %}
-{{ release.body | markdownify | replace: 'id="', id_replace | remove_relative_links }}
-
-<hr>
-{% endif %}
-{% endfor %}

@@ -1,0 +1,1 @@
+- **You need separate data elements.** When you need to be able to parse out the specific parts of a mailing address.

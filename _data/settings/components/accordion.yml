@@ -1,17 +1,17 @@
 name: Accordion
 contents:
   - name: Border width
-    usage:
+    description: Border width of the bordered accordion.
     var: $theme-accordion-border-width
     default: 0.5
     type: units
   - name: Border color
-    usage:
+    description: Border color of the bordered accordion.
     var: $theme-accordion-border-color
     default: '"base-lightest"'
     type: color
   - name: Font family
-    usage:
+    description: Font family of the accordion.
     var: $theme-accordion-font-family
     default: '"body"'
     type: family

@@ -6,39 +6,40 @@ orbs:
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.6-node-browsers
+      - image: circleci/ruby:2.7-node-browsers
     steps:
       - checkout
       - restore_cache:
           keys:
-            - v1-gem-cache-{{ checksum "Gemfile.lock" }}
-            - v1-gem-cache
+            - npm-cache-{{ checksum "package-lock.json" }}
+      - restore_cache:
+          keys:
+            - gem-cache-{{ checksum "Gemfile.lock" }}
+            - gem-cache
       - run:
           name: Install ruby dependencies
           command: |
             gem update --system
             gem install bundler
-            bundle install --jobs=4 --retry=3 --path vendor/bundle
-      - save_cache:
-          key: v1-gem-cache-{{ checksum "Gemfile.lock" }}
-          paths:
-            - vendor/bundle
-      - restore_cache:
-          keys:
-            - v2-npm-cache-{{ .Branch }}-{{ .Revision }}
-      - run:
-          name: Install node dependencies
-          command: npm install
-      - save_cache:
-          key: v2-npm-cache-{{ .Branch }}-{{ .Revision }}
-          paths:
-            - node_modules
-      - run:
-          name: Build site files
-          command: npm run build
+            bundle config set --local path 'vendor/bundle'
+            bundle install --jobs=4 --retry=3
       - run:
           name: Install scss_lint
           command: gem install scss_lint
+      - save_cache:
+          key: gem-cache-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+      - run:
+          name: Install node dependencies
+          command: npm install
+      - run:
+          name: Build USWDS if needed
+          command: npm run build-uswds
+      - save_cache:
+          key: npm-cache-{{ checksum "package-lock.json" }}
+          paths:
+            - node_modules
       - snyk/scan:
           organization: uswds
       - run:

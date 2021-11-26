@@ -14,18 +14,18 @@
 <table class="usa-table--borderless site-table-responsive site-table-simple">
   <thead>
     <tr>
-      <th scope="col" class="{{ col1Width }}">{{ col1Title }}</th>
-      <th scope="col" class="{{ col2Width }}">{{ col2Title }}</th>
-      <th scope="col" class="{{ col3Width }}">{{ col3Title }}</th>
-      <th scope="col" class="{{ col4Width }}">{{ col4Title }}</th>
-      <th scope="col" class="{{ col5Width }}">{{ col5Title }}</th>
+      <th scope="col" class="{{ col1Width }} display-inline-flex flex-align-start">{{ col1Title }}</th>
+      <th scope="col" class="{{ col2Width }} display-inline-flex flex-align-start">{{ col2Title }}</th>
+      <th scope="col" class="{{ col3Width }} display-inline-flex flex-align-start">{{ col3Title }}</th>
+      <th scope="col" class="{{ col4Width }} display-inline-flex flex-align-start">{{ col4Title }}</th>
+      <th scope="col" class="{{ col5Width }} display-inline-flex flex-align-start">{{ col5Title }}</th>
     </tr>
   </thead>
   <tbody class="font-mono-2xs">
     {% for setting in settings %}
     <tr class="{% if setting.section %}tablet:border-top-2px tablet:margin-top-2{% endif %}">
-      <td scope="row" data-title="{{ col1Title }}" class="{{ col1Width }}">
-        <span class="text-bold font-lang-3xs">
+      <td data-title="{{ col1Title }}" class="{{ col1Width }} display-inline-flex flex-align-start flex-wrap">
+        <span class="text-bold font-lang-3xs margin-right-1 width-full">
           {{ setting.name }}
         </span>
         {% if setting.subsection %}
@@ -34,12 +34,12 @@
           </span>
         {% endif %}
       </td>
-      <td scope="row" data-title="{{ col2Title }}" class="{{ col2Width }}">
-        <span class="">
-          {{ setting.var }}
-        </span>
+      <td data-title="{{ col2Title }}" class="{{ col2Width }} display-inline-flex flex-align-start">
+        {% if setting.var %}
+          <code>{{ setting.var }}</code>
+        {% endif %}
       </td>
-      <td scope="row" data-title="{{ col3Title }}" class="{{ col3Width }}">
+      <td data-title="{{ col3Title }}" class="{{ col3Width }} display-inline-flex flex-align-start">
         {% assign defaultFormat = false %}
         {% if setting.default == 'true' %}
           {% assign defaultFormat = 'output-true' %}
@@ -50,12 +50,12 @@
           {{ setting.default }}
         </span>
       </td>
-      <td scope="row" data-title="{{ col4Title }}" class="{{ col4Width }}">
+      <td data-title="{{ col4Title }}" class="{{ col4Width }} display-inline-flex flex-align-start">
         <span>
           {% include get-token-url.html token=setting.type %}
         </span>
       </td>
-      <td scope="row" data-title="{{ col5Title }}" class="{{ col5Width }}">
+      <td data-title="{{ col5Title }}" class="{{ col5Width }} display-inline-flex flex-align-start">
         <span class="font-lang-3xs">
           {{ setting.description | markdownify }}
         </span>
@@ -64,17 +64,17 @@
       {% if setting.map %}
         {% for entry in setting.map %}
           <tr class="border-base-lighter">
-            <td scope="row" data-title="{{ col1Title }}" class="{{ col1Width }}">
+            <td data-title="{{ col1Title }}" class="{{ col1Width }} display-inline-flex flex-align-start">
               <span class="tablet:display-none font-lang-3xs">
                 {{ setting.name }}
               </span>
             </td>
-            <td scope="row" data-title="{{ col2Title }}" class="{{ col2Width }}">
+            <td data-title="{{ col2Title }}" class="{{ col2Width }} display-inline-flex flex-align-start">
               <span class="text-primary-vivid">
                 {{ entry.key }}
               </span>
             </td>
-            <td scope="row" data-title="{{ col3Title }}" class="{{ col3Width }}">
+            <td data-title="{{ col3Title }}" class="{{ col3Width }} display-inline-flex flex-align-start">
               {% assign defaultFormat = false %}
               {% if entry.value == 'true' %}
                 {% assign defaultFormat = 'output-true' %}
@@ -85,12 +85,12 @@
                 {{ entry.value }}
               </span>
             </td>
-            <td scope="row" data-title="{{ col4Title }}" class="{{ col4Width }}">
+            <td data-title="{{ col4Title }}" class="{{ col4Width }} display-inline-flex flex-align-start">
               <span>
                 {% include get-token-url.html token=entry.kind %}
               </span>
             </td>
-            <td scope="row" data-title="{{ col5Title }}" class="{{ col5Width }}">
+            <td data-title="{{ col5Title }}" class="{{ col5Width }} display-inline-flex flex-align-start">
               <span class="font-lang-3xs">
                 {{ entry.usage | markdownify }}
               </span>

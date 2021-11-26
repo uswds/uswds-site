@@ -1,0 +1,6 @@
+- [Extended header]({{ site.baseurl }}/components/header)
+- Hero
+- Graphic list
+- [Button]({{ site.baseurl }}/components/button)
+- [Grid]({{ site.baseurl }}/components/grid)
+- [Medium footer]({{ site.baseurl }}/components/footer)

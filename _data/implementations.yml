@@ -1,6 +1,7 @@
 - name: django-designstandards
   distribution: Django
   url: https://github.com/department-of-veterans-affairs/django-designstandards
+  status: stale
   author:
     name: Paul Tagliamonte (USDS)
     url: https://github.com/paultag
@@ -9,11 +10,20 @@
 - name: django-uswds-forms
   distribution: Django
   url: http://django-uswds-forms.readthedocs.io/en/latest/
+  status: archived
   author:
     name: 18F
     url: https://github.com/18F
   notes: |
     This package provides Django Forms integration with USWDS.
+
+- name: USWDS Drupal base theme
+  distribution: Drupal
+  url: https://www.drupal.org/project/uswds_base
+  author:
+    name: Michael Feranda
+    url: https://www.drupal.org/u/mferanda
+  notes: "A primary difference between this effort (`uswds_base`) and the other USWDS theme (`uswds`) is that `uswds-base` uses a minimal approach. No extra JS/CSS is added in the primary theme and Classy is not used as a base."
 
 - name: USWDS Drupal theme
   distribution: Drupal
@@ -22,6 +32,23 @@
     name: Brock Fanning
     url: https://www.drupal.org/u/brockfanning
   notes: "This base theme focuses on tweaking Drupal's markup so that it will work with the USWDS library. Some CSS is added to deal with unavoidable Drupal quirks, but only as a last resort."
+
+- name: USWDS CKEditor Integration
+  distribution: Drupal
+  url: https://www.drupal.org/project/uswds_ckeditor_integration
+  author:
+    name: Stephen Mustgrave
+    url: https://www.drupal.org/u/smustgrave
+  notes: "Add USWDS tables and accordions within CKEditor."
+
+- name: USWDS Paragraph Components
+  distribution: Drupal
+  url: https://www.drupal.org/project/uswds_paragraph_components
+  author:
+    name: Stephen Mustgrave
+    url: https://www.drupal.org/u/smustgrave
+  notes: "USWDS components as paragraph bundles. Includes accordion, card, alert, process list, summary box, step indicator, and layout grid options."
+
 
 - name: uswds-jekyll
   distribution: Jekyll
@@ -34,6 +61,7 @@
 - name: uswds-simple-sass
   distribution: npm and gulp
   url: https://github.com/18F/uswds-simple-sass
+  status: archived
   author:
     name: 18F
     url: https://github.com/18F
@@ -45,6 +73,7 @@
 - name: 18f-contrib-web-design-standards
   distribution: npm and node-sass
   url: https://github.com/openbrian/18f-contrib-web-design-standards
+  status: stale
   author:
     name: Brian DeRocher
     url: https://github.com/openbrian
@@ -53,6 +82,7 @@
 - name: NuGet web-design-standards
   distribution: NuGet
   url: https://www.nuget.org/packages/web-design-standards/
+  status: stale
   author:
     name: Abdul Ahad Monty
     url: https://www.nuget.org/profiles/montyaahad
@@ -61,6 +91,7 @@
 - name: uswds-rails
   distribution: Rails gem
   url: https://github.com/18F/uswds-rails-gem
+  status: archived
   author:
     name: 18F
     url: https://github.com/18F
@@ -75,14 +106,6 @@
     url: https://github.com/trussworks
   version: 1.6.1
   notes: "A front-end component library aimed at implementing USWDS design patterns in React."
-
-- name: us_web_design_standards gem
-  distribution: Ruby gem
-  url: https://github.com/18F/us_web_design_standards_gem
-  author:
-    name: 18F
-    url: https://github.com/18F
-  notes: "**This gem has been deprecated in favor of the [Rails gem](#rails-gem).** Please [let us know](https://github.com/18F/us_web_design_standards_gem/issues/new) if you'd like to adopt it."
 
 - name: uswds-sf-lightning-community
   distribution: Salesforce Lightning
@@ -111,6 +134,7 @@
 - name: Benjamin
   distribution: WordPress
   url: https://wordpress.org/themes/benjamin/
+  status: stale
   author:
     name: Kyle Jennings
     url: https://github.com/kyle-jennings
@@ -119,6 +143,7 @@
 - name: The Standards
   distribution: WordPress
   url: https://github.com/LavertyCreative/The-Standards
+  status: stale
   author:
     name: Kyle Laverty
     url: https://github.com/lavekyl

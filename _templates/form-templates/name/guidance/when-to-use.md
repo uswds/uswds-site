@@ -1,0 +1,1 @@
+- **You need separate data elements.** When you need to collect users’ full names and store the parts separately in a database.

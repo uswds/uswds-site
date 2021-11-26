@@ -98,4 +98,4 @@ As of USWDS 2.8.0, we’re encouraging teams to update their banners with the fo
 ## Next steps
 - [Update your banner copy as soon as possible](https://designsystem.digital.gov/components/banner)
 - [Join the USWDS community](https://digital.gov/communities/uswds/) to contribute to design and development
-- [Submit an issue](https://github.com/uswds/uswds/issues/new) if you find a bug or have an idea for an improvement
+- [Submit an issue](https://github.com/uswds/uswds/issues/new) via GitHub if you find a bug or have an idea for an improvement

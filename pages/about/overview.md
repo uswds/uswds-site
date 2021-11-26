@@ -13,7 +13,7 @@ Empowered agency digital teams share solutions and use effective human-centered 
 
 {:.margin-top-4}
 ## Our mission
-USWDS is a design system for the federal government. We make it easier to build accessible, mobile-friendly government websites for the American public.
+USWDS is a design system for the federal government. We make it easier to build accessible, mobile-friendly government websites.
 
 {:.margin-top-4}
 ## History

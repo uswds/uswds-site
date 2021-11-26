@@ -19,9 +19,8 @@ Conversion is the rate at which customers of a website product take a desired ac
 
 Performance has been known to be an influencing factor when it comes to the conversion rate for a site. Regardless of the user interface and its purpose, multiple studies have shown that improving performance consistently improves conversion rates over a wide range of applications. According to [surveys done by Akamai](https://www.akamai.com/us/en/about/news/press/2009-press/akamai-reveals-2-seconds-as-the-new-threshold-of-acceptability-for-ecommerce-web-page-response-times.jsp), nearly half of web users expect a site to load in two seconds or less, and they tend to abandon a site that isn’t loaded within three seconds. This means that even a relatively fast site may be losing conversion due to speed. There are real-world examples of how performance can affect conversion, such as:
 
-- [Google found out that slowing search results by just 4/10ths of a second would reduce the number of searches by 8,000,000 per day](http://www.getelastic.com/site-speed-infographic/).
-- [At Walmart, for every one second of improvement they experienced up to a 2% increase in conversions](http://www.webperformancetoday.com/2012/02/28/4-awesome-slides-showing-how-page-speed-correlates-to-business-metrics-at-walmart-com/).
-- [Fastcompany.com notes, "Amazon's calculated that a page load slowdown of just one second could cost it $1.6 billion in sales each year."](https://www.fastcompany.com/1825005/how-one-second-could-cost-amazon-16-billion-sales).
+- [Getelastic.com notes, Google found out that slowing search results by just 4/10ths of a second would reduce the number of searches by 8,000,000 per day](http://www.getelastic.com/site-speed-infographic/).
+- [Amazon calculated that a page load slowdown of just one second could cost it $1.6 billion in sales each year](https://www.fastcompany.com/1825005/how-one-second-could-cost-amazon-16-billion-sales).
 
 How fast a site loads is often the first indication of what a web experience will be for a user, and a slow loading site can cause a user to quickly lose trust and patience with a website.
 
@@ -38,7 +37,7 @@ The prevalence of mobile usage of websites also significantly contributes to a s
 
 ## Perception of performance
 
-Studies have shown that users perceive differences in speed of a user interface (UI) [when it changes by a ratio of 20%](https://www.sitepoint.com/the-perception-of-performance/). To put it more simply, if a website wants to create a difference in speed that is noticeable to its users, it should perform at least 20% faster than it previously did. Changes less than 20% are usually not perceptible. This means that 20% is (somewhat of) a “golden number” when working on performance.
+Sitepoint.com highlihgts the "20% rule," a rule based on studies that suggest users perceive differences in speed of a user interface (UI)[when it changes by a ratio of 20%](https://www.sitepoint.com/the-perception-of-performance/). To put it more simply, if a website wants to create a difference in speed that is noticeable to its users, it should perform at least 20% faster than it previously did. Changes less than 20% are usually not perceptible. This means that 20% is (somewhat of) a “golden number” when working on performance.
 
 ## Measurement of performance
 

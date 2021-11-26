@@ -1,0 +1,3 @@
+- **Show the current page.** Indicate where a user is within the navigational hierarchy. Use the “active” state to show users which page they have navigated to.
+- **Keep the navigation links short.** They can be shorter derivatives of page titles themselves.
+- **Always test your navigation.** If the navigation hierarchy is too long, users may miss items at the bottom. If it’s too deep, users may miss items that require too many clicks. Usability test to find the right balance between breadth and depth.

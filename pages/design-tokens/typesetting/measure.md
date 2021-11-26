@@ -7,9 +7,9 @@ lead: USWDS has 6 measure tokens to control the reading length of lines in a blo
 type: docs
 subnav:
 - text: Measure tokens
-  href: '#line-height-tokens'
+  href: '#measure-tokens'
 - text: Using measure tokens
-  href: '#using-line-height-tokens'
+  href: '#using-measure-tokens'
 ---
 
 {% assign tokens = site.data.tokens.typesetting %}

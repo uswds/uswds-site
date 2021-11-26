@@ -1,0 +1,1 @@
+- **Write for your audience.** The summary box is meant to make it easier to understand page content. Don't leave readers without access to critical information. Check your writing level to ensure it’s easy to read. Search for "readability level tool" to find tools that assess reading level.

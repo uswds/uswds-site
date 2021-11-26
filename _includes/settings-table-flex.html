@@ -1,36 +1,31 @@
-{% assign content = include.content %}
-
-{% if content != nil  %}
-  {% assign schema = content[0] %}
-  {% assign cols = include.cols | remove: " " | split: "," %}
+{%- if include.content != nil  %}
+  {%- assign tableSchema = include.content[0] -%}
+  {%- assign cols = include.cols | remove: " " | split: "," %}
 
   <table class="usa-table--borderless site-table-responsive site-table-simple margin-top-105">
     <thead>
       <tr>
-        {% for item in schema %}
-        {% assign colKey = forloop.index | minus: 1 %}
-        <th scope="col" class="{{ cols[colKey] }}">{{ item[0] | capitalize }}</th>
-        {% endfor %}
+        {%- for tableItem in tableSchema %}
+        {%- assign colKey = forloop.index | minus: 1 %}
+        <th scope="col" class="{{ cols[colKey] }} display-inline-flex">{{ tableItem[0] | capitalize }}</th>
+        {%- endfor %}
       </tr>
     </thead>
-    <tbody class="font-mono-2xs">
-      {% for row in content %}
+    <tbody class="font-lang-3xs">
+      {%- for row in include.content %}
       <tr>
-        {% for column in row %}
-        {% assign colKey = forloop.index | minus: 1 %}
-        <td class="{{ cols[colKey] }}"
-          scope="row"
+        {%- for column in row %}
+        {%- assign colKey = forloop.index | minus: 1 %}
+        <td class="{{ cols[colKey] }} display-inline-flex flex-align-start"
           data-title="{{ column[0] | capitalize }}"
           >
-          <span class="font-lang-3xs">
-            {{ column[1] | markdownify }}
-          </span>
+          {{ column[1] | markdownify }}
         </td>
-        {% endfor %}
+        {%- endfor %}
       </tr>
-      {% endfor %}
+      {%- endfor %}
     </tbody>
   </table>
-{% else %}
-  <p>This component has no {{ include.section }}.</p>
-{% endif %}
+{%- else %}
+<p><em>This component has no {{ include.section }}.</em></p>
+{%- endif %}

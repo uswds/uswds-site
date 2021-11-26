@@ -6,7 +6,7 @@ contents:
     default: '"base-darkest"'
     type: color
   - name: Font family
-    description: The font family of the identifier
+    description: The font family of the identifier.
     var: $theme-identifier-font-family
     default: '"ui"'
     type: family

@@ -1,0 +1,2 @@
+- **Use tab focus.** Code the navigation so that pressing the tab key moves focus from link to link in the navigation, even when the navigation has collapsed into an accordion.
+- **Use accessible accordions.** On small screens: when collapsed into an accordion, the navigation should also meet the accessibility requirements outlined in the "Accordion" section.

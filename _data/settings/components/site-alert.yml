@@ -1,7 +1,7 @@
 name: Site Alert
 contents:
   - name: Maximum width
-    description: Maximum width of the site alert content
+    description: Maximum width of the site alert content.
     var: $theme-site-alert-max-width
     default: '"desktop"'
     type: units

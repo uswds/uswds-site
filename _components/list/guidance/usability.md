@@ -1,0 +1,2 @@
+- **Use sentence case and begin lists with a capital letter.**
+- **Use punctuation appropriate to the text.** Do not leave sentences without periods.

@@ -107,7 +107,7 @@ subnav:
 - [Ten usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/) [nngroup.com]
 - [A link is a promise](https://www.nngroup.com/articles/link-promise/) [nngroup.com]
 - [Preventing user errors](https://www.nngroup.com/articles/slips/) [nngroup.com]
-- [Designing for trust](https://www.ted.com/talks/joe_gebbia_how_airbnb_designs_for_trust) [TED.com]
+- [How AirBNB designs for trust](https://www.ted.com/talks/joe_gebbia_how_airbnb_designs_for_trust) [TED.com]
 - [Humane by design](https://humanebydesign.com/) [humanebydesign.com]
 
 ### Practical actions
@@ -227,8 +227,8 @@ subnav:
 
 - [Journey mapping 101](https://www.nngroup.com/articles/journey-mapping-101/)[nngroup.com]
 - [Service design 101](https://www.nngroup.com/articles/service-design-101/) [nngroup.com]
-- [Service blueprints](https://www.nngroup.com/articles/service-blueprints-definition/) [nngroup.com]
-- [Using a service ecosystem map](https://www.service-design-network.org/community-knowledge/using-a-service-ecosystem-to-quickly-grasp-complexity) [service-design-network.org]
+- [Service blueprints: definition](https://www.nngroup.com/articles/service-blueprints-definition/) [nngroup.com]
+- [Using a service ecosystem to quickly grasp complexity](https://www.service-design-network.org/community-knowledge/using-a-service-ecosystem-to-quickly-grasp-complexity) [service-design-network.org]
 - [Ten usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/) [nngroup.com]
 - [Atomic Design](http://atomicdesign.bradfrost.com/table-of-contents/) [atomicdesign.bradfrost.com]
 

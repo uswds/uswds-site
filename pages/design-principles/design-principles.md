@@ -107,7 +107,7 @@ subnav:
 - [Ten usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/) [nngroup.com]
 - [A link is a promise](https://www.nngroup.com/articles/link-promise/) [nngroup.com]
 - [Preventing user errors](https://www.nngroup.com/articles/slips/) [nngroup.com]
-- [Designing for trust](https://www.ted.com/talks/joe_gebbia_how_airbnb_designs_for_trust) [TED.com]
+- [How AirBNB designs for trust](https://www.ted.com/talks/joe_gebbia_how_airbnb_designs_for_trust) [TED.com]
 - [Humane by design](https://humanebydesign.com/) [humanebydesign.com]
 
 ### Practical actions
@@ -173,10 +173,10 @@ subnav:
 
 - **Humanize accessibility.** Seek out examples of the real life impact of accessible products and services. Try to make accessibility less abstract and more personal.
 - **Use agency resources.** Reach out to [your agency's accessibility team](https://www.section508.gov/tools/coordinator-listing) and build a relationship with them.
-- **Learn about assistive technology.** Get familiar with the basic ways people use assistive technology and [how people with disabilities use the web](https://www.w3.org/WAI/people-use-web/).
-- **Follow existing standards.** Conform to the [Revised 508 Standards](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh) and [WCAG 2.0](https://www.w3.org/TR/WCAG20/).
+- **Learn about assistive technology.** Visit the Web Accessibility Initiative website to get familiar with the basic ways people use assistive technology and [how people with disabilities use the web](https://www.w3.org/WAI/people-use-web/).
+- **Follow existing standards.** Conform to the [Revised 508 Standards](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh) and the [W3C WCAG 2.0](https://www.w3.org/TR/WCAG20/).
 - **Work from existing resources.** Consult [Section508.gov](https://www.section508.gov/), [Accessibility for Teams](https://accessibility.digital.gov/), and the [18F Accessibility Guide](https://accessibility.18f.gov/).
-- **Design generously.** Adopt an [inclusive design](http://inclusivedesignprinciples.org/) mentality.
+- **Design generously.** Adopt an [inclusive design](http://inclusivedesignprinciples.org/) mentality, as described on the Inclusive Design Principles website.
 - **Develop accessible code.** Ensure front-end code is written accessibly and conducts manual and automated testing.
 - **Write accessible content.** Ensure content is written in [plain language](https://www.plainlanguage.gov/) and [headings](https://accessibility.18f.gov/headings/), [images](https://accessibility.18f.gov/images/), and [links](https://accessibility.18f.gov/links/) are accurately labeled.
 - **Build accessible designs.** Ensure that designs are accessible, pages are laid out in a logical order, and content meets color contrast requirements.
@@ -227,8 +227,8 @@ subnav:
 
 - [Journey mapping 101](https://www.nngroup.com/articles/journey-mapping-101/)[nngroup.com]
 - [Service design 101](https://www.nngroup.com/articles/service-design-101/) [nngroup.com]
-- [Service blueprints](https://www.nngroup.com/articles/service-blueprints-definition/) [nngroup.com]
-- [Using a service ecosystem map](https://www.service-design-network.org/community-knowledge/using-a-service-ecosystem-to-quickly-grasp-complexity) [service-design-network.org]
+- [Service blueprints: definition](https://www.nngroup.com/articles/service-blueprints-definition/) [nngroup.com]
+- [Using a service ecosystem to quickly grasp complexity](https://www.service-design-network.org/community-knowledge/using-a-service-ecosystem-to-quickly-grasp-complexity) [service-design-network.org]
 - [Ten usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/) [nngroup.com]
 - [Atomic Design](http://atomicdesign.bradfrost.com/table-of-contents/) [atomicdesign.bradfrost.com]
 
@@ -287,7 +287,7 @@ subnav:
 #### Non-government resources
 
 - [Google Design: Stop Talking, Start Listening](https://medium.com/google-design/stop-talking-start-listening-7a555ec8ebb1) [medium.com]
-- [Google Design: Listening as design strategy](https://www.youtube.com/watch?v=6_mHCOAAEI8) [youtube.com]
+- [Design is Listening: listening as design strategy](https://www.youtube.com/watch?v=6_mHCOAAEI8) [youtube.com]
 
 ### Practical actions
 

@@ -46,13 +46,13 @@ redirect_from:
   <div class="grid-row">
     <div class="tablet:grid-col-7">
       <div class="">
-        <p>USWDS helps the federal government design and build better online experiences for the American public. As a toolkit to design and build government websites, the design system provides:</p>
+        <p>USWDS helps the federal government design and build better digital experiences. As a toolkit to design and build government websites, the design system provides:</p>
         <ol>
           <li><strong>Principles:</strong> USWDS design principles support and reflect the important guidance codified in 21st Century IDEA.</li>
           <li><strong>Guidance:</strong> USWDS user experience guidance provides best-practice advice for assuring components do what users expect them to do.</li>
           <li><strong>Code:</strong> USWDS code provides an accessible, mobile-friendly experience across government sites. Teams can contribute new components back to USWDS.</li>
         </ol>
-        <p>Together, these form a design system <a href="{{ site.baseurl }}/maturity-model">maturity model</a>. Adopt the design system incrementally by starting to implement our <a href="{{ site.baseurl }}/design-principles">design principles</a> in your project. Even before adding any USWDS code, you can also begin to adopt our UX guidance (like this <a href="{{ site.baseurl }}/components/button/#accordion-bordered-docs">guidance for a button</a>). Then, start small and start to incorporate USWDS <a href="{{ site.baseurl }}/design-tokens">design tokens</a> into your site design.</p>
+        <p>Together, these form a design system <a href="{{ site.baseurl }}/maturity-model">maturity model</a>. Adopt the design system incrementally by starting to implement our <a href="{{ site.baseurl }}/design-principles">design principles</a> in your project. Even before adding any USWDS code, you can also begin to adopt our UX guidance (like this <a href="{{ site.baseurl }}/components/button/">guidance for a button</a>). Then, start small and start to incorporate USWDS <a href="{{ site.baseurl }}/design-tokens">design tokens</a> into your site design.</p>
         <p>The design system is flexible, and we expect you to adapt it as you adopt it. Use the USWDS maturity model to build a solution that best meets your agency’s mission and user needs.</p>
       </div>
     </div>

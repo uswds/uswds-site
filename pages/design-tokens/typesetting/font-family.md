@@ -6,16 +6,16 @@ category: Design tokens
 lead: USWDS font family tokens allow designers and developers to set font family either by the type of font or the role the font plays in the design.
 type: docs
 subnav:
+- text: Available fonts
+  href: '#available-fonts'
 - text: Type-based tokens
   href: '#type-based-tokens'
 - text: Role-based tokens
   href: '#role-based-tokens'
-- text: Available font families
-  href: '#available-font-families'
 - text: Customizing family tokens
   href: '#customizing-family-tokens'
 - text: Using family tokens
-  href: '#using-typescale-in-utilities-settings-and-component-sass'
+  href: '#using-family-tokens'
 ---
 
 {% assign tokens = site.data.tokens.typesetting %}
@@ -159,9 +159,9 @@ Role-based tokens set the font family value based on the _role_ the face plays i
 **Note:** It is possible to add **custom font metadata**, **custom font stacks**, and **custom font source files** in your USWDS settings. This documentation is coming soon. See the inline documentation in `_uswds-theme-typography` for more details.
 
 ## Customizing family tokens
-Customize [type](#0){:.token} and [role](#0){:.token} family tokens in your project's theme settings with available [font](#0){:.token} tokens. All typography-related settings are in `_uswds-theme-typography.scss`.
+Customize [type](#type-based-tokens){:.token} and [role](#role-based-tokens){:.token} family tokens in your project's theme settings with available [font](#available-fonts){:.token} tokens. All typography-related settings are in `_uswds-theme-typography.scss`.
 
-**First, use [font](#0){:.token} tokens to set the [type](#0){:.token} family tokens.** Set any unused types to `false`.
+**First, use [font](#available-fonts){:.token} tokens to set the [type](#type-based-tokens){:.token} family tokens.** Set any unused types to `false`.
 
 {:.margin-bottom-4}
 ```sass
@@ -173,7 +173,7 @@ $theme-font-type-sans:   'source-sans-pro';
 $theme-font-type-serif:  'merriweather';
 ```
 
-**Then use the type variables you just set to set the [role](#0){:.token} family tokens.** Set any unused types to `false`.
+**Then use the type variables you just set to set the [role](#role-based-tokens){:.token} family tokens.** Set any unused types to `false`.
 
 ```sass
 $theme-font-role-ui:       $theme-font-sans;

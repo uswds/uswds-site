@@ -1,37 +1,37 @@
 name: Summary box
 contents:
   - name: Background color
-    description: Background color of the Summary box
+    description: Background color of the Summary box.
     var: $theme-summary-box-background-color
     default: '"info-lighter"'
     type: color
   - name: Border color
-    description: Color the border around the Summary box
+    description: Color the border around the Summary box.
     var: $theme-summary-box-border-color
     default: '"info-light"'
     type: color
   - name: Border width
-    description: Width of the border around the Summary box
+    description: Width of the border around the Summary box.
     var: $theme-summary-box-border-width
     default: 1px
     type: size
   - name: Border radius
-    description: Border radius of the summary box
+    description: Border radius of the summary box.
     var: $theme-summary-box-border-radius
     default: '"md"'
     type: radius
   - name: Font family
-    description: Font family of the content text
+    description: Font family of the content text.
     var: $theme-summary-box-font-family
     default: '"ui"'
     type: family
   - name: Link color
-    description: 'Color of the links inside the content text. When set to "default", links will get one of three values, based on contrast: $theme-link-color, $theme-link-reverse-color, or "ink"'
+    description: 'Color of the links inside the content text. When set to "default", links will get one of three values, based on contrast: $theme-link-color, $theme-link-reverse-color, or "ink".'
     var: $theme-summary-box-link-color
     default: "default"
     type: color
   - name: Text color
-    description: 'Color of the links inside the content text. When set to "default", text will get one of two values, based on contrast: "white" or "ink"'
+    description: 'Color of the links inside the content text. When set to "default", text will get one of two values, based on contrast: "white" or "ink".'
     var: $theme-summary-box-link-color
     default: "default"
     type: color

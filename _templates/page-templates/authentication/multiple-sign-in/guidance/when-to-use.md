@@ -1,0 +1,1 @@
+- **Multiple, legacy authentication systems.** If you have more than one authentication system in place and no current ability to consolidate, this template allows you to prioritize one system for account creation while providing multiple options for signing in.

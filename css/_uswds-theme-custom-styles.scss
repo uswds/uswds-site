@@ -1433,18 +1433,6 @@ code[class*="language-plaintext"] {
   @include external-link;
 }
 
-// External link - Safari only fix
-@media not all and (min-resolution:.001dpcm) { 
-  @supports (-webkit-appearance:none) and (stroke-color:transparent) {
-    #{$external-href}::after {
-      display: inline-block;
-    }
-  }
-}
-.usa-identifier__required-link#{$external-href} {
-  display: inline;
-}
-
 .usa-link--alt#{$external-href} {
   @include external-link;
 }

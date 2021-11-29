@@ -56,7 +56,7 @@ Upgrading to HTTP/2 requires that you have administrative access to either the s
 
 ## How to speed up HTTPS
 
-There are several common techniques for improving HTTPS performance under both HTTP 1.1 and HTTP/2. Most of them require direct access to your sever(s) and/or hosting environment, and specific knowledge of the tools or platforms in use. The Igvita article,[Optimizing nginx TLS time to first byte](https://www.igvita.com/2013/12/16/optimizing-nginx-tls-time-to-first-byte/), describes how to improve HTTPS performance with nginx, but the techniques are applicable in other environments.
+There are several common techniques for improving HTTPS performance under both HTTP 1.1 and HTTP/2. Most of them require direct access to your sever(s) and/or hosting environment, and specific knowledge of the tools or platforms in use. The Igvita article, [Optimizing nginx TLS time to first byte](https://www.igvita.com/2013/12/16/optimizing-nginx-tls-time-to-first-byte/), describes how to improve HTTPS performance with nginx, but the techniques are applicable in other environments.
 
 [HTTP]: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 [SPDY]: https://en.wikipedia.org/wiki/SPDY

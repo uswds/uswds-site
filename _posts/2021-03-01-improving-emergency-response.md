@@ -27,7 +27,7 @@ Our primary research goals were to:
 - **Develop new USWDS components** to support agency emergency response efforts
 
 
-Taking action on what we learned from the research, we created and updated several design system components and templates to address the common needs agencies faced. These updates are included in [Release 2.10.0]({{ site.baseurl }}/about/releases/#version-2100) and you can learn more about them in our [December 2020 monthly call](https://www.youtube.com/watch?v=OhtiTfKAIRw&feature=emb_logo).
+Taking action on what we learned from the research, we created and updated several design system components and templates to address the common needs agencies faced. These updates are included in [Release 2.10.0]({{ site.baseurl }}/about/releases/#version-2100) and you can learn more about them in our [December 2020 monthly call](https://www.youtube.com/watch?v=OhtiTfKAIRw&feature=emb_logo) (available on YouTube).
 
 ## Research themes and insights
 
@@ -143,7 +143,7 @@ Mobile devices often become a primary source of connection in an emergency. Agen
 
 ## How we created components
 
-After a few weeks of research and user interviews, we used themes and insights from those interviews to generate and gather over 60 component and pattern ideas. We then conducted a prioritization workshop where design, engineering, product, and stakeholders worked collaboratively to understand the effort and value of each idea. Honing in on easy wins and strategic initiatives, we prioritized the components in the [sprint backlog](https://github.com/orgs/uswds/projects/5) and started creating them.
+After a few weeks of research and user interviews, we used themes and insights from those interviews to generate and gather over 60 component and pattern ideas. We then conducted a prioritization workshop where design, engineering, product, and stakeholders worked collaboratively to understand the effort and value of each idea. Honing in on easy wins and strategic initiatives, we prioritized the components in the GitHub [sprint backlog](https://github.com/orgs/uswds/projects/5) and started creating them.
 
 Additionally, we outlined a component creation process to ensure each component was thoroughly researched, iterated on, and emerged from a highly collaborative process, including getting feedback from customers and other stakeholders.
 

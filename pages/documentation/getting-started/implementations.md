@@ -17,7 +17,7 @@ subnav:
   text: name
 ---
 
-If you have a new implementation to add to this list, please [open an issue] or [send us an email] with the following information:
+If you have a new implementation to add to this list, please [open an issue] on GitHub or [send us an email] with the following information:
 
 * The implementation’s target language and/or framework
 * The author’s name (or alias) and contact URL or email address

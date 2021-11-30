@@ -1,11 +1,11 @@
 ---
-permalink: /documentation/designers/
+permalink: /documentation/getting-started-for-designers/
 layout: styleguide
-title: For designers
+title: Designers
 category: How to use USWDS
 lead: USWDS offers a flexible yet coherent visual style you can apply to any government website. Our visual style offers a clean, modern aesthetic that meets high standards of usability and accessibility while promoting credibility and trust.
 redirect_from:
-  - /getting-started/designers/
+  - /documentation/designers/
 ---
 
 See the [design tokens]({{ site.baseurl }}/design-tokens/) section for more on USWDS system styles and palettes.

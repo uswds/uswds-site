@@ -1,27 +1,14 @@
 ---
-permalink: /documentation/fundamentals/
+permalink: /documentation/getting-started-for-developers/
 layout: styleguide
-title: USWDS fundamentals and quickstart guide
+title: Getting started for developers
 category: How to use USWDS
-lead: Getting started with the design system
+lead: Getting started for developers
+type: docs
 subnav:
-- text: How to add USWDS source code to your project
-  href: '#how-to-add-uswds-source-code-to-your-project'
-- text: Install Node and npm
-  href: '#install-node-and-npm'
-- text: Initialize your project in Node
-  href: '#initialize-your-project-in-node'
-- text: Install USWDS
-  href: '#install-uswds'
-- text: How to compile the source code into browser-readable CSS
-  href: '#how-to-compile-the-source-code-into-browser-readable-css'
-- text: The Sass entry point
-  href: '#what-to-compile-the-sass-entry-point'
-- text: USWDS settings
-  href: '#uswds-settings'
-- text: Using uswds-gulp
-  href: '#how-to-compile-using-uswds-gulp'
-
+  - href: /documentation/getting-started/developers/phase-one-install/
+  - href: /documentation/getting-started/developers/phase-two-compile/
+  - href: /documentation/getting-started/developers/phase-three-customize/
 ---
 
 USWDS is a powerful and adaptable design system. There are two fundamental concepts teams need to understand to set started:

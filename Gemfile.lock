@@ -66,8 +66,6 @@ GEM
     nokogiri (1.12.5)
       mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
-    nokogiri (1.12.5-x86_64-darwin)
-      racc (~> 1.4)
     nokogumbo (2.0.5)
       nokogiri (~> 1.8, >= 1.8.4)
     parallel (1.21.0)
@@ -102,6 +100,7 @@ GEM
     typhoeus (1.4.0)
       ethon (>= 0.9.0)
     unicode-display_width (1.8.0)
+    webrick (1.7.0)
     yell (2.2.2)
 
 PLATFORMS
@@ -120,6 +119,7 @@ DEPENDENCIES
   rspec-core
   rspec-expectations
   scss_lint
+  webrick (~> 1.7)
 
 BUNDLED WITH
-   2.2.17
+   2.2.22

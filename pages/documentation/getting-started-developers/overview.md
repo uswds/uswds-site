@@ -14,7 +14,7 @@ The U.S. Web Design System (USWDS) includes over 40 accessible, mobile-friendly 
 
 [Components](../../components/overview/) are built from (and further customizable based on) [tokens](../../design-tokens/). Akin to atoms in an atomic-design methodology, tokens are the design system's predefined units of color, spacing, typography, and opacity that form the building blocks of design.
 
-USWDS also provides tools and solutions that make it simpler to comply with legal requirements, such as the 21st Century Integrated Digital Experience Act and Section 508 of the Rehabilitation Act, like [a simple way to pick accessible colors or a component that displays required links](../../design-tokens/color/overview/#color-and-accessibility).
+USWDS also provides tools and solutions that make it simpler to comply with legal requirements, such as the 21st Century Integrated Digital Experience Act and Section 508 of the Rehabilitation Act, like [a simple way to pick accessible colors](../../design-tokens/color/overview/#color-and-accessibility) or [a component that displays required links](../../components/identifier/).
 
 ## Key concepts
 The following are concepts fundamental to the design system:
@@ -27,9 +27,10 @@ You don't need to understand these concepts to install the design system, but yo
 
 ### What you need
 We recommend using the following tools when working with USWDS:
-- Node (our version is specified in the [].nvmrc file](https://github.com/uswds/uswds/blob/main/.nvmrc); currently v16)
+- Node (our version is specified in the [.nvmrc file](https://github.com/uswds/uswds/blob/main/.nvmrc); currently v16)
 - npm
 - Sass (use [the latest version](https://nodejs.org/en/download/); we use [the latest `sass` package from npm](https://www.npmjs.com/package/sass))
+
 These instructions describe how to get started with USWDS using npm. If npm does not work for your project, you can [download and install the system directly](https://github.com/uswds/uswds#download-and-install) as outlined under “Download and install” in GitHub.
 
 We’ve designed USWDS to support older and newer browsers through [progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement). The design system follows the [2% rule](https://gds.blog.gov.uk/2012/01/25/support-for-browsers/): we officially support any browser above 2% usage as observed by [analytics.usa.gov](https://analytics.usa.gov/). In other words, USWDS version 2.0 supports Chrome, Firefox, Safari, Edge, and Internet Explorer 11 and up. The next major version of USWDS (3.0) will drop support of Internet Explorer 11.
@@ -37,4 +38,4 @@ We’ve designed USWDS to support older and newer browsers through [progressive 
 ### Step-by-step
 Get started with USWDS by installing the design system on your project, compiling your project's Sass from the USWDS source, and customizing the design system to fit your project needs.
 
-[Proceed to Phase 1: Install](/phase-one-install/)
+[Proceed to Phase 1: Install&gt;](/documentation/getting-started/developers/phase-one-install/)

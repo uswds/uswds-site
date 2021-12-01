@@ -81,10 +81,8 @@ npm will show some notifications, install USWDS, and display the version number 
 
 Now, the USWDS source code is in your project, in `./node_modules/uswds`.
 
-<div class="site-note padding-2">
-  <h4 class="margin-y-0 font-lang-lg">Don’t modify the source code</h4>
-  <p class="margin-top-1">This guidance may seem counterintuitive, but now that you've installed the USWDS source code, you don't want to edit it in any way because the source code in the `node_modules` directory is controlled by npm and could be rewritten at any time, especially if you reinstall or update the USWDS version. In fact, if you use Git or GitHub for your project, you should add `node_modules` to your `.gitignore` file.</p>
-  <p class="margin-bottom-0">You do want to use the source code, but you don't want to modify it to use it. Instead, in Phase 2, we'll discuss how to compile, theme, and extend the USWDS source code in your project.</p>
-</div>
+{: .site-note }
+**Don't modify the source code**
+This guidance may seem counterintuitive, but now that you've installed the USWDS source code, you don't want to edit it in any way because the source code in the `node_modules` directory is controlled by npm and could be rewritten at any time, especially if you reinstall or update the USWDS version. In fact, if you use Git or GitHub for your project, you should add `node_modules` to your `.gitignore` file.
 
-[Proceed to Phase 2: Compile](/phase-two-compile/)
+You do want to use the source code, but you don't want to modify it to use it. Instead, in Phase 2, we'll discuss how to compile, theme, and extend the USWDS source code in your project.

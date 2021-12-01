@@ -207,5 +207,5 @@ If we use color intentionally, consistently, and sensitively, it can make a big 
   [https://www.w3.org/TR/low-vision-needs/](https://www.w3.org/TR/low-vision-needs/){:.display-block}
 
 ## Tools
-- CivicAction's USWDS Color Tool
+- USWDS Color Tool from CivicActions
   [https://civicactions.github.io/uswds-color-tool/#about-toggle](https://civicactions.github.io/uswds-color-tool/#about-toggle){:.display-block}

@@ -14,7 +14,7 @@ steps:
     status: current
 ---
 {: .site-note }
-**Note:** If you use `uswds-gulp`, as detailed in Steps 2–4, this tool will build a Sass entry point for you.
+**Note:** Note: If you use `uswds-gulp`, as detailed in Phase 2, this tool adds each of the files mentioned below to the directory you specify in `PROJECT_SASS_SRC`.
 
 USWDS 2.0 provides extensive support for theming via its theme settings files. The critical files you'll need in your project are the following, which are located in `dist/scss/theme`:
 -	`_uswds-theme-color.scss` — theme color settings
@@ -24,23 +24,23 @@ USWDS 2.0 provides extensive support for theming via its theme settings files. T
 - `_uswds-theme-typography.scss` — theme typography settings
 -	`_uswds-theme-utilities.scss` — utility class output settings
 
-The [USWDS Settings page](../settings/) describes each of the settings available in the settings files, as well as the values the settings accept. Most settings accept design tokens, visit the [Design tokens section](./design-tokens/) of our website for more information on the available tokens for [color](./design-tokens/color), [spacing units](./design-tokens/spacing-units), [font size](./design-tokens/typesetting/font-size/), and more.
+The [USWDS Settings page](/documentation/settings/) describes each of the settings available in the settings files, as well as the values the settings accept. Most settings accept design tokens, visit the [Design tokens section](/design-tokens/) of our website for more information on the available tokens for [color](/design-tokens/color), [spacing units](/design-tokens/spacing-units), [font size](/design-tokens/typesetting/font-size/), and more.
 
-### Resources
+## Resources
 Now that you’ve gotten started, the following resources are available to help you stay in touch, to provide support as you continue with your projects, and to enable you to provide recommendations and feedback.
 
-### Need installation help?
-Do you have questions or need help with setup? Did you run into any weird errors while following these instructions? Feel free to open an issue in GitHub.
+## Need installation help?
+Do you have questions or need help with setup? Did you run into any weird errors while following these instructions? Feel free to [open an issue](https://github.com/uswds/uswds/issues) in GitHub.
 
 You can also email us directly at [uswds@support.digitalgov.gov](mailto:uswds@support.digitalgov.gov). 
 
-### Stay involved
+## Stay involved
 USWDS is supported by an active, open-source community of engineers, content specialists, and designers. 
 
-### Continue learning
+## Continue learning
 We regularly update USWDS. To stay informed of changes, tips, and tricks, join us for our monthly calls and/or [subscribe to Wave](https://public.govdelivery.com/accounts/USGSATTS/subscriber/new?qsp=GSA_TTS), our newsletter.
 
-### Contribute to the codebase
+## Contribute to the codebase
 For complete instructions on how to contribute code, please read [CONTRIBUTING.md](https://github.com/uswds/uswds/blob/develop/CONTRIBUTING.md). These instructions also include guidance on how to set up your own copy of the design system style guide website for development.
 
 If you would like to learn more about how we work, check out the [Workflow](https://github.com/uswds/uswds/wiki/Workflow) and [Issue label Glossary](https://github.com/uswds/uswds/wiki/Issue-label-glossary) pages on our wiki.

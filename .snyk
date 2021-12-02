@@ -1355,24 +1355,15 @@ ignore:
     - uswds > nswatch > chokidar > glob-parent:
         reason: No direct upgrade or patch.
         expires: '2021-11-20T17:06:44.514Z'
-    - gulp > glob-watcher > chokidar > glob-parent:
-        reason: ' No available update.'
-        expires: '2021-12-19T21:17:42.633Z'
-    - gulp > vinyl-fs > glob-stream > glob-parent:
-        reason: ' No available update.'
-        expires: '2021-12-19T21:17:42.633Z'
-    - gulp-scss-lint > vinyl-fs > glob-stream > glob-parent:
-        reason: ' No available update.'
-        expires: '2021-12-19T21:17:42.633Z'
     - uswds > gulp > glob-watcher > chokidar > glob-parent:
-        reason: ' No available update.'
-        expires: '2021-12-19T21:17:42.633Z'
+        reason: None given
+        expires: '2021-12-16T22:31:31.058Z'
     - uswds > gulp > vinyl-fs > glob-stream > glob-parent:
-        reason: ' No available update.'
-        expires: '2021-12-19T21:17:42.633Z'
+        reason: None given
+        expires: '2021-12-16T22:31:31.058Z'
     - uswds > nswatch > chokidar > anymatch > micromatch > parse-glob > glob-base > glob-parent:
-        reason: ' No available update.'
-        expires: '2021-12-19T21:17:42.633Z'
+        reason: None given
+        expires: '2021-12-16T22:31:31.058Z'
   SNYK-JS-NODESASS-1059081:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
@@ -2581,57 +2572,9 @@ ignore:
     - uswds > resemblejs > canvas > @mapbox/node-pre-gyp > npmlog > gauge > string-width > strip-ansi > ansi-regex:
         reason: No available patch or upgrade.
         expires: '2021-11-25T17:50:38.313Z'
-    - uswds > mocha > yargs > string-width > strip-ansi > ansi-regex:
-        reason: No available update.
-        expires: '2021-12-19T21:17:42.633Z'
-    - uswds > mocha > yargs > cliui > strip-ansi > ansi-regex:
-        reason: No available update.
-        expires: '2021-12-19T21:17:42.633Z'
-    - uswds > mocha > yargs > cliui > string-width > strip-ansi > ansi-regex:
-        reason: No available update.
-        expires: '2021-12-19T21:17:42.633Z'
-    - uswds > mocha > yargs-unparser > yargs > string-width > strip-ansi > ansi-regex:
-        reason: No available update.
-        expires: '2021-12-19T21:17:42.633Z'
-    - uswds > mocha > yargs > cliui > wrap-ansi > strip-ansi > ansi-regex:
-        reason: No available update.
-        expires: '2021-12-19T21:17:42.633Z'
-    - uswds > mocha > yargs-unparser > yargs > cliui > strip-ansi > ansi-regex:
-        reason: No available update.
-        expires: '2021-12-19T21:17:42.633Z'
-    - uswds > mocha > yargs > cliui > wrap-ansi > string-width > strip-ansi > ansi-regex:
-        reason: No available update.
-        expires: '2021-12-19T21:17:42.633Z'
-    - uswds > mocha > yargs-unparser > yargs > cliui > string-width > strip-ansi > ansi-regex:
-        reason: No available update.
-        expires: '2021-12-19T21:17:42.633Z'
-    - uswds > mocha > yargs-unparser > yargs > cliui > wrap-ansi > strip-ansi > ansi-regex:
-        reason: No available update.
-        expires: '2021-12-19T21:17:42.633Z'
-    - uswds > mocha > yargs-unparser > yargs > cliui > wrap-ansi > string-width > strip-ansi > ansi-regex:
-        reason: No available update.
-        expires: '2021-12-19T21:17:42.633Z'
-    - uswds > mocha > wide-align > string-width > strip-ansi > ansi-regex:
-        reason: No available update.
-        expires: '2021-12-19T21:17:42.633Z'
-    - uswds > @mapbox/node-pre-gyp > npmlog > gauge > wide-align > string-width > strip-ansi > ansi-regex:
-        reason: No available update.
-        expires: '2021-12-19T21:17:42.633Z'
-    - uswds > canvas > @mapbox/node-pre-gyp > npmlog > gauge > wide-align > string-width > strip-ansi > ansi-regex:
-        reason: No available update.
-        expires: '2021-12-19T21:17:42.633Z'
-    - uswds > resemblejs > canvas > @mapbox/node-pre-gyp > npmlog > gauge > wide-align > string-width > strip-ansi > ansi-regex:
-        reason: No available update.
-        expires: '2021-12-19T21:17:42.633Z'
-    - gulp-eslint > eslint > strip-ansi > ansi-regex:
-        reason: No available update.
-        expires: '2021-12-19T21:17:42.633Z'
-    - gulp-eslint > eslint > table > string-width > strip-ansi > ansi-regex:
-        reason: No available update.
-        expires: '2021-12-19T21:17:42.633Z'
     - uswds > gulp-eslint > eslint > table > string-width > strip-ansi > ansi-regex:
-        reason: ' No available update.'
-        expires: '2021-12-19T21:17:42.633Z'
+        reason: None given
+        expires: '2021-12-16T22:31:31.058Z'
   SNYK-JS-AXIOS-1579269:
     - uswds > @frctl/fractal > @frctl/web > browser-sync > localtunnel > axios:
         reason: None given
@@ -3410,11 +3353,11 @@ ignore:
         expires: '2021-12-01T16:21:49.009Z'
   SNYK-JS-JSONSCHEMA-1920922:
     - gulp-svg-sprite > svg-sprite > phantomjs-prebuilt > request > http-signature > jsprim > json-schema:
-        reason: ' No available update.'
-        expires: '2021-12-19T21:17:42.633Z'
+        reason: None given
+        expires: '2021-12-16T22:31:31.058Z'
     - uswds > gulp-svg-sprite > svg-sprite > phantomjs-prebuilt > request > http-signature > jsprim > json-schema:
-        reason: ' No available update.'
-        expires: '2021-12-19T21:17:42.633Z'
+        reason: None given
+        expires: '2021-12-16T22:31:31.058Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

@@ -14,7 +14,7 @@ redirect_from:
 ---
 
 ## Before getting started
-The U.S. Web Design System (USWDS) includes over 40 accessible, mobile-friendly components out of the box, ensuring consistency and saving developers the need to build everything from scratch for their web-design and -redesign projects.
+USWDS includes over 40 accessible, mobile-friendly components out of the box, ensuring consistency and saving developers the need to build everything from scratch for their web-design and -redesign projects.
 
 [Components]({{ site.baseurl }}/components/overview/) are built from (and further customizable based on) [tokens]({{ site.baseurl }}/design-tokens/). Akin to atoms in an atomic-design methodology, tokens are the design system's predefined units of color, spacing, typography, and opacity that form the building blocks of design.
 

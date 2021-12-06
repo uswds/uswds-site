@@ -15,6 +15,7 @@
   <h2 id="known-issues-with-screen-readers">Known issues with screen readers</h2>
   <ul class="usa-content-list">
     <li>VoiceOver on iOS currently does not support fieldset and legend for forms. You can address this by using <code>aria-labelledby="for-attribute-of-label id-of-legend id-of-additional-info"</code> on each input in the fieldset. Using <code>aria-labelledby</code> will overwrite the default text read by the screen reader, so it is important to include all relevant information.</li>
-    <li>VoiceOver on OS X currently does not support <code>aria-describedby</code>. Use <code>aria-labelledby</code> instead, and include all related fields, including, labels, legend, and hint text</li>
+    <li>
+      VoiceOver on OS X offers partial support for <code>aria-describedby</code>. There's full support for conveying description on text inputs, partial support for description changes when the text input is in focus, and no support for <code>role="alert"</code>. Visit <a href="https://a11ysupport.io/tech/aria/aria-describedby_attribute">a11ysupport.io</a> to view the full status of support.</li>
   </ul>
 </section>

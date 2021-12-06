@@ -5,6 +5,17 @@ title: "Phase 3: Customize"
 category: How to use USWDS
 lead: Getting started with the design system
 type: docs
+subnav:
+  - text: "Resources"
+    href: "#resources"
+  - text: "Need installation help?"
+    href: "#need-installation-help"
+  - text: "Stay involved"
+    href: "#stay-involved"
+  - text: "Continue learning"
+    href: "#continue-learning"
+  - text: "Contribute to the codebase"
+    href: "#contribute-to-the-codebase"
 ---
 
 {: .site-note }

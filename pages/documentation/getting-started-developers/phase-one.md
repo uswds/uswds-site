@@ -5,6 +5,13 @@ title: "Phase 1: Install"
 category: How to use USWDS
 lead: Getting started with the design system
 type: docs
+subnav:
+  - text: "Step 1: Install Node and npm"
+    href: "#step-1-install-node-and-npm"
+  - text: "Step 2: Initialize your project in Node"
+    href: "#step-2-initialize-your-project-in-node"
+  - text: "Step 3: Install USWDS"
+    href: "#step-3-install-uswds"
 ---
 
 USWDS distributes our source code through npm, a package manager that uses a flavor of JavaScript called Node.js. The best way to add USWDS to your project is with npm via a Terminal window (see tips for using Terminal on a [Mac](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) or [Windows](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab)). 

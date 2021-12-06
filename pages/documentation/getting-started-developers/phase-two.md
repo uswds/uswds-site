@@ -3,7 +3,7 @@ permalink: /documentation/getting-started/developers/phase-two-compile/
 layout: styleguide
 title: "Phase 2: Compile"
 category: How to use USWDS
-lead: Getting started with the design system
+lead: Compile design system source code into browser-readable files
 type: docs
 subnav:
   - text: "Step 1: Set up your project’s Sass entry point"
@@ -81,7 +81,7 @@ In plain language, this code says:
 
   After you import the USWDS source code, you can build new styles with USWDS tokens, functions, and mixins. For the purposes of this guide, we won’t get into custom code, but the important thing to understand is that any custom code should follow the settings and USWDS source code in your Sass entry point.
 
-## Step 2: Install `uswds-gulp`
+## Step 2: Install uswds-gulp
 From your project’s root, run the following command to install uswds-gulp and all its dependencies:
 
 {:.site-terminal}
@@ -176,4 +176,4 @@ This command will run in your Terminal window. When you want to shut it down, us
 ## Step 6: Verify successful installation
 To verify whether you’ve successfully installed USWDS and that compilation is working, we recommend confirming the directory structure matches the paths you have updated in gulpfile.js, copying a few [components]({{ site.baseurl }}/components/overview/), pasting them into an HTML page, and then visiting that page in the browser to see if the components appear as expected. 
 
-[Phase 3: Customize &gt;]({{ site.baseurl }}/documentation/getting-started/developers/phase-three-customize/)
+**Next:** [Phase 3: Customize]({{ site.baseurl }}/documentation/getting-started/developers/phase-three-customize/) →

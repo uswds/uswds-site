@@ -2,6 +2,7 @@
 permalink: /documentation/getting-started-for-developers/
 layout: styleguide
 title: Getting started for developers
+lead: Get started using the design system by installing, compiling, and customizing USWDS code
 category: How to use USWDS
 type: docs
 subnav:
@@ -41,4 +42,8 @@ We’ve designed USWDS to support older and newer browsers through [progressive 
 ## Step-by-step
 Get started with USWDS by installing the design system on your project, compiling your project's Sass from the USWDS source, and customizing the design system to fit your project needs.
 
-[Phase 1: Install &gt;]({{ site.baseurl }}/documentation/getting-started/developers/phase-one-install/)
+[**Phase 1: Install**]({{ site.baseurl }}/documentation/getting-started/developers/phase-one-install/) →
+
+[**Phase 2: Compile**]({{ site.baseurl }}/documentation/getting-started/developers/phase-two-compile/) →
+
+[**Phase 3: Customize**]({{ site.baseurl }}/documentation/getting-started/developers/phase-three-customize/) →

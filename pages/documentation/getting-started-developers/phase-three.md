@@ -3,7 +3,7 @@ permalink: /documentation/getting-started/developers/phase-three-customize/
 layout: styleguide
 title: "Phase 3: Customize"
 category: How to use USWDS
-lead: Getting started with the design system
+lead: Customize the design system with settings and custom code
 type: docs
 subnav:
   - text: "Resources"
@@ -21,12 +21,12 @@ subnav:
 {: .site-note }
 **Note:** Note: If you use `uswds-gulp`, as detailed in Phase 2, this tool adds each of the files mentioned below to the directory you specify in `PROJECT_SASS_SRC`.
 
-USWDS 2.0 provides extensive support for theming via its theme settings files. The critical files you'll need in your project are the following, which are located in `dist/scss/theme`:
--	`_uswds-theme-color.scss` — theme color settings
--	`_uswds-theme-components.scss` — theme component settings
--	`_uswds-theme-general.scss` — general theme settings
--	`_uswds-theme-spacing.scss` — theme spacing settings
-- `_uswds-theme-typography.scss` — theme typography settings
+USWDS provides extensive support for theming via its theme settings files. The critical files you'll need in your project are the following, which are located in `dist/scss/theme`:
+-	`_uswds-theme-color.scss` — color settings
+-	`_uswds-theme-components.scss` — component settings
+-	`_uswds-theme-general.scss` — general settings
+-	`_uswds-theme-spacing.scss` — spacing settings
+- `_uswds-theme-typography.scss` — typography settings
 -	`_uswds-theme-utilities.scss` — utility class output settings
 
 The [USWDS Settings page]({{ site.baseurl }}/documentation/settings/) describes each of the settings available in the settings files, as well as the values the settings accept. Most settings accept design tokens, visit the [Design tokens section]({{ site.baseurl }}/design-tokens/) of our website for more information on the available tokens for [color]({{ site.baseurl }}/design-tokens/color), [spacing units]({{ site.baseurl }}/design-tokens/spacing-units), [font size]({{ site.baseurl }}/design-tokens/typesetting/font-size/), and more.

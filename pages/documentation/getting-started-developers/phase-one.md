@@ -3,7 +3,7 @@ permalink: /documentation/getting-started/developers/phase-one-install/
 layout: styleguide
 title: "Phase 1: Install"
 category: How to use USWDS
-lead: Getting started with the design system
+lead: Install design system files and source code into your project
 type: docs
 subnav:
   - text: "Step 1: Install Node and npm"
@@ -92,4 +92,4 @@ This guidance may seem counterintuitive, but now that you've installed the USWDS
 {: .site-note.margin-top-0 }
 You do want to use the source code, but you don't want to modify it to use it. Instead, in Phase 2, we'll discuss how to compile, theme, and extend the USWDS source code in your project.
 
-[Phase 2: Compile &gt;]({{ site.baseurl }}/documentation/getting-started/developers/phase-two-compile/)
+**Next:** [Phase 2: Compile &gt;]({{ site.baseurl }}/documentation/getting-started/developers/phase-two-compile/) →

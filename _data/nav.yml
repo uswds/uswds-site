@@ -75,14 +75,14 @@ Components:
 
 How to use USWDS:
   - href: /how-to-use-uswds/
-  - href: /website-standards/
-  - href: /maturity-model/
-  - text: USWDS fundamentals and quickstart guide
-    href: /documentation/fundamentals/
+  - text: Getting started for developers
+    href: /documentation/getting-started-for-developers/
+  - text: Getting started for designers
+    href: /documentation/getting-started-for-designers/
   - href: /documentation/developers/
-  - href: /documentation/designers/
-  - href: /documentation/accessibility/
   - href: /documentation/settings/
+  - href: /maturity-model/
+  - href: /documentation/accessibility/
   - href: /performance/
   - href: /documentation/code-guidelines/
   - text: Migrating to USWDS 2
@@ -91,6 +91,7 @@ How to use USWDS:
   - href: /documentation/implementations/
   - href: /documentation/showcase/
   - href: /documentation/sample-contract-language/
+  - href: /website-standards/
 
 Design tokens:
   - href: /design-tokens/

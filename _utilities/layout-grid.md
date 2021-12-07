@@ -531,7 +531,7 @@ $theme-utility-breakpoints: (
   'mobile-lg':         true,    // 480px
   'tablet':            true,    // 640px
   'tablet-lg':         false,   // 800px
-  'desktop':           true,    // 1040px
+  'desktop':           true,    // 1024px
   'desktop-lg':        false,   // 1200px
   'widescreen':        false,   // 1400px
 );

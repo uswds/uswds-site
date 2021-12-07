@@ -6,7 +6,7 @@ $asset-path: '../';
 $font-path: '#{$asset-path}fonts';
 $image-path: '#{$asset-path}img';
 
-$external-href: '[href^="http"]:not([href*=".gov"])';
+$external-href: '[href^="http"]:not([href*="designsystem.digital.gov"])';
 
 $z-nav-secondary: 100;
 

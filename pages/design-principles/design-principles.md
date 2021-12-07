@@ -51,7 +51,7 @@ subnav:
 - [Tips for capturing the best data from user interviews](https://18f.gsa.gov/2016/02/09/tips-for-capturing-the-best-data-from-user-interviews/) [18f.gsa.gov]
 - [How to address barriers to user-centered design](https://18f.gsa.gov/2019/11/07/barriers-to-governments-adoption-of-user-centered-design-and-how-to-address-them/) [18f.gsa.gov]
 - [Three ways to manage research projects remotely](https://18f.gsa.gov/2017/09/27/three-ways-to-manage-research-projects/) [18f.gsa.gov]
-- [Driving innovation with design education by the Lab@OPM](https://www.youtube.com/watch?v=DGDCd2ELpok) [youtube.com]
+- [Driving innovation with design education by the Lab at OPM](https://www.youtube.com/watch?v=DGDCd2ELpok) [youtube.com]
 - [The Foundations of Agile, Part I](https://digital.gov/event/2019/11/04/foundations-agile-i/) [digital.gov]
 - [The Foundations of Agile, Part II](https://digital.gov/event/2019/11/05/foundations-agile-ii/) [digital.gov]
 
@@ -107,7 +107,7 @@ subnav:
 - [Ten usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/) [nngroup.com]
 - [A link is a promise](https://www.nngroup.com/articles/link-promise/) [nngroup.com]
 - [Preventing user errors](https://www.nngroup.com/articles/slips/) [nngroup.com]
-- [Designing for trust](https://www.ted.com/talks/joe_gebbia_how_airbnb_designs_for_trust) [TED.com]
+- [How AirBNB designs for trust](https://www.ted.com/talks/joe_gebbia_how_airbnb_designs_for_trust) [TED.com]
 - [Humane by design](https://humanebydesign.com/) [humanebydesign.com]
 
 ### Practical actions
@@ -162,7 +162,7 @@ subnav:
 
 #### Non-government resources
 
-- [Web Accessibility Perspectives Videos](https://www.w3.org/WAI/perspective-videos/) [w3.org]
+- [Web accessibility perspectives videos](https://www.w3.org/WAI/perspective-videos/) [w3.org]
 - [Inclusive design principles](https://inclusivedesignprinciples.org/) [inclusivedesignprinciples.org]
 - [Accessibility fundamentals with Rob Dodson](https://www.youtube.com/watch?v=z8xUCzToff8) [youtube.com]
 - [Microsoft's inclusive design manual](https://www.microsoft.com/design/inclusive/) [microsoft.com]
@@ -173,10 +173,10 @@ subnav:
 
 - **Humanize accessibility.** Seek out examples of the real life impact of accessible products and services. Try to make accessibility less abstract and more personal.
 - **Use agency resources.** Reach out to [your agency's accessibility team](https://www.section508.gov/tools/coordinator-listing) and build a relationship with them.
-- **Learn about assistive technology.** Get familiar with the basic ways people use assistive technology and [how people with disabilities use the web](https://www.w3.org/WAI/people-use-web/).
-- **Follow existing standards.** Conform to the [Revised 508 Standards](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh) and [WCAG 2.0](https://www.w3.org/TR/WCAG20/).
+- **Learn about assistive technology.** Visit the Web Accessibility Initiative website to get familiar with the basic ways people use assistive technology and [how people with disabilities use the web](https://www.w3.org/WAI/people-use-web/).
+- **Follow existing standards.** Conform to the [Revised 508 Standards](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh) and the [W3C WCAG 2.0](https://www.w3.org/TR/WCAG20/).
 - **Work from existing resources.** Consult [Section508.gov](https://www.section508.gov/), [Accessibility for Teams](https://accessibility.digital.gov/), and the [18F Accessibility Guide](https://accessibility.18f.gov/).
-- **Design generously.** Adopt an [inclusive design](http://inclusivedesignprinciples.org/) mentality.
+- **Design generously.** Adopt an [inclusive design](http://inclusivedesignprinciples.org/) mentality, as described on the Inclusive Design Principles website.
 - **Develop accessible code.** Ensure front-end code is written accessibly and conducts manual and automated testing.
 - **Write accessible content.** Ensure content is written in [plain language](https://www.plainlanguage.gov/) and [headings](https://accessibility.18f.gov/headings/), [images](https://accessibility.18f.gov/images/), and [links](https://accessibility.18f.gov/links/) are accurately labeled.
 - **Build accessible designs.** Ensure that designs are accessible, pages are laid out in a logical order, and content meets color contrast requirements.
@@ -227,10 +227,10 @@ subnav:
 
 - [Journey mapping 101](https://www.nngroup.com/articles/journey-mapping-101/)[nngroup.com]
 - [Service design 101](https://www.nngroup.com/articles/service-design-101/) [nngroup.com]
-- [Service blueprints](https://www.nngroup.com/articles/service-blueprints-definition/) [nngroup.com]
-- [Using a service ecosystem map](https://www.service-design-network.org/community-knowledge/using-a-service-ecosystem-to-quickly-grasp-complexity) [service-design-network.org]
+- [Service blueprints: definition](https://www.nngroup.com/articles/service-blueprints-definition/) [nngroup.com]
+- [Using a service ecosystem to quickly grasp complexity](https://www.service-design-network.org/community-knowledge/using-a-service-ecosystem-to-quickly-grasp-complexity) [service-design-network.org]
 - [Ten usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/) [nngroup.com]
-- [Atomic Design](http://atomicdesign.bradfrost.com/table-of-contents/) [atomicdesign.bradfrost.com]
+- [Atomic design](http://atomicdesign.bradfrost.com/table-of-contents/) [atomicdesign.bradfrost.com]
 
 ### Practical actions
 
@@ -273,7 +273,7 @@ subnav:
 #### Government resources
 
 - [Guide to the Digital Analytics Program (DAP)](https://digital.gov/services/dap/) [digital.gov]
-- [Getting started with Search.gov](https://www.youtube.com/watch?v=p-y9T23ziEg) [search.gov]
+- [Getting started with Search.gov [youtube.com]](https://www.youtube.com/watch?v=p-y9T23ziEg) [search.gov]
 - [Office of Evaluation Sciences](https://oes.gsa.gov/) [oes.gsa.gov]
 - [Improving Customer Experience: Cross-Agency Priority Goal](https://www.performance.gov/CAP/cx/) [performance.gov]
 - [Tips for Starting Your Customer Experience Journey](https://www.performance.gov/tips-for-starting-your-customer-experience-journey/) [performance.gov]
@@ -282,7 +282,7 @@ subnav:
 - [Customer Experience Maturity Self-Assessment](https://www.performance.gov/cx/CXMaturitySelfAssessment.pdf) [performance.gov]
 - [Customer Experience Action Plan Template](https://www.performance.gov/cx/CXActionPlanTemplate.pptx) [performance.gov]
 - [Customer Experience Toolkit](https://digital.gov/resources/customer-experience-toolkit/) [digital.gov]
-- [Top tasks: prioritizing what is truly important](https://www.youtube.com/watch?v=5llJ98UkXYI) [digital.gov]
+- [Top tasks with Gerry McGovern [youtube.com]](https://www.youtube.com/watch?v=5llJ98UkXYI) [digital.gov]
 
 #### Non-government resources
 

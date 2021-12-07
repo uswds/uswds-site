@@ -103,6 +103,7 @@ GEM
       ethon (>= 0.9.0)
     webrick (1.7.0)
     unicode-display_width (1.8.0)
+    webrick (1.7.0)
     yell (2.2.2)
 
 PLATFORMS
@@ -124,4 +125,4 @@ DEPENDENCIES
   webrick (~> 1.7)
 
 BUNDLED WITH
-   2.2.19
+   2.2.22

@@ -7,7 +7,7 @@ lead: Compile design system source code into browser-readable files
 type: docs
 subnav:
   - text: "Step 1: Set up your project’s Sass entry point"
-    href: "#step-1-install-node-and-npm"
+    href: "#step-1-set-up-your-projects-sass-entry-point"
   - text: "Step 2: Install uswds-gulp"
     href: "#step-2-install-uswds-gulp"
   - text: "Step 3: Add configuration files"
@@ -103,7 +103,7 @@ cp node_modules/uswds-gulp/.browserslistrc .
 ```
 
 ## Step 4: Configure Gulp
-Now, you’ll need to edit `gulpfile.js` to configure it for your project. Starting at line 37 in `gulpfile.js`, you need to update the following settings — each of which needs a valid project directory (note: the sixth setting, `const SITE_CSS_DEST`, is only relevant if you are using Jekyll): 
+Now, you’ll need to edit `gulpfile.js` to configure it for your project. Starting at line 37 in `gulpfile.js`, you need to update the following settings — each of which needs a valid project directory (note: the sixth setting, `const SITE_CSS_DEST`, is only relevant if you are using Jekyll):
 
 {:.site-terminal}
 ```js
@@ -174,6 +174,6 @@ npx gulp watch
 This command will run in your Terminal window. When you want to shut it down, use `control-c`.
 
 ## Step 6: Verify successful installation
-To verify whether you’ve successfully installed USWDS and that compilation is working, we recommend confirming the directory structure matches the paths you have updated in gulpfile.js, copying a few [components]({{ site.baseurl }}/components/overview/), pasting them into an HTML page, and then visiting that page in the browser to see if the components appear as expected. 
+To verify whether you’ve successfully installed USWDS and that compilation is working, we recommend confirming the directory structure matches the paths you have updated in gulpfile.js, copying a few [components]({{ site.baseurl }}/components/overview/), pasting them into an HTML page, and then visiting that page in the browser to see if the components appear as expected.
 
 **Next:** [Phase 3: Customize]({{ site.baseurl }}/documentation/getting-started/developers/phase-three-customize/) →

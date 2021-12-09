@@ -94,7 +94,7 @@ Gulp needs the following two files to compile USWDS properly:
 - **`gulpfile.js`**: This file tells Gulp where to look for your files and what to do with them.
 - **`.browserslistrc`**: This file tells Gulp how to build the CSS so it works in all the browsers that USWDS supports.
 
-We include these files in the `uswds-gulp` package. Install them in your project by copying them from the package into your project root. From the project root, run the following two commands:
+We include these files in the `uswds-gulp` package. Install them in your project by copying them from the package into your project root. From the project root, run the following two commands separately:
 
 {:.site-terminal}
 ```bash
@@ -103,7 +103,7 @@ cp node_modules/uswds-gulp/.browserslistrc .
 ```
 
 ## Step 4: Configure Gulp
-Now, you’ll need to edit `gulpfile.js` to configure it for your project. Starting at line 37 in `gulpfile.js`, you need to update the following settings — each of which needs a valid project directory (note: the sixth setting, `const SITE_CSS_DEST`, is only relevant if you are using Jekyll): 
+Now, you’ll need to edit `gulpfile.js` to configure it for your project. Starting at line 37 in `gulpfile.js`, you need to update the following settings — each of which needs a valid project directory (note: the sixth setting, `const SITE_CSS_DEST`, is only relevant if you are using Jekyll):
 
 {:.site-terminal}
 ```js
@@ -174,6 +174,6 @@ npx gulp watch
 This command will run in your Terminal window. When you want to shut it down, use `control-c`.
 
 ## Step 6: Verify successful installation
-To verify whether you’ve successfully installed USWDS and that compilation is working, we recommend confirming the directory structure matches the paths you have updated in gulpfile.js, copying a few [components]({{ site.baseurl }}/components/overview/), pasting them into an HTML page, and then visiting that page in the browser to see if the components appear as expected. 
+To verify whether you’ve successfully installed USWDS and that compilation is working, we recommend confirming the directory structure matches the paths you have updated in gulpfile.js, copying a few [components]({{ site.baseurl }}/components/overview/), pasting them into an HTML page, and then visiting that page in the browser to see if the components appear as expected.
 
 **Next:** [Phase 3: Customize]({{ site.baseurl }}/documentation/getting-started/developers/phase-three-customize/) →

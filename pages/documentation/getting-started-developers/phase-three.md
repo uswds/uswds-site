@@ -19,7 +19,7 @@ subnav:
 ---
 
 {: .site-note }
-**Note:** Note: If you use `uswds-gulp`, as detailed in Phase 2, this tool adds each of the files mentioned below to the directory you specify in `PROJECT_SASS_SRC`.
+**Note:** If you use `uswds-gulp`, as detailed in Phase 2, this tool adds each of the files mentioned below to the directory you specify in `PROJECT_SASS_SRC`.
 
 USWDS provides extensive support for theming via its theme settings files. The critical files you'll need in your project are the following, which are located in `dist/scss/theme`:
 -	`_uswds-theme-color.scss` — color settings
@@ -37,10 +37,10 @@ Now that you’ve gotten started, the following resources are available to help 
 ### Need installation help?
 Do you have questions or need help with setup? Did you run into any weird errors while following these instructions? Feel free to [open an issue](https://github.com/uswds/uswds/issues) in GitHub.
 
-You can also email us directly at [uswds@support.digitalgov.gov](mailto:uswds@support.digitalgov.gov). 
+You can also email us directly at [uswds@support.digitalgov.gov](mailto:uswds@support.digitalgov.gov).
 
 ### Stay involved
-USWDS is supported by an active, open-source community of engineers, content specialists, and designers. 
+USWDS is supported by an active, open-source community of engineers, content specialists, and designers.
 
 ### Continue learning
 We regularly update USWDS. To stay informed of changes, tips, and tricks, join us for our monthly calls and/or [subscribe to Wave](https://public.govdelivery.com/accounts/USGSATTS/subscriber/new?qsp=GSA_TTS), our newsletter.

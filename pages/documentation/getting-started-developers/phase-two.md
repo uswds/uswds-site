@@ -89,6 +89,20 @@ From your project’s root, run the following command to install uswds-gulp and 
 npm install autoprefixer gulp gulp-replace sass del gulp-sass gulp-sourcemaps gulp-rename gulp-svg-sprite gulp-postcss postcss postcss-csso uswds uswds-gulp@github:uswds/uswds-gulp --save-dev
 ```
 
+The design system requires **autoprefixing** to work properly. This is included in the [`uswds-gulp`](https://github.com/uswds/uswds-gulp) package.
+
+**Autoprefixing** uses a service like [gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer) to automatically add vendor prefixes to the precompiled stylesheets. Don't add vendor prefixes to your custom styles manually — it is more reliable to use autoprefixing. We use the following autoprefixer settings via `.browserslistrc` config:
+
+
+```
+> 2%
+last 2 versions
+IE 11
+not dead
+```
+
+We recommend using a **minifier** like [csso](https://github.com/css/csso) to compress your final compiled CSS and **sourcemaps** like [`gulp-sourcemaps`](https://www.npmjs.com/package/gulp-sourcemaps) to keep track of the location of all the source Sass for easier debugging.
+
 ## Step 3: Add configuration files
 Gulp needs the following two files to compile USWDS properly:
 - **`gulpfile.js`**: This file tells Gulp where to look for your files and what to do with them.

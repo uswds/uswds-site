@@ -79,7 +79,7 @@ In plain language, this code says:
 
 - **Build new work on top of that foundation**: Finally, add any custom project styles built from design system code.
 
-  After you import the USWDS source code, you can build new styles with USWDS tokens, functions, and mixins. For the purposes of this guide, we won’t get into custom code, but the important thing to understand is that any custom code should follow the settings and USWDS source code in your Sass entry point.
+  After you import the USWDS source code, you can build new styles with USWDS design tokens, functions, and mixins. For the purposes of this guide, we won’t get into custom code, but the important thing to understand is that any custom code should follow the settings and USWDS source code in your Sass entry point.
 
 ## Step 2: Install uswds-gulp
 From your project’s root, run the following command to install uswds-gulp and all its dependencies:
@@ -135,7 +135,7 @@ const SITE_CSS_DEST = "./path/to/site/css/destination";
 
 Don’t include a trailing slash in any of these paths.
 
-The following are a few good defaults for a Jekyll site:
+The following are a few good defaults for a basic site:
 
 {:.site-terminal}
 ```js

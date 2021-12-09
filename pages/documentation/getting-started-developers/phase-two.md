@@ -7,7 +7,7 @@ lead: Compile design system source code into browser-readable files
 type: docs
 subnav:
   - text: "Step 1: Set up your project’s Sass entry point"
-    href: "#step-1-install-node-and-npm"
+    href: "#step-1-set-up-your-projects-sass-entry-point"
   - text: "Step 2: Install uswds-gulp"
     href: "#step-2-install-uswds-gulp"
   - text: "Step 3: Add configuration files"

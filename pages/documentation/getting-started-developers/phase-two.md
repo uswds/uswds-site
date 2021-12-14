@@ -22,10 +22,10 @@ subnav:
 
 USWDS source code is written in [Sass](https://sass-lang.com/), a powerful stylesheet language that builds automation, functions, and logic into CSS. Browsers can’t read native Sass files, so these files need to be compiled into CSS — usually a single CSS file — before we can use them. Basically, when you develop with USWDS, you do all your stylesheet work in Sass, then use a compiler to convert that Sass into CSS. We use [Gulp](https://gulpjs.com/), a task manager, to watch our directories for changes and compile our CSS whenever a change occurs. We’ve developed [uswds-gulp](https://github.com/uswds/uswds-gulp), a tool hosted on GitHub, to help teams install Gulp and get up and running as quickly as possible. The following steps use `uswds-gulp` to compile USWDS Sass.
 
-## Step 1: Set up your project’s Sass entry point
-
 {: .site-note }
-**Note:** If you use `uswds-gulp`, as detailed in Steps 2–4, this tool will build a Sass entry point for you.
+**Note:** Please skip ahead to Step 2; using uswds-gulp, as detailed in Steps 2–4 builds the Sass entry point for you. Step 1 is given in case you need to set up the Sass entry point manually.
+
+## Step 1: Set up your project’s Sass entry point
 
 A project often has many Sass files, but typically, there’s a single file that serves as the root — the “homepage” of the Sass — that links out to the others. This root file is also known as the “Sass entry point.” The Sass entry point is the most important stylesheet file in your project because it tells the compiler what source files make up your Sass codebase.
 
@@ -117,7 +117,7 @@ cp node_modules/uswds-gulp/.browserslistrc .
 ```
 
 ## Step 4: Configure Gulp
-Now, you’ll need to edit `gulpfile.js` to configure it for your project. Starting at line 37 in `gulpfile.js`, you need to update the following settings — each of which needs a valid project directory (note: the sixth setting, `const SITE_CSS_DEST`, is only relevant if you are using Jekyll):
+Now, edit `gulpfile.js` to configure it for your project. Starting at line 37 in `gulpfile.js`, update the following settings — each of which needs a valid project directory (note: the sixth setting, `const SITE_CSS_DEST`, is only relevant if you are using Jekyll):
 
 {:.site-terminal}
 ```js
@@ -170,7 +170,7 @@ Initialize your project and get started by running the following command:
 npx gulp init
 ```
 
-This command will add all the USWDS assets to the directories you set, add a project Sass entry point, and compile USWDS into CSS. You want to add this CSS file to the `<head>` of your project HTML.
+This command will add all the USWDS assets to the directories you set, add a project Sass entry point, and compile USWDS into CSS. Add this CSS file to the `<head>` of your project HTML.
 
 
 ## Step 6: Verify successful installation

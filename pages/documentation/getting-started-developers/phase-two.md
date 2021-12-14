@@ -123,33 +123,33 @@ Now, edit `gulpfile.js` to configure it for your project. Starting at line 37 in
 ```js
 // Project Sass source directory
 // Where should we put the USWDS Sass theme files?
-// "./stylesheets" is a basic default
+// Ex: PROJECT_SASS_SRC = "./stylesheets"
 const PROJECT_SASS_SRC = "./path/to/project/sass";
 
 // Images destination
 // Where should we save USWDS image assets?
-// "./assets/uswds/img" is a basic default
+// Ex: IMG_DEST = "./assets/uswds/img"
 const IMG_DEST = "./path/to/images/destination";
 
 // Fonts destination
 // Where should we save USWDS fonts?
-// "./assets/uswds/fonts" is a basic default
+// Ex: FONTS_DEST = "./assets/uswds/fonts"
 const FONTS_DEST = "./path/to/fonts/destination";
 
 // Javascript destination
 // Where should we save USWDS javascript?
-// "./assets/uswds/js" is a basic default
+// Ex: JS_DEST = "./assets/uswds/js"
 const JS_DEST = "./path/to/js/destination";
 
 // Compiled CSS destination
 // Where should we save compiled USWDS CSS?
-// "./assets/uswds/css" is a basic default
+// Ex: CSS_DEST = "./assets/uswds/css"
 const CSS_DEST = "./path/to/css/destination";
 
 // Site CSS destination
 // Like the _site/assets/css directory in Jekyll, if necessary.
 // If using, uncomment line 106
-// "./_site/assets/uswds/css" is a basic default
+// Ex: SITE_CSS_DEST = "./_site/assets/uswds/css"
 const SITE_CSS_DEST = "./path/to/site/css/destination";
 ```
 

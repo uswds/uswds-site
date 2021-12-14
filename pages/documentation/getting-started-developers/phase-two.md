@@ -22,10 +22,10 @@ subnav:
 
 USWDS source code is written in [Sass](https://sass-lang.com/), a powerful stylesheet language that builds automation, functions, and logic into CSS. Browsers can’t read native Sass files, so these files need to be compiled into CSS — usually a single CSS file — before we can use them. Basically, when you develop with USWDS, you do all your stylesheet work in Sass, then use a compiler to convert that Sass into CSS. We use [Gulp](https://gulpjs.com/), a task manager, to watch our directories for changes and compile our CSS whenever a change occurs. We’ve developed [uswds-gulp](https://github.com/uswds/uswds-gulp), a tool hosted on GitHub, to help teams install Gulp and get up and running as quickly as possible. The following steps use `uswds-gulp` to compile USWDS Sass.
 
-{: .site-note }
-**Note:** Please skip ahead to Step 2; using uswds-gulp, as detailed in Steps 2–4 builds the Sass entry point for you. Step 1 is given in case you need to set up the Sass entry point manually.
-
 ## Step 1: Set up your project’s Sass entry point
+
+{: .site-note }
+**Note:** If you want `uswds-gulp` to set up a Sass entry point for you, just skip to [Step 2, below](#step-2-install-uswds-gulp). Step 1 describes why you need a Sass entry point and how to set one up manually.
 
 A project often has many Sass files, but typically, there’s a single file that serves as the root — the “homepage” of the Sass — that links out to the others. This root file is also known as the “Sass entry point.” The Sass entry point is the most important stylesheet file in your project because it tells the compiler what source files make up your Sass codebase.
 

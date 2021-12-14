@@ -86,7 +86,7 @@ From your project’s root, run the following command to install uswds-gulp and 
 
 {:.site-terminal}
 ```bash
-npm install autoprefixer gulp gulp-replace sass del gulp-sass gulp-sourcemaps gulp-rename gulp-svg-sprite gulp-postcss postcss postcss-csso del uswds uswds-gulp@github:uswds/uswds-gulp --save-dev
+npm install autoprefixer gulp gulp-replace sass del gulp-sass gulp-sourcemaps gulp-rename gulp-svg-sprite gulp-postcss postcss postcss-csso uswds uswds-gulp@github:uswds/uswds-gulp --save-dev
 ```
 
 The design system requires **autoprefixing** to work properly. This is included in the [`uswds-gulp`](https://github.com/uswds/uswds-gulp) package.

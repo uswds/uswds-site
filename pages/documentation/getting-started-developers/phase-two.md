@@ -86,7 +86,7 @@ From your project’s root, run the following command to install uswds-gulp and 
 
 {:.site-terminal}
 ```bash
-npm install autoprefixer gulp gulp-replace sass del gulp-sass gulp-sourcemaps gulp-rename gulp-svg-sprite gulp-postcss postcss postcss-csso uswds uswds-gulp@github:uswds/uswds-gulp --save-dev
+npm install autoprefixer gulp gulp-replace sass del gulp-sass gulp-sourcemaps gulp-rename gulp-svg-sprite gulp-postcss postcss postcss-csso del uswds uswds-gulp@github:uswds/uswds-gulp --save-dev
 ```
 
 The design system requires **autoprefixing** to work properly. This is included in the [`uswds-gulp`](https://github.com/uswds/uswds-gulp) package.
@@ -123,43 +123,37 @@ Now, you’ll need to edit `gulpfile.js` to configure it for your project. Start
 ```js
 // Project Sass source directory
 // Where should we put the USWDS Sass theme files?
+// "./stylesheets" is a basic default
 const PROJECT_SASS_SRC = "./path/to/project/sass";
 
 // Images destination
 // Where should we save USWDS image assets?
+// "./assets/uswds/img" is a basic default
 const IMG_DEST = "./path/to/images/destination";
 
 // Fonts destination
 // Where should we save USWDS fonts?
+// "./assets/uswds/fonts" is a basic default
 const FONTS_DEST = "./path/to/fonts/destination";
 
 // Javascript destination
 // Where should we save USWDS javascript?
+// "./assets/uswds/js" is a basic default
 const JS_DEST = "./path/to/js/destination";
 
 // Compiled CSS destination
 // Where should we save compiled USWDS CSS?
+// "./assets/uswds/css" is a basic default
 const CSS_DEST = "./path/to/css/destination";
 
 // Site CSS destination
 // Like the _site/assets/css directory in Jekyll, if necessary.
 // If using, uncomment line 106
+// "./_site/assets/uswds/css" is a basic default
 const SITE_CSS_DEST = "./path/to/site/css/destination";
 ```
 
 Don’t include a trailing slash in any of these paths.
-
-The following are a few good defaults for a basic site:
-
-{:.site-terminal}
-```js
-const PROJECT_SASS_SRC = "./stylesheets";
-const IMG_DEST = "./assets/uswds/img";
-const FONTS_DEST = "./assets/uswds/fonts";
-const JS_DEST = "./assets/uswds/js";
-const CSS_DEST = "./assets/uswds/css";
-const SITE_CSS_DEST = "./_site/assets/uswds/css";
-```
 
 Save this file, and you’re ready to get started.
 
@@ -178,14 +172,6 @@ npx gulp init
 
 This command will add all the USWDS assets to the directories you set, add a project Sass entry point, and compile USWDS into CSS. You want to add this CSS file to the `<head>` of your project HTML.
 
-Now, you can also use `uswds-gulp` to watch for any changes to your project Sass and recompile the CSS. Watch and recompile with the following command:
-
-{:.site-terminal}
-```bash
-npx gulp watch
-```
-
-This command will run in your Terminal window. When you want to shut it down, use `control-c`.
 
 ## Step 6: Verify successful installation
 To verify whether you’ve successfully installed USWDS and that compilation is working, we recommend confirming the directory structure matches the paths you have updated in gulpfile.js, copying a few [components]({{ site.baseurl }}/components/overview/), pasting them into an HTML page, and then visiting that page in the browser to see if the components appear as expected.

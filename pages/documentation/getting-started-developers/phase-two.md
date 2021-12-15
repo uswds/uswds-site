@@ -29,7 +29,7 @@ The following steps use `uswds-gulp` to compile USWDS Sass.
 ## Step 1: Set up your project’s Sass entry point
 
 {: .site-note }
-**Note:** If you want `uswds-gulp` to set up a Sass entry point for you, just skip to [Step 2, below](#step-2-install-uswds-gulp). Step 1 describes why you need a Sass entry point and how to set one up manually.
+**Note:** If you want `uswds-gulp` to set up a Sass entry point for you, you don't need to set up any files in Step 1 and can skip directly to [Step 2, below](#step-2-install-uswds-gulp). Step 1 gives some important context: why you need a Sass entry point, what it needs to include, and how to set one up manually.
 
 A project often has many Sass files, but typically, there’s a single file that serves as the root — the “homepage” of the Sass — that links out to the others. This root file is also known as the “Sass entry point.” The Sass entry point is the most important stylesheet file in your project because it tells the compiler what source files make up your Sass codebase.
 

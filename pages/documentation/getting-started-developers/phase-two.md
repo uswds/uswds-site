@@ -22,7 +22,7 @@ subnav:
 
 USWDS source code is written in [Sass](https://sass-lang.com/), a powerful stylesheet language that builds automation, functions, and logic into CSS. Browsers can’t read native Sass files, so these files need to be compiled into CSS — usually a single CSS file — before we can use them. Basically, when you develop with USWDS, you do all your stylesheet work in Sass, then use a compiler to convert that Sass into CSS. We use [Gulp](https://gulpjs.com/), a task manager, to watch our directories for changes and compile our CSS whenever a change occurs. 
 
-We’ve developed [`uswds-gulp`](https://github.com/uswds/uswds-gulp), a tool hosted on GitHub, to help teams install Gulp and get up and running as quickly as possible. In addition to compiling, `uswds-gulp` will also [autoprefix]({{ site.baseurl }}/documentation/developers/#sass-compilation-requirements) your CSS, minify it, and add sourcemaps for easier debugging. If you project doesn't already have a Sass-compiling workflow in place, check out `uswds-gulp`.
+We’ve developed [`uswds-gulp`](https://github.com/uswds/uswds-gulp), a tool hosted on GitHub, to help teams install Gulp and get up and running as quickly as possible. In addition to compiling, `uswds-gulp` will also [autoprefix]({{ site.baseurl }}/documentation/developers/#sass-compilation-requirements) your CSS, minify it for performance, and add sourcemaps for easier debugging. If you project doesn't already have a Sass-compiling workflow in place, check out `uswds-gulp`.
 
 The following steps use `uswds-gulp` to compile USWDS Sass.
 

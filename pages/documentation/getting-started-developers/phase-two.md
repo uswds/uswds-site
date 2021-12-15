@@ -20,7 +20,11 @@ subnav:
     href: "#step-6-verify-successful-installation"
 ---
 
-USWDS source code is written in [Sass](https://sass-lang.com/), a powerful stylesheet language that builds automation, functions, and logic into CSS. Browsers can’t read native Sass files, so these files need to be compiled into CSS — usually a single CSS file — before we can use them. Basically, when you develop with USWDS, you do all your stylesheet work in Sass, then use a compiler to convert that Sass into CSS. We use [Gulp](https://gulpjs.com/), a task manager, to watch our directories for changes and compile our CSS whenever a change occurs. We’ve developed [`uswds-gulp`](https://github.com/uswds/uswds-gulp), a tool hosted on GitHub, to help teams install Gulp and get up and running as quickly as possible. The following steps use `uswds-gulp` to compile USWDS Sass.
+USWDS source code is written in [Sass](https://sass-lang.com/), a powerful stylesheet language that builds automation, functions, and logic into CSS. Browsers can’t read native Sass files, so these files need to be compiled into CSS — usually a single CSS file — before we can use them. Basically, when you develop with USWDS, you do all your stylesheet work in Sass, then use a compiler to convert that Sass into CSS. We use [Gulp](https://gulpjs.com/), a task manager, to watch our directories for changes and compile our CSS whenever a change occurs. 
+
+We’ve developed [`uswds-gulp`](https://github.com/uswds/uswds-gulp), a tool hosted on GitHub, to help teams install Gulp and get up and running as quickly as possible. In addition to compiling, `uswds-gulp` will also [autoprefix]({{ site.baseurl }}/documentation/developers/#sass-compilation-requirements) your CSS, minify it, and add sourcemaps for easier debugging. If you project doesn't already have a Sass-compiling workflow in place, check out `uswds-gulp`.
+
+The following steps use `uswds-gulp` to compile USWDS Sass.
 
 ## Step 1: Set up your project’s Sass entry point
 
@@ -88,20 +92,6 @@ From your project’s root, run the following command to install `uswds-gulp` an
 ```bash
 npm install autoprefixer gulp gulp-replace sass del gulp-sass gulp-sourcemaps gulp-rename gulp-svg-sprite gulp-postcss postcss postcss-csso uswds uswds-gulp@github:uswds/uswds-gulp --save-dev
 ```
-
-The design system requires **autoprefixing** to work properly. This is included in the [`uswds-gulp`](https://github.com/uswds/uswds-gulp) package.
-
-**Autoprefixing** uses a service like [gulp-autoprefixer](https://github.com/sindresorhus/gulp-autoprefixer) to automatically add vendor prefixes to the precompiled stylesheets. Don't add vendor prefixes to your custom styles manually — it is more reliable to use autoprefixing. We use the following autoprefixer settings via `.browserslistrc` config:
-
-
-```
-> 2%
-last 2 versions
-IE 11
-not dead
-```
-
-We recommend using a **minifier** like [csso](https://github.com/css/csso) to compress your final compiled CSS and **sourcemaps** like [`gulp-sourcemaps`](https://www.npmjs.com/package/gulp-sourcemaps) to keep track of the location of all the source Sass for easier debugging.
 
 ## Step 3: Add configuration files
 Gulp needs the following two files to compile USWDS properly:

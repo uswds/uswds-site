@@ -1,2 +1,2 @@
-- **Use the proper ARIA role.** If the message is not interactive, use the ARIA `role="alert"` to inform assistive technologies of a time-sensitive and important message. If the message is interactive, use the use the ARIA `role="alertdialog"` instead.
+- **Use the proper ARIA role.** If the message is not interactive, use the ARIA `role="alert"` to inform assistive technologies of a time-sensitive and important message. If the message is interactive, use the ARIA `role="alertdialog"` instead.
 - **Don’t visually hide alert messages and then make them visible when they are needed.** Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.

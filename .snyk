@@ -8,11 +8,11 @@ ignore:
         expires: '2019-04-06T15:19:32.382Z'
   SNYK-JS-AUTOLINKER-73494:
     - uswds > autolinker:
-        reason: No direct upgrade or patch.
-        expires: '2021-08-12T15:27:48.619Z'
+        reason: No available update.
+        expires: '2021-12-22T15:27:27.598Z'
     - uswds > handlebars-helpers > helper-markdown > remarkable > autolinker:
-        reason: No direct upgrade or patch.
-        expires: '2021-08-12T15:27:48.619Z'
+        reason: No update available.
+        expires: '2021-12-22T15:27:27.598Z'
     - uswds > handlebars-helpers > helper-md > remarkable > autolinker:
         reason: No patch available
         expires: '2020-09-12T03:55:15.828Z'
@@ -28,6 +28,9 @@ ignore:
     - uswds > handlebars-helpers > helper-md > remarkable > autolinker:
         reason: No patch available
         expires: '2021-10-13T18:16:12.802Z'
+    - uswds > handlebars-helpers > helper-md > remarkable > autolinker:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
   SNYK-JS-DOTPROP-543489:
     - uswds > @frctl/fractal > update-notifier > configstore > dot-prop:
         reason: No fix available
@@ -708,14 +711,14 @@ ignore:
   'npm:braces:20180219':
     - uswds > nswatch > chokidar > anymatch > micromatch > braces:
         reason: No direct upgrade or patch.
-        expires: '2021-10-13T18:16:12.811Z'
+        expires: '2021-12-22T15:27:27.598Z'
   SNYK-JS-AUTOLINKER-564438:
     - uswds > autolinker:
-        reason: No direct upgrade or patch.
-        expires: '2021-08-12T15:27:48.619Z'
+        reason: No available update.
+        expires: '2021-12-22T15:27:27.597Z'
     - uswds > handlebars-helpers > helper-markdown > remarkable > autolinker:
-        reason: No direct upgrade or patch.
-        expires: '2021-08-12T15:27:48.619Z'
+        reason: No update available.
+        expires: '2021-12-22T15:27:27.598Z'
     - uswds > handlebars-helpers > helper-md > remarkable > autolinker:
         reason: No patch available
         expires: '2020-09-12T03:55:15.828Z'
@@ -731,10 +734,13 @@ ignore:
     - uswds > handlebars-helpers > helper-md > remarkable > autolinker:
         reason: No patch available
         expires: '2021-10-13T18:16:12.802Z'
+    - uswds > handlebars-helpers > helper-md > remarkable > autolinker:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
   SNYK-JS-GULPSCSSLINT-560114:
     - gulp-scss-lint:
-        reason: No upgrade or patch available.
-        expires: '2021-10-08T19:27:40.095Z'
+        reason: ' No available update.'
+        expires: '2021-12-19T21:17:42.633Z'
   SNYK-JS-HTTPPROXY-569139:
     - uswds > @frctl/fractal > browser-sync > http-proxy:
         reason: n/a
@@ -742,19 +748,19 @@ ignore:
   SNYK-JS-LODASH-450202:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No direct upgrade or patch.
-        expires: '2021-10-13T18:16:12.802Z'
+        expires: '2021-12-22T15:27:27.598Z'
   SNYK-JS-LODASH-567746:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No direct upgrade or patch.
-        expires: '2021-10-13T18:16:12.802Z'
+        expires: '2021-12-22T15:27:27.598Z'
   SNYK-JS-LODASH-73638:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No direct upgrade or patch.
-        expires: '2021-10-13T18:16:12.802Z'
+        expires: '2021-12-22T15:27:27.598Z'
   SNYK-JS-LODASH-73639:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No direct upgrade or patch.
-        expires: '2021-10-13T18:16:12.802Z'
+        expires: '2021-12-22T15:27:27.598Z'
   'npm:ua-parser-js:20180227':
     - uswds > @frctl/fractal > browser-sync > ua-parser-js:
         reason: n/a
@@ -901,14 +907,20 @@ ignore:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No direct upgrade or patch.
         expires: '2021-10-13T18:16:12.802Z'
+    - uswds > @frctl/fractal > vorpal > inquirer > lodash:
+        reason: No direct upgrade or patch.
+        expires: '2021-11-20T17:06:44.515Z'
+    - uswds > @frctl/fractal > vorpal > inquirer > lodash:
+        reason: No direct upgrade or patch.
+        expires: '2021-12-22T15:27:27.598Z'
   SNYK-JS-LODASH-608086:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No direct upgrade or patch.
-        expires: '2021-10-13T18:16:12.802Z'
+        expires: '2021-12-22T15:27:27.598Z'
   'npm:lodash:20180130':
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
-        reason: No direct upgrade or patch.
-        expires: '2021-08-12T15:27:48.619Z'
+        reason: No update available.
+        expires: '2021-12-22T15:27:27.598Z'
   SNYK-JS-TRIM-1017038:
     - uswds > @stylelint/postcss-markdown > remark > remark-parse > trim:
         reason: None given
@@ -955,6 +967,12 @@ ignore:
     - uswds > handlebars-helpers > helper-markdown > highlight.js:
         reason: No direct upgrade or patch.
         expires: '2021-10-13T18:16:12.802Z'
+    - uswds > handlebars-helpers > helper-markdown > highlight.js:
+        reason: No direct upgrade or patch.
+        expires: '2021-11-20T17:06:44.514Z'
+    - uswds > handlebars-helpers > helper-markdown > highlight.js:
+        reason: No direct upgrade or patch.
+        expires: '2021-12-22T15:27:27.598Z'
   SNYK-JS-MOCHA-561476:
     - uswds > gulp-svg-sprite > svg-sprite > mocha:
         reason: No direct upgrade or patch.
@@ -1304,6 +1322,57 @@ ignore:
     - uswds > nswatch > chokidar > anymatch > micromatch > parse-glob > glob-base > glob-parent:
         reason: None given
         expires: '2021-10-13T18:16:12.802Z'
+    - gulp > glob-watcher > chokidar > glob-parent:
+        reason: No upgrade or patch available.
+        expires: '2021-11-17T18:14:14.352Z'
+    - gulp > vinyl-fs > glob-stream > glob-parent:
+        reason: No upgrade or patch available.
+        expires: '2021-11-17T18:14:14.352Z'
+    - gulp-scss-lint > vinyl-fs > glob-stream > glob-parent:
+        reason: No upgrade or patch available.
+        expires: '2021-11-17T18:14:14.352Z'
+    - uswds > glob-stream > glob-parent:
+        reason: No direct upgrade or patch.
+        expires: '2021-11-20T17:06:44.514Z'
+    - uswds > glob-watcher > chokidar > glob-parent:
+        reason: No direct upgrade or patch.
+        expires: '2021-11-20T17:06:44.514Z'
+    - uswds > glob-base > glob-parent:
+        reason: No direct upgrade or patch.
+        expires: '2021-11-20T17:06:44.514Z'
+    - uswds > nswatch > chokidar > glob-parent:
+        reason: No direct upgrade or patch.
+        expires: '2021-11-20T17:06:44.514Z'
+    - gulp > glob-watcher > chokidar > glob-parent:
+        reason: ' No available update.'
+        expires: '2021-12-19T21:17:42.633Z'
+    - gulp > vinyl-fs > glob-stream > glob-parent:
+        reason: ' No available update.'
+        expires: '2021-12-19T21:17:42.633Z'
+    - gulp-scss-lint > vinyl-fs > glob-stream > glob-parent:
+        reason: ' No available update.'
+        expires: '2021-12-19T21:17:42.633Z'
+    - uswds > gulp > glob-watcher > chokidar > glob-parent:
+        reason: ' No available update.'
+        expires: '2021-12-19T21:17:42.633Z'
+    - uswds > gulp > vinyl-fs > glob-stream > glob-parent:
+        reason: ' No available update.'
+        expires: '2021-12-19T21:17:42.633Z'
+    - uswds > nswatch > chokidar > anymatch > micromatch > parse-glob > glob-base > glob-parent:
+        reason: ' No available update.'
+        expires: '2021-12-19T21:17:42.633Z'
+    - uswds > glob-stream > glob-parent:
+        reason: No available update.
+        expires: '2021-12-22T15:27:27.598Z'
+    - uswds > glob-watcher > chokidar > glob-parent:
+        reason: No direct upgrade or patch.
+        expires: '2021-12-22T15:27:27.598Z'
+    - uswds > glob-base > glob-parent:
+        reason: No direct upgrade or patch.
+        expires: '2021-12-22T15:27:27.598Z'
+    - uswds > nswatch > chokidar > glob-parent:
+        reason: No direct upgrade or patch.
+        expires: '2021-12-22T15:27:27.598Z'
   SNYK-JS-NODESASS-1059081:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
@@ -1343,6 +1412,12 @@ ignore:
     - uswds > @frctl/fractal > @frctl/web > browser-sync > socket.io > engine.io:
         reason: No direct upgrade or patch.
         expires: '2021-10-13T18:16:12.802Z'
+    - uswds > @frctl/fractal > @frctl/web > browser-sync > socket.io > engine.io:
+        reason: No direct upgrade or patch.
+        expires: '2021-11-20T17:06:44.514Z'
+    - uswds > @frctl/fractal > @frctl/web > browser-sync > socket.io > engine.io:
+        reason: No direct upgrade or patch.
+        expires: '2021-12-22T15:27:27.598Z'
   SNYK-JS-JSDOM-1075447:
     - uswds > jsdom:
         reason: None given
@@ -1630,6 +1705,12 @@ ignore:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No direct upgrade or patch.
         expires: '2021-10-13T18:16:12.802Z'
+    - uswds > @frctl/fractal > vorpal > inquirer > lodash:
+        reason: No direct upgrade or patch.
+        expires: '2021-11-20T17:06:44.515Z'
+    - uswds > @frctl/fractal > vorpal > inquirer > lodash:
+        reason: No direct upgrade or patch.
+        expires: '2021-12-22T15:27:27.598Z'
   SNYK-JS-LODASH-1040724:
     - gulp-sass > lodash:
         reason: None given
@@ -1913,6 +1994,12 @@ ignore:
     - uswds > @frctl/fractal > vorpal > inquirer > lodash:
         reason: No direct upgrade or patch.
         expires: '2021-10-13T18:16:12.802Z'
+    - uswds > @frctl/fractal > vorpal > inquirer > lodash:
+        reason: No direct upgrade or patch.
+        expires: '2021-11-20T17:06:44.515Z'
+    - uswds > @frctl/fractal > vorpal > inquirer > lodash:
+        reason: No direct upgrade or patch.
+        expires: '2021-12-22T15:27:27.598Z'
   SNYK-JS-HOSTEDGITINFO-1088355:
     - gulp-sass > node-sass > meow > normalize-package-data > hosted-git-info:
         reason: No direct upgrade or patch.
@@ -1938,13 +2025,19 @@ ignore:
   SNYK-JS-LODASHTEMPLATE-1088054:
     - uswds > autolinker > gulp-header > lodash.template:
         reason: No direct upgrade or patch.
-        expires: '2021-10-13T18:16:12.802Z'
+        expires: '2021-12-22T15:27:27.598Z'
     - uswds > handlebars-helpers > helper-markdown > remarkable > autolinker > gulp-header > lodash.template:
         reason: None given
         expires: '2021-10-13T18:16:12.802Z'
     - uswds > handlebars-helpers > helper-md > remarkable > autolinker > gulp-header > lodash.template:
         reason: None given
         expires: '2021-10-13T18:16:12.802Z'
+    - uswds > handlebars-helpers > helper-markdown > remarkable > autolinker > gulp-header > lodash.template:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
+    - uswds > handlebars-helpers > helper-md > remarkable > autolinker > gulp-header > lodash.template:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
   SNYK-JS-XMLDOM-1084960:
     - uswds > gulp-svg-sprite > svg-sprite > xmldom:
         reason: No direct upgrade or patch.
@@ -2100,8 +2193,8 @@ ignore:
         expires: '2021-06-06T07:01:11.151Z'
   SNYK-JS-CSSWHAT-1298035:
     - uswds > css-select > css-what:
-        reason: No direct upgrade or patch.
-        expires: '2021-08-12T15:27:48.619Z'
+        reason: No available update.
+        expires: '2021-12-22T15:27:27.598Z'
     - gulp-svg-sprite > svg-sprite > svgo > css-select > css-what:
         reason: None given
         expires: '2021-07-17T05:29:00.678Z'
@@ -2114,6 +2207,15 @@ ignore:
     - uswds > gulp-svg-sprite > svg-sprite > svgo > css-select > css-what:
         reason: None given
         expires: '2021-10-13T18:16:12.802Z'
+    - gulp-svg-sprite > svg-sprite > svgo > css-select > css-what:
+        reason: No upgrade or patch available.
+        expires: '2021-11-17T18:14:14.352Z'
+    - uswds > gulp-svg-sprite > svg-sprite > svgo > css-select > css-what:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
+    - gulp-svg-sprite > svg-sprite > svgo > css-select > css-what:
+        reason: ' No available update.'
+        expires: '2021-12-19T21:17:42.633Z'
   SNYK-JS-TRIMNEWLINES-1298042:
     - gulp-sass > node-sass > meow > trim-newlines:
         reason: None given
@@ -2125,7 +2227,7 @@ ignore:
   SNYK-JS-SETGETTER-1303099:
     - uswds > create-frame > lazy-cache > set-getter:
         reason: No direct upgrade or patch.
-        expires: '2021-10-13T18:16:12.803Z'
+        expires: '2021-12-22T15:27:27.598Z'
     - uswds > handlebars-helpers > lazy-cache > set-getter:
         reason: None given
         expires: '2021-10-13T18:16:12.803Z'
@@ -2141,6 +2243,21 @@ ignore:
     - uswds > handlebars-helpers > logging-helpers > log-utils > ansi-colors > lazy-cache > set-getter:
         reason: None given
         expires: '2021-10-13T18:16:12.803Z'
+    - uswds > handlebars-helpers > lazy-cache > set-getter:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
+    - uswds > handlebars-helper-create-frame > create-frame > lazy-cache > set-getter:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
+    - uswds > handlebars-helpers > create-frame > lazy-cache > set-getter:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.314Z'
+    - uswds > handlebars-helpers > handlebars-helper-create-frame > create-frame > lazy-cache > set-getter:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.314Z'
+    - uswds > handlebars-helpers > logging-helpers > log-utils > ansi-colors > lazy-cache > set-getter:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.314Z'
   SNYK-JS-XMLDOM-1534562:
     - gulp-svg-sprite > svg-sprite > xmldom:
         reason: None given
@@ -2437,6 +2554,84 @@ ignore:
     - uswds > resemblejs > canvas > @mapbox/node-pre-gyp > npmlog > gauge > wide-align > string-width > strip-ansi > ansi-regex:
         reason: None given
         expires: '2021-10-13T18:16:12.802Z'
+    - gulp-eslint > eslint > inquirer > strip-ansi > ansi-regex:
+        reason: No available update or patch.
+        expires: '2021-11-17T16:48:29.977Z'
+    - gulp-eslint > eslint > inquirer > string-width > strip-ansi > ansi-regex:
+        reason: No available update or patch.
+        expires: '2021-11-17T16:48:29.977Z'
+    - gulp-eslint > eslint > strip-ansi > ansi-regex:
+        reason: No upgrade or patch available.
+        expires: '2021-11-17T18:14:14.352Z'
+    - gulp-eslint > eslint > table > string-width > strip-ansi > ansi-regex:
+        reason: No upgrade or patch available.
+        expires: '2021-11-17T18:14:14.352Z'
+    - uswds > gulp-eslint > eslint > strip-ansi > ansi-regex:
+        reason: None given
+        expires: '2021-11-20T17:06:44.514Z'
+    - uswds > @mapbox/node-pre-gyp > npmlog > gauge > string-width > strip-ansi > ansi-regex:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
+    - uswds > canvas > @mapbox/node-pre-gyp > npmlog > gauge > string-width > strip-ansi > ansi-regex:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
+    - uswds > resemblejs > canvas > @mapbox/node-pre-gyp > npmlog > gauge > string-width > strip-ansi > ansi-regex:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
+    - uswds > mocha > yargs > string-width > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
+    - uswds > mocha > yargs > cliui > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
+    - uswds > mocha > yargs > cliui > string-width > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
+    - uswds > mocha > yargs-unparser > yargs > string-width > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
+    - uswds > mocha > yargs > cliui > wrap-ansi > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
+    - uswds > mocha > yargs-unparser > yargs > cliui > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
+    - uswds > mocha > yargs > cliui > wrap-ansi > string-width > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
+    - uswds > mocha > yargs-unparser > yargs > cliui > string-width > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
+    - uswds > mocha > yargs-unparser > yargs > cliui > wrap-ansi > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
+    - uswds > mocha > yargs-unparser > yargs > cliui > wrap-ansi > string-width > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
+    - uswds > mocha > wide-align > string-width > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
+    - uswds > @mapbox/node-pre-gyp > npmlog > gauge > wide-align > string-width > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
+    - uswds > canvas > @mapbox/node-pre-gyp > npmlog > gauge > wide-align > string-width > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
+    - uswds > resemblejs > canvas > @mapbox/node-pre-gyp > npmlog > gauge > wide-align > string-width > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
+    - gulp-eslint > eslint > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
+    - gulp-eslint > eslint > table > string-width > strip-ansi > ansi-regex:
+        reason: No available update.
+        expires: '2021-12-19T21:17:42.633Z'
+    - uswds > gulp-eslint > eslint > table > string-width > strip-ansi > ansi-regex:
+        reason: ' No available update.'
+        expires: '2021-12-19T21:17:42.633Z'
+    - uswds > gulp-eslint > eslint > strip-ansi > ansi-regex:
+        reason: No update available.
+        expires: '2021-12-22T15:27:27.598Z'
   SNYK-JS-AXIOS-1579269:
     - uswds > @frctl/fractal > @frctl/web > browser-sync > localtunnel > axios:
         reason: None given
@@ -3000,10 +3195,226 @@ ignore:
     - uswds > gulp > gulp-cli > matchdep > findup-sync > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > union-value > set-value:
         reason: None given
         expires: '2021-10-13T18:16:12.811Z'
+    - gulp > glob-watcher > chokidar > braces > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.977Z'
+    - gulp > glob-watcher > anymatch > micromatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.977Z'
+    - gulp > gulp-cli > matchdep > micromatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.977Z'
+    - gulp > glob-watcher > chokidar > braces > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.977Z'
+    - gulp > glob-watcher > anymatch > micromatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.977Z'
+    - gulp > gulp-cli > matchdep > micromatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > glob-watcher > anymatch > micromatch > braces > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > gulp-cli > matchdep > micromatch > braces > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > glob-watcher > anymatch > micromatch > extglob > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > gulp-cli > matchdep > micromatch > extglob > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > glob-watcher > anymatch > micromatch > nanomatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > gulp-cli > matchdep > micromatch > nanomatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > snapdragon > base > cache-base > set-value:
+        reason: No available patch or update.
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > glob-watcher > anymatch > micromatch > braces > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > gulp-cli > matchdep > micromatch > braces > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > glob-watcher > anymatch > micromatch > extglob > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > gulp-cli > matchdep > micromatch > extglob > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > glob-watcher > anymatch > micromatch > nanomatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > gulp-cli > matchdep > micromatch > nanomatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > braces > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > braces > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > braces > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > braces > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > glob-watcher > anymatch > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > gulp-cli > matchdep > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > extglob > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > extglob > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > extglob > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > extglob > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > nanomatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > nanomatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > nanomatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > nanomatch > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > braces > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > braces > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > braces > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > braces > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.978Z'
+    - gulp > glob-watcher > anymatch > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.979Z'
+    - gulp > gulp-cli > matchdep > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.979Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > extglob > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.979Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > extglob > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.979Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > extglob > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.979Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > extglob > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.979Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > nanomatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.979Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > nanomatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.979Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > nanomatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.979Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > nanomatch > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.979Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.979Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.979Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.979Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.980Z'
+    - gulp > glob-watcher > chokidar > anymatch > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.980Z'
+    - gulp > glob-watcher > chokidar > readdirp > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.980Z'
+    - gulp > gulp-cli > liftoff > findup-sync > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.980Z'
+    - gulp > gulp-cli > matchdep > findup-sync > micromatch > extglob > expand-brackets > snapdragon > base > cache-base > union-value > set-value:
+        reason: None given
+        expires: '2021-11-17T16:48:29.980Z'
   SNYK-JS-NTHCHECK-1586032:
     - gulp-svg-sprite > svg-sprite > svgo > css-select > nth-check:
         reason: No upgrade or patch available.
         expires: '2021-10-21T13:30:56.739Z'
+    - gulp-svg-sprite > svg-sprite > svgo > css-select > nth-check:
+        reason: No upgrade or patch available.
+        expires: '2021-12-22T15:27:27.598Z'
+    - uswds > css-select > nth-check:
+        reason: No direct upgrade or patch.
+        expires: '2021-11-20T17:06:44.514Z'
+    - uswds > gulp-svg-sprite > svg-sprite > svgo > css-select > nth-check:
+        reason: No available patch or upgrade.
+        expires: '2021-11-25T17:50:38.313Z'
+    - uswds > css-select > nth-check:
+        reason: No available update.
+        expires: '2021-12-22T15:27:27.598Z'
+  SNYK-JS-STYLELINT-1585622:
+    - uswds > stylelint:
+        reason: No available update.
+        expires: '2021-12-22T15:27:27.598Z'
+  SNYK-JS-SHELLQUOTE-1766506:
+    - uswds > browserify > shell-quote:
+        reason: None given
+        expires: '2021-11-26T22:56:17.564Z'
+    - browserify > shell-quote:
+        reason: No patch or update available.
+        expires: '2021-12-01T16:21:49.009Z'
+  SNYK-JS-JSONSCHEMA-1920922:
+    - gulp-svg-sprite > svg-sprite > phantomjs-prebuilt > request > http-signature > jsprim > json-schema:
+        reason: ' No available update.'
+        expires: '2021-12-19T21:17:42.633Z'
+    - uswds > gulp-svg-sprite > svg-sprite > phantomjs-prebuilt > request > http-signature > jsprim > json-schema:
+        reason: ' No available update.'
+        expires: '2021-12-19T21:17:42.633Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

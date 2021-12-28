@@ -39,12 +39,12 @@ formats it understands, and it will generate a web site automatically.
   modify it to suit our needs.
 
 * **It's easy to use.** Fractal supports some of the same, user-friendly file
-  formats as Jekyll, such as [Markdown] and [YAML]; and it comes with a handy
+  formats as Jekyll, such as [Markdown] and [YAML] (both described on Wikipedia); and it comes with a handy
   development server that reloads the site automatically whenever you change a
   file.
 
 * It generates **standalone HTML previews of each component**, which we can use
-  for [accessibility][accessibility testing], [cross-browser], [performance]({{
+  for [accessibility][accessibility testing] (see W3C), [cross-browser] (see Smashing Magazine), [performance]({{
   site.baseurl }}/performance/), and [visual regression] testing.
 
 * **It uses or supports many of the technologies we use already** (or intend to
@@ -63,7 +63,7 @@ Fractal's component-oriented architecture nudged us to consider how each of
 their moving parts, and how do their "variants" (for instance, our [basic]({{
 site.baseurl }}/components/header/#basic-header) and [extended]({{ site.baseurl
 }}/components/header/#extended-header) headers) differ from one another? The process
-of adapting our components to Fractal produced a basic [interface inventory],
+of adapting our components to Fractal produced a basic [interface inventory] (described in the Brad Frost blog),
 which shows us exactly where we are right now, and the interactive previews
 give us the confidence to make bigger changes because we can immediately see
 their impacts on various aspects of the Standards.
@@ -111,11 +111,11 @@ previews". Whenever we push commits to a branch on GitHub, Federalist
 builds a new version of the site and publishes it at a predictable URL. For
 instance, you can see the current state of our [`develop` branch
 preview]({{ page.preview_baseurl }}/develop/), or you can kick the tires of
-our [forthcoming version 1.1.0 release][1.1.0 pre-release] on the
+our [forthcoming version 1.1.0 release] (see GitHub) [1.1.0 pre-release] on the
 [`release-1.1.0-pre` branch]({{ page.preview_baseurl
 }}/release-1.1.0-pre/).
 
-Federalist hosts other websites across government and is open for business. If you're interested in using it to host and preview your own federal static sites, please [get in touch with that team!](https://docs.google.com/forms/d/1iB8aW7c9r1QH3s8XElQCrnXRGjAiPUYpWG1CMeEqGIo/viewform)
+Federalist hosts other websites across government and is open for business. If you're interested in using it to host and preview your own federal static sites, please [get in touch with that team using the Google Form!](https://docs.google.com/forms/d/1iB8aW7c9r1QH3s8XElQCrnXRGjAiPUYpWG1CMeEqGIo/viewform)
 
 Equipped with Fractal and Federalist's automatically published URLs, we can add
 preview links to each of our GitHub pull requests, and more quickly collect
@@ -127,7 +127,7 @@ request branch name:
 ### [:eyes: Preview on Federalist]({{ page.preview_baseurl }}/{BRANCH}/)
 ```
 
-The resulting [pull request][example PR] description looks like this:
+The resulting [pull request][example PR] description on GitHub looks like this:
 
 [![A GitHub pull request with Fractal preview link]({{ site.baseurl }}/img/updates/federalist-preview-link.png)][example PR]
 
@@ -149,7 +149,7 @@ includes the git branch in its preview URLs. This means you can link directly
 to the [JavaScript]({{ page.preview_baseurl
 }}/release-1.1.0-pre/dist/js/uswds.min.js) or [CSS]({{ page.preview_baseurl
 }}/release-1.1.0-pre/dist/css/uswds.min.css) from our [version 1.1.0
-pre-release][1.1.0 pre-release] once you know the URL format:
+pre-release][1.1.0 pre-release] (see GitHub) once you know the URL format:
 
 ```
 {{ page.preview_baseurl }}/release-{VERSION}/dist/{FILENAME}
@@ -166,7 +166,7 @@ Having these public, predictable URLs make it easier for us to create test
 cases with "live-coding" tools such as [JSFiddle](https://jsfiddle.net) and
 [CodePen](https://codepen.io). We used JSFiddle to create a [live test
 case](https://jsfiddle.net/47Lpu62z/9/) for [this accordion
-bug](https://github.com/uswds/uswds/issues/1762) that references
+bug](https://github.com/uswds/uswds/issues/1762) (shown on GitHub) that references
 the JavaScript from a branch to demonstrate the proposed fix. In this case, the
 reporter of the issue was able to download that same script and confirm the fix
 on their project!
@@ -184,12 +184,12 @@ our components, variants, page templates, and related documentation.
 If you have a suggestion, see something amiss, or just want to say hi, feel
 free to [file an issue on GitHub]({{ page.github_baseurl }}/issues/new),
 [email our mailing list](mailto:uswebdesignstandards@gsa.gov), or join our
-[public Slack channel](https://chat.18f.gov/).
+[public Slack channel](https://chat.18f.gov/) via Google Form.
 
 
 [1.1.0 pre-release]: {{ page.github_baseurl }}/releases/tag/v1.1.0-pre
 [Drupal twig]: https://www.drupal.org/docs/8/theming/twig
-[Federalist]: https://federalist.fr.cloud.gov
+[Federalist]: https://federalist.18f.gov/
 [Fractal]: http://fractal.build
 [GitHub Pages]: https://pages.github.com/
 [GitHub repository]: {{ page.github_baseurl }}
@@ -198,7 +198,7 @@ free to [file an issue on GitHub]({{ page.github_baseurl }}/issues/new),
 [Markdown]: https://en.wikipedia.org/wiki/Markdown
 [Node.js]: https://nodejs.org/
 [Nunjucks]: https://mozilla.github.io/nunjucks/
-[Twig]: https://twig.sensiolabs.org/
+[Twig]: https://twig.symfony.com/
 [YAML]: https://en.wikipedia.org/wiki/YAML
 [accessibility testing]: https://www.w3.org/wiki/Accessibility_testing
 [cross-browser]: https://www.smashingmagazine.com/2016/02/high-impact-minimal-effort-cross-browser-testing/
@@ -208,4 +208,4 @@ free to [file an issue on GitHub]({{ page.github_baseurl }}/issues/new),
 [open source]: https://opensource.org/
 [phase 3]: {{ page.github_baseurl }}/issues/1862
 [unpkg]: https://unpkg.com/
-[visual regression]: https://visualregressiontesting.com/
+[visual regression]: https://www.browserstack.com/guide/visual-regression-testing

@@ -1429,17 +1429,16 @@ code[class*="language-plaintext"] {
 
 // External link styles
 #{$external-href} {
-  @include external-link(
-    usa-icons-bg/launch--blue-60v,
-    usa-icons-bg/launch--blue-70v
-  );
+  @include external-link;
+}
+
+//resolve line break issue for masked :after icon
+.usa-identifier__required-link {
+  display: inline;
 }
 
 .usa-link--alt#{$external-href} {
-  @include external-link(
-    usa-icons-bg/launch--gray-5,
-    usa-icons-bg/launch--white
-  );
+  @include external-link;
 }
 
 .usa-button,

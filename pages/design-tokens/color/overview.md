@@ -208,4 +208,4 @@ If we use color intentionally, consistently, and sensitively, it can make a big 
 
 ## Tools
 - USWDS Color Tool from CivicActions
-  [https://civicactions.github.io/uswds-color-tool/#about-toggle](https://civicactions.github.io/uswds-color-tool/#about-toggle){:.display-block}
+  [https://civicactions.github.io/uswds-color-tool/#about-toggle](https://civicactions.github.io/uswds-color-tool){:.display-block}: Convert any hex color into its closest USWDS equivalent

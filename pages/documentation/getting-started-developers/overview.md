@@ -1,0 +1,49 @@
+---
+permalink: /documentation/getting-started-for-developers/
+layout: styleguide
+title: Getting started for developers
+lead: Get started using the design system by installing, compiling, and customizing USWDS code
+category: How to use USWDS
+type: docs
+subnav:
+  - href: /documentation/getting-started/developers/phase-one-install/
+  - href: /documentation/getting-started/developers/phase-two-compile/
+  - href: /documentation/getting-started/developers/phase-three-customize/
+redirect_from:
+  - /documentation/fundamentals/
+---
+
+## Before getting started
+USWDS includes over 40 accessible, mobile-friendly components out of the box, ensuring visual consistency and saving developers the need to build everything from scratch for their web-design and -redesign projects.
+
+USWDS also provides tools and solutions that make it simple to comply with legal requirements, such as the 21st Century Integrated Digital Experience Act and Section 508 of the Rehabilitation Act, like [a simple way to pick accessible colors]({{ site.baseurl }}/design-tokens/color/overview/#color-and-accessibility) or [a component that displays required links]({{ site.baseurl }}/components/identifier/).
+
+You don't need to understand the following concepts to install the design system, but you will need to know them to build with it:
+
+- [Design tokens]({{ site.baseurl }}/design-tokens/): Design tokens are predefined units of color, spacing, typography, opacity, and more that form the building blocks of the design system.
+- [Components]({{ site.baseurl }}/components/overview): Components are simple and consistent solutions to common user interface needs, like form fields, buttons, and icons. If design tokens are the building blocks of the design system, components are the building blocks of a site or service.
+- [Utilities]({{ site.baseurl }}/utilities/): Utilities are single-purpose classes mapped to USWDS design tokens. Utilities allow developers to prototype with design system utilities without writing Sass or CSS.
+- [Implementations]({{ site.baseurl }}/documentation/implementations/): Implementations are how teams use USWDS in their projects, like in Drupal, as well as other platforms and frameworks. We'll link to projects and community supported implementations. 
+
+The USWDS community is a great resource. If you have any questions during, before, and/or after getting started, please reach out via GitHub, Slack, or email!
+
+## What you need
+We recommend using the following tools when working with USWDS:
+- Node (our version is specified in the [.nvmrc file](https://github.com/uswds/uswds/blob/main/.nvmrc); currently v16)
+- npm
+- Sass (use [the latest version](https://nodejs.org/en/download/); we use [the latest `sass` package from npm](https://www.npmjs.com/package/sass))
+
+These step-by-step instructions describe how to get started with USWDS using npm (recommended method).
+
+If npm is not a viable tool for your project, however, you can [download and install the system directly](https://github.com/uswds/uswds#download-and-install) as outlined in GitHub.
+
+We’ve designed USWDS to support older and newer browsers through [progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement). The design system follows the [2% rule](https://gds.blog.gov.uk/2012/01/25/support-for-browsers/): we officially support any browser above 2% usage as observed by [analytics.usa.gov](https://analytics.usa.gov/). In other words, USWDS version 2.0 supports Chrome, Firefox, Safari, Edge, and Internet Explorer 11 and up. The next major version of USWDS (3.0) will drop support of Internet Explorer 11.
+
+## Step-by-step
+Get started with USWDS by installing the design system on your project, compiling your project's Sass from the USWDS source, and customizing the design system to fit your project needs as outlined in the following phases:
+
+[**Phase 1: Install**]({{ site.baseurl }}/documentation/getting-started/developers/phase-one-install/) →
+
+[**Phase 2: Compile**]({{ site.baseurl }}/documentation/getting-started/developers/phase-two-compile/) →
+
+[**Phase 3: Customize**]({{ site.baseurl }}/documentation/getting-started/developers/phase-three-customize/) →

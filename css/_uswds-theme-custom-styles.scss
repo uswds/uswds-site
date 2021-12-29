@@ -383,7 +383,6 @@ body {
 
     &::after {
       border-radius: 0;
-      bottom: units(0);
       background-color: color($site-primary-vivid);
       bottom: units(-1px);
       left: units($site-border-width) * -1;
@@ -1433,6 +1432,11 @@ code[class*="language-plaintext"] {
   @include external-link;
 }
 
+//resolve line break issue for masked :after icon
+.usa-identifier__required-link {
+  display: inline;
+}
+
 .usa-link--alt#{$external-href} {
   @include external-link;
 }
@@ -1967,9 +1971,6 @@ li {
   @include u-margin-left(2px);
   @include u-margin-y(0);
   @include u-text("normal", "uppercase", "ls-1");
-}
-
-.utilities-properties {
 }
 
 .utilities-property {

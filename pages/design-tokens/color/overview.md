@@ -207,5 +207,5 @@ If we use color intentionally, consistently, and sensitively, it can make a big 
   [https://www.w3.org/TR/low-vision-needs/](https://www.w3.org/TR/low-vision-needs/){:.display-block}
 
 ## Tools
-- USWDS Color Tool from CivicActions
-  [https://civicactions.github.io/uswds-color-tool/#about-toggle](https://civicactions.github.io/uswds-color-tool){:.display-block}: Convert any hex color into its closest USWDS equivalent
+- USWDS Color Tool from CivicActions: Convert any hex color into its closest USWDS equivalent
+  [https://civicactions.github.io/uswds-color-tool/#about-toggle](https://civicactions.github.io/uswds-color-tool){:.display-block}

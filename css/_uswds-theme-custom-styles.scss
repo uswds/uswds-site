@@ -1432,11 +1432,6 @@ code[class*="language-plaintext"] {
   @include external-link;
 }
 
-//resolve line break issue for masked :after icon
-.usa-identifier__required-link {
-  display: inline;
-}
-
 .usa-link--alt#{$external-href} {
   @include external-link;
 }
@@ -3764,4 +3759,10 @@ p + .pagination-behaviors--examples {
   @include at-media("tablet") {
     height: units(4);
   }
+}
+
+.site-identifier {
+  .usa-identifier__required-link {
+    display: block;
+  } 
 }

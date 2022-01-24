@@ -40,6 +40,8 @@ redirect_from:
 
 {:.border-top-05.border-primary.padding-top-3.margin-top-6}
 
+## Before getting started with USWDS
+
 ## Adopt USWDS incrementally
 
 <div class="">

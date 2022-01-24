@@ -13,21 +13,10 @@ redirect_from:
   - /documentation/fundamentals/
 ---
 
-## Before getting started
-USWDS includes over 40 accessible, mobile-friendly components out of the box, ensuring consistency and saving developers the need to build everything from scratch for their web-design and -redesign projects.
+Getting started for developers will lead you, step-by-step, through the process of installing and compiling the Design System and using comeponents and design tokens to customize your project. If you prefer a hands-on demonstration of this process, please check out [our interactive tutorial](https://github.com/uswds/uswds-tutorial), which will take you through the same steps using a pre-made example website.
 
-[Components]({{ site.baseurl }}/components/overview/) are built from (and further customizable based on) [tokens]({{ site.baseurl }}/design-tokens/). Akin to atoms in an atomic-design methodology, tokens are the design system's predefined units of color, spacing, typography, and opacity that form the building blocks of design.
+As always, we're here for you if you have any questions. Please get in touch via GitHub, Slack, or email!
 
-USWDS also provides tools and solutions that make it simpler to comply with legal requirements, such as the 21st Century Integrated Digital Experience Act and Section 508 of the Rehabilitation Act, like [a simple way to pick accessible colors]({{ site.baseurl }}/design-tokens/color/overview/#color-and-accessibility) or [a component that displays required links]({{ site.baseurl }}/components/identifier/).
-
-## Key concepts
-The following are concepts fundamental to the design system:
-- [Design tokens]({{ site.baseurl }}/design-tokens/): Design tokens are predefined units of color, spacing, typography, opacity, and more that form the building blocks of the design system.
-- [Components]({{ site.baseurl }}/components/overview): Components are simple and consistent solutions to common user interface needs, like form fields, buttons, and icons. If tokens are the building blocks of the design system, components are the building blocks of a site or service.
-- [Utilities]({{ site.baseurl }}/utilities/): Utilities are single-purpose classes mapped to USWDS tokens. Utilities allow developers to prototype with design system utilities without writing Sass or CSS.
-- [Implementations]({{ site.baseurl }}/documentation/implementations/): Implementations are how teams use USWDS in their projects, like in Drupal, as well as other platforms and frameworks. We'll link to projects and community supported implementations. 
-
-You don't need to understand these concepts to install the design system, but you will need to know them to build with it.
 
 ## What you need
 We recommend using the following tools when working with USWDS:

@@ -3,7 +3,7 @@ title: Design principles
 permalink: /design-principles/
 layout: styleguide
 category: Design principles
-lead: USWDS Design Principles support and reflect the important guidance codified in the [21st Century Integrated Digital Experience Act](https://digital.gov/resources/21st-century-integrated-digital-experience-act/). These design principles are intended to help teams across government align on important common goals and better use the design system — to be an evaluative lens for design and implementation decisions. Regardless of how you build, any USWDS project should  support these principles.
+lead: USWDS design principles support and reflect the important guidance codified in the [21st Century Integrated Digital Experience Act](https://digital.gov/resources/21st-century-integrated-digital-experience-act/). These design principles are intended to help teams across government align on important common goals and better use the Design System — to be an evaluative lens for design and implementation decisions. Regardless of how you build, these principles should support your project.
 redirect_from:
   - /principles/
 subnav:
@@ -26,7 +26,7 @@ subnav:
 ## Start with real user needs
 
 {:.font-lang-7}
-**Real user needs should inform product decisions.** Whether our audience includes members of the public or government employees, decision-makers must include real people in our design process from the beginning. Then, we need to test the assumptions we make and the products and services we build with real people, to keep us focused on what is most useful and important.
+**Real user needs should inform product decisions.** Whether our audience includes members of the public or government employees, decision-makers must include real people in our design process from the beginning. Then, we need to test the assumptions we make and the products and services we build with real people to keep us focused on what is most useful and important.
 
 ### Key considerations
 

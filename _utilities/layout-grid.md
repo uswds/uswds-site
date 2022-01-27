@@ -59,7 +59,7 @@ subnav:
 
 This example code creates three equal-width columns on tablet, desktop, and widescreen devices by using our predefined grid classes. Those columns are centered in the page with the parent `grid-container` container.
 
-The following sections break the layoutgrid down and describe how it works.
+The following sections break the layout grid down and describe how it works.
 
 ### Containers, rows, and columns
 

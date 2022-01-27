@@ -5,11 +5,11 @@ redirect_from:
 - /about/history/
 layout: styleguide
 category: About
-lead: Here you can find the latest news and information about the U.S. Web Design System. Read our latest release notes, learn about USWDS’s impact in the government, and learn how we conduct user research to continuously improve our product and process.
+lead: Here, you will find the latest news and information about the U.S. Web Design System. Read our latest release notes and learn about our impact in the government and how we conduct user research to continuously improve our product and process.
 ---
 
 ## Our vision
-Empowered agency digital teams share solutions and use effective human-centered design practices.
+Empowered agency digital teams who share solutions and use effective human-centered design practices.
 
 {:.margin-top-4}
 ## Our mission

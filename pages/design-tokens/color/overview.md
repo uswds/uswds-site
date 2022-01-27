@@ -18,6 +18,10 @@ subnav:
     href: '#uswds-color-wheels'
   - text: Color guidance
     href: '#general-color-guidance'
+  - text: References
+    href: '#references'
+  - text: Tools
+    href: '#tools'
 ---
 
 ## Introduction
@@ -32,7 +36,7 @@ USWDS organizes its colors tokens into [theme tokens]({{ site.baseurl }}/design-
 {:.font-lang-xs.color-ink.text-bold.text-ls-2.margin-top-0.text-uppercase}
 ### Color, color family, and grade
 
-Throughout our documentation and guidance, we’ll use use the terms color, color family, and grade, but what do we mean when we use them?
+Throughout our documentation and guidance, we’ll use the terms color, color family, and grade, but what do we mean when we use them?
 
 **Color** is any specific swatch in our token palettes, like `red-50`, `primary-base`, or `indigo-warm-60v`.
 
@@ -43,7 +47,7 @@ Throughout our documentation and guidance, we’ll use use the terms color, colo
 </div>
 
 ## Color and accessibility
-Color is powerful but unreliable — its effects are neither consistent nor predictable across a population. [Approximately 0.5% of adult women and 8% of adult men](https://nei.nih.gov/health/color_blindness/facts_about) (4.5% of the total population) have some kind of color insensitivity. Color insensitivity can make it difficult to distinguish hues (red/green color blindness is the most common form), and some rare conditions prevent the perception of hue altogether. Commonplace vision problems like short- and near-sightedness and astigmatism (among others) also affect how well folks perceive color and contrast.
+Color is powerful but unreliable — its effects are neither consistent nor predictable across a population. [Per NIH, color insensitivity impacts approximately 0.5% of adult women and 8% of adult men](https://nei.nih.gov/health/color_blindness/facts_about) (4.5% of the total population). Color insensitivity can make it difficult to distinguish hues (red/green color blindness is the most common form), and some rare conditions prevent the perception of hue altogether. Commonplace vision problems like short- and near-sightedness and astigmatism (among others) also affect how well folks perceive color and contrast.
 
 Accessibility is not a special case. In Q2 of 2018, [sites using USWDS topped 1.4 billion pageviews]({{ site.baseurl }}/about/whats-new/). 4.5% of 1.4 billion is around 60 million pageviews — when it comes to accessibility, thinking broadly and inclusively isn’t just a good idea, it’s our mission and responsibility.
 
@@ -201,3 +205,7 @@ If we use color intentionally, consistently, and sensitively, it can make a big 
   [https://w3c.github.io/wcag/coga/gap-analysis.html](https://w3c.github.io/wcag/coga/gap-analysis.html){:.display-block}
 - W3C: Low vision needs
   [https://www.w3.org/TR/low-vision-needs/](https://www.w3.org/TR/low-vision-needs/){:.display-block}
+
+## Tools
+- USWDS Color Tool from CivicActions: Convert any hex color into its closest USWDS equivalent
+  [https://civicactions.github.io/uswds-color-tool](https://civicactions.github.io/uswds-color-tool){:.display-block}

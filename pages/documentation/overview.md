@@ -15,7 +15,7 @@ redirect_from:
   <div class="tablet:grid-col display-flex flex-align-stretch">
     <div class="site-docs-card-link">
       <h3 class="font-lang-lg margin-0">
-        <a href="{{ site.baseurl }}/getting-started/developers/" class="text-no-underline text-primary hover:text-underline block-link">Developers</a>
+        <a href="{{ site.baseurl }}/documentation/getting-started-for-developers/" class="text-no-underline text-primary hover:text-underline block-link">Developers</a>
       </h3>
       <p class="margin-top-1">Get started with our code base by downloading the code as a zip file, or installing with npm.</p>
     </div>
@@ -23,7 +23,7 @@ redirect_from:
   <div class="margin-top-2 tablet:margin-top-0 tablet:grid-col display-flex flex-align-stretch">
     <div class="site-docs-card-link">
       <h3 class="font-lang-lg margin-0">
-        <a href="{{ site.baseurl }}/getting-started/designers/" class="text-no-underline text-primary hover:text-underline block-link">Designers</a>
+        <a href="{{ site.baseurl }}/documentation/getting-started-for-designers/" class="text-no-underline text-primary hover:text-underline block-link">Designers</a>
       </h3>
       <p class="margin-top-1">Create wireframes and prototypes in Sketch or Adobe XD.</p>
     </div>
@@ -39,6 +39,23 @@ redirect_from:
 </div>
 
 {:.border-top-05.border-primary.padding-top-3.margin-top-6}
+
+## Before getting started with USWDS
+
+USWDS includes over 40 accessible, mobile-friendly components out of the box, ensuring consistency and saving teams the need to build everything from scratch for their web-design and -redesign projects.
+
+USWDS also provides tools and solutions, including [a simple way to pick accessible colors]({{ site.baseurl }}/design-tokens/color/overview/#color-and-accessibility) or [a component that displays required links]({{ site.baseurl }}/components/identifier/), that make it easy to comply with legal requirements, such as the 21st Century Integrated Digital Experience Act and Section 508 of the Rehabilitation Act.
+
+### Key concepts and tools
+
+You don’t need to understand the following concepts and tools to install the design system, but you will need to know them to build with it:
+
+- [Design tokens]({{ site.baseurl }}/design-tokens/): Design tokens are predefined units of color, spacing, typography, opacity, and more that form the building blocks of the design system.
+- [Components]({{ site.baseurl }}/components/overview): Components are simple and consistent solutions to common user interface needs, like form fields, buttons, and icons. If tokens are the building blocks of the design system, components are the building blocks of a site or service.
+- [Utilities]({{ site.baseurl }}/utilities/): Utilities are single-purpose classes mapped to USWDS tokens. Utilities allow developers to prototype with design system utilities without writing Sass or CSS.
+- [Implementations]({{ site.baseurl }}/documentation/implementations/): Implementations are how teams use USWDS in their projects, like in Drupal, as well as other platforms and frameworks. We'll link to projects and community supported implementations. 
+
+We’ve created these resources to help designers start prototyping and developers start building quickly and establish a shared language to promote effective collaboration through the process of customizing and updating content. The [USWDS community](https://designsystem.digital.gov/about/community/) is also a resource available to you. Please get in touch with any questions, recommendations, before, during, and/or after getting started.
 
 ## Adopt USWDS incrementally
 

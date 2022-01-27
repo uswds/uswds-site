@@ -383,7 +383,6 @@ body {
 
     &::after {
       border-radius: 0;
-      bottom: units(0);
       background-color: color($site-primary-vivid);
       bottom: units(-1px);
       left: units($site-border-width) * -1;
@@ -485,16 +484,6 @@ body {
   }
 }
 
-// Ensure the homepage accordion displays properly
-// TODO: make sure line height is added in USWDS accordion component and that
-// list styles don't override accordion styles
-#main-content {
-  // scss-lint:disable IdSelector
-  .usa-accordion__button {
-    line-height: 1;
-  }
-}
-
 .site-h2 {
   @include typeset("lang", "xl", 2);
   color: color($site-ink);
@@ -578,6 +567,7 @@ body {
 %label-maturity {
   @include typeset("lang", "2xs", 4);
   color: color("ink");
+  display: inline-block;
   font-weight: font-weight("bold");
   margin-left: units(1.5);
   position: absolute;
@@ -619,6 +609,16 @@ body {
   @extend %label-maturity;
   background-color: color("red-50v");
   color: color("white");
+}
+
+.label-archived {
+  @extend %label-maturity;
+  @include set-text-and-bg("red-30");
+}
+
+.label-stale {
+  @extend %label-maturity;
+  @include set-text-and-bg("yellow-20v");
 }
 
 .heading-margin-alt {
@@ -1429,7 +1429,11 @@ code[class*="language-plaintext"] {
 
 // External link styles
 #{$external-href} {
-  @include external-link(external-link, external-link-hover);
+  @include external-link;
+}
+
+.usa-link--alt#{$external-href} {
+  @include external-link;
 }
 
 .usa-button,
@@ -1644,7 +1648,6 @@ code[class*="language-plaintext"] {
 .page-product-roadmap {
   .main-content {
     .usa-tag {
-      display: inline-block;
       position: relative;
     }
   }
@@ -1963,9 +1966,6 @@ li {
   @include u-margin-left(2px);
   @include u-margin-y(0);
   @include u-text("normal", "uppercase", "ls-1");
-}
-
-.utilities-properties {
 }
 
 .utilities-property {
@@ -3711,5 +3711,59 @@ body {
 .site-accordion-code.site-component-preview {
   .usa-accordion__content {
     overflow: visible;
+  }
+}
+
+blockquote {
+  @include u-border-left("1px", "primary");
+  margin-left: 0;
+  padding-left: units(2);
+}
+
+@import "custom-styles/card-policy";
+@import "custom-styles/highlight";
+
+.pagination-behaviors {
+  @include list-reset;
+}
+
+.pagination-behaviors--item {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid color("base-light");
+  @include at-media("tablet") {
+    flex-direction: row;
+  }
+}
+
+.pagination-behaviors--guidance,
+.pagination-behaviors--examples {
+  @include u-flex(auto);
+}
+
+.pagination-behaviors--guidance {
+  @include at-media("tablet") {
+    padding-right: units(4);
+    width: 60%;
+  }
+}
+
+p + .pagination-behaviors--examples {
+  margin-top: 0;
+}
+
+.pagination-behaviors--example {
+  @include u-margin-y(1.5);
+  display: block;
+  width: auto;
+
+  @include at-media("tablet") {
+    height: units(4);
+  }
+}
+
+.site-identifier {
+  .usa-identifier__required-link {
+    display: block;
   }
 }

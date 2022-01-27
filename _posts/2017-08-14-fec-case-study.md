@@ -16,7 +16,7 @@ of the Standards on [fec.gov][].
 
 **Jennifer Thibault:** We knew of the USWDS project early on since it was
 kicked off by a team inside 18F. But, we needed to get out a
-[basic set of pages and content models][612] on fec.gov before the Standards
+[basic set of pages and content models][612] (as noted on a GitHub Issue) on fec.gov before the Standards
 team released their first version.
 
 In 2015, we started with a visual identity audit to show our team what the

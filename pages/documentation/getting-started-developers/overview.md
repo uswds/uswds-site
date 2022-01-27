@@ -13,25 +13,16 @@ redirect_from:
   - /documentation/fundamentals/
 ---
 
-## Before getting started
-USWDS includes over 40 accessible, mobile-friendly components out of the box, ensuring visual consistency and saving developers the need to build everything from scratch for their web-design and -redesign projects.
+Getting started for developers will lead you, step-by-step, through the process of installing and compiling the Design System and customizing your project using components and design tokens. If you prefer a hands-on demonstration of this process, please check out [our interactive tutorial](https://github.com/uswds/uswds-tutorial), which will take you through the same steps using a pre-made example website.
 
-USWDS also provides tools and solutions that make it simple to comply with legal requirements, such as the 21st Century Integrated Digital Experience Act and Section 508 of the Rehabilitation Act, like [a simple way to pick accessible colors]({{ site.baseurl }}/design-tokens/color/overview/#color-and-accessibility) or [a component that displays required links]({{ site.baseurl }}/components/identifier/).
+As always, we're here for you if you have any questions. Please get in touch via GitHub, Slack, or email!
 
-You don't need to understand the following concepts to install the design system, but you will need to know them to build with it:
-
-- [Design tokens]({{ site.baseurl }}/design-tokens/): Design tokens are predefined units of color, spacing, typography, opacity, and more that form the building blocks of the design system.
-- [Components]({{ site.baseurl }}/components/overview): Components are simple and consistent solutions to common user interface needs, like form fields, buttons, and icons. If design tokens are the building blocks of the design system, components are the building blocks of a site or service.
-- [Utilities]({{ site.baseurl }}/utilities/): Utilities are single-purpose classes mapped to USWDS design tokens. Utilities allow developers to prototype with design system utilities without writing Sass or CSS.
-- [Implementations]({{ site.baseurl }}/documentation/implementations/): Implementations are how teams use USWDS in their projects, like in Drupal, as well as other platforms and frameworks. We'll link to projects and community supported implementations. 
-
-The USWDS community is a great resource. If you have any questions during, before, and/or after getting started, please reach out via GitHub, Slack, or email!
 
 ## What you need
 We recommend using the following tools when working with USWDS:
-- Node (our version is specified in the [.nvmrc file](https://github.com/uswds/uswds/blob/main/.nvmrc); currently v16)
+- Node (use the version specified in the [.nvmrc file](https://github.com/uswds/uswds/blob/main/.nvmrc); if needed, [download the latest version](https://nodejs.org/en/download/) from Node.js)
 - npm
-- Sass (use [the latest version](https://nodejs.org/en/download/); we use [the latest `sass` package from npm](https://www.npmjs.com/package/sass))
+- Sass (we use [the latest `sass` package from npm](https://www.npmjs.com/package/sass))
 
 These step-by-step instructions describe how to get started with USWDS using npm (recommended method).
 

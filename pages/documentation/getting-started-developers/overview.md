@@ -20,7 +20,7 @@ As always, we're here for you if you have any questions. Please get in touch via
 
 ## What you need
 We recommend using the following tools when working with USWDS:
-- Node (use the version is specified in the [.nvmrc file](https://github.com/uswds/uswds/blob/main/.nvmrc); if needed, [download the latest version](https://nodejs.org/en/download/) from Node.js)
+- Node (use the version specified in the [.nvmrc file](https://github.com/uswds/uswds/blob/main/.nvmrc); if needed, [download the latest version](https://nodejs.org/en/download/) from Node.js)
 - npm
 - Sass (we use [the latest `sass` package from npm](https://www.npmjs.com/package/sass))
 

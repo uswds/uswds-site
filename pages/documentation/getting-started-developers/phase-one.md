@@ -92,4 +92,4 @@ This guidance may seem counterintuitive, but now that you've installed the USWDS
 {: .site-note.margin-top-0 }
 You do want to use the source code, but you don't want to modify it to use it. Instead, in Phase 2, we'll discuss how to compile, theme, and extend the USWDS source code in your project.
 
-**Next:** [Phase 2: Compile &gt;]({{ site.baseurl }}/documentation/getting-started/developers/phase-two-compile/) →
+**Next:** [Phase 2: Compile]({{ site.baseurl }}/documentation/getting-started/developers/phase-two-compile/) →

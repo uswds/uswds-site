@@ -1,58 +1,48 @@
 // Imports
-@import 'variables';
-@import 'uswds-theme-general';
-@import 'uswds-theme-typography';
-@import 'uswds-theme-spacing';
-@import 'uswds-theme-color';
-@import 'uswds-theme-utilities';
+@import "variables";
+@import "uswds-theme-general";
+@import "uswds-theme-typography";
+@import "uswds-theme-spacing";
+@import "uswds-theme-color";
+@import "uswds-theme-utilities";
 
 // Settings
 // -------------------------------------
-@import 'settings/settings-general';
-@import 'settings/settings-typography';
-@import 'settings/settings-color';
-@import 'settings/settings-spacing';
-@import 'settings/settings-utilities';
-@import 'settings/settings-components';
+@import "settings/settings-general";
+@import "settings/settings-typography";
+@import "settings/settings-color";
+@import "settings/settings-spacing";
+@import "settings/settings-utilities";
+@import "settings/settings-components";
 
 // Tools
 // -------------------------------------
-@import 'packages/required';
+@import "packages/required";
 
-$pink-20v: #F8A897;
+$pink-20v: #f8a897;
 $pink-50v: #bc5843;
 
 $gray-20-next: #eaece9;
 $gray-80-next: #2e2e2e;
 $gray-90-next: #202020;
 
-$next-button-color: #2672DE;
-$next-button-hover-color: #0D53B7;
-
-
-
+$next-button-color: #2672de;
+$next-button-hover-color: #0d53b7;
 
 $next-theme-colors: (
-  'next-gray-medium' #d8d8d0 true,
-  'next-gray-dark' #2e2e2e,
-
-  'next-gold-medium' #F2B600 true,
-  'next-gold-dark' #B38600 true,
-
-  'next-red-medium' #E41D3D,
-  'next-red-dark' #bd0f2c,
-
-  'next-pink-medium' #F8A897 true,
-  'next-pink-dark' #D67B66 true,
-
-  'next-blue-medium' #2672DE,
-  'next-blue-dark' #1f5aad,
-
-  'next-mint-medium' #74D7AD true,
-  'next-mint-dark' #45A17A true,
+  "next-gray-medium" #d8d8d0 true,
+  "next-gray-dark" #2e2e2e,
+  "next-gold-medium" #f2b600 true,
+  "next-gold-dark" #b38600 true,
+  "next-red-medium" #e41d3d,
+  "next-red-dark" #bd0f2c,
+  "next-pink-medium" #f8a897 true,
+  "next-pink-dark" #d67b66 true,
+  "next-blue-medium" #2672de,
+  "next-blue-dark" #1f5aad,
+  "next-mint-medium" #74d7ad true,
+  "next-mint-dark" #45a17a true
 );
-
-
 
 @each $color-name, $color-value, $text-black in $next-theme-colors {
   .bg-#{$color-name} {
@@ -72,7 +62,7 @@ html {
 
 // Typesetting
 .usa-prose {
-  font-family: family('lang');
+  font-family: family("lang");
 }
 
 .usa-button--next {
@@ -80,7 +70,7 @@ html {
 
   &:hover,
   &:focus {
-   background-color: $next-button-hover-color;
+    background-color: $next-button-hover-color;
   }
 }
 .usa-dark-background .usa-button--next {
@@ -100,7 +90,6 @@ html {
   }
 }
 
-
 // Page width
 // -------------------------------------
 .next-hero .grid-container,
@@ -111,7 +100,7 @@ html {
 }
 
 // Header
-.next-site-header .site-header-navbar{
+.next-site-header .site-header-navbar {
   background-color: $gray-80-next;
 }
 
@@ -131,39 +120,38 @@ html {
 }
 
 .next-hero__heading {
-  font-size: size('lang', 12);
-  line-height: line-height('lang', 2);
+  font-size: size("lang", 12);
+  line-height: line-height("lang", 2);
   margin: 0;
   max-width: 30ex;
 
   @include at-media("tablet") {
-    font-size: size('lang', 13);
+    font-size: size("lang", 13);
   }
 
   @include at-media("desktop") {
-    font-size: size('lang', 15);
+    font-size: size("lang", 15);
   }
 }
 
 .next-hero__subhead {
   color: $gray-20-next;
-  font-size: size('lang', 8);
+  font-size: size("lang", 8);
   font-weight: $theme-font-weight-normal;
-  line-height: line-height('lang', 2);
+  line-height: line-height("lang", 2);
   margin: units(2) 0 0;
   max-width: 40ex;
 
   @include at-media("tablet") {
-    font-size: size('lang', 9);
+    font-size: size("lang", 9);
     max-width: 32ex;
   }
 
   @include at-media("desktop") {
-    font-size: size('lang', 11);
+    font-size: size("lang", 11);
     max-width: 29ex;
   }
 }
-
 
 .next-hero__banner-container {
   width: 100%;
@@ -219,7 +207,7 @@ html {
     font-size: size("sans", 2);
     font-weight: font-weight("semibold");
     margin-bottom: units(2);
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     max-width: none;
   }
 
@@ -229,16 +217,14 @@ html {
     font-weight: font-weight("bold");
 
     @include at-media("tablet") {
-      font-size: size('heading', 13);
+      font-size: size("heading", 13);
     }
 
     @include at-media("desktop") {
-      font-size: size('heading', 15);
+      font-size: size("heading", 15);
     }
-
   }
 }
-
 
 // Internal nav
 // -------------------------------------
@@ -250,7 +236,7 @@ html {
     position: sticky;
     left: 0;
     top: 0;
-    z-index: z('top');
+    z-index: z("top");
   }
 }
 
@@ -285,24 +271,24 @@ html {
   border-bottom: 2px solid transparent;
   color: color("white");
   display: block;
-  font-size: size('lang', '3xs');
-  font-weight: font-weight('bold');
-  padding: units(1) units(.5);
+  font-size: size("lang", "3xs");
+  font-weight: font-weight("bold");
+  padding: units(1) units(0.5);
   text-decoration: none;
 
   @include at-media("desktop") {
-    font-size: size('lang', 'md');
+    font-size: size("lang", "md");
     padding: units(1.5) units(1);
   }
 
   &:hover {
     color: color("gray-5");
-    border-color: color('gray-5');
+    border-color: color("gray-5");
   }
 
   &.current {
-    border-color: color('white');
-    color: color('white');
+    border-color: color("white");
+    color: color("white");
   }
 }
 
@@ -318,17 +304,16 @@ html {
   background-color: $gray-90-next;
   color: color("white");
   display: block;
-  font-family: family('heading');
-  font-size: size('heading', 'sm');
-  font-weight: font-weight('semibold');
+  font-family: family("heading");
+  font-size: size("heading", "sm");
+  font-weight: font-weight("semibold");
   padding: units(1) units(1);
   text-align: center;
   text-decoration: none;
   @include at-media("desktop") {
-    font-size: size('heading', 'lg');
+    font-size: size("heading", "lg");
     padding: units(1.5) units(1);
   }
-
 }
 
 // Blockquote
@@ -413,13 +398,13 @@ html {
   }
 
   h3 {
-    font-size: size('lang', 11);
+    font-size: size("lang", 11);
     margin: units(8) 0 0 0;
   }
 
   h4 {
     color: color("base");
-    font-size: size('lang', 9);
+    font-size: size("lang", 9);
     margin-bottom: 0;
   }
 }
@@ -434,8 +419,8 @@ html {
 }
 
 .next-section__subhead {
-  font-weight: font-weight('bold');
-  letter-spacing: .06em;
+  font-weight: font-weight("bold");
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -491,9 +476,8 @@ html {
 }
 
 .next-section-description {
-
   p {
-    font-size: size('lang', 8);
+    font-size: size("lang", 8);
   }
 }
 
@@ -507,21 +491,20 @@ html {
   }
 
   & > p:first-child {
-    font-size: size('lang', 8);
+    font-size: size("lang", 8);
     margin-top: 0;
   }
 }
 
-
 .next-highlight-text {
   @include u-measure(3);
   color: color("gold-50v");
-  font-size: size('lang', 11);
+  font-size: size("lang", 11);
   margin: units(10) 0;
 }
 
 .next-lead {
-  font-size: size('lang', 8);
+  font-size: size("lang", 8);
 }
 
 // Bulleted list with icon
@@ -542,7 +525,6 @@ html {
     & + p {
       flex: unset;
     }
-
   }
 
   p {
@@ -553,12 +535,11 @@ html {
     flex: unset;
     width: 100%;
   }
-
 }
 
 // Styled inline blockquote
 .next-blockquote {
-  position:relative;
+  position: relative;
 
   border-left: units(1px) solid color("gray-cool-30");
 
@@ -581,7 +562,6 @@ html {
   }
 
   .usa-icon {
-    content: "";
     display: block;
     width: units(2.5);
     height: units(2.5);
@@ -623,7 +603,7 @@ html {
   .usa-icon {
     width: units(4);
     height: units(4);
-    left: units(-6)
+    left: units(-6);
   }
   .next-blockquote__source {
     font-size: size("lang", 8);
@@ -638,7 +618,7 @@ html {
     font-weight: $theme-font-weight-normal;
     margin-top: units(2);
     margin-left: units(3);
-    padding-left: units(.5)
+    padding-left: units(0.5);
   }
 }
 .next-blockquote--inline {
@@ -667,7 +647,7 @@ html {
   }
 }
 
-.next-spot-item--row{
+.next-spot-item--row {
   @include at-media("tablet") {
     flex-direction: row;
   }
@@ -689,8 +669,8 @@ html {
 }
 
 .next-finding__heading {
-  font-family: family('lang') !important;
-  font-size: size('lang', 8) !important;
+  font-family: family("lang") !important;
+  font-size: size("lang", 8) !important;
   line-height: line-height("lang", 2);
   margin: 0 !important;
 }
@@ -748,9 +728,6 @@ html {
   }
 }
 
-
-
-
 // Footnotes
 // -------------------------------------
 
@@ -761,7 +738,6 @@ html {
 }
 
 .footnote {
-
   &::before {
     content: "[";
   }
@@ -774,8 +750,8 @@ html {
 }
 
 .reversefootnote {
-  font-family: family('sans');
-  font-size: size('sans', 4);
+  font-family: family("sans");
+  font-size: size("sans", 4);
 }
 
 // Next Pagination cards
@@ -785,9 +761,6 @@ html {
   a {
     text-decoration: none;
   }
-  .usa-card__media {
-
-  }
 }
 .next-page-card__subheading {
   text-transform: uppercase;
@@ -796,8 +769,7 @@ html {
   font-size: size("sans", 2);
   font-weight: font-weight("semibold");
   margin-bottom: units(2);
-  letter-spacing: .1em;
-
+  letter-spacing: 0.1em;
 }
 
 .next-page-card__img {
@@ -810,6 +782,5 @@ html {
   @include at-media("tablet") {
     background-size: auto units(15);
     height: 100%;
-
   }
 }

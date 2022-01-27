@@ -13,16 +13,16 @@ redirect_from:
   - /documentation/fundamentals/
 ---
 
-Getting started for developers will lead you, step-by-step, through the process of installing and compiling the Design System and using comeponents and design tokens to customize your project. If you prefer a hands-on demonstration of this process, please check out [our interactive tutorial](https://github.com/uswds/uswds-tutorial), which will take you through the same steps using a pre-made example website.
+Getting started for developers will lead you, step-by-step, through the process of installing and compiling the Design System and customizing your project using comeponents and design tokens. If you prefer a hands-on demonstration of this process, please check out [our interactive tutorial](https://github.com/uswds/uswds-tutorial), which will take you through the same steps using a pre-made example website.
 
 As always, we're here for you if you have any questions. Please get in touch via GitHub, Slack, or email!
 
 
 ## What you need
 We recommend using the following tools when working with USWDS:
-- Node (our version is specified in the [.nvmrc file](https://github.com/uswds/uswds/blob/main/.nvmrc); currently v16)
+- Node (use the version is specified in the [.nvmrc file](https://github.com/uswds/uswds/blob/main/.nvmrc); if needed, [download the latest version](https://nodejs.org/en/download/) from Node.js)
 - npm
-- Sass (use [the latest version](https://nodejs.org/en/download/); we use [the latest `sass` package from npm](https://www.npmjs.com/package/sass))
+- Sass (we use [the latest `sass` package from npm](https://www.npmjs.com/package/sass))
 
 These step-by-step instructions describe how to get started with USWDS using npm (recommended method).
 

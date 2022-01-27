@@ -18,7 +18,7 @@ subnav:
 
 ## Introducing design tokens
 
-Anything we see on a website is built from elements of style: elements like color, spacing, typography, line height, and opacity. The CSS rules associated with these elements can accept a broad continuum of values — in the case of color, there are over 16 million separate colors in the RGB color space. Font size, line height, spacing, and others can accept a similarly wide range of values.
+Anything we see on a website is built from elements of style: color, spacing, typography, line height, and opacity. The CSS rules associated with these elements can accept a broad continuum of values — in the case of color, there are over 16 million separate colors in the RGB color space. Font size, line height, spacing, and others can accept a similarly wide range of values.
 
 This degree of choice can slow down design work and make communication between designer and developer unnecessarily granular. USWDS seeks to maximize design efficiency and improve communication with **design tokens**: the discrete palettes of values from which we base all our visual design.
 
@@ -56,7 +56,7 @@ We can't include tokens directly in our Sass, like `max-width: 1`, rather we use
 Tokens can, themselves, be expressed as variables. And this is how most USWDS theme settings work. For instance, the following is an example of theme settings from `_uswds-theme-spacing.scss` showing settings variables assigned spacing unit tokens:
 
 ```
-$theme-site-max-width:              'desktop';
+$theme-grid-container-max-width:    'desktop';
 $theme-site-margins-breakpoint:     'desktop';
 $theme-site-margins-width:          4;
 $theme-site-margins-mobile-width:   2;
@@ -67,7 +67,7 @@ USWDS component Sass uses those variableized tokens to build component styles:
 ```
 .usa-example {
   @include u-padding-x($theme-site-margins-mobile-width);
-  max-width: units($theme-site-max-width);
+  max-width: units($theme-grid-container-max-width);
 
   @include at-media($theme-site-margins-breakpoint) {
     @include u-padding-x($theme-site-margins-width);
@@ -109,7 +109,7 @@ In general, USWDS sets variables with tokens, and passes those variables into fu
 
 ## Using design tokens
 
-Use design tokens directly to set the value of settings variables in USWDS theme settings files, like `$theme-site-max-width: 'desktop'`. Otherwise, use functions, mixins, or utility classes as in the examples below. See individual design token section for more details.
+Use design tokens directly to set the value of settings variables in USWDS theme settings files, like `$theme-grid-container-max-width: 'desktop'`. Otherwise, use functions, mixins, or utility classes as in the examples below. See individual design token section for more details.
 
 ### Color
 <div class="site-table-wrapper">

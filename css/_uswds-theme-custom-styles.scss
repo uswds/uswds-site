@@ -94,7 +94,7 @@ body {
   text-align: center;
 }
 
-.usa-prose site-prose {
+.usa-prose .site-prose {
   @include typeset("lang");
 }
 
@@ -383,7 +383,6 @@ body {
 
     &::after {
       border-radius: 0;
-      bottom: units(0);
       background-color: color($site-primary-vivid);
       bottom: units(-1px);
       left: units($site-border-width) * -1;
@@ -485,16 +484,6 @@ body {
   }
 }
 
-// Ensure the homepage accordion displays properly
-// TODO: make sure line height is added in USWDS accordion component and that
-// list styles don't override accordion styles
-#main-content {
-  // scss-lint:disable IdSelector
-  .usa-accordion__button {
-    line-height: 1;
-  }
-}
-
 .site-h2 {
   @include typeset("lang", "xl", 2);
   color: color($site-ink);
@@ -510,7 +499,7 @@ body {
 .styleguide-content {
   @include add-responsive-site-margins;
   margin-bottom: units(6);
-  max-width: units($theme-site-max-width);
+  max-width: units($theme-grid-container-max-width);
   position: relative;
 
   header {
@@ -578,6 +567,7 @@ body {
 %label-maturity {
   @include typeset("lang", "2xs", 4);
   color: color("ink");
+  display: inline-block;
   font-weight: font-weight("bold");
   margin-left: units(1.5);
   position: absolute;
@@ -619,6 +609,16 @@ body {
   @extend %label-maturity;
   background-color: color("red-50v");
   color: color("white");
+}
+
+.label-archived {
+  @extend %label-maturity;
+  @include set-text-and-bg("red-30");
+}
+
+.label-stale {
+  @extend %label-maturity;
+  @include set-text-and-bg("yellow-20v");
 }
 
 .heading-margin-alt {
@@ -1204,7 +1204,7 @@ code {
 }
 
 code[class*="language-"] {
-  color: color("base");
+  color: color("base-dark");
 
   // Custom code sample colors
   .token.property,
@@ -1251,7 +1251,7 @@ code[class*="language-"] {
 }
 
 code[class*="language-plaintext"] {
-    color: inherit;
+  color: inherit;
 }
 
 .alignment-example {
@@ -1429,7 +1429,11 @@ code[class*="language-plaintext"] {
 
 // External link styles
 #{$external-href} {
-  @include external-link(external-link, external-link-hover);
+  @include external-link;
+}
+
+.usa-link--alt#{$external-href} {
+  @include external-link;
 }
 
 .usa-button,
@@ -1644,7 +1648,6 @@ code[class*="language-plaintext"] {
 .page-product-roadmap {
   .main-content {
     .usa-tag {
-      display: inline-block;
       position: relative;
     }
   }
@@ -1965,9 +1968,6 @@ li {
   @include u-text("normal", "uppercase", "ls-1");
 }
 
-.utilities-properties {
-}
-
 .utilities-property {
   @include u-bg("white");
   @include u-display("inline-block");
@@ -2104,7 +2104,7 @@ li {
   @extend .utility-scope-button;
   @include u-bg("white");
   @include u-border(1px, "gray-10");
-  @include u-text("gray-20", strike);
+  @include u-text("gray-50", strike);
 }
 
 .utility-scope-button-active {
@@ -2454,7 +2454,7 @@ h6 + div:not(.usa-accordion__content):not(.usa-collection__meta-list) {
 }
 
 pre {
-  white-space: pre;
+  white-space: pre-wrap;
 }
 
 // Responsive tables
@@ -2783,13 +2783,20 @@ $theme-table-column-gap: 4;
     h4,
     h5,
     h5 {
+      @include typeset("lang");
       @extend %header-margin;
       color: color("ink");
       margin: 0;
     }
 
+    h2 {
+      @include typeset("lang", "lg", 2);
+      @include u-text("bold");
+    }
+
     h3 {
       @include typeset("lang", "lg", 2);
+      @include u-text("normal");
     }
 
     .site-text-intro {
@@ -2840,6 +2847,14 @@ $theme-table-column-gap: 4;
   padding-bottom: units(3);
   padding-left: units(2);
   padding-top: units(3);
+}
+
+// because any accordion__content inside of a bordered accordion get's
+// borders, we need to overide for this nested component preview.
+.site-component-preview
+  .usa-accordion:not(.usa-accordion--bordered)
+  .usa-accordion__content {
+  border: none;
 }
 
 .usa-content-list {
@@ -3677,7 +3692,6 @@ body {
 }
 
 .site-accordion-code {
-
   // Don't show margin at the top of the first form-group's label
   .usa-accordion__content > .usa-form-group:first-child,
   .usa-date-range-picker > .usa-form-group:first-child {
@@ -3697,5 +3711,59 @@ body {
 .site-accordion-code.site-component-preview {
   .usa-accordion__content {
     overflow: visible;
+  }
+}
+
+blockquote {
+  @include u-border-left("1px", "primary");
+  margin-left: 0;
+  padding-left: units(2);
+}
+
+@import "custom-styles/card-policy";
+@import "custom-styles/highlight";
+
+.pagination-behaviors {
+  @include list-reset;
+}
+
+.pagination-behaviors--item {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid color("base-light");
+  @include at-media("tablet") {
+    flex-direction: row;
+  }
+}
+
+.pagination-behaviors--guidance,
+.pagination-behaviors--examples {
+  @include u-flex(auto);
+}
+
+.pagination-behaviors--guidance {
+  @include at-media("tablet") {
+    padding-right: units(4);
+    width: 60%;
+  }
+}
+
+p + .pagination-behaviors--examples {
+  margin-top: 0;
+}
+
+.pagination-behaviors--example {
+  @include u-margin-y(1.5);
+  display: block;
+  width: auto;
+
+  @include at-media("tablet") {
+    height: units(4);
+  }
+}
+
+.site-identifier {
+  .usa-identifier__required-link {
+    display: block;
   }
 }

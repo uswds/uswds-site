@@ -22,5 +22,5 @@ subnav:
 title: Accordion
 variants:
   - variant: "`.usa-accordion--bordered`"
-    description: Display a border around accordion content
+    description: Display a border around accordion content.
 ---

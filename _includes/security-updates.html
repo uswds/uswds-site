@@ -1,0 +1,16 @@
+<ul class="usa-collection">
+  {% for update in site.security_updates %}
+    <li class="usa-collection__item">
+      <div class="usa-collection__body">
+        <h3 class="usa-collection__heading">
+          <a class="usa-link" href="{{ site.baseurl }}{{ update.url }}.html">
+            {{ update.title }}
+          </a>
+        </h3>
+        <p class="usa-collection__description">
+          {{ update.excerpt }}
+        </p>
+      </div>
+    </li>
+  {% endfor %}
+</ul>

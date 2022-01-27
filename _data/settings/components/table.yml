@@ -31,12 +31,12 @@ contents:
     default: "default"
     type: color
   - name: Sorted Column Header Background Color
-    description: Defines a background color for the sorted column header
+    description: Defines a background color for the sorted column header.
     var: $theme-table-sorted-header-background-color
     default: '"accent-cool-light"'
     type: color
   - name: Sorted Column Background Color
-    description: Defines a background color for the cells of the sorted column
+    description: Defines a background color for the cells of the sorted column.
     var: $theme-table-sorted-background-color
     default: '"accent-cool-lighter"'
     type: color
@@ -51,7 +51,7 @@ contents:
     default: "default"
     type: color
   - name: Unsorted Column Icon Color
-    description: Defines a fill color for the unactivated sort button in a sortable column header
+    description: Defines a fill color for the unactivated sort button in a sortable column header.
     var: $theme-table-unsorted-icon-color
     default: '"base"'
     type: color

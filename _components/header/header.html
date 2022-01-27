@@ -23,7 +23,7 @@ subnav:
     href: '#extended-header-with-megamenu'
 ---
 
-<h3>When to use the header component</h3>
+<h2>When to use the header component</h2>
 <ul class="usa-content-list">
   <li>
     <strong>Use the gov banner on all federal websites.</strong> We recommend
@@ -39,7 +39,7 @@ subnav:
   </li>
 </ul>
 
-<h3>Header usability</h3>
+<h2>Header usability</h2>
 <ul class="usa-content-list">
   <li>
     <strong>
@@ -84,7 +84,7 @@ subnav:
   </li>
 </ul>
 
-<h3 class="usa-heading heading-margin-alt">Header accessibility</h3>
+<h2 class="usa-heading heading-margin-alt">Header accessibility</h2>
 <ul class="usa-content-list">
   <li>
     Include skip navigation links to allow users with screen readers to bypass
@@ -92,7 +92,7 @@ subnav:
     main content and that it matches the skipnav link. Find more information
     here:
     <a href="http://webaim.org/techniques/skipnav/"
-      >http://webaim.org/techniques/skipnav/</a
+      >http://webaim.org/techniques/skipnav/.</a
     >
   </li>
   <li>
@@ -130,19 +130,19 @@ subnav:
     If you’re using a logo that’s text, use an <code>em</code>, not an
     <code>h1</code>, unless it’s the homepage. Find more information here:
     <a href="http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/"
-      >http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/</a
+      >http://csswizardry.com/2010/10/your-logo-is-an-image-not-a-h1/.</a
     >
   </li>
 </ul>
 
-<h3>The “official government website” banner</h3>
+<h2>The “official government website” banner</h2>
 <p>
   We recommend that all federal government sites include the “official
   government website” banner and a logo or site name. The banner clearly
   identifies your site as part of the United States government, while a logo or
   site name helps visitors understand who you are and what you do.
 </p>
-<h4>Building with HTTPS</h4>
+<h3>Building with HTTPS</h3>
 <p>
   <a
     href="https://18f.gsa.gov/2014/11/13/why-we-use-https-in-every-gov-website-we-make/"
@@ -154,10 +154,10 @@ subnav:
   contents of .gov websites to be official and accurate, and they expect any
   information they submit to that website to be private. The U.S. CIO provides
   guidance to implementing HTTPS for government websites at
-  <a href="https://https.cio.gov/">https://https.cio.gov/</a>
+  <a href="https://https.cio.gov/">https://https.cio.gov/.</a>
 </p>
 
-<h3>References</h3>
+<h2>References</h2>
 <ul>
   <li>
     <a href="https://www.nngroup.com/articles/menu-design/"
@@ -172,13 +172,11 @@ subnav:
   </li>
 </ul>
 
-<section class="site-component-section">
-  <h3>Implementation</h3>
-  <h4 id="component-settings">Header settings</h4>
-  {% assign settings = site.data.settings.components.header %}
-  {% include settings-table-simple.html
-    settings=settings.contents
-  %}
-</section>
+<h2>Implementation</h2>
+<h3 id="component-settings">Header settings</h3>
+{% assign settings = site.data.settings.components.header %}
+{% include settings-table-simple.html
+  settings=settings.contents
+%}
 
 {% include child-sections.html parent='Header' %}

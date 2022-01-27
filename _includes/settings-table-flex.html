@@ -17,7 +17,6 @@
         {%- for column in row %}
         {%- assign colKey = forloop.index | minus: 1 %}
         <td class="{{ cols[colKey] }} display-inline-flex flex-align-start"
-          scope="row"
           data-title="{{ column[0] | capitalize }}"
           >
           {{ column[1] | markdownify }}

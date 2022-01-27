@@ -294,7 +294,7 @@ tags:
 
   <h3>References</h3>
   <ul class="usa-content-list">
-    <li><a href="https://accessibility.psu.edu/images/charts/">Chart Accessibility guidance</a> &nbsp; [psu.edu]</li>
+    <li><a href="https://accessibility.psu.edu/images/charts/">Chart Accessibility guidance</a> &nbsp;[psu.edu]</li>
   </ul>
 
 </section>

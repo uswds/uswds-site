@@ -55,6 +55,7 @@ Components:
   - href: /components/link/
   - href: /components/list/
   - href: /components/modal/
+  - href: /components/pagination/
   - href: /components/process-list/
   - href: /components/prose/
   - href: /components/radio-buttons/
@@ -74,14 +75,14 @@ Components:
 
 How to use USWDS:
   - href: /how-to-use-uswds/
-  - href: /website-standards/
-  - href: /maturity-model/
-  - text: USWDS fundamentals and quickstart guide
-    href: /documentation/fundamentals/
+  - text: Getting started for developers
+    href: /documentation/getting-started-for-developers/
+  - text: Getting started for designers
+    href: /documentation/getting-started-for-designers/
   - href: /documentation/developers/
-  - href: /documentation/designers/
-  - href: /documentation/accessibility/
   - href: /documentation/settings/
+  - href: /maturity-model/
+  - href: /documentation/accessibility/
   - href: /performance/
   - href: /documentation/code-guidelines/
   - text: Migrating to USWDS 2
@@ -90,6 +91,7 @@ How to use USWDS:
   - href: /documentation/implementations/
   - href: /documentation/showcase/
   - href: /documentation/sample-contract-language/
+  - href: /website-standards/
 
 Design tokens:
   - href: /design-tokens/
@@ -139,14 +141,16 @@ Templates:
 
 About:
   - href: /about/
-  - href: /about/community/
+  - href: /about/key-benefits/
   - href: /about/product-values/
+  - href: /about/community/
   - href: /about/whats-new/
   - href: /about/releases/
   - href: /about/updates/
   - href: /about/product-roadmap/
   - href: /about/research/
   - href: /about/security/
+  - href: /about/website-policies-notices/
 
 Design principles:
   - href: /design-principles/

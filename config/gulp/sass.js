@@ -1,37 +1,38 @@
+const { formatters } = require("stylelint");
 const autoprefixer = require("autoprefixer");
 const concat = require("gulp-concat");
 const csso = require("postcss-csso");
 const dutil = require("./doc-util");
 const gulp = require("gulp");
-const linter = require("gulp-scss-lint");
+const gulpStylelint = require("gulp-stylelint");
 const postcss = require("gulp-postcss");
-const sass = require("gulp-sass");
+const sass = require("gulp-dart-scss");
 const sourcemaps = require("gulp-sourcemaps");
 const task = "sass";
-
-sass.compiler = require("sass");
 
 const dev_plugins = [autoprefixer({ cascade: false })];
 
 const prod_plugins = [csso({ forceMediaMerge: false })];
 
-gulp.task("build-sass-fonts", function() {
+const handleError = (error) => {
+  dutil.logError.bind(this)(error);
+  this.emit("end");
+
+  if (process.env.NODE_ENV !== "development") {
+    process.exit(1);
+  }
+}
+
+gulp.task("build-sass-fonts", () => {
   return gulp
     .src("./css/uswds-fonts.scss")
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
-      sass
-        .sync({
-          includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
-          outputStyle: "expanded"
-        })
-        .on("error", function(error) {
-          sass.logError.bind(this)(error);
-
-          if (process.env.NODE_ENV !== "development") {
-            process.exit(1);
-          }
-        })
+      sass({
+        includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
+        outputStyle: "expanded"
+      })
+      .on("error", handleError)
     )
     .pipe(postcss(dev_plugins))
     .pipe(sourcemaps.write("."))
@@ -39,23 +40,16 @@ gulp.task("build-sass-fonts", function() {
     .pipe(gulp.dest("_site/assets/css"));
 });
 
-gulp.task("build-sass-components", function() {
+gulp.task("build-sass-components", () => {
   return gulp
     .src("./css/uswds-components.scss")
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
-      sass
-        .sync({
-          includePaths: ["./css/settings"],
-          outputStyle: "expanded"
-        })
-        .on("error", function(error) {
-          sass.logError.bind(this)(error);
-
-          if (process.env.NODE_ENV !== "development") {
-            process.exit(1);
-          }
-        })
+      sass({
+        includePaths: ["./css/settings"],
+        outputStyle: "expanded"
+      })
+      .on("error", handleError)
     )
     .pipe(postcss(dev_plugins))
     .pipe(sourcemaps.write("."))
@@ -63,23 +57,16 @@ gulp.task("build-sass-components", function() {
     .pipe(gulp.dest("_site/assets/css"));
 });
 
-gulp.task("build-sass-custom", function() {
+gulp.task("build-sass-custom", () => {
   return gulp
     .src("./css/uswds-custom.scss")
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
-      sass
-        .sync({
-          includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
-          outputStyle: "expanded"
-        })
-        .on("error", function(error) {
-          sass.logError.bind(this)(error);
-
-          if (process.env.NODE_ENV !== "development") {
-            process.exit(1);
-          }
-        })
+      sass({
+        includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
+        outputStyle: "expanded"
+      })
+      .on("error", handleError)
     )
     .pipe(postcss(dev_plugins))
     .pipe(sourcemaps.write("."))
@@ -87,23 +74,16 @@ gulp.task("build-sass-custom", function() {
     .pipe(gulp.dest("_site/assets/css"));
 });
 
-gulp.task("build-next-sass", function() {
+gulp.task("build-next-sass", () => {
   return gulp
     .src("./css/uswds-next.scss")
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
-      sass
-        .sync({
-          includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
-          outputStyle: "expanded"
-        })
-        .on("error", function(error) {
-          sass.logError.bind(this)(error);
-
-          if (process.env.NODE_ENV !== "development") {
-            process.exit(1);
-          }
-        })
+      sass({
+        includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
+        outputStyle: "expanded"
+      })
+      .on("error", handleError)
     )
     .pipe(postcss(dev_plugins))
     .pipe(sourcemaps.write("."))
@@ -111,23 +91,16 @@ gulp.task("build-next-sass", function() {
     .pipe(gulp.dest("_site/assets/css"));
 });
 
-gulp.task("build-sass-utilities", function() {
+gulp.task("build-sass-utilities", () => {
   return gulp
     .src("./css/uswds-utilities.scss")
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
-      sass
-        .sync({
-          includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
-          outputStyle: "expanded"
-        })
-        .on("error", function(error) {
-          sass.logError.bind(this)(error);
-
-          if (process.env.NODE_ENV !== "development") {
-            process.exit(1);
-          }
-        })
+      sass({
+        includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
+        outputStyle: "expanded"
+      })
+      .on("error", handleError)
     )
     .pipe(postcss(dev_plugins))
     .pipe(sourcemaps.write("."))
@@ -155,7 +128,7 @@ gulp.task(
   )
 );
 
-gulp.task("build-sass-prod", function() {
+gulp.task("build-sass-prod", () => {
   return gulp
     .src([
       "./assets/css/uswds-fonts.css",
@@ -176,7 +149,7 @@ gulp.task("build-sass-prod", function() {
     .pipe(gulp.dest("_site/assets/css"));
 });
 
-gulp.task("build-next-prod", function() {
+gulp.task("build-next-prod", () => {
   return gulp
     .src([
       "./assets/css/uswds-fonts.css",
@@ -208,12 +181,11 @@ gulp.task("scss-lint", function(done) {
 
   return gulp
     .src(["./css/**/*.scss"])
-    .pipe(
-      linter({
-        config: ".scss-lint.yml"
-      })
-    )
-    .pipe(linter.failReporter("E"));
+    .pipe(gulpStylelint({
+      reporters: [
+        {formatter: 'string', console: true}
+      ]
+    }));
 });
 
 gulp.task(task, gulp.series("build-sass"));

@@ -1,4 +1,4 @@
-- **Don’t alter icons.** You shouldn’t customize, combine, or change the icons (other than updating the color) due to their [license](https://github.com/uswds/uswds/blob/develop/LICENSE.md).
+- **Don’t alter icons.** You shouldn’t customize, combine, or change the icons (other than updating the color) due to their [license](https://github.com/uswds/uswds/blob/develop/LICENSE.md), as described on GitHub.
 - **Active icons are found in `dist/img/usa-icons`.** The icons in this directory will be packaged into an SVG sprite. The complete set of available icons are located in two directories: `dist/img/material-icons` and `dist/img/uswds-icons`. Copy icons into a `usa-icons` directory within your project images directory and rebuild the SVG sprite using [uswds-gulp](https://github.com/uswds/uswds-gulp/).
 - **Using color in icons.** Icons use `currentColor`, so the color of the icon will be the text color of its parent element. Change colors with the [color utility](https://designsystem.digital.gov/utilities/color/).
 - **Relative to font size.** By default, icons will scale with font size. If you want to specify an icon size, use one of the component’s size variants.

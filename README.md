@@ -1,6 +1,6 @@
 # U.S. Web Design System documentation
 
-This repo includes code and documentation for the U.S. Web Design System website. For information on USWDS (components) themselves, please visit our [uswds](https://github.com/uswds/uswds) Github repo.
+This repo includes code and documentation for the U.S. Web Design System website. For information on the USWDS components and codebase, please visit our [uswds](https://github.com/uswds/uswds) Github repo.
 
 Note that this README includes steps to pull the latest version of USWDS into your local instance of the documentation.
 
@@ -78,6 +78,8 @@ USWDS uses the [fractal design system builder](http://fractal.build/) to organiz
 ### Deployment and previews
 
 This site is deployed on [Federalist](https://federalist.18f.gov/), which automatically builds the public site whenever commits are pushed to `main`. Federalist also builds public previews for each branch pushed to GitHub.
+
+⚠️ When generating new sections, sometimes they fail to build on Federalist. You can clear the cache by running a simple `bundle update`, which will trigger a fresh build.
 
 ### Updating the USWDS version
 

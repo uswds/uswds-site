@@ -3,7 +3,7 @@ title: Design principles
 permalink: /design-principles/
 layout: styleguide
 category: Design principles
-lead: USWDS design principles support and reflect the important guidance codified in the [21st Century Integrated Digital Experience Act](https://digital.gov/resources/21st-century-integrated-digital-experience-act/). These design principles are intended to help teams across government align on important common goals and better use the Design System — to be an evaluative lens for design and implementation decisions. Regardless of how you build, these principles should support your project.
+lead: USWDS design principles support and reflect the important guidance codified in the [21st Century Integrated Digital Experience Act](https://digital.gov/resources/21st-century-integrated-digital-experience-act/). These design principles are intended to help teams across government align on  common goals and better use the Design System — to be an evaluative lens for design and implementation decisions. Regardless of how you build, these principles should support your project.
 redirect_from:
   - /principles/
 subnav:
@@ -26,21 +26,30 @@ subnav:
 ## Start with real user needs
 
 {:.font-lang-7}
-**Real user needs should inform product decisions.** Whether our audience includes members of the public or government employees, decision-makers must include real people in our design process from the beginning. Then, we need to test the assumptions we make and the products and services we build with real people to keep us focused on what is most useful and important.
+**Real user needs should inform product decisions.** Whether your audience includes members of the public or government employees, decision-makers must include real people from the beginning of the design process. Test your team's assumptions and the products and services you build with real people to keep focused on what is most useful and important.
 
 ### Key considerations
+The following are useful questions to ask your team as you assess users' needs:
 
 - Does your product or service have access to the resources necessary to perform research?
 - Who is your primary audience?
 - What user needs will this product or service address?
-- Do you use personas or other audience segment analysis techniques to connect your solutions to different segments of your audience?
+- Do you use personas or other audience-segment analysis techniques to connect your solutions to different segments of your audience?
 - How often are you testing with real people?
 - Which people will have the most difficulty with the product or service?
-- Which research methods were used?
-- What were the key findings?
-- How and where were the findings documented?
+- Which research methods have been used, and which methods do you plan to use?
+- What are the key findings?
+- How and where were are your findings being documented?
 
-### Resources
+### Practical Actions
+
+- **Start early.** Early in the project, spend time with current and prospective users to better understand their perspective and the context of the problem.
+- **Use a range of methods.** Use a range of qualitative and quantitative research methods (such as [18F Methods](https://methods.18f.gov/)) to determine people’s goals, needs, and behaviors.
+- **Use prototypes.** Use [prototypes](https://methods.18f.gov/make/prototyping/) to test your assumptions and solutions with real people, in the field if possible.
+- **Share your findings.** Document and share your research findings with team members, managers, and the public whenever practical.
+- **Test regularly.** As the product is being built, regularly test it with potential users to ensure it meets people’s needs.
+
+### Further reading
 
 #### Government resources
 
@@ -60,37 +69,47 @@ subnav:
 - [The laws of UX](https://lawsofux.com/) [lawsofux.com]
 - [A List Apart: Articles, books, and events for people who make websites](https://alistapart.com/) [alistapart.com]
 
-### Practical Actions
-
-- **Start early.** Early in the project, spend time with current and prospective users to better understand their perspective and the context of the problem.
-- **Use a range of methods.** Use a range of qualitative and quantitative research methods (such as [18F Methods](https://methods.18f.gov/)) to determine people’s goals, needs, and behaviors.
-- **Use prototypes.** Use [prototypes](https://methods.18f.gov/make/prototyping/) to test your assumptions and solutions with real people, in the field if possible.
-- **Share your findings.** Document and share your research findings with team members, managers, and the public, when practical.
-- **Test regularly.** As the product is being built, regularly test it with potential users to ensure it meets people’s needs.
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
 ## Earn trust
 
 {:.font-lang-7}
-**Trust has to be earned every time.** Federal websites and digital services can't assume it. Trust is about understanding and meeting or exceeding expectations, a process that can be established quickly and maintained over continued interactions, but is easily damaged. Be reliable, consistent, and honest. Reduce the impact of failure with solid design and engineering. Be a good steward of your audience's data, resources, and time.
+**Trust has to be earned every time.** Federal websites and digital services can't assume it. Trust is about understanding and meeting or exceeding expectations, a process that can be established quickly and maintained over continued interactions but is easily damaged. Be reliable, consistent, and honest. Reduce the impact of failure with solid design and engineering. Be a good steward of your audience's data, resources, and time.
 
 ### Key considerations
+
+The following are useful questions to ask your team as you strategize to build trust with users:
 
 - Do users understand that this is a government site or service?
 - What are the public’s expectations of your product?
 - What private or sensitive data do you ask your users to provide?
 - What are you doing to keep that data private?
-- Does your product utilize redundancy to minimize the effect of server failure or traffic spikes?
+- Does your product use redundancies to minimize the effect of server failure or traffic spikes?
 - Does your product use continuous integration testing to prevent unintended regressions?
-- Can users to edit or undo actions or edit data they've added to the system?
+- Can users undo actions or edit data they've added to the system?
 - How often do you check that your service works as intended?
 - What components are made available to the public as open source?
 - How quickly do you respond to bug reports?
 - Is your content written in clear, easy-to-follow plain language?
 - Do you provide meaningful access to people with limited English proficiency?
 
-### Resources
+### Practical actions
+
+- **Identify yourself.** Clearly identify your site as a federal government site.
+- **Build with modern best practices.** Review the guidance outlined in [Digital Services Playbook](https://playbook.cio.gov/).
+- **Review your content.** Review your content at least twice per year to assure information is correct and non-redundant.
+- **Use the proper government domain.** Use a [.gov ](https://home.dotgov.gov/) top-level domain and [https](https://https.cio.gov/) with up-to-date certificates.
+- **Add the USWDS banner component.** This component shows your site is an official government website and explains the benefits of secure connections.
+- **Identify link rot.** Find and fix broken links on your website.
+- **Keep communications simple.** Ensure content is easy, personal, and timely.
+- **Write for the web.** Expect users to [skim and scan](https://plainlanguage.gov/guidelines/web/).
+- **Properly manage data and records.** Reach out to your agency’s [records officer](https://www.archives.gov/records-mgmt/agency) and [privacy official](https://www.fpc.gov/council-members/). Consult with them to ensure you are properly managing data and records (review play #11, [Manage security and privacy through reusable processes](https://playbook.cio.gov/#play11), in the Digital Services Playbook).
+- **Understand expectations.** Understand what your audience expects of your service, and validate the success of your service with real users.
+- **Publish open code and data.** When appropriate, publish [source code](https://code.gov/) and [datasets](https://www.data.gov/) of projects or components online.
+- **Work in the open.** When appropriate, share your development process and progress publicly.
+
+### Further reading
 
 #### Government resources
 
@@ -109,21 +128,6 @@ subnav:
 - [Preventing user errors](https://www.nngroup.com/articles/slips/) [nngroup.com]
 - [How AirBNB designs for trust](https://www.ted.com/talks/joe_gebbia_how_airbnb_designs_for_trust) [TED.com]
 - [Humane by design](https://humanebydesign.com/) [humanebydesign.com]
-
-### Practical actions
-
-- **Identify yourself.** Clearly identify your site as a federal government site.
-- **Build with modern best practices.** See the [Digital Services Playbook](https://playbook.cio.gov/).
-- **Review your content.** Review your content at least twice per year to assure information is correct and non-redundant.
-- **Use the proper government domain.** Use a [.gov ](https://home.dotgov.gov/) top-level domain and [https](https://https.cio.gov/) with up-to-date certificates.
-- **Add the USWDS banner component.** This shows your site is an official government website and explain the benefits of secure connections.
-- **Identify link rot.** Find and fix broken links on your website.
-- **Keep communications simple.** Ensure content is easy, personal, and timely.
-- **Write for the web.** Expect users to [skim and scan](https://plainlanguage.gov/guidelines/web/).
-- **Properly manage data and records.** Reach out to your agency’s [records officer](https://www.archives.gov/records-mgmt/agency) and [privacy official](https://www.fpc.gov/council-members/). Consult with them to ensure you are properly managing data and records (see play #11, [Manage security and privacy through reusable processes](https://playbook.cio.gov/#play11), in the Digital Services Playbook).
-- **Understand expectations.** Understand what your audience expects of your service, and validate the success of your service with real users.
-- **Publish open code and data.** When appropriate, publish [source code](https://code.gov/) and [datasets](https://www.data.gov/) of projects or components online.
-- **Work in the open.** When appropriate, share your development process and progress publicly.
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 

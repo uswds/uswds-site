@@ -63,7 +63,7 @@ Fractal's component-oriented architecture nudged us to consider how each of
 their moving parts, and how do their "variants" (for instance, our [basic]({{
 site.baseurl }}/components/header/#basic-header) and [extended]({{ site.baseurl
 }}/components/header/#extended-header) headers) differ from one another? The process
-of adapting our components to Fractal produced a basic [interface inventory],
+of adapting our components to Fractal produced a basic [interface inventory] (described in the Brad Frost blog),
 which shows us exactly where we are right now, and the interactive previews
 give us the confidence to make bigger changes because we can immediately see
 their impacts on various aspects of the Standards.
@@ -184,7 +184,7 @@ our components, variants, page templates, and related documentation.
 If you have a suggestion, see something amiss, or just want to say hi, feel
 free to [file an issue on GitHub]({{ page.github_baseurl }}/issues/new),
 [email our mailing list](mailto:uswebdesignstandards@gsa.gov), or join our
-[public Slack channel](https://chat.18f.gov/).
+[public Slack channel](https://chat.18f.gov/) via Google Form.
 
 
 [1.1.0 pre-release]: {{ page.github_baseurl }}/releases/tag/v1.1.0-pre

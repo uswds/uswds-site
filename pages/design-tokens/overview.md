@@ -18,7 +18,7 @@ subnav:
 
 ## Introducing design tokens
 
-Anything we see on a website is built from elements of style: elements like color, spacing, typography, line height, and opacity. The CSS rules associated with these elements can accept a broad continuum of values — in the case of color, there are over 16 million separate colors in the RGB color space. Font size, line height, spacing, and others can accept a similarly wide range of values.
+Anything we see on a website is built from elements of style: color, spacing, typography, line height, and opacity. The CSS rules associated with these elements can accept a broad continuum of values — in the case of color, there are over 16 million separate colors in the RGB color space. Font size, line height, spacing, and others can accept a similarly wide range of values.
 
 This degree of choice can slow down design work and make communication between designer and developer unnecessarily granular. USWDS seeks to maximize design efficiency and improve communication with **design tokens**: the discrete palettes of values from which we base all our visual design.
 

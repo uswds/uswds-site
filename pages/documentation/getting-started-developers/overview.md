@@ -9,6 +9,7 @@ subnav:
   - href: /documentation/getting-started/developers/phase-one-install/
   - href: /documentation/getting-started/developers/phase-two-compile/
   - href: /documentation/getting-started/developers/phase-three-customize/
+  - href: /documentation/getting-started/developers/resources/
 redirect_from:
   - /documentation/fundamentals/
 ---

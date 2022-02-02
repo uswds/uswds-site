@@ -5,6 +5,7 @@ title: "Resources"
 category: How to use USWDS
 lead: Now that you’ve gotten started, the following resources are available to help you stay in touch, to provide support as you continue with your projects, and to enable you to provide recommendations and feedback.
 type: docs
+subnav:
   - text: "Need installation help?"
     href: "#need-installation-help"
   - text: "Stay involved"

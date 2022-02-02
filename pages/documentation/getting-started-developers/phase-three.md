@@ -5,15 +5,6 @@ title: "Phase 3: Customize"
 category: How to use USWDS
 lead: Customize the design system with settings and custom code
 type: docs
-subnav:
-  - text: "Need installation help?"
-    href: "#need-installation-help"
-  - text: "Stay involved"
-    href: "#stay-involved"
-  - text: "Continue learning"
-    href: "#continue-learning"
-  - text: "Contribute to the codebase"
-    href: "#contribute-to-the-codebase"
 ---
 
 Now, equipped with building blocks that are accessible and cohesive, you can get creative. Here is an overview of what you need to know to customize your project: 

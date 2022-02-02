@@ -2,7 +2,7 @@
 permalink: /documentation/getting-started-for-developers/
 layout: styleguide
 title: Getting started for developers
-lead: Get started using the design system by installing, compiling, and customizing USWDS code
+lead: Get started using the Design System by installing, compiling, and customizing our code.
 category: How to use USWDS
 type: docs
 subnav:

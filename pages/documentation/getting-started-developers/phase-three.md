@@ -6,8 +6,6 @@ category: How to use USWDS
 lead: Customize the design system with settings and custom code
 type: docs
 subnav:
-  - text: "Resources"
-    href: "#resources"
   - text: "Need installation help?"
     href: "#need-installation-help"
   - text: "Stay involved"

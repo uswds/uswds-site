@@ -3,7 +3,7 @@ permalink: /documentation/getting-started/developers/phase-two-compile/
 layout: styleguide
 title: "Phase 2: Compile"
 category: How to use USWDS
-lead: Compile design system source code into browser-readable files
+lead: Compile Design System source code into browser-readable files.
 type: docs
 subnav:
   - text: "Step 1: Set up your project’s Sass entry point"
@@ -20,16 +20,14 @@ subnav:
     href: "#step-6-verify-successful-installation"
 ---
 
-USWDS source code is written in [Sass](https://sass-lang.com/), a powerful stylesheet language that builds automation, functions, and logic into CSS. Browsers can’t read native Sass files, so these files need to be compiled into CSS — usually a single CSS file — before we can use them. Basically, when you develop with USWDS, you do all your stylesheet work in Sass, then use a compiler to convert that Sass into CSS. We use [Gulp](https://gulpjs.com/), a task manager, to watch our directories for changes and compile our CSS whenever a change occurs. 
+U.S. Web Design System source code is written in Sass, a powerful stylesheet language that builds automation, functions, and logic into CSS. Browsers can’t read native Sass files, so these files need to be compiled into CSS — usually a single CSS file — before we can use them. Basically, when you develop with the Design System, you do all your stylesheet work in Sass, then use a compiler to convert that Sass into CSS. 
 
-We’ve developed [`uswds-gulp`](https://github.com/uswds/uswds-gulp), a tool hosted on GitHub, to help teams install Gulp and get up and running as quickly as possible. In addition to compiling, `uswds-gulp` will also [autoprefix]({{ site.baseurl }}/documentation/developers/#sass-compilation-requirements) your CSS, minify it for performance, and add sourcemaps for easier debugging. If you project doesn't already have a Sass-compiling workflow in place, check out `uswds-gulp`.
-
-The following steps use `uswds-gulp` to compile USWDS Sass.
-
-## Step 1: Set up your project’s Sass entry point
+We’ve developed `uswds-compile`, a tool hosted on GitHub, to help teams copy USWDS static assets and transform USWDS Sass into browser-readable CSS. [Step 2](#step-2-install-uswds-gulp) describes how to install this tool. 
 
 {: .site-note }
-**Note:** If you want `uswds-gulp` to set up a Sass entry point for you, you don't need to set up any files in Step 1 and can skip directly to [Step 2, below](#step-2-install-uswds-gulp). Step 1 gives some important context: why you need a Sass entry point, what it needs to include, and how to set one up manually.
+**Note:** If you want `uswds-compile` to set up a Sass entry point for you, skip directly to [Step 2](#step-2-install-uswds-gulp). We provide Step 1 for context: why you need a Sass entry point, what it needs to include, and how to set one up manually.
+
+## Step 1: Set up your project’s Sass entry point
 
 A project often has many Sass files, but typically, there’s a single file that serves as the root — the “homepage” of the Sass — that links out to the others. This root file is also known as the “Sass entry point.” The Sass entry point is the most important stylesheet file in your project because it tells the compiler what source files make up your Sass codebase.
 
@@ -85,7 +83,7 @@ In plain language, this code says:
 
   After you import the USWDS source code, you can build new styles with USWDS design tokens, functions, and mixins. For the purposes of this guide, we won’t get into custom code, but the important thing to understand is that any custom code should follow the settings and USWDS source code in your Sass entry point.
 
-## Step 2: Install uswds-gulp
+## Step 2: Install uswds-compile
 From your project’s root, run the following command to install `uswds-gulp` and all its dependencies:
 
 {:.site-terminal}

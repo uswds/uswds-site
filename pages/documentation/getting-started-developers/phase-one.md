@@ -3,7 +3,7 @@ permalink: /documentation/getting-started/developers/phase-one-install/
 layout: styleguide
 title: "Phase 1: Install"
 category: How to use USWDS
-lead: Install design system files and source code into your project
+lead: Install Design System files and source code into your project.
 type: docs
 subnav:
   - text: "Step 1: Install Node and npm"
@@ -14,18 +14,12 @@ subnav:
     href: "#step-3-install-uswds"
 ---
 
-USWDS distributes our source code through npm, a package manager that uses a flavor of JavaScript called Node.js. The best way to add USWDS to your project is with npm via a Terminal window (see tips for using Terminal on a [Mac](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) or [Windows](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab)). 
+The U.S. Web Design System distributes our source code through npm, a package manager that uses a flavor of JavaScript called Node.js. The best way to add the Design System to your project is with npm via a Terminal window (see tips for using Terminal on a [Mac](https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac) or [Windows](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab)). 
 
-Installing USWDS with Node and npm not only allows you to install all the code the design system needs to compile with just a couple commands, but using npm will version any installed packages, like USWDS, as well — meaning your project code is tied to a specific version of the design system. Confirming what version of the design system you’re using and updating to a newer (or older) version of the design system is straightforward.
+Installing the Design System with Node and npm not only allows you to install all the code the Design System needs to compile with just a couple commands, but will version any installed packages, like USWDS, as well — meaning your project code is tied to a specific version of the Design System. Confirming what version of the Design System you’re using and updating to a newer (or older) version is straightforward.
 
 ## Step 1: Install Node and npm
-Open your Terminal application and a Terminal window. Check to see if you have the [most recent version of Node](https://github.com/uswds/uswds/blob/develop/.nvmrc) installed with `node -v`. You should see the following message in Terminal:
-
-{:.site-terminal}
-```bash
-node -v
-# v12.16.1 [or higher]
-```
+Open your Terminal application and a Terminal window. Check to see if you have the [most recent version of Node](https://github.com/uswds/uswds/blob/develop/.nvmrc) installed with `node -v`.
 
 If you don’t have Node, install it from [https://nodejs.org/en/download/](https://nodejs.org/en/download/).
 

@@ -75,81 +75,77 @@ In plain language, this code says:
 
 - **Create the foundation**: Build all USWDS styles from these settings.
 
-  The USWDS source code is the core of the design system. It contains all the styles for USWDS components as well as the design language of Sass tokens and functions used to build those components. USWDS source code has its own Sass entry point, which lives in the `node_modules` directory when you install USWDS with npm.
+The USWDS source code is the core of the design system. It contains all the styles for USWDS components as well as the design language of Sass tokens and functions used to build those components. USWDS source code has its own Sass entry point, which lives in the `node_modules` directory when you install USWDS with npm.
 
-  The entry point itself is called `uswds.scss`, and it’s found in the `/dist/scss` directory of the USWDS npm package. When you install with npm, the complete path looks something is typically `./node_modules/uswds/dist/scss/uswds.scss`.
+The entry point itself is called `uswds.scss`, and it’s found in the `/dist/scss` directory of the USWDS npm package. When you install with npm, the complete path looks something is typically `./node_modules/uswds/dist/scss/uswds.scss`.
 
 - **Build new work on top of that foundation**: Finally, add any custom project styles built from design system code.
 
-  After you import the USWDS source code, you can build new styles with USWDS design tokens, functions, and mixins. For the purposes of this guide, we won’t get into custom code, but the important thing to understand is that any custom code should follow the settings and USWDS source code in your Sass entry point.
+After you import the USWDS source code, you can build new styles with USWDS design tokens, functions, and mixins. For the purposes of this guide, we won’t get into custom code, but the important thing to understand is that any custom code should follow the settings and USWDS source code in your Sass entry point.
 
 ## Step 2: Install uswds-compile
-From your project’s root, run the following command to install `uswds-gulp` and all its dependencies:
+From your project’s root, run the following command to install `uswds-compile` and all its dependencies:
 
 {:.site-terminal}
 ```bash
-npm install autoprefixer gulp gulp-replace sass del gulp-sass gulp-sourcemaps gulp-rename gulp-svg-sprite gulp-postcss postcss postcss-csso uswds uswds-gulp@github:uswds/uswds-gulp --save-dev
+npm install @uswds/compile --save-dev
 ```
 
-## Step 3: Add configuration files
-Gulp needs the following two files to compile USWDS properly:
-- **`gulpfile.js`**: This file tells Gulp where to look for your files and what to do with them.
-- **`.browserslistrc`**: This file tells Gulp how to build the CSS so it works in all the browsers that USWDS supports.
+## Step 3: Create a gulpfile
+Create a file called `gulpfile.js` at the root of your project by running the command `touch gulpfile.js`(alternatively, use an existing gulpfile if one already exists). This file needs to do the following:
+- import the `@uswds/compile` package
+- set any project settings
+- export the functions and/or tasks you need
 
-We include these files in the `uswds-gulp` package. Install them in your project by copying them from the package into your project root. From the project root, run the following two commands separately:
+Your `gulpfile.js` may read as follows:
 
-{:.site-terminal}
-```bash
-cp node_modules/uswds-gulp/gulpfile.js .
-cp node_modules/uswds-gulp/.browserslistrc .
-```
+  {:.site-terminal}
+  ```scss
+/* gulpfile.js */
 
-## Step 4: Configure Gulp
-Now, edit `gulpfile.js` to configure it for your project. Starting at line 37 in `gulpfile.js`, update the following settings — each of which needs a valid project directory (note: the sixth setting, `const SITE_CSS_DEST`, is only relevant if you are using Jekyll):
+const uswds = require("@uswds/compile");
 
-{:.site-terminal}
-```js
-// Project Sass source directory
-// Where should we put the USWDS Sass theme files?
-// Ex: PROJECT_SASS_SRC = "./stylesheets"
-const PROJECT_SASS_SRC = "./path/to/project/sass";
+/** 
+ * Path settings
+ * Set as many as you need
+ */ 
 
-// Images destination
-// Where should we save USWDS image assets?
-// Ex: IMG_DEST = "./assets/uswds/img"
-const IMG_DEST = "./path/to/images/destination";
+uswds.paths.dist.css = './assets/css';
+uswds.paths.dist.sass = './sass';
 
-// Fonts destination
-// Where should we save USWDS fonts?
-// Ex: FONTS_DEST = "./assets/uswds/fonts"
-const FONTS_DEST = "./path/to/fonts/destination";
+/** 
+ * Exports
+ * Add as many as you need
+ */ 
 
-// Javascript destination
-// Where should we save USWDS javascript?
-// Ex: JS_DEST = "./assets/uswds/js"
-const JS_DEST = "./path/to/js/destination";
+exports.init = uswds.init;
+exports.compile = uswds.compile;
+  ```
 
-// Compiled CSS destination
-// Where should we save compiled USWDS CSS?
-// Ex: CSS_DEST = "./assets/uswds/css"
-const CSS_DEST = "./path/to/css/destination";
+Now, run `npx gulp [function]` in your Terminal window.
 
-// Site CSS destination
-// Like the _site/assets/css directory in Jekyll, if necessary.
-// If using, uncomment line 106
-// Ex: SITE_CSS_DEST = "./_site/assets/uswds/css"
-const SITE_CSS_DEST = "./path/to/site/css/destination";
-```
+## Step 4: Create path settings
+Now, create your path settings using the following table:
 
-Don’t include a trailing slash in any of these paths.
+Setting | Default | Description
+--- | --- | ---
+`paths.src.uswds` | `"./node_modules/uswds/dist"` | Source location of the `uswds` package
+`paths.src.sass` | `"./node_modules/uswds/dist/scss"` | Source location of the USWDS Sass 
+`paths.src.theme` | `"./node_modules/uswds/dist/scss/theme"` | Source location of the USWDS theme files (Sass entry point and starter settings files)
+`paths.src.fonts` | `"./node_modules/uswds/dist/fonts"` | Source location of the USWDS fonts
+`paths.src.img` | `"./node_modules/uswds/dist/img"` | Source location of the USWDS images
+`paths.src.js` | `"./node_modules/uswds/dist/js"` | Source location of the USWDS compiled JavaScript files
+`paths.src.projectSass` | `"./sass"` | Source location of any exisiting project Sass files outside of `paths.dist.sass`. The `watch` script will watch this directory for changes.
+`paths.dist.sass` | `"./sass"` | Project destination for theme files (Sass entry point and settings)
+`paths.dist.img` | `"./assets/uswds/images"` | Project destination for images
+`paths.dist.fonts` | `"./assets/uswds/fonts"` | Project destination for fonts
+`paths.dist.js` | `"./assets/uswds/js"` | Project destination for compiled JavaScript
+`paths.dist.css` | `"./assets/uswds/css"` | Project destination for compiled CSS
 
-Save this file, and you’re ready to get started.
+Note, the `src` settings are specific to the Design System; the `dist` settings are specific to your project.
 
 ## Step 5: Initialize your project
-Initialize your project to copy all the necessary image, font, and Javascript assets from the source code. Initialization will also add a Sass entry point called `styles.scss` in the directory you set as `PROJECT_SASS_SRC` (as outlined in Step 3) for your project.
-
-{:.site-note}
-**Note**: Initialization will overwrite files already in `PROJECT_SASS_SRC`.
+Initialize your project to copy all the necessary image, font, and Javascript assets from the source code. 
 
 Initialize your project and get started by running the following command:
 
@@ -157,6 +153,7 @@ Initialize your project and get started by running the following command:
 ```bash
 npx gulp init
 ```
+If you receive the error `replaceAll is not a function` when trying to run `npx gulp init`, please verify you are using the version of Node specified in the [.nvmrc file](https://github.com/uswds/uswds/blob/main/.nvmrc) and run the command again.
 
 This command will add all the USWDS assets to the directories you set, add a project Sass entry point, and compile USWDS into CSS. Add this CSS file to the `<head>` of your project HTML.
 

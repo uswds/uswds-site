@@ -41,7 +41,7 @@ The following are useful questions to ask your team as you assess users' needs:
 - What are the key findings?
 - How and where were are your findings being documented?
 
-### Practical Actions
+### Practical actions
 The following are practical actions you can take:
 
 - **Start early.** Early in the project, spend time with current and prospective users to better understand their perspective and the context of the problem.
@@ -294,7 +294,7 @@ The following are practical actions you can take:
 - **Keep testing.** Test and re-test with real users.
 - **Share back.** Contribute feedback and share solutions back to the internal and open source projects you use.
 
-### Further readin
+### Further reading
 
 #### Government resources
 

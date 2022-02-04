@@ -20,9 +20,9 @@ subnav:
     href: "#step-6-verify-successful-installation"
 ---
 
-U.S. Web Design System source code is written in Sass, a powerful stylesheet language that builds automation, functions, and logic into CSS. Browsers can’t read native Sass files, so these files need to be compiled into CSS — usually a single CSS file — before we can use them. Basically, when you develop with the Design System, you do all your stylesheet work in Sass, then use a compiler to convert that Sass into CSS. 
+U.S. Web Design System source code is written in Sass, a powerful stylesheet language that builds automation, functions, and logic into CSS. Browsers can’t read native Sass files, so these files need to be compiled into CSS — usually a single CSS file — before we can use them. Basically, when you develop with the Design System, you do all your stylesheet work in Sass then use a compiler to convert that Sass into CSS. 
 
-We’ve developed `uswds-compile`, a tool hosted on GitHub, to help teams copy USWDS static assets and transform USWDS Sass into browser-readable CSS. [Step 2](#step-2-install-uswds-gulp) describes how to install this tool. 
+We’ve developed `uswds-compile`, a tool hosted on GitHub, to help teams copy USWDS static assets and transform USWDS Sass into browser-readable CSS. [Step 2](#step-2-install-uswds-gulp) describes how to install this tool. When you use `uswds-compile`, we will apply Autoprefixer to all compiled code.
 
 {: .site-note }
 **Note:** If you want `uswds-compile` to set up a Sass entry point for you, skip directly to [Step 2](#step-2-install-uswds-gulp). We provide Step 1 for context: why you need a Sass entry point, what it needs to include, and how to set one up manually.
@@ -36,7 +36,7 @@ Your project’s Sass entry point is a simple file that only needs to do the fol
 2. Include the USWDS source code
 3. Include your project’s custom Sass
 
-Create an entry point called something like `index.scss` or `styles.scss`. Your entry point should look like the following example:
+Create an entry point called something like `index.scss` or `styles.scss`. Your entry point should look read the following example:
 
 {:.site-terminal}
 ```scss
@@ -75,7 +75,7 @@ In plain language, this code says:
 
 - **Create the foundation**: Build all USWDS styles from these settings.
 
-The USWDS source code is the core of the design system. It contains all the styles for USWDS components as well as the design language of Sass tokens and functions used to build those components. USWDS source code has its own Sass entry point, which lives in the `node_modules` directory when you install USWDS with npm.
+  The USWDS source code is the core of the design system. It contains all the styles for USWDS components as well as the design language of Sass tokens and functions used to build those components. USWDS source code has its own Sass entry point, which lives in the `node_modules` directory when you install USWDS with npm.
 
 The entry point itself is called `uswds.scss`, and it’s found in the `/dist/scss` directory of the USWDS npm package. When you install with npm, the complete path looks something is typically `./node_modules/uswds/dist/scss/uswds.scss`.
 
@@ -92,7 +92,7 @@ npm install @uswds/compile --save-dev
 ```
 
 ## Step 3: Create a gulpfile
-Create a file called `gulpfile.js` at the root of your project by running the command `touch gulpfile.js`(alternatively, use an existing gulpfile if one already exists). This file needs to do the following:
+Create a file called `gulpfile.js` at the root of your project by running the command `touch gulpfile.js` (alternatively, use an existing gulpfile if one already exists). This file needs to do the following:
 - import the `@uswds/compile` package
 - set any project settings
 - export the functions and/or tasks you need
@@ -122,9 +122,7 @@ exports.init = uswds.init;
 exports.compile = uswds.compile;
   ```
 
-Now, run `npx gulp [function]` in your Terminal window.
-
-## Step 4: Create path settings
+## Step 4: Create path settings and export compile functions
 Now, create your path settings using the following table:
 
 Setting | Default | Description
@@ -143,6 +141,26 @@ Setting | Default | Description
 `paths.dist.css` | `"./assets/uswds/css"` | Project destination for compiled CSS
 
 Note, the `src` settings are specific to the Design System; the `dist` settings are specific to your project.
+
+Once your paths are set, export uswds-compile functions (summarized in the following table) in your project's gulpfile.js to use them in your project:
+
+Function | Description
+--- | ---
+`compile` | `compileSass` + `compileIcons`
+`compileIcons` | Build the USWDS icon sprite into `paths.dist.img`
+`compileSass` | Compile Sass into `paths.dist.css`
+`default` | `watch`
+`copyAll` | `copySetup` + `copyAssets`
+`copyAssets` | Copies all static assets: `copyFonts` + `copyImages` + `copyJS`  
+`copyFonts` | Copy USWDS fonts to `paths.dist.fonts`
+`copyImages` | Copy USWDS images to `paths.dist.img`
+`copyJS` | Copy USWDS compiled JavaScript to `paths.dist.js`
+`copySetup` | Copy USWDS theme files (Sass entry point and settings files) from the `uswds` package to `paths.dist.sass`
+`init` | `copyAll` + `compile`
+`updateUswds` | `copyAssets` + `compile`
+`watch` | Compiles, then recompiles when there are changes to Sass files in `paths.dist.sass` and `paths.src.projectSass`
+
+For any function you defined as an `export` in your `gulpfile.js`, you can run `npx gulp [function]`.
 
 ## Step 5: Initialize your project
 Initialize your project to copy all the necessary image, font, and Javascript assets from the source code. 

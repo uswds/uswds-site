@@ -42,6 +42,7 @@ The following are useful questions to ask your team as you assess users' needs:
 - How and where were are your findings being documented?
 
 ### Practical Actions
+The following are practical actions you can take:
 
 - **Start early.** Early in the project, spend time with current and prospective users to better understand their perspective and the context of the problem.
 - **Use a range of methods.** Use a range of qualitative and quantitative research methods (such as [18F Methods](https://methods.18f.gov/)) to determine people’s goals, needs, and behaviors.
@@ -95,6 +96,7 @@ The following are useful questions to ask your team as you strategize to build t
 - Do you provide meaningful access to people with limited English proficiency?
 
 ### Practical actions
+The following are practical actions you can take:
 
 - **Identify yourself.** Clearly identify your site as a federal government site.
 - **Build with modern best practices.** Review the guidance outlined in [Digital Services Playbook](https://playbook.cio.gov/).
@@ -134,23 +136,39 @@ The following are useful questions to ask your team as you strategize to build t
 ## Embrace accessibility
 
 {:.font-lang-7}
-**Accessibility affects everybody, build it into every decision.** Legal requirements are a critical, necessary starting point, but this is only the beginning. Accessibility is about real people who use our services — it's usability for people who interact with products differently. Everyone who works on government websites has a role to play in making federal resources accessible and inclusive. Design generously and celebrate accessibility requirements as a set of design constraints that help us create a better product for all users.
+**Accessibility affects everybody; build it into every decision.** Legal requirements are a critical starting point for factoring accessibility into your decision-making, but these requirments are only the beginning. Accessibility is about real people who use your services — it's usability for the broadest possible audience regardless of how they engage with your content. Everyone who works on government websites has a role to play in making federal resources accessible and inclusive. Design generously and celebrate accessibility requirements as a set of design constraints that help us create a better product for all users.
 
 ### Key considerations
-
-- Can users navigate your site using only the keyboard?
-- Can users use a screen reader to access the page content?
+The following are useful questions to ask your team as you account for accessibility requirements and features:
+- Can users navigate your site using only a keyboard?
+- Can users use a screen reader to access all page content?
 - Can users quickly understand the main points of your content?
 - Can users easily interpret content associated with graphic elements?
 - Can users easily understand and complete key tasks?
 - Are you testing your service with a broad range of users?
 - Do you know your agency accessibility team?
 - Is your site organized such that everyone can navigate it easily?
-- Are you using accessibility testing tools?
-- Did your accessibility testing tools provide accurate results?
+- Are you using accessibility-testing tools?
+- Are your accessibility-testing tools providing accurate results?
 - Are you providing content in [languages other than English](https://digital.gov/resources/improving-access-to-services-for-people-with-limited-english-proficiency-e-o-13166/), as appropriate for the audience?
 
-### Resources
+### Practical actions
+The following are practical actions you can take:
+
+- **Humanize accessibility.** Seek out examples of the real-life impact of accessible products and services. Try to make accessibility less abstract and more personal.
+- **Use agency resources.** Reach out to [your agency's accessibility team](https://www.section508.gov/tools/coordinator-listing), and build a relationship with them.
+- **Learn about assistive technology.** Visit the Web Accessibility Initiative website to get familiar with the basic ways people use assistive technology and [how people with disabilities use the web](https://www.w3.org/WAI/people-use-web/).
+- **Follow existing standards.** Conform to the [Revised 508 Standards](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh) and [W3C WCAG 2.0](https://www.w3.org/TR/WCAG20/).
+- **Work from existing resources.** Consult [Section508.gov](https://www.section508.gov/), [Accessibility for Teams](https://accessibility.digital.gov/), and the [18F Accessibility Guide](https://accessibility.18f.gov/).
+- **Design generously.** Adopt an [inclusive-design](http://inclusivedesignprinciples.org/) mentality as described on the Inclusive Design Principles website.
+- **Develop accessible code.** Ensure front-end code is written accessibly and conducts manual and automated testing.
+- **Write accessible content.** Ensure content is written in [plain language](https://www.plainlanguage.gov/) and [headings](https://accessibility.18f.gov/headings/), [images](https://accessibility.18f.gov/images/), and [links](https://accessibility.18f.gov/links/) are accurately labeled.
+- **Build accessible designs.** Ensure designs are accessible, pages are laid out in a logical order, and content meets color-contrast requirements.
+- **Test broadly.** Test with a broad range of users and abilities throughout the design and development process, including manual accessibility testing against the [Trusted Tester and ICT Testing Baseline](https://www.section508.gov/test/trusted-tester).
+- **Be responsive.** Remediate accessibility issues when you discover them.
+- **Contract for accessibility.** Use the [Accessibility Requirements Tool](https://www.section508.gov/buy/accessibility-requirements-tool) (ART) to incorporate accessibility requirements into your contracts.
+
+### Further reading
 
 #### Government resources
 
@@ -173,29 +191,16 @@ The following are useful questions to ask your team as you strategize to build t
 - [Inclusive components by Heydon Pickering](https://inclusive-components.design/) [inclusive-components.design]
 - [Humane by design](https://humanebydesign.com/) [humanebydesign.com]
 
-### Practical actions
-
-- **Humanize accessibility.** Seek out examples of the real life impact of accessible products and services. Try to make accessibility less abstract and more personal.
-- **Use agency resources.** Reach out to [your agency's accessibility team](https://www.section508.gov/tools/coordinator-listing) and build a relationship with them.
-- **Learn about assistive technology.** Visit the Web Accessibility Initiative website to get familiar with the basic ways people use assistive technology and [how people with disabilities use the web](https://www.w3.org/WAI/people-use-web/).
-- **Follow existing standards.** Conform to the [Revised 508 Standards](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh) and the [W3C WCAG 2.0](https://www.w3.org/TR/WCAG20/).
-- **Work from existing resources.** Consult [Section508.gov](https://www.section508.gov/), [Accessibility for Teams](https://accessibility.digital.gov/), and the [18F Accessibility Guide](https://accessibility.18f.gov/).
-- **Design generously.** Adopt an [inclusive design](http://inclusivedesignprinciples.org/) mentality, as described on the Inclusive Design Principles website.
-- **Develop accessible code.** Ensure front-end code is written accessibly and conducts manual and automated testing.
-- **Write accessible content.** Ensure content is written in [plain language](https://www.plainlanguage.gov/) and [headings](https://accessibility.18f.gov/headings/), [images](https://accessibility.18f.gov/images/), and [links](https://accessibility.18f.gov/links/) are accurately labeled.
-- **Build accessible designs.** Ensure that designs are accessible, pages are laid out in a logical order, and content meets color contrast requirements.
-- **Test broadly.** Test with a broad range of users and abilities throughout the design and development process, including manual accessibility testing against the [Trusted Tester and ICT Testing Baseline](https://www.section508.gov/test/trusted-tester).
-- **Be responsive.** Remediate accessibility issues when you discover them.
-- **Contract for accessibility.** Use the [Accessibility Requirements Tool](https://www.section508.gov/buy/accessibility-requirements-tool) (ART) to incorporate accessibility requirements into your contracts.
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
 ## Promote continuity
 
 {:.font-lang-7}
-**Minimize disruption and provide a consistent experience: throughout services, over time, and across agencies, platforms, and devices.** Consistency is not necessarily conformity. Agencies, sites, and services may have different audiences, missions, and goals — and the way we implement our solutions may differ — but we promote continuity by starting from shared solutions and values. These design principles are one set of shared values, and the design language of the U.S. Web Design System is another. Strive to build user-centered solutions that address the whole experience, not just a user's specific task, but the context of their journey.
+**Minimize disruption, and provide a consistent experience throughout services; over time; and across agencies, platforms, and devices.** Consistency is not necessarily conformity. Agencies, sites, and services may have different audiences, missions, and goals — and the way we implement our solutions may differ — but we promote continuity by starting from shared solutions and values. These design principles are one set of shared values, and the design language of the U.S. Web Design System is another. Strive to build user-centered solutions that address the whole experience, not just a user's specific task, but the context of their journey.
 
 ### Key considerations
+The following are useful questions to ask your team as you work toward a consistent user experience:
 
 - Do you know if your audience understands that your product is a government site or service?
 - Do you know if your audience understands the purpose of each page or section?
@@ -203,7 +208,7 @@ The following are useful questions to ask your team as you strategize to build t
 - Does your agency have established style guidance?
 - Have you tried and tested shared solutions before developing your own?
 - Have you considered your service in the context of customer or user journeys?
-- Have you identified your highest-impact customer or user journeys? Within these journeys, have you identified specific opportunities at which to collect feedback?
+- Have you identified your highest-impact customer or user journeys? Within these journeys, have you identified specific opportunities to collect feedback?
 - Have you considered your service in the broader context of a service ecosystem?
 - Can you reach across agencies and silos to collaborate and share solutions?
 - Does your site or service have a consistent experience on any device or browser?
@@ -212,7 +217,21 @@ The following are useful questions to ask your team as you strategize to build t
 - What other government products or services are related to the success of your product or service?
 - Are you able to coordinate solutions with other projects that share a similar audience?
 
-### Resources
+### Practical actions
+The following are practical actions you can take:
+
+- **Identify as a government site.** Clearly and consistently identify as a government site on every page.
+- **Use a style guide.** Use a simple and flexible style guide for content and style throughout a product or service. Know if existing guides already exist in your agency before developing something new.
+- **Connect related services with a similar style.** Use the style guide consistently for related digital services.
+- **Support a wide range of devices and platforms.** Support a wide range of devices for a [mobile-friendly experience](https://digital.gov/resources/mobile/principles/).
+- **Test on real devices.** Test your site on the actual mobile devices as often as possible.
+- **Move or remove content with care.** Provide proper notice and forwarding when content is moved or removed.
+- **Clarify multi-step processes.** Give users clear information about where they are in each step of a process.
+- **Support multi-session processes.** Provide users with a way to exit and return later to complete a process.
+- **Support re-use of saved data.** Assure that repeat website visitors, who have logged in, can auto-populate forms with saved information.
+- **Find a community.** Participate in cross-government communities of practice.
+
+### Further reading
 
 #### Government resources
 
@@ -236,27 +255,15 @@ The following are useful questions to ask your team as you strategize to build t
 - [Ten usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/) [nngroup.com]
 - [Atomic design](http://atomicdesign.bradfrost.com/table-of-contents/) [atomicdesign.bradfrost.com]
 
-### Practical actions
-
-- **Identify as a government site.** Clearly and consistently identify as a government site on every page.
-- **Use a style guide.** Use a simple and flexible style guide for content and style throughout a product or service. Know if existing guides already exist in your agency before developing something new.
-- **Connect related services with a similar style.** Use the style guide consistently for related digital services.
-- **Support a wide range of devices and platforms.** Support a wide range of devices for a [mobile-friendly experience](https://digital.gov/resources/mobile/principles/).
-- **Test on real devices.** Test your site on the actual mobile devices as often as possible.
-- **Move or remove content with care.** Provide proper notice and forwarding when content is moved or removed.
-- **Clarify multi-step processes.** Give users clear information about where they are in each step of a process.
-- **Support multi-session processes.** Provide users with a way to exit and return later to complete a process.
-- **Support re-use of saved data.** Assure that repeat website visitors, who have logged in, can auto-populate forms with saved information.
-- **Find a community.** Participate in cross-government communities of practice.
-
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
 ## Listen
 
 {:.font-lang-7}
-**Evaluate and improve your product by listening to your audience and learning from what you hear.** Continuous feedback drives continuous improvement. Measure customer experience — how well what we've built is working for our audience — at every stage of a project, and as projects grow and mature. Listen to what people say and observe how they interact with our products or services, whether through direct observation or through analytics data. If we're not listening, we're not learning.
+**Evaluate and improve your product by listening to your audience and learning from what you hear.** Continuous feedback drives continuous improvement. Measure customer experience — how well what you've built is working for your audience — at every stage of a project and as projects grow and mature. Listen to what people say and observe how they interact with your products or services through direct observation or through analytics data.
 
 ### Key considerations
+The following are useful questions to ask your team to ensure you're listening to your users:
 
 - Does your product or service have access to people with design, development, and research skills?
 - What are the key metrics your service uses to measure success?
@@ -272,7 +279,22 @@ The following are useful questions to ask your team as you strategize to build t
 - How often are you reviewing and addressing feedback and analytics?
 - Do you contribute feedback to services your project uses?
 
-### Resources
+### Practical actions
+The following are practical actions you can take:
+
+- **Actively collect issues.** Offer users a mechanism to report bugs and issues, and be responsive to these reports.
+- **Collect direct feedback.** Actively collect, review, and address feedback about your product or service (such as through surveys or customer email).
+- **Analyze analytics data.** Implement both the governmentwide [Digital Analytics Program](https://digital.gov/services/dap/) (DAP) and agency-specific analytics services and analyze the data.
+- **Analyze search results.** Include a search function on your site (through [Search.gov](https://search.gov/) or another tool), and analyze the search data.
+- **Analyze social media data.** If you use social media platforms, analyze the data from these platforms.
+- **Publish metrics.** Publish metrics internally and externally.
+- **Coordinate large projects with service design.** Conduct a service design analysis when designing, coordinating, or consolidating large sites or services.
+- **Involve the team in research.** Involve all members of a project team in user interviews and research activities to hear directly from real users.
+- **Use direct observation.** Use direct observation in your research whenever possible to understand the context of a user's actions.
+- **Keep testing.** Test and re-test with real users.
+- **Share back.** Contribute feedback and share solutions back to the internal and open source projects you use.
+
+### Further readin
 
 #### Government resources
 
@@ -292,17 +314,3 @@ The following are useful questions to ask your team as you strategize to build t
 
 - [Google Design: Stop Talking, Start Listening](https://medium.com/google-design/stop-talking-start-listening-7a555ec8ebb1) [medium.com]
 - [Design is Listening: listening as design strategy](https://www.youtube.com/watch?v=6_mHCOAAEI8) [youtube.com]
-
-### Practical actions
-
-- **Actively collect issues.** Offer users a mechanism to report bugs and issues, and be responsive to these reports.
-- **Collect direct feedback.** Actively collect, review, and address feedback about your product or service (such as through surveys or customer email).
-- **Analyze analytics data.** Implement both the governmentwide [Digital Analytics Program](https://digital.gov/services/dap/) (DAP) and agency-specific analytics services and analyze the data.
-- **Analyze search results.** Include a search function on your site (through [Search.gov](https://search.gov/) or another tool) and analyze the search data.
-- **Analyze social media data.** If you use social media platforms, analyze the data from these platforms.
-- **Publish metrics.** Publish metrics internally and externally.
-- **Coordinate large projects with service design.** Conduct a service design analysis when designing, coordinating, or consolidating large sites or services.
-- **Involve the team in research.** Involve all members of a project team in user interviews and research activities to hear directly from real users.
-- **Use direct observation.** Use direct observation in your research whenever possible to understand the context of a user's actions.
-- **Keep testing.** Test and re-test with real users.
-- **Share back.** Contribute feedback and share solutions back to the internal and open source projects you use.

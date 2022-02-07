@@ -1,1 +1,1 @@
-- **Introducing a new program.** If you are introducing a new program to the public through a marketing or publicity campaign, a landing page is a good place to point links at. It can build on the minimal copy of a campaign without overwhelming readers.
+- **Introducing a new program.** If you are introducing a new program to the public through a marketing or publicity campaign, a landing page is a good place to point links. It can build on the minimal copy of a campaign without overwhelming readers.

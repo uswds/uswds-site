@@ -7,7 +7,7 @@
   USWDS' Twitter account
 </a>
 ```
-- **Provide descriptive text if a standalone icon has semantic meaning.** If you need to expose an icon to screen readers, remove the `aria-hidden="true"` attribute and add an `aria-labelledby` attribute with a value that matches the `id` of a `<title>` element added inside the svg as in the following code:
+- **Provide descriptive text if a standalone icon has semantic meaning.** If you need to expose an icon to screen readers, remove the `aria-hidden="true"` attribute and add an `aria-labelledby` attribute with a value that matches the `id` of a `<title>` element added inside the SVG as in the following code:
 ```html
 <a href="https://twitter.com/uswds">
   <svg aria-labelledby="twitter-title" role="img">

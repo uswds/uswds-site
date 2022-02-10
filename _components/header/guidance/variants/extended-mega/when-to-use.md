@@ -1,3 +1,3 @@
-- **Lots of sections.** Use an extended header with mega menu if you have too many sections in your horizontal navigation to fit comfortably in the basic header format.
-- **Secondary links or specific calls to action.** It’s also useful if you’d like to include secondary links or specific calls to action in addition to the main content navigation — for example `Log in` and `Sign up` links — or if you’d like to include more than six links in any of your dropdowns.
-- **Deep hierarchy.** If you’d like to include more than six links in any of your dropdowns.
+- **Lots of sections.** Use an extended header with a mega menu if you have too many sections in your horizontal navigation to fit comfortably in the basic header format.
+- **Secondary links or specific calls to action.** This type of header is also useful if you’d like to include secondary links or specific calls to action in addition to the main content navigation — for example `Log in` and `Sign up` links.
+- **Deep hierarchy.** Use this type of header if you’d like to include more than six links in any of your dropdowns.

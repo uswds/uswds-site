@@ -1,4 +1,4 @@
-- **Hide decorative icons from screen readers.** Use the `aria-hidden="true"` and `role="img"` if the icon is redundant and used solely as visual progressive enhancement.
+- **Hide decorative icons from screen readers.** Use the `aria-hidden="true"` and `role="img"` attributes if the icon is redundant and used solely as visual progressive enhancement as in the following code:
 ```html
 <a href="https://twitter.com/uswds">
   <svg class="usa-icon" aria-hidden="true" role="img">
@@ -7,7 +7,7 @@
   USWDS' Twitter account
 </a>
 ```
-- **Provide descriptive text if a standalone icon has semantic meaning.** If you need to expose an icon to screen readers, remove the `aria-hidden="true"` attribute and add a `aria-labelledby` attribute with a value that matches the `id` of a `<title>` element added inside the svg.
+- **Provide descriptive text if a standalone icon has semantic meaning.** If you need to expose an icon to screen readers, remove the `aria-hidden="true"` attribute and add an `aria-labelledby` attribute with a value that matches the `id` of a `<title>` element added inside the svg as in the following code:
 ```html
 <a href="https://twitter.com/uswds">
   <svg aria-labelledby="twitter-title" role="img">

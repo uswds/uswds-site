@@ -136,7 +136,7 @@ The following are practical actions you can take:
 ## Embrace accessibility
 
 {:.font-lang-7}
-**Accessibility affects everybody; build it into every decision.** Legal requirements are a critical starting point for factoring accessibility into your decision-making, but these requirments are only the beginning. Accessibility is about real people who use your services — it's usability for the broadest possible audience regardless of how they engage with your content. Everyone who works on government websites has a role to play in making federal resources accessible and inclusive. Design generously and celebrate accessibility requirements as a set of design constraints that help us create a better product for all users.
+**Accessibility affects everybody; build it into every decision.** Legal requirements are a critical starting point for factoring accessibility into your decision-making, but these requirements are only the beginning. Accessibility is about real people who use your services — it's usability for the broadest possible audience regardless of how they engage with your content. Everyone who works on government websites has a role to play in making federal resources accessible and inclusive. Design generously and celebrate accessibility requirements as a set of design constraints that help us create a better product for all users.
 
 ### Key considerations
 The following are useful questions to ask your team as you account for accessibility requirements and features:

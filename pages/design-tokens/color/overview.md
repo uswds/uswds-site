@@ -63,43 +63,43 @@ USWDS helps teams choose accessible colors with a color-grade system. The follow
     <div class="grid-col-fill">
       <div class="bg-gray-5 height-4"></div>
       <div class="text-center margin-top-2px">5</div>
-    </div><!-- swwatch -->
+    </div><!-- swatch -->
     <div class="grid-col-fill">
       <div class="bg-gray-10 height-4"></div>
       <div class="text-center margin-top-2px">10</div>
-    </div><!-- swwatch -->
+    </div><!-- swatch -->
     <div class="grid-col-fill">
       <div class="bg-gray-20 height-4"></div>
       <div class="text-center margin-top-2px">20</div>
-    </div><!-- swwatch -->
+    </div><!-- swatch -->
     <div class="grid-col-fill">
       <div class="bg-gray-30 height-4"></div>
       <div class="text-center margin-top-2px">30</div>
-    </div><!-- swwatch -->
+    </div><!-- swatch -->
     <div class="grid-col-fill">
       <div class="bg-gray-40 height-4"></div>
       <div class="text-center margin-top-2px">40</div>
-    </div><!-- swwatch -->
+    </div><!-- swatch -->
     <div class="grid-col-fill">
       <div class="bg-gray-50 height-4"></div>
       <div class="text-center margin-top-2px">50</div>
-    </div><!-- swwatch -->
+    </div><!-- swatch -->
     <div class="grid-col-fill">
       <div class="bg-gray-60 height-4"></div>
       <div class="text-center margin-top-2px">60</div>
-    </div><!-- swwatch -->
+    </div><!-- swatch -->
     <div class="grid-col-fill">
       <div class="bg-gray-70 height-4"></div>
       <div class="text-center margin-top-2px">70</div>
-    </div><!-- swwatch -->
+    </div><!-- swatch -->
     <div class="grid-col-fill">
       <div class="bg-gray-80 height-4"></div>
       <div class="text-center margin-top-2px">80</div>
-    </div><!-- swwatch -->
+    </div><!-- swatch -->
     <div class="grid-col-fill">
       <div class="bg-gray-90 height-4"></div>
       <div class="text-center margin-top-2px">90</div>
-    </div><!-- swwatch -->
+    </div><!-- swatch -->
   </div>
 </div>
 {% endcapture %}
@@ -116,7 +116,7 @@ We call the difference in grade between any two colors the _magic number_. Magic
 
 Use magic numbers to choose accessible color combinations from any palette and color family.
 
-Magic numbers work because each grade conforms to a specific range of values for [relative luminance](https://www.w3.org/WAI/GL/wiki/Relative_luminance). WCAG and Section 508 color contrast is calculated as a ratio of the relative luminances of two colors, so as long as our colors fall between a specific luminance range for each grade, the ratio will conform to contrast requirements. The following table shows each grade and the corresponding luminance minimum and maximum. 
+Magic numbers work because each grade conforms to a specific range of values for [relative luminance](https://www.w3.org/WAI/GL/wiki/Relative_luminance). WCAG and Section 508 color contrast is calculated as a ratio of the relative luminances of two colors, so as long as our colors fall between a specific luminance range for each grade, the ratio will conform to contrast requirements. The following table shows each grade and the corresponding luminance minimum and maximum.
 
 | grade | minimum luminance | maximum luminance
 | --- | --- | ---

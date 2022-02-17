@@ -6,7 +6,7 @@ component:
   variant: scrollable
 guidancePath: guidance/variants/scrollable
 layout: styleguide
-lead: A scrollable table is ideal for dense, tabular data.
+lead: A scrollable table is ideal for dense data.
 order: 02
 parent: Table
 sitemap: false

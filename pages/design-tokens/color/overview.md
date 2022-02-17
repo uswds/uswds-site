@@ -18,8 +18,8 @@ subnav:
     href: '#uswds-color-wheels'
   - text: Color guidance
     href: '#general-color-guidance'
-  - text: References
-    href: '#references'
+  - text: Further reading
+    href: '#further-reading'
   - text: Tools
     href: '#tools'
 ---

@@ -36,7 +36,7 @@ Your project’s Sass entry point is a simple file that only needs to do the fol
 2. Include the USWDS source code
 3. Include your project’s custom Sass
 
-Create an entry point called something like `index.scss` or `styles.scss`. Your entry point should look read the following example:
+Create an entry point called something like `index.scss` or `styles.scss`. Your entry point should read like the following example:
 
 {:.site-terminal}
 ```scss

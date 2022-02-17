@@ -1,1 +1,1 @@
-- **Deep hierarchy.** Use the basic header with megamenu if you’d like to include more than six links in any of your dropdown menus, and if you have few enough main sections to allow your horizontal navigation to fit comfortably in the basic header.
+- **Deep hierarchy.** Use the basic header with a megamenu if you’d like to include more than six links in any of your dropdown menus and if you have few enough main sections to allow your horizontal navigation to fit comfortably in the basic header.

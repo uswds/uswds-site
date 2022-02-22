@@ -50,7 +50,7 @@
 - **Write out email and phone links.** For `mailto:` and `tel:` links, write out email addresses and phone numbers so users can read or copy this information without selecting the link.
 
     **Example:**
-    > Email us at [uswds@support.digitalgov.gov](mailto:uswds@support.digitalgov.gov)
+    > Email us at [{{ site.uswds_email }}](mailto:{{ site.uswds_email }})
 
 - **Encode email and phone links.** Some browsers don’t automatically display a clickable link for email addresses or phone numbers, so encode email and phone links with `mailto:` and `tel:`. Include the country code in phone numbers to support international users.
 

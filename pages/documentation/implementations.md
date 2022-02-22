@@ -72,4 +72,4 @@ If you have a new implementation to add to this list, please [open an issue] on 
 </div>
 
 [open an issue]: https://github.com/uswds/uswds-site/issues/new
-[send us an email]: mailto:uswds@support.digitalgov.gov
+[send us an email]: mailto:{{ site.uswds_email }}

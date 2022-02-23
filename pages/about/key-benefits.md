@@ -101,7 +101,7 @@ We are as committed as you are to public service, and we reflect this in our pro
         </svg>
       </div>
       <div class="usa-icon-list__content">
-        <p><b>Use these key benefits listed to make the case to your team and management.</b> You may customize the themes and messages for your audience, and email us at <a href="mailto:uswds@support.digitalgov.gov">uswds@support.digitalgov.gov</a> if you have feedback on things to add or remove from this list.</p>
+        <p><b>Use these key benefits listed to make the case to your team and management.</b> You may customize the themes and messages for your audience, and email us at <a href="mailto:{{ site.uswds_email }}">{{ site.uswds_email }}</a> if you have feedback on things to add or remove from this list.</p>
       </div>
     </li>
     <li class="usa-icon-list__item">

@@ -94,7 +94,6 @@ GEM
 
 PLATFORMS
   x86_64-darwin-20
-  x86_64-darwin-21
 
 DEPENDENCIES
   html-proofer
@@ -109,4 +108,4 @@ DEPENDENCIES
   webrick (~> 1.7)
 
 BUNDLED WITH
-   2.3.6
+   2.2.33

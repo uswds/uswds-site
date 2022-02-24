@@ -1,19 +1,19 @@
 // Imports
-@import "variables";
-@import "uswds-theme-general";
-@import "uswds-theme-typography";
-@import "uswds-theme-spacing";
-@import "uswds-theme-color";
-@import "uswds-theme-utilities";
+@import "settings/variables";
+@import "settings/uswds-theme-general";
+@import "settings/uswds-theme-typography";
+@import "settings/uswds-theme-spacing";
+@import "settings/uswds-theme-color";
+@import "settings/uswds-theme-utilities";
 
 // Settings
 // -------------------------------------
-@import "settings/settings-general";
-@import "settings/settings-typography";
-@import "settings/settings-color";
-@import "settings/settings-spacing";
-@import "settings/settings-utilities";
-@import "settings/settings-components";
+@import "../node_modules/uswds/dist/scss/stylesheets/core/settings/settings-general";
+@import "../node_modules/uswds/dist/scss/stylesheets/core/settings/settings-typography";
+@import "../node_modules/uswds/dist/scss/stylesheets/core/settings/settings-color";
+@import "../node_modules/uswds/dist/scss/stylesheets/core/settings/settings-spacing";
+@import "../node_modules/uswds/dist/scss/stylesheets/core/settings/settings-utilities";
+@import "../node_modules/uswds/dist/scss/stylesheets/core/settings/settings-components";
 
 // Tools
 // -------------------------------------

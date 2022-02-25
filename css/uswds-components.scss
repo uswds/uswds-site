@@ -5,4 +5,6 @@
 @import "settings/uswds-theme-color";
 @import "settings/uswds-theme-utilities";
 @import "settings/uswds-theme-components";
+@import "../node_modules/uswds/dist/scss/stylesheets/core/index";
+@import "../node_modules/uswds/dist/scss/stylesheets/packages/uswds-global";
 @import "../node_modules/uswds/dist/scss/stylesheets/packages/uswds-components";

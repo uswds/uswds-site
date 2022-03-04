@@ -1428,6 +1428,7 @@ code[class*="language-plaintext"] {
 }
 
 // External link styles
+
 #{$external-href} {
   @include external-link;
 }

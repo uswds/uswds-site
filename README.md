@@ -49,7 +49,7 @@ Go to `127.0.0.1:4000` in your browser — you should be viewing a local instanc
 Here are a few other utility commands you may find useful:
 
 - `npm run clean`: Cleans out copied-over dependency assets.
-npm
+
 - `npm run lint`: Runs `eslint` and `sass-lint` against JavaScript and Sass files.
 
 - `npm test`: Runs all tests and linters.

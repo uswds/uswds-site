@@ -182,12 +182,11 @@ gulp.task("scss-lint", (done) => {
 
   return gulp
     .src(["./css/**/*.scss"])
-    .pipe(
-      linter({
-        config: ".scss-lint.yml",
-      })
-    )
-    .pipe(linter.failReporter("E"));
+    .pipe(gulpStylelint({
+      reporters: [
+        {formatter: 'string', console: true}
+      ]
+    }));
 });
 
 gulp.task(task, gulp.series("build-sass"));

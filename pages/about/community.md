@@ -16,7 +16,7 @@ Join us in the `#uswds-public` channel in Slack by [filling out our form](https:
 
 <a href="https://chat.18f.gov/" class="usa-button width-card-lg margin-top-2">Join the USWDS Community</a>
 
-If you're having trouble, email [uswds@support.digitalgov.gov](mailto:uswds@support.digitalgov.gov?subject=Join%20USWDS%20Slack) with _Join the USWDS Community_ in the subject.
+If you're having trouble, email [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}?subject=Join%20USWDS%20Slack) with _Join the USWDS Community_ in the subject.
 
 
 ## Contribute to USWDS

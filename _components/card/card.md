@@ -46,4 +46,4 @@ A **card** is often a subset or summary of a larger idea. It acts as an entry po
 
 An individual card is typically **a member of a collection** of similar cards, not a single card in isolation. A card is distinguished from others in its collection by its content, and cards are distinguished from the broader page context in form — usually with a border or a shadow.
 
-Finally, a card is **modular**. This means that you can vary the order of cards in a collection without destroying any individual card’s meaning.
+Finally, a card is **modular**, which means you can vary the order of cards in a collection without destroying any individual card’s meaning.

@@ -6,4 +6,4 @@ We interviewed 60 government content managers, designers, engineers, and other s
 
 [Read the report](Transforming-the-American-digital-experience-v0.1-DRAFT.pdf) (PDF, 947 KB, Draft v0.1, January 2021) included in this directory to learn how teams are using the design system and how, together, we can improve government services and transform the American digital experience. Throughout the report, we list opportunities to get involved and prompts to investigate ways to move these efforts forward.
 
-Have a story related to using the design system? Whether it’s a big win or a roadblock, we want to hear it! Please email us at uswds@support.digitalgov.gov.
+Have a story related to using the design system? Whether it’s a big win or a roadblock, we want to hear it! Please email us at {{ site.uswds_email }}.

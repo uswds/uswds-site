@@ -26,7 +26,7 @@ Alternatively, you can view the design assets on [Figma](https://figma.com/commu
 
 
 ### Retired design files
-USWDS no longer maintains the following design files. The most recent versions remain available for download at the links below. While USWDS is no longer maintaining these files, we'd love to hear from any teams that are using them and adding new components when new versions of USWDS are released. [Send us an email](mailto:@uswds@support.digitalgov.gov).
+USWDS no longer maintains the following design files. The most recent versions remain available for download at the links below. While USWDS is no longer maintaining these files, we'd love to hear from any teams that are using them and adding new components when new versions of USWDS are released. [Send us an email](mailto:@{{ site.uswds_email }}).
 
 #### 1.6.10
 {% include download-buttons-design-retired-1.6.10.html %}
@@ -44,4 +44,4 @@ We’re glad you’re considering contributing to USWDS — their success relies
 
 Please visit our [wiki](https://github.com/uswds/uswds/wiki/Contribution-Guidelines:-Design) to read our full contribution guidelines. Also, please note that every submission we receive goes through a full design review. (Changes that only affect underlying code are reviewed by our developers.)
 
-Questions or comments? [Email us](mailto:uswds@support.digitalgov.gov) and we’ll get back to you as quickly as we can.
+Questions or comments? [Email us](mailto:{{ site.uswds_email }}) and we’ll get back to you as quickly as we can.

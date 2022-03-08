@@ -1,2 +1,2 @@
 - **Displaying tabular data.** When you need to display tabular information, such as statistical data.
-- **Displaying directories.** When listing locations or resources that have similarly-structured content for many items.
+- **Displaying directories.** When listing locations or resources that have similarly structured content for many items.

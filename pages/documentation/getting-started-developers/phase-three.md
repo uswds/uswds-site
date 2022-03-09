@@ -9,9 +9,6 @@ type: docs
 
 Now, equipped with building blocks that are accessible and cohesive, you can get creative. This phase is an overview of what you need to know to customize your project.
 
-{: .site-note }
-**Note:** If you use `uswds-compile`, as detailed in Phase 2, this tool adds each of the files mentioned below to the directory you specify in `uswds.paths.dist.theme`.
-
 The U.S. Web Design System provides extensive support for theming via its theme settings files. The files you'll need in your project are the following, which are located in `uswds.paths.dist.theme`:
 -	`_uswds-theme-color.scss` — color settings
 -	`_uswds-theme-components.scss` — component settings
@@ -19,6 +16,9 @@ The U.S. Web Design System provides extensive support for theming via its theme 
 -	`_uswds-theme-spacing.scss` — spacing settings
 - `_uswds-theme-typography.scss` — typography settings
 -	`_uswds-theme-utilities.scss` — utility class output settings
+
+{: .site-note }
+**Note:** If you use `uswds-compile`, as detailed in Phase 2, this tool adds each of these files to the directory you specify in `uswds.paths.dist.theme`.
 
 Because `uswds.paths.dist.theme` will be updated as the Design System updates, we recommend copying these files into an "overrides" (or similarly titled) folder and customizing them there.
 

@@ -8,8 +8,8 @@ type: docs
 subnav:
   - text: "Step 1: Set up your project’s Sass entry point"
     href: "#step-1-set-up-your-projects-sass-entry-point"
-  - text: "Step 2: Install uswds-gulp"
-    href: "#step-2-install-uswds-gulp"
+  - text: "Step 2: Install uswds-compile"
+    href: "#step-2-install-uswds-compile"
   - text: "Step 3: Add configuration files"
     href: "#step-3-add-configuration-files"
   - text: "Step 4: Configure Gulp"
@@ -22,10 +22,10 @@ subnav:
 
 U.S. Web Design System source code is written in Sass, a powerful stylesheet language that builds automation, functions, and logic into CSS. Browsers can’t read native Sass files, so these files need to be compiled into CSS — usually a single CSS file — before we can use them. Basically, when you develop with the Design System, you do all your stylesheet work in Sass then use a compiler to convert that Sass into CSS.
 
-We’ve developed `uswds-compile`, a tool hosted on GitHub, to help teams copy USWDS static assets and transform USWDS Sass into browser-readable CSS. [Step 2](#step-2-install-uswds-gulp) describes how to install this tool. When you use `uswds-compile`, we will apply Autoprefixer to all compiled code.
+We’ve developed `uswds-compile`, a tool hosted on GitHub, to help teams copy USWDS static assets and transform USWDS Sass into browser-readable CSS. [Step 2](#step-2-install-uswds-compile) describes how to install this tool. When you use `uswds-compile`, we will apply Autoprefixer to all compiled code.
 
 {: .site-note }
-**Note:** If you want `uswds-compile` to set up a Sass entry point for you, skip directly to [Step 2](#step-2-install-uswds-gulp). We provide Step 1 for context: why you need a Sass entry point, what it needs to include, and how to set one up manually.
+**Note:** If you want `uswds-compile` to set up a Sass entry point for you, skip directly to [Step 2](#step-2-install-uswds-compile). We provide Step 1 for context: why you need a Sass entry point, what it needs to include, and how to set one up manually.
 
 ## Step 1: Set up your project’s Sass entry point
 
@@ -133,7 +133,7 @@ Setting | Default | Description
 `paths.src.fonts` | `"./node_modules/uswds/dist/fonts"` | Source location of the USWDS fonts
 `paths.src.img` | `"./node_modules/uswds/dist/img"` | Source location of the USWDS images
 `paths.src.js` | `"./node_modules/uswds/dist/js"` | Source location of the USWDS compiled JavaScript files
-`paths.src.projectSass` | `"./sass"` | Source location of any exisiting project Sass files outside of `paths.dist.sass`. The `watch` script will watch this directory for changes.
+`paths.src.projectSass` | `"./sass"` | Source location of any existing project Sass files outside of `paths.dist.sass`. The `watch` script will watch this directory for changes.
 `paths.dist.sass` | `"./sass"` | Project destination for theme files (Sass entry point and settings)
 `paths.dist.img` | `"./assets/uswds/images"` | Project destination for images
 `paths.dist.fonts` | `"./assets/uswds/fonts"` | Project destination for fonts

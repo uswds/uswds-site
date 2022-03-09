@@ -84,7 +84,7 @@ The entry point itself is called `uswds.scss`, and it’s found in the `/dist/sc
 After you import the USWDS source code, you can build new styles with USWDS design tokens, functions, and mixins. For the purposes of this guide, we won’t get into custom code, but the important thing to understand is that any custom code should follow the settings and USWDS source code in your Sass entry point.
 
 ## Step 2: Install uswds-compile
-From your project’s root, run the following command to install `uswds-compile` and all its dependencies:
+From your project’s root, run the following command to install `uswds-compile`:
 
 {:.site-terminal}
 ```bash

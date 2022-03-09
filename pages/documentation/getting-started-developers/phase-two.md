@@ -176,7 +176,7 @@ If you receive the error `replaceAll is not a function` when trying to run `npx 
 This command will add all the USWDS assets to the directories you set, add a project Sass entry point, and compile USWDS into CSS. Add this CSS file to the `<head>` of your project HTML.
 
 ## Step 6: Verify successful installation
-Any time you want to recompile your CSS, run `npx gulp build-sass` from the command line in your project root.
+Any time you want to recompile your CSS, run `npx gulp compileSass` from the command line in your project root.
 
 To verify whether you’ve successfully installed USWDS and that compilation is working, we recommend confirming the directory structure matches the paths you have updated in `gulpfile.js`, copying a few [components]({{ site.baseurl }}/components/overview/), pasting them into an HTML page, and then visiting that page in the browser to see if the components appear as expected.
 

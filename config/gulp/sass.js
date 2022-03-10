@@ -14,7 +14,13 @@ const dev_plugins = [autoprefixer({ cascade: false })];
 
 const prod_plugins = [csso({ forceMediaMerge: false })];
 
-const uswds_path = "./node_modules/uswds/dist/scss/stylesheets";
+// ! Can't point to packages because it causes error
+// ! Example:
+// ! Can't find stylesheet to import.
+// ! @forward "uswds-elements/src/styles/font-face";
+// const uswds_path = "./node_modules/uswds/dist/scss/stylesheets";
+
+const uswds_path = "./node_modules/uswds";
 
 const handleError = (error) => {
   dutil.logError.bind(this)(error);

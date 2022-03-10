@@ -4,4 +4,10 @@
 @import "settings/uswds-theme-spacing";
 @import "settings/uswds-theme-color";
 @import "settings/uswds-theme-utilities";
-@import "../node_modules/uswds/dist/scss/stylesheets/packages/uswds-fonts";
+
+// ! Can't point here because it causes error
+// ! Can't find stylesheet to import.
+// ! @forward "uswds-elements/src/styles/font-face";
+// @import "packages/uswds-fonts";
+
+@import "packages/uswds-fonts";

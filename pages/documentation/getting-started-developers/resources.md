@@ -19,7 +19,7 @@ subnav:
 ## Need installation help?
 Do you have questions or need help with setup? Did you run into any weird errors while following these instructions? Feel free to [open an issue](https://github.com/uswds/uswds/issues) in GitHub.
 
-You can also email us directly at [uswds@support.digitalgov.gov](mailto:uswds@support.digitalgov.gov).
+You can also email us directly at [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}).
 
 ## Stay involved
 USWDS is supported by an active, open-source community of engineers, content specialists, and designers.
@@ -37,4 +37,4 @@ If you have questions or concerns about our contributing workflow, feel free to 
 - Feature request — Suggest a new idea for the design system.
 - Report a security vulnerability — Report potential security issues. Review our [security policy](https://github.com/uswds/uswds/security/policy) for more details.
 
-You can also email us directly at [uswds@support.digitalgov.gov](mailto:uswds@support.digitalgov.gov).
+You can also email us directly at [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}).

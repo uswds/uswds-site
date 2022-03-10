@@ -1,12 +1,12 @@
 version: 2.1
 
 orbs:
-  snyk: snyk/snyk@0.0.13
+  snyk: snyk/snyk@1.1.2
 
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.7-node-browsers
+      - image: cimg/ruby:3.0.2-browsers
     steps:
       - checkout
       - restore_cache:

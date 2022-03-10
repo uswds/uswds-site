@@ -35,7 +35,7 @@ chapter: true
 
 - Be vocal advocates of USWDS and the benefits it provides
 
-- [Share critical, candid feedback with us](mailto:uswds@support.digitalgov.gov) to help make the design system better
+- [Share critical, candid feedback with us](mailto:{{ site.uswds_email }}) to help make the design system better
 
 ### Policy analysts can: 
 

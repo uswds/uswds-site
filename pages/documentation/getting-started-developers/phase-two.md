@@ -125,7 +125,7 @@ exports.compile = uswds.compile;
 ## Step 4: Create path settings and export compile functions
 Now, create your path settings using the following table:
 
-<div markdown="1" class="usa-table-container--scrollable">
+<div markdown="1" class="usa-table-container--scrollable" tabindex="0">
 
 {: .usa-table }
 Setting | Default | Description

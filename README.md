@@ -17,13 +17,16 @@ Recommended before install:
 
 You will need to have the following installed on your machine before following the commands below:
 
-1. Ruby v2.2.2+, [Installation guides](https://www.ruby-lang.org/en/documentation/installation/)
-1. Node v4.2.3+, [Installation guides](https://nodejs.org/en/download/)
+1. Ruby v2.2.2+ (see `.ruby-version`), [Installation guides](https://www.ruby-lang.org/en/documentation/installation/)
+1. Node v4.2.3+ (see `.nvmrc`), [Installation guides](https://nodejs.org/en/download/)
 1. Bundler v1.12.3+, [Installation guides](http://bundler.io/v1.13/guides/using_bundler_in_application.html#getting-started---installing-bundler-and-bundle-init)
 1. Chrome v59 or higher (v60 if on Windows)
 1. Python v2.7* (For node-gyp dependency)
 
->\* If you're running into node-gyp issues on `npm install` you'll need to install python v2.7, which is the recommended version as of `node-gyp@3.8.0`. Once installed you can reference it via `npm config set python /usr/bin/python2.7` or wherever you have installed. You can find that with `whereis python` command.
+#### ⚠️ Potential issues and workarounds
+- If you're running into node-gyp issues on `npm install` you'll need to install python v2.7, which is the recommended version as of `node-gyp@3.8.0`. Once installed you can reference it via `npm config set python /usr/bin/python2.7` or wherever you have installed. You can find that with `whereis python` command.
+- Ubuntu 20.04 users might run into: `bundler: failed to load command: jekyll (/usr/share/rvm/gems/ruby-3.0.2/bin/jekyll)`. Install ffi with the following flag to work around it `gem install ffi -- --disable-system-libffi`.
+
 
 ### Building the documentation with gulp
 

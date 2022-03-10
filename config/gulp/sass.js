@@ -14,13 +14,17 @@ const dev_plugins = [autoprefixer({ cascade: false })];
 
 const prod_plugins = [csso({ forceMediaMerge: false })];
 
-// ! Can't point to packages because it causes error
-// ! Example:
-// ! Can't find stylesheet to import.
-// ! @forward "uswds-elements/src/styles/font-face";
-// const uswds_path = "./node_modules/uswds/dist/scss/stylesheets";
+// We need in order to reference:
+// - the alias "uswds/packages/{{ package }}"
+// - resolving paths within those packages
+const uswds_required_paths = [
+  "./node_modules",
+  "./node_modules/uswds/packages",
+];
 
-const uswds_path = "./node_modules/uswds";
+const uswds_site_paths = "./css/settings";
+
+const sass_include_paths = uswds_required_paths.concat([uswds_site_paths]);
 
 const handleError = (error) => {
   dutil.logError.bind(this)(error);
@@ -33,7 +37,7 @@ gulp.task("build-sass-fonts", () => {
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass({
-        includePaths: [uswds_path, "./css/settings"],
+        includePaths: sass_include_paths,
         outputStyle: "expanded",
       }).on("error", handleError)
     )
@@ -49,7 +53,7 @@ gulp.task("build-sass-components", () => {
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass({
-        includePaths: [uswds_path, "./css/settings"],
+        includePaths: sass_include_paths,
         outputStyle: "expanded",
       }).on("error", handleError)
     )
@@ -65,7 +69,7 @@ gulp.task("build-sass-custom", () => {
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass({
-        includePaths: [uswds_path, "./css/settings"],
+        includePaths: sass_include_paths,
         outputStyle: "expanded",
       }).on("error", handleError)
     )
@@ -81,7 +85,7 @@ gulp.task("build-next-sass", () => {
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass({
-        includePaths: [uswds_path, "./css/settings"],
+        includePaths: sass_include_paths,
         outputStyle: "expanded",
       }).on("error", handleError)
     )
@@ -97,7 +101,7 @@ gulp.task("build-sass-utilities", () => {
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass({
-        includePaths: [uswds_path, "./css/settings"],
+        includePaths: sass_include_paths,
         outputStyle: "expanded",
       }).on("error", handleError)
     )
@@ -186,13 +190,11 @@ gulp.task("scss-lint", (done) => {
     return done();
   }
 
-  return gulp
-    .src(["./css/**/*.scss"])
-    .pipe(gulpStylelint({
-      reporters: [
-        {formatter: 'string', console: true}
-      ]
-    }));
+  return gulp.src(["./css/**/*.scss"]).pipe(
+    gulpStylelint({
+      reporters: [{ formatter: "string", console: true }],
+    })
+  );
 });
 
 gulp.task(task, gulp.series("build-sass"));

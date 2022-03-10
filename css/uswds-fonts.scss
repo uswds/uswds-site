@@ -5,9 +5,4 @@
 @import "settings/uswds-theme-color";
 @import "settings/uswds-theme-utilities";
 
-// ! Can't point here because it causes error
-// ! Can't find stylesheet to import.
-// ! @forward "uswds-elements/src/styles/font-face";
-// @import "packages/uswds-fonts";
-
-@import "packages/uswds-fonts";
+@import "uswds/packages/uswds-fonts";

@@ -789,7 +789,7 @@
       subsection: Modal max width (lg)
       usage: Maximum width of large modal window.
       var: $theme-modal-lg-max-width
-      default: "800px"
+      default: "880px"
       kind: px
     - name: Modal
       subsection: Modal max width (lg inner content)

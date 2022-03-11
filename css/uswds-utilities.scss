@@ -4,4 +4,5 @@
 @import "settings/uswds-theme-spacing";
 @import "settings/uswds-theme-color";
 @import "settings/uswds-theme-utilities";
-@import "../node_modules/uswds/dist/scss/stylesheets/packages/uswds-utilities";
+
+@import "uswds/packages/uswds-utilities";

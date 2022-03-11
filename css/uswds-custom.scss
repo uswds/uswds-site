@@ -8,17 +8,8 @@
 
 // Settings
 // -------------------------------------
-@import "../node_modules/uswds/dist/scss/stylesheets/core/settings/index";
-
-@import "../node_modules/uswds/dist/scss/stylesheets/core/functions/index";
-@import "../node_modules/uswds/dist/scss/stylesheets/core/tokens/index";
-@import "../node_modules/uswds/dist/scss/stylesheets/core/variables/index";
-@import "../node_modules/uswds/dist/scss/stylesheets/core/properties";
-@import "../node_modules/uswds/dist/scss/stylesheets/core/mixins/index";
-@import "../node_modules/uswds/dist/scss/stylesheets/core/placeholders/index";
-
-@import "../node_modules/uswds/dist/scss/stylesheets/core/deprecated";
-@import "../node_modules/uswds/dist/scss/stylesheets/core/notifications";
+// @import "../node_modules/uswds/dist/scss/stylesheets/core/settings/index";
+@import "@uswds/core";
 
 // Tools
 // -------------------------------------

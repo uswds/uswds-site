@@ -47,7 +47,7 @@ positive:
     - token: 'tablet'
       value: 640px
     - token: 'tablet-lg'
-      value: 800px
+      value: 880px
   largest:
     - token: 'desktop'
       value: 1024px

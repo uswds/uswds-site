@@ -148,7 +148,7 @@ utilities:
       <div class="display-inline border-1px padding-2 margin-bottom-05"><span class="utility-class">.display-inline</span></div>
       <div class="display-inline-block border-1px padding-2 margin-bottom-05"><span class="utility-class">.display-inline-block</span></div>
       <div class="display-inline-flex border-1px padding-2 margin-bottom-05"><span class="utility-class">.display-inline-flex</span></div>
-      <div class="display-none border-1px padding-2 margin-bottom-05"><span class="utility-class">.display-inline</span></div>
+      <div class="display-none border-1px padding-2 margin-bottom-05"><span class="utility-class">.display-none</span></div>
       <div class="display-table">
         <div class="display-table-row">
           <div class="display-table-cell border-1px padding-2"><span class="utility-class">.display-table-cell</span></div>

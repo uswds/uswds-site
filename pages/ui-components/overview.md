@@ -10,7 +10,10 @@ redirect_from:
   - /form-controls/
 ---
 
+{% include touchpoint-survey-script.html %}
+
 {% assign uswdsComponents = site.components | where: "parent", null | where: "component.status", "ready" %}
+
 
 <div class="bg-base-lighter padding-2 radius-md">
   <h2 class="font-lang-lg margin-top-0 margin-bottom-0">Find a USWDS component</h2>

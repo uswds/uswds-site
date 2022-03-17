@@ -25,6 +25,10 @@ tags:
   - line
   - bar
 ---
+
+{% include touchpoint-survey-script.html %}
+
+
 <div class="site-note"><strong>Note:</strong> The data visualizations components are guidance-only and do not include any <code>Component Code</code>. The examples of specific visualizations included with our guidance are intended to be a demonstration of one way to implement our guidance with a focus on accessibility and assistive tooling.</div>
 <section class="site-component-section site-component-usage">
   <h2 id="general-guidance" class="site-component-name">General guidance</h2>

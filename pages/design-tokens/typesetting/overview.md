@@ -15,6 +15,8 @@ subnav:
     href: '#typesetting-with-tokens'
 ---
 
+{% include touchpoint-survey-script.html %}
+
 {% assign tokens = site.data.tokens.typesetting %}
 
 ## Normalization

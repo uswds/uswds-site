@@ -12,6 +12,8 @@ subnav:
   href: '#using-opacity-tokens'
 ---
 
+{% include touchpoint-survey-script.html %}
+
 {% assign tokens = site.data.tokens %}
 
 ## Opacity tokens

@@ -12,6 +12,8 @@ subnav:
   href: '#using-measure-tokens'
 ---
 
+{% include touchpoint-survey-script.html %}
+
 {% assign tokens = site.data.tokens.typesetting %}
 
 ## Measure tokens

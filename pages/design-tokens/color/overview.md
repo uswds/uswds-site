@@ -24,6 +24,8 @@ subnav:
     href: '#tools'
 ---
 
+{% include touchpoint-survey-script.html %}
+
 ## Introduction
 USWDS organizes its color tokens into [theme tokens]({{ site.baseurl }}/design-tokens/color/theme-tokens/), [state tokens]({{ site.baseurl }}/design-tokens/color/state-tokens/), and [System tokens]({{ site.baseurl }}/design-tokens/color/system-tokens/). System tokens are the complete set of colors available from USWDS. Project tokens are a smaller, role-based subset customized to your project's individual identity, tone, and needs. This subset of tokens will use only a few color families from the 24 color families available in the set of System tokens.
 

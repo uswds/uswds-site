@@ -12,6 +12,8 @@ subnav:
   href: '#using-flex-tokens'
 ---
 
+{% include touchpoint-survey-script.html %}
+
 {% assign tokens = site.data.tokens %}
 
 ## Flex tokens

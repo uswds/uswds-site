@@ -12,6 +12,8 @@ subnav:
   href: '#using-letterspacing-tokens'
 ---
 
+{% include touchpoint-survey-script.html %}
+
 {% assign conversion = site.data.tokens.conversion %}
 {% assign tokens = site.data.tokens.typesetting %}
 

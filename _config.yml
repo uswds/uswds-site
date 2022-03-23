@@ -90,6 +90,21 @@ defaults:
       layout: post
   - scope:
       path: ""
+      type: pages
+    values:
+      touchpoints_survey: true
+  - scope:
+      path: ""
+      type: templates
+    values:
+      touchpoints_survey: true
+  - scope:
+      path: ""
+      type: utilities
+    values:
+      touchpoints_survey: true
+  - scope:
+      path: ""
       type: next
     values:
       report_title: "Report: Transforming the American digital experience"

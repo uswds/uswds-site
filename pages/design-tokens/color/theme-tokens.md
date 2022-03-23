@@ -14,8 +14,6 @@ subnav:
   href: '#using-theme-color-tokens'
 ---
 
-{% include touchpoint-survey-script.html %}
-
 {% assign colors = site.data.tokens.color %}
 {% include tokens/get-system-colors.html %}
 

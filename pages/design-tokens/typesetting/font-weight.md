@@ -14,8 +14,6 @@ subnav:
   href: '#using-weight-tokens'
 ---
 
-{% include touchpoint-survey-script.html %}
-
 {% assign tokens = site.data.tokens.typesetting.weight %}
 
 ## Theme tokens

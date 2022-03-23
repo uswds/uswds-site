@@ -14,15 +14,13 @@ subnav:
     href: '#using-design-tokens'
 ---
 
-{% include touchpoint-survey-script.html %}
-
 {{ page.collection | slugify }}
 
 ## Introducing design tokens
 
 Anything we see on a website is built from elements of style: color, spacing, typography, line height, and opacity. The CSS rules associated with these elements can accept a broad continuum of values — in the case of color, there are over 16 million separate colors in the RGB color space. Font size, line height, spacing, and others can accept a similarly wide range of values.
 
-This degree of choice can slow down design work and make communication between designer and developer unnecessaril y granular. The Design System seeks to maximize design efficiency and improve communication with **design tokens**: the discrete palettes of values from which we base all our visual design.
+This degree of choice can slow down design work and make communication between designer and developer unnecessarily granular. The Design System seeks to maximize design efficiency and improve communication with **design tokens**: the discrete palettes of values from which we base all our visual design.
 
 Our System design tokens are a limited set of discrete options, just like a scale of musical notes is drawn from the spectrum of all possible frequencies. Or like the presets on a car radio — not every option, just a specific selection. Take the following figure for instance: In the spectrum of hues between white and black, we provide a curated selection of five:
 

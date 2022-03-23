@@ -32,8 +32,6 @@ subnav:
   href: '#utility-mixins'
 ---
 
-{% include touchpoint-survey-script.html %}
-
 The USWDS typescale is designed to display type at a consistent size regardless of the typeface. Theme font tokens use a nine-step scale drawn from a 21-step system scale. Theme and system font tokens are the only tokens we accept for setting set font family and size in official components.
 
 Font size is output in `rem`. If you have `$theme-respect-user-font-size` set to `true` in your theme settings, the root font size is set to `100%` and typescale is calculated based on `16px`. If `$theme-respect-user-font-size` set to `false`, the root font size is set to the value of `$theme-root-font-size` and typescale is calculated based on that root.

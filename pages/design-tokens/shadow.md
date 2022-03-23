@@ -12,8 +12,6 @@ subnav:
   href: '#using-shadow-tokens'
 ---
 
-{% include touchpoint-survey-script.html %}
-
 {% assign tokens = site.data.tokens %}
 
 ## Shadow tokens

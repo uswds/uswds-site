@@ -12,8 +12,6 @@ subnav:
   href: '#using-order-tokens'
 ---
 
-{% include touchpoint-survey-script.html %}
-
 {% assign tokens = site.data.tokens %}
 
 ## Order tokens

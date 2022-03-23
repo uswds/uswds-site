@@ -14,8 +14,6 @@ subnav:
   href: '#using-size-tokens'
 ---
 
-{% include touchpoint-survey-script.html %}
-
 {% assign tokens = site.data.tokens.typesetting.size %}
 
 {:.bg-gold-20v.padding-2.radius-md}

@@ -18,8 +18,6 @@ subnav:
   href: '#using-family-tokens'
 ---
 
-{% include touchpoint-survey-script.html %}
-
 {% assign tokens = site.data.tokens.typesetting %}
 
 {:.bg-gold-20v.padding-2.radius-md}

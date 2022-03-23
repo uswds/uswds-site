@@ -12,8 +12,6 @@ subnav:
   href: '#using-z-index-tokens'
 ---
 
-{% include touchpoint-survey-script.html %}
-
 ## Z-index tokens
 <div class="position-relative z-0">
   <div class="bg-white radius-md border padding-x-1 tablet:padding-x-2 padding-top-1 padding-bottom-2 font-mono-3 position-relative z-bottom">

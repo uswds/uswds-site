@@ -654,6 +654,15 @@ body {
     margin-top: 0;
   }
 
+  .touchpoints__container {
+    @include grid-container;
+    @include u-maxw($theme-grid-container-max-width);
+    @include at-media("mobile-lg") {
+      @include u-flex("justify-end");
+      margin-bottom: units(2);
+    }
+  }
+
   .logo-links {
     margin-bottom: units(1);
     margin-right: units(2.5);
@@ -680,16 +689,6 @@ body {
     @include at-media("tablet") {
       padding-top: units(4);
     }
-  }
-}
-
-.touchpoints__container {
-  @include grid-container;
-  @include u-maxw($theme-grid-container-max-width);
-  
-  @include at-media("mobile-lg") {
-    @include u-flex("justify-end");
-    margin-bottom: units(2);
   }
 }
 

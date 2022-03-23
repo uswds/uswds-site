@@ -683,6 +683,16 @@ body {
   }
 }
 
+.touchpoints__container {
+  @include grid-container;
+  @include u-maxw($theme-grid-container-max-width);
+  
+  @include at-media("mobile-lg") {
+    @include u-flex("justify-end");
+    margin-bottom: units(2);
+  }
+}
+
 .footer-main-img {
   display: none;
   max-width: units("card");

@@ -647,6 +647,7 @@ body {
 // Footer --------------- //
 
 .site-footer {
+  @include u-bg($site-background-color);
   @include typeset("lang");
   clear: both;
 

@@ -5,12 +5,11 @@ title: Components
 category: Components
 lead: USWDS components are simple and consistent solutions to common user-interface needs.
 type: docs
+touchpoints_survey: true
 redirect_from:
   - /components/
   - /form-controls/
 ---
-
-{% include touchpoint-survey-script.html %}
 
 {% assign uswdsComponents = site.components | where: "parent", null | where: "component.status", "ready" %}
 

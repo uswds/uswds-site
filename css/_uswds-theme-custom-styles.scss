@@ -659,6 +659,7 @@ body {
     @include u-maxw($theme-grid-container-max-width);
     @include at-media("mobile-lg") {
       @include u-flex("justify-end");
+      margin-top: units(2);
       margin-bottom: units(2);
     }
   }

@@ -19,8 +19,6 @@ subnav:
   href: '#known-issues-with-screen-readers'
 ---
 
-{% include touchpoint-survey-script.html %}
-
 <div class="site-note"><strong>Note:</strong> If you are a building a form with multiple controls, also consider the <a href="{{ site.baseurl }}/form-templates/">accessibility guidelines on the “Form Templates” page</a>.</div>
 
 {% include accessibility.html %}

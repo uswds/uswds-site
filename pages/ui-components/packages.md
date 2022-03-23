@@ -16,8 +16,6 @@ subnav:
     href: '#reducing-footprint-with-packages'
 ---
 
-{% include touchpoint-survey-script.html %}
-
 ## Introducing packages
 Not every USWDS project needs to use the entire design system. We support incremental adoption, in part by allowing any USWDS project to import only the components they need.
 

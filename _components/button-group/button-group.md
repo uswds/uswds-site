@@ -17,6 +17,4 @@ title: Button group
 type: component
 ---
 
-{% include touchpoint-survey-script.html %}
-
 {% include child-sections.html parent='Button group' %}

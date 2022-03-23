@@ -13,7 +13,6 @@ redirect_from:
 
 {% assign uswdsComponents = site.components | where: "parent", null | where: "component.status", "ready" %}
 
-
 <div class="bg-base-lighter padding-2 radius-md">
   <h2 class="font-lang-lg margin-top-0 margin-bottom-0">Find a USWDS component</h2>
   <div role="region" aria-label="Component search" aria-atomic="true" class="margin-top-1">

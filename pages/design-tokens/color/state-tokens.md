@@ -5,7 +5,6 @@ title: State color tokens
 category: Design tokens
 lead: USWDS state colors tokens provide flexible, accessible, customizable colors for warning, error, and other states
 type: docs
-touchpoints_survey: true
 subnav:
 - text: State color tokens
   href: '#uswds-state-color-tokens'

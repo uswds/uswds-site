@@ -658,10 +658,9 @@ body {
   .touchpoints__container {
     @include grid-container;
     @include u-maxw($theme-grid-container-max-width);
-    @include at-media("mobile-lg") {
-      margin-top: units(2);
-      margin-bottom: units(2);
-    }
+    
+    margin-top: units(2);
+    margin-bottom: units(2);
   }
 
   .logo-links {

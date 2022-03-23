@@ -658,7 +658,6 @@ body {
   .touchpoints__container {
     @include grid-container;
     @include u-maxw($theme-grid-container-max-width);
-    
     margin-top: units(2);
     margin-bottom: units(2);
   }

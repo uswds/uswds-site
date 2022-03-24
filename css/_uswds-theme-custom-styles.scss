@@ -90,7 +90,7 @@ body {
   color: color($site-ink);
 }
 
-body {
+.layout-styleguide {
   @include u-bg($site-background-color);
 }
 
@@ -2397,6 +2397,10 @@ h6 + div:not(.usa-accordion__content):not(.usa-collection__meta-list) {
     &:hover {
       background-color: color("blue-warm-60v");
     }
+  }
+
+  .usa-nav__secondary-links a {
+    color: color("base-light");
   }
 
   .usa-button.site-button-version {

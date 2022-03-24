@@ -90,6 +90,10 @@ body {
   color: color($site-ink);
 }
 
+body {
+  @include u-bg($site-background-color);
+}
+
 .usa-center {
   text-align: center;
 }
@@ -646,20 +650,29 @@ body {
 
 // Footer --------------- //
 
+.touchpoints__container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: units(2);
+
+  a {
+    @include u-bg($site-background-color);
+    margin-bottom: units(2);
+    margin-right: units(4);
+  }
+
+  @include at-media("widescreen") {
+    bottom: units(2);
+    position: sticky;
+  }
+}
+
 .site-footer {
-  @include u-bg($site-background-color);
   @include typeset("lang");
   clear: both;
 
   h3 {
     margin-top: 0;
-  }
-
-  .touchpoints__container {
-    @include grid-container;
-    @include u-maxw($theme-grid-container-max-width);
-    margin-top: units(2);
-    margin-bottom: units(2);
   }
 
   .logo-links {

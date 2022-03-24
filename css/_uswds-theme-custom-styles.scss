@@ -651,20 +651,27 @@ body {
 // Footer --------------- //
 
 .touchpoints__container {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: units(2);
-  z-index: 99999;
-
-  a {
-    @include u-bg($site-background-color);
-    margin-bottom: units(2);
-    margin-right: units(4);
+  padding-left: units(2);
+  padding-right: units(2);
+  @include at-media("tablet-lg") {
+    display: flex;
+    justify-content: flex-end;
+  }
+  @include at-media("widescreen") {
+    bottom: 0;
+    position: sticky;
+    z-index: z-index("top");
   }
 
-  @include at-media("widescreen") {
-    bottom: units(2);
-    position: sticky;
+  a {
+    margin-bottom: units(2);
+    @include at-media("tablet-lg") {
+      @include u-bg($site-background-color);
+      margin: units(2) 0 units(4);
+    }
+    @include at-media("desktop") {
+      margin-right: units(2);
+    }
   }
 }
 

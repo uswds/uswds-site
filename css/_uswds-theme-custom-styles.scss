@@ -653,7 +653,7 @@ body {
 .touchpoints__container {
   padding-left: units(2);
   padding-right: units(2);
-  @include at-media("tablet-lg") {
+  @include at-media("desktop") {
     display: flex;
     justify-content: flex-end;
   }
@@ -665,12 +665,9 @@ body {
 
   a {
     margin-bottom: units(2);
-    @include at-media("tablet-lg") {
-      @include u-bg($site-background-color);
-      margin: units(2) 0 units(4);
-    }
     @include at-media("desktop") {
-      margin-right: units(2);
+      @include u-bg($site-background-color);
+      margin: units(2) units(2) units(4);
     }
   }
 }

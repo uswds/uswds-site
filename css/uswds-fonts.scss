@@ -6,6 +6,7 @@
 @import "uswds-theme-utilities";
 
 // @import "packages/required";
-@import "@uswds/core";
+// @import "packages/uswds-fonts";
 
-@import "packages/uswds-fonts";
+@import "@uswds/uswds-core";
+@import "@uswds/uswds-fonts";

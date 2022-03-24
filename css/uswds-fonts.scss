@@ -4,5 +4,8 @@
 @import "uswds-theme-spacing";
 @import "uswds-theme-color";
 @import "uswds-theme-utilities";
-@import "packages/required";
+
+// @import "packages/required";
+@import "@uswds/core";
+
 @import "packages/uswds-fonts";

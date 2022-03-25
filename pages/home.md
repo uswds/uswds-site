@@ -9,6 +9,7 @@ class: home
 hero:
   callout: A design system for the federal government
   content: Design and build fast, accessible, mobile-friendly government websites backed by user research.
+touchpoints_survey: false
 graphic_list:
   list_item:
     - topic: Components

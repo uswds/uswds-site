@@ -663,7 +663,7 @@ body {
     z-index: z-index("top");
   }
 
-  a {
+  .usa-button {
     margin-bottom: units(2);
     @include at-media("desktop") {
       @include u-bg($site-background-color);

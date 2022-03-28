@@ -55,7 +55,7 @@ gulp.task("build-sass-components", () => {
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass({
-        includePaths: ["./css/settings"],
+        includePaths: sass_include_paths,
         outputStyle: "expanded"
       })
       .on("error", handleError)
@@ -72,7 +72,7 @@ gulp.task("build-sass-custom", () => {
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass({
-        includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
+        includePaths: sass_include_paths,
         outputStyle: "expanded"
       })
       .on("error", handleError)
@@ -89,7 +89,7 @@ gulp.task("build-next-sass", () => {
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass({
-        includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
+        includePaths: sass_include_paths,
         outputStyle: "expanded"
       })
       .on("error", handleError)
@@ -106,7 +106,7 @@ gulp.task("build-sass-utilities", () => {
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass({
-        includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
+        includePaths: sass_include_paths,
         outputStyle: "expanded"
       })
       .on("error", handleError)

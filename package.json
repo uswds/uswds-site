@@ -118,7 +118,7 @@
     "stylelint-config-recommended-scss": "^4.3.0",
     "stylelint-prettier": "^1.2.0",
     "stylelint-scss": "^3.21.0",
-    "uswds": "github:uswds/uswds#library--develop",
+    "uswds": "github:uswds/uswds#al-ld-remove-compare",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",
     "yamljs": "^0.3.0"

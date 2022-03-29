@@ -1,3 +1,5 @@
+@use "sass:math";
+
 // ========================================
 // CUSTOM PROJECT SASS
 // ----------------------------------------
@@ -2658,7 +2660,7 @@ $theme-table-column-gap: 4;
 
     th,
     td {
-      @include u-padding-x($theme-table-column-gap / 2);
+      @include u-padding-x(math.div($theme-table-column-gap, 2));
       @include u-padding-y(1);
       border: none;
       text-align: left;
@@ -2701,7 +2703,7 @@ $theme-table-column-gap: 4;
 
       th,
       td {
-        @include u-padding-x($theme-table-column-gap / 2);
+        @include u-padding-x(math.div($theme-table-column-gap, 2));
         @include u-padding-y(0.5);
         border: none;
 
@@ -3185,7 +3187,7 @@ $theme-table-column-gap: 4;
   .usa-banner__lock-image {
     $lock-h: 64; // unitless height of svg
     $lock-w: 52; // unitless width of svg
-    $lock-aspect: $lock-w / $lock-h;
+    $lock-aspect: math.div($lock-w, $lock-h);
     $icon-height: 1.5ex; // height of the lock icon; use ex for resilience
 
     height: $icon-height;

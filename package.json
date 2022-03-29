@@ -164,5 +164,12 @@
       "build-js"
     ]
   },
-  "snyk": true
+  "snyk": true,
+  "dependencies": {
+    "@uswds/uswds": "^3.0.0-beta.4",
+    "@uswds/uswds-core": "file:uswds-core-0.0.1-alpha.0.tgz",
+    "@uswds/uswds-fonts": "file:uswds-uswds-fonts-0.0.1-alpha.0.tgz",
+    "@uswds/uswds-global": "file:uswds-uswds-global-0.0.1-alpha.0.tgz",
+    "@uswds/uswds-utilities": "file:uswds-uswds-utilities-0.0.1-alpha.0.tgz"
+  }
 }

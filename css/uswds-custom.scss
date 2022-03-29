@@ -8,8 +8,15 @@
 
 // Settings
 // -------------------------------------
-@import "packages/uswds-core";
+// @import "settings/settings-general";
+// @import "settings/settings-typography";
+// @import "settings/settings-color";
+// @import "settings/settings-spacing";
+// @import "settings/settings-utilities";
+// @import "settings/settings-components";
 
 // Tools
 // -------------------------------------
+// @import "packages/required";
+@import "@uswds/uswds-core";
 @import "uswds-theme-custom-styles";

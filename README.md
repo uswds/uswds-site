@@ -68,7 +68,7 @@ Sometimes you will want to use the latest version of the `uswds` repo. Follow th
 1. Run `npm link` in the _root level_ of the `uswds` directory on your local machine.
 1. Run `npm link uswds` in the _root level_ of the `uswds-site` directory on your local machine.
 1. Run `npm start` in the `uswds` directory, and make a note of the `Local URL` that Fractal is serving.
-1. In another terminal window, set the `FRACTAL_BASE_URL` env var to the running Fractal instance for `uswds`. In your terminal window in the `uswds-site` directory, enter `export FRACTAL_BASE_URL="http://127.0.0.1:3000"` (or the `Local URL` noted above).
+1. In another terminal window, set the `LIBRARY_BASE_URL` env var to the running Fractal instance for `uswds`. In your terminal window in the `uswds-site` directory, enter `export LIBRARY_BASE_URL="http://127.0.0.1:3000"` (or the `Local URL` noted above).
 1. In the `uswds-site` window, run `npm run serve` in the `uswds-site` directory to start the Jekyll server.
 1. Run `npm run watch` in the `uswds-site` directory to have changes to that repo automatically built and compiled. Note: `uswds-site` will _not_ automatically rebuild when there are changes in `uswds`, you'll need to trigger a site rebuild manually to reflect changes in the `uswds` repo.
 

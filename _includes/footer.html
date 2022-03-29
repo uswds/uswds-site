@@ -1,3 +1,7 @@
+{% if page.touchpoints_survey | default: false %}
+  {% include touchpoint-survey-script.html %}
+{% endif %}
+
 <footer class="usa-footer site-footer">
   <div class="usa-footer__secondary-section">
     <div class="grid-container footer-content">

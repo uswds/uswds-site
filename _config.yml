@@ -82,11 +82,27 @@ defaults:
       type: components
     values:
       layout: component
+      touchpoints_survey: true
   - scope:
       path: ""
       type: posts
     values:
       layout: post
+  - scope:
+      path: ""
+      type: pages
+    values:
+      touchpoints_survey: true
+  - scope:
+      path: ""
+      type: templates
+    values:
+      touchpoints_survey: true
+  - scope:
+      path: ""
+      type: utilities
+    values:
+      touchpoints_survey: true
   - scope:
       path: ""
       type: next

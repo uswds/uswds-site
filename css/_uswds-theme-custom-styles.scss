@@ -90,6 +90,10 @@ body {
   color: color($site-ink);
 }
 
+.layout-styleguide {
+  @include u-bg($site-background-color);
+}
+
 .usa-center {
   text-align: center;
 }
@@ -645,6 +649,28 @@ body {
 }
 
 // Footer --------------- //
+
+.touchpoints__container {
+  padding-left: units(2);
+  padding-right: units(2);
+  @include at-media("desktop") {
+    display: flex;
+    justify-content: flex-end;
+  }
+  @include at-media("widescreen") {
+    bottom: 0;
+    position: sticky;
+    z-index: z-index(500);
+  }
+
+  .usa-button {
+    margin-bottom: units(2);
+    @include at-media("desktop") {
+      @include u-bg($site-background-color);
+      margin: units(2) units(2) units(4);
+    }
+  }
+}
 
 .site-footer {
   @include typeset("lang");

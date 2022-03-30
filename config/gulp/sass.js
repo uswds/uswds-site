@@ -16,7 +16,7 @@ const prod_plugins = [csso({ forceMediaMerge: false })];
 
 const uswds_required_paths = [
   "./node_modules",
-  "./node_modules/@uswds/uswds/packages",
+  "./node_modules/uswds/packages",
 ];
 
 const uswds_site_paths = "./css/settings";

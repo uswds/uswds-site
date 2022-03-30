@@ -6,20 +6,10 @@
 @import "uswds-theme-color";
 @import "uswds-theme-utilities";
 
-// Settings
-// -------------------------------------
-// ! @uswds/uswds-core already includes these files
-// @import "settings/settings-general";
-// @import "settings/settings-typography";
-// @import "settings/settings-color";
-// @import "settings/settings-spacing";
-// @import "settings/settings-utilities";
-// @import "settings/settings-components";
 
 // Tools
 // -------------------------------------
-// @import "packages/required";
-@import "@uswds/uswds-core";
+@import "uswds/packages/uswds-core";
 
 $pink-20v: #f8a897;
 $pink-50v: #bc5843;

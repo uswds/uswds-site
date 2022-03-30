@@ -1,5 +1,19 @@
-{% capture sidenav %}
-{% library_component usa-usa-sidenav~one-level %}
-  {% library_component usa-usa-sidenav~two-levels %}
-  {% library_component usa-usa-sidenav~three-levels %}
-{% endcapture %}{{ sidenav | strip }}
+<div class="grid-row grid-gap">
+  <div class="tablet:grid-col-4 margin-bottom-4 tablet:margin-bottom-0">
+    {% capture sidenav %}
+      {% library_component usa-usa-sidenav~one-level %}
+    {% endcapture %}{{ sidenav | strip }}
+  </div>
+
+  <div class="tablet:grid-col-4 margin-bottom-4 tablet:margin-bottom-0">
+    {% capture sidenav %}
+      {% library_component usa-usa-sidenav~two-levels %}
+    {% endcapture %}{{ sidenav | strip }}
+  </div>
+
+  <div class="tablet:grid-col-4">
+    {% capture sidenav %}
+      {% library_component usa-usa-sidenav~three-levels %}
+    {% endcapture %}{{ sidenav | strip }}
+  </div>
+</div>

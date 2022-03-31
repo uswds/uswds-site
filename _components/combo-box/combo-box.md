@@ -2,7 +2,7 @@
 category: Components
 component:
   status: ready
-  package: usa-form-controls
+  package: form-controls
   dependencies:
 implementation:
   initProps:

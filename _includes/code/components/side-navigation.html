@@ -1,19 +1,19 @@
 <div class="grid-row grid-gap">
   <div class="tablet:grid-col-4 margin-bottom-4 tablet:margin-bottom-0">
-    {% capture sidenav %}
-      {% library_component usa-usa-sidenav~one-level %}
-    {% endcapture %}{{ sidenav | strip }}
+    {% capture side-navigation--level-one %}
+      {% library_component usa-sidenav~one-level %}
+    {% endcapture %}{{ side-navigation--level-one | strip }}
   </div>
 
   <div class="tablet:grid-col-4 margin-bottom-4 tablet:margin-bottom-0">
-    {% capture sidenav %}
-      {% library_component usa-usa-sidenav~two-levels %}
-    {% endcapture %}{{ sidenav | strip }}
+    {% capture side-navigation--level-two %}
+      {% library_component usa-sidenav~two-levels %}
+    {% endcapture %}{{ side-navigation--level-two | strip }}
   </div>
 
   <div class="tablet:grid-col-4">
-    {% capture sidenav %}
-      {% library_component usa-usa-sidenav~three-levels %}
-    {% endcapture %}{{ sidenav | strip }}
+    {% capture side-navigation--level-three %}
+      {% library_component usa-sidenav~three-levels %}
+    {% endcapture %}{{ side-navigation--level-three | strip }}
   </div>
 </div>

@@ -1,29 +1,29 @@
 <h3 class="site-preview-heading">Standard alerts</h3>
 
 {% capture alert-info %}
-  {% library_component usa-usa-alert %}
+  {% library_component usa-alert %}
 {% endcapture %}{{ alert-info | strip }}
 
 {% capture alert-warning %}
-  {% library_component usa-usa-alert~warning %}
+  {% library_component usa-alert~warning %}
 {% endcapture %}{{ alert-warning | strip }}
 
 {% capture alert-error %}
-  {% library_component usa-usa-alert~error %}
+  {% library_component usa-alert~error %}
 {% endcapture %}{{ alert-error | strip }}
 
 {% capture alert-success %}
-  {% library_component usa-usa-alert~success %}
+  {% library_component usa-alert~success %}
 {% endcapture %}{{ alert-success | strip }}
 
 <h3 class="site-preview-heading">Slim alert</h3>
 
 {% capture alert-slim %}
-  {% library_component usa-usa-alert~slim %}
+  {% library_component usa-alert~slim %}
 {% endcapture %}{{ alert-slim | strip }}
 
 <h3 class="site-preview-heading">Alert with no icon</h3>
 
 {% capture alert-no-icon %}
-  {% library_component usa-usa-alert~no-icon %}
+  {% library_component usa-alert~no-icon %}
 {% endcapture %}{{ alert-no-icon | strip }}

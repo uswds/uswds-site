@@ -1,3 +1,12 @@
+- name: USWDS components
+  distribution: Rails
+  url: https://github.com/TalariaSoftware/uswds_components
+  status: 
+  author:
+    name:  Damien Burke (Talaria Software)
+    url: https://talariasoftware.com/
+  notes: "An implementation of USWDS for Rails applications using [View Components](https://viewcomponent.org/). [Demo](https://uswdscomponents.herokuapp.com/rails/view_components)"
+
 - name: django-designstandards
   distribution: Django
   url: https://github.com/department-of-veterans-affairs/django-designstandards

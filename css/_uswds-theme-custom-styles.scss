@@ -180,6 +180,7 @@ body {
       background-color: color("blue-warm-90");
       color: color("white");
       height: 39px;
+      margin-top: 0;
     }
   }
 
@@ -188,10 +189,21 @@ body {
       height: 39px;
     }
   }
+
+  // Included to prevent circleCI build failures
+  label.usa-sr-only {
+    color: white;
+  }
 }
 
-#search_form > div > label {
-  color: white;
+#search_form-mobile {
+  .usa-input {
+    @include at-media-max("desktop") {
+      height: auto;
+      margin-top: 0;
+      padding: 0;
+    }
+  }
 }
 
 .site-banner {

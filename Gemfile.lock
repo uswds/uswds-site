@@ -104,7 +104,6 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  ffi (~> 1.15)
   html-proofer
   jekyll (>= 4.2.0)
   jekyll-include-cache
@@ -117,5 +116,4 @@ DEPENDENCIES
   webrick (~> 1.7)
 
 BUNDLED WITH
-   2.3.8
-   
+   2.3.9

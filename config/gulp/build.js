@@ -64,7 +64,7 @@ function spawnP(cmd, args, opts) {
 gulp.task('build-uswds-if-needed', function () {
   const rootDir = path.normalize(path.join(__dirname, '..', '..'));
   const uswdsDir = path.join(rootDir, 'node_modules', 'uswds');
-  const fractalIndex = path.join(uswdsDir, 'build', 'index.html');
+  const fractalIndex = path.join(uswdsDir, '_site', 'index.html');
   const gulpfile = path.join(uswdsDir, 'gulpfile.js');
 
   if (fs.existsSync(fractalIndex)) {

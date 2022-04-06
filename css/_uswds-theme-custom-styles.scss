@@ -189,11 +189,6 @@ body {
       height: 39px;
     }
   }
-
-  // Included to prevent circleCI build failures
-  label.usa-sr-only {
-    color: white;
-  }
 }
 
 #search_form-mobile {

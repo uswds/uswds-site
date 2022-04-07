@@ -85,7 +85,7 @@ gulp.task('build-uswds-if-needed', () => {
 
     /**
     * Previously called federalist task, but that had too many redundancies.
-    * We need to: install USWDS deps, build components, and then prettify the markup.
+    * We need to: install USWDS deps and build components to HTML.
     */
     return spawnP('npm', [ 'install' ], sharedOpts)
       .then(() => spawnP('npm', [ 'run', 'build:html' ], sharedOpts));

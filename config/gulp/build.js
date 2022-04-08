@@ -84,7 +84,6 @@ gulp.task('build-uswds-if-needed', () => {
     const sharedOpts = { stdio: 'inherit', cwd: uswdsDir };
 
     /**
-    * Previously called federalist task, but that had too many redundancies.
     * We need to: install USWDS deps and build components to HTML.
     */
     return spawnP('npm', [ 'install' ], sharedOpts)

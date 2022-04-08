@@ -3807,3 +3807,11 @@ p + .pagination-behaviors--examples {
     display: block;
   }
 }
+
+.table-example-container {
+  display: flex;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}

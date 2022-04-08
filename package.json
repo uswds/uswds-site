@@ -101,7 +101,7 @@
     "jquery": "^3.5.0",
     "json-format": "^1.0.1",
     "merge-stream": "^2.0.0",
-    "minimist": "^1.2.3",
+    "minimist": "^1.2.6",
     "node-notifier": "^10.0.0",
     "nswatch": "^0.2.0",
     "pa11y-ci": "^2.4.2",

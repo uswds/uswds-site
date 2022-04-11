@@ -17,7 +17,7 @@ redirect_from:
       <h3 class="font-lang-lg margin-0">
         <a href="{{ site.baseurl }}/documentation/getting-started-for-developers/" class="text-no-underline text-primary hover:text-underline block-link">Developers</a>
       </h3>
-      <p class="margin-top-1">Get started with our code base by downloading the code as a zip file, or installing with npm.</p>
+      <p class="margin-top-1">Get started with our code base by downloading the code as a zip file or installing with npm.</p>
     </div>
   </div>
   <div class="margin-top-2 tablet:margin-top-0 tablet:grid-col display-flex flex-align-stretch">
@@ -33,7 +33,7 @@ redirect_from:
       <h3 class="font-lang-lg margin-0">
         <a href="https://github.com/uswds/uswds/wiki" class="block-link text-no-underline text-primary hover:text-underline">USWDS project wiki</a>
       </h3>
-      <p class="margin-top-1">Find detailed information about our design and development process, and our collected user research.</p>
+      <p class="margin-top-1">Find detailed information about our design and development processes and our collected user research.</p>
     </div>
   </div>
 </div>

@@ -77,7 +77,7 @@ In plain language, this code says:
 
   The USWDS source code is the core of the design system. It contains all the styles for USWDS components as well as the design language of Sass tokens and functions used to build those components. USWDS source code has its own Sass entry point, which lives in the `node_modules` directory when you install USWDS with npm.
 
-The entry point itself is called `uswds.scss`, and it’s found in the `/dist/scss` directory of the USWDS npm package. When you install with npm, the complete path looks something is typically `./node_modules/uswds/dist/scss/uswds.scss`.
+The entry point itself is called `uswds.scss`, and it’s found in the `/scss` directory of the USWDS npm package. When you install with npm, the complete path is typically `./node_modules/uswds/dist/scss/uswds`.
 
 - **Build new work on top of that foundation**: Finally, add any custom project styles built from design system code.
 

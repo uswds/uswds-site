@@ -67,7 +67,7 @@ There's also a set of basic code-emitting global styles necessary for the best p
 ```
 
 ## Using packages
-Use packages as you would any USWDS `import`: import `required`, `global` and any individual functional packages after importing your project's theme settings, and before importing your project's custom styles. For example (assuming `'./node_modules/uswds/dist/scss'` in your `sass.includePaths`) the following file would import only the USWDS code necessary to render the banner and footer components:
+Use packages as you would any USWDS `import`: import `required`, `global` and any individual functional packages after importing your project's theme settings, and before importing your project's custom styles. For example (assuming `./node_modules/uswds/packages` in your `sass.includePaths`) the following file would import only the USWDS code necessary to render the banner and footer components:
 
 ```sass
 // styles.scss

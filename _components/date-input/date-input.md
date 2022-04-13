@@ -2,7 +2,7 @@
 category: Components
 component:
   status: ready
-  package: usa-form-controls
+  package: form-controls
   dependencies:
 layout: component
 lead: Three text fields are the easiest way for users to enter most dates.

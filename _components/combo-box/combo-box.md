@@ -48,7 +48,7 @@ tags:
   - forms
   - form controls
   - input
-  - dropdown
+  - select
 title: Combo box
 type: component
 ---

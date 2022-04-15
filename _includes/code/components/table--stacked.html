@@ -1,3 +1,18 @@
-{% capture table--stacked %}
-  {% fractal_component table--stacked %}
-{% endcapture %}{{ table--stacked | strip }}
+
+<div class="table-example-container">
+    {% capture table--stacked %}
+      {% library_component usa-table--stacked %}
+    {% endcapture %}{{ table--stacked | strip }}
+
+    {% capture table-stacked--borderless %}
+      {% library_component usa-table--stacked~borderless %}
+    {% endcapture %}{{ table-stacked--borderless | strip }}
+
+    {% capture table-stacked--with-header %}
+      {% library_component usa-table--stacked~header %}
+    {% endcapture %}{{ table-stacked--with-header | strip }}
+
+    {% capture table-stacked--with-header-borderless %}
+      {% library_component usa-table--stacked~header-borderless %}
+    {% endcapture %}{{ table-stacked--with-header-borderless | strip }}
+</div>

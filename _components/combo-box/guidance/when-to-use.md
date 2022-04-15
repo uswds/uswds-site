@@ -1,0 +1,2 @@
+- **More than 15 options.** Use a combo box when there are more than 15 choices in a drop-down list. With so many options, users may find it difficult to navigate with scrolling only.
+- **Limited space.** Use a combo box for presenting options when screen real estate is limited.

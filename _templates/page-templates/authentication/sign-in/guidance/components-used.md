@@ -1,0 +1,6 @@
+- [Extended header]({{ site.baseurl }}/components/header/#extended-header) with `.usa-nav` and `.usa-menu-btn` removed
+- Form controls
+- [Grid]({{ site.baseurl }}/utilities/layout-grid/)
+- [Buttons]({{ site.baseurl }}/components/button/)
+- Graphic list
+- [Medium footer]({{ site.baseurl}}/components/footer/#medium-footer)

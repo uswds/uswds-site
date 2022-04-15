@@ -14,7 +14,7 @@ For our 11th post in the series, we talked with Scott Weber, front-end developer
 
 **USWDS:** How did you hear about the U.S. Web Design System (USWDS)?
 
-**Scott Weber:** I’d been following the USWDS before starting work on the NSF project. So, when I was getting ready to build the site, which we knew was going to be on [Federalist](https://federalist.fr.cloud.gov/), using Github, the USWDS gave us a starting point for things we would have otherwise needed to develop from scratch, such as the grid, footer, navigation, etc. The USWDS gave us a place to start and saved us from having to reinvent the wheel.
+**Scott Weber:** I’d been following the USWDS before starting work on the NSF project. So, when I was getting ready to build the site, which we knew was going to be on [Federalist](https://federalist.18f.gov/), using Github, the USWDS gave us a starting point for things we would have otherwise needed to develop from scratch, such as the grid, footer, navigation, etc. The USWDS gave us a place to start and saved us from having to reinvent the wheel.
 
 **USWDS:** What does it mean for a developer to not have to start from scratch?
 
@@ -44,4 +44,4 @@ Overall the USWDS shortened the amount of time it took to implement the site, fo
 
 ---
 
-We’re looking to learn more [from agencies that have used USWDS](https://github.com/uswds/uswds/blob/develop/docs/WHO_IS_USING_USWDS.md); if you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at [uswds@support.digitalgov.gov](mailto:uswds@support.digitalgov.gov). You can also chat with the team in the [public Slack channel for USWDS](https://chat.18f.gov/)!
+We’re looking to learn more [from agencies that have used USWDS](https://github.com/uswds/uswds/blob/develop/docs/WHO_IS_USING_USWDS.md) (see list on GitHub); if you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}). You can also chat with the team in the [public Slack channel for USWDS](https://chat.18f.gov/) via Google Forms!

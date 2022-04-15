@@ -22,7 +22,7 @@ module USWDSVersion
 
     def generate(site)
       package = JSON.load(File.read('package.json'))
-      version = make_version_nice(package['dependencies']['uswds'])
+      version = make_version_nice(package['devDependencies']['uswds'])
       site.data['uswds_version'] = version
     end
   end

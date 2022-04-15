@@ -3,7 +3,7 @@ permalink: /maturity-model/
 layout: styleguide
 title: USWDS maturity model
 category: How to use USWDS
-lead: Use the USWDS maturity model to adopt the design system incrementally and design and build better digital experiences for the American public.
+lead: Use the USWDS maturity model to adopt the design system incrementally and design and build better digital experiences.
 subnav:
 - text: "1: Integrate design principles"
   href: '#level-1-integrate-design-principles'
@@ -118,15 +118,15 @@ Government websites include components that aren’t included in USWDS yet. Use 
 
 #### 1: Add USWDS code and adjust settings.
 
-- Add USWDS to your project [with NPM]({{ site.baseurl }}/documentation/developers/#install-using-npm) or by [downloading the source from Github]({{ site.baseurl }}/documentation/developers/#download).
-- Compile the Sass source code using the [guidelines in the documentation]({{ site.baseurl }}/documentation/developers/#sass-compilation-requirements) or by using [uswds-gulp](https://github.com/uswds/uswds-gulp).
-- Compile the Javascript source code using the [guidelines in the documentation]({{ site.baseurl }}/documentation/developers/#js-customization) or [download a precompiled version]({{ site.baseurl }}/documentation/developers/#download).
+- Add USWDS to your project [with NPM]({{ site.baseurl }}/documentation/developers/#install-using-npm) or by [downloading the source from Github]({{ site.baseurl }}/documentation/developers/#download-and-install-without-npm).
+- Compile the Sass source code using the [guidelines in the documentation]({{ site.baseurl }}/documentation/developers/#sass-compilation-requirements) or by using [uswds-compile](https://github.com/uswds/uswds-compile) available via GitHub.
+- Compile the Javascript source code using the [guidelines in the documentation]({{ site.baseurl }}/documentation/developers/#js-customization) or [download a precompiled version]({{ site.baseurl }}/documentation/developers/#download-and-install-without-npm).
 - Add USWDS Javascript to your page templates.
 - Add USWDS CSS to your page templates.
 
 #### 2: Use USWDS design tokens in all stylesheets.
 
-- Install USWDS source Sass files using [the instructions]({{ site.baseurl }}/documentation/developers/#installation) on the USWDS website.
+- Install USWDS source Sass files using [the instructions]({{ site.baseurl }}/documentation/developers/#download-and-install-without-npm) on the USWDS website.
 - Include USWDS Sass before including existing project source files. See [Sass an theme settings]({{ site.baseurl }}/documentation/developers/#sass-and-theme-settings).
 - Convert existing values to tokenized values. Use [the conversion tables](/documentation/migration/#integrating-tokens) to convert existing values to USWDS tokens.
 - Use USWDS [tokens]({{ site.baseurl }}/design-tokens/), functions (see [font-family functions]({{ site.baseurl }}/design-tokens/typesetting/font-family/#using-family-tokens), for example), and utility mixins (see [font-family utility mixins]({{ site.baseurl }}/design-tokens/typesetting/font-family/#using-family-tokens), for example) in existing component code.
@@ -174,7 +174,7 @@ understanding and adopting the design principles and individual components.
 This is a work in progress, and we want your input.
 - Share your feedback and collaborate with the [USWDS community](https://digital.gov/communities/uswds/)
 on the [#uswds-public](https://app.slack.com/client/T025AQGAN/C3F14AHSQ){:target="_blank" rel="noopener"} Slack channel.
-- If you can't access slack, email us your feedback directly at [uswds@support.digitalgov.gov](mailto:uswds@support.digitalgov.gov)
+- If you can't access slack, email us your feedback directly at [{{ site.uswds_email }}](mailto:{{ site.uswds_email }})
 
 If you’re new to the maturity model, listen to [USWDS January Monthly Call](https://digital.gov/event/2020/01/16/uswds-january-monthly-call/)
 on the using the USWDS maturity model.

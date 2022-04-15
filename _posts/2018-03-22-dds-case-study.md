@@ -7,7 +7,7 @@ category: About
 excerpt: In this 12th post in our series, we sat down with Jason Garber, front-end web developer at the U.S. Digital Service’s Defense Digital Service, to talk about his work creating a Ruby gem that integrates USWDS into a Ruby on Rails application.
 ---
 
-The U.S. Web Design System (USWDS) is a library of design and code guidelines to help agencies create trustworthy, accessible, and consistent digital services. USWDS is being used on over one hundred government sites, with an audience of 120 million users. In this 12th post in our series, we sat down with Jason Garber, front-end web developer at the U.S. Digital Service (USDS)’s Defense Digital Service, to talk about his work creating a [Ruby gem](https://en.wikipedia.org/wiki/RubyGems) for the new [Move.mil](https://www.move.mil/) that integrates USWDS into a Ruby on Rails application.
+The U.S. Web Design System (USWDS) is a library of design and code guidelines to help agencies create trustworthy, accessible, and consistent digital services. USWDS is being used on over one hundred government sites, with an audience of 120 million users. In this 12th post in our series, we sat down with Jason Garber, front-end web developer at the U.S. Digital Service (USDS)’s Defense Digital Service, to talk about his work creating a [Ruby gem](https://en.wikipedia.org/wiki/RubyGems) (described on Wikipedia) for the new [Move.mil](https://www.move.mil/) that integrates USWDS into a Ruby on Rails application.
 
 
 **USWDS:** How did you hear about the U.S. Web Design System?
@@ -45,4 +45,4 @@ I’m pretty happy with the level of engagement from USWDS team. They have been 
 
 ---
 
-We’re looking to learn more [from agencies that have used USWDS](https://github.com/uswds/uswds/blob/develop/docs/WHO_IS_USING_USWDS.md). If you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at [uswds@support.digitalgov.gov](mailto:uswds@support.digitalgov.gov). You can also chat with the team in the [public Slack channel for USWDS](https://chat.18f.gov/).
+We’re looking to learn more [from agencies that have used USWDS](https://github.com/uswds/uswds/blob/develop/docs/WHO_IS_USING_USWDS.md). If you’re interested in talking to us about your experience or have any feedback, feel free to send us an email at [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}). You can also chat with the team in the [public Slack channel for USWDS](https://chat.18f.gov/) (sign up via Google Forms).

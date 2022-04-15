@@ -32,8 +32,8 @@ You can read some older posts on the [18F Blog](https://18f.gsa.gov/tags/web-des
 
 Interested in seeing who else is using USWDS? We
 maintain a list of sites in our GitHub repo. Feel free to
-[open an issue](https://github.com/uswds/uswds-assets/issues/new)
-or [email us](mailto:uswds@support.digitalgov.gov) if you’d like to add your
+[open an issue](https://github.com/uswds/uswds-assets/issues/new) using GitHub
+or [email us](mailto:{{ site.uswds_email }}) if you’d like to add your
 project to our list.
 
 <a href="https://github.com/uswds/uswds/blob/develop/docs/WHO_IS_USING_USWDS.md" class="usa-button site-button">View our list on GitHub</a>

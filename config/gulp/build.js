@@ -64,7 +64,7 @@ function spawnP(cmd, args, opts) {
 gulp.task('build-uswds-if-needed', function () {
   const rootDir = path.normalize(path.join(__dirname, '..', '..'));
   const uswdsDir = path.join(rootDir, 'node_modules', 'uswds');
-  const fractalIndex = path.join(uswdsDir, 'build', 'index.html');
+  const fractalIndex = path.join(uswdsDir, '_site', 'index.html');
   const gulpfile = path.join(uswdsDir, 'gulpfile.js');
 
   if (fs.existsSync(fractalIndex)) {
@@ -82,7 +82,10 @@ gulp.task('build-uswds-if-needed', function () {
     }
 
     const sharedOpts = { stdio: 'inherit', cwd: uswdsDir };
-    return spawnP('npm', [ 'run', 'federalist' ], sharedOpts);
+
+    return spawnP('npm', [ 'install' ], sharedOpts)
+      .then(() => spawnP('npx', [ 'fractal', 'build' ], sharedOpts))
+      .then(() => spawnP('npm', [ 'run', 'prettier:templates' ], sharedOpts));
   }
 });
 

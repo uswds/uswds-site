@@ -6,7 +6,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: cimg/ruby:3.0.2-browsers
+      - image: cimg/ruby:3.1.2-node
     steps:
       - checkout
       - restore_cache:
@@ -47,7 +47,7 @@ jobs:
           command: npm run test:ci
 
 workflows:
-  version: 2.1
+  version: 2
   circle-uswds-site:
     jobs:
       - build

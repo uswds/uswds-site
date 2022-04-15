@@ -38,7 +38,6 @@ Components:
   - href: /components/collection/
   - href: /components/combo-box/
   - href: /components/data-visualizations/
-  - href: /components/date-input/
   - href: /components/date-picker/
   - href: /components/date-range-picker/
   - href: /components/file-input/
@@ -53,6 +52,7 @@ Components:
   - href: /components/input-prefix-suffix/
   - href: /components/link/
   - href: /components/list/
+  - href: /components/memorable-date/
   - href: /components/modal/
   - href: /components/pagination/
   - href: /components/process-list/

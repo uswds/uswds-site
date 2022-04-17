@@ -1,0 +1,19 @@
+- name: "usa-accordion"
+  fullSize: 10
+  sourceSize: 3
+  dependencies:
+    - "usa-fonts"
+    - "usa-list"
+- name: "usa-alert"
+  fullSize: 13
+  sourceSize: 7
+  dependencies:
+    - "usa-fonts"
+    - "usa-icon"
+- name: "usa-banner"
+  fullSize: 32
+  sourceSize: 7
+  dependencies:
+    - "usa-fonts"
+    - "usa-layout-grid"
+    - "usa-media-block"

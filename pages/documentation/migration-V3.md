@@ -1,0 +1,698 @@
+---
+permalink: /documentation/migration-V3/
+layout: styleguide
+title: USWDS 3.0 Migration Guide
+category: How to use USWDS
+subnav:
+- text: Why migrate to USWD 3.0?
+  href: '#why-migrate-to-uswds-30'
+- text: How to use this guide
+  href: '#how-to-use-this-guide'
+- text: Migration Overview
+  href: '#migration-overview'
+- text: 1. Check your current USWDS code and settings versions
+  href: '#1-check-your-current-uswds-code-and-settings-versions'
+- text: 2. Integrate latest USWDS 2 changes
+  href: '#2-integrate-latest-uswds-2-changes'
+- text: 3. Install the USWDS 3.0 package
+  href: '#3-install-the-uswds-30-package'
+- text: 4. Update your Sass compiler settings and recompile CSS
+  href: '#4-update-your-sass-compiler-settings-and-recompile-css'
+- text: 5. Update to Sass module syntax
+  href: '#5-update-to-sass-module-syntax'
+- text: 6. Find which settings from your theme files you’ve customized.
+  href: '#6-find-which-settings-from-your-theme-files-youve-customized'
+- text: Optimize your installation with component packages
+  href: '#optimize-your-installation-with-component-packages'
+---
+
+## Why migrate to USWDS 3.0?
+
+{:.border-top-2px.border-base-lighter.padding-top-1}
+**Use modern Sass syntax before the old syntax loses official support.** USWDS stylesheets are written in a language called Sass. This language updated its syntax in 2020 and the old syntax is now deprecated. Sass will no longer support the old syntax starting in October 2022. We want teams to use source code with reliable support throughout the life of their project.
+
+**Improve performance and reduce the size of your project CSS.** Using USWDS 3.0 with the new Sass syntax — called Sass module syntax — allows teams to unbundle their implementations of USWDS and use only the components and code that they need on their project. Depending on your project, this could mean significant reduction of CSS code you ship. This means faster load times, better scores in performance evaluation tools, and a better developer experience. 
+
+**Stay up-to-date with minimal hassle.** We want teams to benefit from the most current version of USWDS. Many projects should be able to migrate from USWDS 2 to USWDS 3.0 in about an hour or less. This new version makes no markup or style changes from USWDS 2.13.3. If you already use USWDS 2.13.0 or later, you should be able to update to USWDS 3.0 in a matter of minutes. Additionally, the under-the-hood changes we're introducing in USWDS 3.0 will make it easier to stay up-to-date with USWDS over time. An incremental update now will make subsequent updates simpler as well. 
+
+## How to use this guide
+
+{:.border-top-2px.border-base-lighter.padding-top-1}
+For the purposes of this guide, make markup changes for all entries that match your code version situation and make settings changes for all entries that match your settings version situation. For example, _if your code is USWDS 2.12.2 and your settings are USWDS 2.11.0, check your markup against the **Older than 2.13.0** section only, and check your settings against the **Older than 2.13.0** and **Older than 2.12.0** sections.)_
+
+## Migration Overview
+
+<!-- add links -->
+
+{:.border-top-2px.border-base-lighter.padding-top-1}
+1. [Check your current USWDS code and settings versions](#1-check-your-current-uswds-code-and-settings-versions)
+2. [Integrate latest USWDS 2.x changes](#2-integrate-latest-uswds-2-changes)
+3. [Install the USWDS 3.0 package](#3-install-the-uswds-30-package)
+4. [Update your Sass compiler settings and recompile CSS](#4-update-your-sass-compiler-settings-and-recompile-css)
+5. [Optional] [Update to Sass module syntax](#5-update-to-sass-module-syntax)
+6. [Optional] [Optimize your installation](#optimize-your-installation-with-component-packages)
+7. [Optional] Update to USWDS Compile
+
+### 1. Check your current USWDS code and settings versions
+
+{:.border-top-2px.border-base-lighter.padding-top-1}
+Check your project's **package.json** file and your project's **_uswds-theme** files. Your package.json file will display the version of USWDS in a line like **"uswds": "^2.12.2"**. Your theme files will have a version number at the top, under the image of the American flag. Your code and your theme files may have different versions. 
+
+### 2. Integrate latest USWDS 2 changes
+
+{:.border-top-2px.border-base-lighter.padding-top-1}
+<mark>_Head's up!_ This is probably the most labor-intensive part of the process.</mark>
+
+Since USWDS 3.0 is based on the USWDS 2.13.3, any markup migration comes from migrating from whatever version you're currently on to, essentially, 2.13.3. If you're already up-to-date, this won't take any time at all, but there have been some changes that might be breaking changes for your project over the course of the USWDS 2 branch. 
+
+These steps will help you do any preliminary migration, before updating to USWDS 3.0.
+
+<div class="usa-accordion usa-accordion--bordered" aria-multiselectable="true">
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <h4 class="usa-accordion__heading">
+    <button
+      class="usa-accordion__button"
+      aria-expanded="true"
+      aria-controls="m-a1"
+    >
+      Older than 2.13.0
+    </button>
+  </h4>
+  <div id="m-a1" class="usa-accordion__content usa-prose">
+    <p><strong>[MARKUP] Update any instance of the small search button.</strong></p>
+    <p>
+      You'll need to update any instances of the small search button on your site. We're now using explicit images to better support legibility in instances where icons do not load. 
+    </p>
+    <mark><strong>What to do:</strong></mark>
+    <ol>
+      <li> Check your codebase for instances of <strong>&lt;span class="usa-sr-only"&gt;Search&lt;/span&gt;.</strong></li>
+      <li> Update the markup from the old version to the new version if you use it.
+        <p><strong>Old</strong></p>
+        <hr>
+        <pre>
+          <code>
+          &lt;button class="usa-button" type="submit"&gt;
+            &lt;span class="usa-sr-only"&gt;Search&lt;/span&gt;
+          &lt;/button&gt;
+          </code>
+        </pre>
+        <p><strong>New</strong></p>
+        <hr>
+        <pre>
+          <code>
+          &lt;button class="usa-button" type="submit"&gt;    
+            &lt;img src="{{ your uswds image path }}/usa-icons-bg/search--white.svg" 
+              class="usa-search__submit-icon" alt="Search"&gt;
+          &lt;/button&gt;
+          </code>
+        </pre>
+      </li>
+    </ol>   
+    <p><strong>[MARKUP] Update social media icons in the footer.</strong></p>
+    <p>
+     You'll need to update social media icons in the USWDS footer. We're now using explicit images to better support legibility in instances where icons do not load. 
+    </p>
+    <mark><strong>What to do:</strong></mark>
+    <ol>
+      <li> Check your codebase for instances of <strong>usa-social-link.</strong></li>
+      <li> Update the markup from the old version to the new version if you use it.
+        <p><strong>Old</strong></p>
+        <hr>
+        <pre>
+          <code>
+            &lt;a class="usa-social-link usa-social-link--facebook" href="{{ link }}"&gt;
+              &lt;span&gt;Facebook&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;a class="usa-social-link usa-social-link--twitter" href="{{ link }}"&gt;
+              &lt;span&gt;Twitter&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;a class="usa-social-link usa-social-link--youtube" href="{{ link }}"&gt;
+              &lt;span&gt;YouTube&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;a class="usa-social-link usa-social-link--instagram" href="{{ link }}"&gt;
+              &lt;span&gt;Instagram&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;a class="usa-social-link usa-social-link--rss" href="{{ link }}"&gt;
+              &lt;span&gt;RSS&lt;/span&gt;
+            &lt;/a&gt;
+          </code>
+        </pre>
+        <p><strong>New</strong></p>
+        <hr>
+        <pre>
+          <code>
+           &lt;a class="usa-social-link" href="{{ link }}"&gt;
+            &lt;img class="usa-social-link__icon" 
+              src="{{ your uswds image path }}/usa-icons/facebook.svg" 
+              alt="Facebook"&gt;
+          &lt;/a&gt;
+          &lt;a class="usa-social-link" href="{{ link }}"&gt;
+            &lt;img class="usa-social-link__icon" 
+              src="{{ your uswds image path }}/usa-icons/twitter.svg" 
+              alt="Twitter"&gt;
+          &lt;/a&gt;
+          &lt;a class="usa-social-link" href="{{ link }}"&gt;
+            &lt;img class="usa-social-link__icon" 
+              src="{{ your uswds image path }}/usa-icons/youtube.svg" 
+              alt="YouTube"&gt;
+          &lt;/a&gt;
+          &lt;a class="usa-social-link" href="{{ link }}"&gt;
+            &lt;img class="usa-social-link__icon" 
+              src="{{ your uswds image path }}/usa-icons/instagram.svg" 
+              alt="Instagram"&gt;
+          &lt;/a&gt;
+          &lt;a class="usa-social-link" href="{{ link }}"&gt;
+            &lt;img class="usa-social-link__icon" 
+              src="{{ your uswds image path }}/usa-icons/rss_feed.svg" 
+              alt="RSS"&gt;
+          &lt;/a&gt;
+          </code>
+        </pre>
+      </li>
+    </ol>
+  </div>
+
+  <h4 class="usa-accordion__heading">
+    <button
+      class="usa-accordion__button"
+      aria-expanded="false"
+      aria-controls="m-a2"
+    >
+      Older than 2.12.0
+    </button>
+  </h4>
+  <div id="m-a2" class="usa-accordion__content usa-prose">
+    <p>
+      <strong>[SETTINGS] We deprecated three settings.</strong> Each of the following settings is no longer set-able. If you use any of these settings, they will no longer reflect your intention. These are the deprecated settings: 
+    </p>
+    <ul>
+      <li>
+        <strong>deprecated:</strong> $theme-input-tile-background-color-selected<br>
+        <strong>default:</strong> "primary-lighter"
+      </li>
+      <li>
+        <strong>deprecated:</strong> $theme-input-tile-border-color<br>
+        <strong>default:</strong> "base-lighter"
+      </li>
+      <li>
+        <strong>deprecated:</strong> $theme-input-tile-border-color-selected<br>
+        <strong>default:</strong> "primary-lighter"
+      </li>
+    </ul>
+    <p><strong><mark>What to do: </mark></strong></p>
+    <ul>
+      <li>Check this list to see if you changed the default value.</li>
+      <li>If you did change the default value, this change will no longer affect the input tile. </li>
+      <li>Assure that the input tile still displays well: check your codebase for instances of <strong>input--tile</strong>.</li>
+      <li>Check the affected part of your site if you get a match.</li>
+    </ul>
+    <p>
+      <strong>[SETTINGS] We updated three settings defaults.</strong> If you use any of these settings in your code, the output will change:
+    </p>
+    <ul>
+      <li>
+        <strong>new:</strong> $theme-color-success-dark: green-cool-50v<br>
+        <strong>old:</strong> green-cool-50
+      </li>
+      <li>
+        <strong>new:</strong> $theme-color-success-darker: green-cool-60v<br>
+        <strong>old:</strong> green-cool-80
+      </li>
+    </ul>
+    <p><strong><mark>What to do: </mark></strong></p>
+    <ol>
+      <li>Check your codebase for any old settings.</li>
+      <li>If you find any instance of these variables outside of the settings files, check the part of your site that they affect.</li>
+    </ol>
+  </div>
+  
+  <h4 class="usa-accordion__heading">
+    <button
+      class="usa-accordion__button"
+      aria-expanded="false"
+      aria-controls="m-a3"
+    >
+      Older than 2.11.2
+    </button>
+  </h4>
+  <div id="m-a3" class="usa-accordion__content usa-prose">
+    <p>
+      <strong>[SETTINGS] We deprecated the $theme-site-max-width variable.</strong> We're using <strong>$theme-grid-container-max-width</strong> instead.  
+    </p>
+    <p><strong><mark>What to do:</mark></strong></p>
+    <ol>
+      <li>TK</li>
+      <li>TK</li>
+      <li>TK</li>
+    </ol>
+    <p><strong>[MARKUP] We replaced the `thumb_down_off_alt` icon with `thumb_down_alt`" in our default icon sprite. </strong></p>
+    <p><strong><mark>What to do:</mark></strong></p>
+    <ol>
+      <li>Search for any instances of <strong>thumb_down_off_alt</strong></li>
+      <li>Replace it with <strong?>thumb_down_alt</strong></li>
+    </ol>
+  </div>
+  
+  <h4 class="usa-accordion__heading">
+    <button
+      class="usa-accordion__button"
+      aria-expanded="false"
+      aria-controls="m-a4"
+    >
+      Older than 2.11.0
+    </button>
+  </h4>
+  <div id="m-a4" class="usa-accordion__content usa-prose">
+    <p><strong>We updated some settings defaults:</strong></p>
+    <ul>
+      <li>
+        <strong>new:</strong> $theme-alert-icon-size: 4<br>
+        <strong>old:</strong> 5
+      </li>
+      <li>
+        <strong>new:</strong> $theme-table-border-color: default<br>
+        <strong>old:</strong> ink
+      </li>
+      <li>
+        <strong>new:</strong> $theme-table-header-text-color: default<br>
+        <strong>old:</strong> ink
+      </li>
+      <li>
+        <strong>new:</strong> $theme-table-stripe-text-color: default<br>
+        <strong>old:</strong> ink
+      </li>
+      <li>
+        <strong>new:</strong> $theme-table-text-color: default<br>
+        <strong>old:</strong> ink
+      </li>
+    </ul>
+    <p><strong><mark>What to do: </mark></strong></p>
+    <ol>
+      <li>Search your codebase for any instances of <strong>the old theme</strong></li>
+      <li>Replace it with <strong>the new setting</strong></li>
+    </ol>
+  </div>
+  
+  <h4 class="usa-accordion__heading">
+    <button
+      class="usa-accordion__button"
+      aria-expanded="false"
+      aria-controls="m-a5"
+    >
+      Older than 2.10.1
+    </button>
+  </h4>
+  <div id="m-a5" class="usa-accordion__content usa-prose">
+    <p><strong>[SETTINGS] We updated some settings defaults:</strong></p>
+    <ul>
+      <li>
+        <strong>Updated: </strong>$theme-breadcrumb-background-color: default<br>
+        <strong>Was: </strong>white 
+      </li>
+      <li>
+        <strong>Updated: </strong>$theme-alert-icon-size: 5 <br>
+        <strong>Was: </strong>4
+      </li>
+    </ul>
+    <p><strong><mark>What to do:</mark></strong></p>
+    <ol>
+      <li>Search your codebase for any instances of <strong>the old theme</strong></li>
+      <li>Replace it with <strong>the new setting</strong></li>
+    </ol>
+    <p><strong>[MARKUP] We updated usa-footer__logo-heading to use a p instead of an h3.</strong> We improved the accessibility of the footer by converting a non-semantic heading into paragraph text.</p>
+    <p><strong><mark>What to do: </mark></strong></p>
+    <ol>
+      <li>TK</li>
+      <li>TK</li>
+    </ol>
+  </div>
+</div>
+
+### 3. Install the USWDS 3.0 package
+
+{:.border-top-2px.border-base-lighter.padding-top-1}
+1. In a terminal window, navigate to your project root. 
+2. Install USWDS 3.0 with <strong>npm install @uswds/uswds --save --save-exact</strong>
+3. Uninstall USWDS 2 with <strong>npm uninstall uswds</strong>
+
+### 4. Update your Sass compiler settings and recompile CSS
+
+{:.border-top-2px.border-base-lighter.padding-top-1}
+The location of the USWDS source files is different in USWDS 3.0. You'll need to update your compiler settings to compile your Sass from USWDS 3.0.
+
+<div class="usa-accordion usa-accordion--bordered" aria-multiselectable="true">
+  <!-- Use the accurate heading level to maintain the document outline -->
+  <h4 class="usa-accordion__heading">
+    <button
+      class="usa-accordion__button"
+      aria-expanded="true"
+      aria-controls="m-a6"
+    >
+      If you're using USWDS Gulp
+    </button>
+  </h4>
+  <div id="m-a6" class="usa-accordion__content usa-prose">
+    <ol>
+      <li>Search for a line like <strong>const USWDS = "node_modules/uswds/dist"</strong> in your Gulp setup. This indicates that you're using the Gulp setup we distributed as USWDS Gulp.</li>
+      <li>
+        Update the USWDS <strong>const</strong> to the updated uswds package location
+        <p><strong>Old</strong></p>
+        <hr>
+          <code>const USWDS = "node_modules/uswds/dist";</code>
+        <p><strong>New</strong></p>
+        <hr>
+          <code>const USWDS = "node_modules/@uswds/uswds";</code>
+          <br>
+      </li>
+      <li> 
+        Search for <strong>includePaths</strong> in your project's Gulp files. The paths in this list are where the Sass compiler looks for your source files. In USWDS 3.0
+        <p><strong>Old</strong></p>
+        <hr>
+        <pre>
+          <code>.pipe(
+              sass({
+                includePaths: [
+                  PROJECT_SASS_SRC,
+                  `${USWDS}/scss`,
+                  `${USWDS}/scss/packages`,
+                ],
+              })
+            )</code>
+        </pre>
+        <p><strong>New</strong></p>
+        <hr>
+        <pre>
+          <code>
+            .pipe(
+              sass({
+                includePaths: [
+                  PROJECT_SASS_SRC,
+                  `${USWDS},
+                  `${USWDS}/packages`,
+                ],
+              })
+            )
+          </code>
+        </pre>
+      </li>
+      <li>Recompile your Sass as usual. When it compiles, <mark>it is now using USWDS 3.0!</mark></li>
+    </ol>
+  </div>
+
+  <div class="usa-accordion usa-accordion--bordered" aria-multiselectable="true">
+    <h4 class="usa-accordion__heading">
+      <button
+        class="usa-accordion__button"
+        aria-expanded="true"
+        aria-controls="m-a7"
+      >
+        If you're using USWDS Compile
+      </button>
+    </h4>
+    <div id="m-a7" class="usa-accordion__content usa-prose">
+      TK   
+    </div>
+  </div>
+  
+  <div class="usa-accordion usa-accordion--bordered" aria-multiselectable="true">
+    <h4 class="usa-accordion__heading">
+      <button
+        class="usa-accordion__button"
+        aria-expanded="true"
+        aria-controls="m-a8"
+      >
+        If you're using a custom Gulp workflow
+      </button>
+    </h4>
+    <div id="m-a8" class="usa-accordion__content usa-prose">
+      TK   
+    </div>
+  </div>
+
+  <div class="usa-accordion usa-accordion--bordered" aria-multiselectable="true">
+    <h4 class="usa-accordion__heading">
+      <button
+        class="usa-accordion__button"
+        aria-expanded="true"
+        aria-controls="m-a9"
+      >
+        If you're using Webpack
+      </button>
+    </h4>
+    <div id="m-a9" class="usa-accordion__content usa-prose">
+      TK   
+    </div>
+  </div>
+</div>
+
+### 5. Update to Sass module syntax
+
+{:.border-top-2px.border-base-lighter.padding-top-1}
+USWDS 3.0 supports the deprecated Sass import syntax. You don't need to change to the new syntax in your project Sass to use USWDS 3.0. But once you update, we recommend updating to the new syntax as well.  You’ll need to both switch @import to @use, and then create @use project-specific settings.  In USWDS 3.0 with Sass modules, instead of having multiple theme files that contain every setting available to the design system, you only keep track of the settings you changed in a single file. 
+
+We recommend creating a new file to keep track of these changed settings. These instructions will help you create that file, format it properly, and use it in your project. 
+
+You can complete these changes by taking the following steps: 
+
+1. Replace all instances of <strong>@import</strong> with <strong>@forward</strong>, using find/replace in your Sass file.
+2. Locate your existing project theme files. These are the _uswds-theme files that you found in [Step 1: Check your current USWDS code and settings versions](#1-check-your-current-uswds-code-and-settings-versions). (If you already have your project-specific settings file in a single file, you can skip ahead Step 4. If not, you'll need to collect your project-specific settings in a single file.)
+3. In the project theme file directory directory, create a new file called <strong>_uswds-theme.scss</strong>.
+
+### 6. Find which settings from your theme files you've customized.
+
+{:.border-top-2px.border-base-lighter.padding-top-1}
+We think the best way to accomplish this is with a series of diffs against the default theme files. Running a diff comparing your theme files to the default theme should reveal which of these settings you've modified. 
+
+The bad thing about this process is that it can be tedious. The good thing is that you only have to do it once, and then you'll have a small, manageable project theme file that can be your baseline moving forward. And you'll never again have to worry about overwriting your settings files when you update to a new version of the design system.
+
+We'll use an online diff service like [quickdiff.net](https://quickdiff.net/), [diffchecker.com](https://diffchecker.com), or [text-compare.com](https://text-compare.com/).
+
+Each of the files [below](#current-settings-as-of-uswds-2132) is the most current version of the USWDS default settings. For each of these files, use the diff tool to find the differences between your settings file and the current defaults.
+
+Look for instances where your project has a different value than the default. Ignore cases where a setting exists in the current version but not in your version. This indicates a new setting that probably does not apply to your project. Instances where a setting exists in your version but not in the current version can likely be ignored. This usually indicates a deprecated setting that should not affect your project, but it can be worth checking to see if that variable appears anywhere else in your codebase!
+
+When you see a setting that appears different from the current default, this is probably one of your project's custom settings. Copy this setting and add it to your new <strong>_uswds-theme.scss</strong> file.
+
+At the end of this process, your new <strong>_uswds-theme.scss</strong> file will look something like the following:
+
+<pre>
+  <code>
+    $theme-image-path: "../uswds/img";
+    $theme-font-path: "../uswds/fonts";
+    $theme-show-compile-warnings: false;
+    $theme-show-notifications: false;
+    $theme-focus-color: "blue-50v";
+    $theme-global-paragraph-styles: true;
+    $theme-global-link-styles: true;
+    $theme-global-content-styles: true;
+    $theme-utility-breakpoints: (
+      "card": false,
+      "card-lg": true,
+      "mobile": true,
+      "mobile-lg": true,
+      "tablet": true,
+      "tablet-lg": true,
+      "desktop": true,
+      "desktop-lg": true,
+      "widescreen": true
+    );
+  </code>
+</pre>
+
+#### Current settings (as of USWDS 2.13.2)
+<hr>
+
+[_uswds-theme-color.scss](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-color.scss) → <br>
+[_uswds-theme-components.scss](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-components.scss) → <br>
+[_uswds-theme-general.scss](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-general.scss) → <br>
+[_uswds-theme-spacing.scss](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-spacing.scss) → <br>
+[_uswds-theme-typography.scss](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-typography.scss) → <br>
+[_uswds-theme-utilities.scss](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-utilities.scss) → <br>
+
+<ol>
+  <li>
+    Once you have all your project-specific settings in a single file, we'll load these customizations into the USWDS core engine. We do this with a special <strong>@use</strong> statement:
+
+    <pre>
+      <code>
+        @use "uswds-core" with (
+          <strong>&#123;&#123; your settings &#125;&#125;</strong>
+        );
+      </code>
+    </pre>
+
+    In the previous example, <strong>&#123;&#123; your settings &#125;&#125;</strong> would be a list of all the settings variables in your settings file.
+
+    So with an existing settings file like the following:
+
+    <pre>
+      <code>
+        $theme-image-path: "../uswds/img";
+        $theme-font-path: "../uswds/fonts";
+        $theme-show-compile-warnings: false;
+        $theme-show-notifications: false;
+        $theme-focus-color: "blue-50v";
+        $theme-global-paragraph-styles: true;
+        $theme-global-link-styles: true;
+        $theme-global-content-styles: true;
+        $theme-utility-breakpoints: (
+          "card": false,
+          "card-lg": true,
+          "mobile": true,
+          "mobile-lg": true,
+          "tablet": true,
+          "tablet-lg": true,
+          "desktop": true,
+          "desktop-lg": true,
+          "widescreen": true
+        );
+      </code>
+    </pre>
+
+    We'd update it to use <strong>@use</strong> with the following:
+
+    <pre>
+      <code>
+        @use "uswds-core" with (
+          $theme-image-path: "../uswds/img",
+          $theme-font-path: "../uswds/fonts",
+          $theme-show-compile-warnings: false,
+          $theme-show-notifications: false,
+          $theme-focus-color: "blue-50v",
+          $theme-global-paragraph-styles: true,
+          $theme-global-link-styles: true,
+          $theme-global-content-styles: true,
+          $theme-utility-breakpoints: (
+            "card": false,
+            "card-lg": true,
+            "mobile": true,
+            "mobile-lg": true,
+            "tablet": true,
+            "tablet-lg": true,
+            "desktop": true,
+            "desktop-lg": true,
+            "widescreen": true
+          ),
+        );
+      </code>
+    </pre>
+
+    Note that the new <strong>@use</strong> statement is a <strong>list</strong> of variables, so each line ends in a comma (,) instead of a semicolon (;).
+  </li>
+  <br>
+  <li>
+    Almost there! The last thing we have to do is make sure we use this new theme file in our project. If your project already was using a project-specific theme settings file, you're all set. If not, you'll need to open your project's Sass entry point, typically <strong>styles.scss</strong>. It usually looks something like this:
+
+    <pre>
+      <code>
+        /*
+        * * * * * ==============================
+        * * * * * ==============================
+        * * * * * ==============================
+        * * * * * ==============================
+        ========================================
+        ========================================
+        ========================================
+        */
+
+        // -------------------------------------
+        // Import individual theme settings
+
+        @forward "uswds-theme-general";
+        @forward "uswds-theme-typography";
+        @forward "uswds-theme-spacing";
+        @forward "uswds-theme-color";
+        @forward "uswds-theme-utilities";
+
+        // components import needs to be last
+        @forward "uswds-theme-components";
+
+        ...
+      </code>
+    </pre>
+
+    In USWDS 3.0, we won't use multiple theme files, just a single file with all the project-specific settings. So we can remove all the individual theme settings from our Sass entry point and replace them with a single <strong>@use</strong> statement, using the project-specific settings file, like so:
+
+    <pre>
+      <code>
+        /*
+        * * * * * ==============================
+        * * * * * ==============================
+        * * * * * ==============================
+        * * * * * ==============================
+        ========================================
+        ========================================
+        ========================================
+        */
+
+        // -------------------------------------
+        // Import individual theme settings
+
+        @forward "uswds-theme"; // or whatever your theme file is named
+
+        ...
+      </code>
+    </pre>
+
+    Now your project is using its theme settings in the proper USWDS 3.0 format!
+  </li>
+</ol>
+
+<strong>Use "uswds-core" for any custom USWDS Sass</strong>
+
+{:.border-top-2px.border-base-lighter.padding-top-1}
+Sass Module syntax requires that files must note the source of any tokens, variables, mixins, functions, or placeholders used in that file. 
+
+This is relatively straightforward for USWDS 3.0 Sass: For any project stylesheet that uses USWDS tokens, variables, mixins, functions, or placeholders (that's probably most, if not all, of them!), add the following line at the top of the file:
+
+<code>@use "uswds-core" as *;</code>
+
+In USWDS 3.0, <strong>uswds-core</strong> is the name of the package (or "module" in Sass terminology) that contains all the tokens, variables, mixins, functions, or placeholders used in USWDS Sass. If your project uses tokens, variables, mixins, functions, or placeholders defined outside of USWDS, you'll need to @use these as well at the top of the document. This includes Sass-specific functions. See [https://sass-lang.com/documentation/modules](https://sass-lang.com/documentation/modules) for more information, if your project uses any of Sass's built-in functions.
+
+Once each of your custom sass files include the <strong>@use "uswds-core" as *;</strong> line at the top, you should be done!
+
+Recompile your Sass and check for errors.
+
+## Optimize your installation with component packages
+
+{:.border-top-2px.border-base-lighter.padding-top-1}
+By default, a USWDS installation includes every component available to the design system. But most projects don't use all these components. USWDS 3.0 allows teams to use only the components you need for your project, through the idea of component packages.
+
+A component package is a self-contained module that includes only code related to a specific component. In addition to an omnibus <strong>uswds</strong> package, USWDS 3.0 includes packages for every component available in the design system, and for some features (like fonts) that are common to many components. 
+
+Using individual component packages instead of the <strong>uswds</strong> bundle package can result in a significant reduction in the size of your project CSS and noticeable improvements to compile time.
+
+<strong>Using packages</strong>
+
+{:.border-top-1px.border-base-lighter.padding-top-1}
+Include USWDS packages in your Sass entry point to add them to your project. By default, USWDS projects forward the <strong>uswds</strong> package to include all the styles available to the design system. You will see a line like the following in your Sass entry point when you're using the <strong>uswds</strong> package:
+
+<code>@forward "uswds";</code>
+
+This adds styles to your project. But the <strong>uswds</strong> package is a bundle of many individual component packages. You probably don't need them all! We can unbundle the design system and include only the packages your project needs by replacing the <strong>uswds</strong> \`forward\` with a \`forward\` for each of the component packages included in your site templates.
+
+An example of using replacing the <strong>uswds</strong> package with individual component packages in your Sass entry point would look something like this:
+
+<pre>
+  <code>
+    <s>@forward "uswds";</s>
+
+    @forward "usa-accordion";
+    @forward "usa-banner";
+    @forward "usa-button";
+    @forward "usa-footer";
+    @forward "usa-header";
+    @forward "usa-prose";
+
+    @forward "uswds-form-controls";
+  </code>
+</pre>
+
+<strong>Available packages</strong>
+
+{:.border-top-2px.border-base-lighter.padding-top-1}
+The following packages are available to any USWDS project. Each package includes component styles related to the package name, and additional styles related to any component dependencies.
+
+For any package listed below, add a <strong>@forward "[package]"</strong> line to your Sass entry point. For instance, if you wanted to add the <strong>usa-accordion</strong> package, add the following line:
+
+`@forward "usa-accordion";`

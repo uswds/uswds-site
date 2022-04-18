@@ -85,8 +85,10 @@ How to use USWDS:
   - href: /documentation/accessibility/
   - href: /performance/
   - href: /documentation/code-guidelines/
+  - text: Migrating to USWDS 3
+    href: /documentation/migration-V3/
   - text: Migrating to USWDS 2
-    href: /documentation/migration/
+    href: /documentation/migration-V2/
   - href: /documentation/video-tutorials/
   - href: /documentation/implementations/
   - href: /documentation/showcase/

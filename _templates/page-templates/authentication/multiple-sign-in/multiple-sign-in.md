@@ -8,8 +8,8 @@ component:
     - /assets/img/templates/layout--sign-in-multiple.jpeg
     - /assets/img/templates/layout--sign-in-multiple-lang-es.jpeg
   demo:
-    - sign-in--multiple
-    - sign-in--lang-es-multiple
+    - pages-sign-in--multiple-sign-in-page
+    - pages-sign-in--multiple-sign-in-page-spanish
   variants:
     - Multiple sign-in
     - Multiple sign-in (Spanish)

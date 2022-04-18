@@ -38,10 +38,8 @@ Components:
   - href: /components/collection/
   - href: /components/combo-box/
   - href: /components/data-visualizations/
-  - href: /components/date-input/
   - href: /components/date-picker/
   - href: /components/date-range-picker/
-  - href: /components/dropdown/
   - href: /components/file-input/
   - href: /components/footer/
   - href: /components/form/
@@ -54,6 +52,7 @@ Components:
   - href: /components/input-prefix-suffix/
   - href: /components/link/
   - href: /components/list/
+  - href: /components/memorable-date/
   - href: /components/modal/
   - href: /components/pagination/
   - href: /components/process-list/
@@ -61,6 +60,7 @@ Components:
   - href: /components/radio-buttons/
   - href: /components/range-slider/
   - href: /components/search/
+  - href: /components/select/
   - href: /components/side-navigation/
   - href: /components/site-alert/
   - href: /components/step-indicator/

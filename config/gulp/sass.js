@@ -14,14 +14,19 @@ const dev_plugins = [autoprefixer({ cascade: false })];
 
 const prod_plugins = [csso({ forceMediaMerge: false })];
 
+const uswds_required_paths = [
+  "./node_modules",
+  "./node_modules/uswds/packages",
+];
+
+const uswds_site_paths = "./css/settings";
+
+const sass_include_paths = uswds_required_paths.concat([uswds_site_paths]);
+
 const handleError = (error) => {
   dutil.logError.bind(this)(error);
   this.emit("end");
-
-  if (process.env.NODE_ENV !== "development") {
-    process.exit(1);
-  }
-}
+};
 
 gulp.task("build-sass-fonts", () => {
   return gulp
@@ -29,7 +34,7 @@ gulp.task("build-sass-fonts", () => {
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass({
-        includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
+        includePaths: sass_include_paths,
         outputStyle: "expanded"
       })
       .on("error", handleError)
@@ -46,7 +51,7 @@ gulp.task("build-sass-components", () => {
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass({
-        includePaths: ["./css/settings"],
+        includePaths: sass_include_paths,
         outputStyle: "expanded"
       })
       .on("error", handleError)
@@ -63,7 +68,7 @@ gulp.task("build-sass-custom", () => {
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass({
-        includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
+        includePaths: sass_include_paths,
         outputStyle: "expanded"
       })
       .on("error", handleError)
@@ -80,7 +85,7 @@ gulp.task("build-next-sass", () => {
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass({
-        includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
+        includePaths: sass_include_paths,
         outputStyle: "expanded"
       })
       .on("error", handleError)
@@ -97,7 +102,7 @@ gulp.task("build-sass-utilities", () => {
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass({
-        includePaths: ["./node_modules/uswds/dist/scss", "./css/settings"],
+        includePaths: sass_include_paths,
         outputStyle: "expanded"
       })
       .on("error", handleError)
@@ -134,12 +139,12 @@ gulp.task("build-sass-prod", () => {
       "./assets/css/uswds-fonts.css",
       "./assets/css/uswds-components.css",
       "./assets/css/uswds-custom.css",
-      "./assets/css/uswds-utilities.css"
+      "./assets/css/uswds-utilities.css",
     ])
     .pipe(
       sourcemaps.init({
         largeFile: true,
-        loadMaps: true
+        loadMaps: true,
       })
     )
     .pipe(concat("styles.css"))
@@ -156,12 +161,12 @@ gulp.task("build-next-prod", () => {
       "./assets/css/uswds-components.css",
       "./assets/css/uswds-custom.css",
       "./assets/css/uswds-utilities.css",
-      "./assets/css/uswds-next.css"
+      "./assets/css/uswds-next.css",
     ])
     .pipe(
       sourcemaps.init({
         largeFile: true,
-        loadMaps: true
+        loadMaps: true,
       })
     )
     .pipe(concat("styles-next.css"))
@@ -171,9 +176,17 @@ gulp.task("build-next-prod", () => {
     .pipe(gulp.dest("_site/assets/css"));
 });
 
-gulp.task("build-sass", gulp.series("build-sass-dev", "build-next-dev", "build-sass-prod", "build-next-prod"));
+gulp.task(
+  "build-sass",
+  gulp.series(
+    "build-sass-dev",
+    "build-next-dev",
+    "build-sass-prod",
+    "build-next-prod"
+  )
+);
 
-gulp.task("scss-lint", function(done) {
+gulp.task("scss-lint", (done) => {
   if (!cFlags.test) {
     dutil.logMessage("scss-lint", "Skipping linting of Sass files.");
     return done();

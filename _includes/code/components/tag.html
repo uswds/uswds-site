@@ -1,3 +1,9 @@
+<h3 class="site-preview-heading">Default tag</h3>
 {% capture tag %}
-  {% fractal_component tag %}
+  {% library_component usa-tag %}
 {% endcapture %}{{ tag | strip }}
+
+<h3 class="site-preview-heading">Big tag</h3>
+{% capture tag--big %}
+{% library_component usa-tag~big %}
+{% endcapture %}{{ tag--big | strip }}

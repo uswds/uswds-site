@@ -1,3 +1,5 @@
+@use "sass:math";
+
 // ========================================
 // CUSTOM PROJECT SASS
 // ----------------------------------------
@@ -178,12 +180,23 @@ body {
       background-color: color("blue-warm-90");
       color: color("white");
       height: 39px;
+      margin-top: 0;
     }
   }
 
   .usa-button {
     @include at-media("desktop") {
       height: 39px;
+    }
+  }
+}
+
+#search_form-mobile {
+  .usa-input {
+    @include at-media-max("desktop") {
+      height: auto;
+      margin-top: 0;
+      padding: 0;
     }
   }
 }
@@ -1454,6 +1467,7 @@ code[class*="language-plaintext"] {
 }
 
 // External link styles
+
 #{$external-href} {
   @include external-link;
 }
@@ -2657,7 +2671,7 @@ $theme-table-column-gap: 4;
 
     th,
     td {
-      @include u-padding-x($theme-table-column-gap / 2);
+      @include u-padding-x(math.div($theme-table-column-gap, 2));
       @include u-padding-y(1);
       border: none;
       text-align: left;
@@ -2700,7 +2714,7 @@ $theme-table-column-gap: 4;
 
       th,
       td {
-        @include u-padding-x($theme-table-column-gap / 2);
+        @include u-padding-x(math.div($theme-table-column-gap, 2));
         @include u-padding-y(0.5);
         border: none;
 
@@ -3184,7 +3198,7 @@ $theme-table-column-gap: 4;
   .usa-banner__lock-image {
     $lock-h: 64; // unitless height of svg
     $lock-w: 52; // unitless width of svg
-    $lock-aspect: $lock-w / $lock-h;
+    $lock-aspect: math.div($lock-w, $lock-h);
     $icon-height: 1.5ex; // height of the lock icon; use ex for resilience
 
     height: $icon-height;
@@ -3792,4 +3806,12 @@ p + .pagination-behaviors--examples {
   .usa-identifier__required-link {
     display: block;
   }
+}
+
+.table-example-container {
+  display: flex;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }

@@ -1,3 +1,6 @@
-{% capture input-prefix-suffix %}
-  {% fractal_component input-prefix-suffix %}
-{% endcapture %}{{ input-prefix-suffix | strip }}
+{% capture input-prefix %}
+  {% library_component usa-input-prefix %}
+{% endcapture %}{{ input-prefix | strip }}
+{% capture input-suffix %}
+  {% library_component usa-input-suffix %}
+{% endcapture %}{{ input-suffix | strip }}

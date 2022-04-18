@@ -1,3 +1,3 @@
 - **Multiple selections.** If users need to select more than one option or if there’s only one item to select, use [checkboxes]({{ site.baseurl }}/components/checkbox) instead.
-- **Limited space.** Consider a [dropdown]({{ site.baseurl }}/components/dropdown) if you don’t have enough space to list out all available options.
+- **Limited space.** Consider a [select component]({{ site.baseurl }}/components/select) if you don’t have enough space to list out all available options.
 - **Selecting none.** If users should be able to select zero of the options or change their mind and unselect an option, consider using checkboxes. You can also choose to add a “none of the above” option to the radio button group instead.

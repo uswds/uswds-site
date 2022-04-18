@@ -332,8 +332,8 @@ These steps will help you do any preliminary migration, before updating to USWDS
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
 1. In a terminal window, navigate to your project root. 
-2. Install USWDS 3.0 with <strong>npm install @uswds/uswds --save --save-exact</strong>
-3. Uninstall USWDS 2 with <strong>npm uninstall uswds</strong>
+2. Install USWDS 3.0 with **npm install @uswds/uswds --save --save-exact**
+3. Uninstall USWDS 2 with **npm uninstall uswds**
 
 ### 4. Update your Sass compiler settings and recompile CSS
 
@@ -454,9 +454,9 @@ We recommend creating a new file to keep track of these changed settings. These 
 
 You can complete these changes by taking the following steps: 
 
-1. Replace all instances of <strong>@import</strong> with <strong>@forward</strong>, using find/replace in your Sass file.
+1. Replace all instances of **@import** with **@forward**, using find/replace in your Sass file.
 2. Locate your existing project theme files. These are the _uswds-theme files that you found in [Step 1: Check your current USWDS code and settings versions](#1-check-your-current-uswds-code-and-settings-versions). (If you already have your project-specific settings file in a single file, you can skip ahead Step 4. If not, you'll need to collect your project-specific settings in a single file.)
-3. In the project theme file directory directory, create a new file called <strong>_uswds-theme.scss</strong>.
+3. In the project theme file directory directory, create a new file called **_uswds-theme.scss**.
 
 ### 6. Find which settings from your theme files you've customized.
 
@@ -471,9 +471,9 @@ Each of the files [below](#current-settings-as-of-uswds-2132) is the most curren
 
 Look for instances where your project has a different value than the default. Ignore cases where a setting exists in the current version but not in your version. This indicates a new setting that probably does not apply to your project. Instances where a setting exists in your version but not in the current version can likely be ignored. This usually indicates a deprecated setting that should not affect your project, but it can be worth checking to see if that variable appears anywhere else in your codebase!
 
-When you see a setting that appears different from the current default, this is probably one of your project's custom settings. Copy this setting and add it to your new <strong>_uswds-theme.scss</strong> file.
+When you see a setting that appears different from the current default, this is probably one of your project's custom settings. Copy this setting and add it to your new **_uswds-theme.scss** file.
 
-At the end of this process, your new <strong>_uswds-theme.scss</strong> file will look something like the following:
+At the end of this process, your new **_uswds-theme.scss** file will look something like the following:
 
 <pre>
   <code>
@@ -638,7 +638,7 @@ At the end of this process, your new <strong>_uswds-theme.scss</strong> file wil
   </li>
 </ol>
 
-<strong>Use "uswds-core" for any custom USWDS Sass</strong>
+### Use "uswds-core" for any custom USWDS Sass
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
 Sass Module syntax requires that files must note the source of any tokens, variables, mixins, functions, or placeholders used in that file. 
@@ -647,9 +647,9 @@ This is relatively straightforward for USWDS 3.0 Sass: For any project styleshee
 
 <code>@use "uswds-core" as *;</code>
 
-In USWDS 3.0, <strong>uswds-core</strong> is the name of the package (or "module" in Sass terminology) that contains all the tokens, variables, mixins, functions, or placeholders used in USWDS Sass. If your project uses tokens, variables, mixins, functions, or placeholders defined outside of USWDS, you'll need to @use these as well at the top of the document. This includes Sass-specific functions. See [https://sass-lang.com/documentation/modules](https://sass-lang.com/documentation/modules) for more information, if your project uses any of Sass's built-in functions.
+In USWDS 3.0, **uswds-core** is the name of the package (or "module" in Sass terminology) that contains all the tokens, variables, mixins, functions, or placeholders used in USWDS Sass. If your project uses tokens, variables, mixins, functions, or placeholders defined outside of USWDS, you'll need to @use these as well at the top of the document. This includes Sass-specific functions. See [https://sass-lang.com/documentation/modules](https://sass-lang.com/documentation/modules) for more information, if your project uses any of Sass's built-in functions.
 
-Once each of your custom sass files include the <strong>@use "uswds-core" as *;</strong> line at the top, you should be done!
+Once each of your custom sass files include the **@use "uswds-core" as *;** line at the top, you should be done!
 
 Recompile your Sass and check for errors.
 
@@ -658,20 +658,20 @@ Recompile your Sass and check for errors.
 {:.border-top-2px.border-base-lighter.padding-top-1}
 By default, a USWDS installation includes every component available to the design system. But most projects don't use all these components. USWDS 3.0 allows teams to use only the components you need for your project, through the idea of component packages.
 
-A component package is a self-contained module that includes only code related to a specific component. In addition to an omnibus <strong>uswds</strong> package, USWDS 3.0 includes packages for every component available in the design system, and for some features (like fonts) that are common to many components. 
+A component package is a self-contained module that includes only code related to a specific component. In addition to an omnibus **uswds** package, USWDS 3.0 includes packages for every component available in the design system, and for some features (like fonts) that are common to many components. 
 
-Using individual component packages instead of the <strong>uswds</strong> bundle package can result in a significant reduction in the size of your project CSS and noticeable improvements to compile time.
+Using individual component packages instead of the **uswds** bundle package can result in a significant reduction in the size of your project CSS and noticeable improvements to compile time.
 
-<strong>Using packages</strong>
+### Using packages
 
 {:.border-top-1px.border-base-lighter.padding-top-1}
-Include USWDS packages in your Sass entry point to add them to your project. By default, USWDS projects forward the <strong>uswds</strong> package to include all the styles available to the design system. You will see a line like the following in your Sass entry point when you're using the <strong>uswds</strong> package:
+Include USWDS packages in your Sass entry point to add them to your project. By default, USWDS projects forward the **uswds** package to include all the styles available to the design system. You will see a line like the following in your Sass entry point when you're using the **uswds** package:
 
 <code>@forward "uswds";</code>
 
-This adds styles to your project. But the <strong>uswds</strong> package is a bundle of many individual component packages. You probably don't need them all! We can unbundle the design system and include only the packages your project needs by replacing the <strong>uswds</strong> \`forward\` with a \`forward\` for each of the component packages included in your site templates.
+This adds styles to your project. But the **uswds** package is a bundle of many individual component packages. You probably don't need them all! We can unbundle the design system and include only the packages your project needs by replacing the **uswds** \`forward\` with a \`forward\` for each of the component packages included in your site templates.
 
-An example of using replacing the <strong>uswds</strong> package with individual component packages in your Sass entry point would look something like this:
+An example of using replacing the **uswds** package with individual component packages in your Sass entry point would look something like this:
 
 <pre>
   <code>
@@ -688,11 +688,171 @@ An example of using replacing the <strong>uswds</strong> package with individual
   </code>
 </pre>
 
-<strong>Available packages</strong>
+#### Available packages 
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
 The following packages are available to any USWDS project. Each package includes component styles related to the package name, and additional styles related to any component dependencies.
 
-For any package listed below, add a <strong>@forward "[package]"</strong> line to your Sass entry point. For instance, if you wanted to add the <strong>usa-accordion</strong> package, add the following line:
+For any package listed below, add a **@forward "[package]"** line to your Sass entry point. For instance, if you wanted to add the **usa-accordion** package, add the following line:
 
 `@forward "usa-accordion";`
+
+TK: Package + Dependencies Table
+
+### Determine which packages your project needs
+
+{:.border-top-1px.border-base-lighter.padding-top-1}
+The process of determining which packages your project needs is not automatic. Most projects will need to do a little work to identify the components their project uses.
+
+#### Brute-force: Search for component class names
+
+{:.border-top-1px.border-base-lighter.padding-top-1}
+A brute-force method to determine which packages your project uses is to search your codebase for use of a key class name associated with that component, like "usa-accordion" for accordions. All **usa-** prefixed packages use the same name as their CSS class. 
+
+If you find a hit for the class name in your codebase, include the relevant package in your Sass entry point. 
+
+For instance, if you found **usa-banner, usa-identifier, usa-button**, and **usa-accordion**, you might attach the following packages in your Sass entry point: 
+
+<pre>
+  <code>
+    @forward "usa-accordion";
+    @forward "usa-banner";
+    @forward "usa-button";
+    @forward "usa-identifier";
+  </code>
+</pre>
+
+Each package is smart enough to include any dependent package it needs to display properly. For instance, the **usa-banner** package will load
+
+#### Managing utility classes
+
+{:.border-top-1px.border-base-lighter.padding-top-1}
+Utility classes have their own naming conventions that are a bit less straightforward to identify. Look at the table below. If your codebase includes classes that start with one of the **class bases**, include its **utility module key** in the **$output-these-utilities setting**. 
+
+Look for classes in your codebase for searching for a regular expression string like `[" ]flex-`.
+
+For instance, if you found **add-list-reset, font-, order-,** and **display-**, you might use the following setting: 
+
+<pre>
+  <code>
+     $output-these-utilities: (
+      "add-list-reset",
+      "display",
+      "font",
+      "order"
+      ),
+  </code>
+</pre>
+
+TK: Utility module key table
+
+### Further performance improvements
+
+{:.border-top-1px.border-base-lighter.padding-top-1}
+#### Update to the sass-embedded compiler
+
+{:.border-top-1px.border-base-lighter.padding-top-1}
+The **sass-embedded** package compiles Sass faster than the **gulp-sass** or **gulp-dart-sass** compiler.
+
+In a gulp workflow, we recommend using `gulp-sass` and `sass-embedded` together for the simplest and fastest compiling.
+
+<ol>
+  <li>
+    Install \`gulp-sass\` and \`sass-embedded\` in your project:<br>
+    <code>npm install gulp-sass sass-embedded –s</code>
+  </li>
+
+  <li>
+    Uninstall any other sass compiling packages, if they exist:
+    <pre>
+      <code>
+        npm uninstall sass
+        npm uninstall gulp-dart-sass
+        npm uninstall gulp-sass
+      </code>
+    </pre>
+  </li>
+
+  <li>
+    In your Sass gulp tasks file, replace your existing sass compiler package import with **gulp-sass** and **sass-embedded:**
+    <pre>
+      <code>
+        <s>const sass = require("gulp-dart-scss");</s>
+
+        const sass = require("gulp-sass")(require("sass-embedded"));
+      </code>
+    </pre>
+  </li>
+
+  <li>
+    In your Sass gulp tasks file, remove any line that sets the sass.compiler:
+    <code><s>sass.compiler = require("sass");</s></code>
+  </li>
+
+  <li>Recompile.</li>
+</ol>
+
+#### Reduce utility responsive breakpoints
+
+{:.border-top-1px.border-base-lighter.padding-top-1}
+There are nine responsive breakpoints available to utilities and the layout grid. These are defined in the **$theme-utility-breakpoints setting**. If a utility breakpoint is set to **true**, any layout grid class and any utility with its responsive key set to true will output responsive classes. 
+
+This can result in bulky CSS, and if your project doesn't use these breakpoints you can save a lot of space by setting these breakpoints to false. By default, **mobile-lg**, **tablet**, and **desktop** are set to true:
+
+```
+  $theme-utility-breakpoints: (
+    "card": false,
+    "card-lg": false,
+    "mobile": false,
+    "mobile-lg": true,
+    "tablet": true,
+    "tablet-lg": false,
+    "desktop": true,
+    "desktop-lg": false,
+    "widescreen": false
+  ),
+```
+
+For each breakpoint set to true in your project, search for its usage in your codebase by searching for the **breakpoint name** + a colon (:). SO, to search for the **tablet-lg** breakpoint, search for desktop-lg:. If that breakpoint does not appear, you can set the value to **false**.
+
+#### Using package source
+
+{:.border-top-1px.border-base-lighter.padding-top-1}
+Once you've optimized your project to use only the component packages you need, you can further optimize those packages. Each component package includes, by reference, code for any additional packages it depends on. You can improve performance by manually forwarding all your project component's dependencies, then pointing your Sass entry point directly at each package source, bypassing each package's dependency import.
+
+For example, according to the table in [Available packages, above](#available-packages), the **usa-banner** component includes the following packages as dependencies: **usa-icon**, **usa-layout-grid**, **usa-media-block**, and **uswds-fonts**. Then we'll look at these dependencies' dependencies:
+
+- **usa-icon** depends on **uswds-core**
+- **usa-layout-grid** depends on **uswds-core**
+- **usa-media-block** depends on **usa-layout-grid** and **uswds-fonts**
+- **uswds-fonts** depends on **uswds-core**
+
+Instead of simply forwarding the **usa-banner** component, you can import the component and all related dependencies directly. Note: We've used **uswds-core** already when we forwarded our settings, so we won't forward it again:
+
+<pre>
+  <code>
+    <s>@forward "usa-banner";</s>
+
+    @forward "usa-banner";
+    @forward "usa-icon";
+    @forward "usa-layout-grid";
+    @forward "usa-media-block";
+    @forward "uswds-fonts";
+  </code>
+</pre>
+
+Now, instead of pointing at the component packages, we can point directly at the component package source. For each usa- prefixed component package, append /src/styles to its name:
+
+<pre>
+  <code>
+    @forward "usa-banner<strong>/src/styles</strong>";
+    @forward "usa-icon<strong>/src/styles</strong>";
+    @forward "usa-layout-grid<strong>/src/styles</strong>";
+    @forward "usa-media-block<strong>/src/styles</strong>";
+    @forward "uswds-fonts";
+  </code>
+</pre>
+
+When you recompile, you should see an improvement in compile time.
+
+**Note:** This performance technique may cause issues when you update USWDS versions. Check the release notes for any new version to see if we've changed any package's dependencies, which we will indicate as a potential breaking change. 

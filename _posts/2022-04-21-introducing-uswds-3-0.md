@@ -3,7 +3,7 @@ title: Introducing USWDS 3.0
 tags:
 - updates
 category: About
-author: Dan O. Williams, Maya Benari
+author: Dan O. Williams
 meta:
   og:image: /img/introducing-uswds-2-0/feature-image.jpg
 excerpt: Today, we’re launching U.S. Web Design System 2.0 (USWDS 2.0), a new foundation for the future of our design system. This new version was designed to make it easier for any project to integrate USWDS and use it to support both your mission and the needs of your audience.
@@ -17,11 +17,11 @@ USWDS is an important major design system update that's easy to apply to an exis
 
 For most USWDS 2 projects, migrating to USWDS 3.0 should only require changing  a few lines of project code. We've developed this new version to be a simple, straightforward migration. We want teams to start using USWDS 3.0, and we'll be there to help you do it.
 
-For migration assistance, start with our [USWDS 3.0 Migration Guide](/pages/documentation/migration.md) → 
+For migration assistance, start with our [USWDS 3.0 Migration Guide](/documentation/migration) → 
 
-If you have any questions or feedback let us know at the [USWDS Public Slack](https://www.google.com/url?q=https://gsa-tts.slack.com/channels/uswds-public&sa=D&source=docs&ust=1650387626542002&usg=AOvVaw3QjvPxGxIznpEoupJQNzfu), [GitHub Discussions](#), or [uswds@gsa.gov](mailto:uswds@gsa.gov). 
+If you have any questions or feedback let us know at the [USWDS Public Slack](https://gsa-tts.slack.com/archives/uswds-public), [GitHub Discussions](#), or [uswds@gsa.gov](mailto:uswds@gsa.gov). 
 
-If you aren't a member of the USWDS Public Slack, [sign up here](https://www.google.com/url?q=https://chat.18f.gov/&sa=D&source=docs&ust=1650387626552101&usg=AOvVaw1gTNprLN4-fKRdzy4uhPzD) by "Joining a TTS Chat Room" —then select "U.S. Web Design System" as your chat topic.
+If you aren't a member of the USWDS Public Slack, [sign up here](https://chat.18f.gov/) by "Joining a TTS Chat Room" —then select "U.S. Web Design System" as your chat topic.
 
 ## What's new in USWDS 3.0?
 USWDS 3.0 takes a modular, component-centered approach to the design system. We've rebuilt our codebase with a component focus so teams can more effectively integrate the design system incrementally and use only the USWDS components needed in your project.
@@ -42,7 +42,7 @@ Unbundle the design system with USWDS 3.0. Using USWDS 3.0 with Sass Module synt
 
 USWDS is a highly customizable design system, but that doesn't mean that our settings files need to be long and complicated. Starting in USWDS 3.0, projects will use settings files that include only the settings you've changed in your project. This means fewer project settings to manage, and a clearer vision of your project's customizations. 
 
-[Read more about USWDS settings](/pages/documentation/settings.md) → 
+[Read more about USWDS settings](/documentation/settings) → 
 
 ### Stay up-to-date with minimal hassle
 
@@ -56,9 +56,9 @@ As we move forward to USWDS 3.0 and beyond, we're making some changes to the bro
 
 IE11 has fallen below our 2% support threshold as monitored by analytics.usa.gov. While we have not removed any existing IE11 support from our codebase, we may make changes and add functionality that no longer supports IE11 as we move forward. When we do make any changes like this, we'll be sure to note it in our release notes.
 
-[USWDS browser support (2% rule)](https://www.google.com/url?q=https://designsystem.digital.gov/documentation/developers/%23browser-support&sa=D&source=docs&ust=1650387626552663&usg=AOvVaw3eW3_58VK9IBh9fncG0uzP) →
+[USWDS browser support (2% rule)](https://designsystem.digital.gov/documentation/developers/#browser-support) →
 
-[See current analytics from analytics.usa.gov](https://www.google.com/url?q=https://analytics.usa.gov&sa=D&source=docs&ust=1650387626553017&usg=AOvVaw36BRF74_09AuQDhCu006hN) → 
+[See current analytics from analytics.usa.gov](https://analytics.usa.gov/) → 
 
 ### Support some Javascript-required functionality 
 

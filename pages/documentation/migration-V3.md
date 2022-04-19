@@ -124,14 +124,14 @@ These steps will help you do any preliminary migration, before updating to USWDS
       <li> Update the markup from the old version to the new version if you use it.</li>
     </ol>   
     <h6>Old</h6>
-    <pre><code>&lt;button class="usa-button" type="submit"&gt;
+    {% raw %}<pre><code>&lt;button class="usa-button" type="submit"&gt;
   &lt;span class="usa-sr-only"&gt;Search&lt;/span&gt;
-&lt;/button&gt;</code></pre>
+&lt;/button&gt;</code></pre>{% endraw %}
     <h6>New</h6>
-    <pre><code>&lt;button class="usa-button" type="submit"&gt;    
-  &lt;img src="&lcub;&lcub; uswds image path &rcub;&rcub;/usa-icons-bg/search--white.svg" 
+    {% raw %}<pre><code>&lt;button class="usa-button" type="submit"&gt;    
+  &lt;img src="{{ uswds image path }}/usa-icons-bg/search--white.svg" 
     class="usa-search__submit-icon" alt="Search"&gt;
-&lt;/button&gt;</code></pre>
+&lt;/button&gt;</code></pre>{% endraw %}
     <h5 class="font-lang-xs text-bold"><span class="usa-tag bg-accent-cool-darker">Markup</span> Update social media icons in the footer.</h5>
     <p>
      You'll need to update social media icons in the USWDS footer. We're now using explicit images to better support legibility in instances where icons do not load. 
@@ -142,47 +142,47 @@ These steps will help you do any preliminary migration, before updating to USWDS
       <li> Update the markup from the old version to the new version if you use it.</li>
     </ol>
     <h6>Old</h6>
-    <pre><code>&lt;a class="usa-social-link usa-social-link--facebook" href="&lcub;&lcub; link &rcub;&rcub;"&gt;
+    {% raw %}<pre><code>&lt;a class="usa-social-link usa-social-link--facebook" href="{{ link }}"&gt;
   &lt;span&gt;Facebook&lt;/span&gt;
 &lt;/a&gt;
-&lt;a class="usa-social-link usa-social-link--twitter" href="&lcub;&lcub; link &rcub;&rcub;"&gt;
+&lt;a class="usa-social-link usa-social-link--twitter" href="{{ link }}"&gt;
   &lt;span&gt;Twitter&lt;/span&gt;
 &lt;/a&gt;
-&lt;a class="usa-social-link usa-social-link--youtube" href="&lcub;&lcub; link &rcub;&rcub;"&gt;
+&lt;a class="usa-social-link usa-social-link--youtube" href="{{ link }}"&gt;
   &lt;span&gt;YouTube&lt;/span&gt;
 &lt;/a&gt;
-&lt;a class="usa-social-link usa-social-link--instagram" href="&lcub;&lcub; link &rcub;&rcub;"&gt;
+&lt;a class="usa-social-link usa-social-link--instagram" href="{{ link }}"&gt;
   &lt;span&gt;Instagram&lt;/span&gt;
 &lt;/a&gt;
-&lt;a class="usa-social-link usa-social-link--rss" href="&lcub;&lcub; link &rcub;&rcub;"&gt;
+&lt;a class="usa-social-link usa-social-link--rss" href="{{ link }}"&gt;
   &lt;span&gt;RSS&lt;/span&gt;
-&lt;/a&gt;</code></pre>
+&lt;/a&gt;</code></pre>{% endraw %}
     <h6>New</h6>
-    <pre><code>&lt;a class="usa-social-link" href="&lcub;&lcub; link &rcub;&rcub;"&gt;
+    {% raw %}<pre><code>&lt;a class="usa-social-link" href="{{ link }}"&gt;
   &lt;img class="usa-social-link__icon" 
     src="/usa-icons-bg/search--whi/usa-icons/facebook.svg" 
     alt="Facebook"&gt;
 &lt;/a&gt;
-&lt;a class="usa-social-link" href="&lcub;&lcub; link &rcub;&rcub;"&gt;
+&lt;a class="usa-social-link" href="{{ link }}"&gt;
   &lt;img class="usa-social-link__icon" 
     src="/usa-icons-bg/search--whi/usa-icons/twitter.svg" 
     alt="Twitter"&gt;
 &lt;/a&gt;
-&lt;a class="usa-social-link" href="&lcub;&lcub; link &rcub;&rcub;"&gt;
+&lt;a class="usa-social-link" href="{{ link }}"&gt;
   &lt;img class="usa-social-link__icon" 
     src="/usa-icons-bg/search--whi/usa-icons/youtube.svg" 
     alt="YouTube"&gt;
 &lt;/a&gt;
-&lt;a class="usa-social-link" href="&lcub;&lcub; link &rcub;&rcub;"&gt;
+&lt;a class="usa-social-link" href="{{ link }}"&gt;
   &lt;img class="usa-social-link__icon" 
     src="/usa-icons-bg/search--whi/usa-icons/instagram.svg" 
     alt="Instagram"&gt;
 &lt;/a&gt;
-&lt;a class="usa-social-link" href="&lcub;&lcub; link &rcub;&rcub;"&gt;
+&lt;a class="usa-social-link" href="{{ link }}"&gt;
   &lt;img class="usa-social-link__icon" 
     src="/usa-icons-bg/search--whi/usa-icons/rss_feed.svg" 
     alt="RSS"&gt;
-&lt;/a&gt;</code></pre>
+&lt;/a&gt;</code></pre>{% endraw %}
   </div>
 
   <h4 class="usa-accordion__heading">
@@ -260,7 +260,7 @@ These steps will help you do any preliminary migration, before updating to USWDS
     <p><strong>What to do:</strong></p>
     <ol>
       <li>Search for any instances of <strong>thumb_down_off_alt</strong></li>
-      <li>Replace it with <strong?>thumb_down_alt</strong></li>
+      <li>Replace it with <strong>thumb_down_alt</strong></li>
     </ol>
   </div>
   
@@ -373,31 +373,25 @@ The location of the USWDS source files is different in USWDS 3.0. You'll need to
       <li> 
         Search for <strong>includePaths</strong> in your project's Gulp files. The paths in this list are where the Sass compiler looks for your source files. In USWDS 3.0
         <p><strong>Old</strong></p>
-        <pre>
-          <code>.pipe(
-              sass({
-                includePaths: [
-                  PROJECT_SASS_SRC,
-                  `${USWDS}/scss`,
-                  `${USWDS}/scss/packages`,
-                ],
-              })
-            )</code>
-        </pre>
+        {% raw %}<pre><code>.pipe(
+  sass({
+    includePaths: [
+      PROJECT_SASS_SRC,
+      `${USWDS}/scss`,
+      `${USWDS}/scss/packages`,
+    ],
+  })
+)</code></pre>{% endraw %}
         <p><strong>New</strong></p>
-        <pre>
-          <code>
-            .pipe(
-              sass({
-                includePaths: [
-                  PROJECT_SASS_SRC,
-                  `${USWDS},
-                  `${USWDS}/packages`,
-                ],
-              })
-            )
-          </code>
-        </pre>
+        {% raw %}<pre><code>.pipe(
+  sass({
+    includePaths: [
+      PROJECT_SASS_SRC,
+      `${USWDS},
+      `${USWDS}/packages`,
+    ],
+  })
+)</code></pre>{% endraw %}
       </li>
       <li>Recompile your Sass as usual. When it compiles, it is now using USWDS 3.0!</li>
     </ol>
@@ -470,29 +464,25 @@ When you see a setting that appears different from the current default, this is 
 
 At the end of this process, your new **_uswds-theme.scss** file will look something like the following:
 
-<pre>
-  <code>
-    $theme-image-path: "../uswds/img";
-    $theme-font-path: "../uswds/fonts";
-    $theme-show-compile-warnings: false;
-    $theme-show-notifications: false;
-    $theme-focus-color: "blue-50v";
-    $theme-global-paragraph-styles: true;
-    $theme-global-link-styles: true;
-    $theme-global-content-styles: true;
-    $theme-utility-breakpoints: (
-      "card": false,
-      "card-lg": true,
-      "mobile": true,
-      "mobile-lg": true,
-      "tablet": true,
-      "tablet-lg": true,
-      "desktop": true,
-      "desktop-lg": true,
-      "widescreen": true
-    );
-  </code>
-</pre>
+{% raw %}<pre><code>$theme-image-path: "../uswds/img";
+$theme-font-path: "../uswds/fonts";
+$theme-show-compile-warnings: false;
+$theme-show-notifications: false;
+$theme-focus-color: "blue-50v";
+$theme-global-paragraph-styles: true;
+$theme-global-link-styles: true;
+$theme-global-content-styles: true;
+$theme-utility-breakpoints: (
+  "card": false,
+  "card-lg": true,
+  "mobile": true,
+  "mobile-lg": true,
+  "tablet": true,
+  "tablet-lg": true,
+  "desktop": true,
+  "desktop-lg": true,
+  "widescreen": true
+);</code></pre>{% endraw %}
 
 #### Current settings (as of USWDS 2.13.2)
 
@@ -506,15 +496,10 @@ At the end of this process, your new **_uswds-theme.scss** file will look someth
 <ol>
   <li>
     Once you have all your project-specific settings in a single file, we'll load these customizations into the USWDS core engine. We do this with a special <strong>@use</strong> statement:
-
-    <pre>
-      <code>
-        @use "uswds-core" with (
-          <strong>&#123;&#123; your settings &#125;&#125;</strong>
-        );
-      </code>
-    </pre>
-
+{% raw %}<pre><code>
+@use "uswds-core" with (
+  <strong>&#123;&#123; your settings &#125;&#125;</strong>
+);</code></pre>{% endraw %}
     In the previous example, <strong>&#123;&#123; your settings &#125;&#125;</strong> would be a list of all the settings variables in your settings file.
 
     So with an existing settings file like the following:

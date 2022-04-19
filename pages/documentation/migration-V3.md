@@ -22,8 +22,8 @@ subnav:
   href: '#5-update-to-sass-module-syntax'
 - text: 6. Find which settings from your theme files you’ve customized.
   href: '#6-find-which-settings-from-your-theme-files-youve-customized'
-- text: Optimize your installation with component packages
-  href: '#optimize-your-installation-with-component-packages'
+- text: 7. Optimize your installation with component packages
+  href: '#7-optimize-your-installation-with-component-packages'
 ---
 
 ## Why migrate to USWDS 3.0?
@@ -50,8 +50,8 @@ For the purposes of this guide, make markup changes for all entries that match y
 3. [Install the USWDS 3.0 package](#3-install-the-uswds-30-package)
 4. [Update your Sass compiler settings and recompile CSS](#4-update-your-sass-compiler-settings-and-recompile-css)
 5. [Optional] [Update to Sass module syntax](#5-update-to-sass-module-syntax)
-6. [Optional] [Optimize your installation](#optimize-your-installation-with-component-packages)
-7. [Optional] Update to USWDS Compile
+6. [Optional] [Find which settings from your theme files you’ve customized](#6-find-which-settings-from-your-theme-files-youve-customized)
+7. [Optional] [Optimize your installation with component packages](#7-optimize-your-installation-with-component-packages)
 
 ### 1. Check your current USWDS code and settings versions
 
@@ -628,7 +628,7 @@ Once each of your custom sass files include the **@use "uswds-core" as *;** line
 
 Recompile your Sass and check for errors.
 
-## Optimize your installation with component packages
+### 7. Optimize your installation with component packages
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
 By default, a USWDS installation includes every component available to the design system. But most projects don't use all these components. USWDS 3.0 allows teams to use only the components you need for your project, through the idea of component packages.

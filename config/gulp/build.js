@@ -63,7 +63,7 @@ function spawnP(cmd, args, opts) {
 // the case, we'll want to build those assets.
 gulp.task('build-uswds-if-needed', () => {
   const rootDir = path.normalize(path.join(__dirname, '..', '..'));
-  const uswdsDir = path.join(rootDir, 'node_modules', 'uswds');
+  const uswdsDir = path.join(rootDir, 'node_modules', '@uswds/uswds');
   const componentDir = path.join(uswdsDir, 'html-templates');
   const gulpfile = path.join(uswdsDir, 'gulpfile.js');
 

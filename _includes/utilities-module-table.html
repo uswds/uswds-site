@@ -1,0 +1,46 @@
+{% assign utils = site.data.utility-modules %}
+{% assign col1Title = 'Utility module name' %}
+{% assign col1Width = 'flex-2' %}
+{% assign col2Title = 'Class base' %}
+{% assign col2Width = 'flex-1' %}
+{% assign col3Title = 'Gzip size' %}
+{% assign col3Width = 'flex-1' %}
+{% assign col4Title = 'Default full size' %}
+{% assign col4Width = 'flex-1' %}
+
+<table class="usa-table--borderless site-table-responsive site-table-simple margin-top-2">
+  <thead>
+    <tr>
+      <th scope="col" class="{{ col1Width }}">{{ col1Title }}</th>
+      <th scope="col" class="{{ col2Width }}">{{ col2Title }}</th>
+      <th scope="col" class="{{ col3Width }}">{{ col3Title }}</th>
+      <th scope="col" class="{{ col4Width }}">{{ col4Title }}</th>
+    </tr>
+  </thead>
+  <tbody class="font-mono-2xs">
+    {% for util in utils %}
+    <tr>
+      <td data-title="{{ col1Title }}" class="{{ col1Width }}">
+        <span class="font-lang-2xs">
+          {{ util.name }}
+        </span>
+      </td>
+      <td data-title="{{ col2Title }}" class="{{ col2Width }}">
+        <span class="">
+          {{ util.base }}
+        </span>
+      </td>
+      <td data-title="{{ col3Title }}" class="{{ col3Width }}">
+        <span class="">
+          {{ util.defaultSize | times: 0.185 | round: 2 }} KB
+        </span>
+      </td>
+      <td data-title="{{ col4Title }}" class="{{ col4Width }}">
+        <span>
+          {{ util.defaultSize }} KB
+        </span>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

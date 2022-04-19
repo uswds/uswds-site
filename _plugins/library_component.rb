@@ -8,7 +8,7 @@ module Jekyll
       super
       @name = name.strip
       @base_url = ENV[BASE_URL_ENV_VAR]
-      @fs_path = "node_modules/uswds/html-templates/#{@name}.html"
+      @fs_path = "node_modules/@uswds/uswds/html-templates/#{@name}.html"
 
     end
 

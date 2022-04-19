@@ -1,14 +1,14 @@
 ---
-permalink: /documentation/migration-V3/
+permalink: /documentation/migration/
 layout: styleguide
-title: USWDS 3.0 Migration Guide
+title: Migrating to USWDS 3.0
 category: How to use USWDS
 subnav:
-- text: Why migrate to USWD 3.0?
+- text: Why migrate to USWDS 3.0?
   href: '#why-migrate-to-uswds-30'
 - text: How to use this guide
   href: '#how-to-use-this-guide'
-- text: Migration Overview
+- text: Migration overview
   href: '#migration-overview'
 - text: 1. Check your current USWDS code and settings versions
   href: '#1-check-your-current-uswds-code-and-settings-versions'

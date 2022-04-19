@@ -496,121 +496,103 @@ $theme-utility-breakpoints: (
 <ol>
   <li>
     Once you have all your project-specific settings in a single file, we'll load these customizations into the USWDS core engine. We do this with a special <strong>@use</strong> statement:
-{% raw %}<pre><code>
-@use "uswds-core" with (
+{% raw %}<pre><code>@use "uswds-core" with (
   <strong>&#123;&#123; your settings &#125;&#125;</strong>
 );</code></pre>{% endraw %}
     In the previous example, <strong>&#123;&#123; your settings &#125;&#125;</strong> would be a list of all the settings variables in your settings file.
-
+    <br>
     So with an existing settings file like the following:
-
-    <pre>
-      <code>
-        $theme-image-path: "../uswds/img";
-        $theme-font-path: "../uswds/fonts";
-        $theme-show-compile-warnings: false;
-        $theme-show-notifications: false;
-        $theme-focus-color: "blue-50v";
-        $theme-global-paragraph-styles: true;
-        $theme-global-link-styles: true;
-        $theme-global-content-styles: true;
-        $theme-utility-breakpoints: (
-          "card": false,
-          "card-lg": true,
-          "mobile": true,
-          "mobile-lg": true,
-          "tablet": true,
-          "tablet-lg": true,
-          "desktop": true,
-          "desktop-lg": true,
-          "widescreen": true
-        );
-      </code>
-    </pre>
+    {% raw %}<pre><code>$theme-image-path: "../uswds/img";
+$theme-font-path: "../uswds/fonts";
+$theme-show-compile-warnings: false;
+$theme-show-notifications: false;
+$theme-focus-color: "blue-50v";
+$theme-global-paragraph-styles: true;
+$theme-global-link-styles: true;
+$theme-global-content-styles: true;
+$theme-utility-breakpoints: (
+  "card": false,
+  "card-lg": true,
+  "mobile": true,
+  "mobile-lg": true,
+  "tablet": true,
+  "tablet-lg": true,
+  "desktop": true,
+  "desktop-lg": true,
+  "widescreen": true
+);</code></pre>{% endraw %}
 
     We'd update it to use <strong>@use</strong> with the following:
 
-    <pre>
-      <code>
-        @use "uswds-core" with (
-          $theme-image-path: "../uswds/img",
-          $theme-font-path: "../uswds/fonts",
-          $theme-show-compile-warnings: false,
-          $theme-show-notifications: false,
-          $theme-focus-color: "blue-50v",
-          $theme-global-paragraph-styles: true,
-          $theme-global-link-styles: true,
-          $theme-global-content-styles: true,
-          $theme-utility-breakpoints: (
-            "card": false,
-            "card-lg": true,
-            "mobile": true,
-            "mobile-lg": true,
-            "tablet": true,
-            "tablet-lg": true,
-            "desktop": true,
-            "desktop-lg": true,
-            "widescreen": true
-          ),
-        );
-      </code>
-    </pre>
+{% raw %}<pre><code>@use "uswds-core" with (
+$theme-image-path: "../uswds/img",
+$theme-font-path: "../uswds/fonts",
+$theme-show-compile-warnings: false,
+$theme-show-notifications: false,
+$theme-focus-color: "blue-50v",
+$theme-global-paragraph-styles: true,
+$theme-global-link-styles: true,
+$theme-global-content-styles: true,
+$theme-utility-breakpoints: (
+  "card": false,
+  "card-lg": true,
+  "mobile": true,
+  "mobile-lg": true,
+  "tablet": true,
+  "tablet-lg": true,
+  "desktop": true,
+  "desktop-lg": true,
+  "widescreen": true
+  ),
+);</code></pre>{% endraw %}
 
     Note that the new <strong>@use</strong> statement is a <strong>list</strong> of variables, so each line ends in a comma (,) instead of a semicolon (;).
   </li>
   <li>
     Almost there! The last thing we have to do is make sure we use this new theme file in our project. If your project already was using a project-specific theme settings file, you're all set. If not, you'll need to open your project's Sass entry point, typically <strong>styles.scss</strong>. It usually looks something like this:
 
-    <pre>
-      <code>
-        /*
-        * * * * * ==============================
-        * * * * * ==============================
-        * * * * * ==============================
-        * * * * * ==============================
-        ========================================
-        ========================================
-        ========================================
-        */
+{% raw %}<pre><code>/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+*/
 
-        // -------------------------------------
-        // Import individual theme settings
+// -------------------------------------
+// Import individual theme settings
 
-        @forward "uswds-theme-general";
-        @forward "uswds-theme-typography";
-        @forward "uswds-theme-spacing";
-        @forward "uswds-theme-color";
-        @forward "uswds-theme-utilities";
+@forward "uswds-theme-general";
+@forward "uswds-theme-typography";
+@forward "uswds-theme-spacing";
+@forward "uswds-theme-color";
+@forward "uswds-theme-utilities";
 
-        // components import needs to be last
-        @forward "uswds-theme-components";
+// components import needs to be last
+@forward "uswds-theme-components";
 
-        ...
-      </code>
-    </pre>
+...</code></pre>{% endraw %}
 
     In USWDS 3.0, we won't use multiple theme files, just a single file with all the project-specific settings. So we can remove all the individual theme settings from our Sass entry point and replace them with a single <strong>@use</strong> statement, using the project-specific settings file, like so:
 
-    <pre>
-      <code>
-        /*
-        * * * * * ==============================
-        * * * * * ==============================
-        * * * * * ==============================
-        * * * * * ==============================
-        ========================================
-        ========================================
-        ========================================
-        */
+{% raw %}<pre><code>/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+*/
 
-        // -------------------------------------
-        // Import individual theme settings
+// -------------------------------------
+// Import individual theme settings
 
-        @forward "uswds-theme"; // or whatever your theme file is named
+@forward "uswds-theme"; // or whatever your theme file is named
 
-        ...
-      </code>
-    </pre>
+...</code></pre>{% endraw %}
 
     Now your project is using its theme settings in the proper USWDS 3.0 format!
   </li>

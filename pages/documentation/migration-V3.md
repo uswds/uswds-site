@@ -113,76 +113,112 @@ These steps will help you do any preliminary migration, before updating to USWDS
       If you have code older than USWDS 2.13.0
     </button>
   </h4>
-  <div id="m-a1" class="usa-accordion__content usa-prose">
-    <h5 class="font-lang-xs text-bold"><span class="usa-tag bg-accent-cool-darker">Markup</span> Update any instance of the small search button.</h5>
-    <p>
-      You'll need to update any instances of the small search button on your site. We're now using explicit images to better support legibility in instances where icons do not load. 
-    </p>
-    <h6>What to do</h6>
-    <ol>
-      <li> Check your codebase for instances of <code>&lt;span class="usa-sr-only"&gt;Search&lt;/span&gt;.</code></li>
-      <li> Update the markup from the old version to the new version if you use it.</li>
-    </ol>   
-    <h6>Old</h6>
-    {% raw %}<pre><code>&lt;button class="usa-button" type="submit"&gt;
-  &lt;span class="usa-sr-only"&gt;Search&lt;/span&gt;
-&lt;/button&gt;</code></pre>{% endraw %}
-    <h6>New</h6>
-    {% raw %}<pre><code>&lt;button class="usa-button" type="submit"&gt;    
-  &lt;img src="{{ uswds image path }}/usa-icons-bg/search--white.svg" 
-    class="usa-search__submit-icon" alt="Search"&gt;
-&lt;/button&gt;</code></pre>{% endraw %}
-    <h5 class="font-lang-xs text-bold"><span class="usa-tag bg-accent-cool-darker">Markup</span> Update social media icons in the footer.</h5>
-    <p>
-     You'll need to update social media icons in the USWDS footer. We're now using explicit images to better support legibility in instances where icons do not load. 
-    </p>
-    <h6>What to do:</h6>
-    <ol>
-      <li> Check your codebase for instances of <code>usa-social-link.</code></li>
-      <li> Update the markup from the old version to the new version if you use it.</li>
-    </ol>
-    <h6>Old</h6>
-    {% raw %}<pre><code>&lt;a class="usa-social-link usa-social-link--facebook" href="{{ link }}"&gt;
-  &lt;span&gt;Facebook&lt;/span&gt;
-&lt;/a&gt;
-&lt;a class="usa-social-link usa-social-link--twitter" href="{{ link }}"&gt;
-  &lt;span&gt;Twitter&lt;/span&gt;
-&lt;/a&gt;
-&lt;a class="usa-social-link usa-social-link--youtube" href="{{ link }}"&gt;
-  &lt;span&gt;YouTube&lt;/span&gt;
-&lt;/a&gt;
-&lt;a class="usa-social-link usa-social-link--instagram" href="{{ link }}"&gt;
-  &lt;span&gt;Instagram&lt;/span&gt;
-&lt;/a&gt;
-&lt;a class="usa-social-link usa-social-link--rss" href="{{ link }}"&gt;
-  &lt;span&gt;RSS&lt;/span&gt;
-&lt;/a&gt;</code></pre>{% endraw %}
-    <h6>New</h6>
-    {% raw %}<pre><code>&lt;a class="usa-social-link" href="{{ link }}"&gt;
-  &lt;img class="usa-social-link__icon" 
+  <div id="m-a1" class="usa-accordion__content site-prose" markdown="1">
+
+##### <span class="usa-tag bg-accent-cool-darker">Markup</span> Update any instance of the small search button.
+
+You'll need to update any instances of the small search button on your site. We're now using explicit images to better support legibility in instances where icons do not load. 
+
+###### What to do
+1. Check your codebase for instances of `<span class="usa-sr-only">Search</span>`.
+1. Update the markup from the old version to the new version if you use it.
+
+###### Old
+
+{:.site-terminal}
+```html
+<button class="usa-button" type="submit">
+  <span class="usa-sr-only">Search</span>
+<button>
+```
+
+###### New
+
+{:.site-terminal}
+```html
+<button class="usa-button" type="submit">    
+  <img 
+    src="{% raw %}{{ uswds image path }}{% endraw %}/usa-icons-bg/search--white.svg" 
+    class="usa-search__submit-icon" 
+    alt="Search" />
+</button>
+```
+
+##### <span class="usa-tag bg-accent-cool-darker">Markup</span> Update social media icons in the footer.
+
+You'll need to update social media icons in the USWDS footer. We're now using explicit images to better support legibility in instances where icons do not load. 
+
+###### What to do:
+
+1. Check your codebase for instances of `usa-social-link.`
+1. If you use it, Update the markup from the old version to the new version.
+
+###### Old code
+
+{:.site-terminal}
+```html
+<a class="usa-social-link usa-social-link--facebook" 
+  href="{% raw %}{{ link }}{% endraw %}">
+  <span>Facebook</span>
+</a>
+<a class="usa-social-link usa-social-link--twitter" 
+  href="{% raw %}{{ link }}{% endraw %}">
+  <span>Twitter</span>
+</a>
+<a class="usa-social-link usa-social-link--youtube" 
+  href="{% raw %}{{ link }}{% endraw %}">
+  <span>YouTube</span>
+</a>
+<a class="usa-social-link usa-social-link--instagram" 
+  href="{% raw %}{{ link }}{% endraw %}">
+  <span>Instagram</span>
+</a>
+<a class="usa-social-link usa-social-link--rss" 
+  href="{% raw %}{{ link }}{% endraw %}">
+  <span>RSS</span>
+</a>
+```
+
+###### New code
+
+{:.site-terminal}
+```html
+<a class="usa-social-link" 
+  href="{% raw %}{{ link }}{% endraw %}">
+  <img 
+    class="usa-social-link__icon" 
     src="/usa-icons-bg/search--whi/usa-icons/facebook.svg" 
-    alt="Facebook"&gt;
-&lt;/a&gt;
-&lt;a class="usa-social-link" href="{{ link }}"&gt;
-  &lt;img class="usa-social-link__icon" 
+    alt="Facebook" />
+</a>
+<a class="usa-social-link" 
+  href="{% raw %}{{ link }}{% endraw %}">
+  <img 
+    class="usa-social-link__icon" 
     src="/usa-icons-bg/search--whi/usa-icons/twitter.svg" 
-    alt="Twitter"&gt;
-&lt;/a&gt;
-&lt;a class="usa-social-link" href="{{ link }}"&gt;
-  &lt;img class="usa-social-link__icon" 
+    alt="Twitter" />
+</a>
+<a class="usa-social-link" 
+  href="{% raw %}{{ link }}{% endraw %}">
+  <img 
+    class="usa-social-link__icon" 
     src="/usa-icons-bg/search--whi/usa-icons/youtube.svg" 
-    alt="YouTube"&gt;
-&lt;/a&gt;
-&lt;a class="usa-social-link" href="{{ link }}"&gt;
-  &lt;img class="usa-social-link__icon" 
+    alt="YouTube" />
+</a>
+<a class="usa-social-link" 
+  href="{% raw %}{{ link }}{% endraw %}">
+  <img 
+    class="usa-social-link__icon" 
     src="/usa-icons-bg/search--whi/usa-icons/instagram.svg" 
-    alt="Instagram"&gt;
-&lt;/a&gt;
-&lt;a class="usa-social-link" href="{{ link }}"&gt;
-  &lt;img class="usa-social-link__icon" 
+    alt="Instagram" />
+</a>
+<a class="usa-social-link" 
+  href="{% raw %}{{ link }}{% endraw %}">
+  <img 
+    class="usa-social-link__icon" 
     src="/usa-icons-bg/search--whi/usa-icons/rss_feed.svg" 
-    alt="RSS"&gt;
-&lt;/a&gt;</code></pre>{% endraw %}
+    alt="RSS" />
+</a>
+```
   </div>
 
   <h4 class="usa-accordion__heading">
@@ -405,10 +441,19 @@ The location of the USWDS source files is different in USWDS 3.0. You'll need to
       If you're using USWDS Compile
     </button>
   </h4>
-  <div id="m-a7" class="usa-accordion__content usa-prose">
-    TK   
-  </div>
+  <div id="m-a7" class="usa-accordion__content usa-prose"  markdown="1">
+```
+/* gulpfile.js */
 
+const uswds = require("@uswds/compile");
+
+/**
+ * USWDS version
+ */
+
+uswds.settings.version = 3;
+```
+  </div>
   <h4 class="usa-accordion__heading">
     <button
       class="usa-accordion__button"

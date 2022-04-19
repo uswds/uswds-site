@@ -2822,7 +2822,7 @@ $theme-table-column-gap: 4;
     h3,
     h4,
     h5,
-    h5 {
+    h6 {
       @include typeset("lang");
       @extend %header-margin;
       color: color("ink");
@@ -2837,6 +2837,11 @@ $theme-table-column-gap: 4;
     h3 {
       @include typeset("lang", "lg", 2);
       @include u-text("normal");
+    }
+
+    h6 {
+      @include typeset("lang", "2xs", 2);
+      @include u-text("uppercase", "ls-2", "normal");
     }
 
     .site-text-intro {

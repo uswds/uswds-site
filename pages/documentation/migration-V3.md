@@ -373,7 +373,7 @@ The location of the USWDS source files is different in USWDS 3.0. You'll need to
       <li> 
         Search for <strong>includePaths</strong> in your project's Gulp files. The paths in this list are where the Sass compiler looks for your source files. In USWDS 3.0
         <p><strong>Old</strong></p>
-        {% raw %}<pre><code>.pipe(
+        <pre><code>.pipe(
   sass({
     includePaths: [
       PROJECT_SASS_SRC,
@@ -381,9 +381,9 @@ The location of the USWDS source files is different in USWDS 3.0. You'll need to
       `${USWDS}/scss/packages`,
     ],
   })
-)</code></pre>{% endraw %}
+)</code></pre>
         <p><strong>New</strong></p>
-        {% raw %}<pre><code>.pipe(
+        <pre><code>.pipe(
   sass({
     includePaths: [
       PROJECT_SASS_SRC,
@@ -391,7 +391,7 @@ The location of the USWDS source files is different in USWDS 3.0. You'll need to
       `${USWDS}/packages`,
     ],
   })
-)</code></pre>{% endraw %}
+)</code></pre>
       </li>
       <li>Recompile your Sass as usual. When it compiles, it is now using USWDS 3.0!</li>
     </ol>
@@ -464,7 +464,7 @@ When you see a setting that appears different from the current default, this is 
 
 At the end of this process, your new **_uswds-theme.scss** file will look something like the following:
 
-{% raw %}<pre><code>$theme-image-path: "../uswds/img";
+<pre><code>$theme-image-path: "../uswds/img";
 $theme-font-path: "../uswds/fonts";
 $theme-show-compile-warnings: false;
 $theme-show-notifications: false;
@@ -482,7 +482,7 @@ $theme-utility-breakpoints: (
   "desktop": true,
   "desktop-lg": true,
   "widescreen": true
-);</code></pre>{% endraw %}
+);</code></pre>
 
 #### Current settings (as of USWDS 2.13.2)
 
@@ -496,13 +496,13 @@ $theme-utility-breakpoints: (
 <ol>
   <li>
     Once you have all your project-specific settings in a single file, we'll load these customizations into the USWDS core engine. We do this with a special <strong>@use</strong> statement:
-{% raw %}<pre><code>@use "uswds-core" with (
+<pre><code>@use "uswds-core" with (
   <strong>&#123;&#123; your settings &#125;&#125;</strong>
-);</code></pre>{% endraw %}
+);</code></pre>
     In the previous example, <strong>&#123;&#123; your settings &#125;&#125;</strong> would be a list of all the settings variables in your settings file.
     <br>
     So with an existing settings file like the following:
-    {% raw %}<pre><code>$theme-image-path: "../uswds/img";
+    <pre><code>$theme-image-path: "../uswds/img";
 $theme-font-path: "../uswds/fonts";
 $theme-show-compile-warnings: false;
 $theme-show-notifications: false;
@@ -520,11 +520,11 @@ $theme-utility-breakpoints: (
   "desktop": true,
   "desktop-lg": true,
   "widescreen": true
-);</code></pre>{% endraw %}
+);</code></pre>
 
     We'd update it to use <strong>@use</strong> with the following:
 
-{% raw %}<pre><code>@use "uswds-core" with (
+<pre><code>@use "uswds-core" with (
 $theme-image-path: "../uswds/img",
 $theme-font-path: "../uswds/fonts",
 $theme-show-compile-warnings: false,
@@ -544,14 +544,14 @@ $theme-utility-breakpoints: (
   "desktop-lg": true,
   "widescreen": true
   ),
-);</code></pre>{% endraw %}
+);</code></pre>
 
     Note that the new <strong>@use</strong> statement is a <strong>list</strong> of variables, so each line ends in a comma (,) instead of a semicolon (;).
   </li>
   <li>
     Almost there! The last thing we have to do is make sure we use this new theme file in our project. If your project already was using a project-specific theme settings file, you're all set. If not, you'll need to open your project's Sass entry point, typically <strong>styles.scss</strong>. It usually looks something like this:
 
-{% raw %}<pre><code>/*
+<pre><code>/*
 * * * * * ==============================
 * * * * * ==============================
 * * * * * ==============================
@@ -573,11 +573,11 @@ $theme-utility-breakpoints: (
 // components import needs to be last
 @forward "uswds-theme-components";
 
-...</code></pre>{% endraw %}
+...</code></pre>
 
     In USWDS 3.0, we won't use multiple theme files, just a single file with all the project-specific settings. So we can remove all the individual theme settings from our Sass entry point and replace them with a single <strong>@use</strong> statement, using the project-specific settings file, like so:
 
-{% raw %}<pre><code>/*
+<pre><code>/*
 * * * * * ==============================
 * * * * * ==============================
 * * * * * ==============================
@@ -592,7 +592,7 @@ $theme-utility-breakpoints: (
 
 @forward "uswds-theme"; // or whatever your theme file is named
 
-...</code></pre>{% endraw %}
+...</code></pre>
 
     Now your project is using its theme settings in the proper USWDS 3.0 format!
   </li>
@@ -633,20 +633,16 @@ This adds styles to your project. But the **uswds** package is a bundle of many 
 
 An example of using replacing the **uswds** package with individual component packages in your Sass entry point would look something like this:
 
-<pre>
-  <code>
-    <s>@forward "uswds";</s>
+<pre><code><s>@forward "uswds";</s>
 
-    @forward "usa-accordion";
-    @forward "usa-banner";
-    @forward "usa-button";
-    @forward "usa-footer";
-    @forward "usa-header";
-    @forward "usa-prose";
+@forward "usa-accordion";
+@forward "usa-banner";
+@forward "usa-button";
+@forward "usa-footer";
+@forward "usa-header";
+@forward "usa-prose";
 
-    @forward "uswds-form-controls";
-  </code>
-</pre>
+@forward "uswds-form-controls";</code></pre>
 
 #### Available packages 
 
@@ -673,14 +669,10 @@ If you find a hit for the class name in your codebase, include the relevant pack
 
 For instance, if you found **usa-banner, usa-identifier, usa-button**, and **usa-accordion**, you might attach the following packages in your Sass entry point: 
 
-<pre>
-  <code>
-    @forward "usa-accordion";
-    @forward "usa-banner";
-    @forward "usa-button";
-    @forward "usa-identifier";
-  </code>
-</pre>
+<pre><code>@forward "usa-accordion";
+@forward "usa-banner";
+@forward "usa-button";
+@forward "usa-identifier";</code></pre>
 
 Each package is smart enough to include any dependent package it needs to display properly. For instance, the **usa-banner** package will load
 
@@ -693,16 +685,12 @@ Look for classes in your codebase for searching for a regular expression string 
 
 For instance, if you found **add-list-reset, font-, order-,** and **display-**, you might use the following setting: 
 
-<pre>
-  <code>
-     $output-these-utilities: (
-      "add-list-reset",
-      "display",
-      "font",
-      "order"
-      ),
-  </code>
-</pre>
+<pre><code>$output-these-utilities: (
+"add-list-reset",
+"display",
+"font",
+"order"
+),</code></pre>
 
 TK: Utility module key table
 
@@ -724,24 +712,16 @@ In a gulp workflow, we recommend using `gulp-sass` and `sass-embedded` together 
 
   <li>
     Uninstall any other sass compiling packages, if they exist:
-    <pre>
-      <code>
-        npm uninstall sass
-        npm uninstall gulp-dart-sass
-        npm uninstall gulp-sass
-      </code>
-    </pre>
+<pre><code>npm uninstall sass
+npm uninstall gulp-dart-sass
+npm uninstall gulp-sass</code></pre>
   </li>
 
   <li>
     In your Sass gulp tasks file, replace your existing sass compiler package import with **gulp-sass** and **sass-embedded:**
-    <pre>
-      <code>
-        <s>const sass = require("gulp-dart-scss");</s>
+<pre><code><s>const sass = require("gulp-dart-scss");</s>
 
-        const sass = require("gulp-sass")(require("sass-embedded"));
-      </code>
-    </pre>
+const sass = require("gulp-sass")(require("sass-embedded"));</code></pre>
   </li>
 
   <li>
@@ -760,17 +740,17 @@ There are nine responsive breakpoints available to utilities and the layout grid
 This can result in bulky CSS, and if your project doesn't use these breakpoints you can save a lot of space by setting these breakpoints to false. By default, **mobile-lg**, **tablet**, and **desktop** are set to true:
 
 ```
-  $theme-utility-breakpoints: (
-    "card": false,
-    "card-lg": false,
-    "mobile": false,
-    "mobile-lg": true,
-    "tablet": true,
-    "tablet-lg": false,
-    "desktop": true,
-    "desktop-lg": false,
-    "widescreen": false
-  ),
+$theme-utility-breakpoints: (
+  "card": false,
+  "card-lg": false,
+  "mobile": false,
+  "mobile-lg": true,
+  "tablet": true,
+  "tablet-lg": false,
+  "desktop": true,
+  "desktop-lg": false,
+  "widescreen": false
+),
 ```
 
 For each breakpoint set to true in your project, search for its usage in your codebase by searching for the **breakpoint name** + a colon (:). SO, to search for the **tablet-lg** breakpoint, search for desktop-lg:. If that breakpoint does not appear, you can set the value to **false**.
@@ -789,29 +769,21 @@ For example, according to the table in [Available packages, above](#available-pa
 
 Instead of simply forwarding the **usa-banner** component, you can import the component and all related dependencies directly. Note: We've used **uswds-core** already when we forwarded our settings, so we won't forward it again:
 
-<pre>
-  <code>
-    <s>@forward "usa-banner";</s>
+<pre><code><s>@forward "usa-banner";</s>
 
-    @forward "usa-banner";
-    @forward "usa-icon";
-    @forward "usa-layout-grid";
-    @forward "usa-media-block";
-    @forward "uswds-fonts";
-  </code>
-</pre>
+@forward "usa-banner";
+@forward "usa-icon";
+@forward "usa-layout-grid";
+@forward "usa-media-block";
+@forward "uswds-fonts";</code></pre>
 
 Now, instead of pointing at the component packages, we can point directly at the component package source. For each usa- prefixed component package, append /src/styles to its name:
 
-<pre>
-  <code>
-    @forward "usa-banner<strong>/src/styles</strong>";
-    @forward "usa-icon<strong>/src/styles</strong>";
-    @forward "usa-layout-grid<strong>/src/styles</strong>";
-    @forward "usa-media-block<strong>/src/styles</strong>";
-    @forward "uswds-fonts";
-  </code>
-</pre>
+<pre><code>@forward "usa-banner<strong>/src/styles</strong>";
+@forward "usa-icon<strong>/src/styles</strong>";
+@forward "usa-layout-grid<strong>/src/styles</strong>";
+@forward "usa-media-block<strong>/src/styles</strong>";
+@forward "uswds-fonts";</code></pre>
 
 When you recompile, you should see an improvement in compile time.
 

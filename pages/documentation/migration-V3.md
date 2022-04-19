@@ -61,7 +61,7 @@ Check your project's **package.json** file and your project's **_uswds-theme** f
 ### 2. Integrate latest USWDS 2 changes
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
-<mark>_Head's up!_ This is probably the most labor-intensive part of the process.</mark>
+_Head's up!_ This is probably the most labor-intensive part of the process.
 
 Since USWDS 3.0 is based on the USWDS 2.13.3, any markup migration comes from migrating from whatever version you're currently on to, essentially, 2.13.3. If you're already up-to-date, this won't take any time at all, but there have been some changes that might be breaking changes for your project over the course of the USWDS 2 branch. 
 
@@ -82,7 +82,7 @@ These steps will help you do any preliminary migration, before updating to USWDS
     <p>
       You'll need to update any instances of the small search button on your site. We're now using explicit images to better support legibility in instances where icons do not load. 
     </p>
-    <mark><strong>What to do:</strong></mark>
+    <strong>What to do:</strong>
     <ol>
       <li> Check your codebase for instances of <strong>&lt;span class="usa-sr-only"&gt;Search&lt;/span&gt;.</strong></li>
       <li> Update the markup from the old version to the new version if you use it.
@@ -111,7 +111,7 @@ These steps will help you do any preliminary migration, before updating to USWDS
     <p>
      You'll need to update social media icons in the USWDS footer. We're now using explicit images to better support legibility in instances where icons do not load. 
     </p>
-    <mark><strong>What to do:</strong></mark>
+    <strong>What to do:</strong>
     <ol>
       <li> Check your codebase for instances of <strong>usa-social-link.</strong></li>
       <li> Update the markup from the old version to the new version if you use it.
@@ -197,7 +197,7 @@ These steps will help you do any preliminary migration, before updating to USWDS
         <strong>default:</strong> "primary-lighter"
       </li>
     </ul>
-    <p><strong><mark>What to do: </mark></strong></p>
+    <p><strong>What to do: </strong></p>
     <ul>
       <li>Check this list to see if you changed the default value.</li>
       <li>If you did change the default value, this change will no longer affect the input tile. </li>
@@ -217,7 +217,7 @@ These steps will help you do any preliminary migration, before updating to USWDS
         <strong>old:</strong> green-cool-80
       </li>
     </ul>
-    <p><strong><mark>What to do: </mark></strong></p>
+    <p><strong>What to do: </strong></p>
     <ol>
       <li>Check your codebase for any old settings.</li>
       <li>If you find any instance of these variables outside of the settings files, check the part of your site that they affect.</li>
@@ -236,14 +236,14 @@ These steps will help you do any preliminary migration, before updating to USWDS
     <p>
       <strong>[SETTINGS] We deprecated the $theme-site-max-width variable.</strong> We're using <strong>$theme-grid-container-max-width</strong> instead.  
     </p>
-    <p><strong><mark>What to do:</mark></strong></p>
+    <p><strong>What to do:</strong></p>
     <ol>
       <li>TK</li>
       <li>TK</li>
       <li>TK</li>
     </ol>
     <p><strong>[MARKUP] We replaced the `thumb_down_off_alt` icon with `thumb_down_alt`" in our default icon sprite. </strong></p>
-    <p><strong><mark>What to do:</mark></strong></p>
+    <p><strong>What to do:</strong></p>
     <ol>
       <li>Search for any instances of <strong>thumb_down_off_alt</strong></li>
       <li>Replace it with <strong?>thumb_down_alt</strong></li>
@@ -282,7 +282,7 @@ These steps will help you do any preliminary migration, before updating to USWDS
         <strong>old:</strong> ink
       </li>
     </ul>
-    <p><strong><mark>What to do: </mark></strong></p>
+    <p><strong>What to do: </strong></p>
     <ol>
       <li>Search your codebase for any instances of <strong>the old theme</strong></li>
       <li>Replace it with <strong>the new setting</strong></li>
@@ -309,13 +309,13 @@ These steps will help you do any preliminary migration, before updating to USWDS
         <strong>Was: </strong>4
       </li>
     </ul>
-    <p><strong><mark>What to do:</mark></strong></p>
+    <p><strong>What to do:</strong></p>
     <ol>
       <li>Search your codebase for any instances of <strong>the old theme</strong></li>
       <li>Replace it with <strong>the new setting</strong></li>
     </ol>
     <p><strong>[MARKUP] We updated usa-footer__logo-heading to use a p instead of an h3.</strong> We improved the accessibility of the footer by converting a non-semantic heading into paragraph text.</p>
-    <p><strong><mark>What to do: </mark></strong></p>
+    <p><strong>What to do: </strong></p>
     <ol>
       <li>TK</li>
       <li>TK</li>
@@ -389,7 +389,7 @@ The location of the USWDS source files is different in USWDS 3.0. You'll need to
           </code>
         </pre>
       </li>
-      <li>Recompile your Sass as usual. When it compiles, <mark>it is now using USWDS 3.0!</mark></li>
+      <li>Recompile your Sass as usual. When it compiles, it is now using USWDS 3.0!</li>
     </ol>
   </div>
 

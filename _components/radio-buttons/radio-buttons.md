@@ -2,7 +2,7 @@
 category: Components
 component:
   status: ready
-  package: form-controls
+  package: usa-radio
   dependencies:
 lead: Radio buttons allow users to select exactly one choice from a group.
 permalink: /components/radio-buttons/

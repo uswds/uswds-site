@@ -2,7 +2,7 @@
 category: Components
 component:
   status: ready
-  package: form-controls
+  package: usa-input
   dependencies:
 permalink: /components/text-input/
 redirect_from:

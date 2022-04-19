@@ -29,7 +29,7 @@ gulp.task('copy-uswds-javascript', function (done) {
 
   dutil.logMessage(task, 'Copying JS from uswds');
 
-  var stream = gulp.src('./node_modules/uswds/dist/js/**/*')
+  var stream = gulp.src('./node_modules/@uswds/uswds/dist/js/**/*')
     .pipe(gulp.dest('assets/js/vendor'));
 
   return stream;

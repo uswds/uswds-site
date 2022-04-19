@@ -434,7 +434,7 @@ The location of the USWDS source files is different in USWDS 3.0. You'll need to
   </div>
 </div>
 
-### 5. Update to Sass module syntax
+### 5. <span class="usa-tag bg-primary">Recommended</span> Update to Sass module syntax
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
 USWDS 3.0 supports the deprecated Sass import syntax. You don't need to change to the new syntax in your project Sass to use USWDS 3.0. But once you update, we recommend updating to the new syntax as well.  You’ll need to both switch @import to @use, and then create @use project-specific settings.  In USWDS 3.0 with Sass modules, instead of having multiple theme files that contain every setting available to the design system, you only keep track of the settings you changed in a single file. 
@@ -447,7 +447,7 @@ You can complete these changes by taking the following steps:
 2. Locate your existing project theme files. These are the _uswds-theme files that you found in [Step 1: Check your current USWDS code and settings versions](#1-check-your-current-uswds-code-and-settings-versions). (If you already have your project-specific settings file in a single file, you can skip ahead Step 4. If not, you'll need to collect your project-specific settings in a single file.)
 3. In the project theme file directory directory, create a new file called **_uswds-theme.scss**.
 
-### 6. Find which settings from your theme files you've customized.
+### 6. <span class="usa-tag bg-primary">Recommended</span> Find which settings from your theme files you've customized.
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
 We think the best way to accomplish this is with a series of diffs against the default theme files. Running a diff comparing your theme files to the default theme should reveal which of these settings you've modified. 
@@ -613,7 +613,7 @@ Once each of your custom sass files include the **@use "uswds-core" as *;** line
 
 Recompile your Sass and check for errors.
 
-### 7. Optimize your installation with component packages
+### 7. <span class="usa-tag bg-secondary">Optional</span> Optimize your installation with component packages
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
 By default, a USWDS installation includes every component available to the design system. But most projects don't use all these components. USWDS 3.0 allows teams to use only the components you need for your project, through the idea of component packages.

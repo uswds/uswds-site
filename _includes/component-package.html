@@ -14,7 +14,7 @@
   </li>
   <li>
     {%- if package.dependencies -%}
-    <strong>Dependencies:</strong> 
+    <strong>Dependencies: </strong> 
       {%- for dependency in package.dependencies -%}
       <code>{{ dependency }}</code class="text-no-wrap">{% if forloop.last != true %}, {% endif %}
       {%- endfor -%}

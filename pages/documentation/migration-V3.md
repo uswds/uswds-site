@@ -72,7 +72,6 @@ These steps will help you do any preliminary migration, before updating to USWDS
   <h4 class="usa-accordion__heading">
     <button
       class="usa-accordion__button"
-      aria-expanded="true"
       aria-controls="m-a1"
     >
       Older than 2.13.0
@@ -175,7 +174,6 @@ These steps will help you do any preliminary migration, before updating to USWDS
   <h4 class="usa-accordion__heading">
     <button
       class="usa-accordion__button"
-      aria-expanded="false"
       aria-controls="m-a2"
     >
       Older than 2.12.0
@@ -229,7 +227,6 @@ These steps will help you do any preliminary migration, before updating to USWDS
   <h4 class="usa-accordion__heading">
     <button
       class="usa-accordion__button"
-      aria-expanded="false"
       aria-controls="m-a3"
     >
       Older than 2.11.2
@@ -256,7 +253,6 @@ These steps will help you do any preliminary migration, before updating to USWDS
   <h4 class="usa-accordion__heading">
     <button
       class="usa-accordion__button"
-      aria-expanded="false"
       aria-controls="m-a4"
     >
       Older than 2.11.0
@@ -296,7 +292,6 @@ These steps will help you do any preliminary migration, before updating to USWDS
   <h4 class="usa-accordion__heading">
     <button
       class="usa-accordion__button"
-      aria-expanded="false"
       aria-controls="m-a5"
     >
       Older than 2.10.1
@@ -345,7 +340,6 @@ The location of the USWDS source files is different in USWDS 3.0. You'll need to
   <h4 class="usa-accordion__heading">
     <button
       class="usa-accordion__button"
-      aria-expanded="true"
       aria-controls="m-a6"
     >
       If you're using USWDS Gulp
@@ -403,7 +397,6 @@ The location of the USWDS source files is different in USWDS 3.0. You'll need to
     <h4 class="usa-accordion__heading">
       <button
         class="usa-accordion__button"
-        aria-expanded="true"
         aria-controls="m-a7"
       >
         If you're using USWDS Compile
@@ -418,7 +411,6 @@ The location of the USWDS source files is different in USWDS 3.0. You'll need to
     <h4 class="usa-accordion__heading">
       <button
         class="usa-accordion__button"
-        aria-expanded="true"
         aria-controls="m-a8"
       >
         If you're using a custom Gulp workflow
@@ -433,7 +425,6 @@ The location of the USWDS source files is different in USWDS 3.0. You'll need to
     <h4 class="usa-accordion__heading">
       <button
         class="usa-accordion__button"
-        aria-expanded="true"
         aria-controls="m-a9"
       >
         If you're using Webpack

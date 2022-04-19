@@ -1,5 +1,5 @@
 ---
-title: Introducing USWDS 2.0
+title: Introducing USWDS 3.0
 tags:
 - updates
 category: About

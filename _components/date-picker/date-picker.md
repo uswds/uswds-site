@@ -2,7 +2,7 @@
 category: Components
 component:
   status: ready
-  package: form-controls
+  package: usa-date-picker
   dependencies:
 implementation:
   initProps:

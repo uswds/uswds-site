@@ -3,6 +3,7 @@ category: Components
 component:
   name: button-group
   status: ready
+  package: usa-button-group
 layout: styleguide
 lead: A button group collects similar or related actions.
 permalink: /components/button-group/

@@ -86,3 +86,6 @@ In general, when importing settings and custom code, you just need to follow thi
     {%- endfor -%}
   {%- endif -%}
 {%- endfor -%}
+
+<h2 id="utility-modules">Utility modules</h2>
+{% include utilities-module-table.html %}

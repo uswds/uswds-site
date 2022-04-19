@@ -8,12 +8,14 @@ contents:
     var: $utilities-use-important
     default: "false"
     type: boolean
-  - name: Output all utilities
+  - name: Utilities uselist
+    usage: |
+      Include a list of all utility modules to output. Ex: `("align-tems", "border", "margin", "padding")`. `default` includes all utilities.
+    var: $output-these-utilities
+    default: "default"
+    type: list
     description: |
-      Output all utilities regardless of any individual utility’s output setting.
-    var: $output-all-utilities
-    default: "true"
-    type: boolean
+      Include a list of all utility modules to output. Ex: `("align-tems", "border", "margin", "padding")`. `default` includes all utilities.
   - name: Utility breakpoints
     description: |
       Set which mobile-first breakpoints are output for the utilities.
@@ -68,8 +70,8 @@ contents:
 
   - name: "Utility settings"
     description: |
-      Control the output of a [utility] and its responsive and state variants.
-    var: $[utility]-settings
+      Control the output of a [utility-module] and its responsive and state variants.
+    var: $[utility-module]-settings
     default:
     type: map
     map:
@@ -100,14 +102,14 @@ contents:
   - name: "Utility palettes"
     description: |
       Utilities output with the values set in the palettes list.
-    var: $[utility]-palettes
-    default: '"palette-[utility]-default"'
+    var: $[utility-module]-palettes
+    default: '"palette-[utility-module]-default"'
     type: palettes
   - name: "Utility manual values"
     description: |
       Utilities output with the tokens and values set in the manual values map.
-    var: $[utility]-palettes
-    default: '"palette-[utility]-manual-values"'
+    var: $[utility-module]-palettes
+    default: '"palette-[utility-module]-manual-values"'
     type: map
     map:
       - key: "[token name]"

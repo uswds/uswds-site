@@ -87,7 +87,6 @@ These steps will help you do any preliminary migration, before updating to USWDS
       <li> Check your codebase for instances of <strong>&lt;span class="usa-sr-only"&gt;Search&lt;/span&gt;.</strong></li>
       <li> Update the markup from the old version to the new version if you use it.
         <p><strong>Old</strong></p>
-        <hr>
         <pre>
           <code>
           &lt;button class="usa-button" type="submit"&gt;
@@ -96,7 +95,6 @@ These steps will help you do any preliminary migration, before updating to USWDS
           </code>
         </pre>
         <p><strong>New</strong></p>
-        <hr>
         <pre>
           <code>
           &lt;button class="usa-button" type="submit"&gt;    
@@ -116,7 +114,6 @@ These steps will help you do any preliminary migration, before updating to USWDS
       <li> Check your codebase for instances of <strong>usa-social-link.</strong></li>
       <li> Update the markup from the old version to the new version if you use it.
         <p><strong>Old</strong></p>
-        <hr>
         <pre>
           <code>
             &lt;a class="usa-social-link usa-social-link--facebook" href="{{ link }}"&gt;
@@ -137,7 +134,6 @@ These steps will help you do any preliminary migration, before updating to USWDS
           </code>
         </pre>
         <p><strong>New</strong></p>
-        <hr>
         <pre>
           <code>
            &lt;a class="usa-social-link" href="{{ link }}"&gt;
@@ -351,17 +347,14 @@ The location of the USWDS source files is different in USWDS 3.0. You'll need to
       <li>
         Update the USWDS <strong>const</strong> to the updated uswds package location
         <p><strong>Old</strong></p>
-        <hr>
           <code>const USWDS = "node_modules/uswds/dist";</code>
         <p><strong>New</strong></p>
-        <hr>
           <code>const USWDS = "node_modules/@uswds/uswds";</code>
           <br>
       </li>
       <li> 
         Search for <strong>includePaths</strong> in your project's Gulp files. The paths in this list are where the Sass compiler looks for your source files. In USWDS 3.0
         <p><strong>Old</strong></p>
-        <hr>
         <pre>
           <code>.pipe(
               sass({
@@ -374,7 +367,6 @@ The location of the USWDS source files is different in USWDS 3.0. You'll need to
             )</code>
         </pre>
         <p><strong>New</strong></p>
-        <hr>
         <pre>
           <code>
             .pipe(
@@ -491,7 +483,6 @@ At the end of this process, your new **_uswds-theme.scss** file will look someth
 </pre>
 
 #### Current settings (as of USWDS 2.13.2)
-<hr>
 
 [_uswds-theme-color.scss](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-color.scss) → <br>
 [_uswds-theme-components.scss](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-components.scss) → <br>

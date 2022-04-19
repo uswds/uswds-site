@@ -2,6 +2,7 @@
 permalink: /documentation/migration/
 layout: styleguide
 title: Migrating to USWDS 3.0
+lead: Migrate to USWDS 3.0 for Sass Module support and an unbundled design system with minimal upgrade effort
 category: How to use USWDS
 subnav:
 - text: Why migrate to USWDS 3.0?
@@ -38,7 +39,7 @@ subnav:
 ## How to use this guide
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
-For the purposes of this guide, make markup changes for all entries that match your code version situation and make settings changes for all entries that match your settings version situation. For example, _if your code is USWDS 2.12.2 and your settings are USWDS 2.11.0, check your markup against the **Older than 2.13.0** section only, and check your settings against the **Older than 2.13.0** and **Older than 2.12.0** sections.)_
+For the purposes of this guide, make markup changes for all entries that match your code version situation and make settings changes for all entries that match your settings version situation. For example, if your code is USWDS 2.12.2 and your settings are USWDS 2.11.0, check your markup against the **Changes in 2.13.0** section only, and check your settings against the **Changes in 2.13.0** and **Changes in 2.12.0** sections.
 
 ## Migration Overview
 
@@ -49,21 +50,56 @@ For the purposes of this guide, make markup changes for all entries that match y
 2. [Integrate latest USWDS 2.x changes](#2-integrate-latest-uswds-2-changes)
 3. [Install the USWDS 3.0 package](#3-install-the-uswds-30-package)
 4. [Update your Sass compiler settings and recompile CSS](#4-update-your-sass-compiler-settings-and-recompile-css)
-5. [Optional] [Update to Sass module syntax](#5-update-to-sass-module-syntax)
-6. [Optional] [Find which settings from your theme files you’ve customized](#6-find-which-settings-from-your-theme-files-youve-customized)
-7. [Optional] [Optimize your installation with component packages](#7-optimize-your-installation-with-component-packages)
+5. <span class="usa-tag bg-primary">Recommended</span> [Update to Sass module syntax](#5-update-to-sass-module-syntax)
+6. <span class="usa-tag bg-primary">Recommended</span> [Find which settings from your theme files you’ve customized](#6-find-which-settings-from-your-theme-files-youve-customized)
+7. <span class="usa-tag bg-secondary">Optional</span> [Optimize your installation with component packages](#7-optimize-your-installation-with-component-packages)
 
 ### 1. Check your current USWDS code and settings versions
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
-Check your project's **package.json** file and your project's **_uswds-theme** files. Your package.json file will display the version of USWDS in a line like **"uswds": "^2.12.2"**. Your theme files will have a version number at the top, under the image of the American flag. Your code and your theme files may have different versions. 
+Check your project's `package.json` file and your project's `_uswds-theme` files. Your package.json file will display the version of USWDS in a line like `"uswds": "^2.12.2"`. Your theme files will have a version number at the top, under the image of the American flag. Your code and your theme files may have different versions. 
+
+{:.site-terminal}
+```json
+/* package.json */
+
+"devDependencies": {
+  "uswds": "^2.12.2"
+}
+```
+
+{:.site-terminal}
+```scss
+/* _uswds-theme-spacing.scss */
+
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS 2.12.2
+----------------------------------------
+SPACING SETTINGS
+----------------------------------------
+Read more about settings and
+USWDS spacing units tokens in the
+documentation:
+https://designsystem.digital.gov/design-tokens/spacing-units
+----------------------------------------
+*/
+```
+
 
 ### 2. Integrate latest USWDS 2 changes
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
-_Head's up!_ This is probably the most labor-intensive part of the process.
+**Note:** This is probably the most labor-intensive part of the process.
 
-Since USWDS 3.0 is based on the USWDS 2.13.3, any markup migration comes from migrating from whatever version you're currently on to, essentially, 2.13.3. If you're already up-to-date, this won't take any time at all, but there have been some changes that might be breaking changes for your project over the course of the USWDS 2 branch. 
+Since USWDS 3.0 is based on the USWDS 2.13.3, any markup migration comes from migrating from your current version to 2.13.3. If you're already up-to-date, this won't take any time at all, but there have been some changes that might be breaking changes for your project over the course of the USWDS 2 branch. 
 
 These steps will help you do any preliminary migration, before updating to USWDS 3.0.
 
@@ -74,97 +110,79 @@ These steps will help you do any preliminary migration, before updating to USWDS
       class="usa-accordion__button"
       aria-controls="m-a1"
     >
-      Older than 2.13.0
+      If you have code older than USWDS 2.13.0
     </button>
   </h4>
   <div id="m-a1" class="usa-accordion__content usa-prose">
-    <p><strong>[MARKUP] Update any instance of the small search button.</strong></p>
+    <h5 class="font-lang-xs text-bold"><span class="usa-tag bg-accent-cool-darker">Markup</span> Update any instance of the small search button.</h5>
     <p>
       You'll need to update any instances of the small search button on your site. We're now using explicit images to better support legibility in instances where icons do not load. 
     </p>
-    <strong>What to do:</strong>
+    <h6>What to do</h6>
     <ol>
-      <li> Check your codebase for instances of <strong>&lt;span class="usa-sr-only"&gt;Search&lt;/span&gt;.</strong></li>
-      <li> Update the markup from the old version to the new version if you use it.
-        <p><strong>Old</strong></p>
-        <pre>
-          <code>
-          &lt;button class="usa-button" type="submit"&gt;
-            &lt;span class="usa-sr-only"&gt;Search&lt;/span&gt;
-          &lt;/button&gt;
-          </code>
-        </pre>
-        <p><strong>New</strong></p>
-        <pre>
-          <code>
-          &lt;button class="usa-button" type="submit"&gt;    
-            &lt;img src="{{ your uswds image path }}/usa-icons-bg/search--white.svg" 
-              class="usa-search__submit-icon" alt="Search"&gt;
-          &lt;/button&gt;
-          </code>
-        </pre>
-      </li>
+      <li> Check your codebase for instances of <code>&lt;span class="usa-sr-only"&gt;Search&lt;/span&gt;.</code></li>
+      <li> Update the markup from the old version to the new version if you use it.</li>
     </ol>   
-    <p><strong>[MARKUP] Update social media icons in the footer.</strong></p>
+    <h6>Old</h6>
+    <pre><code>&lt;button class="usa-button" type="submit"&gt;
+  &lt;span class="usa-sr-only"&gt;Search&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+    <h6>New</h6>
+    <pre><code>&lt;button class="usa-button" type="submit"&gt;    
+  &lt;img src="&lcub;&lcub; uswds image path &rcub;&rcub;/usa-icons-bg/search--white.svg" 
+    class="usa-search__submit-icon" alt="Search"&gt;
+&lt;/button&gt;</code></pre>
+    <h5 class="font-lang-xs text-bold"><span class="usa-tag bg-accent-cool-darker">Markup</span> Update social media icons in the footer.</h5>
     <p>
      You'll need to update social media icons in the USWDS footer. We're now using explicit images to better support legibility in instances where icons do not load. 
     </p>
-    <strong>What to do:</strong>
+    <h6>What to do:</h6>
     <ol>
-      <li> Check your codebase for instances of <strong>usa-social-link.</strong></li>
-      <li> Update the markup from the old version to the new version if you use it.
-        <p><strong>Old</strong></p>
-        <pre>
-          <code>
-            &lt;a class="usa-social-link usa-social-link--facebook" href="{{ link }}"&gt;
-              &lt;span&gt;Facebook&lt;/span&gt;
-            &lt;/a&gt;
-            &lt;a class="usa-social-link usa-social-link--twitter" href="{{ link }}"&gt;
-              &lt;span&gt;Twitter&lt;/span&gt;
-            &lt;/a&gt;
-            &lt;a class="usa-social-link usa-social-link--youtube" href="{{ link }}"&gt;
-              &lt;span&gt;YouTube&lt;/span&gt;
-            &lt;/a&gt;
-            &lt;a class="usa-social-link usa-social-link--instagram" href="{{ link }}"&gt;
-              &lt;span&gt;Instagram&lt;/span&gt;
-            &lt;/a&gt;
-            &lt;a class="usa-social-link usa-social-link--rss" href="{{ link }}"&gt;
-              &lt;span&gt;RSS&lt;/span&gt;
-            &lt;/a&gt;
-          </code>
-        </pre>
-        <p><strong>New</strong></p>
-        <pre>
-          <code>
-           &lt;a class="usa-social-link" href="{{ link }}"&gt;
-            &lt;img class="usa-social-link__icon" 
-              src="{{ your uswds image path }}/usa-icons/facebook.svg" 
-              alt="Facebook"&gt;
-          &lt;/a&gt;
-          &lt;a class="usa-social-link" href="{{ link }}"&gt;
-            &lt;img class="usa-social-link__icon" 
-              src="{{ your uswds image path }}/usa-icons/twitter.svg" 
-              alt="Twitter"&gt;
-          &lt;/a&gt;
-          &lt;a class="usa-social-link" href="{{ link }}"&gt;
-            &lt;img class="usa-social-link__icon" 
-              src="{{ your uswds image path }}/usa-icons/youtube.svg" 
-              alt="YouTube"&gt;
-          &lt;/a&gt;
-          &lt;a class="usa-social-link" href="{{ link }}"&gt;
-            &lt;img class="usa-social-link__icon" 
-              src="{{ your uswds image path }}/usa-icons/instagram.svg" 
-              alt="Instagram"&gt;
-          &lt;/a&gt;
-          &lt;a class="usa-social-link" href="{{ link }}"&gt;
-            &lt;img class="usa-social-link__icon" 
-              src="{{ your uswds image path }}/usa-icons/rss_feed.svg" 
-              alt="RSS"&gt;
-          &lt;/a&gt;
-          </code>
-        </pre>
-      </li>
+      <li> Check your codebase for instances of <code>usa-social-link.</code></li>
+      <li> Update the markup from the old version to the new version if you use it.</li>
     </ol>
+    <h6>Old</h6>
+    <pre><code>&lt;a class="usa-social-link usa-social-link--facebook" href="&lcub;&lcub; link &rcub;&rcub;"&gt;
+  &lt;span&gt;Facebook&lt;/span&gt;
+&lt;/a&gt;
+&lt;a class="usa-social-link usa-social-link--twitter" href="&lcub;&lcub; link &rcub;&rcub;"&gt;
+  &lt;span&gt;Twitter&lt;/span&gt;
+&lt;/a&gt;
+&lt;a class="usa-social-link usa-social-link--youtube" href="&lcub;&lcub; link &rcub;&rcub;"&gt;
+  &lt;span&gt;YouTube&lt;/span&gt;
+&lt;/a&gt;
+&lt;a class="usa-social-link usa-social-link--instagram" href="&lcub;&lcub; link &rcub;&rcub;"&gt;
+  &lt;span&gt;Instagram&lt;/span&gt;
+&lt;/a&gt;
+&lt;a class="usa-social-link usa-social-link--rss" href="&lcub;&lcub; link &rcub;&rcub;"&gt;
+  &lt;span&gt;RSS&lt;/span&gt;
+&lt;/a&gt;</code></pre>
+    <h6>New</h6>
+    <pre><code>&lt;a class="usa-social-link" href="&lcub;&lcub; link &rcub;&rcub;"&gt;
+  &lt;img class="usa-social-link__icon" 
+    src="/usa-icons-bg/search--whi/usa-icons/facebook.svg" 
+    alt="Facebook"&gt;
+&lt;/a&gt;
+&lt;a class="usa-social-link" href="&lcub;&lcub; link &rcub;&rcub;"&gt;
+  &lt;img class="usa-social-link__icon" 
+    src="/usa-icons-bg/search--whi/usa-icons/twitter.svg" 
+    alt="Twitter"&gt;
+&lt;/a&gt;
+&lt;a class="usa-social-link" href="&lcub;&lcub; link &rcub;&rcub;"&gt;
+  &lt;img class="usa-social-link__icon" 
+    src="/usa-icons-bg/search--whi/usa-icons/youtube.svg" 
+    alt="YouTube"&gt;
+&lt;/a&gt;
+&lt;a class="usa-social-link" href="&lcub;&lcub; link &rcub;&rcub;"&gt;
+  &lt;img class="usa-social-link__icon" 
+    src="/usa-icons-bg/search--whi/usa-icons/instagram.svg" 
+    alt="Instagram"&gt;
+&lt;/a&gt;
+&lt;a class="usa-social-link" href="&lcub;&lcub; link &rcub;&rcub;"&gt;
+  &lt;img class="usa-social-link__icon" 
+    src="/usa-icons-bg/search--whi/usa-icons/rss_feed.svg" 
+    alt="RSS"&gt;
+&lt;/a&gt;</code></pre>
   </div>
 
   <h4 class="usa-accordion__heading">
@@ -172,12 +190,12 @@ These steps will help you do any preliminary migration, before updating to USWDS
       class="usa-accordion__button"
       aria-controls="m-a2"
     >
-      Older than 2.12.0
+      If you have code older than USWDS 2.12.0
     </button>
   </h4>
   <div id="m-a2" class="usa-accordion__content usa-prose">
     <p>
-      <strong>[SETTINGS] We deprecated three settings.</strong> Each of the following settings is no longer set-able. If you use any of these settings, they will no longer reflect your intention. These are the deprecated settings: 
+      <strong><span class="usa-tag bg-accent-warm-darker">Settings</span> We deprecated three settings.</strong> Each of the following settings is no longer set-able. If you use any of these settings, they will no longer reflect your intention. These are the deprecated settings: 
     </p>
     <ul>
       <li>
@@ -201,7 +219,7 @@ These steps will help you do any preliminary migration, before updating to USWDS
       <li>Check the affected part of your site if you get a match.</li>
     </ul>
     <p>
-      <strong>[SETTINGS] We updated three settings defaults.</strong> If you use any of these settings in your code, the output will change:
+      <strong><span class="usa-tag bg-accent-warm-darker">Settings</span> We updated three settings defaults.</strong> If you use any of these settings in your code, the output will change:
     </p>
     <ul>
       <li>
@@ -225,12 +243,12 @@ These steps will help you do any preliminary migration, before updating to USWDS
       class="usa-accordion__button"
       aria-controls="m-a3"
     >
-      Older than 2.11.2
+      If you have code older than USWDS 2.11.2
     </button>
   </h4>
   <div id="m-a3" class="usa-accordion__content usa-prose">
     <p>
-      <strong>[SETTINGS] We deprecated the $theme-site-max-width variable.</strong> We're using <strong>$theme-grid-container-max-width</strong> instead.  
+      <strong><span class="usa-tag bg-accent-warm-darker">Settings</span> We deprecated the $theme-site-max-width variable.</strong> We're using <strong>$theme-grid-container-max-width</strong> instead.  
     </p>
     <p><strong>What to do:</strong></p>
     <ol>
@@ -238,7 +256,7 @@ These steps will help you do any preliminary migration, before updating to USWDS
       <li>TK</li>
       <li>TK</li>
     </ol>
-    <p><strong>[MARKUP] We replaced the `thumb_down_off_alt` icon with `thumb_down_alt`" in our default icon sprite. </strong></p>
+    <p><strong><span class="usa-tag bg-accent-cool-darker">Markup</span> We replaced the `thumb_down_off_alt` icon with `thumb_down_alt`" in our default icon sprite. </strong></p>
     <p><strong>What to do:</strong></p>
     <ol>
       <li>Search for any instances of <strong>thumb_down_off_alt</strong></li>
@@ -251,7 +269,7 @@ These steps will help you do any preliminary migration, before updating to USWDS
       class="usa-accordion__button"
       aria-controls="m-a4"
     >
-      Older than 2.11.0
+      If you have code older than USWDS 2.11.0
     </button>
   </h4>
   <div id="m-a4" class="usa-accordion__content usa-prose">
@@ -290,11 +308,11 @@ These steps will help you do any preliminary migration, before updating to USWDS
       class="usa-accordion__button"
       aria-controls="m-a5"
     >
-      Older than 2.10.1
+      If you have code older than USWDS 2.10.1
     </button>
   </h4>
   <div id="m-a5" class="usa-accordion__content usa-prose">
-    <p><strong>[SETTINGS] We updated some settings defaults:</strong></p>
+    <p><strong><span class="usa-tag bg-accent-warm-darker">Settings</span> We updated some settings defaults:</strong></p>
     <ul>
       <li>
         <strong>Updated: </strong>$theme-breadcrumb-background-color: default<br>
@@ -310,7 +328,7 @@ These steps will help you do any preliminary migration, before updating to USWDS
       <li>Search your codebase for any instances of <strong>the old theme</strong></li>
       <li>Replace it with <strong>the new setting</strong></li>
     </ol>
-    <p><strong>[MARKUP] We updated usa-footer__logo-heading to use a p instead of an h3.</strong> We improved the accessibility of the footer by converting a non-semantic heading into paragraph text.</p>
+    <p><strong><span class="usa-tag bg-accent-cool-darker">Markup</span> We updated usa-footer__logo-heading to use a p instead of an h3.</strong> We improved the accessibility of the footer by converting a non-semantic heading into paragraph text.</p>
     <p><strong>What to do: </strong></p>
     <ol>
       <li>TK</li>

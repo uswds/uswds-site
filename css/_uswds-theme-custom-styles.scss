@@ -3699,6 +3699,10 @@ body {
   .bp {
     @include u-text("violet-30v");
   }
+  .err,
+  .cm {
+    @include u-text("gray-30");
+  }
 }
 
 .site-preview-heading {

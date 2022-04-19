@@ -67,7 +67,7 @@ Since USWDS 3.0 is based on the USWDS 2.13.3, any markup migration comes from mi
 
 These steps will help you do any preliminary migration, before updating to USWDS 3.0.
 
-<div class="usa-accordion usa-accordion--bordered" aria-multiselectable="true">
+<div class="usa-accordion usa-accordion--bordered">
   <!-- Use the accurate heading level to maintain the document outline -->
   <h4 class="usa-accordion__heading">
     <button
@@ -331,7 +331,7 @@ These steps will help you do any preliminary migration, before updating to USWDS
 {:.border-top-2px.border-base-lighter.padding-top-1}
 The location of the USWDS source files is different in USWDS 3.0. You'll need to update your compiler settings to compile your Sass from USWDS 3.0.
 
-<div class="usa-accordion usa-accordion--bordered" aria-multiselectable="true">
+<div class="usa-accordion usa-accordion--bordered">
   <!-- Use the accurate heading level to maintain the document outline -->
   <h4 class="usa-accordion__heading">
     <button
@@ -385,46 +385,40 @@ The location of the USWDS source files is different in USWDS 3.0. You'll need to
     </ol>
   </div>
 
-  <div class="usa-accordion usa-accordion--bordered" aria-multiselectable="true">
-    <h4 class="usa-accordion__heading">
-      <button
-        class="usa-accordion__button"
-        aria-controls="m-a7"
-      >
-        If you're using USWDS Compile
-      </button>
-    </h4>
-    <div id="m-a7" class="usa-accordion__content usa-prose">
-      TK   
-    </div>
-  </div>
-  
-  <div class="usa-accordion usa-accordion--bordered" aria-multiselectable="true">
-    <h4 class="usa-accordion__heading">
-      <button
-        class="usa-accordion__button"
-        aria-controls="m-a8"
-      >
-        If you're using a custom Gulp workflow
-      </button>
-    </h4>
-    <div id="m-a8" class="usa-accordion__content usa-prose">
-      TK   
-    </div>
+  <h4 class="usa-accordion__heading">
+    <button
+      class="usa-accordion__button"
+      aria-controls="m-a7"
+    >
+      If you're using USWDS Compile
+    </button>
+  </h4>
+  <div id="m-a7" class="usa-accordion__content usa-prose">
+    TK   
   </div>
 
-  <div class="usa-accordion usa-accordion--bordered" aria-multiselectable="true">
-    <h4 class="usa-accordion__heading">
-      <button
-        class="usa-accordion__button"
-        aria-controls="m-a9"
-      >
-        If you're using Webpack
-      </button>
-    </h4>
-    <div id="m-a9" class="usa-accordion__content usa-prose">
-      TK   
-    </div>
+  <h4 class="usa-accordion__heading">
+    <button
+      class="usa-accordion__button"
+      aria-controls="m-a8"
+    >
+      If you're using a custom Gulp workflow
+    </button>
+  </h4>
+  <div id="m-a8" class="usa-accordion__content usa-prose">
+    TK   
+  </div>
+
+  <h4 class="usa-accordion__heading">
+    <button
+      class="usa-accordion__button"
+      aria-controls="m-a9"
+    >
+      If you're using Webpack
+    </button>
+  </h4>
+  <div id="m-a9" class="usa-accordion__content usa-prose">
+    TK   
   </div>
 </div>
 

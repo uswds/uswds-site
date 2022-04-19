@@ -1,5 +1,5 @@
 ---
-permalink: /documentation/migration-V2/
+permalink: /documentation/migration/uswds-2
 layout: styleguide
 title: Migrating to USWDS 2
 category: How to use USWDS

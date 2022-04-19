@@ -229,40 +229,38 @@ You'll need to update social media icons in the USWDS footer. We're now using ex
       If you have code older than USWDS 2.12.0
     </button>
   </h4>
-  <div id="m-a2" class="usa-accordion__content site-prose usa-prose" markdown="1">
-
-##### <span class="usa-tag bg-accent-warm-darker">Settings</span> Update deprecated settings.
-
-Each of the following settings is no longer set-able. If you use any of these settings, they will no longer reflect your intention. These are the deprecated settings: 
-
-- **deprecated:** `$theme-input-tile-background-color-selected`<br>
-  **default:** `"primary-lighter"`
-
-- **deprecated:** `$theme-input-tile-border-color`<br>
-  **default:** `"base-lighter"`
-
-- **deprecated:** `$theme-input-tile-border-color-selected`<br>
-  **default: `"primary-lighter"`
-
-###### What to do
-- Check this list to see if you changed the default value.
-- If you did change the default value, this change will no longer affect the input tile.
-- Assure that the input tile still displays well: check your codebase for instances of `input--tile`.
-- Check the affected part of your site if you get a match.
-
-##### <span class="usa-tag bg-accent-warm-darker">Settings</span> Check three settings that changed their defaults.</strong> 
-
-If you use any of these settings in your code, the output may change.
-
-- **new:** `$theme-color-success-dark: green-cool-50v`<br>
-  **old:** `green-cool-50`
-- **new:** `$theme-color-success-darker: green-cool-60v`<br>
-  **old:** `green-cool-80`
-
-###### What to do
-
-- Check your codebase for any old settings.
-- If you find any instance of these variables outside of the settings files, check the part of your site that they affect.
+  <div id="m-a2" class="usa-accordion__content site-prose usa-prose">
+    <h5><span class="usa-tag bg-accent-warm-darker">Settings</span> Update three deprecated settings.</h5>
+    <p>Each of the following settings is no longer set-able. If you use any of these settings, they may no longer reflect your intention. These are the deprecated settings and their defaults:</p>
+    <ul>
+      <li><code>$theme-input-tile-background-color-selected: "primary-lighter"</code></li>
+      <li><code>$theme-input-tile-border-color: "base-lighter"</code></li>
+      <li><code>$theme-input-tile-border-color-selected: "primary-lighter"</code></li>
+    </ul>
+    <h6>What to do</h6>
+    <ul>
+      <li>Check this list to see if you changed the default value.</li>
+      <li>If you did change the default value, this change will no longer affect the input tile. </li>
+      <li>Assure that the input tile still displays well: check your codebase for instances of <code>input--tile</code>.</li>
+      <li>Check the affected part of your site if you get a match.</li>
+    </ul>
+    <h5><span class="usa-tag bg-accent-warm-darker">Settings</span> Check three settings with changed defaults.</h5> 
+    <p>If you use any of these settings in your code, the output may change:</p>
+    <ul>
+      <li>
+        <strong>new:</strong> <code>$theme-color-success-dark: "green-cool-50v"</code><br>
+        <strong>old:</strong> <code>"green-cool-50"</code>
+      </li>
+      <li>
+        <strong>new:</strong> <code>$theme-color-success-darker: "green-cool-60v"</code><br>
+        <strong>old:</strong> <code>"green-cool-80"</code>
+      </li>
+    </ul>
+    <h6>What to do</h6>
+    <ol>
+      <li>Check your codebase for any old settings.</li>
+      <li>If you find any instance of these variables outside of the settings files, check the part of your site that they affect.</li>
+    </ol>
   </div>
   
   <h4 class="usa-accordion__heading">
@@ -273,18 +271,17 @@ If you use any of these settings in your code, the output may change.
       If you have code older than USWDS 2.11.2
     </button>
   </h4>
-  <div id="m-a3" class="usa-accordion__content usa-prose">
+  <div id="m-a3" class="usa-accordion__content site-prose usa-prose">
     <p>
       <strong><span class="usa-tag bg-accent-warm-darker">Settings</span> We deprecated the $theme-site-max-width variable.</strong> We're using <strong>$theme-grid-container-max-width</strong> instead.  
     </p>
     <p><strong>What to do</strong></p>
     <ol>
-      <li>TK</li>
-      <li>TK</li>
-      <li>TK</li>
+      <li></li>
+      <li></li>
     </ol>
     <p><strong><span class="usa-tag bg-accent-cool-darker">Markup</span> We replaced the `thumb_down_off_alt` icon with `thumb_down_alt`" in our default icon sprite. </strong></p>
-    <p><strong>What to do</strong></p>
+    <p><strong>What to do:</strong></p>
     <ol>
       <li>Search for any instances of <strong>thumb_down_off_alt</strong></li>
       <li>Replace it with <strong>thumb_down_alt</strong></li>
@@ -323,7 +320,7 @@ If you use any of these settings in your code, the output may change.
         <strong>old:</strong> ink
       </li>
     </ul>
-    <p><strong>What to do </strong></p>
+    <p><strong>What to do: </strong></p>
     <ol>
       <li>Search your codebase for any instances of <strong>the old theme</strong></li>
       <li>Replace it with <strong>the new setting</strong></li>
@@ -350,13 +347,13 @@ If you use any of these settings in your code, the output may change.
         <strong>Was: </strong>4
       </li>
     </ul>
-    <p><strong>What to do</strong></p>
+    <p><strong>What to do:</strong></p>
     <ol>
       <li>Search your codebase for any instances of <strong>the old theme</strong></li>
       <li>Replace it with <strong>the new setting</strong></li>
     </ol>
     <p><strong><span class="usa-tag bg-accent-cool-darker">Markup</span> We updated usa-footer__logo-heading to use a p instead of an h3.</strong> We improved the accessibility of the footer by converting a non-semantic heading into paragraph text.</p>
-    <p><strong>What to do </strong></p>
+    <p><strong>What to do: </strong></p>
     <ol>
       <li>TK</li>
       <li>TK</li>

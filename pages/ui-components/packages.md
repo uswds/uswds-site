@@ -8,12 +8,12 @@ type: docs
 subnav:
   - text: Introducing packages
     href: '#introducing-packages'
-  - text: Required and global package dependencies
-    href: '#required-and-global-package-dependencies'
-  - text: Using packages
-    href: '#using-packages'
-  - text: Reducing footprint with packages
-    href: '#reducing-footprint-with-packages'
+  - text: Included packages
+    href: '#included-packages'
+  - text: What's in a package
+    href: '#whats-in-a-package'
+  - text: Package Sass requirements
+    href: '#package-sass-requirements-load-paths'
 ---
 
 ## Introducing packages

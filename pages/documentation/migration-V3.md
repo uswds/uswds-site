@@ -258,8 +258,8 @@ You'll need to update social media icons in the USWDS footer. We're now using ex
     </ul>
     <h6>What to do</h6>
     <ol>
-      <li>Check your codebase for any old settings.</li>
-      <li>If you find any instance of these variables outside of the settings files, check the part of your site that they affect.</li>
+      <li>Check your settings to see if they are set to the old default.</li>
+      <li>If they use the old default, delete the setting from your settings file so it uses the system default.</li>
     </ol>
   </div>
   
@@ -272,19 +272,17 @@ You'll need to update social media icons in the USWDS footer. We're now using ex
     </button>
   </h4>
   <div id="m-a3" class="usa-accordion__content site-prose usa-prose">
-    <p>
-      <strong><span class="usa-tag bg-accent-warm-darker">Settings</span> We deprecated the $theme-site-max-width variable.</strong> We're using <strong>$theme-grid-container-max-width</strong> instead.  
-    </p>
-    <p><strong>What to do</strong></p>
+    <h5><span class="usa-tag bg-accent-warm-darker">Settings</span> Replace the deprecated <code>$theme-site-max-width</code> variable.</h5>
+    <p>We deprecated the <code>$theme-site-max-width</code> variable. We're using <code>$theme-grid-container-max-width</code> instead.</p>
+    <h6>What to do</h6>
+    <p>Replace instances of <code>$theme-site-max-width</code> with <code>$theme-grid-container-max-width</code></p>
+
+    <h5><span class="usa-tag bg-accent-cool-darker">Markup</span> Replace the <code>thumb_down_off_alt</code> icon with <code>thumb_down_alt</code> icon.</h5>
+    <p>We replaced the <code>thumb_down_off_alt</code> icon with <code>thumb_down_alt</code> in our default icon sprite.</p>
+    <h6>What to do</h6>
     <ol>
-      <li></li>
-      <li></li>
-    </ol>
-    <p><strong><span class="usa-tag bg-accent-cool-darker">Markup</span> We replaced the `thumb_down_off_alt` icon with `thumb_down_alt`" in our default icon sprite. </strong></p>
-    <p><strong>What to do:</strong></p>
-    <ol>
-      <li>Search for any instances of <strong>thumb_down_off_alt</strong></li>
-      <li>Replace it with <strong>thumb_down_alt</strong></li>
+      <li>Search for any instances of <code>thumb_down_off_alt</code></li>
+      <li>Replace it with <code>thumb_down_alt</code></li>
     </ol>
   </div>
   
@@ -297,33 +295,34 @@ You'll need to update social media icons in the USWDS footer. We're now using ex
     </button>
   </h4>
   <div id="m-a4" class="usa-accordion__content usa-prose">
-    <p><strong>We updated some settings defaults:</strong></p>
+    <h5><span class="usa-tag bg-accent-warm-darker">Settings</span> Check five settings with changed defaults.</h5> 
+    <p>If you use any of these settings in your code, the output may change:</p>
     <ul>
       <li>
-        <strong>new:</strong> $theme-alert-icon-size: 4<br>
-        <strong>old:</strong> 5
+        <strong>new:</strong> <code>$theme-alert-icon-size: 4</code><br>
+        <strong>old:</strong> <code>5</code>
       </li>
       <li>
-        <strong>new:</strong> $theme-table-border-color: default<br>
-        <strong>old:</strong> ink
+        <strong>new:</strong> <code>$theme-table-border-color: default</code><br>
+        <strong>old:</strong> <code>"ink"</code>
       </li>
       <li>
-        <strong>new:</strong> $theme-table-header-text-color: default<br>
-        <strong>old:</strong> ink
+        <strong>new:</strong> <code>$theme-table-header-text-color: default</code><br>
+        <strong>old:</strong> <code>"ink"</code>
       </li>
       <li>
-        <strong>new:</strong> $theme-table-stripe-text-color: default<br>
-        <strong>old:</strong> ink
+        <strong>new:</strong> <code>$theme-table-stripe-text-color: default</code><br>
+        <strong>old:</strong> <code>"ink"</code>
       </li>
       <li>
-        <strong>new:</strong> $theme-table-text-color: default<br>
-        <strong>old:</strong> ink
+        <strong>new:</strong> <code>$theme-table-text-color: default</code><br>
+        <strong>old:</strong> <code>"ink"</code>
       </li>
     </ul>
-    <p><strong>What to do: </strong></p>
+    <h6>What to do</h6>
     <ol>
-      <li>Search your codebase for any instances of <strong>the old theme</strong></li>
-      <li>Replace it with <strong>the new setting</strong></li>
+      <li>Check your settings to see if they are set to the old default.</li>
+      <li>If they use the old default, delete the setting from your settings file so it uses the system default.</li>
     </ol>
   </div>
   

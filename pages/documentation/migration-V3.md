@@ -570,7 +570,6 @@ At the end of this process, your new **_uswds-theme.scss** file will look someth
 
     Note that the new <strong>@use</strong> statement is a <strong>list</strong> of variables, so each line ends in a comma (,) instead of a semicolon (;).
   </li>
-  <br>
   <li>
     Almost there! The last thing we have to do is make sure we use this new theme file in our project. If your project already was using a project-specific theme settings file, you're all set. If not, you'll need to open your project's Sass entry point, typically <strong>styles.scss</strong>. It usually looks something like this:
 

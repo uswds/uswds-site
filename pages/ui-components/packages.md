@@ -41,6 +41,23 @@ Using packages helps reduce unused code, reduces the size of the final compiled 
 
 With packages and Sass Module syntax in USWDS 3.0, you can be confident that packages that share code dependencies will only include those dependencies on in a project. 
 
+### The uswds-core package
+The `uswds-core` package is a new package in USWDS 3.0. `uswds-core` is the engine of the design system, and includes all the functions, mixins, placeholders, tokens, and fonts necessary to white USWDS Sass.
+
+Any custom Sass you write needs to `@use "uswds-core"` at the top of the file to load the USWDS desigbn language. We suggest using `@uswds "uswds-core" as *` to add USWDS to the global namespace. For example:
+
+```scss
+/* custom-styles.scss */
+
+@use "uswds-core" as *;
+
+.custom-component {
+  @include u-bg("primary-vivid");
+}
+
+...
+```
+
 ## Included packages
 
 USWDS includes {{ packages | size }} packages — a package for each component or named class group (prefixed with `usa-`), and a handful of bundle packages that collect multiple components together (prefixed with `uswds-`). 

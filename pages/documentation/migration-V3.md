@@ -148,7 +148,7 @@ You'll need to update any instances of the small search button on your site. We'
 
 You'll need to update social media icons in the USWDS footer. We're now using explicit images to better support legibility in instances where icons do not load. 
 
-###### What to do:
+###### What to do
 
 1. Check your codebase for instances of `usa-social-link.`
 1. If you use it, Update the markup from the old version to the new version.
@@ -229,49 +229,40 @@ You'll need to update social media icons in the USWDS footer. We're now using ex
       If you have code older than USWDS 2.12.0
     </button>
   </h4>
-  <div id="m-a2" class="usa-accordion__content usa-prose">
-    <p>
-      <strong><span class="usa-tag bg-accent-warm-darker">Settings</span> We deprecated three settings.</strong> Each of the following settings is no longer set-able. If you use any of these settings, they will no longer reflect your intention. These are the deprecated settings: 
-    </p>
-    <ul>
-      <li>
-        <strong>deprecated:</strong> $theme-input-tile-background-color-selected<br>
-        <strong>default:</strong> "primary-lighter"
-      </li>
-      <li>
-        <strong>deprecated:</strong> $theme-input-tile-border-color<br>
-        <strong>default:</strong> "base-lighter"
-      </li>
-      <li>
-        <strong>deprecated:</strong> $theme-input-tile-border-color-selected<br>
-        <strong>default:</strong> "primary-lighter"
-      </li>
-    </ul>
-    <p><strong>What to do: </strong></p>
-    <ul>
-      <li>Check this list to see if you changed the default value.</li>
-      <li>If you did change the default value, this change will no longer affect the input tile. </li>
-      <li>Assure that the input tile still displays well: check your codebase for instances of <strong>input--tile</strong>.</li>
-      <li>Check the affected part of your site if you get a match.</li>
-    </ul>
-    <p>
-      <strong><span class="usa-tag bg-accent-warm-darker">Settings</span> We updated three settings defaults.</strong> If you use any of these settings in your code, the output will change:
-    </p>
-    <ul>
-      <li>
-        <strong>new:</strong> $theme-color-success-dark: green-cool-50v<br>
-        <strong>old:</strong> green-cool-50
-      </li>
-      <li>
-        <strong>new:</strong> $theme-color-success-darker: green-cool-60v<br>
-        <strong>old:</strong> green-cool-80
-      </li>
-    </ul>
-    <p><strong>What to do: </strong></p>
-    <ol>
-      <li>Check your codebase for any old settings.</li>
-      <li>If you find any instance of these variables outside of the settings files, check the part of your site that they affect.</li>
-    </ol>
+  <div id="m-a2" class="usa-accordion__content site-prose usa-prose" markdown="1">
+
+##### <span class="usa-tag bg-accent-warm-darker">Settings</span> Update deprecated settings.
+
+Each of the following settings is no longer set-able. If you use any of these settings, they will no longer reflect your intention. These are the deprecated settings: 
+
+- **deprecated:** `$theme-input-tile-background-color-selected`<br>
+  **default:** `"primary-lighter"`
+
+- **deprecated:** `$theme-input-tile-border-color`<br>
+  **default:** `"base-lighter"`
+
+- **deprecated:** `$theme-input-tile-border-color-selected`<br>
+  **default: `"primary-lighter"`
+
+###### What to do
+- Check this list to see if you changed the default value.
+- If you did change the default value, this change will no longer affect the input tile.
+- Assure that the input tile still displays well: check your codebase for instances of `input--tile`.
+- Check the affected part of your site if you get a match.
+
+##### <span class="usa-tag bg-accent-warm-darker">Settings</span> Check three settings that changed their defaults.</strong> 
+
+If you use any of these settings in your code, the output may change.
+
+- **new:** `$theme-color-success-dark: green-cool-50v`<br>
+  **old:** `green-cool-50`
+- **new:** `$theme-color-success-darker: green-cool-60v`<br>
+  **old:** `green-cool-80`
+
+###### What to do
+
+- Check your codebase for any old settings.
+- If you find any instance of these variables outside of the settings files, check the part of your site that they affect.
   </div>
   
   <h4 class="usa-accordion__heading">
@@ -286,14 +277,14 @@ You'll need to update social media icons in the USWDS footer. We're now using ex
     <p>
       <strong><span class="usa-tag bg-accent-warm-darker">Settings</span> We deprecated the $theme-site-max-width variable.</strong> We're using <strong>$theme-grid-container-max-width</strong> instead.  
     </p>
-    <p><strong>What to do:</strong></p>
+    <p><strong>What to do</strong></p>
     <ol>
       <li>TK</li>
       <li>TK</li>
       <li>TK</li>
     </ol>
     <p><strong><span class="usa-tag bg-accent-cool-darker">Markup</span> We replaced the `thumb_down_off_alt` icon with `thumb_down_alt`" in our default icon sprite. </strong></p>
-    <p><strong>What to do:</strong></p>
+    <p><strong>What to do</strong></p>
     <ol>
       <li>Search for any instances of <strong>thumb_down_off_alt</strong></li>
       <li>Replace it with <strong>thumb_down_alt</strong></li>
@@ -332,7 +323,7 @@ You'll need to update social media icons in the USWDS footer. We're now using ex
         <strong>old:</strong> ink
       </li>
     </ul>
-    <p><strong>What to do: </strong></p>
+    <p><strong>What to do </strong></p>
     <ol>
       <li>Search your codebase for any instances of <strong>the old theme</strong></li>
       <li>Replace it with <strong>the new setting</strong></li>
@@ -359,13 +350,13 @@ You'll need to update social media icons in the USWDS footer. We're now using ex
         <strong>Was: </strong>4
       </li>
     </ul>
-    <p><strong>What to do:</strong></p>
+    <p><strong>What to do</strong></p>
     <ol>
       <li>Search your codebase for any instances of <strong>the old theme</strong></li>
       <li>Replace it with <strong>the new setting</strong></li>
     </ol>
     <p><strong><span class="usa-tag bg-accent-cool-darker">Markup</span> We updated usa-footer__logo-heading to use a p instead of an h3.</strong> We improved the accessibility of the footer by converting a non-semantic heading into paragraph text.</p>
-    <p><strong>What to do: </strong></p>
+    <p><strong>What to do </strong></p>
     <ol>
       <li>TK</li>
       <li>TK</li>
@@ -479,7 +470,7 @@ uswds.settings.version = 3;
   </div>
 </div>
 
-### 5. <span class="usa-tag bg-primary">Recommended</span> Update to Sass module syntax
+### 5. Update to Sass module syntax
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
 USWDS 3.0 supports the deprecated Sass import syntax. You don't need to change to the new syntax in your project Sass to use USWDS 3.0. But once you update, we recommend updating to the new syntax as well.  You’ll need to both switch @import to @use, and then create @use project-specific settings.  In USWDS 3.0 with Sass modules, instead of having multiple theme files that contain every setting available to the design system, you only keep track of the settings you changed in a single file. 
@@ -492,7 +483,7 @@ You can complete these changes by taking the following steps:
 2. Locate your existing project theme files. These are the _uswds-theme files that you found in [Step 1: Check your current USWDS code and settings versions](#1-check-your-current-uswds-code-and-settings-versions). (If you already have your project-specific settings file in a single file, you can skip ahead Step 4. If not, you'll need to collect your project-specific settings in a single file.)
 3. In the project theme file directory directory, create a new file called **_uswds-theme.scss**.
 
-### 6. <span class="usa-tag bg-primary">Recommended</span> Find which settings from your theme files you've customized.
+### 6. Find which settings from your theme files you've customized.
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
 We think the best way to accomplish this is with a series of diffs against the default theme files. Running a diff comparing your theme files to the default theme should reveal which of these settings you've modified. 
@@ -658,7 +649,7 @@ Once each of your custom sass files include the **@use "uswds-core" as *;** line
 
 Recompile your Sass and check for errors.
 
-### 7. <span class="usa-tag bg-secondary">Optional</span> Optimize your installation with component packages
+### 7. Optimize your installation with component packages
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
 By default, a USWDS installation includes every component available to the design system. But most projects don't use all these components. USWDS 3.0 allows teams to use only the components you need for your project, through the idea of component packages.

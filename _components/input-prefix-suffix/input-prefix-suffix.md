@@ -3,7 +3,7 @@ category: Components
 component:
   name: input-prefix-suffix
   status: ready
-  package: form-controls
+  package: usa-input-prefix-suffix
   dependencies:
 lead: Use input prefixes and suffixes to show symbols or abbreviations that help users enter the right type of information in a form’s text input.
 permalink: /components/input-prefix-suffix/

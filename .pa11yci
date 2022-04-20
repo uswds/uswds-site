@@ -4,6 +4,6 @@
     "timeout": 120000,
     "concurrency": 2,
     "standard": "WCAG2AA",
-    "runners": ["htmlcs"]
+    "runners": ["axe"]
   }
 }

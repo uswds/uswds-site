@@ -104,16 +104,17 @@ Since USWDS 3.0 is based on the USWDS 2.13.3, any markup migration comes from mi
 These steps will help you do any preliminary migration, before updating to USWDS 3.0.
 
 <div class="usa-accordion usa-accordion--bordered">
-  <!-- Use the accurate heading level to maintain the document outline -->
-  <h4 class="usa-accordion__heading">
-    <button
-      class="usa-accordion__button"
-      aria-controls="m-a1"
-    >
-      If you have code older than USWDS 2.13.0
-    </button>
-  </h4>
-  <div id="m-a1" class="usa-accordion__content site-prose" markdown="1">
+
+<!-- Start 2.13.0 section -->
+<h4 class="usa-accordion__heading">
+  <button
+    class="usa-accordion__button"
+    aria-controls="m-a1"
+  >
+    If you have code older than USWDS 2.13.0
+  </button>
+</h4>
+<div id="m-a1" class="usa-accordion__content site-prose" markdown="1">
 
 ##### <span class="usa-tag bg-accent-cool-darker">Markup</span> Update any instance of the small search button.
 
@@ -123,7 +124,7 @@ You'll need to update any instances of the small search button on your site. We'
 1. Check your codebase for instances of `<span class="usa-sr-only">Search</span>`.
 1. Update the markup from the old version to the new version if you use it.
 
-###### Old
+###### Old code
 
 {:.site-terminal}
 ```html
@@ -132,7 +133,7 @@ You'll need to update any instances of the small search button on your site. We'
 <button>
 ```
 
-###### New
+###### New code
 
 {:.site-terminal}
 ```html
@@ -219,146 +220,139 @@ You'll need to update social media icons in the USWDS footer. We're now using ex
     alt="RSS" />
 </a>
 ```
-  </div>
-
-  <h4 class="usa-accordion__heading">
-    <button
-      class="usa-accordion__button"
-      aria-controls="m-a2"
-    >
-      If you have code older than USWDS 2.12.0
-    </button>
-  </h4>
-  <div id="m-a2" class="usa-accordion__content site-prose usa-prose">
-    <h5><span class="usa-tag bg-accent-warm-darker">Settings</span> Update three deprecated settings.</h5>
-    <p>Each of the following settings is no longer set-able. If you use any of these settings, they may no longer reflect your intention. These are the deprecated settings and their defaults:</p>
-    <ul>
-      <li><code>$theme-input-tile-background-color-selected: "primary-lighter"</code></li>
-      <li><code>$theme-input-tile-border-color: "base-lighter"</code></li>
-      <li><code>$theme-input-tile-border-color-selected: "primary-lighter"</code></li>
-    </ul>
-    <h6>What to do</h6>
-    <ul>
-      <li>Check this list to see if you changed the default value.</li>
-      <li>If you did change the default value, this change will no longer affect the input tile. </li>
-      <li>Assure that the input tile still displays well: check your codebase for instances of <code>input--tile</code>.</li>
-      <li>Check the affected part of your site if you get a match.</li>
-    </ul>
-    <h5><span class="usa-tag bg-accent-warm-darker">Settings</span> Check three settings with changed defaults.</h5> 
-    <p>If you use any of these settings in your code, the output may change:</p>
-    <ul>
-      <li>
-        <strong>new:</strong> <code>$theme-color-success-dark: "green-cool-50v"</code><br>
-        <strong>old:</strong> <code>"green-cool-50"</code>
-      </li>
-      <li>
-        <strong>new:</strong> <code>$theme-color-success-darker: "green-cool-60v"</code><br>
-        <strong>old:</strong> <code>"green-cool-80"</code>
-      </li>
-    </ul>
-    <h6>What to do</h6>
-    <ol>
-      <li>Check your settings to see if they are set to the old default.</li>
-      <li>If they use the old default, delete the setting from your settings file so it uses the system default.</li>
-    </ol>
-  </div>
-  
-  <h4 class="usa-accordion__heading">
-    <button
-      class="usa-accordion__button"
-      aria-controls="m-a3"
-    >
-      If you have code older than USWDS 2.11.2
-    </button>
-  </h4>
-  <div id="m-a3" class="usa-accordion__content site-prose usa-prose">
-    <h5><span class="usa-tag bg-accent-warm-darker">Settings</span> Replace the deprecated <code>$theme-site-max-width</code> variable.</h5>
-    <p>We deprecated the <code>$theme-site-max-width</code> variable. We're using <code>$theme-grid-container-max-width</code> instead.</p>
-    <h6>What to do</h6>
-    <p>Replace instances of <code>$theme-site-max-width</code> with <code>$theme-grid-container-max-width</code></p>
-
-    <h5><span class="usa-tag bg-accent-cool-darker">Markup</span> Replace the <code>thumb_down_off_alt</code> icon with <code>thumb_down_alt</code> icon.</h5>
-    <p>We replaced the <code>thumb_down_off_alt</code> icon with <code>thumb_down_alt</code> in our default icon sprite.</p>
-    <h6>What to do</h6>
-    <ol>
-      <li>Search for any instances of <code>thumb_down_off_alt</code></li>
-      <li>Replace it with <code>thumb_down_alt</code></li>
-    </ol>
-  </div>
-  
-  <h4 class="usa-accordion__heading">
-    <button
-      class="usa-accordion__button"
-      aria-controls="m-a4"
-    >
-      If you have code older than USWDS 2.11.0
-    </button>
-  </h4>
-  <div id="m-a4" class="usa-accordion__content usa-prose">
-    <h5><span class="usa-tag bg-accent-warm-darker">Settings</span> Check five settings with changed defaults.</h5> 
-    <p>If you use any of these settings in your code, the output may change:</p>
-    <ul>
-      <li>
-        <strong>new:</strong> <code>$theme-alert-icon-size: 4</code><br>
-        <strong>old:</strong> <code>5</code>
-      </li>
-      <li>
-        <strong>new:</strong> <code>$theme-table-border-color: default</code><br>
-        <strong>old:</strong> <code>"ink"</code>
-      </li>
-      <li>
-        <strong>new:</strong> <code>$theme-table-header-text-color: default</code><br>
-        <strong>old:</strong> <code>"ink"</code>
-      </li>
-      <li>
-        <strong>new:</strong> <code>$theme-table-stripe-text-color: default</code><br>
-        <strong>old:</strong> <code>"ink"</code>
-      </li>
-      <li>
-        <strong>new:</strong> <code>$theme-table-text-color: default</code><br>
-        <strong>old:</strong> <code>"ink"</code>
-      </li>
-    </ul>
-    <h6>What to do</h6>
-    <ol>
-      <li>Check your settings to see if they are set to the old default.</li>
-      <li>If they use the old default, delete the setting from your settings file so it uses the system default.</li>
-    </ol>
-  </div>
-  
-  <h4 class="usa-accordion__heading">
-    <button
-      class="usa-accordion__button"
-      aria-controls="m-a5"
-    >
-      If you have code older than USWDS 2.10.1
-    </button>
-  </h4>
-  <div id="m-a5" class="usa-accordion__content usa-prose">
-    <p><strong><span class="usa-tag bg-accent-warm-darker">Settings</span> We updated some settings defaults:</strong></p>
-    <ul>
-      <li>
-        <strong>Updated: </strong>$theme-breadcrumb-background-color: default<br>
-        <strong>Was: </strong>white 
-      </li>
-      <li>
-        <strong>Updated: </strong>$theme-alert-icon-size: 5 <br>
-        <strong>Was: </strong>4
-      </li>
-    </ul>
-    <p><strong>What to do:</strong></p>
-    <ol>
-      <li>Search your codebase for any instances of <strong>the old theme</strong></li>
-      <li>Replace it with <strong>the new setting</strong></li>
-    </ol>
-    <p><strong><span class="usa-tag bg-accent-cool-darker">Markup</span> We updated usa-footer__logo-heading to use a p instead of an h3.</strong> We improved the accessibility of the footer by converting a non-semantic heading into paragraph text.</p>
-    <p><strong>What to do: </strong></p>
-    <ol>
-      <li>TK</li>
-      <li>TK</li>
-    </ol>
-  </div>
 </div>
+<!-- End 2.13.0 section -->
+
+<!-- Start 2.12.0 section -->
+<h4 class="usa-accordion__heading">
+  <button
+    class="usa-accordion__button"
+    aria-controls="m-a2"
+  >
+    If you have code older than USWDS 2.12.0
+  </button>
+</h4>
+<div id="m-a2" class="usa-accordion__content site-prose" markdown="1">
+
+##### <span class="usa-tag bg-accent-warm-darker">Settings</span> Update three deprecated settings.
+
+Each of the following settings is no longer set-able. If you use any of these settings, they may no longer reflect your intention. These are the deprecated settings and their defaults:
+
+- `$theme-input-tile-background-color-selected: "primary-lighter"`
+- `$theme-input-tile-border-color: "base-lighter"`
+- `$theme-input-tile-border-color-selected: "primary-lighter"`
+  
+###### What to do
+1. Check this list to see if you changed the default value.
+1. If you did change the default value, this change will no longer affect the input tile.
+1. Assure that the input tile still displays well: check your codebase for instances of `input--tile`.
+1. Check the affected part of your site if you get a match.
+
+##### <span class="usa-tag bg-accent-warm-darker">Settings</span> Check three settings with changed defaults.
+
+If you use any of these settings in your code, the output may change:
+
+- **new:** `$theme-color-success-dark: "green-cool-50v"`<br>
+  **old:** `"green-cool-50"`
+- **new:** `$theme-color-success-darker: "green-cool-60v"`<br>
+  **old:** `"green-cool-80"`
+
+###### What to do
+1. Check your settings to see if they are set to the old default.
+1. If they use the old default, delete the setting from your settings file so it uses the system default.
+</div>
+<!-- End 2.12.0 section -->
+
+<!-- Start 2.11.2 section -->
+<h4 class="usa-accordion__heading">
+  <button
+    class="usa-accordion__button"
+    aria-controls="m-a3"
+  >
+    If you have code older than USWDS 2.11.2
+  </button>
+</h4>
+<div id="m-a3" class="usa-accordion__content site-prose" markdown="1">
+
+##### <span class="usa-tag bg-accent-warm-darker">Settings</span> Replace the deprecated `$theme-site-max-width` variable.
+
+We deprecated the `$theme-site-max-width` variable. We're using `$theme-grid-container-max-width` instead.
+  
+###### What to do
+1. Replace instances of `$theme-site-max-width` with `$theme-grid-container-max-width`
+
+##### <span class="usa-tag bg-accent-cool-darker">Markup</span> Replace the `thumb_down_off_alt` icon with `thumb_down_alt` icon.
+
+We replaced the `thumb_down_off_alt` icon with `thumb_down_alt` in our default icon sprite.
+
+###### What to do
+1. Search for any instances of `thumb_down_off_alt`
+1. Replace it with `thumb_down_alt`
+</div>
+<!-- End 2.11.2 section --> 
+  
+<!-- Start 2.11.0 section -->
+<h4 class="usa-accordion__heading">
+  <button
+    class="usa-accordion__button"
+    aria-controls="m-a4"
+  >
+    If you have code older than USWDS 2.11.0
+  </button>
+</h4>
+<div id="m-a4" class="usa-accordion__content site-prose" markdown="1">
+
+##### <span class="usa-tag bg-accent-warm-darker">Settings</span> Check five settings with changed defaults.
+
+If you use any of these settings in your code, the output may change:
+  
+- **new:** `$theme-alert-icon-size: 4`<br>
+  **old:** `5`
+- **new:** `$theme-table-border-color: default`<br>
+  **old:** `"ink"`
+- **new:** `$theme-table-header-text-color: default`<br>
+  **old:** `"ink"`
+- **new:** `$theme-table-stripe-text-color: default`<br>
+  **old:** `"ink"`
+- **new:** `$theme-table-text-color: default`<br>
+  **old:** `"ink"`
+
+###### What to do
+1. Check your settings to see if they are set to the old default.
+2. If they use the old default, delete the setting from your settings file so it uses the system default.
+</div>
+<!-- End 2.11.0 section --> 
+  
+<!-- Start 2.10.1 section -->
+<h4 class="usa-accordion__heading">
+  <button
+    class="usa-accordion__button"
+    aria-controls="m-a5"
+  >
+    If you have code older than USWDS 2.10.1
+  </button>
+</h4>
+<div id="m-a5" class="usa-accordion__content site-prose" markdown="1">
+
+##### <span class="usa-tag bg-accent-warm-darker">Settings</span> We updated some settings defaults:
+
+- **Updated:** `$theme-breadcrumb-background-color: default`<br>
+  **Was:** white 
+- **Updated:** `$theme-alert-icon-size: 5`<br>
+  **Was:** 4
+
+###### What to do
+1. Search your codebase for any instances of **the old theme**
+2. Replace it with **the new setting**
+
+##### <span class="usa-tag bg-accent-cool-darker">Markup</span> We updated usa-footer__logo-heading to use a p instead of an h3. We improved the accessibility of the footer by converting a non-semantic heading into paragraph text.
+
+###### What to do
+1. TK
+</div>
+<!-- End 2.10.1 section --> 
+</div>
+<!-- End compiler accordion --> 
 
 ### 3. Install the USWDS 3.0 package
 
@@ -372,64 +366,78 @@ You'll need to update social media icons in the USWDS footer. We're now using ex
 {:.border-top-2px.border-base-lighter.padding-top-1}
 The location of the USWDS source files is different in USWDS 3.0. You'll need to update your compiler settings to compile your Sass from USWDS 3.0.
 
+<!--Start compiler accordion -->
 <div class="usa-accordion usa-accordion--bordered">
-  <!-- Use the accurate heading level to maintain the document outline -->
-  <h4 class="usa-accordion__heading">
-    <button
-      class="usa-accordion__button"
-      aria-controls="m-a6"
-    >
-      If you're using USWDS Gulp
-    </button>
-  </h4>
-  <div id="m-a6" class="usa-accordion__content usa-prose">
-    <ol>
-      <li>Search for a line like <strong>const USWDS = "node_modules/uswds/dist"</strong> in your Gulp setup. This indicates that you're using the Gulp setup we distributed as USWDS Gulp.</li>
-      <li>
-        Update the USWDS <strong>const</strong> to the updated uswds package location
-        <p><strong>Old</strong></p>
-          <code>const USWDS = "node_modules/uswds/dist";</code>
-        <p><strong>New</strong></p>
-          <code>const USWDS = "node_modules/@uswds/uswds";</code>
-          <br>
-      </li>
-      <li> 
-        Search for <strong>includePaths</strong> in your project's Gulp files. The paths in this list are where the Sass compiler looks for your source files. In USWDS 3.0
-        <p><strong>Old</strong></p>
-        <pre><code>.pipe(
-  sass({
-    includePaths: [
-      PROJECT_SASS_SRC,
-      `${USWDS}/scss`,
-      `${USWDS}/scss/packages`,
-    ],
-  })
-)</code></pre>
-        <p><strong>New</strong></p>
-        <pre><code>.pipe(
-  sass({
-    includePaths: [
-      PROJECT_SASS_SRC,
-      `${USWDS},
-      `${USWDS}/packages`,
-    ],
-  })
-)</code></pre>
-      </li>
-      <li>Recompile your Sass as usual. When it compiles, it is now using USWDS 3.0!</li>
-    </ol>
-  </div>
 
-  <h4 class="usa-accordion__heading">
-    <button
-      class="usa-accordion__button"
-      aria-controls="m-a7"
-    >
-      If you're using USWDS Compile
-    </button>
-  </h4>
-  <div id="m-a7" class="usa-accordion__content usa-prose"  markdown="1">
-```
+<!-- Start USWDS Gulp section -->
+<h4 class="usa-accordion__heading">
+  <button class="usa-accordion__button" aria-controls="m-a6">
+    If you're using USWDS Gulp
+  </button>
+</h4>
+<div id="m-a6" class="usa-accordion__content site-prose" markdown="1">
+
+1. Search for a line like `const USWDS = "node_modules/uswds/dist"` in your Gulp setup. This indicates that you're using the Gulp setup we distributed as USWDS Gulp.
+1. Update the USWDS `const` to the updated uswds package location
+
+    **Old code:**
+
+    {:.site-terminal}
+    ```js
+    const USWDS = "node_modules/uswds/dist";
+    ```
+
+    **New code:**
+
+    {:.site-terminal}
+    ```js
+    const USWDS = "node_modules/@uswds/uswds";
+    ```
+1. Search for `includePaths` in your project's Gulp files. The paths in this list are where the Sass compiler looks for your source files. In USWDS 3.0
+
+    **Old code:**
+
+    {:.site-terminal}
+    ```js
+    .pipe(
+      sass({
+        includePaths: [
+          PROJECT_SASS_SRC,
+          `${USWDS}/scss`,
+          `${USWDS}/scss/packages`,
+        ],
+      })
+    )
+    ```
+
+    **New code:**
+
+    {:.site-terminal}
+     ```js
+     .pipe(
+      sass({
+        includePaths: [
+          PROJECT_SASS_SRC,
+          `${USWDS},
+          `${USWDS}/packages`,
+        ],
+      })
+    )
+    ```
+1. Recompile your Sass as usual. When it compiles, it is now using USWDS 3.0!
+</div>
+<!-- End USWDS Gulp section --> 
+
+<!-- Start USWDS Compile section -->
+<h4 class="usa-accordion__heading">
+  <button class="usa-accordion__button" aria-controls="m-a7">
+    If you're using USWDS Compile
+  </button>
+</h4>
+<div id="m-a7" class="usa-accordion__content site-prose" markdown="1">
+
+{:.site-terminal}
+```js
 /* gulpfile.js */
 
 const uswds = require("@uswds/compile");
@@ -440,31 +448,32 @@ const uswds = require("@uswds/compile");
 
 uswds.settings.version = 3;
 ```
-  </div>
-  <h4 class="usa-accordion__heading">
-    <button
-      class="usa-accordion__button"
-      aria-controls="m-a8"
-    >
-      If you're using a custom Gulp workflow
-    </button>
-  </h4>
-  <div id="m-a8" class="usa-accordion__content usa-prose">
-    TK   
-  </div>
-
-  <h4 class="usa-accordion__heading">
-    <button
-      class="usa-accordion__button"
-      aria-controls="m-a9"
-    >
-      If you're using Webpack
-    </button>
-  </h4>
-  <div id="m-a9" class="usa-accordion__content usa-prose">
-    TK   
-  </div>
 </div>
+<!-- End USWDS Compile section -->  
+
+<!-- Start custom Gulp workflow section -->
+<h4 class="usa-accordion__heading">
+  <button class="usa-accordion__button" aria-controls="m-a8">
+    If you're using a custom Gulp workflow
+  </button>
+</h4>
+<div id="m-a8" class="usa-accordion__content site-prose" markdown="1">
+TK   
+</div>
+<!-- End custom Gulp workflow section --> 
+
+<!-- Start custom Gulp workflow section -->
+<h4 class="usa-accordion__heading">
+  <button class="usa-accordion__button" aria-controls="m-a9">
+    If you're using Webpack
+  </button>
+</h4>
+<div id="m-a9" class="usa-accordion__content site-prose" markdown="1">
+TK   
+</div>
+<!-- End custom Gulp workflow section --> 
+
+</div> <!--End compiler accordion -->
 
 ### 5. Update to Sass module syntax
 

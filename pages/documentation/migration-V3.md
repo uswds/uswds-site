@@ -345,7 +345,7 @@ If you use any of these settings in your code, the output may change:
 1. Search your codebase for any instances of **the old theme**
 2. Replace it with **the new setting**
 
-##### <span class="usa-tag bg-accent-cool-darker">Markup</span> We updated usa-footer__logo-heading to use a p instead of an h3. We improved the accessibility of the footer by converting a non-semantic heading into paragraph text.
+##### <span class="usa-tag bg-accent-cool-darker">Markup</span> We updated `usa-footer__logo-heading` to use a p instead of an h3. We improved the accessibility of the footer by converting a non-semantic heading into paragraph text.
 
 ###### What to do
 1. TK
@@ -358,8 +358,8 @@ If you use any of these settings in your code, the output may change:
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
 1. In a terminal window, navigate to your project root. 
-2. Install USWDS 3.0 with **npm install @uswds/uswds --save --save-exact**
-3. Uninstall USWDS 2 with **npm uninstall uswds**
+2. Install USWDS 3.0 with `npm install @uswds/uswds --save --save-exact`
+3. Uninstall USWDS 2 with `npm uninstall uswds`
 
 ### 4. Update your Sass compiler settings and recompile CSS
 
@@ -478,15 +478,15 @@ TK
 ### 5. Update to Sass module syntax
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
-USWDS 3.0 supports the deprecated Sass import syntax. You don't need to change to the new syntax in your project Sass to use USWDS 3.0. But once you update, we recommend updating to the new syntax as well.  You’ll need to both switch @import to @use, and then create @use project-specific settings.  In USWDS 3.0 with Sass modules, instead of having multiple theme files that contain every setting available to the design system, you only keep track of the settings you changed in a single file. 
+USWDS 3.0 supports the deprecated Sass import syntax. You don't need to change to the new syntax in your project Sass to use USWDS 3.0. But once you update, we recommend updating to the new syntax as well.  You’ll need to both switch `@import` to `@use`, and then create `@use` project-specific settings.  In USWDS 3.0 with Sass modules, instead of having multiple theme files that contain every setting available to the design system, you only keep track of the settings you changed in a single file. 
 
 We recommend creating a new file to keep track of these changed settings. These instructions will help you create that file, format it properly, and use it in your project. 
 
 You can complete these changes by taking the following steps: 
 
-1. Replace all instances of **@import** with **@forward**, using find/replace in your Sass file.
+1. Replace all instances of `@import` with `@forward`, using find/replace in your Sass file.
 2. Locate your existing project theme files. These are the _uswds-theme files that you found in [Step 1: Check your current USWDS code and settings versions](#1-check-your-current-uswds-code-and-settings-versions). (If you already have your project-specific settings file in a single file, you can skip ahead Step 4. If not, you'll need to collect your project-specific settings in a single file.)
-3. In the project theme file directory directory, create a new file called **_uswds-theme.scss**.
+3. In the project theme file directory directory, create a new file called `_uswds-theme.scss`.
 
 ### 6. Find which settings from your theme files you've customized.
 
@@ -501,9 +501,9 @@ Each of the files [below](#current-settings-as-of-uswds-2132) is the most curren
 
 Look for instances where your project has a different value than the default. Ignore cases where a setting exists in the current version but not in your version. This indicates a new setting that probably does not apply to your project. Instances where a setting exists in your version but not in the current version can likely be ignored. This usually indicates a deprecated setting that should not affect your project, but it can be worth checking to see if that variable appears anywhere else in your codebase!
 
-When you see a setting that appears different from the current default, this is probably one of your project's custom settings. Copy this setting and add it to your new **_uswds-theme.scss** file.
+When you see a setting that appears different from the current default, this is probably one of your project's custom settings. Copy this setting and add it to your new `_uswds-theme.scss` file.
 
-At the end of this process, your new **_uswds-theme.scss** file will look something like the following:
+At the end of this process, your new `_uswds-theme.scss` file will look something like the following:
 
 {:.site-terminal}
 ```scss
@@ -537,7 +537,7 @@ $theme-utility-breakpoints: (
 [_uswds-theme-typography.scss](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-typography.scss) → <br>
 [_uswds-theme-utilities.scss](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-utilities.scss) → <br>
 
-1. Once you have all your project-specific settings in a single file, we'll load these       customizations into the USWDS core engine. We do this with a special **@use** statement:
+1. Once you have all your project-specific settings in a single file, we'll load these       customizations into the USWDS core engine. We do this with a special `@use` statement:
   
     {:.site-terminal}
     ```scss{% raw %}
@@ -547,7 +547,7 @@ $theme-utility-breakpoints: (
     {% endraw %}
     ```
   
-    In the previous example, **{% raw %}{{ your settings }}{% endraw %}** would be a list of all the settings variables in your settings file.
+    In the previous example, `{% raw %}{{ your settings }}{% endraw %}` would be a list of all the settings variables in your settings file.
 
     So with an existing settings file like the following:
 
@@ -574,7 +574,7 @@ $theme-utility-breakpoints: (
     );
     ```
 
-    We'd update it to use **@use** with the following:
+    We'd update it to use `@use` with the following:
 
     {:.site-terminal}
     ```scss
@@ -601,9 +601,9 @@ $theme-utility-breakpoints: (
     );
     ```
 
-    Note that the new **@use** statement is a **list** of variables, so each line ends in a comma (,) instead of a semicolon (;).
+    Note that the new `@use` statement is a `list` of variables, so each line ends in a comma `,` instead of a semicolon `;`.
 
-2. Almost there! The last thing we have to do is make sure we use this new theme file in our project. If your project already was using a project-specific theme settings file, you're all set. If not, you'll need to open your project's Sass entry point, typically **styles.scss**. It usually looks something like this:
+2. Almost there! The last thing we have to do is make sure we use this new theme file in our project. If your project already was using a project-specific theme settings file, you're all set. If not, you'll need to open your project's Sass entry point, typically `styles.scss`. It usually looks something like this:
 
     {:.site-terminal}
     ```scss
@@ -632,7 +632,7 @@ $theme-utility-breakpoints: (
     ...
     ```
 
-    In USWDS 3.0, we won't use multiple theme files, just a single file with all the project-specific settings. So we can remove all the individual theme settings from our Sass entry point and replace them with a single **@use** statement, using the project-specific settings file, like so:
+    In USWDS 3.0, we won't use multiple theme files, just a single file with all the project-specific settings. So we can remove all the individual theme settings from our Sass entry point and replace them with a single `@use` statement, using the project-specific settings file, like so:
 
     {:.site-terminal}
     ```scss
@@ -665,9 +665,9 @@ This is relatively straightforward for USWDS 3.0 Sass: For any project styleshee
 
 `@use "uswds-core" as *;`
 
-In USWDS 3.0, **uswds-core** is the name of the package (or "module" in Sass terminology) that contains all the tokens, variables, mixins, functions, or placeholders used in USWDS Sass. If your project uses tokens, variables, mixins, functions, or placeholders defined outside of USWDS, you'll need to @use these as well at the top of the document. This includes Sass-specific functions. See [https://sass-lang.com/documentation/modules](https://sass-lang.com/documentation/modules) for more information, if your project uses any of Sass's built-in functions.
+In USWDS 3.0, `uswds-core` is the name of the package (or "module" in Sass terminology) that contains all the tokens, variables, mixins, functions, or placeholders used in USWDS Sass. If your project uses tokens, variables, mixins, functions, or placeholders defined outside of USWDS, you'll need to @use these as well at the top of the document. This includes Sass-specific functions. See [https://sass-lang.com/documentation/modules](https://sass-lang.com/documentation/modules) for more information, if your project uses any of Sass's built-in functions.
 
-Once each of your custom sass files include the **@use "uswds-core" as *;** line at the top, you should be done!
+Once each of your custom sass files include the `@use "uswds-core" as *;` line at the top, you should be done!
 
 Recompile your Sass and check for errors.
 
@@ -718,7 +718,7 @@ An example of using replacing the **uswds** package with individual component pa
 {:.border-top-2px.border-base-lighter.padding-top-1}
 The following packages are available to any USWDS project. Each package includes component styles related to the package name, and additional styles related to any component dependencies.
 
-For any package listed below, add a **@forward "[package]"** line to your Sass entry point. For instance, if you wanted to add the **usa-accordion** package, add the following line:
+For any package listed below, add a `@forward "[package]"` line to your Sass entry point. For instance, if you wanted to add the `usa-accordion` package, add the following line:
 
 `@forward "usa-accordion";`
 
@@ -732,7 +732,7 @@ The process of determining which packages your project needs is not automatic. M
 #### Brute-force: Search for component class names
 
 {:.border-top-1px.border-base-lighter.padding-top-1}
-A brute-force method to determine which packages your project uses is to search your codebase for use of a key class name associated with that component, like "usa-accordion" for accordions. All **usa-** prefixed packages use the same name as their CSS class. 
+A brute-force method to determine which packages your project uses is to search your codebase for use of a key class name associated with that component, like "usa-accordion" for accordions. All `usa-` prefixed packages use the same name as their CSS class. 
 
 If you find a hit for the class name in your codebase, include the relevant package in your Sass entry point. 
 
@@ -751,11 +751,11 @@ Each package is smart enough to include any dependent package it needs to displa
 #### Managing utility classes
 
 {:.border-top-1px.border-base-lighter.padding-top-1}
-Utility classes have their own naming conventions that are a bit less straightforward to identify. Look at the table below. If your codebase includes classes that start with one of the **class bases**, include its **utility module key** in the **$output-these-utilities setting**. 
+Utility classes have their own naming conventions that are a bit less straightforward to identify. Look at the table below. If your codebase includes classes that start with one of the **class bases**, include its **utility module key** in the `$output-these-utilities setting`. 
 
 Look for classes in your codebase for searching for a regular expression string like `[" ]flex-`.
 
-For instance, if you found **add-list-reset, font-, order-,** and **display-**, you might use the following setting: 
+For instance, if you found `add-list-reset`, `font-`, `order-`, and `display-`, you might use the following setting: 
 
 {:.site-terminal}
 ```scss
@@ -775,11 +775,11 @@ TK: Utility module key table
 #### Update to the sass-embedded compiler
 
 {:.border-top-1px.border-base-lighter.padding-top-1}
-The **sass-embedded** package compiles Sass faster than the **gulp-sass** or **gulp-dart-sass** compiler.
+The `sass-embedded` package compiles Sass faster than the `gulp-sass` or `gulp-dart-sass` compiler.
 
 In a gulp workflow, we recommend using `gulp-sass` and `sass-embedded` together for the simplest and fastest compiling.
 
-1. Install \`gulp-sass\` and \`sass-embedded\` in your project:
+1. Install `gulp-sass` and `sass-embedded` in your project:
     `npm install gulp-sass sass-embedded –s`
 
 2. Uninstall any other sass compiling packages, if they exist:
@@ -790,7 +790,7 @@ In a gulp workflow, we recommend using `gulp-sass` and `sass-embedded` together 
     npm uninstall gulp-dart-sass
     npm uninstall gulp-sass
     ```
-3. In your Sass gulp tasks file, replace your existing sass compiler package import with **gulp-sass** and **sass-embedded:**
+3. In your Sass gulp tasks file, replace your existing sass compiler package import with `gulp-sass` and `sass-embedded:`
     
    ##### Old code 
 
@@ -814,9 +814,9 @@ In a gulp workflow, we recommend using `gulp-sass` and `sass-embedded` together 
 #### Reduce utility responsive breakpoints
 
 {:.border-top-1px.border-base-lighter.padding-top-1}
-There are nine responsive breakpoints available to utilities and the layout grid. These are defined in the **$theme-utility-breakpoints setting**. If a utility breakpoint is set to **true**, any layout grid class and any utility with its responsive key set to true will output responsive classes. 
+There are nine responsive breakpoints available to utilities and the layout grid. These are defined in the `$theme-utility-breakpoints setting`. If a utility breakpoint is set to `true`, any layout grid class and any utility with its responsive key set to true will output responsive classes. 
 
-This can result in bulky CSS, and if your project doesn't use these breakpoints you can save a lot of space by setting these breakpoints to false. By default, **mobile-lg**, **tablet**, and **desktop** are set to true:
+This can result in bulky CSS, and if your project doesn't use these breakpoints you can save a lot of space by setting these breakpoints to false. By default, `mobile-lg`, `tablet`, and `desktop` are set to true:
 
 {:.site-terminal}
 ```scss
@@ -833,21 +833,21 @@ $theme-utility-breakpoints: (
 ),
 ```
 
-For each breakpoint set to true in your project, search for its usage in your codebase by searching for the **breakpoint name** + a colon (:). SO, to search for the **tablet-lg** breakpoint, search for desktop-lg:. If that breakpoint does not appear, you can set the value to **false**.
+For each breakpoint set to true in your project, search for its usage in your codebase by searching for the **breakpoint name** + a colon (:). SO, to search for the `tablet-lg` breakpoint, search for desktop-lg:. If that breakpoint does not appear, you can set the value to `false`.
 
 #### Using package source
 
 {:.border-top-1px.border-base-lighter.padding-top-1}
 Once you've optimized your project to use only the component packages you need, you can further optimize those packages. Each component package includes, by reference, code for any additional packages it depends on. You can improve performance by manually forwarding all your project component's dependencies, then pointing your Sass entry point directly at each package source, bypassing each package's dependency import.
 
-For example, according to the table in [Available packages, above](#available-packages), the **usa-banner** component includes the following packages as dependencies: **usa-icon**, **usa-layout-grid**, **usa-media-block**, and **uswds-fonts**. Then we'll look at these dependencies' dependencies:
+For example, according to the table in [Available packages, above](#available-packages), the `usa-banner` component includes the following packages as dependencies: `usa-icon`, `usa-layout-grid`, `usa-media-block`, and `uswds-fonts`. Then we'll look at these dependencies' dependencies:
 
-- **usa-icon** depends on **uswds-core**
-- **usa-layout-grid** depends on **uswds-core**
-- **usa-media-block** depends on **usa-layout-grid** and **uswds-fonts**
-- **uswds-fonts** depends on **uswds-core**
+- `usa-icon` depends on `uswds-core`
+- `usa-layout-grid` depends on `uswds-core`
+- `usa-media-block` depends on `usa-layout-grid` and `uswds-fonts`
+- `uswds-fonts` depends on `uswds-core`
 
-Instead of simply forwarding the **usa-banner** component, you can import the component and all related dependencies directly. Note: We've used **uswds-core** already when we forwarded our settings, so we won't forward it again:
+Instead of simply forwarding the `usa-banner` component, you can import the component and all related dependencies directly. Note: We've used `uswds-core` already when we forwarded our settings, so we won't forward it again:
 
 {:.site-terminal}
 ```scss

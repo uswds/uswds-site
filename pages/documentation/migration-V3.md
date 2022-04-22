@@ -656,7 +656,7 @@ $theme-utility-breakpoints: (
 
     Now your project is using its theme settings in the proper USWDS 3.0 format!
 
-### Use "uswds-core" for any custom USWDS Sass
+#### Use "uswds-core" for any custom USWDS Sass
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
 Sass Module syntax requires that files must note the source of any tokens, variables, mixins, functions, or placeholders used in that file. 

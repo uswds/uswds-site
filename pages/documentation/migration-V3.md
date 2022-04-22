@@ -395,7 +395,7 @@ The location of the USWDS source files is different in USWDS 3.0. You'll need to
           <br>
       </li>
       <li> 
-        Search for <strong>includePaths</strong> in your project's Gulp files. The paths in this list are where the Sass compiler looks for your source files. In USWDS 3.0
+        Search for <strong>includePaths</strong> in your project's Gulp files. The paths in this list are where the Sass compiler looks for your source files.
         <p><strong>Old</strong></p>
         <pre><code>.pipe(
   sass({

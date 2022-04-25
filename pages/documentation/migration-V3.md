@@ -362,7 +362,7 @@ If you use any of these settings in your code, the output may change:
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
 1. In a terminal window, navigate to your project root. 
-2. Install USWDS 3.0 with `npm install @uswds/uswds --save --save-exact`
+2. Install USWDS 3.0 with `npm install @uswds/uswds --save-exact`
 3. Uninstall USWDS 2 with `npm uninstall uswds`
 
 ### 4. Update your Sass compiler settings and recompile CSS

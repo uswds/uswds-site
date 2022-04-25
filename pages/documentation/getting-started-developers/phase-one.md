@@ -61,7 +61,7 @@ Install USWDS from the command line, and save it as a dependency in your package
 
 {:.site-terminal}
 ```bash
-npm install uswds --save
+npm install @uswds/uswds --save
 
 # [a lot of notices]
 # + uswds@{{ site.uswds_version }} [or another version number]
@@ -77,7 +77,7 @@ npm will show some notifications, install USWDS, and display the version number 
 }
 ```
 
-Now, the USWDS source code is in your project, in `./node_modules/uswds`.
+Now, the USWDS source code is in your project, in `./node_modules/@uswds/uswds`.
 
 {: .site-note }
 **Don't modify the source code**

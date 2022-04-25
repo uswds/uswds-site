@@ -469,7 +469,9 @@ The location of the USWDS source files is different in USWDS 3.0. You'll need to
   </button>
 </h4>
 <div id="m-a8" class="usa-accordion__content site-prose" markdown="1">
-TK   
+1. Search for references to USWDS in the `includePaths` and `src()` found in your project’s Gulp files. These paths tell the Sass compiler where to look for USWDS source files.
+2. Update your `includePaths` and `src()` references to point to the correct `node_modules/@uswds/uswds` location. Some of the file directories have moved in USWDS 3.0, so confirm that you are accounting for these new locations in your paths. 
+3. Recompile your Sass as usual and check that your files compiled as expected. When it compiles successfully, it is now using USWDS 3.0!
 </div>
 <!-- End custom Gulp workflow section --> 
 

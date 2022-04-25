@@ -2,9 +2,8 @@
   "defaults": {
     "userAgent": "pa11y",
     "timeout": 120000,
-    "concurrency": 1,
+    "concurrency": 2,
     "standard": "WCAG2AA",
-    "runners": ["axe"],
-    "useIncognitoBrowserContext": false
+    "runners": ["axe"]
   }
 }

@@ -382,53 +382,40 @@ The location of the USWDS source files is different in USWDS 3.0. You'll need to
 </h4>
 <div id="m-a6" class="usa-accordion__content site-prose" markdown="1">
 
-1. Search for a line like `const USWDS = "node_modules/uswds/dist"` in your Gulp setup. This indicates that you're using the Gulp setup we distributed as USWDS Gulp.
-1. Update the USWDS `const` to the updated uswds package location
+1. Search for a line like `const uswds = require("./node_modules/uswds-gulp/config/uswds");` or `const uswds = "node_modules/uswds/dist"` in your Gulp setup. This indicates that you're using the Gulp setup we distributed as USWDS Gulp.
+1. Update the USWDS `const` elements to the updated USWDS package location:
 
-    **Old code:**
+{% highlight diff %}
+- const pkg = require("./node_modules/uswds/package.json");
++ const pkg = require("./node_modules/@uswds/uswds/package.json"); 
+{% endhighlight %}
 
-    {:.site-terminal}
-    ```js
-    const USWDS = "node_modules/uswds/dist";
-    ```
+1. Search for references to ${uswds} in the includePaths and gulp.src() found in your project’s Gulp files. These paths tell the Sass compiler where to look for USWDS source files.
 
-    **New code:**
+    Some of our file directories have moved in USWDS 3.0, and it is necessary to point Gulp to the correct location inside node_modules/@uswds/uswds. Below are snippets from the standard USWDS Gulp references and their necessary updates:
 
-    {:.site-terminal}
-    ```js
-    const USWDS = "node_modules/@uswds/uswds";
-    ```
-1. Search for `includePaths` in your project's Gulp files. The paths in this list are where the Sass compiler looks for your source files. In USWDS 3.0
+{% highlight diff %}
+... 
+- gulp.src(`${uswds}/scss/theme/**/**`) 
++ gulp.src(`${uswds}/dist/theme/**/**`) 
+... 
+- gulp.src(`${uswds}/fonts/**/**`) 
++ gulp.src(`${uswds}/dist/fonts/**/**`) 
+... 
+- gulp.src(`${uswds}/img/**/**`) 
++ gulp.src(`${uswds}/dist/img/**/**`) 
+... 
+- gulp.src(`${uswds}/js/**/**`) 
++ gulp.src(`${uswds}/dist/js/**/**`) 
+... 
+includePaths: [ PROJECT_SASS_SRC, 
+- `${uswds}/scss`, 
++ `${uswds}/dist/scss`, 
+- `${uswds}/scss/packages`, 
++ `${uswds}/packages`, 
+],
+{% endhighlight %}
 
-    **Old code:**
-
-    {:.site-terminal}
-    ```js
-    .pipe(
-      sass({
-        includePaths: [
-          PROJECT_SASS_SRC,
-          `${USWDS}/scss`,
-          `${USWDS}/scss/packages`,
-        ],
-      })
-    )
-    ```
-
-    **New code:**
-
-    {:.site-terminal}
-     ```js
-     .pipe(
-      sass({
-        includePaths: [
-          PROJECT_SASS_SRC,
-          `${USWDS},
-          `${USWDS}/packages`,
-        ],
-      })
-    )
-    ```
 1. Recompile your Sass as usual. When it compiles, it is now using USWDS 3.0!
 </div>
 <!-- End USWDS Gulp section --> 

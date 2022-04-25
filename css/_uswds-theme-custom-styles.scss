@@ -3824,3 +3824,10 @@ p + .pagination-behaviors--examples {
   flex-flow: row wrap;
   justify-content: space-around;
 }
+
+.language-diff {
+  .err { color: color("gray-60"); }
+  .p { color: color("ink"); }
+  .gi { color: color("blue-warm-60v"); }
+  .gd { color: color("red-60v"); }
+}

@@ -534,12 +534,12 @@ $theme-utility-breakpoints: (
 
 #### Current settings (as of USWDS 2.13.2)
 
-[_uswds-theme-color.scss](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-color.scss)<br>
-[_uswds-theme-components.scss](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-components.scss)<br>
-[_uswds-theme-general.scss](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-general.scss)<br>
-[_uswds-theme-spacing.scss](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-spacing.scss)<br>
-[_uswds-theme-typography.scss](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-typography.scss)<br>
-[_uswds-theme-utilities.scss](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-utilities.scss)<br>
+[Color settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-color.scss)<br>
+[Component settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-components.scss)<br>
+[General settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-general.scss)<br>
+[Spacing settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-spacing.scss)<br>
+[Typography settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-typography.scss)<br>
+[Utilities settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-utilities.scss)<br>
 
 1. Once you have all your project-specific settings in a single file, we'll load these       customizations into the USWDS core engine. We do this with a special `@use` statement:
   

@@ -262,8 +262,8 @@ If you use any of these settings in your code, the output may change:
   **old:** `"green-cool-80"`
 
 ###### What to do
-1. Check your settings to see if they are set to the old default.
-1. If they use the old default, delete the setting from your settings file so it uses the system default.
+1. Check your settings to see if they are set to the **old** default.
+1. If they use the **old** default, delete the setting from your settings file so it uses the system default.
 </div>
 <!-- End 2.12.0 section -->
 
@@ -322,8 +322,8 @@ If you use any of these settings in your code, the output may change:
   **old:** `"ink"`
 
 ###### What to do
-1. Check your settings to see if they are set to the old default.
-2. If they use the old default, delete the setting from your settings file so it uses the system default.
+1. Check your settings to see if they are set to the **old** default.
+2. If they use the **old** default, delete the setting from your settings file so it uses the system default.
 </div>
 <!-- End 2.11.0 section --> 
   
@@ -338,16 +338,17 @@ If you use any of these settings in your code, the output may change:
 </h4>
 <div id="m-a5" class="usa-accordion__content site-prose" markdown="1">
 
-##### <span class="usa-tag bg-accent-warm-darker">Settings</span> We updated some settings defaults:
+##### <span class="usa-tag bg-accent-warm-darker">Settings</span> Check two settings with changed defaults.
+If you use any of these settings in your code, the output may change:
 
-- **Updated:** `$theme-breadcrumb-background-color: default`<br>
-  **Was:** white 
-- **Updated:** `$theme-alert-icon-size: 5`<br>
-  **Was:** 4
+- **new:** `$theme-breadcrumb-background-color: default`<br>
+  **old:** white 
+- **new:** `$theme-alert-icon-size: 5`<br>
+  **old:** 4
 
 ###### What to do
-1. Search your codebase for any instances of **the old theme**
-2. Replace it with **the new setting**
+1. Check your settings to see if they are set to the **old** default.
+2. If they use the **old** default, delete the setting from your settings file so it uses the system default.
 
 ##### <span class="usa-tag bg-accent-cool-darker">Markup</span> We updated `usa-footer__logo-heading` to use a p instead of an h3. We improved the accessibility of the footer by converting a non-semantic heading into paragraph text.
 
@@ -440,18 +441,24 @@ The location of the USWDS source files is different in USWDS 3.0. You'll need to
 </h4>
 <div id="m-a7" class="usa-accordion__content site-prose" markdown="1">
 
-{:.site-terminal}
-```js
-/* gulpfile.js */
+1. Search for `const uswds = require("@uswds/compile");` in your Gulp setup. This indicates that you're using the Gulp setup we distributed as USWDS Compile.
+1. Update your `gulpfile.js` to file to include `uswds.settings.version = 3;`. This setting manages the default USWDS source paths and will point Gulp to the new USWDS 3.0 package locations.
 
-const uswds = require("@uswds/compile");
+    {:.site-terminal}
+    ```js
+    /* gulpfile.js */
 
-/**
- * USWDS version
- */
+    const uswds = require("@uswds/compile");
 
-uswds.settings.version = 3;
-```
+    /**
+     * USWDS version
+     */
+
+    uswds.settings.version = 3;
+    ```
+
+1. Recompile your Sass as usual and check that your files compiled as expected. When it compiles successfully, it is now using USWDS 3.0!
+
 </div>
 <!-- End USWDS Compile section -->  
 
@@ -541,7 +548,7 @@ $theme-utility-breakpoints: (
 [Typography settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-typography.scss)<br>
 [Utilities settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-utilities.scss)<br>
 
-1. Once you have all your project-specific settings in a single file, we'll load these       customizations into the USWDS core engine. We do this with a special `@use` statement:
+1. Once you have all your project-specific settings in a single file, we'll load these customizations into the USWDS core engine. We do this with a special `@use` statement:
   
     {:.site-terminal}
     ```scss{% raw %}

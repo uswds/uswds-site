@@ -124,6 +124,7 @@ You'll need to update any instances of the small search button on your site. We'
 1. Check your codebase for instances of `<span class="usa-sr-only">Search</span>`.
 1. Update the markup from the old version to the new version if you use it.
 
+{:#old-code-2-13-0}
 ###### Old code
 
 {:.site-terminal}
@@ -133,6 +134,7 @@ You'll need to update any instances of the small search button on your site. We'
 <button>
 ```
 
+{:#new-code-2-13-0}
 ###### New code
 
 {:.site-terminal}
@@ -154,6 +156,7 @@ You'll need to update social media icons in the USWDS footer. We're now using ex
 1. Check your codebase for instances of `usa-social-link.`
 1. If you use it, Update the markup from the old version to the new version.
 
+{:#old-code-2-13-0-social}
 ###### Old code
 
 {:.site-terminal}
@@ -180,6 +183,7 @@ You'll need to update social media icons in the USWDS footer. We're now using ex
 </a>
 ```
 
+{:#new-code-2-13-0-social}
 ###### New code
 
 {:.site-terminal}
@@ -579,24 +583,24 @@ $theme-utility-breakpoints: (
     {:.site-terminal}
     ```scss
     @use "uswds-core" with (
-    $theme-image-path: "../uswds/img",
-    $theme-font-path: "../uswds/fonts",
-    $theme-show-compile-warnings: false,
-    $theme-show-notifications: false,
-    $theme-focus-color: "blue-50v",
-    $theme-global-paragraph-styles: true,
-    $theme-global-link-styles: true,
-    $theme-global-content-styles: true,
-    $theme-utility-breakpoints: (
-      "card": false,
-      "card-lg": true,
-      "mobile": true,
-      "mobile-lg": true,
-      "tablet": true,
-      "tablet-lg": true,
-      "desktop": true,
-      "desktop-lg": true,
-      "widescreen": true
+      $theme-image-path: "../uswds/img",
+      $theme-font-path: "../uswds/fonts",
+      $theme-show-compile-warnings: false,
+      $theme-show-notifications: false,
+      $theme-focus-color: "blue-50v",
+      $theme-global-paragraph-styles: true,
+      $theme-global-link-styles: true,
+      $theme-global-content-styles: true,
+      $theme-utility-breakpoints: (
+        "card": false,
+        "card-lg": true,
+        "mobile": true,
+        "mobile-lg": true,
+        "tablet": true,
+        "tablet-lg": true,
+        "desktop": true,
+        "desktop-lg": true,
+        "widescreen": true
       ),
     );
     ```
@@ -691,14 +695,16 @@ This adds styles to your project. But the **uswds** package is a bundle of many 
 
 An example of using replacing the **uswds** package with individual component packages in your Sass entry point would look something like this:
 
-###### Old code
+{:#old-code-packages}
+#### Old code
 
 {:.site-terminal}
 ```scss
 @forward "uswds";
 ```
 
-###### New Code
+{:#new-code-packages}
+#### New Code
 
 {:.site-terminal}
 ```scss
@@ -760,10 +766,10 @@ For instance, if you found `add-list-reset`, `font-`, `order-`, and `display-`, 
 {:.site-terminal}
 ```scss
 $output-these-utilities: (
-"add-list-reset",
-"display",
-"font",
-"order"
+  "add-list-reset",
+  "display",
+  "font",
+  "order"
 ),
 ```
 
@@ -792,13 +798,15 @@ In a gulp workflow, we recommend using `gulp-sass` and `sass-embedded` together 
     ```
 3. In your Sass gulp tasks file, replace your existing sass compiler package import with `gulp-sass` and `sass-embedded:`
     
-   ##### Old code 
+    {:#old-code-embedded}
+    ##### Old code 
 
     {:.site-terminal}
     ```scss
     const sass = require("gulp-dart-scss");
     ```
-   ##### New code
+    {:#new-code-embedded}
+    ##### New code
 
     {:.site-terminal}
     ```scss

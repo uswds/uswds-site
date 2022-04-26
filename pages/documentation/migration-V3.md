@@ -46,24 +46,14 @@ For the purposes of this guide, make markup changes for all entries that match y
 <!-- add links -->
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
-- [* * * * * ==============================](#-----)
-- [========================================](#)
-- [========================================](#-1)
-      - [Use "uswds-core" for any custom USWDS Sass](#use-uswds-core-for-any-custom-uswds-sass)
-    - [7. Optimize your installation with component packages](#7-optimize-your-installation-with-component-packages)
-    - [Using packages](#using-packages)
-      - [Old code](#old-code-2)
-      - [New Code](#new-code-2)
-      - [Available packages](#available-packages)
-    - [Determine which packages your project needs](#determine-which-packages-your-project-needs)
-      - [Brute-force: Search for component class names](#brute-force-search-for-component-class-names)
-      - [Managing utility classes](#managing-utility-classes)
-    - [Further performance improvements](#further-performance-improvements)
-      - [Update to the sass-embedded compiler](#update-to-the-sass-embedded-compiler)
-      - [Reduce utility responsive breakpoints](#reduce-utility-responsive-breakpoints)
-      - [Using package source](#using-package-source)
+1. [Check your current USWDS code and settings versions](#1-check-your-current-uswds-code-and-settings-versions)
+1. [Install the USWDS 3.0 package](#2-install-the-uswds-30-package)
+1. [Update your Sass compiler settings and recompile CSS](#3-update-your-sass-compiler-settings-and-recompile-css)
+1. [Integrate any recent USWDS changes](#4-integrate-any-recent-uswds-changes)
+1. <span class="usa-tag bg-primary">Recommended</span> [Update to Sass module syntax](#5-update-to-sass-module-syntax)
+1. <span class="usa-tag bg-primary">Recommended</span> [Find which settings from your theme files you’ve customized](#6-find-which-settings-from-your-theme-files-youve-customized)
+1. <span class="usa-tag bg-secondary">Optional</span> [Optimize your installation with component packages](#7-optimize-your-installation-with-component-packages)
 
-   
 ### 1. Check your current USWDS code and settings versions
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
@@ -498,11 +488,16 @@ While USWDS 3.0 supports the deprecated `@import` Sass syntax, we recommend upgr
 
 Using Sass module syntax allows you to declare theme settings in a clearer, simpler way. Instead of managing multiple lengthy settings files that declare every system setting, you can now use Sass module syntax to declare only the settings you wish to customize, and do it all in a single file.
 
-These instructions will help you create a new `_uswds-theme` file, format it properly, and use it in your project. 
+These instructions will help you first update your `@import` references, then will show you how to create a new `_uswds-theme` file, format it properly, and use it in your project.  
 
+1. **Replace all instances of @import with @forward in your Sass entry point.** Update all of the `@import` references in your Sass entry point to `@forward`. 
+  ```diff
+  - @import "banner";
+  + @forward "banner";
+  ```
 1. **Locate your existing project theme files.** These are the `_uswds-theme` files that you found in [Step 1: Check your current USWDS code and settings versions](#1-check-your-current-uswds-code-and-settings-versions). 
-2. **Create a new base theme file.** If your project has multiple `_uswds-theme` files, create a new file in project theme file directory called `_uswds-theme.scss`. Moving forward, this will act as our only theme settings file. 
-3. **Find which settings from your theme files you've customized.** We recommend running a series of diffs against the default theme files. Comparing your theme files to the default theme should reveal which of these settings you've modified. 
+2. **Create a new project-specific theme settings file.** If your project already has a single project-specific theme settings file, you’re all set. If not, create a new file in your project theme file directory called `_uswds-theme.scss`. 
+3. **Find which theme settings you've customized.** Comparing your theme files to the default theme should reveal which of these settings you've modified. We recommend accomplishing this with a series of diffs against the default theme files. 
    
    The bad thing about this process is that it can be tedious. The good thing is that you only have to do it once, and then you'll have a small, manageable project theme file that can be your baseline moving forward. And you'll never again have to worry about overwriting your settings files when you update to a new version of the design system.
 
@@ -544,7 +539,6 @@ These instructions will help you create a new `_uswds-theme` file, format it pro
     "widescreen": true
    ); 
    ```
-
 4. **Load these customizations into USWDS core.** Once you have all your project-specific settings in a single file, we'll load these customizations into the USWDS core package. We do this with a special `@use ... with` statement:
   
     ```scss{% raw %}
@@ -605,62 +599,67 @@ These instructions will help you create a new `_uswds-theme` file, format it pro
       ),
     );
     ```
-
-    _Note that the new `@use` statement is a `list` of variables, so each line ends in a comma `,` instead of a semicolon `;`._
-
+    Note that the new `@use` statement is a list of variables, so each line ends in a comma `,` instead of a semicolon `;`.
 5. **Use the new theme file in your project** If your project already was using a project-specific theme settings file, you're all set. If not, you'll need to open your project's Sass entry point, typically `styles.scss`. It usually looks something like this:
    
-  {% highlight diff %}
-  /*
-  * * * * * ==============================
-  * * * * * ==============================
-  * * * * * ==============================
-  * * * * * ==============================
-  ========================================
-  ========================================
-  ========================================
-  */
+    ```scss
+    /*
+    * * * * * ==============================
+    * * * * * ==============================
+    * * * * * ==============================
+    * * * * * ==============================
+    ========================================
+    ========================================
+    ========================================
+    */
+    // -------------------------------------
+    // Import individual theme settings
+    @forward "uswds-theme-general";
+    @forward "uswds-theme-typography";
+    @forward "uswds-theme-spacing";
+    @forward "uswds-theme-color";
+    @forward "uswds-theme-utilities";
+    // components import needs to be last
+    @forward "uswds-theme-components";
+    ...
+    ```
 
-  // -------------------------------------
-  // Import individual theme settings
+    We can remove all the individual theme settings from our Sass entry point and replace them with a single `@forward` statement, using the project-specific settings file that we just created, like so:
 
-  - @forward "uswds-theme-general";
-  - @forward "uswds-theme-typography";
-  - @forward "uswds-theme-spacing";
-  - @forward "uswds-theme-color";
-  - @forward "uswds-theme-utilities";
-  + @forward "uswds-theme"; // or whatever your theme file is named
+    ```scss
+    /*
+    * * * * * ==============================
+    * * * * * ==============================
+    * * * * * ==============================
+    * * * * * ==============================
+    ========================================
+    ========================================
+    ========================================
+    */
+    // -------------------------------------
+    // Import individual theme settings
+    @forward "uswds-theme"; // or whatever your theme file is named
+    ...
+    ```
 
-  // components import needs to be last
-  @forward "uswds-theme-components";
-
-  ...
-  {% endhighlight %}
-
-
-1. **Replace all instances of `@import` with `@forward`** in your Sass entry point by using find and replace.
-  ```diff
-  - @import "banner";
-  + @forward "banner";
-  ```
 Now your project is using its theme settings in the proper USWDS 3.0 format!
 
 #### Use "uswds-core" for any custom USWDS Sass
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
-Sass Module syntax requires that files must note the source of any tokens, variables, mixins, functions, or placeholders used in that file. 
+Unlike `@import`, which makes Sass members (tokens, variables, mixins, functions, or placeholders) available globally, `@use` only reveals Sass members to the stylesheet that loads them. 
 
-This is relatively straightforward for USWDS 3.0 Sass: For any project stylesheet that uses USWDS tokens, variables, mixins, functions, or placeholders (that's probably most, if not all, of them!), add the following line at the top of the file:
+Accommodating this is relatively straightforward for USWDS 3.0 Sass: For any project stylesheet that uses USWDS members (that's probably most, if not all, of them!), add the following line at the top of the file:
 
 `@use "uswds-core" as *;`
 
-In USWDS 3.0, `uswds-core` is the name of the package (or "module" in Sass terminology) that contains all the tokens, variables, mixins, functions, or placeholders used in USWDS Sass. If your project uses tokens, variables, mixins, functions, or placeholders defined outside of USWDS, you'll need to @use these as well at the top of the document. This includes Sass-specific functions. See [https://sass-lang.com/documentation/modules](https://sass-lang.com/documentation/modules) for more information, if your project uses any of Sass's built-in functions.
+In USWDS 3.0, `uswds-core` is the name of the package (or "module" in Sass terminology) that contains all the members used in USWDS Sass. If your project uses members defined outside of USWDS, you'll need to include these as well via `@use` at the top of the document. This includes Sass-specific functions. See [https://sass-lang.com/documentation/modules](https://sass-lang.com/documentation/modules) for more information, if your project uses any of Sass's built-in functions.
 
 Once each of your custom sass files include the `@use "uswds-core" as *;` line at the top, you should be done!
 
 Recompile your Sass and check for errors.
 
-### 7. Optimize your installation with component packages
+### 6. Optimize your installation with component packages
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
 By default, a USWDS installation includes every component available to the design system. But most projects don't use all these components. USWDS 3.0 allows teams to use only the components you need for your project, through the idea of component packages.

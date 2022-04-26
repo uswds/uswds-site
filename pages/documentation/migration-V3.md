@@ -7,8 +7,8 @@ category: How to use USWDS
 subnav:
 - text: Why migrate to USWDS 3.0?
   href: '#why-migrate-to-uswds-30'
-- text: How to use this guide
-  href: '#how-to-use-this-guide'
+- text: USWDS 3.0 package overview
+  href: '#uswds-30-package-overview'
 - text: Migration overview
   href: '#migration-overview'
 - text: 1. Check your current USWDS code and settings versions
@@ -21,10 +21,8 @@ subnav:
   href: '#4-integrate-any-recent-uswds-changes'
 - text: 5. Update to Sass module syntax
   href: '#5-update-to-sass-module-syntax'
-- text: 6. Find which settings from your theme files you’ve customized.
-  href: '#6-find-which-settings-from-your-theme-files-youve-customized'
-- text: 7. Optimize your installation with component packages
-  href: '#7-optimize-your-installation-with-component-packages'
+- text: 6. Optimize your installation with component packages
+  href: '#6-optimize-your-installation-with-component-packages'
 ---
 
 ## Why migrate to USWDS 3.0?
@@ -36,23 +34,71 @@ subnav:
 
 **Stay up-to-date with minimal hassle.** We want teams to benefit from the most current version of USWDS. Many projects should be able to migrate from USWDS 2 to USWDS 3.0 in about an hour or less. This new version makes no markup or style changes from USWDS 2.13.3. If you already use USWDS 2.13.0 or later, you should be able to update to USWDS 3.0 in a matter of minutes. Additionally, the under-the-hood changes we're introducing in USWDS 3.0 will make it easier to stay up-to-date with USWDS over time. An incremental update now will make subsequent updates simpler. 
 
-## How to use this guide
+[Learn more about what's new in USWDS 3.0]({{ site.baseurl }}/components/packages) →
+
+## USWDS 3.0 package overview
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
-For the purposes of this guide, make markup changes for all entries that match your code version situation and make settings changes for all entries that match your settings version situation. For example, if your code is USWDS 2.12.2 and your settings are USWDS 2.11.0, check your markup against the **Changes in 2.13.0** section only, and check your settings against the **Changes in 2.13.0** and **Changes in 2.12.0** sections.
+USWDS 3.0 has a component-centered architecture. The source code is grouped into packages which include the styles, javascripts, tests, and templates specific to a component. As we go through the migration process, many of the changes we'll apply point your project at these new locations.
 
-## Migration Overview
+Here's an overview of the new `@uswds/uswds` package: 
 
+```
+├── @uswds/
+│   └── uswds/
+│       ├── dist/
+│       │   ├── css/
+│       │   ├── fonts/
+│       │   ├── img/
+│       │   ├── js/
+│       │   ├── scss/
+│       │   └── theme/
+│       └── packages/
+│           ├── usa-component/
+│           ├── usa-component/
+│           ├── usa-component/
+│           ├── uswds-bundle/
+│           ├── uswds-bundle/
+│           ...
+```
+
+Most of the source code now lives in `/@uswds/uswds/packages` but some compiled assets and some backward-compatible helper files still live in `/dist`.
+
+An individual package looks like this:
+
+```
+├── packages/
+│   ...
+│   ├── usa-accordion/
+│   │   ├── src/
+│   │   │   ├── content/
+│   │   │   ├── styles/
+│   │   │   │   ├── _index.scss
+│   │   │   │   └── accordion.scss
+│   │   │   ├── test/
+│   │   │   │   ├── accordion.spec.js
+│   │   │   │   └── template.html
+│   │   │   ├── index.js
+│   │   │   ├── usa-accordion.stories.js
+│   │   │   └── usa-accordion.twig
+│   │   └── _index.scss_/
+```
+
+[Learn more about USWDS packages]({{ site.baseurl }}/components/packages) →
+
+
+## Migration overview
+
+{:.border-top-2px.border-base-lighter.padding-top-1}
+There are four necessary steps migrating to USWDS 3.0. In addition to the required steps, we also recommend updating your codebase to the Sass module system (Step 5) and optimizing your installation to improve CSS size and compile time (Step 6).
 <!-- add links -->
 
-{:.border-top-2px.border-base-lighter.padding-top-1}
 1. [Check your current USWDS code and settings versions](#1-check-your-current-uswds-code-and-settings-versions)
 1. [Install the USWDS 3.0 package](#2-install-the-uswds-30-package)
 1. [Update your Sass compiler settings and recompile CSS](#3-update-your-sass-compiler-settings-and-recompile-css)
 1. [Integrate any recent USWDS changes](#4-integrate-any-recent-uswds-changes)
 1. <span class="usa-tag bg-primary">Recommended</span> [Update to Sass module syntax](#5-update-to-sass-module-syntax)
-1. <span class="usa-tag bg-primary">Recommended</span> [Find which settings from your theme files you’ve customized](#6-find-which-settings-from-your-theme-files-youve-customized)
-1. <span class="usa-tag bg-secondary">Optional</span> [Optimize your installation with component packages](#7-optimize-your-installation-with-component-packages)
+1. <span class="usa-tag bg-secondary">Optional</span> [Optimize your installation with component packages](#6-optimize-your-installation-with-component-packages)
 
 ### 1. Check your current USWDS code and settings versions
 
@@ -61,7 +107,7 @@ USWDS 3.0 uses the same styles, markup, and settings as USWDS 2.13.3. This means
 
 So, before migrating, check the versions of both your existing USWDS code and its settings (since code and settings may be different).
 
-Check your project's current `package.json` file and your project's `_uswds-theme` files. Your `package.json` file will display the version of USWDS in a line like `"uswds": "^2.12.2"`. Your theme files will have a version number at the top, under the image of the American flag. Your code and your theme files may have different versions. 
+Check your project's current `package.json` file and your project's `_uswds-theme` files. Your `package.json` file will display the version of USWDS in a line like `"uswds": "^2.12.2"`. Your theme files will have a version number at the top, under the image of the American flag. Note these versions so we can make the proper updates in [Step 4: Integrate any recent USWDS changes](#4-integrate-any-recent-uswds-changes), below.
 
 {:.site-terminal}
 ```json
@@ -109,9 +155,9 @@ Once you've noted the version of USWDS you're currently using, you can update to
 ### 3. Update your Sass compiler settings and recompile CSS
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
-USWDS 3.0 requires the use of [Load Paths](https://sass-lang.com/documentation/at-rules/use#load-paths) to compile properly. USWDS 3.0 load paths must include a path to the `packages` directory of the `@uswds/uswds` package, typically by setting an `IncludePaths` setting to something like `./node_modules/@uswds/uswds/packages`.
+USWDS 3.0 requires the use of [Load Paths](https://sass-lang.com/documentation/at-rules/use#load-paths) to compile properly. USWDS 3.0 load paths must include a path to the `@uswds/uswds/packages` directory, typically by updating an `IncludePaths` setting to include `node_modules/@uswds/uswds/packages`.
 
-Add this load path to your compiler settings, or update any old paths if your compiler already has them. We've included guidance for a few common compiler setups.
+Add this load path to your compiler settings, or update any old paths if your compiler already includes them. We have guidance for a few common compiler setups.
 
 <!--Start compiler accordion -->
 <div class="usa-accordion usa-accordion--bordered">
@@ -129,27 +175,33 @@ Add this load path to your compiler settings, or update any old paths if your co
       {% highlight diff -%}
 - const pkg = require("./node_modules/uswds/package.json");
 + const pkg = require("./node_modules/@uswds/uswds/package.json");
+...
+- const uswds = require("./node_modules/uswds/package.json");
++ const uswds = "node_modules/@uswds/uswds";
+or
+- const USWDS = "node_modules/uswds/dist";
++ const USWDS = "node_modules/@uswds/uswds";
       {%- endhighlight %}
     </li>
     <li><p>Search for references to <code>${uswds}</code> in the <code>includePaths</code> and <code>gulp.src()</code> found in your project’s Gulp files. These paths tell the Sass compiler where to look for USWDS source files.</p>
-      <p>Some of our file directories have moved in USWDS 3.0, and it is necessary to point Gulp to the correct location inside <code>node_modules/@uswds/uswds</code>. Below are snippets from the standard USWDS Gulp references and their necessary updates:</p>
+      <p>Some of our file directories have moved in USWDS 3.0, and it is necessary to point Gulp to the correct location inside <code>node_modules/@uswds/uswds</code>. Below are snippets from the standard USWDS Gulp references and their necessary updates. If your code uses <code>USWDS</code> instead of <code>uswds</code>, just keep the case you have.</p>
       {% highlight diff -%}
-... 
-- gulp.src(`${uswds}/scss/theme/**/**`) 
-+ gulp.src(`${uswds}/dist/theme/**/**`) 
-... 
-- gulp.src(`${uswds}/fonts/**/**`) 
+- gulp.src(`${uswds}/scss/theme/**/**`)
++ gulp.src(`${uswds}/dist/theme/**/**`)
+...
+- gulp.src(`${uswds}/fonts/**/**`)
 + gulp.src(`${uswds}/dist/fonts/**/**`) 
 ... 
-- gulp.src(`${uswds}/img/**/**`) 
-+ gulp.src(`${uswds}/dist/img/**/**`) 
-... 
+- gulp.src(`${uswds}/img/**/**`)
++ gulp.src(`${uswds}/dist/img/**/**`)
+...
 - gulp.src(`${uswds}/js/**/**`) 
-+ gulp.src(`${uswds}/dist/js/**/**`) 
++ gulp.src(`${uswds}/dist/js/**/**`)
 ... 
-includePaths: [ PROJECT_SASS_SRC, 
+includePaths: [ 
+  PROJECT_SASS_SRC, 
 - `${uswds}/scss`, 
-+ `${uswds}/dist/scss`, 
++ `${uswds}`, 
 - `${uswds}/scss/packages`, 
 + `${uswds}/packages`, 
 ],
@@ -167,25 +219,18 @@ includePaths: [ PROJECT_SASS_SRC,
   </button>
 </h4>
 <div id="m-a7" class="usa-accordion__content site-prose" markdown="1">
+  <ol>
+    <li>Search for <code>const uswds = require("@uswds/compile");</code> in your Gulp setup. This indicates that you're using the Gulp setup we distributed as USWDS Compile.</li>
+    <li>Update your <code>gulpfile.js</code> to file to include <code>uswds.settings.version = 3;</code>. This setting manages the default USWDS source paths and will point Gulp to the new USWDS 3.0 package locations.
 
-1. Search for `const uswds = require("@uswds/compile");` in your Gulp setup. This indicates that you're using the Gulp setup we distributed as USWDS Compile.
-1. Update your `gulpfile.js` to file to include `uswds.settings.version = 3;`. This setting manages the default USWDS source paths and will point Gulp to the new USWDS 3.0 package locations.
-
-    {:.site-terminal}
-    ```js
-    /* gulpfile.js */
-
-    const uswds = require("@uswds/compile");
-
-    /**
-     * USWDS version
-     */
-
-    uswds.settings.version = 3;
-    ```
-
-1. Recompile your Sass as usual and check that your files compiled as expected. When it compiles successfully, it is now using USWDS 3.0!
-
+      {% highlight diff -%}
+/* gulpfile.js */
+const uswds = require("@uswds/compile");
++ uswds.settings.version = 3;
+      {%- endhighlight -%}
+    </li>
+    <li>Recompile your Sass as usual and check that your files compiled as expected. When it compiles successfully, it is now using USWDS 3.0!</li>
+  </ol>
 </div>
 <!-- End USWDS Compile section -->  
 
@@ -197,6 +242,19 @@ includePaths: [ PROJECT_SASS_SRC,
 </h4>
 <div id="m-a8" class="usa-accordion__content site-prose" markdown="1">
 1. Search for references to USWDS in the `includePaths` and `src()` found in your project’s Gulp files. These paths tell the Sass compiler where to look for USWDS source files.
+
+  ```
+  .pipe(
+    sass({
+      includePaths: [
+        PROJECT_SASS_SRC,
+        `${USWDS}`,
+        `${USWDS}/uswds/packages`,
+      ],
+    })
+  )
+  ```
+
 2. Update your `includePaths` and `src()` references to point to the correct `node_modules/@uswds/uswds` location. Some of the file directories have moved in USWDS 3.0, so confirm that you are accounting for these new locations in your paths. 
 3. Recompile your Sass as usual and check that your files compiled as expected. When it compiles successfully, it is now using USWDS 3.0!
 </div>
@@ -209,7 +267,20 @@ includePaths: [ PROJECT_SASS_SRC,
   </button>
 </h4>
 <div id="m-a9" class="usa-accordion__content site-prose" markdown="1">
-TK   
+  In webpack, include `includePaths` within the `sassOptions` of your Sass loader:
+
+  ```js
+  loader: "sass-loader",
+  options: {
+    sourceMap: true,
+    sassOptions: {
+      includePaths: [
+        "./node_modules/@uswds",
+        "./node_modules/@uswds/uswds/packages",
+      ],
+    },
+  },
+  ```
 </div>
 <!-- End custom Gulp workflow section --> 
 
@@ -224,6 +295,30 @@ Since USWDS 3.0 is based on USWDS 2.13.3, any markup or settings migration comes
 These steps will help you do any preliminary migration before updating to USWDS 3.0. Follow the instructions in each section that applies to either your USWDS version or your settings version. Changes specific to markup have a <span class="usa-tag bg-accent-cool-darker">Markup</span> tag. Changes specific to settings have a <span class="usa-tag bg-accent-warm-darker">Settings</span> tag.
 
 <div class="usa-accordion usa-accordion--bordered">
+
+<!-- Start All section -->
+<h4 class="usa-accordion__heading">
+  <button
+    class="usa-accordion__button"
+    aria-controls="m-all"
+  >
+    All migrations
+  </button>
+</h4>
+<div id="m-all" class="usa-accordion__content site-prose" markdown="1">
+
+##### <span class="usa-tag bg-accent-warm-darker">Settings</span> Remove $output-all-utilities setting.
+
+We've removed the `$output-all-utilities` settings and replaced it with `$output-these-utilities` which is a list of the utilities you want to output.
+
+###### What to do
+1. Check to see if you have `$output-all-utilities: false` in your utilities settings.
+1. 
+1. If you did change the default value, this change will no longer affect the input tile.
+1. Assure that the input tile still displays well: check your codebase for instances of `input--tile` and check the affected part of your site if you get a match.
+
+</div>
+<!-- End All section -->
 
 <!-- Start 2.13.0 section -->
 <h4 class="usa-accordion__heading">
@@ -480,83 +575,79 @@ We improved the accessibility of the footer by converting a non-semantic heading
 </div>
 <!-- End compiler accordion --> 
 
-### 5. Update to Sass module syntax
+### 5. Update to Sass module syntax 
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
-USWDS 3.0 supports the deprecated Sass import syntax. You don't need to change to the new syntax in your project Sass to use USWDS 3.0. But once you update, we recommend updating to the new syntax as well.  You’ll need to both switch `@import` to `@use`, and then create `@use` project-specific settings.  In USWDS 3.0 with Sass modules, instead of having multiple theme files that contain every setting available to the design system, you only keep track of the settings you changed in a single file. 
 
-We recommend creating a new file to keep track of these changed settings. These instructions will help you create that file, format it properly, and use it in your project. 
+While USWDS 3.0 supports the deprecated `@import` Sass syntax, we recommend upgrading to the new Sass modules syntax when updating to USWDS 3.0.
 
-You can complete these changes by taking the following steps: 
+Using Sass module syntax allows you to declare theme settings in a clearer, simpler way. Instead of managing multiple lengthy settings files that declare every system setting, you can now use Sass module syntax to declare only the settings you wish to customize, and do it all in a single file.
 
-1. Replace all instances of `@import` with `@forward`, using find/replace in your Sass file.
-2. Locate your existing project theme files. These are the _uswds-theme files that you found in [Step 1: Check your current USWDS code and settings versions](#1-check-your-current-uswds-code-and-settings-versions). (If you already have your project-specific settings file in a single file, you can skip ahead Step 4. If not, you'll need to collect your project-specific settings in a single file.)
-3. In the project theme file directory directory, create a new file called `_uswds-theme.scss`.
+These instructions will help you first update your `@import` references, then will show you how to create a new `_uswds-theme` file, format it properly, and use it in your project.  
 
-### 6. Find which settings from your theme files you've customized.
+1. **Replace all instances of @import with @forward in your Sass entry point.** Update all of the `@import` references in your Sass entry point to `@forward`. 
+  ```diff
+  - @import "uswds";
+  + @forward "uswds";
+  ```
+1. **Locate your existing project theme files.** These are the `_uswds-theme` files that you found in [Step 1: Check your current USWDS code and settings versions](#1-check-your-current-uswds-code-and-settings-versions), above. 
+2. **Create a new project-specific theme settings file.** If your project already has a single project-specific theme settings file, you’re all set. If not, create a new file in your project theme file directory called `_uswds-theme.scss`. 
+3. **Find which theme settings you've customized.** Comparing your theme files to the default theme should reveal which of these settings you've modified. We recommend accomplishing this with a series of diffs against the default theme files. 
+   
+   The bad thing about this process is that it can be tedious. The good thing is that you only have to do it once, and then you'll have a small, manageable project theme file that can be your baseline moving forward. And you'll never again have to worry about overwriting your settings files when you update to a new version of the design system.
 
-{:.border-top-2px.border-base-lighter.padding-top-1}
-We think the best way to accomplish this is with a series of diffs against the default theme files. Running a diff comparing your theme files to the default theme should reveal which of these settings you've modified. 
+   We'll use an online diff service like [quickdiff.net](https://quickdiff.net/), [diffchecker.com](https://diffchecker.com), or [text-compare.com](https://text-compare.com/).
 
-The bad thing about this process is that it can be tedious. The good thing is that you only have to do it once, and then you'll have a small, manageable project theme file that can be your baseline moving forward. And you'll never again have to worry about overwriting your settings files when you update to a new version of the design system.
+   Each of the files below is the most current version of the USWDS default settings. For each of these files, use the diff tool to find the differences between your settings file and the current defaults.
 
-We'll use an online diff service like [quickdiff.net](https://quickdiff.net/), [diffchecker.com](https://diffchecker.com), or [text-compare.com](https://text-compare.com/).
-
-Each of the files [below](#current-settings-as-of-uswds-2132) is the most current version of the USWDS default settings. For each of these files, use the diff tool to find the differences between your settings file and the current defaults.
-
-Look for instances where your project has a different value than the default. Ignore cases where a setting exists in the current version but not in your version. This indicates a new setting that probably does not apply to your project. Instances where a setting exists in your version but not in the current version can likely be ignored. This usually indicates a deprecated setting that should not affect your project, but it can be worth checking to see if that variable appears anywhere else in your codebase!
-
-When you see a setting that appears different from the current default, this is probably one of your project's custom settings. Copy this setting and add it to your new `_uswds-theme.scss` file.
-
-At the end of this process, your new `_uswds-theme.scss` file will look something like the following:
-
-{:.site-terminal}
-```scss
-$theme-image-path: "../uswds/img";
-$theme-font-path: "../uswds/fonts";
-$theme-show-compile-warnings: false;
-$theme-show-notifications: false;
-$theme-focus-color: "blue-50v";
-$theme-global-paragraph-styles: true;
-$theme-global-link-styles: true;
-$theme-global-content-styles: true;
-$theme-utility-breakpoints: (
-  "card": false,
-  "card-lg": true,
-  "mobile": true,
-  "mobile-lg": true,
-  "tablet": true,
-  "tablet-lg": true,
-  "desktop": true,
-  "desktop-lg": true,
-  "widescreen": true
-); 
-```
-
-#### Current settings (as of USWDS 2.13.2)
-
-[Color settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-color.scss)<br>
-[Component settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-components.scss)<br>
-[General settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-general.scss)<br>
-[Spacing settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-spacing.scss)<br>
-[Typography settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-typography.scss)<br>
-[Utilities settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.2/src/stylesheets/theme/_uswds-theme-utilities.scss)<br>
-
-1. Once you have all your project-specific settings in a single file, we'll load these customizations into the USWDS core engine. We do this with a special `@use` statement:
+   - [Color settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.3/src/stylesheets/theme/_uswds-theme-color.scss)
+   - [Component settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.3/src/stylesheets/theme/_uswds-theme-components.scss)
+   - [General settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.3/src/stylesheets/theme/_uswds-theme-general.scss)
+   - [Spacing settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.3/src/stylesheets/theme/_uswds-theme-spacing.scss)
+   - [Typography settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.3/src/stylesheets/theme/_uswds-theme-typography.scss)
+   - [Utilities settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.3/src/stylesheets/theme/_uswds-theme-utilities.scss)
   
-    {:.site-terminal}
-    ```scss{% raw %}
+   Look for instances where your project has a different value than the default. Ignore cases where a setting exists in the current version but not in your version. This indicates a new setting that probably does not apply to your project. Instances where a setting exists in your version but not in the current version can likely be ignored. This usually indicates a deprecated setting that should not affect your project, but it can be worth checking to see if that variable appears anywhere else in your codebase!
+
+   When you see a setting that appears different from the current default, this is probably one of your project's custom settings. Copy this setting and add it to your new `_uswds-theme.scss` file.
+
+   At the end of this process, your new `_uswds-theme.scss` file will look something like the following:
+
+   ```scss
+   $theme-image-path: "../uswds/img";
+   $theme-font-path: "../uswds/fonts";
+   $theme-show-compile-warnings: false;
+   $theme-show-notifications: false;
+   $theme-focus-color: "blue-50v";
+   $theme-global-paragraph-styles: true;
+   $theme-global-link-styles: true;
+   $theme-global-content-styles: true;
+   $theme-utility-breakpoints: (
+    "card": false,
+    "card-lg": true,
+    "mobile": true,
+    "mobile-lg": true,
+    "tablet": true,
+    "tablet-lg": true,
+    "desktop": true,
+    "desktop-lg": true,
+    "widescreen": true
+   ); 
+   ```
+4. **Load these customizations into USWDS core.** Once you have all your project-specific settings in a single file, we'll load these customizations into the USWDS core package. We do this with a special `@use ... with` statement:
+  
+    {% raw %}
+    ```scss
     @use "uswds-core" with (
       {{ your settings }}
     );
-    {% endraw %}
     ```
+    {% endraw %}
   
     In the previous example, `{% raw %}{{ your settings }}{% endraw %}` would be a list of all the settings variables in your settings file.
 
     So with an existing settings file like the following:
 
-    {:.site-terminal}
     ```scss
     $theme-image-path: "../uswds/img";
     $theme-font-path: "../uswds/fonts";
@@ -581,7 +672,6 @@ $theme-utility-breakpoints: (
 
     We'd update it to use `@use` with the following:
 
-    {:.site-terminal}
     ```scss
     @use "uswds-core" with (
       $theme-image-path: "../uswds/img",
@@ -605,12 +695,9 @@ $theme-utility-breakpoints: (
       ),
     );
     ```
-
-    Note that the new `@use` statement is a `list` of variables, so each line ends in a comma `,` instead of a semicolon `;`.
-
-2. Almost there! The last thing we have to do is make sure we use this new theme file in our project. If your project already was using a project-specific theme settings file, you're all set. If not, you'll need to open your project's Sass entry point, typically `styles.scss`. It usually looks something like this:
-
-    {:.site-terminal}
+    Note that the new `@use` statement is a list of variables, so each line ends in a comma `,` instead of a semicolon `;`.
+5. **Use the new theme file in your project** If your project already was using a project-specific theme settings file, you're all set. If not, you'll need to open your project's Sass entry point, typically `styles.scss`. It usually looks something like this:
+   
     ```scss
     /*
     * * * * * ==============================
@@ -621,62 +708,54 @@ $theme-utility-breakpoints: (
     ========================================
     ========================================
     */
-
     // -------------------------------------
     // Import individual theme settings
-
     @forward "uswds-theme-general";
     @forward "uswds-theme-typography";
     @forward "uswds-theme-spacing";
     @forward "uswds-theme-color";
     @forward "uswds-theme-utilities";
-
     // components import needs to be last
     @forward "uswds-theme-components";
-
-    ...
+    @forward "uswds";
+    @forward "uswds-custom-styles";
     ```
 
-    In USWDS 3.0, we won't use multiple theme files, just a single file with all the project-specific settings. So we can remove all the individual theme settings from our Sass entry point and replace them with a single `@use` statement, using the project-specific settings file, like so:
+    We can remove all the individual theme settings from our Sass entry point and replace them with a single `@forward` statement, using the project-specific settings file that we just created, like so:
 
-    {:.site-terminal}
-    ```scss
-    /*
-    * * * * * ==============================
-    * * * * * ==============================
-    * * * * * ==============================
-    * * * * * ==============================
-    ========================================
-    ========================================
-    ========================================
-    */
+```diff
+- // Import individual theme settings
+- @forward "uswds-theme-general";
+- @forward "uswds-theme-typography";
+- @forward "uswds-theme-spacing";
+- @forward "uswds-theme-color";
+- @forward "uswds-theme-utilities";
+- // components import needs to be last
+- @forward "uswds-theme-components";
++ @forward "uswds-theme";
+@forward "uswds";
+@forward "uswds-custom-styles";
+```
 
-    // -------------------------------------
-    // Import individual theme settings
-
-    @forward "uswds-theme"; // or whatever your theme file is named
-
-    ...
-    ```
-
-    Now your project is using its theme settings in the proper USWDS 3.0 format!
+Now your project is using its theme settings in the proper USWDS 3.0 format!
 
 #### Use "uswds-core" for any custom USWDS Sass
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
-Sass Module syntax requires that files must note the source of any tokens, variables, mixins, functions, or placeholders used in that file. 
+Unlike `@import`, which makes Sass members (tokens, variables, mixins, functions, or placeholders) available globally, `@use` only reveals Sass members to the stylesheet that loads them. 
 
-This is relatively straightforward for USWDS 3.0 Sass: For any project stylesheet that uses USWDS tokens, variables, mixins, functions, or placeholders (that's probably most, if not all, of them!), add the following line at the top of the file:
+Accommodating this is relatively straightforward for USWDS 3.0 Sass: For any project stylesheet that uses USWDS members (that's probably most, if not all, of them!), add the following line at the top of the file:
 
 `@use "uswds-core" as *;`
 
-In USWDS 3.0, `uswds-core` is the name of the package (or "module" in Sass terminology) that contains all the tokens, variables, mixins, functions, or placeholders used in USWDS Sass. If your project uses tokens, variables, mixins, functions, or placeholders defined outside of USWDS, you'll need to @use these as well at the top of the document. This includes Sass-specific functions. See [https://sass-lang.com/documentation/modules](https://sass-lang.com/documentation/modules) for more information, if your project uses any of Sass's built-in functions.
+In USWDS 3.0, `uswds-core` is the name of the package (or "module" in Sass terminology) that contains all the members used in USWDS Sass. If your project uses members defined outside of USWDS, you'll need to include these as well via `@use` at the top of the document. This includes Sass-specific functions. See [https://sass-lang.com/documentation/modules](https://sass-lang.com/documentation/modules) for more information, if your project uses any of Sass's built-in functions.
 
 Once each of your custom sass files include the `@use "uswds-core" as *;` line at the top, you should be done!
 
 Recompile your Sass and check for errors.
 
-### 7. Optimize your installation with component packages
+
+### 6. Optimize your installation with component packages
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
 By default, a USWDS installation includes every component available to the design system. But most projects don't use all these components. USWDS 3.0 allows teams to use only the components you need for your project, through the idea of component packages.
@@ -729,7 +808,7 @@ For any package listed below, add a `@forward "[package]"` line to your Sass ent
 
 `@forward "usa-accordion";`
 
-TK: Package + Dependencies Table
+{% include packages-table.html %}
 
 ### Determine which packages your project needs
 
@@ -758,7 +837,7 @@ Each package is smart enough to include any dependent package it needs to displa
 #### Managing utility classes
 
 {:.border-top-1px.border-base-lighter.padding-top-1}
-Utility classes have their own naming conventions that are a bit less straightforward to identify. Look at the table below. If your codebase includes classes that start with one of the **class bases**, include its **utility module key** in the `$output-these-utilities setting`. 
+Utility classes have their own naming conventions that are a bit less straightforward to identify. Look at the table below. If your codebase includes classes that start with one of the **class bases**, include its **utility module name** in the `$output-these-utilities setting`. 
 
 Look for classes in your codebase for searching for a regular expression string like `[" ]flex-`.
 
@@ -774,7 +853,7 @@ $output-these-utilities: (
 ),
 ```
 
-TK: Utility module key table
+{% include utilities-module-table.html %}
 
 ### Further performance improvements
 
@@ -799,23 +878,16 @@ In a gulp workflow, we recommend using `gulp-sass` and `sass-embedded` together 
     ```
 3. In your Sass gulp tasks file, replace your existing sass compiler package import with `gulp-sass` and `sass-embedded:`
     
-    {:#old-code-embedded}
-    ##### Old code 
-
-    {:.site-terminal}
-    ```scss
-    const sass = require("gulp-dart-scss");
-    ```
-    {:#new-code-embedded}
-    ##### New code
-
-    {:.site-terminal}
-    ```scss
-    const sass = require("gulp-sass")(require("sass-embedded"));
+    ```diff
+    - const sass = require("gulp-dart-scss");
+    + const sass = require("gulp-sass")(require("sass-embedded"));
     ```
 
 4. In your Sass gulp tasks file, remove any line that sets the sass.compiler:
-    <code><s>sass.compiler = require("sass");</s></code>
+
+    ```diff
+    - sass.compiler = require("sass");
+    ```
 
 5. Recompile.
 
@@ -842,7 +914,7 @@ $theme-utility-breakpoints: (
 ),
 ```
 
-For each breakpoint set to true in your project, search for its usage in your codebase by searching for the **breakpoint name** + a colon (:). SO, to search for the `tablet-lg` breakpoint, search for desktop-lg:. If that breakpoint does not appear, you can set the value to `false`.
+For each breakpoint set to true in your project, search for its usage in your codebase by searching for the **breakpoint name** + a colon (`:`). SO, to search for the `tablet-lg` breakpoint, search for desktop-lg:. If that breakpoint does not appear, you can set the value to `false`.
 
 #### Using package source
 
@@ -871,14 +943,14 @@ Instead of simply forwarding the `usa-banner` component, you can import the comp
 @forward "uswds-fonts";
 ```
 
-Now, instead of pointing at the component packages, we can point directly at the component package source. For each usa- prefixed component package, append /src/styles to its name:
+Now, instead of pointing at the component packages, we can point directly at the component package source. For each usa- prefixed component package, append `/src/styles` to its name:
 
 {:.site-terminal}
 ```scss
-@forward "usa-banner<strong>/src/styles</strong>";
-@forward "usa-icon<strong>/src/styles</strong>";
-@forward "usa-layout-grid<strong>/src/styles</strong>";
-@forward "usa-media-block<strong>/src/styles</strong>";
+@forward "usa-banner/src/styles";
+@forward "usa-icon/src/styles";
+@forward "usa-layout-grid/src/styles";
+@forward "usa-media-block/src/styles";
 @forward "uswds-fonts";
 ```
 

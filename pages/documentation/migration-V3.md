@@ -47,9 +47,9 @@ For the purposes of this guide, make markup changes for all entries that match y
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
 1. [Check your current USWDS code and settings versions](#1-check-your-current-uswds-code-and-settings-versions)
-1. [Install the USWDS 3.0 package](#3-install-the-uswds-30-package)
-1. [Update your Sass compiler settings and recompile CSS](#4-update-your-sass-compiler-settings-and-recompile-css)
-1. [Integrate latest USWDS 2.x changes](#2-integrate-latest-uswds-2-changes)
+1. [Install the USWDS 3.0 package](#2-install-the-uswds-30-package)
+1. [Update your Sass compiler settings and recompile CSS](#3-update-your-sass-compiler-settings-and-recompile-css)
+1. [Integrate any recent USWDS changes](#4-integrate-any-recent-uswds-changes)
 1. <span class="usa-tag bg-primary">Recommended</span> [Update to Sass module syntax](#5-update-to-sass-module-syntax)
 1. <span class="usa-tag bg-primary">Recommended</span> [Find which settings from your theme files you’ve customized](#6-find-which-settings-from-your-theme-files-youve-customized)
 1. <span class="usa-tag bg-secondary">Optional</span> [Optimize your installation with component packages](#7-optimize-your-installation-with-component-packages)
@@ -109,7 +109,7 @@ Once you've noted the version of USWDS you're currently using, you can update to
 ### 3. Update your Sass compiler settings and recompile CSS
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
-USWDS 3.0 requires the use of [Load Paths](https://sass-lang.com/documentation/at-rules/use#load-paths) to compile properly. USWDS 3.0 load paths must include a path to the `packages` directory of the `@uswds/uswds` package, typically `./node_modules/@uswds/uswds/packages`.
+USWDS 3.0 requires the use of [Load Paths](https://sass-lang.com/documentation/at-rules/use#load-paths) to compile properly. USWDS 3.0 load paths must include a path to the `packages` directory of the `@uswds/uswds` package, typically by setting an `IncludePaths` setting to something like `./node_modules/@uswds/uswds/packages`.
 
 Add this load path to your compiler settings, or update any old paths if your compiler already has them. We've included guidance for a few common compiler setups.
 
@@ -122,21 +122,18 @@ Add this load path to your compiler settings, or update any old paths if your co
     If you're using USWDS Gulp
   </button>
 </h4>
-<div id="m-a6" class="usa-accordion__content site-prose" markdown="1">
-
-1. Search for a line like `const uswds = require("./node_modules/uswds-gulp/config/uswds");` or `const uswds = "node_modules/uswds/dist"` in your Gulp setup. This indicates that you're using the Gulp setup we distributed as USWDS Gulp.
-1. Update the USWDS `const` elements to the updated USWDS package location:
-
-  {% highlight diff -%}
+<div id="m-a6" class="usa-accordion__content site-prose">
+  <ol>
+    <li>Search for a line like <code>const uswds = require("./node_modules/uswds-gulp/config/uswds");</code> or <code>const uswds = "node_modules/uswds/dist"</code> in your Gulp setup. This indicates that you're using the Gulp setup we distributed as USWDS Gulp.</li>
+    <li>Update the USWDS <code>const</code> elements to the updated USWDS package location:
+      {% highlight diff -%}
 - const pkg = require("./node_modules/uswds/package.json");
 + const pkg = require("./node_modules/@uswds/uswds/package.json");
-  {%- endhighlight %}
-
-3. Search for references to `${uswds}` in the `includePaths` and `gulp.src()` found in your project’s Gulp files. These paths tell the Sass compiler where to look for USWDS source files.
-
-    Some of our file directories have moved in USWDS 3.0, and it is necessary to point Gulp to the correct location inside node_modules/@uswds/uswds. Below are snippets from the standard USWDS Gulp references and their necessary updates:
-
-{% highlight diff %}
+      {%- endhighlight %}
+    </li>
+    <li><p>Search for references to <code>${uswds}</code> in the <code>includePaths</code> and <code>gulp.src()</code> found in your project’s Gulp files. These paths tell the Sass compiler where to look for USWDS source files.</p>
+      <p>Some of our file directories have moved in USWDS 3.0, and it is necessary to point Gulp to the correct location inside <code>node_modules/@uswds/uswds</code>. Below are snippets from the standard USWDS Gulp references and their necessary updates:</p>
+      {% highlight diff -%}
 ... 
 - gulp.src(`${uswds}/scss/theme/**/**`) 
 + gulp.src(`${uswds}/dist/theme/**/**`) 
@@ -156,9 +153,10 @@ includePaths: [ PROJECT_SASS_SRC,
 - `${uswds}/scss/packages`, 
 + `${uswds}/packages`, 
 ],
-{% endhighlight %}
-
-4. Recompile your Sass as usual. When it compiles, it is now using USWDS 3.0!
+      {%- endhighlight %}
+    </li>
+    <li>Recompile your Sass as usual. When it compiles, it is now using USWDS 3.0!</li>
+  </ol>
 </div>
 <!-- End USWDS Gulp section --> 
 

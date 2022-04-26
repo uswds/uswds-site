@@ -313,9 +313,8 @@ We've removed the `$output-all-utilities` settings and replaced it with `$output
 
 ###### What to do
 1. Check to see if you have `$output-all-utilities: false` in your utilities settings.
-1. 
-1. If you did change the default value, this change will no longer affect the input tile.
-1. Assure that the input tile still displays well: check your codebase for instances of `input--tile` and check the affected part of your site if you get a match.
+1. If so, replace it with `$output-these-utilities: ("module", "module", "module");` where each `module` is a utility you wish to include in your project. For a complete list of utility modules, see the utility module list in [Managing Utility Classes](#managing-utility-classes), below.
+1. If your settings include `$output-all-utilities: true`, remove the setting entirely.
 
 </div>
 <!-- End All section -->

@@ -111,7 +111,7 @@
     "prettier": "^2.4.1",
     "sass": "^1.43.4",
     "simplecrawler": "^1.1.8",
-    "snyk": "^1.811.0",
+    "snyk": "^1.913.0",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^9.0.2",
     "stylelint-config-recommended-scss": "^4.3.0",

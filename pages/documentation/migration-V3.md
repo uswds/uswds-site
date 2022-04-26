@@ -13,12 +13,12 @@ subnav:
   href: '#migration-overview'
 - text: 1. Check your current USWDS code and settings versions
   href: '#1-check-your-current-uswds-code-and-settings-versions'
-- text: 2. Integrate latest USWDS 2 changes
-  href: '#2-integrate-latest-uswds-2-changes'
-- text: 3. Install the USWDS 3.0 package
-  href: '#3-install-the-uswds-30-package'
-- text: 4. Update your Sass compiler settings and recompile CSS
-  href: '#4-update-your-sass-compiler-settings-and-recompile-css'
+- text: 2. Install the USWDS 3.0 package
+  href: '#2-install-the-uswds-30-package'
+- text: 3. Update your Sass compiler settings and recompile CSS
+  href: '#3-update-your-sass-compiler-settings-and-recompile-css'
+- text: 4. Integrate any recent USWDS changes
+  href: '#4-integrate-any-recent-uswds-changes'
 - text: 5. Update to Sass module syntax
   href: '#5-update-to-sass-module-syntax'
 - text: 6. Find which settings from your theme files you’ve customized.
@@ -34,7 +34,7 @@ subnav:
 
 **Improve performance and reduce the size of your project CSS.** Using USWDS 3.0 with the new Sass syntax — called Sass module syntax — allows teams to unbundle their implementations of USWDS and use only the components and code that they need on their project. Depending on your project, this could mean significant reduction of CSS code you ship. This means faster load times, better scores in performance evaluation tools, and a better developer experience. 
 
-**Stay up-to-date with minimal hassle.** We want teams to benefit from the most current version of USWDS. Many projects should be able to migrate from USWDS 2 to USWDS 3.0 in about an hour or less. This new version makes no markup or style changes from USWDS 2.13.3. If you already use USWDS 2.13.0 or later, you should be able to update to USWDS 3.0 in a matter of minutes. Additionally, the under-the-hood changes we're introducing in USWDS 3.0 will make it easier to stay up-to-date with USWDS over time. An incremental update now will make subsequent updates simpler as well. 
+**Stay up-to-date with minimal hassle.** We want teams to benefit from the most current version of USWDS. Many projects should be able to migrate from USWDS 2 to USWDS 3.0 in about an hour or less. This new version makes no markup or style changes from USWDS 2.13.3. If you already use USWDS 2.13.0 or later, you should be able to update to USWDS 3.0 in a matter of minutes. Additionally, the under-the-hood changes we're introducing in USWDS 3.0 will make it easier to stay up-to-date with USWDS over time. An incremental update now will make subsequent updates simpler. 
 
 ## How to use this guide
 

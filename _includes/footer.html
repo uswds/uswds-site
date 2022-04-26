@@ -1,4 +1,4 @@
-{% if page.touchpoints_survey | default: false %}
+{% if site.touchpoints.active and page.touchpoints_survey | default: false %}
   {% include touchpoint-survey-script.html %}
 {% endif %}
 

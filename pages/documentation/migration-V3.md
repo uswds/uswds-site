@@ -21,10 +21,8 @@ subnav:
   href: '#4-integrate-any-recent-uswds-changes'
 - text: 5. Update to Sass module syntax
   href: '#5-update-to-sass-module-syntax'
-- text: 6. Find which settings from your theme files you’ve customized.
-  href: '#6-find-which-settings-from-your-theme-files-youve-customized'
-- text: 7. Optimize your installation with component packages
-  href: '#7-optimize-your-installation-with-component-packages'
+- text: 6. Optimize your installation with component packages
+  href: '#6-optimize-your-installation-with-component-packages'
 ---
 
 ## Why migrate to USWDS 3.0?
@@ -51,8 +49,7 @@ For the purposes of this guide, make markup changes for all entries that match y
 1. [Update your Sass compiler settings and recompile CSS](#3-update-your-sass-compiler-settings-and-recompile-css)
 1. [Integrate any recent USWDS changes](#4-integrate-any-recent-uswds-changes)
 1. <span class="usa-tag bg-primary">Recommended</span> [Update to Sass module syntax](#5-update-to-sass-module-syntax)
-1. <span class="usa-tag bg-primary">Recommended</span> [Find which settings from your theme files you’ve customized](#6-find-which-settings-from-your-theme-files-youve-customized)
-1. <span class="usa-tag bg-secondary">Optional</span> [Optimize your installation with component packages](#7-optimize-your-installation-with-component-packages)
+1. <span class="usa-tag bg-secondary">Optional</span> [Optimize your installation with component packages](#6-optimize-your-installation-with-component-packages)
 
 ### 1. Check your current USWDS code and settings versions
 

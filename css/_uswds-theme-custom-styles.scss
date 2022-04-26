@@ -3826,8 +3826,16 @@ p + .pagination-behaviors--examples {
 }
 
 .language-diff {
-  .err { color: color("gray-60"); }
-  .p { color: color("ink"); }
-  .gi { color: color("blue-warm-60v"); }
-  .gd { color: color("red-60v"); }
+  .err {
+    color: color("gray-60");
+  }
+  .p {
+    color: color("ink");
+  }
+  .gi {
+    color: color("blue-warm-60v");
+  }
+  .gd {
+    color: color("red-60v");
+  }
 }

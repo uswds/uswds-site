@@ -128,16 +128,16 @@ Now, create your path settings using the following table:
 <div markdown="1" class="usa-table-container--scrollable" tabindex="0">
 
 {: .usa-table }
-Setting | Default values - version 2.x | Default values - Version 3.0 | Description
+Setting | Default values - Version 2.x | Default values - Version 3.0 | Description
 --- | --- | ---
 `paths.src.uswds` | `"./node_modules/uswds/dist"` | `"./node_modules/@uswds"` | Source location of the `uswds` package
 `paths.src.sass` | `"./node_modules/uswds/dist/scss"` | `"./node_modules/@uswds/uswds/packages"` | Source location of the USWDS Sass
-`paths.src.theme` | `"./node_modules/uswds/dist/scss/theme"` | `"./node_modules/@uswds/uswds/dist/theme"` |Source location of the USWDS theme files (Sass entry point and starter settings files)
+`paths.src.theme` | `"./node_modules/uswds/dist/scss/theme"` | `"./node_modules/@uswds/uswds/dist/theme"` |Source location of the USWDS theme files (Sass entry point<br> and starter settings files)
 `paths.src.fonts` | `"./node_modules/uswds/dist/fonts"` | `"./node_modules/@uswds/uswds/dist/fonts"` | Source location of the USWDS fonts
 `paths.src.img` | `"./node_modules/uswds/dist/img"` | `"./node_modules/@uswds/uswds/dist/img"` | Source location of the USWDS images
 `paths.src.js` | `"./node_modules/uswds/dist/js"` | `"./node_modules/@uswds/uswds/dist/js"` | Source location of the USWDS compiled JavaScript files
-`paths.src.projectSass` | `"./sass"` | `"./sass"` | Source location of any existing project Sass files outside of `paths.dist.sass`.<br/> The `watch` script will watch this directory for changes.
-`paths.dist.theme` | `"./sass"` | `"./sass"` | Project destination for theme files (Sass entry point and settings)
+`paths.src.projectSass` | `"./sass"` | `"./sass"` | Source location of any existing project Sass files outside of <br/>`paths.dist.sass`. The `watch` script will watch this <br>directory for changes.
+`paths.dist.theme` | `"./sass"` | `"./sass"` | Project destination for theme files (Sass entry point and <br>settings)
 `paths.dist.img` | `"./assets/uswds/images"` | `"./assets/uswds/images"` | Project destination for images
 `paths.dist.fonts` | `"./assets/uswds/fonts"` | `"./assets/uswds/fonts"` | Project destination for fonts
 `paths.dist.js` | `"./assets/uswds/js"` | `"./assets/uswds/js"` | Project destination for compiled JavaScript

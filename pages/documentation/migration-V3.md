@@ -13,12 +13,12 @@ subnav:
   href: '#migration-overview'
 - text: 1. Check your current USWDS code and settings versions
   href: '#1-check-your-current-uswds-code-and-settings-versions'
-- text: 2. Integrate latest USWDS 2 changes
-  href: '#2-integrate-latest-uswds-2-changes'
-- text: 3. Install the USWDS 3.0 package
-  href: '#3-install-the-uswds-30-package'
-- text: 4. Update your Sass compiler settings and recompile CSS
-  href: '#4-update-your-sass-compiler-settings-and-recompile-css'
+- text: 2. Install the USWDS 3.0 package
+  href: '#2-install-the-uswds-30-package'
+- text: 3. Update your Sass compiler settings and recompile CSS
+  href: '#3-update-your-sass-compiler-settings-and-recompile-css'
+- text: 4. Integrate any recent USWDS changes
+  href: '#4-integrate-any-recent-uswds-changes'
 - text: 5. Update to Sass module syntax
   href: '#5-update-to-sass-module-syntax'
 - text: 6. Find which settings from your theme files you’ve customized.
@@ -34,7 +34,7 @@ subnav:
 
 **Improve performance and reduce the size of your project CSS.** Using USWDS 3.0 with the new Sass syntax — called Sass module syntax — allows teams to unbundle their implementations of USWDS and use only the components and code that they need on their project. Depending on your project, this could mean significant reduction of CSS code you ship. This means faster load times, better scores in performance evaluation tools, and a better developer experience. 
 
-**Stay up-to-date with minimal hassle.** We want teams to benefit from the most current version of USWDS. Many projects should be able to migrate from USWDS 2 to USWDS 3.0 in about an hour or less. This new version makes no markup or style changes from USWDS 2.13.3. If you already use USWDS 2.13.0 or later, you should be able to update to USWDS 3.0 in a matter of minutes. Additionally, the under-the-hood changes we're introducing in USWDS 3.0 will make it easier to stay up-to-date with USWDS over time. An incremental update now will make subsequent updates simpler as well. 
+**Stay up-to-date with minimal hassle.** We want teams to benefit from the most current version of USWDS. Many projects should be able to migrate from USWDS 2 to USWDS 3.0 in about an hour or less. This new version makes no markup or style changes from USWDS 2.13.3. If you already use USWDS 2.13.0 or later, you should be able to update to USWDS 3.0 in a matter of minutes. Additionally, the under-the-hood changes we're introducing in USWDS 3.0 will make it easier to stay up-to-date with USWDS over time. An incremental update now will make subsequent updates simpler. 
 
 ## How to use this guide
 
@@ -46,12 +46,32 @@ For the purposes of this guide, make markup changes for all entries that match y
 <!-- add links -->
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
+- [* * * * * ==============================](#-----)
+- [========================================](#)
+- [========================================](#-1)
+      - [Use "uswds-core" for any custom USWDS Sass](#use-uswds-core-for-any-custom-uswds-sass)
+    - [7. Optimize your installation with component packages](#7-optimize-your-installation-with-component-packages)
+    - [Using packages](#using-packages)
+      - [Old code](#old-code-2)
+      - [New Code](#new-code-2)
+      - [Available packages](#available-packages)
+    - [Determine which packages your project needs](#determine-which-packages-your-project-needs)
+      - [Brute-force: Search for component class names](#brute-force-search-for-component-class-names)
+      - [Managing utility classes](#managing-utility-classes)
+    - [Further performance improvements](#further-performance-improvements)
+      - [Update to the sass-embedded compiler](#update-to-the-sass-embedded-compiler)
+      - [Reduce utility responsive breakpoints](#reduce-utility-responsive-breakpoints)
+      - [Using package source](#using-package-source)
 
    
 ### 1. Check your current USWDS code and settings versions
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
-Check your project's `package.json` file and your project's `_uswds-theme` files. Your package.json file will display the version of USWDS in a line like `"uswds": "^2.12.2"`. Your theme files will have a version number at the top, under the image of the American flag. Your code and your theme files may have different versions. 
+USWDS 3.0 uses the same styles, markup, and settings as USWDS 2.13.3. This means that if you're currently using a USWDS version older than 2.13.3, migrating to USWDS 3.0 may mean updating some of your markup and settings. 
+
+So, before migrating, check the versions of both your existing USWDS code and its settings (since code and settings may be different).
+
+Check your project's current `package.json` file and your project's `_uswds-theme` files. Your `package.json` file will display the version of USWDS in a line like `"uswds": "^2.12.2"`. Your theme files will have a version number at the top, under the image of the American flag. Your code and your theme files may have different versions. 
 
 {:.site-terminal}
 ```json
@@ -87,283 +107,21 @@ https://designsystem.digital.gov/design-tokens/spacing-units
 */
 ```
 
-
-### 2. Integrate latest USWDS 2 changes
-
-{:.border-top-2px.border-base-lighter.padding-top-1}
-**Note:** This is probably the most labor-intensive part of the process.
-
-Since USWDS 3.0 is based on the USWDS 2.13.3, any markup migration comes from migrating from your current version to 2.13.3. If you're already up-to-date, this won't take any time at all, but there have been some changes that might be breaking changes for your project over the course of the USWDS 2 branch. 
-
-These steps will help you do any preliminary migration, before updating to USWDS 3.0.
-
-<div class="usa-accordion usa-accordion--bordered">
-
-<!-- Start 2.13.0 section -->
-<h4 class="usa-accordion__heading">
-  <button
-    class="usa-accordion__button"
-    aria-controls="m-a1"
-  >
-    If you have code older than USWDS 2.13.0
-  </button>
-</h4>
-<div id="m-a1" class="usa-accordion__content site-prose" markdown="1">
-
-##### <span class="usa-tag bg-accent-cool-darker">Markup</span> Update any instance of the small search button.
-
-You'll need to update any instances of the small search button on your site. We're now using explicit images to better support legibility in instances where icons do not load. 
-
-###### What to do
-1. Check your codebase for instances of `<span class="usa-sr-only">Search</span>`.
-1. Update the markup from the old version to the new version if you use it.
-
-{:#old-code-2-13-0}
-###### Old code
-
-{:.site-terminal}
-```html
-<button class="usa-button" type="submit">
-  <span class="usa-sr-only">Search</span>
-<button>
-```
-
-{:#new-code-2-13-0}
-###### New code
-
-{:.site-terminal}
-```html
-<button class="usa-button" type="submit">    
-  <img 
-    src="{% raw %}{{ uswds image path }}{% endraw %}/usa-icons-bg/search--white.svg" 
-    class="usa-search__submit-icon" 
-    alt="Search" />
-</button>
-```
-
-##### <span class="usa-tag bg-accent-cool-darker">Markup</span> Update social media icons in the footer.
-
-You'll need to update social media icons in the USWDS footer. We're now using explicit images to better support legibility in instances where icons do not load. 
-
-###### What to do
-
-1. Check your codebase for instances of `usa-social-link.`
-1. If you use it, Update the markup from the old version to the new version.
-
-{:#old-code-2-13-0-social}
-###### Old code
-
-{:.site-terminal}
-```html
-<a class="usa-social-link usa-social-link--facebook" 
-  href="{% raw %}{{ link }}{% endraw %}">
-  <span>Facebook</span>
-</a>
-<a class="usa-social-link usa-social-link--twitter" 
-  href="{% raw %}{{ link }}{% endraw %}">
-  <span>Twitter</span>
-</a>
-<a class="usa-social-link usa-social-link--youtube" 
-  href="{% raw %}{{ link }}{% endraw %}">
-  <span>YouTube</span>
-</a>
-<a class="usa-social-link usa-social-link--instagram" 
-  href="{% raw %}{{ link }}{% endraw %}">
-  <span>Instagram</span>
-</a>
-<a class="usa-social-link usa-social-link--rss" 
-  href="{% raw %}{{ link }}{% endraw %}">
-  <span>RSS</span>
-</a>
-```
-
-{:#new-code-2-13-0-social}
-###### New code
-
-{:.site-terminal}
-```html
-<a class="usa-social-link" 
-  href="{% raw %}{{ link }}{% endraw %}">
-  <img 
-    class="usa-social-link__icon" 
-    src="/usa-icons-bg/search--whi/usa-icons/facebook.svg" 
-    alt="Facebook" />
-</a>
-<a class="usa-social-link" 
-  href="{% raw %}{{ link }}{% endraw %}">
-  <img 
-    class="usa-social-link__icon" 
-    src="/usa-icons-bg/search--whi/usa-icons/twitter.svg" 
-    alt="Twitter" />
-</a>
-<a class="usa-social-link" 
-  href="{% raw %}{{ link }}{% endraw %}">
-  <img 
-    class="usa-social-link__icon" 
-    src="/usa-icons-bg/search--whi/usa-icons/youtube.svg" 
-    alt="YouTube" />
-</a>
-<a class="usa-social-link" 
-  href="{% raw %}{{ link }}{% endraw %}">
-  <img 
-    class="usa-social-link__icon" 
-    src="/usa-icons-bg/search--whi/usa-icons/instagram.svg" 
-    alt="Instagram" />
-</a>
-<a class="usa-social-link" 
-  href="{% raw %}{{ link }}{% endraw %}">
-  <img 
-    class="usa-social-link__icon" 
-    src="/usa-icons-bg/search--whi/usa-icons/rss_feed.svg" 
-    alt="RSS" />
-</a>
-```
-</div>
-<!-- End 2.13.0 section -->
-
-<!-- Start 2.12.0 section -->
-<h4 class="usa-accordion__heading">
-  <button
-    class="usa-accordion__button"
-    aria-controls="m-a2"
-  >
-    If you have code older than USWDS 2.12.0
-  </button>
-</h4>
-<div id="m-a2" class="usa-accordion__content site-prose" markdown="1">
-
-##### <span class="usa-tag bg-accent-warm-darker">Settings</span> Update three deprecated settings.
-
-Each of the following settings is no longer set-able. If you use any of these settings, they may no longer reflect your intention. These are the deprecated settings and their defaults:
-
-- `$theme-input-tile-background-color-selected: "primary-lighter"`
-- `$theme-input-tile-border-color: "base-lighter"`
-- `$theme-input-tile-border-color-selected: "primary-lighter"`
-  
-###### What to do
-1. Check this list to see if you changed the default value.
-1. If you did change the default value, this change will no longer affect the input tile.
-1. Assure that the input tile still displays well: check your codebase for instances of `input--tile`.
-1. Check the affected part of your site if you get a match.
-
-##### <span class="usa-tag bg-accent-warm-darker">Settings</span> Check three settings with changed defaults.
-
-If you use any of these settings in your code, the output may change:
-
-- **new:** `$theme-color-success-dark: "green-cool-50v"`<br>
-  **old:** `"green-cool-50"`
-- **new:** `$theme-color-success-darker: "green-cool-60v"`<br>
-  **old:** `"green-cool-80"`
-
-###### What to do
-1. Check your settings to see if they are set to the **old** default.
-1. If they use the **old** default, delete the setting from your settings file so it uses the system default.
-</div>
-<!-- End 2.12.0 section -->
-
-<!-- Start 2.11.2 section -->
-<h4 class="usa-accordion__heading">
-  <button
-    class="usa-accordion__button"
-    aria-controls="m-a3"
-  >
-    If you have code older than USWDS 2.11.2
-  </button>
-</h4>
-<div id="m-a3" class="usa-accordion__content site-prose" markdown="1">
-
-##### <span class="usa-tag bg-accent-warm-darker">Settings</span> Replace the deprecated `$theme-site-max-width` variable.
-
-We deprecated the `$theme-site-max-width` variable. We're using `$theme-grid-container-max-width` instead.
-  
-###### What to do
-1. Replace instances of `$theme-site-max-width` with `$theme-grid-container-max-width`
-
-##### <span class="usa-tag bg-accent-cool-darker">Markup</span> Replace the `thumb_down_off_alt` icon with `thumb_down_alt` icon.
-
-We replaced the `thumb_down_off_alt` icon with `thumb_down_alt` in our default icon sprite.
-
-###### What to do
-1. Search for any instances of `thumb_down_off_alt`
-1. Replace it with `thumb_down_alt`
-</div>
-<!-- End 2.11.2 section --> 
-  
-<!-- Start 2.11.0 section -->
-<h4 class="usa-accordion__heading">
-  <button
-    class="usa-accordion__button"
-    aria-controls="m-a4"
-  >
-    If you have code older than USWDS 2.11.0
-  </button>
-</h4>
-<div id="m-a4" class="usa-accordion__content site-prose" markdown="1">
-
-##### <span class="usa-tag bg-accent-warm-darker">Settings</span> Check five settings with changed defaults.
-
-If you use any of these settings in your code, the output may change:
-  
-- **new:** `$theme-alert-icon-size: 4`<br>
-  **old:** `5`
-- **new:** `$theme-table-border-color: default`<br>
-  **old:** `"ink"`
-- **new:** `$theme-table-header-text-color: default`<br>
-  **old:** `"ink"`
-- **new:** `$theme-table-stripe-text-color: default`<br>
-  **old:** `"ink"`
-- **new:** `$theme-table-text-color: default`<br>
-  **old:** `"ink"`
-
-###### What to do
-1. Check your settings to see if they are set to the **old** default.
-2. If they use the **old** default, delete the setting from your settings file so it uses the system default.
-</div>
-<!-- End 2.11.0 section --> 
-  
-<!-- Start 2.10.1 section -->
-<h4 class="usa-accordion__heading">
-  <button
-    class="usa-accordion__button"
-    aria-controls="m-a5"
-  >
-    If you have code older than USWDS 2.10.1
-  </button>
-</h4>
-<div id="m-a5" class="usa-accordion__content site-prose" markdown="1">
-
-##### <span class="usa-tag bg-accent-warm-darker">Settings</span> Check two settings with changed defaults.
-If you use any of these settings in your code, the output may change:
-
-- **new:** `$theme-breadcrumb-background-color: default`<br>
-  **old:** white 
-- **new:** `$theme-alert-icon-size: 5`<br>
-  **old:** 4
-
-###### What to do
-1. Check your settings to see if they are set to the **old** default.
-2. If they use the **old** default, delete the setting from your settings file so it uses the system default.
-
-##### <span class="usa-tag bg-accent-cool-darker">Markup</span> We updated `usa-footer__logo-heading` to use a p instead of an h3. We improved the accessibility of the footer by converting a non-semantic heading into paragraph text.
-
-###### What to do
-1. TK
-</div>
-<!-- End 2.10.1 section --> 
-</div>
-<!-- End compiler accordion --> 
-
-### 3. Install the USWDS 3.0 package
+### 2. Install the USWDS 3.0 package
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
+Once you've noted the version of USWDS you're currently using, you can update to the new USWDS package (`@uswds/uswds`) and remove the old one (`uswds`). 
+
 1. In a terminal window, navigate to your project root. 
 2. Install USWDS 3.0 with `npm install @uswds/uswds --save-exact`
 3. Uninstall USWDS 2 with `npm uninstall uswds`
 
-### 4. Update your Sass compiler settings and recompile CSS
+### 3. Update your Sass compiler settings and recompile CSS
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
-The location of the USWDS source files is different in USWDS 3.0. You'll need to update your compiler settings to compile your Sass from USWDS 3.0.
+USWDS 3.0 requires the use of [Load Paths](https://sass-lang.com/documentation/at-rules/use#load-paths) to compile properly. USWDS 3.0 load paths must include a path to the `packages` directory of the `@uswds/uswds` package, typically by setting an `IncludePaths` setting to something like `./node_modules/@uswds/uswds/packages`.
+
+Add this load path to your compiler settings, or update any old paths if your compiler already has them. We've included guidance for a few common compiler setups.
 
 <!--Start compiler accordion -->
 <div class="usa-accordion usa-accordion--bordered">
@@ -374,18 +132,18 @@ The location of the USWDS source files is different in USWDS 3.0. You'll need to
     If you're using USWDS Gulp
   </button>
 </h4>
-<div id="m-a6" class="usa-accordion__content site-prose" markdown="1">
-
-1. Search for a line like `const uswds = require("./node_modules/uswds-gulp/config/uswds");` or `const uswds = "node_modules/uswds/dist"` in your Gulp setup. This indicates that you're using the Gulp setup we distributed as USWDS Gulp.
-1. Update the USWDS `const` elements to the updated USWDS package location:
-    {% highlight diff %}
-    - const pkg = require("./node_modules/uswds/package.json");
-    + const pkg = require("./node_modules/@uswds/uswds/package.json");{% endhighlight %}
-2. Search for references to ${uswds} in the includePaths and gulp.src() found in your project’s Gulp files. These paths tell the Sass compiler where to look for USWDS source files.
-
-    Some of our file directories have moved in USWDS 3.0, and it is necessary to point Gulp to the correct location inside node_modules/@uswds/uswds. Below are snippets from the standard USWDS Gulp references and their necessary updates:
-
-{% highlight diff %}
+<div id="m-a6" class="usa-accordion__content site-prose">
+  <ol>
+    <li>Search for a line like <code>const uswds = require("./node_modules/uswds-gulp/config/uswds");</code> or <code>const uswds = "node_modules/uswds/dist"</code> in your Gulp setup. This indicates that you're using the Gulp setup we distributed as USWDS Gulp.</li>
+    <li>Update the USWDS <code>const</code> elements to the updated USWDS package location:
+      {% highlight diff -%}
+- const pkg = require("./node_modules/uswds/package.json");
++ const pkg = require("./node_modules/@uswds/uswds/package.json");
+      {%- endhighlight %}
+    </li>
+    <li><p>Search for references to <code>${uswds}</code> in the <code>includePaths</code> and <code>gulp.src()</code> found in your project’s Gulp files. These paths tell the Sass compiler where to look for USWDS source files.</p>
+      <p>Some of our file directories have moved in USWDS 3.0, and it is necessary to point Gulp to the correct location inside <code>node_modules/@uswds/uswds</code>. Below are snippets from the standard USWDS Gulp references and their necessary updates:</p>
+      {% highlight diff -%}
 ... 
 - gulp.src(`${uswds}/scss/theme/**/**`) 
 + gulp.src(`${uswds}/dist/theme/**/**`) 
@@ -405,9 +163,10 @@ includePaths: [ PROJECT_SASS_SRC,
 - `${uswds}/scss/packages`, 
 + `${uswds}/packages`, 
 ],
-{% endhighlight %}
-
-1. Recompile your Sass as usual. When it compiles, it is now using USWDS 3.0!
+      {%- endhighlight %}
+    </li>
+    <li>Recompile your Sass as usual. When it compiles, it is now using USWDS 3.0!</li>
+  </ol>
 </div>
 <!-- End USWDS Gulp section --> 
 
@@ -465,6 +224,271 @@ TK
 <!-- End custom Gulp workflow section --> 
 
 </div> <!--End compiler accordion -->
+
+
+### 4. Integrate any recent USWDS changes
+
+{:.border-top-2px.border-base-lighter.padding-top-1}
+Since USWDS 3.0 is based on USWDS 2.13.3, any markup or settings migration comes from migrating from your current version to 2.13.3. If you're already up-to-date, this won't take any time at all, but there have been some changes that might be breaking changes for your project over the course of the USWDS 2 branch. 
+
+These steps will help you do any preliminary migration before updating to USWDS 3.0. Follow the instructions in each section that applies to either your USWDS version or your settings version. Changes specific to markup have a <span class="usa-tag bg-accent-cool-darker">Markup</span> tag. Changes specific to settings have a <span class="usa-tag bg-accent-warm-darker">Settings</span> tag.
+
+<div class="usa-accordion usa-accordion--bordered">
+
+<!-- Start 2.13.0 section -->
+<h4 class="usa-accordion__heading">
+  <button
+    class="usa-accordion__button"
+    aria-controls="m-a1"
+  >
+    If you have code older than USWDS 2.13.0
+  </button>
+</h4>
+<div id="m-a1" class="usa-accordion__content site-prose" markdown="1">
+
+##### <span class="usa-tag bg-accent-cool-darker">Markup</span> Update any instance of the small search button.
+
+You'll need to update any instances of the small search button on your site. We're now using explicit images to better support legibility in instances where icons do not load. 
+
+###### What to do
+1. Check your codebase for instances of `<span class="usa-sr-only">Search</span>`.
+1. Update the markup from the old version to the new version if you use it.
+
+{:#old-code-2-13-0}
+###### Old code
+
+{:.site-terminal}
+```html
+<button class="usa-button" type="submit">
+  <span class="usa-sr-only">Search</span>
+<button>
+```
+
+{:#new-code-2-13-0}
+###### New code
+
+{:.site-terminal}
+```html
+<button class="usa-button" type="submit">    
+  <img 
+    src="{% raw %}{{ uswds image path }}{% endraw %}/usa-icons-bg/search--white.svg" 
+    class="usa-search__submit-icon" 
+    alt="Search" />
+</button>
+```
+
+{:.border-top-2px.border-base-lighter.padding-top-2}
+##### <span class="usa-tag bg-accent-cool-darker">Markup</span> Update social media icons in the footer.
+
+You'll need to update social media icons in the USWDS footer. We're now using explicit images to better support legibility in instances where icons do not load. 
+
+###### What to do
+
+1. Check your codebase for instances of `usa-social-link.`
+1. If you use it, Update the markup from the old version to the new version.
+
+{:#old-code-2-13-0-social}
+###### Old code
+
+{:.site-terminal}
+```html
+<a class="usa-social-link usa-social-link--facebook" 
+  href="{% raw %}{{ link }}{% endraw %}">
+  <span>Facebook</span>
+</a>
+<a class="usa-social-link usa-social-link--twitter" 
+  href="{% raw %}{{ link }}{% endraw %}">
+  <span>Twitter</span>
+</a>
+<a class="usa-social-link usa-social-link--youtube" 
+  href="{% raw %}{{ link }}{% endraw %}">
+  <span>YouTube</span>
+</a>
+<a class="usa-social-link usa-social-link--instagram" 
+  href="{% raw %}{{ link }}{% endraw %}">
+  <span>Instagram</span>
+</a>
+<a class="usa-social-link usa-social-link--rss" 
+  href="{% raw %}{{ link }}{% endraw %}">
+  <span>RSS</span>
+</a>
+```
+
+{:#new-code-2-13-0-social}
+###### New code
+
+{:.site-terminal}
+```html
+<a class="usa-social-link" href="{% raw %}{{ link }}{% endraw %}">
+  <img 
+    class="usa-social-link__icon" 
+    src="/usa-icons-bg/search--whi/usa-icons/facebook.svg" 
+    alt="Facebook" />
+</a>
+<a class="usa-social-link" href="{% raw %}{{ link }}{% endraw %}">
+  <img 
+    class="usa-social-link__icon" 
+    src="/usa-icons-bg/search--whi/usa-icons/twitter.svg" 
+    alt="Twitter" />
+</a>
+<a class="usa-social-link" href="{% raw %}{{ link }}{% endraw %}">
+  <img 
+    class="usa-social-link__icon" 
+    src="/usa-icons-bg/search--whi/usa-icons/youtube.svg" 
+    alt="YouTube" />
+</a>
+<a class="usa-social-link" href="{% raw %}{{ link }}{% endraw %}">
+  <img 
+    class="usa-social-link__icon" 
+    src="/usa-icons-bg/search--whi/usa-icons/instagram.svg" 
+    alt="Instagram" />
+</a>
+<a class="usa-social-link" href="{% raw %}{{ link }}{% endraw %}">
+  <img 
+    class="usa-social-link__icon" 
+    src="/usa-icons-bg/search--whi/usa-icons/rss_feed.svg" 
+    alt="RSS" />
+</a>
+```
+</div>
+<!-- End 2.13.0 section -->
+
+<!-- Start 2.12.0 section -->
+<h4 class="usa-accordion__heading">
+  <button
+    class="usa-accordion__button"
+    aria-controls="m-a2"
+  >
+    If you have code older than USWDS 2.12.0
+  </button>
+</h4>
+<div id="m-a2" class="usa-accordion__content site-prose" markdown="1">
+
+##### <span class="usa-tag bg-accent-warm-darker">Settings</span> Update three deprecated settings.
+
+Each of the following settings is no longer set-able. If you use any of these settings, they may no longer reflect your intention. These are the deprecated settings and their defaults:
+
+- `$theme-input-tile-background-color-selected: "primary-lighter"`
+- `$theme-input-tile-border-color: "base-lighter"`
+- `$theme-input-tile-border-color-selected: "primary-lighter"`
+  
+###### What to do
+1. Check this list to see if you changed the default value.
+1. If you did change the default value, this change will no longer affect the input tile.
+1. Assure that the input tile still displays well: check your codebase for instances of `input--tile` and check the affected part of your site if you get a match.
+
+{:.border-top-2px.border-base-lighter.padding-top-2}
+##### <span class="usa-tag bg-accent-warm-darker">Settings</span> Check three settings with changed defaults.
+
+If you use any of these settings in your code, the output may change:
+
+{:.usa-table}
+Setting | Old default | New default
+--- | --- | ---
+`$theme-color-success-dark` | `"green-cool-50"` | `"green-cool-50v"`
+`$theme-color-success-darker` | `"green-cool-80"` | `"green-cool-60v"`
+
+###### What to do
+1. Check your settings to see if they are set to the **old** default.
+1. If they use the **old** default, delete the setting from your settings file so it uses the system default.
+</div>
+<!-- End 2.12.0 section -->
+
+<!-- Start 2.11.2 section -->
+<h4 class="usa-accordion__heading">
+  <button
+    class="usa-accordion__button"
+    aria-controls="m-a3"
+  >
+    If you have code older than USWDS 2.11.2
+  </button>
+</h4>
+<div id="m-a3" class="usa-accordion__content site-prose" markdown="1">
+
+##### <span class="usa-tag bg-accent-warm-darker">Settings</span> Replace the deprecated `$theme-site-max-width` variable.
+
+We deprecated the `$theme-site-max-width` variable. We're using `$theme-grid-container-max-width` instead.
+  
+###### What to do
+1. Replace instances of `$theme-site-max-width` with `$theme-grid-container-max-width`
+
+{:.border-top-2px.border-base-lighter.padding-top-2}
+##### <span class="usa-tag bg-accent-cool-darker">Markup</span> Replace the `thumb_down_off_alt` icon with `thumb_down_alt` icon.
+
+We replaced the `thumb_down_off_alt` icon with `thumb_down_alt` in our default icon sprite.
+
+###### What to do
+1. Search for any instances of `thumb_down_off_alt`
+1. Replace it with `thumb_down_alt`
+</div>
+<!-- End 2.11.2 section --> 
+  
+<!-- Start 2.11.0 section -->
+<h4 class="usa-accordion__heading">
+  <button
+    class="usa-accordion__button"
+    aria-controls="m-a4"
+  >
+    If you have code older than USWDS 2.11.0
+  </button>
+</h4>
+<div id="m-a4" class="usa-accordion__content site-prose" markdown="1">
+
+##### <span class="usa-tag bg-accent-warm-darker">Settings</span> Check five settings with changed defaults.
+
+If you use any of these settings in your code, the output may change:
+
+{:.usa-table}
+Setting | Old default | New default
+--- | --- | ---
+`$theme-alert-icon-size` | `5` | `4`
+`$theme-table-border-color` | `"ink"` | `default`
+`$theme-table-header-text-color` | `"ink"` | `default`
+`$theme-table-stripe-text-colorr` | `"ink"` | `default`
+`$theme-table-text-color` | `"ink"` | `default`
+
+###### What to do
+1. Check your settings to see if they are set to the **old** default.
+2. If they use the **old** default, delete the setting from your settings file so it uses the system default.
+</div>
+<!-- End 2.11.0 section --> 
+  
+<!-- Start 2.10.1 section -->
+<h4 class="usa-accordion__heading">
+  <button
+    class="usa-accordion__button"
+    aria-controls="m-a5"
+  >
+    If you have code older than USWDS 2.10.1
+  </button>
+</h4>
+<div id="m-a5" class="usa-accordion__content site-prose" markdown="1">
+
+##### <span class="usa-tag bg-accent-warm-darker">Settings</span> Check two settings with changed defaults.
+If you use any of these settings in your code, the output may change:
+
+{:.usa-table}
+Setting | Old default | New default
+--- | --- | ---
+`$theme-breadcrumb-background-color` | `"white"` | `default`
+`$theme-alert-icon-size` | `4` | `5`
+
+###### What to do
+1. Check your settings to see if they are set to the **old** default.
+2. If they use the **old** default, delete the setting from your settings file so it uses the system default.
+
+{:.border-top-2px.border-base-lighter.padding-top-2}
+##### <span class="usa-tag bg-accent-cool-darker">Markup</span> Update footer logo headings to use proper semantics. 
+
+We improved the accessibility of the footer by converting a non-semantic heading into paragraph text.
+
+###### What to do
+1. Look for `<h3 class="usa-footer__logo-heading">` in your footer markup.
+1. Replace the `h3` in this markup with a `p` for both the opening and closing tags.
+</div>
+<!-- End 2.10.1 section --> 
+</div>
+<!-- End compiler accordion --> 
 
 ### 5. Update to Sass module syntax
 

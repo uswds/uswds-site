@@ -390,7 +390,7 @@ You'll need to update social media icons in the USWDS footer. We're now using ex
 ###### What to do
 
 1. Check your codebase for instances of `usa-social-link.`
-1. If you use it, Update the markup from the old version to the new version.
+1. If you use it, update the markup from the old version to the new version.
 
 {:#old-code-2-13-0-social}
 ###### Old code

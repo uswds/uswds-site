@@ -912,18 +912,16 @@ In a gulp workflow, we recommend using `gulp-sass` and `sass-embedded` together 
     npm uninstall sass
     npm uninstall gulp-dart-sass
     ```
-3. In your Sass gulp tasks file, replace your existing sass compiler package import with `gulp-sass` and `sass-embedded:`
-
-    ```diff
-    - const sass = require("gulp-dart-scss");
-    + const sass = require("gulp-sass")(require("sass-embedded"));
-    ```
+3. In your Sass gulp tasks file, replace your existing sass compiler package import with `gulp-sass` and `sass-embedded`:
+```diff
+- const sass = require("gulp-dart-scss");
++ const sass = require("gulp-sass")(require("sass-embedded"));
+```
 
 4. In your Sass gulp tasks file, remove any line that sets the sass.compiler:
-
-    ```diff
-    - sass.compiler = require("sass");
-    ```
+```diff
+- sass.compiler = require("sass");
+```
 
 5. Recompile.
 

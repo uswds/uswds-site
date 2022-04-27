@@ -19,7 +19,7 @@ For most USWDS 2 projects, migrating to USWDS 3.0 should only require changing  
 
 For migration assistance, start with our [USWDS 3.0 Migration Guide](/documentation/migration) → 
 
-If you have any questions or feedback let us know at the [USWDS Public Slack](https://gsa-tts.slack.com/archives/uswds-public), [GitHub Discussions](#), or [uswds@gsa.gov](mailto:uswds@gsa.gov). 
+If you have any questions or feedback let us know at the [USWDS Public Slack](https://gsa-tts.slack.com/archives/uswds-public), [GitHub Discussions](https://github.com/uswds/uswds/discussions), or [uswds@gsa.gov](mailto:uswds@gsa.gov). 
 
 If you aren't a member of the USWDS Public Slack, [sign up here](https://chat.18f.gov/) by "Joining a TTS Chat Room" —then select "U.S. Web Design System" as your chat topic.
 
@@ -28,15 +28,15 @@ USWDS 3.0 takes a modular, component-centered approach to the design system. We'
 
 ### Update to modern Sass syntax 
 
-USWDS 3.0 stylesheets use the most modern version of the Sass Module syntax. The Sass language that we use to write our stylesheets updated its syntax in 2020 and the old syntax (using `@import`) is now deprecated. Sass will no longer support the old syntax starting in October 2022. We want teams to use source code with reliable support throughout the life of their project, and USDS 3.0 allows teams to migrate to Sass Modules and maintain support.
+USWDS 3.0 stylesheets use the most modern version of the Sass module syntax. The Sass language that we use to write our stylesheets updated its syntax in 2020 and the old syntax (using `@import`) is now deprecated. Sass will no longer support the old syntax starting in October 2022. We want teams to use source code with reliable support throughout the life of their project, and USWDS 3.0 allows teams to migrate to Sass modules and maintain support.
 
-[Read more about the Sass Module syntax](https://sass-lang.com/) → 
+[Read more about the Sass module syntax](https://sass-lang.com/)
 
 ### Improve performance and reduce the size of your project CSS 
 
-Unbundle the design system with USWDS 3.0. Using USWDS 3.0 with Sass Module syntax allows teams to unbundle their implementations of USWDS and use only the components and code that they need on their project. Depending on your project, this could mean significant reduction of CSS code you ship. This means faster load times, better scores in performance evaluation tools, and a better developer experience. 
+Unbundle the design system with USWDS 3.0. Using USWDS 3.0 with Sass module syntax allows teams to unbundle their implementations of USWDS and use only the components and code that they need on their project. Depending on your project, this could mean significant reduction of CSS code you ship. This means faster load times, better scores in performance evaluation tools, and a better developer experience. 
 
-[Read more about USWDS Packages](#) → 
+[Read more about USWDS Packages](/components/packages/) →
 
 ### Simplify your project settings
 

@@ -869,7 +869,7 @@ For instance, if you found **usa-banner, usa-identifier, usa-button**, and **usa
 @forward "usa-identifier";
 ```
 
-Each package is smart enough to include any dependent package it needs to display properly. For instance, the **usa-banner** package will load
+Each package is smart enough to include any dependent package it needs to display properly. For instance, the **usa-banner** package will load `usa-layout-grid`, `usa-media-block`, and `uswds-fonts`.
 
 #### Managing utility classes
 

@@ -21,8 +21,8 @@ subnav:
   href: '#4-integrate-any-recent-uswds-changes'
 - text: 5. Update to Sass module syntax
   href: '#5-update-to-sass-module-syntax'
-- text: 6. Optimize your installation with component packages
-  href: '#6-optimize-your-installation-with-component-packages'
+- text: 6. Optimize your installation
+  href: '#6-optimize-your-installation'
 ---
 
 ## Why migrate to USWDS 3.0?
@@ -816,7 +816,7 @@ A component package is a self-contained module that includes only code related t
 
 Using individual component packages instead of the `uswds` bundle package can result in a significant reduction in the size of your project CSS and noticeable improvements to compile time. Complete the following steps to load component packages in your project:
 
-1. **Determine if your project is using the uswds package bundle.** By default, USWDS projects load the `uswds` package to include all the styles available to the design system. You will see a line like the following in your Sass entry point when you're using the `uswds` package:
+1. **Determine if your project is using the `uswds` package bundle.** By default, USWDS projects load the `uswds` package to include all the styles available to the design system. You will see a line like the following in your Sass entry point when you're using the `uswds` package:
 
     ```scss
     @forward "uswds";
@@ -828,7 +828,7 @@ Using individual component packages instead of the `uswds` bundle package can re
    
     A brute-force method to determine which packages your project uses is to search your codebase for use of a key class name associated with that component, like `usa-accordion` for accordions. All `usa-` prefixed packages use the same name as their CSS class. For reference, all the available packages in USWDS 3.0 are listed in the [table below](#available-packages).
 
-3. **Load the relevant component packages in your Sass entry point.** If you find a hit for the class name in your codebase, include the relevant package in your Sass entry point. 
+3. **Load the your project's necessary component packages in your Sass entry point.** If you find a hit for the class name in your codebase, include the relevant package in your Sass entry point. 
 
     For instance, if you found `usa-banner`, `usa-identifier`, `usa-button`, and `usa-accordion`, you might attach the following packages in your Sass entry point: 
 
@@ -850,6 +850,7 @@ Using individual component packages instead of the `uswds` bundle package can re
 + @forward "usa-button";
 + @forward "usa-identifier";
 ```
+
 #### Available packages 
 
 The following packages are available to any USWDS project. Each package includes component styles related to the package name, and additional styles related to any component dependencies.
@@ -886,30 +887,29 @@ The `sass-embedded` package compiles Sass faster than the `gulp-sass` or `gulp-d
 
 In a gulp workflow, we recommend using `gulp-sass` and `sass-embedded` together for the simplest and fastest compiling.
 
-1. Install `gulp-sass` and `sass-embedded` in your project:
+1. **Install `gulp-sass` and `sass-embedded` in your project:**
     `npm install gulp-sass sass-embedded –s`
 
-2. Uninstall any other sass compiling packages, if they exist:
+2. **Uninstall any other sass compiling packages, if they exist:**
 
     ```scss
     npm uninstall sass
     npm uninstall gulp-dart-sass
     ```
-3. In your Sass gulp tasks file, replace your existing sass compiler package import with `gulp-sass` and `sass-embedded:`
+3. In your Sass gulp tasks file, **replace your existing sass compiler package import with `gulp-sass` and `sass-embedded:`**
     
     ```diff
     - const sass = require("gulp-dart-scss");
     + const sass = require("gulp-sass")(require("sass-embedded"));
     ```
 
-4. In your Sass gulp tasks file, remove any line that sets the sass.compiler:
+4. In your Sass gulp tasks file, **remove any line that sets the sass.compiler:**
 
     ```diff
     - sass.compiler = require("sass");
     ```
 
-5. Recompile.
-
+5. **Recompile.**
 
 #### Reduce utility responsive breakpoints
 
@@ -958,7 +958,7 @@ Instead of simply forwarding the `usa-banner` component, you can import the comp
 @forward "uswds-fonts";
 ```
 
-Now, instead of pointing at the component packages, we can point directly at the component package source. For each usa- prefixed component package, append `/src/styles` to its name:
+Now, instead of pointing at the component packages, we can point directly at the component package source. For each `usa-` prefixed component package, append `/src/styles` to its name:
 
 ```scss
 @forward "usa-banner/src/styles";

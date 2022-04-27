@@ -549,7 +549,7 @@ Setting | Old default | New default
 `$theme-alert-icon-size` | `5` | `4`
 `$theme-table-border-color` | `"ink"` | `default`
 `$theme-table-header-text-color` | `"ink"` | `default`
-`$theme-table-stripe-text-colorr` | `"ink"` | `default`
+`$theme-table-stripe-text-color` | `"ink"` | `default`
 `$theme-table-text-color` | `"ink"` | `default`
 
 ###### What to do

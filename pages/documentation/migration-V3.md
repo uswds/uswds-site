@@ -627,7 +627,7 @@ These instructions will help you update your `@import` references to the new syn
 
    The bad thing about this process is that it can be tedious. The good thing is that you only have to do it once, and then you'll have a small, manageable project theme file that can be your baseline moving forward. And you'll never again have to worry about overwriting your settings files when you update to a new version of the design system.
 
-   We'll use an online diff service like [quickdiff.net](https://quickdiff.net/), [diffchecker.com](https://diffchecker.com), or [text-compare.com](https://text-compare.com/).
+   We recommend an online diff service like [quickdiff.net](https://quickdiff.net/), [diffchecker.com](https://diffchecker.com), or [text-compare.com](https://text-compare.com/).
 
    Each of the files below is the most current version of the USWDS default settings. For each of these files, use the diff tool to find the differences between your settings file and the current defaults.
 
@@ -638,7 +638,7 @@ These instructions will help you update your `@import` references to the new syn
    - [Typography settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.3/src/stylesheets/theme/_uswds-theme-typography.scss)
    - [Utilities settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.3/src/stylesheets/theme/_uswds-theme-utilities.scss)
 
-   Look for instances where your project has a different value than the default. Ignore cases where a setting exists in the current version but not in your version. This indicates a new setting that probably does not apply to your project. Instances where a setting exists in your version but not in the current version can likely be ignored. This usually indicates a deprecated setting that should not affect your project, but it can be worth checking to see if that variable appears anywhere else in your codebase!
+   Look for instances where your project has a different value than the default. Ignore cases where a setting exists in the current version but not in your version. This indicates a new setting that probably does not apply to your project. Instances where a setting exists in your version but not in the current version can likely be ignored. This usually indicates a deprecated setting that should not affect your project, but it can be worth checking to see if that variable appears anywhere else in your codebase.
 
    When you see a setting that appears different from the current default, this is probably one of your project's custom settings. Copy this setting and add it to your new `_uswds-theme.scss` file.
 
@@ -665,7 +665,7 @@ These instructions will help you update your `@import` references to the new syn
     "widescreen": true
    );
    ```
-4. **Load these customizations into USWDS core.** Once you have all your project-specific settings in a single file, we'll load these customizations into the special `uswds-core` package that powers the design system. We do this with a special `@use ... with` statement:
+1. **Load these customizations into USWDS core.** Once you have all your project-specific settings in a single file, we'll load these customizations into the special `uswds-core` package that powers the design system. We do this with a special `@use ... with` statement:
 
     {% raw %}
     ```scss
@@ -727,7 +727,7 @@ These instructions will help you update your `@import` references to the new syn
     );
     ```
     Note that the new `@use` statement is a list of variables, so each line ends in a comma `,` instead of a semicolon `;`.
-5. **Use the new theme file in your project** If your project already was using a project-specific theme settings file, you're all set. If not, you'll need to open your project's Sass entry point, typically `styles.scss`. It usually looks something like this:
+1. **Use the new theme file in your project** If your project already was using a project-specific theme settings file, you're all set. If not, you'll need to open your project's Sass entry point, typically `styles.scss`. It usually looks something like this:
 
     ```scss
     /*

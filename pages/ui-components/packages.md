@@ -3,7 +3,7 @@ permalink: /components/packages/
 layout: styleguide
 title: Packages
 category: Components
-lead: USWDS component packages allow you to import only the component your project needs.
+lead: USWDS component packages allow you to import only the components your project needs.
 type: docs
 subnav:
   - text: Introducing packages
@@ -39,10 +39,10 @@ You can include only the code you need, with something like:
 {% assign uswdsPackage = packages | where: "name", "uswds" | first %}
 Using packages helps reduce unused code, reduces the size of the final compiled CSS, and typically results in faster compile times. The `uswds` package included by default in most projects is {{ uswdsPackage.fullSize | times: 0.185 | round }} KB gzipped. Using packages typically cuts that number by half.
 
-With packages and Sass Module syntax in USWDS 3.0, you can be confident that packages that share code dependencies will only include those dependencies on in a project. 
+With packages and Sass Module syntax in USWDS 3.0, you can be confident that packages that share code dependencies will only include those dependencies once in a project. 
 
 ### The uswds-core package
-The `uswds-core` package is a new package in USWDS 3.0. `uswds-core` is the engine of the design system, and includes all the functions, mixins, placeholders, tokens, and fonts necessary to white USWDS Sass.
+The `uswds-core` package is a new package in USWDS 3.0. `uswds-core` is the engine of the design system, and includes all the functions, mixins, placeholders, tokens, and fonts necessary to write USWDS Sass.
 
 Any custom Sass you write needs to `@use "uswds-core"` at the top of the file to load the USWDS desigbn language. We suggest using `@uswds "uswds-core" as *` to add USWDS to the global namespace. For example:
 
@@ -88,7 +88,7 @@ As of USWDS 3.0, the USWDS codebase is organized around packages. Packages live 
 │   │   └── _index.scss_/
 ```
 
-The `/[package]/_index.scss` file is the Sass entry point for the package styles. It forwards any package style dependencies in addition to the compomnent source itself, which lives in `[package]/src/styles]`. The `usa-search` package looks something like this:
+The `/[package]/_index.scss` file is the Sass entry point for the package styles. It forwards any package style dependencies in addition to the component source itself, which lives in `[package]/src/styles]`. The `usa-search` package looks something like this:
 
 ```sass
 /* ./packages/usa-search/_index.scss */
@@ -105,9 +105,9 @@ The `/[package]/_index.scss` file is the Sass entry point for the package styles
 ```
 
 ### Importing package source only 
-Developers can save some compile time by bypassing the package Sass entry point, and forwarding straight to the package source. Only `usa-` prefxed packages have their own source files available to this technique. 
+Developers can save some compile time by bypassing the package Sass entry point, and forwarding straight to the package source. Only `usa-` prefixed packages have their own source files available to this technique. 
 
-Using this technique speeds up compiles, but requires that developers forward any package dependency manually. For instance, let's imagine a project with the following packages in it's Sass entry point:
+Using this technique speeds up compiles, but requires that developers forward any package dependency manually. For instance, let's imagine a project with the following packages in its Sass entry point:
 
 ```sass
 @forward "usa-accordion";
@@ -131,7 +131,7 @@ Using only package source would result in the following:
 @forward "uswds-helpers";
 ```
 
-If you suffer from slow compiles, it may be worth experiementing with source forwarding. 
+If you suffer from slow compiles, it may be worth experimenting with source forwarding. 
 
 ## Package Sass requirements: Load paths
 Using USWDS 3.0 and packages requires compiling your Sass with load paths. Load paths tell your Sass compiler where to look for USWDS packages. Any compiler needs to include the following load paths:

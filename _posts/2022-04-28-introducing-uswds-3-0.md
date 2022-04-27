@@ -5,11 +5,11 @@ tags:
 category: About
 author: Dan O. Williams
 meta:
-  og:image: /img/introducing-uswds-2-0/feature-image.jpg
+  og:image: /img/introducing-uswds-3/introducing-uswds-3.jpg
 excerpt: USWDS is an important major design system update that's easy to apply to an existing USWDS 2 project. USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS. Where USWDS 2.0 introduced a new design language and changed the way we built our components from the ground up, USWDS 3.0 adds important incremental improvements without fundamentally changing how the design system works.
 ---
 
-<img src="{{ site.baseurl }}/img/introducing-uswds-2-0/feature-image.jpg" alt="A colorful collection of screens and interface components" class="width-full tablet:width-tablet-lg maxw-full tablet:maxw-tablet-lg">
+<img src="{{ site.baseurl }}/img/introducing-uswds-3/introducing-uswds-3.jpg" alt="A colorful collection of screens and interface components" class="width-full tablet:width-tablet-lg maxw-full tablet:maxw-tablet-lg">
 
 ## A more modular design system, incrementally
 

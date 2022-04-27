@@ -754,19 +754,19 @@ These instructions will help you update your `@import` references to the new syn
 
     We can remove all the individual theme settings from our Sass entry point and replace them with a single `@forward` statement, using the project-specific settings file that we just created, like so:
 
-    ```diff
-    - // Import individual theme settings
-    - @forward "uswds-theme-general";
-    - @forward "uswds-theme-typography";
-    - @forward "uswds-theme-spacing";
-    - @forward "uswds-theme-color";
-    - @forward "uswds-theme-utilities";
-    - // components import needs to be last
-    - @forward "uswds-theme-components";
-    + @forward "uswds-theme";
-    @forward "uswds";
-    @forward "uswds-custom-styles";
-    ```
+```diff
+- // Import individual theme settings
+- @forward "uswds-theme-general";
+- @forward "uswds-theme-typography";
+- @forward "uswds-theme-spacing";
+- @forward "uswds-theme-color";
+- @forward "uswds-theme-utilities";
+- // components import needs to be last
+- @forward "uswds-theme-components";
++ @forward "uswds-theme";
+  @forward "uswds";
+  @forward "uswds-custom-styles";
+```
 
 Now your project is using its theme settings in the proper USWDS 3.0 format! You can safely remove the old theme files from your project.
 
@@ -842,7 +842,6 @@ Using individual component packages instead of the `uswds` bundle package can re
     Each package is smart enough to include any dependent package it needs to display properly.
 
 4. **Remove your reference to the uswds bundle package.** Once all of your project's component packages are loaded, you can safely remove the `uswds` package reference from your entry point.
-   
 ```diff
 - @forward "uswds";
 + @forward "usa-accordion";
@@ -888,21 +887,23 @@ The `sass-embedded` package compiles Sass faster than the `gulp-sass` or `gulp-d
 In a gulp workflow, we recommend using `gulp-sass` and `sass-embedded` together for the simplest and fastest compiling.
 
 1. **Install `gulp-sass` and `sass-embedded` in your project:**
-    `npm install gulp-sass sass-embedded –s`
+    ```
+    npm install gulp-sass sass-embedded –s
+    ```
 
 2. **Uninstall any other sass compiling packages, if they exist:**
 
-    ```scss
+    ```
     npm uninstall sass
     npm uninstall gulp-dart-sass
     ```
-3. In your Sass gulp tasks file, replace your existing sass compiler package import with `gulp-sass` and `sass-embedded`:
+3. In your Sass gulp tasks file, **replace your existing sass compiler package import with `gulp-sass` and `sass-embedded`:**
 ```diff
 - const sass = require("gulp-dart-scss");
 + const sass = require("gulp-sass")(require("sass-embedded"));
 ```
 
-4. In your Sass gulp tasks file, remove any line that sets the sass.compiler:
+4. In your Sass gulp tasks file, **remove any line that sets the sass.compiler:**
 ```diff
 - sass.compiler = require("sass");
 ```

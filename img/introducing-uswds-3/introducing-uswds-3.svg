@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1548px" height="906px" viewBox="0 0 1548 906" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>introducing-uswds-3</title>
+    <defs>
+        <polygon id="path-1" points="215 0 401.195462 107.5 401.195462 322.5 215 430 28.8045382 322.5 28.8045382 107.5"></polygon>
+        <polygon id="path-3" points="212.51825 1.30248307 556.317244 251.122861 0 655.366401"></polygon>
+        <polygon id="path-5" points="2.4697729 249.773532 346.302804 0 558.849774 654.007264"></polygon>
+        <polygon id="path-7" points="131.298495 404.233732 0 0.0448220169 687.678496 0"></polygon>
+        <polygon id="path-9" points="424.979963 654.063918 0 654.034965 212.461714 -3.70187954e-14"></polygon>
+        <polygon id="path-11" points="688.890792 2.66535327e-12 557.537225 404.171016 1.16728983 0"></polygon>
+        <polygon id="path-13" points="215 0 401.195462 107.5 401.195462 322.5 215 430 28.8045382 322.5 28.8045382 107.5"></polygon>
+        <polygon id="path-15" points="212.51825 1.30248307 556.317244 251.122861 0 655.366401"></polygon>
+        <polygon id="path-17" points="2.4697729 249.773532 346.302804 0 558.849774 654.007264"></polygon>
+        <polygon id="path-19" points="131.298495 404.233732 0 0.0448220169 687.678496 0"></polygon>
+        <polygon id="path-21" points="424.979963 654.063918 0 654.034965 212.461714 -3.70187954e-14"></polygon>
+        <polygon id="path-23" points="688.890792 2.66535327e-12 557.537225 404.171016 1.16728983 0"></polygon>
+        <polygon id="path-25" points="215 0 401.195462 107.5 401.195462 322.5 215 430 28.8045382 322.5 28.8045382 107.5"></polygon>
+        <polygon id="path-27" points="212.51825 1.30248307 556.317244 251.122861 0 655.366401"></polygon>
+        <polygon id="path-29" points="2.4697729 249.773532 346.302804 0 558.849774 654.007264"></polygon>
+        <polygon id="path-31" points="131.298495 404.233732 0 0.0448220169 687.678496 0"></polygon>
+        <polygon id="path-33" points="424.979963 654.063918 0 654.034965 212.461714 -3.70187954e-14"></polygon>
+        <polygon id="path-35" points="688.890792 2.66535327e-12 557.537225 404.171016 1.16728983 0"></polygon>
+        <polygon id="path-37" points="44 0 82.1051178 22 82.1051178 66 44 88 5.89488223 66 5.89488223 22"></polygon>
+        <polygon id="path-39" points="43.5920786 0.266365688 114.112671 51.3561484 0 134.026404"></polygon>
+        <polygon id="path-41" points="0.506603714 51.0802023 71.0341773 0 114.632147 133.748453"></polygon>
+        <polygon id="path-43" points="26.9321544 82.6682503 0 0.00916637434 141.057698 0"></polygon>
+        <polygon id="path-45" points="87.1725605 133.760039 0 133.754118 43.5804819 -7.5705682e-15"></polygon>
+        <polygon id="path-47" points="141.306366 5.4508091e-13 114.362915 82.6554245 0.239436332 0"></polygon>
+        <polygon id="path-49" points="107.5 0 200.597731 53.75 200.597731 161.25 107.5 215 14.4022691 161.25 14.4022691 53.75"></polygon>
+        <polygon id="path-51" points="106.441702 0.651241535 278.636561 125.561431 0 327.683201"></polygon>
+        <polygon id="path-53" points="1.23700827 124.886766 173.448915 0 279.905002 327.003632"></polygon>
+        <polygon id="path-55" points="65.7620478 202.116866 0 0.0224110085 344.430041 0"></polygon>
+        <polygon id="path-57" points="212.855087 327.031959 0 327.017483 106.413385 -1.85093977e-14"></polygon>
+        <polygon id="path-59" points="345.037231 1.33267663e-12 279.2476 202.085508 0.58464775 0"></polygon>
+        <polygon id="path-61" points="107.5 0 200.597731 53.75 200.597731 161.25 107.5 215 14.4022691 161.25 14.4022691 53.75"></polygon>
+        <polygon id="path-63" points="106.441702 0.651241535 278.636561 125.561431 0 327.683201"></polygon>
+        <polygon id="path-65" points="1.23700827 124.886766 173.448915 0 279.905002 327.003632"></polygon>
+        <polygon id="path-67" points="65.7620478 202.116866 0 0.0224110085 344.430041 0"></polygon>
+        <polygon id="path-69" points="212.855087 327.031959 0 327.017483 106.413385 -1.85093977e-14"></polygon>
+        <polygon id="path-71" points="345.037231 1.33267663e-12 279.2476 202.085508 0.58464775 0"></polygon>
+        <polygon id="path-73" points="44 0 82.1051178 22 82.1051178 66 44 88 5.89488223 66 5.89488223 22"></polygon>
+        <polygon id="path-75" points="43.5920786 0.266365688 114.112671 51.3561484 0 134.026404"></polygon>
+        <polygon id="path-77" points="0.506603714 51.0802023 71.0341773 0 114.632147 133.748453"></polygon>
+        <polygon id="path-79" points="26.9321544 82.6682503 0 0.00916637434 141.057698 0"></polygon>
+        <polygon id="path-81" points="87.1725605 133.760039 0 133.754118 43.5804819 -7.5705682e-15"></polygon>
+        <polygon id="path-83" points="141.306366 5.4508091e-13 114.362915 82.6554245 0.239436332 0"></polygon>
+        <polygon id="path-85" points="44 0 82.1051178 22 82.1051178 66 44 88 5.89488223 66 5.89488223 22"></polygon>
+        <polygon id="path-87" points="43.5920786 0.266365688 114.112671 51.3561484 0 134.026404"></polygon>
+        <polygon id="path-89" points="0.506603714 51.0802023 71.0341773 0 114.632147 133.748453"></polygon>
+        <polygon id="path-91" points="26.9321544 82.6682503 0 0.00916637434 141.057698 0"></polygon>
+        <polygon id="path-93" points="87.1725605 133.760039 0 133.754118 43.5804819 -7.5705682e-15"></polygon>
+        <polygon id="path-95" points="141.306366 5.4508091e-13 114.362915 82.6554245 0.239436332 0"></polygon>
+    </defs>
+    <g id="introducing-uswds-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#F0F0F0" x="0" y="0" width="1548" height="906"></rect>
+        <g id="Polygon-2" transform="translate(559.000000, 238.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <path stroke="#1B1B1B" stroke-width="8" d="M215,-4.61880215 L405.195462,105.190599 L405.195462,324.809401 L215,434.618802 L24.8045382,324.809401 L24.8045382,105.190599 L215,-4.61880215 Z"></path>
+            <g id="Group" mask="url(#mask-2)">
+                <g transform="translate(-695.241535, -425.000000)" id="logos/color/uswds-logo-editable">
+                    <g id="Group-3" transform="translate(0.000000, 33.864560)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-4)">
+                            <g transform="translate(-13.024831, -33.864560)" id="9:00">
+                                <polygon id="Rectangle" fill="#F6BD9C" points="0 0 588.722348 0 588.722348 747.625282 0 747.625282"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(15.629797, 497.548533)">
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-6)">
+                            <g transform="translate(-28.654628, -41.679458)" id="7:00">
+                                <polygon id="Rectangle" fill="#EF5E25" points="0 0 619.981941 0 619.981941 718.970655 0 718.970655"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-5" transform="translate(505.363431, 747.625282)">
+                        <mask id="mask-8" fill="white">
+                            <use xlink:href="#path-7"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-8)">
+                            <g transform="translate(-117.223476, -192.767494)" id="5:00">
+                                <polygon id="Rectangle" fill="#2E2E2E" points="0 0 914.343115 0 914.343115 656.451467 0 656.451467"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group" transform="translate(786.699774, 36.469526)">
+                        <mask id="mask-10" fill="white">
+                            <use xlink:href="#path-9"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g mask="url(#mask-10)" id="3:00">
+                            <g transform="translate(-5.209932, -36.469526)">
+                                <polygon id="Rectangle" fill="#81AEFC" points="0 0 432.424379 0 432.424379 713.760722 0 713.760722"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-2" transform="translate(260.496614, 0.000000)">
+                        <mask id="mask-12" fill="white">
+                            <use xlink:href="#path-11"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-12)">
+                            <g transform="translate(-28.654628, 0.000000)" id="12:00">
+                                <rect id="Rectangle" fill="#4A77B4" x="0" y="0" width="765.860045" height="403.769752"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g id="Polygon-2-Copy" transform="translate(1025.000000, 238.000000)">
+            <mask id="mask-14" fill="white">
+                <use xlink:href="#path-13"></use>
+            </mask>
+            <path stroke="#1B1B1B" stroke-width="8" d="M215,-4.61880215 L405.195462,105.190599 L405.195462,324.809401 L215,434.618802 L24.8045382,324.809401 L24.8045382,105.190599 L215,-4.61880215 Z"></path>
+            <g id="Group" mask="url(#mask-14)">
+                <g transform="translate(-353.241535, -594.000000)" id="logos/color/uswds-logo-editable">
+                    <g id="Group-3" transform="translate(0.000000, 33.864560)">
+                        <mask id="mask-16" fill="white">
+                            <use xlink:href="#path-15"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-16)">
+                            <g transform="translate(-13.024831, -33.864560)" id="9:00">
+                                <polygon id="Rectangle" fill="#FFFFFF" points="0 0 588.722348 0 588.722348 747.625282 0 747.625282"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(15.629797, 497.548533)">
+                        <mask id="mask-18" fill="white">
+                            <use xlink:href="#path-17"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-18)">
+                            <g transform="translate(-28.654628, -41.679458)" id="7:00">
+                                <polygon id="Rectangle" fill="#9C3D10" points="0 0 619.981941 0 619.981941 718.970655 0 718.970655"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-5" transform="translate(505.363431, 747.625282)">
+                        <mask id="mask-20" fill="white">
+                            <use xlink:href="#path-19"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-20)">
+                            <g transform="translate(-117.223476, -192.767494)" id="5:00">
+                                <polygon id="Rectangle" fill="#2E2E2E" points="0 0 914.343115 0 914.343115 656.451467 0 656.451467"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group" transform="translate(786.699774, 36.469526)">
+                        <mask id="mask-22" fill="white">
+                            <use xlink:href="#path-21"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g mask="url(#mask-22)" id="3:00">
+                            <g transform="translate(-5.209932, -36.469526)">
+                                <polygon id="Rectangle" fill="#81AEFC" points="0 0 432.424379 0 432.424379 713.760722 0 713.760722"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-2" transform="translate(260.496614, 0.000000)">
+                        <mask id="mask-24" fill="white">
+                            <use xlink:href="#path-23"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-24)">
+                            <g transform="translate(-28.654628, 0.000000)" id="12:00">
+                                <rect id="Rectangle" fill="#4A77B4" x="0" y="0" width="765.860045" height="403.769752"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g id="Polygon-2-Copy-2" transform="translate(93.000000, 238.000000)">
+            <mask id="mask-26" fill="white">
+                <use xlink:href="#path-25"></use>
+            </mask>
+            <path stroke="#1B1B1B" stroke-width="8" d="M215,-4.61880215 L405.195462,105.190599 L405.195462,324.809401 L215,434.618802 L24.8045382,324.809401 L24.8045382,105.190599 L215,-4.61880215 Z"></path>
+            <g id="Group" mask="url(#mask-26)">
+                <g transform="translate(-377.241535, -69.000000)" id="logos/color/uswds-logo-editable">
+                    <g id="Group-3" transform="translate(0.000000, 33.864560)">
+                        <mask id="mask-28" fill="white">
+                            <use xlink:href="#path-27"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-28)">
+                            <g transform="translate(-13.024831, -33.864560)" id="9:00">
+                                <polygon id="Rectangle" fill="#E5A000" points="0 0 588.722348 0 588.722348 747.625282 0 747.625282"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(15.629797, 497.548533)">
+                        <mask id="mask-30" fill="white">
+                            <use xlink:href="#path-29"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-30)">
+                            <g transform="translate(-28.654628, -41.679458)" id="7:00">
+                                <polygon id="Rectangle" fill="#EF5E25" points="0 0 619.981941 0 619.981941 718.970655 0 718.970655"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-5" transform="translate(505.363431, 747.625282)">
+                        <mask id="mask-32" fill="white">
+                            <use xlink:href="#path-31"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-32)">
+                            <g transform="translate(-117.223476, -192.767494)" id="5:00">
+                                <polygon id="Rectangle" fill="#2E2E2E" points="0 0 914.343115 0 914.343115 656.451467 0 656.451467"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group" transform="translate(786.699774, 36.469526)">
+                        <mask id="mask-34" fill="white">
+                            <use xlink:href="#path-33"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g mask="url(#mask-34)" id="3:00">
+                            <g transform="translate(-5.209932, -36.469526)">
+                                <polygon id="Rectangle" fill="#81AEFC" points="0 0 432.424379 0 432.424379 713.760722 0 713.760722"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-2" transform="translate(260.496614, 0.000000)">
+                        <mask id="mask-36" fill="white">
+                            <use xlink:href="#path-35"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-36)">
+                            <g transform="translate(-28.654628, 0.000000)" id="12:00">
+                                <polygon id="Rectangle" fill="#04C585" points="0 0 765.860045 0 765.860045 403.769752 0 403.769752"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g id="Polygon-2-Copy-3" transform="translate(324.000000, 143.000000)">
+            <mask id="mask-38" fill="white">
+                <use xlink:href="#path-37"></use>
+            </mask>
+            <path stroke="#1B1B1B" stroke-width="8" d="M44,-4.61880215 L86.1051178,19.6905989 L86.1051178,68.3094011 L44,92.6188022 L1.89488223,68.3094011 L1.89488223,19.6905989 L44,-4.61880215 Z"></path>
+            <g id="Group" mask="url(#mask-38)">
+                <g transform="translate(17.000000, -100.000000)" id="logos/color/uswds-logo-editable">
+                    <g id="Group-3" transform="translate(0.000000, 6.925508)">
+                        <mask id="mask-40" fill="white">
+                            <use xlink:href="#path-39"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-40)">
+                            <g transform="translate(-2.671674, -6.925508)" id="9:00">
+                                <polygon id="Rectangle" fill="#E895B3" points="0 0 120.759657 0 120.759657 152.893905 0 152.893905"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(3.206009, 101.751693)">
+                        <mask id="mask-42" fill="white">
+                            <use xlink:href="#path-41"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-42)">
+                            <g transform="translate(-5.877682, -8.523702)" id="7:00">
+                                <polygon id="Rectangle" fill="#C39DEB" points="0 0 127.171674 0 127.171674 147.03386 0 147.03386"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-5" transform="translate(103.660944, 152.893905)">
+                        <mask id="mask-44" fill="white">
+                            <use xlink:href="#path-43"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-44)">
+                            <g transform="translate(-24.045064, -39.422122)" id="5:00">
+                                <polygon id="Rectangle" fill="#2E2E2E" points="0 0 187.551502 0 187.551502 134.248307 0 134.248307"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group" transform="translate(161.369099, 7.458239)">
+                        <mask id="mask-46" fill="white">
+                            <use xlink:href="#path-45"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g mask="url(#mask-46)" id="3:00">
+                            <g transform="translate(-1.068670, -7.458239)">
+                                <polygon id="Rectangle" fill="#81AEFC" points="0 0 88.6995708 0 88.6995708 145.968397 0 145.968397"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-2" transform="translate(53.433476, 0.000000)">
+                        <mask id="mask-48" fill="white">
+                            <use xlink:href="#path-47"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-48)">
+                            <g transform="translate(-5.877682, 0.000000)" id="12:00">
+                                <polygon id="Rectangle" fill="#04C585" points="0 0 157.094421 0 157.094421 82.5733634 0 82.5733634"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g id="Polygon-2-Copy-6" transform="translate(438.000000, 80.000000)">
+            <mask id="mask-50" fill="white">
+                <use xlink:href="#path-49"></use>
+            </mask>
+            <path stroke="#1B1B1B" stroke-width="8" d="M107.5,-4.61880215 L204.597731,51.4405989 L204.597731,163.559401 L107.5,219.618802 L10.4022691,163.559401 L10.4022691,51.4405989 L107.5,-4.61880215 Z"></path>
+            <g id="Group" mask="url(#mask-50)">
+                <g transform="translate(-315.000000, -50.000000)" id="logos/color/uswds-logo-editable">
+                    <g id="Group-3" transform="translate(0.000000, 16.932280)">
+                        <mask id="mask-52" fill="white">
+                            <use xlink:href="#path-51"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-52)">
+                            <g transform="translate(-6.523605, -16.932280)" id="9:00">
+                                <polygon id="Rectangle" fill="#E895B3" points="0 0 294.866953 0 294.866953 373.812641 0 373.812641"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(7.828326, 248.774266)">
+                        <mask id="mask-54" fill="white">
+                            <use xlink:href="#path-53"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-54)">
+                            <g transform="translate(-14.351931, -20.839729)" id="7:00">
+                                <polygon id="Rectangle" fill="#C39DEB" points="0 0 310.523605 0 310.523605 359.485327 0 359.485327"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-5" transform="translate(253.115880, 373.812641)">
+                        <mask id="mask-56" fill="white">
+                            <use xlink:href="#path-55"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-56)">
+                            <g transform="translate(-58.712446, -96.383747)" id="5:00">
+                                <polygon id="Rectangle" fill="#2E2E2E" points="0 0 457.957082 0 457.957082 328.225734 0 328.225734"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group" transform="translate(394.025751, 18.234763)">
+                        <mask id="mask-58" fill="white">
+                            <use xlink:href="#path-57"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g mask="url(#mask-58)" id="3:00">
+                            <g transform="translate(-2.609442, -18.234763)">
+                                <polygon id="Rectangle" fill="#81AEFC" points="0 0 216.583691 0 216.583691 356.880361 0 356.880361"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-2" transform="translate(130.472103, 0.000000)">
+                        <mask id="mask-60" fill="white">
+                            <use xlink:href="#path-59"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-60)">
+                            <g transform="translate(-14.351931, 0.000000)" id="12:00">
+                                <polygon id="Rectangle" fill="#C7EFE2" points="0 0 383.587983 0 383.587983 201.884876 0 201.884876"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g id="Polygon-2-Copy-7" transform="translate(902.000000, 603.000000)">
+            <mask id="mask-62" fill="white">
+                <use xlink:href="#path-61"></use>
+            </mask>
+            <path stroke="#1B1B1B" stroke-width="8" d="M107.5,-4.61880215 L204.597731,51.4405989 L204.597731,163.559401 L107.5,219.618802 L10.4022691,163.559401 L10.4022691,51.4405989 L107.5,-4.61880215 Z"></path>
+            <g id="Group" mask="url(#mask-62)">
+                <g transform="translate(-128.000000, -274.000000)" id="logos/color/uswds-logo-editable">
+                    <g id="Group-3" transform="translate(0.000000, 16.932280)">
+                        <mask id="mask-64" fill="white">
+                            <use xlink:href="#path-63"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-64)">
+                            <g transform="translate(-6.523605, -16.932280)" id="9:00">
+                                <polygon id="Rectangle" fill="#E895B3" points="0 0 294.866953 0 294.866953 373.812641 0 373.812641"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(7.828326, 248.774266)">
+                        <mask id="mask-66" fill="white">
+                            <use xlink:href="#path-65"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-66)">
+                            <g transform="translate(-14.351931, -20.839729)" id="7:00">
+                                <polygon id="Rectangle" fill="#FACE00" points="0 0 310.523605 0 310.523605 359.485327 0 359.485327"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-5" transform="translate(253.115880, 373.812641)">
+                        <mask id="mask-68" fill="white">
+                            <use xlink:href="#path-67"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-68)">
+                            <g transform="translate(-58.712446, -96.383747)" id="5:00">
+                                <polygon id="Rectangle" fill="#E5A000" points="0 0 457.957082 0 457.957082 328.225734 0 328.225734"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group" transform="translate(394.025751, 18.234763)">
+                        <mask id="mask-70" fill="white">
+                            <use xlink:href="#path-69"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g mask="url(#mask-70)" id="3:00">
+                            <g transform="translate(-2.609442, -18.234763)">
+                                <polygon id="Rectangle" fill="#81AEFC" points="0 0 216.583691 0 216.583691 356.880361 0 356.880361"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-2" transform="translate(130.472103, 0.000000)">
+                        <mask id="mask-72" fill="white">
+                            <use xlink:href="#path-71"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-72)">
+                            <g transform="translate(-14.351931, 0.000000)" id="12:00">
+                                <polygon id="Rectangle" fill="#04C585" points="0 0 383.587983 0 383.587983 201.884876 0 201.884876"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g id="Polygon-2-Copy-5" transform="translate(994.000000, 226.000000)">
+            <mask id="mask-74" fill="white">
+                <use xlink:href="#path-73"></use>
+            </mask>
+            <path stroke="#1B1B1B" stroke-width="8" d="M44,-4.61880215 L86.1051178,19.6905989 L86.1051178,68.3094011 L44,92.6188022 L1.89488223,68.3094011 L1.89488223,19.6905989 L44,-4.61880215 Z"></path>
+            <g id="Group" mask="url(#mask-74)">
+                <g transform="translate(-125.000000, -30.000000)" id="logos/color/uswds-logo-editable">
+                    <g id="Group-3" transform="translate(0.000000, 6.925508)">
+                        <mask id="mask-76" fill="white">
+                            <use xlink:href="#path-75"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-76)">
+                            <g transform="translate(-2.671674, -6.925508)" id="9:00">
+                                <polygon id="Rectangle" fill="#E5A000" points="0 0 120.759657 0 120.759657 152.893905 0 152.893905"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(3.206009, 101.751693)">
+                        <mask id="mask-78" fill="white">
+                            <use xlink:href="#path-77"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-78)">
+                            <g transform="translate(-5.877682, -8.523702)" id="7:00">
+                                <polygon id="Rectangle" fill="#719F2A" points="0 0 127.171674 0 127.171674 147.03386 0 147.03386"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-5" transform="translate(103.660944, 152.893905)">
+                        <mask id="mask-80" fill="white">
+                            <use xlink:href="#path-79"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-80)">
+                            <g transform="translate(-24.045064, -39.422122)" id="5:00">
+                                <polygon id="Rectangle" fill="#2E2E2E" points="0 0 187.551502 0 187.551502 134.248307 0 134.248307"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group" transform="translate(161.369099, 7.458239)">
+                        <mask id="mask-82" fill="white">
+                            <use xlink:href="#path-81"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g mask="url(#mask-82)" id="3:00">
+                            <g transform="translate(-1.068670, -7.458239)">
+                                <polygon id="Rectangle" fill="#E7F434" points="0 0 88.6995708 0 88.6995708 145.968397 0 145.968397"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-2" transform="translate(53.433476, 0.000000)">
+                        <mask id="mask-84" fill="white">
+                            <use xlink:href="#path-83"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-84)">
+                            <g transform="translate(-5.877682, 0.000000)" id="12:00">
+                                <polygon id="Rectangle" fill="#7E9C1D" points="0 0 157.094421 0 157.094421 82.5733634 0 82.5733634"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g id="Polygon-2-Copy-4" transform="translate(521.000000, 590.000000)">
+            <mask id="mask-86" fill="white">
+                <use xlink:href="#path-85"></use>
+            </mask>
+            <path stroke="#1B1B1B" stroke-width="8" d="M44,-4.61880215 L86.1051178,19.6905989 L86.1051178,68.3094011 L44,92.6188022 L1.89488223,68.3094011 L1.89488223,19.6905989 L44,-4.61880215 Z"></path>
+            <g id="Group" mask="url(#mask-86)">
+                <g transform="translate(-16.000000, -74.000000)" id="logos/color/uswds-logo-editable">
+                    <g id="Group-3" transform="translate(0.000000, 6.925508)">
+                        <mask id="mask-88" fill="white">
+                            <use xlink:href="#path-87"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-88)">
+                            <g transform="translate(-2.671674, -6.925508)" id="9:00">
+                                <polygon id="Rectangle" fill="#E5A000" points="0 0 120.759657 0 120.759657 152.893905 0 152.893905"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-4" transform="translate(3.206009, 101.751693)">
+                        <mask id="mask-90" fill="white">
+                            <use xlink:href="#path-89"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-90)">
+                            <g transform="translate(-5.877682, -8.523702)" id="7:00">
+                                <polygon id="Rectangle" fill="#EF5E25" points="0 0 127.171674 0 127.171674 147.03386 0 147.03386"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-5" transform="translate(103.660944, 152.893905)">
+                        <mask id="mask-92" fill="white">
+                            <use xlink:href="#path-91"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-92)">
+                            <g transform="translate(-24.045064, -39.422122)" id="5:00">
+                                <polygon id="Rectangle" fill="#2E2E2E" points="0 0 187.551502 0 187.551502 134.248307 0 134.248307"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group" transform="translate(161.369099, 7.458239)">
+                        <mask id="mask-94" fill="white">
+                            <use xlink:href="#path-93"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g mask="url(#mask-94)" id="3:00">
+                            <g transform="translate(-1.068670, -7.458239)">
+                                <polygon id="Rectangle" fill="#81AEFC" points="0 0 88.6995708 0 88.6995708 145.968397 0 145.968397"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-2" transform="translate(53.433476, 0.000000)">
+                        <mask id="mask-96" fill="white">
+                            <use xlink:href="#path-95"></use>
+                        </mask>
+                        <g id="Rectangle-34"></g>
+                        <g id="Group" mask="url(#mask-96)">
+                            <g transform="translate(-5.877682, 0.000000)" id="12:00">
+                                <polygon id="Rectangle" fill="#04C585" points="0 0 157.094421 0 157.094421 82.5733634 0 82.5733634"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

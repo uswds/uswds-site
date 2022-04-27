@@ -2822,7 +2822,7 @@ $theme-table-column-gap: 4;
     h3,
     h4,
     h5,
-    h5 {
+    h6 {
       @include typeset("lang");
       @extend %header-margin;
       color: color("ink");
@@ -2837,6 +2837,11 @@ $theme-table-column-gap: 4;
     h3 {
       @include typeset("lang", "lg", 2);
       @include u-text("normal");
+    }
+
+    h6 {
+      @include typeset("lang", "2xs", 2);
+      @include u-text("uppercase", "ls-2", "normal");
     }
 
     .site-text-intro {
@@ -3699,6 +3704,10 @@ body {
   .bp {
     @include u-text("violet-30v");
   }
+  .err,
+  .cm {
+    @include u-text("gray-30");
+  }
 }
 
 .site-preview-heading {
@@ -3814,4 +3823,19 @@ p + .pagination-behaviors--examples {
   row-gap: 2rem;
   flex-flow: row wrap;
   justify-content: space-around;
+}
+
+.language-diff {
+  .err {
+    color: color("gray-60");
+  }
+  .p {
+    color: color("ink");
+  }
+  .gi {
+    color: color("green-60v");
+  }
+  .gd {
+    color: color("red-60v");
+  }
 }

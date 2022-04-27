@@ -26,7 +26,7 @@ Typefaces vary in optical size. This means that at any specific pixel value, an 
 {:.padding-top-2}
 ![optical size of native typefaces. shows merriweather as optically large, source sans pro as optically small, and public sans in the middle.]({{ site.baseurl }}/assets/img/design-tokens/font-comparison.svg){: role="img"}
 
-USWDS 2 is designed so each size token outputs a consistent optical size regardless of the typeface. This makes our guidance more reliable and our theming more flexible.
+USWDS 3 is designed so each size token outputs a consistent optical size regardless of the typeface. This makes our guidance more reliable and our theming more flexible.
 
 {:.font-lang-md}
 ### Fonts with normalization applied

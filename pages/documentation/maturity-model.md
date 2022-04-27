@@ -128,7 +128,7 @@ Government websites include components that aren’t included in USWDS yet. Use 
 
 - Install USWDS source Sass files using [the instructions]({{ site.baseurl }}/documentation/developers/#download-and-install-without-npm) on the USWDS website.
 - Include USWDS Sass before including existing project source files. See [Sass an theme settings]({{ site.baseurl }}/documentation/developers/#sass-and-theme-settings).
-- Convert existing values to tokenized values. Use [the conversion tables](/documentation/migration/#integrating-tokens) to convert existing values to USWDS tokens.
+- Convert existing values to tokenized values. Use [the conversion tables]({{ site.baseurl }}/documentation/migration-v2/#integrating-tokens) to convert existing values to USWDS tokens.
 - Use USWDS [tokens]({{ site.baseurl }}/design-tokens/), functions (see [font-family functions]({{ site.baseurl }}/design-tokens/typesetting/font-family/#using-family-tokens), for example), and utility mixins (see [font-family utility mixins]({{ site.baseurl }}/design-tokens/typesetting/font-family/#using-family-tokens), for example) in existing component code.
 
 #### 3: Replace existing components with USWDS components.

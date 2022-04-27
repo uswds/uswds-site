@@ -6,7 +6,7 @@ category: About
 author: Dan O. Williams
 meta:
   og:image: /img/introducing-uswds-2-0/feature-image.jpg
-excerpt: Today, we’re launching U.S. Web Design System 2.0 (USWDS 2.0), a new foundation for the future of our design system. This new version was designed to make it easier for any project to integrate USWDS and use it to support both your mission and the needs of your audience.
+excerpt: USWDS is an important major design system update that's easy to apply to an existing USWDS 2 project. USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS. Where USWDS 2.0 introduced a new design language and changed the way we built our components from the ground up, USWDS 3.0 adds important incremental improvements without fundamentally changing how the design system works.
 ---
 
 <img src="{{ site.baseurl }}/img/introducing-uswds-2-0/feature-image.jpg" alt="A colorful collection of screens and interface components" class="width-full tablet:width-tablet-lg maxw-full tablet:maxw-tablet-lg">
@@ -65,7 +65,9 @@ IE11 has fallen below our 2% support threshold as monitored by analytics.usa.gov
 We believe that JavaScript-disabled environments fall below our 2% support threshold, and that we may require JavaScript for some design system functionality. While we have not made any changes to our codebase that affect how we use JavaScript with our components, we may make changes that require JavaScript for some functionality as we move forward. When we do make any changes like this, we'll be sure to note it in our release notes.
 
 Backup support document 1 →
+
 Backup support document 2 → 
+
 Backup support document 3 → 
 
 ### Support USWDS 2 with maintenance and security patches for one year

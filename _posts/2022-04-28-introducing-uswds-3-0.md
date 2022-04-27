@@ -21,7 +21,7 @@ For migration assistance, start with our [USWDS 3.0 Migration Guide](/documentat
 
 If you have any questions or feedback let us know at the [USWDS Public Slack](https://gsa-tts.slack.com/archives/uswds-public), [GitHub Discussions](https://github.com/uswds/uswds/discussions), or [uswds@gsa.gov](mailto:uswds@gsa.gov). 
 
-If you aren't a member of the USWDS Public Slack, [sign up here](https://chat.18f.gov/) by "Joining a TTS Chat Room" —then select "U.S. Web Design System" as your chat topic.
+If you aren't a member of the USWDS Public Slack, [sign up here](https://chat.18f.gov/) by "Joining a TTS Chat Room" — then select "U.S. Web Design System" as your chat topic.
 
 ## What's new in USWDS 3.0?
 USWDS 3.0 takes a modular, component-centered approach to the design system. We've rebuilt our codebase with a component focus so teams can more effectively integrate the design system incrementally and use only the USWDS components needed in your project.
@@ -58,7 +58,7 @@ IE11 has fallen below our 2% support threshold as monitored by analytics.usa.gov
 
 [USWDS browser support (2% rule)](https://designsystem.digital.gov/documentation/developers/#browser-support) →
 
-[See current analytics from analytics.usa.gov](https://analytics.usa.gov/) → 
+[See current analytics from analytics.usa.gov](https://analytics.usa.gov/)
 
 ### Support some Javascript-required functionality 
 
@@ -66,6 +66,6 @@ We believe that JavaScript-disabled environments fall below our 2% support thres
 
 ### Support USWDS 2 with maintenance and security patches for one year
 
-In addition to supporting active development on USWDS 3, We will continue to support the USWDS 2 branch for one year of maintenance and security patches (until April 2023). The current LTS version of USWDS 2 is [USWDS 2.13.3](https://github.com/uswds/uswds/discussions/4626).
+In addition to supporting active development on USWDS 3, we will continue to support the USWDS 2 branch for one year of maintenance and security patches (until April 2023). The current LTS version of USWDS 2 is [USWDS 2.13.3](https://github.com/uswds/uswds/discussions/4626).
 
 [Long-term support of version 2.x]({{ site.baseurl }}/documentation/developers/#long-term-support-of-v2x) → 

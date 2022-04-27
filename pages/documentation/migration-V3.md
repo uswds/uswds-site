@@ -115,7 +115,6 @@ Your `package.json` file will display the version of USWDS in a line like `"uswd
 
 Your theme files will have a version number at the top, under the image of the American flag. Note these versions so we can make the proper updates in [Step 4: Integrate any recent USWDS changes](#4-integrate-any-recent-uswds-changes), below.
 
-{:.site-terminal}
 ```json
 /* package.json */
 
@@ -124,7 +123,6 @@ Your theme files will have a version number at the top, under the image of the A
 }
 ```
 
-{:.site-terminal}
 ```scss
 /* _uswds-theme-spacing.scss */
 
@@ -178,7 +176,7 @@ Add this load path to your compiler settings, or update any old paths if your co
 </h4>
 <div id="m-a6" class="usa-accordion__content site-prose">
   <ol>
-    <li>How do you know you're using USWDS Gulp? Search for a line like <code>const uswds = require("./node_modules/uswds-gulp/config/uswds");</code> or <code>const uswds = "node_modules/uswds/dist"</code> in your Gulp setup. This indicates that you're using the Gulp setup we distributed as USWDS Gulp.</li>
+    <li>How do you know you're using USWDS Gulp? Search for a line like <code>const uswds = require("./node_modules/uswds-gulp/config/uswds");</code> or <code>const uswds = "node_modules/uswds/dist"</code> in your gulp setup. This indicates that you're using the gulp setup we distributed as USWDS Gulp.</li>
     <li>Update the USWDS <code>const</code> elements to the updated USWDS package location:
       {% highlight diff -%}
 - const pkg = require("./node_modules/uswds/package.json");
@@ -191,8 +189,8 @@ or
 + const USWDS = "node_modules/@uswds/uswds";
       {%- endhighlight %}
     </li>
-    <li><p>Search for references to <code>${uswds}</code> in the <code>includePaths</code> and <code>gulp.src()</code> found in your project’s Gulp files. These paths tell the Sass compiler where to look for USWDS source files.</p>
-      <p>Some of our file directories have moved in USWDS 3.0, and it' i's necessary to point Gulp to the correct location inside the <code>@uswds/uswds</code> package. Below are snippets from the standard USWDS Gulp references and their necessary updates. If your code uses <code>USWDS</code> instead of <code>uswds</code>, just keep the case you have.</p>
+    <li><p>Search for references to <code>${uswds}</code> in the <code>includePaths</code> and <code>gulp.src()</code> found in your project’s gulp files. These paths tell the Sass compiler where to look for USWDS source files.</p>
+      <p>Some of our file directories have moved in USWDS 3.0, and it is necessary to point gulp to the correct location inside the <code>@uswds/uswds</code> package. Below are snippets from the standard USWDS Gulp references and their necessary updates. If your code uses <code>USWDS</code> instead of <code>uswds</code>, just keep the case you have.</p>
       {% highlight diff -%}
 // location of theme files:
 - gulp.src(`${uswds}/scss/theme/**/**`)
@@ -233,7 +231,7 @@ includePaths: [
 </h4>
 <div id="m-a7" class="usa-accordion__content site-prose" markdown="1">
   <ol>
-    <li>How do you know you're using USWDS Compile? Search for <code>const uswds = require("@uswds/compile");</code> in your Gulp setup. This indicates that you're using the <code>@uswds/compile</code> package in that JavaScript file (typically that file is <code>gulpfile.js</code>).</li>
+    <li>How do you know you're using USWDS Compile? Search for <code>const uswds = require("@uswds/compile");</code> in your gulp setup. This indicates that you're using the <code>@uswds/compile</code> package in that JavaScript file (typically that file is <code>gulpfile.js</code>).</li>
     <li>Update the <code>gulpfile.js</code> to include a <code>uswds.settings.version = 3;</code> line. This setting tells USWDS Compile which version of USWDS you're using. USWDS Compile handles the load paths and package locations automatically.
 
       {% highlight diff -%}
@@ -247,14 +245,14 @@ const uswds = require("@uswds/compile");
 </div>
 <!-- End USWDS Compile section -->  
 
-<!-- Start custom Gulp workflow section -->
+<!-- Start custom gulp workflow section -->
 <h4 class="usa-accordion__heading">
   <button class="usa-accordion__button" aria-controls="m-a8">
-    If you're using a custom Gulp workflow
+    If you're using a custom gulp workflow
   </button>
 </h4>
 <div id="m-a8" class="usa-accordion__content site-prose" markdown="1">
-1. Search for references to USWDS in the `includePaths` and `src()` found in your project’s Gulp files. These paths tell the Sass compiler where to look for USWDS source files. The `includePaths` section may look like the following:
+1. Search for references to USWDS in the `includePaths` and `src()` found in your project’s gulp files. These paths tell the Sass compiler where to look for USWDS source files. The `includePaths` section may look like the following:
 
     ```
     .pipe(
@@ -277,12 +275,12 @@ const uswds = require("@uswds/compile");
     - **Packages:** `@uswds/uswds/packages`
 1. Recompile your Sass as usual and check that your files compiled as expected. When it compiles successfully, it's using USWDS 3.0!
 </div>
-<!-- End custom Gulp workflow section --> 
+<!-- End custom gulp workflow section --> 
 
-<!-- Start custom Gulp workflow section -->
+<!-- Start custom gulp workflow section -->
 <h4 class="usa-accordion__heading">
   <button class="usa-accordion__button" aria-controls="m-a9">
-    If you're using Webpack
+    If you're using webpack
   </button>
 </h4>
 <div id="m-a9" class="usa-accordion__content site-prose" markdown="1">
@@ -303,7 +301,7 @@ const uswds = require("@uswds/compile");
 
   This array needs to include `"./node_modules/@uswds/uswds/packages"`.
 </div>
-<!-- End custom Gulp workflow section --> 
+<!-- End custom gulp workflow section --> 
 
 </div> <!--End compiler accordion -->
 
@@ -362,7 +360,6 @@ You'll need to update any instances of the small search button on your site. We'
 {:#old-code-2-13-0}
 ###### Old code
 
-{:.site-terminal}
 ```html
 <button class="usa-button" type="submit">
   <span class="usa-sr-only">Search</span>
@@ -372,7 +369,6 @@ You'll need to update any instances of the small search button on your site. We'
 {:#new-code-2-13-0}
 ###### New code
 
-{:.site-terminal}
 ```html
 <button class="usa-button" type="submit">    
   <img 
@@ -390,12 +386,11 @@ You'll need to update social media icons in the USWDS footer. We're now using ex
 ###### What to do
 
 1. Check your codebase for instances of `usa-social-link.`
-1. If you use it, Update the markup from the old version to the new version.
+1. If you use it, update the markup from the old version to the new version.
 
 {:#old-code-2-13-0-social}
 ###### Old code
 
-{:.site-terminal}
 ```html
 <a class="usa-social-link usa-social-link--facebook" 
   href="{% raw %}{{ link }}{% endraw %}">
@@ -422,7 +417,6 @@ You'll need to update social media icons in the USWDS footer. We're now using ex
 {:#new-code-2-13-0-social}
 ###### New code
 
-{:.site-terminal}
 ```html
 <a class="usa-social-link" href="{% raw %}{{ link }}{% endraw %}">
   <img 
@@ -781,15 +775,34 @@ Now your project is using its theme settings in the proper USWDS 3.0 format! Now
 {:.border-top-2px.border-base-lighter.padding-top-1}
 Unlike `@import`, which makes Sass members (tokens, variables, mixins, functions, or placeholders) available globally, `@use` only reveals Sass members to the stylesheet that loads them. 
 
-Accommodating this is relatively straightforward for USWDS 3.0 Sass: For any project stylesheet that uses USWDS members (that's probably most, if not all, of them!), add the following line at the top of the file:
+Accommodating this is relatively straightforward for USWDS 3.0: For any project stylesheet that uses USWDS members (that's probably most, if not all, of them!), you'll need to load `uswds-core` at the top of your stylesheet. You will also need check to see if you have non-USWDS modules in your stylesheet, and load those as well. Here is how to do it:
 
-`@use "uswds-core" as *;`
+1. **Load "uswds-core" at the top of any stylesheet that uses USWDS members.** 
+    ```scss
+    /* custom stylesheet */
+    @use "uswds-core" as *;
+    ```
+    
+    In USWDS 3.0, `uswds-core` is the name of the package (or "module" in Sass terminology) that contains all the members used in USWDS Sass. Loading this package makes all of these members available to your stylesheet. 
 
-In USWDS 3.0, `uswds-core` is the name of the package (or "module" in Sass terminology) that contains all the members used in USWDS Sass. We'll `use` it `as *` to indicate that we don't want any custom namespacing attached to USWDS members. For example, we want to use the `color()` function instead of the `uswds-core.color()` function.
+    A note about namespacing: 
 
-If your project uses members defined outside of USWDS, you'll need to include these as well via `@use` at the top of the document. This includes Sass-specific functions. If your project uses any of Sass's built-in functions, see [https://sass-lang.com/documentation/modules](https://sass-lang.com/documentation/modules) for more information.
+    By default, Sass members brought in via `@use` are namespaced using the basename of the file url. For example, if we were to use the the default load pattern `@use "uswds-color`, our `color()` function would need to be called with `uswds-core.color()`.
+    
+    In this step, we add `as *` to our `@use` statement to indicate that we don't want any namespacing attached to USWDS members.  This enables us to use the same member references without the `uswds-core` prefix that we used with the older `@import` syntax. For more information on controlling namespacing, please check out the [Sass documentation on namespacing](https://sass-lang.com/documentation/at-rules/use#choosing-a-namespace). 
+2. **Check to see if your project uses members defined outside of USWDS.** If it does, you'll need to include these as well via `@use` at the top of the document. This includes [Sass' built-in modules](https://sass-lang.com/documentation/modules). 
+   
+   As an example, your stylesheet might contain the following lines at the top:
 
-Once each of your custom Sass files include the `@use "uswds-core" as *;` line at the top, you should be done!
+    ```scss
+    /* custom stylesheet */
+    @use "sass:math";
+    @use "sass:list";
+    @use "sass:color";
+    @use "uswds-core" as *;
+    ```
+
+Once each of your custom Sass files includes the required modules at the top, you should be done!
 
 Recompile your Sass and check for errors.
 
@@ -816,7 +829,6 @@ An example of using replacing the **uswds** package with individual component pa
 {:#old-code-packages}
 #### Old code
 
-{:.site-terminal}
 ```scss
 @forward "uswds";
 ```
@@ -824,7 +836,6 @@ An example of using replacing the **uswds** package with individual component pa
 {:#new-code-packages}
 #### New Code
 
-{:.site-terminal}
 ```scss
 @forward "usa-accordion";
 @forward "usa-banner";
@@ -861,7 +872,6 @@ If you find a hit for the class name in your codebase, include the relevant pack
 
 For instance, if you found **usa-banner, usa-identifier, usa-button**, and **usa-accordion**, you might attach the following packages in your Sass entry point: 
 
-{:.site-terminal}
 ```scss
 @forward "usa-accordion";
 @forward "usa-banner";
@@ -880,7 +890,6 @@ Look for classes in your codebase for searching for a regular expression string 
 
 For instance, if you found `add-list-reset`, `font-`, `order-`, and `display-`, you might use the following setting: 
 
-{:.site-terminal}
 ```scss
 $output-these-utilities: (
   "add-list-reset",
@@ -907,7 +916,6 @@ In a gulp workflow, we recommend using `gulp-sass` and `sass-embedded` together 
 
 2. Uninstall any other sass compiling packages, if they exist:
 
-    {:.site-terminal}
     ```scss
     npm uninstall sass
     npm uninstall gulp-dart-sass
@@ -935,7 +943,6 @@ There are nine responsive breakpoints available to utilities and the layout grid
 
 This can result in bulky CSS, and if your project doesn't use these breakpoints you can save a lot of space by setting these breakpoints to false. By default, `mobile-lg`, `tablet`, and `desktop` are set to true:
 
-{:.site-terminal}
 ```scss
 $theme-utility-breakpoints: (
   "card": false,
@@ -966,7 +973,6 @@ For example, according to the table in [Available packages, above](#available-pa
 
 Instead of simply forwarding the `usa-banner` component, you can import the component and all related dependencies directly. Note: We've used `uswds-core` already when we forwarded our settings, so we won't forward it again:
 
-{:.site-terminal}
 ```scss
 // Instead of...
 @forward "usa-banner";
@@ -981,7 +987,6 @@ Instead of simply forwarding the `usa-banner` component, you can import the comp
 
 Now, instead of pointing at the component packages, we can point directly at the component package source. For each usa- prefixed component package, append `/src/styles` to its name:
 
-{:.site-terminal}
 ```scss
 @forward "usa-banner/src/styles";
 @forward "usa-icon/src/styles";

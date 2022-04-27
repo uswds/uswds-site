@@ -768,14 +768,13 @@ These instructions will help you update your `@import` references to the new syn
 @forward "uswds-custom-styles";
 ```
 
-Now your project is using its theme settings in the proper USWDS 3.0 format! Now you can remove the old theme files from your project.
+Now your project is using its theme settings in the proper USWDS 3.0 format! You can safely remove the old theme files from your project.
 
 #### Use "uswds-core" for any custom USWDS Sass
 
-{:.border-top-2px.border-base-lighter.padding-top-1}
 Unlike `@import`, which makes Sass members (tokens, variables, mixins, functions, or placeholders) available globally, `@use` only reveals Sass members to the stylesheet that loads them. 
 
-Accommodating this is relatively straightforward for USWDS 3.0: For any project stylesheet that uses USWDS members (that's probably most, if not all, of them!), you'll need to load `uswds-core` at the top of your stylesheet. You will also need check to see if you have non-USWDS modules in your stylesheet, and load those as well. Here is how to do it:
+Accommodating this is relatively straightforward for USWDS 3.0: For any project stylesheet that uses USWDS members (that's probably most, if not all, of them!), you'll need to load `uswds-core` at the top of your stylesheet. You will also need check to see if you have non-USWDS modules in your stylesheet and load those as well. Here is how to do it:
 
 1. **Load "uswds-core" at the top of any stylesheet that uses USWDS members.** 
     ```scss
@@ -785,12 +784,10 @@ Accommodating this is relatively straightforward for USWDS 3.0: For any project 
     
     In USWDS 3.0, `uswds-core` is the name of the package (or "module" in Sass terminology) that contains all the members used in USWDS Sass. Loading this package makes all of these members available to your stylesheet. 
 
-    A note about namespacing: 
-
-    By default, Sass members brought in via `@use` are namespaced using the basename of the file url. For example, if we were to use the the default load pattern `@use "uswds-color`, our `color()` function would need to be called with `uswds-core.color()`.
+    In this step, we add `as *` to our `@use` statement to indicate that we don't want any namespacing attached to USWDS members. By default, Sass members brought in via `@use` are namespaced using the basename of the file url. For example, if we were to use the the default load pattern `@use "uswds-color`, our `color()` function would need to be called with `uswds-core.color()`.
     
-    In this step, we add `as *` to our `@use` statement to indicate that we don't want any namespacing attached to USWDS members.  This enables us to use the same member references without the `uswds-core` prefix that we used with the older `@import` syntax. For more information on controlling namespacing, please check out the [Sass documentation on namespacing](https://sass-lang.com/documentation/at-rules/use#choosing-a-namespace). 
-2. **Check to see if your project uses members defined outside of USWDS.** If it does, you'll need to include these as well via `@use` at the top of the document. This includes [Sass' built-in modules](https://sass-lang.com/documentation/modules). 
+    Removing namespacing enables us to use the same member references that we used with the older `@import` syntax. For more information on controlling namespacing, please check out the [Sass documentation on namespacing](https://sass-lang.com/documentation/at-rules/use#choosing-a-namespace). 
+2. **Check to see if your project uses members defined outside of USWDS.** This includes searching for references to [Sass' built-in modules](https://sass-lang.com/documentation/modules). If it does, you'll need to include these as well via `@use` at the top of the document. 
    
    As an example, your stylesheet might contain the following lines at the top:
 
@@ -802,18 +799,18 @@ Accommodating this is relatively straightforward for USWDS 3.0: For any project 
     @use "uswds-core" as *;
     ```
 
-Once each of your custom Sass files includes the required modules at the top, you should be done!
+    Once each of your custom Sass files loads the required modules, you should be done!
 
-Recompile your Sass and check for errors.
+3. **Recompile your Sass and check for errors.**
 
 ### 6. Optimize your installation with component packages
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
-By default, a USWDS installation includes every component available to the design system. But most projects don't use all these components. USWDS 3.0 allows teams to use only the components you need for your project, through the idea of component packages.
+By default, a USWDS installation includes every component available to the design system. But most projects don't use all these components. USWDS 3.0 allows you to use only the components you need for your project, via component packages.
 
-A component package is a self-contained module that includes only code related to a specific component. In addition to an omnibus **uswds** package, USWDS 3.0 includes packages for every component available in the design system, and for some features (like fonts) that are common to many components. 
+A component package is a self-contained module that includes only code related to a specific component. In addition to an omnibus `uswds` package, USWDS 3.0 includes packages for every component available in the design system, and for some features (like fonts) that are common to many components. 
 
-Using individual component packages instead of the **uswds** bundle package can result in a significant reduction in the size of your project CSS and noticeable improvements to compile time.
+Using individual component packages instead of the `uswds` bundle package can result in a significant reduction in the size of your project CSS and noticeable improvements to compile time.
 
 ### Using packages
 

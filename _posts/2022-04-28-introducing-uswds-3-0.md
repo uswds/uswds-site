@@ -36,13 +36,13 @@ USWDS 3.0 stylesheets use the most modern version of the Sass module syntax. The
 
 Unbundle the design system with USWDS 3.0. Using USWDS 3.0 with Sass module syntax allows teams to unbundle their implementations of USWDS and use only the components and code that they need on their project. Depending on your project, this could mean significant reduction of CSS code you ship. This means faster load times, better scores in performance evaluation tools, and a better developer experience. 
 
-[Read more about USWDS Packages](/components/packages/) →
+[Read more about USWDS Packages]({{ site.baseurl }}/components/packages/) →
 
 ### Simplify your project settings
 
 USWDS is a highly customizable design system, but that doesn't mean that our settings files need to be long and complicated. Starting in USWDS 3.0, projects will use settings files that include only the settings you've changed in your project. This means fewer project settings to manage, and a clearer vision of your project's customizations. 
 
-[Read more about USWDS settings](/documentation/settings) → 
+[Read more about USWDS settings]({{ site.baseurl }}/documentation/settings) → 
 
 ### Stay up-to-date with minimal hassle
 
@@ -56,7 +56,7 @@ As we move forward to USWDS 3.0 and beyond, we're making some changes to the bro
 
 IE11 has fallen below our 2% support threshold as monitored by analytics.usa.gov. While we have not removed any existing IE11 support from our codebase, we may make changes and add functionality that no longer supports IE11 as we move forward. When we do make any changes like this, we'll be sure to note it in our release notes.
 
-[USWDS browser support (2% rule)](https://designsystem.digital.gov/documentation/developers/#browser-support) →
+[USWDS browser support (2% rule)]({{ site.baseurl }}/documentation/developers/#browser-support) →
 
 [See current analytics from analytics.usa.gov](https://analytics.usa.gov/)
 
@@ -66,6 +66,6 @@ We believe that JavaScript-disabled environments fall below our 2% support thres
 
 ### Support USWDS 2 with maintenance and security patches for one year
 
-In addition to supporting active development on USWDS 3, we will continue to support the USWDS 2 branch for one year of maintenance and security patches (until April 2023). The current LTS version of USWDS 2 is [USWDS 2.13.3](https://github.com/uswds/uswds/discussions/4626).
+In addition to supporting active development on USWDS 3, we will continue to support the USWDS 2 branch for one year of maintenance and security patches (until April 2023). The current LTS version of USWDS 2 is [USWDS 2.13.3](https://github.com/uswds/uswds/releases/tag/v2.13.3).
 
 [Long-term support of version 2.x]({{ site.baseurl }}/documentation/developers/#long-term-support-of-v2x) → 

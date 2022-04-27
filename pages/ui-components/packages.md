@@ -134,10 +134,9 @@ Using only package source would result in the following:
 If you suffer from slow compiles, it may be worth experimenting with source forwarding. 
 
 ## Package Sass requirements: Load paths
-Using USWDS 3.0 and packages requires compiling your Sass with load paths. Load paths tell your Sass compiler where to look for USWDS packages. Any compiler needs to include the following load paths:
+Using USWDS 3.0 and packages requires compiling your Sass with load paths. Load paths tell your Sass compiler where to look for USWDS packages. Any compiler needs to include a load path to the `@uswds/uswds/packages` directory:
 
 ```js
-"./node_modules/@uswds/uswds",
 "./node_modules/@uswds/uswds/packages"
 ```
 
@@ -145,7 +144,6 @@ In a gulpfile, use `includePaths` in your `sass()` function.
 ```js
   sass({
     includePaths: [
-      "./node_modules/@uswds/uswds",
       "./node_modules/@uswds/uswds/packages",
     ],
   })
@@ -158,7 +156,6 @@ loader: "sass-loader",
 options: {
   sassOptions: {
     includePaths: [
-      "./node_modules/@uswds/uswds",
       "./node_modules/@uswds/uswds/packages",
     ],
   },

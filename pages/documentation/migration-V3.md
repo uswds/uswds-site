@@ -105,7 +105,7 @@ There are four necessary steps migrating to USWDS 3.0. In addition to the requir
 ### 1. Check your current USWDS code and settings versions
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
-USWDS 3.0 uses the same styles and markup as USWDS 2.13.3 — and, with one exception, the same settings. This means that if you're currently using a USWDS 2.13.3, there's no styles and markup to update. But if you're using a version older than 2.13.3, migrating to USWDS 3.0 may mean updating some of your markup and settings.
+USWDS 3.0 uses the same styles and markup as USWDS 2.13.3 — and, with one exception, the same settings. This means that if you're currently using USWDS 2.13.3, there's no styles and markup to update. But if you're using a version older than 2.13.3, migrating to USWDS 3.0 may mean updating some of your markup and settings.
 
 So, before migrating, check the versions of both your existing USWDS code and its settings (since code and settings may be different).
 

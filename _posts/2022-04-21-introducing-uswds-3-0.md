@@ -64,14 +64,8 @@ IE11 has fallen below our 2% support threshold as monitored by analytics.usa.gov
 
 We believe that JavaScript-disabled environments fall below our 2% support threshold, and that we may require JavaScript for some design system functionality. While we have not made any changes to our codebase that affect how we use JavaScript with our components, we may make changes that require JavaScript for some functionality as we move forward. When we do make any changes like this, we'll be sure to note it in our release notes.
 
-Backup support document 1 →
-
-Backup support document 2 → 
-
-Backup support document 3 → 
-
 ### Support USWDS 2 with maintenance and security patches for one year
 
 In addition to supporting active development on USWDS 3, We will continue to support the USWDS 2 branch for one year of maintenance and security patches (until April 2023). The current LTS version of USWDS 2 is [USWDS 2.13.3](https://github.com/uswds/uswds/discussions/4626).
 
-Long-term support of version 2.x → 
+[Long-term support of version 2.x]({{ site.baseurl }}/documentation/developers/#long-term-support-of-v2x) → 

@@ -19,7 +19,7 @@ subnav:
 ## Introducing packages
 Few USWDS projects need to use the entire design system. Include only the code your project needs with USWDS packages.
 
-**Packages** are discrete units of functionality. Most USWDS packages are components (like [`usa-search`]({{ site.baseurl }}/components/search)), [`usa-banner`]({{ site.baseurl }}/components/banner), or [`usa-accordion`]({{ site.baseurl }}/components/accordion), but packages can also include items like fonts (`uswds-fonts`), bundles of components (`uswds-form-controls`), or simply USWDS mixins, functions, and tokens (`uswds-core`). 
+**Packages** are discrete units of functionality. Most USWDS packages are components (like [`usa-search`]({{ site.baseurl }}/components/search), [`usa-banner`]({{ site.baseurl }}/components/banner), or [`usa-accordion`]({{ site.baseurl }}/components/accordion)), but packages can also include items like fonts (`uswds-fonts`), bundles of components (`uswds-form-controls`), or simply USWDS mixins, functions, and tokens (`uswds-core`). 
 
 Instead of including everything the design system offers by using the `uswds` package with code like the following: 
 
@@ -44,7 +44,7 @@ With packages and Sass Module syntax in USWDS 3.0, you can be confident that pac
 ### The uswds-core package
 The `uswds-core` package is a new package in USWDS 3.0. `uswds-core` is the engine of the design system, and includes all the functions, mixins, placeholders, tokens, and fonts necessary to write USWDS Sass.
 
-Any custom Sass you write needs to `@use "uswds-core"` at the top of the file to load the USWDS desigbn language. We suggest using `@uswds "uswds-core" as *` to add USWDS to the global namespace. For example:
+Any custom Sass you write needs to `@use "uswds-core"` at the top of the file to load the USWDS design language. We suggest using `@uswds "uswds-core" as *` to add USWDS to the global namespace. For example:
 
 ```scss
 /* custom-styles.scss */
@@ -62,13 +62,13 @@ Any custom Sass you write needs to `@use "uswds-core"` at the top of the file to
 
 USWDS includes {{ packages | size }} packages — a package for each component or named class group (prefixed with `usa-`), and a handful of bundle packages that collect multiple components together (prefixed with `uswds-`). 
 
-Using any package in your code will install the code for the component, plus dependency code related to that component. The following table each USWDS package, its full size, gzipped size, dependencies, and source code size.
+Using any package in your code will install the code for the component, plus dependency code related to that component. The following table shows each USWDS package with its gzipped size, full size, source code size, and dependencies.
 
 {% include packages-table.html %}
 
 ## What's in a package
 
-As of USWDS 3.0, the USWDS codebase is organized around packages. Packages live in the top-level `packages` directory, and include not only Sass styles, but JavaScript, Twig templates, test, assets, and sometimes content. Here's what you'll find in the `usa-accordion` package:
+As of USWDS 3.0, the USWDS codebase is organized around packages. Packages live in the top-level `packages` directory, and include not only Sass styles, but JavaScript, Twig templates, tests, assets, and sometimes content. Here's what you'll find in the `usa-accordion` package:
 
 ```
 ├── packages/
@@ -88,7 +88,7 @@ As of USWDS 3.0, the USWDS codebase is organized around packages. Packages live 
 │   │   └── _index.scss_/
 ```
 
-The `/[package]/_index.scss` file is the Sass entry point for the package styles. It forwards any package style dependencies in addition to the component source itself, which lives in `[package]/src/styles]`. The `usa-search` package looks something like this:
+The `/[package]/_index.scss` file is the Sass entry point for the package styles. It forwards any package style dependencies in addition to the component source itself, which lives in `[package]/src/styles/`. The `usa-search` package entry point looks something like this:
 
 ```sass
 /* ./packages/usa-search/_index.scss */
@@ -137,7 +137,7 @@ If you suffer from slow compiles, it may be worth experimenting with source forw
 Using USWDS 3.0 and packages requires compiling your Sass with load paths. Load paths tell your Sass compiler where to look for USWDS packages. Any compiler needs to include the following load paths:
 
 ```js
-"./node_modules/@uswds",
+"./node_modules/@uswds/uswds",
 "./node_modules/@uswds/uswds/packages"
 ```
 
@@ -145,10 +145,9 @@ In a gulpfile, use `includePaths` in your `sass()` function.
 ```js
   sass({
     includePaths: [
-      "./node_modules/@uswds",
+      "./node_modules/@uswds/uswds",
       "./node_modules/@uswds/uswds/packages",
     ],
-    outputStyle: "expanded"
   })
 ```
 
@@ -157,10 +156,9 @@ In webpack, include `includePaths` within the sassOptions of your Sass loader:
 ```js
 loader: "sass-loader",
 options: {
-  sourceMap: true,
   sassOptions: {
     includePaths: [
-      "./node_modules/@uswds",
+      "./node_modules/@uswds/uswds",
       "./node_modules/@uswds/uswds/packages",
     ],
   },

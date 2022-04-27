@@ -427,31 +427,31 @@ You'll need to update social media icons in the USWDS footer. We're now using ex
 <a class="usa-social-link" href="{% raw %}{{ link }}{% endraw %}">
   <img
     class="usa-social-link__icon"
-    src="/usa-icons-bg/search--whi/usa-icons/facebook.svg"
+    src="/usa-icons/facebook.svg"
     alt="Facebook" />
 </a>
 <a class="usa-social-link" href="{% raw %}{{ link }}{% endraw %}">
   <img
     class="usa-social-link__icon"
-    src="/usa-icons-bg/search--whi/usa-icons/twitter.svg"
+    src="/usa-icons/twitter.svg"
     alt="Twitter" />
 </a>
 <a class="usa-social-link" href="{% raw %}{{ link }}{% endraw %}">
   <img
     class="usa-social-link__icon"
-    src="/usa-icons-bg/search--whi/usa-icons/youtube.svg"
+    src="/usa-icons/youtube.svg"
     alt="YouTube" />
 </a>
 <a class="usa-social-link" href="{% raw %}{{ link }}{% endraw %}">
   <img
     class="usa-social-link__icon"
-    src="/usa-icons-bg/search--whi/usa-icons/instagram.svg"
+    src="/usa-icons/instagram.svg"
     alt="Instagram" />
 </a>
 <a class="usa-social-link" href="{% raw %}{{ link }}{% endraw %}">
   <img
     class="usa-social-link__icon"
-    src="/usa-icons-bg/search--whi/usa-icons/rss_feed.svg"
+    src="/usa-icons/rss_feed.svg"
     alt="RSS" />
 </a>
 ```

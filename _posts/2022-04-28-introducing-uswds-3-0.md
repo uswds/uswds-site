@@ -3,7 +3,7 @@ title: Introducing USWDS 3.0
 tags:
 - updates
 category: About
-author: Dan O. Williams, James Mejia, Amy Leadem, Bonnie Cameron
+author: Dan O. Williams, James Mejia, Amy Leadem, Bonnie Cameron, Charlie Mahoney
 meta:
   og:image: /img/introducing-uswds-3/introducing-uswds-3.jpg
 excerpt: USWDS 3.0 is an important major design system update that's easy to apply to an existing USWDS 2 project. USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.

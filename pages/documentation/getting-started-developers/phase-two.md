@@ -32,7 +32,7 @@ We’ve developed `uswds-compile`, a tool hosted on GitHub, to help teams copy U
 A project often has many Sass files, but typically, there’s a single file that serves as the root — the “homepage” of the Sass — that links out to the others. This root file is also known as the “Sass entry point.” The Sass entry point is the most important stylesheet file in your project because it tells the compiler what source files make up your Sass codebase.
 
 Your project’s Sass entry point is a simple file that only needs to do the following three tasks:
-1. Include a USWDS [settings file]({{ site.baseurl }}/documentation/settings/) (or files)
+1. Include a USWDS [settings file]({{ site.baseurl }}/documentation/settings/)
 2. Include the USWDS source code
 3. Include your project’s custom Sass
 
@@ -41,43 +41,45 @@ Create an entry point called something like `index.scss` or `styles.scss`. Your 
 {:.site-terminal}
 ```scss
 // Include a USWDS settings file (required)
-@import "uswds-settings.scss";
+@forward "uswds-settings.scss";
 
 // Point to the USWDS source code (required)
-@import "./path/to/source/uswds";
+@forward "./path/to/source/uswds";
 
 // Include your project's custom Sass (optional)
-@import "project-custom.scss";
+@forward "project-custom.scss";
 ```
 
 In plain language, this code says:
 
 - **Get the instructions**: Get the USWDS settings that tell the design system how to build the styles. Settings are the first thing you need to include.
 
-  Any individual setting is a Sass variable. Each setting begins with the `$theme-` prefix, and we provide a list of all available settings [in the USWDS documentation]({{ site.baseurl }}/documentation/settings/) as well as examples [in the USWDS codebase](https://github.com/uswds/uswds/tree/main/src/stylesheets/theme). The following is an example of a simple settings file:
+  Any individual setting is a Sass variable. Each setting begins with the `$theme-` prefix, and we provide a list of all available settings [in the USWDS documentation]({{ site.baseurl }}/documentation/settings/). The following is an example of a simple settings file:
 
   {:.site-terminal}
   ```scss
-  $theme-image-path:              "../uswds/img";
-  $theme-show-compile-warnings:   false;
-  $theme-color-primary-lightest:  "green-warm-10";
-  $theme-color-primary-lighter:   "green-warm-20";
-  $theme-color-primary-light:     "green-warm-30";
-  $theme-color-primary:           "green-warm-50";
-  $theme-color-primary-vivid:     "green-warm-50v";
-  $theme-color-primary-dark:      "green-warm-60v";
-  $theme-color-primary-darker:    "green-warm-70v";
-  $theme-color-primary-darkest:   "green-warm-80";
-  $theme-banner-background-color: "ink";
-  $theme-banner-link-color:       "primary-light";
-  $theme-banner-max-width:        "none";
+  @use "uswds-core" with (
+    $theme-image-path: "../uswds/img",
+    $theme-show-compile-warnings: false,
+    $theme-color-primary-lightest: "green-warm-10",
+    $theme-color-primary-lighter: "green-warm-20",
+    $theme-color-primary-light: "green-warm-30",
+    $theme-color-primary: "green-warm-50",
+    $theme-color-primary-vivid: "green-warm-50v",
+    $theme-color-primary-dark: "green-warm-60v",
+    $theme-color-primary-darker: "green-warm-70v",
+    $theme-color-primary-darkest: "green-warm-80",
+    $theme-banner-background-color: "ink",
+    $theme-banner-link-color: "primary-light",
+    $theme-banner-max-width: "none",
+  )
   ```
 
 - **Create the foundation**: Build all USWDS styles from these settings.
 
   The USWDS source code is the core of the design system. It contains all the styles for USWDS components as well as the design language of Sass tokens and functions used to build those components. USWDS source code has its own Sass entry point, which lives in the `node_modules` directory when you install USWDS with npm.
 
-  This is called `uswds.scss`, and it’s found in the `/dist/scss` directory of the USWDS npm package. When you install with npm, the complete path is typically `./node_modules/@uswds/uswds/dist/scss/uswds`.
+  This is called `uswds` (or, more accurately, `uswds/_index.scss`), and it’s found in the `/packages` directory of the USWDS npm package. When you install with npm, the complete path is typically `./node_modules/@uswds/uswds/packages/uswds/_index.html`.
 
 - **Build new work on top of that foundation**: Finally, add any custom project styles built from design system code.
 
@@ -104,6 +106,13 @@ Your `gulpfile.js` may read as follows:
 /* gulpfile.js */
 
 const uswds = require("@uswds/compile");
+
+/**
+ * USWDS version
+ * Set the version of USWDS you're using (2 or 3)
+ */
+
+uswds.settings.version = 3;
 
 /**
  * Path settings

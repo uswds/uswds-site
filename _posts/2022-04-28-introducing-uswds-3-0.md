@@ -17,7 +17,7 @@ USWDS 3.0 is an important major design system update that's easy to apply to an 
 
 For most USWDS 2 projects, migrating to USWDS 3.0 should only require changing  a few lines of project code. We've developed this new version to be a simple, straightforward migration. We want teams to start using USWDS 3.0, and we'll be there to help you do it.
 
-For migration assistance, start with our [USWDS 3.0 Migration Guide](/documentation/migration) → 
+For migration assistance, start with our [USWDS 3.0 Migration Guide]({{ site.baseurl }}/documentation/migration) → 
 
 If you have any questions or feedback let us know at the [USWDS Public Slack](https://gsa-tts.slack.com/archives/uswds-public), [GitHub Discussions](https://github.com/uswds/uswds/discussions), or [uswds@gsa.gov](mailto:uswds@gsa.gov). 
 
@@ -36,7 +36,7 @@ USWDS 3.0 stylesheets use the most modern version of the Sass module syntax. The
 
 Unbundle the design system with USWDS 3.0. Using USWDS 3.0 with Sass module syntax allows teams to unbundle their implementations of USWDS and use only the components and code that they need on their project. Depending on your project, this could mean significant reduction of CSS code you ship. This means faster load times, better scores in performance evaluation tools, and a better developer experience. 
 
-[Read more about USWDS Packages]({{ site.baseurl }}/components/packages/) →
+[Read more about USWDS packages]({{ site.baseurl }}/components/packages/) →
 
 ### Simplify your project settings
 

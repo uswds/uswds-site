@@ -182,7 +182,7 @@ Add this load path to your compiler settings, or update any old paths if your co
 - const pkg = require("./node_modules/uswds/package.json");
 + const pkg = require("./node_modules/@uswds/uswds/package.json");
 ...
-- const uswds = require("./node_modules/uswds/package.json");
+- const uswds = require("./node_modules/uswds-gulp/config/uswds");
 + const uswds = "node_modules/@uswds/uswds";
 or
 - const USWDS = "node_modules/uswds/dist";
@@ -599,7 +599,7 @@ These instructions will help you update your `@import` references to the new syn
 
 #### Update your @import references
 
-1. **Replace all instances of @import with @forward in your Sass entry point.** Update all of the `@import` references in your Sass entry point to `@forward`.
+1. **Replace all instances of @import with @forward in your Sass entry point.** 
 
 ```diff
 - @import "uswds-theme-color";

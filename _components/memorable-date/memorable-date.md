@@ -2,22 +2,22 @@
 category: Components
 component:
   status: ready
-  package: form-controls
+  package: usa-memorable-date
   dependencies:
 layout: component
 lead: Three text fields are the easiest way for users to enter most dates.
-permalink: /components/date-input/
+permalink: /components/memorable-date/
 redirect_from:
-- /form-controls/04-date-input/
+- /form-controls/04-memorable-date/
 subnav:
 - text: Preview
-  href: '#date-input-preview'
+  href: '#memorable-date-preview'
 - text: Code
-  href: '#date-input-code'
+  href: '#memorable-date-code'
 - text: Guidance
-  href: '#date-input-guidance'
+  href: '#memorable-date-guidance'
 - text: Package
-  href: '#date-input-package'
+  href: '#memorable-date-package'
 tags:
   - form
   - forms
@@ -25,6 +25,6 @@ tags:
   - input
   - birthday
   - memorable date
-title: Date input
+title: Memorable date
 type: component
 ---

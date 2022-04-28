@@ -2,7 +2,7 @@
 category: Components
 component:
   status: ready
-  package: form-controls
+  package: usa-combo-box
   dependencies:
 implementation:
   initProps:
@@ -48,7 +48,7 @@ tags:
   - forms
   - form controls
   - input
-  - dropdown
+  - select
 title: Combo box
 type: component
 ---

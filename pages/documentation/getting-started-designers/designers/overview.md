@@ -14,7 +14,7 @@ As a complement to this visual style guidance, we strongly recommend you use [18
 
 ## USWDS for designers
 
-<div class="site-note"><strong>Note:</strong> USWDS 2 design assets are only currently available in Sketch, Adobe XD, and Figma formats.</div>
+<div class="site-note"><strong>Note:</strong> USWDS 3 design assets are only currently available in Sketch, Adobe XD, and Figma formats.</div>
 
 The site contains HTML mockups of common UI components designed to follow USWDS’s visual style guide. To view the specs of each design live on this website (padding, margins, stroke weight, line-height, and so on), use your browser’s developer tools.
 

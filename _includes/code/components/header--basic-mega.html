@@ -1,6 +1,3 @@
-<a class="usa-skipnav" href="#main-content">Skip to main content</a>
 {% capture header %}
-  {% fractal_component banner %}
-  {% fractal_component header--basic-mega %}
+  {% library_component usa-header~megamenu %}
 {% endcapture %}{{ header | strip }}
-<main id="main-content"></main>

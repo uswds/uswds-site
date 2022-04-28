@@ -9,18 +9,12 @@ type: docs
 
 Now, equipped with building blocks that are accessible and cohesive, you can get creative. This phase is an overview of what you need to know to customize your project.
 
-The U.S. Web Design System provides extensive support for theming via its theme settings files. The files you'll need in your project are the following, which are located in `uswds.paths.dist.theme`:
--	`_uswds-theme-color.scss` — color settings
--	`_uswds-theme-components.scss` — component settings
--	`_uswds-theme-general.scss` — general settings
--	`_uswds-theme-spacing.scss` — spacing settings
-- `_uswds-theme-typography.scss` — typography settings
--	`_uswds-theme-utilities.scss` — utility class output settings
+The U.S. Web Design System provides extensive support for theming via its [theme settings]({{ site.baseurl }}/documentation/settings). You'll update the `_theme-settings.scss` file in `uswds.paths.dist.theme` so its `@use` directive includes a list of all the settings you're customizing for your project.
 
 {: .site-note }
-**Note:** If you use `uswds-compile`, as detailed in Phase 2, this tool adds each of these files to the directory you specify in `uswds.paths.dist.theme`.
+**Note:** If you use `uswds-compile`, as detailed in Phase 2, this tool adds this file to the directory you specify in `uswds.paths.dist.theme`.
 
-Because `uswds.paths.dist.theme` will be updated as the Design System updates, we recommend copying these files into an "overrides" (or similarly titled) folder and customizing them there.
+Because `uswds.paths.dist.theme` will be updated the next time you run the `init` script, do this with caution! We don't recommend using `init` more than once.
 
 The [USWDS Settings page]({{ site.baseurl }}/documentation/settings/) describes each of the settings available in the settings files, as well as the values the settings accept. Most settings accept design tokens, visit the [Design tokens section]({{ site.baseurl }}/design-tokens/) of our website for more information on the available tokens for [color]({{ site.baseurl }}/design-tokens/color), [spacing units]({{ site.baseurl }}/design-tokens/spacing-units), [font size]({{ site.baseurl }}/design-tokens/typesetting/font-size/), and more.
 

@@ -32,7 +32,7 @@ We’ve developed `uswds-compile`, a tool hosted on GitHub, to help teams copy U
 A project often has many Sass files, but typically, there’s a single file that serves as the root — the “homepage” of the Sass — that links out to the others. This root file is also known as the “Sass entry point.” The Sass entry point is the most important stylesheet file in your project because it tells the compiler what source files make up your Sass codebase.
 
 Your project’s Sass entry point is a simple file that only needs to do the following three tasks:
-1. Include a USWDS [settings file]({{ site.baseurl }}/documentation/settings/) (or files)
+1. Include a USWDS [settings file]({{ site.baseurl }}/documentation/settings/)
 2. Include the USWDS source code
 3. Include your project’s custom Sass
 
@@ -41,43 +41,45 @@ Create an entry point called something like `index.scss` or `styles.scss`. Your 
 {:.site-terminal}
 ```scss
 // Include a USWDS settings file (required)
-@import "uswds-settings.scss";
+@forward "uswds-settings.scss";
 
 // Point to the USWDS source code (required)
-@import "./path/to/source/uswds";
+@forward "./path/to/source/uswds";
 
 // Include your project's custom Sass (optional)
-@import "project-custom.scss";
+@forward "project-custom.scss";
 ```
 
 In plain language, this code says:
 
 - **Get the instructions**: Get the USWDS settings that tell the design system how to build the styles. Settings are the first thing you need to include.
 
-  Any individual setting is a Sass variable. Each setting begins with the `$theme-` prefix, and we provide a list of all available settings [in the USWDS documentation]({{ site.baseurl }}/documentation/settings/) as well as examples [in the USWDS codebase](https://github.com/uswds/uswds/tree/main/src/stylesheets/theme). The following is an example of a simple settings file:
+  Any individual setting is a Sass variable. Each setting begins with the `$theme-` prefix, and we provide a list of all available settings [in the USWDS documentation]({{ site.baseurl }}/documentation/settings/). The following is an example of a simple settings file:
 
   {:.site-terminal}
   ```scss
-  $theme-image-path:              "../uswds/img";
-  $theme-show-compile-warnings:   false;
-  $theme-color-primary-lightest:  "green-warm-10";
-  $theme-color-primary-lighter:   "green-warm-20";
-  $theme-color-primary-light:     "green-warm-30";
-  $theme-color-primary:           "green-warm-50";
-  $theme-color-primary-vivid:     "green-warm-50v";
-  $theme-color-primary-dark:      "green-warm-60v";
-  $theme-color-primary-darker:    "green-warm-70v";
-  $theme-color-primary-darkest:   "green-warm-80";
-  $theme-banner-background-color: "ink";
-  $theme-banner-link-color:       "primary-light";
-  $theme-banner-max-width:        "none";
+  @use "uswds-core" with (
+    $theme-image-path: "../uswds/img",
+    $theme-show-compile-warnings: false,
+    $theme-color-primary-lightest: "green-warm-10",
+    $theme-color-primary-lighter: "green-warm-20",
+    $theme-color-primary-light: "green-warm-30",
+    $theme-color-primary: "green-warm-50",
+    $theme-color-primary-vivid: "green-warm-50v",
+    $theme-color-primary-dark: "green-warm-60v",
+    $theme-color-primary-darker: "green-warm-70v",
+    $theme-color-primary-darkest: "green-warm-80",
+    $theme-banner-background-color: "ink",
+    $theme-banner-link-color: "primary-light",
+    $theme-banner-max-width: "none",
+  )
   ```
 
 - **Create the foundation**: Build all USWDS styles from these settings.
 
   The USWDS source code is the core of the design system. It contains all the styles for USWDS components as well as the design language of Sass tokens and functions used to build those components. USWDS source code has its own Sass entry point, which lives in the `node_modules` directory when you install USWDS with npm.
 
-The entry point itself is called `uswds.scss`, and it’s found in the `/scss` directory of the USWDS npm package. When you install with npm, the complete path is typically `./node_modules/uswds/dist/scss/uswds`.
+  This is called `uswds` (or, more accurately, `uswds/_index.scss`), and it’s found in the `/packages` directory of the USWDS npm package. When you install with npm, the complete path is typically `./node_modules/@uswds/uswds/packages/uswds/_index.html`.
 
 - **Build new work on top of that foundation**: Finally, add any custom project styles built from design system code.
 
@@ -106,6 +108,13 @@ Your `gulpfile.js` may read as follows:
 const uswds = require("@uswds/compile");
 
 /**
+ * USWDS version
+ * Set the version of USWDS you're using (2 or 3)
+ */
+
+uswds.settings.version = 3;
+
+/**
  * Path settings
  * Set as many as you need
  */
@@ -128,20 +137,20 @@ Now, create your path settings using the following table:
 <div markdown="1" class="usa-table-container--scrollable" tabindex="0">
 
 {: .usa-table }
-Setting | Default | Description
+Setting | Default values - Version 2.x | Default values - Version 3.0 | Description
 --- | --- | ---
-`paths.src.uswds` | `"./node_modules/uswds/dist"` | Source location of the `uswds` package
-`paths.src.sass` | `"./node_modules/uswds/dist/scss"` | Source location of the USWDS Sass
-`paths.src.theme` | `"./node_modules/uswds/dist/scss/theme"` | Source location of the USWDS theme files (Sass entry point and starter settings files)
-`paths.src.fonts` | `"./node_modules/uswds/dist/fonts"` | Source location of the USWDS fonts
-`paths.src.img` | `"./node_modules/uswds/dist/img"` | Source location of the USWDS images
-`paths.src.js` | `"./node_modules/uswds/dist/js"` | Source location of the USWDS compiled JavaScript files
-`paths.src.projectSass` | `"./sass"` | Source location of any existing project Sass files outside of `paths.dist.sass`.<br/> The `watch` script will watch this directory for changes.
-`paths.dist.theme` | `"./sass"` | Project destination for theme files (Sass entry point and settings)
-`paths.dist.img` | `"./assets/uswds/images"` | Project destination for images
-`paths.dist.fonts` | `"./assets/uswds/fonts"` | Project destination for fonts
-`paths.dist.js` | `"./assets/uswds/js"` | Project destination for compiled JavaScript
-`paths.dist.css` | `"./assets/uswds/css"` | Project destination for compiled CSS
+`paths.src.uswds` | `"./node_modules/uswds/dist"` | `"./node_modules/@uswds"` | Source location of the `uswds` package
+`paths.src.sass` | `"./node_modules/uswds/dist/scss"` | `"./node_modules/@uswds/uswds/packages"` | Source location of the USWDS Sass
+`paths.src.theme` | `"./node_modules/uswds/dist/scss/theme"` | `"./node_modules/@uswds/uswds/dist/theme"` |Source location of the USWDS theme files (Sass entry point<br> and starter settings files)
+`paths.src.fonts` | `"./node_modules/uswds/dist/fonts"` | `"./node_modules/@uswds/uswds/dist/fonts"` | Source location of the USWDS fonts
+`paths.src.img` | `"./node_modules/uswds/dist/img"` | `"./node_modules/@uswds/uswds/dist/img"` | Source location of the USWDS images
+`paths.src.js` | `"./node_modules/uswds/dist/js"` | `"./node_modules/@uswds/uswds/dist/js"` | Source location of the USWDS compiled JavaScript files
+`paths.src.projectSass` | `"./sass"` | `"./sass"` | Source location of any existing project Sass files outside of <br/>`paths.dist.sass`. The `watch` script will watch this <br>directory for changes.
+`paths.dist.theme` | `"./sass"` | `"./sass"` | Project destination for theme files (Sass entry point and <br>settings)
+`paths.dist.img` | `"./assets/uswds/images"` | `"./assets/uswds/images"` | Project destination for images
+`paths.dist.fonts` | `"./assets/uswds/fonts"` | `"./assets/uswds/fonts"` | Project destination for fonts
+`paths.dist.js` | `"./assets/uswds/js"` | `"./assets/uswds/js"` | Project destination for compiled JavaScript
+`paths.dist.css` | `"./assets/uswds/css"` | `"./assets/uswds/css"` | Project destination for compiled CSS
 
 </div>
 

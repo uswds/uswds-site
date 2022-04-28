@@ -23,7 +23,6 @@ As always, we're here for you if you have any questions. Please get in touch via
 We recommend using the following tools when working with the Design System:
 - Node (use the version specified in the [.nvmrc file](https://github.com/uswds/uswds/blob/main/.nvmrc); if needed, [download the latest version](https://nodejs.org/en/download/) from Node.js)
 - npm
-- Sass (we use [the latest `sass` package from npm](https://www.npmjs.com/package/sass))
 
 These step-by-step instructions describe how to get started with the Design System using npm (recommended method).
 

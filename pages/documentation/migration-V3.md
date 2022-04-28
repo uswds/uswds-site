@@ -67,11 +67,14 @@ Most of the source code now lives in `/@uswds/uswds/packages` but some compiled 
 An individual package looks like this:
 
 ```
-├── packages/
 │   ...
 │   ├── usa-accordion/
 │   │   ├── src/
 │   │   │   ├── content/
+│   │   │   │   ├── index.js
+│   │   │   │   ├── usa-accordion.json
+│   │   │   │   ├── usa-accordion~bordered.json
+│   │   │   │   ├── usa-accordion~multiselectable.json
 │   │   │   ├── styles/
 │   │   │   │   ├── _index.scss
 │   │   │   │   └── accordion.scss
@@ -81,7 +84,7 @@ An individual package looks like this:
 │   │   │   ├── index.js
 │   │   │   ├── usa-accordion.stories.js
 │   │   │   └── usa-accordion.twig
-│   │   └── _index.scss_/
+│   │   └── _index.scss
 ```
 
 Most teams won't ever need to know what's happening inside the USWDS source code, but the more you know about what's going on under the hood, the better you can understand what's happening and why as you migrate to USWDS 3.0.
@@ -105,7 +108,7 @@ There are four necessary steps migrating to USWDS 3.0. In addition to the requir
 ### 1. Check your current USWDS code and settings versions
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
-USWDS 3.0 uses the same styles and markup as USWDS 2.13.3 — and, with one exception, the same settings. This means that if you're currently using USWDS 2.13.3, there's no styles and markup to update. But if you're using a version older than 2.13.3, migrating to USWDS 3.0 may mean updating some of your markup and settings.
+USWDS 3.0 uses the same styles and markup as USWDS 2.13.3 — and, with one exception, the same settings. This means that if you're currently using USWDS 2.13.3, there are no styles or markup to update. But if you're using a version older than 2.13.3, migrating to USWDS 3.0 may mean updating some of your markup and settings.
 
 So, before migrating, check the versions of both your existing USWDS code and its settings (since code and settings may be different).
 

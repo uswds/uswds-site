@@ -9,7 +9,7 @@ meta:
 excerpt: USWDS 3.0 is an important major design system update that's easy to apply to an existing USWDS 2 project. USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
 ---
 
-<img src="{{ site.baseurl }}/img/introducing-uswds-3/introducing-uswds-3.jpg" alt="A colorful collection of screens and interface components" class="width-full tablet:width-tablet-lg maxw-full tablet:maxw-tablet-lg">
+<img src="{{ site.baseurl }}/img/introducing-uswds-3/introducing-uswds-3.jpg" alt="A colorful grid of geometric shapes reads 3.0" class="width-full tablet:width-tablet-lg maxw-full tablet:maxw-tablet-lg">
 
 ## A more modular design system, incrementally
 

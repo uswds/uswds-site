@@ -954,7 +954,6 @@ Instead of simply forwarding the `usa-banner` component, you can import the comp
 
 // Import the component and all related dependencies
 @forward "usa-banner";
-@forward "usa-icon";
 @forward "usa-layout-grid";
 @forward "usa-media-block";
 @forward "uswds-fonts";
@@ -964,7 +963,6 @@ Now, instead of pointing at the component packages, we can point directly at the
 
 ```scss
 @forward "usa-banner/src/styles";
-@forward "usa-icon/src/styles";
 @forward "usa-layout-grid/src/styles";
 @forward "usa-media-block/src/styles";
 @forward "uswds-fonts";

@@ -30,7 +30,7 @@ USWDS 3.0 takes a modular, component-centered approach to the design system. We'
 
 USWDS 3.0 stylesheets use the most modern version of the Sass module syntax. The Sass language that we use to write our stylesheets updated its syntax in 2020 and the old syntax (using `@import`) is now deprecated. Sass will no longer support the old syntax starting in October 2022. We want teams to use source code with reliable support throughout the life of their project, and USWDS 3.0 allows teams to migrate to Sass modules and maintain support.
 
-[Read more about the Sass module syntax](https://sass-lang.com/)
+[Read more about the Sass module syntax](https://sass-lang.com/blog/the-module-system-is-launched)
 
 ### Improve performance and reduce the size of your project CSS 
 

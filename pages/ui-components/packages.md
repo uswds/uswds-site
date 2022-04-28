@@ -76,6 +76,10 @@ As of USWDS 3.0, the USWDS codebase is organized around packages. Packages live 
 │   ├── usa-accordion/
 │   │   ├── src/
 │   │   │   ├── content/
+│   │   │   │   ├── index.js
+│   │   │   │   ├── usa-accordion.json
+│   │   │   │   ├── usa-accordion~bordered.json
+│   │   │   │   ├── usa-accordion~multiselectable.json
 │   │   │   ├── styles/
 │   │   │   │   ├── _index.scss
 │   │   │   │   └── accordion.scss
@@ -85,7 +89,7 @@ As of USWDS 3.0, the USWDS codebase is organized around packages. Packages live 
 │   │   │   ├── index.js
 │   │   │   ├── usa-accordion.stories.js
 │   │   │   └── usa-accordion.twig
-│   │   └── _index.scss_/
+│   │   └── _index.scss
 ```
 
 The `/[package]/_index.scss` file is the Sass entry point for the package styles. It forwards any package style dependencies in addition to the component source itself, which lives in `[package]/src/styles/`. The `usa-search` package entry point looks something like this:
@@ -94,11 +98,11 @@ The `/[package]/_index.scss` file is the Sass entry point for the package styles
 /* ./packages/usa-search/_index.scss */
 
 //dependencies
+@forward "uswds-fonts";
+@forward "uswds-helpers";
 @forward "usa-button";
 @forward "usa-icon";
 @forward "usa-input";
-@forward "uswds-fonts";
-@forward "uswds-helpers";
 
 // src
 @forward "src/styles";
@@ -123,10 +127,12 @@ Using only package source would result in the following:
 @forward "usa-accordion/src/styles";
 @forward "usa-banner/src/styles";
 @forward "usa-button/src/styles";
+@forward "usa-icon/src/styles";
 @forward "usa-identifier/src/styles";
 @forward "usa-layout-grid/src/styles";
 @forward "usa-list/src/styles";
 @forward "usa-media-block/src/styles";
+@forward "uswds-core";
 @forward "uswds-fonts";
 @forward "uswds-helpers";
 ```

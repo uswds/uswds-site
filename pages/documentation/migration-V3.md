@@ -67,11 +67,14 @@ Most of the source code now lives in `/@uswds/uswds/packages` but some compiled 
 An individual package looks like this:
 
 ```
-├── packages/
 │   ...
 │   ├── usa-accordion/
 │   │   ├── src/
 │   │   │   ├── content/
+│   │   │   │   ├── index.js
+│   │   │   │   ├── usa-accordion.json
+│   │   │   │   ├── usa-accordion~bordered.json
+│   │   │   │   ├── usa-accordion~multiselectable.json
 │   │   │   ├── styles/
 │   │   │   │   ├── _index.scss
 │   │   │   │   └── accordion.scss
@@ -81,7 +84,7 @@ An individual package looks like this:
 │   │   │   ├── index.js
 │   │   │   ├── usa-accordion.stories.js
 │   │   │   └── usa-accordion.twig
-│   │   └── _index.scss_/
+│   │   └── _index.scss
 ```
 
 Most teams won't ever need to know what's happening inside the USWDS source code, but the more you know about what's going on under the hood, the better you can understand what's happening and why as you migrate to USWDS 3.0.
@@ -105,7 +108,7 @@ There are four necessary steps migrating to USWDS 3.0. In addition to the requir
 ### 1. Check your current USWDS code and settings versions
 
 {:.border-top-2px.border-base-lighter.padding-top-1}
-USWDS 3.0 uses the same styles and markup as USWDS 2.13.3 — and, with one exception, the same settings. This means that if you're currently using USWDS 2.13.3, there's no styles and markup to update. But if you're using a version older than 2.13.3, migrating to USWDS 3.0 may mean updating some of your markup and settings.
+USWDS 3.0 uses the same styles and markup as USWDS 2.13.3 — and, with one exception, the same settings. This means that if you're currently using USWDS 2.13.3, there are no styles or markup to update. But if you're using a version older than 2.13.3, migrating to USWDS 3.0 may mean updating some of your markup and settings.
 
 So, before migrating, check the versions of both your existing USWDS code and its settings (since code and settings may be different).
 
@@ -182,7 +185,7 @@ Add this load path to your compiler settings, or update any old paths if your co
 - const pkg = require("./node_modules/uswds/package.json");
 + const pkg = require("./node_modules/@uswds/uswds/package.json");
 ...
-- const uswds = require("./node_modules/uswds/package.json");
+- const uswds = require("./node_modules/uswds-gulp/config/uswds");
 + const uswds = "node_modules/@uswds/uswds";
 or
 - const USWDS = "node_modules/uswds/dist";
@@ -599,7 +602,7 @@ These instructions will help you update your `@import` references to the new syn
 
 #### Update your @import references
 
-1. **Replace all instances of @import with @forward in your Sass entry point.** Update all of the `@import` references in your Sass entry point to `@forward`.
+1. **Replace all instances of @import with @forward in your Sass entry point.** 
 
 ```diff
 - @import "uswds-theme-color";
@@ -951,7 +954,6 @@ Instead of simply forwarding the `usa-banner` component, you can import the comp
 
 // Import the component and all related dependencies
 @forward "usa-banner";
-@forward "usa-icon";
 @forward "usa-layout-grid";
 @forward "usa-media-block";
 @forward "uswds-fonts";
@@ -961,7 +963,6 @@ Now, instead of pointing at the component packages, we can point directly at the
 
 ```scss
 @forward "usa-banner/src/styles";
-@forward "usa-icon/src/styles";
 @forward "usa-layout-grid/src/styles";
 @forward "usa-media-block/src/styles";
 @forward "uswds-fonts";

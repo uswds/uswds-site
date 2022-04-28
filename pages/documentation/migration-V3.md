@@ -2,7 +2,7 @@
 permalink: /documentation/migration/
 layout: styleguide
 title: Migrating to USWDS 3.0
-lead: Migrate to USWDS 3.0 for Sass Module support and an unbundled design system with minimal upgrade effort
+lead: Migrate to USWDS 3.0 for Sass module support and an unbundled design system with minimal upgrade effort
 category: How to use USWDS
 subnav:
 - text: Why migrate to USWDS 3.0?

@@ -39,7 +39,7 @@ You can include only the code you need, with something like:
 {% assign uswdsPackage = packages | where: "name", "uswds" | first %}
 Using packages helps reduce unused code, reduces the size of the final compiled CSS, and typically results in faster compile times. The `uswds` package included by default in most projects is {{ uswdsPackage.fullSize | times: 0.185 | round }} KB gzipped. Using packages typically cuts that number by half.
 
-With packages and Sass Module syntax in USWDS 3.0, you can be confident that packages that share code dependencies will only include those dependencies once in a project. 
+With packages and Sass module syntax in USWDS 3.0, you can be confident that packages that share code dependencies will only include those dependencies once in a project. 
 
 ### The uswds-core package
 The `uswds-core` package is a new package in USWDS 3.0. `uswds-core` is the engine of the design system, and includes all the functions, mixins, placeholders, tokens, and fonts necessary to write USWDS Sass.

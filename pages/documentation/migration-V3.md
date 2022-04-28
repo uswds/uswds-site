@@ -34,7 +34,7 @@ subnav:
 
 **Stay up-to-date with minimal hassle.** We want teams to benefit from the most current version of USWDS. Many projects should be able to migrate from USWDS 2 to USWDS 3.0 in about an hour. This new version makes no markup or style changes from USWDS 2.13.3. If you already use USWDS 2.13.0 or later, you should be able to update to USWDS 3.0 in a matter of minutes. Additionally, the under-the-hood changes we're introducing in USWDS 3.0 will make it easier to stay up-to-date with USWDS over time. An incremental update now will make subsequent updates simpler.
 
-[Learn more about what's new in USWDS 3.0 TKTKTKTK]({{ site.baseurl }}/components/packages) →
+[Learn more about what's new in USWDS 3.0]({{ site.baseurl }}/whats-new/updates/2022/04/28/introducing-uswds-3-0/) →
 
 ## USWDS 3.0 package overview
 

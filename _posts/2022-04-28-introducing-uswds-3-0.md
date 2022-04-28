@@ -6,14 +6,14 @@ category: About
 author: Dan O. Williams
 meta:
   og:image: /img/introducing-uswds-3/introducing-uswds-3.jpg
-excerpt: USWDS is an important major design system update that's easy to apply to an existing USWDS 2 project. USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS. Where USWDS 2.0 introduced a new design language and changed the way we built our components from the ground up, USWDS 3.0 adds important incremental improvements without fundamentally changing how the design system works.
+excerpt: USWDS 3.0 is an important major design system update that's easy to apply to an existing USWDS 2 project. USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
 ---
 
 <img src="{{ site.baseurl }}/img/introducing-uswds-3/introducing-uswds-3.jpg" alt="A colorful collection of screens and interface components" class="width-full tablet:width-tablet-lg maxw-full tablet:maxw-tablet-lg">
 
 ## A more modular design system, incrementally
 
-USWDS is an important major design system update that's easy to apply to an existing USWDS 2 project. USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS. Where USWDS 2.0 introduced a new design language and changed the way we built our components from the ground up, USWDS 3.0 adds important incremental improvements without fundamentally changing how the design system works.
+USWDS 3.0 is an important major design system update that's easy to apply to an existing USWDS 2 project. USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS. Where USWDS 2.0 introduced a new design language and changed the way we built our components from the ground up, USWDS 3.0 adds important incremental improvements without fundamentally changing how the design system works.
 
 For most USWDS 2 projects, migrating to USWDS 3.0 should only require changing  a few lines of project code. We've developed this new version to be a simple, straightforward migration. We want teams to start using USWDS 3.0, and we'll be there to help you do it.
 

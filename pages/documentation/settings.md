@@ -19,51 +19,50 @@ subnav:
   href: '#utilities-settings'
 ---
 
-A good way to get started with USWDS settings is to copy the `dist/scss/theme` directory out of the `uswds` package and into the same directory where you keep your project Sass files. Then use the `@import` directive in Sass to import these settings **before importing the main USWDS Sass**. You can use the `styles.scss` example file in the `dist/scss/theme` directory as a starting point for your own Sass entry point:
+A good way to get started with USWDS settings is to copy the `dist/theme` directory out of the `uswds` package and into the same directory where you keep your project Sass files. Then use the `@forward` directive in Sass to include these settings **before including the main USWDS Sass**. You can use the `styles.scss` example file in the `dist/theme` directory as a starting point for your own Sass entry point:
 
 ```scss
-// -------------------------------------
-// Import individual theme settings
-
-@import 'uswds-theme-general';
-@import 'uswds-theme-typography';
-@import 'uswds-theme-spacing';
-@import 'uswds-theme-color';
-@import 'uswds-theme-utilities';
-
-// -------------------------------------
-// Import individual USWDS modules...
-
-// @import 'uswds-fonts';
-// @import 'uswds-layout-grid';
-// @import 'uswds-components';
-// @import 'uswds-utilities';
-
-// -------------------------------------
-// ...or import all USWDS modules
-
-@import 'uswds';
-
-// -------------------------------------
-// Import theme custom styles
-
-@import 'uswds-theme-custom-styles';
+@forward 'uswds-theme';
+@forward 'uswds';
+@forward 'uswds-theme-custom-styles';
 ```
 
-You can also add only the settings you wish to modify before importing `uswds`, either in a separate file, or directly in your Sass entry point:
+Add only the settings you wish to modify before importing `uswds`, either in a separate file (`_uswds-theme.scss`), or directly in your Sass entry point. Either way you do it, you'll use the format `@use "uswds-core" with ()` including a list of your changed settings variables inside the parentheses.
+
+If you use the `_uswds-theme.scss` file, it would look something like this:
 
 ```scss
-$theme-show-compile-warnings: false;
-$theme-show-notifications: false;
-
-@import 'uswds';
-@import 'uswds-theme-custom-styles';
+/* _uswds-theme.scss */
+@use "uswds-core" with (
+  $theme-show-compile-warnings: false,
+  $theme-show-notifications: false,
+);
 ```
 
-In general, when importing settings and custom code, you just need to follow this order of operations:
-1. **Import settings:** Tell the design system how to build.
-1. **Import `uswds`:** Build the design system.
-1. **Import custom styles:** Build on top of the design system.
+```scss
+/* styles.scss */
+@forward 'uswds-theme';
+@forward 'uswds';
+@forward 'uswds-theme-custom-styles';
+```
+
+If you include settings right in your Sass entry point, it would look something like this:
+
+```scss
+/* styles.scss */
+@use "uswds-core" with (
+  $theme-show-compile-warnings: false,
+  $theme-show-notifications: false,
+);
+
+@forward 'uswds';
+@forward 'uswds-theme-custom-styles';
+```
+
+In general, when including settings and custom code, you just need to follow this order of operations:
+1. **Include settings:** Tell the design system how to build.
+1. **Include `uswds`:** Build the design system.
+1. **Include custom styles:** Build on top of the design system.
 
 {% assign settings = site.data.settings | sort %}
 

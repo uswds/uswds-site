@@ -3077,21 +3077,7 @@ $theme-table-column-gap: 4;
   }
 
   .usa-nav__close {
-    @include add-background-svg("close-blue-60v-alt");
-    @include u-square(6);
     background-color: color("base-lightest");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: units(2);
-  }
-
-  .usa-nav__link {
-    &[aria-expanded="true"] {
-      @include add-background-svg("usa-icons/remove");
-    }
-    &[aria-expanded="false"] {
-      @include add-background-svg("usa-icons/add");
-    }
   }
 
   .usa-nav__primary button {

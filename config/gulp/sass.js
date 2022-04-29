@@ -1,10 +1,10 @@
-const { formatters } = require("stylelint");
+// const { formatters } = require("stylelint");
 const autoprefixer = require("autoprefixer");
 const concat = require("gulp-concat");
 const csso = require("postcss-csso");
 const dutil = require("./doc-util");
 const gulp = require("gulp");
-const gulpStylelint = require("gulp-stylelint");
+const stylelint = require("stylelint");
 const postcss = require("gulp-postcss");
 const sass = require("gulp-dart-scss");
 const sourcemaps = require("gulp-sourcemaps");
@@ -194,7 +194,7 @@ gulp.task("scss-lint", (done) => {
 
   return gulp
     .src(["./css/**/*.scss"])
-    .pipe(gulpStylelint({
+    .pipe(stylelint({
       reporters: [
         {formatter: 'string', console: true}
       ]

@@ -19,15 +19,15 @@ $theme-grid-gap-default: "md";
 $site-measure: 5;
 
 @mixin grid-cols($default, $split: null, $full: null) {
-  @if $default != null {
+  @if $default {
     @include grid-col($default);
   }
-  @if $split != null {
+  @if $split {
     @include at-media($theme-site-cols-split) {
       @include grid-col($split);
     }
   }
-  @if $full != null {
+  @if $full {
     @include at-media($theme-site-cols-show) {
       @include grid-col($full);
     }

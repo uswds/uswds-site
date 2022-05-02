@@ -531,7 +531,7 @@ body {
   }
 
   > h2 {
-    @extend .site-h2;
+    @extend %site-h2;
   }
 
   > h3 {
@@ -1978,7 +1978,7 @@ strong {
 }
 
 .output-false {
-  @extend .output-true;
+  @extend %output-true;
   @include u-bg("error");
 }
 
@@ -2141,7 +2141,7 @@ li {
 }
 
 .utility-scope-button-disabled {
-  @extend .utility-scope-button;
+  @extend %utility-scope-button;
   @include u-bg("white");
   @include u-border(1px, "gray-10");
   @include u-text("gray-50", strike);
@@ -2151,7 +2151,7 @@ li {
   @include u-display(inline);
 
   a {
-    @extend .utility-scope-button;
+    @extend %utility-scope-button;
     @include add-knockout-font-smoothing;
     @include u-bg("blue-50v");
     @include u-text("white", "no-underline");
@@ -2192,12 +2192,12 @@ li {
 }
 
 .utility-value {
-  @extend .utility-class;
+  @extend %utility-class;
   @include u-bg("secondary-lighter");
 }
 
 .utility-value-color {
-  @extend .utility-class;
+  @extend %utility-class;
   @include u-bg("white");
   @include u-border(1px, "gray-10");
   @include u-margin-top(0);
@@ -2845,7 +2845,7 @@ $theme-table-column-gap: 4;
     }
 
     .site-text-intro {
-      @extend .site-text-intro;
+      @extend %site-text-intro;
 
       & + p {
         margin-top: units(4);
@@ -3012,7 +3012,7 @@ $theme-table-column-gap: 4;
   }
 
   .site-text-intro {
-    @extend .site-text-intro;
+    @extend %site-text-intro;
   }
 }
 
@@ -3705,7 +3705,7 @@ body {
 
 .site-prose {
   .site-component-section-title {
-    @extend .site-h2;
+    @extend %site-h2;
     border-top: units(1px) solid;
     margin-bottom: units(2);
     margin-top: units(3);
@@ -3713,7 +3713,7 @@ body {
   }
 
   .site-component-name {
-    @extend .site-page-title;
+    @extend %site-page-title;
     border-top: units(2px) solid;
     font-weight: fw("light");
     padding-top: units(2);

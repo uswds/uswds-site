@@ -1,5 +1,8 @@
 @use "sass:math";
 
+@import "custom-styles/card-policy";
+@import "custom-styles/highlight";
+
 // ========================================
 // CUSTOM PROJECT SASS
 // ----------------------------------------
@@ -3754,9 +3757,6 @@ blockquote {
   margin-left: 0;
   padding-left: units(2);
 }
-
-@import "custom-styles/card-policy";
-@import "custom-styles/highlight";
 
 .pagination-behaviors {
   @include list-reset;

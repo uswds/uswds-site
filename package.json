@@ -162,5 +162,8 @@
       "build-js"
     ]
   },
-  "snyk": true
+  "snyk": true,
+  "dependencies": {
+    "uswds": "github:uswds/uswds#jm-readme-updates"
+  }
 }

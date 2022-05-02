@@ -186,23 +186,7 @@ gulp.task(
   )
 );
 
-// OLD
-// gulp.task("scss-lint", (done) => {
-//   if (!cFlags.test) {
-//     dutil.logMessage("scss-lint", "Skipping linting of Sass files.");
-//     return done();
-//   }
 
-//   return gulp
-//     .src(["./css/**/*.scss"])
-//     .pipe(stylelint({
-//       reporters: [
-//         {formatter: 'string', console: true}
-//       ]
-//     }));
-// });
-
-// CHANGE
 gulp.task("scss-lint", async (done) => {
   if (!cFlags.test) {
     dutil.logMessage("scss-lint", "Skipping linting of Sass files.");
@@ -216,15 +200,5 @@ gulp.task("scss-lint", async (done) => {
 
     done(errored ? new Error(output) : null);
 });
-
-// NEW
-// gulp.task('stylelint', async function (callback) {
-//   const { errored, output } = await stylelint.lint({
-//     files: [`${PROJECT_SASS_SRC}/**/*.scss`, `!${PROJECT_SASS_SRC}/uswds/**/*.scss`],
-//     formatter: 'string',
-//   });
-
-//   callback(errored ? new Error(output) : null);
-// });
 
 gulp.task(task, gulp.series("build-sass"));

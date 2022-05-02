@@ -7,5 +7,5 @@
     "no-descending-specificity": null,
     "no-duplicate-selectors": null
   },
-  "ignoreFiles": "./src/stylesheets/lib/**/*"
+  "ignoreFiles": "./css/old settings/**/*"
 }

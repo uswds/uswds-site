@@ -164,6 +164,6 @@
   },
   "snyk": true,
   "dependencies": {
-    "uswds": "github:uswds/uswds#jm-readme-updates"
+    "uswds": "github:uswds/uswds#develop"
   }
 }

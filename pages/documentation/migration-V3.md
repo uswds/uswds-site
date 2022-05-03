@@ -186,10 +186,10 @@ Add this load path to your compiler settings, or update any old paths if your co
 + const pkg = require("./node_modules/@uswds/uswds/package.json");
 ...
 - const uswds = require("./node_modules/uswds-gulp/config/uswds");
-+ const uswds = "node_modules/@uswds/uswds";
++ const uswds = "./node_modules/@uswds/uswds";
 or
 - const USWDS = "node_modules/uswds/dist";
-+ const USWDS = "node_modules/@uswds/uswds";
++ const USWDS = "./node_modules/@uswds/uswds";
       {%- endhighlight %}
     </li>
     <li><p>Search for references to <code>${uswds}</code> in the <code>includePaths</code> and <code>gulp.src()</code> found in your project’s gulp files. These paths tell the Sass compiler where to look for USWDS source files.</p>

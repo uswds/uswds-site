@@ -504,7 +504,8 @@ body {
   }
 }
 
-.site-h2 {
+.site-h2,
+%site-h2 {
   @include typeset("lang", "xl", 2);
   color: color($site-ink);
   margin-top: units(4);
@@ -1970,7 +1971,8 @@ strong {
   }
 }
 
-.output-true {
+.output-true,
+%output-true {
   @include add-knockout-font-smoothing;
   @include u-bg("blue-50v");
   @include u-display("inline-block");
@@ -2109,7 +2111,8 @@ li {
   @include u-text("light", "no-uppercase", "ls-auto", "red-warm-50v");
 }
 
-.utility-scope {
+.utility-scope,
+%utility-scope {
   @include add-list-reset;
   @include u-display("inline");
   @include u-margin(0);
@@ -2124,7 +2127,8 @@ li {
   }
 }
 
-.utility-scope-button {
+.utility-scope-button,
+%utility-scope-button {
   @include u-display("inline-block");
   @include u-font-size("lang", "2xs");
   @include u-line-height("lang", 1);
@@ -2184,7 +2188,8 @@ li {
   @include u-text("normal", $site-ink);
 }
 
-.utility-class {
+.utility-class,
+%utility-class {
   @include u-bg("base-lightest");
   @include u-display("inline-block");
   @include u-font("mono", "2xs");
@@ -2486,7 +2491,8 @@ h6 + div:not(.usa-accordion__content):not(.usa-collection__meta-list) {
   }
 }
 
-.site-page-title {
+.site-page-title,
+%site-page-title {
   @include typeset("lang", "2xl", 2);
   font-weight: fw("bold");
   color: color($site-ink);
@@ -2847,7 +2853,8 @@ $theme-table-column-gap: 4;
       @include u-text("uppercase", "ls-2", "normal");
     }
 
-    .site-text-intro {
+    .site-text-intro,
+    %site-text-intro {
       @extend %site-text-intro;
 
       & + p {

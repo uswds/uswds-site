@@ -19,10 +19,10 @@ subnav:
   href: '#browser-support'
 - text: Accessibility
   href: '#accessibility'
-- text: Fractal
-  href: '#fractal'
 - text: Long-term support of v1.x
   href: '#long-term-support-of-v1x'
+- text: Long-term support of v2.x
+  href: '#long-term-support-of-v2x'
 - text: Need installation help?
   href: '#need-installation-help'
 - text: Contributing

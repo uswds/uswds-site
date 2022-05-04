@@ -180,6 +180,27 @@ Add this load path to your compiler settings, or update any old paths if your co
 <div id="m-a6" class="usa-accordion__content site-prose">
   <ol>
     <li>How do you know you're using USWDS Gulp? Search for a line like <code>const uswds = require("./node_modules/uswds-gulp/config/uswds");</code> or <code>const uswds = "node_modules/uswds/dist"</code> in your gulp setup. This indicates that you're using the gulp setup we distributed as USWDS Gulp.</li>
+    <li><p>Update your versions of the <code>sass</code> and <code>gulp-sass</code> packages if you're using them. If you use the <code>sass</code> package, run the following command in the terminal:</p>
+      {% highlight node -%}
+npm install sass@latest
+      {%- endhighlight%}
+        <p>If you use the <code>gulp-sass</code> package, run the following command in the terminal:</p>
+      {% highlight node -%}
+npm install gulp-sass@latest
+      {%- endhighlight%}
+    </li>
+    <li>The <code>sass.sync</code> function is no longer supported in the latest versions of <code>gulp-sass</code>. Replace any instance of <code>sass.sync</code> with simply <code>sass</code>:
+      {% highlight diff -%}
+- sass.sync({
++ sass({
+      {%- endhighlight %}
+    </li>
+    <li><p>If you use <code>sass</code> and <code>gulp-sass</code>, you'll need to update how they work together. Update your <code>const sass</code> to <code>const sass = require("gulp-sass")(require("sass"));</code>:</p>
+      {% highlight diff -%}
+- const sass = require("gulp-sass");
++ const sass = require("gulp-sass")(require("sass"));
+      {%- endhighlight %}
+    </li>
     <li>Update the USWDS <code>const</code> elements to the updated USWDS package location:
       {% highlight diff -%}
 - const pkg = require("./node_modules/uswds/package.json");

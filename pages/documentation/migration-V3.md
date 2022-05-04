@@ -850,7 +850,7 @@ Using individual component packages instead of the `uswds` bundle package can re
 
 2. **Determine which packages your project needs.** The process of determining which packages your project needs is not automatic. Most projects will need to do a little work to identify the components their project uses.
    
-    A brute-force method to determine which packages your project uses is to search your codebase for use of a key class name associated with that component, like `usa-accordion` for accordions. All `usa-` prefixed packages use the same name as their CSS class. For reference, all the available packages in USWDS 3.0 are listed in the [table below](#available-packages).
+    A brute-force method to determine which packages your project uses is to search your codebase for use of a key class name associated with that component, like `usa-accordion` for accordions. All `usa-` prefixed packages use the same name as their CSS class. For reference, all the available packages in USWDS 3.0 are listed in the [table below](#available-packages). Search package-by-package for instances of the package or search your codebase for instances of `usa-` and make a running list of all the packages you use.
 
 3. **Load the your project's necessary component packages in your Sass entry point.** If you find a hit for the class name in your codebase, include the relevant package in your Sass entry point. 
 

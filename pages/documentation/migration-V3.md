@@ -956,7 +956,7 @@ $theme-utility-breakpoints: (
 ),
 ```
 
-For each breakpoint set to true in your project, search for its usage in your codebase by searching for the **breakpoint name** + a colon (`:`). SO, to search for the `tablet-lg` breakpoint, search for `tablet-lg:`. If that breakpoint does not appear, you can set the value to `false`.
+For each breakpoint set to true in your project, search for its usage in your codebase by searching for the **breakpoint name** + a colon (`:`). So, to search for the `tablet-lg` breakpoint, search for `tablet-lg:`. If that breakpoint does not appear, you can set the value to `false`.
 
 #### Using package source
 

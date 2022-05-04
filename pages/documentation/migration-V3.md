@@ -509,7 +509,7 @@ If you use any of these settings in your code, the output may change:
 Setting | Old default | New default
 --- | --- | ---
 `$theme-color-success-dark` | `"green-cool-50"` | `"green-cool-50v"`
-`$theme-color-success-darker` | `"green-cool-80"` | `"green-cool-60v"`
+`$theme-color-success-darker` | `"green-cool-60"` | `"green-cool-60v"`
 
 ###### What to do
 1. Check your settings to see if they are set to the **old** default.

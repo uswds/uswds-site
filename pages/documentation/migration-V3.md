@@ -512,8 +512,8 @@ Setting | Old default | New default
 `$theme-color-success-darker` | `"green-cool-60"` | `"green-cool-60v"`
 
 ###### What to do
-1. Check your settings to see if they are set to the **old** default.
-1. If they use the **old** default, delete the setting from your settings file so it uses the system default.
+1. Check your settings to see if they are set to either the **old** or the **new** default.
+1. If they use either the **old** or the **new** default, delete the setting from your settings file so it uses the system default.
 </div>
 <!-- End 2.12.0 section -->
 
@@ -571,8 +571,8 @@ Setting | Old default | New default
 `$theme-table-text-color` | `"ink"` | `default`
 
 ###### What to do
-1. Check your settings to see if they are set to the **old** default.
-2. If they use the **old** default, delete the setting from your settings file so it uses the system default.
+1. Check your settings to see if they are set to either the **old** or the **new** default.
+2. If they use either the **old** or the **new** default, delete the setting from your settings file so it uses the system default.
 </div>
 <!-- End 2.11.0 section -->
 
@@ -597,8 +597,8 @@ Setting | Old default | New default
 `$theme-alert-icon-size` | `4` | `5`
 
 ###### What to do
-1. Check your settings to see if they are set to the **old** default.
-2. If they use the **old** default, delete the setting from your settings file so it uses the system default.
+1. Check your settings to see if they are set to either the **old** or the **new** default.
+2. If they use either the **old** or the **new** default, delete the setting from your settings file so it uses the system default.
 
 {:.border-top-2px.border-base-lighter.padding-top-2}
 ##### <span class="usa-tag bg-accent-cool-darker">Markup</span> Update footer logo headings to use proper semantics.

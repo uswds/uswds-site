@@ -533,7 +533,7 @@ Setting | Old default | New default
 We deprecated the `$theme-site-max-width` variable. We're using `$theme-grid-container-max-width` instead.
 
 ###### What to do
-1. Replace instances of `$theme-site-max-width` with `$theme-grid-container-max-width`
+1. Replace instances of `$theme-site-max-width` with `$theme-grid-container-max-width`. If your layout is affected by this change, remove this setting from your settings file.
 
 {:.border-top-2px.border-base-lighter.padding-top-2}
 ##### <span class="usa-tag bg-accent-cool-darker">Markup</span> Replace the `thumb_down_off_alt` icon with `thumb_down_alt` icon.

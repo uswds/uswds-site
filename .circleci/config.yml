@@ -47,7 +47,6 @@ jobs:
           command: npm run test:ci
 
 workflows:
-  version: 2
   circle-uswds-site:
     jobs:
       - build

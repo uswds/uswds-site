@@ -29,6 +29,7 @@
     "url": "git+https://github.com/uswds/uswds-site.git"
   },
   "scripts": {
+    "postinstall": "npx patch-package",
     "axe": "node config/run-axe.js",
     "build": "gulp build && bundle exec jekyll build",
     "build-all-assets": "npm run build-fonts && npm run build-img && npm run build-js && npm run build-css",
@@ -106,6 +107,7 @@
     "node-notifier": "^10.0.0",
     "nswatch": "^0.2.0",
     "pa11y-ci": "^3.0.1",
+    "patch-package": "^6.4.7",
     "postcss": "^8.3.11",
     "postcss-csso": "^5.0.1",
     "prettier": "^2.4.1",

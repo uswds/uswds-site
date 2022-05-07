@@ -2,7 +2,11 @@
   "defaults": {
     "userAgent": "pa11y",
     "timeout": 120000,
+    "concurrency": 6,
     "standard": "WCAG2AA",
-    "runners": ["axe"]
+    "runners": ["axe"],
+    "ignore": [
+      "color-contrast"
+    ]
   }
 }

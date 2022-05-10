@@ -123,6 +123,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-include-cache
+  - jekyll-seo-tag
 
 exclude:
   - ".ruby-version"
@@ -144,3 +145,8 @@ exclude:
   - pa11y-results.json
 
 env: dev
+
+url: https://designsystem.digital.gov/
+twitter:
+  username: USWDS
+  card: summary

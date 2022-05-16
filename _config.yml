@@ -9,7 +9,7 @@ federalist_component_preview: "iframe.html?id="
 federalist_release_prefix: "release-"
 meta:
   og:image: /img/uswds-logo/lg-black.png
-touchpoints: 
+touchpoints:
   active: true
   hosted: true
 # this is for pages that don't have a permalink (primarily posts)
@@ -118,6 +118,10 @@ defaults:
       type: security_updates
     values:
       layout: styleguide
+  - scope:
+      path: ""
+    values:
+      image: /img/uswds-logo/lg-black.png
 
 plugins:
   - jekyll-redirect-from
@@ -149,4 +153,4 @@ env: dev
 url: https://designsystem.digital.gov/
 twitter:
   username: USWDS
-  card: summary
+  card: summary_large_image

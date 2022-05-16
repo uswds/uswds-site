@@ -4,9 +4,9 @@ redirect_from:
 - /buttons/
 - /components/buttons/
 type: component
-title: Button
+title: Button TEST
 category: Components
-lead: A button draws attention to important actions with a large selectable surface.
+lead: A button draws attention to important actions with a large selectable surface. TEST TEST
 component:
   name: button
   status: ready

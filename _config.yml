@@ -150,7 +150,7 @@ exclude:
 
 env: dev
 
-url: https://designsystem.digital.gov/
+url: https://designsystem.digital.gov
 twitter:
   username: USWDS
   card: summary_large_image

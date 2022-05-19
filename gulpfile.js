@@ -8,5 +8,18 @@ require( './config/gulp/javascript' );
 require( './config/gulp/sass' );
 require( './config/gulp/build' );
 
-var gulp  = require( 'gulp' );
-var dutil = require( './config/gulp/doc-util' );
+const gulp  = require( 'gulp' );
+const dutil = require( './config/gulp/doc-util' );
+
+const uswds = require("@uswds/compile");
+
+uswds.settings.version = 3;
+
+uswds.paths.dist.theme = "./css";
+uswds.paths.dist.img = "./assets/img";
+uswds.paths.dist.fonts = "./assets/fonts";
+uswds.paths.dist.js = "./assets/js/vendor";
+uswds.paths.dist.css = "./assets/css";
+
+exports.init = uswds.init;
+exports.compile = uswds.compile;

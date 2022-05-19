@@ -20,5 +20,9 @@ uswds.paths.dist.fonts = "./assets/fonts";
 uswds.paths.dist.js = "./assets/js/vendor";
 uswds.paths.dist.css = "./assets/css";
 
+/**
+ * USWDS Compile tasks
+ */
 exports.init = uswds.init;
 exports.compile = uswds.compile;
+exports.compileIcons = uswds.compileIcons;

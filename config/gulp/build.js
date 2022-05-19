@@ -86,7 +86,7 @@ gulp.task('build-uswds-if-needed', () => {
     /**
     * We need to: install USWDS deps and build components to HTML.
     */
-    return spawnP('npm', [ 'install' ], sharedOpts)
+    return spawnP('npm', [ 'install', '--legacy-peer-deps' ], sharedOpts)
       .then(() => spawnP('npm', [ 'run', 'build:html' ], sharedOpts));
   }
 });

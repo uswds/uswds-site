@@ -10,13 +10,7 @@ const rename      = require('gulp-rename');
 const linter      = require('gulp-eslint');
 const task        = 'javascript';
 
-gulp.task('eslint', function (done) {
-
-  if (!cFlags.test) {
-    dutil.logMessage('eslint', 'Skipping linting of JavaScript files.');
-    return done();
-  }
-
+gulp.task('eslint', function () {
   return gulp.src([
     './js/**/*.js',
     '!./js/vendor/**/*.js'])
@@ -25,7 +19,7 @@ gulp.task('eslint', function (done) {
 
 });
 
-gulp.task('copy-uswds-javascript', function (done) {
+gulp.task('copy-uswds-javascript', function () {
 
   dutil.logMessage(task, 'Copying JS from uswds');
 

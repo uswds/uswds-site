@@ -186,12 +186,7 @@ gulp.task(
   )
 );
 
-gulp.task("scss-lint", (done) => {
-  if (!cFlags.test) {
-    dutil.logMessage("scss-lint", "Skipping linting of Sass files.");
-    return done();
-  }
-
+gulp.task("scss-lint", () => {
   return gulp
     .src(["./css/**/*.scss"])
     .pipe(gulpStylelint({

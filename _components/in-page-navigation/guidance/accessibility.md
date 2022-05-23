@@ -1,0 +1,1 @@
+- The width of the current menu item’s highlight border is set with the `$theme-in-page-navigation-current-border-width` variable.

@@ -72,7 +72,7 @@
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
-    "@uswds/uswds": "3.0.1",
+    "@uswds/uswds": "github:uswds/uswds#mm-inclusive-patterns-in-page-navigation",
     "ansi-colors": "^4.1.1",
     "autoprefixer": "^10.4.0",
     "axe-core": "^4.3.5",

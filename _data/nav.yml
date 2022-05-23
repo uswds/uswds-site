@@ -49,6 +49,7 @@ Components:
   - href: /components/icon/
   - href: /components/icon-list/
   - href: /components/identifier/
+  - href: /components/in-page-navigation/
   - href: /components/input-prefix-suffix/
   - href: /components/link/
   - href: /components/list/
@@ -62,7 +63,6 @@ Components:
   - href: /components/search/
   - href: /components/select/
   - href: /components/side-navigation/
-  - href: /components/in-page-navigation/
   - href: /components/site-alert/
   - href: /components/step-indicator/
   - href: /components/summary-box/

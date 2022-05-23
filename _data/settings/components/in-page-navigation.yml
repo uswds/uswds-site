@@ -1,4 +1,4 @@
-name: Sidenav tertiary
+name: In-page navigation
 contents:
   - name: Current border width
     description: Width of the current section indicator.

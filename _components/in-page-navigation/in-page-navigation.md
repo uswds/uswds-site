@@ -1,14 +1,14 @@
 ---
 category: Components
 component:
-  status: To-do
+  status: ready
   package: usa-in-page-navigation
   dependencies:
-lead: "Hierarchical, tertiary navigation to place at the side of a page."
+lead: "Hierarchical, in-page navigation to place at the side of a page."
 permalink: /components/in-page-navigation/
 redirect_from:
-- /in-page-navigation/
-- /components/in-page-navigation/
+- /in-page-nav/
+- /components/in-page-nav/
 subnav:
 - text: Preview
   href: '#in-page-navigation-preview'
@@ -19,9 +19,8 @@ subnav:
 - text: Package
   href: '#in-page-navigation-package'
 tags:
-  - sidenav
+  - in-page
   - nav
-  - tertiary
-title: Side navigation tertiary
+title: In-page navigation
 type: component
 ---

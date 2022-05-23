@@ -13,7 +13,7 @@ const dutil = require( './config/gulp/doc-util' );
 const uswds = require("@uswds/compile");
 
 uswds.settings.version = 3;
-uswds.settings.custom_sprites_only = true;
+// uswds.settings.custom_sprites_only = true;
 
 uswds.paths.dist.theme = "./css";
 uswds.paths.dist.img = "./assets/img";

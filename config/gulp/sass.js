@@ -1,4 +1,3 @@
-// const { formatters } = require("stylelint");
 const autoprefixer = require("autoprefixer");
 const concat = require("gulp-concat");
 const csso = require("postcss-csso");
@@ -35,9 +34,8 @@ gulp.task("build-sass-fonts", () => {
     .pipe(
       sass({
         includePaths: sass_include_paths,
-        outputStyle: "expanded"
-      })
-      .on("error", handleError)
+        outputStyle: "expanded",
+      }).on("error", handleError)
     )
     .pipe(postcss(dev_plugins))
     .pipe(sourcemaps.write("."))
@@ -52,9 +50,8 @@ gulp.task("build-sass-components", () => {
     .pipe(
       sass({
         includePaths: sass_include_paths,
-        outputStyle: "expanded"
-      })
-      .on("error", handleError)
+        outputStyle: "expanded",
+      }).on("error", handleError)
     )
     .pipe(postcss(dev_plugins))
     .pipe(sourcemaps.write("."))
@@ -69,9 +66,8 @@ gulp.task("build-sass-custom", () => {
     .pipe(
       sass({
         includePaths: sass_include_paths,
-        outputStyle: "expanded"
-      })
-      .on("error", handleError)
+        outputStyle: "expanded",
+      }).on("error", handleError)
     )
     .pipe(postcss(dev_plugins))
     .pipe(sourcemaps.write("."))
@@ -86,9 +82,8 @@ gulp.task("build-next-sass", () => {
     .pipe(
       sass({
         includePaths: sass_include_paths,
-        outputStyle: "expanded"
-      })
-      .on("error", handleError)
+        outputStyle: "expanded",
+      }).on("error", handleError)
     )
     .pipe(postcss(dev_plugins))
     .pipe(sourcemaps.write("."))
@@ -103,9 +98,8 @@ gulp.task("build-sass-utilities", () => {
     .pipe(
       sass({
         includePaths: sass_include_paths,
-        outputStyle: "expanded"
-      })
-      .on("error", handleError)
+        outputStyle: "expanded",
+      }).on("error", handleError)
     )
     .pipe(postcss(dev_plugins))
     .pipe(sourcemaps.write("."))
@@ -186,19 +180,18 @@ gulp.task(
   )
 );
 
-
 gulp.task("scss-lint", async (done) => {
   if (!cFlags.test) {
     dutil.logMessage("scss-lint", "Skipping linting of Sass files.");
     return done();
   }
 
-  const { errored, output } = await stylelint.lint ({
+  const { errored, output } = await stylelint.lint({
     files: [`./css/**/*.scss`],
-    formatter: 'string',
-  })
+    formatter: "string",
+  });
 
-    done(errored ? new Error(output) : null);
+  done(errored ? new Error(output) : null);
 });
 
 gulp.task(task, gulp.series("build-sass"));

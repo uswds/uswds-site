@@ -20,7 +20,7 @@ uswds.paths.dist.img = "./assets/img";
 uswds.paths.dist.fonts = "./assets/fonts";
 uswds.paths.dist.js = "./assets/js/vendor";
 uswds.paths.dist.css = "./assets/css";
-uswds.paths.dist.icons = "./img/test-usa-icons";
+// uswds.paths.dist.icons = "./img/test-usa-icons";
 
 
 /**

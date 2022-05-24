@@ -71,7 +71,6 @@ gulp.task('build-uswds-if-needed', () => {
     dutil.logMessage('build-uswds-if-needed', 'USWDS is already built.');
     return Promise.resolve();
   } else {
-    return Promise.resolve();
     dutil.logMessage('build-uswds-if-needed', 'Building USWDS...');
 
     if (!fs.existsSync(gulpfile)) {

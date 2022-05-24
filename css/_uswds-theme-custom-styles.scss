@@ -877,29 +877,6 @@ body {
   }
 }
 
-h3 + .button__wrapper {
-  margin-top: units(-0.5);
-}
-
-.button__wrapper {
-  clear: both;
-  display: block;
-  margin-left: units(-1);
-  padding: 0 units(1);
-
-  @include at-media("mobile-lg") {
-    display: table;
-  }
-
-  button:last-child {
-    margin-right: 0;
-  }
-}
-
-.button__wrapper--dark {
-  background: color("base-darker");
-}
-
 .usa-heading {
   color: color($site-primary-dark);
 }
@@ -2104,8 +2081,7 @@ li {
   @include u-text("light", "no-uppercase", "ls-auto", "red-warm-50v");
 }
 
-.utility-scope,
-%utility-scope {
+.utility-scope {
   @include add-list-reset;
   @include u-display("inline");
   @include u-margin(0);

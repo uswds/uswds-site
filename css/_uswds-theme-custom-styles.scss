@@ -2783,6 +2783,14 @@ $theme-table-column-gap: 4;
   @include typeset("lang");
 }
 
+%site-text-intro {
+  @include typeset("lang", "lg", 5);
+  @include u-measure(5);
+  font-weight: fw("light");
+  margin-bottom: units(6);
+  margin-top: units(1);
+}
+
 .site-prose {
   @include typeset("lang");
 
@@ -2822,8 +2830,7 @@ $theme-table-column-gap: 4;
       @include u-text("uppercase", "ls-2", "normal");
     }
 
-    .site-text-intro,
-    %site-text-intro {
+    .site-text-intro {
       @extend %site-text-intro;
 
       & + p {
@@ -2860,11 +2867,7 @@ $theme-table-column-gap: 4;
 }
 
 .site-text-intro {
-  @include typeset("lang", "lg", 5);
-  @include u-measure(5);
-  font-weight: fw("light");
-  margin-bottom: units(6);
-  margin-top: units(1);
+  @extend %site-text-intro;
 }
 
 .usa-accordion--bordered .usa-accordion__content {

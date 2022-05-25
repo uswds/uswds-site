@@ -1,10 +1,10 @@
 // Bring in individual Gulp configurations
 //
 
-// require( './config/gulp/javascript' );
 // require( './config/gulp/sass' );
 // require( './config/gulp/build' );
 const images = require('./config/gulp/images').default;
+const js = require('./config/gulp/javascript');
 
 const gulp  = require( 'gulp' );
 const dutil = require( './config/gulp/doc-util' );
@@ -32,3 +32,4 @@ exports.copyAssets = uswds.copyAssets;
  * Custom tasks
  */
 exports.images = images;
+exports.javascript = gulp.series(gulp.parallel(uswds.copyJS, js.lint), js.build)

@@ -10,35 +10,17 @@ const rename      = require('gulp-rename');
 const linter      = require('gulp-eslint');
 const task        = 'javascript';
 
-gulp.task('eslint', function () {
+function eslint() {
   return gulp.src([
     './js/**/*.js',
     '!./js/vendor/**/*.js'])
     .pipe(linter('.eslintrc'))
     .pipe(linter.format());
-
-});
-
-gulp.task('copy-uswds-javascript', function () {
-
-  dutil.logMessage(task, 'Copying JS from uswds');
-
-  var stream = gulp.src('./node_modules/@uswds/uswds/dist/js/**/*')
-    .pipe(gulp.dest('assets/js/vendor'));
-
-  return stream;
-
-});
+};
 
 
-gulp.task(task,
-  gulp.series(
-    gulp.parallel(
-      'copy-uswds-javascript',
-      'eslint'
-    ),
-    function(done) {
-      dutil.logMessage(task, 'Compiling JavaScript');
+function buildJS(done) {
+  dutil.logMessage(task, 'Compiling JavaScript');
 
       var minifiedStream = browserify({
         entries: 'js/start.js',
@@ -56,6 +38,7 @@ gulp.task(task,
           }))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('assets/js'));
-    }
-  )
-);
+}
+
+exports.lint = eslint;
+exports.build = buildJS;

@@ -5,7 +5,7 @@ var gulp          = require('gulp');
 var dutil         = require('./doc-util');
 var clean         = require('gulp-clean');
 var del           = require('del');
-
+const images = require('./config/gulp/images').default;
 
 gulp.task('clean-fonts', function () {
   return del('assets/fonts/');
@@ -104,7 +104,7 @@ gulp.task('build',
     'build-uswds-if-needed',
     gulp.parallel(
       'fonts',
-      'images',
+      images,
       'javascript',
       'sass',
     )

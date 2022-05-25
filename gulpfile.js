@@ -2,10 +2,10 @@
 //
 
 require( './config/gulp/fonts' );
-require( './config/gulp/images' );
 require( './config/gulp/javascript' );
 require( './config/gulp/sass' );
 require( './config/gulp/build' );
+const images = require('./config/gulp/images').default;
 
 const gulp  = require( 'gulp' );
 const dutil = require( './config/gulp/doc-util' );
@@ -26,3 +26,8 @@ uswds.paths.dist.css = "./assets/css";
 exports.init = uswds.init;
 exports.compile = uswds.compile;
 exports.compileIcons = uswds.compileIcons;
+
+/**
+ * Custom tasks
+ */
+exports.images = images;

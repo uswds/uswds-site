@@ -164,6 +164,6 @@
   },
   "snyk": true,
   "dependencies": {
-    "uswds": "github:uswds/uswds#develop"
+    "@uswds/uswds": "github:uswds/uswds#develop"
   }
 }

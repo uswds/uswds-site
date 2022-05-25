@@ -103,8 +103,8 @@ gulp.task('build',
     'clean-assets',
     'build-uswds-if-needed',
     gulp.parallel(
-      'fonts',
-      images,
+      // 'fonts',
+      // images,
       'javascript',
       'sass',
     )

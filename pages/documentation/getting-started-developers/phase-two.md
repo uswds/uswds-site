@@ -61,7 +61,6 @@ In plain language, this code says:
   @use "uswds-core" with (
     $theme-image-path: "../uswds/img",
     $theme-show-compile-warnings: true,
-    $theme-show-compile-warnings: false,
     $theme-banner-background-color: "ink",
     $theme-banner-link-color: "primary-light",
     $theme-banner-max-width: "none",

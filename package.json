@@ -163,6 +163,6 @@
   "snyk": true,
   "dependencies": {
     "@uswds/compile": "github:uswds/uswds-compile#jm-add-icon-setting",
-    "@uswds/uswds": "3.0.1"
+    "@uswds/uswds": "github:uswds/uswds#develop"
   }
 }

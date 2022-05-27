@@ -80,7 +80,23 @@ Related components
   </li>
 </div>
 
-<div class="grid-container">
+## Pattern Preview
+
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
+  <button class="usa-accordion__button" aria-controls="accordion-pattern-preview-01" aria-expanded="true"><h2 id="accordion-preview">Pattern preview</h2></button>
+  <div id="accordion-pattern-preview-01" class="usa-accordion__content">
+    <p>// Pattern Preview</p>  
+  </div>
+</div>
+
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
+  <button class="usa-accordion__button" aria-controls="accordion-code-01" aria-expanded="false"><h2 id="accordion-preview">Code</h2></button>
+  <div id="accordion-code-01" class="usa-accordion__content">
+    <p>// Code</p>  
+  </div>
+</div>
+
+<div class="grid-container margin-top-4">
   <div class="grid-row">
     <img src="{{ site.baseurl }}/img/patterns/two-languages.jpg" alt="">
   </div>
@@ -143,7 +159,29 @@ Related components
   </li>
 </div>
 
-<div class="grid-container">
+## Pattern Preview
+
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
+  <button class="usa-accordion__button" aria-controls="accordion-pattern-preview-02" aria-expanded="true"><h2 id="accordion-preview">Pattern preview</h2></button>
+  <div id="accordion-pattern-preview-02" class="usa-accordion__content">
+    <p>// Pattern Preview</p>  
+  </div>
+</div>
+
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
+  <button class="usa-accordion__button" aria-controls="accordion-code-02" aria-expanded="false"><h2 id="accordion-preview">Code</h2></button>
+  <div id="accordion-code-02" class="usa-accordion__content">
+    <p>// Code</p>  
+  </div>
+</div>
+
+<div class="grid-container margin-top-4">
+  <div class="grid-row">
+    <img src="{{ site.baseurl }}/img/patterns/two-languages.jpg" alt="">
+  </div>
+</div>
+
+<div class="grid-container margin-top-4">
   <div class="grid-row">
     <img src="{{ site.baseurl }}/img/patterns/more-than-two-languages.jpg" alt="">
   </div>
@@ -154,11 +192,11 @@ If not all of the content is available for each of the languages listed, include
 - Include a section on the dropdown for “More languages with selected content” with a single link to an existing landing page or language-specific links to selected content
 - Ideally translate the label “More languages with selected content” into the languages being offered.
 
-<div class="grid-container">
+<div class="grid-container margin-top-4">
   <div class="grid-row">
     <img src="{{ site.baseurl }}/img/patterns/special-case-more.jpg" alt="">
   </div>
-  <div class="grid-row">
+  <div class="grid-row margin-top-4">
     <img src="{{ site.baseurl }}/img/patterns/special-case-more-specific.jpg" alt="">
   </div>
 </div>

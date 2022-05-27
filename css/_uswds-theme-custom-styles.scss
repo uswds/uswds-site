@@ -473,6 +473,8 @@ body {
     padding-right: 0;
     padding-left: units(4);
     width: units($width-nav-sidebar);
+    position: sticky;
+    top: 4em;
   }
 
   .usa-navigation-submenu {

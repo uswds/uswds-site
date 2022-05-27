@@ -36,3 +36,9 @@ exports.javascript = gulp.series(
   gulp.parallel(uswds.copyJS, js.lint),
   js.build
 );
+exports.sassFonts = sass.fonts;
+exports.sassComponents = sass.components;
+exports.sassCustom = sass.custom;
+exports.sassNext = sass.next;
+exports.sassUtils = sass.utils;
+exports.sassDev = sass.devStyles;

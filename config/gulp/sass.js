@@ -28,26 +28,20 @@ const handleError = (error) => {
   this.emit("end");
 };
 
-gulp.task("build-sass-fonts", () => {
-  return gulp
-    .src("./css/uswds-fonts.scss")
-    .pipe(sourcemaps.init({ largeFile: true }))
-    .pipe(
-      sass({
-        includePaths: sass_include_paths,
-        outputStyle: "expanded"
-      })
-      .on("error", handleError)
-    )
-    .pipe(postcss(dev_plugins))
-    .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("assets/css"))
-    .pipe(gulp.dest("_site/assets/css"));
-});
+/**
+ * SASS compile that uses standard plugins and output.
+ * Takes a single SASS entrypoint. Example:
+ *
+ * const fonts = () => compileSass("./css/uswds-fonts.scss");
+ *
+ * @param {string} entrypoint - single SASS entrypoint
+ * @returns
+ */
+function compileSass(entrypoint) {
+  dutil.logMessage(`Compiling SASS from: ${entrypoint}`);
 
-gulp.task("build-sass-components", () => {
   return gulp
-    .src("./css/uswds-components.scss")
+    .src(entrypoint)
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(
       sass({
@@ -60,41 +54,22 @@ gulp.task("build-sass-components", () => {
     .pipe(sourcemaps.write("."))
     .pipe(gulp.dest("assets/css"))
     .pipe(gulp.dest("_site/assets/css"));
-});
+}
 
-gulp.task("build-sass-custom", () => {
-  return gulp
-    .src("./css/uswds-custom.scss")
-    .pipe(sourcemaps.init({ largeFile: true }))
-    .pipe(
-      sass({
-        includePaths: sass_include_paths,
-        outputStyle: "expanded"
-      })
-      .on("error", handleError)
-    )
-    .pipe(postcss(dev_plugins))
-    .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("assets/css"))
-    .pipe(gulp.dest("_site/assets/css"));
-});
+const fonts = () => compileSass("./css/uswds-fonts.scss");
+const components = () => compileSass("./css/uswds-components.scss");
+const custom = () => compileSass("./css/uswds-custom.scss");
+const next = () => compileSass("./css/uswds-next.scss");
+const utils = () => compileSass("./css/uswds-utilities.scss");
+const devStyles = gulp.parallel(fonts, components, custom, next, utils);
 
-gulp.task("build-next-sass", () => {
-  return gulp
-    .src("./css/uswds-next.scss")
-    .pipe(sourcemaps.init({ largeFile: true }))
-    .pipe(
-      sass({
-        includePaths: sass_include_paths,
-        outputStyle: "expanded"
-      })
-      .on("error", handleError)
-    )
-    .pipe(postcss(dev_plugins))
-    .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("assets/css"))
-    .pipe(gulp.dest("_site/assets/css"));
-});
+module.exports = {
+  fonts,
+  components,
+  custom,
+  next,
+  devStyles
+}
 
 gulp.task("build-sass-utilities", () => {
   return gulp

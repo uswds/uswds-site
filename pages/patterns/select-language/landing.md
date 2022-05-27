@@ -1,5 +1,5 @@
 ---
-title: Select their perferred language
+title: Select their preferred language
 permalink: /patterns/select-language/
 subnav:
 - text: What problem does this solve?

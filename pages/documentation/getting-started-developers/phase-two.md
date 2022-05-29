@@ -22,7 +22,7 @@ subnav:
 
 U.S. Web Design System source code is written in Sass, a powerful stylesheet language that builds automation, functions, and logic into CSS. Browsers can’t read native Sass files, so these files need to be compiled into CSS — usually a single CSS file — before we can use them. Basically, when you develop with the Design System, you do all your stylesheet work in Sass then use a compiler to convert that Sass into CSS.
 
-We’ve developed `uswds-compile`, a tool hosted on GitHub, to help teams copy USWDS static assets and transform USWDS Sass into browser-readable CSS. [Step 2](#step-2-install-uswds-compile) describes how to install this tool. When you use `uswds-compile`, we will apply Autoprefixer to all compiled code.
+We’ve developed `uswds-compile`, a tool hosted on GitHub, to help teams copy USWDS static assets and transform USWDS Sass into browser-readable CSS. [Step 2](#step-2-install-uswds-compile) describes how to install this tool. When you use `uswds-compile`, we will apply [Autoprefixer](https://goonlinetools.com/autoprefixer/) to all compiled code.
 
 {: .site-note }
 **Note:** If you want `uswds-compile` to set up a Sass entry point for you, skip directly to [Step 2](#step-2-install-uswds-compile). We provide Step 1 for context: why you need a Sass entry point, what it needs to include, and how to set one up manually.

@@ -55,6 +55,27 @@ $('.sidenav').on('click', 'a', function (e) {
   });
 });
 
+// In-page navigation
+document.addEventListener('DOMContentLoaded', function () {
+  let mainNavLinks = document.querySelectorAll('#stick-nav li a');
+
+  window.addEventListener('scroll', (event) => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach((link) => {
+      let section = document.querySelector(link.hash);
+      if (
+        section.offsetTop <= fromTop &&
+        section.offsetTop + section.offsetHeight > fromTop
+      ) {
+        link.classList.add('usa-current');
+      } else {
+        link.classList.remove('usa-current');
+      }
+    });
+  });
+});
+
 //var navHeight = function () {
 //  $('.sidenav').css('height', (window.innerHeight - 50));
 //};

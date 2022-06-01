@@ -39,17 +39,35 @@ Place a button in the upper right of the navigation to allow the user to toggle 
 
 ## Guidance
 
-### What you should do
-- Place the button in the top upper right of the screen for consistency.
-- Make the language access button a single/independent element.
-- Include the language toggle in the header so that it remains visible and in the same position as the user scrolls up and down a webpage if a website has a “sticky” or “fixed” header.
-- Take the users to an equivalent page (i.e., the same/similar content).
-- Capitalize the name of the language (e.g., English, Spanish, or Vietnamese).
-
-{:.margin-top-2}
-### What you shouldn't do
-- Don’t create a deadend for users by taking them to a page with little or no meaningful content.
-- Don’t use icons/graphics, such as flags, as they may represent different concepts to different languages and cultures.
+<div class="grid-row grid-gap-3">
+  <div class="tablet:grid-col-5">
+    <div class="do-dont">
+      <div class="do-dont__do">
+      <h3 class="do-dont__heading">What you should do</h3>
+        <div class="do-dont__content">
+          <ul>
+            <li>Place the button in the top right corner for consistency.</li>
+            <li>Make the language access button a single/independent element.</li>
+            <li>Include the language toggle in the header so that it remains visible and in the same position as the user scrolls up and down a webpage if a website has a “sticky” or “fixed” header.</li>
+            <li>Take the users to an equivalent page (i.e., the same/similar content).</li>
+            <li>Capitalize the name of the language (e.g., English, Spanish, or Vietnamese).</li>
+          </ul> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tablet:grid-col-5">
+    <div class="do-dont__dont">
+    <h3 class="do-dont__heading">What you shouldn't do</h3>
+      <div class="do-dont__content">
+          <ul>
+            <li>Don’t create a deadend for users by taking them to a page with little or no meaningful content.</li>
+            <li>Don’t use icons/graphics, such as flags, as they may represent different concepts to different languages and cultures.</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
 ## Considerations
 - Ensure there’s enough color contrast between the button, the text inside the button, and the background to ensure readability.
@@ -60,8 +78,7 @@ Place a button in the upper right of the navigation to allow the user to toggle 
 ## Ingredients
 Related components
 
-{:.margin-top-2}
-<div class="usa-card-group flex-row margin-top-4">
+<div class="usa-card-group flex-row margin-top-2">
   <li
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
@@ -116,7 +133,39 @@ Place a button in the upper right of the navigation to allow the user to access 
 
 ## Guidance
 
-### What you should do
+<div class="grid-row grid-gap-3">
+  <div class="tablet:grid-col-5">
+    <div class="do-dont">
+      <div class="do-dont__do">
+      <h3 class="do-dont__heading">What you should do</h3>
+        <div class="do-dont__content">
+          <ul>
+            <li>Place the button in the top right corner for consistency.</li>
+            <li>Include the language toggle in the header so that it remains visible and in the same position as the user scrolls up and down a webpage if a website has a “sticky” or “fixed” header.</li>
+            <li>Make the language access button a single/independent element.</li>
+            <li>Take users to an equivalent page (i.e., toggle between pages with the same/similar content).</li>
+            <li>Label for the drop down menu should be “Languages”.</li>
+            <li>Capitalize the name of each language (e.g., English, Spanish, or Vietnamese).</li>
+            <li>Order the languages alphabetically in English or by population size. Alternatively, you can order the languages alphabetically by Language_Name (English version), unless the direction of the language is right to left.</li>
+          </ul> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tablet:grid-col-5">
+    <div class="do-dont__dont">
+    <h3 class="do-dont__heading">What you shouldn't do</h3>
+      <div class="do-dont__content">
+          <ul>
+            <li>Create a deadend for users by taking them to a page with little or no meaningful content.</li>
+            <li>Use icons or graphics, such as flags, since they may mean different things in different languages and cultures.</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ### What you should do
 - Place the button in the top right corner for consistency. 
 - Include the language toggle in the header so that it remains visible and in the same position as the user scrolls up and down a webpage if a website has a “sticky” or “fixed” header.
 - Make the language access button a single/independent element.
@@ -128,7 +177,7 @@ Place a button in the upper right of the navigation to allow the user to access 
 {:.margin-top-2}
 ### What you shouldn't do
 - Don’t create a dead end for users by taking them to a page with little or no meaningful content.
-- Don’t use icons/graphics, such as flags, as they may represent different concepts to different languages and cultures.
+- Don’t use icons/graphics, such as flags, as they may represent different concepts to different languages and cultures. -->
 
 ## Considerations
 - Ensure there’s enough color contrast between the button, the text inside the button, and the background to ensure readability.
@@ -139,8 +188,7 @@ Place a button in the upper right of the navigation to allow the user to access 
 ## Ingredients
 Related components
 
-{:.margin-top-2}
-<div class="usa-card-group flex-row margin-top-4">
+<div class="usa-card-group flex-row margin-top-2">
   <li
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"

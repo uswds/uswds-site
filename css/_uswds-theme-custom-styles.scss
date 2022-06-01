@@ -3366,3 +3366,104 @@ p + .pagination-behaviors--examples {
     color: color("red-60v");
   }
 }
+
+// Do/Don't Guidance Section
+
+.do-dont {
+  display: flex;
+  &__do {
+    position: relative;
+    flex: 1 0 0;
+    padding: 0rem;
+    background-color: #fff;
+    border: 1px solid color("gray-cool-20");
+    height: 100%;
+  }
+  &__dont {
+    height: 100%; 
+  }
+}
+
+.do-dont__do:before {
+  content: "";
+  position: absolute;
+  height: 0.4rem;
+  width: calc(100% + 2px);
+  top: -1px;
+  left: -1px;
+  background-color: color("green-cool-40v");
+}
+
+.do-dont__do .do-dont__heading {
+  color: #2e8540;
+}
+
+.do-dont__heading {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin: 0;
+  border-bottom: 1px solid color("gray-cool-20");
+  padding: 1.6rem;
+  display: flex;
+  line-height: 1;
+}
+
+.do-dont__heading:before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 22px;
+  display: block;
+  margin-right: 0.8rem;
+  width: 22px;
+  height: 22px;
+}
+
+.do-dont__do .do-dont__heading:before {
+  background-image: url(https://design.va.gov/assets/img/check-circle-green.svg);
+}
+
+.do-dont__dont:before {
+  content: "";
+  position: absolute;
+  height: 0.4rem;
+  width: calc(100% + 2px);
+  top: -1px;
+  left: -1px;
+  background-color: color("red-cool-50v");
+}
+
+.do-dont__dont {
+  position: relative;
+  flex: 1 0 0;
+  background-color: #fff;
+  border: 1px solid color("gray-cool-20");
+}
+
+.do-dont__dont .do-dont__heading {
+  color: color("red-cool-50v");
+}
+
+.do-dont__heading:before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 22px;
+  display: block;
+  margin-right: 0.8rem;
+  width: 22px;
+  height: 22px;
+}
+
+.do-dont__dont .do-dont__heading:before {
+  background-image: url(https://design.va.gov/assets/img/times-circle-red.svg);
+}
+
+.do-dont__content {
+  padding: 0 1.6rem 1.6rem 0;
+}
+
+.usa-card__heading {
+  font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1.22rem;
+  line-height: 1.2;
+  margin: 0;
+}

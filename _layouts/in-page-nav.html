@@ -13,7 +13,7 @@ layout: default
 
   <main id="main-content" class="main-content">
     <div class="grid-row">
-      <div class="tablet:grid-col-9">
+      <div class="tablet:grid-col-9 desktop:grid-col">
         <div class="styleguide-content{% unless page.category == 'Utilities' and page.type != 'docs' %} usa-prose site-prose{% endunless %}">
           <section id="{{ page.title | slugify }}-heading-section" style="overflow: auto;">
             <header>
@@ -31,7 +31,7 @@ layout: default
         
       </div>
     </div>
-    <div class="tablet:grid-col-3">
+    <div class="tablet:grid-col-3 desktop:grid-col">
       <div style="position: sticky;top: 4rem;display: flex;flex-basis: 200px;font-size: 0.8rem;justify-content: flex-start;max-width: 16rem; overflow: auto;">
         <nav aria-label="{{ page.title }},">
           <ul id="stick-nav" class="usa-in-page-navigation">

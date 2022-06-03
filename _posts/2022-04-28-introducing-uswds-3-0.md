@@ -23,6 +23,9 @@ If you have any questions or feedback let us know at the [USWDS Public Slack](ht
 
 If you aren't a member of the USWDS Public Slack, [sign up here](https://chat.18f.gov/) by "Joining a TTS Chat Room" — then select "U.S. Web Design System" as your chat topic.
 
+{:.site-note}
+Starting in USWDS 3.0, we're publishing our npm package to an `@uswds` organization scope. So now, when installing USWDS, use `npm install @uswds/uswds --save`.
+
 ## What's new in USWDS 3.0?
 USWDS 3.0 takes a modular, component-centered approach to the design system. We've rebuilt our codebase with a component focus so teams can more effectively integrate the design system incrementally and use only the USWDS components needed in their projects.
 

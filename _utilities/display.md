@@ -182,12 +182,12 @@ utilities:
           {{ token }}
         {% endcapture %}
         {% capture thisExample %}
-        <div class="display-table">
-          <div class="display-table-row">
-            <div class="display-{{ token }} border-1px border-white bg-secondary-light padding-x-5 padding-y-3"></div>
-            <div class="display-{{ token }} border-1px border-white bg-secondary-light padding-x-5 padding-y-3"></div>
+          <div class="display-table">
+            <div class="display-table-row">
+              <div class="display-{{ token }} border-1px border-white bg-secondary-light padding-x-5 padding-y-3"></div>
+              <div class="display-{{ token }} border-1px border-white bg-secondary-light padding-x-5 padding-y-3"></div>
+            </div>
           </div>
-        </div>
         {% endcapture %}
         {% include utilities/utility-example.html
           wrap = thisWrap
@@ -247,7 +247,6 @@ utilities:
         {% endcapture %}
         {% include utilities/utility-example.html
           wrap = thisWrap
-
           utility = thisClass
           utilityClasses = thisUtilityClasses
           value = thisValue

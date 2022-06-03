@@ -143,7 +143,10 @@ utilities:
       title="Display"
     %}
     <section class="utility-examples">
-      {% assign displayTokens = 'block, flex, inline, inline-block, inline-flex, none, table'
+      {% assign thisRowClasses =      'flex-justify' %}
+      {% assign thisWrap =            true %}
+      {% assign thisUtilityClasses =  'grid-col-12 tablet:grid-col' %}
+      {% assign displayTokens =       'block, flex, inline, inline-block, inline-flex, none'
         | split: ', ' %}
       {% for token in displayTokens %}
         {% capture thisClass %}
@@ -153,20 +156,22 @@ utilities:
           {{ token }}
         {% endcapture %}
         {% capture thisExample %}
-          <div class="display-{{ token }} bg-secondary-light margin-bottom-05 padding-x-10 padding-y-3">
+          <div class="display-{{ token }} bg-secondary-light border-1px border-secondary-light padding-x-10 padding-y-3">
           </div>
         {% endcapture %}
         {% include utilities/utility-example.html
           wrap = thisWrap
+          rowClasses = thisRowClasses
           utility = thisClass
           utilityClasses = thisUtilityClasses
           value = thisValue
           valueClasses = thisValueClasses
           example = thisExample
-          exampleClasses = thisExampleClasses
         %}
-
       {% endfor %}
+      {% assign thisRowClasses =      'flex-justify' %}
+      {% assign thisWrap =            true %}
+      {% assign thisUtilityClasses =  'grid-col-12 tablet:grid-col' %}
       {% assign displayTableTokens = 'table-cell'
         | split: ', ' %}
       {% for token in displayTableTokens %}
@@ -177,19 +182,20 @@ utilities:
           {{ token }}
         {% endcapture %}
         {% capture thisExample %}
+        <div class="display-table">
           <div class="display-table-row">
-            <div class="display-{{ token }} border-1px border-white bg-secondary-light margin-bottom-05 padding-x-10 padding-y-3"></div>
-            <div class="display-{{ token }} border-1px border-white bg-secondary-light margin-bottom-05 padding-x-10 padding-y-3"></div>
+            <div class="display-{{ token }} border-1px border-white bg-secondary-light padding-x-5 padding-y-3"></div>
+            <div class="display-{{ token }} border-1px border-white bg-secondary-light padding-x-5 padding-y-3"></div>
           </div>
+        </div>
         {% endcapture %}
         {% include utilities/utility-example.html
           wrap = thisWrap
+          rowClasses = thisRowClasses
           utility = thisClass
           utilityClasses = thisUtilityClasses
           value = thisValue
-          valueClasses = thisValueClasses
           example = thisExample
-          exampleClasses = thisExampleClasses
         %}
       {% endfor %}
       <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4 margin-bottom-1">
@@ -197,16 +203,17 @@ utilities:
         <div id="code-relative" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
 {% highlight html linenos %}
-<div class="display-block ...">.display-block</div>
-<div class="display-flex ...">.display-flex</div>
-<div class="display-inline ...">.display-inline</div>
-<div class="display-inline-block ...">.display-inline-block</div>
-<div class="display-inline-flex ...">.display-inline-flex</div>
+<div class="display-block border-1px ...">.display-block</div>
+<div class="display-flex border-1px ...">.display-flex</div>
+<div class="display-inline border-1px ...">.display-inline</div>
+<div class="display-inline-block border-1px ...">.display-inline-block</div>
+<div class="display-inline-flex border-1px ...">.display-inline-flex</div>
 <div class="display-none ...">.display-none</div>
-<div class="display-table">.display-table</div>
-<div class="display-table-row">
-  <div class="display-table-cell ...">.display-table-cell</div>
-  <div class="display-table-cell ...">.display-table-cell</div>
+<div class="display-table">
+  <div class="display-table-row">
+    <div class="display-table-cell border-1px ...">.display-table-cell</div>
+    <div class="display-table-cell border-1px ...">.display-table-cell</div>
+  </div>
 </div>
 {% endhighlight %}
 </div>
@@ -240,6 +247,7 @@ utilities:
         {% endcapture %}
         {% include utilities/utility-example.html
           wrap = thisWrap
+
           utility = thisClass
           utilityClasses = thisUtilityClasses
           value = thisValue

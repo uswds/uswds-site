@@ -1,5 +1,5 @@
-var $ = require('jquery');
+var $ = require("jquery");
 
-$('.preview form').submit(function (e) {
+$(".preview form").submit(function (e) {
   e.preventDefault();
 });

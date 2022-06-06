@@ -35,9 +35,8 @@ gulp.task("build-sass-fonts", () => {
     .pipe(
       sass({
         includePaths: sass_include_paths,
-        outputStyle: "expanded"
-      })
-      .on("error", handleError)
+        outputStyle: "expanded",
+      }).on("error", handleError)
     )
     .pipe(postcss(dev_plugins))
     .pipe(sourcemaps.write("."))
@@ -52,9 +51,8 @@ gulp.task("build-sass-components", () => {
     .pipe(
       sass({
         includePaths: sass_include_paths,
-        outputStyle: "expanded"
-      })
-      .on("error", handleError)
+        outputStyle: "expanded",
+      }).on("error", handleError)
     )
     .pipe(postcss(dev_plugins))
     .pipe(sourcemaps.write("."))
@@ -69,9 +67,8 @@ gulp.task("build-sass-custom", () => {
     .pipe(
       sass({
         includePaths: sass_include_paths,
-        outputStyle: "expanded"
-      })
-      .on("error", handleError)
+        outputStyle: "expanded",
+      }).on("error", handleError)
     )
     .pipe(postcss(dev_plugins))
     .pipe(sourcemaps.write("."))
@@ -86,9 +83,8 @@ gulp.task("build-next-sass", () => {
     .pipe(
       sass({
         includePaths: sass_include_paths,
-        outputStyle: "expanded"
-      })
-      .on("error", handleError)
+        outputStyle: "expanded",
+      }).on("error", handleError)
     )
     .pipe(postcss(dev_plugins))
     .pipe(sourcemaps.write("."))
@@ -103,9 +99,8 @@ gulp.task("build-sass-utilities", () => {
     .pipe(
       sass({
         includePaths: sass_include_paths,
-        outputStyle: "expanded"
-      })
-      .on("error", handleError)
+        outputStyle: "expanded",
+      }).on("error", handleError)
     )
     .pipe(postcss(dev_plugins))
     .pipe(sourcemaps.write("."))
@@ -192,13 +187,11 @@ gulp.task("scss-lint", (done) => {
     return done();
   }
 
-  return gulp
-    .src(["./css/**/*.scss"])
-    .pipe(gulpStylelint({
-      reporters: [
-        {formatter: 'string', console: true}
-      ]
-    }));
+  return gulp.src(["./css/**/*.scss"]).pipe(
+    gulpStylelint({
+      reporters: [{ formatter: "string", console: true }],
+    })
+  );
 });
 
 gulp.task(task, gulp.series("build-sass"));

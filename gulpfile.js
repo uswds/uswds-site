@@ -27,6 +27,7 @@ exports.compile = uswds.compile;
 exports.compileIcons = uswds.compileIcons;
 exports.copyFonts = uswds.copyFonts;
 exports.copyAssets = uswds.copyAssets;
+exports.compileSass = uswds.compileSass;
 
 /**
  * Custom tasks
@@ -36,9 +37,9 @@ exports.javascript = gulp.series(
   gulp.parallel(uswds.copyJS, js.lint),
   js.build
 );
-exports.sassFonts = sass.fonts;
-exports.sassComponents = sass.components;
-exports.sassCustom = sass.custom;
-exports.sassNext = sass.next;
-exports.sassUtils = sass.utils;
-exports.sassDev = sass.devStyles;
+
+exports.sassProd = sass.prodStyles;
+exports.sassProdNext = sass.prodNextStyles;
+exports.sassProdStyles = gulp.parallel(this.sassProd, this.sassProdNext);
+exports.sass = gulp.series(sass.lint, uswds.compileSass, this.sassProdStyles);
+exports.sassLint = sass.lint;

@@ -169,6 +169,10 @@ Function | Description
 For any function you defined as an `export` in your `gulpfile.js`, you can run `npx gulp [function]`.
 
 ## Step 5: Initialize your project
+
+{:.site-note}
+**Note:** Initialize with caution. The initialization task copies default settings and theme files, so if you've made any customizations to your local theme, `init` will overwrite them.
+
 Initialize your project to copy all the necessary image, font, and Javascript assets from the source code.
 
 Initialize your project and get started by running the following command:

@@ -8,8 +8,8 @@ component:
     - /assets/img/templates/layout--create-account.jpeg
     - /assets/img/templates/layout--create-account-lang-es.jpeg
   demo:
-    - layout--create-account--default
-    - layout--create-account--lang-es
+    - pages-create-account--create-account-page
+    - pages-create-account--create-account-page-spanish
   variants:
     - Create account
     - Create account (Spanish)

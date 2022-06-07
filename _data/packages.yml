@@ -1,0 +1,450 @@
+- name: "usa-accordion"
+  fullSize: 10
+  sourceSize: 3
+  dependencies:
+    - "uswds-fonts"
+    - "usa-list"
+- name: "usa-alert"
+  fullSize: 13
+  sourceSize: 7
+  dependencies:
+    - "uswds-fonts"
+    - "usa-icon"
+- name: "usa-banner"
+  fullSize: 32
+  sourceSize: 7
+  dependencies:
+    - "uswds-fonts"
+    - "usa-layout-grid"
+    - "usa-media-block"
+- name: "usa-breadcrumb"
+  fullSize: 12
+  sourceSize: 6
+  dependencies:
+    - "uswds-fonts"
+    - "usa-icon"
+- name: "usa-button"
+  fullSize: 16
+  sourceSize: 9
+  dependencies:
+    - "uswds-fonts"
+- name: "usa-button-group"
+  fullSize: 18
+  sourceSize: 3
+  dependencies:
+    - "usa-button"
+- name: "usa-card"
+  fullSize: 11
+  sourceSize: 5
+  dependencies:
+    - "uswds-fonts"
+- name: "usa-character-count"
+  fullSize: 1
+  sourceSize: 0.2
+  dependencies:
+    - "uswds-core"
+- name: "usa-checkbox"
+  fullSize: 10
+  sourceSize: 3
+  dependencies:
+    - "uswds-fonts"
+    - "usa-fieldset"
+    - "usa-legend"
+- name: "usa-checklist"
+  fullSize: 7
+  sourceSize: 0.7
+  dependencies:
+    - "uswds-fonts"
+    - "usa-icon"
+- name: "usa-collection"
+  fullSize: 9
+  sourceSize: 3
+  dependencies:
+    - "uswds-fonts"
+- name: "usa-combo-box"
+  fullSize: 10
+  sourceSize: 3
+  dependencies:
+    - "usa-select"
+    - "usa-icon"
+- name: "usa-content"
+  fullSize: 0.2
+  sourceSize: 0.2
+  dependencies:
+    - "uswds-core"
+- name: "usa-dark-background"
+  fullSize: 0.4
+  sourceSize: 0.4
+  dependencies:
+    - "uswds-core"
+- name: "usa-date-picker"
+  fullSize: 17
+  sourceSize: 10
+  dependencies:
+    - "uswds-fonts"
+    - "usa-icon"
+    - "usa-input"
+- name: "usa-date-range-picker"
+  fullSize: 17
+  sourceSize: 0
+  dependencies:
+    - "usa-date-picker"
+- name: "usa-display"
+  fullSize: 7
+  sourceSize: 0.8
+  dependencies:
+    - "uswds-fonts"
+- name: "usa-embed-container"
+  fullSize: 0.3
+  sourceSize: 0.3
+  dependencies:
+    - "uswds-core"
+- name: "usa-error-message"
+  fullSize: 6
+  sourceSize: 0.1
+  dependencies:
+    - "uswds-fonts"
+- name: "usa-fieldset"
+  fullSize: 7
+  sourceSize: 0.2
+  dependencies:
+    - "uswds-fonts"
+    - "usa-input"
+- name: "usa-file-input"
+  fullSize: 10
+  sourceSize: 4
+  dependencies:
+    - "uswds-fonts"
+- name: "usa-footer"
+  fullSize: 43
+  sourceSize: 7
+  dependencies:
+    - "uswds-fonts"
+    - "usa-layout-grid"
+    - "usa-input"
+    - "usa-form"
+    - "usa-label"
+    - "usa-list"
+    - "usa-button"
+    - "usa-icon"
+- name: "usa-form"
+  fullSize: 8
+  sourceSize: 1
+  dependencies:
+    - "uswds-fonts"
+- name: "usa-form-group"
+  fullSize: 6
+  sourceSize: 1
+  dependencies:
+    - "uswds-fonts"
+- name: "usa-graphic-list"
+  fullSize: 25
+  sourceSize: 0.9
+  dependencies:
+    - "uswds-fonts"
+    - "usa-layout-grid"
+- name: "usa-header"
+  fullSize: 37
+  sourceSize: 6
+  dependencies:
+    - "uswds-fonts"
+    - "uswds-helpers"
+    - "usa-skipnav"
+    - "usa-search"
+    - "usa-button"
+    - "usa-nav"
+    - "usa-accordion"
+- name: "usa-hero"
+  fullSize: 25
+  sourceSize: 0.7
+  dependencies:
+    - "uswds-fonts"
+    - "usa-layout-grid"
+- name: "usa-hint"
+  fullSize: 7
+  sourceSize: 0.2
+  dependencies:
+    - "uswds-fonts"
+    - "usa-input"
+- name: "usa-icon"
+  fullSize: 0.4
+  sourceSize: 0.4
+  dependencies:
+    - "uswds-core"
+- name: "usa-icon-list"
+  fullSize: 22
+  sourceSize: 16
+  dependencies:
+    - "uswds-fonts"
+    - "usa-input"
+- name: "usa-identifier"
+  fullSize: 9
+  sourceSize: 3
+  dependencies:
+    - "uswds-fonts"
+    - "uswds-core"
+- name: "usa-input"
+  fullSize: 7
+  sourceSize: 0.5
+  dependencies:
+    - "uswds-fonts"
+- name: "usa-input-prefix-suffix"
+  fullSize: 8
+  sourceSize: 1
+  dependencies:
+    - "usa-input"
+    - "usa-icon"
+- name: "usa-intro"
+  fullSize: 6
+  sourceSize: 0.2
+  dependencies:
+    - "uswds-fonts"
+- name: "usa-label"
+  fullSize: 6
+  sourceSize: 0.3
+  dependencies:
+    - "uswds-fonts"
+- name: "usa-layout-docs"
+  fullSize: 0.2
+  sourceSize: 0.2
+  dependencies:
+    - "uswds-core"
+- name: "usa-layout-grid"
+  fullSize: 18
+  sourceSize: 18
+  dependencies:
+    - "uswds-core"
+- name: "usa-legend"
+  fullSize: 6
+  sourceSize: 0.3
+  dependencies:
+    - "uswds-fonts"
+- name: "usa-link"
+  fullSize: 8
+  sourceSize: 1
+  dependencies:
+- name: "usa-list"
+  fullSize: 0.5
+  sourceSize: 0.5
+  dependencies:
+- name: "usa-media-block"
+  fullSize: 0.1
+  sourceSize: 0.1
+  dependencies:
+- name: "usa-memorable-date"
+  fullSize: 7
+  sourceSize: 0.6
+  dependencies:
+    - "uswds-fonts"
+    - "usa-form-group"
+    - "usa-input"
+- name: "usa-modal"
+  fullSize: 18
+  sourceSize: 3
+  dependencies:
+    - "uswds-fonts"
+    - "usa-button"
+- name: "usa-nav"
+  fullSize: 30
+  sourceSize: 9
+  dependencies:
+    - "uswds-fonts"
+    - "usa-accordion"
+    - "usa-search"
+    - "usa-icon"
+- name: "usa-pagination"
+  fullSize: 8
+  sourceSize: 2
+  dependencies:
+    - "uswds-fonts"
+- name: "usa-paragraph"
+  fullSize: 0.2
+  sourceSize: 0.2
+  dependencies:
+    - "uswds-core"
+- name: "usa-process-list"
+  fullSize: 8
+  sourceSize: 2
+  dependencies:
+    - "uswds-fonts"
+- name: "usa-prose"
+  fullSize: 24
+  sourceSize: 18
+  dependencies:
+    - "uswds-fonts"
+- name: "usa-radio"
+  fullSize: 8
+  sourceSize: 1
+  dependencies:
+    - "uswds-fonts"
+    - "usa-fieldset"
+    - "usa-legent"
+- name: "usa-range"
+  fullSize: 8
+  sourceSize: 2
+  dependencies:
+    - "uswds-fonts"
+    - "usa-label"
+- name: "usa-search"
+  fullSize: 18
+  sourceSize: 1
+  dependencies:
+    - "uswds-fonts"
+    - "usa-button"
+    - "usa-icon"
+    - "usa-input"
+    - "uswds-helpers"
+- name: "usa-section"
+  fullSize: 0.6
+  sourceSize: 0.6
+  dependencies:
+    - "uswds-core"
+- name: "usa-select"
+  fullSize: 8
+  sourceSize: 1
+  dependencies:
+    - "uswds-fonts"
+    - "usa-icon"
+    - "usa-input"
+- name: "usa-sidenav"
+  fullSize: 8
+  sourceSize: 2
+  dependencies:
+    - "uswds-fonts"
+- name: "usa-site-alert"
+  fullSize: 17
+  sourceSize: 4
+  dependencies:
+    - "usa-alert"
+- name: "usa-site-title"
+  fullSize: 0
+  sourceSize: 0
+  dependencies:
+- name: "usa-skipnav"
+  fullSize: 7
+  sourceSize: 0.6
+  dependencies:
+    - "uswds-fonts"
+- name: "usa-step-indicator"
+  fullSize: 12
+  sourceSize: 6
+  dependencies:
+    - "uswds-fonts"
+    - "uswds-helpers"
+- name: "usa-summary-box"
+  fullSize: 7
+  sourceSize: 0.9
+  dependencies:
+    - "uswds-fonts"
+    - "usa-list"
+- name: "usa-table"
+  fullSize: 21
+  sourceSize: 15
+  dependencies:
+    - "uswds-fonts"
+- name: "usa-tag"
+  fullSize: 7
+  sourceSize: 1
+  dependencies:
+    - "uswds-fonts"
+- name: "usa-textarea"
+  fullSize: 7
+  sourceSize: 0.5
+  dependencies:
+    - "uswds-fonts"
+- name: "usa-time-picker"
+  fullSize: 7
+  sourceSize: 0.1
+  dependencies:
+    - "uswds-fonts"
+    - "usa-label"
+    - "usa-hint"
+    - "usa-input"
+- name: "usa-tooltip"
+  fullSize: 7
+  sourceSize: 1
+  dependencies:
+    - "uswds-fonts"
+- name: "usa-validation"
+  fullSize: 26
+  sourceSize: 0
+  dependencies:
+    - "usa-form"
+    - "usa-fieldset"
+    - "usa-legend"
+    - "usa-alert"
+    - "usa-checklist"
+    - "usa-label"
+    - "usa-input"
+    - "usa-button"
+- name: "uswds"
+  fullSize: 394
+  sourceSize: 0
+  dependencies:
+- name: "uswds-core"
+  fullSize: 0
+  sourceSize: 0
+  dependencies: 
+- name: "uswds-elements"
+  fullSize: 0.7
+  sourceSize: 0.7
+  dependencies:
+- name: "uswds-fonts"
+  fullSize: 6
+  sourceSize: 6
+  dependencies:
+- name: "uswds-form-controls"
+  fullSize: 33
+  sourceSize: 0
+  dependencies:
+    - "usa-character-count"
+    - "usa-checkbox"
+    - "usa-combo-box"
+    - "usa-date-picker"
+    - "usa-error-message"
+    - "usa-fieldset"
+    - "usa-file-input"
+    - "usa-form-group"
+    - "usa-form"
+    - "usa-hint"
+    - "usa-input-prefix-suffix"
+    - "usa-input"
+    - "usa-label"
+    - "usa-legend"
+    - "usa-memorable-date"
+    - "usa-radio"
+    - "usa-range"
+    - "usa-select"
+    - "usa-textarea"
+    - "usa-time-picker"
+- name: "uswds-global"
+  fullSize: 9
+  sourceSize: 0
+  dependencies:
+    - "normalize"
+    - "uswds-core"
+    - "uswds-fonts"
+    - "uswds-elements"
+    - "uswds-helpers"
+- name: "uswds-helpers"
+  fullSize: 0.2
+  sourceSize: 0.2
+  dependencies:
+    - "usa-focus"
+    - "sr-only"
+- name: "uswds-typography"
+  fullSize: 27
+  sourceSize: 0
+  dependencies:
+    - "usa-content"
+    - "usa-dark-background"
+    - "usa-display"
+    - "usa-intro"
+    - "usa-link"
+    - "usa-list"
+    - "usa-paragraph"
+    - "usa-prose"
+- name: "uswds-utilities"
+  fullSize: 198
+  sourceSize: 198
+  dependencies:

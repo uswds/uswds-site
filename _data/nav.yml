@@ -38,10 +38,8 @@ Components:
   - href: /components/collection/
   - href: /components/combo-box/
   - href: /components/data-visualizations/
-  - href: /components/date-input/
   - href: /components/date-picker/
   - href: /components/date-range-picker/
-  - href: /components/dropdown/
   - href: /components/file-input/
   - href: /components/footer/
   - href: /components/form/
@@ -54,6 +52,7 @@ Components:
   - href: /components/input-prefix-suffix/
   - href: /components/link/
   - href: /components/list/
+  - href: /components/memorable-date/
   - href: /components/modal/
   - href: /components/pagination/
   - href: /components/process-list/
@@ -61,6 +60,7 @@ Components:
   - href: /components/radio-buttons/
   - href: /components/range-slider/
   - href: /components/search/
+  - href: /components/select/
   - href: /components/side-navigation/
   - href: /components/site-alert/
   - href: /components/step-indicator/
@@ -85,8 +85,10 @@ How to use USWDS:
   - href: /documentation/accessibility/
   - href: /performance/
   - href: /documentation/code-guidelines/
-  - text: Migrating to USWDS 2
+  - text: Migrating to USWDS 3.0
     href: /documentation/migration/
+  - text: Migrating to USWDS 2.0
+    href: /documentation/migration-v2/
   - href: /documentation/video-tutorials/
   - href: /documentation/implementations/
   - href: /documentation/showcase/

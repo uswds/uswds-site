@@ -7,7 +7,9 @@
   {% else -%}
   aria-expanded="false"
   {% endif %}>
-  {{ include.section.text | default: include.page.title }}
+  <span>
+    {{  include.section.text | default: include.page.title  }}
+  </span>
 </button>
 <ul id="{{ _id }}" class="usa-nav__submenu">
   {% assign _children = site.data.nav[include.page.category] %}

@@ -2216,29 +2216,32 @@ ignore:
         expires: '2021-05-28T18:17:23.015Z'
   SNYK-JS-PATHPARSE-1077067:
     - browserify > resolve > path-parse:
-        reason: No direct upgrade or patch available.
-        expires: '2021-06-06T07:01:11.150Z'
+        reason: No upgrade or patch available.
+        expires: '2021-07-31T17:36:23.696Z'
     - browserify > browser-resolve > resolve > path-parse:
-        reason: No direct upgrade or patch available.
-        expires: '2021-06-06T07:01:11.151Z'
+        reason: No upgrade or patch available.
+        expires: '2021-07-31T17:36:23.696Z'
     - browserify > module-deps > resolve > path-parse:
-        reason: No direct upgrade or patch available.
-        expires: '2021-06-06T07:01:11.151Z'
+        reason: No upgrade or patch available.
+        expires: '2021-07-31T17:36:23.696Z'
     - browserify > module-deps > browser-resolve > resolve > path-parse:
-        reason: No direct upgrade or patch available.
-        expires: '2021-06-06T07:01:11.151Z'
+        reason: No upgrade or patch available.
+        expires: '2021-07-31T17:36:23.696Z'
     - gulp > gulp-cli > liftoff > resolve > path-parse:
-        reason: No direct upgrade or patch available.
-        expires: '2021-06-06T07:01:11.151Z'
+        reason: No upgrade or patch available.
+        expires: '2021-07-31T17:36:23.696Z'
     - gulp > gulp-cli > matchdep > resolve > path-parse:
-        reason: No direct upgrade or patch available.
-        expires: '2021-06-06T07:01:11.151Z'
+        reason: No upgrade or patch available.
+        expires: '2021-07-31T17:36:23.696Z'
     - gulp > gulp-cli > liftoff > rechoir > resolve > path-parse:
-        reason: No direct upgrade or patch available.
-        expires: '2021-06-06T07:01:11.151Z'
+        reason: No upgrade or patch available.
+        expires: '2021-07-31T17:36:23.696Z'
     - gulp-sass > node-sass > meow > normalize-package-data > resolve > path-parse:
         reason: No direct upgrade or patch available.
         expires: '2021-06-06T07:01:11.151Z'
+      gulp > gulp-cli > yargs > read-pkg-up > read-pkg > normalize-package-data > resolve > path-parse:
+        reason: No upgrade or patch available.
+        expires: '2021-07-31T17:36:23.696Z'
     - gulp > gulp-cli > yargs > read-pkg-up > read-pkg > normalize-package-data > resolve > path-parse:
         reason: No direct upgrade or patch available.
         expires: '2021-06-06T07:01:11.151Z'

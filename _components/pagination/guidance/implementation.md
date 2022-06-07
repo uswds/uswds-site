@@ -7,7 +7,7 @@ Unlike many USWDS components, Pagination includes behaviors we cannot build into
 
 #### Behaviors
 <div class="measure-5">
-  <p>Pagination is navigation for paginated content. Taken as a whole, we call this paginated content a <strong>set</strong> Each item in the set is a <strong>page</strong> and the page the reader is on is the <strong>current page</strong>.</p>
+  <p>Pagination is navigation for paginated content. Taken as a whole, we call this paginated content a <strong>set</strong>. Each item in the set is a <strong>page</strong> and the page the reader is on is the <strong>current page</strong>.</p>
 
   <p>The Pagination component includes seven equal-sized, equally spaced <strong>slots</strong> arranged in a single horizontal line.  Each slot can accept a <strong>navigation item</strong> (typically a link to a specific page) or an <strong>overflow indicator</strong> (we use an ellipsis) to indicate that there are pages we're not showing. In the behaviors below, we'll number the slots 1–7, from left to right.</p>
 </div>

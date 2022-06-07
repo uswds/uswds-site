@@ -53,7 +53,7 @@
     "proof": "bundle exec htmlproofer --assume-extension --disable-external --allow-hash-href --alt-ignore '/.*/' --file-ignore '/developers/' ./_site",
     "serve": "npm run build-all-assets && bundle exec jekyll serve --drafts --future --incremental --livereload --host=localhost",
     "serve:package": "npm run build-uswds && npm run serve",
-    "serve:local": "export FRACTAL_BASE_URL=\"http://localhost:3000\" && npm run serve",
+    "serve:local": "export LIBRARY_BASE_URL=\"http://localhost:3000\" && npm run serve",
     "start": "bundle exec jekyll serve --drafts --future --host=localhost",
     "test": "npx snyk test && npm run test:core",
     "test:detached": "npm run start-detached && npm run test:core",
@@ -62,14 +62,12 @@
     "test:full": "npm run startup && npm run test:detached && npm run test:stop",
     "test:stop": "pkill -f jekyll",
     "watch": "NODE_ENV=development nswatch",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect",
     "start-detached": "bundle exec jekyll serve --detach --host=localhost",
     "startup": "npm install && bundle install && npm run build-uswds && npm run build-all-assets",
     "pa11y-ci:sitemap": "pa11y-ci --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude '/*.pdf|next/'",
     "pa11y-ci:sitemap-mobile": "pa11y-ci --config .pa11yci--mobile --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude '/*.pdf|next/'",
     "pa11y-ci:sitemap-json": "pa11y-ci --json > pa11y-results.json --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude '/*.pdf|next/'",
-    "prettier:scss": "npx prettier --write ./css/**/*.scss"
+    "prettier:scss": "npx prettier --write './css/**/*.scss'"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
@@ -85,6 +83,8 @@
     "chrome-remote-interface": "^0.31.0",
     "colors": "^1.3.2",
     "del": "^6.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
     "express": "^4.17.1",
     "fancy-log": "^1.3.3",
     "gulp": "^4.0.2",
@@ -101,7 +101,7 @@
     "jquery": "^3.5.0",
     "json-format": "^1.0.1",
     "merge-stream": "^2.0.0",
-    "minimist": "^1.2.3",
+    "minimist": "^1.2.6",
     "node-notifier": "^10.0.0",
     "nswatch": "^0.2.0",
     "pa11y-ci": "^2.4.2",
@@ -110,13 +110,12 @@
     "prettier": "^2.4.1",
     "sass": "^1.43.4",
     "simplecrawler": "^1.1.8",
-    "snyk": "^1.811.0",
+    "snyk": "^1.913.0",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^9.0.2",
     "stylelint-config-recommended-scss": "^4.3.0",
     "stylelint-prettier": "^1.2.0",
     "stylelint-scss": "^3.21.0",
-    "uswds": "^2.13.1",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",
     "yamljs": "^0.3.0"
@@ -162,5 +161,8 @@
       "build-js"
     ]
   },
-  "snyk": true
+  "snyk": true,
+  "dependencies": {
+    "@uswds/uswds": "github:uswds/uswds#develop"
+  }
 }

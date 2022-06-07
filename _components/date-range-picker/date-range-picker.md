@@ -1,7 +1,7 @@
 ---
 component:
   status: ready
-  package: usa-form-controls
+  package: usa-date-range-picker
   dependencies:
 category: Components
 implementation:

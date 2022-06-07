@@ -23,13 +23,12 @@ As always, we're here for you if you have any questions. Please get in touch via
 We recommend using the following tools when working with the Design System:
 - Node (use the version specified in the [.nvmrc file](https://github.com/uswds/uswds/blob/main/.nvmrc); if needed, [download the latest version](https://nodejs.org/en/download/) from Node.js)
 - npm
-- Sass (we use [the latest `sass` package from npm](https://www.npmjs.com/package/sass))
 
 These step-by-step instructions describe how to get started with the Design System using npm (recommended method).
 
 If npm is not a viable tool for your project, however, you can [download and install the Design System directly](https://github.com/uswds/uswds#download-and-install) as outlined in GitHub.
 
-We’ve built the Design System to support older and newer browsers through [progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement). We follow the [2% rule](https://gds.blog.gov.uk/2012/01/25/support-for-browsers/): we officially support any browser above 2% usage as observed by [analytics.usa.gov](https://analytics.usa.gov/). In other words, Design System version 2.0 supports Chrome, Firefox, Safari, Edge, and Internet Explorer 11 and up. The next major version of the Design System (3.0) will drop support of Internet Explorer 11.
+The Design System supports older and newer browsers through [progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement). We follow the [2% rule](https://gds.blog.gov.uk/2012/01/25/support-for-browsers/): We officially support any browser above 2% usage as observed by [analytics.usa.gov](https://analytics.usa.gov/). In other words, Design System version 3.0 supports Chrome, Firefox, Safari, and Edge. Note the Design System no longer supports Internet Explorer 11.
 
 ## Step-by-step
 Get started by installing the Design System on your project, compiling your project's Sass from the Design System source, and customizing the Design System to fit your project needs as outlined in the following phases:

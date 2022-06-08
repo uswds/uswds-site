@@ -13,15 +13,14 @@ const dutil = require( './config/gulp/doc-util' );
 const uswds = require("@uswds/compile");
 
 uswds.settings.version = 3;
-// uswds.settings.custom_sprites_only = true;
+// uswds.settings.sprite.projectIconsOnly = true;
+// uswds.paths.src.projectIcons = "./img/test-usa-icons";
 
 uswds.paths.dist.theme = "./css";
 uswds.paths.dist.img = "./assets/img";
 uswds.paths.dist.fonts = "./assets/fonts";
 uswds.paths.dist.js = "./assets/js/vendor";
 uswds.paths.dist.css = "./assets/css";
-// uswds.paths.dist.icons = "./img/test-usa-icons";
-
 
 /**
  * USWDS Compile tasks

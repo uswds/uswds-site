@@ -52,10 +52,10 @@ function buildUSWDSComponents() {
   const gulpfile = path.join(uswdsDir, "gulpfile.js");
 
   if (fs.existsSync(componentDir)) {
-    dutil.logMessage("build-uswds-if-needed", "USWDS is already built.");
+    dutil.logMessage("Building USWDS components", "USWDS is already built.");
     return Promise.resolve();
   } else {
-    dutil.logMessage("build-uswds-if-needed", "Building USWDS...");
+    dutil.logMessage("Building USWDS components", "Building USWDS...");
 
     if (!fs.existsSync(gulpfile)) {
       return Promise.reject(

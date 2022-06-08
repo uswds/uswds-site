@@ -45,6 +45,7 @@ exports.sassProdStyles = gulp.parallel(this.sassProd, this.sassProdNext);
 exports.sass = gulp.series(sass.lint, uswds.compileSass, this.sassProdStyles);
 exports.sassLint = sass.lint;
 
+exports.buildUSWDSComponents = build.buildUSWDSComponents;
 exports.build = gulp.series(
   build.cleanAssets,
   build.buildUSWDSComponents,

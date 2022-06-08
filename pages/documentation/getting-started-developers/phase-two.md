@@ -171,7 +171,7 @@ For any function you defined as an `export` in your `gulpfile.js`, you can run `
 ## Step 5: Initialize your project
 
 {:.site-note}
-**Note:** Initialize with caution. The initialization task copies default settings and theme files, so if you've made any customizations to your local theme, `init` will overwrite them.
+**Note:** Initialize with caution. The initialization task copies default settings and theme files, so if you've made any customizations to your local theme, `init` will overwrite them. You should only need to run `npx gulp init` once.
 
 Initialize your project to copy all the necessary image, font, and Javascript assets from the source code.
 

@@ -1,16 +1,17 @@
+const gulp = require("gulp");
+const uswds = require("@uswds/compile");
+
 // Bring in individual Gulp configurations
 //
-
-// require( './config/gulp/build' );
+const build = require("./config/gulp/build");
 const images = require("./config/gulp/images").default;
 const js = require("./config/gulp/javascript");
 const sass = require("./config/gulp/sass");
 
-const gulp = require("gulp");
-const dutil = require("./config/gulp/doc-util");
 
-const uswds = require("@uswds/compile");
-
+/**
+ * USWDS Compile Settings
+ */
 uswds.settings.version = 3;
 
 uswds.paths.dist.theme = "./css";
@@ -32,9 +33,9 @@ exports.compileSass = uswds.compileSass;
 /**
  * Custom tasks
  */
-exports.images = images;
+exports.copyDocImages = images;
 exports.javascript = gulp.series(
-  gulp.parallel(uswds.copyJS, js.lint),
+  js.lint,
   js.build
 );
 
@@ -43,3 +44,13 @@ exports.sassProdNext = sass.prodNextStyles;
 exports.sassProdStyles = gulp.parallel(this.sassProd, this.sassProdNext);
 exports.sass = gulp.series(sass.lint, uswds.compileSass, this.sassProdStyles);
 exports.sassLint = sass.lint;
+
+exports.build = gulp.series(
+  build.cleanAssets,
+  build.buildUSWDSComponents,
+  uswds.copyAssets,
+  uswds.compile,
+  this.javascript,
+  this.copyDocImages,
+  this.sassProdStyles
+);

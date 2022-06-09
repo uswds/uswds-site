@@ -56,7 +56,7 @@ $('.sidenav').on('click', 'a', function (e) {
 });
 
 // In-page navigation
-document.addEventListener('DOMContentLoaded', function () {
+/* document.addEventListener('DOMContentLoaded', function () {
   let mainNavLinks = document.querySelectorAll('#stick-nav li a');
 
   window.addEventListener('scroll', (event) => {
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
-});
+}); */
 
 //var navHeight = function () {
 //  $('.sidenav').css('height', (window.innerHeight - 50));

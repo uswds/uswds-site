@@ -83,7 +83,6 @@
     "gulp-eslint": "^6.0.0",
     "gulp-postcss": "^9.0.1",
     "gulp-sourcemaps": "^3.0.0",
-    "gulp-stylelint": "^13.0.0",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.5.0",
     "json-format": "^1.0.1",

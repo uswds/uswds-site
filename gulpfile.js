@@ -35,6 +35,7 @@ exports.watchSass = uswds.watch;
  */
 exports.copyDocImages = images;
 exports.js = gulp.series(js.lint, js.build);
+exports.lintJS = js.lint;
 exports.watchJS = js.watch;
 
 exports.sassProd = sass.prodStyles;

@@ -62,7 +62,7 @@ function compileProdNextStyles() {
   return compileProdStyles(allCSSEntrypoints, "styles-next.css");
 }
 
-function lint() {
+async function lint(done) {
   const { errored, output } = await stylelint.lint({
     files: [`./css/**/*.scss`],
     formatter: "string",

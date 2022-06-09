@@ -701,7 +701,7 @@ html {
     }
   }
 
-  .next-opportunity__need__need-img {
+  .next-opportunity__need--need-img {
     @include u-square(2);
     margin-right: units(2);
     @include at-media("desktop") {
@@ -709,7 +709,7 @@ html {
     }
   }
 
-  .next-opportunity__need__need-label {
+  .next-opportunity__need--need-label {
     font-size: size("lang", 6);
     font-weight: $theme-font-weight-semibold;
     margin-right: units(4);

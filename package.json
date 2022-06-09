@@ -60,6 +60,7 @@
     "prettier:scss": "npx prettier --write './css/**/*.scss'"
   },
   "devDependencies": {
+    "@18f/identity-stylelint-config": "^1.0.0",
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
     "ansi-colors": "^4.1.1",
@@ -96,11 +97,7 @@
     "sass": "^1.43.4",
     "simplecrawler": "^1.1.8",
     "snyk": "^1.913.0",
-    "stylelint": "^13.13.1",
-    "stylelint-config-prettier": "^9.0.2",
-    "stylelint-config-recommended-scss": "^4.3.0",
-    "stylelint-prettier": "^1.2.0",
-    "stylelint-scss": "^3.21.0",
+    "stylelint": "^14.1.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",
     "yamljs": "^0.3.0"

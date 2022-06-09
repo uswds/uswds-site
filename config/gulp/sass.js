@@ -1,8 +1,7 @@
 const concat = require("gulp-concat");
 const csso = require("postcss-csso");
-const dutil = require("./doc-util");
 const gulp = require("gulp");
-const gulpStylelint = require("gulp-stylelint");
+const stylelint = require("stylelint");
 const postcss = require("gulp-postcss");
 const sourcemaps = require("gulp-sourcemaps");
 
@@ -18,11 +17,6 @@ const entrypoints = {
     next: "./assets/css/uswds-next.css",
     utilities: "./assets/css/uswds-utilities.css",
   },
-};
-
-const handleError = (error) => {
-  dutil.logError.bind(this)(error);
-  this.emit("end");
 };
 
 /**
@@ -69,11 +63,12 @@ function compileProdNextStyles() {
 }
 
 function lint() {
-  return gulp.src(["./css/**/*.scss"]).pipe(
-    gulpStylelint({
-      reporters: [{ formatter: "string", console: true }],
-    })
-  );
+  const { errored, output } = await stylelint.lint({
+    files: [`./css/**/*.scss`],
+    formatter: "string",
+  });
+
+  done(errored ? new Error(output) : null);
 }
 
 /**

@@ -1,6 +1,5 @@
 const gulp = require("gulp");
 const log = require("fancy-log");
-const dutil = require("./doc-util");
 const browserify = require("browserify");
 const buffer = require("vinyl-buffer");
 const source = require("vinyl-source-stream");
@@ -8,18 +7,15 @@ const uglify = require("gulp-uglify");
 const sourcemaps = require("gulp-sourcemaps");
 const rename = require("gulp-rename");
 const linter = require("gulp-eslint");
-const task = "javascript";
 
-function eslint() {
+function lint() {
   return gulp
     .src(["./js/**/*.js", "!./js/vendor/**/*.js"])
     .pipe(linter(".eslintrc"))
     .pipe(linter.format());
 }
 
-function buildJS(done) {
-  dutil.logMessage(task, "Compiling JavaScript");
-
+function build() {
   var minifiedStream = browserify({
     entries: "js/start.js",
     debug: true,
@@ -41,5 +37,12 @@ function buildJS(done) {
     .pipe(gulp.dest("assets/js"));
 }
 
-exports.lint = eslint;
-exports.build = buildJS;
+function watch(done) {
+  return gulp.watch(["./js/*.js"], gulp.series(lint, build))
+}
+
+module.exports = {
+  lint,
+  build,
+  watch
+}

@@ -8,7 +8,6 @@ const images = require("./config/gulp/images").default;
 const js = require("./config/gulp/javascript");
 const sass = require("./config/gulp/sass");
 
-
 /**
  * USWDS Compile Settings
  */
@@ -29,29 +28,32 @@ exports.compileIcons = uswds.compileIcons;
 exports.copyFonts = uswds.copyFonts;
 exports.copyAssets = uswds.copyAssets;
 exports.compileSass = uswds.compileSass;
+exports.watchSass = uswds.watch;
 
 /**
  * Custom tasks
  */
 exports.copyDocImages = images;
-exports.javascript = gulp.series(
-  js.lint,
-  js.build
-);
+exports.js = gulp.series(js.lint, js.build);
+exports.watchJS = js.watch;
 
 exports.sassProd = sass.prodStyles;
 exports.sassProdNext = sass.prodNextStyles;
 exports.sassProdStyles = gulp.parallel(this.sassProd, this.sassProdNext);
 exports.sass = gulp.series(sass.lint, uswds.compileSass, this.sassProdStyles);
-exports.sassLint = sass.lint;
+
+exports.lintSass = sass.lint;
 
 exports.buildUSWDSComponents = build.buildUSWDSComponents;
+
 exports.build = gulp.series(
   build.cleanAssets,
   build.buildUSWDSComponents,
   uswds.copyAssets,
   uswds.compile,
-  this.javascript,
+  this.js,
   this.copyDocImages,
   this.sassProdStyles
 );
+
+exports.watch = gulp.parallel(this.watchSass, this.watchJS);

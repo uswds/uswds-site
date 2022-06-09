@@ -33,26 +33,25 @@
     "build": "gulp build && bundle exec jekyll build",
     "build:all-assets": "gulp build",
     "build:css": "gulp sass",
-    "build:js": "gulp javascript",
+    "build:js": "gulp js",
     "build:uswds": "gulp buildUSWDSComponents",
     "check-contrast": "node ./utils/check-contrast.js",
     "clean": "gulp clean-assets",
     "crawl": "node config/crawl.js",
     "federalist": "npx gulp build",
     "lint": "gulp eslint scss-lint && npm run prettier:scss",
-    "prestart": "npx gulp sass",
+    "prestart": "npx gulp build",
     "proof": "bundle exec htmlproofer --assume-extension --disable-external --allow-hash-href --alt-ignore '/.*/' --file-ignore '/developers/' ./_site",
     "serve": "npm run build:all-assets && bundle exec jekyll serve --drafts --future --incremental --livereload --host=localhost",
     "serve:package": "npm run build:uswds && npm run serve",
     "serve:local": "export LIBRARY_BASE_URL=\"http://localhost:3000\" && npm run serve",
-    "start": "bundle exec jekyll serve --drafts --future --host=localhost",
+    "start": "bundle exec jekyll serve --drafts --future --livereload --incremental --host=localhost & gulp watch",
     "test": "npx snyk test && npm run test:core",
     "test:detached": "npm run start-detached && npm run test:core",
     "test:core": "bundle exec rspec && npm run lint && npm run proof && npm run pa11y-ci:sitemap && npm run pa11y-ci:sitemap-mobile",
     "test:ci": "npm run build:all-assets && npm run test:detached",
     "test:full": "npm run startup && npm run test:detached && npm run test:stop",
     "test:stop": "pkill -f jekyll",
-    "watch": "NODE_ENV=development nswatch",
     "start-detached": "bundle exec jekyll serve --detach --host=localhost",
     "startup": "npm install && bundle install && npm run build:uswds && npm run build:all-assets",
     "pa11y-ci:sitemap": "pa11y-ci --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude '/*.pdf|next/'",
@@ -90,7 +89,6 @@
     "merge-stream": "^2.0.0",
     "minimist": "^1.2.6",
     "node-notifier": "^10.0.0",
-    "nswatch": "^0.2.0",
     "pa11y-ci": "^2.4.2",
     "postcss": "^8.3.11",
     "postcss-csso": "^5.0.1",
@@ -106,47 +104,6 @@
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",
     "yamljs": "^0.3.0"
-  },
-  "watch": {
-    "./css/settings/**/*.scss": [
-      "build-css-dev"
-    ],
-    "./css/uswds-components.scss": [
-      "build-css-components"
-    ],
-    "./css/uswds-custom.scss": [
-      "build-css-custom"
-    ],
-    "./css/_uswds-theme-custom-styles.scss": [
-      "build-css-custom"
-    ],
-    "./css/uswds-fonts.scss": [
-      "build-css-fonts"
-    ],
-    "./css/uswds-next.scss": [
-      "build-next-css"
-    ],
-    "./css/uswds-utilities.scss": [
-      "build-css-utilities"
-    ],
-    "./img": [
-      "build-img"
-    ],
-    "./js/**/*.js": [
-      "build-js"
-    ],
-    "./node_modules/uswds/src/stylesheets": [
-      "build-css-dev"
-    ],
-    "./node_modules/uswds/src/fonts": [
-      "build-fonts"
-    ],
-    "./node_modules/uswds/src/img": [
-      "build-img"
-    ],
-    "./node_modules/uswds/src/js": [
-      "build-js"
-    ]
   },
   "snyk": true,
   "dependencies": {

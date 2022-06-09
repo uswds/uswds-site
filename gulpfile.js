@@ -13,6 +13,8 @@ const sass = require("./config/gulp/sass");
  */
 uswds.settings.version = 3;
 
+uswds.paths.src.projectIcons = "./img/site-sprite";
+
 uswds.paths.dist.theme = "./css";
 uswds.paths.dist.img = "./assets/img";
 uswds.paths.dist.fonts = "./assets/fonts";

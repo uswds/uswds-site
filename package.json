@@ -34,6 +34,7 @@
     "build:all-assets": "gulp build",
     "build:css": "gulp sass",
     "build:js": "gulp js",
+    "build:sprite": "gulp compileIcons",
     "build:uswds": "gulp buildUSWDSComponents",
     "check-contrast": "node ./utils/check-contrast.js",
     "clean": "gulp clean-assets",

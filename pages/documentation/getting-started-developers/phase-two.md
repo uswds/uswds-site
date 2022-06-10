@@ -60,15 +60,7 @@ In plain language, this code says:
   ```scss
   @use "uswds-core" with (
     $theme-image-path: "../uswds/img",
-    $theme-show-compile-warnings: false,
-    $theme-color-primary-lightest: "green-warm-10",
-    $theme-color-primary-lighter: "green-warm-20",
-    $theme-color-primary-light: "green-warm-30",
-    $theme-color-primary: "green-warm-50",
-    $theme-color-primary-vivid: "green-warm-50v",
-    $theme-color-primary-dark: "green-warm-60v",
-    $theme-color-primary-darker: "green-warm-70v",
-    $theme-color-primary-darkest: "green-warm-80",
+    $theme-show-compile-warnings: true,
     $theme-banner-background-color: "ink",
     $theme-banner-link-color: "primary-light",
     $theme-banner-max-width: "none",

@@ -35,7 +35,9 @@ exports.watchSass = uswds.watch;
 /**
  * Custom tasks
  */
+exports.cleanAssets = build.cleanAssets;
 exports.copyDocImages = images;
+
 exports.js = gulp.series(js.lint, js.build);
 exports.lintJS = js.lint;
 exports.watchJS = js.watch;

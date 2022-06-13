@@ -3825,3 +3825,121 @@ p + .pagination-behaviors--examples {
     color: color("red-60v");
   }
 }
+
+// In-Page Navigation --------- //
+
+.in-page-navigation {
+  display: flex;
+  flex-basis: 200px;
+  font-size: 0.8rem;
+  justify-content: flex-start;
+  max-width: 16rem;
+  overflow: auto;
+  position: sticky;
+  top: 4rem;
+}
+
+.site-sidenav.usa-sidenav {
+  @include typeset("lang", "xs", 3);
+  background-color: color("white");
+  border: units($site-border-width) solid color("black-transparent-10");
+  border-radius: radius("md");
+  padding: 0;
+
+  a {
+    @include u-padding-x(2);
+    color: color("base-darker");
+
+    &:hover {
+      background-color: transparent;
+      color: color($site-primary-vivid);
+    }
+  }
+
+  .usa-current {
+    color: color("base-darker");
+    position: static;
+
+    &::after {
+      border-radius: 0;
+      background-color: color($site-primary-vivid);
+      bottom: units(-1px);
+      left: units($site-border-width) * -1;
+      top: units(0);
+      z-index: z(100);
+    }
+  }
+
+  .usa-sidenav__item:first-child {
+    .usa-current::after {
+      border-top-left-radius: radius("md");
+      top: units($site-border-width) * -1;
+    }
+  }
+
+  .usa-sidenav__item:last-child {
+    .usa-current::after {
+      border-bottom-left-radius: radius("md");
+      bottom: units($site-border-width) * -1;
+    }
+  }
+
+  .usa-sidenav__item {
+    border-top: none;
+    line-height: lh("lang", 3);
+    position: relative;
+
+    & + .usa-sidenav__item {
+      a {
+        // TODO: use 'black-transparent-5' when value changes
+        border-top: units(1px) solid rgba(0, 0, 0, 0.05);
+      }
+    }
+
+    &.is-current {
+      background-color: color($site-background-color);
+
+      .is-current {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .usa-sidenav__sublist {
+    font-size: font-size("lang", "3xs");
+    a {
+      border-top: units(1px) solid rgba(0, 0, 0, 0.05);
+      padding-left: units(2);
+    }
+
+    .usa-current {
+      color: color($site-primary-vivid);
+    }
+
+    .usa-sidenav__sublist {
+      a {
+        padding-left: units(4);
+      }
+    }
+  }
+}
+
+.sidenav {
+  display: none;
+
+  @include at-media("desktop") {
+    display: block;
+    float: left;
+    margin-bottom: units(6);
+    margin-top: units(4);
+    padding-right: 0;
+    padding-left: units(4);
+    width: units($width-nav-sidebar);
+  }
+
+  .usa-navigation-submenu {
+    &[aria-hidden="false"] {
+      display: block;
+    }
+  }
+}

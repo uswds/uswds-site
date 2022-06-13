@@ -15,74 +15,67 @@ layout: default
     <div class="grid-row">
       <div class="tablet:grid-col-9 desktop:grid-col">
         <div class="styleguide-content{% unless page.category == 'Utilities' and page.type != 'docs' %} usa-prose site-prose{% endunless %}">
-          <section id="{{ page.title | slugify }}-heading-section" style="overflow: auto;">
-            <header>
-              {% if page.category != null %}
-                {% unless page.path contains 'overview' and page.permalink != '/design-tokens/color/overview/' %}
-                  <p class="site-subheading">{{ page.category }}</p>
-                {% endunless %}
-              {% endif %}
-              <h1 id="{{ page.title | slugify }}" class="site-page-title">{{ page.title }}</h1>
-            </header>
-
+          <header>
+            {% if page.category != null %}
+              {% unless page.path contains 'overview' and page.permalink != '/design-tokens/color/overview/' %}
+                <p class="site-subheading">{{ page.category }}</p>
+              {% endunless %}
+            {% endif %}
+            <h1 id="{{ page.title | slugify }}" class="site-page-title">{{ page.title }}</h1>
+          </header>
           {% include lead.html text=page.lead %}
-        </section>
           {{ content }}
-        
+        </div>
       </div>
-    </div>
-    <div class="tablet:grid-col-3 desktop:grid-col">
-      <div style="position: sticky;top: 4rem;display: flex;flex-basis: 200px;font-size: 0.8rem;justify-content: flex-start;max-width: 16rem; overflow: auto;">
-        <nav aria-label="{{ page.title }},">
-          <ul id="stick-nav" class="usa-in-page-navigation">
-            <li class="usa-in-page-navigation__item">
-              <a href="#{{ page.title | slugify }}-heading-section" class="usa-current">{{ page.title }}</a>
-            </li>
-            <li class="usa-in-page-navigation__item">
-              <a href="#component-preview">Component preview</a>
-            </li>
-            <li class="usa-in-page-navigation__item">
-              <a href="#component-code">Component code</a>
-            </li>
-            <li class="usa-in-page-navigation__item">
-              <a href="#{{ page.title | slugify }}-guidance-section">Guidance</a>
-    
-              <ul class="usa-in-page-navigation__sublist">
-                <li class="usa-in-page-navigation__item">
-                  <a href="#when-to-use-the-{{ page.title | slugify }}-section">
-                    When to use the {{ page.title }} component
-                  </a>
-                </li>
-                <li class="usa-in-page-navigation__item">
-                  <a href="#when-to-consider-something-else-{{ page.title | slugify }}-section">
-                    When to consider something else
-                  </a>
-                </li>
-                <li class="usa-in-page-navigation__item">
-                  <a href="#usability-guidance-{{ page.title | slugify }}-section">
-                    Usability guidance
-                  </a>
-                </li>
-                <li class="usa-in-page-navigation__item">
-                  <a href="#accessibility-{{ page.title | slugify }}-section">Accessibility</a>
-                </li>
-                <li class="usa-in-page-navigation__item">
-                  <a href="#using-the-{{ page.title | slugify }}-component-section">
-                    Using the {{ page.title }} component
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="usa-in-page-navigation__item">
-              <a href="#{{ page.title | slugify }}-package-section">Package</a>
-            </li>
-          </ul>
-        </nav>
+      <div class="tablet:grid-col-3 desktop:grid-col">
+        <div class="in-page-navigation">
+          <nav aria-label="{{ page.title }},">
+            <ul class="usa-in-page-navigation">
+              <li class="usa-in-page-navigation__item">
+                <a href="#{{ page.title | slugify }}" class="usa-current">{{ page.title }}</a>
+              </li>
+              <li class="usa-in-page-navigation__item">
+                <a href="#component-preview">Component preview</a>
+              </li>
+              <li class="usa-in-page-navigation__item">
+                <a href="#component-code">Component code</a>
+              </li>
+              <li class="usa-in-page-navigation__item">
+                <a href="#{{ page.title | slugify }}-guidance">Guidance</a>
+      
+                <ul class="usa-in-page-navigation__sublist">
+                  <li class="usa-in-page-navigation__item">
+                    <a href="#when-to-use-the-{{ page.title | slugify }}">
+                      When to use the {{ page.title }} component
+                    </a>
+                  </li>
+                  <li class="usa-in-page-navigation__item">
+                    <a href="#when-to-consider-something-else-{{ page.title | slugify }}">
+                      When to consider something else
+                    </a>
+                  </li>
+                  <li class="usa-in-page-navigation__item">
+                    <a href="#usability-guidance-{{ page.title | slugify }}">
+                      Usability guidance
+                    </a>
+                  </li>
+                  <li class="usa-in-page-navigation__item">
+                    <a href="#accessibility-{{ page.title | slugify }}">Accessibility</a>
+                  </li>
+                  <li class="usa-in-page-navigation__item">
+                    <a href="#using-the-{{ page.title | slugify }}-component">
+                      Using the {{ page.title }} component
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="usa-in-page-navigation__item">
+                <a href="#{{ page.title | slugify }}-package">Package</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
-    
-
-
     </div>
   </main>
 </div>

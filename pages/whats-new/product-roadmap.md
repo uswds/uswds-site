@@ -23,7 +23,6 @@ You can also <a href="https://github.com/uswds/uswds/milestone/52" view our prod
 
 <h2>Current USWDS product roadmap</h2>
 <p><span class="usa-tag label-done margin-left-0">Updated June 13, 2022</span></p>
-
 <div class="maxw-tablet margin-top-5">
   <h2>June - September 2022</h2>
   <ul class="site-roadmap-list">

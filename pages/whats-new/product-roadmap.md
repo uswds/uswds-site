@@ -27,7 +27,7 @@ You can also <a href="https://github.com/uswds/uswds/milestone/52" view our prod
   <h2>June - September 2022</h2>
   <ul class="site-roadmap-list">
     <li class="site-roadmap-list__item"><span class="flex-column"><h3>Ease of Maintenance</h3></span>
-    <li class="site-roadmap-list__item"><span class="flex-column"><h4>Modularize USWDS components and better communicate component packages value</h4></span>
+    <li class="site-roadmap-list__item"><span class="flex-column"><h4>Modularize USWDS components and better communicate component packages value</h4></span> 
       <ul class="site-roadmap-list__sublist">
     <li class="site-roadmap-list__item"><span class="flex-fill"><a href="https://github.com/uswds/uswds-site/issues/1280"> Prototype a change log for packages/components </a></span> </li>
     <li class="site-roadmap-list__item"><span class="flex-fill"><a href="https://github.com/uswds/uswds-team/issues/166"> Host monthly call on component packages</a></span></li>

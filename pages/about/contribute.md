@@ -46,7 +46,7 @@ If you have a code fix for the issue, go ahead and [submit a pull request](https
 If you’ve got an idea on how something could work better (enhancement) or on new functionality (feature request) for the Design System, we want to hear it. Here’s how to submit a feature request or enhancement.
 
 1. Check our [feature requests backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Feature+Request%22) for any duplicate or similar feature requests. If your idea has already been suggested and fulfills your business need, upvote that feature request with a thumbs up emoji and comment on the issue to let us know why you need this feature request and any other supporting information. We review the number of upvotes to help us prioritize feature requests. 
-<br/><br/>If you want to find other feature requests open for upvoting, check out our [feature request view sorted by status](https://github.com/orgs/uswds/projects/8/views/18?sortedBy%5Bdirection%5D=asc&sortedBy%5BcolumnId%5D=Status). 
+<br/><br/>If you want to find other feature requests open for upvoting, check out our [feature request backlog view (sorted by those with the most upvotes)](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Feature+Request%22+sort%3Areactions-desc). 
 
 2. If your idea is not in the [current issues backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Feature+Request%22), submit an issue using the [feature request template](https://github.com/uswds/uswds/issues/new?assignees=&labels=type%3A+feature+request&template=feature_request.md&title=).  A USWDS core team member may reach out to you if we need further clarification on your submission. 
 

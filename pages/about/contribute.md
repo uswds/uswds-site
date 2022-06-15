@@ -42,25 +42,24 @@ If you have a code fix for the issue, go ahead and [submit a pull request](https
 
 ## Propose a feature request or enhancement
 
-If you’ve got an idea on how something could work better (enhancement) or on new functionality (feature request) for the Design System, we want to hear it. Here’s how to submit a feature request or enhancement.
+If you’ve got a new idea or a suggestion for how something could work better, we want to hear about it. Here are a few steps to help you submit a feature request or enhancement.
 
-1. Check our [feature requests backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Feature+Request%22) for any duplicate or similar feature requests. If your idea has already been suggested and fulfills your business need, upvote that feature request with a thumbs up emoji and comment on the issue to let us know why you need this feature request and any other supporting information. We review the number of upvotes to help us prioritize feature requests. 
+1. Check our [feature requests backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Feature+Request%22) for any duplicate or similar feature requests. If your idea has already been suggested, upvote that feature request with a thumbs up emoji and comment on the issue to let us know why you need this feature request and any other supporting information. We review the number of upvotes to help us prioritize feature requests. 
 <br/><br/>If you want to find other feature requests open for upvoting, check out our [feature request backlog view (sorted by those with the most upvotes)](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Feature+Request%22+sort%3Areactions-desc). 
 
 2. If your idea is not in the [current issues backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Feature+Request%22), submit an issue using the [feature request template](https://github.com/uswds/uswds/issues/new?assignees=&labels=type%3A+feature+request&template=feature_request.md&title=).  A USWDS core team member may reach out to you if we need further clarification on your submission. 
 
 ## Submit a pull request
 
-If you want to propose a code fix, Here are some steps to help you submit pull requests.
+If you want to propose a code fix, here are some steps to help you submit pull requests.
 
 ### If it's a bug fix:
 
 1. Check our [open issues backlog](https://github.com/uswds/uswds/issues) for any duplicate or similar issues. 
 1. If your bug has already been submitted, feel free to comment and provide additional context (if different than the original submission).  
 1. If your proposed fix is not in the open issues backlog, create an [issue](https://github.com/uswds/uswds/issues/new/choose) for the change you’re proposing.  This helps us track our work. 
-1. Fork this repo into your GitHub account (or just clone it if you’re an 18F team member). Read more about forking a repo on [GitHub](https://help.github.com/articles/fork-a-repo/). 
+1. Fork this repo into your GitHub account. Read more about forking a repo on [GitHub](https://help.github.com/articles/fork-a-repo/). 
 1. Create a branch from `develop` that lightly defines what you’re working on (for example, add-styles).
-1. Ensure that your contribution works via npm, if applicable.
 1. Once you’re ready to submit a pull request, fill out the [pull request template](https://github.com/uswds/uswds/compare).
 1. Link your pull request to the issue you created. This important step helps us know which issue this solution fixes. Tip: You can link the pull request in the body of the pull request template using the GitHub comment closes `#issue-no` or `resolves #issue-no`. 
 1. Submit your pull request against the `develop` branch. 
@@ -70,7 +69,7 @@ If the pull request is accepted, we will schedule the issue and merge the pull r
 ### If it's a feature request or enhancement:
 
 1. Check our [open issues backlog](https://github.com/uswds/uswds/issues) for any duplicate or similar issues.
-1. If your idea has already been suggested and fulfills your business need, upvote that feature request with a thumbs up emoji and comment on the issue to let us know why you need this feature request or enhancement and any other supporting information. 
+1. If your idea has already been suggested, upvote that feature request with a thumbs up emoji and comment on the issue to let us know why you need this feature request or enhancement and any other supporting information. 
 <br/>**Tip:** If you want to find other feature requests open for upvoting, check out our [feature request view sorted by status](https://github.com/orgs/uswds/projects/8/views/18?sortedBy%5Bdirection%5D=asc&sortedBy%5BcolumnId%5D=Status).
 1. If your proposed fix is not in the [open issues backlog](https://github.com/uswds/uswds/issues), [create an issue](https://github.com/uswds/uswds/issues/new?assignees=&labels=type%3A+feature+request&template=feature_request.md&title=) describing your proposal. This doesn’t mean we don’t want you to create a pull request. We simply want to start the process with an online conversation first. Plus, other community members might have supporting thoughts to add to your proposal. If you’ve already got a pull request, no worries. Go ahead and attach it to the issue. 
 
@@ -80,13 +79,13 @@ If you’d like to contribute something else that doesn’t fall into any of the
 
 ## How we prioritize
 
-Once you’ve submitted a contribution, we triage them based on the following considerations:
+Once you’ve submitted a contribution, we'll triage it based on the following considerations:
 
 1. **Size**: Can we accomplish this in a sprint or will this take longer? 
 1. **Severity**: What type of functionality is impacted? Is there a workaround?
 1. **Priority**: Does this align with our vision and roadmap goals? 
 
-**Note**: We prioritize issues impacting accessibility. 
+**Note**: We prioritize issues that affect accessibility. 
 
 These considerations help us decide if and when we can work on the issue. If the issue is accepted, we scheduled them for an upcoming sprint (a 2-week work period).
 

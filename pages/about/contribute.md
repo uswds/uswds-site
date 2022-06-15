@@ -45,7 +45,7 @@ If you have a code fix for the issue, go ahead and [submit a pull request](https
 If you’ve got a new idea or a suggestion for how something could work better, we want to hear about it. Here are a few steps to help you submit a feature request or enhancement.
 
 1. Check our [feature requests backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Feature+Request%22) for any duplicate or similar feature requests. If your idea has already been suggested, upvote that feature request with a thumbs up emoji and comment on the issue to let us know why you need this feature request and any other supporting information. We review the number of upvotes to help us prioritize feature requests. 
-<br/><br/>If you want to find other feature requests open for upvoting, check out our [feature request backlog view (sorted by those with the most upvotes)](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Feature+Request%22+sort%3Areactions-desc). 
+<br/><br/>If you want to find other feature requests open for upvoting, check out our [feature request backlog view (sorted by those with the most upvotes)](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Status%3A+Voting+Open+%F0%9F%91%8D%22+sort%3Areactions-%2B1-desc). 
 
 2. If your idea is not in the [current issues backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Feature+Request%22), submit an issue using the [feature request template](https://github.com/uswds/uswds/issues/new?assignees=&labels=type%3A+feature+request&template=feature_request.md&title=).  A USWDS core team member may reach out to you if we need further clarification on your submission. 
 

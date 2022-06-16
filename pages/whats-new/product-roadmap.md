@@ -13,7 +13,7 @@ redirect_from:
 
 Our product roadmap communicates what we've recently done and what we've got planned for the next 4-8 months. We've moved our roadmap planning board to GitHub so we can keep it more up-to-date.
 
-Check out [our Public Roadmap on GitHub](https://github.com/orgs/uswds/projects/8/views/1) for more details about what we're doing and what's coming up.
+Check out [our Public Roadmap on GitHub](https://github.com/orgs/uswds/projects/13/views/1) for more details about what we're doing and what's coming up.
 
 If you'd like to see what we're working on from week to week, check out [our Sprint Board on GitHub](https://github.com/orgs/uswds/projects/8/views/8)
 

@@ -134,7 +134,7 @@ You can further customize utility output with USWDS settings. Add settings from 
 ### Modules
 Each utility module referenced in [the settings section, above](#settings), can accept one of the utility module names outlined in the following table. The more utilities your project uses, the larger the utilities CSS will be. 
 
-The size of each module will change based on its module settings. For instance, if a module is set to output responsive classes and state variants, it will be mauch larger than if it includes only the base classes and no variants.
+The size of each module will change based on its module settings. For instance, if a module is set to output responsive classes and state variants, it will be much larger than if it includes only the base classes and no variants.
 
 {% include utilities-module-table.html %}
 

@@ -180,16 +180,37 @@ Add this load path to your compiler settings, or update any old paths if your co
 <div id="m-a6" class="usa-accordion__content site-prose">
   <ol>
     <li>How do you know you're using USWDS Gulp? Search for a line like <code>const uswds = require("./node_modules/uswds-gulp/config/uswds");</code> or <code>const uswds = "node_modules/uswds/dist"</code> in your gulp setup. This indicates that you're using the gulp setup we distributed as USWDS Gulp.</li>
+    <li><p>Update your versions of the <code>sass</code> and <code>gulp-sass</code> packages if you're using them. If you use the <code>sass</code> package, run the following command in the terminal:</p>
+      {% highlight node -%}
+npm install sass@latest
+      {%- endhighlight%}
+        <p>If you use the <code>gulp-sass</code> package, run the following command in the terminal:</p>
+      {% highlight node -%}
+npm install gulp-sass@latest
+      {%- endhighlight%}
+    </li>
+    <li>The <code>sass.sync</code> function is no longer supported in the latest versions of <code>gulp-sass</code>. Replace any instance of <code>sass.sync</code> with simply <code>sass</code>:
+      {% highlight diff -%}
+- sass.sync({
++ sass({
+      {%- endhighlight %}
+    </li>
+    <li><p>If you use <code>sass</code> and <code>gulp-sass</code>, you'll need to update how they work together. Update your <code>const sass</code> to <code>const sass = require("gulp-sass")(require("sass"));</code>:</p>
+      {% highlight diff -%}
+- const sass = require("gulp-sass");
++ const sass = require("gulp-sass")(require("sass"));
+      {%- endhighlight %}
+    </li>
     <li>Update the USWDS <code>const</code> elements to the updated USWDS package location:
       {% highlight diff -%}
 - const pkg = require("./node_modules/uswds/package.json");
 + const pkg = require("./node_modules/@uswds/uswds/package.json");
 ...
 - const uswds = require("./node_modules/uswds-gulp/config/uswds");
-+ const uswds = "node_modules/@uswds/uswds";
++ const uswds = "./node_modules/@uswds/uswds";
 or
 - const USWDS = "node_modules/uswds/dist";
-+ const USWDS = "node_modules/@uswds/uswds";
++ const USWDS = "./node_modules/@uswds/uswds";
       {%- endhighlight %}
     </li>
     <li><p>Search for references to <code>${uswds}</code> in the <code>includePaths</code> and <code>gulp.src()</code> found in your project’s gulp files. These paths tell the Sass compiler where to look for USWDS source files.</p>
@@ -488,11 +509,11 @@ If you use any of these settings in your code, the output may change:
 Setting | Old default | New default
 --- | --- | ---
 `$theme-color-success-dark` | `"green-cool-50"` | `"green-cool-50v"`
-`$theme-color-success-darker` | `"green-cool-80"` | `"green-cool-60v"`
+`$theme-color-success-darker` | `"green-cool-60"` | `"green-cool-60v"`
 
 ###### What to do
-1. Check your settings to see if they are set to the **old** default.
-1. If they use the **old** default, delete the setting from your settings file so it uses the system default.
+1. Check your settings to see if they are set to either the **old** or the **new** default.
+1. If they use either the **old** or the **new** default, delete the setting from your settings file so it uses the system default.
 </div>
 <!-- End 2.12.0 section -->
 
@@ -512,7 +533,7 @@ Setting | Old default | New default
 We deprecated the `$theme-site-max-width` variable. We're using `$theme-grid-container-max-width` instead.
 
 ###### What to do
-1. Replace instances of `$theme-site-max-width` with `$theme-grid-container-max-width`
+1. Replace instances of `$theme-site-max-width` with `$theme-grid-container-max-width`. If your layout is affected by this change, remove this setting from your settings file.
 
 {:.border-top-2px.border-base-lighter.padding-top-2}
 ##### <span class="usa-tag bg-accent-cool-darker">Markup</span> Replace the `thumb_down_off_alt` icon with `thumb_down_alt` icon.
@@ -550,8 +571,8 @@ Setting | Old default | New default
 `$theme-table-text-color` | `"ink"` | `default`
 
 ###### What to do
-1. Check your settings to see if they are set to the **old** default.
-2. If they use the **old** default, delete the setting from your settings file so it uses the system default.
+1. Check your settings to see if they are set to either the **old** or the **new** default.
+2. If they use either the **old** or the **new** default, delete the setting from your settings file so it uses the system default.
 </div>
 <!-- End 2.11.0 section -->
 
@@ -576,8 +597,8 @@ Setting | Old default | New default
 `$theme-alert-icon-size` | `4` | `5`
 
 ###### What to do
-1. Check your settings to see if they are set to the **old** default.
-2. If they use the **old** default, delete the setting from your settings file so it uses the system default.
+1. Check your settings to see if they are set to either the **old** or the **new** default.
+2. If they use either the **old** or the **new** default, delete the setting from your settings file so it uses the system default.
 
 {:.border-top-2px.border-base-lighter.padding-top-2}
 ##### <span class="usa-tag bg-accent-cool-darker">Markup</span> Update footer logo headings to use proper semantics.
@@ -829,7 +850,7 @@ Using individual component packages instead of the `uswds` bundle package can re
 
 2. **Determine which packages your project needs.** The process of determining which packages your project needs is not automatic. Most projects will need to do a little work to identify the components their project uses.
    
-    A brute-force method to determine which packages your project uses is to search your codebase for use of a key class name associated with that component, like `usa-accordion` for accordions. All `usa-` prefixed packages use the same name as their CSS class. For reference, all the available packages in USWDS 3.0 are listed in the [table below](#available-packages).
+    A brute-force method to determine which packages your project uses is to search your codebase for use of a key class name associated with that component, like `usa-accordion` for accordions. All `usa-` prefixed packages use the same name as their CSS class. For reference, all the available packages in USWDS 3.0 are listed in the [table below](#available-packages). Search package-by-package for instances of the package or search your codebase for instances of `usa-` and make a running list of all the packages you use.
 
 3. **Load the your project's necessary component packages in your Sass entry point.** If you find a hit for the class name in your codebase, include the relevant package in your Sass entry point. 
 
@@ -844,7 +865,9 @@ Using individual component packages instead of the `uswds` bundle package can re
 
     Each package is smart enough to include any dependent package it needs to display properly.
 
-4. **Remove your reference to the uswds bundle package.** Once all of your project's component packages are loaded, you can safely remove the `uswds` package reference from your entry point.
+4. Many projects will need to use the utilities package (`uswds-utilities`) and the global package (`uswds-global`). If your site uses utilities, be sure to include the utilites package. The global package includes normalize. If you compile your styles and see improper spacing around many elements (like around the perimeter of the page), be sure to include `uswds-global`.
+
+5. **Remove your reference to the uswds bundle package.** Once all of your project's component packages are loaded, you can safely remove the `uswds` package reference from your entry point.
 ```diff
 - @forward "uswds";
 + @forward "usa-accordion";
@@ -933,7 +956,7 @@ $theme-utility-breakpoints: (
 ),
 ```
 
-For each breakpoint set to true in your project, search for its usage in your codebase by searching for the **breakpoint name** + a colon (`:`). SO, to search for the `tablet-lg` breakpoint, search for `tablet-lg:`. If that breakpoint does not appear, you can set the value to `false`.
+For each breakpoint set to true in your project, search for its usage in your codebase by searching for the **breakpoint name** + a colon (`:`). So, to search for the `tablet-lg` breakpoint, search for `tablet-lg:`. If that breakpoint does not appear, you can set the value to `false`.
 
 #### Using package source
 

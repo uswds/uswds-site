@@ -11,7 +11,7 @@ var timeout;
  * top of the section. This interrupts that and positions section
  * title correctly.
  */
-function scrollToTopForHash() {
+function scrollToTopForHash () {
   var hash = window.location.hash.substr(1);
   var scrollTopPos = hash ? calculateAnchorPosition(hash) : 0;
 

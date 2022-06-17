@@ -1,6 +1,6 @@
 name: Bug Report 🐞
-description: Report a bug and help USWDS improve.
-title: "USWDS - Bug: [YOUR TITLE]"
+description: Report a bug and help improve our documentation.
+title: "USWDS-Site - Bug: [YOUR TITLE]"
 labels: ['Type: Bug','Status: Triage','Needs: Confirmation']
 body:
   - type: textarea
@@ -21,19 +21,12 @@ body:
         3. Scroll down to '....'
         4. See error...
     validations:
-      required: true
+      required: false
   - type: textarea
     id: expectation
     attributes:
       label: Expected Behavior
       description: Add a clear and concise description of what you expected to happen.
-    validations:
-      required: true
-  - type: textarea
-    id: code
-    attributes:
-      label: Related code
-      description: If available, include relevant code snippets or a link to a demo of the bug.
     validations:
       required: false
   - type: textarea
@@ -47,9 +40,8 @@ body:
     id: system
     attributes:
       label: System setup
-      description: Provide your system details. Be sure to include your USWDS version, device, operating system, and browser (with version).
+      description: Provide your system details. Be sure to include your device, operating system, and browser (with version).
       placeholder: |
-        - USWDS version:
         - Device:
         - Operating system:
         - Browser and version:
@@ -74,6 +66,6 @@ body:
           required: true
         - label:
             I checked the [current
-              issues](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Bug%22) for
+              issues](https://github.com/uswds/uswds-site/issues) for
               duplicate bug reports.
           required: true

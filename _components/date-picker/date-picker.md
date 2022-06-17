@@ -21,7 +21,7 @@ implementation:
       description: The date picker will not allow a date selection before this date. The date should be in the format `YYYY-MM-DD`. Typing in an earlier date will cause native form validation error. A default min date or `0000-01-01` is used as a default.
     - property: "`data-max-date`"
       element: .usa-date-picker
-      description: The date picker will not allow a date selection after this date. The date should be in the format `YYYY-MM-DD`. Typing in an later date will cause native form validation error. There is no default maximum date.
+      description: The date picker will not allow a date selection after this date. The date should be in the format `YYYY-MM-DD`. Typing in a later date will cause native form validation error. There is no default maximum date.
     - property: "`data-range-date`"
       element: .usa-date-picker
       description: The date picker will show a range selection from the range date. The date should be in the format `YYYY-MM-DD`.

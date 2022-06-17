@@ -1,197 +1,84 @@
-const { formatters } = require("stylelint");
-const autoprefixer = require("autoprefixer");
 const concat = require("gulp-concat");
 const csso = require("postcss-csso");
-const dutil = require("./doc-util");
 const gulp = require("gulp");
-const gulpStylelint = require("gulp-stylelint");
+const stylelint = require("stylelint");
 const postcss = require("gulp-postcss");
-const sass = require("gulp-dart-scss");
 const sourcemaps = require("gulp-sourcemaps");
-const task = "sass";
 
-const dev_plugins = [autoprefixer({ cascade: false })];
-
-const prod_plugins = [csso({ forceMediaMerge: false })];
-
-const uswds_required_paths = [
-  "./node_modules/@uswds",
-  "./node_modules/@uswds/uswds/packages",
-];
-
-const uswds_site_paths = "./css/settings";
-
-const sass_include_paths = uswds_required_paths.concat([uswds_site_paths]);
-
-const handleError = (error) => {
-  dutil.logError.bind(this)(error);
-  this.emit("end");
+const postcssPlugins = {
+  prod: [csso({ forceMediaMerge: false })],
 };
 
-gulp.task("build-sass-fonts", () => {
+const entrypoints = {
+  css: {
+    components: "./assets/css/uswds-components.css",
+    custom: "./assets/css/uswds-custom.css",
+    fonts: "./assets/css/uswds-fonts.css",
+    next: "./assets/css/uswds-next.css",
+    utilities: "./assets/css/uswds-utilities.css",
+  },
+};
+
+/**
+ * Processes multiple CSS files (everything except Next) and minifies for production for main site.
+ * @param {*} cssEntrypoints - array of CSS entrypoints
+ * @param {*} outputName - string of output file name
+ * @returns - outputName.css
+ */
+function compileProdStyles(
+  cssEntrypoints,
+  outputName = "styles.css"
+) {
+  // Entry points for main site (everything except Next)
+  cssEntrypoints = [
+    entrypoints.css.components,
+    entrypoints.css.custom,
+    entrypoints.css.fonts,
+    entrypoints.css.utilities
+  ];
+
   return gulp
-    .src("./css/uswds-fonts.scss")
-    .pipe(sourcemaps.init({ largeFile: true }))
-    .pipe(
-      sass({
-        includePaths: sass_include_paths,
-        outputStyle: "expanded",
-      }).on("error", handleError)
-    )
-    .pipe(postcss(dev_plugins))
-    .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("assets/css"))
-    .pipe(gulp.dest("_site/assets/css"));
-});
-
-gulp.task("build-sass-components", () => {
-  return gulp
-    .src("./css/uswds-components.scss")
-    .pipe(sourcemaps.init({ largeFile: true }))
-    .pipe(
-      sass({
-        includePaths: sass_include_paths,
-        outputStyle: "expanded",
-      }).on("error", handleError)
-    )
-    .pipe(postcss(dev_plugins))
-    .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("assets/css"))
-    .pipe(gulp.dest("_site/assets/css"));
-});
-
-gulp.task("build-sass-custom", () => {
-  return gulp
-    .src("./css/uswds-custom.scss")
-    .pipe(sourcemaps.init({ largeFile: true }))
-    .pipe(
-      sass({
-        includePaths: sass_include_paths,
-        outputStyle: "expanded",
-      }).on("error", handleError)
-    )
-    .pipe(postcss(dev_plugins))
-    .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("assets/css"))
-    .pipe(gulp.dest("_site/assets/css"));
-});
-
-gulp.task("build-next-sass", () => {
-  return gulp
-    .src("./css/uswds-next.scss")
-    .pipe(sourcemaps.init({ largeFile: true }))
-    .pipe(
-      sass({
-        includePaths: sass_include_paths,
-        outputStyle: "expanded",
-      }).on("error", handleError)
-    )
-    .pipe(postcss(dev_plugins))
-    .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("assets/css"))
-    .pipe(gulp.dest("_site/assets/css"));
-});
-
-gulp.task("build-sass-utilities", () => {
-  return gulp
-    .src("./css/uswds-utilities.scss")
-    .pipe(sourcemaps.init({ largeFile: true }))
-    .pipe(
-      sass({
-        includePaths: sass_include_paths,
-        outputStyle: "expanded",
-      }).on("error", handleError)
-    )
-    .pipe(postcss(dev_plugins))
-    .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("assets/css"))
-    .pipe(gulp.dest("_site/assets/css"));
-});
-
-gulp.task(
-  "build-sass-dev",
-  gulp.parallel(
-    "build-sass-fonts",
-    "build-sass-components",
-    "build-sass-custom",
-    "build-sass-utilities"
-  )
-);
-
-gulp.task(
-  "build-next-dev",
-  gulp.parallel(
-    "build-sass-fonts",
-    "build-sass-components",
-    "build-next-sass",
-    "build-sass-utilities"
-  )
-);
-
-gulp.task("build-sass-prod", () => {
-  return gulp
-    .src([
-      "./assets/css/uswds-fonts.css",
-      "./assets/css/uswds-components.css",
-      "./assets/css/uswds-custom.css",
-      "./assets/css/uswds-utilities.css",
-    ])
+    .src(cssEntrypoints)
     .pipe(
       sourcemaps.init({
         largeFile: true,
         loadMaps: true,
       })
     )
-    .pipe(concat("styles.css"))
-    .pipe(postcss(prod_plugins))
+    .pipe(concat(outputName))
+    .pipe(postcss(postcssPlugins.prod))
     .pipe(sourcemaps.write("."))
     .pipe(gulp.dest("assets/css"))
     .pipe(gulp.dest("_site/assets/css"));
-});
+}
 
-gulp.task("build-next-prod", () => {
-  return gulp
-    .src([
-      "./assets/css/uswds-fonts.css",
-      "./assets/css/uswds-components.css",
-      "./assets/css/uswds-custom.css",
-      "./assets/css/uswds-utilities.css",
-      "./assets/css/uswds-next.css",
-    ])
-    .pipe(
-      sourcemaps.init({
-        largeFile: true,
-        loadMaps: true,
-      })
-    )
-    .pipe(concat("styles-next.css"))
-    .pipe(postcss(prod_plugins))
-    .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("assets/css"))
-    .pipe(gulp.dest("_site/assets/css"));
-});
+/**
+ * Uses compileProdStyles() function to compile **all** CSS for Next Report
+ */
+function compileProdNextStyles() {
+  // Object.values returns an array of values from our entrypoints.css object
+  const allCSSEntrypoints = Object.values(entrypoints.css);
 
-gulp.task(
-  "build-sass",
-  gulp.series(
-    "build-sass-dev",
-    "build-next-dev",
-    "build-sass-prod",
-    "build-next-prod"
-  )
-);
+  return compileProdStyles(allCSSEntrypoints, "styles-next.css");
+}
 
-gulp.task("scss-lint", (done) => {
-  if (!cFlags.test) {
-    dutil.logMessage("scss-lint", "Skipping linting of Sass files.");
-    return done();
-  }
+async function lint(done) {
+  const { errored, output } = await stylelint.lint({
+    files: [`./css/**/*.scss`],
+    formatter: "string",
+  });
 
-  return gulp.src(["./css/**/*.scss"]).pipe(
-    gulpStylelint({
-      reporters: [{ formatter: "string", console: true }],
-    })
-  );
-});
+  done(errored ? new Error(output) : null);
+}
 
-gulp.task(task, gulp.series("build-sass"));
+/**
+ * Tasks for compiling Site & Next report styles; both dev & prod
+ */
+const prodStyles = compileProdStyles;
+const prodNextStyles = compileProdNextStyles;
+
+module.exports = {
+  prodStyles,
+  prodNextStyles,
+  lint,
+};

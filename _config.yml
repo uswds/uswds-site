@@ -9,7 +9,7 @@ federalist_component_preview: "iframe.html?id="
 federalist_release_prefix: "release-"
 meta:
   og:image: /img/uswds-logo/lg-black.png
-touchpoints: 
+touchpoints:
   active: true
   hosted: true
 # this is for pages that don't have a permalink (primarily posts)

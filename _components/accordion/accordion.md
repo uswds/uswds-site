@@ -20,6 +20,7 @@ subnav:
 - text: Package
   href: '#accordion-package'
 title: Accordion
+type: component
 variants:
   - variant: "`.usa-accordion--bordered`"
     description: Display a border around accordion content.

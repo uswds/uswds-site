@@ -69,6 +69,7 @@ ready(() => {
     links: null,
     headings: null,
     intersectionOptions: {
+      root: null,
       rootMargin: '0px',
       threshold: 1,
     },
@@ -90,14 +91,15 @@ ready(() => {
 
     handleLinkClick(evt) {
       evt.preventDefault();
-      let id = evt.target.getAttribute('href').replace('#', '');
+      //let id = evt.target.getAttribute('href').replace('#', '');
+      let id = evt.target.hash.replace('#', '');
 
       let section = this.headings.find((heading) => {
         return heading.getAttribute('id') === id;
       });
 
       section.setAttribute('tabindex', -1);
-      section.focus();
+      //section.focus();
 
       window.scroll({
         behavior: motionQuery.matches ? 'instant' : 'smooth',

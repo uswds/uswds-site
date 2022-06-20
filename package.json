@@ -164,6 +164,6 @@
   },
   "snyk": true,
   "dependencies": {
-    "uswds": "github:uswds/uswds#mm-inclusive-patterns-in-page-navigation"
+    "uswds": "github:uswds/uswds#develop"
   }
 }

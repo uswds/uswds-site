@@ -1,13 +1,13 @@
 name: Bug Report 🐞
-description: Report a bug and help improve our documentation.
+description: Help improve our documentation by reporting bugs, typos, and unclear content.
 title: "USWDS-Site - Bug: [YOUR TITLE]"
-labels: ['Type: Bug','Status: Triage','Needs: Confirmation']
+labels: ['Type: Bug','Status: Triage']
 body:
   - type: textarea
     id: problem
     attributes:
       label: Describe the bug
-      description: Add a clear and concise description of the bug. Let us know if it impacts major or minor functionality and if you have workaround.
+      description: Add a clear and concise description of the bug. Let us know if this bug has major or minor impact and if you have a workaround.
     validations:
       required: true
   - type: textarea
@@ -40,7 +40,7 @@ body:
     id: system
     attributes:
       label: System setup
-      description: Provide your system details. Be sure to include your device, operating system, and browser (with version).
+      description: If this bug occurs only on a specific browser or device, provide your system details. Be sure to include your device, operating system, and browser (with version).
       placeholder: |
         - Device:
         - Operating system:

@@ -298,7 +298,7 @@ body {
     &::before {
       @include u-square($logo-size-mobile);
       content: "";
-      background-image: url("../img/uswds-logo/4c-lg-on-white.png");
+      background-image: url("../img/webp/uswds-logo/4c-lg-on-white.webp");
       background-image: url("../img/uswds-logo/4c-lg-on-white.svg");
       background-repeat: no-repeat;
       background-size: 100% auto;
@@ -1525,7 +1525,7 @@ code[class*="language-plaintext"] {
 
 .hero {
   @include at-media("tablet-lg") {
-    background-image: url("#{$site-image-path}/home/hero.png");
+    background-image: url("#{$site-image-path}/webp/home/hero.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right units(5) center;
@@ -1628,7 +1628,7 @@ code[class*="language-plaintext"] {
 
   &::before {
     @include u-square(1.5);
-    background: url("#{$image-path}/icon-download.png") no-repeat 0 0;
+    background: url("#{$image-path}/webp/icon-download.webp") no-repeat 0 0;
     background: url("#{$image-path}/icon-download.svg") no-repeat 0 0;
     background-size: 100%;
     content: "";
@@ -1728,7 +1728,7 @@ code[class*="language-plaintext"] {
   width: 100%;
 
   .usa-button {
-    background-image: url("#{$site-image-path}/angle-arrow-left-inverse.png");
+    background-image: url("#{$site-image-path}/webp/angle-arrow-left-inverse.webp");
     background-image: url("#{$site-image-path}/angle-arrow-left-inverse.svg");
     background-repeat: no-repeat;
     background-position: left units(2.5) center;
@@ -2437,7 +2437,7 @@ h6 + div:not(.usa-accordion__content):not(.usa-collection__meta-list) {
 
     .usa-logo__text {
       &::before {
-        background-image: url("../img/uswds-logo/4c-lg-on-black.png");
+        background-image: url("../img/webp/uswds-logo/4c-lg-on-black.webp");
         background-image: url("../img/uswds-logo/4c-lg-on-black.svg");
       }
     }
@@ -3471,7 +3471,7 @@ body {
   @include u-bg("base-lightest");
   @include u-padding-bottom(4);
   @include u-padding-x(0);
-  background-image: url("../img/introducing-uswds-2-0/feature-image.png");
+  background-image: url("../img/webp/introducing-uswds-2-0/feature-image.webp");
   background-repeat: no-repeat;
   background-position: 0 units(2);
   background-size: 100% auto;

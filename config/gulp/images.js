@@ -1,6 +1,7 @@
 var gulp = require("gulp");
 var dutil = require("./doc-util");
 var task = "images";
+const webp = require('gulp-webp');
 
 function copyDocImages() {
   dutil.logMessage(task, "Copying images from img/");
@@ -15,4 +16,15 @@ function logImages(done) {
   done();
 }
 
-exports.default = gulp.series(logImages, copyDocImages);
+function convertWebP() {
+  return gulp
+    .src('img/**/*.{png,jpg,jpeg}')
+    .pipe(
+      webp({
+        quality: 90
+      })
+    )
+  .pipe(gulp.dest('img/webp'));
+}
+
+exports.default = gulp.series(convertWebP, logImages, copyDocImages);

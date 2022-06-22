@@ -7,7 +7,7 @@ const build = require("./config/gulp/build");
 const images = require("./config/gulp/images").default;
 const js = require("./config/gulp/javascript");
 const sass = require("./config/gulp/sass");
-const webp = require('gulp-webp');
+
 /**
  * USWDS Compile Settings
  */
@@ -50,19 +50,6 @@ exports.sass = gulp.series(sass.lint, uswds.compileSass, this.sassProdStyles);
 exports.lintSass = sass.lint;
 
 exports.buildUSWDSComponents = build.buildUSWDSComponents;
-
-function convertWebP() {
-  return gulp
-    .src('img/**/*.{png,jpg,jpeg}')
-    .pipe(
-      webp({
-        quality: 90
-      })
-    )
-  .pipe(gulp.dest('img/webp'));
-}
-
-exports.convertImages = convertWebP;
 
 exports.build = gulp.series(
   build.cleanAssets,

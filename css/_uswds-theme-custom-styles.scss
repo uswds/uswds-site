@@ -95,6 +95,10 @@ body {
   color: color($site-ink);
 }
 
+img {
+  height: auto;
+}
+
 .layout-styleguide {
   @include u-bg($site-background-color);
 }

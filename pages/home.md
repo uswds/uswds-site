@@ -17,6 +17,8 @@ graphic_list:
       image:
         src: img/home/ui-component.svg
         alt:
+        width: 72
+        height: 72
       link:
         text: Browse components
         url: components
@@ -25,6 +27,8 @@ graphic_list:
       image:
         src: img/home/design-tokens.svg
         alt:
+        width: 72
+        height: 72
       link:
         text: View design tokens
         url: design-tokens
@@ -33,6 +37,8 @@ graphic_list:
       image:
         src: img/home/utilities.svg
         alt:
+        width: 72
+        height: 72
       link:
         text: Build with utilities
         url: utilities
@@ -41,6 +47,8 @@ graphic_list:
       image:
         src: img/home/page-templates.svg
         alt:
+        width: 72
+        height: 72
       link:
         text: Start from a template
         url: page-templates
@@ -51,15 +59,15 @@ graphic_list:
     <h2 class="font-lang-xl margin-y-0 line-height-serif-2">Showcase</h2>
     <div class="grid-row grid-gap tablet:margin-top-3">
       <div class="tablet:grid-col">
-        <img src="{{ site.baseurl }}/img/webp/home/showcase/vote.webp" alt="">
+        <img src="{{ site.baseurl }}/img/webp/home/showcase/vote.webp" alt="Preview image of vote.gov home page" width="640" height="360">
         <a href="https://vote.gov/">vote.gov</a>
       </div>
       <div class="tablet:grid-col">
-        <img src="{{ site.baseurl }}/img/webp/home/showcase/va-healthcare.webp" alt="">
+        <img src="{{ site.baseurl }}/img/webp/home/showcase/va-healthcare.webp" alt="Preview image of Veterans affairs home page" width="640" height="360">
         <a href="https://www.va.gov/">U.S. Department of Veterans Affairs</a>
       </div>
       <div class="tablet:grid-col">
-        <img src="{{ site.baseurl }}/img/webp/home/showcase/nasa.webp" alt="">
+        <img src="{{ site.baseurl }}/img/webp/home/showcase/nasa.webp" alt="Preview image of NASA Glenn Research Center home page" width="640" height="360">
         <a href="https://www1.grc.nasa.gov/">NASA Glenn Research Center</a>
       </div>
     </div>
@@ -68,15 +76,15 @@ graphic_list:
   <div class="grid-container tablet:margin-top-6">
     <div class="grid-row grid-gap">
       <div class="tablet:grid-col">
-        <img src="{{ site.baseurl }}/img/webp/home/showcase/pubmed.webp" alt="">
+        <img src="{{ site.baseurl }}/img/webp/home/showcase/pubmed.webp" alt="Preview image of NASA Glenn Research Center home page" width="640" height="360">
         <a class="font-lang-md" href="https://www.ncbi.nlm.nih.gov/labs/pubmed/">PubMed Labs | U.S. National Library of Medicine</a>
       </div>
       <div class="tablet:grid-col">
-        <img src="{{ site.baseurl }}/img/webp/home/showcase/seedfund.webp" alt="">
+        <img src="{{ site.baseurl }}/img/webp/home/showcase/seedfund.webp" alt="Preview image of Seed Fund home page" width="640" height="360">
         <a href="https://seedfund.nsf.gov/">America’s Seed Fund</a>
       </div>
       <div class="tablet:grid-col">
-        <img src="{{ site.baseurl }}/img/webp/home/showcase/plainlanguage.webp" alt="">
+        <img src="{{ site.baseurl }}/img/webp/home/showcase/plainlanguage.webp" alt="Preview image of Plain Language home page" width="640" height="360">
         <a href="https://plainlanguage.gov/">Plain Language</a>
       </div>
     </div>

@@ -27,4 +27,5 @@ function convertWebP() {
   .pipe(gulp.dest('img/webp'));
 }
 
-exports.default = gulp.series(convertWebP, logImages, copyDocImages);
+exports.default = gulp.series(logImages, copyDocImages);
+exports.convert = gulp.series(convertWebP);

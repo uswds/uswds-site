@@ -4,7 +4,7 @@ const uswds = require("@uswds/compile");
 // Bring in individual Gulp configurations
 //
 const build = require("./config/gulp/build");
-const images = require("./config/gulp/images").default;
+const images = require("./config/gulp/images");
 const js = require("./config/gulp/javascript");
 const sass = require("./config/gulp/sass");
 
@@ -36,7 +36,9 @@ exports.watchSass = uswds.watch;
  * Custom tasks
  */
 exports.cleanAssets = build.cleanAssets;
-exports.image = images;
+exports.copyDocImages = images.default;
+// Convert all png/jpg files to WebP format
+exports.convertImages = images.convert;
 
 exports.js = gulp.series(js.lint, js.build);
 exports.lintJS = js.lint;
@@ -57,7 +59,7 @@ exports.build = gulp.series(
   uswds.copyAssets,
   uswds.compile,
   this.js,
-  this.image,
+  this.copyDocImages,
   this.sassProdStyles
 );
 

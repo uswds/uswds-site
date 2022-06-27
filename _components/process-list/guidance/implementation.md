@@ -7,4 +7,4 @@
 - **Pending segments can use gray or complete family.** Pending segments can use gray, just as with pending text, but they can also use a light grade of the complete color family.
 - **The current color can be a contrast color.** The current color can be in the same family as the complete color or it can be a contrast color that distinguishes itself from the complete color.
 - **Thicker segments use wider counter gaps.** It can be distracting to use a thick segment with a narrow counter gap. Use a gap of at least 0.5 units on a 1 unit segment.
-- **Avoid wide counter gaps.** Counter gaps cap improve legibility of the counters, but wide counter gaps hurt the overall continuity between the counters and the segments.
+- **Avoid wide counter gaps.** Counter gaps can improve legibility of the counters, but wide counter gaps hurt the overall continuity between the counters and the segments.

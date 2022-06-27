@@ -16,15 +16,18 @@ function logImages(done) {
   done();
 }
 
+// Convert png and jpg images into WebP format
+// WIP: Currently converts only images in home/showcase
+// Todo: When ready to convert all images, update src glob to 'img/**/*.{png,jpg,jpeg}' and dest to 'img/webp'
 function convertWebP() {
   return gulp
-    .src('img/**/*.{png,jpg,jpeg}')
+    .src('img/home/showcase/*.{png,jpg,jpeg}')
     .pipe(
       webp({
         quality: 90
       })
     )
-  .pipe(gulp.dest('img/webp'));
+  .pipe(gulp.dest('img/webp/home/showcase'));
 }
 
 exports.default = gulp.series(logImages, copyDocImages);

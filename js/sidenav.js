@@ -64,7 +64,7 @@ function ready(fn) {
 ready(() => {
   const motionQuery = window.matchMedia('(prefers-reduced-motion)');
 
-  const TableOfContents = {
+  const InPageNavigation = {
     container: document.querySelector('.in-page-navigation'),
     links: null,
     headings: null,
@@ -91,7 +91,6 @@ ready(() => {
 
     handleLinkClick(evt) {
       evt.preventDefault();
-      //let id = evt.target.getAttribute('href').replace('#', '');
       let id = evt.target.hash.replace('#', '');
 
       let section = this.headings.find((heading) => {
@@ -99,7 +98,7 @@ ready(() => {
       });
 
       section.setAttribute('tabindex', -1);
-      //section.focus();
+      section.focus();
 
       window.scroll({
         behavior: motionQuery.matches ? 'instant' : 'smooth',
@@ -165,5 +164,5 @@ ready(() => {
     },
   };
 
-  TableOfContents.init();
+  InPageNavigation.init();
 });

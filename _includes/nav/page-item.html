@@ -19,12 +19,6 @@
       {% assign _links = nil %}
     {% endif %}
     {% if _links -%}
-    <ul class="{% if sidenav %}usa-sidenav__sublist{% else %}usa-nav__submenu{% endif %}">{%
-      include nav/list.html
-      links=_links
-      text_key=_text_key
-      href_key=_href_key
-    %}</ul>
     {% endif %}
   {% endunless %}
 {% endif %}

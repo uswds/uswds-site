@@ -10,7 +10,7 @@ The U.S. Web Design System documentation is built using Jekyll for the file fram
 
 ### Before you start
 
-Recommended before install:
+Recommended before install: 
 
 1. Ruby Version Manager - RVM [Installation guides](https://rvm.io/rvm/install)
 1. Node Version Manager - NVM [Installation guides](https://github.com/nvm-sh/nvm#installing-and-updating)

@@ -7,7 +7,7 @@ permalink: /components/form/
 redirect_from:
 - /form-controls/
 - /components/form-controls/
-layout: styleguide
+layout: in-page-nav
 type: component
 title: Form
 category: Components

@@ -9,7 +9,7 @@ permalink: /components/table/
 redirect_from:
 - /tables/
 - /components/tables/
-layout: styleguide
+layout: in-page-nav
 subnav:
 - text: Borderless table
   href: '#borderless-table'

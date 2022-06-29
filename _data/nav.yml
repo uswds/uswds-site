@@ -79,8 +79,10 @@ Components:
 Patterns:
   - text: Patterns
     href: /patterns/
-  - href: /patterns/deia/
-  - href: /patterns/select-language/
+  - text: Inclusivity
+    href: /patterns/inclusivity/
+  - text: Complete a profile
+    href: /patterns/complete-a-profile/
 
 How to use USWDS:
   - href: /how-to-use-uswds/

@@ -1,10 +1,10 @@
-const chroma = require('chroma-js');
-const yaml = require('yamljs');
-const fs = require('fs');
-const path = require('path');
-const jsonFormat = require('json-format');
-const args = require('minimist')(process.argv.slice(2));
-const colors = require('colors');
+const chroma = require("chroma-js");
+const yaml = require("yamljs");
+const fs = require("fs");
+const path = require("path");
+const jsonFormat = require("json-format");
+const args = require("minimist")(process.argv.slice(2));
+const colors = require("colors");
 
 const debug = (enabled) => {
   if (enabled) {
@@ -19,21 +19,17 @@ const debug = (enabled) => {
 let logger;
 
 const SWITCHES = {
-  LUMINANCE: 'l',
-  APPLY_LUM: 'al',
-  CONTRAST: 'c',
-  CONTRAST_ALL: 'ca',
-  FAMILY: 'f',
-  DEBUG: 'd',
+  LUMINANCE: "l",
+  APPLY_LUM: "al",
+  CONTRAST: "c",
+  CONTRAST_ALL: "ca",
+  FAMILY: "f",
+  DEBUG: "d",
 };
 
-const uswdsTokens = yaml.load(path.join(
-  __dirname,
-  '../',
-  '_data',
-  '/tokens',
-  '/color.yml'
-));
+const uswdsTokens = yaml.load(
+  path.join(__dirname, "../", "_data", "/tokens", "/color.yml")
+);
 const systemColors = uswdsTokens.system;
 
 class Color {
@@ -73,8 +69,7 @@ class ColorFamily {
 
 class ContrastResult {
   constructor({ ratio, base, contrast }) {
-    this.ratio = ratio,
-    this.base = base;
+    (this.ratio = ratio), (this.base = base);
     this.contrast = contrast;
   }
 
@@ -101,28 +96,30 @@ class ContrastResult {
   }
 }
 
-const COLORS = Object.keys(systemColors)
-  .reduce((memo, colorName) => {
-    const colorFamily = systemColors[colorName];
-    const safeColors = colorFamily
-      .filter(color => color.value)
-      .reduce((memo, { token, value }) => {
-        const colorMagicNumber = /(\d+)/.exec(token)[0];
+const COLORS = Object.keys(systemColors).reduce((memo, colorName) => {
+  const colorFamily = systemColors[colorName];
+  const safeColors = colorFamily
+    .filter((color) => color.value)
+    .reduce((memo, { token, value }) => {
+      const colorMagicNumber = /(\d+)/.exec(token)[0];
 
-        return [...memo, new Color({ grade: colorMagicNumber, value, name: colorName })];
-      }, []);
+      return [
+        ...memo,
+        new Color({ grade: colorMagicNumber, value, name: colorName }),
+      ];
+    }, []);
 
-    return {
-      ...memo,
-      [colorName]: new ColorFamily({
-        name: colorName,
-        colors: safeColors
-      }),
-    };
-  }, {});
+  return {
+    ...memo,
+    [colorName]: new ColorFamily({
+      name: colorName,
+      colors: safeColors,
+    }),
+  };
+}, {});
 
-const WHITE = new Color({ grade: 0, value: '#ffffff', name: 'white' });
-const BLACK = new Color({ grade: 100, value: '#000000', name: 'black' });
+const WHITE = new Color({ grade: 0, value: "#ffffff", name: "white" });
+const BLACK = new Color({ grade: 100, value: "#000000", name: "black" });
 const MIN_CONTRAST_AA = 4.5;
 const MIN_CONTRAST_AA_LARGE = 3;
 
@@ -137,7 +134,8 @@ const contrastBetween = (colorA, colorB) => {
   return chroma.contrast(colorA, colorB);
 };
 
-const isAALargeCompliant = (contrastObj) => contrastObj.ratio >= MIN_CONTRAST_AA_LARGE;
+const isAALargeCompliant = (contrastObj) =>
+  contrastObj.ratio >= MIN_CONTRAST_AA_LARGE;
 const isAACompliant = (contrastObj) => contrastObj.ratio >= MIN_CONTRAST_AA;
 
 /**
@@ -151,7 +149,7 @@ const luminanceForFamily = (family) => {
     return {
       colorName: formatColorName(family.name, color.grade),
       relativeLum: chroma(color.value).luminance(),
-    }
+    };
   });
 };
 
@@ -169,15 +167,14 @@ const applyLuminance = (colorFamily) => {
 
     if (targetColor) {
       const nextHex = chroma(targetColor.value)
-        .luminance(chroma(color.value)
-        .luminance())
+        .luminance(chroma(color.value).luminance())
         .hex();
 
       memo = [...memo, { grade: targetColor.grade, value: nextHex }];
     }
 
     return memo;
-  },[]);
+  }, []);
 };
 
 /**
@@ -198,7 +195,7 @@ const contrastResultFactory = (baseColor, contrastColor) =>
   });
 
 const contrastForFamily = (colorFamily, familyB = null) => {
-  const { name } = colorFamily
+  const { name } = colorFamily;
   const nextColorFamily = familyB ? familyB : colorFamily;
   const output = [];
 
@@ -220,7 +217,9 @@ const contrastForFamily = (colorFamily, familyB = null) => {
 
     while (adjustedGrade >= 0) {
       if (adjustedGrade === 0) {
-        logger(`Comparing color grade ${formatColorName(name, grade)} with white.`);
+        logger(
+          `Comparing color grade ${formatColorName(name, grade)} with white.`
+        );
         contrastResult = contrastResultFactory(color, WHITE);
       } else {
         const nextColor = nextColorFamily.findByGrade(adjustedGrade);
@@ -229,7 +228,9 @@ const contrastForFamily = (colorFamily, familyB = null) => {
           break;
         }
 
-        logger(`Comparing color grade ${color.toString()} with ${nextColor.toString()}`);
+        logger(
+          `Comparing color grade ${color.toString()} with ${nextColor.toString()}`
+        );
         contrastResult = contrastResultFactory(color, nextColor);
       }
 
@@ -253,7 +254,9 @@ const contrastForFamily = (colorFamily, familyB = null) => {
           break;
         }
 
-        logger(`Comparing color grade ${color.toString()} with ${nextColor.toString()}`);
+        logger(
+          `Comparing color grade ${color.toString()} with ${nextColor.toString()}`
+        );
         contrastResult = contrastResultFactory(color, nextColor);
       }
 
@@ -281,9 +284,11 @@ const reportContrastErrors = (colorFamily) => {
     console.error(`Errors found in color family ${colorFamily.name}!\n`.red);
     console.error(jsonFormat(contrastErrors));
   } else {
-    console.log(`No contrast errors found for color family ${colorFamily.name}!\n`.green);
+    console.log(
+      `No contrast errors found for color family ${colorFamily.name}!\n`.green
+    );
   }
-}
+};
 
 logger = debug(args[SWITCHES.DEBUG]);
 
@@ -305,7 +310,9 @@ if (args[SWITCHES.CONTRAST_ALL]) {
   const family = COLORS[args[SWITCHES.FAMILY]];
 
   if (!family) {
-    console.log('Command requires a valid color family name to apply luminance to!'.red);
+    console.log(
+      "Command requires a valid color family name to apply luminance to!".red
+    );
     process.exit();
   }
 
@@ -314,7 +321,7 @@ if (args[SWITCHES.CONTRAST_ALL]) {
   const family = COLORS[args[SWITCHES.FAMILY]];
 
   if (!family) {
-    console.log('Luminance command requires a valid color family name!'.red);
+    console.log("Luminance command requires a valid color family name!".red);
     process.exit();
   }
 

@@ -9,14 +9,13 @@ lead: Pattern guidance
 ---
 
 ## Patterns
-We envision empowered agency digital teams who share solutions and use effective human-centered design practices.
+Patterns
 
 {:.margin-top-4}
-## Our mission
-USWDS is a design system for the federal government. We make it easier to build accessible, mobile-friendly government websites.
+## Patterns 
+Consectetur adipiscing elit. Sodales morbi mollis neque, a, fermentum eget eget. Viverra nulla urna, sagittis purus ut venenatis integer consequat. Eget nam vitae risus, velit. Consectetur nibh ut ultrices interdum viverra malesuada dignissim. Massa felis, leo non morbi. Eu amet non urna eu felis fermentum in sed. In sit accumsan mattis turpis massa urna viverra. Cras sit auctor ut elit et mus feugiat vel. Massa fermentum tortor et, vulputate mauris tortor molestie urna. Faucibus mi, morbi ultricies adipiscing.
 
 {:.margin-top-4}
-## History
-USWDS was created by a collaborative team at [18F](https://18f.gsa.gov/) and the [U.S. Digital Service](https://www.usds.gov/) in 2015, under the guidance of an advisory board of talented, experienced government workers in the Consumer Financial Protection Bureau, Food and Drug Administration, Department of Veterans Affairs, Social Security Administration, Department of Education, Internal Revenue Service, and GSA.
 
-USWDS is a project of GSA’s [Technology Transformation Services](https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services), maintained by the Office of Solutions. Read about the [initial process](https://18f.gsa.gov/2015/09/28/web-design-standards/) as well as [where we’ve been and where we’re going](https://designsystem.digital.gov/whats-new/updates/2017/12/20/2017-where-weve-been-where-were-going/).
+## Patterns
+Consectetur adipiscing elit. Sodales morbi mollis neque, a, fermentum eget eget. Viverra nulla urna, sagittis purus ut venenatis integer consequat. Eget nam vitae risus, velit. Consectetur nibh ut ultrices interdum viverra malesuada dignissim. Massa felis, leo non morbi. Eu amet non urna eu felis fermentum in sed. In sit accumsan mattis turpis massa urna viverra. Cras sit auctor ut elit et mus feugiat vel. Massa fermentum tortor et, vulputate mauris tortor molestie urna. Faucibus mi, morbi ultricies adipiscing.

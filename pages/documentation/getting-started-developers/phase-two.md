@@ -67,6 +67,20 @@ In plain language, this code says:
   )
   ```
 
+    {: .site-note }
+    **Note:** Declare only existing `uswds-core` variables in this configuration.
+
+    If you receive the following error, it might be the result of improper configuration in this step. Confirm that all your declared variables exist inside `uswds-core` and try compiling again.
+```
+Error: This module was already loaded, so it can't be configured using "with".
+   ┌──> node_modules/@uswds/uswds/packages/uswds-core/src/styles/variables/_index.scss
+   │   @forward "project-defaults";
+   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^ new load
+   ╵
+   ┌──> node_modules/@uswds/uswds/packages/uswds-core/src/styles/functions/general/get-default.scss
+  │   @use "../../variables/project-defaults" as *;
+```
+
 - **Create the foundation**: Build all USWDS styles from these settings.
 
   The USWDS source code is the core of the design system. It contains all the styles for USWDS components as well as the design language of Sass tokens and functions used to build those components. USWDS source code has its own Sass entry point, which lives in the `node_modules` directory when you install USWDS with npm.

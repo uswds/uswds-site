@@ -54,7 +54,7 @@ In plain language, this code says:
 
 - **Get the instructions**: Get the USWDS settings that tell the design system how to build the styles. Settings are the first thing you need to include.
 
-  Any individual setting is a Sass variable. Each setting begins with the `$theme-` prefix, and we provide a list of all available settings [in the USWDS documentation]({{ site.baseurl }}/documentation/settings/). The following is an example of a simple settings file:
+  The Design System is built using a suite of customizable settings that you can pass custom values into via `@use "uswds-core" with ()`. An example of this configuration is shown in the code snippet below:
 
   {:.site-terminal}
   ```scss
@@ -67,8 +67,10 @@ In plain language, this code says:
   )
   ```
 
+  Each USWDS setting is a Sass variable that begins with the `$theme-` prefix, and we provide a list of all available settings [in the USWDS settings documentation]({{ site.baseurl }}/documentation/settings/).
+
     {: .site-note }
-    **Note:** Declare only existing `uswds-core` variables in this part of the configuration.
+    **Note:** This `uswds-core` configuration accepts only current `uswds-core` variables.
 
     Improper configuration of `uswds-core` can result in the error message below. If you receive this error, confirm that all your declared variables exist inside `uswds-core` and try compiling again.
 ```

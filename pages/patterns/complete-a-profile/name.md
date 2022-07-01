@@ -108,11 +108,17 @@ Related components
 </div>
 
 ## Imagery
-Wireframe: Multiple fields showing the ability to enter long/short names. 
 - Given name
 - Middle name
 - Family name
 - Full name (how you like to be addressed, such as Prof. Vee Smith or Darren Chung)
+
+<div class="grid-container margin-top-4">
+  <div class="grid-row">
+    <img src="{{ site.baseurl }}/img/patterns/name-pattern-preview.png" alt="">
+  </div>
+</div>
+
 
 ## References
 - <a href="https://web.library.yale.edu/cataloging/music/diacrit">Diacritics and special characters by language</a>, Yale University Library

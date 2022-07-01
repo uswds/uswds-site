@@ -3,7 +3,7 @@ title: Complete a profile
 permalink: /patterns/complete-a-profile/
 layout: styleguide
 category: Patterns
-lead: Complete a profile
+lead: Help a user to complete a profile
 subnav:
   - href: /patterns/complete-a-profile/name/
   - href: /patterns/complete-a-profile/date-of-birth/
@@ -13,4 +13,9 @@ subnav:
 ---
 
 ## Complete a profile
-Let's talk about completing a profile
+
+### Why this matters
+
+User profiles are central to a person's identity. A user profile may be integral to *proving* identity, 
+qualifying for and receiving support and services from the government, and ensuring that 
+effective communications methods are used to share information with the person creating a user profile.

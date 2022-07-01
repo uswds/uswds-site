@@ -27,7 +27,7 @@ tags:
 
 <h2 id="typesetting-with-uswds">Typesetting with USWDS</h2>
 <p>Typesetting controls the readability of a text with the size, style, and spacing of its type. It’s a function of microtypography (how text is styled within a text block) and macrotypography (how content elements are arranged on the page). The more readable a text is the more easily users can understand its content. Text with poor readability turns off readers and can make it challenging for them to stay focused.</p>
-<p>The U.S. Web Design System controls typesetting values with a token system. You can learn more about typesetting tokens in the <a href="{{ site.baseurl }}/design-tokens/typesetting/">Typesetting tokens</a> section and the <a href="{{ site.baseurl }}/utilities/">Utilities</a> section.</p>
+<p>The U.S. Web Design System controls typesetting values with a token system. You can learn more about typesetting tokens in the <a href="{{ site.baseurl }}/design-tokens/typesetting/overview/">Typesetting tokens</a> section and the <a href="{{ site.baseurl }}/utilities/">Utilities</a> section.</p>
 <p><a href="https://accessibility.digital.gov/visual-design/typography/"> Accessibility for Teams</a> also provides good guidance around typesetting.</p>
 
 ### Font size
@@ -50,7 +50,7 @@ Controlling the length of lines of text (also known as _measure_) helps readers�
 
 {:.usa-content-list}
 - **Most lines of text should be 45–90 characters.** The current standard range for readable line length is 45 ([measure 1]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token}) to 90 characters per line ([measure 5]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token}). A good target for long texts is 66 characters ([measure 2]({{ site.baseurl }}/design-tokens/typesetting/measure/){:.token}).
-- **Text with greater line height can have a longer measure.** Since of the function of measure is to help readers move from one line of text to another more naturally, the effects of a long measure can be lessened by increasing the space between lines. Thus, text with more space between lines can have somewhat longer line length.
+- **Text with greater line height can have a longer measure.** Since one of the functions of measure is to help readers move from one line of text to another more naturally, the effects of a long measure can be lessened by increasing the space between lines. Thus, text with more space between lines can have somewhat longer line length.
 - **Short passages can have measure outside the ideal range.** In contexts when users will be reading short passages of text (such as footnotes or alerts), you can safely set somewhat longer or shorter lines than usual.
 - **Large text can have a shorter measure.** Since larger text takes up more screen real estate, it may make sense to assign it a relatively small measure.
 - **Measure tokens.** The following three points are basic guidelines for selecting measure tokens:

@@ -9,10 +9,10 @@ lead: The name pattern makes it as easy as possible for users to enter their nam
 ## What problem does this solve?
 People have a wide variety of names in various formats. It can be confusing and alienating for them to enter their name if it doesn’t conform to the form fields provided, or if the form fields don’t support the characters, length, or language they require. At the same time, the name fields are often used as a primary form of identity validation, and so the agency  —  and privacy issues  — require that the information be entered in a specific and consistent way. 
 
-## When to use this pattern 
+### When to use this pattern 
 Follow this pattern when you need to ask for a user’s name as part of your service. Only ask for the name if you need it. 
 
-## What's the solution
+### What's the solution
 Provide multiple free-form fields that support a rich array of special characters and accents. Provide direction on how to complete the form and what to do if the name doesn’t fit into the provided format.
 
 
@@ -55,6 +55,7 @@ Provide multiple free-form fields that support a rich array of special character
 
 ## Considerations
 
+{:.margin-top-2}
 ### Whether you need this data
 <b>Confirm you need this information.</b> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. For example, if you aren’t validating identity, you might not need to collect someone’s name, since a username will meet the need for account login.
 
@@ -107,18 +108,52 @@ Related components
   </li>
 </div>
 
-## Imagery
-- Given name
-- Middle name
-- Family name
-- Full name (how you like to be addressed, such as Prof. Vee Smith or Darren Chung)
+## Pattern preview
 
-<div class="grid-container margin-top-4">
-  <div class="grid-row">
-    <img src="{{ site.baseurl }}/img/patterns/name-pattern-preview.png" alt="">
+<form class="usa-form usa-form--large">
+  <fieldset class="usa-fieldset">
+    <legend class="usa-legend usa-legend--large">Name</legend>
+    <p>
+      Required fields are marked with an asterisk (<abbr title="required" class="usa-hint usa-hint--required">*</abbr>).
+    </p>
+    <label class="usa-label" for="given-name">Given name
+      <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
+    <input class="usa-input usa-input--xl" id="given-name" name="first-name" required="" aria-required="true">
+    <label class="usa-label" for="middle-name">Middle name</label>
+    <input class="usa-input usa-input--xl" id="middle-name" name="middle-name">
+    <label class="usa-label" for="family-name">Family name
+      <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
+    <input class="usa-input usa-input--xl" id="family-name" name="last-name" required="" aria-required="true">
+      <label class="usa-label" for="last-name">Full name
+      <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
+    <input class="usa-input usa-input--xl" id="last-name" name="last-name" required="" aria-required="true">
+  </fieldset>
+</form>
+
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-4">
+  <button class="usa-accordion__button" aria-controls="accordion-pattern-preview-01" aria-expanded="true"><h2 id="accordion-preview">Pattern preview</h2></button>
+  <div id="accordion-pattern-preview-01" class="usa-accordion__content">
+    <form class="usa-form usa-form--large">
+      <fieldset class="usa-fieldset">
+        <legend class="usa-legend usa-legend--large">Name</legend>
+        <p>
+          Required fields are marked with an asterisk (<abbr title="required" class="usa-hint usa-hint--required">*</abbr>).
+        </p>
+        <label class="usa-label" for="given-name">Given name
+          <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
+        <input class="usa-input usa-input--xl" id="given-name" name="first-name" required="" aria-required="true">
+        <label class="usa-label" for="middle-name">Middle name</label>
+        <input class="usa-input usa-input--xl" id="middle-name" name="middle-name">
+        <label class="usa-label" for="family-name">Family name
+          <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
+        <input class="usa-input usa-input--xl" id="family-name" name="last-name" required="" aria-required="true">
+          <label class="usa-label" for="last-name">Full name
+          <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
+        <input class="usa-input usa-input--xl" id="last-name" name="last-name" required="" aria-required="true">
+      </fieldset>
+    </form>
   </div>
 </div>
-
 
 ## References
 - <a href="https://web.library.yale.edu/cataloging/music/diacrit">Diacritics and special characters by language</a>, Yale University Library

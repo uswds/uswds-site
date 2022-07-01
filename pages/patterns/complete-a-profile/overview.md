@@ -9,6 +9,7 @@ subnav:
   - href: /patterns/complete-a-profile/date-of-birth/
   - href: /patterns/complete-a-profile/gender-or-sex/
   - href: /patterns/complete-a-profile/preferred-pronouns/
+  - href: /patterns/complete-a-profile/address/
 ---
 
 ## Complete a profile

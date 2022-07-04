@@ -548,7 +548,7 @@ Related components
 </form>
 
 ## Related pattern
-<a href="/complete-a-profile/name/">Name</a>
+<a href="/patterns/complete-a-profile/name/">Name</a>
 
 ## References
 - <a href="https://maps.google.com/pluscodes/">Google Plus Codes</a>

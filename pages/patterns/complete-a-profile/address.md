@@ -36,7 +36,7 @@ Provide all the fields needed for a user to provide a physical address, even if 
           <ul>
             <li>Do support long text fields.</li>
             <li>Do support a rich array of <a href="https://web.library.yale.edu/cataloging/music/diacrit">diacritics, accents, and alternative characters</a>.</li>
-            <li>Do allow both upper and lowercase letters throughout each field. </a></li>
+            <li>Do allow both upper and lowercase letters throughout each field.</li>
             <li>Allow users to enter hyphens, apostrophes, special characters, and blank spaces in each name field.</li>
             <li>Do provide the Puerto Rican Urbanization field, unless your program does not serve Puerto Rico.</li>
             <li>If the armed forces and the U.S. territories are not included, you may want to provide a link to their resources for clarity.</li>
@@ -59,8 +59,6 @@ Provide all the fields needed for a user to provide a physical address, even if 
 </div>
 
 ## Considerations
-
-{:.margin-top-2}
 ### Whether you need this data
 <b>Confirm you need this information.</b> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
 
@@ -97,9 +95,6 @@ Related components
       </div>
     </div>
   </li>
-</div>
-
-<div class="usa-card-group flex-row margin-top-2">
   <li
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
@@ -122,55 +117,445 @@ Related components
 
 <form class="usa-form usa-form--large">
   <fieldset class="usa-fieldset">
-    <legend class="usa-legend usa-legend--large">Name</legend>
+    <legend class="usa-legend usa-legend--large">Mailing address</legend>
     <p>
-      Required fields are marked with an asterisk (<abbr title="required" class="usa-hint usa-hint--required">*</abbr>).
+      Required fields are marked with an asterisk (<abbr
+        title="required"
+        class="usa-hint usa-hint--required"
+        >*</abbr
+      >).
     </p>
-    <label class="usa-label" for="given-name">Given name
+    <label class="usa-label" for="mailing-address-1">Street address</label>
+    <input
+      class="usa-input"
+      id="mailing-address-1"
+      name="mailing-address-1"
+    />
+    <div class="grid-row grid-gap">
+      <div class="mobile-lg:grid-col-8">
+        <label class="usa-label" for="apt-suite-other">Unit type</label>
+        <div class="usa-combo-box">
+          <select
+            class="usa-select"
+            id="apt-suite-other"
+            name="apt-suite-other"
+          >
+            <option value>- Select -</option>
+            <option value="APT">APT - Apartment</option>
+            <option value="BSMT">BSMT - Basement</option>
+            <option value="BLDG">BLDG - Building</option>
+            <option value="DEPT">DEPT - Department</option>
+            <option value="FL">FL - Floor</option>
+            <option value="FRNT">FRNT - Front</option>
+            <option value="HNGR">HNGR - Hanger</option>
+            <option value="KEY">KEY - Key</option>
+            <option value="LBBY">LBBY - Lobby</option>
+            <option value="LOT">LOT - Lot</option>
+            <option value="LOWR">LOWR - Lower</option>
+            <option value="OFC">OFC - Office</option>
+            <option value="OTHER">Other</option>
+            <option value="PH">PH - Penthouse</option>
+            <option value="PIER">PIER - Pier</option>
+            <option value="REAR">REAR - Rear</option>
+            <option value="RM">RM - Room</option>
+            <option value="SIDE">SIDE - Side</option>
+            <option value="SLIP">SLIP - Slip</option>
+            <option value="SPC">SPC - Space</option>
+            <option value="STOP">STOP - Stop</option>
+            <option value="STE">STE - Suite</option>
+            <option value="TRLR">TRLR - Trailer</option>
+            <option value="UNAVAILABLE">Unable to determine</option>
+            <option value="UNIT">UNIT - Unit</option>
+            <option value="UPPR">UPPR - Upper</option>
+          </select>
+        </div>
+      </div>
+      <div class="mobile-lg:grid-col-4">
+        <label class="usa-label" for="apt-floor-suite-no">Unit number</label>
+        <input
+          class="usa-input"
+          id="apt-floor-suite-no"
+          name="apt-floor-suite-no"
+        />
+      </div>
+    </div>
+    <label class="usa-label" for="city">City
       <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
-    <input class="usa-input usa-input--xl" id="given-name" name="first-name" required="" aria-required="true">
-    <label class="usa-label" for="middle-name">Middle name</label>
-    <input class="usa-input usa-input--xl" id="middle-name" name="middle-name">
-    <label class="usa-label" for="family-name">Family name
+    <input class="usa-input" id="city" name="city" required />
+    <label class="usa-label" for="state"
+      >State, territory, or military post
       <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
-    <input class="usa-input usa-input--xl" id="family-name" name="last-name" required="" aria-required="true">
-      <label class="usa-label" for="last-name">Full name
-      <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
-    <input class="usa-input usa-input--xl" id="last-name" name="last-name" required="" aria-required="true">
+    <div class="usa-combo-box">
+      <select class="usa-select" id="state" name="state">
+        <option value>- Select -</option>
+        <option value="AL">AL - Alabama</option>
+        <option value="AK">AK - Alaska</option>
+        <option value="AS">AS - American Samoa</option>
+        <option value="AZ">AZ - Arizona</option>
+        <option value="AR">AR - Arkansas</option>
+        <option value="CA">CA - California</option>
+        <option value="CO">CO - Colorado</option>
+        <option value="CT">CT - Connecticut</option>
+        <option value="DE">DE - Delaware</option>
+        <option value="DC">DC - District of Columbia</option>
+        <option value="FL">FL - Florida</option>
+        <option value="GA">GA - Georgia</option>
+        <option value="GU">GU - Guam</option>
+        <option value="HI">HI - Hawaii</option>
+        <option value="ID">ID - Idaho</option>
+        <option value="IL">IL - Illinois</option>
+        <option value="IN">IN - Indiana</option>
+        <option value="IA">IA - Iowa</option>
+        <option value="KS">KS - Kansas</option>
+        <option value="KY">KY - Kentucky</option>
+        <option value="LA">LA - Louisiana</option>
+        <option value="ME">ME - Maine</option>
+        <option value="MD">MD - Maryland</option>
+        <option value="MA">MA - Massachusetts</option>
+        <option value="MI">MI - Michigan</option>
+        <option value="MN">MN - Minnesota</option>
+        <option value="MS">MS - Mississippi</option>
+        <option value="MO">MO - Missouri</option>
+        <option value="MT">MT - Montana</option>
+        <option value="NE">NE - Nebraska</option>
+        <option value="NV">NV - Nevada</option>
+        <option value="NH">NH - New Hampshire</option>
+        <option value="NJ">NJ - New Jersey</option>
+        <option value="NM">NM - New Mexico</option>
+        <option value="NY">NY - New York</option>
+        <option value="NC">NC - North Carolina</option>
+        <option value="ND">ND - North Dakota</option>
+        <option value="MP">MP - Northern Mariana Islands</option>
+        <option value="OH">OH - Ohio</option>
+        <option value="OK">OK - Oklahoma</option>
+        <option value="OR">OR - Oregon</option>
+        <option value="PA">PA - Pennsylvania</option>
+        <option value="PR">PR - Puerto Rico</option>
+        <option value="RI">RI - Rhode Island</option>
+        <option value="SC">SC - South Carolina</option>
+        <option value="SD">SD - South Dakota</option>
+        <option value="TN">TN - Tennessee</option>
+        <option value="TX">TX - Texas</option>
+        <option value="UM">UM - United States Minor Outlying Islands</option>
+        <option value="UT">UT - Utah</option>
+        <option value="VT">VT - Vermont</option>
+        <option value="VI">VI - Virgin Islands</option>
+        <option value="VA">VA - Virginia</option>
+        <option value="WA">WA - Washington</option>
+        <option value="WV">WV - West Virginia</option>
+        <option value="WI">WI - Wisconsin</option>
+        <option value="WY">WY - Wyoming</option>
+        <option value="AA">AA - Armed Forces Americas</option>
+        <option value="AE">AE - Armed Forces Africa</option>
+        <option value="AE">AE - Armed Forces Canada</option>
+        <option value="AE">AE - Armed Forces Europe</option>
+        <option value="AE">AE - Armed Forces Middle East</option>
+        <option value="AP">AP - Armed Forces Pacific</option>
+      </select>
+    </div>
+    <label class="usa-label" for="zip">ZIP code</label>
+    <input
+      class="usa-input usa-input--medium"
+      id="zip"
+      name="zip"
+      pattern="[\d]{5}(-[\d]{4})?"
+    />
+    <label class="usa-label" for="google-plus-code">Google Plus Code (e.g., PGX4+XX)</label>
+    <input
+      class="usa-input"
+      id="google-plus-code"
+      name="google-plus-code"
+    />
+     <label class="usa-label" for="urbanization">Urbanization (Puerto Rico only)</label>
+    <input
+      class="usa-input"
+      id="urbanization"
+      name="urbanization"
+    />
   </fieldset>
 </form>
 
-## Pattern preview
+{:.border-top-05 .border-primary .margin-top-4 .padding-top-2}
+## Mailing Address
 
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-pattern-preview-01" aria-expanded="true"><h2 id="accordion-preview">Pattern preview</h2></button>
-  <div id="accordion-pattern-preview-01" class="usa-accordion__content">
-    <form class="usa-form usa-form--large">
-      <fieldset class="usa-fieldset">
-        <legend class="usa-legend usa-legend--large">Name</legend>
-        <p>
-          Required fields are marked with an asterisk (<abbr title="required" class="usa-hint usa-hint--required">*</abbr>).
-        </p>
-        <label class="usa-label" for="given-name">Given name
-          <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
-        <input class="usa-input usa-input--xl" id="given-name" name="first-name" required="" aria-required="true">
-        <label class="usa-label" for="middle-name">Middle name</label>
-        <input class="usa-input usa-input--xl" id="middle-name" name="middle-name">
-        <label class="usa-label" for="family-name">Family name
-          <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
-        <input class="usa-input usa-input--xl" id="family-name" name="last-name" required="" aria-required="true">
-          <label class="usa-label" for="last-name">Full name
-          <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
-        <input class="usa-input usa-input--xl" id="last-name" name="last-name" required="" aria-required="true">
-      </fieldset>
-    </form>
+### When to use this pattern 
+Use this pattern when you need to provide written correspondence or materials to a person and need to parse out the elements of the address. For many people this may be the same address as their physical address.
+
+### What’s the solution
+Provide all the fields a user needs to successfully enter a mailing address.
+
+## Guidance
+
+<div class="grid-row grid-gap-3">
+  <div class="tablet:grid-col-5">
+    <div class="do-dont">
+      <div class="do-dont__do">
+      <h3 class="do-dont__heading">What to do</h3>
+        <div class="do-dont__content">
+          <ul>
+            <li>Do support long text fields.</li>
+            <li>Do support a rich array of <a href="https://web.library.yale.edu/cataloging/music/diacrit">diacritics, accents, and alternative characters</a>.</li>
+            <li>Do allow both upper and lowercase letters throughout each field.</li>
+            <li>Allow users to enter hyphens, apostrophes, special characters, and blank spaces in each name field.</li>
+            <li>Do provide the Puerto Rican Urbanization field, unless your program does not serve Puerto Rico.</li>
+            <li>If the armed forces and the U.S. territories are not included, you may want to provide a link to their resources for clarity.</li>
+          </ul> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tablet:grid-col-5">
+    <div class="do-dont__dont">
+    <h3 class="do-dont__heading">What not to do</h3>
+      <div class="do-dont__content">
+          <ul>
+            <li>Do not limit addresses to conventionally formatted addresses. Some rural areas and areas in U.S. territories have unusually formatted addresses.</li>
+            <li>Do not assume that people can receive mail at their physical location. People in some communities can only receive mail at Post Office boxes.</li>
+          </ul>
+      </div>
+    </div>
   </div>
 </div>
 
+## Considerations
+### Whether you need this data
+<b>Confirm you need this information.</b> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
+
+<b>People without fixed addresses.</b> Some people do not have fixed addresses. 
+
+### What to use 
+<b>Physical vs. mailing address.</b> If you do need an address, determine if you need a physical address or a mailing address, or both. Physical addresses are most important for determining benefits eligibility or for disaster response. Mailing addresses are important f
+
+<b>Both physical and mailing address.</b> If you need both the physical and mailing address, consider providing a checkbox for “same as physical address” to auto-populate the mailing address.
+
+## Usability Guidance
+
+<b>Avoid dropdowns.</b> If possible, let users type their state or territories’ abbreviation when they reach the state dropdown menu, instead of having to scroll and select.
+
+<b>Support both five- and nine-digital ZIP codes.</b> Some addresses require a nine-digital ZIP code. If you would like to use an input mask, it should be “#####-####” so that the text is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code.
+
+## Ingredients
+Related components
+
+<div class="usa-card-group flex-row margin-top-2">
+  <li
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit Toggle"
+  data-meta="Visit Toggle">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg">Text Input</h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
+        <a href="/components/text-input/">Visit Text Input</a>
+      </div>
+    </div>
+  </li>
+  <li
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit Toggle"
+  data-meta="Visit Toggle">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg">Select</h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>A select component allows users to choose one option from a temporary modal menu.</p>
+        <a href="/components/text-input/">Visit Select</a>
+      </div>
+    </div>
+  </li>
+</div>
+
+## Pattern preview
+
+<form class="usa-form usa-form--large">
+  <fieldset class="usa-fieldset">
+    <legend class="usa-legend usa-legend--large">Physical address</legend>
+    <p>
+      Required fields are marked with an asterisk (<abbr
+        title="required"
+        class="usa-hint usa-hint--required"
+        >*</abbr
+      >).
+    </p>
+    <div class="usa-checkbox">
+      <input
+        class="usa-checkbox__input"
+        id="mailing-physical-address-same"
+        type="checkbox"
+        name="Both mailing address and physical address are the same"
+        value="mailing-physical-address-same"
+      />
+      <label class="usa-checkbox__label" for="mailing-physical-address-same">Both mailing address and physical address are the same</label>
+    </div>
+    <label class="usa-label" for="mailing-address-1">Street address</label>
+    <input
+      class="usa-input"
+      id="mailing-address-1"
+      name="mailing-address-1"
+    />
+    <div class="grid-row grid-gap">
+      <div class="mobile-lg:grid-col-8">
+        <label class="usa-label" for="apt-suite-other">Unit type</label>
+        <div class="usa-combo-box">
+          <select
+            class="usa-select"
+            id="apt-suite-other"
+            name="apt-suite-other"
+          >
+            <option value>- Select -</option>
+            <option value="APT">APT - Apartment</option>
+            <option value="BSMT">BSMT - Basement</option>
+            <option value="BLDG">BLDG - Building</option>
+            <option value="DEPT">DEPT - Department</option>
+            <option value="FL">FL - Floor</option>
+            <option value="FRNT">FRNT - Front</option>
+            <option value="HNGR">HNGR - Hanger</option>
+            <option value="KEY">KEY - Key</option>
+            <option value="LBBY">LBBY - Lobby</option>
+            <option value="LOT">LOT - Lot</option>
+            <option value="LOWR">LOWR - Lower</option>
+            <option value="OFC">OFC - Office</option>
+            <option value="OTHER">Other</option>
+            <option value="PH">PH - Penthouse</option>
+            <option value="PIER">PIER - Pier</option>
+            <option value="REAR">REAR - Rear</option>
+            <option value="RM">RM - Room</option>
+            <option value="SIDE">SIDE - Side</option>
+            <option value="SLIP">SLIP - Slip</option>
+            <option value="SPC">SPC - Space</option>
+            <option value="STOP">STOP - Stop</option>
+            <option value="STE">STE - Suite</option>
+            <option value="TRLR">TRLR - Trailer</option>
+            <option value="UNAVAILABLE">Unable to determine</option>
+            <option value="UNIT">UNIT - Unit</option>
+            <option value="UPPR">UPPR - Upper</option>
+          </select>
+        </div>
+      </div>
+      <div class="mobile-lg:grid-col-4">
+        <label class="usa-label" for="apt-floor-suite-no">Unit number</label>
+        <input
+          class="usa-input"
+          id="apt-floor-suite-no"
+          name="apt-floor-suite-no"
+        />
+      </div>
+    </div>
+    <label class="usa-label" for="city"
+      >City
+      <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label
+    >
+    <input class="usa-input" id="city" name="city" required />
+    <label class="usa-label" for="state"
+      >State, territory, or military post
+      <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label
+    >
+    <div class="usa-combo-box">
+      <select class="usa-select" id="state" name="state">
+        <option value>- Select -</option>
+        <option value="AL">AL - Alabama</option>
+        <option value="AK">AK - Alaska</option>
+        <option value="AS">AS - American Samoa</option>
+        <option value="AZ">AZ - Arizona</option>
+        <option value="AR">AR - Arkansas</option>
+        <option value="CA">CA - California</option>
+        <option value="CO">CO - Colorado</option>
+        <option value="CT">CT - Connecticut</option>
+        <option value="DE">DE - Delaware</option>
+        <option value="DC">DC - District of Columbia</option>
+        <option value="FL">FL - Florida</option>
+        <option value="GA">GA - Georgia</option>
+        <option value="GU">GU - Guam</option>
+        <option value="HI">HI - Hawaii</option>
+        <option value="ID">ID - Idaho</option>
+        <option value="IL">IL - Illinois</option>
+        <option value="IN">IN - Indiana</option>
+        <option value="IA">IA - Iowa</option>
+        <option value="KS">KS - Kansas</option>
+        <option value="KY">KY - Kentucky</option>
+        <option value="LA">LA - Louisiana</option>
+        <option value="ME">ME - Maine</option>
+        <option value="MD">MD - Maryland</option>
+        <option value="MA">MA - Massachusetts</option>
+        <option value="MI">MI - Michigan</option>
+        <option value="MN">MN - Minnesota</option>
+        <option value="MS">MS - Mississippi</option>
+        <option value="MO">MO - Missouri</option>
+        <option value="MT">MT - Montana</option>
+        <option value="NE">NE - Nebraska</option>
+        <option value="NV">NV - Nevada</option>
+        <option value="NH">NH - New Hampshire</option>
+        <option value="NJ">NJ - New Jersey</option>
+        <option value="NM">NM - New Mexico</option>
+        <option value="NY">NY - New York</option>
+        <option value="NC">NC - North Carolina</option>
+        <option value="ND">ND - North Dakota</option>
+        <option value="MP">MP - Northern Mariana Islands</option>
+        <option value="OH">OH - Ohio</option>
+        <option value="OK">OK - Oklahoma</option>
+        <option value="OR">OR - Oregon</option>
+        <option value="PA">PA - Pennsylvania</option>
+        <option value="PR">PR - Puerto Rico</option>
+        <option value="RI">RI - Rhode Island</option>
+        <option value="SC">SC - South Carolina</option>
+        <option value="SD">SD - South Dakota</option>
+        <option value="TN">TN - Tennessee</option>
+        <option value="TX">TX - Texas</option>
+        <option value="UM">UM - United States Minor Outlying Islands</option>
+        <option value="UT">UT - Utah</option>
+        <option value="VT">VT - Vermont</option>
+        <option value="VI">VI - Virgin Islands</option>
+        <option value="VA">VA - Virginia</option>
+        <option value="WA">WA - Washington</option>
+        <option value="WV">WV - West Virginia</option>
+        <option value="WI">WI - Wisconsin</option>
+        <option value="WY">WY - Wyoming</option>
+        <option value="AA">AA - Armed Forces Americas</option>
+        <option value="AE">AE - Armed Forces Africa</option>
+        <option value="AE">AE - Armed Forces Canada</option>
+        <option value="AE">AE - Armed Forces Europe</option>
+        <option value="AE">AE - Armed Forces Middle East</option>
+        <option value="AP">AP - Armed Forces Pacific</option>
+      </select>
+    </div>
+    <label class="usa-label" for="zip">ZIP code</label>
+    <input
+      class="usa-input usa-input--medium"
+      id="zip"
+      name="zip"
+      pattern="[\d]{5}(-[\d]{4})?"
+    />
+    <label class="usa-label" for="google-plus-code">Google Plus Code (e.g., PGX4+XX)</label>
+    <input
+      class="usa-input"
+      id="google-plus-code"
+      name="google-plus-code"
+    />
+     <label class="usa-label" for="urbanization">Urbanization (Puerto Rico only)</label>
+    <input
+      class="usa-input"
+      id="urbanization"
+      name="urbanization"
+    />
+  </fieldset>
+</form>
+
+## Related pattern
+<a href="/complete-a-profile/name/">Name</a>
+
 ## References
-- <a href="https://web.library.yale.edu/cataloging/music/diacrit">Diacritics and special characters by language</a>, Yale University Library
-- <a href="Personal names around the world,">Personal names around the world</a>, WC3
+- <a href="https://maps.google.com/pluscodes/">Google Plus Codes</a>
+- <a href="https://pe.usps.com/text/pub28/welcome.htm">USPS Addressing Standards</a>
+- <a href="https://postalpro.usps.com/node/3740">USPS Addressing Standards for Puerto Rico and the U.S. Virgin Islands</a>
+
 
 ## Changelog
-- Created 06.21.22
+- Created 06.30.22
 

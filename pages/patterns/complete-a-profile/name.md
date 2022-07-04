@@ -54,8 +54,6 @@ Provide multiple free-form fields that support a rich array of special character
 </div>
 
 ## Considerations
-
-{:.margin-top-2}
 ### Whether you need this data
 <b>Confirm you need this information.</b> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. For example, if you aren’t validating identity, you might not need to collect someone’s name, since a username will meet the need for account login.
 
@@ -118,15 +116,15 @@ Related components
     </p>
     <label class="usa-label" for="given-name">Given name
       <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
-    <input class="usa-input usa-input--xl" id="given-name" name="first-name" required="" aria-required="true">
+    <input class="usa-input usa-input--xl" id="given-name" name="given-name" required="" aria-required="true">
     <label class="usa-label" for="middle-name">Middle name</label>
     <input class="usa-input usa-input--xl" id="middle-name" name="middle-name">
     <label class="usa-label" for="family-name">Family name
       <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
-    <input class="usa-input usa-input--xl" id="family-name" name="last-name" required="" aria-required="true">
+    <input class="usa-input usa-input--xl" id="family-name" name="family-name" required="" aria-required="true">
       <label class="usa-label" for="last-name">Full name
       <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
-    <input class="usa-input usa-input--xl" id="last-name" name="last-name" required="" aria-required="true">
+    <input class="usa-input usa-input--xl" id="full-name" name="full-name" required="" aria-required="true">
   </fieldset>
 </form>
 
@@ -157,8 +155,9 @@ Related components
 
 ## References
 - <a href="https://web.library.yale.edu/cataloging/music/diacrit">Diacritics and special characters by language</a>, Yale University Library
-- <a href="Personal names around the world,">Personal names around the world</a>, WC3
+- <a href="https://www.w3.org/International/questions/qa-personal-names">Personal names around the world</a>, WC3
 
 ## Changelog
 - Created 06.21.22
+
 

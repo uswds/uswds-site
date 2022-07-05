@@ -752,18 +752,9 @@ These instructions will help you update your `@import` references to the new syn
     ```
     Note that the new `@use` statement is a list of variables, so each line ends in a comma `,` instead of a semicolon `;`.
 
-    Additionally, note that this `uswds-core` configuration accepts only current `uswds-core` variables.
+    {: .site-note }
+    **Note:** the `@use "uswds-core" with ()` configuration accepts only current USWDS settings variables. If you receive the error `This module was already loaded, so it can't be configured using "with"`, confirm that all your declared variables exist in the in the list of [USWDS settings]({{ site.baseurl }}/documentation/settings/) and try compiling again.
 
-    Improper configuration of `uswds-core` can result in the error message below. If you receive this error, confirm that all your declared variables exist in the list of [USWDS settings](http://localhost:4000/documentation/settings/) and try compiling again.
-```
-Error: This module was already loaded, so it can't be configured using "with".
-   ┌──> node_modules/@uswds/uswds/packages/uswds-core/src/styles/variables/_index.scss
-   │   @forward "project-defaults";
-   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^ new load
-   ╵
-   ┌──> node_modules/@uswds/uswds/packages/uswds-core/src/styles/functions/general/get-default.scss
-  │   @use "../../variables/project-defaults" as *;
-```
 1. **Use the new theme file in your project** If your project already was using a project-specific theme settings file, you're all set. If not, you'll need to open your project's Sass entry point, typically `styles.scss`. It usually looks something like this:
 
     ```scss

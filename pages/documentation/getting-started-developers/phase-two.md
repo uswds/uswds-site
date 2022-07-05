@@ -54,7 +54,7 @@ In plain language, this code says:
 
 - **Get the instructions**: Get the USWDS settings that tell the design system how to build the styles. Settings are the first thing you need to include.
 
-  The Design System is built using a suite of customizable settings that you can pass custom values into via `@use "uswds-core" with ()`. An example of this configuration is shown in the code snippet below:
+  Any individual setting is a Sass variable. Each setting begins with the `$theme-` prefix, and we provide a list of all available settings [in the USWDS documentation]({{ site.baseurl }}/documentation/settings/). The following is an example of a simple settings file:
 
   {:.site-terminal}
   ```scss
@@ -66,22 +66,6 @@ In plain language, this code says:
     $theme-banner-max-width: "none",
   )
   ```
-
-  Each USWDS setting is a Sass variable that begins with the `$theme-` prefix, and we provide a list of all available settings [in the USWDS settings documentation]({{ site.baseurl }}/documentation/settings/).
-
-    {: .site-note }
-    **Note:** This `uswds-core` configuration accepts only current `uswds-core` variables.
-
-    Improper configuration of `uswds-core` can result in the error message below. If you receive this error, confirm that all your declared variables exist inside `uswds-core` and try compiling again.
-```
-Error: This module was already loaded, so it can't be configured using "with".
-   ┌──> node_modules/@uswds/uswds/packages/uswds-core/src/styles/variables/_index.scss
-   │   @forward "project-defaults";
-   │   ^^^^^^^^^^^^^^^^^^^^^^^^^^^ new load
-   ╵
-   ┌──> node_modules/@uswds/uswds/packages/uswds-core/src/styles/functions/general/get-default.scss
-  │   @use "../../variables/project-defaults" as *;
-```
 
 - **Create the foundation**: Build all USWDS styles from these settings.
 

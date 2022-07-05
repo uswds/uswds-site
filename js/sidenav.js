@@ -57,7 +57,7 @@ $('.sidenav').on('click', 'a', function (e) {
 
 // In-page navigation
 
-function ready(fn) {
+/* function ready(fn) {
   document.addEventListener('DOMContentLoaded', fn, false);
 }
 
@@ -165,4 +165,4 @@ ready(() => {
   };
 
   InPageNavigation.init();
-});
+}); */

@@ -3843,15 +3843,6 @@ p + .pagination-behaviors--examples {
   }
 }
 
-.usa-in-page-navigation.usa-sidenav .usa-current::after {
-  border-radius: 0;
-  background-color: #2672de;
-  bottom: -1px;
-  left: -2px;
-  top: 0;
-  z-index: 100;
-}
-
 .usa-in-page-navigation.usa-sidenav {
   @include typeset("lang", "xs", 3);
   background-color: color("white");
@@ -3883,31 +3874,31 @@ p + .pagination-behaviors--examples {
     }
   }
 
-  
-
-  .usa-sidenav__item:first-child {
+  /* .usa-in-page-navigation__item:first-child {
     .usa-current::after {
       border-top-left-radius: radius("md");
       top: units($site-border-width) * -1;
     }
-  }
+  } */
 
-  .usa-sidenav__item:last-child {
+  /* .usa-in-page-navigation__item:last-child {
     .usa-current::after {
       border-bottom-left-radius: radius("md");
       bottom: units($site-border-width) * -1;
     }
-  }
+  } */
 
-  .usa-sidenav__item {
-    border-top: none;
+  .usa-in-page-navigation__item {
+    @include u-border(0);
+    border-top: 0 !important;
     line-height: lh("lang", 3);
     position: relative;
+
 
     & + .usa-sidenav__item {
       a {
         // TODO: use 'black-transparent-5' when value changes
-        border-top: units(1px) solid rgba(0, 0, 0, 0.05);
+        border-top: none;
       }
     }
 
@@ -3920,10 +3911,10 @@ p + .pagination-behaviors--examples {
     }
   }
 
-  .usa-sidenav__sublist {
-    font-size: font-size("lang", "3xs");
+  .usa-in-page-navigation__sublist {
+    font-size: font-size("lang", "2xs");
     a {
-      border-top: units(1px) solid rgba(0, 0, 0, 0.05);
+      //border-top: units(1px) solid rgba(0, 0, 0, 0.05);
       padding-left: units(2);
     }
 
@@ -3939,42 +3930,24 @@ p + .pagination-behaviors--examples {
   }
 }
 
-.sidenav {
-  display: none;
-
-  @include at-media("desktop") {
-    display: block;
-    float: left;
-    margin-bottom: units(6);
-    margin-top: units(4);
-    padding-right: 0;
-    padding-left: units(4);
-    width: units($width-nav-sidebar);
-  }
-
-  .usa-navigation-submenu {
-    &[aria-hidden="false"] {
-      display: block;
-    }
-  }
+.usa-in-page-navigation__item a.usa-current::after {
+  background-color: #005ea2;
+  border-radius: 99rem;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0.25rem;
+  top: 0.25rem;
+  width: 0.25rem;
+  left: 0;
 }
 
-.in-page-navigation .usa-sidenav__item a.usa-current::after {
-  content: "";
+/* .site-sidenav.usa-sidenav .usa-current::after {
   border-radius: 0;
   background-color: #2672de;
   bottom: -1px;
   left: -2px;
   top: 0;
-  z-index: 200;
+  z-index: 100;
 }
-
-.usa-in-page-navigation.usa-sidenav a.usa-current::after {
-  content: "";
-  border-radius: 0;
-  background-color: #2672de;
-  bottom: -1px;
-  left: -2px;
-  top: 0;
-  z-index: 200;
-}
+ */

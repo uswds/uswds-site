@@ -31,13 +31,50 @@ layout: default
         <div class="in-page-navigation">
           <p class="site-subheading">On this page</p>
           <nav aria-label="{{ page.title }},">
-            <ul class="usa-in-page-navigation usa-sidenav {% if sidenav %}usa-sidenav__sublist{% else %}usa-nav__submenu{% endif %}">{%
-              include nav/list.html
-              links=_links
-              text_key=_text_key
-              href_key=_href_key
-              %}
-            </ul>
+            <ul class="usa-sidenav {% if sidenav %}usa-in-page-navigation__sublist{% else %}usa-nav__submenu{% endif %}">
+
+
+
+                <li class="usa-in-page-navigation__item">
+                  <a href="#component-preview">Component preview</a>
+                </li>
+                <li class="usa-in-page-navigation__item">
+                  <a href="#component-code">Component code</a>
+                </li>
+                <li class="usa-in-page-navigation__item">
+                  <a href="#{{ page.title | slugify }}-guidance">Guidance</a>
+        
+                  <ul class="usa-in-page-navigation__sublist">
+                    <li class="usa-in-page-navigation__item">
+                      <a href="#when-to-use-the-{{ page.title | slugify }}">
+                        When to use the {{ page.title }} component
+                      </a>
+                    </li>
+                    <li class="usa-in-page-navigation__item">
+                      <a href="#when-to-consider-something-else-{{ page.title | slugify }}">
+                        When to consider something else
+                      </a>
+                    </li>
+                    <li class="usa-in-page-navigation__item">
+                      <a href="#usability-guidance-{{ page.title | slugify }}">
+                        Usability guidance
+                      </a>
+                    </li>
+                    <li class="usa-in-page-navigation__item">
+                      <a href="#accessibility-{{ page.title | slugify }}">Accessibility</a>
+                    </li>
+                    <li class="usa-in-page-navigation__item">
+                      <a href="#using-the-{{ page.title | slugify }}-component">
+                        Using the {{ page.title }} component
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="usa-in-page-navigation__item">
+                  <a href="#{{ page.title | slugify }}-package">Package</a>
+                </li>
+
+
           </nav>
         </div>
       </div>

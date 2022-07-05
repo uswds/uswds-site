@@ -107,7 +107,7 @@ Related components
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>A select component allows users to choose one option from a temporary modal menu.</p>
-        <a href="/components/text-input/">Visit Select</a>
+        <a href="/components/select/">Visit Select</a>
       </div>
     </div>
   </li>

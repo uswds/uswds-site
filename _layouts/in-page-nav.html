@@ -29,8 +29,9 @@ layout: default
       </div>
       <div class="tablet:grid-col-3 desktop:grid-col">
         <div class="in-page-navigation">
+          <p class="site-subheading">On this page</p>
           <nav aria-label="{{ page.title }},">
-            <ul class="usa-in-page-navigation {% if sidenav %}usa-sidenav__sublist{% else %}usa-nav__submenu{% endif %}">{%
+            <ul class="usa-in-page-navigation usa-sidenav {% if sidenav %}usa-sidenav__sublist{% else %}usa-nav__submenu{% endif %}">{%
               include nav/list.html
               links=_links
               text_key=_text_key

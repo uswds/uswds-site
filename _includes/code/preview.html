@@ -1,5 +1,5 @@
 {% assign level = include.level | default: "h3" %}
-<div id="component-preview"></div>
+<div id="component-preview">
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   {% assign _id = include.component | append: '-preview' %}
   {% assign _content_id = include.component | append: '-preview-content' %}
@@ -52,4 +52,5 @@
         {% include code/components/{{ include.component }}.html %}
     {% endif %}
   </div>
+</div>
 </div>

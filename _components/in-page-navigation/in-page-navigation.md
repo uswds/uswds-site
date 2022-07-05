@@ -10,8 +10,6 @@ redirect_from:
 - /in-page-nav/
 - /components/in-page-nav/
 subnav:
-- text: In-page navigation
-  href: '#in-page-navigation'
 - text: Preview
   href: '#in-page-navigation-preview'
 - text: Code

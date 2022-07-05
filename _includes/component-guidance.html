@@ -41,84 +41,99 @@
     {%- include_relative {{guidancePath}}/references.md -%}
   {% endif %}
 {%- endcapture -%}
-
-<h2 id="{{ componentKey }}-guidance" class="site-component-section-title">
-  Guidance
-</h2>
-<div class="site-component-usage">
-  {% for item in guidanceFirst %}
-    <h3 id="{{ item.heading | slugify }}" class="usa-heading">
-      {{ item.heading }}
-    </h3>
-    {% if item.html %}
-      {%- include_relative {{item.path}} -%}
-    {% else %}
+<div id="{{ componentKey }}-guidance-section" style="overflow: auto;">
+  <h2 id="{{ componentKey }}-guidance" class="site-component-section-title">
+    Guidance
+  </h2>
+  <div class="site-component-usage">
+    {% for item in guidanceFirst %}
+    <section id="{{ item.heading | slugify }}-section" style="overflow: auto;">
+      <h3 id="{{ item.heading | slugify }}" class="usa-heading">
+        {{ item.heading }}
+      </h3>
+      {% if item.html %}
+        {%- include_relative {{item.path}} -%}
+      {% else %}
+        {%- capture thisText -%}
+          {{- guidanceFormat }}
+          {%- include_relative {{item.path}} -%}
+        {% endcapture %}
+        {{ thisText | markdownify }}
+      {% endif %}
+    {% endfor %}
+  </section>
+    {% if about.size > guidanceNullLength %}
+    <section id="about-{{ componentKey }}-section" style="overflow: auto;">
+      <h3 id="about-{{ componentKey }}">About</h3>
+      {{ about | markdownify }}
+    </section>
+    {% endif %}
+    {% if when_to_use.size > guidanceNullLength %}
+    <section id="when-to-use-the-{{ componentKey }}-section" style="overflow: auto;">
+      <h3 id="when-to-use-the-{{ componentKey }}">
+        When to use the {{ page.title | downcase }} {{ page.type }}
+      </h3>
+      {{ when_to_use | markdownify }}
+    </section>
+    {% endif %}
+    {% if when_to_consider_something_else.size > guidanceNullLength %}
+    <section id="when-to-consider-something-else-{{ componentKey }}-section" style="overflow: auto;">
+      <h3 id="when-to-consider-something-else-{{ componentKey }}">
+        When to consider something else
+      </h3>
+      {{ when_to_consider_something_else | markdownify }}
+    </section>
+    {% endif %}
+    {% if usability.size > guidanceNullLength %}
+    <section id="usability-guidance-{{ componentKey }}-section" style="overflow: auto;">
+      <h3 id="usability-guidance-{{ componentKey }}">Usability guidance</h3>
+      {{ usability | markdownify }}
+    </section>
+    {% endif %}
+    {% if accessibility.size > guidanceNullLength %}
+    <section id="accessibility-{{ componentKey }}-section" style="overflow: auto;">
+      <h3  id="accessibility-{{ componentKey }}" class="usa-heading">
+        Accessibility
+      </h3>
+      {{ accessibility | markdownify }}
+    </section>
+    {% endif %}
+    {% if implementation.size > guidanceNullLength or page.variants or site.data.settings.components[settingsKey] %}
+    <section id="using-the-{{ componentKey }}-section" style="overflow: auto;">
+      <h3  id="using-the-{{ componentKey }}-{{ page.type }}" class="usa-heading">
+        Using the {{ page.title | downcase }} {{ page.type }}
+      </h3>
+      {{ implementation | markdownify }}    
+      {% if page.category == "Components" %}
+        <h4 id="component-settings-{{ componentKey }}">
+          {{ page.title }} settings
+        </h4>
+        {% assign settings = site.data.settings.components[settingsKey] %}
+        {% include settings-table-simple.html settings=settings.contents %}
+        <h4 id="component-variants-{{ componentKey }}">
+          {{ page.title }} variants
+        </h4>
+        {% include settings-table-flex.html
+          content=page.variants
+          cols="flex-1, flex-1"
+          section="variants"
+        %}
+      {% endif %}
+    </section>
+    {% endif %}
+    {% for item in guidanceLast %}
+      <h3 id="{{ item.heading | slugify }}" class="usa-heading">
+        {{ item.heading }}
+      </h3>
       {%- capture thisText -%}
         {{- guidanceFormat }}
         {%- include_relative {{item.path}} -%}
       {% endcapture %}
       {{ thisText | markdownify }}
+    {% endfor %}
+    {% if references.size > guidanceNullLength %}
+      <h3 id="references">References</h3>-section
+      {{ references | markdownify }}
     {% endif %}
-  {% endfor %}
-  {% if about.size > guidanceNullLength %}
-    <h3 id="about-{{ componentKey }}">About</h3>
-    {{ about | markdownify }}
-  {% endif %}
-  {% if when_to_use.size > guidanceNullLength %}
-    <h3 id="when-to-use-the-{{ componentKey }}">
-      When to use the {{ page.title | downcase }} {{ page.type }}
-    </h3>
-    {{ when_to_use | markdownify }}
-  {% endif %}
-  {% if when_to_consider_something_else.size > guidanceNullLength %}
-    <h3 id="when-to-consider-something-else-{{ componentKey }}">
-      When to consider something else
-    </h3>
-    {{ when_to_consider_something_else | markdownify }}
-  {% endif %}
-  {% if usability.size > guidanceNullLength %}
-    <h3 id="usability-guidance-{{ componentKey }}">Usability guidance</h3>
-    {{ usability | markdownify }}
-  {% endif %}
-  {% if accessibility.size > guidanceNullLength %}
-    <h3  id="accessibility-{{ componentKey }}" class="usa-heading">
-      Accessibility
-    </h3>
-    {{ accessibility | markdownify }}
-  {% endif %}
-  {% if implementation.size > guidanceNullLength or page.variants or site.data.settings.components[settingsKey] %}
-    <h3  id="using-the-{{ componentKey }}-{{ page.type }}" class="usa-heading">
-      Using the {{ page.title | downcase }} {{ page.type }}
-    </h3>
-    {{ implementation | markdownify }}
-    {% if page.category == "Components" %}
-      <h4 id="component-settings-{{ componentKey }}">
-        {{ page.title }} settings
-      </h4>
-      {% assign settings = site.data.settings.components[settingsKey] %}
-      {% include settings-table-simple.html settings=settings.contents %}
-      <h4 id="component-variants-{{ componentKey }}">
-        {{ page.title }} variants
-      </h4>
-      {% include settings-table-flex.html
-        content=page.variants
-        cols="flex-1, flex-1"
-        section="variants"
-      %}
-    {% endif %}
-  {% endif %}
-  {% for item in guidanceLast %}
-    <h3 id="{{ item.heading | slugify }}" class="usa-heading">
-      {{ item.heading }}
-    </h3>
-    {%- capture thisText -%}
-      {{- guidanceFormat }}
-      {%- include_relative {{item.path}} -%}
-    {% endcapture %}
-    {{ thisText | markdownify }}
-  {% endfor %}
-  {% if references.size > guidanceNullLength %}
-    <h3 id="references">References</h3>
-    {{ references | markdownify }}
-  {% endif %}
+  </div>
 </div>

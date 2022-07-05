@@ -16,8 +16,8 @@ $('.sidenav').on('keydown', 'a', function (e) {
 
 $('.sidenav').on('click', 'a', function (e) {
   // long url splitting
-  var hashLocation  = $(this).attr('href').split('#')[ 1 ];
-  var scrollTopPos  = calculateAnchorPosition(hashLocation);
+  var hashLocation = $(this).attr('href').split('#')[1];
+  var scrollTopPos = calculateAnchorPosition(hashLocation);
 
   //if anchor doesn't exist on the page, or calc fails
   //then exit gracefully
@@ -43,7 +43,7 @@ $('.sidenav').on('click', 'a', function (e) {
     },
     done: function () {
       // if keyboard was used, update keyboard focus to section
-      var link    = $(e.target);
+      var link = $(e.target);
       var section = $('#' + hashLocation);
 
       if (link.data('keypress') === true) {
@@ -98,7 +98,7 @@ ready(() => {
       });
 
       section.setAttribute('tabindex', -1);
-      section.focus();
+      //section.focus();
 
       window.scroll({
         behavior: motionQuery.matches ? 'instant' : 'smooth',

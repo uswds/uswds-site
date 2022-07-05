@@ -3831,21 +3831,34 @@ p + .pagination-behaviors--examples {
 .in-page-navigation {
   display: flex;
   flex-basis: 200px;
+  flex-direction: column;
   font-size: 0.8rem;
   justify-content: flex-start;
   max-width: 16rem;
   overflow: auto;
   position: sticky;
   top: 4rem;
+  nav {
+    width: 100%;
+  }
 }
 
-.site-sidenav.usa-sidenav {
+.usa-in-page-navigation.usa-sidenav .usa-current::after {
+  border-radius: 0;
+  background-color: #2672de;
+  bottom: -1px;
+  left: -2px;
+  top: 0;
+  z-index: 100;
+}
+
+.usa-in-page-navigation.usa-sidenav {
   @include typeset("lang", "xs", 3);
   background-color: color("white");
   border: units($site-border-width) solid color("black-transparent-10");
   border-radius: radius("md");
   padding: 0;
-
+  
   a {
     @include u-padding-x(2);
     color: color("base-darker");
@@ -3854,21 +3867,23 @@ p + .pagination-behaviors--examples {
       background-color: transparent;
       color: color($site-primary-vivid);
     }
-  }
 
-  .usa-current {
-    color: color("base-darker");
-    position: static;
-
-    &::after {
-      border-radius: 0;
-      background-color: color($site-primary-vivid);
-      bottom: units(-1px);
-      left: units($site-border-width) * -1;
-      top: units(0);
-      z-index: z(100);
+    &.usa-current {
+      color: color("base-darker");
+      position: static;
+  
+      &::after {
+        border-radius: 0;
+        background-color: color($site-primary-vivid);
+        bottom: units(-1px);
+        left: units($site-border-width) * -1;
+        top: units(0);
+        z-index: z(100);
+      }
     }
   }
+
+  
 
   .usa-sidenav__item:first-child {
     .usa-current::after {
@@ -3942,4 +3957,24 @@ p + .pagination-behaviors--examples {
       display: block;
     }
   }
+}
+
+.in-page-navigation .usa-sidenav__item a.usa-current::after {
+  content: "";
+  border-radius: 0;
+  background-color: #2672de;
+  bottom: -1px;
+  left: -2px;
+  top: 0;
+  z-index: 200;
+}
+
+.usa-in-page-navigation.usa-sidenav a.usa-current::after {
+  content: "";
+  border-radius: 0;
+  background-color: #2672de;
+  bottom: -1px;
+  left: -2px;
+  top: 0;
+  z-index: 200;
 }

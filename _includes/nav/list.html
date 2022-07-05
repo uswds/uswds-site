@@ -7,7 +7,7 @@
   {% if _page -%}
     {% include nav/current.html page=_page primary=include.primary %}
   {% endif %}
-  <li class="usa-in-page-navigation__item {% if sidenav %}usa-sidenav__item{% else %}usa-nav__submenu-item{% endif %}{% if _current %} is-current{% endif %}">
+  <li class="{% if sidenav %}usa-sidenav__item{% else %}usa-nav__submenu-item{% endif %}{% if _current %} is-current{% endif %}">
     {% if _page -%}
       {%
         include nav/page-item.html

@@ -124,7 +124,7 @@ Related components
         <h3 class="usa-card__heading font-lang-lg">Radio Button</h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Radio buttons allow users to select exactly one choice from a group..</p>
+        <p>Radio buttons allow users to select exactly one choice from a group.</p>
         <a href="/components/radio-buttons/">Visit Radio buttons</a>
       </div>
     </div>

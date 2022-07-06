@@ -76,7 +76,7 @@ graphic_list:
   <div class="grid-container tablet:margin-top-6">
     <div class="grid-row grid-gap">
       <div class="tablet:grid-col">
-        <img src="{{ site.baseurl }}/img/webp/home/showcase/pubmed.webp" alt="Preview image of NASA Glenn Research Center home page" width="960" height="540">
+        <img src="{{ site.baseurl }}/img/webp/home/showcase/pubmed.webp" alt="Preview image of PubMed Labs home page" width="960" height="540">
         <a class="font-lang-md" href="https://www.ncbi.nlm.nih.gov/labs/pubmed/">PubMed Labs | U.S. National Library of Medicine</a>
       </div>
       <div class="tablet:grid-col">

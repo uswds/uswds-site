@@ -547,6 +547,11 @@ Related components
   </fieldset>
 </form>
 
+<h3 class="site-preview-heading">Default breadcrumb</h3>
+{% capture breadcrumb %}
+  {% library_component usa-breadcrumb %}
+{% endcapture %}{{ breadcrumb | strip }}
+
 ## Related pattern
 <a href="/patterns/complete-a-profile/name/">Name</a>
 

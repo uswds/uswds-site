@@ -57,112 +57,59 @@ $('.sidenav').on('click', 'a', function (e) {
 
 // In-page navigation
 
-/* function ready(fn) {
-  document.addEventListener('DOMContentLoaded', fn, false);
-}
+document.addEventListener('DOMContentLoaded', () => {
+  const headings = document.querySelectorAll('#main-content h2');
+  const headings3 = document.querySelectorAll('#main-content h3');
+  if (headings && headings.length) {
+    let tableOfContentInner = '';
+    headings.forEach((heading, i) => {
+      // generate an 'li' element that includes a link to the appropriate section
+      tableOfContentInner += `<li class="usa-in-page-navigation__item"><a href="#section_${i}">${heading.textContent}</a></li>`;
+      const originalHeadingContent = heading.innerHTML;
+      const anchor = `<a class="offset-anchor" id="section_${i}"></a>`;
+      // add the anchor to the <h3> tag
+      heading.innerHTML = anchor + originalHeadingContent;
 
-ready(() => {
-  const motionQuery = window.matchMedia('(prefers-reduced-motion)');
 
-  const InPageNavigation = {
-    container: document.querySelector('.in-page-navigation'),
-    links: null,
-    headings: null,
-    intersectionOptions: {
-      root: null,
-      rootMargin: '0px',
-      threshold: 1,
-    },
 
-    previousSection: null,
-    observer: null,
 
-    init() {
-      this.handleObserver = this.handleObserver.bind(this);
 
-      this.setUpObserver();
-      this.findLinksAndHeadings();
-      this.observeSections();
+      /* if (headings3 && headings3.length) {
+        let tableOfContentInner3 = '';
+        headings3.forEach((heading3, i) => {
+          tableOfContentInner3 += `<li class="usa-in-page-navigation__item"><a href="#section_${i}">${heading3.textContent}</a></li>`;
+          const originalHeadingContent3 = heading3.innerHTML;
+          const anchor3 = `<a class="offset-anchor" id="section_${i}"></a>`;
+          // add the anchor to the <h3> tag
+          heading3.innerHTML = anchor3 + originalHeadingContent3;
+        });
 
-      this.links.forEach((link) => {
-        link.addEventListener('click', this.handleLinkClick.bind(this));
-      });
-    },
+        const tableOfContent3 = `<ul id="subnav" class="usa-in-page-navigation__sublist">${tableOfContentInner3}</ul>`;
+        // add the generated table of content to the dive
+        
+        
+        document.querySelector('#in-page-navigation').innerHTML += tableOfContent3;
+      } */
 
-    handleLinkClick(evt) {
-      evt.preventDefault();
-      let id = evt.target.hash.replace('#', '');
 
-      let section = this.headings.find((heading) => {
-        return heading.getAttribute('id') === id;
-      });
 
-      section.setAttribute('tabindex', -1);
-      //section.focus();
 
-      window.scroll({
-        behavior: motionQuery.matches ? 'instant' : 'smooth',
-        top: section.offsetTop + 140,
-        block: 'start',
-      });
 
-      if (this.container.classList.contains('usa-current')) {
-        this.container.classList.remove('usa-current');
-      }
-    },
 
-    handleObserver(entries, observer) {
-      entries.forEach((entry) => {
-        let href = `#${entry.target.getAttribute('id')}`,
-          link = this.links.find((l) => l.getAttribute('href') === href);
 
-        if (entry.isIntersecting && entry.intersectionRatio >= 1) {
-          link.classList.add('is-visible');
-          this.previousSection = entry.target.getAttribute('id');
-        } else {
-          link.classList.remove('is-visible');
-        }
 
-        this.highlightFirstActive();
-      });
-    },
 
-    highlightFirstActive() {
-      let firstVisibleLink = this.container.querySelector('.is-visible');
+    });
 
-      this.links.forEach((link) => {
-        link.classList.remove('usa-current');
-      });
+    const tableOfContent = `<ul class="usa-in-page-navigation usa-sidenav">${tableOfContentInner}</ul>`;
+    // add the generated table of content to the dive
+    document.querySelector('#in-page-navigation').innerHTML += tableOfContent;
 
-      if (firstVisibleLink) {
-        firstVisibleLink.classList.add('usa-current');
-      }
-
-      if (!firstVisibleLink && this.previousSection) {
-        this.container
-          .querySelector(`a[href="#${this.previousSection}"]`)
-          .classList.add('usa-current');
-      }
-    },
-
-    observeSections() {
-      this.headings.forEach((heading) => {
-        this.observer.observe(heading);
-      });
-    },
-
-    setUpObserver() {
-      this.observer = new IntersectionObserver(this.handleObserver, this.intersectionOptions);
-    },
-
-    findLinksAndHeadings() {
-      this.links = [...this.container.querySelectorAll('a')];
-      this.headings = this.links.map((link) => {
-        let id = link.getAttribute('href');
-        return document.querySelector(id);
-      });
-    },
-  };
-
-  InPageNavigation.init();
-}); */
+    // automatically go to the correct section on load
+    if (location.hash) {
+      const target = location.hash;
+      const offsetY = document.querySelector(target).offsetTop;
+      window.scrollTo(0, offsetY);
+    }
+  }
+});

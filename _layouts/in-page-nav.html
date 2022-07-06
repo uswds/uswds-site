@@ -12,72 +12,21 @@ layout: default
   </aside>
 
   <main id="main-content" class="main-content">
-    <div class="grid-row">
-      <div class="tablet:grid-col-9 desktop:grid-col">
-        <div class="styleguide-content{% unless page.category == 'Utilities' and page.type != 'docs' %} usa-prose site-prose{% endunless %}">
-          <header>
-            {% if page.category != null %}
-              {% unless page.path contains 'overview' and page.permalink != '/design-tokens/color/overview/' %}
-                <p class="site-subheading">{{ page.category }}</p>
-              {% endunless %}
-            {% endif %}
-            <h1 id="{{ page.title | slugify }}" class="site-page-title">{{ page.title }}</h1>
-          </header>
-          {% include lead.html text=page.lead %}
-          {{ content }}
-        </div>
-      </div>
-      <div class="tablet:grid-col-3 desktop:grid-col">
-        <div class="in-page-navigation">
-          <p class="site-subheading">On this page</p>
-          <nav aria-label="{{ page.title }},">
-            <ul class="usa-sidenav {% if sidenav %}usa-in-page-navigation__sublist{% else %}usa-nav__submenu{% endif %}">
-
-
-
-                <li class="usa-in-page-navigation__item">
-                  <a href="#component-preview">Component preview</a>
-                </li>
-                <li class="usa-in-page-navigation__item">
-                  <a href="#component-code">Component code</a>
-                </li>
-                <li class="usa-in-page-navigation__item">
-                  <a href="#{{ page.title | slugify }}-guidance">Guidance</a>
-        
-                  <ul class="usa-in-page-navigation__sublist">
-                    <li class="usa-in-page-navigation__item">
-                      <a href="#when-to-use-the-{{ page.title | slugify }}">
-                        When to use the {{ page.title }} component
-                      </a>
-                    </li>
-                    <li class="usa-in-page-navigation__item">
-                      <a href="#when-to-consider-something-else-{{ page.title | slugify }}">
-                        When to consider something else
-                      </a>
-                    </li>
-                    <li class="usa-in-page-navigation__item">
-                      <a href="#usability-guidance-{{ page.title | slugify }}">
-                        Usability guidance
-                      </a>
-                    </li>
-                    <li class="usa-in-page-navigation__item">
-                      <a href="#accessibility-{{ page.title | slugify }}">Accessibility</a>
-                    </li>
-                    <li class="usa-in-page-navigation__item">
-                      <a href="#using-the-{{ page.title | slugify }}-component">
-                        Using the {{ page.title }} component
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="usa-in-page-navigation__item">
-                  <a href="#{{ page.title | slugify }}-package">Package</a>
-                </li>
-
-
-          </nav>
-        </div>
-      </div>
+    <div class="styleguide-content{% unless page.category == 'Utilities' and page.type != 'docs' %} usa-prose site-prose{% endunless %}">
+      <header>
+        {% if page.category != null %}
+          {% unless page.path contains 'overview' and page.permalink != '/design-tokens/color/overview/' %}
+            <p class="site-subheading">{{ page.category }}</p>
+          {% endunless %}
+        {% endif %}
+        <h1 id="{{ page.title | slugify }}" class="site-page-title">{{ page.title }}</h1>
+      </header>
+      {% include lead.html text=page.lead %}
+      {{ content }}
     </div>
   </main>
+  <div id="in-page-navigation" class="in-page-navigation">
+    <p class="site-subheading">On this page</p>
+  </div>
+
 </div>

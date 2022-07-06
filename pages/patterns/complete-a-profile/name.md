@@ -106,31 +106,9 @@ Related components
   </li>
 </div>
 
-## Pattern preview
-
-<form class="usa-form usa-form--large">
-  <fieldset class="usa-fieldset">
-    <legend class="usa-legend usa-legend--large">Name</legend>
-    <p>
-      Required fields are marked with an asterisk (<abbr title="required" class="usa-hint usa-hint--required">*</abbr>).
-    </p>
-    <label class="usa-label" for="given-name">Given name
-      <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
-    <input class="usa-input usa-input--xl" id="given-name" name="given-name" required="" aria-required="true">
-    <label class="usa-label" for="middle-name">Middle name</label>
-    <input class="usa-input usa-input--xl" id="middle-name" name="middle-name">
-    <label class="usa-label" for="family-name">Family name
-      <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
-    <input class="usa-input usa-input--xl" id="family-name" name="family-name" required="" aria-required="true">
-      <label class="usa-label" for="last-name">Full name
-      <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
-    <input class="usa-input usa-input--xl" id="full-name" name="full-name" required="" aria-required="true">
-  </fieldset>
-</form>
-
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-4">
-  <button class="usa-accordion__button" aria-controls="accordion-pattern-preview-01" aria-expanded="true"><h2 id="accordion-preview">Pattern preview</h2></button>
-  <div id="accordion-pattern-preview-01" class="usa-accordion__content">
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
+  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
+  <div id="accordion-preview" class="usa-accordion__content">
     <form class="usa-form usa-form--large">
       <fieldset class="usa-fieldset">
         <legend class="usa-legend usa-legend--large">Name</legend>
@@ -150,6 +128,12 @@ Related components
         <input class="usa-input usa-input--xl" id="last-name" name="last-name" required="" aria-required="true">
       </fieldset>
     </form>
+  </div>
+</div>
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
+  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
+  <div id="accordion-code" class="usa-accordion__content">
+  <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/name.html %}</code></pre></figure>
   </div>
 </div>
 

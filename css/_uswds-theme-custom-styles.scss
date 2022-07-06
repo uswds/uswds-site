@@ -3951,26 +3951,27 @@ p + .pagination-behaviors--examples {
   z-index: 100;
 }
  */
+.layout-component {
+  .default-container {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-around;
+  }
 
- .default-container {
-  align-items: flex-start;
-  display: flex;
-  justify-content: space-around;
-}
+  #main-content {
+    width: 70vw;
+  }
 
-#main-content {
-  width: 70vw;
-}
+  #in-page-navigation {
+    position: sticky;
+    top: 4rem;
+    width: 30vw;
+  }
 
-#in-page-navigation {
-  position: sticky;
-  top: 4rem;
-  width: 30vw;
-}
-
-.offset-anchor {
-  display: block;
-  position: relative;
-  top: -150px;
-  visibility: hidden;
+  .offset-anchor {
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;
+  }
 }

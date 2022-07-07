@@ -3907,3 +3907,10 @@ p + .pagination-behaviors--examples {
   line-height: 1.2;
   margin: 0;
 }
+
+// Accordion code 
+
+.usa-accordion--bordered .usa-accordion__content.highlight-code {
+  padding-top: 0.5rem; 
+  padding-bottom: 0.5rem; 
+}

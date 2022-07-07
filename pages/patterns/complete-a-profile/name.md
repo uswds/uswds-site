@@ -132,9 +132,7 @@ Related components
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
-  <div id="accordion-code" class="usa-accordion__content">
-  <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/name.html %}</code></pre></figure>
-  </div>
+  <div id="accordion-code" class="usa-accordion__content"><figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/name.html %}</code></pre></figure></div>
 </div>
 
 ## References

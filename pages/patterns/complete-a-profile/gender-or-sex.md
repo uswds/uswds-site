@@ -150,72 +150,16 @@ Related components
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
   <div id="accordion-preview" class="usa-accordion__content">
-    <form class="usa-form usa-form--large">
-      <fieldset class="usa-fieldset">
-          <legend class="usa-legend usa-legend--large">Gender or Sex</legend>
-          <label class="usa-label" for="gender-identity">Gender Identity</label>
-          <input
-          class="usa-input"
-          id="gender-identity"
-          name="gender-identity"
-          />
-          <legend class="usa-legend usa-legend">Biological Sex</legend>
-          <div class="usa-radio">
-              <input
-              class="usa-radio__input"
-              id="male"
-              type="radio"
-              name="biological-sex"
-              value="male"
-              />
-              <label class="usa-radio__label" for="male"
-              >Male</label
-              >
-          </div>
-          <div class="usa-radio">
-              <input
-              class="usa-radio__input"
-              id="female"
-              type="radio"
-              name="biological-sex"
-              value="female"
-              />
-              <label class="usa-radio__label" for="female"
-              >Female</label
-              >
-          </div>
-          <div class="usa-radio">
-              <input
-              class="usa-radio__input"
-              id="x"
-              type="radio"
-              name="biological-sex"
-              value="x"
-              />
-              <label class="usa-radio__label" for="x"
-              >X</label
-              >
-          </div>
-          <div class="usa-radio">
-              <input
-              class="usa-radio__input"
-              id="prefer-not-to-answer"
-              type="radio"
-              name="biological-sex"
-              value="prefer-not-to-answer"
-              />
-              <label class="usa-radio__label" for="prefer-not-to-answer"
-              >Prefer not to answer</label
-              >
-          </div>
-      </fieldset>
-    </form>
+    {% include patterns/gender-or-sex.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
-  <div id="accordion-code" class="usa-accordion__content">
-    <p>// Code</p>
+  <div id="accordion-code" class="usa-accordion__content highlight-code">
+    <div class="usa-sr-only">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/gender-or-sex.html %}</code></pre></figure>
+    </div>
+    <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/gender-or-sex.html %}{% endhighlight %}</code></pre></figure>
   </div>
 </div>
 

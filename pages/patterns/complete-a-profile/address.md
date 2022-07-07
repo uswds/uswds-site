@@ -113,167 +113,21 @@ Related components
   </li>
 </div>
 
-## Pattern preview
-
-<form class="usa-form usa-form--large">
-  <fieldset class="usa-fieldset">
-    <legend class="usa-legend usa-legend--large">Mailing address</legend>
-    <p>
-      Required fields are marked with an asterisk (<abbr
-        title="required"
-        class="usa-hint usa-hint--required"
-        >*</abbr
-      >).
-    </p>
-    <label class="usa-label" for="mailing-address-1">Street address</label>
-    <input
-      class="usa-input"
-      id="mailing-address-1"
-      name="mailing-address-1"
-    />
-    <div class="grid-row grid-gap">
-      <div class="mobile-lg:grid-col-8">
-        <label class="usa-label" for="apt-suite-other">Unit type</label>
-        <div class="usa-combo-box">
-          <select
-            class="usa-select"
-            id="apt-suite-other"
-            name="apt-suite-other"
-          >
-            <option value>- Select -</option>
-            <option value="APT">APT - Apartment</option>
-            <option value="BSMT">BSMT - Basement</option>
-            <option value="BLDG">BLDG - Building</option>
-            <option value="DEPT">DEPT - Department</option>
-            <option value="FL">FL - Floor</option>
-            <option value="FRNT">FRNT - Front</option>
-            <option value="HNGR">HNGR - Hanger</option>
-            <option value="KEY">KEY - Key</option>
-            <option value="LBBY">LBBY - Lobby</option>
-            <option value="LOT">LOT - Lot</option>
-            <option value="LOWR">LOWR - Lower</option>
-            <option value="OFC">OFC - Office</option>
-            <option value="OTHER">Other</option>
-            <option value="PH">PH - Penthouse</option>
-            <option value="PIER">PIER - Pier</option>
-            <option value="REAR">REAR - Rear</option>
-            <option value="RM">RM - Room</option>
-            <option value="SIDE">SIDE - Side</option>
-            <option value="SLIP">SLIP - Slip</option>
-            <option value="SPC">SPC - Space</option>
-            <option value="STOP">STOP - Stop</option>
-            <option value="STE">STE - Suite</option>
-            <option value="TRLR">TRLR - Trailer</option>
-            <option value="UNAVAILABLE">Unable to determine</option>
-            <option value="UNIT">UNIT - Unit</option>
-            <option value="UPPR">UPPR - Upper</option>
-          </select>
-        </div>
-      </div>
-      <div class="mobile-lg:grid-col-4">
-        <label class="usa-label" for="apt-floor-suite-no">Unit number</label>
-        <input
-          class="usa-input"
-          id="apt-floor-suite-no"
-          name="apt-floor-suite-no"
-        />
-      </div>
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
+  <button class="usa-accordion__button" aria-controls="accordion-preview-01" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
+  <div id="accordion-preview-01" class="usa-accordion__content">
+    {% include patterns/physical-address.html %}
+  </div>
+</div>
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
+  <button class="usa-accordion__button" aria-controls="accordion-code-01" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
+  <div id="accordion-code-01" class="usa-accordion__content highlight-code">
+    <div class="usa-sr-only">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/physical-address.html %}</code></pre></figure>
     </div>
-    <label class="usa-label" for="city">City
-      <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
-    <input class="usa-input" id="city" name="city" required />
-    <label class="usa-label" for="state"
-      >State, territory, or military post
-      <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
-    <div class="usa-combo-box">
-      <select class="usa-select" id="state" name="state">
-        <option value>- Select -</option>
-        <option value="AL">AL - Alabama</option>
-        <option value="AK">AK - Alaska</option>
-        <option value="AS">AS - American Samoa</option>
-        <option value="AZ">AZ - Arizona</option>
-        <option value="AR">AR - Arkansas</option>
-        <option value="CA">CA - California</option>
-        <option value="CO">CO - Colorado</option>
-        <option value="CT">CT - Connecticut</option>
-        <option value="DE">DE - Delaware</option>
-        <option value="DC">DC - District of Columbia</option>
-        <option value="FL">FL - Florida</option>
-        <option value="GA">GA - Georgia</option>
-        <option value="GU">GU - Guam</option>
-        <option value="HI">HI - Hawaii</option>
-        <option value="ID">ID - Idaho</option>
-        <option value="IL">IL - Illinois</option>
-        <option value="IN">IN - Indiana</option>
-        <option value="IA">IA - Iowa</option>
-        <option value="KS">KS - Kansas</option>
-        <option value="KY">KY - Kentucky</option>
-        <option value="LA">LA - Louisiana</option>
-        <option value="ME">ME - Maine</option>
-        <option value="MD">MD - Maryland</option>
-        <option value="MA">MA - Massachusetts</option>
-        <option value="MI">MI - Michigan</option>
-        <option value="MN">MN - Minnesota</option>
-        <option value="MS">MS - Mississippi</option>
-        <option value="MO">MO - Missouri</option>
-        <option value="MT">MT - Montana</option>
-        <option value="NE">NE - Nebraska</option>
-        <option value="NV">NV - Nevada</option>
-        <option value="NH">NH - New Hampshire</option>
-        <option value="NJ">NJ - New Jersey</option>
-        <option value="NM">NM - New Mexico</option>
-        <option value="NY">NY - New York</option>
-        <option value="NC">NC - North Carolina</option>
-        <option value="ND">ND - North Dakota</option>
-        <option value="MP">MP - Northern Mariana Islands</option>
-        <option value="OH">OH - Ohio</option>
-        <option value="OK">OK - Oklahoma</option>
-        <option value="OR">OR - Oregon</option>
-        <option value="PA">PA - Pennsylvania</option>
-        <option value="PR">PR - Puerto Rico</option>
-        <option value="RI">RI - Rhode Island</option>
-        <option value="SC">SC - South Carolina</option>
-        <option value="SD">SD - South Dakota</option>
-        <option value="TN">TN - Tennessee</option>
-        <option value="TX">TX - Texas</option>
-        <option value="UM">UM - United States Minor Outlying Islands</option>
-        <option value="UT">UT - Utah</option>
-        <option value="VT">VT - Vermont</option>
-        <option value="VI">VI - Virgin Islands</option>
-        <option value="VA">VA - Virginia</option>
-        <option value="WA">WA - Washington</option>
-        <option value="WV">WV - West Virginia</option>
-        <option value="WI">WI - Wisconsin</option>
-        <option value="WY">WY - Wyoming</option>
-        <option value="AA">AA - Armed Forces Americas</option>
-        <option value="AE">AE - Armed Forces Africa</option>
-        <option value="AE">AE - Armed Forces Canada</option>
-        <option value="AE">AE - Armed Forces Europe</option>
-        <option value="AE">AE - Armed Forces Middle East</option>
-        <option value="AP">AP - Armed Forces Pacific</option>
-      </select>
-    </div>
-    <label class="usa-label" for="zip">ZIP code</label>
-    <input
-      class="usa-input usa-input--medium"
-      id="zip"
-      name="zip"
-      pattern="[\d]{5}(-[\d]{4})?"
-    />
-    <label class="usa-label" for="google-plus-code">Google Plus Code (e.g., PGX4+XX)</label>
-    <input
-      class="usa-input"
-      id="google-plus-code"
-      name="google-plus-code"
-    />
-     <label class="usa-label" for="urbanization">Urbanization (Puerto Rico only)</label>
-    <input
-      class="usa-input"
-      id="urbanization"
-      name="urbanization"
-    />
-  </fieldset>
-</form>
+    <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/physical-address.html %}{% endhighlight %}</code></pre></figure>
+  </div>
+</div>
 
 {:.border-top-05 .border-primary .margin-top-4 .padding-top-2}
 ## Mailing Address
@@ -370,187 +224,39 @@ Related components
       </div>
     </div>
   </li>
+   <li
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit Toggle"
+  data-meta="Visit Toggle">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg">Checkbox</h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>Checkboxes allow users to select one or more options from a list.</p>
+        <a href="/components/radio-buttons/">Visit Checkbox</a>
+      </div>
+    </div>
+  </li>
 </div>
 
-## Pattern preview
-
-<form class="usa-form usa-form--large">
-  <fieldset class="usa-fieldset">
-    <legend class="usa-legend usa-legend--large">Physical address</legend>
-    <p>
-      Required fields are marked with an asterisk (<abbr
-        title="required"
-        class="usa-hint usa-hint--required"
-        >*</abbr
-      >).
-    </p>
-    <div class="usa-checkbox">
-      <input
-        class="usa-checkbox__input"
-        id="mailing-physical-address-same"
-        type="checkbox"
-        name="Both mailing address and physical address are the same"
-        value="mailing-physical-address-same"
-      />
-      <label class="usa-checkbox__label" for="mailing-physical-address-same">Both mailing address and physical address are the same</label>
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
+  <button class="usa-accordion__button" aria-controls="accordion-preview-02" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
+  <div id="accordion-preview-02" class="usa-accordion__content">
+    {% include patterns/mailing-address.html %}
+  </div>
+</div>
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
+  <button class="usa-accordion__button" aria-controls="accordion-code-02" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
+  <div id="accordion-code-02" class="usa-accordion__content highlight-code">
+    <div class="usa-sr-only">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/mailing-address.html %}</code></pre></figure>
     </div>
-    <label class="usa-label" for="mailing-address-1">Street address</label>
-    <input
-      class="usa-input"
-      id="mailing-address-1"
-      name="mailing-address-1"
-    />
-    <div class="grid-row grid-gap">
-      <div class="mobile-lg:grid-col-8">
-        <label class="usa-label" for="apt-suite-other">Unit type</label>
-        <div class="usa-combo-box">
-          <select
-            class="usa-select"
-            id="apt-suite-other"
-            name="apt-suite-other"
-          >
-            <option value>- Select -</option>
-            <option value="APT">APT - Apartment</option>
-            <option value="BSMT">BSMT - Basement</option>
-            <option value="BLDG">BLDG - Building</option>
-            <option value="DEPT">DEPT - Department</option>
-            <option value="FL">FL - Floor</option>
-            <option value="FRNT">FRNT - Front</option>
-            <option value="HNGR">HNGR - Hanger</option>
-            <option value="KEY">KEY - Key</option>
-            <option value="LBBY">LBBY - Lobby</option>
-            <option value="LOT">LOT - Lot</option>
-            <option value="LOWR">LOWR - Lower</option>
-            <option value="OFC">OFC - Office</option>
-            <option value="OTHER">Other</option>
-            <option value="PH">PH - Penthouse</option>
-            <option value="PIER">PIER - Pier</option>
-            <option value="REAR">REAR - Rear</option>
-            <option value="RM">RM - Room</option>
-            <option value="SIDE">SIDE - Side</option>
-            <option value="SLIP">SLIP - Slip</option>
-            <option value="SPC">SPC - Space</option>
-            <option value="STOP">STOP - Stop</option>
-            <option value="STE">STE - Suite</option>
-            <option value="TRLR">TRLR - Trailer</option>
-            <option value="UNAVAILABLE">Unable to determine</option>
-            <option value="UNIT">UNIT - Unit</option>
-            <option value="UPPR">UPPR - Upper</option>
-          </select>
-        </div>
-      </div>
-      <div class="mobile-lg:grid-col-4">
-        <label class="usa-label" for="apt-floor-suite-no">Unit number</label>
-        <input
-          class="usa-input"
-          id="apt-floor-suite-no"
-          name="apt-floor-suite-no"
-        />
-      </div>
-    </div>
-    <label class="usa-label" for="city"
-      >City
-      <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label
-    >
-    <input class="usa-input" id="city" name="city" required />
-    <label class="usa-label" for="state"
-      >State, territory, or military post
-      <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label
-    >
-    <div class="usa-combo-box">
-      <select class="usa-select" id="state" name="state">
-        <option value>- Select -</option>
-        <option value="AL">AL - Alabama</option>
-        <option value="AK">AK - Alaska</option>
-        <option value="AS">AS - American Samoa</option>
-        <option value="AZ">AZ - Arizona</option>
-        <option value="AR">AR - Arkansas</option>
-        <option value="CA">CA - California</option>
-        <option value="CO">CO - Colorado</option>
-        <option value="CT">CT - Connecticut</option>
-        <option value="DE">DE - Delaware</option>
-        <option value="DC">DC - District of Columbia</option>
-        <option value="FL">FL - Florida</option>
-        <option value="GA">GA - Georgia</option>
-        <option value="GU">GU - Guam</option>
-        <option value="HI">HI - Hawaii</option>
-        <option value="ID">ID - Idaho</option>
-        <option value="IL">IL - Illinois</option>
-        <option value="IN">IN - Indiana</option>
-        <option value="IA">IA - Iowa</option>
-        <option value="KS">KS - Kansas</option>
-        <option value="KY">KY - Kentucky</option>
-        <option value="LA">LA - Louisiana</option>
-        <option value="ME">ME - Maine</option>
-        <option value="MD">MD - Maryland</option>
-        <option value="MA">MA - Massachusetts</option>
-        <option value="MI">MI - Michigan</option>
-        <option value="MN">MN - Minnesota</option>
-        <option value="MS">MS - Mississippi</option>
-        <option value="MO">MO - Missouri</option>
-        <option value="MT">MT - Montana</option>
-        <option value="NE">NE - Nebraska</option>
-        <option value="NV">NV - Nevada</option>
-        <option value="NH">NH - New Hampshire</option>
-        <option value="NJ">NJ - New Jersey</option>
-        <option value="NM">NM - New Mexico</option>
-        <option value="NY">NY - New York</option>
-        <option value="NC">NC - North Carolina</option>
-        <option value="ND">ND - North Dakota</option>
-        <option value="MP">MP - Northern Mariana Islands</option>
-        <option value="OH">OH - Ohio</option>
-        <option value="OK">OK - Oklahoma</option>
-        <option value="OR">OR - Oregon</option>
-        <option value="PA">PA - Pennsylvania</option>
-        <option value="PR">PR - Puerto Rico</option>
-        <option value="RI">RI - Rhode Island</option>
-        <option value="SC">SC - South Carolina</option>
-        <option value="SD">SD - South Dakota</option>
-        <option value="TN">TN - Tennessee</option>
-        <option value="TX">TX - Texas</option>
-        <option value="UM">UM - United States Minor Outlying Islands</option>
-        <option value="UT">UT - Utah</option>
-        <option value="VT">VT - Vermont</option>
-        <option value="VI">VI - Virgin Islands</option>
-        <option value="VA">VA - Virginia</option>
-        <option value="WA">WA - Washington</option>
-        <option value="WV">WV - West Virginia</option>
-        <option value="WI">WI - Wisconsin</option>
-        <option value="WY">WY - Wyoming</option>
-        <option value="AA">AA - Armed Forces Americas</option>
-        <option value="AE">AE - Armed Forces Africa</option>
-        <option value="AE">AE - Armed Forces Canada</option>
-        <option value="AE">AE - Armed Forces Europe</option>
-        <option value="AE">AE - Armed Forces Middle East</option>
-        <option value="AP">AP - Armed Forces Pacific</option>
-      </select>
-    </div>
-    <label class="usa-label" for="zip">ZIP code</label>
-    <input
-      class="usa-input usa-input--medium"
-      id="zip"
-      name="zip"
-      pattern="[\d]{5}(-[\d]{4})?"
-    />
-    <label class="usa-label" for="google-plus-code">Google Plus Code (e.g., PGX4+XX)</label>
-    <input
-      class="usa-input"
-      id="google-plus-code"
-      name="google-plus-code"
-    />
-     <label class="usa-label" for="urbanization">Urbanization (Puerto Rico only)</label>
-    <input
-      class="usa-input"
-      id="urbanization"
-      name="urbanization"
-    />
-  </fieldset>
-</form>
-
-<h3 class="site-preview-heading">Default breadcrumb</h3>
-{% capture breadcrumb %}
-  {% library_component usa-breadcrumb %}
-{% endcapture %}{{ breadcrumb | strip }}
+    <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/mailing-address.html %}{% endhighlight %}</code></pre></figure>
+  </div>
+</div>
 
 ## Related pattern
 <a href="/patterns/complete-a-profile/name/">Name</a>

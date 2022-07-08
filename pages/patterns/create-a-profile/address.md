@@ -259,7 +259,7 @@ Related components
 </div>
 
 ## Related pattern
-<a href="/patterns/complete-a-profile/name/">Name</a>
+<a href="/patterns/create-a-profile/name/">Name</a>
 
 ## References
 - <a href="https://maps.google.com/pluscodes/">Google Plus Codes</a>

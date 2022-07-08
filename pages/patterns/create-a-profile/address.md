@@ -1,6 +1,6 @@
 ---
 title: Enter their address
-permalink: /patterns/complete-a-profile/address/
+permalink: /patterns/create-a-profile/address/
 layout: styleguide
 category: Patterns
 lead: The physical and mailing address patterns help users to enter their address successfully.
@@ -224,7 +224,7 @@ Related components
       </div>
     </div>
   </li>
-   <li
+  <li
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"

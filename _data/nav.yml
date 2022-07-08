@@ -79,10 +79,11 @@ Components:
 Patterns:
   - text: Patterns
     href: /patterns/
-  - text: Inclusivity
-    href: /patterns/inclusivity/
-  - text: Complete a profile
-    href: /patterns/complete-a-profile/
+  - text: Inclusive Design
+    href: /patterns/inclusive-design/
+  - text: Help users to...
+  - text: Create a user profile
+    href: /patterns/create-a-profile/
 
 How to use USWDS:
   - href: /how-to-use-uswds/

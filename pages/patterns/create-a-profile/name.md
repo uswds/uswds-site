@@ -1,6 +1,6 @@
 ---
 title: Name
-permalink: /patterns/complete-a-profile/name/
+permalink: /patterns/create-a-profile/name/
 layout: styleguide
 category: Patterns
 lead: The name pattern makes it as easy as possible for users to enter their name in the format required to validate their identity and to allow the collection of name elements in the most effective and least intrusive manner possible.
@@ -109,30 +109,17 @@ Related components
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
   <div id="accordion-preview" class="usa-accordion__content">
-    <form class="usa-form usa-form--large">
-      <fieldset class="usa-fieldset">
-        <legend class="usa-legend usa-legend--large">Name</legend>
-        <p>
-          Required fields are marked with an asterisk (<abbr title="required" class="usa-hint usa-hint--required">*</abbr>).
-        </p>
-        <label class="usa-label" for="given-name">Given name
-          <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
-        <input class="usa-input usa-input--xl" id="given-name" name="first-name" required="" aria-required="true">
-        <label class="usa-label" for="middle-name">Middle name</label>
-        <input class="usa-input usa-input--xl" id="middle-name" name="middle-name">
-        <label class="usa-label" for="family-name">Family name
-          <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
-        <input class="usa-input usa-input--xl" id="family-name" name="last-name" required="" aria-required="true">
-          <label class="usa-label" for="last-name">Full name
-          <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
-        <input class="usa-input usa-input--xl" id="last-name" name="last-name" required="" aria-required="true">
-      </fieldset>
-    </form>
+    {% include patterns/name.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
-  <div id="accordion-code" class="usa-accordion__content"><figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/name.html %}</code></pre></figure></div>
+  <div id="accordion-code" class="usa-accordion__content highlight-code">
+    <div class="usa-sr-only">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/name.html %}</code></pre></figure>
+    </div>
+    <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/name.html %}{% endhighlight %}</code></pre></figure>
+  </div>
 </div>
 
 ## References

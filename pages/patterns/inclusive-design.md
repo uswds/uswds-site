@@ -1,9 +1,9 @@
 ---
-title: Inclusivity
-permalink: /patterns/inclusivity/
+title: Inclusive Design
+permalink: /patterns/inclusive-design
 layout: styleguide
 category: Patterns
-lead: Inclusivity
+lead: Inclusive Design
 ---
 
 ## Diversity

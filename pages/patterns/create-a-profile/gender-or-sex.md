@@ -1,6 +1,6 @@
 ---
 title: Select their gender or sex
-permalink: /patterns/complete-a-profile/gender-or-sex/
+permalink: /patterns/create-a-profile/gender-or-sex/
 layout: styleguide
 category: Patterns
 lead: The Sex or Gender pattern helps users to feel comfortable and confident that their information is being used to identify them the way they choose or in a manner that will assist the user.
@@ -102,12 +102,12 @@ Provide direction on how to complete the form and what to do if the information 
 
 Label Gender field:
 - Gender Identity:
+  - Prefer not to answer
 
 Biological Sex selection fields:
 - Male
 - Female
 - X
-- Prefer Not to answer 
 
 ## Ingredients
 Related components
@@ -142,6 +142,22 @@ Related components
       <div class="usa-card__body font-lang-sm">
         <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
         <a href="/components/text-input/">Visit Text input</a>
+      </div>
+    </div>
+  </li>
+  <li
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit Toggle"
+  data-meta="Visit Toggle">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg">Checkbox</h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>Checkboxes allow users to select one or more options from a list.</p>
+        <a href="/components/radio-buttons/">Visit Checkbox</a>
       </div>
     </div>
   </li>

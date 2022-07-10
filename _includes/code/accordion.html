@@ -1,5 +1,4 @@
 {% assign level = include.level | default: "h3" %}
-<div id="component-code">
 <div class="usa-accordion usa-accordion--bordered site-accordion-code">
   {% assign _id = include.component | append: '-code' %}
   {% assign _content_id = include.component | append: '-code-content' %}
@@ -7,5 +6,4 @@
   <div id="{{ _content_id }}" class="usa-accordion__content">
     {% include code/syntax.html component=include.component %}
   </div>
-</div>
 </div>

@@ -1,19 +1,19 @@
 ---
-title: Select their ethnicity or race
-permalink: /patterns/create-a-profile/ethnicity-or-race/
+title: Provide their race or ethnicity
+permalink: /patterns/create-a-profile/race-or-ethnicity/
 layout: styleguide
 category: Patterns
-lead: Ethnicity or Race.
+lead: The race and ethnicity pattern allows users to provide race and ethnicity information in the most accurate and respectful manner possible.
 ---
 
 ## What problem does this solve?
-A name or sex are not indicative of how a person identifies or prefers to be addressed. Allowing users to choose their pronouns creates a comfortable environment by removing the potential for frustration and alienation.
+Race and ethnicity can be challenging information for a user to provide, especially when choices are limited or do not align with how an individual self-identifies their race and ethnicity. Collecting race and ethnicity information can be, however, very valuable when seeking to better understand issues of equity and how perception can result in disparities in incarceration rates, income, housing, employment, health care, education, and more. Respect for individual dignity should guide the methods for collecting data on race and ethnicity. 
  
 ### When to use this pattern 
-Follow this pattern when you are planning on referring to the person using pronouns instead of their name.
+Follow this pattern when you need to ask for a user's race and/or ethnicity as part of your service or program. Only ask for this information if you need it.
 
 ### What's the solution
-Provide a free-form field that supports a rich array of special characters and accents that allows the user to inform you of their identity.
+Allow selection of more than one race and acknowledge people with multiple racial backgrounds. Provide direction on how to complete the form, e.g., “Select one or more” or "Select all that apply" explanatory text. Whenever possible, allow respondents to self-identify their ethnicity through an open-ended text entry field.
 
 ## Guidance
 

@@ -9,7 +9,7 @@ subnav:
   # - href: /patterns/create-a-profile/date-of-birth/
   - href: /patterns/create-a-profile/gender-or-sex/
   - href: /patterns/create-a-profile/preferred-pronouns/
-  - href: /patterns/create-a-profile/ethnicity-or-race/
+  - href: /patterns/create-a-profile/race-or-ethnicity/
   - href: /patterns/create-a-profile/address/
 ---
 ## Why this matters
@@ -61,6 +61,21 @@ effective communications methods are used to share information with the person c
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>The Pronouns pattern assists users to feel confident that they will be addressed the way they identify.</p>
+      </div>
+    </div>
+  </li>
+   <li
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit Toggle"
+  data-meta="Visit Toggle">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/create-a-profile/race-or-ethnicity/">Provide their race or ethnicity</a></h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>The race and ethnicity pattern allows users to provide race and ethnicity information in the most accurate and respectful manner possible.</p>
       </div>
     </div>
   </li>

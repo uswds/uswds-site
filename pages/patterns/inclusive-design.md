@@ -1,6 +1,6 @@
 ---
 title: Inclusive Design
-permalink: /patterns/inclusive-design
+permalink: /patterns/inclusive-design/
 layout: styleguide
 category: Patterns
 lead: Inclusive Design

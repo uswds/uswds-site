@@ -81,9 +81,11 @@ Patterns:
     href: /patterns/
   - text: Inclusive Design
     href: /patterns/inclusive-design/
-  # - text: Help users to...
+  - text: Help users to...
   - text: Create a user profile
     href: /patterns/create-a-profile/
+  - text: Complete a complex form
+    href: /patterns/complex-form/
 
 How to use USWDS:
   - href: /how-to-use-uswds/

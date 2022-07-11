@@ -1,6 +1,6 @@
 ---
 title: Complete a complex form
-permalink: /patterns/complex-form
+permalink: /patterns/complex-form/
 layout: styleguide
 category: Patterns
 lead: Help a user to complete a complex form

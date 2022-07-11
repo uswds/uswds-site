@@ -21,7 +21,7 @@ Consectetur adipiscing elit. Sodales morbi mollis neque, a, fermentum eget eget.
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg"><a href="/patterns/create-a-profile/">Create a user profile</a></h3>
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/create-a-profile/">Create a user profile</a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>User profiles are central to a person’s identity. A user profile may be integral to proving identity, qualifying for and receiving support and services from the government, and ensuring that effective communications methods are used to share information with the person creating a user profile.</p>
@@ -36,7 +36,7 @@ Consectetur adipiscing elit. Sodales morbi mollis neque, a, fermentum eget eget.
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg"><a href="/components/complex-form">Complete a complex form</a></h3>
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/complex-form/">Complete a complex form</a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Make sure users know what they'll need, ease their cognitive load, and provide piece of mind</p>

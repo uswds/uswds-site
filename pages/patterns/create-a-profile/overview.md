@@ -9,6 +9,7 @@ subnav:
   # - href: /patterns/create-a-profile/date-of-birth/
   - href: /patterns/create-a-profile/gender-or-sex/
   - href: /patterns/create-a-profile/preferred-pronouns/
+  - href: /patterns/create-a-profile/ethnicity-or-race/
   - href: /patterns/create-a-profile/address/
 ---
 ## Why this matters
@@ -26,7 +27,7 @@ effective communications methods are used to share information with the person c
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg"><a href="/patterns/create-a-profile/name/">Enter their name</a></h3>
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/create-a-profile/name/">Enter their name</a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>The name pattern makes it as easy as possible for users to enter their name in the format required to validate their identity and to allow the collection of name elements in the most effective and least intrusive manner possible.</p>
@@ -41,7 +42,7 @@ effective communications methods are used to share information with the person c
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg"><a href="/patterns/create-a-profile/gender-or-sex/">Select their gender or sex</a></h3>
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/create-a-profile/gender-or-sex/">Select their gender or sex</a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>The Sex or Gender pattern helps users to feel comfortable and confident that their information is being used to identify them the way they choose or in a manner that will assist the user.</p>
@@ -56,7 +57,7 @@ effective communications methods are used to share information with the person c
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg"><a href="/patterns/create-a-profile/preferred-pronouns/">Select their preferred pronoun</a></h3>
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/create-a-profile/preferred-pronouns/">Select their preferred pronoun</a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>The Pronouns pattern assists users to feel confident that they will be addressed the way they identify.</p>
@@ -71,7 +72,7 @@ effective communications methods are used to share information with the person c
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg"><a href="/patterns/create-a-profile/address/">Enter their address</a></h3>
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/create-a-profile/address/">Enter their address</a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>The physical and mailing address patterns help users to enter their address successfully.</p>
@@ -86,7 +87,7 @@ effective communications methods are used to share information with the person c
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg"><a href="/patterns/create-a-profile/address/">Enter their date of birth</a></h3>
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/create-a-profile/address/">Enter their date of birth</a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Date of birth</p>
@@ -101,7 +102,7 @@ effective communications methods are used to share information with the person c
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg"><a href="/patterns/create-a-profile/address/">Enter their social security number</a></h3>
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/create-a-profile/address/">Enter their social security number</a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>SSN</p>

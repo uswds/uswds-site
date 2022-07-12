@@ -1,5 +1,5 @@
 ---
-title: Provide their race or ethnicity
+title: Race or ethnicity
 permalink: /patterns/create-a-profile/race-or-ethnicity/
 layout: styleguide
 category: Patterns

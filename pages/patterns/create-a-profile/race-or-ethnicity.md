@@ -24,13 +24,12 @@ Allow selection of more than one race and acknowledge people with multiple racia
       <h3 class="do-dont__heading">What to do</h3>
         <div class="do-dont__content">
           <ul>
-            <li>Do understand why you are collecting this information.</li>
-            <li>Do provide examples. Many cisgendered people may not be familiar with the concept of preferred pronouns.</li>
-            <li>Do provide an open text field. Language is evolving and forced choice can make a user feel as though they need to fit themselves into a group determined by the designer.</li>
-            <li>Do allow both upper and lowercase letters throughout each field.</li>
-            <li>Allow users to enter hyphens, apostrophes, and blank spaces in each field.</li>
-            <li>Do support long text fields for each name. Allow users to enter up to 128 characters per field. You may choose not to display an empty field of that length.</li>
-            <li>Do be prepared for a complex answer.</li>
+            <li>Do explain why race and ethnicity information is being collected, and how this information will be used.</li>
+            <li>Do allow users to select more than one race and ethnicity.</li>
+            <li>Do allow an open-ended text entry field when ethnicity information is requested.</li>
+            <li>Do include the ability to opt out of providing this information.</li>
+            <li>Do consider gender-neutral options when listing ethnicities. As an example, Latino encompasses both Hispanic and Latin-American ethnicities but has an implied masculine gender. Consider using "Hispanic" or "Latin American" choices instead. As gender-neutral options like Latino/a/x/e grow in use and adoption, this recommendation will likely change.</li>
+            <li>Do consider whether the information you are collecting is best collected via <a href="https://www.federalregister.gov/d/2016-23672/p-18">separate questions vs. a combined race/ethnicity question.</a></li>
           </ul> 
         </div>
       </div>
@@ -41,9 +40,9 @@ Allow selection of more than one race and acknowledge people with multiple racia
     <h3 class="do-dont__heading">What not to do</h3>
       <div class="do-dont__content">
           <ul>
-            <li>Do not make the field mandatory. While the information can be helpful, there are neutral options that can be used.</li>
-            <li>Do not assume pronouns. If a user chooses not to answer, default to the use of they/them.</li>
-            <li>Do not overwhelm the user with options. Sometimes a user does not fit into a defined field and sometimes they can fit into many. This can also enforce limitations to a person’s identity.</li>
+            <li>Do not restrict choices to a single race or ethnicity.</li>
+            <li>Do not require the user to answer. Provide an option like “Prefer not to say.”</li>
+            <li>Do not capture race or ethnicity information for operational or generalization purposes. Understanding that a majority of your webinar attendees self-identify as Hispanic does not mean that Hispanic people enjoy webinars.</li>
           </ul>
       </div>
     </div>
@@ -52,58 +51,109 @@ Allow selection of more than one race and acknowledge people with multiple racia
 
 ## Considerations
 ### Whether you need this data
-<b>Confirm you need this information.</b> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
+<b>Confirm you need this information.</b> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user's privacy and safety.
 
-<b>If you don't need a controlled vocabulary.</b> Consider allowing for user self-identification with an open-ended text field. Users should also have the ability to opt out of providing this information.
+### What to use
+<b>If you don't need a controlled vocabulary.</b> If you don't need to restrict the list of race or ethnicities to a specified data collection requirement, consider allowing for user self-identification with an open-ended text field. Users should also have the ability to opt out of providing this information.
+
+<b>If the information being collected is intended to be used for statistical, administrative, or compliance purposes.</b> If the intent of your data collection requires race and ethnicity to be mapped to a fixed minimum set of categories, refer to OMB’s <a href="https://www.federalregister.gov/d/2016-23672/p-27">Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity (9/30/2016)</a>, which encourages the collection of detailed race and ethnicity information provided it can be aggregated into the minimum categories. 
+
+### Special use cases
+<b>If you are collecting information on a family.</b> Do not assume that partners or dependents of the person completing the form will identify as the same race or ethnicity.
+<b>If you will be displaying race and/or ethnicity in a list.</b> Always treat racial and ethnic groups as proper nouns and capitalize them. Consider the order list items appear to avoid the perception of bias or favoritism. 
 
 ## Usability Guidance
 
-Label Pronouns field:
-- Pronouns
+Label for Race field:
+- Race (Select all that apply)
+
+Label for Ethnicity field:
+- Ethnicity (Select all that apply)
+
+Label for combined Race and ethnicity field (see potential checkbox items list below):
+- Which of the following best describes you?
+
+Label for open-ended self-identification text input:
+- I identify my ethnicity as
+
+Label for opt out of providing requested information:
+- Prefer not to say
+
+Combined Race and ethnicity checkbox items:
+- Asian or Pacific Islander
+- Black or African American
+- Hispanic or Latinx
+- Native American or Alaskan Native
+- White or Caucasian
+- Multiracial or Biracial
+- A race/ethnicity not listed here
+- Prefer not to say
+
+
 
 ## Ingredients
 Related components
 
 <div class="usa-card-group flex-row margin-top-2">
-    <li
-    class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
-    role="region"
-    aria-atomic="true"
-    aria-label="Visit Toggle"
-    data-meta="Visit Toggle">
-        <div class="usa-card__container">
-        <header class="usa-card__header">
-            <h3 class="usa-card__heading font-lang-lg">Text Input</h3>
-        </header>
-        <div class="usa-card__body font-lang-sm">
-            <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
-            <a href="/components/text-input/">Visit Text input</a>
-        </div>
-        </div>
-    </li>
+  <li
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit Toggle"
+  data-meta="Visit Toggle">
+      <div class="usa-card__container">
+      <header class="usa-card__header">
+          <h3 class="usa-card__heading font-lang-lg">Checkbox</h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+          <p>Checkboxes allow users to select one or more options from a list.</p>
+          <a href="/components/checkbox/">Visit Checkbox</a>
+      </div>
+      </div>
+  </li>
+  <li
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit Toggle"
+  data-meta="Visit Toggle">
+      <div class="usa-card__container">
+      <header class="usa-card__header">
+          <h3 class="usa-card__heading font-lang-lg">Text Input</h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+          <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
+          <a href="/components/text-input/">Visit Text input</a>
+      </div>
+      </div>
+  </li>
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
   <div id="accordion-preview" class="usa-accordion__content">
-    {% include patterns/pronouns.html %}
+    {% include patterns/race-or-ethnicity.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
   <div id="accordion-code" class="usa-accordion__content highlight-code">
     <div class="usa-sr-only">
-      <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/pronouns.html %}</code></pre></figure>
+      <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/race-or-ethnicity.html %}</code></pre></figure>
     </div>
-    <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/pronouns.html %}{% endhighlight %}</code></pre></figure>
+    <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/race-or-ethnicity.html %}{% endhighlight %}</code></pre></figure>
   </div>
 </div>
 
 ## References
-- <a href="http://www.practicemakesprogress.org/blog/2015/9/18/asking-about-gender-on-online-forms">Asking about gender on online forms</a>
-- <a href="https://equity.ubc.ca/resources/gender-diversity/inclusive-forms/">Inclusive Forms</a>
-- <a href="https://www.keshetonline.org/resources/whats-in-a-pronoun/">https://www.keshetonline.org/resources/whats-in-a-pronoun/</a- >
-- <a href="https://uxdesign.cc/designing-forms-for-gender-diversity-and-inclusion-d8194cf1f51">Designing forms for gender diversity and inclusion</a>
+- <a href="https://www.census.gov/topics/population/race/about.html">About the Topic of Race</a> (U.S. Census Bureau)
+- <a href="https://www.census.gov/about/our-research/race-ethnicity.html">Research to Improve Data on Race and Ethnicity</a> (U.S. Census Bureau)
+- <a href="https://www.census.gov/programs-surveys/decennial-census/decade/2020/planning-management/plan/content-research.html">Content Research</a> (U.S. Census Bureau)
+- <a href="https://www.census.gov/programs-surveys/decennial-census/decade/2010/program-management/cpex/2010-cpex-211.html">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</a> (U.S. Census Bureau)
+- <a href="https://www2.census.gov/programs-surveys/decennial/2020/program-management/final-analysis-reports/2015nct-race-ethnicity-analysis.pdf">2015 National Content Test Race and Ethnicity Analysis Report</a> (U.S. Census Bureau)
+- <a href="https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf">Revisions to the Standards for the Classification of Federal Data on Race and Ethnicity</a>
+- <a href="https://www.federalregister.gov/documents/2016/09/30/2016-23672/standards-for-maintaining-collecting-and-presenting-federal-data-on-race-and-ethnicity">Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity</a>
+
 
 ## Changelog
-- Created 07.01.22
+- Created 06.27.22

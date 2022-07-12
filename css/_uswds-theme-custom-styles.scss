@@ -95,6 +95,10 @@ body {
   color: color($site-ink);
 }
 
+img {
+  height: auto;
+}
+
 .layout-styleguide {
   @include u-bg($site-background-color);
 }
@@ -3473,7 +3477,7 @@ body {
   @include u-bg("base-lightest");
   @include u-padding-bottom(4);
   @include u-padding-x(0);
-  background-image: url("../img/introducing-uswds-2-0/feature-image.png");
+  background-image: url("../img/webp/introducing-uswds-2-0/feature-image.webp");
   background-repeat: no-repeat;
   background-position: 0 units(2);
   background-size: 100% auto;

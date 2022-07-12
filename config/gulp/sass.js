@@ -14,8 +14,8 @@ const entrypoints = {
     components: "./assets/css/uswds-components.css",
     custom: "./assets/css/uswds-custom.css",
     fonts: "./assets/css/uswds-fonts.css",
-    next: "./assets/css/uswds-next.css",
     utilities: "./assets/css/uswds-utilities.css",
+    next: "./assets/css/uswds-next.css",
   },
 };
 
@@ -25,18 +25,10 @@ const entrypoints = {
  * @param {*} outputName - string of output file name
  * @returns - outputName.css
  */
-function compileProdStyles(
+function compileProdCSS(
   cssEntrypoints,
   outputName = "styles.css"
 ) {
-  // Entry points for main site (everything except Next)
-  cssEntrypoints = [
-    entrypoints.css.components,
-    entrypoints.css.custom,
-    entrypoints.css.fonts,
-    entrypoints.css.utilities
-  ];
-
   return gulp
     .src(cssEntrypoints)
     .pipe(
@@ -52,6 +44,18 @@ function compileProdStyles(
     .pipe(gulp.dest("_site/assets/css"));
 }
 
+// Compiles everything **except** next styles
+function compileProdStyles() {
+  const cssEntrypoints = [
+    entrypoints.css.components,
+    entrypoints.css.custom,
+    entrypoints.css.fonts,
+    entrypoints.css.utilities,
+  ];
+
+  return compileProdCSS(cssEntrypoints, "styles.css");
+}
+
 /**
  * Uses compileProdStyles() function to compile **all** CSS for Next Report
  */
@@ -59,7 +63,7 @@ function compileProdNextStyles() {
   // Object.values returns an array of values from our entrypoints.css object
   const allCSSEntrypoints = Object.values(entrypoints.css);
 
-  return compileProdStyles(allCSSEntrypoints, "styles-next.css");
+  return compileProdCSS(allCSSEntrypoints, "styles-next.css");
 }
 
 async function lint(done) {

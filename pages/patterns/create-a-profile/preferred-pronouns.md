@@ -1,5 +1,5 @@
 ---
-title: Select their preferred pronoun
+title: Preferred pronoun
 permalink: /patterns/create-a-profile/preferred-pronouns/
 layout: styleguide
 category: Patterns

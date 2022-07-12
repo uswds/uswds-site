@@ -1,5 +1,5 @@
 ---
-title: Select their gender or sex
+title: Gender or sex
 permalink: /patterns/create-a-profile/gender-or-sex/
 layout: styleguide
 category: Patterns

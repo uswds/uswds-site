@@ -1,5 +1,5 @@
 ---
-title: Enter their address
+title: Address
 permalink: /patterns/create-a-profile/address/
 layout: styleguide
 category: Patterns

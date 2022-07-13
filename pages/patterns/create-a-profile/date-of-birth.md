@@ -9,10 +9,10 @@ lead: This pattern allows users to easily enter their date of birth or memorable
 ## What problem does this solve?
 Age in many cultures can be different than what is portrayed in the United States; by asking for the date of birth, you can collect the correct data for your needs. There are also many competing patterns for date entry that make it difficult for the user to enter correct dates within complicated and inconsistent interfaces. 
 
-### When to use this pattern 
+## When to use this pattern 
 Use this pattern when you need to confirm a user's identity by asking for their date of birth or age or when asking for any memorable date.
 
-### What's the solution
+## What's the solution
 Three text fields provide an inclusive digital experience that allow users to move through the section with ease. By providing the information for each field with an open text field users will be able to understand what is being asked and not struggle to input the information.
 
 
@@ -69,7 +69,6 @@ Three text fields provide an inclusive digital experience that allow users to mo
 <b>Use “text” instead of “number” inputs.</b> Research indicates that <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">numeric inputs still carry many usability problems</a>, according to the gov.uk Technology in Government blog. 
 
 ## Ingredients
-Related components
 
 <div class="usa-card-group flex-row margin-top-2">
   <li

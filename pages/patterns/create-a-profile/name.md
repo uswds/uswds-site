@@ -128,5 +128,3 @@ Related components
 
 ## Changelog
 - Created 06.21.22
-
-

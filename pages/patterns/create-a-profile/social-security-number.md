@@ -99,10 +99,12 @@ Related components
 </div>
 
 ## References
-- <a href="https://designsystem.digital.gov/components/memorable-date/">Components-memorable date</a>, USWDS
-- <a href="https://design-system.service.gov.uk/patterns/dates/">Dates</a>, Gov.uk
-- <a href="https://designnotes.blog.gov.uk/2013/12/05/asking-for-a-date-of-birth/">Asking for a date of birth</a>, Gov.uk
-- <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">Why the GOV.UK Design System team changed the input type for numbers</a>, Gov.uk
+- <a href="https://design.cms.gov/components/masked-field">Masked Field</a>, CMS Design 
+- <a href="https://design-system.service.gov.uk/patterns/national-insurance-numbers/">National Insurance Numbers</a>, Gov.uk 
+- <a href="https://www.nngroup.com/articles/form-design-placeholders/">Placeholders in a form field</a>, nngroup 
+- <a href="https://baymard.com/learn/input-fields">8 Recommendations for Creating effective input fields</a>, Baymard 
+- <a href="https://baymard.com/blog/mobile-form-usability-single-input-fields">Mobile Form Usability: Avoid Splitting Single Input Entities</a>, Baymard 
+- <a href="https://baymard.com/blog/input-masking-form-field">Consider Using Localized Input Masks for ‘Phone” and Other Restricted Inputs</a>, Bayard 
 
 ## Changelog
 - Created 07.07.22

@@ -9,20 +9,20 @@ lead: The Sex or Gender pattern helps users to feel comfortable and confident th
 ## What problem does this solve?
 Many times, sex and gender are used synonymously and users have struggled to provide the accurate information that best identifies and/or represents them with the limited or overwhelming amount of provided options.
 
-Sex assigned at birth is a biological aspect and does not represent how an individual identifies. In the digital space, Male and Female are often the provided options, but there are instances where an individual is born with both sexual characteristics. 
+Sex assigned at birth is a biological aspect and does not represent how an individual identifies. In the digital space, male and female are often the provided options, but there are instances where an individual is born with both sexual characteristics. 
 
 Gender is an expression of a user’s identity and is integral to their sense of self. There is an infinite variety of gendered experience in the world.
  
-### When to use this pattern 
+## When to use this pattern 
 Follow this pattern when you are collecting sex or gender as part of your service. Only ask for the sex and/or gender if you need it. Sometimes it’s more beneficial to skip this pattern altogether.
 
-### What's the solution
+## What's the solution
 Provide Sex and/or Gender if needed and present the user with the environment to accurately depict their identity. 
 
 Provide direction on how to complete the form and what to do if the information doesn’t fit into the provided format.
 
 ## Guidance
-### When you need to collect Sex
+### When you need to collect Biological Sex
 
 <div class="grid-row grid-gap-3">
   <div class="tablet:grid-col-5">
@@ -110,7 +110,6 @@ Biological Sex selection fields:
 - X
 
 ## Ingredients
-Related components
 
 <div class="usa-card-group flex-row margin-top-2">
   <li

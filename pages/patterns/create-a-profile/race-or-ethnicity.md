@@ -9,10 +9,10 @@ lead: The race and ethnicity pattern allows users to provide race and ethnicity 
 ## What problem does this solve?
 Race and ethnicity can be challenging information for a user to provide, especially when choices are limited or do not align with how an individual self-identifies their race and ethnicity. Collecting race and ethnicity information can be, however, very valuable when seeking to better understand issues of equity and how perception can result in disparities in incarceration rates, income, housing, employment, health care, education, and more. Respect for individual dignity should guide the methods for collecting data on race and ethnicity. 
  
-### When to use this pattern 
+## When to use this pattern 
 Follow this pattern when you need to ask for a user's race and/or ethnicity as part of your service or program. Only ask for this information if you need it.
 
-### What's the solution
+## What's the solution
 Allow selection of more than one race and acknowledge people with multiple racial backgrounds. Provide direction on how to complete the form, e.g., “Select one or more” or "Select all that apply" explanatory text. Whenever possible, allow respondents to self-identify their ethnicity through an open-ended text entry field.
 
 ## Guidance
@@ -56,7 +56,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
 ### What to use
 <b>If you don't need a controlled vocabulary.</b> If you don't need to restrict the list of race or ethnicities to a specified data collection requirement, consider allowing for user self-identification with an open-ended text field. Users should also have the ability to opt out of providing this information.
 
-<b>If the information being collected is intended to be used for statistical, administrative, or compliance purposes.</b> If the intent of your data collection requires race and ethnicity to be mapped to a fixed minimum set of categories, refer to OMB’s <a href="https://www.federalregister.gov/d/2016-23672/p-27">Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity (9/30/2016)</a>, which encourages the collection of detailed race and ethnicity information provided it can be aggregated into the minimum categories. 
+<b>If the information being collected is intended to be used for statistical, administrative, or compliance purposes.</b> If the intent of your data collection requires race and ethnicity to be mapped to a fixed minimum set of categories, refer to OMB’s <a class="display-inline" href="https://www.federalregister.gov/d/2016-23672/p-27">Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity (9/30/2016)</a>, which encourages the collection of detailed race and ethnicity information provided it can be aggregated into the minimum categories. 
 
 ### Special use cases
 <b>If you are collecting information on a family.</b> Do not assume that partners or dependents of the person completing the form will identify as the same race or ethnicity.
@@ -92,7 +92,6 @@ Combined Race and ethnicity checkbox items:
 
 
 ## Ingredients
-Related components
 
 <div class="usa-card-group flex-row margin-top-2">
   <li
@@ -151,8 +150,8 @@ Related components
 - <a href="https://www.census.gov/programs-surveys/decennial-census/decade/2020/planning-management/plan/content-research.html">Content Research</a> (U.S. Census Bureau)
 - <a href="https://www.census.gov/programs-surveys/decennial-census/decade/2010/program-management/cpex/2010-cpex-211.html">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</a> (U.S. Census Bureau)
 - <a href="https://www2.census.gov/programs-surveys/decennial/2020/program-management/final-analysis-reports/2015nct-race-ethnicity-analysis.pdf">2015 National Content Test Race and Ethnicity Analysis Report</a> (U.S. Census Bureau)
-- <a href="https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf">Revisions to the Standards for the Classification of Federal Data on Race and Ethnicity</a>
-- <a href="https://www.federalregister.gov/documents/2016/09/30/2016-23672/standards-for-maintaining-collecting-and-presenting-federal-data-on-race-and-ethnicity">Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity</a>
+- <a class="display-inline" href="https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf">Revisions to the Standards for the Classification of Federal Data on Race and Ethnicity</a>
+- <a class="display-inline" href="https://www.federalregister.gov/documents/2016/09/30/2016-23672/standards-for-maintaining-collecting-and-presenting-federal-data-on-race-and-ethnicity">Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity</a>
 
 
 ## Changelog

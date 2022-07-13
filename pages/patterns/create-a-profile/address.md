@@ -11,13 +11,13 @@ lead: The physical and mailing address patterns help users to enter their addres
 ## What problem does this solve?
 While most addresses in the U.S. follow a specific pattern, there are unique variations in some rural areas and the U.S. territories. In addition, some people are unhoused or in temporary housing, and may need to specify a mailing address that is different from their physical address —  particularly in disaster relief and recovery situations.
 
-{:.border-top-05 .border-primary .margin-top-4 .padding-top-2}
+{:.site-component-section-title}
 ## Physical Address
 
-### When to use this pattern 
+## When to use this pattern 
 Use this pattern when you need to parse out the specific parts of the address and you need the physical location of an individual. This may be important when determining benefits eligibility, for disaster recovery purposes, or other reasons. Since physical addresses may be temporary, consider asking for a mailing address, too.
 
-### When to consider something else
+## When to consider something else
 If you need to collect addresses that may not fit this format (for example, international addresses for citizens living overseas) consider using something else.
 
 If you don’t need to be able to parse out the individual pieces of an address, consider letting users type the entire address into one large text area.
@@ -76,7 +76,6 @@ Provide all the fields needed for a user to provide a physical address, even if 
 <b>Support both five- and nine-digital ZIP codes.</b> Some addresses require a nine-digital ZIP code. If you would like to use an input mask, it should be “#####-####” so that the text is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code.
 
 ## Ingredients
-Related components
 
 <div class="usa-card-group flex-row margin-top-2">
   <li
@@ -129,7 +128,7 @@ Related components
   </div>
 </div>
 
-{:.border-top-05 .border-primary .margin-top-4 .padding-top-2}
+{:.site-component-section-title}
 ## Mailing Address
 
 ### When to use this pattern 
@@ -189,7 +188,6 @@ Provide all the fields a user needs to successfully enter a mailing address.
 <b>Support both five- and nine-digital ZIP codes.</b> Some addresses require a nine-digital ZIP code. If you would like to use an input mask, it should be “#####-####” so that the text is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code.
 
 ## Ingredients
-Related components
 
 <div class="usa-card-group flex-row margin-top-2">
   <li

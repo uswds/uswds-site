@@ -9,10 +9,10 @@ lead: The Pronouns pattern assists users to feel confident that they will be add
 ## What problem does this solve?
 A name or sex are not indicative of how a person identifies or prefers to be addressed. Allowing users to choose their pronouns creates a comfortable environment by removing the potential for frustration and alienation.
  
-### When to use this pattern 
+## When to use this pattern 
 Follow this pattern when you are planning on referring to the person using pronouns instead of their name.
 
-### What's the solution
+## What's the solution
 Provide a free-form field that supports a rich array of special characters and accents that allows the user to inform you of their identity.
 
 ## Guidance
@@ -62,7 +62,6 @@ Label Pronouns field:
 - Pronouns
 
 ## Ingredients
-Related components
 
 <div class="usa-card-group flex-row margin-top-2">
     <li

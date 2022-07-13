@@ -9,10 +9,10 @@ lead: The social security number pattern allows users to easily enter their soci
 ## What problem does this solve?
 A social security number is often a critical piece of validating identity when applying for government services or benefits. While most U.S. citizens and eligible U.S. residents have a social security number, some people may not know their social security number, or may not lack the necessary documentation to easily obtain one. 
 
-### When to use this pattern 
+## When to use this pattern 
 Only use this pattern when you need to confirm a user's identity by asking for their social security number. This information may be important when determining eligibility for many federal programs, such as federal student loans, public assistance, and Medicare.
 
-### When to consider something else
+## When to consider something else
 If you do not specifically need a person’s social security number, do not ask for or collect this information. The social security number is intricately linked to a person’s identity, and should only be used when absolutely required for identification purposes.
 
 
@@ -61,7 +61,6 @@ Provide a single text field to enter the social security number.
 <b>Consider using an input mask.</b> If you use an input mask, it should be “###-##-####” so that the social security number maps to users' experience with social security numbers and is properly formatted. Input masks can help a user more confidently fill out restricted fields, reduce  user anxiety about making a mistake, and reduce validation errors and web form abandonment, particularly on mobile devices.
 
 ## Ingredients
-Related components
 
 <div class="usa-card-group flex-row margin-top-2">
   <li

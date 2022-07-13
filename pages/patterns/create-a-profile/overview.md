@@ -5,12 +5,13 @@ layout: styleguide
 category: Patterns
 lead: Help a user to create a user profile
 subnav:
-  - href: /patterns/create-a-profile/name/
+  - href: /patterns/create-a-profile/address/
   - href: /patterns/create-a-profile/date-of-birth/
   - href: /patterns/create-a-profile/gender-or-sex/
+  - href: /patterns/create-a-profile/name/
   - href: /patterns/create-a-profile/preferred-pronouns/
   - href: /patterns/create-a-profile/race-or-ethnicity/
-  - href: /patterns/create-a-profile/address/
+  - href: /patterns/create-a-profile/social-security-number/
 ---
 ## Why this matters
 User profiles are central to a person's identity. A user profile may be integral to *proving* identity, 
@@ -42,10 +43,10 @@ effective communications methods are used to share information with the person c
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/address/">Enter their <b>Date of birth</b></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/date-of-birth/">Enter their <b>Date of birth</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Date of birth</p>
+        <p>This pattern allows users to easily enter their date of birth or memorable date with ease and discretion.</p>
       </div>
     </div>
   </li>
@@ -117,10 +118,10 @@ effective communications methods are used to share information with the person c
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/address/">Enter their <b>Social security number</b></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number/">Enter their <b>Social security number</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>SSN</p>
+        <p>The social security number pattern allows users to easily enter their social security number and ensure the social security number is properly formatted.</p>
       </div>
     </div>
   </li>

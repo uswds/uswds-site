@@ -6,15 +6,10 @@ var dutil = require("./doc-util");
 var del = require("del");
 
 const cleanFonts = () => del("assets/fonts/");
-
 const cleanImages = () => del("assets/img");
-
 const cleanJavascript = () => del("assets/js");
-
 const cleanStyles = () => del("assets/css");
-
 const removeAssetsDir = () => del("assets");
-
 const cleanAssets = gulp.parallel(
   cleanFonts,
   cleanImages,

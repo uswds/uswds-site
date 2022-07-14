@@ -1,3 +1,19 @@
+- name: Sam-Prototypes
+  distribution: Angular
+  url: https://github.com/GSA/sam-prototypes
+  author:
+    name: SAM.gov
+    url: https://github.com/GSA
+  notes: "A test application that incorporates sam-styles and sam-design-system components with real-world examples"
+
+- name: Sam-Design-System
+  distribution: Angular
+  url: https://github.com/GSA/sam-design-system
+  author:
+    name: SAM.gov
+    url: https://github.com/GSA
+  notes: "Common Angular components integrated with sam-styles css framework."
+
 - name: django-designstandards
   distribution: Django
   url: https://github.com/department-of-veterans-affairs/django-designstandards
@@ -48,6 +64,14 @@
     name: Stephen Mustgrave
     url: https://www.drupal.org/u/smustgrave
   notes: "USWDS components as paragraph bundles. Includes accordion, card, alert, process list, summary box, step indicator, and layout grid options."
+
+- name: Sam-Styles
+  distribution: Fractal
+  url: https://github.com/GSA/sam-styles
+  author:
+    name: SAM.gov
+    url: https://github.com/GSA
+  notes: "A Fractal build that generates an interactive component library for sam-styles."
 
 - name: uswds-jekyll
   distribution: Jekyll
@@ -175,27 +199,3 @@
     name: Brian Hurst
     url: https://github.com/hursey013
   notes: "A Tailwind CSS plugin for adding U.S. Web Design System design tokens to supported Tailwind utilities."
-  
-   - name: Sam-Design-System
-  distribution: Angular
-  url: https://github.com/GSA/sam-design-system
-  author:
-    name: SAM.gov
-    url: https://github.com/GSA
-  notes: "Common Angular components integrated with sam-styles css framework."
-  
-  - name: Sam-Styles
-  distribution: Fractal
-  url: https://github.com/GSA/sam-styles
-  author:
-    name: SAM.gov
-    url: https://github.com/GSA
-  notes: "A Fractal build that generates an interactive component library for sam-styles."
-  
-    - name: Sam-Prototypes
-  distribution: Angular
-  url: https://github.com/GSA/sam-prototypes
-  author:
-    name: SAM.gov
-    url: https://github.com/GSA
-  notes: "A test application that incorporates sam-styles and sam-design-system components with real-world examples"

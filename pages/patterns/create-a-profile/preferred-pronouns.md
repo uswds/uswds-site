@@ -7,7 +7,7 @@ lead: The Pronouns pattern assists users to feel confident that they will be add
 ---
 
 ## What problem does this solve?
-A name or sex are not indicative of how a person identifies or prefers to be addressed. Allowing users to choose their pronouns creates a comfortable environment by removing the potential for frustration and alienation.
+A name or sex are not indicative of how a person identifies or prefers to be addressed. Allowing users to choose their pronouns creates a more comfortable environment by removing the potential for frustration and alienation.
  
 ## When to use this pattern 
 Follow this pattern when you are planning on referring to the person using pronouns instead of their name.
@@ -25,8 +25,8 @@ Provide a free-form field that supports a rich array of special characters and a
         <div class="do-dont__content">
           <ul>
             <li>Do understand why you are collecting this information.</li>
-            <li>Do provide examples. Many cisgendered people may not be familiar with the concept of preferred pronouns.</li>
-            <li>Do provide an open text field. Language is evolving and forced choice can make a user feel as though they need to fit themselves into a group determined by the designer.</li>
+            <li>Do provide examples. Many people may not be familiar with the concept of preferred pronouns.</li>
+            <li>Do provide an open text field. Language is evolving and forced choice can make a user feel as though they need to fit themselves into a group determined by the form designer.</li>
             <li>Do allow both upper and lowercase letters throughout each field.</li>
             <li>Allow users to enter hyphens, apostrophes, and blank spaces in each field.</li>
             <li>Do support long text fields for each name. Allow users to enter up to 128 characters per field. You may choose not to display an empty field of that length.</li>

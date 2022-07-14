@@ -1,4 +1,12 @@
-- name: django-designstandards
+- name: ngx-uswds
+  distribution: Angular
+  url: https://github.com/GSA/ngx-uswds
+  author:
+    name:
+    url:
+  notes: This package provides Angular integration with USWDS
+  
+  - name: django-designstandards
   distribution: Django
   url: https://github.com/department-of-veterans-affairs/django-designstandards
   status: stale

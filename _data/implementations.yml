@@ -5,8 +5,8 @@
     name:
     url:
   notes: This package provides Angular integration with USWDS
-  
-  - name: django-designstandards
+
+- name: django-designstandards
   distribution: Django
   url: https://github.com/department-of-veterans-affairs/django-designstandards
   status: stale

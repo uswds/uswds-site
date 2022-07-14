@@ -7,14 +7,14 @@ lead: The Sex or Gender pattern helps users to feel comfortable and confident th
 ---
 
 ## What problem does this solve?
-Many times, sex and gender are used synonymously and users have struggled to provide accurate information that best identifies and/or represents them within a limited or overwhelming amount of provided options.
+Sex and gender are often used synonymously. Users have struggled to provide accurate information that best identifies and/or represents them within a limited or overwhelming amount of provided options.
 
-Sex assigned at birth is a biological aspect and does not necessarily represent how an individual identifies. In the digital space, male and female are often the provided options, but there are instances where an individual is born with both sexual characteristics. 
+Sex assigned at birth is a biological attribute and does not necessarily represent how an individual identifies. In the digital space, male and female are often the only provided options, but there are instances where an individual is born with both male and female sexual characteristics. 
 
-Gender is an expression of a user’s identity and is integral to their sense of self. There is an infinite variety of gendered experience in the world.
+Gender is an expression of a user’s identity and is integral to their sense of self. There is a wide variety of gendered experience in the world.
  
 ## When to use this pattern 
-Follow this pattern when you are collecting sex or gender as part of your service. Only ask for the sex and/or gender if you need it. Sometimes it’s more beneficial to skip this pattern altogether.
+Follow this pattern when you are collecting sex or gender as part of your service. Only ask for the sex and/or gender if you need it. Sometimes it’s prudent to skip collecting this information altogether.
 
 ## What's the solution
 Provide sex and/or gender if needed and present the user with the environment to accurately depict their identity. 
@@ -35,7 +35,7 @@ Provide direction on how to complete the form and what to do if the information 
             <li>Do only provide biological options when asking for biological sex (male, female, and X)</li>
             <li>Do be clear about why you are asking for the information.</li>
             <li>Do be transparent about what you are asking for. To some people sex and gender can mean the same so ensure you use clear language.</li>
-            <li>Do think about the end result (whatever information users put in will be aggregated as raw data output)</li>
+            <li>Do think about the end result and how information may be aggregated as raw data outputs.</li>
           </ul> 
         </div>
       </div>
@@ -47,7 +47,7 @@ Provide direction on how to complete the form and what to do if the information 
       <div class="do-dont__content">
           <ul>
             <li>Do not assume identity based on the user's sex.</li>
-            <li>Do not include “prefer not to answer.” If you consider adding this option, then consider whether the question is needed at all.</li>
+            <li>Do not include “prefer not to answer.” If you are considering adding this option, then consider whether the question is needed at all.</li>
             <li>Do not combine biological sex and gender identity into a single field.</li>
           </ul>
       </div>
@@ -65,10 +65,10 @@ Provide direction on how to complete the form and what to do if the information 
         <div class="do-dont__content">
           <ul>
             <li>Do support long text fields for gender. The language behind gender identity is constantly evolving.</li>
-            <li>Do consider safety implications of the information provided. (regional and state laws are not created equal)</li>
-            <li>Do be transparent about what you are asking for (e.g., sex or gender identity)</li>
-            <li>Do use inclusive language. Consider using “they” or “you” instead of “he” or “she”</li>
-            <li>Do think about the end result (whatever information users put in that may be aggregated as raw data output)</li>
+            <li>Do consider safety implications of the information provided. (Regional and state laws are not created equal.)</li>
+            <li>Do be transparent about what you are asking for (e.g., sex or gender identity).</li>
+            <li>Do use inclusive language. Consider using “they” or “you” instead of “he” or “she.”</li>
+            <li>Do think about the end result and how the information users enter may be aggregated in data outputs.</li>
           </ul> 
         </div>
       </div>

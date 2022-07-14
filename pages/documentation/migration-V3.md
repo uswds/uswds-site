@@ -653,8 +653,9 @@ These instructions will help you update your `@import` references to the new syn
 
    We recommend an online diff service like [quickdiff.net](https://quickdiff.net/), [diffchecker.com](https://diffchecker.com), or [text-compare.com](https://text-compare.com/).
 
-   Each of the files below is the most current version of the USWDS default settings. For each of these files, use the diff tool to find the differences between your settings file and the current defaults.
+   Each of the files below is from version 2.13.3 of the USWDS default settings. For each of these files, use the diff tool to find the differences between your settings file and the current (USWDS Version 3.X) defaults.
 
+    USWDS Version 2.13.3 Defaults
    - [Color settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.3/src/stylesheets/theme/_uswds-theme-color.scss)
    - [Component settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.3/src/stylesheets/theme/_uswds-theme-components.scss)
    - [General settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.3/src/stylesheets/theme/_uswds-theme-general.scss)
@@ -662,7 +663,7 @@ These instructions will help you update your `@import` references to the new syn
    - [Typography settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.3/src/stylesheets/theme/_uswds-theme-typography.scss)
    - [Utilities settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.3/src/stylesheets/theme/_uswds-theme-utilities.scss)
 
-   Look for instances where your project has a different value than the default. Ignore cases where a setting exists in the current version but not in your version. This indicates a new setting that probably does not apply to your project. Instances where a setting exists in your version but not in the current version can likely be ignored. This usually indicates a deprecated setting that should not affect your project, but it can be worth checking to see if that variable appears anywhere else in your codebase.
+   When comparing the files above to USWDS Version 3.X, look for instances where your project has a different value than the default. Ignore cases where a setting exists in the current version but not in your version. This indicates a new setting that probably does not apply to your project. Instances where a setting exists in your version but not in the current version can likely be ignored. This usually indicates a deprecated setting that should not affect your project, but it can be worth checking to see if that variable appears anywhere else in your codebase.
 
    When you see a setting that appears different from the current default, this is probably one of your project's custom settings. Copy this setting and add it to your new `_uswds-theme.scss` file.
 

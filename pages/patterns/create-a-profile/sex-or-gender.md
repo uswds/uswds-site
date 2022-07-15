@@ -1,6 +1,6 @@
 ---
-title: Gender or sex
-permalink: /patterns/create-a-profile/gender-or-sex/
+title: Biological sex or gender
+permalink: /patterns/create-a-profile/sex-or-gender/
 layout: styleguide
 category: Patterns
 lead: The sex or gender pattern allows users to provide gender identify and biological sex information in the most accurate and respectful manner possible.

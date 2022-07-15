@@ -7,13 +7,13 @@ lead: The name pattern makes it as easy as possible for users to enter their nam
 ---
 
 ## What problem does this solve?
-People have a wide variety of names in various formats. It can be confusing and alienating for them to enter their name if it doesn’t conform to the form fields provided, or if the form fields don’t support the characters, length, or language they require. At the same time, the name fields are often used as a primary form of identity validation, and so the agency  —  and privacy issues  — require that the information be entered in a specific and consistent way. 
+People have a wide variety of names in various formats. It can be confusing and alienating for them to enter their name if it doesn’t conform to the form fields provided, or if the form fields don’t support the characters, length, or language they require. At the same time, the name fields are often used as a primary form of identity validation, and so the agency&#8212;and privacy issues&#8212;require that the information be entered in a specific and consistent way. 
 
 ## When to use this pattern 
 Follow this pattern when you need to ask for a user’s name as part of your service. Only ask for the name if you need it. 
 
 ## What's the solution
-Provide multiple free-form fields that support a rich array of special characters and accents. Provide direction on how to complete the form and what to do if the name doesn’t fit into the provided format.
+Provide multiple text entry fields that support a rich array of special characters and accents. Provide direction on how to complete the form and what to do if the name doesn’t fit into the provided format.
 
 
 ## Guidance
@@ -25,8 +25,8 @@ Provide multiple free-form fields that support a rich array of special character
       <h3 class="do-dont__heading">What to do</h3>
         <div class="do-dont__content">
           <ul>
-            <li>Do support long text fields for each name. Allow users to enter up to 128 characters per field. You may choose not to display an empty field of that length.</li>
-            <li>Do display the complete name wherever the information is displayed (even if it is long), including on a confirmation page. You may display a truncated version of the name to acknowledge logged-in- status in the header.</li>
+            <li>Do support long text fields for each name. Allow users to enter up to 128 characters per field, but follow form norms for field display size.</li>
+            <li>Do display the complete name wherever the information is displayed (even if it is long), including on a confirmation page. You may need to truncate a name when used to convey logged-in status logged-in- status in the site header.</li>
             <li>Do support a rich array of <a href="https://web.library.yale.edu/cataloging/music/diacrit">diacritics, accents, and alternative characters.</a></li>
             <li>Allow users to enter more than one name in each field. Spanish-speaking people will often have two family names. Brazilians may have three or four family names.</li>
             <li>Do allow both upper and lowercase letters throughout each field.</li>
@@ -95,7 +95,7 @@ Label preferred way to be addressed:
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg">Text Input</h3>
+        <h3 class="usa-card__heading font-lang-lg">Text input</h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
@@ -120,6 +120,9 @@ Label preferred way to be addressed:
     <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/name.html %}{% endhighlight %}</code></pre></figure>
   </div>
 </div>
+
+## Related Templates
+- <a href="https://designsystem.digital.gov/templates/form-templates/name-form/">Name form template</a>
 
 ## References
 - <a href="https://web.library.yale.edu/cataloging/music/diacrit">Diacritics and special characters by language</a>, Yale University Library

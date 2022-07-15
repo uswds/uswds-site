@@ -3,7 +3,7 @@ title: Preferred pronouns
 permalink: /patterns/create-a-profile/preferred-pronouns/
 layout: styleguide
 category: Patterns
-lead: The pronouns pattern helps users to provide information that will allow them to feel confident that they will be addressed the way they identify.
+lead: The pronouns pattern helps users to provide information that will allow them to feel confident they will be addressed the way they identify.
 ---
 
 ## What problem does this solve?
@@ -26,10 +26,10 @@ Provide a text entry field that supports a rich array of special characters and 
           <ul>
             <li>Do understand why you are collecting this information.</li>
             <li>Do provide examples. Many people may not be familiar with the concept of preferred pronouns.</li>
-            <li>Do provide an open text field. Language is evolving and forced choice can make a user feel as though they need to fit themselves into a group determined by the form designer.</li>
+            <li>Do provide an open text field. Language is evolving and forced choice can make a user feel as though they need to fit themselves into a label determined by the form designer.</li>
             <li>Do support a rich array of diacritics, accents, and alternative characters. Do allow both upper and lowercase letters throughout each field.</li>
             <li>Allow users to enter hyphens, apostrophes, and blank spaces in each field.</li>
-            <li>Do support long text fields for each name. Allow users to enter up to 128 characters per field. You may choose not to display an empty field of that length.</li>
+            <li>Do support long text fields for each name. Allow users to enter up to 128 characters per field, but follow form norms for field display size.</li>
             <li>Do be prepared for a complex answer.</li>
           </ul> 
         </div>
@@ -74,7 +74,7 @@ Label Pronouns field:
     data-meta="Visit Toggle">
         <div class="usa-card__container">
         <header class="usa-card__header">
-            <h3 class="usa-card__heading font-lang-lg">Text Input</h3>
+            <h3 class="usa-card__heading font-lang-lg">Text input</h3>
         </header>
         <div class="usa-card__body font-lang-sm">
             <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>

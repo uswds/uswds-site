@@ -3,7 +3,7 @@ title: Gender or sex
 permalink: /patterns/create-a-profile/gender-or-sex/
 layout: styleguide
 category: Patterns
-lead: The Sex or Gender pattern helps users to feel comfortable and confident that their information is being used to identify them the way they choose or in a manner that will assist the user.
+lead: The sex or gender pattern allows users to provide gender identify and biological sex information in the most accurate and respectful manner possible.
 ---
 
 ## What problem does this solve?
@@ -11,15 +11,16 @@ Sex and gender are often used synonymously. Users have struggled to provide accu
 
 Sex assigned at birth is a biological attribute and does not necessarily represent how an individual identifies. In the digital space, male and female are often the only provided options, but there are instances where an individual is born with both male and female sexual characteristics. 
 
-Gender is an expression of a user’s identity and is integral to their sense of self. There is a wide variety of gendered experience in the world.
+Gender is an expression of a user’s identity and is integral to their sense of self. There is a wide variety of gendered experiences in the world.
+
+{:.site-component-section-title}
+## Biological sex
  
 ## When to use this pattern 
 Follow this pattern when you are collecting sex or gender as part of your service. Only ask for the sex and/or gender if you need it. Sometimes it’s prudent to skip collecting this information altogether.
 
 ## What's the solution
 Provide sex and/or gender if needed and present the user with the environment to accurately depict their identity. 
-
-Provide direction on how to complete the form and what to do if the information doesn’t fit into the provided format.
 
 ## Guidance
 ### When you need to collect biological sex
@@ -34,7 +35,7 @@ Provide direction on how to complete the form and what to do if the information 
             <li>Do determine if you need to collect biological sex and only use if the information is essential to the user's experience.</li>
             <li>Do only provide biological options when asking for biological sex (male, female, and X)</li>
             <li>Do be clear about why you are asking for the information.</li>
-            <li>Do be transparent about what you are asking for. To some people sex and gender can mean the same so ensure you use clear language.</li>
+            <li>Do be transparent about what you are asking for. To some people sex and gender are synonymous, so ensure you use clear language.</li>
             <li>Do think about the end result and how information may be aggregated as raw data outputs.</li>
           </ul> 
         </div>
@@ -55,6 +56,17 @@ Provide direction on how to complete the form and what to do if the information 
   </div>
 </div>
 
+
+{:.site-component-section-title}
+## Gender 
+ 
+## When to use this pattern 
+Follow this pattern when you are collecting sex or gender as part of your service. Only ask for the sex and/or gender if you need it. Sometimes it’s prudent to skip collecting this information altogether.
+
+## What's the solution
+Provide sex and/or gender if needed and present the user with the environment to accurately depict their identity. 
+
+## Guidance
 ### When you need to collect gender
 
 <div class="grid-row grid-gap-3">
@@ -65,10 +77,10 @@ Provide direction on how to complete the form and what to do if the information 
         <div class="do-dont__content">
           <ul>
             <li>Do support long text fields for gender. The language behind gender identity is constantly evolving.</li>
-            <li>Do consider safety implications of the information provided. (Regional and state laws are not created equal.)</li>
+            <li>Do consider safety implications of the information provided. (Regional and state laws are highly variable and may not adequately protect individuals from disclosure.)</li>
             <li>Do be transparent about what you are asking for (e.g., sex or gender identity).</li>
             <li>Do use inclusive language. Consider using “they” or “you” instead of “he” or “she.”</li>
-            <li>Do think about the end result and how the information users enter may be aggregated in data outputs.</li>
+            <li>Do think about the end result and how information may be aggregated as raw data outputs.</li>
           </ul> 
         </div>
       </div>
@@ -95,7 +107,7 @@ Provide direction on how to complete the form and what to do if the information 
 ### What to use 
 <b>If you don’t need a controlled vocabulary.</b> If you don’t need to enforce a controlled vocabulary of gender options, strongly consider letting the user self-identify using a single text field.
 
-<b>If biological sex information is used for identity validation.</b> Clearly state that the user needs to input their biological sex. Often times gender and sex are used synonomously and users have difficulty determining which information is being requested.
+<b>If biological sex information is used for identity validation.</b> Clearly state that the user needs to input their biological sex. Gender and sex are often used synonymously and users have difficulty determining which information is being requested.
 
 ## Usability Guidance
 

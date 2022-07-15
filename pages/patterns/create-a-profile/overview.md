@@ -7,7 +7,7 @@ lead: Help a user to create a user profile
 subnav:
   - href: /patterns/create-a-profile/address/
   - href: /patterns/create-a-profile/date-of-birth/
-  - href: /patterns/create-a-profile/gender-or-sex/
+  - href: /patterns/create-a-profile/sex-or-gender/
   - href: /patterns/create-a-profile/name/
   - href: /patterns/create-a-profile/preferred-pronouns/
   - href: /patterns/create-a-profile/race-or-ethnicity/

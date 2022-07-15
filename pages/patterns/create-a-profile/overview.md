@@ -6,8 +6,8 @@ category: Patterns
 lead: Help a user to create a user profile
 subnav:
   - href: /patterns/create-a-profile/address/
-  - href: /patterns/create-a-profile/date-of-birth/
   - href: /patterns/create-a-profile/sex-or-gender/
+  - href: /patterns/create-a-profile/date-of-birth/
   - href: /patterns/create-a-profile/name/
   - href: /patterns/create-a-profile/preferred-pronouns/
   - href: /patterns/create-a-profile/race-or-ethnicity/
@@ -43,10 +43,10 @@ effective communications methods are used to share information with the person c
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/date-of-birth/">Enter their <b>date of birth</b></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/sex-or-gender/">Select their <b>biological sex or gender</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>This pattern allows users to easily enter their date of birth or memorable date with ease and discretion.</p>
+        <p>The sex or gender pattern helps users to feel comfortable and confident that their information is being used to identify them the way they choose or in a manner that will assist the user.</p>
       </div>
     </div>
   </li>
@@ -58,10 +58,10 @@ effective communications methods are used to share information with the person c
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/sex-or-gender/">Select their <b>biological sex or gender</b></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/date-of-birth/">Enter their <b>date of birth</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>The sex or gender pattern helps users to feel comfortable and confident that their information is being used to identify them the way they choose or in a manner that will assist the user.</p>
+        <p>This pattern allows users to easily enter their date of birth or memorable date with ease and discretion.</p>
       </div>
     </div>
   </li>

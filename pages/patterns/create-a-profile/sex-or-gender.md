@@ -92,14 +92,14 @@ Biological sex selection fields:
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
-  <div id="accordion-preview" class="usa-accordion__content">
+  <button class="usa-accordion__button" aria-controls="accordion-preview-01" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
+  <div id="accordion-preview-01" class="usa-accordion__content">
     {% include patterns/biological-sex.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
-  <div id="accordion-code" class="usa-accordion__content highlight-code">
+  <button class="usa-accordion__button" aria-controls="accordion-code-01" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
+  <div id="accordion-code-01" class="usa-accordion__content highlight-code">
     <div class="usa-sr-only">
       <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/biological-sex.html %}</code></pre></figure>
     </div>
@@ -201,14 +201,14 @@ Label Gender field:
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
-  <div id="accordion-preview" class="usa-accordion__content">
+  <button class="usa-accordion__button" aria-controls="accordion-preview-02" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
+  <div id="accordion-preview-02" class="usa-accordion__content">
     {% include patterns/gender.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
-  <div id="accordion-code" class="usa-accordion__content highlight-code">
+  <button class="usa-accordion__button" aria-controls="accordion-code-02" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
+  <div id="accordion-code-02" class="usa-accordion__content highlight-code">
     <div class="usa-sr-only">
       <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/gender.html %}</code></pre></figure>
     </div>

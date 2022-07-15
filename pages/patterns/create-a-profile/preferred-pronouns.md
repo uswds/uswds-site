@@ -3,17 +3,17 @@ title: Preferred pronouns
 permalink: /patterns/create-a-profile/preferred-pronouns/
 layout: styleguide
 category: Patterns
-lead: The Pronouns pattern assists users to feel confident that they will be addressed the way they identify.
+lead: The pronouns pattern helps users to provide information that will allow them to feel confident that they will be addressed the way they identify.
 ---
 
 ## What problem does this solve?
-A name or sex are not indicative of how a person identifies or prefers to be addressed. Allowing users to choose their pronouns creates a more comfortable environment by removing the potential for frustration and alienation.
+A name or biological sex are not indicative of how a person identifies or prefers to be addressed. Allowing users to choose their pronouns creates a more comfortable environment by removing the potential for frustration and alienation.
  
 ## When to use this pattern 
 Follow this pattern when you are planning on referring to the person using pronouns instead of their name.
 
 ## What's the solution
-Provide a free-form field that supports a rich array of special characters and accents that allows the user to inform you of their identity.
+Provide a text entry field that supports a rich array of special characters and accents that allows the user to inform you of their identity. If you plan to use this pattern for any automated communications you may need to consider a different approach. 
 
 ## Guidance
 
@@ -27,7 +27,7 @@ Provide a free-form field that supports a rich array of special characters and a
             <li>Do understand why you are collecting this information.</li>
             <li>Do provide examples. Many people may not be familiar with the concept of preferred pronouns.</li>
             <li>Do provide an open text field. Language is evolving and forced choice can make a user feel as though they need to fit themselves into a group determined by the form designer.</li>
-            <li>Do allow both upper and lowercase letters throughout each field.</li>
+            <li>Do support a rich array of diacritics, accents, and alternative characters. Do allow both upper and lowercase letters throughout each field.</li>
             <li>Allow users to enter hyphens, apostrophes, and blank spaces in each field.</li>
             <li>Do support long text fields for each name. Allow users to enter up to 128 characters per field. You may choose not to display an empty field of that length.</li>
             <li>Do be prepared for a complex answer.</li>
@@ -43,7 +43,7 @@ Provide a free-form field that supports a rich array of special characters and a
           <ul>
             <li>Do not make the field mandatory. While the information can be helpful, there are neutral options that can be used.</li>
             <li>Do not assume pronouns. If a user chooses not to answer, default to the use of they/them.</li>
-            <li>Do not overwhelm the user with options. Sometimes a user does not fit into a defined field and sometimes they can fit into many. This can also enforce limitations to a person’s identity.</li>
+            <li>Do not overwhelm the user with options. Default to a text entry field to allow for self-identification.</li>
           </ul>
       </div>
     </div>
@@ -53,6 +53,8 @@ Provide a free-form field that supports a rich array of special characters and a
 ## Considerations
 ### Whether you need this data
 <b>Confirm you need this information.</b> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
+
+<b>Consider how you will be using this information.</b> This pattern best supports verbal communication. If you plan on using the information for automated correspondence you may need to consider a different approach.
 
 <b>If you don't need a controlled vocabulary.</b> Consider allowing for user self-identification with an open-ended text field. Users should also have the ability to opt out of providing this information.
 
@@ -99,10 +101,12 @@ Label Pronouns field:
 </div>
 
 ## References
-- <a href="http://www.practicemakesprogress.org/blog/2015/9/18/asking-about-gender-on-online-forms">Asking about gender on online forms</a>
-- <a href="https://equity.ubc.ca/resources/gender-diversity/inclusive-forms/">Inclusive Forms</a>
-- <a href="https://www.keshetonline.org/resources/whats-in-a-pronoun/">https://www.keshetonline.org/resources/whats-in-a-pronoun/</a- >
-- <a href="https://uxdesign.cc/designing-forms-for-gender-diversity-and-inclusion-d8194cf1f51">Designing forms for gender diversity and inclusion</a>
+- <a href="https://design.va.gov/content-style-guide/they-their">They, Their</a>, VA.gov
+- <a href=""https://design-system.service.gov.uk/patterns/gender-or-sex/>Gender or Sex</a>, Gov.uk
+- <a href="https://www.digital.govt.nz/standards-and-guidance/design-and-ux/content-design-guidance/inclusive-language/gender-inclusive-language/">Gender-Inclusive Language</a>, Digital.govt.nz
+- <a href="https://equity.ubc.ca/resources/gender-diversity/inclusive-forms/">Inclusive Forms</a>, University of British Columbia
+- <a href="https://www.keshetonline.org/resources/whats-in-a-pronoun/">What's in a Pronoun</a>, Keshet.org
+- <a href="http://www.practicemakesprogress.org/blog/2015/9/18/asking-about-gender-on-online-forms">Asking about gender on online forms</a>, Practice makes progress
 
 ## Changelog
 - Created 07.01.22

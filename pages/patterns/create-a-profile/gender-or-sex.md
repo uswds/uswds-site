@@ -56,6 +56,91 @@ Provide sex and/or gender if needed and present the user with the environment to
   </div>
 </div>
 
+## Considerations
+### Whether you need this data
+<b>Confirm you need this information.</b> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
+
+### What to use 
+<b>If you don’t need a controlled vocabulary.</b> If you don’t need to enforce a controlled vocabulary of gender options, strongly consider letting the user self-identify using a single text field.
+
+<b>If biological sex information is used for identity validation.</b> Clearly state that the user needs to input their biological sex. Gender and sex are often used synonymously and users have difficulty determining which information is being requested.
+
+## Usability Guidance
+
+Biological sex selection fields:
+- Male
+- Female
+- X
+
+## Ingredients
+
+<div class="usa-card-group flex-row margin-top-2">
+  <li
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit Toggle"
+  data-meta="Visit Toggle">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg">Radio Button</h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>Radio buttons allow users to select exactly one choice from a group.</p>
+        <a href="/components/radio-buttons/">Visit Radio buttons</a>
+      </div>
+    </div>
+  </li>
+  <li
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit Toggle"
+  data-meta="Visit Toggle">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg">Text Input</h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
+        <a href="/components/text-input/">Visit Text input</a>
+      </div>
+    </div>
+  </li>
+  <li
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit Toggle"
+  data-meta="Visit Toggle">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg">Checkbox</h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>Checkboxes allow users to select one or more options from a list.</p>
+        <a href="/components/radio-buttons/">Visit Checkbox</a>
+      </div>
+    </div>
+  </li>
+</div>
+
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
+  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
+  <div id="accordion-preview" class="usa-accordion__content">
+    {% include patterns/gender-or-sex.html %}
+  </div>
+</div>
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
+  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
+  <div id="accordion-code" class="usa-accordion__content highlight-code">
+    <div class="usa-sr-only">
+      <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/gender-or-sex.html %}</code></pre></figure>
+    </div>
+    <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/gender-or-sex.html %}{% endhighlight %}</code></pre></figure>
+  </div>
+</div>
+
 
 {:.site-component-section-title}
 ## Gender 
@@ -113,11 +198,6 @@ Provide sex and/or gender if needed and present the user with the environment to
 
 Label Gender field:
 - Gender identity:
-
-Biological sex selection fields:
-- Male
-- Female
-- X
 
 ## Ingredients
 

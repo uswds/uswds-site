@@ -12,7 +12,7 @@ lead: The physical and mailing address patterns help users to enter their addres
 While most addresses in the U.S. follow a specific pattern, there are unique variations in some rural areas and the U.S. territories. In addition, some people are unhoused or in temporary housing, and may need to specify a mailing address that is different from their physical address —  particularly in disaster relief and recovery situations.
 
 {:.site-component-section-title}
-## Physical Address
+## Physical address
 
 ## When to use this pattern 
 Use this pattern when you need to parse out the specific parts of the address and you need the physical location of an individual. This may be important when determining benefits eligibility, for disaster recovery purposes, or other reasons. Since physical addresses may be temporary, consider asking for a mailing address, too.
@@ -129,7 +129,7 @@ Provide all the fields needed for a user to provide a physical address, even if 
 </div>
 
 {:.site-component-section-title}
-## Mailing Address
+## Mailing address
 
 ### When to use this pattern 
 Use this pattern when you need to provide written correspondence or materials to a person and need to parse out the elements of the address. For many people this may be the same address as their physical address.

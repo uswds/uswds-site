@@ -71,6 +71,8 @@ Provide all the fields needed for a user to provide a physical address, even if 
 
 ## Usability Guidance
 
+<b>Avoid disabling default browser behavior for Select elements.</b> If possible, let users type a letter to jump down a long list of states, territories, or military posts.
+
 <b>Support both five- and nine-digital ZIP codes.</b> Some addresses require a nine-digital ZIP code. If you would like to use an input mask, it should be “#####-####” so that the text is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code.
 
 ## Ingredients
@@ -181,7 +183,7 @@ Provide all the fields a user needs to successfully enter a mailing address.
 
 ## Usability Guidance
 
-<b>Avoid dropdowns.</b> If possible, let users type their state or territories’ abbreviation when they reach the state dropdown menu, instead of having to scroll and select.
+<b>Avoid disabling default browser behavior for Select elements.</b> If possible, let users type a letter to jump down a long list of states, territories, or military posts.
 
 <b>Support both five- and nine-digital ZIP codes.</b> Some addresses require a nine-digital ZIP code. If you would like to use an input mask, it should be “#####-####” so that the text is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code.
 

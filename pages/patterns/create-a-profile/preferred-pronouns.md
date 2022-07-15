@@ -102,7 +102,7 @@ Label Pronouns field:
 
 ## References
 - <a href="https://design.va.gov/content-style-guide/they-their">They, Their</a>, VA.gov
-- <a href=""https://design-system.service.gov.uk/patterns/gender-or-sex/>Gender or Sex</a>, Gov.uk
+- <a href="https://design-system.service.gov.uk/patterns/gender-or-sex/">Gender or Sex</a>, Gov.uk
 - <a href="https://www.digital.govt.nz/standards-and-guidance/design-and-ux/content-design-guidance/inclusive-language/gender-inclusive-language/">Gender-Inclusive Language</a>, Digital.govt.nz
 - <a href="https://equity.ubc.ca/resources/gender-diversity/inclusive-forms/">Inclusive Forms</a>, University of British Columbia
 - <a href="https://www.keshetonline.org/resources/whats-in-a-pronoun/">What's in a Pronoun</a>, Keshet.org

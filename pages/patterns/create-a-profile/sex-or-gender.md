@@ -3,13 +3,13 @@ title: Biological sex or gender
 permalink: /patterns/create-a-profile/sex-or-gender/
 layout: styleguide
 category: Patterns
-lead: The sex or gender pattern allows users to provide gender identity and biological sex information in the most accurate and respectful manner possible.
+lead: The sex or gender pattern allows users to provide biological sex or gender identity information in the most accurate and respectful manner possible.
 ---
 
 ## What problem does this solve?
 Sex and gender are often used synonymously. Users have struggled to provide accurate information that best identifies and/or represents them within a limited or overwhelming amount of provided options.
 
-Sex assigned at birth is a biological attribute and does not necessarily represent how an individual identifies. In the digital space, male and female are often the only provided options, but there are instances where an individual is born with both male and female sexual characteristics. 
+Sex assigned at birth is a biological attribute. In the digital space, male and female are often the only provided options, but there are instances where an individual is born with both male and female sexual characteristics. 
 
 Gender is an expression of a user’s identity and is integral to their sense of self. There is a wide variety of gendered experiences in the world.
 

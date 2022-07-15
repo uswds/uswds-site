@@ -128,16 +128,16 @@ Biological sex selection fields:
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
   <div id="accordion-preview" class="usa-accordion__content">
-    {% include patterns/gender-or-sex.html %}
+    {% include patterns/biological-sex.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
   <div id="accordion-code" class="usa-accordion__content highlight-code">
     <div class="usa-sr-only">
-      <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/gender-or-sex.html %}</code></pre></figure>
+      <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/biological-sex.html %}</code></pre></figure>
     </div>
-    <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/gender-or-sex.html %}{% endhighlight %}</code></pre></figure>
+    <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/biological-sex.html %}{% endhighlight %}</code></pre></figure>
   </div>
 </div>
 
@@ -255,16 +255,16 @@ Label Gender field:
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
   <div id="accordion-preview" class="usa-accordion__content">
-    {% include patterns/gender-or-sex.html %}
+    {% include patterns/gender.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
   <div id="accordion-code" class="usa-accordion__content highlight-code">
     <div class="usa-sr-only">
-      <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/gender-or-sex.html %}</code></pre></figure>
+      <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/gender.html %}</code></pre></figure>
     </div>
-    <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/gender-or-sex.html %}{% endhighlight %}</code></pre></figure>
+    <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/gender.html %}{% endhighlight %}</code></pre></figure>
   </div>
 </div>
 

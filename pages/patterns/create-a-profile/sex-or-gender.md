@@ -33,7 +33,7 @@ Provide sex if needed and present the user with a controlled vocabulary to accur
         <div class="do-dont__content">
           <ul>
             <li>Do determine if you need to collect biological sex and only use if the information is essential to the user's experience.</li>
-            <li>Do only provide biological options when asking for biological sex (male, female, and X)</li>
+            <li>Do only provide biological options when asking for biological sex (male, female, and X).</li>
             <li>Do be clear about why you are asking for the information.</li>
             <li>Do be transparent about what you are asking for. To some people sex and gender are synonymous, so ensure you use clear language.</li>
             <li>Do think about the end result and how information may be aggregated as raw data outputs.</li>

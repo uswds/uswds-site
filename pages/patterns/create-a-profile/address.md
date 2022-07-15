@@ -50,7 +50,7 @@ Provide all the fields needed for a user to provide a physical address, even if 
     <h3 class="do-dont__heading">What not to do</h3>
       <div class="do-dont__content">
           <ul>
-            <li>Do not limit addresses to conventionally formatted addresses. Some rural areas and areas in U.S. territories have unusually formatted addresses.</li>
+            <li>Do not limit addresses to conventionally formatted addresses. Some rural areas and the U.S. territories have unusually formatted addresses.</li>
             <li>Do not assume that people can receive mail at their physical location. People in some communities can only receive mail at Post Office boxes.</li>
           </ul>
       </div>
@@ -86,7 +86,7 @@ Provide all the fields needed for a user to provide a physical address, even if 
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg">Text Input</h3>
+        <h3 class="usa-card__heading font-lang-lg">Text input</h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
@@ -162,7 +162,7 @@ Provide all the fields a user needs to successfully enter a mailing address.
     <h3 class="do-dont__heading">What not to do</h3>
       <div class="do-dont__content">
           <ul>
-            <li>Do not limit addresses to conventionally formatted addresses. Some rural areas and areas in U.S. territories have unusually formatted addresses.</li>
+            <li>Do not limit addresses to conventionally formatted addresses. Some rural areas and the U.S. territories have unusually formatted addresses.</li>
             <li>Do not assume that people can receive mail at their physical location. People in some communities can only receive mail at Post Office boxes.</li>
           </ul>
       </div>
@@ -177,7 +177,7 @@ Provide all the fields a user needs to successfully enter a mailing address.
 <b>People without fixed addresses.</b> Some people do not have fixed addresses. 
 
 ### What to use 
-<b>Physical vs. mailing address.</b> If you do need an address, determine if you need a physical address or a mailing address, or both. Physical addresses are most important for determining benefits eligibility or for disaster response. Mailing addresses are important f
+<b>Physical vs. mailing address.</b> If you do need an address, determine if you need a physical address or a mailing address, or both. Physical addresses are most important for determining benefits eligibility or for disaster response. Mailing addresses are important for correspondence.
 
 <b>Both physical and mailing address.</b> If you need both the physical and mailing address, consider providing a checkbox for “same as physical address” to auto-populate the mailing address.
 
@@ -198,7 +198,7 @@ Provide all the fields a user needs to successfully enter a mailing address.
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg">Text Input</h3>
+        <h3 class="usa-card__heading font-lang-lg">Text input</h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
@@ -256,13 +256,16 @@ Provide all the fields a user needs to successfully enter a mailing address.
   </div>
 </div>
 
-## Related pattern
-<a href="/patterns/create-a-profile/name/">Name</a>
+## Related patterns
+- <a href="/patterns/create-a-profile/name/">Name</a>
+
+## Related templates
+- <a href="https://designsystem.digital.gov/templates/form-templates/address-form/">Address form template</a>
 
 ## References
-- <a href="https://maps.google.com/pluscodes/">Google Plus Codes</a>
-- <a href="https://pe.usps.com/text/pub28/welcome.htm">USPS Addressing Standards</a>
-- <a href="https://postalpro.usps.com/node/3740">USPS Addressing Standards for Puerto Rico and the U.S. Virgin Islands</a>
+- <a href="https://maps.google.com/pluscodes/">Google Plus Codes</a>, USPS
+- <a href="https://pe.usps.com/text/pub28/welcome.htm">USPS Addressing Standards</a>, USPS
+- <a href="https://postalpro.usps.com/node/3740">USPS Addressing Standards for Puerto Rico and the U.S. Virgin Islands</a>, USPS
 
 
 ## Changelog

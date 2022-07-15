@@ -60,6 +60,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
 
 ### Special use cases
 <b>If you are collecting information on a family.</b> Do not assume that partners or dependents of the person completing the form will identify as the same race or ethnicity.
+
 <b>If you will be displaying race and/or ethnicity in a list.</b> Always treat racial and ethnic groups as proper nouns and capitalize them. Consider the order list items appear to avoid the perception of bias or favoritism. 
 
 ## Usability Guidance
@@ -118,7 +119,7 @@ Combined Race and ethnicity checkbox items:
   data-meta="Visit Toggle">
       <div class="usa-card__container">
       <header class="usa-card__header">
-          <h3 class="usa-card__heading font-lang-lg">Text Input</h3>
+          <h3 class="usa-card__heading font-lang-lg">Text input</h3>
       </header>
       <div class="usa-card__body font-lang-sm">
           <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
@@ -145,13 +146,13 @@ Combined Race and ethnicity checkbox items:
 </div>
 
 ## References
-- <a href="https://www.census.gov/topics/population/race/about.html">About the Topic of Race</a> (U.S. Census Bureau)
-- <a href="https://www.census.gov/about/our-research/race-ethnicity.html">Research to Improve Data on Race and Ethnicity</a> (U.S. Census Bureau)
-- <a href="https://www.census.gov/programs-surveys/decennial-census/decade/2020/planning-management/plan/content-research.html">Content Research</a> (U.S. Census Bureau)
-- <a href="https://www.census.gov/programs-surveys/decennial-census/decade/2010/program-management/cpex/2010-cpex-211.html">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</a> (U.S. Census Bureau)
-- <a href="https://www2.census.gov/programs-surveys/decennial/2020/program-management/final-analysis-reports/2015nct-race-ethnicity-analysis.pdf">2015 National Content Test Race and Ethnicity Analysis Report</a> (U.S. Census Bureau)
-- <a class="display-inline" href="https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf">Revisions to the Standards for the Classification of Federal Data on Race and Ethnicity</a>
-- <a class="display-inline" href="https://www.federalregister.gov/documents/2016/09/30/2016-23672/standards-for-maintaining-collecting-and-presenting-federal-data-on-race-and-ethnicity">Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity</a>
+- <a href="https://www.census.gov/topics/population/race/about.html">About the Topic of Race</a>, U.S. Census Bureau
+- <a href="https://www.census.gov/about/our-research/race-ethnicity.html">Research to Improve Data on Race and Ethnicity</a>, U.S. Census Bureau
+- <a href="https://www.census.gov/programs-surveys/decennial-census/decade/2020/planning-management/plan/content-research.html">Content Research</a>, U.S. Census Bureau
+- <a href="https://www.census.gov/programs-surveys/decennial-census/decade/2010/program-management/cpex/2010-cpex-211.html">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</a>, U.S. Census Bureau
+- <a href="https://www2.census.gov/programs-surveys/decennial/2020/program-management/final-analysis-reports/2015nct-race-ethnicity-analysis.pdf">2015 National Content Test Race and Ethnicity Analysis Report</a>, U.S. Census Bureau
+- <a class="display-inline" href="https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf">Revisions to the Standards for the Classification of Federal Data on Race and Ethnicity</a>, United States Government Publishing Office (GPO)
+- <a class="display-inline" href="https://www.federalregister.gov/documents/2016/09/30/2016-23672/standards-for-maintaining-collecting-and-presenting-federal-data-on-race-and-ethnicity">Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity</a>, Federal Register
 
 
 ## Changelog

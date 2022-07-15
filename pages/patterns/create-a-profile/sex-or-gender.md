@@ -3,7 +3,7 @@ title: Biological sex or gender
 permalink: /patterns/create-a-profile/sex-or-gender/
 layout: styleguide
 category: Patterns
-lead: The sex or gender pattern allows users to provide gender identify and biological sex information in the most accurate and respectful manner possible.
+lead: The sex or gender pattern allows users to provide gender identity and biological sex information in the most accurate and respectful manner possible.
 ---
 
 ## What problem does this solve?
@@ -17,10 +17,10 @@ Gender is an expression of a user’s identity and is integral to their sense of
 ## Biological sex
  
 ## When to use this pattern 
-Follow this pattern when you are collecting sex or gender as part of your service. Only ask for the sex and/or gender if you need it. Sometimes it’s prudent to skip collecting this information altogether.
+Follow this pattern when you are collecting biological sex as part of your service. Only ask for biological sex if you need it. Sometimes it’s prudent to skip collecting this information altogether.
 
 ## What's the solution
-Provide sex and/or gender if needed and present the user with the environment to accurately depict their identity. 
+Provide sex if needed and present the user with a controlled vocabulary to accurately depict their biological sex. 
 
 ## Guidance
 ### When you need to collect biological sex
@@ -47,7 +47,7 @@ Provide sex and/or gender if needed and present the user with the environment to
     <h3 class="do-dont__heading">What not to do</h3>
       <div class="do-dont__content">
           <ul>
-            <li>Do not assume identity based on the user's sex.</li>
+            <li>Do not assume gender identity based on the user's sex.</li>
             <li>Do not include “prefer not to answer.” If you are considering adding this option, then consider whether the question is needed at all.</li>
             <li>Do not combine biological sex and gender identity into a single field.</li>
           </ul>
@@ -61,9 +61,7 @@ Provide sex and/or gender if needed and present the user with the environment to
 <b>Confirm you need this information.</b> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
 
 ### What to use 
-<b>If you don’t need a controlled vocabulary.</b> If you don’t need to enforce a controlled vocabulary of gender options, strongly consider letting the user self-identify using a single text field.
-
-<b>If biological sex information is used for identity validation.</b> Clearly state that the user needs to input their biological sex. Gender and sex are often used synonymously and users have difficulty determining which information is being requested.
+<b>If biological sex information is used for identity validation.</b> Clearly state that the user needs to input their biological sex. Gender and sex are often used synonymously and users may have difficulty determining which information is being requested.
 
 ## Usability Guidance
 
@@ -91,38 +89,6 @@ Biological sex selection fields:
       </div>
     </div>
   </li>
-  <li
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
-  role="region"
-  aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
-    <div class="usa-card__container">
-      <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg">Text Input</h3>
-      </header>
-      <div class="usa-card__body font-lang-sm">
-        <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
-        <a href="/components/text-input/">Visit Text input</a>
-      </div>
-    </div>
-  </li>
-  <li
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
-  role="region"
-  aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
-    <div class="usa-card__container">
-      <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg">Checkbox</h3>
-      </header>
-      <div class="usa-card__body font-lang-sm">
-        <p>Checkboxes allow users to select one or more options from a list.</p>
-        <a href="/components/radio-buttons/">Visit Checkbox</a>
-      </div>
-    </div>
-  </li>
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
@@ -146,10 +112,10 @@ Biological sex selection fields:
 ## Gender 
  
 ## When to use this pattern 
-Follow this pattern when you are collecting sex or gender as part of your service. Only ask for the sex and/or gender if you need it. Sometimes it’s prudent to skip collecting this information altogether.
+Follow this pattern when you are collecting gender as part of your service. Only ask for gender if you need it. Sometimes it’s prudent to skip collecting this information altogether.
 
 ## What's the solution
-Provide sex and/or gender if needed and present the user with the environment to accurately depict their identity. 
+Provide gender if needed and present the user with the environment to accurately depict their identity. 
 
 ## Guidance
 ### When you need to collect gender
@@ -162,8 +128,8 @@ Provide sex and/or gender if needed and present the user with the environment to
         <div class="do-dont__content">
           <ul>
             <li>Do support long text fields for gender. The language behind gender identity is constantly evolving.</li>
-            <li>Do consider safety implications of the information provided. (Regional and state laws are highly variable and may not adequately protect individuals from disclosure.)</li>
-            <li>Do be transparent about what you are asking for (e.g., sex or gender identity).</li>
+            <li>Do consider safety implications of the information provided. Regional and state laws are highly variable and may not adequately protect individuals from disclosure.</li>
+            <li>Do be transparent about what you are asking for (e.g., gender identity vs. sex).</li>
             <li>Do use inclusive language. Consider using “they” or “you” instead of “he” or “she.”</li>
             <li>Do think about the end result and how information may be aggregated as raw data outputs.</li>
           </ul> 
@@ -176,7 +142,7 @@ Provide sex and/or gender if needed and present the user with the environment to
     <h3 class="do-dont__heading">What not to do</h3>
       <div class="do-dont__content">
           <ul>
-            <li>Do not assume identity based on gender.</li>
+            <li>Do not assume gender identity based on biological sex.</li>
             <li>Do not use “other” as a gender option. Instead use an empty text field.</li>
             <li>Do not limit the user's choice of gender. Not everyone will fit into a specific classification determined by the form designer.</li>
           </ul>
@@ -191,8 +157,6 @@ Provide sex and/or gender if needed and present the user with the environment to
 
 ### What to use 
 <b>If you don’t need a controlled vocabulary.</b> If you don’t need to enforce a controlled vocabulary of gender options, strongly consider letting the user self-identify using a single text field.
-
-<b>If biological sex information is used for identity validation.</b> Clearly state that the user needs to input their biological sex. Gender and sex are often used synonymously and users have difficulty determining which information is being requested.
 
 ## Usability Guidance
 
@@ -210,23 +174,7 @@ Label Gender field:
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg">Radio Button</h3>
-      </header>
-      <div class="usa-card__body font-lang-sm">
-        <p>Radio buttons allow users to select exactly one choice from a group.</p>
-        <a href="/components/radio-buttons/">Visit Radio buttons</a>
-      </div>
-    </div>
-  </li>
-  <li
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
-  role="region"
-  aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
-    <div class="usa-card__container">
-      <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg">Text Input</h3>
+        <h3 class="usa-card__heading font-lang-lg">Text input</h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>

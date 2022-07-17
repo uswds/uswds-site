@@ -54,5 +54,3 @@ $('.sidenav').on('click', 'a', function (e) {
     },
   });
 });
-
-// In-page navigation

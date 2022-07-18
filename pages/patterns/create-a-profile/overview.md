@@ -88,7 +88,7 @@ effective communications methods are used to share information with the person c
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/pronouns/">Share their <b>pronoun</b></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/pronouns/">Share their <b>pronouns</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>The pronouns pattern assists users to feel confident that they will be addressed with the pronouns they use.</p>

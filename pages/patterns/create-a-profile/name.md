@@ -43,7 +43,7 @@ Provide multiple text entry fields that support a rich array of special characte
           <ul>
             <li>Do not label the personal or given name “first name” only or the surname field “last name.” In Chinese, Korean, Hungarian, as well as other languages, the first name is the family name.</li>
             <li>Do not require users to enter something in each field. In some cultures, such as Indonesian and Icelandic, people may have only one name.</li>
-            <li>If you need to request a middle name, don’t request just an initial. In the United Kingdom, people often have multiple middle names and don’t abbreviate them with initials.</li>
+            <li>If you need to request a middle name, don’t request just an initial. In other countries, people often have multiple middle names and may not typically abbreviate them with initials.</li>
             <li>Do not assume that a single character is an initial. Some names are one character long. Don’t have a character requirement for each field.</li>
             <li>Do not normalize casing in names. In some names, such as McNamara and van der Waals, casing is part of the name.</li>
             <li>Do not ask for “maiden name.” Women are not the only ones who change their names. Ask for “previous name.”</li>

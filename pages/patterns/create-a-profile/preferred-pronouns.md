@@ -1,19 +1,19 @@
 ---
-title: Preferred pronouns
-permalink: /patterns/create-a-profile/preferred-pronouns/
+title: Pronouns
+permalink: /patterns/create-a-profile/pronouns/
 layout: styleguide
 category: Patterns
-lead: The pronouns pattern helps users to provide information that will allow them to feel confident they will be addressed the way they identify.
+lead: The pronouns pattern helps users to provide information that will allow them to feel confident they will be addressed with the pronouns they use.
 ---
 
 ## What problem does this solve?
-A name or biological sex are not indicative of how a person identifies or prefers to be addressed. Allowing users to choose their pronouns creates a more comfortable environment by removing the potential for frustration and alienation.
+A name or biological sex are not indicative of the pronouns a person uses. Allowing users to specify their pronouns creates a more comfortable environment by removing the potential for frustration and alienation.
  
 ## When to use this pattern 
 Follow this pattern when you are planning on referring to the person using pronouns instead of their name.
 
 ## What's the solution
-Provide a text entry field that supports a rich array of special characters and accents that allows the user to inform you of their identity. If you plan to use this pattern for any automated communications you may need to consider a different approach. 
+Provide a text entry field that supports a rich array of special characters and accents that allows the user to inform you of their pronouns. If you plan to use this pattern for any automated communications you may need to consider a different approach. 
 
 ## Guidance
 
@@ -25,11 +25,11 @@ Provide a text entry field that supports a rich array of special characters and 
         <div class="do-dont__content">
           <ul>
             <li>Do understand why you are collecting this information.</li>
-            <li>Do provide examples. Many people may not be familiar with the concept of preferred pronouns.</li>
+            <li>Do provide examples. Many people may not be familiar with the concept of specifying pronouns.</li>
             <li>Do provide an open text field. Language is evolving and forced choice can make a user feel as though they need to fit themselves into a label determined by the form designer.</li>
             <li>Do support a rich array of diacritics, accents, and alternative characters. Do allow both upper and lowercase letters throughout each field.</li>
             <li>Allow users to enter hyphens, apostrophes, and blank spaces in each field.</li>
-            <li>Do support long text fields for each name. Allow users to enter up to 128 characters per field, but follow form norms for field display size.</li>
+            <li>Do support long text fields. Allow users to enter up to 128 characters per field, but follow form norms for field display size.</li>
             <li>Do be prepared for a complex answer.</li>
           </ul> 
         </div>
@@ -43,7 +43,7 @@ Provide a text entry field that supports a rich array of special characters and 
           <ul>
             <li>Do not make the field mandatory. While the information can be helpful, there are neutral options that can be used.</li>
             <li>Do not assume pronouns. If a user chooses not to answer, default to the use of they/them.</li>
-            <li>Do not overwhelm the user with options. Default to a text entry field to allow for self-identification.</li>
+            <li>Do not overwhelm the user with options. Default to a text entry field to allow user-provided pronouns.</li>
           </ul>
       </div>
     </div>
@@ -56,7 +56,7 @@ Provide a text entry field that supports a rich array of special characters and 
 
 <b>Consider how you will be using this information.</b> This pattern best supports verbal communication. If you plan on using the information for automated correspondence you may need to consider a different approach.
 
-<b>If you don't need a controlled vocabulary.</b> Consider allowing for user self-identification with an open-ended text field. Users should also have the ability to opt out of providing this information.
+<b>If you don't need a controlled vocabulary.</b> Consider allowing for user-provided pronouns with an open-ended text field. Users should also have the ability to opt out of providing this information.
 
 ## Usability Guidance
 

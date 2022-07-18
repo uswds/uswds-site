@@ -1,23 +1,24 @@
 ---
-title: Social security number
+title: Social Security Number
 permalink: /patterns/create-a-profile/social-security-number/
 layout: styleguide
 category: Patterns
-lead: The social security number pattern allows users to easily enter their social security number and ensure the social security number is properly formatted.
+lead: The Social Security Number pattern allows users to easily enter their Social Security Number and ensures the Social Security Number is properly formatted.
 ---
 
 ## What problem does this solve?
-A social security number is often a critical piece of validating identity when applying for government services or benefits. While most U.S. citizens and eligible U.S. residents have a social security number, some people may not know their social security number, or may not lack the necessary documentation to easily obtain one. 
+A Social Security Number is often a critical piece of validating identity when applying for government services or benefits.
 
 ## When to use this pattern 
-Only use this pattern when you need to confirm a user's identity by asking for their social security number. This information may be important when determining eligibility for many federal programs, such as federal student loans, public assistance, and Medicare.
+Only use this pattern when you need to confirm a user's identity by asking for their Social Security Number. This information may be important when determining eligibility for many federal programs, such as federal student loans, public assistance, and Medicare.
 
 ## When to consider something else
-If you do not specifically need a person’s social security number, do not ask for or collect this information. The social security number is intricately linked to a person’s identity, and should only be used when absolutely required for identification purposes.
+If you do not specifically need a person’s Social Security Number, do not ask for or collect this information. The Social Security Number is intricately linked to a person’s identity, and should only be used when absolutely required for identification purposes.
 
+While most U.S. citizens and eligible U.S. residents have a Social Security Number, some people may not know their Social Security Number, or may lack the necessary documentation to obtain one easily. 
 
 ### What's the solution
-Provide a single text field to enter the social security number. 
+Provide a single text field to enter the Social Security Number. 
 
 ## Guidance
 
@@ -28,9 +29,9 @@ Provide a single text field to enter the social security number.
       <h3 class="do-dont__heading">What to do</h3>
         <div class="do-dont__content">
           <ul>
-            <li>Do allow users to enter a social security number with as much fault tolerance as possible. Hyphens and blank spaces in the social security number field should be accommodated if at all possible, since users may be accustomed to entering separators to the numeric groups that make up a social security number.</li>
-            <li>Do consider using input masking to guide correct entry of the social security number.</li>
-            <li>Do use both client-side and server-side validation if possible to enforce format consistency and flag <a href="https://www.ssa.gov/kc/SSAFactSheet--IssuingSSNs.pdf">invalid social security numbers</a></li>
+            <li>Do allow users to enter a Social Security Number with as much fault tolerance as possible. Hyphens and blank spaces in the Social Security Number field should be accommodated if at all possible, since users may be accustomed to entering separators to the numeric groups that make up a Social Security Number.</li>
+            <li>Do consider using input masking to guide correct entry of the Social Security Number.</li>
+            <li>Do use both client-side and server-side validation if possible to enforce format consistency and flag <a href="https://www.ssa.gov/kc/SSAFactSheet--IssuingSSNs.pdf">invalid Social Security Numbers</a>.</li>
           </ul> 
         </div>
       </div>
@@ -41,7 +42,7 @@ Provide a single text field to enter the social security number.
     <h3 class="do-dont__heading">What not to do</h3>
       <div class="do-dont__content">
           <ul>
-            <li>Do not separate the social security number entry into three separate fields.</li>
+            <li>Do not separate the Social Security Number entry into three separate fields.</li>
             <li>Do not use placeholder text</li>
           </ul>
       </div>
@@ -51,14 +52,14 @@ Provide a single text field to enter the social security number.
 
 ## Considerations
 ### Whether you need this data
-<b>Confirm you need this information.</b> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. For example, if you aren’t validating identity, you might not need to collect someone’s name, since a username will meet the need for account login.
+<b>Confirm you need this information.</b> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy and identity. 
 
-<b>People without social security numbers.</b> Some people do not have social security numbers, and may not be easily able to provide the documentation required to apply for a social security number. Consider whether there are other methods you can use to validate identity in the absence of a social security number.
+<b>People without social security numbers.</b> Some people do not have social security numbers, and may not be easily able to provide the documentation required to apply for a Social Security Number. Consider whether there are other methods you can use to validate identity in the absence of a Social Security Number.
 
 ## Usability Guidance
-<b>Avoid multiple fields.</b> If possible, let users type the entire social security number into a single field, not across three separate fields.
+<b>Avoid multiple fields.</b> If possible, let users type the entire Social Security Number into a single field, not across three separate fields.
 
-<b>Consider using an input mask.</b> If you use an input mask, it should be “###-##-####” so that the social security number maps to users' experience with social security numbers and is properly formatted. Input masks can help a user more confidently fill out restricted fields, reduce  user anxiety about making a mistake, and reduce validation errors and web form abandonment, particularly on mobile devices.
+<b>Consider using an input mask.</b> If you use an input mask, it should be “###-##-####” so that the Social Security Number maps to users' experience with social security numbers and is properly formatted. Input masks can help a user more confidently fill out restricted fields, reduce user anxiety about making a mistake, and reduce validation errors and web form abandonment, particularly on mobile devices.
 
 ## Ingredients
 
@@ -98,7 +99,7 @@ Provide a single text field to enter the social security number.
 </div>
 
 ## References
-- <a href="https://design.cms.gov/components/masked-field">Masked Field</a>, CMS Design 
+- <a href="https://design.cms.gov/components/masked-field">Masked Field</a>, CMS Design System
 - <a href="https://design-system.service.gov.uk/patterns/national-insurance-numbers/">National Insurance Numbers</a>, Gov.uk 
 - <a href="https://www.nngroup.com/articles/form-design-placeholders/">Placeholders in a form field</a>, nngroup 
 - <a href="https://baymard.com/learn/input-fields">8 Recommendations for Creating effective input fields</a>, Baymard 

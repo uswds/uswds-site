@@ -60,7 +60,7 @@ Provide multiple text entry fields that support a rich array of special characte
 ### What to use 
 <b>If you don’t need separate data elements.</b> If you don’t need to parse out the separate pieces of a person’s name, consider letting the user enter it into a single text field.
 
-<b>If the name information is for identity validation.</b> Clearly state that the user needs to input their legal name. Many people routinely use variations on their legal name. Do specify if they need to enter their legal name or the name they typically use.
+<b>If the name information is for identity validation.</b>  Many people routinely use variations of their name depending on context. Be specific about the name you are requesting.Clearly state the context, e.g., "Please enter your name exactly as it appears on your passport." so that users can successfully provide the information required.
 
 ### Special use cases
 <b>If you need the name for correspondence.</b> If you are going to use the name information to address correspondence to the user, consider including a separate field that allows the user to specify how they’d like to be addressed. This reduces the potential for addressing someone in a way that they find disrespectful. <a href="https://www.w3.org/International/questions/qa-personal-names">Some cultures find it disrespectful</a> not to include an honorific (Dr., Professor, Mrs.), while others find it overly formal. 

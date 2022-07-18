@@ -59,7 +59,7 @@ Provide a single text field to enter the Social Security Number.
 ## Usability Guidance
 <b>Avoid multiple fields.</b> If possible, let users type the entire Social Security Number into a single field, not across three separate fields.
 
-<b>Consider using an input mask.</b> If you use an input mask, it should be “###-##-####” so that the Social Security Number maps to users' experience with social security numbers and is properly formatted. Input masks can help a user more confidently fill out restricted fields, reduce user anxiety about making a mistake, and reduce validation errors and web form abandonment, particularly on mobile devices.
+<b>Consider using an input mask.</b> If you use an input mask, it should be “###-##-####” so that the Social Security Number maps to users' experience with social security numbers and is properly formatted. <a href="#">Input masks</a> can help a user more confidently fill out restricted fields, reduce user anxiety about making a mistake, and reduce validation errors and web form abandonment, particularly on mobile devices.
 
 ## Ingredients
 
@@ -97,6 +97,11 @@ Provide a single text field to enter the Social Security Number.
     <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/social-security-number.html %}{% endhighlight %}</code></pre></figure>
   </div>
 </div>
+
+## Related
+
+- <a href="#">Phone number</a> pattern
+- <a href="#">Input masking</a> component
 
 ## References
 - <a href="https://design.cms.gov/components/masked-field">Masked Field</a>, CMS Design System

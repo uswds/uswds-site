@@ -9,7 +9,7 @@ subnav:
   - href: /patterns/create-a-profile/sex-or-gender/
   - href: /patterns/create-a-profile/date-of-birth/
   - href: /patterns/create-a-profile/name/
-  - href: /patterns/create-a-profile/preferred-pronouns/
+  - href: /patterns/create-a-profile/pronouns/
   - href: /patterns/create-a-profile/race-or-ethnicity/
   - href: /patterns/create-a-profile/social-security-number/
 ---

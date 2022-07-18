@@ -26,7 +26,7 @@ Provide multiple text entry fields that support a rich array of special characte
         <div class="do-dont__content">
           <ul>
             <li>Do support long text fields for each name. Allow users to enter up to 128 characters per field, but follow form norms for field display size.</li>
-            <li>Do display the complete name wherever the information is displayed (even if it is long), including on a confirmation page. You may need to truncate a name when used to convey logged-in status logged-in- status in the site header.</li>
+            <li>Do display the complete name wherever the information is displayed (even if it is long), including on a confirmation page. You may need to truncate a name when used to convey logged-in status in the site header.</li>
             <li>Do support a rich array of <a href="https://web.library.yale.edu/cataloging/music/diacrit">diacritics, accents, and alternative characters.</a></li>
             <li>Allow users to enter more than one name in each field. Spanish-speaking people will often have two family names. Brazilians may have three or four family names.</li>
             <li>Do allow both upper and lowercase letters throughout each field.</li>

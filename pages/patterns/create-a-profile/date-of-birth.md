@@ -7,13 +7,13 @@ lead: Date of birth, and other memorable dates, can be an essential piece of inf
 ---
 
 ## What problem does this solve?
-Date entry fields are context-specific, and culture dependent. With many competing patterns for date formatting, users may become frustrated, confused, and more prone to making mistakes when entering their date of birth or another memorable date if date entry is not optimized for the kind of information being collected. 
+Date entry fields are context-specific, and culture dependent. With many competing patterns for date formatting, users may become frustrated, confused, and more prone to making mistakes. 
 
 ## When to use this pattern 
-Use this pattern when you need to confirm a user's identity by asking for their date of birth or another memorable date. 
+Use this pattern when you need a user's date of birth or another memorable date. 
 
 ## What's the solution
-Allowing a user to type a memorable date using three clearly labeled text fields provides the simplest and most inclusive digital experience. This is especially helpful when the date is in the past like a date of birth. By providing a clearly labeled text input for month, date, and year users will be able to understand what is being asked and not struggle to input the information or question what order the information should be entered in.
+Allowing a user to type a memorable date using three clearly labeled text fields provides the simplest and most inclusive digital experience. This is especially helpful when the date is in the past like a date of birth. By providing a clearly labeled text input for month, date, and year, users will understand what is being asked and not struggle to input the information or question what order the information should be entered in.
 
 Mobile device users in particular may benefit from being able to type a year rather than using a scrolling date picker for date of birth or other memorable dates.
 
@@ -43,7 +43,7 @@ Mobile device users in particular may benefit from being able to type a year rat
       <div class="do-dont__content">
           <ul>
             <li>Do not use visual separators between fields.</li>
-            <li>Do not assume age based on the provided date of birth.</li>
+            <li>Do not auto-advance from field to field.</li>
           </ul>
       </div>
     </div>
@@ -73,6 +73,8 @@ Mobile device users in particular may benefit from being able to type a year rat
 
 <b>Use “text” instead of “number” inputs.</b> Research indicates that <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">numeric inputs still carry many usability problems</a>. 
 
+<b>Customization.</b> As you customize, make sure you follow [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
+
 ## Ingredients
 
 <div class="usa-card-group flex-row margin-top-2">
@@ -88,7 +90,7 @@ Mobile device users in particular may benefit from being able to type a year rat
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
-        <a href="/components/text-input/">Visit Text Input</a>
+        <a href="/components/text-input/">Visit Text input</a>
       </div>
     </div>
   </li>
@@ -110,14 +112,14 @@ Mobile device users in particular may benefit from being able to type a year rat
   </div>
 </div>
 
-## Related components
+## Related
 
 - <a href="https://designsystem.digital.gov/components/memorable-date/">Memorable date  component</a>
 
 ## References
-- <a href="https://design-system.service.gov.uk/patterns/dates/">Dates</a>, Gov.uk
-- <a href="https://designnotes.blog.gov.uk/2013/12/05/asking-for-a-date-of-birth/">Asking for a date of birth</a>, Gov.uk
-- <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">Why the GOV.UK Design System team changed the input type for numbers</a>, Gov.uk
+- Dates. (n.d.) Retrieved on July 20, 2022, from <a href="https://design-system.service.gov.uk/patterns/dates/">https://design-system.service.gov.uk/patterns/dates/</a>
+- Asking for a date of birth. (December 5, 2013) Retrieved on July 20, 2022, from <a href="https://designnotes.blog.gov.uk/2013/12/05/asking-for-a-date-of-birth/">https://designnotes.blog.gov.uk/2013/12/05/asking-for-a-date-of-birth/</a>
+- Why the GOV.UK Design System team changed the input type for numbers. (February 24, 2020) Retrieved on July 20, 2022, from <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/</a>
 
 ## Changelog
 - Created 07.07.22

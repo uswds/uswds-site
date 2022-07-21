@@ -26,7 +26,7 @@ A text input field with validation and robust error messaging to guide users in 
           <ul>
             <li>Do explain why you need an email address and what you will do with it.</li>
             <li>Do validate formatting by checking for an at symbol (@) that is preceded and followed by one or more characters (not spaces).</li>
-            <li>Do use both client side and server side validation to support properly formatted email addresses if possible.</li>
+            <li>Do use both client-side and server-side validation to support properly formatted email addresses if possible.</li>
             <li>Do consider checking for common misspellings of popular email providers. Warn users if you detect a likely misspelling, but allow them to continue since it might be a genuine email address. </li>
             <li>Do accommodate up to 256 characters. Email addresses cannot be longer than 256 characters.</li>
             <li>Do allow users to paste their email address.</li>

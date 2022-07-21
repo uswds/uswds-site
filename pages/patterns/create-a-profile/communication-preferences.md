@@ -1,9 +1,9 @@
 ---
-title: Preferred communication
-permalink: /patterns/create-a-profile/preferred-communication/
+title: Communication preferences
+permalink: /patterns/create-a-profile/communication-preferences/
 layout: styleguide
 category: Patterns
-lead: The preferred means of communication design pattern allows users to easily indicate how they would like to be contacted in the future. 
+lead: The communication preferences design pattern allows users to easily indicate how they would like to be contacted in the future. 
 ---
 
 ## What problem does this solve?
@@ -15,8 +15,8 @@ Use this pattern only if you can support different contact methods and are colle
 ## When to consider something else
 If you do not have the current capability of contacting the user via multiple channels of communication, do not ask the user for their communication preferences. Allowing a user to select a preferred communication option that is not operational risks communication gaps and can destroy a user's trust in a program or service.
 
-### What's the solution
-Allow the user to select from among available options, and to include a brief message in a text input field if explanation is required.
+## What's the solution
+Allow the user to select from available options, and to include a brief message in a text input/textarea field if explanation is required. For example, if the preferred contact method is dependent on time or date, or if there’s another factor that needs to be considered when communicating with the user.
 
 ## Guidance
 
@@ -27,7 +27,7 @@ Allow the user to select from among available options, and to include a brief me
       <h3 class="do-dont__heading">What to do</h3>
         <div class="do-dont__content">
           <ul>
-            <li>Do offer options for how to be contacted, if possible, since some users may not have a permanent physical or mailing address.</li>
+            <li>Do offer options for how to be contacted, if possible, since some users may not have a permanent physical or mailing address, due to displacement, infrastructure problems following a disaster, homelessness, or other reasons.</li>
             <li>Do only collect contact preference information if you need it and can deliver on the promise to the user that you will contact them via their preferred communications channel.</li>
             <li>Do explain under what conditions you will reach out to the user and what the anticipated timeline will be, if possible.</li>
           </ul> 
@@ -51,7 +51,7 @@ Allow the user to select from among available options, and to include a brief me
 
 ## Considerations
 ### Multimodal communication
-<b>Consider multiple methods of communication.</b> While prioritizing the user’s preferred communication method (e.g., text message), do follows up with alternate methods (e.g., email) to improve the likelihood of the user seeing your communication.
+<b>Consider multiple means of communication for critical messaging.</b> While prioritizing the user’s preferred communication method (e.g., text message), do follow up with alternate methods (e.g., email) to improve the likelihood of the user seeing your communication.
 
 ## Accessibility 
 
@@ -113,15 +113,15 @@ Allow the user to select from among available options, and to include a brief me
 
 ## Related
 
-- <a href="#">Telephone number</a> pattern
 - <a href="#">Address</a> pattern
+- <a href="#">Email address</a> pattern
+- <a href="#">Phone number</a> pattern
+- <a href=https://designsystem.digital.gov/templates/form-templates/address-form/">Address form</a> template
 
 ## References
 - Seamlessness in the omnichannel user experience. (March 19, 2017) Retrieved on July 20, 2022, from [https://www.nngroup.com/articles/seamless-cross-channel/](https://www.nngroup.com/articles/seamless-cross-channel/)
-Explicitly state the difference between options. (November 3, 2013) Retrieved on July 20, 2022, from [https://www.nngroup.com/articles/explicit-differences/](https://www.nngroup.com/articles/explicit-differences/)
-
-
+- Explicitly state the difference between options. (November 3, 2013) Retrieved on July 20, 2022, from [https://www.nngroup.com/articles/explicit-differences/](https://www.nngroup.com/articles/explicit-differences/)
 
 
 ## Changelog
-- Created 07.07.22
+- Created July 7, 2022

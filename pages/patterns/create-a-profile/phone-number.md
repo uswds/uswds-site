@@ -15,7 +15,7 @@ Use this pattern if you need to collect the user’s phone number. Only ask for 
 ## When to consider something else
 If you do not specifically need a person’s phone number, do not ask for or collect this information.
 
-### What's the solution
+## What's the solution
 Let users enter their phone numbers in whatever format is familiar to them. Allow for additional spaces, hyphens, dashes, and brackets. Accommodate country and area codes. Use the form label or hint text to tell users if you specifically need a U.S. or SMS-capable mobile phone number.
 
 ## Guidance
@@ -30,12 +30,11 @@ Let users enter their phone numbers in whatever format is familiar to them. Allo
             <li>Tell users why you need their phone number, why you might contact them, and when.</li>
             <li>Do clearly state if you need a U.S. telephone number.</li>
             <li>Do clearly state if you need an SMS-capable mobile phone number, such as when you need to text a security code for validation.</li>
-            <li>Consider supporting different formats for phone numbers, such as international numbers, unless there is a reason not to. If you do support international numbers, consider providing a Select country field to automatically populate the country code and support county-specific formatting.</li>
-            <li>Allow for spaces, hyphens, dashes, and brackets.</li>
-            <li>Offer very clear error messages and help text.</li>
+            <li>Use clear hint text and input-masking to ensure proper formatting of phone numbers.</li>
+            <li>Offer very clear validation messages to help users successfully meet format requirements.</li>
             <li>Consider using the autocomplete attribute on telephone number inputs, to allow the browser to autofill information if it has been previously entered.</li>
             <li>Allow a user to supply multiple phone numbers.</li>
-            <li>Consider offering a field to enter an extension for a business line or other temporary residences.</li>
+            <li>Consider offering an extension field for a business line or other temporary residences/shelters.</li>
           </ul> 
         </div>
       </div>
@@ -47,8 +46,7 @@ Let users enter their phone numbers in whatever format is familiar to them. Allo
       <div class="do-dont__content">
           <ul>
             <li>Do not require users to enter hyphens or other characters to support formatting.</li>
-            <li>Do not require users to have a U.S. phone number unless there’s a compelling reason to do so.</li>
-            <li>Do not split the phone number into separate fields, which has a high user interaction cost and does not easily support different formats.</li>
+            <li>Do not split the phone number into separate fields, which has a <a href="https://uxpro.cc/publications/phone-number-field-design-best-practices/">high user interaction cost</a> and does not easily support different formats.</li>
           </ul>
       </div>
     </div>
@@ -58,6 +56,9 @@ Let users enter their phone numbers in whatever format is familiar to them. Allo
 ## Considerations
 ### Whether you need this data
 <b>Confirm you need this information.</b> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy and identity. 
+
+### Whether you need to support international phone numbers
+<b>If you do need to support international numbers</b>. Consider providing a country select field to automatically populate the country code and support county-specific formatting. Use client side and ideally server side validation to ensure proper formatting of international phone numbers.
 
 ## Usability Guidance
 <b>Consider using an input mask.</b> If you use an input mask, it should be “###-###-####” for U.S. phone numbers so that the phone number maps to users' experience and is properly formatted. Input masks can help a user more confidently fill out restricted fields, reduce user anxiety about making a mistake, and reduce validation errors and web form abandonment, particularly on mobile devices.
@@ -89,22 +90,6 @@ Let users enter their phone numbers in whatever format is familiar to them. Allo
       </div>
     </div>
   </li>
-  <li
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
-  role="region"
-  aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
-    <div class="usa-card__container">
-      <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg">Select</h3>
-      </header>
-      <div class="usa-card__body font-lang-sm">
-        <p>A select component allows users to choose one option from a temporary modal menu.</p>
-        <a href="/components/text-input/">Visit Select</a>
-      </div>
-    </div>
-  </li>
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
@@ -124,13 +109,12 @@ Let users enter their phone numbers in whatever format is familiar to them. Allo
 </div>
 
 ## Related
-
-- <a href="#">Social Security Number</a> pattern
-- <a href="#">Email address</a> pattern
 - <a href="#">Input masking</a> component
+- <a href="#">Email address</a> pattern
+- <a href="#">Social Security Number</a> pattern
 
 ## References
-- Telephone numbers. (n.d) Retrieved on July 20, 2022, from [https://design-system.service.gov.uk/patterns/telephone-numbers/](https://design-system.service.gov.uk/patterns/telephone-numbers/)
+- Telephone numbers. (n.d.) Retrieved on July 20, 2022, from [https://design-system.service.gov.uk/patterns/telephone-numbers/](https://design-system.service.gov.uk/patterns/telephone-numbers/)
 - Bad practices on phone number form fields. (October 16, 2018) Retrieved on July 20, 2022, from [https://uxmovement.com/forms/bad-practices-on-phone-number-form-fields/](https://uxmovement.com/forms/bad-practices-on-phone-number-form-fields/)
 - Phone number field design best practices. (August 2, 2019) Retrieved on July 20, 2022, from [https://uxpro.cc/publications/phone-number-field-design-best-practices/](https://uxpro.cc/publications/phone-number-field-design-best-practices/)
 - Phone number UX: Always explain why the ‘phone field’ is required. (March 16, 2020) Retrieved on July 20, 2022, from [https://baymard.com/blog/explain-phone-number-field](https://baymard.com/blog/explain-phone-number-field)
@@ -138,4 +122,4 @@ Let users enter their phone numbers in whatever format is familiar to them. Allo
 
 
 ## Changelog
-- Created 07.07.22
+- Created July 7, 2022

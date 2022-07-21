@@ -12,12 +12,7 @@ Email addresses can be confusing to enter and users often make mistakes. Some us
 ## When to use this pattern 
 Use this pattern whenever you are collecting email addresses.
 
-## When to consider something else
-If you do not specifically need a person’s Social Security Number, do not ask for or collect this information. The Social Security Number is intricately linked to a person’s identity, and should only be used when absolutely required for identification purposes.
-
-While most U.S. citizens and eligible U.S. residents have a Social Security Number, some people may not know their Social Security Number, or may lack the necessary documentation to obtain one easily. 
-
-### What's the solution
+## What's the solution
 A text input field with validation and robust error messaging to guide users in providing the correct information.
 
 ## Guidance
@@ -49,7 +44,7 @@ A text input field with validation and robust error messaging to guide users in 
           <ul>
             <li>Do not require users to re-enter their email address, unless you have research showing this is effective for your audience.</li>
             <li>Do not set arbitrary minimum lengths for the local portion of the email address (occurring before the @ symbol) or domain (after the @ symbol) parts.</li>
-            <li>Do not invalidate characters frequently seen in email addresses including hyphens (-), underscores (_), plus signs (+), or periods (.) in the local portion of an email address. [See RFC 822](https://datatracker.ietf.org/doc/html/rfc822) for the exhaustive list of permitted characters in the local portion of an email address.</li>
+            <li>Do not invalidate characters frequently seen in email addresses including hyphens (-), underscores (_), plus signs (+), or periods (.) in the local portion of an email address. <a href="https://datatracker.ietf.org/doc/html/rfc822">See RFC 822</a> for the exhaustive list of permitted characters in the local portion of an email address.</li>
             <li>Do not restrict top-level domains for email address unless your use case is very specific, e.g., only .gov or .mil addresses.</li> 
           </ul>
       </div>
@@ -106,8 +101,8 @@ A text input field with validation and robust error messaging to guide users in 
 
 ## Related
 
+- <a href="#">Phone number</a> pattern
 - <a href="#">Social Security Number</a> pattern
-- <a href="#">Telephone number</a> pattern
 
 ## References
 - Mobile form usability: avoid splitting single input entities. (February 12, 2013) Retrieved on July 20, 2022, from [https://baymard.com/blog/mobile-form-usability-single-input-fields](https://baymard.com/blog/mobile-form-usability-single-input-fields)
@@ -118,4 +113,4 @@ A text input field with validation and robust error messaging to guide users in 
 
 
 ## Changelog
-- Created 07.07.22
+- Created July 7, 2022

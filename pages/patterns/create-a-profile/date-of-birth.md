@@ -29,8 +29,8 @@ Mobile device users in particular may benefit from being able to type a year rat
             <li>Do provide three text entry fields for date input.</li>
             <li>Do label the fields clearly. Some countries use a day/month/year format and it’s important that date and month are clearly distinguished to ensure correct date entry.</li>
             <li>Do limit individual field character length.</li>
-            <li>Do provide examples. If pre-populating fields with examples, make sure labels with persistent examples are also displayed.</li>
-            <li>Do consider your data requirements. Use both client side and server side validation to support properly formatted dates if possible. If you are unable to parse month or date without two digits provide examples that reflect a leading zero and use clear validation messaging if a single digit is entered.</li>
+            <li>Do provide examples. Make sure hint text with representative examples are displayed.</li>
+            <li>Do consider your data requirements. Use both client side and server side validation to support properly formatted dates if possible. If you are unable to parse month or date without two digits,  provide examples that reflect a leading zero and use clear validation messaging if a single digit only is entered.</li>
             <li>Do consider requiring a four-digit year to avoid potential confusion.</li>
           </ul> 
         </div>
@@ -114,7 +114,9 @@ Mobile device users in particular may benefit from being able to type a year rat
 
 ## Related
 
-- <a href="https://designsystem.digital.gov/components/memorable-date/">Memorable date  component</a>
+- <a href="https://designsystem.digital.gov/components/memorable-date/">Memorable date component</a>
+- <a href="#">Phone number</a> pattern
+- <a href="#">Social Security Number</a> pattern
 
 ## References
 - Dates. (n.d.) Retrieved on July 20, 2022, from <a href="https://design-system.service.gov.uk/patterns/dates/">https://design-system.service.gov.uk/patterns/dates/</a>
@@ -122,4 +124,4 @@ Mobile device users in particular may benefit from being able to type a year rat
 - Why the GOV.UK Design System team changed the input type for numbers. (February 24, 2020) Retrieved on July 20, 2022, from <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/</a>
 
 ## Changelog
-- Created 07.07.22
+- Created July 7, 2022

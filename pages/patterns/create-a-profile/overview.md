@@ -9,10 +9,10 @@ subnav:
   - href: /patterns/create-a-profile/sex-or-gender/
   - href: /patterns/create-a-profile/date-of-birth/
   - href: /patterns/create-a-profile/name/
+  - href: /patterns/create-a-profile/phone-number/
   - href: /patterns/create-a-profile/pronouns/
   - href: /patterns/create-a-profile/race-or-ethnicity/
   - href: /patterns/create-a-profile/social-security-number/
-  - href: /patterns/create-a-profile/phone-number/
 ---
 ## Why this matters
 User profiles are central to a person's identity. A user profile may be integral to *proving* identity, 
@@ -78,6 +78,21 @@ effective communications methods are used to share information with the person c
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>The name pattern makes it as easy as possible for users to enter their name in the format required to validate their identity and to allow the collection of name elements in the most effective and least intrusive manner possible.</p>
+      </div>
+    </div>
+  </li>
+   <li
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit Toggle"
+  data-meta="Visit Toggle">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/pronouns/">Provide their <b>phone number</b></a></h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>The phone number pattern helps users enter their phone number successfully, reducing confusion, cognitive load, and frustration.</p>
       </div>
     </div>
   </li>

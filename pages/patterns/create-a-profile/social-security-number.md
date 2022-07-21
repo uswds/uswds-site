@@ -109,15 +109,18 @@ Provide a single text field to enter the Social Security Number.
 ## Related
 
 - <a href="#">Phone number</a> pattern
+- <a href="#">Email address</a> pattern
 - <a href="#">Input masking</a> component
 
 ## References
-- <a href="https://design.cms.gov/components/masked-field">Masked Field</a>, CMS Design System
-- <a href="https://design-system.service.gov.uk/patterns/national-insurance-numbers/">National Insurance Numbers</a>, Gov.uk 
-- <a href="https://www.nngroup.com/articles/form-design-placeholders/">Placeholders in a form field</a>, nngroup 
-- <a href="https://baymard.com/learn/input-fields">8 Recommendations for Creating effective input fields</a>, Baymard 
-- <a href="https://baymard.com/blog/mobile-form-usability-single-input-fields">Mobile Form Usability: Avoid Splitting Single Input Entities</a>, Baymard 
-- <a href="https://baymard.com/blog/input-masking-form-field">Consider Using Localized Input Masks for ‘Phone” and Other Restricted Inputs</a>, Bayard 
+- Masked field. (n.d) Retrieved on July 20, 2022, from [https://design.cms.gov/components/masked-field](https://design.cms.gov/components/masked-field)
+- National Insurance Numbers. (n.d) Retrieved on July 20, 2022, from [https://design-system.service.gov.uk/patterns/national-insurance-numbers/](https://design-system.service.gov.uk/patterns/national-insurance-numbers/)
+- Placeholders in a form field. (May 11, 2014) Retrieved on July 20, 2022, from [https://www.nngroup.com/articles/form-design-placeholders/](https://www.nngroup.com/articles/form-design-placeholders/) 
+- 8 recommendations for creating effective input fields. (n.d.) Retrieved on July 20, 2022, from [https://baymard.com/learn/input-fields](https://baymard.com/learn/input-fields)
+- Mobile form usability: avoid splitting single input entities. (February 12, 2013) Retrieved on July 20, 2022, from [https://baymard.com/blog/mobile-form-usability-single-input-fields](https://baymard.com/blog/mobile-form-usability-single-input-fields)
+- Consider using localized input masks for ‘phone” and other restricted inputs. (November 28, 2017) Retrieved on July 20, 2022, from [https://baymard.com/blog/input-masking-form-field](https://baymard.com/blog/input-masking-form-field)
+- Social Security is Changing the Way SSNs are Issued. (n.d) Retrieved on July 20, 2022, from [https://www.ssa.gov/kc/SSAFactSheet--IssuingSSNs.pdf](https://www.ssa.gov/kc/SSAFactSheet--IssuingSSNs.pdf)
+
 
 ## Changelog
 - Created 07.07.22

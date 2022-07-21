@@ -30,7 +30,7 @@ Mobile device users in particular may benefit from being able to type a year rat
             <li>Do label the fields clearly. Some countries use a day/month/year format and it’s important that date and month are clearly distinguished to ensure correct date entry.</li>
             <li>Do limit individual field character length.</li>
             <li>Do provide examples. Make sure hint text with representative examples are displayed.</li>
-            <li>Do consider your data requirements. Use both client side and server side validation to support properly formatted dates if possible. If you are unable to parse month or date without two digits,  provide examples that reflect a leading zero and use clear validation messaging if a single digit only is entered.</li>
+            <li>Do consider your data requirements. Use both client-side and server-side validation to support properly formatted dates if possible. If you are unable to parse month or date without two digits,  provide examples that reflect a leading zero and use clear validation messaging if a single digit only is entered.</li>
             <li>Do consider requiring a four-digit year to avoid potential confusion.</li>
           </ul> 
         </div>

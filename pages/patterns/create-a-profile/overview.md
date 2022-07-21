@@ -61,7 +61,7 @@ effective communications methods are used to share information with the person c
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/preferred-communication/">Indicate their <b>communication preferences</b></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/communication-preferences/">Indicate their <b>communication preferences</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>The communication preferences pattern allows users to indicate the way they prefer to be contacted, if follow-up is required.</p>
@@ -91,7 +91,7 @@ effective communications methods are used to share information with the person c
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/name/">Provide their <b>email address</b></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/email-address/">Provide their <b>email address</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>The email address pattern helps users enter their email address without confusion or frustration.</p>
@@ -121,7 +121,7 @@ effective communications methods are used to share information with the person c
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/pronouns/">Enter their <b>phone number</b></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number/">Enter their <b>phone number</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>The phone number pattern helps users enter their phone number successfully, reducing confusion, cognitive load, and frustration.</p>

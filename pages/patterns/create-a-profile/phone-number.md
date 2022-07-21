@@ -58,7 +58,7 @@ Let users enter their phone numbers in whatever format is familiar to them. Allo
 <b>Confirm you need this information.</b> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy and identity. 
 
 ### Whether you need to support international phone numbers
-<b>If you do need to support international numbers</b>. Consider providing a country select field to automatically populate the country code and support county-specific formatting. Use client side and ideally server side validation to ensure proper formatting of international phone numbers.
+<b>If you do need to support international numbers</b>. Consider providing a country select field to automatically populate the country code and support county-specific formatting. Use client-side and ideally server-side validation to ensure proper formatting of international phone numbers.
 
 ## Usability Guidance
 <b>Consider using an input mask.</b> If you use an input mask, it should be “###-###-####” for U.S. phone numbers so that the phone number maps to users' experience and is properly formatted. Input masks can help a user more confidently fill out restricted fields, reduce user anxiety about making a mistake, and reduce validation errors and web form abandonment, particularly on mobile devices.

@@ -66,6 +66,21 @@ effective communications methods are used to share information with the person c
       </div>
     </div>
   </li>
+    <li
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit Toggle"
+  data-meta="Visit Toggle">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/name/">Provide their <b>email address</b></a></h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>The email address pattern helps users enter their email address without confusion or frustration.</p>
+      </div>
+    </div>
+  </li>
   <li
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"

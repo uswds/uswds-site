@@ -106,7 +106,7 @@ effective communications methods are used to share information with the person c
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/pronouns/">Provide their <b>phone number</b></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/pronouns/">Enter their <b>phone number</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>The phone number pattern helps users enter their phone number successfully, reducing confusion, cognitive load, and frustration.</p>

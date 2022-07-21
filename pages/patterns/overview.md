@@ -18,7 +18,7 @@ The USWDS design patterns are developed to be reusable by developers and usable 
 
 <div class="usa-card-group flex-row margin-top-2">
   <li
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  class="usa-card site-component-card grid-col-6 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
   aria-label="User profile"
@@ -33,7 +33,7 @@ The USWDS design patterns are developed to be reusable by developers and usable 
     </div>
   </li>
   <li
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  class="usa-card site-component-card grid-col-6 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
   aria-label="Language selector"
@@ -48,7 +48,7 @@ The USWDS design patterns are developed to be reusable by developers and usable 
     </div>
   </li>
   <li
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  class="usa-card site-component-card grid-col-6 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
   aria-label="Complex form"

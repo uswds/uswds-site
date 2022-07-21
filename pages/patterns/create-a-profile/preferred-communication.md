@@ -98,16 +98,16 @@ Allow the user to select from among available options, and to include a brief me
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
   <div id="accordion-preview" class="usa-accordion__content">
-    {% include patterns/social-security-number.html %}
+    {% include patterns/preferred-communication.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
   <div id="accordion-code" class="usa-accordion__content highlight-code">
     <div class="usa-sr-only">
-      <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/social-security-number.html %}</code></pre></figure>
+      <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/preferred-communication.html %}</code></pre></figure>
     </div>
-    <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/social-security-number.html %}{% endhighlight %}</code></pre></figure>
+    <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/preferred-communication.html %}{% endhighlight %}</code></pre></figure>
   </div>
 </div>
 

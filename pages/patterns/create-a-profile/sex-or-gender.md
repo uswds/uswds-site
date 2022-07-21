@@ -81,7 +81,7 @@ Biological sex selection fields:
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg">Radio Button</h3>
+        <h3 class="usa-card__heading font-lang-lg">Radio button</h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Radio buttons allow users to select exactly one choice from a group.</p>

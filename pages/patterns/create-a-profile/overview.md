@@ -8,8 +8,10 @@ subnav:
   - href: /patterns/create-a-profile/address/
   - href: /patterns/create-a-profile/sex-or-gender/
   - href: /patterns/create-a-profile/date-of-birth/
+  - href: /patterns/create-a-profile/email-address/
   - href: /patterns/create-a-profile/name/
   - href: /patterns/create-a-profile/phone-number/
+  - href: /patterns/create-a-profile/preferred-communications/
   - href: /patterns/create-a-profile/pronouns/
   - href: /patterns/create-a-profile/race-or-ethnicity/
   - href: /patterns/create-a-profile/social-security-number/
@@ -108,6 +110,21 @@ effective communications methods are used to share information with the person c
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>The phone number pattern helps users enter their phone number successfully, reducing confusion, cognitive load, and frustration.</p>
+      </div>
+    </div>
+  </li>
+  <li
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit Toggle"
+  data-meta="Visit Toggle">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/preferred-communication/">Indicate their <b>preferred means of communication</b></a></h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>The preferred means of communication pattern allows users to indicate the way they prefer to be contacted, if follow-up is required.</p>
       </div>
     </div>
   </li>

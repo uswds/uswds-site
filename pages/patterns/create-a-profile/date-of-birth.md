@@ -43,7 +43,7 @@ Mobile device users in particular may benefit from being able to type a year rat
       <div class="do-dont__content">
           <ul>
             <li>Do not use visual separators between fields.</li>
-            <li>Do not auto-advance from field to field.</li>
+            <li>Do not auto-advance focus from field to field.</li>
           </ul>
       </div>
     </div>

@@ -16,7 +16,7 @@ Use this pattern if you need to collect the user’s phone number. Only ask for 
 If you do not specifically need a person’s phone number, do not ask for or collect this information.
 
 ### What's the solution
-Let users enter their phone numbers in whatever format is familiar to them. Allow for additional spaces, hyphens, dashes, and brackets. Accommodate country and area codes. Use the form label, supporting text, or hint text to tell users if you specifically need a U.S. or SMS-capable mobile phone number.
+Let users enter their phone numbers in whatever format is familiar to them. Allow for additional spaces, hyphens, dashes, and brackets. Accommodate country and area codes. Use the form label or hint text to tell users if you specifically need a U.S. or SMS-capable mobile phone number.
 
 ## Guidance
 

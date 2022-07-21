@@ -54,12 +54,20 @@ Provide a single text field to enter the Social Security Number.
 ### Whether you need this data
 <b>Confirm you need this information.</b> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy and identity. 
 
-<b>People without social security numbers.</b> Some people do not have social security numbers, and may not be easily able to provide the documentation required to apply for a Social Security Number. Consider whether there are other methods you can use to validate identity in the absence of a Social Security Number.
+<b>People without Social Security Numbers.</b> Some people do not have Social Security Numbers, and may not be easily able to provide the documentation required to apply for a Social Security Number. Consider whether there are other methods you can use to validate identity in the absence of a Social Security Number.
 
 ## Usability Guidance
 <b>Avoid multiple fields.</b> If possible, let users type the entire Social Security Number into a single field, not across three separate fields.
 
-<b>Consider using an input mask.</b> If you use an input mask, it should be “###-##-####” so that the Social Security Number maps to users' experience with social security numbers and is properly formatted. <a href="#">Input masks</a> can help a user more confidently fill out restricted fields, reduce user anxiety about making a mistake, and reduce validation errors and web form abandonment, particularly on mobile devices.
+<b>Consider using an input mask.</b> If you use an input mask, it should be “###-##-####” so that the Social Security Number maps to users' experience with Social Security Numbers and is properly formatted. <a href="#">Input masks</a> can help a user more confidently fill out restricted fields, reduce user anxiety about making a mistake, and reduce validation errors and web form abandonment, particularly on mobile devices.
+
+## Accessibility 
+<b>Follow input guidance.</b> These text fields should follow the accessibility  <a href="https://designsystem.digital.gov/components/text-input/">guidelines for all text inputs</a>. 
+
+<b>Use “text” instead of “number” inputs.</b> Research indicates that <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">numeric inputs still carry many usability problems</a>. 
+
+<b>Customization.</b> As you customize, make sure you follow [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
+
 
 ## Ingredients
 
@@ -72,11 +80,11 @@ Provide a single text field to enter the Social Security Number.
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg">Text Input</h3>
+        <h3 class="usa-card__heading font-lang-lg">Text input</h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
-        <a href="/components/text-input/">Visit Text Input</a>
+        <a href="/components/text-input/">Visit Text input</a>
       </div>
     </div>
   </li>

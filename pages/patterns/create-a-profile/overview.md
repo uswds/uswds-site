@@ -3,7 +3,7 @@ title: Create a user profile
 permalink: /patterns/create-a-profile/
 layout: styleguide
 category: Patterns
-lead: Help a user to create a user profile
+lead: Help a user create a user profile
 subnav:
   - href: /patterns/create-a-profile/address/
   - href: /patterns/create-a-profile/sex-or-gender/
@@ -12,6 +12,7 @@ subnav:
   - href: /patterns/create-a-profile/pronouns/
   - href: /patterns/create-a-profile/race-or-ethnicity/
   - href: /patterns/create-a-profile/social-security-number/
+  - href: /patterns/create-a-profile/phone-number/
 ---
 ## Why this matters
 User profiles are central to a person's identity. A user profile may be integral to *proving* identity, 

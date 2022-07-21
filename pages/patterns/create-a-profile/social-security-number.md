@@ -108,9 +108,9 @@ Provide a single text field to enter the Social Security Number.
 
 ## Related
 
-- <a href="#">Phone number</a> pattern
-- <a href="#">Email address</a> pattern
 - <a href="#">Input masking</a> component
+- <a href="#">Email address</a> pattern
+- <a href="#">Phone number</a> pattern
 
 ## References
 - Masked field. (n.d) Retrieved on July 20, 2022, from [https://design.cms.gov/components/masked-field](https://design.cms.gov/components/masked-field)
@@ -123,4 +123,4 @@ Provide a single text field to enter the Social Security Number.
 
 
 ## Changelog
-- Created 07.07.22
+- Created July 7, 2022

@@ -24,7 +24,7 @@ effective communications methods are used to share information with the person c
 ## Help users to...
 <div class="usa-card-group flex-row margin-top-2">
   <li
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
   aria-label="Visit Toggle"
@@ -39,7 +39,7 @@ effective communications methods are used to share information with the person c
     </div>
   </li>
   <li
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
   aria-label="Visit Toggle"
@@ -54,7 +54,7 @@ effective communications methods are used to share information with the person c
     </div>
   </li>
   <li
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
   aria-label="Visit Toggle"
@@ -69,7 +69,7 @@ effective communications methods are used to share information with the person c
     </div>
   </li>
     <li
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
   aria-label="Visit Toggle"
@@ -84,7 +84,7 @@ effective communications methods are used to share information with the person c
     </div>
   </li>
   <li
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
   aria-label="Visit Toggle"
@@ -99,7 +99,7 @@ effective communications methods are used to share information with the person c
     </div>
   </li>
    <li
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
   aria-label="Visit Toggle"
@@ -114,7 +114,7 @@ effective communications methods are used to share information with the person c
     </div>
   </li>
   <li
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
   aria-label="Visit Toggle"
@@ -129,7 +129,7 @@ effective communications methods are used to share information with the person c
     </div>
   </li>
   <li
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
   aria-label="Visit Toggle"
@@ -144,7 +144,7 @@ effective communications methods are used to share information with the person c
     </div>
   </li>
    <li
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
   aria-label="Visit Toggle"
@@ -159,7 +159,7 @@ effective communications methods are used to share information with the person c
     </div>
   </li>
   <li
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
   aria-label="Visit Toggle"

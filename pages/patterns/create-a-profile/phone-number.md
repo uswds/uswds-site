@@ -7,7 +7,7 @@ lead: The phone number pattern allows users to easily enter their phone number(s
 ---
 
 ## What problem does this solve?
-People, even the American public, have phone numbers in a variety of formats. It can be confusing to try to enter a phone number in a format that is not supported. 
+People format their phone number in varying ways&#8212;with or without extra spaces, hyphens, periods, and parentheses. Some may be more accustomed to providing only seven digits. This pattern was designed to reduce confusion and frustration and ensure accurate entry.
 
 ## When to use this pattern 
 Use this pattern if you need to collect the user’s phone number. Only ask for the phone number if you need it.
@@ -16,7 +16,7 @@ Use this pattern if you need to collect the user’s phone number. Only ask for 
 If you do not specifically need a person’s phone number, do not ask for or collect this information.
 
 ## What's the solution
-Let users enter their phone numbers in whatever format is familiar to them. Allow for additional spaces, hyphens, dashes, and brackets. Accommodate country and area codes. Use the form label or hint text to tell users if you specifically need a U.S. or SMS-capable mobile phone number.
+Help users enter their phone numbers in a consistent, correct, usable format. Use the form label and hint text to show users the expected format, and if you specifically need a U.S. or SMS-capable mobile phone number. When possible, use input masking and both client- and server-side validation to ensure the phone number they enter can be successfully used to contact them if needed.
 
 ## Guidance
 
@@ -30,7 +30,7 @@ Let users enter their phone numbers in whatever format is familiar to them. Allo
             <li>Tell users why you need their phone number, why you might contact them, and when.</li>
             <li>Do clearly state if you need a U.S. telephone number.</li>
             <li>Do clearly state if you need an SMS-capable mobile phone number, such as when you need to text a security code for validation.</li>
-            <li>Use clear hint text and input-masking to ensure proper formatting of phone numbers.</li>
+            <li>Use clear hint text and input masking to ensure proper formatting of phone numbers.</li>
             <li>Offer very clear validation messages to help users successfully meet format requirements.</li>
             <li>Consider using the autocomplete attribute on telephone number inputs, to allow the browser to autofill information if it has been previously entered.</li>
             <li>Allow a user to supply multiple phone numbers.</li>

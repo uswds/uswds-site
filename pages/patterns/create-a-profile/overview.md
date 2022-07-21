@@ -11,7 +11,7 @@ subnav:
   - href: /patterns/create-a-profile/email-address/
   - href: /patterns/create-a-profile/name/
   - href: /patterns/create-a-profile/phone-number/
-  - href: /patterns/create-a-profile/preferred-communications/
+  - href: /patterns/create-a-profile/preferred-communication/
   - href: /patterns/create-a-profile/pronouns/
   - href: /patterns/create-a-profile/race-or-ethnicity/
   - href: /patterns/create-a-profile/social-security-number/

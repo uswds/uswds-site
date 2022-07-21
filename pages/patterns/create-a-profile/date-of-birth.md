@@ -114,7 +114,7 @@ Mobile device users in particular may benefit from being able to type a year rat
 
 ## Related
 
-- <a href="https://designsystem.digital.gov/components/memorable-date/">Memorable date component</a>
+- <a href="https://designsystem.digital.gov/components/memorable-date/">Memorable date</a> component
 - <a href="#">Phone number</a> pattern
 - <a href="#">Social Security Number</a> pattern
 

@@ -116,7 +116,7 @@ Allow the user to select from available options, and to include a brief message 
 - <a href="#">Address</a> pattern
 - <a href="#">Email address</a> pattern
 - <a href="#">Phone number</a> pattern
-- <a href=https://designsystem.digital.gov/templates/form-templates/address-form/">Address form</a> template
+- <a href="https://designsystem.digital.gov/templates/form-templates/address-form/">Address form</a> template
 
 ## References
 - Seamlessness in the omnichannel user experience. (March 19, 2017) Retrieved on July 20, 2022, from [https://www.nngroup.com/articles/seamless-cross-channel/](https://www.nngroup.com/articles/seamless-cross-channel/)

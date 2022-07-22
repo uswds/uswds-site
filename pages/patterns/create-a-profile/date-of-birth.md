@@ -7,7 +7,7 @@ lead: Date of birth, and other memorable dates, can be an essential piece of inf
 ---
 
 ## What problem does this solve?
-Date entry fields are context-specific, and culture dependent. With many competing patterns for date formatting, users may become frustrated, confused, and more prone to making mistakes. 
+With many competing patterns for date formatting, users may become frustrated, confused, and more prone to make mistakes when entering a date of birth or other memorable date.
 
 ## When to use this pattern 
 Use this pattern when you need a user's date of birth or another memorable date. 

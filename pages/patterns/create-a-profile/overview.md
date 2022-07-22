@@ -7,7 +7,7 @@ lead: Help a user create a user profile
 subnav:
   - href: /patterns/create-a-profile/address/
   - href: /patterns/create-a-profile/sex-or-gender/
-  - href: /patterns/create-a-profile/communication-preferences/
+  - href: /patterns/create-a-profile/contact-preferences/
   - href: /patterns/create-a-profile/date-of-birth/
   - href: /patterns/create-a-profile/email-address/
   - href: /patterns/create-a-profile/name/
@@ -61,10 +61,10 @@ effective communications methods are used to share information with the person c
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/communication-preferences/">Indicate their <b>communication preferences</b></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/contact-preferences/">Indicate their <b>contact preferences</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>The communication preferences pattern allows users to indicate the way they prefer to be contacted, if follow-up is required.</p>
+        <p>The contact preferences pattern allows users to indicate the way they prefer to be contacted, if follow-up is required.</p>
       </div>
     </div>
   </li>  

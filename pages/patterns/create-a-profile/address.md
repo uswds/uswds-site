@@ -263,11 +263,13 @@ Provide all the fields a user needs to successfully enter a mailing address.
 - <a href="https://designsystem.digital.gov/templates/form-templates/address-form/">Address form template</a>
 
 ## References
-- <a href="https://maps.google.com/pluscodes/">Google Plus Codes</a>, USPS
-- <a href="https://pe.usps.com/text/pub28/welcome.htm">USPS Addressing Standards</a>, USPS
-- <a href="https://postalpro.usps.com/node/3740">USPS Addressing Standards for Puerto Rico and the U.S. Virgin Islands</a>, USPS
+- Google Plus Codes. (n.d.) Retrieved July 15, 2022, from [https://maps.google.com/pluscodes/](https://maps.google.com/pluscodes/)
+- USPS Addressing Standards Publication 28. (n.d.) Retrieved July 15, 2022, from [https://pe.usps.com/text/pub28/welcome.htm](https://pe.usps.com/text/pub28/welcome.htm)
+- USPS Addressing Standards for Puerto Rico and the U.S. Virgin Islands. (n.d.) Retrieved July 15, 2022, from [https://postalpro.usps.com/node/3740](https://postalpro.usps.com/node/3740)
+
 
 
 ## Changelog
-- Created 06.30.22
+- Updated based on community feedback July 19, 2022
+- Created June 30, 2022
 

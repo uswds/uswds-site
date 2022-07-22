@@ -217,8 +217,13 @@ Label Gender field:
 </div>
 
 ## References
-- <a href="https://uxdesign.cc/beyond-the-binary-5-steps-to-designing-gender-inclusive-fields-in-your-product-ff9230337b4f">Beyond the Binary: 5 steps to designing gender inclusive fields in your product</a>
-- <a href="https://www.dictionary.com/e/gender-terms-you-may-not-know/">Demigender, Maverique, And Other Gender Terms You May Not Know</a>
+- Gender or Sex. (n.d.) Retrieved on July 15, 2022, from [https://design-system.service.gov.uk/patterns/gender-or-sex/](https://design-system.service.gov.uk/patterns/gender-or-sex/) 
+- Gender terms you may not know. (June 17, 2022) Retrieved on July 15, 2022, from [https://www.dictionary.com/e/gender-terms-you-may-not-know/](https://www.dictionary.com/e/gender-terms-you-may-not-know/)
+- Nonbinary airline passenger tickets. (June 22, 2022) Retrieved on July 15, 2022, from [https://www.nytimes.com/2022/06/22/travel/nonbinary-airline-passengers-tickets.html](https://www.nytimes.com/2022/06/22/travel/nonbinary-airline-passengers-tickets.html)
+- X gender marker available on U.S. Passports starting April 11. (March 31, 2022) Retrieved on July 20, 2022, from [https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/](https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/)
+- Collecting Sexual Orientation and Gender Identity Information. (March 9, 2022) Retrieved on Jul 20, 2022 from [https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html](https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html)
+
 
 ## Changelog
-- Created 06.21.22
+- Updated based on community feedback July 20, 2022
+- Created June 21, 2022

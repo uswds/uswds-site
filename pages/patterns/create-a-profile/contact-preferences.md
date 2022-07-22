@@ -124,4 +124,5 @@ Allow the user to select from available options, and to include a brief message 
 
 
 ## Changelog
+- Updated based on community feedback July 21, 2022
 - Created July 7, 2022

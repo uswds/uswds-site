@@ -110,5 +110,5 @@ Label Pronouns field:
 
 
 ## Changelog
-- Updated July 18, 2022
+- Updated based on community feedback July 18, 2022
 - Created July 1, 2022

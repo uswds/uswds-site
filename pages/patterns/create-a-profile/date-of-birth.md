@@ -55,7 +55,7 @@ Mobile device users in particular may benefit from being able to type a year rat
 <b>Confirm you need this information.</b> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
 
 ### When to use 
-<b>Appropriate for most dates.</b> This pattern is appropriate for most dates but particularly past and future dates, or when there’s a high expectation of mobile device usage for form completion.
+<b>Appropriate for most dates.</b> This pattern is appropriate for most dates but particularly past and memorable dates, and dates that appear on items like Driver's Licenses or Passports. This pattern is especially applicable when there’s a high expectation of mobile device usage for form completion.
 
 ### When to consider something else
 

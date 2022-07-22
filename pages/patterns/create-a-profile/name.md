@@ -121,12 +121,13 @@ Label preferred way to be addressed:
   </div>
 </div>
 
-## Related Templates
+## Related
 - <a href="https://designsystem.digital.gov/templates/form-templates/name-form/">Name form template</a>
 
 ## References
-- <a href="https://web.library.yale.edu/cataloging/music/diacrit">Diacritics and special characters by language</a>, Yale University Library
-- <a href="https://www.w3.org/International/questions/qa-personal-names">Personal names around the world</a>, WC3
+- Diacritics and special characters by language. (n.d.) Retrieved July 15, 2022, from [https://web.library.yale.edu/cataloging/music/diacrit](https://web.library.yale.edu/cataloging/music/diacrit) 
+- Personal names around the world. (August 17, 2011) Retrieved July 15, 2022, from [https://www.w3.org/International/questions/qa-personal-names](https://www.w3.org/International/questions/qa-personal-names)
 
 ## Changelog
-- Created 06.21.22
+- Updated based on community feedback July 19, 2022
+- Created June 21, 2022

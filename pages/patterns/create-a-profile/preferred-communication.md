@@ -1,9 +1,9 @@
 ---
-title: Contact preferences
-permalink: /patterns/create-a-profile/contact-preferences/
+title: Preferred communication
+permalink: /patterns/create-a-profile/preferred-communication/
 layout: styleguide
 category: Patterns
-lead: The contact preferences design pattern allows users to easily indicate how they would like to be contacted in the future. 
+lead: The preferred communication design pattern allows users to easily indicate how they would like to be contacted in the future. 
 ---
 
 ## What problem does this solve?

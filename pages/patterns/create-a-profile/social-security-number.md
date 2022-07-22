@@ -7,7 +7,7 @@ lead: The Social Security Number pattern allows users to easily enter their Soci
 ---
 
 ## What problem does this solve?
-A Social Security Number is often a critical piece of validating identity when applying for government services or benefits.
+A Social Security Number is often a critical piece of validating identity when applying for government services or benefits, but can be confusing for users to enter correctly.
 
 ## When to use this pattern 
 Only use this pattern when you need to confirm a user's identity by asking for their Social Security Number. This information may be important when determining eligibility for many federal programs, such as federal student loans, public assistance, and Medicare.
@@ -17,7 +17,7 @@ If you do not specifically need a person’s Social Security Number, do not ask 
 
 While most U.S. citizens and eligible U.S. residents have a Social Security Number, some people may not know their Social Security Number, or may lack the necessary documentation to obtain one easily. 
 
-### What's the solution
+## What's the solution
 Provide a single text field to enter the Social Security Number. 
 
 ## Guidance
@@ -113,13 +113,13 @@ Provide a single text field to enter the Social Security Number.
 - <a href="#">Phone number</a> pattern
 
 ## References
-- Masked field. (n.d) Retrieved on July 20, 2022, from [https://design.cms.gov/components/masked-field](https://design.cms.gov/components/masked-field)
+- Masked field. (n.d.) Retrieved on July 20, 2022, from [https://design.cms.gov/components/masked-field](https://design.cms.gov/components/masked-field)
 - National Insurance Numbers. (n.d) Retrieved on July 20, 2022, from [https://design-system.service.gov.uk/patterns/national-insurance-numbers/](https://design-system.service.gov.uk/patterns/national-insurance-numbers/)
 - Placeholders in a form field. (May 11, 2014) Retrieved on July 20, 2022, from [https://www.nngroup.com/articles/form-design-placeholders/](https://www.nngroup.com/articles/form-design-placeholders/) 
 - 8 recommendations for creating effective input fields. (n.d.) Retrieved on July 20, 2022, from [https://baymard.com/learn/input-fields](https://baymard.com/learn/input-fields)
 - Mobile form usability: avoid splitting single input entities. (February 12, 2013) Retrieved on July 20, 2022, from [https://baymard.com/blog/mobile-form-usability-single-input-fields](https://baymard.com/blog/mobile-form-usability-single-input-fields)
-- Consider using localized input masks for ‘phone” and other restricted inputs. (November 28, 2017) Retrieved on July 20, 2022, from [https://baymard.com/blog/input-masking-form-field](https://baymard.com/blog/input-masking-form-field)
-- Social Security is Changing the Way SSNs are Issued. (n.d) Retrieved on July 20, 2022, from [https://www.ssa.gov/kc/SSAFactSheet--IssuingSSNs.pdf](https://www.ssa.gov/kc/SSAFactSheet--IssuingSSNs.pdf)
+- Consider using localized input masks for ‘phone’ and other restricted inputs. (November 28, 2017) Retrieved on July 20, 2022, from [https://baymard.com/blog/input-masking-form-field](https://baymard.com/blog/input-masking-form-field)
+- Social Security is Changing the Way SSNs are Issued. (n.d.) Retrieved on July 20, 2022, from [https://www.ssa.gov/kc/SSAFactSheet--IssuingSSNs.pdf](https://www.ssa.gov/kc/SSAFactSheet--IssuingSSNs.pdf)
 
 
 ## Changelog

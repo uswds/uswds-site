@@ -64,7 +64,7 @@ effective communications methods are used to share information with the person c
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/contact-preferences/">Indicate their <b>contact preferences</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>The contact preferences pattern allows users to indicate the way they prefer to be contacted, if follow-up is required.</p>
+        <p>The contact preferences pattern allows users to indicate the way they prefer to be contacted.</p>
       </div>
     </div>
   </li>  

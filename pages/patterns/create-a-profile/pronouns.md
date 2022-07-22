@@ -101,12 +101,14 @@ Label Pronouns field:
 </div>
 
 ## References
-- <a href="https://design.va.gov/content-style-guide/they-their">They, Their</a>, VA.gov
-- <a href="https://design-system.service.gov.uk/patterns/gender-or-sex/">Gender or Sex</a>, Gov.uk
-- <a href="https://www.digital.govt.nz/standards-and-guidance/design-and-ux/content-design-guidance/inclusive-language/gender-inclusive-language/">Gender-Inclusive Language</a>, Digital.govt.nz
-- <a href="https://equity.ubc.ca/resources/gender-diversity/inclusive-forms/">Inclusive Forms</a>, University of British Columbia
-- <a href="https://www.keshetonline.org/resources/whats-in-a-pronoun/">What's in a Pronoun</a>, Keshet.org
-- <a href="http://www.practicemakesprogress.org/blog/2015/9/18/asking-about-gender-on-online-forms">Asking about gender on online forms</a>, Practice makes progress
+- They, their. (April 10, 2019). Retrieved on July 19, 2022, from [https://design.va.gov/content-style-guide/they-their](https://design.va.gov/content-style-guide/they-their) 
+- Ask users for gender or Sex. (n.d.) Retrieved on July 19, 2022, from [https://design-system.service.gov.uk/patterns/gender-or-sex/](https://design-system.service.gov.uk/patterns/gender-or-sex/)
+- Gender-inclusive language. (n.d.) Retrieved on July 19, 2022, from [https://www.digital.govt.nz/standards-and-guidance/design-and-ux/content-design-guidance/inclusive-language/gender-inclusive-language/](https://www.digital.govt.nz/standards-and-guidance/design-and-ux/content-design-guidance/inclusive-language/gender-inclusive-language/) 
+- Inclusive forms. (n.d.) Retrieved on July 19, 2022, from [https://equity.ubc.ca/resources/gender-diversity/inclusive-forms/](https://equity.ubc.ca/resources/gender-diversity/inclusive-forms/) 
+- What's in a pronoun? (May 15, 2019) Retrieved on July 19, 2022, from [https://www.keshetonline.org/resources/whats-in-a-pronoun/](https://www.keshetonline.org/resources/whats-in-a-pronoun/)
+- Asking about gender in online forms. (September 18, 2015) Retrieved on July 19, 2022, from [http://www.practicemakesprogress.org/blog/2015/9/18/asking-about-gender-on-online-forms](http://www.practicemakesprogress.org/blog/2015/9/18/asking-about-gender-on-online-forms)
+
 
 ## Changelog
-- Created 07.01.22
+- Updated July 18, 2022
+- Created July 1, 2022

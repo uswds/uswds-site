@@ -146,14 +146,15 @@ Combined Race and ethnicity checkbox items:
 </div>
 
 ## References
-- <a href="https://www.census.gov/topics/population/race/about.html">About the Topic of Race</a>, U.S. Census Bureau
-- <a href="https://www.census.gov/about/our-research/race-ethnicity.html">Research to Improve Data on Race and Ethnicity</a>, U.S. Census Bureau
-- <a href="https://www.census.gov/programs-surveys/decennial-census/decade/2020/planning-management/plan/content-research.html">Content Research</a>, U.S. Census Bureau
-- <a href="https://www.census.gov/programs-surveys/decennial-census/decade/2010/program-management/cpex/2010-cpex-211.html">2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment</a>, U.S. Census Bureau
-- <a href="https://www2.census.gov/programs-surveys/decennial/2020/program-management/final-analysis-reports/2015nct-race-ethnicity-analysis.pdf">2015 National Content Test Race and Ethnicity Analysis Report</a>, U.S. Census Bureau
-- <a class="display-inline" href="https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf">Revisions to the Standards for the Classification of Federal Data on Race and Ethnicity</a>, United States Government Publishing Office (GPO)
-- <a class="display-inline" href="https://www.federalregister.gov/documents/2016/09/30/2016-23672/standards-for-maintaining-collecting-and-presenting-federal-data-on-race-and-ethnicity">Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity</a>, Federal Register
+- About the Topic of Race. (n.d.) Retrieved on July 15, 2022, from [https://www.census.gov/topics/population/race/about.html](https://www.census.gov/topics/population/race/about.html)
+- Research to Improve Data on Race and Ethnicity. (n.d.) Retrieved on July 15, 2022, from [https://www.census.gov/about/our-research/race-ethnicity.html](https://www.census.gov/about/our-research/race-ethnicity.html)
+- Content Research. (n.d.) Retrieved on July 15, 2022, from [https://www.census.gov/programs-surveys/decennial-census/decade/2020/planning-management/plan/content-research.html](https://www.census.gov/programs-surveys/decennial-census/decade/2020/planning-management/plan/content-research.html)
+- 2010 Census Race and Hispanic Origin Alternative Questionnaire Experiment. (February 28, 2013) Retrieved on July 15, 2022, from [https://www.census.gov/programs-surveys/decennial-census/decade/2010/program-management/cpex/2010-cpex-211.html](https://www.census.gov/programs-surveys/decennial-census/decade/2010/program-management/cpex/2010-cpex-211.html)
+- 2015 National Content Test Race and Ethnicity Analysis Report. (February 28, 2017) Retrieve on July 15, 2022, from [https://www2.census.gov/programs-surveys/decennial/2020/program-management/final-analysis-reports/2015nct-race-ethnicity-analysis.pdf](https://www2.census.gov/programs-surveys/decennial/2020/program-management/final-analysis-reports/2015nct-race-ethnicity-analysis.pdf)
+- Revisions to the Standards for the Classification of Federal Data on Race and Ethnicity (October 30, 1997) Retrieved on July 15, 2022, from [https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf](https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf)
+- Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity. (September 30, 2016) Retrieved July 15, 2022, from [https://www.federalregister.gov/documents/2016/09/30/2016-23672/standards-for-maintaining-collecting-and-presenting-federal-data-on-race-and-ethnicity](https://www.federalregister.gov/documents/2016/09/30/2016-23672/standards-for-maintaining-collecting-and-presenting-federal-data-on-race-and-ethnicity)
 
 
 ## Changelog
-- Created 06.27.22
+- Updated based on community feedback July 20, 2022
+- Created June 27, 2022

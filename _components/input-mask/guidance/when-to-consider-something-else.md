@@ -1,1 +1,1 @@
-- **Predetermined input options.** When users are choosing from a specific set of options.
+- **When the input requires a free-form field.** When there isn't a common input pattern to use

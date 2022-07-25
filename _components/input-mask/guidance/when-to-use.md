@@ -1,3 +1,4 @@
 - **Unpredictable or freeform responses.** If you can’t reasonably predict a user’s answer to a prompt and there might be wide variability in users’ answers.
 - **Input simplicity.** When using another type of input will make answering more difficult. For example, birthdays and other known dates are easier to type in than they are to select from a [date picker]({{ site.baseurl }}/components/date-picker).
-- **Pasted content.** When users want to be able to paste in a response.
+- **Common input patterns.** When there is a common input pattern, such as a Social Security Number or Zip Code, that you would like to assist the user with their input
+- **

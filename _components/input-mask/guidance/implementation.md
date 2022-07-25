@@ -1,1 +1,1 @@
-Tester
+The following examples are common input masks, however you can alter the code to meet the needs of your project. In order to extend the functionality of the input mask, you can include a new regular expression (regex) pattern as the pattern attribute of the <input> tag. 

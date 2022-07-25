@@ -12,3 +12,7 @@ contrast-report.json
 .jekyll-cache/
 vendor/
 pa11y-results.json
+
+# Ignore VS code directories
+*.code-workspace
+.vscode/

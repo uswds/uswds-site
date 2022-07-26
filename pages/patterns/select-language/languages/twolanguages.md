@@ -1,6 +1,6 @@
 ---
-title: Select their perferred language
-permalink: /patterns/select-language/two-languages/
+title: Select their preferred language
+permalink: /patterns/select-language/twolanguages/
 subnav:
 - text: Guidance
   href: '#guidance'

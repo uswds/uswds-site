@@ -10,7 +10,7 @@ lead: USWDS patterns are practical, easy to implement guidelines and best practi
 ---
 
 ## Introducing patterns
-Every day we ask users to engage with us digitally. Whether completing a form, creating an account, scheduling an appointment  —  or even something as simple as drilling down into complex content  —  we ask them to interact with us to fulfill a need. Design patterns provide suggested layouts, key considerations, and research-informed recommendations on how to create successful experiences.
+Every day we ask users to engage with our digital products and services. Whether completing a form, creating an account, scheduling an appointment  —  or even something as simple as drilling down into complex content  —  we ask them to interact with us to fulfill a need. Design patterns provide suggested layouts, key considerations, and research-informed recommendations on how to create successful experiences.
 
 A design pattern often contains more than one component  —  but it isn’t simply a sum of its parts. It is an entire experience designed to encourage the user to successfully complete whatever task is in front of them. Patterns are best practice design solutions for specific user tasks and interactions.
 

@@ -10,7 +10,7 @@ subnav:
 
 ---
 ## Why this matters
-Accessing content in the language that the user is most comfortable in allows the user to be more successful in completing key tasks. People with low English proficiency may struggle to complete tasks in English, especially during times of stress. By supporting users in their language of choice we show respect and enable them to be more effective.
+Accessing content in the language that the user is most comfortable in allows the user to be more successful in completing key tasks. People with Limited English Proficiency (LEP) may struggle to complete tasks in English, especially during times of stress. By supporting users in their language of choice we show respect and enable them to be more effective.
 
 ## Help users to...
 <div class="usa-card-group flex-row margin-top-2">

@@ -3,7 +3,7 @@ title: Create a user profile
 permalink: /patterns/create-a-profile/
 layout: styleguide
 category: Patterns
-lead: Help a user create a user profile
+lead: Help a user to create their profile
 subnav:
   - href: /patterns/create-a-profile/address/
   - href: /patterns/create-a-profile/sex-or-gender/
@@ -18,8 +18,7 @@ subnav:
 ---
 ## Why this matters
 User profiles are central to a person's identity. A user profile may be integral to *proving* identity, 
-qualifying for and receiving support and services from the government, and ensuring that 
-effective communications methods are used to share information with the person creating a user profile.
+qualifying for and receiving support and services from the government. It can also be integral to expressing identity and ensuring respectful communication.
 
 ## Help users to...
 <div class="usa-card-group flex-row margin-top-2">
@@ -34,7 +33,7 @@ effective communications methods are used to share information with the person c
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/address/">Enter their <b>address</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>The physical and mailing address patterns help users to enter their address successfully.</p>
+        <p>Help users to provide their address: support users in entering their physical or mailing addresses for successful communication.</p>
       </div>
     </div>
   </li>
@@ -49,7 +48,7 @@ effective communications methods are used to share information with the person c
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/sex-or-gender/">Select their <b>biological sex or gender</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>The sex or gender pattern helps users to feel comfortable and confident that their information is being used to identify them the way they choose or in a manner that will assist the user.</p>
+        <p>Help users to enter their biolgical sex or gender: allow users to feel comfortable and confident that they are being identified in the way that they choose.</p>
       </div>
     </div>
   </li>
@@ -64,7 +63,7 @@ effective communications methods are used to share information with the person c
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/contact-preferences/">Indicate their <b>contact preferences</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>The contact preferences pattern allows users to indicate the way they prefer to be contacted.</p>
+        <p>Help users to enter their preferred means of communication: allow users to specify how they would like to be contacted and in what language.</p>
       </div>
     </div>
   </li>  
@@ -79,7 +78,7 @@ effective communications methods are used to share information with the person c
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/date-of-birth/">Enter their <b>date of birth</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>This pattern allows users to easily enter their date of birth or memorable date with ease and discretion.</p>
+        <p>Help users to enter their date of birth: allow users to provide their birth date or other memorable date.</p>
       </div>
     </div>
   </li>
@@ -94,7 +93,7 @@ effective communications methods are used to share information with the person c
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/email-address/">Provide their <b>email address</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>The email address pattern helps users enter their email address without confusion or frustration.</p>
+        <p>Help users to enter their email address: allow users to enter their email address or addresses.</p>
       </div>
     </div>
   </li>
@@ -109,7 +108,7 @@ effective communications methods are used to share information with the person c
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/name/">Provide their <b>name</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>The name pattern makes it as easy as possible for users to enter their name in the format required to validate their identity and to allow the collection of name elements in the most effective and least intrusive manner possible.</p>
+        <p>Help users to enter their name: allow users to enter their name in a way that supports the wide variety of name formats.</p>
       </div>
     </div>
   </li>
@@ -124,7 +123,7 @@ effective communications methods are used to share information with the person c
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number/">Enter their <b>phone number</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>The phone number pattern helps users enter their phone number successfully, reducing confusion, cognitive load, and frustration.</p>
+        <p>Help users to enter their phone number: allow the user to enter their phone number or numbers to ensure effective communication.</p>
       </div>
     </div>
   </li>
@@ -139,7 +138,7 @@ effective communications methods are used to share information with the person c
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/pronouns/">Share their <b>pronouns</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>The pronouns pattern assists users to feel confident that they will be addressed with the pronouns they use.</p>
+        <p>Help users to enter their pronouns: support users in providing their pronouns to ensure they are addressed in the manner they prefer.</p>
       </div>
     </div>
   </li>
@@ -154,7 +153,7 @@ effective communications methods are used to share information with the person c
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/race-or-ethnicity/">Provide their <b>race or ethnicity</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>The race and ethnicity pattern allows users to provide race and ethnicity information in the most accurate and respectful manner possible.</p>
+        <p>Help users to enter their race or ethnicity: allow users to provide the race and ethnicity that reflects their lived experience.</p>
       </div>
     </div>
   </li>
@@ -169,7 +168,7 @@ effective communications methods are used to share information with the person c
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number/">Enter their <b>Social Security Number (SSN)</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>The Social Security Number pattern allows users to easily enter their Social Security Number and ensure it is properly formatted.</p>
+        <p>Help users to enter their Social Security Number: allow users to provide their Social Security Number or Individual Taxpayer Identification Number.</p>
       </div>
     </div>
   </li>

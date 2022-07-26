@@ -22,10 +22,10 @@ Accessing content in the language that the user is most comfortable in allows th
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/select-language/two-languages/">Two languages</a></h3>
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/select-language/two-languages/">Select from <strong>two language options</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Two languages</p>
+        <p>Help users select from two language options. Support users in selecting from two language options, such as English and Spanish.</p>
       </div>
     </div>
   </li>
@@ -37,10 +37,10 @@ Accessing content in the language that the user is most comfortable in allows th
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/select-language/three-or-more-languages/">Three or more languages</a></h3>
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/select-language/three-or-more-languages/">Select from <strong>three or more languages</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Three or more languages</p>
+        <p>Help users choose from among three or more languages. Allow users to select from multiple available languages, such as English, Spanish, Chinese, and Arabic.</p>
       </div>
     </div>
   </li>

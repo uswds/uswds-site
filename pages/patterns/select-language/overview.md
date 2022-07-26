@@ -22,7 +22,7 @@ Accessing content in the language that the user is most comfortable in allows th
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/select-language/two-languages/">two-languages</a></h3>
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/select-language/two-languages/">Two languages</a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Two languages</p>
@@ -37,7 +37,7 @@ Accessing content in the language that the user is most comfortable in allows th
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/select-language/three-or-more-languages/">three-or-more-languages</a></h3>
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/select-language/three-or-more-languages/">Three or more languages</a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Three or more languages</p>

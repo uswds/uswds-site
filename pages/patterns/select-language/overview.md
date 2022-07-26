@@ -1,12 +1,12 @@
 ---
-title: Language Selector
-permalink: /patterns/select-language/
+title: Preferred language
+permalink: /patterns/preferred-language/
 layout: styleguide
 category: Patterns
 lead: Help a user to select their preferred language
 subnav:
-  - href: /patterns/select-language/two-languages/
-  - href: /patterns/select-language/three-or-more-languages/
+  - href: /patterns/preferred-language/two-languages/
+  - href: /patterns/preferred-language/three-or-more-languages/
 
 ---
 ## Why this matters

@@ -1,16 +1,17 @@
 ---
-title: Complete a complex form
+title: Complex forms
 permalink: /patterns/complex-form/
 layout: styleguide
 category: Patterns
-lead: Help a user to complete a complex form
+lead: Help a user to successfully complete complex forms
 subnav:
-  - href: /patterns/complex-form/submit-a-form/
+  - href: /patterns/complex-form/ensure-trust/
+  - href: /patterns/complex-form/progress-easily/
+  - href: /patterns/complex-form/keep-a-record/
+  
 ---
 ## Why this matters
-Users need to know what they'll  need to complete a form, and have a sense of the time commitment. 
-Users should feel confident that their information has been successfully submitted.
-Users may be stressed, displaced, exhausted, and frustrated.  Users may be afraid to make  mistakes, and may have limited access to the internet or be using unfamiliar devices that don’t allow them to complete a form in a single session.
+Complex forms can be daunting. This is especially true when users are under stress or recovering from trauma. Successfully completing complex forms can be overwhelming. By supporting users through their interaction with the form, we can help reduce their cognitive load and decrease frustration.
 
 ## Help users to...
 <div class="usa-card-group flex-row margin-top-2">
@@ -22,11 +23,41 @@ Users may be stressed, displaced, exhausted, and frustrated.  Users may be afrai
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/complex-form/submit-a-form/">Submit a form</a></h3>
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/complex-form/ensure-trust/">Understand <strong>expectations and build trust</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Submit a form</p>
+        <p>Help users understand what they will need to complete the form, what the information will be used for, and how we’ll protect their privacy and security.</p>
       </div>
     </div>
   </li>
+  <li
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit Toggle"
+  data-meta="Visit Toggle">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/complex-form/progress-easily/"><strong>Progress easily</strong> through form questions</a></h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>Guide users through the process of completing a form in a way that is humane and respectful of lived experiences impacting emotional state and cognitive load.</p>
+      </div>
+    </div>
+  </li>
+  <li
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit Toggle"
+  data-meta="Visit Toggle">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/complex-form/keep-a-record/"><strong>Keep a record</strong> of submitted information</a></h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>Allow users to print or save a record of all the information they’ve submitted, so they can reference their answers and feel confident in their interaction.</p>
+      </div>
+    </div>
+  </li>  
 </div>

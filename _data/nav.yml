@@ -85,6 +85,8 @@ Patterns:
     href: /patterns/create-a-profile/
   - text: Complete a complex form
     href: /patterns/complex-form/
+  - text: Preferred language
+    href: /patterns/preferred-language/
 
 How to use USWDS:
   - href: /how-to-use-uswds/

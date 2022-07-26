@@ -6,11 +6,7 @@ redirect_from:
 layout: styleguide
 category: Patterns
 lead: USWDS patterns are practical, easy to implement guidelines and best practices for common user interactions. 
-subnav:
-  - href: /patterns/inclusive-design/
-  - href: /patterns/select-language/create-a-profile
-  - href: /patterns/select-language/
-  - href: /patterns/complex-form/
+
 ---
 
 ## Introducing patterns

@@ -1,5 +1,5 @@
 ---
-layout: together
+layout: together-content
 title: Inclusive Design Patterns
 nav_title: Together
 description: "Access to digital services isn’t a luxury. It’s critical. Let’s transform the way we design and deliver digital government with and for the people."
@@ -58,39 +58,8 @@ summary_sections:
 
 ---
 
-<section class="next-hero usa-dark-background" aria-label="Page description">
-  <div class="grid-container">
-    <div class="grid-row flex-align-center margin-x-neg-2 tablet:margin-x-auto margin-y-2 tablet:margin-y-4 desktop:margin-y-6">
-      <div class="grid-col-12 tablet:grid-col-7 desktop:grid-col-6 next-hero__content padding-x-2 tablet:padding-x-0">
-        <h1 class="next-hero__heading"> {{ page.title }}</h1>
-        <p class="next-hero__subhead">{{ page.subhead }}</p>
-        <div class="margin-y-4"><a href="{{ site.baseurl }}/files/next/Transforming-the-American-digital-experience.pdf" class="usa-button usa-button--next usa-button--big">Download the report</a></div>
-      </div>
-      <div class="grid-col-12 tablet:margin:margin-x-0 tablet:grid-col-5 desktop:grid-col-6 tablet:padding-x-2 next-hero__banner-container">
-        <img class="tablet:display-none" src="{{ site.baseurl }}/img/next/cover-pattern-mobile.svg" alt="">
-        <img class="display-none tablet:display-block" src="{{ site.baseurl }}/img/next/next-hero-image-circle.svg" alt="">
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- maybe componentize this -- NOTE: it is different from the one on next-content layout -->
-<nav class="next-internal-nav usa-dark-background" aria-label="Next report internal navigation">
-  <div class="grid-container">
-    <ul id="internal-nav" class="next-internal-nav__list">
-      {% for item in site.together %}
-      {% if item.chapter == true %}
-        <li class="next-internal-nav__item">
-          <a href="{{ site.baseurl }}{{ item.url }}" class="next-internal-nav__link {% if item.title == page.title or item.title == page.parent %}current{% endif %}">{{ item.nav_title }}</a>
-        </li>
-      {% endif %}
-      {% endfor %}
-      <li class="next-internal-nav__item next-internal-nav__item--button">
-        <a href="{{ site.baseurl }}/files/next/Transforming-the-American-digital-experience.pdf" class="usa-button usa-button--next">Download the report</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+
 
 <main role="main" id="main-content">
   {% for item in page.summary_sections %}

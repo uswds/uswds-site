@@ -40,7 +40,7 @@ The USWDS design patterns are developed to be reusable by developers and usable 
   data-meta="Language selector">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/language-selector/">Language selector</a></h3>
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/language-selector/">Select a language</a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users select their preferred language: allow users to easily identify and access content in whatever language they prefer.</p>

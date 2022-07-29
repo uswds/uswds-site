@@ -1,6 +1,6 @@
 ---
 title: Preferred language
-permalink: /patterns/preferred-language/
+permalink: /patterns/language-selector/
 layout: styleguide
 category: Patterns
 lead: Help a user to select their preferred language

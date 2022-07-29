@@ -72,7 +72,7 @@ Accessing content in the language that the user is most comfortable in allows th
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/language-selector/language-preferences/">Select <b>written and spoken language preferences</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Help users indicate their written and spoke language preferences</p>
+        <p>Help the user to identify one or more languages for written or spoken communication.</p>
       </div>
     </div>
   </li>

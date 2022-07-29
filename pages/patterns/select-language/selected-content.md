@@ -81,9 +81,9 @@ If you have a very focused website and key pieces of multilingual content, consi
 
 Provide a <b>visual indicator that the text is a link</b>. For example, permanently underline text or when hovering.
 
-If the text will be visually presented as a button but coded as a link, it is recommended to <b>add ARIA role="button" so that screen readers announce it as a button</b>. Additionally, JavaScript will also need to be added so that keyboard users can activate the button using both the Enter and Spacebar keys. See [Understanding Success Criterion 4.1.2 | Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) for more information.
+If the text will be visually presented as a button but coded as a link, it is recommended to <b>add ARIA role="button" so that screen readers announce it as a button</b>. Additionally, JavaScript will also need to be added so that keyboard users can activate the button using both the Enter and Spacebar keys. See [Understanding Success Criterion 4.1.2 - Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) for more information.
 
-<b>Use the HTML lang attributes</b> to set the language of the page (<html lang='en'>, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
+<b>Use the HTML lang attributes</b> to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
 
 Consider including a <b>prominent in-page notice or link</b> in addition to the link in the header, in order to increase visibility for the user.
 

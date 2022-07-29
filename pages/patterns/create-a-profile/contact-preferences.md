@@ -54,8 +54,7 @@ Allow the user to select from available options, and to include a brief message 
 <strong>Consider multiple means of communication for critical messaging.</strong> While prioritizing the user’s preferred communication method (e.g., text message), do follow up with alternate methods (e.g., email) to improve the likelihood of the user seeing your communication.
 
 ## Accessibility 
-
-<strong>Customization.</b> As you customize, make sure you follow [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
+<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
 
 
 ## Ingredients

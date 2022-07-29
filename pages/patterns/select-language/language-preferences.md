@@ -25,7 +25,6 @@ The pattern allows users to select their language preferences for both written a
       <h3 class="do-dont__heading">What to do</h3>
         <div class="do-dont__content">
           <ul>
-            <li>Do consider using this pattern in conjunction with the Language Selector patterns.</li>
             <li>Do list the languages available in both their native spelling and English.</li>
             <li>Do order the languages alphabetically in English or by population size.<br/>
             Arabic - عربى<br/>
@@ -63,9 +62,9 @@ The pattern allows users to select their language preferences for both written a
 ## Considerations
 Strongly consider providing language to <b>reassure the user that there are no penalties</b> associated with accessing information or completing forms in languages other than English. Some people with limited English-language skills have concerns about stigma or that use of a language other than English will impact their immigration status, program eligibility, or future opportunities.
 
-Once a user has saved a preference setting other than English, default to their preferred language for future communication whenever possible.
+Once a user has saved a preference setting other than English, default to their preferred language for future mail or email communications whenever possible.
 
-Consider that individuals may have <b>other challenges in addition to LEP</b>, and may require other types of support.
+Consider that individuals may have <b>other challenges in addition to limited English proficiency</b>, and may require other types of support.
 
 Translation and navigation functions in languages other than English should still meet appropriate accessibility standards to ensure equal access.
 

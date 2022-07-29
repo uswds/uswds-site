@@ -7,10 +7,8 @@ lead: Help a user to select their preferred language
 subnav:
   - href: /patterns/preferred-language/two-languages/
   - href: /patterns/preferred-language/three-or-more-languages/
-  - href: /patterns/preferred-language/limited-ml-content/
+  - href: /patterns/preferred-language/limited-multilingual-content/
   - href: /patterns/preferred-language/language-preferences/
-
-
 
 ---
 ## Why this matters

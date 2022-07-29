@@ -5,10 +5,10 @@ layout: styleguide
 category: Patterns
 lead: Help a user to select their preferred language
 subnav:
-  - href: /patterns/preferred-language/two-languages/
-  - href: /patterns/preferred-language/three-or-more-languages/
-  - href: /patterns/preferred-language/selected-content/
-  - href: /patterns/preferred-language/language-preferences/
+  - href: /patterns/language-selector/two-languages/
+  - href: /patterns/language-selector/three-or-more-languages/
+  - href: /patterns/language-selector/selected-content/
+  - href: /patterns/language-selector/language-preferences/
 
 ---
 ## Why this matters
@@ -24,7 +24,7 @@ Accessing content in the language that the user is most comfortable in allows th
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/select-language/two-languages/">Select from <b>two language options</b></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/language-selector/two-languages/">Select from <b>two language options</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users select from two language options. Support users in selecting from two language options, such as English and Spanish.</p>
@@ -39,7 +39,7 @@ Accessing content in the language that the user is most comfortable in allows th
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/select-language/three-or-more-languages/">Select from <b>three or more languages</b></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages/">Select from <b>three or more languages</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users choose from among three or more languages. Allow users to select from multiple available languages, such as English, Spanish, Chinese, and Arabic.</p>
@@ -54,7 +54,7 @@ Accessing content in the language that the user is most comfortable in allows th
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/select-language/selected-content/">Access <b>selected content in preferred language</b></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Access <b>selected content in preferred language</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users access a limited set of translated content available in additional languages.</p>
@@ -69,7 +69,7 @@ Accessing content in the language that the user is most comfortable in allows th
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/select-language/language-preferences/">Select <b>written and spoken language preferences</b></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/language-selector/language-preferences/">Select <b>written and spoken language preferences</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users indicate their written and spoke language preferences</p>

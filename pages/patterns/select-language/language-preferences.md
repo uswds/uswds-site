@@ -86,7 +86,7 @@ Translation and navigation functions in languages other than English should stil
       </header>
       <div class="usa-card__body font-lang-sm">
           <p>Checkboxes allow users to select one or more options from a list.</p>
-          <a href="/components/checkbox/">Visit Checkbox</a>
+          <a href="{{ site.baseurl }}/components/checkbox/">Visit Checkbox</a>
       </div>
       </div>
   </li>
@@ -102,7 +102,7 @@ Translation and navigation functions in languages other than English should stil
       </header>
       <div class="usa-card__body font-lang-sm">
           <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
-          <a href="/components/text-input/">Visit Text input</a>
+          <a href="{{ site.baseurl }}/components/text-input/">Visit Text input</a>
       </div>
       </div>
   </li>

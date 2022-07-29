@@ -84,7 +84,7 @@ Consider including a <b>prominent in-page notice or link</b> in addition to the 
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>A button draws attention to important actions with a large selectable surface.</p>
-        <a href="/components/button/">Visit Button</a>
+        <a href="{{ site.baseurl }}/components/button/">Visit Button</a>
       </div>
     </div>
   </li>

@@ -90,7 +90,7 @@ Mobile device users in particular may benefit from being able to type a year rat
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
-        <a href="/components/text-input/">Visit Text input</a>
+        <a href="{{ site.baseurl }}/components/text-input/">Visit Text input</a>
       </div>
     </div>
   </li>

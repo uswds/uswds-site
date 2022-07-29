@@ -73,7 +73,7 @@ Allow the user to select from available options, and to include a brief message 
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
-        <a href="/components/text-input/">Visit Text input</a>
+        <a href="{{ site.baseurl }}/components/text-input/">Visit Text input</a>
       </div>
     </div>
   </li>
@@ -89,7 +89,7 @@ Allow the user to select from available options, and to include a brief message 
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Radio buttons allow users to select exactly one choice from a group.</p>
-        <a href="/components/radio-buttons/">Visit Radio buttons</a>
+        <a href="{{ site.baseurl }}/components/radio-buttons/">Visit Radio buttons</a>
       </div>
     </div>
   </li>  

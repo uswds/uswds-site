@@ -1,91 +1,58 @@
 <a class="usa-skipnav" href="#main-content">Skip to main content</a>
 {% include banner.html %}
-<header class="usa-header site-header site-header-dark" role="banner">
+<header class="usa-header usa-header--extended site-header site-header-dark" role="banner">
   <div class="usa-navbar site-header-navbar">
     <div class="usa-logo site-logo" id="logo">
       <em class="usa-logo__text">
-        <a class="margin-right-05" href="{{ site.baseurl }}/" title="Home" aria-label="{{ site.title }} home">
-          <span aria-hidden="true" class="site-title-short">USWDS</span>
-          <span class="site-title">{{ site.title }}</span>
+        <a  href="{{ site.baseurl }}/" title="{{ site.title }} Home">
+          {{ site.title }}
         </a>
       </em>
     </div>
     <button class="usa-menu-btn">Menu</button>
-    <div class="navbar--container">
-      <form
-        id="search_form"
-        class="navbar__search usa-search usa-search--small desktop:margin-right-2 display-none desktop:display-inline-block float-none text-middle"
-        action="https://search.usa.gov/search"
-        accept-charset="UTF-8"
-        method="get">
-        <input name="utf8" type="hidden" value="&#x2713;" />
-        <input type="hidden" name="affiliate" id="affiliate" value="uswds" />
-        <div role="search">
-          <label class="usa-sr-only" for="query">Search</label>
-          <input
-            id="query"
-            class="usa-input usagov-search-autocomplete"
-            name="query"
-            type="search"
-            autocomplete="off"/>
-          <button 
-            class="usa-button" 
-            type="submit"
-            name="commit">    
-            <img src="{{ site.baseurl }}/assets/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search">
-          </button>
-        </div>
-      </form>
-      {% include download-buttons.html %}
-    </div>
   </div>
-</header>
-<nav class="site-nav-secondary sticky">
-  <ul>
-    {%
-      include nav/list.html
-      links=site.data.nav.primary
-      rel='contains'
-      flat=true
-      primary=true
-    %}
-  </ul>
-</nav>
-<div class="usa-overlay"></div>
-
-<nav role="navigation" class="usa-nav site-nav sidenav-mobile">
-  <button class="usa-nav__close">
-    <img src="{{ site.baseurl }}/assets/img/usa-icons/close.svg" role="img" alt="Close">
-  </button>
-
-  <form
-    id="search_form-mobile"
-    class="usa-search usa-search--small desktop:margin-right-4"
-    action="https://search.usa.gov/search"
-    accept-charset="UTF-8"
-    method="get">
-    <input name="utf8" type="hidden" value="&#x2713;" />
-    <input type="hidden" name="affiliate" id="affiliate-mobile" value="uswds" />
-    <div role="search">
-      <label class="usa-sr-only" for="query-mobile">Search</label>
-      <input
-        id="query-mobile"
-        class="usa-input usagov-search-autocomplete"
-        name="query"
-        type="search"
-        autocomplete="off"/>
-      <button
-        class="usa-button margin-top-0"
-        type="submit"
-        name="commit">
-        <img src="{{ site.baseurl }}/assets/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search">
+  <nav
+    aria-label="Primary navigation"
+    class="usa-nav site-nav sticky"
+  >
+    <div class="usa-nav__inner">
+      <button class="usa-nav__close">
+        <img src="{{ site.baseurl }}/assets/img/usa-icons/close.svg" role="img" alt="Close">
       </button>
+      <div class="site-nav--mobile sidenav-mobile">
+        <ul class="usa-nav__primary usa-accordion">
+          {% include nav/sections.html sections=site.data.nav.mobile %}
+        </ul>
+      </div>
+      <div class="site-nav--desktop">
+        <ul class="usa-nav__primary">
+          {%
+            include nav/list.html
+            links=site.data.nav.primary
+            rel='contains'
+            flat=true
+            primary=true
+          %}
+        </ul>
+      </div>
+      <div class="usa-nav__secondary">
+        {% include download-buttons.html %}
+        <form id="search_form-mobile" class="usa-search usa-search--small desktop:margin-right-4"
+          action="https://search.usa.gov/search" accept-charset="UTF-8" method="get">
+          <input name="utf8" type="hidden" value="&#x2713;" />
+          <input type="hidden" name="affiliate" id="affiliate-mobile" value="uswds" />
+          <div role="search">
+            <label class="usa-sr-only" for="query-mobile">Search</label>
+            <input id="query-mobile" class="usa-input usagov-search-autocomplete" name="query" type="search"
+              autocomplete="off" />
+            <button class="usa-button margin-top-0" type="submit" name="commit">
+              <img src="{{ site.baseurl }}/assets/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon"
+                alt="Search">
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
-  </form>
-  <div class="usa-nav__inner">
-    <ul class="usa-nav__primary usa-accordion">
-      {% include nav/sections.html sections=site.data.nav.mobile %}
-    </ul>
-    {% include download-buttons.html %}
-  </div>
-</nav>
+  </nav>
+</header>
+<div class="usa-overlay"></div>

@@ -40,7 +40,7 @@ The pattern allows users to select their language preferences for both written a
             <li>Provide an “other” selection that allows the user to specify the specific language, if you are committed to supporting their language needs, such as in a health care setting.</li>
             <li>Do allow the user to select more than one language.</li>
             <li>Do consider providing an option for an individual to indicate “I need help completing this form,” if your program can support providing assistance. Some people with limited English-language skills or low literacy may not be able to complete the form themselves.</li>
-\          </ul> 
+         </ul> 
         </div>
       </div>
     </div>

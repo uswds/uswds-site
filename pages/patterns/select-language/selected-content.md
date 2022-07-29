@@ -1,6 +1,6 @@
 ---
 title: Selected Multilingual Content
-permalink: /patterns/preferred-language/selected-content/
+permalink: /patterns/language-selector/selected-content/
 layout: styleguide
 category: Patterns
 lead: This pattern helps users, especially those with limited English proficiency, find content in their preferred language when only selected pieces of content have been translated. For example, the site may be available only in English, or in English and Spanish, but specific information—FAQs, fact sheets, overviews—might be available in several other languages. 

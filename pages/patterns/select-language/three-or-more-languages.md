@@ -1,6 +1,6 @@
 ---
 title: Three or more languages
-permalink: /patterns/preferred-language/three-or-more-languages/
+permalink: /patterns/language-selector/three-or-more-languages/
 layout: styleguide
 category: Patterns
 lead: This pattern helps users, especially those with limited English proficiency, select their preferred language when visiting a website available in three or more languages, e.g., English, Spanish, and Arabic.

@@ -1,6 +1,6 @@
 ---
 title: Two languages
-permalink: /patterns/preferred-language/two-languages/
+permalink: /patterns/language-selector/two-languages/
 layout: styleguide
 category: Patterns
 lead: This pattern helps users, especially those with limited English proficiency, select their preferred language when visiting a website in two languages, e.g., English and Spanish.

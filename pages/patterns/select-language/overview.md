@@ -1,5 +1,5 @@
 ---
-title: Select Preferred language
+title: Select a language
 permalink: /patterns/language-selector/
 layout: styleguide
 category: Patterns

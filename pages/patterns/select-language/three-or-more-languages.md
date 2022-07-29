@@ -30,6 +30,14 @@ Place the language selector menu at the top right of the screen above site navig
             <li>Take the users to an equivalent page (i.e., the same/similar content).</li>
             <li>Capitalize the name of the language (e.g., English, Spanish, or Vietnamese).</li>
             <li>Strongly consider labeling the name in the common, native language (e.g., Español).</li>
+            <li>Order the languages alphabetically in English or by population size.<br/>
+            English - English<br/>
+            French - Français<br/>
+            Spanish - Español</li>
+            <li>Alternatively, you can order the languages alphabetically by Language Name (non-English version), unless the direction of the language is right to left. For example:<br/>
+            English - English<br/>
+            Español - Spanish<br/>
+            Français - French</li>
           </ul> 
         </div>
       </div>

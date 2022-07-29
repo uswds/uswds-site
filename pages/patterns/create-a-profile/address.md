@@ -202,7 +202,7 @@ Provide all the fields a user needs to successfully enter a mailing address.
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
-        <a href="/components/text-input/">Visit text input</a>
+        <a href="{{ site.baseurl }}/components/text-input/">Visit text input</a>
       </div>
     </div>
   </li>
@@ -218,7 +218,7 @@ Provide all the fields a user needs to successfully enter a mailing address.
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>A select component allows users to choose one option from a temporary modal menu.</p>
-        <a href="/components/text-input/">Visit Select</a>
+        <a href="{{ site.baseurl }}/components/text-input/">Visit Select</a>
       </div>
     </div>
   </li>
@@ -234,7 +234,7 @@ Provide all the fields a user needs to successfully enter a mailing address.
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Checkboxes allow users to select one or more options from a list.</p>
-        <a href="/components/radio-buttons/">Visit Checkbox</a>
+        <a href="{{ site.baseurl }}/components/radio-buttons/">Visit Checkbox</a>
       </div>
     </div>
   </li>

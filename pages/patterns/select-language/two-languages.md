@@ -27,12 +27,20 @@ Place the language selector button at the top right of the screen above site nav
       <h3 class="do-dont__heading">What to do</h3>
         <div class="do-dont__content">
           <ul>
-            <li>Place the button in the top upper right of the screen for consistency.</li>
+            <li>Place the button in the top right of the screen for consistency.</li>
             <li>Make the language access button a single, independent element.</li>
             <li>Include the language toggle in the header so that it remains visible and in the same position as the user scrolls up and down a webpage if a website has a “sticky” or “fixed” header.</li>
-            <li>Take the users to an equivalent page (i.e., the same/similar content).</li>
+            <li>Take users to an equivalent page (i.e., the same/similar content).</li>
+            <li>Label the drop down menu "Languages."</li>
             <li>Capitalize the name of the language (e.g., English, Spanish, or Vietnamese).</li>
-            <li>Strongly consider labeling the name in the common, native language (e.g., Español).</li>
+            <li>Order the languages alphabetically in English or by population size.<br/>
+            English - English<br/>
+            French - Français<br/>
+            Spanish - Español</li>
+            <li>Alternatively, you can order the languages alphabetically by Language Name (non-English version), unless the direction of the language is right to left. For example:<br/>
+            English - English<br/>
+            Español - Spanish<br/>
+            Français - French</li>
           </ul> 
         </div>
       </div>
@@ -54,15 +62,15 @@ Place the language selector button at the top right of the screen above site nav
 </div>
 
 ## Considerations
-<strong>Ensure there’s enough color contrast</strong> between the button, the text inside the button, and the site background to ensure readability.
+<b>Ensure there’s enough color contrast</b> between the button, the text inside the button, and the site background to ensure readability.
 
-Provide a <strong>visual indicator that the text is a link</strong>. For example, permanently underline text or when hovering.
+Provide a <b>visual indicator that the text is a link</b>. For example, permanently underline text or when hovering.
 
-If the text will be visually presented as a button but coded as a link, it is recommended to <strong>add ARIA role="button" so that screen readers announce it as a button</strong>. Additionally, JavaScript will also need to be added so that keyboard users can activate the button using both the Enter and Spacebar keys. See [Understanding Success Criterion 4.1.2 | Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) for more information.
+If the text will be visually presented as a button but coded as a link, it is recommended to <b>add ARIA role="button" so that screen readers announce it as a button</b>. Additionally, JavaScript will also need to be added so that keyboard users can activate the button using both the Enter and Spacebar keys. See [Understanding Success Criterion 4.1.2 | Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) for more information.
 
-<strong>Use the HTML lang attributes</strong> to set the language of the page (<html lang='en'>, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
+<b>Use the HTML lang attributes</b> to set the language of the page (<html lang='en'>, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
 
-Consider including a <strong>prominent in-page notice or link</strong> in addition to the link in the header, in order to increase visibility for the user.
+Consider including a <b>prominent in-page notice or link</b> in addition to the link in the header, in order to increase visibility for the user.
 
 ## Accessibility 
 
@@ -88,22 +96,6 @@ Consider including a <strong>prominent in-page notice or link</strong> in additi
       </div>
     </div>
   </li>
-  <li
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
-  role="region"
-  aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
-    <div class="usa-card__container">
-      <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg">Radio button</h3>
-      </header>
-      <div class="usa-card__body font-lang-sm">
-        <p>Radio buttons allow users to select exactly one choice from a group.</p>
-        <a href="/components/radio-buttons/">Visit Radio buttons</a>
-      </div>
-    </div>
-  </li>  
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
@@ -125,7 +117,6 @@ Consider including a <strong>prominent in-page notice or link</strong> in additi
 ## See pattern in use
 
 - <a href="https://www.usa.gov/">USA.gov</a>
-- <a href="https://www.ed.gov/notices/english-la">U.S. Department of Education</a>
 
 ## Related
 
@@ -142,4 +133,5 @@ Consider including a <strong>prominent in-page notice or link</strong> in additi
 
 
 ## Changelog
-- Created July 22, 2022
+- July 28, 2022. Created: Guidance informed by research conducted by USAgov in cooperation with multiple agencies and the Multilingual Community of Practice.
+

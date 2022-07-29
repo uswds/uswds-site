@@ -51,17 +51,17 @@ Allow selection of more than one race and acknowledge people with multiple racia
 
 ## Considerations
 ### Whether you need this data
-<b>Confirm you need this information.</b> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user's privacy and safety.
+<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user's privacy and safety.
 
 ### What to use
-<b>If you don't need a controlled vocabulary.</b> If you don't need to restrict the list of race or ethnicities to a specified data collection requirement, consider allowing for user self-identification with an open-ended text field. Users should also have the ability to opt out of providing this information.
+<strong>If you don't need a controlled vocabulary.</strong> If you don't need to restrict the list of race or ethnicities to a specified data collection requirement, consider allowing for user self-identification with an open-ended text field. Users should also have the ability to opt out of providing this information.
 
-<b>If the information being collected is intended to be used for statistical, administrative, or compliance purposes.</b> If the intent of your data collection requires race and ethnicity to be mapped to a fixed minimum set of categories, refer to OMB’s <a class="display-inline" href="https://www.federalregister.gov/d/2016-23672/p-27">Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity (9/30/2016)</a>, which encourages the collection of detailed race and ethnicity information provided it can be aggregated into the minimum categories. 
+<strong>If the information being collected is intended to be used for statistical, administrative, or compliance purposes.</strong> If the intent of your data collection requires race and ethnicity to be mapped to a fixed minimum set of categories, refer to OMB’s <a class="display-inline" href="https://www.federalregister.gov/d/2016-23672/p-27">Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity (9/30/2016)</a>, which encourages the collection of detailed race and ethnicity information provided it can be aggregated into the minimum categories. 
 
 ### Special use cases
-<b>If you are collecting information on a family.</b> Do not assume that partners or dependents of the person completing the form will identify as the same race or ethnicity.
+<strong>If you are collecting information on a family.</strong> Do not assume that partners or dependents of the person completing the form will identify as the same race or ethnicity.
 
-<b>If you will be displaying race and/or ethnicity in a list.</b> Always treat racial and ethnic groups as proper nouns and capitalize them. Consider the order list items appear to avoid the perception of bias or favoritism. 
+<strong>If you will be displaying race and/or ethnicity in a list.</strong> Always treat racial and ethnic groups as proper nouns and capitalize them. Consider the order list items appear to avoid the perception of bias or favoritism. 
 
 ## Usability Guidance
 

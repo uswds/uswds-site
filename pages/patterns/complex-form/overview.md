@@ -23,7 +23,7 @@ Complex forms can be daunting. This is especially true when users are under stre
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/complex-form/ensure-trust/">Understand <strong>expectations and build trust</strong></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/complex-form/ensure-trust/">Understand expectations and <strong>ensure trust</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users understand what they will need to complete the form, what the information will be used for, and how we’ll protect their privacy and security.</p>
@@ -38,7 +38,7 @@ Complex forms can be daunting. This is especially true when users are under stre
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/complex-form/progress-easily/"><strong>Progress easily</strong> through form questions</a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/complex-form/progress-easily/"><strong>Progress easily</strong> through form questions</a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Guide users through the process of completing a form in a way that is humane and respectful of lived experiences impacting emotional state and cognitive load.</p>
@@ -53,7 +53,7 @@ Complex forms can be daunting. This is especially true when users are under stre
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/complex-form/keep-a-record/"><strong>Keep a record</strong> of submitted information</a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/complex-form/keep-a-record/"><strong>Keep a record</strong> of submitted information</a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Allow users to print or save a record of all the information they’ve submitted, so they can reference their answers and feel confident in their interaction.</p>

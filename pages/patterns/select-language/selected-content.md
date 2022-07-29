@@ -66,14 +66,14 @@ Place the language selector button at the top right of the screen above site nav
 
 Whether you decide to use this pattern may depend on how focused your site's content is.
 
-If you have a very broad website and only a few pages of multilingual content, consider providing in-page contextual links instead of using this pattern. If your website includes a wide range of topics but only a few are linked from the language menu, it may deter people from finding the broader information.
+<b>You have a broad and deep website, with only a few pages of multilingual content.</b> Consider providing in-page contextual links instead of using this pattern. If your website includes a wide range of topics but only a few are linked from the language menu, it may deter people from finding the broader information.
 
-If you have a very focused website and key pieces of multilingual content, consider providing a menu of the content in the header.
+<b>You have a very focused website and key pieces of multilingual content.</b> Consider providing a menu of the content in the header.
 
-- If users need to navigate to a single page from which multiple links to content in multiple languages are provided, use the label to link to that page.
-- If very specific content is available in select languages, provide a label in the dropdown that communicates what is available. For example, “Fact sheets are available in selected languages.”
-- If the content available is more diverse or hard to describe, use more general language. For example, “Other languages supported with limited content.”
-- If each language has its own page with content in that language provided or linked, provide a list of the languages under the label and link to the appropriate pages there.
+- If users need to <b>navigate to a single page</b> from which multiple links to content in multiple languages are provided, use the label to link to that page.
+- If <b>very specific content is available in select languages</b>, provide a label in the dropdown that communicates what is available. For example, “Fact sheets are available in selected languages.”
+- If the <b>content available is more varied or hard to describe</b>, use more general language. For example, “Other languages supported with limited content.”
+- If <b>each language has its own page with content</b> in that language provided or linked, provide a list of the languages under the label and link to the appropriate pages there.
 
 
 ### Usability guidance

@@ -117,4 +117,4 @@ Consider including a <b>prominent in-page notice or link</b> in addition to the 
 
 
 ## Changelog
-- Created July 22, 2022
+- Created July 28, 2022. Guidance informed by research conducted by USAgov in cooperation with multiple agencies and the Multilingual Community of Practice.

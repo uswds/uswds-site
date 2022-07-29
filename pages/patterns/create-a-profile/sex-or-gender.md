@@ -58,10 +58,10 @@ Provide sex if needed and present the user with a controlled vocabulary to accur
 
 ## Considerations
 ### Whether you need this data
-<b>Confirm you need this information.</b> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
+<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
 
 ### What to use 
-<b>If biological sex information is used for identity validation.</b> Clearly state that the user needs to input their biological sex. Gender and sex are often used synonymously and users may have difficulty determining which information is being requested.
+<strong>If biological sex information is used for identity validation.</strong> Clearly state that the user needs to input their biological sex. Gender and sex are often used synonymously and users may have difficulty determining which information is being requested.
 
 ## Usability Guidance
 
@@ -153,10 +153,10 @@ Provide gender if needed and present the user with the environment to accurately
 
 ## Considerations
 ### Whether you need this data
-<b>Confirm you need this information.</b> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
+<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
 
 ### What to use 
-<b>If you don’t need a controlled vocabulary.</b> If you don’t need to enforce a controlled vocabulary of gender options, strongly consider letting the user self-identify using a single text field.
+<strong>If you don’t need a controlled vocabulary.</strong> If you don’t need to enforce a controlled vocabulary of gender options, strongly consider letting the user self-identify using a single text field.
 
 ## Usability Guidance
 

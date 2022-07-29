@@ -60,20 +60,20 @@ Provide all the fields needed for a user to provide a physical address, even if 
 
 ## Considerations
 ### Whether you need this data
-<b>Confirm you need this information.</b> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
+<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
 
-<b>People without fixed addresses.</b> Some people do not have fixed addresses. 
+<strong>People without fixed addresses.</strong> Some people do not have fixed addresses. 
 
 ### What to use 
-<b>Physical vs. mailing address.</b> If you do need an address, determine if you need a physical address or a mailing address, or both. Physical addresses are most important for determining benefits eligibility or for disaster response. Mailing addresses are important for correspondence.
+<strong>Physical vs. mailing address.</strong> If you do need an address, determine if you need a physical address or a mailing address, or both. Physical addresses are most important for determining benefits eligibility or for disaster response. Mailing addresses are important for correspondence.
 
-<b>Both physical and mailing address.</b> If you need both the physical and mailing address, consider providing a checkbox for “same as physical address” to auto-populate the mailing address.
+<strong>Both physical and mailing address.</strong> If you need both the physical and mailing address, consider providing a checkbox for “same as physical address” to auto-populate the mailing address.
 
 ## Usability Guidance
 
-<b>Avoid disabling default browser behavior for Select elements.</b> If possible, let users type a letter to jump down a long list of states, territories, or military posts.
+<strong>Avoid disabling default browser behavior for Select elements.</strong> If possible, let users type a letter to jump down a long list of states, territories, or military posts.
 
-<b>Support both five- and nine-digital ZIP codes.</b> Some addresses require a nine-digital ZIP code. If you would like to use an input mask, it should be “#####-####” so that the text is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code.
+<strong>Support both five- and nine-digital ZIP codes.</strong> Some addresses require a nine-digital ZIP code. If you would like to use an input mask, it should be “#####-####” so that the text is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code.
 
 ## Ingredients
 
@@ -172,20 +172,20 @@ Provide all the fields a user needs to successfully enter a mailing address.
 
 ## Considerations
 ### Whether you need this data
-<b>Confirm you need this information.</b> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
+<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
 
-<b>People without fixed addresses.</b> Some people do not have fixed addresses. 
+<strong>People without fixed addresses.</strong> Some people do not have fixed addresses. 
 
 ### What to use 
-<b>Physical vs. mailing address.</b> If you do need an address, determine if you need a physical address or a mailing address, or both. Physical addresses are most important for determining benefits eligibility or for disaster response. Mailing addresses are important for correspondence.
+<strong>Physical vs. mailing address.</strong> If you do need an address, determine if you need a physical address or a mailing address, or both. Physical addresses are most important for determining benefits eligibility or for disaster response. Mailing addresses are important for correspondence.
 
-<b>Both physical and mailing address.</b> If you need both the physical and mailing address, consider providing a checkbox for “same as physical address” to auto-populate the mailing address.
+<strong>Both physical and mailing address.</strong> If you need both the physical and mailing address, consider providing a checkbox for “same as physical address” to auto-populate the mailing address.
 
 ## Usability Guidance
 
-<b>Avoid disabling default browser behavior for Select elements.</b> If possible, let users type a letter to jump down a long list of states, territories, or military posts.
+<strong>Avoid disabling default browser behavior for Select elements.</strong> If possible, let users type a letter to jump down a long list of states, territories, or military posts.
 
-<b>Support both five- and nine-digital ZIP codes.</b> Some addresses require a nine-digital ZIP code. If you would like to use an input mask, it should be “#####-####” so that the text is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code.
+<strong>Support both five- and nine-digital ZIP codes.</strong> Some addresses require a nine-digital ZIP code. If you would like to use an input mask, it should be “#####-####” so that the text is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code.
 
 ## Ingredients
 

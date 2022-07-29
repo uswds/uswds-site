@@ -52,11 +52,11 @@ Provide a text entry field that supports a rich array of special characters and 
 
 ## Considerations
 ### Whether you need this data
-<b>Confirm you need this information.</b> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
+<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
 
-<b>Consider how you will be using this information.</b> This pattern best supports verbal communication. If you plan on using the information for automated correspondence you may need to consider a different approach.
+<strong>Consider how you will be using this information.</strong> This pattern best supports verbal communication. If you plan on using the information for automated correspondence you may need to consider a different approach.
 
-<b>If you don't need a controlled vocabulary.</b> Consider allowing for user-provided pronouns with an open-ended text field. Users should also have the ability to opt out of providing this information.
+<strong>If you don't need a controlled vocabulary.</strong> Consider allowing for user-provided pronouns with an open-ended text field. Users should also have the ability to opt out of providing this information.
 
 ## Usability Guidance
 

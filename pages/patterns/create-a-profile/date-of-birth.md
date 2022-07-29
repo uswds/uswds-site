@@ -52,28 +52,28 @@ Mobile device users in particular may benefit from being able to type a year rat
 
 ## Considerations
 ### Whether you need this data
-<b>Confirm you need this information.</b> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
+<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
 
 ### When to use 
-<b>Appropriate for most dates.</b> This pattern is appropriate for most dates but particularly past and memorable dates, and dates that appear on items like Driver's Licenses or Passports. This pattern is especially applicable when there’s a high expectation of mobile device usage for form completion.
+<strong>Appropriate for most dates.</strong> This pattern is appropriate for most dates but particularly past and memorable dates, and dates that appear on items like Driver's Licenses or Passports. This pattern is especially applicable when there’s a high expectation of mobile device usage for form completion.
 
 ### When to consider something else
 
-<b>Consider a date picker for scheduling.</b> If users are trying to schedule something, the date picker might make more sense. Be sure to also provide an option for text entry as well.
+<strong>Consider a date picker for scheduling.</strong> If users are trying to schedule something, the date picker might make more sense. Be sure to also provide an option for text entry as well.
 
 ## Usability Guidance
-<b>Label each field.</b> Be sure each field is properly labeled&#8212;some countries enter dates in day, month, year order. 
+<strong>Label each field.</strong> Be sure each field is properly labeled&#8212;some countries enter dates in day, month, year order. 
 
-<b>Avoid select elements.</b> It may be tempting to switch all or some of these text fields to select elements, but these tend to be more difficult to use than text boxes.
+<strong>Avoid select elements.</strong> It may be tempting to switch all or some of these text fields to select elements, but these tend to be more difficult to use than text boxes.
 
 ## Accessibility 
-<b>Follow input guidance.</b> These text fields should follow the accessibility  <a href="https://designsystem.digital.gov/components/text-input/">guidelines for all text inputs</a>. 
+<strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="https://designsystem.digital.gov/components/text-input/">guidelines for all text inputs</a>. 
 
-<b>Don't auto-advance focus.</b> Do not use JavaScript to auto advance the focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes. 
+<strong>Don't auto-advance focus.</strong> Do not use JavaScript to auto advance the focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes. 
 
-<b>Use “text” instead of “number” inputs.</b> Research indicates that <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">numeric inputs still carry many usability problems</a>. 
+<strong>Use “text” instead of “number” inputs.</strong> Research indicates that <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">numeric inputs still carry many usability problems</a>. 
 
-<b>Customization.</b> As you customize, make sure you follow [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
+<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
 
 ## Ingredients
 

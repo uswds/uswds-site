@@ -7,6 +7,10 @@ lead: Help a user to select their preferred language
 subnav:
   - href: /patterns/preferred-language/two-languages/
   - href: /patterns/preferred-language/three-or-more-languages/
+  - href: /patterns/preferred-language/limited-ml-content/
+  - href: /patterns/preferred-language/language-preferences/
+
+
 
 ---
 ## Why this matters
@@ -41,6 +45,36 @@ Accessing content in the language that the user is most comfortable in allows th
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users choose from among three or more languages. Allow users to select from multiple available languages, such as English, Spanish, Chinese, and Arabic.</p>
+      </div>
+    </div>
+  </li>
+  <li
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit Toggle"
+  data-meta="Visit Toggle">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/select-language/limited-multilingual-content/">Access <strong>limited multilingual content</strong></a></h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>Help users access a limited set of translated content available in additional languages.</p>
+      </div>
+    </div>
+  </li>
+  <li
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit Toggle"
+  data-meta="Visit Toggle">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/select-language/language-preferences/">Select <strong>written and spoken language preferences</strong></a></h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>Help users indicate their written and spoke language preferences</p>
       </div>
     </div>
   </li>

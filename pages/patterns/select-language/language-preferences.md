@@ -3,7 +3,7 @@ title: Preferred Language
 permalink: /patterns/language-selector/language-preferences/
 layout: styleguide
 category: Patterns
-lead: HThis pattern helps users to indicate the language they prefer to use for either written or spoken communication.
+lead: This pattern helps users to indicate the language they prefer to use for either written or spoken communication.
 ---
 
 ## What problem does this solve?

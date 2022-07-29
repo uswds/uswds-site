@@ -7,7 +7,7 @@ lead: Help a user to select their preferred language
 subnav:
   - href: /patterns/preferred-language/two-languages/
   - href: /patterns/preferred-language/three-or-more-languages/
-  - href: /patterns/preferred-language/limited-multilingual-content/
+  - href: /patterns/preferred-language/selected-content/
   - href: /patterns/preferred-language/language-preferences/
 
 ---
@@ -54,7 +54,7 @@ Accessing content in the language that the user is most comfortable in allows th
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/select-language/limited-multilingual-content/">Access <strong>limited multilingual content</strong></a></h3>
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/select-language/selected-content/">Access <strong>selected content in preferred language</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users access a limited set of translated content available in additional languages.</p>

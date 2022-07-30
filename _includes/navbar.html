@@ -19,22 +19,22 @@
       <button class="usa-nav__close">
         <img src="{{ site.baseurl }}/assets/img/usa-icons/close.svg" role="img" alt="Close">
       </button>
-      <div class="site-nav--mobile sidenav-mobile">
-        <ul class="usa-nav__primary usa-accordion">
-          {% include nav/sections.html sections=site.data.nav.mobile %}
-        </ul>
-      </div>
-      <div class="site-nav--desktop">
-        <ul class="usa-nav__primary">
-          {%
-            include nav/list.html
-            links=site.data.nav.primary
-            rel='contains'
-            flat=true
-            primary=true
+      <!-- Mobile nav -->
+      <ul class="usa-nav__primary usa-nav__primary--mobile usa-accordion">
+        {% include nav/sections.html sections=site.data.nav.mobile %}
+      </ul>
+      <!-- /Mobile nav -->
+      <!-- Desktop nav -->
+      <ul class="usa-nav__primary usa-nav__primary--desktop">
+        {%
+          include nav/list.html
+          links=site.data.nav.primary
+          rel='contains'
+          flat=true
+          primary=true
           %}
         </ul>
-      </div>
+      <!-- /Desktop nav -->
       <div class="usa-nav__secondary">
         {% include site-search.html %}
         {% include download-buttons.html %}

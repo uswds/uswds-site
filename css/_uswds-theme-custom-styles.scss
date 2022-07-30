@@ -2,6 +2,7 @@
 
 @import "mixins";
 
+@import "custom-styles/site-header";
 @import "custom-styles/card-policy";
 @import "custom-styles/highlight";
 
@@ -72,93 +73,10 @@ img {
 // Header ------------------------------ //
 
 .sticky {
-  position: sticky;
-  top: 0;
-
-  &::before,
-  &::after {
-    content: "";
-    display: table;
-  }
-}
-
-.site-header {
-  background-color: color($site-primary-darker);
-
   @include at-media("desktop") {
-    border-bottom: none;
-  }
-
-  .site-logo {
-    margin-left: units($theme-site-margins-mobile-width);
-
-    @include at-media("desktop") {
-      display: inherit;
-      float: left;
-      margin-bottom: 0;
-      margin-left: units($theme-site-margins-width);
-    }
-
-    .usa-logo__text {
-      @include at-media("desktop") {
-        display: inherit;
-        letter-spacing: ls(-1);
-      }
-    }
-  }
-
-  .usa-button-list {
-    display: none;
-    margin-top: units(-0.5);
-
-    @include at-media("desktop") {
-      float: right;
-      line-height: units(10);
-      margin-top: 0;
-      display: block;
-      padding-right: units($theme-site-margins-width);
-    }
-
-    // scss-lint:disable SelectorDepth, NestingDepth
-    li {
-      display: inline;
-      font-family: font-family("lang");
-
-      &:last-child .usa-button {
-        margin-right: 0;
-      }
-    }
-
-    .usa-button {
-      @include u-margin-y(0);
-    }
-  }
-}
-
-.navbar__search {
-  .usa-input {
-    @include at-media("desktop") {
-      background-color: color("blue-warm-90");
-      color: color("white");
-      height: 39px;
-      margin-top: 0;
-    }
-  }
-
-  .usa-button {
-    @include at-media("desktop") {
-      height: 39px;
-    }
-  }
-}
-
-#search_form-mobile {
-  .usa-input {
-    @include at-media-max("desktop") {
-      height: auto;
-      margin-top: 0;
-      padding: 0;
-    }
+    @include u-z(200);
+    position: sticky;
+    top: 0;
   }
 }
 
@@ -2107,49 +2025,7 @@ h6 + div:not(.usa-accordion__content):not(.usa-collection__meta-list) {
   }
 }
 
-.site-header {
-  .usa-button {
-    background-color: color($site-primary-vivid);
 
-    &:hover {
-      background-color: color("blue-warm-60v");
-    }
-  }
-
-  .usa-button--outline-inverse {
-    background-color: transparent;
-    margin-right: 0;
-
-    &:hover {
-      background-color: transparent;
-    }
-  }
-
-  .navbar--container {
-    @include at-media("desktop") {
-      align-items: center;
-      display: flex;
-      float: right;
-      height: units(10);
-    }
-
-    .usa-button {
-      display: none;
-
-      @include at-media("desktop") {
-        display: block;
-      }
-    }
-  }
-
-  // Read website standards, Download, Github buttons
-  .buttons {
-    @include at-media("desktop") {
-      display: flex;
-      align-items: center;
-    }
-  }
-}
 
 .site-docs-card-link {
   border-top: units("05") solid color($site-base-transparent-light);
@@ -2231,49 +2107,11 @@ h6 + div:not(.usa-accordion__content):not(.usa-collection__meta-list) {
   }
 }
 
-.site-header-dark {
-  .site-header-navbar {
-    background-color: color("blue-warm-80");
-  }
-  .site-logo {
-    a {
-      color: color("white");
-    }
-
-    .usa-logo__text {
-      &::before {
-        background-image: url("../img/uswds-logo/4c-lg-on-black.png");
-        background-image: url("../img/uswds-logo/4c-lg-on-black.svg");
-      }
-    }
-  }
-
-  .usa-button.site-button-outline-secondary {
-    @include inner-border($site-border-width, "white-transparent-70");
-    background-color: color("transparent");
-    color: color("white-transparent-70");
-
-    &:hover {
-      @include inner-border($site-border-width, "white");
-      background-color: transparent;
-      color: color("white");
-    }
-
-    @include at-media("desktop") {
-      margin-right: units(4);
-    }
-  }
-}
-
 .site-page-title,
 %site-page-title {
   @include typeset("lang", "2xl", 2);
   font-weight: fw("bold");
   color: color($site-ink);
-}
-
-.foo {
-  @include u-border(0.5);
 }
 
 pre {
@@ -2848,34 +2686,6 @@ $theme-table-column-gap: 4;
   }
 }
 
-.site-header {
-  @include typeset("lang");
-
-  .usa-menu-btn {
-    font-size: fs("lang", "3xs");
-  }
-}
-
-.site-nav {
-  @include typeset("lang");
-
-  .usa-accordion {
-    @include typeset("lang");
-  }
-
-  .usa-nav__close {
-    background-color: color("base-lightest");
-  }
-
-  .usa-nav__primary button {
-    line-height: lh("lang", 2);
-  }
-
-  .usa-nav__submenu-item {
-    @include typeset("lang", "2xs", 2);
-  }
-}
-
 .site-banner {
   $banner-context: "Banner";
   $site-banner-background-color: "ink";
@@ -3307,16 +3117,6 @@ body {
   }
 }
 
-.site-nav {
-  // Search input gets cutoff on mobile.
-  .usagov-search-autocomplete {
-    min-width: 0;
-  }
-  .usa-button {
-    display: block;
-  }
-}
-
 .site-button-github {
   .logo {
     bottom: units(2px);
@@ -3372,18 +3172,6 @@ body {
     .text {
       @include add-sr-only;
     }
-  }
-}
-
-@include at-media("desktop") {
-  .site-header .buttons .usa-button {
-    position: relative;
-    bottom: units(-2px);
-  }
-
-  .site-header .buttons .site-button-standards {
-    box-shadow: inset 0 0 0 2px color("gold-30v");
-    color: color("gold-30v");
   }
 }
 

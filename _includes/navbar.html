@@ -1,9 +1,9 @@
 <a class="usa-skipnav" href="#main-content">Skip to main content</a>
 {% include banner.html %}
-<header class="usa-header usa-header--extended site-header site-header-dark" role="banner">
+<header class="usa-header usa-header--extended site-header site-header--dark" role="banner">
   <div class="usa-navbar site-header-navbar">
     <div class="usa-logo site-logo" id="logo">
-      <em class="usa-logo__text">
+      <em class="usa-logo__text site-logo__text">
         <a  href="{{ site.baseurl }}/" title="{{ site.title }} Home">
           {{ site.title }}
         </a>
@@ -36,21 +36,8 @@
         </ul>
       </div>
       <div class="usa-nav__secondary">
+        {% include site-search.html %}
         {% include download-buttons.html %}
-        <form id="search_form-mobile" class="usa-search usa-search--small desktop:margin-right-4"
-          action="https://search.usa.gov/search" accept-charset="UTF-8" method="get">
-          <input name="utf8" type="hidden" value="&#x2713;" />
-          <input type="hidden" name="affiliate" id="affiliate-mobile" value="uswds" />
-          <div role="search">
-            <label class="usa-sr-only" for="query-mobile">Search</label>
-            <input id="query-mobile" class="usa-input usagov-search-autocomplete" name="query" type="search"
-              autocomplete="off" />
-            <button class="usa-button margin-top-0" type="submit" name="commit">
-              <img src="{{ site.baseurl }}/assets/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon"
-                alt="Search">
-            </button>
-          </div>
-        </form>
       </div>
     </div>
   </nav>

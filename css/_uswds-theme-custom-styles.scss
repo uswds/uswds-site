@@ -1,5 +1,7 @@
 @use "sass:math";
 
+@import "mixins";
+
 @import "custom-styles/card-policy";
 @import "custom-styles/highlight";
 
@@ -21,46 +23,12 @@ $theme-grid-gap-default: "md";
 
 $site-measure: 5;
 
-@mixin grid-cols($default, $split: null, $full: null) {
-  @if $default {
-    @include grid-col($default);
-  }
-  @if $split {
-    @include at-media($theme-site-cols-split) {
-      @include grid-col($split);
-    }
-  }
-  @if $full {
-    @include at-media($theme-site-cols-show) {
-      @include grid-col($full);
-    }
-  }
-}
-
-@mixin usa-grid-container {
-  @include grid-container;
-}
-
 .usa-grid-container {
   @include usa-grid-container;
 }
 
-@mixin usa-grid-row {
-  @include grid-row;
-  @include u-flex("column", "align-stretch");
-  @include at-media($theme-site-cols-split) {
-    @include grid-gap($theme-grid-gap-default);
-    @include u-flex("row");
-  }
-}
-
 .usa-grid-row {
   @include usa-grid-row;
-}
-
-@mixin usa-grid-col {
-  @include grid-cols("auto", 6);
-  width: 100%;
 }
 
 .usa-grid-col {
@@ -237,150 +205,6 @@ img {
   }
 }
 
-.site-header-navbar {
-  background-color: color("white");
-  border-bottom: none !important; // scss-lint:disable ImportantRule
-
-  @include at-media("desktop") {
-    height: units(10);
-    width: 100%;
-    display: block;
-  }
-
-  // Firefox fix so that navbar buttons to align right
-  @-moz-document url-prefix() {
-    @include at-media("desktop") {
-      padding-top: units(1px);
-    }
-  }
-}
-
-@mixin outline-inverse-button {
-  // TODO: Fix this with button mixin
-  .usa-button.usa-button--outline-inverse {
-    box-shadow: inset 0 0 0 units(2px) color($site-primary);
-    color: color($site-primary);
-
-    &:hover {
-      box-shadow: inset 0 0 0 unit(2px) color($site-primary-dark);
-      color: color($site-primary-dark);
-    }
-  }
-}
-
-.sidenav-mobile {
-  @include outline-inverse-button;
-
-  @include at-media("desktop") {
-    display: none;
-  }
-
-  .usa-button-list {
-    margin-top: units(4);
-  }
-
-  .usa-button {
-    margin-top: units(1);
-  }
-}
-
-.site-logo {
-  @include at-media("desktop") {
-    margin-top: units(2px);
-  }
-
-  a {
-    color: color($site-ink);
-  }
-
-  .usa-logo__text {
-    $logo-size-mobile: 3;
-    $logo-size-desktop: 3;
-    @include u-font("lang", "xs");
-    line-height: units(5);
-
-    &::before {
-      @include u-square($logo-size-mobile);
-      content: "";
-      background-image: url("../img/uswds-logo/4c-lg-on-white.png");
-      background-image: url("../img/uswds-logo/4c-lg-on-white.svg");
-      background-repeat: no-repeat;
-      background-size: 100% auto;
-      display: inline-block;
-      margin-left: units(-2px);
-      margin-right: units(0.5);
-      position: relative;
-      top: units(-1px);
-      vertical-align: middle;
-
-      @include at-media("desktop") {
-        @include u-square($logo-size-desktop);
-      }
-    }
-
-    @include at-media("desktop") {
-      @include typeset("lang", "lg", 1);
-      line-height: units(9);
-    }
-  }
-}
-
-.site-nav-secondary {
-  display: none;
-
-  @include at-media("desktop") {
-    background-color: color("white");
-    border-bottom: units($site-border-width) solid
-      color($site-base-transparent-light);
-    clear: both;
-    display: block;
-    height: units($height-nav-secondary);
-    padding-left: units(2);
-    z-index: z-index($z-nav-secondary);
-  }
-
-  &.sticky {
-    @include u-z(200);
-  }
-
-  ul {
-    @include unstyled-list;
-
-    li {
-      display: inline;
-    }
-  }
-
-  a {
-    @include typeset("lang", "xs", 1);
-    color: color("gray-50");
-    display: inline-block;
-    font-weight: fw("normal");
-    height: units($height-nav-secondary);
-    padding: units(2);
-    position: relative;
-    text-decoration: none;
-
-    .page-home & {
-      color: color("ink");
-    }
-
-    &:hover {
-      @include add-bar(0.5, $site-primary-vivid, "bottom", 0, 2, 0);
-      color: color($site-primary-vivid);
-    }
-  }
-
-  .usa-current {
-    @include add-bar(0.5, $site-primary-vivid, "bottom", 0, 2, 0);
-    color: color($site-ink);
-    font-weight: fw("bold");
-
-    &:hover {
-      color: color($site-ink);
-    }
-  }
-}
 
 // Sidebar Nav --------- //
 
@@ -1334,11 +1158,6 @@ code[class*="language-plaintext"] {
 }
 
 // Alt font styles
-
-@mixin font-lead-alt {
-  font-size: font-size("lang", "xs");
-  font-weight: font-weight("normal");
-}
 
 .serif-robust {
   .usa-display-alt {
@@ -2363,10 +2182,6 @@ h6 + div:not(.usa-accordion__content):not(.usa-collection__meta-list) {
 .block-link::before {
   @include u-pin("all");
   content: "";
-}
-
-@mixin inner-border($width, $color) {
-  box-shadow: inset 0 0 0 units($width) color($color);
 }
 
 .usa-button-list.site-button-list {

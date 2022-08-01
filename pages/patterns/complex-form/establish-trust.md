@@ -87,7 +87,7 @@ Whenever possible, allow users to save and resume long and potentially stressful
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
-        <a href="/components/text-input/">Visit Text Input</a>
+        <a href="/components/text-input/">Visit Text input</a>
       </div>
     </div>
   </li>
@@ -126,13 +126,13 @@ Whenever possible, allow users to save and resume long and potentially stressful
 </div>
 
 ## Related
-- <a href="../patterns/complex-form/progress-easily/">Progress Easily</a> pattern
-- <a href="../patterns/complex-form/keep-a-record/">Keep a record</a> pattern
+- <a href="../patterns/complex-form/progress-easily/">Progress Easily through a form</a> pattern
+- <a href="../patterns/complex-form/keep-a-record/">Keep a record of submitted information</a> pattern
 
 
 ## References
 - Design Principles, (n.d.) Retrieved on July 21, 2022 [https://designsystem.digital.gov/design-principles/](https://designsystem.digital.gov/design-principles/) 
-- Building Trust with Users Through Open Communication and Feedback, (June 13, 2019) Retrieved on July 19, 2022, from [https://digital.gov/2019/06/13/](https://digital.gov/2019/06/13/building-trust-with-users-through-open-communication-feedback/  
+- Building Trust with Users Through Open Communication and Feedback, (June 13, 2019) Retrieved on July 19, 2022, from [https://digital.gov/2019/06/13/building-trust-with-users-through-open-communication-feedback/](https://digital.gov/2019/06/13/building-trust-with-users-through-open-communication-feedback/)  
 - Build trust with these UX Guidelines (March 16,2019) Retrieved on July 19, 2022, from [https://uxdesign.cc/build-trust-with-these-ux-guidelines-f3d547bb2014#:~:text=%E2%80%8B%20Increase%20trust%20by%20letting,person%20instead%20of%20a%20robot.](https://uxdesign.cc/build-trust-with-these-ux-guidelines-f3d547bb2014#:~:text=%E2%80%8B%20Increase%20trust%20by%20letting,person%20instead%20of%20a%20robot.) 
 - Communicating with and about people with disabilities. (February 1, 2022) Retrieved on July 28, 2022, from [https://www.cdc.gov/ncbddd/disabilityandhealth/materials/factsheets/fs-communicating-with-people.html](https://www.cdc.gov/ncbddd/disabilityandhealth/materials/factsheets/fs-communicating-with-people.html) 
 - Trauma-Informed Computing: Towards Safer Technology Experiences for All. Journal article Association for Computing Machinery in Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems (CHI '22). 2022. Retrieved on July 22, 2022, from [https://doi.org/10.1145/3491102.3517475](https://doi.org/10.1145/3491102.3517475)

@@ -3,7 +3,7 @@ title: Establish trust
 permalink: /patterns/complex-form/establish-trust/
 layout: styleguide
 category: Patterns
-lead: This pattern helps users to feel comfortable and confident in what they’ll need to complete a form, why they need to do so, how long it’s expected to take, and how the information they provide will be used and safeguarded.  
+lead: Help users understand the purpose of a form, feel confident they have what they need to complete a form, understand the time commitment to do so, and trust that the information they provide will be safeguarded and used responsibly.  
 ---
 
 {:.margin-bottom-2}

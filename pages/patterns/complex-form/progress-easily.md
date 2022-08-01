@@ -80,11 +80,11 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg">Text input</h3>
+        <h3 class="usa-card__heading font-lang-lg">Step indicator</h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
-        <a href="/components/text-input/">Visit Text input</a>
+        <p>A step indicator updates users on their progress through a multi-step process.</p>
+        <a href="/components/progress-indicator/">Visit Step indicator</a>
       </div>
     </div>
   </li>
@@ -96,30 +96,14 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg">Select</h3>
+        <h3 class="usa-card__heading font-lang-lg">Modal</h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>A select component allows users to choose one option from a temporary modal menu.</p>
-        <a href="/components/select/">Visit Select</a>
+        <p>A modal disables page content and focuses the user’s attention on a single task or message.</p>
+        <a href="/components/modal/">Visit Modal</a>
       </div>
     </div>
   </li>
-</div>
-
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-preview-01" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
-  <div id="accordion-preview-01" class="usa-accordion__content">
-    {% include patterns/physical-address.html %}
-  </div>
-</div>
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code-01" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
-  <div id="accordion-code-01" class="usa-accordion__content highlight-code">
-    <div class="usa-sr-only">
-      <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/physical-address.html %}</code></pre></figure>
-    </div>
-    <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/physical-address.html %}{% endhighlight %}</code></pre></figure>
-  </div>
 </div>
 
 ## Related

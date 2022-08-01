@@ -60,12 +60,12 @@ Allow the user to select from available options, and to include a brief message 
 ## Ingredients
 
 <div class="usa-card-group flex-row margin-top-2">
-  <li
+  <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Visit text input component"
+  data-meta="Visit text input component">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg">Text input</h3>
@@ -75,12 +75,12 @@ Allow the user to select from available options, and to include a brief message 
         <a href="{{ site.baseurl }}/components/text-input/">Visit Text input</a>
       </div>
     </div>
-  </li>
-  <li
+  </div>
+  <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
+  aria-label="Visit radio button component"
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
@@ -91,7 +91,7 @@ Allow the user to select from available options, and to include a brief message 
         <a href="{{ site.baseurl }}/components/radio-buttons/">Visit Radio buttons</a>
       </div>
     </div>
-  </li>  
+  </div>  
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
@@ -104,9 +104,9 @@ Allow the user to select from available options, and to include a brief message 
   <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
   <div id="accordion-code" class="usa-accordion__content highlight-code">
     <div class="usa-sr-only">
-      <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/contact-preferences.html %}</code></pre></figure>
+     {% highlight text%}{% include patterns/contact-preferences.html %}{% endhighlight %}
     </div>
-    <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/contact-preferences.html %}{% endhighlight %}</code></pre></figure>
+    {% highlight html%}{% include patterns/contact-preferences.html %}{% endhighlight %}
   </div>
 </div>
 

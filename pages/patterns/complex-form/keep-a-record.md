@@ -44,10 +44,10 @@ Provide the user with a printable record of their answers using a print style sh
             <li>Print table headers on every page. Avoid splitting tables across pages if possible by utilizing the page-break-after/page-break-before properties.</li>
             <li>Avoid splitting a table row onto more than one page.</li>
             <li>Avoid splitting headings onto more than one page.</li>
-            </li>Only include images that are important to understanding the content. Prevent images from being cut off or extending wider than a standard portrait-oriented letter-size page.</li>
             <li>Keep lists on the same page.</li>
             <li>Include a “Print” button on the summary page.</li>
-            <li>If user-uploaded images are an essential part of your form, consider the best way to represent them to the user. This might include listing filenames or providing thumbnails or a zip file, rather than full-size images.</li>
+            <li>If user-uploaded images are an essential part of your form, consider the best way to represent them to the user. This might include listing filenames or providing thumbnails or a zip file, rather than full-size images.</li> 
+            <li>Prevent images you do print from being cut off or extending wider than a standard portrait-oriented letter-size page.</li>
           </ul> 
         </div>
       </div>
@@ -59,6 +59,7 @@ Provide the user with a printable record of their answers using a print style sh
       <div class="do-dont__content">
           <ul>
             <li>Don't arbitrarily choose which questions and answers are displayed on the record of submitted information. If a question was important enough to ask, it's important enough to keep in the user's record of their form submission.</li>
+            <li>Don't include images that are not important to understanding the content.</li>
             <li>Don't show links that are fragment identifiers or use the javascript: pseudo protocol.</li>
             <li>Do not print-disable pages or try to suppress page numbering.</li>
           </ul>

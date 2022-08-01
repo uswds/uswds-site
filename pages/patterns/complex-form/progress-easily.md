@@ -65,11 +65,12 @@ Whenever possible, allow users to save and resume long and potentially stressful
 ### Whether you need this data
 <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
 
+## Usability guidance
 <strong>Design to support people in difficult times.</strong> People under stress may have poor recall, make frequent errors completing forms, and may not notice the errors they make. They likely have a hard time staying focused, cannot easily categorize objects, and are easily frustrated. Use care when surfacing content that appears based on previous answers. People under stress may already feel exposed and vulnerable. Use calm, straightforward language.
 
 <strong>Whenever possible, allow users to save and resume long and potentially stressful forms</strong> rather than assuming a form will be completed in a single session. Users may be accessing the form on a mobile device, or in a shared public space like a shelter or library where privacy is not guaranteed. They may be distracted by the environment or family members, or discover that additional records are needed. Some users simply need time to work up to answering difficult, potentially painful questions.
 
-## Accessibility Guidance
+## Accessibility
 
 <strong>Customization.</strong> As you customize, make sure you follow <a href="https://designsystem.digital.gov/templates/form-templates/">accessibility guidelines for form templates</a> and the <a href="https://designsystem.digital.gov/components/form/">accessibility guidelines for form controls</a>.
 

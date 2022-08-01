@@ -133,6 +133,7 @@ Whenever possible, allow users to save and resume long and potentially stressful
 
 
 ## References
+### Trauma-informed design
 - Concept of Trauma and Guidance for a Trauma-Informed Approach. Substance Abuse and Mental Health Services Administration (SAMHSA) - U.S. Department of Health and Human Services. (July 2014) Retrieved on July 21, 2022, from https://store.samhsa.gov/sites/default/files/d7/priv/sma14-4884.pdf
 About Trauma-Informed Design – Design Resources For Homelessness. (n.d.) Retrieved on July 26, 2022, from http://designresourcesforhomelessness.org/about-us-1/
 - Project 3: Implementing trauma-informed content. (July 9, 2019) Retrieved on July 26, 2022, from https://www.phila.gov/2019-07-09-project-3-implementing-trauma-informed-content/
@@ -142,6 +143,7 @@ About Trauma-Informed Design – Design Resources For Homelessness. (n.d.) Retri
 - VA.gov Design System - Content Presentation. (May 2, 2022) Retrieved on July 21, 2022, from  https://design.va.gov/patterns/messaging-error-messages#style-and-tone
 - VA.gov Design System - Patterns. (May 26, 2022) Retrieved on July 26, 2022 from https://design.va.gov/patterns/
 - What is Trauma-Informed Design? (June 4, 2021) Retrieved on July 26, 2022 from https://www.birdcallux.com/blog/what-is-trauma-informed-design
+### Progressive disclosure
 - 10 Usability Heuristics for User Interface Design. (April 24, 1994. Updated November 15, 2020.) Retrieved on July 22, 2022, from https://www.nngroup.com/articles/ten-usability-heuristics/
 - 10 UI Design Patterns You Should Be Paying Attention To. (June 23, 2009), Retrieved on July 27, 2022, from 
 https://www.smashingmagazine.com/2009/06/10-ui-design-patterns-you-should-be-paying-attention-to/

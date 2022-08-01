@@ -131,7 +131,7 @@ Whenever possible, allow users to save and resume long and potentially stressful
 
 
 ## References
-- Design Principles, (n.d.) Retrieved on July 21, 2022 [https://designsystem.digital.gov/design-principles/](https://designsystem.digital.gov/design-principles/) 
+- Design Principles, (n.d.) Retrieved on July 21, 2022 [https://designsystem.digital.gov/design-principles/](https://designsystem.digital.gov/design-principles/)
 - Building Trust with Users Through Open Communication and Feedback, (June 13, 2019) Retrieved on July 19, 2022, from [https://digital.gov/2019/06/13/building-trust-with-users-through-open-communication-feedback/](https://digital.gov/2019/06/13/building-trust-with-users-through-open-communication-feedback/)  
 - Build trust with these UX Guidelines (March 16,2019) Retrieved on July 19, 2022, from [https://uxdesign.cc/build-trust-with-these-ux-guidelines-f3d547bb2014#:~:text=%E2%80%8B%20Increase%20trust%20by%20letting,person%20instead%20of%20a%20robot.](https://uxdesign.cc/build-trust-with-these-ux-guidelines-f3d547bb2014#:~:text=%E2%80%8B%20Increase%20trust%20by%20letting,person%20instead%20of%20a%20robot.) 
 - Communicating with and about people with disabilities. (February 1, 2022) Retrieved on July 28, 2022, from [https://www.cdc.gov/ncbddd/disabilityandhealth/materials/factsheets/fs-communicating-with-people.html](https://www.cdc.gov/ncbddd/disabilityandhealth/materials/factsheets/fs-communicating-with-people.html) 

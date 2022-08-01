@@ -3,7 +3,7 @@ title: Progress easily
 permalink: /patterns/complex-form/progress-easily/
 layout: styleguide
 category: Patterns
-lead: Empower users to successfully complete complex forms by reducing cognitive load and guiding them through the process in a way that is humane and respectful of lived experiences impacting emotional state and cognitive load.
+lead: Empower users to successfully complete complex forms by reducing cognitive load and guiding them through the process in a way that is humane and respectful.
 ---
 
 {:.margin-bottom-2}

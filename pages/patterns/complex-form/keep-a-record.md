@@ -29,22 +29,11 @@ Provide the user with a printable record of their answers using a print style sh
         <div class="do-dont__content">
           <ul>
             <li>Use a print style sheet to create a summary of submitted information in a print-optimized format.</li>
-            <li>Include a complete recap of all questions and their submitted answers.</li>
-            <li>Do provide a “title block” that includes the site name, URL, date, and record of successful submission.</li>
-            <li>Add any next steps, time frames, or reference numbers like case or record identifiers to the title block, if possible. Consider using a fixed-width font with very clear differentiation between letters and numbers to disambiguate any reference strings.</li>
-            <li>Remove unnecessary headers, footers, images, and iconography.</li>
-            <li>Ensure elements have transparent backgrounds and the text is black. Consider whether you need color to communicate critical information, such as in a chart.</li>
-            <li>Fine tune page margins to maximize space and minimize pages printed, but do not make the margins smaller that .5 inches to ensure printer support.</li>
-            <li>Force underlines on all anchor tags to clearly indicate a link in print.</li>
-            <li>Use a CSS pseudo-element to display the full URL after anchored text hyperlinks.</li>
-            <li>Add a border around pre and blockquote tags and images to clearly indicate these elements in print.</li>
-            <li>Print table headers on every page. Avoid splitting tables across pages if possible by utilizing the page-break-after/page-break-before properties.</li>
-            <li>Avoid splitting a table row onto more than one page.</li>
-            <li>Avoid splitting headings onto more than one page.</li>
-            <li>Keep lists on the same page.</li>
+            <li>Provide a “title block” that includes the site name, URL, date, and record of successful submission.</li>            
+            <li>Add any next steps, time frames, or reference numbers like case or record identifiers to the title block, if possible.</li>
+            <li>Include a complete recap of all questions and their submitted answers.</li>            
             <li>Include a “Print” button on the summary page.</li>
-            <li>If user-uploaded images are an essential part of your form, consider the best way to represent them to the user. This might include listing filenames or providing thumbnails or a zip file, rather than full-size images.</li> 
-            <li>Prevent images you do print from being cut off or extending wider than a standard portrait-oriented letter-size page.</li>
+            <li>Strongly consider building in PDF generation. Print-to-PDF functionality is not widely understood in general, and can be particularly cumbersome from mobile devices.</li>
           </ul> 
         </div>
       </div>
@@ -57,7 +46,6 @@ Provide the user with a printable record of their answers using a print style sh
           <ul>
             <li>Don't arbitrarily choose which questions and answers are displayed on the record of submitted information. If a question was important enough to ask, it's important enough to keep in the user's record of their form submission.</li>
             <li>Don't include images that are not important to understanding the content.</li>
-            <li>Don't show links that are fragment identifiers or use the javascript: pseudo protocol.</li>
             <li>Do not print-disable pages or try to suppress page numbering.</li>
           </ul>
       </div>
@@ -70,16 +58,32 @@ Provide the user with a printable record of their answers using a print style sh
 <strong>Provide the user with a summary of their answers before they submit the form.</strong> Give them the opportunity to re-check their answers and provide an easy way for them to revise answers that are incorrect.
 
 ## Usability guidance
+### Test broadly
 <strong>Test print outputs.</strong> Test printing using a variety of printers, print-to-PDF options, and assistive output devices, using <a href="https://digital.gov/2013/07/15/digital-metrics-for-federal-agencies/">representative browser and operating system combinations</a> prior to launch. Remember that mobile device users will have additional challenges printing or saving to PDF so some on-screen guidance may be necessary.
 
-<strong>Avoid widowed or orphaned content.</strong> Widows and orphans can be disorienting and sometimes alarming if a user doesn’t see the phrase in context. 
+### Optimize for print
 
-<strong>Use a readable font size.</strong> Set the point size no smaller than 12 points. Some users will struggle to read smaller text, especially if they are under stress. 
+<strong>Keep it simple.</strong> Remove unnecessary headers, footers, images, and iconography. Ensure design elements that should be printed have transparent backgrounds. 
 
-<strong>Consider the font and color.</strong> If possible, use a white background and dark serif font to optimize readability. 
+<strong>Consider swapping your web resolution logo with a print resolution logo.</strong> This will ensure that your logo is legible and not pixelated. While many images can and should be stripped in a print style sheet, your program name and logo are important indicators of the purpose and origin of the document, especially in the absence of design elements and color.
 
-<strong>Consider swapping web resolution logos with print resolution logos.</strong> This will ensure that your logo is legible and not pixelated. While many images can and should be stripped in a print style sheet, your program name and logo are important indicators of the importance of the document, especially in the absence of design elements and color.
+<strong>Consider the font.</strong> If possible, use a white background and dark serif font to optimize readability. Set the point size no smaller than 12 points. Some users will struggle to read smaller text, especially if they are under stress. 
 
+Consider using a fixed-width font or the `<pre>` element for identifiers like case numbers, to ensure numbers and letters can be differentiated easily.
+
+<strong>Ensure links are preserved.</strong> Force underlines on all anchor tags to clearly indicate a link in print, and use the CSS pseudo-element to display the full URL after anchored text hyperlinks.
+
+<strong>Be mindful of costs associated with printing.</strong> 
+- Consider whether you need color to communicate critical information, such as in a chart. 
+- Fine tune page margins to maximize space and minimize pages printed, but do not make the margins smaller that .5 inches to ensure printer support.
+- If user-uploaded images are an essential part of your form, consider the best way to represent them to the user. This might include listing filenames or providing thumbnails or a zip file, rather than printing full-size images.
+- Prevent images you do print from being cut off or extending wider than a standard portrait-oriented letter-size page.</li>
+
+<strong>Avoid widowed or orphaned content.</strong> Widows and orphans can be disorienting and sometimes alarming if a user doesn’t see the phrase in context. Avoid splitting headings onto more than one page, and keep lists on the same page as much as possible.
+
+<strong>Tables require special care.</strong> While tables should not be used for layout, they are appropriate for tabular data and may be the clearest and most space-conscious way to display questions and answers in a summary. 
+- Print table headers on every page. Avoid splitting tables across pages if possible by utilizing the page-break-after/page-break-before properties.
+- Avoid splitting a table row onto more than one page.
 
 ## Accessibility
 

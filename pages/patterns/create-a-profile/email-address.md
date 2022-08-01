@@ -67,10 +67,10 @@ A text input field with validation and robust error messaging to guide users in 
 <div class="usa-card-group flex-row margin-top-2">
   <li
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
-  role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  role="region"
+  aria-label="Text input"
+  data-meta="Text input">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg">Text input</h3>
@@ -93,9 +93,9 @@ A text input field with validation and robust error messaging to guide users in 
   <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
   <div id="accordion-code" class="usa-accordion__content highlight-code">
     <div class="usa-sr-only">
-      <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/email.html %}</code></pre></figure>
+      {% highlight text%}{% include patterns/email.html %}{% endhighlight %}
     </div>
-    <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/email.html %}{% endhighlight %}</code></pre></figure>
+      {% highlight html%}{% include patterns/email.html %}{% endhighlight %}
   </div>
 </div>
 

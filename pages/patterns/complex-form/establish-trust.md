@@ -11,7 +11,7 @@ lead: Help users understand the purpose of a form, feel confident they have what
 Government forms can be very stressful and overwhelming for users to complete. If they are in the midst of a crisis or recovering from trauma, form completion can be very challenging. Respect for their life experiences and time, and reassurances about process and privacy can help reduce user stress and frustration.
 
 ## When to use this pattern 
-Follow this pattern when you are asking a user to complete a complex form.
+Use this pattern when you are asking users to provide more than basic contact information, especially if you are collecting information that may require disclosing sensitive personal, financial, health, or safety details in a digital form.
 
 ## What’s the solution
 Provide clear information on why it is necessary to complete the form, what information is needed to successfully complete the form, and how the information will be kept secure. Be as transparent as possible. 

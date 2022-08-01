@@ -31,7 +31,7 @@ Provide the user with a printable record of their answers using a print style sh
       <h3 class="do-dont__heading">What to do</h3>
         <div class="do-dont__content">
           <ul>
-            <li>Use a print style sheet to create a summary of submitted information in a print-optimized format.<li>
+            <li>Use a print style sheet to create a summary of submitted information in a print-optimized format.</li>
             <li>Include a complete recap of all questions and their submitted answers.</li>
             <li>Do provide a “title block” that includes the site name, URL, date, and record of successful submission.</li>
             <li>Add any next steps, time frames, or reference numbers like case or record identifiers to the title block, if possible. Consider using a fixed-width font with very clear differentiation between letters and numbers to disambiguate any reference strings.</li>
@@ -85,7 +85,7 @@ Provide the user with a printable record of their answers using a print style sh
 
 ## Accessibility
 
-<strong>Ensure accessible outputs.</strong> While digital teams cannot control how individual users print to PDF because of the wide variety of built-in and add-on tools used for PDF production, good semantic structures will help ensure that PDFs are as usable as possible with screen readers. Test printing on braille printers is also recommended. 
+<strong>Use semantic structures.</strong> While digital teams cannot control how individual users print to PDF because of the wide variety of built-in and add-on tools used for PDF production, good semantic structures will help ensure that PDFs are as usable as possible with screen readers. Test printing on braille printers is also recommended. 
 
 
 ## Ingredients

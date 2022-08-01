@@ -78,53 +78,53 @@ Provide all the fields needed for a user to provide a physical address, even if 
 ## Ingredients
 
 <div class="usa-card-group flex-row margin-top-2">
-  <li
+  <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Physical address visit text input"
+  data-meta="Physical address visit text input">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg">Text input</h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
-        <a href="/components/text-input/">Visit Text Input</a>
+        <a href="{{ site.baseurl }}/components/text-input/">Visit Text input</a>
       </div>
     </div>
-  </li>
-  <li
+  </div>
+  <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Physical address visit select component"
+  data-meta="Physical address visit select component">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg">Select</h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>A select component allows users to choose one option from a temporary modal menu.</p>
-        <a href="/components/select/">Visit Select</a>
+        <a href="{{ site.baseurl }}/components/select/">Visit Select</a>
       </div>
     </div>
-  </li>
+  </div>
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-preview-01" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
+  <button class="usa-accordion__button" aria-controls="accordion-preview-01" aria-expanded="true"><h2 id="pattern-preview-physical-address">Pattern preview</h2></button>
   <div id="accordion-preview-01" class="usa-accordion__content">
     {% include patterns/physical-address.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code-01" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
-  <div id="accordion-code-01" class="usa-accordion__content highlight-code">
+  <button class="usa-accordion__button" aria-controls="accordion-code-01" aria-expanded="false"><h2 id="pattern-code-physical-address">Pattern code</h2></button>
+  <div id="accordion-code-01" class="usa-accordion__content">
     <div class="usa-sr-only">
-      <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/physical-address.html %}</code></pre></figure>
+      {% highlight text%}{% include patterns/physical-address.html %}{% endhighlight %}
     </div>
-    <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/physical-address.html %}{% endhighlight %}</code></pre></figure>
+    {% highlight html%}{% include patterns/physical-address.html %}{% endhighlight %}
   </div>
 </div>
 
@@ -197,44 +197,44 @@ Provide all the fields a user needs to successfully enter a mailing address.
 ## Ingredients
 
 <div class="usa-card-group flex-row margin-top-2">
-  <li
+  <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Mailing address visit text input component"
+  data-meta="Mailing address visit text input component">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg">Text input</h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
-        <a href="{{ site.baseurl }}/components/text-input/">Visit text input</a>
+        <a href="{{ site.baseurl }}/components/text-input/">Visit Text input</a>
       </div>
     </div>
-  </li>
-  <li
+  </div>
+  <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Mailing address visit select component"
+  data-meta="Mailing address visit select component">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg">Select</h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>A select component allows users to choose one option from a temporary modal menu.</p>
-        <a href="{{ site.baseurl }}/components/text-input/">Visit Select</a>
+        <a href="{{ site.baseurl }}/components/select/">Visit Select</a>
       </div>
     </div>
-  </li>
-  <li
+  </div>
+  <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Mailing address visit checkbox component"
+  data-meta="Mailing address visit checkbox component">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg">Checkbox</h3>
@@ -244,22 +244,22 @@ Provide all the fields a user needs to successfully enter a mailing address.
         <a href="{{ site.baseurl }}/components/radio-buttons/">Visit Checkbox</a>
       </div>
     </div>
-  </li>
+  </div>
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-preview-02" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
+  <button class="usa-accordion__button" aria-controls="accordion-preview-02" aria-expanded="true"><h2 id="pattern-preview-mailing-address">Pattern preview</h2></button>
   <div id="accordion-preview-02" class="usa-accordion__content">
     {% include patterns/mailing-address.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code-02" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
+  <button class="usa-accordion__button" aria-controls="accordion-code-02" aria-expanded="false"><h2 id="pattern-code-mailing-address">Pattern code</h2></button>
   <div id="accordion-code-02" class="usa-accordion__content highlight-code">
     <div class="usa-sr-only">
-      <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/mailing-address.html %}</code></pre></figure>
+      {% highlight text%}{% include patterns/mailing-address.html %}{% endhighlight %}
     </div>
-    <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/mailing-address.html %}{% endhighlight %}</code></pre></figure>
+    {% highlight html%}{% include patterns/mailing-address.html %}{% endhighlight %}
   </div>
 </div>
 

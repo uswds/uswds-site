@@ -5,13 +5,13 @@
             Required fields are marked with an asterisk (<abbr title="required"
                 class="usa-hint usa-hint--required">*</abbr>).
         </p>
-        <label class="usa-label" for="mailing-address-1">Street address</label>
-        <input class="usa-input" id="mailing-address-1" name="mailing-address-1" />
+        <label class="usa-label" for="physical-address-1">Street address</label>
+        <input class="usa-input" id="physical-address-1" name="physical-address-1" />
         <div class="grid-row grid-gap">
             <div class="mobile-lg:grid-col-8">
-                <label class="usa-label" for="apt-suite-other">Unit type</label>
+                <label class="usa-label" for="physical-apt-suite-other">Unit type</label>
                 <div class="usa-combo-box">
-                    <select class="usa-select" id="apt-suite-other" name="apt-suite-other">
+                    <select class="usa-select" id="physical-apt-suite-other" name="physical-apt-suite-other">
                         <option value>- Select -</option>
                         <option value="APT">APT - Apartment</option>
                         <option value="BSMT">BSMT - Basement</option>
@@ -43,17 +43,17 @@
                 </div>
             </div>
             <div class="mobile-lg:grid-col-4">
-                <label class="usa-label" for="apt-floor-suite-no">Unit number</label>
-                <input class="usa-input" id="apt-floor-suite-no" name="apt-floor-suite-no" />
+                <label class="usa-label" for="physical-apt-floor-suite-no">Unit number</label>
+                <input class="usa-input" id="physical-apt-floor-suite-no" name="physical-apt-floor-suite-no" />
             </div>
         </div>
-        <label class="usa-label" for="city">City
+        <label class="usa-label" for="physical-city">City
             <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
-        <input class="usa-input" id="city" name="city" required />
-        <label class="usa-label" for="state">State, territory, or military post
+        <input class="usa-input" id="physical-city" name="physical-city" required />
+        <label class="usa-label" for="physical-state">State, territory, or military post
             <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
         <div class="usa-combo-box">
-            <select class="usa-select" id="state" name="state">
+            <select class="usa-select" id="physical-state" name="state">
                 <option value>- Select -</option>
                 <option value="AL">AL - Alabama</option>
                 <option value="AK">AK - Alaska</option>
@@ -120,10 +120,10 @@
                 <option value="AP">AP - Armed Forces Pacific</option>
             </select>
         </div>
-        <label class="usa-label" for="zip">ZIP code</label>
-        <input class="usa-input usa-input--medium" id="zip" name="zip" pattern="[\d]{5}(-[\d]{4})?" />
-        <label class="usa-label" for="urbanization">Urbanization (Puerto Rico only)</label>
-        <input class="usa-input" id="urbanization" name="urbanization" />
+        <label class="usa-label" for="physical-zip">ZIP code</label>
+        <input class="usa-input usa-input--medium" id="physical-zip" name="physical-zip" pattern="[\d]{5}(-[\d]{4})?" />
+        <label class="usa-label" for="physical-urbanization">Urbanization (Puerto Rico only)</label>
+        <input class="usa-input" id="physical-urbanization" name="physical-urbanization" />
         <label class="usa-label" for="google-plus-code">Google Plus Code (e.g., PGX4+XX)</label>
         <input class="usa-input" id="google-plus-code" name="google-plus-code" />
     </fieldset>

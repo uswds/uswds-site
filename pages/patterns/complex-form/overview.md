@@ -3,7 +3,7 @@ title: Complex form
 permalink: /patterns/complex-form/
 layout: styleguide
 category: Patterns
-lead: Help a user to successfully complete a complex form
+lead: Help a user successfully complete a complex form
 subnav:
   - href: /patterns/complex-form/establish-trust/
   - href: /patterns/complex-form/progress-easily/

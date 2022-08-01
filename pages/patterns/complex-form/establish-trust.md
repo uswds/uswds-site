@@ -28,7 +28,7 @@ Provide clear information on why it is necessary to complete the form, what info
             <li>Do provide information on why information is being collected and how it is being used. </li>
             <li>Do use <a href="https://www.plainlanguage.gov/">plain language</a>.</li>
             <li>Do use people-first, inclusive language.</li> 
-            <li>Do provide a list of what information your user will need to successfully complete the form.</li>
+            <li>Do <a href="/component/icon-list/">provide a list</a> of what information your user will need to successfully complete the form.</li>
             <li>Do provide an approximate amount of time it will take the user to complete the form.</li>
             <li>Do allow the user to save and resume if possible. Some users may need to take breaks as they complete a form on a difficult topic.</li>
           </ul> 
@@ -67,6 +67,27 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
 <strong>Practice transparency and integrity.</strong> Don’t hide information from your users. Clearly explain what you are collecting and why. By setting the expectations with your user early, users can feel more inclined to trust the process. 
 
 <strong>Be reliable, consistent, and honest.</strong> Reduce the impact of failure with solid design and engineering. Be a good steward of your audience’s data, resources, and time.
+
+## Ingredients
+
+<div class="usa-card-group flex-row margin-top-2">
+  <li
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit Toggle"
+  data-meta="Visit Toggle">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg">Icon list</h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>An icon list reinforces the meaning and visibility of individual list items with a leading icon.</p>
+        <a href="/components/icon-list/">Visit Icon list</a>
+      </div>
+    </div>
+  </li>
+</div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-preview-01" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>

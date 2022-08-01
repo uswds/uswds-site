@@ -134,26 +134,26 @@ Whenever possible, allow users to save and resume long and potentially stressful
 
 ## References
 ### Trauma-informed design
-- Concept of Trauma and Guidance for a Trauma-Informed Approach. Substance Abuse and Mental Health Services Administration (SAMHSA) - U.S. Department of Health and Human Services. (July 2014) Retrieved on July 21, 2022, from https://store.samhsa.gov/sites/default/files/d7/priv/sma14-4884.pdf
-About Trauma-Informed Design – Design Resources For Homelessness. (n.d.) Retrieved on July 26, 2022, from http://designresourcesforhomelessness.org/about-us-1/
-- Project 3: Implementing trauma-informed content. (July 9, 2019) Retrieved on July 26, 2022, from https://www.phila.gov/2019-07-09-project-3-implementing-trauma-informed-content/
-- Trauma-Informed Computing: Towards Safer Technology Experiences for All. Journal article Association for Computing Machinery in Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems (CHI '22). 2022. Retrieved on July 22, 2022, from https://doi.org/10.1145/3491102.3517475
-- Trauma-informed design research - Design practice that helps not harms. (August 9, 2021) Retrieved on July 26, 2022, from https://uxdesign.cc/trauma-informed-design-research-69b9ba5f8b08
-- Trauma-informed Web Heuristics for Communication Designers. Journal article, Association for Computing Machinery by Shannon Kelly, Benjamin Lauren, and Kaitlyn Nguyen 39th ACM International Conference on Design of Communication (SIGDOC '21). (2021) Retrieved on July 26, 2022 from  https://doi.org/10.1145/3472714.3473638
-- VA.gov Design System - Content Presentation. (May 2, 2022) Retrieved on July 21, 2022, from  https://design.va.gov/patterns/messaging-error-messages#style-and-tone
-- VA.gov Design System - Patterns. (May 26, 2022) Retrieved on July 26, 2022 from https://design.va.gov/patterns/
-- What is Trauma-Informed Design? (June 4, 2021) Retrieved on July 26, 2022 from https://www.birdcallux.com/blog/what-is-trauma-informed-design
+- Concept of Trauma and Guidance for a Trauma-Informed Approach. Substance Abuse and Mental Health Services Administration (SAMHSA) - U.S. Department of Health and Human Services. (July 2014) Retrieved on July 21, 2022, from [https://store.samhsa.gov/sites/default/files/d7/priv/sma14-4884.pdf](https://store.samhsa.gov/sites/default/files/d7/priv/sma14-4884.pdf)
+About Trauma-Informed Design – Design Resources For Homelessness. (n.d.) Retrieved on July 26, 2022, from [http://designresourcesforhomelessness.org/about-us-1/](http://designresourcesforhomelessness.org/about-us-1/)
+- Project 3: Implementing trauma-informed content. (July 9, 2019) Retrieved on July 26, 2022, from [https://www.phila.gov/2019-07-09-project-3-implementing-trauma-informed-content/](https://www.phila.gov/2019-07-09-project-3-implementing-trauma-informed-content/)
+- Trauma-Informed Computing: Towards Safer Technology Experiences for All. Journal article Association for Computing Machinery in Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems (CHI '22). 2022. Retrieved on July 22, 2022, from [https://doi.org/10.1145/3491102.3517475](https://doi.org/10.1145/3491102.3517475)
+- Trauma-informed design research - Design practice that helps not harms. (August 9, 2021) Retrieved on July 26, 2022, from [https://uxdesign.cc/trauma-informed-design-research-69b9ba5f8b08](https://uxdesign.cc/trauma-informed-design-research-69b9ba5f8b08)
+- Trauma-informed Web Heuristics for Communication Designers. Journal article, Association for Computing Machinery by Shannon Kelly, Benjamin Lauren, and Kaitlyn Nguyen 39th ACM International Conference on Design of Communication (SIGDOC '21). (2021) Retrieved on July 26, 2022 from  [https://doi.org/10.1145/3472714.3473638](https://doi.org/10.1145/3472714.3473638)
+- VA.gov Design System - Content Presentation. (May 2, 2022) Retrieved on July 21, 2022, from [https://design.va.gov/patterns/messaging-error-messages#style-and-tone](https://design.va.gov/patterns/messaging-error-messages#style-and-tone)
+- VA.gov Design System - Patterns. (May 26, 2022) Retrieved on July 26, 2022 from [https://design.va.gov/patterns/](https://design.va.gov/patterns/)
+- What is Trauma-Informed Design? (June 4, 2021) Retrieved on July 26, 2022 from [https://www.birdcallux.com/blog/what-is-trauma-informed-design](https://www.birdcallux.com/blog/what-is-trauma-informed-design)
 ### Progressive disclosure
-- 10 Usability Heuristics for User Interface Design. (April 24, 1994. Updated November 15, 2020.) Retrieved on July 22, 2022, from https://www.nngroup.com/articles/ten-usability-heuristics/
+- 10 Usability Heuristics for User Interface Design. (April 24, 1994. Updated November 15, 2020.) Retrieved on July 22, 2022, from [https://www.nngroup.com/articles/ten-usability-heuristics/](https://www.nngroup.com/articles/ten-usability-heuristics/)
 - 10 UI Design Patterns You Should Be Paying Attention To. (June 23, 2009), Retrieved on July 27, 2022, from 
-https://www.smashingmagazine.com/2009/06/10-ui-design-patterns-you-should-be-paying-attention-to/
-- Design Patterns: Progressive Disclosure for Mobile Apps. (May 26, 2016) Retrieved on July 26, 2022, from https://uxplanet.org/design-patterns-progressive-disclosure-for-mobile-apps-f41001a293ba
-- Designing for Progressive Disclosure. (May 4, 2020) Retrieved on July 26, 2022, from https://www.uxmatters.com/mt/archives/2020/05/designing-for-progressive-disclosure.php
-- Progressive Disclosure. (December 3, 2006) Retrieved on July 26, 2022, from https://www.nngroup.com/articles/progressive-disclosure/
-Progressive disclosure: all you need to know. (January 27, 2021) Retrieved on July 26, 2022, from https://www.justinmind.com/blog/progressive-disclosure/
-- Progressive Disclosure design pattern. (n.d.) Retrieved on July 26, 2022, from https://ui-patterns.com/patterns/ProgressiveDisclosure
-- Progressive Disclosure: Simplifying the Complexity. (August 5, 2019) Retrieved on July 26, 2022, from https://www.shopify.com/nz/partners/blog/progressive-disclosure
-- Training wheels in a user interface. Journal article, Association for Computing Machinery by John M. Carroll and Caroline Carrithers Vol. 8 (August 1, 1984). Retrieved on July 27, 2022, from  https://doi.org/10.1145/358198.358218
+[https://www.smashingmagazine.com/2009/06/10-ui-design-patterns-you-should-be-paying-attention-to/](https://www.smashingmagazine.com/2009/06/10-ui-design-patterns-you-should-be-paying-attention-to/)
+- Design Patterns: Progressive Disclosure for Mobile Apps. (May 26, 2016) Retrieved on July 26, 2022, from [https://uxplanet.org/design-patterns-progressive-disclosure-for-mobile-apps-f41001a293ba](https://uxplanet.org/design-patterns-progressive-disclosure-for-mobile-apps-f41001a293ba)
+- Designing for Progressive Disclosure. (May 4, 2020) Retrieved on July 26, 2022, from [https://www.uxmatters.com/mt/archives/2020/05/designing-for-progressive-disclosure.php](https://www.uxmatters.com/mt/archives/2020/05/designing-for-progressive-disclosure.php)
+- Progressive Disclosure. (December 3, 2006) Retrieved on July 26, 2022, from [https://www.nngroup.com/articles/progressive-disclosure/](https://www.nngroup.com/articles/progressive-disclosure/)
+Progressive disclosure: all you need to know. (January 27, 2021) Retrieved on July 26, 2022, from [https://www.justinmind.com/blog/progressive-disclosure/](https://www.justinmind.com/blog/progressive-disclosure/)
+- Progressive Disclosure design pattern. (n.d.) Retrieved on July 26, 2022, from [https://ui-patterns.com/patterns/ProgressiveDisclosure](https://ui-patterns.com/patterns/ProgressiveDisclosure)
+- Progressive Disclosure: Simplifying the Complexity. (August 5, 2019) Retrieved on July 26, 2022, from [https://www.shopify.com/nz/partners/blog/progressive-disclosure](https://www.shopify.com/nz/partners/blog/progressive-disclosure)
+- Training wheels in a user interface. Journal article, Association for Computing Machinery by John M. Carroll and Caroline Carrithers Vol. 8 (August 1, 1984). Retrieved on July 27, 2022, from  [https://doi.org/10.1145/358198.358218](https://doi.org/10.1145/358198.358218)
 
 ## Changelog
 - Created July 26, 2022

@@ -75,13 +75,13 @@ Consider using a fixed-width font or the `<pre>` element for identifiers like ca
 
 <strong>Be mindful of costs associated with printing.</strong> 
 - Consider whether you need color to communicate critical information, such as in a chart. 
-- Fine tune page margins to maximize space and minimize pages printed, but do not make the margins smaller that .5 inches to ensure printer support.
+- Fine tune page margins to maximize space and minimize pages printed, but do not make the margins smaller than .5 inches to ensure printer support.
 - If user-uploaded images are an essential part of your form, consider the best way to represent them to the user. This might include listing filenames or providing thumbnails or a zip file, rather than printing full-size images.
 - Prevent images you do print from being cut off or extending wider than a standard portrait-oriented letter-size page.</li>
 
 <strong>Avoid widowed or orphaned content.</strong> Widows and orphans can be disorienting and sometimes alarming if a user doesn’t see the phrase in context. Avoid splitting headings onto more than one page, and keep lists on the same page as much as possible.
 
-<strong>Tables require special care.</strong> While tables should not be used for layout, they are appropriate for tabular data and may be the clearest and most space-conscious way to display questions and answers in a summary. 
+<strong>Tables require special care.</strong> While tables should not be used for layout, they are appropriate for tabular data and may be the clearest and most space-conscious way to display questions and answers in a printed summary. 
 - Print table headers on every page. Avoid splitting tables across pages if possible by utilizing the page-break-after/page-break-before properties.
 - Avoid splitting a table row onto more than one page.
 

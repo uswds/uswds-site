@@ -3,7 +3,7 @@ title: Keep a record
 permalink: /patterns/complex-form/keep-a-record/
 layout: styleguide
 category: Patterns
-lead: Help users feel confident in their form submission by providing a record of their submission for them to download or print. A record of their answers provides a reference for future use, and helps users confirm their successful form submission.
+lead: Help users feel confident in their form submission by providing a record to download or print. A printed or downloaded record of their answers provides a reference for future use, and helps users confirm their successful form submission.
 ---
 
 

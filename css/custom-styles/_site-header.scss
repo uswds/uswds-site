@@ -6,10 +6,13 @@
 // Shared styles
 // ==========================================================================
 
+$site-navbar-height: 10;
+$site-secondary-nav-input-height: 38px;
+
 // Remove max-width from header containers
 // See https://github.com/uswds/uswds/issues/4851
-.site-header-navbar,
-.site-nav .usa-nav__inner {
+.site-header__navbar,
+.site-nav__inner {
   max-width: none !important;
 }
 
@@ -26,6 +29,7 @@
   .site-logo {
     @include at-media("desktop") {
       margin-top: units(2px);
+      margin-bottom: 0 !important;
     }
 
     a {
@@ -70,38 +74,11 @@
     font-size: fs("lang", "3xs");
   }
 
-  .usa-button {
-    background-color: color($site-primary-vivid);
-
-    &:hover {
-      background-color: color("blue-warm-60v");
-    }
-  }
-
-  // Read website standards, Download, Github buttons
-  .buttons {
-    display: flex;
-    flex-direction: column;
-    row-gap: units(1);
+  &__navbar {
+    border-bottom: none !important;
 
     @include at-media("desktop") {
-      flex-direction: row;
-      align-items: center;
-      row-gap: 0;
-    }
-
-    .usa-button {
-      @include at-media("desktop") {
-        position: relative;
-        bottom: units(-2px);
-      }
-    }
-
-    .site-button-standards {
-      @include at-media("desktop") {
-        box-shadow: inset 0 0 0 2px color("gold-30v");
-        color: color("gold-30v");
-      }
+      height: units($site-navbar-height) !important;
     }
   }
 }
@@ -119,22 +96,6 @@
         background-image: url("../img/uswds-logo/4c-lg-on-black.png");
         background-image: url("../img/uswds-logo/4c-lg-on-black.svg");
       }
-    }
-  }
-
-  .usa-button.site-button-outline-secondary {
-    @include inner-border($site-border-width, "white-transparent-70");
-    background-color: color("transparent");
-    color: color("white-transparent-70");
-
-    &:hover {
-      @include inner-border($site-border-width, "white");
-      background-color: transparent;
-      color: color("white");
-    }
-
-    @include at-media("desktop") {
-      margin-right: units(4);
     }
   }
 }
@@ -157,10 +118,6 @@
   // Search input gets cutoff on mobile.
   .usagov-search-autocomplete {
     min-width: 0;
-  }
-
-  .usa-button {
-    display: block;
   }
 
   .usa-accordion {
@@ -234,30 +191,116 @@
   @include at-media("desktop") {
     align-items: center;
     display: flex;
-    float: right;
-    height: units(10);
+    flex-direction: row;
+    height: units($site-navbar-height);
+    margin-top: 0;
+    bottom: px-to-rem(50px);
   }
 
-  .usa-search {
-    .usa-input {
-      @include at-media-max("desktop") {
-        height: auto;
-        margin-top: 0;
-        padding: 0;
-      }
+  .usa-button {
+    display: block;
+  }
+}
 
-      @include at-media("desktop") {
-        background-color: color("blue-warm-90");
-        color: color("white");
-        height: 39px;
-        margin-top: 0;
-      }
+.site-search {
+  margin-bottom: units(1);
+
+  @include at-media("desktop") {
+    @include u-margin-y(0, "!important");
+    margin-right: units(2);
+    width: auto !important;
+  }
+
+  .usa-input {
+    @include at-media-max("desktop") {
+      height: auto;
+      margin-top: 0;
+      padding: 0;
     }
 
-    .usa-button {
-      @include at-media("desktop") {
-        height: 39px;
+    @include at-media("desktop") {
+      background-color: color("blue-warm-90");
+      color: color("white");
+      height: $site-secondary-nav-input-height;
+      margin-top: 0;
+    }
+  }
+
+  .usa-button {
+    &:hover {
+      background-color: color("blue-warm-60v");
+    }
+
+    @include at-media("desktop") {
+      background-color: color("blue-warm-50v");
+      height: $site-secondary-nav-input-height;
+
+      &:hover,
+      &:active {
+        background-color: color("blue-warm-60v");
       }
     }
+  }
+}
+
+// Read website standards, Download, Github buttons
+.site-header .buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: units(1);
+
+  @include at-media("desktop") {
+    flex-direction: row;
+    align-items: center;
+    row-gap: 0;
+  }
+}
+
+.site-button-outline-secondary {
+  @include inner-border($site-border-width, "primary");
+  background-color: color("transparent");
+  color: color("primary");
+
+  &:visited {
+    color: color("primary");
+  }
+
+  &:hover {
+    @include inner-border($site-border-width, "blue-warm-60v");
+    background-color: transparent;
+    color: color("blue-warm-60v");
+  }
+
+  @include at-media("desktop") {
+    @include inner-border($site-border-width, "white-transparent-70");
+    background-color: color("transparent");
+    color: color("white-transparent-70");
+    height: $site-secondary-nav-input-height;
+    margin-right: units(4);
+
+    &:hover,
+    &:active {
+      @include button-desktop-active;
+    }
+
+    &:visited {
+      color: color("white-transparent-70");
+    }
+  }
+
+  &.site-button-standards {
+    @include at-media("desktop") {
+      box-shadow: inset 0 0 0 2px color("gold-30v");
+      color: color("gold-30v");
+
+      &:focus,
+      &:hover {
+        @include button-desktop-active;
+      }
+    }
+  }
+
+  &.site-button-version {
+    @include no-knockout-font-smoothing;
   }
 }

@@ -2067,46 +2067,6 @@ h6 + div:not(.usa-accordion__content):not(.usa-collection__meta-list) {
   }
 }
 
-.usa-nav__inner {
-  margin-bottom: 0;
-
-  .usa-button {
-    &:hover {
-      background-color: color("blue-warm-60v");
-    }
-  }
-
-  .usa-button.site-button-version {
-    @include no-knockout-font-smoothing;
-    color: color($site-ink);
-    background-color: color($site-background-color);
-
-    &:visited {
-      color: color($site-ink);
-    }
-
-    &:hover {
-      background-color: color("yellow-20v");
-    }
-  }
-
-  .usa-button.site-button-outline-secondary {
-    @include inner-border($site-border-width, "primary");
-    background-color: color("transparent");
-    color: color("primary");
-
-    &:visited {
-      color: color("primary");
-    }
-
-    &:hover {
-      @include inner-border($site-border-width, "blue-warm-60v");
-      background-color: transparent;
-      color: color("blue-warm-60v");
-    }
-  }
-}
-
 .site-page-title,
 %site-page-title {
   @include typeset("lang", "2xl", 2);

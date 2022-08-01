@@ -58,7 +58,7 @@ Provide clear information on why it is necessary to complete the form, what info
 ### User needs
 <strong>Lead with the needs voiced from the community.</strong> Nobody knows your users better than your users. Trust is diminished when change is not aligned with needs or values. By considering users’ feedback you can mitigate the risk of alienation. 
 
-## Usability Guidance
+## Usability guidance
 
 <strong>Design to support people in difficult times.</strong> People under stress may have poor recall, make frequent errors completing forms, and may not notice the errors they make. They likely have a hard time staying focused, cannot easily categorize objects, and are easily frustrated. Consider <a href="{{ site.baseurl }}/patterns/complex-form/progress-easily/">simple form pages and helpful, no-blame error messaging</a>. Use care when surfacing content that appears based on previous answers. People under stress may already feel exposed and vulnerable. Use calm, straightforward language.
 

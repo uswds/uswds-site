@@ -21,7 +21,7 @@ section_one:
 
   - heading: Select their gender or sex
     description: |-
-    Sex and gender identity are central to folks’ sense of self. Considerations: LGBTQ+; A. Hernandez's work; VA's approach; OMB's requirements. There may also be safety issues with this disclosure that need to be considered. Need to evaluate whether the question is actually necessary information to capture.
+      Sex and gender identity are central to folks’ sense of self. Considerations: LGBTQ+; A. Hernandez's work; VA's approach; OMB's requirements. There may also be safety issues with this disclosure that need to be considered. Need to evaluate whether the question is actually necessary information to capture.
 
   - heading: Our future vision
     description: Gender expression does not equal gender identity. Asking for, and correctly using someone’s preferred pronouns is one of the most basic ways to respect someone’s gender identify.
@@ -41,23 +41,29 @@ section_one:
 {% for item in page.section_one %}
 
   <section id="section-{{ forloop.index }}" class="next-section next-section--{{ item.title | downcase | replace: " ", "-" | remove: "’" }} {{ item.section_class }}">
-      {% if forloop.index ==  1 %}
+      {% if forloop.first %}
       <h2 class="text-center font-sans-2xl text-bg-base-darkest">{{item.main_heading}}</h2>
       <div class="display-flex flex-row flex-justify-center">
           <img class="width-9" src="../img/together/gender-equality.svg">
       </div>  
+       {% break %}
       {% endif %}
-    <div class="grid-container">
-      <div class="grid-row">
-        <div class="tablet:grid-col-6">
-          <div class="next-section__header">
-            <h3 class="next-section__heading">
-            {{ item.heading }}
-            </h3>
-            <p>{{ item.description | markdownify }}</p>
-          </div>
-      </div>  
+{% endfor %}
+      <div class="grid-container">
+      <div class="grid-row grid-gap-2">
+      {% for item in page.section_one %}
+      {% if forloop.index == 2 or forloop.index == 3 or forloop.index == 4 or forloop.index == 5 %}
+          <div class="tablet:grid-col-3">
+            <div class="next-section__header">
+              <h3 class="next-section__heading">
+              {{ item.heading }}
+              </h3>
+              <p>{{ item.description | markdownify }}</p>
+            </div>
+          </div>  
+      {% endif %}
+  {% endfor %}
       </div>
     </div>
+
   </section>
-{% endfor %}

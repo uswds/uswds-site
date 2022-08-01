@@ -34,7 +34,7 @@ Whenever possible, allow users to save and resume long and potentially stressful
       <h3 class="do-dont__heading">What to do</h3>
         <div class="do-dont__content">
           <ul>
-            <li>Make sure you’re <a href="../complex-forms/establish-trust/">setting expectations and establishing trust</a>. Be transparent in why specific information is being collected, how it will be used, and how that information will be safeguarded.</li>
+            <li>Make sure you’re <a href="{{ site.baseurl }}/patterns/complex-form/establish-trust/">setting expectations and establishing trust</a>. Be transparent in why specific information is being collected, how it will be used, and how that information will be safeguarded.</li>
             <li>Design with mobile in mind. Consider the touch screen experience and how forms can be delivered in bandwidth-challenged environments.</li>
             <li>Progressively disclose information, guiding the user from simple to more difficult questions.</li>
             <li>Break questions into small, meaningful chunks. Only show questions on one micro-topic at a time.</li>
@@ -128,8 +128,8 @@ Whenever possible, allow users to save and resume long and potentially stressful
 </div>
 
 ## Related
-- <a href="../patterns/complex-form/keep-a-record/">Keep a record of submitted information</a> pattern
-- <a href="../patterns/complex-form/progress-easily/">Set expectations and establish trust</a> pattern
+- <a href="{{ site.baseurl }}/patterns/complex-form/keep-a-record/">Keep a record of submitted information</a> pattern
+- <a href="{{ site.baseurl }}/patterns/complex-form/progress-easily/">Understand expectations and establish trust</a> pattern
 
 
 ## References

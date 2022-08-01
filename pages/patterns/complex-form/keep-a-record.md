@@ -72,7 +72,7 @@ Provide the user with a printable record of their answers using a print style sh
 <strong>Provide the user with a summary of their answers before they submit the form.</strong> Give them the opportunity to re-check their answers and provide an easy way for them to revise answers that are incorrect.
 
 ### Usability Guidelines
-<strong>Test print outputs.</strong> Test printing using a variety of printers, print-to-PDF options, and assistive output devices, using [representative browser and operating system combinations](https://digital.gov/2013/07/15/digital-metrics-for-federal-agencies/) prior to launch. Remember that mobile device users will have additional challenges printing or saving to PDF so some on-screen guidance may be necessary.
+<strong>Test print outputs.</strong> Test printing using a variety of printers, print-to-PDF options, and assistive output devices, using <a href="https://digital.gov/2013/07/15/digital-metrics-for-federal-agencies/">representative browser and operating system combinations</a> prior to launch. Remember that mobile device users will have additional challenges printing or saving to PDF so some on-screen guidance may be necessary.
 
 <strong>Avoid widowed or orphaned content.</strong> Widows and orphans can be disorienting and sometimes alarming if a user doesn’t see the phrase in context. 
 
@@ -126,8 +126,8 @@ Provide the user with a printable record of their answers using a print style sh
 </div>
 
 ## Related
-- <a href="../patterns/complex-form/progress-easily/">Progress easily through a form</a> pattern
-- <a href="../patterns/complex-form/establish-trust/">Set expectations and establish trust</a> pattern
+- <a href="{{ site.baseurl }}/patterns/complex-form/progress-easily/">Progress easily through a form</a> pattern
+- <a href="{{ site.baseurl }}/patterns/complex-form/establish-trust/">Understand expectations and establish trust</a> pattern
 
 
 ## References

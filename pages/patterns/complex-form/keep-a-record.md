@@ -67,7 +67,7 @@ Provide the user with a printable record of their answers using a print style sh
 
 <strong>Consider swapping your web resolution logo with a print resolution logo.</strong> This will ensure that your logo is legible and not pixelated. While many images can and should be stripped in a print style sheet, your program name and logo are important indicators of the purpose and origin of the document, especially in the absence of design elements and color.
 
-<strong>Consider the font.</strong> If possible, use a white background and dark serif font to optimize readability. Set the point size no smaller than 12 points. Some users will struggle to read smaller text, especially if they are under stress. 
+<strong>Prioritize readability.</strong> If possible, use a white background and dark serif font to optimize readability. Set the point size no smaller than 12 points. Some users will struggle to read smaller text, especially if they are under stress. 
 
 Consider using a fixed-width font or the `<pre>` element for identifiers like case numbers, to ensure numbers and letters can be differentiated easily.
 
@@ -89,7 +89,7 @@ Consider using a fixed-width font or the `<pre>` element for identifiers like ca
 
 <strong>Use semantic structures.</strong> While digital teams cannot control how individual users print to PDF because of the wide variety of built-in and add-on tools used for PDF production, good semantic structures will help ensure that PDFs are as usable as possible with screen readers. Test printing on braille printers is also recommended. 
 
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
+<!-- <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-preview-01" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
   <div id="accordion-preview-01" class="usa-accordion__content">
     {% include patterns/physical-address.html %}
@@ -103,7 +103,7 @@ Consider using a fixed-width font or the `<pre>` element for identifiers like ca
     </div>
     <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/physical-address.html %}{% endhighlight %}</code></pre></figure>
   </div>
-</div>
+</div> -->
 
 ## Related
 - <a href="{{ site.baseurl }}/patterns/complex-form/progress-easily/">Progress easily through a form</a> pattern
@@ -111,7 +111,7 @@ Consider using a fixed-width font or the `<pre>` element for identifiers like ca
 
 
 ## References
-- A guide to the state of print stylesheets in 2018. (May 1, 2018) RRetrieved on July 29, 2022, from [https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/](https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/)
+- A guide to the state of print stylesheets in 2018. (May 1, 2018) Retrieved on July 29, 2022, from [https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/](https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/)
 - Designing for print with CSS. (January 7, 2015) Retrieved on July 29, 2022, from h[ttps://www.smashingmagazine.com/2015/01/designing-for-print-with-css/](ttps://www.smashingmagazine.com/2015/01/designing-for-print-with-css/)
 - How to create printer-friendly pages with CSS. (January 5, 2020) Retrieved on July 29, 2020, from [https://www.sitepoint.com/css-printer-friendly-pages/](https://www.sitepoint.com/css-printer-friendly-pages/) 
 - What is a printer-friendly web page? (November 21, 2018) Retrieved on July 29, 2022, from [https://www.thoughtco.com/printer-friendly-web-page-3469219](https://www.thoughtco.com/printer-friendly-web-page-3469219)

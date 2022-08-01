@@ -126,8 +126,8 @@ Whenever possible, allow users to save and resume long and potentially stressful
 </div>
 
 ## Related
-- <a href="../patterns/complex-form/progress-easily/">Progress Easily through a form</a> pattern
 - <a href="../patterns/complex-form/keep-a-record/">Keep a record of submitted information</a> pattern
+- <a href="../patterns/complex-form/progress-easily/">Progress easily through a form</a> pattern
 
 
 ## References

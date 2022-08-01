@@ -23,7 +23,6 @@ Provide the user with the most straightforward path through successful form comp
 
 Respectful, inclusive voice and tone throughout the form–the questions, field labels, hint text, and form messaging–will be critical success factors, as well as delivering questions that progress from simple to more difficult to answer. Help users avoid making mistakes with clear hint text, and empower them to recover from mistakes easily by providing actionable validation messaging. Any system or validation messaging should be free of blame and avoid alarming users. 
 
-Whenever possible, allow users to save and resume long and potentially stressful forms rather than assuming a form will be completed in a single session. Users may be accessing the form on a mobile device, or in a shared public space like a shelter or library where privacy is not guaranteed. They may be distracted by the environment or family members, or discover that additional records are needed. Some users simply need time to work up to answering difficult, potentially painful questions.
 
 ## Guidance
 

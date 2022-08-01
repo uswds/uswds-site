@@ -78,7 +78,7 @@ Help users enter their phone numbers in a consistent, correct, usable format. Us
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
+  aria-label="Visit text input component"
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
@@ -102,9 +102,9 @@ Help users enter their phone numbers in a consistent, correct, usable format. Us
   <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
   <div id="accordion-code" class="usa-accordion__content highlight-code">
     <div class="usa-sr-only">
-      <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/phone-number.html %}</code></pre></figure>
+      {% highlight html%}{% include patterns/phone-number.html %}{% endhighlight %}
     </div>
-    <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/phone-number.html %}{% endhighlight %}</code></pre></figure>
+    {% highlight html%}{% include patterns/phone-number.html %}{% endhighlight %}
   </div>
 </div>
 

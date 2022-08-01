@@ -363,7 +363,7 @@ html {
 }
 
 .next-section {
-  border-top: 4px solid $gray-20-next;
+  border-bottom: 4px dotted $gray-20-next;
   padding-bottom: units(9);
   padding-top: units(9);
 
@@ -405,7 +405,6 @@ html {
 }
 
 .next-section__header {
-  border-bottom: 4px solid;
   margin-bottom: units(4);
 }
 

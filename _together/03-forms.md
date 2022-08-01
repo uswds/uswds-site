@@ -2,14 +2,14 @@
 layout: together-content
 title: Inclusive Design Patterns
 nav_title: Forms
-description: "Access to digital services isn’t a luxury. It’s critical. Let’s transform the way we design and deliver digital government with and for the people."
+description: 
 meta:
   og:image: /img/next/og-next-report.png
 
 permalink: /together/complex-forms
 slug: complex-forms
 
-subhead: A report about what’s next for the U.S. Web Design System
+subhead: Complex Forms
 
 chapter: true
 

@@ -13,13 +13,10 @@ Hitting the “Submit” button on a form can be terrifying, especially if the f
 
 This record also provides a quick reference to submitted answers that might influence eligibility, helping program support personnel work with users to identify potential misunderstandings or mistakes for easier resolution and improved service.
 
-{:.site-component-section-title}
-## Record of submitted information. 
-
 ## When to use this pattern 
 Use this pattern when you are collecting information from users that extends beyond basic contact information, especially if you are collecting information in a long, complex form.
 
-### What’s the solution
+## What’s the solution
 Provide the user with a printable record of their answers using a print style sheet designed to provide a streamlined record of the user’s submission, while conserving paper and ink.
 
 ## Guidance
@@ -72,7 +69,7 @@ Provide the user with a printable record of their answers using a print style sh
 ### Pre-submission check
 <strong>Provide the user with a summary of their answers before they submit the form.</strong> Give them the opportunity to re-check their answers and provide an easy way for them to revise answers that are incorrect.
 
-## Usability Guidelines
+## Usability Guidance
 <strong>Test print outputs.</strong> Test printing using a variety of printers, print-to-PDF options, and assistive output devices, using <a href="https://digital.gov/2013/07/15/digital-metrics-for-federal-agencies/">representative browser and operating system combinations</a> prior to launch. Remember that mobile device users will have additional challenges printing or saving to PDF so some on-screen guidance may be necessary.
 
 <strong>Avoid widowed or orphaned content.</strong> Widows and orphans can be disorienting and sometimes alarming if a user doesn’t see the phrase in context. 
@@ -87,28 +84,6 @@ Provide the user with a printable record of their answers using a print style sh
 ## Accessibility
 
 <strong>Use semantic structures.</strong> While digital teams cannot control how individual users print to PDF because of the wide variety of built-in and add-on tools used for PDF production, good semantic structures will help ensure that PDFs are as usable as possible with screen readers. Test printing on braille printers is also recommended. 
-
-
-## Ingredients
-
-<div class="usa-card-group flex-row margin-top-2">
-  <li
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
-  role="region"
-  aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
-    <div class="usa-card__container">
-      <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg">Text input</h3>
-      </header>
-      <div class="usa-card__body font-lang-sm">
-        <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
-        <a href="/components/text-input/">Visit Text input</a>
-      </div>
-    </div>
-  </li>
-</div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-preview-01" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>

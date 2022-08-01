@@ -33,6 +33,7 @@ $next-theme-colors: (
   "next-blue-dark" #1f5aad,
   "next-mint-medium" #74d7ad true,
   "next-mint-dark" #45a17a true
+  "together-green" #00A91C true,
 );
 
 @each $color-name, $color-value, $text-black in $next-theme-colors {
@@ -85,7 +86,7 @@ html {
 // -------------------------------------
 .next-hero .grid-container,
 .next-internal-nav .grid-container,
-.next-section .grid-container {
+.together-section .grid-container {
   max-width: 65rem !important;
   width: 100%;
 }
@@ -352,69 +353,75 @@ html {
   font-style: italic;
 }
 
-// Section
+// Together Section
 // -------------------------------------
+
+
 .next-overview {
   margin-top: 1em;
-
+  
   @include at-media("tablet") {
     margin-top: 0;
   }
 }
 
-.next-section {
+.together-section {
   border-bottom: 4px dotted $gray-20-next;
   padding-bottom: units(9);
   padding-top: units(9);
-
+  
   @include at-media("desktop") {
     padding-bottom: units(15);
     padding-top: units(15);
   }
-
+  
   &:focus {
     outline: none;
   }
-
+  
   h2 {
     font-family: family("heading");
     font-size: size("heading", 12);
     line-height: line-height("heading", 2);
     margin-top: units(2.5);
     margin-bottom: units(1.5);
-
+    
     @include at-media("desktop") {
       font-size: size("heading", 14);
     }
   }
-
+  
   h3 {
     font-size: size("lang", 11);
-    margin: units(8) 0 0 0;
+    margin: units(4) 0 0 0;
   }
-
+  
   h4 {
     color: color("base");
     font-size: size("lang", 9);
     margin-bottom: 0;
+  
+  }
+  .border-together-green {
+    border-color: #00A91C !important;
   }
 }
 
-.next-section--shaded {
+.together-section--shaded {
   background-color: $gray-20-next;
 }
 
-.next-section__header {
+.together-section__header {
   margin-bottom: units(4);
 }
 
-.next-section__subhead {
+.together-section__subhead {
   font-weight: font-weight("bold");
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
-.next-section__heading {
+.together-section__heading {
   font-family: family("heading");
   font-size: size("heading", 12);
   margin-top: 0;
@@ -425,57 +432,57 @@ html {
   }
 }
 
-.next-section--purpose {
-  .next-section__header {
+.together-section--purpose {
+  .together-section__header {
     border-color: color("red-50");
   }
 
-  .next-section__subhead {
+  .together-section__subhead {
     color: color("red-50");
   }
 }
 
-.next-section--findings {
-  .next-section__header {
+.together-section--findings {
+  .together-section__header {
     border-color: color("mint-20");
   }
 
-  .next-section__subhead {
+  .together-section__subhead {
     color: color("mint-60");
   }
 }
 
-.next-section--whats-next {
-  .next-section__header {
+.together-section--whats-next {
+  .together-section__header {
     border-color: color("gold-20v");
   }
 
-  .next-section__subhead {
+  .together-section__subhead {
     color: color("gold-50v");
   }
 }
 
-.next-section--get-involved {
-  .next-section__header {
+.together-section--get-involved {
+  .together-section__header {
     border-color: $pink-20v;
   }
 
-  .next-section__subhead {
+  .together-section__subhead {
     color: $pink-50v;
   }
 }
 
-.next-section-description {
+.together-section-description {
   p {
     font-size: size("lang", 8);
   }
 }
 
-.next-section-description p:first-child {
+.together-section-description p:first-child {
   margin-top: 0;
 }
 
-.next-section-prose {
+.together-section-prose {
   h3 {
     margin-top: units(4);
   }
@@ -665,7 +672,7 @@ html {
   margin: 0 !important;
 }
 
-.next-section .next-finding__heading {
+.together-section .next-finding__heading {
   color: $gray-80-next;
 }
 
@@ -676,7 +683,7 @@ html {
 // Opportunities List
 // -------------------------------------
 
-.next-section--opportunities {
+.together-section--opportunities {
   margin-bottom: units(-3);
   padding-top: 0;
 
@@ -721,7 +728,7 @@ html {
 // Footnotes
 // -------------------------------------
 
-.next-section--citations {
+.together-section--citations {
   padding-top: units(4);
   padding-bottom: units(5);
   margin-top: units(-3);

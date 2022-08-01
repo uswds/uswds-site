@@ -33,7 +33,7 @@ Provide the user with a printable record of their answers using a print style sh
             <li>Add any next steps, time frames, or reference numbers like case or record identifiers to the title block, if possible.</li>
             <li>Include a complete recap of all questions and their submitted answers.</li>            
             <li>Include a “Print” button on the summary page.</li>
-            <li>Strongly consider building in PDF generation. Print-to-PDF functionality is not widely understood in general, and can be particularly cumbersome from mobile devices.</li>
+            <li>Strongly consider building in PDF generation. Print-to-PDF functionality is not widely understood in general, and can be particularly cumbersome on mobile devices.</li>
           </ul> 
         </div>
       </div>
@@ -76,13 +76,13 @@ Consider using a fixed-width font or the `<pre>` element for identifiers like ca
 <strong>Be mindful of costs associated with printing.</strong> 
 - Consider whether you need color to communicate critical information, such as in a chart. 
 - Fine tune page margins to maximize space and minimize pages printed, but do not make the margins smaller than .5 inches to ensure printer support.
-- If user-uploaded images are an essential part of your form, consider the best way to represent them to the user. This might include listing filenames or providing thumbnails or a zip file, rather than printing full-size images.
-- Prevent images you do print from being cut off or extending wider than a standard portrait-oriented letter-size page.</li>
+- If user-uploaded images are an essential part of your form, consider the best way to represent them to the user. This might include listing filenames or providing thumbnails, rather than printing full-size images.
+- Prevent images you do print from being cut off or extending wider than a standard portrait-oriented letter-size page.
 
-<strong>Avoid widowed or orphaned content.</strong> Widows and orphans can be disorienting and sometimes alarming if a user doesn’t see the phrase in context. Avoid splitting headings onto more than one page, and keep lists on the same page as much as possible.
+<strong>Avoid widowed or orphaned content.</strong> Widows and orphans can be disorienting and sometimes alarming if a user doesn’t see a phrase in context. Avoid splitting headings onto more than one page, and keep lists on the same page as much as possible.
 
 <strong>Tables require special care.</strong> While tables should not be used for layout, they are appropriate for tabular data and may be the clearest and most space-conscious way to display questions and answers in a printed summary. 
-- Print table headers on every page. Avoid splitting tables across pages if possible by utilizing the page-break-after/page-break-before properties.
+- Print table headers on every page. Avoid splitting tables across pages if possible by utilizing page-break-after or page-break-before CSS properties.
 - Avoid splitting a table row onto more than one page.
 
 ## Accessibility

@@ -83,6 +83,23 @@ $site-secondary-nav-input-height: 38px;
   }
 }
 
+.site-title {
+
+  &--short {
+    @include at-media("mobile-lg") {
+      display: none;
+    }
+  }
+
+  &--long {
+    display: none;
+
+    @include at-media("mobile-lg") {
+      display: initial;
+    }
+  }
+}
+
 .site-header--dark {
   background-color: color($site-primary-darker);
 

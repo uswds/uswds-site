@@ -74,12 +74,12 @@ Help users enter their phone numbers in a consistent, correct, usable format. Us
 ## Ingredients
 
 <div class="usa-card-group flex-row margin-top-2">
-  <li
+  <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
   aria-label="Visit text input component"
-  data-meta="Visit Toggle">
+  data-meta="Visit text input component">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg">Text input</h3>
@@ -89,7 +89,7 @@ Help users enter their phone numbers in a consistent, correct, usable format. Us
         <a href="{{ site.baseurl }}/components/text-input/">Visit Text input</a>
       </div>
     </div>
-  </li>
+  </div>
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
@@ -102,16 +102,16 @@ Help users enter their phone numbers in a consistent, correct, usable format. Us
   <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
   <div id="accordion-code" class="usa-accordion__content highlight-code">
     <div class="usa-sr-only">
-      {% highlight html%}{% include patterns/phone-number.html %}{% endhighlight %}
+      {% highlight text%}{% include patterns/phone-number.html %}{% endhighlight %}
     </div>
     {% highlight html%}{% include patterns/phone-number.html %}{% endhighlight %}
   </div>
 </div>
 
 ## Related
-- <a href="#">Input masking</a> component
-- <a href="#">Email address</a> pattern
-- <a href="#">Social Security Number</a> pattern
+- <a href="{{ site.baseurl }}/components/input-mask/">Input masking</a> component
+- <a href="{{ site.baseurl }}/patterns/create-a-profile/email-address/">Email address</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number/">Social Security Number</a> pattern
 
 ## References
 - Telephone numbers. (n.d.) Retrieved on July 20, 2022, from [https://design-system.service.gov.uk/patterns/telephone-numbers/](https://design-system.service.gov.uk/patterns/telephone-numbers/)

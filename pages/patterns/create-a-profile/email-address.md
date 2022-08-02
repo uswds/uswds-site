@@ -101,8 +101,8 @@ A text input field with validation and robust error messaging to guide users in 
 
 ## Related
 
-- <a href="#">Phone number</a> pattern
-- <a href="#">Social Security Number</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number">Phone number</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number">Social Security Number</a> pattern
 
 ## References
 - Mobile form usability: avoid splitting single input entities. (February 12, 2013) Retrieved on July 20, 2022, from [https://baymard.com/blog/mobile-form-usability-single-input-fields](https://baymard.com/blog/mobile-form-usability-single-input-fields)

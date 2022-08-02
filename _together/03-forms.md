@@ -47,7 +47,7 @@ section_three_buckets:
 
 <!-- top section -->
 <section class="text-center margin-y-6">
-  <div class="border-bottom-1px border-top-0 border-dashed">
+  <div class="border-bottom-1px border-top-0 border-left-0 border-right-0 border-dashed">
     <h2 class="font-sans-xl">
       Help users to...<span class="font-sans-xl text-base">{{ page.help_detail }}</span>
     </h2>

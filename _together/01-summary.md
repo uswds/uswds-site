@@ -63,16 +63,16 @@ summary_sections:
 
 <main role="main" id="main-content">
   {% for item in page.summary_sections %}
-    <section id="section-{{ forloop.index }}" class="next-section next-section--{{ item.title | downcase | replace: " ", "-" | remove: "’" }} {{ item.section_class }}">
+    <section id="section-{{ forloop.index }}" class="together-section together-section--{{ item.title | downcase | replace: " ", "-" | remove: "’" }} {{ item.section_class }}">
       <div class="grid-container">
         <div class="grid-row">
           <div class="grid-col-12 tablet:grid-col-3">
-            <div class="next-section__header">
-              {% unless item.hide_title %}<div class="next-section__subhead">{{ item.title }}</div>{% endunless %}
-              <h2 class="next-section__heading">{{ item.heading }}</h2>
+            <div class="together-section__header">
+              {% unless item.hide_title %}<div class="together-section__subhead">{{ item.title }}</div>{% endunless %}
+              <h2 class="together-section__heading">{{ item.heading }}</h2>
             </div>
           </div>
-          <div class="grid-col-12 tablet:grid-col-8 tablet:margin-left-auto next-section-description">
+          <div class="grid-col-12 tablet:grid-col-8 tablet:margin-left-auto together-section-description">
             {{ item.description | markdownify }}
           </div>
         </div>

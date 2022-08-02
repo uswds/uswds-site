@@ -9,6 +9,7 @@ permalink: /together/profile
 slug: profile
 subhead: Create a User Profile
 help_detail: Successfully provide profile information
+main_graphic: /img/together/together-info.svg
 chapter: true
 
 section_one:
@@ -64,7 +65,7 @@ section_four_buckets:
   </div>
 
   <p class="font-sans-2xl text-bold">Why this matters?</p>
-  <img class="width-desktop" src="../img/together/together-logo.svg">
+  <img class="width-desktop" src="{{ page.main_graphic }}">
 </section>
 
 <!-- section one -->

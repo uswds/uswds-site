@@ -1,6 +1,6 @@
 ---
 layout: together-content
-title: Inclusive Design Patterns
+title: Preferred Language
 nav_title: Preferred Language
 description: 
 meta:
@@ -9,7 +9,7 @@ meta:
 permalink: /together/preferred-language
 slug: preferred-language
 
-subhead: Preferred Language
+subhead: Lorem ipsum dolor sit amet consectetur adipiscing elit
 
 chapter: true
 

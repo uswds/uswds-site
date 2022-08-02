@@ -1,13 +1,13 @@
 ---
 layout: together-content
-title: Inclusive Design Patterns
+title: Complex Forms
 nav_title: Forms
 description: 
 meta:
   og:image: /img/next/og-next-report.png
-permalink: /together/complex-forms
-slug: complex-forms
-subhead: Complex Forms
+permalink: /together/forms
+slug: forms
+subhead: Lorem ipsum dolor sit amet consectetur adipiscing elit
 help_detail: Complete a complex form
 main_graphic: /img/together/forms-info.svg
 chapter: true

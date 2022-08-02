@@ -1,13 +1,13 @@
 ---
 layout: together-content
-title: Inclusive Design Patterns
+title: Create a user profile
 nav_title: Profile
 description:
 meta:
   og:image: /img/next/og-next-report.png
 permalink: /together/profile
 slug: profile
-subhead: Create a User Profile
+subhead: Lorem ipsum dolor sit amet consectetur adipiscing elit
 help_detail: Successfully provide profile information
 main_graphic: /img/together/together-info.svg
 chapter: true

@@ -1,7 +1,7 @@
 ---
 layout: together-content
-title: Inclusive Design Patterns
-nav_title: Together
+title: Summary
+nav_title: Summary
 description: 
 meta:
   og:image: /img/next/og-next-report.png

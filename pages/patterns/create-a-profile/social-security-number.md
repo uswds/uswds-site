@@ -72,7 +72,7 @@ Provide a single text field to enter the Social Security Number.
 ## Ingredients
 
 <div class="usa-card-group flex-row margin-top-2">
-  <li
+  <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
@@ -87,7 +87,7 @@ Provide a single text field to enter the Social Security Number.
         <a href="{{ site.baseurl }}/components/text-input/">Visit Text input</a>
       </div>
     </div>
-  </li>
+  </div>
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
@@ -100,9 +100,9 @@ Provide a single text field to enter the Social Security Number.
   <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
   <div id="accordion-code" class="usa-accordion__content highlight-code">
     <div class="usa-sr-only">
-      <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/social-security-number.html %}</code></pre></figure>
+      {% highlight html%}{% include patterns/social-security-number.html %}{% endhighlight %}
     </div>
-    <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/social-security-number.html %}{% endhighlight %}</code></pre></figure>
+    {% highlight html%}{% include patterns/social-security-number.html %}{% endhighlight %}
   </div>
 </div>
 

@@ -1,6 +1,6 @@
 ---
 layout: together-content
-title: Create a user profile
+title: Create a User Profile
 nav_title: Profile
 description:
 meta:
@@ -59,11 +59,10 @@ section_four_buckets:
 <!-- top section -->
 <section class="text-center margin-y-6">
   <div class="border-bottom-1px border-top-0 border-dashed">
-    <h2>
-      Help users to...<span class="text-base">{{ page.help_detail }}</span>
+    <h2 class="font-sans-xl">
+      Help users to...<span class="font-sans-xl text-base">{{ page.help_detail }}</span>
     </h2>
   </div>
-
   <p class="font-sans-2xl text-bold">Why this matters?</p>
   <img class="width-desktop" src="{{ page.main_graphic }}">
 </section>

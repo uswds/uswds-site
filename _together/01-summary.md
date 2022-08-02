@@ -1,6 +1,6 @@
 ---
 layout: together-content
-title: Summary
+title: Inclusive Design Patterns
 nav_title: Summary
 description: 
 meta:
@@ -9,7 +9,7 @@ meta:
 permalink: /together/
 slug: together
 
-subhead: A report about Inclusive Design Patterns for the U.S. Web Design System
+subhead: USWDS patterns are practical, easy to implement guidelines and best practices for common user interactions.
 
 chapter: true
 

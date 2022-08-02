@@ -114,9 +114,9 @@ Mobile device users in particular may benefit from being able to type a year rat
 
 ## Related
 
-- <a href="https://designsystem.digital.gov/components/memorable-date/">Memorable date</a> component
-- <a href="#">Phone number</a> pattern
-- <a href="#">Social Security Number</a> pattern
+- <a href="{{ site.baseurl }}/components/memorable-date/">Memorable date</a> component
+- <a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number/">Phone number</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number/">Social Security Number</a> pattern
 
 ## References
 - Dates. (n.d.) Retrieved on July 20, 2022, from <a href="https://design-system.service.gov.uk/patterns/dates/">https://design-system.service.gov.uk/patterns/dates/</a>

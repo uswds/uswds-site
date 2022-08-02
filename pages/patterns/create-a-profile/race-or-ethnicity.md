@@ -95,12 +95,12 @@ Combined Race and ethnicity checkbox items:
 ## Ingredients
 
 <div class="usa-card-group flex-row margin-top-2">
-  <li
+  <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Visit checkbox component"
+  data-meta="Visit checkbox component">
       <div class="usa-card__container">
       <header class="usa-card__header">
           <h3 class="usa-card__heading font-lang-lg">Checkbox</h3>
@@ -110,13 +110,13 @@ Combined Race and ethnicity checkbox items:
           <a href="{{ site.baseurl }}/components/checkbox/">Visit Checkbox</a>
       </div>
       </div>
-  </li>
-  <li
+  </div>
+  <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Visit text input component"
+  data-meta="Visit text input component">
       <div class="usa-card__container">
       <header class="usa-card__header">
           <h3 class="usa-card__heading font-lang-lg">Text input</h3>
@@ -126,7 +126,7 @@ Combined Race and ethnicity checkbox items:
           <a href="{{ site.baseurl }}/components/text-input/">Visit Text input</a>
       </div>
       </div>
-  </li>
+  </div>
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
@@ -139,9 +139,9 @@ Combined Race and ethnicity checkbox items:
   <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
   <div id="accordion-code" class="usa-accordion__content highlight-code">
     <div class="usa-sr-only">
-      <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/race-or-ethnicity.html %}</code></pre></figure>
+      {% highlight html%}{% include patterns/race-or-ethnicity.html %}{% endhighlight %}
     </div>
-    <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/race-or-ethnicity.html %}{% endhighlight %}</code></pre></figure>
+    {% highlight html%}{% include patterns/race-or-ethnicity.html %}{% endhighlight %}
   </div>
 </div>
 

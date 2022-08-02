@@ -71,12 +71,12 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
 ## Ingredients
 
 <div class="usa-card-group flex-row margin-top-2">
-  <li
+  <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Visit icon list component"
+  data-meta="Visit icon list component">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg">Icon list</h3>
@@ -86,7 +86,7 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
         <a href="/components/icon-list/">Visit Icon list</a>
       </div>
     </div>
-  </li>
+  </div>
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
@@ -99,9 +99,9 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
   <button class="usa-accordion__button" aria-controls="accordion-code-01" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
   <div id="accordion-code-01" class="usa-accordion__content highlight-code">
     <div class="usa-sr-only">
-      <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/physical-address.html %}</code></pre></figure>
+       {% highlight text%}{% include patterns/physical-address.html %}{% endhighlight %}
     </div>
-    <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/physical-address.html %}{% endhighlight %}</code></pre></figure>
+    {% highlight html%}{% include patterns/physical-address.html %}{% endhighlight %}
   </div>
 </div>
 

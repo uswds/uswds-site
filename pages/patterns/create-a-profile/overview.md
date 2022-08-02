@@ -22,12 +22,12 @@ qualifying for and receiving support and services from the government. It can al
 
 ## Help users to...
 <div class="usa-card-group flex-row margin-top-2">
-  <li
+  <div
   class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Visit address pattern"
+  data-meta="Visit address pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/address/">Enter their <strong>address</strong></a></h3>
@@ -36,13 +36,13 @@ qualifying for and receiving support and services from the government. It can al
         <p>Help users to provide their address: support users in entering their physical or mailing addresses for successful communication.</p>
       </div>
     </div>
-  </li>
-  <li
+  </div>
+  <div
   class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Visit address pattern"
+  data-meta="Visit address pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/sex-or-gender/">Select their <strong>biological sex or gender</strong></a></h3>
@@ -51,13 +51,13 @@ qualifying for and receiving support and services from the government. It can al
         <p>Help users to enter their biolgical sex or gender: allow users to feel comfortable and confident that they are being identified in the way that they choose.</p>
       </div>
     </div>
-  </li>
-  <li
+  </div>
+  <div
   class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Visit address pattern"
+  data-meta="Visit address pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/contact-preferences/">Indicate their <strong>contact preferences</strong></a></h3>
@@ -66,13 +66,13 @@ qualifying for and receiving support and services from the government. It can al
         <p>Help users to enter their preferred means of communication: allow users to specify how they would like to be contacted and in what language.</p>
       </div>
     </div>
-  </li>  
-  <li
+  </div>  
+  <div
   class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Visit address pattern"
+  data-meta="Visit address pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/date-of-birth/">Enter their <strong>date of birth</strong></a></h3>
@@ -81,13 +81,13 @@ qualifying for and receiving support and services from the government. It can al
         <p>Help users to enter their date of birth: allow users to provide their birth date or other memorable date.</p>
       </div>
     </div>
-  </li>
-    <li
+  </div>
+    <div
   class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Visit address pattern"
+  data-meta="Visit address pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/email-address/">Provide their <strong>email address</strong></a></h3>
@@ -96,8 +96,8 @@ qualifying for and receiving support and services from the government. It can al
         <p>Help users to enter their email address: allow users to enter their email address or addresses.</p>
       </div>
     </div>
-  </li>
-  <li
+  </div>
+  <div
   class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
@@ -111,8 +111,8 @@ qualifying for and receiving support and services from the government. It can al
         <p>Help users to enter their name: allow users to enter their name in a way that supports the wide variety of name formats.</p>
       </div>
     </div>
-  </li>
-   <li
+  </div>
+   <div
   class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
@@ -126,8 +126,8 @@ qualifying for and receiving support and services from the government. It can al
         <p>Help users to enter their phone number: allow the user to enter their phone number or numbers to ensure effective communication.</p>
       </div>
     </div>
-  </li>
-  <li
+  </div>
+  <div
   class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
@@ -141,8 +141,8 @@ qualifying for and receiving support and services from the government. It can al
         <p>Help users to enter their pronouns: support users in providing their pronouns to ensure they are addressed in the manner they prefer.</p>
       </div>
     </div>
-  </li>
-   <li
+  </div>
+   <div
   class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
@@ -156,8 +156,8 @@ qualifying for and receiving support and services from the government. It can al
         <p>Help users to enter their race or ethnicity: allow users to provide the race and ethnicity that reflects their lived experience.</p>
       </div>
     </div>
-  </li>
-  <li
+  </div>
+  <div
   class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
@@ -171,5 +171,5 @@ qualifying for and receiving support and services from the government. It can al
         <p>Help users to enter their Social Security Number: allow users to provide their Social Security Number or Individual Taxpayer Identification Number.</p>
       </div>
     </div>
-  </li>
+  </div>
 </div>

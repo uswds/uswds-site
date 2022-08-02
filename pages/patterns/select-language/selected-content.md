@@ -12,7 +12,7 @@ Inconsistent placement of language selection components prevent users, especiall
 Use this pattern if your site offers a limited set of content available in additional languages. Note: this may apply to a single language site, two language site, or three or more language site if only a small subset of content is available in additional languages.
 
 ## When to consider something else
-If your site is available in two or more languages and all content is available in each language, see related patterns <a href="../two-languages/">Select from two languages</a> or <a href="../three-or-more-languages/">Select from three or more languages</a>.
+If your site is available in two or more languages and all content is available in each language, see related patterns <a href="{{ site.baseurl }}/patterns/language-selector/two-languages/">Select from two languages</a> or <a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages/">Select from three or more languages</a>.
 
 ## What's the solution
 Place the language selector button at the top right of the screen above site navigation to allow the user to access a dropdown with links to content in other languages.
@@ -98,22 +98,22 @@ All logically related items/links must be presented as an <b>HTML unordered list
 ## Ingredients
 
 <div class="usa-card-group flex-row margin-top-2">
-   <li
+   <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Visit language selector component"
+  data-meta="Visit language selector component">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg">Language selector</h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>A dropdown menu that allows the user to select the language.</p>
-        <a href="#">Visit Language selector</a>
+        <a href="{{ site.baseurl }}/components/language-selector">Visit Language selector</a>
       </div>
     </div>
-  </li>
+  </div>
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
@@ -126,9 +126,9 @@ All logically related items/links must be presented as an <b>HTML unordered list
   <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
   <div id="accordion-code" class="usa-accordion__content highlight-code">
     <div class="usa-sr-only">
-      <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/contact-preferences.html %}</code></pre></figure>
+       {% highlight text%}{% include patterns/contact-preferences.html %}{% endhighlight %}
     </div>
-    <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/contact-preferences.html %}{% endhighlight %}</code></pre></figure>
+    {% highlight html%}{% include patterns/contact-preferences.html %}{% endhighlight %}
   </div>
 </div>
 
@@ -138,9 +138,9 @@ All logically related items/links must be presented as an <b>HTML unordered list
 
 ## Related
 
-- <a href="https://designsystem.digital.gov/components/header/">Header</a> component
-- <a href="../more-than-three-languages/">Select from three or more languages</a> pattern
-- <a href="../two-languages/">Select from two languages</a> pattern
+- <a href="{{ site.baseurl }}/components/header/">Header</a> component
+- <a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages">Select from three or more languages</a> pattern
+- <a href="{{ site.baseurl }}/patterns/language-selector/two-languages">Select from two languages</a> pattern
 
 ## References
 - Top 10 Best practices for multilingual websites. (June 21, 2022) Retrieved on July 21, 2022, from [https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/](https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/)

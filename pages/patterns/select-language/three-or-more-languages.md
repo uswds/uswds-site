@@ -10,7 +10,7 @@ lead: This pattern helps users, especially those with limited English proficienc
 Inconsistent placement and treatment of language selection interface components can be a barrier to users, especially those with limited English-language skills, preventing them from easily finding and accessing content in other languages.
 
 ## When to use this pattern 
-Use this pattern when the content is available in three or more languages and all content is available in each language. When content is available in only two languages, see the pattern <a href="../two-languages/">Select from two languages</a> pattern. When only selected content is available in some languages, see <a href="../selected-content/">Find selected content in preferred language</a> pattern.
+Use this pattern when the content is available in three or more languages and all content is available in each language. When content is available in only two languages, see the pattern <a href="{{ site.baseurl }}/patterns/language-selector/two-languages/">Select from two languages</a> pattern. When only selected content is available in some languages, see <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Find selected content in preferred language</a> pattern.
 
 ## What's the solution
 Place the language selector menu at the top right of the screen above site navigation, allowing site visitors to use a dropdown menu to select their language of choice. 
@@ -72,7 +72,7 @@ Consider including a <b>prominent in-page notice or link</b> in addition to the 
 ## Ingredients
 
 <div class="usa-card-group flex-row margin-top-2">
-  <li
+  <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
@@ -87,7 +87,7 @@ Consider including a <b>prominent in-page notice or link</b> in addition to the 
         <a href="#">Visit Language selector</a>
       </div>
     </div>
-  </li>
+  </div>
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
@@ -100,9 +100,9 @@ Consider including a <b>prominent in-page notice or link</b> in addition to the 
   <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
   <div id="accordion-code" class="usa-accordion__content highlight-code">
     <div class="usa-sr-only">
-      <figure class="highlight"><pre><code class="language-html" data-lang="html">{% include patterns/contact-preferences.html %}</code></pre></figure>
+      {% highlight text%}{% include patterns/contact-preferences.html %}{% endhighlight %}
     </div>
-    <figure class="highlight"><pre><code class="language-html" data-lang="html">{% highlight html%}{% include patterns/contact-preferences.html %}{% endhighlight %}</code></pre></figure>
+    {% highlight html%}{% include patterns/contact-preferences.html %}{% endhighlight %}
   </div>
 </div>
 
@@ -112,10 +112,9 @@ Consider including a <b>prominent in-page notice or link</b> in addition to the 
 
 ## Related
 
-- <a href="https://designsystem.digital.gov/components/header/">Header</a> component
-- <a href="../selected-content/">Find selected content in preferred language</a> pattern
-- <a href="../two-languages/">Select from two languages</a> pattern
-
+- <a href="{{ site.baseurl }}/components/header/">Header</a> component
+- <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Find selected content in preferred language</a> pattern
+- <a href="{{ site.baseurl }}/patterns/language-selector/two-languages">Select from two languages</a> pattern
 
 ## References
 - Top 10 Best practices for multilingual websites. (June 21, 2022) Retrieved on July 21, 2022, from [https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/](https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/)

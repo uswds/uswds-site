@@ -16,12 +16,12 @@ Accessing content in the language that the user is most comfortable in allows th
 
 ## Help users to...
 <div class="usa-card-group flex-row margin-top-2">
-  <li
+  <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Visit two languages option pattern"
+  data-meta="Visit two languages option pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/language-selector/two-languages/">Select from <b>two language options</b></a></h3>
@@ -30,13 +30,13 @@ Accessing content in the language that the user is most comfortable in allows th
         <p>Help users select from two language options. Support users in selecting from two language options, such as English and Spanish.</p>
       </div>
     </div>
-  </li>
-  <li
+  </div>
+  <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Visit three or more languages pattern"
+  data-meta="Visit three or more languages pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages/">Select from <b>three or more languages</b></a></h3>
@@ -45,13 +45,13 @@ Accessing content in the language that the user is most comfortable in allows th
         <p>Help users choose from among three or more languages. Allow users to select from multiple available languages, such as English, Spanish, Chinese, and Arabic.</p>
       </div>
     </div>
-  </li>
-  <li
+  </div>
+  <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Visit selected content in preferred language pattern"
+  data-meta="Visit selected content in preferred language pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Access <b>selected content in preferred language</b></a></h3>
@@ -60,13 +60,13 @@ Accessing content in the language that the user is most comfortable in allows th
         <p>Help users access a limited set of translated content available in additional languages.</p>
       </div>
     </div>
-  </li>
-  <li
+  </div>
+  <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Visit written and spoken language preferences pattern"
+  data-meta="Visit written and spoken language preferences pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/language-selector/language-preferences/">Select <b>written and spoken language preferences</b></a></h3>
@@ -75,5 +75,5 @@ Accessing content in the language that the user is most comfortable in allows th
         <p>Help the user to identify one or more languages for written or spoken communication.</p>
       </div>
     </div>
-  </li>
+  </div>
 </div>

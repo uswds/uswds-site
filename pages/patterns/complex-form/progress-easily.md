@@ -72,12 +72,12 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
 ## Ingredients
 
 <div class="usa-card-group flex-row margin-top-2">
-  <li
+  <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Visit step indicator component"
+  data-meta="Visit step indicator component">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg">Step indicator</h3>
@@ -87,13 +87,13 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
         <a href="/components/progress-indicator/">Visit Step indicator</a>
       </div>
     </div>
-  </li>
-  <li
+  </div>
+  <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Visit modal component"
+  data-meta="Visit modal component">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg">Modal</h3>
@@ -103,7 +103,7 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
         <a href="/components/modal/">Visit Modal</a>
       </div>
     </div>
-  </li>
+  </div>
 </div>
 
 ## Related

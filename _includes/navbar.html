@@ -11,35 +11,35 @@
     </div>
     <button class="usa-menu-btn">Menu</button>
   </div>
-  <nav
-    aria-label="Primary navigation"
-    class="usa-nav site-nav sticky"
-  >
-    <div class="usa-nav__inner site-nav__inner">
-      <button class="usa-nav__close">
-        <img src="{{ site.baseurl }}/assets/img/usa-icons/close.svg" role="img" alt="Close">
-      </button>
-      <!-- Mobile nav -->
-      <ul class="usa-nav__primary usa-nav__primary--mobile usa-accordion">
-        {% include nav/sections.html sections=site.data.nav.mobile %}
-      </ul>
-      <!-- /Mobile nav -->
-      <!-- Desktop nav -->
-      <ul class="usa-nav__primary usa-nav__primary--desktop">
-        {%
-          include nav/list.html
-          links=site.data.nav.primary
-          rel='contains'
-          flat=true
-          primary=true
-          %}
-        </ul>
-      <!-- /Desktop nav -->
-      <div class="usa-nav__secondary">
-        {% include site-search.html %}
-        {% include download-buttons.html %}
-      </div>
-    </div>
-  </nav>
 </header>
+<nav
+aria-label="Primary navigation"
+class="usa-nav site-nav sticky"
+>
+<div class="usa-nav__inner site-nav__inner">
+  <button class="usa-nav__close">
+    <img src="{{ site.baseurl }}/assets/img/usa-icons/close.svg" role="img" alt="Close">
+  </button>
+  <!-- Mobile nav -->
+  <ul class="usa-nav__primary usa-nav__primary--mobile usa-accordion">
+    {% include nav/sections.html sections=site.data.nav.mobile %}
+  </ul>
+  <!-- /Mobile nav -->
+  <!-- Desktop nav -->
+  <ul class="usa-nav__primary usa-nav__primary--desktop">
+    {%
+      include nav/list.html
+      links=site.data.nav.primary
+      rel='contains'
+      flat=true
+      primary=true
+      %}
+    </ul>
+  <!-- /Desktop nav -->
+  <div class="usa-nav__secondary">
+    {% include site-search.html %}
+    {% include download-buttons.html %}
+  </div>
+</div>
+</nav>
 <div class="usa-overlay"></div>

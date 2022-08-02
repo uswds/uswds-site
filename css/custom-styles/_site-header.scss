@@ -111,6 +111,7 @@ $site-secondary-nav-input-height: 38px;
   padding-left: units(2);
 
   @include at-media("desktop") {
+    float: none;
     height: units($height-nav-secondary);
     z-index: z-index($z-nav-secondary);
   }
@@ -244,7 +245,7 @@ $site-secondary-nav-input-height: 38px;
 }
 
 // Read website standards, Download, Github buttons
-.site-header .buttons {
+.site-cta-buttons {
   display: flex;
   flex-direction: column;
   row-gap: units(1);

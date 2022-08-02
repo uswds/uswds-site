@@ -65,12 +65,12 @@ A text input field with validation and robust error messaging to guide users in 
 ## Ingredients
 
 <div class="usa-card-group flex-row margin-top-2">
-  <li
+  <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   aria-atomic="true"
   role="region"
-  aria-label="Text input"
-  data-meta="Text input">
+  aria-label="Visit text input component"
+  data-meta="Visit text input component">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg">Text input</h3>
@@ -80,7 +80,7 @@ A text input field with validation and robust error messaging to guide users in 
         <a href="{{ site.baseurl }}/components/text-input/">Visit Text input</a>
       </div>
     </div>
-  </li>
+  </div>
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
@@ -101,8 +101,8 @@ A text input field with validation and robust error messaging to guide users in 
 
 ## Related
 
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number">Phone number</a> pattern
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number">Social Security Number</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number/">Phone number</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number/">Social Security Number</a> pattern
 
 ## References
 - Mobile form usability: avoid splitting single input entities. (February 12, 2013) Retrieved on July 20, 2022, from [https://baymard.com/blog/mobile-form-usability-single-input-fields](https://baymard.com/blog/mobile-form-usability-single-input-fields)

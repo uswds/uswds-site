@@ -65,8 +65,8 @@ Label Pronouns field:
 
 ## Ingredients
 
-<ul class="usa-card-group flex-row margin-top-2">
-    <li
+<div class="usa-card-group flex-row margin-top-2">
+    <div
     class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
     role="region"
     aria-atomic="true"
@@ -81,8 +81,8 @@ Label Pronouns field:
             <a href="{{ site.baseurl }}/components/text-input/">Visit Text input</a>
         </div>
         </div>
-    </li>
-</ul>
+    </div>
+</div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>

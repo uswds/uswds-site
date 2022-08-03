@@ -53,7 +53,7 @@ section_three_buckets:
     </h2>
   </div>
   <p class="font-sans-2xl text-bold">Why this matters?</p>
-  <img class="width-desktop" src="{{ page.main_graphic }}">
+  <img class="width-desktop" src="{{ site.baseurl }}{{ page.main_graphic }}">
 </section>
 
 <!-- section one -->
@@ -62,7 +62,7 @@ section_three_buckets:
     {{ page.section_one.main_heading }}
   </h2>
   <div class="display-flex flex-row flex-justify-center margin-bottom-4">
-    <img class="width-9" src="{{ page.section_one.icon }}">
+    <img class="width-9" src="{{ site.baseurl }}{{ page.section_one.icon }}">
   </div>  
   <div class="grid-container">
     <div class="grid-row grid-gap-2">
@@ -90,7 +90,7 @@ section_three_buckets:
     {{ page.section_two.main_heading }}
   </h2>
   <div class="display-flex flex-row flex-justify-center margin-bottom-4">
-    <img class="width-9" src="{{ page.section_two.icon }}">
+    <img class="width-9" src="{{ site.baseurl }}{{ page.section_two.icon }}">
   </div>  
   <div class="grid-container">
     <div class="grid-row grid-gap-2">
@@ -118,7 +118,7 @@ section_three_buckets:
     {{ page.section_three.main_heading }}
   </h2>
   <div class="display-flex flex-row flex-justify-center margin-bottom-4">
-    <img class="width-9" src="{{ page.section_three.icon }}">
+    <img class="width-9" src="{{ site.baseurl }}{{ page.section_three.icon }}">
   </div>  
   <div class="grid-container">
     <div class="grid-row grid-gap-2">

@@ -6,7 +6,7 @@ description:
 meta:
   og:image: /img/next/og-next-report.png
 
-permalink: /together/preferred-language
+permalink: /together/preferred-language/
 slug: preferred-language
 
 subhead: Lorem ipsum dolor sit amet consectetur adipiscing elit

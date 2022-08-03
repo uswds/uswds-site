@@ -5,7 +5,7 @@ nav_title: Forms
 description: 
 meta:
   og:image: /img/next/og-next-report.png
-permalink: /together/forms
+permalink: /together/forms/
 slug: forms
 subhead: Lorem ipsum dolor sit amet consectetur adipiscing elit
 help_detail: Complete a complex form

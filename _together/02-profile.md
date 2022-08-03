@@ -5,11 +5,13 @@ nav_title: Profile
 description:
 meta:
   og:image: /img/next/og-next-report.png
+
 permalink: /together/profile
 slug: profile
 subhead: Lorem ipsum dolor sit amet consectetur adipiscing elit
 help_detail: Successfully provide profile information
 main_graphic: /img/together/together-info.svg
+
 chapter: true
 
 section_one:

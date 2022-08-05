@@ -75,7 +75,7 @@ If the pull request is accepted, we will schedule the issue and merge the pull r
 
 ### Want to propose something else?
 
-If you’d like to contribute something else that doesn’t fall into any of the above, we’d still love to hear about it. Just [create an issue](https://github.com/uswds/uswds/issues/new?assignees=&labels=type%3A+feature+request&template=feature_request.md&title=) or a [discussion](https://github.com/uswds/uswds/discussions), and we can talk about it.
+If you’d like to contribute something else that doesn’t fall into any of the above, we’d still love to hear about it. Just [create an issue](https://github.com/uswds/uswds/issues/new/choose) or a [discussion](https://github.com/uswds/uswds/discussions), and we can talk about it.
 
 ## How we prioritize
 

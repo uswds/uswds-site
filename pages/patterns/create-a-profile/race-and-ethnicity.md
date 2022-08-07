@@ -10,7 +10,7 @@ lead: The race and ethnicity pattern allows users to provide race and ethnicity 
 
 While there isn’t a generally accepted definition for race, the Census Bureau describes the [race categories included in census questionnaires](https://www.census.gov/topics/population/race/about.html#:~:text=the%20spaces%20provided.-,what%20is%20race%3F,-The%20data%20on) as reflecting “a social definition…not an attempt to define race biologically, anthropologically, or genetically.” 
 
-The Office of Management and Budget (OMB) requires that five minimum categories of race and ethnicity are tracked when the data will be used for statistical, administrative, or compliance purposes: White, Black or African American, American Indian or Alaska Native, Asian, and Native Hawaiian or Other Pacific Islander. (For definitions, see [Revisions to the Standards for the Classification of Federal Data on Race and Ethnicity](https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf)).
+The Office of Management and Budget (OMB) requires that five minimum categories of race and ethnicity are tracked when the data will be used for statistical, administrative, or compliance purposes: White, Black or African American, American Indian or Alaska Native, Asian, and Native Hawaiian or Other Pacific Islander. (For definitions, see [Revisions to the Standards for the Classification of Federal Data on Race and Ethnicity](https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf).
 
 OMB requires only two categories for data on ethnicity: Hispanic or Latino, and Not Hispanic or Latino.
 
@@ -38,7 +38,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
             <li>Do allow users to select more than one race and ethnicity.</li>
             <li>Do allow an open-ended text entry field when ethnicity information is requested and use hint text to communicate that more than one ethnicity can be provided.</li>
             <li>Do include the ability to opt out of providing this information.</li>
-            <li>Do consider gender-neutral options when listing ethnicities. As an example, Latino encompasses both Hispanic and Latin-American ethnicities but has an implied masculine gender. Consider using `Hispanic` or `Latin American` choices instead. As gender-neutral options like `Latinx` grow in use and adoption, this recommendation will likely change.</li>
+            <li>Do consider gender-neutral options when listing ethnicities. As an example, Latino encompasses both Hispanic and Latin-American ethnicities but has an implied masculine gender. Consider using <code>Hispanic</code> or <code>Latin American</code> choices instead. As gender-neutral options like <code>Latinx</code> grow in use and adoption, this recommendation will likely change.</li>
             <li>Do consider whether the information you are collecting is best collected via <a href="https://www.federalregister.gov/d/2016-23672/p-18">separate questions vs. a combined race/ethnicity question.</a></li>
           </ul> 
         </div>

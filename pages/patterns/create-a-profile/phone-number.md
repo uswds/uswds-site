@@ -101,20 +101,20 @@ See [usability guidance for radio buttons](https://designsystem.digital.gov/comp
       </div>
     </div>
   </div>
-</div>
-<div
-class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
-role="region"
-aria-atomic="true"
-aria-label="Visit radio button component"
-data-meta="Visit Toggle">
-  <div class="usa-card__container">
-    <header class="usa-card__header">
-      <h3 class="usa-card__heading font-lang-lg">Radio button</h3>
-    </header>
-    <div class="usa-card__body font-lang-sm">
-      <p>Radio buttons allow users to select exactly one choice from a group.</p>
-      <a href="{{ site.baseurl }}/components/radio-buttons/">Visit Radio buttons</a>
+  <div
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit radio button component"
+  data-meta="Visit Toggle">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg">Radio button</h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>Radio buttons allow users to select exactly one choice from a group.</p>
+        <a href="{{ site.baseurl }}/components/radio-buttons/">Visit Radio buttons</a>
+      </div>
     </div>
   </div>
 </div>  

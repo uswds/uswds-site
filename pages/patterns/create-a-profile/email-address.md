@@ -142,4 +142,6 @@ See [usability guidance for radio buttons](https://designsystem.digital.gov/comp
 
 
 ## Changelog
+- Updated based on product owner feedback August 4, 2022
+- Updated based on community feedback July 20, 2022
 - Created July 7, 2022

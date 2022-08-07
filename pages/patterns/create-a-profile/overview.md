@@ -13,7 +13,7 @@ subnav:
   - href: /patterns/create-a-profile/name/
   - href: /patterns/create-a-profile/phone-number/
   - href: /patterns/create-a-profile/pronouns/
-  - href: /patterns/create-a-profile/race-or-ethnicity/
+  - href: /patterns/create-a-profile/race-and-ethnicity/
   - href: /patterns/create-a-profile/social-security-number/
 ---
 ## Why this matters

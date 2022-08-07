@@ -80,7 +80,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
 <strong>If you’re collecting race and ethnicity information.</strong> Strongly consider using checkboxes for race combined with an open-ended text input for ethnicity self-identification. Do allow users to select all races that apply, and multiple ethnicities, with clear hint text, e.g., 
 Select all that apply" and "You may report more than one ethnicity".
 
-Do allow users to opt out of providing race and ethnicity information with a "Prefer not to say" option.
+<strong>Do allow users to opt out of providing race and ethnicity information</strong> with a "Prefer not to answer" option.
 
 <strong>OMB’s minimum categories for race:</strong>
 - American Indian or Alaska Native
@@ -99,7 +99,7 @@ Do allow users to opt out of providing race and ethnicity information with a "Pr
 - Native Hawaiian or other Pacific Islander
 - White
 - Some other race or ethnicity
-- Prefer not to say
+- Prefer not to answer
 
 ## Accessibility
 

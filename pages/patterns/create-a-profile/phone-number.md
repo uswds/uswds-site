@@ -150,5 +150,6 @@ data-meta="Visit Toggle">
 
 
 ## Changelog
-- Updated August 3, 2022 based on community feedback
+- Updated based on product owner feedback August 4, 2022
+- Updated based on community feedback July 20, 2022
 - Created July 7, 2022

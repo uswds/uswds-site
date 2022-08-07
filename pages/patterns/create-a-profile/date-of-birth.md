@@ -101,7 +101,6 @@ Mobile device users in particular may benefit from being able to type a year rat
     </div>
   </div>
 </div>
-<div class="usa-card-group flex-row margin-top-2">
   <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
@@ -119,8 +118,6 @@ Mobile device users in particular may benefit from being able to type a year rat
     </div>
   </div>
 </div>
-
-
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>

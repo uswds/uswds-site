@@ -90,7 +90,7 @@ Select all that apply" and "You may report more than one ethnicity".
 - White
 - A race or ethnicity not listed here
 
-<strong>Expanded categories testing in the 2020 Census:</strong>
+<strong>Expanded categories tested in the 2020 Census:</strong>
 - American Indian or Alaska Native
 - Asian
 - Black or African American

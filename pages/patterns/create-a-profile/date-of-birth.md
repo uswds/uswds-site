@@ -101,6 +101,26 @@ Mobile device users in particular may benefit from being able to type a year rat
     </div>
   </div>
 </div>
+<div class="usa-card-group flex-row margin-top-2">
+  <div
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit select component"
+  data-meta="Visit select component">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg">Select input</h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>A select component allows users to choose one option from a temporary modal menu.</p>
+        <a href="{{ site.baseurl }}/components/select/">Visit Select</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>

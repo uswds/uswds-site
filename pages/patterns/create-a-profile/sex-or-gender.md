@@ -34,9 +34,9 @@ Present the user with a controlled vocabulary to accurately depict their biologi
         <div class="do-dont__content">
           <ul>
             <li>Do determine if you need to collect biological sex and only use if the information is essential to the user's experience.</li>
-            <li>Do only provide biological options when asking for biological sex (`male`, `female`, and `X`). The U.S. Department of State has begun including <a href="https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/">X as an option for sex identification</a> to indicate `Unspecified or another gender identity`, including non-binary, intersex, and gender non-conforming individuals.</li>
+            <li>Do only provide biological options when asking for biological sex (<code>male</code>, <code>female</code>, and <code>X</code>). The U.S. Department of State has begun including <a href="https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/">X as an option for sex identification</a> to indicate <code>Unspecified or another gender identity</code>, including non-binary, intersex, and gender non-conforming individuals.</li>
             <li>Do be clear about why you are asking for the information.</li>
-            <li>Do be transparent about what you are asking for. To some people gender and biological sexare synonymous, so ensure you use clear language.</li>
+            <li>Do be transparent about what you are asking for. To some people gender and biological sex are synonymous, so ensure you use clear language.</li>
           </ul> 
         </div>
       </div>
@@ -48,7 +48,7 @@ Present the user with a controlled vocabulary to accurately depict their biologi
       <div class="do-dont__content">
           <ul>
             <li>Do not assume gender identity based on the user's biological sex.</li>
-            <li>Do not include `prefer not to answer`. If you are considering adding this option, then consider whether the question is needed at all.</li>
+            <li>Do not include <code>prefer not to answer</code>. If you are considering adding this option, then consider whether the question is needed at all.</li>
             <li>Do not combine gender identity and biological sex into a single field.</li>
           </ul>
       </div>

@@ -10,7 +10,7 @@ lead: The race and ethnicity pattern allows users to provide race and ethnicity 
 
 While there isn’t a generally accepted definition for race, the Census Bureau describes the [race categories included in census questionnaires](https://www.census.gov/topics/population/race/about.html#:~:text=the%20spaces%20provided.-,what%20is%20race%3F,-The%20data%20on) as reflecting “a social definition…not an attempt to define race biologically, anthropologically, or genetically.” 
 
-The Office of Management and Budget (OMB) requires that five minimum categories of race and ethnicity are tracked when the data will be used for statistical, administrative, or compliance purposes: White, Black or African American, American Indian or Alaska Native, Asian, and Native Hawaiian or Other Pacific Islander. (For definitions, see [Revisions to the Standards for the Classification of Federal Data on Race and Ethnicity](https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf).
+The Office of Management and Budget (OMB) requires that five minimum categories of race and ethnicity are tracked when the data will be used for statistical, administrative, or compliance purposes: White, Black or African American, American Indian or Alaska Native, Asian, and Native Hawaiian or Other Pacific Islander.
 
 OMB requires only two categories for data on ethnicity: Hispanic or Latino, and Not Hispanic or Latino.
 
@@ -99,10 +99,10 @@ Label for opt out of providing requested information:
 
 Race checkbox items (OMB’s minimum categories):
 Which of the following best describes you? (Select all that apply)
+- American Indian or Alaska Native
 - Asian or Pacific Islander
 - Black or African American
 - Hispanic or Latinx
-- Native American or Alaska Native
 - White
 - A race or ethnicity not listed here
 - Prefer not to say

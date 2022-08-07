@@ -55,13 +55,11 @@ Provide a text entry field that supports a rich array of special characters and 
 ### Whether you need this data
 <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
 
-<strong>If you don't need a controlled vocabulary.</strong> Consider allowing for user-provided pronouns with an open-ended text field. Users should also have the ability to opt out of providing this information.
+<strong>If you don't need a controlled vocabulary.</strong> Strongly consider allowing for user-provided pronouns with an open-ended text field. Users should also have the ability to opt out of providing this information.
 
 ## Usability Guidance
 
-Label Pronouns field:
-- Pronouns (hint text: he, she, they, ze)
-[ ] Prefer not to answer
+<strong>Provide clear hint text.</strong> Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, e.g., "For example, he, she, they, ze). Do allow users the opt out with a "Prefer not to answer" option.
 
 ## Accessibility
 

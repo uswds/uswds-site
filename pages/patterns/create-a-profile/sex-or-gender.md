@@ -65,11 +65,6 @@ Present the user with a controlled vocabulary to accurately depict their biologi
 
 ## Usability Guidance
 
-Biological sex selection fields:
-- Male
-- Female
-- X
-
 See [usability guidance for radio buttons](https://designsystem.digital.gov/components/radio-buttons/#usability-guidance-radio-buttons). 
 
 ## Accessibility
@@ -170,11 +165,7 @@ Present the user with the tools to accurately depict their gender identity.
 
 ## Usability Guidance
 
-Label Gender field:
-- Gender identity: (for example man, woman, non-binary)
-
-Checkbox
-- Prefer not to answer
+<strong>Provide clear hint text.</strong> Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, e.g., "For example, man, woman, non-binary). Do allow users the opt out with a "Prefer not to answer" option.
 
 See [usability guidance for checkboxes](https://designsystem.digital.gov/components/checkbox/#usability-guidance-checkbox).
 

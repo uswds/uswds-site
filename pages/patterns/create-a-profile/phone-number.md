@@ -76,7 +76,7 @@ See [usability guidance for radio buttons](https://designsystem.digital.gov/comp
 
 <strong>Use fieldset and legend.</strong> Group related radio buttons together with <code><fieldset></code> and describe the group with <code><legend></code>.
 
-<strong>Use proper labels and attributes.</strong> Each radio button should have a `<label>`. Associate the two by matching the <code><label></code>’s for attribute to the `<input>`’s id attribute.
+<strong>Use proper labels and attributes.</strong> Each radio button should have a `<label>`. Associate the two by matching the `<label>`s for attribute to the `<input>`'s id attribute.
 
 
 <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).

@@ -13,7 +13,7 @@ A name or biological sex are not indicative of the pronouns a person uses. Allow
 Follow this pattern when you are planning on referring to the person using pronouns instead of their name.
 
 ## What's the solution
-Provide a text entry field that supports a rich array of special characters and accents that allows the user to inform you of their pronouns. If you plan to use this pattern for any automated communications you may need to consider a different approach. 
+Provide a text entry field that supports a rich array of special characters and accents that allows the user to inform you of their pronouns. This pattern best supports verbal communication. This pattern is not appropriate for automated communication.
 
 ## Guidance
 
@@ -29,6 +29,7 @@ Provide a text entry field that supports a rich array of special characters and 
             <li>Do provide an open text field. Language is evolving and forced choice can make a user feel as though they need to fit themselves into a label determined by the form designer.</li>
             <li>Do support a rich array of diacritics, accents, and alternative characters. Do allow both upper and lowercase letters throughout each field.</li>
             <li>Allow users to enter hyphens, apostrophes, and blank spaces in each field.</li>
+            <li>Do allow both upper and lowercase letters throughout each field.</li>
             <li>Do support long text fields. Allow users to enter up to 128 characters per field, but follow form norms for field display size.</li>
             <li>Do be prepared for a complex answer.</li>
           </ul> 
@@ -42,7 +43,7 @@ Provide a text entry field that supports a rich array of special characters and 
       <div class="do-dont__content">
           <ul>
             <li>Do not make the field mandatory. While the information can be helpful, there are neutral options that can be used.</li>
-            <li>Do not assume pronouns. If a user chooses not to answer, default to the use of they/them.</li>
+            <li>Do not assume pronouns. If a user chooses not to answer, use inclusive language like “they” or “you” instead of “he” or “she.”</li>
             <li>Do not overwhelm the user with options. Default to a text entry field to allow user-provided pronouns.</li>
           </ul>
       </div>
@@ -54,18 +55,40 @@ Provide a text entry field that supports a rich array of special characters and 
 ### Whether you need this data
 <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
 
-<strong>Consider how you will be using this information.</strong> This pattern best supports verbal communication. If you plan on using the information for automated correspondence you may need to consider a different approach.
-
 <strong>If you don't need a controlled vocabulary.</strong> Consider allowing for user-provided pronouns with an open-ended text field. Users should also have the ability to opt out of providing this information.
 
 ## Usability Guidance
 
 Label Pronouns field:
-- Pronouns
+- Pronouns (hint text: he, she, they, ze)
+[ ] Prefer not to answer
+
+## Accessibility
+
+<strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs](https://designsystem.digital.gov/components/text-input/). 
+
+<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
 
 ## Ingredients
 
 <div class="usa-card-group flex-row margin-top-2">
+  <div
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit checkbox component"
+  data-meta="Visit checkbox component">
+      <div class="usa-card__container">
+      <header class="usa-card__header">
+          <h3 class="usa-card__heading font-lang-lg">Checkbox</h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+          <p>Checkboxes allow users to select one or more options from a list.</p>
+          <a href="{{ site.baseurl }}/components/checkbox/">Visit Checkbox</a>
+      </div>
+      </div>
+  </div>
+  <div class="usa-card-group flex-row margin-top-2">
     <div
     class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
     role="region"

@@ -118,7 +118,6 @@ data-meta="Visit Toggle">
     </div>
   </div>
 </div>  
-</div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>

@@ -150,10 +150,10 @@ qualifying for and receiving support and services from the government. It can al
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/race-or-ethnicity/">Provide their <strong>race or ethnicity</strong></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/race-and-ethnicity/">Provide their <strong>race and ethnicity</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Help users to enter their race or ethnicity: allow users to provide the race and ethnicity that reflects their lived experience.</p>
+        <p>Help users to enter their race and ethnicity: allow users to provide the race and ethnicity that reflects their lived experience.</p>
       </div>
     </div>
   </div>

@@ -82,7 +82,7 @@ Label multiple name fields:
 - Last or family name
 
 Label preferred way to be addressed:
-- I prefer to be addressed as (For example: Darren Vu or Dr. Sumnar)
+- I prefer to be addressed as (For example: Dr. Martinez or Sara Schupska)
 
 ## Ingredients
 

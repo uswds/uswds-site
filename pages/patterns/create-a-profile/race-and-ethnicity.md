@@ -99,25 +99,25 @@ Label for opt out of providing requested information:
 
 Race checkbox items (OMB’s minimum categories):
 Which of the following best describes you? (Select all that apply)
-Asian or Pacific Islander
-Black or African American
-Hispanic or Latinx
-Native American or Alaska Native
-White
-A race or ethnicity not listed here
-Prefer not to say
+- Asian or Pacific Islander
+- Black or African American
+- Hispanic or Latinx
+- Native American or Alaska Native
+- White
+- A race or ethnicity not listed here
+- Prefer not to say
 
 Race checkbox items (These are the expanded categories tested in the 2020 US Census):
 Which of the following best describes you? (Select all that apply)
-American Indian or Alaska Native
-Asian
-Black or African American
-Hispanic, Latinx, or Spanish
-Middle Eastern or North African
-Native Hawaiian or other Pacific Islander
-White
-Some other race or ethnicity
-Prefer not to say
+- American Indian or Alaska Native
+- Asian
+- Black or African American
+- Hispanic, Latinx, or Spanish
+- Middle Eastern or North African
+- Native Hawaiian or other Pacific Islander
+- White
+- Some other race or ethnicity
+- Prefer not to say
 
 ## Accessibility
 

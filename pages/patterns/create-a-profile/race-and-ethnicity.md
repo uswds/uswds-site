@@ -119,6 +119,17 @@ White
 Some other race or ethnicity
 Prefer not to say
 
+## Accessibility
+
+<strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs](https://designsystem.digital.gov/components/text-input/). 
+
+<strong>Use a fieldset and legend for a checkbox group.</strong> Surround a related set of checkboxes with a `<fieldset>`. The `<legend>` provides context for the grouping.
+
+<strong>These custom checkboxes are accessible.</strong> The custom checkbox component is accessible to screen readers because the default checkbox is moved off-screen with position: absolute; left: -999em.
+
+<strong>Use a semantic tag.</strong> The checkbox should have a semantic tag for the id attribute, and its corresponding label should have the same value in its for attribute.
+
+<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
 
 ## Ingredients
 

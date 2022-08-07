@@ -75,40 +75,22 @@ Allow selection of more than one race and acknowledge people with multiple racia
 
 ## Usability Guidance
 
-<strong>If you're only collecting information on race:</strong>
+<strong>If you're only collecting information on race.</strong> Do allow users to select all races that apply with clear hint text, e.g., "Select all that apply".
 
-Label for Race field:
-- Race (Select all that apply)
+<strong>If you’re collecting race and ethnicity information.</strong> Strongly consider using checkboxes for race combined with an open-ended text input for ethnicity self-identification. Do allow users to select all races that apply, and multiple ethnicities, with clear hint text, e.g., 
+Select all that apply" and "You may report more than one ethnicity".
 
-<strong>If you’re collecting combined race and ethnicity information, consider using checkboxes for race (either the minimum list or an expanded list), combined with open-ended text input for ethnicity:</strong>
+Do allow users to opt out of providing race and ethnicity information with a "Prefer not to say" option.
 
-Label for combined Race checkbox and open-ended ethnicity self-identification text input field:
-- I identify my race and ethnicity as
-
-[ ] checkboxes 
-
-Select all that apply
-
-(see potential checkbox items list below)
-
-Please describe your ethnicity (You may report more than one ethnicity):
-[ Text Input ]
-
-Label for opt out of providing requested information:
-- Prefer not to say
-
-Race checkbox items (OMB’s minimum categories):
-Which of the following best describes you? (Select all that apply)
+<strong>OMB’s minimum categories for race:</strong>
 - American Indian or Alaska Native
 - Asian or Pacific Islander
 - Black or African American
 - Hispanic or Latinx
 - White
 - A race or ethnicity not listed here
-- Prefer not to say
 
-Race checkbox items (These are the expanded categories tested in the 2020 US Census):
-Which of the following best describes you? (Select all that apply)
+<strong>Expanded categories testing in the 2020 Census:</strong>
 - American Indian or Alaska Native
 - Asian
 - Black or African American

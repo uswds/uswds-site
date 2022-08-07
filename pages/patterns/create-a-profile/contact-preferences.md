@@ -10,7 +10,7 @@ lead: The contact preferences design pattern allows users to easily indicate how
 Effectively reaching the user is critical to good communication and building trust. Users have different preferred methods of communication, which become especially important during times of stress, disaster, or emergency response.
 
 ## When to use this pattern 
-Use this pattern only if you can support different contact methods and are collecting different contact information from the user. 
+Use this pattern when collecting contact preference information from the user. Contact preferences options should only be offered if you can support the listed contact methods.
 
 ## When to consider something else
 If you do not have the current capability of contacting the user via multiple channels of communication, do not ask the user for their communication preferences. Allowing a user to select a preferred communication option that is not operational risks communication gaps and can destroy a user's trust in a program or service.
@@ -27,9 +27,10 @@ Allow the user to select from available options, and to include a brief message 
       <h3 class="do-dont__heading">What to do</h3>
         <div class="do-dont__content">
           <ul>
-            <li>Do offer options for how to be contacted, if possible, since some users may not have a permanent physical or mailing address, due to displacement, infrastructure problems following a disaster, homelessness, or other reasons.</li>
-            <li>Do only collect contact preference information if you need it and can deliver on the promise to the user that you will contact them via their preferred communications channel.</li>
-            <li>Do explain under what conditions you will reach out to the user and what the anticipated timeline will be, if possible.</li>
+            <li>Offer options for how to be contacted, if possible, since some users may not have a permanent physical or mailing address, due to displacement, infrastructure problems following a disaster, homelessness, or other reasons.</li>
+            <li>Only collect contact preference information if you need it and can deliver on the promise to the user that you will contact them via their preferred communications channel.</li>
+            <li>Explain under what conditions you will reach out to the user and what the anticipated timeline will be, if possible.</li>
+            <li>Do consider the safety implications of users who share their phone, voicemail, or email with other members of their household. Consider asking for permission to leave potentially sensitive messages.</li>
           </ul> 
         </div>
       </div>
@@ -42,6 +43,7 @@ Allow the user to select from available options, and to include a brief message 
           <ul>
             <li>Do not provide the user with preference options for a communication channel you don’t currently support. If you cannot SMS message a user, for example, don’t provide that as a preference option.</li>
             <li>Do not ask for preferred means of communication if you will not be communicating with the user.</li>
+            <li>Do not assume that communication channels are private unless explicitly stated through permission-based settings or in the message itself.</li>
             <li>Do not make answering this question required for form completion.</li>
           </ul>
       </div>
@@ -53,7 +55,17 @@ Allow the user to select from available options, and to include a brief message 
 ### Multimodal communication
 <strong>Consider multiple means of communication for critical messaging.</strong> While prioritizing the user’s preferred communication method (e.g., text message), do follow up with alternate methods (e.g., email) to improve the likelihood of the user seeing your communication.
 
+<strong>User needs.</strong> Strongly consider allowing users to specify any accessibility or language accommodations they require, such as needing an ASL interpreter, preferring braille formatted mailed communications, or preferring audio communication when available.
+
+## Usability guidance
+
+See [usability guidance for radio buttons](https://designsystem.digital.gov/components/radio-buttons/#usability-guidance-radio-buttons). 
+
+
 ## Accessibility 
+
+<strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="https://designsystem.digital.gov/components/text-input/">guidelines for all text inputs</a>. 
+
 <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
 
 
@@ -118,10 +130,12 @@ Allow the user to select from available options, and to include a brief message 
 - <a href="{{ site.baseurl }}/templates/form-templates/address-form/">Address form</a> template
 
 ## References
-- Seamlessness in the omnichannel user experience. (March 19, 2017) Retrieved on July 20, 2022, from [https://www.nngroup.com/articles/seamless-cross-channel/](https://www.nngroup.com/articles/seamless-cross-channel/)
 - Explicitly state the difference between options. (November 3, 2013) Retrieved on July 20, 2022, from [https://www.nngroup.com/articles/explicit-differences/](https://www.nngroup.com/articles/explicit-differences/)
+- Seamlessness in the omnichannel user experience. (March 19, 2017) Retrieved on July 20, 2022, from [https://www.nngroup.com/articles/seamless-cross-channel/](https://www.nngroup.com/articles/seamless-cross-channel/)
+
 
 
 ## Changelog
+- Updated based on product owner feedback on August 4, 2022
 - Updated based on community feedback July 21, 2022
 - Created July 7, 2022

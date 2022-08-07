@@ -100,7 +100,6 @@ Mobile device users in particular may benefit from being able to type a year rat
       </div>
     </div>
   </div>
-</div>
   <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"

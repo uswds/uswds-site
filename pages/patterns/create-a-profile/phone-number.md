@@ -72,11 +72,11 @@ See [usability guidance for radio buttons](https://designsystem.digital.gov/comp
 ## Accessibility 
 <strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="https://designsystem.digital.gov/components/text-input/">guidelines for all text inputs</a>. 
 
-<strong>Use “text” instead of “number” inputs.</strong> Research indicates that <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">numeric inputs still carry many usability problems</a>. The way the user enters the data may differ from what the browser expects. Use <code><input type="text" inputmode="numeric" pattern="[0-9]*"></code> to better support mobile users. 
+<strong>Use “text” instead of “number” inputs.</strong> Research indicates that <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">numeric inputs still carry many usability problems</a>. The way the user enters the data may differ from what the browser expects. Use `<input type="text" inputmode="numeric" pattern="[0-9]*">` to better support mobile users. 
 
 <strong>Use fieldset and legend.</strong> Group related radio buttons together with <code><fieldset></code> and describe the group with <code><legend></code>.
 
-<strong>Use proper labels and attributes.</strong> Each radio button should have a <code><label></code>. Associate the two by matching the <code><label></code>’s for attribute to the <code><input></code>’s id attribute.
+<strong>Use proper labels and attributes.</strong> Each radio button should have a `<label>`. Associate the two by matching the <code><label></code>’s for attribute to the `<input>`’s id attribute.
 
 
 <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).

@@ -61,7 +61,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
 
 ## Considerations
 ### Whether you need this data
-<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user's privacy and safety.
+<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
 
 ### What to use
 <strong>If you don't need a controlled vocabulary.</strong> If you don't need to restrict the list of races and ethnicities to a specified data collection requirement, consider allowing for user self-identification with an open-ended text field. Users should also have the ability to opt out of providing this information.

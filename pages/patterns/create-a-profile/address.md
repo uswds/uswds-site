@@ -125,7 +125,6 @@ Provide all the fields needed for a user to provide a physical address, even les
       </div>
     </div>
   </div>
-</div>
   <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
@@ -270,7 +269,6 @@ Provide all the fields a user needs to successfully enter a mailing address.
       </div>
     </div>
   </div>
-</div>
   <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"

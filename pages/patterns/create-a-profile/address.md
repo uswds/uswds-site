@@ -59,7 +59,7 @@ Provide all the fields needed for a user to provide a physical address, even les
 
 ## Considerations
 ### Whether you need this data
-<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
+<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
 
 <strong>People without fixed addresses.</strong> Some people do not have fixed addresses. Consider providing other options for reaching them.
 
@@ -210,7 +210,7 @@ Provide all the fields a user needs to successfully enter a mailing address.
 
 ## Considerations
 ### Whether you need this data
-<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
+<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
 
 <strong>People without fixed addresses.</strong> Some people do not have fixed addresses. Consider providing other options for them to be reached.
 

@@ -24,6 +24,8 @@ subnav:
 - text: 6. Optimize your installation
   href: '#6-optimize-your-installation'
 ---
+{: .site-note }
+**Note:** This guide provides instructions for upgrading from USWDS 2 to USWDS 3. If your project uses USWDS 1, you will need to update according to the [USWDS 2.0 migration guide]({{ site.baseurl }}/documentation/migration-v2) before proceeding with these steps.
 
 ## Why migrate to USWDS 3.0?
 

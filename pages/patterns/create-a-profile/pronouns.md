@@ -53,7 +53,7 @@ Provide a text entry field that supports a rich array of special characters and 
 
 ## Considerations
 ### Whether you need this data
-<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
+<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
 
 <strong>If you don't need a controlled vocabulary.</strong> Strongly consider allowing for user-provided pronouns with an open-ended text field. Users should also have the ability to opt out of providing this information.
 

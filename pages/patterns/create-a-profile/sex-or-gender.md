@@ -58,7 +58,7 @@ Present the user with a controlled vocabulary to accurately depict their biologi
 
 ## Considerations
 ### Whether you need this data
-<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
+<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
 
 ### What to use 
 <strong>If biological sex information is used for identity validation.</strong> Be specific about the information you are requesting. Clearly state the context, e.g., "Please enter your biological sex as it appears on your birth certificate." so that users can successfully provide the information required. Gender and biological sex are often used synonymously and users have difficulty determining which information is being requested.
@@ -69,7 +69,7 @@ See [usability guidance for radio buttons](https://designsystem.digital.gov/comp
 
 ## Accessibility
 
-<strong>Use fieldset and legend.</strong> Group related radio buttons together with <fieldset> and describe the group with <legend>.
+<strong>Use fieldset and legend.</strong> Group related radio buttons together with `<fieldset>` and describe the group with `<legend>`.
 
 <strong>Use proper labels and attributes.</strong> Each radio button should have a `<label>`. Associate the two by matching the `<label>`’s for attribute to the `<input>`’s id attribute.
 
@@ -158,7 +158,7 @@ Present the user with the tools to accurately depict their gender identity.
 
 ## Considerations
 ### Whether you need this data
-<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
+<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
 
 ### What to use 
 <strong>Avoid using a controlled vocabulary.</strong> If you don’t need to enforce a controlled vocabulary of gender options, strongly consider letting the user self-identify using a single text field.
@@ -173,7 +173,7 @@ See [usability guidance for checkboxes](https://designsystem.digital.gov/compone
 
 <strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs](https://designsystem.digital.gov/components/text-input/). 
 
-<strong>Do not use a fieldset and legend for a single checkbox.</strong> Only groups of related checkboxes should be contained withing a <fieldset> and <legend>.
+<strong>Do not use a fieldset and legend for a single checkbox.</strong> Only groups of related checkboxes should be contained within a `<fieldset>` and `<legend>`.
 
 <strong>These custom checkboxes are accessible.</strong> The custom checkbox component is accessible to screen readers because the default checkbox is moved off-screen with position: absolute; left: -999em.
 

@@ -111,7 +111,7 @@ Provide a single text field to enter the Social Security Number.
 
 ## Related
 
-- <a href="{{ site.baseurl }}/components/input-mask">Input masking</a> component
+<!-- - <a href="{{ site.baseurl }}/components/input-mask">Input masking</a> component -->
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/email-address/">Email address</a> pattern
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number/">Phone number</a> pattern
 

@@ -305,11 +305,9 @@ Provide all the fields a user needs to successfully enter a mailing address.
   </div>
 </div>
 
-## Related patterns
-- <a href="/patterns/create-a-profile/name/">Name</a>
-
-## Related templates
-- <a href="https://designsystem.digital.gov/templates/form-templates/address-form/">Address form template</a>
+## Related
+- <a href="/patterns/create-a-profile/name/">Name</a> pattern
+- <a href="https://designsystem.digital.gov/templates/form-templates/address-form/">Address form</a> template
 
 ## References
 - Google Plus Codes. (n.d.) Retrieved July 15, 2022, from [https://maps.google.com/pluscodes/](https://maps.google.com/pluscodes/)

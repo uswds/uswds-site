@@ -103,6 +103,7 @@ Provide a text entry field that supports a rich array of special characters and 
         </div>
         </div>
     </div>
+  </div>
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">

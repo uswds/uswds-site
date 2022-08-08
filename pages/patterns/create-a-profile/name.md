@@ -56,7 +56,7 @@ Provide multiple text entry fields that support a rich array of special characte
 
 ## Considerations
 ### Whether you need this data
-<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. For example, if you aren’t validating identity, you might not need to collect someone’s name, since a username will meet the need for account login.
+<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. For example, if you aren’t validating identity, you might not need to collect someone’s name, since a username will meet the need for account login.
 
 <strong>Consider what name information you need.</strong> If you don’t need to parse out the separate pieces of a person’s name, consider letting the user enter it into a single `full name` text field. 
 
@@ -72,17 +72,15 @@ If you won’t be addressing correspondence, avoid asking for the user’s title
 
 <strong>If you are collecting information on a family.</strong> Do not assume that partners or dependents of the person completing the form will have the same family name. In many cultures, children have a variation of their parent’s family name and children in blended families may not share a last name with their parents.
 
-<strong>If you will be displaying the names in a list.</strong> Consider that some cultures expect names to be sorted by personal name, not surname.
+<strong>If you will be displaying the names in a list.</strong> Consider that some cultures expect names to be sorted by given name, not family name.
 
 ## Usability Guidance
+<strong>Label each field.</strong> Be sure each field is properly labeled. 
 
-Label multiple name fields: 
-- First or given name
-- Middle name
-- Last or family name
+## Accessibility 
+<strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="https://designsystem.digital.gov/components/text-input/">guidelines for all text inputs</a>. 
 
-Label preferred way to be addressed:
-- I prefer to be addressed as (For example: Dr. Martinez or Sara Schupska)
+<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
 
 ## Ingredients
 

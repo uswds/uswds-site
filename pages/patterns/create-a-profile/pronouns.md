@@ -84,24 +84,22 @@ Provide a text entry field that supports a rich array of special characters and 
           <p>Checkboxes allow users to select one or more options from a list.</p>
           <a href="{{ site.baseurl }}/components/checkbox/">Visit Checkbox</a>
       </div>
-      </div>
+    </div>
   </div>
-  <div class="usa-card-group flex-row margin-top-2">
-    <div
-    class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
-    role="region"
-    aria-atomic="true"
-    aria-label="Visit text input component"
-    data-meta="Visit text input component">
-        <div class="usa-card__container">
-        <header class="usa-card__header">
-            <h3 class="usa-card__heading font-lang-lg">Text input</h3>
-        </header>
-        <div class="usa-card__body font-lang-sm">
-            <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
-            <a href="{{ site.baseurl }}/components/text-input/">Visit Text input</a>
-        </div>
-        </div>
+  <div
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit text input component"
+  data-meta="Visit text input component">
+      <div class="usa-card__container">
+      <header class="usa-card__header">
+          <h3 class="usa-card__heading font-lang-lg">Text input</h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+          <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
+          <a href="{{ site.baseurl }}/components/text-input/">Visit Text input</a>
+      </div>
     </div>
   </div>
 </div>

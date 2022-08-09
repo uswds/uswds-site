@@ -1,15 +1,17 @@
+<h3 class="site-preview-heading">Multiple select</h3>
 <form class="usa-form usa-form--large">
-    <fieldset class="usa-fieldset">
+    <fieldset class="usa-fieldset" aria-multiselectable="true">
         <legend class="usa-legend">Which of the following best describes you?</legend>
+        <div class="usa-hint">Select all that apply for race</div>
         <div class="usa-checkbox">
-            <input class="usa-checkbox__input" id="native-american-or-alaskan-native" type="checkbox"
-                name="native-american-or-alaskan-native" value="native-american-or-alaskan-native" />
-            <label class="usa-checkbox__label" for="native-american-or-alaskan-native">American Indian or Alaska Native</label>
+            <input class="usa-checkbox__input" id="american-indian-or-alaska-native" type="checkbox"
+                name="american-indian-or-alaska-native" value="american-indian-or-alaska-native" />
+            <label class="usa-checkbox__label" for="american-indian-or-alaska-native">American Indian or Alaska Native</label>
         </div>
         <div class="usa-checkbox">
-            <input class="usa-checkbox__input" id="asian-or-pacific-islander" type="checkbox" name="asian-or-pacific-islander"
-                value="asian-or-pacific-islander" />
-            <label class="usa-checkbox__label" for="asian-or-pacific-islander">Asian or Pacific Islander</label>
+            <input class="usa-checkbox__input" id="asian" type="checkbox" name="asian"
+                value="asian" />
+            <label class="usa-checkbox__label" for="asianr">Asian</label>
         </div>
         <div class="usa-checkbox">
             <input class="usa-checkbox__input" id="black-or-african-american" type="checkbox" name="black-or-african-american"
@@ -17,24 +19,29 @@
             <label class="usa-checkbox__label" for="black-or-african-american">Black or African American</label>
         </div>
         <div class="usa-checkbox">
-            <input class="usa-checkbox__input" id="hispanic-or-latinx" type="checkbox" name="hispanic-or-latinx"
+            <input class="usa-checkbox__input" id="hispanic-latinx-or-spanish" type="checkbox" name="hispanic-latinx-or-spanish"
+                value="hispanic-latinx-or-spanish" />
+            <label class="usa-checkbox__label" for="hispanic-latinx-or-spanish">Hispanic, Latinx, or Spanish</label>
+        </div>
+        <div class="usa-checkbox">
+            <input class="usa-checkbox__input" id="middle-eastern-or-north-african" type="checkbox"
+                name="middle-eastern-or-north-african" value="middle-eastern-or-north-african" />
+            <label class="usa-checkbox__label" for="middle-eastern-or-north-african">Middle Eastern or North African</label>
+        </div>
+        <div class="usa-checkbox">
+            <input class="usa-checkbox__input" id="hawaiian-or-pacific-islander" type="checkbox" name="hawaiian-or-pacific-islander"
                 value="hispanic-or-latinx" />
-            <label class="usa-checkbox__label" for="hispanic-or-latinx">Hispanic or Latinx</label>
+            <label class="usa-checkbox__label" for="hawaiian-or-pacific-islander">Native Hawaiian or other Pacific Islander</label>
         </div>
         <div class="usa-checkbox">
-            <input class="usa-checkbox__input" id="white-or-caucasian" type="checkbox" name="white-or-caucasian"
-                value="white-or-caucasian" />
-            <label class="usa-checkbox__label" for="white-or-caucasian">White or Caucasian</label>
+            <input class="usa-checkbox__input" id="white" type="checkbox" name="white"
+                value="white" />
+            <label class="usa-checkbox__label" for="white">White</label>
         </div>
         <div class="usa-checkbox">
-            <input class="usa-checkbox__input" id="multiracial-or-biracial" type="checkbox" name="multiracial-or-biracial"
-                value="multiracial-or-biracial" />
-            <label class="usa-checkbox__label" for="multiracial-or-biracial">Multiracial or Biracial</label>
-        </div>
-        <div class="usa-checkbox">
-            <input class="usa-checkbox__input" id="not-listed-here" type="checkbox" name="not-listed-here"
-                value="not-listed-here" />
-            <label class="usa-checkbox__label" for="not-listed-here">A race/ethnicity not listed here</label>
+            <input class="usa-checkbox__input" id="some-other-race" type="checkbox" name="some-other-race"
+                value="some-other-race" />
+            <label class="usa-checkbox__label" for="some-other-race">Some other race or ethnicity</label>
         </div>
         <div class="usa-checkbox">
             <input class="usa-checkbox__input" id="prefer-not-to-answer" type="checkbox" name="refer-not-to-answer"
@@ -44,11 +51,15 @@
     </fieldset>
 </form>
 
+<h3 class="site-preview-heading">Open-ended self identification</h3>
 <form class="usa-form usa-form--large margin-top-4">
-    <fieldset class="usa-fieldset">
-        <legend class="usa-legend usa-legend--large">Open-ended self identification</legend>
-        <label class="usa-label" for="ethnic-identity">I identify my ethnicity as</label>
-        <input class="usa-input usa-input--xl" id="ethnic-identity" name="ethnic-identity">
-    </fieldset>
+    <label class="usa-label" for="ethnic-identity">I identify my ethnicity as</label>
+    <div class="usa-hint" id="gnHint">You may report more than one ethnicity</div>
+    <input class="usa-input usa-input--xl" id="ethnic-identity" name="ethnic-identity">
+    <div class="usa-checkbox">
+        <input class="usa-checkbox__input" id="prefer-not-to-answer" type="checkbox" name="refer-not-to-answer"
+            value="prefer-not-to-answer" />
+        <label class="usa-checkbox__label" for="prefer-not-to-answer">Prefer not to answer</label>
+    </div>
 </form>
 

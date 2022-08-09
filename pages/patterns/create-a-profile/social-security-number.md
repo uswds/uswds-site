@@ -43,7 +43,7 @@ Provide a single text field to enter the Social Security Number.
       <div class="do-dont__content">
           <ul>
             <li>Do not separate the Social Security Number entry into three separate fields.</li>
-            <li>Do not use placeholder text</li>
+            <li>Do not use placeholder text.</li>
           </ul>
       </div>
     </div>
@@ -117,12 +117,12 @@ Provide a single text field to enter the Social Security Number.
 
 ## References
 - Masked field. (n.d.) Retrieved on July 20, 2022, from [https://design.cms.gov/components/masked-field](https://design.cms.gov/components/masked-field)
-- National Insurance Numbers. (n.d) Retrieved on July 20, 2022, from [https://design-system.service.gov.uk/patterns/national-insurance-numbers/](https://design-system.service.gov.uk/patterns/national-insurance-numbers/)
+- National Insurance Numbers. (n.d.) Retrieved on July 20, 2022, from [https://design-system.service.gov.uk/patterns/national-insurance-numbers/](https://design-system.service.gov.uk/patterns/national-insurance-numbers/)
 - Placeholders in a form field. (May 11, 2014) Retrieved on July 20, 2022, from [https://www.nngroup.com/articles/form-design-placeholders/](https://www.nngroup.com/articles/form-design-placeholders/) 
 - 8 recommendations for creating effective input fields. (n.d.) Retrieved on July 20, 2022, from [https://baymard.com/learn/input-fields](https://baymard.com/learn/input-fields)
 - Mobile form usability: avoid splitting single input entities. (February 12, 2013) Retrieved on July 20, 2022, from [https://baymard.com/blog/mobile-form-usability-single-input-fields](https://baymard.com/blog/mobile-form-usability-single-input-fields)
 - Consider using localized input masks for ‘phone’ and other restricted inputs. (November 28, 2017) Retrieved on July 20, 2022, from [https://baymard.com/blog/input-masking-form-field](https://baymard.com/blog/input-masking-form-field)
-- Social Security is Changing the Way SSNs are Issued. (n.d.) Retrieved on July 20, 2022, from [https://www.ssa.gov/kc/SSAFactSheet--IssuingSSNs.pdf](https://www.ssa.gov/kc/SSAFactSheet--IssuingSSNs.pdf)
+- Social Security is changing the way SSNs are issued. (n.d.) Retrieved on July 20, 2022, from [https://www.ssa.gov/kc/SSAFactSheet--IssuingSSNs.pdf](https://www.ssa.gov/kc/SSAFactSheet--IssuingSSNs.pdf)
 
 
 ## Changelog

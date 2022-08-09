@@ -1,5 +1,5 @@
 ---
-title: Phone Number
+title: Phone number
 permalink: /patterns/create-a-profile/phone-number/
 layout: styleguide
 category: Patterns

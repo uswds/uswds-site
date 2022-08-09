@@ -1,8 +1,8 @@
-<h3 class="site-preview-heading">Multiple select</h3>
+<h3 class="site-preview-heading">Race or Ethnicity</h3>
 <form class="usa-form usa-form--large">
     <fieldset class="usa-fieldset" aria-multiselectable="true">
         <legend class="usa-legend">Which of the following best describes you?</legend>
-        <div class="usa-hint">Select all that apply for race</div>
+        <div class="usa-hint">Select all that apply</div>
         <div class="usa-checkbox">
             <input class="usa-checkbox__input" id="american-indian-or-alaska-native" type="checkbox"
                 name="american-indian-or-alaska-native" value="american-indian-or-alaska-native" />
@@ -43,6 +43,9 @@
                 value="some-other-race" />
             <label class="usa-checkbox__label" for="some-other-race">Some other race or ethnicity</label>
         </div>
+        <label class="usa-label" for="ethnic-identity">I identify my ethnicity as</label>
+        <div class="usa-hint" id="gnHint">You may report more than one ethnicity</div>
+        <input class="usa-input usa-input--xl" id="ethnic-identity" name="ethnic-identity">
         <div class="usa-checkbox">
             <input class="usa-checkbox__input" id="prefer-not-to-answer" type="checkbox" name="refer-not-to-answer"
                 value="prefer-not-to-answer" />
@@ -50,16 +53,3 @@
         </div>
     </fieldset>
 </form>
-
-<h3 class="site-preview-heading">Open-ended self identification</h3>
-<form class="usa-form usa-form--large margin-top-4">
-    <label class="usa-label" for="ethnic-identity">I identify my ethnicity as</label>
-    <div class="usa-hint" id="gnHint">You may report more than one ethnicity</div>
-    <input class="usa-input usa-input--xl" id="ethnic-identity" name="ethnic-identity">
-    <div class="usa-checkbox">
-        <input class="usa-checkbox__input" id="prefer-not-to-answer" type="checkbox" name="refer-not-to-answer"
-            value="prefer-not-to-answer" />
-        <label class="usa-checkbox__label" for="prefer-not-to-answer">Prefer not to answer</label>
-    </div>
-</form>
-

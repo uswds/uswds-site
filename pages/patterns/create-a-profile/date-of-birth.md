@@ -13,7 +13,7 @@ With many competing patterns for date formatting, users may become frustrated, c
 Use this pattern when you need a user's date of birth or another memorable date. 
 
 ## What's the solution
-Allowing a user to type a memorable date using three clearly labeled text fields provides the simplest and most inclusive digital experience. This is especially helpful when the date is in the past like a date of birth. By providing a select element for month, and clearly labeled text input for date and year, users will understand what is being asked and not struggle to input the information or question what order the information should be entered in.
+Allowing a user to enter a memorable date using three clearly labeled fields provides the simplest and most inclusive digital experience. This is especially helpful when the date is in the past like a date of birth. By providing a select element for month, and clearly labeled text input for date and year, users will understand what is being asked and not struggle to input the information or question what order the information should be entered in.
 
 Mobile device users in particular may benefit from being able to type a year rather than using a scrolling date picker for date of birth or other memorable dates.
 
@@ -56,7 +56,7 @@ Mobile device users in particular may benefit from being able to type a year rat
 <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
 
 ### When to use 
-<strong>Appropriate for most dates.</strong> This pattern is appropriate for most dates but particularly past and memorable dates, and dates that appear on items like Driver's Licenses or Passports. This pattern is especially applicable when there’s a high expectation of mobile device usage for form completion.
+<strong>Appropriate for most dates.</strong> This pattern is appropriate for most dates but particularly past and memorable dates, and dates that appear on items like drivers licenses or passports. This pattern is especially applicable when there’s a high expectation of mobile device usage for form completion.
 
 ### When to consider something else
 
@@ -74,7 +74,7 @@ Mobile device users in particular may benefit from being able to type a year rat
 
 <strong>Use “text” instead of “number” inputs.</strong> Research indicates that <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">numeric inputs still carry many usability problems</a>. While dates and years are some of the few kinds of numbers that can work reliably with numeric inputs, the way the user enters the data may still differ from what the browser expects. Use `<input type="text" inputmode="numeric" pattern="[0-9]*">` to better support mobile users. 
 
-<strong>Always use a label.</strong> Make sure your month select element has a label. Don’t replace it with the default menu option (for example, removing the “Month” label and just having the menu read “Select a month” by default).
+<strong>Always use a label on the select element.</strong> Don’t replace it with the default menu option (for example, removing the “Month” label and just having the menu read “Select a month” by default).
 
 <strong>Avoid auto-submission.</strong> Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Auto-submission disrupts screen readers because they select each option as they read them.
 
@@ -107,7 +107,7 @@ Mobile device users in particular may benefit from being able to type a year rat
   data-meta="Visit select component">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg">Select input</h3>
+        <h3 class="usa-card__heading font-lang-lg">Select</h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>A select component allows users to choose one option from a temporary modal menu.</p>

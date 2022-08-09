@@ -16,7 +16,7 @@ Use this pattern when collecting contact preference information from the user. C
 If you do not have the current capability of contacting the user via multiple channels of communication, do not ask the user for their communication preferences. Allowing a user to select a preferred communication option that is not operational risks communication gaps and can destroy a user's trust in a program or service.
 
 ## What's the solution
-Allow the user to select from available options, and to include a brief message in a text input/textarea field if explanation is required. For example, if the preferred contact method is dependent on time or date, or if there’s another factor that needs to be considered when communicating with the user.
+Allow the user to select from available options, and to include a brief message in a text input or textarea field if explanation is required. Use hint text to better explain the field's purpose, for example, if the preferred contact method is dependent on time or date, or if there’s another factor that needs to be considered when communicating with the user.
 
 ## Guidance
 
@@ -27,7 +27,7 @@ Allow the user to select from available options, and to include a brief message 
       <h3 class="do-dont__heading">What to do</h3>
         <div class="do-dont__content">
           <ul>
-            <li>Offer options for how to be contacted, if possible, since some users may not have a permanent physical or mailing address, due to displacement, infrastructure problems following a disaster, homelessness, or other reasons.</li>
+            <li>Offer options for how to be contacted, if possible, since some users may not have a permanent physical or mailing address, due to displacement, infrastructure problems following a disaster or other reasons.</li>
             <li>Only collect contact preference information if you need it and can deliver on the promise to the user that you will contact them via their preferred communications channel.</li>
             <li>Explain under what conditions you will reach out to the user and what the anticipated timeline will be, if possible.</li>
             <li>Do consider the safety implications of users who share their phone, voicemail, or email with other members of their household. Consider asking for permission to leave potentially sensitive messages.</li>

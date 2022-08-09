@@ -27,7 +27,7 @@ Provide a text entry field that supports a rich array of special characters and 
             <li>Do understand why you are collecting this information.</li>
             <li>Do provide examples. Many people may not be familiar with the concept of specifying pronouns.</li>
             <li>Do provide an open text field. Language is evolving and forced choice can make a user feel as though they need to fit themselves into a label determined by the form designer.</li>
-            <li>Do support a rich array of diacritics, accents, and alternative characters. Do allow both upper and lowercase letters throughout each field.</li>
+            <li>Do support a [rich array of diacritics, accents, and alternative characters](https://web.library.yale.edu/cataloging/music/diacrit).</li>
             <li>Allow users to enter hyphens, apostrophes, and blank spaces in each field.</li>
             <li>Do allow both upper and lowercase letters throughout each field.</li>
             <li>Do support long text fields. Allow users to enter up to 128 characters per field, but follow form norms for field display size.</li>
@@ -59,7 +59,7 @@ Provide a text entry field that supports a rich array of special characters and 
 
 ## Usability Guidance
 
-<strong>Provide clear hint text.</strong> Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, e.g., "For example, he, she, they, ze." Do allow users the opt out with a "Prefer not to answer" option.
+<strong>Provide clear hint text.</strong> Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, e.g., "For example, he, she, they, ze." Do allow users to opt out with a "Prefer not to answer" option.
 
 ## Accessibility
 
@@ -122,7 +122,7 @@ Provide a text entry field that supports a rich array of special characters and 
 
 ## References
 - They, their. (April 10, 2019). Retrieved on July 19, 2022, from [https://design.va.gov/content-style-guide/they-their](https://design.va.gov/content-style-guide/they-their) 
-- Ask users for gender or Sex. (n.d.) Retrieved on July 19, 2022, from [https://design-system.service.gov.uk/patterns/gender-or-sex/](https://design-system.service.gov.uk/patterns/gender-or-sex/)
+- Ask users for gender or sex. (n.d.) Retrieved on July 19, 2022, from [https://design-system.service.gov.uk/patterns/gender-or-sex/](https://design-system.service.gov.uk/patterns/gender-or-sex/)
 - Gender-inclusive language. (n.d.) Retrieved on July 19, 2022, from [https://www.digital.govt.nz/standards-and-guidance/design-and-ux/content-design-guidance/inclusive-language/gender-inclusive-language/](https://www.digital.govt.nz/standards-and-guidance/design-and-ux/content-design-guidance/inclusive-language/gender-inclusive-language/) 
 - Inclusive forms. (n.d.) Retrieved on July 19, 2022, from [https://equity.ubc.ca/resources/gender-diversity/inclusive-forms/](https://equity.ubc.ca/resources/gender-diversity/inclusive-forms/) 
 - What's in a pronoun? (May 15, 2019) Retrieved on July 19, 2022, from [https://www.keshetonline.org/resources/whats-in-a-pronoun/](https://www.keshetonline.org/resources/whats-in-a-pronoun/)

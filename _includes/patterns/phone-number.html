@@ -1,5 +1,34 @@
 <fieldset class="usa-fieldset">
     <legend class="usa-legend usa-legend--large">Phone number</legend>
-    <label class="usa-label" for="tel-number">Phone number</label>
-    <input class="usa-input" id="tel-number" name="tel-number" type="tel"/>
+    <label class="usa-label" for="tel-number">Primary phone number</label>
+    <div class="usa-hint" id="primaryPnHint">10-digit, U.S. only</div>
+    <input class="usa-input margin-bottom-1" id="tel-number" name="tel-number" type="tel" aria-describedby="pnHint"/>
+    <fieldset class="usa-fieldset">
+        <legend class="usa-legend usa-legend">Potentially sensitive information</legend>
+        <div class="usa-radio">
+            <input class="usa-radio__input" id="primary-yes-info" type="radio" name="primary-sensitive-info" value="primary-yes-info"/>
+            <label class="usa-radio__label" for="primary-yes-info">Yes, you may leave sensitive information in voicemail or text message</label>
+        </div>
+        <div class="usa-radio">
+            <input class="usa-radio__input" id="primary-no-info" type="radio" name="sensitive-info" value="primary-no-info"/>
+            <label class="usa-radio__label" for="primary-no-info">No, please do not leave sensitive information in voicemail or text messages</label>
+        </div>
+    </fieldset>
+    <label class="usa-label" for="tel-number">Secondary phone number</label>
+    <div class="usa-hint" id="pnHint">10-digit, U.S. only</div>
+    <input class="usa-input margin-bottom-1" id="tel-number" name="tel-number" type="tel" aria-describedby="pnHint" />
+    <fieldset class="usa-fieldset">
+        <legend class="usa-legend usa-legend">Potentially sensitive information</legend>
+        <div class="usa-radio">
+            <input class="usa-radio__input" id="secondary-yes-info" type="radio" name="secondary-sensitive-info" value="secondary-yes-info"
+                checked="checked" />
+            <label class="usa-radio__label" for="secondary-yes-info">Yes, you may leave sensitive information in voicemail or text
+                message</label>
+        </div>
+        <div class="usa-radio">
+            <input class="usa-radio__input" id="secondary-no-info" type="radio" name="secondary-sensitive-info" value="secondary-no-info" />
+            <label class="usa-radio__label" for="secondary-no-info">No, please do not leave sensitive information in voicemail or text
+                messages</label>
+        </div>
+    </fieldset>
 </fieldset>

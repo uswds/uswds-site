@@ -18,7 +18,7 @@ Gender is a social construct; gender identity is an expression of a user’s ide
 ## Biological sex
  
 ## When to use this pattern 
-Follow this pattern when you are collecting biological sex as part of your service. Only ask for biological sex if you need it. Sometimes it’s more prudent to skip collecting this information altogether.
+Follow this pattern when you are collecting biological sex as part of your service. Only ask for biological sex if you need it. Sometimes it’s more prudent to skip collecting this information altogether. Note: The U.S. Department of State has begun including <a href="https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/">X as an option for sex identification</a> to indicate <code>Unspecified or another gender identity</code>, including non-binary, intersex, and gender non-conforming individuals.
 
 ## What's the solution
 Present the user with a controlled vocabulary to accurately depict their biological sex. 
@@ -34,7 +34,7 @@ Present the user with a controlled vocabulary to accurately depict their biologi
         <div class="do-dont__content">
           <ul>
             <li>Do determine if you need to collect biological sex and only use if the information is essential to the user's experience.</li>
-            <li>Do only provide biological options when asking for biological sex (<code>male</code>, <code>female</code>, and <code>X</code>). The U.S. Department of State has begun including <a href="https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/">X as an option for sex identification</a> to indicate <code>Unspecified or another gender identity</code>, including non-binary, intersex, and gender non-conforming individuals.</li>
+            <li>Do only provide biological options when asking for biological sex (<code>male</code>, <code>female</code>, and <code>X</code>). </li>
             <li>Do be clear about why you are asking for the information.</li>
             <li>Do be transparent about what you are asking for. To some people gender and biological sex are synonymous, so ensure you use clear language.</li>
           </ul> 
@@ -48,7 +48,7 @@ Present the user with a controlled vocabulary to accurately depict their biologi
       <div class="do-dont__content">
           <ul>
             <li>Do not assume gender identity based on the user's biological sex.</li>
-            <li>Do not include <code>prefer not to answer</code>. If you are considering adding this option, then consider whether the question is needed at all.</li>
+            <li>Do not include "prefer not to answer." If you are considering adding this option, then consider whether the question is needed at all.</li>
             <li>Do not combine gender identity and biological sex into a single field.</li>
           </ul>
       </div>
@@ -235,9 +235,9 @@ See [usability guidance for checkboxes](https://designsystem.digital.gov/compone
 </div>
 
 ## References
-- Collecting Sexual Orientation and Gender Identity Information. (March 9, 2022) Retrieved on Jul 20, 2022 from [https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html](https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html)
+- Collecting sexual orientation and gender identity information. (March 9, 2022) Retrieved on Jul 20, 2022 from [https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html](https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html)
 - Current measures of sexual orientation and gender identity in federal surveys. (August 2016) Retrieved on August 4, 2022, from [https://nces.ed.gov/FCSM/pdf/buda5.pdf](https://nces.ed.gov/FCSM/pdf/buda5.pdf) 
-- Gender or Sex. (n.d.) Retrieved on July 15, 2022, from [https://design-system.service.gov.uk/patterns/gender-or-sex/](https://design-system.service.gov.uk/patterns/gender-or-sex/) 
+- Gender or sex. (n.d.) Retrieved on July 15, 2022, from [https://design-system.service.gov.uk/patterns/gender-or-sex/](https://design-system.service.gov.uk/patterns/gender-or-sex/) 
 - Gender terms you may not know. (June 17, 2022) Retrieved on July 15, 2022, from [https://www.dictionary.com/e/gender-terms-you-may-not-know/](https://www.dictionary.com/e/gender-terms-you-may-not-know/)
 - Nonbinary airline passenger tickets. (June 22, 2022) Retrieved on July 15, 2022, from [https://www.nytimes.com/2022/06/22/travel/nonbinary-airline-passengers-tickets.html](https://www.nytimes.com/2022/06/22/travel/nonbinary-airline-passengers-tickets.html)
 - Sex and gender identity. (n.d.) Retrieved August 1, 2022, from [https://www.plannedparenthood.org/learn/gender-identity/sex-gender-identity](https://www.plannedparenthood.org/learn/gender-identity/sex-gender-identity)

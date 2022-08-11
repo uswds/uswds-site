@@ -65,9 +65,9 @@ html {
     background-color: $next-button-hover-color;
   }
 }
-.usa-dark-background .usa-button--next {
-  color: white; // .usa-dark-background a makes links light grey, fails WCAG AAA
-}
+// .usa-dark-background .usa-button--next {
+//   color: white; // .usa-dark-background a makes links light grey, fails WCAG AAA
+// }
 
 .usa-button--next.usa-button--outline {
   background-color: transparent;
@@ -84,10 +84,11 @@ html {
 
 // Page width
 // -------------------------------------
+// https://designsystem.digital.gov/utilities/layout-grid/
 .next-hero .grid-container,
 .next-internal-nav .grid-container,
 .together-section .grid-container {
-  max-width: 65rem !important;
+  max-width: 87.5rem !important;
   width: 100%;
 }
 
@@ -105,7 +106,7 @@ html {
 .next-hero {
   align-content: center;
   align-items: center;
-  background-color: $gray-80-next;
+  // background-color: $gray-80-next;
   border-bottom: 4px solid #757575;
   color: color("white");
   display: flex;
@@ -127,7 +128,7 @@ html {
 }
 
 .next-hero__subhead {
-  color: $gray-20-next;
+  // color: $gray-20-next;
   font-size: size("lang", 8);
   font-weight: $theme-font-weight-normal;
   line-height: line-height("lang", 2);

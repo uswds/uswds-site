@@ -58,116 +58,112 @@ summary_sections:
 
 ---
 
-
-
-
-<main role="main" id="main-content">
-  {% for item in page.summary_sections %}
-    <section id="section-{{ forloop.index }}" class="together-section together-section--{{ item.title | downcase | replace: " ", "-" | remove: "’" }} {{ item.section_class }}">
-      <div class="grid-container">
-        <div class="grid-row">
-          <div class="grid-col-12 tablet:grid-col-3">
-            <div class="together-section__header">
-              {% unless item.hide_title %}<div class="together-section__subhead">{{ item.title }}</div>{% endunless %}
-              <h2 class="together-section__heading">{{ item.heading }}</h2>
-            </div>
-          </div>
-          <div class="grid-col-12 tablet:grid-col-8 tablet:margin-left-auto together-section-description">
-            {{ item.description | markdownify }}
+{% for item in page.summary_sections %}
+  <section id="section-{{ forloop.index }}" class="together-section together-section--{{ item.title | downcase | replace: " ", "-" | remove: "’" }} {{ item.section_class }}">
+    <div class="grid-container">
+      <div class="grid-row">
+        <div class="grid-col-12 tablet:grid-col-3">
+          <div class="together-section__header">
+            {% unless item.hide_title %}<div class="together-section__subhead">{{ item.title }}</div>{% endunless %}
+            <h2 class="together-section__heading">{{ item.heading }}</h2>
           </div>
         </div>
-        <div class="grid-row">
-          <div class="grid-col-12">
-
-            {% if forloop.index == 1 %}
-              <h3>Our primary focus was to…</h3>
-
-              <div class="grid-row tablet:margin-x-neg-205">
-                <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
-                  {% include next/next-spot-item.html text="Understand how teams are using the U.S. Web Design System (USWDS) to build websites and digital services" icon="search"%}
-                </div>
-                <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
-                  {% include next/next-spot-item.html text="Develop insights into improving federal digital services with and for the public" icon="lightbulb"%}
-                </div>
-                <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
-                  {% include next/next-spot-item.html text="Identify strategies for advancing the design system through collaboration with agencies and other government customer experience initiatives" icon="insights"%}
-                </div>
-              </div>
-
-            {% elsif forloop.index == 2 %}
-
-              <figure class="next-quote">
-                <svg class="usa-icon usa-icon--size-8 next-quote__icon" aria-hidden="true" focusable="false" role="img">
-                  <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#format_quote"></use>
-                </svg>
-                <blockquote class="next-quote__quote">
-                The more we use the design system to standardize how we build digital experiences, the more we will improve how the federal web functions.
-                </blockquote>
-                <figcaption>
-                  <span class="next-quote__source" aria-describedby="quote-desc">Source: <br/>- Civic tech leader*</span>
-                  <span class="next-quote__source-desc" id="quote-desc">* Shared during a user interview</span>
-                </figcaption>
-              </figure>
-
-            {% elsif forloop.index == 3 %}
-
-              <h3>Agency teams want to…</h3>
-
-              <div class="grid-row tablet:margin-x-neg-205">
-                <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205">
-                  {% include next/next-finding-item.html link="/next/findings/benefits/" heading="Understand the value and benefits" text="Agencies need to be able to quickly discern the design system’s benefits and how it aligns with their goals for delivering better digital services." icon="plus"%}
-
-                  {% include next/next-finding-item.html link="/next/findings/get-started/" heading="Know how to get started" text="No matter where an agency starts from, it needs to be clear and easy for them to figure out their first steps and how to create a sustainable path forward in the long-run." icon="arrow"%}
-
-                  {% include next/next-finding-item.html link="/next/findings/team/" heading="Find the right team and resources" text="Agencies have several options to assemble a cross-functional team to implement the design system and they’re looking for more support in identifying needed skills and assembling the right people." icon="check"%}
-
-                </div>
-                <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205">
-                  {% include next/next-finding-item.html link="/next/findings/community/" heading="Feel engaged with the community" text="It’s a collaborative process to build a design system, so it’s essential for agencies to feel like they have access to a support network and a sense of ownership to contribute back to it." icon="triangles"%}
-
-                  {% include next/next-finding-item.html link="/next/findings/improve/" heading="Be able to iteratively improve digital services" text="Adopting a design system is an ongoing process of design, development, and making iterative improvements and upgrades over time, which requires continued resources and support." icon="steps"%}
-                </div>
-              </div>
-              {% elsif forloop.index == 4 %}
-
-
-              <h3>Our <a href="{{ site.baseurl }}/next/looking-ahead/">Near Star</a> vision:</h3>
-
-              <p class="measure-3 next-lead">All agency teams have what they need to more easily adopt and effectively use the design system. To do that, we’ll focus on the following opportunity areas:</p>
-
-              <div class="grid-row tablet:margin-x-neg-205">
-                <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
-                  {% include next/next-spot-item.html text="[Improve strategic communications](./looking-ahead/engagement/) with key audiences" icon="mail" %}
-                </div>
-                <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
-                  {% include next/next-spot-item.html text="Provide more [robust guidance and support](./looking-ahead/guidance/) to get started with the design system" icon="directions" %}
-                </div>
-                <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
-                  {% include next/next-spot-item.html text="Better [leverage related efforts within TTS](./looking-ahead/collaboration/) and the broader government digital services community" icon="groups" %}
-                </div>
-              </div>
-
-              <p class="next-highlight-text measure-1"><strong>Accomplishing our Near Star vision will move us closer to the North Star we’re aiming for.</strong></p>
-
-              <h3>Our <a href="{{ site.baseurl }}/next/looking-ahead/vision/">North Star</a> vision:</h3>
-
-              <p class="measure-3 next-lead">Empowered digital agency teams share solutions and use effective human-centered design practices to create greater continuity, improved usability, and increased access for key digital services.</p>
-
-              <h4>Conversation starters</h4>
-              <div class="grid-row tablet:margin-x-neg-205">
-                <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205">
-                  {% include next/next-spot-item.html text="<strong>What if</strong> the federal government provided even more robust technology shared services to reduce the burden on individual agencies?" icon="forum" variant="next-spot-item--row" %}
-                </div>
-                <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205">
-                  {% include next/next-spot-item.html text="<strong>What if</strong> key content and functionality of government websites was consolidated into fewer public services websites, like usa.gov and recreation.gov?" icon="forum" variant="next-spot-item--row" %}
-                </div>
-              </div>
-
-            {% endif %}
-
-          </div>
+        <div class="grid-col-12 tablet:grid-col-8 tablet:margin-left-auto together-section-description">
+          {{ item.description | markdownify }}
         </div>
       </div>
-    </section>
-  {% endfor %}
-</main>
+      <div class="grid-row">
+        <div class="grid-col-12">
+
+          {% if forloop.index == 1 %}
+            <h3>Our primary focus was to…</h3>
+
+            <div class="grid-row tablet:margin-x-neg-205">
+              <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
+                {% include next/next-spot-item.html text="Understand how teams are using the U.S. Web Design System (USWDS) to build websites and digital services" icon="search"%}
+              </div>
+              <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
+                {% include next/next-spot-item.html text="Develop insights into improving federal digital services with and for the public" icon="lightbulb"%}
+              </div>
+              <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
+                {% include next/next-spot-item.html text="Identify strategies for advancing the design system through collaboration with agencies and other government customer experience initiatives" icon="insights"%}
+              </div>
+            </div>
+
+          {% elsif forloop.index == 2 %}
+
+            <figure class="next-quote">
+              <svg class="usa-icon usa-icon--size-8 next-quote__icon" aria-hidden="true" focusable="false" role="img">
+                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#format_quote"></use>
+              </svg>
+              <blockquote class="next-quote__quote">
+              The more we use the design system to standardize how we build digital experiences, the more we will improve how the federal web functions.
+              </blockquote>
+              <figcaption>
+                <span class="next-quote__source" aria-describedby="quote-desc">Source: <br/>- Civic tech leader*</span>
+                <span class="next-quote__source-desc" id="quote-desc">* Shared during a user interview</span>
+              </figcaption>
+            </figure>
+
+          {% elsif forloop.index == 3 %}
+
+            <h3>Agency teams want to…</h3>
+
+            <div class="grid-row tablet:margin-x-neg-205">
+              <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205">
+                {% include next/next-finding-item.html link="/next/findings/benefits/" heading="Understand the value and benefits" text="Agencies need to be able to quickly discern the design system’s benefits and how it aligns with their goals for delivering better digital services." icon="plus"%}
+
+                {% include next/next-finding-item.html link="/next/findings/get-started/" heading="Know how to get started" text="No matter where an agency starts from, it needs to be clear and easy for them to figure out their first steps and how to create a sustainable path forward in the long-run." icon="arrow"%}
+
+                {% include next/next-finding-item.html link="/next/findings/team/" heading="Find the right team and resources" text="Agencies have several options to assemble a cross-functional team to implement the design system and they’re looking for more support in identifying needed skills and assembling the right people." icon="check"%}
+
+              </div>
+              <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205">
+                {% include next/next-finding-item.html link="/next/findings/community/" heading="Feel engaged with the community" text="It’s a collaborative process to build a design system, so it’s essential for agencies to feel like they have access to a support network and a sense of ownership to contribute back to it." icon="triangles"%}
+
+                {% include next/next-finding-item.html link="/next/findings/improve/" heading="Be able to iteratively improve digital services" text="Adopting a design system is an ongoing process of design, development, and making iterative improvements and upgrades over time, which requires continued resources and support." icon="steps"%}
+              </div>
+            </div>
+            {% elsif forloop.index == 4 %}
+
+
+            <h3>Our <a href="{{ site.baseurl }}/next/looking-ahead/">Near Star</a> vision:</h3>
+
+            <p class="measure-3 next-lead">All agency teams have what they need to more easily adopt and effectively use the design system. To do that, we’ll focus on the following opportunity areas:</p>
+
+            <div class="grid-row tablet:margin-x-neg-205">
+              <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
+                {% include next/next-spot-item.html text="[Improve strategic communications](./looking-ahead/engagement/) with key audiences" icon="mail" %}
+              </div>
+              <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
+                {% include next/next-spot-item.html text="Provide more [robust guidance and support](./looking-ahead/guidance/) to get started with the design system" icon="directions" %}
+              </div>
+              <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
+                {% include next/next-spot-item.html text="Better [leverage related efforts within TTS](./looking-ahead/collaboration/) and the broader government digital services community" icon="groups" %}
+              </div>
+            </div>
+
+            <p class="next-highlight-text measure-1"><strong>Accomplishing our Near Star vision will move us closer to the North Star we’re aiming for.</strong></p>
+
+            <h3>Our <a href="{{ site.baseurl }}/next/looking-ahead/vision/">North Star</a> vision:</h3>
+
+            <p class="measure-3 next-lead">Empowered digital agency teams share solutions and use effective human-centered design practices to create greater continuity, improved usability, and increased access for key digital services.</p>
+
+            <h4>Conversation starters</h4>
+            <div class="grid-row tablet:margin-x-neg-205">
+              <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205">
+                {% include next/next-spot-item.html text="<strong>What if</strong> the federal government provided even more robust technology shared services to reduce the burden on individual agencies?" icon="forum" variant="next-spot-item--row" %}
+              </div>
+              <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205">
+                {% include next/next-spot-item.html text="<strong>What if</strong> key content and functionality of government websites was consolidated into fewer public services websites, like usa.gov and recreation.gov?" icon="forum" variant="next-spot-item--row" %}
+              </div>
+            </div>
+
+          {% endif %}
+
+        </div>
+      </div>
+    </div>
+  </section>
+{% endfor %}
+

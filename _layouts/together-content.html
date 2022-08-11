@@ -10,21 +10,29 @@ report_title: Inclusive Design Patterns
   {% assign page_type = 'page' %}
 {% endif %}
 
-<section class="next-hero next-hero--{{ page_type }} next-hero--{{ page.slug }} bg-{{ page.hero_color }} usa-dark-background" aria-label="Page description">
+<section class="next-hero next-hero--{{ page_type }} next-hero--{{ page.slug }} bg-{{ page.hero_color }} bg-gray-10 text-black position-relative tablet:padding-y-4 dekstop:maxw-widescreen" aria-label="Page description">
   <div class="grid-container">
     <div class="grid-row flex-align-center margin-x-neg-2 tablet:margin-x-auto margin-y-2 tablet:margin-y-4 desktop:margin-y-6">
-      <div class="grid-col-12 tablet:grid-col-8 tablet:margin-left-8 desktop:margin-left-0 desktop:grid-col-10 next-hero__content padding-x-2 tablet:padding-x-0">
+      <div class="tablet:grid-col-4 tablet:margin-left-8  next-hero__content padding-x-2 tablet:padding-x-0">
         {% if page_type == 'chapter' %}
           <h1 class="next-hero__heading">{{ page.title }}</h1>
-          <h2 class="next-hero__subhead">{{ page.subhead }}</h2>
+          <h2 class="next-hero__subhead text-base-dark">{{ page.subhead }}</h2>
         {% elsif page_type == 'page' %}
           <h1 class="next-hero__subhead">{{ page.subhead }}</h1>
           <h2 class="next-hero__heading">{{ page.title }}</h2>
         {% endif %}
       </div>
+      
+      <div class="position-absolute bottom-0 right-0">
+        {% if page_type == 'chapter' %}
+          <img class="tablet:width-tablet" src="{{ site.baseurl }}/img/together/hero-img1.svg" alt="man with beard in wheelchair" />
+        {% elsif page_type == 'page' %}
+          <img src="{{ page.hero_image }}" alt="{{ page.title }}" />
+        {% endif %}
+      </div>
+      
     </div>
   </div>
-    <div class="next-hero--{{ page_type }}__pattern" style="background-image: url('{{ site.baseurl }}/img/next/hero-pattern-findings.svg')"></div>
 </section>
 
 <nav class="next-internal-nav usa-dark-background" aria-label="Together report internal navigation">
@@ -41,9 +49,6 @@ report_title: Inclusive Design Patterns
         </li>
         {% endif %}
       {% endfor %}
-      <li class="next-internal-nav__item next-internal-nav__item--button">
-        <a href="{{ site.baseurl }}/files/next/Transforming-the-American-digital-experience.pdf" class="usa-button usa-button--next">Download the report</a>
-      </li>
     </ul>
   </div>
 </nav>

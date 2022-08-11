@@ -26,7 +26,7 @@ Complex forms can be daunting and overwhelming. This is especially true when use
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/complex-form/establish-trust/">Understand expectations and <strong>establish trust</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Help users understand what's needed to complete a form, how that information will be used, and how we’ll protect their privacy and security.</p>
+        <p>Help users understand what’s needed to complete the form, how the information will be used, and how we’ll protect their privacy and security.</p>
       </div>
     </div>
   </div>
@@ -56,7 +56,7 @@ Complex forms can be daunting and overwhelming. This is especially true when use
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/complex-form/keep-a-record/"><strong>Keep a record</strong> of submitted information</a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Allow users to reference the answers they've provided and feel confident in their interaction.</p>
+        <p>Allow users to review and keep a copy of the answers they’ve provided and feel confident in their interaction.</p>
       </div>
     </div>
   </div>  

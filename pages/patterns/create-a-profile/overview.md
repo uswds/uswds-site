@@ -1,5 +1,5 @@
 ---
-title: Create a user profile
+title: User profile
 permalink: /patterns/create-a-profile/
 layout: styleguide
 category: Patterns
@@ -17,7 +17,7 @@ subnav:
   - href: /patterns/create-a-profile/social-security-number/
 ---
 ## Why this matters
-User profiles are central to a person's identity. A user profile may be integral to *proving* identity, 
+User profiles are central to a person's identity. A user profile may be integral to proving identity and 
 qualifying for and receiving support and services from the government. It can also be integral to expressing identity and ensuring respectful communication.
 
 ## Help users to...
@@ -33,7 +33,7 @@ qualifying for and receiving support and services from the government. It can al
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/address/">Enter their <strong>address</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Help users to provide their address: support users in entering their physical or mailing addresses for successful communication.</p>
+        <p>Help users to input their physical or mailing addresses for successful communication.</p>
       </div>
     </div>
   </div>
@@ -48,7 +48,7 @@ qualifying for and receiving support and services from the government. It can al
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/sex-or-gender/">Select their <strong>biological sex or gender</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Help users to enter their biolgical sex or gender: allow users to feel comfortable and confident that they are being identified in the way that they choose.</p>
+        <p>Help users to feel comfortable and confident that they are being identified in the way that they choose.</p>
       </div>
     </div>
   </div>
@@ -63,7 +63,7 @@ qualifying for and receiving support and services from the government. It can al
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/contact-preferences/">Indicate their <strong>contact preferences</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Help users to enter their preferred means of communication: allow users to specify how they would like to be contacted and in what language.</p>
+        <p>Help users to specify how they would like to be contacted and in what language.</p>
       </div>
     </div>
   </div>  
@@ -78,7 +78,7 @@ qualifying for and receiving support and services from the government. It can al
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/date-of-birth/">Enter their <strong>date of birth</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Help users to enter their date of birth: allow users to provide their birth date or other memorable date.</p>
+        <p>Help users to enter their birth date or other memorable date.</p>
       </div>
     </div>
   </div>
@@ -93,7 +93,7 @@ qualifying for and receiving support and services from the government. It can al
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/email-address/">Provide their <strong>email address</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Help users to enter their email address: allow users to enter their email address or addresses.</p>
+        <p>Help users to enter their email address or addresses.</p>
       </div>
     </div>
   </div>
@@ -108,7 +108,7 @@ qualifying for and receiving support and services from the government. It can al
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/name/">Provide their <strong>name</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Help users to enter their name: allow users to enter their name in a way that supports the wide variety of name formats.</p>
+        <p>Help users to enter their name accurately and confidently regardless of format.</p>
       </div>
     </div>
   </div>
@@ -123,7 +123,7 @@ qualifying for and receiving support and services from the government. It can al
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number/">Enter their <strong>phone number</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Help users to enter their phone number: allow the user to enter their phone number or numbers to ensure effective communication.</p>
+        <p>Help users to enter their phone number or numbers to ensure effective communication.</p>
       </div>
     </div>
   </div>
@@ -138,7 +138,7 @@ qualifying for and receiving support and services from the government. It can al
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/pronouns/">Share their <strong>pronouns</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Help users to enter their pronouns: support users in providing their pronouns to ensure they are addressed in the manner they prefer.</p>
+        <p>Help users to provide their pronouns to ensure they are addressed in the manner they prefer.</p>
       </div>
     </div>
   </div>
@@ -153,7 +153,7 @@ qualifying for and receiving support and services from the government. It can al
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/race-and-ethnicity/">Provide their <strong>race and ethnicity</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Help users to enter their race and ethnicity: allow users to provide the race and ethnicity that reflects their lived experience.</p>
+        <p>Help users to provide the race and ethnicity that reflects their lived experience.</p>
       </div>
     </div>
   </div>
@@ -168,7 +168,7 @@ qualifying for and receiving support and services from the government. It can al
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number/">Enter their <strong>Social Security Number (SSN)</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Help users to enter their Social Security Number: allow users to provide their Social Security Number or Individual Taxpayer Identification Number.</p>
+        <p>Help users to provide their Social Security Number.</p>
       </div>
     </div>
   </div>

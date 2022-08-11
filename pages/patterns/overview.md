@@ -14,7 +14,7 @@ Every day we ask users to engage with our digital products and services. Whether
 
 A design pattern often contains more than one component  —  but it isn’t simply a sum of its parts. It is an entire experience designed to encourage the user to successfully complete whatever task is in front of them. Patterns are best practice design solutions for specific user tasks and interactions.
 
-The USWDS design patterns are developed to be reusable by developers and usable by the public. They are also designed to be respectful of the public and the variety of personal and life experiences they bring. This is an evolving space, and norms and language are changing all the time. We expect the patterns to evolve as the space does. USWDS design patterns are inclusive of all of us. 
+The USWDS design patterns are developed to be reusable by developers and usable by the public. They are also designed to be respectful of the public and the variety of personal and life experiences they bring. This is an evolving space, and norms and language are changing all the time. We expect the patterns to evolve as this space does. USWDS design patterns are inclusive of all of us. 
 
 <div class="usa-card-group flex-row margin-top-2">
   <li

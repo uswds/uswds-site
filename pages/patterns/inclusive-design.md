@@ -3,13 +3,12 @@ title: Inclusive Design
 permalink: /patterns/inclusive-design/
 layout: styleguide
 category: Patterns
-lead: Like the USWDS design principles, the USWDS inclusive design pattern library supports and reflects the guidance codified in the [21st Century IDEA](https://digital.gov/resources/21st-century-integrated-digital-experience-act/) and is in service of the Biden-Harris administration's President's Management Agency (PMA) Priority 2 Executive Order, [Delivering Excellent, Equitable, and Secure Federal Services and Customer Experience](https://www.performance.gov/pma/cx/), Executive Order 13985, [Advancing an Equitable Government](https://www.justice.gov/crt/executive-order-13166) and Executive Order 13166, [Improving Access to Services for People with Limited English Proficiency](https://www.justice.gov/crt/executive-order-13166).
+lead: Regardless of technology or platform, the lenses of diversity, equity, inclusion, and accessibility reflected within the inclusive design pattern library can help digital teams striving to build a better understanding of the people we serve, engage them in our work, and deliver simple, seamless, and secure customer experiences that meet all of us where we are.
+---
+
+Like the USWDS design principles, the USWDS inclusive design pattern library supports and reflects the guidance codified in the [21st Century IDEA](https://digital.gov/resources/21st-century-integrated-digital-experience-act/) and is in service of the Biden-Harris administration's President's Management Agency (PMA) Priority 2 Executive Order, [Delivering Excellent, Equitable, and Secure Federal Services and Customer Experience](https://www.performance.gov/pma/cx/), Executive Order 13985, [Advancing an Equitable Government](https://www.justice.gov/crt/executive-order-13166) and Executive Order 13166, [Improving Access to Services for People with Limited English Proficiency](https://www.justice.gov/crt/executive-order-13166).
 
 These design patterns seek to help teams across government align on a common goal of creating inclusive, equitable digital experiences the American public expects and deserves, while being respectful of the variety of personal and life experiences the people we serve bring to their experience of the benefits, services, and programs digital teams deliver for all Americans.
-
-Regardless of technology or platform, the lenses of diversity, equity, inclusion, and accessibility reflected within the inclusive design pattern library can help digital teams striving to build a better understanding of the people we serve, engage them in our work, and deliver simple, seamless, and secure customer experiences that meet all of us where we are.
-
----
 
 ## Recognize the full range of human diversity
 

@@ -1,5 +1,5 @@
 ---
-title: Preferred language
+title: Select a language
 permalink: /patterns/language-selector/
 layout: styleguide
 category: Patterns
@@ -16,21 +16,7 @@ Accessing content in the language that the user is most comfortable in allows th
 
 ## Help users to...
 <div class="usa-card-group flex-row margin-top-2">
-  <div
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
-  role="region"
-  aria-atomic="true"
-  aria-label="Visit written and spoken language preferences pattern"
-  data-meta="Visit written and spoken language preferences pattern">
-    <div class="usa-card__container">
-      <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/language-selector/language-preferences/">Indicate <b>preferred languages</b></a></h3>
-      </header>
-      <div class="usa-card__body font-lang-sm">
-        <p>Help users to identify the languages in which they are most comfortable and confident.</p>
-      </div>
-    </div>
-  </div>  
+
   <div
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
@@ -39,7 +25,7 @@ Accessing content in the language that the user is most comfortable in allows th
   data-meta="Visit two languages option pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/language-selector/two-languages/">Select between <b>two languages</b></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/language-selector/two-languages/">Select between <strong>two languages</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users select between two languages, such as English and Spanish.</p>
@@ -54,7 +40,7 @@ Accessing content in the language that the user is most comfortable in allows th
   data-meta="Visit three or more languages pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages/">Select from <b>three or more languages</b></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages/">Select from <strong>three or more languages</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users choose from multiple available languages, such as English, Spanish, Chinese, and Arabic.</p>
@@ -69,11 +55,27 @@ Accessing content in the language that the user is most comfortable in allows th
   data-meta="Visit selected content in preferred language pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Find <b>select content in their preferred language</b></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Find <strong>select content</strong> in their preferred language</b></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users to find content in their preferred language when only selected pieces of content have been translated.</p>
       </div>
     </div>
-  </div>
+  </div>  
+  <div
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit written and spoken language preferences pattern"
+  data-meta="Visit written and spoken language preferences pattern">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/language-selector/language-preferences/">Indicate <strong>preferred languages</strong></a></h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>Help users to choose the languages they prefer for communication</p>
+      </div>
+    </div>
+  </div>  
+
 </div>

@@ -17,8 +17,7 @@ subnav:
   - href: /patterns/create-a-profile/social-security-number/
 ---
 ## Why this matters
-User profiles are central to a person's identity. A user profile may be integral to proving identity and 
-qualifying for and receiving support and services from the government. It can also be integral to expressing identity and ensuring respectful communication.
+User profiles are central to a person’s identity. A user profile may be integral to proving identity and qualifying for and receiving support and services from the government. It can also be integral to expressing identity and ensuring respectful communication.
 
 ## Help users to...
 <div class="usa-card-group flex-row margin-top-2">
@@ -48,7 +47,7 @@ qualifying for and receiving support and services from the government. It can al
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/sex-or-gender/">Select their <strong>biological sex or gender</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Help users to feel comfortable and confident that they are being identified in the way that they choose.</p>
+        <p>Help users to select their correct biological sex and gender identity.</p>
       </div>
     </div>
   </div>
@@ -93,7 +92,7 @@ qualifying for and receiving support and services from the government. It can al
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/email-address/">Provide their <strong>email address</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Help users to enter their email address or addresses.</p>
+        <p>Help users to enter their email address.</p>
       </div>
     </div>
   </div>
@@ -165,7 +164,7 @@ qualifying for and receiving support and services from the government. It can al
   data-meta="Visit Toggle">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number/">Enter their <strong>Social Security Number (SSN)</strong></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number/">Enter their <strong>Social Security Number</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users to provide their Social Security Number.</p>

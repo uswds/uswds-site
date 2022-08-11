@@ -27,16 +27,10 @@ Improved control over personal identity benefits all, but provides the greatest 
 ### Key considerations
 The effects of inequitable experiences in people’s lives can be visceral and severe.
 
-## Engage
-
-### Summary
-
-### Key considerations
-Being equitable means seeking out and inviting users with disparate voices and life experiences to participate with us and guide our decisions–consciously and intentionally redistributing power as we build with and not for our users.
-
 ## Respect
 
 ### Summary
 Celebrating, valuing, and respecting the diverse perspectives and lived experiences of others fosters a more positive, open-minded, and productive team. 
 
 ### Key considerations
+Being equitable means seeking out and inviting users with disparate voices and life experiences to participate with us and guide our decisions–consciously and intentionally redistributing power as we build with and not for our users.

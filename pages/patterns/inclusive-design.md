@@ -17,7 +17,7 @@ Regardless of technology or platform, the lenses of diversity, equity, inclusion
 The power of diversity comes to life when we respect and value the life experiences, cultural differences, and diverse perspectives that differentiate us as individuals and groups. 
 
 ### Key considerations
-From team composition to co-designing with our customers, taking an equitable approach means reimaginging how we research, design, and deliver digital services, particularly with underserved or marginalized communities. 
+From team composition to co-designing with our customers, taking an equitable approach means reimagining how we research, design, and deliver digital services, particularly with underserved or marginalized communities. 
 
 ## Protect your users
 

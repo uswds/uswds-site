@@ -107,9 +107,15 @@ html {
   align-content: center;
   align-items: center;
   // background-color: $gray-80-next;
-  border-bottom: 4px solid #757575;
+  border-bottom: 2px solid #adadad;
   color: color("white");
   display: flex;
+}
+
+.heading-wrapper{ 
+  @include at-media("tablet") {
+    min-height: 240px;
+  }
 }
 
 .next-hero__heading {
@@ -222,8 +228,8 @@ html {
 // Internal nav
 // -------------------------------------
 .next-internal-nav {
-  background-color: $gray-80-next;
-  border-bottom: 4px solid #757575;
+  // background-color: $gray-80-next;
+  border-bottom: 2px solid #adadad;
   margin-bottom: -4px;
   @include at-media("mobile-lg") {
     position: sticky;
@@ -262,10 +268,10 @@ html {
 .next-internal-nav__link,
 .next-internal-nav__link:visited {
   border-bottom: 2px solid transparent;
-  color: color("white");
+  color: #565C65;
   display: block;
   font-size: size("lang", "3xs");
-  font-weight: font-weight("bold");
+  // font-weight: font-weight("bold");
   padding: units(1) units(0.5);
   text-decoration: none;
 
@@ -275,13 +281,14 @@ html {
   }
 
   &:hover {
-    color: color("gray-5");
-    border-color: color("gray-5");
+    color: #565C65;
+    border-color: #565C65;
   }
 
   &.current {
-    border-color: color("white");
-    color: color("white");
+    border-color: #2B44FF;
+    color: #565C65;
+    font-weight: font-weight("bold");
   }
 }
 

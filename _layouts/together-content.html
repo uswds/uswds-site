@@ -10,10 +10,10 @@ report_title: Inclusive Design Patterns
   {% assign page_type = 'page' %}
 {% endif %}
 
-<section class="next-hero next-hero--{{ page_type }} next-hero--{{ page.slug }} bg-{{ page.hero_color }} bg-gray-10 text-black position-relative tablet:padding-y-4 dekstop:maxw-widescreen" aria-label="Page description">
+<section class="next-hero next-hero--{{ page_type }} next-hero--{{ page.slug }} bg-{{ page.hero_color }} bg-gray-10 text-black position-relative tablet:padding-y-4 desktop:padding-y-8" aria-label="Page description">
   <div class="grid-container">
-    <div class="grid-row flex-align-center margin-x-neg-2 tablet:margin-x-auto margin-y-2 tablet:margin-y-4 desktop:margin-y-6">
-      <div class="tablet:grid-col-4 tablet:margin-left-8  next-hero__content padding-x-2 tablet:padding-x-0">
+    <div class="grid-row margin-y-2 tablet:margin-y-4 desktop:margin-y-6">
+      <div class="tablet:grid-col-4 tablet:margin-left-8  desktop:grid-col-6 next-hero__content padding-x-2 tablet:padding-x-0 heading-wrapper">
         {% if page_type == 'chapter' %}
           <h1 class="next-hero__heading">{{ page.title }}</h1>
           <h2 class="next-hero__subhead text-base-dark">{{ page.subhead }}</h2>
@@ -35,7 +35,7 @@ report_title: Inclusive Design Patterns
   </div>
 </section>
 
-<nav class="next-internal-nav usa-dark-background" aria-label="Together report internal navigation">
+<nav class="next-internal-nav bg-gray-10 text-base" aria-label="Together report internal navigation">
   <div class="grid-container">
     <ul id="internal-nav" class="next-internal-nav__list">
       {% for item in site.together %}

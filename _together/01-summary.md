@@ -64,7 +64,6 @@ summary_sections:
       <div class="grid-row">
         <div class="grid-col-12 tablet:grid-col-3">
           <div class="together-section__header">
-            {% unless item.hide_title %}<div class="together-section__subhead">{{ item.title }}</div>{% endunless %}
             <h2 class="together-section__heading">{{ item.heading }}</h2>
           </div>
         </div>

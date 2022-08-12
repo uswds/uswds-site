@@ -90,6 +90,7 @@ html {
 .together-section .grid-container {
   max-width: 87.5rem !important;
   width: 100%;
+  padding: 0 4rem;
 }
 
 // Header
@@ -420,7 +421,8 @@ html {
 }
 
 .together-section__header {
-  margin-bottom: units(4);
+  border-bottom: 5px solid #202550 !important;
+  margin-bottom: 2rem;
 }
 
 .together-section__subhead {
@@ -434,9 +436,10 @@ html {
   font-size: size("heading", 12);
   margin-top: 0;
   margin-bottom: units(2.5);
-
+  color: #202550;
+  padding-bottom: units(2);
   @include at-media("desktop") {
-    font-size: size("heading", 14);
+    font-size: size("heading", 16);
   }
 }
 

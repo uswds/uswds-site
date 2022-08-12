@@ -16,46 +16,33 @@ chapter: true
 summary_sections:
   - heading: Overview
     description: |-
-      In September 2020, we brought together researchers, designers, engineers, and policymakers to conduct research across dozens of federal agencies to help support emergency response efforts related to the COVID-19 pandemic.
+      For the millions of people who interact with the federal government online each year the experience can be frustrating and alienating. Digital teams across the federal government are committed to delivering the very best user experiences they can, but sometimes lack easy access to the skills and guidance that would help them to do so. In the spirit of offering additional guidance and examples, the U.S. Web Design System is excited to provide a new library of design patterns focused on key digital interactions.
 
-  - heading: Why is this important?
-    title: Purpose
+      USWDS’s Inclusive Design Patterns project was developed in support of the [Section 508](https://www.section508.gov/), [21st Century IDEA](https://www.congress.gov/bill/115th-congress/house-bill/5759/text), the Biden-Harris Administration’s President’s Management Agenda (PMA) Priority 2 [Delivering Excellent, Equitable, and Secure Federal Services](https://www.performance.gov/pma/cx/), Executive Order 13166 [Improving Access to Services for Persons with Limited English Proficiency](https://www.justice.gov/crt/executive-order-13166), and Executive Order 13985 [Advancing an Equitable Government](https://www.performance.gov/equity/). In supporting these efforts, USWDS’s patterns are designed to remove barriers to transactions and interactions online, and, therefore, help the American public successfully access government services and programs. This is fundamental to our values.
+
+      As we spoke with digital teams across the federal space we learned that everyone is wrestling with these issues: how to create effective, inclusive, equitable digital experiences. We were fortunate to learn from our colleagues that are already blazing a path towards inclusivity, and to have their perspectives inform our work. We are grateful for the large number of people who contributed their lived experience and perspectives.
+
+      Sites that don’t actively seek to address usability, accessibility, and inclusion run the very real risk of alienating, frustrating, and marginalizing the very people we seek to support – with an end result of diminished outcomes for both the government and the public. Digital teams across the Federal Government are working hard to find these solutions themselves, which can be inefficient and duplicative. There is currently no good way to share and scale these independently developed solutions across government  —  and that’s where the USWDS can help. 
+
+
+
+  - heading: What are patterns, anyway?
     description: |-
-      Across the federal government, agencies are working to improve their everyday interactions with the public. How do we provide easy access to critical services? How do we deliver faster and more efficient touch points? How do we ensure transparency and build trust? The answer to these questions has increasingly become: deliver better digital services.
+      Patterns are guidance and best practices to design effective user experiences. If components are the ingredients with which you create experiences, patterns are the recipe. The recipe suggests how best to combine the ingredients to create the optimal experience for everyone, while leaving room for flexibility and customization to specific user needs. 
 
-      One piece of the widespread federal effort is implementation of the design system, which provides principles, guidance, and code that makes it easier for the federal government to deliver mobile-friendly, accessible digital services.
+      We, with help from digital leaders across the federal space, have developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of DEIA  —  Diversity, Equity, Inclusion, and Accessibility. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences.
 
-      But we need more. There are still gaps in how the design system can better meet agency needs, so they in turn can better meet the needs of the public.
-
-      Through this research, [we looked to agency teams to help us define what digital transformation looks like](./introduction), both in the near-term and in the future.
-
-  - heading: What we learned
-    title: Findings
+  - heading: Digital interactions through the lens of DEIA
     description: |-
-      Though agencies start with different goals and capabilities, we discovered [they follow a common journey with similar needs](./findings) when it comes to successfully adopting, using, and maintaining the design system.
+     Designers all over the world are applying Inclusive Design Principles to their work, creating more equitable experiences that work for everyone. Every day, practitioners are learning more about how inclusivity and equity need to be reflected in their work. The Inclusive Design Pattern team was no different. 
 
-  - heading: Our future vision
-    title: What’s next
+
+  - heading: Research
     description: |-
-      We’ve identified specific opportunity areas that will move us closer to a design system that meets the needs of teams across every agency — what we call our Near Star (short-term) and North Star (long-term) vision. Working toward these visions is our way of ensuring the design system continues to change over time and stays connected to the teams that are using it.
+      In March 2022, the USWDS team brought together researchers, designers, and engineers to conduct research into inclusive design patterns.
 
-  - heading: What you can do
-    title: Get involved
-    description: |-
-      Let’s transform the way we design and deliver digital government with and for the people.
-
-      Many of the ideas in this report are big-picture thinking, requiring time, collaboration, and strategies to come to fruition. But right now, [you can begin by understanding the value and benefits of using the design system](./get-involved/) to deliver better digital services.
-
-      Use the conversation starters throughout the report to prompt discussions with your managers and team members.
-
-      Also, if you’re interested in exploring these ideas — or in learning more about the design system — [join our community](../about/community/) and get involved.
-
-      The first workshop for federal employees will be in Spring 2021, and we hope to hold ad hoc workshops in the future as well. We also hold regular calls on the third Thursday of each month.
-
-      We’ll provide regular updates on our progress in [monthly calls](https://digital.gov/events/), the [public Slack channel](../about/community/), and the [product roadmap](../about/product-roadmap/).
-
-      <a href="https://touchpoints.app.cloud.gov/touchpoints/8338c61b/submit" class="usa-button usa-button--outline usa-button--next">Stay in touch</a>
-
+      The research resulted in the release of 3 mega-patterns consisting of 17 new sub-patterns, along with new and updated components and page templates. More than 30 individuals across 20 teams shared their experiences, work, and perspectives to inform the design. We interviewed individuals in a variety of roles and across many different agencies, focusing on High Impact Service Providers (HISPs), since they have the most direct contact with the public.
+  
 ---
 
 {% for item in page.summary_sections %}
@@ -75,31 +62,11 @@ summary_sections:
         <div class="grid-col-12">
 
           {% if forloop.index == 1 %}
-            <h3>Our primary focus was to…</h3>
-
-            <div class="grid-row tablet:margin-x-neg-205">
-              <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
-                {% include next/next-spot-item.html text="Understand how teams are using the U.S. Web Design System (USWDS) to build websites and digital services" icon="search"%}
-              </div>
-              <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
-                {% include next/next-spot-item.html text="Develop insights into improving federal digital services with and for the public" icon="lightbulb"%}
-              </div>
-              <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
-                {% include next/next-spot-item.html text="Identify strategies for advancing the design system through collaboration with agencies and other government customer experience initiatives" icon="insights"%}
-              </div>
-            </div>
+            
 
           {% elsif forloop.index == 2 %}
 
-            <figure class="together-quote tablet:padding-left-10">
-              <blockquote class="together-quote__quote">
-                “Consider the story that hasn’t been told.” 
-              </blockquote>
-              <figcaption>
-                <span class="together-quote__source" aria-describedby="quote-desc">Source: DEIA and design expert *</span>
-                <span class="together-quote__source-desc" id="quote-desc">* Shared during a interview</span>
-              </figcaption>
-            </figure>
+            
 
           {% elsif forloop.index == 3 %}
 
@@ -120,41 +87,30 @@ summary_sections:
                 {% include next/next-finding-item.html link="/next/findings/improve/" heading="Be able to iteratively improve digital services" text="Adopting a design system is an ongoing process of design, development, and making iterative improvements and upgrades over time, which requires continued resources and support." icon="steps"%}
               </div>
             </div>
+
+            <figure class="together-quote tablet:padding-left-10">
+              <blockquote class="together-quote__quote">
+                “Consider the story that hasn’t been told.” 
+              </blockquote>
+              <figcaption>
+                <span class="together-quote__source" aria-describedby="quote-desc">Source: DEIA and design expert *</span>
+                <span class="together-quote__source-desc" id="quote-desc">* Shared during a interview</span>
+              </figcaption>
+            </figure>
+
             {% elsif forloop.index == 4 %}
-
-
-            <h3>Our <a href="{{ site.baseurl }}/next/looking-ahead/">Near Star</a> vision:</h3>
-
-            <p class="measure-3 next-lead">All agency teams have what they need to more easily adopt and effectively use the design system. To do that, we’ll focus on the following opportunity areas:</p>
-
+            <h3>Our primary focus was to…</h3>
             <div class="grid-row tablet:margin-x-neg-205">
               <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
-                {% include next/next-spot-item.html text="[Improve strategic communications](./looking-ahead/engagement/) with key audiences" icon="mail" %}
+                {% include next/next-spot-item.html text="Understand how teams are using the U.S. Web Design System (USWDS) to build websites and digital services" icon="search"%}
               </div>
               <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
-                {% include next/next-spot-item.html text="Provide more [robust guidance and support](./looking-ahead/guidance/) to get started with the design system" icon="directions" %}
+                {% include next/next-spot-item.html text="Develop insights into improving federal digital services with and for the public" icon="lightbulb"%}
               </div>
               <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
-                {% include next/next-spot-item.html text="Better [leverage related efforts within TTS](./looking-ahead/collaboration/) and the broader government digital services community" icon="groups" %}
+                {% include next/next-spot-item.html text="Identify strategies for advancing the design system through collaboration with agencies and other government customer experience initiatives" icon="insights"%}
               </div>
             </div>
-
-            <p class="next-highlight-text measure-1"><strong>Accomplishing our Near Star vision will move us closer to the North Star we’re aiming for.</strong></p>
-
-            <h3>Our <a href="{{ site.baseurl }}/next/looking-ahead/vision/">North Star</a> vision:</h3>
-
-            <p class="measure-3 next-lead">Empowered digital agency teams share solutions and use effective human-centered design practices to create greater continuity, improved usability, and increased access for key digital services.</p>
-
-            <h4>Conversation starters</h4>
-            <div class="grid-row tablet:margin-x-neg-205">
-              <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205">
-                {% include next/next-spot-item.html text="<strong>What if</strong> the federal government provided even more robust technology shared services to reduce the burden on individual agencies?" icon="forum" variant="next-spot-item--row" %}
-              </div>
-              <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205">
-                {% include next/next-spot-item.html text="<strong>What if</strong> key content and functionality of government websites was consolidated into fewer public services websites, like usa.gov and recreation.gov?" icon="forum" variant="next-spot-item--row" %}
-              </div>
-            </div>
-
           {% endif %}
 
         </div>

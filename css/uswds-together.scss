@@ -349,9 +349,9 @@ html {
   margin-left: 0;
   margin-right: 0;
   border-left-width: 5px;
-
+  color: #202550;
   @include at-media("tablet") {
-    font-size: size("heading", 15);
+    font-size: size("heading", 14);
   }
 }
 
@@ -400,7 +400,7 @@ html {
     font-family: family("heading");
     font-size: size("heading", 12);
     line-height: line-height("heading", 2);
-    margin-top: units(2.5);
+    margin-top: 0;
     margin-bottom: units(1.5);
     
     @include at-media("desktop") {

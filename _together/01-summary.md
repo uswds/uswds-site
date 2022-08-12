@@ -52,9 +52,8 @@ summary_sections:
       </div>
       <div class="grid-row">
         <div class="grid-col-12">
-
           {% if forloop.index == 1 %}
-          <div class="grid-col-7 grid-offset-4 measure-4">
+          <div class="tablet:grid-col-7 tablet:grid-offset-4 measure-4">
             <p>
               USWDS’s Inclusive Design Patterns project was developed in support of the <a href="https://www.section508.gov/">Section 508</a>, <a href="https://www.congress.gov/bill/115th-congress/house-bill/5759/text">21st Century IDEA</a>, the Biden-Harris Administration’s President’s Management Agenda (PMA) Priority 2 <a href="https://www.performance.gov/pma/cx/">Delivering Excellent, Equitable, and Secure Federal Services</a>, Executive Order 13166 <a href="https://www.justice.gov/crt/executive-order-13166">Improving Access to Services for Persons with Limited English Proficiency</a>, and Executive Order 13985 <a href="https://www.performance.gov/equity/">Advancing an Equitable Government</a>. In supporting these efforts, USWDS’s patterns are designed to remove barriers to transactions and interactions online, and, therefore, help the American public successfully access government services and programs. This is fundamental to our values.
             </p>
@@ -65,31 +64,28 @@ summary_sections:
               Sites that don’t actively seek to address usability, accessibility, and inclusion run the very real risk of alienating, frustrating, and marginalizing the very people we seek to support – with an end result of diminished outcomes for both the government and the public. Digital teams across the Federal Government are working hard to find these solutions themselves, which can be inefficient and duplicative. There is currently no good way to share and scale these independently developed solutions across government  —  and that’s where the USWDS can help. 
             </p>
           </div>
-          {% elsif forloop.index == 2 %}
-
-            
+          {% elsif forloop.index == 2 %}            
 
           {% elsif forloop.index == 3 %}
-
             <h3>Agency teams want to…</h3>
 
             <div class="grid-row tablet:margin-x-neg-205">
               <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205">
-                {% include next/next-finding-item.html link="/next/findings/benefits/" heading="Understand the value and benefits" text="Agencies need to be able to quickly discern the design system’s benefits and how it aligns with their goals for delivering better digital services." icon="plus"%}
+                {% include next/next-finding-item.html link="/next/findings/benefits/" heading="Diversity" text="Diversity in design is about making sure all people are represented" icon="plus"%}
 
-                {% include next/next-finding-item.html link="/next/findings/get-started/" heading="Know how to get started" text="No matter where an agency starts from, it needs to be clear and easy for them to figure out their first steps and how to create a sustainable path forward in the long-run." icon="arrow"%}
-
-                {% include next/next-finding-item.html link="/next/findings/team/" heading="Find the right team and resources" text="Agencies have several options to assemble a cross-functional team to implement the design system and they’re looking for more support in identifying needed skills and assembling the right people." icon="check"%}
+                {% include next/next-finding-item.html link="/next/findings/get-started/" heading="Equity" text="Equity in design addresses the unique barriers people experience, creating fairer experiences." icon="arrow"%}
 
               </div>
               <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205">
-                {% include next/next-finding-item.html link="/next/findings/community/" heading="Feel engaged with the community" text="It’s a collaborative process to build a design system, so it’s essential for agencies to feel like they have access to a support network and a sense of ownership to contribute back to it." icon="triangles"%}
+                {% include next/next-finding-item.html link="/next/findings/community/" heading="Inclusivity" text="Inclusivity in design cultivates a sense of belonging and feeling valued." icon="triangles"%}
 
-                {% include next/next-finding-item.html link="/next/findings/improve/" heading="Be able to iteratively improve digital services" text="Adopting a design system is an ongoing process of design, development, and making iterative improvements and upgrades over time, which requires continued resources and support." icon="steps"%}
+                {% include next/next-finding-item.html link="/next/findings/improve/" heading="Accessible" text="Accessible design ensures that all people can understand and enjoy digital experiences." icon="steps"%}
               </div>
             </div>
 
-            <figure class="together-quote tablet:padding-left-10">
+            <h3>One of our interviewees said it well</h3>    
+
+            <figure class="together-quote tablet:padding-left-10 tablet:margin-bottom-4">
               <blockquote class="together-quote__quote">
                 “Consider the story that hasn’t been told.” 
               </blockquote>
@@ -99,6 +95,21 @@ summary_sections:
               </figcaption>
             </figure>
 
+            <p class="measure-4">
+              Developing patterns through the lens of DEIA requires us to interrogate ourselves and our work at each step of the design process. We outlined a series of questions to consider:
+            </p>
+            
+            <ul>
+              <li>What are our biases and assumptions?</li>
+              <li>Who is involved in our design process?</li>
+              <li>Are we reaching a broad and diverse group of interviewees?</li>
+              <li>Who benefits from our design? Who may be harmed? Who is left out?</li>
+            </ul>
+
+            <p class="measure-4">
+              Developing patterns through the lens of DEIA also means that we need to be humble enough to acknowledge that we don’t know everything today, and as we grow and learn more the patterns will need to change. Today’s solution is not tomorrow’s.
+            </p>
+            
             {% elsif forloop.index == 4 %}
             <h3>Our primary focus was to…</h3>
             <div class="grid-row tablet:margin-x-neg-205">

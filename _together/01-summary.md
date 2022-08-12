@@ -18,14 +18,6 @@ summary_sections:
     description: |-
       For the millions of people who interact with the federal government online each year the experience can be frustrating and alienating. Digital teams across the federal government are committed to delivering the very best user experiences they can, but sometimes lack easy access to the skills and guidance that would help them to do so. In the spirit of offering additional guidance and examples, the U.S. Web Design System is excited to provide a new library of design patterns focused on key digital interactions.
 
-      USWDS’s Inclusive Design Patterns project was developed in support of the [Section 508](https://www.section508.gov/), [21st Century IDEA](https://www.congress.gov/bill/115th-congress/house-bill/5759/text), the Biden-Harris Administration’s President’s Management Agenda (PMA) Priority 2 [Delivering Excellent, Equitable, and Secure Federal Services](https://www.performance.gov/pma/cx/), Executive Order 13166 [Improving Access to Services for Persons with Limited English Proficiency](https://www.justice.gov/crt/executive-order-13166), and Executive Order 13985 [Advancing an Equitable Government](https://www.performance.gov/equity/). In supporting these efforts, USWDS’s patterns are designed to remove barriers to transactions and interactions online, and, therefore, help the American public successfully access government services and programs. This is fundamental to our values.
-
-      As we spoke with digital teams across the federal space we learned that everyone is wrestling with these issues: how to create effective, inclusive, equitable digital experiences. We were fortunate to learn from our colleagues that are already blazing a path towards inclusivity, and to have their perspectives inform our work. We are grateful for the large number of people who contributed their lived experience and perspectives.
-
-      Sites that don’t actively seek to address usability, accessibility, and inclusion run the very real risk of alienating, frustrating, and marginalizing the very people we seek to support – with an end result of diminished outcomes for both the government and the public. Digital teams across the Federal Government are working hard to find these solutions themselves, which can be inefficient and duplicative. There is currently no good way to share and scale these independently developed solutions across government  —  and that’s where the USWDS can help. 
-
-
-
   - heading: What are patterns, anyway?
     description: |-
       Patterns are guidance and best practices to design effective user experiences. If components are the ingredients with which you create experiences, patterns are the recipe. The recipe suggests how best to combine the ingredients to create the optimal experience for everyone, while leaving room for flexibility and customization to specific user needs. 
@@ -62,8 +54,17 @@ summary_sections:
         <div class="grid-col-12">
 
           {% if forloop.index == 1 %}
-            
-
+          <div class="grid-col-7 grid-offset-4 measure-4">
+            <p>
+              USWDS’s Inclusive Design Patterns project was developed in support of the <a href="https://www.section508.gov/">Section 508</a>, <a href="https://www.congress.gov/bill/115th-congress/house-bill/5759/text">21st Century IDEA</a>, the Biden-Harris Administration’s President’s Management Agenda (PMA) Priority 2 <a href="https://www.performance.gov/pma/cx/">Delivering Excellent, Equitable, and Secure Federal Services</a>, Executive Order 13166 <a href="https://www.justice.gov/crt/executive-order-13166">Improving Access to Services for Persons with Limited English Proficiency</a>, and Executive Order 13985 <a href="https://www.performance.gov/equity/">Advancing an Equitable Government</a>. In supporting these efforts, USWDS’s patterns are designed to remove barriers to transactions and interactions online, and, therefore, help the American public successfully access government services and programs. This is fundamental to our values.
+            </p>
+            <p>
+              As we spoke with digital teams across the federal space we learned that everyone is wrestling with these issues: how to create effective, inclusive, equitable digital experiences. We were fortunate to learn from our colleagues that are already blazing a path towards inclusivity, and to have their perspectives inform our work. We are grateful for the large number of people who contributed their lived experience and perspectives.
+            </p>
+            <p>
+              Sites that don’t actively seek to address usability, accessibility, and inclusion run the very real risk of alienating, frustrating, and marginalizing the very people we seek to support – with an end result of diminished outcomes for both the government and the public. Digital teams across the Federal Government are working hard to find these solutions themselves, which can be inefficient and duplicative. There is currently no good way to share and scale these independently developed solutions across government  —  and that’s where the USWDS can help. 
+            </p>
+          </div>
           {% elsif forloop.index == 2 %}
 
             

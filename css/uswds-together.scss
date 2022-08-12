@@ -419,6 +419,9 @@ html {
     margin-bottom: 0;
   
   }
+  p {
+    font-size: size("lang", 6);
+  }
   .border-together-green {
     border-color: #00A91C !important;
   }

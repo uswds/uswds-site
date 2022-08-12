@@ -92,16 +92,13 @@ summary_sections:
 
           {% elsif forloop.index == 2 %}
 
-            <figure class="next-quote">
-              <svg class="usa-icon usa-icon--size-8 next-quote__icon" aria-hidden="true" focusable="false" role="img">
-                <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#format_quote"></use>
-              </svg>
-              <blockquote class="next-quote__quote">
-              The more we use the design system to standardize how we build digital experiences, the more we will improve how the federal web functions.
+            <figure class="together-quote tablet:padding-left-10">
+              <blockquote class="together-quote__quote">
+                “Consider the story that hasn’t been told.” 
               </blockquote>
               <figcaption>
-                <span class="next-quote__source" aria-describedby="quote-desc">Source: <br/>- Civic tech leader*</span>
-                <span class="next-quote__source-desc" id="quote-desc">* Shared during a user interview</span>
+                <span class="together-quote__source" aria-describedby="quote-desc">Source: DEIA and design expert *</span>
+                <span class="together-quote__source-desc" id="quote-desc">* Shared during a interview</span>
               </figcaption>
             </figure>
 

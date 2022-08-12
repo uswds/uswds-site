@@ -90,7 +90,9 @@ html {
 .together-section .grid-container {
   max-width: 87.5rem !important;
   width: 100%;
-  padding: 0 4rem;
+  @include at-media("tablet") {
+    padding: 0 4rem;
+  }
 }
 
 // Header
@@ -319,42 +321,48 @@ html {
 
 // Blockquote
 // -------------------------------------
-.next-quote {
-  border: 10px solid $gray-20-next;
-  padding: units(5);
-  text-align: center;
+.together-quote {
+  border: 3px dashed $gray-20-next;
   margin-top: units(6);
   margin-left: 0;
   margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: units(5) units(2);
+  @include at-media("tablet") {
+    padding: 5rem 10rem;
+  }
 }
 
-.next-quote__icon {
+.together-quote__icon {
   color: color("red-50");
 }
 
-.next-quote__quote {
+.together-quote__quote {
   font-family: family("heading");
-  font-size: size("heading", 9);
+  font-size: size("heading", 13);
   font-weight: font-weight("bold");
   line-height: line-height("heading", 3);
   margin-top: units(2);
   margin-left: 0;
   margin-right: 0;
-  width: 100%;
+  border-left-width: 5px;
 
   @include at-media("tablet") {
-    font-size: size("heading", 13);
+    font-size: size("heading", 15);
   }
 }
 
-.next-quote__source {
-  color: color("base");
+.together-quote__source {
+  color: color("base-darkest");
   display: block;
   font-size: size("lang", 9);
-  font-weight: font-weight("bold");
+  font-weight: font-weight("thin");
 }
 
-.next-quote__source-desc {
+.together-quote__source-desc {
   color: color("base");
   display: block;
   font-size: size("lang", 5);

@@ -33,7 +33,7 @@ summary_sections:
     description: |-
       In March 2022, the USWDS team brought together researchers, designers, and engineers to conduct research into inclusive design patterns.
 
-      The research resulted in the release of 3 mega-patterns consisting of 17 new sub-patterns, along with new and updated components and page templates. More than 30 individuals across 20 teams shared their experiences, work, and perspectives to inform the design. We interviewed individuals in a variety of roles and across many different agencies, focusing on High Impact Service Providers (HISPs), since they have the most direct contact with the public.
+      The research resulted in the release of 3 mega-patterns consisting of 17 new sub-patterns, along with new and updated components and page templates. More than 30 individuals across 20 teams shared their experiences, work, and perspectives to inform the design. We interviewed individuals in a variety of roles and across many different agencies, focusing on [High Impact Service Providers (HISPs)](https://www.performance.gov/cx/assets/files/HISP-listing-2021.pdf), since they have the most direct contact with the public.
   
 ---
 
@@ -111,18 +111,45 @@ summary_sections:
             </p>
             
             {% elsif forloop.index == 4 %}
-            <h3>Our primary focus was to…</h3>
+            <h3>Our primary focus was to learn…</h3>
             <div class="grid-row tablet:margin-x-neg-205">
-              <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="Understand how teams are using the U.S. Web Design System (USWDS) to build websites and digital services" icon="search"%}
+              <div class="tablet:grid-col-3 tablet:padding-x-205">
+                {% include together/together-spot-item.html text="How teams are applying the lens of DEIA to their design work, and which patterns they’ve revised to be more equitable and inclusive." icon="search"%}
               </div>
-              <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="Develop insights into improving federal digital services with and for the public" icon="lightbulb"%}
+              <div class="tablet:grid-col-3 tablet:padding-x-205">
+                {% include together/together-spot-item.html text="What challenges agencies are facing with trying to adopt more inclusive design patterns." icon="lightbulb"%}
               </div>
-              <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="Identify strategies for advancing the design system through collaboration with agencies and other government customer experience initiatives" icon="insights"%}
+              <div class="tablet:grid-col-3 tablet:padding-x-205">
+                {% include together/together-spot-item.html text="Which specific interactions are most challenging and could use attention from USWDS." icon="insights"%}
+              </div>
+              <div class="tablet:grid-col-3 tablet:padding-x-205">
+                {% include together/together-spot-item.html text="Who has design patterns that USWDS can leverage to begin their work." icon="search"%}
               </div>
             </div>
+            
+            <p class="measure-4">
+              We also conducted research outside of the federal space to understand best practices (and notable failures) in order to incorporate these into our patterns.
+            </p>
+
+            <h3>Our focus was to…</h3>
+            <div class="grid-row tablet:margin-x-neg-205">
+              <div class="tablet:grid-col-3 tablet:padding-x-205">
+                {% include together/together-spot-item.html text="Benchmark patterns by identifying which organizations had patterns and how they approached them." icon="search"%}
+              </div>
+              <div class="tablet:grid-col-3 tablet:padding-x-205">
+                {% include together/together-spot-item.html text="Analyze thought leadership around patterns, their place in the design system, and the content that should be in each pattern." icon="lightbulb"%}
+              </div>
+              <div class="tablet:grid-col-3 tablet:padding-x-205">
+                {% include together/together-spot-item.html text="Take a deep dive into the topic of DEIA, especially as it relates to digital experiences." icon="insights"%}
+              </div>
+              <div class="tablet:grid-col-3 tablet:padding-x-205">
+                {% include together/together-spot-item.html text="Understand the best practices specific to each pattern, along with any federal requirements that need to guide each recommendation." icon="search"%}
+              </div>
+            </div>
+
+            <p class="measure-4">
+              Along the way we solicited feedback from a wide range of experts in the federal space, including digital teams, policymakers, and subject matter experts. Their input was integral to our work.
+            </p>
           {% endif %}
 
         </div>

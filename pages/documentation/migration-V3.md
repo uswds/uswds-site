@@ -25,7 +25,7 @@ subnav:
   href: '#6-optimize-your-installation'
 ---
 {: .site-note }
-**Note:** This guide provides instructions for upgrading from USWDS 2 to USWDS 3. If your project uses USWDS 1, you will need to update according to the [USWDS 2.0 migration guide]({{ site.baseurl }}/documentation/migration-v2) before proceeding with these steps. [Not sure which version of USWDS you're using? Here's how to check](#1-check-your-current-uswds-code-and-settings-versions).
+**Note:** This guide provides instructions for upgrading from USWDS 2 to USWDS 3. If your project uses USWDS 1, you will need to update according to the [USWDS 2.0 migration guide]({{ site.baseurl }}/documentation/migration-v2) before proceeding with these steps. [Not sure which version you're on? Here's how to check](#1-check-your-current-uswds-code-and-settings-versions).
 
 ## Why migrate to USWDS 3.0?
 

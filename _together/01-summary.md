@@ -67,19 +67,19 @@ summary_sections:
           {% elsif forloop.index == 2 %}            
 
           {% elsif forloop.index == 3 %}
-            <h3>Agency teams want to…</h3>
+            <h3>What does it mean to consider digital interactions through the lens of DEIA?</h3>
 
             <div class="grid-row tablet:margin-x-neg-205">
               <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205">
-                {% include next/next-finding-item.html link="/next/findings/benefits/" heading="Diversity" text="Diversity in design is about making sure all people are represented" icon="plus"%}
+                {% include together/together-finding-item.html  heading="Diversity" text="Diversity in design is about making sure all people are represented" icon="diversity" alt="people in circle"%}
 
-                {% include next/next-finding-item.html link="/next/findings/get-started/" heading="Equity" text="Equity in design addresses the unique barriers people experience, creating fairer experiences." icon="arrow"%}
+                {% include together/together-finding-item.html heading="Equity" text="Equity in design addresses the unique barriers people experience, creating fairer experiences." icon="equity" alt="two groups of people on scale and they balance"%}
 
               </div>
               <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205">
-                {% include next/next-finding-item.html link="/next/findings/community/" heading="Inclusivity" text="Inclusivity in design cultivates a sense of belonging and feeling valued." icon="triangles"%}
+                {% include together/together-finding-item.html heading="Inclusivity" text="Inclusivity in design cultivates a sense of belonging and feeling valued." icon="inclusivity" alt="two people connected by a circle"%}
 
-                {% include next/next-finding-item.html link="/next/findings/improve/" heading="Accessible" text="Accessible design ensures that all people can understand and enjoy digital experiences." icon="steps"%}
+                {% include together/together-finding-item.html  heading="Accessible" text="Accessible design ensures that all people can understand and enjoy digital experiences." icon="a11y" alt="man in a wheelchair"%}
               </div>
             </div>
 
@@ -114,13 +114,13 @@ summary_sections:
             <h3>Our primary focus was to…</h3>
             <div class="grid-row tablet:margin-x-neg-205">
               <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
-                {% include next/next-spot-item.html text="Understand how teams are using the U.S. Web Design System (USWDS) to build websites and digital services" icon="search"%}
+                {% include together/together-spot-item.html text="Understand how teams are using the U.S. Web Design System (USWDS) to build websites and digital services" icon="search"%}
               </div>
               <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
-                {% include next/next-spot-item.html text="Develop insights into improving federal digital services with and for the public" icon="lightbulb"%}
+                {% include together/together-spot-item.html text="Develop insights into improving federal digital services with and for the public" icon="lightbulb"%}
               </div>
               <div class="grid-col-12 tablet:grid-col-4 tablet:padding-x-205">
-                {% include next/next-spot-item.html text="Identify strategies for advancing the design system through collaboration with agencies and other government customer experience initiatives" icon="insights"%}
+                {% include together/together-spot-item.html text="Identify strategies for advancing the design system through collaboration with agencies and other government customer experience initiatives" icon="insights"%}
               </div>
             </div>
           {% endif %}

@@ -79,7 +79,7 @@ summary_sections:
               <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205">
                 {% include together/together-finding-item.html heading="Inclusivity" text="Inclusivity in design cultivates a sense of belonging and feeling valued." icon="inclusivity" alt="two people connected by a circle"%}
 
-                {% include together/together-finding-item.html  heading="Accessible" text="Accessible design ensures that all people can understand and enjoy digital experiences." icon="a11y" alt="man in a wheelchair"%}
+                {% include together/together-finding-item.html  heading="Accessibility" text="Accessibility ensures that all people can understand and enjoy digital experiences." icon="a11y" alt="man in a wheelchair"%}
               </div>
             </div>
 

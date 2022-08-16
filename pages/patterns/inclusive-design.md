@@ -17,7 +17,7 @@ Designers all over the world are applying inclusive design principles to their w
 - <strong>Diversity</strong> in design is about making sure all people are represented.
 - <strong>Equity</strong> in design addresses the unique barriers people experience, creating fairer experiences.
 - <strong>Inclusivity</strong> in design cultivates a sense of belonging and feeling valued.
-- <strong>Accessible</strong> design ensures that all people can understand and enjoy digital experiences.
+- <strong>Accessibility</strong> ensures that all people can understand and enjoy digital experiences.
 
 Developing patterns through the lens of DEIA also means that we need to acknowledge that as we grow and learn, patterns, too will need to change and evolve. The guiding principles of inclusive design, however, will remain a touchstone. 
 

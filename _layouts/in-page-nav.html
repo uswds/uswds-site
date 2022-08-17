@@ -11,7 +11,7 @@ layout: default
     {% endif %}
   </aside>
 
-  <div class="in-page-nav-container">
+  <div class="usa-in-page-nav-container">
     <main id="main-content" class="main-content">
       <div class="styleguide-content{% unless page.category == 'Utilities' and page.type != 'docs' %} usa-prose site-prose{% endunless %}">
         <header>
@@ -26,8 +26,6 @@ layout: default
         {{ content }}
       </div>
     </main>
-    <div id="in-page-navigation" class="in-page-navigation">
-      <p class="site-subheading">On this page</p>
-    </div>
+    <aside class="usa-in-page-nav"></aside>
   </div>
 </div>

@@ -156,7 +156,33 @@ summary_sections:
             </p>
           </div>
           {% elsif forloop.index == 5 %}
-            <!-- TODO -->
+          <div class="tablet:grid-offset-2 measure-4">
+            <p>
+              Forms can be frustrating and alienating, especially if the user is recovering from trauma or in a volatile situation, such as in the aftermath of a disaster. Interviewees asked for guidance around how we can increase trust and help the public to have a better experience with forms. 
+            </p>
+            {% include together/together-quote.html quote="People are reluctant to give information because of the lack of trust and any number of concerns. [We need help] building trust into the design process." source="HISP Digital team member"%}
+            <p>
+              Some of the specific insights we heard regarding complex forms include:
+            </p>
+            <ul>
+              <li>
+               Users need to know why information is required, what we are using it for, and how it will be protected.
+              </li>
+              <li>
+               Some users, especially those in difficult situations, may need to be able to complete a form over several sessions.
+              </li>
+              <li>
+                Not clearly stating upfront what information will be required to complete the form can lead to form abandonment.
+              </li>
+              <li>
+                Forms that make assumptions  —  such as that all people in a family have the same last name  —  can be very frustrating for people to complete.
+              </li>
+            </ul>
+            {% include together/together-quote.html quote="Victims/survivors have expressed trouble in filling out forms due to the progression of questions." source="HISP Digital team member"%}
+            <p>
+              Forms are a real challenge for digital teams, as they try to meet both the needs of the public and those of the program. 
+            </p>
+          </div>
           {% elsif forloop.index == 6 %}
             <!-- TODO -->
           {% endif %}

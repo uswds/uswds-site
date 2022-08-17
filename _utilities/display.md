@@ -143,21 +143,63 @@ utilities:
       title="Display"
     %}
     <section class="utility-examples">
-      <div class="display-block border-1px padding-2 margin-bottom-05"><span class="utility-class">.display-block</span></div>
-      <div class="display-flex border-1px padding-2 margin-bottom-05"><span class="utility-class">.display-flex</span></div>
-      <div class="display-inline border-1px padding-2 margin-bottom-05"><span class="utility-class">.display-inline</span></div>
-      <div class="display-inline-block border-1px padding-2 margin-bottom-05"><span class="utility-class">.display-inline-block</span></div>
-      <div class="display-inline-flex border-1px padding-2 margin-bottom-05"><span class="utility-class">.display-inline-flex</span></div>
-      <div class="display-none border-1px padding-2 margin-bottom-05"><span class="utility-class">.display-inline</span></div>
-      <div class="display-table">
-        <div class="display-table-row">
-          <div class="display-table-cell border-1px padding-2"><span class="utility-class">.display-table-cell</span></div>
-          <div class="display-table-cell border-1px padding-2"><span class="utility-class">.display-table-cell</span></div>
-        </div>
-      </div>
-
+      {% assign thisRowClasses =      'flex-justify' %}
+      {% assign thisWrap =            true %}
+      {% assign thisUtilityClasses =  'grid-col-12 tablet:grid-col' %}
+      {% assign displayTokens =       'block, flex, inline, inline-block, inline-flex, none'
+        | split: ', ' %}
+      {% for token in displayTokens %}
+        {% capture thisClass %}
+          .display-{{ token }}
+        {% endcapture %}
+        {% capture thisValue %}
+          {{ token }}
+        {% endcapture %}
+        {% capture thisExample %}
+          <div class="display-{{ token }} bg-secondary-light border-1px border-secondary-light padding-x-10 padding-y-3">
+          </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          wrap = thisWrap
+          rowClasses = thisRowClasses
+          utility = thisClass
+          utilityClasses = thisUtilityClasses
+          value = thisValue
+          valueClasses = thisValueClasses
+          example = thisExample
+        %}
+      {% endfor %}
+      {% assign thisRowClasses =      'flex-justify' %}
+      {% assign thisWrap =            true %}
+      {% assign thisUtilityClasses =  'grid-col-12 tablet:grid-col' %}
+      {% assign displayTableTokens = 'table-cell'
+        | split: ', ' %}
+      {% for token in displayTableTokens %}
+        {% capture thisClass %}
+          .display-{{ token }}
+        {% endcapture %}
+        {% capture thisValue %}
+          {{ token }}
+        {% endcapture %}
+        {% capture thisExample %}
+          <div class="display-table">
+            <div class="display-table-row">
+              <div class="display-{{ token }} border-1px border-white bg-secondary-light padding-x-5 padding-y-3"></div>
+              <div class="display-{{ token }} border-1px border-white bg-secondary-light padding-x-5 padding-y-3"></div>
+            </div>
+          </div>
+        {% endcapture %}
+        {% include utilities/utility-example.html
+          wrap = thisWrap
+          rowClasses = thisRowClasses
+          utility = thisClass
+          utilityClasses = thisUtilityClasses
+          value = thisValue
+          example = thisExample
+        %}
+      {% endfor %}
       <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4 margin-bottom-1">
-        <button class="usa-accordion__button" aria-controls="code-relative" aria-expanded="true">Code</button>
+        <button type="button" class="usa-accordion__button" aria-controls="code-relative" aria-expanded="true">Code</button>
         <div id="code-relative" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
 {% highlight html linenos %}
@@ -166,11 +208,12 @@ utilities:
 <div class="display-inline border-1px ...">.display-inline</div>
 <div class="display-inline-block border-1px ...">.display-inline-block</div>
 <div class="display-inline-flex border-1px ...">.display-inline-flex</div>
-<div class="display-none border-1px ...">.display-inline</div>
+<div class="display-none ...">.display-none</div>
 <div class="display-table">
-<div class="display-table-row">
-  <div class="display-table-cell border-1px ...">.display-table-cell</div>
-  <div class="display-table-cell border-1px ...">.display-table-cell</div>
+  <div class="display-table-row">
+    <div class="display-table-cell border-1px ...">.display-table-cell</div>
+    <div class="display-table-cell border-1px ...">.display-table-cell</div>
+  </div>
 </div>
 {% endhighlight %}
 </div>
@@ -347,7 +390,7 @@ utilities:
         </div>
       </div>
       <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-0">
-        <button class="usa-accordion__button" aria-controls="code-static-relative" aria-expanded="true">Code</button>
+        <button type="button" class="usa-accordion__button" aria-controls="code-static-relative" aria-expanded="true">Code</button>
         <div id="code-static-relative" class="usa-accordion__content">
 <div markdown="1">
 {% highlight html linenos %}
@@ -390,7 +433,7 @@ utilities:
         </div>
       </div>
       <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-2">
-        <button class="usa-accordion__button" aria-controls="code-fixed" aria-expanded="true">Code</button>
+        <button type="button" class="usa-accordion__button" aria-controls="code-fixed" aria-expanded="true">Code</button>
         <div id="code-fixed" class="usa-accordion__content">
 <div markdown="1">
 {% highlight html linenos %}
@@ -432,7 +475,7 @@ utilities:
         </div>
       </div>
       <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-2 margin-bottom-1">
-        <button class="usa-accordion__button" aria-controls="code-sticky" aria-expanded="true">Code</button>
+        <button type="button" class="usa-accordion__button" aria-controls="code-sticky" aria-expanded="true">Code</button>
         <div id="code-sticky" class="usa-accordion__content">
 <div markdown="1">
 {% highlight html linenos %}

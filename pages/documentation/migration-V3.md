@@ -173,7 +173,7 @@ Add this load path to your compiler settings, or update any old paths if your co
 
 <!-- Start USWDS Gulp section -->
 <h4 class="usa-accordion__heading">
-  <button class="usa-accordion__button" aria-controls="m-a6">
+  <button type="button" class="usa-accordion__button" aria-controls="m-a6">
     If you're using USWDS Gulp
   </button>
 </h4>
@@ -249,7 +249,7 @@ includePaths: [
 
 <!-- Start USWDS Compile section -->
 <h4 class="usa-accordion__heading">
-  <button class="usa-accordion__button" aria-controls="m-a7">
+  <button type="button" class="usa-accordion__button" aria-controls="m-a7">
     If you're using USWDS Compile
   </button>
 </h4>
@@ -271,7 +271,7 @@ const uswds = require("@uswds/compile");
 
 <!-- Start custom gulp workflow section -->
 <h4 class="usa-accordion__heading">
-  <button class="usa-accordion__button" aria-controls="m-a8">
+  <button type="button" class="usa-accordion__button" aria-controls="m-a8">
     If you're using a custom gulp workflow
   </button>
 </h4>
@@ -299,11 +299,11 @@ const uswds = require("@uswds/compile");
     - **Packages:** `@uswds/uswds/packages`
 1. Recompile your Sass as usual and check that your files compiled as expected. When it compiles successfully, it's using USWDS 3.0!
 </div>
-<!-- End custom gulp workflow section --> 
+<!-- End custom gulp workflow section -->
 
 <!-- Start custom gulp workflow section -->
 <h4 class="usa-accordion__heading">
-  <button class="usa-accordion__button" aria-controls="m-a9">
+  <button type="button" class="usa-accordion__button" aria-controls="m-a9">
     If you're using webpack
   </button>
 </h4>
@@ -325,7 +325,7 @@ const uswds = require("@uswds/compile");
 
   This array needs to include `"./node_modules/@uswds/uswds/packages"`.
 </div>
-<!-- End custom gulp workflow section --> 
+<!-- End custom gulp workflow section -->
 
 </div> <!--End compiler accordion -->
 
@@ -342,6 +342,7 @@ Follow the instructions in each section that applies to either your USWDS versio
 <!-- Start All section -->
 <h4 class="usa-accordion__heading">
   <button
+    type="button"
     class="usa-accordion__button"
     aria-controls="m-all"
   >
@@ -365,6 +366,7 @@ We've removed the `$output-all-utilities` settings and replaced it with `$output
 <!-- Start 2.13.0 section -->
 <h4 class="usa-accordion__heading">
   <button
+    type="button"
     class="usa-accordion__button"
     aria-controls="m-a1"
   >
@@ -385,7 +387,7 @@ You'll need to update any instances of the small search button on your site. We'
 ###### Old code
 
 ```html
-<button class="usa-button" type="submit">
+<button type="button" class="usa-button" type="submit">
   <span class="usa-sr-only">Search</span>
 <button>
 ```
@@ -394,7 +396,7 @@ You'll need to update any instances of the small search button on your site. We'
 ###### New code
 
 ```html
-<button class="usa-button" type="submit">
+<button type="button" class="usa-button" type="submit">
   <img
     src="{% raw %}{{ uswds image path }}{% endraw %}/usa-icons-bg/search--white.svg"
     class="usa-search__submit-icon"
@@ -479,6 +481,7 @@ You'll need to update social media icons in the USWDS footer. We're now using ex
 <!-- Start 2.12.0 section -->
 <h4 class="usa-accordion__heading">
   <button
+    type="button"
     class="usa-accordion__button"
     aria-controls="m-a2"
   >
@@ -520,6 +523,7 @@ Setting | Old default | New default
 <!-- Start 2.11.2 section -->
 <h4 class="usa-accordion__heading">
   <button
+    type="button"
     class="usa-accordion__button"
     aria-controls="m-a3"
   >
@@ -549,6 +553,7 @@ We replaced the `thumb_down_off_alt` icon with `thumb_down_alt` in our default i
 <!-- Start 2.11.0 section -->
 <h4 class="usa-accordion__heading">
   <button
+    type="button"
     class="usa-accordion__button"
     aria-controls="m-a4"
   >
@@ -579,6 +584,7 @@ Setting | Old default | New default
 <!-- Start 2.10.1 section -->
 <h4 class="usa-accordion__heading">
   <button
+    type="button"
     class="usa-accordion__button"
     aria-controls="m-a5"
   >
@@ -623,7 +629,7 @@ These instructions will help you update your `@import` references to the new syn
 
 #### Update your @import references
 
-1. **Replace all instances of @import with @forward in your Sass entry point.** 
+1. **Replace all instances of @import with @forward in your Sass entry point.**
 
 ```diff
 - @import "uswds-theme-color";
@@ -699,7 +705,7 @@ These instructions will help you update your `@import` references to the new syn
     ```
     {% endraw %}
 
-    In the previous example, `{% raw %}{{ your settings }}{% endraw %}` would be a list of all the settings variables in your settings file.
+    In the previous example, `{% raw %}{{ your settings }}{% endraw %}` would be a list of all the USWDS settings variables in your settings file.
 
     So with an existing settings file like the following:
 
@@ -751,6 +757,10 @@ These instructions will help you update your `@import` references to the new syn
     );
     ```
     Note that the new `@use` statement is a list of variables, so each line ends in a comma `,` instead of a semicolon `;`.
+
+    {: .site-note }
+    **Note:** the `@use "uswds-core" with ()` configuration accepts only current USWDS settings variables. If you receive the error `This module was already loaded, so it can't be configured using "with"`, confirm that all your declared variables exist in the in the list of [USWDS settings]({{ site.baseurl }}/documentation/settings/) and try compiling again.
+
 1. **Use the new theme file in your project** If your project already was using a project-specific theme settings file, you're all set. If not, you'll need to open your project's Sass entry point, typically `styles.scss`. It usually looks something like this:
 
     ```scss
@@ -796,24 +806,24 @@ Now your project is using its theme settings in the proper USWDS 3.0 format! You
 
 #### Use "uswds-core" for any custom USWDS Sass
 
-Unlike `@import`, which makes Sass members (tokens, variables, mixins, functions, or placeholders) available globally, `@use` only reveals Sass members to the stylesheet that loads them. 
+Unlike `@import`, which makes Sass members (tokens, variables, mixins, functions, or placeholders) available globally, `@use` only reveals Sass members to the stylesheet that loads them.
 
 Accommodating this is relatively straightforward for USWDS 3.0: For any project stylesheet that uses USWDS members (that's probably most, if not all, of them!), you'll need to load `uswds-core` at the top of your stylesheet. You will also need to check if you have non-USWDS modules in your stylesheet and load those as well. Here is how to do it:
 
-1. **Load "uswds-core" at the top of any stylesheet that uses USWDS members.** 
+1. **Load "uswds-core" at the top of any stylesheet that uses USWDS members.**
     ```scss
     /* custom stylesheet */
     @use "uswds-core" as *;
     ```
-    
-    In USWDS 3.0, `uswds-core` is the name of the package (or "module" in Sass terminology) that contains all the members used in USWDS Sass. Loading this package makes all of these members available to your stylesheet. 
 
-    In this step, we add `as *` to our `@use` statement to indicate that we don't want any namespacing attached to USWDS members. By default, Sass members brought in via `@use` are namespaced using the basename of the file url. For example, if we were to use the the default load pattern `@use "uswds-color`, our `color()` function would need to be called with `uswds-core.color()`. Removing namespacing enables us to use the same member references that we used with the older `@import` syntax. 
-    
-    For more information on controlling namespacing, read the [Sass documentation on namespacing](https://sass-lang.com/documentation/at-rules/use#choosing-a-namespace). 
+    In USWDS 3.0, `uswds-core` is the name of the package (or "module" in Sass terminology) that contains all the members used in USWDS Sass. Loading this package makes all of these members available to your stylesheet.
 
-1. **Check if your project uses members defined outside of USWDS.** This includes searching for references to [Sass' built-in modules](https://sass-lang.com/documentation/modules). If it does, you'll need to include these as well via `@use` at the top of the document. 
-   
+    In this step, we add `as *` to our `@use` statement to indicate that we don't want any namespacing attached to USWDS members. By default, Sass members brought in via `@use` are namespaced using the basename of the file url. For example, if we were to use the the default load pattern `@use "uswds-color`, our `color()` function would need to be called with `uswds-core.color()`. Removing namespacing enables us to use the same member references that we used with the older `@import` syntax.
+
+    For more information on controlling namespacing, read the [Sass documentation on namespacing](https://sass-lang.com/documentation/at-rules/use#choosing-a-namespace).
+
+1. **Check if your project uses members defined outside of USWDS.** This includes searching for references to [Sass' built-in modules](https://sass-lang.com/documentation/modules). If it does, you'll need to include these as well via `@use` at the top of the document.
+
    As an example, your stylesheet might contain the following lines at the top:
 
     ```scss
@@ -849,12 +859,12 @@ Using individual component packages instead of the `uswds` bundle package can re
     If you are using the `uswds` package and want to use component packages instead, proceed to the next step.
 
 2. **Determine which packages your project needs.** The process of determining which packages your project needs is not automatic. Most projects will need to do a little work to identify the components their project uses.
-   
+
     A brute-force method to determine which packages your project uses is to search your codebase for use of a key class name associated with that component, like `usa-accordion` for accordions. All `usa-` prefixed packages use the same name as their CSS class. For reference, all the available packages in USWDS 3.0 are listed in the [table below](#available-packages). Search package-by-package for instances of the package or search your codebase for instances of `usa-` and make a running list of all the packages you use.
 
-3. **Load the your project's necessary component packages in your Sass entry point.** If you find a hit for the class name in your codebase, include the relevant package in your Sass entry point. 
+3. **Load the your project's necessary component packages in your Sass entry point.** If you find a hit for the class name in your codebase, include the relevant package in your Sass entry point.
 
-    For instance, if you found `usa-banner`, `usa-identifier`, `usa-button`, and `usa-accordion`, you might attach the following packages in your Sass entry point: 
+    For instance, if you found `usa-banner`, `usa-identifier`, `usa-button`, and `usa-accordion`, you might attach the following packages in your Sass entry point:
 
     ```scss
     @forward "usa-accordion";
@@ -888,7 +898,7 @@ For any package listed below, add a `@forward "[package]"` line to your Sass ent
 
 #### Managing utility classes
 
-Utility classes have their own naming conventions that are a bit less straightforward to identify. Look at the table below. If your codebase includes classes that start with one of the **class bases**, include its **utility module name** in the `$output-these-utilities setting`. 
+Utility classes have their own naming conventions that are a bit less straightforward to identify. Look at the table below. If your codebase includes classes that start with one of the **class bases**, include its **utility module name** in the `$output-these-utilities setting`.
 
 Look for classes in your codebase for searching for a regular expression string like `[" ]flex-`.
 
@@ -938,7 +948,7 @@ In a gulp workflow, we recommend using `gulp-sass` and `sass-embedded` together 
 
 #### Reduce utility responsive breakpoints
 
-There are nine responsive breakpoints available to utilities and the layout grid. These are defined in the `$theme-utility-breakpoints setting`. If a utility breakpoint is set to `true`, any layout grid class and any utility with its responsive key set to true will output responsive classes. 
+There are nine responsive breakpoints available to utilities and the layout grid. These are defined in the `$theme-utility-breakpoints setting`. If a utility breakpoint is set to `true`, any layout grid class and any utility with its responsive key set to true will output responsive classes.
 
 This can result in bulky CSS, and if your project doesn't use these breakpoints you can save a lot of space by setting these breakpoints to false. By default, `mobile-lg`, `tablet`, and `desktop` are set to true:
 

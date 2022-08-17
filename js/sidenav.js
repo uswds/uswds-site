@@ -1,22 +1,22 @@
-'use strict';
+"use strict";
 
-var $ = require('jquery');
-var calculateAnchorPosition = require('./calculate-anchor-position');
+var $ = require("jquery");
+var calculateAnchorPosition = require("./calculate-anchor-position");
 
 /* Firefox needs html, others need body */
-var root = $('body, html');
+var root = $("body, html");
 
 // capture that the enter key was used to "click"
-$('.sidenav').on('keydown', 'a', function (e) {
+$(".sidenav").on("keydown", "a", function (e) {
   var ENTER = 13;
   if (e.which === ENTER) {
-    $(this).data('keypress', true);
+    $(this).data("keypress", true);
   }
 });
 
-$('.sidenav').on('click', 'a', function (e) {
+$(".sidenav").on("click", "a", function (e) {
   // long url splitting
-  var hashLocation = $(this).attr('href').split('#')[ 1 ];
+  var hashLocation = $(this).attr("href").split("#")[ 1 ];
   var scrollTopPos = calculateAnchorPosition(hashLocation);
 
   //if anchor doesn't exist on the page, or calc fails
@@ -34,7 +34,7 @@ $('.sidenav').on('click', 'a', function (e) {
     {
       duration: 200,
       start: function () {
-        var newHash = '#' + hashLocation;
+        var newHash = "#" + hashLocation;
 
         // using pushState is easiest way to prevent double jumps
         if (history && history.pushState && window.location.hash !== newHash) {
@@ -46,11 +46,11 @@ $('.sidenav').on('click', 'a', function (e) {
       done: function () {
         // if keyboard was used, update keyboard focus to section
         var link = $(e.target);
-        var section = $('#' + hashLocation);
+        var section = $("#" + hashLocation);
 
-        if (link.data('keypress') === true) {
-          link.removeData('keypress');
-          section.attr('tabindex', '-1');
+        if (link.data("keypress") === true) {
+          link.removeData("keypress");
+          section.attr("tabindex", "-1");
           section.focus();
         }
       },

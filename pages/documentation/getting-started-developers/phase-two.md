@@ -60,15 +60,7 @@ In plain language, this code says:
   ```scss
   @use "uswds-core" with (
     $theme-image-path: "../uswds/img",
-    $theme-show-compile-warnings: false,
-    $theme-color-primary-lightest: "green-warm-10",
-    $theme-color-primary-lighter: "green-warm-20",
-    $theme-color-primary-light: "green-warm-30",
-    $theme-color-primary: "green-warm-50",
-    $theme-color-primary-vivid: "green-warm-50v",
-    $theme-color-primary-dark: "green-warm-60v",
-    $theme-color-primary-darker: "green-warm-70v",
-    $theme-color-primary-darkest: "green-warm-80",
+    $theme-show-compile-warnings: true,
     $theme-banner-background-color: "ink",
     $theme-banner-link-color: "primary-light",
     $theme-banner-max-width: "none",
@@ -79,7 +71,7 @@ In plain language, this code says:
 
   The USWDS source code is the core of the design system. It contains all the styles for USWDS components as well as the design language of Sass tokens and functions used to build those components. USWDS source code has its own Sass entry point, which lives in the `node_modules` directory when you install USWDS with npm.
 
-  This is called `uswds` (or, more accurately, `uswds/_index.scss`), and it’s found in the `/packages` directory of the USWDS npm package. When you install with npm, the complete path is typically `./node_modules/@uswds/uswds/packages/uswds/_index.html`.
+  This is called `uswds` (or, more accurately, `uswds/_index.scss`), and it’s found in the `/packages` directory of the USWDS npm package. When you install with npm, the complete path is typically `./node_modules/@uswds/uswds/packages/uswds/_index.scss`.
 
 - **Build new work on top of that foundation**: Finally, add any custom project styles built from design system code.
 
@@ -185,12 +177,24 @@ Initialize your project and get started by running the following command:
 ```bash
 npx gulp init
 ```
+
+{: .site-note }
+**Note:** Use `init` only once. The `init` task is meant for initializing the design system on a project. Since it will overwrite project files (like settings files and the Sass entry point), use it sparingly and don't use it for updating the design system on a project, or at any point after you've customized your settings files.
+
 If you receive the error `replaceAll is not a function` when trying to run `npx gulp init`, please verify you are using the version of Node specified in the [.nvmrc file](https://github.com/uswds/uswds/blob/main/.nvmrc) and run the command again.
 
 This command will add all the USWDS assets to the directories you set, add a project Sass entry point, and compile USWDS into CSS. Add this CSS file to the `<head>` of your project HTML.
 
 ## Step 6: Verify successful installation
 Any time you want to recompile your CSS, run `npx gulp compileSass` from the command line in your project root.
+
+You should see a successful compile message.
+
+{:.site-terminal}
+```bash
+[10:10:10] Finished 'buildSass' after 5.02 s
+[10:10:10] Finished 'compileSass' after 5.03 s
+```
 
 To verify whether you’ve successfully installed USWDS and that compilation is working, we recommend confirming the directory structure matches the paths you have updated in `gulpfile.js`, copying a few [components]({{ site.baseurl }}/components/overview/), pasting them into an HTML page, and then visiting that page in the browser to see if the components appear as expected.
 

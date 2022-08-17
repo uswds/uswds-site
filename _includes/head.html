@@ -46,14 +46,14 @@
 <!-- env: {{ site.env }} -->
 
 {% if site.env == 'dev' %}
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-fonts.css">
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-components.css">
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-custom.css">
-  {% if page.layout == 'next' or page.layout == 'next-content' %}
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-next.css">
-  {% endif %}
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-utilities.css">
-  
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-fonts.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-components.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-custom.css">
+    {% if page.layout == 'next' or page.layout == 'next-content' %}
+      <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-next.css">
+    {% endif %}
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uswds-utilities.css">
+
 {% else %}
   {% if page.layout == 'next' or page.layout == 'next-content' %}
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles-next.css">

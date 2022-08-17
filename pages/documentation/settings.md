@@ -27,7 +27,7 @@ A good way to get started with USWDS settings is to copy the `dist/theme` direct
 @forward 'uswds-theme-custom-styles';
 ```
 
-Add only the settings you wish to modify before importing `uswds`, either in a separate file (`_uswds-theme.scss`), or directly in your Sass entry point. Either way you do it, you'll use the format `@use "uswds-core" with ()` including a list of your changed settings variables inside the parentheses.
+Add only the settings you wish to modify before importing `uswds`, either in a separate file (`_uswds-theme.scss`), or directly in your Sass entry point. Either way you do it, you'll use the format `@use "uswds-core" with ()` including a list of your changed USWDS settings variables inside the parentheses.
 
 If you use the `_uswds-theme.scss` file, it would look something like this:
 
@@ -63,6 +63,9 @@ In general, when including settings and custom code, you just need to follow thi
 1. **Include settings:** Tell the design system how to build.
 1. **Include `uswds`:** Build the design system.
 1. **Include custom styles:** Build on top of the design system.
+
+{: .site-note }
+**Note:** the `@use "uswds-core" with ()` configuration accepts only current USWDS settings variables. If you receive the error `This module was already loaded, so it can't be configured using "with"`, confirm that all your declared variables exist in the list below and try compiling again.
 
 {% assign settings = site.data.settings | sort %}
 

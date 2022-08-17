@@ -8,9 +8,7 @@ meta:
 
 permalink: /together/
 slug: together
-
 subhead: USWDS patterns are practical, easy to implement guidelines and best practices for common user interactions
-
 chapter: true
 
 summary_sections:

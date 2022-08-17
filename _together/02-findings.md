@@ -9,9 +9,6 @@ meta:
 permalink: /together/findings/
 slug: findings
 subhead: Creating more equitable and inclusive experiences is at the forefront for many of our digital teams
-help_detail: Successfully provide profile information
-main_graphic: /img/together/together-info.svg
-
 chapter: true
 
 summary_sections:

@@ -22,9 +22,8 @@ summary_sections:
 
   - heading: Finding the best solution in a complex environment
     description: |-
-      Patterns are guidance and best practices to design effective user experiences. If components are the ingredients with which you create experiences, patterns are the recipe. The recipe suggests how best to combine the ingredients to create the optimal experience for everyone, while leaving room for flexibility and customization to specific user needs. 
+      Designing effective, usable digital solutions is not an easy endeavor, and digital teams are wrestling with how to incorporate learnings about the sometimes confusing and constantly evolving DEIA space. While federal digital teams have always designed for “everyone,” there is renewed focus on ensuring that each individual feels welcome, heard, and supported in the digital experience. This is no easy task.
 
-      We, with help from digital leaders across the federal space, have developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of DEIA  —  Diversity, Equity, Inclusion, and Accessibility. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences.
 
   - heading: The process of being inclusive is as important as the design
     description: |-
@@ -52,7 +51,7 @@ summary_sections:
   <section id="section-{{ forloop.index }}" class="together-section together-section--{{ item.title | downcase | replace: " ", "-" | remove: "’" }} {{ item.section_class }}">
     <div class="grid-container">
       <div class="grid-row">
-        <div class="grid-col-12 tablet:grid-col-3">
+        <div class="grid-col-12 tablet:grid-col-12">
           <div class="together-section__header">
             <h2 class="together-section__heading">{{ item.heading }}</h2>
           </div>
@@ -92,7 +91,33 @@ summary_sections:
           </p>
           {% include together/together-quote.html quote="[You] can’t make a mistake, because it is someone’s future." source="HISP Digital team member"%}
           </div>
-          {% elsif forloop.index == 2 %}            
+          {% elsif forloop.index == 2 %}           
+          <div class="tablet:grid-offset-4 measure-4">
+            {% include together/together-quote.html quote="Right now [users] must select Mr/Mrs  —  need to be more flexible." source="HISP Digital team member"%}
+            <p>
+              Many of the digital teams we spoke with said that they were looking for guidance on how to incorporate DEIA best practices into their work, and how to do so given other constraints or mandates. Some common challenges cited were:
+            </p>
+            <ul>
+              <li>
+                Figuring out how to create DEIA-supportive solutions while aligning with existing reporting requirements.
+              </li>
+              <li>
+                Balancing new solutions with the needs (and limitations) of legacy back-end systems.
+              </li>
+              <li>
+                Ensuring that the solutions they provide also provide adequate privacy protection for individuals and families.
+              </li>
+            </ul>
+            {% include together/together-quote.html quote="Would like to see best practices for making a more equitable experience regarding gender." source="HISP Digital team member"%}
+            <p>
+              For example, some of the interviewees expressed that they’d like to provide a more inclusive experience around gender identity, but are concerned about opening people up to possible safety issues. Significant issues of privacy and personal safety come with some implementations, and this is definitely an area of concern for digital teams.
+            </p>
+            {% include together/together-quote.html quote="If a federal form is completed that identifies an underage [state resident] as trans, does that open them up to threats/danger." source="DEIA Expert"%}
+            <p>
+              Other areas of concern were more technical. Changes to existing collection instruments require review in accordance with the <a href="https://pra.digital.gov/">Paperwork Reduction Act</a>. Back-end systems require updating. The digital teams want to get it right, but there are a lot of questions. Even when they are ready to make changes, processes, policies, and legacy tech can slow implementation down.
+            </p>
+            {% include together/together-quote.html quote="The need to integrate with legacy back-end systems can limit changes that can be made on the front-end." source="HISP Digital team member"%}
+          </div> 
 
           {% elsif forloop.index == 3 %}
             <h3>What does it mean to consider digital interactions through the lens of DEIA?</h3>

@@ -114,16 +114,16 @@ summary_sections:
             <h3>Our primary focus was to learn…</h3>
             <div class="grid-row tablet:margin-x-neg-205">
               <div class="tablet:grid-col-3 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="How teams are applying the lens of DEIA to their design work, and which patterns they’ve revised to be more equitable and inclusive." icon="search"%}
+                {% include together/together-spot-item.html text="How teams are <strong>applying the lens of DEIA</strong> to their design work, and which patterns they’ve revised to be more equitable and inclusive." icon="search"%}
               </div>
               <div class="tablet:grid-col-3 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="What challenges agencies are facing with trying to adopt more inclusive design patterns." icon="lightbulb"%}
+                {% include together/together-spot-item.html text="What challenges agencies are facing with trying to <strong>adopt more inclusive design patterns.</strong>" icon="connect_without_contact"%}
               </div>
               <div class="tablet:grid-col-3 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="Which specific interactions are most challenging and could use attention from USWDS." icon="insights"%}
+                {% include together/together-spot-item.html text="Which <strong>specific interactions are most challenging</strong> and could use attention from USWDS." icon="flag"%}
               </div>
               <div class="tablet:grid-col-3 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="Who has design patterns that USWDS can leverage to begin their work." icon="search"%}
+                {% include together/together-spot-item.html text="Who has design <strong>patterns that USWDS can leverage</strong> to begin their work." icon="public"%}
               </div>
             </div>
             
@@ -134,16 +134,16 @@ summary_sections:
             <h3>Our focus was to…</h3>
             <div class="grid-row tablet:margin-x-neg-205">
               <div class="tablet:grid-col-3 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="Benchmark patterns by identifying which organizations had patterns and how they approached them." icon="search"%}
+                {% include together/together-spot-item.html text="<strong>Benchmark patterns</strong> by identifying which organizations had patterns and how they approached them." icon="assessment"%}
               </div>
               <div class="tablet:grid-col-3 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="Analyze thought leadership around patterns, their place in the design system, and the content that should be in each pattern." icon="lightbulb"%}
+                {% include together/together-spot-item.html text="Analyze <strong>thought leadership around patterns</strong>, their place in the design system, and the content that should be in each pattern." icon="update"%}
               </div>
               <div class="tablet:grid-col-3 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="Take a deep dive into the topic of DEIA, especially as it relates to digital experiences." icon="insights"%}
+                {% include together/together-spot-item.html text="Take a <strong>deep dive into the topic of DEIA</strong>, especially as it relates to digital experiences." icon="people"%}
               </div>
               <div class="tablet:grid-col-3 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="Understand the best practices specific to each pattern, along with any federal requirements that need to guide each recommendation." icon="search"%}
+                {% include together/together-spot-item.html text="Understand the <strong>best practices specific to each pattern</strong>, along with any federal requirements that need to guide each recommendation." icon="local_police"%}
               </div>
             </div>
 

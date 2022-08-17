@@ -173,7 +173,7 @@ Add this load path to your compiler settings, or update any old paths if your co
 
 <!-- Start USWDS Gulp section -->
 <h4 class="usa-accordion__heading">
-  <button class="usa-accordion__button" aria-controls="m-a6">
+  <button type="button" class="usa-accordion__button" aria-controls="m-a6">
     If you're using USWDS Gulp
   </button>
 </h4>
@@ -249,7 +249,7 @@ includePaths: [
 
 <!-- Start USWDS Compile section -->
 <h4 class="usa-accordion__heading">
-  <button class="usa-accordion__button" aria-controls="m-a7">
+  <button type="button" class="usa-accordion__button" aria-controls="m-a7">
     If you're using USWDS Compile
   </button>
 </h4>
@@ -271,7 +271,7 @@ const uswds = require("@uswds/compile");
 
 <!-- Start custom gulp workflow section -->
 <h4 class="usa-accordion__heading">
-  <button class="usa-accordion__button" aria-controls="m-a8">
+  <button type="button" class="usa-accordion__button" aria-controls="m-a8">
     If you're using a custom gulp workflow
   </button>
 </h4>
@@ -303,7 +303,7 @@ const uswds = require("@uswds/compile");
 
 <!-- Start custom gulp workflow section -->
 <h4 class="usa-accordion__heading">
-  <button class="usa-accordion__button" aria-controls="m-a9">
+  <button type="button" class="usa-accordion__button" aria-controls="m-a9">
     If you're using webpack
   </button>
 </h4>
@@ -342,6 +342,7 @@ Follow the instructions in each section that applies to either your USWDS versio
 <!-- Start All section -->
 <h4 class="usa-accordion__heading">
   <button
+    type="button"
     class="usa-accordion__button"
     aria-controls="m-all"
   >
@@ -365,6 +366,7 @@ We've removed the `$output-all-utilities` settings and replaced it with `$output
 <!-- Start 2.13.0 section -->
 <h4 class="usa-accordion__heading">
   <button
+    type="button"
     class="usa-accordion__button"
     aria-controls="m-a1"
   >
@@ -385,7 +387,7 @@ You'll need to update any instances of the small search button on your site. We'
 ###### Old code
 
 ```html
-<button class="usa-button" type="submit">
+<button type="button" class="usa-button" type="submit">
   <span class="usa-sr-only">Search</span>
 <button>
 ```
@@ -394,7 +396,7 @@ You'll need to update any instances of the small search button on your site. We'
 ###### New code
 
 ```html
-<button class="usa-button" type="submit">
+<button type="button" class="usa-button" type="submit">
   <img
     src="{% raw %}{{ uswds image path }}{% endraw %}/usa-icons-bg/search--white.svg"
     class="usa-search__submit-icon"
@@ -479,6 +481,7 @@ You'll need to update social media icons in the USWDS footer. We're now using ex
 <!-- Start 2.12.0 section -->
 <h4 class="usa-accordion__heading">
   <button
+    type="button"
     class="usa-accordion__button"
     aria-controls="m-a2"
   >
@@ -520,6 +523,7 @@ Setting | Old default | New default
 <!-- Start 2.11.2 section -->
 <h4 class="usa-accordion__heading">
   <button
+    type="button"
     class="usa-accordion__button"
     aria-controls="m-a3"
   >
@@ -549,6 +553,7 @@ We replaced the `thumb_down_off_alt` icon with `thumb_down_alt` in our default i
 <!-- Start 2.11.0 section -->
 <h4 class="usa-accordion__heading">
   <button
+    type="button"
     class="usa-accordion__button"
     aria-controls="m-a4"
   >
@@ -579,6 +584,7 @@ Setting | Old default | New default
 <!-- Start 2.10.1 section -->
 <h4 class="usa-accordion__heading">
   <button
+    type="button"
     class="usa-accordion__button"
     aria-controls="m-a5"
   >

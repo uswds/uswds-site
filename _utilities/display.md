@@ -199,7 +199,7 @@ utilities:
         %}
       {% endfor %}
       <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-4 margin-bottom-1">
-        <button class="usa-accordion__button" aria-controls="code-relative" aria-expanded="true">Code</button>
+        <button type="button" class="usa-accordion__button" aria-controls="code-relative" aria-expanded="true">Code</button>
         <div id="code-relative" class="usa-accordion__content">
 <div markdown="1" class="font-mono-xs">
 {% highlight html linenos %}
@@ -390,7 +390,7 @@ utilities:
         </div>
       </div>
       <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-0">
-        <button class="usa-accordion__button" aria-controls="code-static-relative" aria-expanded="true">Code</button>
+        <button type="button" class="usa-accordion__button" aria-controls="code-static-relative" aria-expanded="true">Code</button>
         <div id="code-static-relative" class="usa-accordion__content">
 <div markdown="1">
 {% highlight html linenos %}
@@ -433,7 +433,7 @@ utilities:
         </div>
       </div>
       <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-2">
-        <button class="usa-accordion__button" aria-controls="code-fixed" aria-expanded="true">Code</button>
+        <button type="button" class="usa-accordion__button" aria-controls="code-fixed" aria-expanded="true">Code</button>
         <div id="code-fixed" class="usa-accordion__content">
 <div markdown="1">
 {% highlight html linenos %}
@@ -475,7 +475,7 @@ utilities:
         </div>
       </div>
       <div class="usa-accordion usa-accordion--bordered site-accordion-code margin-top-2 margin-bottom-1">
-        <button class="usa-accordion__button" aria-controls="code-sticky" aria-expanded="true">Code</button>
+        <button type="button" class="usa-accordion__button" aria-controls="code-sticky" aria-expanded="true">Code</button>
         <div id="code-sticky" class="usa-accordion__content">
 <div markdown="1">
 {% highlight html linenos %}

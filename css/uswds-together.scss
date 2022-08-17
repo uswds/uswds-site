@@ -558,24 +558,18 @@ html {
 }
 
 // Styled inline blockquote
-.next-blockquote {
+.together-blockquote {
   position: relative;
-
-  border-left: units(1px) solid color("gray-cool-30");
-
-  color: color("gray-cool-70");
-
+  border-left: 5px solid #005EA2;
+  color: #202550;
   font-family: family("heading");
   font-size: size("heading", 8);
   font-weight: $theme-font-weight-bold;
-
   line-height: line-height("heading", 2);
-
   margin-top: units(4);
   margin-bottom: units(4);
-
-  margin-left: units(4);
-  padding-left: units(1);
+  margin-left: 0;
+  padding-left: 2.5rem;
 
   @include at-media("desktop") {
     font-size: size("heading", 10);
@@ -585,15 +579,15 @@ html {
     display: block;
     width: units(2.5);
     height: units(2.5);
-    content: url("data:image/svg+xml,%3Csvg width='38' height='28' viewBox='0 0 38 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M35.0013 0.589043L27.0013 0.589044L21.668 11.2557L21.668 27.2557L37.668 27.2557L37.668 11.2557L29.668 11.2557L35.0013 0.589043ZM13.668 0.589045L5.66797 0.589045L0.334631 11.2557L0.334633 27.2557L16.3346 27.2557L16.3346 11.2557L8.33463 11.2557L13.668 0.589045Z' fill='currentColor'/%3E%3C/svg%3E%0A");
-    fill: $gray-90-next;
+    content: url("data:image/svg+xml,%3Csvg width='38' height='28' viewBox='0 0 38 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M35.0013 0.589043L27.0013 0.589044L21.668 11.2557L21.668 27.2557L37.668 27.2557L37.668 11.2557L29.668 11.2557L35.0013 0.589043ZM13.668 0.589045L5.66797 0.589045L0.334631 11.2557L0.334633 27.2557L16.3346 27.2557L16.3346 11.2557L8.33463 11.2557L13.668 0.589045Z' fill='#202550'/%3E%3C/svg%3E%0A");
+    fill: #202550;
     position: absolute;
-    left: units(-4);
+    left: 0.5rem;
     top: units(0.5);
     opacity: 0.8;
   }
 
-  .next-blockquote__source {
+  .together-blockquote__source {
     color: color("gray-cool-60");
     display: block;
     font-family: family("lang");
@@ -603,7 +597,7 @@ html {
   }
 }
 
-.next-blockquote--block {
+.together-blockquote--block {
   border-left: none;
 
   color: color("gray-cool-90");
@@ -625,12 +619,12 @@ html {
     height: units(4);
     left: units(-6);
   }
-  .next-blockquote__source {
+  .together-blockquote__source {
     font-size: size("lang", 8);
     margin-top: units(3);
   }
 
-  .next-blockquote__context {
+  .together-blockquote__context {
     color: color("gray-cool-60");
     display: block;
     font-family: family("lang");
@@ -641,7 +635,7 @@ html {
     padding-left: units(0.5);
   }
 }
-.next-blockquote--inline {
+.together-blockquote--inline {
   font-size: size("heading", 7);
   font-weight: $theme-font-weight-normal;
   line-height: line-height("heading", 3);

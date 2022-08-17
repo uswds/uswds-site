@@ -7,7 +7,7 @@ meta:
   og:image: /img/next/og-next-report.png
 permalink: /together/looking-ahead/
 slug: whats-next
-subhead: Right now we are releasing 17 patterns across three areas
+subhead: We are releasing 17 patterns across three areas
 chapter: true
 
 summary_sections:

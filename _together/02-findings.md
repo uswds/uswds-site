@@ -29,9 +29,7 @@ summary_sections:
 
   - heading: Personal data is the foundation of an individual’s sense of self
     description: |-
-      In March 2022, the USWDS team brought together researchers, designers, and engineers to conduct research into inclusive design patterns.
-
-      The research resulted in the release of 3 mega-patterns consisting of 17 new sub-patterns, along with new and updated components and page templates. More than 30 individuals across 20 teams shared their experiences, work, and perspectives to inform the design. We interviewed individuals in a variety of roles and across many different agencies, focusing on [High Impact Service Providers (HISPs)](https://www.performance.gov/cx/assets/files/HISP-listing-2021.pdf), since they have the most direct contact with the public.
+      Many of the digital solutions we create rely on some amount of each user’s personal information: name, address, Social Security Number. Solutions that aren’t inclusive of everyone can be very alienating. Interviewees explained how this can play out in digital projects.
 
   - heading: Complex forms offer unique challenges
     description: |-
@@ -139,9 +137,24 @@ summary_sections:
             </p>
             {% include together/together-quote.html quote="Build for most people vs. all people? Do I sacrifice getting it to most people or get it to all people later?" source="HISP Digital team member"%}
           </div>
-
           {% elsif forloop.index == 4 %}
-            <!-- TODO -->
+          <div class="tablet:grid-offset-2 measure-4">
+            <ul>
+              <li>
+               Actively looking for more diverse team members.
+              </li>
+              <li>
+               Identifying ways to co-design with specific communities.
+              </li>
+              <li>
+                Finding ways to include a more diverse group of people in user testing.
+              </li>
+            </ul>
+            {% include together/together-quote.html quote="Addresses can get a little tricky on reservations." source="HISP Digital team member"%}
+            <p>
+              Many of the digital teams were trying to figure out what changes they need to make to accommodate a more diverse public. Most recognized that personal information is the most foundational information we ask from people, and when what we ask for doesn’t allow users to feel seen and confident in their answers, we may have created a bad experience from the start.
+            </p>
+          </div>
           {% elsif forloop.index == 5 %}
             <!-- TODO -->
           {% elsif forloop.index == 6 %}

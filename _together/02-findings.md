@@ -184,7 +184,13 @@ summary_sections:
             </p>
           </div>
           {% elsif forloop.index == 6 %}
-            <!-- TODO -->
+          <div class="tablet:grid-offset-2 measure-4">
+            {% include together/together-quote.html quote="Not just plain language. Need language access. Good multilingual IA [information architecture]. Writing that supports low English proficiency." source="DEIA expert"%}
+            <p>
+              Providing multilingual content is a huge investment, and a key way to communicate to the public that we will meet them where they are. 
+            </p>
+            {% include together/together-quote.html quote="[We’re] struggling with multilingual [content] and accommodating the proper presentation." source="HISP Design team member"%}
+          </div>
           {% endif %}
 
         </div>

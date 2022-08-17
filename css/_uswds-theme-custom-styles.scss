@@ -3459,6 +3459,9 @@ p + .pagination-behaviors--examples {
 
 .do-dont__content {
   padding: 0 1.6rem 1.6rem 0;
+  ul {
+    overflow-wrap: anywhere;
+  }
 }
 
 .usa-card__heading {

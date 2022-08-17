@@ -19,16 +19,13 @@ summary_sections:
     description: |-
       Creating more equitable and inclusive experiences is at the forefront for many of our digital teams. Teams are thinking about DEIA, but are generally more confident, and further along in implementing accessibility  —  the “A”  —  than in incorporating diversity, equity, and inclusion  —  the “DEI”  —  into their work. While some teams are actively looking for ways to incorporate inclusivity into their designs, others are waiting for direction. 
 
-
   - heading: Finding the best solution in a complex environment
     description: |-
       Designing effective, usable digital solutions is not an easy endeavor, and digital teams are wrestling with how to incorporate learnings about the sometimes confusing and constantly evolving DEIA space. While federal digital teams have always designed for “everyone,” there is renewed focus on ensuring that each individual feels welcome, heard, and supported in the digital experience. This is no easy task.
 
-
   - heading: The process of being inclusive is as important as the design
     description: |-
-     Designers all over the world are applying Inclusive Design Principles to their work, creating more equitable experiences that work for everyone. Every day, practitioners are learning more about how inclusivity and equity need to be reflected in their work. The Inclusive Design Pattern team was no different. 
-
+     Many of the interviewees  —  digital teams and DEIA experts alike  —  worried about the lack of diversity on design teams and as user testing participants. Design teams are often not representative of the full diversity of the potential users of the systems and experiences they are creating. Many teams are trying to figure out ways to include people with a wider range of lived experiences.
 
   - heading: Personal data is the foundation of an individual’s sense of self
     description: |-
@@ -43,7 +40,6 @@ summary_sections:
   - heading: Using each individual’s language of choice makes a big difference
     description: |-
       Many programs are working on making their content available in multiple languages, but there are lots of questions about how best to do that. As more and more programs provide content in multiple languages, how best to make people aware of the content in other languages, and to make it clear and easy for them to find and use those languages, is a real challenge. 
-
   
 ---
 
@@ -56,14 +52,14 @@ summary_sections:
             <h2 class="together-section__heading">{{ item.heading }}</h2>
           </div>
         </div>
-        <div class="grid-col-12 tablet:grid-col-8 tablet:margin-left-auto together-section-description">
+        <div class="grid-col-12 tablet:grid-col-10 tablet:margin-left-auto together-section-description">
           {{ item.description | markdownify }}
         </div>
       </div>
       <div class="grid-row">
         <div class="grid-col-12">
           {% if forloop.index == 1 %}
-          <div class="tablet:grid-offset-4 measure-4">
+          <div class="tablet:grid-offset-2 measure-4">
           {% include together/together-quote.html quote="[We’re] In the very early stage of thinking about equity and diversity in digital delivery." source="HISP Digital team member"%}
           <p>
             Some teams could point to specific examples about how they created a more inclusive experience. Some of the things we heard included:
@@ -92,7 +88,7 @@ summary_sections:
           {% include together/together-quote.html quote="[You] can’t make a mistake, because it is someone’s future." source="HISP Digital team member"%}
           </div>
           {% elsif forloop.index == 2 %}           
-          <div class="tablet:grid-offset-4 measure-4">
+          <div class="tablet:grid-offset-2 measure-4">
             {% include together/together-quote.html quote="Right now [users] must select Mr/Mrs  —  need to be more flexible." source="HISP Digital team member"%}
             <p>
               Many of the digital teams we spoke with said that they were looking for guidance on how to incorporate DEIA best practices into their work, and how to do so given other constraints or mandates. Some common challenges cited were:
@@ -118,91 +114,38 @@ summary_sections:
             </p>
             {% include together/together-quote.html quote="The need to integrate with legacy back-end systems can limit changes that can be made on the front-end." source="HISP Digital team member"%}
           </div> 
-
           {% elsif forloop.index == 3 %}
-            <h3>What does it mean to consider digital interactions through the lens of DEIA?</h3>
-
-            <div class="grid-row tablet:margin-x-neg-205">
-              <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205">
-                {% include together/together-finding-item.html  heading="Diversity" text="Diversity in design is about making sure all people are represented" icon="diversity" alt="people in circle"%}
-
-                {% include together/together-finding-item.html heading="Equity" text="Equity in design addresses the unique barriers people experience, creating fairer experiences." icon="equity" alt="two groups of people on scale and they balance"%}
-
-              </div>
-              <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205">
-                {% include together/together-finding-item.html heading="Inclusivity" text="Inclusivity in design cultivates a sense of belonging and feeling valued." icon="inclusivity" alt="two people connected by a circle"%}
-
-                {% include together/together-finding-item.html  heading="Accessibility" text="Accessibility ensures that all people can understand and enjoy digital experiences." icon="a11y" alt="man in a wheelchair"%}
-              </div>
-            </div>
-
-            <h3>One of our interviewees said it well</h3>    
-
-            <figure class="together-quote tablet:padding-left-10 tablet:margin-bottom-4">
-              <blockquote class="together-quote__quote">
-                “Consider the story that hasn’t been told.” 
-              </blockquote>
-              <figcaption>
-                <span class="together-quote__source" aria-describedby="quote-desc">Source: DEIA and design expert *</span>
-                <span class="together-quote__source-desc" id="quote-desc">* Shared during a interview</span>
-              </figcaption>
-            </figure>
-
-            <p class="measure-4">
-              Developing patterns through the lens of DEIA requires us to interrogate ourselves and our work at each step of the design process. We outlined a series of questions to consider:
+          <div class="tablet:grid-offset-2 measure-4">
+            <p>
+              Some of the ways digital teams are trying to be more inclusive are:
             </p>
-            
             <ul>
-              <li>What are our biases and assumptions?</li>
-              <li>Who is involved in our design process?</li>
-              <li>Are we reaching a broad and diverse group of interviewees?</li>
-              <li>Who benefits from our design? Who may be harmed? Who is left out?</li>
+              <li>
+               Actively looking for more diverse team members.
+              </li>
+              <li>
+               Identifying ways to co-design with specific communities.
+              </li>
+              <li>
+                Finding ways to include a more diverse group of people in user testing.
+              </li>
             </ul>
-
-            <p class="measure-4">
-              Developing patterns through the lens of DEIA also means that we need to be humble enough to acknowledge that we don’t know everything today, and as we grow and learn more the patterns will need to change. Today’s solution is not tomorrow’s.
+            <p>
+              It can be hard to figure out how to include historically disadvantaged populations in the design process or usability testing. Digital teams are really struggling with how to get the right people to weigh in at the right time, so everyone's needs are represented and everyone feels heard.
             </p>
-            
-            {% elsif forloop.index == 4 %}
-            <h3>Our primary focus was to learn…</h3>
-            <div class="grid-row tablet:margin-x-neg-205">
-              <div class="tablet:grid-col-3 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="How teams are <strong>applying the lens of DEIA</strong> to their design work, and which patterns they’ve revised to be more equitable and inclusive." icon="search"%}
-              </div>
-              <div class="tablet:grid-col-3 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="What challenges agencies are facing with trying to <strong>adopt more inclusive design patterns.</strong>" icon="connect_without_contact"%}
-              </div>
-              <div class="tablet:grid-col-3 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="Which <strong>specific interactions are most challenging</strong> and could use attention from USWDS." icon="flag"%}
-              </div>
-              <div class="tablet:grid-col-3 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="Who has design <strong>patterns that USWDS can leverage</strong> to begin their work." icon="public"%}
-              </div>
-            </div>
-            
-            <p class="measure-4">
-              We also conducted research outside of the federal space to understand best practices (and notable failures) in order to incorporate these into our patterns.
+            {% include together/together-quote.html quote="[It is] tough for us to think simultaneously about all the different groups you have to create things for, but if we could reach out to these groups when needed that would be helpful." source="HISP Digital team member"%}
+            <p>
+              And, as always, the realities of getting solutions out to the public quickly come into play. Digital teams try to balance getting imperfect solutions out quickly and making improvements later versus waiting for a solution that checks all the boxes. It is a tough balancing act.
             </p>
+            {% include together/together-quote.html quote="Build for most people vs. all people? Do I sacrifice getting it to most people or get it to all people later?" source="HISP Digital team member"%}
+          </div>
 
-            <h3>Our focus was to…</h3>
-            <div class="grid-row tablet:margin-x-neg-205">
-              <div class="tablet:grid-col-3 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="<strong>Benchmark patterns</strong> by identifying which organizations had patterns and how they approached them." icon="assessment"%}
-              </div>
-              <div class="tablet:grid-col-3 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="Analyze <strong>thought leadership around patterns</strong>, their place in the design system, and the content that should be in each pattern." icon="update"%}
-              </div>
-              <div class="tablet:grid-col-3 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="Take a <strong>deep dive into the topic of DEIA</strong>, especially as it relates to digital experiences." icon="people"%}
-              </div>
-              <div class="tablet:grid-col-3 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="Understand the <strong>best practices specific to each pattern</strong>, along with any federal requirements that need to guide each recommendation." icon="local_police"%}
-              </div>
-            </div>
-
-            <p class="measure-4">
-              Along the way we solicited feedback from a wide range of experts in the federal space, including digital teams, policymakers, and subject matter experts. Their input was integral to our work.
-            </p>
+          {% elsif forloop.index == 4 %}
+            <!-- TODO -->
+          {% elsif forloop.index == 5 %}
+            <!-- TODO -->
+          {% elsif forloop.index == 6 %}
+            <!-- TODO -->
           {% endif %}
 
         </div>

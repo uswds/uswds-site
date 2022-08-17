@@ -47,7 +47,7 @@ For those familiar with Section 508 and WCAG, we aim for AA compliance across ou
 
 ### Accessibility feedback
 
-If you have a problem using our site, please email us at [{{ site.uswds_email }}](mailto:{{ site.uswds_email }})and provide the URL (web address) of the material you tried to access, the problem you experienced, and your contact information. We'll attempt to provide the information you're seeking.
+If you have a problem using our site, please email us at [{{ site.uswds_email }}](mailto:{{ site.uswds_email }}) and provide the URL (web address) of the material you tried to access, the problem you experienced, and your contact information. We'll attempt to provide the information you're seeking.
 
 ### Additional accessibility help
 
@@ -184,6 +184,8 @@ Federal agencies are required to provide the following links to agency-level inf
 -   [GSA website policies](https://www.gsa.gov/website-information/website-policies), including accessibility policy, linking policy, privacy and security notice, required links, and social media sites
 
 -   [Office of the Inspector General](https://www.gsaig.gov/)
+
+-   [Open government initiatives](https://www.gsa.gov/node/78692)
 
 -   [Orders and directives](http://www.gsa.gov/portal/directives)
 

@@ -7,13 +7,13 @@ meta:
   og:image: /img/next/og-next-report.png
 permalink: /together/looking-ahead/
 slug: whats-next
-subhead: We are releasing 17 patterns across three areas
+subhead: A starting point for the digital products you are designing, building, and supporting.
 chapter: true
 
 summary_sections:
   - heading: Looking ahead
     description: |-
-      Right now we are releasing 17 patterns across these three areas  —  personal information, complex forms, and choosing a preferred language. Some of the patterns are fairly simple  —   like how to help a user successfully provide an email address. Some are more complex, such as how to help a user provide their race and ethnicity. Each has information on when it is appropriate to use it, best practices, usability and accessibility considerations, as well as research links and a changelog. 
+      Right now we are releasing 17 patterns across these three areas — personal information, complex forms, and choosing a preferred language. Some of the patterns are fairly simple — like how to help a user successfully provide an email address. Some are more complex, such as how to help a user provide their race and ethnicity. Each has information on when it is appropriate to use it, best practices, usability and accessibility considerations, as well as research links and a changelog. 
   
 ---
 

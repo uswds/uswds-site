@@ -14,7 +14,7 @@ chapter: true
 summary_sections:
   - heading: Current state
     description: |-
-      Creating more equitable and inclusive experiences is at the forefront for many of our digital teams. Teams are thinking about DEIA, but are generally more confident, and further along in implementing accessibility  —  the “A”  —  than in incorporating diversity, equity, and inclusion  —  the “DEI”  —  into their work. While some teams are actively looking for ways to incorporate inclusivity into their designs, others are waiting for direction. 
+      Creating more equitable and inclusive experiences is at the forefront for many of our digital teams. Digital teams were generally further along in implementing accessibility than in considering equity and inclusivity in their design work. While some teams are actively looking for ways to incorporate inclusivity into their designs, others are waiting for direction.  
 
   - heading: Finding the best solution in a complex environment
     description: |-

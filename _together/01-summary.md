@@ -49,7 +49,7 @@ summary_sections:
           {% if forloop.index == 1 %}
           <div class="tablet:grid-col-7 tablet:grid-offset-4 measure-4" markdown="1">
             <p>
-              USWDS's Inclusive Design Patterns project was developed in support of <a href="https://www.section508.gov/">Section 508</a>&nbsp;[^1], the <a href="https://www.congress.gov/bill/115th-congress/house-bill/5759/text">21st Century IDEA</a>&nbsp;[^2], the Biden-Harris Administration’s President’s Management Agenda (PMA) <a href="https://www.performance.gov/pma/cx/">Priority 2 Executive Order</a> Delivering Excellent, Equitable, and Secure Federal Services&nbsp;[^3], <a href="https://www.justice.gov/crt/executive-order-13166">Executive Order 13166</a> Improving Access to Services for Persons with Limited English Proficiency&nbsp;[^4], <a href="https://www.whitehouse.gov/briefing-room/presidential-actions/2021/12/13/executive-order-on-transforming-federal-customer-experience-and-service-delivery-to-rebuild-trust-in-government/">Executive Order 14058</a> Transforming Federal Customer Experience and Service Delivery to Rebuild Trust in Government&nbsp;[^5], and <a href="https://www.performance.gov/equity/">Executive Order 13985</a> Advancing an Equitable Government&nbsp;[^6]. In supporting these efforts, USWDS’s patterns are designed to remove barriers to transactions and interactions online, and, therefore, help the American public successfully access government services and programs. This is fundamental to our values.
+              USWDS's Inclusive Design Patterns project was developed in support of <a href="https://www.section508.gov/">Section 508</a>&nbsp;[^1], the <a href="https://www.congress.gov/bill/115th-congress/house-bill/5759/text">21st Century IDEA</a>&nbsp;[^2],  the Biden-Harris Administration’s President’s Management Agenda (PMA) <a href="https://www.performance.gov/pma/cx/">Priority 2 Executive Order</a> Delivering Excellent, Equitable, and Secure Federal Services&nbsp;[^3], <a href="https://www.justice.gov/crt/executive-order-13166">Executive Order 13166</a> Improving Access to Services for Persons with Limited English Proficiency&nbsp;[^4], <a href="https://www.whitehouse.gov/briefing-room/presidential-actions/2021/12/13/executive-order-on-transforming-federal-customer-experience-and-service-delivery-to-rebuild-trust-in-government/">Executive Order 14058</a> Transforming Federal Customer Experience and Service Delivery to Rebuild Trust in Government&nbsp;[^5], and <a href="https://www.performance.gov/equity/">Executive Order 13985</a> Advancing an Equitable Government&nbsp;[^6]. In supporting these efforts, USWDS’s patterns are designed to remove barriers to transactions and interactions online, and, therefore, help the American public successfully access government services and programs. This is fundamental to our values.
             </p>
             <p>
               As we spoke with digital teams across the federal space we learned that everyone is wrestling with these issues: how to create effective, inclusive, equitable digital experiences. We were fortunate to learn from our colleagues that are already blazing a path towards inclusivity, and to have their perspectives inform our work. We are grateful for the large number of people who contributed their lived experience and perspectives.
@@ -64,6 +64,7 @@ summary_sections:
               We, with help from digital leaders across the federal space, have developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of DEIA — Diversity, Equity, Inclusion, and Accessibility. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences.
             </p>
           </div>    
+              
 
           {% elsif forloop.index == 3 %}
             <h3>What does it mean to consider digital interactions through the lens of DEIA?</h3>
@@ -167,27 +168,29 @@ summary_sections:
     <div class="grid-row">
       <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0" markdown="1">
 
-        #### Citations
+#### Citations
 
-        * footnotes will be placed here. This line is necessary
-        {:footnotes}
+* footnotes will be placed here. This line is necessary
+{:footnotes}
 
-        [^1]: Section 508. Retrieved on August 19, 2022, from <https://www.section508.gov>
 
-        [^2]: 21st Century Integrated Digital Experience Act. Retrieved on August 19, 2022, from <https://www.congress.gov/bill/115th-congress/house-bill/5759/text>
+[^1]: Section 508. Retrieved on August 19, 2022, from <https://www.section508.gov>
 
-        [^3]: President’s Management Agenda (PMA) Priority 2 Executive Order - Delivering Excellent, Equitable, and Secure Federal Services. Retrieved on August 19, 2022, from  <https://www.performance.gov/pma/cx/>
+[^2]: 21st Century Integrated Digital Experience Act. Retrieved on August 19, 2022, from <https://www.congress.gov/bill/115th-congress/house-bill/5759/text>
 
-        [^4] Executive Order 13166 - Improving Access to Services for Persons with Limited English Proficiency. Retrieved on August 19, 2022, from <https://www.justice.gov/crt/executive-order-13166>
+[^3]: President’s Management Agenda (PMA) Priority 2 Executive Order - Delivering Excellent, Equitable, and Secure Federal Services. Retrieved on August 19, 2022, from  <https://www.performance.gov/pma/cx/>
 
-        [^5] Executive Order 14058 - Transforming Federal Customer Experience and Service Delivery to Rebuild Trust in Government. Retrieved on August 19, 2022, from <https://www.whitehouse.gov/briefing-room/presidential-actions/2021/12/13/executive-order-on-transforming-federal-customer-experience-and-service-delivery-to-rebuild-trust-in-government/>
+[^4] Executive Order 13166 - Improving Access to Services for Persons with Limited English Proficiency. Retrieved on August 19, 2022, from <https://www.justice.gov/crt/executive-order-13166>
 
-        [^6] Executive Order 13985 - Advancing an Equitable Government. Retrieved on August 19, 2022, from <https://www.performance.gov/equity/>
+[^5] Executive Order 14058 - Transforming Federal Customer Experience and Service Delivery to Rebuild Trust in Government. Retrieved on August 19, 2022, from <https://www.whitehouse.gov/briefing-room/presidential-actions/2021/12/13/executive-order-on-transforming-federal-customer-experience-and-service-delivery-to-rebuild-trust-in-government/>
 
-        [^7]: VA.gov design system patterns. (May 26, 2022) Retrieved on August 19, 2022, from <https://design.va.gov/patterns/>
+[^6] Executive Order 13985 - Advancing an Equitable Government. Retrieved on August 19, 2022, from <https://www.performance.gov/equity/>
 
-        [^8]: Embedding equity in civic design to transform customer experience. (July 13, 2022) Retrieved on August 19, 2022, from <https://digital.gov/resources/embedding-equity-in-civic-design-to-transform-customer-experience/>
-      </div>
+[^7]: VA.gov design system patterns. (May 26, 2022) Retrieved on August 19, 2022, from <https://design.va.gov/patterns/>
+
+[^8]: Embedding equity in civic design to transform customer experience. (July 13, 2022) Retrieved on August 19, 2022, from <https://digital.gov/resources/embedding-equity-in-civic-design-to-transform-customer-experience/>
+
+</div>
     </div>
   </div>
 </section>

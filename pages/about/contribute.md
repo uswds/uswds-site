@@ -36,7 +36,7 @@ If something isn’t working the way it's supposed to, here’s how you can let 
 1. Check our [current issues backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Bug%22+) to see if your bug has already been reported.
 1. If your bug has already been reported, leave a comment in the original issue and provide any additional context (if different than the original submission).
 1. Document the steps we can take to reproduce the bug. If you can, take screen shots to capture specific details about the bug.
-1. Submit an issue using the [bug report template](https://github.com/uswds/uswds/issues/new?assignees=&labels=type%3A+bug&template=bug_report.md&title=). A USWDS core team member may reach out to you if we need further clarification or context. We may also need your help testing possible solutions. Be sure to check in on your issue to answer any questions we may have about it.
+1. Submit an issue using the [bug report template](https://github.com/uswds/uswds/issues/new?assignees=&labels=Type%3A+Bug%2CStatus%3A+Triage%2CNeeds%3A+Confirmation&template=bug_report.yaml&title=USWDS+-+Bug%3A+%5BYOUR+TITLE%5D). A USWDS core team member may reach out to you if we need further clarification or context. We may also need your help testing possible solutions. Be sure to check in on your issue to answer any questions we may have about it.
 
 If you have a code fix for the issue, go ahead and [submit a pull request](https://github.com/uswds/uswds/compare). Our team tracks issues, so make sure any pull request you submit has a related issue.
 

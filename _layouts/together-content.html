@@ -23,13 +23,15 @@ report_title: Inclusive Design Patterns
         {% endif %}
       </div>
       
-      <div class="position-absolute bottom-0 right-0">
+      <div class="display-none tablet:display-block position-absolute bottom-0 right-0">
         {% if page_type == 'chapter' %}
           <img class="width-card tablet:width-mobile-lg desktop:width-tablet" src="{{ site.baseurl }}/img/together/hero-img1.svg" alt="man with beard in wheelchair" />
-        {% elsif page_type == 'page' %}
+          {% elsif page_type == 'page' %}
           <img src="{{ page.hero_image }}" alt="{{ page.title }}" />
-        {% endif %}
-      </div>
+          {% endif %}
+        </div>
+        
+        <img class="width-tablet tablet:display-none position-absolute bottom-0 right-0" src="{{ site.baseurl }}/img/together/hero-img1.svg" alt="man with beard in wheelchair" />
       
     </div>
   </div>

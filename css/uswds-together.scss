@@ -167,7 +167,10 @@ html {
 
 .next-hero--chapter {
   flex-flow: wrap;
-  padding-bottom: units(5);
+  padding-bottom: 11rem;
+  @include at-media("tablet") {
+    padding-bottom: units(5);
+  }
 
   .next-hero__subhead {
     max-width: none;

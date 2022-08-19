@@ -124,7 +124,7 @@ summary_sections:
             </div>
             
             <p class="measure-4">
-              The research resulted in the release of 3 mega-patterns consisting of 17 sub-patterns, along with new and updated components and page templates. More than 30 individuals across 20 teams shared their experiences, work, and perspectives to inform the design<sup>1</sup>. We interviewed individuals in a variety of roles and across many different agencies, focusing on <a href="https://www.performance.gov/cx/assets/files/HISP-listing-2021.pdf">High Impact Service Providers (HISPs)</a>, since they have the most direct contact with the public.
+              The research resulted in the release of 3 mega-patterns consisting of 17 sub-patterns, along with new and updated components and page templates. More than 30 individuals across 20 teams shared their experiences, work, and perspectives to inform the design&nbsp;[^1]. We interviewed individuals in a variety of roles and across many different agencies, focusing on <a href="https://www.performance.gov/cx/assets/files/HISP-listing-2021.pdf">High Impact Service Providers (HISPs)</a>, since they have the most direct contact with the public.
             </p>
 
             <p class="measure-4">
@@ -137,7 +137,7 @@ summary_sections:
                 {% include together/together-spot-item.html text="<strong>Benchmark patterns</strong> by identifying which organizations had patterns and how they approached them." icon="assessment"%}
               </div>
               <div class="tablet:grid-col-3 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="Analyze <strong>thought leadership around patterns</strong>, their place in the design system, and the content that should be in each pattern.<sup>2</sup>" icon="update"%}
+                {% include together/together-spot-item.html text="Analyze <strong>thought leadership around patterns</strong>, their place in the design system, and the content that should be in each pattern.&nbsp;[^2] icon="update"%}
               </div>
               <div class="tablet:grid-col-3 tablet:padding-x-205">
                 {% include together/together-spot-item.html text="Take a <strong>deep dive into the topics of inclusivity and equity</strong>, especially as relate to digital experiences." icon="people"%}
@@ -151,10 +151,15 @@ summary_sections:
               Along the way we solicited feedback from a wide range of experts in the federal space, including digital teams, policymakers, and subject matter experts. Their input was integral to our work.
             </p>
 
-            <p class="measure-4">
-              <sup>1</sup>VA.gov design system patterns. (May 26, 2022) Retrieved on August 19, 2022, from <a href="https://design.va.gov/patterns/">https://design.va.gov/patterns/</a><br/>
-              <sup>2</sup>Embedding equity in civic design to transform customer experience. (July 13, 2022) Retrieved on August 19, 2022, from <a href="https://digital.gov/resources/embedding-equity-in-civic-design-to-transform-customer-experience/">https://digital.gov/resources/embedding-equity-in-civic-design-to-transform-customer-experience/</a>
-            </p>
+
+            #### Citations
+
+            * footnotes will be placed here. This line is necessary
+            {:footnotes}
+
+            [^1]: VA.gov design system patterns. (May 26, 2022) Retrieved on August 19, 2022, from https://design.va.gov/patterns/
+            [^2]: Embedding equity in civic design to transform customer experience. (July 13, 2022) Retrieved on August 19, 2022, from https://digital.gov/resources/embedding-equity-in-civic-design-to-transform-customer-experience/
+
           {% endif %}
 
         </div>

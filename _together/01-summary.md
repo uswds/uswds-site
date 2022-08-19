@@ -59,9 +59,30 @@ summary_sections:
             </p>
           </div>
           {% elsif forloop.index == 2 %}
-              <p>
-              We, with help from digital leaders across the federal space, have developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of DEIA — Diversity, Equity, Inclusion, and Accessibility. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences.
-              </p>          
+          <div class="tablet:grid-col-7 tablet:grid-offset-4 measure-4" markdown="1">
+
+We, with help from digital leaders across the federal space, have developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of DEIA — Diversity, Equity, Inclusion, and Accessibility. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences.
+
+For millions, access to digital services isn’t a luxury — it’s critical. And their experiences using government websites to find unemployment support, file taxes, apply for student loans, or get assistance with housing, childcare, or food can dramatically affect how they feel about the government.
+
+<!-- TODO: Remove content just for example use of citations -->
+
+Every moment an individual interacts with a government service is an opportunity to build their trust, as the Federal Customer Experience Initiative team’s 2020 strategy work has summarized [^1]. Only 20 percent of U.S. adults report that they
+trust government “most of the time” or “just about always” [^2]. Trust in government increases when the digital services people access are reliable, user-friendly, and consistently meet their needs. Customers are on average nine times more likely to trust a government agency if they’re satisfied with its service [^3].
+
+How we deliver these services is just as important as what services we provide.
+
+People are accustomed to intuitive, easy-to-use digital experiences in their day-to-day lives, and they increasingly expect the same from federal digital services. But we’re coming up short on digital services that meet the needs of the public.
+
+For example, only six percent of federal websites are rated “good” for mobile performance [^4]. To help put the issue in perspective, there were approximately 2.5 billion visits to federal websites from mobile phones in 2020 over a 90-day period [^5].
+
+The current global pandemic has shown us that access to digital services is more important than ever. Site visits to federal websites increased from 14 billion in 2019 to over 21 billion in 2020 [^6] as the public flocked online for information, assistance, and guidance.
+
+
+
+</div>
+              
+              
 
           {% elsif forloop.index == 3 %}
             <h3>What does it mean to consider digital interactions through the lens of DEIA?</h3>
@@ -150,16 +171,7 @@ summary_sections:
 
             <p class="measure-4">
               Along the way we solicited feedback from a wide range of experts in the federal space, including digital teams, policymakers, and subject matter experts. Their input was integral to our work.
-            </p>
-
-
-            #### Citations
-
-            * footnotes will be placed here. This line is necessary
-            {:footnotes}
-
-            [^1]: VA.gov design system patterns. (May 26, 2022) Retrieved on August 19, 2022, from https://design.va.gov/patterns/
-            [^2]: Embedding equity in civic design to transform customer experience. (July 13, 2022) Retrieved on August 19, 2022, from https://digital.gov/resources/embedding-equity-in-civic-design-to-transform-customer-experience/
+            </p>        
 
           {% endif %}
 
@@ -168,4 +180,33 @@ summary_sections:
     </div>
   </section>
 {% endfor %}
+
+<section class="next-section next-section--citations">
+  <div class="grid-container">
+    <div class="grid-row">
+      <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0" markdown="1">
+
+#### Citations
+
+* footnotes will be placed here. This line is necessary
+{:footnotes}
+
+
+
+[^1]: VA.gov design system patterns. (May 26, 2022) Retrieved on August 19, 2022, from https://design.va.gov/patterns/
+
+[^2]: Embedding equity in civic design to transform customer experience. (July 13, 2022) Retrieved on August 19, 2022, from https://digital.gov/resources/embedding-equity-in-civic-design-to-transform-customer-experience/
+
+[^3]: D’Emidio, T., Greenberg, S., Heidenreich, K., Klier, J., Wagner, J., & Weber, T. (2019). [The global case for customer experience in government](https://www.mckinsey.com/~/media/McKinsey/Industries/Public%20and%20Social%20Sector/Our%20Insights/The%20global%20case%20for%20customer%20experience%20in%20government/The-global-case-for-customer-experience-in-government-vF.pdf) (Public Sector Practice, Rep.). McKinsey & Company.
+
+[^4]: Digital Dashboard. (n.d.). Retrieved January 06, 2021, from <https://digitaldashboard.gov/>
+
+[^5]: The US government’s web traffic. (n.d.). Retrieved January 06, 2021, from <https://analytics.usa.gov/>
+
+[^6]: The US government’s web traffic. (n.d.). Retrieved February 5, 2021, from <https://analytics.usa.gov/>
+
+</div>
+    </div>
+  </div>
+</section>
 

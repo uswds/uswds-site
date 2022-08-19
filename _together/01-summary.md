@@ -47,7 +47,7 @@ summary_sections:
       <div class="grid-row">
         <div class="grid-col-12">
           {% if forloop.index == 1 %}
-          <div class="tablet:grid-col-7 tablet:grid-offset-4 measure-4">
+          <div class="tablet:grid-col-7 tablet:grid-offset-4 measure-4" markdown="1">
             <p>
               USWDS's Inclusive Design Patterns project was developed in support of <a href="https://www.section508.gov/">Section 508</a>&nbsp;[^1], the <a href="https://www.congress.gov/bill/115th-congress/house-bill/5759/text">21st Century IDEA</a>&nbsp;[^2], the Biden-Harris Administration’s President’s Management Agenda (PMA) <a href="https://www.performance.gov/pma/cx/">Priority 2 Executive Order</a> Delivering Excellent, Equitable, and Secure Federal Services&nbsp;[^3], <a href="https://www.justice.gov/crt/executive-order-13166">Executive Order 13166</a> Improving Access to Services for Persons with Limited English Proficiency&nbsp;[^4], <a href="https://www.whitehouse.gov/briefing-room/presidential-actions/2021/12/13/executive-order-on-transforming-federal-customer-experience-and-service-delivery-to-rebuild-trust-in-government/">Executive Order 14058</a> Transforming Federal Customer Experience and Service Delivery to Rebuild Trust in Government&nbsp;[^5], and <a href="https://www.performance.gov/equity/">Executive Order 13985</a> Advancing an Equitable Government&nbsp;[^6]. In supporting these efforts, USWDS’s patterns are designed to remove barriers to transactions and interactions online, and, therefore, help the American public successfully access government services and programs. This is fundamental to our values.
             </p>
@@ -64,7 +64,6 @@ summary_sections:
               We, with help from digital leaders across the federal space, have developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of DEIA — Diversity, Equity, Inclusion, and Accessibility. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences.
             </p>
           </div>    
-              
 
           {% elsif forloop.index == 3 %}
             <h3>What does it mean to consider digital interactions through the lens of DEIA?</h3>

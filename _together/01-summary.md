@@ -49,7 +49,7 @@ summary_sections:
           {% if forloop.index == 1 %}
           <div class="tablet:grid-col-7 tablet:grid-offset-4 measure-4">
             <p>
-              USWDS's Inclusive Design Patterns project was developed in support of <a href="https://www.section508.gov/">Section 508</a>, the <a href="https://www.congress.gov/bill/115th-congress/house-bill/5759/text">21st Century IDEA</a>,  the Biden-Harris Administration’s President’s Management Agenda (PMA) <a href="https://www.performance.gov/pma/cx/">Priority 2 Executive Order</a> Delivering Excellent, Equitable, and Secure Federal Services, <a href="https://www.justice.gov/crt/executive-order-13166">Executive Order 13166</a> Improving Access to Services for Persons with Limited English Proficiency, <a href="https://www.whitehouse.gov/briefing-room/presidential-actions/2021/12/13/executive-order-on-transforming-federal-customer-experience-and-service-delivery-to-rebuild-trust-in-government/">Executive Order 14058</a> Transforming Federal Customer Experience and Service Delivery to Rebuild Trust in Government, and <a href="https://www.performance.gov/equity/">Executive Order 13985</a> Advancing an Equitable Government. In supporting these efforts, USWDS’s patterns are designed to remove barriers to transactions and interactions online, and, therefore, help the American public successfully access government services and programs. This is fundamental to our values.
+              USWDS's Inclusive Design Patterns project was developed in support of <a href="https://www.section508.gov/">Section 508</a>&nbsp;[^1], the <a href="https://www.congress.gov/bill/115th-congress/house-bill/5759/text">21st Century IDEA</a>&nbsp;[^2], the Biden-Harris Administration’s President’s Management Agenda (PMA) <a href="https://www.performance.gov/pma/cx/">Priority 2 Executive Order</a> Delivering Excellent, Equitable, and Secure Federal Services&nbsp;[^3], <a href="https://www.justice.gov/crt/executive-order-13166">Executive Order 13166</a> Improving Access to Services for Persons with Limited English Proficiency&nbsp;[^4], <a href="https://www.whitehouse.gov/briefing-room/presidential-actions/2021/12/13/executive-order-on-transforming-federal-customer-experience-and-service-delivery-to-rebuild-trust-in-government/">Executive Order 14058</a> Transforming Federal Customer Experience and Service Delivery to Rebuild Trust in Government&nbsp;[^5], and <a href="https://www.performance.gov/equity/">Executive Order 13985</a> Advancing an Equitable Government&nbsp;[^6]. In supporting these efforts, USWDS’s patterns are designed to remove barriers to transactions and interactions online, and, therefore, help the American public successfully access government services and programs. This is fundamental to our values.
             </p>
             <p>
               As we spoke with digital teams across the federal space we learned that everyone is wrestling with these issues: how to create effective, inclusive, equitable digital experiences. We were fortunate to learn from our colleagues that are already blazing a path towards inclusivity, and to have their perspectives inform our work. We are grateful for the large number of people who contributed their lived experience and perspectives.
@@ -60,28 +60,10 @@ summary_sections:
           </div>
           {% elsif forloop.index == 2 %}
           <div class="tablet:grid-col-7 tablet:grid-offset-4 measure-4" markdown="1">
-
-We, with help from digital leaders across the federal space, have developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of DEIA — Diversity, Equity, Inclusion, and Accessibility. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences.
-
-For millions, access to digital services isn’t a luxury — it’s critical. And their experiences using government websites to find unemployment support, file taxes, apply for student loans, or get assistance with housing, childcare, or food can dramatically affect how they feel about the government.
-
-<!-- TODO: Remove content just for example use of citations -->
-
-Every moment an individual interacts with a government service is an opportunity to build their trust, as the Federal Customer Experience Initiative team’s 2020 strategy work has summarized [^1]. Only 20 percent of U.S. adults report that they
-trust government “most of the time” or “just about always” [^2]. Trust in government increases when the digital services people access are reliable, user-friendly, and consistently meet their needs. Customers are on average nine times more likely to trust a government agency if they’re satisfied with its service [^3].
-
-How we deliver these services is just as important as what services we provide.
-
-People are accustomed to intuitive, easy-to-use digital experiences in their day-to-day lives, and they increasingly expect the same from federal digital services. But we’re coming up short on digital services that meet the needs of the public.
-
-For example, only six percent of federal websites are rated “good” for mobile performance [^4]. To help put the issue in perspective, there were approximately 2.5 billion visits to federal websites from mobile phones in 2020 over a 90-day period [^5].
-
-The current global pandemic has shown us that access to digital services is more important than ever. Site visits to federal websites increased from 14 billion in 2019 to over 21 billion in 2020 [^6] as the public flocked online for information, assistance, and guidance.
-
-
-
-</div>
-              
+            <p>
+              We, with help from digital leaders across the federal space, have developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of DEIA — Diversity, Equity, Inclusion, and Accessibility. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences.
+            </p>
+          </div>    
               
 
           {% elsif forloop.index == 3 %}
@@ -146,7 +128,7 @@ The current global pandemic has shown us that access to digital services is more
             </div>
             
             <p class="measure-4">
-              The research resulted in the release of 3 mega-patterns consisting of 17 sub-patterns, along with new and updated components and page templates. More than 30 individuals across 20 teams shared their experiences, work, and perspectives to inform the design&nbsp;[^1]. We interviewed individuals in a variety of roles and across many different agencies, focusing on <a href="https://www.performance.gov/cx/assets/files/HISP-listing-2021.pdf">High Impact Service Providers (HISPs)</a>, since they have the most direct contact with the public.
+              The research resulted in the release of 3 mega-patterns consisting of 17 sub-patterns, along with new and updated components and page templates. More than 30 individuals across 20 teams shared their experiences, work, and perspectives to inform the design&nbsp;[^7]. We interviewed individuals in a variety of roles and across many different agencies, focusing on <a href="https://www.performance.gov/cx/assets/files/HISP-listing-2021.pdf">High Impact Service Providers (HISPs)</a>, since they have the most direct contact with the public.
             </p>
 
             <p class="measure-4">
@@ -159,7 +141,7 @@ The current global pandemic has shown us that access to digital services is more
                 {% include together/together-spot-item.html text="<strong>Benchmark patterns</strong> by identifying which organizations had patterns and how they approached them." icon="assessment"%}
               </div>
               <div class="tablet:grid-col-3 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="Analyze <strong>thought leadership around patterns</strong>, their place in the design system, and the content that should be in each pattern.&nbsp;[^2]" icon="update"%}
+                {% include together/together-spot-item.html text="Analyze <strong>thought leadership around patterns</strong>, their place in the design system, and the content that should be in each pattern.&nbsp;[^8]" icon="update"%}
               </div>
               <div class="tablet:grid-col-3 tablet:padding-x-205">
                 {% include together/together-spot-item.html text="Take a <strong>deep dive into the topics of inclusivity and equity</strong>, especially as relate to digital experiences." icon="people"%}
@@ -186,26 +168,27 @@ The current global pandemic has shown us that access to digital services is more
     <div class="grid-row">
       <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0" markdown="1">
 
-#### Citations
+        #### Citations
 
-* footnotes will be placed here. This line is necessary
-{:footnotes}
+        * footnotes will be placed here. This line is necessary
+        {:footnotes}
 
+        [^1]: Section 508. Retrieved on August 19, 2022, from <https://www.section508.gov>
 
+        [^2]: 21st Century Integrated Digital Experience Act. Retrieved on August 19, 2022, from <https://www.congress.gov/bill/115th-congress/house-bill/5759/text>
 
-[^1]: VA.gov design system patterns. (May 26, 2022) Retrieved on August 19, 2022, from https://design.va.gov/patterns/
+        [^3]: President’s Management Agenda (PMA) Priority 2 Executive Order - Delivering Excellent, Equitable, and Secure Federal Services. Retrieved on August 19, 2022, from  <https://www.performance.gov/pma/cx/>
 
-[^2]: Embedding equity in civic design to transform customer experience. (July 13, 2022) Retrieved on August 19, 2022, from https://digital.gov/resources/embedding-equity-in-civic-design-to-transform-customer-experience/
+        [^4] Executive Order 13166 - Improving Access to Services for Persons with Limited English Proficiency. Retrieved on August 19, 2022, from <https://www.justice.gov/crt/executive-order-13166>
 
-[^3]: D’Emidio, T., Greenberg, S., Heidenreich, K., Klier, J., Wagner, J., & Weber, T. (2019). [The global case for customer experience in government](https://www.mckinsey.com/~/media/McKinsey/Industries/Public%20and%20Social%20Sector/Our%20Insights/The%20global%20case%20for%20customer%20experience%20in%20government/The-global-case-for-customer-experience-in-government-vF.pdf) (Public Sector Practice, Rep.). McKinsey & Company.
+        [^5] Executive Order 14058 - Transforming Federal Customer Experience and Service Delivery to Rebuild Trust in Government. Retrieved on August 19, 2022, from <https://www.whitehouse.gov/briefing-room/presidential-actions/2021/12/13/executive-order-on-transforming-federal-customer-experience-and-service-delivery-to-rebuild-trust-in-government/>
 
-[^4]: Digital Dashboard. (n.d.). Retrieved January 06, 2021, from <https://digitaldashboard.gov/>
+        [^6] Executive Order 13985 - Advancing an Equitable Government. Retrieved on August 19, 2022, from <https://www.performance.gov/equity/>
 
-[^5]: The US government’s web traffic. (n.d.). Retrieved January 06, 2021, from <https://analytics.usa.gov/>
+        [^7]: VA.gov design system patterns. (May 26, 2022) Retrieved on August 19, 2022, from <https://design.va.gov/patterns/>
 
-[^6]: The US government’s web traffic. (n.d.). Retrieved February 5, 2021, from <https://analytics.usa.gov/>
-
-</div>
+        [^8]: Embedding equity in civic design to transform customer experience. (July 13, 2022) Retrieved on August 19, 2022, from <https://digital.gov/resources/embedding-equity-in-civic-design-to-transform-customer-experience/>
+      </div>
     </div>
   </div>
 </section>

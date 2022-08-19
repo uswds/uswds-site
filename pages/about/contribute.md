@@ -23,7 +23,7 @@ lead: Your contribution helps make the Design System better for the next team th
 
 Anyone can contribute to the U.S. Web Design System (USWDS). Whether it's submitting a bug or proposing a new component, we welcome your ideas on how to improve the Design System.
 
-We review all contributions before merging them into USWDS. If you’re unsure about anything, just [ask](mailto:uswds@gsa.gov) — or submit your [issue](https://github.com/uswds/uswds/issues/new/choose) or [pull request](https://github.com/uswds/uswds/pulls) anyway. We’ll reach out to you if we have any questions or need to start a conversation.
+We review all contributions before merging them into USWDS. If you’re unsure about anything, just [ask](mailto:uswds@gsa.gov) — or submit your [issue](https://github.com/uswds/uswds/issues/new/choose) or [pull request](https://github.com/uswds/uswds/compare) anyway. We’ll reach out to you if we have any questions or need to start a conversation.
 
 Before submitting a contribution, you’ll just need to [create a GitHub account](https://github.com/join) or [sign in](https://github.com/login) to your existing account.
 

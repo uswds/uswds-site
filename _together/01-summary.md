@@ -20,8 +20,6 @@ summary_sections:
     description: |-
       Patterns are guidance and best practices to design effective user experiences. If components are the ingredients with which you create experiences, patterns are the recipe. The recipe suggests how best to combine the ingredients to create the optimal experience for everyone, while leaving room for flexibility and customization to specific user needs. 
 
-      We, with help from digital leaders across the federal space, have developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of DEIA  —  Diversity, Equity, Inclusion, and Accessibility. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences.
-
   - heading: Digital interactions through the lens of DEIA
     description: |-
      Designers all over the world are applying inclusive design principles to their work, creating more equitable experiences that work for everyone. Every day, practitioners are learning more about how inclusivity and equity need to be reflected in their work. The Inclusive Design Pattern team was no different. 
@@ -60,7 +58,10 @@ summary_sections:
               Sites that don’t actively seek to address usability, accessibility, and inclusion run the very real risk of alienating, frustrating, and marginalizing the very people we seek to support – with an end result of diminished outcomes for both the government and the public. Digital teams across the Federal Government are working hard to find these solutions themselves, which can be inefficient and duplicative. There is currently no good way to share and scale these independently developed solutions across government — and that’s where the USWDS can help. 
             </p>
           </div>
-          {% elsif forloop.index == 2 %}            
+          {% elsif forloop.index == 2 %}
+              <p>
+              We, with help from digital leaders across the federal space, have developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of DEIA — Diversity, Equity, Inclusion, and Accessibility. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences.
+              </p>          
 
           {% elsif forloop.index == 3 %}
             <h3>What does it mean to consider digital interactions through the lens of DEIA?</h3>

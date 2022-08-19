@@ -38,7 +38,9 @@ In new solicitations, you can include requirements for 21st Century IDEA in the 
 
 <div class="usa-accordion site-accordion usa-accordion--bordered measure-5">
   <h4 class="usa-accordion__heading">
-    <button class="usa-accordion__button font-lang-sm radius-top-md"
+    <button
+      type="button"
+      class="usa-accordion__button font-lang-sm radius-top-md"
       aria-expanded="true"
       aria-controls="example-1">
       Draft language for new solicitations
@@ -56,7 +58,9 @@ You can ask your CO to amend open solicitations to include requirements for 21st
 
 <div class="usa-accordion site-accordion usa-accordion--bordered measure-5">
   <h4 class="usa-accordion__heading font-lang-sm">
-    <button class="usa-accordion__button radius-top-md"
+    <button
+      type="button"
+      class="usa-accordion__button radius-top-md"
       aria-expanded="true"
       aria-controls="example-2">
       Draft language for open solicitations
@@ -77,7 +81,9 @@ You can use evaluation factors to select the best vendor by evaluating their abi
 
 <div class="usa-accordion site-accordion usa-accordion--bordered measure-5">
   <h3 class="usa-accordion__heading radius-top-md">
-    <button class="usa-accordion__button font-lang-sm"
+    <button
+      type="button"
+      class="usa-accordion__button font-lang-sm"
       aria-expanded="true"
       aria-controls="example-3">
       Draft 1: Modern website or digital service evaluation factor
@@ -133,7 +139,9 @@ You can use evaluation factors to select the best vendor by evaluating their abi
 
 <div class="usa-accordion site-accordion usa-accordion--bordered measure-5">
   <h3 class="usa-accordion__heading font-lang-sm">
-    <button class="usa-accordion__button radius-top-md line-height-sans-4"
+    <button
+      type="button"
+      class="usa-accordion__button radius-top-md line-height-sans-4"
       aria-expanded="true"
       aria-controls="example-4">
       Draft 2 (scenario): Modern website or digital service scenario evaluation factor

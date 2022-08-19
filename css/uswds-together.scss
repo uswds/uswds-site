@@ -107,12 +107,15 @@ html {
 // Hero
 // -------------------------------------
 .next-hero {
-  align-content: center;
+  align-content: start;
   align-items: center;
-  // background-color: $gray-80-next;
   border-bottom: 2px solid #adadad;
   color: color("white");
   display: flex;
+  @include at-media("tablet") {
+    align-content: center;
+   
+  }
 }
 
 .heading-wrapper{ 
@@ -137,7 +140,6 @@ html {
 }
 
 .next-hero__subhead {
-  // color: $gray-20-next;
   font-size: size("lang", 8);
   font-weight: $theme-font-weight-normal;
   line-height: line-height("lang", 2);
@@ -168,6 +170,7 @@ html {
 .next-hero--chapter {
   flex-flow: wrap;
   padding-bottom: 11rem;
+  min-height: 24rem;
   @include at-media("tablet") {
     padding-bottom: units(5);
   }

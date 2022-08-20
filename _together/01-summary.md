@@ -60,7 +60,6 @@ summary_sections:
           </div>
           {% elsif forloop.index == 2 %}
           <div class="tablet:grid-col-7 tablet:grid-offset-4 measure-4">
-
           We, with help from digital leaders across the federal space, have developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of DEIA — Diversity, Equity, Inclusion, and Accessibility. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences.
           </div>
 
@@ -73,7 +72,6 @@ summary_sections:
                 {% include together/together-finding-item.html  heading="Diversity" text="Diversity in design is about making sure all people are represented" icon="diversity" alt="people in circle"%}
 
                 {% include together/together-finding-item.html heading="Equity" text="Equity in design addresses the unique barriers people experience, creating fairer experiences." icon="equity" alt="two groups of people on scale and they balance"%}
-
               </div>
               <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205">
                 {% include together/together-finding-item.html heading="Inclusivity" text="Inclusivity in design cultivates a sense of belonging and feeling valued." icon="inclusivity" alt="two people connected by a circle"%}

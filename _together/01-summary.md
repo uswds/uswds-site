@@ -22,7 +22,7 @@ summary_sections:
 
   - heading: Digital interactions through the lens of DEIA
     description: |-
-     Designers all over the world are applying inclusive design principles to their work, creating more equitable experiences that work for everyone. Every day, practitioners are learning more about how inclusivity and equity&nbsp;[^2] need to be reflected in their work. The Inclusive Design Pattern team was no different. 
+     Designers all over the world are applying inclusive design principles to their work, creating more equitable experiences that work for everyone. Every day, practitioners are learning more about how inclusivity and equity need to be reflected in their work. The Inclusive Design Pattern team was no different. 
 
 
   - heading: Research
@@ -47,12 +47,12 @@ summary_sections:
       <div class="grid-row">
         <div class="grid-col-12">
           {% if forloop.index == 1 %}
-          <div class="tablet:grid-col-7 tablet:grid-offset-4 measure-4">
+          <div class="tablet:grid-col-7 tablet:grid-offset-4 measure-4" markdown="1">
             <p>
               USWDS's Inclusive Design Patterns project was developed in support of <a href="https://www.section508.gov/">Section 508</a>, the <a href="https://www.congress.gov/bill/115th-congress/house-bill/5759/text">21st Century IDEA</a>,  the Biden-Harris Administration’s President’s Management Agenda (PMA) <a href="https://www.performance.gov/pma/cx/">Priority 2 Executive Order</a> Delivering Excellent, Equitable, and Secure Federal Services, <a href="https://www.justice.gov/crt/executive-order-13166">Executive Order 13166</a> Improving Access to Services for Persons with Limited English Proficiency, <a href="https://www.whitehouse.gov/briefing-room/presidential-actions/2021/12/13/executive-order-on-transforming-federal-customer-experience-and-service-delivery-to-rebuild-trust-in-government/">Executive Order 14058</a> Transforming Federal Customer Experience and Service Delivery to Rebuild Trust in Government, and <a href="https://www.performance.gov/equity/">Executive Order 13985</a> Advancing an Equitable Government. In supporting these efforts, USWDS’s patterns are designed to remove barriers to transactions and interactions online, and, therefore, help the American public successfully access government services and programs. This is fundamental to our values.
             </p>
             <p>
-              As we spoke with digital teams across the federal space we learned that everyone is wrestling with these issues: how to create effective, inclusive, equitable digital experiences. We were fortunate to learn from our colleagues that are already blazing a path towards inclusivity, and to have their perspectives inform our work. We are grateful for the large number of people who contributed their lived experience and perspectives.
+              As we spoke with digital teams across the federal space we learned that everyone is wrestling with these issues: how to create effective, inclusive, equitable digital experiences. We were fortunate to learn from our colleagues that are already blazing a path towards inclusivity, and to have their perspectives inform our work[^1]. We are grateful for the large number of people who contributed their lived experience and perspectives.
             </p>
             <p>
               Sites that don’t actively seek to address usability, accessibility, and inclusion run the very real risk of alienating, frustrating, and marginalizing the very people we seek to support – with an end result of diminished outcomes for both the government and the public. Digital teams across the Federal Government are working hard to find these solutions themselves, which can be inefficient and duplicative. There is currently no good way to share and scale these independently developed solutions across government — and that’s where the USWDS can help. 
@@ -61,10 +61,9 @@ summary_sections:
           {% elsif forloop.index == 2 %}
           <div class="tablet:grid-col-7 tablet:grid-offset-4 measure-4" markdown="1">
 
-We, with help from digital leaders across the federal space, have developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of DEIA — Diversity, Equity, Inclusion, and Accessibility. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences.
-
-[^1]
-</div>
+          We, with help from digital leaders across the federal space, have developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of DEIA — Diversity, Equity, Inclusion, and Accessibility. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences&nbsp;[^2].
+          
+          </div>
 
 
           {% elsif forloop.index == 3 %}

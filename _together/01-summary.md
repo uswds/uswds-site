@@ -63,6 +63,10 @@ summary_sections:
 
           We, with help from digital leaders across the federal space [^1], have developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of DEIA — Diversity, Equity, Inclusion, and Accessibility. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences&nbsp;[^2].
 
+<!-- test of markdownifying html -->
+          USWDS's Inclusive Design Patterns project was developed in support of [Section 508](https://www.section508.gov/), the [21st Century IDEA](https://www.congress.gov/bill/115th-congress/house-bill/5759/text),  the Biden-Harris Administration’s President’s Management Agenda (PMA) [Priority 2 Executive Order](https://www.performance.gov/pma/cx/) Delivering Excellent, Equitable, and Secure Federal Services, [Executive Order 13166](https://www.justice.gov/crt/executive-order-13166) Improving Access to Services for Persons with Limited English Proficiency, [Executive Order 14058](https://www.whitehouse.gov/briefing-room/presidential-actions/2021/12/13/executive-order-on-transforming-federal-customer-experience-and-service-delivery-to-rebuild-trust-in-government/) Transforming Federal Customer Experience and Service Delivery to Rebuild Trust in Government, and [Executive Order 13985](https://www.performance.gov/equity/) Advancing an Equitable Government. In supporting these efforts, USWDS’s patterns are designed to remove barriers to transactions and interactions online, and, therefore, help the American public successfully access government services and programs. This is fundamental to our values.
+
+<!-- end test -->
           </div>
 
 

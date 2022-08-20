@@ -22,7 +22,7 @@ summary_sections:
 
   - heading: Digital interactions through the lens of DEIA
     description: |-
-     Designers all over the world are applying inclusive design principles to their work, creating more equitable experiences that work for everyone. Every day, practitioners are learning more about how inclusivity and equity need to be reflected in their work. The Inclusive Design Pattern team was no different. 
+     Designers all over the world are applying inclusive design principles to their work, creating more equitable experiences that work for everyone. Every day, practitioners are learning more about how inclusivity and equity&nbsp;[^2] need to be reflected in their work. The Inclusive Design Pattern team was no different. 
 
 
   - heading: Research
@@ -63,21 +63,7 @@ summary_sections:
 
 We, with help from digital leaders across the federal space, have developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of DEIA — Diversity, Equity, Inclusion, and Accessibility. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences.
 
-For millions, access to digital services isn’t a luxury — it’s critical. And their experiences using government websites to find unemployment support, file taxes, apply for student loans, or get assistance with housing, childcare, or food can dramatically affect how they feel about the government.
-
-<!-- TODO: Remove content just for example use of citations -->
-
-Every moment an individual interacts with a government service is an opportunity to build their trust, as the Federal Customer Experience Initiative team’s 2020 strategy work has summarized [^1]. Only 20 percent of U.S. adults report that they
-trust government “most of the time” or “just about always” [^2]. Trust in government increases when the digital services people access are reliable, user-friendly, and consistently meet their needs. Customers are on average nine times more likely to trust a government agency if they’re satisfied with its service [^3].
-
-How we deliver these services is just as important as what services we provide.
-
-People are accustomed to intuitive, easy-to-use digital experiences in their day-to-day lives, and they increasingly expect the same from federal digital services. But we’re coming up short on digital services that meet the needs of the public.
-
-For example, only six percent of federal websites are rated “good” for mobile performance [^4]. To help put the issue in perspective, there were approximately 2.5 billion visits to federal websites from mobile phones in 2020 over a 90-day period [^5].
-
-The current global pandemic has shown us that access to digital services is more important than ever. Site visits to federal websites increased from 14 billion in 2019 to over 21 billion in 2020 [^6] as the public flocked online for information, assistance, and guidance.
-
+[^1]
 </div>
 
 
@@ -143,7 +129,7 @@ The current global pandemic has shown us that access to digital services is more
             </div>
             
             <p class="measure-4">
-              The research resulted in the release of 3 mega-patterns consisting of 17 sub-patterns, along with new and updated components and page templates. More than 30 individuals across 20 teams shared their experiences, work, and perspectives to inform the design&nbsp;[^1]. We interviewed individuals in a variety of roles and across many different agencies, focusing on <a href="https://www.performance.gov/cx/assets/files/HISP-listing-2021.pdf">High Impact Service Providers (HISPs)</a>, since they have the most direct contact with the public.
+              The research resulted in the release of 3 mega-patterns consisting of 17 sub-patterns, along with new and updated components and page templates. More than 30 individuals across 20 teams shared their experiences, work, and perspectives to inform the design. We interviewed individuals in a variety of roles and across many different agencies, focusing on <a href="https://www.performance.gov/cx/assets/files/HISP-listing-2021.pdf">High Impact Service Providers (HISPs)</a>, since they have the most direct contact with the public.
             </p>
 
             <p class="measure-4">
@@ -156,7 +142,7 @@ The current global pandemic has shown us that access to digital services is more
                 {% include together/together-spot-item.html text="<strong>Benchmark patterns</strong> by identifying which organizations had patterns and how they approached them." icon="assessment"%}
               </div>
               <div class="tablet:grid-col-3 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="Analyze <strong>thought leadership around patterns</strong>, their place in the design system, and the content that should be in each pattern.&nbsp;[^2]" icon="update"%}
+                {% include together/together-spot-item.html text="Analyze <strong>thought leadership around patterns</strong>, their place in the design system, and the content that should be in each pattern." icon="update"%}
               </div>
               <div class="tablet:grid-col-3 tablet:padding-x-205">
                 {% include together/together-spot-item.html text="Take a <strong>deep dive into the topics of inclusivity and equity</strong>, especially as relate to digital experiences." icon="people"%}
@@ -188,17 +174,9 @@ The current global pandemic has shown us that access to digital services is more
 * footnotes will be placed here. This line is necessary
 {:footnotes}
 
-[^1]: VA.gov design system patterns. (May 26, 2022) Retrieved on August 19, 2022, from https://design.va.gov/patterns/
+[^1]: VA.gov design system patterns. (May 26, 2022) Retrieved on August 19, 2022, from <https://design.va.gov/patterns/>
 
-[^2]: Embedding equity in civic design to transform customer experience. (July 13, 2022) Retrieved on August 19, 2022, from https://digital.gov/resources/embedding-equity-in-civic-design-to-transform-customer-experience/
-
-[^3]: D’Emidio, T., Greenberg, S., Heidenreich, K., Klier, J., Wagner, J., & Weber, T. (2019). [The global case for customer experience in government](https://www.mckinsey.com/~/media/McKinsey/Industries/Public%20and%20Social%20Sector/Our%20Insights/The%20global%20case%20for%20customer%20experience%20in%20government/The-global-case-for-customer-experience-in-government-vF.pdf) (Public Sector Practice, Rep.). McKinsey & Company.
-
-[^4]: Digital Dashboard. (n.d.). Retrieved January 06, 2021, from <https://digitaldashboard.gov/>
-
-[^5]: The US government’s web traffic. (n.d.). Retrieved January 06, 2021, from <https://analytics.usa.gov/>
-
-[^6]: The US government’s web traffic. (n.d.). Retrieved February 5, 2021, from <https://analytics.usa.gov/>
+[^2]: Embedding equity in civic design to transform customer experience. (July 13, 2022) Retrieved on August 19, 2022, from <https://digital.gov/resources/embedding-equity-in-civic-design-to-transform-customer-experience/>
 
 </div>
     </div>

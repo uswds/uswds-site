@@ -15,6 +15,10 @@ summary_sections:
   - heading: Looking ahead
     description: |-
       Right now we are releasing 17 patterns across these three areas — user profile, complex forms, and language selection. Some of the patterns are fairly simple — like how to help a user successfully provide an email address. Some are more complex, such as how to help a user provide their race and ethnicity. Each has information on when it is appropriate to use it, best practices, usability and accessibility considerations, as well as research links and a changelog. 
+
+  - heading: Patterns in the design system
+    description: |-
+      So where do patterns fit within the design system? Consider a food metaphor. Patterns are the recipes that pull together components (ingredients), tokens (flavors and textures), and usability and accessibility guidance (food preparation techniques). Patterns provide the recipe — the blueprint — for creating an inclusive experience. You’ll still need to apply your deep knowledge of your users to make design choices that work for you, but the patterns summarize the considerations important to your choices. Templates are a specific application of the recipe.
   
 ---
 

@@ -70,7 +70,7 @@ summary_sections:
               An agency that is waiting for a clear directive prior to making any changes to personal information collected.
             </li>
             <li>
-              Several digital teams are actively working on adding multiple language content to their sites.
+              Several digital teams are actively working on adding languages other than English to their sites.
             </li>
             <li>
               And many teams that are thinking about how to structure forms to support successful completion, even during times of stress or trauma.
@@ -84,7 +84,7 @@ summary_sections:
           </div>
           {% elsif forloop.index == 2 %}           
           <div class="tablet:grid-offset-2 measure-4">
-            {% include together/together-quote.html quote="Right now [users] must select Mr/Mrs — need to be more flexible." source="HISP Digital team member"%}
+            {% include together/together-quote.html quote="Right now [users] must select Mr./Mrs. — need to be more flexible." source="HISP Digital team member"%}
             <p>
               Many of the digital teams we spoke with said that they were looking for guidance on how to incorporate DEIA best practices into their work, and how to do so given other constraints or mandates. Some common challenges cited were:
             </p>
@@ -116,13 +116,13 @@ summary_sections:
             </p>
             <ul>
               <li>
-               Actively looking for more diverse team members.
+               Actively seeking a diverse team composition.
               </li>
               <li>
-               Identifying ways to co-design with specific communities.
+               Identifying ways to co-design with user groups that are most impacted by the decisons.
               </li>
               <li>
-                Finding ways to include a more diverse group of people in user testing.
+                Finding ways to include diverse perspectives and abilities in user testing.
               </li>
             </ul>
             <p>

@@ -18,7 +18,7 @@ summary_sections:
 
   - heading: Finding the best solution in a complex environment
     description: |-
-      Designing effective, usable digital solutions is not an easy endeavor, and digital teams are wrestling with how to incorporate learnings about the sometimes confusing and constantly evolving DEIA space. While federal digital teams have always designed for “everyone,” there is renewed focus on ensuring that each individual feels welcome, heard, and supported in the digital experience[^1]. This is no easy task.
+      Designing effective, usable digital solutions is not an easy endeavor, and digital teams are wrestling with how to incorporate learnings about the sometimes confusing and constantly evolving DEIA space. While federal digital teams have always designed for “everyone,” there is renewed focus on ensuring that each individual feels welcome, heard, and supported in the digital experience. This is no easy task.
 
   - heading: The process of being inclusive is as important as the design
     description: |-
@@ -26,7 +26,7 @@ summary_sections:
 
   - heading: Personal data is the foundation of an individual’s sense of self
     description: |-
-      Many of the digital solutions we create rely on some amount of each user’s personal information: name[^2], address, Social Security Number. Solutions that aren’t inclusive of everyone can be very alienating. Interviewees explained how this can play out in digital projects.
+      Many of the digital solutions we create rely on some amount of each user’s personal information: name, address, Social Security Number. Solutions that aren’t inclusive of everyone can be very alienating. Interviewees explained how this can play out in digital projects.
 
   - heading: Complex forms offer unique challenges
     description: |-
@@ -54,33 +54,33 @@ summary_sections:
       <div class="grid-row">
         <div class="grid-col-12">
           {% if forloop.index == 1 %}
-          <div class="tablet:grid-offset-2 measure-4">
-          {% include together/together-quote.html quote="[We’re] In the very early stage of thinking about equity and diversity in digital delivery." source="HISP Digital team member"%}
-          <p>
-            Some teams could point to specific examples about how they created a more inclusive experience. Some of the things we heard included:
-          </p>
-          <ul>
-            <li>
-              A program that reviews all their images to ensure a diverse representation of people.
-            </li>
-            <li>
-              An agency that has added “non-binary” to questions asking users to self-identify biological sex.
-            </li>
-            <li>
-              An agency that is waiting for a clear directive prior to making any changes to personal information collected.
-            </li>
-            <li>
-              Several digital teams are actively working on adding languages other than English to their sites.
-            </li>
-            <li>
-              And many teams that are thinking about how to structure forms to support successful completion, even during times of stress or trauma.
-            </li>
-          </ul>
-          {% include together/together-quote.html quote="There is so much to learn that it is hard to be an expert." source="HISP design expert"%}
-          <p>
-            We learned that most teams feel they have a good handle on how to implement and test for accessibility conformance, but most would like more guidance (especially guidance supported by research) on creating inclusive experiences. 
-          </p>
-          {% include together/together-quote.html quote="[You] can’t make a mistake, because it is someone’s future." source="HISP Digital team member"%}
+          <div class="tablet:grid-offset-2 measure-4" markdown="1">
+{% include together/together-quote.html quote="[We’re] In the very early stage of thinking about equity and diversity in digital delivery." source="HISP Digital team member"%}
+<p>
+Some teams could point to specific examples about how they created a more inclusive experience[^1]. Some of the things we heard included:
+</p>
+<ul>
+<li>
+A program that reviews all their images to ensure a diverse representation of people.
+</li>
+<li>
+An agency that has added “non-binary” to questions asking users to self-identify biological sex.
+</li>
+<li>
+An agency that is waiting for a clear directive prior to making any changes to personal information collected.
+</li>
+<li>
+Several digital teams are actively working on adding languages other than English to their sites.
+</li>
+<li>
+And many teams that are thinking about how to structure forms to support successful completion, even during times of stress or trauma.
+</li>
+</ul>
+{% include together/together-quote.html quote="There is so much to learn that it is hard to be an expert." source="HISP design expert"%}
+<p>
+We learned that most teams feel they have a good handle on how to implement and test for accessibility conformance, but most would like more guidance (especially guidance supported by research) on creating inclusive experiences. 
+</p>
+{% include together/together-quote.html quote="[You] can’t make a mistake, because it is someone’s future." source="HISP Digital team member"%}
           </div>
           {% elsif forloop.index == 2 %}           
           <div class="tablet:grid-offset-2 measure-4">

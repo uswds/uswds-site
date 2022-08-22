@@ -9,7 +9,7 @@ meta:
 permalink: /together/get-involved/
 slug: get-involved
 
-subhead: Help create more digital experiences that work for everyone
+subhead: Help create inclusive digital experiences that work for everyone
 
 chapter: true
 

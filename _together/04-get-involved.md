@@ -45,7 +45,7 @@ summary_sections:
                 Include team members with diverse experiences and perspectives.
               </li>
               <li>
-                Lead with community voices and needs  —  emphasize people over process.
+                Lead with community voices and needs — emphasize people over process.
               </li>
               <li>
                 Practice transparency and integrity in our actions.

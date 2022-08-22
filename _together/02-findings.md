@@ -22,7 +22,7 @@ summary_sections:
 
   - heading: The process of being inclusive is as important as the design
     description: |-
-     Many of the interviewees  —  digital teams and DEIA experts alike  —  worried about the lack of diversity on design teams and as user testing participants. Design teams are often not representative of the full diversity of the potential users of the systems and experiences they are creating. Many teams are trying to figure out ways to include people with a wider range of lived experiences.
+     Many of the interviewees — digital teams and DEIA experts alike — worried about the lack of diversity on design teams and as user testing participants. Design teams are often not representative of the full diversity of the potential users of the systems and experiences they are creating. Many teams are trying to figure out ways to include people with a wider range of lived experiences.
 
   - heading: Personal data is the foundation of an individual’s sense of self
     description: |-
@@ -30,7 +30,7 @@ summary_sections:
 
   - heading: Complex forms offer unique challenges
     description: |-
-      Transactional websites were a focus of the Inclusive Design Pattern team’s work. Much of the public’s interactions with the U.S. government is through forms – both digital and paper. Forms can be really challenging for users, especially during times of stress. We heard from HISPs that complex digital forms were a serious barrier for many users, and that crafting good form experiences was a real challenge for digital teams. 
+      Transactional websites were a focus of the Inclusive Design Pattern team’s work. Much of the public’s interactions with the U.S. government is through forms — both digital and paper. Forms can be really challenging for users, especially during times of stress. We heard from HISPs that complex digital forms were a serious barrier for many users, and that crafting good form experiences was a real challenge for digital teams. 
 
   - heading: Using each individual’s language of choice makes a big difference
     description: |-
@@ -84,7 +84,7 @@ summary_sections:
           </div>
           {% elsif forloop.index == 2 %}           
           <div class="tablet:grid-offset-2 measure-4">
-            {% include together/together-quote.html quote="Right now [users] must select Mr/Mrs  —  need to be more flexible." source="HISP Digital team member"%}
+            {% include together/together-quote.html quote="Right now [users] must select Mr/Mrs — need to be more flexible." source="HISP Digital team member"%}
             <p>
               Many of the digital teams we spoke with said that they were looking for guidance on how to incorporate DEIA best practices into their work, and how to do so given other constraints or mandates. Some common challenges cited were:
             </p>
@@ -103,7 +103,7 @@ summary_sections:
             <p>
               For example, some of the interviewees expressed that they’d like to provide a more inclusive experience around gender identity, but are concerned about opening people up to possible safety issues. Significant issues of privacy and personal safety come with some implementations, and this is definitely an area of concern for digital teams.
             </p>
-            {% include together/together-quote.html quote="If a federal form is completed that identifies an underage [state resident] as trans, does that open them up to threats/danger." source="DEIA Expert"%}
+            {% include together/together-quote.html quote="If a federal form is completed that identifies an underage [state resident] as trans, does that open them up to threats/danger?" source="DEIA Expert"%}
             <p>
               Other areas of concern were more technical. Changes to existing collection instruments require review in accordance with the <a href="https://pra.digital.gov/">Paperwork Reduction Act</a>. Back-end systems require updating. The digital teams want to get it right, but there are a lot of questions. Even when they are ready to make changes, processes, policies, and legacy tech can slow implementation down.
             </p>
@@ -143,7 +143,7 @@ summary_sections:
             </ul>
             {% include together/together-quote.html quote="Addresses can get a little tricky on reservations." source="HISP Digital team member"%}
             <p>
-              Many of the digital teams were trying to figure out what changes they need to make to accommodate a more diverse public. Most recognized that personal information is the most foundational information we ask from people, and when what we ask for doesn’t allow users to feel seen and confident in their answers, we may have created a bad experience from the start.
+              Many of the digital teams are trying to figure out what changes they need to make to accommodate a more diverse public. Most recognized that personal information is the most foundational information we ask from people, and when what we ask for doesn’t allow users to feel seen and confident in their answers, we may have created a bad experience from the start.
             </p>
           </div>
           {% elsif forloop.index == 5 %}
@@ -166,7 +166,7 @@ summary_sections:
                 Not clearly stating upfront what information will be required to complete the form can lead to form abandonment.
               </li>
               <li>
-                Forms that make assumptions  —  such as that all people in a family have the same last name  —  can be very frustrating for people to complete.
+                Forms that make assumptions — such as that all people in a family have the same last name — can be very frustrating for people to complete.
               </li>
             </ul>
             {% include together/together-quote.html quote="Victims/survivors have expressed trouble in filling out forms due to the progression of questions." source="HISP Digital team member"%}

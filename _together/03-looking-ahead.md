@@ -7,14 +7,27 @@ meta:
   og:image: /img/next/og-next-report.png
 permalink: /together/looking-ahead/
 slug: whats-next
-subhead: A starting point for the digital products you are designing, building, and supporting.
+subhead: Patterns and components to support key interactions is just the start, as we look toward more pattern-driven development for the USWDS design system
 chapter: true
 
 summary_sections:
   - heading: Looking ahead
     description: |-
       Right now we are releasing 17 patterns across these three areas — user profile, complex forms, and language selection. Some of the patterns are fairly simple — like how to help a user successfully provide an email address. Some are more complex, such as how to help a user provide their race and ethnicity. Each has information on when it is appropriate to use it, best practices, usability and accessibility considerations, as well as research links and a changelog. 
-  
+ 
+   - heading: Patterns in the design system
+    description: |-
+      So where do patterns fit within the design system? Consider a food metaphor. Patterns are the recipes that pull together components (ingredients), tokens (flavors and textures), and usability and accessibility guidance (food preparation techniques). Patterns provide the recipe  —  the blueprint  —  for creating an inclusive experience. You’ll still need to apply your deep knowledge of your users to make design choices that work for you, but the patterns summarize the considerations important to your choices. Templates are a specific application of the recipe.
+      
+  - heading: Pattern-driven development
+    description: |-
+      As the design system matures, you will likely see patterns beginning to actively drive development. We will identify the key interactions we need to support, develop patterns, and allow new components to emerge from the new patterns. We see this as an important human-centered shift to how we’ll approach development, how we’ll choose components, and how we’ll approach modularity and interaction between components. 
+
+   - heading: Thank you
+    description: |-
+      This work would not have been possible without the thoughtful, passionate, and generous information sharing of our research participants. Thank you to everyone who participated in the interviews, provided samples, and offered their lived experience and feedback. We encourage you to be a part of the evolution of the design pattern library by contributing your thoughts and suggestions as we move forward. 
+
+
 ---
 
 {% for item in page.summary_sections %}
@@ -42,9 +55,6 @@ summary_sections:
             </p>
             <p>
               As we move forward, the pattern library will grow as high-impact interactions are identified and explored. We also expect to revise these initial patterns as the landscape around DEIA evolves.
-            </p>
-            <p>
-              This work would not have been possible without the thoughtful, passionate, and generous information sharing of our research participants. <strong>Thank you to everyone who participated</strong> in the interviews, provided samples, and offered their lived experience and feedback. We encourage you to be a part of the evolution of the design pattern library by contributing your thoughts and suggestions as we move forward. 
             </p>
           </div>
           {% endif %}

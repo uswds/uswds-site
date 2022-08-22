@@ -8,7 +8,7 @@ meta:
 
 permalink: /together/findings/
 slug: findings
-subhead: Creating more equitable and inclusive experiences is at the forefront for many of our digital teams
+subhead: Teams are thinking about how to create digital experiences that embrace all users and are effective, accessible, and respectful.
 chapter: true
 
 summary_sections:
@@ -137,15 +137,9 @@ summary_sections:
           {% elsif forloop.index == 4 %}
           <div class="tablet:grid-offset-2 measure-4">
             <ul>
-              <li>
-               Actively looking for more diverse team members.
-              </li>
-              <li>
-               Identifying ways to co-design with specific communities.
-              </li>
-              <li>
-                Finding ways to include a more diverse group of people in user testing.
-              </li>
+              <li>Forms that require addresses to be completed, but don’t accommodate different formats — or provide options for someone who is unhoused either permanently, or temporarily after a disaster.</li>
+              <li>Name fields that expect users to have both a first and last name, and don’t accommodate single-name individuals or individuals with multiple last names.</li>
+              <li>Forms that require self-identification of biological sex, gender identity, race and ethnicity — but don’t have options that resonate with individuals.</li>
             </ul>
             {% include together/together-quote.html quote="Addresses can get a little tricky on reservations." source="HISP Digital team member"%}
             <p>

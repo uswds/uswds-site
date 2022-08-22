@@ -18,7 +18,7 @@ summary_sections:
 
   - heading: Finding the best solution in a complex environment
     description: |-
-      Designing effective, usable digital solutions is not an easy endeavor, and digital teams are wrestling with how to incorporate learnings about the sometimes confusing and constantly evolving DEIA space. While federal digital teams have always designed for “everyone,” there is renewed focus on ensuring that each individual feels welcome, heard, and supported in the digital experience. This is no easy task.
+      Designing effective, usable digital solutions is not an easy endeavor, and digital teams are wrestling with how to incorporate learnings about the sometimes confusing and constantly evolving DEIA space. While federal digital teams have always designed for “everyone,” there is renewed focus on ensuring that each individual feels welcome, heard, and supported in the digital experience[^1]. This is no easy task.
 
   - heading: The process of being inclusive is as important as the design
     description: |-
@@ -26,7 +26,7 @@ summary_sections:
 
   - heading: Personal data is the foundation of an individual’s sense of self
     description: |-
-      Many of the digital solutions we create rely on some amount of each user’s personal information: name, address, Social Security Number. Solutions that aren’t inclusive of everyone can be very alienating. Interviewees explained how this can play out in digital projects.
+      Many of the digital solutions we create rely on some amount of each user’s personal information: name[^2], address, Social Security Number. Solutions that aren’t inclusive of everyone can be very alienating. Interviewees explained how this can play out in digital projects.
 
   - heading: Complex forms offer unique challenges
     description: |-
@@ -189,4 +189,23 @@ summary_sections:
     </div>
   </section>
 {% endfor %}
+
+<section class="next-section next-section--citations">
+  <div class="grid-container">
+    <div class="grid-row">
+      <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0" markdown="1">
+
+#### Citations
+
+* footnotes will be placed here. This line is necessary
+{:footnotes}
+
+[^1]: They, their. (April 10, 2019) Retrieved on August 19, 2022, from <https://design.va.gov/content-style-guide/they-their>
+
+[^2]: Personal names around the world. (August 17, 2011) Retrieved on August 19, 2022, from <https://www.w3.org/International/questions/qa-personal-names>
+
+</div>
+    </div>
+  </div>
+</section>
 

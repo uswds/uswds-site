@@ -87,7 +87,7 @@ summary_sections:
                 “Consider the story that hasn’t been told.” 
               </blockquote>
               <figcaption>
-                <span class="together-quote__source" aria-describedby="quote-desc">Source: DEIA and design expert</span>
+                <span class="together-quote__source" aria-describedby="quote-desc">– DEIA and design expert</span>
               </figcaption>
             </figure>
 

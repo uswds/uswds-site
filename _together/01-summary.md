@@ -107,7 +107,7 @@ summary_sections:
             </p>
             
             {% elsif forloop.index == 4 %}
-            <h3>Our primary focus was to learn…</h3>
+            <h3>Our primary focus was to learn:</h3>
             <div class="grid-row tablet:margin-x-neg-205">
               <div class="tablet:grid-col-3 tablet:padding-x-205">
                 {% include together/together-spot-item.html text="How teams are <strong>applying the lens of DEIA</strong> to their design work, and which patterns they’ve revised to be more equitable and inclusive." icon="search"%}

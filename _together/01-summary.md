@@ -69,7 +69,7 @@ We, with help from digital leaders across the federal space[^1], have developed 
 
             <div class="grid-row tablet:margin-x-neg-205">
               <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205">
-                {% include together/together-finding-item.html  heading="Diversity" text="Diversity in design is about making sure all people are represented" icon="diversity" alt="people in circle"%}
+                {% include together/together-finding-item.html  heading="Diversity" text="Diversity in design is about making sure all people are represented." icon="diversity" alt="people in circle"%}
 
                 {% include together/together-finding-item.html heading="Equity" text="Equity in design addresses the unique barriers people experience, creating fairer experiences." icon="equity" alt="two groups of people on scale and they balance"%}
               </div>

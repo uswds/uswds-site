@@ -54,33 +54,33 @@ summary_sections:
       <div class="grid-row">
         <div class="grid-col-12">
           {% if forloop.index == 1 %}
-          <div class="tablet:grid-offset-2 measure-4" markdown="1">
-{% include together/together-quote.html quote="[We’re] In the very early stage of thinking about equity and diversity in digital delivery." source="HISP Digital team member"%}
-<p>
-Some teams could point to specific examples about how they created a more inclusive experience[^1]. Some of the things we heard included:
-</p>
-<ul>
-<li>
-A program that reviews all their images to ensure a diverse representation of people.
-</li>
-<li>
-An agency that has added “non-binary” to questions asking users to self-identify biological sex.
-</li>
-<li>
-An agency that is waiting for a clear directive prior to making any changes to personal information collected.
-</li>
-<li>
-Several digital teams are actively working on adding languages other than English to their sites.
-</li>
-<li>
-And many teams that are thinking about how to structure forms to support successful completion, even during times of stress or trauma.
-</li>
-</ul>
-{% include together/together-quote.html quote="There is so much to learn that it is hard to be an expert." source="HISP design expert"%}
-<p>
-We learned that most teams feel they have a good handle on how to implement and test for accessibility conformance, but most would like more guidance (especially guidance supported by research) on creating inclusive experiences. 
-</p>
-{% include together/together-quote.html quote="[You] can’t make a mistake, because it is someone’s future." source="HISP Digital team member"%}
+          <div class="tablet:grid-offset-2 measure-4">
+          {% include together/together-quote.html quote="[We’re] In the very early stage of thinking about equity and diversity in digital delivery." source="HISP Digital team member"%}
+          <p>
+            Some teams could point to specific examples about how they created a more inclusive experience. Some of the things we heard included:
+          </p>
+          <ul>
+            <li>
+              A program that reviews all their images to ensure a diverse representation of people.
+            </li>
+            <li>
+              An agency that has added “non-binary” to questions asking users to self-identify biological sex.
+            </li>
+            <li>
+              An agency that is waiting for a clear directive prior to making any changes to personal information collected.
+            </li>
+            <li>
+              Several digital teams are actively working on adding languages other than English to their sites.
+            </li>
+            <li>
+              And many teams that are thinking about how to structure forms to support successful completion, even during times of stress or trauma.
+            </li>
+          </ul>
+          {% include together/together-quote.html quote="There is so much to learn that it is hard to be an expert." source="HISP design expert"%}
+          <p>
+            We learned that most teams feel they have a good handle on how to implement and test for accessibility conformance, but most would like more guidance (especially guidance supported by research) on creating inclusive experiences. 
+          </p>
+          {% include together/together-quote.html quote="[You] can’t make a mistake, because it is someone’s future." source="HISP Digital team member"%}
           </div>
           {% elsif forloop.index == 2 %}           
           <div class="tablet:grid-offset-2 measure-4">

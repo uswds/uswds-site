@@ -22,7 +22,7 @@ summary_sections:
 
   - heading: Digital interactions through the lens of DEIA
     description: |-
-     Designers all over the world are applying inclusive design principles to their work, creating more equitable experiences that work for everyone. Every day, practitioners are learning more about how inclusivity and equity need to be reflected in their work. The Inclusive Design Pattern team was no different. 
+     Designers all over the world are applying [inclusive design principles](https://designsystem.digital.gov/patterns/) to their work, creating more equitable experiences that work for everyone. Every day, practitioners are learning more about how inclusivity and equity need to be reflected in their work. The Inclusive Design Pattern team was no different. 
 
 
   - heading: Research
@@ -87,8 +87,7 @@ summary_sections:
                 “Consider the story that hasn’t been told.” 
               </blockquote>
               <figcaption>
-                <span class="together-quote__source" aria-describedby="quote-desc">Source: DEIA and design expert *</span>
-                <span class="together-quote__source-desc" id="quote-desc">* Shared during a interview</span>
+                <span class="together-quote__source" aria-describedby="quote-desc">Source: DEIA and design expert</span>
               </figcaption>
             </figure>
 
@@ -132,7 +131,7 @@ summary_sections:
               We also conducted research outside of the federal space to understand best practices (and notable failures) in order to incorporate these learnings into our patterns.
             </p>
 
-            <h3>Our objective was to…</h3>
+            <h3>Our objective was to:</h3>
             <div class="grid-row tablet:margin-x-neg-205">
               <div class="tablet:grid-col-3 tablet:padding-x-205">
                 {% include together/together-spot-item.html text="<strong>Benchmark patterns</strong> by identifying which organizations had patterns and how they approached them." icon="assessment"%}

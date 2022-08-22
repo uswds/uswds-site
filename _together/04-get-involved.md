@@ -19,7 +19,7 @@ summary_sections:
       As people working in the federal space we all need to advocate for inclusive experiences. We’re all learning together, but some specific actions you can take today include:
   - heading: Contribute to USWDS
     description: |-
-      Learn [how to contribute to USWDS](https://digital.gov/event/2022/06/16/uswds-monthly-call-june-2022/). Agencies interested in participating in this process — or simply in learning more about the design system — can join us in our [public Slack channel (#uswds-public)](https://designsystem.digital.gov/about/community/, for [our monthly calls](https://digital.gov/events/), and in the [digital.gov communities of practice](https://digital.gov/communities/). We’re looking forward to hearing from you.
+      Learn [how to contribute to USWDS](https://digital.gov/event/2022/06/16/uswds-monthly-call-june-2022/). Agencies interested in participating in this process — or simply in learning more about the design system — can join us in our [public Slack channel (#uswds-public)](https://designsystem.digital.gov/about/community/), for [our monthly calls](https://digital.gov/events/), and in the [digital.gov communities of practice](https://digital.gov/communities/). We’re looking forward to hearing from you.
 
 ---
 
@@ -72,13 +72,13 @@ summary_sections:
             <p>
               The patterns are a start, but we need your help to move forward. We’ll need help evolving these patterns as design practices and DEIA norms evolve. We hope you will continue to share your knowledge and expertise.
             </p>
-            <p>
-              Learn <a href="https://digital.gov/event/2022/06/16/uswds-monthly-call-june-2022/">how to contribute</a> to USWDS. Agencies interested in participating in this process — or simply in learning more about the design system — can join us in our <a href="https://designsystem.digital.gov/about/community/">public Slack channel (#uswds-public)</a>, for <a href="https://digital.gov/events/">our monthly calls</a>, and in the <a href="https://digital.gov/communities/">digital.gov communities of practice</a>. We’re looking forward to hearing from you.
-            </p>
+          </div>
+          {% elsif forloop.index == 2 %}
+          <div class="tablet:grid-offset-2 measure-4">
             <p>
               We thank everyone who shared their time, feedback, and ideas throughout this research effort and invite you — our collaborators and colleagues — to join us in creating inclusive digital experiences we can all be proud of.
             </p>
-          </div>
+          </div>          
           {% endif %}
         </div>
       </div>

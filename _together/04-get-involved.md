@@ -17,7 +17,10 @@ summary_sections:
   - heading: We need your help
     description: |-
       As people working in the federal space we all need to advocate for inclusive experiences. We’re all learning together, but some specific actions you can take today include:
-  
+  - heading: Contribute to USWDS
+    description: |-
+      Learn [how to contribute to USWDS](https://digital.gov/event/2022/06/16/uswds-monthly-call-june-2022/). Agencies interested in participating in this process — or simply in learning more about the design system — can join us in our [public Slack channel (#uswds-public)](https://designsystem.digital.gov/about/community/, for [our monthly calls](https://digital.gov/events/), and in the [digital.gov communities of practice](https://digital.gov/communities/). We’re looking forward to hearing from you.
+
 ---
 
 {% for item in page.summary_sections %}

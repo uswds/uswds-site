@@ -26,7 +26,7 @@ summary_sections:
       
   - heading: Thank you
     description: |-
-      This work would not have been possible without the thoughtful, passionate, and generous information sharing of our research participants. Thank you to everyone who participated in the interviews, provided samples, and offered their lived experience and feedback. We encourage you to be a part of the evolution of the design pattern library by contributing your thoughts and suggestions as we move forward. 
+      This work would not have been possible without the thoughtful, passionate, and generous information sharing of our research participants. **Thank you to everyone who participated** in the interviews, provided samples, and offered their lived experience and feedback. We encourage you to be a part of the evolution of the design pattern library by contributing your thoughts and suggestions as we move forward. 
       
 
 ---

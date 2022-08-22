@@ -9,7 +9,7 @@ meta:
 permalink: /together/get-involved/
 slug: get-involved
 
-subhead: We all need to advocate for inclusive experiences
+subhead: Help create more digital experiences that work for everyone
 
 chapter: true
 

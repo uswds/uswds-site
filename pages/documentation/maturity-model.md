@@ -29,12 +29,10 @@ subnav:
       </ul>
       </div>
     </div>
-      <figure class="tablet:grid-col-5 padding-2 tablet:padding-left-4 margin-0">
-
+    <figure class="tablet:grid-col-5 padding-2 tablet:padding-left-4">
       <img src="{{ site.baseurl }}/img/maturity-model.svg" role="img" alt="A diagram showing the concentric circles of the USWDS maturity model, progressing from Principles on the outside, through Guidance, and finally to Code in the innermost circle.">
       <figcaption>In this image you can see 3 levels of "maturity" in relation to the U.S. Web Design System. As you can see, you don't have to adopt the code to adopt the guidance and benefits outlined by the Design System</figcaption>
-</figure>
-    </div>
+    </figure>
   </div>
 </div>
 

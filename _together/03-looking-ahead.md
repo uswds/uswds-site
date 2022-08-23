@@ -46,7 +46,7 @@ summary_sections:
       </div>
       <div class="grid-row">
         <div class="grid-col-12">
-          {% if forloop.index == 1 %}
+{% if forloop.index == 1 %}
           <div class="tablet:grid-offset-2 measure-4">
             <p>
               Most also have a pattern preview and associated code. They use USWDS components and are grounded in the USWDS design principles. These should be viewed as a starting point, and an additional layer of considerations for the digital products you are designing, building, and supporting. 
@@ -58,10 +58,24 @@ summary_sections:
               As we move forward, the pattern library will grow as high-impact interactions are identified and explored. We also expect to revise these initial patterns as the landscape around DEIA evolves.
             </p>
           </div>
-          {% endif %}
+{% elsif forloop.index == 2 %}
+          {% include together/together-color-hr.html %}
+          <section class="together-section bg-indigo-cool-70 padding-y-6 text-white">
+            <div class="tablet:grid-offset-2">
+              <h3 class="text-indigo-10">The word pattern</h3>
+              <p class="text-white measure-4">
+                Pattern is a word coined by an architect named Christopher Alexander back in the 1970s to describe people's patterns of behavior when they live in their homes. What are the kinds of things that people do again and again in their homes (or expect again and again from their homes) and how might homes be built to support these needs. These needs often go beyond the prosaic needs of shelter and sanitation to include emotional needs. What can a home do to make you feel at home? 
+              </p>
+              <p class="text-white measure-4">
+                In an important way, Alexander reintroduced human-centered design into the design practice of architecture, and the concepts he developed are just as relevant and practical to any designed experience.
+              </p>
+            </div>
+          </section>
+          {% include together/together-color-hr.html %}
+{% endif %}
         </div>
       </div>
     </div>
   </section>
+  
 {% endfor %}
-

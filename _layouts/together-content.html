@@ -37,13 +37,13 @@ report_title: Inclusive Design Patterns
   </div>
 </section>
 
-<nav class="next-internal-nav bg-gray-10 text-base" aria-label="Together report internal navigation">
+<nav class="together-internal-nav bg-gray-10 text-base" aria-label="Together report internal navigation">
   <div class="grid-container">
-    <ul id="internal-nav" class="next-internal-nav__list">
+    <ul id="internal-nav" class="together-internal-nav__list">
       {% for item in site.together %}
       {% if item.chapter %}
-        <li class="next-internal-nav__item">
-          <a href="{{ site.baseurl }}{{ item.url }}" class="next-internal-nav__link {% if item.title == page.title or item.title == page.parent %}
+        <li class="together-internal-nav__item">
+          <a href="{{ site.baseurl }}{{ item.url }}" class="together-internal-nav__link {% if item.title == page.title or item.title == page.parent %}
             current
           {% endif %}">     
             {{ item.nav_title }}

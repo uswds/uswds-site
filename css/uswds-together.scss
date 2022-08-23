@@ -107,7 +107,7 @@ html {
 // Hero
 // -------------------------------------
 .next-hero {
-  align-content: start;
+  align-content: flex-start;
   align-items: center;
   border-bottom: 2px solid #adadad;
   color: color("white");
@@ -236,8 +236,7 @@ html {
 
 // Internal nav
 // -------------------------------------
-.next-internal-nav {
-  // background-color: $gray-80-next;
+.together-internal-nav {
   border-bottom: 2px solid #adadad;
   margin-bottom: -4px;
   @include at-media("mobile-lg") {
@@ -248,39 +247,33 @@ html {
   }
 }
 
-.next-internal-nav__list {
+.together-internal-nav__list {
   display: flex;
   flex-direction: column;
   list-style: none;
-  justify-content: space-around;
   margin: 0;
-  padding: 0;
+  padding: 0.5rem 0;
 
   @include at-media("mobile-lg") {
     align-items: center;
     flex-direction: row;
   }
-
-  @include at-media("tablet") {
-    justify-content: space-between;
-  }
 }
 
-.next-internal-nav__item {
+.together-internal-nav__item {
   margin: 0;
   padding: 0;
-  @include at-media("desktop") {
-    margin: units(1) units(3);
+  @include at-media("tablet") {
+    margin-right: 5rem;
   }
 }
 
-.next-internal-nav__link,
-.next-internal-nav__link:visited {
+.together-internal-nav__link,
+.together-internal-nav__link:visited {
   border-bottom: 2px solid transparent;
   color: #565C65;
   display: block;
   font-size: size("lang", "3xs");
-  // font-weight: font-weight("bold");
   padding: units(1) units(0.5);
   text-decoration: none;
 
@@ -334,7 +327,7 @@ html {
   margin-right: 0;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   padding: units(5) units(2);
   @include at-media("tablet") {

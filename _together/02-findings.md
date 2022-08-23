@@ -54,34 +54,25 @@ summary_sections:
       <div class="grid-row">
         <div class="grid-col-12">
           {% if forloop.index == 1 %}
-          <div class="tablet:grid-offset-2 measure-4">
-          {% include together/together-quote.html quote="[We’re] In the very early stage of thinking about equity and diversity in digital delivery." source="HISP Digital team member"%}
-          <p>
-            Some teams could point to specific examples about how they created a more inclusive experience. Some of the things we heard included:
-          </p>
-          <ul>
-            <li>
-              A program that reviews all their images to ensure a diverse representation of people.
-            </li>
-            <li>
-              An agency that has added “non-binary” to questions asking users to self-identify biological sex.
-            </li>
-            <li>
-              An agency that is waiting for a clear directive prior to making any changes to personal information collected.
-            </li>
-            <li>
-              Several digital teams are actively working on adding languages other than English to their sites.
-            </li>
-            <li>
-              And many teams that are thinking about how to structure forms to support successful completion, even during times of stress or trauma.
-            </li>
-          </ul>
-          {% include together/together-quote.html quote="There is so much to learn that it is hard to be an expert." source="HISP design expert"%}
-          <p>
-            We learned that most teams feel they have a good handle on how to implement and test for accessibility conformance, but most would like more guidance (especially guidance supported by research) on creating inclusive experiences. 
-          </p>
-          {% include together/together-quote.html quote="[You] can’t make a mistake, because it is someone’s future." source="HISP Digital team member"%}
-          </div>
+          <div class="tablet:grid-offset-2 measure-4" markdown="1">
+{% include together/together-quote.html quote="[We’re] In the very early stage of thinking about equity and diversity in digital delivery." source="HISP Digital team member"%}
+        
+Some teams could point to specific examples about how they created a more inclusive experience.[^1] Some of the things we heard included:
+        
+* A program that reviews all their images to ensure a diverse representation of people.
+* An agency that has added “non-binary” to questions asking users to self-identify biological sex.
+* An agency that is waiting for a clear directive prior to making any changes to personal information collected.
+* Several digital teams are actively working on adding languages other than English to their sites.
+
+* And many teams that are thinking about how to structure forms to support successful completion, even during times of stress or trauma.
+   
+{% include together/together-quote.html quote="There is so much to learn that it is hard to be an expert." source="HISP design expert"%}
+          
+We learned that most teams feel they have a good handle on how to implement and test for accessibility conformance, but most would like more guidance (especially guidance supported by research) on creating inclusive experiences. 
+          
+{% include together/together-quote.html quote="[You] can’t make a mistake, because it is someone’s future." source="HISP Digital team member"%}
+
+</div>
           {% elsif forloop.index == 2 %}           
           <div class="tablet:grid-offset-2 measure-4">
             {% include together/together-quote.html quote="Right now [users] must select Mr./Mrs. — need to be more flexible." source="HISP Digital team member"%}
@@ -112,7 +103,7 @@ summary_sections:
           {% elsif forloop.index == 3 %}
 <div class="tablet:grid-offset-2 measure-4" markdown="1">
 
-Some teams could point to specific examples about how they created a more inclusive experience[^1]. Some of the things we heard included:
+Some teams could point to specific examples about how they created a more inclusive experience. Some of the things we heard included:
 
 * Actively seeking a diverse team composition.
 * Identifying ways to co-design with user groups that are most impacted by the decisions.
@@ -140,41 +131,34 @@ Many of the digital teams are trying to figure out what changes they need to mak
            
 </div>
           {% elsif forloop.index == 5 %}
-          <div class="tablet:grid-offset-2 measure-4">
-            <p>
-              Forms can be frustrating and alienating, especially if the user is recovering from trauma or in a volatile situation, such as in the aftermath of a disaster. Interviewees asked for guidance around how we can increase trust and help the public to have a better experience with forms. 
-            </p>
-            {% include together/together-quote.html quote="People are reluctant to give information because of the lack of trust and any number of concerns. [We need help] building trust into the design process." source="HISP Digital team member"%}
-            <p>
-              Some of the specific insights we heard regarding complex forms include:
-            </p>
-            <ul>
-              <li>
-               Users need to know why information is required, what we are using it for, and how it will be protected.
-              </li>
-              <li>
-               Some users, especially those in difficult situations, may need to be able to complete a form over several sessions.
-              </li>
-              <li>
-                Not clearly stating upfront what information will be required to complete the form can lead to form abandonment.
-              </li>
-              <li>
-                Forms that make assumptions — such as that all people in a family have the same last name — can be very frustrating for people to complete.
-              </li>
-            </ul>
-            {% include together/together-quote.html quote="Victims/survivors have expressed trouble in filling out forms due to the progression of questions." source="HISP Digital team member"%}
-            <p>
-              Forms are a real challenge for digital teams, as they try to meet both the needs of the public and those of the program. 
-            </p>
-          </div>
+<div class="tablet:grid-offset-2 measure-4" markdown="1">
+            
+Forms can be frustrating and alienating, especially if the user is recovering from trauma or in a volatile situation, such as in the aftermath of a disaster. Interviewees asked for guidance around how we can increase trust and help the public to have a better experience with forms.[^6] 
+            
+{% include together/together-quote.html quote="People are reluctant to give information because of the lack of trust and any number of concerns. [We need help] building trust into the design process." source="HISP Digital team member"%}
+        
+Some of the specific insights we heard regarding complex forms include:
+        
+        
+* Users need to know why information is required, what we are using it for, and how it will be protected.
+* Some users, especially those in difficult situations, may need to be able to complete a form over several sessions.
+* Not clearly stating upfront what information will be required to complete the form can lead to form abandonment.
+* Forms that make assumptions — such as that all people in a family have the same last name — can be very frustrating for people to complete.[^7]
+            
+{% include together/together-quote.html quote="Victims/survivors have expressed trouble in filling out forms due to the progression of questions." source="HISP Digital team member"%}
+            
+Forms are a real challenge for digital teams, as they try to meet both the needs of the public and those of the program. 
+
+</div>
+      
           {% elsif forloop.index == 6 %}
-          <div class="tablet:grid-offset-2 measure-4">
-            {% include together/together-quote.html quote="Not just plain language. Need language access. Good multilingual IA [information architecture]. Writing that supports low English proficiency." source="DEIA expert"%}
-            <p>
-              Providing multilingual content is a huge investment, and a key way to communicate to the public that we will meet them where they are. 
-            </p>
-            {% include together/together-quote.html quote="[We’re] struggling with multilingual [content] and accommodating the proper presentation." source="HISP Design team member"%}
-          </div>
+<div class="tablet:grid-offset-2 measure-4" markdown="1">
+{% include together/together-quote.html quote="Not just plain language. Need language access. Good multilingual IA [information architecture]. Writing that supports low English proficiency." source="DEIA expert"%}
+            
+Providing multilingual content is a huge investment, and a key way to communicate to the public that we will meet them where they are.[^8]
+            
+{% include together/together-quote.html quote="[We’re] struggling with multilingual [content] and accommodating the proper presentation." source="HISP Design team member"%}
+</div>
           {% endif %}
 
         </div>
@@ -202,6 +186,13 @@ Many of the digital teams are trying to figure out what changes they need to mak
 [^4]: Collecting and tabulating ethnicity and race response in the 2020 Census. (February 2020) Retrieved on August 19, 2022, from <https://www2.census.gov/about/training-workshops/2020/2020-02-19-pop-presentation.pdf>
 
 [^5]: Current measures of sexual orientation and gender identity in federal surveys. (August 2016) Retrieved on August 19, 2022, from <https://nces.ed.gov/FCSM/pdf/buda5.pdf>
+
+[^6]: SAMHSA’s concept of trauma and guidance for a trauma-informed approach. (July 2014) Retrieved on August 19, 2022, from <https://ncsacw.acf.hhs.gov/userfiles/files/SAMHSA_Trauma.pdf>
+
+[^7]: Trauma-informed web heuristics for communication designers. (October 12, 2021) Retrieved on August 19, 2022, from <https://dl.acm.org/doi/10.1145/3472714.3473638>
+
+[^8]: Top 10 best practices for multilingual websites. (June 21, 2022) Retrieved on August 19, 2022, from <https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/>
+
 
 </div>
     </div>

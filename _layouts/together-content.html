@@ -23,16 +23,27 @@ report_title: Inclusive Design Patterns
         {% endif %}
       </div>
       
+      {% if page.title == 'Inclusive Design Patterns' %}
       <div class="display-none tablet:display-block position-absolute bottom-neg-1 right-0">
-        {% if page_type == 'chapter' %}
-          <img class="width-card tablet:width-mobile-lg desktop:width-tablet" src="{{ site.baseurl }}/img/together/hero-bg-2.svg" alt="Diverse group of humans" />
-          {% elsif page_type == 'page' %}
-          <img src="{{ page.hero_image }}" alt="{{ page.title }}" />
-          {% endif %}
-        </div>
-        
-        <img class="width-tablet tablet:display-none position-absolute bottom-0 right-0" src="{{ site.baseurl }}/img/together/hero-bg-2.svg" alt="Diverse group of humans" />
-      
+        <img class="width-card tablet:width-mobile-lg desktop:width-tablet" src="{{ site.baseurl }}/img/together/hero-bg-2.svg" alt="Diverse group of humans" />
+      </div>
+      <img class="width-tablet tablet:display-none position-absolute bottom-0 right-0" src="{{ site.baseurl }}/img/together/hero-bg-2.svg" alt="Diverse group of humans" />
+      {% elsif page.title == 'Findings' %}
+      <div class="display-none tablet:display-block position-absolute bottom-neg-1 right-0">
+        <img class="width-card tablet:width-mobile-lg desktop:width-tablet" src="{{ site.baseurl }}/img/together/hero-bg-3.svg" alt="Diverse group of humans" />
+      </div>
+      <img class="width-tablet tablet:display-none position-absolute bottom-0 right-0" src="{{ site.baseurl }}/img/together/hero-bg-3.svg" alt="Diverse group of humans" />  
+      {% elsif page.title == 'What’s next' %}
+      <div class="display-none tablet:display-block position-absolute bottom-neg-1 right-0">
+        <img class="width-card tablet:width-mobile-lg desktop:width-tablet" src="{{ site.baseurl }}/img/together/hero-bg-4.svg" alt="Diverse group of humans" />
+      </div>
+      <img class="width-tablet tablet:display-none position-absolute bottom-0 right-0" src="{{ site.baseurl }}/img/together/hero-bg-4.svg" alt="Diverse group of humans" />  
+      {% elsif page.title == 'Get Involved' %}
+      <div class="display-none tablet:display-block position-absolute bottom-neg-1 right-0">
+        <img class="width-card tablet:width-mobile-lg desktop:width-tablet" src="{{ site.baseurl }}/img/together/hero-bg-5.svg" alt="Diverse group of humans" />
+      </div>
+      <img class="width-tablet tablet:display-none position-absolute bottom-0 right-0" src="{{ site.baseurl }}/img/together/hero-bg-5.svg" alt="Diverse group of humans" />  
+      {% endif %}
     </div>
   </div>
 </section>

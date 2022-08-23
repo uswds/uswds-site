@@ -3433,7 +3433,7 @@ figure {
   @include u-margin(0);
 
   figcaption {
-    @include u-font-size("lang", "xs");
+    @include u-font-size("lang", "2xs");
     @include u-margin-y(2);
     color: color("gray-60");
   }

@@ -110,42 +110,35 @@ summary_sections:
             {% include together/together-quote.html quote="The need to integrate with legacy back-end systems can limit changes that can be made on the front-end." source="HISP Digital team member"%}
           </div> 
           {% elsif forloop.index == 3 %}
-          <div class="tablet:grid-offset-2 measure-4">
-            <p>
-              Some of the ways digital teams are trying to be more inclusive are:
-            </p>
-            <ul>
-              <li>
-               Actively seeking a diverse team composition.
-              </li>
-              <li>
-               Identifying ways to co-design with user groups that are most impacted by the decisons.
-              </li>
-              <li>
-                Finding ways to include diverse perspectives and abilities in user testing.
-              </li>
-            </ul>
-            <p>
-              It can be hard to figure out how to include historically disadvantaged populations in the design process or usability testing. Digital teams are really struggling with how to get the right people to weigh in at the right time, so everyone's needs are represented and everyone feels heard.
-            </p>
-            {% include together/together-quote.html quote="[It is] tough for us to think simultaneously about all the different groups you have to create things for, but if we could reach out to these groups when needed that would be helpful." source="HISP Digital team member"%}
-            <p>
-              And, as always, the realities of getting solutions out to the public quickly come into play. Digital teams try to balance getting imperfect solutions out quickly and making improvements later versus waiting for a solution that checks all the boxes. It is a tough balancing act.
-            </p>
-            {% include together/together-quote.html quote="Build for most people vs. all people? Do I sacrifice getting it to most people or get it to all people later?" source="HISP Digital team member"%}
-          </div>
+<div class="tablet:grid-offset-2 measure-4" markdown="1">
+
+Some teams could point to specific examples about how they created a more inclusive experience[^1]. Some of the things we heard included:
+
+* Actively seeking a diverse team composition.
+* Identifying ways to co-design with user groups that are most impacted by the decisions.
+* Finding ways to include diverse perspectives and abilities in user testing.
+
+It can be hard to figure out how to include historically disadvantaged populations in the design process or usability testing. Digital teams are really struggling with how to get the right people to weigh in at the right time, so everyone's needs are represented and everyone feels heard.
+
+{% include together/together-quote.html quote="[It is] tough for us to think simultaneously about all the different groups you have to create things for, but if we could reach out to these groups when needed that would be helpful." source="HISP Digital team member"%}
+
+And, as always, the realities of getting solutions out to the public quickly come into play. Digital teams try to balance getting imperfect solutions out quickly and making improvements later versus waiting for a solution that checks all the boxes. It is a tough balancing act.
+
+{% include together/together-quote.html quote="Build for most people vs. all people? Do I sacrifice getting it to most people or get it to all people later?" source="HISP Digital team member"%}
+
+</div>
           {% elsif forloop.index == 4 %}
-          <div class="tablet:grid-offset-2 measure-4">
-            <ul>
-              <li>Forms that require addresses to be completed, but don’t accommodate different formats — or provide options for someone who is unhoused either permanently, or temporarily after a disaster.</li>
-              <li>Name fields that expect users to have both a first and last name, and don’t accommodate single-name individuals or individuals with multiple last names.</li>
-              <li>Forms that require self-identification of biological sex, gender identity, race and ethnicity — but don’t have options that resonate with individuals.</li>
-            </ul>
-            {% include together/together-quote.html quote="Addresses can get a little tricky on reservations." source="HISP Digital team member"%}
-            <p>
-              Many of the digital teams are trying to figure out what changes they need to make to accommodate a more diverse public. Most recognized that personal information is the most foundational information we ask from people, and when what we ask for doesn’t allow users to feel seen and confident in their answers, we may have created a bad experience from the start.
-            </p>
-          </div>
+<div class="tablet:grid-offset-2 measure-4" markdown="1">
+
+* Forms that require addresses to be completed, but don’t accommodate different formats — or provide options for someone who is unhoused either permanently, or temporarily after a disaster.
+* Name fields that expect users to have both a first and last name, and don’t accommodate single-name individuals or individuals with multiple last names.[^2]
+* Forms that require self-identification of biological sex, gender identity, race and ethnicity — but don’t have options that resonate with individuals.[^3]
+
+{% include together/together-quote.html quote="Addresses can get a little tricky on reservations." source="HISP Digital team member"%}
+          
+Many of the digital teams are trying to figure out what changes they need to make to accommodate a more diverse public.[^4] Most recognized that personal information is the most foundational information we ask from people, and when what we ask for doesn’t allow users to feel seen and confident in their answers, we may have created a bad experience from the start.[^5]
+           
+</div>
           {% elsif forloop.index == 5 %}
           <div class="tablet:grid-offset-2 measure-4">
             <p>
@@ -203,6 +196,12 @@ summary_sections:
 [^1]: They, their. (April 10, 2019) Retrieved on August 19, 2022, from <https://design.va.gov/content-style-guide/they-their>
 
 [^2]: Personal names around the world. (August 17, 2011) Retrieved on August 19, 2022, from <https://www.w3.org/International/questions/qa-personal-names>
+
+[^3]: Collecting sexual orientation and gender identity information: importance of the collection and use of this data. (March 8, 2022) Retrieved on August 19, 2022, from <https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html>
+
+[^4]: Collecting and tabulating ethnicity and race response in the 2020 Census. (February 2020) Retrieved on August 19, 2022, from <https://www2.census.gov/about/training-workshops/2020/2020-02-19-pop-presentation.pdf>
+
+[^5]: Current measures of sexual orientation and gender identity in federal surveys. (August 2016) Retrieved on August 19, 2022, from <https://nces.ed.gov/FCSM/pdf/buda5.pdf>
 
 </div>
     </div>

@@ -111,6 +111,19 @@ img {
   @include typeset("lang");
 }
 
+figure {
+  @include u-display("flex");
+  @include u-flex("column");
+  @include u-flex("align-center");
+  @include u-margin(0);
+}
+
+figcaption {
+  @include u-font-size("lang", "2xs");
+  @include u-margin-y(2);
+  color: color("gray-60");
+}
+
 // ========================================
 // 2. Site layout
 // ----------------------------------------
@@ -3424,19 +3437,6 @@ $theme-table-column-gap: 4;
 .usa-hero__callout p {
   @include typeset("lang");
   margin-bottom: 0;
-}
-
-figure {
-  @include u-display("flex");
-  @include u-flex("column");
-  @include u-flex("align-center");
-  @include u-margin(0);
-
-  figcaption {
-    @include u-font-size("lang", "2xs");
-    @include u-margin-y(2);
-    color: color("gray-60");
-  }
 }
 
 figure.highlight {

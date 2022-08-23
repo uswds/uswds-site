@@ -54,7 +54,7 @@ summary_sections:
       <div class="grid-row">
         <div class="grid-col-12">
           {% if forloop.index == 1 %}
-          <div class="tablet:grid-offset-2 measure-4" markdown="1">
+<div class="tablet:grid-offset-2 measure-4" markdown="1">
 {% include together/together-quote.html quote="[We’re] In the very early stage of thinking about equity and diversity in digital delivery." source="HISP Digital team member"%}
         
 Some teams could point to specific examples about how they created a more inclusive experience.[^1] Some of the things we heard included:

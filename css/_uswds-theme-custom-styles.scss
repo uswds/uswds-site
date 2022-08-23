@@ -3426,6 +3426,19 @@ $theme-table-column-gap: 4;
   margin-bottom: 0;
 }
 
+figure {
+  @include u-display("flex");
+  @include u-flex("column");
+  @include u-flex("align-center");
+  @include u-margin(0);
+
+  figcaption {
+    @include u-font-size("lang", "xs");
+    @include u-margin-y(2);
+    color: color("gray-60");
+  }
+}
+
 figure.highlight {
   margin: 0;
 }

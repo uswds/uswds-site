@@ -60,20 +60,21 @@ summary_sections:
           </div>
           {% elsif forloop.index == 2 %}
 <div class="tablet:grid-col-7 tablet:grid-offset-4 measure-4" markdown="1">
+
 We, with help from digital leaders across the federal space[^1], have developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of DEIA — Diversity, Equity, Inclusion, and Accessibility. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences[^2].
+
 </div>
-
-
           {% elsif forloop.index == 3 %}
+          <div class="tablet:grid-offset-4">
             <h3>What does it mean to consider digital interactions through the lens of DEIA?</h3>
-
+            
             <div class="grid-row tablet:margin-x-neg-205">
-              <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205">
+              <div class="tablet:grid-col-6 tablet:padding-x-205">
                 {% include together/together-finding-item.html  heading="Diversity" text="Diversity in design is about making sure all people are represented." icon="diversity" alt="people in circle"%}
 
                 {% include together/together-finding-item.html heading="Equity" text="Equity in design addresses the unique barriers people experience, creating fairer experiences." icon="equity" alt="two groups of people on scale and they balance"%}
               </div>
-              <div class="grid-col-12 tablet:grid-col-6 tablet:padding-x-205">
+              <div class="tablet:grid-col-6 tablet:padding-x-205">
                 {% include together/together-finding-item.html heading="Inclusivity" text="Inclusivity in design cultivates a sense of belonging and feeling valued." icon="inclusivity" alt="two people connected by a circle"%}
 
                 {% include together/together-finding-item.html  heading="Accessibility" text="Accessibility ensures that all people can understand and enjoy digital experiences." icon="a11y" alt="man in a wheelchair"%}
@@ -106,7 +107,9 @@ We, with help from digital leaders across the federal space[^1], have developed 
               Developing patterns through the lens of inclusivity also means that we need to be humble enough to acknowledge that we don’t know everything today, and as we grow and learn more the patterns will need to change. Today’s solution is not tomorrow’s.
             </p>
             
+          </div>
             {% elsif forloop.index == 4 %}
+            <div class="tablet:grid-offset-4">
             <h3>Our primary focus was to learn:</h3>
             <div class="grid-row tablet:margin-x-neg-205">
               <div class="tablet:grid-col-3 tablet:padding-x-205">
@@ -150,7 +153,7 @@ We, with help from digital leaders across the federal space[^1], have developed 
             <p class="measure-4">
               Along the way we solicited feedback from a wide range of experts in the federal space, including digital teams, policymakers, and subject matter experts. Their input was integral to our work.
             </p>        
-
+          </div>
           {% endif %}
 
         </div>

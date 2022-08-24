@@ -2,7 +2,6 @@
 layout: together-content
 title: Findings
 nav_title: Findings
-description:
 meta:
   og:image: /img/next/og-next-report.png
 
@@ -42,12 +41,12 @@ summary_sections:
   <section id="section-{{ forloop.index }}" class="together-section together-section--{{ item.title | downcase | replace: " ", "-" | remove: "’" }} {{ item.section_class }}">
     <div class="grid-container">
       <div class="grid-row">
-        <div class="grid-col-12 tablet:grid-col-12">
+        <div class="grid-col-12">
           <div class="together-section__header">
             <h2 class="together-section__heading">{{ item.heading }}</h2>
           </div>
         </div>
-        <div class="grid-col-12 tablet:grid-col-10 tablet:margin-left-auto together-section-description">
+        <div class="tablet:grid-col-10 tablet:margin-left-auto together-section-description">
           {{ item.description | markdownify }}
         </div>
       </div>
@@ -170,7 +169,7 @@ Providing multilingual content is a huge investment, and a key way to communicat
 <section class="next-section next-section--citations">
   <div class="grid-container">
     <div class="grid-row">
-      <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0" markdown="1">
+      <div class="tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0" markdown="1">
 
 #### Citations
 

@@ -21,7 +21,7 @@ chapter: true
             <h2 class="together-section__heading">We need your help</h2>
           </div>
         </div>
-        <div class="grid-col-12 tablet:grid-col-10 tablet:margin-left-auto together-section-description" markdown="1">
+        <div class="tablet:grid-col-10 tablet:margin-left-auto together-section-description" markdown="1">
 As people working in the federal space we all need to advocate for inclusive experiences.[^1] We’re all learning together, but some specific actions you can take today include:
 
 </div>
@@ -53,7 +53,7 @@ The patterns are a start, but we need your help to move forward. We’ll need he
             <h2 class="together-section__heading">Contribute to USWDS</h2>
           </div>
         </div>
-        <div class="grid-col-12 tablet:grid-col-10 tablet:margin-left-auto together-section-description" markdown="1">
+        <div class="tablet:grid-col-10 tablet:margin-left-auto together-section-description" markdown="1">
  Learn [how to contribute to USWDS](https://digital.gov/event/2022/06/16/uswds-monthly-call-june-2022/). Agencies interested in participating in this process — or simply in learning more about the design system — can join us in our [public Slack channel (#uswds-public)](https://designsystem.digital.gov/about/community/), for [our monthly calls](https://digital.gov/events/), and in the [digital.gov communities of practice](https://digital.gov/communities/). We’re looking forward to hearing from you.
 
 </div>
@@ -69,7 +69,7 @@ The patterns are a start, but we need your help to move forward. We’ll need he
 <section class="next-section next-section--citations">
   <div class="grid-container">
     <div class="grid-row">
-      <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0" markdown="1">
+      <div class="tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0" markdown="1">
 
 #### Citations
 

@@ -2,12 +2,11 @@
 layout: together-content
 title: What’s next
 nav_title: What’s next
-description: 
 meta:
   og:image: /img/next/og-next-report.png
 permalink: /together/looking-ahead/
 slug: whats-next
-subhead: Patterns and components to support key interactions is just the start, as we look toward more pattern-driven development for the USWDS design system
+subhead: Patterns and components to support key interactions is just the start, as we look toward more pattern-driven development for the USWDS design system.
 
 chapter: true
 
@@ -35,12 +34,12 @@ summary_sections:
   <section id="section-{{ forloop.index }}" class="together-section together-section--{{ item.title | downcase | replace: " ", "-" | remove: "’" }} {{ item.section_class }}">
     <div class="grid-container">
       <div class="grid-row">
-        <div class="grid-col-12 tablet:grid-col-12">
+        <div class="grid-col-12">
           <div class="together-section__header">
             <h2 class="together-section__heading">{{ item.heading }}</h2>
           </div>
         </div>
-        <div class="grid-col-12 tablet:grid-col-10 tablet:margin-left-auto together-section-description">
+        <div class="tablet:grid-col-10 tablet:margin-left-auto together-section-description">
           {{ item.description | markdownify }}
         </div>
       </div>

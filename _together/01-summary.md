@@ -2,7 +2,6 @@
 layout: together-content
 title: Inclusive Design Patterns
 nav_title: Summary
-description: 
 meta:
   og:image: /img/next/og-next-report.png
 
@@ -165,7 +164,7 @@ We, with help from digital leaders across the federal space[^1], have developed 
 <section class="next-section next-section--citations">
   <div class="grid-container">
     <div class="grid-row">
-      <div class="grid-col-12 tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0" markdown="1">
+      <div class="tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0" markdown="1">
 
 #### Citations
 

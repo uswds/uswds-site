@@ -59,7 +59,7 @@ summary_sections:
           </div>
 {% elsif forloop.index == 2 %}
           {% include together/together-color-hr.html %}
-          <section class="together-section bg-indigo-cool-70 padding-y-6 text-white">
+          <section class="together-section bg-indigo-cool-70 padding-y-6 padding-x-1 tablet:padding-x-0 text-white">
             <div class="tablet:grid-offset-2">
               <h3 class="text-indigo-10">The word pattern</h3>
               <p class="text-white measure-4">

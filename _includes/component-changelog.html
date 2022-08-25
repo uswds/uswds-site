@@ -1,4 +1,6 @@
-<h2 class="site-component-section-title" id="Component-latest-update">Latest updates</h2>
+{% assign componentKey = componentName | slugify %}
+
+<h2 class="site-component-section-title" id="changelog-{{ componentKey }}">Latest updates</h2>
 <p>All code changes for this component are tracked in its <a href="https://github.com">CHANGELOG.md</a>.</p>
 <h3>Guidance updates</h3>
 <ul class="usa-content-list">

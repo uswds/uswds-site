@@ -61,9 +61,9 @@ summary_sections:
           {% include together/together-color-hr.html %}
           <section class="together-section bg-indigo-cool-70 padding-y-6 padding-x-1 tablet:padding-x-0 text-white">
             <div class="tablet:grid-offset-2">
-              <h3 class="text-indigo-10">The word pattern</h3>
+              <h3 class="text-indigo-10">The word &quot;pattern&quot;</h3>
               <p class="text-white measure-4">
-                Pattern is a word coined by an architect named Christopher Alexander back in the 1970s to describe people's patterns of behavior when they live in their homes. What are the kinds of things that people do again and again in their homes (or expect again and again from their homes) and how might homes be built to support these needs. These needs often go beyond the prosaic needs of shelter and sanitation to include emotional needs. What can a home do to make you feel at home? 
+                Pattern is a word coined by architect Christopher Alexander in the 1970s to describe people's patterns of behavior when they live in their homes. What are the kinds of things that people do again and again in their homes (or expect again and again from their homes) and how might homes be built to support these needs? These needs often go beyond the prosaic needs of shelter and sanitation to include emotional needs. What can a home do to make you feel at home? 
               </p>
               <p class="text-white measure-4">
                 In an important way, Alexander reintroduced human-centered design into the design practice of architecture, and the concepts he developed are just as relevant and practical to any designed experience.

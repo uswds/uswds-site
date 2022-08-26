@@ -179,6 +179,6 @@ We recommend a mix of automated, semi-automated, and manual testing in addition 
 - Are you providing content in [languages other than English](https://digital.gov/resources/improving-access-to-services-for-people-with-limited-english-proficiency-e-o-13166/), as appropriate for the audience?
 
 {:.site-component-section-title}
-## Recent changes
+## Latest updates
 - May 20, 2021 - [Updated all content to better explain current standards](https://github.com/uswds/uswds-site/pull/1230) This update explained USWDS accessibility standards, provided guidance on how to reach accessibility compliance on projects, and provided links to helpful resources.
 - April 19, 2019 - [Added information about Accessibility for Teams](https://github.com/uswds/uswds-site/pull/767)

@@ -15,7 +15,7 @@ While most addresses in the U.S. follow a specific pattern, there are unique var
 ## Physical address
 
 ## When to use this pattern 
-Use this pattern when you need the physical location of a person and you need to parse out the specific parts of the address. This may be important when determining benefits eligibility, for disaster recovery purposes, or other reasons. Since physical addresses may be new, temporary, or not currently served by the U.S.P.S. consider asking for a mailing address, too. Physical addresses may be where a building or property is located, or potentially where a displaced individual is currently located. Mailing addresses are where postal mail must be sent.
+Use this pattern when you need the physical location of a person and you need to parse out the specific parts of the address. This may be important when determining benefits eligibility, for disaster recovery purposes, or other reasons. Since physical addresses may be new, temporary, or not currently served by the USPS consider asking for a mailing address, too. Physical addresses may be where a building or property is located, or potentially where a displaced individual is currently located. Mailing addresses are where postal mail must be sent.
 
 ## When to consider something else
 This pattern supports domestic U.S. addresses, including the U.S. territories and military outposts. If you need to collect addresses that may not fit this format, such as international addresses for citizens living overseas, you will need to [use something else](https://www.upu.int/en/Postal-Solutions/Programmes-Services/Addressing-Solutions).
@@ -38,7 +38,7 @@ Provide all the fields needed for a user to provide a physical address, even les
             <li>Allow users to enter hyphens, apostrophes, special characters, and blank spaces in each name field.</li>
             <li>Consider using the autocomplete attribute on address input fields to allow the browser to autofill information that has been previously entered.</li>
             <li>Do provide the Puerto Rican Urbanization field, unless your program does not serve Puerto Rico.</li>
-            <li>If the armed forces and the U.S. territories are not included, you may want to provide a link to their resources for clarity.</li>
+            <li>If your program does not serve the armed forces or U.S. territories, you may want to provide links to related resources for these users if such resources exist.</li>
           </ul> 
         </div>
       </div>

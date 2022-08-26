@@ -138,8 +138,8 @@ Translation and navigation functions in languages other than English should stil
 
 
 ## References
-- CMS Appendix A - Top 15 non-English languages by states. (n.d.) Retrieved on July 25, 2022, from [https://www.cms.gov/CCIIO/Resources/Regulations-and-Guidance/Downloads/Appendix-A-Top-15-non-english-by-state-MM-508_update12-20-16.pdf](https://www.cms.gov/CCIIO/Resources/Regulations-and-Guidance/Downloads/Appendix-A-Top-15-non-english-by-state-MM-508_update12-20-16.pdf)
-- CMS’s Guide to developing a language access plan. (n.d.) Retrieved on July 25, 2022, from [https://www.cms.gov/About-CMS/Agency-Information/OMH/Downloads/Language-Access-Plan-508.pdf](https://www.cms.gov/About-CMS/Agency-Information/OMH/Downloads/Language-Access-Plan-508.pdf)
+- CMS appendix a - top 15 non-english languages by states. (n.d.) Retrieved on July 25, 2022, from [https://www.cms.gov/CCIIO/Resources/Regulations-and-Guidance/Downloads/Appendix-A-Top-15-non-english-by-state-MM-508_update12-20-16.pdf](https://www.cms.gov/CCIIO/Resources/Regulations-and-Guidance/Downloads/Appendix-A-Top-15-non-english-by-state-MM-508_update12-20-16.pdf)
+- CMS’s guide to developing a language access plan. (n.d.) Retrieved on July 25, 2022, from [https://www.cms.gov/About-CMS/Agency-Information/OMH/Downloads/Language-Access-Plan-508.pdf](https://www.cms.gov/About-CMS/Agency-Information/OMH/Downloads/Language-Access-Plan-508.pdf)
 - Improving access to public websites and digital services for Limited English Proficient (LEP) Persons. (December 2021) Retrieved on July 25, 2022, from [https://www.lep.gov/sites/lep/files/media/document/2021-12/2021_12_07_Website_Language_Access_Guide_508.pdf](https://www.lep.gov/sites/lep/files/media/document/2021-12/2021_12_07_Website_Language_Access_Guide_508.pdf)
 - Improving access to services for persons with Limited English Proficiency, Executive Order 13166. (August 11, 2000) Retrieved on July 25, 2022, from [https://www.govinfo.gov/content/pkg/FR-2000-08-16/pdf/00-20938.pdf](https://www.govinfo.gov/content/pkg/FR-2000-08-16/pdf/00-20938.pdf)
 - LEP.gov. (n.d.) Retrieved on July 25, 2022, from [https://www.lep.gov/](https://www.lep.gov/)

@@ -8,7 +8,7 @@ lead: Help users understand the purpose of a form and the time commitment needed
 
 {:.margin-bottom-2}
 ## What problem does this solve?
-Government forms can be very stressful and overwhelming for users to complete. If they are in the midst of a crisis or recovering from trauma, form completion can be very challenging. Respect for their life experiences and time, and reassurances about process and privacy can help reduce user stress and frustration.
+Government forms can be very stressful and overwhelming for users to complete. If they are in the midst of a crisis or recovering from trauma, form completion can be very challenging. Respect for their life experiences and time, and reassurances about process and privacy, can help reduce user stress and frustration.
 
 ## When to use this pattern 
 Use this pattern when you are asking users to provide more than basic contact information, especially if you are collecting information that may require disclosing sensitive personal, financial, health, or safety details in a digital form.
@@ -27,10 +27,11 @@ Provide clear information on why it is necessary to complete the form, what info
           <ul>
             <li>Do provide information on why information is being collected and how it is being used. </li>
             <li>Do use <a href="https://www.plainlanguage.gov/">plain language</a>.</li>
-            <li>Do use people-first, inclusive language.</li> 
-            <li>Do <a href="/component/icon-list/">provide a list</a> of what information your user will need to successfully complete the form.</li>
+            <li>Do use people-first language. Emphasize <a href="https://www.cdc.gov/ncbddd/disabilityandhealth/materials/factsheets/fs-communicating-with-people.html">people’s abilities, not their limitations</a>, and choose words that emphasize the need for accessibility, not the disability. For example, use accessible parking, not handicapped parking.</li> 
+            <li>Do use <a href="https://content-guide.18f.gov/our-style/inclusive-language/">inclusive language</a>. Choose gender neutral words when possible. Avoid using <em>citizen</em>, unless you are specifically addressing that audience. Choose words that include the broadest appropriate group.</li>
+            <li>Do <a href="{{ site.baseurl }}/component/icon-list/">provide a list</a> of what information your user will need to successfully complete the form.</li>
             <li>Do provide an approximate amount of time it will take the user to complete the form.</li>
-            <li>Do allow the user to save and resume if possible. Some users may need to take breaks as they complete a form on a difficult topic.</li>
+            <li>Do allow the user to save and resume if possible. Some users may need to take breaks as they complete a form on a difficult topic. If users can save and resume the form, tell them so up front, so they know this is an option.</li>
           </ul> 
         </div>
       </div>
@@ -42,9 +43,10 @@ Provide clear information on why it is necessary to complete the form, what info
       <div class="do-dont__content">
           <ul>
             <li>Do not overwhelm your user. Provide enough background information to communicate the purpose and requirements of the form, but use principles of progressive disclosure to gradually move from simple to more difficult questions.</li>
-            <li>Do not create a false sense of urgency. People under stress—even just the stress of filling out a long government form—do not need added pressure.</li>
+            <li>Do not ask for information that may be disturbing to the user without context. Explain why you need the information. For example, if you are going to ask about mental health or substance use issues or details on the illness or death of a loved one, explain why that information is required for the program or service.</li>
+            <li>Do not create a false sense of urgency. People under stress — even just the stress of filling out a long government form — do not need added pressure.</li>
             <li>Use care to avoid making gender, pronoun, or biological sex assumptions based on previous answers.</li>
-            <li>Don’t provide examples that may make some groups feel excluded.</li>
+            <li>Don’t provide examples that may make some groups feel excluded or targeted, such as including images or illustrations that reinforce stereotypes or stigma.</li>
           </ul>
       </div>
     </div>
@@ -115,6 +117,7 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
 - Building Trust with Users Through Open Communication and Feedback, (June 13, 2019) Retrieved on July 19, 2022, from [https://digital.gov/2019/06/13/building-trust-with-users-through-open-communication-feedback/](https://digital.gov/2019/06/13/building-trust-with-users-through-open-communication-feedback/)  
 - Communicating with and about people with disabilities. (February 1, 2022) Retrieved on July 28, 2022, from [https://www.cdc.gov/ncbddd/disabilityandhealth/materials/factsheets/fs-communicating-with-people.html](https://www.cdc.gov/ncbddd/disabilityandhealth/materials/factsheets/fs-communicating-with-people.html) 
 - Design Principles, (n.d.) Retrieved on July 21, 2022 [https://designsystem.digital.gov/design-principles/](https://designsystem.digital.gov/design-principles/)
+- Inclusive Design. (n.d.) Retrieved on August 24, 2022, from https://content-guide.18f.gov/our-style/inclusive-language/. 
 - Trauma-Informed Computing: Towards Safer Technology Experiences for All. Journal article Association for Computing Machinery in Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems (CHI '22). 2022. Retrieved on July 22, 2022, from [https://doi.org/10.1145/3491102.3517475](https://doi.org/10.1145/3491102.3517475)
 - Trust or bust: communicating trustworthiness in web design. (March 6, 1999) Retrieved on July 28, 2022, from [https://www.nngroup.com/articles/communicating-trustworthiness/](https://www.nngroup.com/articles/communicating-trustworthiness/)
 

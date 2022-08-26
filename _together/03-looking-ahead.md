@@ -61,7 +61,7 @@ summary_sections:
           {% include together/together-color-hr.html %}
           <section class="together-section bg-indigo-cool-70 padding-y-6 padding-x-1 tablet:padding-x-0 text-white">
             <div class="tablet:grid-offset-2">
-              <h3 class="text-indigo-10">The word &quot;pattern&quot;</h3>
+              <h3 class="text-indigo-10">The future of patterns and USWDS</h3>
               <p class="text-white measure-4">
                 Opportunity for a future-facing sidebar here?
               </p>

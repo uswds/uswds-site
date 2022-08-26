@@ -29,13 +29,14 @@ Respectful, inclusive voice and tone throughout the form–the questions, field 
       <h3 class="do-dont__heading">What to do</h3>
         <div class="do-dont__content">
           <ul>
-            <li>Make sure you’re <a href="{{ site.baseurl }}/patterns/complex-form/establish-trust/">setting expectations and establishing trust</a>. Be transparent in why specific information is being collected, how it will be used, and how that information will be safeguarded.</li>
+            <li>Make sure you’re helping users to understand expectations as you are <a href="{{ site.baseurl }}/patterns/complex-form/establish-trust/">Establishing trust</a>. Be transparent in why specific information is being collected, how it will be used, and how that information will be safeguarded.</li>
             <li>Design with mobile in mind. Consider the touch screen experience and how forms can be delivered in bandwidth-challenged environments.</li>
             <li>Progressively disclose information, guiding the user from simple to more difficult questions.</li>
             <li>Break questions into small, meaningful chunks. Only show questions on one micro-topic at a time.</li>
             <li>Show the user where they are in the process. Because data entered may impact future steps, consider whether a component like the <a href="https://designsystem.digital.gov/components/step-indicator/">Step Indicator</a> is a fit for a specific form.</li>
             <li>Allow the user to complete the form in the order they choose, if possible. If changes to answers may impact steps already completed, inform the user of potential impacts and confirm before invalidating previous form entries.</li>
             <li>Allow the users to save and resume. Some users may need to take breaks as they complete a form on a difficult topic.</li>
+            <li>Do provide users with an option to get help (a phone number or chat, for example) if they get stuck or have a question.</li>
           </ul> 
         </div>
       </div>
@@ -47,17 +48,13 @@ Respectful, inclusive voice and tone throughout the form–the questions, field 
       <div class="do-dont__content">
           <ul>
             <li>Don’t assume your users are using a desktop or laptop computer, in the privacy of their own homes.</li>
-            <li>Don’t hide critical information behind links that will navigate the user away from the form, even using a new window or tab. Users may find it disorienting or lose their place in the form. Consider whether using <a href="https://designsystem.digital.gov/components/modal/">modals</a> for critical explanatory content that may be required to understand and complete the task is necessary, or if on-screen help text can provide the necessary information.</li>
-            <li>Don’t take shortcuts in error messaging. Avoid error messaging that is vague or places blame on the user. Users in stressful situations may find terse or unclear validation messaging frustrating and a barrier to completion.</li>
+            <li>Don’t hide critical information — especially information that is useful or provides context — behind links that will navigate the user away from the form, even using a new window or tab. Users may find it disorienting or lose their place in the form. Consider whether using <a href="https://designsystem.digital.gov/components/modal/">modals</a> for critical explanatory content that may be required to understand and complete the task is necessary, or if on-screen help text can provide the necessary information.</li>
+            <li>Avoid error messaging that is vague or places blame on the user. Users in stressful situations may find terse or unclear validation messaging frustrating and a barrier to completion.</li>
           </ul>
       </div>
     </div>
   </div>
 </div>
-
-## Considerations
-### Whether you need this data
-<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
 
 ## Usability guidance
 <strong>Design to support people in difficult times.</strong> People under stress may have poor recall, make frequent errors completing forms, and may not notice the errors they make. They likely have a hard time staying focused, cannot easily categorize objects, and are easily frustrated. Use care when surfacing content that appears based on previous answers. People under stress may already feel exposed and vulnerable. Use calm, straightforward language.
@@ -108,7 +105,7 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
 
 ## Related
 - <a href="{{ site.baseurl }}/patterns/complex-form/keep-a-record/">Keep a record of submitted information</a> pattern
-- <a href="{{ site.baseurl }}/patterns/complex-form/progress-easily/">Understand expectations and establish trust</a> pattern
+- <a href="{{ site.baseurl }}/patterns/complex-form/establish-trust/">Understand expectations and establish trust</a> pattern
 
 
 ## References

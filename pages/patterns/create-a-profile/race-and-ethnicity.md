@@ -52,7 +52,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
           <ul>
             <li>Do not restrict choices to a single race or ethnicity.</li>
             <li>Do not require the user to answer. Provide an option like “Prefer not to say.”</li>
-            <li>Do not capture race or ethnicity information for operational or generalization purposes. Understanding that a majority of your webinar attendees self-identify as Hispanic does not mean that Hispanic people enjoy webinars.</li>
+            <li>Do not capture race or ethnicity information for operational or generalization purposes. For example, understanding that a majority of your webinar attendees self-identify as Hispanic does not mean that Hispanic people enjoy webinars.</li>
           </ul>
       </div>
     </div>
@@ -77,8 +77,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
 
 <strong>If you're only collecting information on race.</strong> Do allow users to select all races that apply with clear hint text, e.g., "Select all that apply".
 
-<strong>If you’re collecting race and ethnicity information.</strong> Strongly consider using checkboxes for race combined with an open-ended text input for ethnicity self-identification. Do allow users to select all races that apply, and multiple ethnicities, with clear hint text, e.g., 
-Select all that apply" and "You may report more than one ethnicity".
+<strong>If you’re collecting race and ethnicity information.</strong> Strongly consider using checkboxes for race combined with an open-ended text input for ethnicity self-identification. Do allow users to select all races that apply, and multiple ethnicities, with clear hint text, for example, "Select all that apply" and "You may report more than one ethnicity".
 
 <strong>Do allow users to opt out of providing race and ethnicity information</strong> with a "Prefer not to answer" option.
 
@@ -107,9 +106,9 @@ Select all that apply" and "You may report more than one ethnicity".
 
 <strong>Use a fieldset and legend for a checkbox group.</strong> Surround a related set of checkboxes with a `<fieldset>`. The `<legend>` provides context for the grouping. Don’t use fieldset and legend for a single check.
 
-<strong>These custom checkboxes are accessible.</strong> The custom checkbox component is accessible to screen readers because the default checkbox is moved off-screen with position: absolute; left: -999em.
+<strong>These custom checkboxes are accessible.</strong> The custom checkbox component is accessible to screen readers because the default checkbox is moved off-screen with `position: absolute; left: -999em`.
 
-<strong>Use a semantic tag.</strong> The checkbox should have a semantic tag for the id attribute, and its corresponding label should have the same value in its for attribute.
+<strong>Use a semantic tag.</strong> The checkbox should have a semantic tag for the `id` attribute, and its corresponding label should have the same value in its `for` attribute.
 
 <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
 

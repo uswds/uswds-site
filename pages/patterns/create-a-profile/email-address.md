@@ -43,7 +43,7 @@ A text input field with validation and robust error messaging to guide users in 
     <h3 class="do-dont__heading">What not to do</h3>
       <div class="do-dont__content">
           <ul>
-            <li>Do not require users to re-enter their email address, unless you have research showing this is effective for your audience.</li>
+            <li>Do not require users to re-enter their email address, unless you have a good reason for doing so. If you're collecting email addresses for the purpose of communicating with the user, verifying that a user's email address is correctly spelled reduces the risk of sending sensitive information to the wrong individual. When creating an account based on an email address, you might choose to validate a user's email address by requiring them to click an emailed verification link and successfully authenticate to ensure information will be shared with the correct individual.</li>
             <li>Do not set arbitrary minimum lengths for the local portion of the email address (occurring before the @ symbol) or domain (after the @ symbol) parts.</li>
             <li>Do not invalidate characters frequently seen in email addresses including hyphens (-), underscores (_), plus signs (+), or periods (.) in the local portion of an email address. <a href="https://datatracker.ietf.org/doc/html/rfc822">See RFC 822</a> for the exhaustive list of permitted characters in the local portion of an email address.</li>
             <li>Do not restrict top-level domains for email address unless your use case is very specific, e.g., only .gov or .mil addresses.</li> 

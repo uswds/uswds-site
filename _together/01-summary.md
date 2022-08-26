@@ -58,6 +58,21 @@ summary_sections:
             </p>
           </div>
           {% elsif forloop.index == 2 %}
+
+          {% include together/together-color-hr.html %}
+          <section class="together-section bg-indigo-cool-70 padding-y-6 padding-x-1 tablet:padding-x-0 text-white">
+            <div class="tablet:grid-offset-2">
+              <h3 class="text-indigo-10">The word &quot;pattern&quot;</h3>
+              <p class="text-white measure-4">
+                Pattern is a word coined by architect Christopher Alexander in the 1970s to describe people's patterns of behavior when they live in their homes. What are the kinds of things that people do again and again in their homes (or expect again and again from their homes) and how might homes be built to support these needs? These needs often go beyond the prosaic needs of shelter and sanitation to include emotional needs. What can a home do to make you feel at home? 
+              </p>
+              <p class="text-white measure-4">
+                In an important way, Alexander reintroduced human-centered design into the design practice of architecture, and the concepts he developed are just as relevant and practical to any designed experience.
+              </p>
+            </div>
+          </section>
+          {% include together/together-color-hr.html %}
+                    
 <div class="tablet:grid-col-7 tablet:grid-offset-4 measure-4" markdown="1">
 
 We, with help from digital leaders across the federal space[^1], have developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of DEIA — Diversity, Equity, Inclusion, and Accessibility. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences[^2].

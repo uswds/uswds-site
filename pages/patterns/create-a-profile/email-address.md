@@ -63,7 +63,7 @@ A text input field with validation and robust error messaging to guide users in 
 
 <strong>Do not require users to re-enter their email address, unless you have a good reason for doing so.</strong> If you're collecting email addresses for the purpose of communicating with the user, verifying that a user's email address is correctly spelled reduces the risk of sending sensitive information to the wrong individual. 
 
-When creating an account based on an email address, you might choose to validate a user's email address by requiring them to click an emailed verification link and successfully authenticate to ensure information will be shared with the correct individual.</li>
+When creating an account based on an email address, you might choose to validate a user's email address by requiring them to click an emailed verification link and successfully authenticate to ensure information will be shared with the correct individual.
 
 See [usability guidance for radio buttons](https://designsystem.digital.gov/components/radio-buttons/#usability-guidance-radio-buttons). 
 

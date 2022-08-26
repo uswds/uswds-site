@@ -29,6 +29,14 @@ summary_sections:
       In March 2022, the USWDS team brought together researchers, designers, and engineers to conduct research into inclusive design patterns.
   
 ---
+<style>
+  .bg-indigo-cool-70 .footnote {
+    color: white;
+  }
+   .bg-indigo-cool-70 .usa-link:visited, .bg-indigo-cool-70 a:visited {
+    color: white;
+}
+</style>
 
 {% for item in page.summary_sections %}
   <section id="section-{{ forloop.index }}" class="together-section together-section--{{ item.title | downcase | replace: " ", "-" | remove: "’" }} {{ item.section_class }}">
@@ -72,8 +80,8 @@ We, with help from digital leaders across the federal space[^1], have developed 
               <p class="text-white measure-4">
                 Pattern is a word coined by architect Christopher Alexander in the 1970s to describe people's patterns of behavior when they live in their homes. What are the kinds of things that people do again and again in their homes (or expect again and again from their homes) and how might homes be built to support these needs? These needs often go beyond the prosaic needs of shelter and sanitation to include emotional needs. What can a home do to make you feel at home? 
               </p>
-              <p class="text-white measure-4">
-                In an important way, Alexander reintroduced human-centered design into the design practice of architecture, and the concepts he developed are just as relevant and practical to any designed experience.
+              <p class="text-white measure-4" markdown="1">
+                In an important way, Alexander reintroduced human-centered design into the design practice of architecture, and the concepts he developed are just as relevant and practical to any designed experience.[^3]
               </p>
             </div>
           </section>
@@ -190,6 +198,9 @@ We, with help from digital leaders across the federal space[^1], have developed 
 [^1]: VA.gov design system patterns. (May 26, 2022) Retrieved on August 19, 2022, from <https://design.va.gov/patterns/>
 
 [^2]: Embedding equity in civic design to transform customer experience. (July 13, 2022) Retrieved on August 19, 2022, from <https://digital.gov/resources/embedding-equity-in-civic-design-to-transform-customer-experience/>
+
+[^3]: A pattern language: Towns, buildings, construction. (1977) Retrieved on August 25, 2022, from <https://www.amazon.com/Pattern-Language-Buildings-Construction-Environmental/dp/0195019199>
+
 
 </div>
     </div>

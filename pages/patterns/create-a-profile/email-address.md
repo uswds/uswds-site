@@ -135,9 +135,8 @@ See [usability guidance for radio buttons](https://designsystem.digital.gov/comp
 
 ## References
 - Mobile form usability: avoid splitting single input entities. (February 12, 2013) Retrieved on July 20, 2022, from [https://baymard.com/blog/mobile-form-usability-single-input-fields](https://baymard.com/blog/mobile-form-usability-single-input-fields)
-- Validate email addresses (Regular Expressions Cookbook) (n.d). Retrieved on July 20, 2022, from [https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s01.html](https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s01.html)
 - RFC 822. (August 13, 1982) Retrieved on July 20, 2022, from [https://datatracker.ietf.org/doc/html/rfc822](https://datatracker.ietf.org/doc/html/rfc822). See also [RFC Editor Errata](https://www.rfc-editor.org/errata_search.php?rfc=822).
-
+- Validate email addresses (Regular Expressions Cookbook) (n.d). Retrieved on July 20, 2022, from [https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s01.html](https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s01.html)
 
 
 

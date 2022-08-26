@@ -3,7 +3,7 @@ title: Biological sex or gender
 permalink: /patterns/create-a-profile/sex-or-gender/
 layout: styleguide
 category: Patterns
-lead: This pattern helps users to provide gender identity or biological sex information in the most accurate and respectful manner possible. 
+lead: This pattern helps users to provide gender identity or biological sex information in an accurate and respectful manner. 
 ---
 
 ## What problem does this solve?
@@ -11,7 +11,7 @@ Gender and biological sex are often used synonymously. Users have struggled to p
 
 Biological sex assigned at birth is a biological attribute. In the digital space, male and female are often the only provided options, but there are instances where an individual's biological sex is not unambiguously male or female.
 
-Gender is a social construct; gender identity is an expression of a user’s identity and is integral to their sense of self. There is a wide variety of gendered experiences in the world.
+Gender is a social construct. Gender identity is an expression of a user’s identity and is integral to their sense of self. There is a wide variety of gendered experiences in the world.
 
 
 {:.site-component-section-title}

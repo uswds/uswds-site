@@ -29,9 +29,9 @@ Place the language selector menu at the top of the screen above site navigation,
           <ul>
             <li>Place the language menu button in the upper corner of the screen for consistency. If possible, flip the arrangement of the header for right-to-left languages. The language button should be positioned at the top right of the page for left-to-right languages and on the top left for right-to-left languages.</li>
             <li>Make the language access button a single, independent element.</li>
-            <li>Include the language toggle in the header so that it remains visible and in the same position as the user scrolls up and down a webpage if the website has a “sticky” or “fixed” header.</li>
+            <li>Include the language dropdwn in the header so that it remains visible and in the same position as the user scrolls up and down a webpage if the website has a “sticky” or “fixed” header.</li>
             <li>Take users to an equivalent page that includes the same or similar content.</li>
-            <li>Label the drop down menu <code>Languages</code>.</li>
+            <li>Label the dropdown menu <code>Languages</code>.</li>
             <li>Capitalize the name of each language (such as English, Spanish, or Vietnamese).</li>
             <li>Do order the languages alphabetically by the common, native language name (non-English version). For example:<br/>
             عربى - Arabic<br/>
@@ -127,7 +127,7 @@ Consider including a <strong>prominent in-page notice or link</strong> in additi
 - <a href="{{ site.baseurl }}/patterns/language-selector/two-languages">Select from two languages</a> pattern
 
 ## References
-- Community Research Explores Ways to Improve Access to Multilingual Content. (August 9, 2022) Retrieved on August 24, 2022, from [https://digital.gov/2022/08/09/community-research-explores-ways-to-improve-access-to-multilingual-content/](https://digital.gov/2022/08/09/community-research-explores-ways-to-improve-access-to-multilingual-content/)
+- Community research explores ways to improve access to multilingual content. (August 9, 2022) Retrieved on August 24, 2022, from [https://digital.gov/2022/08/09/community-research-explores-ways-to-improve-access-to-multilingual-content/](https://digital.gov/2022/08/09/community-research-explores-ways-to-improve-access-to-multilingual-content/)
 - Designing a perfect language selector UX. (May 4, 2022) Retrieved on July 21, 2022, from [https://www.smashingmagazine.com/2022/05/designing-better-language-selector/](https://www.smashingmagazine.com/2022/05/designing-better-language-selector/)
 - Flag problems. (August 1, 1996) Retrieved on July 22, 2022, from [https://www.nngroup.com/articles/flag-problems/](https://www.nngroup.com/articles/flag-problems/)
 - Top 10 Best practices for multilingual websites. (June 21, 2022) Retrieved on July 21, 2022, from [https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/](https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/)

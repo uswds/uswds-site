@@ -13,7 +13,7 @@ Inconsistent placement and language selection interface components can be a barr
 Use this pattern when the content is available in two languages. 
 
 ## When to consider something else
-When content is available in three or more languages, see the pattern <a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages/">Select from three or more languages</a>. When only selected content is available in some languages, see the 
+When content is available in three or more languages, see the <a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages/">Select from three or more languages</a> pattern. When only selected content is available in some languages, see the 
  <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Selected content available</a> pattern.
 
 ## What's the solution

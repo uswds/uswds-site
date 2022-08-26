@@ -29,7 +29,7 @@ Place the language selector button at the top right of the screen above site nav
 <li>Place the language menu button in the upper corner of the screen for consistency. If possible, flip the arrangement of the header for right-to-left languages. The language button should be positioned at the top right of the page for left-to-right languages and on the top left for right-to-left languages.</li>
             <li>Make the language access button a single, independent element.</li>
             <li>Include the language toggle in the header so that it remains visible and in the same position as the user scrolls up and down a webpage if the website has a “sticky” or “fixed” header.</li>
-            <li>Label the drop down menu <code>Languages</code>.
+            <li>Label the drop down menu <code>Languages</code>.</li>
             <li>Capitalize the name of each language (such as English, Spanish, or Vietnamese).</li>
             <li>Do order the languages alphabetically by the common, native language name (non-English version). For example:<br/>
             عربى - Arabic<br/>

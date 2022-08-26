@@ -148,7 +148,7 @@ Present the user with the tools to accurately depict their gender identity.
       <div class="do-dont__content">
           <ul>
             <li>Do not assume gender identity based on biological sex.</li>
-            <li>Do not use `other` as a gender option. Instead use an open-ended text field.</li>
+            <li>Do not use <code>other</code> as a gender option. Instead use an open-ended text field.</li>
             <li>Do not limit the user's choice of gender. Not everyone will fit into a specific classification determined by the form designer.</li>
           </ul>
       </div>
@@ -175,9 +175,9 @@ See [usability guidance for checkboxes](https://designsystem.digital.gov/compone
 
 <strong>Do not use a fieldset and legend for a single checkbox.</strong> Only groups of related checkboxes should be contained within a `<fieldset>` and `<legend>`.
 
-<strong>These custom checkboxes are accessible.</strong> The custom checkbox component is accessible to screen readers because the default checkbox is moved off-screen with position: absolute; left: -999em.
+<strong>These custom checkboxes are accessible.</strong> The custom checkbox component is accessible to screen readers because the default checkbox is moved off-screen with `position: absolute; left: -999em`.
 
-<strong>Use a semantic tag.</strong> The checkbox should have a semantic tag for the id attribute, and its corresponding label should have the same value in its for attribute.
+<strong>Use a semantic tag.</strong> The checkbox should have a semantic tag for the `id` attribute, and its corresponding label should have the same value in its `for` attribute.
 
 <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
 

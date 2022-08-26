@@ -18,10 +18,6 @@ summary_sections:
   - heading: Patterns in the design system
     description: |-
       So where do patterns fit within the design system? Consider a food metaphor. Patterns are the recipes that pull together components (ingredients), tokens (flavors and textures), and usability and accessibility guidance (food preparation techniques). Patterns provide the recipe — the blueprint — for creating an inclusive experience. You’ll still need to apply your deep knowledge of your users to make design choices that work for you, but the patterns summarize the considerations important to your choices. Templates are a specific application of the recipe.
- 
-  - heading: Pattern-driven development
-    description: |-
-      As the design system matures, you will likely see patterns beginning to actively drive development. We will identify the key interactions we need to support, develop patterns, and allow new components to emerge from the new patterns. We see this as an important human-centered shift to how we’ll approach development, how we’ll choose components, and how we’ll approach modularity and interaction between components.
       
   - heading: Thank you
     description: |-
@@ -61,10 +57,9 @@ summary_sections:
           {% include together/together-color-hr.html %}
           <section class="together-section bg-indigo-cool-70 padding-y-6 padding-x-1 tablet:padding-x-0 text-white">
             <div class="tablet:grid-offset-2">
-              <h3 class="text-indigo-10">The future of patterns and USWDS</h3>
+              <h3 class="text-indigo-10">Pattern-driven development</h3>
               <p class="text-white measure-4">
-                Opportunity for a future-facing sidebar here?
-              </p>
+                As the design system matures, you will likely see patterns beginning to actively drive development. We will identify the key interactions we need to support, develop patterns, and allow new components to emerge from the new patterns. We see this as an important human-centered shift to how we’ll approach development, how we’ll choose components, and how we’ll approach modularity and interaction between components.</p>
             </div>
           </section>
           {% include together/together-color-hr.html %}

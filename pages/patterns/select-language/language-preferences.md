@@ -143,8 +143,8 @@ Translation and navigation functions in languages other than English should stil
 - Improving access to public websites and digital services for Limited English Proficient (LEP) Persons. (December 2021) Retrieved on July 25, 2022, from [https://www.lep.gov/sites/lep/files/media/document/2021-12/2021_12_07_Website_Language_Access_Guide_508.pdf](https://www.lep.gov/sites/lep/files/media/document/2021-12/2021_12_07_Website_Language_Access_Guide_508.pdf)
 - Improving access to services for persons with Limited English Proficiency, Executive Order 13166. (August 11, 2000) Retrieved on July 25, 2022, from [https://www.govinfo.gov/content/pkg/FR-2000-08-16/pdf/00-20938.pdf](https://www.govinfo.gov/content/pkg/FR-2000-08-16/pdf/00-20938.pdf)
 - LEP.gov. (n.d.) Retrieved on July 25, 2022, from [https://www.lep.gov/](https://www.lep.gov/)
-- The Limited English Proficient population in the United States in 2013. (July 8, 2015) Retrieved on July 25, 2022, from [https://www.migrationpolicy.org/article/limited-english-proficient-population-united-states-2013](https://www.migrationpolicy.org/article/limited-english-proficient-population-united-states-2013)
-- OMB Memorandum M-17-06, 16. (November 2016) Retrieved on July 25, 2022, from [https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2017/m-17-06.pdf#page=16](https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2017/m-17-06.pdf#page=16)
+- The limited english proficient population in the United States in 2013. (July 8, 2015) Retrieved on July 25, 2022, from [https://www.migrationpolicy.org/article/limited-english-proficient-population-united-states-2013](https://www.migrationpolicy.org/article/limited-english-proficient-population-united-states-2013)
+- OMB memorandum m-17-06, 16. (November 2016) Retrieved on July 25, 2022, from [https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2017/m-17-06.pdf#page=16](https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2017/m-17-06.pdf#page=16)
 
 
 ## Changelog

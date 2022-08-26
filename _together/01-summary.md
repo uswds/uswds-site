@@ -59,7 +59,13 @@ summary_sections:
           </div>
           {% elsif forloop.index == 2 %}
 
-          {% include together/together-color-hr.html %}
+<div class="tablet:grid-col-7 tablet:grid-offset-4 measure-4" markdown="1">
+
+We, with help from digital leaders across the federal space[^1], have developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of DEIA — Diversity, Equity, Inclusion, and Accessibility. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences[^2].
+
+</div>
+
+         {% include together/together-color-hr.html %}
           <section class="together-section bg-indigo-cool-70 padding-y-6 padding-x-1 tablet:padding-x-0 text-white">
             <div class="tablet:grid-offset-2">
               <h3 class="text-indigo-10">The word &quot;pattern&quot;</h3>
@@ -72,12 +78,7 @@ summary_sections:
             </div>
           </section>
           {% include together/together-color-hr.html %}
-                    
-<div class="tablet:grid-col-7 tablet:grid-offset-4 measure-4" markdown="1">
 
-We, with help from digital leaders across the federal space[^1], have developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of DEIA — Diversity, Equity, Inclusion, and Accessibility. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences[^2].
-
-</div>
           {% elsif forloop.index == 3 %}
           <div class="tablet:grid-offset-4">
             <h3>What does it mean to consider digital interactions through the lens of DEIA?</h3>

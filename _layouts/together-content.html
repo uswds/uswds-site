@@ -38,19 +38,21 @@ report_title: Inclusive Design Patterns
 
 <nav class="together-internal-nav bg-gray-10 text-base" aria-label="Together report internal navigation">
   <div class="grid-container">
-    <ul id="internal-nav" class="together-internal-nav__list">
-      {% for item in site.together %}
-      {% if item.chapter %}
-        <li class="together-internal-nav__item">
-          <a href="{{ site.baseurl }}{{ item.url }}" class="together-internal-nav__link {% if item.title == page.title or item.title == page.parent %}
-            current
-          {% endif %}">     
-            {{ item.nav_title }}
-          </a>
-        </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
+    <div class="tablet:grid-offset-3 tablet:padding-left-3">
+      <ul id="internal-nav" class="together-internal-nav__list">
+        {% for item in site.together %}
+        {% if item.chapter %}
+          <li class="together-internal-nav__item">
+            <a href="{{ site.baseurl }}{{ item.url }}" class="together-internal-nav__link {% if item.title == page.title or item.title == page.parent %}
+              current
+            {% endif %}">     
+              {{ item.nav_title }}
+            </a>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </nav>
 

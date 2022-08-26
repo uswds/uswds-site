@@ -3,17 +3,20 @@ title: Three or more languages
 permalink: /patterns/language-selector/three-or-more-languages/
 layout: styleguide
 category: Patterns
-lead: This pattern helps users, especially those with limited English proficiency, select their preferred language when visiting a website available in three or more languages, e.g., English, Spanish, and Arabic.
+lead: This pattern helps users, especially those with limited English proficiency, select their preferred language when visiting a website available in three or more languages, like English, Spanish, and Arabic.
 ---
 
 ## What problem does this solve?
 Inconsistent placement and treatment of language selection interface components can be a barrier to users, especially those with limited English-language skills, preventing them from easily finding and accessing content in other languages.
 
 ## When to use this pattern 
-Use this pattern when the content is available in three or more languages and all content is available in each language. When content is available in only two languages, see the pattern <a href="{{ site.baseurl }}/patterns/language-selector/two-languages/">Select from two languages</a> pattern. When only selected content is available in some languages, see <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Find selected content in preferred language</a> pattern.
+Use this pattern when the content is available in three or more languages and all content is available in each language. 
+
+## When to consider something else
+When content is available in only two languages, see the <a href="{{ site.baseurl }}/patterns/language-selector/two-languages/">Select from two languages</a> pattern. When only selected content is available in some languages, see the <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Selected content available</a> pattern.
 
 ## What's the solution
-Place the language selector menu at the top right of the screen above site navigation, allowing site visitors to use a dropdown menu to select their language of choice. 
+Place the language selector menu at the top of the screen above site navigation, allowing site visitors to use a dropdown menu to select their language of choice. Place the language selector on the top right for left-to-right languages and on the top left for right-to-left languages if possible.
 
 ## Guidance
 
@@ -24,20 +27,26 @@ Place the language selector menu at the top right of the screen above site navig
       <h3 class="do-dont__heading">What to do</h3>
         <div class="do-dont__content">
           <ul>
-            <li>Place the button in the top right of the screen for consistency.</li>
+            <li>Place the language menu button in the upper corner of the screen for consistency. If possible, flip the arrangement of the header for right-to-left languages. The language button should be positioned at the top right of the page for left-to-right languages and on the top left for right-to-left languages.</li>
             <li>Make the language access button a single, independent element.</li>
-            <li>Include the language toggle in the header so that it remains visible and in the same position as the user scrolls up and down a webpage if a website has a “sticky” or “fixed” header.</li>
-            <li>Take the users to an equivalent page (i.e., the same/similar content).</li>
-            <li>Capitalize the name of the language (e.g., English, Spanish, or Vietnamese).</li>
-            <li>Strongly consider labeling the name in the common, native language (e.g., Español).</li>
-            <li>Order the languages alphabetically in English or by population size.<br/>
-            English - English<br/>
-            French - Français<br/>
-            Spanish - Español</li>
-            <li>Alternatively, you can order the languages alphabetically by Language Name (non-English version), unless the direction of the language is right to left. For example:<br/>
+            <li>Include the language toggle in the header so that it remains visible and in the same position as the user scrolls up and down a webpage if the website has a “sticky” or “fixed” header.</li>
+            <li>Take users to an equivalent page that includes the same or similar content.</li>
+            <li>Label the drop down menu <code>Languages</code>.
+            <li>Capitalize the name of each language (such as English, Spanish, or Vietnamese).</li>
+            <li>Do order the languages alphabetically by the common, native language name (non-English version)., unless the direction of the language is right to left. For example:<br/>
+            عربى - Arabic<br/>
+            公司简介 - Chinese (Simplified)<br/>
             English - English<br/>
             Español - Spanish<br/>
-            Français - French</li>
+            Français - French<br/>
+            Россия - Russian</li>
+            <li>Alternatively, consider ordering the languages alphabetically in English or by population size if this approach has been validated by user testing.<br/>
+            Arabic - عربى<br/>
+            Chinese (Simplified) - 公司简介<br/>
+            English - English<br/>
+            French - Français<br/>
+            Russian - Россия<br/>
+            Spanish - Español</li>
           </ul> 
         </div>
       </div>
@@ -49,9 +58,10 @@ Place the language selector menu at the top right of the screen above site navig
       <div class="do-dont__content">
           <ul>
             <li>Do not create a dead end for users by taking them to a page with little or no meaningful content.</li>
-            <li>Do not use icons or graphics, since they may mean different things in different languages and cultures.</li>
-            <li>Do not use flags or country codes to indicate languages. Flags do not map to languages; Arabic, for example, is spoken in many countries. ES may not be universally understood to indicate Spanish.</li>
+            <li>Do not use icons or graphics, as they may represent different concepts to different languages and cultures.</li>
+            <li>Do not use flags or country codes to indicate languages. Flags do not map to languages; Arabic, for example, is spoken in many countries. The country code <code>ES</code> may not be universally understood to indicate Spanish.</li>
             <li>Avoid auto-redirecting language based on detecting location or browser settings. This can be confusing and disorienting.</li>
+            <li>Do not combine this element with other navigation items.</li>
           </ul>
       </div>
     </div>
@@ -59,15 +69,15 @@ Place the language selector menu at the top right of the screen above site navig
 </div>
 
 ## Considerations
-<b>Ensure there’s enough color contrast</b> between the button, the text inside the button, and the site background to ensure readability.
+<strong>Ensure there’s enough color contrast</strong> between the button, the text inside the button, and the site background to ensure readability.
 
-Provide a <b>visual indicator that the text is a link</b>. For example, permanently underline text or when hovering.
+If the text will be visually presented as a button but coded as a link, it is recommended to <strong>add ARIA role="button"</strong> so that screen readers announce it as a button. Additionally, JavaScript will also need to be added so that keyboard users can activate the button using both the Enter and Spacebar keys. See [Understanding Success Criterion 4.1.2 - Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) for more information.
 
-<b>Use the HTML lang attributes</b> to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
+<strong>Use the HTML lang attributes</strong> to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
 
-All logically related items/links must be presented as an <b>HTML unordered list</b>.
+<strong>All logically related items and links</strong> must be presented as an HTML unordered list. 
 
-Consider including a <b>prominent in-page notice or link</b> in addition to the link in the header, in order to increase visibility for the user.
+Consider including a <strong>prominent in-page notice or link</strong> in addition to the link in the header, in order to increase visibility for the user.
 
 ## Ingredients
 
@@ -117,11 +127,11 @@ Consider including a <b>prominent in-page notice or link</b> in addition to the 
 - <a href="{{ site.baseurl }}/patterns/language-selector/two-languages">Select from two languages</a> pattern
 
 ## References
-- Top 10 Best practices for multilingual websites. (June 21, 2022) Retrieved on July 21, 2022, from [https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/](https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/)
-- White paper on best practices for multilingual access to digital libraries. (June 23, 2016) Retrieved on July 21, 2022, from [https://pro.europeana.eu/files/Europeana_Professional/Publications/BestPracticesForMultilingualAccess_whitepaper.pdf](https://pro.europeana.eu/files/Europeana_Professional/Publications/BestPracticesForMultilingualAccess_whitepaper.pdf)
+- Community Research Explores Ways to Improve Access to Multilingual Content. (August 9, 2022) Retrieved on August 24, 2022, from [https://digital.gov/2022/08/09/community-research-explores-ways-to-improve-access-to-multilingual-content/](https://digital.gov/2022/08/09/community-research-explores-ways-to-improve-access-to-multilingual-content/)
 - Designing a perfect language selector UX. (May 4, 2022) Retrieved on July 21, 2022, from [https://www.smashingmagazine.com/2022/05/designing-better-language-selector/](https://www.smashingmagazine.com/2022/05/designing-better-language-selector/)
 - Flag problems. (August 1, 1996) Retrieved on July 22, 2022, from [https://www.nngroup.com/articles/flag-problems/](https://www.nngroup.com/articles/flag-problems/)
-
+- Top 10 Best practices for multilingual websites. (June 21, 2022) Retrieved on July 21, 2022, from [https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/](https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/)
+- White paper on best practices for multilingual access to digital libraries. (June 23, 2016) Retrieved on July 21, 2022, from [https://pro.europeana.eu/files/Europeana_Professional/Publications/BestPracticesForMultilingualAccess_whitepaper.pdf](https://pro.europeana.eu/files/Europeana_Professional/Publications/BestPracticesForMultilingualAccess_whitepaper.pdf)
 
 ## Changelog
 - Created July 28, 2022. Guidance informed by research conducted by USAgov in cooperation with multiple agencies and the Multilingual Community of Practice.

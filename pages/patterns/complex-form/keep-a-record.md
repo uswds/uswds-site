@@ -66,17 +66,17 @@ Provide the user with a printable record of their answers using a print style sh
 
 <strong>Keep it simple.</strong> Remove unnecessary headers, footers, images, and iconography. Ensure design elements that should be printed have transparent backgrounds. 
 
-<strong>Consider swapping your web resolution logo with a print resolution logo.</strong> This will ensure that your logo is legible and not pixelated. While many images can and should be stripped in a print style sheet, your program name and logo are important indicators of the purpose and origin of the document, especially in the absence of design elements and color.
+<strong>Consider swapping web resolution logos with print resolution logos if you’re using raster files (gif or jpg images).</strong> This will ensure that your logo is legible and not pixelated. Better yet, consider using <a href="https://svgontheweb.com/">scalable vector graphic (svg)</a> format logos, which are both efficient and resolution independent. While many images can and should be stripped in a print style sheet, your program name and logo are important indicators of the importance of the document, especially in the absence of design elements and color.
 
-<strong>Prioritize readability.</strong> If possible, use a white background and dark serif font to optimize readability. Set the point size no smaller than 12 points. Some users will struggle to read smaller text, especially if they are under stress. 
+<strong>Prioritize readability.</strong> If possible, use a white background and dark serif font to optimize readability. When targeting print output, set the font size in points (<code>12 pt</code>) rather than screen units (<code>px</code>, <code>em</code>, or <code>rem</code>). Use 12 point or larger text for all content. Some users will struggle to read smaller text, especially if they are under stress. 
 
 Consider using a fixed-width font or the `<pre>` element for identifiers like case numbers, to ensure numbers and letters can be differentiated easily.
 
-<strong>Ensure links are preserved.</strong> Force underlines on all anchor tags to clearly indicate a link in print, and use the CSS pseudo-element to display the full URL after anchored text hyperlinks.
+<strong>Ensure useful links are preserved.</strong> Force underlines on all anchor tags to clearly indicate a link in print, and use the CSS pseudo-element to display the full URL after anchored text hyperlinks. Avoid displaying URLs for links that are fragment identifiers (for example, #login-form) or that are generated using the javascript: pseudo protocol (for example, <code>javascript:alert("Your session appears to be inactive...");</code>.
 
 <strong>Be mindful of costs associated with printing.</strong> 
 - Consider whether you need color to communicate critical information, such as in a chart. 
-- Fine tune page margins to maximize space and minimize pages printed, but do not make the margins smaller than .5 inches to ensure printer support.
+- Fine tune page margins to maximize space and minimize pages printed, but do not make the margins smaller than 0.5 inches to ensure printer support.
 - If user-uploaded images are an essential part of your form, consider the best way to represent them to the user. This might include listing filenames or providing thumbnails, rather than printing full-size images.
 - Prevent images you do print from being cut off or extending wider than a standard portrait-oriented letter-size page.
 
@@ -115,6 +115,7 @@ Consider using a fixed-width font or the `<pre>` element for identifiers like ca
 - A guide to the state of print stylesheets in 2018. (May 1, 2018) Retrieved on July 29, 2022, from [https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/](https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/)
 - Designing for print with CSS. (January 7, 2015) Retrieved on July 29, 2022, from h[ttps://www.smashingmagazine.com/2015/01/designing-for-print-with-css/](ttps://www.smashingmagazine.com/2015/01/designing-for-print-with-css/)
 - How to create printer-friendly pages with CSS. (January 5, 2020) Retrieved on July 29, 2020, from [https://www.sitepoint.com/css-printer-friendly-pages/](https://www.sitepoint.com/css-printer-friendly-pages/) 
+- SVG on the web - a practical guide. (n.d.) Retrieved on August 23, 2022, from [https://svgontheweb.com/](https://svgontheweb.com/)
 - What is a printer-friendly web page? (November 21, 2018) Retrieved on July 29, 2022, from [https://www.thoughtco.com/printer-friendly-web-page-3469219](https://www.thoughtco.com/printer-friendly-web-page-3469219)
 
 

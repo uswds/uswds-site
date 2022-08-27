@@ -67,9 +67,9 @@ summary_sections:
           </div>
           {% elsif forloop.index == 2 %}
 
-<div class="tablet:grid-col-7 tablet:grid-offset-4 measure-4">
+<div class="tablet:grid-col-7 tablet:grid-offset-4 measure-4" markdown="1">
 
-With help from digital leaders across the federal space, we've developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of Diversity, Equity, Inclusion, and Accessibility — or DEIA. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences.
+With help from digital leaders across the federal space, we've developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of Diversity, Equity, Inclusion, and Accessibility — or DEIA. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences[^1].
 
 </div>
 
@@ -81,7 +81,7 @@ With help from digital leaders across the federal space, we've developed pattern
                 The word <em>Pattern</em> — in this usage — was coined by the architect Christopher Alexander in the 1970s to describe patterns of behavior and approach: "a problem which occurs over and over again in our environment, and then [...] the core of the solution to that problem [described] in such a way that you can use this solution a million times over, without ever doing it the same way twice.". For instance, what are the kinds of things that people do again and again in their homes (or <em>expect</em> again and again <em>from</em> their homes) and how might homes be built to support these needs? For Alexander, these needs go beyond the prosaic needs of shelter and sanitation to include psychological, physiological, and emotional needs. What can a home do to make you <em>feel at home?</em> 
               </p>
               <p class="text-white measure-4" markdown="1">
-                In an important way, Alexander reintroduced human-centered design into the design practice of architecture, and the concepts he and his peers developed are just as relevant and practical to any designed experience.[^1]
+                In an important way, Alexander reintroduced human-centered design into the design practice of architecture, and the concepts he and his peers developed are just as relevant and practical to any designed experience.[^2]
               </p>
             </div>
           </section>
@@ -124,8 +124,8 @@ With help from digital leaders across the federal space, we've developed pattern
               <li>Who benefits from our design? Who may be harmed? Who is left out?</li>
             </ul>
 
-            <p class="measure-4" markdown="1">
-              Developing patterns through the lens of inclusivity also means that we need to be humble enough to acknowledge that we don’t know everything today. As we grow and learn the patterns will need to change. Today’s solution is not tomorrow’s[^3].
+            <p class="measure-4">
+              Developing patterns through the lens of inclusivity also means that we need to be humble enough to acknowledge that we don’t know everything today. As we grow and learn the patterns will need to change. Today’s solution is not tomorrow’s.
             </p>
             
           </div>
@@ -148,7 +148,7 @@ With help from digital leaders across the federal space, we've developed pattern
             </div>
             
             <p class="measure-4" markdown="1">
-              The research resulted in the release of 3 pattern families consisting of 17 individual patterns, along with new and updated components and page templates. More than 30 individuals across 20 teams shared their experiences, work, and perspectives to inform the design[^2]. We interviewed individuals in a variety of roles and across many different agencies, focusing on <a href="https://www.performance.gov/cx/assets/files/HISP-listing-2021.pdf">High Impact Service Providers (HISPs)</a>.
+              The research resulted in the release of 3 pattern families consisting of 17 individual patterns, along with new and updated components and page templates. More than 30 individuals across 20 teams shared their experiences, work, and perspectives to inform the design[^3]. We interviewed individuals in a variety of roles and across many different agencies, focusing on <a href="https://www.performance.gov/cx/assets/files/HISP-listing-2021.pdf">High Impact Service Providers (HISPs)</a>.
             </p>
 
             <p class="measure-4">
@@ -193,11 +193,12 @@ With help from digital leaders across the federal space, we've developed pattern
 * footnotes will be placed here. This line is necessary
 {:footnotes}
 
-[^1]: A pattern language: Towns, buildings, construction. (1977) Retrieved on August 25, 2022, from <https://www.amazon.com/Pattern-Language-Buildings-Construction-Environmental/dp/0195019199>
+[^1]: Embedding equity in civic design to transform customer experience. (July 13, 2022) Retrieved on August 19, 2022, from <https://digital.gov/resources/embedding-equity-in-civic-design-to-transform-customer-experience/>
 
-[^2]: VA.gov design system patterns. (May 26, 2022) Retrieved on August 19, 2022, from <https://design.va.gov/patterns/>
+[^2]: A pattern language: Towns, buildings, construction. (1977) Retrieved on August 25, 2022, from <https://www.amazon.com/Pattern-Language-Buildings-Construction-Environmental/dp/0195019199>
 
-[^3]: Embedding equity in civic design to transform customer experience. (July 13, 2022) Retrieved on August 19, 2022, from <https://digital.gov/resources/embedding-equity-in-civic-design-to-transform-customer-experience/>
+[^3]: VA.gov design system patterns. (May 26, 2022) Retrieved on August 19, 2022, from <https://design.va.gov/patterns/>
+
 
 </div>
     </div>

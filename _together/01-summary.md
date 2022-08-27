@@ -1,6 +1,6 @@
 ---
 layout: together-content
-title: Inclusive Design Patterns
+title: Inclusive design patterns
 nav_title: Summary
 meta:
   og:image: /img/next/og-next-report.png
@@ -21,7 +21,7 @@ summary_sections:
 
   - heading: Digital interactions through the lens of DEIA
     description: |-
-     Designers all over the world are applying [inclusive design principles](https://designsystem.digital.gov/patterns/) to their work, creating more equitable experiences that work for everyone. Every day, practitioners are learning more about how inclusivity and equity need to be reflected in their work. Our team worked hard to put diversity, equity, and inclusivity at the center of what we did every day. 
+     Designers all over the world are applying [inclusive design principles](https://designsystem.digital.gov/patterns/) to their work, creating more equitable experiences that work for everyone. Every day, practitioners are learning more about how inclusivity and equity need to be reflected in their work. Our team worked hard to put diversity, equity, and inclusivity at the center of what we did every day. One of our interviewees said it well:
 
 
   - heading: Research
@@ -56,13 +56,13 @@ summary_sections:
           {% if forloop.index == 1 %}
           <div class="tablet:grid-col-7 tablet:grid-offset-4 measure-4">
             <p>
-              USWDS's Inclusive Design Patterns project was developed in support of <a href="https://www.section508.gov/">Section 508</a>, the <a href="https://www.congress.gov/bill/115th-congress/house-bill/5759/text">21st Century Integrated Digital Experience Act</a> (21st Century IDEA),  the Biden-Harris Administration’s President’s Management Agenda (PMA) <a href="https://www.performance.gov/pma/cx/">Priority 2 Executive Order</a> Delivering Excellent, Equitable, and Secure Federal Services, <a href="https://www.justice.gov/crt/executive-order-13166">Executive Order 13166</a> Improving Access to Services for Persons with Limited English Proficiency, <a href="https://www.whitehouse.gov/briefing-room/presidential-actions/2021/12/13/executive-order-on-transforming-federal-customer-experience-and-service-delivery-to-rebuild-trust-in-government/">Executive Order 14058</a> Transforming Federal Customer Experience and Service Delivery to Rebuild Trust in Government, and <a href="https://www.performance.gov/equity/">Executive Order 13985</a> Advancing an Equitable Government. In supporting these efforts, USWDS’s patterns are designed to remove barriers to transactions and interactions online, helping the American public successfully access government services and programs. This is fundamental to the <a href="https://designsystem.digital.gov/design-principles/">USWDS Design Priciples</a>.
+              USWDS's Inclusive Design Patterns project was developed in support of <a href="https://www.section508.gov/">Section 508</a>, the <a href="https://www.congress.gov/bill/115th-congress/house-bill/5759/text">21st Century Integrated Digital Experience Act</a> (21st Century IDEA),  the Biden-Harris Administration’s President’s Management Agenda (PMA) <a href="https://www.performance.gov/pma/cx/">Priority 2 Executive Order</a> Delivering Excellent, Equitable, and Secure Federal Services, <a href="https://www.justice.gov/crt/executive-order-13166">Executive Order 13166</a> Improving Access to Services for Persons with Limited English Proficiency, <a href="https://www.whitehouse.gov/briefing-room/presidential-actions/2021/12/13/executive-order-on-transforming-federal-customer-experience-and-service-delivery-to-rebuild-trust-in-government/">Executive Order 14058</a> Transforming Federal Customer Experience and Service Delivery to Rebuild Trust in Government, and <a href="https://www.performance.gov/equity/">Executive Order 13985</a> Advancing an Equitable Government. In supporting these efforts, USWDS’s patterns are designed to remove barriers to transactions and interactions online, helping the American public successfully access government services and programs. This is fundamental to the <a href="https://designsystem.digital.gov/design-principles/">USWDS design principles</a>.
             </p>
             <p>
               As we spoke with digital teams across the federal space we learned that everyone is wrestling with these issues: how to create effective, inclusive, equitable digital experiences. We were fortunate to learn from our colleagues that are already blazing a path towards inclusivity, and to have their perspectives inform our work. We are grateful for the large number of people who contributed their lived experience and perspectives.
             </p>
             <p>
-              Sites that don’t actively seek to address usability, accessibility, and inclusion run the very real risk of alienating, frustrating, and marginalizing the people we seek to support – resulting in diminished outcomes for both the government and the public. Digital teams across the federal government are working hard to find these solutions themselves. There is currently no good way to share and scale these independently developed solutions across government — and that’s where USWDS can help. 
+              Sites that don’t actively seek to address usability, accessibility, and inclusion run the very real risk of alienating, frustrating, and marginalizing the people we seek to support — resulting in diminished outcomes for both the government and the public. Digital teams across the federal government are working hard to find these solutions themselves. There is currently no good way to share and scale these independently developed solutions across government — and that’s where USWDS can help. 
             </p>
           </div>
           {% elsif forloop.index == 2 %}
@@ -89,8 +89,6 @@ With help from digital leaders across the federal space, we've developed pattern
 
           {% elsif forloop.index == 3 %}
           <div class="tablet:grid-offset-4">
-            <h3>One of our interviewees said it well</h3>    
-
             <figure class="together-quote tablet:padding-left-10 tablet:margin-bottom-4">
               <blockquote class="together-quote__quote">
                 “Consider the story that hasn’t been told.” 
@@ -104,7 +102,7 @@ With help from digital leaders across the federal space, we've developed pattern
               <div class="tablet:grid-col-6 tablet:padding-x-205">
                 {% include together/together-finding-item.html  heading="Diversity" text="Diversity in design is about making sure all people are represented." icon="diversity" alt="people in circle"%}
 
-                {% include together/together-finding-item.html heading="Equity" text="Equity in design addresses the unique barriers people experience, creating fairer experiences." icon="equity" alt="two groups of people on scale and they balance"%}
+                {% include together/together-finding-item.html heading="Equity" text="Equity in design addresses the unique barriers people face, creating fairer experiences." icon="equity" alt="two groups of people on scale and they balance"%}
               </div>
               <div class="tablet:grid-col-6 tablet:padding-x-205">
                 {% include together/together-finding-item.html heading="Inclusivity" text="Inclusivity in design cultivates a sense of belonging and feeling valued." icon="inclusivity" alt="two people connected by a circle"%}

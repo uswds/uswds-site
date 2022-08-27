@@ -1,7 +1,7 @@
 ---
 layout: together-content
-title: Get Involved
-nav_title: Get Involved
+title: Get involved
+nav_title: Get involved
 meta:
   og:image: /img/next/og-next-report.png
 
@@ -22,21 +22,20 @@ chapter: true
           </div>
         </div>
         <div class="tablet:grid-col-10 tablet:margin-left-auto together-section-description" markdown="1">
-As people working in the federal space we all need to advocate for inclusive experiences.[^1] We’re all learning together, but some specific actions you can take today include:
-
+As people working in the federal space we all need to advocate for inclusive experiences[^1]. We’re all learning together, but some specific actions you can take today are:
 </div>
 <div class="tablet:grid-offset-2 measure-4" markdown="1">
 * Include team members with diverse experiences and perspectives.
-* Lead with community voices and needs — emphasize people over process.[^2]
-* Practice transparency and integrity in our actions.
-* Challenge our own assumptions and biases. Recognize that there is no universal baseline for experiences.
-* Own our responsibility to ensure that the research we conduct is as inclusive and representative as possible.
+* Lead with community voices and needs — emphasize people over process[^2].
+* Practice transparency and integrity in your actions.
+* Challenge your own assumptions and biases. Recognize that there is no universal baseline for experiences.
+* Own your responsibility to ensure that the research we conduct is as inclusive and representative as possible.
 * Engage with non-profits and community groups to identify, recruit, and fairly compensate diverse users.
 * Consider who benefits and who may be harmed with each design.
 * Ask yourself who is invited and who is absent from the discussion. 
 * Identify who is best positioned to help us understand how to make our solutions better.
 
-The patterns are a start, but we need your help to move forward. We’ll need help evolving these patterns as design practices and DEIA norms evolve. We hope you will continue to share your knowledge and expertise.
+The patterns are a start, but we need your help keeping these patterns current as design practices and DEIA norms evolve. We encourage you to continue to share your knowledge and expertise.
 
 </div>
      
@@ -57,11 +56,6 @@ The patterns are a start, but we need your help to move forward. We’ll need he
  Learn [how to contribute to USWDS](https://digital.gov/event/2022/06/16/uswds-monthly-call-june-2022/). Agencies interested in participating in this process — or simply in learning more about the design system — can join us in our [public Slack channel (#uswds-public)](https://designsystem.digital.gov/about/community/), for [our monthly calls](https://digital.gov/events/), and in the [digital.gov communities of practice](https://digital.gov/communities/). We’re looking forward to hearing from you.
 
 </div>
-        <div class="tablet:grid-offset-2 measure-4">
-          <p>
-            We thank everyone who shared their time, feedback, and ideas throughout this research effort and invite you — our collaborators and colleagues — to join us in creating inclusive digital experiences we can all be proud of.
-          </p>
-        </div>    
       </div>
     </div>
   </section>

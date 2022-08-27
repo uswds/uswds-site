@@ -17,23 +17,23 @@ summary_sections:
 
   - heading: Finding the best solution in a complex environment
     description: |-
-      Designing effective, usable digital solutions is not an easy endeavor, and digital teams are wrestling with how to incorporate learnings about the sometimes confusing and constantly evolving DEIA space. While federal digital teams have always designed for “everyone,” there is renewed focus on ensuring that each individual feels welcome, heard, and supported in the digital experience. This is no easy task.
+      Designing effective, usable digital solutions is not an easy endeavor, and digital teams are wrestling with how to incorporate the sometimes confusing and constantly evolving advice emerging from the DEIA space. While federal digital teams have always designed for “everyone,” there is renewed focus on ensuring that each individual feels welcome, heard, and supported in the digital experience. This is no easy task.
 
   - heading: The process of being inclusive is as important as the design
     description: |-
      Many of the interviewees — digital teams and DEIA experts alike — worried about the lack of diversity on design teams and as user testing participants. Design teams are often not representative of the full diversity of the potential users of the systems and experiences they are creating. Many teams are trying to figure out ways to include people with a wider range of lived experiences.
 
-  - heading: Personal data is the foundation of an individual’s sense of self
+  - heading: Personal data is a reflection of an individual’s sense of self
     description: |-
-      Many of the digital solutions we create rely on some amount of each user’s personal information: name, address, Social Security Number. Solutions that aren’t inclusive of everyone can be very alienating. Interviewees explained how this can play out in digital projects.
+      Many of the digital solutions we create rely on some amount of personal information — like name, address, and Social Security Number. Solutions that aren’t inclusive of everyone can be very alienating. Interviewees identified some examples of alienating solutions:
 
   - heading: Complex forms offer unique challenges
     description: |-
-      Transactional websites were a focus of the Inclusive Design Pattern team’s work. Much of the public’s interactions with the U.S. government is through forms — both digital and paper. Forms can be really challenging for users, especially during times of stress. We heard from HISPs that complex digital forms were a serious barrier for many users, and that crafting good form experiences was a real challenge for digital teams. 
+      Transactional websites were a focus of our team’s work. Much of the public’s interactions with the U.S. government is through digital and paper forms. Forms can be extremely challenging for users, especially during times of stress. We heard from HISPs that complex digital forms were a serious barrier for many users, and that crafting good form experiences was a challenge for digital teams. 
 
   - heading: Using each individual’s language of choice makes a big difference
     description: |-
-      Many programs are working on making their content available in multiple languages, but there are lots of questions about how best to do that. As more and more programs provide content in multiple languages, how best to make people aware of the content in other languages, and to make it clear and easy for them to find and use those languages, is a real challenge. 
+      Many programs are working on making their content available in multiple languages, but there are lots of questions about how best to do that. As more and more programs provide content in multiple languages, there are compelling design challenges in how to make it clear and easy for them to find and use those languages. 
   
 ---
 
@@ -56,14 +56,12 @@ summary_sections:
 <div class="tablet:grid-offset-2 measure-4" markdown="1">
 {% include together/together-quote.html quote="[We’re] In the very early stage of thinking about equity and diversity in digital delivery." source="HISP Digital team member"%}
         
-Some teams could point to specific examples about how they created a more inclusive experience.[^1] Some of the things we heard included:
+Some teams could point to specific examples about how they created a more inclusive experience[^1]. Some of the things we heard included:
         
 * A program that reviews all their images to ensure a diverse representation of people.
-* An agency that has added “non-binary” to questions asking users to self-identify biological sex.
 * An agency that is waiting for a clear directive prior to making any changes to personal information collected.
 * Several digital teams are actively working on adding languages other than English to their sites.
-
-* And many teams that are thinking about how to structure forms to support successful completion, even during times of stress or trauma.
+* And many teams are thinking about how to structure forms to support successful completion, even during times of stress or trauma.
    
 {% include together/together-quote.html quote="There is so much to learn that it is hard to be an expert." source="HISP design expert"%}
           
@@ -102,17 +100,17 @@ We learned that most teams feel they have a good handle on how to implement and 
           {% elsif forloop.index == 3 %}
 <div class="tablet:grid-offset-2 measure-4" markdown="1">
 
-Some teams could point to specific examples about how they created a more inclusive experience. Some of the things we heard included:
+Some of the ways digital teams are trying to be more inclusive are:
 
 * Actively seeking a diverse team composition.
 * Identifying ways to co-design with user groups that are most impacted by the decisions.
 * Finding ways to include diverse perspectives and abilities in user testing.
 
-It can be hard to figure out how to include historically disadvantaged populations in the design process or usability testing. Digital teams are really struggling with how to get the right people to weigh in at the right time, so everyone's needs are represented and everyone feels heard.
+It can be hard to figure out how to include historically disadvantaged populations in the design process or usability testing. Digital teams struggle with how to get the right people to weigh in at the right time, so everyone's needs are represented and everyone feels heard.
 
 {% include together/together-quote.html quote="[It is] tough for us to think simultaneously about all the different groups you have to create things for, but if we could reach out to these groups when needed that would be helpful." source="HISP Digital team member"%}
 
-And, as always, the realities of getting solutions out to the public quickly come into play. Digital teams try to balance getting imperfect solutions out quickly and making improvements later versus waiting for a solution that checks all the boxes. It is a tough balancing act.
+And the realities of getting solutions out to the public quickly come into play. Digital teams try to balance getting imperfect solutions out quickly and making improvements later against waiting for a solution that checks all the boxes. It is a tough balancing act.
 
 {% include together/together-quote.html quote="Build for most people vs. all people? Do I sacrifice getting it to most people or get it to all people later?" source="HISP Digital team member"%}
 
@@ -121,18 +119,18 @@ And, as always, the realities of getting solutions out to the public quickly com
 <div class="tablet:grid-offset-2 measure-4" markdown="1">
 
 * Forms that require addresses to be completed, but don’t accommodate different formats — or provide options for someone who is unhoused either permanently, or temporarily after a disaster.
-* Name fields that expect users to have both a first and last name, and don’t accommodate single-name individuals or individuals with multiple last names.[^2]
-* Forms that require self-identification of biological sex, gender identity, race and ethnicity — but don’t have options that resonate with individuals.[^3]
+* Name fields that expect users to have both a first and last name, and don’t accommodate single-name individuals or individuals with multiple last names[^2].
+* Forms that require self-identification of biological sex, gender identity, or race and ethnicity — but don’t have options that are consistent with how individuals self-identify[^3].
 
 {% include together/together-quote.html quote="Addresses can get a little tricky on reservations." source="HISP Digital team member"%}
           
-Many of the digital teams are trying to figure out what changes they need to make to accommodate a more diverse public.[^4] Most recognized that personal information is the most foundational information we ask from people, and when what we ask for doesn’t allow users to feel seen and confident in their answers, we may have created a bad experience from the start.[^5]
+Many of the digital teams are trying to figure out what changes they need to make to accommodate a more diverse public[^4]. They recognize that personal information is the primary foundational information we ask from people, and when what we ask for doesn’t allow users to confidently and accurately self-identify in their answers, we may have created a bad experience — and an experience that erodes trust — from the start[^5].
            
 </div>
           {% elsif forloop.index == 5 %}
 <div class="tablet:grid-offset-2 measure-4" markdown="1">
             
-Forms can be frustrating and alienating, especially if the user is recovering from trauma or in a volatile situation, such as in the aftermath of a disaster. Interviewees asked for guidance around how we can increase trust and help the public to have a better experience with forms.[^6] 
+Forms can be frustrating and alienating, especially if the user is recovering from trauma or in a volatile situation, such as in the aftermath of a disaster. Interviewees asked for guidance around how we can increase trust and help the public to have a better experience with forms[^6]. 
             
 {% include together/together-quote.html quote="People are reluctant to give information because of the lack of trust and any number of concerns. [We need help] building trust into the design process." source="HISP Digital team member"%}
         
@@ -142,11 +140,11 @@ Some of the specific insights we heard regarding complex forms include:
 * Users need to know why information is required, what we are using it for, and how it will be protected.
 * Some users, especially those in difficult situations, may need to be able to complete a form over several sessions.
 * Not clearly stating upfront what information will be required to complete the form can lead to form abandonment.
-* Forms that make assumptions — such as that all people in a family have the same last name — can be very frustrating for people to complete.[^7]
+* Forms that make assumptions — such as that all people in a family have the same last name — can be very frustrating for people to complete[^7].
             
 {% include together/together-quote.html quote="Victims/survivors have expressed trouble in filling out forms due to the progression of questions." source="HISP Digital team member"%}
             
-Forms are a real challenge for digital teams, as they try to meet both the needs of the public and those of the program. 
+Forms are a real challenge for digital teams as they try to meet both the needs of the public and those of the program. 
 
 </div>
       
@@ -154,7 +152,7 @@ Forms are a real challenge for digital teams, as they try to meet both the needs
 <div class="tablet:grid-offset-2 measure-4" markdown="1">
 {% include together/together-quote.html quote="Not just plain language. Need language access. Good multilingual IA [information architecture]. Writing that supports low English proficiency." source="DEIA expert"%}
             
-Providing multilingual content is a huge investment, and a key way to communicate to the public that we will meet them where they are.[^8]
+Providing multilingual content is a huge investment, and a key way to communicate to the public that we will meet them where they are[^8].
             
 {% include together/together-quote.html quote="[We’re] struggling with multilingual [content] and accommodating the proper presentation." source="HISP Design team member"%}
 </div>

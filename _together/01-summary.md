@@ -124,8 +124,8 @@ With help from digital leaders across the federal space, we've developed pattern
               <li>Who benefits from our design? Who may be harmed? Who is left out?</li>
             </ul>
 
-            <p class="measure-4">
-              Developing patterns through the lens of inclusivity also means that we need to be humble enough to acknowledge that we don’t know everything today. As we grow and learn the patterns will need to change. Today’s solution is not tomorrow’s.
+            <p class="measure-4" markdown="1">
+              Developing patterns through the lens of inclusivity also means that we need to be humble enough to acknowledge that we don’t know everything today. As we grow and learn the patterns will need to change. Today’s solution is not tomorrow’s[^3].
             </p>
             
           </div>
@@ -160,8 +160,8 @@ With help from digital leaders across the federal space, we've developed pattern
               <div class="tablet:grid-col-3 tablet:padding-x-205">
                 {% include together/together-spot-item.html text="<strong>Benchmark patterns</strong> by identifying which organizations had patterns and how they approached them." icon="assessment"%}
               </div>
-              <div class="tablet:grid-col-3 tablet:padding-x-205" markdown="1">
-                {% include together/together-spot-item.html text="Analyze <strong>thought leadership around patterns</strong>, their place in the design system, and the content that supports each pattern[^3]." icon="update"%}
+              <div class="tablet:grid-col-3 tablet:padding-x-205">
+                {% include together/together-spot-item.html text="Analyze <strong>thought leadership around patterns</strong>, their place in the design system, and the content that supports each pattern." icon="update"%}
               </div>
               <div class="tablet:grid-col-3 tablet:padding-x-205">
                 {% include together/together-spot-item.html text="Take a <strong>deep dive into the topics of inclusivity and equity</strong>, especially as these topics relate to digital experiences." icon="people"%}

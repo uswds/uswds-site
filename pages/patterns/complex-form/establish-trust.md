@@ -5,7 +5,7 @@ layout: styleguide
 category: Patterns
 lead: Help users understand the purpose of a form and the time commitment needed to complete it, feel confident they have what they need, and trust that the information they provide will be safeguarded and used responsibly.  
 ---
-
+## Help a user to understand expectations and establish trust
 {:.margin-bottom-2}
 ## What problem does this solve?
 Government forms can be very stressful and overwhelming for users to complete. If they are in the midst of a crisis or recovering from trauma, form completion can be very challenging. Respect for their life experiences and time, and reassurances about process and privacy, can help reduce user stress and frustration.

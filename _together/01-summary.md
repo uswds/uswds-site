@@ -72,7 +72,7 @@ summary_sections:
 With help from digital leaders across the federal space, we've developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of Diversity, Equity, Inclusion, and Accessibility — or DEIA. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences[^1].
 
 </div>
-        <div class="margin-top-6">
+        <div class="margin-top-6 desktop:grid-offset-4">
          {% include together/together-color-hr.html %}
           <section class="together-section bg-indigo-cool-70 padding-y-6 padding-x-2 desktop:padding-x-0 text-white">
             <div class="desktop:grid-offset-2">

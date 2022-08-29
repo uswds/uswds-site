@@ -89,10 +89,12 @@ With help from digital leaders across the federal space, we've developed pattern
         </div>
 
           {% elsif forloop.index == 3 %}
-          <div class="tablet:grid-offset-4">
+          <div class="desktop:grid-offset-4">
             <figure class="together-quote tablet:padding-left-10 tablet:margin-bottom-4">
               <blockquote class="together-quote__quote">
-                “Consider the story that hasn’t been told.” 
+              <img  src="{{ site.baseurl }}/img/together/quote.svg" alt="quote" />
+                Consider the story that hasn’t been told.
+              <img  src="{{ site.baseurl }}/img/together/quote-2.svg" alt="quote" />
               </blockquote>
               <figcaption>
                 <span class="together-quote__source" aria-describedby="quote-desc">— DEIA and design expert</span>
@@ -100,12 +102,12 @@ With help from digital leaders across the federal space, we've developed pattern
             </figure>
             
             <div class="grid-row tablet:margin-x-neg-205">
-              <div class="tablet:grid-col-6 tablet:padding-x-205">
+              <div class="desktop:grid-col-6 desktop:padding-x-205">
                 {% include together/together-finding-item.html  heading="Diversity" text="Diversity in design is about making sure all people are represented." icon="diversity" alt="people in circle"%}
 
                 {% include together/together-finding-item.html heading="Equity" text="Equity in design addresses the unique barriers people face, creating fairer experiences." icon="equity" alt="two groups of people on scale and they balance"%}
               </div>
-              <div class="tablet:grid-col-6 tablet:padding-x-205">
+              <div class="desktop:grid-col-6 desktop:padding-x-205">
                 {% include together/together-finding-item.html heading="Inclusivity" text="Inclusivity in design cultivates a sense of belonging and feeling valued." icon="inclusivity" alt="two people connected by a circle"%}
 
                 {% include together/together-finding-item.html  heading="Accessibility" text="Accessibility in design ensures that all people can understand and enjoy digital experiences." icon="a11y" alt="man in a wheelchair"%}

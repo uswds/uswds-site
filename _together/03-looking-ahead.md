@@ -54,14 +54,16 @@ summary_sections:
             </p>
           </div>
 {% elsif forloop.index == 2 %}
-          {% include together/together-color-hr.html %}
-          <section class="together-section bg-indigo-cool-70 padding-y-6 padding-x-2 desktop:padding-x-0 text-white">
-            <div class="desktop:grid-offset-2">
-              <h3 class="text-indigo-10">Pattern-driven development</h3>
-              <p class="text-white measure-4">
-                As the design system matures, you will likely see patterns beginning to drive component and feature development. We will identify key interactions, document patterns, and develop components in support of these patterns. We see this as an important human-centered shift to how we’ll approach development, how we’ll choose components, and how we’ll approach modularity and interaction between components.</p>
-            </div>
-          </section>
+          <div class="margin-top-6">
+            {% include together/together-color-hr.html %}
+            <section class="together-section bg-indigo-cool-70 padding-y-6 padding-x-2 desktop:padding-x-0 text-white">
+              <div class="desktop:grid-offset-2">
+                <h3 class="text-indigo-10 margin-top-3">Pattern-driven development</h3>
+                <p class="text-white measure-4">
+                  As the design system matures, you will likely see patterns beginning to drive component and feature development. We will identify key interactions, document patterns, and develop components in support of these patterns. We see this as an important human-centered shift to how we’ll approach development, how we’ll choose components, and how we’ll approach modularity and interaction between components.</p>
+              </div>
+            </section>
+          </div>
           {% include together/together-color-hr.html %}
 {% endif %}
         </div>

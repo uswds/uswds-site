@@ -72,11 +72,11 @@ summary_sections:
 With help from digital leaders across the federal space, we've developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of Diversity, Equity, Inclusion, and Accessibility — or DEIA. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences[^1].
 
 </div>
-
+        <div class="margin-top-6">
          {% include together/together-color-hr.html %}
           <section class="together-section bg-indigo-cool-70 padding-y-6 padding-x-2 desktop:padding-x-0 text-white">
             <div class="desktop:grid-offset-2">
-              <h3 class="text-indigo-10">The word &quot;pattern&quot;</h3>
+              <h3 class="text-indigo-10 margin-top-3">The word &quot;pattern&quot;</h3>
               <p class="text-white measure-4">
                 The word <em>Pattern</em> — in this usage — was coined by the architect Christopher Alexander in the 1970s to describe patterns of behavior and approach: "a problem which occurs over and over again in our environment, and then [...] the core of the solution to that problem [described] in such a way that you can use this solution a million times over, without ever doing it the same way twice.". For instance, what are the kinds of things that people do again and again in their homes (or <em>expect</em> again and again <em>from</em> their homes) and how might homes be built to support these needs? For Alexander, these needs go beyond the prosaic needs of shelter and sanitation to include psychological, physiological, and emotional needs. What can a home do to make you <em>feel at home?</em> 
               </p>
@@ -86,6 +86,7 @@ With help from digital leaders across the federal space, we've developed pattern
             </div>
           </section>
           {% include together/together-color-hr.html %}
+        </div>
 
           {% elsif forloop.index == 3 %}
           <div class="tablet:grid-offset-4">

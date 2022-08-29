@@ -111,18 +111,7 @@ img {
   @include typeset("lang");
 }
 
-figure {
-  @include u-display("flex");
-  @include u-flex("column");
-  @include u-flex("align-center");
-  @include u-margin(0);
-}
 
-figcaption {
-  @include u-font-size("lang", "2xs");
-  @include u-margin-y(2);
-  color: color("gray-60");
-}
 
 // ========================================
 // 2. Site layout
@@ -530,6 +519,19 @@ figcaption {
   & + p {
     margin-top: units(1.5);
   }
+}
+
+.site-figure {
+  @include u-display("flex");
+  @include u-flex("column");
+  @include u-flex("align-center");
+  @include u-margin(0);
+}
+
+.site-figcaption {
+  @include u-font-size("lang", "2xs");
+  @include u-margin-y(2);
+  color: color("gray-60");
 }
 
 // Styleguide Content -------- //

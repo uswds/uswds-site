@@ -326,6 +326,7 @@ html {
 .together-quote {
   border: 3px dashed $gray-20-next;
   margin-top: units(6);
+  margin-bottom: units(6);
   margin-left: 0;
   margin-right: 0;
   display: flex;
@@ -672,30 +673,33 @@ html {
 // Findings
 // -------------------------------------
 
-.next-finding {
+.together-finding {
   display: flex;
-  margin: units(5) 0;
+  margin-bottom: units(2);
+  @include at-media("desktop") {
+    margin: units(5) 0;
+  }
 }
 
-.next-finding__img {
+.together-finding__img {
   display: block;
   height: 60px;
   margin-right: units(3);
   width: 60px;
 }
 
-.next-finding__heading {
+.together-finding__heading {
   font-family: family("lang") !important;
   font-size: size("lang", 8) !important;
   line-height: line-height("lang", 2);
   margin: 0 !important;
 }
 
-.together-section .next-finding__heading {
+.together-section .together-finding__heading {
   color: $gray-80-next;
 }
 
-.next-finding__text {
+.together-finding__text {
   margin-top: units(1);
 }
 

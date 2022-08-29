@@ -26,7 +26,7 @@ Alternatively, you can view the design assets on [Figma](https://figma.com/commu
 
 
 ### Retired design files
-USWDS no longer maintains the following design files. The most recent versions remain available for download at the links below. While USWDS is no longer maintaining these files, we'd love to hear from any teams that are using them and adding new components when new versions of USWDS are released. [Send us an email](mailto:@{{ site.uswds_email }}).
+USWDS no longer maintains the following design files. The most recent versions remain available for download at the links below. While USWDS is no longer maintaining these files, we'd love to hear from any teams that are using them and adding new components when new versions of USWDS are released. [Send us an email](mailto:{{ site.uswds_email }}).
 
 #### 1.6.10
 {% include download-buttons-design-retired-1.6.10.html %}

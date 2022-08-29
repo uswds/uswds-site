@@ -265,7 +265,7 @@ utilities:
 
     <section class="utility-examples">
 
-      <p class="utility-note"><strong>Note:</strong> <a href="http://www.w3.org/TR/css3-box/#overflow-x">Per the W3C overflow spec:</a> The computed values of ‘overflow-x’ and ‘overflow-y’ are the same as their specified values, except that some combinations with ‘visible’ are not possible: if one is specified as ‘visible’ and the other is ‘scroll’ or ‘auto’, then ‘visible’ is set to ‘auto’. The computed value of ‘overflow’ is equal to the computed value of ‘overflow-x’ if ‘overflow-y’ is the same; otherwise it is the pair of computed values of ‘overflow-x’ and ‘overflow-y’.<br/><br/>Any element that includes scrollable content must also be selectable with the keyboard. Add a <code>tabindex="0"</code> property to elements that include scrollable content.</p>
+      <p class="utility-note"><strong>Note:</strong> <a href="https://www.w3.org/TR/css-overflow-3/">Per the W3C overflow spec:</a> The computed values of ‘overflow-x’ and ‘overflow-y’ are the same as their specified values, except that some combinations with ‘visible’ are not possible: if one is specified as ‘visible’ and the other is ‘scroll’ or ‘auto’, then ‘visible’ is set to ‘auto’. The computed value of ‘overflow’ is equal to the computed value of ‘overflow-x’ if ‘overflow-y’ is the same; otherwise it is the pair of computed values of ‘overflow-x’ and ‘overflow-y’.<br/><br/>Any element that includes scrollable content must also be selectable with the keyboard. Add a <code>tabindex="0"</code> property to elements that include scrollable content.</p>
 
       {% assign overflowTokens = 'visible, hidden, scroll, auto'
         | split: ', ' %}

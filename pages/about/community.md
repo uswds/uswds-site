@@ -40,12 +40,3 @@ When participating in this community, you must follow [Digital.gov Etiquette Gui
     <p class="margin-top-0">GSA | Portland, OR</p>
   </div>
 </div>
-<div class="usa-media-block flex-align-center">
-  <img class="circle-5 usa-media-block__img" src="https://github.com/afeijoo.png?size=40" alt="">
-  <div class="usa-media-block__body">
-    <h3 class="margin-bottom-0">
-      <a href="https://digital.gov/authors/dan-williams/">Ammie Farraj Feijoo</a>
-    </h3>
-    <p class="margin-top-0">GSA | Washington, DC</p>
-  </div>
-</div>

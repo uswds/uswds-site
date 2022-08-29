@@ -11,19 +11,26 @@ lead: Your contribution helps make the Design System better for the next team th
 
 ## What's on this page
 
+- [What's on this page](#whats-on-this-page)
 - [Get started](#get-started)
 - [Report bugs and issues](#report-bugs-and-issues)
 - [Propose a feature request or enhancement](#propose-a-feature-request-or-enhancement)
-- [Submit a Pull Request](#submit-a-pull-request)
+- [Submit a pull request](#submit-a-pull-request)
+  - [If it's a bug fix:](#if-its-a-bug-fix)
+  - [If it's a feature request or enhancement:](#if-its-a-feature-request-or-enhancement)
+  - [Want to propose something else?](#want-to-propose-something-else)
 - [How we prioritize](#how-we-prioritize)
 - [Code of Conduct](#code-of-conduct)
 - [Licenses and attribution](#licenses-and-attribution)
+  - [A few parts of this project are not in the public domain](#a-few-parts-of-this-project-are-not-in-the-public-domain)
+  - [The rest of this project is in the public domain](#the-rest-of-this-project-is-in-the-public-domain)
+  - [Contributions will be released into the public domain](#contributions-will-be-released-into-the-public-domain)
 
 ## Get started
 
 Anyone can contribute to the U.S. Web Design System (USWDS). Whether it's submitting a bug or proposing a new component, we welcome your ideas on how to improve the Design System.
 
-We review all contributions before merging them into USWDS. If you’re unsure about anything, just [ask](mailto:uswds@gsa.gov) — or submit your [issue](https://github.com/uswds/uswds/issues/new/choose) or [pull request](https://github.com/uswds/uswds/compare) anyway. We’ll reach out to you if we have any questions or need to start a conversation.
+We review all contributions before merging them into USWDS. If you’re unsure about anything, just [ask](mailto:uswds@gsa.gov) — or submit your [issue]({{ site.baseurl }}/about/contribute/#report-bugs-and-issues) or [pull request]({{ site.baseurl }}/about/contribute/#submit-a-pull-request) anyway. We’ll reach out to you if we have any questions or need to start a conversation.
 
 Before submitting a contribution, you’ll just need to [create a GitHub account](https://github.com/join) or [sign in](https://github.com/login) to your existing account.
 

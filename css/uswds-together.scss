@@ -401,7 +401,7 @@ html {
   h2 {
     font-family: family("heading");
     font-size: size("heading", 12);
-    line-height: line-height("heading", 2);
+    line-height: line-height("heading", 3);
     margin-top: 0;
     margin-bottom: units(1.5);
     
@@ -567,7 +567,7 @@ html {
   font-family: family("heading");
   font-size: size("heading", 8);
   font-weight: $theme-font-weight-bold;
-  line-height: line-height("heading", 2);
+  line-height: line-height("heading", 3);
   margin-top: units(4);
   margin-bottom: units(4);
   margin-left: 0;

@@ -74,8 +74,8 @@ With help from digital leaders across the federal space, we've developed pattern
 </div>
 
          {% include together/together-color-hr.html %}
-          <section class="together-section bg-indigo-cool-70 padding-y-6 padding-x-1 tablet:padding-x-0 text-white">
-            <div class="tablet:grid-offset-2">
+          <section class="together-section bg-indigo-cool-70 padding-y-6 padding-x-2 desktop:padding-x-0 text-white">
+            <div class="desktop:grid-offset-2">
               <h3 class="text-indigo-10">The word &quot;pattern&quot;</h3>
               <p class="text-white measure-4">
                 The word <em>Pattern</em> — in this usage — was coined by the architect Christopher Alexander in the 1970s to describe patterns of behavior and approach: "a problem which occurs over and over again in our environment, and then [...] the core of the solution to that problem [described] in such a way that you can use this solution a million times over, without ever doing it the same way twice.". For instance, what are the kinds of things that people do again and again in their homes (or <em>expect</em> again and again <em>from</em> their homes) and how might homes be built to support these needs? For Alexander, these needs go beyond the prosaic needs of shelter and sanitation to include psychological, physiological, and emotional needs. What can a home do to make you <em>feel at home?</em> 

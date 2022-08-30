@@ -32,7 +32,7 @@ The pattern allows users to select their language preferences for both written a
             <li>Do list the languages in their native spelling</li>
             <li>Capitalize the name of each language (for example, English, Español).</li>
             <li>Do include American Sign Language (ASL) in spoken preferences if you are committed to supporting in-person communications, such as in a health care setting.</li>
-            <li>Do order the languages alphabetically by the common, native language name (non-English version). For example:<br/>
+            <li>Do order the languages alphabetically by the common, native language name. For example:<br/>
             عربى<br/>
             公司简介<br/>
             English<br/>

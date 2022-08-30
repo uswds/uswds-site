@@ -88,7 +88,7 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>An icon list reinforces the meaning and visibility of individual list items with a leading icon.</p>
-        <a href="/components/icon-list/">Visit Icon list</a>
+        <a href="{{ site.baseurl }}/components/icon-list/">Visit Icon list</a>
       </div>
     </div>
   </div>
@@ -97,16 +97,16 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-preview-01" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
   <div id="accordion-preview-01" class="usa-accordion__content">
-    {% include patterns/physical-address.html %}
+    {% include patterns/establish-trust.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-code-01" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
   <div id="accordion-code-01" class="usa-accordion__content highlight-code">
     <div class="usa-sr-only">
-       {% highlight text%}{% include patterns/physical-address.html %}{% endhighlight %}
+       {% highlight text%}{% include patterns/establish-trust.html %}{% endhighlight %}
     </div>
-    {% highlight html%}{% include patterns/physical-address.html %}{% endhighlight %}
+    {% highlight html%}{% include patterns/establish-trust.html %}{% endhighlight %}
   </div>
 </div>
 

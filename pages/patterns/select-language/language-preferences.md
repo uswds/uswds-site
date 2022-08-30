@@ -1,10 +1,14 @@
 ---
 title: Preferred Language
+story: Help a user to choose the languages they prefer for communication
 permalink: /patterns/language-selector/language-preferences/
-layout: styleguide
+layout: pattern
 category: Patterns
+sub-category: Select a language
 lead: This pattern helps users to indicate the language they prefer to use for either written or spoken communication.
 ---
+
+{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
 ## What problem does this solve?
 Approximately 8 percent of the total U.S. population over the age of five is considered Limited English Proficient (LEP). They may speak English, but speak it less than “very well,” and they may not read it well, either. Limited English proficiency can lead to misunderstandings and frustration. Individuals may miss important deadlines or may submit the wrong material. In some circumstances, the miscommunication can be critical—but it is always alienating.
@@ -25,23 +29,16 @@ The pattern allows users to select their language preferences for both written a
       <h3 class="do-dont__heading">What to do</h3>
         <div class="do-dont__content">
           <ul>
-            <li>Do list the languages available in both their native spelling and English.</li>
-            <li>Capitalize the name of each language (for example, English, Spanish, or Vietnamese).</li>
+            <li>Do list the languages in their native spelling</li>
+            <li>Capitalize the name of each language (for example, English, Español).</li>
             <li>Do include American Sign Language (ASL) in spoken preferences if you are committed to supporting in-person communications, such as in a health care setting.</li>
             <li>Do order the languages alphabetically by the common, native language name (non-English version). For example:<br/>
-            عربى - Arabic<br/>
-            公司简介 - Chinese (Simplified)<br/>
-            English - English<br/>
-            Español - Spanish<br/>
-            Français - French<br/>
-            Россия - Russian</li>
-            <li>Alternatively, consider ordering the languages alphabetically in English or by population size if this approach has been validated by user testing.<br/> 
-            Arabic - عربى<br/>
-            Chinese (Simplified) - 公司简介<br/>
-            English - English<br/>
-            French - Français<br/>
-            Russian - Россия<br/>
-            Spanish - Español</li>
+            عربى<br/>
+            公司简介<br/>
+            English<br/>
+            Español<br/>
+            Français<br/>
+            Россия</li>
             <li>Provide an “other” selection that allows the user to specify the specific language, if you are committed to supporting their language needs, such as in a health care setting.</li>
             <li>Do allow the user to select more than one language.</li>
             <li>Do consider providing an option for an individual to indicate “I need help completing this form,” if your program can support providing assistance. Some people with limited English-language skills or low literacy may not be able to complete the form themselves.</li>

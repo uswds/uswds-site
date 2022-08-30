@@ -1,8 +1,10 @@
 ---
 title: Keep a record
+story: Help a user to keep a record of submitted information
 permalink: /patterns/complex-form/keep-a-record/
 layout: styleguide
 category: Patterns
+sub-category: Complete a complex form
 lead: Help users feel confident in their form submission by providing a record to download or print. A printed or downloaded record of their answers provides a reference for future use, and helps users confirm their successful form submission.
 ---
 

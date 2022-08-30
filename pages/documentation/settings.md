@@ -20,12 +20,12 @@ subnav:
 ---
 
 ## Introducing USWDS settings
-USWDS is built with a suite of customizable settings that allow you to configure the design system to fit your project's needs. These settings are Sass variables that begin with the `$theme-` prefix and are typically defined with [USWDS design tokens]({{ site.baseurl }}/design-tokens). The full list of USWDS settings and their default values can be found in the [tables below](#general-settings).
+USWDS is built using a suite of customizable settings that allow you to configure the design system to fit your project's needs. These settings are Sass variables that begin with the `$theme-` prefix and are typically defined with [USWDS design tokens]({{ site.baseurl }}/design-tokens). The full list of USWDS settings and their default values can be found in the [tables below](#general-settings).
 
 ## Configuring USWDS settings
-All USWDS settings are defined in the `uswds-core` package and can be configured using Sass' [`@use..with()`](https://sass-lang.com/documentation/at-rules/use#configuration) rule. Assign custom values to settings variables inside the parentheses and these customizations will be used throughout the design system.
+All USWDS settings are defined in the `uswds-core` package and can be configured using Sass' [`@use..with()`](https://sass-lang.com/documentation/at-rules/use#configuration) rule. To create a custom configuration of USWDS, add the variables you wish to update with their new values inside the parentheses of this statement.
 
- An example configuration is shown below:
+An example configuration is shown below:
 
 ```scss
 @use "uswds-core" with (
@@ -38,6 +38,7 @@ All USWDS settings are defined in the `uswds-core` package and can be configured
   $theme-input-tile-border-color: "base",
 );
 ```
+Note that the settings variables in this module inform both general and component customizations.
 
 ### What to include in your configuration
 Include only USWDS settings that you wish to modify in this configuration. These items should be comma-separated and given values of the appropriate type.
@@ -47,7 +48,7 @@ Please note that this configuration accepts only current USWDS settings variable
 ### Where to include your configuration
 Full instructions for setting up Sass files for USWDS can be found in [Phase 2 of the Getting Started for Developers]({{ site.baseurl }}/documentation/getting-started/developers/phase-two-compile/#step-1-set-up-your-projects-sass-entry-point) guide.
 
-The important thing to note is that your settings configuration must be included  **before including the main USWDS Sass**. Some example setups are provided below:
+The important thing to note is that your settings configuration must be loaded **before including the main USWDS Sass**. Some example setups are provided below:
 
 #### Example 1
 If you configure settings in a separate file, your setup would look something like this:

@@ -1,10 +1,14 @@
 ---
 title: Two languages
+story: Help a user select between two languages
 permalink: /patterns/language-selector/two-languages/
-layout: styleguide
+layout: pattern
 category: Patterns
+sub-category: Select a language
 lead: This pattern helps users, especially those with limited English proficiency, select their preferred language when visiting a website in two languages, like English and Spanish.
 ---
+
+{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
 ## What problem does this solve?
 Inconsistent placement and language selection interface components can be a barrier to users with limited English-language skills, preventing them from easily finding and accessing content in another language.
@@ -32,7 +36,7 @@ Place the language selector button at the top of the screen above site navigatio
             <li>Make the language access button a single, independent element.</li>
             <li>Include the language toggle in the header so that it remains visible and in the same position as the user scrolls up and down a webpage if the website has a “sticky” or “fixed” header.</li>
             <li>Take users to an equivalent page that includes the same or similar content.</li>
-            <li>Capitalize the name of the language (such as English, Spanish, or Vietnamese).</li>
+            <li>Capitalize the name of each language (for example, English, Español).</li>
             <li>Strongly consider labeling the name in the common, native language like  Español (Spanish) or 公司简介 (Chinese - Simplified).</li>
           </ul> 
         </div>

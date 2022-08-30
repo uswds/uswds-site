@@ -8,6 +8,8 @@ sub-category: Complete a complex form
 lead: Empower users to successfully complete complex forms by reducing cognitive load and guiding them through the process in a way that is humane and respectful.
 ---
 
+<div></div>
+
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
 ## What problem does this solve?

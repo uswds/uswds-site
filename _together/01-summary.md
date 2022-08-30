@@ -74,8 +74,8 @@ With help from digital leaders across the federal space, we've developed pattern
 </div>
         <div class="margin-top-6 desktop:grid-offset-4">
          {% include together/together-color-hr.html %}
-          <section class="together-section bg-indigo-cool-70 padding-y-6 padding-x-2 desktop:padding-x-0 text-white">
-            <div class="desktop:grid-offset-2">
+          <section class="together-section bg-indigo-cool-70 padding-2 desktop:padding-x-0 text-white">
+            <div class="desktop:padding-8 tablet:padding-4">
               <h3 class="text-indigo-10 margin-top-3">The word &quot;pattern&quot;</h3>
               <p class="text-white measure-4">
                 The word <em>Pattern</em> — in this usage — was coined by the architect Christopher Alexander in the 1970s to describe patterns of behavior and approach: "a problem which occurs over and over again in our environment, and then [...] the core of the solution to that problem [described] in such a way that you can use this solution a million times over, without ever doing it the same way twice.". For instance, what are the kinds of things that people do again and again in their homes (or <em>expect</em> again and again <em>from</em> their homes) and how might homes be built to support these needs? For Alexander, these needs go beyond the prosaic needs of shelter and sanitation to include psychological, physiological, and emotional needs. What can a home do to make you <em>feel at home?</em> 
@@ -90,7 +90,7 @@ With help from digital leaders across the federal space, we've developed pattern
 
           {% elsif forloop.index == 3 %}
           <div class="desktop:grid-offset-4">
-            <figure class="together-quote tablet:padding-left-4 desktop:padding-left-10 tablet:margin-bottom-4">
+            <figure class="together-quote tablet:padding-6 desktop:padding-10 tablet:margin-bottom-4">
               <blockquote class="together-quote__quote">
               <img  src="{{ site.baseurl }}/img/together/quote.svg" alt="quote" />
                 Consider the story that hasn’t been told.
@@ -134,16 +134,16 @@ With help from digital leaders across the federal space, we've developed pattern
             <div class="desktop:grid-offset-4">
             <h3>Our primary focus was to learn:</h3>
             <div class="grid-row tablet:margin-x-neg-205">
-              <div class="tablet:grid-col-6 desktop:grid-col-3 tablet:padding-x-205">
+              <div class="tablet:grid-col-12 desktop:grid-col-6 tablet:padding-x-205">
                 {% include together/together-spot-item.html text="How teams are <strong>applying the lens of DEIA</strong> to their design work, and which patterns they’ve revised to be more equitable and inclusive." icon="search"%}
               </div>
-              <div class="tablet:grid-col-6 desktop:grid-col-3 tablet:padding-x-205">
+              <div class="tablet:grid-col-12 desktop:grid-col-6 tablet:padding-x-205">
                 {% include together/together-spot-item.html text="What challenges agencies are facing with trying to <strong>adopt more inclusive design patterns.</strong>" icon="connect_without_contact"%}
               </div>
-              <div class="tablet:grid-col-6 desktop:grid-col-3 tablet:padding-x-205">
+              <div class="tablet:grid-col-12 desktop:grid-col-6 tablet:padding-x-205">
                 {% include together/together-spot-item.html text="Which <strong>specific interactions are most challenging</strong> and could use attention from USWDS." icon="flag"%}
               </div>
-              <div class="tablet:grid-col-6 desktop:grid-col-3 tablet:padding-x-205">
+              <div class="tablet:grid-col-12 desktop:grid-col-6 tablet:padding-x-205">
                 {% include together/together-spot-item.html text="Where we can begin our work from <strong>existing design patterns</strong>." icon="public"%}
               </div>
             </div>
@@ -158,16 +158,16 @@ With help from digital leaders across the federal space, we've developed pattern
 
             <h3>Our objective was to:</h3>
             <div class="grid-row tablet:margin-x-neg-205">
-              <div class="tablet:grid-col-6 desktop:grid-col-3 tablet:padding-x-205">
+              <div class="tablet:grid-col-12 desktop:grid-col-6 tablet:padding-x-205">
                 {% include together/together-spot-item.html text="<strong>Benchmark patterns</strong> by identifying which organizations had patterns and how they approached them." icon="assessment"%}
               </div>
-              <div class="tablet:grid-col-6 desktop:grid-col-3 tablet:padding-x-205">
+              <div class="tablet:grid-col-12 desktop:grid-col-6 tablet:padding-x-205">
                 {% include together/together-spot-item.html text="Analyze <strong>thought leadership around patterns</strong>, their place in the design system, and the content that supports each pattern." icon="update"%}
               </div>
-              <div class="tablet:grid-col-6 desktop:grid-col-3 tablet:padding-x-205">
+              <div class="tablet:grid-col-12 desktop:grid-col-6 tablet:padding-x-205">
                 {% include together/together-spot-item.html text="Take a <strong>deep dive into the topics of inclusivity and equity</strong>, especially as these topics relate to digital experiences." icon="people"%}
               </div>
-              <div class="tablet:grid-col-6 desktop:grid-col-3 tablet:padding-x-205">
+              <div class="tablet:grid-col-12 desktop:grid-col-6 tablet:padding-x-205">
                 {% include together/together-spot-item.html text="Understand the <strong>best practices specific to each pattern</strong>, along with any federal requirements that need to guide each recommendation." icon="local_police"%}
               </div>
             </div>

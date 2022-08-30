@@ -59,11 +59,15 @@ Provide clear information on why it is necessary to complete the form, what info
 </div>
 
 ## Considerations
+
 ### Whether you need this data
 <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
 
 ### User needs
 <strong>Lead with the needs voiced from the community.</strong> Nobody knows your users better than your users. Trust is diminished when change is not aligned with needs or values. By considering users’ feedback you can mitigate the risk of alienation. 
+
+### Pre-submission check
+<strong>Provide the user with a summary of their answers before they submit the form.</strong> Give them the opportunity to re-check their answers and provide an easy way for them to revise answers that are incorrect.
 
 ## Usability guidance
 

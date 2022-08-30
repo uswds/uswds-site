@@ -8,8 +8,8 @@ sub-category: Complete a complex form
 lead: Help users feel confident in their form submission by providing a record to download or print. A printed or downloaded record of their answers provides a reference for future use, and helps users confirm their successful form submission.
 ---
 
+{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
-{:.margin-bottom-2}
 ## What problem does this solve?
 Hitting the “Submit” button on a form can be terrifying, especially if the form is complex or contains deeply personal information. Providing the user with a record of the answers provided, questions skipped, and the URL and date stamp of form submission can reduce fear, increase confidence, and improve the user’s trust in your program. 
 

@@ -79,7 +79,7 @@ Whether you decide to use this pattern may depend on how focused your site's con
 - If <strong>very specific content is available in select languages</strong>, provide a label in the dropdown that communicates what is available. For example, “Fact sheets are available in selected languages.”
 - If the <strong>content available is more varied or hard to describe</strong>, use more general language. For example, “Featured content available in additional languages”
 - If <strong>each language has its own page with content</strong> in that language provided or linked, provide a list of the languages under the label and link to the appropriate pages there.
-- If you support a media library with content in American Sign Language (ASL), provide an indication in the copy. For example, "Featured content available in additional languages including ASL."
+- If you support a <strong>media library with content in American Sign Language (ASL)</strong>, provide an indication in the copy. For example, "Featured content available in additional languages including ASL."
 
 
 ### Usability guidance

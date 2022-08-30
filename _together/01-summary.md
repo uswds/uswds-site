@@ -131,7 +131,7 @@ With help from digital leaders across the federal space, we've developed pattern
             
           </div>
             {% elsif forloop.index == 4 %}
-            <div class="desktop:grid-offset-4 measure-4">
+            <div class="desktop:grid-offset-4">
             <h3>Our primary focus was to learn:</h3>
             <div class="grid-row tablet:margin-x-neg-205">
               <div class="tablet:grid-col-6 desktop:grid-col-3 tablet:padding-x-205">

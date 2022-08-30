@@ -8,7 +8,8 @@ sub-category: Complete a complex form
 lead: Empower users to successfully complete complex forms by reducing cognitive load and guiding them through the process in a way that is humane and respectful.
 ---
 
-{:.margin-bottom-2}
+{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
+
 ## What problem does this solve?
 Complex forms can be intimidating, overwhelming, and stressful at the best of times. Applying for the services and benefits a person most needs at the worst of times – when they may be experiencing added stresses like the trauma of natural disasters, displacement, joblessness, financial hardship, health issues, loss of a loved one, discrimination, or violence – can make a complex form seem like an impossible task to complete. 
 

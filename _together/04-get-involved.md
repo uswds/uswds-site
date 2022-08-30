@@ -65,7 +65,7 @@ The patterns are a start, but we need your help keeping these patterns current a
     <div class="grid-row">
       <div class="tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0" markdown="1">
 
-#### Citations
+## Citations
 
 * footnotes will be placed here. This line is necessary
 {:footnotes}

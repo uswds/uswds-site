@@ -184,12 +184,13 @@ With help from digital leaders across the federal space, we've developed pattern
   </section>
 {% endfor %}
 
+<!-- TODO: Make this a comp -->
 <section class="next-section next-section--citations">
   <div class="grid-container">
     <div class="grid-row">
       <div class="tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0" markdown="1">
 
-#### Citations
+## Citations
 
 * footnotes will be placed here. This line is necessary
 {:footnotes}

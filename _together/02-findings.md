@@ -169,7 +169,7 @@ Providing multilingual content is a huge investment, and a key way to communicat
     <div class="grid-row">
       <div class="tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0" markdown="1">
 
-#### Citations
+## Citations
 
 * footnotes will be placed here. This line is necessary
 {:footnotes}

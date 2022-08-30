@@ -67,7 +67,7 @@ summary_sections:
           </div>
           {% elsif forloop.index == 2 %}
 
-<div class="desktop:grid-offset-4 measure-4"> markdown="1">
+<div class="desktop:grid-offset-4 measure-4" markdown="1">
 
 With help from digital leaders across the federal space, we've developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of Diversity, Equity, Inclusion, and Accessibility — or DEIA. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences[^1].
 

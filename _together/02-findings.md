@@ -41,7 +41,7 @@ summary_sections:
   <section id="section-{{ forloop.index }}" class="together-section together-section--{{ item.title | downcase | replace: " ", "-" | remove: "’" }} {{ item.section_class }}">
     <div class="grid-container">
       <div class="grid-row">
-        <div class="grid-col-3">
+        <div class="grid-col-12">
           <div class="together-section__header">
             <h2 class="together-section__heading">{{ item.heading }}</h2>
           </div>
@@ -53,7 +53,7 @@ summary_sections:
       <div class="grid-row">
         <div class="grid-col-12">
           {% if forloop.index == 1 %}
-  <div class="tablet:grid-col-7 tablet:grid-offset-4 measure-4" markdown="1">
+  <div class="tablet:grid-offset-4 measure-4" markdown="1">
   {% include together/together-quote.html quote="[We’re] in the very early stage of thinking about equity and diversity in digital delivery." source="HISP Digital team member"%}
           
   Some teams could point to specific examples about how they created a more inclusive experience[^1]. Some of the things we heard included:
@@ -71,7 +71,7 @@ summary_sections:
 
   </div>
           {% elsif forloop.index == 2 %}           
-          <div class="tablet:grid-offset-2 measure-4">
+          <div class="tablet:grid-offset-4 measure-4">
             {% include together/together-quote.html quote="Right now [users] must select Mr./Mrs. — need to be more flexible." source="HISP Digital team member"%}
             <p>
               Many of the digital teams we spoke with said that they were looking for guidance on how to incorporate DEIA best practices into their work, and how to do so given other constraints or mandates. Some common challenges cited were:
@@ -98,7 +98,7 @@ summary_sections:
             {% include together/together-quote.html quote="The need to integrate with legacy back-end systems can limit changes that can be made on the front-end." source="HISP Digital team member"%}
           </div> 
           {% elsif forloop.index == 3 %}
-<div class="tablet:grid-offset-2 measure-4" markdown="1">
+<div class="tablet:grid-offset-4 measure-4" markdown="1">
 
 Some of the ways digital teams are trying to be more inclusive are:
 
@@ -116,7 +116,7 @@ And the realities of getting solutions out to the public quickly come into play.
 
 </div>
           {% elsif forloop.index == 4 %}
-<div class="tablet:grid-offset-2 measure-4" markdown="1">
+<div class="tablet:grid-offset-4 measure-4" markdown="1">
 
 * Forms that require addresses to be completed, but don’t accommodate different formats — or provide options for someone who is unhoused either permanently, or temporarily after a disaster.
 * Name fields that expect users to have both a first and last name, and don’t accommodate single-name individuals or individuals with multiple last names[^2].
@@ -128,7 +128,7 @@ Many of the digital teams are trying to figure out what changes they need to mak
            
 </div>
           {% elsif forloop.index == 5 %}
-<div class="tablet:grid-offset-2 measure-4" markdown="1">
+<div class="tablet:grid-offset-4 measure-4" markdown="1">
             
 Forms can be frustrating and alienating, especially if the user is recovering from trauma or in a volatile situation, such as in the aftermath of a disaster. Interviewees asked for guidance around how we can increase trust and help the public to have a better experience with forms[^6]. 
             
@@ -149,7 +149,7 @@ Forms are a real challenge for digital teams as they try to meet both the needs 
 </div>
       
           {% elsif forloop.index == 6 %}
-<div class="tablet:grid-offset-2 measure-4" markdown="1">
+<div class="tablet:grid-offset-4 measure-4" markdown="1">
 {% include together/together-quote.html quote="Not just plain language. Need language access. Good multilingual IA [information architecture]. Writing that supports low English proficiency." source="DEIA expert"%}
             
 Providing multilingual content is a huge investment, and a key way to communicate to the public that we will meet them where they are[^8].

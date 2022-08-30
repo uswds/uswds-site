@@ -35,14 +35,14 @@ summary_sections:
             <h2 class="together-section__heading">{{ item.heading }}</h2>
           </div>
         </div>
-        <div class="tablet:grid-col-10 tablet:margin-left-auto together-section-description">
+        <div class="tablet:grid-col-8 tablet:margin-left-auto together-section-description">
           {{ item.description | markdownify }}
         </div>
       </div>
       <div class="grid-row">
         <div class="grid-col-12">
 {% if forloop.index == 1 %}
-          <div class="tablet:grid-offset-2 measure-4">
+          <div class="tablet:grid-offset-4 measure-4">
             <p>
               Most also have a pattern preview and associated code. These previews use USWDS components and are grounded in the <a href="https://designsystem.digital.gov/design-principles/">USWDS design principles</a>. They should be viewed as a starting point for the digital products you are designing, building, and supporting. 
             </p>
@@ -54,7 +54,7 @@ summary_sections:
             </p>
           </div>
 {% elsif forloop.index == 2 %}
-          <div class="margin-top-6 desktop:grid-offset-2">
+          <div class="margin-top-6 desktop:grid-offset-4">
             {% include together/together-color-hr.html %}
             <section class="together-section bg-indigo-cool-70 padding-y-6 padding-x-2 desktop:padding-x-0 text-white">
               <div class="desktop:grid-offset-2">

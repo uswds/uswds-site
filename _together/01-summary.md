@@ -42,19 +42,19 @@ summary_sections:
   <section id="section-{{ forloop.index }}" class="together-section together-section--{{ item.title | downcase | replace: " ", "-" | remove: "’" }} {{ item.section_class }}">
     <div class="grid-container">
       <div class="grid-row">
-        <div class="grid-col-12 tablet:grid-col-3">
+        <div class="desktop:grid-col-3">
           <div class="together-section__header">
             <h2 class="together-section__heading">{{ item.heading }}</h2>
           </div>
         </div>
-        <div class="grid-col-12 tablet:grid-col-8 tablet:margin-left-auto together-section-description">
+        <div class="desktop:grid-col-8 desktop:margin-left-auto together-section-description">
           {{ item.description | markdownify }}
         </div>
       </div>
       <div class="grid-row">
         <div class="grid-col-12">
           {% if forloop.index == 1 %}
-          <div class="tablet:grid-col-7 tablet:grid-offset-4 measure-4">
+          <div class="desktop:grid-offset-4 measure-4">
             <p>
               USWDS's Inclusive Design Patterns project was developed in support of <a href="https://www.section508.gov/">Section 508</a>, the <a href="https://www.congress.gov/bill/115th-congress/house-bill/5759/text">21st Century Integrated Digital Experience Act</a> (21st Century IDEA),  the Biden-Harris Administration’s President’s Management Agenda (PMA) <a href="https://www.performance.gov/pma/cx/">Priority 2 Executive Order</a> Delivering Excellent, Equitable, and Secure Federal Services, <a href="https://www.justice.gov/crt/executive-order-13166">Executive Order 13166</a> Improving Access to Services for Persons with Limited English Proficiency, <a href="https://www.whitehouse.gov/briefing-room/presidential-actions/2021/12/13/executive-order-on-transforming-federal-customer-experience-and-service-delivery-to-rebuild-trust-in-government/">Executive Order 14058</a> Transforming Federal Customer Experience and Service Delivery to Rebuild Trust in Government, and <a href="https://www.performance.gov/equity/">Executive Order 13985</a> Advancing an Equitable Government. In supporting these efforts, USWDS’s patterns are designed to remove barriers to transactions and interactions online, helping the American public successfully access government services and programs. This is fundamental to the <a href="https://designsystem.digital.gov/design-principles/">USWDS design principles</a>.
             </p>
@@ -67,7 +67,7 @@ summary_sections:
           </div>
           {% elsif forloop.index == 2 %}
 
-<div class="tablet:grid-col-7 tablet:grid-offset-4 measure-4" markdown="1">
+<div class="desktop:grid-offset-4 measure-4"> markdown="1">
 
 With help from digital leaders across the federal space, we've developed patterns that provide guidance to create effective and inclusive experiences. We have considered each interaction from the perspective of Diversity, Equity, Inclusion, and Accessibility — or DEIA. A caveat, though: The DEIA space is evolving very quickly. Language and norms are changing rapidly, and we expect that the patterns we develop today will continue to evolve to reflect the best practices in equitable, inclusive experiences[^1].
 
@@ -90,7 +90,7 @@ With help from digital leaders across the federal space, we've developed pattern
 
           {% elsif forloop.index == 3 %}
           <div class="desktop:grid-offset-4">
-            <figure class="together-quote tablet:padding-left-10 tablet:margin-bottom-4">
+            <figure class="together-quote tablet:padding-left-4 desktop:padding-left-10 tablet:margin-bottom-4">
               <blockquote class="together-quote__quote">
               <img  src="{{ site.baseurl }}/img/together/quote.svg" alt="quote" />
                 Consider the story that hasn’t been told.
@@ -131,19 +131,19 @@ With help from digital leaders across the federal space, we've developed pattern
             
           </div>
             {% elsif forloop.index == 4 %}
-            <div class="tablet:grid-offset-4">
+            <div class="desktop:grid-offset-4 measure-4">
             <h3>Our primary focus was to learn:</h3>
             <div class="grid-row tablet:margin-x-neg-205">
-              <div class="tablet:grid-col-3 tablet:padding-x-205">
+              <div class="tablet:grid-col-6 desktop:grid-col-3 tablet:padding-x-205">
                 {% include together/together-spot-item.html text="How teams are <strong>applying the lens of DEIA</strong> to their design work, and which patterns they’ve revised to be more equitable and inclusive." icon="search"%}
               </div>
-              <div class="tablet:grid-col-3 tablet:padding-x-205">
+              <div class="tablet:grid-col-6 desktop:grid-col-3 tablet:padding-x-205">
                 {% include together/together-spot-item.html text="What challenges agencies are facing with trying to <strong>adopt more inclusive design patterns.</strong>" icon="connect_without_contact"%}
               </div>
-              <div class="tablet:grid-col-3 tablet:padding-x-205">
+              <div class="tablet:grid-col-6 desktop:grid-col-3 tablet:padding-x-205">
                 {% include together/together-spot-item.html text="Which <strong>specific interactions are most challenging</strong> and could use attention from USWDS." icon="flag"%}
               </div>
-              <div class="tablet:grid-col-3 tablet:padding-x-205">
+              <div class="tablet:grid-col-6 desktop:grid-col-3 tablet:padding-x-205">
                 {% include together/together-spot-item.html text="Where we can begin our work from <strong>existing design patterns</strong>." icon="public"%}
               </div>
             </div>
@@ -158,16 +158,16 @@ With help from digital leaders across the federal space, we've developed pattern
 
             <h3>Our objective was to:</h3>
             <div class="grid-row tablet:margin-x-neg-205">
-              <div class="tablet:grid-col-3 tablet:padding-x-205">
+              <div class="tablet:grid-col-6 desktop:grid-col-3 tablet:padding-x-205">
                 {% include together/together-spot-item.html text="<strong>Benchmark patterns</strong> by identifying which organizations had patterns and how they approached them." icon="assessment"%}
               </div>
-              <div class="tablet:grid-col-3 tablet:padding-x-205">
+              <div class="tablet:grid-col-6 desktop:grid-col-3 tablet:padding-x-205">
                 {% include together/together-spot-item.html text="Analyze <strong>thought leadership around patterns</strong>, their place in the design system, and the content that supports each pattern." icon="update"%}
               </div>
-              <div class="tablet:grid-col-3 tablet:padding-x-205">
+              <div class="tablet:grid-col-6 desktop:grid-col-3 tablet:padding-x-205">
                 {% include together/together-spot-item.html text="Take a <strong>deep dive into the topics of inclusivity and equity</strong>, especially as these topics relate to digital experiences." icon="people"%}
               </div>
-              <div class="tablet:grid-col-3 tablet:padding-x-205">
+              <div class="tablet:grid-col-6 desktop:grid-col-3 tablet:padding-x-205">
                 {% include together/together-spot-item.html text="Understand the <strong>best practices specific to each pattern</strong>, along with any federal requirements that need to guide each recommendation." icon="local_police"%}
               </div>
             </div>

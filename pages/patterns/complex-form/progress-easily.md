@@ -1,8 +1,10 @@
 ---
 title: Progress easily
+story: Help a user to progress easily through form questions 
 permalink: /patterns/complex-form/progress-easily/
-layout: styleguide
+layout: pattern
 category: Patterns
+sub-category: Complete a complex form
 lead: Empower users to successfully complete complex forms by reducing cognitive load and guiding them through the process in a way that is humane and respectful.
 ---
 

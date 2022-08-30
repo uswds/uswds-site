@@ -1,8 +1,9 @@
 ---
 title: Address
 permalink: /patterns/create-a-profile/address/
-layout: styleguide
+layout: pattern
 category: Patterns
+sub-category: Create a profile
 lead: The physical and mailing address patterns help users enter their address successfully.
 
 ---

@@ -119,11 +119,18 @@ html {
     align-content: center;
    
   }
+  .next-hero__image {
+    position: block;
+    @include at-media("tablet") {
+      position: absolute;
+    }
+  }
 }
+
 
 .heading-wrapper{ 
   @include at-media("tablet") {
-    min-height: 240px;
+    min-height: 14rem;
   }
 }
 
@@ -146,8 +153,8 @@ html {
   font-size: size("lang", 8);
   font-weight: $theme-font-weight-normal;
   line-height: line-height("lang", 2);
-  margin: units(2) 0 0;
   max-width: 40ex;
+  margin: units(2) 0 0;
 
   @include at-media("tablet") {
     font-size: size("lang", 9);
@@ -172,15 +179,17 @@ html {
 
 .next-hero--chapter {
   flex-flow: wrap;
-  padding-bottom: 11rem;
-  min-height: 24rem;
+  padding-bottom: 0;
+  // min-height: 24rem;
   @include at-media("tablet") {
-    padding-bottom: units(5);
+    padding-bottom: 0;
   }
 
   .next-hero__subhead {
     max-width: none;
-    margin-bottom: units(4);
+    @include at-media("desktop") {
+      margin-bottom: units(4);
+    }
   }
 }
 .next-hero--page__pattern {

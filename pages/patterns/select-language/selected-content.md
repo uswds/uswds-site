@@ -36,7 +36,7 @@ Place the language selector button at the top right of the screen above site nav
             <li>Include the language dropdown in the header so that it remains visible and in the same position as the user scrolls up and down a webpage if the website has a “sticky” or “fixed” header.</li>
             <li>Label the dropdown menu <code>Languages</code>.</li>
             <li>Capitalize the name of each language (for example, English, Español).</li>
-            <li>Do order the languages alphabetically by the common, native language name (non-English version). For example:<br/>
+            <li>Do order the languages alphabetically by the common, native language name. For example:<br/>
             عربى<br/>
             公司简介<br/>
             English<br/>

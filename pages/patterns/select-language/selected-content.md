@@ -1,10 +1,15 @@
 ---
 title: Selected multilingual content
+story: Help a user find content in their preferred language when only selected content has been translated
 permalink: /patterns/language-selector/selected-content/
-layout: styleguide
+layout: pattern
 category: Patterns
+sub-category: Select a language
 lead: This pattern helps users, especially those with limited English proficiency, find content in their preferred language when only selected pieces of content have been translated. For example, the site may be available only in English, or in English and Spanish, but specific information — FAQs, fact sheets, overviews — might be available in several other languages. 
 ---
+
+{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
+
 ## What problem does this solve?
 Inconsistent placement of language selection components prevent users, especially people with limited English-language skills, from easily finding and accessing content in other languages. When only select content is available in languages other than English, this problem can be compounded as users are forced to navigate to a specific section of the site to discover the content.
 
@@ -26,25 +31,19 @@ Place the language selector button at the top right of the screen above site nav
       <h3 class="do-dont__heading">What to do</h3>
         <div class="do-dont__content">
           <ul>
-<li>Place the language menu button in the upper corner of the screen for consistency. If possible, flip the arrangement of the header for right-to-left languages. The language button should be positioned at the top right of the page for left-to-right languages and on the top left for right-to-left languages.</li>
+            <li>Place the language menu button in the upper corner of the screen for consistency. If possible, flip the arrangement of the header for right-to-left languages. The language button should be positioned at the top right of the page for left-to-right languages and on the top left for right-to-left languages.</li>
             <li>Make the language access button a single, independent element.</li>
             <li>Include the language dropdown in the header so that it remains visible and in the same position as the user scrolls up and down a webpage if the website has a “sticky” or “fixed” header.</li>
             <li>Label the dropdown menu <code>Languages</code>.</li>
-            <li>Capitalize the name of each language (such as English, Spanish, or Vietnamese).</li>
+            <li>Capitalize the name of each language (for example, English, Español).</li>
             <li>Do order the languages alphabetically by the common, native language name (non-English version). For example:<br/>
-            عربى - Arabic<br/>
-            公司简介 - Chinese (Simplified)<br/>
-            English - English<br/>
-            Español - Spanish<br/>
-            Français - French<br/>
-            Россия - Russian</li>
-            <li>Alternatively, consider ordering the languages alphabetically in English or by population size if this approach has been validated by user testing.<br/>
-            Arabic - عربى<br/>
-            Chinese (Simplified) - 公司简介<br/>
-            English - English<br/>
-            French - Français<br/>
-            Russian - Россия<br/>
-            Spanish - Español</li>
+            عربى<br/>
+            公司简介<br/>
+            English<br/>
+            Español<br/>
+            Français<br/>
+            Россия</li>
+            <li>Consider including the English label for the language after the common, native language name if this approach has been validated by user testing.</li>
           </ul> 
         </div>
       </div>
@@ -78,8 +77,9 @@ Whether you decide to use this pattern may depend on how focused your site's con
 
 - If users need to <strong>navigate to a single page</strong> from which multiple links to content in multiple languages are provided, use the label to link to that page.
 - If <strong>very specific content is available in select languages</strong>, provide a label in the dropdown that communicates what is available. For example, “Fact sheets are available in selected languages.”
-- If the <strong>content available is more varied or hard to describe</strong>, use more general language. For example, “Other languages supported with limited content.”
+- If the <strong>content available is more varied or hard to describe</strong>, use more general language. For example, “Featured content available in additional languages”
 - If <strong>each language has its own page with content</strong> in that language provided or linked, provide a list of the languages under the label and link to the appropriate pages there.
+- If you support a media library with content in American Sign Language (ASL), provide an indication in the copy. For example, "Featured content available in additional languages including ASL."
 
 
 ### Usability guidance

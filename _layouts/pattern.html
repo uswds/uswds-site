@@ -17,11 +17,11 @@ layout: default
       <header>
         {% if page.category != null %}
           {% unless page.path contains 'overview' and page.permalink != '/design-tokens/color/overview/' %}
-            <p class="site-subheading">{{ page.category }}</p>
+            <p class="site-subheading">{{ page.category }}: {{ page.sub-category }}</p>
           {% endunless %}
         {% endif %}
         <h1 id="{{ page.title | slugify }}" class="site-page-title">{{ page.title }}</h1>
-        <h2 id="{{ page.story }}" class="site-page-title">{{ page.story }}</h2>
+        <h2 id="{{ page.story }}">{{ page.story }}</h2>
       </header>
 
       {% include lead.html text=page.lead %}

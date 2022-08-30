@@ -41,7 +41,7 @@ summary_sections:
   <section id="section-{{ forloop.index }}" class="together-section together-section--{{ item.title | downcase | replace: " ", "-" | remove: "’" }} {{ item.section_class }}">
     <div class="grid-container">
       <div class="grid-row">
-        <div class="grid-col-12">
+        <div class="grid-col-3">
           <div class="together-section__header">
             <h2 class="together-section__heading">{{ item.heading }}</h2>
           </div>

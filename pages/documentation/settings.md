@@ -19,17 +19,38 @@ subnav:
   href: '#utilities-settings'
 ---
 
-A good way to get started with USWDS settings is to copy the `dist/theme` directory out of the `uswds` package and into the same directory where you keep your project Sass files. Then use the `@forward` directive in Sass to include these settings **before including the main USWDS Sass**. You can use the `styles.scss` example file in the `dist/theme` directory as a starting point for your own Sass entry point:
+## Introducing USWDS settings
+USWDS is built with a suite of customizable settings that allow you to configure the design system to fit your project's needs. These settings are Sass variables that begin with the `$theme-` prefix and are typically defined with [USWDS design tokens]({{ site.baseurl }}/design-tokens). The full list of USWDS settings and their default values can be found in the [tables below](#general-settings).
+
+## Configuring USWDS settings
+All USWDS settings are defined in the `uswds-core` package and can be configured using Sass' [`@use..with()`](https://sass-lang.com/documentation/at-rules/use#configuration) rule. Assign custom values to settings variables inside the parentheses and these customizations will be used throughout the design system.
+
+ An example configuration is shown below:
 
 ```scss
-@forward 'uswds-theme';
-@forward 'uswds';
-@forward 'uswds-theme-custom-styles';
+@use "uswds-core" with (
+  $theme-show-compile-warnings: false,
+  $theme-show-notifications: false,
+  $theme-image-path: "../uswds/img",
+  $theme-show-compile-warnings: true,
+  $theme-banner-background-color: "ink",
+  $theme-banner-link-color: "primary-light",
+  $theme-input-tile-border-color: "base",
+);
 ```
 
-Add only the settings you wish to modify before importing `uswds`, either in a separate file (`_uswds-theme.scss`), or directly in your Sass entry point. Either way you do it, you'll use the format `@use "uswds-core" with ()` including a list of your changed USWDS settings variables inside the parentheses.
+### What to include in your configuration
+Include only USWDS settings that you wish to modify in this configuration. These items should be comma-separated and given values of the appropriate type.
 
-If you use the `_uswds-theme.scss` file, it would look something like this:
+Please note that this configuration accepts only current USWDS settings variables &mdash; adding anything else here will result in an error.
+
+### Where to include your configuration
+Full instructions for setting up Sass files for USWDS can be found in [Phase 2 of the Getting Started for Developers]({{ site.baseurl }}/documentation/getting-started/developers/phase-two-compile/#step-1-set-up-your-projects-sass-entry-point) guide.
+
+The important thing to note is that your settings configuration must be included  **before including the main USWDS Sass**. Some example setups are provided below:
+
+#### Example 1
+If you configure settings in a separate file, your setup would look something like this:
 
 ```scss
 /* _uswds-theme.scss */
@@ -46,7 +67,9 @@ If you use the `_uswds-theme.scss` file, it would look something like this:
 @forward 'uswds-theme-custom-styles';
 ```
 
-If you include settings right in your Sass entry point, it would look something like this:
+#### Example 2
+
+If you prefer to configure your settings directly inside your Sass entry point, it would look something like this:
 
 ```scss
 /* styles.scss */
@@ -58,11 +81,6 @@ If you include settings right in your Sass entry point, it would look something 
 @forward 'uswds';
 @forward 'uswds-theme-custom-styles';
 ```
-
-In general, when including settings and custom code, you just need to follow this order of operations:
-1. **Include settings:** Tell the design system how to build.
-1. **Include `uswds`:** Build the design system.
-1. **Include custom styles:** Build on top of the design system.
 
 {: .site-note }
 **Note:** the `@use "uswds-core" with ()` configuration accepts only current USWDS settings variables. If you receive the error `This module was already loaded, so it can't be configured using "with"`, confirm that all your declared variables exist in the list below and try compiling again.

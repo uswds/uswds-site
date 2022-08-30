@@ -20,7 +20,7 @@ Use this pattern when you are asking users to provide more than basic contact in
 ## What’s the solution
 Provide the user with the most straightforward path through successful form completion by simplifying the user interface, progressively disclosing form questions and content, and employing trauma-informed research and design practices. 
 
-Respectful, inclusive voice and tone throughout the form–the questions, field labels, hint text, and form messaging–will be critical success factors, as well as delivering questions that progress from simple to more difficult to answer. Help users avoid making mistakes with clear hint text, and empower them to recover from mistakes easily by providing actionable validation messaging. Any system or validation messaging should be free of blame and avoid alarming users. 
+Respectful, inclusive voice and tone throughout the form – the questions, field labels, hint text, and form messaging – will be critical success factors, as well as delivering questions that progress from simple to more difficult to answer. Help users avoid making mistakes with clear hint text, and empower them to recover from mistakes easily by providing actionable validation messaging. Any system or validation messaging should be free of blame and avoid alarming users. 
 
 ## Guidance
 

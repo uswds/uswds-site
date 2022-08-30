@@ -2,7 +2,7 @@
 title: Establish trust
 story: Help a user to understand expectations and establish trust
 permalink: /patterns/complex-form/establish-trust/
-layout: story
+layout: pattern
 category: Patterns
 lead: Help users understand the purpose of a form and the time commitment needed to complete it, feel confident they have what they need, and trust that the information they provide will be safeguarded and used responsibly.  
 ---

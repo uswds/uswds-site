@@ -27,6 +27,7 @@ The pattern allows users to select their language preferences for both written a
           <ul>
             <li>Do list the languages available in both their native spelling and English.</li>
             <li>Capitalize the name of each language (for example, English, Spanish, or Vietnamese).</li>
+            <li>Do include American Sign Language (ASL) in spoken preferences if you are committed to supporting in-person communications, such as in a health care setting.</li>
             <li>Do order the languages alphabetically by the common, native language name (non-English version). For example:<br/>
             عربى - Arabic<br/>
             公司简介 - Chinese (Simplified)<br/>

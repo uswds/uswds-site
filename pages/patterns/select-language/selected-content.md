@@ -1,5 +1,5 @@
 ---
-title: Selected Multilingual Content
+title: Selected multilingual content
 permalink: /patterns/language-selector/selected-content/
 layout: styleguide
 category: Patterns

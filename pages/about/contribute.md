@@ -11,19 +11,26 @@ lead: Your contribution helps make the Design System better for the next team th
 
 ## What's on this page
 
+- [What's on this page](#whats-on-this-page)
 - [Get started](#get-started)
 - [Report bugs and issues](#report-bugs-and-issues)
 - [Propose a feature request or enhancement](#propose-a-feature-request-or-enhancement)
-- [Submit a Pull Request](#submit-a-pull-request)
+- [Submit a pull request](#submit-a-pull-request)
+  - [If it's a bug fix:](#if-its-a-bug-fix)
+  - [If it's a feature request or enhancement:](#if-its-a-feature-request-or-enhancement)
+  - [Want to propose something else?](#want-to-propose-something-else)
 - [How we prioritize](#how-we-prioritize)
 - [Code of Conduct](#code-of-conduct)
 - [Licenses and attribution](#licenses-and-attribution)
+  - [A few parts of this project are not in the public domain](#a-few-parts-of-this-project-are-not-in-the-public-domain)
+  - [The rest of this project is in the public domain](#the-rest-of-this-project-is-in-the-public-domain)
+  - [Contributions will be released into the public domain](#contributions-will-be-released-into-the-public-domain)
 
 ## Get started
 
 Anyone can contribute to the U.S. Web Design System (USWDS). Whether it's submitting a bug or proposing a new component, we welcome your ideas on how to improve the Design System.
 
-We review all contributions before merging them into USWDS. If you’re unsure about anything, just [ask](mailto:uswds@gsa.gov) — or submit your [issue](https://docs.google.com/document/d/1CLNcJdmcK1LHU1NQIOcfA36oCyalNBOCYPTT0vdvnJY/edit#bookmark=kix.qd7q3abav6el) or [pull request](https://docs.google.com/document/d/1CLNcJdmcK1LHU1NQIOcfA36oCyalNBOCYPTT0vdvnJY/edit#bookmark=kix.pfifmfp0lps2) anyway. We’ll reach out to you if we have any questions or need to start a conversation.
+We review all contributions before merging them into USWDS. If you’re unsure about anything, just [ask](mailto:uswds@gsa.gov) — or submit your [issue]({{ site.baseurl }}/about/contribute/#report-bugs-and-issues) or [pull request]({{ site.baseurl }}/about/contribute/#submit-a-pull-request) anyway. We’ll reach out to you if we have any questions or need to start a conversation.
 
 Before submitting a contribution, you’ll just need to [create a GitHub account](https://github.com/join) or [sign in](https://github.com/login) to your existing account.
 
@@ -36,7 +43,7 @@ If something isn’t working the way it's supposed to, here’s how you can let 
 1. Check our [current issues backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Bug%22+) to see if your bug has already been reported.
 1. If your bug has already been reported, leave a comment in the original issue and provide any additional context (if different than the original submission).
 1. Document the steps we can take to reproduce the bug. If you can, take screen shots to capture specific details about the bug.
-1. Submit an issue using the [bug report template](https://github.com/uswds/uswds/issues/new?assignees=&labels=type%3A+bug&template=bug_report.md&title=). A USWDS core team member may reach out to you if we need further clarification or context. We may also need your help testing possible solutions. Be sure to check in on your issue to answer any questions we may have about it.
+1. Submit an issue using the [bug report template](https://github.com/uswds/uswds/issues/new?assignees=&labels=Type%3A+Bug%2CStatus%3A+Triage%2CNeeds%3A+Confirmation&template=bug_report.yaml&title=USWDS+-+Bug%3A+%5BYOUR+TITLE%5D). A USWDS core team member may reach out to you if we need further clarification or context. We may also need your help testing possible solutions. Be sure to check in on your issue to answer any questions we may have about it.
 
 If you have a code fix for the issue, go ahead and [submit a pull request](https://github.com/uswds/uswds/compare). Our team tracks issues, so make sure any pull request you submit has a related issue.
 
@@ -47,7 +54,7 @@ If you’ve got a new idea or a suggestion for how something could work better, 
 1. Check our [feature requests backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Feature+Request%22) for any duplicate or similar feature requests. If your idea has already been suggested, upvote that feature request with a thumbs up emoji and comment on the issue to let us know why you need this feature request and any other supporting information. We review the number of upvotes to help us prioritize feature requests.
 <br/><br/>If you want to find other feature requests open for upvoting, check out our [feature request backlog view (sorted by those with the most upvotes)](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Status%3A+Voting+Open+%F0%9F%91%8D%22+sort%3Areactions-%2B1-desc).
 
-2. If your idea is not in the [current issues backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Feature+Request%22), submit an issue using the [feature request template](https://github.com/uswds/uswds/issues/new?assignees=&labels=type%3A+feature+request&template=feature_request.md&title=).  A USWDS core team member may reach out to you if we need further clarification on your submission.
+2. If your idea is not in the [current issues backlog](https://github.com/uswds/uswds/issues?q=is%3Aissue+is%3Aopen+label%3A%22Type%3A+Feature+Request%22), submit an issue using the [feature request template](https://github.com/uswds/uswds/issues/new?assignees=&labels=Type%3A+Feature+Request%2CStatus%3A+Triage&template=feature_request.yaml&title=USWDS+-+Feature%3A+%5BYOUR+TITLE%5D).  A USWDS core team member may reach out to you if we need further clarification on your submission.
 
 ## Submit a pull request
 
@@ -75,7 +82,7 @@ If the pull request is accepted, we will schedule the issue and merge the pull r
 
 ### Want to propose something else?
 
-If you’d like to contribute something else that doesn’t fall into any of the above, we’d still love to hear about it. Just [create an issue](https://github.com/uswds/uswds/issues/new?assignees=&labels=type%3A+feature+request&template=feature_request.md&title=) or a [discussion](https://github.com/uswds/uswds/discussions), and we can talk about it.
+If you’d like to contribute something else that doesn’t fall into any of the above, we’d still love to hear about it. Just [create an issue](https://github.com/uswds/uswds/issues/new/choose) or a [discussion](https://github.com/uswds/uswds/discussions), and we can talk about it.
 
 ## How we prioritize
 

@@ -1,11 +1,11 @@
 ---
-title: Preferred Language
+title: Preferred language
 story: Help a user to choose the languages they prefer for communication
 permalink: /patterns/language-selector/language-preferences/
 layout: pattern
 category: Patterns
 sub-category: Select a language
-lead: This pattern helps users to indicate the language they prefer to use for either written or spoken communication.
+lead: This pattern allows users to indicate the languages they prefer to use for either written or spoken communications.
 ---
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}

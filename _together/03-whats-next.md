@@ -4,7 +4,7 @@ title: What’s next
 nav_title: What’s next
 meta:
   og:image: /img/next/og-next-report.png
-permalink: /together/looking-ahead/
+permalink: /together/whats-next/
 slug: whats-next
 subhead: Toward pattern-driven development for the design system.
 
@@ -54,7 +54,7 @@ summary_sections:
             </p>
           </div>
 {% elsif forloop.index == 2 %}
-          <div class="margin-top-6">
+          <div class="margin-top-6 desktop:grid-offset-2">
             {% include together/together-color-hr.html %}
             <section class="together-section bg-indigo-cool-70 padding-y-6 padding-x-2 desktop:padding-x-0 text-white">
               <div class="desktop:grid-offset-2">
@@ -63,8 +63,8 @@ summary_sections:
                   As the design system matures, you will likely see patterns beginning to drive component and feature development. We will identify key interactions, document patterns, and develop components in support of these patterns. We see this as an important human-centered shift to how we’ll approach development, how we’ll choose components, and how we’ll approach modularity and interaction between components.</p>
               </div>
             </section>
-          </div>
           {% include together/together-color-hr.html %}
+          </div>
 {% endif %}
         </div>
       </div>

@@ -41,7 +41,7 @@ summary_sections:
   <section id="section-{{ forloop.index }}" class="together-section together-section--{{ item.title | downcase | replace: " ", "-" | remove: "’" }} {{ item.section_class }}">
     <div class="grid-container">
       <div class="grid-row">
-        <div class="grid-col-12">
+        <div class="tablet:grid-col-12 desktop:grid-col-3">
           <div class="together-section__header">
             <h2 class="together-section__heading">{{ item.heading }}</h2>
           </div>
@@ -149,7 +149,7 @@ Forms are a real challenge for digital teams as they try to meet both the needs 
 </div>
       
           {% elsif forloop.index == 6 %}
-<div class="tablet:grid-offset-4 measure-4" markdown="1">
+<div class="desktop:grid-offset-4 measure-4" markdown="1">
 {% include together/together-quote.html quote="Not just plain language. Need language access. Good multilingual IA [information architecture]. Writing that supports low English proficiency." source="DEIA expert"%}
             
 Providing multilingual content is a huge investment, and a key way to communicate to the public that we will meet them where they are[^8].
@@ -167,7 +167,7 @@ Providing multilingual content is a huge investment, and a key way to communicat
 <section class="next-section next-section--citations">
   <div class="grid-container">
     <div class="grid-row">
-      <div class="tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0" markdown="1">
+      <div class="tablet:grid-col-10 tablet:margin-x-auto desktop:margin-x-2" markdown="1">
 
 ## Citations
 

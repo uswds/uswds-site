@@ -16,7 +16,7 @@ chapter: true
     <div class="grid-container">
     <!-- Section One -->
       <div class="grid-row">
-        <div class="grid-col-12">
+        <div class="tablet:grid-col-12 desktop:grid-col-3">
           <div class="together-section__header">
             <h2 class="together-section__heading">We need your help</h2>
           </div>
@@ -47,7 +47,7 @@ The patterns are a start, but we need your help keeping these patterns current a
     <div class="grid-container">      
       <!-- Section Two -->
       <div class="grid-row">
-        <div class="grid-col-12">
+        <div class="tablet:grid-col-12 desktop:grid-col-3">
           <div class="together-section__header">
             <h2 class="together-section__heading">Contribute to USWDS</h2>
           </div>

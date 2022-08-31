@@ -30,7 +30,7 @@ summary_sections:
   <section id="section-{{ forloop.index }}" class="together-section together-section--{{ item.title | downcase | replace: " ", "-" | remove: "’" }} {{ item.section_class }}">
     <div class="grid-container">
       <div class="grid-row">
-        <div class="grid-col-12">
+        <div class="tablet:grid-col-12 desktop:grid-col-3">
           <div class="together-section__header">
             <h2 class="together-section__heading">{{ item.heading }}</h2>
           </div>
@@ -56,8 +56,8 @@ summary_sections:
 {% elsif forloop.index == 2 %}
           <div class="margin-top-6 desktop:grid-offset-4">
             {% include together/together-color-hr.html %}
-            <section class="together-section bg-indigo-cool-70 padding-y-6 padding-x-2 desktop:padding-x-0 text-white">
-              <div class="desktop:grid-offset-2">
+          <section class="together-section bg-indigo-cool-70 padding-2 desktop:padding-x-0 text-white">
+            <div class="desktop:padding-x-10 tablet:padding-4">
                 <h3 class="text-indigo-10 margin-top-3">Pattern-driven development</h3>
                 <p class="text-white measure-4">
                   As the design system matures, you will likely see patterns beginning to drive component and feature development. We will identify key interactions, document patterns, and develop components in support of these patterns. We see this as an important human-centered shift to how we’ll approach development, how we’ll choose components, and how we’ll approach modularity and interaction between components.</p>

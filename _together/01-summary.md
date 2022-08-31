@@ -75,12 +75,12 @@ With help from digital leaders across the federal space, we've developed pattern
         <div class="margin-top-6 desktop:grid-offset-4">
          {% include together/together-color-hr.html %}
           <section class="together-section bg-indigo-cool-70 padding-2 desktop:padding-x-0 text-white">
-            <div class="desktop:padding-8 tablet:padding-4">
+            <div class="desktop:padding-x-10 tablet:padding-4">
               <h3 class="text-indigo-10 margin-top-3">The word &quot;pattern&quot;</h3>
-              <p class="text-white measure-4">
+              <p class="text-white">
                 The word <em>Pattern</em> — in this usage — was coined by the architect Christopher Alexander in the 1970s to describe patterns of behavior and approach: "a problem which occurs over and over again in our environment, and then [...] the core of the solution to that problem [described] in such a way that you can use this solution a million times over, without ever doing it the same way twice.". For instance, what are the kinds of things that people do again and again in their homes (or <em>expect</em> again and again <em>from</em> their homes) and how might homes be built to support these needs? For Alexander, these needs go beyond the prosaic needs of shelter and sanitation to include psychological, physiological, and emotional needs. What can a home do to make you <em>feel at home?</em> 
               </p>
-              <p class="text-white measure-4" markdown="1">
+              <p class="text-white" markdown="1">
                 In an important way, Alexander reintroduced human-centered design into the design practice of architecture, and the concepts he and his peers developed are just as relevant and practical to any designed experience.[^2]
               </p>
             </div>
@@ -94,7 +94,6 @@ With help from digital leaders across the federal space, we've developed pattern
               <blockquote class="together-quote__quote">
               <img  src="{{ site.baseurl }}/img/together/quote.svg" alt="quote" />
                 Consider the story that hasn’t been told.
-              <img  src="{{ site.baseurl }}/img/together/quote-2.svg" alt="quote" />
               </blockquote>
               <figcaption>
                 <span class="together-quote__source" aria-describedby="quote-desc">— DEIA and design expert</span>
@@ -188,7 +187,7 @@ With help from digital leaders across the federal space, we've developed pattern
 <section class="next-section next-section--citations">
   <div class="grid-container">
     <div class="grid-row">
-      <div class="tablet:grid-col-8 tablet:margin-x-auto desktop:margin-x-0" markdown="1">
+      <div class="tablet:grid-col-10 tablet:margin-x-auto desktop:margin-x-2" markdown="1">
 
 ## Citations
 

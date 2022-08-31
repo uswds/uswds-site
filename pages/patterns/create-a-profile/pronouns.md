@@ -67,7 +67,7 @@ Provide a text entry field that supports a rich array of special characters and 
 
 <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
 
-## Ingredients
+## Components used in this pattern
 
 <div class="usa-card-group flex-row margin-top-2">
   <div
@@ -130,5 +130,4 @@ Provide a text entry field that supports a rich array of special characters and 
 
 
 ## Changelog
-- Updated based on community feedback July 18, 2022
-- Created July 1, 2022
+- publishdate

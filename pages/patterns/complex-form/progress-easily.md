@@ -71,7 +71,7 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
 <strong>Customization.</strong> As you customize, make sure you follow <a href="https://designsystem.digital.gov/templates/form-templates/">accessibility guidelines for form templates</a> and the <a href="https://designsystem.digital.gov/components/form/">accessibility guidelines for form controls</a>.
 
 
-## Ingredients
+## Components used in this pattern
 
 <div class="usa-card-group flex-row margin-top-2">
   <div
@@ -139,5 +139,5 @@ Progressive disclosure: all you need to know. (January 27, 2021) Retrieved on Ju
 - Training wheels in a user interface. Journal article, Association for Computing Machinery by John M. Carroll and Caroline Carrithers Vol. 8 (August 1, 1984). Retrieved on July 27, 2022, from  [https://doi.org/10.1145/358198.358218](https://doi.org/10.1145/358198.358218)
 
 ## Changelog
-- Created July 26, 2022
+- publishdate
 

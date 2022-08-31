@@ -75,7 +75,7 @@ See [usability guidance for radio buttons](https://designsystem.digital.gov/comp
 
 <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
 
-## Ingredients
+## Components used in this pattern
 
 <div class="usa-card-group flex-row margin-top-2">
   <div
@@ -246,6 +246,4 @@ See [usability guidance for checkboxes](https://designsystem.digital.gov/compone
 
 
 ## Changelog
-- Updated following product owner feedback August 1, 2022
-- Updated based on community feedback July 20, 2022
-- Created June 21, 2022
+- publishdate

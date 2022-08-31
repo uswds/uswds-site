@@ -134,16 +134,16 @@ With help from digital leaders across the federal space, we've developed pattern
             <h3>Our primary focus was to learn:</h3>
             <div class="grid-row tablet:margin-x-neg-205">
               <div class="tablet:grid-col-12 desktop:grid-col-6 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="How teams are <strong>applying the lens of DEIA</strong> to their design work, and which patterns they’ve revised to be more equitable and inclusive." icon="search"%}
+                {% include together/together-spot-item.html text="How teams are <strong>applying the lens of DEIA</strong> to their design work, and which patterns they’ve revised to be more equitable and inclusive."%}
               </div>
               <div class="tablet:grid-col-12 desktop:grid-col-6 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="What challenges agencies are facing with trying to <strong>adopt more inclusive design patterns.</strong>" icon="connect_without_contact"%}
+                {% include together/together-spot-item.html text="What challenges agencies are facing with trying to <strong>adopt more inclusive design patterns.</strong>" %}
               </div>
               <div class="tablet:grid-col-12 desktop:grid-col-6 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="Which <strong>specific interactions are most challenging</strong> and could use attention from USWDS." icon="flag"%}
+                {% include together/together-spot-item.html text="Which <strong>specific interactions are most challenging</strong> and could use attention from USWDS." %}
               </div>
               <div class="tablet:grid-col-12 desktop:grid-col-6 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="Where we can begin our work from <strong>existing design patterns</strong>." icon="public"%}
+                {% include together/together-spot-item.html text="Where we can begin our work from <strong>existing design patterns</strong>." %}
               </div>
             </div>
             
@@ -158,16 +158,16 @@ With help from digital leaders across the federal space, we've developed pattern
             <h3>Our objective was to:</h3>
             <div class="grid-row tablet:margin-x-neg-205">
               <div class="tablet:grid-col-12 desktop:grid-col-6 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="<strong>Benchmark patterns</strong> by identifying which organizations had patterns and how they approached them." icon="assessment"%}
+                {% include together/together-spot-item.html text="<strong>Benchmark patterns</strong> by identifying which organizations had patterns and how they approached them." %}
               </div>
               <div class="tablet:grid-col-12 desktop:grid-col-6 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="Analyze <strong>thought leadership around patterns</strong>, their place in the design system, and the content that supports each pattern." icon="update"%}
+                {% include together/together-spot-item.html text="Analyze <strong>thought leadership around patterns</strong>, their place in the design system, and the content that supports each pattern." %}
               </div>
               <div class="tablet:grid-col-12 desktop:grid-col-6 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="Take a <strong>deep dive into the topics of inclusivity and equity</strong>, especially as these topics relate to digital experiences." icon="people"%}
+                {% include together/together-spot-item.html text="Take a <strong>deep dive into the topics of inclusivity and equity</strong>, especially as these topics relate to digital experiences." %}
               </div>
               <div class="tablet:grid-col-12 desktop:grid-col-6 tablet:padding-x-205">
-                {% include together/together-spot-item.html text="Understand the <strong>best practices specific to each pattern</strong>, along with any federal requirements that need to guide each recommendation." icon="local_police"%}
+                {% include together/together-spot-item.html text="Understand the <strong>best practices specific to each pattern</strong>, along with any federal requirements that need to guide each recommendation." %}
               </div>
             </div>
 

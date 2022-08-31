@@ -1,6 +1,3 @@
-<div class="next-spot-item {{ include.variant }}">
-  <svg class="usa-icon usa-icon--size-3" aria-hidden="true" focusable="false" role="img">
-    <use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#{{ include.icon }}"></use>
-  </svg>
+<div class="next-spot-item border-base-darker border-top-1 padding-top-2 {{ include.variant }}">
   <p class="margin-top-0">{{ include.text | markdownify | remove: '<p>' | remove: '</p>' }}</p>
 </div>

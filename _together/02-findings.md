@@ -25,7 +25,7 @@ summary_sections:
 
   - heading: Personal data is a reflection of an individual’s sense of self
     description: |-
-      Many of the digital solutions we create rely on some amount of personal information — like name, address, and Social Security Number. Solutions that aren’t inclusive of everyone can be very alienating. Interviewees identified some examples of alienating user experiences:
+      Many of the digital solutions we create rely on some amount of personal information: like name, address, and Social Security Number. Solutions that aren’t inclusive of everyone can be very alienating. Interviewees identified some examples of alienating user experiences
 
   - heading: Complex forms offer unique challenges
     description: |-

@@ -4,7 +4,7 @@ story: Help a user input their physical or mailing addresses for successful comm
 permalink: /patterns/create-a-profile/address/
 layout: pattern
 category: Patterns
-sub-category: Create a profile
+sub-category: Create a user profile
 lead: The physical and mailing address patterns help users enter their address successfully.
 ---
 

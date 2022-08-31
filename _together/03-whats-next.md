@@ -3,7 +3,7 @@ layout: together-content
 title: What’s next
 nav_title: What’s next
 meta:
-  og:image: /img/next/og-next-report.png
+  og:image: /img/next/og-together-report.png
 permalink: /together/whats-next/
 slug: whats-next
 subhead: Toward pattern-driven development for the design system.

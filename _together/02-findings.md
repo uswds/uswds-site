@@ -3,7 +3,7 @@ layout: together-content
 title: Findings
 nav_title: Findings
 meta:
-  og:image: /img/next/og-next-report.png
+  og:image: /img/next/og-together-report.png
 
 permalink: /together/findings/
 slug: findings

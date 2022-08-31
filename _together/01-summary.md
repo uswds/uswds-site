@@ -102,14 +102,14 @@ With help from digital leaders across the federal space, we've developed pattern
             
             <div class="grid-row tablet:margin-x-neg-205">
               <div class="desktop:grid-col-6 desktop:padding-x-205">
-                {% include together/together-finding-item.html  heading="Diversity" text="Diversity in design is about making sure all people are represented." icon="diversity" alt="people in circle"%}
+                {% include together/together-finding-item.html  heading="Diversity" text="Diversity in design is about making sure all people are represented." %}
 
-                {% include together/together-finding-item.html heading="Equity" text="Equity in design addresses the unique barriers people face, creating fairer experiences." icon="equity" alt="two groups of people on scale and they balance"%}
+                {% include together/together-finding-item.html heading="Equity" text="Equity in design addresses the unique barriers people face, creating fairer experiences." %}
               </div>
               <div class="desktop:grid-col-6 desktop:padding-x-205">
-                {% include together/together-finding-item.html heading="Inclusivity" text="Inclusivity in design cultivates a sense of belonging and feeling valued." icon="inclusivity" alt="two people connected by a circle"%}
+                {% include together/together-finding-item.html heading="Inclusivity" text="Inclusivity in design cultivates a sense of belonging and feeling valued." %}
 
-                {% include together/together-finding-item.html  heading="Accessibility" text="Accessibility in design ensures that all people can understand and enjoy digital experiences." icon="a11y" alt="man in a wheelchair"%}
+                {% include together/together-finding-item.html  heading="Accessibility" text="Accessibility in design ensures that all people can understand and enjoy digital experiences." %}
               </div>
             </div>            
 

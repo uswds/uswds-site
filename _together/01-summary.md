@@ -90,10 +90,11 @@ With help from digital leaders across the federal space, we've developed pattern
 
           {% elsif forloop.index == 3 %}
           <div class="desktop:grid-offset-4">
+
             <figure class="together-quote tablet:padding-6 desktop:padding-10 tablet:margin-bottom-4">
-              <blockquote class="together-quote__quote">
-              <img  src="{{ site.baseurl }}/img/together/quote.svg" alt="quote" />
-                Consider the story that hasn’t been told.
+              <blockquote class="together-quote__quote display-flex flex-align-start">
+              <img  class="margin-right-2" src="{{ site.baseurl }}/img/together/quote.svg" alt="quote" />
+              Consider the story that hasn’t been told.
               </blockquote>
               <figcaption>
                 <span class="together-quote__source" aria-describedby="quote-desc">— DEIA and design expert</span>

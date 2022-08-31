@@ -56,7 +56,7 @@ summary_sections:
 {% elsif forloop.index == 2 %}
           <div class="margin-top-6 desktop:grid-offset-4">
             {% include together/together-color-hr.html %}
-          <section class="together-section bg-indigo-cool-70 padding-2 desktop:padding-x-0 text-white">
+          <section class="bg-indigo-cool-70 padding-2 desktop:padding-x-0 text-white">
             <div class="desktop:padding-x-10 tablet:padding-4">
                 <h3 class="text-indigo-10 margin-top-3">Pattern-driven development</h3>
                 <p class="text-white measure-4">

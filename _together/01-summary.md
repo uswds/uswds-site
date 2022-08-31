@@ -74,7 +74,7 @@ With help from digital leaders across the federal space, we've developed pattern
 </div>
         <div class="margin-top-6 desktop:grid-offset-4">
          {% include together/together-color-hr.html %}
-          <section class="together-section bg-indigo-cool-70 padding-2 desktop:padding-x-0 text-white">
+          <section class="bg-indigo-cool-70 padding-2 desktop:padding-x-0 text-white">
             <div class="desktop:padding-x-10 tablet:padding-4">
               <h3 class="text-indigo-10 margin-top-3">The word &quot;pattern&quot;</h3>
               <p class="text-white">
@@ -183,7 +183,7 @@ With help from digital leaders across the federal space, we've developed pattern
   </section>
 {% endfor %}
 
-<!-- TODO: Make this a comp -->
+<!-- TODO: Consider making this a comp -->
 <section class="next-section next-section--citations">
   <div class="grid-container">
     <div class="grid-row">

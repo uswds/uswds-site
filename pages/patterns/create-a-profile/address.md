@@ -1,14 +1,17 @@
 ---
 title: Address
+story: Help a user input their physical or mailing addresses for successful communication
 permalink: /patterns/create-a-profile/address/
 layout: pattern
 category: Patterns
 sub-category: Create a profile
 lead: The physical and mailing address patterns help users enter their address successfully.
-
 ---
 
-{:.margin-bottom-2}
+<div></div>
+
+{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
+
 ## What problem does this solve?
 While most addresses in the U.S. follow a specific pattern, there are unique variations in some rural areas, U.S. territories, and military posts. In addition, some people are unhoused or in temporary housing, and may need to specify a mailing address that is different from their physical address —  particularly in disaster relief and recovery situations.
 
@@ -235,7 +238,7 @@ Provide all the fields a user needs to successfully enter a mailing address.
 
 <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
 
-## Ingredients
+## Components used in this pattern
 
 <div class="usa-card-group flex-row margin-top-2">
   <div

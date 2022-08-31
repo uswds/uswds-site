@@ -75,7 +75,7 @@ Consider including a <strong>prominent in-page notice or link</strong> in additi
 <b>Customization.</b> As you customize, make sure you follow [accessibility guidelines for buttons](https://designsystem.digital.gov/components/button/#button-guidance).
 
 
-## Ingredients
+## Components used in this pattern
 
 <div class="usa-card-group flex-row margin-top-2">
   <div
@@ -132,5 +132,4 @@ Consider including a <strong>prominent in-page notice or link</strong> in additi
 
 
 ## Changelog
-- Created July 28, 2022. Guidance informed by research conducted by USAgov in cooperation with multiple agencies and the Multilingual Community of Practice.
-
+- publishdate

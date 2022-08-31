@@ -102,8 +102,7 @@ All logically related items/links must be presented as an <strong>HTML unordered
 
 <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for buttons](https://designsystem.digital.gov/components/button/#button-guidance).
 
-
-## Ingredients
+## Components used in this pattern
 
 <div class="usa-card-group flex-row margin-top-2">
    <div
@@ -158,5 +157,5 @@ All logically related items/links must be presented as an <strong>HTML unordered
 - White paper on best practices for multilingual access to digital libraries. (June 23, 2016) Retrieved on July 21, 2022, from [https://pro.europeana.eu/files/Europeana_Professional/Publications/BestPracticesForMultilingualAccess_whitepaper.pdf](https://pro.europeana.eu/files/Europeana_Professional/Publications/BestPracticesForMultilingualAccess_whitepaper.pdf)
 
 ## Changelog
-- Created July 28, 2022. Guidance informed by research conducted by USAgov in cooperation with multiple agencies and the Multilingual Community of Practice.
+- publishdate
 

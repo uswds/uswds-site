@@ -79,7 +79,7 @@ If the text will be visually presented as a button but coded as a link, it is re
 
 Consider including a <strong>prominent in-page notice or link</strong> in addition to the link in the header, in order to increase visibility for the user.
 
-## Ingredients
+## Components used in this pattern
 
 <div class="usa-card-group flex-row margin-top-2">
   <div
@@ -133,5 +133,4 @@ Consider including a <strong>prominent in-page notice or link</strong> in additi
 - Top 10 Best practices for multilingual websites. (June 21, 2022) Retrieved on July 21, 2022, from [https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/](https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/)
 - White paper on best practices for multilingual access to digital libraries. (June 23, 2016) Retrieved on July 21, 2022, from [https://pro.europeana.eu/files/Europeana_Professional/Publications/BestPracticesForMultilingualAccess_whitepaper.pdf](https://pro.europeana.eu/files/Europeana_Professional/Publications/BestPracticesForMultilingualAccess_whitepaper.pdf)
 
-## Changelog
-- Created July 28, 2022. Guidance informed by research conducted by USAgov in cooperation with multiple agencies and the Multilingual Community of Practice.
+## publishdate

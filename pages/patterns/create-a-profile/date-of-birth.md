@@ -1,10 +1,15 @@
 ---
 title: Date of birth
+story: Help a user enter their birth date or other memorable date
 permalink: /patterns/create-a-profile/date-of-birth/
-layout: styleguide
+layout: pattern
 category: Patterns
+sub-category: Create a user profile
 lead: Date of birth, and other memorable dates, can be an essential piece of information used to validate identity or eligibility for services or benefits. This pattern allows users to enter their date of birth or another memorable date (e.g., birth of child, death of loved one) without friction. 
 ---
+<div></div>
+
+{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
 ## What problem does this solve?
 With many competing patterns for date formatting, users may become frustrated, confused, and more prone to make mistakes when entering a date of birth or other memorable date.

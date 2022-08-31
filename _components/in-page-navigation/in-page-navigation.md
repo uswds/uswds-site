@@ -27,8 +27,6 @@ subnav:
   href: '#usability-guidance-in-page-navigation'
 - text: Accessibility
   href: '#accessibility-in-page-navigation'
-- text: Using the in-page navigation component
-  href: '#using-the-in-page-navigation-component'
 - text: Package
   href: '#in-page-navigation-package'
 - text: References

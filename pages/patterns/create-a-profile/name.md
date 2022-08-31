@@ -84,7 +84,7 @@ If you won’t be addressing correspondence, avoid asking for the user’s title
 
 <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
 
-## Ingredients
+## Components used in this pattern
 
 <div class="usa-card-group flex-row margin-top-2">
   <div
@@ -130,5 +130,4 @@ If you won’t be addressing correspondence, avoid asking for the user’s title
 - Personal names around the world. (August 17, 2011) Retrieved July 15, 2022, from [https://www.w3.org/International/questions/qa-personal-names](https://www.w3.org/International/questions/qa-personal-names)
 
 ## Changelog
-- Updated based on community feedback July 19, 2022
-- Created June 21, 2022
+- publishdate

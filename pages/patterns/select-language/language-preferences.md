@@ -76,7 +76,7 @@ Translation and navigation functions in languages other than English should stil
 <strong>Use the HTML lang attributes</strong> to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
 
 
-## Ingredients
+## Components used in this pattern
 
 <div class="usa-card-group flex-row margin-top-2">
   <div
@@ -148,4 +148,4 @@ Translation and navigation functions in languages other than English should stil
 
 
 ## Changelog
-- Created July 22, 2022.
+- publishdate

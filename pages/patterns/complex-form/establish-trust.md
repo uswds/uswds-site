@@ -79,7 +79,7 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
 
 <strong>Be reliable, consistent, and honest.</strong> Reduce the impact of failure with solid design and engineering. Be a good steward of your audience’s data, resources, and time.
 
-## Ingredients
+## Components used in this pattern
 
 <div class="usa-card-group flex-row margin-top-2">
   <div
@@ -132,5 +132,5 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
 
 
 ## Changelog
-- Created July 19, 2022
+- publishdate
 

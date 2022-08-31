@@ -122,7 +122,7 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
 
 
 ## References
-- Build trust with these UX guidelines (March 16,2019) Retrieved on July 19, 2022, from [https://uxdesign.cc/build-trust-with-these-ux-guidelines-f3d547bb2014#:~:text=%E2%80%8B%20Increase%20trust%20by%20letting,person%20instead%20of%20a%20robot.](https://uxdesign.cc/build-trust-with-these-ux-guidelines-f3d547bb2014#:~:text=%E2%80%8B%20Increase%20trust%20by%20letting,person%20instead%20of%20a%20robot.)
+- Build trust with these UX guidelines (March 16, 2019) Retrieved on July 19, 2022, from [https://uxdesign.cc/build-trust-with-these-ux-guidelines-f3d547bb2014.](https://uxdesign.cc/build-trust-with-these-ux-guidelines-f3d547bb2014)
 - Building trust with users through open communication and feedback, (June 13, 2019) Retrieved on July 19, 2022, from [https://digital.gov/2019/06/13/building-trust-with-users-through-open-communication-feedback/](https://digital.gov/2019/06/13/building-trust-with-users-through-open-communication-feedback/)  
 - Communicating with and about people with disabilities. (February 1, 2022) Retrieved on July 28, 2022, from [https://www.cdc.gov/ncbddd/disabilityandhealth/materials/factsheets/fs-communicating-with-people.html](https://www.cdc.gov/ncbddd/disabilityandhealth/materials/factsheets/fs-communicating-with-people.html) 
 - Design principles, (n.d.) Retrieved on July 21, 2022 [https://designsystem.digital.gov/design-principles/](https://designsystem.digital.gov/design-principles/)

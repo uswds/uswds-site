@@ -39,13 +39,13 @@ Place the language selector menu at the top of the screen above site navigation,
             <li>Take users to an equivalent page that includes the same or similar content.</li>
             <li>Label the dropdown menu <code>Languages</code>.</li>
             <li>Capitalize the name of each language (for example, English, Español).</li>
-            <li>Do order the languages alphabetically by the common, native language name. For example:<br/>
-            عربى<br/>
-            公司简介<br/>
+            <li>Do order the languages alphabetically by the common, native language name. For example:<br/> 
+            العربية<br/>
+            简体字<br/>
             English<br/>
             Español<br/>
             Français<br/>
-            Россия</li>
+            Pусский</li>
             <li>Consider including the English label for the language after the common, native language name if this approach has been validated by user testing.</li>
           </ul> 
         </div>

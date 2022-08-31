@@ -1,10 +1,15 @@
 ---
 title: Name
+story: Help users to enter their name accurately and confidently regardless of format
 permalink: /patterns/create-a-profile/name/
-layout: styleguide
+layout: pattern
 category: Patterns
+sub-category: Create a user profile
 lead: The name pattern makes it as easy as possible for users to enter their name in the format required. This pattern is often used to validate identity and helps collect name elements in the most effective and least intrusive manner possible.
 ---
+<div></div>
+
+{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
 ## What problem does this solve?
 People have a wide variety of names in various formats. It can be confusing and alienating for them to enter their name if it doesn’t conform to the form fields provided, or if the form fields don’t support the characters, length, or language they require. At the same time, the name fields are often used as a primary form of identity validation, so the agency &#8212; and privacy issues &#8212; require the information be entered in a specific and consistent way. 

@@ -1,12 +1,42 @@
 name: In-page navigation
 contents:
-  - name: Current border width
-    description: Width of the current section indicator.
-    var: $theme-in-page-navigation-current-border-width
-    default: 0
+  - name: Background color
+    description: Background color of the in-page navigation block. (Only visible if in-page nav is placed on top of different or multi-colored backgrounds).
+    var: $theme-in-page-nav-background-color
+    default: '"white"'
+    type: color
+  - name: Perimeter padding
+    description: Padding of the in-page navigation block.
+    var: $theme-in-page-nav-background-padding
+    default: 2
+    type: units
+  - name: Border radius
+    description: The border radius of the in-page navigation block. (Only visible if in-page nav is placed on top of different or multi-colored backgrounds)
+    var: $theme-in-page-nav-background-radius
+    default: '"lg"'
+    type: units
+  - name: Active state vertical line color
+    description: Color of the bar representing the active state of a link in the in-page nav.
+    var: $theme-in-page-nav-bar-color
+    default: '"secondary-dark"'
+    type: color
+  - name: Active state line width
+    description: Width of the colored bar representing the active state of a link in the in-page nav.
+    var: $theme-in-page-nav-bar-width
+    default: 2px
     type: units
   - name: Font family
-    description: Font family of the side navigation.
-    var: $theme-in-page-navigation-font-family
+    description: Font family of the in-page navigation.
+    var: $theme-in-page-nav-font-family
     default: '"ui"'
     type: family
+  - name: Content width
+    description: Maximum width of the main element.
+    var: $theme-in-page-nav-max-width
+    default: '"desktop"'
+    type: units
+  - name: Position from top
+    description: Distance from top of page to top of navigation when the sticky position is engaged on scroll.
+    var: $theme-in-page-nav-top-position
+    default: 4
+    type: units

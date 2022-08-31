@@ -1,2 +1,3 @@
-- **Small site.** If the site has fewer than five pages, consider organizing the page without a navigational hierarchy.
-- **Existing navigation.** If your page already has a horizontal and vertical navigation bar, consider ways to simplify your navigation system.
+- **Short pages.** For pages that require little or no scrolling, in-page navigation is not necessary.
+- **Mobile.** For smaller screens, in-page navigation should be hidden.
+- **Infinite scrolling.** For pages that feature infinite scrolling, in-page navigation is not a practical nor a feasible feature, so it is not recommended.

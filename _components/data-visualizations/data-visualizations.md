@@ -4,7 +4,7 @@ component:
   package:
   dependencies:
 permalink: /components/data-visualizations/
-layout: in-page-nav
+layout: styleguide
 type: component
 title: Data visualizations
 category: Components

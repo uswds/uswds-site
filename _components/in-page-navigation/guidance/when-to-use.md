@@ -1,2 +1,1 @@
-- **To display a navigational hierarchy with one to three levels.**
-- **To display the “sub-navigation” within a section of the website.**
+- **Long pages.** For pages that include three or more distinct content sections (or content that exceeds three or more viewport heights), and that require a moderate to large amount of scrolling, in-page navigation can offer a substantial improvement in the user experience.

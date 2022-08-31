@@ -1,3 +1,5 @@
-- **Show the current page.** Indicate where a user is within the navigational hierarchy. Use the “active” state to show users which page they have navigated to.
-- **Keep the navigation links short.** They can be shorter derivatives of page titles themselves.
-- **Always test your navigation.** If the navigation hierarchy is too long, users may miss items at the bottom. If it’s too deep, users may miss items that require too many clicks. Usability test to find the right balance between breadth and depth.
+- **Make it stand out.** Site visitors should be able to quickly and easily distinguish In-page navigation from other landmarks on the page. Include borders and well defined link active states to clearly convey the utility and purpose of the section. Define a consistent width for the in-page navigation component that is sufficiently wide and does not change based on text length.
+
+- **Use language that matches section headings.** The text of the links inside in-page navigation should match the heading text of the target sections. The component scans the page for `h2` and `h3` elements, **automatically creates the in-page navigation block, and dynamically inserts the text to match the section headings.** **Note:** The `h1` main heading text _should not be duplicated inside the in-page navigation component_.
+
+- **In-page navigation heading.** Inform users that they will scroll down on the same page by including in-page navigation under a descriptive title such as “On this page”, “In this article”, or  “Table of contents”.

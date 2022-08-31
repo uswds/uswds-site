@@ -3,7 +3,7 @@ layout: together-content
 title: Get involved
 nav_title: Get involved
 meta:
-  og:image: /img/next/og-together-report.png
+  og:image: /img/together/og-together-report.png
 
 permalink: /together/get-involved/
 slug: get-involved

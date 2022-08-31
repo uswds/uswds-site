@@ -3,7 +3,7 @@ layout: together-content
 title: Inclusive design patterns
 nav_title: Summary
 meta:
-  og:image: /img/next/og-together-report.png
+  og:image: /img/together/og-together-report.png
 
 permalink: /together/
 slug: together

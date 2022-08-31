@@ -35,14 +35,14 @@ summary_sections:
             <h2 class="together-section__heading">{{ item.heading }}</h2>
           </div>
         </div>
-        <div class="tablet:grid-col-8 tablet:margin-left-auto together-section-description">
+        <div class="desktop:grid-col-8 desktop:margin-left-auto together-section-description">
           {{ item.description | markdownify }}
         </div>
       </div>
       <div class="grid-row">
         <div class="grid-col-12">
 {% if forloop.index == 1 %}
-          <div class="tablet:grid-offset-4 measure-4">
+          <div class="desktop:grid-offset-4 measure-4">
             <p>
               Most also have a pattern preview and associated code. These previews use USWDS components and are grounded in the <a href="https://designsystem.digital.gov/design-principles/">USWDS design principles</a>. They should be viewed as a starting point for the digital products you are designing, building, and supporting. 
             </p>

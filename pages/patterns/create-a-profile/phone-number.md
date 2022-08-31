@@ -1,10 +1,15 @@
 ---
 title: Phone number
+story: Help users to enter their phone number or numbers to ensure effective communication
 permalink: /patterns/create-a-profile/phone-number/
-layout: styleguide
+layout: pattern
 category: Patterns
+sub-category: Create a user profile
 lead: The phone number pattern allows users to easily enter their phone number and ensures the phone number is properly formatted.
 ---
+<div></div>
+
+{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
 ## What problem does this solve?
 People format their phone number in varying ways &#8212; with or without extra spaces, hyphens, periods, and parentheses. Some may be more accustomed to providing only seven digits. This pattern was designed to reduce confusion and frustration and ensure accurate entry.

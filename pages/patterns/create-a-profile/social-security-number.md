@@ -1,10 +1,15 @@
 ---
 title: Social Security Number
+story: Help a user enter their Social Security Number
 permalink: /patterns/create-a-profile/social-security-number/
-layout: styleguide
+layout: pattern
 category: Patterns
+sub-category: Create a user profile
 lead: The Social Security Number pattern allows users to easily enter their Social Security Number and ensures the Social Security Number is properly formatted.
 ---
+<div></div>
+
+{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
 ## What problem does this solve?
 A Social Security Number is often a critical piece of validating identity when applying for government services or benefits, but can be confusing for users to enter correctly.

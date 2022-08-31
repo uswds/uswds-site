@@ -1,10 +1,15 @@
 ---
 title: Biological sex or gender
+story: Help a user select their biological sex or gender identity
 permalink: /patterns/create-a-profile/sex-or-gender/
-layout: styleguide
+layout: pattern
 category: Patterns
+sub-category: Create a user profile
 lead: This pattern helps users to provide gender identity or biological sex information in an accurate and respectful manner. 
 ---
+<div></div>
+
+{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
 ## What problem does this solve?
 Gender and biological sex are often used synonymously. Users have struggled to provide accurate information that best identifies and/or represents them within a limited or overwhelming amount of provided options.
@@ -181,7 +186,7 @@ See [usability guidance for checkboxes](https://designsystem.digital.gov/compone
 
 <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
 
-## Ingredients
+## Components used in this pattern
 
 <div class="usa-card-group flex-row margin-top-2">
   <div

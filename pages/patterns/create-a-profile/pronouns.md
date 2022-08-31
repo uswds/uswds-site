@@ -1,10 +1,15 @@
 ---
 title: Pronouns
+story: Help users to provide their pronouns to ensure they are addressed in the manner they prefer
 permalink: /patterns/create-a-profile/pronouns/
-layout: styleguide
+layout: pattern
 category: Patterns
+sub-category: Create a user profile
 lead: The pronouns pattern helps users to provide information that will allow them to feel confident they will be addressed with the pronouns they use.
 ---
+<div></div>
+
+{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
 ## What problem does this solve?
 A name or biological sex are not indicative of the pronouns a person uses. Allowing users to specify their pronouns creates a more comfortable environment by removing the potential for frustration and alienation.

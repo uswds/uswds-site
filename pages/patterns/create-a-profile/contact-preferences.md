@@ -1,10 +1,15 @@
 ---
 title: Contact preferences
+story: Help users indicate their contact preferences
 permalink: /patterns/create-a-profile/contact-preferences/
-layout: styleguide
+layout: pattern
 category: Patterns
+sub-category: Create a user profile
 lead: The contact preferences design pattern allows users to easily indicate how they would like to be contacted in the future. 
 ---
+<div></div>
+
+{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
 ## What problem does this solve?
 Effectively reaching the user is critical to good communication and building trust. Users have different preferred methods of communication, which become especially important during times of stress, disaster, or emergency response.

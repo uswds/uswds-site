@@ -1,10 +1,15 @@
 ---
 title: Email address
+story: Help users to enter their email address
 permalink: /patterns/create-a-profile/email-address/
-layout: styleguide
+layout: pattern
 category: Patterns
+sub-category: Create a user profile
 lead: The email address pattern allows users to confidently and accurately enter their email address and ensures that it is properly formatted.
 ---
+<div></div>
+
+{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
 ## What problem does this solve?
 Email addresses can be confusing to enter and users often make mistakes. Some users find it very frustrating to try to identify problems in email formatting. 

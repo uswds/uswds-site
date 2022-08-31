@@ -97,6 +97,6 @@
   "snyk": true,
   "dependencies": {
     "@uswds/compile": "^1.0.0-beta.3",
-    "@uswds/uswds": "github:uswds/uswds#al-language-selector"
+    "@uswds/uswds": "github:uswds/uswds#mm-language-selector"
   }
 }

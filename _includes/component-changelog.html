@@ -1,9 +1,7 @@
 {% assign componentName = page.component.name | default: page.title | downcase %}
 {% assign componentKey = componentName | slugify %}
-{% assign settingsKey = componentKey %}
-{% assign changelog = site.data.changelogs.accordion %}
-
-{% assign changelogItems = site.data.changelogs.accordion.items %}
+{% assign changelog = site.data.changelogs[componentKey] %}
+{% assign changelogItems = changelog.items %}
 
 {%- if changelog.items or changelog.url -%}
   <h2 id="{{ componentKey }}-changelog" class="site-component-section-title">Latest updates</h2>

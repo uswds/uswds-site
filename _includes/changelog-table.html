@@ -9,7 +9,9 @@
   <thead>
     <tr>
       <th scope="col" class="{{ col1Width }} display-inline-flex flex-align-start">{{ col1Title }}</th>
-      <th scope="col" class="{{ col2Width }} display-inline-flex flex-align-start">{{ col2Title }}</th>
+      {% if item.release %}
+        <th scope="col" class="{{ col2Width }} display-inline-flex flex-align-start">{{ col2Title }}</th>
+      {% endif %}
       <th scope="col" class="{{ col3Width }} display-inline-flex flex-align-start">{{ col3Title }}</th>
     </tr>
   </thead>
@@ -21,11 +23,11 @@
           {{ item.date }}
         {% endif %}
       </td>
+      {% if item.release %}
       <td data-title="{{ col2Title }}" class="{{ col2Width }} display-inline-flex flex-align-start">
-        {% if item.release %}
           {{ item.release }}
-        {% endif %}
       </td>
+      {% endif %}
       <td data-title="{{ col3Title }}" class="{{ col3Width }} display-inline-flex flex-align-start">
         {% if item.description %}
           <p>{{ item.description }}</p>

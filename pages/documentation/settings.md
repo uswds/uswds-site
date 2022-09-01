@@ -25,7 +25,7 @@ subnav:
 USWDS is built using a suite of customizable settings that allow you to configure the design system to fit your project's needs. These settings are Sass variables that begin with the `$theme-` prefix and are typically defined with [USWDS design tokens]({{ site.baseurl }}/design-tokens). The full list of USWDS settings and their default values can be found in the [tables below](#general-settings).
 
 ## Configuring USWDS settings
-All USWDS settings are defined in the `uswds-core` package and can be configured using Sass' [`@use..with()`](https://sass-lang.com/documentation/at-rules/use#configuration) rule. To create a custom configuration of USWDS, add the variables you wish to update with their new values inside the parentheses of this statement.
+All USWDS settings are defined in the `uswds-core` package and can be configured using Sass' [`@use..with()`](https://sass-lang.com/documentation/at-rules/use#configuration) rule. To create a custom configuration of USWDS, add USWDS settings variables with custom values inside the parentheses of this statement.
 
 An example configuration is shown below:
 

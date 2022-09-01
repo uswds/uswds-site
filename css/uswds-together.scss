@@ -507,13 +507,8 @@ html {
   }
 }
 
-.together-section-description {
-  p {
-    font-size: size("lang", 8);
-  }
-}
-
 .together-section-description p:first-child {
+  font-size: size("lang", 8);
   margin-top: 0;
 }
 

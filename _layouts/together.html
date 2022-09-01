@@ -78,10 +78,13 @@
     }
 
     .usa-in-page-nav-container .usa-in-page-nav-list a.usa-current::after {
-      background-color: #b50909;
+      background-color: #d83933;
       border-radius: 0;
       bottom: -1px;
+      content: "";
+      display: block;
       left: 0;
+      position: absolute;
       top: 0;
       width: 2px;
       z-index: 100;
@@ -101,15 +104,6 @@
       padding-left: 1.5rem;
     }
 
-    .usa-in-page-nav-container .usa-in-page-nav-list a.usa-current::after {
-      background-color: #b50909;
-      border-radius: 0;
-      bottom: -1px;
-      left: 0;
-      top: 0;
-      width: 2px;
-      z-index: 100;
-    }
   </style>
 </head>
 
@@ -154,7 +148,7 @@
 
       // Set Intersection Observer options
       const IO_ROOT = null;
-      const IO_ROOT_MARGIN = "0px 0px -80% 0px";
+      const IO_ROOT_MARGIN = "0px";
       const IO_THRESHOLD = [0];
 
 
@@ -224,7 +218,6 @@
 
           const allLinks = document.querySelectorAll(".usa-in-page-nav__link");
           el.map((i) => {
-            console.log("i", i);
             if (i.isIntersecting && i.intersectionRatio >= 1) {
               allLinks.forEach((link) => link.classList.remove("usa-current"));
               document

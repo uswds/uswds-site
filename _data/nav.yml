@@ -79,8 +79,8 @@ Components:
 Patterns:
   - text: Patterns
     href: /patterns/
-  - text: Inclusive Design
-    href: /patterns/inclusive-design/
+  - text: Introducing patterns
+    href: /patterns/intro/
   - text: Create a user profile
     href: /patterns/create-a-profile/
   - text: Complete a complex form

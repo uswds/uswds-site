@@ -37,38 +37,34 @@ summary_sections:
         </div>
         <div class="desktop:grid-col-8 desktop:margin-left-auto together-section-description">
           {{ item.description | markdownify }}
-        </div>
-      </div>
-      <div class="grid-row">
-        <div class="grid-col-12">
 {% if forloop.index == 1 %}
-          <div class="desktop:grid-offset-4 measure-4">
-            <p>
-              Most also have a pattern preview and associated code. These previews use USWDS components and are grounded in the <a href="https://designsystem.digital.gov/design-principles/">USWDS design principles</a>. They should be viewed as a starting point for the digital products you are designing, building, and supporting. 
-            </p>
-            <p>
-              We developed <strong>some additional components</strong> to support these patterns, including a language selector component, in-page navigation, and input masking. We've also refactored a few components and templates, such as address form and name form, to bring them in line with pattern recommendations.
-            </p>
-            <p>
-              As we move forward, we will identify and expore high-impact interactions and add to the pattern library. We also expect to continually revise our patterns — just as we do our components — as the landscape around DEIA and best practices evolves.
-            </p>
-          </div>
+<div class="measure-4">
+  <p>
+    Most also have a pattern preview and associated code. These previews use USWDS components and are grounded in the <a href="https://designsystem.digital.gov/design-principles/">USWDS design principles</a>. They should be viewed as a starting point for the digital products you are designing, building, and supporting. 
+  </p>
+  <p>
+    We developed <strong>some additional components</strong> to support these patterns, including a language selector component, in-page navigation, and input masking. We've also refactored a few components and templates, such as address form and name form, to bring them in line with pattern recommendations.
+  </p>
+  <p>
+    As we move forward, we will identify and expore high-impact interactions and add to the pattern library. We also expect to continually revise our patterns — just as we do our components — as the landscape around DEIA and best practices evolves.
+  </p>
+</div>
 {% elsif forloop.index == 2 %}
-          <div class="margin-top-6 desktop:grid-offset-4">
-            {% include together/together-color-hr.html %}
-          <section class="bg-indigo-cool-70 padding-2 desktop:padding-x-0 text-white">
-            <div class="desktop:padding-x-10 tablet:padding-4">
-                <h3 class="text-indigo-10 margin-top-3">Pattern-driven development</h3>
-                <p class="text-white measure-4">
-                  As the design system matures, you will likely see patterns beginning to drive component and feature development. We will identify key interactions, document patterns, and develop components in support of these patterns. We see this as an important human-centered shift to how we’ll approach development, how we’ll choose components, and how we’ll approach modularity and interaction between components.</p>
-              </div>
-            </section>
-          {% include together/together-color-hr.html %}
-          </div>
-{% endif %}
-        </div>
-      </div>
+<div class="margin-top-6">
+  {% include together/together-color-hr.html %}
+<section class="bg-indigo-cool-70 padding-2 desktop:padding-x-0 text-white">
+  <div class="desktop:padding-x-10 tablet:padding-4">
+      <h3 class="text-indigo-10 margin-top-3">Pattern-driven development</h3>
+      <p class="text-white measure-4">
+        As the design system matures, you will likely see patterns beginning to drive component and feature development. We will identify key interactions, document patterns, and develop components in support of these patterns. We see this as an important human-centered shift to how we’ll approach development, how we’ll choose components, and how we’ll approach modularity and interaction between components.</p>
     </div>
   </section>
-  
+{% include together/together-color-hr.html %}
+</div>
+{% endif %}
+
+        </div> <!-- desktop:grid-col-8 -->
+      </div> <!-- grid-row -->
+    </div> <!-- grid-container -->
+  </section>
 {% endfor %}

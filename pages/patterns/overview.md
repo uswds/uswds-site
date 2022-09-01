@@ -9,8 +9,6 @@ lead: USWDS patterns are practical guidelines and best practices for common user
 
 ---
 
-The USWDS design pattern library seeks to meet all of us, where we are. 
-
 <div class="usa-card-group flex-row margin-top-2">
   <li
   class="usa-card site-component-card grid-col-6 tablet:grid-col-4 margin-bottom-2"

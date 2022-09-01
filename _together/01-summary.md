@@ -100,14 +100,14 @@ With help from digital leaders across the federal space, we've developed pattern
 <!-- TODO: Make different colors -->
 <div class="grid-row tablet:margin-x-neg-205">
   <div class="desktop:grid-col-6 desktop:padding-x-205">
-    {% include together/together-finding-item.html  heading="Diversity" text="Diversity in design is about making sure all people are represented." %}
+    {% include together/together-finding-item.html  heading="Diversity" text="Diversity in design is about making sure all people are represented." border="blue"%}
 
-    {% include together/together-finding-item.html heading="Equity" text="Equity in design addresses the unique barriers people face, creating fairer experiences." %}
+    {% include together/together-finding-item.html heading="Equity" text="Equity in design addresses the unique barriers people face, creating fairer experiences." border="red" %}
   </div>
   <div class="desktop:grid-col-6 desktop:padding-x-205">
-    {% include together/together-finding-item.html heading="Inclusivity" text="Inclusivity in design cultivates a sense of belonging and feeling valued." %}
+    {% include together/together-finding-item.html heading="Inclusivity" text="Inclusivity in design cultivates a sense of belonging and feeling valued." border="gold" %}
 
-    {% include together/together-finding-item.html  heading="Accessibility" text="Accessibility in design ensures that all people can understand and enjoy digital experiences." %}
+    {% include together/together-finding-item.html  heading="Accessibility" text="Accessibility in design ensures that all people can understand and enjoy digital experiences." border="green" %}
   </div>
 </div>            
 

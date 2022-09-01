@@ -680,7 +680,11 @@ html {
 .together-finding {
   display: flex;
   margin-bottom: units(2);
+  min-height: 7rem;
+  flex-flow: column;
+  
   @include at-media("desktop") {
+    min-height: 10rem;
     margin: units(5) 0;
   }
 }

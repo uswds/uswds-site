@@ -1,0 +1,9 @@
+items:
+  - date: Aug. 5, 2022
+    description: '<a href="https://github.com/uswds/uswds-site/pull/1737">Added type="button" to the component code and guidance.</a>'
+    release: 3.x.x
+  - date: July 20, 2022
+    description: |
+      <a href="https://github.com/uswds/uswds-site/pull/1718">Update documentation to use the correct multi-select attribute.</a>
+      <br/>The attribute was updated from aria-multiselectable="true" to data-allow-multiple.
+    release: 2.x.x

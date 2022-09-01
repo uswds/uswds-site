@@ -11,9 +11,9 @@ report_title: Inclusive Design Patterns
 {% endif %}
 
 <section class="next-hero next-hero--{{ page_type }} next-hero--{{ page.slug }}  text-black  " aria-label="Page description">
-  <div class="grid-container position-relative tablet:padding-y-4 desktop:padding-y-8">
-    <div class="grid-row margin-top-2 tablet:margin-top-4 desktop:margin-y-6">
-      <div class="tablet:grid-col-4 tablet:margin-left-2 desktop:margin-left-8  desktop:grid-col-6 next-hero__content padding-x-2 tablet:padding-x-0 heading-wrapper">
+  <div class="grid-container position-relative tablet:padding-6 desktop:padding-y-8">
+    <div class="grid-row margin-top-2 desktop:margin-y-6">
+      <div class="tablet:grid-col-4 desktop:grid-col-6 next-hero__content padding-x-2 tablet:padding-x-0 heading-wrapper">
         {% if page_type == 'chapter' %}
           <h1 class="next-hero__heading">{{ page.title }}</h1>
           <h2 class="next-hero__subhead text-base-dark">{{ page.subhead }}</h2>
@@ -37,7 +37,7 @@ report_title: Inclusive Design Patterns
 </section>
 
 <nav class="together-internal-nav bg-gray-10 text-base" aria-label="Together report internal navigation">
-  <div class="grid-container">
+  <div class="grid-container tablet:padding-x-1 desktop:padding-x-3">
     <div class="desktop:grid-offset-3 desktop:padding-left-0 tablet:padding-x-6">
       <ul id="internal-nav" class="together-internal-nav__list">
         {% for item in site.together %}
@@ -56,10 +56,16 @@ report_title: Inclusive Design Patterns
   </div>
 </nav>
 
-<div class="usa-in-page-nav-container">
-  <main role="main" id="main-content">
-    {{ content }}
-  </main>
-  <aside class="usa-in-page-nav"></aside>
+<div class="grid-container usa-in-page-nav-container tablet:padding-x-6">
+  <div class="grid-row">
+    <div class="grid-col-9">
+      <main role="main" id="main-content">
+        {{ content }}
+      </main>
+    </div>
+    <div class="grid-col-3">
+      <aside class="usa-in-page-nav"></aside>
+    </div>
+  </div>
 </div>
 

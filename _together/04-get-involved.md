@@ -13,7 +13,7 @@ subhead: Help create inclusive digital experiences that work for everyone.
 chapter: true
 ---
   <section  class="together-section together-section--{{ item.title | downcase | replace: " ", "-" | remove: "’" }} {{ item.section_class }}">
-    <div class="grid-container">
+    <div class="grid-container padding-left-0">
     <!-- Section One -->
       <div class="grid-row">
         <div class="tablet:grid-col-12 desktop:grid-col-3">
@@ -44,7 +44,7 @@ The patterns are a start, but we need your help keeping these patterns current a
   </section>
 
 <section  class="together-section together-section--{{ item.title | downcase | replace: " ", "-" | remove: "’" }} {{ item.section_class }}">
-    <div class="grid-container">      
+    <div class="grid-container padding-left-0">
       <!-- Section Two -->
       <div class="grid-row">
         <div class="tablet:grid-col-12 desktop:grid-col-3">

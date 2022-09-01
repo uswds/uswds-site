@@ -93,13 +93,6 @@ html {
 .together-section .grid-container {
   max-width: 87.5rem !important;
   width: 100%;
-  @include at-media("tablet") {
-    padding: 0 4rem;
-  }
-}
-
-.next-hero .grid-container {
-  max-width: 110.5rem !important;
 }
 
 // Header

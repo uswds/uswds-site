@@ -5,7 +5,7 @@ component:
   package: usa-language-selector
   dependencies:
   image: /assets/img/components/language-selector/language-selector-three-or-more.png
-  demo: components-language-selector--three-or-more
+  demo: components-language-selector--multiple
 guidancePath: guidance/variants/three-or-more
 layout: component
 lead: Orient users to a site with deeper hierarchical needs.
@@ -17,8 +17,6 @@ redirect_from:
   - /components/language-selector-three-or-more/
 sitemap: false
 title: Language selector with three or more languages
-variants:
-  - variant: "`.usa-language-selector--three-or-more`"
-    description: Display a language dropdown.
 ---
+
 {% include component.html %}

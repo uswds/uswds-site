@@ -4,7 +4,7 @@ component:
   status: ready
   package: usa-language-selector
   image: /assets/img/components/language-selector/language-selector-two-languages.png
-  demo: components-language-selector--two-languages
+  demo: components-language-selector
   dependencies:
 guidancePath: guidance/variants/two-languages
 layout: component
@@ -14,12 +14,9 @@ parent: Language selector
 permalink: /components/language-selector/two-languages/
 parent_permalink: /components/language-selector/#two-languages
 redirect_from:
-  - /language-selector/two-languages/
+  - /language/two-languages/
 sitemap: false
 title: Two languages
-variants:
-  - variant: "`.usa-language-selector--two-languages`"
-    description: Display a simple language selector.
 ---
 
 {% include component.html %}

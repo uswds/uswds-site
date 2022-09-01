@@ -23,8 +23,8 @@ chapter: true
         </div>
         <div class="desktop:grid-col-8 desktop:margin-left-auto together-section-description" markdown="1">
 As people working in the federal space we all need to advocate for inclusive experiences[^1]. We’re all learning together, but some specific actions you can take today are:
-</div>
-<div class="desktop:grid-offset-4 measure-4" markdown="1">
+
+<div class="measure-4" markdown="1">
 * Include team members with diverse experiences and perspectives.
 * Lead with community voices and needs — emphasize people over process[^2].
 * Practice transparency and integrity in your actions.
@@ -38,7 +38,8 @@ As people working in the federal space we all need to advocate for inclusive exp
 The patterns are a start, but we need your help keeping these patterns current as design practices and DEIA norms evolve. We encourage you to continue to share your knowledge and expertise.
 
 </div>
-     
+  </div>
+
       </div>
     </div>
   </section>

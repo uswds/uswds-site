@@ -510,14 +510,9 @@ html {
   }
 }
 
-.together-section-description {
-  p {
-    font-size: size("lang", 8);
-  }
-}
-
 .together-section-description p:first-child {
   margin-top: 0;
+  font-size: size("lang", 8);
 }
 
 .together-section-prose {

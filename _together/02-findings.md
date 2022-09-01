@@ -48,12 +48,8 @@ summary_sections:
         </div>
         <div class="desktop:grid-col-8 desktop:margin-left-auto together-section-description">
           {{ item.description | markdownify }}
-        </div>
-      </div>
-      <div class="grid-row">
-        <div class="grid-col-12">
-          {% if forloop.index == 1 %}
-  <div class="desktop:grid-offset-4 measure-4" markdown="1">
+{% if forloop.index == 1 %}
+  <div class="measure-4" markdown="1">
   {% include together/together-quote.html quote="[We’re] in the very early stage of thinking about equity and diversity in digital delivery." source="HISP Digital team member"%}
           
   Some teams could point to specific examples about how they created a more inclusive experience[^1]. Some of the things we heard included:
@@ -70,35 +66,37 @@ summary_sections:
   {% include together/together-quote.html quote="[You] can’t make a mistake, because it is someone’s future." source="HISP Digital team member"%}
 
   </div>
-          {% elsif forloop.index == 2 %}           
-          <div class="desktop:grid-offset-4 measure-4">
-            {% include together/together-quote.html quote="Right now [users] must select Mr./Mrs. — need to be more flexible." source="HISP Digital team member"%}
-            <p>
-              Many of the digital teams we spoke with said that they were looking for guidance on how to incorporate DEIA best practices into their work, and how to do so given other constraints or mandates. Some common challenges cited were:
-            </p>
-            <ul>
-              <li>
-                Figuring out how to create DEIA-supportive solutions while aligning with existing reporting requirements.
-              </li>
-              <li>
-                Balancing new solutions with the needs (and limitations) of legacy back-end systems.
-              </li>
-              <li>
-                Ensuring that the solutions they provide also provide adequate privacy protection for individuals and families.
-              </li>
-            </ul>
-            {% include together/together-quote.html quote="Would like to see best practices for making a more equitable experience regarding gender." source="HISP Digital team member"%}
-            <p>
-              For example, some of the interviewees expressed that they’d like to provide a more inclusive experience around gender identity, but are concerned about opening people up to possible safety issues. Significant issues of privacy and personal safety come with some implementations, and this is definitely an area of concern for digital teams.
-            </p>
-            {% include together/together-quote.html quote="If a federal form is completed that identifies an underage [state resident] as trans, does that open them up to threats/danger?" source="DEIA Expert"%}
-            <p>
-              Other areas of concern were more technical. Changes to existing collection instruments require review in accordance with the <a href="https://pra.digital.gov/">Paperwork Reduction Act</a>. Back-end systems require updating. The digital teams want to get it right, but there are a lot of questions. Even when they are ready to make changes, processes, policies, and legacy tech can slow implementation down.
-            </p>
-            {% include together/together-quote.html quote="The need to integrate with legacy back-end systems can limit changes that can be made on the front-end." source="HISP Digital team member"%}
-          </div> 
-          {% elsif forloop.index == 3 %}
-<div class="desktop:grid-offset-4 measure-4" markdown="1">
+
+ {% elsif forloop.index == 2 %}           
+  <div class="measure-4">
+    {% include together/together-quote.html quote="Right now [users] must select Mr./Mrs. — need to be more flexible." source="HISP Digital team member"%}
+    <p>
+      Many of the digital teams we spoke with said that they were looking for guidance on how to incorporate DEIA best practices into their work, and how to do so given other constraints or mandates. Some common challenges cited were:
+    </p>
+    <ul>
+      <li>
+        Figuring out how to create DEIA-supportive solutions while aligning with existing reporting requirements.
+      </li>
+      <li>
+        Balancing new solutions with the needs (and limitations) of legacy back-end systems.
+      </li>
+      <li>
+        Ensuring that the solutions they provide also provide adequate privacy protection for individuals and families.
+      </li>
+    </ul>
+    {% include together/together-quote.html quote="Would like to see best practices for making a more equitable experience regarding gender." source="HISP Digital team member"%}
+    <p>
+      For example, some of the interviewees expressed that they’d like to provide a more inclusive experience around gender identity, but are concerned about opening people up to possible safety issues. Significant issues of privacy and personal safety come with some implementations, and this is definitely an area of concern for digital teams.
+    </p>
+    {% include together/together-quote.html quote="If a federal form is completed that identifies an underage [state resident] as trans, does that open them up to threats/danger?" source="DEIA Expert"%}
+    <p>
+      Other areas of concern were more technical. Changes to existing collection instruments require review in accordance with the <a href="https://pra.digital.gov/">Paperwork Reduction Act</a>. Back-end systems require updating. The digital teams want to get it right, but there are a lot of questions. Even when they are ready to make changes, processes, policies, and legacy tech can slow implementation down.
+    </p>
+    {% include together/together-quote.html quote="The need to integrate with legacy back-end systems can limit changes that can be made on the front-end." source="HISP Digital team member"%}
+  </div> 
+
+{% elsif forloop.index == 3 %}
+<div class="measure-4" markdown="1">
 
 Some of the ways digital teams are trying to be more inclusive are:
 
@@ -115,8 +113,10 @@ And the realities of getting solutions out to the public quickly come into play.
 {% include together/together-quote.html quote="Build for most people vs. all people? Do I sacrifice getting it to most people or get it to all people later?" source="HISP Digital team member"%}
 
 </div>
-          {% elsif forloop.index == 4 %}
-<div class="desktop:grid-offset-4 measure-4" markdown="1">
+
+{% elsif forloop.index == 4 %}
+
+<div class="measure-4" markdown="1">
 
 * Forms that require addresses to be completed, but don’t accommodate different formats — or provide options for someone who is unhoused either permanently, or temporarily after a disaster.
 * Name fields that expect users to have both a first and last name, and don’t accommodate single-name individuals or individuals with multiple last names[^2].
@@ -127,15 +127,15 @@ And the realities of getting solutions out to the public quickly come into play.
 Many of the digital teams are trying to figure out what changes they need to make to accommodate a more diverse public[^4]. They recognize that personal information is the primary foundational information we ask from people, and when what we ask for doesn’t allow users to confidently and accurately self-identify in their answers, we may have created a bad experience — and an experience that erodes trust — from the start[^5].
            
 </div>
-          {% elsif forloop.index == 5 %}
-<div class="desktop:grid-offset-4 measure-4" markdown="1">
+
+{% elsif forloop.index == 5 %}
+<div class="measure-4" markdown="1">
             
 Forms can be frustrating and alienating, especially if the user is recovering from trauma or in a volatile situation, such as in the aftermath of a disaster. Interviewees asked for guidance around how we can increase trust and help the public to have a better experience with forms[^6]. 
             
 {% include together/together-quote.html quote="People are reluctant to give information because of the lack of trust and any number of concerns. [We need help] building trust into the design process." source="HISP Digital team member"%}
         
 Some of the specific insights we heard regarding complex forms include:
-        
         
 * Users need to know why information is required, what we are using it for, and how it will be protected.
 * Some users, especially those in difficult situations, may need to be able to complete a form over several sessions.
@@ -147,23 +147,25 @@ Some of the specific insights we heard regarding complex forms include:
 Forms are a real challenge for digital teams as they try to meet both the needs of the public and those of the program. 
 
 </div>
-      
-          {% elsif forloop.index == 6 %}
-<div class="desktop:grid-offset-4 measure-4" markdown="1">
+
+{% elsif forloop.index == 6 %}
+<div class="measure-4" markdown="1">
 {% include together/together-quote.html quote="Not just plain language. Need language access. Good multilingual IA [information architecture]. Writing that supports low English proficiency." source="DEIA expert"%}
             
 Providing multilingual content is a huge investment, and a key way to communicate to the public that we will meet them where they are[^8].
             
 {% include together/together-quote.html quote="[We’re] struggling with multilingual [content] and accommodating the proper presentation." source="HISP Design team member"%}
 </div>
-          {% endif %}
 
-        </div>
-      </div>
-    </div>
+{% endif %}
+        
+        </div> <!-- desktop:grid-col-8 -->
+      </div> <!-- grid-row -->
+    </div> <!-- grid-container -->
   </section>
 {% endfor %}
 
+<!-- Citations -->
 <section class="next-section next-section--citations">
   <div class="grid-container">
     <div class="grid-row">

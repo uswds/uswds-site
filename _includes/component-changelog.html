@@ -1,43 +1,18 @@
+{% assign componentName = page.component.name | default: page.title | downcase %}
 {% assign componentKey = componentName | slugify %}
-{% assign changeItems = site.data.changelogs.accordion.items %}
+{% assign settingsKey = componentKey %}
+{% assign changelog = site.data.changelogs.accordion %}
 
-<h2 class="site-component-section-title" id="changelog-{{ componentKey }}">Latest updates</h2>
-<p>Find a list of all code changes for this component in its <a href="https://github.com">CHANGELOG.md</a>.</p>
+{% assign changelogItems = site.data.changelogs.accordion.items %}
 
-{% assign col1Title = 'Date' %}
-{% assign col1Width = 'flex-1' %}
-{% assign col2Title = 'Release' %}
-{% assign col2Width = 'flex-1' %}
-{% assign col3Title = 'Description' %}
-{% assign col3Width = 'flex-7' %}
+{%- if changelog.items or changelog.url -%}
+  <h2 id="{{ componentKey }}-changelog" class="site-component-section-title">Latest updates</h2>
+{%- endif -%}
 
-<table class="usa-table--borderless site-table-responsive site-table-simple">
-  <thead>
-    <tr>
-      <th scope="col" class="{{ col1Width }} display-inline-flex flex-align-start">{{ col1Title }}</th>
-      <th scope="col" class="{{ col2Width }} display-inline-flex flex-align-start">{{ col2Title }}</th>
-      <th scope="col" class="{{ col3Width }} display-inline-flex flex-align-start">{{ col3Title }}</th>
-    </tr>
-  </thead>
-  <tbody class="font-lang-3xs">
-    {% for item in changeItems %}
-    <tr class="{% if item.section %}tablet:border-top-2px tablet:margin-top-2{% endif %}">
-      <td data-title="{{ col1Title }}" class="{{ col1Width }} display-inline-flex flex-align-start">
-        {% if item.date %}
-          {{ item.date }}
-        {% endif %}
-      </td>
-      <td data-title="{{ col2Title }}" class="{{ col2Width }} display-inline-flex flex-align-start">
-        {% if item.release %}
-          {{ item.release }}
-        {% endif %}
-      </td>
-      <td data-title="{{ col3Title }}" class="{{ col3Width }} display-inline-flex flex-align-start">
-        {% if item.description %}
-          <p>{{ item.description }}</p>
-        {% endif %}
-      </td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+{%- if changelog.url -%}
+  <p>Find a list of all code changes for this component in its <a href="{{ changelog.url }}">CHANGELOG.md</a>.</p>
+{%- endif -%}
+
+{%- if changelog.items -%}
+  {% include changelog-table.html %}
+{%- endif -%}

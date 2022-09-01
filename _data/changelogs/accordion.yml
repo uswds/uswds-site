@@ -1,7 +1,8 @@
 url: https://github.com/placeholder
 items:
   - date: Aug. 5, 2022
-    description: '<a href="https://github.com/uswds/uswds-site/pull/1737">Added type="button" to the component code and guidance.</a>'
+    description: |
+      <a href="https://github.com/uswds/uswds-site/pull/1737">Added type="button" to the component code and guidance.</a>
     release: 3.x.x
   - date: July 20, 2022
     description: |

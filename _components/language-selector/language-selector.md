@@ -5,18 +5,35 @@ component:
   status: ready
   package: usa-language-selector
 layout: styleguide
-lead: A language selector helps users identify where they are and provides a quick, organized way to reach the main sections of a website.
+lead: Indicate the language they prefer to use for either written or spoken communication.
 permalink: /components/language-selector/
 redirect_from:
   - /language-selector/
   - /components/language/
+variants:
+  - variant: "`.usa-button--secondary`"
+    description: Button uses `secondary` color.
+  - variant: "`.usa-button--accent-cool`"
+    description: Button uses `accent-cool` color.
+  - variant: "`.usa-button--accent-warm`"
+    description: Button uses `accent-warm` color.
+  - variant: "`.usa-button--base`"
+    description: Button uses `base` color.
+  - variant: "`.usa-button--outline`"
+    description: Transparent button with a color stroke.
+  - variant: "`.usa-button--inverse`"
+    description: Light color button for dark backgrounds.
+  - variant: "`.usa-button--big`"
+    description: A bigger button.
+  - variant: "`.usa-button--unstyled`"
+    description: A button that looks like a link.
 subnav:
   - text: Two languages
-    href: '#two-languages'
+    href: '#language-selector-with-two-languages'
   - text: Three or more
-    href: '#three-or-more'
+    href: '#language-selector-with-three-or-more-languages'
   - text: Unstyled example
-    href: '#unstyled-example'
+    href: '#language-selector-unstyled'
 title: Language selector
 type: component
 ---

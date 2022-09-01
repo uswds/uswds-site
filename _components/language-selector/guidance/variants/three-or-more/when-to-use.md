@@ -1,2 +1,1 @@
-- **Limited sections.** The basic header is great if you have a modest number of sections in your main navigation.
-- **Shallow hierarchy.** You may also use it if each main section listed in the horizontal navigation has six or fewer subsections that you’d like to include in a dropdown menu.
+- **Multilingual content is available.** Use this component if your site offers a select set of content available in additional languages.

@@ -1,2 +1,2 @@
-- **Limited sections.** The basic header is great if you have a modest number of sections in your main navigation.
-- **Shallow hierarchy.** You may also use it if each main section listed in the horizontal navigation has six or fewer subsections that you’d like to include in a dropdown menu.
+- **Limited space.** The unstyled version of the language button is great if you have limited space in your area of placement.
+- **Secondary navigation.** You may also use it in a secondary or maintenance navigation section as long as the navigation remains visible on desktop and mobile.

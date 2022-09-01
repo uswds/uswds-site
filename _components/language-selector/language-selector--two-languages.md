@@ -1,6 +1,6 @@
 ---
 component:
-  about: true
+  about: false
   status: ready
   package: usa-language-selector
   image: /assets/img/components/language-selector/language-selector-two-languages.png
@@ -8,7 +8,7 @@ component:
   dependencies:
 guidancePath: guidance/variants/two-languages
 layout: component
-lead: Orient users to a simple site.
+lead: Allow users to toggle between two languages.
 order: 01
 parent: Language selector
 permalink: /components/language-selector/two-languages/
@@ -16,7 +16,8 @@ parent_permalink: /components/language-selector/#two-languages
 redirect_from:
   - /language/two-languages/
 sitemap: false
-title: Two languages
+title: Language selector with two languages
+type: component
 ---
 
 {% include component.html %}

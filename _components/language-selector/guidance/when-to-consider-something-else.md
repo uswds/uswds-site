@@ -1,3 +1,0 @@
-- **Backend limitations.** If your users keep hitting the character limit imposed by the backend of your service then try to increase the limit rather than use a character count.
-- **Already implied.** If the character length is apparent or implied by the data type (i.e. phone number or zip code).
-- **Exceeding the character limit is highly unlikely.** If the vast majority of users (well over 99%) are very unlikely to run afoul of backend validation, such as an address field that has a database field limit of 250 characters.

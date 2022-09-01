@@ -7,7 +7,7 @@ lead: USWDS patterns are practical guidelines and best practices for common user
 ---
 
 
-## Introducing patterns
+## What are design patterns?
 Patterns are best practice design solutions for specific user tasks and interactions. 
 
 Every day we ask users to engage with our digital products and services. Whether completing a form, creating an account, scheduling an appointment — or even something as simple as drilling down into complex content — we ask them to _interact_ with the products we're building to fulfill a need. 

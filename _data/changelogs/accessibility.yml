@@ -1,10 +1,9 @@
 url: https://github.com/placeholder
 items:
-  - date: Aug. 5, 2022
-    description: '<a href="https://github.com/uswds/uswds-site/pull/1737">Added type="button" to the component code and guidance.</a>'
-    release: 3.x.x
-  - date: July 20, 2022
+  - date: May 20, 2021
     description: |
-      <a href="https://github.com/uswds/uswds-site/pull/1718">Updated documentation to use the correct multi-select attribute.</a>
-      <br/>The attribute was updated from aria-multiselectable="true" to data-allow-multiple.
-    release: 2.x.x
+      <a href="https://github.com/uswds/uswds-site/pull/1230">Updated all content to better explain current standards.</a>
+      <br/>This update explained USWDS accessibility standards, provided guidance on how to reach accessibility compliance on projects, and provided links to helpful resources.
+  - date: April 19, 2019
+    description: |
+      <a href="https://github.com/uswds/uswds-site/pull/767">Added information about Accessibility for Teams</a>

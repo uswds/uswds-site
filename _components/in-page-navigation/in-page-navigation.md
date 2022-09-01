@@ -37,6 +37,6 @@ tags:
 title: In-page navigation
 type: component
 ---
-In-page navigation provides a way to rapidly traverse a page by providing a clickable outline for the user. This component is most suited for lengthy pages that benefit from the ability to quickly navigate to specific sections of the page rather than scrolling. The component appears by default to the right of the content in a sticky container that remains fixed when the user scrolls. When a user clicks an item on the in-page navigation, the page smoothly scrolls to the target section.
+In-page navigation provides a way to rapidly traverse a page by providing a clickable outline for the user. This component is most suited for lengthy pages that benefit from the ability to quickly navigate to specific sections of the page rather than scrolling. The component is displayed to the right of the main content by default, in a sticky container that remains fixed when the user scrolls. When a user clicks an item on the in-page navigation, the page smoothly scrolls to the target section.
 
 In-page navigation utilizes the Intersection Observer API which provides a performant, future-proof way of observing elements on the page, and switching the in-page navigation items that coincide with what is visible in the viewport on and off. In other words, adding and removing the .usa-current class to the navigation items current in focus.

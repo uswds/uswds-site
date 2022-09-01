@@ -2,7 +2,7 @@
 
 - **Set focus state on section target for keyboard users.** When using smooth scrolling for in-page anchors, make sure to set the focus state on the section target when the user presses the enter key. For mouse users, the focus should remain on the link that was clicked.
 
-- **Consider adding hint text near the In-page navigation component heading.** Hint text like “click to navigate” may provide additional context, particularly for users of assistive technology.
+- **Consider adding hint text near the in-page navigation component heading.** Hint text like “click to navigate” may provide additional context, particularly for users of assistive technology.
 
 ### Using the in-page navigation component
 Implementing the in-page navigation component requires a few additions and adjustments to your code including:

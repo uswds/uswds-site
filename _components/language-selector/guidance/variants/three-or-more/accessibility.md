@@ -1,3 +1,3 @@
 - **There should be enough color contrast between the button, the text inside the button, and the background to ensure readability.**
-- **The language of the page should be identified using the HTML lang attribute (`<html lang="en">`, for example).** Please see the link for reference [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57).
+- **The language of each page should be identified using the HTML lang attribute (`<html lang="en">`, for example).** Please see the link for reference [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57).
 - All logically related items/links must be presented as an HTML unordered list. See link for references [H48: Using ol, ul and dl for lists or groups of links](https://www.w3.org/WAI/WCAG21/Techniques/html/H48).

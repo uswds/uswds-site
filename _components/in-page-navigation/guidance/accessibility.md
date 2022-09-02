@@ -27,7 +27,7 @@ Mozilla describes it as: The Intersection Observer API provides a way to asynchr
 #### Intersection Observer Options
 - **Root.** The root option is set to the main content landmark. If not set, this defaults to the viewport.
 - **Root margin.** The root margin is a string that allows you to define the observable area. By default, the in-page navigation component is set to `0px 0px -95% 0px.` The `-95%` means observables will set the corresponding link to active when the section is 95% from the bottom of the observable area.
-- **Threshold.** The threshold option is set to 1 which means 100% of the observable must be in the observed section.
+- **Threshold.** The threshold option is set to 1 which means 100% of the observables must be in the observed section.
 
 #### IntersectionObserverEntry Interface
 This interface to the IO API describes, in fine detail, the intersection between the target element and its root container at a specific moment of transition. For example, here are the properties returned with each Intersection Observer entry and sample data:

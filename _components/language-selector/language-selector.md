@@ -5,7 +5,7 @@ component:
   status: ready
   package: usa-language-selector
 layout: styleguide
-lead: Indicate the language they prefer to use for either written or spoken communication.
+lead: Accessing content in the language that the user is most comfortable in allows the user to be more successful in completing key tasks. 
 permalink: /components/language-selector/
 redirect_from:
   - /language-selector/

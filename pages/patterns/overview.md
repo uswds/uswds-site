@@ -9,6 +9,8 @@ lead: USWDS patterns are practical guidelines and best practices for common user
 
 ---
 
+Interested in what the USWDS team learned speaking with digital teams throughout the federal government as they work to remove barriers and create inclusive digital experiences for all users? Visit <a href="{{ site.baseurl }}/together/">Together: Inclusive Design Patterns</a>.
+
 <div class="usa-card-group flex-row margin-top-2">
   <li
   class="usa-card site-component-card grid-col-6 tablet:grid-col-4 margin-bottom-2"

@@ -5,7 +5,7 @@ component:
   status: ready
   package: usa-language-selector
 layout: styleguide
-lead: Accessing content in the language that the user is most comfortable in allows the user to be more successful in completing key tasks. 
+lead: Consistent placement and language selection interface components allow users to easily find and access content in the language that the user is most comfortable in. 
 permalink: /components/language-selector/
 redirect_from:
   - /language-selector/

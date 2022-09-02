@@ -3,13 +3,13 @@
 {% assign col2Title = 'Release' %}
 {% assign col2Width = 'flex-1' %}
 {% assign col3Title = 'Description' %}
-{% assign col3Width = 'flex-7' %}
+{% assign col3Width = 'flex-5 tablet:flex-7' %}
 
 <table class="usa-table--borderless site-table-responsive site-table-simple">
   <thead>
     <tr>
       <th scope="col" class="{{ col1Width }} display-inline-flex flex-align-start">{{ col1Title }}</th>
-      {% if item.release %}
+      {% if changelog.includeRelease == true %}
         <th scope="col" class="{{ col2Width }} display-inline-flex flex-align-start">{{ col2Title }}</th>
       {% endif %}
       <th scope="col" class="{{ col3Width }} display-inline-flex flex-align-start">{{ col3Title }}</th>
@@ -23,14 +23,16 @@
           {{ item.date }}
         {% endif %}
       </td>
-      {% if item.release %}
+      {% if changelog.includeRelease == true %}
       <td data-title="{{ col2Title }}" class="{{ col2Width }} display-inline-flex flex-align-start">
-          {{ item.release }}
+          {% if item.release %}
+            {{ item.release }}
+          {% endif %}
       </td>
       {% endif %}
       <td data-title="{{ col3Title }}" class="{{ col3Width }} display-inline-flex flex-align-start">
         {% if item.description %}
-          <p>{{ item.description }}</p>
+          <p class="measure-6">{{ item.description }}</p>
         {% endif %}
       </td>
     </tr>

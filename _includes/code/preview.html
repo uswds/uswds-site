@@ -3,7 +3,7 @@
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   {% assign _id = include.component | append: '-preview' %}
   {% assign _content_id = include.component | append: '-preview-content' %}
-  <button class="usa-accordion__button" aria-controls="{{ _content_id }}" aria-expanded="true"><{{ level }} id="{{ _id }}">Component preview</{{ level }}></button>
+  <button type="button" class="usa-accordion__button" aria-controls="{{ _content_id }}" aria-expanded="true"><{{ level }} id="{{ _id }}">Component preview</{{ level }}></button>
   <div id="{{ _content_id }}" class="usa-accordion__content">
 
     {% if include.image %}

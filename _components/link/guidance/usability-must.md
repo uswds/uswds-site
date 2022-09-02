@@ -10,7 +10,7 @@
 
     <div class="usa-accordion card-policy">
       <h3 class="usa-accordion__heading">
-      <button class="usa-accordion__button" title="View " aria-expanded="false" aria-controls="card-policy-6">
+      <button type="button" class="usa-accordion__button" title="View " aria-expanded="false" aria-controls="card-policy-6">
         <span class="scroll">
           <svg class="usa-icon square-4" aria-hidden="true" focusable="false" role="img"><use xlink:href="{{ site.baseurl }}/assets/img/sprite.svg#description"></use></svg>
         </span>

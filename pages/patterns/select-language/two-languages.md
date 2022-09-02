@@ -99,16 +99,16 @@ Consider including a <strong>prominent in-page notice or link</strong> in additi
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
   <div id="accordion-preview" class="usa-accordion__content">
-    {% include patterns/contact-preferences.html %}
+    {% include patterns/two-languages.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
   <div id="accordion-code" class="usa-accordion__content highlight-code">
     <div class="usa-sr-only">
-      {% highlight text%}{% include patterns/contact-preferences.html %}{% endhighlight %}
+      {% highlight text%}{% include patterns/two-languages-code.html %}{% endhighlight %}
     </div>
-    {% highlight html%}{% include patterns/contact-preferences.html %}{% endhighlight %}
+    {% highlight html%}{% include patterns/two-languages-code.html %}{% endhighlight %}
   </div>
 </div>
 

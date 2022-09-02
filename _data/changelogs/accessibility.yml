@@ -1,4 +1,4 @@
-includeRelease: true
+includeRelease: false
 items:
   - date: May 20, 2021
     description: |

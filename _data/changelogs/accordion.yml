@@ -1,12 +1,18 @@
 url: https://github.com/placeholder
 includeRelease: true
+includeBreaking: true
 items:
-  - date: Aug. 5, 2022
-    description: |
-      <a href="https://github.com/uswds/uswds-site/pull/1737">Added type="button" to the component code and guidance.</a>
-    release: 3.x.x
-  - date: July 20, 2022
-    description: |
-      <a href="https://github.com/uswds/uswds-site/pull/1718">Updated documentation to use the correct multi-select attribute.</a>
-      <br/>The attribute was updated from aria-multiselectable="true" to data-allow-multiple.
-    release: 2.x.x
+  - breaking: Potential
+    date: Aug. 5, 2022
+    description:
+      summary: 'Added type="button" to the component code and guidance.'
+    pr: 4695
+    release: 3.1.0
+    repo: uswds
+  - breaking: 'No'
+    date: July 20, 2022
+    description:
+      summary: Updated documentation to use the correct multi-select attribute.
+      additional: 'The attribute was updated from aria-multiselectable="true" to data-allow-multiple.'
+    pr: 1718
+    repo: uswds-site

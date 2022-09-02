@@ -1,9 +1,14 @@
 includeRelease: false
+includeBreaking: false
 items:
   - date: May 20, 2021
-    description: |
-      <a href="https://github.com/uswds/uswds-site/pull/1230">Updated all content to better explain current standards.</a>
-      <br/>This update explained USWDS accessibility standards, provided guidance on how to reach accessibility compliance on projects, and provided links to helpful resources.
+    description:
+      summary: Updated all content to better explain current standards.
+      additional: This update explained USWDS accessibility standards, provided guidance on how to reach accessibility compliance on projects, and provided links to helpful resources.
+    pr: 1230
+    repo: uswds-site
   - date: April 19, 2019
-    description: |
-      <a href="https://github.com/uswds/uswds-site/pull/767">Added information about Accessibility for Teams</a>
+    description:
+      summary: Added information about Accessibility for Teams
+    pr: 767
+    repo: uswds-site

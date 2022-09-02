@@ -2,37 +2,60 @@
 {% assign col1Width = 'flex-1' %}
 {% assign col2Title = 'Release' %}
 {% assign col2Width = 'flex-1' %}
-{% assign col3Title = 'Description' %}
-{% assign col3Width = 'flex-5 tablet:flex-7' %}
+{% assign col3Title = 'Breaking' %}
+{% assign col3Width = 'flex-1' %}
+{% assign col4Title = 'Description' %}
+{% assign col4Width = 'flex-6 tablet:flex-7' %}
 
 <table class="usa-table--borderless site-table-responsive site-table-simple">
   <thead>
     <tr>
-      <th scope="col" class="{{ col1Width }} display-inline-flex flex-align-start">{{ col1Title }}</th>
+      <th scope="col" class="{{ col1Width }}">{{ col1Title }}</th>
       {% if changelog.includeRelease == true %}
-        <th scope="col" class="{{ col2Width }} display-inline-flex flex-align-start">{{ col2Title }}</th>
+        <th scope="col" class="{{ col2Width }}">{{ col2Title }}</th>
       {% endif %}
-      <th scope="col" class="{{ col3Width }} display-inline-flex flex-align-start">{{ col3Title }}</th>
+      {% if changelog.includeBreaking == true %}
+        <th scope="col" class="{{ col3Width }}">{{ col3Title }}</th>
+      {% endif %}
+      <th scope="col" class="{{ col4Width }}">{{ col4Title }}</th>
     </tr>
   </thead>
   <tbody class="font-lang-3xs">
     {% for item in changelogItems %}
     <tr class="{% if item.section %}tablet:border-top-2px tablet:margin-top-2{% endif %}">
-      <td data-title="{{ col1Title }}" class="{{ col1Width }} display-inline-flex flex-align-start">
+      <td data-title="{{ col1Title }}" class="{{ col1Width }}">
         {% if item.date %}
           {{ item.date }}
         {% endif %}
       </td>
       {% if changelog.includeRelease == true %}
-      <td data-title="{{ col2Title }}" class="{{ col2Width }} display-inline-flex flex-align-start">
+      <td data-title="{{ col2Title }}" class="{{ col2Width }}">
           {% if item.release %}
-            {{ item.release }}
+            <a href="https://github.com/uswds/uswds/releases/tag/v{{ item.release }}">{{ item.release }}</a>
+          {% else %}
+            N/A
           {% endif %}
       </td>
       {% endif %}
-      <td data-title="{{ col3Title }}" class="{{ col3Width }} display-inline-flex flex-align-start">
+      {% if changelog.includeBreaking == true %}
+      <td data-title="{{ col3Title }}" class="{{ col3Width }}">
+          {% if item.breaking %}
+            {{ item.breaking }}
+          {% endif %}
+      </td>
+      {% endif %}
+      <td data-title="{{ col4Title }}" class="{{ col4Width }}">
         {% if item.description %}
-          <p class="measure-6">{{ item.description }}</p>
+          <p class="measure-6">
+            {% if item.description.summary %}
+              <a href="https://github.com/uswds/{{ item.repo }}/pull/{{ item.pr }}">
+                {{ item.description.summary }}
+              </a>
+            {% endif %}
+            {% if item.description.additional %}
+              <br/>{{ item.description.additional }}
+            {% endif %}
+          </p>
         {% endif %}
       </td>
     </tr>

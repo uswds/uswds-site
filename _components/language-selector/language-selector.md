@@ -38,6 +38,9 @@ title: Language selector
 type: component
 ---
 
-For more specific guidance about language selection design patterns, see the <a href="{{ site.baseurl }}/patterns/language-selector/">Select a language</a> pattern family.
+For more specific guidance about language selection design patterns, see the <a href="{{ site.baseurl }}/patterns/language-selector/">Select a language</a> pattern family. This pattern family includes several language selection patterns:
+- <a href="{{ site.baseurl }}/patterns/language-selector/two-languages/">Select between two languages</a>
+- <a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages/">Select from three or more languages</a>
+- <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Find selected content in other languages</a>
 
 {% include child-sections.html parent='Language selector' %}

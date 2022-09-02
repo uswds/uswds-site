@@ -9,7 +9,7 @@ component:
   dependencies:
 guidancePath: guidance/variants/unstyled
 layout: component
-lead: Use the unstyled version of the language button if your implementation calls for a link or should be placed in a secondary navigation section with other links.
+lead: Use the unstyled version of the language button if your implementation calls for a link, or must be placed in a secondary navigation section with other links.
 order: 03
 parent: Language selector
 permalink: /components/language-selector/unstyled/

@@ -141,7 +141,6 @@ See [usability guidance for radio buttons](https://designsystem.digital.gov/comp
 </div>
 
 ## Related
-- <a href="{{ site.baseurl }}/components/input-mask/">Input masking</a> component
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/email-address/">Email address</a> pattern
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number/">Social Security Number</a> pattern
 

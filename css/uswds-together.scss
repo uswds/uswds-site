@@ -88,15 +88,15 @@ html {
 // Page width
 // -------------------------------------
 // https://designsystem.digital.gov/utilities/layout-grid/
-.next-hero .grid-container,
-.next-internal-nav .grid-container,
+.together-hero .grid-container,
+.together-internal-nav .grid-container,
 .together-section .grid-container {
   max-width: 87.5rem !important;
   width: 100%;
 }
 
 // Header
-.next-site-header .site-header-navbar {
+.together-site-header .site-header-navbar {
   background-color: $gray-80-next;
 }
 
@@ -106,7 +106,7 @@ html {
 
 // Hero
 // -------------------------------------
-.next-hero {
+.together-hero {
   align-content: flex-start;
   align-items: center;
   border-bottom: 2px solid #adadad;
@@ -116,7 +116,7 @@ html {
     align-content: center;
    
   }
-  .next-hero__image {
+  .together-hero__image {
     position: block;
     @include at-media("tablet") {
       position: absolute;
@@ -131,7 +131,7 @@ html {
   }
 }
 
-.next-hero__heading {
+.together-hero__heading {
   font-size: size("lang", 12);
   line-height: line-height("lang", 2);
   margin: 0;
@@ -146,7 +146,7 @@ html {
   }
 }
 
-.next-hero__subhead {
+.together-hero__subhead {
   font-size: size("lang", 8);
   font-weight: $theme-font-weight-normal;
   line-height: line-height("lang", 2);
@@ -164,7 +164,7 @@ html {
   }
 }
 
-.next-hero__banner-container {
+.together-hero__banner-container {
   width: 100%;
 
   img {
@@ -174,7 +174,7 @@ html {
   }
 }
 
-.next-hero--chapter {
+.together-hero--chapter {
   flex-flow: wrap;
   padding-bottom: 0;
   // min-height: 24rem;
@@ -182,14 +182,14 @@ html {
     padding-bottom: 0;
   }
 
-  .next-hero__subhead {
+  .together-hero__subhead {
     max-width: none;
     @include at-media("desktop") {
       margin-bottom: units(4);
     }
   }
 }
-.next-hero--page__pattern {
+.together-hero--page__pattern {
   background-color: transparent;
   background-repeat: repeat-x;
   background-position: bottom right units(-4);
@@ -202,7 +202,7 @@ html {
   }
 }
 
-.next-hero--chapter__pattern {
+.together-hero--chapter__pattern {
   background-color: transparent;
   background-repeat: repeat-x;
   background-position: bottom right units(-4);
@@ -214,11 +214,11 @@ html {
   }
 }
 
-.next-hero--page {
+.together-hero--page {
   flex-flow: wrap;
   padding-bottom: units(5);
 
-  .next-hero__subhead {
+  .together-hero__subhead {
     color: inherit;
     text-transform: uppercase;
     font-size: size("sans", 2);
@@ -228,7 +228,7 @@ html {
     max-width: none;
   }
 
-  .next-hero__heading {
+  .together-hero__heading {
     font-family: family("heading");
     font-size: size("heading", 12);
     font-weight: font-weight("bold");

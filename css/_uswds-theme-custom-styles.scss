@@ -520,9 +520,6 @@ img {
 }
 
 .site-figure {
-  @include u-display("flex");
-  @include u-flex("column");
-  @include u-flex("align-center");
   @include u-margin(0);
 }
 

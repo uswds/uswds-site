@@ -7,7 +7,7 @@ meta:
 
 permalink: /together/
 slug: together
-subhead: Patterns are practical, easy to implement guidelines around common user interactions. USWDS pattern guidance is designed to reduce barriers to participation through every interaction.
+subhead: Working together to remove barriers and create inclusive digital experiences for all 
 chapter: true
 
 summary_sections:

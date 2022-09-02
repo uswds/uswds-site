@@ -30,7 +30,7 @@ subnav:
 - text: Package
   href: '#in-page-navigation-package'
 - text: References
-  href: '#in-page-navigation-references'
+  href: '#references'
 tags:
   - in-page
   - nav

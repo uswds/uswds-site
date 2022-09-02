@@ -124,7 +124,10 @@ exports.compile = uswds.compile;
   ```
 
 ## Step 4: Create path settings and export compile functions
-Now, create your path settings using the following table:
+If you want to go to build or the dist directory and eliminate the USWDS subdirectory, create your path settings in the gulpfile. When you're initializing, the file pulls and copies elements from the node mod package of USWDS 3.0 and copies it into the project/source file while you are building in the dist file. 
+
+
+ You can build that directory using the following table:
 
 <div markdown="1" class="usa-table-container--scrollable" tabindex="0">
 

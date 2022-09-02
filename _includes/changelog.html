@@ -8,9 +8,10 @@
 {%- endif -%}
 
 {%- if changelog.url -%}
-  <p>Find a list of all code changes for this component in its <a href="{{ changelog.url }}">CHANGELOG.md</a>.</p>
+  <p>A list of all code changes for this component can be found in its <a href="{{ changelog.url }}">changelog</a>.</p>
 {%- endif -%}
 
 {%- if changelog.items -%}
+  <p>Meaningful code and guidance updates are listed in the following table:</p>
   {% include changelog-table.html %}
 {%- endif -%}

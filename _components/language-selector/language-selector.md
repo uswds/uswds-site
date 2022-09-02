@@ -38,4 +38,6 @@ title: Language selector
 type: component
 ---
 
+For more specific guidance about language selection design patterns, see the <a href="{{ site.baseurl }}/patterns/language-selector/">Select a language</a> pattern family.
+
 {% include child-sections.html parent='Language selector' %}

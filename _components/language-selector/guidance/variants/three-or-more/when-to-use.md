@@ -1,1 +1,1 @@
-- **Multilingual content is available.** Use this component if your site offers a select set of content available in additional languages.
+- **Content is available in three or more languages.** Use this component if your site offers content in three or more languages.

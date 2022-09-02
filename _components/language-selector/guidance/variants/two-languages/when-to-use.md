@@ -1,1 +1,1 @@
-- **Two languages are available.** Help users find information in their own language when translated content is available.
+- **Two languages are available.** Help users find information in their preferred language when translated content is available.

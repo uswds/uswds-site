@@ -22,12 +22,10 @@ subnav:
 ---
 
 ## Introducing USWDS settings
-USWDS is built using a suite of customizable settings that allow you to configure the design system to fit your project's needs. These settings are Sass variables that begin with the `$theme-` prefix and are typically defined with [USWDS design tokens]({{ site.baseurl }}/design-tokens). The full list of USWDS settings and their default values can be found in the [tables below](#general-settings).
+USWDS is built using a suite of customizable settings that allows you to configure the design system to fit your project's needs. These settings are Sass variables that begin with the `$theme-` prefix and are typically defined with [USWDS design tokens]({{ site.baseurl }}/design-tokens). The full list of USWDS settings and their default values can be found in the [tables below](#general-settings).
 
-## Configuring USWDS settings
-All USWDS settings are defined in the `uswds-core` package and can be configured using Sass' [`@use..with()`](https://sass-lang.com/documentation/at-rules/use#configuration) rule. To create a custom configuration of USWDS, add USWDS settings variables with custom values inside the parentheses of this statement.
-
-An example configuration is shown below:
+## Configuring Custom USWDS settings
+All USWDS settings are defined in the `uswds-core` package and can be configured using Sass' [`@use..with()`](https://sass-lang.com/documentation/at-rules/use#configuration) rule. To create a custom configuration of USWDS, add USWDS settings variables with custom values inside the parentheses of this statement, as shown in this example:
 
 ```scss
 @use "uswds-core" with (
@@ -50,7 +48,7 @@ Please note that this configuration accepts only current USWDS settings variable
 ### Where to include your configuration
 Full instructions for setting up Sass files for USWDS can be found in [Phase 2 of the Getting Started for Developers]({{ site.baseurl }}/documentation/getting-started/developers/phase-two-compile/#step-1-set-up-your-projects-sass-entry-point) guide.
 
-The important thing to note is that your settings configuration must be loaded **before including the main USWDS Sass**. Some example setups are provided below:
+The important thing to note is that your settings configuration must be loaded **before including the main USWDS Sass**. We've created some example setups to give you an idea of how this works:
 
 #### Example 1
 If you configure settings in a separate file, your setup would look something like this:

@@ -19,6 +19,8 @@ subnav:
   href: '#accordion-guidance'
 - text: Package
   href: '#accordion-package'
+- text: Latest updates
+  href: '#accordion-changelog'
 title: Accordion
 variants:
   - variant: "`.usa-accordion--bordered`"

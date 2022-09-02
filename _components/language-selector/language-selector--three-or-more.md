@@ -9,7 +9,7 @@ component:
   dependencies:
 guidancePath: guidance/variants/three-or-more
 layout: component
-lead: Give users access content in all languages in a drop down style.
+lead: Give users the ability to select their preferred language when visiting a website available in three or more languages.
 order: 02
 parent: Language selector
 permalink: /components/language-selector/three-or-more/

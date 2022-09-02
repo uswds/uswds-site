@@ -445,7 +445,8 @@ html {
 }
 
 .together-section__header {
-  border-bottom: 5px solid $indigo-cool-80 !important;
+  border-top: 5px solid $indigo-cool-80 !important;
+  padding-top: units(2);
   margin-bottom: 2rem;
 }
 
@@ -573,8 +574,8 @@ html {
   font-size: size("heading", 8);
   font-weight: $theme-font-weight-bold;
   line-height: line-height("heading", 3);
-  margin-top: units(4);
-  margin-bottom: units(4);
+  margin-top: units(6);
+  margin-bottom: units(6);
   margin-left: 0;
   padding-left: 2.5rem;
 

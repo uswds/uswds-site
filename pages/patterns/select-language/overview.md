@@ -55,7 +55,7 @@ Accessing content in the language that the user is most comfortable in allows th
   data-meta="Visit selected content in preferred language pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Find <strong>select content</strong> in their preferred language</a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Find  <strong>selected multilingual content</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users to find content in their preferred language when only selected pieces of content have been translated.</p>

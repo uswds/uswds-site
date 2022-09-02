@@ -1,7 +1,7 @@
 name: In-page navigation
 contents:
   - name: Background color
-    description: Background color of the in-page navigation block. (Only visible if in-page nav is placed on top of different or multi-colored backgrounds).
+    description: Background color of the in-page navigation block. (Only visible if in-page nav is placed on top of different or multi-colored backgrounds.)
     var: $theme-in-page-nav-background-color
     default: '"white"'
     type: color
@@ -11,7 +11,7 @@ contents:
     default: 2
     type: units
   - name: Border radius
-    description: The border radius of the in-page navigation block. (Only visible if in-page nav is placed on top of different or multi-colored backgrounds)
+    description: The border radius of the in-page navigation block. (Only visible if in-page nav is placed on top of different or multi-colored backgrounds.)
     var: $theme-in-page-nav-background-radius
     default: '"lg"'
     type: units

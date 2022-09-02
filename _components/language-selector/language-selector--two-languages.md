@@ -8,7 +8,7 @@ component:
   dependencies:
 guidancePath: guidance/variants/two-languages
 layout: component
-lead: Allow users to toggle between two languages.
+lead: Allow users to select their preferred language when visiting a website in two languages.
 order: 01
 parent: Language selector
 permalink: /components/language-selector/two-languages/

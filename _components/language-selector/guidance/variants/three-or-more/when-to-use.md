@@ -1,2 +1,1 @@
 - **Content is available in three or more languages.** Use this component if your site offers equivalent content in three or more languages.
-- ** For more specific guidance** about this and related language selection design patterns see the <a href="{{ site.baseurl }}/patterns/language-selector/">Select a language</a> pattern family.

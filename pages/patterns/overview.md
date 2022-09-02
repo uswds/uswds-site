@@ -5,7 +5,7 @@ redirect_from:
 - /patterns/overview
 layout: styleguide
 category: Patterns
-lead: USWDS patterns are practical guidelines and best practices for common user interactions. 
+lead: USWDS patterns are practical guidelines and best practices for common user interactions 
 
 ---
 

@@ -41,7 +41,7 @@ Complex forms can be daunting and overwhelming. This is especially true when use
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/complex-form/progress-easily/"><strong>Progress easily</strong> through form questions</a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Guide users through the process of completing a form in a way that is humane and respectful of lived experiences impacting emotional state and cognitive load.</p>
+        <p>Guide users through the process of completing a form in a way that is humane and respectful.</p>
       </div>
     </div>
   </div>

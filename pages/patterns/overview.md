@@ -20,7 +20,7 @@ Interested in what the USWDS team learned speaking with digital teams throughout
   data-meta="Complex form">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site.baseurl }}/patterns/complex-form/">Complex forms</a></h3>
+        <h3 class="usa-card__heading font-lang-lg"><a href="{{ site. }}/patterns/complex-form/">Complex forms</a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users enter form information by easing their cognitive load and providing peace of mind.</p>

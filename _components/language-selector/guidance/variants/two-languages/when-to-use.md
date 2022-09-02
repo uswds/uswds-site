@@ -1,1 +1,2 @@
 - **Two languages are available.** Help users find information in their preferred language when equivalent translated content is available in two languages.
+- ** For more specific guidance** about this and related language selection design patterns see the <a href="{{ site.baseurl }}/patterns/language-selector/">Select a language</a> pattern family.

@@ -1,2 +1,3 @@
 - **Limited space.** The unstyled version of the language button is good solution if you have limited space in your area of placement.
 - **Secondary navigation.** You may also use it in a secondary or maintenance navigation section as long as the navigation remains visible on desktop and mobile.
+- ** For more specific guidance** about this and related language selection design patterns see the <a href="{{ site.baseurl }}/patterns/language-selector/">Select a language</a> pattern family.

@@ -198,7 +198,8 @@ With help from digital leaders across the federal space, we've developed pattern
 
 [^3]: VA.gov design system patterns. (May 26, 2022) Retrieved on August 19, 2022, from <https://design.va.gov/patterns/>
 
-
+## Credits
+Illustrations created using [humaaans](https://www.humaaans.com/), a [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) design library.
 </div>
     </div>
   </div>

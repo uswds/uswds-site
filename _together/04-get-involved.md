@@ -61,10 +61,12 @@ The patterns are a start, but we need your help keeping these patterns current a
     </div>
   </section>
 
+<!-- Citations -->
+
 <section class="next-section next-section--citations">
   <div class="grid-container">
     <div class="grid-row">
-      <div class="desktop:grid-col-8 desktop:margin-x-auto desktop:margin-x-0" markdown="1">
+      <div class="tablet:grid-col-10 tablet:margin-x-auto desktop:margin-x-2" markdown="1">
 
 ## Citations
 

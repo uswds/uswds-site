@@ -101,8 +101,8 @@ Provide all the fields needed for a user to provide a physical address, even les
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Physical address visit text input"
-  data-meta="Physical address visit text input">
+  aria-label="Physical address visit text input component"
+  data-meta="Physical address visit text input component">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg">Text input</h3>
@@ -133,8 +133,8 @@ Provide all the fields needed for a user to provide a physical address, even les
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Physical address visit select component"
-  data-meta="Physical address visit select component">
+  aria-label="Physical address visit checkbox component"
+  data-meta="Physical address visit checkbox component">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg">Checkbox</h3>
@@ -245,8 +245,8 @@ Provide all the fields a user needs to successfully enter a mailing address.
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Physical address visit text input"
-  data-meta="Physical address visit text input">
+  aria-label="Mailing address visit text input component"
+  data-meta="Mailing address visit text input component">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg">Text input</h3>
@@ -261,8 +261,8 @@ Provide all the fields a user needs to successfully enter a mailing address.
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit combo box component"
-  data-meta="Visit combo box component">
+  aria-label="Mailing address visit combo box component"
+  data-meta="Mailing address visit combo box component">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg">Combo box</h3>
@@ -277,8 +277,8 @@ Provide all the fields a user needs to successfully enter a mailing address.
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit checkbox component"
-  data-meta="Visit checkbox component">
+  aria-label="Mailing address visit checkbox component"
+  data-meta="Mailing address visit checkbox component">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg">Checkbox</h3>

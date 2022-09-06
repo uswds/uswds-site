@@ -1,5 +1,4 @@
-includeRelease: false
-includeBreaking: false
+typeComponent: false
 items:
   - date: May 20, 2021
     description:

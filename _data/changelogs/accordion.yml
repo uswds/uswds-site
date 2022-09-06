@@ -1,6 +1,5 @@
 url: https://github.com/placeholder
-includeRelease: true
-includeBreaking: true
+typeComponent: true
 items:
   - breaking: Potential
     date: Aug. 5, 2022

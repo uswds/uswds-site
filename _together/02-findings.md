@@ -168,9 +168,8 @@ Providing multilingual content is a huge investment, and a key way to communicat
 <!-- Citations -->
 
 <section class="next-section next-section--citations">
-  <div class="grid-container">
-    <div class="grid-row">
-      <div class="tablet:grid-col-10 tablet:margin-x-auto desktop:margin-x-2" markdown="1">
+  <div class="grid-row">
+    <div class="tablet:grid-col-10" markdown="1">
 
 ## Citations
 
@@ -195,7 +194,6 @@ Providing multilingual content is a huge investment, and a key way to communicat
 
 
 </div>
-    </div>
   </div>
 </section>
 

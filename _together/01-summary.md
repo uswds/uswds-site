@@ -182,10 +182,10 @@ With help from digital leaders across the federal space, we've developed pattern
 {% endfor %}
 
 <!-- Citations -->
+
 <section class="next-section next-section--citations">
-  <div class="grid-container">
-    <div class="grid-row">
-      <div class="tablet:grid-col-10 tablet:margin-x-auto desktop:margin-x-2" markdown="1">
+  <div class="grid-row">
+    <div class="tablet:grid-col-10" markdown="1">
 
 ## Citations
 
@@ -199,6 +199,5 @@ With help from digital leaders across the federal space, we've developed pattern
 [^3]: VA.gov design system patterns. (May 26, 2022) Retrieved on August 19, 2022, from <https://design.va.gov/patterns/>
 
 </div>
-    </div>
   </div>
 </section>

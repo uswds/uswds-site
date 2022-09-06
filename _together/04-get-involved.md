@@ -64,9 +64,8 @@ The patterns are a start, but we need your help keeping these patterns current a
 <!-- Citations -->
 
 <section class="next-section next-section--citations">
-  <div class="grid-container">
-    <div class="grid-row">
-      <div class="tablet:grid-col-10 tablet:margin-x-auto desktop:margin-x-2" markdown="1">
+  <div class="grid-row">
+    <div class="tablet:grid-col-10" markdown="1">
 
 ## Citations
 
@@ -81,8 +80,7 @@ The patterns are a start, but we need your help keeping these patterns current a
 ## Credits
 Illustrations created using [humaaans](https://www.humaaans.com/), a [CC0 (public domain)](https://creativecommons.org/share-your-work/public-domain/cc0/) design library.
 
-</div>
-    </div>
+</div> 
   </div>
 </section>
 

@@ -13,8 +13,6 @@
       <th scope="col" class="{{ col1Width }}">{{ col1Title }}</th>
       {% if changelog.typeComponent %}
         <th scope="col" class="{{ col2Width }}">{{ col2Title }}</th>
-      {% endif %}
-      {% if changelog.typeComponent %}
         <th scope="col" class="{{ col3Width }}">{{ col3Title }}</th>
       {% endif %}
       <th scope="col" class="{{ col4Width }}">{{ col4Title }}</th>
@@ -36,8 +34,6 @@
             N/A
           {% endif %}
       </td>
-      {% endif %}
-      {% if changelog.typeComponent %}
       <td data-title="{{ col3Title }}" class="{{ col3Width }}">
           {% if item.breaking %}
             {{ item.breaking }}

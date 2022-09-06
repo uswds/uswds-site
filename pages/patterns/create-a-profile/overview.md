@@ -40,8 +40,8 @@ User profiles are central to a person’s identity. A user profile may be integr
   class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit address pattern"
-  data-meta="Visit address pattern">
+  aria-label="Visit biological sex or gender pattern"
+  data-meta="Visit biological sex or gender pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/sex-or-gender/">Select their <strong>biological sex or gender</strong></a></h3>
@@ -55,8 +55,8 @@ User profiles are central to a person’s identity. A user profile may be integr
   class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit address pattern"
-  data-meta="Visit address pattern">
+  aria-label="Visit contact preferences pattern"
+  data-meta="Visit contact preferences pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/contact-preferences/">Indicate their <strong>contact preferences</strong></a></h3>
@@ -70,8 +70,8 @@ User profiles are central to a person’s identity. A user profile may be integr
   class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit address pattern"
-  data-meta="Visit address pattern">
+  aria-label="Visit date of birth pattern"
+  data-meta="Visit date of birth pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/date-of-birth/">Enter their <strong>date of birth</strong></a></h3>
@@ -85,8 +85,8 @@ User profiles are central to a person’s identity. A user profile may be integr
   class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit address pattern"
-  data-meta="Visit address pattern">
+  aria-label="Visit email address pattern"
+  data-meta="Visit email address pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/email-address/">Provide their <strong>email address</strong></a></h3>
@@ -100,8 +100,8 @@ User profiles are central to a person’s identity. A user profile may be integr
   class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Visit name pattern"
+  data-meta="Visit name pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/name/">Provide their <strong>name</strong></a></h3>
@@ -115,8 +115,8 @@ User profiles are central to a person’s identity. A user profile may be integr
   class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Visit phone number pattern"
+  data-meta="Visit phone number pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number/">Enter their <strong>phone number</strong></a></h3>
@@ -130,8 +130,8 @@ User profiles are central to a person’s identity. A user profile may be integr
   class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Visit pronouns pattern"
+  data-meta="Visit pronouns pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/pronouns/">Share their <strong>pronouns</strong></a></h3>
@@ -145,8 +145,8 @@ User profiles are central to a person’s identity. A user profile may be integr
   class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Visit race and ethnicity pattern"
+  data-meta="Visit race and ethnicity pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/race-and-ethnicity/">Provide their <strong>race and ethnicity</strong></a></h3>
@@ -160,8 +160,8 @@ User profiles are central to a person’s identity. A user profile may be integr
   class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
+  aria-label="Visit social security number pattern"
+  data-meta="Visit social security number pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number/">Enter their <strong>Social Security Number</strong></a></h3>

@@ -218,6 +218,13 @@ $site-secondary-nav-input-height: 38px;
   .usa-button {
     display: block;
   }
+
+  .site-search__button,
+  .site-button-github {
+    &:hover {
+      background-color: color("primary-vivid");
+    }
+  }
 }
 
 .site-search {
@@ -245,10 +252,6 @@ $site-secondary-nav-input-height: 38px;
   }
 
   .usa-button {
-    &:hover {
-      background-color: color("blue-warm-60v");
-    }
-
     @include at-media("desktop") {
       background-color: color("blue-warm-50v");
       height: $site-secondary-nav-input-height;

@@ -1,4 +1,5 @@
-- **Customize form controls accessibly.** If you customize this component, ensure that it continues to meet the [accessibility requirements that apply to all form controls]({{ site.baseurl }}/components/form).
-- **Include a label** Make sure each form control includes a label and a corresponding `id` or `for` attribute related to the input element. 
+- **Customize form controls accessibility.** If you customize this component, ensure that it continues to meet the [accessibility requirements that apply to all form controls]({{ site.baseurl }}/components/form).
+- **Include a label.** Make sure each form control includes a label and a corresponding `id` or `for` attribute related to the input element. 
+- **Use helpful hint text.** Make sure your hint text supports the format expected from the user if using an input mask.
 - **Include the title attribute.** If you extend the functionality of this pattern, make sure to type in descriptive text in the "title" attribute for the `<input>` tag. 
-- **Test with a screen reader.** Make sure the id/for relates to the input, and the title attribute makes sense in context to the form when testing with a screen reader.
+- **Test with a screen reader.** Make sure the id/for relates to the input, and the title attribute makes sense in the context of the form when testing with a screen reader.

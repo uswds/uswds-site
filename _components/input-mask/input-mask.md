@@ -7,7 +7,7 @@ component:
 permalink: /components/input-mask/
 redirect_from:
 - /form-controls/11-text-input/
-title: Input Mask
+title: Input mask
 type: component
 lead: An input mask is a string of characters that indicates the format of valid input values.
 subnav:

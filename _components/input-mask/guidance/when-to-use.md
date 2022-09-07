@@ -1,2 +1,1 @@
-- **Common input patterns.** When there is a common input pattern, such as a Social Security Number or Zip Code, that you would like to assist the user with their input
-- **To help the user enter valid data.** The input mask is a good example of the data expected in an input element.
+- **Common input patterns.** In fields with a specific expected format like Social Security Number or ZIP code, an input mask allows you to constrain and shape the information being entered into that format, without impairing the user’s ability to copy/paste or correct mistyping.

@@ -5,7 +5,7 @@ title: Settings
 category: How to use USWDS
 lead: USWDS settings variables tell the design system how to build.
 subnav:
-- text: Configuring Custom USWDS settings
+- text: Configuring custom USWDS settings
   href: '#configuring-custom-uswds-settings'
 - text: General settings
   href: '#general-settings'

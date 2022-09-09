@@ -24,31 +24,31 @@ subnav:
 ## Introducing USWDS settings
 USWDS is built using a suite of customizable settings that allows you to configure the design system to fit your project's needs. These settings are Sass variables that begin with the `$theme-` prefix and are typically defined with [USWDS design tokens]({{ site.baseurl }}/design-tokens). The full list of USWDS settings and their default values can be found in the [tables below](#general-settings).
 
-## Configuring Custom USWDS settings
-All USWDS settings are defined in the `uswds-core` package and can be configured using Sass' [`@use..with()`](https://sass-lang.com/documentation/at-rules/use#configuration) rule. To create a custom configuration of USWDS, add USWDS settings variables with custom values inside the parentheses of this statement, as shown in this example:
+## Configuring custom USWDS settings
+All USWDS settings are defined in the `uswds-core` package and can be configured using Sass' [`@use..with()`](https://sass-lang.com/documentation/at-rules/use#configuration) rule. To create a custom configuration of USWDS, add the USWDS settings variables that you wish to modify inside the parentheses of this statement, as shown in this example:
 
 ```scss
-@use "uswds-core" with (
-  $theme-show-compile-warnings: false,
-  $theme-show-notifications: false,
-  $theme-image-path: "../uswds/img",
-  $theme-show-compile-warnings: true,
-  $theme-banner-background-color: "ink",
-  $theme-banner-link-color: "primary-light",
-  $theme-input-tile-border-color: "base",
-);
+  @use "uswds-core" with (
+    $theme-image-path: "../uswds/img",
+    $theme-show-compile-warnings: true,
+    $theme-show-notifications: false,
+    $theme-banner-background-color: "ink",
+    $theme-banner-link-color: "primary-light",
+    $theme-banner-max-width: "widescreen",
+    $theme-checkbox-border-radius: "md",
+  )
 ```
-Note that the settings variables in this module inform both general and component customizations.
+Note that the settings variables in this module inform both general theme and component customizations.
 
 ### What to include in your configuration
-Include only USWDS settings that you wish to modify in this configuration. These items should be comma-separated and given values of the appropriate type.
+Include only USWDS settings that you wish to modify in this configuration. These items should be comma-separated and given values of the appropriate type, as identified in the tables below.
 
 Please note that this configuration accepts only current USWDS settings variables &mdash; adding anything else here will result in an error.
 
 ### Where to include your configuration
 Full instructions for setting up Sass files for USWDS can be found in [Phase 2 of the Getting Started for Developers]({{ site.baseurl }}/documentation/getting-started/developers/phase-two-compile/#step-1-set-up-your-projects-sass-entry-point) guide.
 
-The important thing to note is that your settings configuration must be loaded **before including the main USWDS Sass**. We've created some example setups to give you an idea of how this works:
+The important thing to note is that your settings configuration must be loaded **_before_ including the main USWDS Sass**. We've created some example setups to give you an idea of how this works:
 
 #### Example 1
 If you configure settings in a separate file, your setup would look something like this:

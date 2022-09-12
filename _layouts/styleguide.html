@@ -2,6 +2,7 @@
 layout: default
 ---
 <div class="default-container">
+  <div id="alert-container" role="alert"></div>
   <aside class="sidenav" id="page-side-navigation">
     {% assign sidenav = site.data.nav[page.category] %}
     {% if sidenav %}
@@ -26,6 +27,24 @@ layout: default
       {% include lead.html text=page.lead %}
 
       {{ content }}
+
+      <button class="usa-button usa-button--secondary" onclick="triggerAlert()">Click for error</button>
     </div>
   </main>
 </div>
+
+<script>
+  function triggerAlert() {
+    const alertContainer = document.getElementById("alert-container");
+    alertContainer.classList.add("usa-alert", "usa-alert--error");
+    alertContainer.innerHTML = `
+      <div class="usa-alert__body">
+        <h4 class="usa-alert__heading">Error status</h4>
+        <p class="usa-alert__text">
+          Lorem ipsum dolor sit amet,
+          <a class="usa-link" href="javascript:void(0);">consectetur adipiscing</a>
+          elit, sed do eiusmod.
+        </p>
+      </div>
+    `;}
+</script>

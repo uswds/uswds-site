@@ -5,7 +5,7 @@ permalink: /patterns/language-selector/selected-content/
 layout: pattern
 category: Patterns
 sub-category: Select a language
-lead: This pattern helps users, especially those with limited English proficiency, find content in their preferred language when only selected pieces of content have been translated. For example, the site may be available in several languages, but specific information — fact sheets, overviews, videos, instructions — might be available in several other languages. 
+lead: This pattern helps users, especially those with limited English proficiency, find content in their preferred language when only selected pieces of content have been translated. For example, the site may be available in several languages, but specific information — fact sheets, overviews, videos, instructions — might be available in additional languages. 
 ---
 
 <div></div>

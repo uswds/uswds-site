@@ -76,11 +76,7 @@ Use this pattern when your site supports three or more languages, but offers a l
  - <strong>Content-driven approach.</strong> Content is arranged topically, with links to specific content in the larger set of supported languages. This is generally recommended for sites that have rich topical content in a variety of supported languages.
  - <strong>Language-driven approach.</strong> Content is arranged by language, showcasing the specific content available in a specific supported language. This is generally recommended for sites that have a disparate set of content available in additional languages.
 
- Regardless of how the information is structured, consider providing <strong>in-page contextual links</strong> to help drive site visitors to this available content in additional languages.
-
-<strong>You have a broad and deep website, with only a few pages of multilingual content.</strong> Consider providing in-page contextual links instead of using this pattern. If your website includes a wide range of topics but only a few are linked from the language menu, it may deter people from finding the broader information.
-
-<strong>You have a very focused website and key pieces of multilingual content.</strong> Consider providing a menu of the content in the header.
+ Regardless of how the information is structured, consider providing <strong>prominent in-page notices and links</strong> to help surface this content and drive site visitors to available content in additional languages. 
 
 ### Usability guidance
 
@@ -91,8 +87,6 @@ Provide a <strong>visual indicator that the text is a link</strong>. For example
 If the text will be visually presented as a button but coded as a link, it is recommended to <strong>add ARIA role="button" so that screen readers announce it as a button</strong>. Additionally, JavaScript will also need to be added so that keyboard users can activate the button using both the Enter and Spacebar keys. See [Understanding Success Criterion 4.1.2 - Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) for more information.
 
 <strong>Use the HTML `lang` attributes</strong> to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
-
-Consider including a <strong>prominent in-page notice or link</strong> in addition to the link in the header, in order to increase visibility for the user.
 
 All logically related items/links must be presented as an <strong>HTML unordered list</strong>.
 

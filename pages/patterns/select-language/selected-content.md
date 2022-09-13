@@ -16,7 +16,7 @@ lead: This pattern helps users, especially those with limited English proficienc
 Inconsistent placement of language selection components prevent users, especially people with limited English-language skills, from easily finding and accessing content in other languages. When only select content is available in languages other than English, this problem can be compounded as users are forced to navigate to a specific section of the site to discover the content.
 
 ## When to use this pattern 
-Use this pattern if your site offers a select set of content available in additional languages. Note: this may apply to a single language site, two language site, or three or more language site if only a small subset of content is available in additional languages.
+Use this pattern if your site offers a select set of content available in additional languages. Note: while this may apply to a single language or two language site, this pattern specifically describes a site with three or more languages as well as a small subset of content that is available in additional languages.
 
 ## When to consider something else
 If your site is available in two or more languages and all content is available in each language, see related patterns <a href="{{ site.baseurl }}/patterns/language-selector/two-languages/">Select from two languages</a> or <a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages/">Select from three or more languages</a>.
@@ -46,6 +46,7 @@ Place the language selector button at the top right of the screen above site nav
             Français<br/>
             Pусский</li>
             <li>Consider including the English label for the language after the common, native language name if this approach has been validated by user testing.</li>
+            <li>Use a label like "Featured content in additional languages" or "Selected content in additional languages" as the last entry of the menu to link to the landing page for your additional language content.</li>
           </ul> 
         </div>
       </div>
@@ -69,14 +70,14 @@ Place the language selector button at the top right of the screen above site nav
 
 ## Considerations
 
-### When to use
+### Content organization
 
 Use this pattern when your site supports three or more languages, but offers a limited amount of content in additional languages. Multilingual sites with select content in additional languages generally take one of two structural approaches:
 
- - <strong>Content-driven approach.</strong> Content is arranged topically, with links to specific content in the larger set of supported languages. This is generally recommended for sites that have rich topical content in a variety of supported languages.
- - <strong>Language-driven approach.</strong> Content is arranged by language, showcasing the specific content available in a supported language. This is generally recommended for sites that have a disparate set of content available in additional languages.
+ - <strong>Topic-driven approach.</strong> A landing page is arranged topically, with links to specific content in the larger set of supported languages. This is generally recommended for sites that have rich topical content in a variety of supported languages.
+ - <strong>Language-driven approach.</strong> a landing page is arranged by language, showcasing the specific additional languages and the content available in that language. This is generally recommended for sites that have a disparate set of content available in additional languages.
 
- Regardless of how the information is structured, consider providing <strong>prominent in-page notices and links</strong> to help surface additional language content. 
+ Regardless of how the information is structured, consider providing <strong>prominent in-page notices and links</strong> where appropriate within your site to help surface additional language content. 
 
 ### Usability guidance
 

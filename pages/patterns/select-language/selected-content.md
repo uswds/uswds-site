@@ -74,7 +74,7 @@ Place the language selector button at the top right of the screen above site nav
 Use this pattern when your site supports three or more languages, but offers a limited amount of content in additional languages. Multilingual sites with select content in additional languages generally take one of two structural approaches:
 
  - <strong>Content-driven approach.</strong> Content is arranged topically, with links to specific content in the larger set of supported languages. This is generally recommended for sites that have rich topical content in a variety of supported languages.
- - <strong>Language-driven approach.</strong> Content is arranged by language, showcasing the specific content available in a specific supported language. This is generally recommended for sites that have a disparate set of content available in additional languages.
+ - <strong>Language-driven approach.</strong> Content is arranged by language, showcasing the specific content available in a supported language. This is generally recommended for sites that have a disparate set of content available in additional languages.
 
  Regardless of how the information is structured, consider providing <strong>prominent in-page notices and links</strong> to help surface this content and drive site visitors to available content in additional languages. 
 

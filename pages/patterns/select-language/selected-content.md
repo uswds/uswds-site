@@ -5,7 +5,7 @@ permalink: /patterns/language-selector/selected-content/
 layout: pattern
 category: Patterns
 sub-category: Select a language
-lead: This pattern helps users, especially those with limited English proficiency, find content in their preferred language when only selected pieces of content have been translated. For example, the site may be available only in English, or in English and Spanish, but specific information — FAQs, fact sheets, overviews — might be available in several other languages. 
+lead: This pattern helps users, especially those with limited English proficiency, find content in their preferred language when only selected pieces of content have been translated. For example, the site may be available in several languages, but specific information — fact sheets, overviews, videos, instructions — might be available in several other languages. 
 ---
 
 <div></div>
@@ -16,7 +16,7 @@ lead: This pattern helps users, especially those with limited English proficienc
 Inconsistent placement of language selection components prevent users, especially people with limited English-language skills, from easily finding and accessing content in other languages. When only select content is available in languages other than English, this problem can be compounded as users are forced to navigate to a specific section of the site to discover the content.
 
 ## When to use this pattern 
-Use this pattern if your site offers a select set of content available in additional languages. Note: while this may apply to a single language or two language site, this pattern specifically describes a site with three or more languages as well as a small subset of content that is available in additional languages.
+Use this pattern if your site offers a select set of content available in additional languages. Note: while this situation could apply to a single language or two language site, this pattern specifically describes a site with three or more languages as well as a small subset of content that is available in additional languages. 
 
 ## When to consider something else
 If your site is available in two or more languages and all content is available in each language, see related patterns <a href="{{ site.baseurl }}/patterns/language-selector/two-languages/">Select from two languages</a> or <a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages/">Select from three or more languages</a>.
@@ -77,7 +77,7 @@ Use this pattern when your site supports three or more languages, but offers a l
  - <strong>Topic-driven approach.</strong> A landing page is arranged topically, with links to specific content in the larger set of supported languages. This is generally recommended for sites that have rich topical content in a variety of supported languages.
  - <strong>Language-driven approach.</strong> a landing page is arranged by language, showcasing the specific additional languages and the content available in that language. This is generally recommended for sites that have a disparate set of content available in additional languages.
 
- Regardless of how the information is structured, consider providing <strong>prominent in-page notices and links</strong> where appropriate within your site to help surface additional language content. 
+ Regardless of how the information is structured, consider providing <strong>prominent in-page notices and links</strong> where appropriate within your site to help surface this additional language content. 
 
 ### Usability guidance
 

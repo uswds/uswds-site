@@ -71,20 +71,19 @@ Place the language selector button at the top right of the screen above site nav
 
 ### When to use
 
-Whether you decide to use this pattern may depend on how focused your site's content is.
+Use this pattern when your site supports three or more languages, but offers a limited amount of content in additional languages. Multilingual sites with select content in additional languages generally take one of two structural approaches:
+
+ - <strong>Content-driven approach.</strong> Content is arranged topically, with links to specific content in the larger set of supported languages. This is generally recommended for sites that have rich topical content in a variety of supported languages.
+ - <strong>Language-driven approach.</strong> Content is arranged by language, showcasing the specific content available in a specific supported language. This is generally recommended for sites that have a disparate set of content available in additional languages.
+
+ Regardless of how the information is structured, consider providing <strong>in-page contextual links</strong> to help drive site visitors to this available content in additional languages.
 
 <strong>You have a broad and deep website, with only a few pages of multilingual content.</strong> Consider providing in-page contextual links instead of using this pattern. If your website includes a wide range of topics but only a few are linked from the language menu, it may deter people from finding the broader information.
 
 <strong>You have a very focused website and key pieces of multilingual content.</strong> Consider providing a menu of the content in the header.
 
-- If users need to <strong>navigate to a single page</strong> from which multiple links to content in multiple languages are provided, use the label to link to that page.
-- If <strong>very specific content is available in select languages</strong>, provide a label in the dropdown that communicates what is available. For example, “Fact sheets are available in selected languages.”
-- If the <strong>content available is more varied or hard to describe</strong>, use more general language. For example, “Featured content available in additional languages”
-- If <strong>each language has its own page with content</strong> in that language provided or linked, provide a list of the languages under the label and link to the appropriate pages there.
-- If you support a <strong>media library with content in American Sign Language (ASL)</strong>, provide an indication in the copy. For example, "Featured content available in additional languages including ASL."
-
-
 ### Usability guidance
+
 <strong>Ensure there’s enough color contrast</strong> between the button, the text inside the button, and the site background to ensure readability.
 
 Provide a <strong>visual indicator that the text is a link</strong>. For example, permanently underline text or when hovering.

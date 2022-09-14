@@ -2,8 +2,19 @@
 layout: default
 ---
 <div class="default-container">
-  <div id="error-container"></div>
+  <section id="site-alert-container" role="alert" aria-labelledby="usa-alert__heading">
+    <div class="usa-alert">
+      <div class="usa-alert__body">
+        <h3 class="usa-alert__heading">Site alert</h3>
+        <p class="usa-alert__text">
+          Additional context and followup information.
+        </p>
+      </div>
+    </div>
+  </section>
   <div id="success-container"></div>
+  <div id="polite-container"></div>
+  <div id="error-container"></div>
 
   <aside class="sidenav" id="page-side-navigation">
     {% assign sidenav = site.data.nav[page.category] %}
@@ -30,20 +41,44 @@ layout: default
 
       {{ content }}
 
-      <button class="usa-button usa-button--secondary" onclick="triggerError()">Click for error</button>
-      <button class="usa-button" onclick="triggerSuccess()">Click for success</button>
+      <button class="usa-button" onclick="triggerSuccess()">Click for no role</button>
+      <button class="usa-button usa-button--accent-cool" onclick="triggerPolite()">Click for status role</button>
+      <button class="usa-button usa-button--secondary" onclick="triggerError()">Click for alert role</button>
 
     </div>
   </main>
 </div>
 
 <script>
+  function loadSiteAlert() {
+    const siteAlertContainer = document.getElementById("site-alert-container");
+    siteAlertContainer.setAttribute("role", "alert");
+    siteAlertContainer.classList.add("usa-site-alert", "usa-site-alert--emergency");
+    siteAlertContainer.innerHTML = `
+
+    `;
+  };
   function triggerSuccess() {
     const alertContainer = document.getElementById("success-container");
     alertContainer.classList.add("usa-alert", "usa-alert--success");
     alertContainer.innerHTML = `
       <div class="usa-alert__body">
         <h4 class="usa-alert__heading">Success status</h4>
+        <p class="usa-alert__text">
+          Lorem ipsum dolor sit amet,
+          consectetur adipiscing
+          elit, sed do eiusmod.
+        </p>
+      </div>
+    `;
+  }
+  function triggerPolite() {
+    const alertContainer = document.getElementById("polite-container");
+    alertContainer.classList.add("usa-alert", "usa-alert--warning");
+    alertContainer.setAttribute("role", "status");
+    alertContainer.innerHTML = `
+      <div class="usa-alert__body">
+        <h4 class="usa-alert__heading">Warning status</h4>
         <p class="usa-alert__text">
           Lorem ipsum dolor sit amet,
           consectetur adipiscing

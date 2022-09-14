@@ -119,7 +119,7 @@ Consider including a <strong>prominent in-page notice or link</strong> in additi
 ## Related
 
 - <a href="{{ site.baseurl }}/components/header/">Header</a> component
-- <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Find selected content in preferred language</a> pattern
+- <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Find selected multilingual content</a> pattern
 - <a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages/">Select from three or more languages</a> pattern
 
 

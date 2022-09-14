@@ -132,7 +132,7 @@ Translation and navigation functions in languages other than English should stil
 ## Related
 
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/contact-preferences/">Contact preferences</a> pattern
-- <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Find selected content in preferred language</a> pattern
+- <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Find selected multilingual content</a> pattern
 - <a href="{{ site.baseurl }}/patterns/language-selector/more-than-three-languages/">Select from three or more languages</a> pattern
 - <a href="{{ site.baseurl }}/patterns/language-selector/two-languages/">Select from two languages</a> pattern
 

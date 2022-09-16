@@ -46,15 +46,33 @@ Include only USWDS settings that you wish to modify in this configuration. These
 Please note that this configuration accepts only current USWDS settings variables &mdash; adding anything else here will result in an error.
 
 ### Where to include your configuration
-Full instructions for setting up Sass files for USWDS can be found in [Phase 2 of the Getting Started for Developers]({{ site.baseurl }}/documentation/getting-started/developers/phase-two-compile/#step-1-set-up-your-projects-sass-entry-point) guide.
+You can choose to either include the settings configuration directly in your [Sass entry point]({{ site.baseurl }}/documentation/getting-started/developers/phase-two-compile/#step-1-set-up-your-projects-sass-entry-point) or set it up in its own file.
 
-The important thing to note is that your settings configuration must be loaded **_before_ including the main USWDS Sass**. We've created some example setups to give you an idea of how this works:
+Whatever path you choose, it is important to note that **your settings configuration must be included _above_ `@forward 'uswds'`**  in your Sass entry point.
 
-#### Example 1
-If you configure settings in a separate file, your setup would look something like this:
+We’ve created some example setups to give you an idea of how this works:
+
+#### Configure USWDS settings in your Sass entry point
+If you prefer to configure your settings directly inside your Sass entry point, it would look something like this:
+
+```scss
+/* styles.scss */
+
+@use "uswds-core" with (
+  $theme-show-compile-warnings: false,
+  $theme-show-notifications: false,
+);
+
+@forward 'uswds';
+@forward 'uswds-theme-custom-styles';
+```
+
+#### Configure USWDS settings in a separate file
+If you want to configure USWDS settings in a file separate from your Sass entry point, your setup would look something like this:
 
 ```scss
 /* _uswds-theme.scss */
+
 @use "uswds-core" with (
   $theme-show-compile-warnings: false,
   $theme-show-notifications: false,
@@ -63,25 +81,13 @@ If you configure settings in a separate file, your setup would look something li
 
 ```scss
 /* styles.scss */
+
 @forward 'uswds-theme';
 @forward 'uswds';
 @forward 'uswds-theme-custom-styles';
 ```
 
-#### Example 2
 
-If you prefer to configure your settings directly inside your Sass entry point, it would look something like this:
-
-```scss
-/* styles.scss */
-@use "uswds-core" with (
-  $theme-show-compile-warnings: false,
-  $theme-show-notifications: false,
-);
-
-@forward 'uswds';
-@forward 'uswds-theme-custom-styles';
-```
 
 {: .site-note }
 **Note:** the `@use "uswds-core" with ()` configuration accepts only current USWDS settings variables. If you receive the error `This module was already loaded, so it can't be configured using "with"`, confirm that all your declared variables exist in the list below and try compiling again.

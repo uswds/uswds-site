@@ -25,7 +25,11 @@ subnav:
 USWDS is built using a suite of customizable settings that allows you to configure the Design System to fit your project's needs. These settings are Sass variables that begin with the `$theme-` prefix and are typically defined with [USWDS design tokens]({{ site.baseurl }}/design-tokens). You can find the full list of USWDS settings and their default values in the [USWDS settings tables](#general-settings).
 
 ## Configuring custom USWDS settings
-All USWDS settings are defined in the `uswds-core` package and can be configured using Sass' [`@use..with()`](https://sass-lang.com/documentation/at-rules/use#configuration) rule. To create a custom configuration of USWDS, add the USWDS settings variables that you wish to modify inside the parentheses of this statement, as shown in this example:
+With the introduction of [Sass modules](https://sass-lang.com/blog/the-module-system-is-launched) in USWDS 3, you can now create a custom configuration of USWDS by loading a single [`@use...with()`](https://sass-lang.com/documentation/at-rules/use#configuration) rule into your [Sass entry point]({{ site.baseurl }}/documentation/getting-started/developers/phase-two-compile/#step-1-set-up-your-projects-sass-entry-point).
+
+All USWDS settings are defined in the `uswds-core` module, which means the USWDS settings configuration rule is `@use "uswds-core" with ()`.
+
+To create your custom configuration, add the USWDS settings variables that you wish to modify inside the parentheses of this statement, as shown in this example:
 
 ```scss
   @use "uswds-core" with (
@@ -46,29 +50,14 @@ Include only USWDS settings that you wish to modify in this configuration. These
 Please note that this configuration accepts only current USWDS settings variables &mdash; adding anything else here will result in an error.
 
 ### Where to include your configuration
-You can choose to either include the settings configuration directly in your [Sass entry point]({{ site.baseurl }}/documentation/getting-started/developers/phase-two-compile/#step-1-set-up-your-projects-sass-entry-point) or set it up in its own file.
+Add your settings configuration to your Sass entry point. You can choose to set up the settings configuration either directly in your entry point or in its own file.
 
-Whatever path you choose, it is important to note that **your settings configuration must be included _above_ `@forward 'uswds'`**  in your Sass entry point.
+Whatever path you choose, it is important to note that **your settings configuration must be included _above_ `@forward 'uswds'`**  in your Sass entry point. (To learn more about why this matters, read our guide for [setting up your Sass entry point]({{ site.baseurl }}/documentation/getting-started/developers/phase-two-compile/#step-1-set-up-your-projects-sass-entry-point).)
 
 We’ve created some example setups to give you an idea of how this works:
 
-#### Configure USWDS settings in your Sass entry point
-If you prefer to configure your settings directly inside your Sass entry point, it would look something like this:
-
-```scss
-/* styles.scss */
-
-@use "uswds-core" with (
-  $theme-show-compile-warnings: false,
-  $theme-show-notifications: false,
-);
-
-@forward 'uswds';
-@forward 'uswds-theme-custom-styles';
-```
 
 #### Configure USWDS settings in a separate file
-If you want to configure USWDS settings in a file separate from your Sass entry point, your setup would look something like this:
 
 ```scss
 /* _uswds-theme.scss */
@@ -86,8 +75,20 @@ If you want to configure USWDS settings in a file separate from your Sass entry 
 @forward 'uswds';
 @forward 'uswds-theme-custom-styles';
 ```
+#### Configure USWDS settings in your Sass entry point
 
 
+```scss
+/* styles.scss */
+
+@use "uswds-core" with (
+  $theme-show-compile-warnings: false,
+  $theme-show-notifications: false,
+);
+
+@forward 'uswds';
+@forward 'uswds-theme-custom-styles';
+```
 
 {: .site-note }
 **Note:** the `@use "uswds-core" with ()` configuration accepts only current USWDS settings variables. If you receive the error `This module was already loaded, so it can't be configured using "with"`, confirm that all your declared variables exist in the list below and try compiling again.

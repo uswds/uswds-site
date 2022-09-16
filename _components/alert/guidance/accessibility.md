@@ -1,5 +1,5 @@
 - **Don’t visually hide alert messages and then make them visible when they are needed.** Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.
-- **Use the proper ARIA role.** The ARIA `role` attribute can notify assistive technologies of time-sensitive and important messages. To elevate importance, add the appropriate `role` to the `.usa-alert` element from the following table:
+- **Use the proper ARIA role.** The ARIA `role` attribute can notify assistive technologies of time-sensitive and important messages. To elevate importance, add the appropriate `role` to the `.usa-alert` element, chosen from the following table:
 
 {% assign col1Title = 'Attribute' %}
 {% assign col2Title = 'Use case' %}
@@ -17,8 +17,7 @@
           <code>role="alert"</code>
         </td>
         <td data-title="{{ col2Title }}">
-          Important messages that demand the user's immediate attention.<br/>
-          Example: Error alert
+          Important messages that demand the user's immediate attention. (Example: error alert)
         </td>
       </tr>
       <tr>
@@ -26,8 +25,7 @@
           <code>role="alertdialog"</code>
         </td>
         <td data-title="{{ col2Title }}">
-          Important messages that demand the user's immediate attention <em>and</em> require user interaction.<br/>
-          Example: Error alert that need user confirmation
+          Important messages that demand the user's immediate attention <em>and</em> require user interaction. (Example: error alert that needs user confirmation)
         </td>
       </tr>
       <tr>
@@ -35,9 +33,11 @@
           <code>role="status"</code>
         </td>
         <td data-title="{{ col2Title }}">
-          Messages that provide advisory information, but do not have the same urgency as alerts.<br/>
-          Example: Success alert
+          Messages that provide advisory information, but do not have the same urgency as alerts. (Example: success alert)
         </td>
       </tr>
     </tbody>
 </table>
+
+{: .font-lang-3xs }
+Reference: [WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/#alert)

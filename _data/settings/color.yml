@@ -94,7 +94,7 @@ contents:
   - name: primary-vivid
     subsection: theme color token
     description: Use vivid grades 30-60.
-    var: $theme-color-primary
+    var: $theme-color-primary-vivid
     default: '"blue-warm-60v"'
     type: color
   - name: primary-dark
@@ -149,7 +149,7 @@ contents:
   - name: secondary-vivid
     subsection: theme color token
     description: Use vivid grades 30-60.
-    var: $theme-color-secondary
+    var: $theme-color-secondary-vivid
     default: '"red-cool-50v"'
     type: color
   - name: secondary-dark

@@ -15,6 +15,7 @@ layout: default
   <div id="success-container"></div>
   <div id="polite-container"></div>
   <div id="error-container"></div>
+  <div id="alertdialog-container"></div>
 
   <aside class="sidenav" id="page-side-navigation">
     {% assign sidenav = site.data.nav[page.category] %}
@@ -44,7 +45,7 @@ layout: default
       <button class="usa-button" onclick="triggerSuccess()">Click for no role</button>
       <button class="usa-button usa-button--accent-cool" onclick="triggerPolite()">Click for status role</button>
       <button class="usa-button usa-button--secondary" onclick="triggerError()">Click for alert role</button>
-
+      <button class="usa-button usa-button--secondary" onclick="triggerError()">Click for alertdialog role</button>
     </div>
   </main>
 </div>
@@ -98,6 +99,21 @@ layout: default
           Lorem ipsum dolor sit amet,
           consectetur adipiscing
           elit, sed do eiusmod.
+        </p>
+      </div>
+    `;
+  }
+  function triggerError() {
+    const alertContainer = document.getElementById("error-container");
+    alertContainer.classList.add("usa-alert", "usa-alert--error");
+    alertContainer.setAttribute("role", "alertdialog");
+    alertContainer.innerHTML = `
+      <div class="usa-alert__body">
+        <h4 class="usa-alert__heading">Error status</h4>
+        <p class="usa-alert__text">
+          Lorem ipsum dolor sit amet,
+          consectetur adipiscing
+          elit, sed do eiusmod. <a href="#">Sample link</a>
         </p>
       </div>
     `;

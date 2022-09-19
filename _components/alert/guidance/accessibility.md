@@ -17,7 +17,8 @@
           <code>role="alert"</code>
         </td>
         <td data-title="{{ col2Title }}">
-          Important messages that demand the user's immediate attention. <br/>Example: Error alert
+          Important messages that demand the user's immediate attention.
+          <br/>Example: Error alert
         </td>
       </tr>
       <tr>
@@ -25,7 +26,8 @@
           <code>role="status"</code>
         </td>
         <td data-title="{{ col2Title }}">
-          Messages that provide advisory information, but do not have the same urgency as alerts. <br/>Example: Success alert
+          Messages that provide advisory information but do not have the same urgency as alerts.
+          <br/>Example: Success alert
         </td>
       </tr>
       <tr>
@@ -33,7 +35,8 @@
           <code>role="region"</code>
         </td>
         <td data-title="{{ col2Title }}">
-          Messages that are important enough to include in the landmarks of the page, but do not warrant interrupting the user's workflow. <br/>Example: Informative or warning alert
+          Messages that are important enough to include in the landmarks of the page, but do not warrant interrupting the user's workflow.
+          <br/>Example: Informative or warning alert
         </td>
       </tr>
     </tbody>

@@ -2,7 +2,7 @@
 - **Use the proper ARIA role.** The ARIA `role` attribute can notify assistive technologies of time-sensitive and important messages. To elevate importance, add the appropriate `role` to the `.usa-alert` element, chosen from the following table:
 
 {% assign col1Title = 'Attribute' %}
-{% assign col2Title = 'Use case' %}
+{% assign col2Title = 'Use Case' %}
 
 <table class="usa-table--borderless site-table-responsive site-table-simple margin-top-2">
   <thead>
@@ -17,15 +17,7 @@
           <code>role="alert"</code>
         </td>
         <td data-title="{{ col2Title }}">
-          Important messages that demand the user's immediate attention. (Example: error alert)
-        </td>
-      </tr>
-      <tr>
-        <td data-title="{{ col1Title }}">
-          <code>role="alertdialog"</code>
-        </td>
-        <td data-title="{{ col2Title }}">
-          Important messages that demand the user's immediate attention <em>and</em> require user interaction. (Example: error alert that needs user confirmation)
+          Important messages that demand the user's immediate attention. <br/>Example: Error alert
         </td>
       </tr>
       <tr>
@@ -33,7 +25,15 @@
           <code>role="status"</code>
         </td>
         <td data-title="{{ col2Title }}">
-          Messages that provide advisory information, but do not have the same urgency as alerts. (Example: success alert)
+          Messages that provide advisory information, but do not have the same urgency as alerts. <br/>Example: Success alert
+        </td>
+      </tr>
+      <tr>
+        <td data-title="{{ col1Title }}">
+          <code>role="region"</code>
+        </td>
+        <td data-title="{{ col2Title }}">
+          Messages that are important enough to include in the landmarks of the page, but do not warrant interrupting the user's workflow. <br/>Example: Informative or warning alert
         </td>
       </tr>
     </tbody>

@@ -35,8 +35,9 @@
           <code>role="region"</code>
         </td>
         <td data-title="{{ col2Title }}">
-          Messages that are important enough to include in the landmarks of the page, but do not warrant interrupting the user's workflow.
-          <br/>Example: Informative or warning alert
+          Messages that provide information the user would want to be able to easily find, but are not important enough to interrupt user workflow.
+          <br/>Example: Informative or warning alert<br/>
+          Note: you must also add an appropriate `aria-label` or `aria-labelledby` attribute when using this role.
         </td>
       </tr>
     </tbody>

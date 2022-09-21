@@ -79,7 +79,7 @@ In plain language, this code says:
 
     Once you have set up your project's custom settings, it is time to pull in the the USWDS source code from the `uswds` package.
 
-    The `uswds` package is the core of the Design System. It contains all the styles for USWDS components as well as the design language of Sass tokens and functions used to build those components.
+    The `uswds` package collects all the Sass in the Design System. It contains all the styles for USWDS components as well as the design language of Sass tokens and functions used to build those components.
 
     To load the `uswds` package, you must provide a path to its `index.scss` entry point. If you installed USWDS 3 with npm, the complete path to this file is: `./node_modules/@uswds/uswds/packages/uswds/_index.scss`.
 

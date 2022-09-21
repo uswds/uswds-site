@@ -31,6 +31,10 @@
   {{- guidanceFormat }}
   {%- include_relative {{guidancePath}}/accessibility.md -%}
 {%- endcapture -%}
+{%- capture related -%}
+  {{- guidanceFormat }}
+  {%- include_relative {{guidancePath}}/related.md -%}
+{%- endcapture -%}
 {%- capture implementation -%}
   {{- guidanceFormat }}
   {%- include_relative {{guidancePath}}/implementation.md -%}
@@ -81,10 +85,16 @@
     {{ usability | markdownify }}
   {% endif %}
   {% if accessibility.size > guidanceNullLength %}
-    <h3  id="accessibility-{{ componentKey }}" class="usa-heading">
+    <h3 id="accessibility-{{ componentKey }}" class="usa-heading">
       Accessibility
     </h3>
     {{ accessibility | markdownify }}
+  {% endif %}
+  {% if related.size > guidanceNullLength %}
+    <h3 id="related-{{ componentKey }}" class="usa-heading">
+      Related
+    </h3>
+    {{ related | markdownify }}
   {% endif %}
   {% if implementation.size > guidanceNullLength or page.variants or site.data.settings.components[settingsKey] %}
     <h3  id="using-the-{{ componentKey }}-{{ page.type }}" class="usa-heading">

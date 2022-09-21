@@ -1,1 +1,2 @@
+- **Include a descriptive ARIA label.** Add an `aria-label` or `aria-labelledby` attribute to the `.usa-site-alert` element to ensure that your site alert appears in the landmarks menu. A well-written label can help assistive technology users easily find and understand the top-level information of your site alert.
 - **Don’t visually hide alert messages and then make them visible when they are needed.** Users of older assistive technologies may still be able to perceive hidden alert messages. Fully remove alert messages when they’re not needed.

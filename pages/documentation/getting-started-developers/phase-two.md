@@ -71,7 +71,7 @@ Note that each `@forward` reference in this example is tied to one of the tasks 
 
 In plain language, this code says:
 
-1. **Configure the instructions**: Get the USWDS settings that tell the Design System how to build the styles. Settings are the first thing you'll need to include in your entry point.
+1. **Get the instructions**: Get the USWDS settings that tell the Design System how to build the styles. Settings are the first thing you'll need to include in your entry point.
 
     In USWDS, settings are Sass variables that can be configured via Sass' `@use...with()` rule. You can find full instructions for configuring USWDS settings, along with a list of all available settings, on the [Settings page]({{ site.baseurl }}/documentation/settings/).
 

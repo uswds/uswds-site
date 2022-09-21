@@ -102,7 +102,7 @@ npm install @uswds/compile --save-dev
 
 Once installed, create a file called `gulpfile.js` at the root of your project by running the command `touch gulpfile.js` (alternatively, use an existing gulpfile if one already exists). This file will need to do the following:
 
-1. [Import the `@uswds/compile` package](#step-3-set-uswds-version)
+1. [Import the `@uswds/compile` package](#step-3-import-the-uswds-compile-package)
 2. [Set the project's USWDS version](#step-4-set-uswds-version)
 3. [Set custom project path settings](#step-5-customize-path-settings)
 4. [Export the Gulp functions and/or tasks you need](#step-6-export-compile-functions)

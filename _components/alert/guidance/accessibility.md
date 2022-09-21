@@ -37,7 +37,7 @@
         <td data-title="{{ col2Title }}">
           Messages that provide information the user would want to be able to easily find, but are not important enough to interrupt user workflow.
           <br/>Example: Informative or warning alert<br/>
-          Note: you must also add an appropriate `aria-label` or `aria-labelledby` attribute when using this role.
+          Note: you must add an appropriate <code>aria-label</code> or <code>aria-labelledby</code> attribute when using this role.
         </td>
       </tr>
     </tbody>

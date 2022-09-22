@@ -77,7 +77,7 @@ In plain language, this code says:
 
 2. **Create the foundation**: Build all USWDS styles from these settings.
 
-    Once you have set up your project's custom settings, it is time to pull in the the USWDS source code from the `uswds` package.
+    Once you have set up your project's custom settings, it is time to pull in the USWDS source code from the `uswds` package.
 
     The `uswds` package collects all the Sass in the Design System. It contains all the styles for USWDS components as well as the design language of Sass tokens and functions used to build those components.
 
@@ -235,7 +235,7 @@ npx gulp compile
 
 ### Step 7: Initialize your project
 
-When your `gulfile.js` is ready, initialize your project to copy all the necessary Sass, image, font, and Javascript assets from the USWDS source code.
+When your `gulpfile.js` is ready, initialize your project to copy all the necessary Sass, image, font, and Javascript assets from the USWDS source code.
 
 Initialize your project and get started by running the following command:
 

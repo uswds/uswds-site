@@ -1,8 +1,9 @@
 - **Don’t visually hide alert messages and then make them visible when they are needed.** Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.
-- **Use the proper ARIA role.** The ARIA `role` attribute can notify assistive technologies of time-sensitive and important messages. To elevate importance, add the appropriate `role` to the `.usa-alert` element, chosen from the following table:
+- **Use the proper ARIA role.** The ARIA `role` attribute can notify assistive technologies of time-sensitive and important messages. To elevate the importance of the alert, choose the appropriate `role` from the [ARIA roles table](#alert-aria-roles) and add it to the `.usa-alert` element.
 
 {% assign col1Title = 'Attribute' %}
 {% assign col2Title = 'Use Case' %}
+#### Alert ARIA roles
 
 <table class="usa-table--borderless site-table-responsive site-table-simple margin-top-2">
   <thead>

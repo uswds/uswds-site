@@ -1,6 +1,3 @@
-{% if site.touchpoints.hosted == false %}
-  <script src="https://touchpoints.app.cloud.gov/touchpoints/5c2410e4.js" async></script>
-{% endif %}
 
 {% assign tpLabel = "Provide feedback about this page" %}
 {% assign tpText = "Was this page helpful?" %}
@@ -8,7 +5,7 @@
 
 <section class="touchpoints__container" role="complementary" aria-label="Page feedback">
   {% if site.touchpoints.hosted %}
-  <a href="https://touchpoints.app.cloud.gov/touchpoints/5c2410e4/submit" target="_blank" class="{{ tpClasses }}" aria-label="{{ tpLabel }}">{{ tpText }}</a>
+  <a href="https://touchpoints.app.cloud.gov/touchpoints/344131bb/submit" target="_blank" class="{{ tpClasses }}" aria-label="{{ tpLabel }}">{{ tpText }}</a>
   {% else %}
   <button type="button" class="{{ tpClasses }}" id="#touchpoints-modal-button" aria-label="{{ tpLabel }}" tabindex="0">{{ tpText }}</button>
   {% endif %}

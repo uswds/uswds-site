@@ -121,11 +121,11 @@ Provide all the fields needed for a user to provide a physical address, even les
   data-meta="Physical address visit select component">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg">Combo box</h3>
+        <h3 class="usa-card__heading font-lang-lg">Select</h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>A combo box helps users select an item from a large list of options.</p>
-        <a href="{{ site.baseurl }}/components/combo-box/">Visit Combo box</a>
+        <p>A select component allows users to choose one option from a temporary modal menu.</p>
+        <a href="{{ site.baseurl }}/components/select/">Visit Select</a>
       </div>
     </div>
   </div>
@@ -261,15 +261,15 @@ Provide all the fields a user needs to successfully enter a mailing address.
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Mailing address visit combo box component"
-  data-meta="Mailing address visit combo box component">
+  aria-label="Mailing address visit select component"
+  data-meta="Mailing address visit select component">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg">Combo box</h3>
+        <h3 class="usa-card__heading font-lang-lg">Select</h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>A combo box helps users select an item from a large list of options.</p>
-        <a href="{{ site.baseurl }}/components/combo-box/">Visit Combo box</a>
+        <p>A select component allows users to choose one option from a temporary modal menu.</p>
+        <a href="{{ site.baseurl }}/components/select/">Visit Select</a>
       </div>
     </div>
   </div>

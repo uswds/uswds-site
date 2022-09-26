@@ -519,6 +519,16 @@ img {
   }
 }
 
+.site-figure {
+  @include u-margin(0);
+}
+
+.site-figcaption {
+  @include u-font-size("lang", "2xs");
+  @include u-margin-y(2);
+  color: color($site-ink);
+}
+
 // Styleguide Content -------- //
 
 .styleguide-content {

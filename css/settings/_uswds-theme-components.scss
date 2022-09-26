@@ -68,8 +68,8 @@ $theme-input-state-border-width: 0.5;
 // Header
 $theme-header-font-family: "ui";
 $theme-header-logo-text-width: 33%;
-//$theme-header-max-width: 'desktop';
-//$theme-header-min-width: 'full';
+// $theme-header-max-width: "full"; - https://github.com/uswds/uswds/issues/4851
+// $theme-header-min-width: 'full';
 
 // Hero
 //$theme-hero-image: null;

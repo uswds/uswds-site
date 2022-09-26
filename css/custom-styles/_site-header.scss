@@ -1,0 +1,327 @@
+// ==========================================================================
+// Site header
+// ==========================================================================
+
+//
+// Shared styles
+// ==========================================================================
+
+$site-navbar-height: 10;
+$site-secondary-nav-input-height: 38px;
+
+// Remove max-width from header containers
+// See https://github.com/uswds/uswds/issues/4851
+.site-header__navbar,
+.site-nav__inner {
+  max-width: none !important;
+}
+
+//
+// Header
+// ==========================================================================
+.site-header {
+  @include typeset("lang");
+
+  @include at-media("desktop") {
+    border-bottom: none;
+  }
+
+  .site-logo {
+    @include at-media("desktop") {
+      margin-top: units(2px);
+      margin-bottom: 0 !important;
+    }
+
+    a {
+      color: color($site-ink);
+    }
+
+    &__text {
+      $logo-size-mobile: 3;
+      $logo-size-desktop: 3;
+      @include u-font("lang", "xs");
+      line-height: units(5);
+
+      &::before {
+        @include u-square($logo-size-mobile);
+        content: "";
+        background-image: url("../img/uswds-logo/4c-lg-on-white.png");
+        background-image: url("../img/uswds-logo/4c-lg-on-white.svg");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        display: inline-block;
+        margin-left: units(-2px);
+        margin-right: units(0.5);
+        position: relative;
+        top: units(-1px);
+        vertical-align: middle;
+
+        @include at-media("desktop") {
+          @include u-square($logo-size-desktop);
+        }
+      }
+
+      @include at-media("desktop") {
+        @include typeset("lang", "lg", 1);
+        line-height: units(9);
+        display: inherit;
+        letter-spacing: ls(-1);
+      }
+    }
+  }
+
+  .usa-menu-btn {
+    font-size: fs("lang", "3xs");
+  }
+
+  &__navbar {
+    border-bottom: none !important;
+
+    @include at-media("desktop") {
+      height: units($site-navbar-height) !important;
+    }
+  }
+}
+
+.site-title {
+
+  &--short {
+    @include at-media("mobile-lg") {
+      display: none;
+    }
+  }
+
+  &--long {
+    display: none;
+
+    @include at-media("mobile-lg") {
+      display: initial;
+    }
+  }
+}
+
+.site-header--dark {
+  background-color: color($site-primary-darker);
+
+  .site-logo {
+    a {
+      color: color("white");
+    }
+
+    .usa-logo__text {
+      &::before {
+        background-image: url("../img/uswds-logo/4c-lg-on-black.png");
+        background-image: url("../img/uswds-logo/4c-lg-on-black.svg");
+      }
+    }
+  }
+}
+
+//
+// Navigation
+// ==========================================================================
+.site-nav {
+  @include typeset("lang");
+  background-color: color("white");
+  border-bottom: units($site-border-width) solid
+    color($site-base-transparent-light);
+  padding-left: units(2);
+
+  @include at-media("desktop") {
+    float: none;
+    height: units($height-nav-secondary);
+    z-index: z-index($z-nav-secondary);
+  }
+
+  // Search input gets cutoff on mobile.
+  .usagov-search-autocomplete {
+    min-width: 0;
+  }
+
+  .usa-accordion {
+    @include typeset("lang");
+  }
+
+  .usa-nav__close {
+    background-color: color("base-lightest");
+  }
+
+  .usa-nav__primary button {
+    line-height: lh("lang", 2);
+  }
+
+  .usa-nav__submenu-item {
+    @include typeset("lang", "2xs", 2);
+  }
+}
+
+.usa-nav__primary--mobile {
+  @include at-media("desktop") {
+    display: none;
+  }
+
+  .usa-button {
+    margin-top: units(1);
+  }
+}
+
+.usa-nav__primary--desktop {
+  @include unstyled-list;
+  display: none;
+
+  @include at-media("desktop") {
+    display: flex;
+  }
+
+  a {
+    @include typeset("lang", "xs", 1);
+    color: color("gray-50");
+    display: inline-block;
+    font-weight: fw("normal");
+    height: units($height-nav-secondary);
+    padding: units(2);
+    position: relative;
+    text-decoration: none;
+
+    .page-home & {
+      color: color("ink");
+    }
+
+    &:hover {
+      @include add-bar(0.5, $site-primary-vivid, "bottom", 0, 2, 0);
+      color: color($site-primary-vivid);
+    }
+  }
+
+  .usa-current {
+    @include add-bar(0.5, $site-primary-vivid, "bottom", 0, 2, 0);
+    color: color($site-ink);
+    font-weight: fw("bold");
+
+    &:hover {
+      color: color($site-ink);
+    }
+  }
+}
+
+// Search and CTA buttons
+.usa-nav__secondary {
+  @include at-media("desktop") {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: units($site-navbar-height);
+    margin-top: 0;
+    bottom: px-to-rem(46px);
+  }
+
+  .usa-button {
+    display: block;
+  }
+
+  .site-search__button,
+  .site-button-github {
+    &:hover {
+      background-color: color("primary-vivid");
+    }
+  }
+}
+
+.site-search {
+  margin-bottom: units(1);
+
+  @include at-media("desktop") {
+    @include u-margin-y(0, "!important");
+    margin-right: units(2);
+    width: auto !important;
+  }
+
+  .usa-input {
+    @include at-media-max("desktop") {
+      height: auto;
+      margin-top: 0;
+      padding: 0;
+    }
+
+    @include at-media("desktop") {
+      background-color: color("blue-warm-90");
+      color: color("white");
+      height: $site-secondary-nav-input-height;
+      margin-top: 0;
+    }
+  }
+
+  .usa-button {
+    @include at-media("desktop") {
+      background-color: color("blue-warm-50v");
+      height: $site-secondary-nav-input-height;
+
+      &:hover,
+      &:active {
+        background-color: color("blue-warm-60v");
+      }
+    }
+  }
+}
+
+// Read website standards, Download, Github buttons
+.site-cta-buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: units(1);
+
+  @include at-media("desktop") {
+    flex-direction: row;
+    align-items: center;
+    row-gap: 0;
+  }
+}
+
+.site-button-outline-secondary {
+  @include inner-border($site-border-width, "primary");
+  background-color: color("transparent");
+  color: color("primary");
+
+  &:visited {
+    color: color("primary");
+  }
+
+  &:hover {
+    @include inner-border($site-border-width, "blue-warm-60v");
+    background-color: transparent;
+    color: color("blue-warm-60v");
+  }
+
+  @include at-media("desktop") {
+    @include inner-border($site-border-width, "white-transparent-70");
+    background-color: color("transparent");
+    color: color("white-transparent-70");
+    height: $site-secondary-nav-input-height;
+    margin-right: units(4);
+
+    &:hover,
+    &:active {
+      @include button-desktop-active;
+    }
+
+    &:visited {
+      color: color("white-transparent-70");
+    }
+  }
+
+  &.site-button-standards {
+    @include at-media("desktop") {
+      box-shadow: inset 0 0 0 2px color("gold-30v");
+      color: color("gold-30v");
+
+      &:focus,
+      &:hover {
+        @include button-desktop-active;
+      }
+    }
+  }
+
+  &.site-button-version {
+    @include no-knockout-font-smoothing;
+  }
+}

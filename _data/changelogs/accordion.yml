@@ -2,14 +2,14 @@ url: https://github.com/placeholder
 typeComponent: true
 items:
   - breaking: Potential
-    date: Aug. 5, 2022
+    date: 2022-08-05
     description:
       summary: 'Added type="button" to the component code and guidance.'
     pr: 4695
     release: 3.1.0
     repo: uswds
   - breaking: 'No'
-    date: July 20, 2022
+    date: 2022-07-20
     description:
       summary: Updated documentation to use the correct multi-select attribute.
       additional: 'The attribute was updated from aria-multiselectable="true" to data-allow-multiple.'

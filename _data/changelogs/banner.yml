@@ -1,0 +1,26 @@
+url: https://github.com/placeholder
+typeComponent: true
+page: Banner
+items:
+  - breaking: Potential
+    date: 2022-08-05
+    description:
+      summary: 'Added type="button" to the component code and guidance.'
+    pr: 4695
+    release: 3.1.0
+    repo: uswds
+  - breaking: 'No'
+    date: 2022-06-17
+    description:
+      summary: uswds-init is better at suppressing FOUC.
+      additional: 'The attribute was updated from aria-multiselectable="true" to data-allow-multiple.'
+    pr: 4676
+    release: 3.0.2
+    repo: uswds
+  - breaking: 'No'
+    date: 2022-06-17
+    description:
+      summary: Added high resolution flag icon.
+    pr: 4792
+    release: 3.0.2
+    repo: uswds

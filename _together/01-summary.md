@@ -150,7 +150,7 @@ With help from digital leaders across the federal space, we've developed pattern
 </p>
 
 <p class="measure-4">
-  We also conducted research outside of the federal space to understand best practices (and notable failures) in order to incorporate these learnings into our patterns.
+  We also conducted research outside of government, particularly in the healthcare, technology, and higher education spaces to understand best practices (and notable failures) in order to incorporate these learnings into our patterns.
 </p>
 
 <h3>Our objective was to:</h3>

@@ -1,22 +1,24 @@
-url: https://github.com/placeholder
-typeComponent: true
-page: Banner
+changelogURL:
+componentPage: true
+title: Banner
 items:
   - breaking: Potential
     date: 2022-08-05
     description:
-      summary: 'Added type="button" to the component code and guidance.'
+      summary: Added <code>type="button"</code> to the component code.
     pr: 4695
     release: 3.1.0
     repo: uswds
+    typeGuidance: false
   - breaking: 'No'
     date: 2022-06-17
     description:
-      summary: uswds-init is better at suppressing FOUC.
-      additional: 'The attribute was updated from aria-multiselectable="true" to data-allow-multiple.'
+      summary: Updated <code>uswds-init.js</code> to better suppress flashing content.
+      additional: The attribute was updated from <code>aria-multiselectable="true"</code> to <code>data-allow-multiple</code>.
     pr: 4676
     release: 3.0.2
     repo: uswds
+    typeGuidance: false
   - breaking: 'No'
     date: 2022-06-17
     description:
@@ -24,3 +26,37 @@ items:
     pr: 4792
     release: 3.0.2
     repo: uswds
+    typeGuidance: false
+  - breaking:
+    date: 2021-03-02
+    description:
+      summary: Updated guidance to identify banner as a core component.
+    pr: 1136
+    release:
+    repo: uswds-site
+    typeGuidance: true
+  - breaking: 'No'
+    date: 2020-12-17
+    description:
+      summary: Introduced <code>uswds-init.js</code> to prevent banner flash.
+      additional: "This script prevents the banner from flashing its content on page load and shifting content."
+    pr: 3092
+    release: 2.10.0
+    repo: uswds
+    typeGuidance: false
+  - breaking: 'Yes'
+    date: 2020-12-17
+    description:
+      summary: Improved the accessibility of decorative images
+    pr: 3892
+    release: 2.10.0
+    repo: uswds
+    typeGuidance: false
+  - breaking: 'Yes'
+    date: 2020-07-09
+    description:
+      summary: Updated banner text and added new banner settings.
+    pr: 3524
+    release: 2.8.0
+    repo: uswds
+    typeGuidance: false

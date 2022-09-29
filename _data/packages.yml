@@ -4,6 +4,7 @@
   dependencies:
     - "uswds-fonts"
     - "usa-list"
+  version: 1.0.0
 - name: "usa-alert"
   fullSize: 13
   sourceSize: 7
@@ -384,7 +385,7 @@
 - name: "uswds-core"
   fullSize: 0
   sourceSize: 0
-  dependencies: 
+  dependencies:
 - name: "uswds-elements"
   fullSize: 0.7
   sourceSize: 0.7

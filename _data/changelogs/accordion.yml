@@ -1,0 +1,21 @@
+changelogURL:
+componentPage: true
+title: Accordion
+items:
+  - breaking: Potential
+    date: 2022-08-05
+    description:
+      summary: 'Added type="button" to the component code and guidance.'
+      additional:
+    pr: 4695
+    release: 3.1.0
+    repo: uswds
+    typeGuidance: false
+  - breaking: 'No'
+    date: 2022-07-20
+    description:
+      summary: Updated documentation to use the correct multi-select attribute.
+      additional: 'The attribute was updated from aria-multiselectable="true" to data-allow-multiple.'
+    pr: 1718
+    repo: uswds-site
+    typeGuidance: false

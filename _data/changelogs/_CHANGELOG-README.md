@@ -1,7 +1,7 @@
 <!--
-This is a guide for creating a "Latest Updates" section. Some things to remember:
+This is a guide for creating data for a "Latest Updates" section. Some things to remember:
   - Tab spacing matters in .yml files. Incorrect spacing can cause errors.
-  - All comments here are instructional only and should be deleted in the changelog .yml file.
+  - All comments here are instructional only and should be deleted if copied into the changelog .yml file.
 -->
 <!-- First, declare general page settings -->
 changelogURL: [Provide url for the package CHANGELOG.md. Not all pages will have a related CHANGELOG.md file.]

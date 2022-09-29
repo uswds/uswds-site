@@ -1,4 +1,6 @@
-typeComponent: false
+changelogURL:
+componentPage: false
+title: Accessibility
 items:
   - date: 2021-05-20
     description:

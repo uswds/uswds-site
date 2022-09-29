@@ -1,9 +1,11 @@
 {% assign col1Title = 'Date' %}
 {% assign col1Width = 'flex-1' %}
-{% assign col2Title = 'Version' %}
+{% assign col2Title = 'USWDS version' %}
 {% assign col2Width = 'flex-1' %}
 {% assign col3Title = 'Breaking' %}
 {% assign col3Width = 'flex-1' %}
+{% assign col5Title = 'Type' %}
+{% assign col5Width = 'flex-1' %}
 {% assign col4Title = 'Description' %}
 {% assign col4Width = 'flex-6 tablet:flex-7' %}
 
@@ -11,7 +13,7 @@
   <thead>
     <tr>
       <th scope="col" class="{{ col1Width }}">{{ col1Title }}</th>
-      {% if changelog.typeComponent %}
+      {% if changelog.componentPage %}
         <th scope="col" class="{{ col2Width }}">{{ col2Title }}</th>
         <th scope="col" class="{{ col3Width }}">{{ col3Title }}</th>
       {% endif %}
@@ -26,7 +28,7 @@
           {{ item.date }}
         {% endif %}
       </td>
-      {% if changelog.typeComponent %}
+      {% if changelog.componentPage %}
       <td data-title="{{ col2Title }}" class="{{ col2Width }}">
           {% if item.release %}
             <a href="https://github.com/uswds/uswds/releases/tag/v{{ item.release }}">{{ item.release }}</a>
@@ -37,6 +39,8 @@
       <td data-title="{{ col3Title }}" class="{{ col3Width }}">
           {% if item.breaking %}
             {{ item.breaking }}
+          {% else %}
+            N/A
           {% endif %}
       </td>
       {% endif %}

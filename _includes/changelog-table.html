@@ -11,7 +11,7 @@
   <thead>
     <tr>
       <th scope="col" class="{{ col1Width }}">{{ col1Title }}</th>
-      {% if changelog.componentPage %}
+      {% if changelog.isComponentPage %}
         <th scope="col" class="{{ col2Width }}">{{ col2Title }}</th>
         <th scope="col" class="{{ col3Width }}">{{ col3Title }}</th>
       {% endif %}
@@ -26,17 +26,17 @@
           {{ item.date }}
         {% endif %}
       </td>
-      {% if changelog.componentPage %}
+      {% if changelog.isComponentPage %}
       <td data-title="{{ col2Title }}" class="{{ col2Width }}">
-          {% if item.release %}
-            <a href="https://github.com/uswds/uswds/releases/tag/v{{ item.release }}">{{ item.release }}</a>
+          {% if item.version %}
+            <a href="https://github.com/uswds/uswds/releases/tag/v{{ item.version }}">{{ item.version }}</a>
           {% else %}
             N/A
           {% endif %}
       </td>
       <td data-title="{{ col3Title }}" class="{{ col3Width }}">
-          {% if item.breaking %}
-            {{ item.breaking }}
+          {% if item.isBreaking %}
+            {{ item.isBreaking }}
           {% else %}
             N/A
           {% endif %}

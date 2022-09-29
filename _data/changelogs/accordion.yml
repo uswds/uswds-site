@@ -1,21 +1,41 @@
 changelogURL:
-componentPage: true
+isComponentPage: true
+packageName:
 title: Accordion
 items:
-  - breaking: Potential
-    date: 2022-08-05
+  - date: 2022-08-05
     description:
-      summary: 'Added type="button" to the component code and guidance.'
+      summary: Added <code>type="button"</code> to the component code and guidance.
       additional:
+    isBreaking: 'Potential'
+    isCodeUpdate: true
     pr: 4695
-    release: 3.1.0
     repo: uswds
-    typeGuidance: false
-  - breaking: 'No'
-    date: 2022-07-20
+    version: 3.1.0
+  - date: 2022-07-20
     description:
-      summary: Updated documentation to use the correct multi-select attribute.
-      additional: 'The attribute was updated from aria-multiselectable="true" to data-allow-multiple.'
+      summary: Updated documentation to reference the correct multi-select attribute.
+      additional: The attribute was updated from <code>aria-multiselectable="true"</code> to <code>data-allow-multiple</code>.
+    isBreaking:
+    isCodeUpdate: false
     pr: 1718
     repo: uswds-site
-    typeGuidance: false
+    version:
+  - date: 2021-03-17
+    description:
+      summary: Restored missing white <code>add</code> and <code>remove</code> icons.
+      additional:
+    isBreaking: 'No'
+    isCodeUpdate: true
+    pr: 4106
+    repo: uswds
+    version: 2.11.1
+  - date: 2021-03-02
+    description:
+      summary: Introduced white <code>add</code> and <code>remove</code> icons.
+      additional:
+    isBreaking: 'No'
+    isCodeUpdate: true
+    pr: 4061
+    repo: uswds
+    version: 2.10.2

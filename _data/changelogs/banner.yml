@@ -15,7 +15,6 @@ items:
     date: 2022-06-17
     description:
       summary: Updated <code>uswds-init.js</code> to better suppress flashing content.
-      additional: The attribute was updated from <code>aria-multiselectable="true"</code> to <code>data-allow-multiple</code>.
     pr: 4676
     release: 3.0.2
     repo: uswds
@@ -23,7 +22,7 @@ items:
   - breaking: 'No'
     date: 2022-06-17
     description:
-      summary: Added high resolution flag icon.
+      summary: Updated flag icon to be high resolution.
     pr: 4792
     release: 3.0.2
     repo: uswds

@@ -1,5 +1,4 @@
-changelogURL:
-componentPage: false
+isComponentPage: false
 title: Accessibility
 items:
   - date: 2021-05-20
@@ -8,8 +7,4 @@ items:
       additional: This update explained USWDS accessibility standards, provided guidance on how to reach accessibility compliance on projects, and provided links to helpful resources.
     pr: 1230
     repo: uswds-site
-  - date: 2019-04-19
-    description:
-      summary: Added information about Accessibility for Teams
-    pr: 767
-    repo: uswds-site
+

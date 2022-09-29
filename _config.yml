@@ -11,7 +11,7 @@ meta:
   og:image: /img/uswds-logo/lg-black.png
 touchpoints:
   active: true
-  hosted: true
+  hosted: false
 # this is for pages that don't have a permalink (primarily posts)
 permalink: /whats-new/updates/:year/:month/:day/:title/
 

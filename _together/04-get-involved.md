@@ -80,6 +80,8 @@ The patterns are a start, but we need your help keeping these patterns current a
 ## Credits
 Illustrations created using [humaaans](https://www.humaaans.com/), a [CC0 (public domain)](https://creativecommons.org/share-your-work/public-domain/cc0/) design library.
 
+Disclaimer: Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.
+
 </div> 
   </div>
 </section>

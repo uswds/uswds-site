@@ -192,6 +192,7 @@ Providing multilingual content is a huge investment, and a key way to communicat
 
 [^8]: Top 10 best practices for multilingual websites. (June 21, 2022) Retrieved on August 19, 2022, from <https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/>
 
+Disclaimer: Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.
 
 </div>
   </div>

@@ -87,7 +87,7 @@ jobs:
             bundle exec rspec
       - run:
           name: Run HTML proofer
-          command: bundle exec htmlproofer --assume-extension ~/project/_site --allow-hash-href=true --enforce-https=false --allow-missing-href=true --ignore-empty-alt=true --ignore-files '~/project/_site/whats-new/updates/2017/'  --ignore-status-codes 403,429 ~/project/_site
+          command: npm run proof
       - snyk/scan:
           organization: uswds
   test_a11y_desktop:

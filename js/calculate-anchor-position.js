@@ -14,11 +14,11 @@ var calculateAnchorPosition = function (hash) {
   var navPadding = parseInt($(".sidenav").css("padding-top"), 10);
   var anchorPadding = parseInt(anchor.css("padding-top"), 10);
 
-  //start with the height of the header
-  topOffset = $(".usa-nav__primary--desktop").first().outerHeight();
+  //start with the height of the sticky nav
+  topOffset = $(".site-nav.sticky").first().outerHeight();
+
   //subtract the diffence in padding between nav top and anchor
   topOffset = topOffset - (anchorPadding - navPadding);
-  console.log(topOffset);
 
   //anchor should now align with first item inside nav
   return anchor.offset().top - topOffset;

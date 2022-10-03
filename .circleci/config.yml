@@ -68,6 +68,11 @@ jobs:
       - run:
           name: Build site assets
           command: npm run build:all-assets
+      - run:
+          name: Build static site
+          command: |
+            bundle config set --local path '~/project/vendor/bundle'
+            bundle exec jekyll build
       - persist_to_workspace:
           root: ~/project
           paths:

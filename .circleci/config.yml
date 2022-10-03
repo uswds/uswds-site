@@ -67,7 +67,7 @@ jobs:
           command: npm run build:uswds
       - run:
           name: Build site assets
-          command: npm run build:all-assets
+          command: npm run build
       - persist_to_workspace:
           root: ~/project
           paths:

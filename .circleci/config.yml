@@ -66,7 +66,7 @@ jobs:
           name: Build USWDS if needed
           command: npm run build:uswds
       - run:
-          name: Build site assets
+          name: Build site with assets
           command: npm run build
       - persist_to_workspace:
           root: ~/project

@@ -66,8 +66,13 @@ jobs:
           name: Build USWDS if needed
           command: npm run build:uswds
       - run:
-          name: Build site with assets
-          command: npm run build
+          name: Build site assets
+          command: npm run build:all-assets
+      - run:
+          name: Build static site
+          command: |
+            bundle config set --local path '~/project/vendor/bundle'
+            bundle exec jekyll build
       - persist_to_workspace:
           root: ~/project
           paths:

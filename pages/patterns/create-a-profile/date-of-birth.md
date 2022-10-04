@@ -31,7 +31,7 @@ Mobile device users in particular may benefit from being able to type a year rat
       <h3 class="do-dont__heading">What to do</h3>
         <div class="do-dont__content">
           <ul>
-            <li>Do provide text entry fields for day and year inputs, and a select element for month.</li>
+            <li>Do provide text entry fields for day and year inputs, and a select or combo box element for month.</li>
             <li>Do label the fields clearly. Some countries use a day/month/year format and it’s important that date and month are clearly distinguished to ensure correct date entry.</li>
             <li>Do limit individual field character length.</li>
             <li>Do consider your data requirements. Use both client-side and server-side validation to support properly formatted dates if possible. If you are unable to parse date without two digits, provide an example that reflects a leading zero and use clear validation messaging if a single digit without a leading zero is entered.</li>

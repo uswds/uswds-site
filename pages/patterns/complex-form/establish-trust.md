@@ -130,6 +130,7 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
 - Trauma-informed computing: towards safer technology experiences for all. Journal article Association for Computing Machinery in Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems (CHI '22). 2022. Retrieved on July 22, 2022, from [https://doi.org/10.1145/3491102.3517475](https://doi.org/10.1145/3491102.3517475)
 - Trust or bust: communicating trustworthiness in web design. (March 6, 1999) Retrieved on July 28, 2022, from [https://www.nngroup.com/articles/communicating-trustworthiness/](https://www.nngroup.com/articles/communicating-trustworthiness/)
 
+Disclaimer: Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.
 
 ## Changelog
 - publishdate

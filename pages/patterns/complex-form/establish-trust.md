@@ -125,8 +125,8 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
 - Build trust with these UX guidelines (March 16, 2019) Retrieved on July 19, 2022, from [https://uxdesign.cc/build-trust-with-these-ux-guidelines-f3d547bb2014.](https://uxdesign.cc/build-trust-with-these-ux-guidelines-f3d547bb2014)
 - Building trust with users through open communication and feedback, (June 13, 2019) Retrieved on July 19, 2022, from [https://digital.gov/2019/06/13/building-trust-with-users-through-open-communication-feedback/](https://digital.gov/2019/06/13/building-trust-with-users-through-open-communication-feedback/)  
 - Communicating with and about people with disabilities. (February 1, 2022) Retrieved on July 28, 2022, from [https://www.cdc.gov/ncbddd/disabilityandhealth/materials/factsheets/fs-communicating-with-people.html](https://www.cdc.gov/ncbddd/disabilityandhealth/materials/factsheets/fs-communicating-with-people.html) 
-- Design principles, (n.d.) Retrieved on July 21, 2022 [https://designsystem.digital.gov/design-principles/](https://designsystem.digital.gov/design-principles/)
-- Inclusive design. (n.d.) Retrieved on August 24, 2022, from https://content-guide.18f.gov/our-style/inclusive-language/. 
+- Design principles, (n.d.) Retrieved on July 21, 2022 from [https://designsystem.digital.gov/design-principles/](https://designsystem.digital.gov/design-principles/)
+- Inclusive design. (n.d.) Retrieved on August 24, 2022, from [https://content-guide.18f.gov/our-style/inclusive-language/](https://content-guide.18f.gov/our-style/inclusive-language/). 
 - Trauma-informed computing: towards safer technology experiences for all. Journal article Association for Computing Machinery in Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems (CHI '22). 2022. Retrieved on July 22, 2022, from [https://doi.org/10.1145/3491102.3517475](https://doi.org/10.1145/3491102.3517475)
 - Trust or bust: communicating trustworthiness in web design. (March 6, 1999) Retrieved on July 28, 2022, from [https://www.nngroup.com/articles/communicating-trustworthiness/](https://www.nngroup.com/articles/communicating-trustworthiness/)
 

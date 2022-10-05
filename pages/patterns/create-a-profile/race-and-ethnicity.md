@@ -180,6 +180,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
 - Revisions to the Standards for the Classification of Federal Data on Race and Ethnicity (October 30, 1997) Retrieved on July 15, 2022, from [https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf](https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf)
 - Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity. (September 30, 2016) Retrieved July 15, 2022, from [https://www.federalregister.gov/documents/2016/09/30/2016-23672/standards-for-maintaining-collecting-and-presenting-federal-data-on-race-and-ethnicity](https://www.federalregister.gov/documents/2016/09/30/2016-23672/standards-for-maintaining-collecting-and-presenting-federal-data-on-race-and-ethnicity)
 
-
 ## Changelog
 - publishdate
+
+Disclaimer: Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

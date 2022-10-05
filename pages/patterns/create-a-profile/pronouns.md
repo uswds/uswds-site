@@ -133,6 +133,7 @@ Provide a text entry field that supports a rich array of special characters and 
 - What's in a pronoun? (May 15, 2019) Retrieved on July 19, 2022, from [https://www.keshetonline.org/resources/whats-in-a-pronoun/](https://www.keshetonline.org/resources/whats-in-a-pronoun/)
 - Asking about gender in online forms. (September 18, 2015) Retrieved on July 19, 2022, from [http://www.practicemakesprogress.org/blog/2015/9/18/asking-about-gender-on-online-forms](http://www.practicemakesprogress.org/blog/2015/9/18/asking-about-gender-on-online-forms)
 
-
 ## Changelog
 - publishdate
+
+Disclaimer: Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

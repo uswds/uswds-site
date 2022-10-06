@@ -1,8 +1,8 @@
 <div class="usa-alert usa-alert--info">
   <div class="usa-alert__body">
-    <h4 class="usa-alert__heading">Issues with combobox</h4>
+    <h4 class="usa-alert__heading">Known issues with combobox</h4>
     <p class="usa-alert__text">
-     Through research we have uncovered issues with the combo box. In most cases we recommend using the <a href="{{ site/baseurl}}/components/select/">select component</a> instead.
+     More research needed to determine the best approach for making Combo box typeahead and autosuggestion content easy to understand and accessible to screen reader users.
     </p>
   </div>
 </div>

@@ -1,2 +1,3 @@
-- **UAT testing with screen readers.** Through UAT testing we uncovered issues with screen readers in using the combo box
-- **Use select instead of combo box.** We suggest using the <a href="{{ site.baseurl }}/components/select/">select component</a> in most situations 
+- **More research needed.** More research needed to determine the best approach for making Combo box typeahead and autosuggestion content easy to understand and accessible to screen reader users.
+- **UAT testing with screen readers.** Through UAT testing we uncovered issues with screen readers in using the combo box.
+- **Use select instead of combo box.** We suggest using the <a href="{{ site.baseurl }}/components/select/">select component</a> in most situations. 

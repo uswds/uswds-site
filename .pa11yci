@@ -2,9 +2,9 @@
   "defaults": {
     "userAgent": "pa11y",
     "timeout": 120000,
-    "concurrency": 1,
-    "useIncognitoBrowserContext": false,
     "standard": "WCAG2AA",
-    "runners": ["axe"]
+    "runners": ["axe"],
+    "rootElement": "#main-content",
+    "hideElements": "[aria-hidden='true'], code, [href^='http']:not([href*='designsystem.digital.gov']), [href='javascript:void(0);'], .usa-accordion__button,  span[aria-label], .usa-step-indicator[aria-label], usa-step-indicator__segment-label"
   }
 }

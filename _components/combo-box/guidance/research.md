@@ -1,0 +1,2 @@
+- **UAT testing with screen readers.** Through UAT testing we uncovered issues with screen readers in using the combo box
+- **Use select instead of combo box.** We suggest using the <a href="{{ site.baseurl }}/components/select/">select component</a> in most situations 

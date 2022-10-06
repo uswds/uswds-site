@@ -2,6 +2,8 @@
 category: Components
 component:
   status: ready
+  alert: true
+  research: true
   package: usa-combo-box
   dependencies:
 implementation:

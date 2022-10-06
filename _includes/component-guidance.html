@@ -15,6 +15,18 @@
     {%- include_relative {{guidancePath}}/about.md -%}
   {% endif %}
 {%- endcapture -%}
+{%- capture alert -%}
+  {% if page.component.alert %}
+    {{- guidanceFormat }}
+    {%- include_relative {{guidancePath}}/alert.md -%}
+  {% endif %}
+{%- endcapture -%}
+{%- capture alert -%}
+  {% if page.component.alert %}
+    {{- guidanceFormat }}
+    {%- include_relative {{guidancePath}}/alert.md -%}
+  {% endif %}
+{%- endcapture -%}
 {%- capture when_to_use -%}
   {{- guidanceFormat }}
   {%- include_relative {{guidancePath}}/when-to-use.md -%}
@@ -28,19 +40,32 @@
   {%- include_relative {{guidancePath}}/usability.md -%}
 {%- endcapture -%}
 {%- capture accessibility -%}
-  {{- guidanceFormat }}
-  {%- include_relative {{guidancePath}}/accessibility.md -%}
+    {%- if accessibility != empty -%}
+      {{- guidanceFormat }}
+      {%- include_relative {{guidancePath}}/accessibility.md -%}
+    {%- endif -%}
 {%- endcapture -%}
 {%- capture implementation -%}
   {{- guidanceFormat }}
   {%- include_relative {{guidancePath}}/implementation.md -%}
 {%- endcapture -%}
 {%- capture references -%}
-  {% if page.component.references %}
+  {% if references %}
     {{- guidanceFormat }}
     {%- include_relative {{guidancePath}}/references.md -%}
   {% endif %}
 {%- endcapture -%}
+{%- capture research -%}
+  {% if page.component.research %}
+    {{- guidanceFormat }}
+    {%- include_relative {{guidancePath}}/research.md -%}
+  {% endif %}
+{%- endcapture -%}
+
+{% if alert.size > guidanceNullLength %}
+  <h3 id="alert-{{ componentKey }}" class="usa-alert__body"></h3>
+  {{ alert | markdownify }}
+{% endif %}
 
 <h2 id="{{ componentKey }}-guidance" class="site-component-section-title">
   Guidance
@@ -60,6 +85,7 @@
       {{ thisText | markdownify }}
     {% endif %}
   {% endfor %}
+
   {% if about.size > guidanceNullLength %}
     <h3 id="about-{{ componentKey }}">About</h3>
     {{ about | markdownify }}
@@ -85,6 +111,10 @@
       Accessibility
     </h3>
     {{ accessibility | markdownify }}
+  {% endif %}
+  {% if research.size > guidanceNullLength %}
+    <h3 id="research">Research on this component</h3>
+    {{ research | markdownify }}
   {% endif %}
   {% if implementation.size > guidanceNullLength or page.variants or site.data.settings.components[settingsKey] %}
     <h3  id="using-the-{{ componentKey }}-{{ page.type }}" class="usa-heading">

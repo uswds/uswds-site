@@ -4,7 +4,6 @@
   dependencies:
     - "uswds-fonts"
     - "usa-list"
-  version: 1.0.0
 - name: "usa-alert"
   fullSize: 13
   sourceSize: 7

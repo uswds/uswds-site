@@ -20,8 +20,6 @@ subnav:
     href: '#alert-guidance'
   - text: Package
     href: '#alert-package'
-  - text: Latest updates
-    href: '#alert-changelog'
 title: Alert
 variants:
   - variant: "`.usa-alert--info`"

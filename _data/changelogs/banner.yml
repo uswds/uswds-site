@@ -3,7 +3,7 @@ isComponentPage: true
 packageName: Banner
 title: Banner
 items:
-  # - date:
+  # - date: Unreleased
   #   description:
   #     summary: Updated ARIA attributes in the component code.
   #     additional: Updated the <code>aria-label</code> in English versions of banner and added the <code>aria-hidden</code> attribute to the flag icon.
@@ -93,7 +93,7 @@ items:
     pr: 3316
     repo: uswds
     version: 2.7.1
-  - date: 2020-06-17
+  - date: 2020-05-11
     description:
       summary: Improved display of the <code>Here's how you know link</code> in the gov banner
       additional: Now there's no distracting change to the length of the underline on hover.

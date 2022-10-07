@@ -3,6 +3,15 @@ isComponentPage: true
 packageName: Banner
 title: Banner
 items:
+  # - date:
+  #   description:
+  #     summary: Updated ARIA attributes in the component code.
+  #     additional: Updated the <code>aria-label</code> in English versions of banner and added the <code>aria-hidden</code> attribute to the flag icon.
+  #   isBreaking: 'No'
+  #   isCodeUpdate: true
+  #   pr: 4925
+  #   repo: uswds
+  #   version: 3.2.0
   - date: 2022-08-05
     description:
       summary: Added <code>type="button"</code> to the component code.
@@ -43,7 +52,7 @@ items:
     description:
       summary: Updated guidance to identify banner as a core component.
       additional:
-    isBreaking: 'No'
+    isBreaking:
     isCodeUpdate: false
     pr: 1136
     repo: uswds-site
@@ -53,16 +62,43 @@ items:
       summary: Introduced <code>uswds-init.js</code> to prevent banner flash.
       additional: This script prevents the banner from flashing its content on page load and shifting content.
     isBreaking: 'No'
-    isCodeUpdate: false
+    isCodeUpdate: true
     pr: 3867
+    repo: uswds
+    version: 2.10.0
+  - date: 2020-12-17
+    description:
+      summary: Updated decorative SVGs to be more resilient.
+      additional: Added the <code>aria-hidden="true"</code> property on decorative images and added <code>focusable="false"</code> to SVG elements meant to be images.
+    isBreaking: 'No'
+    isCodeUpdate: true
+    pr: 3892
     repo: uswds
     version: 2.10.0
   - date: 2020-07-09
     description:
       summary: Updated banner copy and added new banner settings.
-      additional:
+      additional: This update requires the use of Autoprefixer.
     isBreaking: 'Yes'
-    isCodeUpdate: false
+    isCodeUpdate: true
     pr: 3524
     repo: uswds
     version: 2.8.0
+  - date: 2020-06-17
+    description:
+      summary: Added <code>role="img"</code> to SVGs.
+      additional:
+    isBreaking: 'No'
+    isCodeUpdate: true
+    pr: 3316
+    repo: uswds
+    version: 2.7.1
+  - date: 2020-06-17
+    description:
+      summary: Improved display of the <code>Here's how you know link</code> in the gov banner
+      additional: Now there's no distracting change to the length of the underline on hover.
+    isBreaking: 'No'
+    isCodeUpdate: true
+    pr: 3427
+    repo: uswds
+    version: 2.7.0

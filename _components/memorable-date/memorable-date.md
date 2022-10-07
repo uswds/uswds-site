@@ -3,6 +3,7 @@ category: Components
 component:
   status: ready
   package: usa-memorable-date
+  related: true
   dependencies:
 layout: component
 lead: A select for month followed by two text fields is the easiest way for users to enter most dates.

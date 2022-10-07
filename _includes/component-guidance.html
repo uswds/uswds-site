@@ -32,8 +32,10 @@
   {%- include_relative {{guidancePath}}/accessibility.md -%}
 {%- endcapture -%}
 {%- capture related -%}
-  {{- guidanceFormat }}
-  {%- include_relative {{guidancePath}}/related.md -%}
+  {% if page.component.related %}
+    {{- guidanceFormat }}
+    {%- include_relative {{guidancePath}}/related.md -%}
+  {% endif %}
 {%- endcapture -%}
 {%- capture implementation -%}
   {{- guidanceFormat }}

@@ -39,7 +39,7 @@ Place the language selector button at the top of the screen above site navigatio
             <li>Include the language toggle in the header so that it remains visible and in the same position as the user scrolls up and down a webpage if the website has a “sticky” or “fixed” header.</li>
             <li>Take users to an equivalent page that includes the same or similar content.</li>
             <li>Capitalize the name of each language (for example, English, Español).</li>
-            <li>Strongly consider labeling the name in the common, native language like  Español (Spanish) or 公司简介 (Chinese - Simplified).</li>
+            <li>Strongly consider labeling the name in the common, native language like <span lang="es" xml:lang="es">Español</span> (Spanish) or <span lang="zh" xml:lang="zh">简体字</span> (Chinese - Simplified).</li>
           </ul> 
         </div>
       </div>

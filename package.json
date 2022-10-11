@@ -90,7 +90,7 @@
     "prettier": "^2.4.1",
     "sass": "^1.43.4",
     "simplecrawler": "^1.1.8",
-    "snyk": "^1.913.0",
+    "snyk": "^1.1025.0",
     "stylelint": "^14.1.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"

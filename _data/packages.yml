@@ -278,7 +278,7 @@
   dependencies:
     - "uswds-fonts"
     - "usa-fieldset"
-    - "usa-legent"
+    - "usa-legend"
 - name: "usa-range"
   fullSize: 8
   sourceSize: 2

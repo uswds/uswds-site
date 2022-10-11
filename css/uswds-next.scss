@@ -91,11 +91,11 @@ html {
 }
 
 // Header
-.next-site-header .site-header-navbar {
+.next-site-header {
   background-color: $gray-80-next;
 }
 
-.site-header-dark .site-logo .usa-logo__text::before {
+.site-header--dark .site-logo__text::before {
   filter: brightness(20);
 }
 

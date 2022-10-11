@@ -811,6 +811,12 @@
       var: $theme-footer-font-family
       default: "'body'"
       kind: family
+    - name: Footer
+      subsection: Footer max width
+      usage: Maximum width of footer container.
+      var: $theme-footer-max-width
+      default: "'desktop'"
+      kind: units
 
     - name: Checkbox
       section: true

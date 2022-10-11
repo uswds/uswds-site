@@ -1,10 +1,10 @@
 // Imports
-@import "variables";
-@import "uswds-theme-general";
-@import "uswds-theme-typography";
-@import "uswds-theme-spacing";
-@import "uswds-theme-color";
-@import "uswds-theme-utilities";
+@import "./settings/variables";
+@import "./settings/uswds-theme-general";
+@import "./settings/uswds-theme-typography";
+@import "./settings/uswds-theme-spacing";
+@import "./settings/uswds-theme-color";
+@import "./settings/uswds-theme-utilities";
 
 // Tools
 // -------------------------------------
@@ -91,11 +91,11 @@ html {
 }
 
 // Header
-.next-site-header .site-header-navbar {
+.next-site-header {
   background-color: $gray-80-next;
 }
 
-.site-header-dark .site-logo .usa-logo__text::before {
+.site-header--dark .site-logo__text::before {
   filter: brightness(20);
 }
 

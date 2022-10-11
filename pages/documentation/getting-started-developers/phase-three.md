@@ -9,7 +9,7 @@ type: docs
 
 Now, equipped with building blocks that are accessible and cohesive, you can get creative. This phase is an overview of what you need to know to customize your project.
 
-The U.S. Web Design System provides extensive support for theming via its [theme settings]({{ site.baseurl }}/documentation/settings). You'll update the `_theme-settings.scss` file in `uswds.paths.dist.theme` so its `@use` directive includes a list of all the settings you're customizing for your project.
+The U.S. Web Design System provides extensive support for theming via its [theme settings]({{ site.baseurl }}/documentation/settings). You'll update the `_uswds-theme.scss` file in `uswds.paths.dist.theme` so its `@use` directive includes a list of all the settings you're customizing for your project.
 
 {: .site-note }
 **Note:** If you use `uswds-compile`, as detailed in Phase 2, this tool adds this file to the directory you specify in `uswds.paths.dist.theme`.

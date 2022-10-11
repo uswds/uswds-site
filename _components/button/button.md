@@ -7,7 +7,6 @@ type: component
 title: Button
 category: Components
 lead: A button draws attention to important actions with a large selectable surface.
-description: A button draws attention to important actions with a large selectable surface.
 component:
   name: button
   status: ready

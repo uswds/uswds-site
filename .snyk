@@ -1419,9 +1419,9 @@ ignore:
         reason: ' No available update.'
         expires: '2022-01-27T21:29:25.296Z'
     - '*':
-        reason: No available upgrade or patch
-        expires: 2022-09-14T17:25:17.790Z
-        created: 2022-08-15T17:25:17.843Z
+        reason: Not exploitable
+        expires: 2022-11-10T16:58:15.298Z
+        created: 2022-10-11T16:58:15.346Z
   SNYK-JS-NODESASS-1059081:
     - gulp-sass > node-sass:
         reason: No available upgrade or patch.
@@ -2706,9 +2706,9 @@ ignore:
         reason: No available update.
         expires: '2022-01-27T21:29:25.295Z'
     - '*':
-        reason: No available upgrade or patch
-        expires: 2022-09-14T17:25:23.695Z
-        created: 2022-08-15T17:25:23.742Z
+        reason: Not exploitable
+        expires: 2022-11-10T16:57:52.342Z
+        created: 2022-10-11T16:57:52.392Z
   SNYK-JS-AXIOS-1579269:
     - uswds > @frctl/fractal > @frctl/web > browser-sync > localtunnel > axios:
         reason: None given
@@ -3497,9 +3497,9 @@ ignore:
         expires: '2021-12-19T21:17:42.633Z'
   SNYK-JS-UNSETVALUE-2400660:
     - '*':
-        reason: No available upgrade or patch
-        expires: 2022-09-14T17:25:11.065Z
-        created: 2022-08-15T17:25:11.117Z
+        reason: Not exploitable
+        expires: 2022-11-10T16:58:37.669Z
+        created: 2022-10-11T16:58:37.719Z
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':

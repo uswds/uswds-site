@@ -661,7 +661,7 @@ These instructions will help you update your `@import` references to the new syn
 
    We recommend an online diff service like [quickdiff.net](https://quickdiff.net/), [diffchecker.com](https://diffchecker.com), or [text-compare.com](https://text-compare.com/).
 
-   Each of the files below is from version 2.13.3 of the USWDS default settings. For each of these files, use the diff tool to find the differences between your settings file and the current (USWDS Version 3.X) defaults.
+   Each of the files below is from version 2.13.3 of the USWDS default settings. For each of these files, use the diff tool to find the differences between your settings file and the current (USWDS Version 3.x) defaults.
 
     USWDS Version 2.13.3 Defaults
    - [Color settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.3/src/stylesheets/theme/_uswds-theme-color.scss)

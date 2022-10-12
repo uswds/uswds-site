@@ -4,6 +4,11 @@
   </svg>
 
   {{ include.quote }}
+  {% if include.source-link %}
+  <a href="{{ include.source-link }}">
+    <span class="together-blockquote__source">— {{ include.source }}</span>
+  </a>
+  {% else %}
   <span class="together-blockquote__source">— {{ include.source }}</span>
-  <span class="together-blockquote__context">{{ include.context }}</span>
+  {% endif %}
 </blockquote>

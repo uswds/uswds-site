@@ -1,0 +1,4 @@
+- Do not use visual separators between fields.
+- Do not auto-advance focus from field to field.
+- Do not require leading zeros if possible.
+- Do not use a date pickers.

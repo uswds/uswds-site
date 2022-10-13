@@ -1,0 +1,12 @@
+{% assign patternName = page.pattern.name | default: page.title | downcase %}
+{% assign patternKey = patternName | slugify %}
+{% assign settingsKey = patternKey %}
+
+{% if page.parent == null and content.size > 1 %}
+<h2 class="site-component-section-title">About the {{ patternName }} {{ page.type }}</h2>
+<div class="font-lang-md measure-5 margin-top-3 margin-bottom-6">
+    {{ content }}
+</div>
+{% endif %}
+
+{% include pattern-preview.html %}

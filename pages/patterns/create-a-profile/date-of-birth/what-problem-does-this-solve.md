@@ -1,0 +1,1 @@
+With many competing patterns for date formatting, users may become frustrated, confused, and more prone to make mistakes when entering a date of birth or other memorable dates.

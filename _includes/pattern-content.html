@@ -1,0 +1,39 @@
+{% assign patternName = page.pattern.name | default: page.title | downcase %}
+{% assign patternKey = patternName | slugify %}
+{% assign settingsKey = patternKey %}
+
+{% assign contentPath = page.contentPath | default: "content" %}
+
+{% assign contentFormat = "{:.usa-content-list}" %}
+{% assign contentNullLength = contentFormat.size | plus: 1 %}
+{% assign contentFirst = page.content | where: "first", true %}
+{% assign contentLast = page.content | where: "first", null %}
+
+{%- capture what-problem -%}
+  {{- contentFormat }}
+  {%- include_relative {{contentPath}}/what-problemmd -%}
+{%- endcapture -%}
+
+<h2 id="{{ patternKey }}-content" class="site-pattern-section-title">
+  Content
+</h2>
+<div class="site-pattern-usage">
+  {% for item in contentFirst %}
+    <h3 id="{{ item.heading | slugify }}" class="usa-heading">
+      {{ item.heading }}
+    </h3>
+    {% if item.html %}
+      {%- include_relative {{item.path}} -%}
+    {% else %}
+      {%- capture thisText -%}
+        {{- contentFormat }}
+        {%- include_relative {{item.path}} -%}
+      {% endcapture %}
+      {{ thisText | markdownify }}
+    {% endif %}
+  {% endfor %}
+  {% if what-problem.size > contentNullLength %}
+    <h3 id="what-problem-{{ patternKey }}">About</h3>
+    {{ what-problem | markdownify }}
+  {% endif %}
+</div>

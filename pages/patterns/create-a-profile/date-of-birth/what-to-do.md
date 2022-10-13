@@ -1,0 +1,5 @@
+- Do provide text entry fields for day and year inputs, and a select or combo box element for month.
+- Do label the fields clearly. Some countries use a day/month/year format and it’s important that date and month are clearly distinguished to ensure correct date entry.
+- Do limit individual field character length.
+- Do consider your data requirements. Use both client-side and server-side validation to support properly formatted dates if possible. If you are unable to parse date without two digits, provide an example that reflects a leading zero and use clear validation messaging if a single digit without a leading zero is entered.
+- Do consider requiring a four-digit year to avoid potential confusion.

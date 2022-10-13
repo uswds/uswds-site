@@ -1,0 +1,3 @@
+- <a href="{{ site.baseurl }}/components/memorable-date/">Memorable date</a> component
+- <a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number/">Phone number</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number/">Social Security Number</a> pattern

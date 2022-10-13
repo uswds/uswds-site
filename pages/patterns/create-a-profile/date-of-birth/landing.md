@@ -48,30 +48,17 @@ lead: Date of birth, and other memorable dates, can be an essential piece of inf
 ### Whether you need this data
 {% include_relative whether-you-need-this-data.md %}
 
-### When to use 
-<strong>Appropriate for most dates.</strong> This pattern is appropriate for most dates but particularly past and memorable dates, and dates that appear on items like drivers licenses or passports. This pattern is especially applicable when there’s a high expectation of mobile device usage for form completion.
+### When to use
+{% include_relative when-to-use.md %}
 
 ### When to consider something else
-
-<strong>Consider a date picker for scheduling.</strong> If users are trying to schedule something, the date picker might make more sense, especially when the day of the week or availability of timeslots is required. Be sure to also provide an option for text entry as well.
+{% include_relative when-to-consider-something-else.md %}
 
 ## Usability Guidance
-<strong>Label each field.</strong> Be sure each field is properly labeled &#8212; some countries enter dates in day, month, year order. 
-
-<strong>Avoid select elements for day or year.</strong> It may be tempting to switch all or some of these text fields to select elements, but these tend to be more difficult to use than text inputs.
+{% include_relative usability-guidance.md %}
 
 ## Accessibility 
-<strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="https://designsystem.digital.gov/components/text-input/">guidelines for all text inputs</a>. 
-
-<strong>Don't auto-advance focus.</strong> Do not use JavaScript to auto advance the focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes. 
-
-<strong>Use “text” instead of “number” inputs.</strong> Research indicates that <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">numeric inputs still carry many usability problems</a>. While dates and years are some of the few kinds of numbers that can work reliably with numeric inputs, the way the user enters the data may still differ from what the browser expects. Use `<input type="text" inputmode="numeric" pattern="[0-9]*">` to better support mobile users. 
-
-<strong>Always use a label on the select element.</strong> Don’t replace it with the default menu option (for example, removing the “Month” label and just having the menu read “Select a month” by default).
-
-<strong>Avoid auto-submission.</strong> Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Auto-submission disrupts screen readers because they select each option as they read them.
-
-<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
+{% include_relative accessibility.md %}
 
 ## Components used in this pattern
 
@@ -127,17 +114,13 @@ lead: Date of birth, and other memorable dates, can be an essential piece of inf
 </div>
 
 ## Related
-
-- <a href="{{ site.baseurl }}/components/memorable-date/">Memorable date</a> component
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number/">Phone number</a> pattern
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number/">Social Security Number</a> pattern
+{% include_relative related.md %}
 
 ## References
-- Asking for a date of birth. (December 5, 2013) Retrieved on July 20, 2022, from <a href="https://designnotes.blog.gov.uk/2013/12/05/asking-for-a-date-of-birth/">https://designnotes.blog.gov.uk/2013/12/05/asking-for-a-date-of-birth/</a>
-- Dates. (n.d.) Retrieved on July 20, 2022, from <a href="https://design-system.service.gov.uk/patterns/dates/">https://design-system.service.gov.uk/patterns/dates/</a>
-- Why the GOV.UK Design System team changed the input type for numbers. (February 24, 2020) Retrieved on July 20, 2022, from <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/</a>
+{% include_relative references.md %}
 
 ## Changelog
-- publishdate
+{% include_relative changelog.md %}
 
-Disclaimer: Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.
+{% include patterns/disclaimer.md %}
+

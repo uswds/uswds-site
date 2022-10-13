@@ -1,0 +1,1 @@
+**Consider a date picker for scheduling.** If users are trying to schedule something, the date picker might make more sense, especially when the day of the week or availability of timeslots is required. Be sure to also provide an option for text entry as well.

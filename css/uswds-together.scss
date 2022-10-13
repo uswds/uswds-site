@@ -96,11 +96,12 @@ html {
 }
 
 // Header
+.together-site-header, 
 .together-site-header .site-header-navbar {
   background-color: $gray-80-next;
 }
 
-.site-header-dark .site-logo .usa-logo__text::before {
+.site-header--dark .site-logo .usa-logo__text::before {  
   filter: brightness(20);
 }
 

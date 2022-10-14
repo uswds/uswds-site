@@ -2,4 +2,4 @@
 
 - **Use language that matches section headings.** The text of the links displayed within  the in-page navigation `aside` should match the heading text of the target sections. The component scans the page for `h2` and `h3` elements, **automatically creates the in-page navigation block, and dynamically inserts the text to match the section headings.** Note: the `h1` main heading text _is intentionally not included, and should not be duplicated inside the in-page navigation component_.
 
-- **In-page navigation heading.** Inform users that they will scroll down on the same page by including in-page navigation under a descriptive title such as “On this page”, “In this article”, or  “Table of contents.”
+- **In-page navigation heading.** Inform users that they will scroll down on the same page by including in-page navigation under a descriptive title such as “On this page,” “In this article,” or  “Table of contents.”

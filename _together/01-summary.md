@@ -98,7 +98,6 @@ With help from digital leaders across the federal space, we've developed pattern
   </figcaption>
 </figure>
 
-<!-- TODO: Make different colors -->
 <div class="grid-row tablet:margin-x-neg-205">
   <div class="desktop:grid-col-6 desktop:padding-x-205">
     {% include together/together-finding-item.html  heading="Diversity" text="Diversity in design is about making sure all people are represented." border="blue"%}
@@ -111,6 +110,20 @@ With help from digital leaders across the federal space, we've developed pattern
     {% include together/together-finding-item.html  heading="Accessibility" text="Accessibility in design ensures that all people can understand and enjoy digital experiences." border="green" %}
   </div>
 </div>            
+
+<div>
+  <h3 class="text-primary">Diversity:<span class="text-base font-alt-md margin-left-1">Ensuring a wide array of people are represented</span></h3>
+  <p>Consider</p>
+  <ul>
+    <li>Can a person see themselves in the design?</li>
+    <li>Who does it leave out?</li>
+    <li>Who does it leave out?</li>
+    <li>Are users, especially those historically excluded, effectively represented?</li>
+  </ul>
+  <p class="border-left-1 border-primary padding-left-2">
+    Example: Images and copy show a full diversity of American society, including ages, ethnicities, genders, and socio-economic groups.
+  </p>
+</div>
 
 <p class="measure-4">
   Developing patterns through the lens of inclusivity requires us to interrogate ourselves and our work at each step of the design process. We outlined a series of questions to consider:

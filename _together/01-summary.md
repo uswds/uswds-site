@@ -113,8 +113,8 @@ With help from digital leaders across the federal space, we've developed pattern
 
 <div>
   <h3 class="text-primary">Diversity:<span class="text-base font-alt-md margin-left-1">Ensuring a wide array of people are represented</span></h3>
-  <p>Consider</p>
-  <ul>
+  <p class="margin-0">Consider</p>
+  <ul class="margin-0">
     <li>Can a person see themselves in the design?</li>
     <li>Who does it leave out?</li>
     <li>Who does it leave out?</li>

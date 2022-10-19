@@ -118,10 +118,6 @@ defaults:
       type: security_updates
     values:
       layout: styleguide
-  - scope:
-      path: ""
-    values:
-      image: /img/uswds-logo/lg-black.png
 
 plugins:
   - jekyll-redirect-from

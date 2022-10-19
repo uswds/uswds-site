@@ -1,12 +1,27 @@
-<section class="padding-x-5">
-  <h3 class="text-{{include.color}}">{{ include.heading }}:<span class="text-base font-alt-md margin-left-1">{{include.sub-heading}}</span></h3>
-  <p class="margin-0">Consider</p>
+<section class="margin-bottom-5">
+{% if include.color == "gold" %}
+  <h3 class="text-base-dark text-uppercase font-sans-lg line-height-sans-2">{{ include.heading }}:<span class="text-no-uppercase text-base font-sans-md margin-left-1 text-light">{{include.sub-heading}}</span></h3>
+{% else %}
+  <h3 class="text-{{include.color}} text-uppercase font-sans-lg line-height-sans-2">{{ include.heading }}:<span class="text-no-uppercase text-base font-sans-md margin-left-1 text-light">{{include.sub-heading}}</span></h3>
+{% endif %}
+  <p class="margin-0 margin-top-1">Consider</p>
   <ul class="margin-0">
     <li>{{ include.bullet-one }}</li>
     <li>{{ include.bullet-two }}</li>
     <li>{{ include.bullet-three }}</li>
   </ul>
-  <p class="border-left-1 border-{{include.color}} padding-left-2">
-    Example: {{ include.example }}
-  </p>
+  
+{% if include.color == "gold" %}
+  <p class="bg-{{include.color}} text-base-dark padding-2 radius-md">
+    <span class="text-uppercase font-sans-3xs text-bold">Example</span>  
+    <br/>
+    {{ include.example }}
+  </p>    
+{% else %}
+  <p class="bg-{{include.color}} text-white padding-2 radius-md">
+    <span class="text-uppercase font-sans-3xs text-bold">Example</span>  
+    <br/>
+    {{ include.example }}
+  </p>    
+{% endif %}
 </section>

@@ -118,6 +118,36 @@ With help from digital leaders across the federal space, we've developed pattern
   bullet-two="Who does it leave out?"
   bullet-three="Are users, especially those historically excluded, effectively represented?"
   example="Images and copy show a full diversity of American society, including ages, ethnicities, genders, and socio-economic groups."
+  color="primary" 
+%}
+
+{% include together/together-deia-section.html  
+  heading="Equity" 
+  sub-heading="Addressing the unique barriers people face, creating fairer experiences" 
+  bullet-one="Have we considered all possible audiences?"
+  bullet-two="Who benefits most? Who may be harmed?"
+  bullet-three="Who is being excluded or disempowered?"
+  example="Digital experiences support the unhoused, including the permanently unhoused, and those temporarily displaced due to disasters."
+  color="red" 
+%}
+
+{% include together/together-deia-section.html  
+  heading="Inclusivity" 
+  sub-heading="Cultivating a sense of belonging and feeling valued" 
+  bullet-one="Are we creating a sense of belonging?"
+  bullet-two="Have we included all the voices in feedback?"
+  bullet-three="Are the people most impacted meaningfully included?"
+  example="Historically marginalized groups are included on design teams and people from these groups provide feedback throughout the design cycle."
+  color="gold" 
+%}
+
+{% include together/together-deia-section.html  
+  heading="Accessibility" 
+  sub-heading="Supporting the ability of all people to understand and enjoy digital experiences" 
+  bullet-one="Can all users, including those using assistive technologies, effectively complete the interactions?"
+  bullet-two="Is the digital experience not only conformant to requirements, but also usable?"
+  bullet-three="Are we excluding anyone based on the technology they use?"
+  example="Whether a user is accessing services using a sip-and-puff or a screen reader, or on a pre-paid mobile phone, the user can successfully complete the necessary tasks."
   color="green" 
 %}
 

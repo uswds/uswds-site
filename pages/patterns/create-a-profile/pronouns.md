@@ -68,9 +68,9 @@ Provide a text entry field that supports a rich array of special characters and 
 
 ## Accessibility
 
-<strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs](https://designsystem.digital.gov/components/text-input/). 
+<strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/). 
 
-<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
+<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 ## Components used in this pattern
 

@@ -70,7 +70,7 @@ Present the user with a controlled vocabulary to accurately depict their biologi
 
 ## Usability Guidance
 
-See [usability guidance for radio buttons](https://designsystem.digital.gov/components/radio-buttons/#usability-guidance-radio-buttons). 
+See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons). 
 
 ## Accessibility
 
@@ -78,7 +78,7 @@ See [usability guidance for radio buttons](https://designsystem.digital.gov/comp
 
 <strong>Use proper labels and attributes.</strong> Each radio button should have a `<label>`. Associate the two by matching the `<label>`s for attribute to the `<input>`'s id attribute.
 
-<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
+<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 ## Components used in this pattern
 
@@ -172,11 +172,11 @@ Present the user with the tools to accurately depict their gender identity.
 
 <strong>Provide clear hint text.</strong> Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, e.g., "For example, man, woman, non-binary). Do allow users the opt out with a "Prefer not to answer" option.
 
-See [usability guidance for checkboxes](https://designsystem.digital.gov/components/checkbox/#usability-guidance-checkbox).
+See [usability guidance for checkboxes]({{ site.baseurl }}/components/checkbox/#usability-guidance-checkbox).
 
 ## Accessibility
 
-<strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs](https://designsystem.digital.gov/components/text-input/). 
+<strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/). 
 
 <strong>Do not use a fieldset and legend for a single checkbox.</strong> Only groups of related checkboxes should be contained within a `<fieldset>` and `<legend>`.
 
@@ -184,7 +184,7 @@ See [usability guidance for checkboxes](https://designsystem.digital.gov/compone
 
 <strong>Use a semantic tag.</strong> The checkbox should have a semantic tag for the `id` attribute, and its corresponding label should have the same value in its `for` attribute.
 
-<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
+<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 ## Components used in this pattern
 

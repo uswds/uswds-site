@@ -38,7 +38,7 @@ Respectful, inclusive voice and tone throughout the form – the questions, fiel
             <li>Design with mobile in mind. Consider the touch screen experience and how forms can be delivered in bandwidth-challenged environments.</li>
             <li>Progressively disclose information, guiding the user from simple to more difficult questions.</li>
             <li>Break questions into small, meaningful chunks. Only show questions on one micro-topic at a time.</li>
-            <li>Show the user where they are in the process. Because data entered may impact future steps, consider whether a component like the <a href="https://designsystem.digital.gov/components/step-indicator/">Step Indicator</a> is a fit for a specific form.</li>
+            <li>Show the user where they are in the process. Because data entered may impact future steps, consider whether a component like the <a href="{{ site.baseurl }}/components/step-indicator/">Step Indicator</a> is a fit for a specific form.</li>
             <li>Allow the user to complete the form in the order they choose, if possible. If changes to answers may impact steps already completed, inform the user of potential impacts and confirm before invalidating previous form entries.</li>
             <li>Allow the users to save and resume. Some users may need to take breaks as they complete a form on a difficult topic. If users can save and resume the form, tell them so up front, so they know this is an option.</li>
             <li>Do provide users with an option to get help (a phone number or chat, for example) if they get stuck or have a question.</li>
@@ -53,7 +53,7 @@ Respectful, inclusive voice and tone throughout the form – the questions, fiel
       <div class="do-dont__content">
           <ul>
             <li>Don’t assume your users are using a desktop or laptop computer, in the privacy of their own homes.</li>
-            <li>Don’t hide critical information — especially information that is useful or provides context — behind links that will navigate the user away from the form, even using a new window or tab. Users may find it disorienting or lose their place in the form. Consider whether using <a href="https://designsystem.digital.gov/components/modal/">modals</a> for critical explanatory content that may be required to understand and complete the task is necessary, or if on-screen help text can provide the necessary information.</li>
+            <li>Don’t hide critical information — especially information that is useful or provides context — behind links that will navigate the user away from the form, even using a new window or tab. Users may find it disorienting or lose their place in the form. Consider whether using <a href="{{ site.baseurl }}/components/modal/">modals</a> for critical explanatory content that may be required to understand and complete the task is necessary, or if on-screen help text can provide the necessary information.</li>
             <li>Avoid error messaging that is vague or places blame on the user. Users in stressful situations may find terse or unclear validation messaging frustrating and a barrier to completion.</li>
           </ul>
       </div>
@@ -68,7 +68,7 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
 
 ## Accessibility
 
-<strong>Customization.</strong> As you customize, make sure you follow <a href="https://designsystem.digital.gov/templates/form-templates/">accessibility guidelines for form templates</a> and the <a href="https://designsystem.digital.gov/components/form/">accessibility guidelines for form controls</a>.
+<strong>Customization.</strong> As you customize, make sure you follow <a href="{{ site.baseurl }}/templates/form-templates/">accessibility guidelines for form templates</a> and the <a href="{{ site.baseurl }}/components/form/">accessibility guidelines for form controls</a>.
 
 
 ## Components used in this pattern

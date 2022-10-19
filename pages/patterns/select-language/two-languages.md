@@ -72,7 +72,7 @@ Consider including a <strong>prominent in-page notice or link</strong> in additi
 
 ## Accessibility 
 
-<b>Customization.</b> As you customize, make sure you follow [accessibility guidelines for buttons](https://designsystem.digital.gov/components/button/#button-guidance).
+<b>Customization.</b> As you customize, make sure you follow [accessibility guidelines for buttons]({{ site.baseurl }}/components/button/#button-guidance).
 
 
 ## Components used in this pattern

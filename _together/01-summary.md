@@ -111,19 +111,15 @@ With help from digital leaders across the federal space, we've developed pattern
   </div>
 </div>            
 
-<div>
-  <h3 class="text-primary">Diversity:<span class="text-base font-alt-md margin-left-1">Ensuring a wide array of people are represented</span></h3>
-  <p class="margin-0">Consider</p>
-  <ul class="margin-0">
-    <li>Can a person see themselves in the design?</li>
-    <li>Who does it leave out?</li>
-    <li>Who does it leave out?</li>
-    <li>Are users, especially those historically excluded, effectively represented?</li>
-  </ul>
-  <p class="border-left-1 border-primary padding-left-2">
-    Example: Images and copy show a full diversity of American society, including ages, ethnicities, genders, and socio-economic groups.
-  </p>
-</div>
+{% include together/together-deia-section.html  
+  heading="Diversity" 
+  sub-heading="Ensuring a wide array of people are represented" 
+  bullet-one="Can a person see themselves in the design?"
+  bullet-two="Who does it leave out?"
+  bullet-three="Are users, especially those historically excluded, effectively represented?"
+  example="Images and copy show a full diversity of American society, including ages, ethnicities, genders, and socio-economic groups."
+  color="green" 
+%}
 
 <p class="measure-4">
   Developing patterns through the lens of inclusivity requires us to interrogate ourselves and our work at each step of the design process. We outlined a series of questions to consider:

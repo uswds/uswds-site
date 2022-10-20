@@ -116,10 +116,6 @@ defaults:
       type: security_updates
     values:
       layout: styleguide
-  - scope:
-      path: ""
-    values:
-      image: /img/uswds-logo/lg-black.png
 
 plugins:
   - jekyll-redirect-from
@@ -150,5 +146,7 @@ exclude:
 twitter:
   username: USWDS
   card: summary_large_image
+image:
+  path: /img/uswds-logo/lg-black.png
 
 env: dev

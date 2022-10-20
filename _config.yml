@@ -79,6 +79,10 @@ collections:
 defaults:
   - scope:
       path: ""
+    values:
+      image: /img/uswds-logo/lg-black.png
+  - scope:
+      path: ""
       type: components
     values:
       layout: component

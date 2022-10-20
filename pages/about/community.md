@@ -27,7 +27,7 @@ There are several ways to contribute to USWDS. Participating in the community is
 </p>
 
 ## Community Conduct
-When participating in this community, you must follow [Digital.gov Etiquette Guidelines](https://digital.gov/communities/manage-your-subscription/). Respect your peers, use plain language, be patient, practice constructive criticism, and stay organized. By participating in the community, you agree to abide by the [TTS Code of Conduct](https://handbook.tts.gsa.gov/code-of-conduct/).
+By voluntarily participating in this community, you agree to follow the [Digital.gov Community Guidelines](https://digital.gov/communities/manage-your-subscription/) and the [TTS Code of Conduct](https://handbook.tts.gsa.gov/code-of-conduct/). Respect your peers, use plain language, be patient, practice constructive criticism, and stay organized.
 
 ## Community Managers
 

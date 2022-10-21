@@ -27,7 +27,29 @@ summary_sections:
   - heading: Research
     description: |-
       In March 2022, the USWDS team brought together researchers, designers, and engineers to conduct research into inclusive design patterns.
-  
+
+bullet_list_diversity:
+- Have we considered all possible audiences?
+- Who does it leave out?
+- Is success defined for a broad range of users?
+- Are users, especially those historically excluded, effectively represented?
+
+bullet_list_equity:
+- Who may bear disproportionate opportunity costs or burdens?
+- Who may exert disproportionately more effort or resources to participate?
+- Who benefits most? Who is most vulnerable to harm?
+
+bullet_list_inclusivity:
+- Can a person see themselves in the design?
+- Are we creating a sense of belonging?
+- Are diverse voices included in the feedback?
+- Are the experiences of people most impacted meaningfully reflected?
+- Who is being excluded or disempowered?
+
+bullet_list_accessibility:
+- Can all users, including those using assistive technologies, effectively complete the interactions?
+- Is the digital experience not only conformant to requirements, but equally usable?
+- Are we excluding anyone based on the technology they use?
 ---
 <style>
   .bg-indigo-cool-70 .footnote {
@@ -113,10 +135,8 @@ With help from digital leaders across the federal space, we've developed pattern
 
 {% include together/together-deia-section.html  
   heading="Diversity" 
-  sub-heading="Ensuring a wide array of people are represented" 
-  bullet-one="Can a person see themselves in the design?"
-  bullet-two="Who does it leave out?"
-  bullet-three="Are users, especially those historically excluded, effectively represented?"
+  sub-heading="Ensuring a wide array of people are represented"
+  bullets=page.bullet_list_diversity
   example="Images and copy show a full diversity of American society, including ages, ethnicities, genders, and socio-economic groups."
   color="primary" 
 %}
@@ -124,29 +144,23 @@ With help from digital leaders across the federal space, we've developed pattern
 {% include together/together-deia-section.html  
   heading="Equity" 
   sub-heading="Addressing the unique barriers people face, creating fairer experiences" 
-  bullet-one="Have we considered all possible audiences?"
-  bullet-two="Who benefits most? Who may be harmed?"
-  bullet-three="Who is being excluded or disempowered?"
+  bullets=page.bullet_list_equity
   example="Digital experiences support the unhoused, including the permanently unhoused, and those temporarily displaced due to disasters."
   color="red" 
 %}
 
 {% include together/together-deia-section.html  
   heading="Inclusivity" 
-  sub-heading="Cultivating a sense of belonging and feeling valued" 
-  bullet-one="Are we creating a sense of belonging?"
-  bullet-two="Have we included all the voices in feedback?"
-  bullet-three="Are the people most impacted meaningfully included?"
+  sub-heading="Cultivating a sense of belonging and feeling valued"
+  bullets=page.bullet_list_inclusivity 
   example="Historically marginalized groups are included on design teams and people from these groups provide feedback throughout the design cycle."
   color="gold" 
 %}
 
 {% include together/together-deia-section.html  
   heading="Accessibility" 
-  sub-heading="Supporting the ability of all people to understand and enjoy digital experiences" 
-  bullet-one="Can all users, including those using assistive technologies, effectively complete the interactions?"
-  bullet-two="Is the digital experience not only conformant to requirements, but also usable?"
-  bullet-three="Are we excluding anyone based on the technology they use?"
+  sub-heading="Supporting the ability of all people to understand and enjoy digital experiences"
+  bullets=page.bullet_list_accessibility
   example="Whether a user is accessing services using a sip-and-puff or a screen reader, or on a pre-paid mobile phone, the user can successfully complete the necessary tasks."
   color="green" 
 %}

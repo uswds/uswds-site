@@ -85,9 +85,9 @@ If you won’t be addressing correspondence, avoid asking for the user’s title
 <strong>Label each field.</strong> Be sure each field is properly labeled. 
 
 ## Accessibility 
-<strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="https://designsystem.digital.gov/components/text-input/">guidelines for all text inputs</a>. 
+<strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 
 
-<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates](https://designsystem.digital.gov/templates/form-templates/) and the [accessibility guidelines for form controls](https://designsystem.digital.gov/components/form/).
+<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 ## Components used in this pattern
 
@@ -127,7 +127,7 @@ If you won’t be addressing correspondence, avoid asking for the user’s title
 </div>
 
 ## Related
-- <a href="https://designsystem.digital.gov/templates/form-templates/name-form/">Name form</a> template
+- <a href="{{ site.baseurl }}/templates/form-templates/name-form/">Name form</a> template
 
 ## References
 - Diacritics and special characters by language. (n.d.) Retrieved July 15, 2022, from [https://web.library.yale.edu/cataloging/music/diacrit](https://web.library.yale.edu/cataloging/music/diacrit) 

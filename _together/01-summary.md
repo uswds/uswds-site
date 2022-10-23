@@ -157,7 +157,7 @@ With help from digital leaders across the federal space, we've developed pattern
   heading="Diversity" 
   sub-heading="Ensuring a wide array of people are represented"
   bullets=page.bullet_list_diversity
-  example="Images and copy show a full diversity of American society, including ages, ethnicities, genders, and socio-economic groups."
+  example="Images and copy show a full diversity of American society, including ages, ethnicities, genders, and socio-economic groups, and more."
   color="primary" 
 %}
 
@@ -181,7 +181,7 @@ With help from digital leaders across the federal space, we've developed pattern
   heading="Accessibility" 
   sub-heading="Supporting the ability of all people to understand and enjoy digital experiences"
   bullets=page.bullet_list_accessibility
-  example="Whether a user is accessing services using a sip-and-puff or a screen reader, or on a pre-paid mobile phone, the user can successfully complete the necessary tasks."
+  example="Whether a user is accessing services using a sip-and-puff or a screen reader, or on a pre-paid mobile phone, the user can successfully complete the necessary tasks with equal effort."
   color="green" 
 %}
 
@@ -209,11 +209,11 @@ With help from digital leaders across the federal space, we've developed pattern
 </div>
 
 <p class="measure-4" markdown="1">
-  The research resulted in the release of 3 pattern families consisting of 17 individual patterns, along with new and updated components and page templates. More than 30 individuals across 20 teams shared their experiences, work, and perspectives to inform the design[^3]. We interviewed individuals in a variety of roles and across many different agencies, focusing on <a href="https://www.performance.gov/cx/assets/files/HISP-listing-2021.pdf">High Impact Service Providers (HISPs)</a>.
+  More than 30 individuals across 20 teams shared their experiences, work, and perspectives to inform the design[^3]. We interviewed individuals in a variety of roles and across many different agencies, focusing on <a href="https://www.performance.gov/cx/assets/files/HISP-listing-2021.pdf">High Impact Service Providers (HISPs)</a>. We also conducted research outside of government, particularly in the healthcare, technology, and higher education spaces to understand best practices (and notable failures) in order to incorporate these learnings into our patterns.
 </p>
 
 <p class="measure-4">
-  We also conducted research outside of government, particularly in the healthcare, technology, and higher education spaces to understand best practices (and notable failures) in order to incorporate these learnings into our patterns.
+  The research resulted in the release of 3 pattern families consisting of 17 individual patterns, along with new and updated components and page templates. 
 </p>
 
 <h3>Our objective was to:</h3>

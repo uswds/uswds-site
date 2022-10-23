@@ -142,6 +142,17 @@ With help from digital leaders across the federal space, we've developed pattern
   </div>
 </div>            
 
+<div class=" measure-4">
+  <h3>A commitment to the practice of inclusivity</h3>
+  <p>
+    While we may never reach the aspirational goal of a totally inclusive experience, the process of attempting to fulfill the aspiration leads to better experiences overall. Developing patterns through the lens of inclusivity requires us to interrogate ourselves and our work at each step of the design process. 
+  </p>
+
+  <p>
+    While we may never reach the aspirational goal of a totally inclusive experience, the process of attempting to fulfill the aspiration leads to better experiences overall. Developing patterns through the lens of inclusivity requires us to interrogate ourselves and our work at each step of the design process. 
+  </p>
+</div>
+
 {% include together/together-deia-section.html  
   heading="Diversity" 
   sub-heading="Ensuring a wide array of people are represented"
@@ -175,18 +186,7 @@ With help from digital leaders across the federal space, we've developed pattern
 %}
 
 <p class="measure-4">
-  Developing patterns through the lens of inclusivity requires us to interrogate ourselves and our work at each step of the design process. We outlined a series of questions to consider:
-</p>
-
-<ul>
-  <li>What are our biases and assumptions?</li>
-  <li>Who is involved in our design process?</li>
-  <li>Are we reaching a broad and diverse group of participants?</li>
-  <li>Who benefits from our design? Who may be harmed? Who is left out?</li>
-</ul>
-
-<p class="measure-4">
-  Developing patterns through the lens of inclusivity also means that we need to be humble enough to acknowledge that we don’t know everything today. As we grow and learn the patterns will need to change. Today’s solution is not tomorrow’s.
+  Developing patterns through the lens of inclusivity also means that we need the humility to acknowledge that we don’t know everything today. As we grow and learn the patterns will need to change. Today’s solution is not tomorrow’s.
 </p>
 
 

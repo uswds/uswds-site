@@ -122,6 +122,13 @@ With help from digital leaders across the federal space, we've developed pattern
   </figcaption>
 </figure>
 
+<div class=" measure-4">
+  <h3>The North Star</h3>
+  <p>
+    The goal in applying DEIA principles and practices to interaction design is to ensure digital experiences that meet people where they are, providing welcoming, usable, culturally responsive, and thoughtfully crafted experiences that acknowledge the full range of human differences. This is as much a process as a practice, as the goal will likely always be a little out of reach. However, it is important that we always keep our North Star in view:
+  </p>
+</div>
+
 <div class="grid-row tablet:margin-x-neg-205">
   <div class="desktop:grid-col-6 desktop:padding-x-205">
     {% include together/together-finding-item.html  heading="Diversity" text="Diversity in design is about making sure all people are represented." border="blue"%}

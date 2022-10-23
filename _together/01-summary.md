@@ -13,7 +13,7 @@ chapter: true
 summary_sections:
   - heading: Overview
     description: |-
-      For the millions of people who interact with the federal government online each year the experience can be frustrating and alienating. Digital teams across the federal government are committed to delivering the very best user experiences they can, but sometimes lack easy access to the skills and guidance that would help them to do so. In the spirit of offering additional guidance and examples, the U.S. Web Design System is excited to provide a new library of design patterns focused on key digital interactions.
+      Millions of people interact with government websites and digital services each year. Digital teams across the federal space are committed to delivering the best experience possible for their large, diverse audiences. Still, many teams can lack easy access to practical resources that support this goal. To help address this need, the U.S. Web Design System (USWDS) is excited to provide a new library of guidance and examples focused on key digital interactions — what we call design patterns — that foster effective, inclusive, and equitable digital experiences.
 
   - heading: What are patterns, anyway?
     description: |-

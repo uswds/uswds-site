@@ -7,7 +7,7 @@ meta:
 
 permalink: /together/
 slug: together
-subhead: Working together to remove barriers and create inclusive digital experiences for all. 
+subhead: Working together to reduce barriers to participation through every interaction. 
 chapter: true
 
 summary_sections:

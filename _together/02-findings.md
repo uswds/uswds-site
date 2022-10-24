@@ -17,15 +17,15 @@ summary_sections:
 
   - heading: Finding the best solution in a complex environment
     description: |-
-      Designing effective, usable digital solutions is not an easy endeavor, and digital teams are wrestling with how to incorporate the sometimes confusing and constantly evolving advice emerging from the DEIA space. While federal digital teams have always designed for “everyone,” there is renewed focus on ensuring that each individual feels welcome, heard, and supported in the digital experience. This is no easy task.
+      Digital teams are wrestling with how to incorporate the sometimes confusing and constantly evolving advice emerging from the DEIA space. While federal digital teams have always designed for “everyone,” there is renewed focus on ensuring that each individual feels welcome, heard, and supported in the digital experience. This is no easy task.
 
   - heading: The process of being inclusive is as important as the design
     description: |-
-     Many of the interviewees — digital teams and DEIA experts alike — worried about the lack of diversity on design teams and as user testing participants. Design teams are often not representative of the full diversity of the potential users of the systems and experiences they are creating. Many teams are trying to figure out ways to include people with a wider range of lived experiences.
+     Many of the interviewees — digital teams and DEIA experts alike — worried about the lack of diversity on design teams and among user testing participants. A small design team can never be representative of the full diversity of the potential users of the systems and experiences they are creating. Many teams are trying to figure out ways to include people with a wider range of lived experiences.
 
   - heading: Personal data is a reflection of an individual’s sense of self
     description: |-
-      Many of the digital solutions we create rely on some amount of personal information: like name, address, and Social Security Number. Solutions that aren’t inclusive of everyone can be very alienating. Interviewees identified some examples of alienating user experiences:
+      Many of the digital solutions we create rely on some amount of personal information like name, address, and Social Security Number. Solutions that aren’t inclusive of everyone can be very alienating. Interviewees identified some examples of alienating user experiences:
 
   - heading: Complex forms offer unique challenges
     description: |-
@@ -78,7 +78,7 @@ summary_sections:
         Figuring out how to create DEIA-supportive solutions while aligning with existing reporting requirements.
       </li>
       <li>
-        Balancing new solutions with the needs (and limitations) of legacy back-end systems.
+        Balancing new solutions with the needs — and limitations — of legacy back-end systems.
       </li>
       <li>
         Ensuring that the solutions they provide also provide adequate privacy protection for individuals and families.
@@ -137,7 +137,8 @@ Forms can be frustrating and alienating, especially if the user is recovering fr
 Some of the specific insights we heard regarding complex forms include:
         
         
-* Users need to know why information is required, what we are using it for, and how it will be protected.
+* Users need to know why information is required and what we are using it for.
+* Users need clear explanations of how their information will be safeguarded and their privacy protected.
 * Some users, especially those in difficult situations, may need to be able to complete a form over several sessions.
 * Not clearly stating upfront what information will be required to complete the form can lead to form abandonment.
 * Forms that make assumptions — such as that all people in a family have the same last name — can be very frustrating for people to complete[^7].

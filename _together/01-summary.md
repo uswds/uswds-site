@@ -74,7 +74,7 @@ bullet_list_accessibility:
 <div class=" measure-4">
   {% include together/together-quote.html quote="The Federal Government must deliver a simple, seamless, and secure customer experience, on par with or more effective than leading consumer experiences. Irrespective of people’s age, location, digital savvy, disability, education, or English proficiency, the American people deserve a Government that understands who they are, what they need, and how best to deliver for them. Every interaction between the Government and the public is an opportunity to deliver the services people expect and deserve." source="President’s Management Agenda Priority 2 Executive Order" source-link="https://www.performance.gov/pma/cx/" hide-icon="true"%}
   <p>
-    USWDS's Inclusive Design Patterns project was developed in support of the Biden-Harris Administration’s President’s Management Agenda <a href="https://www.performance.gov/pma/cx/">Priority 2 Executive Order</a> (Delivering Excellent, Equitable, and Secure Federal Services), <a href="https://www.justice.gov/crt/executive-order-13166">Executive Order 13166</a> (Improving Access to Services for Persons with Limited English Proficiency), <a href="https://www.whitehouse.gov/briefing-room/presidential-actions/2021/12/13/executive-order-on-transforming-federal-customer-experience-and-service-delivery-to-rebuild-trust-in-government/">Executive Order 14058</a> (Transforming Federal Customer Experience and Service Delivery to Rebuild Trust in Government), and <a href="https://www.performance.gov/equity/">Executive Order 13985</a> (Advancing Racial Equity and Underserved Communities through the Federal Government) as well as <a href="https://www.section508.gov/">Section 508</a> and the <a href="https://www.congress.gov/bill/115th-congress/house-bill/5759/text">21st Century Integrated Digital Experience Act</a>.
+    USWDS's Inclusive Design Patterns project was created in support of the Biden-Harris Administration’s President’s Management Agenda <a href="https://www.performance.gov/pma/cx/">Priority 2 Executive Order</a> (Delivering Excellent, Equitable, and Secure Federal Services), <a href="https://www.justice.gov/crt/executive-order-13166">Executive Order 13166</a> (Improving Access to Services for Persons with Limited English Proficiency), <a href="https://www.whitehouse.gov/briefing-room/presidential-actions/2021/12/13/executive-order-on-transforming-federal-customer-experience-and-service-delivery-to-rebuild-trust-in-government/">Executive Order 14058</a> (Transforming Federal Customer Experience and Service Delivery to Rebuild Trust in Government), and <a href="https://www.performance.gov/equity/">Executive Order 13985</a> (Advancing Racial Equity and Underserved Communities through the Federal Government) as well as <a href="https://www.section508.gov/">Section 508</a> and the <a href="https://www.congress.gov/bill/115th-congress/house-bill/5759/text">21st Century Integrated Digital Experience Act</a>.
   </p>
   <p>
     The pattern guidance we're publishing is designed to help remove barriers to online transactions and interactions, helping the public access government services and programs. As we spoke with digital teams across the federal space we learned that regardless of program or mission, teams are actively wrestling with these issues: how to create effective, inclusive, and equitable digital experiences. Some teams were further along. We were fortunate to learn from these colleagues and to have their perspectives inform our work. Other teams were in the early stages and were looking for additional guidance from a resource like USWDS.
@@ -131,39 +131,43 @@ With help from digital leaders across the federal space, we've developed pattern
 
 <div class="grid-row tablet:margin-x-neg-205">
   <div class="desktop:grid-col-6 desktop:padding-x-205">
-    {% include together/together-finding-item.html  heading="Diversity" text="Diversity in design is about making sure all people are represented." border="blue"%}
+    {% include together/together-finding-item.html  heading="Diversity" text="Diversity in design is about making sure a broad variety of viewpoints, needs, and perspectives are represented." border="blue"%}
 
-    {% include together/together-finding-item.html heading="Equity" text="Equity in design addresses the unique barriers people face, creating fairer experiences." border="red" %}
+    {% include together/together-finding-item.html heading="Equity" text="Equity in design addresses the unique barriers people face, creating fairer outcomes." border="red" %}
   </div>
   <div class="desktop:grid-col-6 desktop:padding-x-205">
-    {% include together/together-finding-item.html heading="Inclusivity" text="Inclusivity in design cultivates a sense of belonging and feeling valued." border="gold" %}
+    {% include together/together-finding-item.html heading="Inclusivity" text="Inclusivity in design cultivates a sense of belonging and reduces experience disparities." border="gold" %}
 
-    {% include together/together-finding-item.html  heading="Accessibility" text="Accessibility in design ensures that all people can understand and enjoy digital experiences." border="green" %}
+    {% include together/together-finding-item.html  heading="Accessibility" text="Accessibility in design ensures that all people can equally access, use, and understand digital experiences." border="green" %}
   </div>
 </div>            
 
 <div class=" measure-4">
   <h3>A commitment to the practice of inclusivity</h3>
   <p>
-    While we may never reach the aspirational goal of a totally inclusive experience, the process of attempting to fulfill the aspiration leads to better experiences overall. Developing patterns through the lens of inclusivity requires us to interrogate ourselves and our work at each step of the design process. 
+    While we may never reach the aspirational goal of a totally inclusive experience, the <em>process</em> of attempting to fulfill the aspiration leads to better experiences overall. Developing patterns through the lens of inclusivity requires us to interrogate ourselves and our work at each step of the design process. 
   </p>
 
   <p>
     While we may never reach the aspirational goal of a totally inclusive experience, the process of attempting to fulfill the aspiration leads to better experiences overall. Developing patterns through the lens of inclusivity requires us to interrogate ourselves and our work at each step of the design process. 
   </p>
+
+  <p>
+    Part of that process includes thinking through practical applications of what it means to apply DEIA principles, including:
+  </p>
 </div>
 
 {% include together/together-deia-section.html  
   heading="Diversity" 
-  sub-heading="Ensuring a wide array of people are represented"
+  sub-heading="Ensuring a wide array of people, perspectives, and needs are represented"
   bullets=page.bullet_list_diversity
-  example="Images and copy show a full diversity of American society, including ages, ethnicities, genders, and socio-economic groups, and more."
+  example="Images and copy show a full diversity of American society, such as ages, ethnicities, genders, socio-economic groups, and more."
   color="primary" 
 %}
 
 {% include together/together-deia-section.html  
   heading="Equity" 
-  sub-heading="Addressing the unique barriers people face, creating fairer experiences" 
+  sub-heading="Addressing the unique barriers people face, creating fairer outcomes" 
   bullets=page.bullet_list_equity
   example="Digital experiences support the unhoused, including the permanently unhoused, and those temporarily displaced due to disasters."
   color="red" 
@@ -171,7 +175,7 @@ With help from digital leaders across the federal space, we've developed pattern
 
 {% include together/together-deia-section.html  
   heading="Inclusivity" 
-  sub-heading="Cultivating a sense of belonging and feeling valued"
+  sub-heading="Cultivating a sense of belonging and ensuring an equal experience"
   bullets=page.bullet_list_inclusivity 
   example="Historically marginalized groups are included on design teams and people from these groups provide feedback throughout the design cycle."
   color="gold" 
@@ -179,7 +183,7 @@ With help from digital leaders across the federal space, we've developed pattern
 
 {% include together/together-deia-section.html  
   heading="Accessibility" 
-  sub-heading="Supporting the ability of all people to understand and enjoy digital experiences"
+  sub-heading="Supporting the ability of all people to equally access, understand and effectively engage in digital experiences"
   bullets=page.bullet_list_accessibility
   example="Whether a user is accessing services using a sip-and-puff or a screen reader, or on a pre-paid mobile phone, the user can successfully complete the necessary tasks with equal effort."
   color="green" 

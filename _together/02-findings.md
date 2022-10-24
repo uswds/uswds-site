@@ -117,9 +117,11 @@ And the realities of getting solutions out to the public quickly come into play.
 {% elsif forloop.index == 4 %}
 <div class="measure-4">
 <p class="measure-4" markdown="1">
+
 * Forms that require addresses to be completed, but don’t accommodate different formats — or provide options for someone who is unhoused either permanently, or temporarily after a disaster.
 * Name fields that expect users to have both a first and last name, and don’t accommodate single-name individuals or individuals with multiple last names[^2].
 * Forms that require self-identification of biological sex, gender identity, or race and ethnicity — but don’t have options that are consistent with how individuals self-identify[^3].
+
 </p>
 
 {% include together/together-quote.html quote="Addresses can get a little tricky on reservations." source="HISP Digital team member"%}
@@ -143,11 +145,13 @@ Some of the specific insights we heard regarding complex forms include:
 </p>
 
 <p class="measure-4" markdown="1">
+
 * Users need to know why information is required and what we are using it for.
 * Users need clear explanations of how their information will be safeguarded and their privacy protected.
 * Some users, especially those in difficult situations, may need to be able to complete a form over several sessions.
 * Not clearly stating upfront what information will be required to complete the form can lead to form abandonment.
 * Forms that make assumptions — such as that all people in a family have the same last name — can be very frustrating for people to complete[^7].
+
 </p>
          
 {% include together/together-quote.html quote="Victims/survivors have expressed trouble in filling out forms due to the progression of questions." source="HISP Digital team member"%}

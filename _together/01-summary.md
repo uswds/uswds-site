@@ -161,7 +161,7 @@ With help from digital leaders across the federal space, we've developed pattern
   heading="Diversity" 
   sub-heading="Ensuring a wide array of people, perspectives, and needs are represented"
   bullets=page.bullet_list_diversity
-  example="Images and copy show a full diversity of American society, such as ages, ethnicities, genders, socio-economic groups, and more."
+  example="Images and copy show a full diversity of identity in American society, such as ages, ethnicities, genders, socio-economic groups, and more."
   color="primary" 
 %}
 

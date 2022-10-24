@@ -138,7 +138,7 @@ Forms can be frustrating and alienating, especially if the user is recovering fr
 
 {% include together/together-quote.html quote="People are reluctant to give information because of the lack of trust and any number of concerns. [We need help] building trust into the design process." source="HISP Digital team member"%}
 
-<p class="measure-4" markdown="1">     
+<p class="measure-4">     
 Some of the specific insights we heard regarding complex forms include:
 </p>
 
@@ -152,7 +152,7 @@ Some of the specific insights we heard regarding complex forms include:
          
 {% include together/together-quote.html quote="Victims/survivors have expressed trouble in filling out forms due to the progression of questions." source="HISP Digital team member"%}
 
-<p class="measure-4" markdown="1">
+<p class="measure-4">
 Forms are a real challenge for digital teams as they try to meet both the needs of the public and those of the program. 
 </p>
 </div>

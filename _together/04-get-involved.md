@@ -26,6 +26,8 @@ As people working in the federal space we all need to advocate for inclusive exp
 
 <div class="measure-4" markdown="1">
 * Include team members with diverse experiences and perspectives.
+* Emphasize impact over intent.
+* Uncover inequities and disparities through disaggregation.
 * Lead with community voices and needs — emphasize people over process[^2].
 * Practice transparency and integrity in your actions.
 * Challenge your own assumptions and biases. Recognize that there is no universal baseline for experiences.

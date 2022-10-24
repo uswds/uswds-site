@@ -121,6 +121,8 @@ And the realities of getting solutions out to the public quickly come into play.
 * Name fields that expect users to have both a first and last name, and don’t accommodate single-name individuals or individuals with multiple last names[^2].
 * Forms that require self-identification of biological sex, gender identity, or race and ethnicity — but don’t have options that are consistent with how individuals self-identify[^3].
 
+
+
 {% include together/together-quote.html quote="Addresses can get a little tricky on reservations." source="HISP Digital team member"%}
           
 Many of the digital teams are trying to figure out what changes they need to make to accommodate a more diverse public[^4]. They recognize that personal information is the primary foundational information we ask from people, and when what we ask for doesn’t allow users to confidently and accurately self-identify in their answers, we may have created a bad experience — and an experience that erodes trust — from the start[^5].

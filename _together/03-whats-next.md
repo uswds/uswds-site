@@ -56,7 +56,7 @@ summary_sections:
   <div class="desktop:padding-x-10 tablet:padding-4">
       <h3 class="text-indigo-10 margin-top-3">Pattern-driven development</h3>
       <p class="text-white measure-4">
-        As the design system matures, you will likely see patterns beginning to drive component and feature development. We will identify key interactions, document patterns, and develop components in support of these patterns. We see this as an important human-centered shift to how we’ll approach development, how we’ll choose components, and how we’ll approach modularity and interaction between components.</p>
+        As the design system matures, you will likely see patterns beginning to drive component and feature development. We will identify key interactions, document patterns, and develop components in support of these patterns. We see this as an important human-centered shift to how we’ll approach development, how we’ll choose components, and how we’ll approach modularity and interaction between components, and how we'll measure and evaluate success and opportunities for improvement.</p>
     </div>
   </section>
 {% include together/together-color-hr.html %}

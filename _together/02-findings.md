@@ -144,6 +144,8 @@ Some of the specific insights we heard regarding complex forms include:
 * Some users, especially those in difficult situations, may need to be able to complete a form over several sessions.
 * Not clearly stating upfront what information will be required to complete the form can lead to form abandonment.
 * Forms that make assumptions — such as that all people in a family have the same last name — can be very frustrating for people to complete[^7].
+
+
             
 {% include together/together-quote.html quote="Victims/survivors have expressed trouble in filling out forms due to the progression of questions." source="HISP Digital team member"%}
             

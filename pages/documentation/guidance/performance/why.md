@@ -19,7 +19,7 @@ Conversion is the rate at which customers of a website product take a desired ac
 
 Performance has been known to be an influencing factor when it comes to the conversion rate for a site. Regardless of the user interface and its purpose, multiple studies have shown that improving performance consistently improves conversion rates over a wide range of applications. There are real-world examples of how performance can affect conversion, such as:
 
-- [Getelastic.com notes, Google found out that slowing search results by just 4/10ths of a second would reduce the number of searches by 8,000,000 per day](http://www.getelastic.com/site-speed-infographic/).
+- [Amazon calculated that a page load slowdown of just one second could cost it $1.6 billion in sales each year](https://www.fastcompany.com/1825005/how-one-second-could-cost-amazon-16-billion-sales).
 
 How fast a site loads is often the first indication of what a web experience will be for a user, and a slow loading site can cause a user to quickly lose trust and patience with a website.
 

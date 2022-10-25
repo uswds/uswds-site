@@ -3,7 +3,7 @@
   - Tab spacing matters in .yml files. Incorrect spacing can cause errors.
   - All comments here are instructional only and should be deleted if copied into the changelog .yml file.
   First, declare general page settings -->
-title: [Add topic title. This should be only 1-2 words. Ex: "Banner", "Accessibility"]
+pageTitle: [Add page title.]
 pageType: [Standard values: Component, Documentation, Pattern, Template, Token, Utility]
 isCodePage: [Indicate if the related page is a component page. Standard values: true, false]
 changelogURL:[Provide url for the package CHANGELOG.md. Not all pages will have a related CHANGELOG.md file.]

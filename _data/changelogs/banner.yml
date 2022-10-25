@@ -1,16 +1,15 @@
-pageName: Banner
+pageTitle: Banner
 pageType: Component
 changelogURL:
 items:
-  # - date: Unreleased
-  #   description:
-  #     summary: Updated ARIA attributes in the component code.
-  #     additional: Updated the <code>aria-label</code> in English versions of banner and added the <code>aria-hidden</code> attribute to the flag icon.
-  #   isBreaking: 'No'
-  #   isCodeUpdate: true
-  #   pr: 4925
-  #   repo: uswds
-  #   version: 3.2.0
+  - date: Unreleased
+    summary: Updated ARIA attributes in the component code.
+    moreSummary: Updated the <code>aria-label</code> in English versions of banner and added the <code>aria-hidden</code> attribute to the flag icon.
+    isBreaking: 'No'
+    isCodeUpdate: true
+    pr: 4925
+    repo: uswds
+    version: 3.2.0
   - date: 2022-08-05
     summary: Added <code>type="button"</code> to the component code.
     moreSummary:

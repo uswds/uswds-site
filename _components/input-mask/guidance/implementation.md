@@ -1,1 +1,12 @@
-The examples are common input masks, however you can alter the code to meet the needs of your project. In order to extend the functionality of the input mask, you must include the `data-placeholder` attribute as the visible input mask, using the underscore `_` to function as expected characters. You may also use dashes `-` and the forward slash `/` to help build a viable mask, but these will not count as the intended characters for the value. This placeholder must relate directly to the regular expression (regex) pattern as the `pattern` attribute of the `<input>` tag. Additionally, make sure to add a descriptive `title` to the `<input>`, as it will be read by a screen reader and help describe the desired input. 
+The examples are common input masks, however you can alter the code to meet the needs of your project. In order to extend the functionality of the input mask, you must include the `placeholder` attribute as the visible input mask, using the underscore `_` to function as expected characters. You may also use dashes `-` and the forward slash `/` to help build a viable mask, but these will not count as the intended characters for the value. This placeholder must relate directly to the regular expression (regex) pattern as the `pattern` attribute of the `<input>` tag. Additionally, make sure to add the `inputmode="numeric"` attribute and setting so the numeric keypad is displayed.
+
+<h3>The input mask and alphanumeric characters</h3>
+Input mask examples inlcude an alphanumeric version which can be cusomized to meet your needs. To implement an alphanumeric input mask, you will need to add the attribute `data-charset` to the input tag. Similar to the `pattern` attribute, include an underscore `_` for each number and an `X` for each required letter. We recommend changing inputmode to `text` so the full keyboard is available to your user.
+
+If your input mask calls for a pattern such as _1A2 B3C_, you would implement that by adding the following attributes and character formatting to your input element:
+
+```
+placeholder="___ ___"
+pattern="\w\d\w \d\w\d"
+data-charset="X_X X_X"
+```

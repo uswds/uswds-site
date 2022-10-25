@@ -4,20 +4,19 @@
   - All comments here are instructional only and should be deleted if copied into the changelog .yml file.
   First, declare general page settings -->
 title: [Add topic title. This should be only 1-2 words. Ex: "Banner", "Accessibility"]
-pageURL: [Path to related page]
+pageType: [Standard values: Component, Documentation, Pattern, Template, Token, Utility]
 isCodePage: [Indicate if the related page is a component page. Standard values: true, false]
 changelogURL:[Provide url for the package CHANGELOG.md. Not all pages will have a related CHANGELOG.md file.]
 <!-- Next, add a list of changelog items in reverse chronological order. -->
 items:
   - date: [Add item release date in YYYY-MM-DD format.]
-    description:
       <!--
         Add a concise description of the change. This can often be pulled from the related release notes or PR summary.
         Summaries should be written in the past tense and use a consistent set of verbs to begin each statement:
         Examples: "Fixed", "Added", "Improved", "Optimized", "Updated", "Introduced"
       -->
-      summary: [Add a short, clear sentence that summarizes the change. This sentence will link to the related PR.]
-      additional: [If needed, add more detail in 1-2 sentences.]
+    summary: [Add a short, clear sentence that summarizes the change. This sentence will link to the related PR.]
+    moreSummary: [If needed, add more detail in 1-2 sentences.]
     isBreaking: [Indicate if this is a breaking change. Standard values: 'Yes', 'No', 'Potential']
     isCodeUpdate: [Indicate if this update includes code updates. Standard values: true, false]
     pr: [Add related pull request (PR) number. Ex: 4695]
@@ -25,15 +24,13 @@ items:
     version:[Add related USWDS or package release number. Ex: 3.1.0. Guidance pages will not have a related release.]
 
 <!-- Empty data template -->
-title:
-pageURL:
-isCodePage:
+pageTitle:
+pageType:
 changelogURL:
 items:
   - date:
-    description:
-      summary:
-      additional:
+    summary:
+    moreSummary:
     isBreaking:
     isCodeUpdate:
     pr:

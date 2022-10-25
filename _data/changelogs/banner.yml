@@ -1,6 +1,5 @@
-title: Banner
-pageURL: components/banner
-isCodePage: true
+pageName: Banner
+pageType: Component
 changelogURL:
 items:
   # - date: Unreleased
@@ -13,90 +12,80 @@ items:
   #   repo: uswds
   #   version: 3.2.0
   - date: 2022-08-05
-    description:
-      summary: Added <code>type="button"</code> to the component code.
-      additional:
+    summary: Added <code>type="button"</code> to the component code.
+    moreSummary:
     isBreaking: 'Potential'
     isCodeUpdate: true
     pr: 4695
     repo: uswds
     version: 3.1.0
   - date: 2022-06-17
-    description:
-      summary: Updated <code>uswds-init.js</code> to better suppress flashing content.
-      additional:
+    summary: Updated <code>uswds-init.js</code> to better suppress flashing content.
+    moreSummary:
     isBreaking: 'No'
     isCodeUpdate: true
     pr: 4676
     repo: uswds
     version: 3.0.2
   - date: 2022-06-17
-    description:
-      summary: Updated flag icon to be high resolution.
-      additional:
+    summary: Updated flag icon to be high resolution.
+    moreSummary:
     isBreaking: 'No'
     isCodeUpdate: true
     pr: 4792
     repo: uswds
     version: 3.0.2
   - date: 2022-04-10
-    description:
-      summary: Added styling for high-contrast mode.
-      additional:
+    summary: Added styling for high-contrast mode.
+    moreSummary:
     isBreaking: 'No'
     isCodeUpdate: true
     pr: 4610
     repo: uswds
     version: 2.13.3
   - date: 2021-03-02
-    description:
-      summary: Updated guidance to identify banner as a core component.
-      additional:
+    summary: Updated guidance to identify banner as a core component.
+    moreSummary:
     isBreaking:
     isCodeUpdate: false
     pr: 1136
     repo: uswds-site
     version:
   - date: 2020-12-17
-    description:
-      summary: Introduced <code>uswds-init.js</code> to prevent banner flash.
-      additional: This script prevents the banner from flashing its content on page load and shifting content.
+    summary: Introduced <code>uswds-init.js</code> to prevent banner flash.
+    moreSummary: This script prevents the banner from flashing its content on page load and shifting content.
     isBreaking: 'No'
     isCodeUpdate: true
     pr: 3867
     repo: uswds
     version: 2.10.0
   - date: 2020-12-17
-    description:
-      summary: Updated decorative SVGs to be more resilient.
-      additional: Added the <code>aria-hidden="true"</code> property on decorative images and added <code>focusable="false"</code> to SVG elements meant to be images.
+    summary: Updated decorative SVGs to be more resilient.
+    moreSummary: Added the <code>aria-hidden="true"</code> property on decorative images and added <code>focusable="false"</code> to SVG elements meant to be images.
     isBreaking: 'No'
     isCodeUpdate: true
     pr: 3892
     repo: uswds
     version: 2.10.0
   - date: 2020-07-09
-    description:
-      summary: Updated banner copy and added new banner settings.
-      additional: This update requires the use of Autoprefixer.
+    summary: Updated banner copy and added new banner settings.
+    moreSummary: This update requires the use of Autoprefixer.
     isBreaking: 'Yes'
     isCodeUpdate: true
     pr: 3524
     repo: uswds
     version: 2.8.0
   - date: 2020-06-17
-    description:
-      summary: Added <code>role="img"</code> to SVGs.
-      additional:
+    summary: Added <code>role="img"</code> to SVGs.
+    moreSummary:
     isBreaking: 'No'
     isCodeUpdate: true
     pr: 3316
     repo: uswds
     version: 2.7.1
   - date: 2020-05-11
-    description:
-      summary: Improved display of the <code>Here's how you know link</code> in the gov banner
-      additional: Now there's no distracting change to the length of the underline on hover.
+    summary: Improved display of the <code>Here's how you know link</code> in the gov banner
+    moreSummary: Now there's no distracting change to the length of the underline on hover.
     isBreaking: 'No'
     isCodeUpdate: true
     pr: 3427

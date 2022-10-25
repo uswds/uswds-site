@@ -1,7 +1,7 @@
-changelogURL:
-isComponentPage: true
-packageName: Banner
 title: Banner
+pageURL: components/banner
+isCodePage: true
+changelogURL:
 items:
   # - date: Unreleased
   #   description:

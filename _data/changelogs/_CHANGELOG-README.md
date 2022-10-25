@@ -3,10 +3,10 @@
   - Tab spacing matters in .yml files. Incorrect spacing can cause errors.
   - All comments here are instructional only and should be deleted if copied into the changelog .yml file.
   First, declare general page settings -->
-changelogURL:[Provide url for the package CHANGELOG.md. Not all pages will have a related CHANGELOG.md file.]
-isComponentPage: [Indicate if the related page is a component page. Standard values: true, false]
-packageName:
 title: [Add topic title. This should be only 1-2 words. Ex: "Banner", "Accessibility"]
+pageURL: [Path to related page]
+isCodePage: [Indicate if the related page is a component page. Standard values: true, false]
+changelogURL:[Provide url for the package CHANGELOG.md. Not all pages will have a related CHANGELOG.md file.]
 <!-- Next, add a list of changelog items in reverse chronological order. -->
 items:
   - date: [Add item release date in YYYY-MM-DD format.]
@@ -25,10 +25,10 @@ items:
     version:[Add related USWDS or package release number. Ex: 3.1.0. Guidance pages will not have a related release.]
 
 <!-- Empty data template -->
-changelogURL:
-isComponentPage:
-packageName:
 title:
+pageURL:
+isCodePage:
+changelogURL:
 items:
   - date:
     description:

@@ -1,5 +1,5 @@
-isComponentPage: false
 title: Accessibility
+pageURL: accessibility
 items:
   - date: 2021-05-20
     description:
@@ -7,4 +7,3 @@ items:
       additional: This update explained USWDS accessibility standards, provided guidance on how to reach accessibility compliance on projects, and provided links to helpful resources.
     pr: 1230
     repo: uswds-site
-

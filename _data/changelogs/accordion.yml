@@ -1,7 +1,7 @@
-changelogURL:
-isComponentPage: true
-packageName:
 title: Accordion
+pageURL: components/accordion
+isCodePage: true
+changelogURL:
 items:
   - date: 2022-08-05
     description:

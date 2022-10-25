@@ -11,7 +11,7 @@
   <thead>
     <tr>
       <th scope="col" class="{{ col1Width }}">{{ col1Title }}</th>
-      {% if changelog.isComponentPage %}
+      {% if changelog.isCodePage %}
         <th scope="col" class="{{ col2Width }}">{{ col2Title }}</th>
         <th scope="col" class="{{ col3Width }}">{{ col3Title }}</th>
       {% endif %}
@@ -26,7 +26,7 @@
           {{ item.date }}
         {% endif %}
       </td>
-      {% if changelog.isComponentPage %}
+      {% if changelog.isCodePage %}
       <td data-title="{{ col2Title }}" class="{{ col2Width }}">
           {% if item.version %}
             <a href="https://github.com/uswds/uswds/releases/tag/v{{ item.version }}">{{ item.version }}</a>

@@ -3,12 +3,12 @@
 {% assign changelog = site.data.changelogs[componentKey] %}
 {% assign changelogItems = changelog.items %}
 
-{%- if changelog.items or changelog.url -%}
+{%- if changelog.items or changelog.changelogURL -%}
   <h2 id="{{ componentKey }}-changelog" class="site-component-section-title">Latest updates</h2>
 {%- endif -%}
 
-{%- if changelog.url -%}
-  <p>A list of all code changes for this component can be found in its <a href="{{ changelog.url }}">changelog</a>.</p>
+{%- if changelog.changelogURL -%}
+  <p>A list of all code changes for this component can be found in its <a href="{{ changelog.changelogURL }}">changelog</a>.</p>
 {%- endif -%}
 
 {%- if changelog.items -%}

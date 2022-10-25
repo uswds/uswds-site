@@ -4,6 +4,6 @@
     "timeout": 120000,
     "standard": "WCAG2AA",
     "runners": ["axe"],
-    "ignore": ["color-contrast"]
+    "ignore": ["color-contrast", "frame-tested"]
   }
 }

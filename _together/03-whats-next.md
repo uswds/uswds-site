@@ -43,7 +43,7 @@ summary_sections:
     Most also have a pattern preview and associated code. These previews use USWDS components and are grounded in the <a href="https://designsystem.digital.gov/design-principles/">USWDS design principles</a>. They should be viewed as a starting point for the digital products you are designing, building, and supporting. 
   </p>
   <p>
-    We developed <strong>some additional components</strong> to support these patterns, including a <a href="#">language selector component<a/>, <a href=#">in-page navigation</a>, and <a href="#">input masking</a>. We've also refactored a few components and templates, such as <a href="#">address form</a> and <a href="#">name form</a>, to bring them in line with pattern recommendations.
+    We developed <strong>some additional components</strong> to support these patterns, including a <a href="#">language selector component<a/>, <a href="#">in-page navigation</a>, and <a href="#">input masking</a>. We've also refactored a few components and templates, such as <a href="#">address form</a> and <a href="#">name form</a>, to bring them in line with pattern recommendations.
   </p>
   <p>
     As we move forward, we will identify and expore high-impact interactions and add to the pattern library. We also expect to continually revise our patterns — just as we do our components — as the landscape around DEIA and best practices evolves.

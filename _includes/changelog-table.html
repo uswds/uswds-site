@@ -12,9 +12,9 @@
     <tr>
       <th scope="col" class="{{ col1Width }}">{{ col1Title }}</th>
       {% if
-        changelog.pageType == "Component"
-        or changelog.pageType == "Pattern"
-        or changelog.pageType == "Template"
+        changelog.type: == "Component"
+        or changelog.type: == "Pattern"
+        or changelog.type: == "Template"
       %}
         <th scope="col" class="{{ col2Width }}">{{ col2Title }}</th>
         <th scope="col" class="{{ col3Width }}">{{ col3Title }}</th>
@@ -31,9 +31,9 @@
         {% endif %}
       </td>
       {% if
-        changelog.pageType == "Component"
-        or changelog.pageType == "Pattern"
-        or changelog.pageType == "Template"
+        changelog.type: == "Component"
+        or changelog.type: == "Pattern"
+        or changelog.type: == "Template"
       %}
       <td data-title="{{ col2Title }}" class="{{ col2Width }}">
           {% if item.version %}

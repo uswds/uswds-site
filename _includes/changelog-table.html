@@ -11,7 +11,11 @@
   <thead>
     <tr>
       <th scope="col" class="{{ col1Width }}">{{ col1Title }}</th>
-      {% if changelog.isCodePage %}
+      {% if
+        changelog.pageType == "Component"
+        or changelog.pageType == "Pattern"
+        or changelog.pageType == "Template"
+      %}
         <th scope="col" class="{{ col2Width }}">{{ col2Title }}</th>
         <th scope="col" class="{{ col3Width }}">{{ col3Title }}</th>
       {% endif %}
@@ -26,7 +30,11 @@
           {{ item.date }}
         {% endif %}
       </td>
-      {% if changelog.isCodePage %}
+      {% if
+        changelog.pageType == "Component"
+        or changelog.pageType == "Pattern"
+        or changelog.pageType == "Template"
+      %}
       <td data-title="{{ col2Title }}" class="{{ col2Width }}">
           {% if item.version %}
             <a href="https://github.com/uswds/uswds/releases/tag/v{{ item.version }}">{{ item.version }}</a>
@@ -43,15 +51,15 @@
       </td>
       {% endif %}
       <td data-title="{{ col4Title }}" class="{{ col4Width }}">
-        {% if item.description %}
+        {% if item.summary%}
           <p class="measure-6">
-            {% if item.description.summary %}
+            {% if item.summary %}
               <a href="https://github.com/uswds/{{ item.repo }}/pull/{{ item.pr }}">
-                {{ item.description.summary }}
+                {{ item.summary }}
               </a>
             {% endif %}
-            {% if item.description.additional %}
-              <br/>{{ item.description.additional }}
+            {% if item.additional_info %}
+              <br/>{{ item.additional_info}}
             {% endif %}
           </p>
         {% endif %}

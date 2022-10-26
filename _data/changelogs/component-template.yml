@@ -12,7 +12,7 @@ items:
     # Add a short, clear sentence that summarizes the change.
     summary:
     # If needed, add more detail in 1-2 sentences.
-    moreSummary:
+    additional_info:
     # Indicate if this is a breaking change. Standard values: 'Yes', 'No', 'Potential'
     isBreaking:
     # Indicate if this update includes code updates. Standard values: true, false

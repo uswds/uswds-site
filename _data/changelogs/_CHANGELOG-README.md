@@ -16,7 +16,7 @@ items:
         Examples: "Fixed", "Added", "Improved", "Optimized", "Updated", "Introduced"
       -->
     summary: [Add a short, clear sentence that summarizes the change. This sentence will link to the related PR.]
-    moreSummary: [If needed, add more detail in 1-2 sentences.]
+    additional_info: [If needed, add more detail in 1-2 sentences.]
     isBreaking: [Indicate if this is a breaking change. Standard values: 'Yes', 'No', 'Potential']
     isCodeUpdate: [Indicate if this update includes code updates. Standard values: true, false]
     pr: [Add related pull request (PR) number. Ex: 4695]
@@ -30,7 +30,7 @@ changelogURL:
 items:
   - date:
     summary:
-    moreSummary:
+    additional_info:
     isBreaking:
     isCodeUpdate:
     pr:

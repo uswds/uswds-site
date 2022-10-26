@@ -2,7 +2,7 @@ title: Banner
 type: Component
 changelogURL:
 items:
-  - date: Unreleased
+  - date: 2022-10-09
     summary: Updated ARIA attributes in the component code.
     additional_info: Updated the <code>aria-label</code> in English versions of banner and added the <code>aria-hidden</code> attribute to the flag icon.
     isBreaking: 'No'

@@ -1,6 +1,6 @@
 ---
 title: Establish trust
-story: Help a user to understand expectations in completing a complex form, and establish trust
+story: Help a user to understand expectations in completing a complex form and establish trust
 permalink: /patterns/complex-form/establish-trust/
 layout: pattern
 category: Patterns

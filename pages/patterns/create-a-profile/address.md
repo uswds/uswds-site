@@ -79,7 +79,7 @@ Provide all the fields needed for a user to provide a physical address, even les
 
 ## Usability Guidance
 
-<strong>Consider using an input mask.</strong> In fields with a specific expected format, an input mask allows you to constrain and shape the information being entered into that format, without impairing the user’s ability to copy/paste or correct mistyping. If you use an input mask for the ZIP code field, it should be `#####-####` so that the ZIP code maps to users' experience with ZIP codes and is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code. Input masks can help a user more confidently fill out restricted fields, reduce  user anxiety about making a mistake, and reduce validation errors and web form abandonment, particularly on mobile devices.
+<strong>Consider using an input mask.</strong> In fields with a specific expected format, an input mask allows you to constrain and shape the information being entered into that format, without impairing the user’s ability to copy/paste or correct mistyping. If you use an input mask for the ZIP code field, it should be `_____-____` so that the ZIP code maps to users' experience with ZIP codes and is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code. Input masks can help a user more confidently fill out restricted fields, reduce  user anxiety about making a mistake, and reduce validation errors and web form abandonment, particularly on mobile devices.
 
 <strong>Avoid dropdowns that require long scrolling.</strong> If possible, let users type their state or territories’ abbreviation when they reach the state dropdown menu, instead of having to scroll and select.
 
@@ -142,6 +142,22 @@ Provide all the fields needed for a user to provide a physical address, even les
       <div class="usa-card__body font-lang-sm">
         <p>Checkboxes allow users to select one or more options from a list.</p>
         <a href="{{ site.baseurl }}/components/checkbox/">Visit Checkbox</a>
+      </div>
+    </div>
+  </div>
+  <div
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Mailing address visit input mask component"
+  data-meta="Mailing address visit input mask component">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg">Input Mask</h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>An input mask is a string expression that constraints input to support valid input values.</p>
+        <a href="{{ site.baseurl }}/components/input-mask/">Visit Input mask</a>
       </div>
     </div>
   </div>
@@ -225,7 +241,7 @@ Provide all the fields a user needs to successfully enter a mailing address.
 
 ## Usability Guidance
 
-<strong>Consider using an input mask.</strong> In fields with a specific expected format, an input mask allows you to constrain and shape the information being entered into that format, without impairing the user’s ability to copy/paste or correct mistyping. If you use an input mask for the ZIP code field, it should be `#####-####` so that the ZIP code maps to users' experience with ZIP codes and is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code. Input masks can help a user more confidently fill out restricted fields, reduce  user anxiety about making a mistake, and reduce validation errors and web form abandonment, particularly on mobile devices.
+<strong>Consider using an input mask.</strong> In fields with a specific expected format, an input mask allows you to constrain and shape the information being entered into that format, without impairing the user’s ability to copy/paste or correct mistyping. If you use an input mask for the ZIP code field, it should be `_____-____` so that the ZIP code maps to users' experience with ZIP codes and is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code. Input masks can help a user more confidently fill out restricted fields, reduce  user anxiety about making a mistake, and reduce validation errors and web form abandonment, particularly on mobile devices.
 
 <strong>Avoid dropdowns that require long scrolling.</strong> If possible, let users type their state or territories’ abbreviation when they reach the state dropdown menu, instead of having to scroll and select.
 
@@ -289,6 +305,22 @@ Provide all the fields a user needs to successfully enter a mailing address.
       </div>
     </div>
   </div>
+  <div
+  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Mailing address visit input mask component"
+  data-meta="Mailing address visit input mask component">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg">Input Mask</h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>An input mask is a string expression that constraints input to support valid input values.</p>
+        <a href="{{ site.baseurl }}/components/input-mask/">Visit Input mask</a>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
@@ -317,6 +349,7 @@ Provide all the fields a user needs to successfully enter a mailing address.
 - USPS Addressing Standards Publication 28. (n.d.) Retrieved July 15, 2022, from [https://pe.usps.com/text/pub28/welcome.htm](https://pe.usps.com/text/pub28/welcome.htm)
 - USPS Addressing Standards for Puerto Rico and the U.S. Virgin Islands. (n.d.) Retrieved July 15, 2022, from [https://postalpro.usps.com/node/3740](https://postalpro.usps.com/node/3740)
 - Universal Post*Code Database. (n.d.) Retrieved July 28, 2022, from [https://www.upu.int/en/Postal-Solutions/Programmes-Services/Addressing-Solutions](https://www.upu.int/en/Postal-Solutions/Programmes-Services/Addressing-Solutions)
+
 ## Changelog
 - publishdate
 

@@ -137,6 +137,7 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
 - Progressive disclosure design pattern. (n.d.) Retrieved on July 26, 2022, from [https://ui-patterns.com/patterns/ProgressiveDisclosure](https://ui-patterns.com/patterns/ProgressiveDisclosure)
 - Progressive disclosure: simplifying the complexity. (August 5, 2019) Retrieved on July 26, 2022, from [https://www.shopify.com/nz/partners/blog/progressive-disclosure](https://www.shopify.com/nz/partners/blog/progressive-disclosure)
 - Training wheels in a user interface. Journal article, Association for Computing Machinery by John M. Carroll and Caroline Carrithers Vol. 8 (August 1, 1984). Retrieved on July 27, 2022, from  [https://doi.org/10.1145/358198.358218](https://doi.org/10.1145/358198.358218)
+
 ## Changelog
 - publishdate
 

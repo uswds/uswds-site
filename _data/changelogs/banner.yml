@@ -1,5 +1,5 @@
-pageTitle: Banner
-pageType: Component
+title: Banner
+type: Component
 changelogURL:
 items:
   - date: Unreleased

@@ -9,7 +9,7 @@ redirect_from:
 - /form-controls/11-text-input/
 title: Input mask
 type: component
-lead: An input mask is a string expression that constraints input to support valid input values.
+lead: An input mask is a string expression that constrains input to support valid input values.
 subnav:
 - text: Preview
   href: '#input-mask-preview'

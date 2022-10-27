@@ -6,6 +6,8 @@
 {% assign col3Width = 'flex-1' %}
 {% assign col4Title = 'Description' %}
 {% assign col4Width = 'flex-6 tablet:flex-7' %}
+{% assign col5Title = 'More information' %}
+{% assign col5Width = 'flex-2' %}
 
 <table class="usa-table--borderless site-table-responsive site-table-simple">
   <thead>
@@ -20,6 +22,7 @@
         <th scope="col" class="{{ col3Width }}">{{ col3Title }}</th>
       {% endif %}
       <th scope="col" class="{{ col4Width }}">{{ col4Title }}</th>
+      <th scope="col" class="{{ col5Width }}">{{ col5Title }}</th>
     </tr>
   </thead>
   <tbody class="font-lang-3xs">
@@ -27,7 +30,7 @@
     <tr class="{% if item.section %}tablet:border-top-2px tablet:margin-top-2{% endif %}">
       <td data-title="{{ col1Title }}" class="{{ col1Width }}">
         {% if item.date %}
-          {{ item.date }}
+          <span class="font-mono-2xs">{{ item.date }}</span>
         {% endif %}
       </td>
       {% if
@@ -37,14 +40,20 @@
       %}
       <td data-title="{{ col2Title }}" class="{{ col2Width }}">
           {% if item.version %}
-            <a href="https://github.com/uswds/uswds/releases/tag/v{{ item.version }}">{{ item.version }}</a>
+            <span class="font-mono-2xs"><a href="https://github.com/uswds/uswds/releases/tag/v{{ item.version }}">{{ item.version }}</a></span>
           {% else %}
             N/A
           {% endif %}
       </td>
       <td data-title="{{ col3Title }}" class="{{ col3Width }}">
           {% if item.isBreaking %}
+            {% if item.isBreaking == "Yes" %}
+            <span class="output-false">Breaking</span>
+            {% elsif item.isBreaking == "Potential" %}
+            <span class="output-warning">Potential</span>
+            {% else %}
             {{ item.isBreaking }}
+            {% endif %}
           {% else %}
             N/A
           {% endif %}
@@ -54,14 +63,19 @@
         {% if item.summary%}
           <p class="measure-6">
             {% if item.summary %}
-              <a href="https://github.com/uswds/{{ item.repo }}/pull/{{ item.pr }}">
-                {{ item.summary }}
-              </a>
+             <strong>{{ item.summary }}</strong>
             {% endif %}
             {% if item.additional_info %}
-              <br/>{{ item.additional_info}}
+              {{ item.additional_info}}
             {% endif %}
           </p>
+        {% endif %}
+      </td>
+      <td data-title="{{ col5Title }}" class="{{ col5Width }}">
+        {% if item.pr%}
+          <a href="https://github.com/uswds/{{ item.repo }}/pull/{{ item.pr }}">
+            uswds/{{ item.repo }}#{{ item.pr }}
+          </a>
         {% endif %}
       </td>
     </tr>

@@ -1,14 +1,14 @@
 ---
 layout: together-content
-title: Get involved
+title: Get Involved `|` Inclusive Design Patterns Research Report
 nav_title: Get involved
 meta:
   og:image: /img/together/og-together-report.png
 
 permalink: /together/get-involved/
 slug: get-involved
-
-subhead: Help create inclusive digital experiences that work for everyone.
+hero_title: Get involved
+hero_subtitle: Help create inclusive digital experiences that work for everyone.
 
 chapter: true
 ---

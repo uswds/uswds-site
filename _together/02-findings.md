@@ -1,13 +1,14 @@
 ---
 layout: together-content
-title: Findings
+title: Findings `|` Inclusive Design Patterns Research Report
 nav_title: Findings
 meta:
   og:image: /img/together/og-together-report.png
 
 permalink: /together/findings/
 slug: findings
-subhead: Teams are thinking about how to create digital experiences that embrace all users and are effective, accessible, and respectful.
+hero_title: Findings
+hero_subtitle: Teams are thinking about how to create digital experiences that embrace all users and are effective, accessible, and respectful.
 chapter: true
 
 summary_sections:

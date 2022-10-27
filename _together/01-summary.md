@@ -1,13 +1,14 @@
 ---
 layout: together-content
-title: Inclusive design patterns
+title: Together `|` Inclusive Design Patterns Research Report
 nav_title: Summary
 meta:
   og:image: /img/together/og-together-report.png
 
 permalink: /together/
 slug: together
-subhead: Working together to reduce barriers to participation through every interaction. 
+hero_title: Inclusive design patterns
+hero_subtitle: Working together to reduce barriers to participation through every interaction. 
 chapter: true
 
 summary_sections:

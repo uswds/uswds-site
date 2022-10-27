@@ -1,12 +1,13 @@
 ---
 layout: together-content
-title: What’s next
+title: What’s Next `|` Inclusive Design Patterns Research Report
 nav_title: What’s next
 meta:
   og:image: /img/together/og-together-report.png
 permalink: /together/whats-next/
 slug: whats-next
-subhead: Toward pattern-driven development for the design system.
+hero_title: What’s next
+hero_subtitle: Toward pattern-driven development for the design system.
 
 chapter: true
 

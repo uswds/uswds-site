@@ -13,7 +13,7 @@ items:
   - date: 2022-08-05
     summary: Added <code>type="button"</code> to the component code.
     additional_info:
-    isBreaking: 'Potential'
+    isBreaking: 'Yes'
     isCodeUpdate: true
     pr: 4695
     repo: uswds

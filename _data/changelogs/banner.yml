@@ -75,7 +75,7 @@ items:
     repo: uswds
     version: 2.8.0
   - date: 2020-07-09
-    summary: Add spanish versions.
+    summary: Added spanish versions.
     additional_info: Include approved Spanish versions of the banner text.
     isBreaking: 'No'
     isCodeUpdate: true

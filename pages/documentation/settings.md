@@ -25,7 +25,7 @@ subnav:
 USWDS is built using a suite of customizable settings that allows you to configure the Design System to fit your project's needs. These settings are Sass variables that begin with the `$theme-` prefix and are typically defined with [USWDS design tokens]({{ site.baseurl }}/design-tokens). You can find the full list of USWDS settings and their default values in the [USWDS settings tables](#general-settings).
 
 ## Configuring custom USWDS settings
-With the introduction of [Sass modules](https://sass-lang.com/blog/the-module-system-is-launched) in USWDS 3, you can now create a custom configuration of USWDS by loading a single [`@use...with()`](https://sass-lang.com/documentation/at-rules/use#configuration) rule into your [Sass entry point]({{ site.baseurl }}/documentation/getting-started/developers/phase-two-compile/#step-1-set-up-your-projects-sass-entry-point).
+With the introduction of [Sass modules](https://sass-lang.com/blog/the-module-system-is-launched) in USWDS 3, you can now create a custom configuration of USWDS by loading a single [`@use...with()`](https://sass-lang.com/documentation/at-rules/use#configuration) rule into your [Sass entry point]({{ site.baseurl }}/documentation/getting-started/developers/phase-two-compile/#about-sass-entry-points).
 
 All USWDS settings are defined in the `uswds-core` module, which means the USWDS settings configuration rule is `@use "uswds-core" with ()`.
 
@@ -52,7 +52,7 @@ Please note that this configuration accepts only current USWDS settings variable
 ### Where to include your configuration
 Add your settings configuration to your Sass entry point. You can choose to set up the settings configuration either directly in your entry point or in its own file.
 
-Whatever path you choose, it is important to note that **your settings configuration must be included _above_ `@forward 'uswds'`**  in your Sass entry point. (To learn more about why this matters, read our guide for [setting up your Sass entry point]({{ site.baseurl }}/documentation/getting-started/developers/phase-two-compile/#step-1-set-up-your-projects-sass-entry-point).)
+Whatever path you choose, it is important to note that **your settings configuration must be included _above_ `@forward 'uswds'`**  in your Sass entry point. (To learn more about why this matters, read our guide for [setting up your Sass entry point]({{ site.baseurl }}/documentation/getting-started/developers/phase-two-compile/#about-sass-entry-points).)
 
 We’ve created some example setups to give you an idea of how this works:
 

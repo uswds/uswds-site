@@ -1,3 +1,11 @@
+- name: ngx-uswds
+  distribution: Angular
+  url: https://github.com/GSA/ngx-uswds
+  author:
+    name: GSA
+    url: https://github.com/gsa
+  notes: "This package provides Angular integration with USWDS."
+
 - name: django-designstandards
   distribution: Django
   url: https://github.com/department-of-veterans-affairs/django-designstandards

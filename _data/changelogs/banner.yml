@@ -52,7 +52,7 @@ items:
     version:
   - date: 2020-12-17
     summary: Introduced <code>uswds-init.js</code> to prevent banner flash.
-    additional_info: This script prevents the banner from flashing its content on page load and shifting content.
+    additional_info: When added to the <code>head</code> of your document, this script prevents the banner from flashing its content on page load and shifting content.
     isBreaking: 'No'
     isCodeUpdate: true
     pr: 3867
@@ -85,7 +85,7 @@ items:
   - date: 2020-07-09
     summary: Update banner settings.
     additional_info: Allow users to change background color, link color, and link reverse colors. This update requires the use of Autoprefixer.
-    isBreaking: 'Yes'
+    isBreaking: 'Potential'
     isCodeUpdate: true
     pr: 3531
     repo: uswds

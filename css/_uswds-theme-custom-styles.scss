@@ -1693,6 +1693,12 @@ strong {
   @include u-bg("error");
 }
 
+.output-warning {
+  @extend %output-true;
+  @include u-bg("warning");
+  @include u-text("ink");
+}
+
 // Ensure that inline lists do not have a bottom margin
 li {
   &.display-inline-block {

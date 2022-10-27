@@ -2,9 +2,9 @@
   "defaults": {
     "userAgent": "pa11y",
     "timeout": 120000,
-    "concurrency": 2,
     "standard": "WCAG2AA",
     "runners": ["axe"],
+    "ignore": ["color-contrast", "frame-tested"],
     "viewport": {
         "width": 375,
         "height": 667

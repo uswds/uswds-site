@@ -67,11 +67,27 @@ items:
     repo: uswds
     version: 2.10.0
   - date: 2020-07-09
-    summary: Updated banner copy and added new banner settings.
-    additional_info: This update requires the use of Autoprefixer.
-    isBreaking: 'Yes'
+    summary: Updated banner copy.
+    additional_info: Updates the expanded text in the banner to emphasize that trustworthiness is a combination of an official TLD and a secure HTTPS connection.
+    isBreaking: 'No'
     isCodeUpdate: true
     pr: 3524
+    repo: uswds
+    version: 2.8.0
+  - date: 2020-07-09
+    summary: Add spanish versions.
+    additional_info: Include approved Spanish versions of the banner text.
+    isBreaking: 'No'
+    isCodeUpdate: true
+    pr: 3524
+    repo: uswds
+    version: 2.8.0
+  - date: 2020-07-09
+    summary: Update banner settings.
+    additional_info: Allow users to change background color, link color, and link reverse colors. This update requires the use of Autoprefixer.
+    isBreaking: 'Yes'
+    isCodeUpdate: true
+    pr: 3531
     repo: uswds
     version: 2.8.0
   - date: 2020-06-17
@@ -83,7 +99,7 @@ items:
     repo: uswds
     version: 2.7.1
   - date: 2020-05-11
-    summary: Improved display of the <code>Here's how you know link</code> in the gov banner
+    summary: Improved display of the <code>Here's how you know link</code> in the gov banner.
     additional_info: Now there's no distracting change to the length of the underline on hover.
     isBreaking: 'No'
     isCodeUpdate: true

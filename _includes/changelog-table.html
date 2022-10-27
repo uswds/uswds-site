@@ -7,7 +7,7 @@
 {% assign col4Title = 'Description' %}
 {% assign col4Width = 'flex-6 tablet:flex-7' %}
 {% assign col5Title = 'More information' %}
-{% assign col5Width = 'flex-2' %}
+{% assign col5Width = 'flex-1' %}
 
 <table class="usa-table--borderless site-table-responsive site-table-simple">
   <thead>
@@ -74,7 +74,7 @@
       <td data-title="{{ col5Title }}" class="{{ col5Width }}">
         {% if item.pr%}
           <a href="https://github.com/uswds/{{ item.repo }}/pull/{{ item.pr }}">
-            uswds/{{ item.repo }}#{{ item.pr }}
+            {{ item.repo }}#{{ item.pr }}
           </a>
         {% endif %}
       </td>

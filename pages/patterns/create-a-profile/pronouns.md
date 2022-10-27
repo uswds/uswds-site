@@ -62,7 +62,7 @@ Provide a text entry field that supports a rich array of special characters and 
 
 <strong>If you don't need a controlled vocabulary.</strong> Strongly consider allowing for user-provided pronouns with an open-ended text field. Users should also have the ability to opt out of providing this information.
 
-## Usability Guidance
+## Usability guidance
 
 <strong>Provide clear hint text.</strong> Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, such as, "For example, he, she, they, ze." Do allow users to opt out with a "Prefer not to answer" option.
 

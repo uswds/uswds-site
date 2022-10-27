@@ -79,7 +79,7 @@ Use this pattern when your site supports three or more languages, but offers a l
 
  Regardless of how the information is structured, consider providing <strong>prominent in-page notices and links</strong> where appropriate within your site to help surface this additional language content. 
 
-### Usability guidance
+## Usability guidance
 
 <strong>Ensure there’s enough color contrast</strong> between the button, the text inside the button, and the site background to ensure readability.
 
@@ -132,10 +132,6 @@ All logically related items/links must be presented as an <strong>HTML unordered
     {% highlight html%}{% include patterns/three-languages-code.html %}{% endhighlight %}
   </div>
 </div>
-
-## See pattern in use
-
-- <a href="https://www.ed.gov/notices/english-la">U.S. Department of Education</a>
 
 ## Related
 

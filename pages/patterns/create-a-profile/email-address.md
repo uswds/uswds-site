@@ -50,7 +50,7 @@ A text input field with validation and robust error messaging to guide users in 
           <ul>
             <li>Do not set arbitrary minimum lengths for the local portion of the email address (occurring before the @ symbol) or domain (after the @ symbol) parts.</li>
             <li>Do not invalidate characters frequently seen in email addresses including hyphens (-), underscores (_), plus signs (+), or periods (.) in the local portion of an email address. <a href="https://datatracker.ietf.org/doc/html/rfc822">See RFC 822</a> for the exhaustive list of permitted characters in the local portion of an email address.</li>
-            <li>Do not restrict top-level domains for email address unless your use case is very specific, e.g., only .gov or .mil addresses.</li> 
+            <li>Do not restrict top-level domains for email address unless your use case is very specific, for example, only .gov or .mil addresses.</li> 
             <li>Do not assume that email messages are private unless explicitly stated through permission-based settings.</li>
           </ul>
       </div>
@@ -145,7 +145,7 @@ See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-b
 ## References
 - Mobile form usability: avoid splitting single input entities. (February 12, 2013) Retrieved on July 20, 2022, from [https://baymard.com/blog/mobile-form-usability-single-input-fields](https://baymard.com/blog/mobile-form-usability-single-input-fields)
 - RFC 822. (August 13, 1982) Retrieved on July 20, 2022, from [https://datatracker.ietf.org/doc/html/rfc822](https://datatracker.ietf.org/doc/html/rfc822). See also [RFC Editor Errata](https://www.rfc-editor.org/errata_search.php?rfc=822).
-- Validate email addresses (Regular Expressions Cookbook) (n.d). Retrieved on July 20, 2022, from [https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s01.html](https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s01.html)
+- Validate email addresses (Regular Expressions Cookbook). (n.d). Retrieved on July 20, 2022, from [https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s01.html](https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s01.html)
 
 ## Changelog
 - publishdate

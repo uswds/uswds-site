@@ -19,7 +19,7 @@ Inconsistent placement and treatment of language selection interface components 
 Use this pattern when the content is available in three or more languages and all content is available in each language. 
 
 ## When to consider something else
-When content is available in only two languages, see the <a href="{{ site.baseurl }}/patterns/language-selector/two-languages/">Select from two languages</a> pattern. When only selected content is available in some languages, see the <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Selected content available</a> pattern.
+When content is available in only two languages, see the <a href="{{ site.baseurl }}/patterns/language-selector/two-languages/">Select from two languages</a> pattern. When only selected multilingual content is available in some languages, see the <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Selected content available</a> pattern.
 
 ## What's the solution
 Place the language selector menu at the top of the screen above site navigation, allowing site visitors to use a dropdown menu to select their language of choice. Place the language selector on the top right for left-to-right languages and on the top left for right-to-left languages if possible.
@@ -119,6 +119,8 @@ Consider including a <strong>prominent in-page notice or link</strong> in additi
 ## See pattern in use
 
 - <a href="https://www.ed.gov/notices/english-la">U.S. Department of Education</a>
+- <a href="https://www.vote.gov">Vote.gov</a>
+
 
 ## Related
 

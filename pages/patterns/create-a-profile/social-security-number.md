@@ -12,7 +12,7 @@ lead: The Social Security Number pattern allows users to easily enter their Soci
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
 ## What problem does this solve?
-A Social Security Number is often a critical piece of validating identity when applying for government services or benefits, but can be confusing for users to enter correctly.
+A Social Security Number is often a critical piece for validating identity when applying for government services or benefits, but can be confusing for users to enter correctly.
 
 ## When to use this pattern 
 Only use this pattern when you need to confirm a user's identity by asking for their Social Security Number. This information may be important when determining eligibility for many federal programs, such as federal student loans, public assistance, and Medicare.
@@ -61,7 +61,7 @@ Provide a single text field to enter the Social Security Number.
 
 <strong>People without Social Security Numbers.</strong> Some people do not have Social Security Numbers, and may not be easily able to provide the documentation required to apply for a Social Security Number. Consider whether there are other methods you can use to validate identity in the absence of a Social Security Number.
 
-## Usability Guidance
+## Usability guidance
 <strong>Avoid multiple fields.</strong> If possible, let users type the entire Social Security Number into a single field, not across three separate fields.
 
 <strong>Consider using an input mask.</strong> In fields with a specific expected format, an input mask allows you to constrain and shape the information being entered into that format, without impairing the user’s ability to copy/paste or correct mistyping. If you use an input mask for the Social Security Number field, it should be `___ __ ____` so that the Social Security Number maps to users' experience with Social Security Numbers and is properly formatted. Input masks can help a user more confidently fill out restricted fields, reduce user anxiety about making a mistake, and reduce validation errors and web form abandonment, particularly on mobile devices. Make sure your hint text supports the format expected from the user if using an input mask. 

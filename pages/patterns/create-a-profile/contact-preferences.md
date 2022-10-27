@@ -58,7 +58,7 @@ Allow the user to select from available options, and to include a brief message 
 
 ## Considerations
 ### Multimodal communication
-<strong>Consider multiple means of communication for critical messaging.</strong> While prioritizing the user’s preferred communication method (e.g., text message), do follow up with alternate methods (e.g., email) to improve the likelihood of the user seeing your communication.
+<strong>Consider multiple means of communication for critical messaging.</strong> While prioritizing the user’s preferred communication method (for example, text message), do follow up with alternate methods (for example, email) to improve the likelihood of the user seeing your communication.
 
 <strong>User needs.</strong> Strongly consider allowing users to specify any accessibility or language accommodations they require, such as needing an ASL interpreter, preferring braille formatted mailed communications, or preferring audio communication when available.
 

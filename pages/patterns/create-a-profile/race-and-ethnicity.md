@@ -78,7 +78,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
 
 <strong>If you will be displaying race and/or ethnicity in a list.</strong> Always treat racial and ethnic groups as proper nouns and capitalize them. Consider the order list items appear to avoid the perception of bias or favoritism. 
 
-## Usability Guidance
+## Usability guidance
 
 <strong>If you're only collecting information on race.</strong> Do allow users to select all races that apply with clear hint text, for example, "Select all that apply".
 

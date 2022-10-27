@@ -19,7 +19,7 @@ Inconsistent placement and language selection interface components can be a barr
 Use this pattern when the content is available in two languages. 
 
 ## When to consider something else
-When content is available in three or more languages, see the <a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages/">Select from three or more languages</a> pattern. When only selected content is available in some languages, see the 
+When content is available in three or more languages, see the <a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages/">Select from three or more languages</a> pattern. When only selected multilingual content is available in some languages, see the 
  <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Selected content available</a> pattern.
 
 ## What's the solution
@@ -114,7 +114,7 @@ Consider including a <strong>prominent in-page notice or link</strong> in additi
 
 ## See pattern in use
 
-- <a href="https://www.usa.gov/">USA.gov</a>
+- <a href="http://beta.usa.gov/">USA.gov (beta)</a>
 
 ## Related
 

@@ -68,7 +68,7 @@ Present the user with a controlled vocabulary to accurately depict their biologi
 ### What to use 
 <strong>If biological sex information is used for identity validation.</strong> Be specific about the information you are requesting. Clearly state the context, e.g., "Please enter your biological sex as it appears on your birth certificate." so that users can successfully provide the information required. Gender and biological sex are often used synonymously and users have difficulty determining which information is being requested.
 
-## Usability Guidance
+## Usability guidance
 
 See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons). 
 
@@ -168,7 +168,7 @@ Present the user with the tools to accurately depict their gender identity.
 ### What to use 
 <strong>Avoid using a controlled vocabulary.</strong> If you don’t need to enforce a controlled vocabulary of gender options, strongly consider letting the user self-identify using a single text field.
 
-## Usability Guidance
+## Usability guidance
 
 <strong>Provide clear hint text.</strong> Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, e.g., "For example, man, woman, non-binary). Do allow users the opt out with a "Prefer not to answer" option.
 

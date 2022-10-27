@@ -35,7 +35,7 @@ Provide multiple text entry fields that support a rich array of special characte
             <li>Do consider confirming very short or empty name fields.</li>
             <li>Do support a rich array of <a href="https://web.library.yale.edu/cataloging/music/diacrit">diacritics, accents, and alternative characters.</a></li>
             <li>Allow users to enter more than one name in each field. Spanish-speaking people will often have two family names. Brazilians may have three or four family names.</li>
-            <li>Do allow both upper and lowercase letters throughout each field.</li>
+            <li>Do allow both upper- and lowercase letters throughout each field.</li>
             <li>Allow users to enter hyphens, apostrophes, and blank spaces in each name field.</li>
             <li>Consider using the autocomplete attribute on name fields to allow the browser to autofill information that has been previously entered.</li>
             <li>Do display the complete name wherever the information is displayed (even if it is long), including on a confirmation page. You may need to truncate a name when used to convey logged-in status in the site header.</li>
@@ -68,7 +68,7 @@ Provide multiple text entry fields that support a rich array of special characte
 <strong>Consider what name information you need.</strong> If you don’t need to parse out the separate pieces of a person’s name, consider letting the user enter it into a single `full name` text field. 
 
 ### What to use 
-<strong>If the name information is for identity validation.</strong>  Many people routinely use variations of their name depending on context. Be specific about the name you are requesting. Clearly state the context, e.g., "Please enter your name exactly as it appears on your passport" so that users can successfully provide the required information.
+<strong>If the name information is for identity validation.</strong>  Many people routinely use variations of their name depending on context. Be specific about the name you are requesting. Clearly state the context, for example, "Please enter your name exactly as it appears on your passport" so that users can successfully provide the required information.
 
 <strong>Consider the field labels.</strong> For many cultures, `first name` and `last name` are not intuitive. In Chinese, Korean, Hungarian, as well as other languages, the first name is the family name. This is an evolving space, with `given name` and `family name` becoming the recommended field labels. Consider using both in a phased approach as people’s comfort level with changing terminology increases (e.g., `First or given name`).
 
@@ -81,7 +81,7 @@ If you won’t be addressing correspondence, avoid asking for the user’s title
 
 <strong>If you will be displaying the names in a list.</strong> Consider that some cultures expect names to be sorted by given name, not family name.
 
-## Usability Guidance
+## Usability guidance
 <strong>Label each field.</strong> Be sure each field is properly labeled. 
 
 ## Accessibility 

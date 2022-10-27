@@ -5,7 +5,7 @@ permalink: /patterns/create-a-profile/date-of-birth/
 layout: pattern
 category: Patterns
 sub-category: Create a user profile
-lead: Date of birth, and other memorable dates, can be an essential piece of information used to validate identity or eligibility for services or benefits. This pattern allows users to enter their date of birth or another memorable date (e.g., birth of child, death of loved one) without friction. 
+lead: Date of birth, and other memorable dates, can be an essential piece of information used to validate identity or eligibility for services or benefits. This pattern allows users to enter their date of birth or another memorable date (such as, birth of child, death of loved one) without friction. 
 ---
 <div></div>
 
@@ -18,7 +18,7 @@ With many competing patterns for date formatting, users may become frustrated, c
 Use this pattern when you need a user's date of birth or another memorable date. 
 
 ## What's the solution
-Allowing a user to enter a memorable date using three clearly labeled fields provides the simplest and most inclusive digital experience. This is especially helpful when the date is in the past like a date of birth. By providing a select element for month, and clearly labeled text input for date and year, users will understand what is being asked and not struggle to input the information or question what order the information should be entered in.
+Allowing a user to enter a memorable date using three clearly labeled fields provides the simplest and most inclusive digital experience. This is especially helpful when the date is in the past like a date of birth. By providing the Select component for month, and clearly labeled text input for date and year, users will understand what is being asked and not struggle to input the information or question what order the information should be entered in.
 
 Mobile device users in particular may benefit from being able to type a year rather than using a scrolling date picker for date of birth or other memorable dates.
 
@@ -31,7 +31,7 @@ Mobile device users in particular may benefit from being able to type a year rat
       <h3 class="do-dont__heading">What to do</h3>
         <div class="do-dont__content">
           <ul>
-            <li>Do provide text entry fields for day and year inputs, and a select or combo box element for month.</li>
+            <li>Do provide text entry fields for day and year inputs, and the Select component for month.</li>
             <li>Do label the fields clearly. Some countries use a day/month/year format and it’s important that date and month are clearly distinguished to ensure correct date entry.</li>
             <li>Do limit individual field character length.</li>
             <li>Do consider your data requirements. Use both client-side and server-side validation to support properly formatted dates if possible. If you are unable to parse date without two digits, provide an example that reflects a leading zero and use clear validation messaging if a single digit without a leading zero is entered.</li>
@@ -67,10 +67,10 @@ Mobile device users in particular may benefit from being able to type a year rat
 
 <strong>Consider a date picker for scheduling.</strong> If users are trying to schedule something, the date picker might make more sense, especially when the day of the week or availability of timeslots is required. Be sure to also provide an option for text entry as well.
 
-## Usability Guidance
+## Usability guidance
 <strong>Label each field.</strong> Be sure each field is properly labeled &#8212; some countries enter dates in day, month, year order. 
 
-<strong>Avoid select elements for day or year.</strong> It may be tempting to switch all or some of these text fields to select elements, but these tend to be more difficult to use than text inputs.
+<strong>Avoid the Select component for day or year.</strong> It may be tempting to switch all or some of these text fields to the Select component, but these tend to be more difficult to use than text inputs.
 
 ## Accessibility 
 <strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 
@@ -79,7 +79,7 @@ Mobile device users in particular may benefit from being able to type a year rat
 
 <strong>Use “text” instead of “number” inputs.</strong> Research indicates that <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">numeric inputs still carry many usability problems</a>. While dates and years are some of the few kinds of numbers that can work reliably with numeric inputs, the way the user enters the data may still differ from what the browser expects. Use `<input type="text" inputmode="numeric" pattern="[0-9]*">` to better support mobile users. 
 
-<strong>Always use a label on the select element.</strong> Don’t replace it with the default menu option (for example, removing the “Month” label and just having the menu read “Select a month” by default).
+<strong>Always use a label on the Select component.</strong> Don’t replace it with the default menu option (for example, removing the “Month” label and just having the menu read “Select a month” by default).
 
 <strong>Avoid auto-submission.</strong> Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Auto-submission disrupts screen readers because they select each option as they read them.
 

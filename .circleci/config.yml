@@ -2,6 +2,8 @@ version: 2.1
 
 orbs:
   snyk: snyk/snyk@1.1.2
+  codecov: codecov/codecov@1.0.2
+  a11ywatch: a11ywatch/a11ywatch@dev:alpha
 
 executors:
   my-executor:
@@ -9,6 +11,9 @@ executors:
       - image: cimg/ruby:3.0.4-browsers
 
 jobs:
+  web:
+    machine:
+      image: ubuntu-2004:current
   install_ruby_deps:
     executor: my-executor
     steps:
@@ -136,9 +141,11 @@ workflows:
       - test_build:
           requires:
             - build
-      - test_a11y_desktop:
-          requires:
-            - build
-      - test_a11y_mobile:
-          requires:
-            - build
+      - a11ywatch/scan:
+          to: "https://a11ywatch.com"
+      # - test_a11y_desktop:
+      #     requires:
+      #       - build
+      # - test_a11y_mobile:
+      #     requires:
+      #       - build

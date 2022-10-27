@@ -98,6 +98,7 @@
   },
   "snyk": true,
   "dependencies": {
+    "@a11ywatch/a11ywatch": "^0.2.27",
     "@uswds/compile": "^1.0.0-beta.3",
     "@uswds/uswds": "^3.2.0"
   }

@@ -4,6 +4,7 @@ title: Icon
 type: Component
 # Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
+# Add a list of changelog items with newest items first. Uncomment the items section when adding the first item.
 # items:
 # # Start changelog item. Copy this section to create a new changelog item.
 #    # Add item release date in YYYY-MM-DD format.

@@ -11,19 +11,26 @@ lead: This pattern helps users to provide gender identity or biological sex info
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
-## What problem does this solve?
-Gender and biological sex are often used synonymously. Users have struggled to provide accurate information that best identifies and/or represents them within a limited or overwhelming amount of provided options.
+## Background
 
-Biological sex assigned at birth is a biological attribute. In the digital space, male and female are often the only provided options, but there are instances where an individual's biological sex is not unambiguously male or female.
+Sex assigned at birth is a biological attribute. In the digital space, male and female are often the only provided options, but there are instances where an individual’s biological sex is not unambiguously male or female.
 
 Gender is a social construct. Gender identity is an expression of a user’s identity and is integral to their sense of self. There is a wide variety of gendered experiences in the world.
 
+Historically, the federal government has asked people to choose between male and female based on the biological sex they were assigned at birth. Recently, agencies and programs have been moving toward providing more options, reflecting the fact that biological sex is not always unambiguously male or female, and that an individual’s gender may not reflect the biological sex they were assigned at birth.
+
+In April 2022, the U.S. Department of State began allowing people to specify “X,” along with “male” or “female” on their passports. (Note: “non-binary” is generally used only when referring to gender identity. It is being used by the Department of State’s changes in their recording of sex, defining `X` as `Unspecified or another gender identity` including non-binary, intersex, and gender non-conforming individuals.) While biological sex is often used as part of validating identity, gender identity is generally more important for ensuring respectful communication. 
+
+The Office of Management and Budget, the Federal Interagency Working Group on Improving Measurement of Sexual Orientation and Gender Identity in Federal Surveys, and the U.S. Department of Health and Human Services, among other federal agencies and programs, are working to define a meaningful, inclusive way to collect biological sex and gender information when it is needed. This is a quickly evolving space, and recommendations will also evolve.
+
+## What problem does this solve?
+Gender and biological sex are often used synonymously. Users have struggled to provide accurate information that best identifies and/or represents them within a limited or overwhelming amount of provided options.
 
 {:.site-component-section-title}
 ## Biological sex
  
 ## When to use this pattern 
-Follow this pattern when you are collecting biological sex as part of your service. Only ask for biological sex if you need it. Sometimes it’s more prudent to skip collecting this information altogether. Note: The U.S. Department of State has begun including <a href="https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/">X as an option for sex identification</a> to indicate <code>Unspecified or another gender identity</code>, including non-binary, intersex, and gender non-conforming individuals.
+Follow this pattern when you are collecting biological sex as part of your service. Only ask for biological sex if you need it. Sometimes it’s more prudent to skip collecting this information altogether. 
 
 ## What's the solution
 Present the user with a controlled vocabulary to accurately depict their biological sex. 
@@ -66,17 +73,17 @@ Present the user with a controlled vocabulary to accurately depict their biologi
 <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
 
 ### What to use 
-<strong>If biological sex information is used for identity validation.</strong> Be specific about the information you are requesting. Clearly state the context, e.g., "Please enter your biological sex as it appears on your birth certificate." so that users can successfully provide the information required. Gender and biological sex are often used synonymously and users have difficulty determining which information is being requested.
+<strong>If biological sex information is used for identity validation.</strong> Be specific about the information you are requesting. Clearly state the context, such as, "Please enter your biological sex as it appears on your birth certificate." so that users can successfully provide the information required. Gender and biological sex are often used synonymously and users have difficulty determining which information is being requested.
 
 ## Usability guidance
 
-See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons). 
+This pattern uses radio buttons. See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons). 
 
 ## Accessibility
 
 <strong>Use fieldset and legend.</strong> Group related radio buttons together with `<fieldset>` and describe the group with `<legend>`.
 
-<strong>Use proper labels and attributes.</strong> Each radio button should have a `<label>`. Associate the two by matching the `<label>`s for attribute to the `<input>`'s id attribute.
+<strong>Use proper labels and attributes.</strong> Each radio button should have a `<label>`. Associate the two by matching the label's `for` attribute to the input's `id` attribute.
 
 <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
@@ -139,7 +146,7 @@ Present the user with the tools to accurately depict their gender identity.
           <ul>
             <li>Do support long text fields for gender identity. The language behind gender identity is constantly evolving.</li>
             <li>Do consider safety implications of the information provided. Regional and state laws are highly variable and may not adequately protect individuals from disclosure.</li>
-            <li>Do be transparent about what you are asking for (e.g., gender identity vs. biological sex).</li>
+            <li>Do be transparent about what you are asking for (for example, gender identity or biological sex).</li>
             <li>Do use inclusive language. Consider using “they” or “you” instead of “he” or “she.”</li>
             <li>Do use hint text to help users understand what type of information should be provided.</li>
           </ul> 
@@ -170,9 +177,9 @@ Present the user with the tools to accurately depict their gender identity.
 
 ## Usability guidance
 
-<strong>Provide clear hint text.</strong> Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, e.g., "For example, man, woman, non-binary). Do allow users the opt out with a "Prefer not to answer" option.
+<strong>Provide clear hint text.</strong> Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, such as, "For example, man, woman, non-binary). Do allow users to opt out with a "Prefer not to answer" option.
 
-See [usability guidance for checkboxes]({{ site.baseurl }}/components/checkbox/#usability-guidance-checkbox).
+This pattern uses checkboxes. See [usability guidance for checkboxes]({{ site.baseurl }}/components/checkbox/#usability-guidance-checkbox).
 
 ## Accessibility
 
@@ -240,12 +247,14 @@ See [usability guidance for checkboxes]({{ site.baseurl }}/components/checkbox/#
 </div>
 
 ## References
-- Collecting sexual orientation and gender identity information. (March 9, 2022) Retrieved on Jul 20, 2022 from [https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html](https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html)
+- Collecting sexual orientation and gender identity information. (March 9, 2022) Retrieved on July 20, 2022 from [https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html](https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html)
 - Current measures of sexual orientation and gender identity in federal surveys. (August 2016) Retrieved on August 4, 2022, from [https://nces.ed.gov/FCSM/pdf/buda5.pdf](https://nces.ed.gov/FCSM/pdf/buda5.pdf) 
 - Gender or sex. (n.d.) Retrieved on July 15, 2022, from [https://design-system.service.gov.uk/patterns/gender-or-sex/](https://design-system.service.gov.uk/patterns/gender-or-sex/) 
 - Gender terms you may not know. (June 17, 2022) Retrieved on July 15, 2022, from [https://www.dictionary.com/e/gender-terms-you-may-not-know/](https://www.dictionary.com/e/gender-terms-you-may-not-know/)
 - Nonbinary airline passenger tickets. (June 22, 2022) Retrieved on July 15, 2022, from [https://www.nytimes.com/2022/06/22/travel/nonbinary-airline-passengers-tickets.html](https://www.nytimes.com/2022/06/22/travel/nonbinary-airline-passengers-tickets.html)
 - Sex and gender identity. (n.d.) Retrieved August 1, 2022, from [https://www.plannedparenthood.org/learn/gender-identity/sex-gender-identity](https://www.plannedparenthood.org/learn/gender-identity/sex-gender-identity)
+- Social Security implements self-attestation of sex marker in Social Security Number records. (October 19, 2022) Retrieved on October 24, 2022 from [https://www.ssa.gov/news/press/releases/2022/#10-2022-3](https://www.ssa.gov/news/press/releases/2022/#10-2022-3)
+- Updates on terminology of sexual orientation and gender identity survey measures. (August 2020) Retrieved on October 24, 2022 from [https://nces.ed.gov/FCSM/pdf/FCSM_SOGI_Terminology_FY20_Report_FINAL.pdf](https://nces.ed.gov/FCSM/pdf/FCSM_SOGI_Terminology_FY20_Report_FINAL.pdf).
 - X gender marker available on U.S. Passports starting April 11. (March 31, 2022) Retrieved on July 20, 2022, from [https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/](https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/)
 
 ## Changelog

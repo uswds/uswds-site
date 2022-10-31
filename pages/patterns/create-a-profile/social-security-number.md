@@ -130,6 +130,6 @@ Provide a single text field to enter the Social Security Number.
 - Social Security is changing the way SSNs are issued. (n.d.) Retrieved on July 20, 2022, from [https://www.ssa.gov/kc/SSAFactSheet--IssuingSSNs.pdf](https://www.ssa.gov/kc/SSAFactSheet--IssuingSSNs.pdf)
 
 ## Changelog
-- publishdate
+- Published November 4, 2022
 
 Disclaimer: Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

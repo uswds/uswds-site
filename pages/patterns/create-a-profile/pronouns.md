@@ -134,6 +134,6 @@ Provide a text entry field that supports a rich array of special characters and 
 - Asking about gender in online forms. (September 18, 2015) Retrieved on July 19, 2022, from [http://www.practicemakesprogress.org/blog/2015/9/18/asking-about-gender-on-online-forms](http://www.practicemakesprogress.org/blog/2015/9/18/asking-about-gender-on-online-forms)
 
 ## Changelog
-- publishdate
+- Published November 4, 2022
 
 Disclaimer: Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

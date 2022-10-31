@@ -21,7 +21,7 @@ Historically, the federal government has asked people to choose between male and
 
 In April 2022, the U.S. Department of State began allowing people to specify “X,” along with “male” or “female” on their passports. (Note: “non-binary” is generally used only when referring to gender identity. It is being used by the Department of State’s changes in their recording of sex, defining `X` as `Unspecified or another gender identity` including non-binary, intersex, and gender non-conforming individuals.) While biological sex is often used as part of validating identity, gender identity is generally more important for ensuring respectful communication. 
 
-The Office of Management and Budget, the Federal Interagency Working Group on Improving Measurement of Sexual Orientation and Gender Identity in Federal Surveys, and the U.S. Department of Health and Human Services, among other federal agencies and programs, are working to define a meaningful, inclusive way to collect biological sex and gender information when it is needed. This is a quickly evolving space, and recommendations will also evolve.
+The [Office of Management and Budget's](https://omb.report/icr/202106-0607-003/doc/112605500) Interagency Technical Working Group on Sexual Orientation and Gender Identity Items in the Household Pulse Survey: Report and Recommendations, the [Federal Committee on Statistical Methodology's](https://nces.ed.gov/FCSM/SOGI.asp) Measuring Sexual Orientation and Gender Identity Research Group, and the [Centers for Disease Control and Prevention's](https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html) Collecting Sexual Orientation and Gender Identity Information, are just some of the federal agencies and programs working to define a meaningful, inclusive way to collect biological sex and gender information when it is needed. This is a quickly evolving space, and recommendations will also evolve.
 
 ## What problem does this solve?
 Gender and biological sex are often used synonymously. Users have struggled to provide accurate information that best identifies and/or represents them within a limited or overwhelming amount of provided options.
@@ -251,6 +251,7 @@ This pattern uses checkboxes. See [usability guidance for checkboxes]({{ site.ba
 - Current measures of sexual orientation and gender identity in federal surveys. (August 2016) Retrieved on August 4, 2022, from [https://nces.ed.gov/FCSM/pdf/buda5.pdf](https://nces.ed.gov/FCSM/pdf/buda5.pdf) 
 - Gender or sex. (n.d.) Retrieved on July 15, 2022, from [https://design-system.service.gov.uk/patterns/gender-or-sex/](https://design-system.service.gov.uk/patterns/gender-or-sex/) 
 - Gender terms you may not know. (June 17, 2022) Retrieved on July 15, 2022, from [https://www.dictionary.com/e/gender-terms-you-may-not-know/](https://www.dictionary.com/e/gender-terms-you-may-not-know/)
+- Interagency Technical Working Group on Sexual Orientation and Gender Identity Items in the Household Pulse Survey: Report and Recommendations. (May 25, 2021) Retrieved on October 31, 2022 from [https://omb.report/icr/202106-0607-003/doc/112605500](https://omb.report/icr/202106-0607-003/doc/112605500)
 - Nonbinary airline passenger tickets. (June 22, 2022) Retrieved on July 15, 2022, from [https://www.nytimes.com/2022/06/22/travel/nonbinary-airline-passengers-tickets.html](https://www.nytimes.com/2022/06/22/travel/nonbinary-airline-passengers-tickets.html)
 - Sex and gender identity. (n.d.) Retrieved August 1, 2022, from [https://www.plannedparenthood.org/learn/gender-identity/sex-gender-identity](https://www.plannedparenthood.org/learn/gender-identity/sex-gender-identity)
 - Social Security implements self-attestation of sex marker in Social Security Number records. (October 19, 2022) Retrieved on October 24, 2022 from [https://www.ssa.gov/news/press/releases/2022/#10-2022-3](https://www.ssa.gov/news/press/releases/2022/#10-2022-3)
@@ -258,6 +259,6 @@ This pattern uses checkboxes. See [usability guidance for checkboxes]({{ site.ba
 - X gender marker available on U.S. Passports starting April 11. (March 31, 2022) Retrieved on July 20, 2022, from [https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/](https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/)
 
 ## Changelog
-- publishdate
+- Published November 4, 2022
 
 Disclaimer: Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

@@ -131,6 +131,6 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
 - Trust or bust: communicating trustworthiness in web design. (March 6, 1999) Retrieved on July 28, 2022, from [https://www.nngroup.com/articles/communicating-trustworthiness/.](https://www.nngroup.com/articles/communicating-trustworthiness/)
 
 ## Changelog
-- publishdate
+- Published November 4, 2022
 
 Disclaimer: Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

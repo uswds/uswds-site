@@ -84,7 +84,6 @@ $site-secondary-nav-input-height: 38px;
 }
 
 .site-title {
-
   &--short {
     @include at-media("mobile-lg") {
       display: none;

@@ -4,6 +4,6 @@
   - `p`
   - `ul` and `ol`, _plus_ child `li`
   - `table`, _plus_ child `thead`, `th`, `td`, and `caption`
-- You can change the measure of elements styled with `usa-prose` in `_uswds-theme-typography.scss` with the following variables. Each accepts a measure token:
+- You can change the measure of elements styled with `usa-prose` in `_uswds-theme.scss` with the following variables. Each accepts a measure token:
   - `$theme-text-measure`
   - `$theme-lead-measure`

@@ -299,7 +299,7 @@ $background-color-palettes: (
     </div>
 
     <h4 class="font-lang-2xs margin-top-4 margin-bottom-0">Global color palettes</h4>
-    <p class="utility-text margin-top-05">Any palette added to the <code>$global-color-palettes</code> list in <code>_uswds-theme-utilities.scss</code> will output in the background color, text color, border color, and text decoration color utilities.</p>
+    <p class="utility-text margin-top-05">Any palette added to the <code>$global-color-palettes</code> list in <code>_uswds-theme.scss</code> will output in the background color, text color, border color, and text decoration color utilities.</p>
 
     {% include utilities/color-palettes.html %}
 

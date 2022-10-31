@@ -19,7 +19,7 @@ subnav:
 ## Theme tokens
 Font weight theme tokens use common names. Most projects will use only 2-4 of these tokens, with the majority set to `false`.
 
-Customize [theme](#theme-tokens){:.token} font weight tokens in your project's theme settings with available [system](#system-tokens){:.token} font weight tokens. All typography-related settings are in `_uswds-theme-typography.scss`.
+Customize [theme](#theme-tokens){:.token} font weight tokens in your project's theme settings with available [system](#system-tokens){:.token} font weight tokens. All typography-related settings can be found in [USWDS settings](/documentation/settings/#typography-settings).
 
 <div class="site-table-wrapper overflow-hidden">
   <table class="usa-table--borderless site-table-responsive width-full">

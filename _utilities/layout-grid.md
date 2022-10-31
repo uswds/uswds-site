@@ -65,8 +65,8 @@ The following sections break the layout grid down and describe how it works.
 
 {:.usa-content-list}
 - **Containers:** `grid-container` centers the container and gives it a maximum width of `desktop` (1024px). If you would like the grid to span the full width of the page, do not use `grid-container`.
-  - `grid-container` can also accept any breakpoint width, like `grid-container-tablet-lg` or `grid-container-widescreen`. Set the default max width with `$theme-grid-container-max-width` in `uswds-theme-spacing.scss`.
-  - By default, `grid-container`s have padding-x of [2 units]({{ site.baseurl }}/design-tokens/spacing-units/){:.token}, with a padding-x of [4 units]({{ site.baseurl }}/design-tokens/spacing-units/){:.token} at `desktop` and wider. Control these values with the values of `$theme-site-margins-mobile-width`, `$theme-site-margins-width` and `$theme-site-margins-breakpoint` in `uswds-theme-spacing.scss`.
+  - `grid-container` can also accept any breakpoint width, like `grid-container-tablet-lg` or `grid-container-widescreen`. Set the default max width with `$theme-grid-container-max-width` in `uswds-theme.scss`.
+  - By default, `grid-container`s have padding-x of [2 units]({{ site.baseurl }}/design-tokens/spacing-units/){:.token}, with a padding-x of [4 units]({{ site.baseurl }}/design-tokens/spacing-units/){:.token} at `desktop` and wider. Control these values with the values of `$theme-site-margins-mobile-width`, `$theme-site-margins-width` and `$theme-site-margins-breakpoint` in `uswds-theme.scss`.
 - **Rows:** Columns must have a `grid-row` as a parent.
 - **Columns:** `grid-col-[1-12]` indicates the number of columns the item spans out of a possible 12 per row. So, if you want three equal-width columns across, use `grid-col-4` for each item.
 
@@ -504,9 +504,9 @@ Add `grid-gap` to a grid row to add a gap (or gutter) between each column in the
 When generating your CSS from USWDS source files, you have the option of customizing many system defaults by modifying project theme variables. USWDS also provides grid mixins for adding grid functionality to custom semantic component CSS.
 
 ### Variables
-Variables and maps determine the number of columns, gutter width, and media-query point at which to begin floating columns. We use variables to generate the predefined grid classes documented on this page, as well as for the custom mixins noted under USWDS-theme-spacing.scss and USWDS-theme-utilities.scss.
+Variables and maps determine the number of columns, gutter width, and media-query point at which to begin floating columns. We use variables to generate the predefined grid classes documented on this page, as well as for the custom mixins noted under Spacing settings and Utilities settings
 
-#### uswds-theme-spacing.scss
+#### Spacing settings
 
 {% highlight scss %}
 // Values are set as units tokens.
@@ -522,7 +522,7 @@ $theme-site-margins-width:          4;
 $theme-site-margins-mobile-width:   2;
 {% endhighlight %}
 
-#### uswds-theme-utilities.scss
+#### Utilities settings
 
 {% highlight scss %}
 // Turn on or off breakpoints

@@ -35,12 +35,13 @@ The pattern allows users to select their language preferences for both written a
             <li>Capitalize the name of each language (for example, English, Español).</li>
             <li>Do include American Sign Language (ASL) in spoken preferences if you are committed to supporting in-person communications, such as in a health care setting.</li>
             <li>Do order the languages alphabetically by the common, native language name. For example:<br/> 
-            العربية<br/>
-            简体字<br/>
-            English<br/>
-            Español<br/>
-            Français<br/>
-            Pусский</li>
+            <span lang="ar" xml:lang="ar">العربية</span> (Arabic)<br/>
+            <span lang="zh" xml:lang="zh">简体字</span> (Chinese - Simplified)<br/>
+            <span lang="en" xml:lang="en">English</span><br/>
+            <span lang="es" xml:lang="es">Español</span> (Spanish)<br/>
+            <span lang="fr" xml:lang="fr">Français</span> (French)<br/>
+            <span lang="it" xml:lang="it">Italiano</span> (Italian)<br/>
+            <span lang="ru" xml:lang="ru">Pусский</span> (Russian)</li>
             <li>Provide an “other” selection that allows the user to specify the specific language, if you are committed to supporting their language needs, such as in a health care setting.</li>
             <li>Do allow the user to select more than one language.</li>
             <li>Do consider providing an option for an individual to indicate “I need help completing this form,” if your program can support providing assistance. Some people with limited English-language skills or low literacy may not be able to complete the form themselves.</li>

@@ -70,8 +70,7 @@ A text input field with validation and robust error messaging to guide users in 
 
 When creating an account based on an email address, you might choose to validate a user's email address by requiring them to click an emailed verification link and successfully authenticate to ensure information will be shared with the correct individual.
 
-See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons). 
-
+This pattern uses radio buttons. See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons). 
 
 ## Accessibility 
 <strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 

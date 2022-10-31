@@ -71,8 +71,7 @@ Help users enter their phone numbers in a consistent, correct, usable format. Us
 
 <strong>Validate client-side and server-side if possible.</strong> Use client-side and ideally server-side validation to ensure proper formatting and usable phone numbers.
 
-See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons). 
-
+This pattern uses radio buttons. See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons). 
 
 ## Accessibility 
 <strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 

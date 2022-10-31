@@ -2,8 +2,7 @@
 title: Provide more robust guidance and support around getting started
 subhead: Opportunity 02
 description: "Getting started is a key sticking point. There’s an opportunity to make it easier for agencies to find the right information to implement the design system."
-meta:
-  og:image: /img/next/og-next-opportunities.png
+image: /img/next/og-next-opportunities.png
 
 permalink: /next/looking-ahead/guidance/
 slug: "opportunity"
@@ -15,7 +14,7 @@ quote_color: "next-gray-medium"
 chapter: false
 parent: What’s next
 
-guidance_opportunities: 
+guidance_opportunities:
   - name: Provide demos
     needs: [ understand ]
     description: |-
@@ -44,11 +43,11 @@ guidance_opportunities:
     needs: [ engage ]
     description: |-
       Continue being intentional and transparent about the design principles, USWDS product values, and the research and processes that go into USWDS components and guidance
-  # - name: 
+  # - name:
   #   needs: []
   #   description: |-
   #     text
-  # - name: 
+  # - name:
   #   needs: []
   #   description: |-
   #     text

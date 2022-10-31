@@ -1,108 +1,100 @@
 title: Banner
-type: Component
+type: component
 changelogURL:
 items:
   - date: 2022-10-09
     summary: Updated ARIA attributes in the component code.
-    additional_info: Updated the <code>aria-label</code> in English versions of banner and added the <code>aria-hidden</code> attribute to the flag icon.
-    isBreaking: 'No'
-    isCodeUpdate: true
-    pr: 4925
-    repo: uswds
-    version: 3.2.0
+    summaryAdditional: Updated the <code>aria-label</code> in English versions of banner and added the <code>aria-hidden</code> attribute to the flag icon.
+    affectsAccessibility: true
+    affectsMarkup: true
+    githubPr: 4925
+    githubRepo: uswds
+    versionUswds: 3.2.0
   - date: 2022-08-05
     summary: Added <code>type="button"</code> to the component code.
-    additional_info:
-    isBreaking: 'Yes'
-    isCodeUpdate: true
-    pr: 4695
-    repo: uswds
-    version: 3.1.0
+    summaryAdditional:
+    isBreaking: true
+    affectsAccessibility: true
+    affectsMarkup: true
+    githubPr: 4695
+    githubRepo: uswds
+    versionUswds: 3.1.0
   - date: 2022-06-17
     summary: Updated <code>uswds-init.js</code> to better suppress flashing content.
-    additional_info:
-    isBreaking: 'No'
-    isCodeUpdate: true
-    pr: 4676
-    repo: uswds
-    version: 3.0.2
+    summaryAdditional:
+    affectsAssets: true
+    affectsJavascript: true
+    githubPr: 4676
+    githubRepo: uswds
+    versionUswds: 3.0.2
   - date: 2022-06-17
     summary: Updated flag icon to be high resolution.
-    additional_info:
-    isBreaking: 'No'
-    isCodeUpdate: true
-    pr: 4792
-    repo: uswds
-    version: 3.0.2
+    affectsAssets: true
+    githubPr: 4792
+    githubRepo: uswds
+    versionUswds: 3.0.2
   - date: 2022-04-10
     summary: Added styling for high-contrast mode.
-    additional_info:
-    isBreaking: 'No'
-    isCodeUpdate: true
-    pr: 4610
-    repo: uswds
-    version: 2.13.3
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 4610
+    githubRepo: uswds
+    versionUswds: 2.13.3
   - date: 2021-03-02
     summary: Updated guidance to identify banner as a core component.
-    additional_info:
-    isBreaking:
-    isCodeUpdate: false
-    pr: 1136
-    repo: uswds-site
-    version:
+    affectsGuidance: true
+    githubPr: 1136
+    githubRepo: uswds-site
+    versionUswds:
   - date: 2020-12-17
     summary: Introduced <code>uswds-init.js</code> to prevent banner flash.
-    additional_info: When added to the <code>head</code> of your document, this script prevents the banner from flashing its content on page load and shifting content.
-    isBreaking: 'No'
-    isCodeUpdate: true
-    pr: 3867
-    repo: uswds
-    version: 2.10.0
+    summaryAdditional: When added to the <code>head</code> of your document, this script prevents the banner from flashing its content on page load and shifting content.
+    affectsAssets: true
+    affectsJavascript: true
+    githubPr: 3867
+    githubRepo: uswds
+    versionUswds: 2.10.0
   - date: 2020-12-17
     summary: Updated decorative SVGs to be more resilient.
-    additional_info: Added the <code>aria-hidden="true"</code> property on decorative images and added <code>focusable="false"</code> to SVG elements meant to be images.
-    isBreaking: 'No'
-    isCodeUpdate: true
-    pr: 3892
-    repo: uswds
-    version: 2.10.0
+    summaryAdditional: Added the <code>aria-hidden="true"</code> property on decorative images and added <code>focusable="false"</code> to SVG elements meant to be images.
+    affectsAccessibility: true
+    affectsAssets: true
+    githubPr: 3892
+    githubRepo: uswds
+    versionUswds: 2.10.0
   - date: 2020-07-09
     summary: Updated banner copy.
-    additional_info: Updates the expanded text in the banner to emphasize that trustworthiness is a combination of an official TLD and a secure HTTPS connection.
-    isBreaking: 'No'
-    isCodeUpdate: true
-    pr: 3524
-    repo: uswds
-    version: 2.8.0
+    summaryAdditional: Updates the expanded text in the banner to emphasize that trustworthiness is a combination of an official TLD and a secure HTTPS connection.
+    affectsContent: true
+    githubPr: 3524
+    githubRepo: uswds
+    versionUswds: 2.8.0
   - date: 2020-07-09
     summary: Added spanish versions.
-    additional_info: Include approved Spanish versions of the banner text.
-    isBreaking: 'No'
-    isCodeUpdate: true
-    pr: 3524
-    repo: uswds
-    version: 2.8.0
+    summaryAdditional: Include approved Spanish versions of the banner text.
+    affectsContent: true
+    githubPr: 3524
+    githubRepo: uswds
+    versionUswds: 2.8.0
   - date: 2020-07-09
     summary: Update banner settings.
-    additional_info: Allow users to change background color, link color, and link reverse colors. This update requires the use of Autoprefixer.
-    isBreaking: 'Potential'
-    isCodeUpdate: true
-    pr: 3531
-    repo: uswds
-    version: 2.8.0
+    summaryAdditional: Allow users to change background color, link color, and link reverse colors. This update requires the use of Autoprefixer.
+    isBreaking: true
+    affectsStyles: true
+    githubPr: 3531
+    githubRepo: uswds
+    versionUswds: 2.8.0
   - date: 2020-06-17
     summary: Added <code>role="img"</code> to SVGs.
-    additional_info:
-    isBreaking: 'No'
-    isCodeUpdate: true
-    pr: 3316
-    repo: uswds
-    version: 2.7.1
+    affectsAccessibility: true
+    affectsAssets: true
+    githubPr: 3316
+    githubRepo: uswds
+    versionUswds: 2.7.1
   - date: 2020-05-11
     summary: Improved display of the <code>Here's how you know link</code> in the gov banner.
-    additional_info: Now there's no distracting change to the length of the underline on hover.
-    isBreaking: 'No'
-    isCodeUpdate: true
-    pr: 3427
-    repo: uswds
-    version: 2.7.0
+    summaryAdditional: Now there's no distracting change to the length of the underline on hover.
+    affectsStyles: true
+    githubPr: 3427
+    githubRepo: uswds
+    versionUswds: 2.7.0

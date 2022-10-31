@@ -2,83 +2,102 @@
 {% assign col1Width = 'flex-1' %}
 {% assign col2Title = 'USWDS version' %}
 {% assign col2Width = 'flex-1' %}
-{% assign col3Title = 'Breaking' %}
+{% assign col3Title = 'Affects' %}
 {% assign col3Width = 'flex-1' %}
-{% assign col4Title = 'Description' %}
-{% assign col4Width = 'flex-6 tablet:flex-7' %}
-{% assign col5Title = 'More information' %}
-{% assign col5Width = 'flex-1' %}
+{% assign col4Title = 'Breaking' %}
+{% assign col4Width = 'flex-1' %}
+{% assign col5Title = 'Description' %}
+{% assign col5Width = 'flex-6 tablet:flex-7' %}
+{% assign col6Title = 'More information' %}
+{% assign col6Width = 'flex-1' %}
 
 <table class="usa-table--borderless site-table-responsive site-table-simple">
   <thead>
     <tr>
       <th scope="col" class="{{ col1Width }}">{{ col1Title }}</th>
       {% if
-        changelog.type: == "Component"
-        or changelog.type: == "Pattern"
-        or changelog.type: == "Template"
+        changelog.type: == "component"
+        or changelog.type: == "pattern"
+        or changelog.type: == "template"
       %}
         <th scope="col" class="{{ col2Width }}">{{ col2Title }}</th>
         <th scope="col" class="{{ col3Width }}">{{ col3Title }}</th>
+        <th scope="col" class="{{ col4Width }}">{{ col4Title }}</th>
       {% endif %}
-      <th scope="col" class="{{ col4Width }}">{{ col4Title }}</th>
       <th scope="col" class="{{ col5Width }}">{{ col5Title }}</th>
+      <th scope="col" class="{{ col6Width }}">{{ col6Title }}</th>
     </tr>
   </thead>
   <tbody class="font-lang-3xs">
     {% for item in changelogItems %}
-    <tr class="{% if item.section %}tablet:border-top-2px tablet:margin-top-2{% endif %}">
-      <td data-title="{{ col1Title }}" class="{{ col1Width }}">
-        {% if item.date %}
-          <span class="font-mono-2xs">{{ item.date }}</span>
-        {% endif %}
-      </td>
-      {% if
-        changelog.type: == "Component"
-        or changelog.type: == "Pattern"
-        or changelog.type: == "Template"
-      %}
-      <td data-title="{{ col2Title }}" class="{{ col2Width }}">
-          {% if item.version %}
-            <span class="font-mono-2xs"><a href="https://github.com/uswds/uswds/releases/tag/v{{ item.version }}">{{ item.version }}</a></span>
-          {% else %}
-            N/A
+      <tr class="{% if item.section %}tablet:border-top-2px tablet:margin-top-2{% endif %}">
+        <td data-title="{{ col1Title }}" class="{{ col1Width }}">
+          {% if item.date %}
+            <span class="font-mono-2xs">{{ item.date }}</span>
           {% endif %}
-      </td>
-      <td data-title="{{ col3Title }}" class="{{ col3Width }}">
-          {% if item.isBreaking %}
-            {% if item.isBreaking == "Yes" %}
-            <span class="output-false">Breaking</span>
-            {% elsif item.isBreaking == "Potential" %}
-            <span class="output-warning">Potential</span>
+        </td>
+        {% if
+          changelog.type: == "component"
+          or changelog.type: == "pattern"
+          or changelog.type: == "template"
+        %}
+          <td data-title="{{ col2Title }}" class="{{ col2Width }}">
+            {% if item.versionUswds %}
+              <span class="font-mono-2xs"><a href="https://github.com/uswds/uswds/releases/tag/v{{ item.versionUswds }}">{{ item.versionUswds }}</a></span>
             {% else %}
-            {{ item.isBreaking }}
+              N/A
             {% endif %}
-          {% else %}
-            N/A
+          </td>
+          <td data-title="{{ col3Title }}" class="{{ col3Width }}">
+            <ul class="add-list-reset">
+              {% if item.affectsAccessibility %}
+              <li><span class="output-warning">Accessibility</span></li>
+              {% endif %}
+              {% if item.affectsMarkup %}
+              <li><span class="output-neutral">Markup</span></li>
+              {% endif %}
+              {% if item.affectsJavascript %}
+              <li><span class="output-neutral">JavaScript</span></li>
+              {% endif %}
+              {% if item.affectsStyles %}
+              <li><span class="output-neutral">Styles</span></li>
+              {% endif %}
+              {% if item.affectsAssets %}
+              <li><span class="output-neutral">Assets</span></li>
+              {% endif %}
+              {% if item.affectsGuidance %}
+              <li><span class="output-neutral">Guidance</span></li>
+              {% endif %}
+            </ul>
+          </td>
+          <td data-title="{{ col4Title }}" class="{{ col4Width }}">
+            {% if item.isBreaking %}
+              <span class="output-false">Breaking</span>
+            {% else %}
+              No
+            {% endif %}
+          </td>
+        {% endif %}
+        <td data-title="{{ col5Title }}" class="{{ col5Width }}">
+          {% if item.summary%}
+            <p class="measure-6">
+              {% if item.summary %}
+              <strong>{{ item.summary }}</strong>
+              {% endif %}
+              {% if item.summaryAdditional %}
+                {{ item.summaryAdditional}}
+              {% endif %}
+            </p>
           {% endif %}
-      </td>
-      {% endif %}
-      <td data-title="{{ col4Title }}" class="{{ col4Width }}">
-        {% if item.summary%}
-          <p class="measure-6">
-            {% if item.summary %}
-             <strong>{{ item.summary }}</strong>
-            {% endif %}
-            {% if item.additional_info %}
-              {{ item.additional_info}}
-            {% endif %}
-          </p>
-        {% endif %}
-      </td>
-      <td data-title="{{ col5Title }}" class="{{ col5Width }}">
-        {% if item.pr%}
-          <a href="https://github.com/uswds/{{ item.repo }}/pull/{{ item.pr }}">
-            {{ item.repo }}#{{ item.pr }}
-          </a>
-        {% endif %}
-      </td>
-    </tr>
+        </td>
+        <td data-title="{{ col6Title }}" class="{{ col6Width }}">
+          {% if item.githubPr%}
+            <a href="https://github.com/uswds/{{ item.githubRepo }}/pull/{{ item.githubPr }}">
+              {{ item.githubRepo }}#{{ item.githubPr }}
+            </a>
+          {% endif %}
+        </td>
+      </tr>
     {% endfor %}
   </tbody>
 </table>

@@ -20,13 +20,13 @@ items:
     If a change item requires user action, make sure that the related PR clearly states a summary of the action required.
     -->
     summary: [Add a short, clear sentence that summarizes the change.]
-    additional_info: [If needed, add more detail in 1-2 short sentences.]
+    summaryAdditional: [If needed, add more detail in 1-2 short sentences.]
     isBreaking: [Indicate if user action is required to prevent the system from breaking. Standard values: true, false]
     isCodeUpdate: [Indicate if this update includes code updates. Standard values: true, false]
     <!-- Indicate where users can find more information -->
-    pr: [Add related pull request (PR) number. Ex: 4695]
-    repo: [Declare the GitHub repo that contains related PR. Standard values: uswds, uswds-site]
-    version:[Add related USWDS or package release number. Ex: 3.1.0. Guidance updates will likely not have a related release.]
+    githubPr: [Add related pull request (PR) number. Ex: 4695]
+    githubRepo: [Declare the GitHub repo that contains related PR. Standard values: uswds, uswds-site]
+    versionUswds: [Add related USWDS or package release number. Ex: 3.1.0. Guidance updates will likely not have a related release.]
   <!-- End new data item -->
 
 
@@ -37,9 +37,9 @@ changelogURL:
 items:
   - date:
     summary:
-    additional_info:
+    summaryAdditional:
     isBreaking:
     isCodeUpdate:
-    pr:
-    repo:
-    version:
+    githubPr:
+    githubRepo:
+    versionUswds

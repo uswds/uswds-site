@@ -3,6 +3,6 @@ type: Documentation
 items:
   - date: 2021-05-20
     summary: Updated all content to better explain current standards.
-    additional_info: This update explained USWDS accessibility standards, provided guidance on how to reach accessibility compliance on projects, and provided links to helpful resources.
-    pr: 1230
-    repo: uswds-site
+    summaryAdditional: This update explained USWDS accessibility standards, provided guidance on how to reach accessibility compliance on projects, and provided links to helpful resources.
+    githubPr: 1230
+    githubRepo: uswds-site

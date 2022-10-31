@@ -1699,6 +1699,16 @@ strong {
   @include u-text("ink");
 }
 
+.output-neutral {
+  @extend %output-true;
+  @include u-bg("base-lighter");
+  @include u-text("ink");
+}
+
+li + li .output-neutral {
+  margin-top: units(0.5);
+}
+
 // Ensure that inline lists do not have a bottom margin
 li {
   &.display-inline-block {

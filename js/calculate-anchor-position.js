@@ -14,8 +14,9 @@ var calculateAnchorPosition = function (hash) {
   var navPadding = parseInt($(".sidenav").css("padding-top"), 10);
   var anchorPadding = parseInt(anchor.css("padding-top"), 10);
 
-  //start with the height of the header
-  topOffset = $(".site-nav-secondary").first().outerHeight();
+  //start with the height of the sticky nav
+  topOffset = $(".site-nav.sticky").first().outerHeight();
+
   //subtract the diffence in padding between nav top and anchor
   topOffset = topOffset - (anchorPadding - navPadding);
 

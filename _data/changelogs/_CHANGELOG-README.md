@@ -3,7 +3,7 @@
   - Tab spacing matters in .yml files. Incorrect spacing can cause errors.
   - All comments here are instructional only and should be deleted if copied into the changelog .yml file. -->
 title: [Add page title. Ex: Accordion, Accessibility]
-type: [Add page type. Standard values: Component, Documentation, Pattern, Template, Token, Utility]
+type: [Add page type. Standard values: component, documentation, pattern, template, token, utility]
 <!-- At this time, we do not have any packages with their own changelog files, so this item can be ignored. -->
 changelogURL:[Provide url for the package CHANGELOG.md.]
 <!-- Add a list of changelog items in reverse chronological order-->
@@ -21,9 +21,16 @@ items:
     -->
     summary: [Add a short, clear sentence that summarizes the change.]
     summaryAdditional: [If needed, add more detail in 1-2 short sentences.]
-    isBreaking: [Indicate if user action is required to prevent the system from breaking. Standard values: true, false]
-    isCodeUpdate: [Indicate if this update includes code updates. Standard values: true, false]
-    <!-- Indicate where users can find more information -->
+    isBreaking: [Indicate if user action is required to prevent the system from breaking. Standard values: bool]
+   <!-- Indicate what type of change it is -->
+    affectsAccessibility: [Indicate if the change affects accessibility. Standard values: bool]
+    affectsAssets: [Indicate if the change affects non-JS, non-Sass assets. Standard values: bool]
+    affectsGuidance: [Indicate if the change affects guidance. Standard values: bool]
+    affectsJavascript: [Indicate if the change affects JavaScript. Standard values: bool]
+    affectsMarkup: [Indicate if the change affects component markup. Standard values: bool]
+    affectsStyles: [Indicate if the change affects stylesheets or appearance. Standard values: bool]
+
+   <!-- Indicate where users can find more information -->
     githubPr: [Add related pull request (PR) number. Ex: 4695]
     githubRepo: [Declare the GitHub repo that contains related PR. Standard values: uswds, uswds-site]
     versionUswds: [Add related USWDS or package release number. Ex: 3.1.0. Guidance updates will likely not have a related release.]

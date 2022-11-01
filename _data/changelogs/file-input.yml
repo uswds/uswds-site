@@ -1,36 +1,22 @@
 # Add page title. eg: Accessibility, Banner
 title: File input
-# Declare page type with appropriate standard value. Standard values: Component, Documentation, Pattern, Template, Token, Utility
 type: component
 # Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
-# Add a list of changelog items with newest items first. Uncomment the items section when adding the first item.
+# Add a list of changelog items with newest items first. Uncomment the 'items' data field when adding the first item.
 # Start changelog item. Copy this section to create a new changelog item.
 # items:
-    # Add item release date in YYYY-MM-DD format.
   # - date:
-  #   # Add a short, clear sentence that summarizes the change.
   #   summary:
-  #   # If needed, add more detail in 1-2 sentences.
   #   summaryAdditional:
-  #   # Indicate if this is a breaking change. Standard values: 'Yes', 'No', 'Potential'
   #   isBreaking:
-  #   # Indicate if the change affects accessibility. [type: bool]
   #   affectsAccessibility:
-  #   # Indicate if the change affects non-JS, non-Sass assets. [type: bool]
   #   affectsAssets:
-  #   # Indicate if the change affects guidance. [type: bool]
   #   affectsGuidance:
-  #   # Indicate if the change affects JavaScript. [type: bool]
   #   affectsJavascript:
-  #   # Indicate if the change affects component markup. [type: bool]
   #   affectsMarkup:
-  #   # Indicate if the change affects stylesheets or appearance. [type: bool]
   #   affectsStyles:
-  #   # Add related pull request (PR) number. Ex: 4695
   #   githubPr:
-  #   # Declare the GitHub repo that has the related PR. Standard values: uswds, uswds-site
   #   githubRepo:
-  #   # Add related USWDS or package release number. Ex: 3.1.0.
   #   versionUswds:
 # end changelog item

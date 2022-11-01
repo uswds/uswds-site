@@ -29,7 +29,6 @@ items:
     affectsJavascript: [Indicate if the change affects JavaScript. Standard values: bool]
     affectsMarkup: [Indicate if the change affects component markup. Standard values: bool]
     affectsStyles: [Indicate if the change affects stylesheets or appearance. Standard values: bool]
-
    <!-- Indicate where users can find more information -->
     githubPr: [Add related pull request (PR) number. Ex: 4695]
     githubRepo: [Declare the GitHub repo that contains related PR. Standard values: uswds, uswds-site]
@@ -46,7 +45,12 @@ items:
     summary:
     summaryAdditional:
     isBreaking:
-    isCodeUpdate:
+    affectsAccessibility:
+    affectsAssets:
+    affectsGuidance:
+    affectsJavascript:
+    affectsMarkup:
+    affectsStyles:
     githubPr:
     githubRepo:
     versionUswds:

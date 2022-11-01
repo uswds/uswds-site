@@ -42,4 +42,4 @@ items:
     isCodeUpdate:
     githubPr:
     githubRepo:
-    versionUswds
+    versionUswds:

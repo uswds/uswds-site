@@ -22,5 +22,5 @@ changelogURL:
 #     # Declare the GitHub repo that has the related PR. Standard values: uswds, uswds-site
 #     githubRepo:
 #     # Add related USWDS or package release number. Ex: 3.1.0.
-#     versionUswds
+#     versionUswds:
 # # end changelog item

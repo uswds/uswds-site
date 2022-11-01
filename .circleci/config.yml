@@ -16,7 +16,6 @@ jobs:
       - restore_cache:
           keys:
             - gem-cache-{{ checksum "Gemfile.lock" }}
-            - gem-cache
       - run:
           name: Install ruby dependencies
           command: |

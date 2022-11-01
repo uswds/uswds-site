@@ -1,7 +1,7 @@
 # Add page title. eg: Accessibility, Banner
 title: Icon
 # Declare page type with appropriate standard value. Standard values: Component, Documentation, Pattern, Template, Token, Utility
-type: Component
+type: component
 # Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
 # Add a list of changelog items with newest items first. Uncomment the items section when adding the first item.

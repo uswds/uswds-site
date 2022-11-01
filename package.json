@@ -61,6 +61,7 @@
   },
   "devDependencies": {
     "@18f/identity-stylelint-config": "^1.0.0",
+    "@uswds/uswds": "github:uswds/uswds#jb-inclusive-patterns-implicated-components-and-templates",
     "ansi-colors": "^4.1.1",
     "axe-core": "^4.3.5",
     "browserify": "^17.0.0",
@@ -99,6 +100,5 @@
   "snyk": true,
   "dependencies": {
     "@uswds/compile": "^1.0.0-beta.3",
-    "@uswds/uswds": "github:uswds/uswds#jb-inclusive-patterns-implicated-components-and-templates"
-  }
+    "@uswds/uswds": "^3.2.0"  }
 }

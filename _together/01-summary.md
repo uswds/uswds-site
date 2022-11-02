@@ -1,7 +1,8 @@
 ---
 layout: together-content
 title: Together `|` Inclusive Design Patterns Research Report
-description: Inclusive design patterns. Working together to reduce barriers to participation through every interaction.
+# For open graph meta description
+description: USWDS is excited to provide a new library of guidance and examples focused on key digital interactions — what we call design patterns — that foster effective, inclusive, and equitable digital experiences.
 nav_title: Summary
 meta:
   og:image: /img/together/og-together-report.png

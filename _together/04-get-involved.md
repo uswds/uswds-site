@@ -2,6 +2,8 @@
 layout: together-content
 title: Get Involved `|` Inclusive Design Patterns Research Report
 nav_title: Get involved
+# For open graph meta description
+description: USWDS is excited to provide a new library of guidance and examples focused on key digital interactions — what we call design patterns — that foster effective, inclusive, and equitable digital experiences.
 meta:
   og:image: /img/together/og-together-report.png
 

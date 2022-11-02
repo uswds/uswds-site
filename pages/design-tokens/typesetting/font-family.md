@@ -156,7 +156,7 @@ Role-based tokens set the font family value based on the _role_ the face plays i
 </div>
 
 {:.bg-gold-20v.padding-2.radius-md}
-**Note:** It is possible to add **custom font metadata**, **custom font stacks**, and **custom font source files** in your USWDS settings. This documentation is coming soon. Create a new project-specific theme settings file. If your project already has a single project-specific theme settings file, you’re all set. If not, create a new file in your project theme file called `_uswds-theme.scss`.
+**Note:** It is possible to add **custom font metadata**, **custom font stacks**, and **custom font source files** in your USWDS settings. Create a new project-specific theme settings file. If your project already has a single project-specific theme settings file, you’re all set. If not, create a new file in your project theme file called `_uswds-theme.scss`.
 
 ## Customizing family tokens
 Customize [type](#type-based-tokens){:.token} and [role](#role-based-tokens){:.token} family tokens in your project's theme settings with available [font](#available-fonts){:.token} tokens. All typography-related settings can be found in [USWDS settings](/documentation/settings/#typography-settings).

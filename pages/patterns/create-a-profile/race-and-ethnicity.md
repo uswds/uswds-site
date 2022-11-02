@@ -43,7 +43,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
             <li>Do allow users to select more than one race and ethnicity.</li>
             <li>Do allow an open-ended text entry field when ethnicity information is requested and use hint text to communicate that more than one ethnicity can be provided.</li>
             <li>Do include the ability to opt out of providing this information.</li>
-            <li>Do consider gender-neutral options when listing ethnicities. As an example, Latino encompasses both Hispanic and Latin-American ethnicities but has an implied masculine gender. Consider using <code>Hispanic</code> or <code>Latin American</code> choices instead. As gender-neutral options like <code>Latinx</code> grow in use and adoption, this recommendation will likely change.</li>
+            <li>Do consider gender-neutral options when listing ethnicities. As an example, Latino encompasses both Hispanic and Latin-American ethnicities but has an implied masculine gender. Consider using <code>Hispanic</code> or <code>Latin American</code> choices instead. Gender-neutral options like <code>Latinx</code> have grown in use and adoption within the federal government, so we've chosen to use <code>Latinx</code> in our pattern preview. This recommendation may change over time.</li>
             <li>Do consider whether the information you are collecting is best collected via <a href="https://www.federalregister.gov/d/2016-23672/p-18">separate questions vs. a combined race/ethnicity question.</a></li>
           </ul> 
         </div>

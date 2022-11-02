@@ -149,8 +149,8 @@ Provide all the fields needed for a user to provide a physical address, even les
   class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
   role="region"
   aria-atomic="true"
-  aria-label="Mailing address visit input mask component"
-  data-meta="Mailing address visit input mask component">
+  aria-label="Physical address visit input mask component"
+  data-meta="Physical address visit input mask component">
     <div class="usa-card__container">
       <header class="usa-card__header">
         <h3 class="usa-card__heading font-lang-lg">Input Mask</h3>

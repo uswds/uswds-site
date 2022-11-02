@@ -1,22 +1,62 @@
-# Add page title. eg: Accessibility, Banner
+
 title: Date picker
 type: component
-# Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
-# Add a list of changelog items with newest items first. Uncomment the 'items' data field when adding the first item.
-# Start changelog item. Copy this section to create a new changelog item.
-# items:
-  # - date:
-  #   summary:
-  #   summaryAdditional:
-  #   isBreaking:
-  #   affectsAccessibility:
-  #   affectsAssets:
-  #   affectsGuidance:
-  #   affectsJavascript:
-  #   affectsMarkup:
-  #   affectsStyles:
-  #   githubPr:
-  #   githubRepo:
-  #   versionUswds:
-# end changelog item
+items:
+  - date: 2022-08-05
+    summary: Style aria-disabled to match disabled.
+    summaryAdditional: Now disabled styling is applied whether you use disabled (disabled and hidden from screen readers) or aria-disabled (disabled and visible to screen readers).
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 4783
+    githubRepo: uswds
+    versionUswds: 3.1.0
+  - date: 2022-06-17
+    summary: Improved Date Picker display at very narrow widths.
+    summaryAdditional: We improved the display of the date picker at very narrow widths so there are no UX inconsistencies when the date picker is in a form at less than 320px width. This assures that Date Picker conforms to WCAG 2.1.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 4770
+    githubRepo: uswds
+    versionUswds: 3.0.2
+  - date: 2022-04-28
+    summary: USWDS 3.0.0 released.
+    summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+    affectsAccessibility: true
+    affectsAssets: true
+    affectsGuidance: true
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0
+  - date: 2022-01-20
+    summary: Fix Date Picker input bug in Safari.
+    summaryAdditional: We fixed a bug where date picker selections would not propagate into the input field in Safari.
+    affectsJavascript: true
+    githubPr: 4456
+    githubRepo: uswds
+    versionUswds: 2.13.1
+  - date: 2021-12-14
+    summary:  Improve screenreader experience of Date Picker.
+    summaryAdditional: Now screen readers can better describe the label and description of a date picker <code>input</code>.
+    affectsAccessibility: true
+    affectsMarkup: true
+    githubPr: 4414
+    githubRepo: uswds
+    versionUswds: 2.13.0
+  - date: 2021-11-01
+    summary: Added automatic sanitizing.
+    summaryAdditional: The design system now automatically sanitizes content in elements we compose with JavaScript. This means that components like Combobox, Tooltip, File Input, and Date Picker will sanitize any content passed to them. This helps protect any design system implementation against malicious XSS attacks through these components.
+    affectsJavascript: true
+    githubPr: 4329
+    githubRepo: uswds
+    versionUswds: 2.12.2
+  - date: 2021-08-18
+    summary: Improved performance of Date picker and Combo box javascript.
+    summaryAdditional:
+    affectsJavascript: true
+    githubPr: 4256
+    githubRepo: uswds
+    versionUswds: 2.12.1

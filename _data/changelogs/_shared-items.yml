@@ -38,3 +38,12 @@
     githubPr: 4061
     githubRepo: uswds
     versionUswds: 2.10.2
+
+# sanitizing
+  - date: 2021-11-01
+    summary: Added automatic sanitizing.
+    summaryAdditional: The design system now automatically sanitizes content in elements we compose with JavaScript. This means that components like Combobox, Tooltip, File Input, and Date Picker will sanitize any content passed to them. This helps protect any design system implementation against malicious XSS attacks through these components.
+    affectsJavascript: true
+    githubPr: 4329
+    githubRepo: uswds
+    versionUswds: 2.12.2

@@ -1,22 +1,39 @@
-# Add page title. eg: Accessibility, Banner
+
 title: File input
 type: component
-# Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
-# Add a list of changelog items with newest items first. Uncomment the 'items' data field when adding the first item.
-# Start changelog item. Copy this section to create a new changelog item.
-# items:
-  # - date:
-  #   summary:
-  #   summaryAdditional:
-  #   isBreaking:
-  #   affectsAccessibility:
-  #   affectsAssets:
-  #   affectsGuidance:
-  #   affectsJavascript:
-  #   affectsMarkup:
-  #   affectsStyles:
-  #   githubPr:
-  #   githubRepo:
-  #   versionUswds:
-# end changelog item
+items:
+  - date: 2022-04-28
+    summary: USWDS 3.0.0 released.
+    summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+    affectsAccessibility: true
+    affectsAssets: true
+    affectsGuidance: true
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0
+  - date: 2021-12-14
+    summary: File upload confirms files to screenreaders.
+    summaryAdditional: Now File Input will tell screenreaders the total number of files and the names of files added to the component.
+    affectsAccessibility: true
+    affectsJavascript: true
+    githubPr: 4415
+    githubRepo: uswds
+    versionUswds: 2.13.0
+  - date: 2021-11-01
+    summary: Fixed a duplicate-file bug in File Input.
+    summaryAdditional: If a file with the same name was uploaded in two separate file input fields, the preview spinner would spin indefinitely. We now assign each upload an individual ID, and the image preview loads properly.
+    affectsJavascript: true
+    githubPr: 4313
+    githubRepo: uswds
+    versionUswds: 2.12.2
+  - date: 2021-11-01
+    summary: Added automatic sanitizing.
+    summaryAdditional: The design system now automatically sanitizes content in elements we compose with JavaScript. This means that components like Combobox, Tooltip, File Input, and Date Picker will sanitize any content passed to them. This helps protect any design system implementation against malicious XSS attacks through these components.
+    affectsJavascript: true
+    githubPr: 4329
+    githubRepo: uswds
+    versionUswds: 2.12.2

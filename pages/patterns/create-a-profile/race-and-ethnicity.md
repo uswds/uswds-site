@@ -88,21 +88,20 @@ Allow selection of more than one race and acknowledge people with multiple racia
 
 <strong>OMB’s minimum categories for race:</strong>
 - American Indian or Alaska Native
-- Asian or Pacific Islander
+- Asian
 - Black or African American
-- Hispanic or Latinx
+- Native Hawaiian or Other Pacific Islander
 - White
-- A race or ethnicity not listed here
 
 <strong>Expanded categories tested in the 2020 Census:</strong>
 - American Indian or Alaska Native
 - Asian
 - Black or African American
-- Hispanic, Latinx, or Spanish
+- Hispanic, Latino, or Spanish
 - Middle Eastern or North African
 - Native Hawaiian or other Pacific Islander
 - White
-- Some other race or ethnicity
+- Some other race
 - Prefer not to answer
 
 ## Accessibility

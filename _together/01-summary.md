@@ -1,6 +1,7 @@
 ---
 layout: together-content
 title: Together `|` Inclusive Design Patterns Research Report
+description: Inclusive design patterns. Working together to reduce barriers to participation through every interaction.
 nav_title: Summary
 meta:
   og:image: /img/together/og-together-report.png

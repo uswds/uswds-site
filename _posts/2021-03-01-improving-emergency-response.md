@@ -4,8 +4,7 @@ tags:
 - updates
 category: About
 author: Ben Judy, Natalie Kurz, and Norah Maki
-meta:
-  og:image: /img/2021-next-blog/post-1-social-share.jpg
+image: /img/2021-next-blog/post-1-social-share.jpg
 excerpt: USWDS Release 2.10 brings new components and updates as a result of our research into recent federal agency emergency response.
 ---
 

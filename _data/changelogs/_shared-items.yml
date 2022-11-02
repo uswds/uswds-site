@@ -1,22 +1,14 @@
-title: Accordion
-type: component
-changelogURL:
-items:
-  - date: 2022-08-05
-    summary: Added <code>type="button"</code> to the component code and guidance.
-    summaryAdditional:
-    isBreaking: true
+# High contrast
+  - date: 2022-04-11
+    summary: Support High Contrast Mode and forced colors.
+    summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     affectsAccessibility: true
-    affectsMarkup: true
-    githubPr: 4695
+    affectsStyles: true
+    githubPr: 4610
     githubRepo: uswds
-    versionUswds: 3.1.0
-  - date: 2022-07-20
-    summary: Updated documentation to reference the correct multi-select attribute.
-    summaryAdditional: The attribute was updated from <code>aria-multiselectable="true"</code> to <code>data-allow-multiple</code>.
-    affectsGuidance: true
-    githubPr: 1718
-    githubRepo: uswds-site
+    versionUswds: 2.13.3
+
+# 3.0 release
   - date: 2022-04-28
     summary: USWDS 3.0.0 released.
     summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
@@ -29,7 +21,9 @@ items:
     githubPr: 4656
     githubRepo: uswds
     versionUswds: 3.0.0
-  - date: 2021-03-17
+
+# White icons
+- date: 2021-03-17
     summary: Restored missing white <code>add</code> and <code>remove</code> icons.
     summaryAdditional:
     affectsAssets: true

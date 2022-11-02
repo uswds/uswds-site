@@ -1,22 +1,48 @@
-# Add page title. eg: Accessibility, Banner
+
 title: Button
 type: component
-# Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
-# Add a list of changelog items with newest items first. Uncomment the 'items' data field when adding the first item.
-# Start changelog item. Copy this section to create a new changelog item.
-# items:
-  # - date:
-  #   summary:
-  #   summaryAdditional:
-  #   isBreaking:
-  #   affectsAccessibility:
-  #   affectsAssets:
-  #   affectsGuidance:
-  #   affectsJavascript:
-  #   affectsMarkup:
-  #   affectsStyles:
-  #   githubPr:
-  #   githubRepo:
-  #   versionUswds:
-# end changelog item
+items:
+  - date: 2022-08-05
+    summary: Style aria-disabled to match disabled.
+    summaryAdditional: Now disabled styling is applied whether you use disabled (disabled and hidden from screen readers) or aria-disabled (disabled and visible to screen readers).
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 4783
+    githubRepo: uswds
+    versionUswds: 3.1.0
+  - date: 2022-08-05
+    summary: Added type="button" to all non-form buttons to prevent default submit behaviors
+    summaryAdditional: This allowed us to remove preventDefault() from the relevant component JS.
+    isBreaking: true
+    affectsJavascript: true
+    affectsMarkup: true
+    githubPr: 4695
+    githubRepo: uswds
+    versionUswds: 3.1.0
+  - date: 2022-04-28
+    summary: USWDS 3.0.0 released.
+    summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+    affectsAccessibility: true
+    affectsAssets: true
+    affectsGuidance: true
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0
+  - date:
+    summary: Fixed unstyled button styling.
+    summaryAdditional: We updated and strengthened the styling of unstyled buttons to prevent any unwanted style leakage from conventional buttons, especially is used in conjunction with <code>usa-button--hover</code> and <code>usa-button--active</code> classes.
+    affectsStyles: true
+    githubPr: 4077
+    githubRepo: uswds
+    versionUswds: 2.11.2
+  - date: 2020-12-17
+    summary: Better support for buttons with multiple variants.
+    summaryAdditional: We fixed a display bug with visited inverse unstyled buttons. Button styling is more reliable with different combinations of variants.
+    affectsStyles: true
+    githubPr: 3846
+    githubRepo: uswds
+    versionUswds: 2.10.0

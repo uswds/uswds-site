@@ -47,7 +47,7 @@ User profiles are central to a person’s identity. A user profile may be integr
         <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/sex-or-gender/">Select their <strong>biological sex or gender</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
-        <p>Help users to select their correct biological sex and gender identity.</p>
+        <p>Help users to select their biological sex and gender identity.</p>
       </div>
     </div>
   </div>

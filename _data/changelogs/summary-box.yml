@@ -26,6 +26,7 @@ items:
   - date: 2022-04-28
     summary: USWDS 3.0.0 released.
     summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+    isBreaking: false
     affectsAccessibility: true
     affectsAssets: true
     affectsGuidance: true
@@ -39,6 +40,7 @@ items:
   - date: 2021-04-28
     summary: Added missing Summary box SASS package.
     summaryAdditional:
+    isBreaking: false
     affectsAccessibility: false
     affectsAssets: true
     affectsGuidance: true

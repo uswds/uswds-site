@@ -39,6 +39,7 @@ items:
   - date: 2022-04-28
     summary: USWDS 3.0.0 released.
     summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+    isBreaking: false
     affectsAccessibility: true
     affectsAssets: true
     affectsGuidance: true
@@ -52,6 +53,7 @@ items:
   - date: 2021-03-17
     summary: Sortable table is released.
     summaryAdditional: A sorted column changes the row ordering based on alphabetical or numeric cell values.
+    isBreaking: false
     affectsAccessibility: false
     affectsAssets: false
     affectsGuidance: true

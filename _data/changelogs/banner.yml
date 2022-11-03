@@ -46,13 +46,15 @@ items:
     githubPr: 4656
     githubRepo: uswds
     versionUswds: 3.0.0
-  - date: 2022-04-10
-    summary: Added styling for high-contrast mode.
+  - date: 2022-04-11
+    summary: Support High Contrast Mode and forced colors.
+    summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     affectsAccessibility: true
     affectsStyles: true
     githubPr: 4610
     githubRepo: uswds
     versionUswds: 2.13.3
+    affectsAccessibility: true
   - date: 2021-03-02
     summary: Updated guidance to identify banner as a core component.
     affectsGuidance: true

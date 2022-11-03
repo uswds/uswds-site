@@ -30,6 +30,11 @@ contents:
     var: $theme-in-page-nav-font-family
     default: '"ui"'
     type: family
+  - name: Link color
+    description: The color of the link in the in-page nav.
+    var: $theme-in-page-nav-link-color
+    default: '"default"'
+    type: color
   - name: Content width
     description: Maximum width of the main element.
     var: $theme-in-page-nav-main-content-max-width

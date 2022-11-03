@@ -30,13 +30,14 @@ Provide a text entry field that supports a rich array of special characters and 
         <div class="do-dont__content">
           <ul>
             <li>Do understand why you are collecting this information.</li>
-            <li>Do provide examples. Many people may not be familiar with the concept of specifying pronouns.</li>
+            <li>Do provide examples and clear hint text. Many people may not be familiar with the concept of specifying pronouns.</li>
             <li>Do provide an open text field. Language is evolving and forced choice can make a user feel as though they need to fit themselves into a label determined by the form designer.</li>
             <li>Do support a <a href="https://web.library.yale.edu/cataloging/music/diacrit">rich array of diacritics, accents, and alternative characters.</a></li>
             <li>Allow users to enter hyphens, apostrophes, and blank spaces in each field.</li>
             <li>Do allow both upper and lowercase letters throughout each field.</li>
             <li>Do support long text fields. Allow users to enter up to 128 characters per field, but follow form norms for field display size.</li>
             <li>Do be prepared for a complex answer.</li>
+            <li>Do allow users to opt out of answering with a "Prefer not to answer" option.</li>
           </ul> 
         </div>
       </div>

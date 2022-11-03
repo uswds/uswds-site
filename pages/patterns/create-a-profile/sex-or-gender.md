@@ -49,6 +49,7 @@ Present the user with a controlled vocabulary to accurately depict their biologi
             <li>Do only provide biological options when asking for biological sex (<code>male</code>, <code>female</code>, and <code>X</code>). </li>
             <li>Do be clear about why you are asking for the information.</li>
             <li>Do be transparent about what you are asking for. To some people gender and biological sex are synonymous, so ensure you use clear language.</li>
+            <li>Do use fieldset and legend to group related radio buttons together, and clear labels and attributes on these form elements.</li>
           </ul> 
         </div>
       </div>
@@ -184,8 +185,6 @@ This pattern uses checkboxes. See [usability guidance for checkboxes]({{ site.ba
 ## Accessibility
 
 <strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/). 
-
-<strong>Do not use a fieldset and legend for a single checkbox.</strong> Only groups of related checkboxes should be contained within a `<fieldset>` and `<legend>`.
 
 <strong>These custom checkboxes are accessible.</strong> The custom checkbox component is accessible to screen readers because the default checkbox is moved off-screen with `position: absolute; left: -999em`.
 

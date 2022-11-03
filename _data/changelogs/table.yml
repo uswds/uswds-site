@@ -19,4 +19,45 @@ changelogURL:
   #   githubPr:
   #   githubRepo:
   #   versionUswds:
-# end changelog item
+
+items:
+  # 3.0.2 release
+  - date: 2022-06-17
+    summary: Table border settings work as expected.
+    summaryAdditional: Theme table settings are now consistently applied to table styles.
+    isBreaking: false
+    affectsAccessibility: false
+    affectsAssets: false
+    affectsGuidance: false
+    affectsJavascript: false
+    affectsMarkup: false
+    affectsStyles: true
+    githubPr: 4712
+    githubRepo: uswds
+    versionUswds: 3.0.2
+  # 3.0 release
+  - date: 2022-04-28
+    summary: USWDS 3.0.0 released.
+    summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+    affectsAccessibility: true
+    affectsAssets: true
+    affectsGuidance: true
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0
+  # 2.11.0 release
+  - date: 2021-03-17
+    summary: Sortable table is released.
+    summaryAdditional: A sorted column changes the row ordering based on alphabetical or numeric cell values.
+    affectsAccessibility: false
+    affectsAssets: false
+    affectsGuidance: true
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles: true
+    githubPr: 3950
+    githubRepo: uswds
+    versionUswds: 2.11.0

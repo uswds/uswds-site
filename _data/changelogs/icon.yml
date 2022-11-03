@@ -1,22 +1,128 @@
-# Add page title. eg: Accessibility, Banner
+
 title: Icon
 type: component
-# Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
-# Add a list of changelog items with newest items first. Uncomment the 'items' data field when adding the first item.
-# Start changelog item. Copy this section to create a new changelog item.
-# items:
-  # - date:
-  #   summary:
-  #   summaryAdditional:
-  #   isBreaking:
-  #   affectsAccessibility:
-  #   affectsAssets:
-  #   affectsGuidance:
-  #   affectsJavascript:
-  #   affectsMarkup:
-  #   affectsStyles:
-  #   githubPr:
-  #   githubRepo:
-  #   versionUswds:
-# end changelog item
+items:
+  - date: 2022-10-19
+    summary: Fixed potential incompatibility with ARM-based Macs.
+    summaryAdditional: We updated our SVG sprite compiler. This should resolve potential dependency incompatibilities on computers with ARM processors.
+    affectsJavascript: true
+    githubPr: 4665
+    githubRepo: uswds
+    versionUswds: 3.2.0
+  - date: 2022-08-05
+    summary: Added LinkedIn icon.
+    summaryAdditional: We now have a LinkedIn icon included in our default icon sprite as linkedin.
+    affectsAssets: true
+    githubPr: 4872
+    githubRepo: uswds
+    versionUswds: 3.1.0
+  - date: 2022-08-05
+    summary: Use unmodified social media icons.
+    summaryAdditional: We now provide simpler social media icons, and removed any decoration not in the original icon. This means that the new icons are not in an enclosing circle unless the original icon is enclosed in a circle.
+    affectsAssets: true
+    githubPr: 4872
+    githubRepo: uswds
+    versionUswds: 3.1.0
+  - date: 2022-06-17
+    summary: Updated flag icon to be high resolution.
+    affectsAssets: true
+    githubPr: 4792
+    githubRepo: uswds
+    versionUswds: 3.0.2
+  - date: 2022-06-17
+    summary: Added a Fax icon to the default set.
+    summaryAdditional:
+    affectsAssets: true
+    githubPr: 4797
+    githubRepo: uswds
+    versionUswds: 3.0.2
+  - date: 2022-06-17
+    summary: Added a Remove Circle icon to the default set.
+    affectsAssets: true
+    githubPr: 4791
+    githubRepo: uswds
+    versionUswds: 3.0.2
+  - date: 2022-06-17
+    summary: Navigate_far icons now accept custom color.
+    summaryAdditional: We fixed the <code>navigate_far_before</code> and <code>navigate_far_next</code> icons to allow a <code>customColor</code> fill.
+    affectsAssets: true
+    affectsStyles: true
+    githubPr: 4780
+    githubRepo: uswds
+    versionUswds: 3.0.2
+  - date: 2022-04-28
+    summary: USWDS 3.0.0 released.
+    summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+    affectsAccessibility: true
+    affectsAssets: true
+    affectsGuidance: true
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0
+  - date: 2022-03-07
+    summary: Fixed GitHub icon to prevent CSP flag.
+    summaryAdditional: Resolves an error which can occur when using the USWDS Icon component SVG sprite in combination with a <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP">Content Security Policy (CSP)</a>, where the presence of an inline style tag within the GitHub icon can violate most common CSPs which do not include the unsafe-inline style-src directive.
+    affectsAssets: true
+    githubPr: 4487
+    githubRepo: uswds
+    versionUswds: 2.13.2
+  - date: 2021-12-14
+    summary: Improved resilience of icon-only functionality.
+    summaryAdditional: We updated a couple components that use icon-only buttons so that they provide a text equivalent if the image path is broken and does not load.
+    isBreaking: true
+    affectsAccessibility: true
+    affectsAssets: true
+    affectsMarkup: true
+    githubPr: 4211
+    githubRepo: uswds
+    versionUswds: 2.13.0
+  - date: 2021-04-28
+    summary: Fixed the size of some of our icons.
+    summaryAdditional: The view box on some or our icons was 20px instead of 24px. We updated these icons to use the proper view box. This may result in small changes to the display of icons, but will result in a more consistent placement and appearance across all icons in our icon set.
+    affectsAssets: true
+    githubPr: 4139
+    githubRepo: uswds
+    versionUswds: 2.11.2
+  - date: 2021-04-28
+    summary: Swapped thumb icons in our sprite for consistency.
+    summaryAdditional: We replaced <code>thumb_down_off_alt</code> with <code>thumb_down_off</code> in our icon sprite for consistency with its <code>thumb_up</code> pair.
+    isBreaking: true
+    affectsAssets: true
+    githubPr: 4139
+    githubRepo: uswds
+    versionUswds: 2.11.2
+  - date: 2021-04-28
+    summary: Removed duplicate eye icon.
+    summaryAdditional: Removes <code>remove_red_eye</code> icon from <code>usa-icons</code> and sprite. Use of <code>visibility</code> instead.
+    isBreaking: true
+    affectsAssets: true
+    githubPr: 4139
+    githubRepo: uswds
+    versionUswds: 2.11.2
+  - date: 2021-03-17
+    summary: Restored missing white icons.
+    summaryAdditional:
+    affectsAssets: true
+    githubPr: 4106
+    githubRepo: uswds
+    versionUswds: 2.11.1
+  - date:
+    summary: Provide better support for color icons that adapt to theme settings.
+    summaryAdditional: Now the color of the alert icon will update automatically to adapt to the alert background, or to the color of the alert text.
+    affectsAssets: true
+    affectsStyles: true
+    githubPr: 4079
+    githubRepo: uswds
+    versionUswds: 2.11.0
+  - date: 2021-03-02
+    summary: Introduced white <code>add</code>, <code>remove</code>, and <code>expand_more</code> icons.
+    summaryAdditional:
+    isBreaking: false
+    affectsAssets: true
+    githubPr: 4061
+    githubRepo: uswds
+    versionUswds: 2.10.2

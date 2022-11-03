@@ -1,22 +1,26 @@
-# Add page title. eg: Accessibility, Banner
+
 title: Identifier
 type: component
-# Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
-# Add a list of changelog items with newest items first. Uncomment the 'items' data field when adding the first item.
-# Start changelog item. Copy this section to create a new changelog item.
-# items:
-  # - date:
-  #   summary:
-  #   summaryAdditional:
-  #   isBreaking:
-  #   affectsAccessibility:
-  #   affectsAssets:
-  #   affectsGuidance:
-  #   affectsJavascript:
-  #   affectsMarkup:
-  #   affectsStyles:
-  #   githubPr:
-  #   githubRepo:
-  #   versionUswds:
-# end changelog item
+items:
+  - date:
+    summary: Use valid element for identity's aria label.
+    summaryAdditional: We updated the identity section of the Identifier to use a <code>section</code> instead of a <code>div</code> so it's <code>aria-label</code> will apply to a valid element.
+    isBreaking: true
+    affectsAccessibility: true
+    affectsMarkup: true
+    githubPr: 4964
+    githubRepo: uswds
+    versionUswds: 3.2.0
+  - date: 2022-04-28
+    summary: USWDS 3.0.0 released.
+    summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+    affectsAccessibility: true
+    affectsAssets: true
+    affectsGuidance: true
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0

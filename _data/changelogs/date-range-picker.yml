@@ -30,6 +30,13 @@ items:
     githubPr: 4656
     githubRepo: uswds
     versionUswds: 3.0.0
+  - date: 2022-04-10
+    summary: Added styling for high-contrast mode.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 4610
+    githubRepo: uswds
+    versionUswds: 2.13.3
   - date: 2022-01-20
     summary: Fix Date Picker input bug in Safari.
     summaryAdditional: We fixed a bug where date picker selections would not propagate into the input field in Safari.

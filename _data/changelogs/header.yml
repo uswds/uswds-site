@@ -1,22 +1,85 @@
-# Add page title. eg: Accessibility, Banner
+
 title: Header
 type: component
-# Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
-# Add a list of changelog items with newest items first. Uncomment the 'items' data field when adding the first item.
-# Start changelog item. Copy this section to create a new changelog item.
-# items:
-  # - date:
-  #   summary:
-  #   summaryAdditional:
-  #   isBreaking:
-  #   affectsAccessibility:
-  #   affectsAssets:
-  #   affectsGuidance:
-  #   affectsJavascript:
-  #   affectsMarkup:
-  #   affectsStyles:
-  #   githubPr:
-  #   githubRepo:
-  #   versionUswds:
-# end changelog item
+items:
+  - date: 2022-08-05
+    summary: Added type="button" to all non-form buttons to prevent default submit behaviors
+    summaryAdditional: This allowed us to remove preventDefault() from the relevant component JS.
+    isBreaking: true
+    affectsJavascript: true
+    affectsMarkup: true
+    githubPr: 4695
+    githubRepo: uswds
+    versionUswds: 3.1.0
+  - date: 2022-08-05
+    summary: Fixed mobile menu appearance for different CSS layouts.
+    summaryAdditional: The menu now appears properly on layouts using flex or CSS grid.
+    affectsStyles: true
+    githubPr: 4817
+    githubRepo: uswds
+    versionUswds: 3.1.0
+  - date: 2022-06-17
+    summary: Improved target area for header dropdown links.
+    summaryAdditional: Links in dropdown menus are now formatted as block elements to provide a larger selectable surface.
+    affectsStyles: true
+    githubPr: 4708
+    githubRepo: uswds
+    versionUswds: 3.0.2
+  - date: 2022-06-17
+    summary: Megamenu always stays within the viewport.
+    summaryAdditional: We improved the styling of the header megamenu so it resizes properly when trying to capture screenshots.
+    affectsStyles: true
+    githubPr: 4757
+    githubRepo: uswds
+    versionUswds: 3.0.2
+  - date: 2022-04-28
+    summary: USWDS 3.0.0 released.
+    summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+    affectsAccessibility: true
+    affectsAssets: true
+    affectsGuidance: true
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0
+  - date: 2022-04-10
+    summary: Added styling for high-contrast mode.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 4610
+    githubRepo: uswds
+    versionUswds: 2.13.3
+  - date: 2021-12-14
+    summary: Mobile navigation now makes background content inert.
+    summaryAdditional: When the mobile navigation is active, all other non-nav content is hidden. This prevents accidentally leaving the focus of the active mobile menu.
+    affectsAccessibility: true
+    affectsJavascript: true
+    githubPr: 4411
+    githubRepo: uswds
+    versionUswds: 2.13.0
+  - date: 2021-08-18
+    summary: Header dropdown menus close with escape or focus out.
+    summaryAdditional: Now <code>esc</code> or focusing out will close dropdown menus in the header.
+    affectsAccessibility: true
+    affectsJavascript: true
+    githubPr: 4275
+    githubRepo: uswds
+    versionUswds: 2.12.1
+  - date: 2021-03-17
+    summary: Restored missing white <code>expand_more</code> icon.
+    summaryAdditional:
+    affectsAssets: true
+    githubPr: 4106
+    githubRepo: uswds
+    versionUswds: 2.11.1
+  - date: 2021-03-02
+    summary: Introduced white <code>expand_more</code> icon.
+    summaryAdditional:
+    isBreaking: false
+    affectsAssets: true
+    githubPr: 4061
+    githubRepo: uswds
+    versionUswds: 2.10.2

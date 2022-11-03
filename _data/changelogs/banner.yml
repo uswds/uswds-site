@@ -57,7 +57,6 @@ items:
     affectsGuidance: true
     githubPr: 1136
     githubRepo: uswds-site
-    versionUswds:
   - date: 2020-12-17
     summary: Introduced <code>uswds-init.js</code> to prevent banner flash.
     summaryAdditional: When added to the <code>head</code> of your document, this script prevents the banner from flashing its content on page load and shifting content.

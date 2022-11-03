@@ -47,3 +47,14 @@
     githubPr: 4329
     githubRepo: uswds
     versionUswds: 2.12.2
+
+# type button
+  - date: 2022-08-05
+    summary: Added type="button" to all non-form buttons to prevent default submit behaviors
+    summaryAdditional: This allowed us to remove preventDefault() from the relevant component JS.
+    isBreaking: true
+    affectsJavascript: true
+    affectsMarkup: true
+    githubPr: 4695
+    githubRepo: uswds
+    versionUswds: 3.1.0

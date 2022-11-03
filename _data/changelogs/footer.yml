@@ -1,18 +1,46 @@
-
 title: Footer
 type: component
 changelogURL:
 items:
-  - date:
-    summary:
-    summaryAdditional:
-    isBreaking:
+  - date: 2022-08-05
+    summary: Use unmodified social media icons.
+    summaryAdditional: We now provide simpler social media icons, and removed any decoration not in the original icon. This means that the new icons are not in an enclosing circle unless the original icon is enclosed in a circle.
     affectsAccessibility:
-    affectsAssets:
-    affectsGuidance:
-    affectsJavascript:
-    affectsMarkup:
-    affectsStyles:
-    githubPr:
-    githubRepo:
-    versionUswds:
+    affectsAssets: true
+    githubPr: 4872
+    githubRepo: uswds
+    versionUswds: 3.1.0
+  - date: 2022-04-11
+    summary: Big Footer includes more accessible disclosure buttons.
+    summaryAdditional: Now the Big Footer variant uses more accessible disclosure buttons for showing and hiding submenus at mobile widths.
+    affectsAccessibility: true
+    affectsJavascript: true
+    affectsStyles: true
+    githubPr: 4476
+    githubRepo: uswds
+    versionUswds: 2.13.3
+  - date: 2022-04-10
+    summary: Added styling for high-contrast mode.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 4610
+    githubRepo: uswds
+    versionUswds: 2.13.3
+  - date: 2022-03-07
+    summary: Fixed Big Footer expanded display.
+    summaryAdditional: Fixes an issue where the Big Footer variant does not show the proper expanded display at exactly 480px.
+    affectsJavascript: true
+    affectsStyles: true
+    githubPr: 4525
+    githubRepo: uswds
+    versionUswds: 2.13.2
+  - date: 2021-12-14
+    summary: Improved resilience of icon-only functionality.
+    summaryAdditional: We updated the markup for the social icons in the footer so that they provide a text equivalent if the image path is broken and does not load.
+    isBreaking: true
+    affectsAccessibility: true
+    affectsAssets: true
+    affectsMarkup: true
+    githubPr: 4211
+    githubRepo: uswds
+    versionUswds: 2.13.0

@@ -20,3 +20,31 @@ changelogURL:
   #   githubRepo:
   #   versionUswds:
 # end changelog item
+
+items:
+  # 3.0 release
+  - date: 2022-04-28
+    summary: USWDS 3.0.0 released.
+    summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+    affectsAccessibility: true
+    affectsAssets: true
+    affectsGuidance: true
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0
+  # 2.11.2 release
+  - date: 2021-04-28
+    summary: Added missing Summary box SASS package.
+    summaryAdditional:
+    affectsAccessibility: false
+    affectsAssets: true
+    affectsGuidance: true
+    affectsJavascript: false
+    affectsMarkup: false
+    affectsStyles: false
+    githubPr: 4162
+    githubRepo: uswds
+    versionUswds: 2.11.2

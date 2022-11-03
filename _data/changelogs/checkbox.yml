@@ -13,6 +13,7 @@ items:
   - date: 2022-04-28
     summary: USWDS 3.0.0 released.
     summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+    isBreaking: true
     affectsAccessibility: true
     affectsAssets: true
     affectsGuidance: true

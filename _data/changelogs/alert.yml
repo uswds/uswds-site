@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: 2022-10-19
-    summary: Updated the alignment of the Alert and Site alert component content to visually match alignment with banner content.
+    summary: Updated the alignment of the Alert and Site alert components content to visually match alignment with banner content.
     summaryAdditional:
     affectsStyles: true
     githubPr: 4922
@@ -12,6 +12,7 @@ items:
   - date: 2022-04-28
     summary: USWDS 3.0.0 released.
     summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+    isBreaking: true
     affectsAccessibility: true
     affectsAssets: true
     affectsGuidance: true
@@ -21,8 +22,8 @@ items:
     githubPr: 4656
     githubRepo: uswds
     versionUswds: 3.0.0
-  - date: 2021-05-17
-    summary: Restores white variant icons mistakenly removed in 2.11.0
+  - date: 2021-03-17
+    summary: Restores white variant icons mistakenly removed in 2.11.0.
     summaryAdditional:
     affectsAssets: true
     githubPr: 4106

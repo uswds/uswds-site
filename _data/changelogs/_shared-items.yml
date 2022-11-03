@@ -12,6 +12,7 @@
   - date: 2022-04-28
     summary: USWDS 3.0.0 released.
     summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+    isBreaking: true
     affectsAccessibility: true
     affectsAssets: true
     affectsGuidance: true
@@ -24,14 +25,14 @@
 
 # White icons
 - date: 2021-03-17
-    summary: Restored missing white <code>add</code> and <code>remove</code> icons.
+    summary: Restored missing white <code>expand_more</code> icon.
     summaryAdditional:
     affectsAssets: true
     githubPr: 4106
     githubRepo: uswds
     versionUswds: 2.11.1
   - date: 2021-03-02
-    summary: Introduced white <code>add</code> and <code>remove</code> icons.
+    summary: Introduced white <code>expand_more</code> icon.
     summaryAdditional:
     isBreaking: false
     affectsAssets: true
@@ -50,8 +51,8 @@
 
 # type button
   - date: 2022-08-05
-    summary: Added type="button" to all non-form buttons to prevent default submit behaviors
-    summaryAdditional: This allowed us to remove preventDefault() from the relevant component JS.
+    summary: Added <code>type="button"</code> to all non-form buttons to prevent default submit behaviors.
+    summaryAdditional: This allowed us to remove <code>preventDefault()</code> from the relevant component JavaScript.
     isBreaking: true
     affectsJavascript: true
     affectsMarkup: true

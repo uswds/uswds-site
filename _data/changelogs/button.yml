@@ -11,8 +11,8 @@ items:
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-08-05
-    summary: Added type="button" to all non-form buttons to prevent default submit behaviors
-    summaryAdditional: This allowed us to remove preventDefault() from the relevant component JS.
+    summary: Added <code>type="button"</code> to all non-form buttons to prevent default submit behaviors.
+    summaryAdditional: This allowed us to remove <code>preventDefault()</code> from the relevant component JavaScript.
     isBreaking: true
     affectsJavascript: true
     affectsMarkup: true
@@ -22,6 +22,7 @@ items:
   - date: 2022-04-28
     summary: USWDS 3.0.0 released.
     summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+    isBreaking: true
     affectsAccessibility: true
     affectsAssets: true
     affectsGuidance: true

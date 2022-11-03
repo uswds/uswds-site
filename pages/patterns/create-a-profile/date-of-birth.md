@@ -32,7 +32,8 @@ Mobile device users in particular may benefit from being able to type a year rat
         <div class="do-dont__content">
           <ul>
             <li>Do provide text entry fields for day and year inputs, and the Select component for month.</li>
-            <li>Do label the fields clearly. Some countries use a day/month/year format and it’s important that date and month are clearly distinguished to ensure correct date entry.</li>
+            <li>Do label the fields clearly, including the month select. Some countries use a day/month/year format and it’s important that date and month are clearly distinguished to ensure correct date entry.</li>
+            <li>Do use a "text" vs "numeric" input type.</li>
             <li>Do limit individual field character length.</li>
             <li>Do consider your data requirements. Use both client-side and server-side validation to support properly formatted dates if possible. If you are unable to parse date without two digits, provide an example that reflects a leading zero and use clear validation messaging if a single digit without a leading zero is entered.</li>
             <li>Do consider requiring a four-digit year to avoid potential confusion.</li>
@@ -46,6 +47,7 @@ Mobile device users in particular may benefit from being able to type a year rat
     <h3 class="do-dont__heading">What not to do</h3>
       <div class="do-dont__content">
           <ul>
+            <li>Don't auto-advance focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes.</li>
             <li>Do not use visual separators between fields.</li>
             <li>Do not auto-advance focus from field to field.</li>
             <li>Do not require leading zeros if possible.</li>

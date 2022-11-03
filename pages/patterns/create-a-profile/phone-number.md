@@ -33,6 +33,8 @@ Help users enter their phone numbers in a consistent, correct, usable format. Us
             <li>Do clearly state if you need a U.S. telephone number.</li>
             <li>Do clearly state if you need an SMS-capable mobile phone number, such as when you need to text a security code for validation.</li>
             <li>Use clear hint text and input masking to ensure proper formatting.</li>
+            <li>Do use a "text" vs "numeric" input type.</li>
+            <li>Do use fieldset and legend to group related radio buttons together, and clear labels and attributes on these form elements.</li>
             <li>Consider using the autocomplete attribute on telephone number inputs, to allow the browser to autofill information if it has been previously entered.</li>
             <li>Offer very clear validation messages to help users successfully meet format requirements.</li>
             <li>Allow a user to supply multiple phone numbers, labeling options <code>Primary</code> and <code>Secondary</code>.</li>

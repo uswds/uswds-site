@@ -15,7 +15,7 @@ lead: This pattern helps users to provide gender identity or biological sex info
 
 Sex assigned at birth is a biological attribute. In the digital space, male and female are often the only provided options, but there are instances where an individual’s biological sex is not unambiguously male or female.
 
-Gender is a social construct. Gender identity is an expression of a user’s identity and is integral to their sense of self. There is a wide variety of gendered experiences in the world.
+Gender is a social construct. Gender identity is an expression of a user’s identity and is integral to their sense of self. Gendered experiences are complex and vary widely.
 
 Historically, the federal government has asked people to choose between male and female based on the biological sex they were assigned at birth. Recently, agencies and programs have been moving toward providing more options, reflecting the fact that biological sex is not always unambiguously male or female, and that an individual’s gender may not reflect the biological sex they were assigned at birth.
 
@@ -244,6 +244,9 @@ This pattern uses checkboxes. See [usability guidance for checkboxes]({{ site.ba
     {% highlight html%}{% include patterns/gender.html %}{% endhighlight %}
   </div>
 </div>
+
+## Related
+- <a href="{{ site.baseurl }}/patterns/create-a-profile/pronouns/">Pronouns</a> pattern
 
 ## References
 - Collecting sexual orientation and gender identity information. (March 9, 2022) Retrieved on July 20, 2022, from [https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html](https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html)

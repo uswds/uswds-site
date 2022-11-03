@@ -126,6 +126,9 @@ Provide a text entry field that supports a rich array of special characters and 
   </div>
 </div>
 
+## Related
+- <a href="{{ site.baseurl }}/patterns/create-a-profile/sex-or-gender/">Sex or gender</a> pattern
+
 ## References
 - Ask users for gender or sex. (n.d.) Retrieved on July 19, 2022, from [https://design-system.service.gov.uk/patterns/gender-or-sex/](https://design-system.service.gov.uk/patterns/gender-or-sex/)
 - Asking about gender in online forms. (September 18, 2015) Retrieved on July 19, 2022, from [http://www.practicemakesprogress.org/blog/2015/9/18/asking-about-gender-on-online-forms](http://www.practicemakesprogress.org/blog/2015/9/18/asking-about-gender-on-online-forms)

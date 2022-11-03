@@ -1,4 +1,8 @@
-  - date: 2022-10-19
+title: Identifier
+type: component
+changelogURL:
+items:
+  - date:
     summary: Use valid element for identity's aria label.
     summaryAdditional: We updated the identity section of the Identifier to use a <code>section</code> instead of a <code>div</code> so it's <code>aria-label</code> will apply to a valid element.
     isBreaking: true
@@ -7,3 +11,15 @@
     githubPr: 4964
     githubRepo: uswds
     versionUswds: 3.2.0
+  - date: 2022-04-28
+    summary: USWDS 3.0.0 released.
+    summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+    affectsAccessibility: true
+    affectsAssets: true
+    affectsGuidance: true
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0

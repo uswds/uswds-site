@@ -1,6 +1,8 @@
-title: Input prefix suffix
+
+title: Input prefix or suffix
 type: component
 changelogURL:
+items:
   - date: 2022-04-28
     summary: USWDS 3.0.0 released.
     summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
@@ -16,7 +18,6 @@ changelogURL:
   - date: 2021-03-07
     summary: Added input prefix or suffix component.
     summaryAdditional: Use input prefixes and suffixes to show symbols or abbreviations that help users enter the right type of information in a form’s text input.
-    isBreaking: true
     affectsGuidance: true
     affectsJavascript: true
     affectsMarkup: true

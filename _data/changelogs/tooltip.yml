@@ -19,4 +19,31 @@ changelogURL:
   #   githubPr:
   #   githubRepo:
   #   versionUswds:
-# end changelog item
+
+items:
+  # 3.2.0 release
+  - date: 2022-10-19
+    summary: Tooltip allows for dynamic initialization.
+    summaryAdditional: Tooltip initializes on first interaction and checks if component has been initialized before toggling. If it hasn't initialized properly it will call a setup attributes function.
+    affectsAccessibility: false
+    affectsAssets: false
+    affectsGuidance: false
+    affectsJavascript: true
+    affectsMarkup: false
+    affectsStyles: true
+    githubPr: 4955
+    githubRepo: uswds
+    versionUswds: 3.2.0
+  # 3.0 release
+  - date: 2022-04-28
+    summary: USWDS 3.0.0 released.
+    summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+    affectsAccessibility: true
+    affectsAssets: true
+    affectsGuidance: true
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0

@@ -38,6 +38,7 @@ Provide multiple text entry fields that support a rich array of special characte
             <li>Do allow both upper- and lowercase letters throughout each field.</li>
             <li>Allow users to enter hyphens, apostrophes, and blank spaces in each name field.</li>
             <li>Consider using the autocomplete attribute on name fields to allow the browser to autofill information that has been previously entered.</li>
+            <li>Do use fieldset and legend to group related fields together, and clear labels and attributes on these form elements.</li>
             <li>Do display the complete name wherever the information is displayed (even if it is long), including on a confirmation page. You may need to truncate a name when used to convey logged-in status in the site header.</li>
             <li>Do use hint text to help users understand which name should be used in each field.</li>
           </ul> 

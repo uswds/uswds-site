@@ -35,6 +35,7 @@ Provide a single text field to enter the Social Security Number.
         <div class="do-dont__content">
           <ul>
             <li>Do allow users to enter a Social Security Number with as much fault tolerance as possible. Hyphens and blank spaces in the Social Security Number field should be accommodated if at all possible, since users may be accustomed to entering separators to the numeric groups that make up a Social Security Number.</li>
+            <li>Do use a "text" vs "numeric" input type.</li>
             <li>Do consider using input masking to guide correct entry of the Social Security Number.</li>
             <li>Do use both client-side and server-side validation if possible to enforce format consistency and flag <a href="https://www.ssa.gov/kc/SSAFactSheet--IssuingSSNs.pdf">invalid Social Security Numbers</a>.</li>
           </ul> 

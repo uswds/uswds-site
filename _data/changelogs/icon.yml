@@ -19,6 +19,7 @@ items:
   - date: 2022-08-05
     summary: Use unmodified social media icons.
     summaryAdditional: We now provide simpler social media icons, and removed any decoration not in the original icon. This means that the new icons are not in an enclosing circle unless the original icon is enclosed in a circle.
+    isBreaking: true
     affectsAssets: true
     githubPr: 4872
     githubRepo: uswds
@@ -83,6 +84,7 @@ items:
   - date: 2021-04-28
     summary: Fixed the size of some of our icons.
     summaryAdditional: The view box on some or our icons was 20px instead of 24px. We updated these icons to use the proper view box. This may result in small changes to the display of icons, but will result in a more consistent placement and appearance across all icons in our icon set.
+    isBreaking: true
     affectsAssets: true
     githubPr: 4139
     githubRepo: uswds
@@ -90,14 +92,13 @@ items:
   - date: 2021-04-28
     summary: Swapped thumb icons in our sprite for consistency.
     summaryAdditional: We replaced <code>thumb_down_off_alt</code> with <code>thumb_down_off</code> in our icon sprite for consistency with its <code>thumb_up</code> pair.
-    isBreaking: true
     affectsAssets: true
     githubPr: 4139
     githubRepo: uswds
     versionUswds: 2.11.2
   - date: 2021-04-28
     summary: Removed duplicate eye icon.
-    summaryAdditional: Removes <code>remove_red_eye</code> icon from <code>usa-icons</code> and sprite. Use of <code>visibility</code> instead.
+    summaryAdditional: Removes <code>remove_red_eye</code> icon from <code>usa-icons</code> and sprite. Use <code>visibility</code> instead.
     isBreaking: true
     affectsAssets: true
     githubPr: 4139
@@ -105,7 +106,7 @@ items:
     versionUswds: 2.11.2
   - date: 2021-03-17
     summary: Restored missing white icons.
-    summaryAdditional:
+    summaryAdditional: Restored <code>add--white</code>, <code>check_circle--white</code>, <code>error--white</code>, <code>expand_more--white</code>, <code>info--white</code>, <code>remove--white</code>, and <code>warning--white</code> icons.
     affectsAssets: true
     githubPr: 4106
     githubRepo: uswds

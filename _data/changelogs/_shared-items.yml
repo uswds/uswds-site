@@ -24,15 +24,15 @@
     versionUswds: 3.0.0
 
 # White icons
-- date: 2021-03-17
-    summary: Restored missing white <code>expand_more</code> icon.
-    summaryAdditional:
+  - date: 2021-03-17
+    summary: Restored missing white icons.
+    summaryAdditional: Restored <code>add--white</code>, <code>check_circle--white</code>, <code>error--white</code>, <code>expand_more--white</code>, <code>info--white</code>, <code>remove--white</code>, and <code>warning--white</code> icons.
     affectsAssets: true
     githubPr: 4106
     githubRepo: uswds
     versionUswds: 2.11.1
   - date: 2021-03-02
-    summary: Introduced white <code>expand_more</code> icon.
+    summary: Introduced white <code>add</code>, <code>remove</code>, and <code>expand_more</code> icons.
     summaryAdditional:
     isBreaking: false
     affectsAssets: true

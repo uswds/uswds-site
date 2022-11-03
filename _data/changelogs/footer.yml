@@ -5,7 +5,7 @@ items:
   - date: 2022-08-05
     summary: Use unmodified social media icons.
     summaryAdditional: We now provide simpler social media icons, and removed any decoration not in the original icon. This means that the new icons are not in an enclosing circle unless the original icon is enclosed in a circle.
-    affectsAccessibility:
+    isBreaking: true
     affectsAssets: true
     githubPr: 4872
     githubRepo: uswds
@@ -19,8 +19,9 @@ items:
     githubPr: 4476
     githubRepo: uswds
     versionUswds: 2.13.3
-  - date: 2022-04-10
-    summary: Added styling for high-contrast mode.
+  - date: 2022-04-11
+    summary: Support High Contrast Mode and forced colors.
+    summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     affectsAccessibility: true
     affectsStyles: true
     githubPr: 4610
@@ -36,7 +37,7 @@ items:
     versionUswds: 2.13.2
   - date: 2021-12-14
     summary: Improved resilience of icon-only functionality.
-    summaryAdditional: We updated the markup for the social icons in the footer so that they provide a text equivalent if the image path is broken and does not load.
+    summaryAdditional: We updated a couple components that use icon-only buttons so that they provide a text equivalent if the image path is broken and does not load.
     isBreaking: true
     affectsAccessibility: true
     affectsAssets: true

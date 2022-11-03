@@ -45,8 +45,9 @@ items:
     githubPr: 4656
     githubRepo: uswds
     versionUswds: 3.0.0
-  - date: 2022-04-10
-    summary: Added styling for high-contrast mode.
+  - date: 2022-04-11
+    summary: Support High Contrast Mode and forced colors.
+    summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     affectsAccessibility: true
     affectsStyles: true
     githubPr: 4610
@@ -69,14 +70,14 @@ items:
     githubRepo: uswds
     versionUswds: 2.12.1
   - date: 2021-03-17
-    summary: Restored missing white <code>expand_more</code> icon.
-    summaryAdditional:
+    summary: Restored missing white icons.
+    summaryAdditional: Restored <code>add--white</code>, <code>check_circle--white</code>, <code>error--white</code>, <code>expand_more--white</code>, <code>info--white</code>, <code>remove--white</code>, and <code>warning--white</code> icons.
     affectsAssets: true
     githubPr: 4106
     githubRepo: uswds
     versionUswds: 2.11.1
   - date: 2021-03-02
-    summary: Introduced white <code>expand_more</code> icon.
+    summary: Introduced white <code>add</code>, <code>remove</code>, and <code>expand_more</code> icons.
     summaryAdditional:
     isBreaking: false
     affectsAssets: true

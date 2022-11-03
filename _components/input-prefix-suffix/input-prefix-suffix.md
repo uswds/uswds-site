@@ -17,7 +17,7 @@ subnav:
 - text: Package
   href: '#input-prefix-suffix-package'
 - text: Latest updates
-  href: '#input-prefix-suffix-changelog'
+  href: '#input-prefix-or-suffix-changelog'
 tags:
   - input
   - form controls

@@ -86,7 +86,8 @@
         <input class="usa-input usa-input--medium" id="physical-zip" name="physical-zip" pattern="[\d]{5}(-[\d]{4})?" />
         <label class="usa-label" for="physical-urbanization">Urbanization (Puerto Rico only)</label>
         <input class="usa-input" id="physical-urbanization" name="physical-urbanization" />
-        <label class="usa-label" for="google-plus-code">Google Plus Code (e.g., PGX4+XX)</label>
-        <input class="usa-input" id="google-plus-code" name="google-plus-code" />
+        <label class="usa-label" for="google-plus-code">Google Plus Code</label>
+        <div class="usa-hint" id="gpcHint">For example, PGX4+XX</div>
+        <input class="usa-input" id="google-plus-code" name="google-plus-code" aria-describedby="gpcHint" />
     </fieldset>
 </form>

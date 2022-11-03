@@ -37,6 +37,7 @@ Provide clear information on why it is necessary to complete the form, what info
             <li>Do <a href="{{ site.baseurl }}/components/icon-list/">provide a list</a> of what information your user will need to successfully complete the form.</li>
             <li>Do provide an approximate amount of time it will take the user to complete the form.</li>
             <li>Do allow the user to save and resume if possible. Some users may need to take breaks as they complete a form on a difficult topic. If users can save and resume the form, tell them so up front, so they know this is an option.</li>
+            <li>Do provide the user with a summary of their answers before they submit the form.</li>
           </ul> 
         </div>
       </div>

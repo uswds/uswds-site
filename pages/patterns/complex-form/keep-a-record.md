@@ -33,12 +33,14 @@ Provide the user with a printable record of their answers using a print style sh
         <div class="do-dont__content">
           <ul>
             <li>Use a print style sheet to create a summary of submitted information in a print-optimized format.</li>
+            <li>Do optimize for print by removing unnecessary graphics, minimizing color usage, and making effective use of page dimensions.</li>
             <li>Provide a “title block” that includes the site name, URL, date, and record of successful submission.</li>            
             <li>Add any next steps, time frames, or reference numbers like case or record identifiers to the title block, if possible.</li>
             <li>Include a complete recap of all questions and their submitted answers.</li>
             <li>Consider whether any of the submitted values might benefit from partial masking when printed (e.g., a Social Security Number field). If you do mask, display no more than the last four (4) digits to ensure the user can still recognize their entry as the proper value.</li>            
             <li>Include a “Print” button on the summary page.</li>
             <li>Strongly consider building in PDF generation. Print-to-PDF functionality is not widely understood in general, and can be particularly cumbersome on mobile devices.</li>
+            <li>Do use good semantic structures to aid in creating more accessible PDFs.</li>
           </ul> 
         </div>
       </div>

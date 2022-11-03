@@ -16,6 +16,8 @@ subnav:
   href: '#icon-list-guidance'
 - text: Package
   href: '#icon-list-package'
+- text: Latest updates
+  href: '#icon-list-changelog'
 title: Icon list
 variants:
   - variant: "`.usa-icon-list--[color]`"

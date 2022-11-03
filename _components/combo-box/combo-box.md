@@ -43,6 +43,8 @@ subnav:
   href: '#combo-box-guidance'
 - text: Package
   href: '#combo-box-package'
+- text: Latest updates
+  href: '#combo-box-changelog'
 tags:
   - form
   - forms

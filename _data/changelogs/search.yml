@@ -19,4 +19,31 @@ changelogURL:
   #   githubPr:
   #   githubRepo:
   #   versionUswds:
+
+  - date: 2022-04-28
+    summary: Released USWDS 3.0.
+    summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+    isBreaking: true
+    affectsAccessibility: true
+    affectsAssets: true
+    affectsGuidance: true
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0
+  - date: 2021-12-14
+    summary: Updated to add text equivalent if the image path is broken and does not load
+    summaryAdditional: 
+    isBreaking: true
+    affectsAccessibility: true
+    affectsAssets: false
+    affectsGuidance: false
+    affectsJavascript: false
+    affectsMarkup: true
+    affectsStyles: true
+    githubPr: 4274
+    githubRepo: uswds
+    versionUswds: 2.13.0
 # end changelog item

@@ -38,3 +38,11 @@ items:
     githubPr: 4079
     githubRepo: uswds
     versionUswds: 2.11.0
+  - date: 2021-03-17
+    summary: Added the <code>$theme-alert-padding-y</code> setting.
+    summaryAdditional:
+    affectsAccessibility:
+    affectsStyles: true
+    githubPr: 4079
+    githubRepo: uswds
+    versionUswds: 2.11.0

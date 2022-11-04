@@ -3,17 +3,8 @@ type: component
 changelogURL:
 items:
   - date: 2022-08-05
-    summary: Style aria-disabled to match disabled.
-    summaryAdditional: Now disabled styling is applied whether you use disabled (disabled and hidden from screen readers) or aria-disabled (disabled and visible to screen readers).
-    affectsAccessibility: true
-    affectsStyles: true
-    githubPr: 4783
-    githubRepo: uswds
-    versionUswds: 3.1.0
-  - date: 2022-08-05
     summary: Added <code>type="button"</code> to all non-form buttons to prevent default submit behaviors.
     summaryAdditional: This allowed us to remove <code>preventDefault()</code> from the relevant component JavaScript.
-    isBreaking: true
     affectsJavascript: true
     affectsMarkup: true
     githubPr: 4695

@@ -31,14 +31,14 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2021-03-17
-    summary: Restored missing white <code>add</code> and <code>remove</code> icons.
-    summaryAdditional:
+    summary: Restored missing white icons.
+    summaryAdditional: Restored <code>add--white</code> and <code>remove--white</code> icons.
     affectsAssets: true
     githubPr: 4106
     githubRepo: uswds
     versionUswds: 2.11.1
   - date: 2021-03-02
-    summary: Introduced white <code>add</code> and <code>remove</code> icons.
+    summary: Introduced white <code>add</code>, <code>remove</code>, and <code>expand_more</code> icons.
     summaryAdditional:
     isBreaking: false
     affectsAssets: true

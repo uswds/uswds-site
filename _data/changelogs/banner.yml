@@ -3,25 +3,41 @@ type: component
 changelogURL:
 items:
   - date: 2022-10-09
-    summary: Updated ARIA attributes in the component code.
-    summaryAdditional: Updated the <code>aria-label</code> in English versions of banner and added the <code>aria-hidden</code> attribute to the flag icon.
+    summary: Updated the aria-label in English versions of usa-banner.
+    summaryAdditional: When read out on a screen reader, the statement "An official website of the United States government" can sound like "Unofficial website of the United States government". To minimize confusion, we updated the component's <code>aria-label</code> to instead read "Official website of the United States government".
+    affectsAccessibility: true
+    affectsMarkup: true
+    githubPr: 4925
+    githubRepo: uswds
+    versionUswds: 3.2.0
+  - date: 2022-10-09
+    summary: Added aria-hidden attribute to the flag icon in the banner component.
+    summaryAdditional: The flag icon in the banner component is purely decorative and we can safely remove it from the screen reader readout.
+    affectsAccessibility: true
+    affectsMarkup: true
+    githubPr: 4925
+    githubRepo: uswds
+    versionUswds: 3.2.0
+  - date: 2022-10-09
+    summary: Simplified ARIA label in the lock SVG.
+    summaryAdditional: We simplified the way we're using <code>aria-labelledby</code> in the lock SVG to streamline screenreader vocalization.
     affectsAccessibility: true
     affectsMarkup: true
     githubPr: 4925
     githubRepo: uswds
     versionUswds: 3.2.0
   - date: 2022-08-05
-    summary: Added <code>type="button"</code> to the component code.
-    summaryAdditional:
+    summary: Added <code>type="button"</code> to all non-form buttons to prevent default submit behaviors.
+    summaryAdditional: This allowed us to remove <code>preventDefault()</code> from the relevant component JavaScript.
     isBreaking: true
-    affectsAccessibility: true
+    affectsJavascript: true
     affectsMarkup: true
     githubPr: 4695
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-06-17
     summary: Updated <code>uswds-init.js</code> to better suppress flashing content.
-    summaryAdditional:
+    summaryAdditional: We updated the <code>uswds-init</code> script's event listener to target <code>window</code> from <code>document</code>. This assures that the page's JavaScript is fully loaded before we remove the <code>loadingClass</code> that suppresses the open banner. The banner should no longer flash open.
     affectsAssets: true
     affectsJavascript: true
     githubPr: 4676
@@ -54,7 +70,6 @@ items:
     githubPr: 4610
     githubRepo: uswds
     versionUswds: 2.13.3
-    affectsAccessibility: true
   - date: 2021-03-02
     summary: Updated guidance to identify banner as a core component.
     affectsGuidance: true
@@ -69,8 +84,8 @@ items:
     githubRepo: uswds
     versionUswds: 2.10.0
   - date: 2020-12-17
-    summary: Updated decorative SVGs to be more resilient.
-    summaryAdditional: Added the <code>aria-hidden="true"</code> property on decorative images and added <code>focusable="false"</code> to SVG elements meant to be images.
+    summary: Improved the accessibility of decorative images in the Banner.
+    summaryAdditional: We modified the Banner to properly mark up SVG files used as decorative images. Now all decorative images are hidden from screen readers, and all SVGs are more resilient to browser bugs. See the Banner page for the complete, correct markup, and see the pull request for more context on the changes.
     affectsAccessibility: true
     affectsAssets: true
     githubPr: 3892
@@ -106,7 +121,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.7.1
   - date: 2020-05-11
-    summary: Improved display of the <code>Here's how you know link</code> in the gov banner.
+    summary: Improved display of the "Here's how you know" link in the gov banner.
     summaryAdditional: Now there's no distracting change to the length of the underline on hover.
     affectsStyles: true
     githubPr: 3427

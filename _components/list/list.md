@@ -18,6 +18,8 @@ subnav:
     href: '#list-guidance'
   - text: Package
     href: '#list-package'
+  - text: Latest updates
+    href: '#list-changelog'
 title: List
 variants:
 tags:

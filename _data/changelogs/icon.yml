@@ -52,7 +52,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.2
   - date: 2022-04-28
-    summary: USWDS 3.0.0 released.
+    summary: Released USWDS 3.0.
     summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
     isBreaking: true
     affectsAccessibility: true
@@ -111,7 +111,7 @@ items:
     githubPr: 4106
     githubRepo: uswds
     versionUswds: 2.11.1
-  - date:
+  - date: 2021-03-17
     summary: Provide better support for color icons that adapt to theme settings.
     summaryAdditional: Now the color of the alert icon will update automatically to adapt to the alert background, or to the color of the alert text.
     affectsAssets: true

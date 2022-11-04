@@ -16,6 +16,8 @@ subnav:
   href: '#pagination-guidance'
 - text: Package
   href: '#pagination-package'
+- text: Latest updates
+  href: '#pagination-changelog'
 title: Pagination
 type: component
 ---

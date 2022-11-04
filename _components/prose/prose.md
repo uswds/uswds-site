@@ -19,7 +19,7 @@ subnav:
   - text: Package
     href: '#prose-package'
   - text: Latest updates
-  href: '#prose-changelog'
+    href: '#prose-changelog'
 title: Prose
 type: component
 tags:

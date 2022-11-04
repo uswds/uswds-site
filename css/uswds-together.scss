@@ -280,7 +280,7 @@ html {
 
 .together-internal-nav__link,
 .together-internal-nav__link:visited {
-  border-bottom: 2px solid transparent;
+  border-bottom: none;
   color: #565C65;
   display: block;
   font-size: size("lang", "3xs");
@@ -288,6 +288,7 @@ html {
   text-decoration: none;
 
   @include at-media("desktop") {
+    border-bottom: 2px solid transparent;
     font-size: size("lang", "md");
     padding: units(1.5) units(1);
   }

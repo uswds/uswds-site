@@ -55,8 +55,7 @@ items:
     versionUswds: 2.12.0
   - date: 2021-03-17
     summary: Fixed character display in checkboxes and radio buttons.
-    summaryAdditional: |
-      The Â character can show up next to checkboxes and radio buttons where a non-breaking space should be when &lt;meta charset="utf-8"&gt; isn't set properly. Now it will display properly regardless of character encoding.
+    summaryAdditional: Allows checkboxes and radio buttons to display properly regardless of character encoding.
     affectsJavascript: true
     affectsStyles: true
     githubPr: 4080

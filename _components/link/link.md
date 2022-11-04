@@ -38,6 +38,8 @@ subnav:
     href: '#link-package'
   - text: Research findings
     href: '#research-findings'
+  - text: Latest updates
+    href: '#link-changelog'
 title: Link
 variants:
   - variant: "`usa-link--external`"

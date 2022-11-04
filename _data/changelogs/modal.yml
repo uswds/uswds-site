@@ -19,43 +19,44 @@ changelogURL:
   #   githubPr:
   #   githubRepo:
   #   versionUswds:
-  - date: 2022-08-05
-    summary: Button - Style aria-disabled to match disabled
-    summaryAdditional: Now disabled styling is applied whether you use disabled (disabled and hidden from screen readers) or aria-disabled (disabled and visible to screen readers). 
-    isBreaking: false
-    affectsAccessibility: true
-    affectsAssets: false
-    affectsGuidance: false
-    affectsJavascript: false
-    affectsMarkup: false
-    affectsStyles: true
-    githubPr: 4783
-    githubRepo: uswds
-    versionUswds: 3.1.0
-  - date: 2022-04-28
-    summary: Released USWDS 3.0.
-    summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
-    isBreaking: true
-    affectsAccessibility: true
-    affectsAssets: true
-    affectsGuidance: true
-    affectsJavascript: true
-    affectsMarkup: true
-    affectsStyles: true
-    githubPr: 4656
-    githubRepo: uswds
-    versionUswds: 3.0.0
-  - date: 2021-03-17
-    summary: Created modal componant
-    summaryAdditional:  A modal disables page content and focuses the user’s attention on a single task or message.
-    isBreaking: false
-    affectsAccessibility: false
-    affectsAssets: false
-    affectsGuidance: true
-    affectsJavascript: true
-    affectsMarkup: true
-    affectsStyles: true
-    githubPr: 3981
-    githubRepo: uswds
-    versionUswds: 2.11.0
+  
+- date: 2022-08-05
+  summary: Button - Style aria-disabled to match disabled
+  summaryAdditional: Now disabled styling is applied whether you use disabled (disabled and hidden from screen readers) or aria-disabled (disabled and visible to screen readers). 
+  isBreaking: false
+  affectsAccessibility: true
+  affectsAssets: false
+  affectsGuidance: false
+  affectsJavascript: false
+  affectsMarkup: false
+  affectsStyles: true
+  githubPr: 4783
+  githubRepo: uswds
+  versionUswds: 3.1.0
+- date: 2022-04-28
+  summary: Released USWDS 3.0.
+  summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+  isBreaking: true
+  affectsAccessibility: true
+  affectsAssets: true
+  affectsGuidance: true
+  affectsJavascript: true
+  affectsMarkup: true
+  affectsStyles: true
+  githubPr: 4656
+  githubRepo: uswds
+  versionUswds: 3.0.0
+- date: 2021-03-17
+  summary: Created modal componant
+  summaryAdditional:  A modal disables page content and focuses the user’s attention on a single task or message.
+  isBreaking: false
+  affectsAccessibility: false
+  affectsAssets: false
+  affectsGuidance: true
+  affectsJavascript: true
+  affectsMarkup: true
+  affectsStyles: true
+  githubPr: 3981
+  githubRepo: uswds
+  versionUswds: 2.11.0
 # end changelog item

@@ -20,6 +20,7 @@ changelogURL:
   #   githubRepo:
   #   versionUswds:
 
+items:
 - date: 2022-08-05
   summary: Updated aria-disabled styles to match disabled
   summaryAdditional: Now disabled styling is applied whether you use disabled (disabled and hidden from screen readers) or aria-disabled (disabled and visible to screen readers).

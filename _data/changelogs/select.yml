@@ -20,6 +20,7 @@ changelogURL:
   #   githubRepo:
   #   versionUswds:
 
+items:
 - date: 
   summary: Improved styling for select when the multiple attribute is present
   summaryAdditional: Allows select to render as an inline-block box whose height is the height necessary to contain as many rows for items as given by the element's display size, or four rows if the [size] attribute is absent, as required by the HTML5 standard

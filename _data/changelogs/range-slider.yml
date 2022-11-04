@@ -19,4 +19,42 @@ changelogURL:
   #   githubPr:
   #   githubRepo:
   #   versionUswds:
+  - date: 2022-04-28
+    summary: Released USWDS 3.0.
+    summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+    isBreaking: true
+    affectsAccessibility: true
+    affectsAssets: true
+    affectsGuidance: true
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0
+  - date: 2022-04-11
+    summary: Added support for High Contrast Mode and forced colors
+    summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
+    isBreaking: false
+    affectsAccessibility: true
+    affectsAssets: false
+    affectsGuidance: false
+    affectsJavascript: false
+    affectsMarkup: false
+    affectsStyles: true
+    githubPr: 4610
+    githubRepo: uswds
+    versionUswds: 2.13.3
+  - date: 2021-08-18
+    summary: Added appropriate ARIA label to Range input
+    isBreaking: true
+    affectsAccessibility: true
+    affectsAssets: false
+    affectsGuidance: false
+    affectsJavascript: false 
+    affectsMarkup: true 
+    affectsStyles: false
+    githubPr: 4270
+    githubRepo: uswds
+    versionUswds: 2.12.1
 # end changelog item

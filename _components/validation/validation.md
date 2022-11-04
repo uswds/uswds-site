@@ -17,6 +17,8 @@ subnav:
     href: '#validation-guidance'
   - text: Package
     href: '#validation-package'
+  - text: Latest updates
+    href: '#validation-changelog'
 tags:
   - forms
   - error

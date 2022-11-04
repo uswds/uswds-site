@@ -24,7 +24,7 @@ summary_sections:
 
   - heading: Digital interactions through the lens of DEIA
     description: |-
-     Designers all over the world are applying [inclusive design principles](https://designsystem.digital.gov/patterns/) to their work, creating more equitable experiences that work for everyone. Every day, practitioners are learning more about how inclusivity and equity need to be reflected in their work. Our team worked hard to put diversity, equity, and inclusivity at the center of what we did every day. One of our interviewees said it well:
+     Designers all over the world are applying [inclusive design principles](#) to their work, creating more equitable experiences that work for everyone. Every day, practitioners are learning more about how inclusivity and equity need to be reflected in their work. Our team worked hard to put diversity, equity, and inclusivity at the center of what we did every day. One of our interviewees said it well:
 
   - heading: Research
     description: |-
@@ -220,7 +220,7 @@ With help from digital leaders across the federal space, we've developed pattern
 </p>
 
 <p class="measure-4">
-  The research resulted in the release of 3 <a href="#">pattern families</a> consisting of 17 individual patterns, along with new and updated <a href="https://designsystem.digital.gov/compnents/overview/">components</a> and <a href="https://designsystem.digital.gov/templates/">page templates</a>. 
+  The research resulted in the release of 3 <a href="#">pattern families</a> consisting of 17 individual patterns, along with new and updated <a href="https://designsystem.digital.gov/components/overview/">components</a> and <a href="https://designsystem.digital.gov/templates/">page templates</a>. 
 </p>
 
 <h3>Our objective was to:</h3>

@@ -3,5 +3,3 @@
 - **Enable order of tabbing so that keyboard users access the in-page navigation before the main content section.** When a user tabs through a page that contains the in-page navigation component, the preferred tabbing order would take the user through the in-page navigation first before reaching the main content of the page. Since the in-page nav will most commonly exist to the right of the content, this may seem counterintuitive; however, having to tab through the entire page before getting to in-page navigation links creates confusion and diminishes the user experience. This is also the preferred behavior when a left side navigation is present.
 
 - **Set focus state on section target for keyboard users.** When using smooth scrolling for in-page anchors, make sure to set the focus state on the section target when the user presses the enter key. For mouse users, the focus should remain on the link that was clicked.
-
-- **Consider adding hint text near the in-page navigation component heading.** Hint text like “click to navigate” may provide additional context, particularly for users of assistive technology.

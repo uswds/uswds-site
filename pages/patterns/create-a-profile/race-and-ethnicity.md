@@ -179,6 +179,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
 - Research to improve data on race and ethnicity. (n.d.) Retrieved on July 15, 2022, from [https://www.census.gov/about/our-research/race-ethnicity.html](https://www.census.gov/about/our-research/race-ethnicity.html)
 - Revisions to the standards for the classification of federal data on race and ethnicity (October 30, 1997) Retrieved on July 15, 2022, from [https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf](https://www.govinfo.gov/content/pkg/FR-1997-10-30/pdf/97-28653.pdf)
 - Standards for maintaining, collecting, and presenting federal data on race and ethnicity. (September 30, 2016) Retrieved July 15, 2022, from [https://www.federalregister.gov/documents/2016/09/30/2016-23672/standards-for-maintaining-collecting-and-presenting-federal-data-on-race-and-ethnicity](https://www.federalregister.gov/documents/2016/09/30/2016-23672/standards-for-maintaining-collecting-and-presenting-federal-data-on-race-and-ethnicity)
+- Who is Hispanic? (September 15, 2022) Retrieved November 4, 2022, from [https://www.pewresearch.org/fact-tank/2022/09/15/who-is-hispanic/](https://www.pewresearch.org/fact-tank/2022/09/15/who-is-hispanic/)
 
 ## Changelog
 - Published November 4, 2022

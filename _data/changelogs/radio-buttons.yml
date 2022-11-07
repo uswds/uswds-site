@@ -61,7 +61,7 @@ items:
   githubRepo: uswds
   versionUswds: 2.13.3
 - date: 2021-08-18
-  summary: Improved whitespace sensitivity of radio and checkbox tiles
+  summary: Improved whitespace sensitivity of radio and checkbox tiles.
   summaryAdditional: Now radio and checkbox tiles will display consistently whether or not there's extra whitespace in the markup.
   isBreaking: false
   affectsAccessibility: false
@@ -74,8 +74,8 @@ items:
   githubRepo: uswds
   versionUswds: 2.12.1
 - date: 2021-08-18
-  summary: Improved class order sensitivity for breadcrumb and checkbox/radio
-  summaryAdditional: Now breadcrumb and checkbox/radio components display properly regardless of the order of the class and modifier names.
+  summary: Improved class order sensitivity for checkbox and radio.
+  summaryAdditional: Now checkbox and radio components display properly regardless of the order of the class and modifier names.
   isBreaking: false
   affectsAccessibility: false
   affectsAssets: false
@@ -100,7 +100,7 @@ items:
   githubRepo: uswds
   versionUswds: 2.12.0
 - date: 2021-04-28
-  summary: Updated checked radio buttons to remain checked in disabled state
+  summary: Updated checked radio buttons to remain checked in disabled state.
   summaryAdditional: Now the visual checked state of a checked checkbox does not change if that element is later disabled
   isBreaking: false
   affectsAccessibility: false
@@ -112,7 +112,7 @@ items:
   githubPr: 4160
   githubRepo: uswds
   versionUswds: 2.11.2
-- date: 
+- date: 2021-03-17
   summary: Fixed character display in checkboxes and radio buttons.
   summaryAdditional: Allows checkboxes and radio buttons to display properly regardless of character encoding.
   isBreaking: false

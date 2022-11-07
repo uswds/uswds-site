@@ -35,7 +35,7 @@ items:
   githubRepo: uswds
   versionUswds: 3.0.0
 - date: 2022-01-20
-  summary: Fixed external link icon display bug in Safari
+  summary: Fixed external link icon display bug in Safari.
   summaryAdditional: Fixed a bug that resulted in colored bars on the top and bottom of external link icons in Safari.
   isBreaking: false
   affectsAccessibility: false
@@ -48,8 +48,8 @@ items:
   githubRepo: uswds
   versionUswds: 2.13.1
 - date: 2021-11-01
-  summary: Fixed external link icon color
-  summaryAdditional: Resolved an issue with visited links where the icon color may not match the color of the link
+  summary: Fixed external link icon color.
+  summaryAdditional: Resolved an issue with visited links where the icon color may not match the color of the link.
   isBreaking: false
   affectsAccessibility: false
   affectsAssets: true
@@ -61,7 +61,7 @@ items:
   githubRepo: uswds
   versionUswds: 2.12.2
 - date: 2021-08-18
-  summary: Improved external link icon display
+  summary: Improved external link icon display.
   summaryAdditional: Made external link icon bigger and better aligned with the link text.
   isBreaking: false
   affectsAccessibility: false

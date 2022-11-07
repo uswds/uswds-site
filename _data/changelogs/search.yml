@@ -35,8 +35,8 @@ items:
   githubRepo: uswds
   versionUswds: 3.0.0
 - date: 2021-12-14
-  summary: Updated to add text equivalent if the image path is broken and does not load
-  summaryAdditional: 
+  summary:  Improved resilience of icon-only functionality.
+  summaryAdditional: Updated to add a text equivalent if the image path is broken and does not load.
   isBreaking: true
   affectsAccessibility: true
   affectsAssets: false

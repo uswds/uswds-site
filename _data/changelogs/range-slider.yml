@@ -49,7 +49,7 @@ items:
   versionUswds: 2.13.3
 - date: 2021-08-18
   summary: Added appropriate ARIA label to Range input.
-  isBreaking: true
+  isBreaking: false
   affectsAccessibility: true
   affectsAssets: false
   affectsGuidance: false

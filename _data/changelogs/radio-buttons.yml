@@ -74,8 +74,8 @@ items:
   githubRepo: uswds
   versionUswds: 2.12.1
 - date: 2021-08-18
-  summary: Improved class order sensitivity for breadcrumb and checkbox/radio
-  summaryAdditional: Now breadcrumb and checkbox/radio components display properly regardless of the order of the class and modifier names.
+  summary: Improved class order sensitivity for checkbox and radio.
+  summaryAdditional: Now checkbox and radio components display properly regardless of the order of the class and modifier names.
   isBreaking: false
   affectsAccessibility: false
   affectsAssets: false

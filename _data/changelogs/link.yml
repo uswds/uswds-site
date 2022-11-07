@@ -48,8 +48,8 @@ items:
   githubRepo: uswds
   versionUswds: 2.13.1
 - date: 2021-11-01
-  summary: Fixed external link icon color
-  summaryAdditional: Resolved an issue with visited links where the icon color may not match the color of the link
+  summary: Fixed external link icon color.
+  summaryAdditional: Resolved an issue with visited links where the icon color may not match the color of the link.
   isBreaking: false
   affectsAccessibility: false
   affectsAssets: true

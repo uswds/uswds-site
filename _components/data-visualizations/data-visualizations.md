@@ -405,7 +405,7 @@ tags:
       </g>
     </g>
     </svg>
-    <table class="usa-sr-only" aria-describedby="source_bar">
+    <table class="usa-sr-only" aria-describedby="source">
       <caption>Top 5 most visited Nation Parks</caption>
       <thead>
         <tr>

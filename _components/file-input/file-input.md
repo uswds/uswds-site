@@ -18,6 +18,8 @@ subnav:
   href: '#file-input-guidance'
 - text: Package
   href: '#file-input-package'
+- text: Latest updates
+  href: '#file-input-changelog'
 tags:
   - document
   - upload

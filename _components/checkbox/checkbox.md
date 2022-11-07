@@ -18,6 +18,8 @@ subnav:
   href: '#checkbox-guidance'
 - text: Package
   href: '#checkbox-package'
+- text: Latest updates
+  href: '#checkbox-changelog'
 tags:
   - form
   - forms

@@ -3,10 +3,10 @@ type: component
 changelogURL:
 items:
   - date: 2022-08-05
-    summary: Added <code>type="button"</code> to the component code and guidance.
-    summaryAdditional:
+    summary: Added <code>type="button"</code> to all non-form buttons to prevent default submit behaviors.
+    summaryAdditional: This allowed us to remove <code>preventDefault()</code> from the relevant component JavaScript.
     isBreaking: true
-    affectsAccessibility: true
+    affectsJavascript: true
     affectsMarkup: true
     githubPr: 4695
     githubRepo: uswds
@@ -17,15 +17,28 @@ items:
     affectsGuidance: true
     githubPr: 1718
     githubRepo: uswds-site
+  - date: 2022-04-28
+    summary: Released USWDS 3.0.
+    summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+    isBreaking: true
+    affectsAccessibility: true
+    affectsAssets: true
+    affectsGuidance: true
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0
   - date: 2021-03-17
-    summary: Restored missing white <code>add</code> and <code>remove</code> icons.
-    summaryAdditional:
+    summary: Restored missing white icons.
+    summaryAdditional: Restored <code>add--white</code> and <code>remove--white</code> icons.
     affectsAssets: true
     githubPr: 4106
     githubRepo: uswds
     versionUswds: 2.11.1
   - date: 2021-03-02
-    summary: Introduced white <code>add</code> and <code>remove</code> icons.
+    summary: Introduced white <code>add</code>, <code>remove</code>, and <code>expand_more</code> icons.
     summaryAdditional:
     isBreaking: false
     affectsAssets: true

@@ -1,0 +1,61 @@
+# High contrast
+  - date: 2022-04-11
+    summary: Support High Contrast Mode and forced colors.
+    summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
+    affectsAccessibility: true
+    affectsStyles: true
+    githubPr: 4610
+    githubRepo: uswds
+    versionUswds: 2.13.3
+
+# 3.0 release
+  - date: 2022-04-28
+    summary: Released USWDS 3.0.
+    summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+    isBreaking: true
+    affectsAccessibility: true
+    affectsAssets: true
+    affectsGuidance: true
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0
+
+# White icons
+  - date: 2021-03-17
+    summary: Restored missing white icons.
+    summaryAdditional: Restored <code>add--white</code>, <code>check_circle--white</code>, <code>error--white</code>, <code>expand_more--white</code>, <code>info--white</code>, <code>remove--white</code>, and <code>warning--white</code> icons.
+    affectsAssets: true
+    githubPr: 4106
+    githubRepo: uswds
+    versionUswds: 2.11.1
+  - date: 2021-03-02
+    summary: Introduced white <code>add</code>, <code>remove</code>, and <code>expand_more</code> icons.
+    summaryAdditional:
+    isBreaking: false
+    affectsAssets: true
+    githubPr: 4061
+    githubRepo: uswds
+    versionUswds: 2.10.2
+
+# sanitizing
+  - date: 2021-11-01
+    summary: Added automatic sanitizing.
+    summaryAdditional: The design system now automatically sanitizes content in elements we compose with JavaScript. This means that components like Combobox, Tooltip, File Input, and Date Picker will sanitize any content passed to them. This helps protect any design system implementation against malicious XSS attacks through these components.
+    affectsJavascript: true
+    githubPr: 4329
+    githubRepo: uswds
+    versionUswds: 2.12.2
+
+# type button
+  - date: 2022-08-05
+    summary: Added <code>type="button"</code> to all non-form buttons to prevent default submit behaviors.
+    summaryAdditional: This allowed us to remove <code>preventDefault()</code> from the relevant component JavaScript.
+    isBreaking: true
+    affectsJavascript: true
+    affectsMarkup: true
+    githubPr: 4695
+    githubRepo: uswds
+    versionUswds: 3.1.0

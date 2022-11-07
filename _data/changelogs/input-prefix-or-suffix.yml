@@ -1,16 +1,7 @@
-title: Identifier
+title: Input prefix or suffix
 type: component
 changelogURL:
 items:
-  - date: 2022-10-19
-    summary: Use valid element for identity's aria label.
-    summaryAdditional: We updated the identity section of the Identifier to use a <code>section</code> instead of a <code>div</code> so its <code>aria-label</code> will apply to a valid element.
-    isBreaking: true
-    affectsAccessibility: true
-    affectsMarkup: true
-    githubPr: 4964
-    githubRepo: uswds
-    versionUswds: 3.2.0
   - date: 2022-04-28
     summary: Released USWDS 3.0.
     summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
@@ -24,3 +15,13 @@ items:
     githubPr: 4656
     githubRepo: uswds
     versionUswds: 3.0.0
+  - date: 2021-03-07
+    summary: Added input prefix or suffix component.
+    summaryAdditional: Use input prefixes and suffixes to show symbols or abbreviations that help users enter the right type of information in a form’s text input.
+    affectsGuidance: true
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles: true
+    githubPr: 3999
+    githubRepo: uswds
+    versionUswds: 2.11.0

@@ -20,6 +20,8 @@ subnav:
   href: '#footer-guidance'
 - text: Package
   href: '#footer-package'
+- text: Latest updates
+  href: '#footer-changelog'
 tags:
   - slim
   - big

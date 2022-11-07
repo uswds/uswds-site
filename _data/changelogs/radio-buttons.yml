@@ -61,7 +61,7 @@ items:
   githubRepo: uswds
   versionUswds: 2.13.3
 - date: 2021-08-18
-  summary: Improved whitespace sensitivity of radio and checkbox tiles
+  summary: Improved whitespace sensitivity of radio and checkbox tiles.
   summaryAdditional: Now radio and checkbox tiles will display consistently whether or not there's extra whitespace in the markup.
   isBreaking: false
   affectsAccessibility: false

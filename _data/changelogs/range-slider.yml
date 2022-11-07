@@ -48,7 +48,7 @@ items:
   githubRepo: uswds
   versionUswds: 2.13.3
 - date: 2021-08-18
-  summary: Added appropriate ARIA label to Range input
+  summary: Added appropriate ARIA label to Range input.
   isBreaking: true
   affectsAccessibility: true
   affectsAssets: false

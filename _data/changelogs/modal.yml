@@ -48,7 +48,7 @@ items:
   githubRepo: uswds
   versionUswds: 3.0.0
 - date: 2021-03-17
-  summary: Created modal componant
+  summary: Created modal component.
   summaryAdditional:  A modal disables page content and focuses the user’s attention on a single task or message.
   isBreaking: false
   affectsAccessibility: false

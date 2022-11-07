@@ -61,7 +61,7 @@ items:
   githubRepo: uswds
   versionUswds: 2.12.2
 - date: 2021-08-18
-  summary: Improved external link icon display
+  summary: Improved external link icon display.
   summaryAdditional: Made external link icon bigger and better aligned with the link text.
   isBreaking: false
   affectsAccessibility: false

@@ -5,6 +5,7 @@ component:
   status: ready
   package: usa-language-selector
   image: /assets/img/components/language-selector/language-selector-three-or-more.png
+  alt: "Language selector button with the text Languages shows hover state and a dropdown menu with language options. The selected language in the dropdown is underlined on hover."
   demo: components-language-selector--multiple
   dependencies:
 guidancePath: guidance/variants/three-or-more
@@ -17,7 +18,7 @@ parent_permalink: /components/language-selector/#three-or-more
 redirect_from:
   - /components/language-selector-three-or-more/
 sitemap: false
-title: Language selector button with the text "Languages" shows hover state and a dropdown menu with language options. The selected language in the dropdown is underlined on hover.
+title: Language selector with three or more languages
 type: component
 variants:
   - variant: "`.usa-language-selector--three-or-more`"

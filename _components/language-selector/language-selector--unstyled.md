@@ -5,6 +5,7 @@ component:
   status: ready
   package: usa-language-selector
   image: /assets/img/components/language-selector/language-selector-unstyled-example.png
+  alt: "Language selector text reads Languages and shows hover state and a dropdown menu with language options. The selected language in the dropdown is underlined on hover."
   demo: components-language-selector--unstyled
   dependencies:
 guidancePath: guidance/variants/unstyled
@@ -17,7 +18,7 @@ parent_permalink: /components/language-selector/#unstyled
 redirect_from:
   - /components/language-selector-unstyled/
 sitemap: false
-title: Language selector text reads "Languages" and shows hover state and a dropdown menu with language options. The selected language in the dropdown is underlined on hover.
+title: Language selector unstyled
 type: component
 variants:
   - variant: "`.usa-language-selector--unstyled`"

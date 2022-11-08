@@ -4,6 +4,7 @@ component:
   status: ready
   package: usa-language-selector
   image: /assets/img/components/language-selector/language-selector-two-languages.png
+  alt: "Language selector button with the text Español shows default, hover, and active states."
   demo: components-language-selector
   dependencies:
 guidancePath: guidance/variants/two-languages
@@ -16,7 +17,7 @@ parent_permalink: /components/language-selector/#two-languages
 redirect_from:
   - /language/two-languages/
 sitemap: false
-title: Language selector button with the text "Español" shows default, hover, and active states.
+title: Language selector with two languages
 type: component
 ---
 

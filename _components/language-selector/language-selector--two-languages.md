@@ -16,7 +16,7 @@ parent_permalink: /components/language-selector/#two-languages
 redirect_from:
   - /language/two-languages/
 sitemap: false
-title: Language selector with two languages shows default, hover, and active states
+title: Language selector button with the text "Español" shows default, hover, and active states.
 type: component
 ---
 

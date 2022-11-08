@@ -17,7 +17,7 @@ parent_permalink: /components/language-selector/#unstyled
 redirect_from:
   - /components/language-selector-unstyled/
 sitemap: false
-title: Language selector unstyled
+title: Language selector text reads "Languages" and shows hover state and a dropdown menu with language options. The selected language in the dropdown is underlined on hover.
 type: component
 variants:
   - variant: "`.usa-language-selector--unstyled`"

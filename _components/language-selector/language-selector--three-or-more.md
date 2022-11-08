@@ -17,7 +17,7 @@ parent_permalink: /components/language-selector/#three-or-more
 redirect_from:
   - /components/language-selector-three-or-more/
 sitemap: false
-title: Language selector with three or more languages
+title: Language selector button with the text "Languages" shows hover state and a dropdown menu with language options. The selected language in the dropdown is underlined on hover.
 type: component
 variants:
   - variant: "`.usa-language-selector--three-or-more`"

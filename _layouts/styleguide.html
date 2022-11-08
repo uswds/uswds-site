@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="default-container">
-  <aside class="sidenav" id="page-side-navigation">
+  <aside class="sidenav" id="page-side-navigation" aria-label="Section navigation">
     {% assign sidenav = site.data.nav[page.category] %}
     {% if sidenav %}
     <ul class="site-sidenav usa-sidenav">
@@ -12,7 +12,7 @@ layout: default
   </aside>
 
   <div class="usa-in-page-nav-container">
-    <aside class="usa-in-page-nav"></aside>
+    <aside class="usa-in-page-nav" aria-label="Page navigation"></aside>
     <main id="main-content" class="main-content">
       <div class="styleguide-content{% unless page.category == 'Utilities' and page.type != 'docs' %} usa-prose site-prose{% endunless %}">
         <header>

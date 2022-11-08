@@ -42,16 +42,16 @@ graphic_list:
       link:
         text: Build with utilities
         url: utilities
-    - topic: Page templates
-      description: Use our basic page templates as a starting point for your design and development process.
+    - topic: Patterns
+      description: Use our guidance to craft effective and inclusive user experiences.
       image:
         src: img/home/page-templates.svg
         alt:
         width: 72
         height: 72
       link:
-        text: Start from a template
-        url: page-templates
+        text: Explore pattern guidance
+        url: patterns
 ---
 
 <section class="usa-section bg-base-lightest showcase" aria-label="Sites using USWDS">

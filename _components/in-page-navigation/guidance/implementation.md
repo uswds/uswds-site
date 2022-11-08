@@ -15,3 +15,11 @@ The following is an example of the minimum markup your page would need to inplem
   <aside class="usa-in-page-nav"></aside>
 </div>
 ```
+
+{:.usa-content-list }
+- **Initialization properties.** The following properties update the component during initialization. These properties must be set before the component is initialized in order to have an effect.
+{% include settings-table-flex.html
+  content=page.implementation.initProps
+  cols="flex-2, flex-1, flex-2, flex-1"
+  section="initialization properties"
+%}

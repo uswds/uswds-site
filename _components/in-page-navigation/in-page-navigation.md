@@ -34,6 +34,16 @@ subnav:
 tags:
   - in-page
   - nav
+implementation:
+  initProps:
+    - property: "`data-heading-level`"
+      element: usa-in-page-nav
+      description: The heading level of the navigation title header.
+      default: "h4"
+    - property: "`data-title`"
+      element: usa-in-page-nav
+      description: The text of the navigation title header.
+      default: "On this page"
 title: In-page navigation
 type: component
 ---

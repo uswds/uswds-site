@@ -18,6 +18,7 @@ subnav:
 - text: Package
   href: '#radio-buttons-package'
 title: Radio buttons
+type: component
 variants:
   - variant: "`.usa-radio__input--tile`"
     description: Input tiles provide a larger interaction area and neatly group the label with the form control for readability. They’re useful in application forms and questionnaires, but may not be recommended when they create clutter on the page.

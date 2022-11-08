@@ -8,6 +8,7 @@ redirect_from:
 - /form-controls/
 - /components/form-controls/
 layout: styleguide
+type: component
 title: Form
 category: Components
 lead: A form allows users to enter information into a page.

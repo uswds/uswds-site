@@ -10,6 +10,7 @@ redirect_from:
 - /components/range-input/
 - /form-controls/10-range-input/
 title: Range slider
+type: component
 maturity: alpha
 id_custom: range
 lead: A range slider allows users to choose an approximate number from a range.

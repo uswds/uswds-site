@@ -18,4 +18,5 @@ subnav:
 - text: Package
   href: '#select-package'
 title: Select
+type: component
 ---

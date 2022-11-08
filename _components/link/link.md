@@ -50,5 +50,6 @@ tags:
   - typesetting
   - hyperlink
   - external link
+type: component
 ---
 Links are navigational elements that direct visitors to other locations, either on the same page or to a different page or site. They can be inline or separate from the text flow. Since every link is a potential user interaction, too many links can be overwhelming. Be judicious with links to better identify necessary calls to action.

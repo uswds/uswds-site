@@ -50,5 +50,6 @@ tags:
   - input
   - select
 title: Combo box
+type: component
 ---
 

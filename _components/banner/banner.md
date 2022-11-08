@@ -20,6 +20,7 @@ subnav:
 - text: Package
   href: '#banner-package'
 title: Banner
+type: component
 ---
 
 {:.site-note}

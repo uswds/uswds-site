@@ -19,6 +19,7 @@ subnav:
   - text: Package
     href: '#prose-package'
 title: Prose
+type: component
 tags:
   - typography
   - type

@@ -19,6 +19,7 @@ subnav:
 - text: Package
   href: '#search-package'
 title: Search
+type: component
 tags:
   - find
   - search.gov

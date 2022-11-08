@@ -15,6 +15,7 @@ subnav:
 - text: Segmented button group
   href: '#segmented-button-group'
 title: Button group
+type: component
 ---
 
 {% include child-sections.html parent='Button group' %}

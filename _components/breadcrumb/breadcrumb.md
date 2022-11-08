@@ -4,6 +4,7 @@ redirect_from:
 - /breadcrumbs/
 - /breadcrumb/
 - /components/breadcrumbs/
+type: component
 title: Breadcrumb
 category: Components
 lead: Breadcrumbs provide secondary navigation to help users understand where they are in a website.

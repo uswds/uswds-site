@@ -23,4 +23,5 @@ tags:
   - nav
   - toc
 title: Side navigation
+type: component
 ---

@@ -4,7 +4,6 @@ component:
   package: usa-step-indicator
   dependencies:
 permalink: /components/step-indicator/
-type: component
 title: Step indicator
 category: Components
 lead: A step indicator updates users on their progress through a multi-step process.

@@ -22,7 +22,6 @@ subnav:
   href: '#card-guidance'
 - text: Package
   href: '#card-package'
-type: component
 variants:
   - variant: "`.usa-card--flag`"
     description: Display in a horizontal ("flag") orientation at a specified width (`$theme-card-flag-min-width`).

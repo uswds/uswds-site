@@ -7,7 +7,6 @@ component:
 permalink: /components/process-list/
 lead: A process list displays the steps or stages of important instructions or processes.
 title: Process list
-type: component
 subnav:
 - text: Preview
   href: '#process-list-preview'

@@ -24,7 +24,6 @@ tags:
   - slim
   - big
 title: Footer
-type: component
 variants:
   - variant: usa-footer--big
     description: A multi-column footer that expands and collapses on mobile.

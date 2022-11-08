@@ -20,5 +20,4 @@ tags:
   - tl;dr
   - callout
 title: Summary box
-type: component
 ---

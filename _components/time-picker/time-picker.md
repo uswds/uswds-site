@@ -8,7 +8,6 @@ permalink: /components/time-picker/
 redirect_from:
 - /form-controls/12-time-picker/
 title: Time picker
-type: component
 lead: A time picker helps users select a specific time.
 implementation:
   initProps:

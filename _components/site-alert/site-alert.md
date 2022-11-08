@@ -8,7 +8,6 @@ permalink: /components/site-alert/
 redirect_from:
 - /site-alert/
 - /components/site-alerts/
-type: component
 title: Site alert
 lead: A site alert communicates urgent sitewide information.
 subnav:

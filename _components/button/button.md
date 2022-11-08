@@ -3,7 +3,6 @@ permalink: /components/button/
 redirect_from:
 - /buttons/
 - /components/buttons/
-type: component
 title: Button
 category: Components
 lead: A button draws attention to important actions with a large selectable surface.

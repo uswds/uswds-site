@@ -25,5 +25,4 @@ tags:
   - input
   - validation
 title: Character count
-type: component
 ---

@@ -5,7 +5,6 @@ component:
   dependencies:
 permalink: /components/data-visualizations/
 layout: styleguide
-type: component
 title: Data visualizations
 category: Components
 lead: Data visualizations help communicate patterns and relationships in a data set.

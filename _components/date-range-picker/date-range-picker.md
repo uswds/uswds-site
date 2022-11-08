@@ -50,5 +50,4 @@ tags:
   - form controls
   - input
 title: Date range picker
-type: component
 ---

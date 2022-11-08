@@ -5,7 +5,6 @@ component:
   status: ready
   package: usa-alert
   dependencies:
-type: component
 lead: An alert keeps users informed of important and sometimes time-sensitive changes.
 permalink: /components/alert/
 redirect_from:

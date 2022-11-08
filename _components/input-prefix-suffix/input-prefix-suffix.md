@@ -24,7 +24,6 @@ tags:
   - image
   - icon
 title: Input prefix or suffix
-type: component
 variants:
   - variant: "`usa-input-group--error`"
     description: Displays an input group error state.

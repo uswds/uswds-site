@@ -7,7 +7,6 @@ permalink: /components/tag/
 redirect_from:
 - /labels/
 - /components/labels/
-type: component
 title: Tag
 category: Components
 lead: A tag draws attention to new or categorized content elements.

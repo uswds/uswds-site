@@ -26,5 +26,4 @@ tags:
   - birthday
   - memorable date
 title: Memorable date
-type: component
 ---

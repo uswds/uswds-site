@@ -53,5 +53,4 @@ tags:
   - form controls
   - input
 title: Date picker
-type: component
 ---

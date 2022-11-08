@@ -17,7 +17,6 @@ subnav:
 - text: Package
   href: '#modal-package'
 title: Modal
-type: component
 variants:
   - variant: "`.usa-modal--lg`"
     description: Add `.usa-modal--lg` to `.usa-modal` for a larger window and larger heading size on wider screens.

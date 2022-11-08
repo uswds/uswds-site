@@ -36,7 +36,6 @@ tags:
   - scrollable
   - scrolling
 title: Table
-type: component
 variants:
   - variant: "`usa-table--borderless`"
     description: Removes the outer table borders, retaining only a single bottom border on each row. Best for tables with more text than numbers.

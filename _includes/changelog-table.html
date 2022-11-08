@@ -84,11 +84,11 @@
               {% if item.isBreaking %}
                 <span class="display-none tablet:display-inline desktop-lg:display-none output-false">Breaking</span>
               {% endif %}
-              {% if item.summary %}
-              <strong>{{ item.summary }}</strong>
-              {% endif %}
+              <strong>
+                {{ item.summary | markdownify | remove: '<p>' | remove: '</p>' }}
+              </strong>
               {% if item.summaryAdditional %}
-                {{ item.summaryAdditional}}
+                {{ item.summaryAdditional | markdownify | remove: '<p>' | remove: '</p>' }}
               {% endif %}
             </p>
           {% endif %}

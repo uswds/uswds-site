@@ -21,7 +21,7 @@ changelogURL:
   #   versionUswds:
 
 items:
-  # 3.1.0 release
+  # 3.2.0 release
   - date: 2022-10-19
     summary: Updated the alignment of site alert content to visually match alignment with banner content.
     summaryAdditional: The alert component was also updated to match banner content alignment.
@@ -34,7 +34,7 @@ items:
     affectsStyles: true
     githubPr: 4922
     githubRepo: uswds
-    versionUswds: 3.1.0
+    versionUswds: 3.2.0
   # 3.0 release
   - date: 2022-04-28
     summary: USWDS 3.0.0 released.

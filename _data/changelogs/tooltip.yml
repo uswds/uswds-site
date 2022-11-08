@@ -30,7 +30,7 @@ items:
     affectsGuidance: false
     affectsJavascript: true
     affectsMarkup: false
-    affectsStyles: true
+    affectsStyles: false
     githubPr: 4955
     githubRepo: uswds
     versionUswds: 3.2.0

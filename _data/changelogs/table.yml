@@ -47,3 +47,17 @@ items:
     githubPr: 3950
     githubRepo: uswds
     versionUswds: 2.11.0
+  - date: 2021-03-17
+    summary: Updated default values for table settings.
+    summaryAdditional: Changed values of <code>$theme-table-border-color</code>, <code>$theme-table-header-text-color</code>, <code>$theme-table-stripe-text-color</code>, and <code>$theme-table-text-color</code> from <code>default</code> to <code>"ink"</code>.
+    affectsStyles: true
+    githubPr: 3950
+    githubRepo: uswds
+    versionUswds: 2.11.0
+  - date: 2021-03-17
+    summary: Added new table settings. 
+    summaryAdditional: Added <code>$theme-table-sorted-header-background-color</code>, <code>$theme-table-sorted-background-color</code>, <code>$theme-table-sorted-stripe-background-color</code>, and <code>$theme-table-sorted-icon-color</code>, and <code>$theme-table-unsorted-icon-color</code> .
+    affectsStyles: true
+    githubPr: 3950
+    githubRepo: uswds
+    versionUswds: 2.11.0

@@ -1,4 +1,3 @@
 - **Short pages.** For pages that require little or no scrolling, in-page navigation is not necessary.
-- **Mobile.** For smaller screens, in-page navigation should be hidden.
-- **Unstructured content.** Pages that lack hierarchical structures (`h2` and `h3` elements) will not benefit from the in-page navigation component.
-- **Infinite scrolling.** For pages that feature infinite scrolling, in-page navigation is not a practical nor a feasible feature, so it is not recommended.
+- **Unstructured content.** Pages that lack hierarchical structures (`h2` and `h3` elements in the `main`) cannot use the in-page navigation component.
+- **Infinite scrolling.** For pages that feature infinite scrolling, in-page navigation is neither practical nor feasible feature.

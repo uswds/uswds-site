@@ -12,4 +12,10 @@
   {% else %}
   <button type="button" class="{{ tpClasses }}" id="touchpoints-modal-button" aria-label="{{ tpLabel }}" tabindex="0">{{ tpText }}</button>
   {% endif %}
+  {% if site.env == 'dev' %}
+    This is dev!
+  {% endif %}
+  {% if site.env == 'preview' %}
+    This is preview!
+  {% endif %}
 </section>

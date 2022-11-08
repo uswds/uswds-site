@@ -12,23 +12,23 @@ redirect_from:
   - /components/accordions/
 subnav:
 - text: Preview
-  href: '#component-preview'
+  href: '#accordion-preview'
 - text: Code
-  href: '#component-code'
+  href: '#accordion-code'
 - text: Guidance
-  href: '#accordion-guidance-section'
+  href: '#accordion-guidance'
 - text: When to use
-  href: '#when-to-use-the-accordion-section'
+  href: '#when-to-use-the-accordion'
 - text: When to consider something else
-  href: '#when-to-consider-something-else-accordion-section'
+  href: '#when-to-consider-something-else-accordion'
 - text: Usability guidance
-  href: '#usability-guidance-accordion-section'
+  href: '#usability-guidance-accordion'
 - text: Accessibility
-  href: '#accessibility-accordion-section'
+  href: '#accessibility-accordion'
 - text: Using the in-page navigation component
-  href: '#using-the-accordion-section'
+  href: '#using-the-accordion-component'
 - text: Package
-  href: '#accordion-package-section'
+  href: '#accordion-package'
 title: Accordion
 type: component
 variants:

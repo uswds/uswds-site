@@ -152,7 +152,3 @@ twitter:
   card: summary_large_image
 
 env: dev
-
-env: preview
-future: true
-show_drafts: true

@@ -4,7 +4,8 @@ component:
   variant: unstyled
   status: ready
   package: usa-language-selector
-  image: /assets/img/components/language-selector/language-selector-unstyled-example.png
+  image: /assets/img/components/language-selector/language-selector-unstyled-example.webp
+  imageUtilities: maxw-full width-tablet-lg
   alt: "Language selector text reads Languages and shows hover state and a dropdown menu with language options. The selected language in the dropdown is underlined on hover."
   demo: components-language-selector--unstyled
   dependencies:

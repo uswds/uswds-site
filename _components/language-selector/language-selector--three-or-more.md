@@ -4,7 +4,8 @@ component:
   variant: three-or-more
   status: ready
   package: usa-language-selector
-  image: /assets/img/components/language-selector/language-selector-three-or-more.png
+  image: /assets/img/components/language-selector/language-selector-three-or-more.webp
+  imageUtilities: maxw-full width-tablet-lg
   alt: "Language selector button with the text Languages shows hover state and a dropdown menu with language options. The selected language in the dropdown is underlined on hover."
   demo: components-language-selector--multiple
   dependencies:

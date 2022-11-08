@@ -3,7 +3,8 @@ component:
   about: false
   status: ready
   package: usa-language-selector
-  image: /assets/img/components/language-selector/language-selector-two-languages.png
+  image: /assets/img/components/language-selector/language-selector-two-languages.webp
+  imageUtilities: maxw-full width-mobile
   alt: "Language selector button with the text Español shows default, hover, and active states."
   demo: components-language-selector
   dependencies:

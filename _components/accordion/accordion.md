@@ -25,12 +25,11 @@ subnav:
   href: '#usability-guidance-accordion'
 - text: Accessibility
   href: '#accessibility-accordion'
-- text: Using the accordion navigation component
+- text: Using the accordion component
   href: '#using-the-accordion-component'
 - text: Package
   href: '#accordion-package'
 title: Accordion
-type: component
 variants:
   - variant: "`.usa-accordion--bordered`"
     description: Display a border around accordion content.

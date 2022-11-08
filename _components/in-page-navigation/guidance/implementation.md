@@ -9,10 +9,10 @@ The following is an example of the minimum markup your page would need to inplem
 
 ```
 <div class="usa-in-page-nav-container">
+  <aside class="usa-in-page-nav"></aside>
   <main id="main-content" class="main-content">
      [ Page content ]
   </main>
-  <aside class="usa-in-page-nav"></aside>
 </div>
 ```
 

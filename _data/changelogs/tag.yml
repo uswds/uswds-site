@@ -3,22 +3,6 @@ title: Tag
 type: component
 # Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
-# Add a list of changelog items with newest items first. Uncomment the 'items' data field when adding the first item.
-# Start changelog item. Copy this section to create a new changelog item.
-# items:
-  # - date:
-  #   summary:
-  #   summaryAdditional:
-  #   isBreaking:
-  #   affectsAccessibility:
-  #   affectsAssets:
-  #   affectsGuidance:
-  #   affectsJavascript:
-  #   affectsMarkup:
-  #   affectsStyles:
-  #   githubPr:
-  #   githubRepo:
-  #   versionUswds:
 
 items:
   # 3.0 release

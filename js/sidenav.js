@@ -57,13 +57,3 @@ $(".sidenav").on("click", "a", function (e) {
     }
   );
 });
-
-//var navHeight = function () {
-//  $('.sidenav').css('height', (window.innerHeight - 50));
-//};
-//
-//navHeight();
-//
-//$( window ).resize(function () {
-//  navHeight();
-//});

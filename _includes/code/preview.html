@@ -1,5 +1,4 @@
 {% assign level = include.level | default: "h3" %}
-
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   {% assign _id = include.component | append: '-preview' %}
   {% assign _content_id = include.component | append: '-preview-content' %}
@@ -28,7 +27,7 @@
         >
           <img
             src="{{ site.baseurl }}{{ image }}"
-            alt="{{ variant_alt | default: page.title }}"
+            alt="{{ include.alt | default: page.title }}"
           />
         </a>
         {% endfor %}

@@ -25,7 +25,7 @@ subnav:
   href: '#usability-guidance-accordion'
 - text: Accessibility
   href: '#accessibility-accordion'
-- text: Using the in-page navigation component
+- text: Using the accordion navigation component
   href: '#using-the-accordion-component'
 - text: Package
   href: '#accordion-package'

@@ -19,7 +19,7 @@
         {% endif %}
 
         <a
-          class="media__link"
+          class="media__link display-block"
           href={% include component-preview-link.html
             demoLink=demo
             component=include.component
@@ -28,6 +28,9 @@
           <img
             src="{{ site.baseurl }}{{ image }}"
             alt="{{ include.alt | default: page.title }}"
+            {% if include.imageUtilities %}
+            class="{{ include.imageUtilities }}"
+            {% endif %}
           />
         </a>
         {% endfor %}

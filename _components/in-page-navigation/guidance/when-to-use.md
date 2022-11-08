@@ -1,1 +1,1 @@
-- **Long pages.** For pages that include three or more distinct content sections (or content that exceeds three or more viewport heights), and that require a moderate to large amount of scrolling, in-page navigation can offer a substantial improvement in the user experience.
+- **Long pages.** In-page navigation can offer a substantial improvement to user experience for pages that include three or more distinct content sections or content that exceeds three or more viewport heights.

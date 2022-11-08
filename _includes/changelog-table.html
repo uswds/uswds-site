@@ -1,11 +1,11 @@
 {% assign col1Title = 'Date' %}
-{% assign col1Classes = 'tablet:grid-col tablet:display-none desktop-lg:display-block' %}
+{% assign col1Classes = 'tablet:grid-col site-changelog--hide-tablet' %}
 {% assign col2Title = 'USWDS version' %}
 {% assign col2Classes = 'tablet:grid-col tablet:padding-left-0' %}
 {% assign col3Title = 'Affects' %}
 {% assign col3Classes = 'tablet:grid-col' %}
 {% assign col4Title = 'Breaking' %}
-{% assign col4Classes = 'tablet:grid-col tablet:display-none desktop-lg:display-block' %}
+{% assign col4Classes = 'tablet:grid-col site-changelog--hide-tablet' %}
 {% assign col5Title = 'Description' %}
 {% assign col5Classes = 'tablet:grid-col-6' %}
 {% assign col6Title = 'More information' %}
@@ -82,10 +82,12 @@
           {% if item.summary%}
             <p class="measure-6">
               {% if item.isBreaking %}
-                <span class="display-none tablet:display-inline desktop-lg:display-none output-false">Breaking</span>
+                <span class="site-changelog--show-tablet output-false">Breaking</span>
               {% endif %}
               {% if item.summary %}
-              <strong>{{ item.summary }}</strong>
+              <strong>
+                {{ item.summary }}
+              </strong>
               {% endif %}
               {% if item.summaryAdditional %}
                 {{ item.summaryAdditional}}

@@ -3383,21 +3383,21 @@ p + .pagination-behaviors--examples {
 
 .site-changelog--show-tablet {
   @include at-media-max("tablet") {
-    display:none;
+    display: none;
   }
   @include at-media("tablet") {
-    display:inline-block;
+    display: inline-block;
   }
-  @include at-media("widescreen"){
-    display:none;
+  @include at-media("widescreen") {
+    display: none;
   }
 }
 
 .site-changelog--hide-tablet {
   @include at-media("tablet") {
-    display:none;
+    display: none;
   }
   @include at-media("widescreen") {
-    display:block;
+    display: block;
   }
 }

@@ -3,20 +3,61 @@ title: Table
 type: component
 # Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
-# Add a list of changelog items with newest items first. Uncomment the 'items' data field when adding the first item.
-# Start changelog item. Copy this section to create a new changelog item.
-# items:
-  # - date:
-  #   summary:
-  #   summaryAdditional:
-  #   isBreaking:
-  #   affectsAccessibility:
-  #   affectsAssets:
-  #   affectsGuidance:
-  #   affectsJavascript:
-  #   affectsMarkup:
-  #   affectsStyles:
-  #   githubPr:
-  #   githubRepo:
-  #   versionUswds:
-# end changelog item
+
+items:
+  # 3.0.2 release
+  - date: 2022-06-17
+    summary: Table border settings work as expected.
+    summaryAdditional: Theme table settings are now consistently applied to table styles.
+    isBreaking: false
+    affectsAccessibility: false
+    affectsAssets: false
+    affectsGuidance: false
+    affectsJavascript: false
+    affectsMarkup: false
+    affectsStyles: true
+    githubPr: 4712
+    githubRepo: uswds
+    versionUswds: 3.0.2
+  # 3.0 release
+  - date: 2022-04-28
+    summary: Released USWDS 3.0.
+    summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+    isBreaking: true
+    affectsAccessibility: true
+    affectsAssets: true
+    affectsGuidance: true
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0
+  # 2.11.0 release
+  - date: 2021-03-17
+    summary: Sortable table is released.
+    summaryAdditional: A sorted column changes the row ordering based on alphabetical or numeric cell values.
+    isBreaking: false
+    affectsAccessibility: false
+    affectsAssets: false
+    affectsGuidance: true
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles: true
+    githubPr: 3950
+    githubRepo: uswds
+    versionUswds: 2.11.0
+  - date: 2021-03-17
+    summary: Updated default values for table settings.
+    summaryAdditional: Changed values of <code>$theme-table-border-color</code>, <code>$theme-table-header-text-color</code>, <code>$theme-table-stripe-text-color</code>, and <code>$theme-table-text-color</code> from <code>default</code> to <code>"ink"</code>.
+    affectsStyles: true
+    githubPr: 3950
+    githubRepo: uswds
+    versionUswds: 2.11.0
+  - date: 2021-03-17
+    summary: Added new table settings. 
+    summaryAdditional: Added <code>$theme-table-sorted-header-background-color</code>, <code>$theme-table-sorted-background-color</code>, <code>$theme-table-sorted-stripe-background-color</code>, and <code>$theme-table-sorted-icon-color</code>, and <code>$theme-table-unsorted-icon-color</code> .
+    affectsStyles: true
+    githubPr: 3950
+    githubRepo: uswds
+    versionUswds: 2.11.0

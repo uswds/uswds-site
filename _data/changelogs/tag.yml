@@ -3,20 +3,19 @@ title: Tag
 type: component
 # Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
-# Add a list of changelog items with newest items first. Uncomment the 'items' data field when adding the first item.
-# Start changelog item. Copy this section to create a new changelog item.
-# items:
-  # - date:
-  #   summary:
-  #   summaryAdditional:
-  #   isBreaking:
-  #   affectsAccessibility:
-  #   affectsAssets:
-  #   affectsGuidance:
-  #   affectsJavascript:
-  #   affectsMarkup:
-  #   affectsStyles:
-  #   githubPr:
-  #   githubRepo:
-  #   versionUswds:
-# end changelog item
+
+items:
+  # 3.0 release
+  - date: 2022-04-28
+    summary: Released USWDS 3.0.
+    summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+    isBreaking: true
+    affectsAccessibility: true
+    affectsAssets: true
+    affectsGuidance: true
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0

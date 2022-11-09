@@ -18,6 +18,8 @@ subnav:
   href: '#side-navigation-guidance'
 - text: Package
   href: '#side-navigation-package'
+- text: Latest updates
+  href: '#side-navigation-changelog'
 tags:
   - sidenav
   - nav

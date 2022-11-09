@@ -3446,17 +3446,9 @@ $do-dont-top-bar-width: 1;
   }
 }
 
-// TODO: What's this?
-.usa-card__heading {
-  font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
-  font-size: 1.22rem;
-  line-height: 1.2;
-  margin: 0;
-}
-
 // Pattern landing page 
 .pattern-card-heading {
-  font-weight: 400; 
+  font-weight: fw("normal"); 
 }
 
 // Memorable Date w/select 

@@ -69,7 +69,8 @@ Allow the user to select from available options, and to include a brief message 
 
 ## Usability guidance
 
-See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons). 
+{:.usa-content-list}
+- See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons). 
 
 
 ## Accessibility 

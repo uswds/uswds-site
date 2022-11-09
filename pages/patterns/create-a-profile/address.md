@@ -72,15 +72,10 @@ Provide all the fields needed for a user to provide a physical address, even les
 {:.usa-content-list}
 - <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
 - <strong>People without fixed addresses.</strong> Some people do not have fixed addresses. Consider providing other options for reaching them.
-
-### What to use 
-
-{:.usa-content-list}
 - <strong>Physical vs. mailing address.</strong> If you do need an address, determine if you need a physical address or a mailing address, or both. Physical addresses are most important for determining benefits eligibility or for disaster response. Mailing addresses are important for correspondence.
 - <strong>Both physical and mailing address.</strong> If you need both the physical and mailing address, consider providing a checkbox for `same as physical address` to auto-populate the mailing address.
 - <strong>Google Plus Codes.</strong> Consider whether [Google Plus Codes](https://maps.google.com/pluscodes/) are appropriate for your audience. Google Plus Codes identify a physical location, including those that are not identifiable by a typical postal address. They can be used to identify physical locations that are very remote, where addresses are not available, where someone doesn’t have a fixed address (such as a person who is unhoused), or during an emergency. 
 - <strong>Puerto Rico.</strong> Consider whether residents of Puerto Rico are part of your audience. Addresses for Puerto Rico require the Urbanization field.
-
 
 ## Usability guidance
 

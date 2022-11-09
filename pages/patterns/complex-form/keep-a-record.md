@@ -29,7 +29,10 @@ Provide the user with a printable record of their answers using a print style sh
   <div class="tablet:grid-col-5">
     <div class="do-dont">
       <div class="do-dont__do">
-      <h3 class="do-dont__heading">What to do</h3>
+        <h3 class="do-dont__heading">
+          {% include icon.html icon="check_circle" %}
+          What to do
+        </h3>
         <div class="do-dont__content">
           <ul>
             <li>Use a print style sheet to create a summary of submitted information in a print-optimized format.</li>
@@ -48,7 +51,10 @@ Provide the user with a printable record of their answers using a print style sh
   </div>
   <div class="tablet:grid-col-5">
     <div class="do-dont__dont">
-    <h3 class="do-dont__heading">What not to do</h3>
+      <h3 class="do-dont__heading">
+        {% include icon.html icon="cancel" %}
+        What not to do
+      </h3>
       <div class="do-dont__content">
           <ul>
             <li>Don't arbitrarily choose which questions and answers are displayed on the record of submitted information. If a question was important enough to ask, it's important enough to keep in the user's record of their form submission.</li>

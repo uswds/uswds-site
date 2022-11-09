@@ -26,7 +26,10 @@ Help users enter their phone numbers in a consistent, correct, usable format. Us
   <div class="tablet:grid-col-5">
     <div class="do-dont">
       <div class="do-dont__do">
-      <h3 class="do-dont__heading">What to do</h3>
+        <h3 class="do-dont__heading">
+          {% include icon.html icon="check_circle" %}
+          What to do
+        </h3>
         <div class="do-dont__content">
           <ul>
             <li>Tell users why you need their phone number, why you might contact them, and when.</li>
@@ -47,7 +50,10 @@ Help users enter their phone numbers in a consistent, correct, usable format. Us
   </div>
   <div class="tablet:grid-col-5">
     <div class="do-dont__dont">
-    <h3 class="do-dont__heading">What not to do</h3>
+      <h3 class="do-dont__heading">
+        {% include icon.html icon="cancel" %}
+        What not to do
+      </h3>
       <div class="do-dont__content">
           <ul>
             <li>Do not require users to enter hyphens or other characters.</li>

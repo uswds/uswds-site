@@ -28,7 +28,10 @@ Mobile device users in particular may benefit from being able to type a year rat
   <div class="tablet:grid-col-5">
     <div class="do-dont">
       <div class="do-dont__do">
-      <h3 class="do-dont__heading">What to do</h3>
+        <h3 class="do-dont__heading">
+          {% include icon.html icon="check_circle" %}
+          What to do
+        </h3>
         <div class="do-dont__content">
           <ul>
             <li>Do provide text entry fields for day and year inputs, and the Select component for month.</li>
@@ -44,7 +47,10 @@ Mobile device users in particular may benefit from being able to type a year rat
   </div>
   <div class="tablet:grid-col-5">
     <div class="do-dont__dont">
-    <h3 class="do-dont__heading">What not to do</h3>
+      <h3 class="do-dont__heading">
+        {% include icon.html icon="cancel" %}
+        What not to do
+      </h3>
       <div class="do-dont__content">
           <ul>
             <li>Don't auto-advance focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes.</li>

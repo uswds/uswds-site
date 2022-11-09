@@ -29,7 +29,10 @@ Allow the user to select from available options, and to include a brief message 
   <div class="tablet:grid-col-5">
     <div class="do-dont">
       <div class="do-dont__do">
-      <h3 class="do-dont__heading">What to do</h3>
+        <h3 class="do-dont__heading">
+          {% include icon.html icon="check_circle" %}
+          What to do
+        </h3>
         <div class="do-dont__content">
           <ul>
             <li>Offer options for how to be contacted, if possible, since some users may not have a permanent physical or mailing address, due to displacement, infrastructure problems following a disaster or other reasons.</li>
@@ -43,7 +46,10 @@ Allow the user to select from available options, and to include a brief message 
   </div>
   <div class="tablet:grid-col-5">
     <div class="do-dont__dont">
-    <h3 class="do-dont__heading">What not to do</h3>
+      <h3 class="do-dont__heading">
+        {% include icon.html icon="cancel" %}
+        What not to do
+      </h3>
       <div class="do-dont__content">
           <ul>
             <li>Do not provide the user with preference options for a communication channel you don’t currently support. If you cannot SMS message a user, for example, don’t provide that as a preference option.</li>

@@ -31,7 +31,10 @@ Provide a single text field to enter the Social Security Number.
   <div class="tablet:grid-col-5">
     <div class="do-dont">
       <div class="do-dont__do">
-      <h3 class="do-dont__heading">What to do</h3>
+        <h3 class="do-dont__heading">
+          {% include icon.html icon="check_circle" %}
+          What to do
+        </h3>
         <div class="do-dont__content">
           <ul>
             <li>Do allow users to enter a Social Security Number with as much fault tolerance as possible. Hyphens and blank spaces in the Social Security Number field should be accommodated if at all possible, since users may be accustomed to entering separators to the numeric groups that make up a Social Security Number.</li>
@@ -45,7 +48,10 @@ Provide a single text field to enter the Social Security Number.
   </div>
   <div class="tablet:grid-col-5">
     <div class="do-dont__dont">
-    <h3 class="do-dont__heading">What not to do</h3>
+      <h3 class="do-dont__heading">
+        {% include icon.html icon="cancel" %}
+        What not to do
+      </h3>
       <div class="do-dont__content">
           <ul>
             <li>Do not separate the Social Security Number entry into three separate fields.</li>

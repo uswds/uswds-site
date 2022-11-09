@@ -27,7 +27,10 @@ Provide multiple text entry fields that support a rich array of special characte
   <div class="tablet:grid-col-5">
     <div class="do-dont">
       <div class="do-dont__do">
-      <h3 class="do-dont__heading">What to do</h3>
+        <h3 class="do-dont__heading">
+          {% include icon.html icon="check_circle" %}
+          What to do
+        </h3>
         <div class="do-dont__content">
           <ul>
             <li>Do support long text fields for each name. Allow users to enter up to 128 characters per field, but follow form norms for field display size.</li>
@@ -48,7 +51,10 @@ Provide multiple text entry fields that support a rich array of special characte
   </div>
   <div class="tablet:grid-col-5">
     <div class="do-dont__dont">
-    <h3 class="do-dont__heading">What not to do</h3>
+      <h3 class="do-dont__heading">
+        {% include icon.html icon="cancel" %}
+        What not to do
+      </h3>
       <div class="do-dont__content">
           <ul>
             <li>Do not require users to enter something in each field. In some cultures, such as Indonesian and Icelandic, people may have only one name.</li>

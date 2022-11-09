@@ -26,7 +26,10 @@ Provide a text entry field that supports a rich array of special characters and 
   <div class="tablet:grid-col-5">
     <div class="do-dont">
       <div class="do-dont__do">
-      <h3 class="do-dont__heading">What to do</h3>
+        <h3 class="do-dont__heading">
+          {% include icon.html icon="check_circle" %}
+          What to do
+        </h3>
         <div class="do-dont__content">
           <ul>
             <li>Do understand why you are collecting this information.</li>
@@ -45,7 +48,10 @@ Provide a text entry field that supports a rich array of special characters and 
   </div>
   <div class="tablet:grid-col-5">
     <div class="do-dont__dont">
-    <h3 class="do-dont__heading">What not to do</h3>
+      <h3 class="do-dont__heading">
+        {% include icon.html icon="cancel" %}
+        What not to do
+      </h3>
       <div class="do-dont__content">
           <ul>
             <li>Do not make the field mandatory. While the information can be helpful, there are neutral options that can be used.</li>

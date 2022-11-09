@@ -31,7 +31,10 @@ Respectful, inclusive voice and tone throughout the form – the questions, fiel
   <div class="tablet:grid-col-5">
     <div class="do-dont">
       <div class="do-dont__do">
-      <h3 class="do-dont__heading">What to do</h3>
+        <h3 class="do-dont__heading">
+          {% include icon.html icon="check_circle" %}
+          What to do
+        </h3>
         <div class="do-dont__content">
           <ul>
             <li>Make sure you’re helping users to understand expectations as you are <a href="{{ site.baseurl }}/patterns/complex-form/establish-trust/">Establishing trust</a>. Be transparent in why specific information is being collected, how it will be used, and how that information will be safeguarded.</li>
@@ -49,7 +52,10 @@ Respectful, inclusive voice and tone throughout the form – the questions, fiel
   </div>
   <div class="tablet:grid-col-5">
     <div class="do-dont__dont">
-    <h3 class="do-dont__heading">What not to do</h3>
+      <h3 class="do-dont__heading">
+        {% include icon.html icon="cancel" %}
+        What not to do
+      </h3>
       <div class="do-dont__content">
           <ul>
             <li>Don’t assume your users are using a desktop or laptop computer, in the privacy of their own homes.</li>

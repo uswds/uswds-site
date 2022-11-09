@@ -27,10 +27,10 @@ Provide clear information on why it is necessary to complete the form, what info
   <div class="tablet:grid-col-5">
     <div class="do-dont">
       <div class="do-dont__do">
-      <h3 class="do-dont__heading">
-      {% include icon.html icon="check_circle" %}
-      What to do
-      </h3>
+        <h3 class="do-dont__heading">
+          {% include icon.html icon="check_circle" %}
+          What to do
+        </h3>
         <div class="do-dont__content">
           <ul>
             <li>Do provide information on why information is being collected and how it is being used. </li>
@@ -48,10 +48,10 @@ Provide clear information on why it is necessary to complete the form, what info
   </div>
   <div class="tablet:grid-col-5">
     <div class="do-dont__dont">
-    <h3 class="do-dont__heading">
-      {% include icon.html icon="cancel" %}
-      What not to do
-    </h3>
+      <h3 class="do-dont__heading">
+        {% include icon.html icon="cancel" %}
+        What not to do
+      </h3>
       <div class="do-dont__content">
           <ul>
             <li>Do not overwhelm your user. Provide enough background information to communicate the purpose and requirements of the form, but use principles of progressive disclosure to gradually move from simple to more difficult questions.</li>

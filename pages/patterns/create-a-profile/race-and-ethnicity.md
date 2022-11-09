@@ -36,7 +36,10 @@ Allow selection of more than one race and acknowledge people with multiple racia
   <div class="tablet:grid-col-5">
     <div class="do-dont">
       <div class="do-dont__do">
-      <h3 class="do-dont__heading">What to do</h3>
+        <h3 class="do-dont__heading">
+          {% include icon.html icon="check_circle" %}
+          What to do
+        </h3>
         <div class="do-dont__content">
           <ul>
             <li>Do explain why race and ethnicity information is being collected, and how this information will be used.</li>
@@ -52,7 +55,10 @@ Allow selection of more than one race and acknowledge people with multiple racia
   </div>
   <div class="tablet:grid-col-5">
     <div class="do-dont__dont">
-    <h3 class="do-dont__heading">What not to do</h3>
+      <h3 class="do-dont__heading">
+        {% include icon.html icon="cancel" %}
+        What not to do
+      </h3>
       <div class="do-dont__content">
           <ul>
             <li>Do not restrict choices to a single race or ethnicity.</li>

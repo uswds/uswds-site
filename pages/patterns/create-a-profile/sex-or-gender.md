@@ -42,7 +42,10 @@ Present the user with a controlled vocabulary to accurately depict their biologi
   <div class="tablet:grid-col-5">
     <div class="do-dont">
       <div class="do-dont__do">
-      <h3 class="do-dont__heading">What to do</h3>
+        <h3 class="do-dont__heading">
+          {% include icon.html icon="check_circle" %}
+          What to do
+        </h3>
         <div class="do-dont__content">
           <ul>
             <li>Do determine if you need to collect biological sex and only use if the information is essential to the user's experience.</li>
@@ -57,7 +60,10 @@ Present the user with a controlled vocabulary to accurately depict their biologi
   </div>
   <div class="tablet:grid-col-5">
     <div class="do-dont__dont">
-    <h3 class="do-dont__heading">What not to do</h3>
+      <h3 class="do-dont__heading">
+        {% include icon.html icon="cancel" %}
+        What not to do
+      </h3>
       <div class="do-dont__content">
           <ul>
             <li>Do not assume gender identity based on the user's biological sex.</li>
@@ -142,7 +148,10 @@ Present the user with the tools to accurately depict their gender identity.
   <div class="tablet:grid-col-5">
     <div class="do-dont">
       <div class="do-dont__do">
-      <h3 class="do-dont__heading">What to do</h3>
+        <h3 class="do-dont__heading">
+          {% include icon.html icon="check_circle" %}
+          What to do
+        </h3>
         <div class="do-dont__content">
           <ul>
             <li>Do support long text fields for gender identity. The language behind gender identity is constantly evolving.</li>
@@ -157,7 +166,10 @@ Present the user with the tools to accurately depict their gender identity.
   </div>
   <div class="tablet:grid-col-5">
     <div class="do-dont__dont">
-    <h3 class="do-dont__heading">What not to do</h3>
+      <h3 class="do-dont__heading">
+        {% include icon.html icon="cancel" %}
+        What not to do
+      </h3>
       <div class="do-dont__content">
           <ul>
             <li>Do not assume gender identity based on biological sex.</li>

@@ -3469,3 +3469,8 @@ $do-dont-top-bar-width: 1;
     }
   }
 }
+
+.site-story {
+  @include typeset("lang", "xl", 2);
+  @include u-text("normal");
+}

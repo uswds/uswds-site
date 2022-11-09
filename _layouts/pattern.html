@@ -22,7 +22,7 @@ layout: default
             {% endunless %}
           {% endif %}
           <h1 id="{{ page.title | slugify }}" class="site-page-title">{{ page.title }}</h1>
-          <h2 id="{{ page.story | slugify }}">{{ page.story }}</h2>
+          <p id="{{ page.story | slugify }}" class="site-story">{{ page.story }}.</p>
         </header>
 
         {% include lead.html text=page.lead %}

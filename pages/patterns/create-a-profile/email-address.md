@@ -153,6 +153,6 @@ This pattern uses radio buttons. See [usability guidance for radio buttons]({{ s
 - Validate email addresses (Regular Expressions Cookbook). (n.d). Retrieved on July 20, 2022, from [https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s01.html](https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s01.html)
 
 ## Changelog
-- Published November 4, 2022
+- Published November 10, 2022
 
 Disclaimer: Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

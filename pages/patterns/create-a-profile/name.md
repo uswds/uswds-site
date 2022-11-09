@@ -141,6 +141,6 @@ If you won’t be addressing correspondence, avoid asking for the user’s title
 - Personal names around the world. (August 17, 2011) Retrieved July 15, 2022, from [https://www.w3.org/International/questions/qa-personal-names](https://www.w3.org/International/questions/qa-personal-names)
 
 ## Changelog
-- Published November 4, 2022
+- Published November 10, 2022
 
 Disclaimer: Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

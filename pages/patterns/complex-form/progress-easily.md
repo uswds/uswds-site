@@ -143,6 +143,6 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
 - Training wheels in a user interface. Journal article, Association for Computing Machinery by John M. Carroll and Caroline Carrithers Vol. 8 (August 1, 1984). Retrieved on July 27, 2022, from  [https://doi.org/10.1145/358198.358218](https://doi.org/10.1145/358198.358218)
 
 ## Changelog
-- Published November 4, 2022
+- Published November 10, 2022
 
 Disclaimer: Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

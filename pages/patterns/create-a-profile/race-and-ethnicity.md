@@ -188,6 +188,6 @@ Allow selection of more than one race and acknowledge people with multiple racia
 - Who is Hispanic? (September 15, 2022) Retrieved November 4, 2022, from [https://www.pewresearch.org/fact-tank/2022/09/15/who-is-hispanic/](https://www.pewresearch.org/fact-tank/2022/09/15/who-is-hispanic/)
 
 ## Changelog
-- Published November 4, 2022
+- Published November 10, 2022
 
 Disclaimer: Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

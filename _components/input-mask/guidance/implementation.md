@@ -1,4 +1,11 @@
-The examples are common input masks, however you can alter the code to meet the needs of your project. In order to extend the functionality of the input mask, you must include the `placeholder` attribute as the visible input mask, using the underscore `_` to function as expected characters. You may also use dashes `-` and the forward slash `/` to help build a viable mask, but these will not count as the intended characters for the value. This placeholder must relate directly to the regular expression (regex) pattern as the `pattern` attribute of the `<input>` tag. Additionally, make sure to add the `inputmode="numeric"` attribute and setting so the numeric keypad is displayed.
+The examples in the Preview section, above, are common input masks, but you can adapt the code to meet the needs of your project. In order to extend the functionality of the input mask, you must include a `placeholder` attribute as the visible input mask, using the underscore `_` to represent a character the user should enter. You may use punctuation literals like `[space]`, `-`, `/`, or `(` to help format your mask, but these literals will not be included in the final submitted value. You also need a related `pattern` attribute on the `input` element, its value epxressed as a regular expression that describes the intended format of the input data. Additionally, if the expected input is numeric, make sure to add the `inputmode="numeric"` attribute and setting so the numeric keypad is displayed. For example, an `input` with an input mask of three groups of three numerals, separated with spaces might have the following properties: 
+
+{:.usa-content-list }
+```
+placeholder="___ ___ ___"
+pattern="\d\d\d \d\d\d \d\d\d"
+inputmode="numeric"
+```
 
 {:.usa-content-list }
 <h3>The input mask and alphanumeric characters</h3>

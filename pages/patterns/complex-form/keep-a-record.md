@@ -8,8 +8,6 @@ sub-category: Complete a complex form
 lead: Help users feel confident in their form submission by providing a record to download or print. A printed or downloaded record of their answers provides a reference for future use, and helps users confirm their successful form submission.
 ---
 
-<div></div>
-
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
 ## What problem does this solve?

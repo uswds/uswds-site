@@ -8,8 +8,6 @@ sub-category: Create a user profile
 lead: The physical and mailing address patterns help users enter their address successfully.
 ---
 
-<div></div>
-
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
 ## What problem does this solve?

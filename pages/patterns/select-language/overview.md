@@ -9,8 +9,8 @@ subnav:
   - href: /patterns/language-selector/three-or-more-languages/
   - href: /patterns/language-selector/selected-content/
   - href: /patterns/language-selector/language-preferences/
-
 ---
+
 ## Why this matters
 Accessing content in the language that the user is most comfortable in allows the user to be more successful in completing key tasks. People with Limited English Proficiency (LEP) may struggle to complete tasks in English, especially during times of stress. By supporting users in their language of choice we show respect and enable them to be more effective.
 

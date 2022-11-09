@@ -7,7 +7,6 @@ category: Patterns
 sub-category: Create a user profile
 lead: This pattern helps users to provide gender identity or biological sex information in an accurate and respectful manner. Sex and gender identity are often integral to an individual’s sense of self, and several federal agencies and working groups are striving to define a meaningful, inclusive way to collect biological sex and gender information when it is needed.
 ---
-<div></div>
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 

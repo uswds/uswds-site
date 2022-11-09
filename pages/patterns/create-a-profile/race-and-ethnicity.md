@@ -7,7 +7,6 @@ category: Patterns
 sub-category: Create a user profile
 lead: The race and ethnicity pattern allows users to provide race and ethnicity information in the most accurate and respectful manner possible. Race and ethnicity are often integral to an individual’s sense of self, but they are complex topics; there is no generally accepted agreement that race is a real, biological attribute. Race and ethnicity can, however, be helpful information in assessing the civil rights impact of programs and services, and this data is sometimes a required reporting element. 
 ---
-<div></div>
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 

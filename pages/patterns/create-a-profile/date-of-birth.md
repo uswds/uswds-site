@@ -7,7 +7,6 @@ category: Patterns
 sub-category: Create a user profile
 lead: Date of birth, and other memorable dates, can be an essential piece of information used to validate identity or eligibility for services or benefits. This pattern allows users to enter their date of birth or another memorable date (such as, birth of child, death of loved one) without friction. 
 ---
-<div></div>
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 

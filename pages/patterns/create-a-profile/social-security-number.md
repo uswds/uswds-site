@@ -7,7 +7,6 @@ category: Patterns
 sub-category: Create a user profile
 lead: The Social Security Number pattern allows users to easily enter their Social Security Number and ensures the Social Security Number is properly formatted.
 ---
-<div></div>
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 

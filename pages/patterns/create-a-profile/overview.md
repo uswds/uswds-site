@@ -16,6 +16,7 @@ subnav:
   - href: /patterns/create-a-profile/race-and-ethnicity/
   - href: /patterns/create-a-profile/social-security-number/
 ---
+
 ## Why this matters
 User profiles are central to a person’s identity. A user profile may be integral to proving identity and qualifying for and receiving support and services from the government. It can also be integral to expressing identity and ensuring respectful communication.
 

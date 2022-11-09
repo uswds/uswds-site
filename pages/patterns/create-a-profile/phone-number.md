@@ -7,7 +7,6 @@ category: Patterns
 sub-category: Create a user profile
 lead: The phone number pattern allows users to easily enter their phone number and ensures the phone number is properly formatted.
 ---
-<div></div>
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 

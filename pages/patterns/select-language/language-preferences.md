@@ -8,8 +8,6 @@ sub-category: Select a language
 lead: This pattern allows users to indicate the languages they prefer to use for either written or spoken communications.
 ---
 
-<div></div>
-
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
 ## What problem does this solve?

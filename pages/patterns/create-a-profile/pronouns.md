@@ -7,7 +7,6 @@ category: Patterns
 sub-category: Create a user profile
 lead: The pronouns pattern helps users to provide information that will allow them to feel confident they will be addressed with the pronouns they use.
 ---
-<div></div>
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 

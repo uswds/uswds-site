@@ -7,7 +7,6 @@ category: Patterns
 sub-category: Create a user profile
 lead: The email address pattern allows users to confidently and accurately enter their email address and ensures that it is properly formatted.
 ---
-<div></div>
 
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 

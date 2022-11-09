@@ -8,8 +8,6 @@ sub-category: Select a language
 lead: This pattern helps users, especially those with limited English proficiency, select their preferred language when visiting a website available in three or more languages, like English, Spanish, and Arabic.
 ---
 
-<div></div>
-
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
 ## What problem does this solve?

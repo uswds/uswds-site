@@ -90,7 +90,7 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>A step indicator updates users on their progress through a multi-step process.</p>
-        <a href="/components/progress-indicator/">Visit Step indicator</a>
+        <a href="/components/step-indicator/">Visit Step indicator</a>
       </div>
     </div>
   </div>

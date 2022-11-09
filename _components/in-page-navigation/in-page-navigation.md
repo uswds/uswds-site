@@ -6,6 +6,7 @@ component:
   references: true
   dependencies:
   image: /assets/img/components/in-page-navigation/in-page-navigation.jpg
+  imageUtilities: width-tablet maxw-full
   alt: "An in-page navigation component in the three states: default, hover, and focus. In the active state, the nav link is underlined. In the focus state, the nav link is underlined and has a focus border surrounding it."
   demo: in-page-navigation
 lead: "The in-page navigation allows navigation to specific sections on a lengthy content page"

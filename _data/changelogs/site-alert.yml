@@ -4,8 +4,8 @@ changelogURL:
 items:
   # 3.2.0 release
   - date: 2022-10-19
-    summary: Updated the alignment of site alert content to visually match alignment with banner content.
-    summaryAdditional: The alert component was also updated to match banner content alignment.
+    summary: Updated the alignment of site alert content to visually match banner content.
+    summaryAdditional: The alert component was also updated.
     isBreaking: false
     affectsAccessibility: false
     affectsAssets: false
@@ -33,7 +33,7 @@ items:
   # 2.11.1
   - date: 2021-03-17
     summary: Restored missing white icons.
-    summaryAdditional: Restored <code>error--white</code>, <code>info--white</code>, and <code>warning--white</code> icons.
+    summaryAdditional: Restored `error--white`, `info--white`, and `warning--white` icons.
     affectsAssets: true
     githubPr: 4106
     githubRepo: uswds

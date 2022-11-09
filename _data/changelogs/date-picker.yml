@@ -11,8 +11,8 @@ items:
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-06-17
-    summary: Improved Date Picker display at very narrow widths.
-    summaryAdditional: We improved the display of the date picker at very narrow widths so there are no UX inconsistencies when the date picker is in a form at less than 320px width. This assures that Date Picker conforms to WCAG 2.1.
+    summary: Improved date picker display at very narrow widths.
+    summaryAdditional: We improved the display of the date picker at very narrow widths so there are no UX inconsistencies when the date picker is in a form at less than 320px width. This assures that date picker conforms to WCAG 2.1.
     affectsAccessibility: true
     affectsStyles: true
     githubPr: 4770
@@ -32,7 +32,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-04-11
-    summary: Added support for High Contrast Mode and forced colors.
+    summary: Added support for high contrast mode and forced colors.
     summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     affectsAccessibility: true
     affectsStyles: true
@@ -41,7 +41,7 @@ items:
     versionUswds: 2.13.3
     affectsAccessibility: true
   - date: 2022-01-20
-    summary: Fix Date Picker input bug in Safari.
+    summary: Fix date picker input bug in Safari.
     summaryAdditional: We fixed a bug where date picker selections would not propagate into the input field in Safari.
     affectsJavascript: true
     githubPr: 4456
@@ -49,7 +49,7 @@ items:
     versionUswds: 2.13.1
   - date: 2021-12-14
     summary:  Improved screen reader experience.
-    summaryAdditional: Now screen readers can better describe the label and description of a date picker <code>input</code>.
+    summaryAdditional: Now screen readers can better describe the label and description of a date picker `input`.
     affectsAccessibility: true
     affectsMarkup: true
     githubPr: 4414
@@ -57,13 +57,13 @@ items:
     versionUswds: 2.13.0
   - date: 2021-11-01
     summary: Added automatic sanitizing.
-    summaryAdditional: The design system now automatically sanitizes content in elements we compose with JavaScript. This means that components like Combobox, Tooltip, File Input, and Date Picker will sanitize any content passed to them. This helps protect any design system implementation against malicious XSS attacks through these components.
+    summaryAdditional: The design system now automatically sanitizes content in elements we compose with JavaScript. This means that components like combo box, tooltip, file input, and date picker will sanitize any content passed to them. This helps protect any design system implementation against malicious XSS attacks through these components.
     affectsJavascript: true
     githubPr: 4329
     githubRepo: uswds
     versionUswds: 2.12.2
   - date: 2021-08-18
-    summary: Improved performance of Date picker and Combo box JavaScript.
+    summary: Improved performance of date picker and combo box JavaScript.
     summaryAdditional:
     affectsJavascript: true
     githubPr: 4256

@@ -11,8 +11,8 @@ items:
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-04-11
-    summary: Added more accessible disclosure buttons.
-    summaryAdditional: Now the big Footer variant uses more accessible disclosure buttons for showing and hiding submenus at mobile widths.
+    summary: Added more accessible disclosure buttons to the big footer variant.
+    summaryAdditional: Now the big footer variant uses more accessible disclosure buttons for showing and hiding submenus at mobile widths.
     affectsAccessibility: true
     affectsJavascript: true
     affectsStyles: true
@@ -20,7 +20,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.3
   - date: 2022-04-11
-    summary: Added support for High Contrast Mode and forced colors.
+    summary: Added support for high contrast mode and forced colors.
     summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     affectsAccessibility: true
     affectsStyles: true
@@ -28,8 +28,8 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.3
   - date: 2022-03-07
-    summary: Fixed Big Footer expanded display.
-    summaryAdditional: Fixes an issue where the Big Footer variant does not show the proper expanded display at exactly 480px.
+    summary: Fixed expanded display in the big footer variant.
+    summaryAdditional: Fixes an issue where the big footer variant does not show the proper expanded display at exactly 480px.
     affectsJavascript: true
     affectsStyles: true
     githubPr: 4525

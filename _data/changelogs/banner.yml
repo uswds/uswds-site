@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
   - date: 2022-10-09
-    summary: Updated the aria-label in English versions of usa-banner.
-    summaryAdditional: When read out on a screen reader, the statement "An official website of the United States government" can sound like "Unofficial website of the United States government". To minimize confusion, we updated the component's <code>aria-label</code> to instead read "Official website of the United States government".
+    summary: Updated the `aria-label` in English versions of banner.
+    summaryAdditional: When read out on a screen reader, the statement "An official website of the United States government" can sound like "Unofficial website of the United States government". To minimize confusion, we updated the component's `aria-label` to instead read "Official website of the United States government".
     affectsAccessibility: true
     affectsMarkup: true
     githubPr: 4925
@@ -20,7 +20,7 @@ items:
     versionUswds: 3.2.0
   - date: 2022-10-09
     summary: Simplified ARIA label in the lock SVG.
-    summaryAdditional: We simplified the way we're using <code>aria-labelledby</code> in the lock SVG to streamline screen reader vocalization.
+    summaryAdditional: We simplified the way we're using `aria-labelledby` in the lock SVG to streamline screen reader vocalization.
     affectsAccessibility: true
     affectsMarkup: true
     githubPr: 4925
@@ -36,8 +36,8 @@ items:
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-06-17
-    summary: Updated <code>uswds-init.js</code> to better suppress flashing content.
-    summaryAdditional: We updated the <code>uswds-init</code> script's event listener to target <code>window</code> from <code>document</code>. This assures that the page's JavaScript is fully loaded before we remove the <code>loadingClass</code> that suppresses the open banner. The banner should no longer flash open.
+    summary: Updated `uswds-init.js` to better suppress flashing content.
+    summaryAdditional: We updated the `uswds-init` script's event listener to target `window` from `document`. This assures that the page's JavaScript is fully loaded before we remove the `loadingClass` that suppresses the open banner. The banner should no longer flash open.
     affectsAssets: true
     affectsJavascript: true
     githubPr: 4676
@@ -63,7 +63,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-04-11
-    summary: Added support for High Contrast Mode and forced colors.
+    summary: Added support for high contrast mode and forced colors.
     summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     affectsAccessibility: true
     affectsStyles: true
@@ -76,16 +76,16 @@ items:
     githubPr: 1136
     githubRepo: uswds-site
   - date: 2020-12-17
-    summary: Introduced <code>uswds-init.js</code> to prevent banner flash.
-    summaryAdditional: When added to the <code>head</code> of your document, this script prevents the banner from flashing its content on page load and shifting content.
+    summary: Introduced `uswds-init.js` to prevent banner flash.
+    summaryAdditional: When added to the `head` of your document, this script prevents the banner from flashing its content on page load and shifting content.
     affectsAssets: true
     affectsJavascript: true
     githubPr: 3867
     githubRepo: uswds
     versionUswds: 2.10.0
   - date: 2020-12-17
-    summary: Improved the accessibility of decorative images in the Banner.
-    summaryAdditional: We modified the Banner to properly mark up SVG files used as decorative images. Now all decorative images are hidden from screen readers, and all SVGs are more resilient to browser bugs. See the Banner page for the complete, correct markup, and see the pull request for more context on the changes.
+    summary: Improved the accessibility of decorative images in the banner.
+    summaryAdditional: We modified the banner to properly mark up SVG files used as decorative images. Now all decorative images are hidden from screen readers, and all SVGs are more resilient to browser bugs. See the banner page for the complete, correct markup, and see the pull request for more context on the changes.
     affectsAccessibility: true
     affectsAssets: true
     githubPr: 3892
@@ -114,7 +114,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.8.0
   - date: 2020-06-17
-    summary: Added <code>role="img"</code> to SVGs.
+    summary: Added `role="img"` to SVGs.
     affectsAccessibility: true
     affectsAssets: true
     githubPr: 3316

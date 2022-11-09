@@ -46,7 +46,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-04-11
-    summary: Added support for High Contrast Mode and forced colors.
+    summary: Added support for high contrast mode and forced colors.
     summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     affectsAccessibility: true
     affectsStyles: true
@@ -63,7 +63,7 @@ items:
     versionUswds: 2.13.0
   - date: 2021-08-18
     summary: Updated header dropdown menus to close with `escape` or `focusout`.
-    summaryAdditional: Now <code>esc</code> or focusing out will close dropdown menus in the header.
+    summaryAdditional: Now `esc` or focusing out will close dropdown menus in the header.
     affectsAccessibility: true
     affectsJavascript: true
     githubPr: 4275
@@ -71,13 +71,13 @@ items:
     versionUswds: 2.12.1
   - date: 2021-03-17
     summary: Restored missing white icons.
-    summaryAdditional: Restored <code>add--white</code>, <code>check_circle--white</code>, <code>error--white</code>, <code>expand_more--white</code>, <code>info--white</code>, <code>remove--white</code>, and <code>warning--white</code> icons.
+    summaryAdditional: Restored `add--white`, `check_circle--white`, `error--white`, `expand_more--white`, `info--white`, `remove--white`, and `warning--white` icons.
     affectsAssets: true
     githubPr: 4106
     githubRepo: uswds
     versionUswds: 2.11.1
   - date: 2021-03-02
-    summary: Introduced white <code>add</code>, <code>remove</code>, and <code>expand_more</code> icons.
+    summary: Introduced white `add`, `remove`, and `expand_more` icons.
     summaryAdditional:
     isBreaking: false
     affectsAssets: true

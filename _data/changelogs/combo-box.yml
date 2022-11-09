@@ -16,7 +16,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-04-11
-    summary: Added support for High Contrast Mode and forced colors.
+    summary: Added support for high contrast mode and forced colors.
     summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     affectsAccessibility: true
     affectsStyles: true
@@ -24,8 +24,8 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.3
   - date: 2022-03-07
-    summary: Added proper `aria-controls` to Combo Box.
-    summaryAdditional: Now the Combo Box input gets the expected `aria-controls` property when it's initialized.
+    summary: Added proper `aria-controls` to combo box.
+    summaryAdditional: Now the combo box input gets the expected `aria-controls` property when it's initialized.
     affectsAccessibility: true
     affectsJavascript: true
     githubPr: 4483
@@ -33,13 +33,13 @@ items:
     versionUswds: 2.13.2
   - date: 2021-11-01
     summary: Added automatic sanitizing.
-    summaryAdditional: The design system now automatically sanitizes content in elements we compose with JavaScript. This means that components like Combobox, Tooltip, File Input, and Date Picker will sanitize any content passed to them. This helps protect any design system implementation against malicious XSS attacks through these components.
+    summaryAdditional: The design system now automatically sanitizes content in elements we compose with JavaScript. This means that components like combo box, tooltip, file input, and date picker will sanitize any content passed to them. This helps protect any design system implementation against malicious XSS attacks through these components.
     affectsJavascript: true
     githubPr: 4329
     githubRepo: uswds
     versionUswds: 2.12.2
   - date: 2021-08-18
-    summary: Improved performance of Date picker and Combo box JavaScript.
+    summary: Improved performance of date picker and combo box JavaScript.
     summaryAdditional:
     affectsJavascript: true
     githubPr: 4256

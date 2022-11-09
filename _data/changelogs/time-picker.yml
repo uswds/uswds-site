@@ -20,7 +20,7 @@ items:
     versionUswds: 3.0.0
   # 2.13.3
   - date: 2022-04-11
-    summary: Allow default `value` in Time picker.
+    summary: Allow default `value` in time picker.
     summaryAdditional: The input `value` is now used on initialization if set.
     isBreaking: false
     affectsAccessibility: false

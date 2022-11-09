@@ -7,7 +7,7 @@ changelogURL:
 items:
   # 3.2.0 release
   - date: 2022-10-19
-    summary: Updated Tooltip to allow for dynamic initialization.
+    summary: Updated tooltip to allow for dynamic initialization.
     summaryAdditional: Tooltip initializes on first interaction and checks if component has been initialized before toggling. If it hasn't initialized properly it will call a setup attributes function.
     affectsAccessibility: false
     affectsAssets: false
@@ -35,7 +35,7 @@ items:
   # 2.12.2
   - date: 2021-11-01
     summary: Added automatic sanitizing.
-    summaryAdditional: The design system now automatically sanitizes content in elements we compose with JavaScript. This means that components like Combobox, Tooltip, File Input, and Date Picker will sanitize any content passed to them. This helps protect any design system implementation against malicious XSS attacks through these components.
+    summaryAdditional: The design system now automatically sanitizes content in elements we compose with JavaScript. This means that components like combo box, tooltip, file input, and date picker will sanitize any content passed to them. This helps protect any design system implementation against malicious XSS attacks through these components.
     affectsJavascript: true
     githubPr: 4329
     githubRepo: uswds

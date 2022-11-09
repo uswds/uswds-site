@@ -21,7 +21,7 @@ items:
     versionUswds: 3.0.0
   # 2.11.2 release
   - date: 2021-04-28
-    summary: Added missing Summary box Sass package.
+    summary: Added missing summary box Sass package.
     summaryAdditional:
     isBreaking: false
     affectsAccessibility: false

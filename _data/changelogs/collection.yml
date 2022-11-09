@@ -16,8 +16,8 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2021-11-01
-    summary: Removed extraneous href from Collection calendar.
-    summaryAdditional: The <code>usa-collection__calendar-date</code> should not include an href, so we removed it.
+    summary: Removed extraneous href from collection calendar.
+    summaryAdditional: The `usa-collection__calendar-date` should not include an `href`, so we removed it.
     affectsMarkup: true
     githubPr: 4308
     githubRepo: uswds

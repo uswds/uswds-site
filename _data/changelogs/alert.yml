@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
   - date: 2022-10-19
-    summary: Updated the alignment of the Alert and Site alert components content to visually match alignment with banner content.
-    summaryAdditional:
+    summary: Updated the alignment of alert content to visually match banner content.
+    summaryAdditional: The site alert component was also updated.
     affectsStyles: true
     githubPr: 4922
     githubRepo: uswds
@@ -24,7 +24,7 @@ items:
     versionUswds: 3.0.0
   - date: 2021-03-17
     summary: Restored missing white icons.
-    summaryAdditional: Restored <code>error--white</code>, <code>info--white</code>, and <code>warning--white</code> icons.
+    summaryAdditional: Restored `error--white`, `info--white`, and `warning--white` icons.
     affectsAssets: true
     githubPr: 4106
     githubRepo: uswds
@@ -39,7 +39,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.11.0
   - date: 2021-03-17
-    summary: Added the <code>$theme-alert-padding-y</code> setting.
+    summary: Added the `$theme-alert-padding-y` setting.
     summaryAdditional:
     affectsAccessibility:
     affectsStyles: true

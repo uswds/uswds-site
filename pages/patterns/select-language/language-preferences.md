@@ -8,17 +8,19 @@ sub-category: Select a language
 lead: This pattern allows users to indicate the languages they prefer to use for either written or spoken communications.
 ---
 
-{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
+{:.site-component-section-title}
+## About this pattern
 
-## What problem does this solve?
+### What problem does this solve?
 Approximately 8 percent of the total U.S. population over the age of five is considered Limited English Proficient (LEP). They may speak English, but speak it less than “very well,” and they may not read it well, either. Limited English proficiency can lead to misunderstandings and frustration. Individuals may miss important deadlines or may submit the wrong material. In some circumstances, the miscommunication can be critical—but it is always alienating.
 
-## When to use this pattern 
+### When to use this pattern 
 Use this pattern when collecting information on the preferred written or spoken language of a user, in order to provide documentation in their preferred language, consultation with a speaker of their preferred language, or translation/interpretation services.
 
-## What's the solution
+### What's the solution
 The pattern allows users to select their language preferences for both written and spoken communication and to indicate their preferred language if it is not in the list.
 
+{:.site-component-section-title}
 ## Guidance
 
 <div class="grid-row grid-gap-3">

@@ -8,20 +8,22 @@ sub-category: Select a language
 lead: This pattern helps users, especially those with limited English proficiency, select their preferred language when visiting a website available in three or more languages, like English, Spanish, and Arabic.
 ---
 
-{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
+{:.site-component-section-title}
+## About this pattern
 
-## What problem does this solve?
+### What problem does this solve?
 Inconsistent placement and treatment of language selection interface components can be a barrier to users, especially those with limited English-language skills, preventing them from easily finding and accessing content in other languages.
 
-## When to use this pattern 
+### When to use this pattern 
 Use this pattern when the content is available in three or more languages and all content is available in each language. 
 
-## When to consider something else
+### When to consider something else
 When content is available in only two languages, see the <a href="{{ site.baseurl }}/patterns/language-selector/two-languages/">Select from two languages</a> pattern. When only selected multilingual content is available in some languages, see the <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Selected content available</a> pattern.
 
-## What's the solution
+### What's the solution
 Place the language selector menu at the top of the screen above site navigation, allowing site visitors to use a dropdown menu to select their language of choice. Place the language selector on the top right for left-to-right languages and on the top left for right-to-left languages if possible.
 
+{:.site-component-section-title}
 ## Guidance
 
 <div class="grid-row grid-gap-3">

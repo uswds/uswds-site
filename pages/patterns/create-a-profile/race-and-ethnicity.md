@@ -8,7 +8,8 @@ sub-category: Create a user profile
 lead: The race and ethnicity pattern allows users to provide race and ethnicity information in the most accurate and respectful manner possible. Race and ethnicity are often integral to an individual’s sense of self, but they are complex topics; there is no generally accepted agreement that race is a real, biological attribute. Race and ethnicity can, however, be helpful information in assessing the civil rights impact of programs and services, and this data is sometimes a required reporting element. 
 ---
 
-{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
+{:.site-component-section-title}
+## About this pattern
 
 ## Background
 
@@ -20,15 +21,16 @@ OMB requires only two categories for data on ethnicity: Hispanic or Latino, and 
 
  [OMB’s Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity (9/30/2016)](https://www.federalregister.gov/d/2016-23672/p-27) actually encourage the collection of detailed race and ethnicity information provided it can be aggregated into their minimum categories. The challenge comes in ensuring that the people answering race and ethnicity questions see themselves in the provided choices. Increasingly, Americans do not. This has led the U.S. Census Bureau to conduct extensive research into alternative ways to collect information on race and ethnicity. This research suggests that a combined race and ethnicity question with detailed checkboxes and the ability to provide additional detail is the optimal way to improve the collection of race and ethnicity data.
 
-## What problem does this solve?
+### What problem does this solve?
 Race and ethnicity can be challenging information for a user to provide, especially when choices are limited or do not align with how an individual self-identifies. Collecting race and ethnicity information can help illuminate issues of equity and disparities in incarceration rates, income, housing, employment, health care, education, and more. Respect for individual dignity should guide the methods for collecting data on race and ethnicity. 
 
-## When to use this pattern 
+### When to use this pattern 
 Follow this pattern when asking for a user's race and ethnicity as part of your service or program. Only ask for this information if you need it.
 
-## What's the solution
+### What's the solution
 Allow selection of more than one race and acknowledge people with multiple racial backgrounds. Provide direction on how to complete the form, for example, “Select one or more” or "Select all that apply" explanatory text. Whenever possible, allow respondents to self-identify their ethnicity through an open-ended text entry field.
 
+{:.site-component-section-title}
 ## Guidance
 
 <div class="grid-row grid-gap-3">

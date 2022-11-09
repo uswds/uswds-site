@@ -8,21 +8,23 @@ sub-category: Complete a complex form
 lead: Empower users to successfully complete complex forms by reducing cognitive load and guiding them through the process in a way that is humane and respectful.
 ---
 
-{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
+{:.site-component-section-title}
+## About this pattern
 
-## What problem does this solve?
+### What problem does this solve?
 Complex forms can be intimidating, overwhelming, and stressful at the best of times. Applying for the services and benefits a person most needs at the worst of times – when they may be experiencing added stresses like the trauma of natural disasters, displacement, joblessness, financial hardship, health issues, loss of a loved one, discrimination, or violence – can make a complex form seem like an impossible task to complete. 
 
 Employing principles learned through user experience techniques like progressive disclosure and trauma-informed design can help the user maintain focus, and promote calm while guiding them step-by-step through a form, increasing the likelihood of successful form submission.
 
-## When to use this pattern 
+### When to use this pattern 
 Use this pattern when you are asking users to provide more than basic contact information, especially if you are collecting information that may require disclosing sensitive personal, financial, health, or safety details in a digital form.
 
-## What’s the solution
+### What’s the solution
 Provide the user with the most straightforward path through successful form completion by simplifying the user interface, progressively disclosing form questions and content, and employing trauma-informed research and design practices. 
 
 Respectful, inclusive voice and tone throughout the form – the questions, field labels, hint text, and form messaging – will be critical success factors, as well as delivering questions that progress from simple to more difficult to answer. Help users avoid making mistakes with clear hint text, and empower them to recover from mistakes easily by providing actionable validation messaging. Any system or validation messaging should be free of blame and avoid alarming users. 
 
+{:.site-component-section-title}
 ## Guidance
 
 <div class="grid-row grid-gap-3">

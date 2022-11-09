@@ -3381,7 +3381,8 @@ $do-dont-top-bar-width: 1;
 
 .do-dont {
   display: flex;
-  margin-top: units(2);
+  height: 100%;
+  padding-top: units(2);
 }
 
 .do-dont__do,

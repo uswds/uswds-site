@@ -8,12 +8,13 @@ sub-category: Create a user profile
 lead: The Social Security Number pattern allows users to easily enter their Social Security Number and ensures the Social Security Number is properly formatted.
 ---
 
-{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
+{:.site-component-section-title}
+## About this pattern
 
-## What problem does this solve?
+### What problem does this solve?
 A Social Security Number is often a critical piece for validating identity when applying for government services or benefits, but can be confusing for users to enter correctly.
 
-## When to use this pattern 
+### When to use this pattern 
 Only use this pattern when you need to confirm a user's identity by asking for their Social Security Number. This information may be important when determining eligibility for many federal programs, such as federal student loans, public assistance, and Medicare.
 
 ## When to consider something else
@@ -21,9 +22,10 @@ If you do not specifically need a person’s Social Security Number, do not ask 
 
 While most U.S. citizens and eligible U.S. residents have a Social Security Number, some people may not know their Social Security Number, or may lack the necessary documentation to obtain one easily. 
 
-## What's the solution
+### What's the solution
 Provide a single text field to enter the Social Security Number. 
 
+{:.site-component-section-title}
 ## Guidance
 
 <div class="grid-row grid-gap-3">

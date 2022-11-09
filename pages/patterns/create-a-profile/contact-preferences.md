@@ -8,20 +8,22 @@ sub-category: Create a user profile
 lead: The contact preferences design pattern allows users to easily indicate how they would like to be contacted in the future. 
 ---
 
-{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
+{:.site-component-section-title}
+## About this pattern
 
-## What problem does this solve?
+### What problem does this solve?
 Effectively reaching the user is critical to good communication and building trust. Users have different preferred methods of communication, which become especially important during times of stress, disaster, or emergency response.
 
-## When to use this pattern 
+### When to use this pattern 
 Use this pattern when collecting contact preference information from the user. Contact preferences options should only be offered if you can support the listed contact methods.
 
 ## When to consider something else
 If you do not have the current capability of contacting the user via multiple channels of communication, do not ask the user for their communication preferences. Allowing a user to select a preferred communication option that is not operational risks communication gaps and can destroy a user's trust in a program or service.
 
-## What's the solution
+### What's the solution
 Allow the user to select from available options, and to include a brief message in a text input or textarea field if explanation is required. Use hint text to better explain the field's purpose, for example, if the preferred contact method is dependent on time or date, or if there’s another factor that needs to be considered when communicating with the user.
 
+{:.site-component-section-title}
 ## Guidance
 
 <div class="grid-row grid-gap-3">

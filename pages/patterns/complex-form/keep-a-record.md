@@ -8,19 +8,21 @@ sub-category: Complete a complex form
 lead: Help users feel confident in their form submission by providing a record to download or print. A printed or downloaded record of their answers provides a reference for future use, and helps users confirm their successful form submission.
 ---
 
-{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
+{:.site-component-section-title}
+## About this pattern
 
-## What problem does this solve?
+### What problem does this solve?
 Hitting the “Submit” button on a form can be terrifying, especially if the form is complex or contains deeply personal information. Providing the user with a record of the answers provided, questions skipped, and the URL and date stamp of form submission can reduce fear, increase confidence, and improve the user’s trust in your program. 
 
 This record also provides a quick reference to submitted answers that might influence eligibility, helping program support personnel work with users to identify potential misunderstandings or mistakes for easier resolution and improved service.
 
-## When to use this pattern 
+### When to use this pattern 
 Use this pattern when you are collecting information from users that extends beyond basic contact information, especially if you are collecting information in a long, complex form.
 
-## What’s the solution
+### What’s the solution
 Provide the user with a printable record of their answers using a print style sheet designed to provide a streamlined record of the user’s submission, while conserving paper and ink.
 
+{:.site-component-section-title}
 ## Guidance
 
 <div class="grid-row grid-gap-3">

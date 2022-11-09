@@ -11,12 +11,12 @@ lead: This pattern helps users, especially those with limited English proficienc
 {:.site-component-section-title}
 ## About this pattern
 
-### What problem does this solve?
+#### What problem does this solve?
 
 {:.usa-content-list}
 Inconsistent placement and language selection interface components can be a barrier to users with limited English-language skills, preventing them from easily finding and accessing content in another language.
 
-### When to use this pattern 
+#### When to use this pattern 
 
 {:.usa-content-list}
 Use this pattern when the content is available in two languages. 
@@ -27,7 +27,7 @@ Use this pattern when the content is available in two languages.
 When content is available in three or more languages, see the <a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages/">Select from three or more languages</a> pattern. When only selected multilingual content is available in some languages, see the 
  <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Selected content available</a> pattern.
 
-### What's the solution
+#### What's the solution
 
 {:.usa-content-list}
 Place the language selector button at the top of the screen above site navigation to allow the user to toggle between two languages. Place the toggle on the top right of the page for left-to-right-languages and on the top left of the page for right-to-left languages, if possible.

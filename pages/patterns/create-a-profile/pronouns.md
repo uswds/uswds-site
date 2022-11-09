@@ -8,17 +8,19 @@ sub-category: Create a user profile
 lead: The pronouns pattern helps users to provide information that will allow them to feel confident they will be addressed with the pronouns they use.
 ---
 
-{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
+{:.site-component-section-title}
+## About this pattern
 
-## What problem does this solve?
+### What problem does this solve?
 A name or biological sex are not indicative of the pronouns a person uses. Allowing users to specify their pronouns creates a more comfortable environment by removing the potential for frustration and alienation.
  
-## When to use this pattern 
+### When to use this pattern 
 Follow this pattern when you are planning on referring to the person using pronouns instead of their name.
 
-## What's the solution
+### What's the solution
 Provide a text entry field that supports a rich array of special characters and accents that allows the user to inform you of their pronouns. This pattern best supports verbal communication. This pattern is not appropriate for automated communication.
 
+{:.site-component-section-title}
 ## Guidance
 
 <div class="grid-row grid-gap-3">

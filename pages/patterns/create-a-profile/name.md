@@ -8,18 +8,19 @@ sub-category: Create a user profile
 lead: The name pattern makes it as easy as possible for users to enter their name in the format required. This pattern is often used to validate identity and helps collect name elements in the most effective and least intrusive manner possible.
 ---
 
-{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
+{:.site-component-section-title}
+## About this pattern
 
-## What problem does this solve?
+### What problem does this solve?
 People have a wide variety of names in various formats. It can be confusing and alienating for them to enter their name if it doesn’t conform to the form fields provided, or if the form fields don’t support the characters, length, or language they require. At the same time, the name fields are often used as a primary form of identity validation, so the agency &#8212; and privacy issues &#8212; require the information be entered in a specific and consistent way. 
 
-## When to use this pattern 
+### When to use this pattern 
 Follow this pattern when you need to ask for a user’s name as part of your service. Only ask for a name if you need it. 
 
-## What's the solution
+### What's the solution
 Provide multiple text entry fields that support a rich array of special characters and accents. Provide direction on how to complete the form and what to do if the name doesn’t fit into the provided format.
 
-
+{:.site-component-section-title}
 ## Guidance
 
 <div class="grid-row grid-gap-3">

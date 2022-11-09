@@ -8,9 +8,10 @@ sub-category: Create a user profile
 lead: This pattern helps users to provide gender identity or biological sex information in an accurate and respectful manner. Sex and gender identity are often integral to an individual’s sense of self, and several federal agencies and working groups are striving to define a meaningful, inclusive way to collect biological sex and gender information when it is needed.
 ---
 
-{:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
+{:.site-component-section-title}
+## About this pattern
 
-## Background
+### Background
 
 Sex assigned at birth is a biological attribute. In the digital space, male and female are often the only provided options, but there are instances where an individual’s biological sex is not unambiguously male or female.
 
@@ -22,16 +23,16 @@ In April 2022, the U.S. Department of State began allowing people to specify “
 
 The White House's [Office of Management and Budget](https://www.whitehouse.gov/omb/), [Federal Committee on Statistical Methodology](https://www.fcsm.gov/) interagency committee, and the [Centers for Disease Control and Prevention](https://www.cdc.gov/) are just some of the federal agencies and programs working to define a meaningful, inclusive way to collect biological sex and gender information when it is needed. This is a quickly evolving space, and recommendations will also evolve.
 
-## What problem does this solve?
+### What problem does this solve?
 Gender and biological sex are often used synonymously. Many users  struggle to provide gender information that best represents them. An overwhelming number of choices for gender identification can be as alienating as too limited a set of provided options.
 
 {:.site-component-section-title}
 ## Biological sex
  
-## When to use this pattern 
+### When to use this pattern 
 Follow this pattern when you are collecting biological sex as part of your service. Only ask for biological sex if you need it. Sometimes it’s more prudent to skip collecting this information altogether. 
 
-## What's the solution
+### What's the solution
 Present the user with a controlled vocabulary to accurately depict their biological sex. 
 
 ## Guidance
@@ -132,10 +133,10 @@ Present the user with a controlled vocabulary to accurately depict their biologi
 {:.site-component-section-title}
 ## Gender 
  
-## When to use this pattern 
+### When to use this pattern 
 Follow this pattern when you are collecting gender identity for your service or program. Only ask for gender if you need it, such as in a health care environment. Sometimes it’s more prudent to skip collecting this information altogether.
 
-## What's the solution
+### What's the solution
 Present the user with the tools to accurately depict their gender identity. 
 
 ## Guidance

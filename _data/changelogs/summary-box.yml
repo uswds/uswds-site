@@ -1,4 +1,3 @@
-# Add page title. eg: Accessibility, Banner
 title: Summary box
 type: component
 # Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
@@ -22,7 +21,7 @@ items:
     versionUswds: 3.0.0
   # 2.11.2 release
   - date: 2021-04-28
-    summary: Added missing Summary box SASS package.
+    summary: Added missing Summary box Sass package.
     summaryAdditional:
     isBreaking: false
     affectsAccessibility: false

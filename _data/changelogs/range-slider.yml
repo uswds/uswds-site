@@ -1,25 +1,6 @@
-# Add page title. eg: Accessibility, Banner
 title: Range slider
 type: component
-# Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
-# Add a list of changelog items with newest items first. Uncomment the 'items' data field when adding the first item.
-# Start changelog item. Copy this section to create a new changelog item.
-# items:
-  # - date:
-  #   summary:
-  #   summaryAdditional:
-  #   isBreaking:
-  #   affectsAccessibility:
-  #   affectsAssets:
-  #   affectsGuidance:
-  #   affectsJavascript:
-  #   affectsMarkup:
-  #   affectsStyles:
-  #   githubPr:
-  #   githubRepo:
-  #   versionUswds:
-
 items:
 - date: 2022-04-28
   summary: Released USWDS 3.0.
@@ -48,15 +29,14 @@ items:
   githubRepo: uswds
   versionUswds: 2.13.3
 - date: 2021-08-18
-  summary: Added appropriate ARIA label to Range input.
+  summary: Added appropriate ARIA attributes to Range input.
   isBreaking: false
   affectsAccessibility: true
   affectsAssets: false
   affectsGuidance: false
-  affectsJavascript: false 
-  affectsMarkup: true 
+  affectsJavascript: false
+  affectsMarkup: true
   affectsStyles: false
   githubPr: 4270
   githubRepo: uswds
   versionUswds: 2.12.1
-# end changelog item

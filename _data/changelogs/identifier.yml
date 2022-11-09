@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: 2022-10-19
-    summary: Use valid element for identity's aria label.
+    summary: Added valid element for identity's aria label.
     summaryAdditional: We updated the identity section of the Identifier to use a <code>section</code> instead of a <code>div</code> so its <code>aria-label</code> will apply to a valid element.
     isBreaking: true
     affectsAccessibility: true

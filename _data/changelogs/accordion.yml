@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
   - date: 2022-08-05
-    summary: Added <code>type="button"</code> to all non-form buttons to prevent default submit behaviors.
-    summaryAdditional: This allowed us to remove <code>preventDefault()</code> from the relevant component JavaScript.
+    summary: Added `type="button"` to all non-form buttons to prevent default submit behaviors.
+    summaryAdditional: This allowed us to remove `preventDefault()` from the relevant component JavaScript.
     isBreaking: true
     affectsJavascript: true
     affectsMarkup: true

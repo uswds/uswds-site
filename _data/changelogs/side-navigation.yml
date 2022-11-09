@@ -1,32 +1,11 @@
-# Add page title. eg: Accessibility, Banner
 title: Side navigation
 type: component
-# Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
-# Add a list of changelog items with newest items first. Uncomment the 'items' data field when adding the first item.
-# Start changelog item. Copy this section to create a new changelog item.
-# items:
-  # - date:
-  #   summary:
-  #   summaryAdditional:
-  #   isBreaking:
-  #   affectsAccessibility:
-  #   affectsAssets:
-  #   affectsGuidance:
-  #   affectsJavascript:
-  #   affectsMarkup:
-  #   affectsStyles:
-  #   githubPr:
-  #   githubRepo:
-  #   versionUswds:
-
 items:
   # 3.1.0 release
 - date: 2022-08-05
-  summary: |-
-    Non-form buttons inside of usa-sidenav require `type="button"` to prevent default `submit` behaviors.
-  summaryAdditional: |-
-    This allowed us to remove `preventDefault()` to relevant components.
+  summary: Added `type="button"` to all non-form buttons to prevent default submit behaviors.
+  summaryAdditional: This allowed us to remove `preventDefault()` from the relevant component JavaScript.
   isBreaking: true
   affectsAccessibility: true
   affectsAssets: false
@@ -54,7 +33,7 @@ items:
   # 2.11.2 release
 - date: 2021-04-28
   summary: Fixed color of active parents in side navigation.
-  summaryAdditional: Fixed a regression where parent items in usa-sidenav no longer receive `primary` color.
+  summaryAdditional: Fixed a regression where parent items in `usa-sidenav` no longer receive `primary` color.
   isBreaking: false
   affectsAccessibility: false
   affectsAssets: false

@@ -16,7 +16,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2021-08-18
-    summary: Allow Breadcrumb to work with a broader range of focus widths.
+    summary: Updated Breadcrumb to work with a broader range of focus widths.
     summaryAdditional: Now the Breadcumb component isn't affected by custom focus widths.
     affectsAccessibility: true
     affectsStyles: true

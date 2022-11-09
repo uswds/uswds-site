@@ -1,25 +1,6 @@
 title: Link
-# Add page title. eg: Accessibility, Banner
 type: component
-# Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
-# Add a list of changelog items with newest items first. Uncomment the 'items' data field when adding the first item.
-# Start changelog item. Copy this section to create a new changelog item.
-# items:
-  # - date:
-  #   summary:
-  #   summaryAdditional:
-  #   isBreaking:
-  #   affectsAccessibility:
-  #   affectsAssets:
-  #   affectsGuidance:
-  #   affectsJavascript:
-  #   affectsMarkup:
-  #   affectsStyles:
-  #   githubPr:
-  #   githubRepo:
-  #   versionUswds:
-
 items:
 - date: 2022-04-28
   summary: Released USWDS 3.0.
@@ -78,7 +59,7 @@ items:
   summaryAdditional: Removed suggestion to use external link icon as it is often interpreted as share or open in a new tab.
   isBreaking: false
   affectsAccessibility: false
-  affectsAssets: false 
+  affectsAssets: false
   affectsGuidance: true
   affectsJavascript: false
   affectsMarkup: false
@@ -86,6 +67,3 @@ items:
   githubPr: 1249
   githubRepo: uswds-site
   versionUswds: 2.11.0
-
-
-# end changelog item

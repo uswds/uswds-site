@@ -20,15 +20,15 @@ items:
     versionUswds: 3.2.0
   - date: 2022-10-09
     summary: Simplified ARIA label in the lock SVG.
-    summaryAdditional: We simplified the way we're using <code>aria-labelledby</code> in the lock SVG to streamline screenreader vocalization.
+    summaryAdditional: We simplified the way we're using <code>aria-labelledby</code> in the lock SVG to streamline screen reader vocalization.
     affectsAccessibility: true
     affectsMarkup: true
     githubPr: 4925
     githubRepo: uswds
     versionUswds: 3.2.0
   - date: 2022-08-05
-    summary: Added <code>type="button"</code> to all non-form buttons to prevent default submit behaviors.
-    summaryAdditional: This allowed us to remove <code>preventDefault()</code> from the relevant component JavaScript.
+    summary: Added `type="button"` to all non-form buttons to prevent default submit behaviors.
+    summaryAdditional: This allowed us to remove `preventDefault()` from the relevant component JavaScript.
     isBreaking: true
     affectsJavascript: true
     affectsMarkup: true
@@ -63,7 +63,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-04-11
-    summary: Support High Contrast Mode and forced colors.
+    summary: Added support for High Contrast Mode and forced colors.
     summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     affectsAccessibility: true
     affectsStyles: true
@@ -93,21 +93,21 @@ items:
     versionUswds: 2.10.0
   - date: 2020-07-09
     summary: Updated banner copy.
-    summaryAdditional: Updates the expanded text in the banner to emphasize that trustworthiness is a combination of an official TLD and a secure HTTPS connection.
+    summaryAdditional: Updated the expanded text in the banner to emphasize that trustworthiness is a combination of an official TLD and a secure HTTPS connection.
     affectsContent: true
     githubPr: 3524
     githubRepo: uswds
     versionUswds: 2.8.0
   - date: 2020-07-09
     summary: Added spanish versions.
-    summaryAdditional: Include approved Spanish versions of the banner text.
+    summaryAdditional: Included approved Spanish versions of the banner text.
     affectsContent: true
     githubPr: 3524
     githubRepo: uswds
     versionUswds: 2.8.0
   - date: 2020-07-09
-    summary: Update banner settings.
-    summaryAdditional: Allow users to change background color, link color, and link reverse colors. This update requires the use of Autoprefixer.
+    summary: Updated banner settings.
+    summaryAdditional: Allowed users to change background color, link color, and link reverse colors. This update requires the use of Autoprefixer.
     isBreaking: true
     affectsStyles: true
     githubPr: 3531

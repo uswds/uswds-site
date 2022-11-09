@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
   - date: 2022-08-05
-    summary: Added <code>type="button"</code> to all non-form buttons to prevent default submit behaviors.
-    summaryAdditional: This allowed us to remove <code>preventDefault()</code> from the relevant component JavaScript.
+    summary: Added `type="button"` to all non-form buttons to prevent default submit behaviors.
+    summaryAdditional: This allowed us to remove `preventDefault()` from the relevant component JavaScript.
     affectsJavascript: true
     affectsMarkup: true
     githubPr: 4695
@@ -24,8 +24,8 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2021-06-16
-    summary: Card's body exdent modifier now works as documented.
-    summaryAdditional: Now adding the <code>.usa-card__body--exdent</code> modifier will work as expected.
+    summary: Updated the exdent modifier to work as documented.
+    summaryAdditional: Now adding the `.usa-card__body--exdent` modifier will work as expected.
     affectsStyles: true
     githubPr: 4165
     githubRepo: uswds

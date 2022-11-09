@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
   - date: 2022-08-05
-    summary: Style aria-disabled to match disabled.
-    summaryAdditional: Now disabled styling is applied whether you use disabled (disabled and hidden from screen readers) or aria-disabled (disabled and visible to screen readers).
+    summary: Styled `aria-disabled` to match `disabled`.
+    summaryAdditional: Now disabled styling is applied whether you use `disabled` (disabled and hidden from screen readers) or `aria-disabled` (disabled and visible to screen readers).
     affectsAccessibility: true
     affectsStyles: true
     githubPr: 4783
@@ -32,7 +32,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-04-11
-    summary: Support High Contrast Mode and forced colors.
+    summary: Added support for High Contrast Mode and forced colors.
     summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     affectsAccessibility: true
     affectsStyles: true
@@ -48,7 +48,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.1
   - date: 2021-12-14
-    summary:  Improve screenreader experience.
+    summary:  Improved screen reader experience.
     summaryAdditional: Now screen readers can better describe the label and description of a date picker <code>input</code>.
     affectsAccessibility: true
     affectsMarkup: true

@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: 2022-08-05
-    summary: Use unmodified social media icons.
+    summary: Added unmodified social media icons.
     summaryAdditional: We now provide simpler social media icons, and removed any decoration not in the original icon. This means that the new icons are not in an enclosing circle unless the original icon is enclosed in a circle.
     isBreaking: true
     affectsAssets: true
@@ -11,8 +11,8 @@ items:
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-04-11
-    summary: Big Footer includes more accessible disclosure buttons.
-    summaryAdditional: Now the Big Footer variant uses more accessible disclosure buttons for showing and hiding submenus at mobile widths.
+    summary: Added more accessible disclosure buttons.
+    summaryAdditional: Now the big Footer variant uses more accessible disclosure buttons for showing and hiding submenus at mobile widths.
     affectsAccessibility: true
     affectsJavascript: true
     affectsStyles: true
@@ -20,7 +20,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.3
   - date: 2022-04-11
-    summary: Support High Contrast Mode and forced colors.
+    summary: Added support for High Contrast Mode and forced colors.
     summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     affectsAccessibility: true
     affectsStyles: true

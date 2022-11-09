@@ -1,29 +1,10 @@
-# Add page title. eg: Accessibility, Banner
 title: Modal
 type: component
-# Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
-# Add a list of changelog items with newest items first. Uncomment the 'items' data field when adding the first item.
-# Start changelog item. Copy this section to create a new changelog item.
-# items:
-  # - date:
-  #   summary:
-  #   summaryAdditional:
-  #   isBreaking:
-  #   affectsAccessibility:
-  #   affectsAssets:
-  #   affectsGuidance:
-  #   affectsJavascript:
-  #   affectsMarkup:
-  #   affectsStyles:
-  #   githubPr:
-  #   githubRepo:
-  #   versionUswds:
-
 items:
 - date: 2022-08-05
-  summary: Button - Style aria-disabled to match disabled
-  summaryAdditional: Now disabled styling is applied whether you use disabled (disabled and hidden from screen readers) or aria-disabled (disabled and visible to screen readers). 
+  summary: Styled `aria-disabled` to match `disabled`.
+  summaryAdditional: Now disabled styling is applied whether you use `disabled` (disabled and hidden from screen readers) or `aria-disabled` (disabled and visible to screen readers).
   isBreaking: false
   affectsAccessibility: true
   affectsAssets: false
@@ -35,8 +16,8 @@ items:
   githubRepo: uswds
   versionUswds: 3.1.0
 - date: 2022-08-05
-  summary: Added <code>type="button"</code> to all non-form buttons to prevent default submit behaviors.
-  summaryAdditional: This allowed us to remove <code>preventDefault()</code> from the relevant component JavaScript.
+  summary: Added `type="button"` to all non-form buttons to prevent default submit behaviors.
+  summaryAdditional: This allowed us to remove `preventDefault()` from the relevant component JavaScript.
   affectsJavascript: true
   affectsMarkup: true
   githubPr: 4695
@@ -68,4 +49,3 @@ items:
   githubPr: 3981
   githubRepo: uswds
   versionUswds: 2.11.0
-# end changelog item

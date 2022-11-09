@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
   - date: 2022-08-05
-    summary: Added <code>type="button"</code> to all non-form buttons to prevent default submit behaviors.
-    summaryAdditional: This allowed us to remove <code>preventDefault()</code> from the relevant component JavaScript.
+    summary: Added `type="button"` to all non-form buttons to prevent default submit behaviors.
+    summaryAdditional: This allowed us to remove `preventDefault()` from the relevant component JavaScript.
     isBreaking: true
     affectsJavascript: true
     affectsMarkup: true
@@ -26,7 +26,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.2
   - date: 2022-06-17
-    summary: Megamenu always stays within the viewport.
+    summary: Updated megamenu to always stay within the viewport.
     summaryAdditional: We improved the styling of the header megamenu so it resizes properly when trying to capture screenshots.
     affectsStyles: true
     githubPr: 4757
@@ -46,7 +46,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-04-11
-    summary: Support High Contrast Mode and forced colors.
+    summary: Added support for High Contrast Mode and forced colors.
     summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     affectsAccessibility: true
     affectsStyles: true
@@ -54,7 +54,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.3
   - date: 2021-12-14
-    summary: Mobile navigation now makes background content inert.
+    summary: Updated mobile navigation to make background content inert.
     summaryAdditional: When the mobile navigation is active, all other non-nav content is hidden. This prevents accidentally leaving the focus of the active mobile menu.
     affectsAccessibility: true
     affectsJavascript: true
@@ -62,7 +62,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.0
   - date: 2021-08-18
-    summary: Header dropdown menus close with escape or focus out.
+    summary: Updated header dropdown menus to close with `escape` or `focusout`.
     summaryAdditional: Now <code>esc</code> or focusing out will close dropdown menus in the header.
     affectsAccessibility: true
     affectsJavascript: true

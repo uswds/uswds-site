@@ -1,29 +1,10 @@
-# Add page title. eg: Accessibility, Banner
 title: Radio buttons
 type: component
-# Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
-# Add a list of changelog items with newest items first. Uncomment the 'items' data field when adding the first item.
-# Start changelog item. Copy this section to create a new changelog item.
-# items:
-  # - date:
-  #   summary:
-  #   summaryAdditional:
-  #   isBreaking:
-  #   affectsAccessibility:
-  #   affectsAssets:
-  #   affectsGuidance:
-  #   affectsJavascript:
-  #   affectsMarkup:
-  #   affectsStyles:
-  #   githubPr:
-  #   githubRepo:
-  #   versionUswds:
-
 items:
 - date: 2022-08-05
-  summary: Updated aria-disabled styles to match disabled
-  summaryAdditional: Now disabled styling is applied whether you use disabled (disabled and hidden from screen readers) or aria-disabled (disabled and visible to screen readers).
+  summary: Styled `aria-disabled` to match `disabled`.
+  summaryAdditional: Now disabled styling is applied whether you use `disabled` (disabled and hidden from screen readers) or `aria-disabled` (disabled and visible to screen readers).
   isBreaking:
   affectsAccessibility:
   affectsAssets:
@@ -48,7 +29,7 @@ items:
   githubRepo: uswds
   versionUswds: 3.0.0
 - date: 2022-04-11
-  summary: Added support for High Contrast Mode and forced colors
+  summary: Added support for High Contrast Mode and forced colors.
   summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
   isBreaking: false
   affectsAccessibility: true
@@ -87,8 +68,8 @@ items:
   githubRepo: uswds
   versionUswds: 2.12.1
 - date: 2021-06-16
-  summary: Improved checkbox and radio buttons to include automatic accessible color
-  summaryAdditional:  Now checkbox and radio buttons will display in the proper accessible color, and adapt to the text, link, and background colors you set in your projects's settings.
+  summary: Updated checkbox and radio buttons to include automatic accessible color.
+  summaryAdditional: Now checkbox and radio buttons will display in the proper accessible color, and adapt to the text, link, and background colors you set in your projects's settings.
   isBreaking: false
   affectsAccessibility: true
   affectsAssets: false
@@ -100,15 +81,15 @@ items:
   githubRepo: uswds
   versionUswds: 2.12.0
 - date: 2021-06-16
-  summary:  Updated margins in radio tiles. 
-  summaryAdditional: Now radio tiles have cleaner, more reliable styling for their margin. 
+  summary:  Updated margins in radio tiles.
+  summaryAdditional: Now radio tiles have cleaner, more reliable styling for their margin.
   affectsStyles: true
   githubPr: 4181
   githubRepo: uswds
   versionUswds: 2.12.0
 - date: 2021-04-28
   summary: Updated checked radio buttons to remain checked in disabled state.
-  summaryAdditional: Now the visual checked state of a checked checkbox does not change if that element is later disabled
+  summaryAdditional: Now the visual checked state of a checked checkbox does not change if that element is later disabled.
   isBreaking: false
   affectsAccessibility: false
   affectsAssets: false
@@ -121,7 +102,7 @@ items:
   versionUswds: 2.11.2
 - date: 2021-03-17
   summary: Fixed character display in checkboxes and radio buttons.
-  summaryAdditional: Allows checkboxes and radio buttons to display properly regardless of character encoding.
+  summaryAdditional: Allowed checkboxes and radio buttons to display properly regardless of character encoding.
   isBreaking: false
   affectsAccessibility: false
   affectsAssets: false
@@ -132,4 +113,3 @@ items:
   githubPr: 4080
   githubRepo: uswds
   versionUswds: 2.11.0
-# end changelog item

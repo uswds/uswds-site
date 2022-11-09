@@ -17,7 +17,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-08-05
-    summary: Use unmodified social media icons.
+    summary: Added unmodified social media icons.
     summaryAdditional: We now provide simpler social media icons, and removed any decoration not in the original icon. This means that the new icons are not in an enclosing circle unless the original icon is enclosed in a circle.
     isBreaking: true
     affectsAssets: true
@@ -112,7 +112,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.11.1
   - date: 2021-03-17
-    summary: Provide better support for color icons that adapt to theme settings.
+    summary: Provided better support for color icons that adapt to theme settings.
     summaryAdditional: Now the color of the alert icon will update automatically to adapt to the alert background, or to the color of the alert text.
     affectsAssets: true
     affectsStyles: true

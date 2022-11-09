@@ -16,15 +16,15 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2021-12-14
-    summary: File upload confirms files to screenreaders.
-    summaryAdditional: Now File Input will tell screenreaders the total number of files and the names of files added to the component.
+    summary: Updated file upload to confirm files to screen readers.
+    summaryAdditional: Now file input will tell screen readers the total number of files and the names of files added to the component.
     affectsAccessibility: true
     affectsJavascript: true
     githubPr: 4415
     githubRepo: uswds
     versionUswds: 2.13.0
   - date: 2021-11-01
-    summary: Fixed a duplicate-file bug in File Input.
+    summary: Fixed a duplicate file bug in File Input.
     summaryAdditional: If a file with the same name was uploaded in two separate file input fields, the preview spinner would spin indefinitely. We now assign each upload an individual ID, and the image preview loads properly.
     affectsJavascript: true
     githubPr: 4313

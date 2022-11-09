@@ -16,7 +16,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.0.0
   - date: 2022-04-11
-    summary: Support High Contrast Mode and forced colors.
+    summary: Added support for High Contrast Mode and forced colors.
     summaryAdditional: All our components now support proper display when users have a forced colors mode set in their operating system.
     affectsAccessibility: true
     affectsStyles: true
@@ -24,8 +24,8 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.3
   - date: 2022-03-07
-    summary: Add proper aria-controls to Combo Box.
-    summaryAdditional: Now the Combo Box input gets the expected <code>aria-controls</code> property when it's initialized.
+    summary: Added proper `aria-controls` to Combo Box.
+    summaryAdditional: Now the Combo Box input gets the expected `aria-controls` property when it's initialized.
     affectsAccessibility: true
     affectsJavascript: true
     githubPr: 4483

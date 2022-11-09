@@ -18,6 +18,8 @@ subnav:
   href: '#memorable-date-guidance'
 - text: Package
   href: '#memorable-date-package'
+- text: Latest updates
+  href: '#memorable-date-changelog'
 tags:
   - form
   - forms

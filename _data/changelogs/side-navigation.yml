@@ -19,4 +19,49 @@ changelogURL:
   #   githubPr:
   #   githubRepo:
   #   versionUswds:
-# end changelog item
+
+items:
+  # 3.1.0 release
+- date: 2022-08-05
+  summary: |-
+    Non-form buttons inside of usa-sidenav require `type="button"` to prevent default `submit` behaviors.
+  summaryAdditional: |-
+    This allowed us to remove `preventDefault()` to relevant components.
+  isBreaking: true
+  affectsAccessibility: true
+  affectsAssets: false
+  affectsGuidance: true
+  affectsJavascript: true
+  affectsMarkup: true
+  affectsStyles: false
+  githubPr: 4695
+  githubRepo: uswds
+  versionUswds: 3.1.0
+  # 3.0 release
+- date: 2022-04-28
+  summary: Released USWDS 3.0.
+  summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+  isBreaking: true
+  affectsAccessibility: true
+  affectsAssets: true
+  affectsGuidance: true
+  affectsJavascript: true
+  affectsMarkup: true
+  affectsStyles: true
+  githubPr: 4656
+  githubRepo: uswds
+  versionUswds: 3.0.0
+  # 2.11.2 release
+- date: 2021-04-28
+  summary: Fixed color of active parents in side navigation.
+  summaryAdditional: Fixed a regression where parent items in usa-sidenav no longer receive `primary` color.
+  isBreaking: false
+  affectsAccessibility: false
+  affectsAssets: false
+  affectsGuidance: false
+  affectsJavascript: false
+  affectsMarkup: false
+  affectsStyles: true
+  githubPr: 4163
+  githubRepo: uswds
+  versionUswds: 2.11.2

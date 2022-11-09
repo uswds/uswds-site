@@ -17,6 +17,8 @@ subnav:
   href: '#process-list-guidance'
 - text: Package
   href: '#process-list-package'
+- text: Latest updates
+  href: '#process-list-changelog'
 tags:
   - steps
   - step by step

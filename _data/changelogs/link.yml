@@ -1,5 +1,5 @@
-# Add page title. eg: Accessibility, Banner
 title: Link
+# Add page title. eg: Accessibility, Banner
 type: component
 # Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
@@ -19,4 +19,73 @@ changelogURL:
   #   githubPr:
   #   githubRepo:
   #   versionUswds:
+
+items:
+- date: 2022-04-28
+  summary: Released USWDS 3.0.
+  summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.
+  isBreaking: true
+  affectsAccessibility: true
+  affectsAssets: true
+  affectsGuidance: true
+  affectsJavascript: true
+  affectsMarkup: true
+  affectsStyles: true
+  githubPr: 4656
+  githubRepo: uswds
+  versionUswds: 3.0.0
+- date: 2022-01-20
+  summary: Fixed external link icon display bug in Safari.
+  summaryAdditional: Fixed a bug that resulted in colored bars on the top and bottom of external link icons in Safari.
+  isBreaking: false
+  affectsAccessibility: false
+  affectsAssets: false
+  affectsGuidance: false
+  affectsJavascript: false
+  affectsMarkup: false
+  affectsStyles: true
+  githubPr: 4439
+  githubRepo: uswds
+  versionUswds: 2.13.1
+- date: 2021-11-01
+  summary: Fixed external link icon color.
+  summaryAdditional: Resolved an issue with visited links where the icon color may not match the color of the link.
+  isBreaking: false
+  affectsAccessibility: false
+  affectsAssets: true
+  affectsGuidance: false
+  affectsJavascript: false
+  affectsMarkup: false
+  affectsStyles: true
+  githubPr: 4297
+  githubRepo: uswds
+  versionUswds: 2.12.2
+- date: 2021-08-18
+  summary: Improved external link icon display.
+  summaryAdditional: Made external link icon bigger and better aligned with the link text.
+  isBreaking: false
+  affectsAccessibility: false
+  affectsAssets: false
+  affectsGuidance: false
+  affectsJavascript: false
+  affectsMarkup: false
+  affectsStyles: true
+  githubPr: 4277
+  githubRepo: uswds
+  versionUswds: 2.12.1
+- date: 2021-03-17
+  summary: Updated and improved our guidance around links.
+  summaryAdditional: Removed suggestion to use external link icon as it is often interpreted as share or open in a new tab.
+  isBreaking: false
+  affectsAccessibility: false
+  affectsAssets: false 
+  affectsGuidance: true
+  affectsJavascript: false
+  affectsMarkup: false
+  affectsStyles: true
+  githubPr: 1249
+  githubRepo: uswds-site
+  versionUswds: 2.11.0
+
+
 # end changelog item

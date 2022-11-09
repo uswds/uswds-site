@@ -16,6 +16,8 @@ subnav:
   href: '#modal-guidance'
 - text: Package
   href: '#modal-package'
+- text: Latest updates
+  href: '#modal-changelog'
 title: Modal
 variants:
   - variant: "`.usa-modal--lg`"

@@ -1,9 +1,7 @@
-# Add page title. eg: Accessibility, Banner
-title: Summary box
+title: Typography
 type: component
 # Provide url for the package CHANGELOG.md. Note: Not all pages will have a related CHANGELOG.md file.
 changelogURL:
-# Add a list of changelog items with newest items first. Uncomment the 'items' data field when adding the first item.
 
 items:
   # 3.0 release
@@ -20,17 +18,3 @@ items:
     githubPr: 4656
     githubRepo: uswds
     versionUswds: 3.0.0
-  # 2.11.2 release
-  - date: 2021-04-28
-    summary: Added missing Summary box SASS package.
-    summaryAdditional:
-    isBreaking: false
-    affectsAccessibility: false
-    affectsAssets: true
-    affectsGuidance: true
-    affectsJavascript: false
-    affectsMarkup: false
-    affectsStyles: false
-    githubPr: 4162
-    githubRepo: uswds
-    versionUswds: 2.11.2

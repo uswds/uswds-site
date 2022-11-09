@@ -3372,12 +3372,12 @@ p + .pagination-behaviors--examples {
 .do-dont {
   display: flex;
   &__do {
-    position: relative;
-    flex: 1 0 0;
-    padding: 0rem;
     background-color: #fff;
     border: 1px solid color("gray-cool-20");
+    flex: 1 0 0;
     height: 100%;
+    padding: 0rem;
+    position: relative;
   }
   &__dont {
     height: 100%; 
@@ -3387,7 +3387,7 @@ p + .pagination-behaviors--examples {
 .do-dont__do:before {
   content: "";
   position: absolute;
-  height: 0.4rem;
+  height: units(1);
   width: calc(100% + 2px);
   top: -1px;
   left: -1px;
@@ -3395,7 +3395,7 @@ p + .pagination-behaviors--examples {
 }
 
 .do-dont__do .do-dont__heading {
-  color: #2e8540;
+  color: color("green-cool-50v")
 }
 
 .do-dont__heading {
@@ -3479,4 +3479,14 @@ p + .pagination-behaviors--examples {
 // Memorable Date w/select 
 .usa-form-group--month {
   width: units(card-lg);
+}
+.usa-in-page-nav {
+  .usa-in-page-nav__heading {
+    @include typeset("lang", "2xs", 3);
+  }
+  .usa-in-page-nav__list {
+    .usa-in-page-nav__item {
+      @include typeset("lang", "2xs", 2);
+    }      
+  }
 }

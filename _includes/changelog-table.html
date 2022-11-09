@@ -1,3 +1,4 @@
+
 {% assign col1Title = 'Date' %}
 {% assign col1Classes = 'tablet:grid-col tablet:display-none desktop-lg:display-block' %}
 {% assign col2Title = 'USWDS version' %}
@@ -51,22 +52,22 @@
           <td data-title="{{ col3Title }}" class="{{ col3Classes }}">
             <ul class="add-list-reset">
               {% if item.affectsAccessibility %}
-              <li><span class="output-warning">Accessibility</span></li>
-              {% endif %}
-              {% if item.affectsMarkup %}
-              <li><span class="output-neutral">Markup</span></li>
-              {% endif %}
-              {% if item.affectsJavascript %}
-              <li><span class="output-neutral">JavaScript</span></li>
-              {% endif %}
-              {% if item.affectsStyles %}
-              <li><span class="output-neutral">Styles</span></li>
+                <li><span class="output-warning">Accessibility</span></li>
               {% endif %}
               {% if item.affectsAssets %}
-              <li><span class="output-neutral">Assets</span></li>
+                <li><span class="output-neutral">Assets</span></li>
               {% endif %}
               {% if item.affectsGuidance %}
-              <li><span class="output-neutral">Guidance</span></li>
+                <li><span class="output-neutral">Guidance</span></li>
+              {% endif %}
+              {% if item.affectsJavascript %}
+                <li><span class="output-neutral">JavaScript</span></li>
+              {% endif %}
+              {% if item.affectsMarkup %}
+                <li><span class="output-neutral">Markup</span></li>
+              {% endif %}
+              {% if item.affectsStyles %}
+                <li><span class="output-neutral">Styles</span></li>
               {% endif %}
             </ul>
           </td>

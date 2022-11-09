@@ -98,7 +98,7 @@ Provide the user with a printable record of their answers using a print style sh
 
   <li><strong>Tables require special care.</strong> While tables should not be used for layout, they are appropriate for tabular data and may be the clearest and most space-conscious way to display questions and answers in a printed summary. 
     <ul>
-      <li>Print table headers on every page. Avoid splitting tables across pages if possible by utilizing page-break-after or page-break-before CSS properties.
+      <li>Print table headers on every page. Avoid splitting tables across pages if possible by utilizing page-break-after or page-break-before CSS properties.</li>
       <li>Avoid splitting a table row onto more than one page.</li>
     </ul>
   </li>

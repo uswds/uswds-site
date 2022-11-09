@@ -12,7 +12,7 @@ lead: The race and ethnicity pattern allows users to provide race and ethnicity 
 
 ## Background
 
-While there isn’t a generally accepted definition for race, the Census Bureau describes the [race categories included in census questionnaires](https://www.census.gov/topics/population/race/about.html#:~:text=the%20spaces%20provided.-,what%20is%20race%3F,-The%20data%20on) as reflecting “a social definition ... not an attempt to define race biologically, anthropologically, or genetically.” 
+While there isn’t a generally accepted definition for race, the Census Bureau describes the [race categories included in census questionnaires](https://www.census.gov/topics/population/race/about.html) as reflecting “a social definition ... not an attempt to define race biologically, anthropologically, or genetically.” 
 
 The Office of Management and Budget (OMB) requires that five minimum categories of race and ethnicity are tracked when the data will be used for statistical, administrative, or compliance purposes: White, Black or African American, American Indian or Alaska Native, Asian, and Native Hawaiian or Other Pacific Islander.
 

@@ -97,8 +97,11 @@ Provide the user with a printable record of their answers using a print style sh
   <li><strong>Avoid widowed or orphaned content.</strong> Widows and orphans can be disorienting and sometimes alarming if a user doesn’t see a phrase in context. Avoid splitting headings onto more than one page, and keep lists on the same page as much as possible.</li>
 
   <li><strong>Tables require special care.</strong> While tables should not be used for layout, they are appropriate for tabular data and may be the clearest and most space-conscious way to display questions and answers in a printed summary. 
-  - Print table headers on every page. Avoid splitting tables across pages if possible by utilizing page-break-after or page-break-before CSS properties.
-  - Avoid splitting a table row onto more than one page.</li>
+    <ul>
+      <li>Print table headers on every page. Avoid splitting tables across pages if possible by utilizing page-break-after or page-break-before CSS properties.
+      <li>Avoid splitting a table row onto more than one page.</li>
+    </ul>
+  </li>
 </ul>
 
 ## Accessibility

@@ -3392,10 +3392,6 @@ $do-dont-top-bar-width: 1;
   padding: 0rem;
 }
 
-.do-dont__dont {
-  // TODO: Really?
-}
-
 .do-dont__do:before,
 .do-dont__dont:before {
   content: "";
@@ -3431,20 +3427,15 @@ $do-dont-top-bar-width: 1;
 
 .do-dont__do .do-dont__heading {
   color: color($do-dont-color-do);
-  &:before {
-    background-image: url(https://design.va.gov/assets/img/check-circle-green.svg);
-  }
 }
 
 .do-dont__dont .do-dont__heading {
   color: color($do-dont-color-dont);
-  &:before {
-    background-image: url(https://design.va.gov/assets/img/times-circle-red.svg);
-  }
 }
 
 .do-dont__content {
   padding: 0 units($do-dont-padding) units($do-dont-padding) 0;
+
   ul {
     overflow-wrap: anywhere;
   }
@@ -3473,7 +3464,7 @@ $do-dont-top-bar-width: 1;
   }
   .usa-in-page-nav__list {
     .usa-in-page-nav__item {
-      @include typeset("lang", "2xs", 2);
+      @include typeset("lang", "3xs", 2);
     }      
   }
 }

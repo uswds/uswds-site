@@ -3364,3 +3364,14 @@ p + .pagination-behaviors--examples {
     color: color("red-60v");
   }
 }
+
+.usa-in-page-nav {
+  .usa-in-page-nav__heading {
+    @include typeset("lang", "2xs", 3);
+  }
+  .usa-in-page-nav__list {
+    .usa-in-page-nav__item {
+      @include typeset("lang", "2xs", 2);
+    }      
+  }
+}

@@ -3380,3 +3380,21 @@ p + .pagination-behaviors--examples {
     color: color("red-60v");
   }
 }
+
+.site-changelog--show-tablet {
+  @include at-media-max("tablet") {
+    display: none;
+  }
+  @include at-media("widescreen") {
+    display: none;
+  }
+}
+
+.site-changelog--hide-tablet {
+  @include at-media("tablet") {
+    display: none;
+  }
+  @include at-media("widescreen") {
+    display: block;
+  }
+}

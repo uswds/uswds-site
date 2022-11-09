@@ -27,7 +27,7 @@ Place the language selector menu at the top of the screen above site navigation,
 ## Guidance
 
 <div class="grid-row grid-gap-3">
-  <div class="tablet:grid-col-5">
+  <div class="tablet:grid-col">
     <div class="do-dont">
       <div class="do-dont__do">
         <h3 class="do-dont__heading">
@@ -55,63 +55,35 @@ Place the language selector menu at the top of the screen above site navigation,
       </div>
     </div>
   </div>
-  <div class="tablet:grid-col-5">
-    <div class="do-dont__dont">
-      <h3 class="do-dont__heading">
-        {% include icon.html icon="cancel" %}
-        What not to do
-      </h3>
-      <div class="do-dont__content">
-          <ul>
-            <li>Do not create a dead end for users by taking them to a page with little or no meaningful content.</li>
-            <li>Strongly consider whether including icons or graphics on the language selection button offers communication value, as these may represent different concepts to different cultures.</li>
-            <li>Do not use flags or country codes to indicate languages. Flags do not map to languages; Arabic, for example, is spoken in many countries. The country code <code>ES</code> may not be universally understood to indicate Spanish.</li>
-            <li>Avoid auto-redirecting language based on detecting location or browser settings. This can be confusing and disorienting.</li>
-            <li>Do not combine this element with other navigation items.</li>
-          </ul>
+  <div class="tablet:grid-col">
+    <div class="do-dont">
+      <div class="do-dont__dont">
+        <h3 class="do-dont__heading">
+          {% include icon.html icon="cancel" %}
+          What not to do
+        </h3>
+        <div class="do-dont__content">
+            <ul>
+              <li>Do not create a dead end for users by taking them to a page with little or no meaningful content.</li>
+              <li>Strongly consider whether including icons or graphics on the language selection button offers communication value, as these may represent different concepts to different cultures.</li>
+              <li>Do not use flags or country codes to indicate languages. Flags do not map to languages; Arabic, for example, is spoken in many countries. The country code <code>ES</code> may not be universally understood to indicate Spanish.</li>
+              <li>Avoid auto-redirecting language based on detecting location or browser settings. This can be confusing and disorienting.</li>
+              <li>Do not combine this element with other navigation items.</li>
+            </ul>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-## Considerations
-
-{:.usa-content-list}
-- <strong>Ensure there’s enough color contrast</strong> between the button, the text inside the button, and the site background to ensure readability.
-- If the text will be visually presented as a button but coded as a link, it is recommended to <strong>add ARIA role="button"</strong> so that screen readers announce it as a button. Additionally, JavaScript will also need to be added so that keyboard users can activate the button using both the Enter and Spacebar keys. See [Understanding Success Criterion 4.1.2 - Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) for more information.
-- <strong>Use the HTML `lang` attributes</strong> to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
-- <strong>All logically related items and links</strong> must be presented as an HTML unordered list. 
-- Consider including a <strong>prominent in-page notice or link</strong> in addition to the link in the header, in order to increase visibility for the user.
-
-## Components used in this pattern
-
-<div class="usa-card-group flex-row margin-top-2">
-  <div
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
-  role="region"
-  aria-atomic="true"
-  aria-label="Visit Toggle"
-  data-meta="Visit Toggle">
-    <div class="usa-card__container">
-      <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg">Language selector</h3>
-      </header>
-      <div class="usa-card__body font-lang-sm">
-        <p>A dropdown menu that allows the user to select the language.</p>
-        <a href="#">Visit Language selector</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
+  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h3 id="pattern-preview">Pattern preview</h3></button>
   <div id="accordion-preview" class="usa-accordion__content">
     {% include patterns/three-languages.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
+  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h3 id="pattern-code">Pattern code</h3></button>
   <div id="accordion-code" class="usa-accordion__content highlight-code">
     <div class="usa-sr-only">
       {% highlight text%}{% include patterns/three-languages-code.html %}{% endhighlight %}
@@ -120,28 +92,42 @@ Place the language selector menu at the top of the screen above site navigation,
   </div>
 </div>
 
-## See pattern in use
+### Usability guidance
+
+{:.usa-content-list}
+- Consider including a <strong>prominent in-page notice or link</strong> in addition to the link in the header, in order to increase visibility for the user.
+- <strong>Ensure there’s enough color contrast</strong> between the button, the text inside the button, and the site background to ensure readability.
+
+### Accessibility
+
+{:.usa-content-list}
+- If the text will be visually presented as a button but coded as a link, it is recommended to <strong>add ARIA role="button"</strong> so that screen readers announce it as a button. Additionally, JavaScript will also need to be added so that keyboard users can activate the button using both the Enter and Spacebar keys. See [Understanding Success Criterion 4.1.2 - Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) for more information.
+- <strong>Use the HTML `lang` attributes</strong> to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
+- <strong>All logically related items and links</strong> must be presented as an HTML unordered list. 
+
+### See pattern in use
 
 {:.usa-content-list}
 - <a href="https://www.ed.gov/notices/english-la">U.S. Department of Education</a>
 - <a href="https://www.vote.gov">Vote.gov</a>
 
-
-## Related
+### Related components and patterns
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/header/">Header</a> component
+- <a href="{{ site.baseurl }}/components/language-selector/">Language selector</a> component
 - <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Find selected multilingual content</a> pattern
 - <a href="{{ site.baseurl }}/patterns/language-selector/two-languages">Select from two languages</a> pattern
 
-## References
+### References
 - Community research explores ways to improve access to multilingual content. (August 9, 2022) Retrieved on August 24, 2022, from [https://digital.gov/2022/08/09/community-research-explores-ways-to-improve-access-to-multilingual-content/](https://digital.gov/2022/08/09/community-research-explores-ways-to-improve-access-to-multilingual-content/)
 - Designing a perfect language selector UX. (May 4, 2022) Retrieved on July 21, 2022, from [https://www.smashingmagazine.com/2022/05/designing-better-language-selector/](https://www.smashingmagazine.com/2022/05/designing-better-language-selector/)
 - Flag problems. (August 1, 1996) Retrieved on July 22, 2022, from [https://www.nngroup.com/articles/flag-problems/](https://www.nngroup.com/articles/flag-problems/)
 - Top 10 Best practices for multilingual websites. (June 21, 2022) Retrieved on July 21, 2022, from [https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/](https://digital.gov/resources/top-10-best-practices-for-multilingual-websites/)
 - White paper on best practices for multilingual access to digital libraries. (June 23, 2016) Retrieved on July 21, 2022, from [https://pro.europeana.eu/files/Europeana_Professional/Publications/BestPracticesForMultilingualAccess_whitepaper.pdf](https://pro.europeana.eu/files/Europeana_Professional/Publications/BestPracticesForMultilingualAccess_whitepaper.pdf)
 
-## Changelog
+### Changelog
 - Published November 10, 2022
 
-Disclaimer: Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.
+### Disclaimer
+Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

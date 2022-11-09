@@ -70,61 +70,14 @@ The pattern allows users to select their language preferences for both written a
   </div>
 </div>
 
-## Considerations
-
-{:.usa-content-list}
-- Strongly consider providing language to <strong>reassure the user that there are no penalties</strong> associated with accessing information or completing forms in languages other than English. Some people with limited English-language skills have concerns about stigma or that use of a language other than English will impact their immigration status, program eligibility, or future opportunities.
-- Once a user has saved a preference setting other than English, default to their preferred language for future mail or email communications whenever possible.
-- Consider that individuals may have <strong>other challenges in addition to limited English proficiency</strong>, and may require other types of support.
-- Translation and navigation functions in languages other than English should still meet appropriate accessibility standards to ensure equal access.
-- <strong>Use the HTML lang attributes</strong> to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
-
-
-## Components used in this pattern
-
-<div class="usa-card-group flex-row margin-top-2">
-  <div
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
-  role="region"
-  aria-atomic="true"
-  aria-label="Visit checkbox component"
-  data-meta="Visit checkbox component">
-      <div class="usa-card__container">
-      <header class="usa-card__header">
-          <h3 class="usa-card__heading font-lang-lg">Checkbox</h3>
-      </header>
-      <div class="usa-card__body font-lang-sm">
-          <p>Checkboxes allow users to select one or more options from a list.</p>
-          <a href="{{ site.baseurl }}/components/checkbox/">Visit Checkbox</a>
-      </div>
-      </div>
-  </div>
-  <div
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
-  role="region"
-  aria-atomic="true"
-  aria-label="Visit text input component"
-  data-meta="Visit text input component">
-      <div class="usa-card__container">
-      <header class="usa-card__header">
-          <h3 class="usa-card__heading font-lang-lg">Text input</h3>
-      </header>
-      <div class="usa-card__body font-lang-sm">
-          <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
-          <a href="{{ site.baseurl }}/components/text-input/">Visit Text input</a>
-      </div>
-      </div>
-  </div>
-</div>
-
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
+  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h3 id="pattern-preview">Pattern preview</h3></button>
   <div id="accordion-preview" class="usa-accordion__content">
     {% include patterns/language-preference.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
+  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h3 id="pattern-code">Pattern code</h3></button>
   <div id="accordion-code" class="usa-accordion__content highlight-code">
     <div class="usa-sr-only">
        {% highlight text%}{% include patterns/language-preference.html %}{% endhighlight %}
@@ -133,16 +86,28 @@ The pattern allows users to select their language preferences for both written a
   </div>
 </div>
 
-## Related
+### Considerations
 
 {:.usa-content-list}
+- Strongly consider providing language to <strong>reassure the user that there are no penalties</strong> associated with accessing information or completing forms in languages other than English. Some people with limited English-language skills have concerns about stigma or that use of a language other than English will impact their immigration status, program eligibility, or future opportunities.
+- Once a user has saved a preference setting other than English, default to their preferred language for future mail or email communications whenever possible.
+- Consider that individuals may have <strong>other challenges in addition to limited English proficiency</strong>, and may require other types of support.
+- Translation and navigation functions in languages other than English should still meet appropriate accessibility standards to ensure equal access.
+
+### Accessibility 
+- <strong>Use the HTML lang attributes</strong> to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
+
+### Related components and patterns
+
+{:.usa-content-list}
+- <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component
+- <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/contact-preferences/">Contact preferences</a> pattern
 - <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Find selected multilingual content</a> pattern
 - <a href="{{ site.baseurl }}/patterns/language-selector/more-than-three-languages/">Select from three or more languages</a> pattern
 - <a href="{{ site.baseurl }}/patterns/language-selector/two-languages/">Select from two languages</a> pattern
 
-
-## References
+### References
 - Improving access to services for persons with limited English proficiency, executive order 13166. (August 11, 2000) Retrieved on July 25, 2022, from [https://www.govinfo.gov/content/pkg/FR-2000-08-16/pdf/00-20938.pdf](https://www.govinfo.gov/content/pkg/FR-2000-08-16/pdf/00-20938.pdf)
 - CMS Appendix A - top 15 non-English languages by states. (n.d.) Retrieved on July 25, 2022, from [https://www.cms.gov/CCIIO/Resources/Regulations-and-Guidance/Downloads/Appendix-A-Top-15-non-english-by-state-MM-508_update12-20-16.pdf](https://www.cms.gov/CCIIO/Resources/Regulations-and-Guidance/Downloads/Appendix-A-Top-15-non-english-by-state-MM-508_update12-20-16.pdf)
 - CMS’s guide to developing a language access plan. (n.d.) Retrieved on July 25, 2022, from [https://www.cms.gov/About-CMS/Agency-Information/OMH/Downloads/Language-Access-Plan-508.pdf](https://www.cms.gov/About-CMS/Agency-Information/OMH/Downloads/Language-Access-Plan-508.pdf)
@@ -152,7 +117,8 @@ The pattern allows users to select their language preferences for both written a
 - OMB memorandum m-17-06, 16. (November 2016) Retrieved on July 25, 2022, from [https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2017/m-17-06.pdf#page=16](https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2017/m-17-06.pdf#page=16)
 
 
-## Changelog
+### Changelog
 - Published November 10, 2022
 
-Disclaimer: Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.
+### Disclaimer
+Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

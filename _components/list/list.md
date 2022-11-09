@@ -19,6 +19,7 @@ subnav:
   - text: Package
     href: '#list-package'
 title: List
+type: component
 variants:
 tags:
   - typography

@@ -24,6 +24,8 @@ subnav:
 - text: 6. Optimize your installation
   href: '#6-optimize-your-installation'
 ---
+{: .site-note }
+**Note:** This guide provides instructions for upgrading from USWDS 2 to USWDS 3. If your project uses USWDS 1, you will need to update according to the [USWDS 2.0 migration guide]({{ site.baseurl }}/documentation/migration-v2) before proceeding with these steps. [Not sure which version you're on? Here's how to check](#1-check-your-current-uswds-code-and-settings-versions).
 
 ## Why migrate to USWDS 3.0?
 
@@ -173,7 +175,7 @@ Add this load path to your compiler settings, or update any old paths if your co
 
 <!-- Start USWDS Gulp section -->
 <h4 class="usa-accordion__heading">
-  <button class="usa-accordion__button" aria-controls="m-a6">
+  <button type="button" class="usa-accordion__button" aria-controls="m-a6">
     If you're using USWDS Gulp
   </button>
 </h4>
@@ -249,7 +251,7 @@ includePaths: [
 
 <!-- Start USWDS Compile section -->
 <h4 class="usa-accordion__heading">
-  <button class="usa-accordion__button" aria-controls="m-a7">
+  <button type="button" class="usa-accordion__button" aria-controls="m-a7">
     If you're using USWDS Compile
   </button>
 </h4>
@@ -271,7 +273,7 @@ const uswds = require("@uswds/compile");
 
 <!-- Start custom gulp workflow section -->
 <h4 class="usa-accordion__heading">
-  <button class="usa-accordion__button" aria-controls="m-a8">
+  <button type="button" class="usa-accordion__button" aria-controls="m-a8">
     If you're using a custom gulp workflow
   </button>
 </h4>
@@ -303,7 +305,7 @@ const uswds = require("@uswds/compile");
 
 <!-- Start custom gulp workflow section -->
 <h4 class="usa-accordion__heading">
-  <button class="usa-accordion__button" aria-controls="m-a9">
+  <button type="button" class="usa-accordion__button" aria-controls="m-a9">
     If you're using webpack
   </button>
 </h4>
@@ -342,6 +344,7 @@ Follow the instructions in each section that applies to either your USWDS versio
 <!-- Start All section -->
 <h4 class="usa-accordion__heading">
   <button
+    type="button"
     class="usa-accordion__button"
     aria-controls="m-all"
   >
@@ -365,6 +368,7 @@ We've removed the `$output-all-utilities` settings and replaced it with `$output
 <!-- Start 2.13.0 section -->
 <h4 class="usa-accordion__heading">
   <button
+    type="button"
     class="usa-accordion__button"
     aria-controls="m-a1"
   >
@@ -385,7 +389,7 @@ You'll need to update any instances of the small search button on your site. We'
 ###### Old code
 
 ```html
-<button class="usa-button" type="submit">
+<button type="button" class="usa-button" type="submit">
   <span class="usa-sr-only">Search</span>
 <button>
 ```
@@ -394,7 +398,7 @@ You'll need to update any instances of the small search button on your site. We'
 ###### New code
 
 ```html
-<button class="usa-button" type="submit">
+<button type="button" class="usa-button" type="submit">
   <img
     src="{% raw %}{{ uswds image path }}{% endraw %}/usa-icons-bg/search--white.svg"
     class="usa-search__submit-icon"
@@ -479,6 +483,7 @@ You'll need to update social media icons in the USWDS footer. We're now using ex
 <!-- Start 2.12.0 section -->
 <h4 class="usa-accordion__heading">
   <button
+    type="button"
     class="usa-accordion__button"
     aria-controls="m-a2"
   >
@@ -520,6 +525,7 @@ Setting | Old default | New default
 <!-- Start 2.11.2 section -->
 <h4 class="usa-accordion__heading">
   <button
+    type="button"
     class="usa-accordion__button"
     aria-controls="m-a3"
   >
@@ -549,6 +555,7 @@ We replaced the `thumb_down_off_alt` icon with `thumb_down_alt` in our default i
 <!-- Start 2.11.0 section -->
 <h4 class="usa-accordion__heading">
   <button
+    type="button"
     class="usa-accordion__button"
     aria-controls="m-a4"
   >
@@ -579,6 +586,7 @@ Setting | Old default | New default
 <!-- Start 2.10.1 section -->
 <h4 class="usa-accordion__heading">
   <button
+    type="button"
     class="usa-accordion__button"
     aria-controls="m-a5"
   >
@@ -653,8 +661,9 @@ These instructions will help you update your `@import` references to the new syn
 
    We recommend an online diff service like [quickdiff.net](https://quickdiff.net/), [diffchecker.com](https://diffchecker.com), or [text-compare.com](https://text-compare.com/).
 
-   Each of the files below is the most current version of the USWDS default settings. For each of these files, use the diff tool to find the differences between your settings file and the current defaults.
+   Each of the files below is from version 2.13.3 of the USWDS default settings. For each of these files, use the diff tool to find the differences between your settings file and the current (USWDS Version 3.x) defaults.
 
+    USWDS Version 2.13.3 Defaults
    - [Color settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.3/src/stylesheets/theme/_uswds-theme-color.scss)
    - [Component settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.3/src/stylesheets/theme/_uswds-theme-components.scss)
    - [General settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.3/src/stylesheets/theme/_uswds-theme-general.scss)
@@ -662,7 +671,7 @@ These instructions will help you update your `@import` references to the new syn
    - [Typography settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.3/src/stylesheets/theme/_uswds-theme-typography.scss)
    - [Utilities settings](https://raw.githubusercontent.com/uswds/uswds/release-2.13.3/src/stylesheets/theme/_uswds-theme-utilities.scss)
 
-   Look for instances where your project has a different value than the default. Ignore cases where a setting exists in the current version but not in your version. This indicates a new setting that probably does not apply to your project. Instances where a setting exists in your version but not in the current version can likely be ignored. This usually indicates a deprecated setting that should not affect your project, but it can be worth checking to see if that variable appears anywhere else in your codebase.
+   When you compare earlier versions of the Design System to USWDS Version 3.x, look for instances where your project has a different value than the default. Ignore cases where a setting exists in the current version but not in your version. This indicates a new setting that probably does not apply to your project. Instances where a setting exists in your version but not in the current version can likely be ignored. This usually indicates a deprecated setting that should not affect your project, but it can be worth checking to see if that variable appears anywhere else in your codebase.
 
    When you see a setting that appears different from the current default, this is probably one of your project's custom settings. Copy this setting and add it to your new `_uswds-theme.scss` file.
 

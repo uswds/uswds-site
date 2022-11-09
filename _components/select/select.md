@@ -17,6 +17,8 @@ subnav:
   href: '#select-guidance'
 - text: Package
   href: '#select-package'
+- text: Latest updates
+  href: '#select-changelog'
 title: Select
 type: component
 ---

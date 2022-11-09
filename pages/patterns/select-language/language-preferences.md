@@ -24,7 +24,7 @@ The pattern allows users to select their language preferences for both written a
 ## Guidance
 
 <div class="grid-row grid-gap-3">
-  <div class="tablet:grid-col-5">
+  <div class="tablet:grid-col">
     <div class="do-dont">
       <div class="do-dont__do">
         <h3 class="do-dont__heading">
@@ -52,19 +52,21 @@ The pattern allows users to select their language preferences for both written a
       </div>
     </div>
   </div>
-  <div class="tablet:grid-col-5">
-    <div class="do-dont__dont">
-      <h3 class="do-dont__heading">
-        {% include icon.html icon="cancel" %}
-        What not to do
-      </h3>
-      <div class="do-dont__content">
-          <ul>
-            <li>Do not include languages other than those you can support. </li>
-            <li>Do not use icons or graphics, since they may mean different things in different languages and cultures.</li>
-            <li>Do not use flags or country codes to indicate languages. Flags do not map to languages; Arabic, for example, is spoken in many countries. It may not be universally understood that <code>ES</code> indicates Spanish. </li>
-            <li>Do not assume that the language a user prefers to speak is the same language they prefer to read.</li>
-          </ul>
+  <div class="tablet:grid-col">
+    <div class="do-dont">
+      <div class="do-dont__dont">
+        <h3 class="do-dont__heading">
+          {% include icon.html icon="cancel" %}
+          What not to do
+        </h3>
+        <div class="do-dont__content">
+            <ul>
+              <li>Do not include languages other than those you can support. </li>
+              <li>Do not use icons or graphics, since they may mean different things in different languages and cultures.</li>
+              <li>Do not use flags or country codes to indicate languages. Flags do not map to languages; Arabic, for example, is spoken in many countries. It may not be universally understood that <code>ES</code> indicates Spanish. </li>
+              <li>Do not assume that the language a user prefers to speak is the same language they prefer to read.</li>
+            </ul>
+        </div>
       </div>
     </div>
   </div>

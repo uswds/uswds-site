@@ -70,56 +70,45 @@ Allow selection of more than one race and acknowledge people with multiple racia
 </div>
 
 ## Considerations
-### Whether you need this data
-<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
 
-### What to use
-<strong>If you don't need a controlled vocabulary.</strong> If you don't need to restrict the list of races and ethnicities to a specified data collection requirement, consider allowing for user self-identification with an open-ended text field. Users should also have the ability to opt out of providing this information.
-
-<strong>If the information being collected is intended to be used for statistical, administrative, or compliance purposes.</strong> If the intent of your data collection requires race and ethnicity to be mapped to a fixed minimum set of categories, refer to OMB’s <a class="display-inline" href="https://www.federalregister.gov/d/2016-23672/p-27">Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity (9/30/2016)</a>, which encourages the collection of detailed race and ethnicity information provided it can be aggregated into the minimum categories. 
-
-### Special use cases
-<strong>If you are collecting information on a family.</strong> Do not assume that partners or dependents of the person completing the form will identify as the same race or ethnicity.
-
-<strong>If you will be displaying race and/or ethnicity in a list.</strong> Always treat racial and ethnic groups as proper nouns and capitalize them. Consider the order list items appear to avoid the perception of bias or favoritism. 
+{:.usa-content-list}
+- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
+- <strong>If you don't need a controlled vocabulary.</strong> If you don't need to restrict the list of races and ethnicities to a specified data collection requirement, consider allowing for user self-identification with an open-ended text field. Users should also have the ability to opt out of providing this information.
+- <strong>If the information being collected is intended to be used for statistical, administrative, or compliance purposes.</strong> If the intent of your data collection requires race and ethnicity to be mapped to a fixed minimum set of categories, refer to OMB’s <a class="display-inline" href="https://www.federalregister.gov/d/2016-23672/p-27">Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity (9/30/2016)</a>, which encourages the collection of detailed race and ethnicity information provided it can be aggregated into the minimum categories. 
+- <strong>If you are collecting information on a family.</strong> Do not assume that partners or dependents of the person completing the form will identify as the same race or ethnicity.
+- <strong>If you will be displaying race and/or ethnicity in a list.</strong> Always treat racial and ethnic groups as proper nouns and capitalize them. Consider the order list items appear to avoid the perception of bias or favoritism. 
 
 ## Usability guidance
 
-<strong>If you're only collecting information on race.</strong> Do allow users to select all races that apply with clear hint text, for example, "Select all that apply".
-
-<strong>If you’re collecting race and ethnicity information.</strong> Strongly consider using checkboxes for race combined with an open-ended text input for ethnicity self-identification. Do allow users to select all races that apply, and multiple ethnicities, with clear hint text, for example, "Select all that apply" and "You may report more than one ethnicity".
-
-<strong>Do allow users to opt out of providing race and ethnicity information</strong> with a "Prefer not to answer" option.
-
-<strong>OMB’s minimum categories for race:</strong>
-- American Indian or Alaska Native
-- Asian
-- Black or African American
-- Native Hawaiian or Other Pacific Islander
-- White
-
-<strong>Expanded categories tested in the 2020 Census:</strong>
-- American Indian or Alaska Native
-- Asian
-- Black or African American
-- Hispanic, Latino, or Spanish
-- Middle Eastern or North African
-- Native Hawaiian or other Pacific Islander
-- White
-- Some other race
-- Prefer not to answer
+{:.usa-content-list}
+- <strong>If you're only collecting information on race.</strong> Do allow users to select all races that apply with clear hint text, for example, "Select all that apply".
+- <strong>If you’re collecting race and ethnicity information.</strong> Strongly consider using checkboxes for race combined with an open-ended text input for ethnicity self-identification. Do allow users to select all races that apply, and multiple ethnicities, with clear hint text, for example, "Select all that apply" and "You may report more than one ethnicity".
+- <strong>Do allow users to opt out of providing race and ethnicity information</strong> with a "Prefer not to answer" option.
+- <strong>OMB’s minimum categories for race:</strong>
+    - American Indian or Alaska Native
+    - Asian
+    - Black or African American
+    - Native Hawaiian or Other Pacific Islander
+    - White
+- <strong>Expanded categories tested in the 2020 Census:</strong>
+    - American Indian or Alaska Native
+    - Asian
+    - Black or African American
+    - Hispanic, Latino, or Spanish
+    - Middle Eastern or North African
+    - Native Hawaiian or other Pacific Islander
+    - White
+    - Some other race
+    - Prefer not to answer
 
 ## Accessibility
 
-<strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/). 
-
-<strong>Use a fieldset and legend for a checkbox group.</strong> Surround a related set of checkboxes with a `<fieldset>`. The `<legend>` provides context for the grouping. Don’t use fieldset and legend for a single check.
-
-<strong>These custom checkboxes are accessible.</strong> The custom checkbox component is accessible to screen readers because the default checkbox is moved off-screen with `position: absolute; left: -999em`.
-
-<strong>Use a semantic tag.</strong> The checkbox should have a semantic tag for the `id` attribute, and its corresponding label should have the same value in its `for` attribute.
-
-<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
+{:.usa-content-list}
+- <strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/). 
+- <strong>Use a fieldset and legend for a checkbox group.</strong> Surround a related set of checkboxes with a `<fieldset>`. The `<legend>` provides context for the grouping. Don’t use fieldset and legend for a single check.
+- <strong>These custom checkboxes are accessible.</strong> The custom checkbox component is accessible to screen readers because the default checkbox is moved off-screen with `position: absolute; left: -999em`.
+- <strong>Use a semantic tag.</strong> The checkbox should have a semantic tag for the `id` attribute, and its corresponding label should have the same value in its `for` attribute.
+- <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 ## Components used in this pattern
 

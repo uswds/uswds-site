@@ -65,32 +65,27 @@ Help users enter their phone numbers in a consistent, correct, usable format. Us
 </div>
 
 ## Considerations
-### Whether you need this data
-<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
 
-### Related guidance
-<strong>Notifications.</strong> If the phone number will be used to subscribe the user to any type of follow-up calls, including automated notifications, reminders, or informational call lists, clearly inform the user and provide a way for the user to opt out.
-
-<strong>Sensitive information.</strong> If you plan on using the phone number to follow up with the user, consider whether you need to ask the user for permission to leave a voice or text message, and ask them whether sensitive information can be included in the message. Some users may not want sensitive information left in messages for privacy or safety reasons.
+{:.usa-content-list}
+- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
+- <strong>Notifications.</strong> If the phone number will be used to subscribe the user to any type of follow-up calls, including automated notifications, reminders, or informational call lists, clearly inform the user and provide a way for the user to opt out.
+- <strong>Sensitive information.</strong> If you plan on using the phone number to follow up with the user, consider whether you need to ask the user for permission to leave a voice or text message, and ask them whether sensitive information can be included in the message. Some users may not want sensitive information left in messages for privacy or safety reasons.
 
 ## Usability guidance
-<strong>Consider using an input mask.</strong> In fields with a specific expected format, an input mask allows you to constrain and shape the information being entered into that format, without impairing the user’s ability to copy/paste or correct mistyping. If you use an input mask to support formatting the phone field, it should be `___-___-____` for U.S. phone numbers so that the phone number maps to users' experience and is properly formatted. Input masks can help a user more confidently fill out restricted fields, reduce user anxiety about making a mistake, and reduce validation errors and web form abandonment, particularly on mobile devices.
 
-<strong>Validate client-side and server-side if possible.</strong> Use client-side and ideally server-side validation to ensure proper formatting and usable phone numbers.
-
-This pattern uses radio buttons. See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons). 
+{:.usa-content-list}
+- <strong>Consider using an input mask.</strong> In fields with a specific expected format, an input mask allows you to constrain and shape the information being entered into that format, without impairing the user’s ability to copy/paste or correct mistyping. If you use an input mask to support formatting the phone field, it should be `___-___-____` for U.S. phone numbers so that the phone number maps to users' experience and is properly formatted. Input masks can help a user more confidently fill out restricted fields, reduce user anxiety about making a mistake, and reduce validation errors and web form abandonment, particularly on mobile devices.
+- <strong>Validate client-side and server-side if possible.</strong> Use client-side and ideally server-side validation to ensure proper formatting and usable phone numbers.
+- This pattern uses radio buttons. See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons). 
 
 ## Accessibility 
-<strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 
 
-<strong>Use “text” instead of “number” inputs.</strong> Research indicates that <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">numeric inputs still carry many usability problems</a>. The way the user enters the data may differ from what the browser expects. Use `<input type="text" inputmode="numeric" pattern="[0-9]*">` to better support mobile users. 
-
-<strong>Use fieldset and legend.</strong> Group related radio buttons together with <code><fieldset></code> and describe the group with <code><legend></code>.
-
-<strong>Use proper labels and attributes.</strong> Each radio button should have a `<label>`. Associate the two by matching the label's `for` attribute to the input's `id` attribute.
-
-
-<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
+{:.usa-content-list}
+- <strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 
+- <strong>Use “text” instead of “number” inputs.</strong> Research indicates that <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">numeric inputs still carry many usability problems</a>. The way the user enters the data may differ from what the browser expects. Use `<input type="text" inputmode="numeric" pattern="[0-9]*">` to better support mobile users. 
+- <strong>Use fieldset and legend.</strong> Group related radio buttons together with <code><fieldset></code> and describe the group with <code><legend></code>.
+- <strong>Use proper labels and attributes.</strong> Each radio button should have a `<label>`. Associate the two by matching the label's `for` attribute to the input's `id` attribute.
+- <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 
 ## Components used in this pattern
@@ -147,6 +142,8 @@ This pattern uses radio buttons. See [usability guidance for radio buttons]({{ s
 </div>
 
 ## Related
+
+{:.usa-content-list}
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/email-address/">Email address</a> pattern
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number/">Social Security Number</a> pattern
 

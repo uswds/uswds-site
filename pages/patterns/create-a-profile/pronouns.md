@@ -63,20 +63,21 @@ Provide a text entry field that supports a rich array of special characters and 
 </div>
 
 ## Considerations
-### Whether you need this data
-<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
 
-<strong>If you don't need a controlled vocabulary.</strong> Strongly consider allowing for user-provided pronouns with an open-ended text field. Users should also have the ability to opt out of providing this information.
+{:.usa-content-list}
+- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
+- <strong>If you don't need a controlled vocabulary.</strong> Strongly consider allowing for user-provided pronouns with an open-ended text field. Users should also have the ability to opt out of providing this information.
 
 ## Usability guidance
 
-<strong>Provide clear hint text.</strong> Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, such as, "For example, he, she, they, ze." Do allow users to opt out with a "Prefer not to answer" option.
+{:.usa-content-list}
+- <strong>Provide clear hint text.</strong> Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, such as, "For example, he, she, they, ze." Do allow users to opt out with a "Prefer not to answer" option.
 
 ## Accessibility
 
-<strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/). 
-
-<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
+{:.usa-content-list}
+- <strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/). 
+- <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 ## Components used in this pattern
 
@@ -132,6 +133,8 @@ Provide a text entry field that supports a rich array of special characters and 
 </div>
 
 ## Related
+
+{:.usa-content-list}
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/sex-or-gender/">Sex or gender</a> pattern
 
 ## References

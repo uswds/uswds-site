@@ -2437,6 +2437,10 @@ $theme-table-column-gap: 4;
       @include u-text("normal");
     }
 
+    h2 + h3 {
+      margin-top: units(3);
+    }
+
     h6 {
       @include typeset("lang", "2xs", 2);
       @include u-text("uppercase", "ls-2", "normal");
@@ -3446,12 +3450,12 @@ $do-dont-top-bar-width: 1;
   }
 }
 
-// Pattern landing page 
+// Pattern landing page
 .pattern-card-heading {
-  font-weight: fw("normal"); 
+  font-weight: fw("normal");
 }
 
-// Memorable Date w/select 
+// Memorable Date w/select
 .usa-form-group--month {
   width: units(card-lg);
 }
@@ -3462,6 +3466,6 @@ $do-dont-top-bar-width: 1;
   .usa-in-page-nav__list {
     .usa-in-page-nav__item {
       @include typeset("lang", "3xs", 2);
-    }      
+    }
   }
 }

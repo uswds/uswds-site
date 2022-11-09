@@ -66,27 +66,26 @@ A text input field with validation and robust error messaging to guide users in 
 </div>
 
 ## Considerations
-### Whether you need this data
-<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
 
-<strong>Sensitive information.</strong> If you plan on using the email address to follow up with the user, consider whether you need to ask the user whether potentially sensitive information can be included in the message. Some users may not want sensitive information left in email messages for privacy or safety reasons.
+{:.usa-content-list}
+- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
+- <strong>Sensitive information.</strong> If you plan on using the email address to follow up with the user, consider whether you need to ask the user whether potentially sensitive information can be included in the message. Some users may not want sensitive information left in email messages for privacy or safety reasons.
 
 ## Usability guidance
 
-<strong>Do not require users to re-enter their email address, unless you have a good reason for doing so.</strong> If you're collecting email addresses for the purpose of communicating with the user, verifying that a user's email address is correctly spelled reduces the risk of sending sensitive information to the wrong individual. 
+{:.usa-content-list}
+- <strong>Do not require users to re-enter their email address, unless you have a good reason for doing so.</strong> If you're collecting email addresses for the purpose of communicating with the user, verifying that a user's email address is correctly spelled reduces the risk of sending sensitive information to the wrong individual. 
 
-When creating an account based on an email address, you might choose to validate a user's email address by requiring them to click an emailed verification link and successfully authenticate to ensure information will be shared with the correct individual.
-
-This pattern uses radio buttons. See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons). 
+    When creating an account based on an email address, you might choose to validate a user's email address by requiring them to click an emailed verification link and successfully authenticate to ensure information will be shared with the correct individual.
+- This pattern uses radio buttons. See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons). 
 
 ## Accessibility 
-<strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 
 
-<strong>Use fieldset and legend.</strong> Group related radio buttons together with `<fieldset>` and describe the group with `<legend>`.
-
-<strong>Use proper labels and attributes.</strong> Each radio button should have a `<label>`. Associate the two by matching the label's `for` attribute to the input's `id` attribute.
-
-<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
+{:.usa-content-list}
+- <strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 
+- <strong>Use fieldset and legend.</strong> Group related radio buttons together with `<fieldset>` and describe the group with `<legend>`.
+- <strong>Use proper labels and attributes.</strong> Each radio button should have a `<label>`. Associate the two by matching the label's `for` attribute to the input's `id` attribute.
+- <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 
 ## Components used in this pattern
@@ -144,6 +143,7 @@ This pattern uses radio buttons. See [usability guidance for radio buttons]({{ s
 
 ## Related
 
+{:.usa-content-list}
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number/">Phone number</a> pattern
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number/">Social Security Number</a> pattern
 

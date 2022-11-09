@@ -73,15 +73,13 @@ Place the language selector menu at the top of the screen above site navigation,
 </div>
 
 ## Considerations
-<strong>Ensure there’s enough color contrast</strong> between the button, the text inside the button, and the site background to ensure readability.
 
-If the text will be visually presented as a button but coded as a link, it is recommended to <strong>add ARIA role="button"</strong> so that screen readers announce it as a button. Additionally, JavaScript will also need to be added so that keyboard users can activate the button using both the Enter and Spacebar keys. See [Understanding Success Criterion 4.1.2 - Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) for more information.
-
-<strong>Use the HTML `lang` attributes</strong> to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
-
-<strong>All logically related items and links</strong> must be presented as an HTML unordered list. 
-
-Consider including a <strong>prominent in-page notice or link</strong> in addition to the link in the header, in order to increase visibility for the user.
+{:.usa-content-list}
+- <strong>Ensure there’s enough color contrast</strong> between the button, the text inside the button, and the site background to ensure readability.
+- If the text will be visually presented as a button but coded as a link, it is recommended to <strong>add ARIA role="button"</strong> so that screen readers announce it as a button. Additionally, JavaScript will also need to be added so that keyboard users can activate the button using both the Enter and Spacebar keys. See [Understanding Success Criterion 4.1.2 - Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) for more information.
+- <strong>Use the HTML `lang` attributes</strong> to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
+- <strong>All logically related items and links</strong> must be presented as an HTML unordered list. 
+- Consider including a <strong>prominent in-page notice or link</strong> in addition to the link in the header, in order to increase visibility for the user.
 
 ## Components used in this pattern
 
@@ -122,12 +120,14 @@ Consider including a <strong>prominent in-page notice or link</strong> in additi
 
 ## See pattern in use
 
+{:.usa-content-list}
 - <a href="https://www.ed.gov/notices/english-la">U.S. Department of Education</a>
 - <a href="https://www.vote.gov">Vote.gov</a>
 
 
 ## Related
 
+{:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/header/">Header</a> component
 - <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Find selected multilingual content</a> pattern
 - <a href="{{ site.baseurl }}/patterns/language-selector/two-languages">Select from two languages</a> pattern

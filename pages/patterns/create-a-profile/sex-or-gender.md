@@ -35,7 +35,6 @@ Follow this pattern when you are collecting biological sex as part of your servi
 Present the user with a controlled vocabulary to accurately depict their biological sex. 
 
 ## Guidance
-### When you need to collect biological sex
 
 <div class="grid-row grid-gap-3">
   <div class="tablet:grid-col-5">
@@ -75,23 +74,22 @@ Present the user with a controlled vocabulary to accurately depict their biologi
 </div>
 
 ## Considerations
-### Whether you need this data
-<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
 
-### What to use 
-<strong>If biological sex information is used for identity validation.</strong> Be specific about the information you are requesting. Clearly state the context, such as, "Please enter your biological sex as it appears on your birth certificate." so that users can successfully provide the information required. Gender and biological sex are often used synonymously and users have difficulty determining which information is being requested.
+{:.usa-content-list}
+- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
+- <strong>If biological sex information is used for identity validation.</strong> Be specific about the information you are requesting. Clearly state the context, such as, "Please enter your biological sex as it appears on your birth certificate." so that users can successfully provide the information required. Gender and biological sex are often used synonymously and users have difficulty determining which information is being requested.
 
 ## Usability guidance
 
-This pattern uses radio buttons. See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons). 
+{:.usa-content-list}
+- This pattern uses radio buttons. See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons). 
 
 ## Accessibility
 
-<strong>Use fieldset and legend.</strong> Group related radio buttons together with `<fieldset>` and describe the group with `<legend>`.
-
-<strong>Use proper labels and attributes.</strong> Each radio button should have a `<label>`. Associate the two by matching the label's `for` attribute to the input's `id` attribute.
-
-<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
+{:.usa-content-list}
+- <strong>Use fieldset and legend.</strong> Group related radio buttons together with `<fieldset>` and describe the group with `<legend>`.
+- <strong>Use proper labels and attributes.</strong> Each radio button should have a `<label>`. Associate the two by matching the label's `for` attribute to the input's `id` attribute.
+- <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 ## Components used in this pattern
 
@@ -141,7 +139,6 @@ Follow this pattern when you are collecting gender identity for your service or 
 Present the user with the tools to accurately depict their gender identity. 
 
 ## Guidance
-### When you need to collect gender
 
 <div class="grid-row grid-gap-3">
   <div class="tablet:grid-col-5">
@@ -181,27 +178,24 @@ Present the user with the tools to accurately depict their gender identity.
 </div>
 
 ## Considerations
-### Whether you need this data
-<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
 
-### What to use 
-<strong>Avoid using a controlled vocabulary.</strong> If you don’t need to enforce a controlled vocabulary of gender options, strongly consider letting the user self-identify using a single text field.
+{:.usa-content-list}
+- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
+- <strong>Avoid using a controlled vocabulary.</strong> If you don’t need to enforce a controlled vocabulary of gender options, strongly consider letting the user self-identify using a single text field.
 
 ## Usability guidance
 
-<strong>Provide clear hint text.</strong> Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, such as, "For example, man, woman, non-binary). Do allow users to opt out with a "Prefer not to answer" option.
-
-This pattern uses checkboxes. See [usability guidance for checkboxes]({{ site.baseurl }}/components/checkbox/#usability-guidance-checkbox).
+{:.usa-content-list}
+- <strong>Provide clear hint text.</strong> Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, such as, "For example, man, woman, non-binary). Do allow users to opt out with a "Prefer not to answer" option.
+- This pattern uses checkboxes. See [usability guidance for checkboxes]({{ site.baseurl }}/components/checkbox/#usability-guidance-checkbox).
 
 ## Accessibility
 
-<strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/). 
-
-<strong>These custom checkboxes are accessible.</strong> The custom checkbox component is accessible to screen readers because the default checkbox is moved off-screen with `position: absolute; left: -999em`.
-
-<strong>Use a semantic tag.</strong> The checkbox should have a semantic tag for the `id` attribute, and its corresponding label should have the same value in its `for` attribute.
-
-<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
+{:.usa-content-list}
+- <strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/). 
+- <strong>These custom checkboxes are accessible.</strong> The custom checkbox component is accessible to screen readers because the default checkbox is moved off-screen with `position: absolute; left: -999em`.
+- <strong>Use a semantic tag.</strong> The checkbox should have a semantic tag for the `id` attribute, and its corresponding label should have the same value in its `for` attribute.
+- <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 ## Components used in this pattern
 
@@ -257,6 +251,8 @@ This pattern uses checkboxes. See [usability guidance for checkboxes]({{ site.ba
 </div>
 
 ## Related
+
+{:.usa-content-list}
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/pronouns/">Pronouns</a> pattern
 
 ## References

@@ -13,7 +13,6 @@ lead: This pattern allows users to indicate the languages they prefer to use for
 ## What problem does this solve?
 Approximately 8 percent of the total U.S. population over the age of five is considered Limited English Proficient (LEP). They may speak English, but speak it less than “very well,” and they may not read it well, either. Limited English proficiency can lead to misunderstandings and frustration. Individuals may miss important deadlines or may submit the wrong material. In some circumstances, the miscommunication can be critical—but it is always alienating.
 
-
 ## When to use this pattern 
 Use this pattern when collecting information on the preferred written or spoken language of a user, in order to provide documentation in their preferred language, consultation with a speaker of their preferred language, or translation/interpretation services.
 
@@ -70,15 +69,13 @@ The pattern allows users to select their language preferences for both written a
 </div>
 
 ## Considerations
-Strongly consider providing language to <strong>reassure the user that there are no penalties</strong> associated with accessing information or completing forms in languages other than English. Some people with limited English-language skills have concerns about stigma or that use of a language other than English will impact their immigration status, program eligibility, or future opportunities.
 
-Once a user has saved a preference setting other than English, default to their preferred language for future mail or email communications whenever possible.
-
-Consider that individuals may have <strong>other challenges in addition to limited English proficiency</strong>, and may require other types of support.
-
-Translation and navigation functions in languages other than English should still meet appropriate accessibility standards to ensure equal access.
-
-<strong>Use the HTML lang attributes</strong> to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
+{:.usa-content-list}
+- Strongly consider providing language to <strong>reassure the user that there are no penalties</strong> associated with accessing information or completing forms in languages other than English. Some people with limited English-language skills have concerns about stigma or that use of a language other than English will impact their immigration status, program eligibility, or future opportunities.
+- Once a user has saved a preference setting other than English, default to their preferred language for future mail or email communications whenever possible.
+- Consider that individuals may have <strong>other challenges in addition to limited English proficiency</strong>, and may require other types of support.
+- Translation and navigation functions in languages other than English should still meet appropriate accessibility standards to ensure equal access.
+- <strong>Use the HTML lang attributes</strong> to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
 
 
 ## Components used in this pattern
@@ -136,6 +133,7 @@ Translation and navigation functions in languages other than English should stil
 
 ## Related
 
+{:.usa-content-list}
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/contact-preferences/">Contact preferences</a> pattern
 - <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Find selected multilingual content</a> pattern
 - <a href="{{ site.baseurl }}/patterns/language-selector/more-than-three-languages/">Select from three or more languages</a> pattern

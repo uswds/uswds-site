@@ -68,32 +68,29 @@ Provide multiple text entry fields that support a rich array of special characte
 </div>
 
 ## Considerations
-### Whether you need this data
-<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. For example, if you aren’t validating identity, you might not need to collect someone’s name, since a username will meet the need for account login.
 
-<strong>Consider what name information you need.</strong> If you don’t need to parse out the separate pieces of a person’s name, consider letting the user enter it into a single `full name` text field. 
+{:.usa-content-list}
+- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. For example, if you aren’t validating identity, you might not need to collect someone’s name, since a username will meet the need for account login.
+- <strong>Consider what name information you need.</strong> If you don’t need to parse out the separate pieces of a person’s name, consider letting the user enter it into a single `full name` text field. 
+- <strong>If the name information is for identity validation.</strong>  Many people routinely use variations of their name depending on context. Be specific about the name you are requesting. Clearly state the context, for example, "Please enter your name exactly as it appears on your passport" so that users can successfully provide the required information.
+- <strong>Consider the field labels.</strong> For many cultures, `first name` and `last name` are not intuitive. In Chinese, Korean, Hungarian, as well as other languages, the first name is the family name. This is an evolving space, with `given name` and `family name` becoming the recommended field labels. Consider using both in a phased approach as people’s comfort level with changing terminology increases (e.g., `First or given name`).
+- <strong>If you need the name for correspondence.</strong> If you are going to use the name information to address correspondence to the user, consider including a separate field that allows the user to specify how they’d like to be addressed. This reduces the potential for addressing someone in a way that they find disrespectful. <a href="https://www.w3.org/International/questions/qa-personal-names">Some cultures find it disrespectful</a> not to include an honorific (Dr., Professor, Mrs.), while others find it overly formal. 
 
-### What to use 
-<strong>If the name information is for identity validation.</strong>  Many people routinely use variations of their name depending on context. Be specific about the name you are requesting. Clearly state the context, for example, "Please enter your name exactly as it appears on your passport" so that users can successfully provide the required information.
+    If you won’t be addressing correspondence, avoid asking for the user’s title. Doing so may reveal their gender and marital status, which they might not want to do. If you do ask for their title, use an optional text input field, not a select.
 
-<strong>Consider the field labels.</strong> For many cultures, `first name` and `last name` are not intuitive. In Chinese, Korean, Hungarian, as well as other languages, the first name is the family name. This is an evolving space, with `given name` and `family name` becoming the recommended field labels. Consider using both in a phased approach as people’s comfort level with changing terminology increases (e.g., `First or given name`).
-
-### Special use cases
-<strong>If you need the name for correspondence.</strong> If you are going to use the name information to address correspondence to the user, consider including a separate field that allows the user to specify how they’d like to be addressed. This reduces the potential for addressing someone in a way that they find disrespectful. <a href="https://www.w3.org/International/questions/qa-personal-names">Some cultures find it disrespectful</a> not to include an honorific (Dr., Professor, Mrs.), while others find it overly formal. 
-
-If you won’t be addressing correspondence, avoid asking for the user’s title. Doing so may reveal their gender and marital status, which they might not want to do. If you do ask for their title, use an optional text input field, not a select.
-
-<strong>If you are collecting information on a family.</strong> Do not assume that partners or dependents of the person completing the form will have the same family name. In many cultures, children have a variation of their parent’s family name and children in blended families may not share a last name with their parents.
-
-<strong>If you will be displaying the names in a list.</strong> Consider that some cultures expect names to be sorted by given name, not family name.
+- <strong>If you are collecting information on a family.</strong> Do not assume that partners or dependents of the person completing the form will have the same family name. In many cultures, children have a variation of their parent’s family name and children in blended families may not share a last name with their parents.
+- <strong>If you will be displaying the names in a list.</strong> Consider that some cultures expect names to be sorted by given name, not family name.
 
 ## Usability guidance
-<strong>Label each field.</strong> Be sure each field is properly labeled. 
+
+{:.usa-content-list}
+- <strong>Label each field.</strong> Be sure each field is properly labeled. 
 
 ## Accessibility 
-<strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 
 
-<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
+{:.usa-content-list}
+- <strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 
+- <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 ## Components used in this pattern
 
@@ -133,6 +130,8 @@ If you won’t be addressing correspondence, avoid asking for the user’s title
 </div>
 
 ## Related
+
+{:.usa-content-list}
 - <a href="{{ site.baseurl }}/templates/form-templates/name-form/">Name form</a> template
 
 ## References

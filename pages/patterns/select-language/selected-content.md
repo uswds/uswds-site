@@ -78,27 +78,26 @@ Place the language selector button at the top right of the screen above site nav
 
 Use this pattern when your site supports three or more languages, but offers a limited amount of content in additional languages. Multilingual sites with select content in additional languages generally take one of two structural approaches:
 
- - <strong>Topic-driven approach.</strong> A landing page is arranged topically, with links to specific content in the larger set of supported languages. This is generally recommended for sites that have rich topical content in a variety of supported languages.
- - <strong>Language-driven approach.</strong> A landing page is arranged by language, showcasing the specific additional languages and the content available in that language. This is generally recommended for sites that have a disparate set of content available in additional languages.
+{:.usa-content-list}
+- <strong>Topic-driven approach.</strong> A landing page is arranged topically, with links to specific content in the larger set of supported languages. This is generally recommended for sites that have rich topical content in a variety of supported languages.
+- <strong>Language-driven approach.</strong> A landing page is arranged by language, showcasing the specific additional languages and the content available in that language. This is generally recommended for sites that have a disparate set of content available in additional languages.
 
- Regardless of how the information is structured, consider providing <strong>prominent in-page notices and links</strong> where appropriate within your site to help surface this additional language content. 
+Regardless of how the information is structured, consider providing <strong>prominent in-page notices and links</strong> where appropriate within your site to help surface this additional language content. 
 
 ## Usability guidance
 
-<strong>Ensure there’s enough color contrast</strong> between the button, the text inside the button, and the site background to ensure readability.
-
-Provide a <strong>visual indicator that the text is a link</strong>. For example, permanently underline text or when hovering.
-
-If the text will be visually presented as a button but coded as a link, it is recommended to <strong>add ARIA role="button" so that screen readers announce it as a button</strong>. Additionally, JavaScript will also need to be added so that keyboard users can activate the button using both the Enter and Spacebar keys. See [Understanding Success Criterion 4.1.2 - Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) for more information.
-
-<strong>Use the HTML `lang` attributes</strong> to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
-
-All logically related items/links must be presented as an <strong>HTML unordered list</strong>.
+{:.usa-content-list}
+- <strong>Ensure there’s enough color contrast</strong> between the button, the text inside the button, and the site background to ensure readability.
+- Provide a <strong>visual indicator that the text is a link</strong>. For example, permanently underline text or when hovering.
+- If the text will be visually presented as a button but coded as a link, it is recommended to <strong>add ARIA role="button" so that screen readers announce it as a button</strong>. Additionally, JavaScript will also need to be added so that keyboard users can activate the button using both the Enter and Spacebar keys. See [Understanding Success Criterion 4.1.2 - Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) for more information.
+- <strong>Use the HTML `lang` attributes</strong> to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
+- All logically related items/links must be presented as an <strong>HTML unordered list</strong>.
 
 
 ## Accessibility 
 
-<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for buttons]({{ site.baseurl }}/components/button/#button-guidance).
+{:.usa-content-list}
+- <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for buttons]({{ site.baseurl }}/components/button/#button-guidance).
 
 ## Components used in this pattern
 
@@ -139,6 +138,7 @@ All logically related items/links must be presented as an <strong>HTML unordered
 
 ## Related
 
+{:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/header/">Header</a> component
 - <a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages">Select from three or more languages</a> pattern
 - <a href="{{ site.baseurl }}/patterns/language-selector/two-languages">Select from two languages</a> pattern

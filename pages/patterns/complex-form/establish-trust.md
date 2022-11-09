@@ -65,24 +65,18 @@ Provide clear information on why it is necessary to complete the form, what info
 
 ## Considerations
 
-### Whether you need this data
-<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
-
-### User needs
-<strong>Lead with the needs voiced from the community.</strong> Nobody knows your users better than your users. Trust is diminished when change is not aligned with needs or values. By considering users’ feedback you can mitigate the risk of alienation. 
-
-### Pre-submission check
-<strong>Provide the user with a summary of their answers before they submit the form.</strong> Give them the opportunity to re-check their answers and provide an easy way for them to revise answers that are incorrect.
+{:.usa-content-list}
+- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all, and clearly explain the reason for asking for the information and what will be done to secure the user’s privacy.
+- <strong>Lead with the needs voiced from the community.</strong> Nobody knows your users better than your users. Trust is diminished when change is not aligned with needs or values. By considering users’ feedback you can mitigate the risk of alienation. 
+- <strong>Provide the user with a summary of their answers before they submit the form.</strong> Give them the opportunity to re-check their answers and provide an easy way for them to revise answers that are incorrect.
 
 ## Usability guidance
 
-<strong>Design to support people in difficult times.</strong> People under stress may have poor recall, make frequent errors completing forms, and may not notice the errors they make. They likely have a hard time staying focused, cannot easily categorize objects, and are easily frustrated. Consider <a href="{{ site.baseurl }}/patterns/complex-form/progress-easily/">simple form pages and helpful, no-blame error messaging</a>. Use care when surfacing content that appears based on previous answers. People under stress may already feel exposed and vulnerable. Use calm, straightforward language.
-
-Whenever possible, <strong>allow users to save and resume</strong> long and potentially stress-inducing forms rather than assuming a form will be completed in a single session. Users may be accessing the form on a mobile device, or in a shared public space like a shelter or library where privacy is not guaranteed. They may be distracted by the environment or family members, or discover that additional records are needed. Some users simply need time to work up to answering difficult, potentially painful questions.
-
-<strong>Practice transparency and integrity.</strong> Don’t hide information from your users. Clearly explain what you are collecting and why. By setting the expectations with your user early, users can feel more inclined to trust the process. 
-
-<strong>Be reliable, consistent, and honest.</strong> Reduce the impact of failure with solid design and engineering. Be a good steward of your audience’s data, resources, and time.
+{:.usa-content-list}
+- <strong>Design to support people in difficult times.</strong> People under stress may have poor recall, make frequent errors completing forms, and may not notice the errors they make. They likely have a hard time staying focused, cannot easily categorize objects, and are easily frustrated. Consider <a href="{{ site.baseurl }}/patterns/complex-form/progress-easily/">simple form pages and helpful, no-blame error messaging</a>. Use care when surfacing content that appears based on previous answers. People under stress may already feel exposed and vulnerable. Use calm, straightforward language.
+- Whenever possible, <strong>allow users to save and resume</strong> long and potentially stress-inducing forms rather than assuming a form will be completed in a single session. Users may be accessing the form on a mobile device, or in a shared public space like a shelter or library where privacy is not guaranteed. They may be distracted by the environment or family members, or discover that additional records are needed. Some users simply need time to work up to answering difficult, potentially painful questions.
+- <strong>Practice transparency and integrity.</strong> Don’t hide information from your users. Clearly explain what you are collecting and why. By setting the expectations with your user early, users can feel more inclined to trust the process. 
+- <strong>Be reliable, consistent, and honest.</strong> Reduce the impact of failure with solid design and engineering. Be a good steward of your audience’s data, resources, and time.
 
 ## Components used in this pattern
 
@@ -122,6 +116,8 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
 </div>
 
 ## Related
+
+{:.usa-content-list}
 - <a href="{{ site.baseurl }}/patterns/complex-form/keep-a-record/">Keep a record of submitted information</a> pattern
 - <a href="{{ site.baseurl }}/patterns/complex-form/progress-easily/">Progress easily through a form</a> pattern
 

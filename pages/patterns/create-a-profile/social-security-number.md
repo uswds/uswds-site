@@ -62,25 +62,25 @@ Provide a single text field to enter the Social Security Number.
 </div>
 
 ## Considerations
-### Whether you need this data
-<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
 
-<strong>People without Social Security Numbers.</strong> Some people do not have Social Security Numbers, and may not be easily able to provide the documentation required to apply for a Social Security Number. Consider whether there are other methods you can use to validate identity in the absence of a Social Security Number.
+{:.usa-content-list}
+- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
+- <strong>People without Social Security Numbers.</strong> Some people do not have Social Security Numbers, and may not be easily able to provide the documentation required to apply for a Social Security Number. Consider whether there are other methods you can use to validate identity in the absence of a Social Security Number.
 
 ## Usability guidance
-<strong>Avoid multiple fields.</strong> If possible, let users type the entire Social Security Number into a single field, not across three separate fields.
 
-<strong>Consider using an input mask.</strong> In fields with a specific expected format, an input mask allows you to constrain and shape the information being entered into that format, without impairing the user’s ability to copy/paste or correct mistyping. If you use an input mask for the Social Security Number field, it should be `___ __ ____` so that the Social Security Number maps to users' experience with Social Security Numbers and is properly formatted. Input masks can help a user more confidently fill out restricted fields, reduce user anxiety about making a mistake, and reduce validation errors and web form abandonment, particularly on mobile devices. Make sure your hint text supports the format expected from the user if using an input mask. 
-
-<strong>Avoid obfuscation.</strong> It may be tempting to obfuscate Social Security Numbers as they are being input similar to the way many password fields operate. This can add to a user’s anxiety and frustration as they will not be able to see whether what they have entered is correct. If you must use obfuscation, provide an easy way for users to disable obfuscation allowing them to confirm their input.
+{:.usa-content-list}
+- <strong>Avoid multiple fields.</strong> If possible, let users type the entire Social Security Number into a single field, not across three separate fields.
+- <strong>Consider using an input mask.</strong> In fields with a specific expected format, an input mask allows you to constrain and shape the information being entered into that format, without impairing the user’s ability to copy/paste or correct mistyping. If you use an input mask for the Social Security Number field, it should be `___ __ ____` so that the Social Security Number maps to users' experience with Social Security Numbers and is properly formatted. Input masks can help a user more confidently fill out restricted fields, reduce user anxiety about making a mistake, and reduce validation errors and web form abandonment, particularly on mobile devices. Make sure your hint text supports the format expected from the user if using an input mask. 
+- <strong>Avoid obfuscation.</strong> It may be tempting to obfuscate Social Security Numbers as they are being input similar to the way many password fields operate. This can add to a user’s anxiety and frustration as they will not be able to see whether what they have entered is correct. If you must use obfuscation, provide an easy way for users to disable obfuscation allowing them to confirm their input.
 
 
 ## Accessibility 
-<strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 
 
-<strong>Use “text” instead of “number” inputs.</strong> Research indicates that <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">numeric inputs still carry many usability problems</a>. The way the user enters the data may differ from what the browser expects. Use `<input type="text" inputmode="numeric" pattern="[0-9]*">` to better support mobile users. 
-
-<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
+{:.usa-content-list}
+- <strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 
+- <strong>Use “text” instead of “number” inputs.</strong> Research indicates that <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">numeric inputs still carry many usability problems</a>. The way the user enters the data may differ from what the browser expects. Use `<input type="text" inputmode="numeric" pattern="[0-9]*">` to better support mobile users. 
+- <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 
 ## Components used in this pattern
@@ -122,7 +122,8 @@ Provide a single text field to enter the Social Security Number.
 
 ## Related
 
-<!-- - <a href="{{ site.baseurl }}/components/input-mask">Input masking</a> component -->
+{:.usa-content-list}
+- <a href="{{ site.baseurl }}/components/input-mask">Input masking</a> component
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/email-address/">Email address</a> pattern
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number/">Phone number</a> pattern
 

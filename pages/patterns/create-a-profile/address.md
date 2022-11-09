@@ -68,36 +68,33 @@ Provide all the fields needed for a user to provide a physical address, even les
 </div>
 
 ## Considerations
-### Whether you need this data
-<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
 
-<strong>People without fixed addresses.</strong> Some people do not have fixed addresses. Consider providing other options for reaching them.
+{:.usa-content-list}
+- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
+- <strong>People without fixed addresses.</strong> Some people do not have fixed addresses. Consider providing other options for reaching them.
 
 ### What to use 
-<strong>Physical vs. mailing address.</strong> If you do need an address, determine if you need a physical address or a mailing address, or both. Physical addresses are most important for determining benefits eligibility or for disaster response. Mailing addresses are important for correspondence.
 
-<strong>Both physical and mailing address.</strong> If you need both the physical and mailing address, consider providing a checkbox for `same as physical address` to auto-populate the mailing address.
-
-<strong>Google Plus Codes.</strong> Consider whether [Google Plus Codes](https://maps.google.com/pluscodes/) are appropriate for your audience. Google Plus Codes identify a physical location, including those that are not identifiable by a typical postal address. They can be used to identify physical locations that are very remote, where addresses are not available, where someone doesn’t have a fixed address (such as a person who is unhoused), or during an emergency. 
-
-<strong>Puerto Rico.</strong> Consider whether residents of Puerto Rico are part of your audience. Addresses for Puerto Rico require the Urbanization field.
+{:.usa-content-list}
+- <strong>Physical vs. mailing address.</strong> If you do need an address, determine if you need a physical address or a mailing address, or both. Physical addresses are most important for determining benefits eligibility or for disaster response. Mailing addresses are important for correspondence.
+- <strong>Both physical and mailing address.</strong> If you need both the physical and mailing address, consider providing a checkbox for `same as physical address` to auto-populate the mailing address.
+- <strong>Google Plus Codes.</strong> Consider whether [Google Plus Codes](https://maps.google.com/pluscodes/) are appropriate for your audience. Google Plus Codes identify a physical location, including those that are not identifiable by a typical postal address. They can be used to identify physical locations that are very remote, where addresses are not available, where someone doesn’t have a fixed address (such as a person who is unhoused), or during an emergency. 
+- <strong>Puerto Rico.</strong> Consider whether residents of Puerto Rico are part of your audience. Addresses for Puerto Rico require the Urbanization field.
 
 
 ## Usability guidance
 
-<strong>Consider using an input mask.</strong> In fields with a specific expected format, an input mask allows you to constrain and shape the information being entered into that format, without impairing the user’s ability to copy/paste or correct mistyping. If you use an input mask for the ZIP code field, it should be `_____-____` so that the ZIP code maps to users' experience with ZIP codes and is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code. Input masks can help a user more confidently fill out restricted fields, reduce  user anxiety about making a mistake, and reduce validation errors and web form abandonment, particularly on mobile devices.
-
-<strong>Avoid dropdowns that require long scrolling.</strong> If possible, let users type their state or territories’ abbreviation when they reach the state dropdown menu, instead of having to scroll and select.
-
-<strong>Provide rich information cues in dropdowns.</strong> For example, for state dropdowns, use `MD - Maryland` and `TX - Texas`, rather than the state code alone.
+{:.usa-content-list}
+- <strong>Consider using an input mask.</strong> In fields with a specific expected format, an input mask allows you to constrain and shape the information being entered into that format, without impairing the user’s ability to copy/paste or correct mistyping. If you use an input mask for the ZIP code field, it should be `_____-____` so that the ZIP code maps to users' experience with ZIP codes and is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code. Input masks can help a user more confidently fill out restricted fields, reduce  user anxiety about making a mistake, and reduce validation errors and web form abandonment, particularly on mobile devices.
+- <strong>Avoid dropdowns that require long scrolling.</strong> If possible, let users type their state or territories’ abbreviation when they reach the state dropdown menu, instead of having to scroll and select.
+- <strong>Provide rich information cues in dropdowns.</strong> For example, for state dropdowns, use `MD - Maryland` and `TX - Texas`, rather than the state code alone.
 
 ## Accessibility
 
-<strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/). 
-
-<strong>Don't auto-advance focus.</strong> Do not use JavaScript to auto advance the focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes. 
-
-<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
+{:.usa-content-list}
+- <strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/). 
+- <strong>Don't auto-advance focus.</strong> Do not use JavaScript to auto advance the focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes. 
+- <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 
 ## Components used in this pattern
@@ -242,31 +239,26 @@ Provide all the fields a user needs to successfully enter a mailing address.
 </div>
 
 ## Considerations
-### Whether you need this data
-<strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
 
-<strong>People without fixed addresses.</strong> Some people do not have fixed addresses. Consider providing other options for them to be reached.
-
-
-### What to use 
-<strong>Physical vs. mailing address.</strong> If you do need an address, determine if you need a physical address or a mailing address, or both. Physical addresses are most important for determining benefits eligibility or for disaster response. Mailing addresses are important for correspondence.
-
-<strong>Both physical and mailing address.</strong> If you need both the physical and mailing address, consider providing a checkbox for `same as physical address` to auto-populate the mailing address.
+{:.usa-content-list}
+- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
+- <strong>People without fixed addresses.</strong> Some people do not have fixed addresses. Consider providing other options for them to be reached.
+- <strong>Physical vs. mailing address.</strong> If you do need an address, determine if you need a physical address or a mailing address, or both. Physical addresses are most important for determining benefits eligibility or for disaster response. Mailing addresses are important for correspondence.
+- <strong>Both physical and mailing address.</strong> If you need both the physical and mailing address, consider providing a checkbox for `same as physical address` to auto-populate the mailing address.
 
 ## Usability guidance
 
-<strong>Consider using an input mask.</strong> In fields with a specific expected format, an input mask allows you to constrain and shape the information being entered into that format, without impairing the user’s ability to copy/paste or correct mistyping. If you use an input mask for the ZIP code field, it should be `_____-____` so that the ZIP code maps to users' experience with ZIP codes and is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code. Input masks can help a user more confidently fill out restricted fields, reduce  user anxiety about making a mistake, and reduce validation errors and web form abandonment, particularly on mobile devices.
-
-<strong>Avoid dropdowns that require long scrolling.</strong> If possible, let users type their state or territories’ abbreviation when they reach the state dropdown menu, instead of having to scroll and select.
-
-<strong>Provide rich information cues in dropdowns.</strong> For example, for state dropdowns, use `MD - Maryland` and `TX - Texas`, rather than the state code alone.
+{:.usa-content-list}
+- <strong>Consider using an input mask.</strong> In fields with a specific expected format, an input mask allows you to constrain and shape the information being entered into that format, without impairing the user’s ability to copy/paste or correct mistyping. If you use an input mask for the ZIP code field, it should be `_____-____` so that the ZIP code maps to users' experience with ZIP codes and is properly formatted, regardless of whether a user enters a five- or nine-digit ZIP code. Input masks can help a user more confidently fill out restricted fields, reduce  user anxiety about making a mistake, and reduce validation errors and web form abandonment, particularly on mobile devices.
+- <strong>Avoid dropdowns that require long scrolling.</strong> If possible, let users type their state or territories’ abbreviation when they reach the state dropdown menu, instead of having to scroll and select.
+- <strong>Provide rich information cues in dropdowns.</strong> For example, for state dropdowns, use `MD - Maryland` and `TX - Texas`, rather than the state code alone.
 
 ## Accessibility 
-<strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 
 
-<strong>Don't auto-advance focus.</strong> Do not use JavaScript to auto advance the focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes. 
-
-<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
+{:.usa-content-list}
+- <strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 
+- <strong>Don't auto-advance focus.</strong> Do not use JavaScript to auto advance the focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes. 
+- <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 ## Components used in this pattern
 
@@ -354,6 +346,8 @@ Provide all the fields a user needs to successfully enter a mailing address.
 </div>
 
 ## Related
+
+{:.usa-content-list}
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/name/">Name</a> pattern
 - <a href="{{ site.baseurl }}/templates/form-templates/address-form/">Address form</a> template
 

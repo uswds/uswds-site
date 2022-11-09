@@ -62,10 +62,10 @@ Allow the user to select from available options, and to include a brief message 
 </div>
 
 ## Considerations
-### Multimodal communication
-<strong>Consider multiple means of communication for critical messaging.</strong> While prioritizing the user’s preferred communication method (for example, text message), do follow up with alternate methods (for example, email) to improve the likelihood of the user seeing your communication.
 
-<strong>User needs.</strong> Strongly consider allowing users to specify any accessibility or language accommodations they require, such as needing an ASL interpreter, preferring braille formatted mailed communications, or preferring audio communication when available.
+{:.usa-content-list}
+- <strong>Consider multiple means of communication for critical messaging.</strong> While prioritizing the user’s preferred communication method (for example, text message), do follow up with alternate methods (for example, email) to improve the likelihood of the user seeing your communication.
+- <strong>User needs.</strong> Strongly consider allowing users to specify any accessibility or language accommodations they require, such as needing an ASL interpreter, preferring braille formatted mailed communications, or preferring audio communication when available.
 
 ## Usability guidance
 
@@ -74,9 +74,9 @@ See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-b
 
 ## Accessibility 
 
-<strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 
-
-<strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
+{:.usa-content-list}
+- <strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 
+- <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 
 ## Components used in this pattern
@@ -134,6 +134,7 @@ See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-b
 
 ## Related
 
+{:.usa-content-list}
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/address">Address</a> pattern
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/email-address">Email address</a> pattern
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number">Phone number</a> pattern

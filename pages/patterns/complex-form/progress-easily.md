@@ -66,13 +66,16 @@ Respectful, inclusive voice and tone throughout the form – the questions, fiel
 </div>
 
 ## Usability guidance
-<strong>Design to support people in difficult times.</strong> People under stress may have poor recall, make frequent errors completing forms, and may not notice the errors they make. They likely have a hard time staying focused, cannot easily categorize objects, and are easily frustrated. Use care when surfacing content that appears based on previous answers. People under stress may already feel exposed and vulnerable. Use calm, straightforward language.
+<ul class="usa-content-list">
+  <li><strong>Design to support people in difficult times.</strong> People under stress may have poor recall, make frequent errors completing forms, and may not notice the errors they make. They likely have a hard time staying focused, cannot easily categorize objects, and are easily frustrated. Use care when surfacing content that appears based on previous answers. People under stress may already feel exposed and vulnerable. Use calm, straightforward language.</li>
+  <li>Whenever possible, <strong>allow users to save and resume</strong> long and potentially stress-inducing forms rather than assuming a form will be completed in a single session. Users may be accessing the form on a mobile device, or in a shared public space like a shelter or library where privacy is not guaranteed. They may be distracted by the environment or family members, or discover that additional records are needed. Some users simply need time to work up to answering difficult, potentially painful questions.</li>
+</ul>
 
-Whenever possible, <strong>allow users to save and resume</strong> long and potentially stress-inducing forms rather than assuming a form will be completed in a single session. Users may be accessing the form on a mobile device, or in a shared public space like a shelter or library where privacy is not guaranteed. They may be distracted by the environment or family members, or discover that additional records are needed. Some users simply need time to work up to answering difficult, potentially painful questions.
 
 ## Accessibility
-
-<strong>Customization.</strong> As you customize, make sure you follow <a href="{{ site.baseurl }}/templates/form-templates/">accessibility guidelines for form templates</a> and the <a href="{{ site.baseurl }}/components/form/">accessibility guidelines for form controls</a>.
+<ul class="usa-content-list">
+  <li><strong>Customization.</strong> As you customize, make sure you follow <a href="{{ site.baseurl }}/templates/form-templates/">accessibility guidelines for form templates</a> and the <a href="{{ site.baseurl }}/components/form/">accessibility guidelines for form controls</a>.</li>
+</ul>
 
 
 ## Components used in this pattern
@@ -113,6 +116,8 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
 </div>
 
 ## Related
+
+{:.usa-content-list}
 - <a href="{{ site.baseurl }}/patterns/complex-form/keep-a-record/">Keep a record of submitted information</a> pattern
 - <a href="{{ site.baseurl }}/patterns/complex-form/establish-trust/">Understand expectations and establish trust</a> pattern
 
@@ -123,9 +128,9 @@ Whenever possible, <strong>allow users to save and resume</strong> long and pote
 - About trauma-informed design – design resources for homelessness. (n.d.) Retrieved on July 26, 2022, from [http://designresourcesforhomelessness.org/about-us-1/](http://designresourcesforhomelessness.org/about-us-1/)
 - Concept of trauma and guidance for a trauma-informed approach. Substance Abuse and Mental Health Services Administration (SAMHSA) - U.S. Department of Health and Human Services. (July 2014) Retrieved on July 21, 2022, from [https://store.samhsa.gov/sites/default/files/d7/priv/sma14-4884.pdf](https://store.samhsa.gov/sites/default/files/d7/priv/sma14-4884.pdf)
 - Project 3: implementing trauma-informed content. (July 9, 2019) Retrieved on July 26, 2022, from [https://www.phila.gov/2019-07-09-project-3-implementing-trauma-informed-content/](https://www.phila.gov/2019-07-09-project-3-implementing-trauma-informed-content/)
-- Trauma-informed computing: towards safer technology experiences for all. Journal article Association for Computing Machinery in Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems (CHI '22). 2022. Retrieved on July 22, 2022, from [https://doi.org/10.1145/3491102.3517475](https://doi.org/10.1145/3491102.3517475)
+- Trauma-informed computing: towards safer technology experiences for all. Journal article Association for Computing Machinery in Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems (CHI ’22). 2022. Retrieved on July 22, 2022, from [https://doi.org/10.1145/3491102.3517475](https://doi.org/10.1145/3491102.3517475)
 - Trauma-informed design research - Design practice that helps not harms. (August 9, 2021) Retrieved on July 26, 2022, from [https://uxdesign.cc/trauma-informed-design-research-69b9ba5f8b08](https://uxdesign.cc/trauma-informed-design-research-69b9ba5f8b08)
-- Trauma-informed web heuristics for communication designers. Journal article, Association for Computing Machinery by Shannon Kelly, Benjamin Lauren, and Kaitlyn Nguyen 39th ACM International Conference on Design of Communication (SIGDOC '21). (2021) Retrieved on July 26, 2022 from  [https://doi.org/10.1145/3472714.3473638](https://doi.org/10.1145/3472714.3473638)
+- Trauma-informed web heuristics for communication designers. Journal article, Association for Computing Machinery by Shannon Kelly, Benjamin Lauren, and Kaitlyn Nguyen 39th ACM International Conference on Design of Communication (SIGDOC ’21). (2021) Retrieved on July 26, 2022 from  [https://doi.org/10.1145/3472714.3473638](https://doi.org/10.1145/3472714.3473638)
 - VA.gov design system - content presentation. (May 2, 2022) Retrieved on July 21, 2022, from [https://design.va.gov/patterns/help-users-to/recover-from-errors#style-and-tone](https://design.va.gov/patterns/help-users-to/recover-from-errors#style-and-tone)
 - VA.gov design system - patterns. (May 26, 2022) Retrieved on July 26, 2022 from [https://design.va.gov/patterns/](https://design.va.gov/patterns/)
 - What is trauma-informed design? (June 4, 2021) Retrieved on July 26, 2022 from [https://www.birdcallux.com/blog/what-is-trauma-informed-design](https://www.birdcallux.com/blog/what-is-trauma-informed-design)

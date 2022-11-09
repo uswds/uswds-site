@@ -3256,7 +3256,7 @@ body {
     @extend %site-h2;
     border-top: units(1px) solid;
     margin-bottom: units(2);
-    margin-top: units(3);
+    margin-top: units(6);
     padding-top: units(1.5);
   }
 
@@ -3381,6 +3381,7 @@ $do-dont-top-bar-width: 1;
 
 .do-dont {
   display: flex;
+  margin-top: units(2);
 }
 
 .do-dont__do,

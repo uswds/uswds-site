@@ -3437,7 +3437,12 @@ $do-dont-top-bar-width: 1;
   padding: 0 units($do-dont-padding) units($do-dont-padding) 0;
 
   ul {
+    margin-bottom: 0;
     overflow-wrap: anywhere;
+  }
+
+  li + li {
+    margin-top: units(1);
   }
 }
 

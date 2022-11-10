@@ -26,25 +26,29 @@ The White House's [Office of Management and Budget](https://www.whitehouse.gov/o
 ### What problem does this solve?
 Gender and biological sex are often used synonymously. Many users  struggle to provide gender information that best represents them. An overwhelming number of choices for gender identification can be as alienating as too limited a set of provided options.
 
-{:.site-component-section-title}
+{:.site-component-name}
 ## Biological sex
- 
-### When to use this pattern 
+
+{:.site-component-section-title}
+### About this pattern
+
+#### When to use this pattern 
 Follow this pattern when you are collecting biological sex as part of your service. Only ask for biological sex if you need it. Sometimes it’s more prudent to skip collecting this information altogether. 
 
-### What's the solution
+#### What's the solution
 Present the user with a controlled vocabulary to accurately depict their biological sex. 
 
-## Guidance
+{:.site-component-section-title}
+### Guidance
 
 <div class="grid-row grid-gap-3">
   <div class="tablet:grid-col">
     <div class="do-dont">
       <div class="do-dont__do">
-        <h3 class="do-dont__heading">
+        <h4 class="do-dont__heading">
           {% include icon.html icon="check_circle" %}
           What to do
-        </h3>
+        </h4>
         <div class="do-dont__content">
           <ul>
             <li>Do determine if you need to collect biological sex and only use if the information is essential to the user's experience.</li>
@@ -60,10 +64,10 @@ Present the user with a controlled vocabulary to accurately depict their biologi
   <div class="tablet:grid-col">
     <div class="do-dont">
       <div class="do-dont__dont">
-        <h3 class="do-dont__heading">
+        <h4 class="do-dont__heading">
           {% include icon.html icon="cancel" %}
           What not to do
-        </h3>
+        </h4>
         <div class="do-dont__content">
           <ul>
             <li>Do not assume gender identity based on the user's biological sex.</li>
@@ -76,28 +80,14 @@ Present the user with a controlled vocabulary to accurately depict their biologi
   </div>
 </div>
 
-### Considerations
-
-{:.usa-content-list}
-- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
-- <strong>If biological sex information is used for identity validation.</strong> Be specific about the information you are requesting. Clearly state the context, such as, "Please enter your biological sex as it appears on your birth certificate." so that users can successfully provide the information required. Gender and biological sex are often used synonymously and users have difficulty determining which information is being requested.
-
-### Accessibility
-
-{:.usa-content-list}
-- This pattern uses radio buttons. See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons). 
-- <strong>Use fieldset and legend.</strong> Group related radio buttons together with `<fieldset>` and describe the group with `<legend>`.
-- <strong>Use proper labels and attributes.</strong> Each radio button should have a `<label>`. Associate the two by matching the label's `for` attribute to the input's `id` attribute.
-- <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
-
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-preview-01" aria-expanded="true"><h2 id="pattern-preview-biological-sex">Pattern preview</h2></button>
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
+  <button class="usa-accordion__button" aria-controls="accordion-preview-01" aria-expanded="true"><h4 id="pattern-preview-biological-sex">Pattern preview</h4></button>
   <div id="accordion-preview-01" class="usa-accordion__content">
     {% include patterns/biological-sex.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code-01" aria-expanded="false"><h2 id="pattern-code-biological-sex">Pattern code</h2></button>
+  <button class="usa-accordion__button" aria-controls="accordion-code-01" aria-expanded="false"><h4 id="pattern-code-biological-sex">Pattern code</h4></button>
   <div id="accordion-code-01" class="usa-accordion__content">
     <div class="usa-sr-only">
       {% highlight text%}{% include patterns/biological-sex.html %}{% endhighlight %}
@@ -106,30 +96,48 @@ Present the user with a controlled vocabulary to accurately depict their biologi
   </div>
 </div>
 
-### Related components and patterns
+#### Considerations
+
+{:.usa-content-list}
+- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
+- <strong>If biological sex information is used for identity validation.</strong> Be specific about the information you are requesting. Clearly state the context, such as, "Please enter your biological sex as it appears on your birth certificate." so that users can successfully provide the information required. Gender and biological sex are often used synonymously and users have difficulty determining which information is being requested.
+
+#### Accessibility
+
+{:.usa-content-list}
+- This pattern uses radio buttons. See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons). 
+- <strong>Use fieldset and legend.</strong> Group related radio buttons together with `<fieldset>` and describe the group with `<legend>`.
+- <strong>Use proper labels and attributes.</strong> Each radio button should have a `<label>`. Associate the two by matching the label's `for` attribute to the input's `id` attribute.
+- <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
+
+#### Related components and patterns
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/radio-buttons/">Radio buttons</a> component
 
-{:.site-component-section-title}
+{:.site-component-name}
 ## Gender 
- 
-### When to use this pattern 
+
+{:.site-component-section-title}
+### About this pattern
+
+#### When to use this pattern 
 Follow this pattern when you are collecting gender identity for your service or program. Only ask for gender if you need it, such as in a health care environment. Sometimes it’s more prudent to skip collecting this information altogether.
 
-### What's the solution
+#### What's the solution
 Present the user with the tools to accurately depict their gender identity. 
 
-## Guidance
+{:.site-component-section-title}
+### Guidance
 
 <div class="grid-row grid-gap-3">
   <div class="tablet:grid-col">
     <div class="do-dont">
       <div class="do-dont__do">
-        <h3 class="do-dont__heading">
+        <h4 class="do-dont__heading">
           {% include icon.html icon="check_circle" %}
           What to do
-        </h3>
+        </h4>
         <div class="do-dont__content">
           <ul>
             <li>Do support long text fields for gender identity. The language behind gender identity is constantly evolving.</li>
@@ -145,10 +153,10 @@ Present the user with the tools to accurately depict their gender identity.
   <div class="tablet:grid-col">
     <div class="do-dont">
       <div class="do-dont__dont">
-        <h3 class="do-dont__heading">
+        <h4 class="do-dont__heading">
           {% include icon.html icon="cancel" %}
           What not to do
-        </h3>
+        </h4>
         <div class="do-dont__content">
           <ul>
             <li>Do not assume gender identity based on biological sex.</li>
@@ -161,34 +169,14 @@ Present the user with the tools to accurately depict their gender identity.
   </div>
 </div>
 
-### Considerations
-
-{:.usa-content-list}
-- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
-- <strong>Avoid using a controlled vocabulary.</strong> If you don’t need to enforce a controlled vocabulary of gender options, strongly consider letting the user self-identify using a single text field.
-
-### Usability guidance
-
-{:.usa-content-list}
-- <strong>Provide clear hint text.</strong> Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, such as, "For example, man, woman, non-binary). Do allow users to opt out with a "Prefer not to answer" option.
-- This pattern uses checkboxes. See [usability guidance for checkboxes]({{ site.baseurl }}/components/checkbox/#usability-guidance-checkbox).
-
-### Accessibility
-
-{:.usa-content-list}
-- <strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/). 
-- <strong>These custom checkboxes are accessible.</strong> The custom checkbox component is accessible to screen readers because the default checkbox is moved off-screen with `position: absolute; left: -999em`.
-- <strong>Use a semantic tag.</strong> The checkbox should have a semantic tag for the `id` attribute, and its corresponding label should have the same value in its `for` attribute.
-- <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
-
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-preview-02" aria-expanded="true"><h2 id="pattern-preview-gender">Pattern preview</h2></button>
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
+  <button class="usa-accordion__button" aria-controls="accordion-preview-02" aria-expanded="true"><h4 id="pattern-preview-gender">Pattern preview</h4></button>
   <div id="accordion-preview-02" class="usa-accordion__content">
     {% include patterns/gender.html %}
   </div>
 </div>
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code-02" aria-expanded="false"><h2 id="pattern-code-gender">Pattern code</h2></button>
+  <button class="usa-accordion__button" aria-controls="accordion-code-02" aria-expanded="false"><h4 id="pattern-code-gender">Pattern code</h4></button>
   <div id="accordion-code-02" class="usa-accordion__content highlight-code">
     <div class="usa-sr-only">
       {% highlight text%}{% include patterns/gender.html %}{% endhighlight %}
@@ -197,14 +185,34 @@ Present the user with the tools to accurately depict their gender identity.
   </div>
 </div>
 
-### Related components and patterns
+#### Considerations
+
+{:.usa-content-list}
+- <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
+- <strong>Avoid using a controlled vocabulary.</strong> If you don’t need to enforce a controlled vocabulary of gender options, strongly consider letting the user self-identify using a single text field.
+
+#### Usability guidance
+
+{:.usa-content-list}
+- <strong>Provide clear hint text.</strong> Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, such as, "For example, man, woman, non-binary). Do allow users to opt out with a "Prefer not to answer" option.
+- This pattern uses checkboxes. See [usability guidance for checkboxes]({{ site.baseurl }}/components/checkbox/#usability-guidance-checkbox).
+
+#### Accessibility
+
+{:.usa-content-list}
+- <strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/). 
+- <strong>These custom checkboxes are accessible.</strong> The custom checkbox component is accessible to screen readers because the default checkbox is moved off-screen with `position: absolute; left: -999em`.
+- <strong>Use a semantic tag.</strong> The checkbox should have a semantic tag for the `id` attribute, and its corresponding label should have the same value in its `for` attribute.
+- <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
+
+#### Related components and patterns
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/pronouns/">Pronouns</a> pattern
 
-### References
+## References
 - Collecting sexual orientation and gender identity information. (March 9, 2022) Retrieved on July 20, 2022, from [https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html](https://www.cdc.gov/hiv/clinicians/transforming-health/health-care-providers/collecting-sexual-orientation.html)
 - Current measures of sexual orientation and gender identity in federal surveys. (August 2016) Retrieved on August 4, 2022, from [https://nces.ed.gov/FCSM/pdf/buda5.pdf](https://nces.ed.gov/FCSM/pdf/buda5.pdf)
 - Federal Interagency Working Group on Improving Measurement of Sexual Orientation and Gender Identity in Federal Surveys (IWG). Current Measures of Sexual Orientation and Gender Identity in Federal Surveys - 2016a. (August 2016) Retrieved on October 31, 2022, from [https://www.fcsm.gov/assets/files/docs/current_measures_20160812.pdf](https://www.fcsm.gov/assets/files/docs/current_measures_20160812.pdf)
@@ -220,8 +228,8 @@ Present the user with the tools to accurately depict their gender identity.
 - Updates on terminology of sexual orientation and gender identity survey measures. (August 2020) Retrieved on October 24, 2022, from [https://nces.ed.gov/FCSM/pdf/FCSM_SOGI_Terminology_FY20_Report_FINAL.pdf](https://nces.ed.gov/FCSM/pdf/FCSM_SOGI_Terminology_FY20_Report_FINAL.pdf)
 - X gender marker available on U.S. Passports starting April 11. (March 31, 2022) Retrieved on July 20, 2022, from [https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/](https://www.state.gov/x-gender-marker-available-on-u-s-passports-starting-april-11/)
 
-### Changelog
+## Changelog
 - Published November 10, 2022
 
-### Disclaimer 
+## Disclaimer 
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

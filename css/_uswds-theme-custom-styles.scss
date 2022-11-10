@@ -1178,6 +1178,24 @@ code[class*="language-plaintext"] {
   margin-bottom: units(7);
 }
 
+.site-component-preview {
+  h5 {
+    @include typeset("lang", "sm", 3);
+    @include u-text($site-ink, "bold");
+    margin-top: units(4);
+    margin-bottom: units(1);
+
+    & + form fieldset legend,
+    & + label {
+      margin-top: 0;
+    }
+  }
+
+  h4 + h5 {
+    margin-top: units(2);
+  }
+}
+
 // External link styles
 
 #{$external-href} {

@@ -75,13 +75,12 @@ Respectful, inclusive voice and tone throughout the form – the questions, fiel
   <li>Whenever possible, <strong>allow users to save and resume</strong> long and potentially stress-inducing forms rather than assuming a form will be completed in a single session. Users may be accessing the form on a mobile device, or in a shared public space like a shelter or library where privacy is not guaranteed. They may be distracted by the environment or family members, or discover that additional records are needed. Some users simply need time to work up to answering difficult, potentially painful questions.</li>
 </ul>
 
-
 ### Accessibility
 <ul class="usa-content-list">
   <li><strong>Customization.</strong> As you customize, make sure you follow <a href="{{ site.baseurl }}/templates/form-templates/">accessibility guidelines for form templates</a> and the <a href="{{ site.baseurl }}/components/form/">accessibility guidelines for form controls</a>.</li>
 </ul>
 
-### Related components, patterns, and templates
+## Related components, patterns, and templates
 
 {:.usa-content-list}
 
@@ -90,10 +89,9 @@ Respectful, inclusive voice and tone throughout the form – the questions, fiel
 - <a href="{{ site.baseurl }}/patterns/complex-form/keep-a-record/">Keep a record of submitted information</a> pattern
 - <a href="{{ site.baseurl }}/patterns/complex-form/establish-trust/">Understand expectations and establish trust</a> pattern
 
+## References
 
-### References
-
-<strong>Trauma-informed design</strong>
+### Trauma-informed design
 - About trauma-informed design – design resources for homelessness. (n.d.) Retrieved on July 26, 2022, from [http://designresourcesforhomelessness.org/about-us-1/](http://designresourcesforhomelessness.org/about-us-1/)
 - Concept of trauma and guidance for a trauma-informed approach. Substance Abuse and Mental Health Services Administration (SAMHSA) - U.S. Department of Health and Human Services. (July 2014) Retrieved on July 21, 2022, from [https://store.samhsa.gov/sites/default/files/d7/priv/sma14-4884.pdf](https://store.samhsa.gov/sites/default/files/d7/priv/sma14-4884.pdf)
 - Project 3: implementing trauma-informed content. (July 9, 2019) Retrieved on July 26, 2022, from [https://www.phila.gov/2019-07-09-project-3-implementing-trauma-informed-content/](https://www.phila.gov/2019-07-09-project-3-implementing-trauma-informed-content/)
@@ -104,7 +102,7 @@ Respectful, inclusive voice and tone throughout the form – the questions, fiel
 - VA.gov design system - patterns. (May 26, 2022) Retrieved on July 26, 2022 from [https://design.va.gov/patterns/](https://design.va.gov/patterns/)
 - What is trauma-informed design? (June 4, 2021) Retrieved on July 26, 2022 from [https://www.birdcallux.com/blog/what-is-trauma-informed-design](https://www.birdcallux.com/blog/what-is-trauma-informed-design)
 
-<strong>Progressive disclosure</strong>
+### Progressive disclosure
 - 10 usability heuristics for user interface design. (April 24, 1994. Updated November 15, 2020.) Retrieved on July 22, 2022, from [https://www.nngroup.com/articles/ten-usability-heuristics/](https://www.nngroup.com/articles/ten-usability-heuristics/)
 - 10 UI design patterns you should be paying attention to. (June 23, 2009), Retrieved on July 27, 2022, from 
 [https://www.smashingmagazine.com/2009/06/10-ui-design-patterns-you-should-be-paying-attention-to/](https://www.smashingmagazine.com/2009/06/10-ui-design-patterns-you-should-be-paying-attention-to/)
@@ -116,8 +114,8 @@ Respectful, inclusive voice and tone throughout the form – the questions, fiel
 - Progressive disclosure: simplifying the complexity. (August 5, 2019) Retrieved on July 26, 2022, from [https://www.shopify.com/nz/partners/blog/progressive-disclosure](https://www.shopify.com/nz/partners/blog/progressive-disclosure)
 - Training wheels in a user interface. Journal article, Association for Computing Machinery by John M. Carroll and Caroline Carrithers Vol. 8 (August 1, 1984). Retrieved on July 27, 2022, from  [https://doi.org/10.1145/358198.358218](https://doi.org/10.1145/358198.358218)
 
-### Changelog
+## Changelog
 - Published November 10, 2022
 
-### Disclaimer
+## Disclaimer
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

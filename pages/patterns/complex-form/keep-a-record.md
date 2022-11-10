@@ -68,6 +68,13 @@ Provide the user with a printable record of their answers using a print style sh
   </div>
 </div>
 
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
+  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h3 id="pattern-preview">Pattern preview</h3></button>
+  <div id="accordion-preview" class="usa-accordion__content">
+    <img src="{{ site.baseurl }}/img/patterns/keep-a-record.png" alt="Image example of helping a user keep a record of submitted information" class="width-full maxw-mobile-lg"/>
+  </div>
+</div>
+
 ### Usability guidance
 #### Test broadly
 
@@ -111,30 +118,22 @@ Provide the user with a printable record of their answers using a print style sh
   <li><strong>Use semantic structures.</strong> While digital teams cannot control how individual users print to PDF because of the wide variety of built-in and add-on tools used for PDF production, good semantic structures will help ensure that PDFs are as usable as possible with screen readers. Test printing on braille printers is also recommended.</li>
 </ul>
 
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
-  <div id="accordion-preview" class="usa-accordion__content">
-    <img src="{{ site.baseurl }}/img/patterns/keep-a-record.png" alt="Image example of helping a user keep a record of submitted information" class="width-full maxw-tablet"/>
-  </div>
-</div>
-
-### Related components, patterns, and templates
+## Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/patterns/complex-form/progress-easily/">Progress easily through a form</a> pattern
 - <a href="{{ site.baseurl }}/patterns/complex-form/establish-trust/">Understand expectations and establish trust</a> pattern
 
-
-### References
+## References
 - A guide to the state of print stylesheets in 2018. (May 1, 2018) Retrieved on July 29, 2022, from [https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/](https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/)
 - Designing for print with CSS. (January 7, 2015) Retrieved on July 29, 2022, from [https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/](https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/)
 - How to create printer-friendly pages with CSS. (January 5, 2020) Retrieved on July 29, 2020, from [https://www.sitepoint.com/css-printer-friendly-pages/](https://www.sitepoint.com/css-printer-friendly-pages/) 
 - SVG on the web - a practical guide. (n.d.) Retrieved on August 23, 2022, from [https://svgontheweb.com/](https://svgontheweb.com/)
 - What is a printer-friendly web page? (November 21, 2018) Retrieved on July 29, 2022, from [https://www.thoughtco.com/printer-friendly-web-page-3469219](https://www.thoughtco.com/printer-friendly-web-page-3469219)
 
-### Changelog
+## Changelog
 - Published November 10, 2022
 
-### Disclaimer
+## Disclaimer
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.
 

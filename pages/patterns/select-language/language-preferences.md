@@ -101,7 +101,7 @@ The pattern allows users to select their language preferences for both written a
 {:.usa-content-list}
 - <strong>Use the HTML lang attributes</strong> to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
 
-### Related components, patterns, and templates
+## Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component
@@ -111,7 +111,7 @@ The pattern allows users to select their language preferences for both written a
 - <a href="{{ site.baseurl }}/patterns/language-selector/more-than-three-languages/">Select from three or more languages</a> pattern
 - <a href="{{ site.baseurl }}/patterns/language-selector/two-languages/">Select from two languages</a> pattern
 
-### References
+## References
 - Improving access to services for persons with limited English proficiency, executive order 13166. (August 11, 2000) Retrieved on July 25, 2022, from [https://www.govinfo.gov/content/pkg/FR-2000-08-16/pdf/00-20938.pdf](https://www.govinfo.gov/content/pkg/FR-2000-08-16/pdf/00-20938.pdf)
 - CMS Appendix A - top 15 non-English languages by states. (n.d.) Retrieved on July 25, 2022, from [https://www.cms.gov/CCIIO/Resources/Regulations-and-Guidance/Downloads/Appendix-A-Top-15-non-english-by-state-MM-508_update12-20-16.pdf](https://www.cms.gov/CCIIO/Resources/Regulations-and-Guidance/Downloads/Appendix-A-Top-15-non-english-by-state-MM-508_update12-20-16.pdf)
 - CMS’s guide to developing a language access plan. (n.d.) Retrieved on July 25, 2022, from [https://www.cms.gov/About-CMS/Agency-Information/OMH/Downloads/Language-Access-Plan-508.pdf](https://www.cms.gov/About-CMS/Agency-Information/OMH/Downloads/Language-Access-Plan-508.pdf)
@@ -121,8 +121,8 @@ The pattern allows users to select their language preferences for both written a
 - OMB memorandum m-17-06, 16. (November 2016) Retrieved on July 25, 2022, from [https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2017/m-17-06.pdf#page=16](https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2017/m-17-06.pdf#page=16)
 
 
-### Changelog
+## Changelog
 - Published November 10, 2022
 
-### Disclaimer
+## Disclaimer
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

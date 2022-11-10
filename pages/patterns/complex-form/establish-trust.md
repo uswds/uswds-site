@@ -20,7 +20,6 @@ Use this pattern when you are asking users to provide more than basic contact in
 ### What’s the solution
 Provide clear information on why it is necessary to complete the form, what information is needed to successfully complete the form, and how the information will be kept secure. Be as transparent as possible. 
 
-
 {:.site-component-section-title}
 ## Guidance
 
@@ -68,6 +67,22 @@ Provide clear information on why it is necessary to complete the form, what info
   </div>
 </div>
 
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
+  <button class="usa-accordion__button" aria-controls="accordion-preview-01" aria-expanded="true"><h3 id="pattern-preview">Pattern preview</h3></button>
+  <div id="accordion-preview-01" class="usa-accordion__content">
+    {% include patterns/establish-trust.html %}
+  </div>
+</div>
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
+  <button class="usa-accordion__button" aria-controls="accordion-code-01" aria-expanded="false"><h3 id="pattern-code">Pattern code</h3></button>
+  <div id="accordion-code-01" class="usa-accordion__content highlight-code">
+    <div class="usa-sr-only">
+       {% highlight text%}{% include patterns/establish-trust.html %}{% endhighlight %}
+    </div>
+    {% highlight html%}{% include patterns/establish-trust.html %}{% endhighlight %}
+  </div>
+</div>
+
 ### Considerations
 
 {:.usa-content-list}
@@ -83,23 +98,7 @@ Provide clear information on why it is necessary to complete the form, what info
 - <strong>Practice transparency and integrity.</strong> Don’t hide information from your users. Clearly explain what you are collecting and why. By setting the expectations with your user early, users can feel more inclined to trust the process. 
 - <strong>Be reliable, consistent, and honest.</strong> Reduce the impact of failure with solid design and engineering. Be a good steward of your audience’s data, resources, and time.
 
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-preview-01" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
-  <div id="accordion-preview-01" class="usa-accordion__content">
-    {% include patterns/establish-trust.html %}
-  </div>
-</div>
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code-01" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
-  <div id="accordion-code-01" class="usa-accordion__content highlight-code">
-    <div class="usa-sr-only">
-       {% highlight text%}{% include patterns/establish-trust.html %}{% endhighlight %}
-    </div>
-    {% highlight html%}{% include patterns/establish-trust.html %}{% endhighlight %}
-  </div>
-</div>
-
-### Related components, patterns, and templates
+## Related components, patterns, and templates
 
 {:.usa-content-list}
 
@@ -108,7 +107,7 @@ Provide clear information on why it is necessary to complete the form, what info
 - <a href="{{ site.baseurl }}/patterns/complex-form/progress-easily/">Progress easily through a form</a> pattern
 
 
-### References
+## References
 - Build trust with these UX guidelines (March 16, 2019) Retrieved on July 19, 2022, from [https://uxdesign.cc/build-trust-with-these-ux-guidelines-f3d547bb2014.](https://uxdesign.cc/build-trust-with-these-ux-guidelines-f3d547bb2014)
 - Building trust with users through open communication and feedback, (June 13, 2019) Retrieved on July 19, 2022, from [https://digital.gov/2019/06/13/building-trust-with-users-through-open-communication-feedback/.](https://digital.gov/2019/06/13/building-trust-with-users-through-open-communication-feedback/)  
 - Communicating with and about people with disabilities. (February 1, 2022) Retrieved on July 28, 2022, from [https://www.cdc.gov/ncbddd/disabilityandhealth/materials/factsheets/fs-communicating-with-people.html.](https://www.cdc.gov/ncbddd/disabilityandhealth/materials/factsheets/fs-communicating-with-people.html) 
@@ -117,8 +116,8 @@ Provide clear information on why it is necessary to complete the form, what info
 - Trauma-informed computing: towards safer technology experiences for all. Journal article Association for Computing Machinery in Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems (CHI '22). 2022. Retrieved on July 22, 2022, from [https://doi.org/10.1145/3491102.3517475.](https://doi.org/10.1145/3491102.3517475)
 - Trust or bust: communicating trustworthiness in web design. (March 6, 1999) Retrieved on July 28, 2022, from [https://www.nngroup.com/articles/communicating-trustworthiness/.](https://www.nngroup.com/articles/communicating-trustworthiness/)
 
-### Changelog
+## Changelog
 - Published November 10, 2022
 
-### Disclaimer
+## Disclaimer
  Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

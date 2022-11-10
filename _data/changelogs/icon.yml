@@ -3,8 +3,8 @@ type: component
 changelogURL:
 items:
   - date: 2022-10-19
-    summary: Fixed potential incompatibility with ARM-based Macs.
-    summaryAdditional: We updated our SVG sprite compiler. This should resolve potential dependency incompatibilities on computers with ARM processors.
+    summary: Updated our SVG sprite compiler to fix potential incompatibility with ARM-based Macs.
+    summaryAdditional: This should resolve potential dependency incompatibilities on computers with ARM processors.
     affectsJavascript: true
     githubPr: 4665
     githubRepo: uswds

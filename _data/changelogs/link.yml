@@ -63,7 +63,7 @@ items:
   affectsGuidance: true
   affectsJavascript: false
   affectsMarkup: false
-  affectsStyles: true
+  affectsStyles: false
   githubPr: 1249
   githubRepo: uswds-site
   versionUswds: 2.11.0

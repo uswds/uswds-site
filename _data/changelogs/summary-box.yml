@@ -22,14 +22,14 @@ items:
   # 2.11.2 release
   - date: 2021-04-28
     summary: Added missing summary box Sass package.
-    summaryAdditional:
+    summaryAdditional: Now you can add a summary box package to your project with `packages/usa-summary-box`.
     isBreaking: false
     affectsAccessibility: false
     affectsAssets: true
-    affectsGuidance: true
+    affectsGuidance: false
     affectsJavascript: false
     affectsMarkup: false
-    affectsStyles: false
+    affectsStyles: true
     githubPr: 4162
     githubRepo: uswds
     versionUswds: 2.11.2

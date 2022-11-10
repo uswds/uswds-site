@@ -3037,7 +3037,8 @@ body {
 .site-accordion-code {
   > .usa-accordion__button {
     h2,
-    h3 {
+    h3,
+    h4 {
       @include typeset("lang", "sm", 1);
       @include u-margin-y(0);
     }

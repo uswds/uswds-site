@@ -20,7 +20,7 @@ Use this pattern when collecting contact preference information from the user. C
 ### When to consider something else
 If you do not have the current capability of contacting the user via multiple channels of communication, do not ask the user for their communication preferences. Allowing a user to select a preferred communication option that is not operational risks communication gaps and can destroy a user's trust in a program or service.
 
-### What's the solution
+### What's the solution?
 Allow the user to select from available options, and to include a brief message in a text input or textarea field if explanation is required. Use hint text to better explain the field's purpose, for example, if the preferred contact method is dependent on time or date, or if there’s another factor that needs to be considered when communicating with the user.
 
 {:.site-component-section-title}

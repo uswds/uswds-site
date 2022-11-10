@@ -35,7 +35,7 @@ Gender and biological sex are often used synonymously. Many users  struggle to p
 #### When to use this pattern 
 Follow this pattern when you are collecting biological sex as part of your service. Only ask for biological sex if you need it. Sometimes it’s more prudent to skip collecting this information altogether. 
 
-#### What's the solution
+#### What's the solution?
 Present the user with a controlled vocabulary to accurately depict their biological sex. 
 
 {:.site-component-section-title}
@@ -124,7 +124,7 @@ Present the user with a controlled vocabulary to accurately depict their biologi
 #### When to use this pattern 
 Follow this pattern when you are collecting gender identity for your service or program. Only ask for gender if you need it, such as in a health care environment. Sometimes it’s more prudent to skip collecting this information altogether.
 
-#### What's the solution
+#### What's the solution?
 Present the user with the tools to accurately depict their gender identity. 
 
 {:.site-component-section-title}

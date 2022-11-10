@@ -17,7 +17,7 @@ Email addresses can be confusing to enter and users often make mistakes. Some us
 ### When to use this pattern 
 Use this pattern whenever you are collecting email addresses.
 
-### What's the solution
+### What's the solution?
 A text input field with validation and robust error messaging to guide users in providing the correct information.
 
 {:.site-component-section-title}

@@ -17,7 +17,7 @@ A name or biological sex are not indicative of the pronouns a person uses. Allow
 ### When to use this pattern 
 Follow this pattern when you are planning on referring to the person using pronouns instead of their name.
 
-### What's the solution
+### What's the solution?
 Provide a text entry field that supports a rich array of special characters and accents that allows the user to inform you of their pronouns. This pattern best supports verbal communication. This pattern is not appropriate for automated communication.
 
 {:.site-component-section-title}

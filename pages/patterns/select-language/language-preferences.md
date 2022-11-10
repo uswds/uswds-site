@@ -17,7 +17,7 @@ Approximately 8 percent of the total U.S. population over the age of five is con
 ### When to use this pattern 
 Use this pattern when collecting information on the preferred written or spoken language of a user, in order to provide documentation in their preferred language, consultation with a speaker of their preferred language, or translation/interpretation services.
 
-### What's the solution
+### What's the solution?
 The pattern allows users to select their language preferences for both written and spoken communication and to indicate their preferred language if it is not in the list.
 
 {:.site-component-section-title}

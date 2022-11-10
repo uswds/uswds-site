@@ -20,7 +20,7 @@ Use this pattern if your site offers a select set of content available in additi
 ### When to consider something else
 If your site is available in two or more languages and all content is available in each language, see related patterns <a href="{{ site.baseurl }}/patterns/language-selector/two-languages/">Select from two languages</a> or <a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages/">Select from three or more languages</a>.
 
-### What's the solution
+### What's the solution?
 Place the language selector button at the top right of the screen above site navigation to allow the user to access a dropdown with links to content in other languages.
 
 {:.site-component-section-title}

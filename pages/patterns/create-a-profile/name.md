@@ -17,7 +17,7 @@ People have a wide variety of names in various formats. It can be confusing and 
 ### When to use this pattern 
 Follow this pattern when you need to ask for a user’s name as part of your service. Only ask for a name if you need it. 
 
-### What's the solution
+### What's the solution?
 Provide multiple text entry fields that support a rich array of special characters and accents. Provide direction on how to complete the form and what to do if the name doesn’t fit into the provided format.
 
 {:.site-component-section-title}

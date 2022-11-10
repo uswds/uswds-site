@@ -27,7 +27,7 @@ Race and ethnicity can be challenging information for a user to provide, especia
 ### When to use this pattern 
 Follow this pattern when asking for a user's race and ethnicity as part of your service or program. Only ask for this information if you need it.
 
-### What's the solution
+### What's the solution?
 Allow selection of more than one race and acknowledge people with multiple racial backgrounds. Provide direction on how to complete the form, for example, “Select one or more” or "Select all that apply" explanatory text. Whenever possible, allow respondents to self-identify their ethnicity through an open-ended text entry field.
 
 {:.site-component-section-title}

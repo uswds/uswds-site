@@ -3,6 +3,7 @@ primary:
     href: /how-to-use-uswds/
   - href: /design-principles/
   - href: /components/
+  - href: /patterns/
   - href: /design-tokens/
   - href: /utilities/
   - href: /templates/
@@ -13,6 +14,8 @@ mobile:
     collapsible: true
   - href: /design-principles/
   - href: /components/
+    collapsible: true
+  - href: /patterns/
     collapsible: true
   - href: /design-tokens/
     collapsible: true
@@ -75,6 +78,18 @@ Components:
   - href: /components/tooltip/
   - href: /components/typography/
   - href: /components/validation/
+
+Patterns:
+  - text: Patterns
+    href: /patterns/
+  - text: Introducing patterns
+    href: /patterns/intro/
+  - text: Create a user profile
+    href: /patterns/create-a-profile/
+  - text: Complete a complex form
+    href: /patterns/complex-form/
+  - text: Select a language
+    href: /patterns/language-selector/
 
 How to use USWDS:
   - href: /how-to-use-uswds/

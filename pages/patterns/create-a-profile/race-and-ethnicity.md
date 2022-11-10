@@ -11,7 +11,7 @@ lead: The race and ethnicity pattern allows users to provide race and ethnicity 
 {:.site-component-section-title}
 ## About this pattern
 
-## Background
+### Background
 
 While there isn’t a generally accepted definition for race, the Census Bureau describes the [race categories included in census questionnaires](https://www.census.gov/topics/population/race/about.html) as reflecting “a social definition ... not an attempt to define race biologically, anthropologically, or genetically.” 
 
@@ -34,7 +34,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
 ## Guidance
 
 <div class="grid-row grid-gap-3">
-  <div class="tablet:grid-col-5">
+  <div class="tablet:grid-col">
     <div class="do-dont">
       <div class="do-dont__do">
         <h3 class="do-dont__heading">
@@ -54,24 +54,26 @@ Allow selection of more than one race and acknowledge people with multiple racia
       </div>
     </div>
   </div>
-  <div class="tablet:grid-col-5">
-    <div class="do-dont__dont">
-      <h3 class="do-dont__heading">
-        {% include icon.html icon="cancel" %}
-        What not to do
-      </h3>
-      <div class="do-dont__content">
+  <div class="tablet:grid-col">
+    <div class="do-dont">
+      <div class="do-dont__dont">
+        <h3 class="do-dont__heading">
+          {% include icon.html icon="cancel" %}
+          What not to do
+        </h3>
+        <div class="do-dont__content">
           <ul>
             <li>Do not restrict choices to a single race or ethnicity.</li>
             <li>Do not require the user to answer. Provide an option like “Prefer not to say.”</li>
             <li>Do not capture race or ethnicity information for operational or generalization purposes. For example, understanding that a majority of your webinar attendees self-identify as Hispanic does not mean that Hispanic people enjoy webinars.</li>
           </ul>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-## Considerations
+### Considerations
 
 {:.usa-content-list}
 - <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
@@ -80,7 +82,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
 - <strong>If you are collecting information on a family.</strong> Do not assume that partners or dependents of the person completing the form will identify as the same race or ethnicity.
 - <strong>If you will be displaying race and/or ethnicity in a list.</strong> Always treat racial and ethnic groups as proper nouns and capitalize them. Consider the order list items appear to avoid the perception of bias or favoritism. 
 
-## Usability guidance
+### Usability guidance
 
 {:.usa-content-list}
 - <strong>If you're only collecting information on race.</strong> Do allow users to select all races that apply with clear hint text, for example, "Select all that apply".
@@ -103,7 +105,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
     - Some other race
     - Prefer not to answer
 
-## Accessibility
+### Accessibility
 
 {:.usa-content-list}
 - <strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/). 
@@ -111,43 +113,6 @@ Allow selection of more than one race and acknowledge people with multiple racia
 - <strong>These custom checkboxes are accessible.</strong> The custom checkbox component is accessible to screen readers because the default checkbox is moved off-screen with `position: absolute; left: -999em`.
 - <strong>Use a semantic tag.</strong> The checkbox should have a semantic tag for the `id` attribute, and its corresponding label should have the same value in its `for` attribute.
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
-
-## Components used in this pattern
-
-<div class="usa-card-group flex-row margin-top-2">
-  <div
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
-  role="region"
-  aria-atomic="true"
-  aria-label="Visit checkbox component"
-  data-meta="Visit checkbox component">
-      <div class="usa-card__container">
-      <header class="usa-card__header">
-          <h3 class="usa-card__heading font-lang-lg">Checkbox</h3>
-      </header>
-      <div class="usa-card__body font-lang-sm">
-          <p>Checkboxes allow users to select one or more options from a list.</p>
-          <a href="{{ site.baseurl }}/components/checkbox/">Visit Checkbox</a>
-      </div>
-      </div>
-  </div>
-  <div
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
-  role="region"
-  aria-atomic="true"
-  aria-label="Visit text input component"
-  data-meta="Visit text input component">
-      <div class="usa-card__container">
-      <header class="usa-card__header">
-          <h3 class="usa-card__heading font-lang-lg">Text input</h3>
-      </header>
-      <div class="usa-card__body font-lang-sm">
-          <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
-          <a href="{{ site.baseurl }}/components/text-input/">Visit Text input</a>
-      </div>
-      </div>
-  </div>
-</div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
@@ -165,7 +130,13 @@ Allow selection of more than one race and acknowledge people with multiple racia
   </div>
 </div>
 
-## References
+### Related components and patterns
+
+{:.usa-content-list}
+- <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component
+- <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
+
+### References
 - 2010 Census Race and Hispanic Origin Alternative Questionnaire experiment. (February 28, 2013) Retrieved on July 15, 2022, from [https://www.census.gov/programs-surveys/decennial-census/decade/2010/program-management/cpex/2010-cpex-211.html](https://www.census.gov/programs-surveys/decennial-census/decade/2010/program-management/cpex/2010-cpex-211.html)
 - 2015 National Content Test Race and Ethnicity Analysis report. (February 28, 2017) Retrieve on July 15, 2022, from [https://www2.census.gov/programs-surveys/decennial/2020/program-management/final-analysis-reports/2015nct-race-ethnicity-analysis.pdf](https://www2.census.gov/programs-surveys/decennial/2020/program-management/final-analysis-reports/2015nct-race-ethnicity-analysis.pdf)
 - About the topic of race. (n.d.) Retrieved on July 15, 2022, from [https://www.census.gov/topics/population/race/about.html](https://www.census.gov/topics/population/race/about.html)
@@ -178,7 +149,8 @@ Allow selection of more than one race and acknowledge people with multiple racia
 - Standards for maintaining, collecting, and presenting federal data on race and ethnicity. (September 30, 2016) Retrieved July 15, 2022, from [https://www.federalregister.gov/documents/2016/09/30/2016-23672/standards-for-maintaining-collecting-and-presenting-federal-data-on-race-and-ethnicity](https://www.federalregister.gov/documents/2016/09/30/2016-23672/standards-for-maintaining-collecting-and-presenting-federal-data-on-race-and-ethnicity)
 - Who is Hispanic? (September 15, 2022) Retrieved November 4, 2022, from [https://www.pewresearch.org/fact-tank/2022/09/15/who-is-hispanic/](https://www.pewresearch.org/fact-tank/2022/09/15/who-is-hispanic/)
 
-## Changelog
+### Changelog
 - Published November 10, 2022
 
-Disclaimer: Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.
+### Disclaimer
+Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

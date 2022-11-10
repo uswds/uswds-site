@@ -24,7 +24,7 @@ summary_sections:
 
   - heading: Digital interactions through the lens of DEIA
     description: |-
-     Designers all over the world are applying [inclusive design principles](#) to their work, creating more equitable experiences that work for everyone. Every day, practitioners are learning more about how inclusivity and equity need to be reflected in their work. Our team worked hard to put diversity, equity, and inclusivity at the center of what we did every day. One of our interviewees said it well:
+     Designers all over the world are applying inclusive design principles to their work, creating more equitable experiences that work for everyone. Every day, practitioners are learning more about how inclusivity and equity need to be reflected in their work. Our team worked hard to put diversity, equity, and inclusivity at the center of what we did every day. One of our interviewees said it well:
 
   - heading: Research
     description: |-

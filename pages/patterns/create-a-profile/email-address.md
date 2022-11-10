@@ -24,7 +24,7 @@ A text input field with validation and robust error messaging to guide users in 
 ## Guidance
 
 <div class="grid-row grid-gap-3">
-  <div class="tablet:grid-col-5">
+  <div class="tablet:grid-col">
     <div class="do-dont">
       <div class="do-dont__do">
         <h3 class="do-dont__heading">
@@ -48,13 +48,14 @@ A text input field with validation and robust error messaging to guide users in 
       </div>
     </div>
   </div>
-  <div class="tablet:grid-col-5">
-    <div class="do-dont__dont">
-      <h3 class="do-dont__heading">
-        {% include icon.html icon="cancel" %}
-        What not to do
-      </h3>
-      <div class="do-dont__content">
+  <div class="tablet:grid-col">
+    <div class="do-dont">
+      <div class="do-dont__dont">
+        <h3 class="do-dont__heading">
+          {% include icon.html icon="cancel" %}
+          What not to do
+        </h3>
+        <div class="do-dont__content">
           <ul>
             <li>Do not require users to re-enter their email address, unless you have a good reason for doing so.</li>
             <li>Do not set arbitrary minimum lengths for the local portion of the email address (occurring before the @ symbol) or domain (after the @ symbol) parts.</li>
@@ -62,69 +63,32 @@ A text input field with validation and robust error messaging to guide users in 
             <li>Do not restrict top-level domains for email address unless your use case is very specific, for example, only .gov or .mil addresses.</li> 
             <li>Do not assume that email messages are private unless explicitly stated through permission-based settings.</li>
           </ul>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-## Considerations
+### Considerations
 
 {:.usa-content-list}
 - <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
 - <strong>Sensitive information.</strong> If you plan on using the email address to follow up with the user, consider whether you need to ask the user whether potentially sensitive information can be included in the message. Some users may not want sensitive information left in email messages for privacy or safety reasons.
 
-## Usability guidance
+### Usability guidance
 
 {:.usa-content-list}
 - <strong>Do not require users to re-enter their email address, unless you have a good reason for doing so.</strong> If you're collecting email addresses for the purpose of communicating with the user, verifying that a user's email address is correctly spelled reduces the risk of sending sensitive information to the wrong individual. 
 - <strong>Consider validating a user's email address by requiring them to click an emailed verification link.</strong> When creating an account based on an email address, requiring users to click an emailed verification link and successfully authenticate  ensures information will be shared with the correct individual.
 - This pattern uses radio buttons. See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons). 
 
-## Accessibility 
+### Accessibility 
 
 {:.usa-content-list}
 - <strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 
 - <strong>Use fieldset and legend.</strong> Group related radio buttons together with `<fieldset>` and describe the group with `<legend>`.
 - <strong>Use proper labels and attributes.</strong> Each radio button should have a `<label>`. Associate the two by matching the label's `for` attribute to the input's `id` attribute.
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
-
-
-## Components used in this pattern
-
-<div class="usa-card-group flex-row margin-top-2">
-  <div
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
-  aria-atomic="true"
-  role="region"
-  aria-label="Visit text input component"
-  data-meta="Visit text input component">
-    <div class="usa-card__container">
-      <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg">Text input</h3>
-      </header>
-      <div class="usa-card__body font-lang-sm">
-        <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
-        <a href="{{ site.baseurl }}/components/text-input/">Visit Text input</a>
-      </div>
-    </div>
-  </div>
-  <div
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
-  role="region"
-  aria-atomic="true"
-  aria-label="Visit radio button component"
-  data-meta="Visit Toggle">
-    <div class="usa-card__container">
-      <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg">Radio button</h3>
-      </header>
-      <div class="usa-card__body font-lang-sm">
-        <p>Radio buttons allow users to select exactly one choice from a group.</p>
-        <a href="{{ site.baseurl }}/components/radio-buttons/">Visit Radio buttons</a>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
@@ -142,18 +106,21 @@ A text input field with validation and robust error messaging to guide users in 
   </div>
 </div>
 
-## Related
+### Related components and patterns
 
 {:.usa-content-list}
+- <a href="{{ site.baseurl }}/components/radio-buttons/">Radio buttons</a> component
+- <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number/">Phone number</a> pattern
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number/">Social Security Number</a> pattern
 
-## References
+### References
 - Mobile form usability: avoid splitting single input entities. (February 12, 2013) Retrieved on July 20, 2022, from [https://baymard.com/blog/mobile-form-usability-single-input-fields](https://baymard.com/blog/mobile-form-usability-single-input-fields)
 - RFC 822. (August 13, 1982) Retrieved on July 20, 2022, from [https://datatracker.ietf.org/doc/html/rfc822](https://datatracker.ietf.org/doc/html/rfc822). See also [RFC Editor Errata](https://www.rfc-editor.org/errata_search.php?rfc=822).
 - Validate email addresses (Regular Expressions Cookbook). (n.d). Retrieved on July 20, 2022, from [https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s01.html](https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s01.html)
 
-## Changelog
+### Changelog
 - Published November 10, 2022
 
-Disclaimer: Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.
+### Disclaimer
+Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

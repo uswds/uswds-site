@@ -114,6 +114,7 @@ Place the language selector menu at the top of the screen above site navigation,
 ### Related components and patterns
 
 {:.usa-content-list}
+- <a href="{{ site.baseurl }}/components/button/">Button</a> component
 - <a href="{{ site.baseurl }}/components/header/">Header</a> component
 - <a href="{{ site.baseurl }}/components/language-selector/">Language selector</a> component
 - <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Find selected multilingual content</a> pattern

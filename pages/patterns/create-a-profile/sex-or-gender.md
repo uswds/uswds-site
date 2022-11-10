@@ -15,15 +15,15 @@ lead: This pattern helps users to provide gender identity and sex information in
 
 Sex assigned at birth is a biological attribute. In the digital space, male and female are often the only provided options, but there are instances where an individual’s biological sex is not unambiguously male or female.
 
-Gender is a social construct. Gender identity is an expression of a user’s identity and is integral to their sense of self. Gendered experiences are complex and vary widely. Even d
+Gender is a social construct. Gender identity is an expression of a user’s identity and is integral to their sense of self. Gendered experiences are complex and vary widely.
 
 Historically, the federal government has asked people to choose between male and female based on the sex they were assigned at birth. Recently, agencies and programs have been moving toward providing more options, reflecting the fact that biological sex is not always unambiguously male or female, and that an individual’s gender identity may not reflect the sex they were assigned at birth.
 
-In April 2022, the U.S. Department of State began allowing people to specify “X,” along with “male” or “female” on their passports. (Note: “non-binary” is generally used only when referring to gender identity. It is being used by the Department of State’s changes in their recording of sex, defining `X` as `Unspecified or another gender identity` including non-binary, intersex, and gender non-conforming individuals.) While biological sex is often used as part of validating identity, gender identity is generally more important for ensuring respectful communication. 
+In April 2022, the U.S. Department of State began allowing people to specify “X,” along with “male” or “female” on their passports. (Note: “non-binary” is generally used only when referring to gender identity. It is being used by the Department of State’s changes in their recording of sex, defining `X` as `Unspecified or another gender identity` including non-binary, intersex, and gender non-conforming individuals.) While sex listed at birth is often used as part of validating identity, gender identity is generally more important for ensuring respectful communication. 
 
-The White House's [Office of Management and Budget](https://www.whitehouse.gov/omb/), [Federal Committee on Statistical Methodology](https://www.fcsm.gov/) interagency committee, and [Centers for Disease Control and Prevention](https://www.cdc.gov/) are just some of the federal agencies and programs working to define a meaningful, inclusive way to collect gender identity and sex information when it is needed. We were especially interested in the way [Centers for Disease Control and Prevention](https://www.cdc.gov/) articulates the importance of asking two separate questions to ensure healthcare providers can recommend appropriate preventative care: current gender identity, and sex listed at birth.
+The White House's [Office of Management and Budget](https://www.whitehouse.gov/omb/), [Federal Committee on Statistical Methodology](https://www.fcsm.gov/) interagency committee, and [Centers for Disease Control and Prevention](https://www.cdc.gov/) are just some of the federal agencies and programs working to define a meaningful, inclusive way to collect gender identity and sex information when it is needed. We were especially interested in the way [Centers for Disease Control and Prevention](https://www.cdc.gov/) articulates the importance of asking two separate questions to ensure healthcare providers can recommend appropriate preventative care: `current gender identity`, and `sex listed at birth`.
 
-This is a quickly evolving space, and language recommendations are also evolving and will continue to do so.
+This is an evolving space, and language recommendations are also evolving. In this pattern we've used the term `gender identity` to capture the way a person wishes to be represented, vs. gender as a construct. We've also used the term `sex` vs. `biological sex`,`sex assigned at birth`, or `sex listed at birth`. This term, in particular, should be evaluated for your specific program needs.
 
 ### What problems do these patterns solve?
 Gender and sex are often used synonymously. Many users struggle to provide gender information that best represents them. An overwhelming number of choices for gender identity can be as alienating as too limited a set of provided options.
@@ -116,13 +116,13 @@ Present the user with the tools to accurately depict their gender identity.
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 {:.site-component-name}
-## Biological sex
+## Sex
 
 ### When to use this pattern 
-Follow this pattern when you are collecting biological sex as part of your service. Only ask for biological sex if you need it. Sometimes it’s more prudent to skip collecting this information altogether. 
+Follow this pattern when you are collecting sex listed at birth as part of your service. Only ask for this information if you need it. Sometimes it’s more prudent to skip collecting this information altogether. 
 
 ### What's the solution?
-Present the user with a controlled vocabulary to accurately depict their biological sex. 
+Present the user with a controlled vocabulary to accurately depict sex listed at birth. 
 
 {:.site-component-section-title}
 ### Guidance
@@ -137,10 +137,10 @@ Present the user with a controlled vocabulary to accurately depict their biologi
         </h4>
         <div class="do-dont__content">
           <ul>
-            <li>Do determine if you need to collect biological sex and only use if the information is essential to the user's experience.</li>
-            <li>Do only provide biological options when asking for biological sex (<code>male</code>, <code>female</code>, and <code>X</code>). </li>
+            <li>Do determine if you need to collect sex listed at birth and only use if the information is essential to the user's experience.</li>
+            <li>Do provide a controlled vocabulary when asking for sex listed at birth (<code>male</code>, <code>female</code>, and <code>X</code>). </li>
             <li>Do be clear about why you are asking for the information.</li>
-            <li>Do be transparent about what you are asking for. To some people gender and biological sex are synonymous, so ensure you use clear language.</li>
+            <li>Do be transparent about what you are asking for. To some people gender and sex are synonymous, so ensure you use clear language.</li>
             <li>Do use fieldset and legend to group related radio buttons together, and clear labels and attributes on these form elements.</li>
           </ul> 
         </div>
@@ -156,9 +156,9 @@ Present the user with a controlled vocabulary to accurately depict their biologi
         </h4>
         <div class="do-dont__content">
           <ul>
-            <li>Do not assume gender identity based on the user's biological sex.</li>
+            <li>Do not assume gender identity based on the user's sex.</li>
             <li>Do not include "prefer not to answer." If you are considering adding this option, then consider whether the question is needed at all.</li>
-            <li>Do not combine gender identity and biological sex into a single field.</li>
+            <li>Do not combine gender identity and sex into a single question.</li>
           </ul>
         </div>
       </div>

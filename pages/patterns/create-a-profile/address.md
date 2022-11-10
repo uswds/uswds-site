@@ -17,13 +17,16 @@ While most addresses in the U.S. follow a specific pattern, there are unique var
 {:.site-component-name}
 ## Physical address
 
-### When to use this pattern 
+{:.site-component-section-title}
+### About this pattern
+
+#### When to use this pattern 
 Use this pattern when you need the physical location of a person and you need to parse out the specific parts of the address. This may be important when determining benefits eligibility, for disaster recovery purposes, or other reasons. Since physical addresses may be new, temporary, or not currently served by the USPS consider asking for a mailing address, too. Physical addresses may be where a building or property is located, or potentially where a displaced individual is currently located. Mailing addresses are where postal mail must be sent.
 
-### When to consider something else
+#### When to consider something else
 This pattern supports domestic U.S. addresses, including the U.S. territories and military outposts. If you need to collect addresses that may not fit this format, such as international addresses for citizens living overseas, you will need to [use something else](https://www.upu.int/en/Postal-Solutions/Programmes-Services/Addressing-Solutions).
 
-### What’s the solution
+#### What’s the solution
 Provide all the fields needed for a user to provide a physical address, even less conventional attributes like a [Google Plus Code](https://maps.google.com/pluscodes/). 
 
 {:.site-component-section-title}
@@ -124,13 +127,18 @@ Provide all the fields needed for a user to provide a physical address, even les
 {:.site-component-name}
 ## Mailing address
 
-### When to use this pattern 
+{:.site-component-section-title}
+### About this pattern
+
+
+#### When to use this pattern 
 Use this pattern when you need to provide written correspondence or materials to a person and need to parse out the elements of the address. For many people this may be the same address as their physical address.
 
-### When to consider something else
+#### When to consider something else
 This pattern supports domestic U.S. addresses, including the U.S. territories and military outposts. If you need to collect addresses that may not fit this format, such as international addresses for citizens living overseas, you will need to [use something else](https://www.upu.int/en/Postal-Solutions/Programmes-Services/Addressing-Solutions). 
 
-### What’s the solution
+
+#### What’s the solution
 Provide all the fields a user needs to successfully enter a mailing address.
 
 {:.site-component-section-title}

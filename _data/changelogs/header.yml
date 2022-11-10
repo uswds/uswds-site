@@ -61,8 +61,21 @@ items:
     githubPr: 4411
     githubRepo: uswds
     versionUswds: 2.13.0
+  - date: 2021-12-14
+    summary:  Improved resilience of icon-only functionality in search.
+    summaryAdditional: Updated search to add a text equivalent if the image path is broken and does not load.
+    isBreaking: true
+    affectsAccessibility: true
+    affectsAssets: false
+    affectsGuidance: false
+    affectsJavascript: false
+    affectsMarkup: true
+    affectsStyles: true
+    githubPr: 4274
+    githubRepo: uswds
+    versionUswds: 2.13.0
   - date: 2021-08-18
-    summary: Updated header dropdown menus to close with `escape` or `focusout`.
+    summary: Updated header dropdown menus to close with escape or focus out.
     summaryAdditional: Now `esc` or focusing out will close dropdown menus in the header.
     affectsAccessibility: true
     affectsJavascript: true

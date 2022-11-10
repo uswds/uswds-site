@@ -24,7 +24,7 @@ Provide multiple text entry fields that support a rich array of special characte
 ## Guidance
 
 <div class="grid-row grid-gap-3">
-  <div class="tablet:grid-col-5">
+  <div class="tablet:grid-col">
     <div class="do-dont">
       <div class="do-dont__do">
         <h3 class="do-dont__heading">
@@ -49,13 +49,14 @@ Provide multiple text entry fields that support a rich array of special characte
       </div>
     </div>
   </div>
-  <div class="tablet:grid-col-5">
-    <div class="do-dont__dont">
-      <h3 class="do-dont__heading">
-        {% include icon.html icon="cancel" %}
-        What not to do
-      </h3>
-      <div class="do-dont__content">
+  <div class="tablet:grid-col">
+    <div class="do-dont">
+      <div class="do-dont__dont">
+        <h3 class="do-dont__heading">
+          {% include icon.html icon="cancel" %}
+          What not to do
+        </h3>
+        <div class="do-dont__content">
           <ul>
             <li>Do not require users to enter something in each field. In some cultures, such as Indonesian and Icelandic, people may have only one name.</li>
             <li>If you need to request a middle name, don’t request just an initial. In some cultures, people often have multiple middle names and may not typically abbreviate them with initials.</li>
@@ -63,12 +64,13 @@ Provide multiple text entry fields that support a rich array of special characte
             <li>Do not normalize casing in names. In some names, such as McNamara and van der Waals, casing is part of the name.</li>
             <li>Do not ask for maiden name. Women are not the only ones who change their names. Ask for previous name.</li>
           </ul>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-## Considerations
+### Considerations
 
 {:.usa-content-list}
 - <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. For example, if you aren’t validating identity, you might not need to collect someone’s name, since a username will meet the need for account login.
@@ -82,37 +84,16 @@ Provide multiple text entry fields that support a rich array of special characte
 - <strong>If you are collecting information on a family.</strong> Do not assume that partners or dependents of the person completing the form will have the same family name. In many cultures, children have a variation of their parent’s family name and children in blended families may not share a last name with their parents.
 - <strong>If you will be displaying the names in a list.</strong> Consider that some cultures expect names to be sorted by given name, not family name.
 
-## Usability guidance
+### Usability guidance
 
 {:.usa-content-list}
 - <strong>Label each field.</strong> Be sure each field is properly labeled. 
 
-## Accessibility 
+### Accessibility 
 
 {:.usa-content-list}
 - <strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
-
-## Components used in this pattern
-
-<div class="usa-card-group flex-row margin-top-2">
-  <div
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
-  role="region"
-  aria-atomic="true"
-  aria-label="Visit text input component"
-  data-meta="Visit text input component">
-    <div class="usa-card__container">
-      <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg">Text input</h3>
-      </header>
-      <div class="usa-card__body font-lang-sm">
-        <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
-        <a href="{{ site.baseurl }}/components/text-input/">Visit Text Input</a>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
@@ -130,17 +111,19 @@ Provide multiple text entry fields that support a rich array of special characte
   </div>
 </div>
 
-## Related
+### Related components and patterns
 
 {:.usa-content-list}
+- <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
 - <a href="{{ site.baseurl }}/templates/form-templates/name-form/">Name form</a> template
 
-## References
+### References
 - Diacritics and special characters by language. (n.d.) Retrieved July 15, 2022, from [https://web.library.yale.edu/cataloging/music/diacrit](https://web.library.yale.edu/cataloging/music/diacrit) 
 - GOV.UK Design System: Names. (n.d.) Retrieved July 27, 2022, from [https://design-system.service.gov.uk/patterns/names/](https://design-system.service.gov.uk/patterns/names/)
 - Personal names around the world. (August 17, 2011) Retrieved July 15, 2022, from [https://www.w3.org/International/questions/qa-personal-names](https://www.w3.org/International/questions/qa-personal-names)
 
-## Changelog
+### Changelog
 - Published November 10, 2022
 
-Disclaimer: Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.
+### Disclaimer
+Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

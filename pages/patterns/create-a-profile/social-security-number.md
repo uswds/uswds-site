@@ -17,7 +17,7 @@ A Social Security Number is often a critical piece for validating identity when 
 ### When to use this pattern 
 Only use this pattern when you need to confirm a user's identity by asking for their Social Security Number. This information may be important when determining eligibility for many federal programs, such as federal student loans, public assistance, and Medicare.
 
-## When to consider something else
+### When to consider something else
 If you do not specifically need a person’s Social Security Number, do not ask for or collect this information. The Social Security Number is intricately linked to a person’s identity, and should only be used when absolutely required for identification purposes.
 
 While most U.S. citizens and eligible U.S. residents have a Social Security Number, some people may not know their Social Security Number, or may lack the necessary documentation to obtain one easily. 

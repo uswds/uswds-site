@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
 - date: 2022-08-05
-  summary: Styled `aria-disabled` to match `disabled`.
+  summary: Styled aria-disabled to match disabled.
   summaryAdditional: Now disabled styling is applied whether you use `disabled` (disabled and hidden from screen readers) or `aria-disabled` (disabled and visible to screen readers).
   isBreaking: false
   affectsAccessibility: true

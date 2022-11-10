@@ -24,7 +24,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.13.3
   - date: 2022-03-07
-    summary: Added proper `aria-controls` to combo box.
+    summary: Added proper aria-controls to combo box.
     summaryAdditional: Now the combo box input gets the expected `aria-controls` property when it's initialized.
     affectsAccessibility: true
     affectsJavascript: true
@@ -40,6 +40,13 @@ items:
     versionUswds: 2.12.2
   - date: 2021-08-18
     summary: Improved performance of date picker and combo box JavaScript.
+    summaryAdditional:
+    affectsJavascript: true
+    githubPr: 4256
+    githubRepo: uswds
+    versionUswds: 2.12.1
+  - date: 2021-08-18
+    summary: Improved how combo box parses and displays `option` text.
     summaryAdditional:
     affectsJavascript: true
     githubPr: 4256

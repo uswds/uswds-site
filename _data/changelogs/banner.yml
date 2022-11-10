@@ -3,7 +3,7 @@ type: component
 changelogURL:
 items:
   - date: 2022-10-09
-    summary: Updated the `aria-label` in English versions of banner.
+    summary: Updated the aria-label in English versions of banner.
     summaryAdditional: When read out on a screen reader, the statement "An official website of the United States government" can sound like "Unofficial website of the United States government". To minimize confusion, we updated the component's `aria-label` to instead read "Official website of the United States government".
     affectsAccessibility: true
     affectsMarkup: true
@@ -11,7 +11,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.2.0
   - date: 2022-10-09
-    summary: Added aria-hidden attribute to the flag icon in the banner component.
+    summary: Added aria-hidden attribute to the flag icon.
     summaryAdditional: The flag icon in the banner component is purely decorative and we can safely remove it from the screen reader readout.
     affectsAccessibility: true
     affectsMarkup: true
@@ -36,7 +36,7 @@ items:
     githubRepo: uswds
     versionUswds: 3.1.0
   - date: 2022-06-17
-    summary: Updated `uswds-init.js` to better suppress flashing content.
+    summary: Updated uswds-init.js to better suppress flashing content.
     summaryAdditional: We updated the `uswds-init` script's event listener to target `window` from `document`. This assures that the page's JavaScript is fully loaded before we remove the `loadingClass` that suppresses the open banner. The banner should no longer flash open.
     affectsAssets: true
     affectsJavascript: true
@@ -76,7 +76,7 @@ items:
     githubPr: 1136
     githubRepo: uswds-site
   - date: 2020-12-17
-    summary: Introduced `uswds-init.js` to prevent banner flash.
+    summary: Introduced uswds-init.js to prevent banner flash.
     summaryAdditional: When added to the `head` of your document, this script prevents the banner from flashing its content on page load and shifting content.
     affectsAssets: true
     affectsJavascript: true
@@ -99,7 +99,7 @@ items:
     githubRepo: uswds
     versionUswds: 2.8.0
   - date: 2020-07-09
-    summary: Added spanish versions.
+    summary: Added Spanish versions.
     summaryAdditional: Included approved Spanish versions of the banner text.
     affectsContent: true
     githubPr: 3524

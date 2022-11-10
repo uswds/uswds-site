@@ -1,7 +1,7 @@
 ---
 title: Gender identity and sex
 story: Help a user select their gender identity and sex
-permalink: /patterns/create-a-profile/biological-sex-or-gender/
+permalink: /patterns/create-a-profile/gender-and-sex/
 layout: pattern
 category: Patterns
 sub-category: Create a user profile

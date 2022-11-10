@@ -6,7 +6,7 @@ component:
 permalink: /components/typography/
 redirect_from:
 - /typography/
-layout: styleguide
+layout: in-page-nav
 title: Typography
 category: Components
 lead: "Government websites need clear and consistent headings, highly legible body paragraphs, clear labels, and easy-to-use input fields. Our default typefaces are designed for legibility and can adapt to a variety of visual tones."

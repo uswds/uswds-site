@@ -2,6 +2,12 @@ title: Data visualizations
 type: component
 changelogURL:
 items:
+  - date: 2022-10-31
+    summary: Fixed invalid ARIA attribute in the bar chart example.
+    summaryAdditional: Updated the value of `aria-describedby` to reference the correct element.
+    affectsGuidance: true
+    githubPr: 1861
+    githubRepo: uswds-site
   - date: 2022-04-28
     summary: Released USWDS 3.0.
     summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.

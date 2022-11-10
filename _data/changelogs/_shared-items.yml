@@ -1,0 +1,12 @@
+  - date: 2021-03-02
+    summary: Updated guidance to identify banner as a core component.
+    affectsGuidance: true
+    githubPr: 1136
+    githubRepo: uswds-site
+
+  - date: 2022-04-28
+    summary: Added reference to the `usa-combo-box` package.
+    affectsGuidance: true
+    githubPr: 1528
+    githubRepo: uswds-site
+

@@ -9,6 +9,11 @@ items:
     githubPr: 4922
     githubRepo: uswds
     versionUswds: 3.2.0
+  - date: 2022-09-26
+    summary: Updated accessibility documentation to give clearer instructions for adding the appropriate ARIA role.
+    affectsGuidance: true
+    githubPr: 1770
+    githubRepo: uswds-site
   - date: 2022-04-28
     summary: Released USWDS 3.0.
     summaryAdditional: USWDS 3.0 allows teams to update their projects to modern Sass syntax, improve performance, and reduce the size of project CSS.

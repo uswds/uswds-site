@@ -13,7 +13,7 @@ items:
     versionUswds: 3.1.0
   - date: 2022-07-20
     summary: Updated documentation to reference the correct multi-select attribute.
-    summaryAdditional: The attribute was updated from <code>aria-multiselectable="true"</code> to <code>data-allow-multiple</code>.
+    summaryAdditional: The attribute was updated from `aria-multiselectable="true"` to `data-allow-multiple`.
     affectsGuidance: true
     githubPr: 1718
     githubRepo: uswds-site
@@ -32,13 +32,13 @@ items:
     versionUswds: 3.0.0
   - date: 2021-03-17
     summary: Restored missing white icons.
-    summaryAdditional: Restored <code>add--white</code> and <code>remove--white</code> icons.
+    summaryAdditional: Restored `add--white` and `remove--white` icons.
     affectsAssets: true
     githubPr: 4106
     githubRepo: uswds
     versionUswds: 2.11.1
   - date: 2021-03-02
-    summary: Introduced white <code>add</code>, <code>remove</code>, and <code>expand_more</code> icons.
+    summary: Introduced white `add`, `remove`, and `expand_more` icons.
     summaryAdditional:
     isBreaking: false
     affectsAssets: true

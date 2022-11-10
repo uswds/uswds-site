@@ -6,10 +6,10 @@ category: Patterns
 lead: Help a user to create their profile
 subnav:
   - href: /patterns/create-a-profile/address/
-  - href: /patterns/create-a-profile/biological-sex-or-gender/
   - href: /patterns/create-a-profile/contact-preferences/
   - href: /patterns/create-a-profile/date-of-birth/
   - href: /patterns/create-a-profile/email-address/
+  - href: /patterns/create-a-profile/gender-and-sex/
   - href: /patterns/create-a-profile/name/
   - href: /patterns/create-a-profile/phone-number/
   - href: /patterns/create-a-profile/pronouns/
@@ -34,21 +34,6 @@ User profiles are central to a person’s identity. A user profile may be integr
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users to input their physical or mailing addresses for successful communication.</p>
-      </div>
-    </div>
-  </div>
-  <div
-  class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
-  role="region"
-  aria-atomic="true"
-  aria-label="Visit gender identity and sex pattern"
-  data-meta="Visit gender identity and sex pattern">
-    <div class="usa-card__container">
-      <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/biological-sex-or-gender/">Select their <strong>gender identity and sex</strong></a></h3>
-      </header>
-      <div class="usa-card__body font-lang-sm">
-        <p>Help users to select their gender identity and sex.</p>
       </div>
     </div>
   </div>
@@ -94,6 +79,21 @@ User profiles are central to a person’s identity. A user profile may be integr
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users to enter their email address.</p>
+      </div>
+    </div>
+  </div>
+  <div
+  class="usa-card site-component-card grid-col-12 tablet:grid-col-4 margin-bottom-2"
+  role="region"
+  aria-atomic="true"
+  aria-label="Visit gender identity and sex pattern"
+  data-meta="Visit gender identity and sex pattern">
+    <div class="usa-card__container">
+      <header class="usa-card__header">
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/gender-and-sex/">Select their <strong>gender identity and sex</strong></a></h3>
+      </header>
+      <div class="usa-card__body font-lang-sm">
+        <p>Help users to select their gender identity and sex.</p>
       </div>
     </div>
   </div>

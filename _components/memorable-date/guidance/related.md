@@ -1,3 +1,3 @@
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/date-of-birth/">Date of Birth</a> pattern
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number/">Phone Number</a> pattern
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/social-security/">Social Security Number</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number/">Social Security Number</a> pattern

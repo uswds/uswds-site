@@ -18,9 +18,6 @@ subnav:
   - text: Listen
     href: "#listen"
 ---
-
-<div></div>
-
 {:.border-top-05.border-primary.padding-top-2.margin-bottom-2}
 
 ## Start with real user needs

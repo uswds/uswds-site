@@ -114,7 +114,6 @@ Provide all the fields needed for a user to provide a physical address, even les
 ### Related components and patterns
 
 {:.usa-content-list}
-
 - <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component
 - <a href="{{ site.baseurl }}/components/input-mask/">Input mask</a> component
 - <a href="{{ site.baseurl }}/components/select/">Select</a> component
@@ -221,7 +220,6 @@ Provide all the fields a user needs to successfully enter a mailing address.
 ### Related components and patterns
 
 {:.usa-content-list}
-
 - <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component
 - <a href="{{ site.baseurl }}/components/input-mask/">Input mask</a> component
 - <a href="{{ site.baseurl }}/components/select/">Select</a> component
@@ -241,4 +239,3 @@ Provide all the fields a user needs to successfully enter a mailing address.
 
 ### Disclaimer
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.
-

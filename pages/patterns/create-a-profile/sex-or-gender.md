@@ -23,7 +23,7 @@ In April 2022, the U.S. Department of State began allowing people to specify “
 
 The White House's [Office of Management and Budget](https://www.whitehouse.gov/omb/), [Federal Committee on Statistical Methodology](https://www.fcsm.gov/) interagency committee, and the [Centers for Disease Control and Prevention](https://www.cdc.gov/) are just some of the federal agencies and programs working to define a meaningful, inclusive way to collect biological sex and gender information when it is needed. This is a quickly evolving space, and recommendations will also evolve.
 
-### What problems do these solve?
+### What problems do these patterns solve?
 Gender and biological sex are often used synonymously. Many users  struggle to provide gender information that best represents them. An overwhelming number of choices for gender identification can be as alienating as too limited a set of provided options.
 
 {:.site-component-name}

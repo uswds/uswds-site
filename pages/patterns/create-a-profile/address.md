@@ -11,7 +11,7 @@ lead: The physical and mailing address patterns help users enter their address s
 {:.site-component-section-title}
 ## About these patterns
 
-### What problems do these solve?
+### What problems do these patterns solve?
 While most addresses in the U.S. follow a specific pattern, there are unique variations in some rural areas, U.S. territories, and military posts. In addition, some people are unhoused or in temporary housing, and may need to specify a mailing address that is different from their physical address —  particularly in disaster relief and recovery situations.
 
 {:.site-component-name}

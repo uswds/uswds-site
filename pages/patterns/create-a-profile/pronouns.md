@@ -104,7 +104,7 @@ Provide a text entry field that supports a rich array of special characters and 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/sex-or-gender/">Sex or gender</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-profile/biological-sex-or-gender/">Biological sex or gender</a> pattern
 
 ## References
 - Ask users for gender or sex. (n.d.) Retrieved on July 19, 2022, from [https://design-system.service.gov.uk/patterns/gender-or-sex/](https://design-system.service.gov.uk/patterns/gender-or-sex/)

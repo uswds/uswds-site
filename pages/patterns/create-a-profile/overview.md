@@ -6,7 +6,7 @@ category: Patterns
 lead: Help a user to create their profile
 subnav:
   - href: /patterns/create-a-profile/address/
-  - href: /patterns/create-a-profile/sex-or-gender/
+  - href: /patterns/create-a-profile/biological-sex-or-gender/
   - href: /patterns/create-a-profile/contact-preferences/
   - href: /patterns/create-a-profile/date-of-birth/
   - href: /patterns/create-a-profile/email-address/
@@ -45,7 +45,7 @@ User profiles are central to a person’s identity. A user profile may be integr
   data-meta="Visit biological sex or gender pattern">
     <div class="usa-card__container">
       <header class="usa-card__header">
-        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/sex-or-gender/">Select their <strong>biological sex or gender</strong></a></h3>
+        <h3 class="usa-card__heading font-lang-lg pattern-card-heading"><a href="{{ site.baseurl }}/patterns/create-a-profile/biological-sex-or-gender/">Select their <strong>biological sex or gender</strong></a></h3>
       </header>
       <div class="usa-card__body font-lang-sm">
         <p>Help users to select their biological sex and gender identity.</p>

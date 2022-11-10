@@ -84,15 +84,11 @@ Provide multiple text entry fields that support a rich array of special characte
 - <strong>If you are collecting information on a family.</strong> Do not assume that partners or dependents of the person completing the form will have the same family name. In many cultures, children have a variation of their parent’s family name and children in blended families may not share a last name with their parents.
 - <strong>If you will be displaying the names in a list.</strong> Consider that some cultures expect names to be sorted by given name, not family name.
 
-### Usability guidance
-
-{:.usa-content-list}
-- <strong>Label each field.</strong> Be sure each field is properly labeled. 
-
 ### Accessibility 
 
 {:.usa-content-list}
 - <strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 
+- <strong>Label each field.</strong> Be sure each field is properly labeled. 
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">

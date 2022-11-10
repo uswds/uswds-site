@@ -24,7 +24,7 @@ Provide a text entry field that supports a rich array of special characters and 
 ## Guidance
 
 <div class="grid-row grid-gap-3">
-  <div class="tablet:grid-col-5">
+  <div class="tablet:grid-col">
     <div class="do-dont">
       <div class="do-dont__do">
         <h3 class="do-dont__heading">
@@ -47,76 +47,41 @@ Provide a text entry field that supports a rich array of special characters and 
       </div>
     </div>
   </div>
-  <div class="tablet:grid-col-5">
-    <div class="do-dont__dont">
-      <h3 class="do-dont__heading">
-        {% include icon.html icon="cancel" %}
-        What not to do
-      </h3>
-      <div class="do-dont__content">
+  <div class="tablet:grid-col">
+    <div class="do-dont">
+      <div class="do-dont__dont">
+        <h3 class="do-dont__heading">
+          {% include icon.html icon="cancel" %}
+          What not to do
+        </h3>
+        <div class="do-dont__content">
           <ul>
             <li>Do not make the field mandatory. While the information can be helpful, there are neutral options that can be used.</li>
             <li>Do not assume pronouns. If a user chooses not to answer, use inclusive language like “they” or “you” instead of “he” or “she.”</li>
             <li>Do not overwhelm the user with options. Default to a text entry field to allow user-provided pronouns.</li>
           </ul>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-## Considerations
+### Considerations
 
 {:.usa-content-list}
 - <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
 - <strong>If you don't need a controlled vocabulary.</strong> Strongly consider allowing for user-provided pronouns with an open-ended text field. Users should also have the ability to opt out of providing this information.
 
-## Usability guidance
+### Usability guidance
 
 {:.usa-content-list}
 - <strong>Provide clear hint text.</strong> Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, such as, "For example, he, she, they, ze." Do allow users to opt out with a "Prefer not to answer" option.
 
-## Accessibility
+### Accessibility
 
 {:.usa-content-list}
 - <strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/). 
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
-
-## Components used in this pattern
-
-<div class="usa-card-group flex-row margin-top-2">
-  <div
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
-  role="region"
-  aria-atomic="true"
-  aria-label="Visit checkbox component"
-  data-meta="Visit checkbox component">
-      <div class="usa-card__container">
-      <header class="usa-card__header">
-          <h3 class="usa-card__heading font-lang-lg">Checkbox</h3>
-      </header>
-      <div class="usa-card__body font-lang-sm">
-          <p>Checkboxes allow users to select one or more options from a list.</p>
-          <a href="{{ site.baseurl }}/components/checkbox/">Visit Checkbox</a>
-      </div>
-    </div>
-  </div>
-  <div
-  class="usa-card site-component-card grid-col-4 tablet:grid-col-4 margin-bottom-2"
-  role="region"
-  aria-atomic="true"
-  aria-label="Visit text input component"
-  data-meta="Visit text input component">
-      <div class="usa-card__container">
-      <header class="usa-card__header">
-          <h3 class="usa-card__heading font-lang-lg">Text input</h3>
-      </header>
-      <div class="usa-card__body font-lang-sm">
-          <p>A text input allows users to enter any combination of letters, numbers, or symbols. Text input boxes can span single or multiple lines.</p>
-          <a href="{{ site.baseurl }}/components/text-input/">Visit Text input</a>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
   <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
@@ -134,12 +99,14 @@ Provide a text entry field that supports a rich array of special characters and 
   </div>
 </div>
 
-## Related
+### Related components and patterns
 
 {:.usa-content-list}
+- <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component
+- <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/sex-or-gender/">Sex or gender</a> pattern
 
-## References
+### References
 - Ask users for gender or sex. (n.d.) Retrieved on July 19, 2022, from [https://design-system.service.gov.uk/patterns/gender-or-sex/](https://design-system.service.gov.uk/patterns/gender-or-sex/)
 - Asking about gender in online forms. (September 18, 2015) Retrieved on July 19, 2022, from [http://www.practicemakesprogress.org/blog/2015/9/18/asking-about-gender-on-online-forms](http://www.practicemakesprogress.org/blog/2015/9/18/asking-about-gender-on-online-forms)
 - DOL policies on gender identity: rights and responsibi (n.d.) Retrieved on November 1, 2022, from [https://www.dol.gov/agencies/oasam/centers-offices/civil-rights-center/internal/policies/gender-identity](https://www.dol.gov/agencies/oasam/centers-offices/civil-rights-center/internal/policies/gender-identity)
@@ -153,7 +120,8 @@ Provide a text entry field that supports a rich array of special characters and 
 - Pronoun use in email signatures. (June 29, 2020) Retrieved on November 1, 2022, from [https://www.publicservice.govt.nz/guidance/pronoun-use-in-email-signatures/](https://www.publicservice.govt.nz/guidance/pronoun-use-in-email-signatures/)
 - They, their. (April 10, 2019). Retrieved on July 19, 2022, from [https://design.va.gov/content-style-guide/they-their](https://design.va.gov/content-style-guide/they-their) 
 
-## Changelog
+### Changelog
 - Published November 10, 2022
 
-Disclaimer: Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.
+### Disclaimer
+Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

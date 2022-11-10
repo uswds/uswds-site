@@ -69,6 +69,22 @@ A text input field with validation and robust error messaging to guide users in 
   </div>
 </div>
 
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
+  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h3 id="pattern-preview">Pattern preview</h3></button>
+  <div id="accordion-preview" class="usa-accordion__content">
+    {% include patterns/email.html %}
+  </div>
+</div>
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
+  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h3 id="pattern-code">Pattern code</h3></button>
+  <div id="accordion-code" class="usa-accordion__content highlight-code">
+    <div class="usa-sr-only">
+      {% highlight text%}{% include patterns/email.html %}{% endhighlight %}
+    </div>
+      {% highlight html%}{% include patterns/email.html %}{% endhighlight %}
+  </div>
+</div>
+
 ### Considerations
 
 {:.usa-content-list}
@@ -85,28 +101,12 @@ A text input field with validation and robust error messaging to guide users in 
 ### Accessibility 
 
 {:.usa-content-list}
-- <strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 
+- <strong>Follow input guidance.</strong> These text fields should follow the accessibility <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 
 - <strong>Use fieldset and legend.</strong> Group related radio buttons together with `<fieldset>` and describe the group with `<legend>`.
 - <strong>Use proper labels and attributes.</strong> Each radio button should have a `<label>`. Associate the two by matching the label's `for` attribute to the input's `id` attribute.
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
-  <div id="accordion-preview" class="usa-accordion__content">
-    {% include patterns/email.html %}
-  </div>
-</div>
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
-  <div id="accordion-code" class="usa-accordion__content highlight-code">
-    <div class="usa-sr-only">
-      {% highlight text%}{% include patterns/email.html %}{% endhighlight %}
-    </div>
-      {% highlight html%}{% include patterns/email.html %}{% endhighlight %}
-  </div>
-</div>
-
-### Related components, patterns, and templates
+## Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/radio-buttons/">Radio buttons</a> component
@@ -114,13 +114,13 @@ A text input field with validation and robust error messaging to guide users in 
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number/">Phone number</a> pattern
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number/">Social Security Number</a> pattern
 
-### References
+## References
 - Mobile form usability: avoid splitting single input entities. (February 12, 2013) Retrieved on July 20, 2022, from [https://baymard.com/blog/mobile-form-usability-single-input-fields](https://baymard.com/blog/mobile-form-usability-single-input-fields)
 - RFC 822. (August 13, 1982) Retrieved on July 20, 2022, from [https://datatracker.ietf.org/doc/html/rfc822](https://datatracker.ietf.org/doc/html/rfc822). See also [RFC Editor Errata](https://www.rfc-editor.org/errata_search.php?rfc=822).
 - Validate email addresses (Regular Expressions Cookbook). (n.d). Retrieved on July 20, 2022, from [https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s01.html](https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s01.html)
 
-### Changelog
+## Changelog
 - Published November 10, 2022
 
-### Disclaimer
+## Disclaimer
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

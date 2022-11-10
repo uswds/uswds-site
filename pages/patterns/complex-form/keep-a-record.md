@@ -26,7 +26,7 @@ Provide the user with a printable record of their answers using a print style sh
 ## Guidance
 
 <div class="grid-row grid-gap-3">
-  <div class="tablet:grid-col-5">
+  <div class="tablet:grid-col">
     <div class="do-dont">
       <div class="do-dont__do">
         <h3 class="do-dont__heading">
@@ -49,30 +49,32 @@ Provide the user with a printable record of their answers using a print style sh
       </div>
     </div>
   </div>
-  <div class="tablet:grid-col-5">
-    <div class="do-dont__dont">
-      <h3 class="do-dont__heading">
-        {% include icon.html icon="cancel" %}
-        What not to do
-      </h3>
-      <div class="do-dont__content">
+  <div class="tablet:grid-col">
+    <div class="do-dont">
+      <div class="do-dont__dont">
+        <h3 class="do-dont__heading">
+          {% include icon.html icon="cancel" %}
+          What not to do
+        </h3>
+        <div class="do-dont__content">
           <ul>
             <li>Don't arbitrarily choose which questions and answers are displayed on the record of submitted information. If a question was important enough to ask, it's important enough to keep in the user's record of their form submission.</li>
             <li>Don't include images that are not important to understanding the content.</li>
             <li>Do not print-disable pages or try to suppress page numbering.</li>
           </ul>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-## Usability guidance
-### Test broadly
+### Usability guidance
+#### Test broadly
 
 {:.usa-content-list}
 - <strong>Test print outputs.</strong> Test printing using a variety of printers, print-to-PDF options, and assistive output devices, using <a href="https://digital.gov/2013/07/15/digital-metrics-for-federal-agencies/">representative browser and operating system combinations</a> prior to launch. Remember that mobile device users will have additional challenges printing or saving to PDF so some on-screen guidance may be necessary.
 
-### Optimize for print
+#### Optimize for print
 <ul class="usa-content-list">
 
   <li><strong>Keep it simple.</strong> Remove unnecessary headers, footers, images, and iconography. Ensure design elements that should be printed have transparent backgrounds.</li>
@@ -104,7 +106,7 @@ Provide the user with a printable record of their answers using a print style sh
   </li>
 </ul>
 
-## Accessibility
+### Accessibility
 <ul class="usa-content-list">
   <li><strong>Use semantic structures.</strong> While digital teams cannot control how individual users print to PDF because of the wide variety of built-in and add-on tools used for PDF production, good semantic structures will help ensure that PDFs are as usable as possible with screen readers. Test printing on braille printers is also recommended.</li>
 </ul>
@@ -116,22 +118,23 @@ Provide the user with a printable record of their answers using a print style sh
   </div>
 </div>
 
-## Related
+### Related components and patterns
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/patterns/complex-form/progress-easily/">Progress easily through a form</a> pattern
 - <a href="{{ site.baseurl }}/patterns/complex-form/establish-trust/">Understand expectations and establish trust</a> pattern
 
 
-## References
+### References
 - A guide to the state of print stylesheets in 2018. (May 1, 2018) Retrieved on July 29, 2022, from [https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/](https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/)
 - Designing for print with CSS. (January 7, 2015) Retrieved on July 29, 2022, from [https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/](https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/)
 - How to create printer-friendly pages with CSS. (January 5, 2020) Retrieved on July 29, 2020, from [https://www.sitepoint.com/css-printer-friendly-pages/](https://www.sitepoint.com/css-printer-friendly-pages/) 
 - SVG on the web - a practical guide. (n.d.) Retrieved on August 23, 2022, from [https://svgontheweb.com/](https://svgontheweb.com/)
 - What is a printer-friendly web page? (November 21, 2018) Retrieved on July 29, 2022, from [https://www.thoughtco.com/printer-friendly-web-page-3469219](https://www.thoughtco.com/printer-friendly-web-page-3469219)
 
-## Changelog
+### Changelog
 - Published November 10, 2022
 
-Disclaimer: Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.
+### Disclaimer
+Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.
 

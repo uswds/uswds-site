@@ -68,6 +68,22 @@ Help users enter their phone numbers in a consistent, correct, usable format. Us
   </div>
 </div>
 
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
+  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h3 id="pattern-preview">Pattern preview</h3></button>
+  <div id="accordion-preview" class="usa-accordion__content">
+    {% include patterns/phone-number.html %}
+  </div>
+</div>
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
+  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h3 id="pattern-code">Pattern code</h3></button>
+  <div id="accordion-code" class="usa-accordion__content highlight-code">
+    <div class="usa-sr-only">
+      {% highlight text%}{% include patterns/phone-number.html %}{% endhighlight %}
+    </div>
+    {% highlight html%}{% include patterns/phone-number.html %}{% endhighlight %}
+  </div>
+</div>
+
 ### Considerations
 
 {:.usa-content-list}
@@ -91,24 +107,7 @@ Help users enter their phone numbers in a consistent, correct, usable format. Us
 - <strong>Use proper labels and attributes.</strong> Each radio button should have a `<label>`. Associate the two by matching the label's `for` attribute to the input's `id` attribute.
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
-
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
-  <div id="accordion-preview" class="usa-accordion__content">
-    {% include patterns/phone-number.html %}
-  </div>
-</div>
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
-  <div id="accordion-code" class="usa-accordion__content highlight-code">
-    <div class="usa-sr-only">
-      {% highlight text%}{% include patterns/phone-number.html %}{% endhighlight %}
-    </div>
-    {% highlight html%}{% include patterns/phone-number.html %}{% endhighlight %}
-  </div>
-</div>
-
-### Related components, patterns, and templates
+## Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/radio-buttons/">Radio buttons</a> component
@@ -116,15 +115,15 @@ Help users enter their phone numbers in a consistent, correct, usable format. Us
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/email-address/">Email address</a> pattern
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number/">Social Security Number</a> pattern
 
-### References
+## References
 - Bad practices on phone number form fields. (October 16, 2018) Retrieved on July 20, 2022, from [https://uxmovement.com/forms/bad-practices-on-phone-number-form-fields/](https://uxmovement.com/forms/bad-practices-on-phone-number-form-fields/)
 - Consider using localized input masks for ‘phone’ and other restricted inputs (64% aren’t taking advantage of input masking). (November 28, 2017) Retrieved on July 20, 2022, from [https://baymard.com/blog/input-masking-form-field](https://baymard.com/blog/input-masking-form-field) 
 - Phone number field design best practices. (August 2, 2019) Retrieved on July 20, 2022, from [https://uxpro.cc/publications/phone-number-field-design-best-practices/](https://uxpro.cc/publications/phone-number-field-design-best-practices/)
 - Phone number UX: Always explain why the ‘phone field’ is required. (March 16, 2020) Retrieved on July 20, 2022, from [https://baymard.com/blog/explain-phone-number-field](https://baymard.com/blog/explain-phone-number-field)
 - Telephone numbers. (n.d.) Retrieved on July 20, 2022, from [https://design-system.service.gov.uk/patterns/telephone-numbers/](https://design-system.service.gov.uk/patterns/telephone-numbers/)
 
-### Changelog
+## Changelog
 - Published November 10, 2022
 
-### Disclaimer
+## Disclaimer
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

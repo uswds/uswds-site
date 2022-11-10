@@ -220,7 +220,7 @@ With help from digital leaders across the federal space, we've developed pattern
 </p>
 
 <p class="measure-4">
-  The research resulted in the release of 3 <a href="#">pattern families</a> consisting of 17 individual patterns, along with new and updated <a href="https://designsystem.digital.gov/components/overview/">components</a> and <a href="https://designsystem.digital.gov/templates/">page templates</a>. 
+  The research resulted in the release of 3 <a href="{{ site.baseurl }}/patterns/">pattern families</a> consisting of 17 individual patterns, along with new and updated <a href="{{ site.baseurl }}/components/overview/">components</a> and <a href="{{ site.baseurl }}/templates/">page templates</a>. 
 </p>
 
 <h3>Our objective was to:</h3>

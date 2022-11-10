@@ -43,13 +43,13 @@ summary_sections:
 {% if forloop.index == 1 %}
 <div class="measure-4">
   <p>
-    Most also have a pattern preview and associated code. These previews use USWDS components and are grounded in the <a href="https://designsystem.digital.gov/design-principles/">USWDS design principles</a>. They should be viewed as a starting point for the digital products you are designing, building, and supporting. 
+    Most also have a pattern preview and associated code. These previews use USWDS components and are grounded in the <a href="{{ site.baseurl }}/design-principles/">USWDS design principles</a>. They should be viewed as a starting point for the digital products you are designing, building, and supporting. 
   </p>
   <p>
-    We developed <strong>some additional components</strong> to support these <a href="#">patterns</a>, including a <a href="#">language selector component</a>, <a href="#">in-page navigation</a>, and <a href="#">input masking</a>. We've also refactored a few components and templates, such as <a href="#">address form</a> and <a href="#">name form</a>, to bring them in line with pattern recommendations.
+    We developed <strong>some additional components</strong> to support these <a href="{{ site.baseurl }}/patterns/">patterns</a>, including a <a href="{{ site.baseurl }}/patterns/language-selector/">language selector component</a>, <a href="{{ site.baseurl }}/components/in-page-navigation/">in-page navigation</a>, and <a href="{{ site.baseurl }}/components/input-mask/">input mask</a>. We've also refactored a few components and templates, such as <a href="{{ site.baseurl }}/templates/form-templates/address-form/">address form</a> and <a href="{{ site.baseurl }}/templates/form-templates/name-form/">name form</a>, to bring them in line with pattern recommendations.
   </p>
   <p>
-    As we move forward, we will identify and explore high-impact interactions and add to the <a href="#">pattern library</a>. We also expect to continually revise our patterns — just as we do our components — as the landscape around DEIA and best practices evolves.
+    As we move forward, we will identify and explore high-impact interactions and add to the <a href="{{ site.baseurl }}/patterns/">pattern library</a>. We also expect to continually revise our patterns — just as we do our components — as the landscape around DEIA and best practices evolves.
   </p>
 </div>
 {% elsif forloop.index == 2 %}

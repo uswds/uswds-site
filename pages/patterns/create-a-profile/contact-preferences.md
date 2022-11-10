@@ -65,6 +65,22 @@ Allow the user to select from available options, and to include a brief message 
   </div>
 </div>
 
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
+  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h3 id="pattern-preview">Pattern preview</h3></button>
+  <div id="accordion-preview" class="usa-accordion__content">
+    {% include patterns/contact-preferences.html %}
+  </div>
+</div>
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
+  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h3 id="pattern-code">Pattern code</h3></button>
+  <div id="accordion-code" class="usa-accordion__content highlight-code">
+    <div class="usa-sr-only">
+     {% highlight text%}{% include patterns/contact-preferences.html %}{% endhighlight %}
+    </div>
+    {% highlight html%}{% include patterns/contact-preferences.html %}{% endhighlight %}
+  </div>
+</div>
+
 ### Considerations
 
 {:.usa-content-list}
@@ -76,30 +92,13 @@ Allow the user to select from available options, and to include a brief message 
 {:.usa-content-list}
 - See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons). 
 
-
 ### Accessibility 
 
 {:.usa-content-list}
 - <strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
-  <div id="accordion-preview" class="usa-accordion__content">
-    {% include patterns/contact-preferences.html %}
-  </div>
-</div>
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
-  <div id="accordion-code" class="usa-accordion__content highlight-code">
-    <div class="usa-sr-only">
-     {% highlight text%}{% include patterns/contact-preferences.html %}{% endhighlight %}
-    </div>
-    {% highlight html%}{% include patterns/contact-preferences.html %}{% endhighlight %}
-  </div>
-</div>
-
-### Related components and patterns
+## Related components and patterns
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/radio-buttons/">Radio buttons</a> component
@@ -109,12 +108,12 @@ Allow the user to select from available options, and to include a brief message 
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number">Phone number</a> pattern
 - <a href="{{ site.baseurl }}/templates/form-templates/address-form/">Address form</a> template
 
-### References
+## References
 - Explicitly state the difference between options. (November 3, 2013) Retrieved on July 20, 2022, from [https://www.nngroup.com/articles/explicit-differences/](https://www.nngroup.com/articles/explicit-differences/)
 - Seamlessness in the omnichannel user experience. (March 19, 2017) Retrieved on July 20, 2022, from [https://www.nngroup.com/articles/seamless-cross-channel/](https://www.nngroup.com/articles/seamless-cross-channel/)
 
-### Changelog
+## Changelog
 - Published November 10, 2022
 
-### Disclaimer 
+## Disclaimer 
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

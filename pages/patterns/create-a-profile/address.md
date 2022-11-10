@@ -9,9 +9,9 @@ lead: The physical and mailing address patterns help users enter their address s
 ---
 
 {:.site-component-section-title}
-## About this pattern
+## About these patterns
 
-### What problem does this solve?
+### What problems do these solve?
 While most addresses in the U.S. follow a specific pattern, there are unique variations in some rural areas, U.S. territories, and military posts. In addition, some people are unhoused or in temporary housing, and may need to specify a mailing address that is different from their physical address —  particularly in disaster relief and recovery situations.
 
 {:.site-component-name}
@@ -110,16 +110,6 @@ Provide all the fields needed for a user to provide a physical address, even les
 - <strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/). 
 - <strong>Don't auto-advance focus.</strong> Do not use JavaScript to auto advance the focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes. 
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
-
-#### Related components, patterns, and templates
-
-{:.usa-content-list}
-- <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component
-- <a href="{{ site.baseurl }}/components/input-mask/">Input mask</a> component
-- <a href="{{ site.baseurl }}/components/select/">Select</a> component
-- <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/name/">Name</a> pattern
-- <a href="{{ site.baseurl }}/templates/form-templates/address-form/">Address form</a> template
 
 {:.site-component-name}
 ## Mailing address

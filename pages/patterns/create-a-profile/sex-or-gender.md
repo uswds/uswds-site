@@ -9,7 +9,7 @@ lead: This pattern helps users to provide gender identity or biological sex info
 ---
 
 {:.site-component-section-title}
-## About this pattern
+## About these patterns
 
 ### Background
 
@@ -23,7 +23,7 @@ In April 2022, the U.S. Department of State began allowing people to specify “
 
 The White House's [Office of Management and Budget](https://www.whitehouse.gov/omb/), [Federal Committee on Statistical Methodology](https://www.fcsm.gov/) interagency committee, and the [Centers for Disease Control and Prevention](https://www.cdc.gov/) are just some of the federal agencies and programs working to define a meaningful, inclusive way to collect biological sex and gender information when it is needed. This is a quickly evolving space, and recommendations will also evolve.
 
-### What problem does this solve?
+### What problems do these solve?
 Gender and biological sex are often used synonymously. Many users  struggle to provide gender information that best represents them. An overwhelming number of choices for gender identification can be as alienating as too limited a set of provided options.
 
 {:.site-component-name}
@@ -106,11 +106,6 @@ Present the user with a controlled vocabulary to accurately depict their biologi
 - <strong>Use fieldset and legend.</strong> Group related radio buttons together with `<fieldset>` and describe the group with `<legend>`.
 - <strong>Use proper labels and attributes.</strong> Each radio button should have a `<label>`. Associate the two by matching the label's `for` attribute to the input's `id` attribute.
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
-
-#### Related components, patterns, and templates
-
-{:.usa-content-list}
-- <a href="{{ site.baseurl }}/components/radio-buttons/">Radio buttons</a> component
 
 {:.site-component-name}
 ## Gender 
@@ -203,6 +198,7 @@ Present the user with the tools to accurately depict their gender identity.
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component
+- <a href="{{ site.baseurl }}/components/radio-buttons/">Radio buttons</a> component
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/pronouns/">Pronouns</a> pattern
 

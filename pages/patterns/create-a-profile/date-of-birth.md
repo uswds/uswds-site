@@ -17,7 +17,7 @@ With many competing patterns for date formatting, users may become frustrated, c
 ### When to use this pattern 
 Use this pattern when you need a user's date of birth or another memorable date. 
 
-### What's the solution
+### What's the solution?
 Allowing a user to enter a memorable date using three clearly labeled fields provides the simplest and most inclusive digital experience. This is especially helpful when the date is in the past like a date of birth. By providing the Select component for month, and clearly labeled text input for date and year, users will understand what is being asked and not struggle to input the information or question what order the information should be entered in.
 
 Mobile device users in particular may benefit from being able to type a year rather than using a scrolling date picker for date of birth or other memorable dates.

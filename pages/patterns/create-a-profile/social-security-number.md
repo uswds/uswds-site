@@ -22,7 +22,7 @@ If you do not specifically need a person’s Social Security Number, do not ask 
 
 While most U.S. citizens and eligible U.S. residents have a Social Security Number, some people may not know their Social Security Number, or may lack the necessary documentation to obtain one easily. 
 
-### What's the solution
+### What's the solution?
 Provide a single text field to enter the Social Security Number. 
 
 {:.site-component-section-title}

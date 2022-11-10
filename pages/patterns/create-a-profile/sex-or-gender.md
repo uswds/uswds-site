@@ -82,7 +82,7 @@ Present the user with a controlled vocabulary to accurately depict their biologi
 - <strong>Confirm you need this information.</strong> As with all personal information, consider whether you need to collect it at all. Clearly explain the reason for asking for the information and what will be done to secure the user’s privacy. 
 - <strong>If biological sex information is used for identity validation.</strong> Be specific about the information you are requesting. Clearly state the context, such as, "Please enter your biological sex as it appears on your birth certificate." so that users can successfully provide the information required. Gender and biological sex are often used synonymously and users have difficulty determining which information is being requested.
 
-## Accessibility
+### Accessibility
 
 {:.usa-content-list}
 - This pattern uses radio buttons. See [usability guidance for radio buttons]({{ site.baseurl }}/components/radio-buttons/#usability-guidance-radio-buttons). 

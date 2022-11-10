@@ -97,6 +97,7 @@ The pattern allows users to select their language preferences for both written a
 - Translation and navigation functions in languages other than English should still meet appropriate accessibility standards to ensure equal access.
 
 ### Accessibility
+
 {:.usa-content-list}
 - <strong>Use the HTML lang attributes</strong> to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
 

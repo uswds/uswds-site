@@ -70,6 +70,22 @@ Provide multiple text entry fields that support a rich array of special characte
   </div>
 </div>
 
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
+  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h3 id="pattern-preview">Pattern preview</h3></button>
+  <div id="accordion-preview" class="usa-accordion__content">
+    {% include patterns/name.html %}
+  </div>
+</div>
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
+  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h3 id="pattern-code">Pattern code</h3></button>
+  <div id="accordion-code" class="usa-accordion__content highlight-code">
+    <div class="usa-sr-only">
+      {% highlight text%}{% include patterns/name.html %}{% endhighlight %}
+    </div>
+    {% highlight html%}{% include patterns/name.html %}{% endhighlight %}
+  </div>
+</div>
+
 ### Considerations
 
 {:.usa-content-list}
@@ -91,35 +107,19 @@ Provide multiple text entry fields that support a rich array of special characte
 - <strong>Label each field.</strong> Be sure each field is properly labeled. 
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
-  <div id="accordion-preview" class="usa-accordion__content">
-    {% include patterns/name.html %}
-  </div>
-</div>
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
-  <div id="accordion-code" class="usa-accordion__content highlight-code">
-    <div class="usa-sr-only">
-      {% highlight text%}{% include patterns/name.html %}{% endhighlight %}
-    </div>
-    {% highlight html%}{% include patterns/name.html %}{% endhighlight %}
-  </div>
-</div>
-
-### Related components, patterns, and templates
+## Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
 - <a href="{{ site.baseurl }}/templates/form-templates/name-form/">Name form</a> template
 
-### References
+## References
 - Diacritics and special characters by language. (n.d.) Retrieved July 15, 2022, from [https://web.library.yale.edu/cataloging/music/diacrit](https://web.library.yale.edu/cataloging/music/diacrit) 
 - GOV.UK Design System: Names. (n.d.) Retrieved July 27, 2022, from [https://design-system.service.gov.uk/patterns/names/](https://design-system.service.gov.uk/patterns/names/)
 - Personal names around the world. (August 17, 2011) Retrieved July 15, 2022, from [https://www.w3.org/International/questions/qa-personal-names](https://www.w3.org/International/questions/qa-personal-names)
 
-### Changelog
+## Changelog
 - Published November 10, 2022
 
-### Disclaimer
+## Disclaimer
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

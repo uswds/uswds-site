@@ -118,7 +118,7 @@ Provide the user with a printable record of their answers using a print style sh
   </div>
 </div>
 
-### Related components and patterns
+### Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/patterns/complex-form/progress-easily/">Progress easily through a form</a> pattern

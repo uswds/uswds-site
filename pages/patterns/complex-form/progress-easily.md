@@ -81,7 +81,7 @@ Respectful, inclusive voice and tone throughout the form – the questions, fiel
   <li><strong>Customization.</strong> As you customize, make sure you follow <a href="{{ site.baseurl }}/templates/form-templates/">accessibility guidelines for form templates</a> and the <a href="{{ site.baseurl }}/components/form/">accessibility guidelines for form controls</a>.</li>
 </ul>
 
-### Related components and patterns
+### Related components, patterns, and templates
 
 {:.usa-content-list}
 

@@ -114,7 +114,7 @@ Provide all the fields needed for a user to provide a physical address, even les
 - <strong>Don't auto-advance focus.</strong> Do not use JavaScript to auto advance the focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes. 
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
-#### Related components and patterns
+#### Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component
@@ -224,7 +224,7 @@ Provide all the fields a user needs to successfully enter a mailing address.
 - <strong>Don't auto-advance focus.</strong> Do not use JavaScript to auto advance the focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes. 
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
-#### Related components and patterns
+#### Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component

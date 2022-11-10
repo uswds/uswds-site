@@ -99,7 +99,7 @@ Provide a text entry field that supports a rich array of special characters and 
   </div>
 </div>
 
-### Related components and patterns
+### Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component

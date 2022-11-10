@@ -106,7 +106,7 @@ A text input field with validation and robust error messaging to guide users in 
   </div>
 </div>
 
-### Related components and patterns
+### Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/radio-buttons/">Radio buttons</a> component

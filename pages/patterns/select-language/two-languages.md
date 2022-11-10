@@ -111,7 +111,7 @@ Place the language selector button at the top of the screen above site navigatio
 {:.usa-content-list}
 - <a href="http://beta.usa.gov/">USA.gov (beta)</a>
 
-### Related components and patterns
+### Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/button/">Button</a> component

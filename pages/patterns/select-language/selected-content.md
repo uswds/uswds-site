@@ -115,7 +115,7 @@ Use this pattern when your site supports three or more languages, but offers a l
 - <strong>Use the HTML `lang` attributes</strong> to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
 - All logically related items/links must be presented as an <strong>HTML unordered list</strong>.
 
-### Related components and patterns
+### Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/header/">Header</a> component

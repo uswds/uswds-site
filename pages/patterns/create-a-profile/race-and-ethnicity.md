@@ -130,7 +130,7 @@ Allow selection of more than one race and acknowledge people with multiple racia
   </div>
 </div>
 
-### Related components and patterns
+### Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component

@@ -102,7 +102,7 @@ Provide a single text field to enter the Social Security Number.
   </div>
 </div>
 
-### Related components and patterns
+### Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/input-mask">Input masking</a> component

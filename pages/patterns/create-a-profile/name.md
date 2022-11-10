@@ -107,7 +107,7 @@ Provide multiple text entry fields that support a rich array of special characte
   </div>
 </div>
 
-### Related components and patterns
+### Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component

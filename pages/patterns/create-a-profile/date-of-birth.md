@@ -67,6 +67,22 @@ Mobile device users in particular may benefit from being able to type a year rat
   </div>
 </div>
 
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview margin-top-2">
+  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h3 id="pattern-preview">Pattern preview</h3></button>
+  <div id="accordion-preview" class="usa-accordion__content">
+    {% include patterns/date-of-birth.html %}
+  </div>
+</div>
+<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
+  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h3 id="pattern-code">Pattern code</h3></button>
+  <div id="accordion-code" class="usa-accordion__content highlight-code">
+    <div class="usa-sr-only">
+      {% highlight text%}{% include patterns/date-of-birth.html %}{% endhighlight %}
+    </div>
+      {% highlight html%}{% include patterns/date-of-birth.html %}{% endhighlight %}
+  </div>
+</div>
+
 ### Considerations
 
 {:.usa-content-list}
@@ -90,23 +106,7 @@ Mobile device users in particular may benefit from being able to type a year rat
 - <strong>Avoid auto-submission.</strong> Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Auto-submission disrupts screen readers because they select each option as they read them.
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-preview" aria-expanded="true"><h2 id="pattern-preview">Pattern preview</h2></button>
-  <div id="accordion-preview" class="usa-accordion__content">
-    {% include patterns/date-of-birth.html %}
-  </div>
-</div>
-<div class="usa-accordion usa-accordion--bordered site-accordion-code site-component-preview">
-  <button class="usa-accordion__button" aria-controls="accordion-code" aria-expanded="false"><h2 id="pattern-code">Pattern code</h2></button>
-  <div id="accordion-code" class="usa-accordion__content highlight-code">
-    <div class="usa-sr-only">
-      {% highlight text%}{% include patterns/date-of-birth.html %}{% endhighlight %}
-    </div>
-      {% highlight html%}{% include patterns/date-of-birth.html %}{% endhighlight %}
-  </div>
-</div>
-
-### Related components and patterns
+## Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/memorable-date/">Memorable date</a> component
@@ -115,13 +115,13 @@ Mobile device users in particular may benefit from being able to type a year rat
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number/">Phone number</a> pattern
 - <a href="{{ site.baseurl }}/patterns/create-a-profile/social-security-number/">Social Security Number</a> pattern
 
-### References
+## References
 - Asking for a date of birth. (December 5, 2013) Retrieved on July 20, 2022, from <a href="https://designnotes.blog.gov.uk/2013/12/05/asking-for-a-date-of-birth/">https://designnotes.blog.gov.uk/2013/12/05/asking-for-a-date-of-birth/</a>
 - Dates. (n.d.) Retrieved on July 20, 2022, from <a href="https://design-system.service.gov.uk/patterns/dates/">https://design-system.service.gov.uk/patterns/dates/</a>
 - Why the GOV.UK Design System team changed the input type for numbers. (February 24, 2020) Retrieved on July 20, 2022, from <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/</a>
 
-### Changelog
+## Changelog
 - Published November 10, 2022
 
-### Disclaimer
+## Disclaimer
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

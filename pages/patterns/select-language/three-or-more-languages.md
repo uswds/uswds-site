@@ -111,7 +111,7 @@ Place the language selector menu at the top of the screen above site navigation,
 - <a href="https://www.ed.gov/notices/english-la">U.S. Department of Education</a>
 - <a href="https://www.vote.gov">Vote.gov</a>
 
-### Related components and patterns
+### Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/button/">Button</a> component

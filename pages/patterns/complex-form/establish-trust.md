@@ -99,7 +99,7 @@ Provide clear information on why it is necessary to complete the form, what info
   </div>
 </div>
 
-### Related components and patterns
+### Related components, patterns, and templates
 
 {:.usa-content-list}
 

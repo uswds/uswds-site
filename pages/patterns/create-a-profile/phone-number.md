@@ -108,7 +108,7 @@ Help users enter their phone numbers in a consistent, correct, usable format. Us
   </div>
 </div>
 
-### Related components and patterns
+### Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/radio-buttons/">Radio buttons</a> component

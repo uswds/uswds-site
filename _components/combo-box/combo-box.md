@@ -51,5 +51,9 @@ tags:
   - select
 title: Combo box
 type: component
+alert: true
+alert-heading: Accessibility
+alert-class: info
+alert-content: Testing with people who use screen reader revealed <a href="#accessibility-combo-box">assistive technology issues</a> that require more investigation
 ---
 

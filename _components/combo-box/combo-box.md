@@ -54,6 +54,6 @@ type: component
 alert: true
 alert-heading: Accessibility
 alert-class: info
-alert-content: Testing with people who use a screen reader revealed <a href="#accessibility-combo-box">assistive technology issues</a> that require more investigation.
+alert-content: Testing with people who use screen readers, alternative input devices, and keyboard-only users revealed <a href="#accessibility-combo-box">assistive technology issues</a> that require more investigation.
 ---
 

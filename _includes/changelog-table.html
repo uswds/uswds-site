@@ -1,5 +1,5 @@
 {% assign col1Title = 'Date' %}
-{% assign col1Classes = 'tablet:grid-col site-changelog--hide-tablet' %}
+{% assign col1Classes = 'tablet:grid-col' %}
 {% assign col2Title = 'USWDS version' %}
 {% assign col2Classes = 'tablet:grid-col tablet:padding-left-0' %}
 {% assign col3Title = 'Affects' %}
@@ -9,7 +9,7 @@
 {% assign col5Title = 'Description' %}
 {% assign col5Classes = 'tablet:grid-col-6' %}
 {% assign col6Title = 'More information' %}
-{% assign col6Classes = 'tablet:grid-col' %}
+{% assign col6Classes = 'tablet:grid-col site-changelog--hide-tablet' %}
 
 <table class="usa-table--borderless site-table-responsive site-table-simple">
   <thead>
@@ -89,6 +89,13 @@
               </strong>
               {% if item.summaryAdditional %}
                 {{ item.summaryAdditional | markdownify | remove: '<p>' | remove: '</p>' }}
+              {% endif %}
+              {% if item.githubPr%}
+              <span class="site-changelog--show-tablet">
+                <a href="https://github.com/uswds/{{ item.githubRepo }}/pull/{{ item.githubPr }}">
+                  {{ item.githubRepo }}#{{ item.githubPr }}
+                </a>
+              </span>
               {% endif %}
             </p>
           {% endif %}

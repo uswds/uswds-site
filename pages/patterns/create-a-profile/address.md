@@ -1,11 +1,13 @@
 ---
 title: Address
 story: Help a user input their physical or mailing addresses for successful communication
-permalink: /patterns/create-a-profile/address/
+permalink: /patterns/create-a-user-profile/address/
 layout: pattern
 category: Patterns
 sub-category: Create a user profile
 lead: The physical and mailing address patterns help users enter their address successfully.
+changelog:
+  key: pattern-user-profile-address
 ---
 
 {:.site-component-section-title}
@@ -206,16 +208,18 @@ Provide all the fields a user needs to successfully enter a mailing address.
 - <strong>Don't auto-advance focus.</strong> Do not use JavaScript to auto advance the focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes. 
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
-#### Related components, patterns, and templates
+{:.site-component-section-title}
+## Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component
 - <a href="{{ site.baseurl }}/components/input-mask/">Input mask</a> component
 - <a href="{{ site.baseurl }}/components/select/">Select</a> component
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/name/">Name</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/name/">Name</a> pattern
 - <a href="{{ site.baseurl }}/templates/form-templates/address-form/">Address form</a> template
 
+{:.site-component-section-title}
 ## References
 - Google Plus Codes. (n.d.) Retrieved July 15, 2022, from [https://maps.google.com/pluscodes/](https://maps.google.com/pluscodes/)
 - The Navajo Nation addresses its residents with Plus Codes. (October 12, 2020) Retrieved on August 3, 2022, from [https://blog.google/products/maps/plus-codes-navajo-nation/](https://blog.google/products/maps/plus-codes-navajo-nation/)
@@ -223,8 +227,6 @@ Provide all the fields a user needs to successfully enter a mailing address.
 - USPS Addressing Standards for Puerto Rico and the U.S. Virgin Islands. (n.d.) Retrieved July 15, 2022, from [https://postalpro.usps.com/node/3740](https://postalpro.usps.com/node/3740)
 - Universal Post*Code Database. (n.d.) Retrieved July 28, 2022, from [https://www.upu.int/en/Postal-Solutions/Programmes-Services/Addressing-Solutions](https://www.upu.int/en/Postal-Solutions/Programmes-Services/Addressing-Solutions)
 
-## Changelog
-- Published November 10, 2022
-
+{:.site-component-section-title}
 ## Disclaimer
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

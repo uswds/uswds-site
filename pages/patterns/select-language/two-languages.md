@@ -1,11 +1,13 @@
 ---
 title: Two languages
 story: Help a user select between two languages
-permalink: /patterns/language-selector/two-languages/
+permalink: /patterns/select-a-language/two-languages/
 layout: pattern
 category: Patterns
 sub-category: Select a language
 lead: This pattern helps users, especially those with limited English proficiency, select their preferred language when visiting a website in two languages, like English and Spanish.
+changelog:
+  key: pattern-select-language-two-languages
 ---
 
 {:.site-component-section-title}
@@ -24,8 +26,8 @@ Use this pattern when the content is available in two languages.
 ### When to consider something else
 
 {:.usa-content-list}
-When content is available in three or more languages, see the <a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages/">Select from three or more languages</a> pattern. When only selected multilingual content is available in some languages, see the 
- <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Selected content available</a> pattern.
+When content is available in three or more languages, see the <a href="{{ site.baseurl }}/patterns/select-a-language/three-or-more-languages/">Select from three or more languages</a> pattern. When only selected multilingual content is available in some languages, see the 
+ <a href="{{ site.baseurl }}/patterns/select-a-language/selected-content/">Selected content available</a> pattern.
 
 ### What's the solution?
 
@@ -106,20 +108,23 @@ Place the language selector button at the top of the screen above site navigatio
 - <strong>Use the HTML `lang` attributes</strong> to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
 - Consider including a <strong>prominent in-page notice or link</strong> in addition to the link in the header, in order to increase visibility for the user.
 
+{:.site-component-section-title}
 ## See pattern in use
 
 {:.usa-content-list}
 - <a href="http://beta.usa.gov/">USA.gov (beta)</a>
 
+{:.site-component-section-title}
 ## Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/button/">Button</a> component
 - <a href="{{ site.baseurl }}/components/header/">Header</a> component
 - <a href="{{ site.baseurl }}/components/language-selector/">Language selector</a> component
-- <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Find selected multilingual content</a> pattern
-- <a href="{{ site.baseurl }}/patterns/language-selector/three-or-more-languages/">Select from three or more languages</a> pattern
+- <a href="{{ site.baseurl }}/patterns/select-a-language/selected-content/">Find selected multilingual content</a> pattern
+- <a href="{{ site.baseurl }}/patterns/select-a-language/three-or-more-languages/">Select from three or more languages</a> pattern
 
+{:.site-component-section-title}
 ## References
 - Community research explores ways to improve access to multilingual content. (August 9, 2022) Retrieved on August 24, 2022, from [https://digital.gov/2022/08/09/community-research-explores-ways-to-improve-access-to-multilingual-content/](https://digital.gov/2022/08/09/community-research-explores-ways-to-improve-access-to-multilingual-content/)
 - Designing a perfect language selector UX. (May 4, 2022) Retrieved on July 21, 2022, from [https://www.smashingmagazine.com/2022/05/designing-better-language-selector/](https://www.smashingmagazine.com/2022/05/designing-better-language-selector/)
@@ -128,8 +133,6 @@ Place the language selector button at the top of the screen above site navigatio
 - White paper on best practices for multilingual access to digital libraries. (June 23, 2016) Retrieved on July 21, 2022, from [https://pro.europeana.eu/files/Europeana_Professional/Publications/BestPracticesForMultilingualAccess_whitepaper.pdf](https://pro.europeana.eu/files/Europeana_Professional/Publications/BestPracticesForMultilingualAccess_whitepaper.pdf)
 
 
-## Changelog
-- Published November 10, 2022
-
+{:.site-component-section-title}
 ## Disclaimer
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

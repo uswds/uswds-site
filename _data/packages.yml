@@ -384,7 +384,7 @@
 - name: "uswds-core"
   fullSize: 0
   sourceSize: 0
-  dependencies: 
+  dependencies:
 - name: "uswds-elements"
   fullSize: 0.7
   sourceSize: 0.7

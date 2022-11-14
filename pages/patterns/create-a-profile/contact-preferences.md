@@ -1,11 +1,13 @@
 ---
 title: Contact preferences
 story: Help users indicate their contact preferences
-permalink: /patterns/create-a-profile/contact-preferences/
+permalink: /patterns/create-a-user-profile/contact-preferences/
 layout: pattern
 category: Patterns
 sub-category: Create a user profile
 lead: The contact preferences design pattern allows users to easily indicate how they would like to be contacted in the future. 
+changelog:
+  key: pattern-user-profile-contact-preferences
 ---
 
 {:.site-component-section-title}
@@ -98,22 +100,22 @@ Allow the user to select from available options, and to include a brief message 
 - <strong>Follow input guidance.</strong> These text fields should follow the accessibility  <a href="{{ site.baseurl }}/components/text-input/">guidelines for all text inputs</a>. 
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
+{:.site-component-section-title}
 ## Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/radio-buttons/">Radio buttons</a> component
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/address">Address</a> pattern
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/email-address">Email address</a> pattern
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number">Phone number</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/address">Address</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/email-address">Email address</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/phone-number">Phone number</a> pattern
 - <a href="{{ site.baseurl }}/templates/form-templates/address-form/">Address form</a> template
 
+{:.site-component-section-title}
 ## References
 - Explicitly state the difference between options. (November 3, 2013) Retrieved on July 20, 2022, from [https://www.nngroup.com/articles/explicit-differences/](https://www.nngroup.com/articles/explicit-differences/)
 - Seamlessness in the omnichannel user experience. (March 19, 2017) Retrieved on July 20, 2022, from [https://www.nngroup.com/articles/seamless-cross-channel/](https://www.nngroup.com/articles/seamless-cross-channel/)
 
-## Changelog
-- Published November 10, 2022
-
+{:.site-component-section-title}
 ## Disclaimer 
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

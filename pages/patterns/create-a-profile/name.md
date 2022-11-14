@@ -1,11 +1,13 @@
 ---
 title: Name
 story: Help users to enter their name accurately and confidently regardless of format
-permalink: /patterns/create-a-profile/name/
+permalink: /patterns/create-a-user-profile/name/
 layout: pattern
 category: Patterns
 sub-category: Create a user profile
 lead: The name pattern makes it as easy as possible for users to enter their name in the format required. This pattern is often used to validate identity and helps collect name elements in the most effective and least intrusive manner possible.
+changelog:
+  key: pattern-user-profile-name
 ---
 
 {:.site-component-section-title}
@@ -107,19 +109,19 @@ Provide multiple text entry fields that support a rich array of special characte
 - <strong>Label each field.</strong> Be sure each field is properly labeled. 
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
+{:.site-component-section-title}
 ## Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
 - <a href="{{ site.baseurl }}/templates/form-templates/name-form/">Name form</a> template
 
+{:.site-component-section-title}
 ## References
 - Diacritics and special characters by language. (n.d.) Retrieved July 15, 2022, from [https://web.library.yale.edu/cataloging/music/diacrit](https://web.library.yale.edu/cataloging/music/diacrit) 
 - GOV.UK Design System: Names. (n.d.) Retrieved July 27, 2022, from [https://design-system.service.gov.uk/patterns/names/](https://design-system.service.gov.uk/patterns/names/)
 - Personal names around the world. (August 17, 2011) Retrieved July 15, 2022, from [https://www.w3.org/International/questions/qa-personal-names](https://www.w3.org/International/questions/qa-personal-names)
 
-## Changelog
-- Published November 10, 2022
-
+{:.site-component-section-title}
 ## Disclaimer
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

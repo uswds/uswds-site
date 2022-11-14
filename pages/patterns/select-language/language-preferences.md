@@ -1,11 +1,13 @@
 ---
 title: Preferred language
 story: Help a user to choose the languages they prefer for communication
-permalink: /patterns/language-selector/language-preferences/
+permalink: /patterns/select-a-language/language-preferences/
 layout: pattern
 category: Patterns
 sub-category: Select a language
 lead: This pattern allows users to indicate the languages they prefer to use for either written or spoken communications.
+changelog:
+  key: pattern-select-language-language-preferences
 ---
 
 {:.site-component-section-title}
@@ -101,16 +103,18 @@ The pattern allows users to select their language preferences for both written a
 {:.usa-content-list}
 - <strong>Use the HTML lang attributes</strong> to set the language of the page (`<html lang='en'>`, for example). See [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57) for more information.
 
+{:.site-component-section-title}
 ## Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/contact-preferences/">Contact preferences</a> pattern
-- <a href="{{ site.baseurl }}/patterns/language-selector/selected-content/">Find selected multilingual content</a> pattern
-- <a href="{{ site.baseurl }}/patterns/language-selector/more-than-three-languages/">Select from three or more languages</a> pattern
-- <a href="{{ site.baseurl }}/patterns/language-selector/two-languages/">Select from two languages</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/contact-preferences/">Contact preferences</a> pattern
+- <a href="{{ site.baseurl }}/patterns/select-a-language/selected-content/">Find selected multilingual content</a> pattern
+- <a href="{{ site.baseurl }}/patterns/select-a-language/more-than-three-languages/">Select from three or more languages</a> pattern
+- <a href="{{ site.baseurl }}/patterns/select-a-language/two-languages/">Select from two languages</a> pattern
 
+{:.site-component-section-title}
 ## References
 - Improving access to services for persons with limited English proficiency, executive order 13166. (August 11, 2000) Retrieved on July 25, 2022, from [https://www.govinfo.gov/content/pkg/FR-2000-08-16/pdf/00-20938.pdf](https://www.govinfo.gov/content/pkg/FR-2000-08-16/pdf/00-20938.pdf)
 - CMS Appendix A - top 15 non-English languages by states. (n.d.) Retrieved on July 25, 2022, from [https://www.cms.gov/CCIIO/Resources/Regulations-and-Guidance/Downloads/Appendix-A-Top-15-non-english-by-state-MM-508_update12-20-16.pdf](https://www.cms.gov/CCIIO/Resources/Regulations-and-Guidance/Downloads/Appendix-A-Top-15-non-english-by-state-MM-508_update12-20-16.pdf)
@@ -120,9 +124,6 @@ The pattern allows users to select their language preferences for both written a
 - The limited English proficient population in the United States in 2013. (July 8, 2015) Retrieved on July 25, 2022, from [https://www.migrationpolicy.org/article/limited-english-proficient-population-united-states-2013](https://www.migrationpolicy.org/article/limited-english-proficient-population-united-states-2013)
 - OMB memorandum m-17-06, 16. (November 2016) Retrieved on July 25, 2022, from [https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2017/m-17-06.pdf#page=16](https://www.whitehouse.gov/wp-content/uploads/legacy_drupal_files/omb/memoranda/2017/m-17-06.pdf#page=16)
 
-
-## Changelog
-- Published November 10, 2022
-
+{:.site-component-section-title}
 ## Disclaimer
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

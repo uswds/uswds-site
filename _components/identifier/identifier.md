@@ -19,6 +19,8 @@ subnav:
   href: '#identifier-guidance'
 - text: Package
   href: '#identifier-package'
+- text: Latest updates
+  href: '#identifier-changelog'
 tags:
   - footer
   - required

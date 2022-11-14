@@ -1,11 +1,13 @@
 ---
 title: Social Security Number
 story: Help a user enter their Social Security Number
-permalink: /patterns/create-a-profile/social-security-number/
+permalink: /patterns/create-a-user-profile/social-security-number/
 layout: pattern
 category: Patterns
 sub-category: Create a user profile
 lead: The Social Security Number pattern allows users to easily enter their Social Security Number and ensures the Social Security Number is properly formatted.
+changelog:
+  key: pattern-user-profile-social-security-number
 ---
 
 {:.site-component-section-title}
@@ -101,14 +103,16 @@ Provide a single text field to enter the Social Security Number.
 - <strong>Use “text” instead of “number” inputs.</strong> Research indicates that <a href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">numeric inputs still carry many usability problems</a>. The way the user enters the data may differ from what the browser expects. Use `<input type="text" inputmode="numeric" pattern="[0-9]*">` to better support mobile users. 
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
+{:.site-component-section-title}
 ## Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/input-mask">Input masking</a> component
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/email-address/">Email address</a> pattern
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/phone-number/">Phone number</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/email-address/">Email address</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/phone-number/">Phone number</a> pattern
 
+{:.site-component-section-title}
 ## References
 - 8 recommendations for creating effective input fields. (n.d.) Retrieved on July 20, 2022, from [https://baymard.com/learn/input-fields](https://baymard.com/learn/input-fields)
 - Consider using localized input masks for ‘phone’ and other restricted inputs. (November 28, 2017) Retrieved on July 20, 2022, from [https://baymard.com/blog/input-masking-form-field](https://baymard.com/blog/input-masking-form-field)
@@ -118,8 +122,6 @@ Provide a single text field to enter the Social Security Number.
 - Placeholders in a form field. (May 11, 2014) Retrieved on July 20, 2022, from [https://www.nngroup.com/articles/form-design-placeholders/](https://www.nngroup.com/articles/form-design-placeholders/) 
 - Social Security is changing the way SSNs are issued. (n.d.) Retrieved on July 20, 2022, from [https://www.ssa.gov/kc/SSAFactSheet--IssuingSSNs.pdf](https://www.ssa.gov/kc/SSAFactSheet--IssuingSSNs.pdf)
 
-## Changelog
-- Published November 10, 2022
-
+{:.site-component-section-title}
 ## Disclaimer 
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

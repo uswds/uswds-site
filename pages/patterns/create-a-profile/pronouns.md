@@ -1,18 +1,20 @@
 ---
 title: Pronouns
 story: Help users to provide their pronouns to ensure they are addressed in the manner they prefer
-permalink: /patterns/create-a-profile/pronouns/
+permalink: /patterns/create-a-user-profile/pronouns/
 layout: pattern
 category: Patterns
 sub-category: Create a user profile
 lead: The pronouns pattern helps users to provide information that will allow them to feel confident they will be addressed with the pronouns they use.
+changelog:
+  key: pattern-user-profile-pronouns
 ---
 
 {:.site-component-section-title}
 ## About this pattern
 
 ### What problem does this solve?
-A name or biological sex are not indicative of the pronouns a person uses. Allowing users to specify their pronouns creates a more comfortable environment by removing the potential for frustration and alienation.
+A person's name or sex are not indicative of the pronouns they use. Allowing users to specify their pronouns creates a more comfortable environment by removing the potential for frustration and alienation.
  
 ### When to use this pattern 
 Follow this pattern when you are planning on referring to the person using pronouns instead of their name.
@@ -91,7 +93,7 @@ Provide a text entry field that supports a rich array of special characters and 
 ### Usability guidance
 
 {:.usa-content-list}
-- <strong>Provide clear hint text.</strong> Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, such as, "For example, he, she, they, ze." Do allow users to opt out with a "Prefer not to answer" option.
+- <strong>Provide clear hint text.</strong> Some users may be unfamiliar with this question and unsure how to answer. Provide clear hint text, such as, "For example, he, she, they, ze, he/they." Do allow users to opt out with a "Prefer not to answer" option.
 
 ### Accessibility
 
@@ -99,13 +101,15 @@ Provide a text entry field that supports a rich array of special characters and 
 - <strong>Follow input guidance.</strong> These text fields should follow the accessibility [guidelines for all text inputs]({{ site.baseurl }}/components/text-input/). 
 - <strong>Customization.</strong> As you customize, make sure you follow [accessibility guidelines for form templates]({{ site.baseurl }}/templates/form-templates/) and the [accessibility guidelines for form controls]({{ site.baseurl }}/components/form/).
 
+{:.site-component-section-title}
 ## Related components, patterns, and templates
 
 {:.usa-content-list}
 - <a href="{{ site.baseurl }}/components/checkbox/">Checkbox</a> component
 - <a href="{{ site.baseurl }}/components/text-input/">Text input</a> component
-- <a href="{{ site.baseurl }}/patterns/create-a-profile/gender-and-sex/">Gender identity and sex</a> pattern
+- <a href="{{ site.baseurl }}/patterns/create-a-user-profile/gender-identity-and-sex/">Gender identity and sex</a> pattern
 
+{:.site-component-section-title}
 ## References
 - Ask users for gender or sex. (n.d.) Retrieved on July 19, 2022, from [https://design-system.service.gov.uk/patterns/gender-or-sex/](https://design-system.service.gov.uk/patterns/gender-or-sex/)
 - Asking about gender in online forms. (September 18, 2015) Retrieved on July 19, 2022, from [http://www.practicemakesprogress.org/blog/2015/9/18/asking-about-gender-on-online-forms](http://www.practicemakesprogress.org/blog/2015/9/18/asking-about-gender-on-online-forms)
@@ -120,8 +124,6 @@ Provide a text entry field that supports a rich array of special characters and 
 - Pronoun use in email signatures. (June 29, 2020) Retrieved on November 1, 2022, from [https://www.publicservice.govt.nz/guidance/pronoun-use-in-email-signatures/](https://www.publicservice.govt.nz/guidance/pronoun-use-in-email-signatures/)
 - They, their. (April 10, 2019). Retrieved on July 19, 2022, from [https://design.va.gov/content-style-guide/they-their](https://design.va.gov/content-style-guide/they-their) 
 
-## Changelog
-- Published November 10, 2022
-
+{:.site-component-section-title}
 ## Disclaimer
 Links to nongovernment sources are made for educational or source citation purposes only, and do not represent an endorsement of the organizations by the General Services Administration. The General Services Administration does not assume any responsibility for the content, operation, or policies of other entities' websites.

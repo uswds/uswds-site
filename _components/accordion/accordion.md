@@ -29,6 +29,8 @@ subnav:
   href: '#using-the-accordion-component'
 - text: Package
   href: '#accordion-package'
+- text: Latest updates
+  href: '#accordion-changelog'
 title: Accordion
 type: component
 variants:

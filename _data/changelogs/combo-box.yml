@@ -2,6 +2,12 @@ title: Combo box
 type: component
 changelogURL:
 items:
+  - date: 2022-11-14
+    summary: Added note on usability issues with assistive technology.
+    summaryAdditional: Testing with people using assistive technology revealed usability concerns that require additional investigation. Until addressed, consider using a Select component instead of a Combo box.
+    affectsGuidance: true
+    githubPr: 1898
+    githubRepo: uswds-site
   - date: 2022-04-28
     summary: Updated to Sass module syntax and new package structure.
     isBreaking: true

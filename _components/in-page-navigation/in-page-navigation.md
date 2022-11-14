@@ -50,6 +50,14 @@ implementation:
       element: usa-in-page-nav
       description: Number of pixels scroll should offset from the top of the parent element.
       default: "0"
+    - property: "`data-root-margin`"
+      element: usa-in-page-nav
+      description: Observable margin around the observed root used for calculating the current active section. Use values similar to CSS margin.
+      default: "0px 0px 0px 0px"
+    - property: "`data-threshold`"
+      element: usa-in-page-nav
+      description: Percentage of the scrolling section that must be in the observed area before the current section is triggered. Use a value between 0 and 1.
+      default: "1"
 title: In-page navigation
 type: component
 ---

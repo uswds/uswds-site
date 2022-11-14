@@ -18,7 +18,7 @@ The following is an example of the minimum markup your page would need to inplem
 
 {:.usa-content-list }
 - **Root margin.** The root margin (`data-root-margin`) is a string that allows you to define the observable area. This set of values serves to grow or shrink each side of the root element's bounding box before computing intersections. It can accept values similar to the CSS margin property, and can be percentages. By default, the in-page navigation component is set to `0px 0px 0px 0px`. 
-- **Threshold.** The threshold option (`data-threshold`) is set to `1` which means 100% of the observables must be in the observed section. You can set `data-threshold` to any integer between 0 and 1.
+- **Threshold.** The threshold option (`data-threshold`) determines how much of the observable section must be present in the observed area before the nav's item is set to current. The default is `1`, which means 100% of the observables must be in the observed section. You can set `data-threshold` to any integer between 0 and 1.
 - **Initialization properties.** The following properties update the component during initialization. These properties must be set before the component is initialized in order to have an effect.
 {% include settings-table-flex.html
   content=page.implementation.initProps

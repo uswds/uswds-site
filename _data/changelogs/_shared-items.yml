@@ -5,7 +5,7 @@
     githubRepo: uswds-site
 
   - date: 2022-04-28
-    summary: Added reference to the `usa-combo-box` package.
+    summary: Added documentation for the `usa-combo-box` package.
     affectsGuidance: true
     githubPr: 1528
     githubRepo: uswds-site

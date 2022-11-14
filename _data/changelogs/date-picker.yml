@@ -25,7 +25,7 @@ items:
     githubPr: 1605
     githubRepo: uswds-site
   - date: 2022-04-28
-    summary: Added reference to the `usa-date-picker` package.
+    summary: Added documentation for the `usa-date-picker` package.
     affectsGuidance: true
     githubPr: 1528
     githubRepo: uswds-site

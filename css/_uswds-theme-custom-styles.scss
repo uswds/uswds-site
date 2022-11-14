@@ -3063,6 +3063,7 @@ pre.lineno {
 }
 
 body {
+  @include u-bg($site-background-color);
   text-rendering: optimizeLegibility;
 }
 

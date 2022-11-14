@@ -15,6 +15,18 @@ items:
     githubPr: 4872
     githubRepo: uswds
     versionUswds: 3.1.0
+  - date: 2022-04-28
+    summary: Updated to Sass module syntax and new package structure.
+    isBreaking: true
+    affectsAccessibility: true
+    affectsAssets: true
+    affectsGuidance: true
+    affectsJavascript: true
+    affectsMarkup: true
+    affectsStyles: true
+    githubPr: 4656
+    githubRepo: uswds
+    versionUswds: 3.0.0
   - date: 2022-04-11
     summary: Added more accessible disclosure buttons to the big footer variant.
     summaryAdditional: Now the big footer variant uses more accessible disclosure buttons for showing and hiding submenus at mobile widths.

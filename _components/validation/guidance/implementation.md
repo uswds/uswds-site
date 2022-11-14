@@ -4,3 +4,5 @@
   1. Come up with a custom name for your validator, e.g. `uppercase`. This name shouldn't have any spaces in it.
   2. On the appropriate list item in `.usa-checklist`, set the `data-validator` attribute to the name of your custom validator, e.g. `data-validator="uppercase"`. This is the list item that will appear "checked" when the validator's condition is met.
   3. On the input element, add an attribute called `data-validate-[validator name]`, where `[validator name]` is the custom name you created in step 1. Define this attribute with a [regular expression](https://regexone.com/) (described on RegexOne) that represents whether the validator's condition is met. For example, if your custom validator is called `uppercase`, use `data-validate-uppercase="[A-Z]"`.
+
+    For reference, you can find the complete implementation of this configuration in the “Component code” accordion panel at the top of this page.

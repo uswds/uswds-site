@@ -18,7 +18,10 @@ subnav:
     href: '#list-guidance'
   - text: Package
     href: '#list-package'
+  - text: Latest updates
+    href: '#list-changelog'
 title: List
+type: component
 variants:
 tags:
   - typography

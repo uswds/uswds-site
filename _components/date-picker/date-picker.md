@@ -46,6 +46,8 @@ subnav:
   href: '#date-picker-guidance'
 - text: Package
   href: '#date-picker-package'
+- text: Latest updates
+  href: '#date-picker-changelog'
 tags:
   - calendar
   - form

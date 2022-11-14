@@ -16,6 +16,8 @@ subnav:
   href: '#input-prefix-suffix-guidance'
 - text: Package
   href: '#input-prefix-suffix-package'
+- text: Latest updates
+  href: '#input-prefix-or-suffix-changelog'
 tags:
   - input
   - form controls
@@ -24,6 +26,7 @@ tags:
   - image
   - icon
 title: Input prefix or suffix
+type: component
 variants:
   - variant: "`usa-input-group--error`"
     description: Displays an input group error state.

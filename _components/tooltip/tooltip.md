@@ -17,4 +17,6 @@ subnav:
   href: '#tooltip-guidance'
 - text: Package
   href: '#tooltip-package'
+- text: Latest updates
+  href: '#tooltip-changelog'
 ---

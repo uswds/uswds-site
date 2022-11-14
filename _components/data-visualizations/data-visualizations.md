@@ -16,6 +16,8 @@ subnav:
   href: '#line-charts'
 - text: Bar charts
   href: '#bar-charts'
+- text: Latest updates
+  href: '#data-visualizations-changelog'
 tags:
   - dataviz
   - infographics

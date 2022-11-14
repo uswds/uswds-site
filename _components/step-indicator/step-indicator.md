@@ -26,6 +26,8 @@ subnav:
   href: '#step-indicator-guidance'
 - text: Package
   href: '#step-indicator-package'
+- text: Latest updates
+  href: '#step-indicator-changelog'
 tags:
   - stepper
   - step by step

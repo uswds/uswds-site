@@ -1,0 +1,2 @@
+- **Limited space.** The unstyled version of the language button is good solution if you have limited space in your area of placement.
+- **Secondary navigation.** You may also use it in a secondary or maintenance navigation section as long as the navigation remains visible on desktop and mobile.

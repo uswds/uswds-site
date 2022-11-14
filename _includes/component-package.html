@@ -1,12 +1,11 @@
-{% assign componentName = page.component.name 
-  | default: page.title 
+{% assign componentName = page.component.name
+  | default: page.title
   | downcase %}
 {% assign componentKey = componentName | slugify %}
 {% assign settingsKey = componentKey %}
-{% assign package = site.data.packages 
-  | where: "name", page.component.package 
+{% assign package = site.data.packages
+  | where: "name", page.component.package
   | first %}
-
 <h2 id="{{ componentKey }}-package" class="site-component-section-title">Package</h2>
 <ul class="usa-content-list">
   <li>
@@ -14,7 +13,7 @@
   </li>
   <li>
     {%- if package.dependencies -%}
-    <strong>Dependencies: </strong> 
+    <strong>Dependencies: </strong>
       {%- for dependency in package.dependencies -%}
       <code>{{ dependency }}</code class="text-no-wrap">{% if forloop.last != true %}, {% endif %}
       {%- endfor -%}

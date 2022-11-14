@@ -19,6 +19,8 @@ subnav:
   href: '#banner-guidance'
 - text: Package
   href: '#banner-package'
+- text: Latest updates
+  href: '#banner-changelog'
 title: Banner
 type: component
 ---

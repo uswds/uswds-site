@@ -1,4 +1,4 @@
-{% assign componentName = page.title | default: page.title | downcase %}
+{% assign componentName = page.changelog.key | default: page.title | downcase %}
 {% assign componentKey = componentName | slugify %}
 {% assign changelog = site.data.changelogs[componentKey] %}
 {% assign changelogItems = changelog.items %}
